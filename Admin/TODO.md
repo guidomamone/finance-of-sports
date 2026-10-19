@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18, a la noche; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 294 (espera las 11 altas
-del borrador) · pipeline 298 (f a n, p, q, s, t2, u2, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding Países Bajos (lotes 93-94),
+del borrador) · pipeline 298 (g a n, z, p, q, s, t2, u2, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding Países Bajos (lotes 93-94),
 las 11 altas del borrador, Bélgica (lote 92: los 23 años pasan la compuerta de estadio y sponsor), 292 resto, 238, 285, 284, 283, 195, 165 c · datos-sourcing
 273 (los 80 sin sponsor) · sin sesión: ligas 295, pantallas 309 y 312, Reino Unido 261 · la principal: 291, 311 y los
 merges; el 246 va solo, con todo mergeado y sin worktrees abiertos.
@@ -44,7 +44,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
-* 298: mejoras de script de Estonia y Bélgica (hechas a, b, c, d, o, r, t, u y x; sigue la e2, la corrida de Mistral; después f a n, p, q, s, t2, u2, v)
+* 298: mejoras de script de Estonia y Bélgica (hechas a, b, c, d, o, r, t, u y x; sigue la e2, la corrida de Mistral; después g a n, p, q, s, t2, u2, v, z)
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill
 * 301: gasto.mjs --json se corta en un pipe
 * 302: el deflactor de EE.UU. desde la BEA, no FRED
@@ -269,27 +269,27 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    los clubes del borrador `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando onboarding los publique (Viking, Vålerenga, Luzern,
    St. Gallen, Molde, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con
    cita). Después, fast-forward de la rama finanzas.
-298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, o, r, t, u y x, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
+298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, f, o, r, t, u y x, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
    grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
    el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. e2) las 238 transcripciones viejas sin tablas ya están marcadas: falta la corrida de Mistral
    (~US$ 7,26, la corre Guido): `caffeinate -i node tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --max-paginas 0 --limit 0
-   --ejecutar`; después entran a los lotes de carga de cada país. f) periodo.mjs no saca el cierre NBB
-   cuando las fechas vienen en celdas (9 belgas y 1 estonio). g) la cola admite una sola categoría por fila: un "partir según la nota" con
+   --ejecutar`; después entran a los lotes de carga de cada país. g) la cola admite una sola categoría por fila: un "partir según la nota" con
    la suma exacta como compuerta. h) un `no_es_rubro` puede dejar a un padre sin hijos: que la cola avise. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola. l) a p) más casos de onboarding (reportType por año de un club existente, perímetro de la carga, año vecino con
    perímetros distintos, ceros reales y perfil que se repreguntan). q) el ensayo de lote.mjs cobra la categorización de todos los documentos de
    la lista, también los ya cargados o categorizados. El detalle
-   de l a q, en `Admin/Archive/sesion-onboarding-2026-10-18-4.md`. s) periodo.mjs / localizar toman el inicio del boekjaar como cierre
-   cuando el ejercicio empieza en junio y eligen la columna "Vorig boekjaar" (vacía) sin aviso (Beerschot 2019 -correction). t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
+   de l a q, en `Admin/Archive/sesion-onboarding-2026-10-18-4.md`. s) el cierre de Beerschot 2019 -correction ya lo arregló la f: falta ver si localizar sigue
+   eligiendo la columna "Vorig boekjaar" vacía con el cierre bueno. z) cargar los primeros ejercicios de más de 12 meses (Guido: "son
+   parciales, pero corresponde cargarlos"): Anderlecht 2011 (16 meses), RAAL La Louvière 2018 (14), Sint-Truiden 2013 (15) y Zulte Waregem
+   2012 (17); diseño a decidir: cómo se muestra un año de más de 12 meses y cómo compara con los vecinos. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
    con ajustes si el resultado sigue exacto). PRIMERO: u2) lo que la u no decide: listas de un solo grupo (Third Division antes de 2016, Second
    Amateur Division: Lokeren-Temse 2021-2022, Patro Eisden 2013-2014 y 2019) y la First Division B 2017-18 y 2018-19, que baja con 7 de 8
-   (la tool pierde a Beerschot Wilrijk; OH Leuven 2017-2019, Beerschot 2019). Caso para la f: Lierse SK 2023 tiene en el registro el cierre
-   de la asamblea (2023-10-28, L27) y no el de la celda (30-06-2023, L33). v) el final
+   (la tool pierde a Beerschot Wilrijk; OH Leuven 2017-2019, Beerschot 2019).  v) el final
    de lote.mjs lista como frenados los originales que salteó por su -correction. El detalle de s a v, con líneas y montos, en
    `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.

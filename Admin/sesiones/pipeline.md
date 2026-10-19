@@ -136,3 +136,5 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
     decidir: cómo se muestra un año de más de 12 meses en el sitio y cómo compara con los vecinos.
   - La 298 s queda en parte cubierta (el cierre de Beerschot 2019 -correction); falta ver si localizar sigue eligiendo la columna "Vorig
     boekjaar" vacía con el cierre bueno.
+
+## Después del merge de la 298 f (2026-10-18)

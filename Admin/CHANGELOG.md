@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 758 — Merge de pipeline 2: el período que declara el formulario (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0.
+
+- To-do 298 f: `periodo.mjs`, paso 3b, toma el período que declara el formulario NBB o estonio (en celdas o en prosa) cuando los títulos no
+  deciden. Medido sobre los 3.429 `.md`: cambian 17 (12 al cierre correcto, Lierse SK 2023 y 2025 y Beerschot 2019 -correction entre ellos;
+  4 primeros ejercicios largos dejan de verse anuales); ninguno de los cargados cambia. Nueva letra 298 z (cargar esos ejercicios largos).
+
 ## Versión 757 — Merge de pipeline 2: el control "sin tablas" (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0.
