@@ -312,10 +312,15 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const c0 = casos.get(id); const v = decision === 'corregir' ? (/^s[ií]/i.test(flag('--valor')) ? true : /^no/i.test(flag('--valor')) ? false : undefined) : undefined;
     if (c0.motivo === 'perfil' && v !== undefined) {
       const [clubId, campo] = String(c0.detalle).split(':');
-      const { guardarPerfil } = await import('./perfil-clubes.mjs');
-      guardarPerfil(clubId, campo, v, `respuesta ${id} en la cola (${flag('--nota') || 'sin nota'})`);
-      let n = 0; for (const c of casos.values()) if (c.motivo === 'perfil' && c.detalle === c0.detalle && c.id !== id && cerrarResueltoPorClub(c.pdf, c.etapa, c.motivo, c.detalle, c0)) n++;
-      console.log(`Perfil de ${clubId}: ${campo} = ${v ? 'sí' : 'no'} (Admin/registros/perfil-clubes.jsonl).${n ? ` Cerré ${n} caso(s) iguales de otros años del club.` : ''}`);
+      // (to-do 298 p1) el chequeo lleva su año y vale para los años a menos de VENTANA_PERFIL; cierra solo las preguntas iguales de esa ventana,
+      // y si contradice al chequeo más cercano abre la revisión de los años entre los dos (perfil-cambio).
+      const { guardarPerfil, perfilCercano, anioDeDoc, VENTANA_PERFIL } = await import('./perfil-clubes.mjs');
+      const anioCh = c0.anio ?? anioDeDoc(c0.pdf);
+      const ant = anioCh ? perfilCercano(clubId, campo, anioCh, { excepto: anioCh }) : null;
+      guardarPerfil(clubId, campo, v, `respuesta ${id} en la cola (${flag('--nota') || 'sin nota'})`, 'guido-cola', anioCh);
+      if (ant && ant.valor !== v) agregarCaso({ pdf: c0.pdf, md: c0.md, etapa: 'cargar', motivo: 'perfil-cambio', detalle: `${clubId}:${campo}:${anioCh}`, anio: anioCh, que: `El perfil de ${clubId} cambió: ${campo === 'socios' ? 'socios' : 'otros deportes'} = ${ant.valor ? 'sí' : 'no'} en ${ant.anio} y ${v ? 'sí' : 'no'} en ${anioCh}. Revisar los años cargados entre los dos.`, propuesta: 'aceptar si esos años están bien; si no, corregir --valor "<año desde el que cambió>"' });
+      let n = 0; for (const c of casos.values()) if (c.motivo === 'perfil' && c.detalle === c0.detalle && c.id !== id && (!anioCh || Math.abs((c.anio ?? anioDeDoc(c.pdf) ?? 0) - anioCh) < VENTANA_PERFIL) && cerrarResueltoPorClub(c.pdf, c.etapa, c.motivo, c.detalle, c0)) n++;
+      console.log(`Perfil de ${clubId}: ${campo} = ${v ? 'sí' : 'no'} desde el chequeo de ${anioCh ?? '?'} (vale ±${VENTANA_PERFIL - 1} años; Admin/registros/perfil-clubes.jsonl).${n ? ` Cerré ${n} caso(s) iguales de esa ventana.` : ''}${ant && ant.valor !== v ? ` Contradice el chequeo de ${ant.anio}: abrí una revisión (perfil-cambio).` : ''}`);
     }
     process.exit(0);
   }

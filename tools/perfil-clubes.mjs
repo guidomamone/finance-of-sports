@@ -43,9 +43,43 @@ function leer() {
 export function perfilDe(clubId) { return leer().get(clubId) || null; }
 
 // Guarda un campo (socios / otrosDeportes) para un club; lo usa cargar.mjs cuando Guido contesta la pregunta de la cola.
-export function guardarPerfil(clubId, campo, valor, evidencia, fuente = 'guido-cola') {
+// (to-do 298 p1) `anio`: el ejercicio del documento que se chequeó; el valor vale para los años de su ventana (perfilVigente).
+export function guardarPerfil(clubId, campo, valor, evidencia, fuente = 'guido-cola', anio = null) {
   if (!CAMPOS.includes(campo)) throw new Error(`campo desconocido: ${campo}`);
-  appendFileSync(ARCHIVO, JSON.stringify({ clubId, [campo]: valor, [`${campo}Evidencia`]: evidencia, fuente, fecha: new Date().toISOString().slice(0, 10) }) + '\n');
+  appendFileSync(ARCHIVO, JSON.stringify({ clubId, [campo]: valor, [`${campo}Evidencia`]: evidencia, fuente, ...(anio ? { anio: Number(anio) } : {}), fecha: new Date().toISOString().slice(0, 10) }) + '\n');
+}
+
+// ---------------------------------------------------------------- EL PERFIL POR AÑO (to-do 298 p1, decisión de Guido 2026-10-19)
+// "Los clubes pueden cambiar. Está bien que responda por año vecino, pero si siempre responden por vecinos puede haber un error: que cada
+// 5 años se chequee, y ahí se puede ir para atrás y corregir." Antes, una respuesta valía para todos los años del club, para siempre.
+// Ahora cada CHEQUEO tiene un año (el ejercicio del documento que se miró) y vale para los años a menos de VENTANA_PERFIL de él. Un año
+// fuera de toda ventana vuelve a preguntar (una vez por club, campo y tramo: cargar.mjs). Si un chequeo nuevo contradice al más cercano,
+// cargar.mjs / cola.mjs abren una revisión de los años entre los dos (perfil-cambio).
+// Año de un chequeo: `anio` de la línea; en las líneas viejas, los años citados en su evidencia ("data/boca-data.js: 2022 y 2023 'Cuotas
+// sociales'"). Una línea vieja sin ningún año no cuenta como chequeo (decisión de Guido: se vuelve a preguntar; eran 24).
+export const VENTANA_PERFIL = 5;
+export const anioDeDoc = (pdf) => { const m = String(pdf || '').match(/(?:19|20)\d{2}(?!.*(?:19|20)\d{2})/); return m ? Number(m[0]) : null; };
+function chequeosDe(clubId, campo) {
+  const out = []; if (!existsSync(ARCHIVO)) return out; let orden = 0;
+  for (const l of readFileSync(ARCHIVO, 'utf8').split('\n')) {
+    if (!l.trim()) continue; let x; try { x = JSON.parse(l); } catch { continue; }
+    if (x.clubId !== clubId || x[campo] === undefined || x[campo] === null) continue;
+    const anios = x.anio ? [Number(x.anio)] : [...new Set([...String(x[`${campo}Evidencia`] || '').matchAll(/\b(?:19|20)\d{2}\b/g)].map((m) => Number(m[0])))];
+    orden++; for (const anio of anios) out.push({ valor: x[campo], anio, fuente: x.fuente || null, evidencia: x[`${campo}Evidencia`] || '', orden });
+  }
+  return out;
+}
+// El chequeo que vale para `year`: el más cercano dentro de la ventana (a igual distancia, el más nuevo del archivo), o null.
+export function perfilVigente(clubId, campo, year) {
+  const c = chequeosDe(clubId, campo).filter((x) => Math.abs(x.anio - Number(year)) < VENTANA_PERFIL);
+  c.sort((a, b) => Math.abs(a.anio - year) - Math.abs(b.anio - year) || b.orden - a.orden);
+  return c[0] || null;
+}
+// El chequeo más cercano a `year`, sin ventana (para proponer el valor en la pregunta y para ver si un chequeo nuevo contradice), o null.
+export function perfilCercano(clubId, campo, year, { excepto = null } = {}) {
+  const c = chequeosDe(clubId, campo).filter((x) => x.anio !== excepto);
+  c.sort((a, b) => Math.abs(a.anio - year) - Math.abs(b.anio - year) || b.orden - a.orden);
+  return c[0] || null;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

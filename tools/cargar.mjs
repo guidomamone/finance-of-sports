@@ -114,9 +114,9 @@ const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
 const { marcarClub } = await import('./dentro-de-otro.mjs'); // (Versión 518) "Posiblemente dentro de otro rubro", ver escribir()
 const EV = await import('./evidencia-club.mjs'); // (to-do 209) la evidencia de carga va a Admin/carga-clubes/<clubId>.md, no a data/
-const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, cerrarPerfilSabido } = await import('./cola.mjs');
+const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, cerrarPerfilSabido, pendientes } = await import('./cola.mjs');
 const agregarCasoCola = agregarCaso; // (Versión 462) proponer() usa su propio agregarCaso (puede no escribir)
-const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
+const { guardarPerfil, perfilVigente, perfilCercano, anioDeDoc, VENTANA_PERFIL } = await import('./perfil-clubes.mjs');
 const { ajusteDe, ajustesDe, ajustePerimetroDe, ceroRealDelClub } = await import('./ajustes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
@@ -767,8 +767,32 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     const lumpIng = conCat.some((f) => f.destino === 'revenue' && /^lump_/.test(f.cat)); const lumpGas = conCat.some((f) => f.destino === 'expense' && /^lump_/.test(f.cat));
     {
       for (const [nombre, cats, lado] of [['Salarios del plantel', ['wages_squad'], 'gasto'], ['Televisión', ['broadcasting'], 'ingreso'], ['Estadio', ['matchday_competition', 'stadium_other', 'season_tickets'], 'ingreso']]) if (!(lado === 'gasto' ? lumpGas : lumpIng) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* (to-do 237 g) un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // (to-do 163) el lado lo usa verificar.mjs
-      const perfil = perfilDe(clubId) || {};
-      const respPerfil = (campo) => { const { caso, resp } = casoYRespuesta(pdf, 'cargar', 'perfil', `${clubId}:${campo}`); if (!resp || !caso || resp.decision !== 'corregir' || !resp.valor) return undefined; const v = /^s[ií]/i.test(resp.valor) ? true : /^no/i.test(resp.valor) ? false : undefined; if (v !== undefined && perfil[campo] !== v) guardarPerfil(clubId, campo, v, `respuesta de Guido en la cola (${resp.nota || 'sin nota'})`); return v; };
+      // (to-do 298 p1, decisión de Guido 2026-10-19: "que cada 5 años se chequee, y ahí se puede ir para atrás y corregir") EL PERFIL POR AÑO:
+      // vale el chequeo más cercano dentro de la ventana (tools/perfil-clubes.mjs, perfilVigente); la respuesta de la cola puede venir de
+      // CUALQUIER documento del club dentro de la ventana (antes, solo la de este documento: 391 casos para 181 preguntas). Un chequeo nuevo
+      // que contradice al más cercano abre una revisión de los años cargados entre los dos (motivo perfil-cambio; no frena).
+      const registrarPerfil = (campo, nombre, v, ev, fuente, anioCh) => {
+        const ant = perfilCercano(clubId, campo, anioCh, { excepto: anioCh });
+        guardarPerfil(clubId, campo, v, ev, fuente, anioCh);
+        if (ant && ant.valor !== v) {
+          const [a, b] = [Math.min(ant.anio, anioCh), Math.max(ant.anio, anioCh)];
+          const entre = Object.keys(cd.fiscalYearMeta || {}).map(Number).filter((y) => y > a && y < b).sort((x, y) => x - y);
+          agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perfil-cambio', detalle: `${clubId}:${campo}:${anioCh}`, anio: anioCh,
+            que: `El perfil de ${club.name || clubId} cambió: ${campo === 'socios' ? 'socios' : 'otros deportes'} = ${ant.valor ? 'sí' : 'no'} en ${ant.anio} y ${v ? 'sí' : 'no'} en ${anioCh}. Revisar los años cargados entre los dos (${entre.join(', ') || 'ninguno'}): "${nombre}" en 0 se dio por ${ant.valor ? 'desglose perdido' : 'real'} con el chequeo viejo.`,
+            propuesta: 'aceptar si esos años están bien; si no, corregir --valor "<año desde el que cambió>"' });
+        }
+      };
+      const sn = (x) => (/^s[ií]/i.test(String(x)) ? true : /^no/i.test(String(x)) ? false : undefined);
+      const respPerfil = (campo, nombre) => {
+        const rs = respuestasDonde('cargar', 'perfil', (c) => c.detalle === `${clubId}:${campo}`)
+          .map(({ caso, resp }) => ({ caso, resp, v: resp.decision === 'corregir' ? sn(resp.valor) : undefined, anio: caso.anio ?? anioDeDoc(caso.pdf) }))
+          .filter((x) => x.v !== undefined && x.anio && Math.abs(x.anio - year) < VENTANA_PERFIL)
+          .sort((a, b) => Math.abs(a.anio - year) - Math.abs(b.anio - year) || String(b.resp.ts).localeCompare(String(a.resp.ts)));
+        const r = rs[0]; if (!r) return undefined;
+        const ya = perfilVigente(clubId, campo, r.anio);
+        if (!(ya && ya.anio === r.anio && ya.valor === r.v)) registrarPerfil(campo, nombre, r.v, `respuesta ${r.caso.id} en la cola (${r.resp.nota || 'sin nota'})`, 'guido-cola', r.anio);
+        return r.v;
+      };
       for (const [campo, nombre, catsIng, catsGas, pregunta] of [
         ['socios', 'Cuotas sociales', ['member_dues'], [], `¿${club.name || clubId} tiene socios que le pagan una cuota (cuotas sociales, mensalidades, sócio-torcedor, membresía)?`],
         ['otrosDeportes', 'Otras secciones deportivas', ['other_sports', 'youth_football', 'womens_football'], ['youth_other_sports_expense'], `¿${club.name || clubId} tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?`],
@@ -776,7 +800,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         if (lumpIng || suma(catsIng) || (catsGas.length && suma(catsGas))) continue;
         // (Versión 511) ajuste `incluye`: la categoría está dentro de otra línea (el documento las junta): no es un 0 a revisar ni una pregunta.
         if (catsIng.every((c) => incluidoEn[c]) && catsGas.every((c) => incluidoEn[c])) { P.avisos.push(`"${nombre}" da 0 porque está incluida en otra línea (ajuste manual \`incluye\`)`); continue; }
-        let tiene = perfil[campo]; if (tiene === undefined || tiene === null) tiene = respPerfil(campo);
+        let tiene = perfilVigente(clubId, campo, year)?.valor; if (tiene === undefined || tiene === null) tiene = respPerfil(campo, nombre);
         // (to-do 232 c, aprobado por Guido el 2026-10-14) FORMA JURÍDICA: una ΠΑΕ (Ποδοσφαιρική Ανώνυμη Εταιρεία) es por ley una sociedad solo de
         // fútbol, con accionistas y no socios; las 12 griegas contestadas en la cola dieron "no" y "no". UNA compuerta: la forma está en la
         // PORTADA del documento (hasta la pág. 3 del visor), y esa línea es la cita (la portada nombra a quien presenta el balance; no se busca el
@@ -786,7 +810,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
           const cita = citaPAE(readFileSync(resolve(ROOT, e.md), 'utf8'));
           if (cita) {
             const ev = `forma jurídica ΠΑΕ en la portada: ${e.md} L${cita.linea} "${cita.texto}" (cargar.mjs, to-do 232 c)`;
-            guardarPerfil(clubId, campo, false, ev, 'forma-juridica'); perfil[campo] = false; tiene = false;
+            registrarPerfil(campo, nombre, false, ev, 'forma-juridica', year); tiene = false;
             cerrarPerfilSabido(`${clubId}:${campo}`, `resuelto por la forma jurídica: ${ev}`);
             P.avisos.push(`"${nombre}" en 0: real (${clubId} es una ΠΑΕ, sin ${campo === 'socios' ? 'socios' : 'otros deportes'}; ${e.md} L${cita.linea})`);
           }
@@ -798,8 +822,14 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
         }
         if (tiene === true) ceros.push({ categoria: nombre });
         else if (tiene === undefined || tiene === null) {
-          agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perfil', detalle: `${clubId}:${campo}`, que: `${pregunta}  (por qué: en ${year} "${nombre}" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)`, propuesta: 'responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)' });
-          frena('perfil-en-cola', `"${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'}: pregunta en la cola humana (node tools/cola.mjs)`);
+          // (to-do 298 p1) UNA pregunta por club, campo y tramo: si otro documento del club ya la tiene abierta dentro de la ventana, no se abre otra.
+          const abierta = pendientes().find((c) => c.etapa === 'cargar' && c.motivo === 'perfil' && c.detalle === `${clubId}:${campo}` && c.pdf !== pdf && Math.abs((c.anio ?? anioDeDoc(c.pdf) ?? 0) - year) < VENTANA_PERFIL);
+          if (abierta) frena('perfil-en-cola', `"${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'} en ${year}: la pregunta ya está en la cola por ${abierta.pdf.split('/').pop()} (${abierta.id}) y vale para este año`);
+          else {
+            const prev = perfilCercano(clubId, campo, year);
+            agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perfil', detalle: `${clubId}:${campo}`, anio: year, que: `${pregunta}  (por qué: en ${year} "${nombre}" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Vale para los años a menos de ${VENTANA_PERFIL} de ${year}.${prev ? ` Último chequeo: ${prev.valor ? 'sí' : 'no'} en ${prev.anio}.` : ''})`, propuesta: 'responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)' });
+            frena('perfil-en-cola', `"${nombre}" da 0 y el perfil del club no dice si tiene ${campo === 'socios' ? 'socios' : 'otros deportes'} en ${year}: pregunta en la cola humana (node tools/cola.mjs)`);
+          }
         }
       }
     }
