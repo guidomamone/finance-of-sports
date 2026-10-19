@@ -373,3 +373,6 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   frenado; a decidir si aparece en un lote. Sin respuesta de Guido sobre la marca "N meses" en pantalla: no se pidió.
 
 ## Después del merge de la z (2026-10-19)
+
+- **232 e cerrado en HALLAZGOS** (decisión de Guido 2026-10-19). A2 es el 8% del gasto de API (US$ 40,13, 709 llamadas); el recorte
+  ahorraría ~2-3% del total con riesgo de perder decisiones. Condición para retomar, en HALLAZGOS. Sigue el 279.

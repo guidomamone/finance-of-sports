@@ -133,6 +133,12 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **Achicar el texto del paso A2 del perímetro (to-do 232 e, 2026-10-19): medido, no se prueba.** A2 costó US$ 40,13 en 709 llamadas
+  (8% del gasto de API; mediana 9.300 tokens de entrada, máximo 50.700). Recortar las notas que vienen después del estado ahorraría ~US$ 0,02
+  por documento (2-3% del gasto total), y A2 existe para encontrar el estado cuando las palabras no alcanzan: recortar antes de saber dónde
+  está ya perdió 7 decisiones y metió 2 errores (2026-10-14). Sonnet en vez de Opus, descartado (to-do 288: 5 MAL de 202). Retomar si A2
+  pasa del 15% del gasto de API (`Admin/registros/api/claude-api.jsonl`, tarea perimetro-a2) o si un país nuevo trae documentos de más de
+  100.000 tokens.
 - **El final del lote lista como frenado un original reemplazado por su -correction (to-do 298 v, 2026-10-19): medido, no entra.** Lo
   escribe cargar-lote.mjs, que lee la lista entera sin la regla de la 298 o de lote.mjs. Hoy no pasa: los 5 originales con corrección del
   lote 92 ya están en documentos-descartados.txt (ok de Guido) y el ensayo de cargar-lote no los lista (41 frenados, ninguno de ellos). Solo
