@@ -28,6 +28,9 @@ const patroeisdenbeRevenueLinesByYear = {
     { rawLabel:'Overige bedrijfsopbrengsten (implícito en la Brutomarge)', normalizedCategory:'other_income', amountNative:1.427692, disclosureLevel:'aggregated' },
     { rawLabel:'Waarvan: niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.023567, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Overige bedrijfsopbrengsten (implícito en la Brutomarge)', normalizedCategory:'other_income', amountNative:0.768543, disclosureLevel:'aggregated' },
+  ],
 };
 const patroeisdenbeExpenseLinesByYear = {
   2025: [
@@ -106,6 +109,15 @@ const patroeisdenbeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.00125, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.025978, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.00423, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-0.611452, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-2.12712, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)', normalizedCategory:'other_expenses', amountNative:-0.0025, disclosureLevel:'aggregated' },
+    { rawLabel:'Voorzieningen voor risico\'s en kosten: toevoegingen (+)/(-) (bestedingen en terugnemingen)', normalizedCategory:'exceptional_items', amountNative:0.045749, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.158584, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.008023, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.000327, disclosureLevel:'aggregated' },
   ],
 };
 const patroeisdenbeFiscalYearMeta = {
@@ -265,6 +277,21 @@ const patroeisdenbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.451259, officialTotalExpenses:5.65578, officialPAT:-4.173654,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'patroeisden-be-jaarrekening-2022-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.016454, tax:-0.002688,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.016229},
+      {label:'Recurrente financiële kosten', value:-0.032683},
+      {label:'Belastingen op het resultaat (+)/(-)', value:-0.002688},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.768543, officialTotalExpenses:2.908006, officialPAT:-2.112856,
+  },
 };
 const patroeisdenbePresupuestoOverlayByYear = {};
 
@@ -324,6 +351,11 @@ Object.assign(sources, {
   'patroeisden-be-jaarrekening-2023-06-30-individual': {
     id:'patroeisden-be-jaarrekening-2023-06-30-individual', clubId:'patroeisden-be',
     title:'Patro Eisden Maasmechelen VZW — jaarrekening-2023-06-30-individual (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'patroeisden-be-jaarrekening-2022-06-30-individual': {
+    id:'patroeisden-be-jaarrekening-2022-06-30-individual', clubId:'patroeisden-be',
+    title:'Patro Eisden Maasmechelen VZW — jaarrekening-2022-06-30-individual (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

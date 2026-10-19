@@ -183,6 +183,43 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-19): be-div1amateur, verificado contra roster cacheado de "2022–23 Belgian National Division 1" (tools/club-league-reference/be.json), coincidencia exacta "Patro Eisden".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Overige bedrijfsopbrengsten (implícito en la Brutomarge) | pág. 6, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen | pág. 6, precedente |
+| 2 | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | pág. 6, precedente |
+| 3 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen) | pág. 6, Jev 0.99 |
+| 4 | Voorzieningen voor risico's en kosten: toevoegingen (+)/(-) (bestedingen en terugnemingen) | pág. 6, Jev 1 |
+| 5 | Andere bedrijfskosten | pág. 6, precedente |
+| 6 | Afschrijvingen immateriële vaste activa (spelers) | pág. 6, precedente |
+| 7 | Afschrijvingen materiële vaste activa | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-div1amateur, verificado contra roster cacheado de "2021–22 Belgian National Division 1" (tools/club-league-reference/be.json), coincidencia exacta "Patro Eisden Maasmechelen".
+```
+
 ## 2021
 
 ### Ingresos
@@ -475,4 +512,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2023-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### patroeisden-be-jaarrekening-2022-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
