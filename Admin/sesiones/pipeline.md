@@ -221,3 +221,15 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
 - **298 e2:** la corrida paga de Mistral de los 238 `.md` sin tablas (~US$ 7,26), en la carpeta principal: `caffeinate -i node
   tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --max-paginas 0 --limit 0 --ejecutar` (la marca gratis ya la corrió la principal).
 - Escocia, Gales e Irlanda del Norte se ven como GB ("Inglaterra", bandera inglesa) en el selector: decisión de pantalla pendiente.
+
+## Pipeline 3
+
+- **298 y1 hecha** (bceafe97c4, ok de Guido 2026-10-18): FIN_GASTO / FIN_INGRESO noruegos en singular ("Annen finanskostnad", "Annen
+  rentekostnad", "Rentekostnad"). Medido con `medir-verificar --pasadas 2` sobre 366 documentos (prueba completa + los 7 noruegos con
+  filas): 360 idénticos, OK 346 -> 348. Cambian solo los 6 noruegos del lote 94: Viking AS 2025 y Fredrikstad FLI 2018 cierran exacto;
+  Vålerenga AS 2025, Aalesund AS 2025 y Sarpsborg 08 FLI 2025 dejan de dar "no cierra" (les quedan las dudas de otras etapas).
+- **298 y2 resuelta por la y1, sin código propio:** en Fredrikstad 2024 (acta 2025), con el signo financiero bien, la lectura 5 reconoce
+  "Sum driftsinntekter" como subtotal: ingresos 185,45 M -> 92,73 M y el resultado cierra exacto.
+- Sigue: **298 y3** (St. Gallen 2024-25: "Erträge netto" consolidado sumado junto al desglose por sociedad, y los signos de L330 y L403).
+  Después, **y4**: con la y en main y el merge de onboarding hecho, sacar los ajustes `fila` noruegos del lote 94 (8 de los 11) y medir que lo
+  cargado quede igual.
