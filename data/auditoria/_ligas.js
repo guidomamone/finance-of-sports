@@ -356,5 +356,23 @@ window.LIGA_AUDITORIA = {
     "linea": 22
    }
   }
+ },
+ "ru-premierliga": {
+  "2025": {
+   "entidad": {
+    "nombre": "Premier Liga",
+    "legal": "Ассоциация футбольных клубов «Российская Премьер-Лига»"
+   },
+   "auditor": {
+    "nombre": "АО ДРТ",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Rusia/RPL/rpl-zaklyuchenie-auditora-2025.md",
+    "linea": 43
+   }
+  }
  }
 };
