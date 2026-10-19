@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 292: cargar lo transcripto: los demás años de Basel, Luzern, St. Gallen y Go Ahead Eagles (lote 101, corriendo); Bélgica: Lommel SK 2019-2024 ya se puede cargar (con una línea carga-club), Lierse SK 2020-2021 y Patro Eisden 2021-2023 también se pueden reintentar (298 ae); el estadio de las amateur espera la 298 af; después Suiza, Beşiktaş y Colombia --> Onboarding 3
+* 292: cargar lo transcripto: lote 101 (Go Ahead Eagles 2023-2024 hechos; Basel, Luzern y St. Gallen en la cola, con 102 preguntas); Bélgica: Lommel SK 2019-2024 ya se puede cargar (con una línea carga-club), Lierse SK 2020-2021 y Patro Eisden 2021-2023 también se pueden reintentar (298 ae); el estadio de las amateur espera la 298 af; después Suiza, Beşiktaş y Colombia --> Onboarding 3
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
@@ -33,7 +33,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **C. Abaratar antes del onboarding grande**
 * 323: mejoras de script del lote 97 (Reino Unido): costo del reintento, filtro de la cola, notas inglesas, preguntas, perímetro, nombre legal --> Pipeline 4
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; ah, el total de Basel que se suma como rubro; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; ah, el total de Basel que se suma como rubro; ai, St. Gallen intragrupo (con tu decisión de perímetro); aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -254,6 +254,10 @@ af) listas de las ligas amateur belgas
    de esos años para el estadio (Lokeren-Temse 2022, Patro Eisden 2013-2015).
    ah) Basel 2005, 2009 y 2012: la fila "Total Ertrag" entra como un rubro más y los ingresos salen el doble del total impreso
    (detalle en la nota de Onboarding 3); esos tres años no se cargan hasta que se arregle.
+   ai) St. Gallen: la compensación intragrupo "Entschädigung von/an FCSG Event AG" se suma como ingreso en la columna combinada (2018-19,
+   2019-20, 2021-22 y 2023-24); con el perímetro de las dos sociedades sumadas debería netearse (decisión de perímetro de Guido pendiente).
+   aj) la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen", y suma el subtotal
+   "Erträge netto" cuando el documento lo imprime. Detalle de ah a aj en `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`.
    z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también

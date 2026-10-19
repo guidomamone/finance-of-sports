@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 822 — Lote 101, primera tanda: Go Ahead Eagles 2023 y 2024 (2026-10-19)
+
+* Go Ahead Eagles 2023 y 2024. Basel 2010 y 2013-2020 con perímetro individual y Luzern con cierre al 30 de junio, por ajuste. Tres
+  defectos de script nuevos a la 298 (ah, ai y aj).
+
 ## Versión 821 — 260: caja y deuda sin documento nuevo (2026-10-19)
 
 * Por ajustes con cita: Unión 2022-2024 caja y deuda (la deuda es el total de la nota de Deudas), Argentinos Juniors 2019 caja y Mirassol
