@@ -227,7 +227,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    transcribir y cargar la línea; (b) Lega Serie A, Liga Portugal y AFA no publican el balance (existe y se audita): decidir si se les
    escribe, y para la AFA si se pide a la IGJ (Guido); (c) Pro League belga: el depósito de la NBB está transcripto pero no trae el
    informe del comisario (KPMG), sin línea; Eredivisie CV, LPF y Dimayor no publican (candidatos a mail, sin armar; Dimayor: falta consultar
-   el RUES); la KNVB publica, pero es la federación entera: ¿entra como entidad? (Guido); las segundas divisiones (Super League 2 griega,
+   el RUES); la KNVB entra (Guido, 2026-10-19), aclarando que es la federación entera: la carga Finanzas 4; las segundas divisiones (Super League 2 griega,
    1. Division danesa, Promotion League suiza) no se buscaron. Mejoras de script: `auditoria.mjs` publica en `_ligas.js` una entrada
    `falta_transcripcion` de liga (con los clubes no lo hace; ver si la tarjeta la soporta), y `companies-house-fetch.mjs` no encuentra la
    EFL por nombre (es el número 00080612). DFL: el Konzernabschluss pide login en el
