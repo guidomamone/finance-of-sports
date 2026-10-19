@@ -26,7 +26,8 @@ que dice `ESTADO.md` era verdad ese día.
   Fredrikstad 2024, sale sola) y tres escalones de verificar.mjs para St. Gallen 2024-25 (cierra exacto con la compensación de la cola).
 - To-do 312: la página de sponsor muestra "Otras fuentes". To-do 195: 18 gestiones confirmadas de Bélgica y Estonia (`data/gestiones/ee.js`,
   criterio de Estonia en `Admin/gestiones-por-pais/ee.md`).
-- Lote 94: 7 de las 10 altas del borrador de Finanzas escritas (Go Ahead Eagles, Viking, Vålerenga, Molde, Basel, Aalesund y Sarpsborg 08);
+- Lote 94: las 10 altas del borrador de Finanzas escritas (Go Ahead Eagles, Viking, Vålerenga, Molde, Basel, Aalesund, Sarpsborg 08, Luzern,
+  St. Gallen y Fredrikstad 2024);
   Fredrikstad Fotballinvest AS 2017, 2018 y 2024 a descartados (mismo ejercicio que el FLI); estadio y sponsor de Luzern y St. Gallen a mano.
 
 ## Versión 761 — Merge de pipeline 2: la cola frena un no_es_rubro que deja un renglón vacío (2026-10-18)

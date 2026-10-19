@@ -54,7 +54,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (50 informes; la compuerta del pipeline) --> Finanzas 4
-* 294: registro de entidades, lo que queda (7 de las 10 altas ya en main; Fredrikstad, Luzern y St. Gallen con el lote 94) --> Finanzas 4
+* 294: registro de entidades, lo que queda (las 10 altas del borrador ya en main) --> Finanzas 4
 * 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
 
 **E2. Distribución (depende de 246)**
