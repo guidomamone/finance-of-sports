@@ -21,6 +21,7 @@ window.RANKINGS["no-eliteserien"] = {
   },
   2024: {
     leagueSize: null,
+    sinDato: ["sarpsborg08-no"],
     wiki: {"t":"2024 Eliteserien","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"fredrikstad-no", revenue:8.167, reportType:"official_balance_sheet",

@@ -2,10 +2,10 @@
   "leagues": {
     "no-eliteserien": {
       "2008": {
-        "wikipediaPage": "2008 Tippeligaen",
+        "wikipediaPage": "2008 Eliteserien",
         "lang": "en",
         "section": "Teams",
-        "fetchedAt": "2026-09-30T15:31:28.425Z",
+        "fetchedAt": "2026-10-19T12:20:48.868Z",
         "clubs": [
           "Aalesund",
           "Bodø/Glimt",
@@ -124,10 +124,10 @@
         ]
       },
       "2012": {
-        "wikipediaPage": "2012 Tippeligaen",
+        "wikipediaPage": "2012 Eliteserien",
         "lang": "en",
         "section": "Teams",
-        "fetchedAt": "2026-10-19T04:03:46.518Z",
+        "fetchedAt": "2026-10-19T12:20:50.535Z",
         "clubs": [
           "Aalesund",
           "Brann",
@@ -207,6 +207,48 @@
           "Tromsø"
         ]
       },
+      "2014": {
+        "wikipediaPage": "2014 Eliteserien",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-19T12:20:51.704Z",
+        "clubs": [
+          "Aalesund",
+          "Bodø/Glimt",
+          "Brann",
+          "Haugesund",
+          "Lillestrøm",
+          "Molde",
+          "Odd",
+          "Rosenborg",
+          "Sandnes Ulf",
+          "Sarpsborg 08",
+          "Sogndal",
+          "Stabæk",
+          "Start",
+          "Strømsgodset",
+          "Vålerenga",
+          "Viking"
+        ],
+        "posiciones": [
+          "Molde",
+          "Aalesund",
+          "Rosenborg",
+          "Bodø/Glimt",
+          "Odd",
+          "Brann",
+          "Strømsgodset",
+          "Haugesund",
+          "Lillestrøm",
+          "Vålerenga",
+          "Sarpsborg 08",
+          "Stabæk",
+          "Sandnes Ulf",
+          "Viking",
+          "Sogndal",
+          "Start"
+        ]
+      },
       "2015": {
         "wikipediaPage": "2015 Tippeligaen",
         "lang": "en",
@@ -247,6 +289,90 @@
           "Sarpsborg 08",
           "Start",
           "Tromsø"
+        ]
+      },
+      "2016": {
+        "wikipediaPage": "2016 Eliteserien",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-19T12:20:53.309Z",
+        "clubs": [
+          "Aalesund",
+          "Bodø/Glimt",
+          "Brann",
+          "Haugesund",
+          "Lillestrøm",
+          "Molde",
+          "Odd",
+          "Rosenborg",
+          "Sarpsborg 08",
+          "Sogndal",
+          "Stabæk",
+          "Start",
+          "Strømsgodset",
+          "Tromsø",
+          "Vålerenga",
+          "Viking"
+        ],
+        "posiciones": [
+          "Rosenborg",
+          "Aalesund",
+          "Brann",
+          "Bodø/Glimt",
+          "Odd",
+          "Haugesund",
+          "Molde",
+          "Lillestrøm",
+          "Sarpsborg 08",
+          "Strømsgodset",
+          "Viking",
+          "Vålerenga",
+          "Sogndal",
+          "Stabæk",
+          "Start",
+          "Tromsø"
+        ]
+      },
+      "2017": {
+        "wikipediaPage": "2017 Eliteserien",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-19T12:20:55.017Z",
+        "clubs": [
+          "Aalesund",
+          "Brann",
+          "Haugesund",
+          "Kristiansund",
+          "Lillestrøm",
+          "Molde",
+          "Odd",
+          "Rosenborg",
+          "Sandefjord",
+          "Sarpsborg 08",
+          "Sogndal",
+          "Stabæk",
+          "Strømsgodset",
+          "Tromsø",
+          "Vålerenga",
+          "Viking"
+        ],
+        "posiciones": [
+          "Rosenborg",
+          "Aalesund",
+          "Molde",
+          "Brann",
+          "Sarpsborg 08",
+          "Haugesund",
+          "Strømsgodset",
+          "Kristiansund",
+          "Lillestrøm",
+          "Odd",
+          "Vålerenga",
+          "Stabæk",
+          "Sandefjord",
+          "Tromsø",
+          "Sogndal",
+          "Viking"
         ]
       },
       "2018": {
@@ -321,6 +447,30 @@
           "Viking"
         ]
       },
+      "2021": {
+        "wikipediaPage": "2021 Eliteserien",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-19T12:20:56.742Z",
+        "clubs": [
+          "Bodø/Glimt",
+          "Brann",
+          "Haugesund",
+          "Kristiansund",
+          "Lillestrøm",
+          "Mjøndalen",
+          "Molde",
+          "Odd",
+          "Rosenborg",
+          "Sandefjord",
+          "Sarpsborg 08",
+          "Stabæk",
+          "Strømsgodset",
+          "Tromsø",
+          "Viking",
+          "Vålerenga"
+        ]
+      },
       "2022": {
         "wikipediaPage": "2022 Eliteserien",
         "lang": "en",
@@ -361,6 +511,48 @@
           "Sandefjord",
           "Kristiansund",
           "Jerv"
+        ]
+      },
+      "2023": {
+        "wikipediaPage": "2023 Eliteserien",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-19T12:20:57.928Z",
+        "clubs": [
+          "Aalesund",
+          "Bodø/Glimt",
+          "Brann",
+          "HamKam",
+          "Haugesund",
+          "Lillestrøm",
+          "Molde",
+          "Odd",
+          "Rosenborg",
+          "Sandefjord",
+          "Sarpsborg",
+          "Stabæk",
+          "Strømsgodset",
+          "Tromsø",
+          "Viking",
+          "Vålerenga"
+        ],
+        "posiciones": [
+          "Bodø/Glimt",
+          "Brann",
+          "Tromsø",
+          "Viking",
+          "Molde",
+          "Lillestrøm",
+          "Strømsgodset",
+          "Sarpsborg",
+          "Rosenborg",
+          "Odd",
+          "HamKam",
+          "Haugesund",
+          "Sandefjord",
+          "Vålerenga",
+          "Stabæk",
+          "Aalesund"
         ]
       },
       "2024": {
@@ -431,6 +623,48 @@
       }
     },
     "no-1divisjon": {
+      "2008": {
+        "wikipediaPage": "2008 Norwegian First Division",
+        "lang": "en",
+        "section": "plantilla sports table (escalón 1)",
+        "fetchedAt": "2026-10-19T12:21:05.964Z",
+        "clubs": [
+          "Odd Grenland",
+          "Alta",
+          "Sandefjord",
+          "Bryne",
+          "Start",
+          "Haugesund",
+          "Sogndal",
+          "Hødd",
+          "Hønefoss",
+          "Notodden",
+          "Kongsvinger",
+          "Løv-Ham",
+          "Nybergsund",
+          "Moss",
+          "Sarpsborg Sparta",
+          "Sandnes Ulf"
+        ],
+        "posiciones": [
+          "Odd Grenland",
+          "Alta",
+          "Sandefjord",
+          "Bryne",
+          "Start",
+          "Haugesund",
+          "Sogndal",
+          "Hødd",
+          "Hønefoss",
+          "Notodden",
+          "Kongsvinger",
+          "Løv-Ham",
+          "Nybergsund",
+          "Moss",
+          "Sarpsborg Sparta",
+          "Sandnes Ulf"
+        ]
+      },
       "2012": {
         "wikipediaPage": "2012 Norwegian First Division",
         "lang": "en",
@@ -715,6 +949,26 @@
       }
     },
     "no-2divisjon": {
+      "2008": {
+        "wikipediaPage": "2008 Norwegian Second Division",
+        "lang": "en",
+        "section": "plantilla sports table (escalón 1)",
+        "fetchedAt": "2026-10-19T12:21:07.649Z",
+        "clubs": [
+          "Mjøndalen",
+          "Lørenskog",
+          "Stabæk 2",
+          "Raufoss",
+          "Follo",
+          "Strømsgodset 2",
+          "Manglerud Star",
+          "Valdres",
+          "Fredrikstad 2",
+          "Strømmen",
+          "Modum",
+          "Østsiden"
+        ]
+      },
       "2018": {
         "wikipediaPage": "2018 Norwegian Second Division",
         "lang": "en",
