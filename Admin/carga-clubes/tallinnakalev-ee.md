@@ -498,6 +498,17 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 4
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-18.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Ragnar Klavan (2016-05-01 a hoy): La Wikipedia en inglés (Ragnar Klavan) dice 'In May 2016, Klavan became president of Estonian football club Tallinna Kalev'; solo da el mes, así que el día es 01 por convención (2016-05-01). El registro (ariregister.rik.ee/eng/company/80176115 e Inforegister) lo muestra como miembro de la junta desde el 14.10.2016, junto con Dzintar Klavan; la fecha de la Wikipedia es de mayo y la del registro de octubre, o sea que el alta en la junta fue posterior al anuncio. Wikipedia de Kalev dice 'announced in May 2016'; otra fuente de prensa dice 'desde 2017'. El balance 2025 lo firma él como Juhatuse liige: Clubes/Estonia/Tallinna Kalev/aruanne-2025.md:764 (firma 30.03.2026). OJO: el balance 2019 lo firman Joel Lindpere y Dzintar Klavan como Juhatuse liige (aruanne-2019.md:540-541), no Ragnar; Lindpere ya no figura en la junta actual. La gestión conductora para el sitio sigue siendo el presidente, pero los cierres 2019 y quizá 2020-2022 los firmaron otros miembros de la junta.
+Duda: Fecha de asunción: mayo de 2016 (Wikipedia, anuncio) frente a 2016-10-14 (alta en la junta del registro) y 'desde 2017' en otra fuente de prensa. Se usó 2016-05-01; no afecta ningún cierre (todos son 2019 en adelante).
+Duda: No encontré el nombre del presidente anterior a Klavan; no importa para los cierres cargados.
+Duda: Klavan fue jugador del club en 2023-2025 además de presidente; no se encontró fuente que indique si ejerció la presidencia de forma continua. Los balances 2019 los firmaron Lindpere y Dzintar Klavan: conviene confirmar con el club.
+```
+
 ## Fuentes
 
 ### tallinnakalev-ee-aruanne-2025

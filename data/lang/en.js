@@ -619,6 +619,7 @@ window.I18N.strings.en = {
   "spo.dosRoles": "Orange: shirt sponsor; blue: kit manufacturer.",
   "spo.equipoT": "Team",
   "spo.fuente": "Source: each season's Wikipedia page, in the revision that was read.",
+  "spo.otras": "Other sources:",
   // Finanzas: estadio y camiseta
   "ctx.title": "Stadium and shirt",
   "ctx.sub": "Where the club played and who was on the shirt each season. This is context: sponsorship money is in Revenue, under Commercial / Sponsors.",

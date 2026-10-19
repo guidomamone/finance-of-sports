@@ -99,6 +99,20 @@ const SPONSOR_VIEW = (function(){
       const url = (S.fuentes || {})[lid + '|' + ultimo];
       return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(liga(lid).name || lid)}</a>` : esc(liga(lid).name || lid);
     }).join(' · ');
+    // Lo que no salió de la página de temporada (cargado a mano o de la página del club) trae su fuente en e[5]: una línea aparte, por
+    // club y fuente, con el rango de temporadas. El nombre del link sigue la regla de la tarjeta "Estadio y camiseta".
+    const nombreFuente = u => { let h = u; try { h = new URL(u).hostname.replace(/^www\./, ''); } catch(err){} const w = h.match(/^([a-z]{2,3})\.(?:m\.)?wikipedia\.org$/); return w ? 'Wikipedia (' + w[1] + ')' : h; };
+    const propias = new Map();
+    s.e.filter(e => e[5]).forEach(e => {
+      const k = clave(e) + '|' + e[5];
+      if(!propias.has(k)) propias.set(k, { equipo: e[3] ? ((clubs[e[3]] || {}).displayName || e[2]) : e[2], liga: e[0], url: e[5], ys: [] });
+      propias.get(k).ys.push(e[1]);
+    });
+    const otras = [...propias.values()].sort((a, b) => a.equipo.localeCompare(b.equipo) || Math.min(...a.ys) - Math.min(...b.ys)).map(p => {
+      const d = Math.min(...p.ys), h = Math.max(...p.ys);
+      const rango = d === h ? temporada(p.liga, d) : temporada(p.liga, d) + '–' + temporada(p.liga, h);
+      return `${esc(p.equipo)} ${esc(rango)}: <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(nombreFuente(p.url))}</a>`;
+    }).join(' · ');
 
     caja.innerHTML = `
       <div class="spo-head"><span class="spo-rol">${esc(rolTxt)}</span><h1>${esc(s.n)}</h1><p class="spo-resumen">${esc(resumen)}</p></div>
@@ -109,6 +123,7 @@ const SPONSOR_VIEW = (function(){
         <div class="table-scroll"><table class="spo-tabla"><thead><tr><th>${esc(t('spo.equipoT', 'Equipo'))}</th>${anios.map(y => `<th>${y}</th>`).join('')}</tr></thead>
         <tbody>${filas.map(q => `<tr><th scope="row" class="${q.club ? '' : 'spo-gris'}"><span class="spo-flag">${bandera(q.liga)}</span>${q.club ? `<a href="?tab=finanzas&amp;club=${esc(q.club)}" data-club="${esc(q.club)}">${esc(q.equipo)}</a>` : esc(q.equipo)}</th>${anios.map(y => celda(q, y)).join('')}</tr>`).join('')}</tbody></table></div>
         <p class="spo-nota">${esc(t('spo.fuente', 'Fuente: la página de cada temporada en Wikipedia, en la versión que se leyó.'))} ${fuentes}</p>
+        ${otras ? `<p class="spo-nota">${esc(t('spo.otras', 'Otras fuentes:'))} ${otras}</p>` : ''}
       </section>`;
     caja.querySelectorAll('a[data-club]').forEach(a => a.addEventListener('click', ev => {
       if(!hooks.irAClub) return;

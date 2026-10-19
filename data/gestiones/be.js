@@ -137,4 +137,36 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Salvatore Curaba', corto:'Curaba', cargo:'Dueño', desde:'2017-05-12', hasta:null,
       fuente:'Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.md', confirmada:true },
   ],
+  'beerschot-be': [
+    { nombre:'Eric Roef', corto:'Roef', cargo:'Voorzitter', desde:'2018-06-29', hasta:'2019-07-30',
+      fuente:'https://www.voetbalkrant.com/nieuws/2019-07-30/beerschot-verandert-zijn-bestuurstop-eigenaar-wordt-nu-ook-voorzitter', confirmada:true },
+    { nombre:'Francis Vrancken', corto:'Vrancken', cargo:'Voorzitter', desde:'2019-07-30', hasta:'2024-05-02',
+      fuente:'https://www.voetbalprimeur.be/nieuws/1197236/beerschot-vergadert-neemt-afscheid-van-voorzitter-vrancken.html', confirmada:true },
+  ],
+  'liersesk-be': [
+    { nombre:'Luc Van Thillo', corto:'Van Thillo', cargo:'Dueño', desde:'2018-06-29', hasta:null,
+      fuente:'https://sporza.be/nl/2018/06/01/oosterzonen-en-lierse-hebben-akkoord-over-stadion--lierse-kempen/', confirmada:true },
+  ],
+  'lokerentemse-be': [
+    { nombre:'Hans Van Duysen', corto:'Van Duysen', cargo:'Voorzitter', desde:'2020-04-21', hasta:null,
+      fuente:'https://sporza.be/nl/2020/04/22/hans-van-duyse-nieuwe-voorzitter-ksc-lokeren-temse/', confirmada:true },
+  ],
+  'lommelsk-be': [
+    { nombre:'Harm van Veldhoven', corto:'Van Veldhoven', cargo:'Voorzitter', desde:'2021-02-01', hasta:null,
+      fuente:'https://nl.wikipedia.org/wiki/Lommel_SK_(2554)', confirmada:true },
+  ],
+  'patroeisden-be': [
+    { nombre:'Wayne Woo', corto:'Woo', cargo:'Voorzitter', desde:'2016-12-01', hasta:'2018-10-31',
+      fuente:'https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen', confirmada:true },
+    { nombre:'Salar Azimi', corto:'Azimi', cargo:'Voorzitter', desde:'2018-10-31', hasta:'2020-12-01',
+      fuente:'https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen', confirmada:true },
+    { nombre:'Derrick Devonport', corto:'Devonport', cargo:'Voorzitter', desde:'2020-12-01', hasta:'2021-05-12',
+      fuente:'https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen', confirmada:true },
+    { nombre:'Coley Parry', corto:'Parry', cargo:'Voorzitter', desde:'2021-12-01', hasta:null,
+      fuente:'https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen', confirmada:true },
+  ],
+  'rwdm-be': [
+    { nombre:'John Textor', corto:'Textor', cargo:'Dueño', desde:'2021-12-24', hasta:null,
+      fuente:'https://www.lavenir.net/sports/football/d1a/2023/05/31/abus-de-pouvoir-detournement-de-fonds-comportement-violent-john-textor-livre-les-raisons-du-limogeage-de-thierry-dailly-F6X47ZKR5VCX3O23CXOLJV7CFY/', confirmada:true },
+  ],
 });

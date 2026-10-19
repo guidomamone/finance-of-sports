@@ -105,6 +105,20 @@ tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del docum
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-1.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Eric Roef (2018-06-29 a 2019-07-30): Voorzitter de Beerschot-Wilrijk desde antes de la reestructuración en NV: voetbalkrant 2017-03-16 y 2018-07-27 ya lo llaman voorzitter ('Roef blijft voorzitter'). Voetbalkrant 2019-07-30 dice que dejó la presidencia y pasó a erevoorzitter. La fecha desde 2018-06-29 es la del inicio de su mandato de Bestuurder en la NV nueva (Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual.md:64-68, mandato desde 29-06-2018); ninguna fuente web da el día en que asumió la presidencia, por eso es una convención. La fecha hasta 2019-07-30 es la del anuncio ('zopas bekendgemaakt'); el artículo no da fecha efectiva.
+Francis Vrancken (2019-07-30 a 2024-05-02): Voorzitter desde el anuncio del 2019-07-30 (voetbalkrant: 'Francis Vrancken, medeeigenaar, wordt voorzitter'). Hasta: el consejo aceptó su renuncia, noticia del 2024-05-02 (voetbalprimeur); sporza del 2024-04-22/23 ya lo daba como saliente tras el título. Es la fecha de la noticia, no necesariamente de la reunión. Figura como Bestuurder en los balances (p.ej. jaarrekening-2019-06-30-individual.md:52-56).
+SIN CONFIRMAR, no cargada: Selahattin Baki (2025-01-07 a hoy), https://sporza.be/nl/2025/01/07/beerschot-gooit-structuur-om-na-financiele-perikelen-turk-selahattin-baki-nieuwe-voorzitter-steve-nuyts-ceo~1736258707131/: Sporza 2025-01-07 informa que fue nombrado voorzitter; no da fecha efectiva (otra mención habla de un consejo de 4 miembros desde el 2024-11-28). No encontré cuándo terminó su gestión ni quién presidió entre mayo 2024 y enero 2025. Por eso confirmada:false y el cierre 2025-06-30 queda sin cubrir.
+Duda: Cierre 2025-06-30: Baki fue nombrado voorzitter el 2025-01-07, pero no hay fuente que diga hasta cuándo ni que siguiera en junio de 2025 (en agosto 2026 Yusuke Ohno es presidente; la Wikipedia en inglés lista a Kazuaki Nakamura sin fecha). Falta una fuente de la fecha de salida de Baki.
+Duda: Hueco entre 2024-05-02 (renuncia de Vrancken) y 2025-01-07: no encontré quién presidió; no afecta ningún cierre cargado.
+Duda: Roef: el día en que asumió la presidencia no figura en ninguna fuente; se usó 2018-06-29 (inicio del mandato de la NV).
+Duda: Aviso: la gestión pasó de Roef a Vrancken el 2019-07-30, un mes después del cierre 2019-06-30; el balance 2019 se aprobó el 14-10-2019 (jaarrekening-2019-06-30-individual.md:29), ya con Vrancken. El cierre pertenece a Roef pero lo aprobó la gestión de Vrancken.
+```
+
 ## Fuentes
 
 ### beerschot-be-jaarrekening-2025-06-30-individual

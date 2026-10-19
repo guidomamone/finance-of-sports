@@ -88,6 +88,16 @@ tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del docum
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-2.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Luc Van Thillo (2018-06-29 a hoy): Sporza 2018-06-01: nuevo dueño del club relanzado (Lierse Kempenzonen, hoy K. Lierse S.K.) junto a los hermanos Van Lommel; sporza 2024-12-12 lo llama 'eigenaar en voorzitter'. La fecha 2018-06-29 es el inicio de su mandato de Bestuurder en la NV (Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md:66-71); las fuentes web no dan el día exacto de asunción. El balance 2025 lo lista como administrador sin fin de mandato (líneas 66-71) y se aprobó el 30-10-2025 (línea 30).
+Duda: El día exacto en que Van Thillo asumió no figura en la prensa; se usó la fecha de inicio de su mandato en la NV (2018-06-29). No afecta el cierre 2025-06-30.
+Duda: Wikipedia lo lista como Chairman sin fechas; no hay fuente web con la fecha de su cargo de Voorzitter formal.
+```
+
 ## Fuentes
 
 ### liersesk-be-jaarrekening-2025-06-30-individual

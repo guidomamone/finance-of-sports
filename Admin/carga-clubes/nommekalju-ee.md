@@ -498,6 +498,16 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 5
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-16.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Kuno Tehva (2007-04-11 a hoy): Tehva figura en el registro comercial (Inforegister, ficha 283296-ID; ariregister coincide) como único miembro de la junta (Juhatuse liige) de MTÜ Nõmme Kalju FC (80048819) desde el 11.04.2007, sin fecha de fin. La Wikipedia en inglés (https://en.wikipedia.org/wiki/N%C3%B5mme_Kalju_FC) lo nombra presidente del club y dice que adquirió el club en 2002; ECA (efcfootball.com) lo describe como dueño y presidente. El título 'presidente' lo dan Wikipedia/ECA; la fecha de desde es la de alta en la junta del registro, no una fecha de asunción como presidente. Los balances los firma él como Juhatuse liige: Clubes/Estonia/Nõmme Kalju/aruanne-2022.md:882 (firma 23.04.2023) y aruanne-2025.md:833 (firma 31.03.2026). Los demás años (2019-2021, 2023, 2024) no los abrí uno por uno; el registro muestra una sola persona en la junta en todo el período.
+Duda: No encontré una fuente que diga desde cuándo es 'presidente' (el registro solo dice miembro de la junta desde 2007-04-11). La Wikipedia dice que adquirió el club en 2002. Si Guido quiere la fecha exacta como presidente, hay que preguntarle al club.
+Duda: ECA lo llama 'owner and chairman'. Como Kalju es MTÜ, se cargó como presidente (no 'Dueño'); la decisión de si cuenta como dueño persona es de Guido.
+```
+
 ## Fuentes
 
 ### nommekalju-ee-aruanne-2025

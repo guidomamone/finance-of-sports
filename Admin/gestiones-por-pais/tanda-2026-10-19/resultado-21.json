@@ -1,0 +1,28 @@
+{
+  "criterioPais": {
+    "PT": "Estoril Praia SAD es de MSP Sports Capital (un fondo, no una persona): se carga el presidente de la SAD que firma, Ignacio Beristain hasta que dejó el cargo en junio de 2025."
+  },
+  "clubes": {
+    "estorilpraia-pt": {
+      "gestiones": [
+        {
+          "nombre": "Ignacio Beristain Borra",
+          "corto": "Beristain",
+          "cargo": "Presidente",
+          "desde": "2021-01-01",
+          "hasta": "2025-06-10",
+          "fuente": "https://www.abola.pt/noticias/ignacio-beristain-deixa-a-lideranca-do-estoril-2025061009393552677",
+          "confirmada": true
+        }
+      ],
+      "notas": {
+        "Ignacio Beristain Borra": "Presidente de la SAD 'ao fim de quatro anos e meio' desde enero de 2021 (solo mes y año: día 01). El club anunció su salida el martes 10/6/2025 (A Bola 10/6/2025; RTP: 'cessa funções na liderança da administração'); ninguna nota da la fecha efectiva ni nombra sucesor ('ainda não é conhecido o seu sucessor'; lo decide MSP Sports Capital). hasta = 10/6/2025 por la fecha del anuncio. El relatório 2024/25 enumera al 30/6/2025 solo vogais en el Conselho de Administração, sin presidente (Clubes/Portugal/Estoril Praia/relatorio-contas-2024-25.md:88-94: Begoña Santiago Ramos, Paulo Carvalho, Johannes Ruppert, Lauren Cheney Holiday, Todd Marcy)."
+      },
+      "cubre": {},
+      "dudas": [
+        "El cierre 2025-06-30 queda SIN cubrir: Beristain anunció su salida el 10/6/2025 y al 30/6/2025 el consejo no tiene presidente (relatorio-contas-2024-25.md:88-94). El 1/7/2025 el club presentó a Carlos Álvarez como diretor geral de la SAD (A Bola 1/7/2025), no como presidente, y desde después de esa fecha. No hallé la fecha efectiva de la salida de Beristain: si fue el 30/6/2025 (fin de temporada), cubriría el cierre, pero no hay fuente que lo diga. Dato a consultar al club o en el comunicado oficial del Estoril.",
+        "La SAD pertenece a MSP Sports Capital (fondo): sin persona dueña no hay entrada alternativa."
+      ]
+    }
+  }
+}

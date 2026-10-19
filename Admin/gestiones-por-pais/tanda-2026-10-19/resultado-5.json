@@ -1,0 +1,75 @@
+{
+  "criterioPais": {
+    "BE": "Patro Eisden es una vzw sin dueño-persona: se carga el voorzitter de la Raad van Bestuur (Stevens, Woo, Azimi, Devonport, Coley Parry), con las fechas de nl.wikipedia."
+  },
+  "clubes": {
+    "patroeisden-be": {
+      "gestiones": [
+        {
+          "nombre": "Robert Stevens",
+          "corto": "Stevens",
+          "cargo": "Voorzitter",
+          "desde": "2014-07-01",
+          "hasta": "2016-12-01",
+          "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen",
+          "confirmada": false
+        },
+        {
+          "nombre": "Wayne Woo",
+          "corto": "Woo",
+          "cargo": "Voorzitter",
+          "desde": "2016-12-01",
+          "hasta": "2018-10-31",
+          "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen",
+          "confirmada": true
+        },
+        {
+          "nombre": "Salar Azimi",
+          "corto": "Azimi",
+          "cargo": "Voorzitter",
+          "desde": "2018-10-31",
+          "hasta": "2020-12-01",
+          "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen",
+          "confirmada": true
+        },
+        {
+          "nombre": "Derrick Devonport",
+          "corto": "Devonport",
+          "cargo": "Voorzitter",
+          "desde": "2020-12-01",
+          "hasta": "2021-05-12",
+          "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen",
+          "confirmada": true
+        },
+        {
+          "nombre": "Coley Parry",
+          "corto": "Parry",
+          "cargo": "Voorzitter",
+          "desde": "2021-12-01",
+          "hasta": null,
+          "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen",
+          "confirmada": true
+        }
+      ],
+      "notas": {
+        "Robert Stevens": "Voorzitter van de Raad van Bestuur en el balance 2015 (jaarrekening-2015-06-30-individual.md:44-49, STEVENS Robert) y 'voorzitter Robert Stevens' dio el acuerdo al traspaso de poder en diciembre de 2016 (nl.wikipedia). La fuente no dice cuándo empezó: desde = 2014-07-01 es solo el inicio del ejercicio 2014/15 en que ya figura (cota, no fecha de asunción), por eso confirmada:false. Aviso: el balance del cierre 2016-06-30 (aprobado el 13/1/2017) lista a Woo de Voorzitter (jaarrekening-2016-06-30-individual.md:50-55) y a Stevens solo de Bestuurder: la presidencia cambió entre el cierre y la aprobación.",
+        "Wayne Woo": "Inversor chino que 'nam half december 2016 ... het voorzitterschap over' (nl.wikipedia): día 01 por convención, la fuente dice mediados de diciembre. El 1/8/2018 el club anunció que Woo vendió; hasta = 31/10/2018 (asunción de Azimi) porque entre medio un tribunal le quitó poderes y no hay otro presidente. Voorzitter van de Raad van Bestuur en jaarrekening-2017-06-30-individual.md:43-48.",
+        "Salar Azimi": "'Op 31 oktober 2018 nam de Iraanse zakenman Salar Azimi het voorzitterschap over' (nl.wikipedia). Dimitió con su consejo en diciembre de 2020 (día 01). jaarrekening-2019-06-30-individual.md:47-52: AZIMI SALAR, Voorzitter van de Raad van Bestuur.",
+        "Derrick Devonport": "Inversor inglés que tomó el club tras Azimi en diciembre de 2020; el 12/5/2021 se comunicó oficialmente la salida de su consejo por falta del financiamiento prometido (nl.wikipedia). No tiene ejercicio cargado; se incluye para no dejar hueco. Entre el 12/5/2021 y diciembre de 2021 condujeron el club Stijn Stijnen, Wouter Corstjens y Rik Vliegen (tres personas, sin presidente): no se carga.",
+        "Coley Parry": "Common Group (EE.UU.) anunció la toma en diciembre de 2021 y Coley Parry pasó a ser voorzitter, 'sinds december 2021' en la ficha (nl.wikipedia, día 01). El balance del cierre 2025-06-30 lista 'Parry Coleman' como Voorzitter van de Raad van Bestuur (jaarrekening-2025-06-30-individual.md:44-48); el nombre está escrito al revés (Coley Parry = Parry Coleman) y también están Parry William (ondervoorzitter) y Parry Thomas Rawdan (bestuurder)."
+      },
+      "cubre": {
+        "2016-06-30": "Robert Stevens",
+        "2017-06-30": "Wayne Woo",
+        "2019-06-30": "Salar Azimi",
+        "2025-06-30": "Coley Parry"
+      },
+      "dudas": [
+        "Stevens: no hay fuente con la fecha en que asumió ni la de su salida exacta (diciembre 2016, 'half december'); 2016-06-30 queda cubierto con confirmada:false. Evidencia directa de que era el presidente al cierre: el balance 2015 (junio 2015) y el hecho de que Woo asumió recién en diciembre de 2016.",
+        "Wayne Woo fue Voorzitter solo desde diciembre de 2016, pero firma el balance 2016-06-30 (aprobado 13/1/2017): 'firmo' no se inventa, solo se avisa.",
+        "Woo: el hasta (31/10/2018) asume que el vacío entre su venta anunciada (1/8/2018) y Azimi no tuvo otro presidente; la fuente no lo dice.",
+        "Parry: la fuente no da el día del cambio (diciembre de 2021)."
+      ]
+    }
+  }
+}

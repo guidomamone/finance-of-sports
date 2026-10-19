@@ -91,3 +91,25 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
 - "`cargar.mjs` no escribe un año nuevo sin estadio y sponsor": salvo en una liga amateur, donde basta el estadio.
 
 ## Después del merge de la compuerta amateur (2026-10-18)
+
+### Qué cambió (CHANGELOG)
+
+- **312: la página de cada sponsor muestra "Otras fuentes"** (diseño aprobado por Guido): las entradas que no salieron de la página de
+  temporada (cargadas a mano o de la página del club) con su fuente, por club y fuente, con el rango de temporadas; el nombre del link
+  sigue la regla de la tarjeta "Estadio y camiseta" ("Wikipedia (pt)", o el sitio). Probado en pantalla (PT: Benfica 2005/06–2008/09,
+  Sporting CP 2000/01–2007/08). `.claude/launch.json` suma `fos-datos` en el puerto 8973 (el 8971 lo usa otra sesión). ASSET_V 1319.
+- **195: gestiones de Bélgica y Estonia** (tanda-2026-10-19, 16 clubes; quedaron afuera CRB, Cuiabá, Ferroviária, Goiás y OFI, ya
+  preguntados en `dudas-por-club.md`). 18 gestiones confirmadas, 61 casos de la cola contestados: Beerschot 2019-2022, Lierse SK, Lokeren-
+  Temse, Lommel SK 2021-2025, Patro Eisden 2017-2025, RWDM 2025 y nueve clubes estonios (Flora, Nõmme Kalju, Paide, Tallinna Kalev, FCI
+  Levadia, Kuressaare, Narva Trans con los 7 cierres). Criterio de Estonia nuevo en `Admin/gestiones-por-pais/ee.md` (Guido,
+  2026-10-19): el de Bélgica (dueño persona, si no el presidente) y, si ninguna fuente da la fecha de asunción pero lo llaman presidente
+  en el período, vale el alta en la junta del e-Äriregister. `data/gestiones/ee.js` nuevo y `'ee'` en `PAISES` de
+  `js/finanzas-anios.js` (sin eso `audit.js` frena: `gestiones-sin-cargar`). Probado en pantalla (Flora: "Pelle Pohlak · President").
+  ASSET_V 1320. Las 7 preguntas que quedan (Beerschot 2025, Lommel 2018-2020, Patro 2016, RWDM 2019-2020, Estoril 2025, Tammeka,
+  Harju), en `Admin/dudas-por-club.md`.
+
+### Qué queda (TODO)
+
+- 195: las gestiones de esas 7 preguntas, cuando contesten los clubes; CRB, Cuiabá, Ferroviária y Goiás siguen como estaban.
+- RWDM 2019: el registro tiene el cierre 2019-11-30, y el balance va del 30/11/2018 al 30/06/2019. Parece el defecto de fechas de
+  cierre de la 298 f (pipeline).

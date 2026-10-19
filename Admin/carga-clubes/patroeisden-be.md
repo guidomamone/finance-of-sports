@@ -89,6 +89,22 @@ tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del docum
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-5.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Wayne Woo (2016-12-01 a 2018-10-31): Inversor chino que 'nam half december 2016 ... het voorzitterschap over' (nl.wikipedia): día 01 por convención, la fuente dice mediados de diciembre. El 1/8/2018 el club anunció que Woo vendió; hasta = 31/10/2018 (asunción de Azimi) porque entre medio un tribunal le quitó poderes y no hay otro presidente. Voorzitter van de Raad van Bestuur en jaarrekening-2017-06-30-individual.md:43-48.
+Salar Azimi (2018-10-31 a 2020-12-01): 'Op 31 oktober 2018 nam de Iraanse zakenman Salar Azimi het voorzitterschap over' (nl.wikipedia). Dimitió con su consejo en diciembre de 2020 (día 01). jaarrekening-2019-06-30-individual.md:47-52: AZIMI SALAR, Voorzitter van de Raad van Bestuur.
+Derrick Devonport (2020-12-01 a 2021-05-12): Inversor inglés que tomó el club tras Azimi en diciembre de 2020; el 12/5/2021 se comunicó oficialmente la salida de su consejo por falta del financiamiento prometido (nl.wikipedia). No tiene ejercicio cargado; se incluye para no dejar hueco. Entre el 12/5/2021 y diciembre de 2021 condujeron el club Stijn Stijnen, Wouter Corstjens y Rik Vliegen (tres personas, sin presidente): no se carga.
+Coley Parry (2021-12-01 a hoy): Common Group (EE.UU.) anunció la toma en diciembre de 2021 y Coley Parry pasó a ser voorzitter, 'sinds december 2021' en la ficha (nl.wikipedia, día 01). El balance del cierre 2025-06-30 lista 'Parry Coleman' como Voorzitter van de Raad van Bestuur (jaarrekening-2025-06-30-individual.md:44-48); el nombre está escrito al revés (Coley Parry = Parry Coleman) y también están Parry William (ondervoorzitter) y Parry Thomas Rawdan (bestuurder).
+SIN CONFIRMAR, no cargada: Robert Stevens (2014-07-01 a 2016-12-01), https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen: Voorzitter van de Raad van Bestuur en el balance 2015 (jaarrekening-2015-06-30-individual.md:44-49, STEVENS Robert) y 'voorzitter Robert Stevens' dio el acuerdo al traspaso de poder en diciembre de 2016 (nl.wikipedia). La fuente no dice cuándo empezó: desde = 2014-07-01 es solo el inicio del ejercicio 2014/15 en que ya figura (cota, no fecha de asunción), por eso confirmada:false. Aviso: el balance del cierre 2016-06-30 (aprobado el 13/1/2017) lista a Woo de Voorzitter (jaarrekening-2016-06-30-individual.md:50-55) y a Stevens solo de Bestuurder: la presidencia cambió entre el cierre y la aprobación.
+Duda: Stevens: no hay fuente con la fecha en que asumió ni la de su salida exacta (diciembre 2016, 'half december'); 2016-06-30 queda cubierto con confirmada:false. Evidencia directa de que era el presidente al cierre: el balance 2015 (junio 2015) y el hecho de que Woo asumió recién en diciembre de 2016.
+Duda: Wayne Woo fue Voorzitter solo desde diciembre de 2016, pero firma el balance 2016-06-30 (aprobado 13/1/2017): 'firmo' no se inventa, solo se avisa.
+Duda: Woo: el hasta (31/10/2018) asume que el vacío entre su venta anunciada (1/8/2018) y Azimi no tuvo otro presidente; la fuente no lo dice.
+Duda: Parry: la fuente no da el día del cambio (diciembre de 2021).
+```
+
 ## Fuentes
 
 ### patroeisden-be-jaarrekening-2025-06-30-individual

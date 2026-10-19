@@ -534,6 +534,15 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 24
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-12.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Pelle Pohlak (2016-05-01 a hoy): Wikipedia (FC Flora): en mayo de 2016 Aivar Pohlak renunció a la presidencia del club y lo sucedió su hijo Pelle Pohlak, hoy presidente. La fuente da solo el mes: día 01 por convención. Pelle Pohlak firma como 'Juhatuse liige' los informes de todos los cierres (aruanne-2019.md:970, 2020.md:974, 2021.md:1035, 2022.md:1195, 2023.md:1014, 2024.md:1031, 2025.md:1139). Aivar Pohlak (presidente anterior, hoy presidente de la federación) no entra: dejó antes de 2019.
+Duda: La fuente (Wikipedia) es la única que da el traspaso de 2016 y solo con mes; no encontré una fuente en prensa estonia que lo corrobore con día.
+```
+
 ## Fuentes
 
 ### floratallinn-ee-aruanne-2025

@@ -1,0 +1,19 @@
+{
+  "criterioPais": { "BE": "Se cargó el Voorzitter del consejo (Hans Van Duysen) porque el club es una vzw (asociación) sin dueño persona, igual que los otros clubes asociación del país." },
+  "clubes": {
+    "lokerentemse-be": {
+      "gestiones": [
+        { "nombre": "Hans Van Duysen", "corto": "Van Duysen", "cargo": "Voorzitter", "desde": "2020-04-21", "hasta": null,
+          "fuente": "https://sporza.be/nl/2020/04/22/hans-van-duyse-nieuwe-voorzitter-ksc-lokeren-temse/", "confirmada": true }
+      ],
+      "notas": {
+        "Hans Van Duysen": "Presidente del club fusionado Lokeren-Temse desde abril 2020 (sporza 2020-04-22) y todavía voorzitter el 2025-07-01 cuando el club recupera el nombre Sporting Lokeren (https://www.vrt.be/vrtnws/nl/2025/07/01/sporting-lokeren-nieuwe-naam-logo/). La fecha exacta 2020-04-21 sale del balance 2021, donde figura 'Voorzitter van het bestuursorgaan', mandato desde 2020-04-21 (Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.md:47-51); el artículo de sporza es del día siguiente y no da el día. El balance 2025 lo lista como Bestuurder con mandato desde 2023-03-10 (jaarrekening-2025-06-30-individual.md:54-59), probablemente por renovación de mandatos, y se aprobó el 31-10-2025 (línea 23)."
+      },
+      "cubre": { "2025-06-30": "Hans Van Duysen" },
+      "dudas": [
+        "El balance 2025 no marca quién es Voorzitter (solo lista Bestuurders desde 2023-03-10); la presidencia en junio de 2025 se confirma por prensa (VRT, 2025-07-01, un día después del cierre), no por el balance.",
+        "La fecha desde (2020-04-21) viene del balance, no de la fuente web, que solo confirma abril de 2020."
+      ]
+    }
+  }
+}

@@ -1929,6 +1929,21 @@ sin leerlo.
 ## Gestiones sin fecha confirmada (tanda Admin/gestiones-por-pais/tanda-2026-10-14-2, sesión 2026-10-15: no frena ninguna carga)
 
 Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso está en el `resultado-N.json` de la tanda (notas y dudas).
+- **Beerschot, hasta cuándo presidió Selahattin Baki** (tanda-2026-10-19, lote 1): nombrado voorzitter el 7/1/2025; en agosto de 2026
+  aparece Yusuke Ohno, sin fecha de relevo. Deja sin cubrir el cierre 30/6/2025. — a quién preguntarle: K Beerschot VA.
+- **Lommel SK, desde y hasta cuándo presidió Paul Kerkhofs** (tanda-2026-10-19, lote 4): Sporza lo llama "huidig voorzitter" en mayo
+  de 2020; Harm van Veldhoven lo sigue en febrero de 2021. Cierres 30/6/2018 y 30/6/2020. — a quién preguntarle: Lommel SK.
+- **Patro Eisden, desde cuándo presidió Robert Stevens** (tanda-2026-10-19, lote 5): figura en el ejercicio 2015-16 sin fecha de
+  asunción. Cierre 30/6/2016. — a quién preguntarle: K. Patro Eisden Maasmechelen.
+- **RWDM, desde cuándo condujo Thierry Dailly** (tanda-2026-10-19, lote 6): gedelegeerd bestuurder en los balances 2019 y 2020, dueño
+  hasta la venta a John Textor (24/12/2021); la fecha de inicio (2015) es aproximada. — a quién preguntarle: RWDM.
+- **Estoril Praia, quién presidía al 30/6/2025** (tanda-2026-10-19, lote 21): Ignacio Beristain anunció su salida el 10/6/2025 sin fecha
+  efectiva ni sucesor; el relatório 2024/25 lista solo vogais al cierre (L88-94). — a quién preguntarle: Estoril Praia SAD.
+- **Tartu Tammeka, quién presidió 2019-2024** (tanda-2026-10-19, lote 19): ninguna fuente nombra presidente (o juhatuse esimees) en
+  esos años; Kristjan Tiirik es miembro de la junta y gerente desde 2010; Kaarel Kiidron, presidente desde agosto/septiembre de 2025.
+  — a quién preguntarle: Tartu JK Tammeka.
+- **Harju JK Laagri, quién preside el club** (tanda-2026-10-19, lote 13): Kalmar Liiv figura como gerente (tegevjuht) y único firmante
+  de los informes; Wikipedia lo llama "Chairman" sin fecha. Cierres 2023-2025. — a quién preguntarle: Harju JK Laagri.
 - **Cruzeiro, en qué fecha se cerró la compra de la SAF por Pedro Lourenço** (tanda-2026-10-18, lote 6): el acuerdo se firmó el
   29/4/2024 sujeto al CADE y a la concordancia de la Cruzeiro Associação (informativo-financeiro-2023.md:2101); el CADE aprobó el 12/6/2024
   (O Tempo). Cualquier fecha deja los cierres 2024 y 2025 con Lourenço, pero ninguna fuente da el cierre formal. — a quién preguntarle:

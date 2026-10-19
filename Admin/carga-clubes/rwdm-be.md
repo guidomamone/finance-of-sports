@@ -133,6 +133,18 @@ tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del docum
 tools/cargar.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-6.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+John Textor (2021-12-24 a hoy): Compró el 80% del RWDM (L'Avenir 12/1/2022); en su carta del 31/5/2023 dice 'Le 24 décembre 2021 ... je suis devenu propriétaire majoritaire à 80 %' (fecha dada por él mismo, sin confirmación independiente del acto legal) y asume la presidencia ese día. Gedelegeerd bestuurder desde 2023-02-10 en jaarrekening-2025-06-30-individual.md:63-67 (junto a Tardin Caixero Danilo y Vossen Maxime). Sigue siendo el dueño en junio de 2025 (en.wikipedia RWDM47).
+SIN CONFIRMAR, no cargada: Thierry Dailly (2015-06-01 a 2021-12-24), https://www.lavenir.net/sport-local-best-of/2022/01/12/lamericain-john-textor-crystal-palace-est-le-nouveau-proprietaire-du-rwdm-XHR6CYFU5REIZM7PH46DVOG5EA/: Impulsor del RWDM relanzado en 2014-15 ('sous l'impulsion de Thierry Dailly', L'Avenir 12/1/2022) con el matricule 5479 y su 'président' hasta 2023; dueño hasta vender el 80% a Textor y quedarse con el 20% y la presidencia (L'Avenir, 12/1/2022). Desde = 2015-06-01 es aproximado (relanzamiento en la primavera-verano de 2015; no hallé la fecha de su asunción), por eso confirmada:false. Hasta = 24/12/2021, fecha en que Textor dice haberse hecho dueño del 80% (carta del 31/5/2023); el anuncio público fue el 12/1/2022. Siguió de presidente nominal hasta el 31/5/2023 (Sporza 31/5/2023), fuera del criterio del dueño. Figura Gedelegeerd bestuurder desde 30-11-2018 (jaarrekening-2019-06-30-individual.md:46-50 y jaarrekening-2020-06-30-individual.md:73-77).
+Duda: Dailly: no hay fuente con el día de su asunción (2015); el desde 2015-06-01 es aproximado y por eso la gestión está en confirmada:false aunque Dailly sea con certeza el conductor en 2019 y 2020 (Gedelegeerd bestuurder en ambos balances).
+Duda: Cierre 2019-11-30: el balance (jaarrekening-2019-06-30-individual.md:24) cubre del 30-11-2018 al 30-06-2019 (NV constituida el 30-11-2018); la fecha de cierre cargada, 2019-11-30, parece un error de fecha del cargado. Si se corrige a 2019-06-30, Dailly cubre igual.
+Duda: Textor: el 24/12/2021 es la fecha que él mismo declara; el anuncio público es del 12/1/2022.
+```
+
 ## Fuentes
 
 ### rwdm-be-jaarrekening-2025-06-30-individual

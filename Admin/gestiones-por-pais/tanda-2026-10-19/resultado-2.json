@@ -1,0 +1,19 @@
+{
+  "criterioPais": { "BE": "Se cargó a Luc Van Thillo con cargo 'Dueño' porque es una persona con nombre, dueño y presidente del club desde el relanzamiento de 2018 (criterio del país: dueño persona se carga como Dueño)." },
+  "clubes": {
+    "liersesk-be": {
+      "gestiones": [
+        { "nombre": "Luc Van Thillo", "corto": "Van Thillo", "cargo": "Dueño", "desde": "2018-06-29", "hasta": null,
+          "fuente": "https://sporza.be/nl/2018/06/01/oosterzonen-en-lierse-hebben-akkoord-over-stadion--lierse-kempen/", "confirmada": true }
+      ],
+      "notas": {
+        "Luc Van Thillo": "Sporza 2018-06-01: nuevo dueño del club relanzado (Lierse Kempenzonen, hoy K. Lierse S.K.) junto a los hermanos Van Lommel; sporza 2024-12-12 lo llama 'eigenaar en voorzitter'. La fecha 2018-06-29 es el inicio de su mandato de Bestuurder en la NV (Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md:66-71); las fuentes web no dan el día exacto de asunción. El balance 2025 lo lista como administrador sin fin de mandato (líneas 66-71) y se aprobó el 30-10-2025 (línea 30)."
+      },
+      "cubre": { "2025-06-30": "Luc Van Thillo" },
+      "dudas": [
+        "El día exacto en que Van Thillo asumió no figura en la prensa; se usó la fecha de inicio de su mandato en la NV (2018-06-29). No afecta el cierre 2025-06-30.",
+        "Wikipedia lo lista como Chairman sin fechas; no hay fuente web con la fecha de su cargo de Voorzitter formal."
+      ]
+    }
+  }
+}

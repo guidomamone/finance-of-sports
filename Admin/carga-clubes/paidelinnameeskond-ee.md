@@ -467,6 +467,16 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 5
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-17.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Veiko Veskimäe (2013-03-11 a hoy): Inforegister (ficha 307713-ID) lo muestra como miembro de la junta (Juhatuse liige) de Jalgpalliklubi Paide Linnameeskond (80339528) desde el 11.03.2013, sin fin; ariregister.rik.ee/eng/company/80339528 lo lista con la misma fecha. La Wikipedia en inglés (https://en.wikipedia.org/wiki/Paide_Linnameeskond) dice que en 2013 se convirtió en presidente del club, y su infobox lo mantiene como presidente. El registro solo dice miembro de la junta; el título 'presidente' sale de Wikipedia, y la fecha coincide en año. El balance 2025 lo firma otro miembro de la junta, Jarmo Liiver (Clubes/Estonia/Paide Linnameeskond/aruanne-2025.md:665, firma 31.03.2026), miembro desde 2023-04-03 según ariregister; Veskimäe, Erkko Saluste (2013-03-11) y Margus Pahtma (2013-09-24) siguen en la junta. No abrí los informes de 2019-2024 uno por uno.
+Duda: El registro lista cuatro miembros de la junta (Veskimäe, Saluste, Pahtma, Liiver) sin distinguir un presidente de junta; el título de presidente de Veskimäe viene solo de Wikipedia/Baltic Football News. Conviene confirmarlo con el club.
+Duda: Los firmantes de los balances 2019-2024 no se verificaron uno por uno.
+```
+
 ## Fuentes
 
 ### paidelinnameeskond-ee-aruanne-2025

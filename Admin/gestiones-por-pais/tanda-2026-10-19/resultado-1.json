@@ -1,0 +1,31 @@
+{
+  "criterioPais": { "BE": "Se cargó el Voorzitter (presidente del consejo) y no el dueño: Beerschot tiene accionistas institucionales (United World, el fondo del príncipe Abdullah, e Immo & Sport Invest/DCA; desde sept 2025 Kinpoudou Holdings), no una persona con nombre como dueño único, y los presidentes formales son los que figuran en la prensa." },
+  "clubes": {
+    "beerschot-be": {
+      "gestiones": [
+        { "nombre": "Eric Roef", "corto": "Roef", "cargo": "Voorzitter", "desde": "2018-06-29", "hasta": "2019-07-30",
+          "fuente": "https://www.voetbalkrant.com/nieuws/2019-07-30/beerschot-verandert-zijn-bestuurstop-eigenaar-wordt-nu-ook-voorzitter", "confirmada": true },
+        { "nombre": "Francis Vrancken", "corto": "Vrancken", "cargo": "Voorzitter", "desde": "2019-07-30", "hasta": "2024-05-02",
+          "fuente": "https://www.voetbalprimeur.be/nieuws/1197236/beerschot-vergadert-neemt-afscheid-van-voorzitter-vrancken.html", "confirmada": true },
+        { "nombre": "Selahattin Baki", "corto": "Baki", "cargo": "Voorzitter", "desde": "2025-01-07", "hasta": null,
+          "fuente": "https://sporza.be/nl/2025/01/07/beerschot-gooit-structuur-om-na-financiele-perikelen-turk-selahattin-baki-nieuwe-voorzitter-steve-nuyts-ceo~1736258707131/", "confirmada": false }
+      ],
+      "notas": {
+        "Eric Roef": "Voorzitter de Beerschot-Wilrijk desde antes de la reestructuración en NV: voetbalkrant 2017-03-16 y 2018-07-27 ya lo llaman voorzitter ('Roef blijft voorzitter'). Voetbalkrant 2019-07-30 dice que dejó la presidencia y pasó a erevoorzitter. La fecha desde 2018-06-29 es la del inicio de su mandato de Bestuurder en la NV nueva (Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual.md:64-68, mandato desde 29-06-2018); ninguna fuente web da el día en que asumió la presidencia, por eso es una convención. La fecha hasta 2019-07-30 es la del anuncio ('zopas bekendgemaakt'); el artículo no da fecha efectiva.",
+        "Francis Vrancken": "Voorzitter desde el anuncio del 2019-07-30 (voetbalkrant: 'Francis Vrancken, medeeigenaar, wordt voorzitter'). Hasta: el consejo aceptó su renuncia, noticia del 2024-05-02 (voetbalprimeur); sporza del 2024-04-22/23 ya lo daba como saliente tras el título. Es la fecha de la noticia, no necesariamente de la reunión. Figura como Bestuurder en los balances (p.ej. jaarrekening-2019-06-30-individual.md:52-56).",
+        "Selahattin Baki": "Sporza 2025-01-07 informa que fue nombrado voorzitter; no da fecha efectiva (otra mención habla de un consejo de 4 miembros desde el 2024-11-28). No encontré cuándo terminó su gestión ni quién presidió entre mayo 2024 y enero 2025. Por eso confirmada:false y el cierre 2025-06-30 queda sin cubrir."
+      },
+      "cubre": {
+        "2019-06-30": "Eric Roef",
+        "2020-06-30": "Francis Vrancken",
+        "2022-06-30": "Francis Vrancken"
+      },
+      "dudas": [
+        "Cierre 2025-06-30: Baki fue nombrado voorzitter el 2025-01-07, pero no hay fuente que diga hasta cuándo ni que siguiera en junio de 2025 (en agosto 2026 Yusuke Ohno es presidente; la Wikipedia en inglés lista a Kazuaki Nakamura sin fecha). Falta una fuente de la fecha de salida de Baki.",
+        "Hueco entre 2024-05-02 (renuncia de Vrancken) y 2025-01-07: no encontré quién presidió; no afecta ningún cierre cargado.",
+        "Roef: el día en que asumió la presidencia no figura en ninguna fuente; se usó 2018-06-29 (inicio del mandato de la NV).",
+        "Aviso: la gestión pasó de Roef a Vrancken el 2019-07-30, un mes después del cierre 2019-06-30; el balance 2019 se aprobó el 14-10-2019 (jaarrekening-2019-06-30-individual.md:29), ya con Vrancken. El cierre pertenece a Roef pero lo aprobó la gestión de Vrancken."
+      ]
+    }
+  }
+}
