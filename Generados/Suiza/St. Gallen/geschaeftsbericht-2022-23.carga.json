@@ -1,0 +1,434 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.pdf",
+ "generado": "2026-10-19T16:08:49.596Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Erträge brutto\" -> lump_football_operations 0.45; \"Direkte Kosten\" -> match_organisation_expense 0.4"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado. Años cargados: 2025 consolidado",
+  "gastos: ningún total impreso igual a la suma de las líneas (-35.16); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "stgallen-ch",
+  "year": 2023,
+  "cierre": "2023-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Erträge brutto",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 37.47,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ertragsminderungen",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.456,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ausserordentlicher Ertrag",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.154,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Direkte Kosten",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -11.154,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 2,
+    "_conf": 0.4,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Personalaufwand",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -17.004,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Sonstiger Betriebsaufwand",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4.434,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Abschreibungen Sachanlagen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.156,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abschreibungen Spielerwerte",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.412,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ausserordentlicher Aufwand",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -1.127,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "CHF",
+   "fxRef": "CHF@2023-06-30",
+   "sourceId": "stgallen-ch-geschaeftsbericht-2022-23",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.264,
+   "tax": -0.014,
+   "extraRows": [
+    {
+     "label": "Finanzerfolg",
+     "value": -0.264
+    },
+    {
+     "label": "Steuern",
+     "value": -0.014
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Erträge brutto",
+     "lado": "revenue",
+     "importe": 37.47,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 37.168,
+   "officialTotalExpenses": 35.16,
+   "officialPAT": 0.603
+  },
+  "source": {
+   "id": "stgallen-ch-geschaeftsbericht-2022-23",
+   "clubId": "stgallen-ch",
+   "title": "FC St.Gallen AG — geschaeftsbericht-2022-23 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-06-30",
+  "evidencia": {
+   "pagina": 18,
+   "texto": "| AKTIVEN | 30.06.2023 | % | 30.06.2022 | % | Veränderung |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "stgallen-ch",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 11,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Erträge brutto",
+   "page": 17,
+   "native": 37.47,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 37.47,
+   "cat": "lump_football_operations",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 37.47
+  },
+  {
+   "label": "Ertragsminderungen",
+   "page": 17,
+   "native": 0.456,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": -0.456,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.456
+  },
+  {
+   "label": "Ausserordentlicher Ertrag",
+   "page": 17,
+   "native": 0.154,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.154,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.154
+  },
+  {
+   "label": "Direkte Kosten",
+   "page": 17,
+   "native": 11.154,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 11.154,
+   "cat": "match_organisation_expense",
+   "conf": 0.4,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -11.154
+  },
+  {
+   "label": "Personalaufwand",
+   "page": 17,
+   "native": 17.004,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 17.004,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Personalaufwand consolidado: 17’162 (FCSG AG, que incluye primer equipo, mujeres y Future Champs) + 3’671 (Event AG, personal de operación del estadio) = 20’833. El documento no separa el plantel, por lo que entero a wages_squad (mismo criterio que Lønnskostnad sin apertura en el formato noruego). La porción de Event AG y de administración y juveniles queda dentro del renglón y no se puede abrir. [Personalaufwand | −17’162 | −3’671 | −20’833 (L264)]",
+   "destino": "expense",
+   "amountNative": -17.004
+  },
+  {
+   "label": "Sonstiger Betriebsaufwand",
+   "page": 17,
+   "native": 4.434,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 4.434,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Consolidado: 1’377 (FCSG AG) + 3’995 (Event AG) = 5’372. El CFO lo describe como 'Betriebs- und Verwaltungsaufwendungen' con costos de energía en alza: gasto de estructura y estadio, admin_general_expense. [Sonstiger Betriebsaufwand | −1’377 | −3’995 | −5’372 (L266); 'Betriebs- und Verwaltungsaufwendungen, die infolge deutlich gestiegener Energiekosten zulegen' (L166)]",
+   "destino": "expense",
+   "amountNative": -4.434
+  },
+  {
+   "label": "Abschreibungen Sachanlagen",
+   "page": 17,
+   "native": 1.156,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.156,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.156
+  },
+  {
+   "label": "Abschreibungen Spielerwerte",
+   "page": 17,
+   "native": 1.412,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.412,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.412
+  },
+  {
+   "label": "Ausserordentlicher Aufwand",
+   "page": 17,
+   "native": 1.127,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.127,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.127
+  },
+  {
+   "label": "Finanzerfolg",
+   "page": null,
+   "native": -0.264,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Steuern",
+   "page": null,
+   "native": -0.014,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 37.168,
+  "expSum": -35.16,
+  "officialTotalRevenue": 37.168,
+  "officialTotalExpenses": 35.16,
+  "officialPAT": 0.603,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.603,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 37.168
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "CHF@2023-06-30",
+  "fx": 0.8947,
+  "source": "market_close",
+  "label": "Noon buying rate de Nueva York (Reserva Federal, H.10) al 2023-06-30"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de ch 2023 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (12 de 12 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CHF",
+   "fuente": "moneda de curso legal de Suiza (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "CHF@2023-06-30",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.8947. --escribir agrega 'CHF@2023-06-30' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "stgallen-ch-geschaeftsbericht-2022-23",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no hay ninguna liga-temporada de ch 2023 cacheada",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 3,
+  "lineasGasto": 6,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

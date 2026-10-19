@@ -1,0 +1,335 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2016.pdf",
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2016.md",
+ "generado": "2026-10-19T16:03:16.919Z",
+ "estado": "cola",
+ "clubId": "basel-ch",
+ "year": 2016,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2016.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado)",
+   "evidencia": "revisión de subagente Sonnet, Claude 2026-10-19: .md geschaeftsbericht-2016, Erfolgsrechnung de la FC Basel 1893 AG",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [
+  "e340863",
+  "f6e8cfa"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 1.2434497875801753e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": false,
+   "detalle": "ingresos de 2016: 137.561812 en este documento y 132.291812 en geschaeftsbericht-2017.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": true,
+   "detalle": "ingresos de 2015: 92.488643 en geschaeftsbericht-2015.pdf y 92.488643 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 137.561812,
+  "gastos": 128.929591,
+  "financiero": 1.798281,
+  "impuesto": 1.67252,
+  "resultadoImpreso": 5.767508,
+  "resultadoParaCargar": 5.767508,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Aus Meisterschaft",
+   "lado": "ingreso",
+   "M": 11.733538,
+   "pagina": 38,
+   "linea": 1130,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "Aus UEFA Spielen",
+   "lado": "ingreso",
+   "M": 8.88489,
+   "pagina": 38,
+   "linea": 1131,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "Aus Cup Spielen",
+   "lado": "ingreso",
+   "M": 0.021633,
+   "pagina": 38,
+   "linea": 1132,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "Aus übrigen Spielen",
+   "lado": "ingreso",
+   "M": 0.172096,
+   "pagina": 38,
+   "linea": 1133,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "Business Seats",
+   "lado": "ingreso",
+   "M": 7.688715,
+   "pagina": 34,
+   "linea": 953,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sponsoring, Werbung",
+   "lado": "ingreso",
+   "M": 12.345231,
+   "pagina": 34,
+   "linea": 954,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transferertrag",
+   "lado": "ingreso",
+   "M": 61.452083,
+   "pagina": 34,
+   "linea": 955,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "TV-Entschädigungen",
+   "lado": "ingreso",
+   "M": 2.208377,
+   "pagina": 34,
+   "linea": 956,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Merchandising, Licensing",
+   "lado": "ingreso",
+   "M": 3.173422,
+   "pagina": 34,
+   "linea": 957,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Catering",
+   "lado": "ingreso",
+   "M": 1.152176,
+   "pagina": 34,
+   "linea": 958,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Events Non-Matchday",
+   "lado": "ingreso",
+   "M": 1.470906,
+   "pagina": 34,
+   "linea": 959,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Verbandseinnahmen",
+   "lado": "ingreso",
+   "M": 20.179009,
+   "pagina": 34,
+   "linea": 960,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Einnahmen Leistungsfussball Nachwuchs",
+   "lado": "ingreso",
+   "M": 0.550304,
+   "pagina": 34,
+   "linea": 961,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sonstiger Betriebsertrag",
+   "lado": "ingreso",
+   "M": 1.259431,
+   "pagina": 34,
+   "linea": 962,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Korrektur Gewinnüberführung FC Basel Holding AG",
+   "lado": "ingreso",
+   "M": 5.27,
+   "pagina": 35,
+   "linea": 992,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Warenaufwand",
+   "lado": "gasto",
+   "M": 1.604061,
+   "pagina": 35,
+   "linea": 974,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Personalaufwand",
+   "lado": "gasto",
+   "M": 45.131743,
+   "pagina": 35,
+   "linea": 975,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Organisationskosten Heimspiele",
+   "lado": "gasto",
+   "M": 14.825035,
+   "pagina": 35,
+   "linea": 976,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übriger Spielbetrieb",
+   "lado": "gasto",
+   "M": 4.025943,
+   "pagina": 35,
+   "linea": 977,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transferaufwand",
+   "lado": "gasto",
+   "M": 17.660085,
+   "pagina": 35,
+   "linea": 978,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Werbung",
+   "lado": "gasto",
+   "M": 4.31083,
+   "pagina": 35,
+   "linea": 979,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administration",
+   "lado": "gasto",
+   "M": 4.081432,
+   "pagina": 35,
+   "linea": 980,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwand Leistungsfussball Nachwuchs",
+   "lado": "gasto",
+   "M": 0.924833,
+   "pagina": 35,
+   "linea": 981,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Defizitgarantie FC Basel 1893",
+   "lado": "gasto",
+   "M": 0.699552,
+   "pagina": 35,
+   "linea": 982,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übriger Aufwand",
+   "lado": "gasto",
+   "M": 1.552224,
+   "pagina": 35,
+   "linea": 983,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen auf Transferrechte",
+   "lado": "gasto",
+   "M": 5.073696,
+   "pagina": 35,
+   "linea": 984,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sonderabschreibungen auf Ersatzbeschaffung",
+   "lado": "gasto",
+   "M": 28.090496,
+   "pagina": 35,
+   "linea": 985,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen auf Sachanlagen",
+   "lado": "gasto",
+   "M": 0.94966,
+   "pagina": 35,
+   "linea": 986,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzertrag",
+   "M": 0.303044,
+   "linea": 989
+  },
+  {
+   "etiqueta": "Finanzaufwand",
+   "M": -1.495236,
+   "linea": 990
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern",
+   "M": -1.67252,
+   "linea": 994
+  }
+ ]
+}

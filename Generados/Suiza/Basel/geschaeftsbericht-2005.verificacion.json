@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
- "generado": "2026-10-19T15:34:56.066Z",
+ "generado": "2026-10-19T16:03:16.294Z",
  "estado": "cola",
  "clubId": "basel-ch",
  "year": 2005,
@@ -13,10 +13,7 @@
  },
  "ajustes": null,
  "cola": [
-  "9f74e77",
-  "1b8eeb4",
-  "4dfab75",
-  "d474d1a"
+  "9f74e77"
  ],
  "chequeos": [
   {
@@ -48,7 +45,9 @@
    "detalle": "el sitio no tiene 2004: este chequeo no se puede hacer"
   }
  ],
- "notas": [],
+ "notas": [
+  "duda de localizar ya contestada para el club (columna, \"Organisationskosten Heimspiele\"): corregir no, en geschaeftsbericht-2005.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,

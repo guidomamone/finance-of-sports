@@ -1,0 +1,536 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf",
+ "generado": "2026-10-19T16:08:49.065Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Erträge brutto\" -> lump_football_operations 0.45; \"Direkte Kosten\" -> match_organisation_expense 0.4; \"Ausserordentliche Abschreibungen\" -> exceptional_items 0.55"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado. Años cargados: 2025 consolidado",
+  "gastos: ningún total impreso igual a la suma de las líneas (-35.647); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "stgallen-ch",
+  "year": 2019,
+  "cierre": "2019-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Erträge brutto",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 28.001,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Entschädigung von FCSG Event AG",
+    "normalizedCategory": "other_income",
+    "amountNative": 6.405,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ertragsminderungen",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.304,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ausserordentlicher Ertrag",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.713,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Auflösung Rückstellungen",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Direkte Kosten",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -8.165,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 2,
+    "_conf": 0.4,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Personalaufwand",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -14.747,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Sonstiger Betriebsaufwand",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4.145,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Entschädigung an FCSG AG",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -6.405,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Abschreibungen Spielerwerte",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.846,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abschreibungen Sachanlagen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.339,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ausserordentlicher Aufwand",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.16,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ausserordentliche Abschreibungen",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -3.999,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "CHF",
+   "fxRef": "CHF@2019-06-30",
+   "sourceId": "stgallen-ch-geschaeftsbericht-2018-19",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.067,
+   "tax": -0.004,
+   "extraRows": [
+    {
+     "label": "Finanzerfolg",
+     "value": -0.067
+    },
+    {
+     "label": "Steuern",
+     "value": -0.004
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Erträge brutto",
+     "lado": "revenue",
+     "importe": 28.001,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 34.815,
+   "officialTotalExpenses": 35.647,
+   "officialPAT": -5.063
+  },
+  "source": {
+   "id": "stgallen-ch-geschaeftsbericht-2018-19",
+   "clubId": "stgallen-ch",
+   "title": "FC St.Gallen AG — geschaeftsbericht-2018-19 (ejercicio 2019)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-06-30",
+  "evidencia": {
+   "pagina": 8,
+   "texto": "| AKTIVEN | 30.06.2019 | % | 30.06.2018 | % | Veränderung |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "stgallen-ch",
+ "year": 2019,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 15,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Erträge brutto",
+   "page": 7,
+   "native": 28.001,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 28.001,
+   "cat": "lump_football_operations",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 28.001
+  },
+  {
+   "label": "Entschädigung von FCSG Event AG",
+   "page": 7,
+   "native": 6.405,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.405,
+   "cat": "other_income",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.405
+  },
+  {
+   "label": "Ertragsminderungen",
+   "page": 7,
+   "native": 0.304,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -0.304,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.304
+  },
+  {
+   "label": "Ausserordentlicher Ertrag",
+   "page": 7,
+   "native": 0.713,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.713,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.713
+  },
+  {
+   "label": "Auflösung Rückstellungen",
+   "page": 7,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Direkte Kosten",
+   "page": 7,
+   "native": 8.165,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 8.165,
+   "cat": "match_organisation_expense",
+   "conf": 0.4,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -8.165
+  },
+  {
+   "label": "Personalaufwand",
+   "page": 7,
+   "native": 14.747,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 14.747,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Personalaufwand consolidado: 17’162 (FCSG AG, que incluye primer equipo, mujeres y Future Champs) + 3’671 (Event AG, personal de operación del estadio) = 20’833. El documento no separa el plantel, por lo que entero a wages_squad (mismo criterio que Lønnskostnad sin apertura en el formato noruego). La porción de Event AG y de administración y juveniles queda dentro del renglón y no se puede abrir. [Personalaufwand | −17’162 | −3’671 | −20’833 (L264)]",
+   "destino": "expense",
+   "amountNative": -14.747
+  },
+  {
+   "label": "Sonstiger Betriebsaufwand",
+   "page": 7,
+   "native": 4.145,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.145,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Consolidado: 1’377 (FCSG AG) + 3’995 (Event AG) = 5’372. El CFO lo describe como 'Betriebs- und Verwaltungsaufwendungen' con costos de energía en alza: gasto de estructura y estadio, admin_general_expense. [Sonstiger Betriebsaufwand | −1’377 | −3’995 | −5’372 (L266); 'Betriebs- und Verwaltungsaufwendungen, die infolge deutlich gestiegener Energiekosten zulegen' (L166)]",
+   "destino": "expense",
+   "amountNative": -4.145
+  },
+  {
+   "label": "Entschädigung an FCSG AG",
+   "page": 7,
+   "native": 6.405,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.405,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la fila quedó en 0 con el ajuste que saca la Entschädigung intercompany de los dos lados",
+   "destino": "expense",
+   "amountNative": -6.405
+  },
+  {
+   "label": "Abschreibungen Spielerwerte",
+   "page": 7,
+   "native": 0.846,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.846,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.846
+  },
+  {
+   "label": "Abschreibungen Sachanlagen",
+   "page": 7,
+   "native": 1.339,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.339,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.339
+  },
+  {
+   "label": "Ausserordentlicher Aufwand",
+   "page": 7,
+   "native": 0.16,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.16,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.16
+  },
+  {
+   "label": "Ausserordentliche Abschreibungen",
+   "page": 7,
+   "native": 3.999,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.999,
+   "cat": "exceptional_items",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -3.999
+  },
+  {
+   "label": "Finanzerfolg",
+   "page": null,
+   "native": -0.067,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Steuern",
+   "page": null,
+   "native": -0.004,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 34.815,
+  "expSum": -35.647,
+  "officialTotalRevenue": 34.815,
+  "officialTotalExpenses": 35.647,
+  "officialPAT": -5.063,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -5.063,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 34.815
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "CHF@2019-06-30",
+  "fx": 0.9758,
+  "source": "market_close",
+  "label": "Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2019-06-28, 2019-06-30 no es día hábil)"
+ },
+ "liga": {
+  "valor": "ch-superleague",
+  "fuente": "roster cacheado de \"2018–19 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"St. Gallen\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2019,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2019-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (8 de 8 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CHF",
+   "fuente": "moneda de curso legal de Suiza (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "CHF@2019-06-30",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.9758. --escribir agrega 'CHF@2019-06-30' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "stgallen-ch-geschaeftsbericht-2018-19",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "ch-superleague",
+   "fuente": "roster cacheado de \"2018–19 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"St. Gallen\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 5,
+  "lineasGasto": 8,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

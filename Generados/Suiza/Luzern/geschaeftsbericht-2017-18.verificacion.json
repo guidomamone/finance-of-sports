@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.pdf",
  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.md",
- "generado": "2026-10-19T15:35:29.444Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:03:17.344Z",
+ "estado": "ok",
  "clubId": "luzern-ch",
  "year": 2018,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "110b43a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -62,8 +60,7 @@
   "escalón \"nota exacta en la lectura 6\": \"Administrations- und sonstiger Betriebsaufwand\" (L1246) se abre en las 4 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: Solo muestran Ertrag/Aufwand/DB1 por sparte, que ya están abiertos en el estado y las notas 15-30.",
-  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Unternehmenserfolg nach Minderheiten\"): aceptar, en geschaeftsbericht-2024-25.pdf",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Unternehmenserfolg nach Minderheiten\"): aceptar, en geschaeftsbericht-2024-25.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

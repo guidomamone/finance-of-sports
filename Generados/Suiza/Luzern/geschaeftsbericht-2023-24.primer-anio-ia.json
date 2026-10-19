@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2023-24.md",
+ "clave": "cbfcafb34d94478220677058b2e213dfa781e16c",
+ "generado": "2026-10-19T16:04:04.870Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre todos los renglones del ejercicio 2023/24: los ingresos de Nachwuchs, Events, Merchandising y Sonstiger Betriebsertrag, así como la mayoría de los gastos, se cargan por sus partes desde notas. No se cargan subtotales (Total Ertrag, Betriebsaufwand vor Abschreibungen, EBITDA, EBIT, Betriebsergebnis, Unternehmenserfolg vor Steuern ni vor Minderheiten), no hay importes repetidos y los lados son correctos. Los impuestos (+29 CHF) y el Minderheitsanteil (+515'289) figuran como positivos, lo que es consistente con el resultado impreso."
+ }
+}

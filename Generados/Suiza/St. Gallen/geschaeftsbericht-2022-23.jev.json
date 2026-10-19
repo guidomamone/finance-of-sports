@@ -1,0 +1,88 @@
+{
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md",
+ "generatedAt": "2026-10-19T16:08:18.491Z",
+ "rubrosHuella": "dec92a22c4a6f3b1c35de689e4b11560e313f01a",
+ "rubros": [
+  {
+   "label": "Erträge brutto",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Ertragsminderungen",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ausserordentlicher Ertrag",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direkte Kosten",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Personalaufwand",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Sonstiger Betriebsaufwand",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen Sachanlagen",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen Spielerwerte",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ausserordentlicher Aufwand",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md",
- "generado": "2026-10-19T15:34:57.512Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:03:17.606Z",
+ "estado": "ok",
  "clubId": "stgallen-ch",
  "year": 2020,
  "escala": {
@@ -12,12 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "caf1f52",
-  "f3811af",
-  "f411e8e",
-  "1f2d259"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -58,8 +53,10 @@
  ],
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2019-20.pdf",
   "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"-\"): ¿Se carga la columna total 2019/2020 de b1 y no las columnas FCSG AG / Event AG?",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"-\"): ¿Se dejan afuera de la carga los renglones de b4 (L261, L268, L271-L283) y b7 (L345, L351-L365) que repiten por sociedad las mismas partidas del estado b1?"
+  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"-\"): ¿Se dejan afuera de la carga los renglones de b4 (L261, L268, L271-L283) y b7 (L345, L351-L365) que repiten por sociedad las mismas partidas del estado b1?",
+  "duda de extraer ya contestada para el club (perimetro, \"Entschädigung von FCSG Event AG\"): corregir no, en geschaeftsbericht-2023-24.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

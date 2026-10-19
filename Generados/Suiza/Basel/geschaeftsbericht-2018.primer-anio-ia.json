@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2018.md",
+ "clave": "db4f59ca5be38a7ff76ae37578282b790f0ad4c9",
+ "generado": "2026-10-19T16:03:26.719Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todos los renglones del ejercicio 2018 están cargados una sola vez y del lado correcto. Los subtotales y totales (Total Ertrag, Total Aufwand, Betriebsergebnis vor Zinsen und Steuern, Betriebsergebnis vor Steuern, Jahresgewinn) no se cargan. El resultado del ejercicio es 0."
+ }
+}

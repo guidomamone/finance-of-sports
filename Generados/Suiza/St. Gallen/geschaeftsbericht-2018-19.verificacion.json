@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.md",
- "generado": "2026-10-19T15:34:57.328Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:03:17.577Z",
+ "estado": "ok",
  "clubId": "stgallen-ch",
  "year": 2019,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "d6992e2",
-  "da64bf3"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -41,7 +38,7 @@
   {
    "nombre": "documento del año 2020",
    "ok": true,
-   "detalle": "ingresos de 2019: 34.815 en este documento y 35.418 en geschaeftsbericht-2019-20.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2019: 34.815 en este documento y 34.81 en geschaeftsbericht-2019-20.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -52,7 +49,8 @@
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar ya contestada para el club (antes de su alta) (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",
-  "duda de extraer ya contestada para el club (antes de su alta) (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Entschädigung von FCSG Event AG\"): corregir no, en geschaeftsbericht-2023-24.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

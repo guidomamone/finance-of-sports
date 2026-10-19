@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.md",
- "generado": "2026-10-19T15:35:29.506Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:03:17.660Z",
+ "estado": "ok",
  "clubId": "stgallen-ch",
  "year": 2022,
  "escala": {
@@ -12,13 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "48a0207",
-  "e466b9c",
-  "a484c91",
-  "ea9ae61",
-  "581d281"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -66,9 +60,9 @@
   "escalón \"subtotal repetido\": \"Erträge netto\" (L249) es la suma de las filas de arriba (con su subtotal); se saltea",
   "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
   "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (perimetro, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2023-24.pdf",
   "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Erträge brutto\"): ¿Se dejan afuera de la carga los estados por sociedad de FC St.Gallen AG (b5, L320-L342) y FC St.Gallen Event AG (b8, L396-L425), usando solo el consolidado b2?",
-  "duda de extraer que no afecta la carga: L256-L257 son +9’800 y -9’800 en la columna 2021/2022; se cancelan en el consolidado.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L256-L257 son +9’800 y -9’800 en la columna 2021/2022; se cancelan en el consolidado."
  ],
  "reintentar": null,
  "reintentado": false,

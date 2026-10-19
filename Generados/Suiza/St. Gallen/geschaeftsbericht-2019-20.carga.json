@@ -1,0 +1,970 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf",
+ "generado": "2026-10-19T16:08:49.236Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Ausserordentliche Abschreibungen\" -> exceptional_items 0.55"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado. Años cargados: 2025 consolidado",
+  "gastos: ningún total impreso igual a la suma de las líneas (-33.141); queda la suma, verificada por el resultado del ejercicio (el impreso \"total de gastos (verificado)\" 33.154 difiere en 0.013: redondeo)",
+  "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "stgallen-ch",
+  "year": 2020,
+  "cierre": "2020-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Erträge aus Transfers und Leihgebühren",
+    "normalizedCategory": "player_sales",
+    "amountNative": 3.252,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diverse Erträge inklusive Swiss Football League",
+    "normalizedCategory": "other_income",
+    "amountNative": 4.785,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Erträge aus Future Champs Ostschweiz",
+    "normalizedCategory": "youth_football",
+    "amountNative": 1.946,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Erträge von Gönnern und Mitgliedern",
+    "normalizedCategory": "member_dues",
+    "amountNative": 1.2,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Ertrag aus Fussballspielen",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 10.509,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ertrag aus Werbung und Sponsoring",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 7.051,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ertrag aus Merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.747,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ertrag aus Konzert- und Drittveranstaltungen",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.01,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 2,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ertrag aus Conference Arena / Diverse Erträge",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.362,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Entschädigung von FCSG Event AG",
+    "normalizedCategory": "other_income",
+    "amountNative": 5.45,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Debitorenverluste",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.038,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Veränderung Wertberichtigungen",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.286,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Debitorenverluste",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.006,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Veränderung Wertberichtigungen",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.166,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diverse Ertragsminderungen",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.169,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ausserordentlicher Ertrag",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.405,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Aufwand für Spielbetrieb",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2.358,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Aufwand für Transfers",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.993,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Aufwand für Spielorganisation Fussball",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -3.805,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Aufwand für Werbung und Sponsoring",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.448,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Aufwand für Merchandising",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.478,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Aufwand für Konzert- und Drittveranstaltungen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.007,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Aufwand für Conference Arena / Diverses",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.112,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Personalaufwand",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -13.645,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Sonstiger Betriebsaufwand",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.77,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Entschädigung an FCSG AG",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.45,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Abschreibungen Sachanlagen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.385,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abschreibungen Spielerwerte",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.69,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ausserordentlicher Aufwand",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.013,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ausserordentliche Abschreibungen",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "CHF",
+   "fxRef": "CHF@2020-06-30",
+   "sourceId": "stgallen-ch-geschaeftsbericht-2019-20",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.135,
+   "tax": -0.009,
+   "extraRows": [
+    {
+     "label": "Finanzerfolg",
+     "value": -0.135
+    },
+    {
+     "label": "Steuern",
+     "value": -0.009
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 35.052,
+   "officialTotalExpenses": 33.141,
+   "officialPAT": 1.754
+  },
+  "source": {
+   "id": "stgallen-ch-geschaeftsbericht-2019-20",
+   "clubId": "stgallen-ch",
+   "title": "FC St.Gallen AG — geschaeftsbericht-2019-20 (ejercicio 2020)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2020-06-30",
+  "evidencia": {
+   "pagina": 10,
+   "texto": "| AKTIVEN | 30.06.2020 | % | 30.06.2019 | % | Veränderung |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "stgallen-ch",
+ "year": 2020,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 32,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Erträge aus Transfers und Leihgebühren",
+   "page": 10,
+   "native": 3.252,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Erträge brutto\")",
+   "signoFijo": 3.252,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.252
+  },
+  {
+   "label": "Diverse Erträge inklusive Swiss Football League",
+   "page": 10,
+   "native": 4.785,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Erträge brutto\")",
+   "signoFijo": 4.785,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Renglón genérico de FC St.Gallen AG que mezcla premios UEFA de la Conference League (el informe dice que la AG recibe 'UEFA-Prämien'), repartos de la Swiss Football League y otros; sube de 5’565 a 9’512 por la UEFA. No se puede abrir en el documento, por eso other_income. Para la categoría Televisión en 0: no hay renglón de TV propio, el reparto de la SFL está incluido en este renglón ('inklusive Swiss Football League'). Pregunta posible para dudas-por-club: cuánto de 9’512 es UEFA, cuánto SFL (TV) y cuánto otros. [Diverse Erträge inklusive Swiss Football League | 9’512 (L327); 'auf der Ertragsseite durch die UEFA-Prämien' (L186)]",
+   "destino": "revenue",
+   "amountNative": 4.785
+  },
+  {
+   "label": "Erträge aus Future Champs Ostschweiz",
+   "page": 10,
+   "native": 1.946,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Erträge brutto\")",
+   "signoFijo": 1.946,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.946
+  },
+  {
+   "label": "Erträge von Gönnern und Mitgliedern",
+   "page": 10,
+   "native": 1.2,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Erträge brutto\")",
+   "signoFijo": 1.2,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): El rótulo nombra 'Mitglieder', por eso member_dues; pero mezcla 'Gönner' (donantes) con miembros y el documento no los separa ni dice de qué asociación vienen (el informe menciona las 'Donatorenvereinigungen' y el 'Dachverband 1879'). No hay otro renglón de cuotas. Se deja member_dues con la limitación anotada; pregunta posible para dudas-por-club: quiénes pagan este renglón y cuánto es cuota de membresía frente a donación. [Erträge von Gönnern und Mitgliedern | 1’246 (L329); 'Dank an ... die Donatorenvereinigungen' (L27)]",
+   "destino": "revenue",
+   "amountNative": 1.2
+  },
+  {
+   "label": "Ertrag aus Fussballspielen",
+   "page": 11,
+   "native": 10.509,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Erträge brutto\")",
+   "signoFijo": 10.509,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.509
+  },
+  {
+   "label": "Ertrag aus Werbung und Sponsoring",
+   "page": 11,
+   "native": 7.051,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Erträge brutto\")",
+   "signoFijo": 7.051,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.051
+  },
+  {
+   "label": "Ertrag aus Merchandising",
+   "page": 11,
+   "native": 0.747,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Erträge brutto\")",
+   "signoFijo": 0.747,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.747
+  },
+  {
+   "label": "Ertrag aus Konzert- und Drittveranstaltungen",
+   "page": 11,
+   "native": 0.01,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Erträge brutto\")",
+   "signoFijo": 0.01,
+   "cat": "other_income",
+   "conf": 0.93,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.01
+  },
+  {
+   "label": "Ertrag aus Conference Arena / Diverse Erträge",
+   "page": 11,
+   "native": 0.362,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Erträge brutto\")",
+   "signoFijo": 0.362,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Renglón mixto 'Conference Arena / Diverse Erträge': mezcla un espacio de conferencias con ingresos varios sin separar. other_income. Para Estadio en 0: incluido en este renglón y en Drittveranstaltungen (L401), no se puede abrir. [Ertrag aus Conference Arena / Diverse Erträge | 1’245 (L402)]",
+   "destino": "revenue",
+   "amountNative": 0.362
+  },
+  {
+   "label": "Entschädigung von FCSG Event AG",
+   "page": 9,
+   "native": 5.45,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.45,
+   "cat": "other_income",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.45
+  },
+  {
+   "label": "Debitorenverluste",
+   "page": 10,
+   "native": 0.038,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ertragsminderungen\")",
+   "signoFijo": -0.038,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.038
+  },
+  {
+   "label": "Veränderung Wertberichtigungen",
+   "page": 10,
+   "native": 0.286,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ertragsminderungen\")",
+   "signoFijo": -0.286,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.286
+  },
+  {
+   "label": "Debitorenverluste",
+   "page": 11,
+   "native": 0.006,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ertragsminderungen\")",
+   "signoFijo": -0.006,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.006
+  },
+  {
+   "label": "Veränderung Wertberichtigungen",
+   "page": 11,
+   "native": 0.166,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ertragsminderungen\")",
+   "signoFijo": -0.166,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.166
+  },
+  {
+   "label": "Diverse Ertragsminderungen",
+   "page": 11,
+   "native": 0.169,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ertragsminderungen\")",
+   "signoFijo": -0.169,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.169
+  },
+  {
+   "label": "Ausserordentlicher Ertrag",
+   "page": 9,
+   "native": 0.405,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.405,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.405
+  },
+  {
+   "label": "Aufwand für Spielbetrieb",
+   "page": 10,
+   "native": 2.358,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Direkte Kosten\")",
+   "signoFijo": 2.358,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de operar el fútbol de la FCSG AG (viajes, competencias, incluida la cara gira a Kasachstan en la Conference League). match_organisation_expense, la mejor opción para costos de participar en competencias. [Aufwand für Spielbetrieb | −4’845 (L332); 'kostspieligen Auswärtsreise nach Qostanaj' (L160)]",
+   "destino": "expense",
+   "amountNative": -2.358
+  },
+  {
+   "label": "Aufwand für Transfers",
+   "page": 10,
+   "native": 0.993,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Direkte Kosten\")",
+   "signoFijo": 0.993,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costos de transferencias y cesiones que no se capitalizan (la compra capitalizada va por Spielerwerte y su amortización aparte, 2’059). Nettotransferergebnis del informe: 3’353 − 1’378 − 2’059 = −84, cierra con el −83’988 de L162. other_expenses y no player_amortisation, para no mezclar con la amortización de pases. [Aufwand für Transfers | −1’378 (L333); 'Nettotransferergebnis von CHF - 83'988' (L162)]",
+   "destino": "expense",
+   "amountNative": -0.993
+  },
+  {
+   "label": "Aufwand für Spielorganisation Fussball",
+   "page": 11,
+   "native": 3.805,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Direkte Kosten\")",
+   "signoFijo": 3.805,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.805
+  },
+  {
+   "label": "Aufwand für Werbung und Sponsoring",
+   "page": 11,
+   "native": 0.448,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Direkte Kosten\")",
+   "signoFijo": 0.448,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.448
+  },
+  {
+   "label": "Aufwand für Merchandising",
+   "page": 11,
+   "native": 0.478,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Direkte Kosten\")",
+   "signoFijo": 0.478,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.478
+  },
+  {
+   "label": "Aufwand für Konzert- und Drittveranstaltungen",
+   "page": 11,
+   "native": 0.007,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Direkte Kosten\")",
+   "signoFijo": 0.007,
+   "cat": "other_expenses",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.007
+  },
+  {
+   "label": "Aufwand für Conference Arena / Diverses",
+   "page": 11,
+   "native": 0.112,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Direkte Kosten\")",
+   "signoFijo": 0.112,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Gasto espejo de 'Ertrag aus Conference Arena / Diverse Erträge'. other_expenses. [Aufwand für Conference Arena / Diverses | −74 (L410)]",
+   "destino": "expense",
+   "amountNative": -0.112
+  },
+  {
+   "label": "Personalaufwand",
+   "page": 9,
+   "native": 13.645,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 13.645,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Personalaufwand consolidado: 17’162 (FCSG AG, que incluye primer equipo, mujeres y Future Champs) + 3’671 (Event AG, personal de operación del estadio) = 20’833. El documento no separa el plantel, por lo que entero a wages_squad (mismo criterio que Lønnskostnad sin apertura en el formato noruego). La porción de Event AG y de administración y juveniles queda dentro del renglón y no se puede abrir. [Personalaufwand | −17’162 | −3’671 | −20’833 (L264)]",
+   "destino": "expense",
+   "amountNative": -13.645
+  },
+  {
+   "label": "Sonstiger Betriebsaufwand",
+   "page": 9,
+   "native": 3.77,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.77,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Consolidado: 1’377 (FCSG AG) + 3’995 (Event AG) = 5’372. El CFO lo describe como 'Betriebs- und Verwaltungsaufwendungen' con costos de energía en alza: gasto de estructura y estadio, admin_general_expense. [Sonstiger Betriebsaufwand | −1’377 | −3’995 | −5’372 (L266); 'Betriebs- und Verwaltungsaufwendungen, die infolge deutlich gestiegener Energiekosten zulegen' (L166)]",
+   "destino": "expense",
+   "amountNative": -3.77
+  },
+  {
+   "label": "Entschädigung an FCSG AG",
+   "page": 9,
+   "native": 5.45,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.45,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la fila quedó en 0 con el ajuste que saca la Entschädigung intercompany de los dos lados",
+   "destino": "expense",
+   "amountNative": -5.45
+  },
+  {
+   "label": "Abschreibungen Sachanlagen",
+   "page": 9,
+   "native": 1.385,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.385,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.385
+  },
+  {
+   "label": "Abschreibungen Spielerwerte",
+   "page": 9,
+   "native": 0.69,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.69,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.69
+  },
+  {
+   "label": "Ausserordentlicher Aufwand",
+   "page": 9,
+   "native": 0.013,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.013,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.013
+  },
+  {
+   "label": "Ausserordentliche Abschreibungen",
+   "page": 9,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "exceptional_items",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Finanzerfolg",
+   "page": null,
+   "native": -0.135,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Steuern",
+   "page": null,
+   "native": -0.009,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Erträge brutto\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Ertragsminderungen\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Direkte Kosten\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 35.052,
+  "expSum": -33.141,
+  "officialTotalRevenue": 35.052,
+  "officialTotalExpenses": 33.141,
+  "officialPAT": 1.754,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1.754,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 35.052
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "CHF@2020-06-30",
+  "fx": 0.9467,
+  "source": "market_close",
+  "label": "Noon buying rate de Nueva York (Reserva Federal, H.10) al 2020-06-30"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de ch 2020 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2020,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2020-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (10 de 11 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CHF",
+   "fuente": "moneda de curso legal de Suiza (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "CHF@2020-06-30",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.9467. --escribir agrega 'CHF@2020-06-30' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "stgallen-ch-geschaeftsbericht-2019-20",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no hay ninguna liga-temporada de ch 2020 cacheada",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 16,
+  "lineasGasto": 14,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

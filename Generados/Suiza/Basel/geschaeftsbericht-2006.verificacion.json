@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2006.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2006.md",
- "generado": "2026-10-19T15:34:56.253Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:03:16.301Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2006,
  "escala": {
@@ -12,12 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "b188e86",
-  "d42b29f",
-  "abef43f",
-  "0af4fc4"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -42,7 +37,7 @@
   {
    "nombre": "documento del año 2007",
    "ok": false,
-   "detalle": "ingresos de 2006: 0.675549 en este documento y 102.717644 en geschaeftsbericht-2007.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2006: 0.675549 en este documento y 51.358822 en geschaeftsbericht-2007.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2005",
@@ -60,7 +55,10 @@
    "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
- "notas": [],
+ "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Total Ertrag\"): corregir no, en geschaeftsbericht-2006.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,

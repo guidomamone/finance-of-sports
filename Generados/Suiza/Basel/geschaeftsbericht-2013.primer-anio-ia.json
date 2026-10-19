@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2013.md",
+ "clave": "984aa97ece2b0c8a04bf993746dd9e2dfdad335b",
+ "generado": "2026-10-19T16:03:23.800Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "La carga está completa. Matcheinnahmen (L787) se carga a través de sus cuatro partes (L788 a L791), que suman 28,214605. Los totales y resultados intermedios (L801, L815, L816, L819, L823, L825) no se cargaron, como corresponde. No hay problemas."
+ }
+}

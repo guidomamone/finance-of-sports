@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2008.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2008.md",
- "generado": "2026-10-19T15:34:56.550Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:03:16.382Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2008,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "8ad3b91",
-  "54f3bcc",
-  "33788e7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -57,7 +53,8 @@
  ],
  "notas": [
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
-  "la lectura base no cerraba; cerró con la lectura 4"
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2021-22.md",
+ "clave": "92c2beae23daae059756970af2be7f9f1a5b9fde",
+ "generado": "2026-10-19T16:03:53.593Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "No encontré problemas. Cada apertura por nota suma exactamente el renglón del estado que reemplaza: Leistungsfussball Nachwuchs (ingreso y gasto), Merchandising (ingreso), Sonstiger Betriebsertrag, Personalaufwand, Spielbetrieb, Transferaufwand, Werbung und Sponsoring y Administrationsaufwand. No se cargaron subtotales (EBITDA, EBIT, Betriebsergebnis ni Unternehmenserfolg) y los signos son correctos."
+ }
+}

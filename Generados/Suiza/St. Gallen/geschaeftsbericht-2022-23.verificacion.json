@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md",
- "generado": "2026-10-19T15:35:29.535Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:03:17.687Z",
+ "estado": "ok",
  "clubId": "stgallen-ch",
  "year": 2023,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "dc01145",
-  "202bd7f",
-  "a2069b7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -63,9 +59,9 @@
  "notas": [
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar ya contestada para el club (antes de su alta) (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",
+  "duda de localizar ya contestada para el club (perimetro, \"Entschädigung von FC St.Gallen Event AG\"): aceptar, en geschaeftsbericht-2023-24.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",
-  "duda de extraer que no afecta la carga: L297 y L298 se compensan en la columna 2022/2023 (8’600 y -8’600).",
-  "3 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L297 y L298 se compensan en la columna 2022/2023 (8’600 y -8’600)."
  ],
  "reintentar": null,
  "reintentado": false,

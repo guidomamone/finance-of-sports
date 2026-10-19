@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2007.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2007.md",
- "generado": "2026-10-19T15:34:56.397Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:03:16.346Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2007,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "029d9fe",
-  "c48abee",
-  "7f97724"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -67,7 +63,8 @@
  "notas": [
   "escalón \"subtotal repetido\": \"Total Ertrag\" (L385) es la suma de las filas de arriba (con su subtotal); se saltea",
   "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
-  "la lectura base no cerraba; cerró con la lectura 4"
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

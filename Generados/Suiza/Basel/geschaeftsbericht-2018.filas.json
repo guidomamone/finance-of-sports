@@ -1,0 +1,201 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2018.pdf",
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2018.md",
+ "mdSha1": "89760749b2e9c153f259bc7a0826741dba48af7d",
+ "ubicacionSha1": "2e6bd96625060e0a1143bf9416008d532e6332b4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:50:29.243Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas \"1.1.–31.12.2018 CHF\" con importes con centavos (L459)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 462,
+   "etiqueta": "Mitglieder",
+   "actual": "1’249’240.10",
+   "anterior": "1’083’064.47",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 463,
+   "etiqueta": "Ausbildungsentschädigungen",
+   "actual": "120’000.00",
+   "anterior": "0.00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 464,
+   "etiqueta": "Sonstiger Betriebsertrag",
+   "actual": "337’890.50",
+   "anterior": "261’490.10",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 465,
+   "etiqueta": "Total Ertrag",
+   "actual": "1’707’130.60",
+   "anterior": "1’344’554.57",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 467,
+   "etiqueta": "Personalaufwand",
+   "actual": "–1’704’891.20",
+   "anterior": "–1’594’079.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 468,
+   "etiqueta": "Administration",
+   "actual": "– 229’326.65",
+   "anterior": "– 270’027.24",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 469,
+   "etiqueta": "Übriger Aufwand",
+   "actual": "– 694’593.60",
+   "anterior": "– 750’396.48",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 470,
+   "etiqueta": "Total Aufwand",
+   "actual": "–2’628’811.45",
+   "anterior": "–2’614’502.72",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 471,
+   "etiqueta": "Betriebsergebnis vor Zinsen und Steuern",
+   "actual": "–921’680.85",
+   "anterior": "–1’269’948.15",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 472,
+   "etiqueta": "Finanzertrag",
+   "actual": "290.66",
+   "anterior": "41.60",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 473,
+   "etiqueta": "Finanzaufwand",
+   "actual": "–3’621.06",
+   "anterior": "–3’928.00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 474,
+   "etiqueta": "Defizitgarantie FC Basel 1893 AG",
+   "actual": "925’845.75",
+   "anterior": "1’276’343.60",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 475,
+   "etiqueta": "Betriebsergebnis vor Steuern",
+   "actual": "834.50",
+   "anterior": "2’509.05",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 476,
+   "etiqueta": "Steuern",
+   "actual": "–834.50",
+   "anterior": "–2’509.05",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 477,
+   "etiqueta": "Jahresgewinn",
+   "actual": "0.00",
+   "anterior": "0.00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 465,
+  "actual": "1’707’130.60"
+ },
+ "total_gastos": {
+  "linea": 470,
+  "actual": "–2’628’811.45"
+ },
+ "resultado": {
+  "linea": 477,
+  "actual": "0.00",
+  "anterior": "0.00"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la 'Defizitgarantie FC Basel 1893 AG' (L474, 925’845.75) como otro ingreso fuera del total de ingresos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Defizitgarantie FC Basel 1893 AG",
+   "texto": "La garantía de déficit de la sociedad anónima del club cubre la pérdida operativa y no está incluida en Total Ertrag (L474).",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados del FC Basel 1893 (asociación), en CHF con centavos. El resultado del ejercicio es 0.00 porque la garantía de déficit de la AG compensa la pérdida. No hay notas de desglose."
+}

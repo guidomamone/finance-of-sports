@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2009.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2009.md",
- "generado": "2026-10-19T15:34:56.772Z",
+ "generado": "2026-10-19T16:03:16.451Z",
  "estado": "cola",
  "clubId": "basel-ch",
  "year": 2009,
@@ -13,10 +13,11 @@
  },
  "ajustes": null,
  "cola": [
+  "99bba8b",
   "551fd1d",
   "7863fd9",
+  "eb5839a",
   "275ada4",
-  "eb98af5",
   "a0806ed"
  ],
  "chequeos": [
@@ -39,6 +40,11 @@
    "dif": null
   },
   {
+   "nombre": "documento del año 2010",
+   "ok": false,
+   "detalle": "ingresos de 2009: 90.972 en este documento y 0.848005 en geschaeftsbericht-2010.pdf (columna del año anterior)"
+  },
+  {
    "nombre": "documento del año 2008",
    "ok": false,
    "detalle": "ingresos de 2008: 60.589164 en geschaeftsbericht-2008.pdf y 121.124729 en este documento (columna del año anterior)"
@@ -50,6 +56,7 @@
   }
  ],
  "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf",
   "duda de extraer que no afecta la carga: Es una cobertura de pérdidas del holding (L496), no un ingreso operativo; se clasificó como 'otro'."
  ],
  "reintentar": null,
