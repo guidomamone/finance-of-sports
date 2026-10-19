@@ -133,6 +133,12 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **La pregunta de perímetro de la carga propone mal (to-do 298 m, 2026-10-19): medido, no entra.** El ajuste del club ya es el escalón 0
+  de cargar.mjs (L417): Nõmme Kalju 2022-2024 preguntaron "¿individual como 2025?" porque todavía no tenía ajuste de club; hoy cargan sin
+  preguntar. Los 37 casos `perimetro` de la etapa cargar están contestados (29 ya con ajuste); en 22 de 35 la propuesta se corrigió, porque
+  toma el año cargado más cercano aunque sea una excepción de un solo estado (Nõmme Kalju 2025, Benfica). Desde la 298 d,
+  perimetro-senales fija el perímetro antes de localizar, así que la carga ya no debería llegar a preguntar. Retomar si aparece un caso
+  `perimetro` de la etapa cargar con fecha posterior al 2026-10-19 (ahí: que la propuesta ignore los años con ajuste de documento).
 - **5 ajustes `fila` que la 298 y ya no necesita se quedan (to-do 298 y4, 2026-10-19; Guido y Onboarding 2).** Fredrikstad 2024 (acta 2025,
   L1064 y L1077) y St. Gallen 2024-25 (L261, L330 y L403). Sin ellos los números dan iguales, pero los dos años frenan: Fredrikstad vuelve a
   abrir "primer-anio" (la respuesta guardada de `primer-anio-ia` está atada a la huella del pedido) y St. Gallen deja el `.categorias.json`

@@ -302,3 +302,9 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   Guido: la sección 5 de la skill club-or-year-onboarding todavía dice "16 / 34 / 87" y no nombra el generador.
 
 ## Después del merge de los lotes de prueba (2026-10-19)
+
+- dbee5a48c0: la sección 5 de la skill club-or-year-onboarding nombra `tools/lotes-prueba.mjs` (ok de Guido).
+- **298 m: medida, sin daño hoy, a HALLAZGOS** (no se codea). El ajuste del club ya es el escalón 0 de la carga; Nõmme Kalju 2022-2024
+  preguntaron porque todavía no lo tenía y hoy cargan sin frenar (`medir-cargar`). Los 37 casos `perimetro` de la etapa cargar: 0 abiertos,
+  29 con ajuste hoy; en 22 de 35 la propuesta se corrigió (toma el año más cercano aunque sea una excepción). Condición para retomar, en
+  Admin/HALLAZGOS-pipeline.md. Sigue la n.
