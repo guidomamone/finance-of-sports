@@ -352,3 +352,11 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   primera corrida de un par nuevo. Condición para retomar, en HALLAZGOS. Siguen u2, z (decisión de pantalla de Guido) y g2 (condicional).
 
 ## Después del merge de la v (2026-10-19)
+
+- **298 u2 hecha** (5e0d624b05, ok de Guido 2026-10-19). Las listas de un solo grupo y la First Division B con un equipo menos eran la
+  misma causa: fetch-club-league-reference.mjs cortaba los códigos de la plantilla sports table con guion ("team1=B-W" -> "B"). Ahora el
+  código acepta "." y "-" (empieza con letra o número, para no tomar los enlaces de los cuadros de play-off) y la unión de grupos informa
+  cuántos fueron. Third Division 2015-16: 16 -> 37 equipos; Division 2 2021-22 y Second Amateur 2019-20: 15 -> 48; First Division B
+  2017-18 y 2018-19: 7 -> 8. `listas-lote --lote Admin/lotes/lote-92.txt --ensayo`: 41 -> 45 de 51 (las 6 que faltan no tienen página
+  en Wikipedia). Las 358 listas guardadas, lector viejo contra nuevo: mismos equipos. Las 4 listas nuevas se escriben solas en la próxima
+  corrida de `lote.mjs --cargar` (corre listas-lote --lote antes). Quedan z (decisión de pantalla de Guido) y g2 (condicional).
