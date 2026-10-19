@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 808 — 298 ab: la nota del subtotal no pisa un estado más detallado (2026-10-19)
+
+* `verificar.mjs`: la nota del subtotal reemplaza al estado solo si trae al menos tantas filas. 720 de 722 documentos iguales; cambian
+  Sarpsborg 2024 (lo buscado) y las líneas de gasto de AVS 2023-24, con los mismos totales.
+
 ## Versión 807 — Factoring: con recurso es deuda; el 310 cerrado (2026-10-19)
 
 * Regla en CONVENCIONES-DATOS (ok de Guido): el factoring con recurso entra en la deuda; el pro soluto, no. Cierra el 291 y el 290 (Genoa 2022).

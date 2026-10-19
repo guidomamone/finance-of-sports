@@ -31,7 +31,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 298: mejoras de script de Estonia y Bélgica (ab y ac, Sarpsborg 2023-2024; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (ac, Sarpsborg 2023, espera tu ok: rehacer su localización, hasta US$ 0,10; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 * 308: los bonos convertibles en la skill
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
@@ -244,8 +244,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola.
-   ab) el escalón "nota del subtotal" reemplaza los renglones del estado por una nota más gruesa (Sarpsborg 08 2024: los 8 renglones de
-   ingresos por los 2 de la Note 1, L116-124 y L1517-1523): cuando el estado abre más renglones, que gane el estado. ac) Sarpsborg 08 2023
+   (la ab está hecha: Sarpsborg 2024 se recategoriza en su próxima corrida; las líneas de gasto de AVS 2023-24 cambiarían con los mismos
+   totales si se recarga). ac) Sarpsborg 08 2023
    sigue leyendo el consolidado (ingresos 166,5 M, no 146,5 M) aunque tiene ajuste `perimetro` individual; el 2024 sí lo toma bien.
    z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
