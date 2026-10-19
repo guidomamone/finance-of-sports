@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 793 — Cierre de Pipeline 3; Pipeline 4 sigue (2026-10-19)
+
+* Pipeline 3 cierra por contexto; su cierre, en `Admin/Archive/`. Pipeline 4 (Sonnet) sigue con 286-287, 306-307, 301, 302, 290 y 310.
+
 ## Versión 792 — 279: cargar.mjs no duplica años en club-leagues; 232 cerrado (2026-10-19)
 
 * `cargar.mjs`: un año que ya tiene liga en `data/club-leagues` no se vuelve a agregar; con otra liga, queda la que estaba y avisa (así

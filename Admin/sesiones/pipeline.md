@@ -415,3 +415,5 @@ los parches de prueba de esta sesión (q, n, l, u2, y3) quedaron aplicados y com
   respuestas viejas de la cola con su año (restaurar después de medir); los subagentes de esta sesión no tienen Grep: si tienen que buscar en
   `.md` grandes, sacar antes las líneas con un script y pasarles el extracto.
 - Pendiente de anotar en la memoria (con Guido): que el panel Plan dejó de usarse en las sesiones de worktree.
+
+## Pipeline 4 (2026-10-19)
