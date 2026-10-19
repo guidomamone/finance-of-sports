@@ -168,3 +168,15 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   respuesta correcta suele ser la categoría de las filas, no sacarlas.
 
 ## Después del merge de la 298 h (2026-10-18)
+
+### 298 i: el país de un club nuevo (ok de Guido 2026-10-18; Gales, Escocia e Irlanda del Norte como GB)
+
+- **Qué cambió (para CHANGELOG):** `tools/paises-referencia.json` (nuevo): tabla de referencia ISO por nombre de carpeta en castellano
+  (ISO2, moneda ISO 4217, región del selector, nombre en inglés y la moneda de antes del euro de Eslovaquia, Eslovenia, Letonia, Lituania,
+  Finlandia, Irlanda, Malta, Chipre y Luxemburgo). `tools/alta-club.mjs` (`paisDe`): escalón 0 la tabla PAISES, escalón 1 la referencia si
+  una sola entrada coincide sin tildes; la fuente del campo lo dice. Escocia pasa a GB en PAISES (antes era una pregunta). Medido: las 32
+  carpetas de `Clubes/` sin fila en PAISES se resuelven (ninguna tiene todavía un `.md`, así que el alta entera no se pudo probar con
+  ellas); el alta en ensayo del primer documento de cada país con fila sale idéntica, salvo Celtic (Escocia): `celtic-gb`, país GB, sin las
+  preguntas de id y país. Auditoría P0 0 / P1 0. Commit 5c16518381.
+- **Qué queda (para TODO):** el país en el selector del sitio (`data/leagues.js` COUNTRIES, con nombre y bandera) sigue aparte para cada
+  país nuevo; Escocia, Gales e Irlanda del Norte se ven como GB ("Inglaterra", bandera inglesa) hasta que se decida otra cosa en pantalla.
