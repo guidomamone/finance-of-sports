@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
- "generado": "2026-10-19T01:04:31.444Z",
+ "generado": "2026-10-19T01:15:30.929Z",
  "frena": [
   {
    "etapa": "club",
@@ -628,10 +628,9 @@
   "label": "Tipo medio de referencia de Norges Bank al 2025-12-31"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de no 2025 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "no-eliteserien",
+  "fuente": "roster cacheado de \"2025 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Viking\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -670,9 +669,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de no 2025 cacheada",
-   "estado": "pendiente"
+   "valor": "no-eliteserien",
+   "fuente": "roster cacheado de \"2025 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Viking\"",
+   "estado": "ok"
   }
  },
  "resumen": {
