@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf",
- "generado": "2026-10-19T00:16:01.162Z",
+ "generado": "2026-10-19T02:28:44.363Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (excelsior-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"resultaat deelneming\" -> other_income 0.6"
   }
  ],
  "avisos": [
@@ -28,16 +24,6 @@
     "_pag": 9,
     "_escalon": 1,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "resultaat deelneming",
-    "normalizedCategory": "other_income",
-    "amountNative": 0.109017,
-    "disclosureLevel": "aggregated",
-    "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.6,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -101,12 +87,16 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": -0.018713,
+   "netInterest": 0.090304,
    "tax": 0.409864,
    "extraRows": [
     {
      "label": "financiële baten en lasten",
      "value": -0.018713
+    },
+    {
+     "label": "resultaat deelneming",
+     "value": 0.109017
     },
     {
      "label": "belastingen",
@@ -123,7 +113,7 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 10.192002,
+   "officialTotalRevenue": 10.082985,
    "officialTotalExpenses": 10.126333,
    "officialPAT": 0.45682
   },
@@ -158,6 +148,19 @@
    "evidencia": "Excelsior-Jaarverslag-2023-2024.pdf (balans/W&V geconsolideerde 2024)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf",
+   "campo": "fila",
+   "valor": "109.017",
+   "linea": 214,
+   "etiqueta": "resultaat deelneming",
+   "lado": "financiero",
+   "reemplaza": "resultaat deelneming",
+   "motivo": "resultado de participadas, impreso debajo del impuesto: va al financiero, no a los ingresos (como Sparta) (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L214",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
  "seleccion": {
@@ -180,22 +183,6 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 10.082985
-  },
-  {
-   "label": "resultaat deelneming",
-   "page": 9,
-   "native": 0.109017,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
-   "signoFijo": 0.109017,
-   "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "revenue",
-   "amountNative": 0.109017
   },
   {
    "label": "lonen en salarissen",
@@ -284,6 +271,17 @@
    "destino": "netInterest"
   },
   {
+   "label": "resultaat deelneming",
+   "page": null,
+   "native": 0.109017,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
    "label": "belastingen",
    "page": null,
    "native": 0.409864,
@@ -298,15 +296,14 @@
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 10.192002,
+  "revSum": 10.082985,
   "expSum": -10.126333,
-  "officialTotalRevenue": 10.192002,
+  "officialTotalRevenue": 10.082985,
   "officialTotalExpenses": 10.126333,
   "officialPAT": 0.45682,
   "verificacion": {
@@ -323,7 +320,7 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 10.192002
+   "M": 10.082985
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
@@ -380,10 +377,10 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 2,
+  "motivos": 1,
+  "lineasIngreso": 1,
   "lineasGasto": 5,
-  "metaFilas": 2,
+  "metaFilas": 3,
   "excluidas": 0
  }
 }

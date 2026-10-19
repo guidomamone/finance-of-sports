@@ -41,6 +41,9 @@ window.RANKINGS["nl-eredivisie"] = {
       { id:"az-nl", revenue:94.485, reportType:"official_balance_sheet",
         sourceId:"az-nl-jaarrekening-2024",
         mix:[["Comercial / Sponsors",17.38],["Estadio",17.942],["Televisión",8.872],["Venta de Jugadores",47.363],["Otros ingresos",2.928]] },
+      { id:"excelsior-nl", revenue:10.799, reportType:"official_balance_sheet",
+        sourceId:"excelsior-nl-jaarverslag-2023-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",10.799]] },
     ],
   },
 };
