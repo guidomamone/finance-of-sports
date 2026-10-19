@@ -149,12 +149,14 @@ const unionFiscalYearMeta = {
   2022: {
     currency:'ARS', fx:124, fxSource:'document_close', sourceId:'union-memoria-y-balance-116',
     reportType:'official_balance_sheet', gestionId:'spahn',
+    grossDebt:394.600302, cash:96.449588,
     profitOnPlayerSales:0, assetSales:0, netInterest:-45.996916, tax:0,
     officialTotalRevenue:2303.899158, officialTotalExpenses:2067.493328, officialPAT:190.408914,
   },
   2023: {
     currency:'ARS', fx:255, fxSource:'document_close', sourceId:'union-memoria-y-balance-117',
     reportType:'official_balance_sheet', gestionId:'spahn',
+    grossDebt:965.496556, cash:113.141438,
     profitOnPlayerSales:0, assetSales:0, netInterest:145.239007, tax:0,
     officialTotalRevenue:5087.874350, officialTotalExpenses:4339.212070, officialPAT:893.901287,
   },
@@ -162,6 +164,7 @@ const unionFiscalYearMeta = {
     incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, education_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
     currency:'ARS', fx:890.50, fxSource:'document_close', sourceId:'union-estados-contables-118-2023-24',
     reportType:'official_balance_sheet', gestionId:'spahn',
+    grossDebt:3552.401997, cash:414.83419,
     profitOnPlayerSales:0, assetSales:0, netInterest:-64.084989, tax:0,
     officialTotalRevenue:20283.299213, officialTotalExpenses:19052.891247, officialPAT:1166.322977,
   },

@@ -115,6 +115,10 @@ archivo — grossDebt/cash quedan sin cargar, no inventados.
 SUPERÁVIT FINAL real: $1.166.322.977 ARS.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): grossDebt de Unión = total de la nota Deudas sin Previsiones (criterio del club). 30/06/2024: TOTAL DEUDAS 3.552.401.997 (columna 2024; la de 2023 reexpresada es 3.587.106.472).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): Caja y bancos al 30/06/2024 (ejercicio 118) = 414.834.190 pesos (caja 200.878.243 + bancos 121.183.145 + moneda extranjera 0 + IPEI 92.772.802).
+```
+
 ## 2023
 
 ### Meta
@@ -125,6 +129,10 @@ archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no in
 SUPERÁVIT FINAL real: $893.901.287 ARS.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): grossDebt de Unión = total de la nota Deudas sin Previsiones (criterio del club). 30/06/2023: corriente 885.283.704,45 + no corriente 80.212.851,80 = TOTAL DEUDAS 965.496.556,25.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): Caja y bancos al 30/06/2023 (ejercicio 117, rectificativo) = 113.141.438,31 pesos.
+```
+
 ## 2022
 
 ### Meta
@@ -133,6 +141,10 @@ SUPERÁVIT FINAL real: $893.901.287 ARS.
 No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
 archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no inventados.
 SUPERÁVIT FINAL real: $190.408.914 ARS.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-19): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): grossDebt de Unión = total de la nota Deudas (corriente + no corriente), sin Previsiones: es el criterio del club (su 2025 carga 8.619,65 + 137,74 millones). 30/06/2022: corriente 334.598.794,11 + no corriente 60.001.507,93 = TOTAL DEUDAS 394.600.302,04. Incluye proveedores, fiscal y los cheques de pago diferido.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): Caja y bancos al 30/06/2022 (ejercicio 116, rectificativo) = 96.449.587,60 pesos.
 ```
 
 ## Fuentes
