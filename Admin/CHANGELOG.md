@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 828 — Lote 97: 22 años del fútbol inglés (2026-10-19)
+
+* Aston Villa 2019-2022, Brentford 2022-23, Brighton 2020-23, Fulham 2021 y 2023, Arsenal 2022-23 y Crystal Palace 2022-23. Scottish
+  Premiership en `data/leagues.js` (para el alta de Celtic). Bournemouth, Chelsea y Everton se revertían porque la rama no tenía la 298 ad
+  (entidades.mjs en GENERADORES): se reintentan con la rama al día. El lote-100 de Fulham pasa a ser el lote-104.
+
 ## Versión 827 — Cada worktree con su propia lista de corrida (2026-10-19)
 
 * `worktree.mjs preparar` ya no enlaza a la principal la lista de la etapa 7 ni las otras listas de corrida (`.lote-lista-actual.txt` y
