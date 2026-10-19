@@ -28,3 +28,13 @@
 
 - Si ESTADO dice que el tamaño de la liga "no está verificado" en la mayoría de las liga-temporadas, ya no: sale de la lista de Wikipedia cuando no hay verificado.
 - `ESTADO-clubes.md` se regenera solo cuando se cargue Fredrikstad 2012.
+
+### Después del merge (2026-10-19)
+
+- Lote 95 corrido por Guido: Fredrikstad 2012 (FLI) cargado, commit 84c92fd14d; cierra contra lo impreso y contra la columna del año anterior de 2013.
+- Fotballinvest AS 2008-2011 (el aviso del lote 95, el de 2010) NO se carga: el club es el FLI; nota en `Admin/carga-clubes/fredrikstad-no.md`. Del TODO 284:
+  Fredrikstad 2008-2011 queda sin cargar por esa razón; Sarpsborg 08 y Pardubice siguen como estaban.
+- 282, Hamburgo 2024: el PDF público de hsv.de (`hsv_jahresabschluss_und_lagebericht_2023_24.pdf`, 36 págs.) es el mismo que ya tenemos y no trae el
+  Bestätigungsvermerk; solo está en el Unternehmensregister o el Bundesanzeiger, detrás de captcha. No se resuelve el captcha con ninguna herramienta:
+  sigue pendiente (o candidato a mail al club, que Guido no quiere por ahora).
+- 282: por decisión de Guido (2026-10-19) Hamburgo 2024 se publicó "sin informe de auditoría" (`sin_informe`, línea 310 de `auditoria.jsonl`), con nota; si aparece el Bestätigungsvermerk 2023/24, pasa a sin_salvedades. ASSET_V 1401.
