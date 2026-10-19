@@ -103,3 +103,15 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
   - Mejora de script: elegir siempre el estado de resultados de la FC Basel 1893 AG cuando el informe trae varios (Verein, AG, Stadiondienst AG); no sumar partidas de la Holding/Verein debajo del resultado operativo.
 - **St. Gallen** (6 casos sin responder: "Erträge brutto" y "Direkte Kosten" 2018-19, 2021-22 y 2022-23): las cuentas individuales de FC St. Gallen AG y de la Event AG abren esos dos rubros y suman casi exacto la fila consolidada (descuadre de 4 mil en 2018-19 por el signo de las Wertberichtigungen). Pregunta: ¿se carga el desglose de las dos sociedades en vez de la fila consolidada? Fallback si no: `lump_football_operations` para ingresos y `other_expenses` para "Direkte Kosten". Compensación intragrupo "Entschädigung von/an FCSG Event AG": afuera; se sumó como ingreso en 2018-19, 2019-20, 2021-22 y 2023-24 (9.800 en 2021-22 y 9.975 en 2023-24).
 - **Luzern 2018 y 2024**: frenan por estadio o sponsor (compuerta 273). **Luzern 2020 y 2023**: categorías en cola y tie-out de gastos en 2023.
+
+## Lote 102 y Luzern (2026-10-19)
+
+### Qué cambió
+- **Lote 102 (Bélgica)**: escritos Lommel SK 2019-2024, Lierse SK 2020-2021 y Patro Eisden 2021 y 2023. Hizo falta una línea `carga-club` de `lommelsk-be` (desde 2018, hasta null, entidad `lommel-sk`, individual) en `Admin/registros/entidades.jsonl`, como indicó la principal.
+- **Luzern**: escritos 2018, 2020 y 2024. Ligas `ch-superleague` para 2018, 2020, 2023 y 2024 en `data/club-leagues/ch.js` (verificadas con las listas de la Super League). Estadio y sponsor con fuente en `tools/contexto-manual.json`: 2020 sponsor Otto's (Geschäftsbericht 2019/20, "Hauptsponsor", pág. 59 del visor) y 2024 estadio Swissporarena (Geschäftsbericht 2023/24, L33; sin capacidad). Cola de Luzern 2019-20 contestada (4 casos).
+
+### Qué queda (para TODO)
+- **Luzern 2023 (2022-23)**: defecto de script con el guion largo como signo menos. El `.md` imprime los negativos con "–" (U+2013), por ejemplo "–3’102’345" (`geschaeftsbericht-2022-23.md` L1560 aprox., Unternehmenserfolg nach Minderheiten). El tie-out lee el resultado impreso como +3,102345 y la suma da –3,102346: frena por `tie-out-resultado` y por los gastos (las filas suman 31,28278 y el total impreso es 31,428929; la diferencia 0,146149 es el "Ausserordentlicher Aufwand" de la nota 34). No usar el ajuste `resultado-final`. Arreglo: tratar "–" y "−" como signo menos al leer cifras.
+- **Patro Eisden 2022**: sigue frenado (ver el log del lote 102).
+- **Lierse SK 2019**: frena por "periodo" (el documento cubre un período distinto de 12 meses).
+- **Lokeren-Temse 2021-2022 y Patro Eisden 2013-2015**: faltan las listas de las ligas amateur belgas (298 ae/af de Pipeline).
