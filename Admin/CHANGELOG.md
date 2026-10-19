@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 817 — 298 ae: un año belga abreviado sin ingresos carga con ingresos 0 (2026-10-19)
+
+* `cargar.mjs`: si el escalón NBB y el resultado cierran, un año belga abreviado sin Omzet (Brutomarge negativa como gasto) carga
+  ingresos 0 con aviso, en vez de frenar (opción de Guido). Destraba Lierse SK 2020-2021 y Patro Eisden 2021; Lierse 2019 sigue por "periodo".
+
 ## Versión 816 — 298 ad: el registro de entidades no frena un año de un club de un grupo (2026-10-19)
 
 * `generadores.mjs`: `entidades.mjs` corre después de `generate-rankings.js` (los totales de grupo salen de los rankings): era la causa del

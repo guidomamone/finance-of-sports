@@ -25,14 +25,14 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 292: cargar lo transcripto: los demás años de Basel, Luzern, St. Gallen y Go Ahead Eagles (lote 101, corriendo); Bélgica: Lommel SK 2019-2024 ya se puede cargar (con una línea carga-club), lo demás espera la 298 ae y af; después Suiza, Beşiktaş y Colombia --> Onboarding 3
+* 292: cargar lo transcripto: los demás años de Basel, Luzern, St. Gallen y Go Ahead Eagles (lote 101, corriendo); Bélgica: Lommel SK 2019-2024 ya se puede cargar (con una línea carga-club), Lierse SK 2020-2021 y Patro Eisden 2021-2023 también se pueden reintentar (298 ae); el estadio de las amateur espera la 298 af; después Suiza, Beşiktaş y Colombia --> Onboarding 3
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; casi todo espera un documento mejor)
-* 298: mejoras de script de Estonia y Bélgica (ae y af, de Bélgica, esperan tu ok; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -254,8 +254,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola.
-   ae) una Brutomarge negativa sin Omzet (Lierse SK
-   2019-2021, Patro Eisden 2021-2023) frena con "ninguna fila de ingresos con categoría aceptable". af) listas de las ligas amateur belgas
+af) listas de las ligas amateur belgas
    de esos años para el estadio (Lokeren-Temse 2022, Patro Eisden 2013-2015).
    z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
