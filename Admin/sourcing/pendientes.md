@@ -1187,10 +1187,13 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Tekstilshchik Ivanovo — sin-buscar: 2022 (ru-pervayaliga)
 - Tom Tomsk — sin-buscar: 2022 (ru-pervayaliga)
 
-## Suiza (3 clubes, 3 club-años)
+## Suiza (6 clubes, 6 club-años)
 
 - Yverdon-Sport — sin-buscar: 2025 (ch-superleague)
+- Lausanne Ouchy — sin-buscar: 2024 (ch-superleague)
+- Yverdon — sin-buscar: 2024 (ch-superleague)
 - Vaduz — sin-buscar: 2021 (ch-superleague)
+- Neuchâtel Xamax — sin-buscar: 2020 (ch-superleague)
 - Xamax — sin-buscar: 2019 (ch-superleague)
 
 ## Turquía (50 clubes, 130 club-años)

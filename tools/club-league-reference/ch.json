@@ -1,6 +1,36 @@
 {
   "leagues": {
     "ch-superleague": {
+      "2018": {
+        "wikipediaPage": "2017–18 Swiss Super League",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-19T16:30:08.958Z",
+        "clubs": [
+          "Basel",
+          "Grasshopper",
+          "Lausanne",
+          "Lugano",
+          "Luzern",
+          "Sion",
+          "St. Gallen",
+          "Thun",
+          "Young Boys",
+          "FC Zürich"
+        ],
+        "posiciones": [
+          "Young Boys",
+          "Basel",
+          "Grasshopper",
+          "Luzern",
+          "Lausanne-Sport",
+          "Zürich",
+          "Lugano",
+          "St. Gallen",
+          "Sion",
+          "Thun"
+        ]
+      },
       "2019": {
         "wikipediaPage": "2018–19 Swiss Super League",
         "lang": "en",
@@ -29,6 +59,36 @@
           "St. Gallen",
           "Zürich",
           "Xamax"
+        ]
+      },
+      "2020": {
+        "wikipediaPage": "2019–20 Swiss Super League",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-19T16:30:09.831Z",
+        "clubs": [
+          "Basel",
+          "Lugano",
+          "Luzern",
+          "Neuchâtel Xamax",
+          "Servette",
+          "Sion",
+          "St. Gallen",
+          "Thun",
+          "Young Boys",
+          "Zürich"
+        ],
+        "posiciones": [
+          "Young Boys",
+          "Basel",
+          "St. Gallen",
+          "Lugano",
+          "Luzern",
+          "Servette",
+          "Sion",
+          "Zürich",
+          "Thun",
+          "Neuchâtel Xamax"
         ]
       },
       "2021": {
@@ -89,6 +149,70 @@
           "Luzern",
           "Servette",
           "Sion"
+        ]
+      },
+      "2023": {
+        "wikipediaPage": "2022–23 Swiss Super League",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-19T16:30:10.820Z",
+        "clubs": [
+          "Basel",
+          "Grasshopper",
+          "Lugano",
+          "Luzern",
+          "Servette",
+          "Sion",
+          "St. Gallen",
+          "Winterthur",
+          "Young Boys",
+          "Zürich"
+        ],
+        "posiciones": [
+          "Young Boys",
+          "Basel",
+          "Servette",
+          "Grasshopper",
+          "Lugano",
+          "Luzern",
+          "St. Gallen",
+          "Sion",
+          "Zürich",
+          "Winterthur"
+        ]
+      },
+      "2024": {
+        "wikipediaPage": "2023–24 Swiss Super League",
+        "lang": "en",
+        "section": "Teams",
+        "fetchedAt": "2026-10-19T16:30:11.799Z",
+        "clubs": [
+          "Lausanne-Sport",
+          "Lausanne Ouchy",
+          "Yverdon",
+          "Zürich",
+          "Grasshopper",
+          "FC Winterthur",
+          "Young Boys",
+          "Basel",
+          "Luzern",
+          "St. Gallen",
+          "Servette",
+          "Lugano"
+        ],
+        "posiciones": [
+          "Basel",
+          "Lugano",
+          "Grasshopper",
+          "Servette",
+          "Lausanne Ouchy",
+          "St. Gallen",
+          "Lausanne-Sport",
+          "Winterthur",
+          "Young Boys",
+          "Luzern",
+          "Zürich",
+          "Yverdon-Sport"
         ]
       },
       "2025": {
