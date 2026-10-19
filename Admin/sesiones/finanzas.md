@@ -361,3 +361,67 @@
 ## Después del tercer merge de Finanzas 4 (2026-10-19)
 
 ## Después del cuarto merge de Finanzas 4 (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 270, medición del estimado de un club nunca cargado (sin tocar `data/`, el modelo ni el texto del 50 % en pantalla). Primero se
+  confirmó leyendo el código que `node tools/estimar.mjs --medir` es gratis: solo lee `data/rankings/`, `data/deflactores.js`,
+  `data/leagues.js`, `data/clubs.js` y las tablas de `faltantes-liga.mjs`; sin API ni red, y esa rama no escribe nada. Se corrió (1.011
+  club-años con ingreso real, 292 clubes, 257 liga-años, 928 con posición; antes 891 club-años).
+- Resultado, contra la medición del 2026-10-17:
+  | | 17-10 | 19-10 |
+  |---|---|---|
+  | club nuevo, modelo | 50 % | 50 % (a ±25 %: 24 %; el real cae en el rango del 80 %: 80 %; n 987) |
+  | club nuevo, mediana de la liga | 56 % | 56 % (a ±25 %: 20 %) |
+  | club nuevo, sin posición | 61 % | 60 % |
+  | falta un año, modelo | 22 % | 22 % (entre dos reales 19 %; antes o después 28 %) |
+  | falta un año, interpolar a mano | 22 % | 22 % |
+  Los 17 clubes nuevos (Noruega, Suiza, Países Bajos) y los 120 club-años que sumaron no movieron el total: el modelo sigue ganándole a la
+  mediana de la liga por 6 puntos y sigue empatando con la interpolación a mano cuando falta un año.
+- Por país, club nuevo (error mediano del modelo | mediana de la liga; solo países con 8 club-años o más, medido por club):
+  Italia 33 % | 53 %, Bélgica 34 | 57, Chile 33 | 38, Japón 37 | 12, España 41 | 43, Rusia 45 | 66, Alemania 50 | 69, Brasil 50 | 45,
+  Argentina 50 | 48, Colombia 53 | 49, Dinamarca 61 | 67, Grecia 64 | 60, Portugal 66 | 72, Reino Unido 45 | 35, Croacia 49 | 29,
+  **Estonia 95 | 52**, **Países Bajos 97 | 89**. Por liga con 12 o más: Serie A 33 | 53, Primeira Liga 68 | 78, Superleague 64 | 77, Premier
+  rusa 45 | 63, Eredivisie 97 | 89, Meistriliiga 95 | 52, Premier League 57 | 28, Brasil A 72 | 56 (Serie B 41 | 33). Por división: 1ª 49 %,
+  2ª 55 %, 3ª 43 %.
+- Los países nuevos pesan poco (Noruega y Suiza tienen un club-año por club, no llegan a 8): Países Bajos, 16 club-años de 12 clubes, es el
+  único que se ve, y sale mal (97 %). Estonia (57 club-años, 9 clubes, cargada en la misma tanda) también sale mal.
+- Causa: el sesgo con signo por país. El modelo es una sola regresión global y tira cada liga hacia la media global (b < 1 sobre la mediana
+  de la liga): sobreestima las ligas chicas y subestima las grandes. Sesgo mediano: Estonia +95 %, Países Bajos +58, Croacia +37,
+  Colombia +19, Brasil +7; Reino Unido −40, Alemania −26, Chile −17, Rusia −15, Bélgica −13, Portugal −10. Sin Estonia el total baja a
+  49 % (la mediana de la liga, 56 %); sin Estonia ni Países Bajos, 49 %.
+- Variable aparte, "partidos contra clubes con finanzas" (análisis aparte; el modelo no cambió). Como el repo no guarda fixtures, se midió
+  el proxy que sí se puede: `k` = cuántos otros clubes de la misma liga-año tienen finanzas cargadas (en una liga a doble vuelta, los
+  partidos contra ellos son 2·k), y su parte de la liga (k / (clubes de la tabla − 1)). El error mediano por tramo de k es 50 % (0-3),
+  59 (4-7), 57 (8-11), 38 (12-15), 52 (16 o más): no es monótono, y el tramo bueno es sobre todo Italia (20 de 20 cargados). Por parte
+  cargada: 48 % (0-25), 62 (25-50), 46 (50-75), 44 (75-100). Correlación del residuo con k: −0,12 (con el valor absoluto del residuo,
+  −0,16; con la parte cargada, −0,07). Sumar k como corrección del residuo, ajustada sin el club que se predice, da 51 % contra 50 %: no
+  agrega nada. Conclusión: esa variable no mejora el modelo; lo que explica el error es el país o la liga, no cuántos rivales conocemos.
+  Si Guido quería otra cosa con "partidos contra clubes con finanzas" (por ejemplo, partidos de copa o de torneos internacionales
+  contra clubes cargados), hace falta una fuente de fixtures que hoy no hay.
+- Dispersión del log ingreso dentro de la liga-año (mediana por país), que explica por qué la mediana de la liga rinde distinto: Portugal
+  1,24, Grecia 1,12, Países Bajos 1,10, Dinamarca 0,94, Estonia 0,84, Bélgica 0,82, Rusia 0,82, Italia 0,59, Argentina 0,58, Brasil 0,58,
+  Reino Unido 0,45, Chile 0,29, España 0,29, Japón 0,19.
+- `tools/estimar.mjs --medir --detalle` (y `--detalle-clubes`, que suma una línea por club-año): a pedido de Guido, la opción que da el error
+  por país, por liga y por división, el sesgo con signo y la dispersión, en las dos validaciones; solo lectura, sin cambiar el modelo, y
+  `--medir` sin la opción da la misma salida byte a byte (con y sin `--sin-posicion`). Reproduce al dígito los números de arriba, que se
+  habían sacado con una copia de la tool en el scratchpad. Commit e5e5b77a3a.
+
+### Qué queda (para TODO)
+
+- 270: lo que convendría cambiar del modelo, con números (lo decide Guido; no se tocó nada). Todos son un cambio de `tools/estimar.mjs` y
+  de su medición, no de `data/`:
+  1. Un efecto de país (o de liga) en la regresión del club nuevo, en lugar de una sola recta global: ataca el sesgo que concentra el
+     error (Estonia +95 %, Países Bajos +58, Reino Unido −40, Alemania −26). Probar con país y con liga, y medirlo dejando afuera a cada
+     país entero (la validación por club actual deja al club afuera pero no al país, así que un efecto de país sale optimista dentro de
+     un país con varios clubes cargados: para países con un solo club el efecto no se puede estimar).
+  2. Mientras tanto, la mediana de la liga le gana al modelo en Brasil, Argentina, Colombia, Estonia, Países Bajos, Reino Unido, Croacia y
+     Japón. Usarla ahí bajaría el error total de 50 % a 46 % en esta muestra (el número es optimista: los países se eligieron mirando los
+     mismos datos). Es el atajo si no se quiere tocar la regresión.
+  3. Estonia y Países Bajos, que son los que hoy se publican con más error, podrían salir de los estimados de Ligas hasta que haya más
+     clubes cargados o hasta tener el efecto de país (Estonia: 95 %; Países Bajos: 97 %; a ±25 %, 33 % y 6 %). Es decisión de pantalla, de Guido.
+  4. El texto del 50 % en pantalla sigue siendo cierto en total (50 % mediano, 24 % de los clubes a ±25 %), pero oculta que por país va de
+     33 % (Italia, Chile, Bélgica) a 97 % (Países Bajos). Una frase "entre un tercio y el doble, según la liga" diría la verdad; no se cambió.
+  5. La variable "partidos contra clubes con finanzas" no vale el esfuerzo (corregir por k: 51 % contra 50 %).
+  6. Volver a medir cuando Estonia llegue a otras ligas o cuando entren más clubes de Noruega, Suiza y Países Bajos (hoy un club-año por
+     club): con 8 club-años por país el cuadro de arriba se completa.

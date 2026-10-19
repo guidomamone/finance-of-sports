@@ -33,7 +33,10 @@
 //   club nuevo     modelo 50% (sin posición 61%) contra 56% de la mediana de la liga: gana gracias a la posición, pero el error es grande.
 //
 // USO:
-//   node tools/estimar.mjs --medir [--sin-posicion]
+//   node tools/estimar.mjs --medir [--sin-posicion] [--detalle | --detalle-clubes]
+//        --detalle: además de los totales, el error por país, por liga y por división, el sesgo con signo por país (+ = el modelo
+//        sobreestima) y la dispersión del log ingreso dentro de la liga-año, en las dos validaciones. --detalle-clubes: lo mismo más una
+//        línea por club-año (error del modelo y de la mediana de la liga). Solo lectura; sin la opción la salida no cambia.
 //   node tools/estimar.mjs [--escribir | --check]   ver "estimaciones publicables", más abajo
 // ============================================================================
 import { readFileSync, readdirSync, existsSync, mkdirSync, writeFileSync, unlinkSync } from 'node:fs';
@@ -60,6 +63,7 @@ function posicion(id, liga, anio, S = null) {
   return null;
 }
 const CON_POS = !process.argv.includes('--sin-posicion');
+const DETALLE = process.argv.includes('--detalle') || process.argv.includes('--detalle-clubes');
 function datos() {
   const c = { window: {} };
   for (const f of readdirSync(resolve(ROOT, 'data', 'rankings'))) vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'rankings', f), 'utf8'), c);
@@ -126,7 +130,7 @@ const predecir = (w, x) => w.reduce((s, v, i) => s + v * x[i], 0);
 
 // Una validación: para cada fila, `fuera` = lo que no se puede ver; ajusta con el resto (variables recalculadas sin `fuera`) y predice.
 function validar(rows, ix, modo) {
-  const res = { modelo: [], base: [], cercano: [], interp: [], entre: [], afuera: [], cubre: 0, n: 0 };
+  const res = { modelo: [], base: [], cercano: [], interp: [], entre: [], afuera: [], cubre: 0, n: 0, det: [] };
   const porClub = modo === 'club';
   const hechos = new Set();
   for (const r of rows) {
@@ -151,6 +155,7 @@ function validar(rows, ix, modo) {
       const p = predecir(w, vector(m, conH ? h : null, conH ? I(ix, t, fuera) : null, t.tier, t.q));
       if (conH) res.interp.push(I(ix, t, fuera) - t.y);
       res.modelo.push(p - t.y); res.base.push(m - t.y); res.n++;
+      res.det.push({ id: t.id, liga: t.liga, pais: t.pais, tier: t.tier, anio: t.anio, q: t.q, y: t.y, e: p - t.y, b: m - t.y }); // para --detalle
       if (conH) { const ys = (ix.porClub.get(t.id) || []).filter((o) => o !== t).map((o) => o.anio); (Math.min(...ys) < t.anio && Math.max(...ys) > t.anio ? res.entre : res.afuera).push(p - t.y); }
       if (t.y >= p + lo && t.y <= p + hi) res.cubre++;
       if (!porClub) { const c = cercano(ix, t, fuera); if (c) res.cercano.push(c.y - t.y); }
@@ -285,5 +290,35 @@ if (import.meta.url === `file://${process.argv[1]}` && process.argv.includes('--
     if (r.cercano.length) console.log(`  base: año cercano    ${pct(r.cercano)}`);
     if (r.interp.length) console.log(`  base: interpolado    ${pct(r.interp)}`);
     console.log('');
+    if (DETALLE) detalle(r.det);
   }
+}
+
+// --detalle: el error de cada validación agrupado (solo lectura; usa lo que validar() ya calculó, no cambia el modelo).
+function detalle(det) {
+  const ape = (e) => Math.abs(Math.exp(e) - 1);
+  const resumen = (l, f = (d) => d.e) => { const a = l.map((d) => ape(f(d))); return { n: a.length, med: Math.round(mediana(a) * 100), p25: Math.round(a.filter((x) => x <= 0.25).length / a.length * 100) }; };
+  const grupos = (clave) => { const m = new Map(); for (const d of det) { const k = clave(d); (m.get(k) || m.set(k, []).get(k)).push(d); } return [...m].sort((a, b) => b[1].length - a[1].length); };
+  const sd = (a) => { const m = a.reduce((s, v) => s + v, 0) / a.length; return Math.sqrt(a.reduce((s, v) => s + (v - m) ** 2, 0) / a.length); };
+  const linea = (k, l) => { const r = resumen(l), b = resumen(l, (d) => d.b); return `    ${String(k).padEnd(18)} n ${String(r.n).padStart(4)}  clubes ${String(new Set(l.map((d) => d.id)).size).padStart(3)}  modelo ${String(r.med).padStart(3)}% (a ±25%: ${String(r.p25).padStart(3)}%)  mediana liga ${String(b.med).padStart(3)}%`; };
+  console.log('  DETALLE (error mediano |estimado/real - 1|; el modelo contra la mediana de la liga)');
+  console.log('  por país (8 club-años o más):'); for (const [k, l] of grupos((d) => d.pais)) if (l.length >= 8) console.log(linea(k, l));
+  console.log('  por liga (12 club-años o más):'); for (const [k, l] of grupos((d) => d.liga)) if (l.length >= 12) console.log(linea(k, l));
+  console.log('  por división:'); for (const [k, l] of grupos((d) => d.tier).sort((a, b) => a[0] - b[0])) console.log(linea(`división ${k}`, l));
+  const sesgo = (l) => Math.round(mediana(l.map((d) => Math.exp(d.e) - 1)) * 100);
+  console.log(`  sesgo con signo por país (mediana del error en %; + = el modelo sobreestima): ${grupos((d) => d.pais).filter(([, l]) => l.length >= 8).map(([k, l]) => `${k} ${sesgo(l) > 0 ? '+' : ''}${sesgo(l)}`).join(', ')}`);
+  const disp = [];
+  for (const [k, l] of grupos((d) => d.pais)) {
+    if (l.length < 8) continue;
+    const porLigaAnio = new Map(); for (const d of l) { const c = `${d.liga}|${d.anio}`; (porLigaAnio.get(c) || porLigaAnio.set(c, []).get(c)).push(d.y); }
+    const sds = [...porLigaAnio.values()].filter((a) => a.length >= 3).map(sd); if (sds.length) disp.push([k, mediana(sds)]);
+  }
+  console.log(`  dispersión del log ingreso dentro de la liga-año (mediana por país): ${disp.sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v.toFixed(2)}`).join(', ')}`);
+  if (process.argv.includes('--detalle-clubes')) {
+    console.log('  por club-año (liga, año, club, posición normalizada, error del modelo, error de la mediana de la liga; + = sobreestima):');
+    for (const d of [...det].sort((a, b) => a.liga.localeCompare(b.liga) || a.anio - b.anio || a.id.localeCompare(b.id))) {
+      console.log(`    ${d.liga.padEnd(18)} ${d.anio} ${d.id.padEnd(30)} q ${d.q == null ? ' -- ' : d.q.toFixed(2)}  modelo ${((Math.exp(d.e) - 1) * 100).toFixed(0).padStart(5)}%  mediana liga ${((Math.exp(d.b) - 1) * 100).toFixed(0).padStart(5)}%`);
+    }
+  }
+  console.log('');
 }
