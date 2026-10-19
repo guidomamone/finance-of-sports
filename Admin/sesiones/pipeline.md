@@ -180,3 +180,39 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   preguntas de id y país. Auditoría P0 0 / P1 0. Commit 5c16518381.
 - **Qué queda (para TODO):** el país en el selector del sitio (`data/leagues.js` COUNTRIES, con nombre y bandera) sigue aparte para cada
   país nuevo; Escocia, Gales e Irlanda del Norte se ven como GB ("Inglaterra", bandera inglesa) hasta que se decida otra cosa en pantalla.
+
+## Para la sesión nueva (Pipeline 3): por dónde seguir (2026-10-18, cierre de Pipeline 2 por contexto)
+
+Estado: rama `pipeline` limpia, todo commiteado; la 298 i (5c16518381, 90a7e3ac80) es lo último y espera merge. Hecho en esta sesión: 298 t, u,
+x, e, f, g, h, i y la 282 g. Antes de nada: `node tools/worktree.mjs preparar /Users/guidopablomamonesoneira/Claude/Projects/fos-pipeline`.
+Cómo se trabajó: cada letra con diseño + medición gratis y el ok de Guido ANTES de codear (en la f me lo salteé: no repetirlo); medir antes y
+después (`medir-verificar --pasadas 2`, `medir-cargar --contra-sitio`, foto completa de la tool que cambia); un commit por cambio; nota acá y
+aviso a la principal con el comando que haga falta. No se mergea main en la rama.
+
+**Orden de las letras que quedan (el detalle de cada una, en la lista de pendientes de la principal):**
+1. **298 y** (de Onboarding 2; la primera, porque toca años que se están cargando). NRS noruego: Annen finanskostnad, Annen rentekostnad y
+   Rentekostnad sumados como ingreso financiero (Vålerenga, Aalesund, Viking, Sarpsborg 08, Fredrikstad 2018 y 2024); "Sum driftsinntekter"
+   sumado junto con su renglón (Fredrikstad 2024); St. Gallen, "Erträge netto" junto con su desglose y los "-" al revés. Detalle en
+   Admin/sesiones/onboarding.md de la rama onboarding (commit 89a2a53698, debajo de "Después del quinto merge del 2026-10-18"): esperar a que
+   esté en main. Después, anular con medición los 11 ajustes a mano del lote 94 que lo tapan.
+2. **298 w** (de Onboarding 2): antes-de-localizar dice que el perímetro "se decide al ejecutar", pero lote.mjs frena igual.
+3. **298 l, m, n, p**: repreguntas en un club ya dado de alta (reportType por año; perímetro contra el año cargado y no contra el ajuste del
+   club; año vecino con otro perímetro; ceros reales y perfil que vuelven cada año).
+4. **298 q**: el ensayo de lote.mjs cobra la categorización de documentos ya cargados o ya categorizados.
+5. **298 s** (lo que falta): con el cierre bueno (lo arregló la f), ver si localizar sigue eligiendo la columna "Vorig boekjaar" vacía
+   (Beerschot 2019 -correction).
+6. **298 v**: el final de lote.mjs lista como frenados los originales reemplazados por su -correction.
+7. **298 u2**: listas de ligas en grupos (Third Division belga antes de 2016, Second Amateur / Division 2) que bajan con un solo grupo, y la
+   First Division B 2017-18 y 2018-19 que fetch-club-league-reference baja con un equipo menos (falta Beerschot Wilrijk).
+8. **298 z**: cargar los primeros ejercicios de más de 12 meses (Anderlecht 2011, RAAL 2018, Sint-Truiden 2013, Zulte Waregem 2012; Guido: "son
+   parciales, pero corresponde cargarlos").
+9. **298 g2**: partir en la cola cualquier fila según su nota (otros países, el 66A), solo si aparece otra fila mixta sin códigos.
+10. Después, del plan: 310, 290, 232, 279, 286, 287, 301, 302, 306, 307.
+
+**Decisiones de Guido abiertas:**
+- **298 t2:** Patro Eisden 2025 (ingresos 1.810 y gastos 4.012 de más), Lommel SK 2025 (gastos 172 de más) y Lommel SK 2018 (falta un financiero
+  de −182): cargados con ajustes `fila`, así que el lector NBB no corre en ellos. ¿Se corrigen y cómo? (propuesta: que el escalón NBB corra
+  también con ajustes si con ellos el resultado sigue exacto).
+- **298 e2:** la corrida paga de Mistral de los 238 `.md` sin tablas (~US$ 7,26), en la carpeta principal: `caffeinate -i node
+  tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --max-paginas 0 --limit 0 --ejecutar` (la marca gratis ya la corrió la principal).
+- Escocia, Gales e Irlanda del Norte se ven como GB ("Inglaterra", bandera inglesa) en el selector: decisión de pantalla pendiente.
