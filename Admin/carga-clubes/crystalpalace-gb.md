@@ -103,6 +103,48 @@ _antes de Steve Parish (data/gestiones/gb.js):_
 El club sale de la administración en junio de 2010 (día 01 aproximado). Parish es chairman y cabeza del consorcio; Textor (2021-2025) y Blitzer/Harris fueron socios.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Broadcasting | pág. 24, precedente |
+| 2 | Sponsorship and advertising | pág. 24, precedente |
+| 3 | Gate receipts | pág. 24, precedente |
+| 4 | Other commercial activities | pág. 24, precedente |
+| 5 | Other income | pág. 24, precedente |
+| 6 | Profit on disposal of players | pág. 13, Jev 0.99 |
+| 7 | Profit on disposal of plant & machinery | pág. 13, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Wages and salaries | pág. 25, Claude 0.93 |
+| 2 | Social security costs | pág. 25, Jev 0.92 |
+| 3 | Other pension costs | pág. 25, Claude 0.9 |
+| 4 | Other operating charges | pág. 24, precedente |
+| 5 | Depreciation | pág. 13, Jev 1 |
+| 6 | Amortisation | pág. 13, Claude 0.8 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Crystal Palace".
+```
+
 ## 2022
 
 ### Ingresos
@@ -168,4 +210,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### crystalpalace-gb-cpfc-2010-group-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

@@ -43,6 +43,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'crystalpalace-gb': {
     2022: {"estadio":"Selhurst Park","capacidad":25486,"sponsor":"W88","marca":"Puma","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Selhurst Park","capacidad":25486,"sponsor":"Cinch","marca":"Macron","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Selhurst Park","capacidad":25486,"sponsor":"Cinch","marca":"Macron","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Selhurst Park","capacidad":25194,"sponsor":"NET88","marca":"Macron","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

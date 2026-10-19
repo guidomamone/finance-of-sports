@@ -23,6 +23,15 @@ const crystalpalaceGbRevenueLinesByYear = {
     { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:1.699, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of players', normalizedCategory:'player_sales', amountNative:0, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:141.059, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:14.641, disclosureLevel:'aggregated' },
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:12.344, disclosureLevel:'aggregated' },
+    { rawLabel:'Other commercial activities', normalizedCategory:'other_income', amountNative:8.84, disclosureLevel:'aggregated' },
+    { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:3.182, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of players', normalizedCategory:'player_sales', amountNative:0.331, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of plant & machinery', normalizedCategory:'other_income', amountNative:0.029, disclosureLevel:'aggregated' },
+  ],
 };
 
 const crystalpalaceGbExpenseLinesByYear = {
@@ -45,6 +54,14 @@ const crystalpalaceGbExpenseLinesByYear = {
     { rawLabel:'Other operating charges', normalizedCategory:'other_expenses', amountNative:-19.458, disclosureLevel:'aggregated' },
     { rawLabel:'Depreciation', normalizedCategory:'depreciation', amountNative:-2.396, disclosureLevel:'aggregated' },
     { rawLabel:'Amortisation', normalizedCategory:'player_amortisation', amountNative:-34.151, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Wages and salaries', normalizedCategory:'wages_squad', amountNative:-114.191, disclosureLevel:'aggregated' },
+    { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-16.226, disclosureLevel:'aggregated' },
+    { rawLabel:'Other pension costs', normalizedCategory:'wages_squad', amountNative:-0.209, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating charges', normalizedCategory:'other_expenses', amountNative:-26.308, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation', normalizedCategory:'depreciation', amountNative:-2.552, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation', normalizedCategory:'player_amortisation', amountNative:-40.487, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -82,6 +99,22 @@ const crystalpalaceGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:159.999, officialTotalExpenses:179.84, officialPAT:-24.229,
   },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-06-30',
+    sourceId:'crystalpalace-gb-cpfc-2010-group-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-7.98, tax:0,
+    extraRows: [
+      {label:'Interest receivable', value:0.763},
+      {label:'Interest payable and similar charges', value:-7.806},
+      {label:'Foreign exchange losses', value:-0.937},
+      {label:'Taxation', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:180.426, officialTotalExpenses:199.973, officialPAT:-27.527,
+  },
 };
 
 const crystalpalaceGbPresupuestoOverlayByYear = {};
@@ -114,6 +147,11 @@ Object.assign(sources, {
   'crystalpalace-gb-cpfc-2010-group-accounts-2021-22': {
     id:'crystalpalace-gb-cpfc-2010-group-accounts-2021-22', clubId:'crystalpalace-gb',
     title:'CPFC 2010 Limited — cpfc-2010-group-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'crystalpalace-gb-cpfc-2010-group-accounts-2022-23': {
+    id:'crystalpalace-gb-cpfc-2010-group-accounts-2022-23', clubId:'crystalpalace-gb',
+    title:'CPFC 2010 Limited — cpfc-2010-group-accounts-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

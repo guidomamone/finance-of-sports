@@ -111,6 +111,9 @@ window.RANKINGS["gb-premierleague"] = {
       { id:"astonvilla-gb", revenue:253.489, reportType:"official_balance_sheet",
         sourceId:"astonvilla-gb-full-accounts-2022-23",
         mix:[["Comercial / Sponsors",41.139],["Estadio",23.272],["Televisión",189.078]] },
+      { id:"crystalpalace-gb", revenue:229.393, reportType:"official_balance_sheet",
+        sourceId:"crystalpalace-gb-cpfc-2010-group-accounts-2022-23",
+        mix:[["Comercial / Sponsors",18.615],["Estadio",15.694],["Televisión",179.342],["Venta de Jugadores",0.421],["Otros ingresos",15.322]] },
     ],
   },
   2022: {
