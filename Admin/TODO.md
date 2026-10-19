@@ -46,7 +46,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 2
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan --> Onboarding 2
-* 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
+* 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país) --> Finanzas 4
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS --> Onboarding 2
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 2
