@@ -316,3 +316,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   `anio-vecino`. Solo baja la que falla: la primera versión salteaba todas y Roma 2005 y Benfica 2005-06 pasaban de OK a COLA (perdían un
   chequeo que coincidía). Medido con `medir-verificar --pasadas 2` sobre la completa nueva (720): 718 idénticos; Benfica 2018-19
   (consolidado contra 2019-20 individual) y Aris 2021 (individual contra el grupo) pasan de COLA a OK con los mismos números. Sigue la p.
+
+## Después del merge de la n (2026-10-19)

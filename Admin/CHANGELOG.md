@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 779 — 298 n: el año vecino con otro perímetro ya no frena (2026-10-19)
+
+* `verificar.mjs`: si la comparación con el año vecino falla entre dos documentos con perímetro fijado distinto, queda "no se puede
+  comparar: perímetros distintos" y no abre anio-vecino. Lote completo: 718 de 720 idénticos; Benfica 2018-19 y Aris 2021 pasan a OK.
+
 ## Versión 778 — La skill de onboarding nombra lotes-prueba.mjs; la 298 m a HALLAZGOS (2026-10-19)
 
 * `club-or-year-onboarding`, sección 5: los lotes de prueba los arma `tools/lotes-prueba.mjs` (ok de Guido).
