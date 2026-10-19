@@ -1,0 +1,391 @@
+{
+ "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.md",
+ "mdSha1": "6a606f90339f420058515db6beb53085dd149f34",
+ "ubicacionSha1": "7916d94cffe9eba3bf66997662e8c10a840d6bd4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:02:23.018Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b6"
+  ],
+  "notas_gastos": [
+   "b7",
+   "b8"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "miles",
+   "evidencia": "L653: 2023 £'000 | 2022 £'000"
+  },
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "L1199: 2023 £'000 | 2022 £'000"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L1214: 2023 £'000 | 2022 £'000"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L1239: 2023 £'000 | 2022 £'000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 655,
+   "etiqueta": "Turnover",
+   "actual": "182,325",
+   "anterior": "71,589",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 656,
+   "etiqueta": "Operating expenses before depreciation, amortisation & impairment",
+   "actual": "(171,338)",
+   "anterior": "(110,099)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 657,
+   "etiqueta": "Operating profit/(loss) before depreciation, amortisation & impairment",
+   "actual": "10,987",
+   "anterior": "(38,510)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 658,
+   "etiqueta": "Depreciation and amortisation",
+   "actual": "(46,711)",
+   "anterior": "(31,890)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 659,
+   "etiqueta": "Operating loss after depreciation, amortisation and impairment",
+   "actual": "(35,724)",
+   "anterior": "(70,400)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 660,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "8,743",
+   "anterior": "12,479",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 661,
+   "etiqueta": "Profit on disposal of other assets",
+   "actual": "43",
+   "anterior": "2",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 662,
+   "etiqueta": "Loss before interest and taxation",
+   "actual": "(26,938)",
+   "anterior": "(57,919)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 663,
+   "etiqueta": "Net interest receivable",
+   "actual": "323",
+   "anterior": "29",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 664,
+   "etiqueta": "Loss before taxation",
+   "actual": "(26,615)",
+   "anterior": "(57,890)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 665,
+   "etiqueta": "Taxation on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 666,
+   "etiqueta": "Loss for the year",
+   "actual": "(26,615)",
+   "anterior": "(57,890)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 668,
+   "etiqueta": "Total comprehensive loss for the year",
+   "actual": "(26,615)",
+   "anterior": "(57,890)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 1201,
+   "etiqueta": "Gate Receipts",
+   "actual": "15,170",
+   "anterior": "6,824",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1202,
+   "etiqueta": "Central Awards",
+   "actual": "128,513",
+   "anterior": "49,215",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1203,
+   "etiqueta": "Broadcasting",
+   "actual": "15,961",
+   "anterior": "1,590",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1204,
+   "etiqueta": "Compensation",
+   "actual": "1,137",
+   "anterior": "4,497",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1205,
+   "etiqueta": "Sponsorship and other Commercial Activities",
+   "actual": "21,544",
+   "anterior": "9,463",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1206,
+   "etiqueta": "",
+   "actual": "182,325",
+   "anterior": "71,589",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1216,
+   "etiqueta": "Auditors' remuneration for audit services",
+   "actual": "55",
+   "anterior": "50",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before depreciation, amortisation & impairment"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1217,
+   "etiqueta": "Auditor's remuneration for audit related assurance services",
+   "actual": "11",
+   "anterior": "10",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before depreciation, amortisation & impairment"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1218,
+   "etiqueta": "Staff costs",
+   "actual": "139,064",
+   "anterior": "90,360",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before depreciation, amortisation & impairment"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1220,
+   "etiqueta": "- Plant and machinery",
+   "actual": "263",
+   "anterior": "155",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before depreciation, amortisation & impairment"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1221,
+   "etiqueta": "- Land and buildings",
+   "actual": "2,230",
+   "anterior": "2,232",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before depreciation, amortisation & impairment"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1222,
+   "etiqueta": "",
+   "actual": "2,493",
+   "anterior": "2,387",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before depreciation, amortisation & impairment"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1223,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "8,743",
+   "anterior": "12,479",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit on disposal of players' registrations"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1224,
+   "etiqueta": "Depreciation of fixed assets",
+   "actual": "1,094",
+   "anterior": "862",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciation and amortisation"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1225,
+   "etiqueta": "Amortisation of player registrations",
+   "actual": "45,617",
+   "anterior": "31,028",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciation and amortisation"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1241,
+   "etiqueta": "Wages and salaries",
+   "actual": "121,511",
+   "anterior": "79,079",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1242,
+   "etiqueta": "Social security costs",
+   "actual": "17,129",
+   "anterior": "10,898",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1243,
+   "etiqueta": "Payments to defined contribution pension schemes",
+   "actual": "424",
+   "anterior": "383",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1244,
+   "etiqueta": "",
+   "actual": "139,064",
+   "anterior": "90,360",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 655,
+  "actual": "182,325"
+ },
+ "total_gastos": {
+  "linea": 656,
+  "actual": "(171,338)"
+ },
+ "resultado": {
+  "linea": 666,
+  "actual": "(26,615)",
+  "anterior": "(57,890)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan las filas de b7 (L1216-L1222) como detalle parcial de 'Operating expenses before depreciation, amortisation & impairment' aunque no lo desglosan completo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses before depreciation, amortisation & impairment",
+   "texto": "La nota de b7 es una lista de cargos ('stated after charging'), no un desglose exhaustivo; suma 141,623 de 171,338.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Los salarios del plantel no aparecen separados; el renglón más cercano es 'Wages and salaries' (L1241) dentro de Staff costs (b8), que incluye a todo el personal. L1219 es encabezado sin importe."
+}

@@ -1,0 +1,200 @@
+{
+ "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2020-21.md",
+ "generado": "2026-10-19T17:02:55.703Z",
+ "estado": "ok",
+ "clubId": "fulham-gb",
+ "year": 2021,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 116.111 cierra; además se suman 1 línea(s) fuera de ese total (0.146)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses before depreciation, amortisation & impairment\" no suma el renglón (116.281 contra 132.621, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: La nota b7 lista cargos seleccionados ('stated after charging', L1128), no un desglose completo de L590."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses before depreciation, amortisation & impairment",
+   "suma": 116.281,
+   "objetivo": 132.621
+  }
+ ],
+ "totales": {
+  "ingresos": 116.257,
+  "gastos": 210.637,
+  "financiero": 0.002,
+  "impuesto": 0.026,
+  "resultadoImpreso": -94.352,
+  "resultadoParaCargar": -94.352,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate Receipts",
+   "lado": "ingreso",
+   "M": 0.231,
+   "pagina": 24,
+   "linea": 1117,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Central Awards",
+   "lado": "ingreso",
+   "M": 90.504,
+   "pagina": 24,
+   "linea": 1118,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 14.413,
+   "pagina": 24,
+   "linea": 1119,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Compensation",
+   "lado": "ingreso",
+   "M": 0.025,
+   "pagina": 24,
+   "linea": 1120,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorship and other Commercial Activities",
+   "lado": "ingreso",
+   "M": 10.938,
+   "pagina": 24,
+   "linea": 1121,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 0.146,
+   "pagina": 14,
+   "linea": 595,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses before depreciation, amortisation & impairment",
+   "lado": "gasto",
+   "M": 132.621,
+   "pagina": 14,
+   "linea": 590,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "- Owned fixed assets",
+   "lado": "gasto",
+   "M": 0.658,
+   "pagina": 24,
+   "linea": 1141,
+   "origen": "nota que desglosa \"Depreciation and amortisation\""
+  },
+  {
+   "etiqueta": "Amortisation of player registrations",
+   "lado": "gasto",
+   "M": 56.452,
+   "pagina": 24,
+   "linea": 1143,
+   "origen": "nota que desglosa \"Depreciation and amortisation\""
+  },
+  {
+   "etiqueta": "Impairment",
+   "lado": "gasto",
+   "M": 20.906,
+   "pagina": 14,
+   "linea": 593,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Loss on disposal of other assets",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 14,
+   "linea": 596,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Net interest receivable",
+   "M": 0.002,
+   "linea": 598
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation on loss",
+   "M": 0.026,
+   "linea": 600
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "9d45f6b6e97fd5d721af416f4f473f47006f1899",
+  "rango": [
+   586,
+   605
+  ],
+  "lineasCargadas": [
+   1117,
+   1118,
+   1119,
+   1120,
+   1121,
+   595,
+   590,
+   1141,
+   1143,
+   593,
+   596,
+   598,
+   600
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 586 a 605 del .md):\nL587: | | Notes | 2021 £'000 | 2020 £'000 |\nL588: |---|---:|---:|---:|\nL589: | Turnover | 2 | 116,111 | 58,035 |\nL590: | Operating expenses before depreciation, amortisation & impairment | 3 | (132,621) | (91,193) |\nL591: | **Operating loss before depreciation, amortisation & impairment** | | (16,510) | (33,158) |\nL592: | Depreciation and amortisation | 3 | (57,110) | (40,656) |\nL593: | Impairment | 4 | (20,906) | (533) |\nL594: | **Operating loss after depreciation, amortisation and impairment** | | (94,526) | (74,347) |\nL595: | Profit on disposal of players' registrations | | 146 | 25,310 |\nL596: | Loss on disposal of other assets | | - | (1) |\nL597: | **Loss before interest and taxation** | | (94,380) | (49,038) |\nL598: | Net interest receivable | 7 | 2 | - |\nL599: | **Loss before taxation** | | (94,378) | (49,038) |\nL600: | Taxation on loss | 8 | 26 | 60 |\nL601: | **Loss for the year** | | (94,352) | (48,978) |\nL602: | **Total comprehensive loss for the year** | | (94,352) | (48,978) |\nL604: All amounts relate to continuing operations.\n\nLO QUE SE CARGA:\n- ingreso · \"Gate Receipts\" · 0.231 · L1117 (de una nota)\n- ingreso · \"Central Awards\" · 90.504 · L1118 (de una nota)\n- ingreso · \"Broadcasting\" · 14.413 · L1119 (de una nota)\n- ingreso · \"Compensation\" · 0.025 · L1120 (de una nota)\n- ingreso · \"Sponsorship and other Commercial Activities\" · 10.938 · L1121 (de una nota)\n- ingreso · \"Profit on disposal of players' registrations\" · 0.146 · L595\n- gasto · \"Operating expenses before depreciation, amortisation & impairment\" · 132.621 · L590\n- gasto · \"- Owned fixed assets\" · 0.658 · L1141 (de una nota)\n- gasto · \"Amortisation of player registrations\" · 56.452 · L1143 (de una nota)\n- gasto · \"Impairment\" · 20.906 · L593\n- gasto · \"Loss on disposal of other assets\" · 0 · L596\n- financiero · \"Net interest receivable\" · 0.002 · L598\n- impuesto · \"Taxation on loss\" · 0.026 · L600"
+ }
+}

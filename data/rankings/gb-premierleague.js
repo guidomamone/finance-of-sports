@@ -139,6 +139,9 @@ window.RANKINGS["gb-premierleague"] = {
       { id:"astonvilla-gb", revenue:252.515, reportType:"official_balance_sheet",
         sourceId:"astonvilla-gb-full-accounts-2020-21",
         mix:[["Comercial / Sponsors",25.765],["Estadio",0.44],["Televisión",222.766],["Otros ingresos",3.544]] },
+      { id:"fulham-gb", revenue:160.656, reportType:"official_balance_sheet",
+        sourceId:"fulham-gb-full-accounts-2020-21",
+        mix:[["Comercial / Sponsors",15.115],["Estadio",0.319],["Televisión",144.985],["Venta de Jugadores",0.202],["Otros ingresos",0.035]] },
     ],
   },
 };

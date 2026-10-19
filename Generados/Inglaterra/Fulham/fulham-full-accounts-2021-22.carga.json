@@ -1,0 +1,40 @@
+{
+ "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf",
+ "generado": "2026-10-19T15:53:05.751Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
+  },
+  {
+   "etapa": "periodo",
+   "motivo": "el nombre del archivo dice otro cierre que el contenido (2023-03-28): confirmar qué ejercicio es antes de cargarlo"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 5 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-03-28",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada",
+  "nombreNoCoincide": true
+ },
+ "clubId": "fulham-gb",
+ "year": 2022,
+ "cortadoEn": "filas"
+}

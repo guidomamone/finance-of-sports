@@ -57,6 +57,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Stake.com","marca":"Castore","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'fulham-gb': {
+    2021: {"estadio":"Craven Cottage","capacidad":19359,"sponsor":"BetVictor","marca":"Adidas","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
     2024: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
