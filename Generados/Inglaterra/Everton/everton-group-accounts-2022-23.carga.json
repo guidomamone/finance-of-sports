@@ -1,0 +1,40 @@
+{
+ "pdf": "Clubes/Inglaterra/Everton/everton-group-accounts-2022-23.pdf",
+ "generado": "2026-10-19T15:39:58.508Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2024 consolidado, 2025 consolidado"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Everton/everton-group-accounts-2022-23.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-06-30",
+  "evidencia": {
+   "pagina": 29,
+   "texto": "| | Land and Properties 30 June 2023 £'000 | Land and Properties 30 June 2022 £'000 | Other 30 June 2023 £'000 | Other 30 June 2022 £'000 | Total 30 June 2023 £'000 | Total 30 June 2022 £'000 |"
+  },
+  "confianza": "media",
+  "cierreTitulos": "2024-03-28",
+  "cierreDe": "par de encabezado (to-do 237 a + ac)",
+  "anual": "temporada"
+ },
+ "clubId": "everton-gb",
+ "year": 2023,
+ "cortadoEn": "filas"
+}

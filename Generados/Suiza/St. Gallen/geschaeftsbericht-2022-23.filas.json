@@ -1,0 +1,277 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md",
+ "mdSha1": "26052ce34d59fcd8e5de932d205aff683d3ade15",
+ "ubicacionSha1": "5e76bc707747630ad4314e990b35ad02604e3c2a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:29:19.012Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b6",
+   "b9"
+  ],
+  "notas_gastos": [
+   "b6",
+   "b9"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L284: Beträge in CHF 1’000"
+  },
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "L355: Beträge in CHF 1’000"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "L430: Beträge in CHF 1’000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 288,
+   "etiqueta": "Erträge brutto",
+   "actual": "37’470",
+   "anterior": "31’998",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 289,
+   "etiqueta": "Ertragsminderungen",
+   "actual": "-456",
+   "anterior": "-315",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 290,
+   "etiqueta": "Erträge netto",
+   "actual": "37’014",
+   "anterior": "31’683",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 291,
+   "etiqueta": "Direkte Kosten",
+   "actual": "-11’154",
+   "anterior": "-8’912",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 292,
+   "etiqueta": "Bruttoergebnis I",
+   "actual": "25’860",
+   "anterior": "22’771",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 293,
+   "etiqueta": "Personalaufwand",
+   "actual": "-17’004",
+   "anterior": "-15’459",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 294,
+   "etiqueta": "Bruttoergebnis II",
+   "actual": "8’856",
+   "anterior": "7’312",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 295,
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "actual": "-4’434",
+   "anterior": "-4’124",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 296,
+   "etiqueta": "EBITDA vor Entschädigung an FCSG AG",
+   "actual": "4’422",
+   "anterior": "3’188",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 297,
+   "etiqueta": "Entschädigung von FCSG Event AG",
+   "actual": "8’600",
+   "anterior": "9’800",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 298,
+   "etiqueta": "Entschädigung an FCSG AG",
+   "actual": "-8’600",
+   "anterior": "-9’800",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 299,
+   "etiqueta": "EBITDA",
+   "actual": "4’422",
+   "anterior": "3’188",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 300,
+   "etiqueta": "Abschreibungen Sachanlagen",
+   "actual": "-1’156",
+   "anterior": "-1’210",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 301,
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "actual": "-1’412",
+   "anterior": "-1’071",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 302,
+   "etiqueta": "EBIT",
+   "actual": "1’854",
+   "anterior": "907",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 303,
+   "etiqueta": "Finanzerfolg",
+   "actual": "-264",
+   "anterior": "-223",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 304,
+   "etiqueta": "Ausserordentlicher Ertrag",
+   "actual": "154",
+   "anterior": "986",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 305,
+   "etiqueta": "Ausserordentlicher Aufwand",
+   "actual": "-1’127",
+   "anterior": "-30",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 306,
+   "etiqueta": "Steuern",
+   "actual": "-14",
+   "anterior": "-10",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 307,
+   "etiqueta": "Jahresergebnisse",
+   "actual": "603",
+   "anterior": "1’630",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 290,
+  "actual": "37’014"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 307,
+  "actual": "603",
+  "anterior": "1’630"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los estados por sociedad de FCSG AG (b6, L359-L380) y Event AG (b9, L434-L461), ya que el estado b3 es consolidado y trae ambas columnas?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Erträge brutto",
+   "texto": "b6 y b9 son estados completos por sociedad, no notas que desglosen un renglón; sus partidas no se asignan uno a uno a Erträge brutto o Direkte Kosten del consolidado (ej. b6 incluye la Entschädigung intragrupo dentro de Erträge).",
+   "bloques": [
+    "b3",
+    "b6",
+    "b9"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se trata la Entschädigung (L297-L298) como partidas intragrupo que se netean a 0 en el consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Entschädigung von FCSG Event AG",
+   "texto": "L297 y L298 se compensan en la columna 2022/2023 (8’600 y -8’600).",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado b3 con columnas por sociedad y total; se usó la columna total 2022/2023 y 2021/2022. Total de gastos no impreso. Las notas b6/b9 son estados por sociedad, no extraídos como desglose (ver dudas)."
+}

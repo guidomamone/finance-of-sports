@@ -1,0 +1,278 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2007.pdf",
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2007.md",
+ "generado": "2026-10-19T15:34:56.397Z",
+ "estado": "cola",
+ "clubId": "basel-ch",
+ "year": 2007,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "029d9fe",
+  "c48abee",
+  "7f97724"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "48.9356 = 48.9356",
+   "suma": 48.93559977999999,
+   "impreso": 48.93559978
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "48.840477 = 48.840477",
+   "suma": 48.84047668,
+   "impreso": 48.840476679999995
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 1.2045919817182948e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2008",
+   "ok": true,
+   "detalle": "ingresos de 2007: 48.9356 en este documento y 48.9356 en geschaeftsbericht-2008.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2006",
+   "ok": false,
+   "detalle": "ingresos de 2006: 0.675549 en geschaeftsbericht-2006.pdf y 51.358822 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2006: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "escalón \"subtotal repetido\": \"Total Ertrag\" (L385) es la suma de las filas de arriba (con su subtotal); se saltea",
+  "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
+  "la lectura base no cerraba; cerró con la lectura 4"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 48.9356,
+  "gastos": 48.840477,
+  "financiero": 0.227864,
+  "impuesto": 0.0415,
+  "resultadoImpreso": 0.125658,
+  "resultadoParaCargar": 0.125658,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "aus Meisterschaft",
+   "lado": "ingreso",
+   "M": 12.173933,
+   "pagina": 17,
+   "linea": 373,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "aus UEFA-Spielen",
+   "lado": "ingreso",
+   "M": 1.788002,
+   "pagina": 17,
+   "linea": 374,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "aus Cup-Spielen",
+   "lado": "ingreso",
+   "M": 1.049151,
+   "pagina": 17,
+   "linea": 375,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "aus übrigen Spielen",
+   "lado": "ingreso",
+   "M": 0.017435,
+   "pagina": 17,
+   "linea": 376,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "Business Seats",
+   "lado": "ingreso",
+   "M": 5.705741,
+   "pagina": 17,
+   "linea": 377,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sponsoring, Werbung",
+   "lado": "ingreso",
+   "M": 6.936289,
+   "pagina": 17,
+   "linea": 378,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transferertrag",
+   "lado": "ingreso",
+   "M": 16.018194,
+   "pagina": 17,
+   "linea": 379,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "TV-Entschädigungen",
+   "lado": "ingreso",
+   "M": 1.833054,
+   "pagina": 17,
+   "linea": 380,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Merchandising, Licensing",
+   "lado": "ingreso",
+   "M": 0.638641,
+   "pagina": 17,
+   "linea": 381,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Verbandseinnahmen",
+   "lado": "ingreso",
+   "M": 1.276164,
+   "pagina": 17,
+   "linea": 382,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Einnahmen Leistungsfussball Nachwuchs",
+   "lado": "ingreso",
+   "M": 0.571336,
+   "pagina": 17,
+   "linea": 383,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Diverses",
+   "lado": "ingreso",
+   "M": 0.927661,
+   "pagina": 17,
+   "linea": 384,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Personalaufwand",
+   "lado": "gasto",
+   "M": 25.391064,
+   "pagina": 17,
+   "linea": 389,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Organisationskosten Heimspiele",
+   "lado": "gasto",
+   "M": 9.219055,
+   "pagina": 17,
+   "linea": 390,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übriger Spielbetrieb",
+   "lado": "gasto",
+   "M": 1.973015,
+   "pagina": 17,
+   "linea": 391,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transferaufwand",
+   "lado": "gasto",
+   "M": 7.031435,
+   "pagina": 17,
+   "linea": 392,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Werbung",
+   "lado": "gasto",
+   "M": 1.430496,
+   "pagina": 17,
+   "linea": 393,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administration",
+   "lado": "gasto",
+   "M": 1.51643,
+   "pagina": 17,
+   "linea": 394,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen",
+   "lado": "gasto",
+   "M": 0.161847,
+   "pagina": 17,
+   "linea": 395,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwand Leistungsfussball Nachwuchs",
+   "lado": "gasto",
+   "M": 1.024981,
+   "pagina": 17,
+   "linea": 396,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übriger Aufwand",
+   "lado": "gasto",
+   "M": 1.092154,
+   "pagina": 17,
+   "linea": 397,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzertrag",
+   "M": 0.14995,
+   "linea": 400
+  },
+  {
+   "etiqueta": "Finanzaufwand",
+   "M": -0.077915,
+   "linea": 401
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern",
+   "M": -0.0415,
+   "linea": 403
+  }
+ ]
+}

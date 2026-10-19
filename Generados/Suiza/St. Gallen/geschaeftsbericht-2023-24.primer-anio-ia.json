@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.md",
+ "clave": "7a9e25d5fd5ff05bc1cf129d07552c2637f8c50a",
+ "generado": "2026-10-19T15:35:29.417Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre la columna 2023/2024 (FCSG AG + Event AG) sin problemas. Las aperturas por nota suman exactamente a cada renglón: ingresos brutos 13.059 + 26.133 = 39.192; Ertragsminderungen 0.006 − 0.369 = −0.363; costos directos 4.842 + 7.763 = 12.605; también cuadran personal, otros gastos operativos, amortizaciones e ingresos extraordinarios. La compensación intercompañía figura como ingreso y como gasto por 9.975 porque ambos son renglones del estado, y se neutralizan. No se cargan subtotales: Bruttoergebnis, EBITDA y EBIT quedan fuera."
+ }
+}

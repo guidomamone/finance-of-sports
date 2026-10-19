@@ -1,0 +1,230 @@
+{
+  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2008.md",
+  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2008.pdf",
+  "club": "basel-ch",
+  "year": 2008,
+  "generatedAt": "2026-10-19T15:34:56.550Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "aus Meisterschaft",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        12.033227
+      ],
+      "glosa": "Ingresos por partidos de liga"
+    },
+    {
+      "label": "aus UEFA-Spielen",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        10.271086
+      ],
+      "glosa": "Ingresos por partidos de la UEFA"
+    },
+    {
+      "label": "aus Cup-Spielen",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.745552
+      ],
+      "glosa": "Ingresos por partidos de copa"
+    },
+    {
+      "label": "aus übrigen Spielen",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.118555
+      ],
+      "glosa": "Ingresos por otros partidos"
+    },
+    {
+      "label": "Business Seats",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        5.588208
+      ],
+      "glosa": "Asientos VIP"
+    },
+    {
+      "label": "Sponsoring, Werbung",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        7.65168
+      ],
+      "glosa": "Patrocinio y publicidad"
+    },
+    {
+      "label": "Transferertrag",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        9.02103
+      ],
+      "glosa": "Ingresos por traspasos"
+    },
+    {
+      "label": "TV-Entschädigungen",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        2.216772
+      ],
+      "glosa": "Derechos de televisión"
+    },
+    {
+      "label": "Merchandising, Licensing",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.517056
+      ],
+      "glosa": "Merchandising y licencias"
+    },
+    {
+      "label": "Verbandseinnahmen",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        10.274204
+      ],
+      "glosa": "Ingresos federativos"
+    },
+    {
+      "label": "Einnahmen Leistungsfussball Nachwuchs",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.704636
+      ],
+      "glosa": "Ingresos del fútbol formativo"
+    },
+    {
+      "label": "Diverses",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        1.420357
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Ausserordentlicher Ertrag",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.0268
+      ],
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Personalaufwand",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        27.354401
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Organisationskosten Heimspiele",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        10.589909
+      ],
+      "glosa": "Gastos de organización de partidos como local"
+    },
+    {
+      "label": "Übriger Spielbetrieb",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        2.640133
+      ],
+      "glosa": "Otros gastos de partidos"
+    },
+    {
+      "label": "Transferaufwand",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        10.957438
+      ],
+      "glosa": "Gastos por traspasos"
+    },
+    {
+      "label": "Werbung",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        1.919426
+      ],
+      "glosa": "Gastos de publicidad"
+    },
+    {
+      "label": "Administration",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        3.679723
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Abschreibungen",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.094776
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Aufwand Leistungsfussball Nachwuchs",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        1.174284
+      ],
+      "glosa": "Gastos del fútbol formativo"
+    },
+    {
+      "label": "Übriger Aufwand",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.702752
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.pdf",
+ "generado": "2026-10-19T15:39:57.421Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
+  },
+  {
+   "etapa": "periodo",
+   "motivo": "el documento cubre un período otro de 13 meses al 2024-06-30: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [
+  "el documento cierra 2024-05-31 (ejercicio desde el 06-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "otro",
+  "meses": 13,
+  "cierre": "2024-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024"
+  },
+  "confianza": "alta"
+ },
+ "clubId": "astonvilla-gb",
+ "year": 2024,
+ "cortadoEn": "filas"
+}

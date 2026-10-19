@@ -1,0 +1,330 @@
+{
+  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.md",
+  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.pdf",
+  "club": "stgallen-ch",
+  "year": 2024,
+  "generatedAt": "2026-10-19T15:34:58.546Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Erträge aus Transfers und Leihgebühren",
+      "lado": "revenue",
+      "page": 10,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        4.886
+      ],
+      "glosa": "Ingresos por traspasos y cesiones"
+    },
+    {
+      "label": "Diverse Erträge inklusive Swiss Football League",
+      "lado": "revenue",
+      "page": 10,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        5.565
+      ],
+      "glosa": "Ingresos diversos incluida la Swiss Football League"
+    },
+    {
+      "label": "Erträge aus Future Champs Ostschweiz",
+      "lado": "revenue",
+      "page": 10,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        1.389
+      ],
+      "glosa": "Ingresos de Future Champs Ostschweiz"
+    },
+    {
+      "label": "Erträge von Gönnern und Mitgliedern",
+      "lado": "revenue",
+      "page": 10,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        1.219
+      ],
+      "glosa": "Ingresos de benefactores y socios"
+    },
+    {
+      "label": "Ertrag aus Fussballspielen",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        9.168
+      ],
+      "glosa": "Ingresos por partidos de fútbol"
+    },
+    {
+      "label": "Ertrag aus Werbung und Sponsoring",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        8.544
+      ],
+      "glosa": "Ingresos por publicidad y patrocinio"
+    },
+    {
+      "label": "Ertrag aus Hospitality und Logen",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        4.916
+      ],
+      "glosa": "Ingresos por hospitalidad y palcos"
+    },
+    {
+      "label": "Ertrag aus Merchandising",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        2.094
+      ],
+      "glosa": "Ingresos por merchandising"
+    },
+    {
+      "label": "Ertrag aus Drittveranstaltungen",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        0.076
+      ],
+      "glosa": "Ingresos por eventos de terceros"
+    },
+    {
+      "label": "Ertrag aus Conference Arena / Diverse Erträge",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Erträge brutto\"",
+      "values": [
+        1.335
+      ],
+      "glosa": "Ingresos por Conference Arena / Ingresos diversos"
+    },
+    {
+      "label": "Veränderung Wertberichtigungen",
+      "lado": "revenue",
+      "page": 10,
+      "section": "nota que desglosa \"Ertragsminderungen\"",
+      "values": [
+        0.006
+      ],
+      "glosa": "Variación de correcciones de valor"
+    },
+    {
+      "label": "Ertragsminderungen",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Ertragsminderungen\"",
+      "values": [
+        -0.369
+      ],
+      "glosa": "Reducciones de ingresos"
+    },
+    {
+      "label": "Entschädigung von FCSG Event AG",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        9.975
+      ],
+      "glosa": "Compensación de FCSG Event AG"
+    },
+    {
+      "label": "Ausserordentlicher Ertrag",
+      "lado": "revenue",
+      "page": 10,
+      "section": "nota que desglosa \"Ausserordentlicher Ertrag\"",
+      "values": [
+        0.753
+      ],
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Ausserordentlicher Ertrag",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Ausserordentlicher Ertrag\"",
+      "values": [
+        0.729
+      ],
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Aufwand für Spielbetrieb",
+      "lado": "expense",
+      "page": 10,
+      "section": "nota que desglosa \"Direkte Kosten\"",
+      "values": [
+        4.051
+      ],
+      "glosa": "Gastos de operaciones deportivas"
+    },
+    {
+      "label": "Aufwand für Transfers",
+      "lado": "expense",
+      "page": 10,
+      "section": "nota que desglosa \"Direkte Kosten\"",
+      "values": [
+        0.791
+      ],
+      "glosa": "Gastos por traspasos"
+    },
+    {
+      "label": "Aufwand für Spielorganisation Fussball",
+      "lado": "expense",
+      "page": 11,
+      "section": "nota que desglosa \"Direkte Kosten\"",
+      "values": [
+        3.295
+      ],
+      "glosa": "Gastos de organización de partidos de fútbol"
+    },
+    {
+      "label": "Aufwand für Catering",
+      "lado": "expense",
+      "page": 11,
+      "section": "nota que desglosa \"Direkte Kosten\"",
+      "values": [
+        2.013
+      ],
+      "glosa": "Gastos de catering"
+    },
+    {
+      "label": "Aufwand für Werbung und Sponsoring",
+      "lado": "expense",
+      "page": 11,
+      "section": "nota que desglosa \"Direkte Kosten\"",
+      "values": [
+        0.945
+      ],
+      "glosa": "Gastos de publicidad y patrocinio"
+    },
+    {
+      "label": "Aufwand für Merchandising",
+      "lado": "expense",
+      "page": 11,
+      "section": "nota que desglosa \"Direkte Kosten\"",
+      "values": [
+        1.394
+      ],
+      "glosa": "Gastos de merchandising"
+    },
+    {
+      "label": "Aufwand für Drittveranstaltungen",
+      "lado": "expense",
+      "page": 11,
+      "section": "nota que desglosa \"Direkte Kosten\"",
+      "values": [
+        0.015
+      ],
+      "glosa": "Gastos por eventos de terceros"
+    },
+    {
+      "label": "Aufwand für Conference Arena / Diverses",
+      "lado": "expense",
+      "page": 11,
+      "section": "nota que desglosa \"Direkte Kosten\"",
+      "values": [
+        0.101
+      ],
+      "glosa": "Gastos por Conference Arena / Varios"
+    },
+    {
+      "label": "Personalaufwand",
+      "lado": "expense",
+      "page": 10,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        16.223
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Personalaufwand",
+      "lado": "expense",
+      "page": 11,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        3.727
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Sonstiger Betriebsaufwand",
+      "lado": "expense",
+      "page": 10,
+      "section": "nota que desglosa \"Sonstiger Betriebsaufwand\"",
+      "values": [
+        1.376
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Sonstiger Betriebsaufwand",
+      "lado": "expense",
+      "page": 11,
+      "section": "nota que desglosa \"Sonstiger Betriebsaufwand\"",
+      "values": [
+        3.624
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Entschädigung an FCSG AG",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        9.975
+      ],
+      "glosa": "Compensación a FCSG AG"
+    },
+    {
+      "label": "Abschreibungen Sachanlagen",
+      "lado": "expense",
+      "page": 10,
+      "section": "nota que desglosa \"Abschreibungen Sachanlagen\"",
+      "values": [
+        0.09
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Abschreibungen Sachanlagen",
+      "lado": "expense",
+      "page": 11,
+      "section": "nota que desglosa \"Abschreibungen Sachanlagen\"",
+      "values": [
+        1.283
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Abschreibungen Spielerwerte",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        1.279
+      ],
+      "glosa": "Amortización del valor de jugadores"
+    },
+    {
+      "label": "Ausserordentlicher Aufwand",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Gastos extraordinarios"
+    }
+  ]
+}

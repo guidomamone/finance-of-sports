@@ -1,0 +1,109 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2020-21.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2020-21.md",
+ "mdSha1": "cb10ec21e3772043be2a9955d0266da1b9872b70",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:24:12.169Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    649,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    679,
+    689
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    691,
+    709
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    715,
+    739
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    749,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    763,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    789,
+    818
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    828,
+    850
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b4",
+  "b7"
+ ],
+ "notas_gastos": [
+  "b4",
+  "b7"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Beträge in CHF 1’000",
+ "moneda": "CHF",
+ "columna_ejercicio": "2020/2021",
+ "columna_anterior": "2019/2020",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usan las Erfolgsrechnungen individuales de FC St. Gallen AG (b4) y FC St. Gallen Event AG (b7) como desglose de los renglones del estado consolidado (b1)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Erträge brutto",
+   "texto": "El consolidado b1 es muy agregado (Erträge brutto, Direkte Kosten) y las cuentas individuales abren ingresos por tipo (Fussballspiele, Werbung, Merchandising, Transfers), pero incluyen operaciones intragrupo (Entschädigung von FC St.Gallen Event AG) que se eliminan al consolidar.",
+   "bloques": [
+    "b1",
+    "b4",
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b1 es la Erfolgsrechnung consolidada (columnas FCSG AG, Event AG y total 2020/2021; usar la columna total 2020/2021). b4 es la Erfolgsrechnung individual de FC St. Gallen AG y b7 la de FC St. Gallen Event AG; se proponen como desglose. b2/b3/b5/b6 son balances y b8 flujo de efectivo, excluidos."
+}

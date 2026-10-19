@@ -1,0 +1,237 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf",
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
+ "mdSha1": "1a08b12877c3c3aaff58b0dddefc0585ff53edd5",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:15:29.997Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 12,
+   "lineas": [
+    168,
+    184
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    186,
+    200
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    208,
+    223
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    233,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    274,
+    279
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    375,
+    379
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    389,
+    394
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 22,
+   "lineas": [
+    511,
+    520
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 23,
+   "lineas": [
+    534,
+    543
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 26,
+   "lineas": [
+    607,
+    614
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    618,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 27,
+   "lineas": [
+    633,
+    662
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 28,
+   "lineas": [
+    670,
+    701
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 30,
+   "lineas": [
+    758,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 30,
+   "lineas": [
+    767,
+    773
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 31,
+   "lineas": [
+    789,
+    796
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 31,
+   "lineas": [
+    798,
+    799
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 31,
+   "lineas": [
+    801,
+    804
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 32,
+   "lineas": [
+    812,
+    825
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 32,
+   "lineas": [
+    829,
+    832
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 33,
+   "lineas": [
+    844,
+    870
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 34,
+   "lineas": [
+    886,
+    889
+   ],
+   "tipo": "texto"
+  },
+  "b23": {
+   "pagina": 34,
+   "lineas": [
+    898,
+    901
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3",
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b9"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de b4: '1.1.2005–31.12.2005 CHF' (importes en CHF con centavos, p.ej. CHF 7 835 065.30)",
+ "moneda": "CHF",
+ "columna_ejercicio": "1.1.2005–31.12.2005",
+ "columna_anterior": "1.7.2003–31.12.2004",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan como desglose los cuadros de la Juniorenabteilung (b10 ingresos, b11 gastos) aunque no abren un renglón explícito de la Erfolgsrechnung?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Son cifras de una sección (juniors) que cruzan varias líneas del estado, no desglosan un renglón concreto.",
+   "bloques": [
+    "b10",
+    "b11"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El cuadro b9 de Organisationskosten Heimspiele tiene la columna 2005 con total 7 835 065.30 igual al renglón del estado?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Organisationskosten Heimspiele",
+   "texto": "El encabezado ordena 2004 | 2005 y el título habla de costos por espectador; hay que verificar que sean importes totales y no por espectador.",
+   "bloques": [
+    "b9",
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados en b3 (ingresos) y b4 (gastos y resultado). Año anterior es un ejercicio largo de 18 meses (1.7.2003–31.12.2004). Solo cuentas individuales del FC Basel."
+}

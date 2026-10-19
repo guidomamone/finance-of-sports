@@ -1,0 +1,57 @@
+{
+ "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.pdf",
+ "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.md",
+ "mdSha1": "3e412ddf4a06cb3c3211f6c590cd78998c046b65",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:33:35.326Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    154,
+    170
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    182,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    207,
+    224
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    237,
+    267
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos con detalle a la unidad (12.460.577); no hay indicación de miles.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2022/2023",
+ "columna_anterior": "2021/2022",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados consolidado (Geconsolideerde winst- en verliesrekening 01-07-2022 a 30-06-2023) en b3. El documento no trae notas que desglosen ingresos o gastos; b1/b2 son balance y b4 flujo de efectivo."
+}

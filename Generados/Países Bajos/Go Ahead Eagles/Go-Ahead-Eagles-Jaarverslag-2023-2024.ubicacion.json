@@ -1,0 +1,97 @@
+{
+ "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2023-2024.pdf",
+ "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2023-2024.md",
+ "mdSha1": "a837ed58baa7a824356089233a875c6a3f544dd5",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:34:20.844Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    25,
+    33
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    210,
+    220
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    224,
+    229
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    233,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    242,
+    244
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    255,
+    277
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    282,
+    295
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    305,
+    322
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    370,
+    401
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "El estado b8 imprime importes completos en euros (ej. Netto-omzet 13.976.372); la indicación 'bedrag in EUR x 1.000' corresponde solo a los kerncijfers (b2).",
+ "moneda": "EUR",
+ "columna_ejercicio": "2023/2024",
+ "columna_anterior": "2022/2023",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Se elige la 'Geconsolideerde winst- en verliesrekening' (b8, pág. 13). No hay notas de desglose en el índice. b2 es un resumen de cifras clave en miles (se excluye); b3/b9 son flujo de efectivo; b4, b6 y b7 son balance. No aparece estado individual."
+}

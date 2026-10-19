@@ -1,0 +1,128 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md",
+ "mdSha1": "26052ce34d59fcd8e5de932d205aff683d3ade15",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:27:39.400Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 16,
+   "lineas": [
+    243,
+    255
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 16,
+   "lineas": [
+    257,
+    276
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 17,
+   "lineas": [
+    286,
+    307
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 18,
+   "lineas": [
+    317,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 18,
+   "lineas": [
+    329,
+    347
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    357,
+    380
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    390,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 20,
+   "lineas": [
+    403,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    432,
+    461
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b9"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b9"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Beträge in CHF 1’000",
+ "moneda": "CHF",
+ "columna_ejercicio": "2022/2023",
+ "columna_anterior": "2021/2022",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usan las Erfolgsrechnungen individuales de FC St. Gallen AG (b6) y Event AG (b9) como desglose de los renglones de la consolidada (b3), que solo tiene 'Erträge brutto' agregados?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Erträge brutto",
+   "texto": "b3 consolidada abre por sociedad (FCSG AG / Event AG) pero con pocos renglones; b6 y b9 detallan ingresos y gastos de cada sociedad, aunque pueden incluir operaciones intragrupo (p.ej. 'Entschädigung von FC St.Gallen Event AG').",
+   "bloques": [
+    "b3",
+    "b6",
+    "b9"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se excluye de la carga el renglón 'Entschädigung von FC St.Gallen Event AG' de b6 por ser intragrupo y eliminarse en la consolidación?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Entschädigung von FC St.Gallen Event AG",
+   "texto": "Es un ingreso de FCSG AG pagado por Event AG que no forma parte de los ingresos consolidados.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b3 es la Erfolgsrechnung consolidada (columnas por sociedad FCSG AG y Event AG más total 2022/2023 y 2021/2022). b6 es la Erfolgsrechnung individual de FC St. Gallen AG y b9 la de FC St. Gallen Event AG; se eligen como desglose de la consolidada. b1, b2, b4, b5, b7, b8 son balances, se excluyen. Columna del ejercicio: total 2022/2023."
+}

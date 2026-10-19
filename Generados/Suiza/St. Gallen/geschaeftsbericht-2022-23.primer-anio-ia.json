@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md",
+ "clave": "2f5b9f800ab830ce6d5b1d9ad99a12efcdb0580c",
+ "generado": "2026-10-19T15:35:22.170Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Carga completa y consistente para 2022/2023 (columna total). Las compensaciones intercompañía L297/L298 se netean en cero y no corresponden. Ertragsminderungen se carga como ingreso negativo, equivalente a su deducción. Los subtotales (Erträge netto, Bruttoergebnis I/II, EBITDA, EBIT) quedaron correctamente excluidos. Resultado: 603 miles = 0,603 millones, coincide."
+ }
+}

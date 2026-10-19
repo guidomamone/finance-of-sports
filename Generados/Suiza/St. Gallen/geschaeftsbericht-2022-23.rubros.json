@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md",
+  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.pdf",
+  "club": "stgallen-ch",
+  "year": 2023,
+  "generatedAt": "2026-10-19T15:34:58.282Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Erträge brutto",
+      "lado": "revenue",
+      "page": 17,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        37.47
+      ],
+      "glosa": "Ingresos brutos"
+    },
+    {
+      "label": "Ertragsminderungen",
+      "lado": "revenue",
+      "page": 17,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        -0.456
+      ],
+      "glosa": "Deducciones sobre ingresos"
+    },
+    {
+      "label": "Ausserordentlicher Ertrag",
+      "lado": "revenue",
+      "page": 17,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.154
+      ],
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Direkte Kosten",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        11.154
+      ],
+      "glosa": "Costes directos"
+    },
+    {
+      "label": "Personalaufwand",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        17.004
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Sonstiger Betriebsaufwand",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.434
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Abschreibungen Sachanlagen",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.156
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Abschreibungen Spielerwerte",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.412
+      ],
+      "glosa": "Amortización de derechos federativos"
+    },
+    {
+      "label": "Ausserordentlicher Aufwand",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.127
+      ],
+      "glosa": "Gastos extraordinarios"
+    }
+  ]
+}

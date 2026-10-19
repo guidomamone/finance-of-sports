@@ -1,0 +1,37 @@
+{
+ "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2020-21.pdf",
+ "generado": "2026-10-19T15:39:58.592Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "perimetro-en-cola",
+   "motivo": "el perímetro espera respuesta en la cola humana (node tools/cola.mjs); propuesta: individual"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2020-21.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "fulham-gb",
+ "year": 2021,
+ "cortadoEn": "filas"
+}

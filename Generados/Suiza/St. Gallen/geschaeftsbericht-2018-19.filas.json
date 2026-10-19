@@ -1,0 +1,283 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.md",
+ "mdSha1": "e2c02c9c24791313ecaba064284b8ce97ae8c1d3",
+ "ubicacionSha1": "a0e35f75bd77badac47598fa3104ef655decf305",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:21:58.041Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [
+   "b4",
+   "b7"
+  ],
+  "notas_gastos": [
+   "b4",
+   "b7"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L316: Beträge in CHF 1’000"
+  },
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L386: Beträge in CHF 1’000"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L464: Beträge in CHF 1’000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 320,
+   "etiqueta": "Erträge brutto",
+   "actual": "28’001",
+   "anterior": "32’277",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 321,
+   "etiqueta": "Entschädigung von FCSG Event AG",
+   "actual": "6’405",
+   "anterior": "3’965",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 322,
+   "etiqueta": "Ertragsminderungen",
+   "actual": "-304",
+   "anterior": "-1’392",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 323,
+   "etiqueta": "Direkte Kosten",
+   "actual": "-8’165",
+   "anterior": "-8’285",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 324,
+   "etiqueta": "Bruttoergebnis I",
+   "actual": "25’937",
+   "anterior": "26’565",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 325,
+   "etiqueta": "Personalaufwand",
+   "actual": "-14’747",
+   "anterior": "-17’013",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 326,
+   "etiqueta": "Bruttoergebnis II",
+   "actual": "11’189",
+   "anterior": "9’552",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 327,
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "actual": "-4’145",
+   "anterior": "-4’266",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 328,
+   "etiqueta": "EBITDA vor Entschädigung an FCSG AG",
+   "actual": "7'044",
+   "anterior": "5'286",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 329,
+   "etiqueta": "Entschädigung an FCSG AG",
+   "actual": "-6’405",
+   "anterior": "-3’965",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 330,
+   "etiqueta": "EBITDA",
+   "actual": "639",
+   "anterior": "1’321",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 331,
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "actual": "-846",
+   "anterior": "-897",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 332,
+   "etiqueta": "Abschreibungen Sachanlagen",
+   "actual": "-1’339",
+   "anterior": "-1’302",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 333,
+   "etiqueta": "EBIT",
+   "actual": "-1’547",
+   "anterior": "-878",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 334,
+   "etiqueta": "Finanzerfolg",
+   "actual": "-67",
+   "anterior": "-82",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 335,
+   "etiqueta": "Ausserordentlicher Ertrag",
+   "actual": "713",
+   "anterior": "67",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 336,
+   "etiqueta": "Ausserordentlicher Aufwand",
+   "actual": "-160",
+   "anterior": "-880",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 337,
+   "etiqueta": "Ausserordentliche Abschreibungen",
+   "actual": "-3’999",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 338,
+   "etiqueta": "Auflösung Rückstellungen",
+   "actual": "0",
+   "anterior": "1’889",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 339,
+   "etiqueta": "Steuern",
+   "actual": "-4",
+   "anterior": "-5",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 340,
+   "etiqueta": "Jahresergebnisse",
+   "actual": "-5’063",
+   "anterior": "110",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 340,
+  "actual": "-5’063",
+  "anterior": "110"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros por sociedad de FCSG AG (b4, L390-L412) y Event AG (b7, L468-L497), usando solo el consolidado b1?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Erträge brutto",
+   "texto": "b4 y b7 son estados completos por sociedad que reproducen las columnas FCSG AG y Event AG de b1, no desgloses de un renglón; no se mapean limpiamente (ej. 'Total Erträge netto' mezcla brutos y minderungen).",
+   "bloques": [
+    "b4",
+    "b7"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan sin eliminar los 6’405 de 'Entschädigung von FCSG Event AG' (L321) y 'Entschädigung an FCSG AG' (L329), que son intercompañía y se compensan?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Entschädigung von FCSG Event AG",
+   "texto": "L321 y L329 son transacción interna entre las dos sociedades; el neto es cero pero inflan ingresos y gastos.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado b1 combina FCSG AG y Event AG; se tomó la columna 2018/2019 total. No hay total de ingresos ni de gastos impreso. b4 y b7 son estados por sociedad, no extraídos como desglose (ver dudas)."
+}

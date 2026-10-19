@@ -1,0 +1,40 @@
+{
+ "pdf": "Clubes/Inglaterra/Brentford/brentford-group-accounts-2021-22.pdf",
+ "generado": "2026-10-19T15:39:57.495Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2024 consolidado, 2025 consolidado"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Brentford/brentford-group-accounts-2021-22.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-06-30",
+  "evidencia": {
+   "pagina": 38,
+   "texto": "| The average number of employees during the year was as follows: | 30/6/22 | 30/6/21 |"
+  },
+  "confianza": "media",
+  "cierreTitulos": "2023-03-29",
+  "cierreDe": "par de encabezado (to-do 237 a + ac)",
+  "anual": "temporada"
+ },
+ "clubId": "brentford-gb",
+ "year": 2022,
+ "cortadoEn": "filas"
+}

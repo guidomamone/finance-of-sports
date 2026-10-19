@@ -1,0 +1,277 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2012.pdf",
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2012.md",
+ "generado": "2026-10-19T15:34:57.142Z",
+ "estado": "cola",
+ "clubId": "basel-ch",
+ "year": 2012,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "f2c7e18",
+  "731c315",
+  "1929f7a",
+  "4e005bd",
+  "29ab985"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Total Ertrag\" 80.037417 cierra; además se suman 12 línea(s) fuera de ese total (80.037417)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "64.886784 = 64.886784",
+   "suma": 64.88678446,
+   "impreso": 64.88678446
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 160.074834 - gastos 64.886784 ± financiero 0.214379 ± impuesto 0.944068 no da el impreso 0.027598",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2011",
+   "ok": false,
+   "detalle": "ingresos de 2011: 67.64085 en geschaeftsbericht-2011.pdf y 135.2817 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2011: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: L810 es una transferencia de ganancia a la sociedad holding, no un gasto operativo; afecta la comparabilidad del resultado del ejercicio."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 160.074834,
+  "gastos": 64.886784,
+  "financiero": 0.214379,
+  "impuesto": 0.944068,
+  "resultadoImpreso": 0.027598,
+  "resultadoParaCargar": 0.027598,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "aus Meisterschaft",
+   "lado": "ingreso",
+   "M": 12.453919,
+   "pagina": 23,
+   "linea": 779,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "aus UEFA-Spielen",
+   "lado": "ingreso",
+   "M": 5.656269,
+   "pagina": 23,
+   "linea": 780,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "aus Cup-Spielen",
+   "lado": "ingreso",
+   "M": 1.015088,
+   "pagina": 23,
+   "linea": 781,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "aus übrigen Spielen",
+   "lado": "ingreso",
+   "M": 0.019512,
+   "pagina": 23,
+   "linea": 782,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "Business Seats",
+   "lado": "ingreso",
+   "M": 5.541919,
+   "pagina": 23,
+   "linea": 783,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sponsoring, Werbung",
+   "lado": "ingreso",
+   "M": 8.795214,
+   "pagina": 23,
+   "linea": 784,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transferertrag",
+   "lado": "ingreso",
+   "M": 27.36611,
+   "pagina": 23,
+   "linea": 785,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "TV-Entschädigungen",
+   "lado": "ingreso",
+   "M": 2.203293,
+   "pagina": 23,
+   "linea": 786,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Merchandising, Licensing",
+   "lado": "ingreso",
+   "M": 3.6215,
+   "pagina": 23,
+   "linea": 787,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Verbandseinnahmen",
+   "lado": "ingreso",
+   "M": 11.147589,
+   "pagina": 23,
+   "linea": 788,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Einnahmen Leistungsfussball Nachwuchs",
+   "lado": "ingreso",
+   "M": 0.699012,
+   "pagina": 23,
+   "linea": 789,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Diverses",
+   "lado": "ingreso",
+   "M": 1.51799,
+   "pagina": 23,
+   "linea": 790,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Total Ertrag",
+   "lado": "ingreso",
+   "M": 80.037417,
+   "pagina": 23,
+   "linea": 791,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Personalaufwand",
+   "lado": "gasto",
+   "M": 33.403029,
+   "pagina": 23,
+   "linea": 795,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Organisationskosten Heimspiele",
+   "lado": "gasto",
+   "M": 10.16425,
+   "pagina": 23,
+   "linea": 796,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übriger Spielbetrieb",
+   "lado": "gasto",
+   "M": 3.553472,
+   "pagina": 23,
+   "linea": 797,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transferaufwand",
+   "lado": "gasto",
+   "M": 9.082853,
+   "pagina": 23,
+   "linea": 798,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Warenaufwand",
+   "lado": "gasto",
+   "M": 2.355266,
+   "pagina": 23,
+   "linea": 799,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Werbung",
+   "lado": "gasto",
+   "M": 2.394223,
+   "pagina": 23,
+   "linea": 800,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administration",
+   "lado": "gasto",
+   "M": 2.752404,
+   "pagina": 23,
+   "linea": 801,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen",
+   "lado": "gasto",
+   "M": 0.022948,
+   "pagina": 23,
+   "linea": 802,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwand Leistungsfussball Nachwuchs",
+   "lado": "gasto",
+   "M": 0.240139,
+   "pagina": 23,
+   "linea": 803,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übriger Aufwand",
+   "lado": "gasto",
+   "M": 0.9182,
+   "pagina": 23,
+   "linea": 804,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzertrag",
+   "M": 0.017706,
+   "linea": 807
+  },
+  {
+   "etiqueta": "Finanzaufwand",
+   "M": 0.196672,
+   "linea": 808
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern",
+   "M": 0.944068,
+   "linea": 812
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.pdf",
+ "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.md",
+ "mdSha1": "3c8890ae00dc53163aff987c319fe55d016b8404",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:33:12.089Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    104,
+    128
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    136,
+    150
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    158,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    184,
+    210
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    214,
+    217
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "No hay frase de escala; los importes se ven en euros enteros (ej. 'Stand per begin boekjaar 2.315.609' en b5).",
+ "moneda": "EUR",
+ "columna_ejercicio": "2021/2022",
+ "columna_anterior": "2020/2021",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que los importes de la 'Geconsolideerde winst- en verliesrekening' (b3) están en euros enteros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece 'x € 1.000' ni otra frase de escala; se infiere por los saldos de caja de b5 con 7 dígitos.",
+   "bloques": [
+    "b3",
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay estados consolidados (balans b1-b2, winst- en verliesrekening b3, kasstroomoverzicht b4-b5). El índice no incluye notas con desglose de ingresos o gastos. Se elige b3 como estado de resultados."
+}
