@@ -1,0 +1,17 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2012.md",
+ "generado": "2026-10-19T17:57:33.174Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "CHF 8 040 039.33",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas aportadas son notas al balance en texto (Anhang), no el balance con sus columnas; no aparece la línea de efectivo ni de deuda financiera con préstamos bancarios. Solo figuran cuentas por pagar comerciales (CHF 3 373 346.76) y una cuenta corriente con FC Basel Holding AG (CHF 13 890 008.31) que no es deuda financiera bancaria. Los importes se expresan en francos suizos completos, por eso la escala es unidades."
+}

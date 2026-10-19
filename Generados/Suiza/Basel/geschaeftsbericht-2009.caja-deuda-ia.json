@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2009.md",
+ "generado": "2026-10-19T17:57:24.394Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31.12.2009 CHF",
+ "caja": {
+  "lineas": [
+   428
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Se usó el balance de FC Basel 1893 AG (L426-L455), el club profesional. El balance no tiene préstamos ni obligaciones financieras; el pasivo solo incluye cuentas por pagar comerciales, otras deudas, periodificaciones y provisiones. La caja es 'Flüssige Mittel' (L428); 'Wertschriften' es 0 en 2009."
+}

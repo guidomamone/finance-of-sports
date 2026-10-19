@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2018.md",
+ "generado": "2026-10-19T17:57:51.975Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31.12.2018 CHF",
+ "caja": {
+  "lineas": [
+   669
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Los importes están en CHF enteros, sin indicación de miles. En el balance de FC Basel 1893 AG no hay préstamos ni deudas bancarias o financieras; solo aparecen proveedores, otras deudas, provisiones y 'Sonstige langfristige Verbindlichkeiten' (CHF 1’110), que no se identifican como deuda financiera."
+}

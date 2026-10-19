@@ -569,7 +569,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-0.332737},
       {label:'Steuern', value:-0.274679},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:6.133409,
     officialTotalRevenue:60.589164, officialTotalExpenses:59.112842, officialPAT:0.999784,
   },
   2009: {
@@ -584,7 +584,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-0.086241},
       {label:'Steuern', value:-0.113026},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:9.46188,
     officialTotalRevenue:45.486, officialTotalExpenses:55.238055, officialPAT:0.007044,
   },
   2010: {
@@ -599,7 +599,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-0.538173},
       {label:'Steuern', value:0.069044},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:10.389899,
     officialTotalRevenue:57.537401, officialTotalExpenses:56.96598, officialPAT:0.223033,
   },
   2011: {
@@ -614,7 +614,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-0.201133},
       {label:'Steuern', value:-0.046226},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:17.559504,
     officialTotalRevenue:67.64085, officialTotalExpenses:61.91756, officialPAT:5.528255,
   },
   2012: {
@@ -644,7 +644,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-0.043035},
       {label:'Steuern', value:-0.281991},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:15.371334,
     officialTotalRevenue:88.243026, officialTotalExpenses:76.607436, officialPAT:0.851788,
   },
   2014: {
@@ -659,7 +659,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-0.100126},
       {label:'Steuern', value:-0.090394},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:15.838562,
     officialTotalRevenue:105.25591, officialTotalExpenses:90.481809, officialPAT:0.197389,
   },
   2015: {
@@ -674,7 +674,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-1.209103},
       {label:'Steuern', value:-0.077798},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:15.224574,
     officialTotalRevenue:92.488643, officialTotalExpenses:79.25471, officialPAT:0.1339,
   },
   2016: {
@@ -689,7 +689,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-1.495236},
       {label:'Steuern', value:-1.67252},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:30.226945,
     officialTotalRevenue:132.291812, officialTotalExpenses:100.839094, officialPAT:5.767508,
   },
   2017: {
@@ -704,7 +704,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-1.183085},
       {label:'Steuern', value:-0.157905},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:23.018285,
     officialTotalRevenue:88.486213, officialTotalExpenses:91.671136, officialPAT:0.578371,
   },
   2018: {
@@ -719,7 +719,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-1.724989},
       {label:'Steuern', value:-0.116342},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:7.84611,
     officialTotalRevenue:97.721166, officialTotalExpenses:95.181155, officialPAT:0.23926,
   },
   2019: {
@@ -734,7 +734,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-1.091022},
       {label:'Steuern', value:-0.015838},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:12.676911,
     officialTotalRevenue:69.153363, officialTotalExpenses:86.961058, officialPAT:-0.761053,
   },
   2020: {
@@ -749,7 +749,7 @@ const baselchFiscalYearMeta = {
       {label:'Finanzaufwand', value:-0.834287},
       {label:'Steuern', value:-0.015888},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:10.593728,
     officialTotalRevenue:67.062421, officialTotalExpenses:62.144352, officialPAT:0.0488,
   },
 };

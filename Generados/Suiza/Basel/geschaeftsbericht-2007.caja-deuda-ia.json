@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2007.md",
+ "generado": "2026-10-19T17:57:18.602Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "CHF 353 481.75",
+ "caja": {
+  "lineas": [
+   269
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Las páginas son solo comentarios narrativos, sin tabla de balance. Caja del Verein: CHF 353 481.75 (L269); la AG no menciona caja en las líneas dadas. No hay préstamos ni deuda bancaria; solo cuentas por pagar comerciales, otras deudas y una cuenta corriente con el Verein (no financiera)."
+}

@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
+ "generado": "2026-10-19T17:57:12.338Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "CHF 13 725 278.55",
+ "caja": {
+  "lineas": [
+   422
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Las páginas no incluyen la tabla del balance, solo los comentarios. La caja (CHF 13 725 278.55) sale de la línea 422, que habla de 'Geldmittel'. Los comentarios sobre pasivos (Verbindlichkeiten, L442-L444) mencionan solo cuentas comerciales y otras deudas, sin préstamos financieros. Por eso marco deuda como ninguna, aunque el balance completo no está visible."
+}

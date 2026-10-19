@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2019.md",
+ "generado": "2026-10-19T17:57:55.414Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31.12.2019 CHF",
+ "caja": {
+  "lineas": [
+   660
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance de la FC Basel 1893 AG (L657-L691) está incompleto: la página termina en el Kurzfristiges Fremdkapital y falta el pasivo a largo plazo (posibles préstamos bancarios o de accionistas). En el pasivo corriente no hay deuda financiera, así que dejo la deuda vacía y sin marcar 'ninguna'. Las cifras están en CHF completos, sin indicar miles."
+}

@@ -619,3 +619,23 @@ preguntarle, aunque el escalón ya esté aprobado (memoria `no-endurecer-reglas-
 - Para reproducir un documento de otra sesión se pueden leer sus derivados (solo lectura) y copiarlos un rato al propio árbol; hay que borrarlos antes de commitear.
 - Los subagentes de esta sesión no tenían Grep ni Bash: no listan carpetas, hay que pasarles las rutas.
 - El criterio de `grossDebt` es POR CLUB: Argentinos Juniors y Unión cargan el total de "Deudas" o el Total del pasivo, no la deuda financiera angosta.
+
+---
+
+## Pipeline 5 (2026-10-19, rama `pipeline`): Basel (324 e), en curso
+
+**Hecho (commits en la rama, sin push):**
+- **A** (`5e88208ced`, `localizar.mjs`): el pedido le dice a la IA el nombre legal del club (`name` de `data/clubs.js`) y que, si hay estados de varias entidades, elija los de esa. Medido con `localizar.mjs --modelo opus` (US$ 1,40, archivos aparte `.ubicacion.opus.json`, ya borrados): Basel 2006, 2010 y 2018 pasaron del Verein a la AG; los otros 13 de Basel y el estado de los 14 documentos de otros clubes, iguales (las notas variaron ±1 o 2 bloques en PAOK, Cremonese y Vizela, ruido de la IA; lo guardado no se invalida).
+- **C** (`7b733eb509`, `datos-sitio.mjs`): `parseNumber` lee el guion largo U+2013 pegado a un dígito como menos (es el 298 k2 de Luzern). Solo 15 `.filas.json` lo traen (14 de Basel, Luzern 2022-23); ninguno cargado.
+- **B** (`e33fb4f9a4`, `vocabulario.mjs`) y **B2** (`72065f48cf`, `verificar.mjs`): `COBERTURA_PERDIDAS_RE` incluye Defizitgarantie y Gewinnüberführung/-übertrag/-abführung (filas sin lado: al resultado, fuera de ingresos y gastos); B2 lo aplica también si el año actual es 0 y solo el anterior tiene importe (Basel 2020, columna 2019). Solo Basel tiene esas etiquetas en `Generados/`. Las Defizitgarantie que el documento imprime dentro de Total Aufwand (2015, 2019) siguen como gasto (decisión de Guido).
+- Basel 2005 a 2020: los chequeos de `verificar` cierran en los 16. Cola contestada por un subagente Sonnet (perímetro individual en 2010 y 2013-2020, notas de Matcheinnahmen, Abschreibungen = depreciation, perfil sin otras secciones ni socios propios). Sin contestar: gestión (presidentes, piden `data/gestiones/ch.js`; no frenan) y el Leihaufwand 2006 (es del Verein).
+
+**Qué falta:** la carga de los 16 años (la corre la principal), caja y deuda de Basel, y después los pendientes de script: St. Gallen 298 ai y su cola (espera decisión de perímetro de Guido), 298 aj, af, z2 y g2; 323 a, c, e y f; 282 f.
+
+**Actualización (2026-10-19, tarde):**
+- Basel 2005-2020 cargado (los escribió la principal) y mergeado a main con A, B, B2, C (k2), m2, n2 y o2.
+- **298 m2** (`b3887b3fc3`, `periodo.mjs`): `fechasDe` lee "mes día de año" y, en un título, la fecha comparativa (un año antes de otra de la misma línea) no cuenta como cierre; Unión Magdalena 2025 da 2025-12-31. Medido en 3.646 .md: 31 pasan de sin cierre a leído, 2 cambian y quedan bien (Tolima 2016, U. de Chile 2014; sin cargar).
+- **298 n2** (`04465b44f0`, `alta-club.mjs`): `proponerLiga` usa mes de cierre >= 9, como el resto de las herramientas; con >= 7 la liga salía de la temporada siguiente a la que usaba `estadio-sponsor`.
+- **298 o2** (`6581ca84db`, `perimetro-senales.mjs`): un "individual" por descarte (ninguna tabla lo dice) no vota si los años cargados del club son consolidado. Medido en 988 carpetas: cambian Crystal Palace y Leeds; verdad 61/0/39 igual.
+- Basel: la categoría `Sonderabschreibungen auf Ersatzbeschaffung` es `exceptional_items` (el informe la llama ausserordentliche Aufwendungen, md 2015 L2149-2152). Caja de Basel escrita para 2008-2011 y 2013-2020; sin deuda en ningún año; 2005-2007, 2012 y 2021 sin caja.
+- Pendiente de Basel: las gestiones (no existe `data/gestiones/ch.js`; hay que crearlo y sumar 'ch' a PAISES de `js/finanzas-anios.js`).
