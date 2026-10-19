@@ -133,6 +133,11 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **Extraer con 0 filas no avisa por qué (to-do 298 s, 2026-10-19): medido, no entra.** El caso de origen (Beerschot 2019 -correction,
+  columna "Vorig boekjaar" vacía) ya no pasa: con la 298 f, periodo.mjs da el cierre 30-06-2019 sin el ajuste `cierre` y la localización toma
+  la columna del ejercicio (48 filas). Hoy ningún `.filas.json` tiene 0 filas (0 de 720); si aparece uno, la verificación no cierra y va a
+  la cola, no se carga callado. El ajuste `cierre` de ese documento sobra pero no estorba. Retomar si un lote deja un documento con 0 filas
+  (ahí: que lote.mjs lo diga con la columna y el cierre que usó localizar).
 - **La pregunta de perímetro de la carga propone mal (to-do 298 m, 2026-10-19): medido, no entra.** El ajuste del club ya es el escalón 0
   de cargar.mjs (L417): Nõmme Kalju 2022-2024 preguntaron "¿individual como 2025?" porque todavía no tenía ajuste de club; hoy cargan sin
   preguntar. Los 37 casos `perimetro` de la etapa cargar están contestados (29 ya con ajuste); en 22 de 35 la propuesta se corrigió, porque
