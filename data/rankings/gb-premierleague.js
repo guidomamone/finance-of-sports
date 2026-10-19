@@ -104,6 +104,10 @@ window.RANKINGS["gb-premierleague"] = {
     leagueSize: null,
     wiki: {"t":"2022–23 Premier League","lang":"en","at":"2026-09-30","n":20},
     clubs: [
+      { id:"arsenal-gb", revenue:591.711, reportType:"official_balance_sheet",
+        sourceId:"arsenal-gb-holdings-group-accounts-2022-23",
+        mix:[["Venta de Jugadores",13.301],["Fútbol profesional (sin desglosar por la fuente)",578.409]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"astonvilla-gb", revenue:253.489, reportType:"official_balance_sheet",
         sourceId:"astonvilla-gb-full-accounts-2022-23",
         mix:[["Comercial / Sponsors",41.139],["Estadio",23.272],["Televisión",189.078]] },
