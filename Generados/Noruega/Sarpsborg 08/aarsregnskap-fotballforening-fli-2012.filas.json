@@ -1,0 +1,386 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2012.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2012.md",
+ "mdSha1": "1f7b7b5dc2474457d41772e47b31ada00d2069bc",
+ "ubicacionSha1": "cdc96518f918bf8f27f7e497cee98ba1ce72c97d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T12:24:22.080Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b16"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L102: Beløp i: NOK"
+  },
+  {
+   "bloque": "b16",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; Sum 12 071 439 coincide con Lønnskostnad del estado (en NOK)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 106,
+   "etiqueta": "Medlemsinntekter",
+   "actual": "370 066",
+   "anterior": "236 900",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 107,
+   "etiqueta": "Billettinntekter",
+   "actual": "3 227 264",
+   "anterior": "5 054 640",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 108,
+   "etiqueta": "Andre inntekter",
+   "actual": "3 616 825",
+   "anterior": "3 248 332",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 110,
+   "etiqueta": "Andre salgsinntekter",
+   "actual": "1 833 703",
+   "anterior": "1 936 226",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 111,
+   "etiqueta": "Mediainntekter",
+   "actual": "2 628 265",
+   "anterior": "4 147 674",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 112,
+   "etiqueta": "Tilskudd",
+   "actual": "790 476",
+   "anterior": "1 488 908",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 113,
+   "etiqueta": "Reklame og sponsorinntekter",
+   "actual": "11 858 375",
+   "anterior": "11 350 791",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 114,
+   "etiqueta": "Salg/utleie spillere",
+   "actual": "2 394 200",
+   "anterior": "2 850 000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 115,
+   "etiqueta": "Sum inntekter",
+   "actual": "26 719 174",
+   "anterior": "30 313 471",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 117,
+   "etiqueta": "Trening, matriell, kurs",
+   "actual": "2 107 329",
+   "anterior": "3 426 237",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 119,
+   "etiqueta": "Reise og oppholdskostander bortekamper",
+   "actual": "1 353 564",
+   "anterior": "1 798 931",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 120,
+   "etiqueta": "Salgskostnader",
+   "actual": "664 981",
+   "anterior": "824 464",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 121,
+   "etiqueta": "Lønnskostnad",
+   "actual": "12 071 439",
+   "anterior": "11 859 319",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 122,
+   "etiqueta": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "actual": "480 690",
+   "anterior": "403 445",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 124,
+   "etiqueta": "Andre kostnader",
+   "actual": "3 898 519",
+   "anterior": "4 788 909",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 125,
+   "etiqueta": "Reklame og sponsorkostnader",
+   "actual": "3 929 984",
+   "anterior": "2 939 580",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 126,
+   "etiqueta": "Admkost",
+   "actual": "1 728 093",
+   "anterior": "2 318 654",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 127,
+   "etiqueta": "Sum kostnader",
+   "actual": "26 234 599",
+   "anterior": "28 359 537",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 128,
+   "etiqueta": "Driftsresultat",
+   "actual": "484 575",
+   "anterior": "1 953 934",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 130,
+   "etiqueta": "Annen renteinntekt",
+   "actual": "3 561",
+   "anterior": "3 510",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 132,
+   "etiqueta": "Annen finansinntekt",
+   "actual": "3 290",
+   "anterior": "1 915",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 133,
+   "etiqueta": "Sum finansinntekter",
+   "actual": "6 851",
+   "anterior": "5 425",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 134,
+   "etiqueta": "Annen rentekostnad",
+   "actual": "50 891",
+   "anterior": "17 633",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 135,
+   "etiqueta": "Annen finanskostnad",
+   "actual": "62 826",
+   "anterior": "90 416",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 136,
+   "etiqueta": "Sum finanskostnader",
+   "actual": "113 717",
+   "anterior": "108 050",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 137,
+   "etiqueta": "Netto finans",
+   "actual": "-106 867",
+   "anterior": "-102 625",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 138,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "377 709",
+   "anterior": "1 851 309",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 139,
+   "etiqueta": "Ordinært resultat etter skattekostnad",
+   "actual": "377 709",
+   "anterior": "1 851 309",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 140,
+   "etiqueta": "Årsresultat",
+   "actual": "377 709",
+   "anterior": "1 851 309",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 1232,
+   "etiqueta": "Lønn",
+   "actual": "10 875 393",
+   "anterior": "10 533 548",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1233,
+   "etiqueta": "Arbeidsgiveravgift",
+   "actual": "1 548 619",
+   "anterior": "1 532 723",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1234,
+   "etiqueta": "Pensjonskostnader",
+   "actual": "166 238",
+   "anterior": "190 156",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1235,
+   "etiqueta": "Andre relaterte ytelser",
+   "actual": "-510 353",
+   "anterior": "-386 339",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1236,
+   "etiqueta": "Sum",
+   "actual": "12 071 439",
+   "anterior": "11 859 319",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 115,
+  "actual": "26 719 174"
+ },
+ "total_gastos": {
+  "linea": 127,
+  "actual": "26 234 599"
+ },
+ "resultado": {
+  "linea": 140,
+  "actual": "377 709",
+  "anterior": "1 851 309"
+ },
+ "dudas": [],
+ "observaciones": "La etiqueta de L118-L119 está partida en dos líneas ('Reise og oppholdskostander' / 'bortekamper'); se unió en una sola fila con el importe de L119. No hay impuesto a las ganancias (resultado antes y después de impuestos iguales)."
+}

@@ -1,0 +1,262 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2022.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2022.md",
+ "generado": "2026-10-19T12:59:07.793Z",
+ "estado": "ok",
+ "clubId": "sarpsborg08-no",
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2022.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "la controlada es Prozo AS (100%, comprada en 2021), un negocio comercial aparte que no es el fútbol del club (mismo criterio que el 2025); el club es el FLI en cuentas individuales",
+   "evidencia": ".md del FLI 2022: estado individual de la asociación; Prozo AS aparece solo en el consolidado",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "106.400123 = 106.400123",
+   "suma": 106.400123,
+   "impreso": 106.400123
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "111.097661 = 111.097661",
+   "suma": 111.09766100000002,
+   "impreso": 111.09766099999999
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 0.0000010000000232324169
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 81.379642; el sitio tiene 81.379641"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2022: 106.400123 en este documento y 126.553593 en aarsregnskap-fotballforening-fli-2023.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 81.379641 en aarsregnskap-fotballforening-fli-2021.pdf y 81.379642 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b21 repite exactamente los importes de b1 en otro orden; b11 (KONSERNRESULTATREGNSKAP) y b37 parecen ser del consolidado.",
+  "duda de localizar que no afecta la carga: No hay nota que abra televisión, estadio ni cuotas; están como renglones directos del estado b1 (Billetinntekter sería estadio)."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 106.400123,
+  "gastos": 111.097661,
+  "financiero": 2.502738,
+  "impuesto": 0,
+  "resultadoImpreso": -6.293879,
+  "resultadoParaCargar": -6.293879,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Billetinntekter",
+   "lado": "ingreso",
+   "M": 5.274688,
+   "pagina": 2,
+   "linea": 116,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Medlemsinntekter",
+   "lado": "ingreso",
+   "M": 0.596241,
+   "pagina": 2,
+   "linea": 117,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Reklame- og sponsorinntekter",
+   "lado": "ingreso",
+   "M": 36.060365,
+   "pagina": 2,
+   "linea": 118,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mediainntekter",
+   "lado": "ingreso",
+   "M": 8.795337,
+   "pagina": 2,
+   "linea": 119,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salg/utleie spillere",
+   "lado": "ingreso",
+   "M": 44.756778,
+   "pagina": 2,
+   "linea": 120,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre salgsinntekter",
+   "lado": "ingreso",
+   "M": 5.510097,
+   "pagina": 2,
+   "linea": 121,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre inntekter",
+   "lado": "ingreso",
+   "M": 3.537229,
+   "pagina": 2,
+   "linea": 122,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tilskudd",
+   "lado": "ingreso",
+   "M": 1.869388,
+   "pagina": 2,
+   "linea": 123,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
+   "lado": "gasto",
+   "M": 18.048344,
+   "pagina": 2,
+   "linea": 126,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Trening, matriell, kamp kostn.",
+   "lado": "gasto",
+   "M": 6.965849,
+   "pagina": 2,
+   "linea": 127,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 43.203474,
+   "pagina": 16,
+   "linea": 721,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 6.262747,
+   "pagina": 16,
+   "linea": 722,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 0.841484,
+   "pagina": 16,
+   "linea": 723,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre ytelser",
+   "lado": "gasto",
+   "M": -0.157433,
+   "pagina": 16,
+   "linea": 724,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning av driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 6.423157,
+   "pagina": 2,
+   "linea": 129,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Reise- og oppholdskostnader bortekamper",
+   "lado": "gasto",
+   "M": 3.147705,
+   "pagina": 2,
+   "linea": 130,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre kostnader",
+   "lado": "gasto",
+   "M": 10.020042,
+   "pagina": 2,
+   "linea": 131,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Reklame- og sponsorkostnader",
+   "lado": "gasto",
+   "M": 8.044229,
+   "pagina": 2,
+   "linea": 132,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Admkost",
+   "lado": "gasto",
+   "M": 8.298063,
+   "pagina": 2,
+   "linea": 133,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.048457,
+   "linea": 137
+  },
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 0.404741,
+   "linea": 138
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": -1.254663,
+   "linea": 140
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": -0.794877,
+   "linea": 141
+  }
+ ],
+ "impuesto": []
+}

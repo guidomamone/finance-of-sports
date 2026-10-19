@@ -1,0 +1,575 @@
+{
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2017.md",
+ "generatedAt": "2026-10-19T12:43:53.693Z",
+ "rubrosHuella": "d1d8fe7b1448aedd824c13800dcfaa1bb0f5e23b",
+ "rubros": [
+  {
+   "label": "Medlemsinntekter",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Andre salgsinntekter\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reklame og sponsorinntekter",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mediainntekter",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tilskudd",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Salg/utleie spillere",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Grasrotandel",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Andre inntekter\"",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "member_dues",
+     0.1
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Supporterutstyr",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Andre salgsinntekter\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Solidaritetsmidler/UEFA",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Andre salgsinntekter\"",
+   "choice": "competition_bonus",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "competition_bonus",
+     0.91
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 1148
+  },
+  {
+   "label": "Reise og oppholdskostander bortekamper",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Salgskostnader",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Trening/materiell kostnader",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Trening, matriell, kamp kostn.\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Kiosk salg",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Andre salgsinntekter\"",
+   "choice": "other_income",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_income",
+     0.64
+    ],
+    [
+     "stadium_other",
+     0.27
+    ],
+    [
+     "sponsorship_commercial",
+     0.08
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Gaver/bidrag",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Andre inntekter\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Billetinntekter",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Avskrivning på driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cupoppgjør NFF",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Andre inntekter\"",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "competition_bonus",
+     0.94
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Kamp kostnader",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Trening, matriell, kamp kostn.\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Billettkostnader Cupfinale/event",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Trening, matriell, kamp kostn.\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Lønn",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "wages_squad",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Andre kostnader",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reklame og sponsorkostnader",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Admkost",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre relaterte ytelser / Refusjoner",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "wages_squad",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Honorar medisinsk støtteapparat",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Leiekostnader",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Utdanningsmidler/fotballisenser",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "player_amortisation",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "player_amortisation",
+     0.52
+    ],
+    [
+     "other_amortisation",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Kostnader Videresalg Invest",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "exceptional_items",
+     0.13
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Reisekostnader/kilometergodt.",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Agent/talentspeidere",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1054
+  }
+ ]
+}

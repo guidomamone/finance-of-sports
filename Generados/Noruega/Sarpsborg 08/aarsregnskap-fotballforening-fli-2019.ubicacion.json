@@ -1,0 +1,176 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.md",
+ "mdSha1": "4aa0cd1328ef916b4c4049e0cd8e87e656ed5f0c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T12:32:07.658Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    98,
+    133
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    174,
+    204
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    221,
+    226
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    232,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    242,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    385,
+    392
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    400,
+    406
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    410,
+    416
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    424,
+    428
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    432,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 9,
+   "lineas": [
+    440,
+    444
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 9,
+   "lineas": [
+    454,
+    464
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 10,
+   "lineas": [
+    472,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 10,
+   "lineas": [
+    483,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 10,
+   "lineas": [
+    497,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 10,
+   "lineas": [
+    512,
+    516
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    528,
+    531
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 11,
+   "lineas": [
+    538,
+    543
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b7"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b10",
+  "b11",
+  "b12"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Sarpsborg 08 Fotballforening en b1 (pág. 2). Las notas 1 y 2 desglosan otros ingresos y otras ventas; las notas 3, 5, 6 y 8 desglosan gastos. La nota 4 (remuneración del daglig leder) no se incluye porque es un detalle por persona."
+}

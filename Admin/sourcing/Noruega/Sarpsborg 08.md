@@ -38,3 +38,23 @@ Todos ejercicio calendario. Escaneos sin capa de texto.
 Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 3 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2023-2024; `wf-src-*`: 1 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2025.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2012 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2012.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2012`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2014 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2014.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2014`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2016 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2017 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2017.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2018 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2018.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2019 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2015 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2015`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2020.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2021.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2022.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2022`).

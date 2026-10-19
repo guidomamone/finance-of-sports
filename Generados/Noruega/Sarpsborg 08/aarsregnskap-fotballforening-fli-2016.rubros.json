@@ -1,0 +1,250 @@
+{
+  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.md",
+  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.pdf",
+  "club": "sarpsborg08-no",
+  "year": 2016,
+  "generatedAt": "2026-10-19T12:41:27.340Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Billettinntekter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        4.662565
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Medlemsinntekter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.450211
+      ],
+      "glosa": "Ingresos por cuotas de socios"
+    },
+    {
+      "label": "Cupoppgjør NFF",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Andre inntekter\"",
+      "values": [
+        0.721254
+      ],
+      "glosa": "Liquidación por torneos de Copa (NFF)"
+    },
+    {
+      "label": "Grasrotandel",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Andre inntekter\"",
+      "values": [
+        1.343766
+      ],
+      "glosa": "Fondos de lotería comunitaria (Grasrotandel)"
+    },
+    {
+      "label": "Gaver/bidrag",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Andre inntekter\"",
+      "values": [
+        1.6542
+      ],
+      "glosa": "Donaciones y aportaciones"
+    },
+    {
+      "label": "Andre inntekter",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Andre inntekter\"",
+      "values": [
+        2.037584
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Reklame og sponsorinntekter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        18.916052
+      ],
+      "glosa": "Ingresos por publicidad y patrocinio"
+    },
+    {
+      "label": "Kiosk salg",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Andre salgsinntekter\"",
+      "values": [
+        1.180533
+      ],
+      "glosa": "Ventas de quiosco"
+    },
+    {
+      "label": "Supporterutstyr",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Andre salgsinntekter\"",
+      "values": [
+        0.686372
+      ],
+      "glosa": "Artículos para aficionados (merchandising)"
+    },
+    {
+      "label": "Solidaritetsmidler",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Andre salgsinntekter\"",
+      "values": [
+        1.421302
+      ],
+      "glosa": "Mecanismos de solidaridad"
+    },
+    {
+      "label": "Andre inntekter",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Andre salgsinntekter\"",
+      "values": [
+        0.265807
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Mediainntekter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        8.284169
+      ],
+      "glosa": "Ingresos audiovisuales y de medios"
+    },
+    {
+      "label": "Tilskudd",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        2.051868
+      ],
+      "glosa": "Subvenciones y ayudas"
+    },
+    {
+      "label": "Salg/utleie spillere",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        12.740224
+      ],
+      "glosa": "Venta y cesión de jugadores"
+    },
+    {
+      "label": "Trening, matriell, kurs",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        3.900777
+      ],
+      "glosa": "Entrenamiento, material y cursos"
+    },
+    {
+      "label": "Reise og oppholdskostander bortekamper",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        1.789466
+      ],
+      "glosa": "Gastos de viaje y alojamiento en partidos como visitante"
+    },
+    {
+      "label": "Salgskostnader",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.827889
+      ],
+      "glosa": "Gastos de ventas y comercialización"
+    },
+    {
+      "label": "Lønn",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        21.636942
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        3.066585
+      ],
+      "glosa": "Seguridad social a cargo de la empresa"
+    },
+    {
+      "label": "Andre relaterte ytelser / Refusjoner",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        1.114527
+      ],
+      "glosa": "Otras retribuciones relacionadas y reembolsos"
+    },
+    {
+      "label": "Avskrivning på driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        1.014535
+      ],
+      "glosa": "Amortización de inmovilizado material e intangible"
+    },
+    {
+      "label": "Andre kostnader",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        8.698726
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Reklame og sponsorkostnader",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        5.566305
+      ],
+      "glosa": "Gastos de publicidad y patrocinio"
+    },
+    {
+      "label": "Admkost",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        4.188376
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

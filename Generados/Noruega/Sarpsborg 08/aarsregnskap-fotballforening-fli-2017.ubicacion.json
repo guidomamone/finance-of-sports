@@ -1,0 +1,180 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2017.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2017.md",
+ "mdSha1": "b9b5d6635319864a5d26b103dc7d8bb6bf37e455",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T12:29:02.828Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    98,
+    133
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    143,
+    146
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    159,
+    189
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    207,
+    211
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    219,
+    243
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    406,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    446,
+    474
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    481,
+    500
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    642,
+    648
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    652,
+    658
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    663,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    674,
+    677
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    680,
+    685
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    688,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    710,
+    714
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 19,
+   "lineas": [
+    718,
+    728
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    734,
+    738
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b9",
+  "b10"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b13",
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, resultatregnskap en formato del registro, mismas cifras)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2017",
+ "columna_anterior": "2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados de la pág. 12 (b6) y se deja afuera la versión de la pág. 2 (b1) como duplicado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Hay dos resultatregnskap de 2017 (b1 formulario del registro, b6 cuentas firmadas) que deberían tener las mismas cifras.",
+   "bloques": [
+    "b1",
+    "b6"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo cuentas individuales de la Fotballforening. b1 y b6 son el mismo estado de resultados en dos formatos; se elige b6 (cuentas firmadas, con notas referenciadas). Notas: 1 Andre inntekter (b9), 2 Andre salgsinntekter (b10), 3 Lønnskostnader (b11), 5 Trening/materiell/kamp (b13), 6 Andre kostnader (b14). Se excluyen balance, egenkapital, remuneración de dirección (b12), activo fijo y deudores."
+}

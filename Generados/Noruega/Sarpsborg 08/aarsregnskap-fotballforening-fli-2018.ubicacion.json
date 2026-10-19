@@ -1,0 +1,224 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2018.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2018.md",
+ "mdSha1": "a3ad2667153e2e8c875713cc2061a0fde95c4536",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T12:30:40.798Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    102,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    147,
+    150
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    163,
+    193
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    205,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    425,
+    458
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    465,
+    493
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    500,
+    520
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    582,
+    589
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    593,
+    599
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    603,
+    609
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    615,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    625,
+    630
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    634,
+    638
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    647,
+    657
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    661,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    674,
+    678
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    686,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 18,
+   "lineas": [
+    703,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    718,
+    723
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    737,
+    771
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 20,
+   "lineas": [
+    775,
+    779
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b8",
+  "b9"
+ ],
+ "notas_gastos": [
+  "b10",
+  "b12",
+  "b13",
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, mismo estado)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2018",
+ "columna_anterior": "2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el resultatregnskap de la pág. 12 (b5) y se deja afuera como duplicado el de la pág. 2 (b1)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Hay dos versiones del estado de resultados 2018 (b1 pág. 2 y b5 pág. 12); b5 es la que acompaña las notas.",
+   "bloques": [
+    "b1",
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se acepta cargar estas cuentas individuales de Sarpsborg 08 Fotballforening aunque el club tenga cargado perímetro consolidado en otros años?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento solo contiene las cuentas de la asociación (org. 986 400 362), sin consolidado.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento con estado individual de la forening; no hay consolidado. b1 (pág. 2) y b5 (pág. 12) son dos versiones del mismo resultatregnskap; se elige b5, que remite a las notas 1-8. b11 (remuneración del daglig leder) es por persona y queda afuera."
+}
