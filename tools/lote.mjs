@@ -373,7 +373,11 @@ for (const pdf of docs) {
     }
     if (candidato) aRetranscribir.push({ pdf, paginas: enImagen });
     estado[pdf] = candidato ? `sin estado en la transcripción; ${enImagen.length} páginas en imagen: re-transcribir (--reintentar)` : 'sin estado de resultados (queda como fuente)';
-    console.log(`  ${pdf}: ${estado[pdf]}${candidato && REINTENTAR && !EJECUTAR ? ` · Mistral ~US$ ${(0.004 * Number((spawnSync('pdfinfo', [resolve(ROOT, pdf)], { encoding: 'utf8' }).stdout.match(/Pages:\s+(\d+)/) || [])[1] || 0)).toFixed(2)} + localizar y extraer ~US$ 0,15` : ''}`);
+    // (to-do 323 a, ok de Guido 2026-10-19) el costo que se imprime por documento (Mistral + localizar y extraer) también entra en el total del ensayo: antes el total daba
+    // "~US$ 0,00" aunque cada línea decía ~0,13 + 0,15 (Fulham 2021-22: 29 páginas en imagen).
+    const costoMistral = candidato && REINTENTAR && !EJECUTAR ? 0.004 * Number((spawnSync('pdfinfo', [resolve(ROOT, pdf)], { encoding: 'utf8' }).stdout.match(/Pages:\s+(\d+)/) || [])[1] || 0) : 0;
+    if (costoMistral) usd += costoMistral + 0.15;
+    console.log(`  ${pdf}: ${estado[pdf]}${costoMistral ? ` · Mistral ~US$ ${costoMistral.toFixed(2)} + localizar y extraer ~US$ 0,15` : ''}`);
     continue;
   }
   // En el ensayo, validar y extraer TAMBIÉN van en ensayo (hasta la Versión 326 iban con ejecutar: true fijo: con localizar ya hecho, el

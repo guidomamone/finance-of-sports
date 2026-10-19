@@ -1154,3 +1154,12 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+## Gestiones
+
+Fuente de todas: las transcripciones de los Geschäftsberichte de la FC Basel (publicadas en `financeofsports.com/Clubes/Suiza/Basel/`); `data/gestiones/ch.js` lleva la URL de la transcripción que da el inicio de cada gestión. Se carga quien presidía la FC Basel 1893 AG (la sociedad que juega el fútbol profesional), no el Verein.
+- **Gigi Oeri**, desde 2006-05-09 (geschaeftsbericht-2006.md L78-79: "seit dem 9. Mai 2006 ... Präsidentin ... des Vereins und der AG"; la AG se fundó el 24-02-2006 con ella en el Verwaltungsrat, 2007 L93-95) hasta 2012-01-01 (2011 L92: las funciones presidenciales pasan a Heusler "ab Beginn des Kalenderjahres 2012"; L124: Oeri renuncia a fines de 2011).
+- **Bernhard Heusler**, 2012-01-01 (elegido el 16-01-2012 en el Verein y el 23-01-2012 en la AG; se toma el 1/1 que dice el informe) hasta 2017-06-12 (geschaeftsbericht-2017.md L203-205: asamblea extraordinaria de la AG del 12-06-2017 que designa el nuevo directorio con Burgener; el Verein lo eligió el 09-06-2017).
+- **Bernhard Burgener**, 2017-06-12 hasta 2021-05-11. La fecha final es la de la presentación del nuevo directorio (geschaeftsbericht-unternehmen-2021.md L85): ningún informe da el día exacto del traspaso a Baumgartner en la AG; no cambia ningún ejercicio (cierres del 31/12/2020 y 2021).
+- **Reto Baumgartner**, desde 2021-05-11, presidente del Verwaltungsrat de la AG (unternehmen-2021 L55, L1241-1242); David Degen es vicepresidente y accionista mayoritario (L1246-1247), no se carga como gestión porque el informe nombra un presidente. Sin fecha de fin: no hay un informe posterior en la carpeta.
+- Basel 2005 queda sin gestión: el presidente del club era Werner Edelmann (geschaeftsbericht-2005.md L69, L758), todavía sin la AG; no se cargó por falta de fecha de inicio.
