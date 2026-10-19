@@ -37,7 +37,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
-* 261: Reino Unido: 118 transcripciones validadas; sigue el lote de carga y la cola por Mistral
+* 261: Reino Unido: 118 transcripciones validadas; sigue el lote de carga y la cola por Mistral --> Finanzas 5
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 284: Fredrikstad 2012 (falta un sponsor con fuente) y Sarpsborg 2023-2024 (ya se pueden volver a correr) --> Onboarding 3
