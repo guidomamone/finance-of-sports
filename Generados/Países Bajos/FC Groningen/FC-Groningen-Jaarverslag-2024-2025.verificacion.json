@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
  "md": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.md",
- "generado": "2026-10-19T02:27:24.250Z",
+ "generado": "2026-10-19T02:47:19.264Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -31,6 +31,17 @@
    "evidencia": "De activiteiten van FC Groningen Beheer B.V. en haar dochtermaatschappijen bestaan voornamelijk uit het exploiteren van een betaald voetbalorganisatie (L1088); dochters: FC Groningen B.V. (100%), Euroborg Horeca B.V. (100%), Regionale voetbalopleiding Groningen B.V. (100%), Greenrock Holding B.V. (1",
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Boekwaarde contracten spelers",
+   "motivo": "renglón de la nota 9.8 que arma el Resultaat vergoedingssommen (4.446.617): el valor en libros de los jugadores vendidos va dentro de la venta de jugadores, no como amortización (la amortización es otra fila, nota 9.7) (subagente Sonnet, revisado por Claude 2026-10-19)",
+   "evidencia": ".md L1921",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
  "cola": [],

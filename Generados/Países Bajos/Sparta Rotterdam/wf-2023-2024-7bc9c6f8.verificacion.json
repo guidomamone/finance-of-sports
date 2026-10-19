@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf",
  "md": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.md",
- "generado": "2026-10-19T02:27:24.607Z",
+ "generado": "2026-10-19T02:47:19.323Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "spartarotterdam-nl",
  "year": 2024,
  "escala": {
   "valor": "unidades",
@@ -57,7 +57,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -67,8 +67,8 @@
  ],
  "notas": [
   "ajuste manual: fila \"Aandeel in resultaat van deelnemingen\" (financiero) 206.622 (2026-10-18, resultado de participadas (nota 23), faltaba: con él cierra el 200.363 impreso (subagente Sonnet, revisado por Claude 2026-10-18))",
-  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en wf-2023-2024-7bc9c6f8.pdf",
-  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Afschrijving op materiële vaste activa\"): aceptar, en wf-2023-2024-7bc9c6f8.pdf"
+  "duda de localizar ya contestada para el club (antes de su alta) (cuadro-duplicado, \"-\"): aceptar, en wf-2023-2024-7bc9c6f8.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (cuadro-duplicado, \"Afschrijving op materiële vaste activa\"): aceptar, en wf-2023-2024-7bc9c6f8.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

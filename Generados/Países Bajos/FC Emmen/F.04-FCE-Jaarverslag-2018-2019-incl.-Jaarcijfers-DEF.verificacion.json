@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf",
  "md": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.md",
- "generado": "2026-10-19T02:27:24.209Z",
+ "generado": "2026-10-19T02:47:19.250Z",
  "estado": "ok",
  "clubId": null,
  "year": 2019,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "el jaarverslag trae la winst-en-verliesrekening completa: la verificación cierra con el resultado impreso (831 mil) (Claude 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
