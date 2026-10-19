@@ -1,0 +1,29 @@
+{
+  "criterioPais": { "BR": "Se cargó al presidente de la diretoria executiva del Grêmio Novorizontino (la asociación que firma el balance), no a un dueño: criterio de data/gestiones/br.js, donde el club ya tiene a Genilson da Rocha Santos desde 2012-01-01." },
+  "clubes": {
+    "novorizontino-br": {
+      "gestiones": [
+        {
+          "nombre": "Alex Sandro Domingues Pereira",
+          "corto": "Alex Sandro",
+          "cargo": "Presidente",
+          "desde": "2010-03-01",
+          "hasta": "2011-12-31",
+          "fuente": "https://novohorizonte.siscam.com.br/Vereadores/Proposituras/35",
+          "confirmada": false
+        }
+      ],
+      "notas": {
+        "Alex Sandro Domingues Pereira": "Evidencia hallada: (1) el portal de proposituras de la Câmara Municipal de Novo Horizonte (siscam) lista la Moção nº 29/2010, del 16/04/2010, 'De Aplausos ao Grêmio Novorizontino, na pessoa de seu Presidente Sr Alex Sandro Domingues Pereira', y el Ofício nº 217/2010, del 20/04/2010, 'Ao Presidente do Grêmio Novorizontino, Sr. Alex Sandro D Pereira' (el listado aparece bajo las proposituras de un vereador; la URL de arriba es una de esas páginas de listado, no el documento puntual de la moción: los datos salieron de un resumen de búsqueda y no pude abrir el documento). (2) El balance 2010 lo firma como PRESIDENTE DA DIRETORIA EXECUTIVA (Clubes/Brasil/Novorizontino/balanco-2010.md:37-41) y el parecer del Conselho Fiscal es del 27/01/2011 (línea 45). Con eso queda corroborado que presidía en abril de 2010 y al cerrar y aprobar el ejercicio 2010. Pero NINGUNA fuente web da la fecha de asunción ni la de salida: desde 2010-03-01 es la fecha de fundación del club (Wikipedia/sitio del club), supuesta como inicio, y hasta 2011-12-31 es el día anterior al desde de Genilson ya cargado en br.js; ambas son inferidas, por eso confirmada:false."
+      },
+      "cubre": {},
+      "dudas": [
+        "Búsquedas hechas: WebSearch con 'Alex Sandro Domingues Pereira' + Grêmio Novorizontino presidente 2010 (varias variantes, incluso 'Alex Sandro D Pereira'); WebFetch de pt.wikipedia.org/wiki/Grêmio_Novorizontino (solo Genilson en el infobox, sin fechas; no menciona a Alex Sandro), de en.wikipedia (idem) y de gremionovorizontino.com.br/o-clube (no nombra presidentes de 2010-2012). No apareció prensa regional, ni Federação Paulista, ni Wayback con fechas de asunción o salida.",
+        "Lo único web que lo nombra como presidente son los registros de la Câmara Municipal de Novo Horizonte: Moção 29/2010 (16/04/2010) y Ofício 217/2010 (20/04/2010). Prueba que presidía en abril de 2010, no cuándo asumió ni cuándo dejó. No pude abrir los documentos individuales (el listado de siscam es de 538 mil caracteres y se trunca).",
+        "Un Ofício nº 623/2012 (06/11/2012) de la misma Câmara va 'Ao Sr. Alex Sandro D. Pereira', sin cargo: no se sabe si ya no era presidente (br.js pone a Genilson desde 2012-01-01) o si seguía vinculado al club. Conviene confirmar la fecha de traspaso a Genilson con el club.",
+        "Para confirmar las fechas: pedir al club (o a la Câmara Municipal de Novo Horizonte) el acta de fundación/elección de la diretoria de 2010 y la de 2011-2012; o buscar prensa regional de 2010-2012 (p. ej. Jornal de Novo Horizonte) con la asunción de Genilson.",
+        "Cierre 2010-12-31: queda SIN cubrir con gestión confirmada. La evidencia (moción de abril de 2010 y firma del balance) apunta a Alex Sandro, pero la regla de las instrucciones exige una fuente con las fechas."
+      ]
+    }
+  }
+}

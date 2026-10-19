@@ -1086,6 +1086,12 @@ Duda: La fecha de asunción de Genilson (2012-01-01) sale de un solo medio (ESPN
 Duda: No se pudo abrir ogol.com.br (403) ni el sitio oficial histórico del club para listas de presidentes.
 ```
 
+_segunda búsqueda (Admin/gestiones-por-pais/tanda-2026-10-19-2/resultado-3.json, 2026-10-19):_
+
+```text
+Alex Sandro Domingues Pereira sigue SIN CONFIRMAR (sin fechas de asunción ni salida). Evidencia nueva: los registros de la Câmara Municipal de Novo Horizonte (portal siscam, novohorizonte.siscam.com.br/Vereadores/Proposituras/35, listado largo que se trunca) traen la Moção 29/2010 (16-04-2010, "na pessoa de seu Presidente Sr Alex Sandro Domingues Pereira") y el Ofício 217/2010 (20-04-2010, al presidente del Grêmio Novorizontino): presidía en abril de 2010. Un Ofício 623/2012 (06-11-2012) va "Ao Sr. Alex Sandro D. Pereira" sin cargo: no se sabe si ya había dejado la presidencia. Sin Wikipedia (pt/en), sin sitio del club, sin prensa regional ni Wayback con las fechas. Para confirmar: actas de elección de la diretoria 2010 y 2011-12 (al club o a la Câmara) o prensa local de la asunción de Genilson.
+```
+
 ## Fuentes
 
 ### (general)
