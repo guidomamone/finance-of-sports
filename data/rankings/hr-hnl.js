@@ -5,6 +5,9 @@ window.RANKINGS["hr-hnl"] = {
     leagueSize: 10,
     wiki: {"t":"2024–25 Croatian Football League","lang":"en","at":"2026-10-17","n":10},
     clubs: [
+      { id:"dinamozagreb-hr", revenue:86.577, reportType:"official_balance_sheet",
+        sourceId:"dinamozagreb-hr-dinamo-2025-konsolidirano",
+        mix:[["Cuotas Sociales",1.438],["Comercial / Sponsors",13.064],["Estadio",6.828],["Televisión",1.355],["Premios por competencias",26.634],["Venta de Jugadores",34.283],["Otros ingresos",2.975]] },
       { id:"hajduksplit-hr", revenue:58.61, reportType:"official_balance_sheet",
         sourceId:"hajduksplit-hr-financijsko-izvjesce-2025",
         mix:[["Comercial / Sponsors",16.857],["Estadio",9.16],["Televisión",1.245],["Premios por competencias",2.679],["Venta de Jugadores",20.335],["Otros ingresos",8.335]] },

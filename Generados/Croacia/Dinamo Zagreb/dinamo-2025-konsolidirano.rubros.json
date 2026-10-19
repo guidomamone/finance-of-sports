@@ -2,8 +2,8 @@
   "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.md",
   "pdf": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.pdf",
   "club": "dinamozagreb-hr",
-  "year": null,
-  "generatedAt": "2026-10-19T17:09:22.373Z",
+  "year": 2025,
+  "generatedAt": "2026-10-19T17:16:36.197Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         1.490349
       ],
-      "glosa": "Ingresos por venta de entradas - Competiciones nacionales"
+      "glosa": "Ingresos por taquilla - Competiciones nacionales"
     },
     {
       "label": "Prihodi od ulaznica - UEFA klupska natjecanja",
@@ -24,7 +24,7 @@
       "values": [
         1.569733
       ],
-      "glosa": "Ingresos por venta de entradas - Competiciones de clubes de la UEFA"
+      "glosa": "Ingresos por taquilla - Competiciones de clubes de la UEFA"
     },
     {
       "label": "Prihodi od ulaznica - VIP ulaznice i hospitality",
@@ -34,7 +34,7 @@
       "values": [
         1.302857
       ],
-      "glosa": "Ingresos por venta de entradas - Entradas VIP y hospitalidad"
+      "glosa": "Ingresos por taquilla - Entradas VIP y hospitalidad"
     },
     {
       "label": "Prihodi od ulaznica - Godišnje ulaznice",
@@ -44,7 +44,7 @@
       "values": [
         1.296033
       ],
-      "glosa": "Ingresos por venta de entradas - Abonos de temporada"
+      "glosa": "Ingresos por taquilla - Abonos de temporada"
     },
     {
       "label": "Prihodi od ulaznica - Članarine",
@@ -54,7 +54,7 @@
       "values": [
         1.224303
       ],
-      "glosa": "Ingresos por venta de entradas - Cuotas de socios"
+      "glosa": "Ingresos por taquilla - Cuotas de socios"
     },
     {
       "label": "Ostali nerazvrstani prihodi od ulaznica",
@@ -64,7 +64,7 @@
       "values": [
         0.002
       ],
-      "glosa": "Otros ingresos no clasificados por venta de entradas"
+      "glosa": "Otros ingresos no clasificados por taquilla"
     },
     {
       "label": "Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)",
@@ -74,7 +74,7 @@
       "values": [
         1.775
       ],
-      "glosa": "Ingresos por patrocinio y publicidad - Patrocinador técnico (proveedor de equipamiento)"
+      "glosa": "Ingresos por patrocinio y publicidad - Proveedor técnico (fabricante de equipamiento)"
     },
     {
       "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi",
@@ -84,7 +84,7 @@
       "values": [
         0.787934
       ],
-      "glosa": "Ingresos por patrocinio y publicidad - Patrocinador principal de la equipación"
+      "glosa": "Ingresos por patrocinio y publicidad - Patrocinador principal en la equipación"
     },
     {
       "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
@@ -124,7 +124,7 @@
       "values": [
         5.302439
       ],
-      "glosa": "Ingresos comerciales - Venta de productos y merchandising"
+      "glosa": "Ingresos comerciales - Venta de productos"
     },
     {
       "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
@@ -134,7 +134,7 @@
       "values": [
         0.150624
       ],
-      "glosa": "Ingresos comerciales - Explotación de instalaciones fuera de días de partido"
+      "glosa": "Ingresos comerciales - Uso de instalaciones en días sin partido"
     },
     {
       "label": "Ostali nerazvrstani komercijalni prihodi",
@@ -154,7 +154,7 @@
       "values": [
         22.667797
       ],
-      "glosa": "Competiciones de clubes de la UEFA - Derechos de retransmisión, ingresos comerciales y premios"
+      "glosa": "Competiciones de clubes de la UEFA - derechos de retransmisión, ingresos comerciales y premios"
     },
     {
       "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
@@ -164,7 +164,7 @@
       "values": [
         0.055
       ],
-      "glosa": "Donaciones y subvenciones u otros importes de organismos de fútbol nacionales"
+      "glosa": "Donaciones y subvenciones u otros importes de organismos nacionales de fútbol"
     },
     {
       "label": "Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave",
@@ -174,7 +174,7 @@
       "values": [
         1.799225
       ],
-      "glosa": "Donaciones y subvenciones u otros importes de la administración estatal y local"
+      "glosa": "Donaciones y subvenciones u otros importes del Estado y administraciones locales"
     },
     {
       "label": "Donacije nepovezanih strana",
@@ -234,7 +234,7 @@
       "values": [
         0.002892
       ],
-      "glosa": "Ingresos por créditos derivados de litigios judiciales"
+      "glosa": "Ingresos por litigios judiciales"
     },
     {
       "label": "Naplaćena otpisana potraživanja",
@@ -244,7 +244,7 @@
       "values": [
         0.002748
       ],
-      "glosa": "Cobro de créditos fallidos dados de baja"
+      "glosa": "Recuperación de créditos dados de baja"
     },
     {
       "label": "Ostali prihodi",
@@ -254,7 +254,7 @@
       "values": [
         0.028854
       ],
-      "glosa": "Otros ingresos de explotación"
+      "glosa": "Otros ingresos"
     },
     {
       "label": "Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)",
@@ -274,7 +274,7 @@
       "values": [
         2.787851
       ],
-      "glosa": "Ingresos por traspaso de derechos de jugadores (incluidos ingresos por cesiones)"
+      "glosa": "Ingresos por enajenación de derechos federativos (incluidos ingresos por cesiones)"
     },
     {
       "label": "Troškovi prodaje robe/proizvoda - Izravni",
@@ -284,7 +284,7 @@
       "values": [
         3.36844
       ],
-      "glosa": "Coste de ventas de mercancías/productos - Directo"
+      "glosa": "Costes de venta de mercancías/productos - Directos"
     },
     {
       "label": "Troškovi prodaje robe/proizvoda - Ostali nerazvrstani",
@@ -294,7 +294,7 @@
       "values": [
         1.935026
       ],
-      "glosa": "Coste de ventas de mercancías/productos - Otros no clasificados"
+      "glosa": "Costes de venta de mercancías/productos - Otros no clasificados"
     },
     {
       "label": "Plaće igrača",
@@ -314,7 +314,7 @@
       "values": [
         1.003937
       ],
-      "glosa": "Seguridad social e impuestos a cargo de la empresa - Jugadores"
+      "glosa": "Impuestos y cargas sociales - Jugadores"
     },
     {
       "label": "Ostali nerazvrstani troškovi primanja igrača",
@@ -324,7 +324,7 @@
       "values": [
         2.416231
       ],
-      "glosa": "Otras retribuciones no clasificadas de jugadores"
+      "glosa": "Otros costes no clasificados de retribuciones a jugadores"
     },
     {
       "label": "Plaće stručnog stožera",
@@ -334,7 +334,7 @@
       "values": [
         2.062444
       ],
-      "glosa": "Sueldos y salarios del cuerpo técnico"
+      "glosa": "Sueldos del cuerpo técnico"
     },
     {
       "label": "Porezi i doprinosi - stručni stožer",
@@ -344,7 +344,7 @@
       "values": [
         0.239129
       ],
-      "glosa": "Seguridad social e impuestos a cargo de la empresa - Cuerpo técnico"
+      "glosa": "Impuestos y cargas sociales - Cuerpo técnico"
     },
     {
       "label": "Ostali nerazvrstani troškovi primanja stručnog stožera",
@@ -354,7 +354,7 @@
       "values": [
         0.837039
       ],
-      "glosa": "Otras retribuciones no clasificadas del cuerpo técnico"
+      "glosa": "Otros costes no clasificados de retribuciones al cuerpo técnico"
     },
     {
       "label": "Plaće ostalih zaposlenika",
@@ -364,7 +364,7 @@
       "values": [
         5.854144
       ],
-      "glosa": "Sueldos y salarios del resto de empleados"
+      "glosa": "Sueldos de otros empleados"
     },
     {
       "label": "Porezi i doprinosi - Ostali zaposlenici",
@@ -374,7 +374,7 @@
       "values": [
         2.256694
       ],
-      "glosa": "Seguridad social e impuestos a cargo de la empresa - Resto de empleados"
+      "glosa": "Impuestos y cargas sociales - Otros empleados"
     },
     {
       "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
@@ -384,7 +384,7 @@
       "values": [
         0.115996
       ],
-      "glosa": "Otras retribuciones no clasificadas del resto de empleados"
+      "glosa": "Otros costes no clasificados de retribuciones a otros empleados"
     },
     {
       "label": "Amortizacija dugotrajne materijalne imovine",
@@ -414,7 +414,7 @@
       "values": [
         0.530263
       ],
-      "glosa": "Gastos por activos por derecho de uso (arrendamiento operativo)"
+      "glosa": "Coste por activos por derecho de uso (arrendamiento operativo)"
     },
     {
       "label": "Troškovi utakmica",
@@ -454,7 +454,7 @@
       "values": [
         0.483343
       ],
-      "glosa": "Gastos de conservación y mantenimiento de inmuebles e instalaciones"
+      "glosa": "Gastos de inmuebles e instalaciones"
     },
     {
       "label": "Intelektualne usluge",
@@ -474,7 +474,7 @@
       "values": [
         0.76937
       ],
-      "glosa": "Gastos de viajes y desplazamientos"
+      "glosa": "Viajes y desplazamientos"
     },
     {
       "label": "Troškovi loža i reprezentacije",
@@ -494,7 +494,7 @@
       "values": [
         0.618277
       ],
-      "glosa": "Trabajo temporal y servicios eventuales"
+      "glosa": "Trabajo temporal y personal eventual"
     },
     {
       "label": "Naknade i kazne savezima",
@@ -504,7 +504,7 @@
       "values": [
         0.567305
       ],
-      "glosa": "Tasas y sanciones federativas"
+      "glosa": "Tasas y sanciones a federaciones"
     },
     {
       "label": "Energija",
@@ -514,7 +514,7 @@
       "values": [
         0.515695
       ],
-      "glosa": "Suministros energéticos"
+      "glosa": "Energía y suministros"
     },
     {
       "label": "Komunalne usluge",
@@ -554,7 +554,7 @@
       "values": [
         0.227317
       ],
-      "glosa": "Material de consumo y fungibles"
+      "glosa": "Material fungible y suministros"
     },
     {
       "label": "Članarine i kotizacije",
@@ -564,7 +564,7 @@
       "values": [
         0.144924
       ],
-      "glosa": "Cuotas de afiliación y suscripciones"
+      "glosa": "Cuotas de afiliación e inscripción"
     },
     {
       "label": "Ispravak vrijednosti potraživanja",
@@ -574,7 +574,7 @@
       "values": [
         0.1425
       ],
-      "glosa": "Pérdidas por deterioro de créditos comerciales"
+      "glosa": "Corrección valorativa por deterioro de créditos comerciales"
     },
     {
       "label": "Sitni inventar",
@@ -584,7 +584,7 @@
       "values": [
         0.114286
       ],
-      "glosa": "Material de inventario menor"
+      "glosa": "Material menor y utillaje"
     },
     {
       "label": "Financijske usluge",
@@ -634,7 +634,7 @@
       "values": [
         0.225811
       ],
-      "glosa": "Pérdidas por deterioro del inmovilizado intangible (derechos federativos de jugadores)"
+      "glosa": "Deterioro de valor del inmovilizado intangible (derechos federativos de jugadores)"
     },
     {
       "label": "Troškovi stjecanja registracija igrača (uključujući troškove ustupanja)",
@@ -654,7 +654,7 @@
       "values": [
         6.170685
       ],
-      "glosa": "Gastos no capitalizados por honorarios de agentes/intermediarios"
+      "glosa": "Costes no capitalizados de honorarios a agentes/intermediarios"
     },
     {
       "label": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",

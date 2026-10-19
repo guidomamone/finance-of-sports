@@ -5,6 +5,7 @@ window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'dinamozagreb-hr': {
     2024: {"estadio":"Maksimir","capacidad":24851,"sponsor":"Favbet","marca":"Castore","temporada":"2024–25 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378033710"},
+    2025: {"estadio":"Maksimir","capacidad":24851,"sponsor":"PSK","marca":"Castore","temporada":"2025–26 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191288"},
   },
   'gorica-hr': {
     2025: {"estadio":"ŠRC Velika Gorica","capacidad":4536,"sponsor":"Kömmerling","marca":"Alpas","temporada":"2025–26 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191288"},

@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.pdf",
  "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.md",
- "generado": "2026-10-19T17:09:35.284Z",
+ "generado": "2026-10-19T18:34:29.164Z",
  "estado": "ok",
  "clubId": "dinamozagreb-hr",
- "year": null,
+ "year": 2025,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -48,13 +48,8 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "ok": false,
+   "detalle": "la columna 2024 de este documento suma ingresos 73.690409; el sitio tiene 57.562235"
   }
  ],
  "notas": [
@@ -62,8 +57,7 @@
   "escalón \"nota exacta en la lectura 6\": \"Ostali nerazvrstani poslovni rashodi\" (L379) se abre en las 16 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: Muestra ingresos por refacturación y donaciones a la Fundación, pero no desglosa un renglón del estado.",
-  "duda de localizar que no afecta la carga: Arriba de b16 se mencionan reclasificaciones de partidas previamente presentadas (3.212.457 y 2.706.911 eura).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar que no afecta la carga: Arriba de b16 se mencionan reclasificaciones de partidas previamente presentadas (3.212.457 y 2.706.911 eura)."
  ],
  "reintentar": null,
  "reintentado": false,
@@ -643,88 +637,5 @@
    "M": -0.079177,
    "linea": 417
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "133bf51cacc06048ddac5bfc7e866a372e41b12e",
-  "rango": [
-   300,
-   421
-  ],
-  "lineasCargadas": [
-   303,
-   304,
-   305,
-   306,
-   307,
-   308,
-   310,
-   311,
-   314,
-   316,
-   319,
-   320,
-   322,
-   323,
-   325,
-   329,
-   330,
-   331,
-   1020,
-   1021,
-   1022,
-   1023,
-   1024,
-   1025,
-   1026,
-   397,
-   400,
-   350,
-   351,
-   353,
-   354,
-   355,
-   357,
-   358,
-   359,
-   361,
-   362,
-   363,
-   367,
-   369,
-   372,
-   373,
-   374,
-   375,
-   376,
-   1043,
-   1044,
-   1045,
-   1046,
-   1047,
-   1048,
-   1049,
-   1050,
-   1051,
-   1052,
-   1053,
-   1054,
-   1055,
-   1056,
-   1057,
-   1058,
-   395,
-   396,
-   399,
-   404,
-   407,
-   408,
-   410,
-   411,
-   412,
-   417
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 300 a 421 del .md):\nL300: |  (svi iznosi izraženi su u eurima) | Bilješka | 2025. | 2024.  |\nL301: | --- | --- | --- | --- |\nL302: |  PRIHODI |  |  |   |\nL303: |  Prihodi od ulaznica - Nacionalna natjecanja |  | 1.490.349 | 1.174.982  |\nL304: |  Prihodi od ulaznica - UEFA klupska natjecanja |  | 1.569.733 | 2.585.754  |\nL305: |  Prihodi od ulaznica - VIP ulaznice i hospitality |  | 1.302.857 | 630.476  |\nL306: |  Prihodi od ulaznica - Godišnje ulaznice |  | 1.296.033 | 1.356.000  |\nL307: |  Prihodi od ulaznica - Članarine |  | 1.224.303 | 888.330  |\nL308: |  Ostali nerazvrstani prihodi od ulaznica |  | 2.000 | 20.733  |\nL309: |  Prihodi od ulaznica – Ukupno |  | 6.885.275 | 6.656.275  |\nL310: |  Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme) |  | 1.775.000 | 1.107.500  |\nL311: |  Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi |  | 787.934 | 765.809  |\nL312: |  Prihod od sponzorstva i oglašavanja - Sponzor za stadion |  | - | -  |\nL313: |  Prihod od sponzorstva i oglašavanja - Reklamiranje na panoima oko terena za igru |  | - | -  |\nL314: |  Ostali nerazvrstani prihodi od sponzorstva i oglašavanja |  | 1.921.995 | 1.030.995  |\nL315: |  Prihod od sponzorstva i oglašavanja - Ukupno |  | 4.484.929 | 2.904.304  |\nL316: |  Prava emitiranja - Nacionalna natjecanja |  | 1.153.100 | 1.265.400  |\nL317: |  Prava emitiranja - Ostali nerazvrstani prihodi |  | - | -  |\nL318: |  Prihodi od prava emitiranja - Ukupno |  | 1.153.100 | 1.265.400  |\nL319: |  Komercijalni prihodi - Nacionalna natjecanja |  | 1.172.457 | 1.147.826  |\nL320: |  Komercijalni prihodi - Prodaja proizvoda |  | 5.302.439 | 4.910.570  |\nL321: |  Komercijalni prihodi od članstva (nevezano za utakmice) |  | - | -  |\nL322: |  Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica |  | 150.624 | 104.691  |\nL323: |  Ostali nerazvrstani komercijalni prihodi |  | 158.773 | 213.502  |\nL324: |  Komercijalni prihodi - Ukupno |  | 6.784.293 | 6.376.589  |\nL325: |  Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade |  | 22.667.797 | 32.430.730  |\nL326: |  Uefina klupska natjecanja - solidarne uplate |  | - | -  |\nL327: |  Uefine nagrade i solidarne uplate - nerazvrstano |  | - | -  |\nL328: |  Uefine nagrade i solidarne uplate - Ukupno |  | 22.667.797 | 32.430.730  |\nL329: |  Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela |  | 55.000 | 14.000  |\nL330: |  Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave |  | 1.799.225 | 1.766.107  |\nL331: |  Donacije nepovezanih strana |  | 318.535 | 150.000  |\nL332: |  Donacije i doprinosi povezanih strana |  | - | -  |\nL333: |  Prihodi od nenogometnih djelatnosti |  | - | -  |\nL334: |  Izvanredni prihodi |  | - | -  |\nL335: |  Ostali nerazvrstani poslovni prihodi | 5 | 359.088 | 5.995.493  |\nL336: |  Ostali poslovni prihodi - Ukupno |  | 2.531.848 | 7.925.600  |\nL337: |  Ukupno - Prihodi |  | 44.507.242 | 57.558.898  |\nL339: 10\nL341: --- pág. 11 ---\nL343: GRAĐANSKI NOGOMETNI KLUB DINAMO\nL344: KONSOLIDIRANI RAČUN DOBITI I GUBITKA\nL345: ZA GODINU KOJA JE ZAVRŠILA 31. PROSINCA 2025.\nL347: |  (svi iznosi izraženi su u eurima) | Bilješka | 2025. | 2024.  |\nL348: | --- | --- | --- | --- |\nL349: |  RASHODI |  |  |   |\nL350: |  Troškovi prodaje robe/proizvoda - Izravni |  | (3.368.440) | (2.533.174)  |\nL351: |  Troškovi prodaje robe/proizvoda - Ostali nerazvrstani |  | (1.935.026) | (2.142.345)  |\nL352: |  Troškovi prodaje/materijala – Ukupno |  | (5.303.466) | (4.675.519)  |\nL353: |  Plaće igrača |  | (22.002.777) | (23.537.198)  |\nL354: |  Porezi i doprinosi - igrači |  | (1.003.937) | (1.180.440)  |\nL355: |  Ostali nerazvrstani troškovi primanja igrača |  | (2.416.231) | (752.046)  |\nL356: |  Troškovi primanja igrača - Ukupno |  | (25.422.945) | (25.469.684)  |\nL357: |  Plaće stručnog stožera |  | (2.062.444) | (3.725.062)  |\nL358: |  Porezi i doprinosi - stručni stožer |  | (239.129) | (355.362)  |\nL359: |  Ostali nerazvrstani troškovi primanja stručnog stožera |  | (837.039) | (2.485.680)  |\nL360: |  Troškovi primanja stručnog stožera - Ukupno |  | (3.138.612) | (6.566.104)  |\nL361: |  Plaće ostalih zaposlenika |  | (5.854.144) | (4.362.589)  |\nL362: |  Porezi i doprinosi - Ostali zaposlenici |  | (2.256.694) | (1.775.763)  |\nL363: |  Ostali nerazvrstani troškovi za primanja ostalih zaposlenika |  | (115.996) | (31.079)  |\nL364: |  Trošak primanja ostalih zaposlenika - Ukupno |  | (8.226.834) | (6.169.431)  |\nL365: |  Troškovi primanja zaposlenika - Ostali / nerazvrstani |  | - | -  |\nL366: |  Ukupni troškovi primanja zaposlenika |  | (36.788.391) | (38.205.219)  |\nL367: |  Amortizacija dugotrajne materijalne imovine |  | (376.431) | (342.283)  |\nL368: |  Umanjenje vrijednosti dugotrajne materijalne imovine |  | - | -  |\nL369: |  Amortizacija ostale nematerijalne imovine (bez registracija igrača) |  | (382.958) | (298.807)  |\nL370: |  Umanjenje vrijednosti ostale nematerijalne imovine (bez registracija igrača) |  | - | -  |\nL371: |  Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača) |  | (759.389) | (641.090)  |\nL372: |  Trošak imovine s pravom korištenja (operativni najam) |  | (530.263) | (453.210)  |\nL373: |  Troškovi utakmica |  | (2.956.863) | (2.978.102)  |\nL374: |  Troškovi sponzorstva i oglašavanja |  | (465.442) | (246.727)  |\nL375: |  Troškovi komercijalnih aktivnosti |  | (237.595) | (228.826)  |\nL376: |  Troškovi imovine i objekata |  | (483.343) | (483.916)  |\nL377: |  Troškovi za nenogometne djelatnosti |  | - | -  |\nL378: |  Izvanredni troškovi |  | - | -  |\nL379: |  Ostali nerazvrstani poslovni rashodi | 6 | (7.239.348) | (6.277.313)  |\nL380: |  Ostali poslovni rashodi - Ukupno |  | (11.912.854) | (10.668.095)  |\nL381: |  Ukupno - poslovni rashodi (bez registracija igrača) |  | (54.764.100) | (54.189.923)  |\nL382: |  Poslovni rezultat (bez registracija igrača) |  | (10.256.858) | 3.368.975  |\nL384: 11\nL386: --- pág. 12 ---\nL388: GRAĐANSKI NOGOMETNI KLUB DINAMO\nL389: KONSOLIDIRANI RAČUN DOBITI I GUBITKA\nL390: ZA GODINU KOJA JE ZAVRŠILA 31. PROSINCA 2025.\nL392: |  (svi iznosi izraženi su u eurima) | Bilješka | 2025. | 2024.  |\nL393: | --- | --- | --- | --- |\nL394: |  Transferi igrača i ostalog osoblja |  |  |   |\nL395: |  Amortizacija nematerijalne imovine (registracije igrača) |  | (7.330.947) | (6.117.746)  |\nL396: |  Umanjenje vrijednosti nematerijalne imovine (registracije igrača) |  | (225.811) | -  |\nL397: |  Dobit od raspolaganja nematerijalnom imovinom (registracije igrača) |  | 26.390.456 | 12.919.054  |\nL398: |  Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača) |  | - | -  |\nL399: |  Troškovi stjecanja registracija igrača (uključujući troškove ustupanja) |  | (209.811) | (598.750)  |\nL400: |  Prihod od raspolaganja registracijama igrača (uključujući prihod od ustupanja) |  | 2.787.851 | 3.212.457  |\nL401: |  Amortizacija/umanjenje nematerijalne imovine (ostalo osoblje) |  | - | -  |\nL402: |  Dobit / gubitak od ustupanja ostalog osoblja |  | - | -  |\nL403: |  Prihod / trošak od ustupanja ostalog osoblja |  | - | -  |\nL404: |  Nekapitalizirani troškovi za naknade agentima/posrednicima |  | (6.170.685) | (3.926.553)  |\nL405: |  Troškovi nastali s povezanim stranama |  | - | -  |\nL406: |  **Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije troškova** |  | **15.241.053** | **5.488.462**  |\nL407: |  Dobit /(gubitak) od raspolaganja dugotrajnom imovinom |  | (413.322) | (154.714)  |\nL408: |  Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom |  | (909) | -  |\nL409: |  **Ukupno - dobit/(gubitak) od raspolaganja imovinom** |  | **(414.231)** | **(154.714)**  |\nL410: |  Financijski prihodi |  | 179.345 | 15.040  |\nL411: |  Financijski rashodi |  | (488.039) | (545.465)  |\nL412: |  Neto tečajne razlike/(gubici) |  | (10.703) | (2.618)  |\nL413: |  **Ukupni neto prihod/rashod od financiranja** |  | **(319.397)** | **(533.043)**  |\nL414: |  Ostali neposlovni prihodi |  | - | -  |\nL415: |  Ostali neposlovni rashodi |  | - | -  |\nL416: |  **Ukupni neposlovni prihodi/rashodi** |  | **-** | **-**  |\nL417: |  **Porezni prihod/(rashod)** | **7** | **(79.177)** | **(784.561)**  |\nL418: |  **Dobit/(gubitak) poslije oporezivanja** |  | **4.171.390** | **7.385.119**  |\nL420: 12\n\nLO QUE SE CARGA:\n- ingreso · \"Prihodi od ulaznica - Nacionalna natjecanja\" · 1.490349 · L303\n- ingreso · \"Prihodi od ulaznica - UEFA klupska natjecanja\" · 1.569733 · L304\n- ingreso · \"Prihodi od ulaznica - VIP ulaznice i hospitality\" · 1.302857 · L305\n- ingreso · \"Prihodi od ulaznica - Godišnje ulaznice\" · 1.296033 · L306\n- ingreso · \"Prihodi od ulaznica - Članarine\" · 1.224303 · L307\n- ingreso · \"Ostali nerazvrstani prihodi od ulaznica\" · 0.002 · L308\n- ingreso · \"Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)\" · 1.775 · L310\n- ingreso · \"Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi\" · 0.787934 · L311\n- ingreso · \"Ostali nerazvrstani prihodi od sponzorstva i oglašavanja\" · 1.921995 · L314\n- ingreso · \"Prava emitiranja - Nacionalna natjecanja\" · 1.1531 · L316\n- ingreso · \"Komercijalni prihodi - Nacionalna natjecanja\" · 1.172457 · L319\n- ingreso · \"Komercijalni prihodi - Prodaja proizvoda\" · 5.302439 · L320\n- ingreso · \"Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica\" · 0.150624 · L322\n- ingreso · \"Ostali nerazvrstani komercijalni prihodi\" · 0.158773 · L323\n- ingreso · \"Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade\" · 22.667797 · L325\n- ingreso · \"Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela\" · 0.055 · L329\n- ingreso · \"Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samoupra\" · 1.799225 · L330\n- ingreso · \"Donacije nepovezanih strana\" · 0.318535 · L331\n- ingreso · \"Bonovi za ručak\" · 0.16937 · L1020 (de una nota)\n- ingreso · \"Refundacije\" · 0.123366 · L1021 (de una nota)\n- ingreso · \"Dohodak u naravi\" · 0.021267 · L1022 (de una nota)\n- ingreso · \"Naknade šteta\" · 0.010591 · L1023 (de una nota)\n- ingreso · \"Prihod od potraživanja po sudskim sporovima\" · 0.002892 · L1024 (de una nota)\n- ingreso · \"Naplaćena otpisana potraživanja\" · 0.002748 · L1025 (de una nota)\n- ingreso · \"Ostali prihodi\" · 0.028854 · L1026 (de una nota)\n- ingreso · \"Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)\" · 26.390456 · L397\n- ingreso · \"Prihod od raspolaganja registracijama igrača (uključujući prihod od ustupanja)\" · 2.787851 · L400\n- gasto · \"Troškovi prodaje robe/proizvoda - Izravni\" · 3.36844 · L350\n- gasto · \"Troškovi prodaje robe/proizvoda - Ostali nerazvrstani\" · 1.935026 · L351\n- gasto · \"Plaće igrača\" · 22.002777 · L353\n- gasto · \"Porezi i doprinosi - igrači\" · 1.003937 · L354\n- gasto · \"Ostali nerazvrstani troškovi primanja igrača\" · 2.416231 · L355\n- gasto · \"Plaće stručnog stožera\" · 2.062444 · L357\n- gasto · \"Porezi i doprinosi - stručni stožer\" · 0.239129 · L358\n- gasto · \"Ostali nerazvrstani troškovi primanja stručnog stožera\" · 0.837039 · L359\n- gasto · \"Plaće ostalih zaposlenika\" · 5.854144 · L361\n- gasto · \"Porezi i doprinosi - Ostali zaposlenici\" · 2.256694 · L362\n- gasto · \"Ostali nerazvrstani troškovi za primanja ostalih zaposlenika\" · 0.115996 · L363\n- gasto · \"Amortizacija dugotrajne materijalne imovine\" · 0.376431 · L367\n- gasto · \"Amortizacija ostale nematerijalne imovine (bez registracija igrača)\" · 0.382958 · L369\n- gasto · \"Trošak imovine s pravom korištenja (operativni najam)\" · 0.530263 · L372\n- gasto · \"Troškovi utakmica\" · 2.956863 · L373\n- gasto · \"Troškovi sponzorstva i oglašavanja\" · 0.465442 · L374\n- gasto · \"Troškovi komercijalnih aktivnosti\" · 0.237595 · L375\n- gasto · \"Troškovi imovine i objekata\" · 0.483343 · L376\n- gasto · \"Intelektualne usluge\" · 1.38659 · L1043 (de una nota)\n- gasto · \"Službena putovanja\" · 0.76937 · L1044 (de una nota)\n- gasto · \"Troškovi loža i reprezentacije\" · 0.713598 · L1045 (de una nota)\n- gasto · \"Povremeni rad\" · 0.618277 · L1046 (de una nota)\n- gasto · \"Naknade i kazne savezima\" · 0.567305 · L1047 (de una nota)\n- gasto · \"Energija\" · 0.515695 · L1048 (de una nota)\n- gasto · \"Komunalne usluge\" · 0.422662 · L1049 (de una nota)\n- gasto · \"Telefon, Internet i prijevoz\" · 0.451802 · L1050 (de una nota)\n- gasto · \"Donacije\" · 0.322002 · L1051 (de una nota)\n- gasto · \"Potrošni materijal\" · 0.227317 · L1052 (de una nota)\n- gasto · \"Članarine i kotizacije\" · 0.144924 · L1053 (de una nota)\n- gasto · \"Ispravak vrijednosti potraživanja\" · 0.1425 · L1054 (de una nota)\n- gasto · \"Sitni inventar\" · 0.114286 · L1055 (de una nota)\n- gasto · \"Financijske usluge\" · 0.086907 · L1056 (de una nota)\n- gasto · \"Osiguranje\" · 0.051903 · L1057 (de una nota)\n- gasto · \"Ostali rashodi\" · 0.70421 · L1058 (de una nota)\n- gasto · \"Amortizacija nematerijalne imovine (registracije igrača)\" · 7.330947 · L395\n- gasto · \"Umanjenje vrijednosti nematerijalne imovine (registracije igrača)\" · 0.225811 · L396\n- gasto · \"Troškovi stjecanja registracija igrača (uključujući troškove ustupanja)\" · 0.209811 · L399\n- gasto · \"Nekapitalizirani troškovi za naknade agentima/posrednicima\" · 6.170685 · L404\n- gasto · \"Dobit /(gubitak) od raspolaganja dugotrajnom imovinom\" · 0.413322 · L407\n- gasto · \"Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom\" · 0.000909 · L408\n- financiero · \"Financijski prihodi\" · 0.179345 · L410\n- financiero · \"Financijski rashodi\" · -0.488039 · L411\n- financiero · \"Neto tečajne razlike/(gubici)\" · -0.010703 · L412\n- impuesto · \"Porezni prihod/(rashod)\" · -0.079177 · L417"
- }
+ ]
 }
