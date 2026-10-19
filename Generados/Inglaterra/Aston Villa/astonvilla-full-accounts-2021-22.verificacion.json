@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.md",
- "generado": "2026-10-19T16:00:18.581Z",
- "estado": "ok",
+ "generado": "2026-10-19T16:31:38.166Z",
+ "estado": "cola",
  "clubId": "astonvilla-gb",
  "year": 2022,
  "escala": {
@@ -12,7 +12,10 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "a9f77fb",
+  "e4cbd6d"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -47,20 +50,15 @@
   }
  ],
  "notas": [
-  "la nota de \"Administrative expenses\" no suma el renglón (12.171237 contra 145.805056, sumando sus renglones): quedó el renglón del estado"
+  "la nota de \"Administrative expenses\" no suma el renglón (9.371874 contra 145.805056, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): corregir no, en astonvilla-full-accounts-2020-21.pdf"
  ],
- "reintentar": [
-  {
-   "renglon": "Administrative expenses",
-   "suma": 12.171237,
-   "objetivo": 145.805056
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Administrative expenses",
-   "suma": 12.171237,
+   "suma": 9.371874,
    "objetivo": 145.805056
   }
  ],

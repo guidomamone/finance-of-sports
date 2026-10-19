@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.md",
  "mdSha1": "57ab2e724cd57a8d5e624f6a0128aa0233c9924b",
- "ubicacionSha1": "889b25e54adf6d1cebb40623e59a75f0cafe5f28",
+ "ubicacionSha1": "aff984a22633784d0ed62c53880453c40331f03b",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:12:30.952Z",
+ "generado": "2026-10-19T16:31:34.811Z",
  "ubicacion": {
   "estado": [
    "b1"
@@ -17,50 +17,44 @@
    "b6",
    "b7",
    "b8",
-   "b10",
-   "b12"
+   "b10"
   ]
  },
  "escalas": [
   {
    "bloque": "b1",
    "escala": "unidades",
-   "evidencia": "Encabezado de columnas '2022 £ | 2021 £' (L408)"
+   "evidencia": "L408: columnas '2022 £' y '2021 £'"
   },
   {
    "bloque": "b4",
    "escala": "unidades",
-   "evidencia": "Encabezado '2022 £ | 2021 £' (L712)"
+   "evidencia": "L712: '2022 £'"
   },
   {
    "bloque": "b5",
    "escala": "unidades",
-   "evidencia": "Encabezado '2022 £ | 2021 £' (L731)"
+   "evidencia": "L731: '2022 £'"
   },
   {
    "bloque": "b6",
    "escala": "unidades",
-   "evidencia": "Encabezado '2022 £ | 2021 £' (L739)"
+   "evidencia": "L739: '2022 £'"
   },
   {
    "bloque": "b7",
    "escala": "unidades",
-   "evidencia": "Encabezado '2022 £ | 2021 £' (L756)"
+   "evidencia": "L756: '2022 £'"
   },
   {
    "bloque": "b8",
    "escala": "unidades",
-   "evidencia": "Encabezado '2022 £ | 2021 £' (L766)"
+   "evidencia": "L766: '2022 £'"
   },
   {
    "bloque": "b10",
    "escala": "unidades",
-   "evidencia": "Encabezado '2022 £ | 2021 £' (L785)"
-  },
-  {
-   "bloque": "b12",
-   "escala": "unidades",
-   "evidencia": "Encabezado '2022 £ | 2021 £' (L816)"
+   "evidencia": "L785: '2022 £'"
   }
  ],
  "filas": [
@@ -215,46 +209,6 @@
    "detalla_a": "Other operating income"
   },
   {
-   "bloque": "b6",
-   "linea": 741,
-   "etiqueta": "Depreciation of tangible assets",
-   "actual": "2,711,182",
-   "anterior": "2,082,194",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": "Administrative expenses"
-  },
-  {
-   "bloque": "b6",
-   "linea": 742,
-   "etiqueta": "Profit on disposal of tangible assets",
-   "actual": "(13,463)",
-   "anterior": "(7,984)",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": "Administrative expenses"
-  },
-  {
-   "bloque": "b6",
-   "linea": 743,
-   "etiqueta": "Exchange differences",
-   "actual": "28,518",
-   "anterior": "(109,655)",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": "Administrative expenses"
-  },
-  {
-   "bloque": "b7",
-   "linea": 758,
-   "etiqueta": "Fees payable to the Company's auditors for the audit of the Company's annual financial statements",
-   "actual": "46,200",
-   "anterior": "42,000",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": "Administrative expenses"
-  },
-  {
    "bloque": "b8",
    "linea": 768,
    "etiqueta": "Wages and salaries",
@@ -293,46 +247,6 @@
    "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Administrative expenses"
-  },
-  {
-   "bloque": "b10",
-   "linea": 787,
-   "etiqueta": "Aggregate remuneration",
-   "actual": "1,074,717",
-   "anterior": "1,074,717",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": "Wages and salaries"
-  },
-  {
-   "bloque": "b12",
-   "linea": 819,
-   "etiqueta": "Current tax on profit/(loss) for the financial year",
-   "actual": "1,434,468",
-   "anterior": "(625,644)",
-   "tipo": "renglon",
-   "lado": "impuesto",
-   "detalla_a": "Tax on profit/(loss)"
-  },
-  {
-   "bloque": "b12",
-   "linea": 820,
-   "etiqueta": "Adjustments in respect of prior years",
-   "actual": "-",
-   "anterior": "4",
-   "tipo": "renglon",
-   "lado": "impuesto",
-   "detalla_a": "Tax on profit/(loss)"
-  },
-  {
-   "bloque": "b12",
-   "linea": 821,
-   "etiqueta": "Total current tax",
-   "actual": "1,434,468",
-   "anterior": "(625,640)",
-   "tipo": "subtotal",
-   "lado": "impuesto",
-   "detalla_a": "Tax on profit/(loss)"
   }
  ],
  "total_ingresos": null,
@@ -344,29 +258,29 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan las partidas de b6 (L741-L743) y b7 (L758) como desglose parcial de 'Administrative expenses' aunque son revelaciones informativas que no suman al renglón?",
+   "pregunta": "¿Se dejan afuera de la carga los cuadros informativos de b6 (L741-L743), b7 (L758) y b10 (L787) por ser cargos incluidos en 'Administrative expenses' y no un desglose completo?",
    "propuesta": "sí",
-   "tema": "otro",
+   "tema": "perimetro",
    "renglon": "Administrative expenses",
-   "texto": "b6 y b7 informan cargos incluidos en el resultado operativo sin cubrir el total de Administrative expenses; Exchange differences (L743) es financiero pero está dentro del operativo.",
+   "texto": "Son partidas sueltas 'after charging' (depreciación, honorarios auditoría, remuneración directores) que no suman el renglón y podrían duplicar gastos.",
    "bloques": [
     "b6",
-    "b7"
+    "b7",
+    "b10"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se asigna 'Aggregate remuneration' de b10 (L787) como detalle de 'Wages and salaries' de b8, ya que la nota 8 dice incluir la remuneración de directores?",
+   "pregunta": "¿Se confirma que no existe en el documento un cuadro 'Salarios del plantel' distinto de los costos de personal de b8 (L768-L771, total 9,371,874)?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Wages and salaries",
-   "texto": "L764 indica que los costos de personal incluyen la remuneración de directores, por lo que b10 sería un sub-desglose y no un gasto adicional.",
+   "renglon": "Administrative expenses",
+   "texto": "b8 muestra solo 9,4 millones de staff costs, muy bajo para un club de Premier; posiblemente es la sociedad sin el plantel, o falta otro cuadro.",
    "bloques": [
-    "b10",
     "b8"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Todos los bloques en libras (unidades). El estado no imprime total de ingresos ni de gastos. La nota 12 referida en L412 (gastos excepcionales) no está entre los bloques; b12 es la nota 11 de impuestos. Los costos de personal de b8 (9,4 M) son bajos respecto de los gastos administrativos, posiblemente porque parte del plantel está en otra entidad."
+ "observaciones": "No hay total de ingresos ni de gastos impresos en el estado. El único cuadro de salarios hallado es b8 (Wages and salaries etc.), cargado como desglose parcial de Administrative expenses. Las notas b6, b7, b10 no se cargaron por ser informativas."
 }

@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf",
- "generado": "2026-10-19T16:01:25.962Z",
+ "generado": "2026-10-19T16:38:47.280Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Loss on sale of tangible assets\" -> exceptional_items 0.55"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Salarios del plantel. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -79,9 +75,9 @@
     "amountNative": -0.005947,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -225,11 +221,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.005947,
    "cat": "exceptional_items",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)",
    "destino": "expense",
    "amountNative": -0.005947
   },
@@ -316,10 +312,9 @@
   "label": "Tipo spot del Bank of England, última rueda hábil antes del cierre (2020-05-29, 2020-05-31 no es día hábil)"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de gb 2020 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2019–20 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Aston Villa\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -358,14 +353,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de gb 2020 cacheada",
-   "estado": "pendiente"
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2019–20 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Aston Villa\"",
+   "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 4,
   "lineasGasto": 2,
   "metaFilas": 3,

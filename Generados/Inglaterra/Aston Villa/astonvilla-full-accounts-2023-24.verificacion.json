@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.md",
- "generado": "2026-10-19T16:00:18.631Z",
+ "generado": "2026-10-19T16:31:38.169Z",
  "estado": "ok",
  "clubId": "astonvilla-gb",
  "year": 2024,
@@ -31,14 +31,14 @@
    "dif": 5.684341886080802e-14
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 204.526; el sitio tiene 204.52584"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 204.52584 en astonvilla-full-accounts-2022-23.pdf y 204.526 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [],

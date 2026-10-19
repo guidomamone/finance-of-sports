@@ -48,6 +48,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Selhurst Park","capacidad":25194,"sponsor":"NET88","marca":"Macron","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'everton-gb': {
+    2022: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Cazoo","marca":"Hummel","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Stake.com","marca":"Hummel","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Stake.com","marca":"Hummel","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Stake.com","marca":"Castore","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

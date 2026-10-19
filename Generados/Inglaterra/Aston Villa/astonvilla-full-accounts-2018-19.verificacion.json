@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.md",
- "generado": "2026-10-19T16:00:18.496Z",
- "estado": "ok",
+ "generado": "2026-10-19T16:31:38.124Z",
+ "estado": "cola",
  "clubId": "astonvilla-gb",
  "year": 2019,
  "escala": {
@@ -12,7 +12,9 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "8a03478"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,16 +47,12 @@
   }
  ],
  "notas": [
-  "la nota de \"Administrative expenses\" no suma el renglón (40.408071 contra 163.043101, sumando sus renglones): quedó el renglón del estado"
+  "la nota de \"Administrative expenses\" no suma el renglón (40.408071 contra 163.043101, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: No aparece 'Salarios del plantel' en los bloques; el único dato salarial es Wages and salaries en L743 (£6,123,278), llamativamente bajo para un club, posiblemente porque los jugadores están empleados en otra sociedad del grupo.",
+  "duda de extraer que no afecta la carga: La nota b11 lista solo algunos cargos incluidos ('after charging') y no suma 163,043,101."
  ],
- "reintentar": [
-  {
-   "renglon": "Administrative expenses",
-   "suma": 40.408071,
-   "objetivo": 163.043101
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Administrative expenses",

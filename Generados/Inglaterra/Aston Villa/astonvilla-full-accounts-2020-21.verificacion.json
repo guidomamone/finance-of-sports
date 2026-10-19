@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.md",
- "generado": "2026-10-19T16:00:18.557Z",
- "estado": "ok",
+ "generado": "2026-10-19T16:31:38.162Z",
+ "estado": "cola",
  "clubId": "astonvilla-gb",
  "year": 2021,
  "escala": {
@@ -12,17 +12,21 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "4814f17"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el documento no lo imprime"
+   "ok": true,
+   "detalle": "\"Turnover\" 175.628848 cierra; además se suman 1 línea(s) fuera de ese total (2.5)"
   },
   {
    "nombre": "total de gastos",
-   "ok": null,
-   "detalle": "el documento no lo imprime"
+   "ok": true,
+   "detalle": "210.849675 = 210.849675",
+   "suma": 210.849675,
+   "impreso": 210.849675
   },
   {
    "nombre": "resultado del ejercicio",
@@ -48,16 +52,11 @@
  ],
  "notas": [
   "la nota de \"Administrative expenses\" no suma el renglón (10.187937 contra 210.849675, sumando sus renglones): quedó el renglón del estado",
-  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): corregir no, en astonvilla-full-accounts-2020-21.pdf"
+  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): corregir no, en astonvilla-full-accounts-2020-21.pdf",
+  "duda de extraer que no afecta la carga: La nota 6 (L680) es un análisis del resultado operativo; las diferencias de cambio no tienen renglón propio en el estado."
  ],
- "reintentar": [
-  {
-   "renglon": "Administrative expenses",
-   "suma": 10.187937,
-   "objetivo": 210.849675
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Administrative expenses",

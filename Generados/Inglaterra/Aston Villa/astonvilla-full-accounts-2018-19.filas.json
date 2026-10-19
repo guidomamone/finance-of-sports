@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.md",
  "mdSha1": "32ba487221317eb989aba54753bd93536932bec3",
- "ubicacionSha1": "90406487103ea042a2646cf2283c8affb3a6e4e3",
+ "ubicacionSha1": "ece653cd26a053a1f950c1c53ae335ebf72829a9",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:08:39.681Z",
+ "generado": "2026-10-19T16:30:36.787Z",
  "ubicacion": {
   "estado": [
    "b6"
@@ -141,6 +141,26 @@
    "detalla_a": "Turnover"
   },
   {
+   "bloque": "b10",
+   "linea": 682,
+   "etiqueta": "UEFA solidarity and prize money",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 683,
+   "etiqueta": "",
+   "actual": "51,426,474",
+   "anterior": "64,623,864",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
    "bloque": "b11",
    "linea": 713,
    "etiqueta": "Depreciation of owned tangible fixed assets",
@@ -236,17 +256,27 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan las partidas de b11 (L713-L717) como desglose parcial de 'Administrative expenses', sabiendo que no suman los 163,043,101?",
+   "pregunta": "¿Se confirma que el documento no tiene un renglón separado de salarios del plantel y que solo existe 'Wages and salaries' (L743) dentro de Staff costs?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "No aparece 'Salarios del plantel' en los bloques; el único dato salarial es Wages and salaries en L743 (£6,123,278), llamativamente bajo para un club, posiblemente porque los jugadores están empleados en otra sociedad del grupo.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja la nota b11 (L713-L717) como detalle parcial de 'Administrative expenses' sin esperar que sume el total?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Administrative expenses",
-   "texto": "La nota L709 lista solo cargos seleccionados ('after charging'); suman ~40,4 millones frente a 163 millones de gastos administrativos.",
+   "texto": "La nota b11 lista solo algunos cargos incluidos ('after charging') y no suma 163,043,101.",
    "bloques": [
-    "b11",
-    "b6"
+    "b11"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "El estado termina en 'Loss before taxation' (L381); no se transcribe impuesto ni resultado del ejercicio, por eso el resultado consignado es antes de impuestos. Las notas de ingresos (L678-L681) suman exactamente el Turnover. Staff costs b13 suman 7,001,465 = L715."
+ "observaciones": "El estado no muestra impuesto ni resultado del ejercicio después de impuestos en el bloque; se toma Loss before taxation (L381) como resultado. Todo en libras (unidades)."
 }

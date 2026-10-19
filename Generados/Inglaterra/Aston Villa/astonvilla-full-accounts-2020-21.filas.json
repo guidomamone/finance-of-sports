@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.md",
  "mdSha1": "a64eb938667ff731915738ca886a80865ff4ea2e",
- "ubicacionSha1": "023ee70d4f2677a4364650b01c214bdef7ee9298",
+ "ubicacionSha1": "47085edc41ddc93e2a2730c4e2f728f2737e947c",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:11:07.227Z",
+ "generado": "2026-10-19T16:31:09.732Z",
  "ubicacion": {
   "estado": [
    "b2"
@@ -16,45 +16,39 @@
    "b8",
    "b9",
    "b10",
-   "b12",
-   "b14"
+   "b12"
   ]
  },
  "escalas": [
   {
    "bloque": "b2",
    "escala": "unidades",
-   "evidencia": "Columnas '2021 £' / '2020 £' (L360)"
+   "evidencia": "Encabezado de columnas '2021 £' / '2020 £' (L360), importes en libras sin indicación de miles"
   },
   {
    "bloque": "b6",
    "escala": "unidades",
-   "evidencia": "Columnas '2021 £' (L655)"
+   "evidencia": "Columnas '2021 £' / '2020 £' (L655)"
   },
   {
    "bloque": "b8",
    "escala": "unidades",
-   "evidencia": "Columnas '2021 £' (L682)"
+   "evidencia": "Columnas '2021 £' / '2020 £' (L682)"
   },
   {
    "bloque": "b9",
    "escala": "unidades",
-   "evidencia": "Columnas '2021 £' (L699)"
+   "evidencia": "Columnas '2021 £' / '2020 £' (L699)"
   },
   {
    "bloque": "b10",
    "escala": "unidades",
-   "evidencia": "Columnas '2021 £' (L709)"
+   "evidencia": "Columnas '2021 £' / '2020 £' (L709)"
   },
   {
    "bloque": "b12",
    "escala": "unidades",
-   "evidencia": "Columnas '2021 £' (L728)"
-  },
-  {
-   "bloque": "b14",
-   "escala": "unidades",
-   "evidencia": "Columnas '2021 £' (L755)"
+   "evidencia": "Columnas '2021 £' / '2020 £' (L728)"
   }
  ],
  "filas": [
@@ -64,7 +58,7 @@
    "etiqueta": "Turnover",
    "actual": "175,628,848",
    "anterior": "107,863,788",
-   "tipo": "renglon",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
@@ -297,40 +291,16 @@
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Wages and salaries"
-  },
-  {
-   "bloque": "b14",
-   "linea": 758,
-   "etiqueta": "Current tax on loss for the financial year",
-   "actual": "(625,644)",
-   "anterior": "(1,162,587)",
-   "tipo": "renglon",
-   "lado": "impuesto",
-   "detalla_a": "Tax on loss"
-  },
-  {
-   "bloque": "b14",
-   "linea": 759,
-   "etiqueta": "Adjustments in respect of prior years",
-   "actual": "4",
-   "anterior": "(3,019,029)",
-   "tipo": "renglon",
-   "lado": "impuesto",
-   "detalla_a": "Tax on loss"
-  },
-  {
-   "bloque": "b14",
-   "linea": 760,
-   "etiqueta": "Total current tax",
-   "actual": "(625,640)",
-   "anterior": "(4,181,616)",
-   "tipo": "subtotal",
-   "lado": "impuesto",
-   "detalla_a": "Tax on loss"
   }
  ],
- "total_ingresos": null,
- "total_gastos": null,
+ "total_ingresos": {
+  "linea": 362,
+  "actual": "175,628,848"
+ },
+ "total_gastos": {
+  "linea": 363,
+  "actual": "(210,849,675)"
+ },
  "resultado": {
   "linea": 370,
   "actual": "(32,087,203)",
@@ -338,16 +308,28 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan los staff costs de b10 (L711-L714, 7,954,088) como desglose parcial de 'Administrative expenses' aunque parecen bajos para un club de Premier League?",
+   "pregunta": "¿Se acepta que este documento no tiene una fila de salarios del plantel y que los Staff costs de 7,954,088 (L711-L714) no se cargan como salarios del plantel?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "Administrative expenses",
-   "texto": "Los costos de personal de L714 son muy inferiores a lo esperable; podría tratarse de una entidad que no incluye a los jugadores, conviene verificar el perímetro.",
+   "texto": "Los staff costs de b10 (L714, 7,954,088) son muy bajos frente a Administrative expenses de 210,849,675 (L363): parecen solo empleados de esta sociedad, sin el plantel; no hay otro cuadro de salarios en los bloques.",
    "bloques": [
-    "b10"
+    "b10",
+    "b2"
    ],
    "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se asigna 'Exchange differences' (L686) como financiero dentro de Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota 6 (L680) es un análisis del resultado operativo; las diferencias de cambio no tienen renglón propio en el estado.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Estado en libras (unidades). Las notas son desgloses parciales de Administrative expenses (no suman el total). Signos de impuesto en b14 invertidos respecto al estado (crédito). Directors' remuneration (b12) es detalle incluido en staff costs."
+ "observaciones": "Escala en libras (unidades) en todos los bloques. No se encontró ninguna fila de salarios del plantel: el único cuadro de personal (b10) suma 7,954,088 £ y parece excluir a los jugadores. Directors' remuneration (b12) es un desglose incluido en Wages and salaries. Administrative expenses es un único renglón de gasto y se informa como total de gastos."
 }
