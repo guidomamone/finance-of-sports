@@ -1994,3 +1994,8 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
 
 - Informe 2025, nota 21 "Gastos de administración": el subtotal de la nota suma 10.955.346 y el estado de resultados muestra 10.838.114, 117.232 de diferencia
   (en 2024 coinciden). Hay dos importes sueltos sin rótulo en la nota (un guion y 171.225). ¿Qué renglón de la nota sobra o está mal impreso? Se carga el valor del estado.
+
+## Juventude y Ponte Preta (onboarding, lote 103, sesión 2026-10-19: no frena la carga)
+
+- **Juventude 2021**: ¿el club tiene socios que pagan cuota (mensalidades, sócio-torcedor) y en qué línea del balance las registra ("Receitas Patrimoniais" y "Outras Receitas" no tienen desglose)? ¿Tiene otras modalidades deportivas con ingresos o gastos propios? Se carga con "Cuotas sociales" y "Otras secciones deportivas" en 0.
+- **Ponte Preta 2025**: ¿qué compone "Social / Outras" (2.692.000 en 2025): incluye mensalidades de socios o sócio-torcedor? "Cuotas sociales" queda en 0.
