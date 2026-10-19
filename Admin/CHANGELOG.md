@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 803 — 295: notas de la Serie C y la FPF (2026-10-19)
+
+* Lega Serie C: sin canal público (candidato a mail, sin armar). FPF: publica sus cuentas, pero el PDF lo tiene que bajar Guido.
+
 ## Versión 802 — 310, parte 1: caja de un año sin vecino (2026-10-19)
 
 * `caja-deuda.mjs`: la caja de un año sin vecino se acepta si está en un balance del documento que cuadra, en cualquier país. Udinese
