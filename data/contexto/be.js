@@ -47,12 +47,19 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'lommelsk-be': {
     2018: {"estadio":"Soevereinstadion","fuente":"https://en.wikipedia.org/wiki/Lommel_S.K.","fuenteManual":"https://en.wikipedia.org/wiki/Lommel_S.K.","manual":["estadio"]},
+    2019: {"estadio":"Soevereinstadion","capacidad":8000,"sponsor":"United Telecom","marca":"Legea","temporada":"2018–19 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374461709"},
+    2020: {"estadio":"Soevereinstadion","capacidad":8000,"sponsor":"United Telecom","marca":"Legea","temporada":"2019–20 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375220388"},
+    2021: {"estadio":"Soevereinstadion","capacidad":8000,"sponsor":"United Telecom","marca":"Masita","temporada":"2020–21 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375726247"},
+    2022: {"estadio":"Soevereinstadion","capacidad":8000,"sponsor":"United Telecom","marca":"Masita","temporada":"2021–22 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376207947"},
+    2023: {"estadio":"Soevereinstadion","capacidad":8000,"sponsor":"Bingoal","marca":"Masita","temporada":"2022–23 Challenger Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380217514"},
+    2024: {"estadio":"Soevereinstadion","capacidad":8000,"sponsor":"AppSys ICT Group","temporada":"2023–24 Challenger Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372570277","fuenteManual":"https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)","manual":["estadio","sponsor"]},
     2025: {"estadio":"Soevereinstadion","capacidad":8000,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'mechelen-be': {
     2025: {"estadio":"AFAS-stadion Achter de Kazerne","capacidad":16700,"sponsor":"Telenet","marca":"Erreà","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'ohleuven-be': {
+    2019: {"estadio":"Den Dreef","capacidad":10000,"sponsor":"King Power","marca":"Vermarc","temporada":"2018–19 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374461709"},
     2025: {"estadio":"Den Dreef","capacidad":10000,"sponsor":"Star Casino","marca":"Stanno","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'patroeisden-be': {

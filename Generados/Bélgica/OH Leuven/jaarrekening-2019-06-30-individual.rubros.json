@@ -3,73 +3,103 @@
   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.pdf",
   "club": "ohleuven-be",
   "year": 2019,
-  "generatedAt": "2026-10-18T15:37:11.588Z",
+  "generatedAt": "2026-10-19T14:16:59.213Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
       "label": "Omzet",
       "lado": "revenue",
-      "page": 34,
+      "page": 7,
       "section": "estado",
       "values": [
-        2.800762
+        1.536938
       ],
       "glosa": "Cifra de negocios"
     },
     {
-      "label": "Uitzonderlijke opbrengsten",
+      "label": "Andere bedrijfsopbrengsten",
       "lado": "revenue",
-      "page": 34,
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.263823
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 7,
       "section": "estado",
       "values": [
         0.001179
       ],
-      "glosa": "Ingresos excepcionales"
+      "glosa": "Ingresos de explotación no recurrentes"
     },
     {
-      "label": "Handelsgoederen",
+      "label": "Aankopen",
       "lado": "expense",
-      "page": 34,
+      "page": 7,
       "section": "estado",
       "values": [
-        0.15875
+        0.144926
       ],
-      "glosa": "Mercaderías"
+      "glosa": "Compras"
+    },
+    {
+      "label": "Voorraad: afname (toename) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.013825
+      ],
+      "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
     },
     {
       "label": "Diensten en diverse goederen",
       "lado": "expense",
-      "page": 34,
+      "page": 7,
       "section": "estado",
       "values": [
         3.422019
       ],
-      "glosa": "Servicios exteriores"
+      "glosa": "Servicios y bienes diversos"
     },
     {
-      "label": "Personeelskosten",
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
       "lado": "expense",
-      "page": 34,
+      "page": 7,
       "section": "estado",
       "values": [
         5.341597
       ],
-      "glosa": "Gastos de personal"
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
     },
     {
-      "label": "Afschrijvingen & waardeverminderingen",
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
       "lado": "expense",
-      "page": 34,
+      "page": 7,
       "section": "estado",
       "values": [
-        1.403146
+        1.375507
       ],
-      "glosa": "Amortizaciones y deterioros de valor"
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, sobre inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.027639
+      ],
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Andere bedrijfskosten",
       "lado": "expense",
-      "page": 34,
+      "page": 7,
       "section": "estado",
       "values": [
         0.115146
@@ -77,12 +107,12 @@
       "glosa": "Otros gastos de explotación"
     },
     {
-      "label": "Nier-recurrente bedrijfskosten",
+      "label": "Niet-recurrente bedrijfskosten",
       "lado": "expense",
-      "page": 34,
+      "page": 7,
       "section": "estado",
       "values": [
-        0.038764
+        0.038126
       ],
       "glosa": "Gastos de explotación no recurrentes"
     }

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.pdf",
   "club": "ohleuven-be",
   "year": 2023,
-  "generatedAt": "2026-10-18T19:16:12.116Z",
+  "generatedAt": "2026-10-19T14:16:59.294Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         1.325454
       ],
-      "glosa": "Aprovisionamientos"
+      "glosa": "Compras"
     },
     {
       "label": "Voorraad: afname (toename)",
@@ -104,17 +104,7 @@
       "values": [
         4.128815
       ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
-    },
-    {
-      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "640",

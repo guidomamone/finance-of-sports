@@ -4,6 +4,11 @@ const ohleuvenbeRevenueLinesByYear = {
     { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:7.637273, disclosureLevel:'aggregated' },
     { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.192091, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Omzet', normalizedCategory:'lump_football_operations', amountNative:1.536938, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:1.263823, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.001179, disclosureLevel:'aggregated' },
+  ],
 };
 const ohleuvenbeExpenseLinesByYear = {
   2025: [
@@ -19,6 +24,16 @@ const ohleuvenbeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-1.141007, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-4.196505, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.760631, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Aankopen', normalizedCategory:'other_expenses', amountNative:-0.144926, disclosureLevel:'aggregated' },
+    { rawLabel:'Voorraad: afname (toename) (+)/(-)', normalizedCategory:'other_expenses', amountNative:-0.013825, disclosureLevel:'aggregated' },
+    { rawLabel:'Diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-3.422019, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-5.341597, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'player_amortisation', amountNative:-1.375507, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:-0.027639, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.115146, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.038126, disclosureLevel:'aggregated' },
   ],
 };
 const ohleuvenbeFiscalYearMeta = {
@@ -41,6 +56,25 @@ const ohleuvenbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:42.316788, officialTotalExpenses:46.883042, officialPAT:-6.53474,
   },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'ohleuven-be-jaarrekening-2019-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.182588, tax:-0.000638,
+    extraRows: [
+      {label:'Andere financiële opbrengsten', value:0.000755},
+      {label:'Kosten van schulden', value:-0.14675},
+      {label:'Andere financiële kosten', value:-0.036593},
+      {label:'Belastingen', value:-0.000638},
+    ],
+    sinDesglose: [
+      {renglon:'Omzet', lado:'revenue', importe:1.536938, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:2.80194, officialTotalExpenses:10.440659, officialPAT:-7.86007,
+  },
 };
 const ohleuvenbePresupuestoOverlayByYear = {};
 
@@ -61,6 +95,12 @@ Object.assign(sources, {
     id:'ohleuven-be-jaarrekening-2025-06-30-individual', clubId:'ohleuven-be',
     title:'OH Leuven CV — jaarrekening-2025-06-30-individual (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
+  },
+  'ohleuven-be-jaarrekening-2019-06-30-individual': {
+    id:'ohleuven-be-jaarrekening-2019-06-30-individual', clubId:'ohleuven-be',
+    title:'OH Leuven CV — jaarrekening-2019-06-30-individual (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+    publicNote:'Ejercicio de transición por cambio de fecha de cierre: del 01/01/2019 al 30/06/2019 (6 meses).',
   },
 });
 

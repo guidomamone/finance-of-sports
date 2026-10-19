@@ -64,6 +64,9 @@ window.RANKINGS["be-challengerproleague"] = {
         sourceId:"beerschot-be-jaarrekening-2019-06-30-individual-correction",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.661],["Otros ingresos",2.318]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"ohleuven-be", revenue:3.189, reportType:"official_balance_sheet",
+        sourceId:"ohleuven-be-jaarrekening-2019-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.749],["Otros ingresos",1.44]] },
     ],
   },
 };

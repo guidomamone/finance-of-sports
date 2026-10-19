@@ -1,0 +1,198 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.md",
+ "generatedAt": "2026-10-19T14:23:35.765Z",
+ "rubrosHuella": "4a25ac9156eaf15e7d199dc7b87a276dcbed4fb1",
+ "rubros": [
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aankopen",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Voorraad: afname (toename)",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "620",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "621",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "623",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1207
+  },
+  {
+   "label": "664/7",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+   "choice": "exceptional_items",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "exceptional_items",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1110
+  },
+  {
+   "label": "6630",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+   "choice": "exceptional_items",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "exceptional_items",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 813
+  }
+ ]
+}

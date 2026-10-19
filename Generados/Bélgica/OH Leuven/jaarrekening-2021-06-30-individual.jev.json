@@ -1,167 +1,106 @@
 {
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.md",
- "generatedAt": "2026-09-30T04:27:03.772Z",
+ "generatedAt": "2026-10-19T14:23:35.195Z",
+ "rubrosHuella": "70d3ca7ceea65cbdeef3203c58892c3153cb17e7",
  "rubros": [
   {
-   "label": "Schulden op meer dan één jaar 69 |",
-   "lado": "expense",
-   "page": 6,
-   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 / Uitgestelde belastingen 168",
-   "choice": "other_expenses",
-   "confidence": 0.78,
-   "top3": [
-    [
-     "other_expenses",
-     0.81
-    ],
-    [
-     "admin_general_expense",
-     0.18
-    ],
-    [
-     "depreciation",
-     0.01
-    ]
-   ],
-   "tokens": 927
-  },
-  {
-   "label": "Financiële schulden 170/4",
-   "lado": "expense",
-   "page": 6,
-   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 / Uitgestelde belastingen 168",
-   "choice": "admin_general_expense",
-   "confidence": 0.49,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.54
-    ],
-    [
-     "other_expenses",
-     0.44
-    ],
-    [
-     "lump_football_operations_expense",
-     0.01
-    ]
-   ],
-   "tokens": 865
-  },
-  {
-   "label": "60/66A",
-   "lado": null,
+   "label": "Omzet",
+   "lado": "revenue",
    "page": 8,
-   "section": "RESULTATENREKENING",
-   "choice": "other_expenses",
-   "confidence": 0.21,
-   "top3": [
-    [
-     "other_expenses",
-     0.22999999999999998
-    ],
-    [
-     "other_income",
-     0.18
-    ],
-    [
-     "lump_football_operations_expense",
-     0.13
-    ]
-   ],
-   "tokens": 1258
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
   },
   {
-   "label": "76A",
-   "lado": null,
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
    "page": 8,
-   "section": "RESULTATENREKENING",
+   "section": "estado",
    "choice": "other_income",
-   "confidence": 0.39,
-   "top3": [
-    [
-     "other_income",
-     0.39999999999999997
-    ],
-    [
-     "other_expenses",
-     0.25
-    ],
-    [
-     "lump_football_operations",
-     0.07
-    ]
-   ],
-   "tokens": 1255
+   "confidence": 0.98,
+   "desdeCache": true
   },
   {
-   "label": "285/8",
+   "label": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aankopen",
    "lado": "expense",
-   "page": 5,
-   "section": "ACTIVA / OPRICHT INGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "page": 8,
+   "section": "estado",
    "choice": "other_expenses",
-   "confidence": 0.6,
-   "top3": [
-    [
-     "other_expenses",
-     0.64
-    ],
-    [
-     "other_amortisation",
-     0.21
-    ],
-    [
-     "player_amortisation",
-     0.05
-    ]
-   ],
-   "tokens": 821
+   "confidence": 0.96,
+   "desdeCache": true
   },
   {
-   "label": "SCHULDEN 17/49",
+   "label": "Voorraad: afname (toename) (+)/(-)",
    "lado": "expense",
-   "page": 6,
-   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 / Uitgestelde belastingen 168",
-   "choice": "admin_general_expense",
-   "confidence": 0.62,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.65
-    ],
-    [
-     "other_expenses",
-     0.31
-    ],
-    [
-     "exceptional_items",
-     0.02
-    ]
-   ],
-   "tokens": 861
-  },
-  {
-   "label": "29/58",
-   "lado": "expense",
-   "page": 5,
-   "section": "ACTIVA / OPRICHT INGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "page": 8,
+   "section": "estado",
    "choice": "other_expenses",
-   "confidence": 0.73,
-   "top3": [
-    [
-     "other_expenses",
-     0.76
-    ],
-    [
-     "other_amortisation",
-     0.12
-    ],
-    [
-     "player_amortisation",
-     0.03
-    ]
-   ],
-   "tokens": 821
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.89,
+   "desdeCache": true
   }
  ]
 }

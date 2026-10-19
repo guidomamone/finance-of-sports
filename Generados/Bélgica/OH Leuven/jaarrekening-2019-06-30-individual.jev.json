@@ -1,177 +1,120 @@
 {
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.md",
- "generatedAt": "2026-10-18T15:39:24.605Z",
- "rubrosHuella": "4bbd4c0483ddfe33dd85a1f7d7652f5e74e65fdc",
+ "generatedAt": "2026-10-19T14:23:35.192Z",
+ "rubrosHuella": "e9063dbbb762b160742fed8f27537c5ef066d775",
  "rubros": [
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aankopen",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Voorraad: afname (toename) (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
   {
    "label": "Diensten en diverse goederen",
    "lado": "expense",
-   "page": 34,
+   "page": 7,
    "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.98,
    "desdeCache": true
   },
   {
-   "label": "Uitzonderlijke opbrengsten",
-   "lado": "revenue",
-   "page": 34,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1028
-  },
-  {
-   "label": "Handelsgoederen",
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
    "lado": "expense",
-   "page": 34,
-   "section": "estado",
-   "choice": "other_expenses",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_expenses",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1079
-  },
-  {
-   "label": "Omzet",
-   "lado": "revenue",
-   "page": 34,
-   "section": "estado",
-   "choice": "lump_football_operations",
-   "confidence": 1,
-   "top3": [
-    [
-     "lump_football_operations",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1175
-  },
-  {
-   "label": "Nier-recurrente bedrijfskosten",
-   "lado": "expense",
-   "page": 34,
-   "section": "estado",
-   "choice": "exceptional_items",
-   "confidence": 0.86,
-   "top3": [
-    [
-     "exceptional_items",
-     0.87
-    ],
-    [
-     "admin_general_expense",
-     0.08
-    ],
-    [
-     "match_organisation_expense",
-     0.03
-    ]
-   ],
-   "tokens": 1033
-  },
-  {
-   "label": "Personeelskosten",
-   "lado": "expense",
-   "page": 34,
-   "section": "estado",
-   "choice": "wages_squad",
-   "confidence": 0.59,
-   "top3": [
-    [
-     "wages_squad",
-     0.62
-    ],
-    [
-     "other_expenses",
-     0.17
-    ],
-    [
-     "admin_general_expense",
-     0.14
-    ]
-   ],
-   "tokens": 1007
-  },
-  {
-   "label": "Afschrijvingen & waardeverminderingen",
-   "lado": "expense",
-   "page": 34,
+   "page": 7,
    "section": "estado",
    "choice": "depreciation",
-   "confidence": 0.43,
-   "top3": [
-    [
-     "depreciation",
-     0.48
-    ],
-    [
-     "other_expenses",
-     0.23
-    ],
-    [
-     "other_amortisation",
-     0.18
-    ]
-   ],
-   "tokens": 1143
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
   },
   {
    "label": "Andere bedrijfskosten",
    "lado": "expense",
-   "page": 34,
+   "page": 7,
    "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
    "top3": [
     [
-     "other_expenses",
-     0.87
+     "wages_squad",
+     1
     ],
     [
-     "admin_general_expense",
-     0.12
+     "player_amortisation",
+     0
     ],
     [
-     "match_organisation_expense",
-     0.01
+     "player_impairment",
+     0
     ]
    ],
-   "tokens": 1015
+   "tokens": 1059
   }
  ]
 }

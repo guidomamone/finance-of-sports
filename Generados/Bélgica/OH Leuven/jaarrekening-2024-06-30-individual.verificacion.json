@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.120Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.320Z",
+ "estado": "ok",
  "clubId": "ohleuven-be",
  "year": 2024,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "1128d9a",
-  "9e2481b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -34,7 +31,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 3.552713678800501e-15
   },
   {
@@ -64,9 +61,12 @@
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L481-L529, esquema completo); cierran exacto todos sus totales impresos",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b77 es una presentación resumida del mismo estado de resultados dentro del jaarverslag.",
   "duda de localizar que no afecta la carga: El sociaal balans repite gastos de personal ya desglosados en la nota 6.10 (b43).",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"-\"): aceptar, en jaarrekening-2024-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Andere financiële kosten\"): aceptar, en jaarrekening-2024-06-30-individual.pdf",
   "duda de extraer que no afecta la carga: La tabla está desalineada (L1817, L1820 muestran códigos en la columna de importes); 17.250+6.977=24.227 confirma."
  ],
  "reintentar": null,
@@ -75,12 +75,12 @@
  "totales": {
   "ingresos": 31.458703,
   "gastos": 45.805421,
-  "financiero": 0.752038,
-  "impuesto": 0.155921,
+  "financiero": -0.641832,
+  "impuesto": -0.155921,
   "resultadoImpreso": -15.144471,
   "resultadoParaCargar": -15.144471,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -205,8 +205,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
