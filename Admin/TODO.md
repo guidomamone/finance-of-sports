@@ -33,9 +33,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 287: el texto de la skill club-sourcing (tu ok) y los 25 casos de carpeta-doble, con el 278 --> Pipeline 4
+* 287: los 25 casos de carpeta-doble, con el 278
 * 298: mejoras de script de Estonia y Bélgica (ab y ac, Sarpsborg 2023-2024; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
-* 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 4 (306, 307)
+* 308: los bonos convertibles en la skill
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 4
 * 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
@@ -239,8 +239,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    lo hace Guido.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
    contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
-   compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil), sin silenciar ni mover nada; va con el 278. Falta el texto
-   para la skill `club-sourcing` (mirar la entidad de la portada al guardar y no abrir una segunda carpeta del club), esperando el ok de Guido.
+   compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil), sin silenciar ni mover nada; va con el 278.
    Un `.md` sin PDF no es error (Ajax, PSV, Feyenoord y AZ 2023-25 son la fuente publicada de lo cargado).
 290. GENOA 2022 EN caja-deuda --medir (cierre de pipeline). Con la regla de los "bis", la propuesta es 65,24 M contra 95,7 M publicados: faltan
    las dos filas de altri finanziatori (factoring, 30,45 M), que dependen de la decisión del 291. La compuerta del documento siguiente no
@@ -279,11 +278,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.
 302. DEFLACTOR DE EE.UU. DESDE LA BEA (cierre de proyecto, 2026-10-18). FRED prohíbe el scraping y guardar copias: bajarlo directo de la BEA
    (`tools/fetch-fx-reference.mjs --deflactores`).
-306. MILAN 2018 EN caja-deuda --medir (cierre de pipeline). 1,21 M contra 164,27 M publicados: las filas de deuda son "a) entro / b) oltre 12
-   mesi" debajo de un título sin importe ("1 obbligazioni", "5 debiti verso altri finanziatori"; AC-Milan-bilanci-relazioni-2017-18.md
-   L895-904) y el diccionario solo ve "4 debiti verso banche". Sin daño hoy (año cargado).
-307. localizar.mjs --lista --ejecutar IMPRIME "Gastado: US$ 0.00" (cierre de pipeline). El registro anota el costo real; el total del final no
-   suma. `tools/gasto.mjs` da el número bueno.
 308. NOMBRAR EN LA SKILL club-data-mapping EL CRITERIO DE LOS BONOS CONVERTIBLES (con ok de Guido: es una skill). Ya está en
    CONVENCIONES-DATOS; la skill tiene que decirlo donde habla de deuda.
 310. CAJA Y DEUDA DE UN AÑO SIN VECINO (pedido de Guido, 2026-10-18; cierre de pipeline). Hoy solo la caja belga sale del código 54/58

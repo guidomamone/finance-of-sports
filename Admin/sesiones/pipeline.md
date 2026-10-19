@@ -445,3 +445,5 @@ vía que daría 0 con gasto real es el modo Batch (`FOS_CLAUDE_BATCH=1`: la resp
 Para borrar del TODO como no reproducible; se reabre si aparece de nuevo.
 
 Pendiente de Guido en su chat: nada. Sigue: 301, 302, 290, 310 y las letras 298 ab y ac que sumó la principal.
+
+## Después del merge del 306-307 (2026-10-19)

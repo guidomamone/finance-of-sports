@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 796 — club-sourcing: una sola carpeta por club; 306 y 307 cerrados (2026-10-19)
+
+* Skill `club-sourcing`: "Una sola carpeta por club" (mirar la entidad de la portada al guardar; ok de Guido).
+* 306 (Milan 2018 en caja-deuda) a HALLAZGOS, sin daño hoy; 307 (el gasto que imprime localizar) no se reproduce: suma bien.
+
 ## Versión 795 — Sarpsborg 08 sobre el FLI: 2012 y 2014-2022 (2026-10-19)
 
 * Lote 96: diez años del FLI de Sarpsborg 08, con perímetro individual (la controlada Prozo AS queda afuera). 2023 y 2024 esperan dos
