@@ -88,4 +88,7 @@ sección de arriba).
   alemana da hasta 12 meses después del cierre para depositarlo (31/12/2026), y el club usa el plazo entero: según North Data
   (https://www.northdata.de/Borussia+VfL+1900+M%C3%B6nchengladbach+GmbH,+M%C3%B6nchengladbach/HRB+5742) el 2024 se publicó el
   20/01/2026 y el 2023 el 27/12/2024. El 2025 se espera hacia enero de 2027.
+- **Qué bajar cuando aparezca:** el Jahresabschluss del ejercicio 01/01/2025-31/12/2025 (Bilanz, GuV, Anhang y, si está, el
+  Bestätigungsvermerk), el depósito completo de ~15 páginas y no el del Aufsichtsrat (~3). Se guarda como
+  `Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2025.pdf` y pasa a onboarding.
 - Último chequeo: 2026-10-18.

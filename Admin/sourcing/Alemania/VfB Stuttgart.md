@@ -77,5 +77,7 @@ transcriptos se cargaron a `data/de/stuttgart-de-data.js`.
   https://www.flashscore.de/news/vfb-prasentiert-rekordzahlen-wachstum-und-profitablitat/jXwdzVnC/ y
   https://www.stuttgarter-zeitung.de/sport/vfb-stuttgart/vfb-stuttgart-die-zahlen-stimmen-der-vfb-praesentiert-ein-rekordergebnis-79331547.html
 - vfb.de no publica el Konzernabschluss en PDF (solo la nota de la asamblea): el documento se busca en el Unternehmensregister
-  («VfB Stuttgart 1893 AG»), con plazo legal hasta el 31/12/2026.
+  («VfB Stuttgart 1893 AG»), con plazo legal hasta el 31/12/2026; se espera hacia enero de 2027, como Gladbach.
+- **Qué bajar cuando aparezca:** el Konzernabschluss del ejercicio 01/01/2025-31/12/2025, completo. Se guarda como
+  `Clubes/Alemania/VfB Stuttgart/konzernabschluss-2025.pdf` y pasa a onboarding.
 - Último chequeo: 2026-10-18.
