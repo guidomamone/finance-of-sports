@@ -389,3 +389,5 @@ como partida especial después del patrimonio (Sonderposten nach dem Eigenkapita
   de la SAD, "Ganhos imputados de subsidiárias").
 - DOS INFORMES DEL AUDITOR EN EL MISMO DOCUMENTO (individual y consolidado): la línea de auditoría usa el del perímetro que publica el sitio
   (Guido, 2026-10-18: "coherencia de perímetro"). El otro se transcribe pero no se cita.
+- ESTADIO Y SPONSOR DE UN AÑO DE LIGA AMATEUR (Guido, 2026-10-18): la compuerta de la carga lo acepta sin sponsor si tiene el estadio con
+  fuente. En las ligas amateur casi nunca hay fuente que nombre el sponsor de camiseta.

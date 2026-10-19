@@ -25,8 +25,8 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18, a la noche; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 294 (espera las 11 altas
-del borrador) · pipeline 298 (e a n, p, q, s, t2, u2, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding Países Bajos (lotes 93-94),
-las 11 altas del borrador, Bélgica (lote 92: 11 de 23 años pasan la compuerta; 12 amateur esperan tu decisión), 292 resto, 238, 285, 284, 283, 195, 165 c · datos-sourcing
+del borrador) · pipeline 298 (y primero; después e a n, p, q, s, t2, u2, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding Países Bajos (lotes 93-94),
+las 11 altas del borrador, Bélgica (lote 92: 11 de 23 años pasan la compuerta; 12 amateur esperan la 298 y), 292 resto, 238, 285, 284, 283, 195, 165 c · datos-sourcing
 273 (los 80 sin sponsor) · sin sesión: ligas 295, pantallas 309 y 312, Reino Unido 261 · la principal: 291, 311 y los
 merges; el 246 va solo, con todo mergeado y sin worktrees abiertos.
 
@@ -58,7 +58,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas)
-* 273: estadio y sponsor, lo que queda (12 años belgas amateur sin sponsor, a decidir; 80 sin sponsor; nombrar la compuerta)
+* 273: estadio y sponsor, lo que queda (12 años belgas amateur: compuerta sin sponsor (298 y); 80 sin sponsor; nombrar la compuerta)
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (50 informes; la compuerta del pipeline)
@@ -224,7 +224,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
    lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: (e) Bélgica, lote 92: 12 años de ligas amateur sin sponsor con
    fuente (Lierse SK 2019, Patro Eisden 2015 y 2017-2023, RWDM 2019, Lokeren-Temse 2023-2024; Patro 2015 y RWDM 2019 también sin estadio):
-   DECISIÓN DE GUIDO, dejarlos frenados o que la compuerta acepte sin sponsor un año de liga amateur. (a) 80 ejercicios sin sponsor y sin fuente que lo nombre (Ferroviária,
+   Guido decidió (2026-10-18) que la compuerta acepte sin sponsor un año de liga amateur con estadio con fuente: el cambio, Pipeline 2
+   (298 y); el estadio de Patro 2015 y RWDM 2019, Datos 2. (a) 80 ejercicios sin sponsor y sin fuente que lo nombre (Ferroviária,
    Novorizontino, Goiás, Orenburg, Felgueiras, rusos y estonios de ascenso; `node tools/estadio-sponsor.mjs --ensayo --detalle`). (d) nombrar la compuerta en `Admin/PIPELINE.md` y en la skill
    `club-or-year-onboarding` (la skill, con ok de Guido). Siguen sin liga a propósito: Novorizontino 2010, Dynamo Makhachkala 2021, Racing 2027.
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
