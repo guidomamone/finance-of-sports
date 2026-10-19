@@ -24,16 +24,13 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Tandas en orden; dentro de cada una, de arriba abajo. "--> Sesión" = la sesión que lo tiene hoy (cierra en `Admin/sesiones/<rama>.md` y la
-principal mergea); sin flecha, sin sesión. El 246 va solo, con todo mergeado y sin worktrees abiertos.
-
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 290 y 291: caja y deuda, lo que queda (Genoa 2022; la duda del factoring la decidís vos) --> Pipeline 2 (290), Principal (291)
 * 310: caja y deuda de un año sin vecino, cualquier país --> Pipeline 2
 * 292: transcripciones por subagentes de los 6 países: Estonia completa; Países Bajos (lote 93) en la cola; Bélgica destrabada; quedan Suiza, Beşiktaş, Colombia y los .md viejos (238 marcados para Mistral, 298 e2) --> Onboarding 2
 
 **B. Bases baratas que después cuestan caro cambiar**
-* 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
+* 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
 * 232: mejoras de script que dejó Grecia --> Pipeline 2
