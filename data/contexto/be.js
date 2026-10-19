@@ -65,6 +65,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Den Dreef","capacidad":10000,"sponsor":"Star Casino","marca":"Stanno","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'patroeisden-be': {
+    2014: {"temporada":"2013–14 Belgian Third Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353501808"},
+    2015: {"estadio":"Gemeentelijk Sportparkstadion","capacidad":5000,"temporada":"2014–15 Belgian Second Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353478239","fuenteManual":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen","manual":["estadio"]},
+    2016: {"estadio":"Patro-stadion","capacidad":5000,"sponsor":"e.Baillien","marca":"Jartazi","temporada":"2015–16 Belgian Second Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353494562"},
     2025: {"estadio":"Gemeentelijk Sportparkstadion","capacidad":5500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'raallalouviere-be': {

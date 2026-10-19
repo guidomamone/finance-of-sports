@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.md",
- "generado": "2026-10-18T19:16:12.202Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.634Z",
+ "estado": "ok",
  "clubId": "patroeisden-be",
  "year": 2024,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "cc030a0",
-  "4d28baf",
-  "07ad3d2"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -31,8 +27,13 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (impuesto invertido)",
-   "dif": 0.00583000000000089
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2025",
@@ -41,18 +42,24 @@
   },
   {
    "nombre": "documento del año 2023",
-   "ok": false,
-   "detalle": "ingresos de 2023: 0.270348 en jaarrekening-2023-06-30-individual.pdf y 0.255583 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "códigos NBB del año 2023 iguales en este documento y en jaarrekening-2023-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (1.451259 y 0.232016)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
-  "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L172-L195, esquema abreviado); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b14 abre los ingresos y gastos no recurrentes que en b4 aparecen como 'waarvan'.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
@@ -61,13 +68,13 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 3.068851,
-  "gastos": 6.064444,
-  "financiero": 0.198043,
-  "impuesto": 0.00653,
+  "gastos": 6.025904,
+  "financiero": 0.153673,
+  "impuesto": -0.00653,
   "resultadoImpreso": -2.80991,
   "resultadoParaCargar": -2.80991,
   "resultadoFinal": null,
-  "lecturaSignos": "impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -79,14 +86,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 5,
-   "linea": 173,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
    "lado": "gasto",
    "M": 5.819894,
@@ -95,28 +94,20 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.129484,
-   "pagina": 5,
-   "linea": 178,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
    "lado": "gasto",
-   "M": 0.011831,
+   "M": -0.011831,
    "pagina": 5,
    "linea": 179,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
    "lado": "gasto",
-   "M": 0.007439,
+   "M": -0.007439,
    "pagina": 5,
    "linea": 180,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Andere bedrijfskosten",
@@ -133,11 +124,27 @@
    "pagina": 5,
    "linea": 183,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.061083,
+   "pagina": 5,
+   "linea": 237,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.068401,
+   "pagina": 5,
+   "linea": 268,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": -1
+  "impuesto": 1
  },
  "financiero": [
   {
@@ -147,7 +154,7 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.022185,
+   "M": -0.022185,
    "linea": 189
   }
  ],

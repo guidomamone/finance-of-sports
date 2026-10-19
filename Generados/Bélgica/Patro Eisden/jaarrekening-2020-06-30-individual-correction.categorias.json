@@ -1,0 +1,77 @@
+{
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.md",
+ "club": "patroeisden-be",
+ "year": 2020,
+ "generatedAt": "2026-10-19T14:23:48.668Z",
+ "rubrosHuella": "a893459f718800af63a7cb5a75b12848f69e7f36",
+ "jevHuella": "0c78c342a32c899c001b2c3d9cb2a88d6973f344",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto (+)/(-)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "exceptional_items",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "exceptional_items",
+   "confianza": 1
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 7,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

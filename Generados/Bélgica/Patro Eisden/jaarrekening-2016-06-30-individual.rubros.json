@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.pdf",
   "club": "patroeisden-be",
   "year": 2016,
-  "generatedAt": "2026-10-18T15:28:00.233Z",
+  "generatedAt": "2026-10-19T14:16:59.428Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -15,16 +15,6 @@
         0.727579
       ],
       "glosa": "Ingresos de explotación"
-    },
-    {
-      "label": "Uitzonderlijke opbrengsten",
-      "lado": "revenue",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Ingresos extraordinarios"
     },
     {
       "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
@@ -44,7 +34,7 @@
       "values": [
         0.589012
       ],
-      "glosa": "Remuneraciones y beneficios sociales directos"
+      "glosa": "Remuneraciones y prestaciones sociales directas"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -64,7 +54,7 @@
       "values": [
         0.009283
       ],
-      "glosa": "Primas patronales de seguros complementarios"
+      "glosa": "Primas patronales de seguros extralegales"
     },
     {
       "label": "Andere personeelskosten",
@@ -87,16 +77,6 @@
       "glosa": "Pensiones de jubilación y supervivencia"
     },
     {
-      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Correcciones de valor de existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
-    },
-    {
       "label": "Andere bedrijfskosten",
       "lado": "expense",
       "page": 5,
@@ -105,16 +85,6 @@
         0.025483
       ],
       "glosa": "Otros gastos de explotación"
-    },
-    {
-      "label": "Uitzonderlijke kosten",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Gastos extraordinarios"
     }
   ]
 }

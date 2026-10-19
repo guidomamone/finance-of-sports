@@ -1,27 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.pdf",
- "generado": "2026-10-18T19:18:20.491Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Bedrijfsopbrengsten\" -> other_income 0"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
- "avisos": [
-  "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-06-30); pregunta en la cola (no frena)"
- ],
+ "generado": "2026-10-19T14:23:54.609Z",
+ "frena": [],
+ "avisos": [],
  "ejercicio": {
   "clubId": "patroeisden-be",
   "year": 2019,
@@ -30,13 +11,13 @@
   "revenueLines": [
    {
     "rawLabel": "Bedrijfsopbrengsten",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "lump_football_operations",
     "amountNative": 0.362776,
     "disclosureLevel": "aggregated",
     "_pag": 7,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -89,16 +70,6 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Uitzonderlijke kosten",
-    "normalizedCategory": "exceptional_items",
-    "amountNative": 0,
-    "disclosureLevel": "aggregated",
-    "_pag": 7,
-    "_escalon": 1,
-    "_conf": 1,
-    "_fuenteCat": "categorias.json"
    }
   ],
   "fiscalYearMeta": {
@@ -121,6 +92,14 @@
      "value": -0.00116
     }
    ],
+   "sinDesglose": [
+    {
+     "renglon": "Bedrijfsopbrengsten",
+     "lado": "revenue",
+     "importe": 0.362776,
+     "motivo": "Claude 2026-10-18 (subagente Sonnet): Igual que 2017: es la totalidad de los ingresos operativos sin desglose (Omzet 70 y 73 vacios), no 'Otros ingresos'. Cierra: 362.776 - 217.830 (60/61) = 144.946 = Brutomarge; 144.946 - 447.348 - 52.324 = -354.726 = 9901. [Bedrijfsopbrengsten 70/74 362.776 (L231); Omzet vacio (L232); 60/61 217.830 (L234)]"
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 0.362776,
@@ -133,7 +112,7 @@
    "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2019-06-30-individual (ejercicio 2019)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md",
@@ -153,7 +132,7 @@
  "year": 2019,
  "ajustes": null,
  "seleccion": {
-  "filas": 9,
+  "filas": 8,
   "notasUsadas": [],
   "refM": null
  },
@@ -165,13 +144,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 0.362776,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Igual que 2017: es la totalidad de los ingresos operativos sin desglose (Omzet 70 y 73 vacios), no 'Otros ingresos'. Cierra: 362.776 - 217.830 (60/61) = 144.946 = Brutomarge; 144.946 - 447.348 - 52.324 = -354.726 = 9901. [Bedrijfsopbrengsten 70/74 362.776 (L231); Omzet vacio (L232); 60/61 217.830 (L234)]",
    "destino": "revenue",
    "amountNative": 0.362776
   },
@@ -251,21 +230,6 @@
    "amountNative": -0.052324
   },
   {
-   "label": "Uitzonderlijke kosten",
-   "page": 7,
-   "native": 0,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0,
-   "cat": "exceptional_items",
-   "conf": 1,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "expense",
-   "amountNative": 0
-  },
-  {
    "label": "Financiële opbrengsten",
    "page": null,
    "native": 0.000038,
@@ -286,16 +250,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -383,10 +337,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 1,
-  "lineasGasto": 6,
+  "lineasGasto": 5,
   "metaFilas": 2,
   "excluidas": 0
  }

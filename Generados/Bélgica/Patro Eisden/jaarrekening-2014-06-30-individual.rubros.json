@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.pdf",
   "club": "patroeisden-be",
   "year": 2014,
-  "generatedAt": "2026-10-18T15:37:11.964Z",
+  "generatedAt": "2026-10-19T14:16:59.366Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -15,6 +15,16 @@
         0.266761
       ],
       "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Uitzonderlijke opbrengsten",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.003113
+      ],
+      "glosa": "Ingresos excepcionales"
     },
     {
       "label": "Bezoldigingen en rechtstreekse sociale voordelen",
@@ -34,7 +44,7 @@
       "values": [
         0.00457
       ],
-      "glosa": "Primas patronales para seguros complementarios"
+      "glosa": "Primas patronales para seguros extralegales"
     },
     {
       "label": "Ouderdoms- en overlevingspensioenen",

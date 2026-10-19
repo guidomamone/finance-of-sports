@@ -3,6 +3,9 @@ const patroeisdenbeRevenueLinesByYear = {
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:1.841008, disclosureLevel:'aggregated' },
     { rawLabel:'Waarvan: niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.00181, disclosureLevel:'aggregated' },
   ],
+  2016: [
+    { rawLabel:'Bedrijfsopbrengsten', normalizedCategory:'lump_football_operations', amountNative:0.727579, disclosureLevel:'aggregated' },
+  ],
 };
 const patroeisdenbeExpenseLinesByYear = {
   2025: [
@@ -13,6 +16,15 @@ const patroeisdenbeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.0435, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.092871, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.159525, disclosureLevel:'aggregated' },
+  ],
+  2016: [
+    { rawLabel:'Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-0.462829, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen en rechtstreekse sociale voordelen', normalizedCategory:'wages_squad', amountNative:-0.589012, disclosureLevel:'aggregated' },
+    { rawLabel:'Werkgeversbijdragen voor sociale verzekeringen', normalizedCategory:'wages_squad', amountNative:-0.121829, disclosureLevel:'aggregated' },
+    { rawLabel:'Werkgeverspremies voor bovenwettelijke verzekeringen', normalizedCategory:'wages_squad', amountNative:-0.009283, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere personeelskosten', normalizedCategory:'wages_squad', amountNative:-0.051846, disclosureLevel:'aggregated' },
+    { rawLabel:'Ouderdoms- en overlevingspensioenen', normalizedCategory:'wages_squad', amountNative:-0.032308, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.025483, disclosureLevel:'aggregated' },
   ],
 };
 const patroeisdenbeFiscalYearMeta = {
@@ -35,6 +47,23 @@ const patroeisdenbeFiscalYearMeta = {
     grossDebt:null, cash:0.011997,
     officialTotalRevenue:1.842818, officialTotalExpenses:6.514002, officialPAT:5.946137,
   },
+  2016: {
+    currency:'EUR', fxRef:'EUR@2016-06-30',
+    sourceId:'patroeisden-be-jaarrekening-2016-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.000391, tax:0,
+    extraRows: [
+      {label:'Financiële opbrengsten', value:0.000527},
+      {label:'Financiële kosten', value:-0.000136},
+    ],
+    sinDesglose: [
+      {renglon:'Bedrijfsopbrengsten', lado:'revenue', importe:0.727579, motivo:'Claude 2026-10-18 (subagente Sonnet): Igual que 2017: es la totalidad de los ingresos operativos sin desglose (Omzet 70 y 73 vacios), no \'Otros ingresos\'. Cierra: 362.776 - 217.830 (60/61) = 144.946 = Brutomarge; 144.946 - 447.348 - 52.324 = -354.726 = 9901. [Bedrijfsopbrengsten 70/74 362.776 (L231); Omzet vacio (L232); 60/61 217.830 (L234)]'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.727579, officialTotalExpenses:1.29259, officialPAT:-0.56462,
+  },
 };
 const patroeisdenbePresupuestoOverlayByYear = {};
 
@@ -54,6 +83,11 @@ Object.assign(sources, {
   'patroeisden-be-jaarrekening-2025-06-30-individual': {
     id:'patroeisden-be-jaarrekening-2025-06-30-individual', clubId:'patroeisden-be',
     title:'Patro Eisden Maasmechelen VZW — jaarrekening-2025-06-30-individual (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'patroeisden-be-jaarrekening-2016-06-30-individual': {
+    id:'patroeisden-be-jaarrekening-2016-06-30-individual', clubId:'patroeisden-be',
+    title:'Patro Eisden Maasmechelen VZW — jaarrekening-2016-06-30-individual (ejercicio 2016)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

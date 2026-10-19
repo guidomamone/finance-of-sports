@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.pdf",
   "club": "patroeisden-be",
   "year": 2024,
-  "generatedAt": "2026-10-18T15:28:00.544Z",
+  "generatedAt": "2026-10-19T14:16:59.634Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -17,16 +17,6 @@
       "glosa": "Margen bruto (+)/(-)"
     },
     {
-      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-      "lado": "revenue",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "De los cuales: ingresos de explotación no recurrentes"
-    },
-    {
       "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
       "lado": "expense",
       "page": 5,
@@ -37,32 +27,22 @@
       "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0.129484
-      ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material"
-    },
-    {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
       "lado": "expense",
       "page": 5,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.011831
+        -0.011831
       ],
-      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Deterioro de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
       "lado": "expense",
       "page": 5,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.007439
+        -0.007439
       ],
       "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
     },
@@ -85,6 +65,26 @@
         0.075431
       ],
       "glosa": "Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.061083
+      ],
+      "glosa": "Amortizaciones del inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.068401
+      ],
+      "glosa": "Amortizaciones del inmovilizado material"
     }
   ]
 }

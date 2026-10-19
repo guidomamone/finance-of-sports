@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.pdf",
   "club": "patroeisden-be",
   "year": 2019,
-  "generatedAt": "2026-10-18T15:28:00.291Z",
+  "generatedAt": "2026-10-19T14:16:59.517Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         0.35269
       ],
-      "glosa": "Remuneraciones y beneficios sociales directos"
+      "glosa": "Remuneraciones y prestaciones sociales directas"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -44,7 +44,7 @@
       "values": [
         0.072137
       ],
-      "glosa": "Aportaciones patronales a la seguridad social"
+      "glosa": "Cotizaciones patronales a la seguridad social"
     },
     {
       "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
@@ -65,16 +65,6 @@
         0.052324
       ],
       "glosa": "Otros gastos de explotación"
-    },
-    {
-      "label": "Uitzonderlijke kosten",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Gastos excepcionales"
     }
   ]
 }

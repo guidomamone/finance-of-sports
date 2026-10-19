@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md",
- "generatedAt": "2026-10-18T15:33:36.474Z",
- "rubrosHuella": "748e6772c71d0ba0d283c15ad4f267e270779fa0",
+ "generatedAt": "2026-10-19T14:23:36.288Z",
+ "rubrosHuella": "3da11872ed22731547e3765ce88de5cec6f95a11",
  "rubros": [
   {
    "label": "Bedrijfsopbrengsten",
@@ -55,15 +55,6 @@
    "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.85,
-   "desdeCache": true
-  },
-  {
-   "label": "Uitzonderlijke kosten",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "choice": "exceptional_items",
-   "confidence": 1,
    "desdeCache": true
   }
  ]

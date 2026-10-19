@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.194Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.582Z",
+ "estado": "ok",
  "clubId": "patroeisden-be",
  "year": 2021,
  "escala": {
@@ -12,12 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "da2b0f5",
-  "fde27d4",
-  "00c952b",
-  "99ddcc5"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -31,28 +26,40 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 0.140857 - gastos 0.407233 ± financiero 0.031252 ± impuesto 0.002711 no da el impreso -0.582029",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2022",
    "ok": true,
-   "detalle": "ingresos de 2021: 0.140857 en este documento y 0.140857 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
+   "detalle": "códigos NBB del año 2021 iguales en este documento y en jaarrekening-2022-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0 y 0.190904)"
   },
   {
    "nombre": "documento del año 2020",
-   "ok": false,
-   "detalle": "ingresos de 2020: 0.751904 en jaarrekening-2020-06-30-individual-correction.pdf y 0.277991 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "códigos NBB del año 2020 iguales en este documento y en jaarrekening-2020-06-30-individual-correction.pdf (9904, 9901); los ingresos se presentan distinto (0.277991 y 0)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L232-L255, esquema abreviado); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: El bloque b10 mezcla datos de personal (VTE) con posibles desgloses de kosten; solo se ven primeras y últimas filas.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
@@ -60,19 +67,19 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 0.140857,
-  "gastos": 0.407233,
-  "financiero": 0.031252,
-  "impuesto": 0.002711,
+  "ingresos": 0,
+  "gastos": 0.54809,
+  "financiero": -0.031228,
+  "impuesto": -0.002711,
   "resultadoImpreso": -0.582029,
   "resultadoParaCargar": -0.582029,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
    "etiqueta": "Brutomarge (+)/(-)",
-   "lado": "ingreso",
+   "lado": "gasto",
    "M": 0.140857,
    "pagina": 7,
    "linea": 232,
@@ -131,14 +138,14 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.03124,
+   "M": -0.03124,
    "linea": 249
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen op het resultaat (+)/(-)",
-   "M": 0.002711,
+   "M": -0.002711,
    "linea": 254
   }
  ]

@@ -69,4 +69,13 @@ window.RANKINGS["be-challengerproleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.749],["Otros ingresos",1.44]] },
     ],
   },
+  2016: {
+    leagueSize: null,
+    wiki: {"t":"2015–16 Belgian Second Division","lang":"en","at":"2026-10-19","n":17},
+    clubs: [
+      { id:"patroeisden-be", revenue:0.808, reportType:"official_balance_sheet",
+        sourceId:"patroeisden-be-jaarrekening-2016-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.808]] },
+    ],
+  },
 };
