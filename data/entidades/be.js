@@ -75,6 +75,15 @@ Object.assign(window.CLUB_ENTIDADES, {
     }
    },
    {
+    "anio": 2023,
+    "entidad": "lommel-sk",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+     "linea": 9
+    }
+   },
+   {
     "anio": 2025,
     "entidad": "lommel-sk",
     "perimetro": "individual",

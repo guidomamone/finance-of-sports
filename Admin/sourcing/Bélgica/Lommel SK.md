@@ -26,3 +26,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual-correction.pdf` (sourceId `lommelsk-be-jaarrekening-2021-06-30-individual-correction`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.pdf` (sourceId `lommelsk-be-jaarrekening-2022-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.pdf` (sourceId `lommelsk-be-jaarrekening-2023-06-30-individual`).
