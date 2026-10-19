@@ -283,3 +283,12 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   "pendiente-segunda-voz", 38 en "sin-tablas") se van a rehacer con Mistral (~US$ 83 más la validación) apenas pasen por `resolver-inventario`.
 
 ## Después del merge de la e3 (2026-10-19)
+
+- **Eerste Divisie** (52de3d44b4, ya en main): le alcanza el estadio, como a las ligas amateur (decisión de Guido vía Onboarding 2).
+- **298 l hecha** (57b582095f, ok de Guido 2026-10-19). Escalón 2 de `reportType` en `analizar()` de alta-club.mjs: si la única pregunta es
+  "¿trae un estado de resultados?" (STATEMENT no reconoce las palabras, como en estonio, o casi no hay tablas) y la verificación del
+  documento cerró con el resultado impreso, es un balance anual. Presupuesto, intermedio y nombre sospechoso siguen preguntando. Medido
+  sin los 86 ajustes `reportType` (simulado y restaurado): de 72 frenos `alta:reportType` a 4 (Monza 2022 y tres de Benfica, rama
+  intermedio). Lote completo (350 docs) con los ajustes reales: `--comparar` 0 diferencias, `--contra-sitio` igual antes y después.
+  1b2c34df38: salen los 59 ajustes `reportType` estonios; con y sin ellos, 59 de 59 reproducen lo publicado, 0 diferencias.
+  Sigue: la m (el perímetro en la carga compara con el año cargado más cercano y no con el ajuste del club).
