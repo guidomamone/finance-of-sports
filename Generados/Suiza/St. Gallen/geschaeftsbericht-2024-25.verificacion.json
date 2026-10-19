@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.md",
- "generado": "2026-10-19T00:53:58.587Z",
+ "generado": "2026-10-19T01:01:03.078Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -60,6 +60,32 @@
    "evidencia": ".md L403",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 268,
+   "etiqueta": "(sale) Entschädigung von FCSG Event AG",
+   "lado": "ingreso",
+   "reemplaza": "Entschädigung von FCSG Event AG",
+   "motivo": "transferencia intercompany (Event AG -> AG) que se anula en la consolidación; su espejo es el gasto de L269 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L268-269",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 269,
+   "etiqueta": "(sale) Entschädigung an FCSG AG",
+   "lado": "gasto",
+   "reemplaza": "Entschädigung an FCSG AG",
+   "motivo": "transferencia intercompany que se anula en la consolidación; espejo de L268 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L268-269",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
  "cola": [],
@@ -101,6 +127,8 @@
   "ajuste manual: sale la fila \"Erträge netto\" (2026-10-19, el total consolidado \"Erträge netto\" 45.057 se sumaba además del desglose de las dos sociedades (sin la Entschädigung intercompany) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
   "ajuste manual: fila \"Veränderung Wertberichtigungen\" (ingreso) 21, en lugar de \"Veränderung Wertberichtigungen\" (2026-10-19, impreso +21 en la ER de la AG (suma con su Total Erträge netto 15.548 del consolidado); se leía -21 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
   "ajuste manual: fila \"Ertragsminderungen\" (ingreso) -484, en lugar de \"Ertragsminderungen\" (2026-10-19, impreso -484 en la ER de Event AG (Total Erträge netto 29.509); se leía +484 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
+  "ajuste manual: sale la fila \"Entschädigung von FCSG Event AG\" (2026-10-19, transferencia intercompany (Event AG -> AG) que se anula en la consolidación; su espejo es el gasto de L269 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
+  "ajuste manual: sale la fila \"Entschädigung an FCSG AG\" (2026-10-19, transferencia intercompany que se anula en la consolidación; espejo de L268 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",

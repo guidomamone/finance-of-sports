@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.md",
- "generado": "2026-10-19T00:53:52.942Z",
- "estado": "ok",
+ "generado": "2026-10-19T01:01:03.540Z",
+ "estado": "cola",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -31,9 +31,59 @@
    "evidencia": ".md L1238-1251",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
+   "campo": "fila",
+   "valor": "1 025 811",
+   "linea": 1139,
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "lado": "gasto",
+   "reemplaza": "Abschreibungen immaterielle Sachanlagen",
+   "motivo": "la Nota 8 abre el renglón (1.197.018): Spielerwerte 1.025.811 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L1139 y L1464",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
+   "campo": "fila",
+   "valor": "171 207",
+   "linea": 1139,
+   "etiqueta": "Abschreibungen Software, E-Commerce und Markenrechte",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "la Nota 8 abre el renglón (1.197.018): Software 89.999 + 19.374, E-Commerce 11.834, Markenrechte 50.000 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L1464",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "motivo": "amortización de derechos de jugadores (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "other_amortisation",
+   "linea": null,
+   "etiqueta": "Abschreibungen Software, E-Commerce und Markenrechte",
+   "motivo": "amortización de software, e-commerce y marcas (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
- "cola": [],
+ "cola": [
+  "2acbe6d"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -60,15 +110,12 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
   "la nota de \"Merchandising\" no suma el renglón (0.805963 contra 0.434443, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Abschreibungen Spielerwerte\" (gasto) 1 025 811, en lugar de \"Abschreibungen immaterielle Sachanlagen\" (2026-10-19, la Nota 8 abre el renglón (1.197.018): Spielerwerte 1.025.811 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
+  "ajuste manual: fila \"Abschreibungen Software, E-Commerce und Markenrechte\" (gasto) 171 207 (2026-10-19, la Nota 8 abre el renglón (1.197.018): Software 89.999 + 19.374, E-Commerce 11.834, Markenrechte 50.000 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
   "escalón \"nota exacta en la lectura 6\": \"Leistungsfussball Nachwuchs\" (L1121) se abre en las 6 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 6\": \"Events\" (L1122) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 6\": \"Merchandising\" (L1123) se abre en las 2 filas de su nota, que suman exacto el renglón",
@@ -615,20 +662,28 @@
    "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Abschreibungen immaterielle Sachanlagen",
-   "lado": "gasto",
-   "M": 1.197018,
-   "pagina": 29,
-   "linea": 1139,
-   "origen": "estado (lectura 5: hoja)"
-  },
-  {
    "etiqueta": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
    "lado": "gasto",
    "M": 0.135065,
    "pagina": 29,
    "linea": 1144,
    "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "lado": "gasto",
+   "M": 1.025811,
+   "pagina": 29,
+   "linea": 1139,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Abschreibungen Software, E-Commerce und Markenrechte",
+   "lado": "gasto",
+   "M": 0.171207,
+   "pagina": 29,
+   "linea": 1139,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -651,8 +706,8 @@
  ],
  "primerAnio": {
   "escalon": 3,
-  "estado": "confirmado",
-  "clave": "9c2413373e77394469d62c7d3f6f4d030cfbc203",
+  "estado": "pendiente",
+  "clave": "c3dcf95eb4d5e10ad9a83e55835f899c2967bb95",
   "rango": [
    1114,
    1153
@@ -721,11 +776,12 @@
    1893,
    1894,
    1138,
-   1139,
    1144,
+   1139,
+   1139,
    1141,
    1147
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 1114 a 1153 del .md):\nL1114: | CHF | Erläuterung | 2024/25 |  | 2023/24 | % |\nL1115: | --- | --- | --- | --- | --- | --- |\nL1116: | **Ertrag** |  |  |  |  |  |\nL1117: | Matchorganisation | 15 | 10’630’351 | 38,1% | 10’099’845 | 35,3% |\nL1118: | Sponsoring, Werbung | 16 | 4’886’610 | 17,5% | 4’749’725 | 16,6% |\nL1119: | TV-Entschädigungen Übertragungsrechte | 17 | 1’725’586 | 6,2% | 1’759’998 | 6,2% |\nL1120: | Transferertrag | 18 | 6’448’988 | 23,1% | 7’101’577 | 24,8% |\nL1121: | Leistungsfussball Nachwuchs | 19 | 2’789’206 | 10,0% | 2’757’270 | 9,6% |\nL1122: | Events | 20 | 289’394 | 1,0% | 1’181’712 | 4,1% |\nL1123: | Merchandising | 21 | 805’963 | 2,9% | 512’558 | 1,8% |\nL1124: | Sonstiger Betriebsertrag | 22 | 306’414 | 1,1% | 417’947 | 1,5% |\nL1125: | Total Ertrag |  | 27’882’512 | 100,0% | 28’580’632 | 100,0% |\nL1126: | **Betriebsaufwand** |  |  |  |  |  |\nL1127: | Personalaufwand | 23 | −16’130’279 | −57,9% | −17’135’801 | −60,0% |\nL1128: | Spielbetrieb und Matchorganisation | 24 | −6’088’900 | −21,8% | −6’664’206 | −23,3% |\nL1129: | Transferaufwand | 25 | −1’111’856 | −4,0% | −1’576’869 | −5,5% |\nL1130: | Werbung und Sponsoring | 26 | −1’265’032 | −4,5% | −1’286’143 | −4,5% |\nL1131: | Leistungsfussball Nachwuchs | 27 | −1’249’634 | −4,5% | −944’837 | −3,3% |\nL1132: | Events | 28 | −215’580 | −0,8% | −689’346 | −2,4% |\nL1133: | Merchandising | 29 | −434’443 | −1,6% | −269’047 | −0,9% |\nL1134: | Energie, Wasser und Entsorgung | 30 | −356’408 | −1,3% | −405’797 | −1,4% |\nL1135: | Administrations- und sonstiger Betriebsaufwand | 31 | −1’431’600 | −5,1% | −1’553’966 | −5,4% |\nL1136: | Betriebsaufwand vor Abschreibungen |  | −28’283’732 | −101,4% | −30’526’012 | −106,8% |\nL1137: | Betriebsergebnis vor Finanzergebnis und Abschreibungen (EBITDA) |  | −401’220 | −1,4% | −1’945’380 | −6,8% |\nL1138: | Abschreibungen mobile Sachanlagen | 7 | −211’164 | −0,8% | −193’155 | −0,7% |\nL1139: | Abschreibungen immaterielle Sachanlagen | 8 | −1’197’018 | −4,3% | −1’876’543 | −6,6% |\nL1140: | Betriebsergebnis vor Finanzergebnis (EBIT) |  | −1’809’402 | −6,5% | −4’015’078 | −14,0% |\nL1141: | Finanzergebnis | 32 | −497’769 | −1,8% | −343’745 | −1,2% |\nL1142: | Erfolg aus Equity-Beteiligungen | 33 | 106’206 | 0,4% | 6’660 | 0,0% |\nL1143: | Betriebsergebnis |  | −2’200’966 | −7,9% | −4’352’163 | −15,2% |\nL1144: | Ausserordentlicher, einmaliger oder periodenfremder Aufwand | 34 | −135’065 | −0,5% | −18’776 | −0,1% |\nL1145: | Ausserordentlicher, einmaliger oder periodenfremder Ertrag | 35 | 1’995’241 | 7,2% | 1’380’745 | 4,8% |\nL1146: | Unternehmenserfolg vor Steuern |  | −340’790 | −1,2% | −2’990’194 | −10,5% |\nL1147: | Direkte Steuern |  | 1’102 | 0,0% | 29 | 0,0% |\nL1148: | Unternehmenserfolg vor Minderheiten |  | −339’688 | −1,2% | −2’990’165 | −10,5% |\nL1149: | Minderheitsanteil am Jahresergebnis | 36 | 894’582 | 3,2% | 515’289 | 1,8% |\nL1150: | Unternehmenserfolg nach Minderheiten |  | 554’894 | 2,1% | −2’474’876 | −8,6% |\nL1152: FC LUZERN Gruppe | Geschäftsbericht 2024/25 27\n\nLO QUE SE CARGA:\n- ingreso · \"Matchorganisation\" · 10.630351 · L1117\n- ingreso · \"Sponsoring, Werbung\" · 4.88661 · L1118\n- ingreso · \"TV-Entschädigungen Übertragungsrechte\" · 1.725586 · L1119\n- ingreso · \"Transferertrag\" · 6.448988 · L1120\n- ingreso · \"Sponsoren- und Spendenbeiträge\" · 0.778095 · L1669 (de una nota)\n- ingreso · \"SFV-Verbandsbeiträge\" · 0.842667 · L1670 (de una nota)\n- ingreso · \"Sport Toto- und J+S-Entschädigungen\" · 0.273597 · L1671 (de una nota)\n- ingreso · \"Ausbildungs- und Materialbeiträge Eltern\" · 0.489205 · L1672 (de una nota)\n- ingreso · \"Anlässe (FCL-Fussballcamp, Pfingstmaster)\" · 0.220951 · L1673 (de una nota)\n- ingreso · \"Diverse Einnahmen\" · 0.184691 · L1674 (de una nota)\n- ingreso · \"Konferenzen, Events swissporarena\" · 0.262196 · L1690 (de una nota)\n- ingreso · \"Grossevents\" · 0.027198 · L1691 (de una nota)\n- ingreso · \"Fanshop Präsenzgeschäft\" · 0.40506 · L1702 (de una nota)\n- ingreso · \"Onlineshop, Distanzgeschäft\" · 0.400903 · L1703 (de una nota)\n- ingreso · \"Ausmietung Stewards\" · 0.320125 · L1713 (de una nota)\n- ingreso · \"Anpassung Delkredere\" · -0.165577 · L1714 (de una nota)\n- ingreso · \"Sonstiges\" · 0.151866 · L1716 (de una nota)\n- ingreso · \"Ausserordentlicher, einmaliger oder periodenfremder Ertrag\" · 1.995241 · L1145\n- ingreso · \"Erfolg aus Equity-Beteiligungen\" · 0.106206 · L1142\n- ingreso · \"Minderheitsanteil am Jahresergebnis\" · 0.894582 · L1149\n- gasto · \"Personalkosten inkl. Spesen\" · 7.801561 · L1728 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.731539 · L1729 (de una nota)\n- gasto · \"Unfallversicherungsprämien\" · 0.656243 · L1730 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 2.295763 · L1733 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.476048 · L1734 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 2.698085 · L1737 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.388641 · L1738 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 0.264083 · L1741 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.043278 · L1742 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 0.702108 · L1745 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.072929 · L1746 (de una nota)\n- gasto · \"Diferencia de redondeo\" · 0.000001 · L1127\n- gasto · \"Miete und Unterhalt Stadion\" · 1.85216 · L1794 (de una nota)\n- gasto · \"Sicherheitskosten Matchtag (ohne Stewards)\" · 0.898386 · L1795 (de una nota)\n- gasto · \"Abgaben öffentlicher Verkehr\" · 0.35729 · L1796 (de una nota)\n- gasto · \"Material und Medical\" · 0.741765 · L1797 (de una nota)\n- gasto · \"Ticketing und Vorverkaufsgebühren\" · 0.255265 · L1798 (de una nota)\n- gasto · \"Aufwand 1. Mannschaften\" · 0.451447 · L1799 (de una nota)\n- gasto · \"Diverse Kosten Spielbetrieb\" · 0.519321 · L1800 (de una nota)\n- gasto · \"VIP-Cateringkosten Spieltag\" · 1.409829 · L1801 (de una nota)\n- gasto · \"Aufwand übrige Wettbewerbe\" · 0.054474 · L1802 (de una nota)\n- gasto · \"Rückvergütungen Lieferanten\" · -0.451037 · L1804 (de una nota)\n- gasto · \"Transferaufwand definitive Übertritte\" · 0.14906 · L1823 (de una nota)\n- gasto · \"Spielervermittlungen und Beratungen\" · 0.714138 · L1824 (de una nota)\n- gasto · \"Ausleih- und Ausbildungsentschädigungen\" · 0.248658 · L1825 (de una nota)\n- gasto · \"Medien, Kommunikation, Inserate\" · 0.766209 · L1836 (de una nota)\n- gasto · \"Inhouse TV Spieltag\" · 0.12642 · L1837 (de una nota)\n- gasto · \"LED-Bandenwerbung Produktion\" · 0.20241 · L1838 (de una nota)\n- gasto · \"Diverses\" · 0.169993 · L1839 (de una nota)\n- gasto · \"Nachwuchs-Akademie\" · 0.186631 · L1850 (de una nota)\n- gasto · \"Anlässe (FCL-Fussballcamp, Pfingstmasters)\" · 0.088929 · L1851 (de una nota)\n- gasto · \"Materialkosten\" · 0.490803 · L1852 (de una nota)\n- gasto · \"Spielbetrieb und Mannschaftsaufwand\" · 0.483271 · L1853 (de una nota)\n- gasto · \"Konferenzen / Events\" · 0.185769 · L1864 (de una nota)\n- gasto · \"Grossevents\" · 0.029811 · L1865 (de una nota)\n- gasto · \"Merchandising\" · 0.434443 · L1133\n- gasto · \"Energie, Wasser und Entsorgung\" · 0.356408 · L1134\n- gasto · \"Verwaltungsaufwand\" · 0.314164 · L1890 (de una nota)\n- gasto · \"IT, Telefon, Internet und Applikationen\" · 0.744382 · L1891 (de una nota)\n- gasto · \"Sachversicherungen, Abgaben und Gebühren\" · 0.088571 · L1892 (de una nota)\n- gasto · \"Fahrzeug/Treibstoff\" · 0.217991 · L1893 (de una nota)\n- gasto · \"Sonstiger Betriebsaufwand\" · 0.066492 · L1894 (de una nota)\n- gasto · \"Abschreibungen mobile Sachanlagen\" · 0.211164 · L1138\n- gasto · \"Abschreibungen immaterielle Sachanlagen\" · 1.197018 · L1139\n- gasto · \"Ausserordentlicher, einmaliger oder periodenfremder Aufwand\" · 0.135065 · L1144\n- financiero · \"Finanzergebnis\" · -0.497769 · L1141\n- impuesto · \"Direkte Steuern\" · 0.001102 · L1147"
+  "user": "ESTADO DE RESULTADOS (líneas 1114 a 1153 del .md):\nL1114: | CHF | Erläuterung | 2024/25 |  | 2023/24 | % |\nL1115: | --- | --- | --- | --- | --- | --- |\nL1116: | **Ertrag** |  |  |  |  |  |\nL1117: | Matchorganisation | 15 | 10’630’351 | 38,1% | 10’099’845 | 35,3% |\nL1118: | Sponsoring, Werbung | 16 | 4’886’610 | 17,5% | 4’749’725 | 16,6% |\nL1119: | TV-Entschädigungen Übertragungsrechte | 17 | 1’725’586 | 6,2% | 1’759’998 | 6,2% |\nL1120: | Transferertrag | 18 | 6’448’988 | 23,1% | 7’101’577 | 24,8% |\nL1121: | Leistungsfussball Nachwuchs | 19 | 2’789’206 | 10,0% | 2’757’270 | 9,6% |\nL1122: | Events | 20 | 289’394 | 1,0% | 1’181’712 | 4,1% |\nL1123: | Merchandising | 21 | 805’963 | 2,9% | 512’558 | 1,8% |\nL1124: | Sonstiger Betriebsertrag | 22 | 306’414 | 1,1% | 417’947 | 1,5% |\nL1125: | Total Ertrag |  | 27’882’512 | 100,0% | 28’580’632 | 100,0% |\nL1126: | **Betriebsaufwand** |  |  |  |  |  |\nL1127: | Personalaufwand | 23 | −16’130’279 | −57,9% | −17’135’801 | −60,0% |\nL1128: | Spielbetrieb und Matchorganisation | 24 | −6’088’900 | −21,8% | −6’664’206 | −23,3% |\nL1129: | Transferaufwand | 25 | −1’111’856 | −4,0% | −1’576’869 | −5,5% |\nL1130: | Werbung und Sponsoring | 26 | −1’265’032 | −4,5% | −1’286’143 | −4,5% |\nL1131: | Leistungsfussball Nachwuchs | 27 | −1’249’634 | −4,5% | −944’837 | −3,3% |\nL1132: | Events | 28 | −215’580 | −0,8% | −689’346 | −2,4% |\nL1133: | Merchandising | 29 | −434’443 | −1,6% | −269’047 | −0,9% |\nL1134: | Energie, Wasser und Entsorgung | 30 | −356’408 | −1,3% | −405’797 | −1,4% |\nL1135: | Administrations- und sonstiger Betriebsaufwand | 31 | −1’431’600 | −5,1% | −1’553’966 | −5,4% |\nL1136: | Betriebsaufwand vor Abschreibungen |  | −28’283’732 | −101,4% | −30’526’012 | −106,8% |\nL1137: | Betriebsergebnis vor Finanzergebnis und Abschreibungen (EBITDA) |  | −401’220 | −1,4% | −1’945’380 | −6,8% |\nL1138: | Abschreibungen mobile Sachanlagen | 7 | −211’164 | −0,8% | −193’155 | −0,7% |\nL1139: | Abschreibungen immaterielle Sachanlagen | 8 | −1’197’018 | −4,3% | −1’876’543 | −6,6% |\nL1140: | Betriebsergebnis vor Finanzergebnis (EBIT) |  | −1’809’402 | −6,5% | −4’015’078 | −14,0% |\nL1141: | Finanzergebnis | 32 | −497’769 | −1,8% | −343’745 | −1,2% |\nL1142: | Erfolg aus Equity-Beteiligungen | 33 | 106’206 | 0,4% | 6’660 | 0,0% |\nL1143: | Betriebsergebnis |  | −2’200’966 | −7,9% | −4’352’163 | −15,2% |\nL1144: | Ausserordentlicher, einmaliger oder periodenfremder Aufwand | 34 | −135’065 | −0,5% | −18’776 | −0,1% |\nL1145: | Ausserordentlicher, einmaliger oder periodenfremder Ertrag | 35 | 1’995’241 | 7,2% | 1’380’745 | 4,8% |\nL1146: | Unternehmenserfolg vor Steuern |  | −340’790 | −1,2% | −2’990’194 | −10,5% |\nL1147: | Direkte Steuern |  | 1’102 | 0,0% | 29 | 0,0% |\nL1148: | Unternehmenserfolg vor Minderheiten |  | −339’688 | −1,2% | −2’990’165 | −10,5% |\nL1149: | Minderheitsanteil am Jahresergebnis | 36 | 894’582 | 3,2% | 515’289 | 1,8% |\nL1150: | Unternehmenserfolg nach Minderheiten |  | 554’894 | 2,1% | −2’474’876 | −8,6% |\nL1152: FC LUZERN Gruppe | Geschäftsbericht 2024/25 27\n\nLO QUE SE CARGA:\n- ingreso · \"Matchorganisation\" · 10.630351 · L1117\n- ingreso · \"Sponsoring, Werbung\" · 4.88661 · L1118\n- ingreso · \"TV-Entschädigungen Übertragungsrechte\" · 1.725586 · L1119\n- ingreso · \"Transferertrag\" · 6.448988 · L1120\n- ingreso · \"Sponsoren- und Spendenbeiträge\" · 0.778095 · L1669 (de una nota)\n- ingreso · \"SFV-Verbandsbeiträge\" · 0.842667 · L1670 (de una nota)\n- ingreso · \"Sport Toto- und J+S-Entschädigungen\" · 0.273597 · L1671 (de una nota)\n- ingreso · \"Ausbildungs- und Materialbeiträge Eltern\" · 0.489205 · L1672 (de una nota)\n- ingreso · \"Anlässe (FCL-Fussballcamp, Pfingstmaster)\" · 0.220951 · L1673 (de una nota)\n- ingreso · \"Diverse Einnahmen\" · 0.184691 · L1674 (de una nota)\n- ingreso · \"Konferenzen, Events swissporarena\" · 0.262196 · L1690 (de una nota)\n- ingreso · \"Grossevents\" · 0.027198 · L1691 (de una nota)\n- ingreso · \"Fanshop Präsenzgeschäft\" · 0.40506 · L1702 (de una nota)\n- ingreso · \"Onlineshop, Distanzgeschäft\" · 0.400903 · L1703 (de una nota)\n- ingreso · \"Ausmietung Stewards\" · 0.320125 · L1713 (de una nota)\n- ingreso · \"Anpassung Delkredere\" · -0.165577 · L1714 (de una nota)\n- ingreso · \"Sonstiges\" · 0.151866 · L1716 (de una nota)\n- ingreso · \"Ausserordentlicher, einmaliger oder periodenfremder Ertrag\" · 1.995241 · L1145\n- ingreso · \"Erfolg aus Equity-Beteiligungen\" · 0.106206 · L1142\n- ingreso · \"Minderheitsanteil am Jahresergebnis\" · 0.894582 · L1149\n- gasto · \"Personalkosten inkl. Spesen\" · 7.801561 · L1728 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.731539 · L1729 (de una nota)\n- gasto · \"Unfallversicherungsprämien\" · 0.656243 · L1730 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 2.295763 · L1733 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.476048 · L1734 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 2.698085 · L1737 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.388641 · L1738 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 0.264083 · L1741 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.043278 · L1742 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 0.702108 · L1745 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.072929 · L1746 (de una nota)\n- gasto · \"Diferencia de redondeo\" · 0.000001 · L1127\n- gasto · \"Miete und Unterhalt Stadion\" · 1.85216 · L1794 (de una nota)\n- gasto · \"Sicherheitskosten Matchtag (ohne Stewards)\" · 0.898386 · L1795 (de una nota)\n- gasto · \"Abgaben öffentlicher Verkehr\" · 0.35729 · L1796 (de una nota)\n- gasto · \"Material und Medical\" · 0.741765 · L1797 (de una nota)\n- gasto · \"Ticketing und Vorverkaufsgebühren\" · 0.255265 · L1798 (de una nota)\n- gasto · \"Aufwand 1. Mannschaften\" · 0.451447 · L1799 (de una nota)\n- gasto · \"Diverse Kosten Spielbetrieb\" · 0.519321 · L1800 (de una nota)\n- gasto · \"VIP-Cateringkosten Spieltag\" · 1.409829 · L1801 (de una nota)\n- gasto · \"Aufwand übrige Wettbewerbe\" · 0.054474 · L1802 (de una nota)\n- gasto · \"Rückvergütungen Lieferanten\" · -0.451037 · L1804 (de una nota)\n- gasto · \"Transferaufwand definitive Übertritte\" · 0.14906 · L1823 (de una nota)\n- gasto · \"Spielervermittlungen und Beratungen\" · 0.714138 · L1824 (de una nota)\n- gasto · \"Ausleih- und Ausbildungsentschädigungen\" · 0.248658 · L1825 (de una nota)\n- gasto · \"Medien, Kommunikation, Inserate\" · 0.766209 · L1836 (de una nota)\n- gasto · \"Inhouse TV Spieltag\" · 0.12642 · L1837 (de una nota)\n- gasto · \"LED-Bandenwerbung Produktion\" · 0.20241 · L1838 (de una nota)\n- gasto · \"Diverses\" · 0.169993 · L1839 (de una nota)\n- gasto · \"Nachwuchs-Akademie\" · 0.186631 · L1850 (de una nota)\n- gasto · \"Anlässe (FCL-Fussballcamp, Pfingstmasters)\" · 0.088929 · L1851 (de una nota)\n- gasto · \"Materialkosten\" · 0.490803 · L1852 (de una nota)\n- gasto · \"Spielbetrieb und Mannschaftsaufwand\" · 0.483271 · L1853 (de una nota)\n- gasto · \"Konferenzen / Events\" · 0.185769 · L1864 (de una nota)\n- gasto · \"Grossevents\" · 0.029811 · L1865 (de una nota)\n- gasto · \"Merchandising\" · 0.434443 · L1133\n- gasto · \"Energie, Wasser und Entsorgung\" · 0.356408 · L1134\n- gasto · \"Verwaltungsaufwand\" · 0.314164 · L1890 (de una nota)\n- gasto · \"IT, Telefon, Internet und Applikationen\" · 0.744382 · L1891 (de una nota)\n- gasto · \"Sachversicherungen, Abgaben und Gebühren\" · 0.088571 · L1892 (de una nota)\n- gasto · \"Fahrzeug/Treibstoff\" · 0.217991 · L1893 (de una nota)\n- gasto · \"Sonstiger Betriebsaufwand\" · 0.066492 · L1894 (de una nota)\n- gasto · \"Abschreibungen mobile Sachanlagen\" · 0.211164 · L1138\n- gasto · \"Ausserordentlicher, einmaliger oder periodenfremder Aufwand\" · 0.135065 · L1144\n- gasto · \"Abschreibungen Spielerwerte\" · 1.025811 · L1139\n- gasto · \"Abschreibungen Software, E-Commerce und Markenrechte\" · 0.171207 · L1139\n- financiero · \"Finanzergebnis\" · -0.497769 · L1141\n- impuesto · \"Direkte Steuern\" · 0.001102 · L1147"
  }
 }
