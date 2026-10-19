@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 772 — 298 e3: el ensayo cotiza el rehacer con Mistral (2026-10-19)
+
+* `resolver-inventario`: el ensayo suma el Mistral de un .md viejo sin tablas, como la corrida real. La corrida sin-tablas-298e habría
+  dado US$ 40,60 (costó 43,09; antes el ensayo decía 7,26). Sobre todo lo pendiente sube US$ 83,15: 368 documentos.
+
 ## Versión 771 — Cierre de onboarding 2 y Amazonas confirmado (2026-10-19)
 
 * Lote 93: la cola de los 6 neerlandeses que faltaban, contestada; los 26 años cierran en verificar. Lista de la Eredivisie 2018-19 (FC Emmen).

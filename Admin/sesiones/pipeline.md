@@ -281,3 +281,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   1.844,17. Los +83,15 son exactamente Mistral de las 20.788 páginas de 368 documentos (206 de "texto" y 162 de "escaneo"). La validación de
   cada documento y el resto de los planes dan igual. **Aviso para la próxima corrida grande:** esos 368 documentos (221 en "revisar", 102 en
   "pendiente-segunda-voz", 38 en "sin-tablas") se van a rehacer con Mistral (~US$ 83 más la validación) apenas pasen por `resolver-inventario`.
+
+## Después del merge de la e3 (2026-10-19)

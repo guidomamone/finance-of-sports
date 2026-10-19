@@ -36,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 232: mejoras de script que dejó Grecia --> Pipeline 3
 * 279: la tool que duplicaba claves en club-leagues/ru.js --> Pipeline 3
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 3
-* 298: mejoras de script de Estonia y Bélgica (sigue la e3; después l a n, p, q, s, v, u2, z, g2) --> Pipeline 3
+* 298: mejoras de script de Estonia y Bélgica (l a n, p, q, s, v, u2, z, g2) --> Pipeline 3
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 3 (306, 307)
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 3
 * 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 3
@@ -260,8 +260,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
    grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
    el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. aa) `tools/worktree.mjs mergear` deja sin commitear `data/sponsors.js` y `data/sponsors-indice.js`, que regenera
-   `generate-sponsors.js`: sumarlos a su lista de `git add` (el commit siguiente frena por asset-v-sin-subir). e3) el ensayo de pipeline.mjs estimó US$ 7,26 para rehacer los 238 .md sin tablas y la corrida
-   real costó US$ 42,97: que el ensayo dé el número real antes de la próxima corrida grande (ver la nota de Pipeline 2).
+   `generate-sponsors.js`: sumarlos a su lista de `git add` (el commit siguiente frena por asset-v-sin-subir).
+   Aviso para la próxima corrida grande: 368 documentos viejos sin tablas (221 en "revisar", 102 en "pendiente-segunda-voz", 38 en
+   "sin-tablas") se rehacen con Mistral (~US$ 83 más la validación) apenas pasen por resolver-inventario; el ensayo ya lo cotiza.
    RWDM 2019: el registro
    tiene el cierre 2019-11-30 y el balance va del 30/11/2018 al 30/06/2019 (como la f). Escocia, Gales e Irlanda del Norte se ven como GB
    ("Inglaterra") en el selector: decisión de pantalla pendiente. g2) partir en la cola cualquier fila según su nota (otros países, el 66A de Lommel SK
