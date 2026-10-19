@@ -61,54 +61,47 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 
 ## To-dos nuevos para pasar al TODO de la principal (2026-10-19; pedido de Guido: contenido para X e Instagram, todavía falta)
 
-Para la principal: pegarlos al final de la lista del TODO con estos números (el más alto hoy es 310) y agregar al ORDEN, después de
-"G. Orden de la casa", este bloque:
+Para la principal: pegarlos al final de la lista con estos números (la principal pidió empezar en 315). Ninguno tiene sesión asignada, así que no llevan línea en el ORDEN.
 
-    **H. Contenido para X e Instagram y herramientas a probar (todavía falta; nada urgente, después de E2)**
-    * 311: contenido para X e Instagram (con 257 y 259; el link dedicado, 241, va antes)
-    * 312 y 313: probar Stirling PDF y Crawl4AI (los dos tocan el pipeline; van primero dentro de H)
-    * 314, 315 y 316: detector de documentos nuevos; Supabase solo lectura; Open Notebook sobre las transcripciones
-    * 317 al 320: probar I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute (sueltas, a demanda)
-
-311. CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
+313. CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
     Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
     (a) la skill de contenido y difusión (ya es el 257): un año cargado → hilo o post con el dato verificado y el link a la fuente;
     (b) un script que proponga "dato del día" desde lo cargado (el ranking de una liga, el club que más cambió de deuda o de ingresos, un
         club que nunca figuró) y solo con años que pasaron `verifyTieOuts()`, para que cada post salga con cifra chequeada;
     (c) tarjetas de imagen con el mismo estilo del sitio (tamaños de X e Instagram; con Design antes) y, si ayuda, un video corto
-        con Higgsfield (319);
+        con Higgsfield (321);
     (d) un calendario: qué liga o club se publica cada semana, para no repetir;
     (e) enlaces a `/club/<id>` con tarjeta al compartir (241) y medir qué publicaciones traen visitas. Depende de 241 y 246.
-312. PROBAR STIRLING PDF (idea, 2026-10-19). Levantarlo en Docker local y medirlo contra los PDFs que hoy dan más trabajo (escaneos, tablas
+314. PROBAR STIRLING PDF (idea, 2026-10-19). Levantarlo en Docker local y medirlo contra los PDFs que hoy dan más trabajo (escaneos, tablas
     rotadas, filas que no concilian), contra Tesseract y Mistral: una tabla "PDF difícil → motor → fidelidad contra los totales oficiales".
     No cambia nada del pipeline; si gana en algún caso, se diseña un escalón con el ok de Guido. Conectado con el costo de Mistral (298) y
     con los escaneos del 261.
-313. PROBAR CRAWL4AI PARA SOURCING (idea, 2026-10-19). Que un script baje en Markdown la lista de documentos de un portal de regulador
+315. PROBAR CRAWL4AI PARA SOURCING (idea, 2026-10-19). Que un script baje en Markdown la lista de documentos de un portal de regulador
     (empezar por uno ya conocido, el belga o el noruego) y la compare con `Admin/ESTADO-clubes.md`. Mide si reemplaza navegar con el Browser
     pane (menos tokens: va con la regla de scripts antes que sesión). Va con las notas de `club-sourcing`.
-314. DETECTOR DE DOCUMENTOS NUEVOS (idea, 2026-10-19; optimiza el 252). Hoy `tools/ejercicios-nuevos.mjs` corre una vez por mes. Con Maxun o
-    con 313 más una tarea programada, vigilar los portales que publican cada año y dejar los candidatos en `Admin/sourcing/README.md`,
-    sin que Guido tenga que pasar los links. Después de 313.
-315. SUPABASE COMO ESPEJO DE LECTURA (idea, 2026-10-19; con el 245 y el 258). Un experimento descartable: exportar los ejercicios de un solo
+316. DETECTOR DE DOCUMENTOS NUEVOS (idea, 2026-10-19; optimiza el 252). Hoy `tools/ejercicios-nuevos.mjs` corre una vez por mes. Con Maxun o
+    con 315 más una tarea programada, vigilar los portales que publican cada año y dejar los candidatos en `Admin/sourcing/README.md`,
+    sin que Guido tenga que pasar los links. Después de 315.
+317. SUPABASE COMO ESPEJO DE LECTURA (idea, 2026-10-19; con el 245 y el 258). Un experimento descartable: exportar los ejercicios de un solo
     país a tablas y correr las auditorías en SQL (rubros que no suman, años faltantes, outliers entre clubes) para comparar con
     `verifyTieOuts()`. Sirve de medida para decidir cuándo `data/*.js` deja de alcanzar (skill de escala). No es una migración. Sobre lo de
     "Supabase recuerda y Claude no": la memoria entre sesiones ya la dan CLAUDE.md, las skills y la carpeta de memoria; una base con
     pgvector solo agrega búsqueda semántica y hay que construir la recuperación encima.
-316. OPEN NOTEBOOK SOBRE LAS TRANSCRIPCIONES (idea, 2026-10-19). Cargar las `Clubes/<País>/**/*.md` de un país y preguntarle cosas
+318. OPEN NOTEBOOK SOBRE LAS TRANSCRIPCIONES (idea, 2026-10-19). Cargar las `Clubes/<País>/**/*.md` de un país y preguntarle cosas
     ("¿qué clubes reportan préstamos de accionistas?") para encontrar patrones y armar `Admin/dudas-por-club.md` y las referencias de
     `club-data-mapping` más rápido. Probar con un país antes de pensar en todo.
-317. PROBAR I HAVE ADHD EN SESIONES DE LOTE (idea, 2026-10-19). Skill de Claude Code que pone la respuesta primero y saca el relleno
+319. PROBAR I HAVE ADHD EN SESIONES DE LOTE (idea, 2026-10-19). Skill de Claude Code que pone la respuesta primero y saca el relleno
     (repo `ayghri/i-have-adhd`; verificar el dueño antes de instalar, hay copias con el mismo nombre). Probar un lote con y sin ella; en
     línea con "un mensaje, preguntas en orden".
-318. PROBAR BROWSER USE (idea, 2026-10-19). Solo para portales con formularios de secuencia fija que hoy consumen mucho contexto del Browser
+320. PROBAR BROWSER USE (idea, 2026-10-19). Solo para portales con formularios de secuencia fija que hoy consumen mucho contexto del Browser
     pane. Esperar a que aparezca uno en un lote; hoy no es urgente.
-319. HIGGSFIELD MCP (idea, 2026-10-19). Conector (`https://mcp.higgsfield.ai/mcp`) para generar imágenes y video corto con créditos de
-    Higgsfield. Sirve para los visuales del 311 (c); verificar precio y condiciones en su sitio, las fuentes encontradas son blogs.
-320. ZAPIER MCP Y OMNIROUTE (ideas, 2026-10-19; a demanda). Zapier: solo si el flujo de mails (51) o el de publicación (311) necesitan
+321. HIGGSFIELD MCP (idea, 2026-10-19). Conector (`https://mcp.higgsfield.ai/mcp`) para generar imágenes y video corto con créditos de
+    Higgsfield. Sirve para los visuales del 313 (c); verificar precio y condiciones en su sitio, las fuentes encontradas son blogs.
+322. ZAPIER MCP Y OMNIROUTE (ideas, 2026-10-19; a demanda). Zapier: solo si el flujo de mails (51) o el de publicación (313) necesitan
     automatizar "respuesta → fila" o programar posts; exponer solo las acciones necesarias. OmniRoute: gateway local de modelos con
     fallback, para abaratar la API (no Haiku, ver la regla de modelos); concentra credenciales y prompts, así que se revisa el repo
     antes. Quedan sin ubicar OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: pedir los links a Guido.
 
 ### Entrada de CHANGELOG (para la principal)
-* Diez to-dos nuevos (311-320): contenido para X e Instagram y la lista de herramientas a probar (Stirling PDF, Crawl4AI, Maxun,
+* Diez to-dos nuevos (313-322): contenido para X e Instagram y la lista de herramientas a probar (Stirling PDF, Crawl4AI, Maxun,
   Supabase de lectura, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier, OmniRoute). Sin código.
