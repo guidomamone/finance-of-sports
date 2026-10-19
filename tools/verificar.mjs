@@ -683,9 +683,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const ing = FIN_INGRESO_RE.test(t) && !GASTOS_RE.test(t); const gas = FIN_GASTO_RE.test(t) && !INGRESOS_RE.test(t);
     return ing && !gas ? 1 : gas && !ing ? -1 : 0;
   };
-  const conSignoRotulo = (arr) => arr.reduce((a, f) => { const sg = signoRotulo(f); return a + (sg ? sg * Math.abs(f.M || 0) : (f.M || 0)); }, 0);
+  const conSignoRotulo = (arr, conSig = false) => arr.reduce((a, f) => { const sg = signoRotulo(f); return a + (sg ? sg * (conSig ? (f.M || 0) : Math.abs(f.M || 0)) : (f.M || 0)); }, 0);
   // el efecto del financiero y el signo del impuesto según la lectura que cerró (los mismos nombres que COMBOS, más "financiero por rótulo")
-  const finSegun = (lect, arr) => (/por rótulo/.test(String(lect)) ? conSignoRotulo(arr) : (/financiero e impuesto invertidos|financiero invertido/.test(String(lect)) ? -1 : 1) * conSigno(arr));
+  const finSegun = (lect, arr) => (/por rótulo/.test(String(lect)) ? conSignoRotulo(arr, /con signo/.test(String(lect))) : (/financiero e impuesto invertidos|financiero invertido/.test(String(lect)) ? -1 : 1) * conSigno(arr));
   const siSegun = (lect) => (/financiero e impuesto invertidos|impuesto invertido/.test(String(lect)) ? -1 : 1);
 
   // 3. totales y resultado: LA ESCALERA DE LECTURAS (Versión 342, flujo aprobado por Guido el 2026-10-01). Se prueba una lectura; si no cierra
@@ -925,6 +925,17 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           for (const si of conImp ? [1, -1] : [1]) {
             const pat = suma(ing) - suma(gas) + conSignoRotulo(finL) + (conImp ? si * conSigno(imp) : 0);
             if (cierraRes(pat, true, tol5)) { okRes = true; difRes = Math.abs(Math.abs(pat) - Math.abs(objetivo)); lect = si === 1 ? 'financiero por rótulo' : 'financiero por rótulo, impuesto invertido'; exactoRes = true; break; }
+          }
+          if (okRes) break;
+        }
+        // (to-do 298 ag, ok de Guido 2026-10-19) EL SIGNO POR RÓTULO, CON EL VALOR IMPRESO CON SU SIGNO: el escalón de arriba toma el valor absoluto
+        // de cada fila, y una reversión negativa dentro de los costos ("Annen finanskostnad" −136.202, dentro de "Sum finanskostnader" 1.313.085)
+        // debe restar de verdad, no sumar. Mismo orden y misma compuerta (resultado EXACTO), antes de la tolerancia. Caso: Sarpsborg 08 2023,
+        // netInterest 2,63 M en vez de 8.446 (L136-145 del .md; 0,1809 + 1,1406 − 1,4493 + 0,1362). Medido: 722 documentos, 721 idénticos.
+        if (exacto && finL.some((f) => signoRotulo(f)) && Math.abs(conSignoRotulo(finL, true) - conSignoRotulo(finL)) > 1e-9) {
+          for (const si of conImp ? [1, -1] : [1]) {
+            const pat = suma(ing) - suma(gas) + conSignoRotulo(finL, true) + (conImp ? si * conSigno(imp) : 0);
+            if (cierraRes(pat, true, tol5)) { okRes = true; difRes = Math.abs(Math.abs(pat) - Math.abs(objetivo)); lect = si === 1 ? 'financiero por rótulo con signo' : 'financiero por rótulo con signo, impuesto invertido'; exactoRes = true; break; }
           }
           if (okRes) break;
         }
@@ -1668,7 +1679,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const sfCarga = forzado ? 1 : /financiero e impuesto invertidos|financiero invertido/.test(lect) ? -1 : 1;
   // (to-do 212) "financiero por rótulo": cada fila con el signo de su rótulo (las que no dicen nada, como están impresas)
   const porRotulo = !forzado && /por rótulo/.test(lect);
-  const finCarga = (f) => (porRotulo ? (signoRotulo(f) ? signoRotulo(f) * Math.abs(f.M || 0) : f.M) : sfCarga * f.M);
+  const finCarga = (f) => (porRotulo ? (signoRotulo(f) ? signoRotulo(f) * (/con signo/.test(lect) ? (f.M || 0) : Math.abs(f.M || 0)) : f.M) : sfCarga * f.M);
   const siCarga = forzado || resultadoFinal?.impuesto === 'restado' ? -1 : resultadoFinal?.impuesto === 'sumado' ? 1 : /financiero e impuesto invertidos|impuesto invertido/.test(lect) ? -1 : 1;
 
   // (to-do 214, escalón 3, aprobado por Guido el 2026-10-13) SOLO EL RESULTADO coincide a 0,01% (de los ingresos): con el resultado exacto,
