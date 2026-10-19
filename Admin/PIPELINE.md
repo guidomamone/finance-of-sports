@@ -513,6 +513,15 @@ Mitigaciones:
 - a) `cargar.mjs --desde-verificacion`: carga solo lo que la etapa 6 dejó en "ok". Tipo de cambio, liga y fuente con página. Si el
   documento no está `listo-para-jev` en el registro, el freno dice por qué (sin `.verificacion.json`, la etapa 6 no cerró, la validación es
   de otra versión del .md, números sin confirmar de la etapa 4, o el registro no se actualizó porque no corrió el lote).
+  LA LIGA DE UN AÑO NUEVO (to-do 298 u): escalón 0, la fila de `data/club-leagues`; escalón 1, la lista de equipos guardada de esa
+  temporada (`alta-club.mjs` proponerLiga: el club UNA sola vez, con su nombre exacto o un alias de `tools/club-league-reference/alias.json`,
+  o una coincidencia parcial única). Para que el escalón 1 tenga listas, `lote.mjs --cargar` corre antes `tools/listas-lote.mjs --lote
+  <lista>` (gratis, Wikipedia): baja las listas que faltan de los años de la lista, para cada liga del país con nombre en NOMBRES, también
+  con sus nombres viejos (OTROS_NOMBRES: Bélgica antes de 2016 y 2016-2020), con la compuerta de siempre de la lista (tamaño y todos los
+  clubes del sitio de esa liga-año). Medido en el lote 92 (Bélgica 2013-2024): 41 de 51 listas pasan; 44 de 55 documentos encuentran su
+  liga; los 11 que no, quedan sin decidir (listas de un solo grupo en las ligas amateur, First Division B 2017-18 y 2018-19 con un equipo
+  menos, Patro Eisden 2013-2014). Después de la liga, la compuerta de estadio y sponsor (to-do 273) frena 22 de esos años por sponsor o
+  estadio que Wikipedia no trae.
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año. Se commitean TODOS los archivos que lista "Alta escrita (...)",
   también los compartidos (`data/currency-map.js` con el tipo de cambio nuevo): en las altas italianas quedó afuera y se commiteó suelto.
   `alta-club.mjs --todos` (el registro `Admin/registros/altas-club.jsonl`): una carpeta cuyos `.md` están TODOS en `documentos-descartados.txt`

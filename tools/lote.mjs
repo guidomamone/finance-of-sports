@@ -539,6 +539,12 @@ if (resultado.sinPropuesta.length) { console.log(`Sin propuesta de carga ${resul
 let escritos = 0;
 if (CARGAR) {
   soltarCandado();
+  // (to-do 298 u, ok de Guido 2026-10-18) antes de cargar, las listas de equipos que faltan para los años de la lista (gratis: Wikipedia),
+  // para que la carga de un año nuevo encuentre su liga (alta-club.mjs, el club en UNA sola lista) y la compuerta de estadio y sponsor
+  // tenga su página. Sin --ejecutar es el ensayo de listas-lote (no guarda nada). Lo que guarda queda en tools/club-league-reference/.
+  const rl = spawnSync('node', [resolve(ROOT, 'tools/listas-lote.mjs'), '--lote', LISTA, ...(EJECUTAR ? [] : ['--ensayo'])], { cwd: ROOT, stdio: ['inherit', 'pipe', 'inherit'], encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });
+  const resumenListas = String(rl.stdout || '').split('\n').filter((l) => /^listas-lote:|^ {2}NO:/.test(l));
+  if (resumenListas.length) console.log(`\nListas de equipos para la liga de los años nuevos (tools/listas-lote.mjs --lote):\n${resumenListas.join('\n')}${EJECUTAR ? '\n(lo guardado en tools/club-league-reference/ se commitea aparte)' : ''}`);
   // La salida de cargar-lote.mjs se muestra igual que antes; se lee además para contar los años escritos en la tabla final.
   const r = spawnSync('node', [resolve(ROOT, 'tools/cargar-lote.mjs'), '--lista', LISTA, ...(EJECUTAR ? ['--escribir'] : [])], { cwd: ROOT, stdio: ['inherit', 'pipe', 'inherit'], encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
   if (r.stdout) process.stdout.write(r.stdout);

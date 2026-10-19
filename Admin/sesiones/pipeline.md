@@ -42,3 +42,34 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - Un documento belga con ajustes `fila` se verifica como antes.
 
 ## Después del merge de la 298 t (2026-10-18)
+
+### Qué cambió (para CHANGELOG)
+
+- **La liga de un año nuevo (to-do 298 u, ok de Guido 2026-10-18: "mientras no rompa nada, ok a todo").** `tools/listas-lote.mjs --lote
+  <lista>`: además de su modo de siempre, baja las listas de equipos que faltan de los años de los documentos de la lista (la fecha de
+  cierre del registro), para cada liga del país con nombre en NOMBRES, también con sus nombres viejos (OTROS_NOMBRES; Bélgica: Second /
+  Third / Fourth Division antes de 2016, First Division A y B y First / Second Amateur Division 2016-2020, como el mismo escalón de la
+  pirámide). Compuerta de la lista, la de siempre. NOMBRES suma be-challengerproleague, be-div1amateur y be-div2amateur. `tools/lote.mjs
+  --cargar` la corre antes de cargar-lote (sin `--ejecutar`, en ensayo). `tools/alta-club.mjs` (proponerLiga): un alias de
+  `tools/club-league-reference/alias.json` vale como el nombre exacto. Alias belgas nuevos: "Oud-Heverlee Leuven" (OH Leuven), "RWDM47" y
+  "RWD Molenbeek" (RWDM), "Patro Eisden Maasmechelen", "Lierse Kempenzonen" (Lierse SK desde 2018-19; el viejo Lierse S.K. no), "Beerschot
+  Wilrijk", "Lommel United". Medido: ensayo de listas-lote sobre el lote 92, 41 de 51 listas pasan la compuerta; con ellas, 44 de 55
+  documentos encuentran su liga (los 11 restantes quedan sin decidir, ninguno mal); medir-cargar de los 815 documentos idéntico (el alias
+  solo cuenta en años sin fila de liga). Auditoría P0 0 / P1 0. Commit 48d52fb26d.
+
+### Qué queda (para TODO)
+
+- **La compuerta de estadio y sponsor (to-do 273) sigue frenando a Bélgica.** Con la liga resuelta, de los 40 años con liga del lote 92,
+  18 pasan y 22 frenan: "falta sponsor" en la Pro League y la Challenger (Beerschot 2022 y 2024, OH Leuven 2022-2024, Lierse SK 2023-2024,
+  Lommel SK 2024, Patro Eisden 2015 y 2024, RWDM 2024) y "falta estadio y sponsor" en las ligas amateur (Lierse SK 2019-2020,
+  Lokeren-Temse 2023-2024, Patro Eisden 2017-2023, RWDM 2019). Lo que falta va a `tools/contexto-manual.json` con fuente, o a otro escalón
+  de estadio-sponsor.mjs (`--local`, la Wikipedia del país). Medido corriendo la compuerta y restaurando data/contexto.
+- **Decisión para Guido: las ligas belgas de ascenso y amateur en Ligas.** Cuando el lote guarde las listas nuevas (be-challengerproleague,
+  be-div1amateur y be-div2amateur 2013-2025), faltantes-liga.mjs y estimar.mjs les arman faltantes y estimados (archivos nuevos en
+  data/faltantes/ y data/estimados/, +123 líneas en Admin/sourcing/pendientes.md): se ve en el sitio con el primer año que se cargue.
+  Se midió en la rama y se revirtió; no está commiteado.
+- **298 u, lo que no decide:** listas de un solo grupo (Third Division antes de 2016, Second Amateur Division / Division 2: Lokeren-Temse
+  2021-2022, Patro Eisden 2013-2014 y 2019); la First Division B 2017-18 y 2018-19 baja con 7 equipos de 8 (falta Beerschot Wilrijk: la
+  tool que baja las listas pierde una fila) y la compuerta la rechaza (OH Leuven 2017-2019, Beerschot 2019). Letra aparte, con su escalón.
+- **Caso para la 298 f:** Lierse SK 2023 tiene en el registro el cierre 2023-10-28 (la asamblea, .md L27) y no el 30-06-2023 de la celda
+  (L33): con ese cierre, la carga le daría la temporada 2023-24. Es el mismo defecto de la f (fechas del cierre en celdas).

@@ -31,7 +31,8 @@ const { cierreDelClub } = createRequire(import.meta.url)('./cierre-ejercicio.js'
 // Nombre de la liga en la Wikipedia en inglés, y si la temporada cruza dos años.
 const NOMBRES = {
   'ar-primera': ['Argentine Primera División', null], 'ar-primeranacional': ['Primera Nacional', null], 'ar-primerab': ['Primera B Metropolitana', null],
-  'be-proleague': ['Belgian Pro League', true], 'cl-primera': ['Chilean Primera División', false], 'de-bundesliga': ['Bundesliga', true],
+  'be-proleague': ['Belgian Pro League', true], 'be-challengerproleague': ['Challenger Pro League', true], 'be-div1amateur': ['Belgian National Division 1', true],
+  'be-div2amateur': ['Belgian Division 2', true], 'cl-primera': ['Chilean Primera División', false], 'de-bundesliga': ['Bundesliga', true],
   'de-2bundesliga': ['2. Bundesliga', true], 'dk-superliga': ['Danish Superliga', true], 'es-laliga': ['La Liga', true],
   'es-segunda': ['Segunda División', true], 'hr-hnl': ['Croatian Football League', true], 'it-seriec': ['Serie C', true],
   'jp-j1': ['J1 League', false], 'mx-ligamx': ['Liga MX', true], 'pe-liga1': ['Liga 1 (Peru)', false], 'ru-pervayaliga': ['Russian First League', true],
@@ -44,7 +45,13 @@ const OTRO_IDIOMA = {
 };
 
 // nombres viejos de la liga en los títulos de Wikipedia ("2016–17 Primera B Nacional")
-const OTROS_NOMBRES = { 'ar-primeranacional': ['Primera B Nacional'] };
+const OTROS_NOMBRES = {
+  'ar-primeranacional': ['Primera B Nacional'],
+  // (to-do 298 u, ok de Guido 2026-10-18) Bélgica: la liga de cada escalón de la pirámide con sus nombres de antes y después de la reforma
+  // de 2016 (antes, Second / Third / Fourth Division; 2016-17 a 2019-20, First Division A y B y First / Second Amateur Division)
+  'be-proleague': ['Belgian First Division A'], 'be-challengerproleague': ['Belgian First Division B', 'Belgian Second Division'],
+  'be-div1amateur': ['Belgian First Amateur Division', 'Belgian Third Division'], 'be-div2amateur': ['Belgian Second Amateur Division', 'Belgian Fourth Division'],
+};
 const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 const STOP = new Set(['fc', 'cf', 'sc', 'ac', 'afc', 'cd', 'ca', 'club', 'de', 'del', 'the', 'and', 'sad', 'cp', 'fk', 'sk', 'nk', 'sv', 'vfl', 'vfb', 'tsg', 'rcd', 'ud', 'sd', 'rc']);
 const corto = (s) => norm(s).split(' ').filter((w) => !STOP.has(w)).join(' ');
@@ -128,6 +135,25 @@ async function main() {
   }
   // liga-años objetivo: { liga, anio, ids }
   const obj = {};
+  // (to-do 298 u, ok de Guido 2026-10-18) --lote <lista>: además, los liga-años de los ejercicios de la lista que todavía no están cargados
+  // (un año nuevo no tiene fila en data/club-leagues, así que el modo de siempre no los ve): para el año de cada documento (su fecha de
+  // cierre en el registro), cada liga del país con nombre en NOMBRES. La compuerta de la lista es la de siempre (tamaño y todos los clubes
+  // del sitio de esa liga-año); la liga del club la decide después la carga (alta-club.mjs: el club en UNA sola lista, nombre o alias).
+  const iLote = process.argv.indexOf('--lote');
+  if (iLote >= 0) {
+    const { clubDeRuta } = await import('./carpetas-clubes.mjs');
+    const cierre = new Map(); for (const l of readFileSync(resolve(ROOT, 'Admin/registros/transcripciones-estado.jsonl'), 'utf8').split('\n')) { try { const e = JSON.parse(l); if (e.pdf && e.periodo?.cierre) cierre.set(e.pdf, e.periodo.cierre); } catch { /* línea vacía */ } }
+    for (const pdf of readFileSync(resolve(ROOT, process.argv[iLote + 1]), 'utf8').split('\n').map((x) => x.trim()).filter((x) => x && !x.startsWith('#'))) {
+      const { clubId } = clubDeRuta(pdf); const c = cierre.get(pdf);
+      if (!clubId || !c) continue;
+      const iso = clubId.slice(-2); const y = Number(c.slice(0, 4)); const mes = Number(c.slice(5, 7));
+      for (const liga of Object.keys(NOMBRES).filter((l) => l.startsWith(`${iso}-`))) {
+        const anio = NOMBRES[liga][1] && mes >= 9 ? y + 1 : y;
+        if (cache[iso]?.leagues?.[liga]?.[anio]) continue;
+        obj[`${liga}|${anio}`] ??= { liga, anio, iso, ids: new Set() };
+      }
+    }
+  }
   for (const [id, ys] of Object.entries(CL)) for (const [y, liga] of Object.entries(ys)) {
     if (!NOMBRES[liga]) continue;
     // el cierre de ESE ejercicio (club-index `ci`), como faltantes-liga.mjs: Parma cerró el 30/6 de 2016 a 2019 aunque su regla sea el
@@ -141,7 +167,8 @@ async function main() {
   for (const o of Object.values(obj).sort((a, b) => a.liga.localeCompare(b.liga) || a.anio - b.anio)) {
     const [nombre, partida] = NOMBRES[o.liga];
     const yy = (n) => String(n).slice(2);
-    const titulos = [...(partida !== false ? [`${o.anio - 1}–${yy(o.anio)} ${nombre}`] : []), ...(partida !== true ? [`${o.anio} ${nombre}`] : [])];
+    // (to-do 298 u) con --lote, también los nombres viejos de la liga, antes de la búsqueda
+    const titulos = [nombre, ...(iLote >= 0 ? OTROS_NOMBRES[o.liga] || [] : [])].flatMap((n) => [...(partida !== false ? [`${o.anio - 1}–${yy(o.anio)} ${n}`] : []), ...(partida !== true ? [`${o.anio} ${n}`] : [])]);
     // COMPUERTA: (1) el título pedido trae la temporada ("2023–24" o "2024", no "2024–25") y el nombre de la liga: una búsqueda trae
     // páginas de otro año ("2026 Primera Nacional" para 2021) o de otra liga, y nuestros clubes también están ahí; (2) si club-leagues
     // sabe cuántos equipos jugó la liga ese año, coincide; si no, entre 8 y 40; (3) están TODOS los clubes del sitio de esa liga-año.
