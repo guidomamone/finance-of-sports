@@ -24,3 +24,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.pdf` (sourceId `liersesk-be-jaarrekening-2024-06-30-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.pdf` (sourceId `liersesk-be-jaarrekening-2020-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf` (sourceId `liersesk-be-jaarrekening-2021-06-30-individual`).

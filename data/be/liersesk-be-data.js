@@ -13,6 +13,8 @@ const lierseskbeRevenueLinesByYear = {
   ],
   2020: [
   ],
+  2021: [
+  ],
 };
 const lierseskbeExpenseLinesByYear = {
   2025: [
@@ -48,6 +50,10 @@ const lierseskbeExpenseLinesByYear = {
   2020: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations_expense', amountNative:-0.001475, disclosureLevel:'aggregated' },
     { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.000098, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations_expense', amountNative:-0.001436, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.000201, disclosureLevel:'aggregated' },
   ],
 };
 const lierseskbeFiscalYearMeta = {
@@ -140,6 +146,24 @@ const lierseskbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0, officialTotalExpenses:0.001573, officialPAT:-0.019422,
   },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'liersesk-be-jaarrekening-2021-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.020313, tax:-0.004467,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.020343},
+      {label:'Recurrente financiële kosten', value:-0.00003},
+      {label:'Belastingen op het resultaat (+)/(-)', value:-0.004467},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'expense', importe:0.001436, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0, officialTotalExpenses:0.001637, officialPAT:0.014209,
+  },
 };
 const lierseskbePresupuestoOverlayByYear = {};
 
@@ -179,6 +203,11 @@ Object.assign(sources, {
   'liersesk-be-jaarrekening-2020-06-30-individual': {
     id:'liersesk-be-jaarrekening-2020-06-30-individual', clubId:'liersesk-be',
     title:'Lierse SK — jaarrekening-2020-06-30-individual (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'liersesk-be-jaarrekening-2021-06-30-individual': {
+    id:'liersesk-be-jaarrekening-2021-06-30-individual', clubId:'liersesk-be',
+    title:'Lierse SK — jaarrekening-2021-06-30-individual (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
