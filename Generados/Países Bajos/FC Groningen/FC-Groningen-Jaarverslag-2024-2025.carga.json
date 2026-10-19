@@ -1,24 +1,19 @@
 {
  "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
- "generado": "2026-10-19T02:28:44.813Z",
+ "generado": "2026-10-19T03:08:07.305Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fcgroningen-nl)"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "13 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Uitkeringen\" -> broadcasting 0.45; \"Boekwaarde contracten spelers\" -> player_amortisation 0.6; \"Ontvangen/(betaalde) opleidingsvergoedin\" -> youth_football 0.55; \"Overige spelers\" -> wages_squad 0.6; \"Medische staf\" -> wages_squad 0.65"
-  },
-  {
    "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del documento, 2026-10-18: La entidad que presenta es la holding FC Groningen Beheer B.V.; el fútbol está en la controlada FC Groningen B.V. (primer equipo, fichajes), más Euroborg Horeca B.V. (catering del estadio), Regionale voetbalopleiding Groningen B.V. (fútbol base) y Greenrock Holding B.V. (no se describe; minoritaria frente al resto). Hay cuenta de resultados consolidada (L1010) y enkelvoudige (cap. 10-12, índice L52-54). (subagente Sonnet, revisado por Claude 2026-10-18))",
-  "ingresos: ningún total impreso igual a la suma de las líneas (33.764219); queda la suma, verificada por el resultado del ejercicio",
-  "gastos: ningún total impreso igual a la suma de las líneas (-31.871009); queda la suma, verificada por el resultado del ejercicio"
+  "gastos: ningún total impreso igual a la suma de las líneas (-30.093402); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "fcgroningen-nl",
@@ -78,13 +73,13 @@
    },
    {
     "rawLabel": "Uitkeringen",
-    "normalizedCategory": "broadcasting",
+    "normalizedCategory": "competition_bonus",
     "amountNative": 1.72554,
     "disclosureLevel": "aggregated",
     "_pag": 57,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige baten",
@@ -117,27 +112,27 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Ontvangen/(betaalde) opleidingsvergoedingen",
-    "normalizedCategory": "youth_football",
-    "amountNative": 0.564294,
-    "disclosureLevel": "aggregated",
-    "_pag": 59,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
-   }
-  ],
-  "expenseLines": [
-   {
     "rawLabel": "Boekwaarde contracten spelers",
-    "normalizedCategory": "player_amortisation",
+    "normalizedCategory": "player_sales",
     "amountNative": -1.777607,
     "disclosureLevel": "aggregated",
     "_pag": 59,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): renglón de la nota 9.8 que arma el Resultaat vergoedingssommen (4.446.617): el valor en libros de los jugadores vendidos va dentro de la venta de jugadores, no como amortización (la amortización es otra fila, nota 9.7) (subagente Sonnet, revisado por Claude 2026-10-19)"
    },
+   {
+    "rawLabel": "Ontvangen/(betaalde) opleidingsvergoedingen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.564294,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
    {
     "rawLabel": "Inkoopwaarde van de omzet",
     "normalizedCategory": "other_expenses",
@@ -164,9 +159,9 @@
     "amountNative": -0.558057,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Technische staf",
@@ -184,9 +179,9 @@
     "amountNative": -0.371886,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Scouting",
@@ -200,13 +195,13 @@
    },
    {
     "rawLabel": "Overige staf voetbalorganisatie",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "wages_squad",
     "amountNative": -1.002601,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Directie/management",
@@ -224,9 +219,9 @@
     "amountNative": -1.486851,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Operationeel",
@@ -234,9 +229,9 @@
     "amountNative": -1.113987,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Merchandise",
@@ -244,9 +239,9 @@
     "amountNative": -0.142673,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Horeca",
@@ -254,9 +249,9 @@
     "amountNative": -1.317899,
     "disclosureLevel": "aggregated",
     "_pag": 58,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gebouwen",
@@ -294,9 +289,9 @@
     "amountNative": -4.977639,
     "disclosureLevel": "aggregated",
     "_pag": 59,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Verkoopkosten",
@@ -314,9 +309,9 @@
     "amountNative": -0.278963,
     "disclosureLevel": "aggregated",
     "_pag": 59,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kosten horeca",
@@ -324,9 +319,9 @@
     "amountNative": -0.332762,
     "disclosureLevel": "aggregated",
     "_pag": 59,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Algemene kosten",
@@ -391,8 +386,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 33.764219,
-   "officialTotalExpenses": 31.871009,
+   "officialTotalRevenue": 31.986612,
+   "officialTotalExpenses": 30.093402,
    "officialPAT": 1.643346
   },
   "source": {
@@ -436,6 +431,17 @@
    "evidencia": "De activiteiten van FC Groningen Beheer B.V. en haar dochtermaatschappijen bestaan voornamelijk uit het exploiteren van een betaald voetbalorganisatie (L1088); dochters: FC Groningen B.V. (100%), Euroborg Horeca B.V. (100%), Regionale voetbalopleiding Groningen B.V. (100%), Greenrock Holding B.V. (1",
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Boekwaarde contracten spelers",
+   "motivo": "renglón de la nota 9.8 que arma el Resultaat vergoedingssommen (4.446.617): el valor en libros de los jugadores vendidos va dentro de la venta de jugadores, no como amortización (la amortización es otra fila, nota 9.7) (subagente Sonnet, revisado por Claude 2026-10-19)",
+   "evidencia": ".md L1921",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
  "seleccion": {
@@ -526,12 +532,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Netto-omzet (9.1)\")",
    "signoFijo": 1.72554,
-   "cat": "broadcasting",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Uitkeringen' (1.725.540) es la partida 'uitkering derden' de la Netto-omzet 9.1: pagos de KNVB, UEFA y ECV (solidaridad UEFA ~0,95 M + reparto ECV ~0,6 M), según el texto del propio informe. El documento ya separa 'Mediarechten' 4.357.497 (TV propia), asi que no es broadcasting. Es un pago de los organismos de competicion por participar (como 'Prijzengeld' de Go Ahead/PEC Zwolle): competition_bonus. Alternativa razonable: other_income (el informe lo comenta bajo 'Overige baten'). Cuenta 9.1: 4.697.550+9.891.505+4.357.497+1.961.748+4.201.114+1.725.540+623.973 = 27.458.927 OK. [Uitkeringen | 1.725.540 | 691.037 (L1802); 'De toename van uitkering derden wordt veroorzaakt door de hogere uitkeringen van de KNVB, UEFA en ECV' (L1806)]",
    "destino": "revenue",
    "amountNative": 1.72554
   },
@@ -584,16 +590,16 @@
    "label": "Boekwaarde contracten spelers",
    "page": 59,
    "native": 1.777607,
-   "ladoDoc": "expense",
+   "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Resultaat vergoedingssommen (9.8)\")",
-   "signoFijo": 1.777607,
-   "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "signoFijo": -1.777607,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): renglón de la nota 9.8 que arma el Resultaat vergoedingssommen (4.446.617): el valor en libros de los jugadores vendidos va dentro de la venta de jugadores, no como amortización (la amortización es otra fila, nota 9.7) (subagente Sonnet, revisado por Claude 2026-10-19)",
    "enLista": true,
-   "enCola": true,
-   "destino": "expense",
+   "ladoRechazado": false,
+   "destino": "revenue",
    "amountNative": -1.777607
   },
   {
@@ -603,12 +609,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Resultaat vergoedingssommen (9.8)\")",
    "signoFijo": 0.564294,
-   "cat": "youth_football",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Ontvangen/(betaalde) opleidingsvergoedingen' (564.294, neto recibido menos pagado) es el tercer renglon de 9.8 Resultaat vergoedingssommen, que el documento define como saldo de compra/venta de jugadores. Se carga dentro del resultado de traspasos (player_sales), coherente con PEC Zwolle (solidariteit- en opleidingsvergoedingen) y con el precedente neerlandes; no youth_football. Alternativa defendible: youth_football (derechos de formacion), pero rompe el bloque de 4.446.617. [Ontvangen/(betaalde) opleidingsvergoedingen | 564.294 | 429.534 (L1923)]",
    "destino": "revenue",
    "amountNative": 0.564294
   },
@@ -650,11 +656,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
    "signoFijo": 0.558057,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Overige spelers' (558.057) es sueldo de jugadores no del primer plantel dentro de la 'Functionele specificatie personeelskosten' (jugadores de contrato / Opleiding): wages_squad. Cuenta: las 11 filas suman 14.759.126 = Personeelskosten 14.759.125 (redondeo). [Overige spelers | 558.057 | 456.254 (L1862)]",
    "destino": "expense",
    "amountNative": -0.558057
   },
@@ -681,11 +687,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
    "signoFijo": 0.371886,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Medische staf' (371.886) es personal medico del plantel; precedente Go Ahead 'Medische begeleiding' = wages_squad. [Medische staf | 371.886 | 360.534 (L1864)]",
    "destino": "expense",
    "amountNative": -0.371886
   },
@@ -711,12 +717,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
    "signoFijo": 1.002601,
-   "cat": "other_expenses",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Overige staf voetbalorganisatie' (1.002.601) es personal de la organizacion de futbol (cuerpo tecnico adicional, scouting aparte): es sueldo del staff deportivo, no 'otros gastos'. Va a wages_squad junto a Technische staf y Medische staf (la categoria otros gastos sacaria sueldos del bucket de salarios). Alternativa: admin_general_expense si se lo considera personal no deportivo, pero el nombre dice voetbalorganisatie. [Overige staf voetbalorganisatie | 1.002.601 | 818.095 (L1866)]",
    "destino": "expense",
    "amountNative": -1.002601
   },
@@ -743,11 +749,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
    "signoFijo": 1.486851,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Commercie' (1.486.851) es personal del area comercial (no plantel) dentro de la apertura funcional de Personeelskosten: admin_general_expense (costos NO deportivos). [Commercie | 1.486.851 | 1.592.816 (L1868)]",
    "destino": "expense",
    "amountNative": -1.486851
   },
@@ -759,11 +765,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
    "signoFijo": 1.113987,
    "cat": "admin_general_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Operationeel' (1.113.987) es personal operativo/de estadio (no plantel): admin_general_expense. [Operationeel | 1.113.987 | 1.002.996 (L1869)]",
    "destino": "expense",
    "amountNative": -1.113987
   },
@@ -775,11 +781,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
    "signoFijo": 0.142673,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Merchandise' (142.673) en la apertura funcional de Personeelskosten = sueldos del personal de merchandising (2,0 FTE segun L825), no plantel. other_expenses (como Fanshop/merch de Go Ahead). Ojo: es costo de personal, no el ingreso Merchandising 1.961.748 (ese es sponsorship_commercial). [Merchandise | 142.673 | 128.917 (L1870)]",
    "destino": "expense",
    "amountNative": -0.142673
   },
@@ -791,11 +797,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
    "signoFijo": 1.317899,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Horeca' (1.317.899) en la apertura funcional de Personeelskosten = sueldos del personal de Euroborg Horeca B.V. (6,9 FTE segun L826), no plantel. other_expenses. Es un renglon de GASTO; el catering de INGRESO ('Food & Beverage' 4.201.114) iria a stadium_other como Go Ahead, pero no es este caso. [Horeca | 1.317.899 | 1.234.898 (L1871)]",
    "destino": "expense",
    "amountNative": -1.317899
   },
@@ -852,11 +858,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
    "signoFijo": 4.977639,
    "cat": "admin_general_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Huisvestingskosten' (4.977.639, alquiler y mantenimiento de estadio/instalaciones) = admin_general_expense, igual que Go Ahead. [Huisvestingskosten | 4.977.639 | 4.753.040 (L1897)]",
    "destino": "expense",
    "amountNative": -4.977639
   },
@@ -883,11 +889,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
    "signoFijo": 0.278963,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Kosten merchandise' (278.963) costo de venta/gestion de merchandising: other_expenses (precedente Fanshop de Go Ahead). [Kosten merchandise | 278.963 | 130.778 (L1899)]",
    "destino": "expense",
    "amountNative": -0.278963
   },
@@ -899,11 +905,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
    "signoFijo": 0.332762,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Kosten horeca' (332.762) costo operativo del catering: other_expenses. [Kosten horeca | 332.762 | 389.901 (L1900)]",
    "destino": "expense",
    "amountNative": -0.332762
   },
@@ -994,7 +1000,7 @@
   "porTabla": {
    "verificacion (nota que desglosa \"Netto-omzet (9.1)\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Resultaat vergoedingssommen (9.8)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Resultaat vergoedingssommen (9.8)\")": "gastos con signo",
    "verificacion (nota que desglosa \"Personeelskosten (9.4)\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Afschrijvingen materiële vaste activa (9.5)\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")": "gastos sin signo (se invierten)",
@@ -1003,14 +1009,14 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 33.764219,
-  "expSum": -31.871009,
-  "officialTotalRevenue": 33.764219,
-  "officialTotalExpenses": 31.871009,
+  "revSum": 31.986612,
+  "expSum": -30.093402,
+  "officialTotalRevenue": 31.986612,
+  "officialTotalExpenses": 30.093402,
   "officialPAT": 1.643346,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "por-resultado",
+   "ingresos": "impreso",
    "gastos": "por-resultado"
   },
   "patImpreso": {
@@ -1018,6 +1024,11 @@
    "pag": null,
    "M": 1.643346,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 31.986612
   }
  },
  "liga": {
@@ -1069,9 +1080,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
-  "lineasIngreso": 10,
-  "lineasGasto": 24,
+  "motivos": 2,
+  "lineasIngreso": 11,
+  "lineasGasto": 23,
   "metaFilas": 2,
   "excluidas": 0
  }

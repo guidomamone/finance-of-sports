@@ -1,28 +1,428 @@
 {
  "pdf": "Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2024-2025.pdf",
- "generado": "2026-10-19T02:28:47.309Z",
+ "generado": "2026-10-19T03:08:10.316Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (willemii-nl)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "9 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Lonen\" -> wages_squad 0.75; \"Overige personeelsbeloningen\" -> wages_squad 0.65; \"Pensioenlasten\" -> wages_squad 0.7; \"Afschrijvingen immateriële vaste activa\" -> player_amortisation 0.6; \"Betaalde huur\" -> admin_general_expense 0.75"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-19: Willem II Holding B.V. consolida al club (Willem II Tilburg B.V.) y al estadio (Vastgoed B.V.) (subagente Sonnet, revisado por Claude 2026-10-19))"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-19: Willem II Holding B.V. consolida al club (Willem II Tilburg B.V.) y al estadio (Vastgoed B.V.) (subagente Sonnet, revisado por Claude 2026-10-19))",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "willemii-nl",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Wedstrijdbaten",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 3.358038,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsoring",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 8.004763,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Media gerelateerde baten",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 3.3791,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandise",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.861242,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 2,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Horeca",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.935463,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Prijzengeld",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 1.53185,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige baten",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.679722,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Resultaat vergoedingssommen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.571597,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Lonen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -8.877293,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige personeelsbeloningen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.80445,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sociale lasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.061336,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioenlasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.178478,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen immateriële vaste activa",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.031,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.836525,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Betaalde huur",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.210866,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Onderhoud en schoonmaak",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.131569,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Energiekosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.253379,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige huisvestingskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.219842,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Hospitality",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.63267,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Spelershome en jeugdaccommodatie",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.204906,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kosten sponsoring/reclame/promotie",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.483558,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandise",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.593653,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía sponsorship_commercial, del otro lado que la fila: se propone la genérica de su lado"
+   },
+   {
+    "rawLabel": "Heffing KNVB",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.242371,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kosten dubieuze debiteuren",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.009558,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige verkoopkosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.250243,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Uitrusting en spelmaterialen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.472673,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Reis- en verblijfkosten incl. trainingskampen",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.184486,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kosten veiligheid",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.701569,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige wedstrijdkosten",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.37232,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Automatiseringskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.203109,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Scoutingskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.149113,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Accountantskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.096645,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Advieskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.100156,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Algemene verzekeringen",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.05646,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Contributies",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.126813,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige kosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.561945,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "willemii-nl-jaarverslag-2024-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.302082,
+   "tax": 0.005186,
+   "extraRows": [
+    {
+     "label": "Financiële baten en lasten",
+     "value": -0.302082
+    },
+    {
+     "label": "Vennootschapsbelasting",
+     "value": 0.005186
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 20.321775,
+   "officialTotalExpenses": 20.046986,
+   "officialPAT": -0.022107
+  },
+  "source": {
+   "id": "willemii-nl-jaarverslag-2024-2025",
+   "clubId": "willemii-nl",
+   "title": "Willem II Holding B.V. — Willem-II-Jaarverslag-2024-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2024-2025.md",
  "reemplaza": false,
  "periodo": {
@@ -39,5 +439,693 @@
  },
  "clubId": "willemii-nl",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2024-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Willem II Holding B.V. consolida al club (Willem II Tilburg B.V.) y al estadio (Vastgoed B.V.) (subagente Sonnet, revisado por Claude 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 38,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Wedstrijdbaten",
+   "page": 29,
+   "native": 3.358038,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (14)\")",
+   "signoFijo": 3.358038,
+   "cat": "matchday_competition",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.358038
+  },
+  {
+   "label": "Sponsoring",
+   "page": 29,
+   "native": 8.004763,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (14)\")",
+   "signoFijo": 8.004763,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.004763
+  },
+  {
+   "label": "Media gerelateerde baten",
+   "page": 29,
+   "native": 3.3791,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (14)\")",
+   "signoFijo": 3.3791,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.3791
+  },
+  {
+   "label": "Merchandise",
+   "page": 29,
+   "native": 0.861242,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (14)\")",
+   "signoFijo": 0.861242,
+   "cat": "sponsorship_commercial",
+   "conf": 0.93,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.861242
+  },
+  {
+   "label": "Horeca",
+   "page": 29,
+   "native": 0.935463,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (14)\")",
+   "signoFijo": 0.935463,
+   "cat": "stadium_other",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.935463
+  },
+  {
+   "label": "Prijzengeld",
+   "page": 29,
+   "native": 1.53185,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (14)\")",
+   "signoFijo": 1.53185,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.53185
+  },
+  {
+   "label": "Overige baten",
+   "page": 29,
+   "native": 0.679722,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (14)\")",
+   "signoFijo": 0.679722,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.679722
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "page": 17,
+   "native": 1.571597,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "signoFijo": 1.571597,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.571597
+  },
+  {
+   "label": "Lonen",
+   "page": 29,
+   "native": 8.877293,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten 15\")",
+   "signoFijo": 8.877293,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -8.877293
+  },
+  {
+   "label": "Overige personeelsbeloningen",
+   "page": 29,
+   "native": 0.80445,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten 15\")",
+   "signoFijo": 0.80445,
+   "cat": "wages_squad",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.80445
+  },
+  {
+   "label": "Sociale lasten",
+   "page": 29,
+   "native": 1.061336,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten 15\")",
+   "signoFijo": 1.061336,
+   "cat": "wages_squad",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.061336
+  },
+  {
+   "label": "Pensioenlasten",
+   "page": 29,
+   "native": 0.178478,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten 15\")",
+   "signoFijo": 0.178478,
+   "cat": "wages_squad",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.178478
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa",
+   "page": 29,
+   "native": 1.031,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen op immateriële en materiële vaste activa (16)\")",
+   "signoFijo": 1.031,
+   "cat": "player_amortisation",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.031
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "page": 29,
+   "native": 0.836525,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen op immateriële en materiële vaste activa (16)\")",
+   "signoFijo": 0.836525,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.836525
+  },
+  {
+   "label": "Betaalde huur",
+   "page": 30,
+   "native": 0.210866,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Huisvestingskosten (17)\")",
+   "signoFijo": 0.210866,
+   "cat": "admin_general_expense",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.210866
+  },
+  {
+   "label": "Onderhoud en schoonmaak",
+   "page": 30,
+   "native": 1.131569,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Huisvestingskosten (17)\")",
+   "signoFijo": 1.131569,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.131569
+  },
+  {
+   "label": "Energiekosten",
+   "page": 30,
+   "native": 0.253379,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Huisvestingskosten (17)\")",
+   "signoFijo": 0.253379,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.253379
+  },
+  {
+   "label": "Overige huisvestingskosten",
+   "page": 30,
+   "native": 0.219842,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Huisvestingskosten (17)\")",
+   "signoFijo": 0.219842,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.219842
+  },
+  {
+   "label": "Hospitality",
+   "page": 30,
+   "native": 0.63267,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Horeca (18)\")",
+   "signoFijo": 0.63267,
+   "cat": "other_expenses",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.63267
+  },
+  {
+   "label": "Spelershome en jeugdaccommodatie",
+   "page": 30,
+   "native": 0.204906,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Horeca (18)\")",
+   "signoFijo": 0.204906,
+   "cat": "youth_other_sports_expense",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.204906
+  },
+  {
+   "label": "Kosten sponsoring/reclame/promotie",
+   "page": 30,
+   "native": 0.483558,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Verkoopkosten (19)\")",
+   "signoFijo": 0.483558,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.483558
+  },
+  {
+   "label": "Merchandise",
+   "page": 30,
+   "native": 0.593653,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Verkoopkosten (19)\")",
+   "signoFijo": 0.593653,
+   "cat": "other_expenses",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía sponsorship_commercial, del otro lado que la fila: se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.593653
+  },
+  {
+   "label": "Heffing KNVB",
+   "page": 30,
+   "native": 0.242371,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Verkoopkosten (19)\")",
+   "signoFijo": 0.242371,
+   "cat": "match_organisation_expense",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.242371
+  },
+  {
+   "label": "Kosten dubieuze debiteuren",
+   "page": 30,
+   "native": 0.009558,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Verkoopkosten (19)\")",
+   "signoFijo": 0.009558,
+   "cat": "admin_general_expense",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.009558
+  },
+  {
+   "label": "Overige verkoopkosten",
+   "page": 30,
+   "native": 0.250243,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Verkoopkosten (19)\")",
+   "signoFijo": 0.250243,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.250243
+  },
+  {
+   "label": "Uitrusting en spelmaterialen",
+   "page": 30,
+   "native": 0.472673,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten (20)\")",
+   "signoFijo": 0.472673,
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.472673
+  },
+  {
+   "label": "Reis- en verblijfkosten incl. trainingskampen",
+   "page": 30,
+   "native": 0.184486,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten (20)\")",
+   "signoFijo": 0.184486,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.184486
+  },
+  {
+   "label": "Kosten veiligheid",
+   "page": 30,
+   "native": 0.701569,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten (20)\")",
+   "signoFijo": 0.701569,
+   "cat": "match_organisation_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.701569
+  },
+  {
+   "label": "Overige wedstrijdkosten",
+   "page": 30,
+   "native": 0.37232,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten (20)\")",
+   "signoFijo": 0.37232,
+   "cat": "match_organisation_expense",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.37232
+  },
+  {
+   "label": "Automatiseringskosten",
+   "page": 30,
+   "native": 0.203109,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Algemene kosten (21)\")",
+   "signoFijo": 0.203109,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.203109
+  },
+  {
+   "label": "Scoutingskosten",
+   "page": 30,
+   "native": 0.149113,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Algemene kosten (21)\")",
+   "signoFijo": 0.149113,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.149113
+  },
+  {
+   "label": "Accountantskosten",
+   "page": 30,
+   "native": 0.096645,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Algemene kosten (21)\")",
+   "signoFijo": 0.096645,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.096645
+  },
+  {
+   "label": "Advieskosten",
+   "page": 30,
+   "native": 0.100156,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Algemene kosten (21)\")",
+   "signoFijo": 0.100156,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.100156
+  },
+  {
+   "label": "Algemene verzekeringen",
+   "page": 30,
+   "native": 0.05646,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Algemene kosten (21)\")",
+   "signoFijo": 0.05646,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.05646
+  },
+  {
+   "label": "Contributies",
+   "page": 30,
+   "native": 0.126813,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Algemene kosten (21)\")",
+   "signoFijo": 0.126813,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.126813
+  },
+  {
+   "label": "Overige kosten",
+   "page": 30,
+   "native": 0.561945,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Algemene kosten (21)\")",
+   "signoFijo": 0.561945,
+   "cat": "other_expenses",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.561945
+  },
+  {
+   "label": "Financiële baten en lasten",
+   "page": null,
+   "native": -0.302082,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Vennootschapsbelasting (23)",
+   "page": null,
+   "native": 0.005186,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Netto-omzet (14)\")": "gastos con signo",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
+   "verificacion (nota que desglosa \"Personeelskosten 15\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Afschrijvingen op immateriële en materiële vaste activa (16)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Huisvestingskosten (17)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Horeca (18)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Verkoopkosten (19)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten (20)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Algemene kosten (21)\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 20.321775,
+  "expSum": -20.046986,
+  "officialTotalRevenue": 20.321775,
+  "officialTotalExpenses": 20.046986,
+  "officialPAT": -0.022107,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.022107,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 20.321775
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 20.046986
+  }
+ },
+ "liga": {
+  "valor": "nl-eredivisie",
+  "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"Willem II\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (56 de 59 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "willemii-nl-jaarverslag-2024-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eredivisie",
+   "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"Willem II\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 3,
+  "lineasIngreso": 8,
+  "lineasGasto": 28,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }
