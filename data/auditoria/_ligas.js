@@ -129,5 +129,43 @@ window.LIGA_AUDITORIA = {
     "linea": 777
    }
   }
+ },
+ "ch-superleague": {
+  "2025": {
+   "entidad": {
+    "nombre": "Swiss Football League",
+    "legal": "Swiss Football League (Verein, Bern)"
+   },
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "Ernst & Young AG"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Suiza/Swiss Football League/sfl-finanzbericht-2024-25.md",
+    "linea": 168
+   }
+  }
+ },
+ "ch-challengeleague": {
+  "2025": {
+   "entidad": {
+    "nombre": "Swiss Football League",
+    "legal": "Swiss Football League (Verein, Bern)"
+   },
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "Ernst & Young AG"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Suiza/Swiss Football League/sfl-finanzbericht-2024-25.md",
+    "linea": 168
+   }
+  }
  }
 };
