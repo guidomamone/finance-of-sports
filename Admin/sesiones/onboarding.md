@@ -242,3 +242,5 @@ como letras para fos-pipeline, sin aplicarlas.
 - Lote 94 COMPLETO: las 10 altas del borrador altas-2026-10-17 en el sitio (Go Ahead Eagles, Viking, Vålerenga, Molde, Basel 2021,
   Aalesund, Sarpsborg 08, Fredrikstad 2024, Luzern, St. Gallen). Listas lote-94 y transcribir-altas-294 archivadas. Pipeline 3 saca los
   ajustes fila de los noruegos y de St. Gallen (y4). Siguiente: lote 93 (Países Bajos) y los demás años de estos clubes.
+
+## Después del séptimo merge (2026-10-19)
