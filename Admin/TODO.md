@@ -47,7 +47,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
-* 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas --> Finanzas 4
+* 295: balances de las entidades que organizan las ligas: ya hay 9; siguen Chile, Croacia, Rusia, Serie B, Turquía y las segundas --> Finanzas 4
 * 284: Fredrikstad y Sarpsborg 08 sobre el FLI --> Onboarding 3
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 3
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
