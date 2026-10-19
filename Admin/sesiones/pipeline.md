@@ -319,4 +319,17 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
 
 ## Después del merge de la n (2026-10-19)
 
+- **298 p2 hecha** (31470c9ec1, ok de Guido 2026-10-19). Escalón 0b del aviso de categoría en 0 en cargar.mjs: el `cero-real` de esa
+  categoría en otro documento del club vale, si ningún año cargado del club la tiene con monto. Simulado con un solo ajuste por club y
+  categoría (salen 58 de 94): frenos por reintento 46 -> 28 (los 28, clubes con algún año con monto: la compuerta). Lote completo: 0 filas
+  distintas; Beerschot 2019, 2020 y 2022 toman el cero real de "Cuotas sociales" de 2025. Los 58 ajustes que sobran siguen en el archivo
+  (no estorban); se pueden sacar con medición, como en la y4 y la l.
+- **298 p1 hecha** (11bc28a8ac, diseño de Guido: chequeo cada 5 años). El perfil (socios, otros deportes) es por año: cada chequeo guarda
+  el año del documento y vale para los años a menos de 5; fuera de toda ventana se pregunta de nuevo, una vez por club, campo y tramo;
+  la respuesta de cualquier documento del club en la ventana sirve; un chequeo que contradice al más cercano abre `perfil-cambio`.
+  Líneas viejas sin año no cuentan (decisión de Guido). b2920d3dc7: 150 chequeos con año de la revisión de los 33 tramos (subagente
+  Sonnet sobre extractos con línea, revisado): 28 confirman; Benfica (socios desde 2005) y Sporting (desde 2001) contradecían el perfil
+  "sin socios" (lo cargado ya tiene sus cuotas). medir-cargar sobre la completa: 0 filas distintas; 16 años cargados volverían a preguntar
+  si se recargan (Juventus, cuyo perfil no tiene año; Beerschot 2019-2020; Goiás 2007, caso límite).
+
 ## Después del merge de la p (2026-10-19)
