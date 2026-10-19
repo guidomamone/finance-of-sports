@@ -90,7 +90,11 @@ corriente. Italia: debiti verso banche + altri finanziatori (factoring, anticipo
 Verona 2022: 30.272.857 + 13.194.724 + 603.703). Fuera: proveedores, fiscal, previsional y traspasos (enti-settore specifico). Un .md
 con dos perímetros (Lazio "separato-consolidato": PARTE I separado, PARTE II consolidado; Milan: consolidado y después la capogruppo)
 se lee en el perímetro con que se carga el club. Leasing (IFRS 16): fuera si tiene fila propia; si viene dentro de los debiti finanziari
-sin separar, queda. Factoring pro-soluto: fuera (no es deuda del club). Préstamos de la controlante: dentro si la nota dice que son
+sin separar, queda. Bono convertible común (por ejemplo una Wandelschuldverschreibung dentro de las deudas): dentro, es deuda financiera.
+Convertible con conversión obligatoria en acciones, que el documento muestra como partida especial después del patrimonio (Sonderposten
+nach dem Eigenkapital): fuera. Caso: HSV, donde el convertible común entra y el obligatorio no (detalle en `Admin/CONVENCIONES-DATOS.md`,
+"bonos convertibles"). Factoring: con recurso (pro solvendo, o el documento lo llama deuda financiera o autoliquidante) dentro; pro-soluto
+fuera (no es deuda del club); se lee en la nota de cada documento. Préstamos de la controlante: dentro si la nota dice que son
 préstamos (Sassuolo con Mapei, Parma); si no, fuera.
 
 **Un balance que desglosa un rubro de gasto por SECTOR/DEPARTAMENTO permite separar "Salarios y primas (plantel y cuerpo técnico)"
