@@ -479,3 +479,8 @@ tres votos (balance cuadra / tabla del mayor activo / otra fila con la misma cif
 commitear): voto 1 solo 422 iguales y 8 distintos (Udinese 2022); la idea 1, la 2, "las dos" y "alguna" dieron 422 y 7; quedó la de los votos
 (las tres de acuerdo). `--medir` final: caja 422/7/379, deuda 180/10/575 (idéntica). Los 7 distintos son los de antes de la regla (Milan 2025, Arouca
 2024, Juventus 2005, Lazio 2006, Napoli 2019 y 2023, Wolves 2025). Los lotes de prueba miden verificar y cargar, que esta regla no toca.
+
+**310 partes 2 y 3 y 290 (ok de Guido, 2026-10-19).** Parte 2 (deuda belga por códigos) y parte 3 (OH Leuven) pasadas a HALLAZGOS "sin daño hoy"
+(la 3 cubierta por la parte 1). Regla del factoring escrita en `Admin/CONVENCIONES-DATOS.md`: con recurso entra en la deuda, pro soluto no; lo
+decide la nota de cada documento y el diccionario no suma "altri finanziatori". Genoa 2022 queda como está; sin cambio de código. Para borrar del
+TODO: el 310 entero, el 290 y el 291.

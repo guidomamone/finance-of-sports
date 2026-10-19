@@ -401,3 +401,12 @@ como partida especial después del patrimonio (Sonderposten nach dem Eigenkapita
 - ESTADIO Y SPONSOR DE UN AÑO DE LIGA AMATEUR (Guido, 2026-10-18): la compuerta de la carga lo acepta sin sponsor si tiene el estadio con
   fuente. En las ligas amateur casi nunca hay fuente que nombre el sponsor de camiseta. Lo mismo vale para la Eerste Divisie neerlandesa
   (Guido, 2026-10-19): sus páginas de temporada en en.wikipedia no traen la tabla de camisetas.
+
+## REGLA: el factoring en la deuda (to-do 291, Guido 2026-10-19)
+
+El factoring es vender a una financiera las facturas o cuotas que el club cobrará (por ejemplo, de traspasos) para cobrar antes. Es deuda
+financiera solo si el club responde: si el documento lo llama "deuda financiera", "autoliquidante" o dice que el crédito sigue en el activo
+(con recurso, "pro solvendo"), entra en `grossDebt`. Si es una cesión sin recurso ("pro soluto") y el crédito sale del activo, no es deuda.
+Se lee en la nota de cada documento: la etiqueta ("debiti verso altri finanziatori") no alcanza. Casos: Monza 2024, 13,5 M de Factorit
+pro soluto, deuda 0; Genoa 2022, 30,4 M de Banca Sistema que la propia nota llama "debito finanziario autoliquidante", deuda 95,7 M. Por eso
+`tools/vocabulario.mjs` no suma "altri finanziatori" por su cuenta: lo decide la lectura del documento (escalón 1b o 2, o un ajuste con cita).
