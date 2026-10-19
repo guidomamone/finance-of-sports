@@ -336,5 +336,25 @@ window.LIGA_AUDITORIA = {
     "linea": 61
    }
   }
+ },
+ "hr-hnl": {
+  "2025": {
+   "entidad": {
+    "nombre": "HNS",
+    "legal": "Hrvatski nogometni savez"
+   },
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers d.o.o."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "federacion",
+   "fuente": {
+    "md": "Ligas/Croacia/HNS/hns-izvjesce-revizora-2025.md",
+    "linea": 22
+   }
+  }
  }
 };
