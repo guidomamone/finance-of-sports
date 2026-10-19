@@ -13,6 +13,14 @@ const evertonGbRevenueLinesByYear = {
     { rawLabel:'Other commercial activities', normalizedCategory:'other_income', amountNative:22.828, disclosureLevel:'detailed' },
     { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:31.325, disclosureLevel:'detailed' },
   ],
+  2022: [
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:115.086, disclosureLevel:'aggregated' },
+    { rawLabel:'Gate Receipts', normalizedCategory:'matchday_competition', amountNative:15.564, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship, advertising and merchandising', normalizedCategory:'sponsorship_commercial', amountNative:35.017, disclosureLevel:'aggregated' },
+    { rawLabel:'Other commercial activities', normalizedCategory:'other_income', amountNative:15.34, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on player trading', normalizedCategory:'player_sales', amountNative:67.684, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of tangible fixed assets', normalizedCategory:'other_income', amountNative:0.02, disclosureLevel:'aggregated' },
+  ],
 };
 
 const evertonGbExpenseLinesByYear = {
@@ -32,6 +40,15 @@ const evertonGbExpenseLinesByYear = {
     { rawLabel:'Amounts payable to former employees', normalizedCategory:'exceptional_items', amountNative:-5.133, disclosureLevel:'detailed' },
     { rawLabel:'Revaluation of Football League Pension Scheme', normalizedCategory:'exceptional_items', amountNative:-0.265, disclosureLevel:'detailed' },
     { rawLabel:'Refinancing and legal costs', normalizedCategory:'exceptional_items', amountNative:-1.672, disclosureLevel:'detailed' },
+  ],
+  2022: [
+    { rawLabel:'Amortisation of players\' registrations', normalizedCategory:'player_amortisation', amountNative:-68.327, disclosureLevel:'aggregated' },
+    { rawLabel:'Wages and salaries', normalizedCategory:'wages_squad', amountNative:-141.39, disclosureLevel:'aggregated' },
+    { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-19.747, disclosureLevel:'aggregated' },
+    { rawLabel:'Other pension costs', normalizedCategory:'wages_squad', amountNative:-0.873, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation', normalizedCategory:'depreciation', amountNative:-6.683, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating costs', normalizedCategory:'other_expenses', amountNative:-36.226, disclosureLevel:'aggregated' },
+    { rawLabel:'Operating expenses - exceptional costs', normalizedCategory:'exceptional_items', amountNative:-11.138, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -53,6 +70,21 @@ const evertonGbFiscalYearMeta = {
     grossDebt:468.542, cash:79.141,
     profitOnPlayerSales:0, assetSales:49.165, netInterest:-13.166, tax:0,
     officialTotalRevenue:228.022, officialTotalExpenses:261.415, officialPAT:-8.609,
+  },
+  2022: {
+    currency:'GBP', fxRef:'GBP@2022-06-30',
+    sourceId:'everton-gb-group-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-9.059, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:1.414},
+      {label:'Interest payable and similar charges', value:-10.473},
+      {label:'Tax on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:248.711, officialTotalExpenses:273.246, officialPAT:-44.732,
   },
 };
 
@@ -84,6 +116,11 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/00036624/filing-history',
     publicNote:'Cuentas consolidadas del grupo, auditadas por Crowe U.K. LLP, depositadas en Companies House (Reino Unido). El tipo de cambio GBP/USD usado para el toggle de moneda es una referencia de mercado al cierre del ejercicio, no uno declarado por el propio documento. Incluye una ganancia no operativa por la venta de dos subsidiarias (el club de fútbol femenino y la sociedad del viejo estadio Goodison Park) a la matriz del grupo, registrada aparte del resultado futbolístico.',
+  },
+  'everton-gb-group-accounts-2021-22': {
+    id:'everton-gb-group-accounts-2021-22', clubId:'everton-gb',
+    title:'Everton Football Club Company, Limited — everton-group-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 
