@@ -9,6 +9,9 @@ const rwdmbeRevenueLinesByYear = {
   2021: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:1.547882, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Brutomarge', normalizedCategory:'lump_football_operations', amountNative:1.08213, disclosureLevel:'aggregated' },
+  ],
 };
 const rwdmbeExpenseLinesByYear = {
   2025: [
@@ -38,6 +41,12 @@ const rwdmbeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.138274, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.015265, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.060428, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen', normalizedCategory:'wages_squad', amountNative:-2.644238, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.141046, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)', normalizedCategory:'other_expenses', amountNative:-0.017243, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.01016, disclosureLevel:'aggregated' },
   ],
 };
 const rwdmbeFiscalYearMeta = {
@@ -92,6 +101,23 @@ const rwdmbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.547882, officialTotalExpenses:1.799297, officialPAT:-0.396247,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'rwdm-be-jaarrekening-2022-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.012898, tax:0,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.000762},
+      {label:'Recurrente financiële kosten', value:-0.01366},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge', lado:'revenue', importe:1.08213, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.08213, officialTotalExpenses:2.812687, officialPAT:-1.743454,
+  },
 };
 const rwdmbePresupuestoOverlayByYear = {};
 
@@ -121,6 +147,11 @@ Object.assign(sources, {
   'rwdm-be-jaarrekening-2021-06-30-individual': {
     id:'rwdm-be-jaarrekening-2021-06-30-individual', clubId:'rwdm-be',
     title:'RWDM — jaarrekening-2021-06-30-individual (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'rwdm-be-jaarrekening-2022-06-30-individual': {
+    id:'rwdm-be-jaarrekening-2022-06-30-individual', clubId:'rwdm-be',
+    title:'RWDM — jaarrekening-2022-06-30-individual (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

@@ -93,6 +93,42 @@ tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del docum
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/RWDM/jaarrekening-2022-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Brutomarge | pág. 7, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bezoldigingen, sociale lasten en pensioenen | pág. 7, Jev 0.98 |
+| 2 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 7, precedente |
+| 3 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) | pág. 7, Jev 1 |
+| 4 | Andere bedrijfskosten | pág. 7, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cierre = 2022-06-30. del .md L33: "| het boekjaar dat de periode dekt van | 01-07-2021 | tot | 30-06-2022 |" (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-challengerproleague, verificado contra roster cacheado de "2021–22 Belgian First Division B" (tools/club-league-reference/be.json), coincidencia exacta "RWDM47".
+```
+
 ## 2021
 
 ### Ingresos
@@ -207,4 +243,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### rwdm-be-jaarrekening-2022-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

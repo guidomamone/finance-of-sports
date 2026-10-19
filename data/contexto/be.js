@@ -81,6 +81,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'rwdm-be': {
     2020: {"estadio":"Edmond Machtens","fuente":"https://bx1.be/communes/molenbeek-saint-jean/rwdm-molenbeek-signe-convention-doccupation-stade-machtens/","fuenteManual":"https://bx1.be/communes/molenbeek-saint-jean/rwdm-molenbeek-signe-convention-doccupation-stade-machtens/","manual":["estadio"]},
     2021: {"estadio":"Edmond Machtens Stadium","capacidad":12266,"sponsor":"Symbio","marca":"Joma","temporada":"2020–21 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375726247"},
+    2022: {"estadio":"Edmond Machtens Stadium","capacidad":12266,"sponsor":"Symbio","marca":"Joma","temporada":"2021–22 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376207947"},
     2025: {"estadio":"Edmond Machtens","capacidad":12266,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'sinttruiden-be': {
