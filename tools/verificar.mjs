@@ -192,6 +192,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   let forzarNotaSub = false; let totIngForz = 0; const notasNotaSub = []; // (to-do 175, escalón 2) la nota del subtotal en la primera pasada, ver abajo
   const signoAcum = new Map(); const notasAcum = []; let escalonAcum = false; // (to-do 237 q) escalón "acumulados": fila del financiero (por línea) -> signo de su lado
   const signoFinBloque = new Map(); const notasFinBloque = []; let escalonFinBloque = false; // (to-do 199, patrón C) fila del financiero (por línea) -> signo según el bloque que la contiene
+  const partesSubRep = new Map(); // (to-do 298 y3, escalón b) línea del total que salteó el patrón B -> etiquetas de las filas de arriba que suma
   const notasSubRep = []; // (to-do 175, escalón 1) las notas del escalón "subtotal repetido": se escriben solo si gana
   const notaSubtotalLados = new Set(); // lados donde este escalón abrió la nota del subtotal (se escribe en el .verificacion.json)
   const pU = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
@@ -371,6 +372,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // No se cuenta: sus partes ya están. Caso: Ferroviária 2016 (.md L113-115: 9.221.750 − 10.553 = 9.211.197), se sumaba además de la nota.
         if (subRepetido && !esSumaDe(arriba) && !esSumaDe(abajo) && esSumaDe(delLado.slice(0, k).filter((x) => x.tipo !== 'resultado' && x.lado === lado).reverse())) {
           if (campo === 'M') { const n = `escalón "subtotal repetido": "${f.etiqueta}" (L${f.linea}) es la suma de las filas de arriba (con su subtotal); se saltea`; if (!notasSubRep.includes(n)) notasSubRep.push(n); }
+          if (campo === 'M') partesSubRep.set(f.linea, delLado.slice(0, k).filter((x) => x.tipo !== 'resultado' && x.lado === lado).map((x) => x.etiqueta));
           continue;
         }
         // (to-do 199, patrón C) Y una fila que no es renglón y es la suma de los RENGLONES DE ABAJO DE CUALQUIER LADO, cuando esa suma incluye
@@ -844,7 +846,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // con otras líneas del mismo lado fuera de ese total. Nottingham Forest: "Turnover" + "Profit on disposal" aparte.
       const filaTotal = estado.find((f) => f.tipo !== 'renglon' && cerca(Math.abs(f.M || 0), total)) || (nivel >= 2 ? estado.find((f) => (lineaTotal != null && f.linea === lineaTotal) || (f.tipo === 'renglon' && cerca(Math.abs(f.M || 0), total))) : null);
       if (filaTotal) {
-        const deEsa = arr.filter((f) => f.etiqueta === filaTotal.etiqueta || String(f.origen || '').startsWith(`nota que desglosa "${filaTotal.etiqueta}"`));
+        // (to-do 298 y3, escalón b, ok de Guido 2026-10-18) si el escalón "subtotal repetido" (patrón B) salteó ese total por ser la suma de
+        // las filas de arriba, el total cierra con lo que salió de ESAS filas (ellas mismas o las hojas de su nota). Caso: St. Gallen 2024-25,
+        // "Erträge netto" 45.057 (L261) = "Erträge brutto" (abierto en su nota) + "Ertragsminderungen"; "Ausserordentlicher Ertrag" queda afuera.
+        const partes = (!arr.some((f) => f.etiqueta === filaTotal.etiqueta) && partesSubRep.get(filaTotal.linea)) || [filaTotal.etiqueta];
+        const deEsa = arr.filter((f) => partes.some((p) => f.etiqueta === p || String(f.origen || '').startsWith(`nota que desglosa "${p}"`)));
         if (deEsa.length && cerca(suma(deEsa), total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `"${filaTotal.etiqueta}" ${r6(total)} cierra; además se suman ${arr.length - deEsa.length} línea(s) fuera de ese total (${r6(sm - total)})` }); return arr; }
       }
       // (Versión 431, cambio C, aprobado por Guido el 2026-10-03; desde la lectura 2) el total impreso puede ser el TOTAL DE UNA NOTA que
