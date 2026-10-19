@@ -104,7 +104,8 @@ if (listaPath) {
   docsSel = docsSel.filter(([pdf]) => lista.has(pdf));
 }
 const total = Object.values(porMotor).reduce((a, m) => a + m.usd, 0);
-if (JSON_OUT) { console.log(JSON.stringify({ desde, porMotor, porDia, porDoc: Object.fromEntries(docsSel), pagadoSinMd }, null, 1)); process.exit(0); }
+// (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: se sale cuando la escritura terminó.
+if (JSON_OUT) { await new Promise((fin) => process.stdout.write(JSON.stringify({ desde, porMotor, porDia, porDoc: Object.fromEntries(docsSel), pagadoSinMd }, null, 1) + '\n', fin)); process.exit(0); }
 
 console.log(`Gasto registrado${desde ? ` desde ${desde}` : ''}: ${usd(total)} (Jev: sin registro de costo)`);
 for (const [m, v] of Object.entries(porMotor)) console.log(`  ${m.padEnd(11)} ${usd(v.usd).padStart(9)}  ${v.llamadas} llamadas${v.paginas ? `, ${v.paginas} páginas` : ''}`);
