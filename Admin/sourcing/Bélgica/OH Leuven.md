@@ -41,3 +41,5 @@ Color de marca: null — nl.wikipedia: camiseta local blanca con acentos verde, 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf` (sourceId `ohleuven-be-jaarrekening-2025-06-30-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2019 desde `Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.pdf` (sourceId `ohleuven-be-jaarrekening-2019-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.pdf` (sourceId `ohleuven-be-jaarrekening-2021-06-30-individual`).

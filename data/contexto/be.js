@@ -60,6 +60,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'ohleuven-be': {
     2019: {"estadio":"Den Dreef","capacidad":10000,"sponsor":"King Power","marca":"Vermarc","temporada":"2018–19 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374461709"},
+    2021: {"estadio":"Den Dreef","capacidad":10000,"sponsor":"King Power","marca":"Adidas","temporada":"2020–21 Belgian First Division A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375725941"},
     2025: {"estadio":"Den Dreef","capacidad":10000,"sponsor":"Star Casino","marca":"Stanno","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'patroeisden-be': {
