@@ -15,14 +15,14 @@ las dos sociedades para el mismo ejercicio.
 | Fulham | 2022-23 (30-06-2023) | `fulham-full-accounts-2022-23`: Fulham Football Club Ltd | `wf-2022-2023-a65333c9`: Fulham Football Leisure Ltd |
 | Sunderland | 2022-23 (31-07-2023) | `sunderland-full-accounts-2022-23`: el club (nº 00049116, "… CLUB, LIMITED (THE)") | `wf-2022-2023-55a1a6cd`: Sunderland Ltd |
 
-Falta decidir cuál entra en cada par (lo decide la regla de entidad: el estado de resultados completo de la entidad del club, y si los dos, el más
-completo; el otro, a `documentos-descartados.txt`). No se descartó ninguno todavía.
+DECIDIDO (Guido, 2026-10-19, coherencia de perímetro con la serie publicada): en cada par entra el documento de la sociedad del club y el `wf-*` de la
+otra sociedad va a `documentos-descartados.txt`. Aston Villa es el caso discutible (la sociedad del club no tiene fichajes capitalizados, NSWE Sports sí) y se
+dejó igual por consistencia. Wolves y West Ham 2023-24 son pares como los demás (el documento del club existe).
 
 ## Nombre engañoso: el año del nombre no es el del ejercicio
 
 - `West Ham United/wf-2022-2023-659d1396`: WH Holding Ltd (consolidado), ejercicio al 31-05-**2024**. El club 2023-24 también está (`westham-full-accounts-2023-24`).
-- `Wolverhampton Wanderers/wf-2022-2023-d10fbea7`: W.W. (1990) Ltd (consolidado), ejercicio al 31-05-**2024**. Del club (1986) no hay 2023-24: ese ejercicio tiene un solo
-  perímetro y se carga con él (regla 1 de perímetro), con nota pública.
+- `Wolverhampton Wanderers/wf-2022-2023-d10fbea7`: W.W. (1990) Ltd (consolidado), ejercicio al 31-05-**2024**. El del club (1986) 2023-24 existe (`wolves-full-accounts-2023-24`) y ya está publicado: par resuelto como los demás.
 
 ## Duplicados exactos (a `documentos-descartados.txt` en esta sesión)
 

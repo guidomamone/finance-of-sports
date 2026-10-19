@@ -42,3 +42,10 @@
 ### Federaciones paulistas (295 c)
 - Federação Paulista de Futebol 2024 para `br-paulistaA1`, `A2` y `A3` (`alcance: federacion`): demonstrações financeiras y informe de RSM Brasil Auditores Independentes (23-01-2025), sin ressalvas, con un párrafo de ênfase (COFINS sobre receitas financeiras y comparativo 2023 reapresentado, auditado por otra firma); receitas operacionais 115.574 mil reales. El PDF (2 págs., digital) es la copia de `static.poder360.com.br`; el original en el sitio de la FPF no se encontró (queda anotado en `Admin/sourcing/Ligas/fpf-sp-paulista.md`). PDF copiado a la carpeta principal con `rsync --no-links`. ASSET_V 1368.
 - Queda: el ejercicio 2025 de la FPF-SP; Lega Serie C y FPF (Liga 3) como antes.
+
+### 261 b (decisión de Guido, 2026-10-19: la recomendación)
+- En los 7 pares (Aston Villa 2022-23 y 2023-24, Brighton, Fulham y Sunderland 2022-23, West Ham y Wolves 2023-24) entra el documento de la sociedad del club y el `wf-*` de la otra sociedad (NSWE Sports, Holdings, Football Leisure, Sunderland Ltd, WH Holding, W.W. 1990) va a `documentos-descartados.txt`. Criterio: coherencia de perímetro con la serie publicada (para CONVENCIONES-DATOS: cuando hay dos sociedades del mismo club y ejercicio, entra la que ya publica el sitio). Corregí `sociedad-por-documento.md`: Wolves y West Ham 2023-24 también eran pares.
+- El 295 queda cerrado por pedido de Guido; el 261 b, resuelto.
+
+### Qué queda (para TODO)
+- 261: el lote (etapa 3 en adelante); nada más de mi lado.
