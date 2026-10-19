@@ -72,3 +72,20 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
   amateur.
 
 ## Después del merge de Bélgica (2026-10-18)
+
+### Qué cambió (CHANGELOG)
+
+- **273: la compuerta acepta sin sponsor un año de liga amateur** (decisión de Guido, 2026-10-18: "que la compuerta acepte sin sponsor
+  un año de liga amateur, con el estadio cargado"). `estadio-sponsor.mjs` lee `data/leagues.js`: una liga cuyo nombre dice "amateur"
+  (hoy be-div1amateur, be-div2amateur, be-div3amateur) no exige sponsor; el estadio sigue siendo obligatorio. Estadio con fuente de
+  Patro Eisden 2015 (página del club: en el Patrostadion desde 2002-03) y RWDM 2019 (BX1: último partido de local de la D1 Amateur
+  2018-19 en el Edmond Machtens). Medido con la compuerta (`--club --anio`, con `--liga be-div1amateur` en los años amateur): los 23
+  años belgas del lote 92 pasan.
+
+### Regla nueva (para CONVENCIONES-DATOS o PIPELINE)
+
+- Un año en una liga amateur se carga sin sponsor de camiseta si tiene estadio con fuente (Guido, 2026-10-18).
+
+### Qué deja de ser cierto en ESTADO
+
+- "`cargar.mjs` no escribe un año nuevo sin estadio y sponsor": salvo en una liga amateur, donde basta el estadio.
