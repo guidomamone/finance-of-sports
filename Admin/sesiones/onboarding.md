@@ -223,3 +223,5 @@ como letras para fos-pipeline, sin aplicarlas.
   belgas, que igual esperan a la t y la u.
 - Lote 93 armado: alta de Países Bajos, 26 clubes con un año cada uno (afuera Go Ahead Eagles por el 165 c, MVV y RKC sin documento validado,
   NEC Nijmegen duplicada). Ajustes `cierre` 2025-06-30 de Roda JC y SC Cambuur. Ensayo: ~US$ 10,50 (cota alta: club sin historia).
+
+## Después del quinto merge del 2026-10-18

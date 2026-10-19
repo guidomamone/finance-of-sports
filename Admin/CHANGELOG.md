@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 759 — Merge de onboarding 2: Países Bajos y las 10 altas del borrador, armados (2026-10-18)
+
+`.jsonl` con las líneas de las dos ramas, lo generado regenerado; ASSET_V 1321, P0 0 / P1 0. La rama se adelantó a main (t, u, x, e y f).
+
+- Lote 93: alta de Países Bajos (26 clubes, un año cada uno) y su cola (48 respuestas, 3 ajustes de fila). Lote 94: las 10 altas del
+  borrador de Finanzas (Pardubice no), con perímetros, nombres legales y Fredrikstad en 2024. 0 años escritos todavía: las altas se
+  revertían (298 x, ya en main) y 5 frenaban por el perímetro.
+- 292: medidos los 319 .md viejos sin tablas (212 por rehacer, ahora dentro de la corrida de Mistral de la 298 e2).
+
 ## Versión 758 — Merge de pipeline 2: el período que declara el formulario (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0.
