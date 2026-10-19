@@ -92,6 +92,61 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): no-eliteserien, verificado contra roster cacheado de "2025 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Sarpsborg 08".
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Billetinntekter | pág. 2, precedente |
+| 2 | Medlemsinntekter | pág. 2, precedente |
+| 3 | Kiosk salg | pág. 13, precedente |
+| 4 | Supporterutstyr | pág. 13, Jev 0.99 |
+| 5 | Solidaritetsmidler | pág. 13, Jev 0.96 |
+| 6 | Andre inntekter | pág. 13, Jev 1 |
+| 7 | Cupoppgjør NFF | pág. 13, Jev 0.94 |
+| 8 | Grasrotandel | pág. 13, Claude 0.8 |
+| 9 | Gaver/bidrag | pág. 13, Jev 1 |
+| 10 | Andre inntekter | pág. 13, Jev 1 |
+| 11 | Reklame og sponsorinntekter | pág. 2, precedente |
+| 12 | Mediainntekter | pág. 2, precedente |
+| 13 | Tilskudd | pág. 2, precedente |
+| 14 | Salg/utleie spillere | pág. 2, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trening/materiell kostnader | pág. 13, precedente |
+| 2 | Kampkostnader | pág. 13, Jev 1 |
+| 3 | Reise og oppholdskostander bortekamper | pág. 2, precedente |
+| 4 | Innkjøp av varer for videresalg | pág. 13, precedente |
+| 5 | Kostn.kjøp/salg spillere/utd.midler | pág. 13, precedente |
+| 6 | Lønn | pág. 14, Jev 0.91 |
+| 7 | Arbeidsgiveravgift | pág. 14, precedente |
+| 8 | Pensjonskostnader | pág. 14, precedente |
+| 9 | Andre ytelser / Refusjoner | pág. 14, Jev 0.97 |
+| 10 | Avskrivning på driftsmidler og immaterielle eiendeler | pág. 2, precedente |
+| 11 | Honorar medisinsk støtteapparat | pág. 14, precedente |
+| 12 | Agent/talentspeidere | pág. 14, Jev 0.99 |
+| 13 | Reisekostnader/km.godtgjørelse | pág. 14, Jev 0.99 |
+| 14 | Leiekostnader | pág. 14, Jev 0.97 |
+| 15 | Andre kostnader | pág. 14, Jev 1 |
+| 16 | Reklame og sponsorkostnader | pág. 2, precedente |
+| 17 | Admkost | pág. 2, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-19): perimetro = individual. perimetro-senales.mjs: el ejercicio 2021-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2020
 
 ### Ingresos
@@ -570,4 +625,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sarpsborg08-no-aarsregnskap-fotballforening-fli-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

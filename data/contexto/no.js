@@ -28,6 +28,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2018: {"estadio":"Sarpsborg Stadion","capacidad":8022,"sponsor":"Borregaard","marca":"Select","temporada":"2018 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311642550"},
     2019: {"estadio":"Sarpsborg Stadion","capacidad":8022,"sponsor":"Borregaard","marca":"Select","temporada":"2019 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311013521"},
     2020: {"estadio":"Sarpsborg Stadion","capacidad":8022,"sponsor":"Borregaard","marca":"Select","temporada":"2020 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311013715"},
+    2021: {"estadio":"Sarpsborg Stadion","capacidad":8022,"sponsor":"Borregaard","marca":"Select","temporada":"2021 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312260742"},
     2025: {"estadio":"Sarpsborg Stadion","capacidad":8022,"sponsor":"Borregaard","marca":"Hummel","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'valerenga-no': {

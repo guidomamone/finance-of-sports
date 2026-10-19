@@ -201,6 +201,7 @@ const FX_CLOSE = {
   'NOK@2012-12-31': { fx: 5.5664, source: 'market_close', label: 'Tipo medio de referencia de Norges Bank al 2012-12-31' },
   'NOK@2019-12-31': { fx: 8.7803, source: 'market_close', label: 'Tipo medio de referencia de Norges Bank al 2019-12-31' },
   'NOK@2020-12-31': { fx: 8.5326, source: 'market_close', label: 'Tipo medio de referencia de Norges Bank al 2020-12-31' },
+  'NOK@2021-12-31': { fx: 8.8194, source: 'market_close', label: 'Tipo medio de referencia de Norges Bank al 2021-12-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve
