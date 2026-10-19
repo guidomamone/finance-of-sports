@@ -388,7 +388,7 @@ async function main() {
   // Eerste Divisie neerlandesa tampoco tiene fuente del sponsor por temporada: sus páginas de en.wikipedia no traen la tabla de camisetas
   // (frenaban 11 altas del lote 93: ADO Den Haag, De Graafschap, FC Den Bosch, FC Dordrecht, FC Eindhoven, FC Volendam...).
   // (decisión de Guido, 2026-10-19: lo mismo para la 1. divisjon noruega: Fredrikstad 2013-2017.)
-  const SOLO_ESTADIO = new Set(['nl-eerstedivisie', 'no-1divisjon']);
+  const SOLO_ESTADIO = new Set(['nl-eerstedivisie', 'no-1divisjon', 'no-2divisjon']);
   const amateur = (liga) => !!liga && (SOLO_ESTADIO.has(liga) || /amateur/i.test(`${LEAGUES[liga]?.name || ''} ${LEAGUES[liga]?.full || ''}`));
   const args = process.argv; const detalle = args.includes('--detalle'); const escribir = args.includes('--escribir');
   const arg = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
