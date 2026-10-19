@@ -45,6 +45,10 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   sesiones de sourcing corran en paralelo sin pisarse. `Admin/sourcing/README.md` (el índice de países) se
   toca solo al terminar, y solo si cambiaron los números de ese país (se regenera con
   `node tools/generate-fuentes-index.js`).
+- **Una sola carpeta por club.** Antes de guardar un PDF, mirá la entidad de la portada (nombre legal) y fijate en `ls Clubes/<País>/` si el
+  club ya tiene carpeta, con otro nombre o grafía (`FC Thun` y `Thun`). Si la tiene, guardalo ahí; no abras una segunda. Un informe de liga
+  que cubre varios clubes se guarda una sola vez, en una carpeta `_<Nombre>`. `node tools/audit.js` lo caza después (`carpeta-doble`: el
+  mismo PDF en dos carpetas de club).
 - **Si el hallazgo es un video (presentación en YouTube en vez de PDF) o una nota de prensa,
   guardar la URL EXACTA, no solo el título.** Un título alcanza para que Guido reconozca el
   documento, pero no para que una sesión futura lo abra sin volver a buscarlo (caso: el video del
