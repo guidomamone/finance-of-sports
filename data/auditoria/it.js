@@ -1367,22 +1367,43 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": null
   },
   "2011": {
-   "auditor": null,
-   "dictamen": "sin_informe",
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
    "continuidad": false,
-   "fuente": null
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2010-11.md",
+    "linea": 34
+   }
   },
   "2012": {
-   "auditor": null,
-   "dictamen": "sin_informe",
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
    "continuidad": false,
-   "fuente": null
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2011-12.md",
+    "linea": 34
+   }
   },
   "2013": {
-   "auditor": null,
-   "dictamen": "sin_informe",
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
    "continuidad": false,
-   "fuente": null
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2012-13.md",
+    "linea": 35
+   }
   },
   "2014": {
    "auditor": {

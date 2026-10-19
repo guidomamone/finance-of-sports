@@ -241,3 +241,10 @@
   extractos salieron vacíos. Mejora de script para el TODO.
 
 ## Después del segundo merge de la sesión 3 (2026-10-18)
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 282, Lazio 2011-2013: de `sin_informe` a su línea real. Los informes de PwC sobre el consolidado salieron de la API de
+  documentos del club, se transcribieron con Mistral y se cotejaron con Tesseract. Los tres son sin salvedades, con un richiamo
+  d'informativa fiscal (la transacción con el fisco de 2005 y el IRAP sobre plusvalías). FALTA EN EL PDF sigue en 56.
+- La (g) del 282 (el extractor en estonio) se le pasó a pipeline 2, a pedido de Guido.
