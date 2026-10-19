@@ -292,3 +292,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   intermedio). Lote completo (350 docs) con los ajustes reales: `--comparar` 0 diferencias, `--contra-sitio` igual antes y después.
   1b2c34df38: salen los 59 ajustes `reportType` estonios; con y sin ellos, 59 de 59 reproducen lo publicado, 0 diferencias.
   Sigue: la m (el perímetro en la carga compara con el año cargado más cercano y no con el ajuste del club).
+
+## Después del merge de la l (2026-10-19)

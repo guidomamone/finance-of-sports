@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 775 — 298 l: el tipo de documento lo confirma la verificación (2026-10-19)
+
+* `alta-club`: si el .md no tiene palabras de estado contable reconocidas o casi no tiene tablas, el reportType lo confirma la verificación
+  cuando cerró con el resultado impreso. Medido: de 72 frenos a 4, lote completo sin diferencias. Salen 59 ajustes reportType estonios.
+
 ## Versión 774 — Viking Fotball AS 2017-2024 transcripto (2026-10-19)
 
 * Los 8 PDFs del AS de Viking, transcriptos (to-do 285 cerrado); se cargan con los demás años de los clubes nuevos (lote 95).
