@@ -45,7 +45,7 @@ window.CLUB_INDEX = {
   "banfield-ar": {"n":"Banfield","c":"AR","q":"full","y":1,"last":2020,"yrs":[[2020,"official_balance_sheet"]]},
   "basel-ch": {"n":"Basel","c":"CH","q":"full","y":1,"last":2021,"yrs":[[2021,"official_balance_sheet"]]},
   "bayernmunich-de": {"n":"Bayern Munich","c":"DE","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
-  "beerschot-be": {"n":"Beerschot","c":"BE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
+  "beerschot-be": {"n":"Beerschot","c":"BE","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2021,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "belenenses-pt": {"n":"Belenenses","c":"PT","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "benfica-pt": {"n":"Benfica","c":"PT","q":"full","y":19,"last":2026,"yrs":[[2026,"official_balance_sheet"],[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2014,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"],[2008,"official_balance_sheet"],[2007,"official_balance_sheet"],[2006,"official_balance_sheet"]],"ci":{"2007":"07-31"}},
   "boavista-pt": {"n":"Boavista","c":"PT","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},

@@ -12,6 +12,13 @@ const beerschotbeRevenueLinesByYear = {
     { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:2.012267, disclosureLevel:'aggregated' },
     { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.024768, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Ticketing & abonnementen', normalizedCategory:'matchday_competition', amountNative:1.623378, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsoring', normalizedCategory:'sponsorship_commercial', amountNative:1.264861, disclosureLevel:'aggregated' },
+    { rawLabel:'TV rechten', normalizedCategory:'broadcasting', amountNative:2.03671, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercieel', normalizedCategory:'sponsorship_commercial', amountNative:1.074166, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:3.326599, disclosureLevel:'aggregated' },
+  ],
 };
 const beerschotbeExpenseLinesByYear = {
   2025: [
@@ -44,6 +51,19 @@ const beerschotbeExpenseLinesByYear = {
     { rawLabel:'Afschrijvingen goodwill', normalizedCategory:'other_amortisation', amountNative:-0.169559, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.164231, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Aankopen', normalizedCategory:'other_expenses', amountNative:-0.395011, disclosureLevel:'aggregated' },
+    { rawLabel:'Voorraad: afname (toename) (+)/(-)', normalizedCategory:'other_expenses', amountNative:0.089529, disclosureLevel:'aggregated' },
+    { rawLabel:'Diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-4.467328, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen en rechtstreekse sociale voordelen', normalizedCategory:'wages_squad', amountNative:-7.325568, disclosureLevel:'aggregated' },
+    { rawLabel:'Werkgeversbijdragen voor sociale verzekeringen', normalizedCategory:'wages_squad', amountNative:-0.50337, disclosureLevel:'aggregated' },
+    { rawLabel:'Werkgeverspremies voor bovenwettelijke verzekeringen', normalizedCategory:'wages_squad', amountNative:-0.840219, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere personeelskosten', normalizedCategory:'wages_squad', amountNative:-0.223412, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'player_amortisation', amountNative:-1.099921, disclosureLevel:'aggregated' },
+    { rawLabel:'Bedrijfsbelastingen en -taksen', normalizedCategory:'admin_general_expense', amountNative:-0.103764, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere', normalizedCategory:'other_expenses', amountNative:-0.012675, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.224536, disclosureLevel:'aggregated' },
+  ],
 };
 const beerschotbeFiscalYearMeta = {
   2025: {
@@ -64,6 +84,7 @@ const beerschotbeFiscalYearMeta = {
     officialTotalRevenue:17.587332, officialTotalExpenses:20.897734, officialPAT:-3.543618,
   },
   2019: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' } },
     currency:'EUR', fxRef:'EUR@2019-06-30',
     sourceId:'beerschot-be-jaarrekening-2019-06-30-individual-correction',
     reportType:'official_balance_sheet',
@@ -80,6 +101,23 @@ const beerschotbeFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:7.890565, officialTotalExpenses:11.480791, officialPAT:-3.59566,
+  },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'beerschot-be-jaarrekening-2021-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.00084, tax:-0.019845,
+    extraRows: [
+      {label:'Andere financiële opbrengsten', value:0.009988},
+      {label:'Kosten van schulden', value:-0.002122},
+      {label:'Andere financiële kosten', value:-0.008706},
+      {label:'Belastingen', value:-0.02},
+      {label:'Regularisering van belastingen en terugneming van voorzieningen voor belastingen', value:0.000155},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:9.325714, officialTotalExpenses:14.881739, officialPAT:-5.801246,
   },
 };
 const beerschotbePresupuestoOverlayByYear = {};
@@ -105,6 +143,11 @@ Object.assign(sources, {
   'beerschot-be-jaarrekening-2019-06-30-individual-correction': {
     id:'beerschot-be-jaarrekening-2019-06-30-individual-correction', clubId:'beerschot-be',
     title:'Beerschot — jaarrekening-2019-06-30-individual-correction (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'beerschot-be-jaarrekening-2021-06-30-individual': {
+    id:'beerschot-be-jaarrekening-2021-06-30-individual', clubId:'beerschot-be',
+    title:'Beerschot — jaarrekening-2021-06-30-individual (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
