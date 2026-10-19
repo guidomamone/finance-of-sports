@@ -50,7 +50,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS --> Onboarding 2
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 2
-* 273: estadio y sponsor, lo que queda (~73 sin sponsor; nombrar la compuerta)
+* 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (50 informes; la compuerta del pipeline) --> Finanzas 4
@@ -59,7 +59,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 252: ejercicios nuevos, lo que queda (onboardear los PDFs ya bajados, Instituto 2024-25 incluido; Alemania en enero de 2027)
+* 252: ejercicios nuevos, lo que queda (onboardear los PDFs ya bajados, Instituto 2024-25 incluido; Alemania en enero de 2027) --> Datos 2
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
@@ -211,11 +211,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    Pendiente de mirar: Ferroviária 2023-2025, "Partes relacionadas" no corriente (3.844.165) puede ser un préstamo de una parte
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 
-273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
-   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: (a) ~73 ejercicios sin sponsor y sin fuente que nombre la temporada (dos pasadas
-   hechas; zerozero y footballkitarchive piden verificación anti-bot) (Ferroviária,
-   Novorizontino, Goiás, Orenburg, Felgueiras, rusos y estonios de ascenso; `node tools/estadio-sponsor.mjs --ensayo --detalle`). (d) nombrar la compuerta en `Admin/PIPELINE.md` y en la skill
-   `club-or-year-onboarding` (la skill, con ok de Guido). Siguen sin liga a propósito: Novorizontino 2010, Dynamo Makhachkala 2021, Racing 2027.
+273. ESTADIO Y SPONSOR: LO QUE QUEDA. Cerrado salvo un punto (Guido, 2026-10-19: los ejercicios ya cargados sin sponsor quedan en null
+   y no se vuelven a buscar). Falta: nombrar la compuerta de `cargar.mjs` (sin estadio y sponsor no escribe un año nuevo, salvo en liga
+   amateur) en la skill `club-or-year-onboarding` (con ok de Guido; `Admin/PIPELINE.md` ya la nombra).
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 50 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);

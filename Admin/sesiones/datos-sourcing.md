@@ -127,3 +127,5 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
 
 - **273 cerrado por decisión de Guido (2026-10-19): los ejercicios que siguen sin sponsor quedan en null** ("seguro son clubes
   irrelevantes"). No se vuelven a buscar; un año nuevo sigue pasando por la compuerta de `cargar.mjs`.
+
+## Después del merge de la segunda pasada (2026-10-19)
