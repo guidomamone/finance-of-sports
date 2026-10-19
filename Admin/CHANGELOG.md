@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 826 — Lote 102 (Bélgica) y Luzern (2026-10-19)
+
+* Lommel SK 2019-2024 (con una línea `carga-club`), Lierse SK 2020-2021 y Patro Eisden 2021 y 2023. Luzern 2018, 2020 y 2024, con ligas,
+  estadio y sponsor con fuente. Luzern 2023 espera la 298 k2 (guion largo como signo menos). Cierre de Onboarding 3.
+
 ## Versión 825 — Lote 101, segunda tanda: Luzern 2019 y 2022, Go Ahead Eagles 2021 y 2022 (2026-10-19)
 
 * Luzern 2019 y 2022; Go Ahead Eagles 2021 (Eerste Divisie) y 2022 (Eredivisie), con ligas, listas, estadio y sponsor. Basel sin cargar:

@@ -26,7 +26,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 324: Basel, todo (arreglo del script que elige la tabla de la AG, regenerar, verificar y cargar; la Defizitgarantie y la Gewinnüberführung 2012 las decidís vos). Onboarding no toca Basel --> Pipeline 5
-* 292: cargar lo transcripto: lote 101 (Go Ahead Eagles y Luzern 2019 y 2022 hechos; St. Gallen, con la 298 ai y sus 6 casos, y lo que queda de Luzern; Basel es de la 324); Bélgica: Lommel SK 2019-2024 ya se puede cargar (con una línea carga-club), Lierse SK 2020-2021 y Patro Eisden 2021-2023 también se pueden reintentar (298 ae); el estadio de las amateur espera la 298 af; después Suiza, Beşiktaş y Colombia --> Onboarding 3
+* 292: cargar lo transcripto: lote 101 y 102 hechos (Go Ahead Eagles, Luzern 2018-2024 salvo 2023, Lommel SK 2019-2024, Lierse SK 2020-2021, Patro Eisden 2021 y 2023); quedan Patro Eisden 2022 y Lierse SK 2019 (período), y St. Gallen con la 298 ai y sus 6 casos (espera tu decisión de perímetro); el estadio de las amateur espera la 298 af; Basel es de la 324; después Suiza, Beşiktaş y Colombia --> Pantallas 3 (St. Gallen --> Pipeline 5)
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
@@ -34,13 +34,13 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **C. Abaratar antes del onboarding grande**
 * 323: mejoras de script del lote 97 (Reino Unido): costo del reintento, notas inglesas, perímetro, nombre legal --> Pipeline 5
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 5. La ai (St. Gallen intragrupo, con tu decisión de perímetro) va con la carga de St. Gallen --> Onboarding 3
+* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 5. La ai (St. Gallen intragrupo, con tu decisión de perímetro) y la carga de St. Gallen también --> Pipeline 5. Y la k2: el guion largo "–" como signo menos (Luzern 2023)
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
-* 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
+* 238: llevar a 0 los documentos que quedaron a mitad de camino --> Pantallas 3
 * 261: Reino Unido: carga del fútbol inglés (lote 97, corriendo; el 98 y el alta de Celtic, lote 99, después); la cola de transcripción por Mistral --> Finanzas 5
-* 165 c: altas de los países nuevos que faltan --> Onboarding 3
+* 165 c: altas de los países nuevos que faltan --> Pantallas 3
 * 195: gestiones (presidentes) sin fuente confirmada (casi todas esperan respuesta del club)
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
 * 273: que generate-sponsors sume el contexto manual (los años viejos sin sponsor quedan en null) --> Pantallas 3
@@ -261,6 +261,9 @@ af) listas de las ligas amateur belgas
    de las dos sociedades (suman casi exacto) en vez de la fila consolidada? Si no: lump_football_operations y other_expenses.
    aj) la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen", y suma el subtotal
    "Erträge netto" cuando el documento lo imprime. Detalle de ah a aj en `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`.
+   k2) Luzern 2023 (2022-23): el .md imprime los negativos con guion largo "–" (U+2013), por ejemplo "–3’102’345" (L1560 aprox.); el tie-out lee
+   el resultado con el signo invertido y frena (también los gastos: falta el "Ausserordentlicher Aufwand" de la nota 34). Arreglo: leer "–" y
+   "−" como signo menos. No usar el ajuste resultado-final. Detalle: `Admin/Archive/sesion-onboarding-3-2026-10-19-cierre.md`.
    z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
