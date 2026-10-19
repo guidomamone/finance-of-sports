@@ -44,3 +44,17 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - Sarpsborg 08 tiene 2012 y 2014-2025 menos 2023 y 2024.
 
 ## Después del merge del lote 96 (2026-10-19)
+
+## Bélgica, lote 92 (2026-10-19)
+
+### Qué cambió
+- Lote 92 (`Admin/lotes/lote-92.txt`): 21 años belgas escritos de Beerschot, Lierse SK, Lokeren-Temse, OH Leuven y Patro Eisden (corrida con `--cargar`; commit por año). Vålerenga: los 49 PDFs quedaron con `.md` validado por `pipeline.mjs` (los `.md` de los subagentes se rehicieron y validaron).
+
+### Qué queda (para TODO)
+1. **Círculo del registro de entidades (Lommel SK 2019-2024, 6 años listos para escribir).**
+   - Síntoma: `lote.mjs --cargar` no escribe esos 6 años; dice "data/entidades/ ... quedó desactualizado. Corré: node tools/entidades.mjs" aunque `node tools/entidades.mjs --check` da 0 antes de escribir.
+   - Causa: `Admin/registros/entidades.jsonl` tiene para `lommelsk-be` solo una línea `carga` (2025, entidad `lommel-sk`, porque el club tiene dueño: City Football Group). Al escribir 2019-2024, el club pasa a tener ejercicios cargados sin línea `carga` y `entidades.mjs --check` falla; la auditoría posterior a la escritura (P1 `entidades-desfasado`) revierte el año.
+   - Lo contrario también falla: agregar las líneas `carga` ANTES de cargar da error "lommelsk-be no tiene cargado el ejercicio 2019..." y no escribe nada. Probado a mano.
+   - Fix pedido: que `entidades.mjs` acepte (o deduzca) la línea `carga` de un club con una sola entidad `club` y perímetro individual para los ejercicios que no la traen; o que `cargar-lote.mjs` agregue la línea `carga` en el mismo commit que el año. Las citas a usar: `Naam : VOETBALCLUB LOMMEL SK` en la línea 9 de cada `jaarrekening-AAAA-06-30-individual.md` (2019 y 2020 en la línea 11, 2021 -correction en la 13).
+2. **Estadio y sponsor en las ligas amateur belgas (Lokeren-Temse 2022, Patro Eisden 2013, 2014 y 2015).** `estadio-sponsor.mjs` dice "falta el estadio o el sponsor ... (compuerta del to-do 273)": faltan las listas de equipos de las ligas amateur belgas de esos años (la nota de Onboarding 2, mejora u, ya lo anotaba: Patro Eisden, Lokeren-Temse, Lierse SK, RWDM antes de ascender). Ya existe la excepción "amateur" para el sponsor; falta que el año tenga liga y el estadio con fuente.
+3. **Cola belga**: 26 casos; contestados por subagentes Sonnet y aplicados en el commit siguiente (si no aparece, quedan en `casos-be` del scratchpad de esta sesión).
