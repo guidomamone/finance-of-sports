@@ -98,6 +98,63 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2021–22 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "Basel".
 ```
 
+## 2014
+
+### Ingresos
+
+```text
+2014: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Suiza/Basel/geschaeftsbericht-2014.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Suiza/Basel/geschaeftsbericht-2014.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | aus Meisterschaft | pág. 25, precedente |
+| 2 | aus Champions-League / UEFA-Spielen | pág. 25, Jev 0.96 |
+| 3 | aus Cup-Spielen | pág. 25, precedente |
+| 4 | aus übrigen Spielen | pág. 25, precedente |
+| 5 | Business Seats | pág. 25, precedente |
+| 6 | Sponsoring, Werbung | pág. 25, precedente |
+| 7 | Transferertrag | pág. 25, precedente |
+| 8 | TV-Entschädigungen | pág. 25, precedente |
+| 9 | Merchandising, Licensing | pág. 25, precedente |
+| 10 | Catering | pág. 25, precedente |
+| 11 | Events non-Matchday | pág. 25, precedente |
+| 12 | Verbandseinnahmen | pág. 25, precedente |
+| 13 | Einnahmen Leistungsfussball Nachwuchs | pág. 25, precedente |
+| 14 | Diverses | pág. 25, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Personalaufwand | pág. 25, precedente |
+| 2 | Organisationskosten Heimspiele | pág. 25, precedente |
+| 3 | Übriger Spielbetrieb | pág. 25, precedente |
+| 4 | Transferaufwand | pág. 25, precedente |
+| 5 | Warenaufwand | pág. 25, precedente |
+| 6 | Werbung | pág. 25, precedente |
+| 7 | Administration | pág. 25, precedente |
+| 8 | Abschreibungen | pág. 25, precedente |
+| 9 | Aufwand Leistungsfussball Nachwuchs | pág. 25, precedente |
+| 10 | Übriger Aufwand | pág. 25, precedente |
+| 11 | Ausserordentliche Aufwendungen | pág. 25, Jev 1 |
+| 12 | Defizitgarantie FC Basel 1893 | pág. ?, precedente |
+| 13 | Gewinnüberführung FC Basel Holding AG | pág. ?, precedente |
+
+### Meta
+
+```text
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): perimetro = individual. El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado)
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2014–15 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "Basel".
+```
+
 ## 2013
 
 ### Ingresos
@@ -642,4 +699,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-2013.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### basel-ch-geschaeftsbericht-2014
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
