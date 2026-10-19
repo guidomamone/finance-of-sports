@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 816 — 298 ad: el registro de entidades no frena un año de un club de un grupo (2026-10-19)
+
+* `generadores.mjs`: `entidades.mjs` corre después de `generate-rankings.js` (los totales de grupo salen de los rankings): era la causa del
+  círculo de Lommel SK.
+* `entidades.mjs` acepta una línea `carga-club` con un rango de ejercicios y una sola cita.
+
 ## Versión 815 — Sarpsborg 08 2023 corregido en el sitio (2026-10-19)
 
 * El año publicado tenía resultado 0,000019 M (un ajuste a mano mal cargado): ahora netInterest 0,008445, sin impuesto y resultado
