@@ -53,3 +53,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2014 desde `Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2014.pdf` (sourceId `fredrikstad-no-aarsregnskap-fotballklubb-fli-2014`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2015 desde `Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2015.pdf` (sourceId `fredrikstad-no-aarsregnskap-fotballklubb-fli-2015`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2018 desde `Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.pdf` (sourceId `fredrikstad-no-aarsregnskap-fotballklubb-fli-2018`).

@@ -20,6 +20,9 @@ const fredrikstadnoRevenueLinesByYear = {
     { rawLabel:'Salgsinntekt', normalizedCategory:'lump_football_operations', amountNative:28.043511, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftsinntekt', normalizedCategory:'lump_football_operations', amountNative:4.134031, disclosureLevel:'aggregated' },
   ],
+  2018: [
+    { rawLabel:'Annen driftsinntekt', normalizedCategory:'lump_football_operations', amountNative:22.903598, disclosureLevel:'aggregated' },
+  ],
 };
 const fredrikstadnoExpenseLinesByYear = {
   2024: [
@@ -69,6 +72,15 @@ const fredrikstadnoExpenseLinesByYear = {
     { rawLabel:'Andre ytelser', normalizedCategory:'wages_squad', amountNative:-0.462423, disclosureLevel:'aggregated' },
     { rawLabel:'Avskrivning', normalizedCategory:'depreciation', amountNative:-0.169916, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-10.996404, disclosureLevel:'aggregated' },
+  ],
+  2018: [
+    { rawLabel:'Varekostnad', normalizedCategory:'other_expenses', amountNative:-3.579789, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønninger', normalizedCategory:'wages_squad', amountNative:-10.325425, disclosureLevel:'aggregated' },
+    { rawLabel:'Arbeidsgiveravgift', normalizedCategory:'wages_squad', amountNative:-1.782638, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnader', normalizedCategory:'wages_squad', amountNative:-0.247446, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre ytelser', normalizedCategory:'wages_squad', amountNative:-0.413427, disclosureLevel:'aggregated' },
+    { rawLabel:'Avskrivning', normalizedCategory:'depreciation', amountNative:-0.235149, disclosureLevel:'aggregated' },
+    { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-6.321588, disclosureLevel:'aggregated' },
   ],
 };
 const fredrikstadnoFiscalYearMeta = {
@@ -178,6 +190,23 @@ const fredrikstadnoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:32.177542, officialTotalExpenses:32.179906, officialPAT:0.035112,
   },
+  2018: {
+    currency:'NOK', fxRef:'NOK@2018-12-31',
+    sourceId:'fredrikstad-no-aarsregnskap-fotballklubb-fli-2018',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.1467, tax:0,
+    extraRows: [
+      {label:'Annen finansinntekt', value:0.09345},
+      {label:'Annen finanskostnad', value:-1.24015},
+    ],
+    sinDesglose: [
+      {renglon:'Annen driftsinntekt', lado:'revenue', importe:22.903598, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:22.903598, officialTotalExpenses:22.905462, officialPAT:-1.148565,
+  },
 };
 const fredrikstadnoPresupuestoOverlayByYear = {};
 
@@ -222,6 +251,11 @@ Object.assign(sources, {
   'fredrikstad-no-aarsregnskap-fotballklubb-fli-2015': {
     id:'fredrikstad-no-aarsregnskap-fotballklubb-fli-2015', clubId:'fredrikstad-no',
     title:'Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2015 (ejercicio 2015)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'fredrikstad-no-aarsregnskap-fotballklubb-fli-2018': {
+    id:'fredrikstad-no-aarsregnskap-fotballklubb-fli-2018', clubId:'fredrikstad-no',
+    title:'Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2018 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
