@@ -1,0 +1,352 @@
+{
+ "md": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.md",
+ "generatedAt": "2026-10-19T16:00:36.493Z",
+ "rubrosHuella": "6e76f73d6d7c280096c4417d79ea50ddc78277e3",
+ "rubros": [
+  {
+   "label": "Premier League income",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Hospitality and events",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "stadium_other",
+     0.13
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Shop merchandise",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Match and season ticket income",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Sponsorship and advertising",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Wages and salaries",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Other pension costs",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "wages_squad",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "English football league and FA Cup income",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "broadcasting",
+     0.55
+    ],
+    [
+     "competition_bonus",
+     0.38
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Amortisation of intangibles",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Depreciation and amortisation charge\"",
+   "choice": "other_amortisation",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_amortisation",
+     0.56
+    ],
+    [
+     "depreciation",
+     0.24
+    ],
+    [
+     "player_amortisation",
+     0.19
+    ]
+   ],
+   "tokens": 1113
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Depreciation of tangible assets",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Depreciation and amortisation charge\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "wages_squad",
+     0.94
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Other operating expenses",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1000
+  }
+ ]
+}

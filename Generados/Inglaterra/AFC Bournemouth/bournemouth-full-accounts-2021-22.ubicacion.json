@@ -1,0 +1,292 @@
+{
+ "pdf": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.md",
+ "mdSha1": "2591844a42a1198fda529e8f954564389c52c195",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:00:40.292Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    301,
+    304
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    310,
+    312
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    553,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 16,
+   "lineas": [
+    580,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    621,
+    637
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    650,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    690,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 27,
+   "lineas": [
+    1032,
+    1041
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    1047,
+    1049
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 27,
+   "lineas": [
+    1058,
+    1065
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 28,
+   "lineas": [
+    1082,
+    1090
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 28,
+   "lineas": [
+    1096,
+    1101
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 28,
+   "lineas": [
+    1105,
+    1110
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 29,
+   "lineas": [
+    1123,
+    1127
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 29,
+   "lineas": [
+    1143,
+    1145
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 29,
+   "lineas": [
+    1149,
+    1154
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 30,
+   "lineas": [
+    1167,
+    1172
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 30,
+   "lineas": [
+    1179,
+    1189
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 31,
+   "lineas": [
+    1211,
+    1214
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 32,
+   "lineas": [
+    1241,
+    1256
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 33,
+   "lineas": [
+    1278,
+    1295
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 34,
+   "lineas": [
+    1314,
+    1316
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 34,
+   "lineas": [
+    1324,
+    1329
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 34,
+   "lineas": [
+    1343,
+    1345
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 35,
+   "lineas": [
+    1358,
+    1367
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 36,
+   "lineas": [
+    1394,
+    1400
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 36,
+   "lineas": [
+    1417,
+    1422
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 37,
+   "lineas": [
+    1441,
+    1445
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 37,
+   "lineas": [
+    1454,
+    1461
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 38,
+   "lineas": [
+    1506,
+    1511
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b9"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b13",
+  "b17"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: '2022 £000 | 2021 £000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2022 £000",
+ "columna_anterior": "2021 £000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneración de directores (b15), que es un subconjunto ya incluido en los costes de personal (b13)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Aggregate directors' remuneration",
+   "texto": "La nota 9 detalla importes que ya están incluidos en staff costs (nota 8), cargarlos duplicaría gastos.",
+   "bloques": [
+    "b15",
+    "b13"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas individuales de AFC Bournemouth Limited. Estado de resultados en b4 (pág. 15). Nota 4 Turnover (b9) desglosa ingresos; nota 6 (b11) cargos operativos (amortizaciones, depreciación, arrendamientos); nota 8 (b13) costes de personal; nota 11 (b17) intereses. Excluidos balance, flujos, patrimonio, conciliación fiscal, activos fijos y demás notas de balance."
+}

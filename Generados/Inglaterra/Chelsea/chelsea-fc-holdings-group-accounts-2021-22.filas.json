@@ -1,0 +1,415 @@
+{
+ "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.md",
+ "mdSha1": "3fa55548e576e1919da24ebde875fdf62dacab4d",
+ "ubicacionSha1": "ed74d9979ab7a0e8be3c14ad407796cbf9badb90",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:28:52.448Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [
+   "b13",
+   "b14",
+   "b17"
+  ],
+  "notas_gastos": [
+   "b15",
+   "b18",
+   "b19"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "L711: 'Total 30 June 2022 £000'"
+  },
+  {
+   "bloque": "b13",
+   "escala": "miles",
+   "evidencia": "L1302: '2022 £000'"
+  },
+  {
+   "bloque": "b14",
+   "escala": "miles",
+   "evidencia": "L1325: '2022 £000'"
+  },
+  {
+   "bloque": "b17",
+   "escala": "miles",
+   "evidencia": "L1414: '2022 £000'"
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "L1375: '2022 £000'"
+  },
+  {
+   "bloque": "b18",
+   "escala": "miles",
+   "evidencia": "L1425: '2022 £000'"
+  },
+  {
+   "bloque": "b19",
+   "escala": "miles",
+   "evidencia": "L1445: '2022 £000'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 713,
+   "etiqueta": "Turnover",
+   "actual": "481,278",
+   "anterior": "434,863",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 714,
+   "etiqueta": "Cost of sales",
+   "actual": "(386,794)",
+   "anterior": "(354,147)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 715,
+   "etiqueta": "Gross profit",
+   "actual": "94,484",
+   "anterior": "80,716",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 716,
+   "etiqueta": "Administrative expenses",
+   "actual": "(336,913)",
+   "anterior": "(276,140)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 717,
+   "etiqueta": "Other operating income",
+   "actual": "-",
+   "anterior": "12,581",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 718,
+   "etiqueta": "Operating loss",
+   "actual": "(242,429)",
+   "anterior": "(182,843)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 719,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "4,879",
+   "anterior": "4,995",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 720,
+   "etiqueta": "Interest payable and similar charges",
+   "actual": "(7,063)",
+   "anterior": "(5,996)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 721,
+   "etiqueta": "Profit on disposal of player registrations",
+   "actual": "123,213",
+   "anterior": "27,940",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 722,
+   "etiqueta": "Fair value gain/(loss) on investment properties",
+   "actual": "45",
+   "anterior": "(35)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 723,
+   "etiqueta": "Loss before taxation",
+   "actual": "(121,355)",
+   "anterior": "(155,939)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 724,
+   "etiqueta": "Taxation",
+   "actual": "73",
+   "anterior": "2,517",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 725,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(121,282)",
+   "anterior": "(153,422)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1305,
+   "etiqueta": "Broadcasting",
+   "actual": "235,016",
+   "anterior": "273,606",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1306,
+   "etiqueta": "Commercial",
+   "actual": "177,099",
+   "anterior": "153,603",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1307,
+   "etiqueta": "Matchday",
+   "actual": "69,163",
+   "anterior": "7,654",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1308,
+   "etiqueta": "",
+   "actual": "481,278",
+   "anterior": "434,863",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1327,
+   "etiqueta": "Research and development tax credit",
+   "actual": "-",
+   "anterior": "1,140",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1328,
+   "etiqueta": "Recharged costs",
+   "actual": "-",
+   "anterior": "10,644",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1329,
+   "etiqueta": "Insurance claim",
+   "actual": "-",
+   "anterior": "797",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1330,
+   "etiqueta": "",
+   "actual": "-",
+   "anterior": "12,581",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1417,
+   "etiqueta": "Interest on bank deposits",
+   "actual": "117",
+   "anterior": "18",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1418,
+   "etiqueta": "Other interest income",
+   "actual": "4,762",
+   "anterior": "4,977",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1419,
+   "etiqueta": "Total finance income",
+   "actual": "4,879",
+   "anterior": "4,995",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1427,
+   "etiqueta": "Total finance costs",
+   "actual": "7,063",
+   "anterior": "5,996",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1448,
+   "etiqueta": "Current tax on loss for the year",
+   "actual": "7",
+   "anterior": "(3,131)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1449,
+   "etiqueta": "Total Current Tax",
+   "actual": "7",
+   "anterior": "(3,131)",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1451,
+   "etiqueta": "Origination and reversal of timing differences",
+   "actual": "(80)",
+   "anterior": "(88)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1452,
+   "etiqueta": "Changes in tax rates",
+   "actual": "-",
+   "anterior": "412",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1453,
+   "etiqueta": "Adjustments in respect of prior periods",
+   "actual": "-",
+   "anterior": "290",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1454,
+   "etiqueta": "Total Deferred Tax",
+   "actual": "(80)",
+   "anterior": "614",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1455,
+   "etiqueta": "Total tax credit",
+   "actual": "(73)",
+   "anterior": "(2,517)",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 725,
+  "actual": "(121,282)",
+  "anterior": "(153,422)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones al personal (L1376-L1379, total 340,249) porque no desglosa directamente un renglón del estado sino que está repartido entre Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Los gastos de personal (L1376-L1379) no se asignan a un único renglón del estado.",
+   "bloques": [
+    "b15"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera las notas 5, 6, 7 y 9 (L1332-L1351, L1382-L1385) por ser informativas y no desgloses de un renglón del estado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Administrative expenses",
+   "texto": "Impairment (L1332), cargos de la nota 6, honorarios de auditoría y remuneración de directores son información cruzada, no desglose aditivo.",
+   "bloques": [
+    "b14",
+    "b15"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en £000. No hay total de ingresos ni de gastos impresos. Turnover se desglosa en b13; segunda tabla geográfica (L1311) omitida por duplicar el total. Impuesto en nota con signo inverso al estado (crédito 73)."
+}

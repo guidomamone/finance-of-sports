@@ -1,0 +1,110 @@
+{
+  "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.md",
+  "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.pdf",
+  "club": "chelsea-gb",
+  "year": 2023,
+  "generatedAt": "2026-10-19T15:37:03.403Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        225.902
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        210.084
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        76.481
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Research and development tax credit",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Other operating income\"",
+      "values": [
+        1.048
+      ],
+      "glosa": "Crédito fiscal por investigación y desarrollo"
+    },
+    {
+      "label": "Recharged costs (see Note 2)",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Other operating income\"",
+      "values": [
+        17.058
+      ],
+      "glosa": "Costes refacturados (ver Nota 2)"
+    },
+    {
+      "label": "Settlement fee",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Other operating income\"",
+      "values": [
+        12.5
+      ],
+      "glosa": "Gasto de liquidación"
+    },
+    {
+      "label": "Profit on disposal of player registrations",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        62.861
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Profit on disposal of fixed assets",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        76.524
+      ],
+      "glosa": "Beneficio por enajenación de inmovilizado"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        467.205
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        293.85
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

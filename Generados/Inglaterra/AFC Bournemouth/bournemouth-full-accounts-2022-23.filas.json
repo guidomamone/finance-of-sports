@@ -1,0 +1,381 @@
+{
+ "pdf": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.md",
+ "mdSha1": "8040088c895e64d816eebd358c556cc71791b1ff",
+ "ubicacionSha1": "930df263a689dff06c036c6fdda984c21af6f7a6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:03:18.871Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b8"
+  ],
+  "notas_gastos": [
+   "b11",
+   "b13",
+   "b17"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L657: 2023 £000"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L1133: 2023 £000"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L1184: 2023 £000"
+  },
+  {
+   "bloque": "b13",
+   "escala": "miles",
+   "evidencia": "L1213: 2023 £000"
+  },
+  {
+   "bloque": "b17",
+   "escala": "miles",
+   "evidencia": "L1267: 2023 £000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 659,
+   "etiqueta": "Turnover",
+   "actual": "140,983",
+   "anterior": "53,226",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 660,
+   "etiqueta": "Other operating income",
+   "actual": "2,035",
+   "anterior": "712",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 661,
+   "etiqueta": "Exceptional other operating income",
+   "actual": "71,444",
+   "anterior": "–",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 662,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "1,898",
+   "anterior": "6,853",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 663,
+   "etiqueta": "Staff costs",
+   "actual": "(100,109)",
+   "anterior": "(61,381)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 664,
+   "etiqueta": "Depreciation and amortisation charge",
+   "actual": "(42,710)",
+   "anterior": "(31,028)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 665,
+   "etiqueta": "Other operating expenses",
+   "actual": "(21,471)",
+   "anterior": "(17,131)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 666,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "52,070",
+   "anterior": "(48,749)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 667,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "253",
+   "anterior": "889",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 668,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(7,828)",
+   "anterior": "(7,650)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 669,
+   "etiqueta": "Profit/(loss) before taxation",
+   "actual": "44,495",
+   "anterior": "(55,510)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 670,
+   "etiqueta": "Tax on profit/(loss)",
+   "actual": "–",
+   "anterior": "–",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 671,
+   "etiqueta": "Profit/(loss) for the financial year",
+   "actual": "44,495",
+   "anterior": "(55,510)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1135,
+   "etiqueta": "Match and season ticket income",
+   "actual": "5,414",
+   "anterior": "5,136",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1136,
+   "etiqueta": "English football league and FA Cup income",
+   "actual": "773",
+   "anterior": "4,948",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1137,
+   "etiqueta": "Premier League income",
+   "actual": "122,203",
+   "anterior": "37,886",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1138,
+   "etiqueta": "Sponsorship and advertising",
+   "actual": "8,652",
+   "anterior": "2,276",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1139,
+   "etiqueta": "Hospitality and events",
+   "actual": "2,267",
+   "anterior": "1,597",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1140,
+   "etiqueta": "Shop merchandise",
+   "actual": "1,354",
+   "anterior": "1,102",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1141,
+   "etiqueta": "Other income",
+   "actual": "320",
+   "anterior": "281",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1142,
+   "etiqueta": "",
+   "actual": "140,983",
+   "anterior": "53,226",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1186,
+   "etiqueta": "Depreciation of tangible assets",
+   "actual": "1,484",
+   "anterior": "1,242",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciation and amortisation charge"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1187,
+   "etiqueta": "Amortisation of intangibles",
+   "actual": "41,226",
+   "anterior": "29,786",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciation and amortisation charge"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1215,
+   "etiqueta": "Wages and salaries",
+   "actual": "87,832",
+   "anterior": "54,019",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1216,
+   "etiqueta": "Social security costs",
+   "actual": "12,181",
+   "anterior": "6,970",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1217,
+   "etiqueta": "Other pension costs",
+   "actual": "96",
+   "anterior": "392",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1218,
+   "etiqueta": "",
+   "actual": "100,109",
+   "anterior": "61,381",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1269,
+   "etiqueta": "Interest on bank loans",
+   "actual": "265",
+   "anterior": "970",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1270,
+   "etiqueta": "Implied interest on shareholder loans",
+   "actual": "3,597",
+   "anterior": "5,513",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1271,
+   "etiqueta": "Implied interest on trade creditors with extended payment terms",
+   "actual": "3,966",
+   "anterior": "1,167",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1272,
+   "etiqueta": "",
+   "actual": "7,828",
+   "anterior": "7,650",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 671,
+  "actual": "44,495",
+  "anterior": "(55,510)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas L1188-L1191 de la nota b11 (reversión de deterioro, venta de jugadores, diferencias de cambio, alquileres) por no desglosar un único renglón del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La nota b11 es un listado de cargos incluidos en el resultado operativo de distintos renglones (L1188-L1191: venta de jugadores ya está en L662; los demás estarían dentro de Other operating expenses), no un desglose sumable.",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Escala en miles de libras (£000) en todos los bloques. El estado no imprime total de ingresos ni de gastos. Depreciation (1,484) + Amortisation (41,226) = 42,710 coincide con L664, por eso se asignan a ese renglón. Las notas 5, 6 y 7 de otros ingresos no están en los bloques."
+}

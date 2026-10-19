@@ -1,13 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.pdf",
- "generado": "2026-10-19T17:11:13.653Z",
- "frena": [
-  {
-   "etapa": "periodo",
-   "motivo": "el documento cubre un período otro de 13 meses al 2024-06-30: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)"
-  }
- ],
+ "generado": "2026-10-19T17:24:34.819Z",
+ "frena": [],
  "avisos": [
+  "ejercicio de transición por cambio de cierre (13 meses al 2024-06-30): encadena con el cierre anterior 2023-05-31 y el siguiente 2025-06-30; se carga como el año, con nota pública (to-do 237 ab)",
   "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
   "el documento cierra 2024-05-31 (ejercicio desde el 06-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
  ],
@@ -186,6 +182,13 @@
    "texto": "FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024"
   },
   "confianza": "alta"
+ },
+ "transicion": {
+  "meses": 13,
+  "inicio": "2023-06-01",
+  "cierre": "2024-06-30",
+  "anterior": "2023-05-31",
+  "siguiente": "2025-06-30"
  },
  "clubId": "astonvilla-gb",
  "year": 2024,
@@ -485,8 +488,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 7,
   "lineasGasto": 5,
   "metaFilas": 2,

@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.md",
+  "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.pdf",
+  "club": "chelsea-gb",
+  "year": 2022,
+  "generatedAt": "2026-10-19T16:31:38.470Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 32,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        235.016
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 32,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        177.099
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 32,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        69.163
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Profit on disposal of player registrations",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        123.213
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Fair value gain/(loss) on investment properties",
+      "lado": "revenue",
+      "page": 18,
+      "section": "ajuste manual",
+      "values": [
+        0.045
+      ],
+      "glosa": "Ganancia/(pérdida) por valor razonable en inversiones inmobiliarias"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        386.794
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        336.913
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

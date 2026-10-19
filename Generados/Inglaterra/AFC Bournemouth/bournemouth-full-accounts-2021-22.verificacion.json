@@ -1,0 +1,205 @@
+{
+ "pdf": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.md",
+ "generado": "2026-10-19T17:24:31.431Z",
+ "estado": "ok",
+ "clubId": "bournemouth-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.105427357601002e-15
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 60.791 en este documento y 60.791 en bournemouth-full-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: La nota 9 detalla importes que ya están incluidos en staff costs (nota 8), cargarlos duplicaría gastos."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 60.791,
+  "gastos": 109.54,
+  "financiero": -6.761,
+  "impuesto": 0,
+  "resultadoImpreso": -55.51,
+  "resultadoParaCargar": -55.51,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Match and season ticket income",
+   "lado": "ingreso",
+   "M": 5.136,
+   "pagina": 27,
+   "linea": 1034,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "English football league and FA Cup income",
+   "lado": "ingreso",
+   "M": 4.948,
+   "pagina": 27,
+   "linea": 1035,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Premier League income",
+   "lado": "ingreso",
+   "M": 37.886,
+   "pagina": 27,
+   "linea": 1036,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorship and advertising",
+   "lado": "ingreso",
+   "M": 2.276,
+   "pagina": 27,
+   "linea": 1037,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Hospitality and events",
+   "lado": "ingreso",
+   "M": 1.597,
+   "pagina": 27,
+   "linea": 1038,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Shop merchandise",
+   "lado": "ingreso",
+   "M": 1.102,
+   "pagina": 27,
+   "linea": 1039,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 0.281,
+   "pagina": 27,
+   "linea": 1040,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.712,
+   "pagina": 15,
+   "linea": 556,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 6.853,
+   "pagina": 15,
+   "linea": 557,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Wages and salaries",
+   "lado": "gasto",
+   "M": 54.019,
+   "pagina": 28,
+   "linea": 1098,
+   "origen": "nota que desglosa \"Staff costs\""
+  },
+  {
+   "etiqueta": "Social security costs",
+   "lado": "gasto",
+   "M": 6.97,
+   "pagina": 28,
+   "linea": 1099,
+   "origen": "nota que desglosa \"Staff costs\""
+  },
+  {
+   "etiqueta": "Other pension costs",
+   "lado": "gasto",
+   "M": 0.392,
+   "pagina": 28,
+   "linea": 1100,
+   "origen": "nota que desglosa \"Staff costs\""
+  },
+  {
+   "etiqueta": "Depreciation of tangible assets",
+   "lado": "gasto",
+   "M": 1.242,
+   "pagina": 27,
+   "linea": 1060,
+   "origen": "nota que desglosa \"Depreciation and amortisation charge\""
+  },
+  {
+   "etiqueta": "Amortisation of intangibles",
+   "lado": "gasto",
+   "M": 29.786,
+   "pagina": 27,
+   "linea": 1061,
+   "origen": "nota que desglosa \"Depreciation and amortisation charge\""
+  },
+  {
+   "etiqueta": "Other operating expenses",
+   "lado": "gasto",
+   "M": 17.131,
+   "pagina": 15,
+   "linea": 560,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.889,
+   "linea": 562
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -7.65,
+   "linea": 563
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on (loss)/profit",
+   "M": null,
+   "linea": 565
+  }
+ ]
+}

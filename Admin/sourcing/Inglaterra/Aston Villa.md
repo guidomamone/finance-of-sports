@@ -58,3 +58,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.pdf` (sourceId `astonvilla-gb-full-accounts-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf` (sourceId `astonvilla-gb-full-accounts-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.pdf` (sourceId `astonvilla-gb-full-accounts-2023-24`).

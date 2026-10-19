@@ -15,6 +15,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2021: {"estadio":"Villa Park","capacidad":42682,"sponsor":"Cazoo","marca":"Kappa","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
     2022: {"estadio":"Villa Park","capacidad":42682,"sponsor":"Cazoo","marca":"Kappa","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2023: {"estadio":"Villa Park","capacidad":42657,"sponsor":"Cazoo","marca":"Castore","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
+    2024: {"estadio":"Villa Park","capacidad":42657,"sponsor":"BK8","marca":"Castore","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Villa Park","capacidad":42918,"sponsor":"Betano","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'bournemouth-gb': {

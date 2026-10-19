@@ -1,0 +1,174 @@
+{
+ "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.md",
+ "generado": "2026-10-19T17:24:31.776Z",
+ "estado": "ok",
+ "clubId": "chelsea-gb",
+ "year": 2024,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1368683772161603e-13
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 682.458 en chelsea-fc-holdings-group-accounts-2022-23.pdf y 682.458 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Other operating income\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se carga la columna 'Total 30 June 2024 £000' del estado (b7) y no las columnas parciales de operaciones y de amortización/traspaso de jugadores?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 820.467,
+  "gastos": 682.544,
+  "financiero": -9.523,
+  "impuesto": 1.206,
+  "resultadoImpreso": 129.606,
+  "resultadoParaCargar": 129.606,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 163.101,
+   "pagina": 36,
+   "linea": 1645,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 225.265,
+   "pagina": 36,
+   "linea": 1646,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 80.12,
+   "pagina": 36,
+   "linea": 1647,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.715,
+   "pagina": 21,
+   "linea": 935,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of player registrations",
+   "lado": "ingreso",
+   "M": 152.463,
+   "pagina": 21,
+   "linea": 939,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Proceeds on sale of investment",
+   "lado": "ingreso",
+   "M": 200,
+   "pagina": 44,
+   "linea": 2014,
+   "origen": "nota que desglosa \"Profit on disposal of fixed assets investments\""
+  },
+  {
+   "etiqueta": "Less: net assets of subsidiary on disposal",
+   "lado": "gasto",
+   "M": 1.251,
+   "pagina": 44,
+   "linea": 2015,
+   "origen": "nota que desglosa \"Profit on disposal of fixed assets investments\""
+  },
+  {
+   "etiqueta": "Profit on disposal of fixed assets",
+   "lado": "ingreso",
+   "M": 0.054,
+   "pagina": 21,
+   "linea": 941,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 400.808,
+   "pagina": 21,
+   "linea": 932,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 281.352,
+   "pagina": 21,
+   "linea": 934,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fair value loss on investment properties",
+   "lado": "gasto",
+   "M": 0.384,
+   "pagina": 21,
+   "linea": 942,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 9.748,
+   "linea": 937
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -19.271,
+   "linea": 938
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation",
+   "M": 1.206,
+   "linea": 944
+  }
+ ]
+}
