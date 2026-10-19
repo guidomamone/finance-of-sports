@@ -1,0 +1,34 @@
+{
+ "criterioPais": { "EE": "Paide Linnameeskond es una asociación sin fines de lucro (MTÜ) sin dueño persona: se cargó el presidente del club, Veiko Veskimäe (cargo 'President'), según el criterio de Estonia." },
+ "clubes": {
+  "paidelinnameeskond-ee": {
+   "gestiones": [
+    {
+     "nombre": "Veiko Veskimäe",
+     "corto": "Veskimäe",
+     "cargo": "President",
+     "desde": "2013-03-11",
+     "hasta": null,
+     "fuente": "https://www.inforegister.ee/307713-ID",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Veiko Veskimäe": "Inforegister (ficha 307713-ID) lo muestra como miembro de la junta (Juhatuse liige) de Jalgpalliklubi Paide Linnameeskond (80339528) desde el 11.03.2013, sin fin; ariregister.rik.ee/eng/company/80339528 lo lista con la misma fecha. La Wikipedia en inglés (https://en.wikipedia.org/wiki/Paide_Linnameeskond) dice que en 2013 se convirtió en presidente del club, y su infobox lo mantiene como presidente. El registro solo dice miembro de la junta; el título 'presidente' sale de Wikipedia, y la fecha coincide en año. El balance 2025 lo firma otro miembro de la junta, Jarmo Liiver (Clubes/Estonia/Paide Linnameeskond/aruanne-2025.md:665, firma 31.03.2026), miembro desde 2023-04-03 según ariregister; Veskimäe, Erkko Saluste (2013-03-11) y Margus Pahtma (2013-09-24) siguen en la junta. No abrí los informes de 2019-2024 uno por uno."
+   },
+   "cubre": {
+    "2019-12-31": "Veiko Veskimäe",
+    "2020-12-31": "Veiko Veskimäe",
+    "2021-12-31": "Veiko Veskimäe",
+    "2022-12-31": "Veiko Veskimäe",
+    "2023-12-31": "Veiko Veskimäe",
+    "2024-12-31": "Veiko Veskimäe",
+    "2025-12-31": "Veiko Veskimäe"
+   },
+   "dudas": [
+    "El registro lista cuatro miembros de la junta (Veskimäe, Saluste, Pahtma, Liiver) sin distinguir un presidente de junta; el título de presidente de Veskimäe viene solo de Wikipedia/Baltic Football News. Conviene confirmarlo con el club.",
+    "Los firmantes de los balances 2019-2024 no se verificaron uno por uno."
+   ]
+  }
+ }
+}

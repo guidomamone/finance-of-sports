@@ -471,6 +471,17 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 4
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-11.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Viktor Levada (1998-10-22 a hoy): Levada fundó el FC Levadia el 22/10/1998 sobre la base del club de Maardu (Wikipedia, Viktor Levada) y figura como presidente en la infobox de FCI Levadia Tallinn, en ERR (enero 2023: 'President of ... FCI Levadia Tallinn'), en Postimees y en la web del club (Silver Badge 2024: 'long-serving club president'). Ninguna fuente dice la fecha en que empezó a ser 'presidente' (solo la del fundador), por eso confirmada:false y desde=fecha de fundación. Los informes (aruanne-2019.md:539, 2020.md:514, 2021.md:566, 2022.md:629, 2023.md:652, 2024.md:651, 2025.md:663) los firma un solo 'Juhatuse liige' (Hohlov-Simson hasta el informe 2021, Andrei Leškin informes 2022-2024, Jevgeni Gurtšioglujants informe 2025): son gerente/junta, no presidente. aruanne-2022.md:73 cuenta que Hohlov-Simson dejó el cargo de tegevjuht a fin de 2022 y lo reemplazó Leškin; Leškin figura como 'asepresident' en la prensa. Confirmada con el criterio de Estonia (Guido, 2026-10-19): las fuentes lo llaman presidente en el período y la fecha de inicio es la de su alta en la junta del registro (o la fundación del club, en Levadia), no una fecha de asunción como presidente.
+Duda: Ninguna fuente dice desde cuándo Levada es presidente (solo que fundó el club el 1998-10-22 y es presidente actual). Si Guido acepta fundador=presidente desde la fundación, pasa a confirmada:true y cubre los 7 cierres.
+Duda: Ningún registro (e-Äriregister) accesible por WebFetch: la juhatus lista a los gerentes, no al presidente.
+Duda: Wikipedia lo llama 'founder and owner'; el club es MTÜ, así que el criterio del país lo trata como presidente, no como dueño.
+```
+
 ## Fuentes
 
 ### fcilevadia-ee-aruanne-2025

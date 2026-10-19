@@ -1,0 +1,34 @@
+{
+ "criterioPais": { "EE": "Nõmme Kalju es una asociación (MTÜ), sin dueño persona formal en el registro: se cargó el presidente del club, Kuno Tehva (cargo 'President'), según el criterio de Estonia." },
+ "clubes": {
+  "nommekalju-ee": {
+   "gestiones": [
+    {
+     "nombre": "Kuno Tehva",
+     "corto": "Tehva",
+     "cargo": "President",
+     "desde": "2007-04-11",
+     "hasta": null,
+     "fuente": "https://www.inforegister.ee/283296-ID",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Kuno Tehva": "Tehva figura en el registro comercial (Inforegister, ficha 283296-ID; ariregister coincide) como único miembro de la junta (Juhatuse liige) de MTÜ Nõmme Kalju FC (80048819) desde el 11.04.2007, sin fecha de fin. La Wikipedia en inglés (https://en.wikipedia.org/wiki/N%C3%B5mme_Kalju_FC) lo nombra presidente del club y dice que adquirió el club en 2002; ECA (efcfootball.com) lo describe como dueño y presidente. El título 'presidente' lo dan Wikipedia/ECA; la fecha de desde es la de alta en la junta del registro, no una fecha de asunción como presidente. Los balances los firma él como Juhatuse liige: Clubes/Estonia/Nõmme Kalju/aruanne-2022.md:882 (firma 23.04.2023) y aruanne-2025.md:833 (firma 31.03.2026). Los demás años (2019-2021, 2023, 2024) no los abrí uno por uno; el registro muestra una sola persona en la junta en todo el período."
+   },
+   "cubre": {
+    "2019-12-31": "Kuno Tehva",
+    "2020-12-31": "Kuno Tehva",
+    "2021-12-31": "Kuno Tehva",
+    "2022-12-31": "Kuno Tehva",
+    "2023-12-31": "Kuno Tehva",
+    "2024-12-31": "Kuno Tehva",
+    "2025-12-31": "Kuno Tehva"
+   },
+   "dudas": [
+    "No encontré una fuente que diga desde cuándo es 'presidente' (el registro solo dice miembro de la junta desde 2007-04-11). La Wikipedia dice que adquirió el club en 2002. Si Guido quiere la fecha exacta como presidente, hay que preguntarle al club.",
+    "ECA lo llama 'owner and chairman'. Como Kalju es MTÜ, se cargó como presidente (no 'Dueño'); la decisión de si cuenta como dueño persona es de Guido."
+   ]
+  }
+ }
+}

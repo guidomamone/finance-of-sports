@@ -369,6 +369,14 @@ Duda: Quién es el dueño: Globalon Football Holdings Group, S.L. (92,27% al 30/
 Duda: Cierre 2025-06-30 sin gestión: ¿quién presidía el conselho de administração de la Estoril Praia SAD al 30/6/2025? Beristain anunció su salida el 10/6/2025 y el balance 2024/25 (aprobado el 28/10/2025) lo firma Begoña Santiago.
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-21.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Ignacio Beristain Borra (2021-01-01 a 2025-06-10): Presidente de la SAD 'ao fim de quatro anos e meio' desde enero de 2021 (solo mes y año: día 01). El club anunció su salida el martes 10/6/2025 (A Bola 10/6/2025; RTP: 'cessa funções na liderança da administração'); ninguna nota da la fecha efectiva ni nombra sucesor ('ainda não é conhecido o seu sucessor'; lo decide MSP Sports Capital). hasta = 10/6/2025 por la fecha del anuncio. El relatório 2024/25 enumera al 30/6/2025 solo vogais en el Conselho de Administração, sin presidente (Clubes/Portugal/Estoril Praia/relatorio-contas-2024-25.md:88-94: Begoña Santiago Ramos, Paulo Carvalho, Johannes Ruppert, Lauren Cheney Holiday, Todd Marcy).
+Duda: El cierre 2025-06-30 queda SIN cubrir: Beristain anunció su salida el 10/6/2025 y al 30/6/2025 el consejo no tiene presidente (relatorio-contas-2024-25.md:88-94). El 1/7/2025 el club presentó a Carlos Álvarez como diretor geral de la SAD (A Bola 1/7/2025), no como presidente, y desde después de esa fecha. No hallé la fecha efectiva de la salida de Beristain: si fue el 30/6/2025 (fin de temporada), cubriría el cierre, pero no hay fuente que lo diga. Dato a consultar al club o en el comunicado oficial del Estoril.
+Duda: La SAD pertenece a MSP Sports Capital (fondo): sin persona dueña no hay entrada alternativa.
+```
+
 ## Fuentes
 
 ### estorilpraia-pt-relatorio-contas-2024-25

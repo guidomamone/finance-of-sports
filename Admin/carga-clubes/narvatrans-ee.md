@@ -449,6 +449,16 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 1 (compuerta: documento siguiente): "Laenukohustised" pág. 4; cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 4
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-15.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Nikolai Burdakov (1999-03-01 a hoy): Burdakov figura como 'president' en Wikipedia (JK Narva Trans), en ERR (06.12.2013: 'Narva Transi jalgpalliklubi president Nikolai Burdakov') y en Soccernet (27.11.2020: 'Narva Transi president'). El registro (inforegister.ee) lo lista como miembro de la juhatus desde 01.03.1999: esa fecha se usa de tope, no es la de asunción como presidente. Los informes los firman miembros de junta: Igor Sumarok, Nikolai Burdakov y Galina Burdakova (aruanne-2019.md:543-545, 2020.md:517-518, 2021.md:1021 Burdakova, 2022.md:541-543, 2023.md:633-634, 2024.md:662 Burdakova); su cargo es 'Juhatuse liige', no presidente. Confirmada con el criterio de Estonia (Guido, 2026-10-19): las fuentes lo llaman presidente en el período y la fecha de inicio es la de su alta en la junta del registro (o la fundación del club, en Levadia), no una fecha de asunción como presidente.
+Duda: Ninguna fuente dice desde cuándo es presidente; hay evidencia puntual de que lo era en dic-2013 y nov-2020 y que lo es hoy, lo que cubre en los hechos 2019-2025 pero sin una fecha de asunción. Si Guido lo acepta, pasa a confirmada:true.
+Duda: Galina Burdakova figura como 'main decider' en inforegister, pero no como presidente.
+```
+
 ## Fuentes
 
 ### narvatrans-ee-aruanne-2025

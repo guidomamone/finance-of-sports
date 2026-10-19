@@ -87,6 +87,16 @@ tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del docum
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-3.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Hans Van Duysen (2020-04-21 a hoy): Presidente del club fusionado Lokeren-Temse desde abril 2020 (sporza 2020-04-22) y todavía voorzitter el 2025-07-01 cuando el club recupera el nombre Sporting Lokeren (https://www.vrt.be/vrtnws/nl/2025/07/01/sporting-lokeren-nieuwe-naam-logo/). La fecha exacta 2020-04-21 sale del balance 2021, donde figura 'Voorzitter van het bestuursorgaan', mandato desde 2020-04-21 (Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.md:47-51); el artículo de sporza es del día siguiente y no da el día. El balance 2025 lo lista como Bestuurder con mandato desde 2023-03-10 (jaarrekening-2025-06-30-individual.md:54-59), probablemente por renovación de mandatos, y se aprobó el 31-10-2025 (línea 23).
+Duda: El balance 2025 no marca quién es Voorzitter (solo lista Bestuurders desde 2023-03-10); la presidencia en junio de 2025 se confirma por prensa (VRT, 2025-07-01, un día después del cierre), no por el balance.
+Duda: La fecha desde (2020-04-21) viene del balance, no de la fuente web, que solo confirma abril de 2020.
+```
+
 ## Fuentes
 
 ### lokerentemse-be-jaarrekening-2025-06-30-individual

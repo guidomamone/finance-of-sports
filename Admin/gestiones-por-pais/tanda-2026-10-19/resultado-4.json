@@ -1,0 +1,46 @@
+{
+  "criterioPais": {
+    "BE": "Lommel SK es de City Football Group (un grupo, no una persona): no hay dueño persona, así que se carga el presidente (voorzitter) del club: Paul Kerkhofs hasta febrero de 2021 y Harm van Veldhoven desde entonces."
+  },
+  "clubes": {
+    "lommelsk-be": {
+      "gestiones": [
+        {
+          "nombre": "Paul Kerkhofs",
+          "corto": "Kerkhofs",
+          "cargo": "Voorzitter",
+          "desde": "2017-06-28",
+          "hasta": "2021-02-01",
+          "fuente": "https://sporza.be/nl/2020/05/11/kogel-is-door-de-kerk-lommel-gaat-in-zee-met-manchester-city/",
+          "confirmada": false
+        },
+        {
+          "nombre": "Harm van Veldhoven",
+          "corto": "Van Veldhoven",
+          "cargo": "Voorzitter",
+          "desde": "2021-02-01",
+          "hasta": null,
+          "fuente": "https://nl.wikipedia.org/wiki/Lommel_SK_(2554)",
+          "confirmada": true
+        }
+      ],
+      "notas": {
+        "Paul Kerkhofs": "Voorzitter ('Huidig voorzitter') de la vzw Lommel SK cuando City Group tomó el club (Sporza, 11/5/2020, fuente). Ya era voorzitter de Lommel United cuando el club pasó a llamarse Lommel SK para 2017-18 (gestelsedijk.be/historiek/lommel-sk). Desde = 28/6/2017, inicio de su mandato de bestuurder en la NV (jaarrekening-2018-06-30-individual.md:58); ninguna fuente web da la fecha en que empezó o terminó de presidir, por eso confirmada:false. Hasta = febrero 2021 (día 01) porque nl.wikipedia ubica ahí el cambio a Van Veldhoven. Sigue de bestuurder hasta 2025 (jaarrekening-2020-06-30-individual.md:55: mandato desde 13-05-2020), pero ya no preside. Los balances solo listan 'Bestuurder' sin cargo de presidente.",
+        "Harm van Veldhoven": "Operationeel directeur desde octubre de 2019; en febrero de 2021, cuando Mike Green es nombrado CEO (anuncio de CFG del 17/2/2021), pasa a voorzitter de Lommel SK ('Sinds 2021' en la ficha, nl.wikipedia Lommel_SK_(2554)). La fuente da solo mes y año: día 01. Sporza (20/5/2026) y VRT (22/7/2022) lo llaman voorzitter. Los balances 2021 a 2025 no lo listan como bestuurder (jaarrekening-2025-06-30-individual.md:60-76 solo MACBEATH, KERKHOFS, CLIFF), así que no figura como firmante: el cargo es del club, no de la NV."
+      },
+      "cubre": {
+        "2018-06-30": "Paul Kerkhofs",
+        "2020-06-30": "Paul Kerkhofs",
+        "2021-06-30": "Harm van Veldhoven",
+        "2022-06-30": "Harm van Veldhoven",
+        "2025-06-30": "Harm van Veldhoven"
+      },
+      "dudas": [
+        "Kerkhofs: ninguna fuente web da la fecha exacta de inicio (¿constitución de la NV el 28/6/2017?) ni de fin de su presidencia; 2018-06-30 y 2020-06-30 quedan cubiertos pero con confirmada:false. Evidencia: voorzitter de Lommel United en el verano de 2017, 'huidig voorzitter' en mayo de 2020.",
+        "No hay documento que diga quién presidía entre 2017 y 2020 (los balances solo dicen Bestuurder). El 'Voorzitter' de 2018 es una inferencia por continuidad entre las dos fuentes.",
+        "Van Veldhoven: desde = febrero 2021 por nl.wikipedia (sin día); no hallé nota de prensa que fije el día. El 18/2/2021 es la fecha de la presentación de Mike Green como CEO.",
+        "Wikipedia en inglés lista además a un tal Frans Luyckx como chairman, sin fechas; no lo cargué."
+      ]
+    }
+  }
+}

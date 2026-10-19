@@ -435,6 +435,16 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 4
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19/resultado-14.json, tools/gestiones-tanda.mjs, 2026-10-19):_
+
+```text
+Priit Penu (2017-01-23 a hoy): Penu es 'President' en la web del club (fckuressaare.ee/klubi), en la infobox de Wikipedia (FC Kuressaare) y en Saaremaa Spordisõber del 18.07.2020 ('FC Kuressaare president Priit Penu', vinculado al club desde 1999). El registro (inforegister.ee, ficha del MTÜ FC Kuressaare Jalgpallikool) lo muestra como miembro de la juhatus desde 23.01.2017; esa fecha se usa como tope, no es una fecha de asunción como presidente. Firma o co-firma los informes como 'Juhatuse liige' (aruanne-2019.md:419, 2020.md:482, 2021.md:501, 2022.md:520, 2023.md:529, 2024.md:507, 2025.md:827), junto a Mario Pruul (también tegevjuht desde 2020), Elari Valmas (2019) y Reivo Vinter (desde 2024). Confirmada con el criterio de Estonia (Guido, 2026-10-19): las fuentes lo llaman presidente en el período y la fecha de inicio es la de su alta en la junta del registro (o la fundación del club, en Levadia), no una fecha de asunción como presidente.
+Duda: Ninguna fuente dice desde cuándo es presidente; Wikipedia (versión vieja) lo llamaba 'chairman' ya en la temporada 2016, y la nota de prensa lo confirma en julio de 2020. Para 2019 solo hay evidencia indirecta.
+Duda: Dos entidades: MTÜ Jalgpalliklubi FC Kuressaare (reg. 80052525, la de los informes) y MTÜ FC Kuressaare Jalgpallikool (80125359, la que muestra el registro con Penu desde 2017); no pude abrir la ficha de la primera (regia.ee devolvió 403).
+```
+
 ## Fuentes
 
 ### kuressaare-ee-aruanne-2025

@@ -1,0 +1,28 @@
+{
+ "criterioPais": {
+  "EE": "Harju JK Laagri es un MTÜ: se cargó a Kalmar Liiv, tegevjuht y único miembro de junta que firma los informes (Wikipedia lo pone como 'Chairman'); no hay figura de presidente ni dueño separada."
+ },
+ "clubes": {
+  "harjujklaagri-ee": {
+   "gestiones": [
+    {
+     "nombre": "Kalmar Liiv",
+     "corto": "Liiv",
+     "cargo": "Tegevjuht",
+     "desde": "2023-01-01",
+     "hasta": null,
+     "fuente": "https://harjujk.ee/klubist/",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Kalmar Liiv": "Liiv es el 'Tegevjuht' en harjujk.ee/klubist, 'Klubi tegevjuht' en ERR/Soccernet y 'Chairman' en la infobox de Wikipedia (Harju JK Laagri); es el único firmante 'Juhatuse liige' (aruanne-2023.md:227, 2024.md:267, 2025.md:412). El MTÜ Harju Jalgpalliklubi Laagri arranca su primer ejercicio el 09.01.2023 (aruanne-2023.md, portada): desde=2023-01-01 es un tope aproximado, no una fecha de asunción. Ninguna fuente dice cuándo asumió ni si es 'juhatuse esimees'."
+   },
+   "cubre": {},
+   "dudas": [
+    "No hay fuente con la fecha en que Liiv asumió ni con su título formal (tegevjuht vs. esimees); el club se fundó en 2009 (harjujk.ee/klubist) pero el MTÜ del informe es de enero de 2023.",
+    "El 'desde' 2023-01-01 es una aproximación sin fuente: no se publica hasta confirmarla (e-Äriregister, ficha de MTÜ Harju Jalgpalliklubi Laagri, reg. 80620596)."
+   ]
+  }
+ }
+}

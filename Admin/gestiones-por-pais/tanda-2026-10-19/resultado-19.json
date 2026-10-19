@@ -1,0 +1,37 @@
+{
+ "criterioPais": { "EE": "Tartu Tammeka es una asociación (MTÜ) sin dueño persona. El presidente formal recién existe desde 2025 (Kaarel Kiidron); antes no encontré a nadie con ese título, y la figura que conducía la junta era Kristjan Tiirik (miembro de la junta y director ejecutivo). Ambas gestiones quedaron sin confirmar." },
+ "clubes": {
+  "tartutammeka-ee": {
+   "gestiones": [
+    {
+     "nombre": "Kristjan Tiirik",
+     "corto": "Tiirik",
+     "cargo": "Juhatuse liige / tegevjuht",
+     "desde": "2010-09-28",
+     "hasta": "2025-09-15",
+     "fuente": "https://ariregister.rik.ee/eng/company/80315611",
+     "confirmada": false
+    },
+    {
+     "nombre": "Kaarel Kiidron",
+     "corto": "Kiidron",
+     "cargo": "President",
+     "desde": "2025-09-16",
+     "hasta": null,
+     "fuente": "https://en.wikipedia.org/wiki/Tartu_JK_Tammeka",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Kristjan Tiirik": "Ariregister (80315611, MTÜ Jalgpallikool Tammeka) lo muestra como miembro de la junta desde el 28.09.2010, y sigue en ella. Soccernet (soccernet.ee/25-aastat-tartu-tammekaga-kristjan-tiirik) lo presenta como miembro de la junta y tegevjuht (CEO). Ninguna fuente que encontré lo llama presidente ni presidente de la junta, por eso confirmada:false: el cargo no es 'President'. El 'hasta' 2025-09-15 es solo el corte con la entrada de Kiidron; Tiirik sigue en la junta. El balance 2025 lo firma él como Juhatuse liige (Clubes/Estonia/Tartu Tammeka/aruanne-2025.md:790, firma 31.03.2026). El informe 2025 dice (aruanne-2025.md:67) que en 2025 Indrek Koser y Ken Viidebaum dejaron la junta y entraron Kaarel Kiidron y Veiko Soo, con Tiirik continuando.",
+    "Kaarel Kiidron": "La Wikipedia en inglés (Tartu JK Tammeka) dice 'In August 2025, former Tammeka captain Kaarel Kiidron was elected as the club's president'. El registro (ariregister 80315611) lo da de alta en la junta el 16.09.2025 junto con Veiko Soo; se usó esa fecha como desde. El registro no usa el título de presidente. Wikipedia da solo agosto de 2025 y el mismo artículo de balance 2025 no lo nombra presidente. Se cargó sin confirmar."
+   },
+   "cubre": {},
+   "dudas": [
+    "No encontré quién era el presidente de Tammeka entre 2019 y agosto de 2025. Wikipedia nombra a Jane Afshar presidenta desde 2009 (hasta al menos enero de 2014, sin fecha de salida) y no hay más datos. Los cierres 2019-2024 quedan sin gestión confirmada.",
+    "El cierre 2025-12-31 depende de Kiidron: la elección fue en agosto de 2025 según Wikipedia y el alta en la junta el 16.09.2025; no hay fuente primaria del título.",
+    "Hay que preguntarle al club (junta: Tiirik, Kiidron, Soo) quién tuvo la presidencia o la presidencia de la junta (juhatuse esimees) desde 2019, y si Afshar siguió después de 2014."
+   ]
+  }
+ }
+}
