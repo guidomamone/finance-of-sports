@@ -37,6 +37,15 @@ const brightonGbRevenueLinesByYear = {
     { rawLabel:'Profit on player trading', normalizedCategory:'player_sales', amountNative:62.356, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Matchday', normalizedCategory:'matchday_competition', amountNative:24.492, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:154.897, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:17.592, disclosureLevel:'aggregated' },
+    { rawLabel:'Other', normalizedCategory:'other_income', amountNative:6.593, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on player trading', normalizedCategory:'player_sales', amountNative:121.361, disclosureLevel:'aggregated' },
+    { rawLabel:'Compensation received', normalizedCategory:'other_income', amountNative:23.353, disclosureLevel:'aggregated' },
+    { rawLabel:'Proceeds from insurance claim', normalizedCategory:'other_income', amountNative:1.525, disclosureLevel:'aggregated' },
+  ],
 };
 
 const brightonGbExpenseLinesByYear = {
@@ -64,6 +73,10 @@ const brightonGbExpenseLinesByYear = {
   2022: [
     { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-1.274, disclosureLevel:'aggregated' },
     { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-203.024, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-5.579, disclosureLevel:'aggregated' },
+    { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-204.749, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -131,6 +144,21 @@ const brightonGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:229.785, officialTotalExpenses:204.298, officialPAT:27.395,
   },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-06-30',
+    sourceId:'brighton-gb-full-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:2.479, tax:-10.431,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:5.073},
+      {label:'Interest payable and similar charges', value:-2.594},
+      {label:'Tax on profit', value:-10.431},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:349.813, officialTotalExpenses:210.328, officialPAT:131.533,
+  },
 };
 
 const brightonGbPresupuestoOverlayByYear = {};
@@ -175,6 +203,11 @@ Object.assign(sources, {
   'brighton-gb-full-accounts-2021-22': {
     id:'brighton-gb-full-accounts-2021-22', clubId:'brighton-gb',
     title:'The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'brighton-gb-full-accounts-2022-23': {
+    id:'brighton-gb-full-accounts-2022-23', clubId:'brighton-gb',
+    title:'The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

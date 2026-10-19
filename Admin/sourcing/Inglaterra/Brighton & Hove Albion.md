@@ -69,3 +69,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.pdf` (sourceId `brighton-gb-full-accounts-2020-21`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.pdf` (sourceId `brighton-gb-full-accounts-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.pdf` (sourceId `brighton-gb-full-accounts-2022-23`).

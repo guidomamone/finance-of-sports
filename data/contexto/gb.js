@@ -33,6 +33,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2020: {"estadio":"Falmer Stadium","capacidad":30750,"sponsor":"American Express","marca":"Nike","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
     2021: {"estadio":"Falmer Stadium","capacidad":30750,"sponsor":"American Express","marca":"Nike","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
     2022: {"estadio":"Falmer Stadium","capacidad":31800,"sponsor":"American Express","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Falmer Stadium","capacidad":31780,"sponsor":"American Express","marca":"Nike","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Falmer Stadium","capacidad":31876,"sponsor":"American Express","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Falmer Stadium","capacidad":31876,"sponsor":"American Express","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
