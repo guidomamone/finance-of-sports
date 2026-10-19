@@ -340,3 +340,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   3,66 (15 de 19); prueba mediana: 9,96 -> 0,33 (11 de 332). El resto de la salida del ensayo, igual. Ojo, sin relación con la q: el
   ensayo de lote.mjs re-verifica gratis los documentos con respuestas nuevas en la cola y deja modificados sus `.verificacion.json` y la
   cola; los de la prueba mediana (8 belgas) se restauraron sin commitear. Sigue la s.
+
+## Después del merge de la q (2026-10-19)

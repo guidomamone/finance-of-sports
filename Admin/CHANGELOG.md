@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 785 — 298 q: el ensayo cobra solo lo que va a categorizar (2026-10-19)
+
+* `lote.mjs`: el ensayo cobra la categorización solo a los documentos que la van a hacer (cotizados o extraídos, sin testigos, con
+  `.categorias.json` viejo). Lote 93: de US$ 0,78 a 0,06; prueba mediana: de 9,96 a 0,33.
+
 ## Versión 784 — 295 c: la FNL rusa; lista de validación del Reino Unido (2026-10-19)
 
 * Primera Liga rusa (FNL) 2025: dictamen de Terrafinans, sin salvedades.
