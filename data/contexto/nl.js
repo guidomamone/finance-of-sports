@@ -97,4 +97,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'vvvvenlo-nl': {
     2025: {"estadio":"Covebo Stadion - De Koel","capacidad":8000,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
   },
+  'willemii-nl': {
+    2025: {"estadio":"Koning Willem II Stadion","capacidad":14700,"sponsor":"AVEC","marca":"Robey","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
+  },
 });

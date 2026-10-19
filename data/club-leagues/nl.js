@@ -31,4 +31,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'fceindhoven-nl': { 2025: 'nl-eerstedivisie' },
   'fcgroningen-nl': { 2025: 'nl-eredivisie' },
   'vitesse-nl': { 2024: 'nl-eredivisie' },
+  'willemii-nl': { 2025: 'nl-eredivisie' },
 });
