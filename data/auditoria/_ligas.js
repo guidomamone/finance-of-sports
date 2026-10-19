@@ -205,5 +205,24 @@ window.LIGA_AUDITORIA = {
     "linea": 907
    }
   }
+ },
+ "dk-superliga": {
+  "2025": {
+   "entidad": {
+    "nombre": "Superligaen",
+    "legal": "Superligaen A/S"
+   },
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "EY Godkendt Revisionspartnerselskab"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Dinamarca/Superligaen/superligaen-arsrapport-2024-25.md",
+    "linea": 709
+   }
+  }
  }
 };
