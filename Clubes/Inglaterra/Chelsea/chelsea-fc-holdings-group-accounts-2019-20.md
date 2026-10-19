@@ -1126,37 +1126,47 @@ management and coaching staff, together with associated legal costs.
 
 --- pág. 29 ---
 
-CHELSEA FC PLC - 7
-NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) rr ae
-FOR THE YEAR ENDED 30 JUNE 2020 ; Mo
-5 Profit/(loss) before taxation . . 4
-| Profit/(Loss) before taxation is stated after charging/(crediting): | 2020 £000 | 2019 £000 |
-|---|---|---|
+**CHELSEA FC PLC**
+
+**NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)**
+
+**FOR THE YEAR ENDED 30 JUNE 2020**
+
+**5 Profit/(loss) before taxation**
+
+| Profit/(Loss) before taxation for the year is stated after charging/(crediting): | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
 | Depreciation of owned tangible fixed assets | 9,895 | 9,478 |
 | (Profit) on disposal of tangible fixed assets | - | (594) |
 | Profit on disposal of player registrations | (142,645) | (60,459) |
 | Amortisation of intangible assets | 129,141 | 170,010 |
 | Operating lease charges | 154 | 201 |
-6 Auditor's remuneration ‘ ; :
-2020 2019
-Fees payable to the company's auditor and associates: £000 £000
-_ For audit services
-Audit of the financial statements of the Group and company © 26 . : 26
-Audit of the company's subsidiaries 78 68
-104 94
-For other services .
-Taxation compliance services 40 40
-Other taxation services . . 84. 85
-Review of the company's interim accounts 48 42 ;
-172 167
-7 Employees
+
+**6 Auditor's remuneration**
+
+| Fees payable to the company's auditor and associates: | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| **For audit services** | | |
+| Audit of the financial statements of the Group and company | 26 | 26 |
+| Audit of the company's subsidiaries | 78 | 68 |
+| | **104** | **94** |
+| **For other services** | | |
+| Taxation compliance services | 40 | 40 |
+| Other taxation services | 84 | 85 |
+| Review of the company's interim accounts | 48 | 42 |
+| | **172** | **167** |
+
+**7 Employees**
+
 The average monthly number of persons (including directors) employed by the Group during the year was:
-2020 2019
-Number Number
-Administration and commercial 655 633
-Playing staff, managers and coaches 153 165
-808 798
--26- .
+
+| | 2020 Number | 2019 Number |
+| :--- | :---: | :---: |
+| Administration and commercial | 655 | 633 |
+| Playing staff, managers and coaches | 153 | 165 |
+| | **808** | **798** |
+
+\- 26 -
 
 --- pág. 30 ---
 
@@ -1211,85 +1221,95 @@ payments, discounted using a market rate of interest resulting in interest expen
 
 --- pág. 32 ---
 
-CHELSEA FC PLC a a
-NOTES TO THE FINANCIAL STATEMENTS (CONTINUED). '-f::- 0) 6 2 0 3 a
-FOR THE YEAR ENDED 30 JUNE 2020 ; os a
-11. Taxation 2 ed '
-- 2020 2019
-£000 £000
-Current Tax - ;
-Current tax on income/(loss) 3,140 (5,167)
-Total Current Tax 3,140 (5,167)
-Deferred tax (see note 22) a -
-Origination and reversal of timing differences Do ; oO (76) - (48)
-Changes in tax rates . 115 -
-Other adjustments - -
-_. Total Deferred Tax 39 (48)
-Total tax charge/(credit) 3,179 (5,215)
+**CHELSEA FC PLC**
+
+**NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)**
+
+**FOR THE YEAR ENDED 30 JUNE 2020**
+
+**11 Taxation**
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| **Current Tax** | | |
+| Current tax on income/(loss) | 3,140 | (5,167) |
+| **Total Current Tax** | **3,140** | **(5,167)** |
+| **Deferred tax (see note 22)** | | |
+| Origination and reversal of timing differences | (76) | (48) |
+| Changes in tax rates | 115 | - |
+| Other adjustments | - | - |
+| **Total Deferred Tax** | **39** | **(48)** |
+| **Total tax charge/(credit)** | **3,179** | **(5,215)** |
+
 The charge for the year can be reconciled to the profit/(loss) per the profit and loss account as follows:
-7 re . --2020—~S—=~«H'G
-, , £000 — £000
-Profit/(Loss) on ordinary activities before taxation 35,652 (101,786)
-Expected tax charge based on the standard rate of corporation tax in the UK
-of 19% (2019: 19%) 6,774 (19,339)
-Tax effect of expenses that are not deductible in determining taxable profit 512 280
-Adjustments in respect of prior periods - 1
-Movement in deferred tax - (135)
-Deferred tax credited directly to equity - 107
-Chargeable gains 1,335 593
-Fixed asset differences 1,130 252
-Group relief 398 (219)
-Remeasurement of recognised and unrecognised deferred tax for changes
-in tax rates (14,284) 1,564
-Utilisation of previously unrecognised trading losses (3,395) -
-Deferred tax remeasurement not recognised 10,709 41,681
-Tax expense/(income) for the year 3,179 (5,215)
-A potential deferred tax asset of £ 129,701,000 (2019: £122,040,000) has not been recognised due to
-uncertainty over future profits.
--29-
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| Profit/(Loss) on ordinary activities before taxation | 35,652 | (101,786) |
+| Expected tax charge based on the standard rate of corporation tax in the UK of 19% (2019: 19%) | 6,774 | (19,339) |
+| Tax effect of expenses that are not deductible in determining taxable profit | 512 | 280 |
+| Adjustments in respect of prior periods | - | 1 |
+| Movement in deferred tax | - | (135) |
+| Deferred tax credited directly to equity | - | 107 |
+| Chargeable gains | 1,335 | 593 |
+| Fixed asset differences | 1,130 | 252 |
+| Group relief | 398 | (219) |
+| Remeasurement of recognised and unrecognised deferred tax for changes in tax rates | (14,284) | 1,564 |
+| Utilisation of previously unrecognised trading losses | (3,395) | - |
+| Deferred tax remeasurement not recognised | 10,709 | 11,681 |
+| **Tax expense/(income) for the year** | **3,179** | **(5,215)** |
+
+A potential deferred tax asset of £ 129,701,000 (2019: £122,040,000) has not been recognised due to uncertainty over future profits.
+
+\- 29 -
 
 --- pág. 33 ---
 
-CHELSEA FC PLC
-NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) - -
-FOR THE YEAR ENDED 30 JUNE 2020 a ae
-12 Intangible fixed assets . .
-| Group | Software £000 | Players' registrations £000 | Total £000 |
-|---|---|---|---|
-| Cost |  |  |  |
+**CHELSEA FC PLC**
+
+**NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)**
+
+**FOR THE YEAR ENDED 30 JUNE 2020**
+
+**12 Intangible fixed assets**
+
+**Group**
+
+| Cost | Software £000 | Players' registrations £000 | Total £000 |
+| :--- | :---: | :---: | :---: |
 | At 1 July 2019 | 12,697 | 869,998 | 882,695 |
 | Additions | 1,682 | 93,712 | 95,394 |
 | Disposals | - | (141,317) | (141,317) |
-| At 30 June 2020 | 14,379 | 822,393 | 836,772 |
-| Amortisation and impairment |  |  |  |
+| **At 30 June 2020** | **14,379** | **822,393** | **836,772** |
+| **Amortisation and impairment** | | | |
 | At 1 July 2019 | 7,232 | 393,361 | 400,593 |
 | Amortisation charged for the year | 1,839 | 127,302 | 129,141 |
 | Disposals | - | (93,540) | (93,540) |
-| At 30 June 2020 | 9,071 | 427,123 | 436,194 |
-| At 30 June 2020 (carrying amount) | 5,308 | 395,270 | 400,578 |
-| At 30 June 2019 (carrying amount) | 5,465 | 476,637 | 482,102 |
-Players’ registrations relate entirely to the carrying value of the playing squad and are amortised over the remaining
-length of the players’ contracts. The figures relate solely to purchased players and are based on historical cost.
-Where events or changes in circumstances indicate that the carrying value of the asset may not be recoverable,
-to the extent that the carrying value exceeds the recoverable amount, the asset is impaired and the charge is
-recognised in profit and loss. Officers of Chelsea Football Club Limited and Chelsea Football Club Women Limited
-‘have reviewed the carrying amount of players’ registrations as at 30 June 2020 and no impairment was deemed
-necessary (2079: £Nil).
-’ - Company ; : Total
-- £000
-Cost
-At 1 July 2019 12,120
-Additions 1,624
-At 30 June 2020 : 13,744
-Amortisation and impairment
-At 1 July 2019 6,793
-Amortisation charged for the year 1,750
-At 30 June 2020 8,543
- At30 June 2020 | 5,201
-At 30 June 2019 5,327
-"The software relates to internally generated platforms and applications developed, largely relating the club’s
-website and the club’s digital platform.
--30-
+| **At 30 June 2020** | **9,071** | **427,123** | **436,194** |
+| **Carrying amount** | | | |
+| **At 30 June 2020** | **5,308** | **395,270** | **400,578** |
+| At 30 June 2019 | 5,465 | 476,637 | 482,102 |
+
+Players' registrations relate entirely to the carrying value of the playing squad and are amortised over the remaining length of the players' contracts. The figures relate solely to purchased players and are based on historical cost. Where events or changes in circumstances indicate that the carrying value of the asset may not be recoverable, to the extent that the carrying value exceeds the recoverable amount, the asset is impaired and the charge is recognised in profit and loss. Officers of Chelsea Football Club Limited and Chelsea Football Club Women Limited have reviewed the carrying amount of players' registrations as at 30 June 2020 and no impairment was deemed necessary (2019: £Nil).
+
+**Company**
+
+| Cost | Total £000 |
+| :--- | :---: |
+| At 1 July 2019 | 12,120 |
+| Additions | 1,624 |
+| **At 30 June 2020** | **13,744** |
+| **Amortisation and impairment** | |
+| At 1 July 2019 | 6,793 |
+| Amortisation charged for the year | 1,750 |
+| **At 30 June 2020** | **8,543** |
+| **Carrying amount** | |
+| **At 30 June 2020** | **5,201** |
+| At 30 June 2019 | 5,327 |
+
+The software relates to internally generated platforms and applications developed, largely relating the club's website and the club's digital platform.
+
+\- 30 -
 
 --- pág. 34 ---
 
@@ -1507,74 +1527,105 @@ would be payable by the company if certain conditions are met. The maximum amoun
 
 --- pág. 40 ---
 
-CHELSEA FC PLC
-NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) re
-FOR THE YEAR ENDED 30 JUNE 2020 ~
-26 Operating lease commitments :
-Lessee
-’ At the reporting end date the Group had outstanding commitments for future minimum lease payments under
-non-cancellable operating leases, which fall due as follows:
-Group Company
-2020 2019 2020 2019
-£000 £000 £000 £000
-Within one year 128 154 38 48
-Between two and five years 57 - 57 -
-185 154 " 95 48
-27 ~=Capital commitments - .
-At 30 June 2020 the Group had capital commitments as follows: :
-Group Company
-2020 2019 2020 2019
-£000 £000 -- £000 £000
-Contracted for but not provided in the financial statements:
-Acquisition of property, plant and equipment - - - -
-28 Events after the reporting date
-Since the year end the Group has acquired the registration of eight football players at an initial cost of £199.4m
-- and disposed of the registration of three players at a profit of £1.9m.
-29 ~—~Related party transactions
-. Remuneration of key management personnel 4s .
+# CHELSEA FC PLC
+
+## NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+### FOR THE YEAR ENDED 30 JUNE 2020
+
+---
+
+### 26 Operating lease commitments
+
+#### Lessee
+
+At the reporting end date the Group had outstanding commitments for future minimum lease payments under non-cancellable operating leases, which fall due as follows:
+
+| | Group 2020 £000 | Group 2019 £000 | Company 2020 £000 | Company 2019 £000 |
+| :--- | :---: | :---: | :---: | :---: |
+| Within one year | 128 | 154 | 38 | 48 |
+| Between two and five years | 57 | - | 57 | - |
+| | **185** | **154** | **95** | **48** |
+
+---
+
+### 27 Capital commitments
+
+At 30 June 2020 the Group had capital commitments as follows:
+
+| | Group 2020 £000 | Group 2019 £000 | Company 2020 £000 | Company 2019 £000 |
+| :--- | :---: | :---: | :---: | :---: |
+| Contracted for but not provided in the financial statements: | | | | |
+| Acquisition of property, plant and equipment | - | - | - | - |
+
+---
+
+### 28 Events after the reporting date
+
+Since the year end the Group has acquired the registration of eight football players at an initial cost of £199.4m and disposed of the registration of three players at a profit of £1.9m.
+
+---
+
+### 29 Related party transactions
+
+#### Remuneration of key management personnel
 The remuneration of key management personnel, who are also directors, is as follows:
-2020 2019
-£000 £000
-Aggregate compensation 2,608 2,258
--37-
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| Aggregate compensation | 2,608 | 2,258 |
+
+<br>
+
+\- 37 -
 
 --- pág. 41 ---
 
-CHELSEA FC PLC Sa
-NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) .-~- '': °°. i
-FOR THE YEAR ENDED 30 JUNE 2020 ee. os
-29 Related party transactions (continued)
-Transactions with related parties
-- During the year the Group entered into the following transactions with related parties:
-Sale of goods and Purchase of goods and
-services services .
-2020 2019 2020 2019
-; ; £000 £000 £000 - £000
-+ Group
-. Chelsea FC Foundation 5,647 6,693 480 259
-‘ Nike Chelsea Merchandising Ltd 380 698 - 39
-6,027 7,391 480 298
-The Board considers that Chelsea FC Foundation and its subsidiaries are a related party of Chelsea FC plc by
-virtue of significant influence. During the year, Chelsea FC pic processed the Charity’s payroll. The Charity
-repays this amount in full but with no additional charge or mark up for the provision of this service.
-Mr G. Laurence, Mr J. Bonington, Mr R. Milham and Mr C. Townsend are all employees of Chelsea FC Plc, as
-well as serving as Directors of Nike Chelsea Merchandising Limited in the period.
-The following amounts were outstanding at the reporting end date: ;
-Amounts owed to related
-parties
-2020 2019
-£000 £000
-Group
-Chelsea FC Foundation 157 68
-Nike Chelsea Merchandising Ltd - -
+# CHELSEA FC PLC
+
+## NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+### FOR THE YEAR ENDED 30 JUNE 2020
+
+---
+
+### 29 Related party transactions (continued)
+
+#### Transactions with related parties
+During the year the Group entered into the following transactions with related parties:
+
+| | Sale of goods and services 2020 £000 | Sale of goods and services 2019 £000 | Purchase of goods and services 2020 £000 | Purchase of goods and services 2019 £000 |
+| :--- | :---: | :---: | :---: | :---: |
+| **Group** | | | | |
+| Chelsea FC Foundation | 5,647 | 6,693 | 480 | 259 |
+| Nike Chelsea Merchandising Ltd | 380 | 698 | - | 39 |
+| | **6,027** | **7,391** | **480** | **298** |
+
+The Board considers that Chelsea FC Foundation and its subsidiaries are a related party of Chelsea FC plc by virtue of significant influence. During the year, Chelsea FC plc processed the Charity's payroll. The Charity repays this amount in full but with no additional charge or mark up for the provision of this service.
+
+Mr G. Laurence, Mr J. Bonington, Mr R. Milham and Mr C. Townsend are all employees of Chelsea FC Plc, as well as serving as Directors of Nike Chelsea Merchandising Limited in the period.
+
+The following amounts were outstanding at the reporting end date:
+
+| | Amounts owed to related parties 2020 £000 | Amounts owed to related parties 2019 £000 |
+| :--- | :---: | :---: |
+| **Group** | | |
+| Chelsea FC Foundation | 157 | 68 |
+| Nike Chelsea Merchandising Ltd | - | - |
+
 No guarantees have been given or received.
-30 Controlling party
-The Directors consider Fordstam Limited to be the ultimate parent company of the Group, and the ultimate
-controlling party is Mr R Abramovich. The largest group of undertakings for which group accounts have been
-drawn up is that headed by Fordstam Limited. ;
-The consolidated accounts of this company and its parent company may be obtained from the Registrar of
-Companies, Companies House, Crown Way, Cardiff, CF 14 3UZ.
-- 38 -
+
+---
+
+### 30 Controlling party
+
+The Directors consider Fordstam Limited to be the ultimate parent company of the Group, and the ultimate controlling party is Mr R Abramovich. The largest group of undertakings for which group accounts have been drawn up is that headed by Fordstam Limited.
+
+The consolidated accounts of this company and its parent company may be obtained from the Registrar of Companies, Companies House, Crown Way, Cardiff, CF14 3UZ.
+
+<br>
+
+\- 38 -
 
 --- pág. 42 ---
 

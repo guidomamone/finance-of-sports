@@ -465,27 +465,30 @@ fraud rather than error, as fraud involves intentional concealment, forgery, col
 
 --- pág. 12 ---
 
-. Leeds United Football Club Limited So
-Independent Auditor's Report to the Members of Leeds United Football Club Limited (continued) eens
-Period from 1 August 2020 to 30 June 2021 .
-A further description of our responsibilities for the audit of the financial statements is located on the Financial Reporting os oe aa
-mo, Council's website at www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor’s report. oT at
-Use of our report FN
-; ; This report is made solely to the company's members, as a body, in accordance with chapter 3 of part 16 of the Companies Act are
-. "2006. Our audit work has been undertaken so that we might state to the company's members those matters we are required to a
-a ; state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume ; a
-: responsibility to anyone other than the company and the company's members as a body, for our audit work, for this report, or for ret
-the opinions we have formed. : . o a
-: Alistair Russell FCA (Senior Statutory Auditor) . .
-For and on behalf of .
-: Gibson Booth oO -
-. Chartered Accountants & Statutory Auditors So
-New Court Coat
-Abbey Road North :
-- Shepley
-Huddersfield . :
-HD8 8BJ a
-2612 (23
+**Leeds United Football Club Limited**
+
+**Independent Auditor's Report to the Members of Leeds United Football Club Limited** *(continued)*
+
+**Period from 1 August 2020 to 30 June 2021**
+
+A further description of our responsibilities for the audit of the financial statements is located on the Financial Reporting Council's website at www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+
+**Use of our report**
+This report is made solely to the company's members, as a body, in accordance with chapter 3 of part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the company's members those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the company and the company's members as a body, for our audit work, for this report, or for the opinions we have formed.
+
+Alistair Russell FCA (Senior Statutory Auditor)
+
+For and on behalf of
+Gibson Booth
+Chartered Accountants & Statutory Auditors
+New Court
+Abbey Road North
+Shepley
+Huddersfield
+HD8 8BJ
+
+(manuscrito: 28/12/23)
+
 10
 
 --- pág. 13 ---
@@ -925,235 +928,290 @@ The whole of the turnover is attributable to the principal activity of the group
 
 --- pág. 23 ---
 
-Leeds United Football Club Limited
-a Notes to the Financial Statements (continued) oe Stee ee
-Period from 1 August 2020 to 30 June 2021
-o 5. Operating profit . a
-; ; Operating profit or loss is stated after charging/crediting: ; me
-Period from -~ Period from ce
-1 Aug 20 to 1 Jul 19 to re
-30 Jun 21 31 Jul 20 Ce
-£ £ _ ;
-; Amortisation of intangible assets 37,894,229 10,188,160 oe
-Depreciation of tangible assets 2,624,068 2,529,774 OU Se
-an Impairment of intangible assets recognised in: . ; ae
-ee Administrative expenses ~ 1,242,045 crs.
-Gains on disposal of tangible assets (13,175) - .
-Foreign exchange differences (2,922,163) 59,857 : :
-Operating lease costs (3,842,342) 2,633,851 So
-Impairment of debt ~ 2,189,495
-Government grants (1,137,677) (1,027,107)
-_ 4n the previous period the group lost profits following the closure of the stadium and conferencing centres due to the.
-COVID-19 pandemic. An insurance claim of £nil (2020: £2,500,000) in respect of these losses was accepted.
-It is expected that throughout the eleven months ended 30 June 2021 the group will lose profits of £34,267,504 (2020:
-£8,518,706) directly due to the closure of the stadium and conferencing centres because of the COVID-19 pandemic.
-6. Auditor's remuneration ‘
-Period from Period from oo,
-1 Aug 20 to 1 Jul 19 to .
-30 Jun 21 31 Jul 20
-‘ £ £
-Fees payable for the audit of the financial statements 19,500 19,500 .
-Fees payable to the company's auditor and its associates for other services:
-Audit-related assurance services 8,000 5,000
-Taxation compliance services 10,000 8,650
-Audit of subsidiaries 9,000 7,500 ;
-Other non-audit services 1,660 7,450
-28,660 28,600
-7. Staff costs
+AMENDED
+
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements (*continued*)**
+
+**Period from 1 August 2020 to 30 June 2021**
+
+**5. Operating profit**
+
+Operating profit or loss is stated after charging/crediting:
+
+| | Period from<br>1 Aug 20 to<br>30 Jun 21<br>£ | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: |
+| Amortisation of intangible assets | 37,894,229 | 10,188,160 |
+| Depreciation of tangible assets | 2,624,068 | 2,529,774 |
+| Impairment of intangible assets recognised in: | | |
+| Administrative expenses | - | 1,242,045 |
+| Gains on disposal of tangible assets | (13,175) | - |
+| Foreign exchange differences | (2,922,163) | 59,857 |
+| Operating lease costs | (3,842,342) | 2,633,851 |
+| Impairment of debt | - | 2,189,495 |
+| Government grants | (1,137,677) | (1,027,107) |
+
+In the previous period the group lost profits following the closure of the stadium and conferencing centres due to the COVID-19 pandemic. An insurance claim of £nil (2020: £2,500,000) in respect of these losses was accepted.
+
+It is expected that throughout the eleven months ended 30 June 2021 the group will lose profits of £34,267,504 (2020: £8,518,706) directly due to the closure of the stadium and conferencing centres because of the COVID-19 pandemic.
+
+**6. Auditor's remuneration**
+
+| | Period from<br>1 Aug 20 to<br>30 Jun 21<br>£ | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: |
+| Fees payable for the audit of the financial statements | 19,500 | 19,500 |
+| Fees payable to the company's auditor and its associates for other services: | | |
+| Audit-related assurance services | 8,000 | 5,000 |
+| Taxation compliance services | 10,000 | 8,650 |
+| Audit of subsidiaries | 9,000 | 7,500 |
+| Other non-audit services | 1,660 | 7,450 |
+| | 28,660 | 28,600 |
+
+**7. Staff costs**
+
 The average number of persons employed by the group during the period, including the directors, amounted to:
-30 Jun 21 31 Jul 20
-No. No. :
-Full-time playing staff 53 51 ;
-Apprentices 24 23
-Football team management 28 27
-Management/administration 138 131
-Casual match day staff 185 847 , ;
-428 1,079
-The aggregate payroll costs incurred during the period, relating to the above, were: , :
-Period from Period from
-1 Aug 20 to 1 Jul 19 to
-30 Jun 21 31 Jul 20 .
-£ £ ,
-Wages and salaries 95,958,897 70,217,594
-Social security costs 12,126,102 7,906,514
-Other pension costs 167,680 166,348 .
-108,252,679 78,290,456
+
+| | 30 Jun 21<br>No. | 31 Jul 20<br>No. |
+| :--- | :---: | :---: |
+| Full-time playing staff | 53 | 51 |
+| Apprentices | 24 | 23 |
+| Football team management | 28 | 27 |
+| Management/administration | 138 | 131 |
+| Casual match day staff | 185 | 847 |
+| | 428 | 1,079 |
+
+The aggregate payroll costs incurred during the period, relating to the above, were:
+
+| | Period from<br>1 Aug 20 to<br>30 Jun 21<br>£ | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: |
+| Wages and salaries | 95,958,897 | 70,217,594 |
+| Social security costs | 12,126,102 | 7,906,514 |
+| Other pension costs | 167,680 | 166,348 |
+| | 108,252,679 | 78,290,456 |
+
 21
 
 --- pág. 24 ---
 
-Leeds United Footbal! Club Limited
-Notes to the Financial Statements (continued)
+AMENDED
 
-. . Period from 1 August 2020 to 30 June 2021 . ae
-a 7. Staff costs (continued) ; mo ae
-Included in wages and salaries are redundancy and ex-gratia payments of £55,914 (2020: £1,833). a oo
+**Leeds United Football Club Limited**
 
-8. Directors’ remuneration _ :
-. The directors’ aggregate remuneration in respect of qualifying services was: . “ ty
-Dees Period from ~ Period from ee ey
-1 Aug 20 to 1 Jul 19 to ce et
-a . 30 Jun 21 “31 Jul 20 co.
-Remuneration §58,490 383,949 ;
-Company contributions to defined benefit pension plans 18,321 16,857 7
-576,811 399,806 :
-uo The remuneration of the highest paid director in respect of qualifying services is £558,490 (2020: £383,989) for aggregate , 5 ;
-remuneration and £18,321 (2020: £15,857) for company contributions to defined contribution pension plans. .
-The number of directors who are accruing benefits under defined contribution pension schemes was one (2020 - one). a
-9. Television and broadcasting rebate
-A rebate was provided for in the prior period in respect of the Premier League refunding subscribers for lost :
-broadcastable games during the 19/20 season. oo
-10. Interest receivable and similar income
-Period from Period from ;
-. 1 Aug 20 to 4 Jul 19 to .
-30 Jun 21 31 Jul 20
-£ £
-Interest receivable and similar income §,282,136 1,057,510
-This relates to the revaluation to fair value of the financial liability described in note 23. ,
-11. Interest payable and similar expenses ns
-Period from _— Period from -
-1 Aug 20 to 1 Jul 19 to on
-30 Jun 21 31 Jul 20 so
-. £ £ .
-Interest on obligations under finance leases contracts 190,503 381,604
-Other interest payable and similar charges 5,566,963 1,653,842
-5,757,466 2,035,446
-Other interest payable and similar charges includes £2,940,443 (2020: £1,669,535) relating to the revaluation to fair value
-of the financial liability described in note 23. .
-22 a
+**Notes to the Financial Statements (*continued*)**
+
+**Period from 1 August 2020 to 30 June 2021**
+
+**7. Staff costs (*continued*)**
+
+Included in wages and salaries are redundancy and ex-gratia payments of £55,914 (2020: £1,833).
+
+**8. Directors' remuneration**
+
+The directors' aggregate remuneration in respect of qualifying services was:
+
+| | Period from<br>1 Aug 20 to<br>30 Jun 21<br>£ | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: |
+| Remuneration | 558,490 | 383,949 |
+| Company contributions to defined benefit pension plans | 18,321 | 15,857 |
+| | 576,811 | 399,806 |
+
+The remuneration of the highest paid director in respect of qualifying services is £558,490 (2020: £383,989) for aggregate remuneration and £18,321 (2020: £15,857) for company contributions to defined contribution pension plans.
+
+The number of directors who are accruing benefits under defined contribution pension schemes was one (2020 - one).
+
+**9. Television and broadcasting rebate**
+
+A rebate was provided for in the prior period in respect of the Premier League refunding subscribers for lost broadcastable games during the 19/20 season.
+
+**10. Interest receivable and similar income**
+
+| | Period from<br>1 Aug 20 to<br>30 Jun 21<br>£ | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: |
+| Interest receivable and similar income | 5,282,136 | 1,057,510 |
+
+This relates to the revaluation to fair value of the financial liability described in note 23.
+
+**11. Interest payable and similar expenses**
+
+| | Period from<br>1 Aug 20 to<br>30 Jun 21<br>£ | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: |
+| Interest on obligations under finance leases contracts | 190,503 | 381,604 |
+| Other interest payable and similar charges | 5,566,963 | 1,653,842 |
+| | 5,757,466 | 2,035,446 |
+
+Other interest payable and similar charges includes £2,940,443 (2020: £1,669,535) relating to the revaluation to fair value of the financial liability described in note 23.
+
+22
 
 --- pág. 25 ---
 
-Leeds United Footbal! Club Limited
-, Notes to the Financial Statements (continued) “Tee
-Period from 1 August 2020 to 30 June 2021 ;
-12. Tax on profit/(loss) oo . . .
-Doo Reconciliation of tax income ; a . ; “ a
-The tax assessed on the profit/(loss) on ordinary activities for the period is lower than (2020: higher than) the standard oes vee oa
-rate of corporation tax in the UK of 19% (2020: 19%). tL
-Period from Period from ae
-, 1 Aug 20 to 1 Jul 19 to a
-oot 30 Jun 21 31 Jul 20 Te
-Profit/(loss) on ordinary activities before taxation (11,944,846) (62,421,984)
-Profit/(loss) on ordinary activities by rate of tax , (2,269,520) (11,860,177)
-Effect of expenses not deductible for tax purposes 19,775 134,230 :
-Effect of capital allowances and depreciation (75,728) 83,935
-Utilisation of tax losses (803,309) - .
-Unused tax losses 3,147,303 11,667,768
-Other timing differences (18,521) (25,756)
-Tax on profit/(loss) - . - oo
-Factors that may affect future tax income a
-ae The group has losses of approximately £158 million (2020: £164 million) to carry forward against future profits.
-13. Intangible assets ;
-Group Negative Computer Player °
-Goodwill goodwill Trademarks software _—_ registrations Total .
-£ £ £ £ £ £
-Cost .
-: At 1 Aug 2020 6,403,883 (717,255) 36,301 402,246 79,852,377 85,977,552
-Additions - - 6,318 216,162 98,669,590 98,892,070 :
-Disposals - - - - (10,488,115) (10,488,115)
-At 30 Jun 2021 6,403,883 (717,255) 42,619 618,408 168,033,852 174,381,507
-Amortisation
-At 1 Aug 2020 1,964,566 (669,438) 15,664 297,393 23,913,870 25,522,055
-Charge for the period 109,959 (47,817) 2,839 35,296 37,793,952 37,894,229
-Disposals - - - - (10,070,951) (10,070,951)
-At 30 Jun 2021 2,074,525 (717,255) 18,503 332,689 §1,636,871 §3,345,333 .
-Carrying amount
-At 30 Jun 2021 4,329,358 - 24,116 285,719 116,396,981 121,036,174
-At 31 Jul 2020 4,439,317 (47,817) 20,637 104,853 55,938,507 60,455,497
-: 23 ;
-a“
+AMENDED
+
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements (*continued*)**
+
+**Period from 1 August 2020 to 30 June 2021**
+
+**12. Tax on profit/(loss)**
+
+**Reconciliation of tax income**
+
+The tax assessed on the profit/(loss) on ordinary activities for the period is lower than (2020: higher than) the standard rate of corporation tax in the UK of 19% (2020: 19%).
+
+| | Period from<br>1 Aug 20 to<br>30 Jun 21<br>£ | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: |
+| Profit/(loss) on ordinary activities before taxation | (11,944,846) | (62,421,984) |
+| Profit/(loss) on ordinary activities by rate of tax | (2,269,520) | (11,860,177) |
+| Effect of expenses not deductible for tax purposes | 19,775 | 134,230 |
+| Effect of capital allowances and depreciation | (75,728) | 83,935 |
+| Utilisation of tax losses | (803,309) | - |
+| Unused tax losses | 3,147,303 | 11,667,768 |
+| Other timing differences | (18,521) | (25,756) |
+| **Tax on profit/(loss)** | - | - |
+
+**Factors that may affect future tax income**
+
+The group has losses of approximately £158 million (2020: £164 million) to carry forward against future profits.
+
+**13. Intangible assets**
+
+**Group**
+
+| | Goodwill<br>£ | Negative<br>goodwill<br>£ | Trademarks<br>£ | Computer<br>software<br>£ | Player<br>registrations<br>£ | Total<br>£ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Cost** | | | | | | |
+| At 1 Aug 2020 | 6,403,883 | (717,255) | 36,301 | 402,246 | 79,852,377 | 85,977,552 |
+| Additions | - | - | 6,318 | 216,162 | 98,669,590 | 98,892,070 |
+| Disposals | - | - | - | - | (10,488,115) | (10,488,115) |
+| **At 30 Jun 2021** | 6,403,883 | (717,255) | 42,619 | 618,408 | 168,033,852 | 174,381,507 |
+| **Amortisation** | | | | | | |
+| At 1 Aug 2020 | 1,964,566 | (669,438) | 15,664 | 297,393 | 23,913,870 | 25,522,055 |
+| Charge for the period | 109,959 | (47,817) | 2,839 | 35,296 | 37,793,952 | 37,894,229 |
+| Disposals | - | - | - | - | (10,070,951) | (10,070,951) |
+| **At 30 Jun 2021** | 2,074,525 | (717,255) | 18,503 | 332,689 | 51,636,871 | 53,345,333 |
+| **Carrying amount** | | | | | | |
+| **At 30 Jun 2021** | 4,329,358 | - | 24,116 | 285,719 | 116,396,981 | 121,036,174 |
+| At 31 Jul 2020 | 4,439,317 | (47,817) | 20,637 | 104,853 | 55,938,507 | 60,455,497 |
+
+23
 
 --- pág. 26 ---
 
-Leeds United Footbal! Club Limited ; :
-Notes to the Financial Statements (continued)
-‘ Period from 1 August 2020 to 30 June 2021 Co
-a 13. Intangible assets (continued) ; . : = 4 - ,
-Company Computer Player , po
-. - Goodwill Trademarks software registrations Total vi voy
-Cost : Oo ES
-At 1 August 2020 §,984,321 36,301 402,246 79,852,377 86,275,245 en
-Additions - 6,318 216,162 98,669,590 98,892,070 OS
-Disposals - - - (10,488,115) (10,488,115); ae ey
-oo Mn — At 30 June 2021 5,984,321 42,619 618,408 168,033,852 174,679,200 _ : oo QL.
-Amortisation ‘ ; , .
-At 1 August 2020 1,545,004 15,664 297,393 23,913,870 25,771,931 we
-Charge for the period 109,959 2,839 35,296 37,793,952 37,942,046 ae
-Disposals , - - - (10,070,951) (10,070,951) ”
-At 30 June 2021 1,654,963 18,503 332,689 51,636,871 §3,643,026
-Carrying amount a
-At 30 June 2021 4,329,358 24,116 285,719 116,396,981 121,036,174 ;
-At 31 July 2020 4,439,317 20,637 — 104,853 55,938,507 60,503,314 ;
-Included in intangible assets is negative goodwill with a carrying amount of Enil (2020: £47,817). This negative goodwill . o
-arose on the acquisition of Leeds United Media Limited. The negative goodwill all relates to non-monetary assets and is
-being amortised over a period of five years, being the period that the company is expected to benefit.
-A total of Enit (2020: £1,242,045) has been charged to the profit and loss in respect of an impairment following a review of
-the First Team Squad.
-14. Tangible assets . .
-Group Leasehold land Alterations and Fixtures, fittings . —
-and buildings improvements and equipment Total . -
-’ £ £ £ £ ; .
-Cost mg,
-At 1 August 2020 2,955,252 19,802,895 10,256,735 33,014,882 ;
-Additions 1,607,426 3,817,291 4,397,305 9,822,022 °
-At 30 June 2021 4,562,678 23,620,186 14,654,040 42,836,904 ,
-Depreciation .
-At 1 August 2020 1,278,178 9,982,950 6,595,335 17,856,463
-Charge for the period 155,953 1,244,617 1,223,498 2,624,068
-At 30 June 2021 1,434,131 11,227,567 7,818,833 20,480,531 ;
-Carrying amount :
-At 30 June 2021 3,128,547 12,392,619 6,835,207 22,356,373
-At 31 July 2020 1,677,074 9,819,945 3,661,400 45,158,419 .
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements (*continued*)**
+
+**Period from 1 August 2020 to 30 June 2021**
+
+**13. Intangible assets (*continued*)**
+
+**Company**
+
+| | Goodwill<br>£ | Trademarks<br>£ | Computer<br>software<br>£ | Player<br>registrations<br>£ | Total<br>£ |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Cost** | | | | | |
+| At 1 August 2020 | 5,984,321 | 36,301 | 402,246 | 79,852,377 | 86,275,245 |
+| Additions | - | 6,318 | 216,162 | 98,669,590 | 98,892,070 |
+| Disposals | - | - | - | (10,488,115) | (10,488,115) |
+| **At 30 June 2021** | 5,984,321 | 42,619 | 618,408 | 168,033,852 | 174,679,200 |
+| **Amortisation** | | | | | |
+| At 1 August 2020 | 1,545,004 | 15,664 | 297,393 | 23,913,870 | 25,771,931 |
+| Charge for the period | 109,959 | 2,839 | 35,296 | 37,793,952 | 37,942,046 |
+| Disposals | - | - | - | (10,070,951) | (10,070,951) |
+| **At 30 June 2021** | 1,654,963 | 18,503 | 332,689 | 51,636,871 | 53,643,026 |
+| **Carrying amount** | | | | | |
+| **At 30 June 2021** | 4,329,358 | 24,116 | 285,719 | 116,396,981 | 121,036,174 |
+| At 31 July 2020 | 4,439,317 | 20,637 | 104,853 | 55,938,507 | 60,503,314 |
+
+Included in intangible assets is negative goodwill with a carrying amount of £nil (2020: £47,817). This negative goodwill arose on the acquisition of Leeds United Media Limited. The negative goodwill all relates to non-monetary assets and is being amortised over a period of five years, being the period that the company is expected to benefit.
+
+A total of £nil (2020: £1,242,045) has been charged to the profit and loss in respect of an impairment following a review of the First Team Squad.
+
+**14. Tangible assets**
+
+**Group**
+
+| | Leasehold land<br>and buildings<br>£ | Alterations and<br>improvements<br>£ | Fixtures, fittings<br>and equipment<br>£ | Total<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| **Cost** | | | | |
+| At 1 August 2020 | 2,955,252 | 19,802,895 | 10,256,735 | 33,014,882 |
+| Additions | 1,607,426 | 3,817,291 | 4,397,305 | 9,822,022 |
+| **At 30 June 2021** | 4,562,678 | 23,620,186 | 14,654,040 | 42,836,904 |
+| **Depreciation** | | | | |
+| At 1 August 2020 | 1,278,178 | 9,982,950 | 6,595,335 | 17,856,463 |
+| Charge for the period | 155,953 | 1,244,617 | 1,223,498 | 2,624,068 |
+| **At 30 June 2021** | 1,434,131 | 11,227,567 | 7,818,833 | 20,480,531 |
+| **Carrying amount** | | | | |
+| **At 30 June 2021** | 3,128,547 | 12,392,619 | 6,835,207 | 22,356,373 |
+| At 31 July 2020 | 1,677,074 | 9,819,945 | 3,661,400 | 15,158,419 |
+
 24
 
 --- pág. 27 ---
 
-Leeds United Football Club Limited a
-eee Notes to the Financial Statements (continued) wo . en
-‘ Period from 1 August 2020 to 30 June 2021
-14. Tangible assets (continued) : ae ae ,
-Le Company Leasehold land Alterations and Fixtures, fittings ad rae
-and buildings improvements and equipment Total coh pe
-: Cost no
-At 1 August 2020 2,115,922 18,312,869 8,767,339 29,196,130 oa
-: Additions 1,607,426 3,817,292 4,321,389 9,746,107 ee
-a At 30 June 2021 3,723,348 22,130,161 13,088,728 38,942,237 Ee
-a Depreciation OOP rae
-At 1 August 2020 791,740 9,079,379 §,204,642 15,075,761 re
-Charge for the period 120,625 1,184,678 1,182,483 2,487,786 oO
-At 30 June 2021 912,365 10,264,057 6,387,125 17,563,547
-Carrying amount ;
-At 30 June 2021 2,810,983 11,866,104 6,701,603 21,378,690 “
-At 31 July 2020 1,324,182 9,233,490 3,562,697 . 14,120,369
-; The directors have reviewed the carrying amount of both the tangible and intangible assets and are satisfied that they are :
-not impaired other than as described in note 13. coe
-Finance leases contracts ;
-Included within the carrying value of tangible assets are the following amounts relating to assets held under finance .
-leases agreements:
-Group Fixtures, fittings
-: and equipment
-£ .
-At 30 June 2021 2,087,569
-At 31 July 2020 1,645,532
-Company Fixtures, fittings
-and equipment ,
-£
-At 30 June 2021 2,078,983 on
-At 31 July 2020 1,623,452 ;
-15. Investments ,
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements (*continued*)**
+
+**Period from 1 August 2020 to 30 June 2021**
+
+**14. Tangible assets (*continued*)**
+
+**Company**
+
+| | Leasehold land<br>and buildings<br>£ | Alterations and<br>improvements<br>£ | Fixtures, fittings<br>and equipment<br>£ | Total<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| **Cost** | | | | |
+| At 1 August 2020 | 2,115,922 | 18,312,869 | 8,767,339 | 29,196,130 |
+| Additions | 1,607,426 | 3,817,292 | 4,321,389 | 9,746,107 |
+| **At 30 June 2021** | 3,723,348 | 22,130,161 | 13,088,728 | 38,942,237 |
+| **Depreciation** | | | | |
+| At 1 August 2020 | 791,740 | 9,079,379 | 5,204,642 | 15,075,761 |
+| Charge for the period | 120,625 | 1,184,678 | 1,182,483 | 2,487,786 |
+| **At 30 June 2021** | 912,365 | 10,264,057 | 6,387,125 | 17,563,547 |
+| **Carrying amount** | | | | |
+| **At 30 June 2021** | 2,810,983 | 11,866,104 | 6,701,603 | 21,378,690 |
+| At 31 July 2020 | 1,324,182 | 9,233,490 | 3,562,697 | 14,120,369 |
+
+The directors have reviewed the carrying amount of both the tangible and intangible assets and are satisfied that they are not impaired other than as described in note 13.
+
+**Finance leases contracts**
+
+Included within the carrying value of tangible assets are the following amounts relating to assets held under finance leases agreements:
+
+**Group**
+
+| | Fixtures, fittings<br>and equipment<br>£ |
+| :--- | :---: |
+| **At 30 June 2021** | 2,087,569 |
+| At 31 July 2020 | 1,645,532 |
+
+**Company**
+
+| | Fixtures, fittings<br>and equipment<br>£ |
+| :--- | :---: |
+| **At 30 June 2021** | 2,078,983 |
+| At 31 July 2020 | 1,623,452 |
+
+**15. Investments**
+
 The group has no investments.
-Company Shares in group mo
-undertakings :
-£
-Cost
-At 1 August 2020 and 30 June 2021 3
-impairment :
-At 1 August 2020 and 30 June 2021 - ‘
-Carrying amount :
-At 1 August 2020 and 30 June 2021 3 .
-At 31 July 2020 3 .
-25 -
+
+**Company**
+
+| | Shares in group<br>undertakings<br>£ |
+| :--- | :---: |
+| **Cost** | |
+| **At 1 August 2020 and 30 June 2021** | 3 |
+| **Impairment** | |
+| **At 1 August 2020 and 30 June 2021** | - |
+| **Carrying amount** | |
+| **At 1 August 2020 and 30 June 2021** | 3 |
+| At 31 July 2020 | 3 |
+
+25
 
 --- pág. 28 ---
 
@@ -1200,153 +1258,168 @@ Transfer fee debtors 526 1,425,000 526 1,425,000
 
 --- pág. 29 ---
 
-Leeds United Football Club Limited an
-Notes to the Financial Statements (continued) Se SS
-Period from 1 August 2020 to 30 June 2021
-: 18. Creditors: amounts falling due within one year . o - . : ,
-i: Group Company CT
-30 Jun 21 31 Jul 20 30 Jun 21 31 Jul 20 See
-- £ £ £ £ ne
-; Other loans 33,981,630 3,979,570 33,981,630 3,979,570 Tate
-Trade creditors 12,756,651 3,798,420 12,738,308 3,758,770 ope
-Amounts owed to group undertakings - 17,338,073 2,859,244 20,214,653 ee
-Accruals and deferred income 39,747 827 52,988,183 39,559,403 52,620,378 on
-Social security and other taxes 11,117,831 8,690,188 11,056,655 8,557,368 op
-Co Obligations under finance leases contracts 273,352 332,531 265,825 325,004 ce
-Transfer fee creditors 46,471,086 29,875,265 46,471,086 29,875,265 , oo
-; Other creditors 974,137 41,513,506 960,941 41,495,741 :
-145,322,514 158,515,736 147,893,092 460,826,749 :
-Included in accruals and deferred income are £17,576,493 (2020: £12,586,876) representing advance payment of tickets :
-and sponsorship that would only become a liability of the company should it fail to fulfill all of its fixtures for future :
-seasons. Lo,
-Obligations under finance leases are secured on the related assets. ;
-Other loans include an advance of £nil (2020: £2,000,000) secured on the related book debt. .
-The other loans of £33,981,630 (2020: Enil) are secured on the parachute payments of the 2021/22 season.
-19. Creditors: amounts falling due after more than one year .
-, Group Company .
-: 30 Jun 21 31 Jul 20 30 Jun 21 31 Ju! 20
-£ £ £ £
-Other loans - 1,979,570 - 1,979,570
-Amounts owed to group undertakings - 13,599,994 - 13,599,994
-Accruals and deferred income 21,430,050 3,500,000 21,430,050 3,500,000
-Obligations under finance leases contracts 682,495 320,291 672,736 314,303 ;
-Transfer fee creditors 38,358,480 18,806,174 38,358,480 18,806,174 :
-Pension 277,354 364,550 277,354 364,550 ae
-Amounts owed to related parties 20,000,000 - 20,000,000 = -
-. 80,748,379 38,570,579 80,738,620 38,564,591
+AMENDED
+
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements (*continued*)**
+
+**Period from 1 August 2020 to 30 June 2021**
+
+**18. Creditors: amounts falling due within one year**
+
+| | Group<br>30 Jun 21<br>£ | Group<br>31 Jul 20<br>£ | Company<br>30 Jun 21<br>£ | Company<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Other loans | 33,981,630 | 3,979,570 | 33,981,630 | 3,979,570 |
+| Trade creditors | 12,756,651 | 3,798,420 | 12,738,308 | 3,758,770 |
+| Amounts owed to group undertakings | - | 17,338,073 | 2,859,244 | 20,214,653 |
+| Accruals and deferred income | 39,747,827 | 52,988,183 | 39,559,403 | 52,620,378 |
+| Social security and other taxes | 11,117,831 | 8,690,188 | 11,056,655 | 8,557,368 |
+| Obligations under finance leases contracts | 273,352 | 332,531 | 265,825 | 325,004 |
+| Transfer fee creditors | 46,471,086 | 29,875,265 | 46,471,086 | 29,875,265 |
+| Other creditors | 974,137 | 41,513,506 | 960,941 | 41,495,741 |
+| | 145,322,514 | 158,515,736 | 147,893,092 | 160,826,749 |
+
+Included in accruals and deferred income are £17,576,493 (2020: £12,586,876) representing advance payment of tickets and sponsorship that would only become a liability of the company should it fail to fulfill all of its fixtures for future seasons.
+
+Obligations under finance leases are secured on the related assets.
+
+Other loans include an advance of £nil (2020: £2,000,000) secured on the related book debt.
+
+The other loans of £33,981,630 (2020: £nil) are secured on the parachute payments of the 2021/22 season.
+
+**19. Creditors: amounts falling due after more than one year**
+
+| | Group<br>30 Jun 21<br>£ | Group<br>31 Jul 20<br>£ | Company<br>30 Jun 21<br>£ | Company<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Other loans | - | 1,979,570 | - | 1,979,570 |
+| Amounts owed to group undertakings | - | 13,599,994 | - | 13,599,994 |
+| Accruals and deferred income | 21,430,050 | 3,500,000 | 21,430,050 | 3,500,000 |
+| Obligations under finance leases contracts | 682,495 | 320,291 | 672,736 | 314,303 |
+| Transfer fee creditors | 38,358,480 | 18,806,174 | 38,358,480 | 18,806,174 |
+| Pension | 277,354 | 364,550 | 277,354 | 364,550 |
+| Amounts owed to related parties | 20,000,000 | - | 20,000,000 | - |
+| | 80,748,379 | 38,570,579 | 80,738,620 | 38,564,591 |
+
 Obligations under finance leases are secured on related assets.
-The amounts owed to related parties is listed on The International Stock Exchange, has repayment date of April 2026
-and attracts interest of 6%.
-20. ‘Finance leases contracts
-The total future minimum lease payments under finance leases contracts are as follows: ;
-Group Company
-30 Jun 21 31 Jul 20 30 Jun 21 31 Jul 20
-£ £ £ £
-Not later than 1 year 280,661 358,033 273,134 346,393
-Later than 1 year and not later than 5 years 653,403 342,985 643,644 333,731
-Later than 5 years 43,663 - 43,663 - ;
-977,727 701,018 960,441 680,124 :
-Less: future finance charges (21,880) (48,196) (21,880) (40,817)
-Present value of minimum lease payments 955,847 652,822 938,561 639,307 ,
-oO 27
+
+The amounts owed to related parties is listed on The International Stock Exchange, has repayment date of April 2026 and attracts interest of 6%.
+
+**20. Finance leases contracts**
+
+The total future minimum lease payments under finance leases contracts are as follows:
+
+| | Group<br>30 Jun 21<br>£ | Group<br>31 Jul 20<br>£ | Company<br>30 Jun 21<br>£ | Company<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Not later than 1 year | 280,661 | 358,033 | 273,134 | 346,393 |
+| Later than 1 year and not later than 5 years | 653,403 | 342,985 | 643,644 | 333,731 |
+| Later than 5 years | 43,663 | - | 43,663 | - |
+| | 977,727 | 701,018 | 960,441 | 680,124 |
+| Less: future finance charges | (21,880) | (48,196) | (21,880) | (40,817) |
+| Present value of minimum lease payments | 955,847 | 652,822 | 938,561 | 639,307 |
+
+27
 
 --- pág. 30 ---
 
-Leeds United Football Club Limited
-Notes to the Financial Statements (continued)
-Period from 1 August 2020 to 30 June 2021 . Sl Ae ‘
-21. Employee benefits De oo -
-Defined contribution schemes we vie
-Certain professional footballing staff are members of the Football League Players Retirement Income Scheme, a aa
-non-contributory defined contribution scheme. In addition, the company operates a defined contribution scheme open to Saar
-all other employees. Costs of all defined contribution schemes, totalling £147,263 (2020: £143,451), have been charged tle
-. to the profit and loss account in the period. Sore Cott,
-- Defined benefit scheme a
-. Certain other professional footballing staff are members of the Football League Limited Pension and Life Assurance ce,
-a Scheme ("FLLPLAS"), a defined benefit scheme. Under section 28 of FRS 102 the FLLPLAS would be treated as a ott
-defined benefit multi-employer scheme. The assets of the scheme are held separately from those of the company, being : :
-invested with insurance companies. Sufficient information is not available for full disclosure. me
-Following a review of the Minimum Funding Requirement ("MFR") of the FLLPLAS, accrual of benefits of the final salary
-section of the scheme was suspended as at 31 August 1999. In light of the exceptional circumstances affecting the
-scheme, the trustees of the scheme commissioned an independent actuary's report on the MFR position and a ;
-substantial deficit was identified. Under the Pensions Act 1985, participating employers will be required to contribute to . :
-the deficiency. The latest actuarial valuation of the scheme was carried out as at 01 September 2020 and resulted in a .
-charge to the profit and loss account of £237,897. The allocation of the deficit under this valuation is repayable at £8,251 .
-per month effective from 1 September 2020. cy
-- 22. Government grants ‘
-The amounts recognised in the financial statements for government grants are as follows: wos
-Group Company
-30 Jun 21 31 Jul 20 30 Jun 21 31 Jul 20 _
-: £ £ £ £ :
-Recognised in other operating income: ; ;
-Government grants 1,137,677 1,027,107 1,137,677 1,027,107
-23. Financial instruments
-The carrying amount for each category of financial instrument is as follows: ; .
-Financial liabilities measured at fair value through profit or loss
-Group Company
-30 Jun 21 31 Jul 20 30 Jun 21 31 Jul 20
-£ £ £ £
-Financial liabilities measured at fair value
-through profit or loss §8,545,829- 19,911,945 58,545,829 19,911,945
-A financial liability of ENil (2020: £3,959,140) relates to a loan below market rate provided by a former shareholder. The
-loan is recognised at the present value of future payments discounted at a market rate of interest for a similar debt
-instrument, deemed to be 7%. On promotion to the Premier League, the terms of the loan changed and the present value a
-of the future payments was recalculated. In the period ended 31 July 2020 this resulted in an increase to the loan balance .
-by £719,773 via interest payable and a transfer from the unrealised profit reserve. This financial liability was repaid in : .
-August and October 2020 in equal instalments.
-A financial liability of £58,545,829 (2020: £15,952,805) relates to transfer fee creditors. The creditors are recognised at -
-the present value of future payments discounted at a market rate of interest for a similar debt instrument, deemed to be
-6%, resulting in a fair value adjustment of £5,282,136 (2020: £1,057,510). The deemed interest payable of £2,940,443 .
-(2020: £590,162) is recognised in interest payable and transferred to the unrealised profit reserve. This financial liability is -
-included in in transfer fee creditors and is repayable in line with the transfer agreements.
-28 oo
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements (*continued*)**
+
+**Period from 1 August 2020 to 30 June 2021**
+
+**21. Employee benefits**
+
+**Defined contribution schemes**  
+Certain professional footballing staff are members of the Football League Players Retirement Income Scheme, a non-contributory defined contribution scheme. In addition, the company operates a defined contribution scheme open to all other employees. Costs of all defined contribution schemes, totalling £147,263 (2020: £143,451), have been charged to the profit and loss account in the period.
+
+**Defined benefit scheme**  
+Certain other professional footballing staff are members of the Football League Limited Pension and Life Assurance Scheme ("FLLPLAS"), a defined benefit scheme. Under section 28 of FRS 102 the FLLPLAS would be treated as a defined benefit multi-employer scheme. The assets of the scheme are held separately from those of the company, being invested with insurance companies. Sufficient information is not available for full disclosure.
+
+Following a review of the Minimum Funding Requirement ("MFR") of the FLLPLAS, accrual of benefits of the final salary section of the scheme was suspended as at 31 August 1999. In light of the exceptional circumstances affecting the scheme, the trustees of the scheme commissioned an independent actuary's report on the MFR position and a substantial deficit was identified. Under the Pensions Act 1985, participating employers will be required to contribute to the deficiency. The latest actuarial valuation of the scheme was carried out as at 01 September 2020 and resulted in a charge to the profit and loss account of £237,897. The allocation of the deficit under this valuation is repayable at £8,251 per month effective from 1 September 2020.
+
+**22. Government grants**
+
+The amounts recognised in the financial statements for government grants are as follows:
+
+| | Group<br>30 Jun 21<br>£ | Group<br>31 Jul 20<br>£ | Company<br>30 Jun 21<br>£ | Company<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Recognised in other operating income: | | | | |
+| Government grants | 1,137,677 | 1,027,107 | 1,137,677 | 1,027,107 |
+
+**23. Financial instruments**
+
+The carrying amount for each category of financial instrument is as follows:
+
+**Financial liabilities measured at fair value through profit or loss**
+
+| | Group<br>30 Jun 21<br>£ | Group<br>31 Jul 20<br>£ | Company<br>30 Jun 21<br>£ | Company<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Financial liabilities measured at fair value through profit or loss | 58,545,829 | 19,911,945 | 58,545,829 | 19,911,945 |
+
+A financial liability of £Nil (2020: £3,959,140) relates to a loan below market rate provided by a former shareholder. The loan is recognised at the present value of future payments discounted at a market rate of interest for a similar debt instrument, deemed to be 7%. On promotion to the Premier League, the terms of the loan changed and the present value of the future payments was recalculated. In the period ended 31 July 2020 this resulted in an increase to the loan balance by £719,773 via interest payable and a transfer from the unrealised profit reserve. This financial liability was repaid in August and October 2020 in equal instalments.
+
+A financial liability of £58,545,829 (2020: £15,952,805) relates to transfer fee creditors. The creditors are recognised at the present value of future payments discounted at a market rate of interest for a similar debt instrument, deemed to be 6%, resulting in a fair value adjustment of £5,282,136 (2020: £1,057,510). The deemed interest payable of £2,940,443 (2020: £590,162) is recognised in interest payable and transferred to the unrealised profit reserve. This financial liability is included in in transfer fee creditors and is repayable in line with the transfer agreements.
+
+28
 
 --- pág. 31 ---
 
-Leeds United Football Club Limited -
-Notes to the Financial Statements (continued) . vette
-Period from 1 August 2020 to 30 June 2021
-oo 24. Called up share capital ue ; oa
-. Issued, called up and fully paid - a
-7 30 Jun 21 _ 314 Jul 20 ae
-No. £ No. £ SoS
-Ordinary A shares of £1 each 31,083,858 31,083,858 32,834,908 32,834,908 wo
-Ordinary B shares of £1 each 11,000,000 11,000,000 11,000,000 11,000,000 ee
-. Ordinary A1 shares of £1 each 10,852,883 10,852,883 © - - Soy sae
-ae 52,936,741 52,936,741 43,834,908 43,834,908 OF Ge .
-On 20 November 2020 the club converted debt of £3,000,000 and $5,000,000 into 4,059,079 ordinary shares at a price of vO
-£1.93 per share. ; .
-On 24 December 2020 the club also issued 5,042,754 new A1 shares at a price of £4.56 per share. :
-25. Reserves
-Share premium account - This reserve records the amount above the nominal value received for shares sold, less .
-transaction costs.
-Unrealised profit reserve - This reserve records movements in the fair value of financial instruments. oe
-Profit and loss account - This reserve records retained earnings and accumulated losses.
-26. Analysis of changes in net debt
-At 1 Aug 2020 Cash flows Other changes At 30 Jun 2021
-‘ £ £ £ £
-Cash at bank and in hand 31,670,725 (2,554,916) - 29,115,809
-Debt due within one year (21,650,174) (41,966,699) 29,361,891 (34,254,982) ; .
-Debt due after one year (15,899,855) 15,217,360 - (682,495) cee
-(5,879,304) (29,304,255) 29,361,891 (5,821,668) ;
-27. Operating leases
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements (*continued*)**
+
+**Period from 1 August 2020 to 30 June 2021**
+
+**24. Called up share capital**
+
+**Issued, called up and fully paid**
+
+| | 30 Jun 21<br>No. | 30 Jun 21<br>£ | 31 Jul 20<br>No. | 31 Jul 20<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Ordinary A shares of £1 each | 31,083,858 | 31,083,858 | 32,834,908 | 32,834,908 |
+| Ordinary B shares of £1 each | 11,000,000 | 11,000,000 | 11,000,000 | 11,000,000 |
+| Ordinary A1 shares of £1 each | 10,852,883 | 10,852,883 | - | - |
+| | 52,936,741 | 52,936,741 | 43,834,908 | 43,834,908 |
+
+On 20 November 2020 the club converted debt of £3,000,000 and £5,000,000 into 4,059,079 ordinary shares at a price of £1.93 per share.
+
+On 24 December 2020 the club also issued 5,042,754 new A1 shares at a price of £4.56 per share.
+
+**25. Reserves**
+
+**Share premium account** - This reserve records the amount above the nominal value received for shares sold, less transaction costs.
+
+**Unrealised profit reserve** - This reserve records movements in the fair value of financial instruments.
+
+**Profit and loss account** - This reserve records retained earnings and accumulated losses.
+
+**26. Analysis of changes in net debt**
+
+| | At 1 Aug 2020<br>£ | Cash flows<br>£ | Other changes<br>£ | At 30 Jun 2021<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Cash at bank and in hand | 31,670,725 | (2,554,916) | - | 29,115,809 |
+| Debt due within one year | (21,650,174) | (41,966,699) | 29,361,891 | (34,254,982) |
+| Debt due after one year | (15,899,855) | 15,217,360 | - | (682,495) |
+| | (5,879,304) | (29,304,255) | 29,361,891 | (5,821,668) |
+
+**27. Operating leases**
+
 The total future minimum lease payments under non-cancellable operating leases are as follows:
-Group Company
-30 Jun 21 31 Jul 20 30 Jun 21 31 Jul 20
-£ £ £ £
-Not later than 1 year 2,498,583 2,860,335 2,498,583 2,860,335
-Later than 1 year and not later than 5 years 8,791,068 10,517,514 8,791,068 | 10,517,514 .
-Later than 5 years 16,751,247 18,111,979 16,751,247 18,111,979
-28,040,898 31,489,828 28,040,898 31,488,828 .
-28. Contingencies
-Under the terms of the financial provisions relating to transfer of player registrations, future payments of up to £5,876,000 .
-(2020: £18,462,800) may be payable dependent on the club's retention of (2020: retention of) the FA Premier Leaque
-status and/or players appearances for the club. Retention of (2020: retention of) FA Premier League status may also
-incur bonuses payable of £48,246,676 (2020: £35,266,685) conditional on the performance of both players and football .
-_ Management throughout the 2021/22 season.
-At the period end there were a number of legal claims outstanding against the company. These claims are being .
-challenged by the directors and so there is significant uncertainty over their outcome. For this reason no provision has .
-been included.
+
+| | Group<br>30 Jun 21<br>£ | Group<br>31 Jul 20<br>£ | Company<br>30 Jun 21<br>£ | Company<br>31 Jul 20<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Not later than 1 year | 2,498,583 | 2,860,335 | 2,498,583 | 2,860,335 |
+| Later than 1 year and not later than 5 years | 8,791,068 | 10,517,514 | 8,791,068 | 10,517,514 |
+| Later than 5 years | 16,751,247 | 18,111,979 | 16,751,247 | 18,111,979 |
+| | 28,040,898 | 31,489,828 | 28,040,898 | 31,489,828 |
+
+**28. Contingencies**
+
+Under the terms of the financial provisions relating to transfer of player registrations, future payments of up to £5,876,000 (2020: £18,462,800) may be payable dependent on the club's retention of (2020: retention of) the FA Premier League status and/or players appearances for the club. Retention of (2020: retention of) FA Premier League status may also incur bonuses payable of £48,246,676 (2020: £35,266,685) conditional on the performance of both players and football management throughout the 2021/22 season.
+
+At the period end there were a number of legal claims outstanding against the company. These claims are being challenged by the directors and so there is significant uncertainty over their outcome. For this reason no provision has been included.
+
 29
 
 --- pág. 32 ---

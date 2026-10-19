@@ -1390,45 +1390,55 @@ There were no payments to directors for compensation for loss of office (2020: �
 
 --- pág. 36 ---
 
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2021
-(continued)
-6. Profit on Disposal of Players
-2021 2020
-£000 £000
-Profit on sale of players 17,436 22,833
-Income from loan of players 148 2,100
-—_—_ “a
-17,584 24,933
-7. Interest Receivable and Similar Income
-2021 2020
-£000 £000
-Bank and other interest receivable 5 31
-8. Interest Payable and Similar Expenses
-2021 2020
-£000 £000
-Interest payable on secured loans 5,224 3,216
-Interest on loans from shareholders 1,870 1,930
-Other finance costs 1,558 19
-— a
-8,652 5,165
-9. Tax on Loss
-As at 31 May 2021 cumulative unrecognised tax losses available to carry forward against future trading profits were ,.
-approximately £153,847,331 (2020: £140,108,078).
-The tax assessed for the year is higher than (2020: higher than) the standard rate of corporation tax in the United
-Kingdom of 19.0% (2020: 19.0%).
-Factors affecting the corporation tax charge for the year are explained below. a
-2021 2020
-£000 £000
-Loss before taxation (26,133) (64,744)
-Tax charge @ 19.0% (2020: 19.00%) thereon (4,965) (12,301)
-Expenses not deductible/income not taxable for tax purposes 914 654 .
-Fixed asset timing differences 324 211
-Adjustments to tax charge in respect of previous periods (397) -
-Losses carried forward unrecognised 3,449 12,637
-Other timing differences 278 (1,201)
-Corporation tax repayment for year (397) :
-36 .
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
+
+### NOTES TO THE FINANCIAL STATEMENTS  
+**for the year ended 31 May 2021**  
+**(continued)**
+
+#### 6. Profit on Disposal of Players
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| Profit on sale of players | 17,436 | 22,833 |
+| Income from loan of players | 148 | 2,100 |
+| | **17,584** | **24,933** |
+
+#### 7. Interest Receivable and Similar Income
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| Bank and other interest receivable | 5 | 31 |
+
+#### 8. Interest Payable and Similar Expenses
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| Interest payable on secured loans | 5,224 | 3,216 |
+| Interest on loans from shareholders | 1,870 | 1,930 |
+| Other finance costs | 1,558 | 19 |
+| | **8,652** | **5,165** |
+
+#### 9. Tax on Loss
+
+As at 31 May 2021 cumulative unrecognised tax losses available to carry forward against future trading profits were approximately £153,847,331 (2020: £140,108,078).
+
+The tax assessed for the year is higher than (2020: higher than) the standard rate of corporation tax in the United Kingdom of 19.0% (2020: 19.0%).
+
+Factors affecting the corporation tax charge for the year are explained below.
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| Loss before taxation | (26,133) | (64,744) |
+| Tax charge @ 19.0% (2020: 19.00%) thereon | (4,965) | (12,301) |
+| Expenses not deductible/income not taxable for tax purposes | 914 | 654 |
+| Fixed asset timing differences | 324 | 211 |
+| Adjustments to tax charge in respect of previous periods | (397) | - |
+| Losses carried forward unrecognised | 3,449 | 12,637 |
+| Other timing differences | 278 | (1,201) |
+| Corporation tax repayment for year | **(397)** | **-** |
+
+36
 
 --- pág. 37 ---
 
@@ -1560,141 +1570,178 @@ Amounts owed by Group undertakings are interest free and repayable on demand. Pr
 
 --- pág. 40 ---
 
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2021
-(continued)
-15. Creditors (continued)
-The long-term bank loan of £55.0m was drawn down on 17 March 2021 from a new £120.0m five-year facility provided
-by MSD Holdings Limited. This facility is secured, subject to retaining Premier League status, by a fixed and floating
-charge on the assets of the Club.
-The balance held within Other Creditors and Season Tickets refundable include the value of monies due back to season
-ticket holders in respect of matches played behind closed doors of £4.3m (2020: £8.5m).
-The Derivative financial instruments balance of £1.2m (2020: £0.0m) represents a financial liability measured at fair
-value through the profit and loss account. All other creditors are financial liabilities measured at amortised cost.
-The Company entered into forward foreign exchange contracts totalling €30.0m to mitigate the exchange rate risk for
-certain foreign currency payables after the year end date. At 31 May 2021, the outstanding contracts all mature within »,
-four months of the year end. Under these contracts, the Company is committed to purchase €30.0m for a fixed sterling
-amount.
-The forward currency contracts are measured at fair value, which is determined using valuation techniques that utilise
-observable inputs. The key assumptions used in valuing the derivatives are the forward exchange rates for EUR:GBP.
-The Company has no interest rate derivative financial instruments (2020: None). .
-16. Total Borrowings ;
-2021 2020
-£000 £000
-Debenture loans and subscriptions repayable after five years or more (notes 611 611
-15&17)
-Secured loan repayable within one year - 64,100
-Secured loan repayable after greater than one year 55,000 1,350
-Loans from Shareholders repayable after greater than one year 44,000 44,000
-99,000 109,450
-The loans from shareholders repayable after greater than one year are unsecured, with interest accruing at 4.0% p.a. The
-interest accrued as at the balance sheet date amounts to £3.7m (2020: £1.8m).
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
+
+### NOTES TO THE FINANCIAL STATEMENTS  
+**for the year ended 31 May 2021**  
+**(continued)**
+
+#### 15. Creditors (continued)
+
+The long-term bank loan of £55.0m was drawn down on 17 March 2021 from a new £120.0m five-year facility provided by MSD Holdings Limited. This facility is secured, subject to retaining Premier League status, by a fixed and floating charge on the assets of the Club.
+
+The balance held within Other Creditors and Season Tickets refundable include the value of monies due back to season ticket holders in respect of matches played behind closed doors of £4.3m (2020: £8.5m).
+
+The Derivative financial instruments balance of £1.2m (2020: £0.0m) represents a financial liability measured at fair value through the profit and loss account. All other creditors are financial liabilities measured at amortised cost.
+
+The Company entered into forward foreign exchange contracts totalling €30.0m to mitigate the exchange rate risk for certain foreign currency payables after the year end date. At 31 May 2021, the outstanding contracts all mature within four months of the year end. Under these contracts, the Company is committed to purchase €30.0m for a fixed sterling amount.
+
+The forward currency contracts are measured at fair value, which is determined using valuation techniques that utilise observable inputs. The key assumptions used in valuing the derivatives are the forward exchange rates for EUR:GBP.
+
+The Company has no interest rate derivative financial instruments (2020: None).
+
+#### 16. Total Borrowings
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| Debenture loans and subscriptions repayable after five years or more (notes 15&17) | **611** | **611** |
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| Secured loan repayable within one year | - | 64,100 |
+| Secured loan repayable after greater than one year | 55,000 | 1,350 |
+| Loans from Shareholders repayable after greater than one year | 44,000 | 44,000 |
+| | **99,000** | **109,450** |
+
+The loans from shareholders repayable after greater than one year are unsecured, with interest accruing at 4.0% p.a. The interest accrued as at the balance sheet date amounts to £3.7m (2020: £1.8m).
+
 The repayment date for these shareholder loans is 1 January 2024.
+
 40
 
 --- pág. 41 ---
 
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2021
-(continued)
-17. Debenture Loans and Subscriptions
-The balance of £611,000 (2020: £611,000) comprises both full and part payments towards the purchase of debentures
-under the Hammers Bond Scheme in 1991-92. At 31 May 2021 and at 31 May 2020 the following applications had been
-received.
-2021 2020
-£000 £000
-97 ‘A’ bonds 49 49
-641 ‘B’ bonds 481 481
-70 ‘C° bonds 68 68
-Part payments 13 13
-611 611
-Under the terms and conditions of the scheme, the debentures are repayable at par after 150 years. The debentures are «
-non- interest bearing and are unsecured.
-18. Bank and other loans
-During the year to 31 May 2021, the Company took out a £120.0m long term financing facility with MSD Holdings
-Limited. At the balance sheet date, £55.0m of the facility had been drawn down. The facility is secured by a fixed and
-floating charge on the assets of the Club.
-19. Provisions for Liabilities —- Cost of Player Registrations ”“
-2021 2020
-£000 £000 .
-At start of the year 6,232 10,256 A
-Utilised in the year (2,099) (4,811)
-Released in the year (4,099) (1,379)
-Provided in the year - 2,166
-At end of the year 34 6,232
-The above provision represents contingent amounts payable under the terms of transfer agreements which are deemed
-probable to be paid.
-41 7
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
+
+### NOTES TO THE FINANCIAL STATEMENTS  
+**for the year ended 31 May 2021**  
+**(continued)**
+
+#### 17. Debenture Loans and Subscriptions
+
+The balance of £611,000 (2020: £611,000) comprises both full and part payments towards the purchase of debentures under the Hammers Bond Scheme in 1991-92. At 31 May 2021 and at 31 May 2020 the following applications had been received.
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| 97 ‘A’ bonds | 49 | 49 |
+| 641 ‘B’ bonds | 481 | 481 |
+| 70 ‘C’ bonds | 68 | 68 |
+| Part payments | 13 | 13 |
+| | **611** | **611** |
+
+Under the terms and conditions of the scheme, the debentures are repayable at par after 150 years. The debentures are non-interest bearing and are unsecured.
+
+#### 18. Bank and other loans
+
+During the year to 31 May 2021, the Company took out a £120.0m long term financing facility with MSD Holdings Limited. At the balance sheet date, £55.0m of the facility had been drawn down. The facility is secured by a fixed and floating charge on the assets of the Club.
+
+#### 19. Provisions for Liabilities – Cost of Player Registrations
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| At start of the year | 6,232 | 10,256 |
+| Utilised in the year | (2,099) | (4,811) |
+| Released in the year | (4,099) | (1,379) |
+| Provided in the year | - | 2,166 |
+| **At end of the year** | **34** | **6,232** |
+
+The above provision represents contingent amounts payable under the terms of transfer agreements which are deemed probable to be paid.
+
+41
 
 --- pág. 42 ---
 
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2021
-(continued)
-20. Provisions for Liabilities — Deferred Taxation
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
+
+### NOTES TO THE FINANCIAL STATEMENTS  
+**for the year ended 31 May 2021**  
+**(continued)**
+
+#### 20. Provisions for Liabilities – Deferred Taxation
+
 The amount of deferred taxation provided in the financial statements is as follows:
-2021 2020
-£000 £000
-Fixed asset timing differences (608) (563)
-. Other timing differences 2,695 1,111 .
-Surplus on revaluation of properties (2,087) (548)
-Total deferred tax asset/(liability) - -
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| Fixed asset timing differences | (608) | (563) |
+| Other timing differences | 2,695 | 1,111 |
+| Surplus on revaluation of properties | (2,087) | (548) |
+| **Total deferred tax asset/(liability)** | **-** | **-** |
+
 The amount of potential deferred taxation not provided in the financial statements is as follows:
-2021 2020
-£000 £000 rN
-Unprovided deferred tax asset 38,462 27,094 ,
-21. Called up Share Capital nN
-2021 2020
-: £000 £000
-Allotted and fully paid
-11,000,000 (2020: 11,000,000) ordinary shares of 50 pence each 5,500 5,500
-Ordinary shares have full voting and dividend rights. ; ,
-22. Share Premium Account
-2021 2020 ;
-£000 £000
-At start and end of the financial year 4,847 4,847
-23. Revaluation Reserve
-2021 2020
-£000 £000
-At start of the financial year 319 319 *“
-Surplus on revaluation of properties 3,617 -
-At end of the financial year 3,936 319
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| Unprovided deferred tax asset | 38,462 | 27,094 |
+
+#### 21. Called up Share Capital
+
+| Allotted and fully paid | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| 11,000,000 (2020: 11,000,000) ordinary shares of 50 pence each | 5,500 | 5,500 |
+
+Ordinary shares have full voting and dividend rights.
+
+#### 22. Share Premium Account
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| At start and end of the financial year | 4,847 | 4,847 |
+
+#### 23. Revaluation Reserve
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| At start of the financial year | 319 | 319 |
+| Surplus on revaluation of properties | 3,617 | - |
+| **At end of the financial year** | **3,936** | **319** |
+
 42
 
 --- pág. 43 ---
 
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2021
-(continued)
-24. Profit and Loss Account ~
-2021 2020
-£000 £000
-At the start of the year (153,501) (88,757)
-Loss for the financial year (25,736) (64,744)
-: A
-At the end of the year (179,237) (153,501)
-25. Reconciliation of Movements in Shareholders’ Deficit
-2021 2020
-£000 £000
-At the start of the year (142,835) (78,091)
-Loss for the financial year (25,736) (64,744)
-Surplus on revaluation of properties 3,617 -
-Closing shareholders’ deficit (164,954) (142,835)
-26. Operating Lease Commitments . ,
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
+
+### NOTES TO THE FINANCIAL STATEMENTS  
+**for the year ended 31 May 2021**  
+**(continued)**
+
+#### 24. Profit and Loss Account
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| At the start of the year | (153,501) | (88,757) |
+| Loss for the financial year | (25,736) | (64,744) |
+| **At the end of the year** | **(179,237)** | **(153,501)** |
+
+#### 25. Reconciliation of Movements in Shareholders’ Deficit
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| At the start of the year | (142,835) | (78,091) |
+| Loss for the financial year | (25,736) | (64,744) |
+| Surplus on revaluation of properties | 3,617 | - |
+| **Closing shareholders’ deficit** | **(164,954)** | **(142,835)** |
+
+#### 26. Operating Lease Commitments
+
 At 31st May 2021 the Company was committed to making the following annual payments in respect of operating leases.
-2021 2020 -
-£000 £000
-Land and buildings
-Expiring within one year 3,358 3,205
-Expiring within two to five years 14,156 14,248
-Expiring more than five years 303,004 306,408
-320,518 323,861 a
-Other operating leases ;
-Expiring within one year 9 13
-Expiring within two to five years 94 154
-; 103 167
-320,621 324,028
-The Company had no capital or other commitments at 31 May 2021 (2020: £nil). ;
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| **Land and buildings** | | |
+| Expiring within one year | 3,358 | 3,205 |
+| Expiring within two to five years | 14,156 | 14,248 |
+| Expiring more than five years | 303,004 | 306,408 |
+| | **320,518** | **323,861** |
+| **Other operating leases** | | |
+| Expiring within one year | 9 | 13 |
+| Expiring within two to five years | 94 | 154 |
+| | **103** | **167** |
+| | **320,621** | **324,028** |
+
+The Company had no capital or other commitments at 31 May 2021 (2020: £nil).
+
 43
 
 --- pág. 44 ---

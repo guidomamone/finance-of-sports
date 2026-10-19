@@ -550,38 +550,45 @@ The income statement has been prepared on the basis that all operations are cont
 
 DocuSign Envelope ID: F3E8CF14-9F5B-4489-93FA-296AB631F8C4
 
-RED BULL RACING LTD
+### RED BULL RACING LTD
 
-STATEMENT OF FINANCIAL POSITION
+#### STATEMENT OF FINANCIAL POSITION
+#### AS AT 31 DECEMBER 2020
 
-AS AT 31 DECEMBER 2020
-
-| | Notes | 2020 £000 | 2020 £000 | 2019 £000 | 2019 £000 |
-|---|---|---|---|---|---|
-| Fixed assets | | | | | |
+| | Notes | 2020<br>£000 | 2020<br>£000 | 2019<br>£000 | 2019<br>£000 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Fixed assets** | | | | | |
 | Tangible assets | 12 | | 10,465 | | 9,235 |
-| Current assets | | | | | |
+| | | | | | |
+| **Current assets** | | | | | |
 | Stocks | 13 | 334 | | 320 | |
 | Debtors | 14 | 14,039 | | 39,870 | |
 | Cash at bank and in hand | | 604 | | 2,724 | |
 | | | 14,977 | | 42,914 | |
 | Creditors: amounts falling due within one year | 15 | (18,219) | | (45,649) | |
-| Net current liabilities | | | (3,242) | | (2,735) |
-| Total assets less current liabilities | | | 7,223 | | 6,500 |
-| Capital and reserves | | | | | |
+| | | | | | |
+| **Net current liabilities** | | | (3,242) | | (2,735) |
+| | | | | | |
+| **Total assets less current liabilities** | | | 7,223 | | 6,500 |
+| | | | | | |
+| **Capital and reserves** | | | | | |
 | Called up share capital | 16 | | 1,000 | | 1,000 |
 | Revaluation reserve | | | 3,100 | | 3,100 |
 | Profit and loss reserves | | | 3,123 | | 2,400 |
-| Total equity | | | 7,223 | | 6,500 |
+| | | | | | |
+| **Total equity** | | | 7,223 | | 6,500 |
 
 The financial statements were approved by the board of directors and authorised for issue on 2 February 2021 and are signed on its behalf by:
 
-C Horner
-Director
+DocuSigned by:  
+*[Firma]*  
+6E7427747DC54AB...  
+**C Horner**  
+Director  
 
 Company Registration No. 03120645
 
--12-
+\- 12 -
 
 --- pág. 16 ---
 

@@ -1271,36 +1271,44 @@ Turnover analysed by geographical market
 
 --- pág. 32 ---
 
-: CHELSEA FC PLC
-NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
-FOR THE YEAR ENDED 30 JUNE 2021
-5 Exceptional items 2021 2020
-£000 £000
-Exceptional administrative expenses 41,996 -
-Exceptional administrative expenses in the year consist of impairment of player registrations of £17.9m (see
-Note 13) and amounts payable in relation to ongoing fegal matters of £24.1m.
-6 (Loss)/profit before taxation
-2021 2020
-£000 £000
-(Loss)/profit before taxation for the year is stated after charging/(crediting):
-Depreciation of owned tangible fixed assets 10,384 9,895
-Profit on disposal of player registrations (27,940) (142,645)
-Amortisation of intangible assets 163,864 129,141
-Impairment of intangible assets 17,933 -
-Operating lease charges 128 154
-7 Auditor's remuneration
-2021 2020
-Fees payable to the company's auditor and associates: £000 £000
-For audit services
-Audit of the financial statements of the Group and company 20 26
-Audit of the company's subsidiaries 59 78
-79 104
-For other services
-Taxation compliance services 40 40
-Other taxation services 138 84
-Review of the company's interim accounts 50 48
-228 172
-; - 29 -
+# CHELSEA FC PLC
+
+## NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+### FOR THE YEAR ENDED 30 JUNE 2021
+
+### 5 Exceptional items
+
+| | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
+| Exceptional administrative expenses | 41,996 | - |
+
+Exceptional administrative expenses in the year consist of impairment of player registrations of £17.9m (see Note 13) and amounts payable in relation to ongoing legal matters of £24.1m.
+
+### 6 (Loss)/profit before taxation
+
+| (Loss)/profit before taxation for the year is stated after charging/(crediting): | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
+| Depreciation of owned tangible fixed assets | 10,384 | 9,895 |
+| Profit on disposal of player registrations | (27,940) | (142,645) |
+| Amortisation of intangible assets | 163,864 | 129,141 |
+| Impairment of intangible assets | 17,933 | - |
+| Operating lease charges | 128 | 154 |
+
+### 7 Auditor's remuneration
+
+| Fees payable to the company's auditor and associates: | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
+| **For audit services** | | |
+| Audit of the financial statements of the Group and company | 20 | 26 |
+| Audit of the company's subsidiaries | 59 | 78 |
+| | **79** | **104** |
+| **For other services** | | |
+| Taxation compliance services | 40 | 40 |
+| Other taxation services | 138 | 84 |
+| Review of the company's interim accounts | 50 | 48 |
+| | **228** | **172** |
+
+\- 29 -
 
 --- pág. 33 ---
 
@@ -1359,44 +1367,47 @@ period of the transactions.
 
 --- pág. 35 ---
 
-¢
-CHELSEA FC PLC
-NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
-FOR THE YEAR ENDED 30 JUNE 2021
-12 Taxation
-2021 2020
-£000 £000
-Current Tax
-Current tax on income/(loss) , (3,131) 3,140
-Total Current Tax . (3,131) 3,140
-Deferred tax (see note 23)
-Origination and reversal of timing differences (88) (76)
-Changes in tax rates 412 115
-Adjustments in respect of prior periods 290 -
-Total Deferred Tax 614 39
-Total tax (credit)/charge (2,517) 3,179
+# CHELSEA FC PLC
+
+## NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+### FOR THE YEAR ENDED 30 JUNE 2021
+
+### 12 Taxation
+
+| | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
+| **Current Tax** | | |
+| Current tax on income/(loss) | (3,131) | 3,140 |
+| **Total Current Tax** | **(3,131)** | **3,140** |
+| **Deferred tax (see note 23)** | | |
+| Origination and reversal of timing differences | (88) | (76) |
+| Changes in tax rates | 412 | 115 |
+| Adjustments in respect of prior periods | 290 | - |
+| **Total Deferred Tax** | **614** | **39** |
+| **Total tax (credit)/charge** | **(2,517)** | **3,179** |
+
 The charge for the year can be reconciled to the profit/(loss) per the profit and loss account as follows:
-2021 2020
-£000 £000
-(Loss)/Profit on ordinary activities before taxation (155,939) 35,652
--Expected tax (credit)/charge based on the standard rate of corporation tax in
-the UK of 19% (2020: 19%) (29,628) 6,774
-Tax effect of expenses that are not deductible in determining taxable profit 42 512
-Adjustments in respect of prior periods (3,133) -
-Adjustments in respect of prior periods (deferred tax) 291 -
-Losses carried back 3,250 -
-Chargeable gains (14) 1,335 .
-Fixed asset differences 1,090 1,130
-Group relief - 398
-Remeasurement of recognised and unrecognised deferred tax for changes
-in tax rates (48,545) (14,284)
-Utilisation of previously unrecognised trading losses - (3,395)
-Deferred tax remeasurement not recognised 73,556 10,709
-Other permanent differences 574
-, Tax (income)/expense for the year (2,517) 3,179
-A potential deferred tax asset of £203,900,000 (2020: £129,701,000) has not been recognised due to
-uncertainty over future profits.
-; - 32 -
+
+| | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
+| (Loss)/Profit on ordinary activities before taxation | (155,939) | 35,652 |
+| Expected tax (credit)/charge based on the standard rate of corporation tax in the UK of 19% (2020: 19%) | (29,628) | 6,774 |
+| Tax effect of expenses that are not deductible in determining taxable profit | 42 | 512 |
+| Adjustments in respect of prior periods | (3,133) | - |
+| Adjustments in respect of prior periods (deferred tax) | 291 | - |
+| Losses carried back | 3,250 | - |
+| Chargeable gains | (14) | 1,335 |
+| Fixed asset differences | 1,090 | 1,130 |
+| Group relief | - | 398 |
+| Remeasurement of recognised and unrecognised deferred tax for changes in tax rates | (48,545) | (14,284) |
+| Utilisation of previously unrecognised trading losses | - | (3,395) |
+| Deferred tax remeasurement not recognised | 73,556 | 10,709 |
+| Other permanent differences | 574 | - |
+| **Tax (income)/expense for the year** | **(2,517)** | **3,179** |
+
+A potential deferred tax asset of £203,900,000 (2020: £129,701,000) has not been recognised due to uncertainty over future profits.
+
+\- 32 -
 
 --- pág. 36 ---
 
@@ -1597,13 +1608,15 @@ value, using a market rate of interest.
 
 --- pág. 41 ---
 
-o
-CHELSEA FC PLC
-NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
-FOR THE YEAR ENDED 30 JUNE 2021
-21 + Creditors: amounts falling due within one year
-| 21 Creditors: amounts falling due within one year | Group 2021 £000 | Group 2020 £000 | Company 2021 £000 | Company 2020 £000 |
-|---|---|---|---|---|
+# CHELSEA FC PLC
+
+## NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+### FOR THE YEAR ENDED 30 JUNE 2021
+
+### 21 Creditors: amounts falling due within one year
+
+| | Group<br>2021<br>£000 | Group<br>2020<br>£000 | Company<br>2021<br>£000 | Company<br>2020<br>£000 |
+| :--- | :---: | :---: | :---: | :---: |
 | Trade creditors | 104,521 | 101,884 | 7,743 | 2,752 |
 | Corporation tax | - | 3,133 | - | - |
 | Other taxation and social security | 30,613 | 26,132 | 30,613 | 26,132 |
@@ -1611,27 +1624,29 @@ FOR THE YEAR ENDED 30 JUNE 2021
 | Derivative financial instruments | - | - | - | - |
 | Amounts owed to parent undertaking | 29,550 | 46,578 | 40,194 | 46,578 |
 | Accruals and deferred income | 193,739 | 145,827 | 9,708 | 10,897 |
-|  | 362,399 | 328,402 | 88,746 | 86,899 |
-£40.1m (2020: £11.8m) of the accruals and deferred income balance represents season ticket sales for the
-2021/22 season.
-22 Creditors: amounts falling due after more than one year
-Group Company :
-2021 2020 2021 2020
-£000 £000 £000 £000
-Trade creditors 58,641 40,016 - -
-58,641 40,016 - -
-23 Deferred taxation
-Deferred tax assets and liabilities are offset where the Group or company has a legally enforceable right to do
-so. The following is the analysis of the deferred tax balances (after offset) for financial reporting purposes:
-Group Company
-Liabilities Liabilities Liabilities Liabilities
-2021 2020 2021 2020
-£000 £000 £000 £000
-Tax losses - - - -
-Other timing differences 660 739 - -
-Capital gains (2,289) (1,754) - -
-(1,629) (1,015) - -
-; - 38 -
+| | **362,399** | **328,402** | **88,746** | **86,899** |
+
+£40.1m (2020: £11.8m) of the accruals and deferred income balance represents season ticket sales for the 2021/22 season.
+
+### 22 Creditors: amounts falling due after more than one year
+
+| | Group<br>2021<br>£000 | Group<br>2020<br>£000 | Company<br>2021<br>£000 | Company<br>2020<br>£000 |
+| :--- | :---: | :---: | :---: | :---: |
+| Trade creditors | 58,641 | 40,016 | - | - |
+| | **58,641** | **40,016** | **-** | **-** |
+
+### 23 Deferred taxation
+
+Deferred tax assets and liabilities are offset where the Group or company has a legally enforceable right to do so. The following is the analysis of the deferred tax balances (after offset) for financial reporting purposes:
+
+| | Group<br>Liabilities<br>2021<br>£000 | Group<br>Liabilities<br>2020<br>£000 | Company<br>Liabilities<br>2021<br>£000 | Company<br>Liabilities<br>2020<br>£000 |
+| :--- | :---: | :---: | :---: | :---: |
+| Tax losses | - | - | - | - |
+| Other timing differences | 660 | 739 | - | - |
+| Capital gains | (2,289) | (1,754) | - | - |
+| | **(1,629)** | **(1,015)** | **-** | **-** |
+
+\- 38 -
 
 --- pág. 42 ---
 
@@ -1676,81 +1691,98 @@ would be payable by the company if certain conditions are met. The maximum amoun
 --- pág. 43 ---
 
 CHELSEA FC PLC
+
 NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
 FOR THE YEAR ENDED 30 JUNE 2021
-28 Operating lease commitments
-Lessee ;
-At the reporting end date the Group had outstanding commitments for future minimum lease payments under
-non-cancellable operating leases, which fall due as follows:
-Group Company
-2021 2020 2021 2020
-£000 £000 £000 £000
-Within one year 94 128 72 38
-Between two and five years 168 57 168 57
-262 185 240 95
-29 Capital commitments .
+
+---
+
+### 28 Operating lease commitments
+
+#### Lessee
+
+At the reporting end date the Group had outstanding commitments for future minimum lease payments under non-cancellable operating leases, which fall due as follows:
+
+| | Group 2021 £000 | Group 2020 £000 | Company 2021 £000 | Company 2020 £000 |
+| :--- | :---: | :---: | :---: | :---: |
+| Within one year | 94 | 128 | 72 | 38 |
+| Between two and five years | 168 | 57 | 168 | 57 |
+| | **262** | **185** | **240** | **95** |
+
+### 29 Capital commitments
+
 At 30 June 2021 the Group had capital commitments as follows:
-Group Company
-2021 2020 2021 2020
-£000 £000 £000 £000
-Contracted for but not provided in the financial statements:
-Acquisition of property, plant and equipment - - - -
-30 Events after the reporting date
-Since the year end the Group has acquired the registration of three football players at an initial cost of £109.7m
-and disposed of the registration of thirteen players at a profit of £103.7m.
-31 Related party transactions
-Remuneration of key management personnel
+
+| | Group 2021 £000 | Group 2020 £000 | Company 2021 £000 | Company 2020 £000 |
+| :--- | :---: | :---: | :---: | :---: |
+| Contracted for but not provided in the financial statements: | | | | |
+| Acquisition of property, plant and equipment | — | — | — | — |
+
+### 30 Events after the reporting date
+
+Since the year end the Group has acquired the registration of three football players at an initial cost of £109.7m and disposed of the registration of thirteen players at a profit of £103.7m.
+
+### 31 Related party transactions
+
+#### Remuneration of key management personnel
 The remuneration of key management personnel, who are also directors, is as follows:
-2021 2020
-£000 £000
-Aggregate compensation 3,152 2,608
--40 -
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| Aggregate compensation | 3,152 | 2,608 |
+
+---
+\- 40 -
 
 --- pág. 44 ---
 
-s
 CHELSEA FC PLC
+
 NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
-FOR THE YEAR ENDED 30 JUNE 2021 ;
-31 ~=—~Related party transactions (continued)
-Transactions with related parties
+
+FOR THE YEAR ENDED 30 JUNE 2021
+
+---
+
+### 31 Related party transactions (continued)
+
+#### Transactions with related parties
 During the year the Group entered into the following transactions with related parties:
-Income Expenditure
-2021 2020 2021 2020
-£000 £000 £000 £000
-Group
-Chelsea FC Foundation 973 5,647 408 480
-Nike Chelsea Merchandising Limited 349 380 237 -
-Chelsea Digital Ventures Limited 1,988 - 21 -
-3,310 6,027 666 480
-The Board considers that Chelsea FC Foundation and its subsidiaries are a related party of Chelsea FC plc by
-virtue of significant influence. For part of the year, Chelsea FC plc processed the Charity’s payroll. The Charity
-repays this amount in full but with no additional charge or mark up for the provision of this service.
-Mr G. Laurence, Mr J. Bonington and Mr R. Milham are all employees of Chelsea FC Plc, as well as serving as
-Directors of Nike Chelsea Merchandising Limited in the period.
-Mr E. Tenenbaum is a serving director of both Chelsea FC Plc and Chelsea Digital Ventures Limited and both
-entities have the same ultimate controlling party.
+
+| Group | Income 2021 £000 | Income 2020 £000 | Expenditure 2021 £000 | Expenditure 2020 £000 |
+| :--- | :---: | :---: | :---: | :---: |
+| Chelsea FC Foundation | 973 | 5,647 | 408 | 480 |
+| Nike Chelsea Merchandising Limited | 349 | 380 | 237 | - |
+| Chelsea Digital Ventures Limited | 1,988 | - | 21 | - |
+| | **3,310** | **6,027** | **666** | **480** |
+
+The Board considers that Chelsea FC Foundation and its subsidiaries are a related party of Chelsea FC plc by virtue of significant influence. For part of the year, Chelsea FC plc processed the Charity's payroll. The Charity repays this amount in full but with no additional charge or mark up for the provision of this service.
+
+Mr G. Laurence, Mr J. Bonington and Mr R. Milham are all employees of Chelsea FC Plc, as well as serving as Directors of Nike Chelsea Merchandising Limited in the period.
+
+Mr E. Tenenbaum is a serving director of both Chelsea FC Plc and Chelsea Digital Ventures Limited and both entities have the same ultimate controlling party.
+
 The following amounts were outstanding at the reporting end date:
-Amounts owed from/(to)
-: - related parties
-2021 2020
-£000 £000
-Group
-Chelsea FC Foundation 40 (157)
-Nike Chelsea Merchandising Limited 17 -
-Chelsea Digital Ventures Limited 694 -
+
+| Group | Amounts owed from/(to) related parties 2021 £000 | Amounts owed from/(to) related parties 2020 £000 |
+| :--- | :---: | :---: |
+| Chelsea FC Foundation | 40 | (157) |
+| Nike Chelsea Merchandising Limited | 17 | - |
+| Chelsea Digital Ventures Limited | 694 | - |
+
 No guarantees have been given or received.
-32 Controlling party
-The Directors consider Fordstam Limited to be the ultimate parent company of the Group, and the ultimate
-controlling party is Mr R Abramovich. The largest group of undertakings for which group accounts have been
-drawn up is that headed by Fordstam Limited.
-The consolidated accounts of this company and its parent company may be obtained from the Registrar of
-Companies, Companies House, Crown Way, Cardiff, CF 14 3UZ.
-: -41-
+
+### 32 Controlling party
+
+The Directors consider Fordstam Limited to be the ultimate parent company of the Group, and the ultimate controlling party is Mr R Abramovich. The largest group of undertakings for which group accounts have been drawn up is that headed by Fordstam Limited.
+
+The consolidated accounts of this company and its parent company may be obtained from the Registrar of Companies, Companies House, Crown Way, Cardiff, CF14 3UZ.
+
+---
+\- 41 -
 
 --- pág. 45 ---
-
-a
 
 CHELSEA FC PLC
 
@@ -1758,23 +1790,27 @@ NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
 
 FOR THE YEAR ENDED 30 JUNE 2021
 
-33 Cash used in group operations
+---
 
-2021 2020
-£000 £000
-(Loss)/Profit for the year after tax (153,422) 32,473
-Adjustments for:
-Taxation (credited)/charged (2,517) 3,179
-Finance costs 5,996 3,300
-Investment income (4,995) (7,971)
-Fair value losses on investment properties 35 100
-Amortisation and impairment of intangible assets 181,797 129,141
-Depreciation and impairment of tangible fixed assets 10,384 9,895
-Profit on disposal of player registrations (27,940) (142,645)
-Movements in working capital: ,
-(Increase)/decrease in stocks (84) 7
-Decrease/(increase) in debtors 4,123 (4,996)
-Increase(decrease) in creditors 56,503 (745)
-Cash generated from operations 69,880 21,738
--42-
+### 33 Cash used in group operations
+
+| | 2021 £000 | 2020 £000 |
+| :--- | :---: | :---: |
+| (Loss)/Profit for the year after tax | (153,422) | 32,473 |
+| **Adjustments for:** | | |
+| Taxation (credited)/charged | (2,517) | 3,179 |
+| Finance costs | 5,996 | 3,300 |
+| Investment income | (4,995) | (7,971) |
+| Fair value losses on investment properties | 35 | 100 |
+| Amortisation and impairment of intangible assets | 181,797 | 129,141 |
+| Depreciation and impairment of tangible fixed assets | 10,384 | 9,895 |
+| Profit on disposal of player registrations | (27,940) | (142,645) |
+| **Movements in working capital:** | | |
+| (Increase)/decrease in stocks | (84) | 7 |
+| Decrease/(increase) in debtors | 4,123 | (4,996) |
+| Increase(decrease) in creditors | 56,503 | (745) |
+| **Cash generated from operations** | **69,880** | **21,738** |
+
+---
+\- 42 -
 

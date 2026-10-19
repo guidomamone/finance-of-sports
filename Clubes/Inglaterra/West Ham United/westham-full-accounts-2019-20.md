@@ -1375,41 +1375,52 @@ There were no payments to directors for compensation for loss of office (2019: �
 
 --- pág. 34 ---
 
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2020
-(continued)
-5. Profit on Disposal of Players
-2020 2019
-. £000 _ £000
-Profit on sale of players 22,833 10,482
-Income from loan of players 2,100 2,171
-24,933 12,653 .
-6. Interest Receivable and Similar Income
-2020 2019 on
-£000 £000
-Bank and other interest-receivable 31 47
-7. Interest Payable and Similar Expenses
-2020 2019
-£000 £000
-Interest payable on secured.loans , 3,216 2,258
-Interest on loans from shareholders 1,930 1,911
-Other finance costs 19 18
-; 5,165 4,187
-8. Tax on Loss ,
-As at 31 May 2020 cumulative unrecognised tax losses available to carry forward against future trading profits were
-approximately £140,108,078 (2019: £84,533,400) subject to agreement with HM Revenue & Customs. Refer to note 19. :
-The tax assessed for the year is higher than (2019: higher than) the standard rate of corporation tax in the United
-Kingdom of 19.0% (2019: 19.0%).
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
+## NOTES TO THE FINANCIAL STATEMENTS
+### for the year ended 31 May 2020 (continued)
+
+### 5. Profit on Disposal of Players
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| Profit on sale of players | 22,833 | 10,482 |
+| Income from loan of players | 2,100 | 2,171 |
+| | **24,933** | **12,653** |
+
+### 6. Interest Receivable and Similar Income
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| Bank and other interest receivable | 31 | 47 |
+
+### 7. Interest Payable and Similar Expenses
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| Interest payable on secured loans | 3,216 | 2,258 |
+| Interest on loans from shareholders | 1,930 | 1,911 |
+| Other finance costs | 19 | 18 |
+| | **5,165** | **4,187** |
+
+### 8. Tax on Loss
+
+As at 31 May 2020 cumulative unrecognised tax losses available to carry forward against future trading profits were approximately £140,108,078 (2019: £84,533,400) subject to agreement with HM Revenue & Customs. Refer to note 19.
+
+The tax assessed for the year is higher than (2019: higher than) the standard rate of corporation tax in the United Kingdom of 19.0% (2019: 19.0%).
+
 Factors affecting the corporation tax charge for the year are explained below.
-. 2020 2019
-£000 £000
-‘Loss before taxation (64,744) (28,180)
-Tax charge @ 19.0% (2019: 19.00%) thereon (12,301) (5,354)
-Expenses not deductible/income not taxable for tax purposes 654 53
-Fixed asset timing differences 211 212
-Losses carried forward unrecognised 12,637 3,797
-Other timing differences (1,201) 367
-Corporation tax charge for year - (925)
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| Loss before taxation | (64,744) | (28,180) |
+| | | |
+| Tax charge @ 19.0% (2019: 19.00%) thereon | (12,301) | (5,354) |
+| Expenses not deductible/income not taxable for tax purposes | 654 | 53 |
+| Fixed asset timing differences | 211 | 212 |
+| Losses carried forward unrecognised | 12,637 | 3,797 |
+| Other timing differences | (1,201) | 367 |
+| **Corporation tax charge for year** | **-** | **(925)** |
+
 34
 
 --- pág. 35 ---
@@ -1544,42 +1555,47 @@ Amounts owed by group undertaking are interest free and repayable on demand. Pre
 
 --- pág. 38 ---
 
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2020
-(continued)
-14, Creditors (continued)
-- The amounts owed to the group undertakings £36,354,000 (2019: £36,354,000) and the parent company £32,235,000
-(2019:32,235,000) are repayable on demand and do not bear interest.
-The outstanding balance of the short-term bank loan of £64.1m consists of amounts owed to Rights and Media Funding
-Limited in respect of the annual facility (£63.5m) and the amount due on the Chadwell Heath development loan
-(£0.6m).The former was repaid in full on 3 August 2020. See note 28Both facilities with Rights and Media Funding
-Limited are secured by a fixed and floating charge on the assets of the Club.
-The balance held within Other Creditors and Season Tickets refundable include the value of monies due back to season
-ticket holders in respect of the five matches played: behind closed doors (2019: £nil).
-15. Total Borrowings:
-2020 2019
-£000 £000
-Debenture loans and subscriptions repayable after five years or more (note 16) 611 611
-, Secured loan repayable within one year 64,100 21,250
-Secured loan repayable after greater than one year 1,350 1,950
-Loans from Shareholders repayable. after greater than one year 44,000 45,000
-109,450 68,200
-The loans from shareholders repayable after greater than one year are unsecured, with interest accruing at 4.0% p.a. The
-interest accrued as at the balance sheet date amounts to £1.8m (2019: £1.9m).
-The repayment date for these shareholders loans is | January 2024.
-16. Debenture Loans and Subscriptions ,
-The balance of £611,000 (2019: £611,000) comprises both full and part payments towards the purchase of debentures
-under the Hammers Bond Scheme.in 1991-92, At 31 May 2020 and at 31 May 2019 the following applications had been
-received. . -
-; 2020 2019
-£000 £000 ,
-97 ‘A’ bonds 49 49
-641 ‘B’ bonds 481 481
-70 ‘C’ bonds 68 68
-Part payments 13 13
-611 611
-Under the terms and conditions of the scheme, the debentures are repayable at par after 150 years. The debentures are
-non- interest bearing and are unsecured.
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
+## NOTES TO THE FINANCIAL STATEMENTS
+### for the year ended 31 May 2020 (continued)
+
+### 14. Creditors (continued)
+
+The amounts owed to the group undertakings £36,354,000 (2019: £36,354,000) and the parent company £32,235,000 (2019: 32,235,000) are repayable on demand and do not bear interest.
+
+The outstanding balance of the short-term bank loan of £64.1m consists of amounts owed to Rights and Media Funding Limited in respect of the annual facility (£63.5m) and the amount due on the Chadwell Heath development loan (£0.6m).The former was repaid in full on 3 August 2020. See note 28Both facilities with Rights and Media Funding Limited are secured by a fixed and floating charge on the assets of the Club.
+
+The balance held within Other Creditors and Season Tickets refundable include the value of monies due back to season ticket holders in respect of the five matches played behind closed doors (2019: £nil).
+
+### 15. Total Borrowings
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| Debenture loans and subscriptions repayable after five years or more (note 16) | 611 | 611 |
+| | | |
+| Secured loan repayable within one year | 64,100 | 21,250 |
+| Secured loan repayable after greater than one year | 1,350 | 1,950 |
+| Loans from Shareholders repayable after greater than one year | 44,000 | 45,000 |
+| | **109,450** | **68,200** |
+
+The loans from shareholders repayable after greater than one year are unsecured, with interest accruing at 4.0% p.a. The interest accrued as at the balance sheet date amounts to £1.8m (2019: £1.9m).
+
+The repayment date for these shareholders loans is 1 January 2024.
+
+### 16. Debenture Loans and Subscriptions
+
+The balance of £611,000 (2019: £611,000) comprises both full and part payments towards the purchase of debentures under the Hammers Bond Scheme in 1991-92. At 31 May 2020 and at 31 May 2019 the following applications had been received.
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| 97 'A' bonds | 49 | 49 |
+| 641 'B' bonds | 481 | 481 |
+| 70 'C' bonds | 68 | 68 |
+| Part payments | 13 | 13 |
+| | **611** | **611** |
+
+Under the terms and conditions of the scheme, the debentures are repayable at par after 150 years. The debentures are non-interest bearing and are unsecured.
+
 38
 
 --- pág. 39 ---
@@ -1617,36 +1633,49 @@ probable to be paid. -
 
 --- pág. 40 ---
 
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2020
-(continued)
-‘19. Provisions for Liabilities — Deferred Taxation
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
+## NOTES TO THE FINANCIAL STATEMENTS
+### for the year ended 31 May 2020 (continued)
+
+### 19. Provisions for Liabilities – Deferred Taxation
+
 The amount of deferred taxation provided in the financial statements is as follows:
-2020 2019 ©
-£000 £000
-Fixed asset timing differences (563) (138)
-Other timing differences . Vdd 686
-Surplus on revaluation of properties (548) (548)
-Total deferred tax asset/(liability) :
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| Fixed asset timing differences | (563) | (138) |
+| Other timing differences | 1,111 | 686 |
+| Surplus on revaluation of properties | (548) | (548) |
+| **Total deferred tax asset/(liability)** | **-** | **-** |
+
 The amount of potential deferred taxation not provided in the financial statements is as follows:
-2020 2019
-£000 £000
-Unprovided deferred tax asset . 27,094 15,110
-20. Called up Share Capital
-2020 2019
-£000 £000
-Allotted and fully paid
-11,000 (2019: 11,000) ordinary shares of 50 pence each 5,500 5,500
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| Unprovided deferred tax asset | 27,094 | 15,110 |
+
+### 20. Called up Share Capital
+
+| Allotted and fully paid | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| 11,000 (2019: 11,000) ordinary shares of 50 pence each | 5,500 | 5,500 |
+
 Ordinary shares have full voting and dividend rights.
-21. Share Premium Account
-2020 2019 .
-£000 £000
-At start and end of the financial year 4,847 4,847
-22. Revaluation Reserve
-2020 2019 ,
-£000 £000
-At start and end of the financial year ; 319 319
+
+### 21. Share Premium Account
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| At start and end of the financial year | 4,847 | 4,847 |
+
+### 22. Revaluation Reserve
+
+| | 2020 £000 | 2019 £000 |
+| :--- | :---: | :---: |
+| At start and end of the financial year | 319 | 319 |
+
 The revaluation reserve arose on the revaluation of certain fixed assets (see note 11).
+
 40
 
 --- pág. 41 ---

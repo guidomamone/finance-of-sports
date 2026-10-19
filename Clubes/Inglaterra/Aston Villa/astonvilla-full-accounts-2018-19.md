@@ -697,30 +697,37 @@ provided.
 
 --- pág. 18 ---
 
-Aston Villa Football Club Limited
+**Aston Villa Football Club Limited**
+
 Registered number: 03375789
-Notes to the financial statements
-for the year ended 31 May 2019 (continued)
-3 Loss before taxation .
+
+**Notes to the financial statements**
+**for the year ended 31 May 2019 (continued)**
+
+### 3 Loss before taxation
+
 The loss before taxation has been arrived at after charging:
-2019 2018
-£ £
-Depreciation of owned tangible fixed assets 1,808,321 1,657,636
-Loss on disposal of tangible fixed assets 1,556,285 -
-Staff costs (note 4) 7,001,465 6,077,837
-Auditors’ remuneration for audit services 42,000 42,000
-Exceptional items — impairment of amounts due to the company 30,000,000 -
-relating to liabilities arising on promotion to the Premier League
-4 Staff costs
-2019 2018
-Number Number
-Average monthly number of employees by activity
-Directors 3 3
-Commercial, merchandising and operational 95 128
-Maintenance and administration 65 64
-Full time employees 163 195
-Part time employees on matchdays and other events 465 411
-Total employees 628 606
+
+| | 2019<br>£ | 2018<br>£ |
+| :--- | :---: | :---: |
+| Depreciation of owned tangible fixed assets | **1,808,321** | 1,657,636 |
+| Loss on disposal of tangible fixed assets | **1,556,285** | - |
+| Staff costs (note 4) | **7,001,465** | 6,077,837 |
+| Auditors' remuneration for audit services | **42,000** | 42,000 |
+| Exceptional items – impairment of amounts due to the company relating to liabilities arising on promotion to the Premier League | **30,000,000** | - |
+
+### 4 Staff costs
+
+| | 2019<br>Number | 2018<br>Number |
+| :--- | :---: | :---: |
+| **Average monthly number of employees by activity** | | |
+| Directors | **3** | 3 |
+| Commercial, merchandising and operational | **95** | 128 |
+| Maintenance and administration | **65** | 64 |
+| Full time employees | **163** | 195 |
+| Part time employees on matchdays and other events | **465** | 411 |
+| Total employees | **628** | 606 |
+
 16
 
 --- pág. 19 ---
