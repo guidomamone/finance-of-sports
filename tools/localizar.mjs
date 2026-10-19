@@ -37,6 +37,8 @@
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
+import vm from 'node:vm';
+import { clubDeRuta } from './carpetas-clubes.mjs';
 import { indiceBloques, ficha, textoDeBloque, VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { derivado } from './rutas.mjs';
 import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
@@ -80,10 +82,26 @@ NO elijas: balance (activo/pasivo), flujo de efectivo, evolución del patrimonio
 - Si para decidir necesitás ver un bloque entero, ponelo en necesito_ver (máximo 6) y no lo elijas todavía.
 - Lo que no puedas resolver con lo que ves, escribilo en dudas (una frase cada una): lo va a mirar una persona. No adivines. Cada duda: pregunta (UNA pregunta concreta que una persona contesta con sí o no mirando el PDF: qué tabla o fila, qué importe, qué se haría; ej. "¿Se deja afuera de la carga el cuadro 'Venta de jugadores al 31-12-2024' (L4070-L4072)?"), propuesta (sí o no: lo que harías vos), tema (uno de: usar-cuadro-por-segmento, cuadro-duplicado, cuadro-de-otro-anio, perimetro, escala, columna, fila-ilegible, otro), renglon (la etiqueta del renglón al que afecta, tal cual, o vacío), texto (por qué, una frase, con la línea si la hay), bloques (los ids que nombra) y afecta_carga: true SOLO si resolverla puede cambiar qué filas se cargan o un importe que se carga en más que el redondeo. NO son dudas (o van con afecta_carga false): una diferencia de 1 unidad impresa entre dos tablas (es redondeo), un total que el documento no imprime (se resuelve sumando), un cuadro de detalle de una fila que ya está en otra tabla.`;
 
+// (to-do 324 e, ok de Guido 2026-10-19) ENTIDAD DEL CLUB. Hay informes que traen los estados de varias entidades (FC Basel: el Verein, la FC Basel
+// 1893 AG y la Stadiondienst AG, uno tras otro). La IA elegía la primera tabla que veía y tomó la del Verein en 2006, 2010 y 2018 (ingresos de
+// 0,68 M, 1,1 M y 2,6 M en vez de 51 M, 57 M y 98 M). El pedido ahora dice el nombre legal con que el club está en el sitio (`name` de
+// data/clubs.js) y que, si hay estados separados de varias entidades, se elija el de esa. No cambia SYSTEM ni invalida lo guardado: solo
+// pesa en las localizaciones que se hacen (o se rehacen) de acá en adelante.
+let nombresClubes = null;
+function nombreLegalDe(pdf) {
+  const id = clubDeRuta(pdf).clubId; if (!id) return null;
+  if (!nombresClubes) {
+    const ctx = vm.createContext({ console: { log() {}, warn() {}, error() {} }, window: {} }); ctx.window.window = ctx.window;
+    vm.runInContext(readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8'), ctx, { filename: 'data/clubs.js' });
+    nombresClubes = vm.runInContext('clubs', ctx);
+  }
+  return nombresClubes[id]?.name || null;
+}
 function pedido(pdf, registro, sitio) {
   const e = registro.find((x) => x.pdf === pdf) || {};
   const cierre = ajusteDe(pdf, 'cierre')?.valor || e.periodo?.cierre || null; // (Versión 413) el ajuste manual `cierre` es el escalón 0
-  return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}` };
+  const entidad = nombreLegalDe(pdf);
+  return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}${entidad ? ` Entidad con la que el club está en el sitio: ${entidad}. Si el documento trae estados de resultados separados de VARIAS entidades (por ejemplo la sociedad que juega el fútbol, la asociación o club deportivo, el holding o la sociedad del estadio), elegí los de esa entidad y no los de las otras; la regla del consolidado y el individual de la misma entidad no cambia.` : ''}` };
 }
 
 // LAS NOTAS HACEN DE ESTADO (Versión 360, etapa 3, escalón 2, camino de error; diseño aprobado por Guido el 2026-10-02). Hay documentos que

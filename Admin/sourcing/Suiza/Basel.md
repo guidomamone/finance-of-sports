@@ -44,3 +44,35 @@ completo, pero real y auditada).
 - Último chequeo: 2026-09-17.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Suiza/Basel/geschaeftsbericht-unternehmen-2021.pdf` (sourceId `basel-ch-geschaeftsbericht-unternehmen-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2005 desde `Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf` (sourceId `basel-ch-geschaeftsbericht-2005`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2006 desde `Clubes/Suiza/Basel/geschaeftsbericht-2006.pdf` (sourceId `basel-ch-geschaeftsbericht-2006`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2007 desde `Clubes/Suiza/Basel/geschaeftsbericht-2007.pdf` (sourceId `basel-ch-geschaeftsbericht-2007`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2008 desde `Clubes/Suiza/Basel/geschaeftsbericht-2008.pdf` (sourceId `basel-ch-geschaeftsbericht-2008`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2009 desde `Clubes/Suiza/Basel/geschaeftsbericht-2009.pdf` (sourceId `basel-ch-geschaeftsbericht-2009`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2010 desde `Clubes/Suiza/Basel/geschaeftsbericht-2010.pdf` (sourceId `basel-ch-geschaeftsbericht-2010`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2011 desde `Clubes/Suiza/Basel/geschaeftsbericht-2011.pdf` (sourceId `basel-ch-geschaeftsbericht-2011`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2012 desde `Clubes/Suiza/Basel/geschaeftsbericht-2012.pdf` (sourceId `basel-ch-geschaeftsbericht-2012`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2013 desde `Clubes/Suiza/Basel/geschaeftsbericht-2013.pdf` (sourceId `basel-ch-geschaeftsbericht-2013`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2014 desde `Clubes/Suiza/Basel/geschaeftsbericht-2014.pdf` (sourceId `basel-ch-geschaeftsbericht-2014`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2015 desde `Clubes/Suiza/Basel/geschaeftsbericht-2015.pdf` (sourceId `basel-ch-geschaeftsbericht-2015`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2016 desde `Clubes/Suiza/Basel/geschaeftsbericht-2016.pdf` (sourceId `basel-ch-geschaeftsbericht-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2017 desde `Clubes/Suiza/Basel/geschaeftsbericht-2017.pdf` (sourceId `basel-ch-geschaeftsbericht-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2018 desde `Clubes/Suiza/Basel/geschaeftsbericht-2018.pdf` (sourceId `basel-ch-geschaeftsbericht-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2019 desde `Clubes/Suiza/Basel/geschaeftsbericht-2019.pdf` (sourceId `basel-ch-geschaeftsbericht-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Suiza/Basel/geschaeftsbericht-2020.pdf` (sourceId `basel-ch-geschaeftsbericht-2020`).

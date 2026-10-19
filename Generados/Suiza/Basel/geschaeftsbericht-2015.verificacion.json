@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2015.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2015.md",
- "generado": "2026-10-19T16:03:16.872Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:41:14.098Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2015,
  "escala": {
@@ -23,11 +23,7 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "913d4d3",
-  "843ff32",
-  "007661c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -50,27 +46,25 @@
    "dif": 3.314015728506092e-14
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2014 de este documento suma ingresos 105.25591; el sitio tiene 105.255909"
+  },
+  {
    "nombre": "documento del año 2016",
    "ok": true,
    "detalle": "ingresos de 2015: 92.488643 en este documento y 92.488643 en geschaeftsbericht-2016.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2014",
-   "ok": false,
-   "detalle": "ingresos de 2014: 210.51182 en geschaeftsbericht-2014.pdf y 105.25591 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2014: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
    "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+   "detalle": "ingresos de 2014: 105.25591 en geschaeftsbericht-2014.pdf y 105.25591 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L992) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel 1893\" (L1012) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnüberführung FC Basel Holding AG\" (L1013) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf",
   "duda de localizar que no afecta la carga: Tiene solo 3 importes en 11 filas y parece ser una distribución de empleados, no un desglose completo de importes."
  ],

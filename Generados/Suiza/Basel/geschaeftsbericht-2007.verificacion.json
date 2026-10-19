@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2007.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2007.md",
- "generado": "2026-10-19T16:03:16.346Z",
+ "generado": "2026-10-19T17:30:58.475Z",
  "estado": "ok",
  "clubId": "basel-ch",
  "year": 2007,
@@ -31,13 +31,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 1.2045919817182948e-14
-  },
-  {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2008",
@@ -46,8 +41,8 @@
   },
   {
    "nombre": "documento del año 2006",
-   "ok": false,
-   "detalle": "ingresos de 2006: 0.675549 en geschaeftsbericht-2006.pdf y 51.358822 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2006: 51.358822 en geschaeftsbericht-2006.pdf y 51.358822 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -61,9 +56,6 @@
   }
  ],
  "notas": [
-  "escalón \"subtotal repetido\": \"Total Ertrag\" (L385) es la suma de las filas de arriba (con su subtotal); se saltea",
-  "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
-  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf"
  ],
  "reintentar": null,
@@ -72,12 +64,12 @@
  "totales": {
   "ingresos": 48.9356,
   "gastos": 48.840477,
-  "financiero": 0.227864,
-  "impuesto": 0.0415,
+  "financiero": 0.072035,
+  "impuesto": -0.0415,
   "resultadoImpreso": 0.125658,
   "resultadoParaCargar": 0.125658,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -250,8 +242,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

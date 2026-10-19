@@ -1,24 +1,289 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2010.pdf",
- "generado": "2026-10-19T16:08:47.066Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-19T17:31:09.944Z",
+ "frena": [],
  "avisos": [
-  "perímetro: individual (ajuste manual del documento, 2026-10-19: El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado))"
+  "perímetro: individual (ajuste manual del documento, 2026-10-19: El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado))",
+  "gestión: ningún presidente confirmado cubre 2010 (cierre 2010-12-31); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "basel-ch",
+  "year": 2010,
+  "cierre": "2010-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "aus Meisterschaft",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 11.873271,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "aus Uefa-Spielen",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 7.125939,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "aus Cup-Spielen",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.750687,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "aus übrigen Spielen",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.432512,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Business Seats",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 5.50202,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Sponsoring, Werbung",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 7.36801,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transferertrag",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.230732,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "TV-Entschädigungen",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 1.619818,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandising, Licensing",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.627651,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Verbandseinnahmen",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 18.92552,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Einnahmen Leistungsfussball Nachwuchs",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.616168,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diverses",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.465073,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Personalaufwand",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -31.307154,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Organisationskosten Heimspiele",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -9.556646,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Übriger Spielbetrieb",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2.163038,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Transferaufwand",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -7.542999,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Werbung",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.276536,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Administration",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.291213,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abschreibungen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.041699,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Aufwand Leistungsfussball Nachwuchs",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -1.063926,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Übriger Aufwand",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.722769,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Verlustabdeckung FC Basel Holding AG",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": null,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl)"
+   },
+   {
+    "rawLabel": "Defizitgarantie FC Basel 1893",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.224397,
+    "disclosureLevel": "aggregated",
+    "_pag": null,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl)"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "CHF",
+   "fxRef": "CHF@2010-12-31",
+   "sourceId": "basel-ch-geschaeftsbericht-2010",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.193035,
+   "tax": 0.069044,
+   "extraRows": [
+    {
+     "label": "Finanzertrag",
+     "value": 0.345138
+    },
+    {
+     "label": "Finanzaufwand",
+     "value": -0.538173
+    },
+    {
+     "label": "Steuern",
+     "value": 0.069044
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 57.537401,
+   "officialTotalExpenses": 56.96598,
+   "officialPAT": 0.223033
+  },
+  "source": {
+   "id": "basel-ch-geschaeftsbericht-2010",
+   "clubId": "basel-ch",
+   "title": "FC Basel 1893 AG — geschaeftsbericht-2010 (ejercicio 2010)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2010.md",
  "reemplaza": false,
  "periodo": {
@@ -34,5 +299,506 @@
  },
  "clubId": "basel-ch",
  "year": 2010,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2010.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado)",
+   "evidencia": "revisión de subagente Sonnet, Claude 2026-10-19: .md geschaeftsbericht-2010, Erfolgsrechnung de la FC Basel 1893 AG",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 26,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "aus Meisterschaft",
+   "page": 19,
+   "native": 11.873271,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Matcheinnahmen\")",
+   "signoFijo": 11.873271,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.873271
+  },
+  {
+   "label": "aus Uefa-Spielen",
+   "page": 19,
+   "native": 7.125939,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Matcheinnahmen\")",
+   "signoFijo": 7.125939,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.125939
+  },
+  {
+   "label": "aus Cup-Spielen",
+   "page": 19,
+   "native": 0.750687,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Matcheinnahmen\")",
+   "signoFijo": 0.750687,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.750687
+  },
+  {
+   "label": "aus übrigen Spielen",
+   "page": 19,
+   "native": 0.432512,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Matcheinnahmen\")",
+   "signoFijo": 0.432512,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Aus übrigen Spielen' 47 434 (47’433.90) es la recaudación de otros partidos (amistosos, etc.) dentro de Matcheinnahmen (L667): entradas, no premio. Misma advertencia de doble conteo que Aus Cup Spielen. [Aus übrigen Spielen | 47’433.90 (L667)]",
+   "destino": "revenue",
+   "amountNative": 0.432512
+  },
+  {
+   "label": "Business Seats",
+   "page": 19,
+   "native": 5.50202,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.50202,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): El propio informe cuenta Business Seats como entradas: 'Erlös aus Ticketing' TCHF 13 089 = Matcheinnahmen 9 089 635 + Business Seats 3 999 364 = 13 088 999 (L431-L432, L869); los asientos business/VIP son venta de plazas en partido (VIP Saisonkarten, L780). Se sigue la clasificación del club: recaudación de entradas, no uso del estadio fuera de partido. [Business Seats 3’999’364 (L432); Erlöse aus Ticketing ... TCHF 13’089 (L869)]",
+   "destino": "revenue",
+   "amountNative": 5.50202
+  },
+  {
+   "label": "Sponsoring, Werbung",
+   "page": 19,
+   "native": 7.36801,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.36801,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.36801
+  },
+  {
+   "label": "Transferertrag",
+   "page": 19,
+   "native": 1.230732,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.230732,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.230732
+  },
+  {
+   "label": "TV-Entschädigungen",
+   "page": 19,
+   "native": 1.619818,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.619818,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.619818
+  },
+  {
+   "label": "Merchandising, Licensing",
+   "page": 19,
+   "native": 0.627651,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.627651,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.627651
+  },
+  {
+   "label": "Verbandseinnahmen",
+   "page": 19,
+   "native": 18.92552,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 18.92552,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Verbandseinnahmen 10 224 897 son pagos de UEFA por la fase de grupos de la Conference League (prima de arranque, ranking de 10 años, puntos, market pool, octavos como ganador de grupo), solidaridad UEFA y fair play financiero, más participaciones de las federaciones nacionales (seguridad, formación, fair play) y compensación por cesión de jugadores a la selección (L930). Es dinero de federación por participar, línea propia separada de la recaudación (como 'participación en torneos' de Alianza Lima): competition_bonus, no otros ingresos. Fila mixta: incluye también el TV de UEFA (L921) y piezas menores de la federación suiza, sin forma de separarlas. [Verbandseinnahmen | 10’224’897 (L439); Die Verbandseinnahmen setzen sich aus Zahlungen der UEFA ... zusammen (L930)]",
+   "destino": "revenue",
+   "amountNative": 18.92552
+  },
+  {
+   "label": "Einnahmen Leistungsfussball Nachwuchs",
+   "page": 19,
+   "native": 0.616168,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.616168,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.616168
+  },
+  {
+   "label": "Diverses",
+   "page": 19,
+   "native": 1.465073,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.465073,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.465073
+  },
+  {
+   "label": "Personalaufwand",
+   "page": 19,
+   "native": 31.307154,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 31.307154,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Personalaufwand 35 343 443 entero a wages_squad: cubre 1ª plantel (TCHF 22 012), administración (8 872) y amateur/juvenil (4 459), pero el estado no los separa en una línea y la regla pide ir entero cuando no se puede separar el plantel (L952-L958). Está neto de Kurzarbeitsentschädigung 332 638 (L572). [Personalaufwand | -35’343’443 (L455); Personalaufwand TCHF 35’343 (L952)]",
+   "destino": "expense",
+   "amountNative": -31.307154
+  },
+  {
+   "label": "Organisationskosten Heimspiele",
+   "page": 19,
+   "native": 9.556646,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 9.556646,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.556646
+  },
+  {
+   "label": "Übriger Spielbetrieb",
+   "page": 19,
+   "native": 2.163038,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.163038,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Übriger Spielbetrieb 3 389 036: campamentos de entrenamiento, viajes (vuelos, bus), hotel y comida, alquiler de instalaciones de entrenamiento, material de entrenamiento y médico, gastos y multas de federación (L1023). Es costo de participar en competencias: match_organisation_expense (viajes, concentración). Incluye material médico/entrenamiento, que no se puede separar. [Übriger Spielbetrieb | -3’389’036 (L457); Trainingslager, Reisekosten, Hotel- und Verpflegungskosten ... (L1023)]",
+   "destino": "expense",
+   "amountNative": -2.163038
+  },
+  {
+   "label": "Transferaufwand",
+   "page": 19,
+   "native": 7.542999,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.542999,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Transferaufwand 4 448 168 son costos de transferencia no capitalizados: comisiones a agentes, parte de clubes terceros y jugadores en transferencias realizadas, solidaridad FIFA, indemnizaciones de formación, alquileres de jugadores y scouting (L988). No es amortización (esa va aparte: Abschreibungen auf Transferrechte 3 991 999 y Sonder 5 386 974, L464-L465, también player_amortisation). Se sigue el criterio de 'Costo Transferencia de Jugadores' (Racing) a player_amortisation para que caiga en el bucket Compra de jugadores. Fila mixta: incluye scouting; la alternativa es other_expenses. [Transferaufwand | -4’448’168 (L458); Sie beinhalteten im Wesentlichen Kommissionen und Management Fees an Spieleragenten ... (L988)]",
+   "destino": "expense",
+   "amountNative": -7.542999
+  },
+  {
+   "label": "Werbung",
+   "page": 19,
+   "native": 2.276536,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.276536,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.276536
+  },
+  {
+   "label": "Administration",
+   "page": 19,
+   "native": 2.291213,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.291213,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.291213
+  },
+  {
+   "label": "Abschreibungen",
+   "page": 19,
+   "native": 0.041699,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.041699,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet): Abschreibungen de la AG = bienes de uso (baja de Sachanlagen); las amortizaciones de pases van en Transferaufwand",
+   "destino": "expense",
+   "amountNative": -0.041699
+  },
+  {
+   "label": "Aufwand Leistungsfussball Nachwuchs",
+   "page": 19,
+   "native": 1.063926,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.063926,
+   "cat": "youth_other_sports_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.063926
+  },
+  {
+   "label": "Übriger Aufwand",
+   "page": 19,
+   "native": 0.722769,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.722769,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.722769
+  },
+  {
+   "label": "Finanzertrag",
+   "page": null,
+   "native": 0.345138,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Finanzaufwand",
+   "page": null,
+   "native": -0.538173,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Verlustabdeckung FC Basel Holding AG",
+   "page": null,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (cobertura de pérdidas)",
+   "signoFijo": 0,
+   "cat": "exceptional_items",
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl)",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Defizitgarantie FC Basel 1893",
+   "page": null,
+   "native": 0.224397,
+   "ladoDoc": "expense",
+   "origen": "verificacion (cobertura de pérdidas)",
+   "signoFijo": 0.224397,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.224397
+  },
+  {
+   "label": "Steuern",
+   "page": null,
+   "native": 0.069044,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Matcheinnahmen\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo",
+   "verificacion (cobertura de pérdidas)": "gastos sin signo (se invierten)"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 57.537401,
+  "expSum": -56.96598,
+  "officialTotalRevenue": 57.537401,
+  "officialTotalExpenses": 56.96598,
+  "officialPAT": 0.223033,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.223033,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 57.537401
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 56.96598
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "CHF@2010-12-31",
+  "fx": 0.9369,
+  "source": "market_close",
+  "label": "Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2010-12-30, 2010-12-31 no es día hábil)"
+ },
+ "liga": {
+  "valor": "ch-superleague",
+  "fuente": "roster cacheado de \"2010–11 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia única por palabras \"FC Basel\" = \"Basel\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2010,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2010-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (29 de 31 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CHF",
+   "fuente": "moneda de curso legal de Suiza (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "CHF@2010-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.9369. --escribir agrega 'CHF@2010-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "basel-ch-geschaeftsbericht-2010",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "ch-superleague",
+   "fuente": "roster cacheado de \"2010–11 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia única por palabras \"FC Basel\" = \"Basel\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 12,
+  "lineasGasto": 11,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

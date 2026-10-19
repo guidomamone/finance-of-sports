@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2013.pdf",
   "club": "basel-ch",
   "year": 2013,
-  "generatedAt": "2026-10-19T16:03:16.695Z",
+  "generatedAt": "2026-10-19T17:09:40.109Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         12.625252
       ],
-      "glosa": "Ingresos por partidos de liga"
+      "glosa": "Por competición de liga"
     },
     {
       "label": "aus Champions-League / UEFA-Spielen",
@@ -24,7 +24,7 @@
       "values": [
         13.330867
       ],
-      "glosa": "Ingresos por partidos de Champions League / UEFA"
+      "glosa": "Por partidos de Champions League / UEFA"
     },
     {
       "label": "aus Cup-Spielen",
@@ -34,7 +34,7 @@
       "values": [
         0.782346
       ],
-      "glosa": "Ingresos por partidos de Copa"
+      "glosa": "Por partidos de Copa"
     },
     {
       "label": "aus übrigen Spielen",
@@ -44,7 +44,7 @@
       "values": [
         1.47614
       ],
-      "glosa": "Ingresos por otros partidos"
+      "glosa": "Por otros partidos"
     },
     {
       "label": "Business Seats",
@@ -54,7 +54,7 @@
       "values": [
         5.787549
       ],
-      "glosa": "Asientos VIP / Business Seats"
+      "glosa": "Localidades VIP / Business Seats"
     },
     {
       "label": "Sponsoring, Werbung",
@@ -84,7 +84,7 @@
       "values": [
         2.475866
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Ingresos por retransmisiones de televisión"
     },
     {
       "label": "Merchandising, Licensing",
@@ -114,7 +114,7 @@
       "values": [
         22.202232
       ],
-      "glosa": "Ingresos de federaciones"
+      "glosa": "Ingresos federativos"
     },
     {
       "label": "Einnahmen Leistungsfussball Nachwuchs",
@@ -124,7 +124,7 @@
       "values": [
         0.76162
       ],
-      "glosa": "Ingresos del fútbol formativo de alto rendimiento"
+      "glosa": "Ingresos por fútbol formativo / cantera"
     },
     {
       "label": "Diverses",
@@ -134,7 +134,7 @@
       "values": [
         1.820693
       ],
-      "glosa": "Otros ingresos diversos"
+      "glosa": "Varios"
     },
     {
       "label": "Personalaufwand",
@@ -164,7 +164,7 @@
       "values": [
         4.444237
       ],
-      "glosa": "Otros gastos de operaciones deportivas"
+      "glosa": "Otros gastos de competición"
     },
     {
       "label": "Transferaufwand",
@@ -184,7 +184,7 @@
       "values": [
         1.651669
       ],
-      "glosa": "Aprovisionamientos"
+      "glosa": "Coste de las mercancías vendidas"
     },
     {
       "label": "Werbung",
@@ -224,7 +224,7 @@
       "values": [
         0.750201
       ],
-      "glosa": "Gastos del fútbol formativo de alto rendimiento"
+      "glosa": "Gastos de fútbol formativo / cantera"
     },
     {
       "label": "Übriger Aufwand",
@@ -234,33 +234,13 @@
       "values": [
         1.019903
       ],
-      "glosa": "Otros gastos de explotación"
-    },
-    {
-      "label": "Defizitgarantie FC Basel 1893",
-      "lado": "expense",
-      "page": 25,
-      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 6)",
-      "values": [
-        0.261266
-      ],
-      "glosa": "Garantía de déficit FC Basel 1893"
-    },
-    {
-      "label": "Gewinnüberführung FC Basel Holding AG",
-      "lado": "expense",
-      "page": 25,
-      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 6)",
-      "values": [
-        0.985
-      ],
-      "glosa": "Transferencia de beneficios a FC Basel Holding AG"
+      "glosa": "Otros gastos"
     },
     {
       "label": "Ausserordentliche Aufwendungen",
       "lado": "expense",
       "page": 25,
-      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 6)",
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
       "values": [
         9.426685
       ],

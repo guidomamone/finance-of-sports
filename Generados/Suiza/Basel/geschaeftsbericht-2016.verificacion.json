@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2016.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2016.md",
- "generado": "2026-10-19T16:03:16.919Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:41:14.133Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2016,
  "escala": {
@@ -23,36 +23,32 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "e340863",
-  "f6e8cfa"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "132.291812 = 132.291812",
+   "suma": 132.29181150999997,
+   "impreso": 132.29181151
   },
   {
    "nombre": "total de gastos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "128.929591 = 128.929591",
+   "suma": 128.92959144,
+   "impreso": 128.92959144
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 1.2434497875801753e-14
-  },
-  {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+   "detalle": "cierra (como impresos)",
+   "dif": 2.3092638912203256e-14
   },
   {
    "nombre": "documento del año 2017",
-   "ok": false,
-   "detalle": "ingresos de 2016: 137.561812 en este documento y 132.291812 en geschaeftsbericht-2017.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2016: 132.291812 en este documento y 132.291812 en geschaeftsbericht-2017.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2015",
@@ -63,25 +59,32 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
-  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
-  "la lectura base no cerraba; cerró con la lectura 4",
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L715) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L992) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L992) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L992) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 137.561812,
+  "ingresos": 132.291812,
   "gastos": 128.929591,
-  "financiero": 1.798281,
-  "impuesto": 1.67252,
+  "financiero": 4.077808,
+  "impuesto": -1.67252,
   "resultadoImpreso": 5.767508,
   "resultadoParaCargar": 5.767508,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -197,14 +200,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Korrektur Gewinnüberführung FC Basel Holding AG",
-   "lado": "ingreso",
-   "M": 5.27,
-   "pagina": 35,
-   "linea": 992,
-   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
-  },
-  {
    "etiqueta": "Warenaufwand",
    "lado": "gasto",
    "M": 1.604061,
@@ -310,8 +305,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
@@ -323,6 +318,11 @@
    "etiqueta": "Finanzaufwand",
    "M": -1.495236,
    "linea": 990
+  },
+  {
+   "etiqueta": "Korrektur Gewinnüberführung FC Basel Holding AG",
+   "M": 5.27,
+   "linea": 992
   }
  ],
  "impuesto": [

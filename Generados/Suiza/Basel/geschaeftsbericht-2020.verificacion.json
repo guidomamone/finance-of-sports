@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2020.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2020.md",
- "generado": "2026-10-19T16:03:17.319Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:41:14.344Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2020,
  "escala": {
@@ -23,33 +23,27 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "7a1d986",
-  "aed0744",
-  "654fff0",
-  "0814f24"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+   "ok": true,
+   "detalle": "67.062421 = 67.062421",
+   "suma": 67.0624215,
+   "impreso": 67.0624215
   },
   {
    "nombre": "total de gastos",
-   "ok": null,
-   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+   "ok": true,
+   "detalle": "65.728074 = 65.728074",
+   "suma": 65.728074,
+   "impreso": 65.72807399999999
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 4.4200754167889045e-15
-  },
-  {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+   "detalle": "cierra (como impresos)",
+   "dif": 7.251144129583054e-15
   },
   {
    "nombre": "documento del año 2021",
@@ -58,18 +52,29 @@
   },
   {
    "nombre": "documento del año 2019",
-   "ok": false,
-   "detalle": "ingresos de 2019: 87.853363 en geschaeftsbericht-2019.pdf y 69.153363 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2019: 69.153363 en geschaeftsbericht-2019.pdf y 69.153363 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
-  "escalón \"nota exacta en la lectura 6\": \"Matcheinnahmen\" (L547) se abre en las 4 filas de su nota, que suman exacto el renglón",
-  "la lectura base no cerraba; cerró con la lectura 6",
+  "\"Gewinnübertrag FC Basel Holding AG\" (L473) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel Holding AG\" (L752) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel Holding AG\" (L586) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnübertrag FC Basel Holding AG\" (L587) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel Holding AG\" (L586) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnübertrag FC Basel Holding AG\" (L587) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel Holding AG\" (L586) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnübertrag FC Basel Holding AG\" (L587) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf",
   "duda de extraer que no afecta la carga: Son saldos patrimoniales, no desglose de ingresos o gastos; las amortizaciones coinciden con L577, L578 y L580."
  ],
@@ -78,13 +83,13 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 67.062421,
-  "gastos": 66.528074,
-  "financiero": 1.198914,
-  "impuesto": 0.015888,
+  "gastos": 65.728074,
+  "financiero": -1.269659,
+  "impuesto": -0.015888,
   "resultadoImpreso": 0.0488,
   "resultadoParaCargar": 0.0488,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -125,7 +130,7 @@
    "M": 3.603079,
    "pagina": 21,
    "linea": 548,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Sponsoring, Werbung",
@@ -133,7 +138,7 @@
    "M": 8.231108,
    "pagina": 21,
    "linea": 549,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Transferertrag",
@@ -141,7 +146,7 @@
    "M": 36.407553,
    "pagina": 21,
    "linea": 550,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "TV-Entschädigungen",
@@ -149,7 +154,7 @@
    "M": 3.162994,
    "pagina": 21,
    "linea": 551,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Merchandising, Licensing",
@@ -157,7 +162,7 @@
    "M": 1.337603,
    "pagina": 21,
    "linea": 552,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Catering",
@@ -165,7 +170,7 @@
    "M": 0.17815,
    "pagina": 21,
    "linea": 553,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Events Non-Matchday",
@@ -173,7 +178,7 @@
    "M": 0.863228,
    "pagina": 21,
    "linea": 554,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Verbandseinnahmen",
@@ -181,7 +186,7 @@
    "M": 5.764791,
    "pagina": 21,
    "linea": 555,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Einnahmen Leistungsfussball Nachwuchs",
@@ -189,7 +194,7 @@
    "M": 0.636432,
    "pagina": 21,
    "linea": 556,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Sonstiger Betriebsertrag",
@@ -197,7 +202,7 @@
    "M": 2.704649,
    "pagina": 21,
    "linea": 557,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Warenaufwand",
@@ -205,7 +210,7 @@
    "M": 0.61586,
    "pagina": 22,
    "linea": 567,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Personalaufwand",
@@ -213,7 +218,7 @@
    "M": 34.340215,
    "pagina": 22,
    "linea": 568,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Organisationskosten Heimspiele",
@@ -221,7 +226,7 @@
    "M": 7.979033,
    "pagina": 22,
    "linea": 569,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Übriger Spielbetrieb",
@@ -229,7 +234,7 @@
    "M": 2.616236,
    "pagina": 22,
    "linea": 570,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Transferaufwand",
@@ -237,7 +242,7 @@
    "M": 6.853394,
    "pagina": 22,
    "linea": 571,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Werbung",
@@ -245,7 +250,7 @@
    "M": 1.871344,
    "pagina": 22,
    "linea": 572,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Administration",
@@ -253,7 +258,7 @@
    "M": 4.560205,
    "pagina": 22,
    "linea": 573,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Aufwand Leistungsfussball Nachwuchs",
@@ -261,7 +266,7 @@
    "M": 0.774468,
    "pagina": 22,
    "linea": 574,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Defizitgarantie FC Basel 1893",
@@ -269,7 +274,7 @@
    "M": 0.251928,
    "pagina": 22,
    "linea": 575,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Übriger Aufwand",
@@ -277,7 +282,7 @@
    "M": 0.575264,
    "pagina": 22,
    "linea": 576,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Abschreibungen auf Transferrechte",
@@ -285,7 +290,7 @@
    "M": 0.542964,
    "pagina": 22,
    "linea": 577,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Sonderabschreibungen auf Ersatzbeschaffung",
@@ -293,7 +298,7 @@
    "M": 3.583721,
    "pagina": 22,
    "linea": 578,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Abschreibungen auf Sachanlagen",
@@ -301,7 +306,7 @@
    "M": 1.115999,
    "pagina": 22,
    "linea": 579,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Abschreibungen auf immaterielle Anlagen",
@@ -309,20 +314,12 @@
    "M": 0.047442,
    "pagina": 22,
    "linea": 580,
-   "origen": "estado (lectura 5: hoja)"
-  },
-  {
-   "etiqueta": "Gewinnübertrag FC Basel Holding AG",
-   "lado": "gasto",
-   "M": 0.8,
-   "pagina": 22,
-   "linea": 587,
-   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 6)"
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
@@ -334,6 +331,16 @@
    "etiqueta": "Finanzaufwand",
    "M": -0.834287,
    "linea": 584
+  },
+  {
+   "etiqueta": "Defizitgarantie FC Basel Holding AG",
+   "M": 0,
+   "linea": 586
+  },
+  {
+   "etiqueta": "Gewinnübertrag FC Basel Holding AG",
+   "M": -0.8,
+   "linea": 587
   }
  ],
  "impuesto": [

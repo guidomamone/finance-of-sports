@@ -467,7 +467,9 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
   if (!cons.length) {
     if (titulos.consolidado) { r.pasoA = 'dudoso'; r.motivo = `solo tablas individuales, pero hay ${titulos.consolidado} título(s) de estado consolidado sin tabla reconocida`; return r; }
     if (/consolidat/i.test(mdRel.split('/').pop())) { r.pasoA = 'dudoso'; r.motivo = 'solo tablas individuales o sin perímetro, pero el nombre del archivo dice consolidado'; return r; }
-    r.pasoA = 'solo-individual'; r.propuesta = 'individual'; r.motivo = `solo tablas individuales o sin perímetro (${ind.length}); ningún título de estado consolidado`; return r;
+    r.pasoA = 'solo-individual'; r.propuesta = 'individual'; r.motivo = `solo tablas individuales o sin perímetro (${ind.length}); ningún título de estado consolidado`;
+    r.sinTituloDePerimetro = !ind.some((t) => t.per === 'individual'); // (to-do 298 o2) ninguna tabla dice "individual": el "individual" es por descarte, no una señal
+    return r;
   }
   r.pasoA = 'los-dos';
   const tc = totalDe(cons); const ti = totalDe(ind.filter((t) => t.per === 'individual').length ? ind.filter((t) => t.per === 'individual') : ind);
@@ -518,6 +520,20 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
 //   ejecutar = false (ensayo): sin API ni escritura; dice qué fijaría, o que se decide al ejecutar.
 // faltaPerimetro(pdf): la compuerta (antes-de-localizar.mjs) dice que ese documento frena por perímetro; solo se miran esos clubes.
 // Devuelve, por club: { carpeta, valor (del club o null), porDocumento: [{ pdf, valor }], escrito, pendienteJev, detalle }.
+// (to-do 298 o2, ok de Guido 2026-10-19) LOS AÑOS YA CARGADOS TAMBIÉN SON EVIDENCIA. Burnley (lote 97): 2024 y 2025 están cargados como consolidado (Burnley FC Holdings) y el
+// documento 2022-23 trae una sola tabla de ingresos SIN título de perímetro; el paso A la daba por "individual" (por descarte) y fijó `individual` para todo el club. Ahora, si los
+// años cargados del club son consolidado (la heurística de perimetroHeredado(): al menos uno, y ninguno individual), un documento cuyo "solo individual" es por descarte (ninguna tabla lo dice) no vota,
+// Si hay un título que dice "individual", el documento vota individual como siempre.
+let _cargados = null;
+async function perimetroCargadoDe(carpeta) {
+  try {
+    const { clubDeCarpeta } = await import('./carpetas-clubes.mjs'); const { perimetroHeredado, cargarSitio } = await import('./cargar.mjs');
+    const [, pais, club] = carpeta.split('/'); const id = clubDeCarpeta(pais, club).clubId; if (!id) return null;
+    const sitio = (_cargados ??= cargarSitio()); if (!sitio.generic?.[id]) return null;
+    const her = perimetroHeredado(sitio, id); const anios = Object.entries(her.porAnio);
+    return anios.some(([, v]) => v === 'consolidado') && anios.every(([, v]) => v === 'consolidado' || v === '?') ? { perimetro: 'consolidado', anios: anios.map(([y]) => y) } : null; // algún año consolidado y ninguno individual ("?" = la nota nombra los dos: Burnley 2024)
+  } catch { return null; }
+}
 export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false, faltaPerimetro, descartados = new Set(), jev = ejecutar }) {
   const { ajustePerimetroDe, agregarAjuste } = await import('./ajustes.mjs');
   const carpeta = (pdf) => pdf.split('/').slice(0, 3).join('/') + '/';
@@ -531,10 +547,12 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
     // batch habrían estado todas): se espera a la ola siguiente.
     if (ejecutar && props.some(({ r }) => r.a2?.pendiente || r.a3?.pendiente)) { out.push({ carpeta: c, valor: null, porDocumento: [], pendienteJev: true, detalle: 'A2 o A3 pendiente de la Batch API: se decide en la ola siguiente' }); continue; }
     const porCierre = new Map(); const votos = new Map(); let pendJev = 0;
+    const cargado = await perimetroCargadoDe(c);
     for (const { e, r } of props) {
       const k = e.periodo?.cierre || e.md;
       const set = porCierre.get(k) || new Set();
-      if (r.pasoA === 'solo-individual') set.add('individual');
+      if (r.pasoA === 'solo-individual' && r.sinTituloDePerimetro && cargado) { /* sin título de perímetro y la serie cargada es consolidado: no vota (298 o2) */ }
+      else if (r.pasoA === 'solo-individual') set.add('individual');
       else if (r.pasoA === 'solo-consolidado') set.add('consolidado');
       else if (r.pasoA === 'los-dos' || r.pasoA === 'a2-los-dos') { set.add('individual'); set.add('consolidado'); if (r.propuesta) votos.set(e.md, r.propuesta); else if (r.c3?.voto === null) pendJev++; } // A3 sin respuesta guardada no cuenta: el ensayo lo da como frenado (conservador)
       else if (r.a2?.pendiente) pendJev++;

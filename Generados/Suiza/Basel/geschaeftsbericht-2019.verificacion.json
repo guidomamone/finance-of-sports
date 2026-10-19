@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2019.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2019.md",
- "generado": "2026-10-19T16:04:05.003Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:41:14.314Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2019,
  "escala": {
@@ -23,43 +23,37 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "252986a",
-  "6d671d2",
-  "6b8b0d6",
-  "bd4e9cb"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "69.153363 = 69.153363",
+   "suma": 69.15336259,
+   "impreso": 69.15336259
   },
   {
    "nombre": "total de gastos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "88.273854 = 88.273854",
+   "suma": 88.27385416,
+   "impreso": 88.27385416
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 4.107825191113079e-15
-  },
-  {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+   "detalle": "cierra (como impresos)",
+   "dif": 1.2212453270876722e-15
   },
   {
    "nombre": "documento del año 2020",
-   "ok": false,
-   "detalle": "ingresos de 2019: 87.853363 en este documento y 69.153363 en geschaeftsbericht-2020.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2019: 69.153363 en este documento y 69.153363 en geschaeftsbericht-2020.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2018",
-   "ok": false,
-   "detalle": "ingresos de 2018: 2.632976 en geschaeftsbericht-2018.pdf y 97.721166 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2018: 97.721166 en geschaeftsbericht-2018.pdf y 97.721166 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -69,28 +63,30 @@
   {
    "nombre": "primer año",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
-  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
-  "la lectura base no cerraba; cerró con la lectura 4",
+  "\"Defizitgarantie FC Basel Holding AG\" (L586) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnübertrag FC Basel Holding AG\" (L587) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel Holding AG\" (L752) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel Holding AG\" (L752) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel Holding AG\" (L752) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf",
-  "duda de extraer que no afecta la carga: L752 es una garantía de déficit de la holding presentada debajo del resultado operativo, fuera de 'Total Ertrag'; se clasificó como 'otro'.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L752 es una garantía de déficit de la holding presentada debajo del resultado operativo, fuera de 'Total Ertrag'; se clasificó como 'otro'."
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 87.853363,
+  "ingresos": 69.153363,
   "gastos": 88.273854,
-  "financiero": 1.857321,
-  "impuesto": 0.015838,
-  "resultadoImpreso": 0.761053,
-  "resultadoParaCargar": 0.761053,
+  "financiero": 18.375277,
+  "impuesto": -0.015838,
+  "resultadoImpreso": -0.761053,
+  "resultadoParaCargar": -0.761053,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -206,14 +202,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Defizitgarantie FC Basel Holding AG",
-   "lado": "ingreso",
-   "M": 18.7,
-   "pagina": 28,
-   "linea": 752,
-   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
-  },
-  {
    "etiqueta": "Warenaufwand",
    "lado": "gasto",
    "M": 1.60113,
@@ -327,8 +315,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
@@ -340,6 +328,11 @@
    "etiqueta": "Finanzaufwand",
    "M": -1.091022,
    "linea": 750
+  },
+  {
+   "etiqueta": "Defizitgarantie FC Basel Holding AG",
+   "M": 18.7,
+   "linea": 752
   }
  ],
  "impuesto": [
@@ -348,49 +341,5 @@
    "M": -0.015838,
    "linea": 754
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "7a65a4f84ab436e269ccd11c9d6351fe388f399c",
-  "rango": [
-   710,
-   758
-  ],
-  "lineasCargadas": [
-   888,
-   889,
-   890,
-   891,
-   714,
-   715,
-   716,
-   717,
-   718,
-   719,
-   720,
-   721,
-   722,
-   723,
-   752,
-   733,
-   734,
-   735,
-   736,
-   737,
-   738,
-   739,
-   740,
-   741,
-   742,
-   743,
-   744,
-   745,
-   746,
-   749,
-   750,
-   754
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 710 a 758 del .md):\nL710: | | 1.1. – 31.12.2019 CHF | 1.1. – 31.12.2018 CHF |\nL711: | --- | --- | --- |\nL712: | ERTRAG | | |\nL713: | Matcheinnahmen | 12’734’650.47 | 15’506’583.80 |\nL714: | Business Seats | 5’215’872.98 | 6’033’296.74 |\nL715: | Sponsoring, Werbung | 10’696’506.67 | 11’007’989.47 |\nL716: | Transferertrag | 17’251’523.73 | 51’703’792.10 |\nL717: | TV-Entschädigungen | 3’499’852.55 | 3’319’815.35 |\nL718: | Merchandising, Licensing | 2’314’448.31 | 2’298’736.86 |\nL719: | Catering | 803’935.80 | 796’758.20 |\nL720: | Events Non-Matchday | 1’225’984.15 | 1’363’017.75 |\nL721: | Verbandseinnahmen | 13’531’607.19 | 4’164’637.66 |\nL722: | Einnahmen Leistungsfussball Nachwuchs | 607’346.00 | 753’769.35 |\nL723: | Sonstiger Betriebsertrag | 1’271’634.74 | 772’768.98 |\nL724: | Total Ertrag | 69’153’362.59 | 97’721’166.26 |\nL726: 27\nL728: --- pág. 28 ---\nL730: | | 1.1. – 31.12.2019 CHF | 1.1. – 31.12.2018 CHF |\nL731: | --- | --- | --- |\nL732: | AUFWAND | | |\nL733: | Warenaufwand | – 1’601’130.09 | – 1’372’789.00 |\nL734: | Personalaufwand | – 48’134’061.22 | – 49’323’036.76 |\nL735: | Organisationskosten Heimspiele | – 12’168’904.03 | – 12’993’148.97 |\nL736: | Übriger Spielbetrieb | – 3’962’990.64 | – 3’921’066.27 |\nL737: | Transferaufwand | – 7’117’459.44 | – 10’927’850.63 |\nL738: | Werbung | – 4’296’636.06 | – 3’827’903.11 |\nL739: | Administration | – 4’794’109.55 | – 4’213’059.65 |\nL740: | Aufwand Leistungsfussball Nachwuchs | – 1’075’908.10 | – 1’237’797.94 |\nL741: | Defizitgarantie FC Basel 1893 | – 610’346.85 | – 925’845.75 |\nL742: | Übriger Aufwand | – 984’750.13 | – 817’925.45 |\nL743: | Abschreibungen auf Transferrechte | – 431’023.00 | – 4’415’853.52 |\nL744: | Sonderabschreibungen auf Ersatzbeschaffung | – 1’312’797.00 | – 1’178’791.98 |\nL745: | Abschreibungen auf Sachanlagen | – 1’771’894.51 | – 1’193’107.10 |\nL746: | Abschreibungen auf immaterielle Anlagen | – 11’843.54 | – 11’769.59 |\nL747: | Total Aufwand | – 88’273’854.16 | – 96’359’945.72 |\nL748: | Betriebsergebnis vor Zinsen, ausserordentlichen Posten und Steuern | – 19’120’491.57 | 1’361’220.54 |\nL749: | Finanzertrag | 766’298.98 | 719’370.09 |\nL750: | Finanzaufwand | – 1’091’022.33 | – 1’724’988.54 |\nL751: | Betriebsergebnis vor ausserordentlichen Posten und Steuern | – 19’445’214.92 | 355’602.09 |\nL752: | Defizitgarantie FC Basel Holding AG | 18’700’000.00 | 0.00 |\nL753: | Betriebsergebnis vor Steuern | – 745'214.92 | 355’602.09 |\nL754: | Steuern | – 15’837.65 | – 116’342.30 |\nL755: | Jahresverlust / Jahresgewinn | – 761’052.57 | 239’259.79 |\nL757: 28\n\nLO QUE SE CARGA:\n- ingreso · \"Aus Meisterschaft\" · 9.710507 · L888 (de una nota)\n- ingreso · \"Aus UEFA-Spielen\" · 2.327605 · L889 (de una nota)\n- ingreso · \"Aus Cup-Spielen\" · 0.571887 · L890 (de una nota)\n- ingreso · \"Aus übrigen Spielen\" · 0.124652 · L891 (de una nota)\n- ingreso · \"Business Seats\" · 5.215873 · L714\n- ingreso · \"Sponsoring, Werbung\" · 10.696507 · L715\n- ingreso · \"Transferertrag\" · 17.251524 · L716\n- ingreso · \"TV-Entschädigungen\" · 3.499853 · L717\n- ingreso · \"Merchandising, Licensing\" · 2.314448 · L718\n- ingreso · \"Catering\" · 0.803936 · L719\n- ingreso · \"Events Non-Matchday\" · 1.225984 · L720\n- ingreso · \"Verbandseinnahmen\" · 13.531607 · L721\n- ingreso · \"Einnahmen Leistungsfussball Nachwuchs\" · 0.607346 · L722\n- ingreso · \"Sonstiger Betriebsertrag\" · 1.271635 · L723\n- ingreso · \"Defizitgarantie FC Basel Holding AG\" · 18.7 · L752\n- gasto · \"Warenaufwand\" · 1.60113 · L733\n- gasto · \"Personalaufwand\" · 48.134061 · L734\n- gasto · \"Organisationskosten Heimspiele\" · 12.168904 · L735\n- gasto · \"Übriger Spielbetrieb\" · 3.962991 · L736\n- gasto · \"Transferaufwand\" · 7.117459 · L737\n- gasto · \"Werbung\" · 4.296636 · L738\n- gasto · \"Administration\" · 4.79411 · L739\n- gasto · \"Aufwand Leistungsfussball Nachwuchs\" · 1.075908 · L740\n- gasto · \"Defizitgarantie FC Basel 1893\" · 0.610347 · L741\n- gasto · \"Übriger Aufwand\" · 0.98475 · L742\n- gasto · \"Abschreibungen auf Transferrechte\" · 0.431023 · L743\n- gasto · \"Sonderabschreibungen auf Ersatzbeschaffung\" · 1.312797 · L744\n- gasto · \"Abschreibungen auf Sachanlagen\" · 1.771895 · L745\n- gasto · \"Abschreibungen auf immaterielle Anlagen\" · 0.011844 · L746\n- financiero · \"Finanzertrag\" · 0.766299 · L749\n- financiero · \"Finanzaufwand\" · -1.091022 · L750\n- impuesto · \"Steuern\" · -0.015838 · L754"
- }
+ ]
 }

@@ -3,7 +3,7 @@
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2018.md",
  "mdSha1": "89760749b2e9c153f259bc7a0826741dba48af7d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:50:16.812Z",
+ "generado": "2026-10-19T16:46:05.280Z",
  "perimetroClub": "individual",
  "bloques": {
   "b1": {
@@ -513,32 +513,32 @@
  },
  "sin_estado": false,
  "estado": [
-  "b8"
+  "b15",
+  "b16"
  ],
- "notas_ingresos": [],
+ "notas_ingresos": [
+  "b21"
+ ],
  "notas_gastos": [],
  "escala": "unidades",
- "escala_evidencia": "Encabezado de columnas '1.1.–31.12.2018 CHF' con importes en francos con centavos",
+ "escala_evidencia": "Encabezado de columnas '1.1. – 31.12.2018 CHF' con importes en francos con centavos (ej. 15’506’583.80)",
  "moneda": "CHF",
- "columna_ejercicio": "1.1.–31.12.2018 CHF",
- "columna_anterior": "1.1.–31.12.2017 CHF",
+ "columna_ejercicio": "1.1. – 31.12.2018 CHF",
+ "columna_anterior": "1.1. – 31.12.2017 CHF",
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga como estado del club la Erfolgsrechnung del FC Basel 1893 (Verein) en b8, dejando afuera la de la FC Basel 1893 AG (b15-b16)?",
+   "pregunta": "¿Se cargan del bloque b21 solo las filas de 'Matcheinnahmen' (Aus Meisterschaft, Aus UEFA-Spielen, Aus Cup-Spielen, Aus übrigen Spielen) como desglose de ingresos, dejando afuera el resto (inventario, activos, Rechnungsabgrenzung)?",
    "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "El documento trae cuentas separadas del Verein (b8, pág. 12), de la FC Basel 1893 AG (b15-b16, pág. 15-16) y de la Stadiondienst AG (b38); no hay consolidado y la entidad cargada en años anteriores no se identifica en el índice.",
+   "tema": "otro",
+   "renglon": "Matcheinnahmen",
+   "texto": "b21 mezcla notas de balance con el desglose de Matcheinnahmen del estado de resultados de la AG.",
    "bloques": [
-    "b8",
-    "b15",
-    "b16",
-    "b38"
+    "b21"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "No hay estado consolidado. b8 = Erfolgsrechnung del FC Basel 1893 (Verein), elegido por perímetro individual. b15+b16 = Erfolgsrechnung de la FC Basel 1893 AG (sociedad operativa del fútbol profesional); b21 contiene el desglose de Matcheinnahmen de la AG (no del Verein). b38 = Stadiondienst AG. Si la persona confirma que lo cargado es la AG, usar estado b15+b16 y nota de ingresos b21 (sección Matcheinnahmen)."
+ "observaciones": "El documento trae cuentas de tres entidades: FC Basel 1893 (Verein) b6-b8, FC Basel 1893 AG b12-b16 y Stadiondienst AG b36-b38. Se elige la AG (entidad del sitio), estado individual: b15 (Ertrag) continúa en b16 (Aufwand hasta Jahresgewinn). Los encabezados de b14 son de balance pese a decir 1.1.–31.12. No hay consolidado. b30 (gráfico histórico de Umsatzerlöse en TCHF) no se usa."
 }

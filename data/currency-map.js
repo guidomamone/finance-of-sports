@@ -218,6 +218,22 @@ const FX_CLOSE = {
   'GBP@2021-06-30': { fx: 0.723641, source: 'market_close', label: 'Tipo spot del Bank of England al 2021-06-30' },
   'GBP@2020-05-31': { fx: 0.808538, source: 'market_close', label: 'Tipo spot del Bank of England, última rueda hábil antes del cierre (2020-05-29, 2020-05-31 no es día hábil)' },
   'GBP@2020-06-30': { fx: 0.809127, source: 'market_close', label: 'Tipo spot del Bank of England al 2020-06-30' },
+  'CHF@2005-12-31': { fx: 1.3148, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2005-12-30, 2005-12-31 no es día hábil)' },
+  'CHF@2006-12-31': { fx: 1.2195, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2006-12-29, 2006-12-31 no es día hábil)' },
+  'CHF@2007-12-31': { fx: 1.1329, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2007-12-31' },
+  'CHF@2008-12-31': { fx: 1.0673, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2008-12-31' },
+  'CHF@2009-12-31': { fx: 1.0358, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2009-12-31' },
+  'CHF@2010-12-31': { fx: 0.9369, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2010-12-30, 2010-12-31 no es día hábil)' },
+  'CHF@2011-12-31': { fx: 0.9374, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2011-12-30, 2011-12-31 no es día hábil)' },
+  'CHF@2012-12-31': { fx: 0.9155, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2012-12-31' },
+  'CHF@2013-12-31': { fx: 0.8904, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2013-12-31' },
+  'CHF@2014-12-31': { fx: 0.9934, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2014-12-31' },
+  'CHF@2015-12-31': { fx: 1.0017, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2015-12-31' },
+  'CHF@2016-12-31': { fx: 1.016, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2016-12-30, 2016-12-31 no es día hábil)' },
+  'CHF@2017-12-31': { fx: 0.9738, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2017-12-29, 2017-12-31 no es día hábil)' },
+  'CHF@2018-12-31': { fx: 0.9832, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2018-12-31' },
+  'CHF@2019-12-31': { fx: 0.9677, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2019-12-31' },
+  'CHF@2020-12-31': { fx: 0.8841, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2020-12-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2012.pdf",
   "club": "basel-ch",
   "year": 2012,
-  "generatedAt": "2026-10-19T15:34:57.143Z",
+  "generatedAt": "2026-10-19T17:09:40.034Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         12.453919
       ],
-      "glosa": "Por partidos de liga"
+      "glosa": "Ingresos por partidos de liga"
     },
     {
       "label": "aus UEFA-Spielen",
@@ -24,7 +24,7 @@
       "values": [
         5.656269
       ],
-      "glosa": "Por partidos de la UEFA"
+      "glosa": "Ingresos por partidos de la UEFA"
     },
     {
       "label": "aus Cup-Spielen",
@@ -34,7 +34,7 @@
       "values": [
         1.015088
       ],
-      "glosa": "Por partidos de copa"
+      "glosa": "Ingresos por partidos de copa"
     },
     {
       "label": "aus übrigen Spielen",
@@ -44,7 +44,7 @@
       "values": [
         0.019512
       ],
-      "glosa": "Por otros partidos"
+      "glosa": "Ingresos por otros partidos"
     },
     {
       "label": "Business Seats",
@@ -54,7 +54,7 @@
       "values": [
         5.541919
       ],
-      "glosa": "Asientos VIP"
+      "glosa": "Asientos business"
     },
     {
       "label": "Sponsoring, Werbung",
@@ -114,7 +114,7 @@
       "values": [
         0.699012
       ],
-      "glosa": "Ingresos por fútbol formativo de alto rendimiento"
+      "glosa": "Ingresos por fútbol formativo de élite"
     },
     {
       "label": "Diverses",
@@ -124,17 +124,7 @@
       "values": [
         1.51799
       ],
-      "glosa": "Otros ingresos"
-    },
-    {
-      "label": "Total Ertrag",
-      "lado": "revenue",
-      "page": 23,
-      "section": "estado",
-      "values": [
-        80.037417
-      ],
-      "glosa": "Total de ingresos"
+      "glosa": "Ingresos diversos"
     },
     {
       "label": "Personalaufwand",
@@ -164,7 +154,7 @@
       "values": [
         3.553472
       ],
-      "glosa": "Otros gastos de partidos y competiciones"
+      "glosa": "Otros gastos operativos de partidos"
     },
     {
       "label": "Transferaufwand",
@@ -184,7 +174,7 @@
       "values": [
         2.355266
       ],
-      "glosa": "Consumo de mercancías"
+      "glosa": "Consumo de mercaderías"
     },
     {
       "label": "Werbung",
@@ -204,7 +194,7 @@
       "values": [
         2.752404
       ],
-      "glosa": "Administración"
+      "glosa": "Gastos de administración"
     },
     {
       "label": "Abschreibungen",
@@ -224,7 +214,7 @@
       "values": [
         0.240139
       ],
-      "glosa": "Gastos por fútbol formativo de alto rendimiento"
+      "glosa": "Gastos por fútbol formativo de élite"
     },
     {
       "label": "Übriger Aufwand",

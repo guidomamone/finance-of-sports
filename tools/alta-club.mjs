@@ -1308,13 +1308,15 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
   const q = norm(nombre).replace(/[^a-z0-9]+/g, ' ').trim();
   const exactos = []; const parciales = [];
   // QUÉ TEMPORADA (Versión 315): la caché guarda una temporada partida ("2020–21") bajo el año en que TERMINA. La regla del sitio es "la
-  // categoría al CIERRE del ejercicio" (data/club-leagues.js, decisión de Guido, Versión 132): un ejercicio que cierra entre julio y
-  // diciembre en una liga partida está jugando la temporada que empezó ese año -> clave anio + 1. Antes se buscaba siempre `anio` y a un
+  // categoría al CIERRE del ejercicio" (data/club-leagues.js, decisión de Guido, Versión 132): un ejercicio que cierra entre septiembre y
+  // diciembre en una liga partida está jugando la temporada que empezó ese año -> clave anio + 1. (to-do 298 n2, ok de Guido 2026-10-19) Era "entre julio y diciembre": julio y agosto
+  // son el FIN de la temporada (Burnley cierra el 31/7), como en faltantes-liga, estadio-sponsor, listas-lote y ligas-sin-verificar (mes >= 9). Con >= 7 la liga salía de la temporada
+  // siguiente y estadio-sponsor la usaba con la anterior (Burnley 2022 "2021–22 EFL Championship", 2023 "2022–23 Premier League"). Medido: las 8 filas cargadas que cierran en jul-ago coinciden con >= 9. Antes se buscaba siempre `anio` y a un
   // club que cierra en diciembre (Atalanta 2020, Sassuolo 2021, Genoa 2022, Thun 2019, los rusos) le tocaba la temporada ANTERIOR.
   const mesCierre = cierre ? Number(String(cierre).slice(5, 7)) : null;
   const temporadaDe = (years) => {
     const partida = Object.values(years).some((e) => /\d{4}\s*[–\-\/]\s*\d{2,4}/.test(String(e.wikipediaPage || '')));
-    return partida && mesCierre && mesCierre >= 7 ? String(Number(anio) + 1) : String(anio);
+    return partida && mesCierre && mesCierre >= 9 ? String(Number(anio) + 1) : String(anio);
   };
   const sinGen = (x) => x.split(' ').filter((t) => t && !GENERICAS.has(t));
   for (const [leagueId, years] of Object.entries(data.leagues || {})) {

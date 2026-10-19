@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf",
   "club": "basel-ch",
   "year": 2005,
-  "generatedAt": "2026-10-19T15:34:56.067Z",
+  "generatedAt": "2026-10-19T17:09:39.743Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         10.830075
       ],
-      "glosa": "*de Liga*"
+      "glosa": "*de la liga*"
     },
     {
       "label": "*aus Champions-League / UEFA-Cup*",
@@ -24,7 +24,7 @@
       "values": [
         4.973398
       ],
-      "glosa": "*de Champions League / Copa de la UEFA*"
+      "glosa": "*de Liga de Campeones / Copa de la UEFA*"
     },
     {
       "label": "*aus Cup-Spielen*",
@@ -84,7 +84,7 @@
       "values": [
         0.888822
       ],
-      "glosa": "Ingresos por cesiones y compensaciones por formación"
+      "glosa": "Ingresos por cesiones e indemnizaciones por formación"
     },
     {
       "label": "Mitglieder",
@@ -94,7 +94,7 @@
       "values": [
         0.451475
       ],
-      "glosa": "Cuotas de socios"
+      "glosa": "Socios"
     },
     {
       "label": "Verbandseinnahmen",
@@ -104,7 +104,7 @@
       "values": [
         0.333841
       ],
-      "glosa": "Ingresos de la federación"
+      "glosa": "Ingresos federativos"
     },
     {
       "label": "Diverses",
@@ -114,17 +114,7 @@
       "values": [
         7.501273
       ],
-      "glosa": "Diversos"
-    },
-    {
-      "label": "**Total Ertrag**",
-      "lado": "revenue",
-      "page": 13,
-      "section": "estado",
-      "values": [
-        38.217415
-      ],
-      "glosa": "**Total ingresos**"
+      "glosa": "Varios"
     },
     {
       "label": "Personalaufwand",
@@ -144,7 +134,7 @@
       "values": [
         7.835065
       ],
-      "glosa": "Gastos de organización de partidos en casa"
+      "glosa": "Costes de organización de partidos en casa"
     },
     {
       "label": "Übriger Spielbetrieb",
@@ -154,7 +144,7 @@
       "values": [
         1.847381
       ],
-      "glosa": "Otros gastos de la actividad deportiva"
+      "glosa": "Otros gastos de operaciones de partidos"
     },
     {
       "label": "Leihaufwand, Ausbildungsentschädigungen",
@@ -164,7 +154,7 @@
       "values": [
         0.09487
       ],
-      "glosa": "Gastos por cesiones y compensaciones por formación"
+      "glosa": "Gastos por cesiones e indemnizaciones por formación"
     },
     {
       "label": "Werbung",

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2017.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2017.md",
- "generado": "2026-10-19T16:03:17.040Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:41:14.251Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2017,
  "escala": {
@@ -23,14 +23,7 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "ac9e28f",
-  "a7b896e",
-  "873329e",
-  "9a91a84",
-  "aad4592",
-  "af252d1"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -42,31 +35,48 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "\"Total Aufwand\" 88.740247 cierra; además se suman 13 línea(s) fuera de ese total (94.602022)"
+   "detalle": "88.740247 = 88.740247",
+   "suma": 88.74024662000002,
+   "impreso": 88.74024662000001
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 88.486213 - gastos 183.342269 ± financiero 3.35648 ± impuesto 0.157905 no da el impreso 0.578371",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.108624468950438e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2018",
-   "ok": false,
-   "detalle": "ingresos de 2017: 88.486213 en este documento y 1.344555 en geschaeftsbericht-2018.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2017: 88.486213 en este documento y 88.486213 en geschaeftsbericht-2018.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2016",
-   "ok": false,
-   "detalle": "ingresos de 2016: 137.561812 en geschaeftsbericht-2016.pdf y 132.291812 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2016: 132.291812 en geschaeftsbericht-2016.pdf y 132.291812 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L992) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L715) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L715) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L715) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf",
   "duda de extraer que no afecta la carga: L708 aparece sin signo negativo y compensa exactamente L707; cuadra con el Total Aufwand, por lo que parece una reversión real."
  ],
@@ -75,13 +85,13 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 88.486213,
-  "gastos": 183.342269,
-  "financiero": 3.35648,
-  "impuesto": 0.157905,
+  "gastos": 88.740247,
+  "financiero": 0.99031,
+  "impuesto": -0.157905,
   "resultadoImpreso": 0.578371,
   "resultadoParaCargar": 0.578371,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -287,10 +297,10 @@
   {
    "etiqueta": "Sonderabschreibungen auf Ersatzbeschaffung",
    "lado": "gasto",
-   "M": 2.930888,
+   "M": -2.930888,
    "pagina": 16,
    "linea": 708,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Abschreibungen auf Sachanlagen",
@@ -298,14 +308,6 @@
    "M": 1.210997,
    "pagina": 16,
    "linea": 709,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Total Aufwand",
-   "lado": "gasto",
-   "M": 88.740247,
-   "pagina": 16,
-   "linea": 710,
    "origen": "estado"
   }
  ],
@@ -321,14 +323,19 @@
   },
   {
    "etiqueta": "Finanzaufwand",
-   "M": 1.183085,
+   "M": -1.183085,
    "linea": 713
+  },
+  {
+   "etiqueta": "Korrektur Gewinnüberführung FC Basel Holding AG",
+   "M": 0,
+   "linea": 715
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Steuern",
-   "M": 0.157905,
+   "M": -0.157905,
    "linea": 717
   }
  ]

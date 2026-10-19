@@ -678,7 +678,11 @@ export const FIN_INGRESO_RE = compilar(T('FIN_INGRESO'));
 export const FIN_GASTO_RE = compilar(T('FIN_GASTO'));
 // (to-do 298 ah) Cobertura de pérdidas de un socio o del holding: no es un ingreso operativo. La usan verificar.mjs (cuenta en el resultado, fuera de
 // ingresos y gastos) y cargar.mjs (la carga como exceptional_items, una ganancia dentro de los gastos, como la venta del 20% de Goiás 2023).
-export const COBERTURA_PERDIDAS_RE = /verlustabdeckung|verlustübernahme|verlustuebernahme|verlustausgleich|cobertura de p[eé]rdidas|cobertura de pr[eé]juízo|copertura (delle )?perdite/i;
+// (to-do 324 e, ok de Guido 2026-10-19) Se amplía a las transferencias entre la sociedad del club y su holding o su asociación, que el informe de
+// FC Basel imprime SIN LADO debajo del resultado operativo: la garantía de déficit (Defizitgarantie, de la Holding a la AG o de la AG al Verein) y la
+// transferencia de ganancia (Gewinnüberführung/-übertrag/-abführung, también su "Korrektur"). Solo actúan sobre filas sin lado: una Defizitgarantie
+// que el documento cuenta DENTRO de Total Aufwand (Basel 2015 y 2019) ya viene como gasto y no se toca.
+export const COBERTURA_PERDIDAS_RE = /verlustabdeckung|verlustübernahme|verlustuebernahme|verlustausgleich|defizitgarantie|gewinn(ü|ue)ber(führung|fuehrung|trag)|gewinnabführung|gewinnabfuehrung|cobertura de p[eé]rdidas|cobertura de pr[eé]juízo|copertura (delle )?perdite/i;
 export const DE_LOS_CUALES_RE = compilar(T('DE_LOS_CUALES'), 'inicio');
 export const TOTAL_RE = new RegExp(`${TOTAL_INICIO_RE.source}|${TOTAL_FIN_RE.source}`, 'u');
 export const esTotal = (etiqueta) => TOTAL_RE.test(normalizar(etiqueta));

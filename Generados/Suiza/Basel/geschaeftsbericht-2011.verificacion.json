@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2011.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2011.md",
- "generado": "2026-10-19T15:46:48.544Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:30:58.713Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2011,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "42e0227",
-  "43a77ef"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,19 +35,14 @@
    "dif": 1.2434497875801753e-14
   },
   {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
-  },
-  {
    "nombre": "documento del año 2012",
-   "ok": false,
-   "detalle": "ingresos de 2011: 67.64085 en este documento y 135.2817 en geschaeftsbericht-2012.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2011: 67.64085 en este documento y 67.64085 en geschaeftsbericht-2012.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2010",
-   "ok": false,
-   "detalle": "ingresos de 2010: 0.917147 en geschaeftsbericht-2010.pdf y 57.537401 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2010: 57.537401 en geschaeftsbericht-2010.pdf y 57.537401 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -64,9 +56,12 @@
   }
  ],
  "notas": [
-  "escalón \"subtotal repetido\": \"Total Ertrag\" (L560) es la suma de las filas de arriba (con su subtotal); se saltea",
-  "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
-  "la lectura base no cerraba; cerró con la lectura 4",
+  "\"Gewinnüberführung FC Basel Holding AG\" (L810) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Verlustabdeckung FC Basel Holding AG\" (L750) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel 1893\" (L751) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel 1893\" (L579) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel 1893\" (L579) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel 1893\" (L579) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf"
  ],
  "reintentar": null,
@@ -274,6 +269,11 @@
    "etiqueta": "Finanzaufwand",
    "M": -0.201133,
    "linea": 577
+  },
+  {
+   "etiqueta": "Defizitgarantie FC Basel 1893",
+   "M": 0,
+   "linea": 579
   }
  ],
  "impuesto": [

@@ -1,77 +1,8 @@
 {
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
- "generatedAt": "2026-10-19T16:08:11.576Z",
- "rubrosHuella": "0e4749c3aa8738b81959397371449db2bdb99c9f",
+ "generatedAt": "2026-10-19T17:31:00.369Z",
+ "rubrosHuella": "e4967c49e432d8df5b17d0aa97488ad20442e170",
  "rubros": [
-  {
-   "label": "Sponsoring, Werbung",
-   "lado": "revenue",
-   "page": 13,
-   "section": "estado",
-   "choice": "sponsorship_commercial",
-   "confidence": 1,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1029
-  },
-  {
-   "label": "Leihertrag, Ausbildungsentschädigungen",
-   "lado": "revenue",
-   "page": 13,
-   "section": "estado",
-   "choice": "player_sales",
-   "confidence": 0.76,
-   "top3": [
-    [
-     "player_sales",
-     0.78
-    ],
-    [
-     "youth_football",
-     0.2
-    ],
-    [
-     "other_income",
-     0.02
-    ]
-   ],
-   "tokens": 1042
-  },
-  {
-   "label": "*aus Cup-Spielen*",
-   "lado": "revenue",
-   "page": 13,
-   "section": "nota que desglosa \"Matcheinnahmen\"",
-   "choice": "matchday_competition",
-   "confidence": 0.89,
-   "top3": [
-    [
-     "matchday_competition",
-     0.9
-    ],
-    [
-     "competition_bonus",
-     0.1
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1023
-  },
   {
    "label": "*aus Meisterschaft*",
    "lado": "revenue",
@@ -79,90 +10,7 @@
    "section": "nota que desglosa \"Matcheinnahmen\"",
    "choice": "competition_bonus",
    "confidence": 0.86,
-   "top3": [
-    [
-     "competition_bonus",
-     0.87
-    ],
-    [
-     "matchday_competition",
-     0.12
-    ],
-    [
-     "other_sports",
-     0.01
-    ]
-   ],
-   "tokens": 1031
-  },
-  {
-   "label": "*aus übrigen Spielen*",
-   "lado": "revenue",
-   "page": 13,
-   "section": "nota que desglosa \"Matcheinnahmen\"",
-   "choice": "matchday_competition",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "matchday_competition",
-     0.97
-    ],
-    [
-     "other_income",
-     0.02
-    ],
-    [
-     "competition_bonus",
-     0.01
-    ]
-   ],
-   "tokens": 1016
-  },
-  {
-   "label": "TV-Entschädigungen",
-   "lado": "revenue",
-   "page": 13,
-   "section": "estado",
-   "choice": "broadcasting",
-   "confidence": 1,
-   "top3": [
-    [
-     "broadcasting",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1016
-  },
-  {
-   "label": "Business Seats",
-   "lado": "revenue",
-   "page": 13,
-   "section": "estado",
-   "choice": "matchday_competition",
-   "confidence": 0.61,
-   "top3": [
-    [
-     "matchday_competition",
-     0.64
-    ],
-    [
-     "sponsorship_commercial",
-     0.26
-    ],
-    [
-     "stadium_other",
-     0.09
-    ]
-   ],
-   "tokens": 1015
+   "desdeCache": true
   },
   {
    "label": "*aus Champions-League / UEFA-Cup*",
@@ -171,21 +19,61 @@
    "section": "nota que desglosa \"Matcheinnahmen\"",
    "choice": "competition_bonus",
    "confidence": 0.88,
-   "top3": [
-    [
-     "competition_bonus",
-     0.89
-    ],
-    [
-     "matchday_competition",
-     0.08
-    ],
-    [
-     "broadcasting",
-     0.03
-    ]
-   ],
-   "tokens": 1053
+   "desdeCache": true
+  },
+  {
+   "label": "*aus Cup-Spielen*",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Matcheinnahmen\"",
+   "choice": "matchday_competition",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "*aus übrigen Spielen*",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Matcheinnahmen\"",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Business Seats",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsoring, Werbung",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "TV-Entschädigungen",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Leihertrag, Ausbildungsentschädigungen",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.76,
+   "desdeCache": true
   },
   {
    "label": "Mitglieder",
@@ -194,113 +82,7 @@
    "section": "estado",
    "choice": "member_dues",
    "confidence": 1,
-   "top3": [
-    [
-     "member_dues",
-     1
-    ],
-    [
-     "season_tickets",
-     0
-    ],
-    [
-     "matchday_competition",
-     0
-    ]
-   ],
-   "tokens": 1027
-  },
-  {
-   "label": "**Total Ertrag**",
-   "lado": "revenue",
-   "page": 13,
-   "section": "estado",
-   "choice": "lump_football_operations",
-   "confidence": 0.61,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.64
-    ],
-    [
-     "other_income",
-     0.36
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1019
-  },
-  {
-   "label": "Diverses",
-   "lado": "revenue",
-   "page": 13,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1038
-  },
-  {
-   "label": "Organisationskosten Heimspiele",
-   "lado": "expense",
-   "page": 14,
-   "section": "estado",
-   "choice": "match_organisation_expense",
-   "confidence": 1,
-   "top3": [
-    [
-     "match_organisation_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1041
-  },
-  {
-   "label": "Leihaufwand, Ausbildungsentschädigungen",
-   "lado": "expense",
-   "page": 14,
-   "section": "estado",
-   "choice": "other_expenses",
-   "confidence": 0.48,
-   "top3": [
-    [
-     "other_expenses",
-     0.52
-    ],
-    [
-     "lump_football_operations_expense",
-     0.2
-    ],
-    [
-     "player_amortisation",
-     0.08
-    ]
-   ],
-   "tokens": 1024
+   "desdeCache": true
   },
   {
    "label": "Verbandseinnahmen",
@@ -309,44 +91,16 @@
    "section": "estado",
    "choice": "competition_bonus",
    "confidence": 0.99,
-   "top3": [
-    [
-     "competition_bonus",
-     0.99
-    ],
-    [
-     "other_income",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1032
+   "desdeCache": true
   },
   {
-   "label": "Übriger Spielbetrieb",
-   "lado": "expense",
-   "page": 14,
+   "label": "Diverses",
+   "lado": "revenue",
+   "page": 13,
    "section": "estado",
-   "choice": "match_organisation_expense",
-   "confidence": 0.88,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.89
-    ],
-    [
-     "other_expenses",
-     0.09
-    ],
-    [
-     "lump_football_operations_expense",
-     0.02
-    ]
-   ],
-   "tokens": 1018
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
   },
   {
    "label": "Personalaufwand",
@@ -355,44 +109,34 @@
    "section": "estado",
    "choice": "wages_squad",
    "confidence": 0.55,
-   "top3": [
-    [
-     "wages_squad",
-     0.59
-    ],
-    [
-     "other_expenses",
-     0.21
-    ],
-    [
-     "admin_general_expense",
-     0.12
-    ]
-   ],
-   "tokens": 1007
+   "desdeCache": true
   },
   {
-   "label": "Administration",
+   "label": "Organisationskosten Heimspiele",
    "lado": "expense",
    "page": 14,
    "section": "estado",
-   "choice": "admin_general_expense",
+   "choice": "match_organisation_expense",
    "confidence": 1,
-   "top3": [
-    [
-     "admin_general_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1006
+   "desdeCache": true
+  },
+  {
+   "label": "Übriger Spielbetrieb",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Leihaufwand, Ausbildungsentschädigungen",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "desdeCache": true
   },
   {
    "label": "Werbung",
@@ -401,21 +145,16 @@
    "section": "estado",
    "choice": "admin_general_expense",
    "confidence": 1,
-   "top3": [
-    [
-     "admin_general_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 999
+   "desdeCache": true
+  },
+  {
+   "label": "Administration",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
   },
   {
    "label": "Abschreibungen",
@@ -424,21 +163,7 @@
    "section": "estado",
    "choice": "depreciation",
    "confidence": 0.51,
-   "top3": [
-    [
-     "depreciation",
-     0.55
-    ],
-    [
-     "player_amortisation",
-     0.21
-    ],
-    [
-     "other_amortisation",
-     0.16
-    ]
-   ],
-   "tokens": 1016
+   "desdeCache": true
   },
   {
    "label": "Übriger Aufwand",
@@ -447,21 +172,7 @@
    "section": "estado",
    "choice": "other_expenses",
    "confidence": 1,
-   "top3": [
-    [
-     "other_expenses",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1012
+   "desdeCache": true
   }
  ]
 }

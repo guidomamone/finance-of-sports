@@ -1,0 +1,246 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2014.md",
+ "generatedAt": "2026-10-19T17:31:01.419Z",
+ "rubrosHuella": "a122e83b2a65e126fcedbcd02f0afcb3a4f806dd",
+ "rubros": [
+  {
+   "label": "aus Meisterschaft",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Matcheinnahmen\"",
+   "choice": "competition_bonus",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "aus Champions-League / UEFA-Spielen",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Matcheinnahmen\"",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "aus Cup-Spielen",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Matcheinnahmen\"",
+   "choice": "matchday_competition",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "aus übrigen Spielen",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Matcheinnahmen\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Business Seats",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsoring, Werbung",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferertrag",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "TV-Entschädigungen",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Merchandising, Licensing",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Catering",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Verbandseinnahmen",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Einnahmen Leistungsfussball Nachwuchs",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "youth_football",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diverses",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Personalaufwand",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Organisationskosten Heimspiele",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Übriger Spielbetrieb",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferaufwand",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Warenaufwand",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Werbung",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Administration",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwand Leistungsfussball Nachwuchs",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Übriger Aufwand",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ausserordentliche Aufwendungen",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Events non-Matchday",
+   "lado": "revenue",
+   "page": 25,
+   "section": "estado",
+   "choice": "stadium_other",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "stadium_other",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1049
+  }
+ ]
+}

@@ -99,7 +99,9 @@ function fechasDe(linea) {
   for (const x of t.matchAll(/(?<!\d)(\d{1,2})[./-](\d{1,2})[./-](\d{4})(?!\d)/g)) { const d = +x[1], m = +x[2]; if (m >= 1 && m <= 12 && d >= 1 && d <= 31) out.push({ a: +x[3], m, d, i: x.index, fin: x.index + x[0].length }); }
   for (const x of t.matchAll(/(?<!\d)(\d{4})-(\d{2})-(\d{2})(?!\d)/g)) out.push({ a: +x[1], m: +x[2], d: +x[3], i: x.index, fin: x.index + x[0].length });
   for (const x of t.matchAll(new RegExp(`(?<!\\d)(\\d{1,2})\\.?\\s*(?:de\\s+)?(${MES_RE})\\.?,?\\s*(?:de\\s+|del\\s+)?(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[2]), d: +x[1], i: x.index, fin: x.index + x[0].length });
-  for (const x of t.matchAll(new RegExp(`(${MES_RE})\\.?\\s+(\\d{1,2}),?\\s+(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[1]), d: +x[2], i: x.index, fin: x.index + x[0].length });
+  // (to-do 298 m2, ok de Guido 2026-10-19) "mes día de año" con el "de" antes del año ("diciembre 31 de 2025"): no se leía y el cierre salía de la otra fecha del título
+  // ("... y diciembre 31 2024"): Unión Magdalena 2025 quedó con cierre 2024-12-31 y se extrajo la columna 2024. Medido sobre 3.646 .md: 31 pasan de sin cierre a cierre leído, 1 cambia (Deportes Tolima 2016, 2015 -> 2016, correcto y sin cargar).
+  for (const x of t.matchAll(new RegExp(`(${MES_RE})\\.?\\s+(\\d{1,2}),?\\s+(?:de\\s+|del\\s+)?(\\d{4})`, 'gu'))) out.push({ a: +x[3], m: MES_DE.get(x[1]), d: +x[2], i: x.index, fin: x.index + x[0].length });
   return out.sort((p, q) => p.i - q.i);
 }
 const iso = (f) => `${f.a}-${String(f.m).padStart(2, '0')}-${String(f.d).padStart(2, '0')}`;
@@ -194,7 +196,10 @@ export function periodoDe(mdText, nombreArchivo = '') {
   // futuro de verdad (Boca "Presupuesto 26-27" y Racing "presupuesto2026-27", 2027-06-30, quedaban sin fecha).
   const TOPE = `${new Date().getFullYear() + 2}-12-31`;
   const cuenta = new Map();
-  for (const l of lineas) for (const f of fechasDe(l.texto)) if (finDeMes(f) && f.a >= 1950 && iso(f) <= TOPE) cuenta.set(iso(f), (cuenta.get(iso(f)) || 0) + 1);
+  // (to-do 298 m2, ok de Guido 2026-10-19) EJERCICIO Y COMPARATIVO EN UN MISMO TÍTULO: si la línea trae otra fecha del mismo día y mes un año DESPUÉS, esta es el comparativo y no cuenta
+  // como cierre ("diciembre 31 de 2025 y diciembre 31 2024": solo cuenta 2025). Unión Magdalena 2025 salía con cierre 2024-12-31 (tres títulos con 2024 contra dos con 2025) y el pipeline
+  // extrajo la columna 2024. Medido sobre 3.646 .md: 31 pasan de sin cierre a cierre leído, 2 cambian y quedan bien (Deportes Tolima 2016, Universidad de Chile 2014; sin cargar).
+  for (const l of lineas) { const fl = fechasDe(l.texto); for (const f of fl) { if (!(finDeMes(f) && f.a >= 1950 && iso(f) <= TOPE)) continue; if (fl.some((g) => g !== f && finDeMes(g) && g.a === f.a + 1 && g.m === f.m && g.d === f.d)) continue; cuenta.set(iso(f), (cuenta.get(iso(f)) || 0) + 1); } }
   const masCitado = [...cuenta].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? 1 : -1))[0]?.[0] || null;
   // 3. palabra de período intermedio sin meses
   if (!res) {
