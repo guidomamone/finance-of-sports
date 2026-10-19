@@ -30,6 +30,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'heraclesalmelo-nl': {
     2025: {"estadio":"Asito Stadion","capacidad":12080,"sponsor":"Asito","marca":"Acerbis","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
   },
+  'nacbreda-nl': {
+    2025: {"estadio":"Rat Verlegh Stadion","capacidad":19000,"sponsor":"OK Brandstoffen en Smeermiddelen","marca":"Nike","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
+  },
   'psv-nl': {
     2024: {"estadio":"Philips Stadion","capacidad":36500,"sponsor":"Metropoolregio Brainport Eindhoven","marca":"Puma","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"Philips Stadion","capacidad":36500,"sponsor":"Metropoolregio Brainport Eindhoven","marca":"Puma","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},

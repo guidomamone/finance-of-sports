@@ -24,3 +24,5 @@ hueco de FC Utrecht 2019/20 en este mismo país).
 - Confirmar si 2019/20 existe con otro nombre de archivo antes de darlo por perdido
   definitivamente.
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.pdf` (sourceId `nacbreda-nl-jaarrekening-2024-2025`).

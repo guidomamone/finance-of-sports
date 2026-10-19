@@ -293,6 +293,7 @@ const clubs = {
   'excelsior-nl': { id:'excelsior-nl', name:'Stichting Betaald Voetbal Excelsior', displayName:'Excelsior', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
   'fortunasittard-nl': { id:'fortunasittard-nl', name:'Fortuna Sittard B.V.', displayName:'Fortuna Sittard', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFEA3A' },
   'heraclesalmelo-nl': { id:'heraclesalmelo-nl', name:'Stichting Heracles Almelo', displayName:'Heracles Almelo', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
+  'nacbreda-nl': { id:'nacbreda-nl', name:'NAC Breda B.V.', displayName:'NAC Breda', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFFF00' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.
