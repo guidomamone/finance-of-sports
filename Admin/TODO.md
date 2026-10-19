@@ -25,6 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
+* 324: Basel, los demás años: lectura mal en varios años y la Defizitgarantie / Verlustabdeckung, que decidís vos --> Onboarding 3
 * 292: cargar lo transcripto: lote 101 (Go Ahead Eagles 2023-2024 hechos; Basel, Luzern y St. Gallen en la cola, con 102 preguntas); Bélgica: Lommel SK 2019-2024 ya se puede cargar (con una línea carga-club), Lierse SK 2020-2021 y Patro Eisden 2021-2023 también se pueden reintentar (298 ae); el estadio de las amateur espera la 298 af; después Suiza, Beşiktaş y Colombia --> Onboarding 3
 
 **B. Bases baratas que después cuestan caro cambiar**
@@ -392,3 +393,13 @@ af) listas de las ligas amateur belgas
        de CONVENCIONES-DATOS ya lo decide; no debería ir a la cola.
     f) Alta de Harlequins (rugby): el nombre legal propuesto es una frase del texto; sale de "HARLEQUIN FOOTBALL CLUB LIMITED (REGISTERED
        NUMBER…)", que aparece 4 veces.
+324. BASEL: LOS DEMÁS AÑOS (lote 101; Onboarding 3, 2026-10-19). No se carga ningún año de Basel hasta resolver esto:
+    a) la lectura está mal en varios años: 2010 tomó la tabla del Verein (se carga la FC Basel 1893 AG) y 2014 también duplicaba el total;
+       con la 298 ah ya en main, regenerar los derivados de Basel y volver a verificar.
+    b) decisión de Guido: la Defizitgarantie (la garantía de déficit que la AG le paga al Verein o recibe de la holding) y la
+       Verlustabdeckung (cobertura de pérdidas del holding, 9,721 M en 2009 y 2012) más la Gewinnüberführung de 14 M a la holding en 2012:
+       ¿entran como ingreso o gasto del club, o quedan afuera del resultado operativo? En 2010, 2013, 2019 (18,7 M) y 2020 la AG también
+       tiene partidas con la holding o el Verein debajo del resultado operativo.
+    c) Basel 2006: se carga la AG, no el Verein (el Verein le traspasó el fútbol profesional ese año).
+    Detalle: `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`, sección "Lote 101".
+
