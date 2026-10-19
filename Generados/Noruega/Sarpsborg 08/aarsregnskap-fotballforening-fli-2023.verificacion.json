@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.pdf",
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md",
- "generado": "2026-10-19T15:05:16.805Z",
+ "generado": "2026-10-19T15:07:21.268Z",
  "estado": "ok",
  "clubId": "sarpsborg08-no",
  "year": 2023,
@@ -19,6 +19,16 @@
    "linea": null,
    "motivo": "la controlada es Prozo AS (100%, comprada en 2021), un negocio comercial aparte que no es el fútbol del club (mismo criterio que el 2025); el club es el FLI en cuentas individuales",
    "evidencia": ".md del FLI 2023: estado individual de la asociación; Prozo AS aparece solo en el consolidado",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.pdf",
+   "campo": "resultado-final",
+   "valor": "18.981564",
+   "linea": null,
+   "motivo": "El estado individual imprime Årsresultat 18 981 564 (L158) y Netto finans 8 446 (L145); el cierre automático sumó Sum finansinntekter 1 321 530 + Sum finanskostnader 1 313 085 (2.634615) en vez de restarlos: Annen finanskostnad es -136 202 (reversión) dentro de los 1 313 085",
+   "evidencia": "pág. 2-3 del visor, .md L136-158",
    "autor": "Claude",
    "fecha": "2026-10-19"
   }
@@ -41,9 +51,14 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 146.545052 - gastos 127.571931 ± financiero 2.634615 ± impuesto 0 no da el impreso 18.981564",
+   "ok": true,
+   "detalle": "ingresos 146.545052 - gastos 127.571931 ± financiero 2.634615 ± impuesto 0 no da el impreso 18.981564 → aceptado por ajuste manual (resultado final 18.981564)",
    "dif": null
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "0.000019 por ajuste manual (18.981564: El estado individual imprime Årsresultat 18 981 564 (L158) y Netto finans 8 446 (L145); el cierre automático sumó Sum finansinntekter 1 321 530 + Sum finanskostnader 1 313 085 (2.634615) en vez de restarlos: Annen finanskostnad es -136 202 (reversión) dentro de los 1 313 085); impuesto deducido 21.607717 (antes de impuestos 21.607736; el documento imprimía 0)"
   },
   {
    "nombre": "año anterior cargado",
@@ -62,10 +77,10 @@
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: b55/b60/b61 repiten encabezados, filas y páginas relativas de b22/b27/b28.",
-  "duda de localizar que no afecta la carga: b1/b2 y b22 son el mismo estado individual (resultado 18 981 564 / -6 293 879); b22 abre más los ingresos.",
-  "duda de extraer que no afecta la carga: El club (forening) no muestra impuesto; L530-L532 son asignación a patrimonio, igual a L529.",
-  "duda de extraer que no afecta la carga: Diferencia de 8 en el año anterior en L715; 2023 coincide."
+  "ajuste manual: resultado final 18.981564 (2026-10-19, El estado individual imprime Årsresultat 18 981 564 (L158) y Netto finans 8 446 (L145); el cierre automático sumó Sum finansinntekter 1 321 530 + Sum finanskostnader 1 313 085 (2.634615) en vez de restarlos: Annen finanskostnad es -136 202 (reversión) dentro de los 1 313 085)",
+  "duda de localizar que no afecta la carga: b1 y b22 son ambos resultatregnskap individual de 2023 con resultado antes de impuestos 18 981 564; b55 (pág. 37) repite b22.",
+  "duda de extraer que no afecta la carga: El estado no imprime 'Årsresultat'; la entidad parece exenta y L529 coincide con Sum overføringer (L532).",
+  "duda de extraer que no afecta la carga: L713+L714 suman 106 400 131 pero el estado y L718 dicen 106 400 123; solo afecta al año anterior."
  ],
  "reintentar": null,
  "reintentado": false,
@@ -74,10 +89,17 @@
   "ingresos": 146.545052,
   "gastos": 127.571931,
   "financiero": 2.634615,
-  "impuesto": 0,
+  "impuesto": 21.607717,
   "resultadoImpreso": 18.981564,
-  "resultadoParaCargar": 18.981564,
-  "resultadoFinal": null,
+  "resultadoParaCargar": 0.000019,
+  "resultadoFinal": {
+   "valor": 0.000019,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/registros/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": 21.607717
+  },
   "lecturaSignos": null
  },
  "lineas": [
@@ -236,7 +258,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -260,5 +282,10 @@
    "linea": 527
   }
  ],
- "impuesto": []
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -21.607717
+  }
+ ]
 }

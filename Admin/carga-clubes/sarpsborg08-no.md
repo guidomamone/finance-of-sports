@@ -135,6 +135,50 @@ Generados/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.categorias.
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Billetinntekter | pág. 13, precedente |
+| 2 | Medlemsinntekter | pág. 13, precedente |
+| 3 | Andre salgsinntekter | pág. 13, precedente |
+| 4 | Andre inntekter | pág. 13, precedente |
+| 5 | Reklame- og sponsorinntekter | pág. 13, precedente |
+| 6 | Mediainntekter | pág. 13, precedente |
+| 7 | Tilskudd | pág. 13, precedente |
+| 8 | Salg/utleie spillere | pág. 13, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trening, matriell, kamp kostn. | pág. 13, precedente |
+| 2 | Reise- og oppholdskostnader bortekamper | pág. 13, precedente |
+| 3 | Salgskostnader | pág. 13, precedente |
+| 4 | Lønninger | pág. 18, precedente |
+| 5 | Arbeidsgiveravgift | pág. 18, precedente |
+| 6 | Pensjonskostnader | pág. 18, precedente |
+| 7 | Andre ytelser | pág. 18, precedente |
+| 8 | Avskrivning av driftsmidler og immaterielle eiendeler | pág. 13, precedente |
+| 9 | Andre kostnader | pág. 13, precedente |
+| 10 | Reklame- og sponsorkostnader | pág. 13, precedente |
+| 11 | Admkost | pág. 13, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): perimetro = individual. la controlada es Prozo AS (100%, comprada en 2021), un negocio comercial aparte que no es el fútbol del club (mismo criterio que el 2025); el club es el FLI en cuentas individuales
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): resultado-final = 18.981564. El estado individual imprime Årsresultat 18 981 564 (L158) y Netto finans 8 446 (L145); el cierre automático sumó Sum finansinntekter 1 321 530 + Sum finanskostnader 1 313 085 (2.634615) en vez de restarlos: Annen finanskostnad es -136 202 (reversión) dentro de los 1 313 085
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2022
 
 ### Ingresos
@@ -735,4 +779,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sarpsborg08-no-aarsregnskap-fotballforening-fli-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

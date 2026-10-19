@@ -3,7 +3,7 @@
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md",
  "mdSha1": "5ad232f038f696f20368130bf3e0b9ea91b6a210",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:03:32.517Z",
+ "generado": "2026-10-19T15:06:54.583Z",
  "perimetroClub": "individual",
  "bloques": {
   "b1": {
@@ -594,7 +594,7 @@
   "b28"
  ],
  "escala": "unidades",
- "escala_evidencia": "Belep i: NOK (encabezado del RESULTATREGNSKAP individual, b1); b22 muestra importes en coronas enteras (p. ej. 146 545 051)",
+ "escala_evidencia": "Importes con todos los dígitos (p. ej. 146 545 051) y en el formato registral b1 'Beløp i: NOK'",
  "moneda": "NOK",
  "columna_ejercicio": "2023",
  "columna_anterior": "2022",
@@ -602,34 +602,19 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga la copia del estado individual de pág. 37 (b55) y sus notas (b60, b61) por ser duplicado de b22, b27 y b28?",
+   "pregunta": "¿Se usa b22 (pág. 13) como estado individual en lugar de la versión registral b1/b2 (pág. 2-3), que debería tener los mismos importes?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "",
-   "texto": "b55/b60/b61 repiten encabezados, filas y páginas relativas de b22/b27/b28.",
-   "bloques": [
-    "b55",
-    "b60",
-    "b61",
-    "b22",
-    "b27",
-    "b28"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se usa el estado individual detallado b22 en lugar del formato resumido b1 (pág. 2), por tener el mismo resultado antes de impuestos 18 981 564?",
-   "propuesta": "sí",
-   "tema": "cuadro-duplicado",
-   "renglon": "Resultat før skattekostnad",
-   "texto": "b1/b2 y b22 son el mismo estado individual (resultado 18 981 564 / -6 293 879); b22 abre más los ingresos.",
+   "texto": "b1 y b22 son ambos resultatregnskap individual de 2023 con resultado antes de impuestos 18 981 564; b55 (pág. 37) repite b22.",
    "bloques": [
     "b1",
     "b2",
-    "b22"
+    "b22",
+    "b55"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Individual (Sarpsborg 08 Fotballforening): b1/b2 (formato registro), b22 (detallado, elegido), duplicado b55; notas b27 (Note 1 Salgsinntekter) y b28 (Note 2 Lønnskostnader), duplicadas en b60/b61. Consolidado (konsern): b11 (KONSERNRESULTATREGNSKAP) y b40 (pág. 25, con Majoritetens andel, ingresos 166 545 863), con notas b44, b45, b49, b50. Se eligió el individual por ser el perímetro de los años cargados."
+ "observaciones": "Se elige el perímetro individual, como en los años ya cargados: b22, con la nota 1 de ingresos (b27) y la nota 2 de personal (b28). b55, b60 y b61 son duplicados de b22, b27 y b28 (págs. 37-42). b1 y b2 son la versión registral del mismo estado individual. El consolidado aparece en b11 (konsern, pág. 6) y en b40 (pág. 25, con Majoritetens andel y columna 2022 parcialmente ilegible), con sus notas b44 y b45; no se carga."
 }

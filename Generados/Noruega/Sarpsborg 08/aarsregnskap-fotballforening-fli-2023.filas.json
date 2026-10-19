@@ -4,7 +4,7 @@
  "mdSha1": "5ad232f038f696f20368130bf3e0b9ea91b6a210",
  "ubicacionSha1": "19a704c3f9c720cea95e79ac8784b9e987ef803c",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:04:33.637Z",
+ "generado": "2026-10-19T15:07:21.051Z",
  "ubicacion": {
   "estado": [
    "b22"
@@ -20,17 +20,17 @@
   {
    "bloque": "b22",
    "escala": "unidades",
-   "evidencia": "No se indica escala; importes impresos completos (ej. 146 545 051), se asumen NOK en unidades"
+   "evidencia": "No se indica escala; importes impresos completos en NOK (ej. 146 545 051)"
   },
   {
    "bloque": "b27",
    "escala": "unidades",
-   "evidencia": "Sin indicación; totales coinciden con el estado (146 545 051)"
+   "evidencia": "No se indica escala; coincide con el estado (146 545 051)"
   },
   {
    "bloque": "b28",
    "escala": "unidades",
-   "evidencia": "Sin indicación; total coincide con Lønnskostnad del estado (54 073 886)"
+   "evidencia": "No se indica escala; Sum 54 073 886 coincide con Lønnskostnad del estado"
   }
  ],
  "filas": [
@@ -434,18 +434,18 @@
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Resultat før skattekostnad",
-   "texto": "El club (forening) no muestra impuesto; L530-L532 son asignación a patrimonio, igual a L529.",
+   "texto": "El estado no imprime 'Årsresultat'; la entidad parece exenta y L529 coincide con Sum overføringer (L532).",
    "bloques": [
     "b22"
    ],
    "afecta_carga": false
   },
   {
-   "pregunta": "¿Se acepta que el Sum 2022 de la nota 1 por área (106 400 131, L715) difiere del estado (106 400 123) solo por error de impresión, sin cambiar la carga 2023?",
+   "pregunta": "¿Se acepta como error de impresión la diferencia de 8 en 'Sum' 2022 de la Note 1 (L715: 106 400 131 vs 106 400 123)?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Sum driftsinntekter",
-   "texto": "Diferencia de 8 en el año anterior en L715; 2023 coincide.",
+   "texto": "L713+L714 suman 106 400 131 pero el estado y L718 dicen 106 400 123; solo afecta al año anterior.",
    "bloques": [
     "b27",
     "b22"
@@ -453,5 +453,5 @@
    "afecta_carga": false
   }
  ],
- "observaciones": "Escala no impresa; se asumen NOK en unidades. Nota 1 tiene dos desgloses del total de ingresos (por área y geográfico). 'Annen finanskostnad' 2023 impresa negativa (-136 202); el resultado financiero 8 446 cuadra con ese signo restado."
+ "observaciones": "Estado en NOK sin escala explícita. Annen finanskostnad 2023 impresa negativa (-136 202). Note 1 desglosa los ingresos totales por área y geografía; Note 2 detalla Lønnskostnad."
 }
