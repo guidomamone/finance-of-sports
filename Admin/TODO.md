@@ -40,7 +40,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 261: Reino Unido: 118 transcripciones validadas; sigue el lote de carga y la cola por Mistral
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
-* 284: Fredrikstad 2012 (falta un sponsor con fuente) --> Onboarding 3
+* 284: Fredrikstad 2012 (falta un sponsor con fuente) y Sarpsborg 2023-2024 (ya se pueden volver a correr) --> Onboarding 3
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
