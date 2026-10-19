@@ -3,6 +3,10 @@ const viborgdkRevenueLinesByYear = {
     { rawLabel:'Nettoomsætning (recaudación de entradas, TV y comercial combinados, sin desglose numérico en la fuente)', normalizedCategory:'lump_football_operations', amountNative:75.989957, disclosureLevel:'aggregated' },
     { rawLabel:'Andre driftsindtægter (resultado neto de transferencias — ingresos de transfer menos costos de transfer — más ganancia/pérdida neta por venta de activos fijos; venta de Anton Gaaei, Elias Achouri, Alassana Jatta, Jacob Friis, entre otros)', normalizedCategory:'player_sales', amountNative:56.705954, disclosureLevel:'aggregated' },
   ],
+  2025: [
+    { rawLabel:'Nettoomsætning Revenue', normalizedCategory:'lump_football_operations', amountNative:79.32982, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre driftsindtægter Other operating income', normalizedCategory:'other_income', amountNative:23.343225, disclosureLevel:'aggregated' },
+  ],
 };
 
 const viborgdkExpenseLinesByYear = {
@@ -18,6 +22,16 @@ const viborgdkExpenseLinesByYear = {
     ]},
     { rawLabel:'Andre driftsomkostninger (sin monto propio identificable para separar de other_expenses)', normalizedCategory:'other_expenses', amountNative:-1.263649, disclosureLevel:'aggregated' },
   ],
+  2025: [
+    { rawLabel:'Vareforbrug Cost of sales', normalizedCategory:'other_expenses', amountNative:-35.149658, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre eksterne omkostninger Other external expenses', normalizedCategory:'other_expenses', amountNative:-7.005308, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønninger', normalizedCategory:'wages_squad', amountNative:-46.236951, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensioner', normalizedCategory:'wages_squad', amountNative:-3.886859, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre omkostninger til social sikring', normalizedCategory:'wages_squad', amountNative:-0.356202, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre personaleomkostninger', normalizedCategory:'wages_squad', amountNative:-3.561998, disclosureLevel:'aggregated' },
+    { rawLabel:'Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment', normalizedCategory:'player_amortisation', amountNative:-18.375737, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre driftsomkostninger Other operating expenses', normalizedCategory:'other_expenses', amountNative:-1.299319, disclosureLevel:'aggregated' },
+  ],
 };
 
 const viborgdkFiscalYearMeta = {
@@ -31,6 +45,25 @@ const viborgdkFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     grossDebt:29.385639, cash:30.026932,
     officialTotalRevenue:132.695911, officialTotalExpenses:105.026691, officialPAT:22.763931,
+  },
+  2025: {
+    currency:'DKK', fxRef:'DKK@2025-06-30',
+    sourceId:'viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.80534, tax:2.693035,
+    extraRows: [
+      {label:'Indtægter af andre kapitalandele, værdipapirer og tilgodehavender, der er anlægsaktiver Income from other investments and receivables that are fixed assets', value:0.196462},
+      {label:'Andre finansielle indtægter Financial income', value:0.7694},
+      {label:'Andre finansielle omkostninger Financial expenses', value:-0.160522},
+      {label:'Skat af årets resultat Tax on profit or loss for the year', value:2.693035},
+    ],
+    sinDesglose: [
+      {renglon:'Nettoomsætning Revenue', lado:'revenue', importe:79.32982, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:102.673045, officialTotalExpenses:115.872032, officialPAT:-9.700612,
   },
 };
 
@@ -54,6 +87,11 @@ Object.assign(sources, {
       title:'Viborg F.F. Prof. Fodbold A/S — Årsrapport for regnskabsåret 01.07.23 - 30.06.24',
       type:'official_balance_sheet', reliability:'primary',
     },
+  'viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as': {
+    id:'viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as', clubId:'viborg-dk',
+    title:'Viborg F.F. Prof. Fodbold A/S — 2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
 });
 
 memberCountByClub['viborg-dk'] = null;

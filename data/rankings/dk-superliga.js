@@ -8,6 +8,9 @@ window.RANKINGS["dk-superliga"] = {
       { id:"silkeborg-dk", revenue:20.737, reportType:"official_balance_sheet",
         sourceId:"silkeborg-dk-annual-report-2025-silkeborg-if-a-s-fact",
         mix:[["Comercial / Sponsors",4.661],["Estadio",1.741],["Televisión",2.923],["Premios por competencias",1.812],["Venta de Jugadores",7.933],["Otros ingresos",1.667]] },
+      { id:"viborg-dk", revenue:16.128, reportType:"official_balance_sheet",
+        sourceId:"viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",12.461],["Otros ingresos",3.667]] },
     ],
   },
   2024: {

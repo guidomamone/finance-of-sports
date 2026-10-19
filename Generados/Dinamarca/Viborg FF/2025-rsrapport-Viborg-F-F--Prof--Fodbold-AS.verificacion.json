@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf",
  "md": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md",
- "generado": "2026-10-19T17:09:35.387Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:54:10.133Z",
+ "estado": "ok",
  "clubId": "viborg-dk",
- "year": null,
+ "year": 2025,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -23,9 +23,7 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "f0d5c05"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,18 +43,11 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
-  },
-  {
-   "nombre": "primer año",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "la columna 2024 de este documento suma ingresos 132.695911; el sitio tiene 132.695911"
   }
  ],
- "notas": [
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
- ],
+ "notas": [],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
@@ -179,31 +170,5 @@
    "M": 2.693035,
    "linea": 899
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "d315baf91b4ff44a34b427532d6b1ab75d355a6d",
-  "rango": [
-   882,
-   903
-  ],
-  "lineasCargadas": [
-   885,
-   886,
-   887,
-   888,
-   1129,
-   1131,
-   1133,
-   1135,
-   892,
-   893,
-   895,
-   896,
-   897,
-   899
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 882 a 903 del .md):\nL883: |  Note | 2024/25 DKK | 2023/24 DKK  |\nL884: | --- | --- | --- |\nL885: |  **Nettoomsætning** Revenue | **79.329.820** | **75.989.957**  |\nL886: |  Andre driftsindtægter Other operating income | 23.343.225 | 56.705.954  |\nL887: |  Vareforbrug Cost of sales | -35.149.658 | -32.445.204  |\nL888: |  Andre eksterne omkostninger Other external expenses | -7.005.308 | -7.162.920  |\nL889: |  **Bruttofortjeneste** Gross profit | **60.518.079** | **93.087.787**  |\nL890: |  1 Personaleomkostninger Staff costs | -54.042.010 | -52.095.551  |\nL891: |  **Resultat før af- og nedskrivninger** Profit before depreciation, amortisation, write-downs and impairment losses | **6.476.069** | **40.992.236**  |\nL892: |  Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment | -18.375.737 | -12.059.367  |\nL893: |  Andre driftsomkostninger Other operating expenses | -1.299.319 | -1.263.649  |\nL894: |  **Resultat af primær drift** Operating profit/loss | **-13.198.987** | **27.669.220**  |\nL895: |  Indtægter af andre kapitalandele, værdipapirer og tilgodehavender, der er anlægsaktiver Income from other investments and receivables that are fixed assets | 196.462 | 100.180  |\nL896: |  Andre finansielle indtægter Financial income | 769.400 | 1.457.294  |\nL897: |  Andre finansielle omkostninger Financial expenses | -160.522 | -42.681  |\nL898: |  **Resultat før skat** Profit/loss before tax | **-12.393.647** | **29.184.013**  |\nL899: |  2 Skat af årets resultat Tax on profit or loss for the year | 2.693.035 | -6.420.082  |\nL900: |  **Årets resultat** Profit/loss for the year | **-9.700.612** | **22.763.931**  |\nL901: |  3 Forslag til resultatdisponering Proposed appropriation account |  |   |\nL903: BEIERHOLM\n\nLO QUE SE CARGA:\n- ingreso · \"Nettoomsætning Revenue\" · 79.32982 · L885\n- ingreso · \"Andre driftsindtægter Other operating income\" · 23.343225 · L886\n- gasto · \"Vareforbrug Cost of sales\" · 35.149658 · L887\n- gasto · \"Andre eksterne omkostninger Other external expenses\" · 7.005308 · L888\n- gasto · \"Lønninger\" · 46.236951 · L1129 (de una nota)\n- gasto · \"Pensioner\" · 3.886859 · L1131 (de una nota)\n- gasto · \"Andre omkostninger til social sikring\" · 0.356202 · L1133 (de una nota)\n- gasto · \"Andre personaleomkostninger\" · 3.561998 · L1135 (de una nota)\n- gasto · \"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisati\" · 18.375737 · L892\n- gasto · \"Andre driftsomkostninger Other operating expenses\" · 1.299319 · L893\n- financiero · \"Indtægter af andre kapitalandele, værdipapirer og tilgodehavender, der er anlægsaktiver In\" · 0.196462 · L895\n- financiero · \"Andre finansielle indtægter Financial income\" · 0.7694 · L896\n- financiero · \"Andre finansielle omkostninger Financial expenses\" · -0.160522 · L897\n- impuesto · \"Skat af årets resultat Tax on profit or loss for the year\" · 2.693035 · L899"
- }
+ ]
 }

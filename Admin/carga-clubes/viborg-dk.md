@@ -176,6 +176,47 @@ gestionesByClub (mismo criterio que fckobenhavn-dk/anderlecht-be).
 ============================================================================
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Nettoomsætning Revenue | pág. 23, Jev 1 |
+| 2 | Andre driftsindtægter Other operating income | pág. 23, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vareforbrug Cost of sales | pág. 23, Jev 0.96 |
+| 2 | Andre eksterne omkostninger Other external expenses | pág. 23, Jev 0.98 |
+| 3 | Lønninger | pág. 30, Claude 0.88 |
+| 4 | Pensioner | pág. 30, Jev 0.95 |
+| 5 | Andre omkostninger til social sikring | pág. 30, Jev 0.92 |
+| 6 | Andre personaleomkostninger | pág. 30, precedente |
+| 7 | Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment | pág. 23, precedente |
+| 8 | Andre driftsomkostninger Other operating expenses | pág. 23, Jev 0.99 |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): cierre = 2025-06-30. el informe dice 'regnskabsåret 01.07.24 - 30.06.25' (.md línea 12)
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): dk-superliga, verificado contra roster cacheado de "2024–25 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia única por palabras "Viborg" = "Viborg FF".
+```
+
 ## 2024
 
 ### Meta
@@ -214,4 +255,12 @@ _note (data/):_
 
 ```text
 Auditado por Beierholm (Statsautoriseret Revisionspartnerselskab), sin salvedades. CVR 83 07 37 13. Tipo de cambio DKK/USD del cierre (6,9664) es una aproximación de mercado (cruce BCE EUR/DKK × EUR/USD del 28/6/2024, viernes hábil más cercano al 30/6), no declarada por el propio documento ni centralizada todavía en FX_CLOSE. Transcripción completa en "Clubes/Dinamarca/Viborg FF/aarsrapport-2024-06-30.md".
+```
+
+### viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

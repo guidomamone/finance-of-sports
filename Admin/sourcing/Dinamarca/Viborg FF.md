@@ -28,3 +28,5 @@ CVR-nr. 83 07 37 13, Årsrapport for regnskabsåret 01.07.17 - 30.06.18".
 Ninguna.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf` (sourceId `viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as`).
