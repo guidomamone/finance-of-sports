@@ -25,19 +25,19 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 290 y 291: caja y deuda, lo que queda (Genoa 2022; la duda del factoring la decidís vos) --> Pipeline 3 (290), Principal (291)
-* 310: caja y deuda de un año sin vecino, cualquier país --> Pipeline 3
+* 290 y 291: caja y deuda, lo que queda (Genoa 2022; la duda del factoring la decidís vos) --> Pipeline 4 (290), Principal (291)
+* 310: caja y deuda de un año sin vecino, cualquier país --> Pipeline 4
 * 292: cargar lo transcripto por subagentes: Países Bajos (en la cola), Bélgica, Suiza, Beşiktaş, Colombia y los 238 .md viejos ya rehechos por Mistral --> Onboarding 3
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 3
-* 298: mejoras de script de Estonia y Bélgica (quedan la z2, Westerlo 2015 con 18 meses, a decidir con vos, y la g2, condicional) --> Pipeline 3
-* 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 3 (306, 307)
-* 301: gasto.mjs --json se corta en un pipe --> Pipeline 3
-* 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 3
+* 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (quedan la z2, Westerlo 2015 con 18 meses, a decidir con vos, y la g2, condicional) --> Pipeline 4
+* 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 4 (306, 307)
+* 301: gasto.mjs --json se corta en un pipe --> Pipeline 4
+* 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
