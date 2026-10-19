@@ -3,6 +3,9 @@
 // No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
+  'adodenhaag-nl': {
+    2025: {"estadio":"Bingoal Stadion","capacidad":15000,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
+  },
   'ajax-nl': {
     2024: {"estadio":"Johan Cruyff Arena","capacidad":55865,"sponsor":"Ziggo","marca":"Adidas","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"Johan Cruyff Arena","capacidad":55865,"sponsor":"Ziggo","marca":"Adidas","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
