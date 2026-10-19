@@ -115,3 +115,15 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
   cierre de la 298 f (pipeline).
 
 ## Después del merge del 312 y el 195 (2026-10-19)
+
+### Qué cambió (CHANGELOG)
+
+- **273: segunda pasada a los sin sponsor** (pedido de Guido). Cinco subagentes con ángulos nuevos (bases por temporada, web del club
+  archivada, prensa local, Wikipedia del país) sobre los 76 ejercicios; entran Ferroviária 2022 (Estrella Galicia, patrocinador máster) y
+  2023 (Betnacional, nota del club) y el estadio de Novorizontino 2018. zerozero.pt y footballkitarchive.com piden verificación anti-bot:
+  no se usaron. ASSET_V 1333.
+
+### Qué queda (TODO)
+
+- **273 cerrado por decisión de Guido (2026-10-19): los ejercicios que siguen sin sponsor quedan en null** ("seguro son clubes
+  irrelevantes"). No se vuelven a buscar; un año nuevo sigue pasando por la compuerta de `cargar.mjs`.
