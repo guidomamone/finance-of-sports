@@ -41,7 +41,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 165 c: altas de los países nuevos que faltan --> Pantallas 3
 * 195: gestiones (presidentes) sin fuente confirmada (casi todas esperan respuesta del club)
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
-* 273: que generate-sponsors sume el contexto manual (los años viejos sin sponsor quedan en null) --> Pantallas 3
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (que el pipeline exija la línea al dar de alta un club) --> Pipeline 5
@@ -188,8 +187,12 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 252. EJERCICIOS NUEVOS: LO QUE QUEDA (pedido de Guido; mensual). La revisión está hecha: `tools/ejercicios-nuevos.mjs` y una tarea programada
    (día 1, 9:00, carpeta principal); todas las notas tienen canal. Falta: onboardear Instituto 2024-25 (Ejercicio N°71, bajado de Drive; anotado en la
    nota; ya bajados) y onboardearlos; cargar los clubes con el PDF del ejercicio siguiente ya bajado (`node tools/ejercicios-nuevos.mjs` los lista;
-   onboarding); Gladbach y Stuttgart 2025, en el Unternehmensregister desde enero de 2027 (publica a los ~13 meses); el script no reconoce como "ya
-   bajado" un documento cuyo cierre cambió de fecha (River, agosto → diciembre).
+   onboarding); Gladbach y Stuttgart 2025, en el Unternehmensregister desde enero de 2027 (publica a los ~13 meses). Lote 103 hecho (17
+   ejercicios, 2026-10-19). Quedan: Unión Magdalena 2025 (rehacer con la 298 m2, ya en main), Boyacá Chicó 2025 (298 p2), Juventude 2021 y
+   Ponte Preta 2025 (socios y otros deportes, en dudas-por-club), River `estados-contables-cierre-2025-12-31.pdf` (sin `.md`, otro lote),
+   Vasco da Gama 2024 (Associação o SAF: ¿cuál es el club?), Amazonas FC 2025 (buscar el balance del club; el bajado es de la federación), y
+   14 clubes que el script da "ya en su carpeta" sin el PDF del ejercicio siguiente (AGF, Brøndby, Chaves, Estrela da Amadora, København,
+   Mirassol, Nordsjælland, Osasuna, Randers, SønderjyskE, Torreense, União de Leiria, Vejle, Villarreal): ver si los marca de más.
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
    lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
 256. CHANGELOG CORTO (mejoras de proyecto, pedido de Guido 2026-10-16). Casi 3.000 líneas y git ya guarda la historia: dejar los últimos 30 días y archivar el resto en Admin/Archive/.
@@ -209,9 +212,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    Unión 2022-2024, Argentinos Juniors 2019 (caja) y Mirassol 2024 (deuda 0) cargados el 2026-10-19; la AFAC de Ferroviária no es
    deuda (Guido). Informe: `Admin/mediciones/informe-260-caja-deuda-sin-documento-nuevo.md`.
 
-273. ESTADIO Y SPONSOR: LO QUE QUEDA. Cerrado salvo un punto (Guido, 2026-10-19: los ejercicios ya cargados sin sponsor quedan en null
-   y no se vuelven a buscar). La compuerta ya está nombrada en la skill de onboarding (2026-10-19). Falta: que
-   `generate-sponsors.js` sume `tools/contexto-manual.json` (los años viejos sin sponsor no se completan).
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 1004 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 56 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);
@@ -259,6 +259,10 @@ af) listas de las ligas amateur belgas
    de las dos sociedades (suman casi exacto) en vez de la fila consolidada? Si no: lump_football_operations y other_expenses.
    aj) la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen", y suma el subtotal
    "Erträge netto" cuando el documento lo imprime. Detalle de ah a aj en `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`.
+   p2) dos filas con el mismo rótulo en lados opuestos ("Intereses" de ingreso y de gasto, Boyacá Chicó 2025, L839 y L999): distinguirlas
+   antes de pasarlas al resultado financiero (lo propuso un subagente de Pantallas 3).
+   q2) partir una fila que mezcla amortización de pases con depreciación (Silkeborg 2025 "Depreciation, amortisation and impairment" 6.502
+   + 6.168; Viborg 2025): hoy va entera a player_amortisation y la cifra no es exacta (mismo espíritu que la g2).
    z2) (también Aston Villa 2023-24, 13 meses por cambio de cierre de mayo a junio, precedente Wolves 2025: la compuerta de `cargar.mjs`,
    `per.meses < 12`, no reconoce una transición de más de 12 meses con importes del año anterior; Aston Villa se carga con la compuerta
    salteada a mano esa sola vez) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en

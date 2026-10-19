@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 831 — Lote 103: 17 ejercicios nuevos (2026-10-19)
+
+* Botafogo-SP, Chapecoense, Coritiba, Grêmio, Hajduk, Midtjylland, Rijeka, Silkeborg, Ferro, Fredericia, Instituto, Bragantino, Universidad
+  de Chile, Viborg, Colo-Colo, Dinamo Zagreb y São Paulo 2025. `ejercicios-nuevos.mjs` reconoce un PDF con la fecha del cierre en el nombre
+  (River). Amazonas 2025 (balance de la federación) a documentos descartados. 273 cerrado: el generador ya suma el contexto manual.
+
 ## Versión 830 — Basel completo y tres mejoras de la 323 (2026-10-19)
 
 * Basel: caja (sin deuda en ningún año) y presidentes en `data/gestiones/ch.js` (324 cerrado). St. Gallen: 3 casos de la cola.
