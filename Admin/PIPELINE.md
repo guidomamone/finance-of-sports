@@ -168,6 +168,14 @@ Mitigaciones:
                   sociedad sola, con cita). Se corre después de cada país nuevo. La carpeta de `--auditar-a2` y la de
                   `--exportar-a2` tienen que estar fuera del repo o dentro de una que netlify.toml no publica (Admin/mediciones/...);
                   si no, frenan sin escribir
+ PASO A3 (Claude) (to-do 298 w, escalón 2) cuando A2 ve los dos estados sin totales para votar: las líneas que hablan de controladas
+                  (cualquier idioma, tablas incluidas) → "¿alguna controlada hace el negocio del fútbol del club?" (la regla de
+                  CONVENCIONES-DATOS). Compuerta: la línea citada está entre las mandadas y nombra a la controlada; SOLO "consolidado" decide
+                  (un "individual" o "no_se" frena como antes). Cuenta como el voto de ese documento. Sonnet, solo al ejecutar (~US$ 0,01;
+                  caché Generados/_cache/claude-perimetro-a3.jsonl); en el ensayo, sin respuesta guardada, el documento sale frenado.
+                  Medición: --exportar-a3 <carpeta> (pedidos para un subagente) y --evaluar-a3 <carpeta> (compuerta contra el perímetro
+                  fijado). Lotes 93-94: 10 casos, 6 bien, 0 mal, 3 no decide (PEC Zwolle dijo individual: no decide), 1 sin fijar;
+                  el ensayo con esas respuestas pasa de 13 documentos frenados a 6
  PASO B (voto)    C1 consolidado ≥ 5% sobre individual (año o anterior) · C2 crecimientos distintos en ≥ 15 puntos (fusión) ·
                   C3 Jev: ¿una controlada hace negocio del fútbol? ── 2-3 → consolidado · 0 → individual · 1 o sin respuesta → no decide
  CLUB             la regla de Admin/CONVENCIONES-DATOS.md ("qué perímetro se carga cuando la serie cambia"): un ejercicio con un solo
