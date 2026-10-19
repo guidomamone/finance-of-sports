@@ -548,5 +548,18 @@
       "estadio": "Fredrikstad Stadion",
       "fuente": "https://en.wikipedia.org/wiki/Fredrikstad_Stadion"
     }
+  },
+  "celtic-gb": {
+    "2025": {
+      "estadio": "Celtic Park",
+      "capacidad": 60411,
+      "sponsor": "Dafabet",
+      "marca": "Adidas",
+      "fuente": "https://en.wikipedia.org/wiki/Celtic_Park",
+      "fuentes": {
+        "sponsor": "https://sponsorship.sportbusiness.com/news/celtic-lands-long-term-extension-with-kit-sponsor-dafabet",
+        "marca": "https://www.scotsman.com/sport/football/celtic/celtic-fc-new-kit-unveil-adidas-home-shirt-heres-when-it-is-available-to-buy-and-the-price-4645920"
+      }
+    }
   }
 }
