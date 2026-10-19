@@ -258,6 +258,7 @@ window.CLUB_INDEX = {
   "unionsg-be": {"n":"Union Saint-Gilloise","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "urawareddiamonds": {"n":"Urawa Red Diamonds","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "valenciacf": {"n":"Valencia CF","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "valerenga-no": {"n":"Vålerenga","c":"NO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "varazdin-hr": {"n":"Varaždin","c":"HR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "vascodagama-br": {"n":"Vasco da Gama","c":"BR","q":"full","y":1,"last":2023,"yrs":[[2023,"official_balance_sheet"]]},
   "vejle-dk": {"n":"Vejle","c":"DK","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},

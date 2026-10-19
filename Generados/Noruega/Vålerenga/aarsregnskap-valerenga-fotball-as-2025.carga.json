@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf",
- "generado": "2026-10-19T01:04:31.653Z",
+ "generado": "2026-10-19T01:15:31.117Z",
  "frena": [
   {
    "etapa": "club",
@@ -499,10 +499,9 @@
   "label": "Tipo medio de referencia de Norges Bank al 2025-12-31"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de no 2025 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "no-eliteserien",
+  "fuente": "roster cacheado de \"2025 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Vålerenga\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -541,9 +540,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de no 2025 cacheada",
-   "estado": "pendiente"
+   "valor": "no-eliteserien",
+   "fuente": "roster cacheado de \"2025 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Vålerenga\"",
+   "estado": "ok"
   }
  },
  "resumen": {

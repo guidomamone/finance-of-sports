@@ -3,6 +3,9 @@
 // No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
+  'valerenga-no': {
+    2025: {"estadio":"Intility Arena","capacidad":16556,"sponsor":"OBOS","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
+  },
   'viking-no': {
     2025: {"estadio":"Lyse Arena","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
