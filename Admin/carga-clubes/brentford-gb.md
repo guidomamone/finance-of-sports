@@ -122,6 +122,46 @@ _antes de Matthew Benham (data/gestiones/gb.js):_
 Benham tomó el control total en junio de 2012 (Bees United votó la transferencia); día 01 aproximado. Cliff Crown fue chairman; Benham es el dueño.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Brentford/brentford-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Brentford/brentford-group-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Central Distributions | pág. 39, precedente |
+| 2 | Commercial | pág. 39, precedente |
+| 3 | Matchday | pág. 39, precedente |
+| 4 | Other | pág. 39, precedente |
+| 5 | Rents received | pág. 39, Claude 0.85 |
+| 6 | Grant income | pág. 39, Jev 0.97 |
+| 7 | Loan player revenue | pág. 39, Jev 0.97 |
+| 8 | Other Income | pág. 39, Jev 0.99 |
+| 9 | Gain on disposal of players' registrations | pág. 24, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Administrative expenses | pág. 24, precedente |
+| 2 | Loss on sale of tangible fixed assets | pág. 24, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Brentford".
+```
+
 ## 2022
 
 ### Ingresos
@@ -186,6 +226,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Brentford/brentford-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### brentford-gb-group-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Brentford/brentford-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

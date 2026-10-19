@@ -26,6 +26,17 @@ const brentfordGbRevenueLinesByYear = {
     { rawLabel:'Other Income', normalizedCategory:'other_income', amountNative:0.28, disclosureLevel:'aggregated' },
     { rawLabel:'Gain on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:4.583, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Central Distributions', normalizedCategory:'broadcasting', amountNative:135.175, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:18.905, disclosureLevel:'aggregated' },
+    { rawLabel:'Matchday', normalizedCategory:'matchday_competition', amountNative:11.25, disclosureLevel:'aggregated' },
+    { rawLabel:'Other', normalizedCategory:'player_sales', amountNative:1.178, disclosureLevel:'aggregated' },
+    { rawLabel:'Rents received', normalizedCategory:'other_income', amountNative:0.083, disclosureLevel:'aggregated' },
+    { rawLabel:'Grant income', normalizedCategory:'other_income', amountNative:0.16, disclosureLevel:'aggregated' },
+    { rawLabel:'Loan player revenue', normalizedCategory:'player_sales', amountNative:2.51, disclosureLevel:'aggregated' },
+    { rawLabel:'Other Income', normalizedCategory:'other_income', amountNative:0.845, disclosureLevel:'aggregated' },
+    { rawLabel:'Gain on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:5.561, disclosureLevel:'aggregated' },
+  ],
 };
 
 const brentfordGbExpenseLinesByYear = {
@@ -44,6 +55,10 @@ const brentfordGbExpenseLinesByYear = {
   2022: [
     { rawLabel:'Administrative expenses', normalizedCategory:'other_expenses', amountNative:-116.751, disclosureLevel:'aggregated' },
     { rawLabel:'Loss on disposal of tangible fixed assets', normalizedCategory:'exceptional_items', amountNative:-0.955, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Administrative expenses', normalizedCategory:'other_expenses', amountNative:-165.585, disclosureLevel:'aggregated' },
+    { rawLabel:'Loss on sale of tangible fixed assets', normalizedCategory:'exceptional_items', amountNative:-0.076, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -81,6 +96,21 @@ const brentfordGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:147.379, officialTotalExpenses:116.751, officialPAT:25.667,
   },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-06-30',
+    sourceId:'brentford-gb-group-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.843, tax:1.746,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:1.165},
+      {label:'Interest payable and similar expenses', value:-2.008},
+      {label:'Tax credit / (charge) on profit', value:1.746},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:175.667, officialTotalExpenses:165.585, officialPAT:10.909,
+  },
 };
 
 const brentfordGbPresupuestoOverlayByYear = {};
@@ -115,6 +145,11 @@ Object.assign(sources, {
   'brentford-gb-group-accounts-2021-22': {
     id:'brentford-gb-group-accounts-2021-22', clubId:'brentford-gb',
     title:'Brentford FC Ltd — brentford-group-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'brentford-gb-group-accounts-2022-23': {
+    id:'brentford-gb-group-accounts-2022-23', clubId:'brentford-gb',
+    title:'Brentford FC Ltd — brentford-group-accounts-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

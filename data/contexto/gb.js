@@ -25,6 +25,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'brentford-gb': {
     2022: {"estadio":"Brentford Community Stadium","capacidad":17250,"sponsor":"Hollywoodbets","marca":"Umbro","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Brentford Community Stadium","capacidad":17250,"sponsor":"Hollywoodbets","marca":"Umbro","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Brentford Community Stadium","capacidad":17250,"sponsor":"Hollywoodbets","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Brentford Community Stadium","capacidad":17250,"sponsor":"Hollywoodbets","marca":"Umbro","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
