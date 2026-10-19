@@ -18,7 +18,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'rbbragantino-br': { 2019: 'br-serieB', 2024: 'br-serieA', 2025: 'br-serieA' },
   'corinthians-br': { 2024: 'br-serieA', 2025: 'br-serieA' },
   'palmeiras-br': { 2024: 'br-serieA', 2025: 'br-serieA' },
-  'saopaulo-br': { 2023: 'br-serieA', 2024: 'br-serieA' },
+  'saopaulo-br': { 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
   'santos-br': { 2024: 'br-serieB', 2025: 'br-serieA' },
   'internacional-br': { 2024: 'br-serieA', 2025: 'br-serieA' },
   'fluminense-br': { 2024: 'br-serieA', 2025: 'br-serieA' },

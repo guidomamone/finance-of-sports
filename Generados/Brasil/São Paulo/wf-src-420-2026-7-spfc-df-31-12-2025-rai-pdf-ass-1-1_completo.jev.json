@@ -1,0 +1,539 @@
+{
+ "md": "Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.md",
+ "generatedAt": "2026-10-19T17:17:30.343Z",
+ "rubrosHuella": "80fdf0de98eca8148c6eefef6024743d003c9645",
+ "rubros": [
+  {
+   "label": "Publicidade e patrocínio",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Projeto sócio torcedor",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrecadação de jogos",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Licenciamento da marca",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Contribuições e taxas",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "member_dues",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamentos e esportes amadores",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_sports",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Festas e eventos sociais",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Aluguéis e patrocínios",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Camarotes e cadeiras cativas",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "season_tickets",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidade",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aluguéis",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "stadium_other",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de Arena",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Pessoal",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos trabalhistas",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Benefícios",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Prêmios",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de uso de imagem",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mecanismo de solidariedade",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbitragens, federações e confederações",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com jogos",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de transmissão de TV/Premiações",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Água/luz/telefone",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Manutenções",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação e amortização (software/marcas)",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gerais",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Reversão Provisão Perdas",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Outras receitas (nota 24)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1121
+  },
+  {
+   "label": "Tributos",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Intermediações sobre negociações c/ atletas (nota 22)",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1114
+  },
+  {
+   "label": "Serviços de limpeza/lavanderia/medicina",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Compensação de Ofício Tributos Federais",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Outras receitas (nota 24)\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Despesas gerais e com jogos",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Rateios de serviços de alimentação, transporte e lavanderia.",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Negociação de atestados liberatórios de atletas (nota 22)",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Amortização/baixa de contratos de atletas profissionais (nota 10.1)",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1125
+  },
+  {
+   "label": "Receitas diversas",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Outras receitas (nota 24)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Amortização do custo de atletas formados (nota 10.3)",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Contingências (nota 18)",
+   "lado": "expense",
+   "page": 23,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Despesas com jogos e festas",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.85
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Perdas estimadas (nota 7)",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "player_impairment",
+     0.1
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 1067
+  }
+ ]
+}

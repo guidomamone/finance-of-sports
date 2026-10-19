@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.pdf",
  "md": "Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.md",
- "generado": "2026-10-19T17:09:22.702Z",
+ "generado": "2026-10-19T18:34:29.249Z",
  "estado": "ok",
  "clubId": "saopaulo-br",
  "year": 2025,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.pdf",
+   "campo": "anio",
+   "valor": "2025",
+   "linea": null,
+   "motivo": "el nombre del archivo dice 2026 (publicado en 2026) pero el documento es el balance al 31-12-2025 (df-31-12-2025); Claude 2026-10-19",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

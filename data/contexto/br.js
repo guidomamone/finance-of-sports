@@ -216,6 +216,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'saopaulo-br': {
     2023: {"estadio":"Morumbi","capacidad":72039,"sponsor":"Sportsbet.io","marca":"Adidas","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
     2024: {"estadio":"MorumBIS","capacidad":67428,"sponsor":"Superbet","marca":"New Balance","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
+    2025: {"estadio":"MorumBIS","capacidad":66671,"sponsor":"Superbet","marca":"New Balance","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
   'sportrecife-br': {
     2025: {"estadio":"Ilha do Retiro","capacidad":32983,"sponsor":"Betnacional","marca":"Umbro","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
