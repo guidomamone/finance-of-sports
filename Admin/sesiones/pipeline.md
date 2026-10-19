@@ -382,3 +382,36 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   silencio. Probado en memoria sobre ru.js con la lógica vieja y la nueva (el ensayo de la carga no escribe ligas). Sigue el 286-287.
 
 ## Después del merge del 279 (2026-10-19)
+
+### Cierre de Pipeline 3 (2026-10-19, por contexto)
+
+Estado: rama `pipeline` igual a main (todo mergeado hasta el 279), sin cambios sin commitear. No hay nada medido o diseñado sin commitear:
+los parches de prueba de esta sesión (q, n, l, u2, y3) quedaron aplicados y commiteados; el resto de los ensayos vivió en el scratchpad.
+
+**Qué queda (del bloque C y de la 298):**
+- **z2** (decisión de Guido): Westerlo 2015, 18 meses por cambio de cierre de diciembre a junio (01/01/2014 – 30/06/2015). Tiene importes
+  del año anterior, así que no entra por la regla del primer ejercicio (z) ni por la de transición (solo cubre menos de 12 meses). Opciones a
+  mostrarle: cargarlo como 2015 con nota, como la transición de 11 meses de Benfica; o dejarlo parcial.
+- **g2** (condicional): partir en la cola una fila mixta según su nota. Solo si aparece otra fila mixta sin códigos NBB; hoy no hay caso.
+- **286 y 287**: el ensayo que no anticipa Mistral; el chequeo de carpeta doble y de entidad al guardar. Sin mirar todavía. Ojo: la 298 e3
+  ya arregló el ensayo de `resolver-inventario` para los `.md` sin tablas; ver qué queda del 286 después de eso.
+- **306**: Milan 2018 en `caja-deuda --medir` (1,21 M contra 164,27 M): las filas de deuda "a) entro / b) oltre" cuelgan de un título sin
+  importe y el diccionario solo ve "4 debiti verso banche". Sin daño hoy (año cargado): medir antes de decidir si es HALLAZGOS.
+- **307**: `localizar.mjs --lista --ejecutar` imprime "Gastado: US$ 0.00" (el registro tiene el costo real; `gasto.mjs` da el bueno).
+- **301**: `gasto.mjs --json | …` se corta a los 64 KB (el proceso sale antes de vaciar stdout).
+- **302**: el deflactor de EE.UU. desde la BEA en vez de FRED (`tools/fetch-fx-reference.mjs --deflactores`).
+- **290 y 310**: caja y deuda (290 lo que queda de Genoa 2022; 310 el primer año sin vecino, cualquier país: ver el TODO).
+
+**Para la sesión nueva: por dónde seguir.**
+- Arrancar con la skill club-or-year-onboarding y `node tools/worktree.mjs preparar <carpeta>`. Medir con los lotes nuevos:
+  `Admin/lotes/prueba-rapida.txt` (a mano, 62), `prueba-mediana.txt` (339) y `prueba-completa.txt` (720), que arma
+  `node tools/lotes-prueba.mjs --escribir` (correrlo si entraron años nuevos). Bases de esta sesión: `medir-verificar --pasadas 2` sobre la
+  completa, OK 685 / COLA 35; `medir-cargar --contra-sitio`, 604 de 644 años publicados se reproducen.
+- Cómo se trabajó: diseño con medición gratis y el ok de Guido en texto ANTES de codear; código viejo contra nuevo sobre la completa; un
+  commit por cambio; nota acá; aviso a la principal. Sin el panel Plan ni el modo plan (pedido de la principal: la sesión caía en
+  acceptEdits); los diseños y las preguntas, en el chat.
+- Trampas vistas: el ensayo de `lote.mjs` re-verifica gratis los documentos con respuestas nuevas en la cola y deja modificados sus
+  `.verificacion.json` y la cola (restaurar con git antes de commitear); `medir-cargar` con la p1 anota en `perfil-clubes.jsonl` las
+  respuestas viejas de la cola con su año (restaurar después de medir); los subagentes de esta sesión no tienen Grep: si tienen que buscar en
+  `.md` grandes, sacar antes las líneas con un script y pasarles el extracto.
+- Pendiente de anotar en la memoria (con Guido): que el panel Plan dejó de usarse en las sesiones de worktree.
