@@ -238,6 +238,7 @@ window.CLUB_INDEX = {
   "rijeka-hr": {"n":"Rijeka","c":"HR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "rioave-pt": {"n":"Rio Ave","c":"PT","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "river": {"n":"River Plate","c":"AR","q":"mixed","y":2,"last":2024,"yrs":[[2024,"unofficial_mirror"],[2021,"official_balance_sheet"]]},
+  "rodajc-nl": {"n":"Roda JC","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "rosariocentral": {"n":"Rosario Central","c":"AR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "rostov-ru": {"n":"Rostov","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "rubinkazan-ru": {"n":"Rubin Kazan","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
