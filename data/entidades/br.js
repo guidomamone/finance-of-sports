@@ -362,7 +362,7 @@ Object.assign(window.CLUB_ENTIDADES, {
     },
     "fuente": {
      "md": "Clubes/Brasil/Vasco da Gama/dre-balanco-patrimonial-2024.md",
-     "linea": 815
+     "linea": 578
     }
    },
    "vasco-saf": {

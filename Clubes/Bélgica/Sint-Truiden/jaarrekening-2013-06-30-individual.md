@@ -1,23 +1,58 @@
-
 --- pág. 1 ---
 
-20 18/12/2013 BE 0845.049.251 19 EUR
+|  20 | 18/12/2013 | BE 0845.049.251 | 19 | EUR |  |   |
+| --- | --- | --- | --- | --- | --- | --- |
+|  NAT. | Datum neerlegging | Nr. | Blz. | D. | 13697.00158 | VKT 1.1  |
 
-NAT. Datum neerlegging Nr. Blz. D. 13697.00158 VKT 1.1
-JAARREKENING IN EURO
-Naam: STVV
+## JAARREKENING IN EURO
+
+Naam: **STVV**
+
 Rechtsvorm: Naamloze vennootschap
-Adres: Tiensesteenweg Nr: 168 Bus:
-Postnummer: 3800 Gemeente: Sint-Truiden
+
+Adres: Tiensesteenweg
+
+Nr: 168
+
+Bus:
+
+Postnummer: 3800
+
+Gemeente: Sint-Truiden
+
 Land: België
+
 Rechtspersonenregister (RPR) - Rechtbank van Koophandel van: Hasselt
+
 Internetadres:
-Ondernemingsnummer BE 0845.049.251
-Datum van de neerlegging van de oprichtingsakte OF van het recentste stuk dat de datum van 05-04-2012
-bekendmaking van de oprichtingsakte en van de akte tot statutenwijziging vermeldt.
-Jaarrekening goedgekeurd door de algemene vergadering van 09-12-2013
-met betrekking tot het boekjaar dat de periode dekt van 05-04-2012 tot 30-06-2013
-Vorig boekjaar van - tot
+
+Ondernemingsnummer
+
+BE 0845.049.251
+
+Datum van de neerlegging van de oprichtingsakte OF van het recentste stuk dat de datum van bekendmaking van de oprichtingsakte en van de akte tot statutenwijziging vermeldt.
+
+05-04-2012
+
+Jaarrekening goedgekeurd door de algemene vergadering van
+
+09-12-2013
+
+met betrekking tot het boekjaar dat de periode dekt van
+
+05-04-2012
+
+tot
+
+30-06-2013
+
+Vorig boekjaar van
+
+-
+
+tot
+
+-
 
 Zijn gevoegd bij deze jaarrekening:
 
@@ -25,26 +60,36 @@ Nummers van de secties van het standaardmodel die niet werden neergelegd omdat z
 
 VKT 5.2.1, VKT 5.2.2, VKT 5.7, VKT 5.8, VKT 5.9, VKT 8, VKT 9
 
-VOLLEDIGE LIJST met naam, voornamen, beroep, woonplaats (adres, nummer, postnummer en gemeente) en functie
+VOLLEDIGE LIJST met naam, voornamen, beroep, woonplaats (adres, nummer, postnummer en gemeente) en functie in de onderneming, van de BESTUURDERS, ZAAKVOERDERS EN COMMISSARISSEN
 
-in de onderneming, van de BESTUURDERS, ZAAKVOERDERS EN COMMISSARISSEN
+### B. LAMMENS BVBA
 
-B. LAMMENS BVBA
 BE 0875.411.934
+
 Zepperenweg 93
+
 3800 Sint-Truiden
+
 BELGIË
 
-Begin van het mandaat: 19-04-2013 Einde van het mandaat: 19-04-2014 Gedelegeerd bestuurder
+Begin van het mandaat: 19-04-2013
+
+Einde van het mandaat: 19-04-2014
+
+Gedelegeerd bestuurder
 
 Direct of indirect vertegenwoordigd door:
-LAMMENS Bart
+
+**LAMMENS** Bart
+
 Zepperenweg 93
 
 3800 Sint-Truiden
+
 BELGIË
 
-SFH BVBA
+### SFH BVBA
+
 BE 0501.958.073
 
 1/19
@@ -55,304 +100,208 @@ Louis Claeslaan 19
 3440 Zoutleeuw
 BELGIË
 
-Begin van het mandaat: 19-04-2013
+Begin van het mandaat: 19-04-2013 Einde van het mandaat: 19-04-2014 Gedelegeerd bestuurder
 
 Direct of indirect vertegenwoordigd door:
 
-HAZEVOETS Frank
+**HAZEVOETS** Frank
 
 Louis Claeslaan 19
 3440 Zoutleeuw
 BELGIË
 
-RASAR BVBA
+**RASAR BVBA**
 
 BE 0893.898.847
 Windmolenstraat 18
 3800 Sint-Truiden
 BELGIË
 
-Begin van het mandaat: 19-04-2013
+Begin van het mandaat: 19-04-2013 Einde van het mandaat: 19-04-2014 Gedelegeerd bestuurder
 
 Direct of indirect vertegenwoordigd door:
 
-ASNONG Robrecht
+**ASNONG** Robrecht
 
 Windmolenstraat 18
 3800 Sint-Truiden
 BELGIË
 
-CONINX Alain
+**CONINX** Alain
 
 Bautershoven 17
 3800 Sint-Truiden
 BELGIË
 
-Begin van het mandaat: 19-04-2013
-VANLEEUW Aimé
-Louis Claeslaan 4
+Begin van het mandaat: 19-04-2013 Einde van het mandaat: 19-04-2014 Bestuurder
 
+**VANLEEUW** Aimé
+
+Louis Claeslaan 4
 3440 Zoutleeuw
 BELGIË
 
-Begin van het mandaat: 19-04-2013
-ABROUGUI Bouthaina
+Begin van het mandaat: 19-04-2013 Einde van het mandaat: 19-04-2014 Bestuurder
+
+**ABROUGUI** Bouthaina
+
 Groot-Gelmenlaan 173
-
-3800 Sint-Truiden
-BELGIË
-
-Begin van het mandaat: 19-04-2013
-STRAUVEN Viviane
-Zepperen-Dorp 68
-
-3800 Sint-Truiden
-BELGIË
-
-Begin van het mandaat: 19-04-2013
-ROBERT Benoît
-Rue du Bois 16
-
-4280 Hannut
-BELGIË
-
-Begin van het mandaat: 19-04-2013
-
-Einde van het mandaat: 19-04-2014
-
-Einde van het mandaat: 19-04-2014
-
-Einde van het mandaat: 19-04-2014
-
-Einde van het mandaat: 19-04-2014
-
-Einde van het mandaat: 19-04-2014
-
-Einde van het mandaat: 19-04-2014
-
-Einde van het mandaat: 19-04-2014
-
-Gedelegeerd bestuurder
-
-Gedelegeerd bestuurder
-
-Bestuurder
-
-Bestuurder
-
-Bestuurder
-
-Bestuurder
-
-Bestuurder
-
-2/19
-
---- pág. 3 ---
-
-DEGRAEF Jeanine
-
-Engelbamp 7a/201
 3800 Sint-Truiden
 BELGIË
 
 Begin van het mandaat: 19-04-2013 Einde van het mandaat: 19-04-2014 Bestuurder
 
+**STRAUVEN** Viviane
+
+Zepperen-Dorp 68
+3800 Sint-Truiden
+BELGIË
+
+Begin van het mandaat: 19-04-2013 Einde van het mandaat: 19-04-2014 Bestuurder
+
+**ROBERT** Benoît
+
+Rue du Bois 16
+4280 Hannut
+BELGIË
+
+Begin van het mandaat: 19-04-2013 Einde van het mandaat: 19-04-2014 Bestuurder
+
+2/19
+
+--- pág. 3 ---
+
+**DEGRAEF** Jeanine
+
+Engelbamp 7a/201 3800 Sint-Truiden BELGIË
+
+Begin van het mandaat: 19-04-2013
+
+Einde van het mandaat: 19-04-2014
+
+Bestuurder
+
 3/19
 
 --- pág. 4 ---
-
-Nr. BE 0845.049.251 VKT 1.2
-
-VERKLARING BETREFFENDE EEN AANVULLENDE OPDRACHT VOOR NAZICHT OF CORRECTIE
-
-Het bestuursorgaan verklaart dat geen enkele opdracht voor nazicht of correctie werd gegeven aan iemand die daar wettelijk niet toe
-gemachtigd is met toepassing van de artikelen 34 en 37 van de wet van 22 april 1999 betreffende de boekhoudkundige en fiscale
-beroepen.
-
-De jaarrekening werd niet geverifieerd of gecorrigeerd door een externe accountant of door een bedrijfsrevisor die niet de
-commissaris is.
-
-In bevestigend geval, moeten hierna worden vermeld: naam, voornamen, beroep en woonplaats van elke externe accountant of
-bedrijfsrevisor en zijn lidmaatschapsnummer bij zijn Instituut, evenals de aard van zijn opdracht:
-
-A. Het voeren van de boekhouding van de onderneming”,
-
-B. Het opstellen van de jaarrekening”,
-
-C. Het verifiëren van de jaarrekening en/of
-
-D. Het corrigeren van de jaarrekening.
-
-Indien taken bedoeld onder A. of onder B. uitgevoerd zijn door erkende boekhouders of door erkende boekhouders-fiscalisten,
-kunnen hierna worden vermeld: naam, voornamen, beroep en woonplaats van elke erkende boekhouder of erkende
-
-boekhouder-fiscalist en zijn lidmaatschapsnummer bij het Beroepsinstituut van erkende Boekhouders en Fiscalisten, evenals de aard
-van zijn opdracht.
-
-*__Facultatieve vermelding.
-
-4/19
-
---- pág. 5 ---
 
 Nr.
 
 BE 0845.049.251
 
+VKT 1.2
+
+# VERKLARING BETREFFENDE EEN AANVULLENDE OPDRACHT VOOR NAZICHT OF CORRECTIE
+
+Het bestuursorgaan verklaart dat geen enkele opdracht voor nazicht of correctie werd gegeven aan iemand die daar wettelijk niet toe gemachtigd is met toepassing van de artikelen 34 en 37 van de wet van 22 april 1999 betreffende de boekhoudkundige en fiscale beroepen.
+
+De jaarrekening werd niet geverifieerd of gecorrigeerd door een externe accountant of door een bedrijfsrevisor die niet de commissaris is.
+
+In bevestigend geval, moeten hierna worden vermeld: naam, voornamen, beroep en woonplaats van elke externe accountant of bedrijfsrevisor en zijn lidmaatschapsnummer bij zijn Instituut, evenals de aard van zijn opdracht:
+
+A. Het voeren van de boekhouding van de onderneming*,
+B. Het opstellen van de jaarrekening*,
+C. Het verifiëren van de jaarrekening en/of
+D. Het corrigeren van de jaarrekening.
+
+Indien taken bedoeld onder A. of onder B. uitgevoerd zijn door erkende boekhouders of door erkende boekhouders-fiscalisten, kunnen hierna worden vermeld: naam, voornamen, beroep en woonplaats van elke erkende boekhouder of erkende boekhouder-fiscalist en zijn lidmaatschapsnummer bij het Beroepsinstituut van erkende Boekhouders en Fiscalisten, evenals de aard van zijn opdracht.
+
+* Facultatieve vermelding.
+
+4/19
+
+--- pág. 5 ---
+
+Nr. BE 0845.049.251
+
 VKT 2.1
 
-BALANS NA WINSTVERDELING
+# **BALANS NA WINSTVERDELING**
 
-ACTIVA
-
-VASTE ACTIVA
-
-Oprichtingskosten
-
-Immateriële vaste activa
-
-Materiële vaste activa
-Terreinen en gebouwen
-
-Installaties, machines en uitrusting
-
-Meubilair en rollend materieel
-
-Leasing en soortgelijke rechten
-Overige materiële vaste activa
-Activa in aanbouw en vooruitbetalingen
-
-Financiële vaste activa
-
-VLOTTENDE ACTIVA
-
-Vorderingen op meer dan één jaar
-
-Handelsvorderingen
-Overige vorderingen
-
-Voorraden en bestellingen in uitvoering
-
-Voorraden
-
-Bestellingen in uitvoering
-
-Vorderingen op ten hoogste één jaar
-
-Handelsvorderingen
-Overige vorderingen
-
-Geldbeleggingen
-
-Liquide middelen
-
-Overlopende rekeningen
-
-TOTAAL VAN DE ACTIVA
-
-Toel.
-
-5.1.1
-
-5.1.2
-
-5.1.3/5.2.1
-
-5.2.1
-
-Codes Boekjaar Vorig boekjaar
-20/28 3.529.326
-20
-
-21 2.279.663
-22/27 1.230.049
-22 1.021.725
-23 75.390
-24 85.403
-25
-
-26 47.531
-27
-
-28 19.614
-29/58 1.081.110
-29
-
-290
-
-291
-
-3 49.804
-30/36 49.804
-37
-
-40/41 974.387
-40 765.077
-41 209.310
-50/53
-
-54/58 32.211
-490/1 24.707
-20/58 4.610.436
+|   | Toel. | Codes | Boekjaar | Vorig boekjaar  |
+| --- | --- | --- | --- | --- |
+|  **ACTIVA** |  |  |  |   |
+|  **VASTE ACTIVA** |  | 20/28 | **3.529.326** |   |
+|  **Oprichtingskosten** |  | 20 |  |   |
+|  **Immateriële vaste activa** | 5.1.1 | 21 | **2.279.663** |   |
+|  **Materiële vaste activa** | 5.1.2 | 22/27 | **1.230.049** |   |
+|  Terreinen en gebouwen |  | 22 | 1.021.725 |   |
+|  Installaties, machines en uitrusting |  | 23 | 75.390 |   |
+|  Meubilair en rollend materieel |  | 24 | 85.403 |   |
+|  Leasing en soortgelijke rechten |  | 25 |  |   |
+|  Overige materiële vaste activa |  | 26 | 47.531 |   |
+|  Activa in aanbouw en vooruitbetalingen |  | 27 |  |   |
+|  **Financiële vaste activa** | 5.1.3/5.2.1 | 28 | **19.614** |   |
+|  **VLOTTENDE ACTIVA** |  | 29/58 | **1.081.110** |   |
+|  **Vorderingen op meer dan één jaar** |  | 29 |  |   |
+|  Handelsvorderingen |  | 290 |  |   |
+|  Overige vorderingen |  | 291 |  |   |
+|  **Voorraden en bestellingen in uitvoering** |  | 3 | **49.804** |   |
+|  Voorraden |  | 30/36 | 49.804 |   |
+|  Bestellingen in uitvoering |  | 37 |  |   |
+|  **Vorderingen op ten hoogste één jaar** |  | 40/41 | **974.387** |   |
+|  Handelsvorderingen |  | 40 | 765.077 |   |
+|  Overige vorderingen |  | 41 | 209.310 |   |
+|  **Geldbeleggingen** | 5.2.1 | 50/53 |  |   |
+|  **Liquide middelen** |  | 54/58 | **32.211** |   |
+|  **Overlopende rekeningen** |  | 490/1 | **24.707** |   |
+|  **TOTAAL VAN DE ACTIVA** |  | 20/58 | **4.610.436** |   |
 
 5/19
 
-
 --- pág. 6 ---
 
-Nr. BE 0845.049.251 VKT 2.2
-Toel. f Codes Boekjaar Vorig boekjaar
-PASSIVA
-EIGEN VERMOGEN 10/15 482.182
-Kapitaal 5.3 | 10 3.000.000
-Geplaatst kapitaal 100 3.000.000
-Niet-opgevraagd kapitaal 101
-Uitgiftepremies 11
-Herwaarderingsmeerwaarden 12
-Reserves 13
-Wettelijke reserve 130
-Onbeschikbare reserves 131
-Voor eigen aandelen 1310
-Andere 1311
-Belastingvrije reserves 132
-Beschikbare reserves 133
-Overgedragen winst (verlies) (+)/(-) 14 -2.517.818
-Kapitaalsubsidies 15
-Voorschot aan de vennoten op de verdeling van het
-netto-actief 19
-VOORZIENINGEN EN UITGESTELDE BELASTINGEN 16 15.000
-Voorzieningen voor risico's en kosten 5.4 | 160/5 15.000
-Uitgestelde belastingen 168
-SCHULDEN 17/49 4.113.254
-Schulden op meer dan één jaar 55 | 17 1.068.515
-Financiële schulden 170/4 1.068.515
-Kredietinstellingen, leasingschulden en soortgelijke
-schulden 172/3
-Overige leningen 174/0 1.068.515
-Handelsschulden 175
-Ontvangen vooruitbetalingen op bestellingen 176
-Overige schulden 178/9
-Schulden op ten hoogste één jaar 5.5 | 42/48 3.004.738
-Schulden op meer dan één jaar die binnen het jaar
-vervallen 42 365.815
-Financiële schulden 43 912.569
-Kredietinstellingen 430/8
-Overige leningen 439 912.569
-Handelsschulden 44 1.190.691
-Leveranciers 440/4 1.190.691
-Te betalen wissels 441
-Ontvangen vooruitbetalingen op bestellingen 46
-Schulden met betrekking tot belastingen,
-bezoldigingen en sociale lasten 45 527.913
-Belastingen 450/3 30.957
-Bezoldigingen en sociale lasten 454/9 496.957
-Overige schulden 47/48 7.750
-Overlopende rekeningen 492/3 40.000
-TOTAAL VAN DE PASSIVA 10/49 4.610.436
+Nr. BE 0845.049.251
+
+VKT 2.2
+
+|   | Toel. | Codes | Boekjaar | Vorig boekjaar  |
+| --- | --- | --- | --- | --- |
+|  **PASSIVA** |  |  |  |   |
+|  **EIGEN VERMOGEN** |  | 10/15 | **482.182** |   |
+|  **Kapitaal** | 5.3 | 10 | **3.000.000** |   |
+|  Geplaatst kapitaal |  | 100 | 3.000.000 |   |
+|  Niet-opgevraagd kapitaal |  | 101 |  |   |
+|  **Uitgiftepremies** |  | 11 |  |   |
+|  **Herwaarderingsmeerwaarden** |  | 12 |  |   |
+|  **Reserves** |  | 13 |  |   |
+|  Wettelijke reserve |  | 130 |  |   |
+|  Onbeschikbare reserves |  | 131 |  |   |
+|  Voor eigen aandelen |  | 1310 |  |   |
+|  Andere |  | 1311 |  |   |
+|  Belastingvrije reserves |  | 132 |  |   |
+|  Beschikbare reserves |  | 133 |  |   |
+|  **Overgedragen winst (verlies)** | (+)/(-) | 14 | **-2.517.818** |   |
+|  **Kapitaalsubsidies** |  | 15 |  |   |
+|  **Voorschot aan de vennoten op de verdeling van het netto-actief** |  | 19 |  |   |
+|  **VOORZIENINGEN EN UITGESTELDE BELASTINGEN** |  | 16 | **15.000** |   |
+|  **Voorzieningen voor risico's en kosten** | 5.4 | 160/5 | **15.000** |   |
+|  **Uitgestelde belastingen** |  | 168 |  |   |
+|  **SCHULDEN** |  | 17/49 | **4.113.254** |   |
+|  **Schulden op meer dan één jaar** | 5.5 | 17 | **1.068.515** |   |
+|  Financiële schulden |  | 170/4 | 1.068.515 |   |
+|  Kredietinstellingen, leasingschulden en soortgelijke schulden |  | 172/3 |  |   |
+|  Overige leningen |  | 174/0 | 1.068.515 |   |
+|  Handelsschulden |  | 175 |  |   |
+|  Ontvangen vooruitbetalingen op bestellingen |  | 176 |  |   |
+|  Overige schulden |  | 178/9 |  |   |
+|  **Schulden op ten hoogste één jaar** | 5.5 | 42/48 | **3.004.738** |   |
+|  Schulden op meer dan één jaar die binnen het jaar vervallen |  | 42 | 365.815 |   |
+|  Financiële schulden |  | 43 | 912.569 |   |
+|  Kredietinstellingen |  | 430/8 |  |   |
+|  Overige leningen |  | 439 | 912.569 |   |
+|  Handelsschulden |  | 44 | 1.190.691 |   |
+|  Leveranciers |  | 440/4 | 1.190.691 |   |
+|  Te betalen wissels |  | 441 |  |   |
+|  Ontvangen vooruitbetalingen op bestellingen |  | 46 |  |   |
+|  Schulden met betrekking tot belastingen, bezoldigingen en sociale lasten |  | 45 | 527.913 |   |
+|  Belastingen |  | 450/3 | 30.957 |   |
+|  Bezoldigingen en sociale lasten |  | 454/9 | 496.957 |   |
+|  Overige schulden |  | 47/48 | 7.750 |   |
+|  **Overlopende rekeningen** |  | 492/3 | **40.000** |   |
+|  **TOTAAL VAN DE PASSIVA** |  | 10/49 | **4.610.436** |   |
 
 6/19
-
 
 --- pág. 7 ---
 
@@ -360,95 +309,36 @@ Nr. BE 0845.049.251
 
 VKT 3
 
-RESULTATENREKENING
+# RESULTATENREKENING
 
-Bedrijfsopbrengsten en bedrijfskosten
-Brutomarge (#)/-)
-Omzet
-Handelsgoederen, grond- en hulpstoffen, diensten
-en diverse goederen
-Bezoldigingen, sociale lasten en pensioenen (+)/(-)
-Afschrijvingen en waardeverminderingen op
-oprichtingskosten, op immateriële en materiële vaste
-activa
-Waardeverminderingen op voorraden, op bestellingen
-in uitvoering en op handelsvorderingen: toevoegingen
-
-(terugnemingen) (+/(-)
-Voorzieningen voor risico's en kosten: toevoegingen
-(bestedingen en terugnemingen) (+/(-)
-
-Andere bedrijfskosten
-Als herstructureringskosten geactiveerde
-bedrijfskosten (-)
-
-Bedrijfswinst (Bedrijfsverlies) (+)/(-)
-Financiële opbrengsten
-Financiële kosten
-
-Winst (Verlies) uit de gewone bedrijfsuitoefening vóór
-belasting (+/(-)
-
-Uitzonderlijke opbrengsten
-
-Uitzonderlijke kosten
-
-Winst (Verlies) van het boekjaar vóór belasting
-
-IE)
-
-Onttrekking aan de uitgestelde belastingen
-Overboeking naar de uitgestelde belastingen
-Belastingen op het resultaat (+)/(-)
-Winst (Verlies) van het boekjaar (+)/(-)
-Onttrekking aan de belastingvrije reserves
-Overboeking naar de belastingvrije reserves
-
-Te bestemmen winst (verlies) van het boekjaar
-
-@/E)
-
-Toel.
-
-5.6
-
-5.6
-5.6
-
-Codes Boekjaar Vorig boekjaar
-9900 2.072.490
-70
-
-60/61
-
-62 3.791.453
-630 830.350
-631/4 96.368
-635/7 -80.000
-640/8 78.651
-649
-
-9901 -2.644.332
-75 3.441
-65 110.096
-9902 -2.750.987
-76 293.379
-66 25.769
-9903 -2.483.376
-780
-
-680
-
-67/77 34.441
-9904 -2.517.818
-789
-
-689
-
-9905 -2.517.818
+|   | Toel. | Codes | Boekjaar | Vorig boekjaar  |
+| --- | --- | --- | --- | --- |
+|  **Bedrijfsopbrengsten en bedrijfskosten** |  |  |  |   |
+|  Brutomarge (+)/(-) |  | 9900 | 2.072.490 |   |
+|  Omzet |  | 70 |  |   |
+|  Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen |  | 60/61 |  |   |
+|  Bezoldigingen, sociale lasten en pensioenen (+)/(-) | 5.6 | 62 | 3.791.453 |   |
+|  Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa |  | 630 | 830.350 |   |
+|  Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) |  | 631/4 | 96.368 |   |
+|  Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-) |  | 635/7 | -80.000 |   |
+|  Andere bedrijfskosten |  | 640/8 | 78.651 |   |
+|  Als herstructureringskosten geactiveerde bedrijfskosten (-) |  | 649 |  |   |
+|  **Bedrijfswinst (Bedrijfsverlies) (+)/(-)** |  | 9901 | **-2.644.332** |   |
+|  **Financiële opbrengsten** | 5.6 | 75 | **3.441** |   |
+|  **Financiële kosten** | 5.6 | 65 | **110.096** |   |
+|  **Winst (Verlies) uit de gewone bedrijfsuitoefening vóór belasting (+)/(-)** |  | 9902 | **-2.750.987** |   |
+|  **Uitzonderlijke opbrengsten** |  | 76 | **293.379** |   |
+|  **Uitzonderlijke kosten** |  | 66 | **25.769** |   |
+|  **Winst (Verlies) van het boekjaar vóór belasting (+)/(-)** |  | 9903 | **-2.483.376** |   |
+|  **Onttrekking aan de uitgestelde belastingen** |  | 780 |  |   |
+|  **Overboeking naar de uitgestelde belastingen** |  | 680 |  |   |
+|  **Belastingen op het resultaat (+)/(-)** |  | 67/77 | **34.441** |   |
+|  **Winst (Verlies) van het boekjaar (+)/(-)** |  | 9904 | **-2.517.818** |   |
+|  **Onttrekking aan de belastingvrije reserves** |  | 789 |  |   |
+|  **Overboeking naar de belastingvrije reserves** |  | 689 |  |   |
+|  **Te bestemmen winst (verlies) van het boekjaar (+)/(-)** |  | 9905 | **-2.517.818** |   |
 
 7/19
-
 
 --- pág. 8 ---
 
@@ -456,59 +346,53 @@ Nr. BE 0845.049.251
 
 VKT 4
 
-RESULTAATVERWERKING
+# **RESULTAATVERWERKING**
 
-Te bestemmen winst (verlies)
+**Te bestemmen winst (verlies)**
+
 Te bestemmen winst (verlies) van het boekjaar
 Overgedragen winst (verlies) van het vorige boekjaar
 
-Onttrekking aan het eigen vermogen
+**Onttrekking aan het eigen vermogen**
 
-Toevoeging aan het eigen vermogen
+**Toevoeging aan het eigen vermogen**
+
 aan het kapitaal en aan de uitgiftepremies
 aan de wettelijke reserve
 aan de overige reserves
 
-Over te dragen winst (verlies)
-Tussenkomst van de vennoten in het verlies
+**Over te dragen winst (verlies)**
 
-Uit te keren winst
+**Tussenkomst van de vennoten in het verlies**
+
+**Uit te keren winst**
+
 Vergoeding van het kapitaal
 Bestuurders of zaakvoerders
 Andere rechthebbenden
 
-Codes
+(+)/(-)
+(+)/(-)
+(+)/(-)
 
-Boekjaar
-
-Vorig boekjaar
-
-9906
-9905
-14P
-
-791/2
-
-691/2
-691
-6920
-6921
-
-14
-794
-
-694/6
-694
-695
-696
-
--2.517.818
--2.517.818
-
--2.517.818
+|  Codes | Boekjaar | Vorig boekjaar  |
+| --- | --- | --- |
+|  9906 | **-2.517.818** |   |
+|  9905 | -2.517.818 |   |
+|  14P |  |   |
+|  791/2 |  |   |
+|  691/2 |  |   |
+|  691 |  |   |
+|  6920 |  |   |
+|  6921 |  |   |
+|  14 | **-2.517.818** |   |
+|  794 |  |   |
+|  694/6 |  |   |
+|  694 |  |   |
+|  695 |  |   |
+|  696 |  |   |
 
 8/19
-
 
 --- pág. 9 ---
 
@@ -516,59 +400,60 @@ Nr. BE 0845.049.251
 
 VKT 5.1.1
 
-TOELICHTING
-STAAT VAN DE VASTE ACTIVA
+# **TOELICHTING**
+**STAAT VAN DE VASTE ACTIVA**
 
-IMMATERIËLE VASTE ACTIVA
-Aanschaffingswaarde per einde van het boekjaar
+**IMMATERIËLE VASTE ACTIVA**
 
-Mutaties tijdens het boekjaar
+**Aanschaffingswaarde per einde van het boekjaar**
+
+**Mutaties tijdens het boekjaar**
+
 Aanschaffingen, met inbegrip van de geproduceerde vaste activa
+
 Overdrachten en buitengebruikstellingen
-Overboekingen van een post naar een andere (#)/(-)
 
-Aanschaffingswaarde per einde van het boekjaar
+Overboekingen van een post naar een andere
 
-Afschrijvingen en waardeverminderingen per einde van het
-boekjaar
+(+)/(-)
 
-Mutaties tijdens het boekjaar
+**Aanschaffingswaarde per einde van het boekjaar**
+
+**Afschrijvingen en waardeverminderingen per einde van het boekjaar**
+
+**Mutaties tijdens het boekjaar**
+
 Geboekt
+
 Teruggenomen
+
 Verworven van derden
+
 Afgeboekt na overdrachten en buitengebruikstellingen
-Overgeboekt van een post naar een andere (+)/(-)
 
-Afschrijvingen en waardeverminderingen per einde van het
-boekjaar
+Overgeboekt van een post naar een andere
 
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR
+(+)/(-)
 
-Codes Boekjaar Vorig boekjaar |
-8059P XXXXKKKKKK |
-8029 3.311.274
+**Afschrijvingen en waardeverminderingen per einde van het boekjaar**
 
-8039 300.000
+**NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR**
 
-8049
-
-8059 3.011.274
-
-8129P XXXXKKKKKK
-
-8079 628.783
-
-8089
-
-8099 327.828
-
-8109 225.000
-
-8119
-
-8129 731.611
-
-21 2.279.663
+|  Codes | Boekjaar | Vorig boekjaar  |
+| --- | --- | --- |
+|  8059P | XXXXXXXXXX |   |
+|  8029 | 3.311.274 |   |
+|  8039 | 300.000 |   |
+|  8049 |  |   |
+|  8059 | 3.011.274 |   |
+|  8129P | XXXXXXXXXX |   |
+|  8079 | 628.783 |   |
+|  8089 |  |   |
+|  8099 | 327.828 |   |
+|  8109 | 225.000 |   |
+|  8119 |  |   |
+|  8129 | 731.611 |   |
+|  21 | 2.279.663 |   |
 
 9/19
 
@@ -578,77 +463,79 @@ Nr. BE 0845.049.251
 
 VKT 5.1.2
 
-MATERIËLE VASTE ACTIVA
-Aanschaffingswaarde per einde van het boekjaar
+# **MATERIËLE VASTE ACTIVA**
 
-Mutaties tijdens het boekjaar
+# **Aanschaffingswaarde per einde van het boekjaar**
+
+# **Mutaties tijdens het boekjaar**
+
 Aanschaffingen, met inbegrip van de geproduceerde vaste activa
+
 Overdrachten en buitengebruikstellingen
-Overboekingen van een post naar een andere (#)/(-)
 
-Aanschaffingswaarde per einde van het boekjaar
-Meerwaarden per einde van het boekjaar
+Overboekingen van een post naar een andere
 
-Mutaties tijdens het boekjaar
+(+)/(-)
+
+# **Aanschaffingswaarde per einde van het boekjaar**
+
+# **Meerwaarden per einde van het boekjaar**
+
+# **Mutaties tijdens het boekjaar**
+
 Geboekt
+
 Verworven van derden
+
 Afgeboekt
-Overgeboekt van een post naar een andere (+)/(-)
 
-Meerwaarden per einde van het boekjaar
+Overgeboekt van een post naar een andere
 
-Afschrijvingen en waardeverminderingen per einde van het
-boekjaar
+(+)/(-)
 
-Mutaties tijdens het boekjaar
+# **Meerwaarden per einde van het boekjaar**
+
+# **Afschrijvingen en waardeverminderingen per einde van het boekjaar**
+
+# **Mutaties tijdens het boekjaar**
+
 Geboekt
+
 Teruggenomen
+
 Verworven van derden
+
 Afgeboekt na overdrachten en buitengebruikstellingen
-Overgeboekt van een post naar een andere (+)/(-)
 
-Afschrijvingen en waardeverminderingen per einde van het
-boekjaar
+Overgeboekt van een post naar een andere
 
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR
+(+)/(-)
 
-Codes Boekjaar Vorig boekjaar |
-8199P XXXXKKKKKK |
-8169 2.784.302
+# **Afschrijvingen en waardeverminderingen per einde van het boekjaar**
 
-8179 218.737
+# **NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR**
 
-8189
-
-8199 2.565.565
-
-8259P XXXXKKKKKK
-
-8219
-
-8229
-
-8239
-
-8249
-
-8259
-
-8329P XXXXKKKKKK
-
-8279 201.567
-
-8289
-
-8299 1.133.949
-
-8309
-
-8319
-
-8329 1.335.516
-
-22/27 1.230.049
+|  Codes | Boekjaar | Vorig boekjaar  |
+| --- | --- | --- |
+|  8199P | XXXXXXXXXX |   |
+|  8169 | 2.784.302 |   |
+|  8179 | 218.737 |   |
+|  8189 |  |   |
+|  8199 | 2.565.565 |   |
+|  8259P | XXXXXXXXXX |   |
+|  8219 |  |   |
+|  8229 |  |   |
+|  8239 |  |   |
+|  8249 |  |   |
+|  8259 |  |   |
+|  8329P | XXXXXXXXXX |   |
+|  8279 | 201.567 |   |
+|  8289 |  |   |
+|  8299 | 1.133.949 |   |
+|  8309 |  |   |
+|  8319 |  |   |
+|  8329 | 1.335.516 |   |
+|  22/27 | 1.230.049 |   |
 
 10/19
 
@@ -658,87 +545,75 @@ Nr. BE 0845.049.251
 
 VKT 5.1.3
 
-FINANCIËLE VASTE ACTIVA
-Aanschaffingswaarde per einde van het boekjaar
+# **FINANCIËLE VASTE ACTIVA**
 
-Mutaties tijdens het boekjaar
-Aanschaffingen
-Overdrachten en buitengebruikstellingen
-Overboekingen van een post naar een andere
-Andere mutaties
+# **Aanschaffingswaarde per einde van het boekjaar**
 
-Aanschaffingswaarde per einde van het boekjaar
-Meerwaarden per einde van het boekjaar
+# **Mutaties tijdens het boekjaar**
 
-Mutaties tijdens het boekjaar
-Geboekt
-Verworven van derden
-Afgeboekt
-Overgeboekt van een post naar een andere
+- Aanschaffingen
+- Overdrachten en buitengebruikstellingen
+- Overboekingen van een post naar een andere (+)/(-)
+- Andere mutaties (+)/(-)
 
-Meerwaarden per einde van het boekjaar
-Waardeverminderingen per einde van het boekjaar
+# **Aanschaffingswaarde per einde van het boekjaar**
 
-Mutaties tijdens het boekjaar
-Geboekt
-Teruggenomen
-Verworven van derden
-Afgeboekt na overdrachten en buitengebruikstellingen
-Overgeboekt van een post naar een andere
+# **Meerwaarden per einde van het boekjaar**
 
-Waardeverminderingen per einde van het boekjaar
-Niet-opgevraagde bedragen per einde van het boekjaar
-Mutaties tijdens het boekjaar
+# **Mutaties tijdens het boekjaar**
 
-Niet-opgevraagde bedragen per einde van het boekjaar
-NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR
+- Geboekt
+- Verworven van derden
+- Afgeboekt
+- Overgeboekt van een post naar een andere (+)/(-)
 
-Codes
+# **Meerwaarden per einde van het boekjaar**
 
-Boekjaar
+# **Waardeverminderingen per einde van het boekjaar**
 
-Vorig boekjaar
+# **Mutaties tijdens het boekjaar**
 
-8395P
+- Geboekt
+- Teruggenomen
+- Verworven van derden
+- Afgeboekt na overdrachten en buitengebruikstellingen
+- Overgeboekt van een post naar een andere (+)/(-)
 
-8365
-8375
-8385
-8386
+# **Waardeverminderingen per einde van het boekjaar**
 
-8395
-8455P
+# **Niet-opgevraagde bedragen per einde van het boekjaar**
 
-8415
-8425
-8435
-8445
+# **Mutaties tijdens het boekjaar**
 
-8455
-8525P
+# **Niet-opgevraagde bedragen per einde van het boekjaar**
 
-8475
-8485
-8495
-8505
-8515
+# **NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR**
 
-8525
-8555P
-8545
-8555
-28
-
-XXXXXKKKKK
-23.481
-3.867
-
-19.614
-XXXXXKKKKK
-
-XXXXXKKKKK
-
-XXXXXKKKKK
+|  Codes | Boekjaar | Vorig boekjaar  |
+| --- | --- | --- |
+|  8395P | XXXXXXXXXX |   |
+|  8365 | 23.481 |   |
+|  8375 | 3.867 |   |
+|  8385 |  |   |
+|  8386 |  |   |
+|  8395 | 19.614 |   |
+|  8455P | XXXXXXXXXX |   |
+|  8415 |  |   |
+|  8425 |  |   |
+|  8435 |  |   |
+|  8445 |  |   |
+|  8455 |  |   |
+|  8525P | XXXXXXXXXX |   |
+|  8475 |  |   |
+|  8485 |  |   |
+|  8495 |  |   |
+|  8505 |  |   |
+|  8515 |  |   |
+|  8525 |  |   |
+|  8555P | XXXXXXXXXX |   |
+|  8545 |  |   |
+|  8555 |  |   |
+|  28 | 19.614 |   |
 
 11/19
 
@@ -748,71 +623,120 @@ Nr. BE 0845.049.251
 
 VKT 5.3
 
-STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR
+# **STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR**
 
-Codes Boekjaar Vorig boekjaar
-STAAT VAN HET KAPITAAL
-Maatschappelijk kapitaal
-Geplaatst kapitaal per einde van het boekjaar 100P XXXXKKKKKK
-Geplaatst kapitaal per einde van het boekjaar 100 3.000.000
-Codes Bedragen Aantal aandelen
+# **STAAT VAN HET KAPITAAL**
+
+# **Maatschappelijk kapitaal**
+
+Geplaatst kapitaal per einde van het boekjaar
+Geplaatst kapitaal per einde van het boekjaar
+
 Wijzigingen tijdens het boekjaar
-Oprichting dd 05/04/2012 500.000 500.000
-Kapitaalverhoging dd 19/04/2013 2.500.000 2.500.000
+Oprichting dd 05/04/2012
+Kapitaalverhoging dd 19/04/2013
+
 Samenstelling van het kapitaal
 Soorten aandelen
-Aandelen zonder aanduiding nominale waarde 3.000.000 3.000.000
-Codes | Niet-opgevraagd bedrag | Opgevraagd, niet-gestort
-bedrag
-Niet-gestort kapitaal
-Niet-opgevraagd kapitaal 101 DO 004
-Opgevraagd, niet-gestort kapitaal 8712 XXXXKKKKKK
+Aandelen zonder aanduiding nominale waarde
+
+|  Codes | Boekjaar | Vorig boekjaar  |
+| --- | --- | --- |
+|  100P | XXXXXXXXXX |   |
+|  100 | 3.000.000 |   |
+
+|  Codes | Bedragen | Aantal aandelen  |
+| --- | --- | --- |
+|   | 500.000 | 500.000  |
+|   | 2.500.000 | 2.500.000  |
+|   | 3.000.000 | 3.000.000  |
+
+# **Niet-gestort kapitaal**
+
+Niet-opgevraagd kapitaal
+Opgevraagd, niet-gestort kapitaal
 Aandeelhouders die nog moeten volstorten
-Codes Boekjaar
-Eigen aandelen
+
+|  Codes | Niet-opgevraagd bedrag | Opgevraagd, niet-gestort bedrag  |
+| --- | --- | --- |
+|  101 |  | XXXXXXXXXX  |
+|  8712 | XXXXXXXXXX |   |
+
+# **Eigen aandelen**
+
 Gehouden door de vennootschap zelf
-Kapitaalbedrag 8721
-Aantal aandelen 8722
+Kapitaalbedrag
+Aantal aandelen
 Gehouden door haar dochters
-Kapitaalbedrag 8731
-Aantal aandelen 8732
-Verplichtingen tot uitgifte van aandelen
+Kapitaalbedrag
+Aantal aandelen
+
+# **Verplichtingen tot uitgifte van aandelen**
+
 Als gevolg van de uitoefening van conversierechten
-Bedrag van de lopende converteerbare leningen 8740
-Bedrag van het te plaatsen kapitaal 8741
-Maximum aantal uit te geven aandelen 8742
+Bedrag van de lopende converteerbare leningen
+Bedrag van het te plaatsen kapitaal
+Maximum aantal uit te geven aandelen
 Als gevolg van de uitoefening van inschrijvingsrechten
-Aantal inschrijvingsrechten in omloop 8745
-Bedrag van het te plaatsen kapitaal 8746
-Maximum aantal uit te geven aandelen 8747
-Toegestaan, niet-geplaatst kapitaal 8751
-Codes Boekjaar
-Aandelen buiten kapitaal
+Aantal inschrijvingsrechten in omloop
+Bedrag van het te plaatsen kapitaal
+Maximum aantal uit te geven aandelen
+
+# **Toegestaan, niet-geplaatst kapitaal**
+
+|  Codes | Boekjaar  |
+| --- | --- |
+|  8721 |   |
+|  8722 |   |
+|  8731 |   |
+|  8732 |   |
+|  8740 |   |
+|  8741 |   |
+|  8742 |   |
+|  8745 |   |
+|  8746 |   |
+|  8747 |   |
+|  8751 |   |
+
+# **Aandelen buiten kapitaal**
+
 Verdeling
-Aantal aandelen 8761
-Daaraan verbonden stemrecht 8762
+Aantal aandelen
+Daaraan verbonden stemrecht
 Uitsplitsing volgens de aandeelhouders
-Aantal aandelen gehouden door de vennootschap zelf 8771
-Aantal aandelen gehouden door haar dochters 8781
+Aantal aandelen gehouden door de vennootschap zelf
+Aantal aandelen gehouden door haar dochters
 
-AANDEELHOUDERSSTRUCTUUR VAN DE ONDERNEMING OP DE DATUM VAN DE JAARAFSLUITING, ZOALS DIE BLIKT UIT DE
+|  Codes | Boekjaar  |
+| --- | --- |
+|  8761 |   |
+|  8762 |   |
+|  8771 |   |
+|  8781 |   |
 
-KENNISGEVINGEN DIE DE ONDERNEMING HEEFT ONTVANGEN
+**AANDEELHOUDERSSTRUCTUUR VAN DE ONDERNEMING OP DE DATUM VAN DE JAARAFSLUITING, ZOALS DIE BLIJKT UIT DE KENNISGEVINGEN DIE DE ONDERNEMING HEEFT ONTVANGEN**
 
 12/19
 
-
 --- pág. 13 ---
 
-Nr. BE 0845.049.251 VKT 5.4
-VOORZIENINGEN VOOR RISICO'S EN KOSTEN
-Boekjaar
-UITSPLITSING VAN DE POST 160/5 VAN DE PASSIVA INDIEN DAARONDER EEN BELANGRIJK BEDRAG
-VOORKOMT
-Overige risico's en kosten 15.000
+|  Nr. | BE 0845.049.251  |
+| --- | --- |
+
+|  VKT 5.4  |
+| --- |
+
+## VOORZIENINGEN VOOR RISICO'S EN KOSTEN
+
+**UITSPLITSING VAN DE POST 160/5 VAN DE PASSIVA INDIEN DAARONDER EEN BELANGRIJK BEDRAG VOORKOMT**
+
+Overige risico's en kosten
+
+|  Boekjaar  |
+| --- |
+|  15.000  |
 
 13/19
-
 
 --- pág. 14 ---
 
@@ -820,103 +744,85 @@ Nr. BE 0845.049.251
 
 VKT 5.5
 
-STAAT VAN DE SCHULDEN
+# **STAAT VAN DE SCHULDEN**
 
-UITSPLITSING VAN DE SCHULDEN MET EEN OORSPRONKELIJKE LOOPTIJD VAN MEER DAN EEN
-JAAR, NAARGELANG HUN RESTERENDE LOOPTIJD
+# **UITSPLITSING VAN DE SCHULDEN MET EEN OORSPRONKELIJKE LOOPTIJD VAN MEER DAN EEN JAAR, NAARGELANG HUN RESTERENDE LOOPTIJD**
 
-Totaal der schulden op meer dan één jaar die binnen het jaar vervallen
+**Totaal der schulden op meer dan één jaar die binnen het jaar vervallen**
 
-Totaal der schulden met een resterende looptijd van meer dan één jaar doch hoogstens 5
-jaar
+**Totaal der schulden met een resterende looptijd van meer dan één jaar doch hoogstens 5 jaar**
 
-Totaal der schulden met een resterende looptijd van meer dan 5 jaar
-GEWAARBORGDE SCHULDEN
+**Totaal der schulden met een resterende looptijd van meer dan 5 jaar**
 
-Door Belgische overheidsinstellingen gewaarborgde schulden
-Financiële schulden
-Kredietinstellingen, leasingschulden en soortgelijke schulden
-Overige leningen
-Handelsschulden
-Leveranciers
-Te betalen wissels
-Ontvangen vooruitbetalingen op bestellingen
-Schulden met betrekking tot bezoldigingen en sociale lasten
-Overige schulden
+# **GEWAARBORGDE SCHULDEN**
 
-Totaal van de door Belgische overheidsinstellingen gewaarborgde schulden
+# **Door Belgische overheidsinstellingen gewaarborgde schulden**
 
-Schulden gewaarborgd door zakelijke zekerheden gesteld of onherroepelijk beloofd op
-activa van de onderneming
-Financiële schulden
-Kredietinstellingen, leasingschulden en soortgelijke schulden
-Overige leningen
-Handelsschulden
-Leveranciers
-Te betalen wissels
-Ontvangen vooruitbetalingen op bestellingen
-Schulden met betrekking tot belastingen, bezoldigingen en sociale lasten
-Belastingen
-Bezoldigingen en sociale lasten
-Overige schulden
+- Financiële schulden
+  - Kredietinstellingen, leasingsschulden en soortgelijke schulden
+  - Overige leningen
+- Handelsschulden
+  - Leveranciers
+  - Te betalen wissels
+- Ontvangen vooruitbetalingen op bestellingen
+- Schulden met betrekking tot bezoldigingen en sociale lasten
+- Overige schulden
 
-Totaal der schulden gewaarborgd door zakelijke zekerheden gesteld of onherroepelijk
-beloofd op activa van de onderneming
+**Totaal van de door Belgische overheidsinstellingen gewaarborgde schulden**
 
-SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN
-Vervallen belastingschulden
+# **Schulden gewaarborgd door zakelijke zekerheden gesteld of onherroepelijk beloofd op activa van de onderneming**
 
-Vervallen schulden ten aanzien van de Rijksdienst voor Sociale Zekerheid
+- Financiële schulden
+  - Kredietinstellingen, leasingsschulden en soortgelijke schulden
+  - Overige leningen
+- Handelsschulden
+  - Leveranciers
+  - Te betalen wissels
+- Ontvangen vooruitbetalingen op bestellingen
+- Schulden met betrekking tot belastingen, bezoldigingen en sociale lasten
+  - Belastingen
+  - Bezoldigingen en sociale lasten
+- Overige schulden
 
-Codes
+**Totaal der schulden gewaarborgd door zakelijke zekerheden gesteld of onherroepelijk beloofd op activa van de onderneming**
 
-Boekjaar
+# **SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN**
 
-42
+# **Vervallen belastingsschulden**
 
-8912
-8913
+**Vervallen schulden ten aanzien van de Rijksdienst voor Sociale Zekerheid**
 
-8921
-891
-
-901
-
-8981
-8991
-9001
-9011
-9021
-9051
-
-9061
-
-8922
-892
-
-902
-
-8982
-8992
-9002
-9012
-9022
-9032
-9042
-9052
-
-9062
-
-9072
-9076
-
-365.815
-
-738.515
-330.000
+|  Codes | Boekjaar  |
+| --- | --- |
+|  42 | 365.815  |
+|  8912 | 738.515  |
+|  8913 | 330.000  |
+|  8921 |   |
+|  891 |   |
+|  901 |   |
+|  8981 |   |
+|  8991 |   |
+|  9001 |   |
+|  9011 |   |
+|  9021 |   |
+|  9051 |   |
+|  9061 |   |
+|  8922 |   |
+|  892 |   |
+|  902 |   |
+|  8982 |   |
+|  8992 |   |
+|  9002 |   |
+|  9012 |   |
+|  9022 |   |
+|  9032 |   |
+|  9042 |   |
+|  9052 |   |
+|  9062 |   |
+|  9072 |   |
+|  9076 |   |
 
 14/19
-
 
 --- pág. 15 ---
 
@@ -924,78 +830,56 @@ Nr. BE 0845.049.251
 
 VKT 5.6
 
-RESULTATEN
+# **RESULTATEN**
 
-PERSONEEL EN PERSONEELSKOSTEN
+# **PERSONEEL EN PERSONEELSKOSTEN**
 
-Werknemers waarvoor de onderneming een DIMONA-verklaring
-heeft ingediend of die zijn ingeschreven in het algemeen
-personeelsregister
+**Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het algemeen personeelsregister**
 
-Totaal aantal op de afsluitingsdatum
+- Totaal aantal op de afsluitingsdatum
+- Gemiddeld personeelsbestand berekend in voltijdse equivalenten
+- Aantal daadwerkelijk gepresteerde uren
 
-Gemiddeld personeelsbestand berekend in voltijdse equivalenten
+# **Personeelskosten**
 
-Aantal daadwerkelijk gepresteerde uren
+- Bezoldigingen en rechtstreekse sociale voordelen
+- Werkgeversbijdragen voor sociale verzekeringen
+- Werkgeverspremies voor bovenwettelijke verzekeringen
+- Andere personeelskosten
+- Ouderdoms- en overlevingspensioenen
 
-Personeelskosten
-Bezoldigingen en rechtstreekse sociale voordelen
-Werkgeversbijdragen voor sociale verzekeringen
-Werkgeverspremies voor bovenwettelijke verzekeringen
-Andere personeelskosten
-Ouderdoms- en overlevingspensioenen
+# **FINANCIËLE RESULTATEN**
 
-FINANCIËLE RESULTATEN
+**Door de overheid toegekende subsidies, aangerekend op de resultatenrekening**
 
-Door de overheid toegekende subsidies, aangerekend op de
-resultatenrekening
+- Kapitaalsubsidies
+- Interestsubsidies
 
-Kapitaalsubsidies
+# **Geactiveerde intercalaire interesten**
 
-Interestsubsidies
+**Bedrag van het disconto ten laste van de onderneming bij de verhandeling van vorderingen**
 
-Geactiveerde intercalaire interesten
+**Saldo van de gevormde (aangewende of teruggenomen) voorzieningen met financieel karakter**
 
-Bedrag van het disconto ten laste van de onderneming bij de
-verhandeling van vorderingen
+(+)/(-)
 
-Saldo van de gevormde (aangewende of teruggenomen)
-voorzieningen met financieel karakter (#)/-)
-
-Codes
-
-Boekjaar
-
-Vorig boekjaar
-
-9086
-9087
-9088
-
-620
-621
-622
-623
-624
-
-9125
-9126
-6503
-653
-
-656
-
-32
-37,5
-61.544
-
-3.006.609
-349.735
-
-435.109
+|  Codes | Boekjaar | Vorig boekjaar  |
+| --- | --- | --- |
+|  9086 | 32 |   |
+|  9087 | 37,5 |   |
+|  9088 | 61.544 |   |
+|  620 | 3.006.609 |   |
+|  621 | 349.735 |   |
+|  622 |  |   |
+|  623 | 435.109 |   |
+|  624 |  |   |
+|  9125 |  |   |
+|  9126 |  |   |
+|  6503 |  |   |
+|  653 |  |   |
+|  656 |  |   |
 
 15/19
-
 
 --- pág. 16 ---
 
@@ -1003,264 +887,266 @@ Nr. BE 0845.049.251
 
 VKT 6
 
-SOCIALE BALANS
+# **SOCIALE BALANS**
 
-Nummers van de paritaire comités die voor de onderneming bevoegd zijn:
+Nummers van de paritaire comités die voor de onderneming bevoegd zijn: 100 218 223
 
-100
+# **Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het algemeen personeelsregister**
 
-218 223
+| Tijdens het boekjaar en het vorige boekjaar | Codes | 1. Voltijds (boekjaar) | 2. Deeltijds (boekjaar) | 3. Totaal (T) of totaal in voltijdse equivalenten (VTE) (boekjaar) | 3P. Totaal (T) of totaal in voltijdse equivalenten (VTE) (vorig boekjaar) |
+| --- | --- | --- | --- | --- | --- |
+| Gemiddeld aantal werknemers | 100 | 28,6 | 32,2 | 37,5 VTE | VTE |
+| Aantal daadwerkelijk gepresteerde uren | 101 | 47.049 | 14.495 | 61.544 T | T |
+| Personeelskosten | 102 | 2.898.480 | 892.973 | 3.791.453 T | T |
 
-Werknemers waarvoor de onderneming een DIMONA-verklaring heeft ingediend of die zijn ingeschreven in het
+# **Op de afsluitingsdatum van het boekjaar**
 
-algemeen personeelsregister
+# **Aantal werknemers**
 
-Codes| 1. Voltijds 2. Deeltijds 3. Totaal (T) of 3P. _ Totaal (T) of
-oe boekjaar en het vorige Laet voltijdse
-(VTE) equivalenten
-(VTE)
-(boekjaar) (boekjaar) (boekjaar) (vorig boekjaar)
-Gemiddeld aantal werknemers 100 28,6 32,2 37,5 VTE VTE |
-Aantal daadwerkelijk gepresteerde
-uren 101 47.049 14.495 61.544 T T
-Personeelskosten 102 2.898.480 892.973 3.791.453 T T
-Codes Voltijds 2. Deeltijds 3. Totaal in
-Op de afsluitingsdatum van het boekjaar voltijdse
-equivalenten
-Aantal werknemers 105 19 13 23,7
-Volgens de aard van de arbeidsovereenkomst
-Overeenkomst voor een onbepaalde tijd 110 11 4 12,2
-Overeenkomst voor een bepaalde tijd 111 8 fe) 11,5
-Overeenkomst voor een duidelijk omschreven werk 112
-Vervangingsovereenkomst 113
-Volgens het geslacht en het studieniveau
-Mannen 120 16 13 20,7
-lager onderwijs 1200
-secundair onderwijs 1201 14 12 18,3
-hoger niet-universitair onderwijs 1202 2 1 2,4
-universitair onderwijs 1203
-Vrouwen 121 3 3
-lager onderwijs 1210
-secundair onderwijs 1211 2 2
-hoger niet-universitair onderwijs 1212 1 1
-universitair onderwijs 1213
-Volgens de beroepscategorie
-Directiepersoneel 130
-Bedienden 134 16 13 20,7
-Arbeiders 132 3 3
-Andere 133
+# **Volgens de aard van de arbeidsovereenkomst**
+
+- Overeenkomst voor een onbepaalde tijd
+- Overeenkomst voor een bepaalde tijd
+- Overeenkomst voor een duidelijk omschreven werk
+- Vervangingsovereenkomst
+
+# **Volgens het geslacht en het studieniveau**
+
+- Mannen
+  - lager onderwijs
+  - secundair onderwijs
+  - hoger niet-universitair onderwijs
+  - universitair onderwijs
+- Vrouwen
+  - lager onderwijs
+  - secundair onderwijs
+  - hoger niet-universitair onderwijs
+  - universitair onderwijs
+
+# **Volgens de beroepscategorie**
+
+- Directiepersoneel
+- Bedienden
+- Arbeiders
+- Andere
+
+|  Codes | 1. Voltijds | 2. Deeltijds | 3. Totaal in voltijdse equivalenten  |
+| --- | --- | --- | --- |
+|  105 | 19 | 13 | 23,7  |
+|  110 | 11 | 4 | 12,2  |
+|  111 | 8 | 9 | 11,5  |
+|  112 |  |  |   |
+|  113 |  |  |   |
+|  120 | 16 | 13 | 20,7  |
+|  1200 |  |  |   |
+|  1201 | 14 | 12 | 18,3  |
+|  1202 | 2 | 1 | 2,4  |
+|  1203 |  |  |   |
+|  121 | 3 |  | 3  |
+|  1210 |  |  |   |
+|  1211 | 2 |  | 2  |
+|  1212 | 1 |  | 1  |
+|  1213 |  |  |   |
+|  130 |  |  |   |
+|  134 | 16 | 13 | 20,7  |
+|  132 | 3 |  | 3  |
+|  133 |  |  |   |
 
 16/19
 
-
 --- pág. 17 ---
 
-Nr. BE 0845.049.251 VKT 6
-Tabel van het personeelsverloop tijdens het boekjaar
-Codes Voltijds 2. Deeltijds Totaal in
-voltijdse
-equivalenten
-Ingetreden
-Aantal werknemers waarvoor de onderneming tijdens
-het boekjaar een DIMONA-verklaring heeft ingediend of
-die tijdens het boekjaar werden ingeschreven in het
-algemeen personeelsregister 205 30 37 40,1
-Uitgetreden
-Aantal werknemers met een in de DIMONA-verklaring
-aangegeven of een in het algemeen personeelsregister
-opgetekende datum waarop hun overeenkomst tijdens
-het boekjaar een einde nam 305 11 24 16,3
-Inlichtingen over de opleidingen voor de werknemers tijdens het boekjaar
-Codes Mannen Codes Vrouwen
-Totaal van de formele voortgezette beroepsopleidingsinitiatieven ten
-laste van de werkgever
-Aantal betrokken werknemers 5801 5811
-Aantal gevolgde opleidingsuren 5802 5812
-Nettokosten voor de onderneming 5803 5813
-waarvan brutokosten rechtstreeks verbonden met de opleiding 58031 58131
-waarvan betaalde bijdragen en stortingen aan collectieve fondsen 58032 58132
-waarvan ontvangen tegemoetkomingen (in mindering) 58033 58133
-Totaal van de minder formele en informele voortgezette
-beroepsopleidingsinitiatieven ten laste van de werkgever
-Aantal betrokken werknemers 5821 5831
-Aantal gevolgde opleidingsuren 5822 5832
-Nettokosten voor de onderneming 5823 5833
-Totaal van de initiële beroepsopleidingsinitiatieven ten laste van de
-werkgever
-Aantal betrokken werknemers 5841 5851
-Aantal gevolgde opleidingsuren 5842 5852
-Nettokosten voor de onderneming 5843 5853
+Nr. BE 0845.049.251
+
+VKT 6
+
+# **Tabel van het personeelsverloop tijdens het boekjaar**
+
+# **Ingetreden**
+
+Aantal werknemers waarvoor de onderneming tijdens het boekjaar een DIMONA-verklaring heeft ingediend of die tijdens het boekjaar werden ingeschreven in het algemeen personeelsregister
+
+# **Uitgetreden**
+
+Aantal werknemers met een in de DIMONA-verklaring aangegeven of een in het algemeen personeelsregister opgetekende datum waarop hun overeenkomst tijdens het boekjaar een einde nam
+
+|  Codes | 1. Voltijds | 2. Deeltijds | 3. Totaal in voltijdse equivalenten  |
+| --- | --- | --- | --- |
+|  205 | 30 | 37 | 40,1  |
+|  305 | 11 | 24 | 16,3  |
+
+# **Inlichtingen over de opleidingen voor de werknemers tijdens het boekjaar**
+
+# **Totaal van de formele voortgezette beroepsopleidingsinitiatieven ten laste van de werkgever**
+
+- Aantal betrokken werknemers
+- Aantal gevolgde opleidingsuren
+- Nettokosten voor de onderneming
+  - waarvan brutokosten rechtstreeks verbonden met de opleiding
+  - waarvan betaalde bijdragen en stortingen aan collectieve fondsen
+  - waarvan ontvangen tegemoetkomingen (in mindering)
+
+# **Totaal van de minder formele en informele voortgezette beroepsopleidingsinitiatieven ten laste van de werkgever**
+
+- Aantal betrokken werknemers
+- Aantal gevolgde opleidingsuren
+- Nettokosten voor de onderneming
+
+# **Totaal van de initiële beroepsopleidingsinitiatieven ten laste van de werkgever**
+
+- Aantal betrokken werknemers
+- Aantal gevolgde opleidingsuren
+- Nettokosten voor de onderneming
+
+|  Codes | Mannen | Codes | Vrouwen  |
+| --- | --- | --- | --- |
+|  5801 |  | 5811 |   |
+|  5802 |  | 5812 |   |
+|  5803 |  | 5813 |   |
+|  58031 |  | 58131 |   |
+|  58032 |  | 58132 |   |
+|  58033 |  | 58133 |   |
+|  5821 |  | 5831 |   |
+|  5822 |  | 5832 |   |
+|  5823 |  | 5833 |   |
+|  5841 |  | 5851 |   |
+|  5842 |  | 5852 |   |
+|  5843 |  | 5853 |   |
 
 17/19
 
-
 --- pág. 18 ---
 
-Nr.
+Nr. DE 0845.049.251
 
-BE 0845.049.251 VKT 7
+VKT 7
 
-WAARDERINGSREGELS
+# WAARDERINGSREGELS
 
 SAMENVATTING VAN DE WAARDERINGSREGELS
 
-I. BEGINSEL
+I. BESINSEL
 
-De waarderingsregels worden vastgesteld overeenkomstig de bepalingen van het koninklijk besluit van 30 januari 2001 tot uitvoering van het
-Wetboek van vennootschappen.
-
+De waarderingsregels worden vastgesteld overeenkomstig de bepalingen van het koninklijk besluit van 30 januari 2001 tot uitvoering van het Wetboek van vennootschappen.
 Ten behoeve van het getrouwe beeld wordt in de volgende uitzonderingsgevallen afgeweken van de bij dit besluit bepaalde waarderingsregels :
 
 Deze afwijkingen worden als volgt verantwoord:
 
 Deze afwijkingen beïnvloeden als volgt het vermogen, de financiële positie en het resultaat vóór belasting van de onderneming
 
-De waarderingsregels werden ten opzichte van het vorige boekjaar qua verwoording of toepassing (gewijzigd) (niet gewijzigd); zo ja, dan heeft
-de wijziging betrekking op
+De waarderingsregels werden ten opzichte van het vorige boekjaar qua verwoording of toepassing (gewijzigd) (niet gewijzigd) zo ja, dan heeft de wijziging betrekking op
 
 en heeft zij een (positieve) (negatieve) invloed op het resultaat van het boekjaar vóór belasting ten belope van EUR
-De resultatenrekening (wordt) (wordt niet) op belangrijke wijze beïnvloed door opbrengsten en kosten die aan een vorig boekjaar moeten worden
-toegerekend; zo ja, dan hebben deze betrekking op :
+De resultatenrekening (wordt) (wordt niet) op belangrijke wijze beïnvloed door opbrengsten en kosten die aan een vorig boekjaar moeten worden toegerekend; zo ja, dan hebben deze betrekking op :
 
 De cijfers van het boekjaar zijn niet vergelijkbaar met die van het vorige boekjaar en wel om de volgende reden:
 Het betreft het eerste boekjaar dat loopt van 05/04/2012 t.e.m. 30/06/2013.
 
-(Voor de vergelijkbaarheid worden de cijfers van het vorige boekjaar op volgende punten aangepast) (Voor de vergelijking van de jaarrekeningen
-van beide boekjaren moet met volgende elementen rekening worden gehouden)
+(Voor de vergelijkbaarheid worden de cijfers van het vorige boekjaar op volgende punten aangepast) (Voor de vergelijking van de jaarrekeningen van beide boekjaren moet met volgende elementen rekening worden gehouden)
 
-Bij gebrek aan objectieve beoordelingscriteria is de waardering van de voorzienbare risico's, mogelijke verliezen en ontwaardingen waarvan
-hierna sprake, onvermijdelijk aleatoir
+Bij gebrek aan objectieve beoordelingscriteria is de waardering van de voorzienbare risico's, mogelijke verliezen en ontwaardingen waarvan hierin sprake, onvermijdelijk alcohol
 
-Andere inlichtingen die noodzakelijk zijn opdat de jaarrekening een getrouw beeld zou geven van het vermogen, de financiële positie en het
-resultaat van de onderneming :
+Andere inlichtingen die noodzakelijk zijn opdat de jaarrekening een getrouw beeld zou geven van het vermogen, de financiële positie en het resultaat van de onderneming :
 
 II. BIJZONDERE REGELS
 
 OPRICHTINGSKOSTEN
+
 De oprichtingskosten worden onmiddellijk ten laste genomen, behoudens volgende kosten die worden geactiveerd
 
 HERSTRUCTURERINGSKOSTEN
+
 De herstructureringskosten werden (geactiveerd) (niet geactiveerd) in de loop van het boekjaar; zo ja, dan wordt dit als volgt verantwoord
 
 IMMATERIELE VASTE ACTIVA
-Het bedrag aan immateriële vaste activa omvat voor EUR kosten van onderzoek en ontwikkeling. De afschrijvingstermijn voor
-deze kosten en voor de goodwill beloopt niet meer dan 5 jaar; indien meer dan 5 jaar wordt deze termijn als volgt verantwoord:
+
+Het bedrag aan immateriële vaste activa omvat voor EUR kosten van onderzoek en ontwikkeling. De afschrijvingstermijn voor deze kosten en voor de goodwill beloopt niet meer dan 5 jaar; indien meer dan 5 jaar wordt deze termijn als volgt verantwoord:
 
 MATERIELE VASTE ACTIVA
+
 In de loop van het boekjaar werden geen materiële vaste activa geherwaardeerd; zo ja, dan wordt deze herwaardering als volgt verantwoord :
 
-AFSCHRIJVINGEN GEBOEKT TIJDENS HET BOEKJAAR :
-Afschrijvingspercentages
-Hoofdsom Bijkomende kosten
-Leasing Methode Basis Min. _ Max. Min. _ Max.
-1. Oprichtingskosten
-2. Immateriële vaste activa L NG 20,00 — 33,33 20,00 — 33,33
-3. Industriële,
-administratieve of commerciële
+AFSCHRIJVINGEN GEBOERT TIJDENS HET BOEKJAAR :
 
-gebouwen* L NG 5,00 — 20,00 5,00 — 20,00
-4. Installaties, machines en
-
-uitrusting* L NG 20,00 — 33,33 20,00 — 33,33
-5. Rollend materieel* L NG 20,00 - 33,33 20,00 - 33,33
-6. Kantoormaterieel en
-
-meubilair* L NG 10,00 - 33,33 10,00 - 33,33
-7. Andere materiële vaste
-
-activa L NG 3,00 — 20,00 3,00 — 20,00
+|   | Leasing Methode | Basis | Afschrijvingspercentages  |   |
+| --- | --- | --- | --- | --- |
+|   |  |  | Boofdsom Min. _ Max. | Bijkomende kosten Min. _ Max.  |
+|  1. Oprichtingskosten |  |  |  |   |
+|  2. Immateriële vaste activa | L | NG | 20,00 - 33,33 | 20,00 - 33,33  |
+|  3. Industriële, administratieve of commerciële gebouwen* | L | NG | 5,00 - 20,00 | 5,00 - 20,00  |
+|  4. Installaties, machines en uitrusting* | L | NG | 20,00 - 33,33 | 20,00 - 33,33  |
+|  5. Rolland materieel* | L | NG | 20,00 - 33,33 | 20,00 - 33,33  |
+|  6. Kantoormaterieel en meubilair* | L | NG | 10,00 - 33,33 | 10,00 - 33,33  |
+|  7. Andere materiële vaste activa | L | NG | 3,00 - 20,00 | 3,00 - 20,00  |
 
 L (lineaire)
-
 D (degressieve)
-
 A (andere)
-
 NG (niet- geherwaardeerde)
-
-G (geherwaardeerde)
+O (geherwaardeerde)
 
 *Met inbegrip van de in leasing gehouden activa; deze worden in voorkomend geval op een afzonderlijke lijn vermeld.
 
 Overschot aan toegepaste, fiscaal aftrekbare, versnelde afschrijvingen ten opzichte van de economisch verantwoorde afschrijvingen
 - bedrag voor het boekjaar : EUR.
-- gecumuleerd bedrag voor de vaste activa verworven vanaf het boekjaar dat na 31 december 1983 begint : EUR.
+- gesumuleerd bedrag voor de vaste activa verworven vanaf het boekjaar dat na 31 december 1983 begint : EUR.
 
 FINANCIELE VASTE ACTIVA
+
 In de loop van het boekjaar werden geen deelnemingen geherwaardeerd; zo ja, dan wordt deze herwaardering als volgt verantwoord
 
 VOORRADEN
 
-Voorraden worden gewaardeerd tegen de AANSCHAFFINGSWAARDE berekend volgens de (te vermelden) methode van de gewogen gemiddelde prijzen, Fifo,
-Lifo, individualisering van de prijs van elk bestanddeel of tegen de lagere marktwaarde:
+Voorraden worden gewaardeerd tegen de AANSCHAPPINGSWAARDE berekend volgens de (te vermelden) methode van de gewogen gemiddelde prijzen, Fifo, Lifo, individualisering van de prijs van elk bestanddeel of tegen de lagere marktwaarde:
 
-1. Grond- en hulpstoffen:
-
-2. Goederen in bewerking - gereed product:
-
+1. Grond- en hulpstoffen;
+2. Goederen in bewerking - gereed product;
 3. Handelsgoederen : individualisering van de prijs van elk bestanddeel
-
 4. Onroerende goederen bestemd voor verkoop :
 
 PRODUCTEN
 
 - De vervaardigingsprijs van de producten (omvat) (omvat niet) de onrechtstreekse productiekosten.
-
-- De vervaardigingsprijs van de producten waarvan de productie meer dan één jaar beslaat, (omvat) (omvat geen) financiële kosten verbonden aan
-de kapitalen ontleend om de productie ervan te financieren.
+- De vervaardigingsprijs van de producten waarvan de productie meer dan één jaar beslaat, (omvat) (omvat geen) financiële kosten verbonden aan de kapitalen ontleend om de productie ervan te financieren.
 
 Bij het einde van het boekjaar bedraagt de marktwaarde van de totale voorraden ongeveer % meer dan hun boekwaarde.
-
 (Deze inlichting is slechts vereist zo het verschil belangrijk is)
 
 BESTELLINGEN IN UITVOERING
-Bestellingen in uitvoering worden gewaardeerd (tegen vervaardigingsprijs) (tegen vervaardigingsprijs, verhoogd met een gedeelte van het
-resultaat naar gelang van de vordering der werken).
+
+Bestellingen in uitvoering worden gewaardeerd (tegen vervaardigingsprijs) (tegen vervaardigingsprijs, verhoogd met een gedeelte van het resultaat naar gelang van de vordering der werken).
 
 SCHULDEN
-De passiva bevatten geen schulden op lange termijn, zonder rente of met een abnormaal lage rente; zo ja, dan wordt op deze schulden (een)
-(geen) disconto toegepast dat wordt geactiveerd.
+
+De passiva bevatten geen schulden op lange termijn, zonder rente of met een abnormaal lage rente; zo ja, dan wordt op deze schulden (een) (geen) disconto toegepast dat wordt geactiveerd.
 
 VREEMDE VALUTA
+
 De omrekening in EUR van tegoeden, schulden en verbintenissen in vreemde valuta gebeurt op volgende grondslagen:
 De resultaten uit de omrekening van vreemde valuta zijn als volgt in de jaarrekening verwerkt :
 
 LEASINGOVEREENKOMSTEN
 
-Wat de niet-geactiveerde gebruiksrechten uit leasingovereenkomsten betreft (artikel 102, S 1 van het koninklijk besluit van 30 januari tot
-uitvoering van het Wetboek van vennootschappen), beliepen de vergoedingen en huurgelden die betrekking hebben op het boekjaar voor leasing van
-onroerende goederen : EUR.
+Met de niet-geactiveerde gebruiksrechten uit leasingovereenkomsten betreft (artikel 102, § 1 van het koninklijk besluit van 30 januari tot uitvoering van het Wetboek van vennootschappen), beliepen de vergoedingen en huurgelden die betrekking hebben op het boekjaar voor leasing van onroerende goederen : EUR.
 
 VERANTWOORDING CONTINUITEIT ARTIKEL 94/96, 6° Wetboek Vennootschappen
 
-Ingevolge artikel 94/96, 6° van het Wetboek van Vennootschappen dienen de bestuurders de toepassing van de waarderingsregels in de
-veronderstelling van de continuïteit te verantwoorden. De bestuurders zijn van oordeel dat de continuïteit niet in het gedrang komt gezien de
-slechte resultaten van voorbijgaande aard zijn ten gevolge van de degradatie naar tweede klasse en inmiddels de kosten werden gereduceerd in
-evenredigheid met de verwachte gedaalde inkomsten.
+Ingevolge artikel 94/96, 6° van het Wetboek van Vennootschappen dienen de bestuurders de toepassing van de waarderingsregels in de veronderstelling van de continuïteit te verantwoorden. De bestuurders zijn van oordeel dat de continuïteit niet in het gedrang komt gezien de slechte resultaten van voorbijgaande aard zijn ten gevolge van de degradatie naar tweede klasse en inmiddels de kosten werden gereduceerd in evenredigheid met de verwachte gedaalde inkomsten.
 
-OVERDRACHT BEDRIJFSTAK
+OVERDRACHT BEDRIJSTAK
 
-Uit een akte verleden voor notaris Frank De Wilde te Gingelom op 21 december 2012, neergelegd ter griffie van de rechtbank van koophandel voor
-registratie, blijkt dat de vereniging zonder winstoogmerk VRIENDEN VAN STAYEN haar voetbalbedrijfstak overeenkomstig de modaliteiten en
+Uit een akte verleden voor notaris Frank De Wilde te Gingelom op 21 december 2012, neergelegd ter griffie van de rechtbank van koophandel voor registratie, blijkt dat de vereniging zonder winstoogmerk VRIENDEN VAN STAVEN haar voetbalbedrijfstak overeenkomstig de modaliteiten en
 
 18/19
 
-
 --- pág. 19 ---
 
-Nr.
+|  Nr. | BE 0845.049.251  |
+| --- | --- |
 
-BE 0845.049.251
+|  VKT 7  |
+| --- |
 
-VKT 7
-
-bepalingen in de 'de overeenkomst betreffende de overdracht van bedrijfstak!
-
-afgesloten in december 2011 en aangepast bij addendum van 4 maart
-
-2012, van 9 juli 2012 en van 5 oktober 2012, heeft overgedragen aan de naamloze vennootschap KONINKLIJKE SINT-TRUIDENSE VOETBALVERENIGING,
-
-afgekort STVV.
+bepalingen in de 'de overeenkomst betreffende de overdracht van bedrijfstak' afgesloten in december 2011 en aangepast bij addendum van 4 maart 2012, van 9 juli 2012 en van 5 oktober 2012, heeft overgedragen aan de naamloze vennootschap KONINKLIJKE SINT-TROIDENSE VOETBALVERENIGING, afgekort STVV.
 
 19/19
-

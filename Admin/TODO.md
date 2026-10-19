@@ -25,28 +25,28 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 290 y 291: caja y deuda, lo que queda (Genoa 2022; la duda del factoring la decidís vos) --> Pipeline 2 (290), Principal (291)
-* 310: caja y deuda de un año sin vecino, cualquier país --> Pipeline 2
+* 290 y 291: caja y deuda, lo que queda (Genoa 2022; la duda del factoring la decidís vos) --> Pipeline 3 (290), Principal (291)
+* 310: caja y deuda de un año sin vecino, cualquier país --> Pipeline 3
 * 292: cargar lo transcripto por subagentes: Países Bajos (en la cola), Bélgica, Suiza, Beşiktaş, Colombia y los .md viejos que rehace Mistral --> Onboarding 2
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 232: mejoras de script que dejó Grecia --> Pipeline 2
-* 279: la tool que duplicaba claves en club-leagues/ru.js --> Pipeline 2
-* 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 2
-* 298: mejoras de script de Estonia y Bélgica (primero la corrida de Mistral, que la corrés vos; después i a n, p, q, s, t2, u2, v, z) --> Pipeline 2
-* 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 2 (306, 307)
-* 301: gasto.mjs --json se corta en un pipe --> Pipeline 2
-* 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 2
+* 232: mejoras de script que dejó Grecia --> Pipeline 3
+* 279: la tool que duplicaba claves en club-leagues/ru.js --> Pipeline 3
+* 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 3
+* 298: mejoras de script de Estonia y Bélgica (y y w de los noruegos primero; después j a n, p, q, s, v, u2, z, g2, e3) --> Pipeline 3
+* 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 3 (306, 307)
+* 301: gasto.mjs --json se corta en un pipe --> Pipeline 3
+* 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 3
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 2
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan --> Onboarding 2
-* 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país) --> Onboarding 2
+* 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país) --> Datos 2
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS --> Onboarding 2
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 2
@@ -54,10 +54,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (50 informes; la compuerta del pipeline)
-* 311: pedirles a los clubes el informe del auditor que no está publicado (mails) --> Principal
 * 294: registro de entidades, lo que queda (espera las 10 altas del borrador, PRIORIDAD de Onboarding 2) --> Finanzas 3
 * 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
-* 312: la página de sponsor no muestra la fuente propia de una entrada
+* 312: la página de sponsor no muestra la fuente propia de una entrada --> Datos 2
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
@@ -219,7 +218,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    `club-or-year-onboarding` (la skill, con ok de Guido). Siguen sin liga a propósito: Novorizontino 2010, Dynamo Makhachkala 2021, Racing 2027.
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 50 informes del auditor
-   que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, van al 311;
+   que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);
    quedan para sourcing Hamburgo 2024 (ficha de la KGaA HRB 191603 o de la AG vieja HRB 47576 en el Unternehmensregister; captcha por
    publicación, lo resuelve Guido), Lazio 2006 (figura `falta_transcripcion`; hay una captura truncada en Wayback) y Roma 2022 (el link de "consolidato" baja el individual). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
    cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
@@ -301,11 +300,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    propio documento); (2) la deuda belga, con criterio a decidir (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos
    financieros); (3) OH Leuven y los documentos cuyo .md no trae la columna de códigos. Si caja-deuda vuelve a atar un valor al año
    equivocado (Tallinna Kalev en onboarding), mirar qué `.md` devolvió `mdDeFuente`.
-311. PEDIRLES A LOS CLUBES EL INFORME DEL AUDITOR (pedido de fos-finanzas y Guido, 2026-10-18; skill club-outreach, Guido aprueba cada
-   envío). Unos 50 club-años sin el informe en ningún canal público, con lo probado en `Admin/Archive/sesion-finanzas-2026-10-18-sesion3.md`
-   ("Sesión 3"): Portugal 25 (la Certificação Legal das Contas: Académico de Viseu, Alverca, Casa Pia, Chaves, Felgueiras, Mafra, Marítimo,
-   Nacional, Rio Ave, Vizela, Portimonense), Hellas Verona 2020-2024, Napoli 2018 y 2020, Lazio 2017, Bologna 2025, San Lorenzo 2011-2012,
-   Argentinos 2015 y los 10 japoneses 2025 (publican el 決算公告, sin auditor).
 312. LA PÁGINA DE SPONSOR NO MUESTRA LA FUENTE PROPIA DE UNA ENTRADA (cierre de datos, pantallas). `generate-sponsors.js` ya pone como 6º
    elemento de la entrada la fuente de lo que salió a mano o de la página del club; `js/sponsor.js` todavía muestra solo la fuente de la liga.
 309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de
