@@ -16,4 +16,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'adodenhaag-nl': { 2025: 'nl-eerstedivisie' },
   'fcdenbosch-nl': { 2025: 'nl-eerstedivisie' },
   'fcdordrecht-nl': { 2025: 'nl-eerstedivisie' },
+  'fcemmen-nl': { 2019: 'nl-eredivisie' },
 });

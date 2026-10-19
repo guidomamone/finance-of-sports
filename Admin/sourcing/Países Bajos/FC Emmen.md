@@ -13,3 +13,5 @@
 
 - Los clubes holandeses publican el Jaarverslag/Jaarrekening por la licencia KNVB (formulario F.04). Hay informes de fundación o sociales mezclados: se excluyeron los evidentes (Stichting, sociaal jaarverslag), pero revisar cada archivo antes de cargar.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2019 desde `Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf` (sourceId `fcemmen-nl-f-04-fce-jaarverslag-2018-2019-incl-jaarcijfers-def`).

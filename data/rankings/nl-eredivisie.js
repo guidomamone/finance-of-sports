@@ -61,4 +61,13 @@ window.RANKINGS["nl-eredivisie"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",10.799]] },
     ],
   },
+  2019: {
+    leagueSize: null,
+    wiki: {"t":"2018–19 Eredivisie","lang":"en","at":"2026-10-19","n":18},
+    clubs: [
+      { id:"fcemmen-nl", revenue:8.698, reportType:"official_balance_sheet",
+        sourceId:"fcemmen-nl-f-04-fce-jaarverslag-2018-2019-incl-jaarcijfers-def",
+        mix:[["Comercial / Sponsors",4.084],["Estadio",2.017],["Televisión",2.012],["Premios por competencias",0.37],["Otros ingresos",0.215]] },
+    ],
+  },
 };
