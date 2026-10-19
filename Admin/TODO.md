@@ -25,19 +25,19 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 292: cargar lo transcripto: lote 101 y 102 hechos (Go Ahead Eagles, Luzern 2018-2024 salvo 2023, Lommel SK 2019-2024, Lierse SK 2020-2021, Patro Eisden 2021 y 2023); quedan Patro Eisden 2022 y Lierse SK 2019 (período), y St. Gallen con la 298 ai y sus 6 casos (espera tu decisión de perímetro); el estadio de las amateur espera la 298 af; Basel es de la 324; después Suiza, Beşiktaş y Colombia --> Pantallas 3 (St. Gallen --> Pipeline 5)
+* 292: cargar lo transcripto: Suiza (Basel, Luzern 2018-2024 salvo 2023, St. Gallen cargándose), Países Bajos y Bélgica (Lommel, Lierse 2020-2021, Patro Eisden 2021-2023) hechos; quedan Luzern 2023 (recargar: la 298 k2 ya está), Lierse SK 2019 (298 w2), Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022 (ligas de la 298 af), y después Beşiktaş y Colombia --> Pantallas 3 (St. Gallen --> Pipeline 5)
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 5. La ai (St. Gallen intragrupo, con tu decisión de perímetro) y la carga de St. Gallen también --> Pipeline 5.
+* 298: mejoras de script (af, ligas belgas: aprobada, la escribe; aj, signos de la columna previa; z2, Westerlo 2015 de 18 meses y Aston Villa de 13, a decidir con vos; g2, condicional; nuevas p2, q2, r2, s2, v2 y w2, de los lotes 97, 98 y 103) --> Pipeline 5
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
-* 238: llevar a 0 los documentos que quedaron a mitad de camino --> Pantallas 3
-* 261: Reino Unido: carga del fútbol inglés (lote 97, corriendo; el 98 y el alta de Celtic, lote 99, después); la cola de transcripción por Mistral --> Finanzas 5
+* 238: llevar a 0 los documentos que quedaron a mitad de camino: arranca por Latinoamérica (161 transcriptos y validados, ~US$ 50, en lotes de 5 a 8 clubes; espera tu ok) --> Pantallas 3
+* 261: Reino Unido: lotes 97 a 99 casi cargados (Arsenal, Aston Villa, Bournemouth, Brentford, Brighton, Burnley, Chelsea, Crystal Palace, Everton, Fulham, Man City y otros); quedan el reintento del lote 106, Newcastle 2020-21 (11 meses), Fulham 2021-22 y el alta de Celtic; la cola de transcripción por Mistral --> Finanzas 5
 * 165 c: altas de los países nuevos que faltan --> Pantallas 3
 * 195: gestiones (presidentes) sin fuente confirmada (casi todas esperan respuesta del club)
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
@@ -47,7 +47,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 252: ejercicios nuevos, lo que queda (onboardear los PDFs ya bajados, Instituto 2024-25 incluido; Alemania en enero de 2027: qué bajar ya está en las notas de Gladbach y Stuttgart) --> Pantallas 3
+* 252: ejercicios nuevos: lote 103 hecho (19 ejercicios de 2025); quedan Unión Magdalena 2025 (en la cola), River cierre 2025-12-31, Vasco da Gama 2024, Amazonas FC 2025 y los 14 clubes que el script marca de más; Alemania en enero de 2027 --> Pantallas 3
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 * 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
@@ -74,7 +74,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 257: skills que faltan (después de 255)
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
 * 51: proceso de mails a clubes
-* 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`, ensayo 3 a unir y 21 duplicados al archivo); la principal la corre cuando termine el lote 97 (toca Cardiff y Swansea)
+* 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`, ensayo 3 a unir y 21 duplicados al archivo); la principal la corre cuando no haya ningún lote del Reino Unido corriendo (toca Cardiff y Swansea)
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
