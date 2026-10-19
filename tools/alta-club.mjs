@@ -740,7 +740,10 @@ function fxDeSerie(moneda, fecha) {
 
 // Nombre legal: línea con un token del nombre del club + una forma societaria.
 export function nombreLegal(md, displayName) {
-  const tokens = norm(displayName).split(/[^a-z0-9]+/).filter((t) => t.length >= 4);
+  // (to-do 323 f, ok de Guido 2026-10-19) un nombre en plural ("Harlequins") se busca también en singular ("HARLEQUIN FOOTBALL CLUB LIMITED"): sin eso la línea del nombre legal no pasaba
+  // el filtro y ganaba una frase del texto ("Harlequins' position as"). Medido en la primera transcripción de 400 carpetas de club: solo cambia Harlequins.
+  const base = norm(displayName).split(/[^a-z0-9]+/).filter((t) => t.length >= 4);
+  const tokens = [...new Set(base.flatMap((t) => (t.length >= 7 && t.endsWith('s') ? [t, t.slice(0, -1)] : [t])))];
   if (!tokens.length) return null;
   const formas = FORMAS.join('|');
   const re = new RegExp(`([A-Za-zÀ-ÿĀ-žΑ-ωА-я0-9][^\\n|#*]{2,110}?(?<![A-Za-z])(?:${formas}))(?![A-Za-z])`, 'gi');
