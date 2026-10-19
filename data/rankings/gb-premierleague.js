@@ -157,6 +157,9 @@ window.RANKINGS["gb-premierleague"] = {
     leagueSize: null,
     wiki: {"t":"2019–20 Premier League","lang":"en","at":"2026-10-19","n":20},
     clubs: [
+      { id:"brighton-gb", revenue:152.375, reportType:"official_balance_sheet",
+        sourceId:"brighton-gb-full-accounts-2019-20",
+        mix:[["Comercial / Sponsors",11.718],["Estadio",16.701],["Televisión",111.132],["Otros ingresos",12.825]] },
       { id:"astonvilla-gb", revenue:133.406, reportType:"official_balance_sheet",
         sourceId:"astonvilla-gb-full-accounts-2019-20",
         mix:[["Comercial / Sponsors",23.532],["Estadio",13.741],["Televisión",96.134]] },

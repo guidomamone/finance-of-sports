@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.md",
+  "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.pdf",
+  "club": "brighton-gb",
+  "year": 2020,
+  "generatedAt": "2026-10-19T15:37:03.114Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 23,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        13.513
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 23,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        89.92
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 23,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        9.481
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Other",
+      "lado": "revenue",
+      "page": 23,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        10.377
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Operating expenses",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        182.111
+      ],
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "(Loss)/profit on player trading",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        0.599
+      ],
+      "glosa": "(Pérdida)/beneficio por traspaso de jugadores"
+    }
+  ]
+}

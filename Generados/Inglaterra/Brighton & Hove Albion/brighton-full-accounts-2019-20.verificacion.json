@@ -1,0 +1,150 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.md",
+ "generado": "2026-10-19T17:11:10.521Z",
+ "estado": "ok",
+ "clubId": "brighton-gb",
+ "year": 2020,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "123.291 = 123.291",
+   "suma": 123.291,
+   "impreso": 123.291
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"Operating expenses\" 182.111 cierra; además se suman 1 línea(s) fuera de ese total (0.599)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4210854715202004e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 123.291 en este documento y 123.89 en brighton-full-accounts-2020-21.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses\" no suma el renglón (149.89 contra 182.111, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de localizar que no afecta la carga: b1 es un resumen del informe de gestión con Turnover, Football costs y Loss before taxation; el estado oficial es b2.",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Operating expenses\"): aceptar, en brighton-full-accounts-2019-20.pdf",
+  "duda de extraer que no afecta la carga: No hay desglose de salarios del plantel; L904 incluye todo el personal."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses",
+   "suma": 149.89,
+   "objetivo": 182.111
+  }
+ ],
+ "totales": {
+  "ingresos": 123.291,
+  "gastos": 182.71,
+  "financiero": -3.286,
+  "impuesto": 0,
+  "resultadoImpreso": -62.705,
+  "resultadoParaCargar": -62.705,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 13.513,
+   "pagina": 23,
+   "linea": 884,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 89.92,
+   "pagina": 23,
+   "linea": 885,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 9.481,
+   "pagina": 23,
+   "linea": 886,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 10.377,
+   "pagina": 23,
+   "linea": 887,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Operating expenses",
+   "lado": "gasto",
+   "M": 182.111,
+   "pagina": 14,
+   "linea": 500,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(Loss)/profit on player trading",
+   "lado": "gasto",
+   "M": 0.599,
+   "pagina": 14,
+   "linea": 501,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.015,
+   "linea": 503
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -3.301,
+   "linea": 504
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 506
+  }
+ ]
+}

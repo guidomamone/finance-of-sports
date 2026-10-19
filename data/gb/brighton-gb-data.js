@@ -15,6 +15,12 @@ const brightonGbRevenueLinesByYear = {
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:5.000, disclosureLevel:'detailed' },
     { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:56.911, disclosureLevel:'detailed' },
   ],
+  2020: [
+    { rawLabel:'Matchday', normalizedCategory:'matchday_competition', amountNative:13.513, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:89.92, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:9.481, disclosureLevel:'aggregated' },
+    { rawLabel:'Other', normalizedCategory:'other_income', amountNative:10.377, disclosureLevel:'aggregated' },
+  ],
 };
 
 const brightonGbExpenseLinesByYear = {
@@ -30,6 +36,10 @@ const brightonGbExpenseLinesByYear = {
     { rawLabel:'Amortisation of players\' registrations', normalizedCategory:'player_amortisation', amountNative:-81.840, disclosureLevel:'detailed' },
     { rawLabel:'Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-1.410, disclosureLevel:'detailed' },
     { rawLabel:'Otros costos operativos (Cost of sales + Operating expenses no desglosados por naturaleza, neto de staff/amortización/depreciación)', normalizedCategory:'other_expenses', amountNative:-72.350, disclosureLevel:'aggregated' },
+  ],
+  2020: [
+    { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-182.111, disclosureLevel:'aggregated' },
+    { rawLabel:'(Loss)/profit on player trading', normalizedCategory:'other_expenses', amountNative:-0.599, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -51,6 +61,21 @@ const brightonGbFiscalYearMeta = {
     grossDebt:336.069, cash:39.836,
     profitOnPlayerSales:0, assetSales:0, netInterest:-0.700, tax:3.400,
     officialTotalRevenue:282.974, officialTotalExpenses:314.279, officialPAT:-28.605,
+  },
+  2020: {
+    currency:'GBP', fxRef:'GBP@2020-06-30',
+    sourceId:'brighton-gb-full-accounts-2019-20',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-3.286, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.015},
+      {label:'Interest payable and similar charges', value:-3.301},
+      {label:'Tax on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:123.291, officialTotalExpenses:182.71, officialPAT:-62.705,
   },
 };
 
@@ -82,6 +107,11 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/00081077/filing-history',
     publicNote:'Cuentas individuales auditadas (BDO LLP, sin salvedades) de The Brighton and Hove Albion Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25, octava temporada en la Premier League, 8° puesto, sin competencia europea).',
+  },
+  'brighton-gb-full-accounts-2019-20': {
+    id:'brighton-gb-full-accounts-2019-20', clubId:'brighton-gb',
+    title:'The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2019-20 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 

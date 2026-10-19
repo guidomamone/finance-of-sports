@@ -30,6 +30,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Brentford Community Stadium","capacidad":17250,"sponsor":"Hollywoodbets","marca":"Umbro","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'brighton-gb': {
+    2020: {"estadio":"Falmer Stadium","capacidad":30750,"sponsor":"American Express","marca":"Nike","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
     2024: {"estadio":"Falmer Stadium","capacidad":31876,"sponsor":"American Express","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Falmer Stadium","capacidad":31876,"sponsor":"American Express","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

@@ -1,0 +1,412 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.pdf",
+ "generado": "2026-10-19T17:11:13.985Z",
+ "frena": [],
+ "avisos": [
+  "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
+ ],
+ "ejercicio": {
+  "clubId": "brighton-gb",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Matchday",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.48,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Broadcasting",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 122.991,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 8.32,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other",
+    "normalizedCategory": "other_income",
+    "amountNative": 7.94,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit/(loss) on player trading",
+    "normalizedCategory": "player_sales",
+    "amountNative": 6.592,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.513,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.004,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Operating expenses",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -194.356,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2021-06-30",
+   "sourceId": "brighton-gb-full-accounts-2020-21",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -3.031,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.005
+    },
+    {
+     "label": "Interest payable and similar charges",
+     "value": -3.036
+    },
+    {
+     "label": "Tax on loss",
+     "value": null
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 148.836,
+   "officialTotalExpenses": 195.36,
+   "officialPAT": -49.555
+  },
+  "source": {
+   "id": "brighton-gb-full-accounts-2020-21",
+   "clubId": "brighton-gb",
+   "title": "The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2020-21 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-19): El .md dice 'for the year ended 30 June 2021' (Finanzas 5, 2026-10-19)"
+ },
+ "clubId": "brighton-gb",
+ "year": 2021,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.pdf",
+   "campo": "cierre",
+   "valor": "2021-06-30",
+   "linea": null,
+   "motivo": "El .md dice 'for the year ended 30 June 2021' (Finanzas 5, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 11,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Matchday",
+   "page": 25,
+   "native": 0.48,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.48,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.48
+  },
+  {
+   "label": "Broadcasting",
+   "page": 25,
+   "native": 122.991,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 122.991,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 122.991
+  },
+  {
+   "label": "Commercial",
+   "page": 25,
+   "native": 8.32,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 8.32,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.32
+  },
+  {
+   "label": "Other",
+   "page": 25,
+   "native": 7.94,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 7.94,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.94
+  },
+  {
+   "label": "Profit/(loss) on player trading",
+   "page": 16,
+   "native": 6.592,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.592,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.592
+  },
+  {
+   "label": "Other operating income",
+   "page": 16,
+   "native": 2.513,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.513,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.513
+  },
+  {
+   "label": "Cost of sales",
+   "page": 16,
+   "native": 1.004,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.004,
+   "cat": "other_expenses",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.004
+  },
+  {
+   "label": "Operating expenses",
+   "page": 16,
+   "native": 194.356,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 194.356,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)",
+   "destino": "expense",
+   "amountNative": -194.356
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.005,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar charges",
+   "page": null,
+   "native": -3.036,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 148.836,
+  "expSum": -195.36,
+  "officialTotalRevenue": 148.836,
+  "officialTotalExpenses": 195.36,
+  "officialPAT": -49.555,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -49.555,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 148.836
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 195.36
+  }
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2020–21 Premier League\" (tools/club-league-reference/gb.json), coincidencia única por palabras \"Brighton & Hove Albion\" = \"Brighton\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): El .md dice 'for the year ended 30 June 2021' (Finanzas 5, 2026-10-19)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): El .md dice 'for the year ended 30 June 2021' (Finanzas 5, 2026-10-19))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (1 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2021-06-30 = 0.723641 (Tipo spot del Bank of England al 2021-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "brighton-gb-full-accounts-2020-21",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2020–21 Premier League\" (tools/club-league-reference/gb.json), coincidencia única por palabras \"Brighton & Hove Albion\" = \"Brighton\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 6,
+  "lineasGasto": 2,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

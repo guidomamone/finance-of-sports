@@ -1,0 +1,215 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.md",
+ "mdSha1": "35b0ea5ef9feb99d8b6c13dc668a1d26a4bc22c2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:59:40.280Z",
+ "perimetroClub": null,
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    77,
+    83
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    353,
+    357
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    486,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 16,
+   "lineas": [
+    609,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    638,
+    658
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    674,
+    684
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 25,
+   "lineas": [
+    984,
+    987
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 26,
+   "lineas": [
+    1006,
+    1013
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 26,
+   "lineas": [
+    1017,
+    1023
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 26,
+   "lineas": [
+    1027,
+    1033
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    1037,
+    1041
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 28,
+   "lineas": [
+    1093,
+    1099
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 29,
+   "lineas": [
+    1117,
+    1129
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 30,
+   "lineas": [
+    1143,
+    1157
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 30,
+   "lineas": [
+    1161,
+    1163
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 31,
+   "lineas": [
+    1179,
+    1187
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 31,
+   "lineas": [
+    1193,
+    1195
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 31,
+   "lineas": [
+    1199,
+    1208
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 32,
+   "lineas": [
+    1230,
+    1235
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 32,
+   "lineas": [
+    1241,
+    1245
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 32,
+   "lineas": [
+    1247,
+    1251
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 32,
+   "lineas": [
+    1255,
+    1261
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 33,
+   "lineas": [
+    1296,
+    1298
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b7"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b10"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: \"2021 Total £'000\"",
+ "moneda": "GBP",
+ "columna_ejercicio": "2021 Total £'000",
+ "columna_anterior": "2020 Total £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de The Brighton and Hove Albion Football Club Limited (b4), con columnas separadas de operaciones y player trading; se usa la columna Total. b7 desglosa el turnover (Matchday, Broadcasting, Commercial, Other). b10 abre los costos de personal (Wages and salaries, Social security, Pension), que es la fuente de salarios. b8 detalla cargos incluidos en el resultado operativo (amortizaciones, depreciación). b1 es un resumen de la memoria (business review), no se usa."
+}

@@ -57,7 +57,7 @@ window.CLUB_INDEX = {
   "boyacachico-co": {"n":"Boyacá Chicó","c":"CO","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "braga-pt": {"n":"Braga","c":"PT","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2020,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "brentford-gb": {"n":"Brentford","c":"GB","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
-  "brighton-gb": {"n":"Brighton","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "brighton-gb": {"n":"Brighton","c":"GB","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
   "brondby-dk": {"n":"Brøndby","c":"DK","q":"full","y":1,"last":2020,"yrs":[[2020,"official_balance_sheet"]]},
   "burnley-gb": {"n":"Burnley","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "casapia-pt": {"n":"Casa Pia","c":"PT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},

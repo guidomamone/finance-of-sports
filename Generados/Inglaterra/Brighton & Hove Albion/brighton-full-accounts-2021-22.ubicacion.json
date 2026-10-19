@@ -1,0 +1,281 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.md",
+ "mdSha1": "14d66f23726e121bed9f5eae8ce948f78f002a38",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:00:05.846Z",
+ "perimetroClub": null,
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    69,
+    77
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    293,
+    293
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 16,
+   "lineas": [
+    647,
+    661
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    676,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 18,
+   "lineas": [
+    714,
+    724
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 25,
+   "lineas": [
+    1029,
+    1035
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 25,
+   "lineas": [
+    1039,
+    1041
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 26,
+   "lineas": [
+    1055,
+    1061
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 26,
+   "lineas": [
+    1065,
+    1071
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 26,
+   "lineas": [
+    1077,
+    1082
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    1086,
+    1090
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 27,
+   "lineas": [
+    1104,
+    1108
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 27,
+   "lineas": [
+    1121,
+    1125
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 27,
+   "lineas": [
+    1129,
+    1133
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 28,
+   "lineas": [
+    1145,
+    1147
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 28,
+   "lineas": [
+    1154,
+    1164
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 29,
+   "lineas": [
+    1181,
+    1196
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 30,
+   "lineas": [
+    1208,
+    1222
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 30,
+   "lineas": [
+    1226,
+    1228
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 30,
+   "lineas": [
+    1232,
+    1234
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 31,
+   "lineas": [
+    1246,
+    1254
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 31,
+   "lineas": [
+    1260,
+    1262
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 31,
+   "lineas": [
+    1266,
+    1275
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 32,
+   "lineas": [
+    1292,
+    1297
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 32,
+   "lineas": [
+    1303,
+    1307
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 32,
+   "lineas": [
+    1309,
+    1313
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 32,
+   "lineas": [
+    1317,
+    1323
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 33,
+   "lineas": [
+    1365,
+    1370
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b13"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b10",
+  "b12",
+  "b14"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: '2022 Total £'000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2022 Total £'000",
+ "columna_anterior": "2021 Total £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la columna '2022 Total £'000' del estado (b3) y no las columnas 'Operations excluding player trading' y 'Player trading'?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El estado b3 separa operaciones y traspaso de jugadores en columnas; el total es comparable con 2021.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se toma 'Wages and salaries' de la nota 7 (b10) como salarios totales del personal, sabiendo que no separa plantel de otros empleados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 7 da costos de personal totales incluidos directores, sin abrir jugadores.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de The Brighton and Hove Albion Football Club Limited; no hay consolidado. b1 es resumen de la memoria (no se carga). b8 detalla cargos incluidos en el resultado operativo (amortización, deterioro, pensiones). b12 remuneración de directores, subconjunto de b10."
+}

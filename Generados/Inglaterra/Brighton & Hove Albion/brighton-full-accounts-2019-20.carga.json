@@ -1,0 +1,360 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.pdf",
+ "generado": "2026-10-19T17:11:13.902Z",
+ "frena": [],
+ "avisos": [
+  "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
+ ],
+ "ejercicio": {
+  "clubId": "brighton-gb",
+  "year": 2020,
+  "cierre": "2020-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Matchday",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 13.513,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Broadcasting",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 89.92,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 9.481,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other",
+    "normalizedCategory": "other_income",
+    "amountNative": 10.377,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Operating expenses",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -182.111,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(Loss)/profit on player trading",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.599,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2020-06-30",
+   "sourceId": "brighton-gb-full-accounts-2019-20",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -3.286,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.015
+    },
+    {
+     "label": "Interest payable and similar charges",
+     "value": -3.301
+    },
+    {
+     "label": "Tax on loss",
+     "value": null
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 123.291,
+   "officialTotalExpenses": 182.71,
+   "officialPAT": -62.705
+  },
+  "source": {
+   "id": "brighton-gb-full-accounts-2019-20",
+   "clubId": "brighton-gb",
+   "title": "The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2019-20 (ejercicio 2020)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2020-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "brighton-gb",
+ "year": 2020,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Matchday",
+   "page": 23,
+   "native": 13.513,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 13.513,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.513
+  },
+  {
+   "label": "Broadcasting",
+   "page": 23,
+   "native": 89.92,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 89.92,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 89.92
+  },
+  {
+   "label": "Commercial",
+   "page": 23,
+   "native": 9.481,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 9.481,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.481
+  },
+  {
+   "label": "Other",
+   "page": 23,
+   "native": 10.377,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 10.377,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.377
+  },
+  {
+   "label": "Operating expenses",
+   "page": 14,
+   "native": 182.111,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 182.111,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)",
+   "destino": "expense",
+   "amountNative": -182.111
+  },
+  {
+   "label": "(Loss)/profit on player trading",
+   "page": 14,
+   "native": 0.599,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))",
+   "signoFijo": 0.599,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)",
+   "destino": "expense",
+   "amountNative": -0.599
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.015,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar charges",
+   "page": null,
+   "native": -3.301,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 123.291,
+  "expSum": -182.71,
+  "officialTotalRevenue": 123.291,
+  "officialTotalExpenses": 182.71,
+  "officialPAT": -62.705,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -62.705,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 123.291
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 182.71
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "GBP@2020-06-30",
+  "fx": 0.809127,
+  "source": "market_close",
+  "label": "Tipo spot del Bank of England al 2020-06-30"
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2019–20 Premier League\" (tools/club-league-reference/gb.json), coincidencia única por palabras \"Brighton & Hove Albion\" = \"Brighton\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2020,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2020-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (49 de 50 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (1 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2020-06-30",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.809127. --escribir agrega 'GBP@2020-06-30' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "brighton-gb-full-accounts-2019-20",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2019–20 Premier League\" (tools/club-league-reference/gb.json), coincidencia única por palabras \"Brighton & Hove Albion\" = \"Brighton\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 4,
+  "lineasGasto": 2,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}
