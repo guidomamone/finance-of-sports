@@ -12,6 +12,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2015: {"estadio":"Fredrikstad Stadion","capacidad":12565,"temporada":"2015 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1339664467"},
     2016: {"estadio":"Fredrikstad Stadion","capacidad":12565,"temporada":"2016 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1339664538"},
     2017: {"estadio":"Fredrikstad Stadion","capacidad":12565,"temporada":"2017 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1368418727"},
+    2018: {"estadio":"Fredrikstad Stadion","temporada":"2018 Norwegian Second Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1285886753","fuenteManual":"https://en.wikipedia.org/wiki/Fredrikstad_Stadion","manual":["estadio"]},
     2024: {"estadio":"Fredrikstad Stadion","capacidad":12560,"sponsor":"OBOS","marca":"Craft","temporada":"2024 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356845648"},
   },
   'molde-no': {
