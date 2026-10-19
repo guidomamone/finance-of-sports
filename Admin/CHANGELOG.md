@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 819 — Fredrikstad 2012 (2026-10-19)
+
+* Fredrikstad 2012, del FLI: ingresos 23,06 M y gastos 23,55 M, como lo impreso; coincide con la columna del año anterior de 2013.
+
 ## Versión 818 — Pantallas 3: tamaño de liga desde Wikipedia, Fortaleza con el CEO, la compuerta en la skill (2026-10-19)
 
 * 309: `generate-rankings.js` usa el tamaño de la lista de Wikipedia cuando no hay uno verificado: 289 liga-años muestran "N de los M" (eran 4).
