@@ -212,6 +212,7 @@ const FX_CLOSE = {
   'CHF@2010-12-31': { fx: 0.9369, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2010-12-30, 2010-12-31 no es día hábil)' },
   'CHF@2011-12-31': { fx: 0.9374, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2011-12-30, 2011-12-31 no es día hábil)' },
   'CHF@2012-12-31': { fx: 0.9155, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2012-12-31' },
+  'CHF@2013-12-31': { fx: 0.8904, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2013-12-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve
