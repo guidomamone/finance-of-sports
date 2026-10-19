@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.941Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:58.876Z",
+ "estado": "ok",
  "clubId": "liersesk-be",
  "year": 2021,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "254f97b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -29,45 +27,57 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 0.009395999999999998
+   "detalle": "cierra (como impresos)",
+   "dif": 3.469446951953614e-18
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2022",
    "ok": true,
-   "detalle": "ingresos de 2021: 0.001436 en este documento y 0.001436 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2021: 0 en este documento y 0.001436 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2020",
-   "ok": null,
-   "detalle": "ingresos de 2020: 0 en jaarrekening-2020-06-30-individual.pdf y 0.001475 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "códigos NBB del año 2020 iguales en este documento y en jaarrekening-2020-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0 y 0)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L210-L233, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 0.001436,
-  "gastos": 0.000201,
-  "financiero": 0.020373,
-  "impuesto": 0.004467,
+  "ingresos": 0,
+  "gastos": 0.001637,
+  "financiero": 0.020313,
+  "impuesto": -0.004467,
   "resultadoImpreso": 0.014209,
   "resultadoParaCargar": 0.014209,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
    "etiqueta": "Brutomarge (+)/(-)",
-   "lado": "ingreso",
+   "lado": "gasto",
    "M": 0.001436,
    "pagina": 6,
    "linea": 210,
@@ -83,13 +93,13 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
    "etiqueta": "Recurrente financiële opbrengsten",
-   "M": -0.020343,
+   "M": 0.020343,
    "linea": 223
   },
   {

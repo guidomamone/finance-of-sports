@@ -1,0 +1,53 @@
+{
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.md",
+ "generatedAt": "2026-10-19T14:23:32.169Z",
+ "rubrosHuella": "c0d3751e2bbf2d5102c18d4c4af0a4dc2e6c3ff0",
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 865
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "depreciation",
+     0.85
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1159
+  }
+ ]
+}

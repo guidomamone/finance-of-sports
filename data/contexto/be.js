@@ -35,6 +35,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Planet Group Arena","capacidad":20000,"sponsor":"Bâloise","marca":"Craft","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'liersesk-be': {
+    2022: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"sponsor":"Keukens Van Lommel","marca":"Jako","temporada":"2021–22 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376207947"},
     2025: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'lokerentemse-be': {

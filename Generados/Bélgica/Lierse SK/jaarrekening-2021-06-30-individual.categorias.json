@@ -1,0 +1,42 @@
+{
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.md",
+ "club": "liersesk-be",
+ "year": 2021,
+ "generatedAt": "2026-10-19T14:23:43.598Z",
+ "rubrosHuella": "81e3077f1fc9c37ba35ffcb7d419a9b110135476",
+ "jevHuella": "aaa07abb84e66d6b559b09f3f5cbcc1aecdaac8c",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Margen bruto (+)/(-)",
+   "page": 6,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 2,
+   "confCache": 0.6,
+   "motivo": "Igual a 'Brutomarge' del club (lump_football_operations); aquí marcado como gasto por margen negativo.",
+   "jev": "other_expenses",
+   "jevConf": 0.86,
+   "desdeCache": true,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.6
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 6,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

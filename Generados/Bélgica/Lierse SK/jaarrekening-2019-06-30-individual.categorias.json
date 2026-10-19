@@ -1,0 +1,43 @@
+{
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.md",
+ "club": "liersesk-be",
+ "year": 2019,
+ "generatedAt": "2026-10-19T14:23:43.596Z",
+ "rubrosHuella": "c0d3751e2bbf2d5102c18d4c4af0a4dc2e6c3ff0",
+ "jevHuella": "c3062c33b84cfe64c56906b1ed5f5e78f466a5a6",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0054168,
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Margen bruto (+)/(-)",
+   "page": 7,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.86,
+   "escalon": 2,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.6,
+   "motivo": "Igual a 'Brutomarge' del club (lump_football_operations); aquí marcado como gasto por margen negativo."
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material",
+   "page": 7,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 2,
+   "confCache": 0.6,
+   "motivo": "Amortización combinada intangible y material; en abreviado belga sin desglose suele mapearse a depreciation; podría incluir pases.",
+   "jev": "depreciation",
+   "jevConf": 0.84,
+   "desdeCache": true,
+   "categoria": "depreciation",
+   "confianza": 0.6
+  }
+ ]
+}

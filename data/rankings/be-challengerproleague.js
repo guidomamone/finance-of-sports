@@ -35,6 +35,15 @@ window.RANKINGS["be-challengerproleague"] = {
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
+  2022: {
+    leagueSize: null,
+    wiki: {"t":"2021–22 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
+    clubs: [
+      { id:"liersesk-be", revenue:1.738, reportType:"official_balance_sheet",
+        sourceId:"liersesk-be-jaarrekening-2022-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.738]] },
+    ],
+  },
   2019: {
     leagueSize: null,
     wiki: {"t":"2018–19 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.949Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:58.947Z",
+ "estado": "ok",
  "clubId": "liersesk-be",
  "year": 2024,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "72dfbfe"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -29,7 +27,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 0.0000010000000001675335
   },
   {
@@ -40,23 +38,27 @@
   {
    "nombre": "documento del año 2025",
    "ok": true,
-   "detalle": "ingresos de 2024: 2.949459 en este documento y 2.949459 en jaarrekening-2025-06-30-individual.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2024: 2.895671 en este documento y 2.949459 en jaarrekening-2025-06-30-individual.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2023",
    "ok": true,
-   "detalle": "ingresos de 2023: 2.913562 en jaarrekening-2023-06-30-individual.pdf y 2.913562 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2023: 2.555937 en jaarrekening-2023-06-30-individual.pdf y 2.555937 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
-  "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L237-L260, esquema abreviado); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "escalón \"de los cuales\": cerró la lectura 4 sin las filas \"Waarvan: niet-recurrente bedrijfsopbrengsten\" L238 (una parte de la fila de arriba)",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
@@ -66,12 +68,12 @@
  "totales": {
   "ingresos": 2.895671,
   "gastos": 2.980504,
-  "financiero": 0.021654,
-  "impuesto": 0.010092,
+  "financiero": -0.012956,
+  "impuesto": -0.010092,
   "resultadoImpreso": -0.10788,
   "resultadoParaCargar": -0.10788,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -91,22 +93,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.381564,
-   "pagina": 7,
-   "linea": 242,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 7,
-   "linea": 243,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Andere bedrijfskosten",
    "lado": "gasto",
    "M": 0.01883,
@@ -121,11 +107,27 @@
    "pagina": 7,
    "linea": 247,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.248921,
+   "pagina": 7,
+   "linea": 311,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.132643,
+   "pagina": 7,
+   "linea": 342,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

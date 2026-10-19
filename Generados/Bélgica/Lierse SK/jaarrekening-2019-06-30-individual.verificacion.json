@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.937Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:58.830Z",
+ "estado": "ok",
  "clubId": "liersesk-be",
  "year": 2019,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "3e60b14",
-  "aaddc22"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -31,20 +28,32 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.0014260000000000002
+   "dif": 0
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2020",
-   "ok": null,
-   "detalle": "no se puede comparar: jaarrekening-2020-06-30-individual.pdf no trae la columna del año anterior"
+   "ok": true,
+   "detalle": "códigos NBB del año 2019 iguales en este documento y en jaarrekening-2020-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0 y 0)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L229-L252, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: El ejercicio empieza el 09-07 según b2, lo que sugiere un primer ejercicio sin comparativo.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
@@ -53,8 +62,8 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 0,
-  "gastos": 0.002479,
-  "financiero": 0.000027,
+  "gastos": 0.003851,
+  "financiero": -0.000027,
   "impuesto": 0,
   "resultadoImpreso": -0.003878,
   "resultadoParaCargar": -0.003878,
@@ -62,6 +71,14 @@
   "lecturaSignos": "como impresos"
  },
  "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "gasto",
+   "M": 0.001372,
+   "pagina": 7,
+   "linea": 229,
+   "origen": "estado"
+  },
   {
    "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
    "lado": "gasto",
@@ -77,9 +94,9 @@
  },
  "financiero": [
   {
-   "etiqueta": "Financiële kosten",
-   "M": 0.000027,
-   "linea": 245
+   "etiqueta": "Recurrente financiële kosten",
+   "M": -0.000027,
+   "linea": 246
   }
  ],
  "impuesto": []
