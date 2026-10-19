@@ -110,7 +110,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   Lommel SK, OH Leuven, Patro Eisden, RWDM, Beerschot y RAAL La Louvière (lote 90). Caja y deuda: Estonia con el vocabulario estonio (bilanss, raha, laenukohustised) y Bélgica solo la caja de un año
   sin vecino, por el código NBB 54/58 si el balance del documento cuadra; la deuda belga espera criterio (to-do 310). El estado belga se verifica por sus códigos NBB
   (`tools/nbb.mjs`). La liga de un año nuevo la resuelve `listas-lote.mjs --lote`, que corre
-  `lote.mjs --cargar`. De los años belgas 2013-2024 (lote 92), 12 de ligas amateur frenan en la compuerta de estadio y sponsor por falta de sponsor con fuente (to-do 273): no se cargan
+  `lote.mjs --cargar`. Los años belgas 2013-2024 (lote 92) pasan la compuerta de estadio y sponsor (en una liga amateur alcanza el estadio): no se cargan
   con ajustes a mano (Guido).
 - Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS; to-do 165 b0). Caja y deuda: lo que falta está frenado por el documento o por la escala del año (lista en el to-do 260). Un ajuste `caja` / `deuda` puede llevar año (`ajustes.mjs --anio`), para un PDF que alimenta dos años. Rusia sale de los códigos del balance del fisco (caja 1250, deuda 1410 + 1510). Los préstamos de socios cuentan como deuda (Guido, 2026-10-17). Del to-do 237
   queda solo `al` (Guido la dejó para después). Los años en escudos (PTE) se cargan en su moneda con la paridad fija al euro, como las liras.

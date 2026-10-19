@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 756 — La compuerta de estadio y sponsor en las ligas amateur (2026-10-18)
+
+Merge de datos 2, sin conflictos; P0 0 / P1 0.
+
+- To-do 273 (decisión de Guido): `estadio-sponsor.mjs` no exige sponsor en una liga cuyo nombre en `data/leagues.js` dice "amateur"; el
+  estadio sigue siendo obligatorio. Estadio con fuente de Patro Eisden 2015 y RWDM 2019. Los 23 años belgas del lote 92 pasan la compuerta.
+
 ## Versión 755 — Merge de pipeline 2: el informe del auditor en estonio (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0.

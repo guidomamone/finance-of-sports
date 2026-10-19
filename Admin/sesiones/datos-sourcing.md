@@ -89,3 +89,5 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
 ### Qué deja de ser cierto en ESTADO
 
 - "`cargar.mjs` no escribe un año nuevo sin estadio y sponsor": salvo en una liga amateur, donde basta el estadio.
+
+## Después del merge de la compuerta amateur (2026-10-18)
