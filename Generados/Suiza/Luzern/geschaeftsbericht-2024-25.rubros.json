@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
   "club": "luzern",
   "year": 2025,
-  "generatedAt": "2026-10-19T00:28:24.214Z",
+  "generatedAt": "2026-10-19T01:03:23.063Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         1.725586
       ],
-      "glosa": "Ingresos por derechos de retransmisión televisiva"
+      "glosa": "Derechos de retransmisión televisiva"
     },
     {
       "label": "Transferertrag",
@@ -44,7 +44,7 @@
       "values": [
         6.448988
       ],
-      "glosa": "Ingresos por transferencias de jugadores"
+      "glosa": "Ingresos por traspasos de jugadores"
     },
     {
       "label": "Sponsoren- und Spendenbeiträge",
@@ -64,7 +64,7 @@
       "values": [
         0.842667
       ],
-      "glosa": "Contribuciones de la federación (SFV)"
+      "glosa": "Subvenciones y aportaciones federativas (SFV)"
     },
     {
       "label": "Sport Toto- und J+S-Entschädigungen",
@@ -94,7 +94,7 @@
       "values": [
         0.220951
       ],
-      "glosa": "Eventos (campus de fútbol FCL, Pfingstmaster)"
+      "glosa": "Eventos (campus de fútbol FCL, Pfingstmasters)"
     },
     {
       "label": "Diverse Einnahmen",
@@ -114,7 +114,7 @@
       "values": [
         0.262196
       ],
-      "glosa": "Conferencias y eventos swissporarena"
+      "glosa": "Conferencias y eventos (swissporarena)"
     },
     {
       "label": "Grossevents",
@@ -134,7 +134,7 @@
       "values": [
         0.40506
       ],
-      "glosa": "Tienda oficial (tienda física)"
+      "glosa": "Tienda física oficial"
     },
     {
       "label": "Onlineshop, Distanzgeschäft",
@@ -144,7 +144,7 @@
       "values": [
         0.400903
       ],
-      "glosa": "Tienda en línea y venta a distancia"
+      "glosa": "Tienda online y venta a distancia"
     },
     {
       "label": "Ausmietung Stewards",
@@ -164,7 +164,7 @@
       "values": [
         -0.165577
       ],
-      "glosa": "Ajuste de provisión para insolvencias"
+      "glosa": "Ajuste de provisiones por insolvencias"
     },
     {
       "label": "Sonstiges",
@@ -184,7 +184,7 @@
       "values": [
         1.995241
       ],
-      "glosa": "Ingresos extraordinarios, no recurrentes o de ejercicios anteriores"
+      "glosa": "Ingresos extraordinarios, únicos o de ejercicios anteriores"
     },
     {
       "label": "Erfolg aus Equity-Beteiligungen",
@@ -194,7 +194,7 @@
       "values": [
         0.106206
       ],
-      "glosa": "Resultado de participaciones por el método de la participación"
+      "glosa": "Resultado de participaciones puestas en equivalencia"
     },
     {
       "label": "Minderheitsanteil am Jahresergebnis",
@@ -204,7 +204,7 @@
       "values": [
         0.894582
       ],
-      "glosa": "Participación de socios minoritarios en el resultado del ejercicio"
+      "glosa": "Participación de minoritarios en el resultado del ejercicio"
     },
     {
       "label": "Personalkosten inkl. Spesen",
@@ -214,7 +214,7 @@
       "values": [
         7.801561
       ],
-      "glosa": "Gastos de personal incluidos gastos de representación"
+      "glosa": "Gastos de personal (dietas y gastos incluidos)"
     },
     {
       "label": "Sozialabgaben",
@@ -244,7 +244,7 @@
       "values": [
         2.295763
       ],
-      "glosa": "Gastos de personal incluidos gastos de representación"
+      "glosa": "Gastos de personal (dietas y gastos incluidos)"
     },
     {
       "label": "Sozialabgaben",
@@ -264,7 +264,7 @@
       "values": [
         2.698085
       ],
-      "glosa": "Gastos de personal incluidos gastos de representación"
+      "glosa": "Gastos de personal (dietas y gastos incluidos)"
     },
     {
       "label": "Sozialabgaben",
@@ -284,7 +284,7 @@
       "values": [
         0.264083
       ],
-      "glosa": "Gastos de personal incluidos gastos de representación"
+      "glosa": "Gastos de personal (dietas y gastos incluidos)"
     },
     {
       "label": "Sozialabgaben",
@@ -304,7 +304,7 @@
       "values": [
         0.702108
       ],
-      "glosa": "Gastos de personal incluidos gastos de representación"
+      "glosa": "Gastos de personal (dietas y gastos incluidos)"
     },
     {
       "label": "Sozialabgaben",
@@ -343,7 +343,7 @@
       "values": [
         0.898386
       ],
-      "glosa": "Gastos de seguridad en días de partido (sin stewards)"
+      "glosa": "Gastos de seguridad en días de partido (sin auxiliares)"
     },
     {
       "label": "Abgaben öffentlicher Verkehr",
@@ -363,7 +363,7 @@
       "values": [
         0.741765
       ],
-      "glosa": "Material y servicios médicos"
+      "glosa": "Material y gastos médicos"
     },
     {
       "label": "Ticketing und Vorverkaufsgebühren",
@@ -373,7 +373,7 @@
       "values": [
         0.255265
       ],
-      "glosa": "Gastos de boletaje y comisiones de venta anticipada"
+      "glosa": "Venta de entradas y comisiones de venta anticipada"
     },
     {
       "label": "Aufwand 1. Mannschaften",
@@ -383,7 +383,7 @@
       "values": [
         0.451447
       ],
-      "glosa": "Gastos del primer equipo"
+      "glosa": "Gastos de los primeros equipos"
     },
     {
       "label": "Diverse Kosten Spielbetrieb",
@@ -393,7 +393,7 @@
       "values": [
         0.519321
       ],
-      "glosa": "Gastos diversos de desarrollo de partidos"
+      "glosa": "Costes diversos de la competición"
     },
     {
       "label": "VIP-Cateringkosten Spieltag",
@@ -433,7 +433,7 @@
       "values": [
         0.14906
       ],
-      "glosa": "Gastos por transferencias definitivas"
+      "glosa": "Gastos por traspasos definitivos"
     },
     {
       "label": "Spielervermittlungen und Beratungen",
@@ -443,7 +443,7 @@
       "values": [
         0.714138
       ],
-      "glosa": "Intermediación y asesoramiento de jugadores"
+      "glosa": "Intermediación de jugadores y asesoramiento"
     },
     {
       "label": "Ausleih- und Ausbildungsentschädigungen",
@@ -453,7 +453,7 @@
       "values": [
         0.248658
       ],
-      "glosa": "Compensaciones por cesión y derechos de formación"
+      "glosa": "Compensaciones por cesiones y formación"
     },
     {
       "label": "Medien, Kommunikation, Inserate",
@@ -463,7 +463,7 @@
       "values": [
         0.766209
       ],
-      "glosa": "Medios, comunicación y publicidad"
+      "glosa": "Medios, comunicación y anuncios"
     },
     {
       "label": "Inhouse TV Spieltag",
@@ -503,7 +503,7 @@
       "values": [
         0.186631
       ],
-      "glosa": "Academia de fútbol base"
+      "glosa": "Academia juvenil"
     },
     {
       "label": "Anlässe (FCL-Fussballcamp, Pfingstmasters)",
@@ -523,7 +523,7 @@
       "values": [
         0.490803
       ],
-      "glosa": "Coste de materiales"
+      "glosa": "Costes de material"
     },
     {
       "label": "Spielbetrieb und Mannschaftsaufwand",
@@ -533,7 +533,7 @@
       "values": [
         0.483271
       ],
-      "glosa": "Gastos de competición y de los equipos"
+      "glosa": "Gastos de competición y del equipo"
     },
     {
       "label": "Konferenzen / Events",
@@ -573,7 +573,7 @@
       "values": [
         0.356408
       ],
-      "glosa": "Energía, agua y gestión de residuos"
+      "glosa": "Energía, agua y eliminación de residuos"
     },
     {
       "label": "Verwaltungsaufwand",
@@ -603,7 +603,7 @@
       "values": [
         0.088571
       ],
-      "glosa": "Seguros de bienes, tasas y tributos"
+      "glosa": "Seguros de bienes, tributos y tasas"
     },
     {
       "label": "Fahrzeug/Treibstoff",
@@ -633,17 +633,7 @@
       "values": [
         0.211164
       ],
-      "glosa": "Amortización de inmovilizado material mobiliario"
-    },
-    {
-      "label": "Abschreibungen immaterielle Sachanlagen",
-      "lado": "expense",
-      "page": 29,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        1.197018
-      ],
-      "glosa": "Amortización de inmovilizado intangible"
+      "glosa": "Amortización de inmovilizado material mueble"
     },
     {
       "label": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
@@ -653,7 +643,27 @@
       "values": [
         0.135065
       ],
-      "glosa": "Gastos extraordinarios, no recurrentes o de ejercicios anteriores"
+      "glosa": "Gastos extraordinarios, únicos o de ejercicios anteriores"
+    },
+    {
+      "label": "Abschreibungen Spielerwerte",
+      "lado": "expense",
+      "page": 29,
+      "section": "ajuste manual",
+      "values": [
+        1.025811
+      ],
+      "glosa": "Amortización de derechos federativos de jugadores"
+    },
+    {
+      "label": "Abschreibungen Software, E-Commerce und Markenrechte",
+      "lado": "expense",
+      "page": 29,
+      "section": "ajuste manual",
+      "values": [
+        0.171207
+      ],
+      "glosa": "Amortización de software, comercio electrónico y marcas"
     }
   ]
 }

@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2025.pdf",
- "generado": "2026-10-19T00:55:19.554Z",
+ "generado": "2026-10-19T01:04:32.818Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (sarpsborg08-no)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Andre salgsinntekter\" -> other_income 0.6; \"Trening, matriell, kamp kostn.\" -> match_organisation_expense 0.75; \"Salgskostnader\" -> other_expenses 0.55; \"Lønninger\" -> wages_squad 0.65; \"Arbeidsgiveravgift\" -> wages_squad 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -51,9 +43,9 @@
     "amountNative": 13.051656,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre inntekter",
@@ -109,13 +101,13 @@
   "expenseLines": [
    {
     "rawLabel": "Trening, matriell, kamp kostn.",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -16.41132,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Reise- og oppholdskostnader bortekamper",
@@ -133,9 +125,9 @@
     "amountNative": -65.871707,
     "disclosureLevel": "aggregated",
     "_pag": 34,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Lønninger",
@@ -143,9 +135,9 @@
     "amountNative": -52.008396,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Arbeidsgiveravgift",
@@ -153,9 +145,9 @@
     "amountNative": -10.475799,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Pensjonskostnader",
@@ -163,9 +155,9 @@
     "amountNative": -1.053321,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre ytelser",
@@ -173,9 +165,9 @@
     "amountNative": -0.907956,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Avskrivning av driftsmidler og immaterielle eiendeler",
@@ -358,11 +350,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 13.051656,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Renglon propio del FLI (L125), separado de entradas, socios, sponsors, medios y venta de jugadores; el documento no lo abre (en el consolidado, Omsetning av varer es 23 767 785). Otros ingresos. [Andre salgsinntekter 13 051 656 (L125)]",
    "destino": "revenue",
    "amountNative": 13.051656
   },
@@ -448,12 +440,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 16.41132,
-   "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): El rotulo mezcla entrenamiento, material y costos de partido, y no se puede abrir. Si se manda entero a Organización de partidos se cargan costos de entrenamiento y equipamiento ahi. Otros gastos (los viajes de visitante tienen renglon propio aparte, 5 456 484). [Trening, matriell, kamp kostn. 16 411 320 (L131)]",
    "destino": "expense",
    "amountNative": -16.41132
   },
@@ -480,11 +472,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 65.871707,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Atencion al rotulo: en el .md la fila de L130 sale como 'Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer' con 65 871 707, que es el campo generico de Altinn; el inventario total es solo 1 462 772, asi que no es una variacion de existencias. Pregunta para revisar el PDF pag. 2: ¿el renglon dice 'Salgskostnader' y que incluye, costos de venta de jugadores o costo de mercaderia? Sin abrir, Otros gastos es el cajon seguro. Suma de los gastos del FLI: 65 871 707 + 16 411 320 + 64 445 471 + 14 599 445 + 5 456 484 + 17 315 133 + 10 371 944 + 10 759 014 = 205 230 518 (2 menos que 205 230 520, redondeo). [Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer 65 871 707 (L130)]",
    "destino": "expense",
    "amountNative": -65.871707
   },
@@ -496,11 +488,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 52.008396,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Lønnskostnad del FLI sin separar plantel: entero a wages_squad. 52 008 396 + 10 475 799 + 1 053 321 + 907 956 = 64 445 472 = Lønnskostnad del FLI (1 de redondeo). Ojo: la Note 2 del documento es del consolidado (56 672 333 en Lønninger); estos montos son los del FLI. [Lønnskostnad 64 445 471 (L132)]",
    "destino": "expense",
    "amountNative": -52.008396
   },
@@ -512,11 +504,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 10.475799,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales con el sueldo: wages_squad. [Lønnskostnad 64 445 471 (L132)]",
    "destino": "expense",
    "amountNative": -10.475799
   },
@@ -528,11 +520,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 1.053321,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pension con el sueldo: wages_squad. [Lønnskostnad 64 445 471 (L132)]",
    "destino": "expense",
    "amountNative": -1.053321
   },
@@ -544,11 +536,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 0.907956,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otras prestaciones, parte de Lønnskostnad: wages_squad. [Lønnskostnad 64 445 471 (L132)]",
    "destino": "expense",
    "amountNative": -0.907956
   },
@@ -749,7 +741,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 8,
   "lineasGasto": 11,
   "metaFilas": 4,

@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
- "generado": "2026-10-19T00:55:19.145Z",
+ "generado": "2026-10-19T01:04:32.539Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (aalesund-no)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Salgsinntekter\" -> lump_football_operations 0.6; \"Varekostnad\" -> other_expenses 0.6; \"Arbeidsgiveravgift\" -> wages_squad 0.75; \"Pensjonskostnader\" -> wages_squad 0.75; \"Andre ytelser\" -> wages_squad 0.7"
   }
  ],
  "avisos": [
@@ -26,9 +22,9 @@
     "amountNative": 69.990515,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre driftsinntekter",
@@ -48,9 +44,9 @@
     "amountNative": -6.366043,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Lønninger",
@@ -68,9 +64,9 @@
     "amountNative": -0.854926,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Pensjonskostnader",
@@ -78,9 +74,9 @@
     "amountNative": -0.151065,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre ytelser",
@@ -88,9 +84,9 @@
     "amountNative": -0.43456,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Avskrivning varige driftsmidler og immaterielle eiendeler",
@@ -158,7 +154,7 @@
      "renglon": "Salgsinntekter",
      "lado": "revenue",
      "importe": 69.990515,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-18 (subagente Sonnet): Salgsinntekt es un unico renglon sin desglose en ninguna parte del documento (Note 3 repite 69 990 515 sin abrir; Note 2 solo da la transferencia de la cooperacion con el FLI, 27 578 215). Lump_football_operations es el caso correcto. Televisión y Estadio dan 0 por esto: estan incluidos en Salgsinntekter, no se puede abrir. [Salgsinntekter 69 990 515 (L302); Overførsel iht. avtale 27 578 215 (L296)]"
     }
    ],
    "grossDebt": null,
@@ -243,11 +239,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 69.990515,
    "cat": "lump_football_operations",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Salgsinntekt es un unico renglon sin desglose en ninguna parte del documento (Note 3 repite 69 990 515 sin abrir; Note 2 solo da la transferencia de la cooperacion con el FLI, 27 578 215). Lump_football_operations es el caso correcto. Televisión y Estadio dan 0 por esto: estan incluidos en Salgsinntekter, no se puede abrir. [Salgsinntekter 69 990 515 (L302); Overførsel iht. avtale 27 578 215 (L296)]",
    "destino": "revenue",
    "amountNative": 69.990515
   },
@@ -274,11 +270,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 6.366043,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Varekostnad (6 366 043) no tiene nota; en Valerenga la nota equivalente dice que es en esencia costo de eventos, pero aqui no se puede afirmar. Otros gastos. [Varekostnad 6 366 043 (L112)]",
    "destino": "expense",
    "amountNative": -6.366043
   },
@@ -305,11 +301,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 0.854926,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales con el sueldo: wages_squad. Note 4: 5 456 780 + 854 926 + 151 065 + 434 560 = 6 897 331. [Arbeidsgiveravgift 854 926 (L310)]",
    "destino": "expense",
    "amountNative": -0.854926
   },
@@ -321,11 +317,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 0.151065,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pension con el sueldo: wages_squad. [Pensjonskostnader 151 065 (L311)]",
    "destino": "expense",
    "amountNative": -0.151065
   },
@@ -337,11 +333,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 0.43456,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otras prestaciones, parte de Note 4 Lønnskostnader: wages_squad. [Andre ytelser 434 560 (L312)]",
    "destino": "expense",
    "amountNative": -0.43456
   },
@@ -545,7 +541,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 2,
   "lineasGasto": 7,
   "metaFilas": 7,

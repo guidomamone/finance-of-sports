@@ -1,100 +1,8 @@
 {
  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.md",
- "generatedAt": "2026-10-19T00:54:24.495Z",
- "rubrosHuella": "4169a8deae1fa3ce8af95d7f4579fa0edb429932",
+ "generatedAt": "2026-10-19T01:04:27.553Z",
+ "rubrosHuella": "8320c0d63eebd096d0d3e507901c97f01fd6184d",
  "rubros": [
-  {
-   "label": "SFV-Verbandsbeiträge",
-   "lado": "revenue",
-   "page": 40,
-   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
-   "choice": "competition_bonus",
-   "confidence": 0.38,
-   "top3": [
-    [
-     "competition_bonus",
-     0.42
-    ],
-    [
-     "other_income",
-     0.35000000000000003
-    ],
-    [
-     "member_dues",
-     0.14
-    ]
-   ],
-   "tokens": 1088
-  },
-  {
-   "label": "Transferertrag",
-   "lado": "revenue",
-   "page": 29,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "player_sales",
-   "confidence": 1,
-   "top3": [
-    [
-     "player_sales",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1063
-  },
-  {
-   "label": "Sponsoren- und Spendenbeiträge",
-   "lado": "revenue",
-   "page": 40,
-   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
-   "choice": "sponsorship_commercial",
-   "confidence": 0.61,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     0.64
-    ],
-    [
-     "other_income",
-     0.35
-    ],
-    [
-     "youth_football",
-     0.01
-    ]
-   ],
-   "tokens": 1065
-  },
-  {
-   "label": "Sport Toto- und J+S-Entschädigungen",
-   "lado": "revenue",
-   "page": 40,
-   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
-   "choice": "youth_football",
-   "confidence": 0.42,
-   "top3": [
-    [
-     "youth_football",
-     0.46
-    ],
-    [
-     "other_income",
-     0.36
-    ],
-    [
-     "education",
-     0.08
-    ]
-   ],
-   "tokens": 1080
-  },
   {
    "label": "Matchorganisation",
    "lado": "revenue",
@@ -102,67 +10,7 @@
    "section": "estado (lectura 5: hoja)",
    "choice": "matchday_competition",
    "confidence": 0.75,
-   "top3": [
-    [
-     "matchday_competition",
-     0.77
-    ],
-    [
-     "other_income",
-     0.16
-    ],
-    [
-     "lump_football_operations",
-     0.07
-    ]
-   ],
-   "tokens": 1049
-  },
-  {
-   "label": "Ausbildungs- und Materialbeiträge Eltern",
-   "lado": "revenue",
-   "page": 40,
-   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
-   "choice": "youth_football",
-   "confidence": 0.86,
-   "top3": [
-    [
-     "youth_football",
-     0.87
-    ],
-    [
-     "member_dues",
-     0.07
-    ],
-    [
-     "other_income",
-     0.05
-    ]
-   ],
-   "tokens": 1099
-  },
-  {
-   "label": "TV-Entschädigungen Übertragungsrechte",
-   "lado": "revenue",
-   "page": 29,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "broadcasting",
-   "confidence": 1,
-   "top3": [
-    [
-     "broadcasting",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1058
+   "desdeCache": true
   },
   {
    "label": "Sponsoring, Werbung",
@@ -171,21 +19,61 @@
    "section": "estado (lectura 5: hoja)",
    "choice": "sponsorship_commercial",
    "confidence": 1,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1034
+   "desdeCache": true
+  },
+  {
+   "label": "TV-Entschädigungen Übertragungsrechte",
+   "lado": "revenue",
+   "page": 29,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferertrag",
+   "lado": "revenue",
+   "page": 29,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsoren- und Spendenbeiträge",
+   "lado": "revenue",
+   "page": 40,
+   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "SFV-Verbandsbeiträge",
+   "lado": "revenue",
+   "page": 40,
+   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+   "choice": "competition_bonus",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Sport Toto- und J+S-Entschädigungen",
+   "lado": "revenue",
+   "page": 40,
+   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+   "choice": "youth_football",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Ausbildungs- und Materialbeiträge Eltern",
+   "lado": "revenue",
+   "page": 40,
+   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+   "choice": "youth_football",
+   "confidence": 0.86,
+   "desdeCache": true
   },
   {
    "label": "Anlässe (FCL-Fussballcamp, Pfingstmaster)",
@@ -194,21 +82,7 @@
    "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
    "choice": "youth_football",
    "confidence": 0.55,
-   "top3": [
-    [
-     "youth_football",
-     0.58
-    ],
-    [
-     "other_income",
-     0.22
-    ],
-    [
-     "competition_bonus",
-     0.07
-    ]
-   ],
-   "tokens": 1053
+   "desdeCache": true
   },
   {
    "label": "Diverse Einnahmen",
@@ -217,44 +91,7 @@
    "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
    "choice": "other_income",
    "confidence": 0.92,
-   "top3": [
-    [
-     "other_income",
-     0.93
-    ],
-    [
-     "youth_football",
-     0.07
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1086
-  },
-  {
-   "label": "Grossevents",
-   "lado": "expense",
-   "page": 43,
-   "section": "nota que desglosa \"Events\"",
-   "choice": "other_expenses",
-   "confidence": 0.43,
-   "top3": [
-    [
-     "other_expenses",
-     0.48
-    ],
-    [
-     "admin_general_expense",
-     0.28
-    ],
-    [
-     "match_organisation_expense",
-     0.23
-    ]
-   ],
-   "tokens": 1009
+   "desdeCache": true
   },
   {
    "label": "Konferenzen, Events swissporarena",
@@ -263,44 +100,16 @@
    "section": "nota que desglosa \"Events\"",
    "choice": "stadium_other",
    "confidence": 0.9,
-   "top3": [
-    [
-     "stadium_other",
-     0.91
-    ],
-    [
-     "other_income",
-     0.09
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1030
+   "desdeCache": true
   },
   {
-   "label": "Onlineshop, Distanzgeschäft",
-   "lado": "revenue",
-   "page": 41,
-   "section": "nota que desglosa \"Merchandising\"",
-   "choice": "sponsorship_commercial",
-   "confidence": 1,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1061
+   "label": "Grossevents",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"Events\"",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "desdeCache": true
   },
   {
    "label": "Fanshop Präsenzgeschäft",
@@ -309,21 +118,16 @@
    "section": "nota que desglosa \"Merchandising\"",
    "choice": "sponsorship_commercial",
    "confidence": 0.97,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     0.97
-    ],
-    [
-     "other_income",
-     0.03
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1045
+   "desdeCache": true
+  },
+  {
+   "label": "Onlineshop, Distanzgeschäft",
+   "lado": "revenue",
+   "page": 41,
+   "section": "nota que desglosa \"Merchandising\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
   },
   {
    "label": "Ausmietung Stewards",
@@ -332,21 +136,7 @@
    "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
    "choice": "other_income",
    "confidence": 0.96,
-   "top3": [
-    [
-     "other_income",
-     0.96
-    ],
-    [
-     "stadium_other",
-     0.04
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1080
+   "desdeCache": true
   },
   {
    "label": "Anpassung Delkredere",
@@ -355,21 +145,7 @@
    "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
    "choice": "other_income",
    "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1061
+   "desdeCache": true
   },
   {
    "label": "Sonstiges",
@@ -378,21 +154,7 @@
    "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
    "choice": "other_income",
    "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1008
+   "desdeCache": true
   },
   {
    "label": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
@@ -401,44 +163,7 @@
    "section": "estado (lectura 5: hoja)",
    "choice": "other_income",
    "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1097
-  },
-  {
-   "label": "Sozialabgaben",
-   "lado": "expense",
-   "page": 41,
-   "section": "nota que desglosa \"Personalaufwand\"",
-   "choice": "wages_squad",
-   "confidence": 0.62,
-   "top3": [
-    [
-     "wages_squad",
-     0.65
-    ],
-    [
-     "other_expenses",
-     0.19
-    ],
-    [
-     "admin_general_expense",
-     0.14
-    ]
-   ],
-   "tokens": 1017
+   "desdeCache": true
   },
   {
    "label": "Erfolg aus Equity-Beteiligungen",
@@ -447,67 +172,7 @@
    "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
    "choice": "other_income",
    "confidence": 0.97,
-   "top3": [
-    [
-     "other_income",
-     0.97
-    ],
-    [
-     "competition_bonus",
-     0.02
-    ],
-    [
-     "player_sales",
-     0.01
-    ]
-   ],
-   "tokens": 1065
-  },
-  {
-   "label": "Unfallversicherungsprämien",
-   "lado": "expense",
-   "page": 41,
-   "section": "nota que desglosa \"Personalaufwand\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.61,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.64
-    ],
-    [
-     "wages_squad",
-     0.28
-    ],
-    [
-     "other_expenses",
-     0.08
-    ]
-   ],
-   "tokens": 1004
-  },
-  {
-   "label": "Personalkosten inkl. Spesen",
-   "lado": "expense",
-   "page": 41,
-   "section": "nota que desglosa \"Personalaufwand\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.73,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.75
-    ],
-    [
-     "wages_squad",
-     0.19
-    ],
-    [
-     "other_expenses",
-     0.04
-    ]
-   ],
-   "tokens": 1024
+   "desdeCache": true
   },
   {
    "label": "Minderheitsanteil am Jahresergebnis",
@@ -516,21 +181,42 @@
    "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
    "choice": "other_income",
    "confidence": 0.97,
-   "top3": [
-    [
-     "other_income",
-     0.97
-    ],
-    [
-     "member_dues",
-     0.03
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1049
+   "desdeCache": true
+  },
+  {
+   "label": "Personalkosten inkl. Spesen",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Personalaufwand\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Sozialabgaben",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Personalaufwand\"",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Unfallversicherungsprämien",
+   "lado": "expense",
+   "page": 41,
+   "section": "nota que desglosa \"Personalaufwand\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personalaufwand\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
   },
   {
    "label": "Miete und Unterhalt Stadion",
@@ -539,44 +225,7 @@
    "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
    "choice": "match_organisation_expense",
    "confidence": 0.54,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.58
-    ],
-    [
-     "admin_general_expense",
-     0.39
-    ],
-    [
-     "other_expenses",
-     0.03
-    ]
-   ],
-   "tokens": 1052
-  },
-  {
-   "label": "Abgaben öffentlicher Verkehr",
-   "lado": "expense",
-   "page": 42,
-   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
-   "choice": "match_organisation_expense",
-   "confidence": 0.91,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.92
-    ],
-    [
-     "admin_general_expense",
-     0.06
-    ],
-    [
-     "other_expenses",
-     0.02
-    ]
-   ],
-   "tokens": 1010
+   "desdeCache": true
   },
   {
    "label": "Sicherheitskosten Matchtag (ohne Stewards)",
@@ -585,67 +234,16 @@
    "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
    "choice": "match_organisation_expense",
    "confidence": 0.9,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.91
-    ],
-    [
-     "admin_general_expense",
-     0.07
-    ],
-    [
-     "other_expenses",
-     0.02
-    ]
-   ],
-   "tokens": 1105
+   "desdeCache": true
   },
   {
-   "label": "Aufwand 1. Mannschaften",
-   "lado": "expense",
-   "page": 42,
-   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
-   "choice": "lump_football_operations_expense",
-   "confidence": 0.26,
-   "top3": [
-    [
-     "lump_football_operations_expense",
-     0.32
-    ],
-    [
-     "wages_squad",
-     0.28
-    ],
-    [
-     "match_organisation_expense",
-     0.23
-    ]
-   ],
-   "tokens": 1048
-  },
-  {
-   "label": "Diverse Kosten Spielbetrieb",
+   "label": "Abgaben öffentlicher Verkehr",
    "lado": "expense",
    "page": 42,
    "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
    "choice": "match_organisation_expense",
-   "confidence": 0.72,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.74
-    ],
-    [
-     "other_expenses",
-     0.25
-    ],
-    [
-     "lump_football_operations_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1041
+   "confidence": 0.91,
+   "desdeCache": true
   },
   {
    "label": "Material und Medical",
@@ -654,21 +252,7 @@
    "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
    "choice": "other_expenses",
    "confidence": 0.49,
-   "top3": [
-    [
-     "other_expenses",
-     0.53
-    ],
-    [
-     "youth_other_sports_expense",
-     0.26
-    ],
-    [
-     "match_organisation_expense",
-     0.15
-    ]
-   ],
-   "tokens": 997
+   "desdeCache": true
   },
   {
    "label": "Ticketing und Vorverkaufsgebühren",
@@ -677,43 +261,25 @@
    "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
    "choice": "match_organisation_expense",
    "confidence": 0.95,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.95
-    ],
-    [
-     "admin_general_expense",
-     0.03
-    ],
-    [
-     "other_expenses",
-     0.02
-    ]
-   ],
-   "tokens": 1061
+   "desdeCache": true
   },
   {
-   "label": "Diferencia de redondeo",
+   "label": "Aufwand 1. Mannschaften",
    "lado": "expense",
-   "section": "nota que desglosa \"Personalaufwand\"",
-   "choice": "other_expenses",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "other_expenses",
-     0.98
-    ],
-    [
-     "wages_squad",
-     0.01
-    ],
-    [
-     "other_amortisation",
-     0.01
-    ]
-   ],
-   "tokens": 1052
+   "page": 42,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.26,
+   "desdeCache": true
+  },
+  {
+   "label": "Diverse Kosten Spielbetrieb",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.72,
+   "desdeCache": true
   },
   {
    "label": "VIP-Cateringkosten Spieltag",
@@ -722,44 +288,7 @@
    "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
    "choice": "match_organisation_expense",
    "confidence": 0.95,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.95
-    ],
-    [
-     "other_expenses",
-     0.05
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1025
-  },
-  {
-   "label": "Rückvergütungen Lieferanten",
-   "lado": "expense",
-   "page": 42,
-   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
-   "choice": "other_expenses",
-   "confidence": 0.63,
-   "top3": [
-    [
-     "other_expenses",
-     0.66
-    ],
-    [
-     "match_organisation_expense",
-     0.27
-    ],
-    [
-     "admin_general_expense",
-     0.04
-    ]
-   ],
-   "tokens": 831
+   "desdeCache": true
   },
   {
    "label": "Aufwand übrige Wettbewerbe",
@@ -768,44 +297,16 @@
    "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
    "choice": "match_organisation_expense",
    "confidence": 0.98,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.98
-    ],
-    [
-     "other_expenses",
-     0.02
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1074
+   "desdeCache": true
   },
   {
-   "label": "Ausleih- und Ausbildungsentschädigungen",
+   "label": "Rückvergütungen Lieferanten",
    "lado": "expense",
-   "page": 43,
-   "section": "nota que desglosa \"Transferaufwand\"",
-   "choice": "player_amortisation",
-   "confidence": 0.87,
-   "top3": [
-    [
-     "player_amortisation",
-     0.88
-    ],
-    [
-     "other_expenses",
-     0.11
-    ],
-    [
-     "other_amortisation",
-     0.01
-    ]
-   ],
-   "tokens": 1115
+   "page": 42,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
   },
   {
    "label": "Transferaufwand definitive Übertritte",
@@ -814,21 +315,7 @@
    "section": "nota que desglosa \"Transferaufwand\"",
    "choice": "other_expenses",
    "confidence": 0.47,
-   "top3": [
-    [
-     "other_expenses",
-     0.51
-    ],
-    [
-     "player_amortisation",
-     0.49
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1043
+   "desdeCache": true
   },
   {
    "label": "Spielervermittlungen und Beratungen",
@@ -837,21 +324,16 @@
    "section": "nota que desglosa \"Transferaufwand\"",
    "choice": "other_expenses",
    "confidence": 0.95,
-   "top3": [
-    [
-     "other_expenses",
-     0.95
-    ],
-    [
-     "player_amortisation",
-     0.05
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1051
+   "desdeCache": true
+  },
+  {
+   "label": "Ausleih- und Ausbildungsentschädigungen",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"Transferaufwand\"",
+   "choice": "player_amortisation",
+   "confidence": 0.87,
+   "desdeCache": true
   },
   {
    "label": "Medien, Kommunikation, Inserate",
@@ -860,21 +342,7 @@
    "section": "nota que desglosa \"Werbung und Sponsoring\"",
    "choice": "admin_general_expense",
    "confidence": 0.99,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.99
-    ],
-    [
-     "other_expenses",
-     0.01
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1026
+   "desdeCache": true
   },
   {
    "label": "Inhouse TV Spieltag",
@@ -883,21 +351,7 @@
    "section": "nota que desglosa \"Werbung und Sponsoring\"",
    "choice": "admin_general_expense",
    "confidence": 0.57,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.61
-    ],
-    [
-     "match_organisation_expense",
-     0.2
-    ],
-    [
-     "other_expenses",
-     0.18
-    ]
-   ],
-   "tokens": 897
+   "desdeCache": true
   },
   {
    "label": "LED-Bandenwerbung Produktion",
@@ -906,21 +360,7 @@
    "section": "nota que desglosa \"Werbung und Sponsoring\"",
    "choice": "admin_general_expense",
    "confidence": 0.91,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.92
-    ],
-    [
-     "other_expenses",
-     0.08
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1046
+   "desdeCache": true
   },
   {
    "label": "Diverses",
@@ -929,21 +369,7 @@
    "section": "nota que desglosa \"Werbung und Sponsoring\"",
    "choice": "other_expenses",
    "confidence": 0.84,
-   "top3": [
-    [
-     "other_expenses",
-     0.85
-    ],
-    [
-     "admin_general_expense",
-     0.15
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1003
+   "desdeCache": true
   },
   {
    "label": "Nachwuchs-Akademie",
@@ -952,44 +378,7 @@
    "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
    "choice": "youth_other_sports_expense",
    "confidence": 0.77,
-   "top3": [
-    [
-     "youth_other_sports_expense",
-     0.79
-    ],
-    [
-     "admin_general_expense",
-     0.17
-    ],
-    [
-     "lump_football_operations_expense",
-     0.02
-    ]
-   ],
-   "tokens": 1015
-  },
-  {
-   "label": "Materialkosten",
-   "lado": "expense",
-   "page": 43,
-   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
-   "choice": "youth_other_sports_expense",
-   "confidence": 0.55,
-   "top3": [
-    [
-     "youth_other_sports_expense",
-     0.59
-    ],
-    [
-     "admin_general_expense",
-     0.25
-    ],
-    [
-     "other_expenses",
-     0.14
-    ]
-   ],
-   "tokens": 921
+   "desdeCache": true
   },
   {
    "label": "Anlässe (FCL-Fussballcamp, Pfingstmasters)",
@@ -998,21 +387,16 @@
    "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
    "choice": "other_expenses",
    "confidence": 0.4,
-   "top3": [
-    [
-     "other_expenses",
-     0.45
-    ],
-    [
-     "match_organisation_expense",
-     0.37
-    ],
-    [
-     "youth_other_sports_expense",
-     0.17
-    ]
-   ],
-   "tokens": 1032
+   "desdeCache": true
+  },
+  {
+   "label": "Materialkosten",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.55,
+   "desdeCache": true
   },
   {
    "label": "Spielbetrieb und Mannschaftsaufwand",
@@ -1021,21 +405,7 @@
    "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
    "choice": "youth_other_sports_expense",
    "confidence": 0.5,
-   "top3": [
-    [
-     "youth_other_sports_expense",
-     0.54
-    ],
-    [
-     "match_organisation_expense",
-     0.3
-    ],
-    [
-     "lump_football_operations_expense",
-     0.1
-    ]
-   ],
-   "tokens": 1024
+   "desdeCache": true
   },
   {
    "label": "Konferenzen / Events",
@@ -1044,21 +414,7 @@
    "section": "nota que desglosa \"Events\"",
    "choice": "other_expenses",
    "confidence": 0.61,
-   "top3": [
-    [
-     "other_expenses",
-     0.64
-    ],
-    [
-     "admin_general_expense",
-     0.31
-    ],
-    [
-     "match_organisation_expense",
-     0.05
-    ]
-   ],
-   "tokens": 1015
+   "desdeCache": true
   },
   {
    "label": "Merchandising",
@@ -1067,21 +423,7 @@
    "section": "estado (lectura 5: hoja)",
    "choice": "admin_general_expense",
    "confidence": 0.95,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.95
-    ],
-    [
-     "other_expenses",
-     0.05
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 973
+   "desdeCache": true
   },
   {
    "label": "Energie, Wasser und Entsorgung",
@@ -1090,21 +432,7 @@
    "section": "estado (lectura 5: hoja)",
    "choice": "admin_general_expense",
    "confidence": 0.81,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.83
-    ],
-    [
-     "other_expenses",
-     0.15
-    ],
-    [
-     "match_organisation_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1092
+   "desdeCache": true
   },
   {
    "label": "Verwaltungsaufwand",
@@ -1113,44 +441,7 @@
    "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
    "choice": "admin_general_expense",
    "confidence": 1,
-   "top3": [
-    [
-     "admin_general_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1032
-  },
-  {
-   "label": "Sachversicherungen, Abgaben und Gebühren",
-   "lado": "expense",
-   "page": 44,
-   "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
-   "choice": "admin_general_expense",
-   "confidence": 1,
-   "top3": [
-    [
-     "admin_general_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1066
+   "desdeCache": true
   },
   {
    "label": "IT, Telefon, Internet und Applikationen",
@@ -1159,21 +450,16 @@
    "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
    "choice": "admin_general_expense",
    "confidence": 1,
-   "top3": [
-    [
-     "admin_general_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1029
+   "desdeCache": true
+  },
+  {
+   "label": "Sachversicherungen, Abgaben und Gebühren",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
   },
   {
    "label": "Fahrzeug/Treibstoff",
@@ -1182,21 +468,7 @@
    "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
    "choice": "admin_general_expense",
    "confidence": 1,
-   "top3": [
-    [
-     "admin_general_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 956
+   "desdeCache": true
   },
   {
    "label": "Sonstiger Betriebsaufwand",
@@ -1205,21 +477,7 @@
    "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
    "choice": "other_expenses",
    "confidence": 0.56,
-   "top3": [
-    [
-     "other_expenses",
-     0.6
-    ],
-    [
-     "admin_general_expense",
-     0.39
-    ],
-    [
-     "lump_football_operations_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1040
+   "desdeCache": true
   },
   {
    "label": "Abschreibungen mobile Sachanlagen",
@@ -1228,44 +486,7 @@
    "section": "estado (lectura 5: hoja)",
    "choice": "depreciation",
    "confidence": 0.99,
-   "top3": [
-    [
-     "depreciation",
-     0.99
-    ],
-    [
-     "other_amortisation",
-     0.01
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1066
-  },
-  {
-   "label": "Abschreibungen immaterielle Sachanlagen",
-   "lado": "expense",
-   "page": 29,
-   "section": "estado (lectura 5: hoja)",
-   "choice": "other_amortisation",
-   "confidence": 0.52,
-   "top3": [
-    [
-     "other_amortisation",
-     0.56
-    ],
-    [
-     "depreciation",
-     0.42
-    ],
-    [
-     "player_amortisation",
-     0.02
-    ]
-   ],
-   "tokens": 1079
+   "desdeCache": true
   },
   {
    "label": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
@@ -1274,9 +495,41 @@
    "section": "estado (lectura 5: hoja)",
    "choice": "exceptional_items",
    "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen Software, E-Commerce und Markenrechte",
+   "lado": "expense",
+   "page": 29,
+   "section": "ajuste manual",
+   "choice": "other_amortisation",
+   "confidence": 0.5,
    "top3": [
     [
-     "exceptional_items",
+     "other_amortisation",
+     0.54
+    ],
+    [
+     "depreciation",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Abschreibungen Spielerwerte",
+   "lado": "expense",
+   "page": 29,
+   "section": "ajuste manual",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
      1
     ],
     [
@@ -1284,11 +537,11 @@
      0
     ],
     [
-     "player_amortisation",
+     "player_impairment",
      0
     ]
    ],
-   "tokens": 1144
+   "tokens": 1080
   }
  ]
 }

@@ -762,10 +762,12 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Shimizu S-Pulse — sin-buscar: 2025 (jp-j1)
 - Shonan Bellmare — sin-buscar: 2025 (jp-j1)
 
-## Noruega (5 clubes, 9 club-años)
+## Noruega (7 clubes, 12 club-años)
 
+- Egersund — sin-buscar: 2025 (no-1divisjon)
+- Mjøndalen — sin-buscar: 2025 (no-1divisjon), 2020 (no-eliteserien), 2019 (no-eliteserien), 2015 (no-eliteserien)
+- Skeid — sin-buscar: 2025 (no-1divisjon)
 - Jerv — sin-buscar: 2022 (no-eliteserien)
-- Mjøndalen — sin-buscar: 2020 (no-eliteserien), 2019 (no-eliteserien), 2015 (no-eliteserien)
 - Ranheim — sin-buscar: 2019 (no-eliteserien), 2018 (no-eliteserien)
 - Hønefoss — sin-buscar: 2013 (no-eliteserien), 2010 (no-eliteserien)
 - Sandnes Ulf — sin-buscar: 2013 (no-eliteserien)
@@ -981,8 +983,10 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Tekstilshchik Ivanovo — sin-buscar: 2022 (ru-pervayaliga)
 - Tom Tomsk — sin-buscar: 2022 (ru-pervayaliga)
 
-## Suiza (1 clubes, 1 club-años)
+## Suiza (3 clubes, 3 club-años)
 
+- Yverdon-Sport — sin-buscar: 2025 (ch-superleague)
+- Vaduz — sin-buscar: 2021 (ch-superleague)
 - Xamax — sin-buscar: 2019 (ch-superleague)
 
 ## Turquía (50 clubes, 130 club-años)

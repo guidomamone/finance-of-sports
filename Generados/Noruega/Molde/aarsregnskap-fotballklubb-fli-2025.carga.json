@@ -1,23 +1,14 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
- "generado": "2026-10-19T00:55:18.349Z",
+ "generado": "2026-10-19T01:04:32.092Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (molde-no)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "19 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Egenandeler/deltakeravgift\" -> other_income 0.55; \"Markedsmidler NFF, NTF og UEFA\" -> broadcasting 0.55; \"Inntekter NM Cup\" -> matchday_competition 0.6; \"Oppgjør NM Cup\" -> competition_bonus 0.55; \"Andre inntekter privatkamper etc.\" -> matchday_competition 0.75"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 17 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)",
-  "gastos: ningún total impreso igual a la suma de las líneas (-277.949275); queda la suma, verificada por el resultado del ejercicio"
+  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 17 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)"
  ],
  "ejercicio": {
   "clubId": "molde-no",
@@ -41,9 +32,9 @@
     "amountNative": 2.920111,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Markedsmidler NFF, NTF og UEFA",
@@ -51,9 +42,9 @@
     "amountNative": 60.287629,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre tilskudd",
@@ -81,9 +72,9 @@
     "amountNative": 0.177551,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Inntekter E-Cup",
@@ -97,13 +88,13 @@
    },
    {
     "rawLabel": "Oppgjør NM Cup",
-    "normalizedCategory": "competition_bonus",
+    "normalizedCategory": "matchday_competition",
     "amountNative": 0.545067,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre inntekter privatkamper etc.",
@@ -111,9 +102,9 @@
     "amountNative": 0.36,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Reklame/ sponsorinntekter",
@@ -163,9 +154,9 @@
     "amountNative": -132.651613,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Arbeidsgiveravgift",
@@ -173,9 +164,9 @@
     "amountNative": -18.035924,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Pensjonskostnad",
@@ -183,9 +174,9 @@
     "amountNative": -1.684061,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre ytelser",
@@ -193,9 +184,9 @@
     "amountNative": -2.387713,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Utgifter treningsleir/privatkamper",
@@ -209,13 +200,13 @@
    },
    {
     "rawLabel": "Leie treningsbaner etc.",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -2.499857,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sportsrekvisita",
@@ -233,9 +224,9 @@
     "amountNative": -0.209554,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre sportslige kostnader",
@@ -253,9 +244,9 @@
     "amountNative": -0.795934,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Annonsering seriekamper",
@@ -263,9 +254,9 @@
     "amountNative": -0.507366,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Utgifter billettsalg",
@@ -283,9 +274,9 @@
     "amountNative": -2.300605,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Utgifter cupkamper",
@@ -313,9 +304,9 @@
     "amountNative": -1.894239,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Reisekostnader seriekamper",
@@ -363,9 +354,9 @@
     "amountNative": -1.171795,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Anleggskostnader",
@@ -373,29 +364,19 @@
     "amountNative": -0.136803,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Avskrivninger",
-    "normalizedCategory": "depreciation",
-    "amountNative": -67.336863,
-    "disclosureLevel": "aggregated",
-    "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Nedskrivninger",
-    "normalizedCategory": "exceptional_items",
+    "normalizedCategory": "player_impairment",
     "amountNative": -11.738298,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Tap på fordringer",
@@ -406,6 +387,26 @@
     "_escalon": 1,
     "_conf": 0.98,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Avskrivninger spillerrettigheter",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -66.692397,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)"
+   },
+   {
+    "rawLabel": "Avskrivninger varige driftsmidler",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.644466,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)"
    }
   ],
   "fiscalYearMeta": {
@@ -421,7 +422,7 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 129.145432,
-   "officialTotalExpenses": 277.949275,
+   "officialTotalExpenses": 289.687573,
    "officialPAT": -79.222013
   },
   "source": {
@@ -448,9 +449,58 @@
  },
  "clubId": "molde-no",
  "year": 2025,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
+   "campo": "fila",
+   "valor": "66 692 397",
+   "linea": 443,
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "lado": "gasto",
+   "reemplaza": "Avskrivninger",
+   "motivo": "la Note 12 abre el renglón (67.336.863): derechos de jugadores 66.692.397 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L443, L781",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
+   "campo": "fila",
+   "valor": "644 466",
+   "linea": 443,
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Note 13: bienes de uso 644.466 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L798",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "seleccion": {
-  "filas": 39,
+  "filas": 40,
   "notasUsadas": [],
   "refM": null
  },
@@ -478,11 +528,11 @@
    "origen": "verificacion (nota que desglosa \"Medlemsinntekter/tilskudd\")",
    "signoFijo": 2.920111,
    "cat": "other_income",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Egenandeler/deltakeravgift (2 920 111) es lo que pagan los participantes por actividades, dentro de Medlemsinntekter/tilskudd; no es la cuota de socio (esa es 'Medlemskontigent', 318 320, que va a member_dues). Otros ingresos. [Egenandeler/deltakeravgift 2 920 111 (L660)]",
    "destino": "revenue",
    "amountNative": 2.920111
   },
@@ -494,11 +544,11 @@
    "origen": "verificacion (nota que desglosa \"Medlemsinntekter/tilskudd\")",
    "signoFijo": 60.287629,
    "cat": "broadcasting",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Markedsmidler NFF, NTF og UEFA (60 287 629) son los fondos de mercado/medios que reparte Norsk Toppfotball y UEFA; el documento no los abre en TV y premios, asi que va entero a Televisación. Mezcla probable de pozo de TV y dinero UEFA, no separable. Cuenta: 318 320 + 2 920 111 + 60 287 629 + 13 448 947 = 76 975 007 (Note 2). [Markedsmidler NFF, NTF og UEFA 60 287 629 (L661)]",
    "destino": "revenue",
    "amountNative": 60.287629
   },
@@ -540,11 +590,11 @@
    "origen": "verificacion (nota que desglosa \"Kamp- og billettinntekter\")",
    "signoFijo": 0.177551,
    "cat": "matchday_competition",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Ingreso de partidos de copa NM dentro de Note 3 'Kamp- og billettinntekter'. Recaudación de entradas. [Inntekter NM Cup 177 551 (L670)]",
    "destino": "revenue",
    "amountNative": 0.177551
   },
@@ -570,12 +620,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Kamp- og billettinntekter\")",
    "signoFijo": 0.545067,
-   "cat": "competition_bonus",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Oppgjør NM Cup' es la liquidación de la NFF por los partidos de copa, y la nota de principios dice que 'Kamp- og billettinntekter gjelder cupoppgjør NM fra NFF'. Es reparto de taquilla de copa, no un premio por avance de ronda (competition_bonus solo si el documento lo presenta como premio propio). Va a Recaudación de entradas. Suma Note 3: 13 248 227 + 177 551 + 1 135 289 + 545 067 + 360 000 = 15 466 134 (1 de redondeo vs 15 466 133). [Oppgjør NM Cup 545 067 (L672); 'Kamp- og billettinntekter gjelder cupoppgjør NM fra Norges Fotballforbund' (L601)]",
    "destino": "revenue",
    "amountNative": 0.545067
   },
@@ -587,11 +637,11 @@
    "origen": "verificacion (nota que desglosa \"Kamp- og billettinntekter\")",
    "signoFijo": 0.36,
    "cat": "matchday_competition",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Ingreso de amistosos dentro de Note 3 (Kamp- og billettinntekter). Recaudación de entradas. [Andre inntekter privatkamper etc. 360 000 (L673)]",
    "destino": "revenue",
    "amountNative": 0.36
   },
@@ -663,11 +713,11 @@
    "origen": "verificacion (nota que desglosa \"Personalkostnader\")",
    "signoFijo": 132.651613,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Lønnskostnad sin separar plantel: entero a wages_squad. Note 7: 132 651 613 + 18 035 924 + 1 684 061 + 2 387 713 = 154 759 311. [Lønn spillere, trenere, støtteapparat og administrasjon 132 651 613 (L706)]",
    "destino": "expense",
    "amountNative": -132.651613
   },
@@ -679,11 +729,11 @@
    "origen": "verificacion (nota que desglosa \"Personalkostnader\")",
    "signoFijo": 18.035924,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales van con el sueldo (wages_squad), parte de Note 7 Lønnskostnader. [Arbeidsgiveravgift 18 035 924 (L707)]",
    "destino": "expense",
    "amountNative": -18.035924
   },
@@ -695,11 +745,11 @@
    "origen": "verificacion (nota que desglosa \"Personalkostnader\")",
    "signoFijo": 1.684061,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pension va con el sueldo (wages_squad), parte de Note 7. [Pensjonskostnad 1 684 061 (L708)]",
    "destino": "expense",
    "amountNative": -1.684061
   },
@@ -711,11 +761,11 @@
    "origen": "verificacion (nota que desglosa \"Personalkostnader\")",
    "signoFijo": 2.387713,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otras prestaciones al personal, parte de Note 7 Lønnskostnader: wages_squad. [Andre ytelser 2 387 713 (L709)]",
    "destino": "expense",
    "amountNative": -2.387713
   },
@@ -741,12 +791,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Trening og utstyr\")",
    "signoFijo": 2.499857,
-   "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Alquiler de canchas de entrenamiento (Note 8 'Trening og utstyr'), no es costo de organizar partidos. Otros gastos, igual que el resto de Note 8 (treningsleir, sportsrekvisita, andre sportslige kostnader). [Leie treningsbaner etc. 2 499 857 (L732)]",
    "destino": "expense",
    "amountNative": -2.499857
   },
@@ -773,11 +823,11 @@
    "origen": "verificacion (nota que desglosa \"Trening og utstyr\")",
    "signoFijo": 0.209554,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Servicios y material médico dentro de Note 8 Trening og utstyr: Otros gastos. [Medisinske tjenester og rekvisita 209 554 (L734)]",
    "destino": "expense",
    "amountNative": -0.209554
   },
@@ -804,11 +854,11 @@
    "origen": "verificacion (nota que desglosa \"Egne arrangement\")",
    "signoFijo": 0.795934,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Tasa a la federacion por los partidos de local (Note 9 'Egne arrangement'): Organización de partidos. [Avgift Norges Fotballforbund 795 934 (L743)]",
    "destino": "expense",
    "amountNative": -0.795934
   },
@@ -820,11 +870,11 @@
    "origen": "verificacion (nota que desglosa \"Egne arrangement\")",
    "signoFijo": 0.507366,
    "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Publicidad de los partidos de liga de local, dentro de Note 9 'Egne arrangement' (costos de organizar partidos propios): Organización de partidos. [Annonsering seriekamper 507 366 (L744)]",
    "destino": "expense",
    "amountNative": -0.507366
   },
@@ -851,11 +901,11 @@
    "origen": "verificacion (nota que desglosa \"Egne arrangement\")",
    "signoFijo": 2.300605,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otros costos de organizacion de partidos propios, Note 9. [Andre arrangementkostnader 2 300 605 (L746)]",
    "destino": "expense",
    "amountNative": -2.300605
   },
@@ -897,11 +947,11 @@
    "origen": "verificacion (nota que desglosa \"Andres arrangement\")",
    "signoFijo": 1.894239,
    "cat": "match_organisation_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Note 10 'Andres arrangement' (gastos de otros eventos/partidos, copa, copa europea, viajes): Organización de partidos. [Utgifter andre arrangement 1 894 239 (L755)]",
    "destino": "expense",
    "amountNative": -1.894239
   },
@@ -973,11 +1023,11 @@
    "origen": "verificacion (nota que desglosa \"Andre driftskostnader\")",
    "signoFijo": 1.171795,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de mercaderia de los kioscos (el ingreso 'Kiosksalg' 2 371 295 va a Otros ingresos): Otros gastos. [Varekjøp og andre kostnader kiosker 1 171 795 (L767)]",
    "destino": "expense",
    "amountNative": -1.171795
   },
@@ -989,29 +1039,13 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.136803,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costos de instalaciones (no deportivos): Administración y gastos generales. Monto chico, 136 803. [Anleggskostnader 136 803 (L99)]",
    "destino": "expense",
    "amountNative": -0.136803
-  },
-  {
-   "label": "Avskrivninger",
-   "page": 11,
-   "native": 67.336863,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 67.336863,
-   "cat": "depreciation",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -67.336863
   },
   {
    "label": "Nedskrivninger",
@@ -1020,12 +1054,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 11.738298,
-   "cat": "exceptional_items",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Note 12 (inmateriales = derechos de jugadores) informa 'Nedskrivninger 11 738 298' y la linea del estado de resultados dice 'Nedskrivning av varige driftsmidler og immaterielle eiendeler'; es deterioro de pases, no un ítem excepcional. [Nedskrivninger 11 738 298 (L778); Nedskrivninger 11 738 298 (L444)]",
    "destino": "expense",
    "amountNative": -11.738298
   },
@@ -1043,6 +1077,38 @@
    "enLista": true,
    "destino": "expense",
    "amountNative": 0
+  },
+  {
+   "label": "Avskrivninger spillerrettigheter",
+   "page": 11,
+   "native": 66.692397,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 66.692397,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -66.692397
+  },
+  {
+   "label": "Avskrivninger varige driftsmidler",
+   "page": 11,
+   "native": 0.644466,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.644466,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.644466
   },
   {
    "label": "Netto finansposter",
@@ -1066,20 +1132,21 @@
    "verificacion (nota que desglosa \"Egne arrangement\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Andres arrangement\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Andre driftskostnader\")": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 129.145432,
-  "expSum": -277.949275,
+  "expSum": -289.687573,
   "officialTotalRevenue": 129.145432,
-  "officialTotalExpenses": 277.949275,
+  "officialTotalExpenses": 289.687573,
   "officialPAT": -79.222013,
   "verificacion": {
    "pat": "impreso",
    "ingresos": "impreso",
-   "gastos": "por-resultado"
+   "gastos": "impreso"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
@@ -1091,6 +1158,11 @@
    "label": "total de ingresos (verificado)",
    "pag": null,
    "M": 129.145432
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 289.687573
   }
  },
  "fxCloseNuevo": {
@@ -1149,9 +1221,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 12,
-  "lineasGasto": 26,
+  "lineasGasto": 27,
   "metaFilas": 1,
   "excluidas": 0
  }

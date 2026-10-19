@@ -3,7 +3,7 @@
   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
   "club": "viking",
   "year": 2025,
-  "generatedAt": "2026-10-19T00:28:23.949Z",
+  "generatedAt": "2026-10-19T01:03:22.961Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         47.909413
       ],
-      "glosa": "Ingresos audiovisuales"
+      "glosa": "Ingresos por derechos audiovisuales"
     },
     {
       "label": "Gevinst ved salg av spillerrettigheter",
@@ -94,7 +94,7 @@
       "values": [
         0.529119
       ],
-      "glosa": "Gastos por pensiones (OTP)**"
+      "glosa": "Gastos de pensiones (OTP)**"
     },
     {
       "label": "Andre personalkostnader",
@@ -107,16 +107,6 @@
       "glosa": "Otros gastos de personal"
     },
     {
-      "label": "Ordinære avskrivninger",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        28.455288
-      ],
-      "glosa": "Amortizaciones ordinarias"
-    },
-    {
       "label": "Annen driftskostnad",
       "lado": "expense",
       "page": 5,
@@ -125,6 +115,36 @@
         112.406643
       ],
       "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Avskrivninger spillerrettigheter",
+      "lado": "expense",
+      "page": 5,
+      "section": "ajuste manual",
+      "values": [
+        19.207686
+      ],
+      "glosa": "Amortización de derechos de jugadores"
+    },
+    {
+      "label": "Avskrivninger markedsrettigheter",
+      "lado": "expense",
+      "page": 5,
+      "section": "ajuste manual",
+      "values": [
+        0.225
+      ],
+      "glosa": "Amortización de derechos de comercialización"
+    },
+    {
+      "label": "Avskrivninger varige driftsmidler",
+      "lado": "expense",
+      "page": 5,
+      "section": "ajuste manual",
+      "values": [
+        9.022602
+      ],
+      "glosa": "Amortización del inmovilizado material"
     }
   ]
 }

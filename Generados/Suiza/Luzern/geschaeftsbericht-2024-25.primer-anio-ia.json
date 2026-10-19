@@ -1,13 +1,13 @@
 {
  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.md",
- "clave": "9c2413373e77394469d62c7d3f6f4d030cfbc203",
- "generado": "2026-10-19T00:28:34.213Z",
+ "clave": "c3dcf95eb4d5e10ad9a83e55835f899c2967bb95",
+ "generado": "2026-10-19T01:03:33.099Z",
  "fuente": "API",
  "datos": {
   "faltan": [],
   "sobran": [],
   "repetidas": [],
   "lado_equivocado": [],
-  "observacion": "No encontré problemas. Cada renglón del estado de 2024/25 está cargado una sola vez, directamente o mediante las partes de su nota, y esas partes suman el importe del renglón. En Personalaufwand la diferencia de redondeo de 0,000001 cierra el total. No se cargaron subtotales (Total Ertrag, Betriebsaufwand vor Abschreibungen, EBITDA, EBIT, Betriebsergebnis, Unternehmenserfolg vor Steuern/vor Minderheiten) ni importes del año anterior."
+  "observacion": "Todo lo que se carga cierra con el estado. Las partes de las notas suman exactamente cada renglón que reemplazan: Nachwuchs, Events, Merchandising-Ertrag, Sonstiger Betriebsertrag, Personalaufwand, Spielbetrieb, Transferaufwand, Werbung, Nachwuchs-Aufwand, Events-Aufwand, Administration y Abschreibungen immaterielle. Los subtotales (EBITDA, EBIT, Betriebsergebnis, Unternehmenserfolg vor Steuern/vor Minderheiten) no se cargan. En Personalaufwand hay una diferencia de redondeo de 1 CHF."
  }
 }

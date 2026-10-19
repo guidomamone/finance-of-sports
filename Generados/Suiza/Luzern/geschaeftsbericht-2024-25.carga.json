@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
- "generado": "2026-10-19T00:55:17.457Z",
+ "generado": "2026-10-19T01:04:31.756Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (luzern-ch)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "29 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Sponsoren- und Spendenbeiträge\" -> youth_football 0.75; \"SFV-Verbandsbeiträge\" -> youth_football 0.75; \"Sport Toto- und J+S-Entschädigungen\" -> youth_football 0.75; \"Ausbildungs- und Materialbeiträge Eltern\" -> youth_football 0.75; \"Anlässe (FCL-Fussballcamp, Pfingstmaster\" -> youth_football 0.7"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -72,9 +64,9 @@
     "amountNative": 0.778095,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "SFV-Verbandsbeiträge",
@@ -82,9 +74,9 @@
     "amountNative": 0.842667,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sport Toto- und J+S-Entschädigungen",
@@ -92,9 +84,9 @@
     "amountNative": 0.273597,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ausbildungs- und Materialbeiträge Eltern",
@@ -102,9 +94,9 @@
     "amountNative": 0.489205,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Anlässe (FCL-Fussballcamp, Pfingstmaster)",
@@ -112,9 +104,9 @@
     "amountNative": 0.220951,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diverse Einnahmen",
@@ -142,9 +134,9 @@
     "amountNative": 0.027198,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Fanshop Präsenzgeschäft",
@@ -234,9 +226,9 @@
     "amountNative": -7.801561,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sozialabgaben",
@@ -244,9 +236,9 @@
     "amountNative": -0.731539,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Unfallversicherungsprämien",
@@ -254,9 +246,9 @@
     "amountNative": -0.656243,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Personalkosten inkl. Spesen",
@@ -264,9 +256,9 @@
     "amountNative": -2.295763,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sozialabgaben",
@@ -274,9 +266,9 @@
     "amountNative": -0.476048,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Personalkosten inkl. Spesen",
@@ -284,9 +276,9 @@
     "amountNative": -2.698085,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sozialabgaben",
@@ -294,9 +286,9 @@
     "amountNative": -0.388641,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Personalkosten inkl. Spesen",
@@ -304,9 +296,9 @@
     "amountNative": -0.264083,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sozialabgaben",
@@ -314,9 +306,9 @@
     "amountNative": -0.043278,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Personalkosten inkl. Spesen",
@@ -324,9 +316,9 @@
     "amountNative": -0.702108,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sozialabgaben",
@@ -334,9 +326,9 @@
     "amountNative": -0.072929,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diferencia de redondeo",
@@ -353,9 +345,9 @@
     "amountNative": -1.85216,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sicherheitskosten Matchtag (ohne Stewards)",
@@ -383,9 +375,9 @@
     "amountNative": -0.741765,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ticketing und Vorverkaufsgebühren",
@@ -403,9 +395,9 @@
     "amountNative": -0.451447,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diverse Kosten Spielbetrieb",
@@ -413,9 +405,9 @@
     "amountNative": -0.519321,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "VIP-Cateringkosten Spieltag",
@@ -443,9 +435,9 @@
     "amountNative": 0.451037,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Transferaufwand definitive Übertritte",
@@ -473,9 +465,9 @@
     "amountNative": -0.248658,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Medien, Kommunikation, Inserate",
@@ -493,9 +485,9 @@
     "amountNative": -0.12642,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "LED-Bandenwerbung Produktion",
@@ -513,9 +505,9 @@
     "amountNative": -0.169993,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Nachwuchs-Akademie",
@@ -563,9 +555,9 @@
     "amountNative": -0.185769,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Grossevents",
@@ -573,9 +565,9 @@
     "amountNative": -0.029811,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía stadium_other, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Merchandising",
@@ -643,9 +635,9 @@
     "amountNative": -0.066492,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Abschreibungen mobile Sachanlagen",
@@ -658,16 +650,6 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Abschreibungen immaterielle Sachanlagen",
-    "normalizedCategory": "other_amortisation",
-    "amountNative": -1.197018,
-    "disclosureLevel": "aggregated",
-    "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
-   },
-   {
     "rawLabel": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
     "normalizedCategory": "exceptional_items",
     "amountNative": -0.135065,
@@ -676,6 +658,26 @@
     "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abschreibungen Spielerwerte",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.025811,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): amortización de derechos de jugadores (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)"
+   },
+   {
+    "rawLabel": "Abschreibungen Software, E-Commerce und Markenrechte",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.171207,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): amortización de software, e-commerce y marcas (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)"
    }
   ],
   "fiscalYearMeta": {
@@ -745,10 +747,58 @@
    "evidencia": ".md L1238-1251",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
+   "campo": "fila",
+   "valor": "1 025 811",
+   "linea": 1139,
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "lado": "gasto",
+   "reemplaza": "Abschreibungen immaterielle Sachanlagen",
+   "motivo": "la Nota 8 abre el renglón (1.197.018): Spielerwerte 1.025.811 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L1139 y L1464",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
+   "campo": "fila",
+   "valor": "171 207",
+   "linea": 1139,
+   "etiqueta": "Abschreibungen Software, E-Commerce und Markenrechte",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "la Nota 8 abre el renglón (1.197.018): Software 89.999 + 19.374, E-Commerce 11.834, Markenrechte 50.000 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L1464",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "motivo": "amortización de derechos de jugadores (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
+   "campo": "categoria",
+   "valor": "other_amortisation",
+   "linea": null,
+   "etiqueta": "Abschreibungen Software, E-Commerce und Markenrechte",
+   "motivo": "amortización de software, e-commerce y marcas (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
  "seleccion": {
-  "filas": 67,
+  "filas": 68,
   "notasUsadas": [],
   "refM": null
  },
@@ -821,11 +871,11 @@
    "origen": "verificacion (nota que desglosa \"Leistungsfussball Nachwuchs\")",
    "signoFijo": 0.778095,
    "cat": "youth_football",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Renglón de la Nota 19 'Ertrag Leistungsfussball Nachwuchs' (ingresos del área de formación, total 2’789’206). Aunque se llame sponsoreo/donaciones, es plata que el club registra dentro del bloque juvenil; youth_football es coherente con el resto de la Nota 19. [Sponsoren- und Spendenbeiträge | 778’095 (L1669)]",
    "destino": "revenue",
    "amountNative": 0.778095
   },
@@ -837,11 +887,11 @@
    "origen": "verificacion (nota que desglosa \"Leistungsfussball Nachwuchs\")",
    "signoFijo": 0.842667,
    "cat": "youth_football",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Aportes del SFV (federación) al bloque de formación, Nota 19, que el propio club agrupa como ingreso de Nachwuchs. youth_football. [SFV-Verbandsbeiträge | 842’667 (L1670)]",
    "destino": "revenue",
    "amountNative": 0.842667
   },
@@ -853,11 +903,11 @@
    "origen": "verificacion (nota que desglosa \"Leistungsfussball Nachwuchs\")",
    "signoFijo": 0.273597,
    "cat": "youth_football",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Sport Toto y Jugend+Sport (fomento estatal a la formación juvenil), dentro de la Nota 19 de Nachwuchs. youth_football. [Sport Toto- und J+S-Entschädigungen | 273’597 (L1671)]",
    "destino": "revenue",
    "amountNative": 0.273597
   },
@@ -869,11 +919,11 @@
    "origen": "verificacion (nota que desglosa \"Leistungsfussball Nachwuchs\")",
    "signoFijo": 0.489205,
    "cat": "youth_football",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Aranceles y materiales que pagan los padres de los juveniles; es ingreso de la formación (no son cuotas de socios, el grupo es una AG). youth_football. [Ausbildungs- und Materialbeiträge Eltern | 489’205 (L1672)]",
    "destino": "revenue",
    "amountNative": 0.489205
   },
@@ -885,11 +935,11 @@
    "origen": "verificacion (nota que desglosa \"Leistungsfussball Nachwuchs\")",
    "signoFijo": 0.220951,
    "cat": "youth_football",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Campus de fútbol y torneo juvenil (Pfingstmaster); el gasto espejo está en la Nota 27 (Aufwand Leistungsfussball Nachwuchs, 'Anlässe', 88’929). youth_football. [Anlässe (FCL-Fussballcamp, Pfingstmaster) | 220’951 (L1673)]",
    "destino": "revenue",
    "amountNative": 0.220951
   },
@@ -931,11 +981,11 @@
    "origen": "verificacion (nota que desglosa \"Events\")",
    "signoFijo": 0.027198,
    "cat": "stadium_other",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Es el ingreso por el partido internacional sub-21 de la selección suiza juvenil en la swissporarena (11.10.2024), dentro del bloque 'Events' (eventos en el estadio, tercerizados desde septiembre 2024). Es uso del estadio fuera del partido del club: stadium_other. Criterio conservador: el rótulo 'Grossevents' no nombra el estadio, pero la nota 20 sí aclara que el evento fue en la swissporarena y el bloque se llama 'Events swissporarena'. [Grossevents | 27’198 (L1691); 'Beim Ertrag Grossevents über 27 TCHF handelt es sich um das U-21-Länderspiel ... vom 11. Oktober 2024' (L1696)]",
    "destino": "revenue",
    "amountNative": 0.027198
   },
@@ -1067,11 +1117,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 7.801561,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Nota 23, bloque '1. Mannschaft Männer und Staff': sueldos del plantel profesional y cuerpo técnico (7’801’561). wages_squad. Los bloques Nachwuchs, Geschäftsstelle, Frauen y Stewards de la misma nota no son este caso. [Personalkosten inkl. Spesen | 7’801’561 (L1728, bloque '1. Mannschaft Männer und Staff' L1727)]",
    "destino": "expense",
    "amountNative": -7.801561
   },
@@ -1083,11 +1133,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 0.731539,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales del bloque 1. Mannschaft y Staff: van con el sueldo de su sector (regla de cargas sociales). wages_squad. [Sozialabgaben | 731’539 (L1729)]",
    "destino": "expense",
    "amountNative": -0.731539
   },
@@ -1099,11 +1149,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 0.656243,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Prima del seguro de accidentes (UVG) del bloque 1. Mannschaft. La regla del skill manda seguros y ART (seguro de accidentes laborales) a admin_general_expense, no a cargas sociales; por eso se acepta la propuesta. Alternativa si Guido prefiere tratarlo como carga social (Sozialabgaben del mismo bloque): wages_squad, 656’243 más en sueldos del plantel. Se deja la regla del skill. [Unfallversicherungsprämien | 656’243 (L1730)]",
    "destino": "expense",
    "amountNative": -0.656243
   },
@@ -1115,11 +1165,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 2.295763,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Nota 23, bloque '1. Mannschaft Männer und Staff': sueldos del plantel profesional y cuerpo técnico (7’801’561). wages_squad. Los bloques Nachwuchs, Geschäftsstelle, Frauen y Stewards de la misma nota no son este caso. [Personalkosten inkl. Spesen | 7’801’561 (L1728, bloque '1. Mannschaft Männer und Staff' L1727)]",
    "destino": "expense",
    "amountNative": -2.295763
   },
@@ -1131,11 +1181,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 0.476048,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales del bloque 1. Mannschaft y Staff: van con el sueldo de su sector (regla de cargas sociales). wages_squad. [Sozialabgaben | 731’539 (L1729)]",
    "destino": "expense",
    "amountNative": -0.476048
   },
@@ -1147,11 +1197,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 2.698085,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Nota 23, bloque '1. Mannschaft Männer und Staff': sueldos del plantel profesional y cuerpo técnico (7’801’561). wages_squad. Los bloques Nachwuchs, Geschäftsstelle, Frauen y Stewards de la misma nota no son este caso. [Personalkosten inkl. Spesen | 7’801’561 (L1728, bloque '1. Mannschaft Männer und Staff' L1727)]",
    "destino": "expense",
    "amountNative": -2.698085
   },
@@ -1163,11 +1213,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 0.388641,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales del bloque 1. Mannschaft y Staff: van con el sueldo de su sector (regla de cargas sociales). wages_squad. [Sozialabgaben | 731’539 (L1729)]",
    "destino": "expense",
    "amountNative": -0.388641
   },
@@ -1179,11 +1229,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 0.264083,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Nota 23, bloque '1. Mannschaft Männer und Staff': sueldos del plantel profesional y cuerpo técnico (7’801’561). wages_squad. Los bloques Nachwuchs, Geschäftsstelle, Frauen y Stewards de la misma nota no son este caso. [Personalkosten inkl. Spesen | 7’801’561 (L1728, bloque '1. Mannschaft Männer und Staff' L1727)]",
    "destino": "expense",
    "amountNative": -0.264083
   },
@@ -1195,11 +1245,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 0.043278,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales del bloque 1. Mannschaft y Staff: van con el sueldo de su sector (regla de cargas sociales). wages_squad. [Sozialabgaben | 731’539 (L1729)]",
    "destino": "expense",
    "amountNative": -0.043278
   },
@@ -1211,11 +1261,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 0.702108,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Nota 23, bloque '1. Mannschaft Männer und Staff': sueldos del plantel profesional y cuerpo técnico (7’801’561). wages_squad. Los bloques Nachwuchs, Geschäftsstelle, Frauen y Stewards de la misma nota no son este caso. [Personalkosten inkl. Spesen | 7’801’561 (L1728, bloque '1. Mannschaft Männer und Staff' L1727)]",
    "destino": "expense",
    "amountNative": -0.702108
   },
@@ -1227,11 +1277,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 0.072929,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales del bloque 1. Mannschaft y Staff: van con el sueldo de su sector (regla de cargas sociales). wages_squad. [Sozialabgaben | 731’539 (L1729)]",
    "destino": "expense",
    "amountNative": -0.072929
   },
@@ -1257,11 +1307,11 @@
    "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
    "signoFijo": 1.85216,
    "cat": "match_organisation_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Nota 24 'Aufwand Spielbetrieb und Matchorganisation': alquiler a Stadion Luzern AG y mantenimiento de la swissporarena, más el daño en las bandas LED (164 TCHF). Es renglón mixto alquiler-mantenimiento del estadio; alternativa posible admin_general_expense (mantenimiento de estadio). Se acepta match_organisation_expense porque el club lo agrupa en su bloque de Matchorganisation y es el alquiler de la sede para jugar los partidos. [Miete und Unterhalt Stadion | 1’852’160 (L1794); 'Zunahme ... Schadenfall ... LED-Banden (164 TCHF) ... Mietzins ... um 27 TCHF erhöht' (L1807)]",
    "destino": "expense",
    "amountNative": -1.85216
   },
@@ -1303,11 +1353,11 @@
    "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
    "signoFijo": 0.741765,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Material de equipo (el cambio de proveedor Erreà obligó a renovar todos los textiles de jugadores y staff, +227 TCHF) y material médico. Renglón del bloque de Spielbetrieb: se deja en match_organisation_expense por consistencia con el resto del bloque; no encaja mejor en otra categoría de category-map. [Material und Medical | 741’765 (L1797); 'sämtliche Textilien ... erneuert ... Mehrkosten von 227 TCHF im Bereich von Material und Medical' (L1810)]",
    "destino": "expense",
    "amountNative": -0.741765
   },
@@ -1334,11 +1384,11 @@
    "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
    "signoFijo": 0.451447,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): La nota lo define como viajes y alimentación de partidos de local y visitante, campamentos de entrenamiento y multas a los jugadores en los partidos: costo de participar en la competencia. match_organisation_expense. [Aufwand 1. Mannschaften | 451’447 (L1799); 'Kosten für Match-Reisen und Verpflegung ..., Trainingslager sowie die Bussen' (L1811)]",
    "destino": "expense",
    "amountNative": -0.451447
   },
@@ -1350,11 +1400,11 @@
    "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
    "signoFijo": 0.519321,
    "cat": "match_organisation_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costos varios de la operación de partidos dentro del bloque Spielbetrieb. match_organisation_expense. [Diverse Kosten Spielbetrieb | 519’321 (L1800)]",
    "destino": "expense",
    "amountNative": -0.519321
   },
@@ -1396,11 +1446,11 @@
    "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
    "signoFijo": -0.451037,
    "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Reintegros de proveedores del catering de día de partido (participaciones sobre ventas y kickbacks de Food and Beverage); la nota 24 los resta dentro del mismo bloque (total bruto 6’539’937 menos 451’037 = 6’088’900 neto). Va con el bloque, match_organisation_expense, con signo negativo (reduce el gasto). [Rückvergütungen Lieferanten | −451’037 (L1804); 'Umsatzbeteiligungen und Kickbacks der Lieferanten, welche uns am Matchtag beliefern' (L1813)]",
    "destino": "expense",
    "amountNative": 0.451037
   },
@@ -1442,11 +1492,11 @@
    "origen": "verificacion (nota que desglosa \"Transferaufwand\")",
    "signoFijo": 0.248658,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Nota 25 Transferaufwand: comisiones a agentes, participaciones de clubes, solidaridad FIFA e indemnizaciones por formación. Este renglón (préstamos e indemnizaciones por formación) no es adquisición capitalizada (las altas de Spielerwerte van por amortización): other_expenses. Conviene que el resto de las filas de la misma nota (Transferaufwand definitive Übertritte, Spielervermittlungen) queden en el mismo criterio. [Ausleih- und Ausbildungsentschädigungen | 248’658 (L1825)]",
    "destino": "expense",
    "amountNative": -0.248658
   },
@@ -1473,11 +1523,11 @@
    "origen": "verificacion (nota que desglosa \"Werbung und Sponsoring\")",
    "signoFijo": 0.12642,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Producción de la TV propia del club (FCL-TV) en la Nota 26 'Aufwand Werbung und Sponsoring': gasto comercial/comunicación, admin_general_expense. [Inhouse TV Spieltag | 126’420 (L1837); 'Produktionskosten des hauseigenen FCL-TV.ch' (L1842)]",
    "destino": "expense",
    "amountNative": -0.12642
   },
@@ -1504,11 +1554,11 @@
    "origen": "verificacion (nota que desglosa \"Werbung und Sponsoring\")",
    "signoFijo": 0.169993,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Resto de la Nota 26 (publicidad y sponsoring): gastos comerciales varios, admin_general_expense, igual que sus renglones hermanos del bloque. [Diverses | 169’993 (L1839)]",
    "destino": "expense",
    "amountNative": -0.169993
   },
@@ -1580,11 +1630,11 @@
    "origen": "verificacion (nota que desglosa \"Events\")",
    "signoFijo": 0.185769,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Nota 28 Aufwand Events: costo de las conferencias y eventos de la swissporarena (actividad tercerizada desde septiembre 2024). No hay categoría de gasto mejor: other_expenses. [Konferenzen / Events | 185’769 (L1864)]",
    "destino": "expense",
    "amountNative": -0.185769
   },
@@ -1596,12 +1646,12 @@
    "origen": "verificacion (nota que desglosa \"Events\")",
    "signoFijo": 0.029811,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía stadium_other, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Gasto espejo del ingreso de Grossevents (partido internacional sub-21 de la selección suiza juvenil del 11.10.2024): other_expenses. Es la clave '|expense' del mismo rótulo, de ahí la confianza 0; no cambia el criterio. [Grossevents | 29’811 (L1865); 'Der Aufwand bei den Grossevents über 30 TCHF bezieht sich auf das U-21-Länderspiel' (L1869)]",
    "destino": "expense",
    "amountNative": -0.029811
   },
@@ -1703,11 +1753,11 @@
    "origen": "verificacion (nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\")",
    "signoFijo": 0.066492,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Renglón 'Sonstiger Betriebsaufwand' (otros gastos operativos) de la Nota 31; es un catch-all del propio club, other_expenses (las otras filas de esa nota, Verwaltungsaufwand, IT, etc., son admin). [Sonstiger Betriebsaufwand | 66’492 (L1894)]",
    "destino": "expense",
    "amountNative": -0.066492
   },
@@ -1727,22 +1777,6 @@
    "amountNative": -0.211164
   },
   {
-   "label": "Abschreibungen immaterielle Sachanlagen",
-   "page": 29,
-   "native": 1.197018,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 1.197018,
-   "cat": "other_amortisation",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -1.197018
-  },
-  {
    "label": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
    "page": 29,
    "native": 0.135065,
@@ -1756,6 +1790,38 @@
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.135065
+  },
+  {
+   "label": "Abschreibungen Spielerwerte",
+   "page": 29,
+   "native": 1.025811,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.025811,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): amortización de derechos de jugadores (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -1.025811
+  },
+  {
+   "label": "Abschreibungen Software, E-Commerce und Markenrechte",
+   "page": 29,
+   "native": 0.171207,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.171207,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): amortización de software, e-commerce y marcas (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.171207
   },
   {
    "label": "Finanzergebnis",
@@ -1793,6 +1859,7 @@
    "verificacion (nota que desglosa \"Transferaufwand\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Werbung und Sponsoring\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\")": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -1876,9 +1943,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 20,
-  "lineasGasto": 45,
+  "lineasGasto": 46,
   "metaFilas": 2,
   "excluidas": 0
  }

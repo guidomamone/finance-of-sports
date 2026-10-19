@@ -1,26 +1,10 @@
 {
  "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf",
- "generado": "2026-10-19T00:55:17.225Z",
+ "generado": "2026-10-19T01:04:31.653Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (valerenga-no)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Markeds- og medieinntekter\" -> sponsorship_commercial 0.6; \"Arbeidsgiveravgift\" -> wages_squad 0.65; \"Pensjonskostnader\" -> wages_squad 0.65; \"Andre ytelser\" -> wages_squad 0.6; \"Nedskrivning av varige driftsmidler og i\" -> player_impairment 0.45"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -45,13 +29,13 @@
    },
    {
     "rawLabel": "Markeds- og medieinntekter",
-    "normalizedCategory": "sponsorship_commercial",
+    "normalizedCategory": "broadcasting",
     "amountNative": 28.53763,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Billettsalg",
@@ -111,9 +95,9 @@
     "amountNative": -1.802767,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Pensjonskostnader",
@@ -121,9 +105,9 @@
     "amountNative": -0.247852,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre ytelser",
@@ -131,9 +115,9 @@
     "amountNative": -2.302202,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Avskrivning av driftsmidler",
@@ -147,13 +131,13 @@
    },
    {
     "rawLabel": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
-    "normalizedCategory": "player_impairment",
+    "normalizedCategory": "other_expenses",
     "amountNative": -1.045077,
     "disclosureLevel": "aggregated",
     "_pag": 2,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Annen driftskostnad",
@@ -269,12 +253,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Salgsinntekt\")",
    "signoFijo": 28.53763,
-   "cat": "sponsorship_commercial",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Es el ingreso del acuerdo de mercado y medios con la liga (Note 1 'Markeds- og medieinntekter'; los principios dicen 'Markeds- og mediaavtalen ... periodisering basert på forventet tabellplassering'). Los sponsors estan aparte en 'Sponsorinntekter' (44 538 148). Va a Televisación / derechos de TV; si no, Televisión da 0. Suma Note 1: 44 538 148 + 28 537 630 + 25 505 735 = 98 581 513. Contiene algo de componente de mercado no separable. [Markeds- og medieinntekter 28 537 630 (L292); Sponsorinntekter 44 538 148 (L291)]",
    "destino": "revenue",
    "amountNative": 28.53763
   },
@@ -361,11 +345,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 1.802767,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales con el sueldo: wages_squad. Note 3: 11 905 657 + 1 802 767 + 247 852 + 2 302 202 = 16 258 478. [Arbeidsgiveravgift 1 802 767 (L312)]",
    "destino": "expense",
    "amountNative": -1.802767
   },
@@ -377,11 +361,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 0.247852,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pension con el sueldo: wages_squad. [Pensjonskostnader 247 852 (L313)]",
    "destino": "expense",
    "amountNative": -0.247852
   },
@@ -393,11 +377,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 2.302202,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otras prestaciones, parte de Note 3 Lønnskostnader: wages_squad. [Andre ytelser 2 302 202 (L314)]",
    "destino": "expense",
    "amountNative": -2.302202
   },
@@ -423,12 +407,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 1.045077,
-   "cat": "player_impairment",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No es deterioro de pases: Note 5 muestra que 1 045 077 es 'Tap på fordringer' (perdidas por cobros: 1 406 878 perdidas constatadas - 361 801 de reversion de provision). El deterioro de derechos de jugadores (2 430 687 acumulado, Note 4) no pasa por esta fila (los jugadores van en finanzas). Es una perdida operativa por incobrables: Otros gastos. [Tap på fordringer 1 045 077 (L369); Nedskrivning av varige driftsmidler og immaterielle eiendeler 1 045 077 (L116)]",
    "destino": "expense",
    "amountNative": -1.045077
   },
@@ -468,12 +452,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -570,7 +548,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 1,
   "lineasIngreso": 5,
   "lineasGasto": 8,
   "metaFilas": 2,

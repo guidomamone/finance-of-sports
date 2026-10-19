@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
- "generado": "2026-10-19T00:55:16.694Z",
+ "generado": "2026-10-19T01:04:31.444Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (viking-no)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Lønninger\" -> wages_squad 0.6; \"Arbeidsgiveravgift\" -> wages_squad 0.55; \"Personalkostnader fra Viking FK*\" -> wages_squad 0.45; \"Pensjonskostnad (OTP)**\" -> wages_squad 0.5; \"Andre personalkostnader\" -> wages_squad 0.4"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -87,9 +75,9 @@
     "amountNative": -13.927807,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Arbeidsgiveravgift",
@@ -97,9 +85,9 @@
     "amountNative": -2.101645,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Personalkostnader fra Viking FK",
@@ -107,9 +95,9 @@
     "amountNative": -80.010132,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Pensjonskostnad (OTP)",
@@ -117,9 +105,9 @@
     "amountNative": -0.529119,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andre personalkostnader",
@@ -127,19 +115,9 @@
     "amountNative": -0.325704,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Ordinære avskrivninger",
-    "normalizedCategory": "depreciation",
-    "amountNative": -28.455288,
-    "disclosureLevel": "aggregated",
-    "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Annen driftskostnad",
@@ -150,6 +128,36 @@
     "_escalon": 2,
     "_conf": 0.85,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Avskrivninger spillerrettigheter",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -19.207686,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)"
+   },
+   {
+    "rawLabel": "Avskrivninger markedsrettigheter",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.225,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)"
+   },
+   {
+    "rawLabel": "Avskrivninger varige driftsmidler",
+    "normalizedCategory": "depreciation",
+    "amountNative": -9.022602,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)"
    }
   ],
   "fiscalYearMeta": {
@@ -233,10 +241,82 @@
    "evidencia": ".md L296",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "19 207 686",
+   "linea": 288,
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "lado": "gasto",
+   "reemplaza": "Ordinære avskrivninger",
+   "motivo": "Note 4 abre las amortizaciones (28.455.288 consolidado): derechos de jugadores 19.207.686 (Viking Stadion AS no tiene derechos) (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L288, L1021",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "225 000",
+   "linea": 288,
+   "etiqueta": "Avskrivninger markedsrettigheter",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Note 4: derechos de mercado 225.000 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L1021",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "9 022 602",
+   "linea": 288,
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "resto del renglón consolidado: 28.455.288 - 19.207.686 - 225.000 = 9.022.602, bienes de uso del AS y del estadio (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L288, L1021",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "categoria",
+   "valor": "other_amortisation",
+   "linea": null,
+   "etiqueta": "Avskrivninger markedsrettigheter",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
  "seleccion": {
-  "filas": 16,
+  "filas": 18,
   "notasUsadas": [],
   "refM": null
  },
@@ -324,11 +404,11 @@
    "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
    "signoFijo": 13.927807,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Note 3, sueldos de los 12 empleados del AS: Lønnskostnad entero a wages_squad. Suma: 13 927 807 + 2 101 645 + 80 010 132 + 529 119 + 325 704 = 96 894 407. [Lønninger 13 927 807 (L1036)]",
    "destino": "expense",
    "amountNative": -13.927807
   },
@@ -340,11 +420,11 @@
    "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
    "signoFijo": 2.101645,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales van con el sueldo: wages_squad. [Arbeidsgiveravgift 2 101 645 (L1037)]",
    "destino": "expense",
    "amountNative": -2.101645
   },
@@ -356,11 +436,11 @@
    "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
    "signoFijo": 80.010132,
    "cat": "wages_squad",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Es el costo de personal de jugadores, entrenadores y cuerpo tecnico del primer equipo, que Viking FK emplea y el AS paga por contrato (nota * del documento). Decision de Guido: se carga como esta. wages_squad. [Personalkostnader fra Viking FK* 80 010 132 (L1038); '...alle direkte lønnskostnader knyttet til disse personene skal dekkes av Viking Fotball AS' (L1043)]",
    "destino": "expense",
    "amountNative": -80.010132
   },
@@ -372,11 +452,11 @@
    "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
    "signoFijo": 0.529119,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pension obligatoria (OTP) va con el sueldo: wages_squad. La nota dice que los aportes se contabilizan como lønnskostnad. [Pensjonskostnad (OTP)** 529 119 (L1039)]",
    "destino": "expense",
    "amountNative": -0.529119
   },
@@ -388,29 +468,13 @@
    "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
    "signoFijo": 0.325704,
    "cat": "wages_squad",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otros costos de personal dentro de Note 3 (la nota dice que la periodizacion de sign-on fees se gasta como sueldo): wages_squad. Monto chico. [Andre personalkostnader 325 704 (L1040)]",
    "destino": "expense",
    "amountNative": -0.325704
-  },
-  {
-   "label": "Ordinære avskrivninger",
-   "page": 5,
-   "native": 28.455288,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 28.455288,
-   "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -28.455288
   },
   {
    "label": "Annen driftskostnad",
@@ -426,6 +490,54 @@
    "enLista": true,
    "destino": "expense",
    "amountNative": -112.406643
+  },
+  {
+   "label": "Avskrivninger spillerrettigheter",
+   "page": 5,
+   "native": 19.207686,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 19.207686,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -19.207686
+  },
+  {
+   "label": "Avskrivninger markedsrettigheter",
+   "page": 5,
+   "native": 0.225,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.225,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.225
+  },
+  {
+   "label": "Avskrivninger varige driftsmidler",
+   "page": 5,
+   "native": 9.022602,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 9.022602,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -9.022602
   },
   {
    "label": "Renteinntekt",
@@ -476,6 +588,7 @@
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -564,9 +677,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 5,
-  "lineasGasto": 7,
+  "lineasGasto": 9,
   "metaFilas": 4,
   "excluidas": 0
  }
