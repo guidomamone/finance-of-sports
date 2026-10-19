@@ -50,6 +50,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'chapecoense-br': {
     2017: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora Alimentos","marca":"Umbro","temporada":"2017 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374511888"},
     2021: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora Coop","marca":"Umbro","temporada":"2021 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375901035"},
+    2022: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora","marca":"Umbro","temporada":"2022 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376405033"},
   },
   'corinthians-br': {
     2024: {"estadio":"Neo Química Arena","capacidad":48000,"sponsor":"Esportes da Sorte","marca":"Nike","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},

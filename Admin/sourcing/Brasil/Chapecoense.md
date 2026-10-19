@@ -40,3 +40,5 @@
 - No se pudo bajar `Publicação_2018_ACF` (nombre con tilde en descomposición Unicode, 404 con NFC y con percent-encoding NFC); sí están 2016 y 2017 de antes. El ejercicio 2018 viene como comparativo dentro del PDF 2019.
 - md5 distintos entre todos. Textos con capa nativa; el de 2019 y 2021 tienen datos en imagen parcial (verificar al transcribir).
 - Ejercicios en disco ahora: 2016, 2017, 2019 (+2018 comparativo), 2020, 2021, 2022, 2023, 2024, 2025.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.pdf` (sourceId `chapecoense-br-demonstracoes-contabeis-2022`).
