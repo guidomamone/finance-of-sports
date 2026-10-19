@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2009.pdf",
   "club": "basel-ch",
   "year": 2009,
-  "generatedAt": "2026-10-19T15:34:56.773Z",
+  "generatedAt": "2026-10-19T17:09:39.932Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         11.170431
       ],
-      "glosa": "Ingresos por partidos de liga"
+      "glosa": "Ingresos por liga"
     },
     {
       "label": "aus Uefa-Spielen",
@@ -24,7 +24,7 @@
       "values": [
         3.190783
       ],
-      "glosa": "Ingresos por partidos de la UEFA"
+      "glosa": "Ingresos por partidos UEFA"
     },
     {
       "label": "aus Cup-Spielen",
@@ -34,7 +34,7 @@
       "values": [
         1.316702
       ],
-      "glosa": "Ingresos por partidos de Copa"
+      "glosa": "Ingresos por partidos de copa"
     },
     {
       "label": "aus übrigen Spielen",
@@ -104,7 +104,7 @@
       "values": [
         5.593768
       ],
-      "glosa": "Ingresos federativos"
+      "glosa": "Ingresos de la federación"
     },
     {
       "label": "Einnahmen Leistungsfussball Nachwuchs",
@@ -124,17 +124,7 @@
       "values": [
         1.286652
       ],
-      "glosa": "Otros ingresos / Varios"
-    },
-    {
-      "label": "Total Ertrag",
-      "lado": "revenue",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        45.486
-      ],
-      "glosa": "Total de ingresos"
+      "glosa": "Otros ingresos"
     },
     {
       "label": "Personalaufwand",
@@ -154,7 +144,7 @@
       "values": [
         9.674617
       ],
-      "glosa": "Gastos de organización de partidos como local"
+      "glosa": "Costes de organización de partidos en casa"
     },
     {
       "label": "Übriger Spielbetrieb",
@@ -184,7 +174,7 @@
       "values": [
         1.871599
       ],
-      "glosa": "Publicidad"
+      "glosa": "Gastos de publicidad"
     },
     {
       "label": "Administration",
@@ -194,7 +184,7 @@
       "values": [
         2.462017
       ],
-      "glosa": "Administración"
+      "glosa": "Gastos de administración"
     },
     {
       "label": "Abschreibungen",

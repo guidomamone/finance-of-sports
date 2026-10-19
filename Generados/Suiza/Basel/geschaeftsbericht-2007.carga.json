@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2007.pdf",
- "generado": "2026-10-19T16:08:46.604Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Abschreibungen\" -> depreciation 0.5"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2007: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-19T17:31:09.363Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2007 (cierre 2007-12-31); pregunta en la cola (no frena)"
  ],
@@ -208,9 +199,9 @@
     "amountNative": -0.161847,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Aufwand Leistungsfussball Nachwuchs",
@@ -578,11 +569,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.161847,
    "cat": "depreciation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet): Abschreibungen de la AG = bienes de uso (baja de Sachanlagen); las amortizaciones de pases van en Transferaufwand",
    "destino": "expense",
    "amountNative": -0.161847
   },
@@ -693,10 +684,9 @@
   "label": "Noon buying rate de Nueva York (Reserva Federal, H.10) al 2007-12-31"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de ch 2007 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "ch-superleague",
+  "fuente": "roster cacheado de \"2007–08 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"Basel\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -735,14 +725,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de ch 2007 cacheada",
-   "estado": "pendiente"
+   "valor": "ch-superleague",
+   "fuente": "roster cacheado de \"2007–08 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"Basel\"",
+   "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 12,
   "lineasGasto": 9,
   "metaFilas": 3,

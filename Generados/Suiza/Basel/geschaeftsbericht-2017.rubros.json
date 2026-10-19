@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2017.pdf",
   "club": "basel-ch",
   "year": 2017,
-  "generatedAt": "2026-10-19T16:03:17.040Z",
+  "generatedAt": "2026-10-19T17:09:40.256Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         5.400149
       ],
-      "glosa": "Ingresos por competiciones UEFA"
+      "glosa": "Ingresos por partidos UEFA"
     },
     {
       "label": "Aus Cup-Spielen",
@@ -34,7 +34,7 @@
       "values": [
         1.252049
       ],
-      "glosa": "Ingresos por partidos de Copa"
+      "glosa": "Ingresos por partidos de copa"
     },
     {
       "label": "Aus übrigen Spielen",
@@ -54,7 +54,7 @@
       "values": [
         6.917238
       ],
-      "glosa": "Asientos VIP"
+      "glosa": "Asientos VIP y Business"
     },
     {
       "label": "Sponsoring, Werbung",
@@ -84,7 +84,7 @@
       "values": [
         2.905192
       ],
-      "glosa": "Ingresos por derechos de televisión"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Merchandising, Licensing",
@@ -104,7 +104,7 @@
       "values": [
         1.061868
       ],
-      "glosa": "Restauración y catering"
+      "glosa": "Catering y restauración"
     },
     {
       "label": "Events Non-Matchday",
@@ -114,7 +114,7 @@
       "values": [
         1.204802
       ],
-      "glosa": "Eventos en días sin partido"
+      "glosa": "Eventos fuera de días de partido"
     },
     {
       "label": "Verbandseinnahmen",
@@ -124,7 +124,7 @@
       "values": [
         32.087844
       ],
-      "glosa": "Ingresos de federaciones"
+      "glosa": "Ingresos federativos"
     },
     {
       "label": "Einnahmen Leistungsfussball Nachwuchs",
@@ -134,7 +134,7 @@
       "values": [
         0.638243
       ],
-      "glosa": "Ingresos del fútbol formativo de alto rendimiento"
+      "glosa": "Ingresos de fútbol formativo de alto rendimiento"
     },
     {
       "label": "Sonstiger Betriebsertrag",
@@ -154,7 +154,7 @@
       "values": [
         1.683916
       ],
-      "glosa": "Aprovisionamientos y coste de mercancías"
+      "glosa": "Aprovisionamientos y coste de mercaderías"
     },
     {
       "label": "Personalaufwand",
@@ -174,7 +174,7 @@
       "values": [
         14.428413
       ],
-      "glosa": "Gastos de organización de partidos como local"
+      "glosa": "Costes de organización de partidos en casa"
     },
     {
       "label": "Übriger Spielbetrieb",
@@ -184,7 +184,7 @@
       "values": [
         3.753467
       ],
-      "glosa": "Otros gastos de la operativa de partidos"
+      "glosa": "Otros gastos operativos de partidos"
     },
     {
       "label": "Transferaufwand",
@@ -214,7 +214,7 @@
       "values": [
         4.348045
       ],
-      "glosa": "Administración"
+      "glosa": "Gastos de administración"
     },
     {
       "label": "Aufwand Leistungsfussball Nachwuchs",
@@ -224,7 +224,7 @@
       "values": [
         1.04032
       ],
-      "glosa": "Gastos del fútbol formativo de alto rendimiento"
+      "glosa": "Gastos de fútbol formativo de alto rendimiento"
     },
     {
       "label": "Defizitgarantie FC Basel 1893",
@@ -244,7 +244,7 @@
       "values": [
         1.145097
       ],
-      "glosa": "Otros gastos"
+      "glosa": "Otros gastos de explotación"
     },
     {
       "label": "Abschreibungen auf Transferrechte",
@@ -260,9 +260,9 @@
       "label": "Sonderabschreibungen auf Ersatzbeschaffung",
       "lado": "expense",
       "page": 16,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        2.930888
+        -2.930888
       ],
       "glosa": "Amortizaciones extraordinarias por adquisiciones de reposición"
     },
@@ -274,17 +274,7 @@
       "values": [
         1.210997
       ],
-      "glosa": "Amortización del inmovilizado material"
-    },
-    {
-      "label": "Total Aufwand",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        88.740247
-      ],
-      "glosa": "Total de gastos"
+      "glosa": "Amortización de inmovilizado material"
     }
   ]
 }

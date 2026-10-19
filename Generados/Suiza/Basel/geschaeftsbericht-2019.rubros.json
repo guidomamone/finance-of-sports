@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2019.pdf",
   "club": "basel-ch",
   "year": 2019,
-  "generatedAt": "2026-10-19T16:03:17.240Z",
+  "generatedAt": "2026-10-19T17:09:40.367Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         9.710507
       ],
-      "glosa": "Ingresos por liga"
+      "glosa": "Ingresos por competiciones de liga"
     },
     {
       "label": "Aus UEFA-Spielen",
@@ -24,7 +24,7 @@
       "values": [
         2.327605
       ],
-      "glosa": "Ingresos por partidos UEFA"
+      "glosa": "Ingresos por competiciones UEFA"
     },
     {
       "label": "Aus Cup-Spielen",
@@ -34,7 +34,7 @@
       "values": [
         0.571887
       ],
-      "glosa": "Ingresos por partidos de Copa"
+      "glosa": "Ingresos por competiciones de Copa"
     },
     {
       "label": "Aus übrigen Spielen",
@@ -104,7 +104,7 @@
       "values": [
         0.803936
       ],
-      "glosa": "Catering"
+      "glosa": "Restauración y catering"
     },
     {
       "label": "Events Non-Matchday",
@@ -114,7 +114,7 @@
       "values": [
         1.225984
       ],
-      "glosa": "Eventos en días sin partido"
+      "glosa": "Eventos fuera de días de partido"
     },
     {
       "label": "Verbandseinnahmen",
@@ -134,7 +134,7 @@
       "values": [
         0.607346
       ],
-      "glosa": "Ingresos del fútbol formativo"
+      "glosa": "Ingresos por fútbol formativo"
     },
     {
       "label": "Sonstiger Betriebsertrag",
@@ -145,16 +145,6 @@
         1.271635
       ],
       "glosa": "Otros ingresos de explotación"
-    },
-    {
-      "label": "Defizitgarantie FC Basel Holding AG",
-      "lado": "revenue",
-      "page": 28,
-      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
-      "values": [
-        18.7
-      ],
-      "glosa": "Garantía de déficit FC Basel Holding AG"
     },
     {
       "label": "Warenaufwand",
@@ -194,7 +184,7 @@
       "values": [
         3.962991
       ],
-      "glosa": "Otros gastos de partidos y competiciones"
+      "glosa": "Otros gastos de partidos"
     },
     {
       "label": "Transferaufwand",
@@ -224,7 +214,7 @@
       "values": [
         4.79411
       ],
-      "glosa": "Gastos de administración"
+      "glosa": "Administración"
     },
     {
       "label": "Aufwand Leistungsfussball Nachwuchs",
@@ -234,7 +224,7 @@
       "values": [
         1.075908
       ],
-      "glosa": "Gastos del fútbol formativo"
+      "glosa": "Gastos de fútbol formativo"
     },
     {
       "label": "Defizitgarantie FC Basel 1893",
@@ -254,7 +244,7 @@
       "values": [
         0.98475
       ],
-      "glosa": "Otros gastos"
+      "glosa": "Otros gastos de explotación"
     },
     {
       "label": "Abschreibungen auf Transferrechte",
@@ -274,7 +264,7 @@
       "values": [
         1.312797
       ],
-      "glosa": "Amortizaciones extraordinarias por reposición"
+      "glosa": "Amortizaciones extraordinarias por adquisiciones de reposición"
     },
     {
       "label": "Abschreibungen auf Sachanlagen",

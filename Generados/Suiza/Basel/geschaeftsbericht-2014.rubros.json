@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2014.pdf",
   "club": "basel-ch",
   "year": 2014,
-  "generatedAt": "2026-10-19T16:03:16.810Z",
+  "generatedAt": "2026-10-19T17:09:40.147Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         12.505295
       ],
-      "glosa": "Ingresos por partidos de liga"
+      "glosa": "Ingresos por campeonato de liga"
     },
     {
       "label": "aus Champions-League / UEFA-Spielen",
@@ -24,7 +24,7 @@
       "values": [
         9.018121
       ],
-      "glosa": "Ingresos por Champions League / partidos UEFA"
+      "glosa": "Ingresos por Liga de Campeones / partidos UEFA"
     },
     {
       "label": "aus Cup-Spielen",
@@ -34,7 +34,7 @@
       "values": [
         1.197562
       ],
-      "glosa": "Ingresos por partidos de copa"
+      "glosa": "Ingresos por partidos de Copa"
     },
     {
       "label": "aus übrigen Spielen",
@@ -54,7 +54,7 @@
       "values": [
         6.546723
       ],
-      "glosa": "Asientos VIP / Hospitality"
+      "glosa": "Asientos VIP y palcos business"
     },
     {
       "label": "Sponsoring, Werbung",
@@ -104,7 +104,7 @@
       "values": [
         1.412664
       ],
-      "glosa": "Restauración y catering"
+      "glosa": "Catering y restauración"
     },
     {
       "label": "Events non-Matchday",
@@ -114,7 +114,7 @@
       "values": [
         0.33212
       ],
-      "glosa": "Eventos fuera de días de partido"
+      "glosa": "Eventos en días sin partido"
     },
     {
       "label": "Verbandseinnahmen",
@@ -134,7 +134,7 @@
       "values": [
         0.564644
       ],
-      "glosa": "Ingresos de fútbol base y cantera"
+      "glosa": "Ingresos del fútbol formativo de élite"
     },
     {
       "label": "Diverses",
@@ -145,16 +145,6 @@
         1.94508
       ],
       "glosa": "Ingresos diversos"
-    },
-    {
-      "label": "Total Ertrag",
-      "lado": "revenue",
-      "page": 25,
-      "section": "estado",
-      "values": [
-        105.25591
-      ],
-      "glosa": "Total de ingresos"
     },
     {
       "label": "Personalaufwand",
@@ -174,7 +164,7 @@
       "values": [
         15.001037
       ],
-      "glosa": "Gastos de organización de partidos en casa"
+      "glosa": "Gastos de organización de partidos como local"
     },
     {
       "label": "Übriger Spielbetrieb",
@@ -184,7 +174,7 @@
       "values": [
         3.737484
       ],
-      "glosa": "Otros gastos de competición"
+      "glosa": "Otros gastos de operaciones deportivas"
     },
     {
       "label": "Transferaufwand",
@@ -244,7 +234,7 @@
       "values": [
         0.852651
       ],
-      "glosa": "Gastos de fútbol base y cantera"
+      "glosa": "Gastos del fútbol formativo de élite"
     },
     {
       "label": "Übriger Aufwand",
@@ -254,7 +244,17 @@
       "values": [
         1.544969
       ],
-      "glosa": "Otros gastos"
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Ausserordentliche Aufwendungen",
+      "lado": "expense",
+      "page": 25,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        13.795285
+      ],
+      "glosa": "Gastos extraordinarios"
     }
   ]
 }

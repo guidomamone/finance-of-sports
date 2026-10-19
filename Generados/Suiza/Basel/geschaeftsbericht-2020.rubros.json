@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2020.pdf",
   "club": "basel-ch",
   "year": 2020,
-  "generatedAt": "2026-10-19T16:03:17.319Z",
+  "generatedAt": "2026-10-19T17:09:40.401Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         3.915196
       ],
-      "glosa": "Ingresos por liga"
+      "glosa": "Ingresos por partidos de liga"
     },
     {
       "label": "Aus UEFA-Spielen",
@@ -24,7 +24,7 @@
       "values": [
         0.078741
       ],
-      "glosa": "Ingresos por competiciones UEFA"
+      "glosa": "Ingresos por partidos de la UEFA"
     },
     {
       "label": "Aus Cup-Spielen",
@@ -50,17 +50,17 @@
       "label": "Business Seats",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         3.603079
       ],
-      "glosa": "Localidades VIP"
+      "glosa": "Asientos VIP y palcos"
     },
     {
       "label": "Sponsoring, Werbung",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         8.231108
       ],
@@ -70,7 +70,7 @@
       "label": "Transferertrag",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         36.407553
       ],
@@ -80,17 +80,17 @@
       "label": "TV-Entschädigungen",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         3.162994
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Ingresos por derechos de televisión"
     },
     {
       "label": "Merchandising, Licensing",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         1.337603
       ],
@@ -100,7 +100,7 @@
       "label": "Catering",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.17815
       ],
@@ -110,37 +110,37 @@
       "label": "Events Non-Matchday",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.863228
       ],
-      "glosa": "Eventos en días sin partido"
+      "glosa": "Eventos fuera de días de partido"
     },
     {
       "label": "Verbandseinnahmen",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         5.764791
       ],
-      "glosa": "Ingresos federativos"
+      "glosa": "Ingresos de federaciones"
     },
     {
       "label": "Einnahmen Leistungsfussball Nachwuchs",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.636432
       ],
-      "glosa": "Ingresos del fútbol formativo"
+      "glosa": "Ingresos por fútbol formativo"
     },
     {
       "label": "Sonstiger Betriebsertrag",
       "lado": "revenue",
       "page": 21,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         2.704649
       ],
@@ -150,7 +150,7 @@
       "label": "Warenaufwand",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.61586
       ],
@@ -160,7 +160,7 @@
       "label": "Personalaufwand",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         34.340215
       ],
@@ -170,27 +170,27 @@
       "label": "Organisationskosten Heimspiele",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         7.979033
       ],
-      "glosa": "Costes de organización de partidos en casa"
+      "glosa": "Gastos de organización de partidos en casa"
     },
     {
       "label": "Übriger Spielbetrieb",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         2.616236
       ],
-      "glosa": "Otros gastos operativos de partidos"
+      "glosa": "Otros gastos de partidos"
     },
     {
       "label": "Transferaufwand",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         6.853394
       ],
@@ -200,7 +200,7 @@
       "label": "Werbung",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         1.871344
       ],
@@ -210,27 +210,27 @@
       "label": "Administration",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         4.560205
       ],
-      "glosa": "Administración"
+      "glosa": "Gastos de administración"
     },
     {
       "label": "Aufwand Leistungsfussball Nachwuchs",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.774468
       ],
-      "glosa": "Gastos del fútbol formativo"
+      "glosa": "Gastos de fútbol formativo"
     },
     {
       "label": "Defizitgarantie FC Basel 1893",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.251928
       ],
@@ -240,17 +240,17 @@
       "label": "Übriger Aufwand",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.575264
       ],
-      "glosa": "Otros gastos"
+      "glosa": "Otros gastos de explotación"
     },
     {
       "label": "Abschreibungen auf Transferrechte",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.542964
       ],
@@ -260,17 +260,17 @@
       "label": "Sonderabschreibungen auf Ersatzbeschaffung",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         3.583721
       ],
-      "glosa": "Amortizaciones extraordinarias por reposición"
+      "glosa": "Amortizaciones extraordinarias por adquisiciones de sustitución"
     },
     {
       "label": "Abschreibungen auf Sachanlagen",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         1.115999
       ],
@@ -280,21 +280,11 @@
       "label": "Abschreibungen auf immaterielle Anlagen",
       "lado": "expense",
       "page": 22,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.047442
       ],
       "glosa": "Amortización del inmovilizado intangible"
-    },
-    {
-      "label": "Gewinnübertrag FC Basel Holding AG",
-      "lado": "expense",
-      "page": 22,
-      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 6)",
-      "values": [
-        0.8
-      ],
-      "glosa": "Transferencia de beneficios FC Basel Holding AG"
     }
   ]
 }

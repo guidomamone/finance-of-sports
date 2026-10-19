@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2010.pdf",
- "generado": "2026-10-19T16:47:28.861Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Abschreibungen\" -> depreciation 0.5"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2010: la pregunta ya está en la cola por geschaeftsbericht-2007.pdf (d4530a6) y vale para este año"
-  }
- ],
+ "generado": "2026-10-19T17:31:09.944Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-19: El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado))",
   "gestión: ningún presidente confirmado cubre 2010 (cierre 2010-12-31); pregunta en la cola (no frena)"
@@ -209,9 +200,9 @@
     "amountNative": -0.041699,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Aufwand Leistungsfussball Nachwuchs",
@@ -232,6 +223,16 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Verlustabdeckung FC Basel Holding AG",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": null,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl)"
    },
    {
     "rawLabel": "Defizitgarantie FC Basel 1893",
@@ -311,7 +312,7 @@
   }
  ],
  "seleccion": {
-  "filas": 25,
+  "filas": 26,
   "notasUsadas": [],
   "refM": null
  },
@@ -600,11 +601,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.041699,
    "cat": "depreciation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet): Abschreibungen de la AG = bienes de uso (baja de Sachanlagen); las amortizaciones de pases van en Transferaufwand",
    "destino": "expense",
    "amountNative": -0.041699
   },
@@ -659,6 +660,21 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
+  },
+  {
+   "label": "Verlustabdeckung FC Basel Holding AG",
+   "page": null,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (cobertura de pérdidas)",
+   "signoFijo": 0,
+   "cat": "exceptional_items",
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl)",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "destino": "expense",
+   "amountNative": 0
   },
   {
    "label": "Defizitgarantie FC Basel 1893",
@@ -731,10 +747,9 @@
   "label": "Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2010-12-30, 2010-12-31 no es día hábil)"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de ch 2010 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "ch-superleague",
+  "fuente": "roster cacheado de \"2010–11 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia única por palabras \"FC Basel\" = \"Basel\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -773,16 +788,16 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de ch 2010 cacheada",
-   "estado": "pendiente"
+   "valor": "ch-superleague",
+   "fuente": "roster cacheado de \"2010–11 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia única por palabras \"FC Basel\" = \"Basel\"",
+   "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 12,
-  "lineasGasto": 10,
+  "lineasGasto": 11,
   "metaFilas": 3,
   "excluidas": 0
  }

@@ -98,6 +98,55 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2021–22 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "Basel".
 ```
 
+## 2005
+
+### Ingresos
+
+```text
+2005: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Suiza/Basel/geschaeftsbericht-2005.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Suiza/Basel/geschaeftsbericht-2005.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | aus Meisterschaft | pág. 13, precedente |
+| 2 | aus Champions-League / UEFA-Cup | pág. 13, Claude 0.88 |
+| 3 | aus Cup-Spielen | pág. 13, precedente |
+| 4 | aus übrigen Spielen | pág. 13, precedente |
+| 5 | Business Seats | pág. 13, precedente |
+| 6 | Sponsoring, Werbung | pág. 13, precedente |
+| 7 | TV-Entschädigungen | pág. 13, precedente |
+| 8 | Leihertrag, Ausbildungsentschädigungen | pág. 13, precedente |
+| 9 | Mitglieder | pág. 13, Jev 1 |
+| 10 | Verbandseinnahmen | pág. 13, precedente |
+| 11 | Diverses | pág. 13, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Personalaufwand | pág. 14, precedente |
+| 2 | Organisationskosten Heimspiele | pág. 14, precedente |
+| 3 | Übriger Spielbetrieb | pág. 14, precedente |
+| 4 | Leihaufwand, Ausbildungsentschädigungen | pág. 14, precedente |
+| 5 | Werbung | pág. 14, precedente |
+| 6 | Administration | pág. 14, precedente |
+| 7 | Abschreibungen | pág. 14, precedente |
+| 8 | Übriger Aufwand | pág. 14, precedente |
+| 9 | Verlustabdeckung FC Basel Marketing AG | pág. ?, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2005–06 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "Basel".
+```
+
 ## Fuentes
 
 ### basel-ch-geschaeftsbericht-unternehmen-2021
@@ -106,4 +155,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-unternehmen-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### basel-ch-geschaeftsbericht-2005
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-2005.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
