@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.pdf",
  "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.md",
- "generado": "2026-10-19T15:34:58.738Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:03:17.768Z",
+ "estado": "ok",
  "clubId": "goaheadeagles-nl",
  "year": 2022,
  "escala": {
@@ -23,10 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "aa1c5c4",
-  "aa1c5c4"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -69,7 +66,10 @@
    "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
- "notas": [],
+ "notas": [
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en Go-Ahead-Eagles-Jaarverslag-2023-2024.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en Go-Ahead-Eagles-Jaarverslag-2023-2024.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,

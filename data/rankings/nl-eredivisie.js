@@ -79,6 +79,15 @@ window.RANKINGS["nl-eredivisie"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",10.799]] },
     ],
   },
+  2023: {
+    leagueSize: null,
+    wiki: {"t":"2022–23 Eredivisie","lang":"en","at":"2026-09-30","n":18},
+    clubs: [
+      { id:"goaheadeagles-nl", revenue:12.899, reportType:"official_balance_sheet",
+        sourceId:"goaheadeagles-nl-jaarverslag-2022-2023",
+        mix:[["Venta de Jugadores",-0.64],["Fútbol profesional (sin desglosar por la fuente)",13.54]] },
+    ],
+  },
   2019: {
     leagueSize: null,
     wiki: {"t":"2018–19 Eredivisie","lang":"en","at":"2026-10-19","n":18},

@@ -156,6 +156,45 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): nl-eredivisie, verificado contra roster cacheado de "2024–25 Eredivisie" (tools/club-league-reference/nl.json), coincidencia exacta "Go Ahead Eagles".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Netto-omzet | pág. 9, Jev 1 |
+| 2 | Resultaat vergoedingsommen | pág. 9, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Inkoopwaarde van de omzet | pág. 9, precedente |
+| 2 | Lonen en Salarissen | pág. 9, Jev 1 |
+| 3 | Sociale lasten | pág. 9, precedente |
+| 4 | Pensioenlasten | pág. 9, precedente |
+| 5 | Afschrijvingen op immateriële, materiële vaste activa | pág. 9, Jev 1 |
+| 6 | Overige bedrijfskosten | pág. 9, Claude 0.8 |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-18): perimetro = consolidado. perimetro-senales.mjs: el ejercicio 2023-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (consolidado); 4 documento(s) mirados
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): nl-eredivisie, verificado contra roster cacheado de "2022–23 Eredivisie" (tools/club-league-reference/nl.json), coincidencia exacta "Go Ahead Eagles".
+```
+
 ## Fuentes
 
 ### goaheadeagles-nl-wf-2024-2025-31bca08b
@@ -164,4 +203,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Go Ahead Eagles/wf-2024-2025-31bca08b.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### goaheadeagles-nl-jaarverslag-2022-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
