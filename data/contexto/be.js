@@ -31,14 +31,14 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Planet Group Arena","capacidad":20000,"sponsor":"Bâloise","marca":"Craft","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'liersesk-be': {
-    2025: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"},
+    2025: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'lokerentemse-be': {
-    2025: {"estadio":"Daknamstadion","capacidad":12136,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"},
+    2025: {"estadio":"Daknamstadion","capacidad":12136,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'lommelsk-be': {
-    2018: {"estadio":"Soevereinstadion","fuente":"https://en.wikipedia.org/wiki/Lommel_S.K."},
-    2025: {"estadio":"Soevereinstadion","capacidad":8000,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"},
+    2018: {"estadio":"Soevereinstadion","fuente":"https://en.wikipedia.org/wiki/Lommel_S.K.","fuenteManual":"https://en.wikipedia.org/wiki/Lommel_S.K.","manual":["estadio"]},
+    2025: {"estadio":"Soevereinstadion","capacidad":8000,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'mechelen-be': {
     2025: {"estadio":"AFAS-stadion Achter de Kazerne","capacidad":16700,"sponsor":"Telenet","marca":"Erreà","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
@@ -47,14 +47,14 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Den Dreef","capacidad":10000,"sponsor":"Star Casino","marca":"Stanno","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'patroeisden-be': {
-    2025: {"estadio":"Gemeentelijk Sportparkstadion","capacidad":5500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"},
+    2025: {"estadio":"Gemeentelijk Sportparkstadion","capacidad":5500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'raallalouviere-be': {
-    2025: {"estadio":"Stade du Tivoli","capacidad":12500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"},
+    2025: {"estadio":"Stade du Tivoli","capacidad":12500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'rwdm-be': {
-    2020: {"estadio":"Edmond Machtens","fuente":"https://bx1.be/communes/molenbeek-saint-jean/rwdm-molenbeek-signe-convention-doccupation-stade-machtens/"},
-    2025: {"estadio":"Edmond Machtens","capacidad":12266,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"},
+    2020: {"estadio":"Edmond Machtens","fuente":"https://bx1.be/communes/molenbeek-saint-jean/rwdm-molenbeek-signe-convention-doccupation-stade-machtens/","fuenteManual":"https://bx1.be/communes/molenbeek-saint-jean/rwdm-molenbeek-signe-convention-doccupation-stade-machtens/","manual":["estadio"]},
+    2025: {"estadio":"Edmond Machtens","capacidad":12266,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'sinttruiden-be': {
     2025: {"estadio":"Stayen","capacidad":14600,"sponsor":"DMM.com","marca":"Olympic Sportswear","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},

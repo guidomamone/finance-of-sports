@@ -552,10 +552,12 @@ async function main() {
     if (m) {
       if (!m.fuente) { console.error(`contexto-manual.json: ${e.id} ${e.y} sin "fuente": no se usa`); }
       // la fuente de Wikipedia queda en `fuente` (vale para los campos que no vinieron a mano); lo manual va en `fuenteManual` con la
-      // lista de campos que puso (`manual`). Sin página de Wikipedia, la manual es la única fuente.
+      // lista de campos que puso (`manual`). Sin página de Wikipedia, la manual es la única fuente. Un campo con fuente propia (`fuentes`:
+      // { campo: url }, cuando el estadio y el sponsor salen de páginas distintas) la lleva en `fuentesManual`.
       else {
-        const { fuente: fm, ...campos } = m;
-        d = d?.fuente ? { ...d, ...campos, fuenteManual: fm, manual: Object.keys(campos) } : { ...(d || {}), ...campos, fuente: fm };
+        const { fuente: fm, fuentes, ...campos } = m;
+        const extra = { fuenteManual: fm, manual: Object.keys(campos), ...(fuentes ? { fuentesManual: fuentes } : {}) };
+        d = d?.fuente ? { ...d, ...campos, ...extra } : { ...(d || {}), ...campos, fuente: fm, ...extra };
       }
     }
     const tiene = (k) => d && d[k] != null && d[k] !== '';

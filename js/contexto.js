@@ -2,7 +2,7 @@
 // ESTADIO Y CAMISETA (tarjeta #finContexto de Finanzas). Estadio, capacidad, sponsor de camiseta y marca técnica de cada ejercicio
 // elegido, una columna por ejercicio, y la fuente de cada uno. Lee data/contexto/<país>.js (se carga al elegir un club; formato:
 // cabecera de tools/estadio-sponsor.mjs). Un campo que no se sabe es "—". La fuente de un campo cargado a mano (listado en `manual`)
-// es `fuenteManual`; la de uno que salió de la Wikipedia del país (en `local`), `fuenteLocal`; la de uno que salió de la página del club
+// es `fuenteManual` (o la suya en `fuentesManual`, si la trae); la de uno que salió de la Wikipedia del país (en `local`), `fuenteLocal`; la de uno que salió de la página del club
 // (`club`: { campo: url }), esa url; la de los demás, `fuente`. Sin ningún dato del club, la tarjeta y su link del índice se esconden.
 // ============================================================================
 const FIN_CONTEXTO = (function(){
@@ -26,7 +26,8 @@ const FIN_CONTEXTO = (function(){
   const etiqueta = (clubId, y) => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2);
   // La fuente de un campo: la carga a mano si está en `manual`, la Wikipedia del país si está en `local`, la página del club si está en
   // `club`, y si no, la de la temporada.
-  const fuenteDe = (d, campo) => (d.manual || []).includes(campo) && d.fuenteManual ? d.fuenteManual
+  const fuenteDe = (d, campo) => (d.fuentesManual || {})[campo] ? d.fuentesManual[campo]
+    : (d.manual || []).includes(campo) && d.fuenteManual ? d.fuenteManual
     : (d.local || []).includes(campo) && d.fuenteLocal ? d.fuenteLocal : (d.club && d.club[campo]) || d.fuente;
   // El nombre del sponsor o la marca lleva a su página (js/sponsor.js). Cuál es se resuelve al tocarlo, con data/sponsors.js, que es
   // grande y no se baja para dibujar esta tarjeta. Un campo con varios ("A, B" o "A / B") da un link por nombre.
