@@ -103,3 +103,18 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - **Qué queda (para TODO):** la 282 g, hecha.
 
 ## Después del merge de la 282 g (2026-10-18)
+
+### 298 e: el control "sin tablas" (ok de Guido 2026-10-18: "ok. ok. mistral")
+
+- **Qué cambió (para CHANGELOG):** `tools/pipeline.mjs` (`sinPasarPorElLote`): una transcripción vieja sin tablas se marca `sin-tablas` si
+  nunca pasó por verificar (sin `.verificacion.json`), no si le falta la marca de Jev de la preparación vieja (casi todos la tienen: el
+  control marcaba 0). Medido con copia de los registros: `pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --ejecutar` marca 238
+  (gratis); el ensayo siguiente da 238 documentos, 8.334 páginas, ~US$ 7,26. Lista nueva `Admin/lotes/sin-tablas-298e.txt`. Auditoría
+  P0 0 / P1 0. Commit 562c5eb6e5 (y el de la lista).
+- **Decisiones de Guido:** se rehacen también los 43 belgas que ya se leen por los códigos NBB (para las notas); los 100 de la lista de
+  los 319 de la 292 van por Mistral, no con subagentes.
+- **Qué queda (para TODO):** correr los dos comandos de abajo en la carpeta principal después del merge (el segundo es pago, lo corre
+  Guido). Después, esos documentos entran a los lotes de carga de cada país como cualquier otro.
+- **Comandos (carpeta principal, después del merge):**
+  1. `node tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --ejecutar` (gratis: solo marca `sin-tablas`).
+  2. `caffeinate -i node tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --max-paginas 0 --limit 0 --ejecutar` (~US$ 7,26).
