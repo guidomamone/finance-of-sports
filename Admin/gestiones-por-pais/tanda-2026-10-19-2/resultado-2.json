@@ -1,0 +1,41 @@
+{
+  "criterioPais": {
+    "BR": "Cruzeiro es una SAF: se carga el dueño-controlador persona con nombre (Ronaldo Nazário, luego Pedro Lourenço de Oliveira), no el Diretor Presidente ejecutivo que firma los balances (Pedro Junio de Oliveira)."
+  },
+  "clubes": {
+    "cruzeiro": {
+      "gestiones": [
+        {
+          "nombre": "Ronaldo Nazário",
+          "corto": "Ronaldo",
+          "cargo": "Presidente",
+          "desde": "2022-01-01",
+          "hasta": "2024-04-29",
+          "fuente": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-mineiro/cruzeiro/pedro-lourenco-oficializa-compra-do-cruzeiro-saf-junto-a-ronaldo-veja-detalhes/",
+          "confirmada": true
+        },
+        {
+          "nombre": "Pedro Lourenço de Oliveira",
+          "corto": "Lourenço",
+          "cargo": "Presidente",
+          "desde": "2024-04-29",
+          "hasta": null,
+          "fuente": "https://www.otempo.com.br/sports/cruzeiro/2024/6/12/venda-da-saf-do-cruzeiro-de-ronaldo-para-pedro-lourenco-e-aprova",
+          "confirmada": false
+        }
+      ],
+      "notas": {
+        "Ronaldo Nazário": "Ya cargado (no se vuelve a cargar). Controlador del 90 % de la SAF vía Tara Sports; Itatiaia (29-04-2024) dice que la gestionaba desde enero de 2022 (fuente da solo mes/año: día 01). Hasta 2024-04-29 = firma de la venta, no cierre.",
+        "Pedro Lourenço de Oliveira": "Compró el 90 % vía BPW Sports (adquirió el 100 % de Tara Sports Brasil). Fechas que dan las fuentes web: 29-04-2024 = firma/anuncio, con el acuerdo 'sujeto a condiciones precedentes' (CADE y concordancia de la Associação) y el CEO Gabriel Lima y Ronaldo (en el conselho) continuando (O Tempo, 29-04-2024, https://www.otempo.com.br/sports/cruzeiro/agora-e-oficial-pedro-lourenco-e-o-novo-socio-majoritario-da-saf-do-cruzeiro-1.3499965: 'Agora é oficial' se refiere a la firma, no al cierre); 12-06-2024 = el CADE aprobó la venta, pero la misma nota dice que 'ainda falta a aprovação da associação' y que la compra no estaba totalmente concluida, aunque Lourenço 'assumiu o total controle do futebol' de hecho. Ninguna fuente web encontrada (Itatiaia, CNN Brasil, ESPN, O Tempo, Terra, Wikipedia, O Tempo 17-03-2025 que solo habla de 'troca de donos oficializada em 29 de abril') da la fecha de cierre efectivo ni de la concordancia de la Associação. Por eso confirmada:false; desde 2024-04-29 es la fecha de hecho (alternativa conservadora 2024-06-12). Corroboración en los documentos del club: figura primero en el Conselho de Administração en Clubes/Brasil/Cruzeiro/informativo-financeiro-2024.md:2310 y informativo-financeiro-2025.md:2535, junto con Ronaldo (2024.md:2312; 2025.md:2537). Ambos balances los firma Pedro Junio de Oliveira como Diretor Presidente (2024.md:2297-2300, firma digital 22-04-2025; 2025.md:2525-2528, firma digital 24-04-2026), no el dueño. Sin cambios de dueño ni de controlador encontrados entre 2024 y hoy: fuentes recientes (2025) lo siguen llamando sócio majoritário."
+      },
+      "cubre": {},
+      "dudas": [
+        "Cierres 2024-12-31 y 2025-12-31 SIN gestión confirmada: ambos caen en la gestión de Pedro Lourenço, pero ninguna fuente web dice cuándo se cerró efectivamente la compra (cumplimiento de CADE, aprobado 12-06-2024 según O Tempo, y concordancia de la Cruzeiro Associação, sin fecha publicada). Cualquier fecha plausible de cierre (29-04 a un posterior a 12-06-2024) deja ambos cierres en Lourenço, pero no se puede confirmar con una fuente que diga las fechas. Pregunta para el club: ¿en qué fecha se cerró formalmente la venta de la SAF a BPW Sports?",
+        "Los balances 2024 y 2025 los firma Pedro Junio de Oliveira como Diretor Presidente (informativo-financeiro-2024.md:2300; informativo-financeiro-2025.md:2528), no el dueño; se mantiene la regla de SAF (dueño con nombre). Si Guido prefiere al ejecutivo, faltan las fechas de Pedro Junio.",
+        "Ronaldo siguió en el Conselho de Administração tras vender (2024.md:2312; 2025.md:2537); no se carga como gestión.",
+        "El balance 2023 se aprobó el 15-05-2024, después de la firma de la venta; no afecta a los cierres de este lote.",
+        "Una nota de noataque.com.br de 26-09-2026 ('Dono do Cruzeiro, Pedrinho obtém autorização para negócio bilionário') indica que Pedrinho sigue siendo dueño en esa fecha, pero el sitio devolvió 403 y no se pudo leer."
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "criterioPais": { "BR": "Se cargó a Wesley Couto, presidente (Diretor Presidente en el balance) y fundador del club: Amazonas FC es una asociación/club con presidente nombrado, y es quien firma el balance; no hay un dueño persona distinto." },
+  "clubes": {
+    "amazonas-br": {
+      "gestiones": [
+        { "nombre": "Francisco Wesley Couto dos Santos", "corto": "Couto", "cargo": "Presidente", "desde": "2019-05-23", "hasta": null,
+          "fuente": "https://en.wikipedia.org/wiki/Amazonas_Futebol_Clube", "confirmada": false }
+      ],
+      "notas": {
+        "Francisco Wesley Couto dos Santos": "Firma el Balanço de 31/12/2024 como Diretor Presidente (Clubes/Brasil/Amazonas/balanco-patrimonial-2024.md:60-62, firma digital del 2025-08-04). Wikipedia dice que la fundación (2019-05-23) fue liderada por él y que es el presidente actual, pero NO da fecha de asunción: 2019-05-23 es la fecha de fundación del club, no una asunción confirmada, por eso confirmada:false. Sigue en el cargo al aprobarse el balance (agosto 2025), sin cambio de gestión entre el cierre y la firma."
+      },
+      "cubre": {},
+      "dudas": [
+        "Ninguna fuente web consultada (Wikipedia en/pt, Diário do Pará, prensa) da la fecha de asunción de Wesley Couto como presidente ni afirma que lo sea desde la fundación (2019-05-23); solo dicen que es el presidente actual y que lideró la fundación. La gestión queda confirmada:false y el cierre 2024-12-31 sin cubrir. Es seguro que presidía el club al cierre 2024 (firma el balance como Diretor Presidente y la prensa lo nombra presidente en 2024, incidente con un jugador del Paysandu), pero falta una fuente con las fechas. Candidato a consulta al club o a su estatuto/ata de eleição.",
+        "En 2025 el club vendió 45% de la SAF a inversores norteamericanos con gestión administrativa a cargo de ellos desde septiembre 2025: puede haber cambio de cargo posterior al cierre; no relevante para 2024-12-31 pero conviene verificar si Couto sigue (hasta:null no confirmado)."
+      ]
+    }
+  }
+}
