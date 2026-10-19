@@ -290,7 +290,7 @@ const clubs = {
   'stgallen-ch': { id:'stgallen-ch', name:'FC St.Gallen AG', displayName:'St. Gallen', country:'CH', reportingCurrency:'CHF', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#009A3A' },
   'fredrikstad-no': { id:'fredrikstad-no', name:'Fredrikstad Fotballklubb', displayName:'Fredrikstad', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#DA2128' },
   'almerecity-nl': { id:'almerecity-nl', name:'Almere City FC B.V.', displayName:'Almere City', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FF0000' },
-  'excelsior-nl': { id:'excelsior-nl', name:'Stichting Betaald Voetbal Excelsior', displayName:'Excelsior', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'excelsior-nl': { id:'excelsior-nl', name:'Stichting Betaald Voetbal Excelsior', displayName:'Excelsior', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#E30613' },
   'fortunasittard-nl': { id:'fortunasittard-nl', name:'Fortuna Sittard B.V.', displayName:'Fortuna Sittard', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFEA3A' },
   'heraclesalmelo-nl': { id:'heraclesalmelo-nl', name:'Stichting Heracles Almelo', displayName:'Heracles Almelo', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
   'nacbreda-nl': { id:'nacbreda-nl', name:'NAC Breda B.V.', displayName:'NAC Breda', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFFF00' },
