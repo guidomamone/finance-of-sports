@@ -327,8 +327,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // ningún importe distinto de cero (o no existe) en las filas extraídas. Casos: Kifisia 2022 (09/08/2021 – 30/06/2022, sin columna) y Volos
     // 2019 (24/07/2018 – 30/06/2019, plantilla griega con la columna 2017-2018 toda en 0,00) se cargan; Atalanta 2022 (semestral, 147 importes
     // del año anterior) sigue parcial. Se carga con una publicNote en la fuente.
+    // (to-do 298 z, decisión de Guido 2026-10-19: "cargarlo como el año del cierre, con su nota") también MÁS de 12 meses: el primer ejercicio
+    // de una sociedad constituida antes de la temporada (Anderlecht 2011, 24-02-2010 a 30-06-2011, 16 meses; RAAL La Louvière 2018, 14;
+    // Sint-Truiden 2013, 15; Zulte Waregem 2012, 17). Misma compuerta: sin importes del año anterior. Los importes van tal cual (sin
+    // prorratear: el fútbol arranca con la temporada; Anderlecht 2011 vendió 39,1 M y 2012, de 12 meses, 67,9 M).
     let primero = null;
-    if (per.tipo !== 'anual' && per.meses && per.meses < 12 && e.md) {
+    if (per.tipo !== 'anual' && per.meses && per.meses !== 12 && e.md) {
       const fp = resolve(ROOT, derivado(e.md, '.filas.json', { crear: false }));
       const fs = existsSync(fp) ? (JSON.parse(readFileSync(fp, 'utf8')).filas || []) : [];
       if (fs.length && fs.every((x) => x.anterior == null || String(x.anterior).trim() === '' || parseNumber(x.anterior) === 0)) primero = { meses: per.meses, inicio: per.inicio || null, cierre: per.cierre || null };

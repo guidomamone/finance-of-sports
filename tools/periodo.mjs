@@ -217,10 +217,18 @@ export function periodoDe(mdText, nombreArchivo = '') {
     const dia = (f) => Date.UTC(f.a, f.m - 1, f.d) / 864e5;
     const FRASES = [/boekjaar dat de periode dekt van/, /exercice couvrant la periode du/];
     const cands = []; let ini = null; let fin = null;
-    for (const p of pags) for (const raw of p.body.split('\n')) {
-      const tx = raw.replace(/\|/g, ' ').replace(/[*_]/g, ' ').replace(/\s+/g, ' ').trim(); const t = norm(tx);
+    const limpio = (raw) => raw.replace(/\|/g, ' ').replace(/[*_]/g, ' ').replace(/\s+/g, ' ').trim();
+    for (const p of pags) { const lineas = p.body.split('\n'); lineas.forEach((raw, i) => {
+      let tx = limpio(raw); const t = norm(tx);
       const k = FRASES.map((re) => t.search(re)).find((x) => x >= 0);
-      if (k !== undefined) { const fs = fechasDe(tx).filter((f) => f.i >= k); if (fs.length >= 2) cands.push({ a: fs[0], b: fs[1], pagina: p.n, texto: tx }); }
+      if (k === undefined) return;
+      // (to-do 298 z) la frase sola en su línea y las fechas en las siguientes ("…la période du" / "12-05-2017" / "au" / "30-06-2018", RAAL La
+      // Louvière 2018, Sint-Truiden 2013, Zulte Waregem 2012): se siguen leyendo hasta 8 líneas más mientras falten las dos fechas
+      for (let j = i + 1; j <= i + 8 && j < lineas.length && fechasDe(tx).filter((f) => f.i >= k).length < 2; j++) tx = `${tx} ${limpio(lineas[j])}`.trim();
+      const fs = fechasDe(tx).filter((f) => f.i >= k); if (fs.length >= 2) cands.push({ a: fs[0], b: fs[1], pagina: p.n, texto: tx });
+    }); }
+    for (const p of pags) for (const raw of p.body.split('\n')) {
+      const tx = limpio(raw); const t = norm(tx);
       if (/aruandeaasta algus/.test(t) && fechasDe(tx).length === 1) ini = { f: fechasDe(tx)[0], pagina: p.n, texto: tx };
       if (/aruandeaasta lopp/.test(t) && fechasDe(tx).length === 1) fin = { f: fechasDe(tx)[0], pagina: p.n, texto: tx };
     }

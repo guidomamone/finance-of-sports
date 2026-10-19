@@ -362,3 +362,12 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   corrida de `lote.mjs --cargar` (corre listas-lote --lote antes). Quedan z (decisión de pantalla de Guido) y g2 (condicional).
 
 ## Después del merge de la u2 (2026-10-19)
+
+- **298 z hecha** (f2902b838c y 8baa47c274, decisión de Guido 2026-10-19: "cargarlo como el año del cierre, con su nota"). Los cuatro son el
+  primer ejercicio de una sociedad nueva de más de 12 meses (Anderlecht 2011: 16; RAAL La Louvière 2018: 14; Sint-Truiden 2013: 15; Zulte
+  Waregem 2012: 17) y ninguno tiene los ingresos inflados contra el año siguiente. (1) periodo.mjs lee el período del formulario NBB con las
+  fechas en las líneas de abajo: además, 31 belgas dejan de tomar la fecha de la asamblea como cierre ("nombre no coincide" 155 -> 124).
+  (2) cargar.mjs aplica la regla del primer ejercicio también a más de 12 meses (importes tal cual, nota pública con fechas y meses);
+  CONVENCIONES-DATOS al día. medir-cargar sobre la completa: 0 diferencias, contra-sitio igual. Los 4 años se cargan cuando pasen por el
+  lote (todavía no están extraídos). Caso nuevo, sin regla: Westerlo 2015, 18 meses por cambio de cierre (01/01/2014 – 30/06/2015), sigue
+  frenado; a decidir si aparece en un lote. Sin respuesta de Guido sobre la marca "N meses" en pantalla: no se pidió.
