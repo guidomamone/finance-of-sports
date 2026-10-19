@@ -33,6 +33,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'stgallen-ch': {
     2019: {"estadio":"kybunpark","capacidad":19456,"sponsor":"St.Galler Kantonalbank","marca":"Jako","temporada":"2018–19 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374571783"},
+    2022: {"estadio":"Kybunpark","capacidad":19456,"sponsor":"St.Galler Kantonalbank","marca":"Jako","temporada":"2021–22 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376314426"},
     2025: {"estadio":"Kybunpark","capacidad":20660,"sponsor":"St.Galler Kantonalbank","marca":"Puma","temporada":"2024–25 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378157233","fuenteManual":"https://en.wikipedia.org/wiki/Kybunpark ; https://www.footballkitarchive.com/fc-st-gallen-2024-25-special-kit-371785/","manual":["estadio","capacidad","sponsor","marca"]},
   },
 });
