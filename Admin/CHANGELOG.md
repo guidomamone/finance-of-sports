@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 787 — 298 v medida: sin daño hoy (2026-10-19)
+
+* Los originales con -correction del lote 92 ya están descartados y no aparecen como frenados; el caso queda en HALLAZGOS.
+
 ## Versión 786 — 298 s medida: sin daño hoy (2026-10-19)
 
 * El cierre de Beerschot 2019 -correction sale bien sin ajuste desde la 298 f; el aviso de "0 filas extraídas" queda en HALLAZGOS.

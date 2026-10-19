@@ -36,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 232: mejoras de script que dejó Grecia --> Pipeline 3
 * 279: la tool que duplicaba claves en club-leagues/ru.js --> Pipeline 3
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 3
-* 298: mejoras de script de Estonia y Bélgica (sigue la v; después u2, z, g2) --> Pipeline 3
+* 298: mejoras de script de Estonia y Bélgica (sigue la u2; después z, g2) --> Pipeline 3
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 3 (306, 307)
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 3
 * 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 3
@@ -276,9 +276,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
    con ajustes si el resultado sigue exacto). PRIMERO: u2) lo que la u no decide: listas de un solo grupo (Third Division antes de 2016, Second
    Amateur Division: Lokeren-Temse 2021-2022, Patro Eisden 2013-2014 y 2019) y la First Division B 2017-18 y 2018-19, que baja con 7 de 8
-   (la tool pierde a Beerschot Wilrijk; OH Leuven 2017-2019, Beerschot 2019).  v) el final
-   de lote.mjs lista como frenados los originales que salteó por su -correction. El detalle de s a v, con líneas y montos, en
-   `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
+   (la tool pierde a Beerschot Wilrijk; OH Leuven 2017-2019, Beerschot 2019). El detalle,
+   con líneas y montos, en `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
 301. gasto.mjs --json SE CORTA EN UN PIPE (visto armando el tablero, 2026-10-18). `node tools/gasto.mjs --json | …` corta la salida a los
    64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.

@@ -350,3 +350,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
 - **298 v medida: sin daño hoy, a HALLAZGOS** (no se codea). La lista de frenados la escribe cargar-lote.mjs, que no aplica la regla de la
   298 o; pero los 5 originales con corrección del lote 92 ya están descartados y el ensayo de cargar-lote no los lista. Solo se vería en la
   primera corrida de un par nuevo. Condición para retomar, en HALLAZGOS. Siguen u2, z (decisión de pantalla de Guido) y g2 (condicional).
+
+## Después del merge de la v (2026-10-19)
