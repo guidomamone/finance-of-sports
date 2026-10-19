@@ -29,3 +29,12 @@
 - Nada nuevo.
 
 ## Después del merge de la validación de los 12 (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+- To-do 295 (c), segundas divisiones restantes, solo notas de sourcing: `Admin/sourcing/Ligas/lega-pro-serie-c.md` (Lega Serie C: `legaseriec.it` no responde desde acá y las búsquedas no traen su bilancio; candidato a mail, sin armar; la Serie D es de la LND y no se buscó) y `fpf-liga-3-portugal.md` (la FPF publica sus contas consolidadas con Certificação Legal: 2023/24 en `fpf.pt/DownloadDocument.ashx?id=29317`; `fpf.pt` da 403 a `curl`, así que el PDF lo baja Guido y entra con `alcance: federacion`).
+
+### Qué queda (para TODO)
+- 295: la FPF (Liga 3): Guido baja el PDF 2024/25 (o el 2023/24 del link) desde su navegador; después transcribir y cargar la línea. Lega Serie C: candidato a mail. Federaciones paulistas (A1-A3) sin buscar.
+
+### Qué deja de ser cierto en ESTADO
+- Nada nuevo.
