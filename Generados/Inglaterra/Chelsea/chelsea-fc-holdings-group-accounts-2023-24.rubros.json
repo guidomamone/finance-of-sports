@@ -1,0 +1,120 @@
+{
+  "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.md",
+  "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.pdf",
+  "club": "chelsea-gb",
+  "year": 2024,
+  "generatedAt": "2026-10-19T15:37:03.466Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        163.101
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        225.265
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        80.12
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.715
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Profit on disposal of player registrations",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        152.463
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Proceeds on sale of investment",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Profit on disposal of fixed assets investments\"",
+      "values": [
+        200
+      ],
+      "glosa": "Ingresos por enajenación de inversiones"
+    },
+    {
+      "label": "Less: net assets of subsidiary on disposal",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Profit on disposal of fixed assets investments\"",
+      "values": [
+        1.251
+      ],
+      "glosa": "Menos: activos netos de la filial enajenada"
+    },
+    {
+      "label": "Profit on disposal of fixed assets",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.054
+      ],
+      "glosa": "Beneficio por enajenación de inmovilizado"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        400.808
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        281.352
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Fair value loss on investment properties",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.384
+      ],
+      "glosa": "Pérdida por valor razonable en inversiones inmobiliarias"
+    }
+  ]
+}

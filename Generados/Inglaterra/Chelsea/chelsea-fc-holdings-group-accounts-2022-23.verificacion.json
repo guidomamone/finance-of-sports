@@ -1,0 +1,172 @@
+{
+ "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.md",
+ "generado": "2026-10-19T17:24:31.744Z",
+ "estado": "ok",
+ "clubId": "chelsea-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.526512829121202e-14
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 682.458 en este documento y 682.458 en chelsea-fc-holdings-group-accounts-2023-24.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 604.491 en chelsea-fc-holdings-group-accounts-2021-22.pdf y 604.491 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se carga solo la columna 'Total 30 June 2023 £000' del estado b6 e ignoran las columnas 'Operations excluding player amortisation and trading' y 'Player amortisation, impairment and trading'?",
+  "duda de extraer que no afecta la carga: La nota de cargos/créditos (L1539) no desglosa un único renglón del estado y repite partidas ya presentes en él (L1544-L1545).",
+  "duda de extraer que no afecta la carga: La remuneración total (L1593) no coincide con ningún renglón del estado y se reparte entre costos de ventas y gastos de administración."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 682.458,
+  "gastos": 761.055,
+  "financiero": -11.503,
+  "impuesto": 0.331,
+  "resultadoImpreso": -89.769,
+  "resultadoParaCargar": -89.769,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 225.902,
+   "pagina": 36,
+   "linea": 1499,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 210.084,
+   "pagina": 36,
+   "linea": 1500,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 76.481,
+   "pagina": 36,
+   "linea": 1501,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Research and development tax credit",
+   "lado": "ingreso",
+   "M": 1.048,
+   "pagina": 36,
+   "linea": 1514,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Recharged costs (see Note 2)",
+   "lado": "ingreso",
+   "M": 17.058,
+   "pagina": 36,
+   "linea": 1515,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Settlement fee",
+   "lado": "ingreso",
+   "M": 12.5,
+   "pagina": 36,
+   "linea": 1516,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Profit on disposal of player registrations",
+   "lado": "ingreso",
+   "M": 62.861,
+   "pagina": 21,
+   "linea": 841,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of fixed assets",
+   "lado": "ingreso",
+   "M": 76.524,
+   "pagina": 21,
+   "linea": 842,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 467.205,
+   "pagina": 21,
+   "linea": 834,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 293.85,
+   "pagina": 21,
+   "linea": 836,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 4.889,
+   "linea": 839
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -16.392,
+   "linea": 840
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation",
+   "M": 0.331,
+   "linea": 845
+  }
+ ]
+}

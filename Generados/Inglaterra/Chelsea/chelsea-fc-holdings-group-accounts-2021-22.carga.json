@@ -1,22 +1,136 @@
 {
  "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.pdf",
- "generado": "2026-10-19T15:39:58.175Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
-  }
- ],
+ "generado": "2026-10-19T17:24:35.455Z",
+ "frena": [],
  "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "chelsea-gb",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Broadcasting",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 235.016,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 177.099,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Matchday",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 69.163,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of player registrations",
+    "normalizedCategory": "player_sales",
+    "amountNative": 123.213,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Fair value gain/(loss) on investment properties",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.045,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -386.794,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -336.913,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2022-06-30",
+   "sourceId": "chelsea-gb-fc-holdings-group-accounts-2021-22",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -2.184,
+   "tax": 0.073,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 4.879
+    },
+    {
+     "label": "Interest payable and similar charges",
+     "value": -7.063
+    },
+    {
+     "label": "Taxation",
+     "value": 0.073
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 604.536,
+   "officialTotalExpenses": 723.707,
+   "officialPAT": -121.282
+  },
+  "source": {
+   "id": "chelsea-gb-fc-holdings-group-accounts-2021-22",
+   "clubId": "chelsea-gb",
+   "title": "Chelsea FC Holdings Limited — chelsea-fc-holdings-group-accounts-2021-22 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.md",
  "reemplaza": false,
  "periodo": {
@@ -29,5 +143,271 @@
  },
  "clubId": "chelsea-gb",
  "year": 2022,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "45",
+   "linea": 722,
+   "etiqueta": "Fair value gain/(loss) on investment properties",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "La extracción omitió esta fila del estado de resultados (L722, 45 en £000): sin ella el resultado da -121.327 y el impreso es -121.282",
+   "evidencia": "pág. 18 del visor, .md L722",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 11,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Broadcasting",
+   "page": 32,
+   "native": 235.016,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 235.016,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 235.016
+  },
+  {
+   "label": "Commercial",
+   "page": 32,
+   "native": 177.099,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 177.099,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 177.099
+  },
+  {
+   "label": "Matchday",
+   "page": 32,
+   "native": 69.163,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 69.163,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 69.163
+  },
+  {
+   "label": "Other operating income",
+   "page": 18,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "page": 18,
+   "native": 123.213,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 123.213,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 123.213
+  },
+  {
+   "label": "Fair value gain/(loss) on investment properties",
+   "page": 18,
+   "native": 0.045,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.045,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.045
+  },
+  {
+   "label": "Cost of sales",
+   "page": 18,
+   "native": 386.794,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 386.794,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -386.794
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 18,
+   "native": 336.913,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 336.913,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -336.913
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 4.879,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar charges",
+   "page": null,
+   "native": -7.063,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Taxation",
+   "page": null,
+   "native": 0.073,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 604.536,
+  "expSum": -723.707,
+  "officialTotalRevenue": 604.536,
+  "officialTotalExpenses": 723.707,
+  "officialPAT": -121.282,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -121.282,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 604.536
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 723.707
+  }
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Chelsea\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (99 de 102 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (2 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2022-06-30 = 0.82352 (Tipo spot del Bank of England al 2022-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "chelsea-gb-fc-holdings-group-accounts-2021-22",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Chelsea\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 6,
+  "lineasGasto": 2,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

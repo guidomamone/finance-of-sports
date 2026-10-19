@@ -135,6 +135,47 @@ _antes de Nassef Sawiris (data/gestiones/gb.js):_
 NSWE compró el control el 20-21/7/2018 (fecha aproximada: anuncio del club). Xia siguió de co-chairman hasta agosto de 2019; Sawiris quedó como chairman.
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate receipts | pág. 23, precedente |
+| 2 | Broadcasting | pág. 23, precedente |
+| 3 | Sponsorship | pág. 23, precedente |
+| 4 | Commercial | pág. 23, precedente |
+| 5 | UEFA | pág. 23, precedente |
+| 6 | Insurance claims receivable | pág. 23, Jev 1 |
+| 7 | V Sports recharge | pág. 23, Jev 0.92 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Depreciation of tangible assets (see note 11) | pág. 24, precedente |
+| 2 | Wages and salaries | pág. 24, Claude 0.93 |
+| 3 | Social security costs | pág. 24, Jev 0.91 |
+| 4 | Other pension costs | pág. 24, Jev 0.95 |
+| 5 | Other operating charges | pág. 24, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2023–24 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Aston Villa".
+```
+
 ## 2023
 
 ### Ingresos
@@ -364,6 +405,14 @@ _note (cargar.mjs):_
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
+### astonvilla-gb-full-accounts-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
 ## Otros
 
 ### astonvillaGbPasesData
@@ -381,3 +430,7 @@ gestionId 'nswe': "V Sports S.C.S." (Luxemburgo) es la controlante última confi
 "Controlling party" — el grupo mayor que consolida es NSWE UK Limited (Nassef Sawiris / Wes
 Edens). firstYear/lastYear reflejan el único ejercicio cargado.
 ```
+
+## 2024: ejercicio de 13 meses (Finanzas 5, 2026-10-19)
+
+El documento `astonvilla-full-accounts-2023-24` cubre "THE 13 MONTH PERIOD ENDED 30 JUNE 2024": la sociedad cambió el cierre del 31 de mayo al 30 de junio (1-06-2023 al 30-06-2024). Se cargó como el año 2024, con los importes tal cual y sin prorratear, con el criterio de Wolves 2025 (`Admin/carga-clubes/wolves-gb.md`): el período contiene la temporada entera y no hay otro tramo que buscar; la cadena de cierres es 2023-05-31, 2024-06-30 y 2025-06-30. fxRef `GBP@2024-06-30` (ajuste `cierre` 2024-06-30 al PDF). La compuerta de transición de `cargar.mjs` (11 meses) no reconoce 13: se salteó a mano esa sola vez, con un parche temporal que no se commiteó (el archivo quedó como estaba); reconocer 13 meses va con la z2. Las comparaciones año a año 2023 (12 meses) contra 2024 (13 meses) sobreestiman el crecimiento: un mes de más. Ingresos 268,192 M £ (turnover 263,079 + otros 5,113) y resultado -49,425 M £, iguales a lo impreso.

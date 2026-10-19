@@ -1,0 +1,134 @@
+{
+ "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.md",
+ "generatedAt": "2026-10-19T16:00:42.750Z",
+ "rubrosHuella": "3a1cb483e5bdb794e5c921ec62d6074cd8238a6b",
+ "rubros": [
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "page": 36,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 36,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "page": 36,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of fixed assets",
+   "lado": "revenue",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Fair value loss on investment properties",
+   "lado": "expense",
+   "page": 21,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Less: net assets of subsidiary on disposal",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Profit on disposal of fixed assets investments\"",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "exceptional_items",
+     0.28
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Proceeds on sale of investment",
+   "lado": "revenue",
+   "page": 44,
+   "section": "nota que desglosa \"Profit on disposal of fixed assets investments\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1036
+  }
+ ]
+}

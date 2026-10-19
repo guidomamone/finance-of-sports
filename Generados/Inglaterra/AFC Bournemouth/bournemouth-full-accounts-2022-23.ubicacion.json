@@ -1,0 +1,271 @@
+{
+ "pdf": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.md",
+ "mdSha1": "8040088c895e64d816eebd358c556cc71791b1ff",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:01:50.556Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    306,
+    311
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    381,
+    389
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    657,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 18,
+   "lineas": [
+    684,
+    705
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    725,
+    741
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    753,
+    785
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 28,
+   "lineas": [
+    1133,
+    1142
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 28,
+   "lineas": [
+    1148,
+    1150
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 28,
+   "lineas": [
+    1157,
+    1159
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 29,
+   "lineas": [
+    1184,
+    1191
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 29,
+   "lineas": [
+    1199,
+    1207
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 29,
+   "lineas": [
+    1213,
+    1218
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 30,
+   "lineas": [
+    1232,
+    1237
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 30,
+   "lineas": [
+    1241,
+    1245
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 30,
+   "lineas": [
+    1261,
+    1263
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 30,
+   "lineas": [
+    1267,
+    1272
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 31,
+   "lineas": [
+    1284,
+    1289
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 31,
+   "lineas": [
+    1296,
+    1304
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 31,
+   "lineas": [
+    1315,
+    1319
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 32,
+   "lineas": [
+    1345,
+    1359
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 33,
+   "lineas": [
+    1371,
+    1383
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 34,
+   "lineas": [
+    1395,
+    1397
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 34,
+   "lineas": [
+    1405,
+    1410
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 34,
+   "lineas": [
+    1422,
+    1424
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 34,
+   "lineas": [
+    1428,
+    1437
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 35,
+   "lineas": [
+    1465,
+    1471
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 36,
+   "lineas": [
+    1496,
+    1500
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 36,
+   "lineas": [
+    1509,
+    1516
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 37,
+   "lineas": [
+    1561,
+    1566
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b8"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b13",
+  "b17"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: '2023 £000 | 2022 £000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2023 £000",
+ "columna_anterior": "2022 £000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado individual de AFC Bournemouth Limited (Statement of Comprehensive Income, pág. 17). Notas: turnover por clase (b8), cargos en resultado operativo (b11), costes de personal (b13), intereses a pagar (b17). Se excluyen la remuneración de directores (b15), por ser un subdetalle de personal, y la conciliación de impuestos (b19)."
+}

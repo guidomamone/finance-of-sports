@@ -49,3 +49,28 @@
 
 ### Qué queda (para TODO)
 - 261: el lote (etapa 3 en adelante); nada más de mi lado.
+
+## Lote 97 del Reino Unido (fútbol inglés), 2026-10-19
+
+### Qué cambió (para CHANGELOG)
+- To-do 261 a, etapa 3 en adelante: lotes 97 (62 documentos en dos tandas: `lote-97.txt` y `lote-98.txt`; `lote-97-todos.txt` es la lista completa del Reino Unido, con Celtic y los otros deportes, que se dejaron afuera). Costo de API: ~US$ 4 (re-transcripciones con Mistral de 5 escaneos y reintentos de 9 documentos). Cola: 83 casos del fútbol inglés contestados por subagentes Sonnet (sin Bash) revisados por Claude: las listas "stated after charging" y los honorarios del auditor no se cargan como desglose; "Staff costs" total va a `wages_squad` en Brighton y Brentford (convención ya cargada) y en Aston Villa no (la sociedad no emplea a los jugadores); un estado de resultados que solo trae consolidado se carga con ese; perfil de los clubes ingleses: sin cuotas de socios ni otros deportes (0 real).
+- Escritos en el sitio (un commit por año, `por el pipeline`): Aston Villa 2019, 2020, 2021, 2022 (2023 ya estaba), Arsenal 2022-23, Brentford 2022-23, Brighton 2020-23, Crystal Palace 2022-23, Fulham 2021 y 2023.
+- Chelsea 2021-22: la extracción omitía "Fair value gain/(loss) on investment properties" (45 en £000): ajuste `fila` (L722); sin él el resultado daba -121.327 contra -121.282 impreso.
+- Gestiones: Maxim Demin (Bournemouth, dueño desde 2011 hasta 2022-12-13; el año es el de Wikipedia, `desde` 2011-01-01) y Roman Abramovich (Chelsea, dueño 2003-07-01 a 2022-05-30; el día de inicio sale de "late Tuesday" del Daily Star) en `data/gestiones/gb.js`; porqué en `Admin/carga-clubes/bournemouth-gb.md` y `chelsea-gb.md`.
+- Listas de equipos (`tools/club-league-reference/gb.json`) de la Premier, Championship y League One 2019 a 2022 (la League One con `--section Stadiums`: la tabla de `Team changes` no se lee) y de la Scottish Premiership 2024 y 2025; `data/leagues.js` suma `gb-scottishpremiership` (informe: investigación de un subagente). Fulham 2021-22: ajuste `cierre` 2022-06-30 (el 28/03/2023 es el sello de Companies House). Burnley 2022-23: contexto de estadio y sponsor con las listas ya cargadas (las filas viejas tenían las ligas cruzadas). `be.json` de la Challenger Pro League lo dejó sin commitear el lote 96 (se commiteó acá).
+- 6 transcripciones por subagentes más (Red Bull 2020, Chelsea 2019-21, Leeds 2018-21; ya mergeadas) y la validación de los 12 (ya mergeada).
+
+### Qué queda (para TODO)
+- Defecto de script (a pipeline): `tools/generadores.mjs` no corre `tools/entidades.mjs`; un año nuevo de un club de un grupo multiclub cambia los ingresos del grupo (salen de `data/rankings/`) y `audit.js` da `entidades-desfasado`: `cargar.mjs` revierte. Frena Bournemouth 2022-23, Chelsea 2020-24 y Everton 2022-23 (10 años). Agregar `tools/entidades.mjs` a GENERADORES.
+- Aston Villa 2023-24 (13 meses por cambio de cierre de mayo a junio): precedente Wolves 2025; la compuerta de transición de `cargar.mjs` (L347, `per.meses < 12`) no lo reconoce. Va con la z2 (Westerlo, 18 meses). El documento tiene año 2024, cierre 2024-06-30, ingresos 268.192 y resultado -49.425 (la propuesta del lote dice cierre 2024-05-31: está mal).
+- Lote 100 (Fulham 2021-22: se localiza de nuevo con el cierre fijado) y lote 99 (alta de Celtic 2024-25, ~US$ 0,41; después color de marca y estadio y sponsor, a mano en `tools/contexto-manual.json` con fuente, y la liga `gb-scottishpremiership` en `data/club-leagues/gb.js` de Celtic).
+- Celtic 2020-21 a 2023-24 (cuando el alta esté), los 5 documentos de `Escocia/` con `.md` no cargados; y los clubes de otros deportes (F1, cricket, rugby: to-do aparte, Guido).
+- Brighton 2019-20: la "(Loss)/profit on player trading (599)" quedó en `other_expenses` (gasto 0,599); en 2020-21 y después el "Profit on player trading" va a `player_sales` (ingreso): consistente en el resultado, no en el rubro.
+- Mejoras de script ya pasadas a main (para pipeline): costo del ensayo de `--reintentar`, filtro de `cola.mjs` por lista, escalón para las notas "after charging", redacción de las preguntas de la cola, perímetro que ya decide la regla, nombre legal en altas de otro deporte.
+
+### Qué deja de ser cierto en ESTADO
+- Reino Unido: Aston Villa, Arsenal, Brentford, Brighton, Crystal Palace y Fulham ya tienen más años en el sitio (el detalle: `Admin/ESTADO-clubes.md`).
+
+### Aston Villa 2024 (13 meses), cargado (commit c3b9bfb491)
+- Cargado como año 2024 (cierre 2024-06-30, fxRef GBP@2024-06-30) con el criterio de Wolves 2025 y la compuerta del período salteada a mano esa sola vez, con las condiciones de la principal: ensayo sin otros frenos, parche TEMPORAL de `tools/cargar.mjs` (la condición de 13 meses y la cadena de cierres 2023-05-31, 2024-06-30, 2025-06-30, porque el registro tiene el cierre del documento 2024-25 en null), `git checkout tools/cargar.mjs` apenas escribió, y ninguna línea de `tools/` en el commit. 2023 (al 31-05-2023) y 2025 no cambiaron (el diff de `data/gb/astonvilla-gb-data.js` es solo agregados); `publicNote`: "Ejercicio de transición por cambio de fecha de cierre (de mayo a junio): del 01/06/2023 al 30/06/2024 (13 meses)."; ajuste `cierre` 2024-06-30 al PDF; evidencia en `Admin/carga-clubes/astonvilla-gb.md`.
+- Para el TODO: que `cargar.mjs` reconozca 13 meses (y que la cadena de cierres no dependa del cierre de los documentos vecinos del registro, que puede estar en null) va con la z2 (Westerlo, 18 meses).

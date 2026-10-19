@@ -39,6 +39,15 @@ const astonvillaGbRevenueLinesByYear = {
     { rawLabel:'Sponsorship', normalizedCategory:'sponsorship_commercial', amountNative:10.401513, disclosureLevel:'aggregated' },
     { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:8.624614, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:28.009, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:170.718, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship', normalizedCategory:'sponsorship_commercial', amountNative:21.895, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:28.767, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA', normalizedCategory:'broadcasting', amountNative:13.69, disclosureLevel:'aggregated' },
+    { rawLabel:'Insurance claims receivable', normalizedCategory:'other_income', amountNative:2.5, disclosureLevel:'aggregated' },
+    { rawLabel:'V Sports recharge', normalizedCategory:'other_income', amountNative:2.613, disclosureLevel:'aggregated' },
+  ],
 };
 
 const astonvillaGbExpenseLinesByYear = {
@@ -67,6 +76,13 @@ const astonvillaGbExpenseLinesByYear = {
   2020: [
     { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-203.017838, disclosureLevel:'aggregated' },
     { rawLabel:'Loss on sale of tangible assets', normalizedCategory:'exceptional_items', amountNative:-0.005947, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Depreciation of tangible assets (see note 11)', normalizedCategory:'depreciation', amountNative:-4.909, disclosureLevel:'aggregated' },
+    { rawLabel:'Wages and salaries', normalizedCategory:'wages_squad', amountNative:-12.827, disclosureLevel:'aggregated' },
+    { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-1.877, disclosureLevel:'aggregated' },
+    { rawLabel:'Other pension costs', normalizedCategory:'wages_squad', amountNative:-0.492, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating charges', normalizedCategory:'other_expenses', amountNative:-298.796, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -147,6 +163,20 @@ const astonvillaGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:107.863788, officialTotalExpenses:203.023785, officialPAT:-90.893408,
   },
+  2024: {
+    currency:'GBP', fxRef:'GBP@2024-06-30',
+    sourceId:'astonvilla-gb-full-accounts-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0, tax:1.284,
+    extraRows: [
+      {label:'Interest payable and similar expenses', value:null},
+      {label:'Tax on loss', value:1.284},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:268.192, officialTotalExpenses:318.901, officialPAT:-49.425,
+  },
 };
 
 const astonvillaGbPresupuestoOverlayByYear = {};
@@ -195,6 +225,12 @@ Object.assign(sources, {
     id:'astonvilla-gb-full-accounts-2019-20', clubId:'astonvilla-gb',
     title:'Aston Villa Football Club Limited — astonvilla-full-accounts-2019-20 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
+  },
+  'astonvilla-gb-full-accounts-2023-24': {
+    id:'astonvilla-gb-full-accounts-2023-24', clubId:'astonvilla-gb',
+    title:'Aston Villa Football Club Limited — astonvilla-full-accounts-2023-24 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+    publicNote:'Ejercicio de transición por cambio de fecha de cierre (de mayo a junio): del 01/06/2023 al 30/06/2024 (13 meses).',
   },
 });
 

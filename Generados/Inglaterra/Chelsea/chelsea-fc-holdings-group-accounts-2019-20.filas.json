@@ -1,0 +1,368 @@
+{
+ "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.md",
+ "mdSha1": "a32fed42ec4bc420bbf9188c29092e64a1707980",
+ "ubicacionSha1": "11e32abb11034c74cab9a81d7a46f8fd2bebd38d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:24:35.733Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b10",
+   "b15"
+  ],
+  "notas_gastos": [
+   "b11",
+   "b14",
+   "b16"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L519: \"Total 30 June 2020 £000\""
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "L1110: \"2020 £000\""
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "L1205: \"£000 £000\""
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L1137: \"2020 £000\""
+  },
+  {
+   "bloque": "b14",
+   "escala": "miles",
+   "evidencia": "L1178: \"2020 £000\""
+  },
+  {
+   "bloque": "b16",
+   "escala": "miles",
+   "evidencia": "L1232: \"2020 £000\""
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 521,
+   "etiqueta": "Turnover",
+   "actual": "407,402",
+   "anterior": "446,741",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 522,
+   "etiqueta": "Cost of sales",
+   "actual": "(318,492)",
+   "anterior": "(336,000)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 523,
+   "etiqueta": "Gross profit",
+   "actual": "88,910",
+   "anterior": "110,741",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 524,
+   "etiqueta": "Administrative expenses",
+   "actual": "(200,474)",
+   "anterior": "(246,760)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 525,
+   "etiqueta": "Exceptional administrative expenses",
+   "actual": "-",
+   "anterior": "(26,647)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 526,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "(111,564)",
+   "anterior": "(162,666)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 527,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "7,971",
+   "anterior": "2,460",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 528,
+   "etiqueta": "Interest payable and similar charges",
+   "actual": "(3,300)",
+   "anterior": "(2,548)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 529,
+   "etiqueta": "Profit on disposal of player registrations",
+   "actual": "142,645",
+   "anterior": "60,459",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 530,
+   "etiqueta": "Fair value loss on investment properties",
+   "actual": "(100)",
+   "anterior": "(85)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 531,
+   "etiqueta": "Profit on disposal of tangible fixed assets",
+   "actual": "-",
+   "anterior": "594",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 532,
+   "etiqueta": "Profit/(Loss) before taxation",
+   "actual": "35,652",
+   "anterior": "(101,786)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 533,
+   "etiqueta": "Taxation",
+   "actual": "(3,179)",
+   "anterior": "5,215",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 534,
+   "etiqueta": "Profit/(Loss) for the financial year",
+   "actual": "32,473",
+   "anterior": "(96,571)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 1112,
+   "etiqueta": "Broadcasting",
+   "actual": "182,546",
+   "anterior": "200,188",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1113,
+   "etiqueta": "Commercial",
+   "actual": "170,387",
+   "anterior": "179,930",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1114,
+   "etiqueta": "Matchday",
+   "actual": "54,469",
+   "anterior": "66,623",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1115,
+   "etiqueta": "",
+   "actual": "407,402",
+   "anterior": "446,741",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1207,
+   "etiqueta": "Interest on bank deposits",
+   "actual": "95",
+   "anterior": "40",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1208,
+   "etiqueta": "Other interest income :",
+   "actual": "7,876",
+   "anterior": "2,420",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1209,
+   "etiqueta": "Total finance income",
+   "actual": "7,971",
+   "anterior": "2,460",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1235,
+   "etiqueta": "Current tax on income/(loss)",
+   "actual": "3,140",
+   "anterior": "(5,167)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1236,
+   "etiqueta": "**Total Current Tax**",
+   "actual": "**3,140**",
+   "anterior": "**(5,167)**",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1238,
+   "etiqueta": "Origination and reversal of timing differences",
+   "actual": "(76)",
+   "anterior": "(48)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1239,
+   "etiqueta": "Changes in tax rates",
+   "actual": "115",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1240,
+   "etiqueta": "Other adjustments",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1241,
+   "etiqueta": "**Total Deferred Tax**",
+   "actual": "**39**",
+   "anterior": "**(48)**",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1242,
+   "etiqueta": "**Total tax charge/(credit)**",
+   "actual": "**3,179**",
+   "anterior": "**(5,215)**",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 534,
+  "actual": "32,473",
+  "anterior": "(96,571)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la nota 5 (L1139-L1143), por ser cargos incluidos en varios renglones sin desglosar uno solo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Amortización, depreciación y leasing (L1139-L1143) están repartidos entre Cost of sales y Administrative expenses y no se sabe en qué proporción.",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneraciones de la nota 7 (L1180-L1183), por no desglosar un renglón único del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Los salarios (L1183, 283,480) se reparten entre Cost of sales y Administrative expenses sin indicar cuánto en cada uno.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Se tomó la columna Total 30 June 2020. El estado no imprime total de ingresos ni de gastos. Las notas b11 y b14 no se cargaron como desglose por no corresponder a un único renglón del estado (ver dudas)."
+}

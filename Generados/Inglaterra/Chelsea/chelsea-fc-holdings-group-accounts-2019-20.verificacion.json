@@ -1,0 +1,157 @@
+{
+ "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.md",
+ "generado": "2026-10-19T17:24:31.643Z",
+ "estado": "ok",
+ "clubId": "chelsea-gb",
+ "year": 2020,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.105427357601002e-15
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 550.047 en este documento y 550.047 en chelsea-fc-holdings-group-accounts-2020-21.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se carga la columna 'Total 30 June 2020 £000' del estado b3 y no las columnas parciales 'Operations excluding player amortisation and trading' y 'Player amortisation and trading'?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 550.047,
+  "gastos": 519.066,
+  "financiero": 4.671,
+  "impuesto": -3.179,
+  "resultadoImpreso": 32.473,
+  "resultadoParaCargar": 32.473,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 182.546,
+   "pagina": 28,
+   "linea": 1112,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 170.387,
+   "pagina": 28,
+   "linea": 1113,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 54.469,
+   "pagina": 28,
+   "linea": 1114,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of player registrations",
+   "lado": "ingreso",
+   "M": 142.645,
+   "pagina": 14,
+   "linea": 529,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of tangible fixed assets",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 14,
+   "linea": 531,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 318.492,
+   "pagina": 14,
+   "linea": 522,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 200.474,
+   "pagina": 14,
+   "linea": 524,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Exceptional administrative expenses",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 14,
+   "linea": 525,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fair value loss on investment properties",
+   "lado": "gasto",
+   "M": 0.1,
+   "pagina": 14,
+   "linea": 530,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 7.971,
+   "linea": 527
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -3.3,
+   "linea": 528
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation",
+   "M": -3.179,
+   "linea": 533
+  }
+ ]
+}

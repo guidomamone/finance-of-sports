@@ -1,22 +1,216 @@
 {
  "pdf": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.pdf",
- "generado": "2026-10-19T15:39:56.701Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
-  }
- ],
+ "generado": "2026-10-19T17:24:34.722Z",
+ "frena": [],
  "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "bournemouth-gb",
+  "year": 2023,
+  "cierre": "2023-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Match and season ticket income",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 5.414,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "English football league and FA Cup income",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.773,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Premier League income",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 122.203,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsorship and advertising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 8.652,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Hospitality and events",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.267,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Shop merchandise",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.354,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.32,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.035,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Exceptional other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 71.444,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of players' registrations",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.898,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Wages and salaries",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -87.832,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Social security costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -12.181,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other pension costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.096,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Depreciation of tangible assets",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.484,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisation of intangibles",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -41.226,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating expenses",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -21.471,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2023-06-30",
+   "sourceId": "bournemouth-gb-full-accounts-2022-23",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -7.575,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.253
+    },
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -7.828
+    },
+    {
+     "label": "Tax on profit/(loss)",
+     "value": null
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 216.36,
+   "officialTotalExpenses": 164.29,
+   "officialPAT": 44.495
+  },
+  "source": {
+   "id": "bournemouth-gb-full-accounts-2022-23",
+   "clubId": "bournemouth-gb",
+   "title": "AFC Bournemouth Limited — bournemouth-full-accounts-2022-23 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.md",
  "reemplaza": false,
  "periodo": {
@@ -29,5 +223,379 @@
  },
  "clubId": "bournemouth-gb",
  "year": 2023,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 19,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Match and season ticket income",
+   "page": 28,
+   "native": 5.414,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 5.414,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.414
+  },
+  {
+   "label": "English football league and FA Cup income",
+   "page": 28,
+   "native": 0.773,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.773,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)",
+   "destino": "revenue",
+   "amountNative": 0.773
+  },
+  {
+   "label": "Premier League income",
+   "page": 28,
+   "native": 122.203,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 122.203,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 122.203
+  },
+  {
+   "label": "Sponsorship and advertising",
+   "page": 28,
+   "native": 8.652,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 8.652,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.652
+  },
+  {
+   "label": "Hospitality and events",
+   "page": 28,
+   "native": 2.267,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 2.267,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.267
+  },
+  {
+   "label": "Shop merchandise",
+   "page": 28,
+   "native": 1.354,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 1.354,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.354
+  },
+  {
+   "label": "Other income",
+   "page": 28,
+   "native": 0.32,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.32,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.32
+  },
+  {
+   "label": "Other operating income",
+   "page": 17,
+   "native": 2.035,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.035,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.035
+  },
+  {
+   "label": "Exceptional other operating income",
+   "page": 17,
+   "native": 71.444,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 71.444,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 71.444
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "page": 17,
+   "native": 1.898,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.898,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.898
+  },
+  {
+   "label": "Wages and salaries",
+   "page": 29,
+   "native": 87.832,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Staff costs\")",
+   "signoFijo": 87.832,
+   "cat": "wages_squad",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -87.832
+  },
+  {
+   "label": "Social security costs",
+   "page": 29,
+   "native": 12.181,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Staff costs\")",
+   "signoFijo": 12.181,
+   "cat": "wages_squad",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.181
+  },
+  {
+   "label": "Other pension costs",
+   "page": 29,
+   "native": 0.096,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Staff costs\")",
+   "signoFijo": 0.096,
+   "cat": "wages_squad",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.096
+  },
+  {
+   "label": "Depreciation of tangible assets",
+   "page": 29,
+   "native": 1.484,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Depreciation and amortisation charge\")",
+   "signoFijo": 1.484,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.484
+  },
+  {
+   "label": "Amortisation of intangibles",
+   "page": 29,
+   "native": 41.226,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Depreciation and amortisation charge\")",
+   "signoFijo": 41.226,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -41.226
+  },
+  {
+   "label": "Other operating expenses",
+   "page": 17,
+   "native": 21.471,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 21.471,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -21.471
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.253,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -7.828,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on profit/(loss)",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Staff costs\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Depreciation and amortisation charge\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 216.36,
+  "expSum": -164.29,
+  "officialTotalRevenue": 216.36,
+  "officialTotalExpenses": 164.29,
+  "officialPAT": 44.495,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 44.495,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 216.36
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 164.29
+  }
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia única por palabras \"Bournemouth\" = \"AFC Bournemouth\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (66 de 67 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (1 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2023-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2023-06-30 = 0.786535 (Tipo spot del Bank of England al 2023-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "bournemouth-gb-full-accounts-2022-23",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia única por palabras \"Bournemouth\" = \"AFC Bournemouth\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 10,
+  "lineasGasto": 6,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

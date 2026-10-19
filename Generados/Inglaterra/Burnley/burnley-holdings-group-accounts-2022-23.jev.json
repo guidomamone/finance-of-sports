@@ -1,0 +1,306 @@
+{
+ "md": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.md",
+ "generatedAt": "2026-10-19T16:00:41.398Z",
+ "rubrosHuella": "ae91c91cd28f6267aabb2561dc8137a473c78815",
+ "rubros": [
+  {
+   "label": "Match income",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Television rights",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Wages and salaries",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Retail sales",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Catering sales",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "stadium_other",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "stadium_other",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Other commercial activities",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "sponsorship_commercial",
+     0.39
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Depreciation",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Amortisation of player registrations",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Cost of defined contribution scheme",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Staff costs\"",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "wages_squad",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Other operating expenses",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 32,
+   "section": "nota que desglosa \"Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "wages_squad",
+     0.93
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1021
+  }
+ ]
+}

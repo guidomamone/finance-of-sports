@@ -1,0 +1,173 @@
+{
+ "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.md",
+ "generado": "2026-10-19T17:24:31.711Z",
+ "estado": "ok",
+ "clubId": "chelsea-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "45",
+   "linea": 722,
+   "etiqueta": "Fair value gain/(loss) on investment properties",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "La extracción omitió esta fila del estado de resultados (L722, 45 en £000): sin ella el resultado da -121.327 y el impreso es -121.282",
+   "evidencia": "pág. 18 del visor, .md L722",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 5.684341886080802e-14
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 604.491 en este documento y 604.491 en chelsea-fc-holdings-group-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 475.384 en chelsea-fc-holdings-group-accounts-2020-21.pdf y 475.384 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Other operating income\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Fair value gain/(loss) on investment properties\" (ingreso) 45 (2026-10-19, La extracción omitió esta fila del estado de resultados (L722, 45 en £000): sin ella el resultado da -121.327 y el impreso es -121.282)",
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se carga sólo la columna 'Total 30 June 2022 £000' del estado b6, dejando afuera las columnas 'Operations excluding player amortisation and trading' y 'Player amortisation, impairment and trading'?",
+  "duda de localizar que no afecta la carga: b14 mezcla notas que abren renglones del estado (4, 5 y 6) con la nota 7 de honorarios del auditor, que es sólo informativa.",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en chelsea-fc-holdings-group-accounts-2021-22.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): aceptar, en chelsea-fc-holdings-group-accounts-2021-22.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 604.536,
+  "gastos": 723.707,
+  "financiero": -2.184,
+  "impuesto": 0.073,
+  "resultadoImpreso": -121.282,
+  "resultadoParaCargar": -121.282,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 235.016,
+   "pagina": 32,
+   "linea": 1305,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 177.099,
+   "pagina": 32,
+   "linea": 1306,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 69.163,
+   "pagina": 32,
+   "linea": 1307,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 18,
+   "linea": 717,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of player registrations",
+   "lado": "ingreso",
+   "M": 123.213,
+   "pagina": 18,
+   "linea": 721,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fair value gain/(loss) on investment properties",
+   "lado": "ingreso",
+   "M": 0.045,
+   "pagina": 18,
+   "linea": 722,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 386.794,
+   "pagina": 18,
+   "linea": 714,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 336.913,
+   "pagina": 18,
+   "linea": 716,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 4.879,
+   "linea": 719
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -7.063,
+   "linea": 720
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation",
+   "M": 0.073,
+   "linea": 724
+  }
+ ]
+}

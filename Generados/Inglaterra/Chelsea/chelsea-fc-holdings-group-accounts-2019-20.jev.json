@@ -1,0 +1,130 @@
+{
+ "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.md",
+ "generatedAt": "2026-10-19T16:00:41.678Z",
+ "rubrosHuella": "46dfe8ba5587d9f52e797f51f06951b288ca52b1",
+ "rubros": [
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Fair value loss on investment properties",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Exceptional administrative expenses",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "exceptional_items",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Profit on disposal of tangible fixed assets",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1036
+  }
+ ]
+}

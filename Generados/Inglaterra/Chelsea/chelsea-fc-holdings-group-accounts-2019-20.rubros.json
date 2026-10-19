@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.md",
+  "pdf": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.pdf",
+  "club": "chelsea-gb",
+  "year": 2020,
+  "generatedAt": "2026-10-19T15:37:03.286Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        182.546
+      ],
+      "glosa": "Retransmisión"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        170.387
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        54.469
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Profit on disposal of player registrations",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        142.645
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Profit on disposal of tangible fixed assets",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Beneficio por enajenación de inmovilizado material"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        318.492
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        200.474
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Exceptional administrative expenses",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Gastos de administración excepcionales"
+    },
+    {
+      "label": "Fair value loss on investment properties",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0.1
+      ],
+      "glosa": "Pérdida por valor razonable en inversiones inmobiliarias"
+    }
+  ]
+}

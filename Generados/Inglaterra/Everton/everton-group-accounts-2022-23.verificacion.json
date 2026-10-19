@@ -1,0 +1,192 @@
+{
+ "pdf": "Clubes/Inglaterra/Everton/everton-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Everton/everton-group-accounts-2022-23.md",
+ "generado": "2026-10-19T17:24:31.836Z",
+ "estado": "ok",
+ "clubId": "everton-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 172.155 cierra; además se suman 2 línea(s) fuera de ese total (47.526)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "302.615 = 302.615",
+   "suma": 302.615,
+   "impreso": 302.615
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 248.711 en everton-group-accounts-2021-22.pdf y 248.711 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"Staff costs (note 7)\"): aceptar, en everton-group-accounts-2022-23.pdf",
+  "duda de extraer que no afecta la carga: La tabla b14 (L1541-L1547) no tiene título visible; se asume que desglosa los costos excepcionales porque suma 15,009 igual que L1529."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 219.681,
+  "gastos": 302.615,
+  "financiero": -6.156,
+  "impuesto": 0,
+  "resultadoImpreso": -89.09,
+  "resultadoParaCargar": -89.09,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 116.022,
+   "pagina": 22,
+   "linea": 1508,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Gate Receipts",
+   "lado": "ingreso",
+   "M": 17.26,
+   "pagina": 22,
+   "linea": 1509,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorship, advertising and merchandising",
+   "lado": "ingreso",
+   "M": 19.158,
+   "pagina": 22,
+   "linea": 1510,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other commercial activities",
+   "lado": "ingreso",
+   "M": 19.715,
+   "pagina": 22,
+   "linea": 1511,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on player trading",
+   "lado": "ingreso",
+   "M": 47.518,
+   "pagina": 13,
+   "linea": 802,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of tangible fixed assets",
+   "lado": "ingreso",
+   "M": 0.008,
+   "pagina": 13,
+   "linea": 803,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation of players' registrations (note 10)",
+   "lado": "gasto",
+   "M": 77.621,
+   "pagina": 22,
+   "linea": 1525,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Wages and salaries",
+   "lado": "gasto",
+   "M": 138.394,
+   "pagina": 24,
+   "linea": 1620,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (note 7)\""
+  },
+  {
+   "etiqueta": "Social security costs",
+   "lado": "gasto",
+   "M": 19.455,
+   "pagina": 24,
+   "linea": 1621,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (note 7)\""
+  },
+  {
+   "etiqueta": "Other pension costs",
+   "lado": "gasto",
+   "M": 1.177,
+   "pagina": 24,
+   "linea": 1622,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (note 7)\""
+  },
+  {
+   "etiqueta": "Depreciation (note 11)",
+   "lado": "gasto",
+   "M": 5.931,
+   "pagina": 22,
+   "linea": 1527,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Other operating costs",
+   "lado": "gasto",
+   "M": 45.028,
+   "pagina": 22,
+   "linea": 1528,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Operating expenses - exceptional costs",
+   "lado": "gasto",
+   "M": 15.009,
+   "pagina": 13,
+   "linea": 799,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 1.7,
+   "linea": 805
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -7.856,
+   "linea": 806
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 808
+  }
+ ]
+}
