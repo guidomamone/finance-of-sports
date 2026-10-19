@@ -19,6 +19,16 @@ const sarpsborg08noRevenueLinesByYear = {
     { rawLabel:'Reklame og sponsorinntekter', normalizedCategory:'sponsorship_commercial', amountNative:11.858375, disclosureLevel:'aggregated' },
     { rawLabel:'Salg/utleie spillere', normalizedCategory:'player_sales', amountNative:2.3942, disclosureLevel:'aggregated' },
   ],
+  2014: [
+    { rawLabel:'Medlemsinntekter', normalizedCategory:'member_dues', amountNative:0.258823, disclosureLevel:'aggregated' },
+    { rawLabel:'Billettinntekter', normalizedCategory:'matchday_competition', amountNative:5.475782, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre inntekter', normalizedCategory:'other_income', amountNative:4.282673, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre salgsinntekter', normalizedCategory:'other_income', amountNative:2.271759, disclosureLevel:'aggregated' },
+    { rawLabel:'Mediainntekter', normalizedCategory:'broadcasting', amountNative:6.16638, disclosureLevel:'aggregated' },
+    { rawLabel:'Tilskudd', normalizedCategory:'other_income', amountNative:1.931104, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklame og sponsorinntekter', normalizedCategory:'sponsorship_commercial', amountNative:15.333625, disclosureLevel:'aggregated' },
+    { rawLabel:'Salg/utleie spillere', normalizedCategory:'player_sales', amountNative:9.440754, disclosureLevel:'aggregated' },
+  ],
 };
 const sarpsborg08noExpenseLinesByYear = {
   2025: [
@@ -43,6 +53,16 @@ const sarpsborg08noExpenseLinesByYear = {
     { rawLabel:'Andre kostnader', normalizedCategory:'other_expenses', amountNative:-3.898519, disclosureLevel:'aggregated' },
     { rawLabel:'Reklame og sponsorkostnader', normalizedCategory:'admin_general_expense', amountNative:-3.929984, disclosureLevel:'aggregated' },
     { rawLabel:'Admkost', normalizedCategory:'admin_general_expense', amountNative:-1.728093, disclosureLevel:'aggregated' },
+  ],
+  2014: [
+    { rawLabel:'Trening, matriell, kurs', normalizedCategory:'other_expenses', amountNative:-3.918066, disclosureLevel:'aggregated' },
+    { rawLabel:'Reise og oppholdskostnader bortekamper', normalizedCategory:'match_organisation_expense', amountNative:-2.339752, disclosureLevel:'aggregated' },
+    { rawLabel:'Salgskostnader', normalizedCategory:'other_expenses', amountNative:-0.897982, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønnskostnad', normalizedCategory:'wages_squad', amountNative:-20.507849, disclosureLevel:'aggregated' },
+    { rawLabel:'Avskrivning på driftsmidler og immaterielle eiendeler', normalizedCategory:'depreciation', amountNative:-0.536347, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre kostnader', normalizedCategory:'other_expenses', amountNative:-4.607887, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklame og sponsorkostnader', normalizedCategory:'admin_general_expense', amountNative:-5.026981, disclosureLevel:'aggregated' },
+    { rawLabel:'Admkost', normalizedCategory:'admin_general_expense', amountNative:-3.147236, disclosureLevel:'aggregated' },
   ],
 };
 const sarpsborg08noFiscalYearMeta = {
@@ -78,6 +98,22 @@ const sarpsborg08noFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:26.719174, officialTotalExpenses:26.234599, officialPAT:0.377709,
   },
+  2014: {
+    currency:'NOK', fxRef:'NOK@2014-12-31',
+    sourceId:'sarpsborg08-no-aarsregnskap-fotballforening-fli-2014',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.042257, tax:0,
+    extraRows: [
+      {label:'Annen renteinntekt', value:0.019911},
+      {label:'Annen finansinntekt', value:0.096293},
+      {label:'Annen rentekostnad', value:-0.021374},
+      {label:'Annen finanskostnad', value:-0.137087},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:45.1609, officialTotalExpenses:40.9821, officialPAT:4.13654,
+  },
 };
 const sarpsborg08noPresupuestoOverlayByYear = {};
 
@@ -102,6 +138,11 @@ Object.assign(sources, {
   'sarpsborg08-no-aarsregnskap-fotballforening-fli-2012': {
     id:'sarpsborg08-no-aarsregnskap-fotballforening-fli-2012', clubId:'sarpsborg08-no',
     title:'Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2012 (ejercicio 2012)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sarpsborg08-no-aarsregnskap-fotballforening-fli-2014': {
+    id:'sarpsborg08-no-aarsregnskap-fotballforening-fli-2014', clubId:'sarpsborg08-no',
+    title:'Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2014 (ejercicio 2014)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

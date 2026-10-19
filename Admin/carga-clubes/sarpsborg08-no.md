@@ -92,6 +92,46 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): no-eliteserien, verificado contra roster cacheado de "2025 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Sarpsborg 08".
 ```
 
+## 2014
+
+### Ingresos
+
+```text
+2014: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2014.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2014.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Medlemsinntekter | pág. 30, precedente |
+| 2 | Billettinntekter | pág. 30, precedente |
+| 3 | Andre inntekter | pág. 30, precedente |
+| 4 | Andre salgsinntekter | pág. 30, precedente |
+| 5 | Mediainntekter | pág. 30, precedente |
+| 6 | Tilskudd | pág. 30, precedente |
+| 7 | Reklame og sponsorinntekter | pág. 30, precedente |
+| 8 | Salg/utleie spillere | pág. 30, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trening, matriell, kurs | pág. 30, Claude 0.88 |
+| 2 | Reise og oppholdskostnader bortekamper | pág. 30, precedente |
+| 3 | Salgskostnader | pág. 30, precedente |
+| 4 | Lønnskostnad | pág. 30, Claude 0.9 |
+| 5 | Avskrivning på driftsmidler og immaterielle eiendeler | pág. 30, precedente |
+| 6 | Andre kostnader | pág. 30, precedente |
+| 7 | Reklame og sponsorkostnader | pág. 30, precedente |
+| 8 | Admkost | pág. 30, precedente |
+
+### Meta
+
+```text
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-19): perimetro = individual. perimetro-senales.mjs: el ejercicio 2014-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2012
 
 ### Ingresos
@@ -148,4 +188,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sarpsborg08-no-aarsregnskap-fotballforening-fli-2014
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

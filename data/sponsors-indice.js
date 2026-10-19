@@ -2387,6 +2387,7 @@ window.SPONSORS_INDICE = [
   ["victorian-plumbing","Victorian Plumbing",["c"]],
   ["vieni-in-calabria","Vieni in Calabria",["c"]],
   ["vierhouten-group","Vierhouten Group",["c"]],
+  ["vierlsk","#VierLSK",["c"]],
   ["viimsi-keevitus","Viimsi Keevitus",["c"]],
   ["viking","VIKING",["c"]],
   ["vikos-cola","Vikos Cola",["c"]],
