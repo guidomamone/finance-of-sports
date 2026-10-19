@@ -279,6 +279,13 @@ const clubs = {
   'tallinnakalev-ee': { id:'tallinnakalev-ee', name:'Jalgpalliklubi Tallinna Kalev', displayName:'Tallinna Kalev', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
   'beerschot-be': { id:'beerschot-be', name:'Beerschot', displayName:'Beerschot', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#6104D2' },
   'raallalouviere-be': { id:'raallalouviere-be', name:'RAAL La Louvière SC', displayName:'RAAL La Louvière', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#009150' },
+  'goaheadeagles-nl': { id:'goaheadeagles-nl', name:'Go Ahead Eagles Holding BV', displayName:'Go Ahead Eagles', country:'NL', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#C10230' },
+  'viking-no': { id:'viking-no', name:'Viking Fotball AS', displayName:'Viking', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#132436' },
+  'valerenga-no': { id:'valerenga-no', name:'Vålerenga Fotball AS', displayName:'Vålerenga', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#034EA2' },
+  'molde-no': { id:'molde-no', name:'Molde Fotballklubb', displayName:'Molde', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#176FC1' },
+  'basel-ch': { id:'basel-ch', name:'FC Basel 1893 AG', displayName:'Basel', country:'CH', reportingCurrency:'CHF', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E20A17' },
+  'aalesund-no': { id:'aalesund-no', name:'Ålesund Fotball AS', displayName:'Aalesund', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FE7812' },
+  'sarpsborg08-no': { id:'sarpsborg08-no', name:'Sarpsborg 08 Fotballforening', displayName:'Sarpsborg 08', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#2747A3' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.

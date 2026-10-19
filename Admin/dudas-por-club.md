@@ -1926,6 +1926,21 @@ sin leerlo.
   (bilheteira 404.422,90, comerciais 44.600). Los dos suman 3.747.893,02; la nota mueve 1.000.000 de patrocínio a TV también en la
   columna de 2015-16. Se cargó el reparto del estado (sigue la serie del club: 2017-18 TV 2.200.000, estado y nota iguales).
 
+## Sarpsborg 08 (onboarding, lote 94, sesión 2026-10-19: no frena la carga)
+
+- **¿Qué incluye "Salgskostnader" del estado de resultados 2025?** Son 65.871.707 NOK (aarsregnskap-fotballforening-fli-2025.md L1372;
+  61.027.262 en 2024), contra 134.979.734 de "Salg/utleie spillere" (L1368). ¿Es el costo de las ventas de jugadores (valor en libros,
+  comisiones, porcentajes a terceros) o costo de mercadería y otras ventas? Se cargó como other_expenses a la espera de esta respuesta; si es
+  costo de ventas de jugadores, va con la venta de jugadores.
+
+## FC St. Gallen (onboarding, lote 94, sesión 2026-10-19: no frena la carga)
+
+- **¿Cómo se reparten los 9.512 mil CHF de "Diverse Erträge inklusive Swiss Football League"?** (geschaeftsbericht-2024-25.md L327). Mezcla
+  los derechos de TV que reparte la Swiss Football League, premios de la UEFA y otros ingresos. Se cargó como other_income; con el reparto,
+  la parte de TV iría a broadcasting y los premios a competition_bonus.
+- **¿Qué parte de "Erträge von Gönnern und Mitgliedern" (1.246 mil CHF, L329) son cuotas de socios y qué parte donaciones?** Se cargó como
+  member_dues.
+
 ## Gestiones sin fecha confirmada (tanda Admin/gestiones-por-pais/tanda-2026-10-14-2, sesión 2026-10-15: no frena ninguna carga)
 
 Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso está en el `resultado-N.json` de la tanda (notas y dudas).

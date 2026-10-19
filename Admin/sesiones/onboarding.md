@@ -225,3 +225,14 @@ como letras para fos-pipeline, sin aplicarlas.
   NEC Nijmegen duplicada). Ajustes `cierre` 2025-06-30 de Roda JC y SC Cambuur. Ensayo: ~US$ 10,50 (cota alta: club sin historia).
 
 ## Después del quinto merge del 2026-10-18
+- Altas del borrador de Finanzas (lote 94, sin Pardubice): las 10 cierran en verificar. 11 ajustes de fila A MANO (Guido 2026-10-18:
+  "ajustes a mano. luego limpiaremos"), revisados contra el .md: hay que limpiarlos cuando entre la mejora y. Fredrikstad: el alta es el 2024
+  del acta de asamblea 2025 del FLI (Regnskap 2024, pág. 26); el FLI sí publica después de 2018 (el borrador decía que no).
+- Mejoras de script nuevas para el 298:
+  w) antes-de-localizar.mjs dice "perímetro: se decide al ejecutar el lote (Jev o Claude)" y después lote.mjs frena igual con "FALTA FIJAR
+     EL PERIMETRO" (8 de 26 en el lote 93, 5 de 10 en el 94). O lo decide de verdad al ejecutar, o antes-de-localizar lo da como pendiente.
+  y) Formato noruego (NRS) en verificar.mjs: "Annen finanskostnad" / "Annen rentekostnad" / "Rentekostnad" se suman como ingreso
+     financiero (Vålerenga AS 2025 L123, Aalesund AS 2025 L593-594, Viking AS 2025 L296, Sarpsborg 08 FLI 2025 L1383-1384, Fredrikstad FLI
+     2018 L545 y 2024 L1077); el total "Sum driftsinntekter" se suma además de su renglón (Fredrikstad 2024 L1064). Mismo patrón suizo: el
+     total consolidado "Erträge netto" sumado junto al desglose de cada sociedad y los "-" impresos leídos al revés (St. Gallen 2024-25 L261,
+     L330, L403). Los 11 ajustes a mano del lote 94 son exactamente estos casos.

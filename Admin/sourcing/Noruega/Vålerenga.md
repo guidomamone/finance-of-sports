@@ -49,3 +49,5 @@ Todos ejercicio calendario. Escaneos sin capa de texto.
 ## WorldFootball (sourcing 2026-10-08, año 2023)
 
 Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 3 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2023-2024; `wf-src-*`: 1 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf` (sourceId `valerenga-no-aarsregnskap-valerenga-fotball-as-2025`).

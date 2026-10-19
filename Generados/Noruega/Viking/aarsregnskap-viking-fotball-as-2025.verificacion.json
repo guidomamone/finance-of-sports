@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
  "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.md",
- "generado": "2026-10-19T00:28:23.949Z",
- "estado": "cola",
+ "generado": "2026-10-19T01:15:28.332Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -21,12 +21,94 @@
    "evidencia": ".md L45-51 y L921-922",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "-5 066 010",
+   "linea": 296,
+   "etiqueta": "Rentekostnad",
+   "lado": "financiero",
+   "reemplaza": "Rentekostnad",
+   "motivo": "costo financiero leído como ingreso: Netto finans -5.707.366 y el resultado cierra en 24.667.584 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L296",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "19 207 686",
+   "linea": 288,
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "lado": "gasto",
+   "reemplaza": "Ordinære avskrivninger",
+   "motivo": "Note 4 abre las amortizaciones (28.455.288 consolidado): derechos de jugadores 19.207.686 (Viking Stadion AS no tiene derechos) (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L288, L1021",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "225 000",
+   "linea": 288,
+   "etiqueta": "Avskrivninger markedsrettigheter",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Note 4: derechos de mercado 225.000 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L1021",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "9 022 602",
+   "linea": 288,
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "resto del renglón consolidado: 28.455.288 - 19.207.686 - 225.000 = 9.022.602, bienes de uso del AS y del estadio (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L288, L1021",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "categoria",
+   "valor": "other_amortisation",
+   "linea": null,
+   "etiqueta": "Avskrivninger markedsrettigheter",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "776f913",
-  "befc35e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,17 +126,26 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 268.131288 - gastos 237.756338 ± financiero 4.424654 ± impuesto 0 no da el impreso 24.667584",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.105427357601002e-14
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Rentekostnad\" (financiero) -5 066 010, en lugar de \"Rentekostnad\" (2026-10-19, costo financiero leído como ingreso: Netto finans -5.707.366 y el resultado cierra en 24.667.584 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
+  "ajuste manual: fila \"Avskrivninger spillerrettigheter\" (gasto) 19 207 686, en lugar de \"Ordinære avskrivninger\" (2026-10-19, Note 4 abre las amortizaciones (28.455.288 consolidado): derechos de jugadores 19.207.686 (Viking Stadion AS no tiene derechos) (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
+  "ajuste manual: fila \"Avskrivninger markedsrettigheter\" (gasto) 225 000 (2026-10-19, Note 4: derechos de mercado 225.000 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
+  "ajuste manual: fila \"Avskrivninger varige driftsmidler\" (gasto) 9 022 602 (2026-10-19, resto del renglón consolidado: 28.455.288 - 19.207.686 - 225.000 = 9.022.602, bienes de uso del AS y del estadio (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
   "duda de localizar que no afecta la carga: b18 repite en columnas KONSERN el mismo estado consolidado que b14 (pág. 5)."
  ],
  "reintentar": null,
@@ -63,12 +154,12 @@
  "totales": {
   "ingresos": 268.131288,
   "gastos": 237.756338,
-  "financiero": 4.424654,
+  "financiero": -5.707366,
   "impuesto": 0,
   "resultadoImpreso": 24.667584,
   "resultadoParaCargar": 24.667584,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -152,20 +243,36 @@
    "origen": "nota que desglosa \"Lønn og sosiale kostnader\""
   },
   {
-   "etiqueta": "Ordinære avskrivninger",
-   "lado": "gasto",
-   "M": 28.455288,
-   "pagina": 5,
-   "linea": 288,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Annen driftskostnad",
    "lado": "gasto",
    "M": 112.406643,
    "pagina": 5,
    "linea": 289,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "lado": "gasto",
+   "M": 19.207686,
+   "pagina": 5,
+   "linea": 288,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Avskrivninger markedsrettigheter",
+   "lado": "gasto",
+   "M": 0.225,
+   "pagina": 5,
+   "linea": 288,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "lado": "gasto",
+   "M": 9.022602,
+   "pagina": 5,
+   "linea": 288,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -185,7 +292,7 @@
   },
   {
    "etiqueta": "Rentekostnad",
-   "M": 5.06601,
+   "M": -5.06601,
    "linea": 296
   }
  ],

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
   "club": "molde",
   "year": 2025,
-  "generatedAt": "2026-10-19T00:02:20.547Z",
+  "generatedAt": "2026-10-19T01:03:23.108Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         2.920111
       ],
-      "glosa": "Cuotas de participación"
+      "glosa": "Cuotas de participación / copagos"
     },
     {
       "label": "Markedsmidler NFF, NTF og UEFA",
@@ -34,7 +34,7 @@
       "values": [
         60.287629
       ],
-      "glosa": "Fondos de mercado de la NFF, NTF y UEFA"
+      "glosa": "Fondos de mercado NFF, NTF y UEFA"
     },
     {
       "label": "Andre tilskudd",
@@ -64,7 +64,7 @@
       "values": [
         0.177551
       ],
-      "glosa": "Ingresos por Copa Nacional"
+      "glosa": "Ingresos por Copa de Noruega"
     },
     {
       "label": "Inntekter E-Cup",
@@ -84,7 +84,7 @@
       "values": [
         0.545067
       ],
-      "glosa": "Liquidación de la Copa Nacional"
+      "glosa": "Liquidación por Copa de Noruega"
     },
     {
       "label": "Andre inntekter privatkamper etc.",
@@ -104,7 +104,7 @@
       "values": [
         27.936741
       ],
-      "glosa": "Ingresos por publicidad y patrocinio"
+      "glosa": "Ingresos por patrocinio y publicidad"
     },
     {
       "label": "Andre driftsinntekter",
@@ -124,7 +124,7 @@
       "values": [
         5.116762
       ],
-      "glosa": "Venta y cesión de jugadores"
+      "glosa": "Traspaso y cesión de jugadores"
     },
     {
       "label": "Administrasjon",
@@ -144,7 +144,7 @@
       "values": [
         132.651613
       ],
-      "glosa": "Sueldos de jugadores, entrenadores, cuerpo técnico y administración"
+      "glosa": "Salarios de jugadores, técnicos, personal de apoyo y administración"
     },
     {
       "label": "Arbeidsgiveravgift",
@@ -154,7 +154,7 @@
       "values": [
         18.035924
       ],
-      "glosa": "Seguridad social a cargo de la empresa"
+      "glosa": "Cotizaciones a la seguridad social a cargo del empleador"
     },
     {
       "label": "Pensjonskostnad",
@@ -164,7 +164,7 @@
       "values": [
         1.684061
       ],
-      "glosa": "Gastos de pensiones"
+      "glosa": "Gastos de planes de pensiones"
     },
     {
       "label": "Andre ytelser",
@@ -174,7 +174,7 @@
       "values": [
         2.387713
       ],
-      "glosa": "Otras retribuciones y prestaciones"
+      "glosa": "Otras retribuciones de personal"
     },
     {
       "label": "Utgifter treningsleir/privatkamper",
@@ -234,7 +234,7 @@
       "values": [
         0.795934
       ],
-      "glosa": "Cuotas a la Federación Noruega de Fútbol"
+      "glosa": "Tasas de la Federación Noruega de Fútbol"
     },
     {
       "label": "Annonsering seriekamper",
@@ -264,7 +264,7 @@
       "values": [
         2.300605
       ],
-      "glosa": "Otros gastos de eventos"
+      "glosa": "Otros gastos de organización de eventos"
     },
     {
       "label": "Utgifter cupkamper",
@@ -274,7 +274,7 @@
       "values": [
         0.881392
       ],
-      "glosa": "Gastos de partidos de copa"
+      "glosa": "Gastos por partidos de copa"
     },
     {
       "label": "Utgifter E-cup",
@@ -284,7 +284,7 @@
       "values": [
         4.528245
       ],
-      "glosa": "Gastos de competiciones europeas"
+      "glosa": "Gastos por competiciones europeas"
     },
     {
       "label": "Utgifter andre arrangement",
@@ -294,7 +294,7 @@
       "values": [
         1.894239
       ],
-      "glosa": "Gastos de otros eventos"
+      "glosa": "Gastos por otros eventos"
     },
     {
       "label": "Reisekostnader seriekamper",
@@ -357,16 +357,6 @@
       "glosa": "Gastos de instalaciones"
     },
     {
-      "label": "Avskrivninger",
-      "lado": "expense",
-      "page": 11,
-      "section": "estado",
-      "values": [
-        67.336863
-      ],
-      "glosa": "Amortizaciones"
-    },
-    {
       "label": "Nedskrivninger",
       "lado": "expense",
       "page": 11,
@@ -374,7 +364,7 @@
       "values": [
         11.738298
       ],
-      "glosa": "Pérdidas por deterioro"
+      "glosa": "Pérdidas por deterioro de valor"
     },
     {
       "label": "Tap på fordringer",
@@ -385,6 +375,26 @@
         0
       ],
       "glosa": "Pérdidas por créditos incobrables"
+    },
+    {
+      "label": "Avskrivninger spillerrettigheter",
+      "lado": "expense",
+      "page": 11,
+      "section": "ajuste manual",
+      "values": [
+        66.692397
+      ],
+      "glosa": "Amortización de derechos federativos"
+    },
+    {
+      "label": "Avskrivninger varige driftsmidler",
+      "lado": "expense",
+      "page": 11,
+      "section": "ajuste manual",
+      "values": [
+        0.644466
+      ],
+      "glosa": "Amortización del inmovilizado material"
     }
   ]
 }

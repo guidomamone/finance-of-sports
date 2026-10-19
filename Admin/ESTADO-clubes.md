@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 276 clubes, 1001 ejercicios, 19 países.
+TOTAL: 283 clubes, 1008 ejercicios, 21 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -117,6 +117,9 @@ BRASIL (42)
   Vila Nova             9 ejercicios (2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025), balance, BRL
   Vitória               1 ejercicio (2025), balance, BRL
   Volta Redonda         2 ejercicios (2024 a 2025), balance, BRL
+
+CH (1)
+  Basel  1 ejercicio (2021), balance, CHF, sin deuda/caja
 
 CHILE (3)
   Colo-Colo             3 ejercicios (2022 a 2024), balance, CLP
@@ -281,11 +284,19 @@ JAPÓN (10)
 MÉXICO (1)
   Club América  1 ejercicio (2025), balance, MXN, sin deuda/caja
 
-NL (4)
-  Ajax       2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  AZ         2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  Feyenoord  2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  PSV        2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+NL (5)
+  Ajax             2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  AZ               2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  Feyenoord        2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  Go Ahead Eagles  1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
+  PSV              2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+
+NO (5)
+  Aalesund      1 ejercicio (2025), balance, NOK, sin deuda/caja
+  Molde         1 ejercicio (2025), balance, NOK, sin deuda/caja
+  Sarpsborg 08  1 ejercicio (2025), balance, NOK, sin deuda/caja
+  Vålerenga     1 ejercicio (2025), balance, NOK, sin deuda/caja
+  Viking        1 ejercicio (2025), balance, NOK, sin deuda/caja
 
 PERÚ (1)
   Alianza Lima  6 ejercicios (2019 a 2024), balance, PEN

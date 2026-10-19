@@ -1,28 +1,190 @@
 {
  "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf",
- "generado": "2026-10-19T00:30:35.665Z",
+ "generado": "2026-10-19T01:15:31.117Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (valerenga-no)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2025-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 3 documento(s) mirados)"
+  "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2025-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 3 documento(s) mirados)",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-12-31); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "valerenga-no",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Sponsorinntekter",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 44.538148,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Markeds- og medieinntekter",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 28.53763,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Billettsalg",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 25.505735,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Viderefakturert",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.19539,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diverse inntekter",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.047723,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Varekostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -12.565199,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lønninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -11.905657,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Arbeidsgiveravgift",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.802767,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Pensjonskostnader",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.247852,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Andre ytelser",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.302202,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Avskrivning av driftsmidler",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.185432,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.045077,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Annen driftskostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -98.900054,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "NOK",
+   "fxRef": "NOK@2025-12-31",
+   "sourceId": "valerenga-no-aarsregnskap-valerenga-fotball-as-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 31.72628,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Annen finansinntekt",
+     "value": 70.10379
+    },
+    {
+     "label": "Annen finanskostnad",
+     "value": -38.37751
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 99.824626,
+   "officialTotalExpenses": 128.95424,
+   "officialPAT": 2.596666
+  },
+  "source": {
+   "id": "valerenga-no-aarsregnskap-valerenga-fotball-as-2025",
+   "clubId": "valerenga-no",
+   "title": "Vålerenga Fotball AS — aarsregnskap-valerenga-fotball-as-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.md",
  "reemplaza": false,
  "periodo": {
@@ -38,5 +200,357 @@
  },
  "clubId": "valerenga-no",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2025-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 3 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "-38 377 510",
+   "linea": 123,
+   "etiqueta": "Annen finanskostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen finanskostnad",
+   "motivo": "costo financiero leído como ingreso: 70.103.790 - 38.377.510 y el resultado cierra en 2.596.666 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L123",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 15,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Sponsorinntekter",
+   "page": 8,
+   "native": 44.538148,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Salgsinntekt\")",
+   "signoFijo": 44.538148,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 44.538148
+  },
+  {
+   "label": "Markeds- og medieinntekter",
+   "page": 8,
+   "native": 28.53763,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Salgsinntekt\")",
+   "signoFijo": 28.53763,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Es el ingreso del acuerdo de mercado y medios con la liga (Note 1 'Markeds- og medieinntekter'; los principios dicen 'Markeds- og mediaavtalen ... periodisering basert på forventet tabellplassering'). Los sponsors estan aparte en 'Sponsorinntekter' (44 538 148). Va a Televisación / derechos de TV; si no, Televisión da 0. Suma Note 1: 44 538 148 + 28 537 630 + 25 505 735 = 98 581 513. Contiene algo de componente de mercado no separable. [Markeds- og medieinntekter 28 537 630 (L292); Sponsorinntekter 44 538 148 (L291)]",
+   "destino": "revenue",
+   "amountNative": 28.53763
+  },
+  {
+   "label": "Billettsalg",
+   "page": 8,
+   "native": 25.505735,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Salgsinntekt\")",
+   "signoFijo": 25.505735,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 25.505735
+  },
+  {
+   "label": "Viderefakturert",
+   "page": 8,
+   "native": 0.19539,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre inntekter\")",
+   "signoFijo": 0.19539,
+   "cat": "other_income",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.19539
+  },
+  {
+   "label": "Diverse inntekter",
+   "page": 8,
+   "native": 1.047723,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre inntekter\")",
+   "signoFijo": 1.047723,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.047723
+  },
+  {
+   "label": "Varekostnad",
+   "page": 2,
+   "native": 12.565199,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 12.565199,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.565199
+  },
+  {
+   "label": "Lønninger",
+   "page": 8,
+   "native": 11.905657,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 11.905657,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -11.905657
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "page": 8,
+   "native": 1.802767,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 1.802767,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales con el sueldo: wages_squad. Note 3: 11 905 657 + 1 802 767 + 247 852 + 2 302 202 = 16 258 478. [Arbeidsgiveravgift 1 802 767 (L312)]",
+   "destino": "expense",
+   "amountNative": -1.802767
+  },
+  {
+   "label": "Pensjonskostnader",
+   "page": 8,
+   "native": 0.247852,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.247852,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pension con el sueldo: wages_squad. [Pensjonskostnader 247 852 (L313)]",
+   "destino": "expense",
+   "amountNative": -0.247852
+  },
+  {
+   "label": "Andre ytelser",
+   "page": 8,
+   "native": 2.302202,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 2.302202,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otras prestaciones, parte de Note 3 Lønnskostnader: wages_squad. [Andre ytelser 2 302 202 (L314)]",
+   "destino": "expense",
+   "amountNative": -2.302202
+  },
+  {
+   "label": "Avskrivning av driftsmidler",
+   "page": 2,
+   "native": 0.185432,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.185432,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.185432
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "page": 2,
+   "native": 1.045077,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.045077,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No es deterioro de pases: Note 5 muestra que 1 045 077 es 'Tap på fordringer' (perdidas por cobros: 1 406 878 perdidas constatadas - 361 801 de reversion de provision). El deterioro de derechos de jugadores (2 430 687 acumulado, Note 4) no pasa por esta fila (los jugadores van en finanzas). Es una perdida operativa por incobrables: Otros gastos. [Tap på fordringer 1 045 077 (L369); Nedskrivning av varige driftsmidler og immaterielle eiendeler 1 045 077 (L116)]",
+   "destino": "expense",
+   "amountNative": -1.045077
+  },
+  {
+   "label": "Annen driftskostnad",
+   "page": 2,
+   "native": 98.900054,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 98.900054,
+   "cat": "other_expenses",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -98.900054
+  },
+  {
+   "label": "Annen finansinntekt",
+   "page": null,
+   "native": 70.10379,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "page": null,
+   "native": -38.37751,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Salgsinntekt\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Andre inntekter\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Lønnskostnad\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 99.824626,
+  "expSum": -128.95424,
+  "officialTotalRevenue": 99.824626,
+  "officialTotalExpenses": 128.95424,
+  "officialPAT": 2.596666,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 2.596666,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 99.824626
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 128.95424
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "NOK@2025-12-31",
+  "fx": 10.0791,
+  "source": "market_close",
+  "label": "Tipo medio de referencia de Norges Bank al 2025-12-31"
+ },
+ "liga": {
+  "valor": "no-eliteserien",
+  "fuente": "roster cacheado de \"2025 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Vålerenga\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (5 de 5 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "NOK",
+   "fuente": "moneda de curso legal de Noruega (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "NOK@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 10.0791. --escribir agrega 'NOK@2025-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "valerenga-no-aarsregnskap-valerenga-fotball-as-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "no-eliteserien",
+   "fuente": "roster cacheado de \"2025 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Vålerenga\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 5,
+  "lineasGasto": 8,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

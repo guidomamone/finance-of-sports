@@ -1,0 +1,13 @@
+// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
+window.RANKINGS = window.RANKINGS || {};
+window.RANKINGS["no-1divisjon"] = {
+  2025: {
+    leagueSize: null,
+    wiki: {"t":"2025 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"aalesund-no", revenue:6.988, reportType:"official_balance_sheet",
+        sourceId:"aalesund-no-aarsregnskap-aalesund-fotball-as-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.944],["Otros ingresos",0.044]] },
+    ],
+  },
+};
