@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 765 — Merge de finanzas 4: el registro de entidades con las 10 altas (2026-10-19)
+
+Lo generado regenerado; P0 0 / P1 0.
+
+- To-do 294 cerrado: Go Ahead Eagles, Viking, Vålerenga, Molde, Basel, Aalesund, Sarpsborg 08, Luzern, St. Gallen y Fredrikstad en el registro,
+  con cita por línea (60 clubes, 265 entidades, 365 relaciones).
+- To-do 282: Lazio 2006, informe de Deloitte (individual, con salvedades) recuperado de la captura truncada de Wayback. Roma 2022 queda
+  pendiente (Guido: no hay informe del consolidado público).
+
 ## Versión 764 — Segunda pasada a los sin sponsor; el 273 se cierra (2026-10-19)
 
 Merge de datos 2 (lo generado regenerado) y de pipeline 3; P0 0 / P1 0.

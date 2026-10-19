@@ -53,8 +53,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
 **E. Pantallas**
-* 282: quién audita, lo que queda (50 informes; la compuerta del pipeline) --> Finanzas 4
-* 294: registro de entidades, lo que queda (las 10 altas del borrador ya en main) --> Finanzas 4
+* 282: quién audita, lo que queda (Hamburgo 2024 con tu captcha; las 10 altas del lote 94 sin línea; la compuerta del pipeline) --> Finanzas 4
 * 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
 
 **E2. Distribución (depende de 246)**
@@ -218,8 +217,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 50 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);
    quedan para sourcing Hamburgo 2024 (ficha de la KGaA HRB 191603 o de la AG vieja HRB 47576 en el Unternehmensregister; captcha por
-   publicación, lo resuelve Guido), Lazio 2006 (figura `falta_transcripcion`; hay una captura truncada en Wayback) y Roma 2022 (el link de "consolidato" baja el individual). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
-   cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
+   publicación, lo resuelve Guido) (Lazio 2006 ya salió de Wayback; Roma 2022 queda pendiente por decisión de Guido: no hay informe del consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
+   cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline): hoy 10 balances de las altas del lote 94
+   no tienen línea de auditoría. En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
    (Deloitte), LaLiga 2024-25 (LNFP, Netadia) y J.League 2025 (Grant Thornton Taiyo), en `Ligas/` y en `data/auditoria/_ligas.js`. Falta:
@@ -254,10 +254,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    hechos; Estonia y Bélgica dados de alta (lotes 89 y 90, 17 clubes). Falta: los lotes de carga por país que siguen (91-92 en curso,
    después Suiza, Países Bajos, Colombia, Beşiktaş); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
    o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, después de medir el 298 e.
-294. REGISTRO DE ENTIDADES: LO QUE QUEDA (pedido de Guido, 2026-10-18). Tiene 50 clubes y 9 grupos (Bahia ya cita el QSA del CNPJ). Falta:
-   los clubes del borrador `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando onboarding los publique (Viking, Vålerenga, Luzern,
-   St. Gallen, Molde, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con
-   cita). Después, fast-forward de la rama finanzas.
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más

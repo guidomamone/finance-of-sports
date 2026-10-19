@@ -307,3 +307,5 @@
 
 - `tools/entidades.mjs --con <borrador>` verifica el borrador contra los .md sin escribir y sale limpio aunque diga "data/entidades/ desactualizado":
   ese aviso es normal con `--con`.
+
+## Después del merge de Finanzas 4 (2026-10-19)
