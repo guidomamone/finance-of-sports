@@ -278,5 +278,101 @@ window.LIGA_AUDITORIA = {
     "linea": 715
    }
   }
+ },
+ "nl-eredivisie": {
+  "2025": {
+   "entidad": {
+    "nombre": "KNVB",
+    "legal": "Koninklijke Nederlandse Voetbalbond"
+   },
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "EY Accountants B.V."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "federacion",
+   "fuente": {
+    "md": "Ligas/Países Bajos/KNVB/knvb-jaarverslag-2024-25.md",
+    "linea": 4203
+   }
+  }
+ },
+ "nl-eerstedivisie": {
+  "2025": {
+   "entidad": {
+    "nombre": "KNVB",
+    "legal": "Koninklijke Nederlandse Voetbalbond"
+   },
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "EY Accountants B.V."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "federacion",
+   "fuente": {
+    "md": "Ligas/Países Bajos/KNVB/knvb-jaarverslag-2024-25.md",
+    "linea": 4203
+   }
+  }
+ },
+ "cl-primera": {
+  "2025": {
+   "entidad": {
+    "nombre": "ANFP",
+    "legal": "Asociación Nacional de Fútbol Profesional - ANFP"
+   },
+   "auditor": {
+    "nombre": "KAM Auditores Consultores Ltda.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Chile/ANFP/anfp-estados-financieros-2025.md",
+    "linea": 61
+   }
+  }
+ },
+ "hr-hnl": {
+  "2025": {
+   "entidad": {
+    "nombre": "HNS",
+    "legal": "Hrvatski nogometni savez"
+   },
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers d.o.o."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "federacion",
+   "fuente": {
+    "md": "Ligas/Croacia/HNS/hns-izvjesce-revizora-2025.md",
+    "linea": 22
+   }
+  }
+ },
+ "ru-premierliga": {
+  "2025": {
+   "entidad": {
+    "nombre": "Premier Liga",
+    "legal": "Ассоциация футбольных клубов «Российская Премьер-Лига»"
+   },
+   "auditor": {
+    "nombre": "АО ДРТ",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Rusia/RPL/rpl-zaklyuchenie-auditora-2025.md",
+    "linea": 43
+   }
+  }
  }
 };

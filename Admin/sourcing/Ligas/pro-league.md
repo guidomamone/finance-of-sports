@@ -14,7 +14,7 @@ proleague.be (solo notas de prensa sobre las cuentas de los clubes) · barrido: 
   (pdftotext). El depósito es el formulario XBRL de la jaarrekening: **no trae el informe del comisario**. Los depósitos de 2022 a 2024
   tampoco (el texto "getrouw beeld" que aparece es una nota de los administradores, no una opinión).
 - Comisario: KPMG Bedrijfsrevisoren BV (B00001), mandato 2022-10-20 a 2025-12-17 (línea 121 del `.md`). Sin su informe no hay opinión que citar: la
-  línea de auditoría NO se cargó: `tools/auditoria.mjs` publica en `data/auditoria/_ligas.js` también una entrada de liga con
-  `falta_transcripcion` (con `auditor: null` y `fuente: null`), cosa que no hace con los clubes, y no se sabe si la tarjeta de Ligas la
-  soporta. Hasta que llegue el informe, la liga queda sin línea. Candidato a mail a la Pro League (sin armar).
+  línea de auditoría queda `falta_transcripcion`: no se publica en `_ligas.js` (la tarjeta "Las cuentas de la liga" mostraba el código crudo y decía que
+  no trae informe de un auditor; ya no se publica, como con los clubes) y figura como pendiente en `node tools/auditoria.mjs --pendientes`. Candidato a
+  mail a la Pro League (sin armar).
 - Último chequeo: 2026-10-19.

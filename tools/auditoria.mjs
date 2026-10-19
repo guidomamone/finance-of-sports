@@ -22,12 +22,15 @@
 //   (3) si el título de la base dice "con salvedades" y el párrafo de opinión es limpio, manda el párrafo de opinión; (4) opinión limpia
 //   sobre una parte del balance y abstención sobre el resto es abstencion.
 //   La entidad que organiza una liga (AFA, LFP) va con "ligaId" (de data/leagues.js) en vez de "clubId" y con "entidad":{"nombre","legal"?};
-//   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]).
+//   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]);
+//   una liga con `falta_transcripcion` no sale (queda pendiente en `--pendientes`, como un club).
 //   alcance (opcional, con nota; sin el campo es una auditoría plena de las cuentas del club). Decisión de Guido, 2026-10-18:
 //     revision_limitada         revisión limitada (ISRE 2410 y similares): "no encontramos nada", no es una auditoría (Como 2025).
 //     procedimientos_acordados  procedimientos acordados: la firma comprobó cifras puntuales; ni auditoría ni revisión (Osijek 2025).
 //     proposito_especial        auditoría de estados preparados para la licencia de la federación, no de las cuentas legales (Kifisia).
 //     grupo                     auditoría de las cuentas del grupo dueño del club, no del club solo (Club América 2025, Ollamani).
+//     federacion                (solo en una línea de liga) el balance es el de la federación entera, no el de la liga: la sociedad que organiza la
+//                               liga no publica el suyo (KNVB para la Eredivisie y la Eerste Divisie, decisión de Guido, 2026-10-19).
 //   Un "relatório de revisão especial" que audita con seguridad razonable y da opinión es una auditoría plena (Criciúma 2015-2019).
 //   nota (opcional): una aclaración interna para la próxima sesión; no se publica.
 //
@@ -64,7 +67,7 @@ const CHECK = args.includes('--check');
 
 const DICTAMENES = new Set(['sin_salvedades', 'con_salvedades', 'adverso', 'abstencion', 'sin_informe', 'falta_transcripcion']);
 const TIPOS = new Set(['firma', 'persona', 'organismo']);
-const ALCANCES = new Set(['revision_limitada', 'procedimientos_acordados', 'proposito_especial', 'grupo']);
+const ALCANCES = new Set(['revision_limitada', 'procedimientos_acordados', 'proposito_especial', 'grupo', 'federacion']);
 // El nombre corto de cada red, para que "Deloitte & Touche SpA" y "Deloitte LLP" sean el mismo auditor en el sitio.
 const REDES = [[/deloitte/i, 'Deloitte'], [/pricewaterhouse|\bpwc\b/i, 'PwC'], [/\bkpmg\b/i, 'KPMG'], [/ernst\s*&\s*young|\bey\b/i, 'EY'],
   [/\bbdo\b/i, 'BDO'], [/grant\s*thornton/i, 'Grant Thornton'], [/mazars/i, 'Forvis Mazars'], [/\brsm\b/i, 'RSM'], [/baker\s*tilly/i, 'Baker Tilly'],
@@ -187,6 +190,7 @@ const faltan = [...registro.values()].filter(o => o.dictamen === 'falta_transcri
 if (args.includes('--pendientes')) {
   for (const p of pendientes) console.log(`${p.id}:${p.y}\t${p.mds.length ? p.mds.join(' | ') : '(sin .md)'}`);
   for (const o of faltan) console.log(`${o.clubId}:${o.anio}\tFALTA EN LA TRANSCRIPCIÓN: ${o.nota}`);
+  for (const o of registroLigas.values()) if (o.dictamen === 'falta_transcripcion') console.log(`liga ${o.ligaId}:${o.anio}\tFALTA EN LA TRANSCRIPCIÓN: ${o.nota}`);
   console.error(`${pendientes.length} balances sin línea en ${REGISTRO}.`);
   process.exit(0);
 }
@@ -217,9 +221,10 @@ const archivos = {};
 for (const [p, d] of Object.entries(porPais))
   archivos[`${p}.js`] = `${CAB}window.CLUB_AUDITORIA = window.CLUB_AUDITORIA || {};\nObject.assign(window.CLUB_AUDITORIA, ${JSON.stringify(d, null, 1)});\n`;
 const porLiga = {};
-for (const o of registroLigas.values()) { const c = o.citas || {};
+// Una liga con `falta_transcripcion` tampoco se publica (la tarjeta mostraría el código crudo y diría que no trae informe, cosa que no es cierta): queda como pendiente.
+for (const o of [...registroLigas.values()].filter(o => o.dictamen !== 'falta_transcripcion')) { const c = o.citas || {};
   (porLiga[o.ligaId] ||= {})[o.anio] = { entidad: o.entidad, auditor: corto(o.auditor) || null, dictamen: o.dictamen, continuidad: o.continuidad,
-    fuente: c.dictamen ? { md: c.dictamen.md, linea: c.dictamen.linea } : null }; }
+    ...(o.alcance ? { alcance: o.alcance } : {}), fuente: c.dictamen ? { md: c.dictamen.md, linea: c.dictamen.linea } : null }; }
 archivos['_ligas.js'] = `${CAB}window.LIGA_AUDITORIA = ${JSON.stringify(porLiga, null, 1)};\n`;
 archivos['_paises.js'] = `${CAB}window.AUDITORIA_PAISES = ${JSON.stringify(Object.keys(porPais).sort())};\n`;
 

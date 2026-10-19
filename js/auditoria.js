@@ -43,6 +43,8 @@ const FIN_AUDITORIA = (function(){
         x: t('aud.al.lic.x', 'El auditor revisó los estados que el club preparó para la licencia de la federación, no sus cuentas legales.') },
       grupo: { reemplaza: false, chip: t('aud.al.grupo', 'Auditoría del grupo dueño'),
         x: t('aud.al.grupo.x', 'El informe es sobre las cuentas del grupo dueño del club; no hay un informe del club solo.') },
+      federacion: { reemplaza: false, chip: t('aud.al.fed', 'Cuentas de la federación entera'),
+        x: t('aud.al.fed.x', 'Son las cuentas de toda la federación (con el fútbol amateur y las selecciones), no solo las de la liga.') },
     }[x] || null;
   }
   function tipo(x){
@@ -98,7 +100,11 @@ const FIN_AUDITORIA = (function(){
     const d = al && al.reemplaza ? [al.chip, 'gris', al.x] : dictamen(a.dictamen);
     const au = a.auditor;
     const ent = a.entidad.legal || a.entidad.nombre;
-    const frase = esc(ent) + ', ' + esc(t('aud.liga.org', 'la entidad que organiza la liga, publica su propio balance.'))
+    // La federación entera (KNVB): no es la entidad que organiza la liga, así que la frase no puede decir eso.
+    const org = a.alcance === 'federacion'
+      ? t('aud.liga.fed', 'la federación entera, publica su propio balance: la sociedad que organiza la liga no publica el suyo.')
+      : t('aud.liga.org', 'la entidad que organiza la liga, publica su propio balance.');
+    const frase = esc(ent) + ', ' + esc(org)
       + (au ? ' ' + esc(t('aud.liga.lo', 'Lo auditó')) + ` <strong>${esc(au.nombre)}</strong>` + (au.legal && au.legal !== au.nombre ? ' (' + esc(au.legal) + ')' : '') + '.'
             : ' ' + esc(t('aud.liga.sin', 'No trae informe de un auditor.')));
     const extra = al && !al.reemplaza ? `<span class="aud-chip aud-gris">${esc(al.chip)}</span>` : '';
