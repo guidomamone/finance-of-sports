@@ -22,6 +22,11 @@ const lommelskbeRevenueLinesByYear = {
   2023: [
     { rawLabel:'Brutomarge', normalizedCategory:'lump_football_operations', amountNative:1.253901, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Omzet', normalizedCategory:'lump_football_operations', amountNative:3.605166, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:3.557468, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:17.50412, disclosureLevel:'aggregated' },
+  ],
 };
 const lommelskbeExpenseLinesByYear = {
   2025: [
@@ -80,6 +85,20 @@ const lommelskbeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.016018, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-4.986963, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.295242, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Aankopen', normalizedCategory:'other_expenses', amountNative:-0.224607, disclosureLevel:'aggregated' },
+    { rawLabel:'Voorraad: afname (toename) (+)/(-)', normalizedCategory:'other_expenses', amountNative:0.001719, disclosureLevel:'aggregated' },
+    { rawLabel:'Diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-5.51756, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen en rechtstreekse sociale voordelen', normalizedCategory:'wages_squad', amountNative:-12.730046, disclosureLevel:'aggregated' },
+    { rawLabel:'Werkgeversbijdragen voor sociale verzekeringen', normalizedCategory:'wages_squad', amountNative:-1.652467, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere personeelskosten', normalizedCategory:'wages_squad', amountNative:-0.807499, disclosureLevel:'aggregated' },
+    { rawLabel:'Bedrijfsbelastingen en -taksen', normalizedCategory:'admin_general_expense', amountNative:-0.005288, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere', normalizedCategory:'other_expenses', amountNative:-0.765501, disclosureLevel:'aggregated' },
+    { rawLabel:'Minderwaarden bij de realisatie van immateriële en materiële vaste activa', normalizedCategory:'exceptional_items', amountNative:-0.923578, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-4.610306, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-5.364247, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.456208, disclosureLevel:'aggregated' },
   ],
 };
 const lommelskbeFiscalYearMeta = {
@@ -207,6 +226,25 @@ const lommelskbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.253901, officialTotalExpenses:15.546609, officialPAT:-14.449557,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'lommelsk-be-jaarrekening-2024-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.038451, tax:-0.103242,
+    extraRows: [
+      {label:'Andere financiële opbrengsten', value:0.025165},
+      {label:'Kosten van schulden', value:-0.009755},
+      {label:'Andere financiële kosten', value:-0.053861},
+      {label:'Belastingen', value:-0.103242},
+    ],
+    sinDesglose: [
+      {renglon:'Omzet', lado:'revenue', importe:3.605166, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:24.666754, officialTotalExpenses:27.521704, officialPAT:-8.530526,
+  },
 };
 const lommelskbePresupuestoOverlayByYear = {};
 
@@ -256,6 +294,11 @@ Object.assign(sources, {
   'lommelsk-be-jaarrekening-2023-06-30-individual': {
     id:'lommelsk-be-jaarrekening-2023-06-30-individual', clubId:'lommelsk-be',
     title:'Voetbalclub Lommel SK NV — jaarrekening-2023-06-30-individual (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'lommelsk-be-jaarrekening-2024-06-30-individual': {
+    id:'lommelsk-be-jaarrekening-2024-06-30-individual', clubId:'lommelsk-be',
+    title:'Voetbalclub Lommel SK NV — jaarrekening-2024-06-30-individual (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

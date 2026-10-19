@@ -134,6 +134,7 @@ window.SPONSORS_INDICE = [
   ["aposta-tudo-bet","Aposta Tudo Bet",["c"]],
   ["apotheka","Apotheka",["c"]],
   ["applerind","Applerind",["m"]],
+  ["appsys-ict-group","AppSys ICT Group",["c"]],
   ["aps-groep","APS Groep",["c"]],
   ["apuesta-total","Apuesta Total",["c"]],
   ["aqbank","AQBank",["c"]],

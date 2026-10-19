@@ -29,6 +29,9 @@ window.RANKINGS["be-challengerproleague"] = {
     leagueSize: 16,
     wiki: {"t":"2023–24 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"lommelsk-be", revenue:26.418, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.861],["Otros ingresos",22.557]] },
       { id:"beerschot-be", revenue:10.109, reportType:"official_balance_sheet",
         sourceId:"beerschot-be-jaarrekening-2024-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.582],["Otros ingresos",3.527]],

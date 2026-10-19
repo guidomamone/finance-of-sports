@@ -138,6 +138,7 @@ window.SPONSORS = {
     "aposta-tudo-bet": {"n":"Aposta Tudo Bet","roles":["c"],"e":[["br-serieC",2026,"Maringá",null,"c"]]},
     "apotheka": {"n":"Apotheka","roles":["c"],"e":[["ru-premierliga",2026,"CSKA","cskamoscow-ru","c"],["ru-premierliga",2025,"CSKA","cskamoscow-ru","c"]]},
     "applerind": {"n":"Applerind","roles":["m"],"e":[["kr-kleague1",2026,"Gangwon FC",null,"m"],["kr-kleague2",2024,"Ansan Greeners",null,"m"],["kr-kleague2",2024,"Chungbuk Cheongju",null,"m"],["kr-kleague1",2021,"Gangwon FC",null,"m"],["kr-kleague1",2020,"Gangwon FC",null,"m"]]},
+    "appsys-ict-group": {"n":"AppSys ICT Group","roles":["c"],"e":[["be-challengerproleague",2024,"Lommel SK","lommelsk-be","c","https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)"]]},
     "aps-groep": {"n":"APS Groep","roles":["c"],"e":[["nl-eerstedivisie",2024,"Roda JC Kerkrade","rodajc-nl","c"]]},
     "apuesta-total": {"n":"Apuesta Total","roles":["c"],"e":[["pe-liga1",2026,"Alianza Lima","alianzalima-pe","c"],["pe-liga1",2026,"Sport Boys",null,"c"],["pe-liga1",2026,"Universitario",null,"c"],["pe-liga1",2024,"Alianza Lima","alianzalima-pe","c"],["pe-liga1",2024,"Sport Boys",null,"c"],["pe-liga1",2024,"Universitario",null,"c"],["pe-liga1",2023,"Alianza Lima","alianzalima-pe","c"],["pe-liga1",2023,"Universitario",null,"c"]]},
     "aqbank": {"n":"AQBank","roles":["c"],"e":[["br-serieB",2024,"Santos","santos-br","c"]]},
