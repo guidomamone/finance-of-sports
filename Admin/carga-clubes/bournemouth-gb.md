@@ -129,6 +129,51 @@ clasificación propia del documento, ver comentario de cabecera). cash = Cash at
 hand.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match and season ticket income | pág. 28, precedente |
+| 2 | English football league and FA Cup income | pág. 28, precedente |
+| 3 | Premier League income | pág. 28, precedente |
+| 4 | Sponsorship and advertising | pág. 28, precedente |
+| 5 | Hospitality and events | pág. 28, precedente |
+| 6 | Shop merchandise | pág. 28, precedente |
+| 7 | Other income | pág. 28, precedente |
+| 8 | Other operating income | pág. 17, Jev 1 |
+| 9 | Exceptional other operating income | pág. 17, Jev 0.99 |
+| 10 | Profit on disposal of players' registrations | pág. 17, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Wages and salaries | pág. 29, Claude 0.9 |
+| 2 | Social security costs | pág. 29, Jev 0.93 |
+| 3 | Other pension costs | pág. 29, Jev 0.92 |
+| 4 | Depreciation of tangible assets | pág. 29, precedente |
+| 5 | Amortisation of intangibles | pág. 29, precedente |
+| 6 | Other operating expenses | pág. 17, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia única por palabras "Bournemouth" = "AFC Bournemouth".
+```
+
 ## 2022
 
 ### Ingresos
@@ -197,6 +242,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### bournemouth-gb-full-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

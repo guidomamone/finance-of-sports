@@ -32,6 +32,18 @@ const bournemouthGbRevenueLinesByYear = {
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0.712, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:6.853, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Match and season ticket income', normalizedCategory:'matchday_competition', amountNative:5.414, disclosureLevel:'aggregated' },
+    { rawLabel:'English football league and FA Cup income', normalizedCategory:'broadcasting', amountNative:0.773, disclosureLevel:'aggregated' },
+    { rawLabel:'Premier League income', normalizedCategory:'broadcasting', amountNative:122.203, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:8.652, disclosureLevel:'aggregated' },
+    { rawLabel:'Hospitality and events', normalizedCategory:'other_income', amountNative:2.267, disclosureLevel:'aggregated' },
+    { rawLabel:'Shop merchandise', normalizedCategory:'sponsorship_commercial', amountNative:1.354, disclosureLevel:'aggregated' },
+    { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:0.32, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:2.035, disclosureLevel:'aggregated' },
+    { rawLabel:'Exceptional other operating income', normalizedCategory:'other_income', amountNative:71.444, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:1.898, disclosureLevel:'aggregated' },
+  ],
 };
 
 const bournemouthGbExpenseLinesByYear = {
@@ -54,6 +66,14 @@ const bournemouthGbExpenseLinesByYear = {
     { rawLabel:'Depreciation of tangible assets', normalizedCategory:'depreciation', amountNative:-1.242, disclosureLevel:'aggregated' },
     { rawLabel:'Amortisation of intangibles', normalizedCategory:'player_amortisation', amountNative:-29.786, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating expenses', normalizedCategory:'other_expenses', amountNative:-17.131, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Wages and salaries', normalizedCategory:'wages_squad', amountNative:-87.832, disclosureLevel:'aggregated' },
+    { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-12.181, disclosureLevel:'aggregated' },
+    { rawLabel:'Other pension costs', normalizedCategory:'wages_squad', amountNative:-0.096, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation of tangible assets', normalizedCategory:'depreciation', amountNative:-1.484, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of intangibles', normalizedCategory:'player_amortisation', amountNative:-41.226, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating expenses', normalizedCategory:'other_expenses', amountNative:-21.471, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -91,6 +111,21 @@ const bournemouthGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:60.791, officialTotalExpenses:109.54, officialPAT:-55.51,
   },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-06-30',
+    sourceId:'bournemouth-gb-full-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-7.575, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.253},
+      {label:'Interest payable and similar expenses', value:-7.828},
+      {label:'Tax on profit/(loss)', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:216.36, officialTotalExpenses:164.29, officialPAT:44.495,
+  },
 };
 
 const bournemouthGbPresupuestoOverlayByYear = {};
@@ -125,6 +160,11 @@ Object.assign(sources, {
   'bournemouth-gb-full-accounts-2021-22': {
     id:'bournemouth-gb-full-accounts-2021-22', clubId:'bournemouth-gb',
     title:'AFC Bournemouth Limited — bournemouth-full-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'bournemouth-gb-full-accounts-2022-23': {
+    id:'bournemouth-gb-full-accounts-2022-23', clubId:'bournemouth-gb',
+    title:'AFC Bournemouth Limited — bournemouth-full-accounts-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
