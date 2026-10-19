@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf",
  "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.md",
- "generado": "2026-10-19T01:15:28.360Z",
+ "generado": "2026-10-19T01:30:10.999Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "valerenga-no",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -61,7 +61,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -72,8 +72,8 @@
  "notas": [
   "ajuste manual: fila \"Annen finanskostnad\" (financiero) -38 377 510, en lugar de \"Annen finanskostnad\" (2026-10-19, costo financiero leído como ingreso: 70.103.790 - 38.377.510 y el resultado cierra en 2.596.666 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
   "duda de localizar que no afecta la carga: b22 (pág. 15) parece otra presentación del mismo resultatregnskap individual de Vålerenga Fotball AS ya incluido en b1.",
-  "duda de localizar ya contestada para el club (columna, \"Varekostnad\"): aceptar, en aarsregnskap-valerenga-fotball-as-2025.pdf",
-  "duda de extraer ya contestada para el club (perimetro, \"Sum overføringer og disponeringer\"): aceptar, en aarsregnskap-valerenga-fotball-as-2025.pdf"
+  "duda de localizar ya contestada para el club (antes de su alta) (columna, \"Varekostnad\"): aceptar, en aarsregnskap-valerenga-fotball-as-2025.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Sum overføringer og disponeringer\"): aceptar, en aarsregnskap-valerenga-fotball-as-2025.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

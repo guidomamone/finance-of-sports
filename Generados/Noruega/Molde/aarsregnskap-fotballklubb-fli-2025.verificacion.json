@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.md",
- "generado": "2026-10-19T01:15:28.487Z",
+ "generado": "2026-10-19T01:30:11.073Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "molde-no",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -86,7 +86,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -100,7 +100,7 @@
   "ajuste manual: fila \"Avskrivninger spillerrettigheter\" (gasto) 66 692 397, en lugar de \"Avskrivninger\" (2026-10-19, la Note 12 abre el renglón (67.336.863): derechos de jugadores 66.692.397 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
   "ajuste manual: fila \"Avskrivninger varige driftsmidler\" (gasto) 644 466 (2026-10-19, Note 13: bienes de uso 644.466 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
   "duda de localizar que no afecta la carga: El documento repite el estado y las notas en las págs. 31-41, idénticos a las págs. 11-21, y b2 es la versión resumida del formulario oficial.",
-  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-fotballklubb-fli-2025.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en aarsregnskap-fotballklubb-fli-2025.pdf",
   "duda de extraer que no afecta la carga: El signo positivo es coherente con Driftsresultat -160 542 139 + 81 320 126 = -79 222 013 (L447-L449).",
   "duda de extraer que no afecta la carga: Son aplicaciones del resultado a patrimonio, no partidas de resultado."
  ],
