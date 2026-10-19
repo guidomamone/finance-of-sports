@@ -5,7 +5,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   botafogo: { 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
   coritiba: { 2023: 'br-serieA', 2024: 'br-serieB', 2025: 'br-serieB' },
   cruzeiro: { 2022: 'br-serieB', 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
-  gremio: { 2024: 'br-serieA' },
+  gremio: { 2024: 'br-serieA', 2025: 'br-serieA' },
   ituano: { 2024: 'br-serieB' },
   mirassol: { 2024: 'br-serieB' },
   'americamineiro-br': { 2023: 'br-serieA', 2024: 'br-serieB', 2025: 'br-serieB' },

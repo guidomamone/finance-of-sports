@@ -17,6 +17,36 @@ const gremioRevenueLinesByYear = {
     { rawLabel:'Festejos e Aniversários', normalizedCategory:'other_income', amountNative:0.157, disclosureLevel:'detailed' },
     { rawLabel:'Multas e indenizações', normalizedCategory:'other_income', amountNative:0.934, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Campeonato Brasileiro', normalizedCategory:'broadcasting', amountNative:131.407, disclosureLevel:'aggregated' },
+    { rawLabel:'Campeonato Gaúcho', normalizedCategory:'broadcasting', amountNative:8.92, disclosureLevel:'aggregated' },
+    { rawLabel:'Copa do Brasil', normalizedCategory:'broadcasting', amountNative:5.853, disclosureLevel:'aggregated' },
+    { rawLabel:'Copa Libertadores/Sul Americana', normalizedCategory:'broadcasting', amountNative:9.008, disclosureLevel:'aggregated' },
+    { rawLabel:'Campeonato Brasileiro Feminino', normalizedCategory:'broadcasting', amountNative:0.36, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas Patrimoniais', normalizedCategory:'member_dues', amountNative:2.287, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas Publicitárias', normalizedCategory:'sponsorship_commercial', amountNative:107.592, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de Luvas Contratuais', normalizedCategory:'other_income', amountNative:0.833, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de Jogos (c)', normalizedCategory:'matchday_competition', amountNative:3.91, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de Royalties', normalizedCategory:'other_income', amountNative:7.656, disclosureLevel:'aggregated' },
+    { rawLabel:'Premiações de Competições', normalizedCategory:'competition_bonus', amountNative:0.032, disclosureLevel:'aggregated' },
+    { rawLabel:'Locações (c)', normalizedCategory:'other_income', amountNative:2.54, disclosureLevel:'aggregated' },
+    { rawLabel:'Arrecadação Quadro Social', normalizedCategory:'member_dues', amountNative:67.551, disclosureLevel:'aggregated' },
+    { rawLabel:'Vendas Grêmio Mania (b)', normalizedCategory:'sponsorship_commercial', amountNative:31.815, disclosureLevel:'aggregated' },
+    { rawLabel:'(-) Devoluções de vendas (b)', normalizedCategory:'other_income', amountNative:-0.809, disclosureLevel:'aggregated' },
+    { rawLabel:'(-) Impostos sobre vendas (b)', normalizedCategory:'other_income', amountNative:-5.358, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras Receitas do Desporto', normalizedCategory:'other_income', amountNative:1.942, disclosureLevel:'aggregated' },
+    { rawLabel:'Doações operação Arena', normalizedCategory:'other_income', amountNative:135, disclosureLevel:'aggregated' },
+    { rawLabel:'Valor justo', normalizedCategory:'other_income', amountNative:248.161, disclosureLevel:'aggregated' },
+    { rawLabel:'Doações', normalizedCategory:'other_income', amountNative:12.507, disclosureLevel:'aggregated' },
+    { rawLabel:'Venda de Atletas (b)', normalizedCategory:'player_sales', amountNative:123.804, disclosureLevel:'aggregated' },
+    { rawLabel:'Reversão despesas renegociação comissões e outras', normalizedCategory:'other_income', amountNative:1.679, disclosureLevel:'aggregated' },
+    { rawLabel:'Recuperação despesas Bancárias', normalizedCategory:'other_income', amountNative:0.02, disclosureLevel:'aggregated' },
+    { rawLabel:'Recuperação despesas correio – Loja', normalizedCategory:'other_income', amountNative:1.969, disclosureLevel:'aggregated' },
+    { rawLabel:'Ressarcimento despesas categoria de Base e Feminino', normalizedCategory:'other_income', amountNative:0.231, disclosureLevel:'aggregated' },
+    { rawLabel:'Reembolso de despesas diversas', normalizedCategory:'other_income', amountNative:1.178, disclosureLevel:'aggregated' },
+    { rawLabel:'Mecanismo de Solidariedade (c)', normalizedCategory:'player_sales', amountNative:3.301, disclosureLevel:'aggregated' },
+    { rawLabel:'Festejos e Aniversários', normalizedCategory:'other_income', amountNative:0.156, disclosureLevel:'aggregated' },
+  ],
 };
 
 const gremioExpenseLinesByYear = {
@@ -38,6 +68,28 @@ const gremioExpenseLinesByYear = {
     { rawLabel:'Negociação de Atletas (comissões e custos)', normalizedCategory:'other_expenses', amountNative:-22.150, disclosureLevel:'detailed' },
     { rawLabel:'Outras despesas (operacionais)', normalizedCategory:'other_expenses', amountNative:-0.120, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Custo Baixa Direitos Econômicos', normalizedCategory:'player_amortisation', amountNative:-9.221, disclosureLevel:'aggregated' },
+    { rawLabel:'Salários, benefícios encargos sociais', normalizedCategory:'wages_squad', amountNative:-211.779, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas Federações, Imagens, Prémios, Mat. Esportivo e outras', normalizedCategory:'match_organisation_expense', amountNative:-111.434, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortização de Direitos sobre Atletas Profissionais', normalizedCategory:'player_amortisation', amountNative:-101.9, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços de terceiro', normalizedCategory:'admin_general_expense', amountNative:-6.507, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas de Viagens', normalizedCategory:'match_organisation_expense', amountNative:-21.889, disclosureLevel:'aggregated' },
+    { rawLabel:'Negociação de atletas', normalizedCategory:'other_expenses', amountNative:-18.944, disclosureLevel:'aggregated' },
+    { rawLabel:'CMV – Grêmio Mania', normalizedCategory:'admin_general_expense', amountNative:-15.726, disclosureLevel:'aggregated' },
+    { rawLabel:'Ingressos a Sócios', normalizedCategory:'admin_general_expense', amountNative:-0.857, disclosureLevel:'aggregated' },
+    { rawLabel:'Salários, benefícios e Encargos Sociais - Demais Administrativas', normalizedCategory:'admin_general_expense', amountNative:-36.36, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços de Terceiros', normalizedCategory:'admin_general_expense', amountNative:-29.626, disclosureLevel:'aggregated' },
+    { rawLabel:'Contingências Judiciais', normalizedCategory:'admin_general_expense', amountNative:-14.717, disclosureLevel:'aggregated' },
+    { rawLabel:'Aluguéis, Seguros, Materiais de Consumo e de Expediente', normalizedCategory:'admin_general_expense', amountNative:-11.776, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciação/Amortização Ativos Imobilizados e intangíveis', normalizedCategory:'depreciation', amountNative:-10.359, disclosureLevel:'aggregated' },
+    { rawLabel:'Água, Luz, Telefonia, Manutenção, Transportes e outras', normalizedCategory:'admin_general_expense', amountNative:-7.663, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicitárias', normalizedCategory:'admin_general_expense', amountNative:-2.383, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisão Créditos Liquidação Duvidosa', normalizedCategory:'other_expenses', amountNative:-2.134, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras despesas', normalizedCategory:'other_expenses', amountNative:-1.276, disclosureLevel:'aggregated' },
+    { rawLabel:'Tributos e Contribuições Federais', normalizedCategory:'admin_general_expense', amountNative:-1.377, disclosureLevel:'aggregated' },
+    { rawLabel:'Impairment direito de superfície', normalizedCategory:'exceptional_items', amountNative:-157.495, disclosureLevel:'aggregated' },
+  ],
 };
 
 const gremioFiscalYearMeta = {
@@ -50,6 +102,20 @@ const gremioFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-60.893, tax:0,
     officialTotalRevenue:615.021, officialTotalExpenses:510.536, officialPAT:43.592,
+  },
+  2025: {
+    currency:'BRL', fxRef:'BRL@2025-12-31',
+    sourceId:'gremio-wf-2024-2025-1774995c',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-94.638, tax:0,
+    extraRows: [
+      {label:'Receitas financeiras', value:34.122},
+      {label:'Despesas financeiras', value:-128.76},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:903.545, officialTotalExpenses:615.928, officialPAT:35.484,
   },
 };
 
@@ -74,6 +140,11 @@ Object.assign(sources, {
       type:'official_balance_sheet', reliability:'primary',
       url:'https://gremio.net/documentos/',
     },
+  'gremio-wf-2024-2025-1774995c': {
+    id:'gremio-wf-2024-2025-1774995c', clubId:'gremio',
+    title:'Grêmio Foot-Ball Porto Alegrense — wf-2024-2025-1774995c (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
 });
 
 gestionesByClub.gremio = {

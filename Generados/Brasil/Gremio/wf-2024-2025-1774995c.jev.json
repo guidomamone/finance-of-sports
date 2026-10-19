@@ -1,0 +1,1111 @@
+{
+ "md": "Clubes/Brasil/Gremio/wf-2024-2025-1774995c.md",
+ "generatedAt": "2026-10-19T17:17:27.456Z",
+ "rubrosHuella": "200d1f874e7afa716134a9d9d6cbb0d6e3b0f377",
+ "rubros": [
+  {
+   "label": "Campeonato Gaúcho",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "competition_bonus",
+     0.68
+    ],
+    [
+     "broadcasting",
+     0.27
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Copa Libertadores/Sul Americana",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\"",
+   "choice": "broadcasting",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "broadcasting",
+     0.51
+    ],
+    [
+     "competition_bonus",
+     0.49
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1133
+  },
+  {
+   "label": "Receitas Patrimoniais",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "member_dues",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "member_dues",
+     0.92
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Receitas Publicitárias",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Campeonato Brasileiro Feminino",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\"",
+   "choice": "womens_football",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "womens_football",
+     0.68
+    ],
+    [
+     "broadcasting",
+     0.2
+    ],
+    [
+     "competition_bonus",
+     0.12
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "Campeonato Brasileiro",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "competition_bonus",
+     0.5
+    ],
+    [
+     "broadcasting",
+     0.48
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Receitas de Luvas Contratuais",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Receitas de Jogos (c)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Locações (c)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "stadium_other",
+     0.46
+    ],
+    [
+     "season_tickets",
+     0.01
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Receitas de Royalties",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "broadcasting",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Premiações de Competições",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Arrecadação Quadro Social",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "(-) Devoluções de vendas (b)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "sponsorship_commercial",
+     0.12
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Copa do Brasil",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "competition_bonus",
+     0.59
+    ],
+    [
+     "broadcasting",
+     0.4
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Vendas Grêmio Mania (b)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "(-) Impostos sobre vendas (b)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1110
+  },
+  {
+   "label": "Outras Receitas do Desporto",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Valor justo (nota 1.1)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Doações operação Arena (nota 1.1)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "stadium_other",
+     0.25
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Venda de Atletas (b)",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Doações",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Reversão despesas renegociação comissões e outras",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Recuperação despesas Bancárias",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Ressarcimento despesas categoria de Base e Feminino",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\"",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "youth_football",
+     0.07
+    ],
+    [
+     "womens_football",
+     0.04
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "Reembolso de despesas diversas",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Recuperação despesas correio – Loja",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\"",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Custo Baixa Direitos Econômicos",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\"",
+   "choice": "player_amortisation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_amortisation",
+     0.96
+    ],
+    [
+     "player_impairment",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Mecanismo de Solidariedade (c)",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\"",
+   "choice": "player_sales",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "player_sales",
+     0.9
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "youth_football",
+     0.03
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Festejos e Aniversários",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Outras receitas operacionais (nota 26)\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "stadium_other",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 905
+  },
+  {
+   "label": "Salários, benefícios encargos sociais",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\"",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Despesas Federações, Imagens, Prémios, Mat. Esportivo e outras",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1126
+  },
+  {
+   "label": "Amortização de Direitos sobre Atletas Profissionais",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Serviços de terceiro",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Despesas de Viagens",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Negociação de atletas",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Ingressos a Sócios",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "match_organisation_expense",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "CMV – Grêmio Mania",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Salários, benefícios e Encargos Sociais - Demais Administrativas",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Aluguéis, Seguros, Materiais de Consumo e de Expediente",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Contingências Judiciais",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Serviços de Terceiros",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Depreciação/Amortização Ativos Imobilizados e intangíveis",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Água, Luz, Telefonia, Manutenção, Transportes e outras",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "Outras despesas",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Provisão Créditos Liquidação Duvidosa",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Publicitárias",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Tributos e Contribuições Federais",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gerais e administrativas (nota 24)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Impairment direito de superfície (nota 1.1)",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_amortisation",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_amortisation",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ]
+   ],
+   "tokens": 1047
+  }
+ ]
+}

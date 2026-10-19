@@ -142,6 +142,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'gremio': {
     2024: {"estadio":"Arena do Grêmio","capacidad":55662,"sponsor":"Banrisul","marca":"Umbro","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
+    2025: {"estadio":"Arena do Grêmio","capacidad":60540,"sponsor":"Alfa / Energia Bet","marca":"Umbro","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
   'guarani-br': {
     2024: {"estadio":"Brinco de Ouro","capacidad":29130,"sponsor":"Única Saúde, ASA Alumínio, StarsTEA, Furacão Distribuidora","marca":"Kappa","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
