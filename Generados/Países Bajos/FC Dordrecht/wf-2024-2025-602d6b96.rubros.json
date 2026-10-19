@@ -1,0 +1,120 @@
+{
+  "md": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.md",
+  "pdf": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf",
+  "club": "fc-dordrecht",
+  "year": 2025,
+  "generatedAt": "2026-10-19T00:12:35.384Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Netto-omzet",
+      "lado": "revenue",
+      "page": 6,
+      "section": "ajuste manual",
+      "values": [
+        4.680373
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 6,
+      "section": "ajuste manual",
+      "values": [
+        1.156388
+      ],
+      "glosa": "Resultado por traspaso de jugadores"
+    },
+    {
+      "label": "Lonen en salarissen (10)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.008539
+      ],
+      "glosa": "Sueldos y salarios (10)"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.415736
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.003541
+      ],
+      "glosa": "Gastos de pensiones"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.855319
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.164875
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Huisvestingskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.442573
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Kantoorkosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.3714
+      ],
+      "glosa": "Gastos de oficina"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.861632
+      ],
+      "glosa": "Gastos de venta"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.451614
+      ],
+      "glosa": "Gastos generales"
+    }
+  ]
+}

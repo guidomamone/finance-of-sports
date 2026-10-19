@@ -1,0 +1,847 @@
+{
+ "pdf": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf",
+ "generado": "2026-10-19T00:16:04.415Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (telstar-nl)"
+  },
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kostprijs Food & Beverage\" -> other_expenses 0.7; \"Kostprijs merchandise\" -> other_expenses 0.7; \"Verkoop\" -> admin_general_expense 0.55; \"Huur\" -> admin_general_expense 0.6"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): un solo jaarrekening, de Telstar 1963 N.V. (sin consolidado))"
+ ],
+ "ejercicio": {
+  "clubId": "telstar-nl",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Wedstrijdbaten",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.929,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsoring",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.354,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Media gerelateerde baten",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.825,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandising & Business to Consumer activiteiten",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.087,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Food & Beverage",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.904,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Resultaat vergoedingssommen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.322,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige baten",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.339,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Lonen en salarissen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.503,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sociale lasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.306,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioenlasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.026,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Overige",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.029,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bedrijfsgebouwen en -terreinen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.284,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige bedrijfsmiddelen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.086,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kostprijs Food & Beverage",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.504,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kostprijs merchandise",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.052,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Verkoop",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.083,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.276,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Huur",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.145,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Onderhoud",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.055,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gas, water en electra",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.086,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Schoonmaakkosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.055,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Belastingen en zakelijke lasten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.014,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige huisvestingskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.031,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Wedstrijd- en trainingskosten",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.732,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Algemene kosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.283,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "telstar-nl-jaarverslag-2024-2025-full",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.029,
+   "tax": 0.139,
+   "extraRows": [
+    {
+     "label": "Som der financiële baten en lasten",
+     "value": -0.029
+    },
+    {
+     "label": "Belasting",
+     "value": 0.139
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 5.76,
+   "officialTotalExpenses": 5.55,
+   "officialPAT": 0.32
+  },
+  "source": {
+   "id": "telstar-nl-jaarverslag-2024-2025-full",
+   "clubId": "telstar-nl",
+   "title": "Telstar 1963 N.V. — Telstar-Jaarverslag-2024-2025-full (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): jaarrekening 2024-2025, balans per 30 juni 2025"
+ },
+ "clubId": "telstar-nl",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): jaarrekening 2024-2025, balans per 30 juni 2025",
+   "evidencia": "Telstar-Jaarverslag-2024-2025-full.md L53",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "seleccion": {
+  "filas": 27,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Wedstrijdbaten",
+   "page": 22,
+   "native": 0.929,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 0.929,
+   "cat": "matchday_competition",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.929
+  },
+  {
+   "label": "Sponsoring",
+   "page": 22,
+   "native": 2.354,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 2.354,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.354
+  },
+  {
+   "label": "Media gerelateerde baten",
+   "page": 22,
+   "native": 0.825,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 0.825,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.825
+  },
+  {
+   "label": "Merchandising & Business to Consumer activiteiten",
+   "page": 22,
+   "native": 0.087,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 0.087,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.087
+  },
+  {
+   "label": "Food & Beverage",
+   "page": 22,
+   "native": 0.904,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 0.904,
+   "cat": "stadium_other",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.904
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "page": 22,
+   "native": 0.322,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 0.322,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.322
+  },
+  {
+   "label": "Overige baten",
+   "page": 22,
+   "native": 0.339,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 0.339,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.339
+  },
+  {
+   "label": "Lonen en salarissen",
+   "page": 22,
+   "native": 1.503,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 1.503,
+   "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.503
+  },
+  {
+   "label": "Sociale lasten",
+   "page": 22,
+   "native": 0.306,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 0.306,
+   "cat": "wages_squad",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.306
+  },
+  {
+   "label": "Pensioenlasten",
+   "page": 22,
+   "native": 0.026,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 0.026,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 2 clubes (FC Eindhoven, Fortuna Sittard), nota:personeelskosten · Claude 2026-10-18 (subagente Sonnet): Pensioenlasten 70.536 es costo de personal dentro de la nota 12 (Personeelskosten 11.212.222) y el documento no separa plantel de no plantel (solo cuenta 29 jugadores, 23 staff, 12 oficina en total): el renglon entero va a wages_squad (criterio de Sueldos del Personal). Nota: AZ y Feyenoord dejaron 'Overige personeelskosten' en admin_general_expense, pero aca el renglon viene dentro de una nota unica de personal, y se sigue la regla del lote. [Pensioenlasten 70.536 (L1653); Personeelskosten 11.212.222 (L1655)]",
+   "destino": "expense",
+   "amountNative": -0.026
+  },
+  {
+   "label": "Overige",
+   "page": 22,
+   "native": 1.029,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 1.029,
+   "cat": "other_expenses",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.029
+  },
+  {
+   "label": "Bedrijfsgebouwen en -terreinen",
+   "page": 22,
+   "native": 0.284,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen materiële vaste activa\")",
+   "signoFijo": 0.284,
+   "cat": "depreciation",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.284
+  },
+  {
+   "label": "Overige bedrijfsmiddelen",
+   "page": 22,
+   "native": 0.086,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen materiële vaste activa\")",
+   "signoFijo": 0.086,
+   "cat": "depreciation",
+   "conf": 0.92,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.086
+  },
+  {
+   "label": "Kostprijs Food & Beverage",
+   "page": 23,
+   "native": 0.504,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\")",
+   "signoFijo": 0.504,
+   "cat": "other_expenses",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.504
+  },
+  {
+   "label": "Kostprijs merchandise",
+   "page": 23,
+   "native": 0.052,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\")",
+   "signoFijo": 0.052,
+   "cat": "other_expenses",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.052
+  },
+  {
+   "label": "Verkoop",
+   "page": 23,
+   "native": 0.083,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\")",
+   "signoFijo": 0.083,
+   "cat": "admin_general_expense",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.083
+  },
+  {
+   "label": "Overige",
+   "page": 23,
+   "native": 0.276,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\")",
+   "signoFijo": 0.276,
+   "cat": "other_expenses",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.276
+  },
+  {
+   "label": "Huur",
+   "page": 23,
+   "native": 0.145,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\")",
+   "signoFijo": 0.145,
+   "cat": "admin_general_expense",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.145
+  },
+  {
+   "label": "Onderhoud",
+   "page": 23,
+   "native": 0.055,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\")",
+   "signoFijo": 0.055,
+   "cat": "admin_general_expense",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.055
+  },
+  {
+   "label": "Gas, water en electra",
+   "page": 23,
+   "native": 0.086,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\")",
+   "signoFijo": 0.086,
+   "cat": "admin_general_expense",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.086
+  },
+  {
+   "label": "Schoonmaakkosten",
+   "page": 23,
+   "native": 0.055,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\")",
+   "signoFijo": 0.055,
+   "cat": "admin_general_expense",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.055
+  },
+  {
+   "label": "Belastingen en zakelijke lasten",
+   "page": 23,
+   "native": 0.014,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\")",
+   "signoFijo": 0.014,
+   "cat": "admin_general_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.014
+  },
+  {
+   "label": "Overige huisvestingskosten",
+   "page": 23,
+   "native": 0.031,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\")",
+   "signoFijo": 0.031,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.031
+  },
+  {
+   "label": "Wedstrijd- en trainingskosten",
+   "page": 23,
+   "native": 0.732,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\")",
+   "signoFijo": 0.732,
+   "cat": "match_organisation_expense",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.732
+  },
+  {
+   "label": "Algemene kosten",
+   "page": 23,
+   "native": 0.283,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\")",
+   "signoFijo": 0.283,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.283
+  },
+  {
+   "label": "Som der financiële baten en lasten",
+   "page": null,
+   "native": -0.029,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belasting",
+   "page": null,
+   "native": 0.139,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Netto-omzet\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Personeelskosten\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Afschrijvingen materiële vaste activa\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Overige bedrijfskosten\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 5.76,
+  "expSum": -5.55,
+  "officialTotalRevenue": 5.76,
+  "officialTotalExpenses": 5.55,
+  "officialPAT": 0.32,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.32,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 5.76
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 5.55
+  }
+ },
+ "liga": {
+  "valor": "nl-eerstedivisie",
+  "fuente": "roster cacheado de \"2024–25 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"Telstar\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): jaarrekening 2024-2025, balans per 30 juni 2025",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): jaarrekening 2024-2025, balans per 30 juni 2025)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-09)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "telstar-nl-jaarverslag-2024-2025-full",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eerstedivisie",
+   "fuente": "roster cacheado de \"2024–25 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"Telstar\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 7,
+  "lineasGasto": 18,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

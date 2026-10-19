@@ -1,0 +1,137 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.md",
+ "mdSha1": "65033835b987816abc3c7b6cb299662852b952ad",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T00:23:52.537Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    10,
+    14
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    216,
+    229
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    231,
+    249
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    257,
+    277
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    289,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    301,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    323,
+    345
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    357,
+    368
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    370,
+    389
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    395,
+    423
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b7",
+  "b10"
+ ],
+ "notas_gastos": [
+  "b7",
+  "b10"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Beträge in CHF 1’000",
+ "moneda": "CHF",
+ "columna_ejercicio": "2024/25",
+ "columna_anterior": "2023/24",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usan las Erfolgsrechnungen individuales de FCSG AG (b7) y Event AG (b10) como desglose de 'Erträge brutto', 'Direkte Kosten' y demás renglones del consolidado b4?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Erträge brutto",
+   "texto": "El consolidado b4 solo muestra 'Erträge brutto' agregado; las columnas FCSG AG y Event AG coinciden con los estados individuales b7 y b10, que lo abren por tipo de ingreso y costo.",
+   "bloques": [
+    "b4",
+    "b7",
+    "b10"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se excluye de la carga la compensación intercompany de 11’500 ('Entschädigung FC St.Gallen Event AG' en b7 y 'Entschädigung an FC St.Gallen AG' en b10), dado que se elimina en el consolidado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Entschädigung von FCSG Event AG",
+   "texto": "En b4 la compensación de 11’500 figura como ingreso y gasto que se netean a cero; en los individuales está incluida en 'Total Erträge netto' de b7.",
+   "bloques": [
+    "b4",
+    "b7",
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b4 es la Erfolgsrechnung consolidada (pág. 9), con columnas FCSG AG, Event AG y total; se carga la columna total 2024/25. b7 es el estado individual de FC St. Gallen AG y b10 el de FC St. Gallen Event AG; se usan solo como desglose de los renglones del consolidado. En b7, 'Total Erträge netto' (27’048) incluye la compensación intercompany de 11’500, que se elimina en el consolidado. Los bloques b2, b3, b5, b6, b8 y b9 son balances y no se cargan."
+}

@@ -1,0 +1,93 @@
+{
+ "md": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.md",
+ "club": "sc-cambuur",
+ "year": 2025,
+ "generatedAt": "2026-10-19T00:15:56.381Z",
+ "rubrosHuella": "f2f0b4c2bffac6f7f3fa45746b61d78f8050fcdb",
+ "jevHuella": "2a7a861fad33b405c0ab4967b2b63fdbcc3b1858",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0099288,
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Importe neto de la cifra de negocios",
+   "page": 11,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Vergoedingssommen",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Compensaciones e indemnizaciones",
+   "page": 11,
+   "pendiente": true,
+   "jev": "other_income",
+   "jevConf": 0.69,
+   "escalon": 2,
+   "categoria": "player_sales",
+   "confianza": 0.85,
+   "motivo": "En clubes neerlandeses 'Vergoedingssommen' son ingresos por transferencias (PSV, Feyenoord, AZ)"
+  },
+  {
+   "label": "Kostprijs van de omzet",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Coste de ventas",
+   "page": 11,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.88,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.85,
+   "motivo": "Coste de ventas va a other_expenses en Feyenoord, Ajax, Groningen"
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Sueldos y salarios",
+   "page": 11,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones",
+   "page": 11,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 1,
+   "jevConf": 0.9,
+   "categoria": "depreciation",
+   "confianza": 0.9
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 11,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.8,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.9,
+   "motivo": "Igual a 'Overige bedrijfskosten' de fc-volendam -> other_expenses"
+  }
+ ]
+}

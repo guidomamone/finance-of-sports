@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md",
+  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
+  "club": "aalesund",
+  "year": 2025,
+  "generatedAt": "2026-10-19T00:02:20.832Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Salgsinntekter",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        69.990515
+      ],
+      "glosa": "Ingresos por ventas"
+    },
+    {
+      "label": "Andre driftsinntekter",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.440395
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Varekostnad",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        6.366043
+      ],
+      "glosa": "Consumo de mercaderías"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        5.45678
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.854926
+      ],
+      "glosa": "Seguridad Social a cargo de la empresa"
+    },
+    {
+      "label": "Pensjonskostnader",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.151065
+      ],
+      "glosa": "Gastos de pensiones"
+    },
+    {
+      "label": "Andre ytelser",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.43456
+      ],
+      "glosa": "Otras prestaciones sociales"
+    },
+    {
+      "label": "Avskrivning varige driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        6.632698
+      ],
+      "glosa": "Amortización de inmovilizado material e intangible"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        49.677946
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

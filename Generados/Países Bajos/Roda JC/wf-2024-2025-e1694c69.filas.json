@@ -1,0 +1,158 @@
+{
+ "pdf": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.pdf",
+ "md": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md",
+ "mdSha1": "22b3174b068799733029d8adb7c732085ab38751",
+ "ubicacionSha1": "a95395a38f3209b05819d2c5a80fff4fc1a2d0c9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:19:13.667Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "unidades",
+   "evidencia": "L430: Bedragen in EUR"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 434,
+   "etiqueta": "Netto-omzet",
+   "actual": "7.877.577",
+   "anterior": "7.362.369",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 436,
+   "etiqueta": "Personeelskosten",
+   "actual": "5.316.416",
+   "anterior": "4.856.550",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 437,
+   "etiqueta": "Afschrijvingen",
+   "actual": "115.520",
+   "anterior": "70.133",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 438,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "3.691.078",
+   "anterior": "3.702.558",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 439,
+   "etiqueta": "",
+   "actual": "9.123.014",
+   "anterior": "8.629.241",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 440,
+   "etiqueta": "Bedrijfsresultaat voor resultaat vergoedingssommen",
+   "actual": "-1.245.437",
+   "anterior": "-1.266.872",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 441,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "actual": "442.997",
+   "anterior": "1.720.750",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 442,
+   "etiqueta": "Financiële baten en lasten",
+   "actual": "-72.486",
+   "anterior": "-79.575",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 443,
+   "etiqueta": "Resultaat voor belastingen",
+   "actual": "-874.926",
+   "anterior": "374.303",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 444,
+   "etiqueta": "Belastingen",
+   "actual": "-",
+   "anterior": "26.000",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 445,
+   "etiqueta": "Resultaat na belastingen",
+   "actual": "-874.926",
+   "anterior": "400.303",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": {
+  "linea": 439,
+  "actual": "9.123.014"
+ },
+ "resultado": {
+  "linea": 445,
+  "actual": "-874.926",
+  "anterior": "400.303"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Belastingen' 2023/2024 (L444) como 26.000 positivo, es decir, un beneficio fiscal que suma al resultado (374.303 + 26.000 = 400.303)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Belastingen",
+   "texto": "En L444 el importe se imprime sin signo, pero en L443-L445 el resultado sube de 374.303 a 400.303, así que actúa como ingreso por impuesto.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado no imprime un total de ingresos. Por eso Netto-omzet (L434) se toma como el único ingreso operativo. 'Resultaat vergoedingssommen' (L441, resultado por traspasos de jugadores) se clasificó como ingreso. La fila L439 no tiene etiqueta y corresponde al total de Kosten. No hay notas de desglose."
+}

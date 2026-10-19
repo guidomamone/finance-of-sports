@@ -1,0 +1,145 @@
+{
+ "md": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.md",
+ "generatedAt": "2026-10-19T00:15:01.861Z",
+ "rubrosHuella": "f2f0b4c2bffac6f7f3fa45746b61d78f8050fcdb",
+ "rubros": [
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "depreciation",
+     0.91
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Vergoedingssommen",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "player_sales",
+     0.29
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1137
+  },
+  {
+   "label": "Kostprijs van de omzet",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.8200000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1022
+  }
+ ]
+}

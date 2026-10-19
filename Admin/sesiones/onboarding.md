@@ -215,3 +215,11 @@ como letras para fos-pipeline, sin aplicarlas.
 - Por dónde seguir: Bélgica espera a la t y la u. Lo demás del plan sigue igual (292 resto, 238, 285, 284, 283, 195, 165 c).
 
 ## Después del cuarto merge del 2026-10-18
+- 292, los 319 .md viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, medidos (gratis, contra el registro y el .md de hoy): 75 ya
+  tienen tablas, 26 ya están cargados, 6 son de Mistral y no tienen tablas (casi todos memorias sin estados: Telstar Bestuursverslag, Suiza),
+  1 lo ve el control "sin tablas". Quedan 212 para rehacer: 100 los saltea la mejora e (estado listo con marca vieja: 86 `sin-rubros` y 14
+  `listo-para-jev`; Bélgica 96, Colombia 4) y 112 pasan por la validación (108 `revisar`, 3 `pendiente-segunda-voz`, 1 `sin-tablas`),
+  que los rehace con Mistral al correr. Recomendación: Mistral (~US$ 0,17 c/u, ~US$ 36 los 212) cuando la e esté hecha; casi todos son
+  belgas, que igual esperan a la t y la u.
+- Lote 93 armado: alta de Países Bajos, 26 clubes con un año cada uno (afuera Go Ahead Eagles por el 165 c, MVV y RKC sin documento validado,
+  NEC Nijmegen duplicada). Ajustes `cierre` 2025-06-30 de Roda JC y SC Cambuur. Ensayo: ~US$ 10,50 (cota alta: club sin historia).

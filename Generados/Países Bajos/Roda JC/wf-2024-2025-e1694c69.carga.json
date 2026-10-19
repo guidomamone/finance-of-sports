@@ -1,0 +1,336 @@
+{
+ "pdf": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.pdf",
+ "generado": "2026-10-19T00:16:03.882Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (rodajc-nl)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (consolidado); 3 documento(s) mirados)",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "rodajc-nl",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Netto-omzet",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 7.877577,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Resultaat vergoedingssommen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.442997,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Personeelskosten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -5.316416,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Afschrijvingen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.11552,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Overige bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.691078,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "rodajc-nl-wf-2024-2025-e1694c69",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.072486,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Financiële baten en lasten",
+     "value": -0.072486
+    },
+    {
+     "label": "Belastingen",
+     "value": null
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Netto-omzet",
+     "lado": "revenue",
+     "importe": 7.877577,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 8.320574,
+   "officialTotalExpenses": 9.123014,
+   "officialPAT": -0.874926
+  },
+  "source": {
+   "id": "rodajc-nl-wf-2024-2025-e1694c69",
+   "clubId": "rodajc-nl",
+   "title": "Roda JC — wf-2024-2025-e1694c69 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-18): boekjaar 2024-2025; balance consolidado 'per 30 juni 2025'"
+ },
+ "clubId": "rodajc-nl",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "boekjaar 2024-2025; balance consolidado 'per 30 juni 2025'",
+   "evidencia": ".md L284 y L376",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 7,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Netto-omzet",
+   "page": 14,
+   "native": 7.877577,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.877577,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.877577
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "page": 14,
+   "native": 0.442997,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.442997,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.442997
+  },
+  {
+   "label": "Personeelskosten",
+   "page": 14,
+   "native": 5.316416,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.316416,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Personeelskosten 5.316.416 es el renglon unico de personal del estado consolidado (pag. 14) y el documento no separa plantel de no plantel: el renglon entero va a wages_squad. Cuenta: 7.877.577 - 9.123.014 (5.316.416 + 115.520 + 3.691.078) = -1.245.437 = Bedrijfsresultaat voor resultaat vergoedingssommen. [Personeelskosten 5.316.416 (L436); Bedrijfsresultaat voor resultaat vergoedingssommen -1.245.437 (L440)]",
+   "destino": "expense",
+   "amountNative": -5.316416
+  },
+  {
+   "label": "Afschrijvingen",
+   "page": 14,
+   "native": 0.11552,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.11552,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Afschrijvingen 115.520 es depreciacion de activos materiales: el 'Resultaat vergoedingssommen' 442.997 va aparte (neto de traspasos incluida la amortizacion de derechos). Se corrobora en el flujo de caja: 'Afschrijvingen 115.520' se suma de vuelta al Bedrijfsresultaat voor resultaat vergoedingssommen, y los activos materiales son 685.670 (compra de LED-boarding 529.713 en el año). [Afschrijvingen 115.520 (L437); Resultaat vergoedingssommen 442.997 (L441); Afschrijvingen 115.520 (L458)]",
+   "destino": "expense",
+   "amountNative": -0.11552
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "page": 14,
+   "native": 3.691078,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.691078,
+   "cat": "other_expenses",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.691078
+  },
+  {
+   "label": "Financiële baten en lasten",
+   "page": null,
+   "native": -0.072486,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 8.320574,
+  "expSum": -9.123014,
+  "officialTotalRevenue": 8.320574,
+  "officialTotalExpenses": 9.123014,
+  "officialPAT": -0.874926,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.874926,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 8.320574
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 9.123014
+  }
+ },
+ "liga": {
+  "valor": "nl-eerstedivisie",
+  "fuente": "roster cacheado de \"2024–25 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Roda JC Kerkrade\" = \"Roda JC\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): boekjaar 2024-2025; balance consolidado 'per 30 juni 2025'",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): boekjaar 2024-2025; balance consolidado 'per 30 juni 2025')",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "rodajc-nl-wf-2024-2025-e1694c69",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eerstedivisie",
+   "fuente": "roster cacheado de \"2024–25 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Roda JC Kerkrade\" = \"Roda JC\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 2,
+  "lineasGasto": 3,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,194 @@
+{
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md",
+ "generado": "2026-10-19T00:28:24.813Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2025-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 16 ejercicio(s) con un solo perímetro (individual); 34 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "37b8a3b",
+  "4785d51",
+  "986fdc7",
+  "061f140",
+  "45c92bb",
+  "f4cc6e4"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "70.43091 = 70.43091",
+   "suma": 70.43091,
+   "impreso": 70.43091
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "69.574018 = 69.574018",
+   "suma": 69.574018,
+   "impreso": 69.574018
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 70.43091 - gastos 69.574018 ± financiero 0.813796 ± impuesto 0 no da el impreso 1.51482",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Salgsinntekter\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 70.43091,
+  "gastos": 69.574018,
+  "financiero": 0.813796,
+  "impuesto": 0,
+  "resultadoImpreso": 1.51482,
+  "resultadoParaCargar": 1.51482,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Salgsinntekter",
+   "lado": "ingreso",
+   "M": 69.990515,
+   "pagina": 15,
+   "linea": 576,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre driftsinntekter",
+   "lado": "ingreso",
+   "M": 0.440395,
+   "pagina": 15,
+   "linea": 577,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 6.366043,
+   "pagina": 15,
+   "linea": 580,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 5.45678,
+   "pagina": 19,
+   "linea": 787,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 0.854926,
+   "pagina": 19,
+   "linea": 788,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 0.151065,
+   "pagina": 19,
+   "linea": 789,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre ytelser",
+   "lado": "gasto",
+   "M": 0.43456,
+   "pagina": 19,
+   "linea": 790,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning varige driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 6.632698,
+   "pagina": 15,
+   "linea": 582,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 49.677946,
+   "pagina": 15,
+   "linea": 583,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Renteinntekt fra foretak i samme konsern",
+   "M": 0.45,
+   "linea": 588
+  },
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.14761,
+   "linea": 589
+  },
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 0.138252,
+   "linea": 590
+  },
+  {
+   "etiqueta": "Nedskrivning av andre finansielle omløpsmidler",
+   "M": 0,
+   "linea": 592
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": 0.007004,
+   "linea": 593
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": 0.07093,
+   "linea": 594
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skattekostnad på ordinært resultat",
+   "M": 0,
+   "linea": 600
+  }
+ ]
+}

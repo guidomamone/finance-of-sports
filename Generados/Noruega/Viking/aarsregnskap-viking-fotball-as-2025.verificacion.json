@@ -1,0 +1,199 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.md",
+ "generado": "2026-10-19T00:28:23.949Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "la única controlada es Viking Stadion AS (100%, el estadio del club): hace negocio del fútbol del club; el AS presenta Konsernregnskap",
+   "evidencia": ".md L45-51 y L921-922",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [
+  "776f913",
+  "befc35e"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "268.131288 = 268.131288",
+   "suma": 268.13128800000004,
+   "impreso": 268.131288
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "237.756338 = 237.756338",
+   "suma": 237.75633799999997,
+   "impreso": 237.756338
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 268.131288 - gastos 237.756338 ± financiero 4.424654 ± impuesto 0 no da el impreso 24.667584",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b18 repite en columnas KONSERN el mismo estado consolidado que b14 (pág. 5)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 268.131288,
+  "gastos": 237.756338,
+  "financiero": 4.424654,
+  "impuesto": 0,
+  "resultadoImpreso": 24.667584,
+  "resultadoParaCargar": 24.667584,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Inntekt fra samarbeidsavtaler",
+   "lado": "ingreso",
+   "M": 82.33338,
+   "pagina": 5,
+   "linea": 280,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Billettinntekt fra kamper",
+   "lado": "ingreso",
+   "M": 27.464561,
+   "pagina": 5,
+   "linea": 281,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Medieinntekter",
+   "lado": "ingreso",
+   "M": 47.909413,
+   "pagina": 5,
+   "linea": 282,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gevinst ved salg av spillerrettigheter",
+   "lado": "ingreso",
+   "M": 61.756707,
+   "pagina": 5,
+   "linea": 283,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftsinntekt",
+   "lado": "ingreso",
+   "M": 48.667227,
+   "pagina": 5,
+   "linea": 284,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 13.927807,
+   "pagina": 26,
+   "linea": 1036,
+   "origen": "nota que desglosa \"Lønn og sosiale kostnader\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 2.101645,
+   "pagina": 26,
+   "linea": 1037,
+   "origen": "nota que desglosa \"Lønn og sosiale kostnader\""
+  },
+  {
+   "etiqueta": "Personalkostnader fra Viking FK*",
+   "lado": "gasto",
+   "M": 80.010132,
+   "pagina": 26,
+   "linea": 1038,
+   "origen": "nota que desglosa \"Lønn og sosiale kostnader\""
+  },
+  {
+   "etiqueta": "Pensjonskostnad (OTP)**",
+   "lado": "gasto",
+   "M": 0.529119,
+   "pagina": 26,
+   "linea": 1039,
+   "origen": "nota que desglosa \"Lønn og sosiale kostnader\""
+  },
+  {
+   "etiqueta": "Andre personalkostnader",
+   "lado": "gasto",
+   "M": 0.325704,
+   "pagina": 26,
+   "linea": 1040,
+   "origen": "nota que desglosa \"Lønn og sosiale kostnader\""
+  },
+  {
+   "etiqueta": "Ordinære avskrivninger",
+   "lado": "gasto",
+   "M": 28.455288,
+   "pagina": 5,
+   "linea": 288,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 112.406643,
+   "pagina": 5,
+   "linea": 289,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Renteinntekt",
+   "M": 1.497338,
+   "linea": 293
+  },
+  {
+   "etiqueta": "Netto finansinntekt/kostnad",
+   "M": -2.138694,
+   "linea": 294
+  },
+  {
+   "etiqueta": "Rentekostnad",
+   "M": 5.06601,
+   "linea": 296
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skattekostnad på ordinært resultat",
+   "M": 0,
+   "linea": 300
+  }
+ ]
+}

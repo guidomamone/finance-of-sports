@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.md",
+ "clave": "f056d2f47e80c21582b12d4733d310bf938d9b20",
+ "generado": "2026-10-18T23:22:04.599Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "La carga coincide con los renglones del estado: ingresos 5.718 + 0.166, gastos 7.284 + 0.078, financiero -0.082 e impuesto 0, lo que da -1.560 como el resultado impreso. Las líneas L170, L171, L175, L176 y L178 son subtotales o resultados y quedaron bien excluidas. El resultado neto de vergoedingsommen (88) se cargó por sus partes, sin repetirse."
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "md": "Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.md",
+ "club": "fc-volendam",
+ "year": 2025,
+ "generatedAt": "2026-10-18T23:25:29.929Z",
+ "rubrosHuella": "2c26ef65875833764ee2c61671ae487d4b853a56",
+ "jevHuella": "4ded59df9e830f6198b22902ece76a1b712e6a6f",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0054928,
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Importe neto de la cifra de negocios",
+   "page": 6,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Sueldos y salarios",
+   "page": 6,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 1,
+   "jevConf": 0.96,
+   "categoria": "wages_squad",
+   "confianza": 0.96
+  },
+  {
+   "label": "Sociale lasten en pensioenen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Cargas sociales y pensiones",
+   "page": 6,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "wages_squad",
+   "confianza": 0.98
+  },
+  {
+   "label": "Afschrijving vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización del inmovilizado",
+   "page": 6,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "depreciation",
+   "confianza": 0.98
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 6,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.81,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.85,
+   "motivo": "Otros gastos de explotación genéricos sin desglose; análogo a 'Andere bedrijfskosten — overige' de Antwerp."
+  }
+ ]
+}

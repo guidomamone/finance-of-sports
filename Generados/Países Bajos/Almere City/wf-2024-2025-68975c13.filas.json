@@ -1,0 +1,210 @@
+{
+ "pdf": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.pdf",
+ "md": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.md",
+ "mdSha1": "030351491bd46fbecd162daf4c0f5aa952b3e4c2",
+ "ubicacionSha1": "02efd1f95b5c02870872ed16d191ba84df9c44c1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:11:50.308Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "L403: '(Bedragen in )' — la unidad no se lee; los importes con todos los dígitos sugieren unidades (euros)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 408,
+   "etiqueta": "Netto-omzet",
+   "actual": "15.391.477",
+   "anterior": "13.464.487",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 410,
+   "etiqueta": "Lonen en salarissen",
+   "actual": "9.325.684",
+   "anterior": "7.541.321",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 411,
+   "etiqueta": "Overige personeelskosten",
+   "actual": "1.834.305",
+   "anterior": "1.953.685",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 412,
+   "etiqueta": "Afschrijving vaste activa",
+   "actual": "361.672",
+   "anterior": "261.095",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 413,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "4.102.788",
+   "anterior": "3.883.216",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 414,
+   "etiqueta": "Som der bedrijfslasten",
+   "actual": "15.624.449",
+   "anterior": "13.639.317",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 415,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "-232.972",
+   "anterior": "-174.830",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 416,
+   "etiqueta": "Rentebaten en soortgelijke opbrengsen",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 417,
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "actual": "-141.762",
+   "anterior": "-91.750",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 418,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "actual": "371.884",
+   "anterior": "266.580",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 419,
+   "etiqueta": "Resultaat uit gewone bedrijfsvoering voor belasting",
+   "actual": "-2.850",
+   "anterior": "0",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 420,
+   "etiqueta": "Vennootschapsbelasting",
+   "actual": "2.850",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 421,
+   "etiqueta": "Resultaat uit gewone bedrijfsvoering na belasting",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 422,
+   "etiqueta": "Netto resultaat",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": {
+  "linea": 414,
+  "actual": "15.624.449"
+ },
+ "resultado": {
+  "linea": 422,
+  "actual": "0",
+  "anterior": "0"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de b4 en unidades (euros), dado que L403 dice '(Bedragen in )' sin la unidad?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "La escala no se lee en L403; los importes con todos los dígitos sugieren euros.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Resultaat vergoedingssommen' (L418, 371.884) como ingreso por transferencias de jugadores?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Resultaat vergoedingssommen",
+   "texto": "L418 figura debajo del resultado operativo junto a los financieros; es el resultado neto por indemnizaciones de traspasos.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Netto resultaat' 0 (L422) aunque -232.972 -141.762 +371.884 = -2.850 y el impuesto positivo 2.850 lo deja en cero?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Netto resultaat",
+   "texto": "Los importes de L419-L422 cuadran tal como están impresos; el signo del impuesto en L420 (2.850) parece un ingreso por impuesto.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo hay estado de resultados (b4) y no hay notas. No se imprime total de ingresos: el único renglón de ingresos operativos es Netto-omzet (L408). Los signos de L417 vienen negativos y los de los gastos operativos positivos, tal cual impresos."
+}

@@ -1,0 +1,211 @@
+{
+ "pdf": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.pdf",
+ "md": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.md",
+ "mdSha1": "dcc61db1d2bb4ce0e3c7b82fdbccc419158d692e",
+ "ubicacionSha1": "ade64ce1c049f605a7f4e848ef27de27a800fa37",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:21:27.148Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L158: (€ x 1.000)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 162,
+   "etiqueta": "Omzet",
+   "actual": "5.718",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 164,
+   "etiqueta": "Personeelskosten",
+   "actual": "3.783",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 165,
+   "etiqueta": "Verkoopkosten",
+   "actual": "1.354",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 166,
+   "etiqueta": "Huisvestingskosten",
+   "actual": "541",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 167,
+   "etiqueta": "Wedstrijd-trainingskosten",
+   "actual": "830",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 168,
+   "etiqueta": "Algemene kosten",
+   "actual": "347",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 169,
+   "etiqueta": "Afsch. Materiele vaste activa",
+   "actual": "429",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 170,
+   "etiqueta": "",
+   "actual": "7.284",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 171,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "-1.566",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 172,
+   "etiqueta": "Rentelasten",
+   "actual": "-82",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 173,
+   "etiqueta": "Afschrijving vergoedingsommen",
+   "actual": "-78",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 174,
+   "etiqueta": "Resultaat vergoedingsommen",
+   "actual": "166",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 175,
+   "etiqueta": "Resultaat vergoedingsommen",
+   "actual": "88",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 176,
+   "etiqueta": "Resultaat uit gewone bedrijfsuitoefening voor belastingen",
+   "actual": "-1.560",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 177,
+   "etiqueta": "Vennootschapsbelasting",
+   "actual": "0",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 178,
+   "etiqueta": "Netto resultaat na belastingen",
+   "actual": "-1.560",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 162,
+  "actual": "5.718"
+ },
+ "total_gastos": {
+  "linea": 170,
+  "actual": "7.284"
+ },
+ "resultado": {
+  "linea": 178,
+  "actual": "-1.560",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los renglones de gastos (L164-L169) y de vergoedingsommen (L173-L174) con el importe de la columna 'Detalle', ya que la columna 'Total' solo trae los subtotales?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "Los importes de detalle del mismo ejercicio están en la columna 'Detalle' y suman los totales de L170 (7.284) y L175 (88).",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo hay una columna de importes del ejercicio 2024-2025 (más la de detalle); no hay columna del año anterior, por eso anterior es null. El total de gastos L170 no tiene etiqueta impresa. Cuadra: 5.718 - 7.284 = -1.566; -1.566 - 82 + 88 = -1.560."
+}

@@ -1,0 +1,122 @@
+{
+ "md": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.md",
+ "generatedAt": "2026-10-19T00:14:54.850Z",
+ "rubrosHuella": "de55e133749643bd274317b1b97a1d6e401ff4cb",
+ "rubros": [
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Afschrijving en resultaat vergoedingssommen",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1098
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "wages_squad",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "depreciation",
+     0.9
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1017
+  }
+ ]
+}

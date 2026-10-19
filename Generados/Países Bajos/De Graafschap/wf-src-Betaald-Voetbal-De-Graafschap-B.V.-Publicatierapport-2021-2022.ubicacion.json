@@ -1,0 +1,56 @@
+{
+ "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
+ "md": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.md",
+ "mdSha1": "738d598ec7ebe51a9e5606163882f79dd485e45d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:12:00.458Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    12,
+    19
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    41,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    58,
+    67
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    77,
+    91
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "No hay indicación de escala; los importes se imprimen con separador de miles completos (ej. Netto-omzet 8.272.005), por lo que se toman en unidades de euro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2021 / 2022",
+ "columna_anterior": "2020 / 2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Publicatierapport abreviado de Betaald Voetbal De Graafschap B.V. (individual). Solo contiene el balance (b2, b3) y la winst- en verliesrekening (b4); no hay notas que desglosen ingresos o gastos. 'Resultaat vergoedingssommen' aparece con signo negativo dentro de los costes (-51.460), es decir que reduce la suma de costes: es un resultado neto positivo por traspasos. La suma de costes cuadra: 3.492.133+610.169+84.659-51.460+261.379+4.324.265=8.721.145."
+}

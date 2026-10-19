@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.md",
+ "clave": "335c7a4fa9dda7d33b2a61e94553f0661f86b33e",
+ "generado": "2026-10-19T00:13:04.098Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "No encontré problemas. Están cargados todos los renglones con importe de la columna 2024-2025, sin subtotales y en el lado correcto. Los renglones en cero (L391, L393) no se cargan. Los importes se interpretan en miles de euros y se pasaron a millones (10.544 = 10,544 M; 181 = 0,181 M). Con eso, el resultado reconstruido es: 10,544 + 0,075 − 13,615 = −2,996; luego + 0,011 − 0,542 = −3,527; y finalmente − 0,068 = −3,595, que coincide con L394."
+ }
+}

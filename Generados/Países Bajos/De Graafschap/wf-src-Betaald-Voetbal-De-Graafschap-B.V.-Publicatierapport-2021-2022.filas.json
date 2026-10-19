@@ -1,0 +1,178 @@
+{
+ "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
+ "md": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.md",
+ "mdSha1": "738d598ec7ebe51a9e5606163882f79dd485e45d",
+ "ubicacionSha1": "6a271cb5c4cfb606155daf2f9ff093d161f83371",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:12:12.132Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no imprime la escala; los importes parecen en unidades de euro (ej. 8.272.005), pero no hay frase que lo indique."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 79,
+   "etiqueta": "Netto-omzet",
+   "actual": "8.272.005",
+   "anterior": "6.892.286",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 80,
+   "etiqueta": "Lonen en salarissen",
+   "actual": "3.492.133",
+   "anterior": "2.113.912",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 81,
+   "etiqueta": "Sociale lasten",
+   "actual": "610.169",
+   "anterior": "623.650",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 82,
+   "etiqueta": "Pensioenlasten",
+   "actual": "84.659",
+   "anterior": "112.665",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 83,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "actual": "-51.460",
+   "anterior": "-306.660",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 84,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "actual": "261.379",
+   "anterior": "234.522",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 85,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "4.324.265",
+   "anterior": "3.159.913",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 86,
+   "etiqueta": "Totaal van som der kosten",
+   "actual": "8.721.145",
+   "anterior": "5.938.002",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 87,
+   "etiqueta": "Totaal van bedrijfsresultaat",
+   "actual": "-449.140",
+   "anterior": "954.284",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 88,
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "actual": "-35.869",
+   "anterior": "-21.279",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 89,
+   "etiqueta": "Totaal van resultaat vóór belastingen",
+   "actual": "-485.009",
+   "anterior": "933.005",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 90,
+   "etiqueta": "Belastingen",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 91,
+   "etiqueta": "Totaal van resultaat na belastingen",
+   "actual": "-485.009",
+   "anterior": "933.005",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": {
+  "linea": 86,
+  "actual": "8.721.145"
+ },
+ "resultado": {
+  "linea": 91,
+  "actual": "-485.009",
+  "anterior": "933.005"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado de resultados (b4, L79-L91) como euros en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b4 no imprime la escala; por la magnitud (L79 8.272.005) parecen unidades de euro.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado sin notas de desglose. No hay total de ingresos impreso; el único ingreso es Netto-omzet (L79). 'Resultaat vergoedingssommen' (L83) figura negativo dentro de los costos (resultado neto por transferencias, que en la práctica reduce el gasto). Belastingen en L90 sin importe ('-')."
+}

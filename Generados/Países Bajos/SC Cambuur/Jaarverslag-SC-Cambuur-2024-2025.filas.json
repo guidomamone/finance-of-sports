@@ -1,0 +1,209 @@
+{
+ "pdf": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.md",
+ "mdSha1": "c6a481f9e3b87537cc782a3ad85987a42dfe478b",
+ "ubicacionSha1": "fa8a49cad168a57dc8b740038725ed0e7fccb1b6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T00:12:00.652Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "L374: (x 1.000)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 378,
+   "etiqueta": "Netto-omzet",
+   "actual": "10.544",
+   "anterior": "9.279",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 379,
+   "etiqueta": "Kostprijs van de omzet",
+   "actual": "181",
+   "anterior": "609",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 380,
+   "etiqueta": "Lonen en salarissen",
+   "actual": "7.364",
+   "anterior": "5.782",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 381,
+   "etiqueta": "Afschrijvingen",
+   "actual": "491",
+   "anterior": "58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 382,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "5.579",
+   "anterior": "2.980",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 383,
+   "etiqueta": "Som der kosten",
+   "actual": "13.615",
+   "anterior": "9.429",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 384,
+   "etiqueta": "Bedrijfsresultaat vóór vergoedingssommen",
+   "actual": "- 3.071",
+   "anterior": "- 150",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 385,
+   "etiqueta": "Vergoedingssommen",
+   "actual": "75",
+   "anterior": "260",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 386,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "- 2.996",
+   "anterior": "110",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 387,
+   "etiqueta": "Financiële baten",
+   "actual": "11",
+   "anterior": "9",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 388,
+   "etiqueta": "Financiële lasten",
+   "actual": "- 542",
+   "anterior": "- 76",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 389,
+   "etiqueta": "Resultaat vóór belasting",
+   "actual": "- 3.527",
+   "anterior": "43",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 390,
+   "etiqueta": "Belastingen",
+   "actual": "- 68",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 391,
+   "etiqueta": "Resultaat deelnemingen",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 392,
+   "etiqueta": "",
+   "actual": "- 3.595",
+   "anterior": "43",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 393,
+   "etiqueta": "Resultaat aandeel derden",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 394,
+   "etiqueta": "Resultaat na belasting",
+   "actual": "- 3.595",
+   "anterior": "43",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 378,
+  "actual": "10.544"
+ },
+ "total_gastos": {
+  "linea": 383,
+  "actual": "13.615"
+ },
+ "resultado": {
+  "linea": 394,
+  "actual": "- 3.595",
+  "anterior": "43"
+ },
+ "dudas": [],
+ "observaciones": "Estado en miles de euros. Columnas duplicadas por año: la primera trae partidas de gasto y la segunda totales/resultados. Vergoedingssommen (transferencias) figura fuera de Netto-omzet. L392 sin etiqueta es subtotal antes de participación de terceros. No hay notas de desglose."
+}

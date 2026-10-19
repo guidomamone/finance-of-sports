@@ -178,87 +178,81 @@ Side 2 av 3
 
 --- pág. 4 ---
 
-|  Opptjent egenkapital  |   |   |   |
-| --- | --- | --- | --- |
-|  Annen egenkapital | 9 | 2 026 736 | 1 708 302  |
-|  Sum opptjent egenkapital |  | 2 026 736 | 1 708 302  |
-|  Sum egenkapital |  | 2 026 736 | 1 708 302  |
-|  Gjeld  |   |   |   |
-|  Langsiktig gjeld  |   |   |   |
-|  Andre avsetninger for forpliktelser | 6 | 87 720 | 95 520  |
-|  Sum avsetninger for forpliktelser |  | 87 720 | 95 520  |
-|  Annen langsiktig gjeld  |   |   |   |
-|  Øvrig langsiktig gjeld | 7, 8, 11 | 100 000 | 1 704 971  |
-|  Sum annen langsiktig gjeld |  | 100 000 | 1 704 971  |
-|  Sum langsiktig gjeld |  | 187 720 | 1 800 491  |
-|  Kortsiktig gjeld  |   |   |   |
-|  Leverandørgjeld |  | 330 790 | 410 035  |
-|  Skyldige offentlige avgifter | 2 | 1 247 736 | 2 085 724  |
-|  Annen kortsiktig gjeld | 7 | 2 033 344 | 2 547 299  |
-|  Sum kortsiktig gjeld |  | 3 611 870 | 5 043 058  |
-|  Sum gjeld |  | 3 799 590 | 6 843 549  |
-|  SUM EGENKAPITAL OG GJELD |  | 5 826 326 | 8 551 851  |
+| Opptjent egenkapital | Note | 2018 | 2017 |
+| :--- | :--- | :--- | :--- |
+| Annen egenkapital | 9 | 2 026 736 | 1 708 302 |
+| **Sum opptjent egenkapital** | | **2 026 736** | **1 708 302** |
+| | | | |
+| **Sum egenkapital** | | **2 026 736** | **1 708 302** |
+| | | | |
+| **Gjeld** | | | |
+| **Langsiktig gjeld** | | | |
+| **Andre avsetninger for forpliktelser** | 6 | 87 720 | 95 520 |
+| **Sum avsetninger for forpliktelser** | | **87 720** | **95 520** |
+| | | | |
+| **Annen langsiktig gjeld** | | | |
+| Øvrig langsiktig gjeld | 7, 8, 11 | 100 000 | 1 704 971 |
+| **Sum annen langsiktig gjeld** | | **100 000** | **1 704 971** |
+| | | | |
+| **Sum langsiktig gjeld** | | **187 720** | **1 800 491** |
+| | | | |
+| **Kortsiktig gjeld** | | | |
+| Leverandørgjeld | | 330 790 | 410 035 |
+| Skyldige offentlige avgifter | 2 | 1 247 736 | 2 085 724 |
+| Annen kortsiktig gjeld | 7 | 2 033 344 | 2 547 299 |
+| **Sum kortsiktig gjeld** | | **3 611 870** | **5 043 058** |
+| | | | |
+| **Sum gjeld** | | **3 799 590** | **6 843 549** |
+| | | | |
+| **SUM EGENKAPITAL OG GJELD** | | **5 826 326** | **8 551 851** |
 
-Utskriftsdato 15.07.2019
-
-Organisasjonsnr 837 623 502
-
+Utskriftsdato 15.07.2019  
+Organisasjonsnr 837 623 502  
 Side 3 av 3
 
 --- pág. 5 ---
 
-EY
+# EY  
+Building a better  
+working world
 
-Building a better working world
-
-Statsautoriserte revisorer
-
+Statsautoriserte revisorer  
 Ernst & Young AS
 
-Nygata 4, NO-1607 Fredrikstad
-
+Nygata 4, NO-1607 Fredrikstad  
 Postboks 257, NO-1601 Fredrikstad
 
-Foretaksregisteret: NO 976 369 387 MVA
-
-Tlf: +47 24 00 24 00
-
-Fax: +47 69 33 88 01
-
-www.ey.no
-
+Foretaksregisteret: NO 976 389 387 MVA  
+Tlf: +47 24 00 24 00  
+Fax: +47 69 33 88 01  
+www.ey.no  
 Medlemmer av Den norske revisorforening
 
-# UAVHENGIG REVISORS BERETNING
+## UAVHENGIG REVISORS BERETNING
 
 Til generalforsamlingen i Fredrikstad Fotballklubb
 
-# Uttalelse om revisjonen av årsregnskapet
+### Uttalelse om revisjonen av årsregnskapet
 
-# Konklusjon
-
+#### Konklusjon
 Vi har revidert årsregnskapet for Fredrikstad Fotballklubb som består av balanse per 31. desember 2018, resultatregnskap for regnskapsåret avsluttet per denne datoen, og en beskrivelse av vesentlige anvendte regnskapsprinsipper og andre noteopplysninger.
 
 Etter vår mening er årsregnskapet avgitt i samsvar med lov og forskrifter og gir et rettvisende bilde av Fredrikstad fotballklubb finansielle stilling per 31. desember 2018, og av dets resultater for regnskapsåret avsluttet per denne datoen i samsvar med regnskapslovens regler og god regnskapsskikk i Norge.
 
-# Grunnlag for konklusjonen
+#### Grunnlag for konklusjonen
+Vi har gjennomført revisjonen i samsvar med lov, forskrift og god revisjonsskikk i Norge, herunder de internasjonale revisjonsstandardene (ISA-ene). Våre oppgaver og plikter i henhold til disse standardene er beskrevet i avsnittet *Revisors oppgaver og plikter ved revisjonen av årsregnskapet*. Vi er uavhengige av Fredrikstad fotballklubb i samsvar med de relevante etiske kravene i Norge knyttet til revisjon slik det kreves i lov og forskrift. Vi har også overholdt våre øvrige etiske forpliktelser i samsvar med disse kravene. Etter vår oppfatning er innhentet revisjonsbevis tilstrekkelig og hensiktsmessig som grunnlag for vår konklusjon.
 
-Vi har gjennomført revisjonen i samsvar med lov, forskrift og god revisjonsskikk i Norge, herunder de internasjonale revisjonsstandardene (ISA-ene). Våre oppgaver og plikter i henhold til disse standardene er beskrevet i avsnittet Revisors oppgaver og plikter ved revisjonen av årsregnskapet. Vi er uavhengige av Fredrikstad fotballklubb i samsvar med de relevante etiske kravene i Norge knyttet til revisjon slik det kreves i lov og forskrift. Vi har også overholdt våre øvrige etiske forpliktelser i samsvar med disse kravene. Etter vår oppfatning er innhentet revisjonsbevis tilstrekkelig og hensiktsmessig som grunnlag for vår konklusjon.
-
-# Øvrig informasjon
-
+#### Øvrig informasjon
 Øvrig informasjon omfatter informasjon i Fredrikstad fotballklubb årsrapport bortsett fra årsregnskapet og den tilhørende revisjonsberetningen. Styret og daglig leder (ledelsen) er ansvarlig for den øvrige informasjonen. Vår uttalelse om revisjonen av årsregnskapet dekker ikke den øvrige informasjonen, og vi attesterer ikke den øvrige informasjonen.
 
 I forbindelse med revisjonen av årsregnskapet er det vår oppgave å lese den øvrige informasjonen med det formål å vurdere hvorvidt det foreligger vesentlig inkonsistens mellom den øvrige informasjonen og årsregnskapet eller kunnskap vi har opparbeidet oss under revisjonen, eller hvorvidt den tilsynelatende inneholder vesentlig feilinformasjon. Dersom vi konkluderer med at den øvrige informasjonen inneholder vesentlig feilinformasjon, er vi pålagt å rapportere det. Vi har ingenting å rapportere i så henseende.
 
-# Ledelsens ansvar for årsregnskapet
-
+#### Ledelsens ansvar for årsregnskapet
 Ledelsen er ansvarlig for å utarbeide årsregnskapet i samsvar med lov og forskrifter, herunder for at det gir et rettvisende bilde i samsvar med regnskapslovens regler og god regnskapsskikk i Norge. Ledelsen er også ansvarlig for slik intern kontroll som den finner nødvendig for å kunne utarbeide et årsregnskap som ikke inneholder vesentlig feilinformasjon, verken som følge av misligheter eller feil.
 
 Ved utarbeidelsen av årsregnskapet må ledelsen ta standpunkt til Fredrikstad fotballklubb evne til fortsatt drift og opplyse om forhold av betydning for fortsatt drift. Forutsetningen om fortsatt drift skal legges til grunn for årsregnskapet med mindre ledelsen enten har til hensikt å avvikle Fredrikstad fotballklubb eller legge ned virksomheten, eller ikke har noe annet realistisk alternativ.
 
-# Revisors oppgaver og plikter ved revisjonen av årsregnskapet
-
+#### Revisors oppgaver og plikter ved revisjonen av årsregnskapet
 Vårt mål er å oppnå betryggende sikkerhet for at årsregnskapet som helhet ikke inneholder vesentlig feilinformasjon, verken som følge av misligheter eller feil, og å avgi en revisjonsberetning som inneholder vår konklusjon. Betryggende sikkerhet er en høy grad av sikkerhet, men ingen garanti for at en revisjon utført i samsvar med lov, forskrift og god revisjonsskikk i Norge, herunder ISA-ene, alltid vil avdekke vesentlig feilinformasjon. Feilinformasjon kan skyldes misligheter eller feil og er å anse som vesentlig
 
 --- pág. 6 ---

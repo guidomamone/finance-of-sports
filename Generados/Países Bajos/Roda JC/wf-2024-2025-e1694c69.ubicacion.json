@@ -1,0 +1,72 @@
+{
+ "pdf": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.pdf",
+ "md": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md",
+ "mdSha1": "22b3174b068799733029d8adb7c732085ab38751",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:19:03.385Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    24,
+    52
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    366,
+    372
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    384,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    407,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    432,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    453,
+    480
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Bedragen in EUR",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024/2025",
+ "columna_anterior": "2023/2024",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados es la 'Geconsolideerde winst- en verliesrekening over 2024-2025' (b5, pág. 14). El documento (informe financiero resumido) no incluye notas que desglosen ingresos o gastos; b2 es el índice, b3/b4 el balance y b6 el flujo de efectivo."
+}

@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
+  "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+  "club": "fredrikstad",
+  "year": null,
+  "generatedAt": "2026-10-19T00:28:24.927Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Annen driftsinntekt",
+      "lado": "revenue",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        92.725486
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Sum driftsinntekter",
+      "lado": "revenue",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        92.725486
+      ],
+      "glosa": "Total ingresos de explotación"
+    },
+    {
+      "label": "Varekostnad",
+      "lado": "expense",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        9.678901
+      ],
+      "glosa": "Aprovisionamientos"
+    },
+    {
+      "label": "Lønnskostnad",
+      "lado": "expense",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        53.626147
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Avskrivning",
+      "lado": "expense",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        5.056889
+      ],
+      "glosa": "Amortización"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        21.50972
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

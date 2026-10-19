@@ -1,0 +1,143 @@
+{
+ "pdf": "Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.pdf",
+ "md": "Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.md",
+ "mdSha1": "9f9a439e803635cd9ad1bc8d8827aec6a78dc266",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:10:57.419Z",
+ "bloques": {
+  "b1": {
+   "pagina": 11,
+   "lineas": [
+    397,
+    416
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    424,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    444,
+    457
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    465,
+    494
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    502,
+    506
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    520,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    534,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    544,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    552,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    567,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    577,
+    582
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    586,
+    590
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b11",
+  "b12"
+ ],
+ "notas_gastos": [
+  "b7",
+  "b8",
+  "b9",
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas '2024/2025 €' sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024/2025 €",
+ "columna_anterior": "2023/2024 €",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro 'Afschrijvingen immateriële vast activa' (b9) como desglose de la amortización de inmateriales de la nota 14, incluida la fila 'Allocatie amortisatie vergoedingssommen'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Immateriële vaste activa",
+   "texto": "b9 parece abrir la fila de inmateriales de b8 pero incluye una reasignación de amortización de derechos de jugadores que podría restar o duplicar con la nota 16 (b11).",
+   "bloques": [
+    "b8",
+    "b9",
+    "b11"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay estados consolidados (geconsolideerde jaarrekening). Estado de resultados en b3 (pág. 13). Notas: 12 Netto-omzet (b6), 13 Personeelskosten (b7), 14 Afschrijvingen (b8, abierta en b9), 15 Overige bedrijfskosten (b10), 16 Resultaat vergoedingssommen (b11, ingresos por traspasos con gastos de agentes y amortización), 17 Financiële baten en lasten (b12, ingresos y gastos financieros). Excluidos balance (b1, b2), flujo de efectivo (b4) y composición de liquidez (b5). Importes en euros, sin escala de miles."
+}

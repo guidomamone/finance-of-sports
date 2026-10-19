@@ -1,0 +1,80 @@
+{
+ "md": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md",
+ "club": "roda-jc",
+ "year": null,
+ "generatedAt": "2026-10-18T23:25:39.484Z",
+ "rubrosHuella": "e807f244ab7a6884a59fe06e656690fb76446861",
+ "jevHuella": "145af8aa6ae347c9fd4c2b183ac0f9afc343e89c",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.009032799999999999,
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Importe neto de la cifra de negocios",
+   "page": 14,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Resultado por traspasos de jugadores",
+   "page": 14,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "player_sales",
+   "confianza": 1
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de personal",
+   "page": 14,
+   "pendiente": true,
+   "jev": "wages_squad",
+   "jevConf": 0.51,
+   "escalon": 2,
+   "categoria": "wages_squad",
+   "confianza": 0.75,
+   "motivo": "Gastos de personal totales de un club de fútbol, mayormente plantel; como Real Madrid"
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones",
+   "page": 14,
+   "pendiente": true,
+   "jev": "player_amortisation",
+   "jevConf": 0.4,
+   "escalon": 2,
+   "categoria": "depreciation",
+   "confianza": 0.6,
+   "motivo": "Afschrijvingen genérico, separado de traspasos (neto en resultado); bienes de uso"
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 14,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.78,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.85,
+   "motivo": "Otros gastos de explotación sin desglose, catch-all"
+  }
+ ]
+}

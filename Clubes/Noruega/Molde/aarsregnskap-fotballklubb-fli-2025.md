@@ -944,56 +944,45 @@ Adobe Acrobat Sign
 
 --- pág. 24 ---
 
-Cedra
-
+# Cedra
 Revisorer, rådgivere & advokater
 
 Cedra Norge Rago AS
-
 Grandfjæra 24C
-
-8415 Molde, Norge
+6415 Molde, Norge
 
 Til årsmøtet i Molde Fotballklubb
 
-# Uavhengig revisors beretning
+### Uavhengig revisors beretning
 
-# Konklusjon
-
+**Konklusjon**
 Vi har revidert årsregnskapet for Molde Fotballklubb som består av balanse per 31. desember 2025, resultatregnskap og kontantstrømoppstilling for regnskapsåret avsluttet per denne datoen og noter til årsregnskapet, herunder et sammendrag av viktige regnskapsprinsipper.
 
 Etter vår mening
+* oppfyller årsregnskapet gjeldende lovkrav, og
+* gir årsregnskapet et rettvisende bilde av selskapets finansielle stilling per 31. desember 2025, og av dets resultater og kontantstrømmer for regnskapsåret avsluttet per denne datoen i samsvar med regnskapslovens regler og god regnskapsskikk i Norge.
 
-- oppfyller arsregnskapet gjeldende lovkrav, og
-- gir arsregnskap et rettvisende bilde av selskapets finansielle stilling per 31. desember 2025, og av dets resultater og kontantstrømmer for regnskapssaret avsluttet per denne datoen i samsvar med regnskapsovens regler og god regnskapsskkik i Norge.
+**Grunnlag for konklusjonen**
+Vi har gjennomført revisjonen i samsvar med International Standards on Auditing (ISA-ene). Våre oppgaver og plikter i henhold til disse standardene er beskrevet nedenfor under *Revisors oppgaver og plikter ved revisjonen av årsregnskapet*. Vi er uavhengige av selskapet i samsvar med kravene i relevante lover og forskrifter i Norge og International Code of Ethics for Professional Accountants (inkludert internasjonale uavhengighetsstandarder) utstedt av International Ethics Standards Board for Accountants (IESBA-reglene), og vi har overholdt våre øvrige etiske forpliktelser i samsvar med disse kravene. Innhentet revisjonsbevis er etter vår vurdering tilstrekkelig og hensiktsmessig som grunnlag for vår konklusjon.
 
-# Grunnlag for konklusjonen
-
-Vi har gjennomført revisjonen i samsvar med International Standards on Auditing (ISA-ene). Våre oppgaver og plikter i henhold til disse standardene er beskrevet nedenfor under Revisors oppgaver og plikter ved revisjonen av årsregnskapet. Vi er uavhengige av selskapet i samsvar med kravene i relevante lover og forskrifter i Norge og International Code of Ethics for Professional Accountants (inkludert internasjonale uavhengighetsstandarder) utstedt av International Ethics Standards Board for Accountants (IESBA-reglene), og vi har overholdt våre øvrige etiske forpliktelser i samsvar med disse kravene. Innhentet revisjonsbevis er etter vår vurdering tilstrekkelig og hensiktsmessig som grunnlag for vår konklusjon.
-
-# Øvrig informasjon
-
+**Øvrig informasjon**
 Styret (ledelsen) er ansvarlig for informasjonen i årsberetningen. Øvrig informasjon omfatter informasjon i årsrapporten bortsett fra årsregnskapet og den tilhørende revisjonsberetningen. Vår konklusjon om årsregnskapet ovenfor dekker ikke informasjonen i årsberetningen.
 
 I forbindelse med revisjonen av årsregnskapet er det vår oppgave å lese årsberetningen. Formålet er å vurdere hvorvidt det foreligger vesentlig inkonsistens mellom årsberetningen og årsregnskapet og den kunnskap vi har opparbeidet oss under revisjonen av årsregnskapet, eller hvorvidt informasjon i årsberetningen ellers fremstår som vesentlig feil. Vi har plikt til å rapportere dersom årsberetningen fremstår som vesentlig feil. Vi har ingenting å rapportere i så henseende.
 
 Basert på kunnskapen vi har opparbeidet oss i revisjonen, mener vi at årsberetningen
+* er konsistent med årsregnskapet og
+* inneholder de opplysninger som skal gis i henhold til gjeldende lovkrav.
 
-er konsistent med arsregnskapet og
-- inneholder de opplysninger som skal gis i henhold til gjeldende lovkrav.
-
-# Ledelsens ansvar for årsregnskapet
-
+**Ledelsens ansvar for årsregnskapet**
 Ledelsen er ansvarlig for å utarbeide årsregnskapet og for at det gir et rettvisende bilde i samsvar med regnskapslovens regler og god regnskapsskikk i Norge. Ledelsen er også ansvarlig for slik internkontroll som den finner nødvendig for å kunne utarbeide et regnskap som ikke inneholder vesentlig feilinformasjon, verken som følge av misligheter eller utilsiktede feil.
 
 Ved utarbeidelsen av årsregnskapet må ledelsen ta standpunkt til selskapets evne til fortsatt drift og opplyse om forhold av betydning for fortsatt drift. Forutsetningen om fortsatt drift skal legges til grunn for årsregnskapet så lenge det ikke er sannsynlig at virksomheten vil bli avviklet.
 
+---
 Cedra Norge Rago AS
-
 Registrert i Foretaksregisteret
-
 Medlem av Den norske Revisorforening
-
 Organisasjonsnummer: 835 496 252
 
 --- pág. 25 ---
@@ -1775,56 +1764,44 @@ Adobe Acrobat Sign
 
 --- pág. 44 ---
 
-Cedra
-
+Cedra  
 Revisorer, rådgivere & advokater
 
-Cedra Norge Rago AS
-
-Grandfjæra 24C
-
-8415 Molde, Norge
+Cedra Norge Rago AS  
+Grandfjæra 24C  
+6415 Molde, Norge
 
 Til årsmøtet i Molde Fotballklubb
 
-# Uavhengig revisors beretning
+## Uavhengig revisors beretning
 
-# Konklusjon
-
+### Konklusjon
 Vi har revidert årsregnskapet for Molde Fotballklubb som består av balanse per 31. desember 2025, resultatregnskap og kontantstrømoppstilling for regnskapsåret avsluttet per denne datoen og noter til årsregnskapet, herunder et sammendrag av viktige regnskapsprinsipper.
 
 Etter vår mening
+* oppfyller årsregnskapet gjeldende lovkrav, og
+* gir årsregnskapet et rettvisende bilde av selskapets finansielle stilling per 31. desember 2025, og av dets resultater og kontantstrømmer for regnskapsåret avsluttet per denne datoen i samsvar med regnskapslovens regler og god regnskapsskikk i Norge.
 
-- oppfyller arsregnskapet gjeldende lovkrav, og
-- gir arsregnskap et rettvisende bilde av selskapets finansielle stilling per 31. desember 2025, og av dets resultater og kontantstrømmer for regnskapssaret avsluttet per denne datoen i samsvar med regnskapsovens regler og god regnskapsskkik i Norge.
-
-# Grunnlag for konklusjonen
-
+### Grunnlag for konklusjonen
 Vi har gjennomført revisjonen i samsvar med International Standards on Auditing (ISA-ene). Våre oppgaver og plikter i henhold til disse standardene er beskrevet nedenfor under Revisors oppgaver og plikter ved revisjonen av årsregnskapet. Vi er uavhengige av selskapet i samsvar med kravene i relevante lover og forskrifter i Norge og International Code of Ethics for Professional Accountants (inkludert internasjonale uavhengighetsstandarder) utstedt av International Ethics Standards Board for Accountants (IESBA-reglene), og vi har overholdt våre øvrige etiske forpliktelser i samsvar med disse kravene. Innhentet revisjonsbevis er etter vår vurdering tilstrekkelig og hensiktsmessig som grunnlag for vår konklusjon.
 
-# Øvrig informasjon
-
+### Øvrig informasjon
 Styret (ledelsen) er ansvarlig for informasjonen i årsberetningen. Øvrig informasjon omfatter informasjon i årsrapporten bortsett fra årsregnskapet og den tilhørende revisjonsberetningen. Vår konklusjon om årsregnskapet ovenfor dekker ikke informasjonen i årsberetningen.
 
 I forbindelse med revisjonen av årsregnskapet er det vår oppgave å lese årsberetningen. Formålet er å vurdere hvorvidt det foreligger vesentlig inkonsistens mellom årsberetningen og årsregnskapet og den kunnskap vi har opparbeidet oss under revisjonen av årsregnskapet, eller hvorvidt informasjon i årsberetningen ellers fremstår som vesentlig feil. Vi har plikt til å rapportere dersom årsberetningen fremstår som vesentlig feil. Vi har ingenting å rapportere i så henseende.
 
 Basert på kunnskapen vi har opparbeidet oss i revisjonen, mener vi at årsberetningen
+* er konsistent med årsregnskapet og
+* inneholder de opplysninger som skal gis i henhold til gjeldende lovkrav.
 
-er konsistent med arsregnskapet og
-- inneholder de opplysninger som skal gis i henhold til gjeldende lovkrav.
-
-# Ledelsens ansvar for årsregnskapet
-
+### Ledelsens ansvar for årsregnskapet
 Ledelsen er ansvarlig for å utarbeide årsregnskapet og for at det gir et rettvisende bilde i samsvar med regnskapslovens regler og god regnskapsskikk i Norge. Ledelsen er også ansvarlig for slik internkontroll som den finner nødvendig for å kunne utarbeide et regnskap som ikke inneholder vesentlig feilinformasjon, verken som følge av misligheter eller utilsiktede feil.
 
 Ved utarbeidelsen av årsregnskapet må ledelsen ta standpunkt til selskapets evne til fortsatt drift og opplyse om forhold av betydning for fortsatt drift. Forutsetningen om fortsatt drift skal legges til grunn for årsregnskapet så lenge det ikke er sannsynlig at virksomheten vil bli avviklet.
 
-Cedra Norge Rago AS
-
-Registrert i Foretaksregisteret
-
-Medlem av Den norske Revisorforening
-
+Cedra Norge Rago AS  
+Registrert i Foretaksregisteret  
+Medlem av Den norske Revisorforening  
 Organisasjonsnummer: 835 496 252
 
 --- pág. 45 ---

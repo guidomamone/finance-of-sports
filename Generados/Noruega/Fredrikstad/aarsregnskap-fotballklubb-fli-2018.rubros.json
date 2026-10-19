@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.md",
+  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.pdf",
+  "club": "fredrikstad",
+  "year": 2018,
+  "generatedAt": "2026-10-19T00:02:20.871Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Annen driftsinntekt",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        22.903598
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Varekostnad",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        3.579789
+      ],
+      "glosa": "Aprovisionamientos"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        10.325425
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        1.782638
+      ],
+      "glosa": "Seguridad Social a cargo de la empresa"
+    },
+    {
+      "label": "Pensjonskostnader",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.247446
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Andre ytelser",
+      "lado": "expense",
+      "page": 18,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.413427
+      ],
+      "glosa": "Otras prestaciones al personal"
+    },
+    {
+      "label": "Avskrivning",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0.235149
+      ],
+      "glosa": "Amortización"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        6.321588
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

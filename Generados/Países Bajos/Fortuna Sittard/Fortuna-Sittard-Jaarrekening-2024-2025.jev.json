@@ -1,0 +1,421 @@
+{
+ "md": "Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.md",
+ "generatedAt": "2026-10-18T23:25:21.224Z",
+ "rubrosHuella": "2d83a65ede8682a1560b08c3f8064036364ad23a",
+ "rubros": [
+  {
+   "label": "Wedstrijdbaten",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "matchday_competition",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "matchday_competition",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "season_tickets",
+     0.01
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Sponsoring",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Merchandise",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Prijzengeld",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Horeca",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "stadium_other",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "stadium_other",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Media gerelateerde baten",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Overige baten",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Subsidies en giften",
+   "lado": "revenue",
+   "page": 42,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Sociale lasten",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "wages_squad",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado",
+   "choice": "other_amortisation",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_amortisation",
+     0.4
+    ],
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "depreciation",
+     0.23
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Overige personeelslasten",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Huisvestingskosten",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Overige bedrijfskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "wages_squad",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "wages_squad",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Wedstrijd- en trainingskosten",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Overige bedrijfskosten\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.92
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Pensioenlasten",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "wages_squad",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Verkoopkosten",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Overige bedrijfskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Algemene kosten",
+   "lado": "expense",
+   "page": 42,
+   "section": "nota que desglosa \"Overige bedrijfskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Afschrijving en resultaat vergoedingssommen",
+   "lado": "expense",
+   "page": 20,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1091
+  }
+ ]
+}

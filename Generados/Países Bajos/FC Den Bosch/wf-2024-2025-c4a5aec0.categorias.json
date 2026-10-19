@@ -1,0 +1,80 @@
+{
+ "md": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.md",
+ "club": "fc-den-bosch",
+ "year": 2025,
+ "generatedAt": "2026-10-19T00:15:18.610Z",
+ "rubrosHuella": "de55e133749643bd274317b1b97a1d6e401ff4cb",
+ "jevHuella": "e9cb9a841b40eb1dd2c1589e13d35fc286e56618",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.009516799999999999,
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Importe neto de la cifra de negocios",
+   "page": 17,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijving en resultaat vergoedingssommen",
+   "lado": "revenue",
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "glosa": "Amortización y resultado por derechos de traspaso",
+   "page": 17,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "player_sales",
+   "confianza": 0.98
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de personal",
+   "page": 17,
+   "pendiente": true,
+   "jev": "wages_squad",
+   "jevConf": 0.5,
+   "escalon": 2,
+   "categoria": "wages_squad",
+   "confianza": 0.75,
+   "motivo": "Gastos de personal totales de club holandés sin desglose; convención usual va a salarios del plantel"
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones",
+   "page": 17,
+   "pendiente": true,
+   "jev": "depreciation",
+   "jevConf": 0.89,
+   "escalon": 2,
+   "categoria": "depreciation",
+   "confianza": 0.85,
+   "motivo": "Amortizaciones separadas de las de traspasos; igual a 'Afschrijvingen' de fortuna-sittard"
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 17,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.85,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.9,
+   "motivo": "Igual a 'Overige bedrijfskosten' de fc-volendam"
+  }
+ ]
+}

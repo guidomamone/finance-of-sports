@@ -1,0 +1,72 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.md",
+ "mdSha1": "ef09f742ca295c5f8b51264e85c2aad8175845ba",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:15:26.703Z",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    80,
+    103
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    120,
+    123
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    127,
+    131
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    135,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    152,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    177,
+    201
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Bedragen in €)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024/2025",
+ "columna_anterior": "2023/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados es la 'Enkelvoudige winst-en-verliesrekening over 2024/2025' (individual) en b5, pág. 6. El documento no tiene notas que desglosen ingresos o gastos; los demás bloques son balance (b1-b4) y flujo de efectivo (b6)."
+}

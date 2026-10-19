@@ -1,0 +1,230 @@
+{
+  "md": "Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.md",
+  "pdf": "Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.pdf",
+  "club": "fc-twente",
+  "year": 2025,
+  "generatedAt": "2026-10-19T00:12:35.765Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdbaten",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet (11)\"",
+      "values": [
+        10.592
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Bijdragen in giften en geld",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet (11)\"",
+      "values": [
+        30.21
+      ],
+      "glosa": "Aportaciones y donaciones en efectivo"
+    },
+    {
+      "label": "Televisiebaten",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet (11)\"",
+      "values": [
+        7.941
+      ],
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Merchandising",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet (11)\"",
+      "values": [
+        0.382
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Catering",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet (11)\"",
+      "values": [
+        11.451
+      ],
+      "glosa": "Catering"
+    },
+    {
+      "label": "Overige baten",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet (11)\"",
+      "values": [
+        1.114
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Resultaat vergoedingssommen (16)",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        16.469
+      ],
+      "glosa": "Resultado por traspasos de jugadores (16)"
+    },
+    {
+      "label": "Inkoopwaarde van de omzet",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        5.413
+      ],
+      "glosa": "Coste de las ventas"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten (12)\"",
+      "values": [
+        19.504
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten (12)\"",
+      "values": [
+        1.548
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenpremies",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten (12)\"",
+      "values": [
+        0.224
+      ],
+      "glosa": "Aportaciones a planes de pensiones"
+    },
+    {
+      "label": "Autokosten",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten (12)\"",
+      "values": [
+        0.875
+      ],
+      "glosa": "Gastos de vehículos"
+    },
+    {
+      "label": "Inhuur personeel",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten (12)\"",
+      "values": [
+        0.993
+      ],
+      "glosa": "Gastos de personal externo"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten (12)\"",
+      "values": [
+        1.07
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Wedstrijd- en trainingskosten",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Overige bedrijfskosten (13)\"",
+      "values": [
+        6.307
+      ],
+      "glosa": "Gastos de partidos y entrenamientos"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Overige bedrijfskosten (13)\"",
+      "values": [
+        2.831
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Huisvestingskosten",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Overige bedrijfskosten (13)\"",
+      "values": [
+        6.06
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Overige bedrijfskosten (13)\"",
+      "values": [
+        3.98
+      ],
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Afschrijvingen (im)materiële vaste activa (14)",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        3.332
+      ],
+      "glosa": "Amortización de inmovilizado material e intangible (14)"
+    },
+    {
+      "label": "Vergoedingssommen",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Afschrijvingen vergoedingssommen (16)\"",
+      "values": [
+        4.695
+      ],
+      "glosa": "Indemnizaciones por traspasos"
+    },
+    {
+      "label": "Hand- en tekengelden",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Afschrijvingen vergoedingssommen (16)\"",
+      "values": [
+        0.37
+      ],
+      "glosa": "Primas de fichaje"
+    },
+    {
+      "label": "Kosten intermediairs",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Afschrijvingen vergoedingssommen (16)\"",
+      "values": [
+        0.878
+      ],
+      "glosa": "Comisiones de intermediarios"
+    }
+  ]
+}

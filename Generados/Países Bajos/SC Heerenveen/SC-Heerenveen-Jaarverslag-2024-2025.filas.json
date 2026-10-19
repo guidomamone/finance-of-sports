@@ -1,0 +1,448 @@
+{
+ "pdf": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.md",
+ "mdSha1": "4e88dfa3695f5bef7bee9d3bd9c06cf54020eaec",
+ "ubicacionSha1": "6aa78d4ddeb7ffb0db3b496b352320c2522fb95e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T00:12:35.100Z",
+ "ubicacion": {
+  "estado": [
+   "b11"
+  ],
+  "notas_ingresos": [
+   "b21",
+   "b6"
+  ],
+  "notas_gastos": [
+   "b22",
+   "b7"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2024/2025 €' (L860), importes en euros completos"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2024/2025 €' (L1523)"
+  },
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "'€ 7.555.866,-' (L287)"
+  },
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2024/2025 €' (L1538)"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "'€ 3.640.077,-' (L303)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b11",
+   "linea": 862,
+   "etiqueta": "Netto-omzet",
+   "actual": "24.259.980",
+   "anterior": "20.628.236",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 863,
+   "etiqueta": "Netto-opbrengst vergoedingssommen",
+   "actual": "7.555.866",
+   "anterior": "3.410.865",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 864,
+   "etiqueta": "Som der bedrijfsopbrengsten",
+   "actual": "31.815.846",
+   "anterior": "24.039.101",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 865,
+   "etiqueta": "Kostprijs",
+   "actual": "1.406.246",
+   "anterior": "1.249.770",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 866,
+   "etiqueta": "Personeelskosten",
+   "actual": "14.594.048",
+   "anterior": "12.935.178",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 867,
+   "etiqueta": "Afschrijvingen op immateriële vaste activa",
+   "actual": "3.640.077",
+   "anterior": "3.945.305",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 868,
+   "etiqueta": "Afschrijvingen op materiële vaste activa",
+   "actual": "685.457",
+   "anterior": "850.014",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 869,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "10.279.559",
+   "anterior": "9.781.804",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 870,
+   "etiqueta": "Som der bedrijfslasten",
+   "actual": "30.605.387",
+   "anterior": "28.762.071",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 871,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "1.210.459",
+   "anterior": "-4.722.970",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 872,
+   "etiqueta": "Rentebaten en soortgelijke opbrengsten",
+   "actual": "61.227",
+   "anterior": "98.105",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 873,
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "actual": "-96.481",
+   "anterior": "-11.725",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 874,
+   "etiqueta": "Resultaat uit gewone bedrijfsuitoefening voor belastingen",
+   "actual": "1.175.205",
+   "anterior": "-4.636.590",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 875,
+   "etiqueta": "Vennootschapsbelasting",
+   "actual": "-332.253",
+   "anterior": "1.169.399",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 876,
+   "etiqueta": "Resultaat deelnemingen",
+   "actual": "203.041",
+   "anterior": "488.934",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 877,
+   "etiqueta": "Resultaat na belastingen",
+   "actual": "1.045.993",
+   "anterior": "-2.978.257",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 1525,
+   "etiqueta": "Wedstrijdbaten",
+   "actual": "4.867.279",
+   "anterior": "4.306.734",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1526,
+   "etiqueta": "Sponsoring",
+   "actual": "9.101.753",
+   "anterior": "8.362.213",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1527,
+   "etiqueta": "Mediagelden",
+   "actual": "6.469.374",
+   "anterior": "4.917.956",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1528,
+   "etiqueta": "Food & Beverage",
+   "actual": "531.163",
+   "anterior": "621.423",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1529,
+   "etiqueta": "Merchandise",
+   "actual": "776.585",
+   "anterior": "634.300",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1530,
+   "etiqueta": "Overige opbrengsten",
+   "actual": "2.513.826",
+   "anterior": "1.785.610",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1531,
+   "etiqueta": "",
+   "actual": "24.259.980",
+   "anterior": "20.628.236",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b6",
+   "linea": 293,
+   "etiqueta": "Boekwaarde ‘verkochte’ spelers",
+   "actual": "€ 2.699.754,-",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Netto-opbrengst vergoedingssommen"
+  },
+  {
+   "bloque": "b6",
+   "linea": 294,
+   "etiqueta": "Aandelen clubs, spelers en voetbalagenten",
+   "actual": "€ 1.537.902,-",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Netto-opbrengst vergoedingssommen"
+  },
+  {
+   "bloque": "b6",
+   "linea": 295,
+   "etiqueta": "Netto opbrengst vergoedingssommen",
+   "actual": "€ 7.555.866,-",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Netto-opbrengst vergoedingssommen"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1540,
+   "etiqueta": "Salariskosten",
+   "actual": "10.939.527",
+   "anterior": "10.002.037",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1541,
+   "etiqueta": "Pensioenlasten",
+   "actual": "245.383",
+   "anterior": "257.271",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1542,
+   "etiqueta": "Sociale lasten",
+   "actual": "1.534.143",
+   "anterior": "1.329.507",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1543,
+   "etiqueta": "Overige kosten",
+   "actual": "1.676.125",
+   "anterior": "1.546.583",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1544,
+   "etiqueta": "Doorberekende personeelskosten",
+   "actual": "198.870",
+   "anterior": "-195.901",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1545,
+   "etiqueta": "Tijdelijke Noodmaatregel Overbrugging Werkgelegenheid",
+   "actual": "0",
+   "anterior": "-4.319",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1546,
+   "etiqueta": "",
+   "actual": "14.594.048",
+   "anterior": "12.935.178",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b7",
+   "linea": 301,
+   "etiqueta": "Afschrijvingskosten vergoedingssommen",
+   "actual": "€ 3.268.827,-",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Afschrijvingen op immateriële vaste activa"
+  },
+  {
+   "bloque": "b7",
+   "linea": 302,
+   "etiqueta": "Afwaardering boekwaarde vertrokken spelers",
+   "actual": "€ 371.250,-",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Afschrijvingen op immateriële vaste activa"
+  },
+  {
+   "bloque": "b7",
+   "linea": 303,
+   "etiqueta": "Afschrijvingskosten vergoedingssommen",
+   "actual": "€ 3.640.077,-",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Afschrijvingen op immateriële vaste activa"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 864,
+  "actual": "31.815.846"
+ },
+ "total_gastos": {
+  "linea": 870,
+  "actual": "30.605.387"
+ },
+ "resultado": {
+  "linea": 877,
+  "actual": "1.045.993",
+  "anterior": "-2.978.257"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿El importe de 'Transfersommen...' (L292) impreso '€ 11.793,522,-' se carga como 11.793.522?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Netto-opbrengst vergoedingssommen",
+   "texto": "L292 tiene una coma en lugar de punto de miles; 11.793.522 - 2.699.754 - 1.537.902 = 7.555.866 lo confirma, pero se dejó afuera por no transcribirse tal cual.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Doorberekende personeelskosten' 2024/2025 (L1544) como 198.870 positivo pese a que la suma de la nota exige -198.870?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Personeelskosten",
+   "texto": "Con +198.870 la nota suma 14.991.048, no 14.594.048; el signo correcto parece negativo (como en 2023/2024).",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Notas b6 y b7 (pág. 8, informe de gestión) sin columna de año anterior; los signos se indican con '+' y '-/-'. Resultaat deelnemingen se registra después del impuesto, lado otro. Las filas sin etiqueta L1531 y L1546 son totales de nota."
+}

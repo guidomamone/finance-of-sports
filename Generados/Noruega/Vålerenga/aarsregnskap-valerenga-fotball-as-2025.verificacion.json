@@ -1,0 +1,198 @@
+{
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf",
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.md",
+ "generado": "2026-10-19T00:28:23.956Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2025-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 3 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "c944d33",
+  "f8bbdb8",
+  "bf20427",
+  "2eb40bd"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "99.824626 = 99.824626",
+   "suma": 99.82462600000001,
+   "impreso": 99.824626
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "128.95424 = 128.95424",
+   "suma": 128.95424,
+   "impreso": 128.95424
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 99.824626 - gastos 128.95424 ± financiero 108.4813 ± impuesto 0 no da el impreso 2.596666",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b22 (pág. 15) parece otra presentación del mismo resultatregnskap individual de Vålerenga Fotball AS ya incluido en b1."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 99.824626,
+  "gastos": 128.95424,
+  "financiero": 108.4813,
+  "impuesto": 0,
+  "resultadoImpreso": 2.596666,
+  "resultadoParaCargar": 2.596666,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Sponsorinntekter",
+   "lado": "ingreso",
+   "M": 44.538148,
+   "pagina": 8,
+   "linea": 291,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Markeds- og medieinntekter",
+   "lado": "ingreso",
+   "M": 28.53763,
+   "pagina": 8,
+   "linea": 292,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Billettsalg",
+   "lado": "ingreso",
+   "M": 25.505735,
+   "pagina": 8,
+   "linea": 293,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Viderefakturert",
+   "lado": "ingreso",
+   "M": 0.19539,
+   "pagina": 8,
+   "linea": 299,
+   "origen": "nota que desglosa \"Andre inntekter\""
+  },
+  {
+   "etiqueta": "Diverse inntekter",
+   "lado": "ingreso",
+   "M": 1.047723,
+   "pagina": 8,
+   "linea": 300,
+   "origen": "nota que desglosa \"Andre inntekter\""
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 12.565199,
+   "pagina": 2,
+   "linea": 113,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 11.905657,
+   "pagina": 8,
+   "linea": 311,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 1.802767,
+   "pagina": 8,
+   "linea": 312,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 0.247852,
+   "pagina": 8,
+   "linea": 313,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre ytelser",
+   "lado": "gasto",
+   "M": 2.302202,
+   "pagina": 8,
+   "linea": 314,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning av driftsmidler",
+   "lado": "gasto",
+   "M": 0.185432,
+   "pagina": 2,
+   "linea": 115,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 1.045077,
+   "pagina": 2,
+   "linea": 116,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 98.900054,
+   "pagina": 2,
+   "linea": 117,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 70.10379,
+   "linea": 121
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": 38.37751,
+   "linea": 123
+  }
+ ],
+ "impuesto": []
+}

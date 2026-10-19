@@ -1,0 +1,302 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.pdf",
+ "md": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.md",
+ "generado": "2026-10-19T00:12:35.407Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2025-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (consolidado); 3 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.2612801348363973e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Afschrijvingen\"): ¿Se trata 'Materië le vaste activa' (L850, 178.098) como subtotal y se cargan como detalle de Afschrijvingen solo L856-L857?",
+  "duda de extraer que no afecta la carga: L852 y L853 suman cero (L854) y la amortización se reasigna a Resultaat vergoedingssommen (L876); no altera el total."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5.968194,
+  "gastos": 5.917161,
+  "financiero": -0.01924,
+  "impuesto": 0,
+  "resultadoImpreso": 0.031793,
+  "resultadoParaCargar": 0.031793,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Wedstrijdbaten",
+   "lado": "ingreso",
+   "M": 0.245796,
+   "pagina": 28,
+   "linea": 829,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 2.594104,
+   "pagina": 28,
+   "linea": 830,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Media gerelateerde baten",
+   "lado": "ingreso",
+   "M": 0.864691,
+   "pagina": 28,
+   "linea": 831,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Merchandise",
+   "lado": "ingreso",
+   "M": 0.053163,
+   "pagina": 28,
+   "linea": 832,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Horeca",
+   "lado": "ingreso",
+   "M": 0.505989,
+   "pagina": 28,
+   "linea": 833,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Prijzengeld",
+   "lado": "ingreso",
+   "M": 0.219257,
+   "pagina": 28,
+   "linea": 834,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Subsidies",
+   "lado": "ingreso",
+   "M": 0.131255,
+   "pagina": 28,
+   "linea": 835,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Overige baten",
+   "lado": "ingreso",
+   "M": 0.792862,
+   "pagina": 28,
+   "linea": 836,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Resultaat vergoedingssommen",
+   "lado": "ingreso",
+   "M": 0.561077,
+   "pagina": 10,
+   "linea": 226,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Lonen en salarissen",
+   "lado": "gasto",
+   "M": 2.075105,
+   "pagina": 28,
+   "linea": 839,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Sociale lasten",
+   "lado": "gasto",
+   "M": 0.447548,
+   "pagina": 28,
+   "linea": 840,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Pensioenlasten",
+   "lado": "gasto",
+   "M": 0.054277,
+   "pagina": 28,
+   "linea": 841,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Overige personeelskosten",
+   "lado": "gasto",
+   "M": 0.79855,
+   "pagina": 28,
+   "linea": 842,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Vergoedingssommen",
+   "lado": "gasto",
+   "M": 0.03,
+   "pagina": 28,
+   "linea": 852,
+   "origen": "nota que desglosa \"Afschrijvingen\""
+  },
+  {
+   "etiqueta": "Allocatie amortisatie vergoedingssommen",
+   "lado": "gasto",
+   "M": -0.03,
+   "pagina": 28,
+   "linea": 853,
+   "origen": "nota que desglosa \"Afschrijvingen\""
+  },
+  {
+   "etiqueta": "Bedrijfsgebouwen en -terreinen",
+   "lado": "gasto",
+   "M": 0.027797,
+   "pagina": 28,
+   "linea": 856,
+   "origen": "nota que desglosa \"Afschrijvingen\""
+  },
+  {
+   "etiqueta": "Andere vaste bedrijfsmiddelen",
+   "lado": "gasto",
+   "M": 0.150301,
+   "pagina": 28,
+   "linea": 857,
+   "origen": "nota que desglosa \"Afschrijvingen\""
+  },
+  {
+   "etiqueta": "Huisvestingskosten",
+   "lado": "gasto",
+   "M": 0.370103,
+   "pagina": 29,
+   "linea": 869,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Wedstrijd- en trainingskosten",
+   "lado": "gasto",
+   "M": 0.702204,
+   "pagina": 29,
+   "linea": 870,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Verkoopkosten",
+   "lado": "gasto",
+   "M": 0.801964,
+   "pagina": 29,
+   "linea": 871,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Algemene kosten",
+   "lado": "gasto",
+   "M": 0.489312,
+   "pagina": 29,
+   "linea": 872,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financië le baten en lasten",
+   "M": -0.01924,
+   "linea": 227
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": null,
+   "linea": 229
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "6e2a41efca7d74989aed9eeb7fee57f5fd14f86e",
+  "rango": [
+   216,
+   233
+  ],
+  "lineasCargadas": [
+   829,
+   830,
+   831,
+   832,
+   833,
+   834,
+   835,
+   836,
+   226,
+   839,
+   840,
+   841,
+   842,
+   852,
+   853,
+   856,
+   857,
+   869,
+   870,
+   871,
+   872,
+   227,
+   229
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 216 a 233 del .md):\nL217: |  | Nota | 2024/2025 € | 2024/2025 € | 2023/2024 € | 2023/2024 € |\nL218: | --- | --- | --- | --- | --- | --- |\nL219: | Netto-omzet | (10,11) |  | 5.407.117 |  | 5.002.151 |\nL220: | **Kosten** |  |  |  |  |  |\nL221: | Personeelskosten | (12) | 3.375.480 |  | 3.374.154 |  |\nL222: | Afschrijvingen | (13) | 178.098 |  | 212.310 |  |\nL223: | Overige bedrijfskosten | (14) | 2.363.583 |  | 2.164.312 |  |\nL224: |  |  |  | 5.917.161 |  | 5.750.776 |\nL225: | Bedrijfsresultaat voor resultaat vergoedingssommen |  |  | -510.044 |  | -748.625 |\nL226: | Resultaat vergoedingssommen | (15) |  | 561.077 |  | 288.803 |\nL227: | Financië le baten en lasten | (16) |  | -19.240 |  | -38.451 |\nL228: | Resultaat voor belastingen |  |  | 31.793 |  | -498.273 |\nL229: | Belastingen |  |  | - |  | - |\nL230: | Resultaat na belastingen |  |  | 31.793 |  | -498.273 |\nL232: -9-\n\nLO QUE SE CARGA:\n- ingreso · \"Wedstrijdbaten\" · 0.245796 · L829 (de una nota)\n- ingreso · \"Sponsoring\" · 2.594104 · L830 (de una nota)\n- ingreso · \"Media gerelateerde baten\" · 0.864691 · L831 (de una nota)\n- ingreso · \"Merchandise\" · 0.053163 · L832 (de una nota)\n- ingreso · \"Horeca\" · 0.505989 · L833 (de una nota)\n- ingreso · \"Prijzengeld\" · 0.219257 · L834 (de una nota)\n- ingreso · \"Subsidies\" · 0.131255 · L835 (de una nota)\n- ingreso · \"Overige baten\" · 0.792862 · L836 (de una nota)\n- ingreso · \"Resultaat vergoedingssommen\" · 0.561077 · L226\n- gasto · \"Lonen en salarissen\" · 2.075105 · L839 (de una nota)\n- gasto · \"Sociale lasten\" · 0.447548 · L840 (de una nota)\n- gasto · \"Pensioenlasten\" · 0.054277 · L841 (de una nota)\n- gasto · \"Overige personeelskosten\" · 0.79855 · L842 (de una nota)\n- gasto · \"Vergoedingssommen\" · 0.03 · L852 (de una nota)\n- gasto · \"Allocatie amortisatie vergoedingssommen\" · -0.03 · L853 (de una nota)\n- gasto · \"Bedrijfsgebouwen en -terreinen\" · 0.027797 · L856 (de una nota)\n- gasto · \"Andere vaste bedrijfsmiddelen\" · 0.150301 · L857 (de una nota)\n- gasto · \"Huisvestingskosten\" · 0.370103 · L869 (de una nota)\n- gasto · \"Wedstrijd- en trainingskosten\" · 0.702204 · L870 (de una nota)\n- gasto · \"Verkoopkosten\" · 0.801964 · L871 (de una nota)\n- gasto · \"Algemene kosten\" · 0.489312 · L872 (de una nota)\n- financiero · \"Financië le baten en lasten\" · -0.01924 · L227\n- impuesto · \"Belastingen\" · 0 · L229"
+ }
+}

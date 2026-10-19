@@ -1,0 +1,72 @@
+{
+ "pdf": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.md",
+ "mdSha1": "c6a481f9e3b87537cc782a3ad85987a42dfe478b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T00:11:49.249Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    17,
+    22
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    267,
+    270
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    297,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    329,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    352,
+    361
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    376,
+    394
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "(x 1.000) sobre 'Geconsolideerde winst-en-verliesrekening over 2024-2025'",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024-2025 €",
+ "columna_anterior": "2023-2024 €",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados consolidado está en b6 (pág. 11), en miles de euros. b2 y b3 son indicadores y b4/b5 son el balance consolidado, por eso quedan fuera. El documento no tiene notas con desglose de ingresos ni de gastos. El estado repite cada ejercicio en dos columnas (subtotales y totales)."
+}

@@ -1,0 +1,659 @@
+{
+  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.md",
+  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
+  "club": "luzern",
+  "year": 2025,
+  "generatedAt": "2026-10-19T00:28:24.214Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchorganisation",
+      "lado": "revenue",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        10.630351
+      ],
+      "glosa": "Organización de partidos"
+    },
+    {
+      "label": "Sponsoring, Werbung",
+      "lado": "revenue",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.88661
+      ],
+      "glosa": "Patrocinio y publicidad"
+    },
+    {
+      "label": "TV-Entschädigungen Übertragungsrechte",
+      "lado": "revenue",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.725586
+      ],
+      "glosa": "Ingresos por derechos de retransmisión televisiva"
+    },
+    {
+      "label": "Transferertrag",
+      "lado": "revenue",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.448988
+      ],
+      "glosa": "Ingresos por transferencias de jugadores"
+    },
+    {
+      "label": "Sponsoren- und Spendenbeiträge",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.778095
+      ],
+      "glosa": "Aportaciones de patrocinadores y donaciones"
+    },
+    {
+      "label": "SFV-Verbandsbeiträge",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.842667
+      ],
+      "glosa": "Contribuciones de la federación (SFV)"
+    },
+    {
+      "label": "Sport Toto- und J+S-Entschädigungen",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.273597
+      ],
+      "glosa": "Compensaciones de Sport-Toto y J+S"
+    },
+    {
+      "label": "Ausbildungs- und Materialbeiträge Eltern",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.489205
+      ],
+      "glosa": "Cuotas de formación y material aportadas por padres"
+    },
+    {
+      "label": "Anlässe (FCL-Fussballcamp, Pfingstmaster)",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.220951
+      ],
+      "glosa": "Eventos (campus de fútbol FCL, Pfingstmaster)"
+    },
+    {
+      "label": "Diverse Einnahmen",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.184691
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Konferenzen, Events swissporarena",
+      "lado": "revenue",
+      "page": 41,
+      "section": "nota que desglosa \"Events\"",
+      "values": [
+        0.262196
+      ],
+      "glosa": "Conferencias y eventos swissporarena"
+    },
+    {
+      "label": "Grossevents",
+      "lado": "revenue",
+      "page": 41,
+      "section": "nota que desglosa \"Events\"",
+      "values": [
+        0.027198
+      ],
+      "glosa": "Grandes eventos"
+    },
+    {
+      "label": "Fanshop Präsenzgeschäft",
+      "lado": "revenue",
+      "page": 41,
+      "section": "nota que desglosa \"Merchandising\"",
+      "values": [
+        0.40506
+      ],
+      "glosa": "Tienda oficial (tienda física)"
+    },
+    {
+      "label": "Onlineshop, Distanzgeschäft",
+      "lado": "revenue",
+      "page": 41,
+      "section": "nota que desglosa \"Merchandising\"",
+      "values": [
+        0.400903
+      ],
+      "glosa": "Tienda en línea y venta a distancia"
+    },
+    {
+      "label": "Ausmietung Stewards",
+      "lado": "revenue",
+      "page": 41,
+      "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
+      "values": [
+        0.320125
+      ],
+      "glosa": "Cesión de personal de seguridad (stewards)"
+    },
+    {
+      "label": "Anpassung Delkredere",
+      "lado": "revenue",
+      "page": 41,
+      "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
+      "values": [
+        -0.165577
+      ],
+      "glosa": "Ajuste de provisión para insolvencias"
+    },
+    {
+      "label": "Sonstiges",
+      "lado": "revenue",
+      "page": 41,
+      "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
+      "values": [
+        0.151866
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
+      "lado": "revenue",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.995241
+      ],
+      "glosa": "Ingresos extraordinarios, no recurrentes o de ejercicios anteriores"
+    },
+    {
+      "label": "Erfolg aus Equity-Beteiligungen",
+      "lado": "revenue",
+      "page": 29,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+      "values": [
+        0.106206
+      ],
+      "glosa": "Resultado de participaciones por el método de la participación"
+    },
+    {
+      "label": "Minderheitsanteil am Jahresergebnis",
+      "lado": "revenue",
+      "page": 29,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+      "values": [
+        0.894582
+      ],
+      "glosa": "Participación de socios minoritarios en el resultado del ejercicio"
+    },
+    {
+      "label": "Personalkosten inkl. Spesen",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        7.801561
+      ],
+      "glosa": "Gastos de personal incluidos gastos de representación"
+    },
+    {
+      "label": "Sozialabgaben",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        0.731539
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Unfallversicherungsprämien",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        0.656243
+      ],
+      "glosa": "Primas de seguros de accidentes"
+    },
+    {
+      "label": "Personalkosten inkl. Spesen",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        2.295763
+      ],
+      "glosa": "Gastos de personal incluidos gastos de representación"
+    },
+    {
+      "label": "Sozialabgaben",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        0.476048
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Personalkosten inkl. Spesen",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        2.698085
+      ],
+      "glosa": "Gastos de personal incluidos gastos de representación"
+    },
+    {
+      "label": "Sozialabgaben",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        0.388641
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Personalkosten inkl. Spesen",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        0.264083
+      ],
+      "glosa": "Gastos de personal incluidos gastos de representación"
+    },
+    {
+      "label": "Sozialabgaben",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        0.043278
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Personalkosten inkl. Spesen",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        0.702108
+      ],
+      "glosa": "Gastos de personal incluidos gastos de representación"
+    },
+    {
+      "label": "Sozialabgaben",
+      "lado": "expense",
+      "page": 41,
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        0.072929
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Diferencia de redondeo",
+      "lado": "expense",
+      "section": "nota que desglosa \"Personalaufwand\"",
+      "values": [
+        0.000001
+      ],
+      "glosa": "Diferencia de redondeo"
+    },
+    {
+      "label": "Miete und Unterhalt Stadion",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        1.85216
+      ],
+      "glosa": "Alquiler y mantenimiento del estadio"
+    },
+    {
+      "label": "Sicherheitskosten Matchtag (ohne Stewards)",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        0.898386
+      ],
+      "glosa": "Gastos de seguridad en días de partido (sin stewards)"
+    },
+    {
+      "label": "Abgaben öffentlicher Verkehr",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        0.35729
+      ],
+      "glosa": "Tasas de transporte público"
+    },
+    {
+      "label": "Material und Medical",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        0.741765
+      ],
+      "glosa": "Material y servicios médicos"
+    },
+    {
+      "label": "Ticketing und Vorverkaufsgebühren",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        0.255265
+      ],
+      "glosa": "Gastos de boletaje y comisiones de venta anticipada"
+    },
+    {
+      "label": "Aufwand 1. Mannschaften",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        0.451447
+      ],
+      "glosa": "Gastos del primer equipo"
+    },
+    {
+      "label": "Diverse Kosten Spielbetrieb",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        0.519321
+      ],
+      "glosa": "Gastos diversos de desarrollo de partidos"
+    },
+    {
+      "label": "VIP-Cateringkosten Spieltag",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        1.409829
+      ],
+      "glosa": "Gastos de catering VIP en días de partido"
+    },
+    {
+      "label": "Aufwand übrige Wettbewerbe",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        0.054474
+      ],
+      "glosa": "Gastos de otras competiciones"
+    },
+    {
+      "label": "Rückvergütungen Lieferanten",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+      "values": [
+        -0.451037
+      ],
+      "glosa": "Rappels y devoluciones de proveedores"
+    },
+    {
+      "label": "Transferaufwand definitive Übertritte",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Transferaufwand\"",
+      "values": [
+        0.14906
+      ],
+      "glosa": "Gastos por transferencias definitivas"
+    },
+    {
+      "label": "Spielervermittlungen und Beratungen",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Transferaufwand\"",
+      "values": [
+        0.714138
+      ],
+      "glosa": "Intermediación y asesoramiento de jugadores"
+    },
+    {
+      "label": "Ausleih- und Ausbildungsentschädigungen",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Transferaufwand\"",
+      "values": [
+        0.248658
+      ],
+      "glosa": "Compensaciones por cesión y derechos de formación"
+    },
+    {
+      "label": "Medien, Kommunikation, Inserate",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Werbung und Sponsoring\"",
+      "values": [
+        0.766209
+      ],
+      "glosa": "Medios, comunicación y publicidad"
+    },
+    {
+      "label": "Inhouse TV Spieltag",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Werbung und Sponsoring\"",
+      "values": [
+        0.12642
+      ],
+      "glosa": "Televisión interna en días de partido"
+    },
+    {
+      "label": "LED-Bandenwerbung Produktion",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Werbung und Sponsoring\"",
+      "values": [
+        0.20241
+      ],
+      "glosa": "Producción de publicidad en vallas LED"
+    },
+    {
+      "label": "Diverses",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Werbung und Sponsoring\"",
+      "values": [
+        0.169993
+      ],
+      "glosa": "Varios"
+    },
+    {
+      "label": "Nachwuchs-Akademie",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.186631
+      ],
+      "glosa": "Academia de fútbol base"
+    },
+    {
+      "label": "Anlässe (FCL-Fussballcamp, Pfingstmasters)",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.088929
+      ],
+      "glosa": "Eventos (campus de fútbol FCL, Pfingstmasters)"
+    },
+    {
+      "label": "Materialkosten",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.490803
+      ],
+      "glosa": "Coste de materiales"
+    },
+    {
+      "label": "Spielbetrieb und Mannschaftsaufwand",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+      "values": [
+        0.483271
+      ],
+      "glosa": "Gastos de competición y de los equipos"
+    },
+    {
+      "label": "Konferenzen / Events",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Events\"",
+      "values": [
+        0.185769
+      ],
+      "glosa": "Conferencias y eventos"
+    },
+    {
+      "label": "Grossevents",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Events\"",
+      "values": [
+        0.029811
+      ],
+      "glosa": "Grandes eventos"
+    },
+    {
+      "label": "Merchandising",
+      "lado": "expense",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.434443
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Energie, Wasser und Entsorgung",
+      "lado": "expense",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.356408
+      ],
+      "glosa": "Energía, agua y gestión de residuos"
+    },
+    {
+      "label": "Verwaltungsaufwand",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
+      "values": [
+        0.314164
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "IT, Telefon, Internet und Applikationen",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
+      "values": [
+        0.744382
+      ],
+      "glosa": "TI, telefonía, internet y aplicaciones"
+    },
+    {
+      "label": "Sachversicherungen, Abgaben und Gebühren",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
+      "values": [
+        0.088571
+      ],
+      "glosa": "Seguros de bienes, tasas y tributos"
+    },
+    {
+      "label": "Fahrzeug/Treibstoff",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
+      "values": [
+        0.217991
+      ],
+      "glosa": "Vehículos y combustible"
+    },
+    {
+      "label": "Sonstiger Betriebsaufwand",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\"",
+      "values": [
+        0.066492
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Abschreibungen mobile Sachanlagen",
+      "lado": "expense",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.211164
+      ],
+      "glosa": "Amortización de inmovilizado material mobiliario"
+    },
+    {
+      "label": "Abschreibungen immaterielle Sachanlagen",
+      "lado": "expense",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.197018
+      ],
+      "glosa": "Amortización de inmovilizado intangible"
+    },
+    {
+      "label": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
+      "lado": "expense",
+      "page": 29,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.135065
+      ],
+      "glosa": "Gastos extraordinarios, no recurrentes o de ejercicios anteriores"
+    }
+  ]
+}

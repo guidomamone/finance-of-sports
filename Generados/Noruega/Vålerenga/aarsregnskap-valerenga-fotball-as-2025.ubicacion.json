@@ -1,0 +1,246 @@
+{
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf",
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.md",
+ "mdSha1": "17b1429947a348ea1a8b74824353c80c10596778",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:56:57.321Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    104,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    149,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    190,
+    204
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    289,
+    294
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    297,
+    301
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    309,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    320,
+    322
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    324,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 8,
+   "lineas": [
+    329,
+    334
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    345,
+    356
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 9,
+   "lineas": [
+    360,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 9,
+   "lineas": [
+    365,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 10,
+   "lineas": [
+    378,
+    388
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 10,
+   "lineas": [
+    391,
+    402
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 10,
+   "lineas": [
+    405,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 10,
+   "lineas": [
+    413,
+    417
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 10,
+   "lineas": [
+    423,
+    426
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 11,
+   "lineas": [
+    437,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 11,
+   "lineas": [
+    447,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 11,
+   "lineas": [
+    456,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 11,
+   "lineas": [
+    471,
+    474
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    594,
+    617
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 16,
+   "lineas": [
+    631,
+    649
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 17,
+   "lineas": [
+    663,
+    680
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b4",
+  "b5"
+ ],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el resultatregnskap de la pág. 15 (b22) por ser una segunda copia del mismo estado de b1?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b22 (pág. 15) parece otra presentación del mismo resultatregnskap individual de Vålerenga Fotball AS ya incluido en b1.",
+   "bloques": [
+    "b22",
+    "b1"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se usa la cifra 2024 reexpresada del estado 2025 como columna anterior, aceptando que difiere de lo ya cargado por la reclasificación de varekostnad (Note 2)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Varekostnad",
+   "texto": "La Note 2 indica que se omarbeidet sammenligningstall 2024 de varekostnad.",
+   "bloques": [
+    "b1",
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de Vålerenga Fotball AS en NOK unidades (b1, pág. 2). b22 parece duplicado (versión pág. 15). Notas: b4 Salgsinntekter, b5 Andre inntekter, b6 lønnskostnader. b9 honorarios auditor, b12 pérdidas por créditos y b10 activo fijo no se eligen."
+}

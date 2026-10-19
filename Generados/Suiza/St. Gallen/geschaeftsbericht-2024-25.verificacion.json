@@ -1,0 +1,312 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.md",
+ "generado": "2026-10-19T00:28:24.306Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "ER 'konsolidierte' FC St.Gallen AG + FC St.Gallen Event AG (operadora del estadio): las dos hacen el negocio del club",
+   "evidencia": ".md L253-283",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [
+  "fd2fe89",
+  "ae53768",
+  "e8f7e5d",
+  "0a95038",
+  "3e76209"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Erträge netto\" 45.057 cierra; además se suman 13 línea(s) fuera de ese total (46.027)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 91.084 - gastos 44.681 ± financiero -0.292 ± impuesto -0.011 no da el impreso 0.117",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Ertragsminderungen\" (2 filas) no suma la fila: quedó la fila"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Ertragsminderungen",
+   "suma": 0.505,
+   "objetivo": 0.484
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Ertragsminderungen",
+   "suma": 0.505,
+   "objetivo": 0.484
+  }
+ ],
+ "totales": {
+  "ingresos": 91.084,
+  "gastos": 44.681,
+  "financiero": -0.292,
+  "impuesto": -0.011,
+  "resultadoImpreso": 0.117,
+  "resultadoParaCargar": 0.117,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Erträge aus Transfers und Leihgebühren",
+   "lado": "ingreso",
+   "M": 3.353,
+   "pagina": 10,
+   "linea": 326,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Diverse Erträge inklusive Swiss Football League",
+   "lado": "ingreso",
+   "M": 9.512,
+   "pagina": 10,
+   "linea": 327,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Erträge aus FutureChampsOstschweiz",
+   "lado": "ingreso",
+   "M": 1.416,
+   "pagina": 10,
+   "linea": 328,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Erträge von Gönnern und Mitgliedern",
+   "lado": "ingreso",
+   "M": 1.246,
+   "pagina": 10,
+   "linea": 329,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Ertrag aus Fussballspielen",
+   "lado": "ingreso",
+   "M": 11.607,
+   "pagina": 11,
+   "linea": 397,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Ertrag aus Werbung und Sponsoring",
+   "lado": "ingreso",
+   "M": 9.547,
+   "pagina": 11,
+   "linea": 398,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Ertrag aus Hospitality und Logen",
+   "lado": "ingreso",
+   "M": 5.167,
+   "pagina": 11,
+   "linea": 399,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Ertrag aus Merchandising",
+   "lado": "ingreso",
+   "M": 2.32,
+   "pagina": 11,
+   "linea": 400,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Ertrag aus Drittveranstaltungen",
+   "lado": "ingreso",
+   "M": 0.107,
+   "pagina": 11,
+   "linea": 401,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Ertrag aus Conference Arena / Diverse Erträge",
+   "lado": "ingreso",
+   "M": 1.245,
+   "pagina": 11,
+   "linea": 402,
+   "origen": "nota que desglosa \"Erträge brutto\""
+  },
+  {
+   "etiqueta": "Veränderung Wertberichtigungen",
+   "lado": "ingreso",
+   "M": -0.021,
+   "pagina": 10,
+   "linea": 330,
+   "origen": "nota que desglosa \"Ertragsminderungen\""
+  },
+  {
+   "etiqueta": "Ertragsminderungen",
+   "lado": "ingreso",
+   "M": 0.484,
+   "pagina": 11,
+   "linea": 403,
+   "origen": "nota que desglosa \"Ertragsminderungen\""
+  },
+  {
+   "etiqueta": "Erträge netto",
+   "lado": "ingreso",
+   "M": 45.057,
+   "pagina": 9,
+   "linea": 261,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ausserordentlicher Ertrag",
+   "lado": "ingreso",
+   "M": 0.044,
+   "pagina": 9,
+   "linea": 275,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwand für Spielbetrieb",
+   "lado": "gasto",
+   "M": 4.845,
+   "pagina": 10,
+   "linea": 332,
+   "origen": "nota que desglosa \"Direkte Kosten\""
+  },
+  {
+   "etiqueta": "Aufwand für Transfers",
+   "lado": "gasto",
+   "M": 1.378,
+   "pagina": 10,
+   "linea": 333,
+   "origen": "nota que desglosa \"Direkte Kosten\""
+  },
+  {
+   "etiqueta": "Aufwand für Spielorganisation Fussball",
+   "lado": "gasto",
+   "M": 3.701,
+   "pagina": 11,
+   "linea": 405,
+   "origen": "nota que desglosa \"Direkte Kosten\""
+  },
+  {
+   "etiqueta": "Aufwand für Catering",
+   "lado": "gasto",
+   "M": 2.164,
+   "pagina": 11,
+   "linea": 406,
+   "origen": "nota que desglosa \"Direkte Kosten\""
+  },
+  {
+   "etiqueta": "Aufwand für Werbung und Sponsoring",
+   "lado": "gasto",
+   "M": 1.005,
+   "pagina": 11,
+   "linea": 407,
+   "origen": "nota que desglosa \"Direkte Kosten\""
+  },
+  {
+   "etiqueta": "Aufwand für Mechandising",
+   "lado": "gasto",
+   "M": 1.876,
+   "pagina": 11,
+   "linea": 408,
+   "origen": "nota que desglosa \"Direkte Kosten\""
+  },
+  {
+   "etiqueta": "Aufwand für Drittveranstaltungen",
+   "lado": "gasto",
+   "M": 0.012,
+   "pagina": 11,
+   "linea": 409,
+   "origen": "nota que desglosa \"Direkte Kosten\""
+  },
+  {
+   "etiqueta": "Aufwand für Conference Arena / Diverses",
+   "lado": "gasto",
+   "M": 0.074,
+   "pagina": 11,
+   "linea": 410,
+   "origen": "nota que desglosa \"Direkte Kosten\""
+  },
+  {
+   "etiqueta": "Personalaufwand",
+   "lado": "gasto",
+   "M": 20.833,
+   "pagina": 9,
+   "linea": 264,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "lado": "gasto",
+   "M": 5.372,
+   "pagina": 9,
+   "linea": 266,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen Sachanlagen",
+   "lado": "gasto",
+   "M": 1.362,
+   "pagina": 9,
+   "linea": 271,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "lado": "gasto",
+   "M": 2.059,
+   "pagina": 9,
+   "linea": 272,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzerfolg",
+   "M": -0.292,
+   "linea": 274
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern",
+   "M": -0.011,
+   "linea": 276
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.md",
+  "pdf": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.pdf",
+  "club": "almere-city",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:27.402Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Netto-omzet",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        15.391477
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.371884
+      ],
+      "glosa": "Resultado por traspasos"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        9.325684
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        1.834305
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Afschrijving vaste activa",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.361672
+      ],
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        4.102788
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

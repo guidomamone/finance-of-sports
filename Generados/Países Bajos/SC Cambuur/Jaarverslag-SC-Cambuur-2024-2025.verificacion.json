@@ -1,0 +1,177 @@
+{
+ "pdf": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.md",
+ "generado": "2026-10-19T00:13:16.712Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "balance consolidado 'per 30 juni 2025'",
+   "evidencia": ".md L21, L321 y L329",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "El documento (publicación para la licencia KNVB F.04) trae SOLO el balance y la cuenta de resultados consolidados de SC Cambuur-Leeuwarden B.V.; no hay estados individuales ni lista de controladas, así que el consolidado es la única opción. Resultado deelnemingen y aandeel derden son 0, lo que sugiere que el perímetro es prácticamente el club mismo (no verificable en este documento). (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "Geconsolideerde winst-en-verliesrekening over 2024-2025 (L372); Bovenstaande gegevens zijn ontleend uit de jaarrekening ... van SC Cambuur-Leeuwarden B.V. (L396-397)",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Netto-omzet\" 10.544 cierra; además se suman 1 línea(s) fuera de ese total (0.075)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "13.615 = 13.615",
+   "suma": 13.614999999999998,
+   "impreso": 13.615
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.3322676295501878e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 10.619,
+  "gastos": 13.615,
+  "financiero": -0.531,
+  "impuesto": -0.068,
+  "resultadoImpreso": -3.595,
+  "resultadoParaCargar": -3.595,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Netto-omzet",
+   "lado": "ingreso",
+   "M": 10.544,
+   "pagina": 11,
+   "linea": 378,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vergoedingssommen",
+   "lado": "ingreso",
+   "M": 0.075,
+   "pagina": 11,
+   "linea": 385,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Kostprijs van de omzet",
+   "lado": "gasto",
+   "M": 0.181,
+   "pagina": 11,
+   "linea": 379,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lonen en salarissen",
+   "lado": "gasto",
+   "M": 7.364,
+   "pagina": 11,
+   "linea": 380,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen",
+   "lado": "gasto",
+   "M": 0.491,
+   "pagina": 11,
+   "linea": 381,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Overige bedrijfskosten",
+   "lado": "gasto",
+   "M": 5.579,
+   "pagina": 11,
+   "linea": 382,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële baten",
+   "M": 0.011,
+   "linea": 387
+  },
+  {
+   "etiqueta": "Financiële lasten",
+   "M": -0.542,
+   "linea": 388
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": -0.068,
+   "linea": 390
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "335c7a4fa9dda7d33b2a61e94553f0661f86b33e",
+  "rango": [
+   375,
+   397
+  ],
+  "lineasCargadas": [
+   378,
+   385,
+   379,
+   380,
+   381,
+   382,
+   387,
+   388,
+   390
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 375 a 397 del .md):\nL376: | Post | 2024-2025 € | 2024-2025 € | 2023-2024 € | 2023-2024 € |\nL377: | --- | --- | --- | --- | --- |\nL378: | Netto-omzet | | 10.544 | | 9.279 |\nL379: | Kostprijs van de omzet | 181 | | 609 | |\nL380: | Lonen en salarissen | 7.364 | | 5.782 | |\nL381: | Afschrijvingen | 491 | | 58 | |\nL382: | Overige bedrijfskosten | 5.579 | | 2.980 | |\nL383: | Som der kosten | | 13.615 | | 9.429 |\nL384: | Bedrijfsresultaat vóór vergoedingssommen | | - 3.071 | | - 150 |\nL385: | Vergoedingssommen | | 75 | | 260 |\nL386: | Bedrijfsresultaat | | - 2.996 | | 110 |\nL387: | Financiële baten | | 11 | | 9 |\nL388: | Financiële lasten | | - 542 | | - 76 |\nL389: | Resultaat vóór belasting | | - 3.527 | | 43 |\nL390: | Belastingen | | - 68 | | 0 |\nL391: | Resultaat deelnemingen | | 0 | | 0 |\nL392: | | | - 3.595 | | 43 |\nL393: | Resultaat aandeel derden | | 0 | | 0 |\nL394: | Resultaat na belasting | | - 3.595 | | 43 |\nL396: Bovenstaande gegevens zijn ontleend uit de jaarrekening 2025/2026 van SC Cambuur-\nL397: Leeuwarden B.V. waarbij een accountantsverklaring is verstrekt.\n\nLO QUE SE CARGA:\n- ingreso · \"Netto-omzet\" · 10.544 · L378\n- ingreso · \"Vergoedingssommen\" · 0.075 · L385\n- gasto · \"Kostprijs van de omzet\" · 0.181 · L379\n- gasto · \"Lonen en salarissen\" · 7.364 · L380\n- gasto · \"Afschrijvingen\" · 0.491 · L381\n- gasto · \"Overige bedrijfskosten\" · 5.579 · L382\n- financiero · \"Financiële baten\" · 0.011 · L387\n- financiero · \"Financiële lasten\" · -0.542 · L388\n- impuesto · \"Belastingen\" · -0.068 · L390"
+ }
+}

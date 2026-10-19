@@ -1,0 +1,350 @@
+{
+  "md": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.md",
+  "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
+  "club": "fc-groningen",
+  "year": 2025,
+  "generatedAt": "2026-10-19T00:12:35.713Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdopbrengsten",
+      "lado": "revenue",
+      "page": 57,
+      "section": "nota que desglosa \"Netto-omzet (9.1)\"",
+      "values": [
+        4.69755
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Sponsoring en reclame",
+      "lado": "revenue",
+      "page": 57,
+      "section": "nota que desglosa \"Netto-omzet (9.1)\"",
+      "values": [
+        9.891505
+      ],
+      "glosa": "Patrocinio y publicidad"
+    },
+    {
+      "label": "Mediarechten",
+      "lado": "revenue",
+      "page": 57,
+      "section": "nota que desglosa \"Netto-omzet (9.1)\"",
+      "values": [
+        4.357497
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Merchandising",
+      "lado": "revenue",
+      "page": 57,
+      "section": "nota que desglosa \"Netto-omzet (9.1)\"",
+      "values": [
+        1.961748
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Food & Beverage",
+      "lado": "revenue",
+      "page": 57,
+      "section": "nota que desglosa \"Netto-omzet (9.1)\"",
+      "values": [
+        4.201114
+      ],
+      "glosa": "Alimentos y bebidas"
+    },
+    {
+      "label": "Uitkeringen",
+      "lado": "revenue",
+      "page": 57,
+      "section": "nota que desglosa \"Netto-omzet (9.1)\"",
+      "values": [
+        1.72554
+      ],
+      "glosa": "Asignaciones y distribuciones"
+    },
+    {
+      "label": "Overige baten",
+      "lado": "revenue",
+      "page": 57,
+      "section": "nota que desglosa \"Netto-omzet (9.1)\"",
+      "values": [
+        0.623973
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Overige bedrijfsopbrengsten (9.2)",
+      "lado": "revenue",
+      "page": 36,
+      "section": "estado",
+      "values": [
+        0.081068
+      ],
+      "glosa": "Otros ingresos de explotación (9.2)"
+    },
+    {
+      "label": "Netto ontvangen afkoopsommen",
+      "lado": "revenue",
+      "page": 59,
+      "section": "nota que desglosa \"Resultaat vergoedingssommen (9.8)\"",
+      "values": [
+        5.65993
+      ],
+      "glosa": "Indemnizaciones netas por traspaso percibidas"
+    },
+    {
+      "label": "Boekwaarde contracten spelers",
+      "lado": "expense",
+      "page": 59,
+      "section": "nota que desglosa \"Resultaat vergoedingssommen (9.8)\"",
+      "values": [
+        1.777607
+      ],
+      "glosa": "Valor contable de contratos de jugadores"
+    },
+    {
+      "label": "Ontvangen/(betaalde) opleidingsvergoedingen",
+      "lado": "revenue",
+      "page": 59,
+      "section": "nota que desglosa \"Resultaat vergoedingssommen (9.8)\"",
+      "values": [
+        0.564294
+      ],
+      "glosa": "Compensaciones por formación cobradas/(pagadas)"
+    },
+    {
+      "label": "Inkoopwaarde van de omzet (9.3)",
+      "lado": "expense",
+      "page": 36,
+      "section": "estado",
+      "values": [
+        2.368487
+      ],
+      "glosa": "Coste de las ventas (9.3)"
+    },
+    {
+      "label": "Contractspelers",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        6.438865
+      ],
+      "glosa": "Jugadores con contrato"
+    },
+    {
+      "label": "Overige spelers",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        0.558057
+      ],
+      "glosa": "Otros jugadores"
+    },
+    {
+      "label": "Technische staf",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        1.383071
+      ],
+      "glosa": "Cuerpo técnico"
+    },
+    {
+      "label": "Medische staf",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        0.371886
+      ],
+      "glosa": "Cuerpo médico"
+    },
+    {
+      "label": "Scouting",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        0.485996
+      ],
+      "glosa": "Scouting"
+    },
+    {
+      "label": "Overige staf voetbalorganisatie",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        1.002601
+      ],
+      "glosa": "Otro personal de la organización deportiva"
+    },
+    {
+      "label": "Directie/management",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        0.45724
+      ],
+      "glosa": "Dirección / Gerencia"
+    },
+    {
+      "label": "Commercie",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        1.486851
+      ],
+      "glosa": "Área comercial"
+    },
+    {
+      "label": "Operationeel",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        1.113987
+      ],
+      "glosa": "Área operativa"
+    },
+    {
+      "label": "Merchandise",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        0.142673
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Horeca",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Personeelskosten (9.4)\"",
+      "values": [
+        1.317899
+      ],
+      "glosa": "Hostelería y restauración"
+    },
+    {
+      "label": "Gebouwen",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Afschrijvingen materiële vaste activa (9.5)\"",
+      "values": [
+        0.054578
+      ],
+      "glosa": "Edificios"
+    },
+    {
+      "label": "Andere vaste bedrijfsmiddelen",
+      "lado": "expense",
+      "page": 58,
+      "section": "nota que desglosa \"Afschrijvingen materiële vaste activa (9.5)\"",
+      "values": [
+        0.560067
+      ],
+      "glosa": "Otros activos fijos materiales"
+    },
+    {
+      "label": "Wedstrijdkosten",
+      "lado": "expense",
+      "page": 59,
+      "section": "nota que desglosa \"Overige bedrijfskosten (9.6)\"",
+      "values": [
+        2.265195
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Huisvestingskosten",
+      "lado": "expense",
+      "page": 59,
+      "section": "nota que desglosa \"Overige bedrijfskosten (9.6)\"",
+      "values": [
+        4.977639
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 59,
+      "section": "nota que desglosa \"Overige bedrijfskosten (9.6)\"",
+      "values": [
+        1.11985
+      ],
+      "glosa": "Gastos de comercialización"
+    },
+    {
+      "label": "Kosten merchandise",
+      "lado": "expense",
+      "page": 59,
+      "section": "nota que desglosa \"Overige bedrijfskosten (9.6)\"",
+      "values": [
+        0.278963
+      ],
+      "glosa": "Gastos de merchandising"
+    },
+    {
+      "label": "Kosten horeca",
+      "lado": "expense",
+      "page": 59,
+      "section": "nota que desglosa \"Overige bedrijfskosten (9.6)\"",
+      "values": [
+        0.332762
+      ],
+      "glosa": "Gastos de hostelería y restauración"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 59,
+      "section": "nota que desglosa \"Overige bedrijfskosten (9.6)\"",
+      "values": [
+        1.234964
+      ],
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Nagekomen baten en lasten",
+      "lado": "expense",
+      "page": 59,
+      "section": "nota que desglosa \"Overige bedrijfskosten (9.6)\"",
+      "values": [
+        -0.081553
+      ],
+      "glosa": "Ingresos y gastos de ejercicios anteriores"
+    },
+    {
+      "label": "Afschrijvingen vergoedingssommen (9.7)",
+      "lado": "expense",
+      "page": 36,
+      "section": "estado",
+      "values": [
+        2.141771
+      ],
+      "glosa": "Amortización de derechos federativos (9.7)"
+    },
+    {
+      "label": "Bijzondere waardeverminderingen",
+      "lado": "expense",
+      "page": 36,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Pérdidas por deterioro de valor"
+    }
+  ]
+}

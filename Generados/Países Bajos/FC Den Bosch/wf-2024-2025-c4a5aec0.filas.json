@@ -1,0 +1,161 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.pdf",
+ "md": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.md",
+ "mdSha1": "9702f8cd17062e8ce0bd33db8b9a2332171070a9",
+ "ubicacionSha1": "213facbbe89e82c885b4960cb419a130876e1cdb",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:12:48.005Z",
+ "ubicacion": {
+  "estado": [
+   "b9"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "L601: encabezado de columnas '€' sin indicación de miles"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b9",
+   "linea": 602,
+   "etiqueta": "Netto-omzet",
+   "actual": "5.133.797",
+   "anterior": "5.273.528",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 604,
+   "etiqueta": "Personeelskosten",
+   "actual": "3.864.955",
+   "anterior": "4.959.058",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 605,
+   "etiqueta": "Afschrijvingen",
+   "actual": "165.585",
+   "anterior": "197.079",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 606,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "2.845.217",
+   "anterior": "2.410.364",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 607,
+   "etiqueta": "",
+   "actual": "6.875.757",
+   "anterior": "7.566.501",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 608,
+   "etiqueta": "Bedrijfsresultaat voor resultaat vergoedingssommen",
+   "actual": "-1.741.960",
+   "anterior": "-2.292.973",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 609,
+   "etiqueta": "Afschrijving en resultaat vergoedingssommen",
+   "actual": "405.859",
+   "anterior": "61.586",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 610,
+   "etiqueta": "Financië le baten en lasten",
+   "actual": "-57.953",
+   "anterior": "-33.639",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 611,
+   "etiqueta": "Resultaat voor belastingen",
+   "actual": "-1.394.054",
+   "anterior": "-2.265.026",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 612,
+   "etiqueta": "Belastingen",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 613,
+   "etiqueta": "Resultaat na belastingen",
+   "actual": "-1.394.054",
+   "anterior": "-2.265.026",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 602,
+  "actual": "5.133.797"
+ },
+ "total_gastos": {
+  "linea": 607,
+  "actual": "6.875.757"
+ },
+ "resultado": {
+  "linea": 613,
+  "actual": "-1.394.054",
+  "anterior": "-2.265.026"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Afschrijving en resultaat vergoedingssommen' (L609, 405.859) como resultado neto por traspasos de jugadores (amortización y venta de derechos) en lugar de ingreso o gasto?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Afschrijving en resultaat vergoedingssommen",
+   "texto": "L609 es un neto positivo que combina amortización de derechos de jugadores y resultado por traspasos; no hay nota que lo desglose.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados en euros (unidades). Netto-omzet es el único ingreso operativo impreso. L607 sin etiqueta es el total de costos. No hay notas de desglose."
+}

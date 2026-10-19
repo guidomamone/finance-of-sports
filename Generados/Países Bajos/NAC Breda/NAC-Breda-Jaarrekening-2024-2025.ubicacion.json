@@ -1,0 +1,271 @@
+{
+ "pdf": "Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.md",
+ "mdSha1": "cbe69114424e64de73dfdfdc9e257d330da84d89",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:18:26.968Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    23
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    137,
+    160
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    466,
+    472
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    575,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    607,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    633,
+    651
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    659,
+    685
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    691,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 26,
+   "lineas": [
+    1049,
+    1062
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    1072,
+    1085
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 28,
+   "lineas": [
+    1116,
+    1120
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 28,
+   "lineas": [
+    1125,
+    1130
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 29,
+   "lineas": [
+    1151,
+    1156
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 29,
+   "lineas": [
+    1161,
+    1167
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 30,
+   "lineas": [
+    1184,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 31,
+   "lineas": [
+    1199,
+    1212
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 31,
+   "lineas": [
+    1222,
+    1227
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 32,
+   "lineas": [
+    1243,
+    1248
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 32,
+   "lineas": [
+    1256,
+    1262
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 36,
+   "lineas": [
+    1390,
+    1401
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 36,
+   "lineas": [
+    1407,
+    1411
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 37,
+   "lineas": [
+    1419,
+    1426
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 37,
+   "lineas": [
+    1430,
+    1436
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 37,
+   "lineas": [
+    1443,
+    1448
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 38,
+   "lineas": [
+    1456,
+    1462
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 38,
+   "lineas": [
+    1466,
+    1471
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 38,
+   "lineas": [
+    1475,
+    1478
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 40,
+   "lineas": [
+    1515,
+    1521
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b20",
+  "b21"
+ ],
+ "notas_gastos": [
+  "b22",
+  "b23",
+  "b24",
+  "b25",
+  "b26"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El encabezado del estado (b6) no indica escala; la memoria dice 'De directie stelt voor om de winst ... ad € 938.648,-', lo que sugiere importes en euros (unidades), sin confirmar.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024-2025",
+ "columna_anterior": "2023-2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la winst-en-verliesrekening (b6) están en euros (unidades), de modo que el resultado coincide con € 938.648?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "RESULTAAT NA BELASTINGEN",
+   "texto": "El estado no indica la escala; solo el texto de destino del resultado da € 938.648, y la tabla b2 de la memoria está en x EUR 1.000.",
+   "bloques": [
+    "b6",
+    "b15",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay cuentas individuales (vennootschappelijk) de NAC Breda B.V. b6 es el estado de resultados 2024-2025. Las notas 9 y 10 (b20, b21) desglosan los ingresos; las notas 11 a 14 (b22-b26) desglosan los gastos: costes externos, salarios, cargas sociales y amortizaciones. b2 es un análisis de variaciones en la memoria y no se usa."
+}

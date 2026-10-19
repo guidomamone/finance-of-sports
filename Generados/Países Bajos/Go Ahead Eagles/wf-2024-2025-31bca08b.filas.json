@@ -1,0 +1,1367 @@
+{
+ "pdf": "Clubes/Países Bajos/Go Ahead Eagles/wf-2024-2025-31bca08b.pdf",
+ "md": "Clubes/Países Bajos/Go Ahead Eagles/wf-2024-2025-31bca08b.md",
+ "mdSha1": "8ece968db984b21a676352298cb26cda4d08ed61",
+ "ubicacionSha1": "972cfb8198463ad4ec89b6f00411b0684cf6a914",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T00:26:43.765Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b23"
+  ],
+  "notas_gastos": [
+   "b24",
+   "b25",
+   "b26",
+   "b27",
+   "b28"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2024 / 2025 €' (L198), importes en euros sin indicación de miles"
+  },
+  {
+   "bloque": "b23",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2024 / 2025 €' (L1026)"
+  },
+  {
+   "bloque": "b24",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2024 / 2025 €' (L1047)"
+  },
+  {
+   "bloque": "b25",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2024 / 2025 €' (L1080)"
+  },
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2024 / 2025 €' (L1117)"
+  },
+  {
+   "bloque": "b27",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2024 / 2025 €' (L1164)"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2024 / 2025 €' (L1187)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 200,
+   "etiqueta": "Netto-omzet",
+   "actual": "20.872.488",
+   "anterior": "13.976.372",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 201,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "actual": "4.210.605",
+   "anterior": "622.922",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 202,
+   "etiqueta": "Som der bedrijfsopbrengsten",
+   "actual": "25.083.093",
+   "anterior": "14.599.294",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 203,
+   "etiqueta": "Inkoopwaarde van de omzet",
+   "actual": "827.152",
+   "anterior": "660.942",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 204,
+   "etiqueta": "Lonen en salarissen",
+   "actual": "8.080.610",
+   "anterior": "6.285.817",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 205,
+   "etiqueta": "Sociale lasten",
+   "actual": "907.942",
+   "anterior": "729.842",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 206,
+   "etiqueta": "Pensioenlasten",
+   "actual": "122.717",
+   "anterior": "34.604",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 207,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "actual": "1.052.922",
+   "anterior": "804.768",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 208,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "9.902.281",
+   "anterior": "5.642.719",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 209,
+   "etiqueta": "Som der bedrijfslasten",
+   "actual": "20.893.624",
+   "anterior": "14.158.692",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 210,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "4.189.469",
+   "anterior": "440.602",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 211,
+   "etiqueta": "Rentebaten en soortgelijke opbrengsten",
+   "actual": "11.237",
+   "anterior": "28.490",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 212,
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "actual": "-217.757",
+   "anterior": "-170.433",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 213,
+   "etiqueta": "Financiële baten en lasten",
+   "actual": "-206.520",
+   "anterior": "-141.943",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 214,
+   "etiqueta": "Resultaat voor belastingen",
+   "actual": "3.982.949",
+   "anterior": "298.659",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 215,
+   "etiqueta": "Belastingen",
+   "actual": "-1.021.589",
+   "anterior": "-83.811",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 216,
+   "etiqueta": "Resultaat na belastingen",
+   "actual": "2.961.360",
+   "anterior": "214.848",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 1029,
+   "etiqueta": "Sponsoring",
+   "actual": "8.381.173",
+   "anterior": "6.540.138",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1030,
+   "etiqueta": "Wedstrijdbaten",
+   "actual": "4.258.750",
+   "anterior": "2.344.031",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1031,
+   "etiqueta": "Media gerelateerde baten",
+   "actual": "3.148.910",
+   "anterior": "2.367.528",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1032,
+   "etiqueta": "Prijzengeld",
+   "actual": "2.850.085",
+   "anterior": "939.197",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1033,
+   "etiqueta": "Horeca",
+   "actual": "922.281",
+   "anterior": "814.877",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1034,
+   "etiqueta": "Merchandise",
+   "actual": "848.561",
+   "anterior": "523.507",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1035,
+   "etiqueta": "Subsidies & giften",
+   "actual": "40.507",
+   "anterior": "51.316",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1036,
+   "etiqueta": "Overige baten",
+   "actual": "422.221",
+   "anterior": "395.778",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1037,
+   "etiqueta": "",
+   "actual": "20.872.488",
+   "anterior": "13.976.372",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Netto-omzet"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1050,
+   "etiqueta": "Bruto salarissen",
+   "actual": "8.250.486",
+   "anterior": "6.324.282",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lonen en salarissen"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1051,
+   "etiqueta": "Huur spelers",
+   "actual": "-",
+   "anterior": "23.020",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lonen en salarissen"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1052,
+   "etiqueta": "Verhuur spelers",
+   "actual": "-133.833",
+   "anterior": "-30.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lonen en salarissen"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1053,
+   "etiqueta": "Mutatie reservering vakantiedagen",
+   "actual": "-20.287",
+   "anterior": "24.376",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lonen en salarissen"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1054,
+   "etiqueta": "",
+   "actual": "8.096.366",
+   "anterior": "6.341.678",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Lonen en salarissen"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1055,
+   "etiqueta": "Ontvangen uitkeringen",
+   "actual": "-15.756",
+   "anterior": "-15.861",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lonen en salarissen"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1056,
+   "etiqueta": "Doorbelaste loonkosten",
+   "actual": "-",
+   "anterior": "-40.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lonen en salarissen"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1057,
+   "etiqueta": "",
+   "actual": "8.080.610",
+   "anterior": "6.285.817",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Lonen en salarissen"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1059,
+   "etiqueta": "Bedrijfsgebouwen en -terreinen",
+   "actual": "679.177",
+   "anterior": "518.277",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Afschrijvingen materiële vaste activa"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1060,
+   "etiqueta": "Inventarissen",
+   "actual": "369.001",
+   "anterior": "281.749",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Afschrijvingen materiële vaste activa"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1061,
+   "etiqueta": "Vervoermiddelen",
+   "actual": "4.744",
+   "anterior": "4.742",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Afschrijvingen materiële vaste activa"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1062,
+   "etiqueta": "",
+   "actual": "1.052.922",
+   "anterior": "804.768",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Afschrijvingen materiële vaste activa"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1064,
+   "etiqueta": "Overige personeelskosten",
+   "actual": "1.274.489",
+   "anterior": "943.055",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1065,
+   "etiqueta": "Huisvestingskosten",
+   "actual": "1.066.043",
+   "anterior": "953.286",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1066,
+   "etiqueta": "Verkoopkosten",
+   "actual": "1.247.414",
+   "anterior": "932.702",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1067,
+   "etiqueta": "Autokosten",
+   "actual": "530.245",
+   "anterior": "503.695",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1068,
+   "etiqueta": "Kantoorkosten",
+   "actual": "315.865",
+   "anterior": "187.710",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1069,
+   "etiqueta": "Algemene kosten",
+   "actual": "406.226",
+   "anterior": "344.408",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1070,
+   "etiqueta": "Wedstrijd- en trainingskosten",
+   "actual": "4.938.597",
+   "anterior": "1.743.804",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1071,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "123.402",
+   "anterior": "34.059",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1072,
+   "etiqueta": "",
+   "actual": "9.902.281",
+   "anterior": "5.642.719",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1083,
+   "etiqueta": "Huisvestingskosten",
+   "actual": "403.534",
+   "anterior": "402.899",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1084,
+   "etiqueta": "Vergoeding personeel en vrijwilligersvergoedingen",
+   "actual": "287.540",
+   "anterior": "99.853",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1085,
+   "etiqueta": "Eindheffing WKR",
+   "actual": "175.412",
+   "anterior": "49.547",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1086,
+   "etiqueta": "Reiskosten- en kilometervergoedingen",
+   "actual": "78.670",
+   "anterior": "96.231",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1087,
+   "etiqueta": "Inhuur technische staf",
+   "actual": "70.171",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1088,
+   "etiqueta": "Verhuiskostenvergoeding",
+   "actual": "54.250",
+   "anterior": "77.369",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1089,
+   "etiqueta": "Studie- en opleidingskosten",
+   "actual": "32.640",
+   "anterior": "19.918",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1090,
+   "etiqueta": "Inhuur fysiotherapie",
+   "actual": "31.592",
+   "anterior": "26.793",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1091,
+   "etiqueta": "Inhuur veiligheidscoördinator",
+   "actual": "27.152",
+   "anterior": "16.971",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1092,
+   "etiqueta": "Uitzendkrachten",
+   "actual": "23.772",
+   "anterior": "19.833",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1093,
+   "etiqueta": "Wervingskosten",
+   "actual": "17.962",
+   "anterior": "10.796",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1094,
+   "etiqueta": "Inhuur financieel management",
+   "actual": "7.468",
+   "anterior": "8.399",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1095,
+   "etiqueta": "Inhuur afdeling communicatie",
+   "actual": "2.678",
+   "anterior": "39.559",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1096,
+   "etiqueta": "Bedrijfskleding",
+   "actual": "1.806",
+   "anterior": "8.619",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1097,
+   "etiqueta": "Overige",
+   "actual": "59.842",
+   "anterior": "66.268",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1098,
+   "etiqueta": "",
+   "actual": "1.274.489",
+   "anterior": "943.055",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Overige personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1100,
+   "etiqueta": "Onderhoud onroerend goed",
+   "actual": "501.728",
+   "anterior": "453.591",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1101,
+   "etiqueta": "Gas, water en elektra",
+   "actual": "282.878",
+   "anterior": "215.178",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1102,
+   "etiqueta": "Schoonmaakkosten",
+   "actual": "131.059",
+   "anterior": "116.083",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1103,
+   "etiqueta": "Belastingen en zakelijke lasten",
+   "actual": "60.449",
+   "anterior": "54.219",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1104,
+   "etiqueta": "Assurantiepremie onroerende zaak",
+   "actual": "21.872",
+   "anterior": "17.216",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1105,
+   "etiqueta": "Beveiligingskosten",
+   "actual": "19.767",
+   "anterior": "17.257",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1106,
+   "etiqueta": "Huur veldverwarming",
+   "actual": "-",
+   "anterior": "13.008",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1107,
+   "etiqueta": "Onderzoekskosten verduurzaming en nieuwbouw",
+   "actual": "4.394",
+   "anterior": "24.522",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1108,
+   "etiqueta": "Overige",
+   "actual": "43.896",
+   "anterior": "42.212",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1109,
+   "etiqueta": "",
+   "actual": "1.066.043",
+   "anterior": "953.286",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Huisvestingskosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1120,
+   "etiqueta": "Reclame, advertenties en promotiemateriaal",
+   "actual": "244.317",
+   "anterior": "232.291",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1121,
+   "etiqueta": "Heffingen KNVB",
+   "actual": "211.492",
+   "anterior": "143.586",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1122,
+   "etiqueta": "Kosten evenementen",
+   "actual": "145.088",
+   "anterior": "166.768",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1123,
+   "etiqueta": "Ticketing",
+   "actual": "118.309",
+   "anterior": "40.360",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1124,
+   "etiqueta": "LED-boarding",
+   "actual": "101.155",
+   "anterior": "104.595",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1125,
+   "etiqueta": "Afboeking dubieuze vorderingen op handelsdebiteuren",
+   "actual": "-",
+   "anterior": "146.831",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1126,
+   "etiqueta": "Mutatie voorziening dubieuze vorderingen op handelsdebiteuren",
+   "actual": "87.256",
+   "anterior": "-159.999",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1127,
+   "etiqueta": "Representatiekosten",
+   "actual": "77.267",
+   "anterior": "100.561",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1128,
+   "etiqueta": "Bemiddelingskosten",
+   "actual": "64.767",
+   "anterior": "50.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1129,
+   "etiqueta": "Afwaardering vorderingen",
+   "actual": "32.148",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1130,
+   "etiqueta": "Kosten event",
+   "actual": "26.650",
+   "anterior": "24.876",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1131,
+   "etiqueta": "Hostess",
+   "actual": "19.278",
+   "anterior": "17.469",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1132,
+   "etiqueta": "Fanshop",
+   "actual": "8.493",
+   "anterior": "9.243",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1133,
+   "etiqueta": "Kids- en Juniorclub",
+   "actual": "4.414",
+   "anterior": "5.276",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1134,
+   "etiqueta": "Overige",
+   "actual": "106.780",
+   "anterior": "50.845",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1135,
+   "etiqueta": "",
+   "actual": "1.247.414",
+   "anterior": "932.702",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Verkoopkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1137,
+   "etiqueta": "Operational leasing",
+   "actual": "337.802",
+   "anterior": "307.997",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Autokosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1138,
+   "etiqueta": "Brandstoffen",
+   "actual": "147.483",
+   "anterior": "120.669",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Autokosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1139,
+   "etiqueta": "BTW op privégebruik",
+   "actual": "39.290",
+   "anterior": "71.841",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Autokosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1140,
+   "etiqueta": "Reparatie en onderhoud",
+   "actual": "4.960",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Autokosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1141,
+   "etiqueta": "Boetes en bekeuringen en eigen risico",
+   "actual": "710",
+   "anterior": "3.188",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Autokosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1142,
+   "etiqueta": "",
+   "actual": "530.245",
+   "anterior": "503.695",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Autokosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1144,
+   "etiqueta": "Kosten automatisering",
+   "actual": "231.871",
+   "anterior": "124.961",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Kantoorkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1145,
+   "etiqueta": "Porti- en telefoonkosten",
+   "actual": "77.462",
+   "anterior": "51.256",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Kantoorkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1146,
+   "etiqueta": "Kantoorbenodigdheden",
+   "actual": "6.532",
+   "anterior": "11.493",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Kantoorkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1147,
+   "etiqueta": "",
+   "actual": "315.865",
+   "anterior": "187.710",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Kantoorkosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1149,
+   "etiqueta": "Verzekeringen",
+   "actual": "175.442",
+   "anterior": "167.328",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Algemene kosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1150,
+   "etiqueta": "Abonnementen en contributies",
+   "actual": "149.074",
+   "anterior": "106.210",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Algemene kosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1151,
+   "etiqueta": "Accountantskosten, onderzoek van de jaarrekening",
+   "actual": "38.500",
+   "anterior": "39.521",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Algemene kosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1152,
+   "etiqueta": "Accountantskosten, andere niet-controlediensten",
+   "actual": "29.967",
+   "anterior": "17.700",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Algemene kosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1153,
+   "etiqueta": "Advocaatkosten",
+   "actual": "-",
+   "anterior": "3.623",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Algemene kosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1154,
+   "etiqueta": "Notariskosten",
+   "actual": "1.500",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Algemene kosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1155,
+   "etiqueta": "Overige",
+   "actual": "11.743",
+   "anterior": "10.026",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Algemene kosten"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1156,
+   "etiqueta": "",
+   "actual": "406.226",
+   "anterior": "344.408",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Algemene kosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1167,
+   "etiqueta": "Kosten bekerfinale KNVB beker",
+   "actual": "2.234.943",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1168,
+   "etiqueta": "Kosten voetbalacademie (jeugd)",
+   "actual": "453.277",
+   "anterior": "227.289",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1169,
+   "etiqueta": "Reis- en verblijfkosten",
+   "actual": "365.731",
+   "anterior": "301.034",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1170,
+   "etiqueta": "Kosten beveiliging en kassiers",
+   "actual": "354.040",
+   "anterior": "293.397",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1171,
+   "etiqueta": "Kosten Conference League",
+   "actual": "348.734",
+   "anterior": "8.470",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1172,
+   "etiqueta": "Kosten bus- en autocombi's",
+   "actual": "240.079",
+   "anterior": "182.208",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1173,
+   "etiqueta": "Analyseprogramma's",
+   "actual": "247.809",
+   "anterior": "224.501",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1174,
+   "etiqueta": "Kosten trainingskamp",
+   "actual": "160.603",
+   "anterior": "50.973",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1175,
+   "etiqueta": "Scoutingswerkzaamheden",
+   "actual": "136.545",
+   "anterior": "119.151",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1176,
+   "etiqueta": "Medische begeleiding",
+   "actual": "123.496",
+   "anterior": "85.362",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1177,
+   "etiqueta": "Uitrusting en wedstrijdmateriaal",
+   "actual": "57.719",
+   "anterior": "97.711",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1178,
+   "etiqueta": "Clubkostuums",
+   "actual": "37.989",
+   "anterior": "46.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1179,
+   "etiqueta": "Scheidsrechterskosten",
+   "actual": "11.741",
+   "anterior": "9.176",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1180,
+   "etiqueta": "Overige",
+   "actual": "165.891",
+   "anterior": "98.532",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1181,
+   "etiqueta": "",
+   "actual": "4.938.597",
+   "anterior": "1.743.804",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Wedstrijd- en trainingskosten"
+  },
+  {
+   "bloque": "b27",
+   "linea": 1183,
+   "etiqueta": "Overige",
+   "actual": "123.402",
+   "anterior": "34.059",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Overige bedrijfskosten"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1190,
+   "etiqueta": "Rente kredietinstelling",
+   "actual": "11.237",
+   "anterior": "28.490",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Rentebaten en soortgelijke opbrengsten"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1192,
+   "etiqueta": "Ontvangen bankrente",
+   "actual": "11.237",
+   "anterior": "28.490",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Rente kredietinstelling"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1194,
+   "etiqueta": "Rente schulden participanten en overige deelnemingen",
+   "actual": "126.881",
+   "anterior": "52.229",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Rentelasten en soortgelijke kosten"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1195,
+   "etiqueta": "Rente leningen o/g",
+   "actual": "84.734",
+   "anterior": "112.731",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Rentelasten en soortgelijke kosten"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1196,
+   "etiqueta": "Kosten kredietinstelling",
+   "actual": "6.142",
+   "anterior": "5.473",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Rentelasten en soortgelijke kosten"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1197,
+   "etiqueta": "",
+   "actual": "217.757",
+   "anterior": "170.433",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Rentelasten en soortgelijke kosten"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 202,
+  "actual": "25.083.093"
+ },
+ "total_gastos": {
+  "linea": 209,
+  "actual": "20.893.624"
+ },
+ "resultado": {
+  "linea": 216,
+  "actual": "2.961.360",
+  "anterior": "214.848"
+ },
+ "dudas": [],
+ "observaciones": "Todas las notas cuadran con los renglones del estado. En b24 'Overige bedrijfskosten' (L1071) es un renglón de la nota 19 con la misma etiqueta que el renglón del estado; su desglose en b27 L1183 se asigna a ese mismo nombre. 'Huisvestingskosten' aparece también como partida dentro de 'Overige personeelskosten' (L1083), distinta del renglón L1065 que desglosa b25 L1100-L1109. Los subtotales de las notas no tienen etiqueta impresa. Nota 21 imprime importes positivos mientras el estado los presenta negativos."
+}

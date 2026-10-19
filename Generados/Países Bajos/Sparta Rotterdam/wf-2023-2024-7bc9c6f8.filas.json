@@ -1,0 +1,321 @@
+{
+ "pdf": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf",
+ "md": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.md",
+ "mdSha1": "296036e2b3fae84b9831330b6854168902a98799",
+ "ubicacionSha1": "773a9b1502ae742312bb2a153e4d0879f2bef30a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:19:49.986Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b23",
+   "b24",
+   "b25"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L1798: EUR (importes completos, ej. 18.058.718)"
+  },
+  {
+   "bloque": "b23",
+   "escala": "unidades",
+   "evidencia": "L3245: € 11.420.257"
+  },
+  {
+   "bloque": "b24",
+   "escala": "unidades",
+   "evidencia": "L3264: € 1.665.423"
+  },
+  {
+   "bloque": "b25",
+   "escala": "unidades",
+   "evidencia": "L3276: € 7.682"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 1799,
+   "etiqueta": "Netto-omzet",
+   "actual": "18.058.718",
+   "anterior": "16.277.410",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1801,
+   "etiqueta": "Personeelskosten",
+   "actual": "12.429.770",
+   "anterior": "11.056.175",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1802,
+   "etiqueta": "Horecakosten",
+   "actual": "285.215",
+   "anterior": "295.998",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1803,
+   "etiqueta": "Verkoopkosten",
+   "actual": "1.884.033",
+   "anterior": "1.543.484",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1804,
+   "etiqueta": "Huisvestingskosten",
+   "actual": "2.083.432",
+   "anterior": "2.185.436",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1805,
+   "etiqueta": "Wedstrijd- en trainingskosten",
+   "actual": "1.233.579",
+   "anterior": "1.022.340",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1806,
+   "etiqueta": "Algemene kosten",
+   "actual": "1.028.426",
+   "anterior": "807.103",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1807,
+   "etiqueta": "Afschrijving op materiële vaste activa",
+   "actual": "983.572",
+   "anterior": "838.760",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1808,
+   "etiqueta": "Som der bedrijfslasten",
+   "actual": "19.928.027",
+   "anterior": "17.749.296",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1809,
+   "etiqueta": "Bedrijfsresultaat voor afschrijvingen en resultaat vergoedingssommen",
+   "actual": "-1.869.309",
+   "anterior": "-1.471.886",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1810,
+   "etiqueta": "Afschrijving vergoedingssommen",
+   "actual": "-1.665.423",
+   "anterior": "-1.247.375",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1811,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "actual": "2.729.133",
+   "anterior": "2.249.704",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1812,
+   "etiqueta": "",
+   "actual": "1.063.710",
+   "anterior": "1.002.329",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1813,
+   "etiqueta": "Bedrijfsresultaat na afschrijvingen en resultaat vergoedingssommen",
+   "actual": "-805.599",
+   "anterior": "-469.557",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1814,
+   "etiqueta": "Rentebaten en -lasten en soortgelijke kosten",
+   "actual": "-138.885",
+   "anterior": "-255.544",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1815,
+   "etiqueta": "Resultaat uit gewone bedrijfsuitoefening vóór belastingen",
+   "actual": "-944.484",
+   "anterior": "-725.101",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1816,
+   "etiqueta": "Belastingen",
+   "actual": "938.225",
+   "anterior": "100.530",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1817,
+   "etiqueta": "Aandeel in resultaat van deelnemingen",
+   "actual": "206.622",
+   "anterior": "108.666",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 1818,
+   "etiqueta": "Resultaat uit gewone bedrijfsuitoefening na belastingen",
+   "actual": "200.363",
+   "anterior": "-515.905",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 3245,
+   "etiqueta": "Lonen",
+   "actual": "€ 11.420.257",
+   "anterior": "€ 9.848.258",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b23",
+   "linea": 3246,
+   "etiqueta": "Overige lasten uit hoofde van personeelsbeloningen",
+   "actual": "€ 1.009.513",
+   "anterior": "€ 1.207.917",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b23",
+   "linea": 3247,
+   "etiqueta": "Totaal van lasten uit hoofde van personeelsbeloningen",
+   "actual": "€ 12.429.770",
+   "anterior": "€ 11.056.175",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personeelskosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 3276,
+   "etiqueta": "Overige rentebaten en soortgelijke opbrengsten",
+   "actual": "€ 7.682",
+   "anterior": "€ 2.396",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Rentebaten en -lasten en soortgelijke kosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 3277,
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "actual": "€ -146.567",
+   "anterior": "€ -257.940",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Rentebaten en -lasten en soortgelijke kosten"
+  },
+  {
+   "bloque": "b25",
+   "linea": 3278,
+   "etiqueta": "Totaal van saldo financiële baten en lasten",
+   "actual": "€ -138.885",
+   "anterior": "€ -255.544",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Rentebaten en -lasten en soortgelijke kosten"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 1799,
+  "actual": "18.058.718"
+ },
+ "total_gastos": {
+  "linea": 1808,
+  "actual": "19.928.027"
+ },
+ "resultado": {
+  "linea": 1818,
+  "actual": "200.363",
+  "anterior": "-515.905"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de afschrijvingen de b24 (L3263-L3267), por repetir renglones ya cargados del estado (L1807, L1810, L1811)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Afschrijving op materiële vaste activa",
+   "texto": "b24 mezcla tres renglones distintos del estado (L1807, L1810, L1811) con signos invertidos y un total (-80.138) que no existe en el estado; no desglosa un único renglón.",
+   "bloques": [
+    "b24",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en EUR unidades. 'Resultaat vergoedingssommen' (L1811) es resultado por venta de jugadores, cargado como ingreso. 'Aandeel in resultaat van deelnemingen' (L1817) va después de impuestos, marcado como otro. Belastingen positivo (beneficio fiscal). L1812 subtotal sin etiqueta."
+}

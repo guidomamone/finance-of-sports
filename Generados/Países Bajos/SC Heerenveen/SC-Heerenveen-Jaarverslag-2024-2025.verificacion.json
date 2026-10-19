@@ -1,0 +1,297 @@
+{
+ "pdf": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.md",
+ "generado": "2026-10-19T00:13:16.755Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "La que presenta es la holding S.C. Heerenveen Holding B.V., cuyo individual es un cascarón sin operación (solo participaciones y resultado de participadas, L1580, L1617); el fútbol (licencia KNVB) está en la controlada S.C. Heerenveen B.V. y S.C. Heerenveen Vastgoed B.V. es la sociedad inmobiliaria del club (alquila a la operadora, con garantía cruzada, L1502-1504). El individual no tiene el fútbol: consolidado. (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "De opgenomen dochtermaatschappijen ... zijn: S.C. Heerenveen B.V. (deelname 100%) / S.C. Heerenveen Vastgoed B.V. (deelname 100%) (L991-994); De doorlopende KNVB licentie ... is ondergebracht in S.C. Heerenveen B.V. (L51-52)",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "e8c5e9b",
+  "145f83c",
+  "b8d70d9"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.886579864025407e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Netto-opbrengst vergoedingssommen\" no suma el renglón (4.237656 contra 7.555866, sumando sus renglones): quedó el renglón del estado",
+  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Netto-opbrengst vergoedingssommen",
+   "suma": 4.237656,
+   "objetivo": 7.555866
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Netto-opbrengst vergoedingssommen",
+   "suma": 4.237656,
+   "objetivo": 7.555866
+  }
+ ],
+ "totales": {
+  "ingresos": 32.018887,
+  "gastos": 30.605387,
+  "financiero": -0.035254,
+  "impuesto": -0.332253,
+  "resultadoImpreso": 1.045993,
+  "resultadoParaCargar": 1.045993,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Wedstrijdbaten",
+   "lado": "ingreso",
+   "M": 4.867279,
+   "pagina": 35,
+   "linea": 1525,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 9.101753,
+   "pagina": 35,
+   "linea": 1526,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Mediagelden",
+   "lado": "ingreso",
+   "M": 6.469374,
+   "pagina": 35,
+   "linea": 1527,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Food & Beverage",
+   "lado": "ingreso",
+   "M": 0.531163,
+   "pagina": 35,
+   "linea": 1528,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Merchandise",
+   "lado": "ingreso",
+   "M": 0.776585,
+   "pagina": 35,
+   "linea": 1529,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Overige opbrengsten",
+   "lado": "ingreso",
+   "M": 2.513826,
+   "pagina": 35,
+   "linea": 1530,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Netto-opbrengst vergoedingssommen",
+   "lado": "ingreso",
+   "M": 7.555866,
+   "pagina": 21,
+   "linea": 863,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Resultaat deelnemingen",
+   "lado": "ingreso",
+   "M": 0.203041,
+   "pagina": 21,
+   "linea": 876,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Kostprijs",
+   "lado": "gasto",
+   "M": 1.406246,
+   "pagina": 21,
+   "linea": 865,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salariskosten",
+   "lado": "gasto",
+   "M": 10.939527,
+   "pagina": 35,
+   "linea": 1540,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Pensioenlasten",
+   "lado": "gasto",
+   "M": 0.245383,
+   "pagina": 35,
+   "linea": 1541,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Sociale lasten",
+   "lado": "gasto",
+   "M": 1.534143,
+   "pagina": 35,
+   "linea": 1542,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Overige kosten",
+   "lado": "gasto",
+   "M": 1.676125,
+   "pagina": 35,
+   "linea": 1543,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Doorberekende personeelskosten",
+   "lado": "gasto",
+   "M": 0.19887,
+   "pagina": 35,
+   "linea": 1544,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Afschrijvingskosten vergoedingssommen",
+   "lado": "gasto",
+   "M": 3.268827,
+   "pagina": 8,
+   "linea": 301,
+   "origen": "nota que desglosa \"Afschrijvingen op immateriële vaste activa\""
+  },
+  {
+   "etiqueta": "Afwaardering boekwaarde vertrokken spelers",
+   "lado": "gasto",
+   "M": 0.37125,
+   "pagina": 8,
+   "linea": 302,
+   "origen": "nota que desglosa \"Afschrijvingen op immateriële vaste activa\""
+  },
+  {
+   "etiqueta": "Afschrijvingen op materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.685457,
+   "pagina": 21,
+   "linea": 868,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Overige bedrijfskosten",
+   "lado": "gasto",
+   "M": 10.279559,
+   "pagina": 21,
+   "linea": 869,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Rentebaten en soortgelijke opbrengsten",
+   "M": 0.061227,
+   "linea": 872
+  },
+  {
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "M": -0.096481,
+   "linea": 873
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Vennootschapsbelasting",
+   "M": -0.332253,
+   "linea": 875
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "a81f3a0bfe94b0406fdba127c5bd8c3d02724b56",
+  "rango": [
+   859,
+   880
+  ],
+  "lineasCargadas": [
+   1525,
+   1526,
+   1527,
+   1528,
+   1529,
+   1530,
+   863,
+   876,
+   865,
+   1540,
+   1541,
+   1542,
+   1543,
+   1544,
+   301,
+   302,
+   868,
+   869,
+   872,
+   873,
+   875
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 859 a 880 del .md):\nL860: |  | Ref. | 2024/2025 € | 2023/2024 € |\nL861: | --- | --- | --- | --- |\nL862: | Netto-omzet | X | 24.259.980 | 20.628.236 |\nL863: | Netto-opbrengst vergoedingssommen |  | 7.555.866 | 3.410.865 |\nL864: | Som der bedrijfsopbrengsten |  | 31.815.846 | 24.039.101 |\nL865: | Kostprijs |  | 1.406.246 | 1.249.770 |\nL866: | Personeelskosten | XI | 14.594.048 | 12.935.178 |\nL867: | Afschrijvingen op immateriële vaste activa |  | 3.640.077 | 3.945.305 |\nL868: | Afschrijvingen op materiële vaste activa |  | 685.457 | 850.014 |\nL869: | Overige bedrijfskosten |  | 10.279.559 | 9.781.804 |\nL870: | Som der bedrijfslasten |  | 30.605.387 | 28.762.071 |\nL871: | Bedrijfsresultaat |  | 1.210.459 | -4.722.970 |\nL872: | Rentebaten en soortgelijke opbrengsten |  | 61.227 | 98.105 |\nL873: | Rentelasten en soortgelijke kosten |  | -96.481 | -11.725 |\nL874: | Resultaat uit gewone bedrijfsuitoefening voor belastingen |  | 1.175.205 | -4.636.590 |\nL875: | Vennootschapsbelasting | XII | -332.253 | 1.169.399 |\nL876: | Resultaat deelnemingen |  | 203.041 | 488.934 |\nL877: | Resultaat na belastingen |  | 1.045.993 | -2.978.257 |\nL879: Jaarverslag 2024-2025 21\n\nLO QUE SE CARGA:\n- ingreso · \"Wedstrijdbaten\" · 4.867279 · L1525 (de una nota)\n- ingreso · \"Sponsoring\" · 9.101753 · L1526 (de una nota)\n- ingreso · \"Mediagelden\" · 6.469374 · L1527 (de una nota)\n- ingreso · \"Food & Beverage\" · 0.531163 · L1528 (de una nota)\n- ingreso · \"Merchandise\" · 0.776585 · L1529 (de una nota)\n- ingreso · \"Overige opbrengsten\" · 2.513826 · L1530 (de una nota)\n- ingreso · \"Netto-opbrengst vergoedingssommen\" · 7.555866 · L863\n- ingreso · \"Resultaat deelnemingen\" · 0.203041 · L876\n- gasto · \"Kostprijs\" · 1.406246 · L865\n- gasto · \"Salariskosten\" · 10.939527 · L1540 (de una nota)\n- gasto · \"Pensioenlasten\" · 0.245383 · L1541 (de una nota)\n- gasto · \"Sociale lasten\" · 1.534143 · L1542 (de una nota)\n- gasto · \"Overige kosten\" · 1.676125 · L1543 (de una nota)\n- gasto · \"Doorberekende personeelskosten\" · 0.19887 · L1544 (de una nota)\n- gasto · \"Afschrijvingskosten vergoedingssommen\" · 3.268827 · L301 (de una nota)\n- gasto · \"Afwaardering boekwaarde vertrokken spelers\" · 0.37125 · L302 (de una nota)\n- gasto · \"Afschrijvingen op materiële vaste activa\" · 0.685457 · L868\n- gasto · \"Overige bedrijfskosten\" · 10.279559 · L869\n- financiero · \"Rentebaten en soortgelijke opbrengsten\" · 0.061227 · L872\n- financiero · \"Rentelasten en soortgelijke kosten\" · -0.096481 · L873\n- impuesto · \"Vennootschapsbelasting\" · -0.332253 · L875"
+ }
+}

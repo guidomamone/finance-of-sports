@@ -1,0 +1,145 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.pdf",
+ "md": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.md",
+ "generado": "2026-10-19T00:12:35.361Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.220446049250313e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5.539656,
+  "gastos": 6.875757,
+  "financiero": -0.057953,
+  "impuesto": 0,
+  "resultadoImpreso": -1.394054,
+  "resultadoParaCargar": -1.394054,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Netto-omzet",
+   "lado": "ingreso",
+   "M": 5.133797,
+   "pagina": 17,
+   "linea": 602,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijving en resultaat vergoedingssommen",
+   "lado": "ingreso",
+   "M": 0.405859,
+   "pagina": 17,
+   "linea": 609,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Personeelskosten",
+   "lado": "gasto",
+   "M": 3.864955,
+   "pagina": 17,
+   "linea": 604,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen",
+   "lado": "gasto",
+   "M": 0.165585,
+   "pagina": 17,
+   "linea": 605,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Overige bedrijfskosten",
+   "lado": "gasto",
+   "M": 2.845217,
+   "pagina": 17,
+   "linea": 606,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financië le baten en lasten",
+   "M": -0.057953,
+   "linea": 610
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": null,
+   "linea": 612
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "7aa3141555e8e00d9a123741d1aae0cff0ed0359",
+  "rango": [
+   599,
+   616
+  ],
+  "lineasCargadas": [
+   602,
+   609,
+   604,
+   605,
+   606,
+   610,
+   612
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 599 a 616 del .md):\nL599: |  | 2024/2025 |  | 2023/2024 |  |\nL600: | --- | --- | --- | --- | --- |\nL601: |  | € | € | € | € |\nL602: | Netto-omzet |  | 5.133.797 |  | 5.273.528 |\nL603: | Kosten |  |  |  |  |\nL604: | Personeelskosten | 3.864.955 |  | 4.959.058 |  |\nL605: | Afschrijvingen | 165.585 |  | 197.079 |  |\nL606: | Overige bedrijfskosten | 2.845.217 |  | 2.410.364 |  |\nL607: |  |  | 6.875.757 |  | 7.566.501 |\nL608: | Bedrijfsresultaat voor resultaat vergoedingssommen |  | -1.741.960 |  | -2.292.973 |\nL609: | Afschrijving en resultaat vergoedingssommen |  | 405.859 |  | 61.586 |\nL610: | Financië le baten en lasten |  | -57.953 |  | -33.639 |\nL611: | Resultaat voor belastingen |  | -1.394.054 |  | -2.265.026 |\nL612: | Belastingen |  | - |  | - |\nL613: | Resultaat na belastingen |  | -1.394.054 |  | -2.265.026 |\nL615: - 16 -\n\nLO QUE SE CARGA:\n- ingreso · \"Netto-omzet\" · 5.133797 · L602\n- ingreso · \"Afschrijving en resultaat vergoedingssommen\" · 0.405859 · L609\n- gasto · \"Personeelskosten\" · 3.864955 · L604\n- gasto · \"Afschrijvingen\" · 0.165585 · L605\n- gasto · \"Overige bedrijfskosten\" · 2.845217 · L606\n- financiero · \"Financië le baten en lasten\" · -0.057953 · L610\n- impuesto · \"Belastingen\" · 0 · L612"
+ }
+}

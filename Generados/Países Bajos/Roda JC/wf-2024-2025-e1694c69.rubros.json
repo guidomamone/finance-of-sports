@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md",
+  "pdf": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.pdf",
+  "club": "roda-jc",
+  "year": 2025,
+  "generatedAt": "2026-10-19T00:12:35.941Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Netto-omzet",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        7.877577
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0.442997
+      ],
+      "glosa": "Resultado por transferencias de jugadores"
+    },
+    {
+      "label": "Personeelskosten",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        5.316416
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0.11552
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        3.691078
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

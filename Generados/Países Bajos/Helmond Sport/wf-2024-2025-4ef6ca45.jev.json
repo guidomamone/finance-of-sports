@@ -1,0 +1,99 @@
+{
+ "md": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.md",
+ "generatedAt": "2026-10-18T23:25:21.488Z",
+ "rubrosHuella": "3966c06eae63a5206b03f2f928b2bdb290e20805",
+ "rubros": [
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1176
+  },
+  {
+   "label": "Overige kosten",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "player_amortisation",
+     0.43
+    ],
+    [
+     "other_amortisation",
+     0.28
+    ],
+    [
+     "depreciation",
+     0.26
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1063
+  }
+ ]
+}

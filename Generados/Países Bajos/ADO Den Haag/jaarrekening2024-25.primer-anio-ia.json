@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.md",
+ "clave": "8bd0f134fcf5edf7fca8a2036af25e715e9c5ba9",
+ "generado": "2026-10-18T23:21:32.481Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todos los renglones del estado están cargados: la Netto-omzet (L446) está abierta por sus partes de nota y suma 13,467952; los Personeelskosten (L448) suman 10,155578; las Afschrijvingen (L449) suman 0,399283, porque la amortización de vergoedingssommen se carga y luego se neutraliza con su reasignación; los Overige bedrijfskosten (L450) suman 9,524259. Resultaat vergoedingssommen, Financiële baten en lasten y Belastingen (en cero) están cargados en el lado correcto. No se cargaron subtotales."
+ }
+}

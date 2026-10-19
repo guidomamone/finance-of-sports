@@ -1,0 +1,48 @@
+{
+ "pdf": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.pdf",
+ "md": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.md",
+ "mdSha1": "743518d17c46efc225bf241627e5e8db20d9f041",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:16:25.138Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    14
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    16,
+    21
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    27,
+    37
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos en euros completos con separador de miles, p. ej. '€ 5.135.616' (Omzet); no hay leyenda de 'x € 1.000'.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024-2025",
+ "columna_anterior": "2023-2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Documento resumido de Stichting Helmond Sport 2024/2025: solo balance (b1 activo, b2 pasivo) y la winst- en verliesrekening (b3). No hay notas que desglosen ingresos o gastos. El estado es de la fundación (individual); no hay consolidado. Cifras en euros (unidades)."
+}

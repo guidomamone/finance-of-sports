@@ -1,0 +1,92 @@
+{
+ "md": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.md",
+ "club": "almere-city",
+ "year": 2025,
+ "generatedAt": "2026-10-19T00:15:09.837Z",
+ "rubrosHuella": "771ab4af71763d324e7d7b26d81118500229d85d",
+ "jevHuella": "89995f67ceb0c37959d0086df567df3d4a6046cd",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0073608,
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Importe neto de la cifra de negocios",
+   "page": 10,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Resultado por traspasos",
+   "page": 10,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "player_sales",
+   "confianza": 1
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Sueldos y salarios",
+   "page": 10,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Overige personeelskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de personal",
+   "page": 10,
+   "pendiente": true,
+   "jev": "admin_general_expense",
+   "jevConf": 0.85,
+   "escalon": 2,
+   "categoria": "admin_general_expense",
+   "confianza": 0.5,
+   "motivo": "Otros gastos de personal; clubbrugge-be usa admin_general_expense para 'Overige personeelskosten'"
+  },
+  {
+   "label": "Afschrijving vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización del inmovilizado",
+   "page": 10,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "depreciation",
+   "confianza": 0.99
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 10,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.83,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.85,
+   "motivo": "Otros gastos de explotación genérico; igual que fc-volendam"
+  }
+ ]
+}
