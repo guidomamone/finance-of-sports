@@ -1,0 +1,151 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.md",
+ "mdSha1": "12278d27e441cd78a28ba01f0b4f5657398b9ea6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T00:01:49.984Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    101,
+    125
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    141,
+    171
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    181,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    532,
+    550
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    558,
+    582
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    590,
+    610
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    687,
+    693
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    701,
+    703
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    715,
+    723
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    727,
+    733
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    747,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    760,
+    762
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    768,
+    773
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    789,
+    793
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b7"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, extracto Brønnøysund del mismo estado)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2018",
+ "columna_anterior": "2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de la pág. 14 (b4) y se deja afuera el extracto de Brønnøysund de la pág. 2 (b1) por ser el mismo estado de resultados duplicado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 (extracto registral, 'Beløp i: NOK') y b4 (cuentas anuales firmadas) parecen ser la misma cuenta de resultados 2018; b4 no indica escala explícita.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Club sin consolidado; el estado de resultados individual está en b4 (con su duplicado registral en b1). La nota 3 (b7) desglosa los gastos de personal. b8 es el detalle por persona (daglig leder) y se excluye. b9 y b10 son de activo fijo y b2, b3, b5, b6, b11 a b14 corresponden a balance y patrimonio, por lo que también se excluyen. No hay notas que abran los ingresos."
+}
