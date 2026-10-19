@@ -40,3 +40,5 @@ Todos en `Clubes/Inglaterra/AFC Bournemouth/` (los PDF no se trackean; son escan
 - `bournemouth-full-accounts-2021-22.pdf`
 - `bournemouth-full-accounts-2020-21.pdf`
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.pdf` (sourceId `bournemouth-gb-full-accounts-2021-22`).

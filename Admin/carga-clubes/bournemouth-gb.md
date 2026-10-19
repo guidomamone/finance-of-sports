@@ -129,6 +129,50 @@ clasificación propia del documento, ver comentario de cabecera). cash = Cash at
 hand.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match and season ticket income | pág. 27, precedente |
+| 2 | English football league and FA Cup income | pág. 27, precedente |
+| 3 | Premier League income | pág. 27, precedente |
+| 4 | Sponsorship and advertising | pág. 27, precedente |
+| 5 | Hospitality and events | pág. 27, precedente |
+| 6 | Shop merchandise | pág. 27, precedente |
+| 7 | Other income | pág. 27, precedente |
+| 8 | Other operating income | pág. 15, Jev 1 |
+| 9 | Profit on disposal of players' registrations | pág. 15, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Wages and salaries | pág. 28, Claude 0.9 |
+| 2 | Social security costs | pág. 28, Jev 0.93 |
+| 3 | Other pension costs | pág. 28, Jev 0.92 |
+| 4 | Depreciation of tangible assets | pág. 27, precedente |
+| 5 | Amortisation of intangibles | pág. 27, precedente |
+| 6 | Other operating expenses | pág. 15, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-championship, verificado contra roster cacheado de "2021–22 EFL Championship" (tools/club-league-reference/gb.json), coincidencia única por palabras "Bournemouth" = "AFC Bournemouth".
+```
+
 ## Fuentes
 
 ### bournemouth-gb-full-accounts-2024
@@ -145,6 +189,14 @@ _note (data/):_
 
 ```text
 PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2024-25.md. Adopta una presentación nueva (leases/right-of-use assets) que restata levemente el comparativo 2024 — se usó SIEMPRE la presentación propia de cada ejercicio, nunca la comparativa del documento del año siguiente (ver comentario de cabecera de data/gb/bournemouth-gb-data.js). fxRef apunta a FX_CLOSE (GBP@2025-06-30).
+```
+
+### bournemouth-gb-full-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros
