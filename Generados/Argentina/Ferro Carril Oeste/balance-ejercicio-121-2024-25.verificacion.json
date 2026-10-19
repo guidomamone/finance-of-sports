@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.pdf",
  "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md",
- "generado": "2026-10-19T17:09:22.419Z",
+ "generado": "2026-10-19T17:54:09.900Z",
  "estado": "ok",
  "clubId": "ferrocarriloeste-ar",
  "year": 2025,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.pdf",
+   "campo": "fx",
+   "valor": "1165",
+   "linea": null,
+   "motivo": "el Anexo G (L706-709) y la nota de L818 usan 1.165 (comprador BNA) para los activos en dólares; el 1.215 (vendedor BNA, L715 y L853) vale solo para un préstamo de U$S 60.000. Guido eligió 1.165 a recomendación de Claude, 2026-10-19",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -47,16 +58,16 @@
   }
  ],
  "notas": [
-  "la nota de \"Para fines generales ( Anexo B )\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "escalón \"nota exacta en la lectura 6\": \"Específicos ( Anexo B )\" (L94) se abre en las 18 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 6\": \"Específicos de sectores ( Anexo D )\" (L98) se abre en las 34 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 6\": \"Generales de administración ( Anexo E )\" (L99) se abre en las 15 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en balance-ejercicio-121-2024-25.pdf",
-  "duda de extraer que no afecta la carga: Los totales 2024 de b7 (493.581.793,49; 1.093.553.994,11; 1.161.417.783,11) no coinciden con b6 (572.187.331,04; 1.143.851.783,17; 1.191.167.126,58), posiblemente por distinta reexpresión; los 2025 sí coinciden."
+  "duda de extraer confirmada por las sumas (columna, \"Servicios a Socios (Anexo C)\"): ¿Se cargan como anterior de b7 los importes 30/06/2024 aunque los totales del Anexo C (p.ej. 493.581.793,49 en L415) difieren de los del Anexo B (572.187.331,04 en L347)?",
+  "duda de extraer que no afecta la carga: L103 suma al resultado operativo pero está fuera de Total Recursos y Gastos; se cargó como 'otro'."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 16088.001906,

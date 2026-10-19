@@ -3,8 +3,9 @@
  "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md",
  "mdSha1": "65f36be6df4ab07f72a541c93249859c7d911ea4",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:24:20.524Z",
+ "generado": "2026-10-19T17:33:44.076Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -156,7 +157,7 @@
   "b9"
  ],
  "escala": "no se sabe",
- "escala_evidencia": "Solo dice '(expresado a moneda constante - comparativo con el ejercicio anterior)'; no indica miles ni millones en lo visible.",
+ "escala_evidencia": "Solo dice '(expresado a moneda constante - comparativo con el ejercicio anterior)'; no indica miles ni millones.",
  "moneda": "ARS",
  "columna_ejercicio": "30/06/2025",
  "columna_anterior": "30/06/2024",
@@ -168,12 +169,24 @@
    "propuesta": "sí",
    "tema": "escala",
    "renglon": "",
-   "texto": "El encabezado no indica la escala, solo 'moneda constante'; es habitual que los clubes argentinos presenten en pesos.",
+   "texto": "El encabezado solo dice 'expresado a moneda constante' sin indicar miles; parece estar en pesos.",
    "bloques": [
     "b2"
    ],
    "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga el cuadro 'Recursos Ordinarios - Apertura por Actividad' (b7) como desglose de los recursos específicos del Anexo B?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Específicos ( Anexo B )",
+   "texto": "b7 abre por actividad los recursos para fines específicos que b6 muestra agregados.",
+   "bloques": [
+    "b7",
+    "b6"
+   ],
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado individual de asociación civil (Estado de Recursos y Gastos, b2). b6 (Anexo B) abre recursos generales/específicos; b7 abre recursos específicos por actividad; b8 gastos específicos de departamentos; b9 gastos generales de administración. Se excluyen balance, EEPN, flujo, bienes de uso, previsiones, moneda extranjera y notas de activo/pasivo."
+ "observaciones": "Estado de recursos y gastos en b2 (pág. 3), individual del club. Anexo B de recursos ordinarios en b6 incluye 'Cuotas Sociales Gral' dentro de Cuotas de asociados; b7 abre recursos específicos por actividad. Gastos: b8 gastos específicos de departamentos y b9 gastos generales de administración. Se excluyen balance, evolución del PN, flujo, bienes de uso, previsiones, moneda extranjera y notas patrimoniales."
 }

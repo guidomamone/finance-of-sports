@@ -35,6 +35,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'ferrocarriloeste-ar': {
     2022: {"estadio":"Ricardo Etcheverry","capacidad":24442,"sponsor":"Avalian","temporada":"2022 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1345354861","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175881249"}},
     2023: {"estadio":"Ricardo Etcheverri","capacidad":24442,"sponsor":"Avalian (hasta 2022) / Lepore","temporada":"2023 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1316703963","fuenteManual":"https://es.wikipedia.org/wiki/Club_Ferro_Carril_Oeste","manual":["sponsor"]},
+    2025: {"estadio":"Ricardo Etcheverri","capacidad":24442,"sponsor":"Lepore","temporada":"2025 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1334126024","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175881249"}},
   },
   'gimnasiaesgrima-ar': {
     2023: {"estadio":"Juan Carmelo Zerillo","capacidad":24544,"sponsor":"RapiCuota$","marca":"Givova","temporada":"2023 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274459"},

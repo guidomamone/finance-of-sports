@@ -177,6 +177,105 @@ A, ninguna de las cuales tiene liga propia en el catálogo hoy) — queda en `nu
 en vez de adivinar.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Para fines generales ( Anexo B ) | pág. 3, Jev 0.97 |
+| 2 | Servicios a Socios (Anexo C) | pág. 7, Claude 0.9 |
+| 3 | Ingresos por Actividades Federadas (Anexo C) | pág. 7, precedente |
+| 4 | Ingreso por Colonia de Vacaciones | pág. 7, Claude 0.92 |
+| 5 | Ingreso por Colegio Instituto Educativo | pág. 7, Jev 1 |
+| 6 | Ingreso por Escuelas Deportivas (Anexo C) | pág. 7, Claude 0.92 |
+| 7 | Ingresos Ponteveedra | pág. 7, precedente |
+| 8 | Recaudaciones Eventos Deportivos | pág. 7, precedente |
+| 9 | Ingresos por Torneos | pág. 7, precedente |
+| 10 | Derechos de Television | pág. 7, precedente |
+| 11 | Venta de Abonos y Plateas | pág. 7, precedente |
+| 12 | Ingreso por Publicidad y Sponsors | pág. 7, Jev 1 |
+| 13 | Ingresos por Alquileres | pág. 7, precedente |
+| 14 | Ingresos por Buffet | pág. 7, precedente |
+| 15 | Futbol Profesional Ventas y Prestamos | pág. 7, precedente |
+| 16 | Otros Ingresos | pág. 7, precedente |
+| 17 | Derechos de Formacion y afines | pág. 7, precedente |
+| 18 | Subsidios Recibidos | pág. 7, precedente |
+| 19 | Recupero Decreto 510/23 | pág. 3, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | 1- Departamento de Educacion Fisica | pág. 9, precedente |
+| 2 | Basquetball Profesional | pág. 9, Claude 0.85 |
+| 3 | Basquetball | pág. 9, Jev 1 |
+| 4 | Beisball | pág. 9, Jev 0.95 |
+| 5 | Boxeo | pág. 9, Claude 0.92 |
+| 6 | Efi | pág. 9, Claude 0.9 |
+| 7 | Fitnes | pág. 9, precedente |
+| 8 | Futsal | pág. 9, Jev 1 |
+| 9 | Gimnasia Artistica y Ritmica | pág. 9, Jev 0.99 |
+| 10 | Handball | pág. 9, Jev 1 |
+| 11 | Hockey | pág. 9, Jev 1 |
+| 12 | Judo | pág. 9, Jev 0.98 |
+| 13 | Natacion | pág. 9, Jev 0.99 |
+| 14 | Patin | pág. 9, Jev 1 |
+| 15 | Racquetball | pág. 9, Claude 0.92 |
+| 16 | Taekwondo | pág. 9, Jev 1 |
+| 17 | Tenis | pág. 9, Jev 0.99 |
+| 18 | Tenis de Mesa | pág. 9, Jev 0.98 |
+| 19 | Voley | pág. 9, Jev 0.99 |
+| 20 | Otros | pág. 9, Jev 1 |
+| 21 | Departamento de Futbol Profesional | pág. 9, precedente |
+| 22 | Departamento de Futbol Femenino | pág. 9, precedente |
+| 23 | Departamento de Futbol Infantil | pág. 9, precedente |
+| 24 | Departamento de Futbol Amateur | pág. 9, precedente |
+| 25 | 4- Departamento Medico | pág. 9, Jev 0.93 |
+| 26 | Egresos por Instituto Educativo | pág. 9, precedente |
+| 27 | Egresos por Colonia de Vacaciones | pág. 9, precedente |
+| 28 | Egresos Ponteveedra | pág. 9, precedente |
+| 29 | Egresos Sede Social | pág. 9, precedente |
+| 30 | Egresos Campo Deportivo | pág. 9, precedente |
+| 31 | Egresos Anexos | pág. 9, precedente |
+| 32 | Egresos Generales | pág. 9, precedente |
+| 33 | Egresos Departamento Cultural | pág. 9, precedente |
+| 34 | Diferencia de redondeo | pág. ?, Jev 1 |
+| 35 | Sueldos al Personal | pág. 10, Claude 0.88 |
+| 36 | Honorarios y Otras Retribuciones | pág. 10, Jev 1 |
+| 37 | Servicios de Telefonia e Internet | pág. 10, Jev 1 |
+| 38 | Provisiones, Previsiones por Juicios e Incobrables | pág. 10, precedente |
+| 39 | Cargas Sociales | pág. 10, Claude 0.88 |
+| 40 | Gastos Bancarios | pág. 10, precedente |
+| 41 | Gastos por Acreditacion de Tarjetas de Credito | pág. 10, Jev 1 |
+| 42 | Movilidad y Viaticos | pág. 10, precedente |
+| 43 | Publicidad Institucional | pág. 10, Jev 1 |
+| 44 | Gastos Varios | pág. 10, precedente |
+| 45 | Papeleria y Utiles | pág. 10, Jev 1 |
+| 46 | Insumos Informaticos | pág. 10, Jev 1 |
+| 47 | Franqueos, Telegramas y Correos | pág. 10, Jev 1 |
+| 48 | Mantenimiento Infraestructura | pág. 10, Jev 0.98 |
+| 49 | Impuestos / Tasas / Contribuciones | pág. 10, Jev 1 |
+| 50 | Amortizaciones de bienes ( Anexo A ) | pág. 3, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fx = 1165. el Anexo G (L706-709) y la nota de L818 usan 1.165 (comprador BNA) para los activos en dólares; el 1.215 (vendedor BNA, L715 y L853) vale solo para un préstamo de U$S 60.000. Guido eligió 1.165 a recomendación de Claude, 2026-10-19
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): ar-primeranacional, verificado contra roster cacheado de "2025 Primera Nacional" (tools/club-league-reference/ar.json), coincidencia exacta "Ferro Carril Oeste".
+```
+
 ## 2023
 
 ### Meta
@@ -241,6 +340,14 @@ _note (data/):_
 
 ```text
 PDF oficial (texto nativo), informe de auditoría sin salvedades (Dr. Gabriel Alejandro Warley, CPCECABA T°295 F°232, 7/9/2023). Estados contables preparados en moneda homogénea (RT6). SUPERÁVIT real: $712.927.771,84 ARS, impulsado por una venta/préstamo grande de jugadores del plantel profesional ($459,755138 M, línea "Futbol Profesional Ventas y Prestamos", que no existía como línea propia en el Ej. 118). Total del Activo al cierre: $8.563.450.301,47. No declara tipo de cambio de cierre propio — convertido con dólar mayorista de referencia BCRA al 30/6/2023 ($256,675). 18.280 socios/as al 30/6/2023 (única cifra de padrón encontrada en las 2 memorias). Ver data/ar/ferrocarriloeste-ar-data.js para el detalle completo de categorización.
+```
+
+### ferrocarriloeste-ar-balance-ejercicio-121-2024-25
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

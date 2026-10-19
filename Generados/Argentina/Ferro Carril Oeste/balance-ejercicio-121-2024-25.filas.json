@@ -4,7 +4,7 @@
  "mdSha1": "65f36be6df4ab07f72a541c93249859c7d911ea4",
  "ubicacionSha1": "bac17d9de2dbbab1d6ef1fb60d78484e28e2d33a",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:29:42.839Z",
+ "generado": "2026-10-19T17:35:09.835Z",
  "ubicacion": {
   "estado": [
    "b2"
@@ -22,27 +22,27 @@
   {
    "bloque": "b2",
    "escala": "unidades",
-   "evidencia": "L88: (expresado a moneda constante - comparativo con el ejercicio anterior); importes con centavos"
+   "evidencia": "L88: (expresado a moneda constante - comparativo con el ejercicio anterior); importes con decimales en pesos"
   },
   {
    "bloque": "b6",
    "escala": "unidades",
-   "evidencia": "L339: (expresado a moneda constante ...); importes con centavos"
+   "evidencia": "L339: (expresado a moneda constante ...)"
   },
   {
    "bloque": "b7",
    "escala": "unidades",
-   "evidencia": "L411: (expresado a moneda constante ...); importes con centavos"
+   "evidencia": "L411: (expresado a moneda constante ...)"
   },
   {
    "bloque": "b8",
    "escala": "unidades",
-   "evidencia": "L493: (expresado a moneda constante ...); importes con centavos"
+   "evidencia": "L493: (expresado a moneda constante ...)"
   },
   {
    "bloque": "b9",
    "escala": "unidades",
-   "evidencia": "L582: (expresado a moneda constante ...); importes con centavos"
+   "evidencia": "L582: (expresado a moneda constante ...)"
   }
  ],
  "filas": [
@@ -178,16 +178,6 @@
   },
   {
    "bloque": "b6",
-   "linea": 345,
-   "etiqueta": "",
-   "actual": "4.615.086.828,80",
-   "anterior": "4.119.735.013,64",
-   "tipo": "subtotal",
-   "lado": "ingreso",
-   "detalla_a": "Para fines generales ( Anexo B )"
-  },
-  {
-   "bloque": "b6",
    "linea": 347,
    "etiqueta": "Servicios a Socios (Anexo C)",
    "actual": "562.062.511,76",
@@ -249,7 +239,7 @@
   {
    "bloque": "b6",
    "linea": 353,
-   "etiqueta": "",
+   "etiqueta": "Aranceles por actividades",
    "actual": "6.089.685.134,87",
    "anterior": "5.330.174.101,70",
    "tipo": "subtotal",
@@ -349,7 +339,7 @@
   {
    "bloque": "b6",
    "linea": 364,
-   "etiqueta": "",
+   "etiqueta": "Otros Ingresos Ordinarios",
    "actual": "3.792.458.892,01",
    "anterior": "3.237.905.162,95",
    "tipo": "subtotal",
@@ -379,7 +369,7 @@
   {
    "bloque": "b6",
    "linea": 368,
-   "etiqueta": "",
+   "etiqueta": "Ingresos Extraordinarios",
    "actual": "143.796.487,81",
    "anterior": "75.655.802,98",
    "tipo": "subtotal",
@@ -390,21 +380,11 @@
    "bloque": "b6",
    "linea": 369,
    "etiqueta": "Total",
-   "actual": "14.641.027.343,49",
-   "anterior": "12.763.470.081,27",
-   "tipo": "total",
-   "lado": "ingreso",
-   "detalla_a": "Total Recursos Ordinarios"
-  },
-  {
-   "bloque": "b7",
-   "linea": 415,
-   "etiqueta": "Ingresos por Servicios a Socios",
-   "actual": "562.062.511,76",
-   "anterior": "493.581.793,49",
+   "actual": "10.025.940.514,69",
+   "anterior": "8.643.735.067,63",
    "tipo": "subtotal",
    "lado": "ingreso",
-   "detalla_a": "Servicios a Socios (Anexo C)"
+   "detalla_a": "Específicos ( Anexo B )"
   },
   {
    "bloque": "b7",
@@ -455,16 +435,6 @@
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Servicios a Socios (Anexo C)"
-  },
-  {
-   "bloque": "b7",
-   "linea": 421,
-   "etiqueta": "Ingresos por Actividades Federadas",
-   "actual": "1.314.433.627,25",
-   "anterior": "1.093.553.994,11",
-   "tipo": "subtotal",
-   "lado": "ingreso",
-   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
   },
   {
    "bloque": "b7",
@@ -565,16 +535,6 @@
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
-  },
-  {
-   "bloque": "b7",
-   "linea": 432,
-   "etiqueta": "Ingreso por Escuelas Deportivas",
-   "actual": "1.302.906.100,63",
-   "anterior": "1.161.417.783,11",
-   "tipo": "subtotal",
-   "lado": "ingreso",
-   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
   },
   {
    "bloque": "b7",
@@ -755,16 +715,6 @@
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
-  },
-  {
-   "bloque": "b7",
-   "linea": 451,
-   "etiqueta": "Total",
-   "actual": "3.179.402.239,63",
-   "anterior": "2.748.553.570,71",
-   "tipo": "subtotal",
-   "lado": "ingreso",
-   "detalla_a": null
   },
   {
    "bloque": "b8",
@@ -1332,17 +1282,28 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se mantienen como anterior los importes 30/06/2024 del Anexo C (b7, L415, L421, L432) aunque difieren de los del Anexo B (b6, L347, L348, L351)?",
+   "pregunta": "¿Se cargan como anterior de b7 los importes 30/06/2024 aunque los totales del Anexo C (p.ej. 493.581.793,49 en L415) difieren de los del Anexo B (572.187.331,04 en L347)?",
    "propuesta": "sí",
-   "tema": "cuadro-de-otro-anio",
+   "tema": "columna",
    "renglon": "Servicios a Socios (Anexo C)",
-   "texto": "Los totales 2024 de b7 (493.581.793,49; 1.093.553.994,11; 1.161.417.783,11) no coinciden con b6 (572.187.331,04; 1.143.851.783,17; 1.191.167.126,58), posiblemente por distinta reexpresión; los 2025 sí coinciden.",
+   "texto": "Los totales 2024 de Anexo C (L415, L421, L432) no coinciden con los del Anexo B (L347, L348, L351); los de 2025 sí coinciden.",
    "bloques": [
-    "b6",
-    "b7"
+    "b7",
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se clasifica 'Recupero Decreto 510/23' (L103) como ingreso fuera del total de recursos?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Recupero Decreto 510/23",
+   "texto": "L103 suma al resultado operativo pero está fuera de Total Recursos y Gastos; se cargó como 'otro'.",
+   "bloques": [
+    "b2"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Escala: importes en pesos con centavos, expresados en moneda constante. En b6 se tomó la columna Total de cada año (las columnas Generales/Específicos solo separan los dos renglones del estado). Las filas de subtotal sin etiqueta de b6 (L345, L353, L364, L368) se cargaron con etiqueta vacía. El 'Recupero Decreto 510/23' (L103) se clasificó como otro por estar fuera de los totales de recursos y gastos. El Total de b7 (L451) suma los tres renglones con Anexo C y no corresponde a un único renglón del estado. No hay impuesto a las ganancias."
+ "observaciones": "Escala en pesos (unidades) en moneda constante. En b6 se usó la columna Total (coincide con la de cada tipo de recurso). Los subtotales de b6 sin etiqueta en su fila (L353, L364, L368) se cargaron con la etiqueta del encabezado del grupo. Cuotas Sociales Gral (L344) detalla 'Para fines generales'; su subtotal L345 replica el mismo importe y no se cargó."
 }
