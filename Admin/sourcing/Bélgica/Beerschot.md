@@ -26,3 +26,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.pdf` (sourceId `beerschot-be-jaarrekening-2024-06-30-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.pdf` (sourceId `beerschot-be-jaarrekening-2020-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf` (sourceId `beerschot-be-jaarrekening-2023-06-30-individual`).

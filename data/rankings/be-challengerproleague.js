@@ -45,6 +45,9 @@ window.RANKINGS["be-challengerproleague"] = {
     leagueSize: null,
     wiki: {"t":"2022–23 Challenger Pro League","lang":"en","at":"2026-10-19","n":12},
     clubs: [
+      { id:"beerschot-be", revenue:8.677, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2023-06-30-individual",
+        mix:[["Comercial / Sponsors",3.347],["Estadio",1.478],["Televisión",2.032],["Otros ingresos",1.82]] },
       { id:"liersesk-be", revenue:2.777, reportType:"official_balance_sheet",
         sourceId:"liersesk-be-jaarrekening-2023-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.777]] },

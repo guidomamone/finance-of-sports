@@ -162,13 +162,61 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2020, 2021, 2022, 2025): Comercial / Sponsors, Estadio, Televisión
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2020, 2021, 2022, 2023, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
 ### Liga
 
 ```text
 tools/cargar.mjs (2026-10-19): be-challengerproleague, verificado contra roster cacheado de "2023–24 Challenger Pro League" (tools/club-league-reference/be.json), coincidencia exacta "Beerschot".
+```
+
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ticketing & abonnementen | pág. 25, precedente |
+| 2 | Sponsoring | pág. 25, precedente |
+| 3 | TV rechten | pág. 25, precedente |
+| 4 | Commercieel | pág. 25, precedente |
+| 5 | Andere bedrijfsopbrengsten | pág. 9, precedente |
+| 6 | Niet-recurrente bedrijfsopbrengsten | pág. 9, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 9, precedente |
+| 2 | Voorraad: afname (toename) (+)/(-) | pág. 9, precedente |
+| 3 | Diensten en diverse goederen | pág. 9, precedente |
+| 4 | Bezoldigingen en rechtstreekse sociale voordelen | pág. 25, precedente |
+| 5 | Werkgeversbijdragen voor sociale verzekeringen | pág. 25, precedente |
+| 6 | Andere personeelskosten | pág. 25, precedente |
+| 7 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 9, precedente |
+| 8 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | pág. 9, precedente |
+| 9 | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) | pág. 9, precedente |
+| 10 | Bedrijfsbelastingen en -taksen | pág. 26, precedente |
+| 11 | Andere | pág. 26, precedente |
+| 12 | Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 28, precedente |
+| 13 | Minderwaarden bij de realisatie van immateriële en materiële vaste activa | pág. 28, Jev 0.92 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-challengerproleague, verificado contra roster cacheado de "2022–23 Challenger Pro League" (tools/club-league-reference/be.json), coincidencia exacta "Beerschot".
 ```
 
 ## 2022
@@ -355,7 +403,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2020, 2021, 2022, 2025): Comercial / Sponsors, Estadio, Televisión
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2020, 2021, 2022, 2023, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
 ### Liga
@@ -412,4 +460,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### beerschot-be-jaarrekening-2023-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

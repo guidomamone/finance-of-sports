@@ -14,6 +14,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2020: {"estadio":"Olympic Stadium","capacidad":12771,"sponsor":"DCA","marca":"Joma","temporada":"2019–20 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375220388"},
     2021: {"estadio":"Olympic Stadium","capacidad":12771,"sponsor":"Yelo","marca":"XIII","temporada":"2020–21 Belgian First Division A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375725941"},
     2022: {"estadio":"Olympisch Stadion","capacidad":12771,"sponsor":"Yelo","temporada":"2021–22 Belgian First Division A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378848763","fuenteManual":"https://nl.wikipedia.org/wiki/Eerste_klasse_A_2021-22_(voetbal_Belgi%C3%AB)","manual":["estadio","sponsor"]},
+    2023: {"estadio":"Olympic Stadium","capacidad":12771,"sponsor":"Yelo","marca":"Erreà","temporada":"2022–23 Challenger Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380217514"},
     2024: {"estadio":"Olympisch Stadion","capacidad":12771,"sponsor":"Yelo","temporada":"2023–24 Challenger Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372570277","fuenteManual":"https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)","manual":["estadio","sponsor"]},
     2025: {"estadio":"Olympisch Stadion","capacidad":12771,"sponsor":"Star Casino, Wolf Lubricants","marca":"Erreà","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
