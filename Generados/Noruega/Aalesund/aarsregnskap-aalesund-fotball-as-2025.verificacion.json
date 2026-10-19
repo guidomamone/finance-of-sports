@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
  "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md",
- "generado": "2026-10-19T00:28:24.813Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:44:52.584Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -21,16 +21,35 @@
    "evidencia": "A2 (Claude): Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md",
    "autor": "perimetro-senales",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "-7 004",
+   "linea": 593,
+   "etiqueta": "Annen rentekostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen rentekostnad",
+   "motivo": "costo financiero leído como ingreso (Sum finanskostnader 77.934) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L593",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "-70 930",
+   "linea": 594,
+   "etiqueta": "Annen finanskostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen finanskostnad",
+   "motivo": "costo financiero leído como ingreso: el resultado cierra en 1.514.820 (1 de redondeo) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L594",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "37b8a3b",
-  "4785d51",
-  "986fdc7",
-  "061f140",
-  "45c92bb",
-  "f4cc6e4"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -48,18 +67,28 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 70.43091 - gastos 69.574018 ± financiero 0.813796 ± impuesto 0 no da el impreso 1.51482",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.220446049250313e-15
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
-  "la nota de \"Salgsinntekter\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento"
+  "la nota de \"Salgsinntekter\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Annen rentekostnad\" (financiero) -7 004, en lugar de \"Annen rentekostnad\" (2026-10-19, costo financiero leído como ingreso (Sum finanskostnader 77.934) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
+  "ajuste manual: fila \"Annen finanskostnad\" (financiero) -70 930, en lugar de \"Annen finanskostnad\" (2026-10-19, costo financiero leído como ingreso: el resultado cierra en 1.514.820 (1 de redondeo) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -67,12 +96,12 @@
  "totales": {
   "ingresos": 70.43091,
   "gastos": 69.574018,
-  "financiero": 0.813796,
+  "financiero": 0.657928,
   "impuesto": 0,
   "resultadoImpreso": 1.51482,
   "resultadoParaCargar": 1.51482,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -175,12 +204,12 @@
   },
   {
    "etiqueta": "Annen rentekostnad",
-   "M": 0.007004,
+   "M": -0.007004,
    "linea": 593
   },
   {
    "etiqueta": "Annen finanskostnad",
-   "M": 0.07093,
+   "M": -0.07093,
    "linea": 594
   }
  ],

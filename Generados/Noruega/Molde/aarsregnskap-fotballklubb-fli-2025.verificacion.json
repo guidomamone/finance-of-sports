@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.md",
- "generado": "2026-10-19T00:28:24.617Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:44:52.571Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "2f89919",
-  "18de0c5",
-  "dcc244e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -53,6 +49,7 @@
   "la nota de \"Andre driftsinntekter\" no suma el renglón (3.650704 contra 3.650788, sumando sus renglones): quedó el renglón del estado",
   "el desglose de \"Andre driftskostnader\" (4 filas) no suma la fila: quedó la fila",
   "duda de localizar que no afecta la carga: El documento repite el estado y las notas en las págs. 31-41, idénticos a las págs. 11-21, y b2 es la versión resumida del formulario oficial.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-fotballklubb-fli-2025.pdf",
   "duda de extraer que no afecta la carga: El signo positivo es coherente con Driftsresultat -160 542 139 + 81 320 126 = -79 222 013 (L447-L449).",
   "duda de extraer que no afecta la carga: Son aplicaciones del resultado a patrimonio, no partidas de resultado."
  ],

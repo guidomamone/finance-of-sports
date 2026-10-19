@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
  "md": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
- "generado": "2026-10-19T00:28:24.927Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:44:52.588Z",
+ "estado": "ok",
  "clubId": null,
- "year": null,
+ "year": 2024,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -41,18 +41,42 @@
    "evidencia": "A2 (Claude): Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
    "autor": "perimetro-senales",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 1064,
+   "etiqueta": "(sale) Sum driftsinntekter",
+   "lado": "ingreso",
+   "reemplaza": "Sum driftsinntekter",
+   "motivo": "el total \"Sum driftsinntekter\" se sumaba además de su único renglón (ingresos 2 x 92.725.486) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L1064",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "fila",
+   "valor": "-310 627",
+   "linea": 1077,
+   "etiqueta": "Annen finanskostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen finanskostnad",
+   "motivo": "costo financiero leído como ingreso: netto -87.325 y el resultado cierra en 2.766.504 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L1077",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "97dc547",
-  "db8c283",
-  "5ae527f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "\"Sum driftsinntekter\" 92.725486 cierra; además se suman 1 línea(s) fuera de ese total (92.725486)"
+   "detalle": "92.725486 = 92.725486",
+   "suma": 92.72548599999999,
+   "impreso": 92.72548599999999
   },
   {
    "nombre": "total de gastos",
@@ -63,29 +87,38 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 185.450972 - gastos 89.871657 ± financiero 0.533929 ± impuesto 0 no da el impreso 2.766504",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 9.325873406851315e-15
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: sale la fila \"Sum driftsinntekter\" (2026-10-19, el total \"Sum driftsinntekter\" se sumaba además de su único renglón (ingresos 2 x 92.725.486) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
+  "ajuste manual: fila \"Annen finanskostnad\" (financiero) -310 627, en lugar de \"Annen finanskostnad\" (2026-10-19, costo financiero leído como ingreso: netto -87.325 y el resultado cierra en 2.766.504 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en wf-src-FFK_-_Årsmøte_2025.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 185.450972,
+  "ingresos": 92.725486,
   "gastos": 89.871657,
-  "financiero": 0.533929,
+  "financiero": -0.087325,
   "impuesto": 0,
   "resultadoImpreso": 2.766504,
   "resultadoParaCargar": 2.766504,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -94,14 +127,6 @@
    "M": 92.725486,
    "pagina": 26,
    "linea": 1063,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Sum driftsinntekter",
-   "lado": "ingreso",
-   "M": 92.725486,
-   "pagina": 26,
-   "linea": 1064,
    "origen": "estado"
   },
   {
@@ -149,7 +174,7 @@
   },
   {
    "etiqueta": "Annen finanskostnad",
-   "M": 0.310627,
+   "M": -0.310627,
    "linea": 1077
   }
  ],

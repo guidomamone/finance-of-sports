@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2025.pdf",
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2025.md",
- "generado": "2026-10-19T00:28:25.015Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:44:52.592Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -21,15 +21,35 @@
    "evidencia": ".md L771-773, L1333, L1677",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2025.pdf",
+   "campo": "fila",
+   "valor": "-1 132 192",
+   "linea": 1383,
+   "etiqueta": "Annen rentekostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen rentekostnad",
+   "motivo": "costo financiero leído como ingreso (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L1383",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2025.pdf",
+   "campo": "fila",
+   "valor": "-1 978 517",
+   "linea": 1384,
+   "etiqueta": "Annen finanskostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen finanskostnad",
+   "motivo": "costo financiero leído como ingreso: Resultat av finansposter -1.165.401 y el resultado cierra en 16.482.693 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L1384",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "daee867",
-  "522b168",
-  "bbbdfea",
-  "dffc3ba",
-  "e534d5e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -47,19 +67,27 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 222.878614 - gastos 205.230519 ± financiero 5.056016 ± impuesto 0 no da el impreso 16.482693",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4210854715202004e-14
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Annen rentekostnad\" (financiero) -1 132 192, en lugar de \"Annen rentekostnad\" (2026-10-19, costo financiero leído como ingreso (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
+  "ajuste manual: fila \"Annen finanskostnad\" (financiero) -1 978 517, en lugar de \"Annen finanskostnad\" (2026-10-19, costo financiero leído como ingreso: Resultat av finansposter -1.165.401 y el resultado cierra en 16.482.693 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
   "duda de localizar que no afecta la carga: b2 muestra Resultat før skattekostnad 16 482 693 / 29 725 168, igual que b25, y b1 abre los mismos renglones (Billetinntekter...).",
   "duda de localizar que no afecta la carga: b5 (KONSERNRESULTATREGNSKAP) y b8 (con Majoritetens andel, pág. 15) son consolidados.",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Sum driftsinntekter\"): aceptar, en aarsregnskap-fotballforening-fli-2025.pdf",
   "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; las cifras completas sugieren unidades."
  ],
  "reintentar": null,
@@ -68,12 +96,12 @@
  "totales": {
   "ingresos": 222.878614,
   "gastos": 205.230519,
-  "financiero": 5.056016,
+  "financiero": -1.165402,
   "impuesto": 0,
   "resultadoImpreso": 16.482693,
   "resultadoParaCargar": 16.482693,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -246,12 +274,12 @@
   },
   {
    "etiqueta": "Annen rentekostnad",
-   "M": 1.132192,
+   "M": -1.132192,
    "linea": 1383
   },
   {
    "etiqueta": "Annen finanskostnad",
-   "M": 1.978517,
+   "M": -1.978517,
    "linea": 1384
   }
  ],

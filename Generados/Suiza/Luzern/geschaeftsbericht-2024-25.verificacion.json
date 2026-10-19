@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.md",
- "generado": "2026-10-19T00:28:34.386Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:44:52.550Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -33,11 +33,7 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "7fc9400",
-  "9a3d16f",
-  "9623b1e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -85,8 +81,9 @@
   "escalón \"nota exacta en la lectura 6\": \"Events\" (L1132) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 6\": \"Administrations- und sonstiger Betriebsaufwand\" (L1135) se abre en las 5 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 6",
-  "duda de extraer que no afecta la carga: L1147 figura sin signo negativo mientras otros gastos llevan '−'; se respeta el signo impreso.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en geschaeftsbericht-2024-25.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Unternehmenserfolg nach Minderheiten\"): aceptar, en geschaeftsbericht-2024-25.pdf",
+  "duda de extraer que no afecta la carga: L1147 figura sin signo negativo mientras otros gastos llevan '−'; se respeta el signo impreso."
  ],
  "reintentar": [
   {
