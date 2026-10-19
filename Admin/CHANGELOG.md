@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 799 — Reino Unido: 6 transcripciones más; fin de los subagentes (2026-10-19)
+
+* Red Bull Racing 2020, Chelsea 2019-21 y Leeds 2018-21, con 0 P1 / 0 P2 de fidelidad. Guido decide no transcribir más con subagentes:
+  la cola sigue por Mistral.
+
 ## Versión 798 — 301: gasto.mjs y audit.js --json ya no se cortan en un pipe (2026-10-19)
 
 * Los dos esperan a vaciar la salida antes de terminar: el JSON completo (327.687 bytes) llega entero y parsea.

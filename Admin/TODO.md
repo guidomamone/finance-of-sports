@@ -358,8 +358,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 261. REINO UNIDO: TRANSCRIPCIÓN POR SUBAGENTES (pedido de Guido, 2026-10-16: gastar la ventana de 5 horas de la suscripción). 114 .md hechos y
     commiteados (93 con subagentes Opus y 21 con Sonnet) (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
     años 2021-2026 de los clubes de Premier, F1, cricket y rugby que ya tenían algún .md. Cola, scripts e instrucciones:
-    `Admin/transcripcion-subagentes/README.md` (van 74 de 1531 bloques; `claim.sh` tiene la ruta de la principal: en un worktree, una copia apuntada a esa carpeta; quedan unos 3600 PDFs, casi todos escaneos). Falta:
-    a) Validados (19-10: 106 listos, US$ 8,59; los 6 de Sonnet del 19-10 no). Falta el lote (etapa 3 en adelante); Celtic 2020-21 con
+    `Admin/transcripcion-subagentes/README.md` (van 77 de 1531 bloques; Guido, 2026-10-19: no transcribir más con subagentes, el resto va por Mistral con el ensayo; `claim.sh` tiene la ruta de la principal: en un worktree, una copia apuntada a esa carpeta; quedan unos 3600 PDFs, casi todos escaneos). Falta:
+    a) Validados (19-10: 106 listos, US$ 8,59). Los 12 `.md` de Sonnet del 19-10 (Wolves, Aston Villa, West Ham, Red Bull 2020, Chelsea
+       2019-21, Leeds 2018-21) faltan validar con `pipeline.mjs --lista` (ensayo gratis primero). Ojo al cargar: Leeds 2019-20 es de 13 meses
+       y 2020-21 la versión "AMENDED" de 11; Red Bull 2020, usar el turnover del estado (229.754), no el de la pág. 4. Falta el lote (etapa 3 en adelante); Celtic 2020-21 con
        `--max-paginas 0`. Tres con páginas que solo validó Claude (Celtic 2021-22 pág. 52; los otros en `transcripciones-estado.jsonl`):
        cerrar con sum-check al onboardear. Notas de West Ham 2019-21 y parte de Aston Villa cerradas por sumas: mirarlas antes de caja y deuda.
     b) Sociedad de cada documento: ya listada en `Admin/transcripcion-subagentes/sociedad-por-documento.md` (cinco pares con dos
