@@ -13,6 +13,12 @@ const astonvillaGbRevenueLinesByYear = {
     { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:16.890061, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:12.745422, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:22.26977, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship.', normalizedCategory:'sponsorship_commercial', amountNative:7.338745, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:9.072537, disclosureLevel:'aggregated' },
+  ],
 };
 
 const astonvillaGbExpenseLinesByYear = {
@@ -27,6 +33,9 @@ const astonvillaGbExpenseLinesByYear = {
     { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-1.2022, disclosureLevel:'aggregated' },
     { rawLabel:'Other pension costs', normalizedCategory:'wages_squad', amountNative:-0.477504, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating charges (including exceptional costs)', normalizedCategory:'other_expenses', amountNative:-306.203312, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-163.043101, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -53,6 +62,16 @@ const astonvillaGbFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:204.52584, officialTotalExpenses:320.280584, officialPAT:-116.104918,
+  },
+  2019: {
+    currency:'GBP', fxRef:'GBP@2019-05-31',
+    sourceId:'astonvilla-gb-full-accounts-2018-19',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.160269, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:51.426474, officialTotalExpenses:163.043101, officialPAT:null,
   },
 };
 
@@ -81,6 +100,11 @@ Object.assign(sources, {
   'astonvilla-gb-full-accounts-2022-23': {
     id:'astonvilla-gb-full-accounts-2022-23', clubId:'astonvilla-gb',
     title:'Aston Villa Football Club Limited — astonvilla-full-accounts-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'astonvilla-gb-full-accounts-2018-19': {
+    id:'astonvilla-gb-full-accounts-2018-19', clubId:'astonvilla-gb',
+    title:'Aston Villa Football Club Limited — astonvilla-full-accounts-2018-19 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

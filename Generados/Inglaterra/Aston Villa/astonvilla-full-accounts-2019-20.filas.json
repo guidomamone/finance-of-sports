@@ -4,7 +4,7 @@
  "mdSha1": "0f5da48930450be15bfbf605e08cd6d4a6b49678",
  "ubicacionSha1": "69ef4f85e74f220ec33eab34e43f55a31746f4cc",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:09:49.595Z",
+ "generado": "2026-10-19T16:57:55.758Z",
  "ubicacion": {
   "estado": [
    "b2"
@@ -22,27 +22,27 @@
   {
    "bloque": "b2",
    "escala": "unidades",
-   "evidencia": "L391: columnas '2020 £' y '2019 £'"
+   "evidencia": "Columnas '2020 £' y '2019 £' (L391)"
   },
   {
    "bloque": "b5",
    "escala": "unidades",
-   "evidencia": "L685: '2020 £'"
+   "evidencia": "Columnas '2020 £' (L685)"
   },
   {
    "bloque": "b11",
    "escala": "unidades",
-   "evidencia": "L775: '2020 £'"
+   "evidencia": "Columnas '2020 £' (L775)"
   },
   {
    "bloque": "b6",
    "escala": "unidades",
-   "evidencia": "L706: '2020 £'"
+   "evidencia": "Columnas '2020 £' (L706)"
   },
   {
    "bloque": "b8",
    "escala": "unidades",
-   "evidencia": "L733: '2020 £'"
+   "evidencia": "Columnas '2020 £' (L733)"
   }
  ],
  "filas": [
@@ -52,7 +52,7 @@
    "etiqueta": "Turnover",
    "actual": "107,863,788",
    "anterior": "51,426,474",
-   "tipo": "renglon",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
@@ -192,7 +192,7 @@
    "etiqueta": "",
    "actual": "107,863,788",
    "anterior": "51,426,474",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": "Turnover"
   },
@@ -289,16 +289,27 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan los costos de personal de b8 (L735-L738, total 8,317,500) como desglose parcial de 'Administrative expenses'?",
+   "pregunta": "¿Se confirma que no existe en los bloques un renglón 'Salarios del plantel' separado y que los costos de personal de b8 (L735-L738, £8,317,500) son los únicos salarios informados?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "Administrative expenses",
-   "texto": "L738: 8,317,500 parece bajo para la nómina de un club de Premier League; podría ser solo de la sociedad sin jugadores o de otro perímetro.",
+   "texto": "El cuadro de staff costs (L735-L738) suma solo £8.3m, muy bajo para un club de Premier League; puede ser de la compañía y no del grupo, o faltar otro cuadro.",
    "bloques": [
     "b8"
    ],
    "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la nota b6 (L708-L710) como desglose parcial de 'Administrative expenses' aunque es una lista de cargos y no un desglose completo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota 5 (L704) lista cargos incluidos en el resultado operativo, no suma al renglón del estado.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Todo en libras (unidades). b6 y b8 son desgloses parciales de Administrative expenses (no suman el renglón). Total de gastos no impreso aparte."
+ "observaciones": "Todo en libras (unidades). No hay total de gastos impreso; el gasto principal es 'Administrative expenses'. El resultado del ejercicio es pérdida de £90,893,408. El staff cost de b8 parece corresponder a la entidad individual; no hay cuadro de salarios del plantel."
 }

@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md",
  "mdSha1": "0f5da48930450be15bfbf605e08cd6d4a6b49678",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:08:44.600Z",
+ "generado": "2026-10-19T16:57:35.785Z",
  "perimetroClub": "individual",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -186,6 +187,18 @@
  "columna_anterior": "2019 £",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [],
- "observaciones": "Cuentas individuales de Aston Villa Football Club Limited, ejercicio cerrado al 31-05-2020. El estado de resultados es b2. Notas elegidas: b5 (desglose de Turnover), b11 (intereses a cobrar), b6 (partidas cargadas en el resultado operativo: depreciación y excepcionales) y b8 (gastos de personal). Quedan afuera: el balance, la evolución del patrimonio, los activos fijos, los deudores y acreedores, la conciliación impositiva, el número de empleados, la remuneración de directores, la remuneración de auditores y los arrendamientos."
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los 'Staff costs' de la nota 7 (b8: Wages and salaries, Social security costs, Other pension costs) como salarios del plantel, aunque incluyen a todo el personal y no solo a los jugadores?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 7 (b8) abre el costo de personal total incluido en Administrative expenses; no hay apertura específica del plantel.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Aston Villa Football Club Limited (sociedad del club, no el grupo). Estado de resultados en b2; desglose de Turnover en b5; nota 5 (b6) con partidas incluidas en el resultado operativo; nota 7 (b8) con costos de personal, única fuente para salarios; b11 abre intereses a cobrar. Se excluyen b10 (remuneración de directores, ya incluida en b8), b9 (número de empleados), impuestos, balance y demás."
 }

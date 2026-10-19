@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf",
  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md",
- "generado": "2026-10-19T16:31:38.128Z",
- "estado": "ok",
+ "generado": "2026-10-19T17:02:55.342Z",
+ "estado": "cola",
  "clubId": "astonvilla-gb",
  "year": 2020,
  "escala": {
@@ -12,7 +12,9 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "387bc06"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -55,16 +57,11 @@
  ],
  "notas": [
   "la nota de \"Administrative expenses\" no suma el renglón (10.260571 contra 203.017838, sumando sus renglones): quedó el renglón del estado",
-  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): corregir no, en astonvilla-full-accounts-2020-21.pdf"
+  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): corregir no, en astonvilla-full-accounts-2020-21.pdf",
+  "duda de extraer que no afecta la carga: La nota 5 (L704) lista cargos incluidos en el resultado operativo, no suma al renglón del estado."
  ],
- "reintentar": [
-  {
-   "renglon": "Administrative expenses",
-   "suma": 10.260571,
-   "objetivo": 203.017838
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Administrative expenses",

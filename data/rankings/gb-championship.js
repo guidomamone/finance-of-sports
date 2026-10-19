@@ -28,4 +28,13 @@ window.RANKINGS["gb-championship"] = {
         mix:[["Comercial / Sponsors",6.816],["Estadio",14.804],["Televisión",13.4],["Venta de Jugadores",11.315],["Otros ingresos",13.069]] },
     ],
   },
+  2019: {
+    leagueSize: null,
+    wiki: {"t":"2018–19 EFL Championship","lang":"en","at":"2026-10-19","n":24},
+    clubs: [
+      { id:"astonvilla-gb", revenue:64.808, reportType:"official_balance_sheet",
+        sourceId:"astonvilla-gb-full-accounts-2018-19",
+        mix:[["Comercial / Sponsors",20.681],["Estadio",16.062],["Televisión",28.064]] },
+    ],
+  },
 };
