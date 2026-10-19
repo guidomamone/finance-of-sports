@@ -87,3 +87,8 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - **Para fos-onboarding:** las altas que se revertían por "P1 2" ya entran; reintentar las del lote 93 y las 11 del borrador de Finanzas.
 
 ## Después del merge de la 298 x (2026-10-18)
+
+### Decisión de Guido (2026-10-18, por la principal)
+
+- Las ligas belgas de ascenso y amateur: "Sí: que el lote guarde las listas belgas de ascenso y amateur aunque eso les arme faltantes y
+  estimados en Ligas." No cambia nada en las tools (es lo que ya hace `lote.mjs --cargar`).
