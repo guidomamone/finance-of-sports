@@ -88,3 +88,5 @@
   - Los otros 2 de la lista ya los teníamos (2019, 2024) o son otra entidad (`DF_RB_Futebol_-_quadros_.pdf` = RB Futebol, la matriz; el snapshot no se pudo bajar, devolvió vacío — sin intentar de nuevo, no es el club).
 - `balanco-2017-clube-atletico-bragantino-associacao.pdf` — ex. 2017/2016/2015, **entidad distinta**: "CLUBE ATLÉTICO BRAGANTINO" (la asociación anterior a la Ltda; FPF lo lista bajo el mismo idClube hasta 2017). Guardado como contexto, NO cuenta para el objetivo.
 Serie en disco de la Ltda: 2019, 2020, 2021, 2022, 2023, 2024, 2025 (2018 solo como comparativo reexpresado dentro del 2019).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Brasil/RB Bragantino/balanco-2025-auditado.pdf` (sourceId `rbbragantino-br-balanco-2025-auditado`).

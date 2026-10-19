@@ -1,0 +1,147 @@
+{
+ "md": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md",
+ "generatedAt": "2026-10-19T17:37:30.637Z",
+ "rubrosHuella": "bba410516cd414b3ddfae7768b718cbf714e2439",
+ "rubros": [
+  {
+   "label": "Receita de patrocínio e publicidade",
+   "lado": "revenue",
+   "page": 38,
+   "section": "nota que desglosa \"Receita Líquida\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Campeonato Brasileiro",
+   "lado": "revenue",
+   "page": 38,
+   "section": "nota que desglosa \"Receita Líquida\"",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Campeonato Paulista",
+   "lado": "revenue",
+   "page": 38,
+   "section": "nota que desglosa \"Receita Líquida\"",
+   "choice": "competition_bonus",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com repasses de direitos federativo",
+   "lado": "revenue",
+   "page": 38,
+   "section": "nota que desglosa \"Receita Líquida\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Receitas",
+   "lado": "revenue",
+   "page": 38,
+   "section": "nota que desglosa \"Receita Líquida\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteria",
+   "lado": "revenue",
+   "page": 38,
+   "section": "nota que desglosa \"Receita Líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Copa do Brasil",
+   "lado": "revenue",
+   "page": 38,
+   "section": "nota que desglosa \"Receita Líquida\"",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "( - ) Encargos sobre receitas",
+   "lado": "revenue",
+   "page": 38,
+   "section": "nota que desglosa \"Receita Líquida\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas e Despesas operacionais",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Comissão técnica",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo do departamento de futebol",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos com jogos e bonificações",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo com departamento amador",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas gerais e administrativas",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1059
+  }
+ ]
+}

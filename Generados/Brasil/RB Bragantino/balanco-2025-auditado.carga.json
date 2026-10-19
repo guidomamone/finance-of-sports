@@ -1,0 +1,551 @@
+{
+ "pdf": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.pdf",
+ "generado": "2026-10-19T17:54:42.817Z",
+ "frena": [],
+ "avisos": [
+  "categorías en 0 aun después del reintento (se carga así): Televisión"
+ ],
+ "ejercicio": {
+  "clubId": "rbbragantino-br",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Receita de patrocínio e publicidade",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 397.569,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Campeonato Brasileiro",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 109.528,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Campeonato Paulista",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 15.6,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas com repasses de direitos federativo",
+    "normalizedCategory": "player_sales",
+    "amountNative": 11.214,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outras Receitas",
+    "normalizedCategory": "other_income",
+    "amountNative": 6.821,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bilheteria",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 3.911,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Copa do Brasil",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 9.541,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "( - ) Encargos sobre receitas",
+    "normalizedCategory": "other_income",
+    "amountNative": -54.984,
+    "disclosureLevel": "aggregated",
+    "_pag": 38,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outras receitas e Despesas operacionais",
+    "normalizedCategory": "other_income",
+    "amountNative": 28.089,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Comissão técnica",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -41.85,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custo do departamento de futebol",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -325.62,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos com jogos e bonificações",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -9.675,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custo com departamento amador",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -50.7,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Despesas gerais e administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -49.965,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2025-12-31",
+   "sourceId": "rbbragantino-br-balanco-2025-auditado",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -2.763,
+   "tax": -14.941,
+   "extraRows": [
+    {
+     "label": "Receitas financeiras",
+     "value": 0.357
+    },
+    {
+     "label": "Despesas financeiras",
+     "value": -3.12
+    },
+    {
+     "label": "Imposto de renda e contribuição social",
+     "value": -14.941
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 527.289,
+   "officialTotalExpenses": 477.81,
+   "officialPAT": 31.773
+  },
+  "source": {
+   "id": "rbbragantino-br-balanco-2025-auditado",
+   "clubId": "rbbragantino-br",
+   "title": "Red Bull Bragantino Futebol Ltda. — balanco-2025-auditado (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "rbbragantino-br",
+ "year": 2025,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 17,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Receita de patrocínio e publicidade",
+   "page": 38,
+   "native": 397.569,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita Líquida\")",
+   "signoFijo": 397.569,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 397.569
+  },
+  {
+   "label": "Campeonato Brasileiro",
+   "page": 38,
+   "native": 109.528,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita Líquida\")",
+   "signoFijo": 109.528,
+   "cat": "competition_bonus",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 109.528
+  },
+  {
+   "label": "Campeonato Paulista",
+   "page": 38,
+   "native": 15.6,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita Líquida\")",
+   "signoFijo": 15.6,
+   "cat": "competition_bonus",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 15.6
+  },
+  {
+   "label": "Receitas com repasses de direitos federativo",
+   "page": 38,
+   "native": 11.214,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita Líquida\")",
+   "signoFijo": 11.214,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.214
+  },
+  {
+   "label": "Outras Receitas",
+   "page": 38,
+   "native": 6.821,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita Líquida\")",
+   "signoFijo": 6.821,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.821
+  },
+  {
+   "label": "Bilheteria",
+   "page": 38,
+   "native": 3.911,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita Líquida\")",
+   "signoFijo": 3.911,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.911
+  },
+  {
+   "label": "Copa do Brasil",
+   "page": 38,
+   "native": 9.541,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita Líquida\")",
+   "signoFijo": 9.541,
+   "cat": "competition_bonus",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.541
+  },
+  {
+   "label": "( - ) Encargos sobre receitas",
+   "page": 38,
+   "native": 54.984,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita Líquida\")",
+   "signoFijo": -54.984,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -54.984
+  },
+  {
+   "label": "Outras receitas e Despesas operacionais",
+   "page": 6,
+   "native": 28.089,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "signoFijo": 28.089,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 28.089
+  },
+  {
+   "label": "Comissão técnica",
+   "page": 6,
+   "native": 41.85,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 41.85,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -41.85
+  },
+  {
+   "label": "Custo do departamento de futebol",
+   "page": 6,
+   "native": 325.62,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 325.62,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -325.62
+  },
+  {
+   "label": "Gastos com jogos e bonificações",
+   "page": 6,
+   "native": 9.675,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 9.675,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.675
+  },
+  {
+   "label": "Custo com departamento amador",
+   "page": 6,
+   "native": 50.7,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 50.7,
+   "cat": "youth_other_sports_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -50.7
+  },
+  {
+   "label": "Despesas gerais e administrativas",
+   "page": 6,
+   "native": 49.965,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 49.965,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -49.965
+  },
+  {
+   "label": "Receitas financeiras",
+   "page": null,
+   "native": 0.357,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Despesas financeiras",
+   "page": null,
+   "native": -3.12,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto de renda e contribuição social",
+   "page": null,
+   "native": -14.941,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Receita Líquida\")": "gastos con signo",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 527.289,
+  "expSum": -477.81,
+  "officialTotalRevenue": 527.289,
+  "officialTotalExpenses": 477.81,
+  "officialPAT": 31.773,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 31.773,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 527.289
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 477.81
+  }
+ },
+ "liga": {
+  "valor": "br-serieA",
+  "fuente": "roster cacheado de \"2025 Campeonato Brasileiro Série A\" (tools/club-league-reference/br.json), coincidencia exacta \"Red Bull Bragantino\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (108 de 109 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2025-12-31 = 5.5024 (PTAX de cierre (venda) del Banco Central do Brasil, boletín del 30/12/2025)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "rbbragantino-br-balanco-2025-auditado",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "br-serieA",
+   "fuente": "roster cacheado de \"2025 Campeonato Brasileiro Série A\" (tools/club-league-reference/br.json), coincidencia exacta \"Red Bull Bragantino\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 9,
+  "lineasGasto": 5,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

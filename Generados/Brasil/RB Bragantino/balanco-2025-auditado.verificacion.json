@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.pdf",
  "md": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md",
- "generado": "2026-10-19T17:09:22.643Z",
+ "generado": "2026-10-19T17:54:10.027Z",
  "estado": "ok",
  "clubId": "rbbragantino-br",
  "year": 2025,
@@ -16,24 +16,24 @@
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "\"Receita Líquida\" 499.199 cierra; además se suman 1 línea(s) fuera de ese total (28.09)"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.0020000000000983675
+   "dif": 0.002000000000041524
   },
   {
    "nombre": "lectura",
    "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
   },
   {
    "nombre": "año anterior cargado",
@@ -42,17 +42,13 @@
   }
  ],
  "notas": [
-  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
-  "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de localizar que no afecta la carga: b32 y b34 corresponden a 2024; el ejercicio pedido se cubre con b31 y b33.",
-  "duda de localizar que no afecta la carga: Es detalle por jugador; el renglón ya está en b35.",
-  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Despesas gerais e administrativas\"): ¿Se carga solo la columna 'Administrativo' del cuadro por natureza (L1380-L1405) como desglose de 'Despesas gerais e administrativas'?",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro de clasificación en la DRE (L1460-L1468) por repetir los importes del estado?",
-  "duda de extraer que no afecta la carga: El encabezado L1380 solo muestra 2025 aunque el texto L1378 menciona el bienio.",
-  "duda de extraer que no afecta la carga: Diferencia de 1 unidad entre estado y nota."
+  "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"-\"): ¿Se deja afuera de la carga el cuadro por naturaleza b31 (L1380-L1405), cuya columna Total suma costos más administrativas sin corresponder a un único renglón del estado?",
+  "duda de extraer que no afecta la carga: El reintento pide Televisión pero b30 L1350-L1359 no tiene ninguna fila con ese nombre.",
+  "duda de extraer que no afecta la carga: Diferencia de 1 unidad entre nota y estado."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 527.289,
@@ -170,116 +166,12 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Salários e ordenados",
+   "etiqueta": "Despesas gerais e administrativas",
    "lado": "gasto",
-   "M": 17.601,
-   "pagina": 39,
-   "linea": 1383,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Outros gastos com pessoal",
-   "lado": "gasto",
-   "M": 5.657,
-   "pagina": 39,
-   "linea": 1387,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Depreciações",
-   "lado": "gasto",
-   "M": 3.72,
-   "pagina": 39,
-   "linea": 1388,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Serviços de terceiros",
-   "lado": "gasto",
-   "M": 6.774,
-   "pagina": 39,
-   "linea": 1389,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Despesas de viagem",
-   "lado": "gasto",
-   "M": 1.529,
-   "pagina": 39,
-   "linea": 1390,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Manutenções e infraestrutura",
-   "lado": "gasto",
-   "M": 0.405,
-   "pagina": 39,
-   "linea": 1391,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Encargos trabalhistas e previdenciários",
-   "lado": "gasto",
-   "M": 1.972,
-   "pagina": 39,
-   "linea": 1392,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Impostos e taxas diversas",
-   "lado": "gasto",
-   "M": 0.154,
-   "pagina": 39,
-   "linea": 1395,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Outras despesas administrativas",
-   "lado": "gasto",
-   "M": 7.829,
-   "pagina": 39,
-   "linea": 1396,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Aluguéis",
-   "lado": "gasto",
-   "M": 0.301,
-   "pagina": 39,
-   "linea": 1397,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Despesas de Marketing",
-   "lado": "gasto",
-   "M": 3.508,
-   "pagina": 39,
-   "linea": 1399,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Amortizações contratos de leasing",
-   "lado": "gasto",
-   "M": 0.281,
-   "pagina": 39,
-   "linea": 1402,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Amortizações softwares",
-   "lado": "gasto",
-   "M": 0.023,
-   "pagina": 39,
-   "linea": 1403,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
-  },
-  {
-   "etiqueta": "Despesas bancárias",
-   "lado": "gasto",
-   "M": 0.211,
-   "pagina": 39,
-   "linea": 1404,
-   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+   "M": 49.965,
+   "pagina": 6,
+   "linea": 165,
+   "origen": "estado"
   }
  ],
  "signosCarga": {

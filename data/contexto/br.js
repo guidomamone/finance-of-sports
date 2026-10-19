@@ -198,6 +198,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'rbbragantino-br': {
     2019: {"estadio":"Nabi Abi Chedid","capacidad":17128,"sponsor":"Red Bull","marca":"Nike","temporada":"2019 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378401314"},
     2024: {"estadio":"Nabi Abi Chedid","capacidad":17022,"sponsor":"Red Bull","marca":"In-house","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
+    2025: {"estadio":"Cícero de Souza Marques","capacidad":12000,"sponsor":"Red Bull","marca":"Puma","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
   'remo-br': {
     2019: {"estadio":"Mangueirão","capacidad":45007,"sponsor":"VeganNation","marca":"Topper","temporada":"2019 Campeonato Brasileiro Série C","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353245145","fuenteLocal":"https://pt.wikipedia.org/w/index.php?oldid=71358754","local":["estadio","capacidad"],"fuenteManual":"https://en.wikipedia.org/wiki/2019_Clube_do_Remo_season","manual":["sponsor"]},

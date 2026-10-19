@@ -15,7 +15,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'atleticomineiro-br': { 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
   'athleticoparanaense-br': { 2024: 'br-serieA', 2025: 'br-serieB' },
   'vitoria-br': { 2025: 'br-serieA' },
-  'rbbragantino-br': { 2019: 'br-serieB', 2024: 'br-serieA' },
+  'rbbragantino-br': { 2019: 'br-serieB', 2024: 'br-serieA', 2025: 'br-serieA' },
   'corinthians-br': { 2024: 'br-serieA', 2025: 'br-serieA' },
   'palmeiras-br': { 2024: 'br-serieA', 2025: 'br-serieA' },
   'saopaulo-br': { 2023: 'br-serieA', 2024: 'br-serieA' },

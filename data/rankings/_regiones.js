@@ -10,7 +10,7 @@ window.RANKINGS_INDICE = {
   "br-paulistaA1": [2017,2,16],
   "br-paulistaA2": [2015,2,20],
   "br-paulistaA3": [2014,1,20],
-  "br-serieA": [2025,15,20],
+  "br-serieA": [2025,16,20],
   "br-serieB": [2025,17,20],
   "br-serieC": [2024,3,20],
   "br-serieD": [2018,2,68],
@@ -50,7 +50,7 @@ window.RANKINGS_INDICE = {
   "ru-premierliga": [2025,16,16],
 };
 window.RANKINGS_REGION = {
-  mundo: { year:2025, total:249, clubs:[
+  mundo: { year:2025, total:250, clubs:[
     { id:"realmadrid", league:"es-laliga", revenue:1388.522 },
     { id:"fcbarcelona", league:"es-laliga", revenue:1167.798 },
     { id:"bayernmunich-de", league:"de-bundesliga", revenue:1085.912 },
@@ -62,7 +62,7 @@ window.RANKINGS_REGION = {
     { id:"inter-it", league:"it-seriea", revenue:664.571 },
     { id:"dortmund-de", league:"de-bundesliga", revenue:627.63 },
   ] },
-  america: { year:2025, total:55, clubs:[
+  america: { year:2025, total:56, clubs:[
     { id:"flamengo-br", league:"br-serieA", revenue:347.575 },
     { id:"palmeiras-br", league:"br-serieA", revenue:295.959 },
     { id:"botafogo", league:"br-serieA", revenue:247.129 },

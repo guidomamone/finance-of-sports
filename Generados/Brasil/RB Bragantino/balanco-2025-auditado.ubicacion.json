@@ -3,8 +3,9 @@
  "md": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md",
  "mdSha1": "b9301c3db071a1af5010694d29352a2507727110",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:37:49.663Z",
+ "generado": "2026-10-19T17:36:17.637Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 5,
@@ -322,7 +323,9 @@
  ],
  "notas_gastos": [
   "b31",
-  "b33"
+  "b33",
+  "b35",
+  "b38"
  ],
  "escala": "miles",
  "escala_evidencia": "(Valores expressos em milhares de Reais, exceto quando indicado de outra forma)",
@@ -333,29 +336,17 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de custos e despesas por natureza 2024 (b32) y la clasificación DRE 2024 (b34), por ser del año anterior?",
-   "propuesta": "sí",
-   "tema": "cuadro-de-otro-anio",
-   "renglon": "",
-   "texto": "b32 y b34 corresponden a 2024; el ejercicio pedido se cubre con b31 y b33.",
-   "bloques": [
-    "b32",
-    "b34"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se deja afuera el detalle por jugador de vendas de atletas 2025 (b36), ya que el total figura en la nota 21 (b35)?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro de 'Direitos de transmissão' de la pág. 37 (b29), por ser un saldo de pasivo (receitas a apropriar de la Liga) y no un ingreso del ejercicio?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Receita com a venda e empréstimos de Atletas (intangível)",
-   "texto": "Es detalle por jugador; el renglón ya está en b35.",
+   "renglon": "Direitos de transmissão",
+   "texto": "El cuadro está en la zona de notas de pasivo (tras empréstimos, nota 16-17) y su total coincide con los saldos de la fila, no con la nota de receita (nota 19); los ingresos de TV estarían en 'Campeonato Brasileiro'/'Campeonato Paulista' de b30.",
    "bloques": [
-    "b36",
-    "b35"
+    "b29",
+    "b30"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estados individuales de Red Bull Bragantino Ltda (no se ve consolidado). DRE en b2; columna 2024 reclasificada. Notas: b30 receita líquida, b31/b33 costos por naturaleza y su asignación a renglones DRE 2025, b35 otras receitas/despesas, b38 resultado financiero. Excluidos b14, b36, b37 (por jugador), b16 (conciliación IR)."
+ "observaciones": "Estado de resultados individual de Red Bull Bragantino (b2). Ingresos de TV/competiciones se abren en la nota 19 (b30: Campeonato Brasileiro, Campeonato Paulista, patrocinio). Gastos por naturaleza 2025 en b31 y su clasificación en la DRE en b33; b32/b34 son los equivalentes 2024. b35 otras receitas/despesas (venta de atletas), b38 resultado financiero. Se excluyen detalles por jugador (b14, b36, b37) y b29 (saldo de pasivo)."
 }
