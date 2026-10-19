@@ -3,7 +3,7 @@ window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   atleticogoianiense: { 2025: 'br-serieB' },
   botafogo: { 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
-  coritiba: { 2023: 'br-serieA', 2024: 'br-serieB' },
+  coritiba: { 2023: 'br-serieA', 2024: 'br-serieB', 2025: 'br-serieB' },
   cruzeiro: { 2022: 'br-serieB', 2023: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieA' },
   gremio: { 2024: 'br-serieA' },
   ituano: { 2024: 'br-serieB' },

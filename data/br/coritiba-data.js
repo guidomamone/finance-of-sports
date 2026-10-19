@@ -24,6 +24,18 @@ const coritibaRevenueLinesByYear = {
     { rawLabel:'(-) Tributos sobre receitas', normalizedCategory:'other_income', amountNative:-3.501142, disclosureLevel:'detailed' },
     { rawLabel:'(-) Taxas federativas/direito de arena', normalizedCategory:'other_income', amountNative:-1.241584, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Direitos de Transmissão de TV', normalizedCategory:'broadcasting', amountNative:13.543227, disclosureLevel:'aggregated' },
+    { rawLabel:'Mensalidades de Associados', normalizedCategory:'member_dues', amountNative:26.236358, disclosureLevel:'aggregated' },
+    { rawLabel:'Transações de Atletas', normalizedCategory:'player_sales', amountNative:41.408085, disclosureLevel:'aggregated' },
+    { rawLabel:'Competições/Bilheteria', normalizedCategory:'matchday_competition', amountNative:9.155964, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios/Subvenção', normalizedCategory:'sponsorship_commercial', amountNative:19.173611, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrimoniais', normalizedCategory:'member_dues', amountNative:7.05131, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas com Vendas de Mercadorias', normalizedCategory:'sponsorship_commercial', amountNative:12.53858, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras Receitas', normalizedCategory:'other_income', amountNative:9.818733, disclosureLevel:'aggregated' },
+    { rawLabel:'Tributos Sobre Receitas', normalizedCategory:'other_income', amountNative:-5.044851, disclosureLevel:'aggregated' },
+    { rawLabel:'Taxas Federativas/Direito de Arena', normalizedCategory:'other_income', amountNative:-0.998493, disclosureLevel:'aggregated' },
+  ],
 };
 
 const coritibaExpenseLinesByYear = {
@@ -80,6 +92,25 @@ const coritibaExpenseLinesByYear = {
     { rawLabel:'Impostos e taxas (futebol)', normalizedCategory:'admin_general_expense', amountNative:-0.119313, disclosureLevel:'detailed' },
     { rawLabel:'Impostos e taxas (administrativo)', normalizedCategory:'admin_general_expense', amountNative:-0.071025, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Futebol', normalizedCategory:'lump_football_operations_expense', amountNative:-89.80156, disclosureLevel:'aggregated' },
+    { rawLabel:'Futebol das Categorias de Base', normalizedCategory:'youth_other_sports_expense', amountNative:-17.42354, disclosureLevel:'aggregated' },
+    { rawLabel:'Custos das Mercadorias Vendidas', normalizedCategory:'admin_general_expense', amountNative:-5.102791, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortização de Direitos Econômicos de Atletas', normalizedCategory:'player_amortisation', amountNative:-18.545239, disclosureLevel:'aggregated' },
+    { rawLabel:'Formação de Atletas', normalizedCategory:'youth_other_sports_expense', amountNative:-0.236121, disclosureLevel:'aggregated' },
+    { rawLabel:'Pessoal, Benefícios e Encargos Sociais', normalizedCategory:'admin_general_expense', amountNative:-33.964204, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação de Bens Patrimoniais', normalizedCategory:'admin_general_expense', amountNative:-5.027648, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e Honorários / Encargos Legais', normalizedCategory:'admin_general_expense', amountNative:-3.023747, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços de Terceiros', normalizedCategory:'admin_general_expense', amountNative:-12.925223, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia Elétrica, Gás, Água e Telefonia', normalizedCategory:'admin_general_expense', amountNative:-1.549198, disclosureLevel:'aggregated' },
+    { rawLabel:'Propaganda, Publicidade e Eventos', normalizedCategory:'admin_general_expense', amountNative:-0.09652, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais de Almoxarifado', normalizedCategory:'admin_general_expense', amountNative:-1.996713, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos e Taxas', normalizedCategory:'admin_general_expense', amountNative:-0.118022, disclosureLevel:'aggregated' },
+    { rawLabel:'Tecnologia da Informação', normalizedCategory:'admin_general_expense', amountNative:-9.285786, disclosureLevel:'aggregated' },
+    { rawLabel:'Locações de Equipamentos e Imóveis', normalizedCategory:'admin_general_expense', amountNative:-1.662051, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras Despesas Administrativas', normalizedCategory:'admin_general_expense', amountNative:-11.601262, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras (Despesas) Receitas Operacionais e Não Operacionais', normalizedCategory:'other_expenses', amountNative:-22.887789, disclosureLevel:'aggregated' },
+  ],
 };
 
 const coritibaFiscalYearMeta = {
@@ -102,6 +133,20 @@ const coritibaFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-4.515749, tax:0,
     officialTotalRevenue:87.002707, officialTotalExpenses:221.889584, officialPAT:-139.402626,
+  },
+  2025: {
+    incluidoEn:{ wages_squad:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    currency:'BRL', fxRef:'BRL@2025-12-31',
+    sourceId:'coritiba-wf-2024-2025-ef0cf145',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-11.608388, tax:0,
+    sinDesglose: [
+      {renglon:'Futebol', lado:'expense', importe:89.80156, motivo:'Claude 2026-10-19 (subagente Sonnet, media): La nota 21 abre por naturaleza (pessoal 59,4M, direito de imagem 27,5M, jogos 6,6M...) solo el total combinado profesional+base; no dice cuanto de cada naturaleza es de profesional. Repartirlo seria inventar. Por eso el bolsón lump_football_operations_expense es la salida fiel para esta fila y la base (17,4M) queda aparte. Atencion: es una decision de estructura; si Guido prefi [Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md L226 (DRE: \'Futebol (89.801.560)]'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:132.882524, officialTotalExpenses:235.247414, officialPAT:-113.973278,
   },
 };
 
@@ -132,6 +177,11 @@ Object.assign(sources, {
       type:'official_balance_sheet', reliability:'primary',
       url:'https://coritiba.com.br/',
     },
+  'coritiba-wf-2024-2025-ef0cf145': {
+    id:'coritiba-wf-2024-2025-ef0cf145', clubId:'coritiba',
+    title:'Coritiba Sociedade Anônima do Futebol - SAF — wf-2024-2025-ef0cf145 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
 });
 
 gestionesByClub.coritiba = {

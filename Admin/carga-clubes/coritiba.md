@@ -241,6 +241,67 @@ _de data/club-leagues/br.js:_
 descendido de la Série A 2023
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Coritiba/wf-2024-2025-ef0cf145.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Direitos de Transmissão de TV | pág. 6, precedente |
+| 2 | Mensalidades de Associados | pág. 6, precedente |
+| 3 | Transações de Atletas | pág. 6, precedente |
+| 4 | Competições/Bilheteria | pág. 6, precedente |
+| 5 | Patrocínios/Subvenção | pág. 6, precedente |
+| 6 | Patrimoniais | pág. 6, precedente |
+| 7 | Receitas com Vendas de Mercadorias | pág. 6, precedente |
+| 8 | Outras Receitas | pág. 6, precedente |
+| 9 | Tributos Sobre Receitas | pág. 6, Jev 0.98 |
+| 10 | Taxas Federativas/Direito de Arena | pág. 6, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Futebol | pág. 6, precedente |
+| 2 | Futebol das Categorias de Base | pág. 6, Jev 0.99 |
+| 3 | Custos das Mercadorias Vendidas | pág. 6, precedente |
+| 4 | Amortização de Direitos Econômicos de Atletas | pág. 6, precedente |
+| 5 | Formação de Atletas | pág. 6, precedente |
+| 6 | Pessoal, Benefícios e Encargos Sociais | pág. 33, Claude 0.88 |
+| 7 | Conservação de Bens Patrimoniais | pág. 33, precedente |
+| 8 | Multas e Honorários / Encargos Legais | pág. 33, precedente |
+| 9 | Serviços de Terceiros | pág. 33, Jev 0.99 |
+| 10 | Energia Elétrica, Gás, Água e Telefonia | pág. 33, precedente |
+| 11 | Propaganda, Publicidade e Eventos | pág. 33, precedente |
+| 12 | Materiais de Almoxarifado | pág. 33, precedente |
+| 13 | Impostos e Taxas | pág. 33, precedente |
+| 14 | Tecnologia da Informação | pág. 33, precedente |
+| 15 | Locações de Equipamentos e Imóveis | pág. 33, precedente |
+| 16 | Outras Despesas Administrativas | pág. 33, precedente |
+| 17 | Outras (Despesas) Receitas Operacionais e Não Operacionais | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): br-serieB, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.json), coincidencia exacta "Coritiba".
+```
+
 ## 2024
 
 ### Meta
@@ -304,6 +365,14 @@ _note (data/):_
 
 ```text
 PDF oficial (36 páginas, texto nativo, firmado por Docusign) con Balanços patrimoniais, DRE, mutações do PL, fluxos de caixa y Notas Explicativas 1-28. Coritiba ES SAF desde julio de 2023. Ejercicio 2024 con PREJUÍZO de R$ 139.402.626 sobre una receita líquida de R$ 87.002.707, y patrimônio líquido NEGATIVO de R$ (29.915.096) al cierre. Los costos del fútbol se cargaron desde el desglose POR NATUREZA de la Nota 22 (9 líneas con categoría real) y no desde las 2 líneas por destino de la DRE, que son un bolsón sin categoría. OJO: la Nota 22 suma R$ 999 más que esas 2 líneas de la DRE para el mismo concepto, una inconsistencia real del documento, documentada en data/br/coritiba-data.js y en la transcripción. grossDebt = las 2 líneas de Empréstimos e financiamentos (Nota 13). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Coritiba/demonstracoes-financeiras-2024.md.
+```
+
+### coritiba-wf-2024-2025-ef0cf145
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

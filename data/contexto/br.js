@@ -59,6 +59,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'coritiba': {
     2023: {"estadio":"Couto Pereira","capacidad":40502,"sponsor":"Neodent","marca":"Sou 1909 (club manufactured kit)","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
     2024: {"estadio":"Couto Pereira","capacidad":40502,"sponsor":"Reals","marca":"Diadora","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
+    2025: {"estadio":"Couto Pereira","capacidad":40502,"sponsor":"Reals","marca":"Diadora","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
   'crb-br': {
     2020: {"estadio":"Rei Pelé","capacidad":17126,"sponsor":"Estadium.bet","marca":"Regatas (Club manufactured kit)","temporada":"2020 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1283248039"},
