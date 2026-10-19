@@ -419,5 +419,9 @@
   4. El texto del 50 % en pantalla sigue siendo cierto en total (50 % mediano, 24 % de los clubes a ±25 %), pero oculta que por país va de
      33 % (Italia, Chile, Bélgica) a 97 % (Países Bajos). Una frase "entre un tercio y el doble, según la liga" diría la verdad; no se cambió.
   5. La variable "partidos contra clubes con finanzas" no vale el esfuerzo (corregir por k: 51 % contra 50 %).
+  7. Mejora de script (no implementada): que `node tools/estimar.mjs --medir` tenga una opción `--detalle` con el error por liga, por país
+     y por división, el sesgo con signo por país y la dispersión de cada liga-año. Hoy `--medir` imprime solo los totales y `validar()`
+     guarda los errores pero no los devuelve por fila, así que esta medición se hizo con una copia de la tool. Haría falta que `validar()`
+     conserve (id, liga, país, división, año, error, error de la base) por fila y que `--medir` los agrupe.
   6. Volver a medir cuando Estonia llegue a otras ligas o cuando entren más clubes de Noruega, Suiza y Países Bajos (hoy un club-año por
      club): con 8 club-años por país el cuadro de arriba se completa.
