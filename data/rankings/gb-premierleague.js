@@ -110,6 +110,9 @@ window.RANKINGS["gb-premierleague"] = {
     leagueSize: 20,
     wiki: {"t":"2022–23 Premier League","lang":"en","at":"2026-09-30","n":20},
     clubs: [
+      { id:"mancity-gb", revenue:1067.904, reportType:"official_balance_sheet",
+        sourceId:"mancity-gb-full-accounts-2022-23",
+        mix:[["Comercial / Sponsors",434.112],["Estadio",91.431],["Televisión",380.67],["Venta de Jugadores",154.755],["Otros ingresos",6.937]] },
       { id:"chelsea-gb", revenue:867.677, reportType:"official_balance_sheet",
         sourceId:"chelsea-gb-fc-holdings-group-accounts-2022-23",
         mix:[["Comercial / Sponsors",267.101],["Estadio",97.238],["Televisión",287.212],["Venta de Jugadores",79.921],["Otros ingresos",136.205]] },
