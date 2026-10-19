@@ -197,9 +197,9 @@
 //     `audit.js` da P1 `asset-v-sin-subir` apenas cambia algo de `data/` (lo encontró la
 //     primera prueba de `--escribir`, que se revirtió sola por eso). Subirlo regenera las
 //     ~165 páginas `fuentes/<clubId>.html`, que leen la constante: es esperado.
-//   - Corre `generate-club-index.js`, `generate-fuentes-page.js`,
-//     `generate-rankings.js` y `generate-como-corre-stats.js`, y después
-//     `node tools/audit.js --quiet`. Si sale con P0/P1, RESTAURA cada archivo que
+//   - Corre los generadores de `tools/generadores.mjs` (los mismos que cargar.mjs, con
+//     faltantes-liga y estimar: to-do 298 x), y después
+//     `node tools/audit.js --quiet`. Si sale con P0/P1 (el aviso dice cuál), RESTAURA cada archivo que
 //     cambió y borra cada archivo que creó (snapshot previo de `data/`, las páginas
 //     de fuentes, el sitemap y los dos documentos generados de `Admin/`).
 // NO escribe: `sources{}` del club (un documento en `fuentes.html` sin ningún dato
@@ -259,6 +259,7 @@ import { agregarCaso, casoYRespuesta } from './cola.mjs';
 import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
 import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
+import { GENERADORES, queFalla } from './generadores.mjs';
 export { resumenAltas };
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -1510,7 +1511,8 @@ ${filaLiga}});
     }
 
     // 8. Generadores + auditoría
-    const gens = ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-como-corre-stats.js', 'tools/generate-sponsors.js'].filter((g) => existsSync(resolve(ROOT, g)));
+    // (to-do 298 x) la misma lista que cargar.mjs (tools/generadores.mjs): sin faltantes-liga y estimar, toda alta se revertía por 2 P1
+    const gens = GENERADORES.filter((g) => existsSync(resolve(ROOT, g)));
     const salidaGen = [];
     for (const g of gens) {
       const res = runNode(g, []);
@@ -1521,7 +1523,8 @@ ${filaLiga}});
     const linea0 = (audit.out.match(/P0 \d+ · P1 \d+[^\n]*/) || [''])[0];
     if (audit.code !== 0) {
       const rv = revertir(snap, evExtra);
-      return { ok: false, motivo: `node tools/audit.js dio P0/P1 (${linea0}); se revirtió todo (${rv.restaurados} archivos restaurados, ${rv.borrados} borrados)`, audit: audit.out.slice(-3000), escritos };
+      const falla = queFalla(audit.out);
+      return { ok: false, motivo: `node tools/audit.js dio P0/P1 (${linea0}${falla.length ? `: ${falla.join(', ')}` : ''}); se revirtió todo (${rv.restaurados} archivos restaurados, ${rv.borrados} borrados)`, audit: audit.out.slice(-3000), escritos };
     }
     return { ok: true, escritos, generadores: salidaGen, audit: linea0 };
   } catch (e) {

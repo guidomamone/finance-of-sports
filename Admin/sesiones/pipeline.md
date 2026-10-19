@@ -75,3 +75,13 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   (L33): con ese cierre, la carga le daría la temporada 2023-24. Es el mismo defecto de la f (fechas del cierre en celdas).
 
 ## Después del merge de la 298 u (2026-10-18)
+
+### 298 x (pedido de la principal, hallado por Onboarding 2)
+
+- **Qué cambió (para CHANGELOG):** `tools/generadores.mjs` (nuevo) tiene la lista de generadores que se corren antes de la auditoría al
+  escribir en el sitio; la usan `tools/cargar.mjs` (sin cambios en la lista) y `tools/alta-club.mjs`, que no corría
+  `faltantes-liga.mjs` ni `estimar.mjs`: toda alta nueva dejaba desfasados data/faltantes y data/estimados, la auditoría daba 2 P1 y el
+  alta se revertía (FC Volendam, lote 93). `queFalla()`: el aviso "dio P0/P1" de los dos dice ahora qué chequeo falló
+  ("faltantes-desfasado, asset-v-sin-subir"). Medido: alta de FC Volendam 2024-25 escrita en la rama con P0 0 / P1 0 y después deshecha;
+  `queFalla` probado con un faltantes desfasado a propósito. Commit ed60e8d2b5.
+- **Para fos-onboarding:** las altas que se revertían por "P1 2" ya entran; reintentar las del lote 93 y las 11 del borrador de Finanzas.
