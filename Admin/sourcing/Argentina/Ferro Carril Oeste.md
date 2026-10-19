@@ -107,3 +107,5 @@ anterior:
 **Resultado: nada nuevo.** El Ejercicio 120 sigue confirmado como puramente narrativo (sin balance
 en PDF en ningún post del sitio). La cobertura 117-119 + 121-122 (todo 2020-21 a 2025-26 salvo el
 120) es la que hay disponible hoy. Último chequeo: 2026-09-26.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.pdf` (sourceId `ferrocarriloeste-ar-balance-ejercicio-121-2024-25`).

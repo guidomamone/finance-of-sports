@@ -1,0 +1,1547 @@
+{
+ "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-nekonsolidirano.md",
+ "generatedAt": "2026-10-19T17:17:38.950Z",
+ "rubrosHuella": "7921297ffa90f2819d7238c321accfb1e731dd6a",
+ "rubros": [
+  {
+   "label": "Prihodi od pružanja usluga",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "stadium_other",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Prihodi od prodaje roba",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.93
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Prihodi od nefinancijske imovine (AOP 022+023)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "player_sales",
+     0.32
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1100
+  },
+  {
+   "label": "Prihodi od članarina i članskih doprinosa (AOP 006+007)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Članarine",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Prihodi po posebnim propisima (AOP 009+010)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.82
+    ],
+    [
+     "competition_bonus",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "PRIHODI (AOP 002+005+008+011+024+040+049)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.67
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Prihodi od imovine (AOP 012+021)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Prihodi od zakupa i iznajmljivanja imovine",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.69
+    ],
+    [
+     "stadium_other",
+     0.31
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Prihodi od donacija iz proračuna jedinica lokalne i područne (regionalne) samouprave",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "education",
+     0.01
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Prihodi od inozemnih vlada i međunarodnih organizacija",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "competition_bonus",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Prihodi od trgovačkih društava i ostalih pravnih osoba",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "sponsorship_commercial",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Otpis obveza",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Naplaćena otpisana potraživanja",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od trgovačkih društava i ostalih pravnih osoba (AOP 034+035)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "sponsorship_commercial",
+     0.4
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Prihodi od inozemnih vlada i međunarodnih organizacija (AOP 031+032)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Ostali prihodi od donacija (AOP 038+039)",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Prihodi od donacija iz proračuna (AOP 026 do 029)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "education",
+     0.01
+    ]
+   ],
+   "tokens": 1110
+  },
+  {
+   "label": "Prihodi od naknade šteta",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Prihod od refundacija",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Ostali nespomenuti prihodi",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Plaće za redovan rad",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "wages_squad",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Službena putovanja",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Plaće u naravi",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "wages_squad",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 925
+  },
+  {
+   "label": "Prihodi od prodaje dugotrajne imovine",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Prihodi od povezanih neprofitnih organizacija (AOP 050 do 053)",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "education",
+     0.02
+    ],
+    [
+     "member_dues",
+     0.01
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "RASHODI (AOP 055+067+108+109+120+128+139)",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "lump_football_operations_expense",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Stručno usavršavanje radnika",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "education_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Posebni doprinos za poticanje zapošljavanja osoba s invaliditetom",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "wages_squad",
+     0.16
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Doprinosi za zdravstveno osiguranje",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "wages_squad",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Ostali rashodi za radnike",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "wages_squad",
+     0.15
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Komunalne usluge",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Naknade troškova službenih putovanja",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Naknade za prijevoz, za rad na terenu i odvojeni život",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.42
+    ],
+    [
+     "wages_squad",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.23
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Naknade volonterima (AOP 078 do 081)",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Naknade ostalim osobama izvan radnog odnosa (AOP 083 do 086)",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "wages_squad",
+     0.06
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Usluge promidžbe i informiranja",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Usluge telefona, pošte i prijevoza",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "match_organisation_expense",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Zakupnine i najamnine",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1142
+  },
+  {
+   "label": "Usluge tekućeg i investicijskog održavanja",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1124
+  },
+  {
+   "label": "Zdravstvene i veterinarske usluge",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Nekapitalizirani rashodi za naknade posrednicima",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Intelektualne i osobne usluge\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Rashodi primanja igrača 1. momčadi",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Intelektualne i osobne usluge\"",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Rashodi naknada trenerima 1. momčadi",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Intelektualne i osobne usluge\"",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Energija",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostale intelektualne i osobne usluge",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Intelektualne i osobne usluge\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Rashodi naknada trenerima nogometne škole",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Intelektualne i osobne usluge\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.75
+    ],
+    [
+     "education_expense",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Ostale usluge",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Rashodi stručne poslovne suradnje",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Intelektualne i osobne usluge\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Računalne usluge",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Uredski materijal i ostali materijalni rashodi",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Sitan inventar i auto gume",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Materijal i sirovine",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Reprezentacija",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Premije osiguranja",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "wages_squad",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Kotizacije",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Ostali nespomenuti materijalni rashodi",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Amortizacija ostale dugotrajne imovine",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Rashodi amortizacije\"",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1124
+  },
+  {
+   "label": "Amortizacija registracija igrača",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Rashodi amortizacije\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Stipendije",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 857
+  },
+  {
+   "label": "Tekuće donacije",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Neotpisana vrijednost i drugi rashodi otuđene i rashodovane dugotrajne imovine",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "exceptional_items",
+     0.24
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1120
+  },
+  {
+   "label": "Ugovorene kazne i ostale naknade šteta",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Kapitalne donacije (AOP 126+127)",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Naknade šteta pravnim i fizičkim osobama",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Rashodi za ostala porezna davanja",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Otpisana potraživanja",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Ostali nespomenuti rashodi",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Rashodi vezani uz financiranje povezanih neprofitnih organizacija (AOP 140 do 143)",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "youth_other_sports_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "UKUPNI RASHODI (AOP 054-146 ili 054+147)",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1048
+  }
+ ]
+}

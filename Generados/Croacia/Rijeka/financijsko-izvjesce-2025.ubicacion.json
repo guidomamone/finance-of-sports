@@ -1,0 +1,306 @@
+{
+ "pdf": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf",
+ "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.md",
+ "mdSha1": "a59f11059aa7e33a128e3df8e88fe4bb74ea4903",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:38:45.893Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    15,
+    19
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    79,
+    83
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    89,
+    94
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    235,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    287,
+    305
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    319,
+    347
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    361,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    445,
+    449
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    615,
+    639
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    651,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    675,
+    682
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    696,
+    705
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    709,
+    712
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    716,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    733,
+    737
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    743,
+    746
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    760,
+    771
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    785,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    795,
+    800
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    804,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    811,
+    815
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    829,
+    838
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    842,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    860,
+    878
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 26,
+   "lineas": [
+    882,
+    887
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 27,
+   "lineas": [
+    901,
+    905
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 27,
+   "lineas": [
+    909,
+    917
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 27,
+   "lineas": [
+    921,
+    924
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 27,
+   "lineas": [
+    928,
+    931
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 28,
+   "lineas": [
+    943,
+    948
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 28,
+   "lineas": [
+    952,
+    956
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 28,
+   "lineas": [
+    960,
+    967
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b22",
+  "b23",
+  "b30"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25",
+  "b26",
+  "b27",
+  "b29"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del Račun dobiti i gubitka: '2025. 000'EUR | 2024. 000'EUR'",
+ "moneda": "EUR",
+ "columna_ejercicio": "2025. 000'EUR",
+ "columna_anterior": "2024. 000'EUR",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Falta en la transcripción la nota 23 y la nota 26 (financijski rashodi) que desglosarían renglones del estado b5?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice salta de b27 (nota 22) a b29 (nota 24) y de b30 (nota 25) a b32 (nota 27); faltan b28 y b31.",
+   "bloques": [
+    "b27",
+    "b29",
+    "b30",
+    "b32"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual de HNK Rijeka s.d.d. (b5, pág. 10). Notas de ingresos: 17 Prihodi od prodaje (b22), 18 Ostali poslovni prihodi (b23), 25 Financijski prihodi (b30). Notas de gastos: 19 Materijalni troškovi (b24), 20 Troškovi osoblja (b25), 21 Amortizacija (b26), 22 Ostali troškovi (b27), 24 Ostali poslovni rashodi (b29). Excluidos balance, flujo, patrimonio, activos, pasivos y conciliación de impuesto (b32)."
+}

@@ -30,3 +30,5 @@
 - **CARGADO al sitio (2026-09-25)**: ejercicio 2024, `data/hr/hajduksplit-hr-data.js` (clubId
   `hajduksplit-hr`). Tie-out exacto.
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.pdf` (sourceId `hajduksplit-hr-financijsko-izvjesce-2025`).

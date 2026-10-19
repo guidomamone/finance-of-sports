@@ -1,0 +1,1233 @@
+{
+ "pdf": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md",
+ "mdSha1": "133ebd7f1dfcb8e64c16820188b86d89e34b9eef",
+ "ubicacionSha1": "c14128ef395b0cbedf06cd3654cce46ce89f5957",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:15:13.012Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [
+   "b23",
+   "b27",
+   "b29"
+  ],
+  "notas_gastos": [
+   "b24",
+   "b25",
+   "b26",
+   "b30",
+   "b31",
+   "b32"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "unidades",
+   "evidencia": "L115: (Cifras en pesos Colombianos)"
+  },
+  {
+   "bloque": "b23",
+   "escala": "unidades",
+   "evidencia": "No se indica; importes con centavos coinciden con el estado en pesos (L769)"
+  },
+  {
+   "bloque": "b27",
+   "escala": "unidades",
+   "evidencia": "No se indica; total L838 coincide con estado en pesos"
+  },
+  {
+   "bloque": "b29",
+   "escala": "unidades",
+   "evidencia": "Continuación nota 18, en pesos"
+  },
+  {
+   "bloque": "b24",
+   "escala": "unidades",
+   "evidencia": "No se indica; total L791 coincide con estado en pesos"
+  },
+  {
+   "bloque": "b25",
+   "escala": "unidades",
+   "evidencia": "Continuación nota 17"
+  },
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "Continuación nota 17"
+  },
+  {
+   "bloque": "b30",
+   "escala": "unidades",
+   "evidencia": "No se indica; total L886 coincide con estado en pesos"
+  },
+  {
+   "bloque": "b31",
+   "escala": "unidades",
+   "evidencia": "Continuación nota 19"
+  },
+  {
+   "bloque": "b32",
+   "escala": "unidades",
+   "evidencia": "No se indica; total L993 coincide con estado en pesos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 119,
+   "etiqueta": "INGRESOS OPERACIONALES",
+   "actual": "8.636.944.999,00",
+   "anterior": "8.127.567.123,00",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 120,
+   "etiqueta": "Ingresos Operacionales-Actividades Deportivas",
+   "actual": "8.636.944.999,00",
+   "anterior": "8.127.567.123,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 121,
+   "etiqueta": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS",
+   "actual": "5.928.642.870,00",
+   "anterior": "4.303.480.269,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 122,
+   "etiqueta": "Ganancia bruta",
+   "actual": "2.708.302.129,00",
+   "anterior": "3.824.086.854,00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 123,
+   "etiqueta": "Gastos de administración",
+   "actual": "2.202.577.499,00",
+   "anterior": "2.603.474.912,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 124,
+   "etiqueta": "Utilidad Operacional (EBIT)",
+   "actual": "505.724.630,00",
+   "anterior": "1.220.611.942,00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 125,
+   "etiqueta": "Otros ingresos no operacionales",
+   "actual": "668.908.884,00",
+   "anterior": "143.886.002,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 126,
+   "etiqueta": "Gastos de ventas",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 127,
+   "etiqueta": "Otros gastos no operacionales",
+   "actual": "587.304.513,00",
+   "anterior": "275.159.340,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 128,
+   "etiqueta": "Ganancia antes de impuestos",
+   "actual": "587.329.001,00",
+   "anterior": "1.089.338.604,00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 129,
+   "etiqueta": "Gasto por impuesto a las ganancias",
+   "actual": "205.565.150,00",
+   "anterior": "381.268.511,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 130,
+   "etiqueta": "Ganancia del año",
+   "actual": "381.763.851,00",
+   "anterior": "708.070.093,00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 769,
+   "etiqueta": "INGRESOS OPERACIONALES",
+   "actual": "8.636.944.999,00",
+   "anterior": "8.127.567.123,00",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 770,
+   "etiqueta": "Taquilla Venta Boletería Masculina",
+   "actual": "245.000.000,00",
+   "anterior": "460.308.700,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 771,
+   "etiqueta": "Ingresos por Derechos de Televisión",
+   "actual": "6.687.645.665,00",
+   "anterior": "6.463.513.089,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 772,
+   "etiqueta": "Ingresos por auxilio Hotelero - Dimayor",
+   "actual": "522.512.521,00",
+   "anterior": "416.434.550,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 773,
+   "etiqueta": "Ingresos por auxilio de Transportes - Dimayor",
+   "actual": "102.237.270,00",
+   "anterior": "85.470.260,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 774,
+   "etiqueta": "Ingresos por auxilio de Arbitraje - Dimayor",
+   "actual": "288.507.004,00",
+   "anterior": "255.763.849,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 775,
+   "etiqueta": "Ventas por Auxilio de Logística - Dimayor",
+   "actual": "168.630.000,00",
+   "anterior": "152.900.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 776,
+   "etiqueta": "Ingresos por Auxilio de Mejoramientos - Dimayor",
+   "actual": "144.000.000,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 777,
+   "etiqueta": "Ingresos por Auxilios - Federación Colombiana de Futbol",
+   "actual": "90.000.000,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 778,
+   "etiqueta": "Ingresos por Patrocinios recibidos de terceros",
+   "actual": "119.958.707,00",
+   "anterior": "16.635.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 779,
+   "etiqueta": "Ingresos por Servicios de Publicidad",
+   "actual": "1.686.715.390,00",
+   "anterior": "1.475.415.287,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 780,
+   "etiqueta": "Ingresos Abonados con Boyacá",
+   "actual": "0,00",
+   "anterior": "225.882.354,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 781,
+   "etiqueta": "Ingresos Fondo de Equipos",
+   "actual": "0,00",
+   "anterior": "216.862.481,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 782,
+   "etiqueta": "Ingresos Videos Oficiales Apuestas 2024",
+   "actual": "90.720.000,00",
+   "anterior": "84.434.550,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b23",
+   "linea": 783,
+   "etiqueta": "Menos: Devoluciones",
+   "actual": "-1.508.981.558,00",
+   "anterior": "-1.726.052.997,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Operacionales-Actividades Deportivas"
+  },
+  {
+   "bloque": "b27",
+   "linea": 838,
+   "etiqueta": "OTROS INGRESOS NO OPERACIONALES",
+   "actual": "668.908.884,00",
+   "anterior": "143.886.002,00",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos no operacionales"
+  },
+  {
+   "bloque": "b27",
+   "linea": 839,
+   "etiqueta": "Intereses",
+   "actual": "482.126,00",
+   "anterior": "6.865.639,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Otros ingresos no operacionales"
+  },
+  {
+   "bloque": "b27",
+   "linea": 840,
+   "etiqueta": "Bancolombia",
+   "actual": "482.126,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Intereses"
+  },
+  {
+   "bloque": "b27",
+   "linea": 841,
+   "etiqueta": "Descuentos Comerciales",
+   "actual": "0,00",
+   "anterior": "1,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos no operacionales"
+  },
+  {
+   "bloque": "b27",
+   "linea": 842,
+   "etiqueta": "Pasarelas",
+   "actual": "1.839.405,00",
+   "anterior": "2.489.681,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos no operacionales"
+  },
+  {
+   "bloque": "b27",
+   "linea": 843,
+   "etiqueta": "Wompi SAS",
+   "actual": "1.839.405,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Pasarelas"
+  },
+  {
+   "bloque": "b27",
+   "linea": 844,
+   "etiqueta": "Incapacidades por Eps y otras",
+   "actual": "25.449.748,00",
+   "anterior": "36.551.426,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos no operacionales"
+  },
+  {
+   "bloque": "b27",
+   "linea": 845,
+   "etiqueta": "Sanitas",
+   "actual": "1.213.333,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Incapacidades por Eps y otras"
+  },
+  {
+   "bloque": "b27",
+   "linea": 846,
+   "etiqueta": "Seguros de Vida Suramericana",
+   "actual": "19.689.215,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Incapacidades por Eps y otras"
+  },
+  {
+   "bloque": "b29",
+   "linea": 870,
+   "etiqueta": "La Equidad Seguros de Vida",
+   "actual": "4.547.200,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Incapacidades por Eps y otras"
+  },
+  {
+   "bloque": "b29",
+   "linea": 875,
+   "etiqueta": "Ingresos Federación Colombiana de Futbol",
+   "actual": "641.129.500,00",
+   "anterior": "97.783.924,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos no operacionales"
+  },
+  {
+   "bloque": "b29",
+   "linea": 876,
+   "etiqueta": "Federación Colombiana de Futbol",
+   "actual": "641.129.500,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Federación Colombiana de Futbol"
+  },
+  {
+   "bloque": "b29",
+   "linea": 877,
+   "etiqueta": "Otros Ingresos",
+   "actual": "8.105,00",
+   "anterior": "195.331,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos no operacionales"
+  },
+  {
+   "bloque": "b29",
+   "linea": 878,
+   "etiqueta": "Ajuste al Peso",
+   "actual": "8.105,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros Ingresos"
+  },
+  {
+   "bloque": "b24",
+   "linea": 791,
+   "etiqueta": "COSTOS DE VENTAS Y PRESTACION DE SERVICIOS",
+   "actual": "5.928.642.870,00",
+   "anterior": "4.303.480.269,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b24",
+   "linea": 792,
+   "etiqueta": "Salarios",
+   "actual": "1.409.831.050,00",
+   "anterior": "1.258.236.229,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b24",
+   "linea": 793,
+   "etiqueta": "Cesantías",
+   "actual": "123.601.345,00",
+   "anterior": "110.925.971,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b24",
+   "linea": 794,
+   "etiqueta": "Intereses Sobre Cesantías",
+   "actual": "14.832.177,00",
+   "anterior": "13.311.106,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b25",
+   "linea": 815,
+   "etiqueta": "Prima de Servicios",
+   "actual": "123.601.345,00",
+   "anterior": "110.925.971,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b25",
+   "linea": 817,
+   "etiqueta": "Vacaciones",
+   "actual": "60.407.571,00",
+   "anterior": "54.326.193,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 821,
+   "etiqueta": "Aportes ARP",
+   "actual": "34.247.740,00",
+   "anterior": "30.650.639,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 822,
+   "etiqueta": "Aportes a Fondo de Pensiones",
+   "actual": "174.618.718,00",
+   "anterior": "164.579.624,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 823,
+   "etiqueta": "Aportes Caja, ICBF, SENA",
+   "actual": "58.756.939,00",
+   "anterior": "52.729.119,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 824,
+   "etiqueta": "Auxilio de Transporte",
+   "actual": "35.186.665,00",
+   "anterior": "28.857.600,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 825,
+   "etiqueta": "Incapacidades",
+   "actual": "17.657.200,00",
+   "anterior": "20.080.244,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 826,
+   "etiqueta": "Bonificaciones",
+   "actual": "2.451.766,00",
+   "anterior": "830.166,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 827,
+   "etiqueta": "Indemnizaciones Laborales",
+   "actual": "0,00",
+   "anterior": "1.300.000,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b26",
+   "linea": 828,
+   "etiqueta": "Otros Honorarios (*)",
+   "actual": "3.873.450.354,00",
+   "anterior": "2.456.727.407,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "COSTO DE VENTAS Y PRESTACION DE SERVICIOS"
+  },
+  {
+   "bloque": "b30",
+   "linea": 886,
+   "etiqueta": "GASTOS DE ADMINISTRACIÓN",
+   "actual": "2.202.577.499,00",
+   "anterior": "2.603.474.912,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b30",
+   "linea": 887,
+   "etiqueta": "Gastos de Personal",
+   "actual": "1.409.939.916,00",
+   "anterior": "1.169.847.444,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b30",
+   "linea": 888,
+   "etiqueta": "Honorarios",
+   "actual": "196.935.000,00",
+   "anterior": "202.789.588,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b30",
+   "linea": 889,
+   "etiqueta": "Revisoría Fiscal",
+   "actual": "22.250.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b30",
+   "linea": 890,
+   "etiqueta": "Asesoría Jurídica",
+   "actual": "126.685.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b30",
+   "linea": 891,
+   "etiqueta": "Asesoría Contable",
+   "actual": "48.000.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b30",
+   "linea": 892,
+   "etiqueta": "Impuestos",
+   "actual": "270.966,00",
+   "anterior": "5.821.140,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b30",
+   "linea": 893,
+   "etiqueta": "A la propiedad raíz",
+   "actual": "270.966,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Impuestos"
+  },
+  {
+   "bloque": "b30",
+   "linea": 894,
+   "etiqueta": "Arrendamientos",
+   "actual": "41.151.920,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b30",
+   "linea": 895,
+   "etiqueta": "Arrendamientos oficina",
+   "actual": "41.151.920,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Arrendamientos"
+  },
+  {
+   "bloque": "b30",
+   "linea": 896,
+   "etiqueta": "Seguros",
+   "actual": "3.000.000,00",
+   "anterior": "2.044.611,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b30",
+   "linea": 897,
+   "etiqueta": "Póliza Cumplimiento",
+   "actual": "3.000.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Seguros"
+  },
+  {
+   "bloque": "b30",
+   "linea": 898,
+   "etiqueta": "Servicios",
+   "actual": "6.172.805,00",
+   "anterior": "17.949.902,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b30",
+   "linea": 899,
+   "etiqueta": "Servicio de Aseo",
+   "actual": "2.083.700,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b30",
+   "linea": 900,
+   "etiqueta": "Teléfono Fijo",
+   "actual": "142.145,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b31",
+   "linea": 928,
+   "etiqueta": "Teléfono Celular",
+   "actual": "220.745,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b31",
+   "linea": 930,
+   "etiqueta": "Correo, portes y telegramas",
+   "actual": "135.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b31",
+   "linea": 932,
+   "etiqueta": "Transporte Fletes y Acarreos",
+   "actual": "2.752.898,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b31",
+   "linea": 933,
+   "etiqueta": "Otros",
+   "actual": "838.317,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b31",
+   "linea": 934,
+   "etiqueta": "Gastos Legales",
+   "actual": "1.316.566,00",
+   "anterior": "98.860.419,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b31",
+   "linea": 935,
+   "etiqueta": "Gastos Notariales",
+   "actual": "342.180,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Legales"
+  },
+  {
+   "bloque": "b31",
+   "linea": 936,
+   "etiqueta": "Registro mercantil",
+   "actual": "974.386,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Legales"
+  },
+  {
+   "bloque": "b31",
+   "linea": 937,
+   "etiqueta": "Mantenimiento y Reparaciones",
+   "actual": "468.000,00",
+   "anterior": "887.000,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b31",
+   "linea": 938,
+   "etiqueta": "Mantenimiento Construcciones",
+   "actual": "298.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimiento y Reparaciones"
+  },
+  {
+   "bloque": "b31",
+   "linea": 939,
+   "etiqueta": "Equipo Computación y comunicación",
+   "actual": "170.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimiento y Reparaciones"
+  },
+  {
+   "bloque": "b31",
+   "linea": 940,
+   "etiqueta": "Amortizaciones",
+   "actual": "459.603.156,00",
+   "anterior": "458.451.061,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b31",
+   "linea": 941,
+   "etiqueta": "Clase A",
+   "actual": "423.999.996,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortizaciones"
+  },
+  {
+   "bloque": "b31",
+   "linea": 942,
+   "etiqueta": "Clase B",
+   "actual": "32.049.996,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortizaciones"
+  },
+  {
+   "bloque": "b31",
+   "linea": 943,
+   "etiqueta": "Derechos de Uso",
+   "actual": "3.553.164,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortizaciones"
+  },
+  {
+   "bloque": "b31",
+   "linea": 944,
+   "etiqueta": "Depreciación",
+   "actual": "79.345.568,00",
+   "anterior": "88.526.496,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b31",
+   "linea": 945,
+   "etiqueta": "Construcciones y edificaciones",
+   "actual": "72.526.500,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciación"
+  },
+  {
+   "bloque": "b31",
+   "linea": 946,
+   "etiqueta": "Flota y Equipo Transporte",
+   "actual": "6.819.068,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciación"
+  },
+  {
+   "bloque": "b31",
+   "linea": 947,
+   "etiqueta": "Diversos",
+   "actual": "4.373.602,00",
+   "anterior": "558.297.251,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b31",
+   "linea": 948,
+   "etiqueta": "Elementos Aseo",
+   "actual": "533.530,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b31",
+   "linea": 949,
+   "etiqueta": "Elementos Cafetería",
+   "actual": "1.672.907,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b31",
+   "linea": 950,
+   "etiqueta": "Útiles Papelería",
+   "actual": "396.300,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b31",
+   "linea": 951,
+   "etiqueta": "Fotocopias",
+   "actual": "2.700,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b31",
+   "linea": 952,
+   "etiqueta": "Combustibles",
+   "actual": "408.336,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b31",
+   "linea": 953,
+   "etiqueta": "Estampilla al Adulto Mayor 2%",
+   "actual": "884.034,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b31",
+   "linea": 954,
+   "etiqueta": "Estampilla Electrificadora Rural 1%",
+   "actual": "442.016,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b31",
+   "linea": 955,
+   "etiqueta": "casino y restaurante",
+   "actual": "25.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b31",
+   "linea": 956,
+   "etiqueta": "Otros gastos",
+   "actual": "8.779,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b32",
+   "linea": 993,
+   "etiqueta": "OTROS INGRESOS NO PERACIONALES",
+   "actual": "587.304.513,00",
+   "anterior": "275.159.340,00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos no operacionales"
+  },
+  {
+   "bloque": "b32",
+   "linea": 994,
+   "etiqueta": "Financieros",
+   "actual": "23.136.511,00",
+   "anterior": "44.119.639,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Otros gastos no operacionales"
+  },
+  {
+   "bloque": "b32",
+   "linea": 995,
+   "etiqueta": "Gastos Bancarios",
+   "actual": "794.865,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros"
+  },
+  {
+   "bloque": "b32",
+   "linea": 996,
+   "etiqueta": "Gravamen 4 * 1000",
+   "actual": "22.341.646,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros"
+  },
+  {
+   "bloque": "b32",
+   "linea": 997,
+   "etiqueta": "Comisiones",
+   "actual": "708.112,00",
+   "anterior": "1.949.827,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Otros gastos no operacionales"
+  },
+  {
+   "bloque": "b32",
+   "linea": 998,
+   "etiqueta": "Comisiones Bancarias",
+   "actual": "708.112,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Comisiones"
+  },
+  {
+   "bloque": "b32",
+   "linea": 999,
+   "etiqueta": "Intereses",
+   "actual": "83.859.833,00",
+   "anterior": "217.823.178,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Otros gastos no operacionales"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1000,
+   "etiqueta": "Intereses Corrientes",
+   "actual": "55.565.045,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Intereses"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1001,
+   "etiqueta": "Intereses Mora",
+   "actual": "28.294.788,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Intereses"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1002,
+   "etiqueta": "IVA Bancario",
+   "actual": "179.534,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Otros gastos no operacionales"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1003,
+   "etiqueta": "IVA Bancario",
+   "actual": "179.534,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "IVA Bancario"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1004,
+   "etiqueta": "Multas Sanciones y Litigios",
+   "actual": "479.420.523,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos no operacionales"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1005,
+   "etiqueta": "Sanciones DIAN",
+   "actual": "28.533.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Multas Sanciones y Litigios"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1006,
+   "etiqueta": "Multas SIC",
+   "actual": "315.374.691,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Multas Sanciones y Litigios"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1007,
+   "etiqueta": "Embargos Colpensiones",
+   "actual": "135.512.832,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Multas Sanciones y Litigios"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 130,
+  "actual": "381.763.851,00",
+  "anterior": "708.070.093,00"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera la fila 'Diversos' de la Nota 20 (L1008) que no tiene importe 2025 y solo muestra 11.266.696,00 en 2024?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Otros gastos no operacionales",
+   "texto": "L1008 solo tiene importe en Dic 31-2024 y L1009 'Otros' está vacía.",
+   "bloques": [
+    "b32"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se carga la Nota 20 (L993) como desglose de 'Otros gastos no operacionales' aunque su título diga 'OTROS INGRESOS NO PERACIONALES'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Otros gastos no operacionales",
+   "texto": "El total 587.304.513,00 de L993 coincide con L127 del estado; el título parece error tipográfico.",
+   "bloques": [
+    "b32",
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en pesos colombianos. No hay total de ingresos ni de gastos impresos. Las líneas L815/L817 aparecen en b25 y b26 (solapamiento); se cargaron una vez. En la Nota 18 los parciales (PARCIAL 2025) se cargaron como desglose de sus rubros, sin año anterior. Las filas L131-L135 (ganancia acumulada, reservas) no son de resultados y se omitieron."
+}

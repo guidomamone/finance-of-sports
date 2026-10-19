@@ -291,6 +291,75 @@ _de data/club-leagues/br.js:_
 ascendido en 2020, descendido al cierre de 2021
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Chapecoense/demonstracoes-contabeis-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Receita de Transmissão | pág. 49, precedente |
+| 2 | Bilheteria | pág. 49, precedente |
+| 3 | Patrocínio | pág. 49, precedente |
+| 4 | Receita de Negociação de Atletas | pág. 49, precedente |
+| 5 | Sócio Torcedor | pág. 49, Jev 1 |
+| 6 | Receita Categoria Base | pág. 49, Jev 1 |
+| 7 | Royalties/Direito de Uso de Marca/Venda de Produtos | pág. 49, precedente |
+| 8 | Outras Receitas | pág. 49, Jev 0.97 |
+| 9 | Doações/PAF | pág. 49, precedente |
+| 10 | Receita Federações | pág. 49, precedente |
+| 11 | Deduções Tributárias e Sindicais | pág. 49, precedente |
+| 12 | Outros Resultados Operacionais | pág. 15, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custos | pág. 15, Jev 0.92 |
+| 2 | Ordenados e Salários | pág. 50, Claude 0.85 |
+| 3 | INSS/FGTS/PIS | pág. 50, Jev 0.95 |
+| 4 | Despesas com Transf. Jogadores | pág. 50, Jev 0.91 |
+| 5 | Indenizações | pág. 50, precedente |
+| 6 | Despesas Médicas | pág. 50, precedente |
+| 7 | Outros Gastos C/ Pessoal | pág. 50, precedente |
+| 8 | Materiais | pág. 15, precedente |
+| 9 | Manutenção Imobilizado | pág. 51, Claude 0.85 |
+| 10 | Manutenção Terceiros | pág. 51, Jev 0.98 |
+| 11 | Viagens | pág. 51, Jev 0.99 |
+| 12 | Hospedagens | pág. 51, Jev 1 |
+| 13 | Gastos com Jogos - Camp. Brasileiro | pág. 51, Jev 1 |
+| 14 | Gastos com Jogos - Camp. Catarinense | pág. 51, Jev 1 |
+| 15 | Gastos com Outros | pág. 51, Claude 0.8 |
+| 16 | Terceiros - Futebol e Comissões | pág. 52, precedente |
+| 17 | Honorários Profissionais | pág. 52, Jev 1 |
+| 18 | Outros | pág. 52, Jev 0.97 |
+| 19 | Bens de pq. Valor e depreciação | pág. 15, precedente |
+| 20 | Direito de imagem | pág. 15, precedente |
+| 21 | Multas e Indenizações | pág. 53, Jev 0.92 |
+| 22 | Propaganda e Publicidade | pág. 53, Jev 1 |
+| 23 | Gastos Logísticos | pág. 53, precedente |
+| 24 | Doações/Ajudas de Custo | pág. 53, precedente |
+| 25 | Água, Luz e Telefone | pág. 53, Jev 1 |
+| 26 | Demais Gastos | pág. 53, Jev 0.97 |
+| 27 | Tributárias | pág. 15, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): br-serieB, verificado contra roster cacheado de "2022 Campeonato Brasileiro Série B" (tools/club-league-reference/br.json), coincidencia exacta "Chapecoense".
+```
+
 ## 2021
 
 ### Meta
@@ -377,6 +446,14 @@ _note (data/):_
 
 ```text
 PDF descargado de fcf.com.br (Federação Catarinense de Futebol), NO del sitio propio del club — documento comparativo 2021/2020, se cargó solo la columna 2021 (año corriente). Texto nativo en la mayoría de las páginas; el Balanço Patrimonial - Passivo y la Demonstração do Superávit/(Déficit) (págs. 6-7) son imagen dentro del PDF, releídas a 300dpi para esta carga. El documento tiene una inconsistencia interna real entre su DRE (pág. 7) y sus Notas explicativas de detalle (ver comentario de cabecera de este archivo) — documentada, no un error de transcripción. Ejercicio 2021: último balance ANTES de que el club pidiera Recuperação Judicial (24/1/2022, primer club brasileño en conseguirlo), con déficit grande y pasivo por contingencias litigiosas (en gran parte ligadas al accidente aéreo de 2016) casi sextuplicado en el año. Convertido a USD con PTAX BCB de cierre 31/12/2021 (R$5,5805), investigado en esta sesión (no está en FX_CLOSE compartido todavía). Transcripción completa en Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2020-2021.md.
+```
+
+### chapecoense-br-demonstracoes-contabeis-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

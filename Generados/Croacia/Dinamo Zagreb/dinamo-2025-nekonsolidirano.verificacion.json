@@ -1,0 +1,698 @@
+{
+ "pdf": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-nekonsolidirano.pdf",
+ "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-nekonsolidirano.md",
+ "generado": "2026-10-19T17:16:36.207Z",
+ "estado": "ok",
+ "clubId": "dinamozagreb-hr",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"PRIHODI (AOP 002+005+008+011+024+040+049)\" 78.375746 cierra; además se suman 22 línea(s) fuera de ese total (104.761294)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"RASHODI (AOP 055+067+108+109+120+128+139)\" 74.38375 cierra; además se suman 49 línea(s) fuera de ese total (148.25846)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 183.13704 - gastos 222.64221 ± financiero 0.721533 ± impuesto 0 no da el impreso 3.991996",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2024 de este documento suma ingresos 112.750446; el sitio tiene 57.562235"
+  }
+ ],
+ "notas": [
+  "la nota de \"Prihodi od članarina i članskih doprinosa (AOP 006+007)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar que no afecta la carga: b17 no muestra el número ni el título de la nota en el índice; parece desglose de ingresos por ventas/servicios, pero conviene confirmar.",
+  "duda de extraer que no afecta la carga: La nota reagrupa partidas de forma distinta al estado (L637 vs L1076); la diferencia de 368.311 coincide con los ajustes de valor L1079+L1080, el total cuadra.",
+  "duda de extraer que no afecta la carga: L669 figura fuera del cálculo de VIŠAK PRIHODA (AOP 149), sólo con importe 2024 (639.162).",
+  "duda de extraer que no afecta la carga: El formato no-lucrativo no imprime un 'resultado del ejercicio' explícito; L662 es el excedente de ingresos sobre gastos."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 183.13704,
+  "gastos": 222.64221,
+  "financiero": 0.721533,
+  "impuesto": 0,
+  "resultadoImpreso": 3.991996,
+  "resultadoParaCargar": 3.991996,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "PRIHODI (AOP 002+005+008+011+024+040+049)",
+   "lado": "ingreso",
+   "M": 78.375746,
+   "pagina": 12,
+   "linea": 454,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od prodaje roba",
+   "lado": "ingreso",
+   "M": 3.159698,
+   "pagina": 12,
+   "linea": 456,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od pružanja usluga",
+   "lado": "ingreso",
+   "M": 11.486606,
+   "pagina": 12,
+   "linea": 457,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od članarina i članskih doprinosa (AOP 006+007)",
+   "lado": "ingreso",
+   "M": 1.210885,
+   "pagina": 12,
+   "linea": 458,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Članarine",
+   "lado": "ingreso",
+   "M": 1.210885,
+   "pagina": 12,
+   "linea": 459,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi po posebnim propisima (AOP 009+010)",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 12,
+   "linea": 461,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od imovine (AOP 012+021)",
+   "lado": "ingreso",
+   "M": 0.347338,
+   "pagina": 12,
+   "linea": 464,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od nefinancijske imovine (AOP 022+023)",
+   "lado": "ingreso",
+   "M": 0.167053,
+   "pagina": 12,
+   "linea": 474,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od zakupa i iznajmljivanja imovine",
+   "lado": "ingreso",
+   "M": 0.167053,
+   "pagina": 12,
+   "linea": 475,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od donacija iz proračuna (AOP 026 do 029)",
+   "lado": "ingreso",
+   "M": 1.799225,
+   "pagina": 12,
+   "linea": 478,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od donacija iz proračuna jedinica lokalne i područne (regionalne) samouprave",
+   "lado": "ingreso",
+   "M": 1.799225,
+   "pagina": 12,
+   "linea": 480,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od inozemnih vlada i međunarodnih organizacija (AOP 031+032)",
+   "lado": "ingreso",
+   "M": 22.667797,
+   "pagina": 12,
+   "linea": 483,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od inozemnih vlada i međunarodnih organizacija",
+   "lado": "ingreso",
+   "M": 22.667797,
+   "pagina": 12,
+   "linea": 484,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od trgovačkih društava i ostalih pravnih osoba (AOP 034+035)",
+   "lado": "ingreso",
+   "M": 0.373535,
+   "pagina": 12,
+   "linea": 486,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od trgovačkih društava i ostalih pravnih osoba",
+   "lado": "ingreso",
+   "M": 0.373535,
+   "pagina": 13,
+   "linea": 503,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ostali prihodi od donacija (AOP 038+039)",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 13,
+   "linea": 506,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od naknade šteta",
+   "lado": "ingreso",
+   "M": 0.010591,
+   "pagina": 13,
+   "linea": 511,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihod od refundacija",
+   "lado": "ingreso",
+   "M": 0.123366,
+   "pagina": 13,
+   "linea": 512,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od prodaje dugotrajne imovine",
+   "lado": "ingreso",
+   "M": 37.157633,
+   "pagina": 13,
+   "linea": 513,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otpis obveza",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 13,
+   "linea": 515,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Naplaćena otpisana potraživanja",
+   "lado": "ingreso",
+   "M": 0.00564,
+   "pagina": 13,
+   "linea": 516,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ostali nespomenuti prihodi",
+   "lado": "ingreso",
+   "M": 0.033432,
+   "pagina": 13,
+   "linea": 517,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Prihodi od povezanih neprofitnih organizacija (AOP 050 do 053)",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 13,
+   "linea": 518,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "RASHODI (AOP 055+067+108+109+120+128+139)",
+   "lado": "gasto",
+   "M": 74.38375,
+   "pagina": 13,
+   "linea": 524,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Plaće za redovan rad",
+   "lado": "gasto",
+   "M": 4.592444,
+   "pagina": 13,
+   "linea": 527,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Plaće u naravi",
+   "lado": "gasto",
+   "M": 0.03471,
+   "pagina": 13,
+   "linea": 528,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ostali rashodi za radnike",
+   "lado": "gasto",
+   "M": 0.573812,
+   "pagina": 13,
+   "linea": 531,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Doprinosi za zdravstveno osiguranje",
+   "lado": "gasto",
+   "M": 0.703858,
+   "pagina": 13,
+   "linea": 533,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Posebni doprinos za poticanje zapošljavanja osoba s invaliditetom",
+   "lado": "gasto",
+   "M": 0.009208,
+   "pagina": 13,
+   "linea": 536,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Službena putovanja",
+   "lado": "gasto",
+   "M": 0.307263,
+   "pagina": 13,
+   "linea": 539,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Naknade za prijevoz, za rad na terenu i odvojeni život",
+   "lado": "gasto",
+   "M": 0.088956,
+   "pagina": 14,
+   "linea": 556,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Stručno usavršavanje radnika",
+   "lado": "gasto",
+   "M": 0.015215,
+   "pagina": 14,
+   "linea": 557,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Naknade troškova službenih putovanja",
+   "lado": "gasto",
+   "M": 0.060406,
+   "pagina": 14,
+   "linea": 560,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Naknade volonterima (AOP 078 do 081)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 14,
+   "linea": 563,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Naknade troškova službenih putovanja",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 14,
+   "linea": 565,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Naknade ostalim osobama izvan radnog odnosa (AOP 083 do 086)",
+   "lado": "gasto",
+   "M": 0.032208,
+   "pagina": 14,
+   "linea": 568,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Naknade troškova službenih putovanja",
+   "lado": "gasto",
+   "M": 0.032208,
+   "pagina": 14,
+   "linea": 570,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Usluge telefona, pošte i prijevoza",
+   "lado": "gasto",
+   "M": 0.624073,
+   "pagina": 14,
+   "linea": 574,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Usluge tekućeg i investicijskog održavanja",
+   "lado": "gasto",
+   "M": 0.282048,
+   "pagina": 14,
+   "linea": 575,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Usluge promidžbe i informiranja",
+   "lado": "gasto",
+   "M": 0.482497,
+   "pagina": 14,
+   "linea": 576,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Komunalne usluge",
+   "lado": "gasto",
+   "M": 0.40029,
+   "pagina": 14,
+   "linea": 577,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Zakupnine i najamnine",
+   "lado": "gasto",
+   "M": 0.343237,
+   "pagina": 14,
+   "linea": 578,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Zdravstvene i veterinarske usluge",
+   "lado": "gasto",
+   "M": 0.110243,
+   "pagina": 14,
+   "linea": 579,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Rashodi primanja igrača 1. momčadi",
+   "lado": "gasto",
+   "M": 24.74842,
+   "pagina": 25,
+   "linea": 1040,
+   "origen": "nota que desglosa \"Intelektualne i osobne usluge\""
+  },
+  {
+   "etiqueta": "Nekapitalizirani rashodi za naknade posrednicima",
+   "lado": "gasto",
+   "M": 6.170685,
+   "pagina": 25,
+   "linea": 1041,
+   "origen": "nota que desglosa \"Intelektualne i osobne usluge\""
+  },
+  {
+   "etiqueta": "Rashodi naknada trenerima 1. momčadi",
+   "lado": "gasto",
+   "M": 2.334903,
+   "pagina": 25,
+   "linea": 1042,
+   "origen": "nota que desglosa \"Intelektualne i osobne usluge\""
+  },
+  {
+   "etiqueta": "Rashodi naknada trenerima nogometne škole",
+   "lado": "gasto",
+   "M": 1.960298,
+   "pagina": 25,
+   "linea": 1043,
+   "origen": "nota que desglosa \"Intelektualne i osobne usluge\""
+  },
+  {
+   "etiqueta": "Rashodi stručne poslovne suradnje",
+   "lado": "gasto",
+   "M": 0.479244,
+   "pagina": 25,
+   "linea": 1044,
+   "origen": "nota que desglosa \"Intelektualne i osobne usluge\""
+  },
+  {
+   "etiqueta": "Ostale intelektualne i osobne usluge",
+   "lado": "gasto",
+   "M": 1.768888,
+   "pagina": 25,
+   "linea": 1045,
+   "origen": "nota que desglosa \"Intelektualne i osobne usluge\""
+  },
+  {
+   "etiqueta": "Računalne usluge",
+   "lado": "gasto",
+   "M": 0.283244,
+   "pagina": 14,
+   "linea": 581,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ostale usluge",
+   "lado": "gasto",
+   "M": 1.328394,
+   "pagina": 14,
+   "linea": 582,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Uredski materijal i ostali materijalni rashodi",
+   "lado": "gasto",
+   "M": 0.495171,
+   "pagina": 14,
+   "linea": 584,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Materijal i sirovine",
+   "lado": "gasto",
+   "M": 3.897604,
+   "pagina": 14,
+   "linea": 585,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Energija",
+   "lado": "gasto",
+   "M": 0.506193,
+   "pagina": 14,
+   "linea": 586,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sitan inventar i auto gume",
+   "lado": "gasto",
+   "M": 0.101073,
+   "pagina": 14,
+   "linea": 587,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Premije osiguranja",
+   "lado": "gasto",
+   "M": 0.045819,
+   "pagina": 14,
+   "linea": 589,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Reprezentacija",
+   "lado": "gasto",
+   "M": 0.707221,
+   "pagina": 14,
+   "linea": 590,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Članarine",
+   "lado": "gasto",
+   "M": 0.127084,
+   "pagina": 14,
+   "linea": 591,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Kotizacije",
+   "lado": "gasto",
+   "M": 0.01784,
+   "pagina": 14,
+   "linea": 592,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ostali nespomenuti materijalni rashodi",
+   "lado": "gasto",
+   "M": 1.242889,
+   "pagina": 14,
+   "linea": 593,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortizacija registracija igrača",
+   "lado": "gasto",
+   "M": 7.330947,
+   "pagina": 26,
+   "linea": 1066,
+   "origen": "nota que desglosa \"Rashodi amortizacije\""
+  },
+  {
+   "etiqueta": "Amortizacija ostale dugotrajne imovine",
+   "lado": "gasto",
+   "M": 0.663405,
+   "pagina": 26,
+   "linea": 1067,
+   "origen": "nota que desglosa \"Rashodi amortizacije\""
+  },
+  {
+   "etiqueta": "Tekuće donacije",
+   "lado": "gasto",
+   "M": 0.3199,
+   "pagina": 15,
+   "linea": 624,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Stipendije",
+   "lado": "gasto",
+   "M": 0.674526,
+   "pagina": 15,
+   "linea": 625,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Kapitalne donacije (AOP 126+127)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 15,
+   "linea": 627,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Naknade šteta pravnim i fizičkim osobama",
+   "lado": "gasto",
+   "M": 0.567306,
+   "pagina": 15,
+   "linea": 632,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ugovorene kazne i ostale naknade šteta",
+   "lado": "gasto",
+   "M": 0.38816,
+   "pagina": 15,
+   "linea": 635,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Neotpisana vrijednost i drugi rashodi otuđene i rashodovane dugotrajne imovine",
+   "lado": "gasto",
+   "M": 7.046152,
+   "pagina": 15,
+   "linea": 637,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otpisana potraživanja",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 15,
+   "linea": 638,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Rashodi za ostala porezna davanja",
+   "lado": "gasto",
+   "M": 0.12305,
+   "pagina": 15,
+   "linea": 639,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ostali nespomenuti rashodi",
+   "lado": "gasto",
+   "M": 1.853618,
+   "pagina": 15,
+   "linea": 640,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Rashodi vezani uz financiranje povezanih neprofitnih organizacija (AOP 140 do 143)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 15,
+   "linea": 641,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "UKUPNI RASHODI (AOP 054-146 ili 054+147)",
+   "lado": "gasto",
+   "M": 74.38375,
+   "pagina": 15,
+   "linea": 650,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Kamate na oročena sredstva i depozite po viđenju",
+   "M": 0.000047,
+   "linea": 468
+  },
+  {
+   "etiqueta": "Prihodi od zateznih kamata",
+   "M": 0.179298,
+   "linea": 469
+  },
+  {
+   "etiqueta": "Prihodi od pozitivnih tečajnih razlika",
+   "M": 0.00094,
+   "linea": 470
+  },
+  {
+   "etiqueta": "Kamate za primljene kredite banaka i ostalih kreditora",
+   "M": 0.422218,
+   "linea": 611
+  },
+  {
+   "etiqueta": "Bankarske usluge i usluge platnog prometa",
+   "M": 0.049271,
+   "linea": 618
+  },
+  {
+   "etiqueta": "Negativne tečajne razlike i valutna klauzula",
+   "M": 0.011643,
+   "linea": 619
+  },
+  {
+   "etiqueta": "Zatezne kamate",
+   "M": 0.048317,
+   "linea": 620
+  },
+  {
+   "etiqueta": "Ostali nespomenuti financijski rashodi",
+   "M": 0.009799,
+   "linea": 621
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Obveze poreza na dobit po obračunu",
+   "M": null,
+   "linea": 669
+  }
+ ]
+}

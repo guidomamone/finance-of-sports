@@ -1,0 +1,284 @@
+{
+ "pdf": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf",
+ "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
+ "mdSha1": "1dabc093c0da3f0a004df3eaf17a2e1b79066ba5",
+ "ubicacionSha1": "4e3457d2f95e58bf62c061450f032a74d35b4e9d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:36:33.686Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b20"
+  ],
+  "notas_gastos": [
+   "b21"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L181: (Em reais)"
+  },
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos idénticos al estado en reais (L505 = L185)"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos idénticos al estado en reais (L518 = L186 en 2021)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 185,
+   "etiqueta": "Receita Operacional Bruta Atividade do Desporto",
+   "actual": "68.173.275,73",
+   "anterior": "31.831.520,66",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 186,
+   "etiqueta": "Custo da Atividade do Desporto",
+   "actual": "-49.470.099,99",
+   "anterior": "-27.396.935,23",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 188,
+   "etiqueta": "Superavit/Défict Bruto",
+   "actual": "18.703.175,74",
+   "anterior": "4.434.585,43",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 190,
+   "etiqueta": "Despesas Gerais e administrativas",
+   "actual": "-8.891.961,37",
+   "anterior": "-6.008.357,69",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 191,
+   "etiqueta": "Receita/Despesas financeiras líquidas",
+   "actual": "7.880.878,88",
+   "anterior": "-1.704.895,89",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 192,
+   "etiqueta": "Receita de Royalties",
+   "actual": "14.644,66",
+   "anterior": "17.771,40",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 193,
+   "etiqueta": "Receitas Diversas",
+   "actual": "74.638,54",
+   "anterior": "534.156,41",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 195,
+   "etiqueta": "Superavir/Défict Operacional",
+   "actual": "-921.799,29",
+   "anterior": "-7.161.325,77",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 197,
+   "etiqueta": "Superavit/Défict do exercício",
+   "actual": "17.781.376,45",
+   "anterior": "-2.726.740,34",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 498,
+   "etiqueta": "Venda/Empréstimo de Atletas",
+   "actual": "2.863.944,58",
+   "anterior": "9.530.267,90",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Bruta Atividade do Desporto"
+  },
+  {
+   "bloque": "b20",
+   "linea": 499,
+   "etiqueta": "Receitas Patrimoniais",
+   "actual": "2.522.335,29",
+   "anterior": "1.534.877,36",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Bruta Atividade do Desporto"
+  },
+  {
+   "bloque": "b20",
+   "linea": 500,
+   "etiqueta": "Receita de transmissão",
+   "actual": "55.760.073,76",
+   "anterior": "15.425.089,14",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Bruta Atividade do Desporto"
+  },
+  {
+   "bloque": "b20",
+   "linea": 501,
+   "etiqueta": "Receita jogos de Futebol",
+   "actual": "458.634,70",
+   "anterior": "528.436,55",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Bruta Atividade do Desporto"
+  },
+  {
+   "bloque": "b20",
+   "linea": 502,
+   "etiqueta": "Receitas Publicitária",
+   "actual": "5.144.983,62",
+   "anterior": "3.264.381,83",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Bruta Atividade do Desporto"
+  },
+  {
+   "bloque": "b20",
+   "linea": 503,
+   "etiqueta": "Receita Loteria Esportiva",
+   "actual": "693.485,44",
+   "anterior": "709.446,28",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Bruta Atividade do Desporto"
+  },
+  {
+   "bloque": "b20",
+   "linea": 504,
+   "etiqueta": "Outras Receitas",
+   "actual": "729.818,34",
+   "anterior": "839.021,60",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Bruta Atividade do Desporto"
+  },
+  {
+   "bloque": "b20",
+   "linea": 505,
+   "etiqueta": "Total Receita Oper. Bruta da Atividade do Desporto",
+   "actual": "68.173.275,73",
+   "anterior": "31.831.520,66",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Bruta Atividade do Desporto"
+  },
+  {
+   "bloque": "b21",
+   "linea": 515,
+   "etiqueta": "Remuneração, Benefícios, Encargos, Intermediação, Contratação, Empréstimos e Outros",
+   "actual": "33.655.776,98",
+   "anterior": "10.964.232,22",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo da Atividade do Desporto"
+  },
+  {
+   "bloque": "b21",
+   "linea": 516,
+   "etiqueta": "Amortização de direitos e de formação de atletas",
+   "actual": "6.880.702,54",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo da Atividade do Desporto"
+  },
+  {
+   "bloque": "b21",
+   "linea": 517,
+   "etiqueta": "Jogos, Federação, viagem, serviços, material esportivo e outros",
+   "actual": "8.933.620,47",
+   "anterior": "2.959.277,85",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo da Atividade do Desporto"
+  },
+  {
+   "bloque": "b21",
+   "linea": 518,
+   "etiqueta": "Total Custo da atividade do desporto",
+   "actual": "49.470.099,99",
+   "anterior": "13.923.510,07",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Custo da Atividade do Desporto"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 185,
+  "actual": "68.173.275,73"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 197,
+  "actual": "17.781.376,45",
+  "anterior": "-2.726.740,34"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el 'Superavir/Défict Operacional' de L195 (-921.799,29) tal como está impreso pese a que no cuadra con las filas de arriba?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Superavir/Défict Operacional",
+   "texto": "L188+L190..L193 suman 17.781.376,45 (igual al resultado L197), no -921.799,29; el subtotal operativo impreso en L195 parece erróneo.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se toma como anterior del 'Custo da Atividade do Desporto' el -27.396.935,23 del estado (L186) aunque la nota L518 da 13.923.510,07 para 2020?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "Custo da Atividade do Desporto",
+   "texto": "La nota b21 en 2020 (L518) no coincide con el estado (L186); 2021 sí coincide.",
+   "bloques": [
+    "b3",
+    "b21"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en reais. Total de gastos no impreso. Notas b20 y b21 cuadran con el estado en 2021."
+}

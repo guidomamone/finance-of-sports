@@ -129,6 +129,47 @@ clubId con sufijo de país (Versión 129: colocolo-cl/udechile-cl/catolica-cl), 
 comillas porque un id con guion no es una key JS válida sin comillas.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos por recaudaciones | pág. 72, precedente |
+| 2 | Ingresos por venta de jugadores comprado a terceros | pág. 72, precedente |
+| 3 | Ingresos por publicidad | pág. 72, precedente |
+| 4 | Ingresos por derechos de televisión | pág. 72, precedente |
+| 5 | Otros | pág. 72, precedente |
+| 6 | Condonación | pág. 74, Jev 1 |
+| 7 | Condonación Intereses y Multas TGR | pág. 74, Jev 1 |
+| 8 | Dividendos | pág. 74, Jev 1 |
+| 9 | Otros Ingresos | pág. 74, Jev 0.92 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas jugadores | pág. 75, precedente |
+| 2 | Remuneración plantel profesional y cuerpo técnico | pág. 75, precedente |
+| 3 | Amortización Activos en concesión | pág. 75, precedente |
+| 4 | Amortización Otros Intangibles | pág. 75, Jev 1 |
+| 5 | Amortización pases jugadores profesionales | pág. 75, precedente |
+| 6 | Costos de concentración traslados y otros | pág. 75, precedente |
+| 7 | Otros costos | pág. 75, precedente |
+| 8 | Gasto de administración | pág. 10, precedente |
+| 9 | Otros gastos, por función | pág. 10, Jev 0.99 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2024
 
 ### Meta
@@ -197,6 +238,14 @@ _note (data/):_
 
 ```text
 Transcripción completa en Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2022.md.
+```
+
+### colocolo-cl-estados-financieros-2025
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

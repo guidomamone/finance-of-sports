@@ -1,0 +1,1618 @@
+{
+ "pdf": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-nekonsolidirano.pdf",
+ "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-nekonsolidirano.md",
+ "mdSha1": "f70e44d80e681a9a00f8c8983ff90386bfc088b2",
+ "ubicacionSha1": "10ff27975e23b216a41fc1466dbd5043a3b1f56e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:24:14.973Z",
+ "ubicacion": {
+  "estado": [
+   "b6",
+   "b7",
+   "b8",
+   "b9",
+   "b10"
+  ],
+  "notas_ingresos": [
+   "b17",
+   "b18",
+   "b19",
+   "b20"
+  ],
+  "notas_gastos": [
+   "b21",
+   "b22",
+   "b23",
+   "b24"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L659 (b10): 'IZVJEŠTAJ O PRIHODIMA I RASHODIMA (EUR)' — mismo estado; importes en euros"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "Mismo estado, encabezado L659 '(EUR)'"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Mismo estado, encabezado L659 '(EUR)'"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "Mismo estado, encabezado L659 '(EUR)'"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L659: 'IZVJEŠTAJ O PRIHODIMA I RASHODIMA (EUR)'"
+  },
+  {
+   "bloque": "b17",
+   "escala": "no se sabe",
+   "evidencia": "No hay frase de escala en el bloque; importes coinciden con el estado en euros"
+  },
+  {
+   "bloque": "b18",
+   "escala": "no se sabe",
+   "evidencia": "No hay frase de escala en el bloque; importes coinciden con el estado en euros"
+  },
+  {
+   "bloque": "b19",
+   "escala": "unidades",
+   "evidencia": "L988: '(svi iznosi izraženi su u eurima)'"
+  },
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "L999: '(svi iznosi izraženi su u eurima)'"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "L1023: '(svi iznosi izraženi su u eurima)'"
+  },
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "L1038: '(svi iznosi izraženi su u eurima)'"
+  },
+  {
+   "bloque": "b23",
+   "escala": "unidades",
+   "evidencia": "L1064: '(svi iznosi izraženi su u eurima)'"
+  },
+  {
+   "bloque": "b24",
+   "escala": "unidades",
+   "evidencia": "L1074: '(svi iznosi izraženi su u eurima)'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 454,
+   "etiqueta": "PRIHODI (AOP 002+005+008+011+024+040+049)",
+   "actual": "78.375.746",
+   "anterior": "77.269.788",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 455,
+   "etiqueta": "Prihodi od prodaje roba i pružanja usluga (AOP 003+004)",
+   "actual": "14.646.304",
+   "anterior": "13.196.272",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 456,
+   "etiqueta": "Prihodi od prodaje roba",
+   "actual": "3.159.698",
+   "anterior": "3.088.795",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 457,
+   "etiqueta": "Prihodi od pružanja usluga",
+   "actual": "11.486.606",
+   "anterior": "10.107.477",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 458,
+   "etiqueta": "Prihodi od članarina i članskih doprinosa (AOP 006+007)",
+   "actual": "1.210.885",
+   "anterior": "888.330",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 459,
+   "etiqueta": "Članarine",
+   "actual": "1.210.885",
+   "anterior": "888.330",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 461,
+   "etiqueta": "Prihodi po posebnim propisima (AOP 009+010)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 464,
+   "etiqueta": "Prihodi od imovine (AOP 012+021)",
+   "actual": "347.338,00",
+   "anterior": "132.356",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 465,
+   "etiqueta": "Prihodi od financijske imovine (AOP 013 do 020)",
+   "actual": "180.285",
+   "anterior": "16.610",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 468,
+   "etiqueta": "Kamate na oročena sredstva i depozite po viđenju",
+   "actual": "47",
+   "anterior": "108",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 469,
+   "etiqueta": "Prihodi od zateznih kamata",
+   "actual": "179.298",
+   "anterior": "14.178",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 470,
+   "etiqueta": "Prihodi od pozitivnih tečajnih razlika",
+   "actual": "940",
+   "anterior": "2.324",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 474,
+   "etiqueta": "Prihodi od nefinancijske imovine (AOP 022+023)",
+   "actual": "167.053",
+   "anterior": "115.746",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 475,
+   "etiqueta": "Prihodi od zakupa i iznajmljivanja imovine",
+   "actual": "167.053",
+   "anterior": "115.746",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 477,
+   "etiqueta": "Prihodi od donacija (AOP 025+030+033+036+037)",
+   "actual": "24.840.557",
+   "anterior": "34.360.836",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 478,
+   "etiqueta": "Prihodi od donacija iz proračuna (AOP 026 do 029)",
+   "actual": "1.799.225",
+   "anterior": "1.766.106",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 480,
+   "etiqueta": "Prihodi od donacija iz proračuna jedinica lokalne i područne (regionalne) samouprave",
+   "actual": "1.799.225",
+   "anterior": "1.766.106",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 483,
+   "etiqueta": "Prihodi od inozemnih vlada i međunarodnih organizacija (AOP 031+032)",
+   "actual": "22.667.797",
+   "anterior": "32.430.730",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 484,
+   "etiqueta": "Prihodi od inozemnih vlada i međunarodnih organizacija",
+   "actual": "22.667.797",
+   "anterior": "32.430.730",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 486,
+   "etiqueta": "Prihodi od trgovačkih društava i ostalih pravnih osoba (AOP 034+035)",
+   "actual": "373.535",
+   "anterior": "164.000",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 503,
+   "etiqueta": "Prihodi od trgovačkih društava i ostalih pravnih osoba",
+   "actual": "373.535",
+   "anterior": "164.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 506,
+   "etiqueta": "Ostali prihodi od donacija (AOP 038+039)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 509,
+   "etiqueta": "Ostali prihodi (AOP 041+044+045)",
+   "actual": "37.330.662",
+   "anterior": "28.691.994",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 510,
+   "etiqueta": "Prihodi od naknade štete i refundacija (AOP 042+043)",
+   "actual": "133.957",
+   "anterior": "73.164",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 511,
+   "etiqueta": "Prihodi od naknade šteta",
+   "actual": "10.591",
+   "anterior": "22.441",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 512,
+   "etiqueta": "Prihod od refundacija",
+   "actual": "123.366",
+   "anterior": "50.723",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 513,
+   "etiqueta": "Prihodi od prodaje dugotrajne imovine",
+   "actual": "37.157.633",
+   "anterior": "22.857.223",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 514,
+   "etiqueta": "Ostali nespomenuti prihodi (AOP 046 do 048)",
+   "actual": "39.072",
+   "anterior": "5.761.607",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 515,
+   "etiqueta": "Otpis obveza",
+   "actual": "",
+   "anterior": "1.700.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 516,
+   "etiqueta": "Naplaćena otpisana potraživanja",
+   "actual": "5.640",
+   "anterior": "2.623.790",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 517,
+   "etiqueta": "Ostali nespomenuti prihodi",
+   "actual": "33.432",
+   "anterior": "1.437.817",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 518,
+   "etiqueta": "Prihodi od povezanih neprofitnih organizacija (AOP 050 do 053)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 524,
+   "etiqueta": "RASHODI (AOP 055+067+108+109+120+128+139)",
+   "actual": "74.383.750",
+   "anterior": "69.995.793",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 525,
+   "etiqueta": "Rashodi za radnike (AOP 056+061+062)",
+   "actual": "5.914.032",
+   "anterior": "5.051.248",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 526,
+   "etiqueta": "Plaće (AOP 057 do 060)",
+   "actual": "4.627.154",
+   "anterior": "4.197.197",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 527,
+   "etiqueta": "Plaće za redovan rad",
+   "actual": "4.592.444",
+   "anterior": "4.167.286",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 528,
+   "etiqueta": "Plaće u naravi",
+   "actual": "34.710",
+   "anterior": "29.911",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 531,
+   "etiqueta": "Ostali rashodi za radnike",
+   "actual": "573.812",
+   "anterior": "233.668",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 532,
+   "etiqueta": "Doprinosi na plaće (AOP 063 do 066)",
+   "actual": "713.066",
+   "anterior": "620.383",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 533,
+   "etiqueta": "Doprinosi za zdravstveno osiguranje",
+   "actual": "703.858",
+   "anterior": "612.431",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 536,
+   "etiqueta": "Posebni doprinos za poticanje zapošljavanja osoba s invaliditetom",
+   "actual": "9.208",
+   "anterior": "7.952",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 537,
+   "etiqueta": "Materijalni rashodi (AOP 068+072+077+082+087+097+102)",
+   "actual": "48.961.406",
+   "anterior": "48.441.100",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 538,
+   "etiqueta": "Naknade troškova radnicima (AOP 069 do 071)",
+   "actual": "411.434",
+   "anterior": "512.400",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 539,
+   "etiqueta": "Službena putovanja",
+   "actual": "307.263",
+   "anterior": "408.290",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 556,
+   "etiqueta": "Naknade za prijevoz, za rad na terenu i odvojeni život",
+   "actual": "88.956",
+   "anterior": "80.295",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 557,
+   "etiqueta": "Stručno usavršavanje radnika",
+   "actual": "15.215",
+   "anterior": "23.815",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 558,
+   "etiqueta": "Naknade članovima u predstavničkim i izvršnim tijelima, povjerenstvima i slično (AOP 073 do 076)",
+   "actual": "60.406",
+   "anterior": "69.385",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 560,
+   "etiqueta": "Naknade troškova službenih putovanja",
+   "actual": "60.406",
+   "anterior": "69.385",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 563,
+   "etiqueta": "Naknade volonterima (AOP 078 do 081)",
+   "actual": "0",
+   "anterior": "3.433",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 565,
+   "etiqueta": "Naknade troškova službenih putovanja",
+   "actual": "",
+   "anterior": "3.433",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 568,
+   "etiqueta": "Naknade ostalim osobama izvan radnog odnosa (AOP 083 do 086)",
+   "actual": "32.208",
+   "anterior": "52.302",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 570,
+   "etiqueta": "Naknade troškova službenih putovanja",
+   "actual": "32.208",
+   "anterior": "52.302",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 573,
+   "etiqueta": "Rashodi za usluge (AOP 088 do 096)",
+   "actual": "41.316.464",
+   "anterior": "41.293.051",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 574,
+   "etiqueta": "Usluge telefona, pošte i prijevoza",
+   "actual": "624.073",
+   "anterior": "681.678",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 575,
+   "etiqueta": "Usluge tekućeg i investicijskog održavanja",
+   "actual": "282.048",
+   "anterior": "295.745",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 576,
+   "etiqueta": "Usluge promidžbe i informiranja",
+   "actual": "482.497",
+   "anterior": "330.101",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 577,
+   "etiqueta": "Komunalne usluge",
+   "actual": "400.290",
+   "anterior": "278.617",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 578,
+   "etiqueta": "Zakupnine i najamnine",
+   "actual": "343.237",
+   "anterior": "276.325",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 579,
+   "etiqueta": "Zdravstvene i veterinarske usluge",
+   "actual": "110.243",
+   "anterior": "84.761",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 580,
+   "etiqueta": "Intelektualne i osobne usluge",
+   "actual": "37.462.438",
+   "anterior": "37.738.160",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 581,
+   "etiqueta": "Računalne usluge",
+   "actual": "283.244",
+   "anterior": "222.052",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 582,
+   "etiqueta": "Ostale usluge",
+   "actual": "1.328.394",
+   "anterior": "1.385.612",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 583,
+   "etiqueta": "Rashodi za materijal i energiju (AOP 098 do 101)",
+   "actual": "5.000.041",
+   "anterior": "4.541.381",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 584,
+   "etiqueta": "Uredski materijal i ostali materijalni rashodi",
+   "actual": "495.171",
+   "anterior": "333.396",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 585,
+   "etiqueta": "Materijal i sirovine",
+   "actual": "3.897.604",
+   "anterior": "3.602.176",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 586,
+   "etiqueta": "Energija",
+   "actual": "506.193",
+   "anterior": "552.690",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 587,
+   "etiqueta": "Sitan inventar i auto gume",
+   "actual": "101.073",
+   "anterior": "53.119",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 588,
+   "etiqueta": "Ostali nespomenuti materijalni rashodi (AOP 103 do 107)",
+   "actual": "2.140.853",
+   "anterior": "1.969.148",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 589,
+   "etiqueta": "Premije osiguranja",
+   "actual": "45.819",
+   "anterior": "78.263",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 590,
+   "etiqueta": "Reprezentacija",
+   "actual": "707.221",
+   "anterior": "472.445",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 591,
+   "etiqueta": "Članarine",
+   "actual": "127.084",
+   "anterior": "110.912",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 592,
+   "etiqueta": "Kotizacije",
+   "actual": "17.840",
+   "anterior": "11.897",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 593,
+   "etiqueta": "Ostali nespomenuti materijalni rashodi",
+   "actual": "1.242.889",
+   "anterior": "1.295.631",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 594,
+   "etiqueta": "Rashodi amortizacije",
+   "actual": "7.994.352",
+   "anterior": "6.675.880",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 595,
+   "etiqueta": "Financijski rashodi (AOP 110+111+115)",
+   "actual": "541.248",
+   "anterior": "649.478",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 597,
+   "etiqueta": "Kamate za primljene kredite i zajmove (AOP 112 do 114)",
+   "actual": "422.218",
+   "anterior": "500.037",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 611,
+   "etiqueta": "Kamate za primljene kredite banaka i ostalih kreditora",
+   "actual": "422.218",
+   "anterior": "500.037",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 617,
+   "etiqueta": "Ostali financijski rashodi (AOP 116 do 119)",
+   "actual": "119.030",
+   "anterior": "149.441",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 618,
+   "etiqueta": "Bankarske usluge i usluge platnog prometa",
+   "actual": "49.271",
+   "anterior": "103.507",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 619,
+   "etiqueta": "Negativne tečajne razlike i valutna klauzula",
+   "actual": "11.643",
+   "anterior": "4.942",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 620,
+   "etiqueta": "Zatezne kamate",
+   "actual": "48.317",
+   "anterior": "2.629",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 621,
+   "etiqueta": "Ostali nespomenuti financijski rashodi",
+   "actual": "9.799",
+   "anterior": "38.363",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 622,
+   "etiqueta": "Donacije (AOP 121+125)",
+   "actual": "994.426",
+   "anterior": "1.008.693",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 623,
+   "etiqueta": "Tekuće donacije (AOP 122 do124)",
+   "actual": "994.426",
+   "anterior": "1.008.693",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 624,
+   "etiqueta": "Tekuće donacije",
+   "actual": "319.900",
+   "anterior": "266.225",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 625,
+   "etiqueta": "Stipendije",
+   "actual": "674.526",
+   "anterior": "742.468",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 627,
+   "etiqueta": "Kapitalne donacije (AOP 126+127)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 630,
+   "etiqueta": "Ostali rashodi (AOP 129+134)",
+   "actual": "9.978.286",
+   "anterior": "8.169.394",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 631,
+   "etiqueta": "Kazne, penali i naknade štete (AOP 130 do 133)",
+   "actual": "955.466",
+   "anterior": "685.625",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 632,
+   "etiqueta": "Naknade šteta pravnim i fizičkim osobama",
+   "actual": "567.306",
+   "anterior": "601.075",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 635,
+   "etiqueta": "Ugovorene kazne i ostale naknade šteta",
+   "actual": "388.160",
+   "anterior": "84.550",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 636,
+   "etiqueta": "Ostali nespomenuti rashodi (AOP 135 do 138)",
+   "actual": "9.022.820",
+   "anterior": "7.483.769",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 637,
+   "etiqueta": "Neotpisana vrijednost i drugi rashodi otuđene i rashodovane dugotrajne imovine",
+   "actual": "7.046.152",
+   "anterior": "5.630.669",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 638,
+   "etiqueta": "Otpisana potraživanja",
+   "actual": "",
+   "anterior": "3.343",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 639,
+   "etiqueta": "Rashodi za ostala porezna davanja",
+   "actual": "123.050",
+   "anterior": "122.903",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 640,
+   "etiqueta": "Ostali nespomenuti rashodi",
+   "actual": "1.853.618",
+   "anterior": "1.726.854",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 641,
+   "etiqueta": "Rashodi vezani uz financiranje povezanih neprofitnih organizacija (AOP 140 do 143)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 648,
+   "etiqueta": "Povećanje zaliha proizvodnje i gotovih proizvoda (AOP 145-144)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 649,
+   "etiqueta": "Smanjenje zaliha proizvodnje i gotovih proizvoda (AOP 144-145)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 650,
+   "etiqueta": "UKUPNI RASHODI (AOP 054-146 ili 054+147)",
+   "actual": "74.383.750",
+   "anterior": "69.995.793",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 662,
+   "etiqueta": "VIŠAK PRIHODA (AOP 001-148)",
+   "actual": "3.991.996",
+   "anterior": "7.273.995",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 664,
+   "etiqueta": "MANJAK PRIHODA (AOP 148-001)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 665,
+   "etiqueta": "Višak prihoda – preneseni",
+   "actual": "21.876.711",
+   "anterior": "14.637.744",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 669,
+   "etiqueta": "Obveze poreza na dobit po obračunu",
+   "actual": "",
+   "anterior": "639.162",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 670,
+   "etiqueta": "Višak prihoda raspoloživ u sljedećem razdoblju (AOP 149+151-150-152-153)",
+   "actual": "25.868.707",
+   "anterior": "21.272.577",
+   "tipo": "resultado",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 671,
+   "etiqueta": "Manjak prihoda za pokriće u sljedećem razdoblju (AOP 150+152-149-151+153)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "resultado",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 957,
+   "etiqueta": "Prihodi od pružanja usluga",
+   "actual": "11.486.606",
+   "anterior": "10.107.477",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prihodi od prodaje roba i pružanja usluga (AOP 003+004)"
+  },
+  {
+   "bloque": "b17",
+   "linea": 958,
+   "etiqueta": "Prihodi od prodaje roba",
+   "actual": "3.159.698",
+   "anterior": "3.088.795",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prihodi od prodaje roba i pružanja usluga (AOP 003+004)"
+  },
+  {
+   "bloque": "b17",
+   "linea": 959,
+   "etiqueta": "Ukupno",
+   "actual": "14.646.304",
+   "anterior": "13.196.272",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Prihodi od prodaje roba i pružanja usluga (AOP 003+004)"
+  },
+  {
+   "bloque": "b18",
+   "linea": 973,
+   "etiqueta": "Članarine",
+   "actual": "1.210.885",
+   "anterior": "888.330",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prihodi od članarina i članskih doprinosa (AOP 006+007)"
+  },
+  {
+   "bloque": "b18",
+   "linea": 974,
+   "etiqueta": "Ukupno",
+   "actual": "1.210.885",
+   "anterior": "888.330",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Prihodi od članarina i članskih doprinosa (AOP 006+007)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 990,
+   "etiqueta": "Prihodi od inozemnih vlada i međunarodnih organizacija",
+   "actual": "22.667.797",
+   "anterior": "32.430.730",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prihodi od donacija (AOP 025+030+033+036+037)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 991,
+   "etiqueta": "Prihodi od donacija iz proračuna",
+   "actual": "1.799.225",
+   "anterior": "1.766.106",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prihodi od donacija (AOP 025+030+033+036+037)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 992,
+   "etiqueta": "Prihodi od trgovačkih društava i ostalih pravnih osoba",
+   "actual": "373.535",
+   "anterior": "164.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Prihodi od donacija (AOP 025+030+033+036+037)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 993,
+   "etiqueta": "Ukupno",
+   "actual": "24.840.557",
+   "anterior": "34.360.836",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Prihodi od donacija (AOP 025+030+033+036+037)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1001,
+   "etiqueta": "Prihodi od prodaje dugotrajne imovine",
+   "actual": "37.157.633",
+   "anterior": "22.857.223",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ostali prihodi (AOP 041+044+045)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1002,
+   "etiqueta": "Prihodi od naplaćenih otpisanih potraživanja",
+   "actual": "5.640",
+   "anterior": "2.623.790",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ostali prihodi (AOP 041+044+045)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1003,
+   "etiqueta": "Prihodi od otpisa obveza",
+   "actual": "-",
+   "anterior": "1.700.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ostali prihodi (AOP 041+044+045)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1004,
+   "etiqueta": "Ostali prihodi",
+   "actual": "167.389",
+   "anterior": "1.510.981",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ostali prihodi (AOP 041+044+045)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1005,
+   "etiqueta": "Ukupno",
+   "actual": "37.330.662",
+   "anterior": "28.691.994",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ostali prihodi (AOP 041+044+045)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1025,
+   "etiqueta": "Intelektualne i osobne usluge",
+   "actual": "37.462.438",
+   "anterior": "37.738.160",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1026,
+   "etiqueta": "Usluga telefona, pošte i prijevoza",
+   "actual": "624.072",
+   "anterior": "681.676",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1027,
+   "etiqueta": "Usluge promidžbe i informiranja",
+   "actual": "482.497",
+   "anterior": "330.101",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1028,
+   "etiqueta": "Komunalne usluge",
+   "actual": "400.291",
+   "anterior": "278.617",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1029,
+   "etiqueta": "Zakupnine i najamnine",
+   "actual": "343.237",
+   "anterior": "276.325",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1030,
+   "etiqueta": "Računalne usluge",
+   "actual": "283.244",
+   "anterior": "222.052",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1031,
+   "etiqueta": "Usluge tekućeg i investicijskog održavanja",
+   "actual": "282.048",
+   "anterior": "295.745",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1032,
+   "etiqueta": "Zdravstvene i veterinarske usluge",
+   "actual": "110.243",
+   "anterior": "84.761",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1033,
+   "etiqueta": "Ostale usluge",
+   "actual": "1.328.394",
+   "anterior": "1.385.612",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1034,
+   "etiqueta": "Ukupno",
+   "actual": "41.316.464",
+   "anterior": "41.293.051",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Rashodi za usluge (AOP 088 do 096)"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1040,
+   "etiqueta": "Rashodi primanja igrača 1. momčadi",
+   "actual": "24.748.420",
+   "anterior": "24.727.216",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Intelektualne i osobne usluge"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1041,
+   "etiqueta": "Nekapitalizirani rashodi za naknade posrednicima",
+   "actual": "6.170.685",
+   "anterior": "3.926.553",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Intelektualne i osobne usluge"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1042,
+   "etiqueta": "Rashodi naknada trenerima 1. momčadi",
+   "actual": "2.334.903",
+   "anterior": "5.240.496",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Intelektualne i osobne usluge"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1043,
+   "etiqueta": "Rashodi naknada trenerima nogometne škole",
+   "actual": "1.960.298",
+   "anterior": "1.463.354",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Intelektualne i osobne usluge"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1044,
+   "etiqueta": "Rashodi stručne poslovne suradnje",
+   "actual": "479.244",
+   "anterior": "761.352",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Intelektualne i osobne usluge"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1045,
+   "etiqueta": "Ostale intelektualne i osobne usluge",
+   "actual": "1.768.888",
+   "anterior": "1.619.189",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Intelektualne i osobne usluge"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1046,
+   "etiqueta": "Ukupno",
+   "actual": "37.462.438",
+   "anterior": "37.738.160",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Intelektualne i osobne usluge"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1066,
+   "etiqueta": "Amortizacija registracija igrača",
+   "actual": "7.330.947",
+   "anterior": "6.117.746",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi amortizacije"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1067,
+   "etiqueta": "Amortizacija ostale dugotrajne imovine",
+   "actual": "663.405",
+   "anterior": "558.134",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Rashodi amortizacije"
+  },
+  {
+   "bloque": "b23",
+   "linea": 1068,
+   "etiqueta": "Ukupno",
+   "actual": "7.994.352",
+   "anterior": "6.675.880",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Rashodi amortizacije"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1076,
+   "etiqueta": "Rashodovana dugotrajna imovina",
+   "actual": "6.677.841",
+   "anterior": "5.630.669",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali rashodi (AOP 129+134)"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1077,
+   "etiqueta": "Rashodi uvjetnih transfernih naknada, ustupanja, solidarnih doprinosa i naknada za treniranje",
+   "actual": "1.771.882",
+   "anterior": "1.631.283",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali rashodi (AOP 129+134)"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1078,
+   "etiqueta": "Kazne, penali i naknade štete",
+   "actual": "955.466",
+   "anterior": "685.625",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali rashodi (AOP 129+134)"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1079,
+   "etiqueta": "Ispravak vrijednosti registracija igrača",
+   "actual": "225.811",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali rashodi (AOP 129+134)"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1080,
+   "etiqueta": "Ispravak vrijednosti potraživanja",
+   "actual": "142.500",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali rashodi (AOP 129+134)"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1081,
+   "etiqueta": "Ostali rashodi",
+   "actual": "204.786",
+   "anterior": "221.817",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali rashodi (AOP 129+134)"
+  },
+  {
+   "bloque": "b24",
+   "linea": 1082,
+   "etiqueta": "Ukupno",
+   "actual": "9.978.286",
+   "anterior": "8.169.394",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Ostali rashodi (AOP 129+134)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 454,
+  "actual": "78.375.746"
+ },
+ "total_gastos": {
+  "linea": 650,
+  "actual": "74.383.750"
+ },
+ "resultado": {
+  "linea": 662,
+  "actual": "3.991.996",
+  "anterior": "7.273.995"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Rashodovana dugotrajna imovina' de la Nota 12 (L1076) con 6.677.841 aunque el estado muestra 7.046.152 en L637?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Ostali rashodi (AOP 129+134)",
+   "texto": "La nota reagrupa partidas de forma distinta al estado (L637 vs L1076); la diferencia de 368.311 coincide con los ajustes de valor L1079+L1080, el total cuadra.",
+   "bloques": [
+    "b9",
+    "b24"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se trata 'Obveze poreza na dobit po obračunu' (L669) como impuesto a las ganancias aunque está después de VIŠAK PRIHODA y en 2025 está vacío?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Obveze poreza na dobit po obračunu",
+   "texto": "L669 figura fuera del cálculo de VIŠAK PRIHODA (AOP 149), sólo con importe 2024 (639.162).",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se toma 'VIŠAK PRIHODA (AOP 001-148)' (L662, 3.991.996) como resultado del ejercicio?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "VIŠAK PRIHODA (AOP 001-148)",
+   "texto": "El formato no-lucrativo no imprime un 'resultado del ejercicio' explícito; L662 es el excedente de ingresos sobre gastos.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en EUR (formato de organización sin fines de lucro croata). Diferencias de 1 unidad entre estado y Nota 10 (L574 vs L1026, L577 vs L1028) son redondeo. Notas b17 y b18 sin encabezado de escala, coinciden con el estado. Filas sin importe 2025 (L515, L565, L638, L669) cargadas con actual vacío; L1003 con '-'."
+}

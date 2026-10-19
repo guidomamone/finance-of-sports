@@ -1,0 +1,1212 @@
+{
+ "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.md",
+ "generatedAt": "2026-10-19T17:17:36.543Z",
+ "rubrosHuella": "2ac59d887b9863b5a39ea741045b6f6cfb6df399",
+ "rubros": [
+  {
+   "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od ulaznica - UEFA klupska natjecanja",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od ulaznica - Godišnje ulaznice",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "season_tickets",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od ulaznica - Članarine",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "member_dues",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani prihodi od ulaznica",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Prava emitiranja - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Komercijalni prihodi - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Komercijalni prihodi - Prodaja proizvoda",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "stadium_other",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani komercijalni prihodi",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "competition_bonus",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Donacije nepovezanih strana",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1158
+  },
+  {
+   "label": "Dohodak u naravi",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 912
+  },
+  {
+   "label": "Bonovi za ručak",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Naplaćena otpisana potraživanja",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali prihodi",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od ulaznica - VIP ulaznice i hospitality",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "matchday_competition",
+     0.96
+    ],
+    [
+     "stadium_other",
+     0.04
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1139
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Refundacije",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 937
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1154
+  },
+  {
+   "label": "Plaće igrača",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Porezi i doprinosi - igrači",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1148
+  },
+  {
+   "label": "Naknade šteta",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi primanja igrača",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1163
+  },
+  {
+   "label": "Prihod od potraživanja po sudskim sporovima",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Porezi i doprinosi - Ostali zaposlenici",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi prodaje robe/proizvoda - Izravni",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Troškovi prodaje robe/proizvoda - Ostali nerazvrstani",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1186
+  },
+  {
+   "label": "Prihod od raspolaganja registracijama igrača (uključujući prihod od ustupanja)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1143
+  },
+  {
+   "label": "Plaće stručnog stožera",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi primanja stručnog stožera",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "wages_squad",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1193
+  },
+  {
+   "label": "Troškovi sponzorstva i oglašavanja",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi komercijalnih aktivnosti",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi imovine i objekata",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacija dugotrajne materijalne imovine",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Plaće ostalih zaposlenika",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "wages_squad",
+     0.02
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1177
+  },
+  {
+   "label": "Porezi i doprinosi - stručni stožer",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Naknade i kazne savezima",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1166
+  },
+  {
+   "label": "Troškovi utakmica",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Trošak imovine s pravom korištenja (operativni najam)",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "depreciation",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1188
+  },
+  {
+   "label": "Donacije",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi loža i reprezentacije",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Članarine i kotizacije",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Intelektualne usluge",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Službena putovanja",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Povremeni rad",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "other_expenses",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "wages_squad",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Energija",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Telefon, Internet i prijevoz",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Komunalne usluge",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Potrošni materijal",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.69
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Financijske usluge",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Ostali rashodi",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Osiguranje",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Amortizacija nematerijalne imovine (registracije igrača)",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1138
+  },
+  {
+   "label": "Umanjenje vrijednosti nematerijalne imovine (registracije igrača)",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_impairment",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "player_impairment",
+     0.93
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1159
+  },
+  {
+   "label": "Sitni inventar",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Ispravak vrijednosti potraživanja",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Troškovi stjecanja registracija igrača (uključujući troškove ustupanja)",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1148
+  },
+  {
+   "label": "Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "other_amortisation",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ]
+   ],
+   "tokens": 1150
+  },
+  {
+   "label": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "exceptional_items",
+     0.18
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Nekapitalizirani troškovi za naknade agentima/posrednicima",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1128
+  }
+ ]
+}

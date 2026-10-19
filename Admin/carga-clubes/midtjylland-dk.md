@@ -90,6 +90,45 @@ _antes de Matthew Benham (data/gestiones/dk.js):_
 Benham es el accionista mayoritario de FCM Holding desde julio de 2014 (día 01 aproximado). El chairman operativo (Rasmus Ankersen) es otro cargo y no se carga.
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Nettoomsætning Revenue | pág. 26, Jev 1 |
+| 2 | Andre driftsindtægter Other operating income | pág. 26, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Andre eksterne omkostninger Other external expenses | pág. 26, Jev 0.93 |
+| 2 | Lønninger | pág. 34, Claude 0.88 |
+| 3 | Pensioner | pág. 34, Claude 0.87 |
+| 4 | Andre omkostninger til social sikring | pág. 34, Jev 0.91 |
+| 5 | Afskrivninger af immaterielle anlægsaktiver | pág. 34, precedente |
+| 6 | Afskrivninger af materielle anlægsaktiver | pág. 34, precedente |
+| 7 | Andre driftsomkostninger Other operating expenses | pág. 26, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): dk-superliga, verificado contra roster cacheado de "2019–20 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia única por palabras "Midtjylland" = "FC Midtjylland".
+```
+
 ## 2019
 
 ### Meta
@@ -109,3 +148,11 @@ Depositado en Erhvervsstyrelsen (registro mercantil danés). Transcripción comp
 ```
 
 2026-10-15 (to-do 232 ab): 2019 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.
+
+### midtjylland-dk-aarsrapport-2020-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

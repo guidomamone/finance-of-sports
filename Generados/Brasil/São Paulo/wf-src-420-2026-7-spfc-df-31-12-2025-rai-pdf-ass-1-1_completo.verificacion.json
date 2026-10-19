@@ -1,0 +1,699 @@
+{
+ "pdf": "Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.pdf",
+ "md": "Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.md",
+ "generado": "2026-10-19T18:34:29.249Z",
+ "estado": "ok",
+ "clubId": "saopaulo-br",
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.pdf",
+   "campo": "anio",
+   "valor": "2025",
+   "linea": null,
+   "motivo": "el nombre del archivo dice 2026 (publicado en 2026) pero el documento es el balance al 31-12-2025 (df-31-12-2025); Claude 2026-10-19",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.552713678800501e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 727.572; el sitio tiene 722.072"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Outras receitas (nota 24)\" (L622) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: Es detalle por atleta; el total ya está en el estado.",
+  "duda de localizar confirmada por las sumas (usar-cuadro-por-segmento, \"Sociais e esportes amadores\"): ¿Se usa el cuadro de nota 20 (b63) para abrir los ingresos y gastos de Social/Esportes amadores y Basquete?",
+  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Sociais e esportes profissionais (nota 20)\"): ¿Se deja afuera de la carga el cuadro por segmento de b63 (L2539-L2557, Social/Esp. Amadores vs Basquete Prof.)?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1073.921,
+  "gastos": 891.735,
+  "financiero": -125.205,
+  "impuesto": 0,
+  "resultadoImpreso": 56.981,
+  "resultadoParaCargar": 56.981,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Negociação de atestados liberatórios de atletas (nota 22)",
+   "lado": "ingreso",
+   "M": 283.756,
+   "pagina": 21,
+   "linea": 616,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Direitos de transmissão de TV/Premiações",
+   "lado": "ingreso",
+   "M": 245.095,
+   "pagina": 21,
+   "linea": 617,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Publicidade e patrocínio",
+   "lado": "ingreso",
+   "M": 121.386,
+   "pagina": 21,
+   "linea": 618,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Projeto sócio torcedor",
+   "lado": "ingreso",
+   "M": 56.243,
+   "pagina": 21,
+   "linea": 619,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Arrecadação de jogos",
+   "lado": "ingreso",
+   "M": 64.176,
+   "pagina": 21,
+   "linea": 620,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Licenciamento da marca",
+   "lado": "ingreso",
+   "M": 32.743,
+   "pagina": 21,
+   "linea": 621,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Reversão Provisão Perdas",
+   "lado": "ingreso",
+   "M": 8.851,
+   "pagina": 71,
+   "linea": 2749,
+   "origen": "nota que desglosa \"Outras receitas (nota 24)\""
+  },
+  {
+   "etiqueta": "Compensação de Ofício Tributos Federais",
+   "lado": "ingreso",
+   "M": 22.267,
+   "pagina": 71,
+   "linea": 2750,
+   "origen": "nota que desglosa \"Outras receitas (nota 24)\""
+  },
+  {
+   "etiqueta": "Receitas diversas",
+   "lado": "ingreso",
+   "M": 1.431,
+   "pagina": 71,
+   "linea": 2752,
+   "origen": "nota que desglosa \"Outras receitas (nota 24)\""
+  },
+  {
+   "etiqueta": "Contribuições e taxas",
+   "lado": "ingreso",
+   "M": 53.744,
+   "pagina": 21,
+   "linea": 624,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Departamentos e esportes amadores",
+   "lado": "ingreso",
+   "M": 16.025,
+   "pagina": 21,
+   "linea": 625,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Festas e eventos sociais",
+   "lado": "ingreso",
+   "M": 0.814,
+   "pagina": 21,
+   "linea": 626,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Aluguéis e patrocínios",
+   "lado": "ingreso",
+   "M": 3.488,
+   "pagina": 21,
+   "linea": 627,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Camarotes e cadeiras cativas",
+   "lado": "ingreso",
+   "M": 16.788,
+   "pagina": 21,
+   "linea": 631,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "M": 70.086,
+   "pagina": 21,
+   "linea": 632,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Aluguéis",
+   "lado": "ingreso",
+   "M": 17.286,
+   "pagina": 21,
+   "linea": 633,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 14.782,
+   "pagina": 21,
+   "linea": 634,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 56.074,
+   "pagina": 21,
+   "linea": 636,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Direito de Arena",
+   "lado": "ingreso",
+   "M": -11.114,
+   "pagina": 21,
+   "linea": 638,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Pessoal",
+   "lado": "gasto",
+   "M": 225.701,
+   "pagina": 22,
+   "linea": 654,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Encargos trabalhistas",
+   "lado": "gasto",
+   "M": 28.942,
+   "pagina": 22,
+   "linea": 655,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Benefícios",
+   "lado": "gasto",
+   "M": 9.297,
+   "pagina": 22,
+   "linea": 656,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prêmios",
+   "lado": "gasto",
+   "M": 8.649,
+   "pagina": 22,
+   "linea": 657,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Direito de uso de imagem",
+   "lado": "gasto",
+   "M": 102.509,
+   "pagina": 22,
+   "linea": 658,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Amortização do custo de atletas formados (nota 10.3)",
+   "lado": "gasto",
+   "M": 7.335,
+   "pagina": 22,
+   "linea": 659,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Amortização/baixa de contratos de atletas profissionais (nota 10.1)",
+   "lado": "gasto",
+   "M": 97.549,
+   "pagina": 22,
+   "linea": 660,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Mecanismo de solidariedade",
+   "lado": "gasto",
+   "M": 0.05,
+   "pagina": 22,
+   "linea": 661,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Arbitragens, federações e confederações",
+   "lado": "gasto",
+   "M": 6.008,
+   "pagina": 22,
+   "linea": 662,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Despesas com jogos",
+   "lado": "gasto",
+   "M": 59.19,
+   "pagina": 22,
+   "linea": 663,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Intermediações sobre negociações c/ atletas (nota 22)",
+   "lado": "gasto",
+   "M": 31.35,
+   "pagina": 22,
+   "linea": 664,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Água/Luz/Telefone",
+   "lado": "gasto",
+   "M": 2.339,
+   "pagina": 22,
+   "linea": 665,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Manutenções",
+   "lado": "gasto",
+   "M": 1.201,
+   "pagina": 22,
+   "linea": 666,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Depreciação e amortização (software/marcas)",
+   "lado": "gasto",
+   "M": 5.435,
+   "pagina": 22,
+   "linea": 667,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Gerais",
+   "lado": "gasto",
+   "M": 9.431,
+   "pagina": 22,
+   "linea": 668,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 18.426,
+   "pagina": 22,
+   "linea": 669,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Serviços",
+   "lado": "gasto",
+   "M": 37.118,
+   "pagina": 22,
+   "linea": 670,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Contingências (nota 18)",
+   "lado": "gasto",
+   "M": 49.073,
+   "pagina": 22,
+   "linea": 671,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Tributos",
+   "lado": "gasto",
+   "M": 29.358,
+   "pagina": 22,
+   "linea": 673,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Pessoal",
+   "lado": "gasto",
+   "M": 24.377,
+   "pagina": 22,
+   "linea": 675,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Encargos trabalhistas",
+   "lado": "gasto",
+   "M": 3.72,
+   "pagina": 22,
+   "linea": 676,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Benefícios",
+   "lado": "gasto",
+   "M": 5.024,
+   "pagina": 22,
+   "linea": 677,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prêmios",
+   "lado": "gasto",
+   "M": 0.002,
+   "pagina": 22,
+   "linea": 678,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Arbitragens, federações e confederações",
+   "lado": "gasto",
+   "M": 1.236,
+   "pagina": 22,
+   "linea": 679,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Despesas com jogos e festas",
+   "lado": "gasto",
+   "M": 11.671,
+   "pagina": 22,
+   "linea": 680,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Depreciação e amortização (software/marcas)",
+   "lado": "gasto",
+   "M": 2.754,
+   "pagina": 22,
+   "linea": 681,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Manutenções",
+   "lado": "gasto",
+   "M": 0.363,
+   "pagina": 22,
+   "linea": 682,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 5.1,
+   "pagina": 22,
+   "linea": 683,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Serviços de Limpeza/Lavanderia/Medicina",
+   "lado": "gasto",
+   "M": 12.258,
+   "pagina": 22,
+   "linea": 684,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Água/Luz/Telefone",
+   "lado": "gasto",
+   "M": 8.328,
+   "pagina": 22,
+   "linea": 685,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Tributos",
+   "lado": "gasto",
+   "M": 0.087,
+   "pagina": 22,
+   "linea": 686,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Perdas estimadas (nota 7)",
+   "lado": "gasto",
+   "M": 0.052,
+   "pagina": 22,
+   "linea": 687,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Gerais",
+   "lado": "gasto",
+   "M": 2.036,
+   "pagina": 22,
+   "linea": 688,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Pessoal",
+   "lado": "gasto",
+   "M": 3.184,
+   "pagina": 23,
+   "linea": 703,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Encargos trabalhistas",
+   "lado": "gasto",
+   "M": 0.665,
+   "pagina": 23,
+   "linea": 704,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Benefícios",
+   "lado": "gasto",
+   "M": 0.871,
+   "pagina": 23,
+   "linea": 705,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Despesas gerais e com jogos",
+   "lado": "gasto",
+   "M": 2.509,
+   "pagina": 23,
+   "linea": 707,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Depreciação e amortização (software/marcas)",
+   "lado": "gasto",
+   "M": 5.367,
+   "pagina": 23,
+   "linea": 708,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Água/luz/telefone",
+   "lado": "gasto",
+   "M": 3.651,
+   "pagina": 23,
+   "linea": 709,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Manutenções",
+   "lado": "gasto",
+   "M": 0.252,
+   "pagina": 23,
+   "linea": 710,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 1.069,
+   "pagina": 23,
+   "linea": 711,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Serviços de limpeza/lavanderia/medicina",
+   "lado": "gasto",
+   "M": 10.256,
+   "pagina": 23,
+   "linea": 712,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Tributos",
+   "lado": "gasto",
+   "M": 1.51,
+   "pagina": 23,
+   "linea": 713,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Pessoal",
+   "lado": "gasto",
+   "M": 23.002,
+   "pagina": 23,
+   "linea": 715,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Encargos trabalhistas",
+   "lado": "gasto",
+   "M": 2.365,
+   "pagina": 23,
+   "linea": 716,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Benefícios",
+   "lado": "gasto",
+   "M": 4.746,
+   "pagina": 23,
+   "linea": 717,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prêmios",
+   "lado": "gasto",
+   "M": 0.441,
+   "pagina": 23,
+   "linea": 718,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Depreciação e amortização (software/marcas)",
+   "lado": "gasto",
+   "M": 1.14,
+   "pagina": 23,
+   "linea": 719,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Água/luz/telefone",
+   "lado": "gasto",
+   "M": 1.018,
+   "pagina": 23,
+   "linea": 720,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Serviços",
+   "lado": "gasto",
+   "M": 11.672,
+   "pagina": 23,
+   "linea": 721,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Manutenções",
+   "lado": "gasto",
+   "M": 0.238,
+   "pagina": 23,
+   "linea": 722,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Contingências (nota 18)",
+   "lado": "gasto",
+   "M": 0.153,
+   "pagina": 23,
+   "linea": 723,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 4.644,
+   "pagina": 23,
+   "linea": 724,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Gerais",
+   "lado": "gasto",
+   "M": 9.134,
+   "pagina": 23,
+   "linea": 725,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Tributos",
+   "lado": "gasto",
+   "M": 0.154,
+   "pagina": 23,
+   "linea": 726,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Rateios de serviços de alimentação, transporte e lavanderia.",
+   "lado": "gasto",
+   "M": -2.275,
+   "pagina": 23,
+   "linea": 727,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": 14.731,
+   "linea": 729
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -116.041,
+   "linea": 730
+  },
+  {
+   "etiqueta": "Resultado líquido em cotas de fundos",
+   "M": -23.895,
+   "linea": 731
+  }
+ ],
+ "impuesto": []
+}

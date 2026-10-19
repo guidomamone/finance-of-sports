@@ -1,0 +1,270 @@
+{
+  "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md",
+  "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.pdf",
+  "club": "udechile-cl",
+  "year": 2025,
+  "generatedAt": "2026-10-19T16:42:17.547Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Borderó",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        12237.042
+      ],
+      "glosa": "Borderó"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        8819.093
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Participación torneos Internacionales",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        6314.391
+      ],
+      "glosa": "Participación torneos Internacionales"
+    },
+    {
+      "label": "Derechos de T.V.",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        5315.726
+      ],
+      "glosa": "Derechos de T.V."
+    },
+    {
+      "label": "Ingresos por ventas de productos",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        1356.242
+      ],
+      "glosa": "Ingresos por ventas de productos"
+    },
+    {
+      "label": "(ventas de pases)",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\"",
+      "values": [
+        787.092
+      ],
+      "glosa": "(ventas de pases)"
+    },
+    {
+      "label": "Cesión temporal de derechos federativos (Préstamos)",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\"",
+      "values": [
+        28.387
+      ],
+      "glosa": "Cesión temporal de derechos federativos (Préstamos)"
+    },
+    {
+      "label": "Otros (Derechos de Formación, Solidaridad, etc.)",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\"",
+      "values": [
+        1
+      ],
+      "glosa": "Otros (Derechos de Formación, Solidaridad, etc.)"
+    },
+    {
+      "label": "Ingresos varios",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        682.191
+      ],
+      "glosa": "Ingresos varios"
+    },
+    {
+      "label": "Borderó (costos directos)",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        5062.234
+      ],
+      "glosa": "Borderó (costos directos)"
+    },
+    {
+      "label": "Remuneraciones",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        11689.019
+      ],
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Amortización de pases",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        3194.759
+      ],
+      "glosa": "Amortización de pases"
+    },
+    {
+      "label": "Deterioro de pases",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        2669.92
+      ],
+      "glosa": "Deterioro de pases"
+    },
+    {
+      "label": "Costo de venta pases de jugadores",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        49.148
+      ],
+      "glosa": "Costo de venta pases de jugadores"
+    },
+    {
+      "label": "Costo de ventas de productos",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        835.121
+      ],
+      "glosa": "Costo de ventas de productos"
+    },
+    {
+      "label": "Concentraciones y viajes",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        1470.264
+      ],
+      "glosa": "Concentraciones y viajes"
+    },
+    {
+      "label": "Indumentaria y equipamiento deportivo",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        430.278
+      ],
+      "glosa": "Indumentaria y equipamiento deportivo"
+    },
+    {
+      "label": "Otros gastos de operación",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        1817.335
+      ],
+      "glosa": "Otros gastos de operación"
+    },
+    {
+      "label": "Servicios básicos",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        69.96
+      ],
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        669.815
+      ],
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones y amortizaciones",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        400.884
+      ],
+      "glosa": "Depreciaciones y amortizaciones"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        212.705
+      ],
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneraciones Administración",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        2227.641
+      ],
+      "glosa": "Remuneraciones Administración"
+    },
+    {
+      "label": "Multas Conmebol y otras",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        898.966
+      ],
+      "glosa": "Multas Conmebol y otras"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        861.889
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Otros Gastos de Administración",
+      "lado": "expense",
+      "page": 73,
+      "section": "nota que desglosa \"Gasto de administración\"",
+      "values": [
+        1338.657
+      ],
+      "glosa": "Otros Gastos de Administración"
+    }
+  ]
+}

@@ -14,9 +14,11 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'fredericia-dk': {
     2019: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2019–20 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328192521"},
+    2020: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2019–20 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328192521"},
   },
   'midtjylland-dk': {
     2019: {"estadio":"MCH Arena","capacidad":11800,"sponsor":"Det Faglige Hus","marca":"Nike","temporada":"2018–19 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1324790591"},
+    2020: {"estadio":"MCH Arena","capacidad":11800,"sponsor":"Det Faglige Hus","marca":"Nike","temporada":"2019–20 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375256115"},
   },
   'nordsjaelland-dk': {
     2024: {"estadio":"Right to Dream Park","capacidad":9900,"sponsor":"DHL","marca":"Nike","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
@@ -26,6 +28,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'silkeborg-dk': {
     2024: {"estadio":"JYSK Park","capacidad":10000,"sponsor":"JYSK","marca":"Adidas","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
+    2025: {"estadio":"JYSK Park","capacidad":10000,"sponsor":"Jysk","marca":"Adidas","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'sonderjyske-dk': {
     2022: {"estadio":"Sydbank Park","capacidad":10000,"sponsor":"Danfoss","marca":"Hummel","temporada":"2021–22 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379231192"},
@@ -35,5 +38,6 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'viborg-dk': {
     2024: {"estadio":"Energi Viborg Arena","capacidad":9566,"sponsor":"Peter Larsen Kaffe, SkilteCentret","marca":"Capelli Sport","temporada":"2023–24 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377453087"},
+    2025: {"estadio":"Energi Viborg Arena","capacidad":10000,"sponsor":"Peter Larsen Kaffe","marca":"Capelli Sport","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
   },
 });

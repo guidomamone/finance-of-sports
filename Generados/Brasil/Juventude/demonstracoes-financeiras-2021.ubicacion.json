@@ -1,0 +1,205 @@
+{
+ "pdf": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf",
+ "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
+ "mdSha1": "1dabc093c0da3f0a004df3eaf17a2e1b79066ba5",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:35:26.922Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    113,
+    132
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    146,
+    171
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    183,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    210,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    231,
+    257
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    300,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    308,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    322,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    346,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    363,
+    368
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    374,
+    385
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    393,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    412,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    426,
+    430
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    434,
+    437
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    441,
+    453
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    459,
+    462
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    470,
+    473
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    477,
+    482
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    496,
+    505
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    513,
+    518
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    522,
+    527
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b20"
+ ],
+ "notas_gastos": [
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados (Demonstração do Déficit/Superávit) en b3, en reales. Nota 19 (b20) desglosa la Receita Operacional Bruta; nota 20 (b21) desglosa el Custo da Atividade do Desporto. Solo estados individuales del club."
+}

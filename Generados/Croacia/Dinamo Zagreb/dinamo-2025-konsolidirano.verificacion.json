@@ -1,0 +1,641 @@
+{
+ "pdf": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.pdf",
+ "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.md",
+ "generado": "2026-10-19T18:34:29.164Z",
+ "estado": "ok",
+ "clubId": "dinamozagreb-hr",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.pdf",
+   "campo": "cierre",
+   "valor": "2025-12-31",
+   "linea": null,
+   "motivo": "el índice dice 'año que termina el 31 de diciembre de 2025' (.md líneas 25-28)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.3322676295501878e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2024 de este documento suma ingresos 73.690409; el sitio tiene 57.562235"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 6\": \"Ostali nerazvrstani poslovni prihodi\" (L335) se abre en las 7 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Ostali nerazvrstani poslovni rashodi\" (L379) se abre en las 16 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar que no afecta la carga: Muestra ingresos por refacturación y donaciones a la Fundación, pero no desglosa un renglón del estado.",
+  "duda de localizar que no afecta la carga: Arriba de b16 se mencionan reclasificaciones de partidas previamente presentadas (3.212.457 y 2.706.911 eura)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 73.685549,
+  "gastos": 69.115585,
+  "financiero": -0.319397,
+  "impuesto": -0.079177,
+  "resultadoImpreso": 4.17139,
+  "resultadoParaCargar": 4.17139,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Prihodi od ulaznica - Nacionalna natjecanja",
+   "lado": "ingreso",
+   "M": 1.490349,
+   "pagina": 10,
+   "linea": 303,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prihodi od ulaznica - UEFA klupska natjecanja",
+   "lado": "ingreso",
+   "M": 1.569733,
+   "pagina": 10,
+   "linea": 304,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prihodi od ulaznica - VIP ulaznice i hospitality",
+   "lado": "ingreso",
+   "M": 1.302857,
+   "pagina": 10,
+   "linea": 305,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prihodi od ulaznica - Godišnje ulaznice",
+   "lado": "ingreso",
+   "M": 1.296033,
+   "pagina": 10,
+   "linea": 306,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prihodi od ulaznica - Članarine",
+   "lado": "ingreso",
+   "M": 1.224303,
+   "pagina": 10,
+   "linea": 307,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ostali nerazvrstani prihodi od ulaznica",
+   "lado": "ingreso",
+   "M": 0.002,
+   "pagina": 10,
+   "linea": 308,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)",
+   "lado": "ingreso",
+   "M": 1.775,
+   "pagina": 10,
+   "linea": 310,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi",
+   "lado": "ingreso",
+   "M": 0.787934,
+   "pagina": 10,
+   "linea": 311,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+   "lado": "ingreso",
+   "M": 1.921995,
+   "pagina": 10,
+   "linea": 314,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prava emitiranja - Nacionalna natjecanja",
+   "lado": "ingreso",
+   "M": 1.1531,
+   "pagina": 10,
+   "linea": 316,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Komercijalni prihodi - Nacionalna natjecanja",
+   "lado": "ingreso",
+   "M": 1.172457,
+   "pagina": 10,
+   "linea": 319,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Komercijalni prihodi - Prodaja proizvoda",
+   "lado": "ingreso",
+   "M": 5.302439,
+   "pagina": 10,
+   "linea": 320,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+   "lado": "ingreso",
+   "M": 0.150624,
+   "pagina": 10,
+   "linea": 322,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ostali nerazvrstani komercijalni prihodi",
+   "lado": "ingreso",
+   "M": 0.158773,
+   "pagina": 10,
+   "linea": 323,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+   "lado": "ingreso",
+   "M": 22.667797,
+   "pagina": 10,
+   "linea": 325,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+   "lado": "ingreso",
+   "M": 0.055,
+   "pagina": 10,
+   "linea": 329,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave",
+   "lado": "ingreso",
+   "M": 1.799225,
+   "pagina": 10,
+   "linea": 330,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Donacije nepovezanih strana",
+   "lado": "ingreso",
+   "M": 0.318535,
+   "pagina": 10,
+   "linea": 331,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Bonovi za ručak",
+   "lado": "ingreso",
+   "M": 0.16937,
+   "pagina": 30,
+   "linea": 1020,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\""
+  },
+  {
+   "etiqueta": "Refundacije",
+   "lado": "ingreso",
+   "M": 0.123366,
+   "pagina": 30,
+   "linea": 1021,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\""
+  },
+  {
+   "etiqueta": "Dohodak u naravi",
+   "lado": "ingreso",
+   "M": 0.021267,
+   "pagina": 30,
+   "linea": 1022,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\""
+  },
+  {
+   "etiqueta": "Naknade šteta",
+   "lado": "ingreso",
+   "M": 0.010591,
+   "pagina": 30,
+   "linea": 1023,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\""
+  },
+  {
+   "etiqueta": "Prihod od potraživanja po sudskim sporovima",
+   "lado": "ingreso",
+   "M": 0.002892,
+   "pagina": 30,
+   "linea": 1024,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\""
+  },
+  {
+   "etiqueta": "Naplaćena otpisana potraživanja",
+   "lado": "ingreso",
+   "M": 0.002748,
+   "pagina": 30,
+   "linea": 1025,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\""
+  },
+  {
+   "etiqueta": "Ostali prihodi",
+   "lado": "ingreso",
+   "M": 0.028854,
+   "pagina": 30,
+   "linea": 1026,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\""
+  },
+  {
+   "etiqueta": "Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)",
+   "lado": "ingreso",
+   "M": 26.390456,
+   "pagina": 12,
+   "linea": 397,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Prihod od raspolaganja registracijama igrača (uključujući prihod od ustupanja)",
+   "lado": "ingreso",
+   "M": 2.787851,
+   "pagina": 12,
+   "linea": 400,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Troškovi prodaje robe/proizvoda - Izravni",
+   "lado": "gasto",
+   "M": 3.36844,
+   "pagina": 11,
+   "linea": 350,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Troškovi prodaje robe/proizvoda - Ostali nerazvrstani",
+   "lado": "gasto",
+   "M": 1.935026,
+   "pagina": 11,
+   "linea": 351,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Plaće igrača",
+   "lado": "gasto",
+   "M": 22.002777,
+   "pagina": 11,
+   "linea": 353,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Porezi i doprinosi - igrači",
+   "lado": "gasto",
+   "M": 1.003937,
+   "pagina": 11,
+   "linea": 354,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ostali nerazvrstani troškovi primanja igrača",
+   "lado": "gasto",
+   "M": 2.416231,
+   "pagina": 11,
+   "linea": 355,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Plaće stručnog stožera",
+   "lado": "gasto",
+   "M": 2.062444,
+   "pagina": 11,
+   "linea": 357,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Porezi i doprinosi - stručni stožer",
+   "lado": "gasto",
+   "M": 0.239129,
+   "pagina": 11,
+   "linea": 358,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ostali nerazvrstani troškovi primanja stručnog stožera",
+   "lado": "gasto",
+   "M": 0.837039,
+   "pagina": 11,
+   "linea": 359,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Plaće ostalih zaposlenika",
+   "lado": "gasto",
+   "M": 5.854144,
+   "pagina": 11,
+   "linea": 361,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Porezi i doprinosi - Ostali zaposlenici",
+   "lado": "gasto",
+   "M": 2.256694,
+   "pagina": 11,
+   "linea": 362,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
+   "lado": "gasto",
+   "M": 0.115996,
+   "pagina": 11,
+   "linea": 363,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Amortizacija dugotrajne materijalne imovine",
+   "lado": "gasto",
+   "M": 0.376431,
+   "pagina": 11,
+   "linea": 367,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
+   "lado": "gasto",
+   "M": 0.382958,
+   "pagina": 11,
+   "linea": 369,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Trošak imovine s pravom korištenja (operativni najam)",
+   "lado": "gasto",
+   "M": 0.530263,
+   "pagina": 11,
+   "linea": 372,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Troškovi utakmica",
+   "lado": "gasto",
+   "M": 2.956863,
+   "pagina": 11,
+   "linea": 373,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Troškovi sponzorstva i oglašavanja",
+   "lado": "gasto",
+   "M": 0.465442,
+   "pagina": 11,
+   "linea": 374,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Troškovi komercijalnih aktivnosti",
+   "lado": "gasto",
+   "M": 0.237595,
+   "pagina": 11,
+   "linea": 375,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Troškovi imovine i objekata",
+   "lado": "gasto",
+   "M": 0.483343,
+   "pagina": 11,
+   "linea": 376,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Intelektualne usluge",
+   "lado": "gasto",
+   "M": 1.38659,
+   "pagina": 31,
+   "linea": 1043,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Službena putovanja",
+   "lado": "gasto",
+   "M": 0.76937,
+   "pagina": 31,
+   "linea": 1044,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Troškovi loža i reprezentacije",
+   "lado": "gasto",
+   "M": 0.713598,
+   "pagina": 31,
+   "linea": 1045,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Povremeni rad",
+   "lado": "gasto",
+   "M": 0.618277,
+   "pagina": 31,
+   "linea": 1046,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Naknade i kazne savezima",
+   "lado": "gasto",
+   "M": 0.567305,
+   "pagina": 31,
+   "linea": 1047,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Energija",
+   "lado": "gasto",
+   "M": 0.515695,
+   "pagina": 31,
+   "linea": 1048,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Komunalne usluge",
+   "lado": "gasto",
+   "M": 0.422662,
+   "pagina": 31,
+   "linea": 1049,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Telefon, Internet i prijevoz",
+   "lado": "gasto",
+   "M": 0.451802,
+   "pagina": 31,
+   "linea": 1050,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Donacije",
+   "lado": "gasto",
+   "M": 0.322002,
+   "pagina": 31,
+   "linea": 1051,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Potrošni materijal",
+   "lado": "gasto",
+   "M": 0.227317,
+   "pagina": 31,
+   "linea": 1052,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Članarine i kotizacije",
+   "lado": "gasto",
+   "M": 0.144924,
+   "pagina": 31,
+   "linea": 1053,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Ispravak vrijednosti potraživanja",
+   "lado": "gasto",
+   "M": 0.1425,
+   "pagina": 31,
+   "linea": 1054,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Sitni inventar",
+   "lado": "gasto",
+   "M": 0.114286,
+   "pagina": 31,
+   "linea": 1055,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Financijske usluge",
+   "lado": "gasto",
+   "M": 0.086907,
+   "pagina": 31,
+   "linea": 1056,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Osiguranje",
+   "lado": "gasto",
+   "M": 0.051903,
+   "pagina": 31,
+   "linea": 1057,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Ostali rashodi",
+   "lado": "gasto",
+   "M": 0.70421,
+   "pagina": 31,
+   "linea": 1058,
+   "origen": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\""
+  },
+  {
+   "etiqueta": "Amortizacija nematerijalne imovine (registracije igrača)",
+   "lado": "gasto",
+   "M": 7.330947,
+   "pagina": 12,
+   "linea": 395,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Umanjenje vrijednosti nematerijalne imovine (registracije igrača)",
+   "lado": "gasto",
+   "M": 0.225811,
+   "pagina": 12,
+   "linea": 396,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Troškovi stjecanja registracija igrača (uključujući troškove ustupanja)",
+   "lado": "gasto",
+   "M": 0.209811,
+   "pagina": 12,
+   "linea": 399,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Nekapitalizirani troškovi za naknade agentima/posrednicima",
+   "lado": "gasto",
+   "M": 6.170685,
+   "pagina": 12,
+   "linea": 404,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",
+   "lado": "gasto",
+   "M": 0.413322,
+   "pagina": 12,
+   "linea": 407,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)"
+  },
+  {
+   "etiqueta": "Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom",
+   "lado": "gasto",
+   "M": 0.000909,
+   "pagina": 12,
+   "linea": 408,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financijski prihodi",
+   "M": 0.179345,
+   "linea": 410
+  },
+  {
+   "etiqueta": "Financijski rashodi",
+   "M": -0.488039,
+   "linea": 411
+  },
+  {
+   "etiqueta": "Neto tečajne razlike/(gubici)",
+   "M": -0.010703,
+   "linea": 412
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Porezni prihod/(rashod)",
+   "M": -0.079177,
+   "linea": 417
+  }
+ ]
+}

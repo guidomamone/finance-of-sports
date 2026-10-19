@@ -1,0 +1,550 @@
+{
+  "md": "Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.md",
+  "pdf": "Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.pdf",
+  "club": "botafogosp-br",
+  "year": 2025,
+  "generatedAt": "2026-10-19T16:42:16.907Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Cotas de Participação (i)",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        12.8825
+      ],
+      "glosa": "Cuotas de participación (i)"
+    },
+    {
+      "label": "Patrocínios e Parcerias (ii)",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        3.499882
+      ],
+      "glosa": "Patrocinios y alianzas (ii)"
+    },
+    {
+      "label": "Sócio Torcedor (iii)",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        2.098698
+      ],
+      "glosa": "Socios abonados (iii)"
+    },
+    {
+      "label": "Transação de Atletas",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        7.874633
+      ],
+      "glosa": "Traspaso de deportistas"
+    },
+    {
+      "label": "Arrecadação de Jogos (iv)",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        1.365954
+      ],
+      "glosa": "Recaudación de taquilla (iv)"
+    },
+    {
+      "label": "Receita com Eventos e Shows",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        0.990865
+      ],
+      "glosa": "Ingresos por eventos y espectáculos"
+    },
+    {
+      "label": "Receita de Aluguel – (v)",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        0.997283
+      ],
+      "glosa": "Ingresos por arrendamientos – (v)"
+    },
+    {
+      "label": "Direito de Transmissão",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        14.46319
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Impostos Incidentes sobre Receitas (TEF)",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        -1.808229
+      ],
+      "glosa": "Impuestos sobre los ingresos (TEF)"
+    },
+    {
+      "label": "Despesas Sócio Torcedor",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        -0.279213
+      ],
+      "glosa": "Gastos de socios abonados"
+    },
+    {
+      "label": "Repasse de Arrecadação de Jogos",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\"",
+      "values": [
+        -0.00896
+      ],
+      "glosa": "Cesión de recaudación de partidos"
+    },
+    {
+      "label": "Outros Receitas (Despesas) Operacionais",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.770998
+      ],
+      "glosa": "Otros ingresos (gastos) de explotación"
+    },
+    {
+      "label": "Salários",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        12.376409
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Direito de Imagem",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        9.752867
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Férias",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        2.022763
+      ],
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "INSS e FGTS",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        1.234149
+      ],
+      "glosa": "Seguridad social (INSS y FGTS)"
+    },
+    {
+      "label": "Prêmios e Gratificações",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        0.173398
+      ],
+      "glosa": "Primas y gratificaciones"
+    },
+    {
+      "label": "13º Salário",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        1.246241
+      ],
+      "glosa": "Décimotercer salario"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        0.796653
+      ],
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Assistência Médica Odontológica",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        0.01857
+      ],
+      "glosa": "Asistencia médica y odontológica"
+    },
+    {
+      "label": "Amortização de Direito de Jogadores",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        2.188831
+      ],
+      "glosa": "Amortización de derechos de jugadores"
+    },
+    {
+      "label": "Luvas e Comissões Contratuais",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        1.244084
+      ],
+      "glosa": "Primas de fichaje y comisiones contractuales"
+    },
+    {
+      "label": "Ajuda de Custo",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        1.54711
+      ],
+      "glosa": "Dietas y asignaciones"
+    },
+    {
+      "label": "Cessão de Atletas e Empréstimos",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        1.130822
+      ],
+      "glosa": "Cesión y préstamo de deportistas"
+    },
+    {
+      "label": "Outros Custos",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        0.920708
+      ],
+      "glosa": "Otros costes"
+    },
+    {
+      "label": "Custos com Campeonato Estadual",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        3.362731
+      ],
+      "glosa": "Costes del campeonato estatal"
+    },
+    {
+      "label": "Custos com Campeonato Nacional",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        2.300229
+      ],
+      "glosa": "Costes del campeonato nacional"
+    },
+    {
+      "label": "Custos com Futebol Base",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        0.278948
+      ],
+      "glosa": "Costes de fútbol base"
+    },
+    {
+      "label": "Outros Custos com Futebol",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        3.769933
+      ],
+      "glosa": "Otros costes de fútbol"
+    },
+    {
+      "label": "Custos com Eventos e Shows",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\"",
+      "values": [
+        0.782947
+      ],
+      "glosa": "Costes de eventos y espectáculos"
+    },
+    {
+      "label": "Salários",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        1.769977
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "INSS e FGTS",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        1.046461
+      ],
+      "glosa": "Seguridad social (INSS y FGTS)"
+    },
+    {
+      "label": "Férias",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.253471
+      ],
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "13º Salário",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        -0.021533
+      ],
+      "glosa": "Décimotercer salario"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.324739
+      ],
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Processos e Indenizações Trabalhistas",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.04
+      ],
+      "glosa": "Litigios e indemnizaciones laborales"
+    },
+    {
+      "label": "Outras Despesas",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas com Pessoal\"",
+      "values": [
+        0.333
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Bens de Pequeno Valor",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.021469
+      ],
+      "glosa": "Bienes de escaso valor"
+    },
+    {
+      "label": "Contingências",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.244415
+      ],
+      "glosa": "Contingencias"
+    },
+    {
+      "label": "Energia Elétrica",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.637038
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Manutenção",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.374232
+      ],
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Material de Escritório, Limpeza e Consumo",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.119021
+      ],
+      "glosa": "Material de oficina, limpieza y consumo"
+    },
+    {
+      "label": "Publicidade e Propaganda",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.006602
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Serviços de Terceiros",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.989087
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Sócio Torcedor",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.363897
+      ],
+      "glosa": "Socios abonados"
+    },
+    {
+      "label": "Despesas com Aluguéis",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.56331
+      ],
+      "glosa": "Gastos por arrendamientos"
+    },
+    {
+      "label": "Despesas com Alimentação",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.514382
+      ],
+      "glosa": "Gastos de alimentación"
+    },
+    {
+      "label": "Outras Despesas",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Administrativas e Gerais\"",
+      "values": [
+        0.668453
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "ICMS",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Tributárias\"",
+      "values": [
+        0.006925
+      ],
+      "glosa": "ICMS"
+    },
+    {
+      "label": "Juros Fiscais",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Tributárias\"",
+      "values": [
+        0.120501
+      ],
+      "glosa": "Intereses fiscales"
+    },
+    {
+      "label": "Impostos Municipais",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Tributárias\"",
+      "values": [
+        0.006692
+      ],
+      "glosa": "Impuestos municipales"
+    },
+    {
+      "label": "Taxas Diversas",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Despesas Tributárias\"",
+      "values": [
+        0.155362
+      ],
+      "glosa": "Tasas diversas"
+    },
+    {
+      "label": "Amortização de Direito de Uso",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas com Depreciações e Amortizações\"",
+      "values": [
+        1.37001
+      ],
+      "glosa": "Amortización de derechos de uso"
+    },
+    {
+      "label": "Depreciações",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas com Depreciações e Amortizações\"",
+      "values": [
+        0.992622
+      ],
+      "glosa": "Depreciaciones"
+    }
+  ]
+}

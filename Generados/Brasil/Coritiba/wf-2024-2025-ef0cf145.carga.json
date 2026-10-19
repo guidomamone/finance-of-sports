@@ -1,0 +1,858 @@
+{
+ "pdf": "Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.pdf",
+ "generado": "2026-10-19T17:32:15.487Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "coritiba ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['coritiba-wf-2024-2025-ef0cf145'] ya existe"
+  }
+ ],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "coritiba",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Direitos de Transmissão de TV",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 13.543227,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mensalidades de Associados",
+    "normalizedCategory": "member_dues",
+    "amountNative": 26.236358,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transações de Atletas",
+    "normalizedCategory": "player_sales",
+    "amountNative": 41.408085,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Competições/Bilheteria",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 9.155964,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Patrocínios/Subvenção",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 19.173611,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Patrimoniais",
+    "normalizedCategory": "member_dues",
+    "amountNative": 7.05131,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Receitas com Vendas de Mercadorias",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 12.53858,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outras Receitas",
+    "normalizedCategory": "other_income",
+    "amountNative": 9.818733,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tributos Sobre Receitas",
+    "normalizedCategory": "other_income",
+    "amountNative": -5.044851,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Taxas Federativas/Direito de Arena",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.998493,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Futebol",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -89.80156,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Futebol das Categorias de Base",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -17.42354,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Custos das Mercadorias Vendidas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.102791,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortização de Direitos Econômicos de Atletas",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -18.545239,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Formação de Atletas",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.236121,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pessoal, Benefícios e Encargos Sociais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -33.964204,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Conservação de Bens Patrimoniais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.027648,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Multas e Honorários / Encargos Legais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.023747,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Serviços de Terceiros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -12.925223,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Energia Elétrica, Gás, Água e Telefonia",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.549198,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Propaganda, Publicidade e Eventos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.09652,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Materiais de Almoxarifado",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.996713,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impostos e Taxas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.118022,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tecnologia da Informação",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -9.285786,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Locações de Equipamentos e Imóveis",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.662051,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outras Despesas Administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -11.601262,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outras (Despesas) Receitas Operacionais e Não Operacionais",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -22.887789,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2025-12-31",
+   "sourceId": "coritiba-wf-2024-2025-ef0cf145",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -11.608388,
+   "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "Futebol",
+     "lado": "expense",
+     "importe": 89.80156,
+     "motivo": "Claude 2026-10-19 (subagente Sonnet, media): La nota 21 abre por naturaleza (pessoal 59,4M, direito de imagem 27,5M, jogos 6,6M...) solo el total combinado profesional+base; no dice cuanto de cada naturaleza es de profesional. Repartirlo seria inventar. Por eso el bolsón lump_football_operations_expense es la salida fiel para esta fila y la base (17,4M) queda aparte. Atencion: es una decision de estructura; si Guido prefi [Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md L226 (DRE: 'Futebol (89.801.560)]"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 132.882524,
+   "officialTotalExpenses": 235.247414,
+   "officialPAT": -113.973278
+  },
+  "source": {
+   "id": "coritiba-wf-2024-2025-ef0cf145",
+   "clubId": "coritiba",
+   "title": "Coritiba Sociedade Anônima do Futebol - SAF — wf-2024-2025-ef0cf145 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "coritiba",
+ "year": 2025,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 28,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Direitos de Transmissão de TV",
+   "page": 6,
+   "native": 13.543227,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 13.543227,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.543227
+  },
+  {
+   "label": "Mensalidades de Associados",
+   "page": 6,
+   "native": 26.236358,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 26.236358,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 26.236358
+  },
+  {
+   "label": "Transações de Atletas",
+   "page": 6,
+   "native": 41.408085,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 41.408085,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 41.408085
+  },
+  {
+   "label": "Competições/Bilheteria",
+   "page": 6,
+   "native": 9.155964,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 9.155964,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.155964
+  },
+  {
+   "label": "Patrocínios/Subvenção",
+   "page": 6,
+   "native": 19.173611,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 19.173611,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 19.173611
+  },
+  {
+   "label": "Patrimoniais",
+   "page": 6,
+   "native": 7.05131,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.05131,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.05131
+  },
+  {
+   "label": "Receitas com Vendas de Mercadorias",
+   "page": 6,
+   "native": 12.53858,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 12.53858,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.53858
+  },
+  {
+   "label": "Outras Receitas",
+   "page": 6,
+   "native": 9.818733,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 9.818733,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.818733
+  },
+  {
+   "label": "Tributos Sobre Receitas",
+   "page": 6,
+   "native": 5.044851,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -5.044851,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -5.044851
+  },
+  {
+   "label": "Taxas Federativas/Direito de Arena",
+   "page": 6,
+   "native": 0.998493,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -0.998493,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.998493
+  },
+  {
+   "label": "Futebol",
+   "page": 6,
+   "native": 89.80156,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 89.80156,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): La nota 21 abre por naturaleza (pessoal 59,4M, direito de imagem 27,5M, jogos 6,6M...) solo el total combinado profesional+base; no dice cuanto de cada naturaleza es de profesional. Repartirlo seria inventar. Por eso el bolsón lump_football_operations_expense es la salida fiel para esta fila y la base (17,4M) queda aparte. Atencion: es una decision de estructura; si Guido prefi [Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md L226 (DRE: 'Futebol (89.801.560)]",
+   "destino": "expense",
+   "amountNative": -89.80156
+  },
+  {
+   "label": "Futebol das Categorias de Base",
+   "page": 6,
+   "native": 17.42354,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 17.42354,
+   "cat": "youth_other_sports_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -17.42354
+  },
+  {
+   "label": "Custos das Mercadorias Vendidas",
+   "page": 6,
+   "native": 5.102791,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.102791,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.102791
+  },
+  {
+   "label": "Amortização de Direitos Econômicos de Atletas",
+   "page": 6,
+   "native": 18.545239,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 18.545239,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -18.545239
+  },
+  {
+   "label": "Formação de Atletas",
+   "page": 6,
+   "native": 0.236121,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.236121,
+   "cat": "youth_other_sports_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.236121
+  },
+  {
+   "label": "Pessoal, Benefícios e Encargos Sociais",
+   "page": 33,
+   "native": 33.964204,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 33.964204,
+   "cat": "admin_general_expense",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -33.964204
+  },
+  {
+   "label": "Conservação de Bens Patrimoniais",
+   "page": 33,
+   "native": 5.027648,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 5.027648,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.027648
+  },
+  {
+   "label": "Multas e Honorários / Encargos Legais",
+   "page": 33,
+   "native": 3.023747,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 3.023747,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.023747
+  },
+  {
+   "label": "Serviços de Terceiros",
+   "page": 33,
+   "native": 12.925223,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 12.925223,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.925223
+  },
+  {
+   "label": "Energia Elétrica, Gás, Água e Telefonia",
+   "page": 33,
+   "native": 1.549198,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 1.549198,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.549198
+  },
+  {
+   "label": "Propaganda, Publicidade e Eventos",
+   "page": 33,
+   "native": 0.09652,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 0.09652,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.09652
+  },
+  {
+   "label": "Materiais de Almoxarifado",
+   "page": 33,
+   "native": 1.996713,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 1.996713,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.996713
+  },
+  {
+   "label": "Impostos e Taxas",
+   "page": 33,
+   "native": 0.118022,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 0.118022,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.118022
+  },
+  {
+   "label": "Tecnologia da Informação",
+   "page": 33,
+   "native": 9.285786,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 9.285786,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.285786
+  },
+  {
+   "label": "Locações de Equipamentos e Imóveis",
+   "page": 33,
+   "native": 1.662051,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 1.662051,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.662051
+  },
+  {
+   "label": "Outras Despesas Administrativas",
+   "page": 33,
+   "native": 11.601262,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Administrativas e Marketing\")",
+   "signoFijo": 11.601262,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -11.601262
+  },
+  {
+   "label": "Outras (Despesas) Receitas Operacionais e Não Operacionais",
+   "page": 6,
+   "native": 22.887789,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 22.887789,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -22.887789
+  },
+  {
+   "label": "RESULTADO FINANCEIRO LÍQUIDO",
+   "page": null,
+   "native": -11.608388,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos con signo",
+   "verificacion (nota que desglosa \"Administrativas e Marketing\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 132.882524,
+  "expSum": -235.247414,
+  "officialTotalRevenue": 132.882524,
+  "officialTotalExpenses": 235.247414,
+  "officialPAT": -113.973278,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -113.973278,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 132.882524
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 235.247414
+  }
+ },
+ "liga": {
+  "valor": "br-serieB",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (75 de 75 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (2 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "BRL",
+   "fuente": "moneda de curso legal de Brasil (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "BRL@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene BRL@2025-12-31 = 5.5024 (PTAX de cierre (venda) del Banco Central do Brasil, boletín del 30/12/2025)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "coritiba-wf-2024-2025-ef0cf145",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "br-serieB",
+   "fuente": "data/club-leagues/br.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 10,
+  "lineasGasto": 17,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

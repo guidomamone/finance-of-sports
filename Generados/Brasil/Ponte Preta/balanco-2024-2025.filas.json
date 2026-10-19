@@ -1,0 +1,497 @@
+{
+ "pdf": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf",
+ "md": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.md",
+ "mdSha1": "1ecdd70ded8caad2fea6f9b7cd5c9820aade6300",
+ "ubicacionSha1": "2eff2c80ea66462235294cd0aab2644ce803f36f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:37:42.915Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b23"
+  ],
+  "notas_gastos": [
+   "b25",
+   "b26",
+   "b28",
+   "b32"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L58: (Valores Expressos em reais)"
+  },
+  {
+   "bloque": "b23",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación; importes consistentes con reais del estado (total L422 = L64)"
+  },
+  {
+   "bloque": "b25",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación; total L431 coincide con L72 en reais"
+  },
+  {
+   "bloque": "b26",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación; coherente con reais"
+  },
+  {
+   "bloque": "b28",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación"
+  },
+  {
+   "bloque": "b32",
+   "escala": "no se sabe",
+   "evidencia": "Sin indicación; total L489 coincide con L72 en reais"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 62,
+   "etiqueta": "RECEITA OPERACIONAIS",
+   "actual": "23.535.631",
+   "anterior": "79.690.790",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 64,
+   "etiqueta": "Profissional",
+   "actual": "18.438.396",
+   "anterior": "75.330.874",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 65,
+   "etiqueta": "Administrativo - Estado",
+   "actual": "1.398.765",
+   "anterior": "1.385.118",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 66,
+   "etiqueta": "Administrativo - Jd Paineiras",
+   "actual": "53.848",
+   "anterior": "61.408",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 67,
+   "etiqueta": "Administrativo - Amador",
+   "actual": "988.322",
+   "anterior": "971.491",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 68,
+   "etiqueta": "Social / Outras",
+   "actual": "2.692.000",
+   "anterior": "1.901.677",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 69,
+   "etiqueta": "Resultado Financeiro Líquido",
+   "actual": "35.700",
+   "anterior": "40.222",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 70,
+   "etiqueta": "DESPESAS OPERACIONAIS",
+   "actual": "(50.811.741)",
+   "anterior": "(50.521.953)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 72,
+   "etiqueta": "Profissional",
+   "actual": "(42.686.602)",
+   "anterior": "(43.101.554)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 73,
+   "etiqueta": "Administrativo - Estado",
+   "actual": "(3.680.125)",
+   "anterior": "(3.459.614)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 74,
+   "etiqueta": "Administrativo - Jd Paineiras",
+   "actual": "(510.940)",
+   "anterior": "(425.658)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 75,
+   "etiqueta": "Administrativo - Jd Eulina",
+   "actual": "(480.674)",
+   "anterior": "(450.581)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 76,
+   "etiqueta": "Amador",
+   "actual": "(3.453.400)",
+   "anterior": "(3.084.546)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 77,
+   "etiqueta": "Resultado Antes Contingencia",
+   "actual": "(27.276.109)",
+   "anterior": "29.168.837",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 78,
+   "etiqueta": "Depreciação/Amortizacao/Contingencia/Pept/Cnrd",
+   "actual": "(6.299.661)",
+   "anterior": "(22.168.194)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 79,
+   "etiqueta": "SUPERÁVIT (DÉFICIT) DO EXERCÍCIO",
+   "actual": "(33.575.770)",
+   "anterior": "7.000.643",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 413,
+   "etiqueta": "Quotas Globo-Camp.Brasileiro",
+   "actual": "1.660.015",
+   "anterior": "8.625.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b23",
+   "linea": 414,
+   "etiqueta": "Quotas F.P.F",
+   "actual": "9.117.500",
+   "anterior": "7.725.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b23",
+   "linea": 415,
+   "etiqueta": "Premiação Campeonato Paulista",
+   "actual": "200.000",
+   "anterior": "379.050",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b23",
+   "linea": 416,
+   "etiqueta": "Receita transmissão",
+   "actual": "",
+   "anterior": "45.010.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b23",
+   "linea": 417,
+   "etiqueta": "Quotas Copa do Brasil-CBF",
+   "actual": "830.000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b23",
+   "linea": 418,
+   "etiqueta": "Venda Atletas",
+   "actual": "",
+   "anterior": "11.000.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b23",
+   "linea": 419,
+   "etiqueta": "Publicidade/Propaganda",
+   "actual": "4.240.984",
+   "anterior": "2.591.824",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b23",
+   "linea": 420,
+   "etiqueta": "Solidariedade / Compensação Formação",
+   "actual": "2.389.897",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b25",
+   "linea": 422,
+   "etiqueta": "Total",
+   "actual": "18.438.396",
+   "anterior": "75.330.874",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b25",
+   "linea": 427,
+   "etiqueta": "Salários e Encargos /Outros",
+   "actual": "(19.158.725)",
+   "anterior": "(19.854.985)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b25",
+   "linea": 428,
+   "etiqueta": "Serviços de Terceiros",
+   "actual": "(3.066.500)",
+   "anterior": "(2.973.686)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b25",
+   "linea": 429,
+   "etiqueta": "Despesas com Jogos",
+   "actual": "(5.573.721)",
+   "anterior": "(5.057.256)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b25",
+   "linea": 430,
+   "etiqueta": "Demais Gastos",
+   "actual": "(14.887.655)",
+   "anterior": "(15.215.627)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b25",
+   "linea": 431,
+   "etiqueta": "Total",
+   "actual": "(42.686.602)",
+   "anterior": "(43.101.554)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Profissional"
+  },
+  {
+   "bloque": "b26",
+   "linea": 437,
+   "etiqueta": "Cessão de Imagem / Luvas",
+   "actual": "(4.121.447)",
+   "anterior": "(2.026.411)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Demais Gastos"
+  },
+  {
+   "bloque": "b26",
+   "linea": 438,
+   "etiqueta": "Intermediação / Comissão",
+   "actual": "(350.608)",
+   "anterior": "(974.340)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Demais Gastos"
+  },
+  {
+   "bloque": "b26",
+   "linea": 439,
+   "etiqueta": "Viagens / Moradia / Concentração e Atletas / Refeições / Medicamentos",
+   "actual": "(2.554.230)",
+   "anterior": "(1.881.501)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Demais Gastos"
+  },
+  {
+   "bloque": "b26",
+   "linea": 440,
+   "etiqueta": "Taxas CBF / FPF",
+   "actual": "(229.178)",
+   "anterior": "(243.992)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Demais Gastos"
+  },
+  {
+   "bloque": "b26",
+   "linea": 441,
+   "etiqueta": "Outras Despesas (d)",
+   "actual": "(5.211.730)",
+   "anterior": "(7.490.320)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Demais Gastos"
+  },
+  {
+   "bloque": "b28",
+   "linea": 443,
+   "etiqueta": "Total Custo/ Despesas Departamento Profissional",
+   "actual": "(12.467.193)",
+   "anterior": "(12.616.564)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Demais Gastos"
+  },
+  {
+   "bloque": "b28",
+   "linea": 446,
+   "etiqueta": "Fenapaf/ INSS (a)",
+   "actual": "(852.765)",
+   "anterior": "(979.699)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Demais Gastos"
+  },
+  {
+   "bloque": "b28",
+   "linea": 448,
+   "etiqueta": "Amortização / Depreciação (b)",
+   "actual": "(1.401.279)",
+   "anterior": "(1.439.364)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Demais Gastos"
+  },
+  {
+   "bloque": "b28",
+   "linea": 449,
+   "etiqueta": "Acordo Trabalhista e outros",
+   "actual": "(166.418)",
+   "anterior": "(180.000)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Demais Gastos"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 62,
+  "actual": "23.535.631"
+ },
+ "total_gastos": {
+  "linea": 70,
+  "actual": "(50.811.741)"
+ },
+ "resultado": {
+  "linea": 79,
+  "actual": "(33.575.770)",
+  "anterior": "7.000.643"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 18.(b) (L485-L489) por duplicar el desglose de 'Profissional' ya cargado de L427-L431?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Profissional",
+   "texto": "L485-L489 repite los mismos importes de L427-L431 (diferencia de 1 en L488 es redondeo).",
+   "bloques": [
+    "b32",
+    "b25"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Las filas de b28 (L443-L449) son continuación del desglose de 'Demais Gastos' de la nota 18.(a)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Demais Gastos",
+   "texto": "b26 suma 12.467.193 con L443-L449, y con los tres renglones de b28 llega a 14.887.655; L443 es un subtotal intermedio sin título claro.",
+   "bloques": [
+    "b26",
+    "b28"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Las celdas vacías de 2025 en 'Receita transmissão' (L416) y 'Venda Atletas' (L418) son cero?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Profissional",
+   "texto": "Sin importe 2025 impreso; la suma de los demás renglones da 18.438.396 (L422).",
+   "bloques": [
+    "b23"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en reais. El renglón de ingresos incluye 'Resultado Financeiro Líquido' (L69) dentro del total de receitas. La tabla de receitas (b23) no imprime encabezado de columnas; se asume 2025/2024 por coincidencia del total L422 con L64."
+}

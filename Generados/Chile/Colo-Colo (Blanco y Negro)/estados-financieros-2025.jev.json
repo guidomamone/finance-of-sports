@@ -1,0 +1,211 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md",
+ "generatedAt": "2026-10-19T17:37:30.954Z",
+ "rubrosHuella": "a87b89285728fc6a36475eab6664c24d720eb339",
+ "rubros": [
+  {
+   "label": "Ingresos por recaudaciones",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "matchday_competition",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por venta de jugadores comprado a terceros",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por derechos de televisión",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": "revenue",
+   "page": 74,
+   "section": "nota que desglosa \"Otros ingresos, por función\"",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas jugadores",
+   "lado": "expense",
+   "page": 75,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración plantel profesional y cuerpo técnico",
+   "lado": "expense",
+   "page": 75,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Activos en concesión",
+   "lado": "expense",
+   "page": 75,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Otros Intangibles",
+   "lado": "expense",
+   "page": 75,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización pases jugadores profesionales",
+   "lado": "expense",
+   "page": 75,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de concentración traslados y otros",
+   "lado": "expense",
+   "page": 75,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos",
+   "lado": "expense",
+   "page": 75,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Gasto de administración",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos, por función",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Condonación",
+   "lado": "revenue",
+   "page": 74,
+   "section": "nota que desglosa \"Otros ingresos, por función\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Condonación Intereses y Multas TGR",
+   "lado": "revenue",
+   "page": 74,
+   "section": "nota que desglosa \"Otros ingresos, por función\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 981
+  },
+  {
+   "label": "Dividendos",
+   "lado": "revenue",
+   "page": 74,
+   "section": "nota que desglosa \"Otros ingresos, por función\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 885
+  }
+ ]
+}

@@ -209,7 +209,10 @@ async function main() {
     // si la carpeta ya tiene un documento de esa temporada (con cualquier nombre: Chapecoense "demonstracoes-contabeis-2022.pdf"), no es
     // nuevo: está bajado y falta cargarlo, que es otro trabajo (node tools/estado.mjs)
     const dosAnios = (f) => !mmdd.startsWith('12') && f.includes(String(anio - 1)) && f.includes(String(anio)) && f.indexOf(String(anio - 1)) < f.lastIndexOf(String(anio));
-    if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && (fs.some((x) => f.includes(x.toLowerCase())) || dosAnios(f)))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
+    // un club que cambió la fecha de cierre (River: de agosto a diciembre) nombra el PDF con la fecha nueva ("cierre-2025-12-31"), que las formas
+    // armadas con el cierre del último año cargado no ven: cualquier fecha AAAA-MM-DD del año esperado en el nombre también es de ese ejercicio
+    const conFecha = (f) => new RegExp(`(?<!\\d)${anio}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])(?!\\d)`).test(f);
+    if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && (fs.some((x) => f.includes(x.toLowerCase())) || dosAnios(f) || conFecha(f)))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
     // un ejercicio POSTERIOR ya bajado (Unión Magdalena: cargado 2018; 2019-2021 nunca se depositaron en el registro y 2022-2025 están en
     // la carpeta): lo que falta es cargar, no buscar. Vale el año más nuevo que nombra un PDF de estados financieros de la carpeta, hasta
     // el año en curso (no un presupuesto ni un informe de pases: Académica "Orcamento-2025-2026", Banfield "informe-mercado-de-pases-2026")

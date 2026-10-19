@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Brasil/Amazonas/demonstracoes-contabeis-2025-faf-1.md",
+  "pdf": "Clubes/Brasil/Amazonas/demonstracoes-contabeis-2025-faf-1.pdf",
+  "club": "amazonas-br",
+  "year": 2025,
+  "generatedAt": "2026-10-19T16:42:16.876Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "RENDAS DE COMPETIÇÕES",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        1.99926
+      ],
+      "glosa": "Ingresos por competiciones"
+    },
+    {
+      "label": "SUBVENÇÕES E DOAÇÕES",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        6.748289
+      ],
+      "glosa": "Subvenciones y donaciones"
+    },
+    {
+      "label": "PATROCÍNIOS",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.35
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "CUSTO COM EVENTOS ESPORTIVOS",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        6.642211
+      ],
+      "glosa": "Costes de eventos deportivos"
+    },
+    {
+      "label": "DESPESAS GERAIS",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        1.794233
+      ],
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "DESPESAS COM PESSOAL",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.354901
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "IMPOSTOS E TAXAS",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.063834
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "DEPRECIAÇÃO E AMORTIZAÇÃO",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.046163
+      ],
+      "glosa": "Depreciación y amortización"
+    }
+  ]
+}

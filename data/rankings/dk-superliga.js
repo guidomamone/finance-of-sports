@@ -1,6 +1,18 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["dk-superliga"] = {
+  2025: {
+    leagueSize: 12,
+    wiki: {"t":"2024–25 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
+    clubs: [
+      { id:"silkeborg-dk", revenue:20.737, reportType:"official_balance_sheet",
+        sourceId:"silkeborg-dk-annual-report-2025-silkeborg-if-a-s-fact",
+        mix:[["Comercial / Sponsors",4.661],["Estadio",1.741],["Televisión",2.923],["Premios por competencias",1.812],["Venta de Jugadores",7.933],["Otros ingresos",1.667]] },
+      { id:"viborg-dk", revenue:16.128, reportType:"official_balance_sheet",
+        sourceId:"viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",12.461],["Otros ingresos",3.667]] },
+    ],
+  },
   2024: {
     leagueSize: 12,
     wiki: {"t":"2023–24 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
@@ -50,8 +62,12 @@ window.RANKINGS["dk-superliga"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 14,
+    wiki: {"t":"2019–20 Danish Superliga","lang":"en","at":"2026-10-19","n":14},
     clubs: [
+      { id:"midtjylland-dk", revenue:27.985, reportType:"official_balance_sheet",
+        sourceId:"midtjylland-dk-aarsrapport-2020-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",13.164],["Otros ingresos",14.821]] },
       { id:"brondby-dk", revenue:26.134, reportType:"official_balance_sheet",
         sourceId:"brondby-aarsrapport-2020",
         mix:[["Comercial / Sponsors",11.314],["Estadio",0.625],["Televisión",5.793],["Otros ingresos",8.402]] },

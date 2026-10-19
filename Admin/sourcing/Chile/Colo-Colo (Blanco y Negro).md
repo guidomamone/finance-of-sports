@@ -32,3 +32,5 @@
   propio). Quedan 2009-2021 y 2025 sin cargar (fuera de alcance de esta sesión). Ver duda anotada en
   `Admin/dudas-por-club.md` sobre el rechazo inicial del balance 2024 en la junta de accionistas.
 
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf` (sourceId `colocolo-cl-estados-financieros-2025`).

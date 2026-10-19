@@ -1,0 +1,313 @@
+{
+ "md": "Clubes/Argentina/Instituto/balance-general-2024-2025.md",
+ "generatedAt": "2026-10-19T17:54:37.143Z",
+ "rubrosHuella": "0f4fcbfc9a93d2f1d1d09ed7692e79b75ad038f2",
+ "rubros": [
+  {
+   "label": "Para fines generales (Anexo III)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Centros educativos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "education",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Abonos deportivos sede",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "season_tickets",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de TV",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Entradas generales fútbol",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Entradas plateas y palcos fútbol",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad institucional",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad otras competencias",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad y sponsors fútbol",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Recursos predio La Agustina",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferencias y préstamos de jugadores",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ventas de salón Gloriamanía",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Subsidios recibidos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Para fines específicos ( Anexo III)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneraciones y cargas",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "education_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios, luz, agua, gas, etc.",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos bancarios",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de juicios",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "(Recuperos) / Quebranto por Juicios",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Generales de administración (Anexo IV)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "education_expense",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenimiento de bienes de uso",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Vigilancia sede",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios de energía, agua, gas, etc..",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos generales por eventos deportivos",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Viajes y concentraciones",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Compras de mercadería",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Comisiones y acuerdos de rescisión",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "player_impairment",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Limpieza y vigilancia",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Compras y préstamos de jugadores",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Vigilancia La Agustina",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Específicos de sectores ( Anexo V)\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciación de bienes de uso (Anexo I)",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización de Intangibles (Anexo II)",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos extraordinarios(Nota 3 y 2.9.)",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

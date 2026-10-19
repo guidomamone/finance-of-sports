@@ -203,6 +203,111 @@ de socios impresa).
 ============================================================================
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Negociação de atestados liberatórios de atletas | pág. 21, precedente |
+| 2 | Direitos de transmissão de TV/Premiações | pág. 21, precedente |
+| 3 | Publicidade e patrocínio | pág. 21, precedente |
+| 4 | Projeto sócio torcedor | pág. 21, precedente |
+| 5 | Arrecadação de jogos | pág. 21, precedente |
+| 6 | Licenciamento da marca | pág. 21, precedente |
+| 7 | Reversão Provisão Perdas | pág. 71, Jev 1 |
+| 8 | Compensação de Ofício Tributos Federais | pág. 71, Jev 0.99 |
+| 9 | Receitas diversas | pág. 71, Jev 1 |
+| 10 | Contribuições e taxas | pág. 21, precedente |
+| 11 | Departamentos e esportes amadores | pág. 21, precedente |
+| 12 | Festas e eventos sociais | pág. 21, precedente |
+| 13 | Aluguéis e patrocínios | pág. 21, precedente |
+| 14 | Camarotes e cadeiras cativas | pág. 21, precedente |
+| 15 | Publicidade | pág. 21, precedente |
+| 16 | Aluguéis | pág. 21, precedente |
+| 17 | Outras receitas | pág. 21, Jev 1 |
+| 18 | Outras receitas | pág. 21, Jev 1 |
+| 19 | Direito de Arena | pág. 21, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Pessoal | pág. 22, precedente |
+| 2 | Encargos trabalhistas | pág. 22, precedente |
+| 3 | Benefícios | pág. 22, Claude 0.85 |
+| 4 | Prêmios | pág. 22, precedente |
+| 5 | Direito de uso de imagem | pág. 22, precedente |
+| 6 | Amortização do custo de atletas formados | pág. 22, precedente |
+| 7 | Amortização/baixa de contratos de atletas profissionais | pág. 22, precedente |
+| 8 | Mecanismo de solidariedade | pág. 22, precedente |
+| 9 | Arbitragens, federações e confederações | pág. 22, Jev 0.98 |
+| 10 | Despesas com jogos | pág. 22, precedente |
+| 11 | Intermediações sobre negociações c/ atletas | pág. 22, precedente |
+| 12 | Água/Luz/Telefone | pág. 22, Claude 0.85 |
+| 13 | Manutenções | pág. 22, Claude 0.85 |
+| 14 | Depreciação e amortização (software/marcas) | pág. 22, Jev 1 |
+| 15 | Gerais | pág. 22, Jev 1 |
+| 16 | Materiais | pág. 22, Jev 0.98 |
+| 17 | Serviços | pág. 22, precedente |
+| 18 | Contingências | pág. 22, precedente |
+| 19 | Tributos | pág. 22, Jev 0.99 |
+| 20 | Pessoal | pág. 22, precedente |
+| 21 | Encargos trabalhistas | pág. 22, precedente |
+| 22 | Benefícios | pág. 22, Claude 0.85 |
+| 23 | Prêmios | pág. 22, precedente |
+| 24 | Arbitragens, federações e confederações | pág. 22, Jev 0.98 |
+| 25 | Despesas com jogos e festas | pág. 22, precedente |
+| 26 | Depreciação e amortização (software/marcas) | pág. 22, Jev 1 |
+| 27 | Manutenções | pág. 22, Claude 0.85 |
+| 28 | Materiais | pág. 22, Jev 0.98 |
+| 29 | Serviços de Limpeza/Lavanderia/Medicina | pág. 22, Jev 0.95 |
+| 30 | Água/Luz/Telefone | pág. 22, Claude 0.85 |
+| 31 | Tributos | pág. 22, Jev 0.99 |
+| 32 | Perdas estimadas | pág. 22, precedente |
+| 33 | Gerais | pág. 22, Jev 1 |
+| 34 | Pessoal | pág. 23, precedente |
+| 35 | Encargos trabalhistas | pág. 23, precedente |
+| 36 | Benefícios | pág. 23, Claude 0.85 |
+| 37 | Despesas gerais e com jogos | pág. 23, precedente |
+| 38 | Depreciação e amortização (software/marcas) | pág. 23, Jev 1 |
+| 39 | Água/luz/telefone | pág. 23, Claude 0.85 |
+| 40 | Manutenções | pág. 23, Claude 0.85 |
+| 41 | Materiais | pág. 23, Jev 0.98 |
+| 42 | Serviços de limpeza/lavanderia/medicina | pág. 23, Jev 0.95 |
+| 43 | Tributos | pág. 23, Jev 0.99 |
+| 44 | Pessoal | pág. 23, precedente |
+| 45 | Encargos trabalhistas | pág. 23, precedente |
+| 46 | Benefícios | pág. 23, Claude 0.85 |
+| 47 | Prêmios | pág. 23, precedente |
+| 48 | Depreciação e amortização (software/marcas) | pág. 23, Jev 1 |
+| 49 | Água/luz/telefone | pág. 23, Claude 0.85 |
+| 50 | Serviços | pág. 23, precedente |
+| 51 | Manutenções | pág. 23, Claude 0.85 |
+| 52 | Contingências | pág. 23, precedente |
+| 53 | Materiais | pág. 23, Jev 0.98 |
+| 54 | Gerais | pág. 23, Jev 1 |
+| 55 | Tributos | pág. 23, Jev 0.99 |
+| 56 | Rateios de serviços de alimentação, transporte e lavanderia. | pág. 23, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): anio = 2025. el nombre del archivo dice 2026 (publicado en 2026) pero el documento es el balance al 31-12-2025 (df-31-12-2025); Claude 2026-10-19
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): br-serieA, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série A" (tools/club-league-reference/br.json), coincidencia exacta "São Paulo".
+```
+
 ## 2024
 
 ### Gastos
@@ -322,6 +427,14 @@ _note (data/):_
 
 ```text
 PDF oficial (texto nativo, paquete de firma digital Clicksign), vía el repositorio da federação paulista — no se encontró todavía un mirror directo en cdn.saopaulofc.net para este ejercicio (ver Admin/sourcing/Brasil/São Paulo.md). Se cargó el ejercicio 2024 (exercício corrente de este documento), con 2023 como comparativo. Trae columnas Individuais (Controladora) e Consolidados — Consolidado 2024 = Controladora 2024 en todas las líneas revisadas (sin diferencia material), se usó Controladora por consistencia con el resto del archivo. Déficit real grande del ejercicio: R$287,640 milhões, explicado en gran parte por un "Resultado Não Operacional" de -R$92,687 milhões (multas e parcelamentos tributarios municipais/federais, nota 14) fuera del cuerpo ordinario de Receitas/Despesas Operacionais, más una amortización de contratos de atletas profissionais mucho mayor que 2023 (R$83,123 M vs. R$51,547 M). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/São Paulo/demonstracoes-financeiras-2023-2024.md.
+```
+
+### saopaulo-br-wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1-completo
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/São Paulo/wf-src-420-2026-7-spfc-df-31-12-2025-rai-pdf-ass-1-1_completo.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

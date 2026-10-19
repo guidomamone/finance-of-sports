@@ -35,6 +35,20 @@ const chapecoenseBrRevenueLinesByYear = {
     { rawLabel:'Recuperação de Despesas', normalizedCategory:'other_income', amountNative:0.877, disclosureLevel:'detailed' },
     { rawLabel:'Reversão de Provisão', normalizedCategory:'other_income', amountNative:3.093, disclosureLevel:'detailed' },
   ],
+  2022: [
+    { rawLabel:'Receita de Transmissão', normalizedCategory:'broadcasting', amountNative:0.102, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilheteria', normalizedCategory:'matchday_competition', amountNative:1.756, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínio', normalizedCategory:'sponsorship_commercial', amountNative:12.897, disclosureLevel:'aggregated' },
+    { rawLabel:'Receita de Negociação de Atletas', normalizedCategory:'player_sales', amountNative:10.605, disclosureLevel:'aggregated' },
+    { rawLabel:'Sócio Torcedor', normalizedCategory:'member_dues', amountNative:3.556, disclosureLevel:'aggregated' },
+    { rawLabel:'Receita Categoria Base', normalizedCategory:'youth_football', amountNative:0.195, disclosureLevel:'aggregated' },
+    { rawLabel:'Royalties/Direito de Uso de Marca/Venda de Produtos', normalizedCategory:'sponsorship_commercial', amountNative:5.867, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras Receitas', normalizedCategory:'other_income', amountNative:0.192, disclosureLevel:'aggregated' },
+    { rawLabel:'Doações/PAF', normalizedCategory:'other_income', amountNative:0.202, disclosureLevel:'aggregated' },
+    { rawLabel:'Receita Federações', normalizedCategory:'competition_bonus', amountNative:3.558, disclosureLevel:'aggregated' },
+    { rawLabel:'Deduções Tributárias e Sindicais', normalizedCategory:'other_income', amountNative:-2.523, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Resultados Operacionais', normalizedCategory:'other_income', amountNative:0.307, disclosureLevel:'aggregated' },
+  ],
 };
 
 const chapecoenseBrExpenseLinesByYear = {
@@ -127,6 +141,35 @@ const chapecoenseBrExpenseLinesByYear = {
     { rawLabel:'Acidente Aéreo Chapecoense (indenizações)', normalizedCategory:'exceptional_items', amountNative:-45.672, disclosureLevel:'detailed' },
     { rawLabel:'Equivalência patrimonial', normalizedCategory:'exceptional_items', amountNative:-0.036, disclosureLevel:'detailed' },
   ],
+  2022: [
+    { rawLabel:'Custos', normalizedCategory:'lump_football_operations_expense', amountNative:-0.18, disclosureLevel:'aggregated' },
+    { rawLabel:'Ordenados e Salários', normalizedCategory:'wages_squad', amountNative:-8.777, disclosureLevel:'aggregated' },
+    { rawLabel:'INSS/FGTS/PIS', normalizedCategory:'wages_squad', amountNative:-1.403, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas com Transf. Jogadores', normalizedCategory:'other_expenses', amountNative:-3.983, disclosureLevel:'aggregated' },
+    { rawLabel:'Indenizações', normalizedCategory:'wages_squad', amountNative:-0.751, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas Médicas', normalizedCategory:'wages_squad', amountNative:-0.923, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Gastos C/ Pessoal', normalizedCategory:'wages_squad', amountNative:-1.002, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Manutenção Imobilizado', normalizedCategory:'admin_general_expense', amountNative:-0.401, disclosureLevel:'aggregated' },
+    { rawLabel:'Manutenção Terceiros', normalizedCategory:'admin_general_expense', amountNative:-0.482, disclosureLevel:'aggregated' },
+    { rawLabel:'Viagens', normalizedCategory:'match_organisation_expense', amountNative:-0.334, disclosureLevel:'aggregated' },
+    { rawLabel:'Hospedagens', normalizedCategory:'match_organisation_expense', amountNative:-0.055, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com Jogos - Camp. Brasileiro', normalizedCategory:'match_organisation_expense', amountNative:-2.199, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com Jogos - Camp. Catarinense', normalizedCategory:'match_organisation_expense', amountNative:-0.269, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos com Outros', normalizedCategory:'match_organisation_expense', amountNative:-0.993, disclosureLevel:'aggregated' },
+    { rawLabel:'Terceiros - Futebol e Comissões', normalizedCategory:'other_expenses', amountNative:-1.498, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários Profissionais', normalizedCategory:'admin_general_expense', amountNative:-0.106, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-2.192, disclosureLevel:'aggregated' },
+    { rawLabel:'Bens de pq. Valor e depreciação', normalizedCategory:'depreciation', amountNative:-0.792, disclosureLevel:'aggregated' },
+    { rawLabel:'Direito de imagem', normalizedCategory:'wages_squad', amountNative:-6.684, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e Indenizações', normalizedCategory:'other_expenses', amountNative:-0.008, disclosureLevel:'aggregated' },
+    { rawLabel:'Propaganda e Publicidade', normalizedCategory:'admin_general_expense', amountNative:-0.059, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos Logísticos', normalizedCategory:'admin_general_expense', amountNative:-0.01, disclosureLevel:'aggregated' },
+    { rawLabel:'Doações/Ajudas de Custo', normalizedCategory:'other_expenses', amountNative:-0.26, disclosureLevel:'aggregated' },
+    { rawLabel:'Água, Luz e Telefone', normalizedCategory:'admin_general_expense', amountNative:-0.059, disclosureLevel:'aggregated' },
+    { rawLabel:'Demais Gastos', normalizedCategory:'other_expenses', amountNative:-1.75, disclosureLevel:'aggregated' },
+    { rawLabel:'Tributárias', normalizedCategory:'admin_general_expense', amountNative:-0.234, disclosureLevel:'aggregated' },
+  ],
 };
 
 const chapecoenseBrFiscalYearMeta = {
@@ -149,6 +192,23 @@ const chapecoenseBrFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-6.933, tax:0,
     officialTotalRevenue:61.097, officialTotalExpenses:68.328, officialPAT:-59.872,
+  },
+  2022: {
+    currency:'BRL', fxRef:'BRL@2022-12-31',
+    sourceId:'chapecoense-br-demonstracoes-contabeis-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:4.824, tax:0,
+    extraRows: [
+      {label:'Receitas Financeiras', value:6.491},
+      {label:'Despesas Financeiras', value:-1.667},
+    ],
+    sinDesglose: [
+      {renglon:'Custos', lado:'expense', importe:0.18, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:36.714, officialTotalExpenses:35.404, officialPAT:6.134,
   },
 };
 
@@ -178,6 +238,11 @@ Object.assign(sources, {
     title:'Demonstrações Financeiras da Controladora e Consolidado em conjunto com as Notas Explicativas, findas em 31/12/2021 e 31/12/2020',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://www.fcf.com.br/',
+  },
+  'chapecoense-br-demonstracoes-contabeis-2022': {
+    id:'chapecoense-br-demonstracoes-contabeis-2022', clubId:'chapecoense-br',
+    title:'Associação Chapecoense de Futebol — demonstracoes-contabeis-2022 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 

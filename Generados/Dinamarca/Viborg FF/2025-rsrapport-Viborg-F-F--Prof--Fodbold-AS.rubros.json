@@ -1,0 +1,110 @@
+{
+  "md": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md",
+  "pdf": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf",
+  "club": "viborg-dk",
+  "year": 2025,
+  "generatedAt": "2026-10-19T17:16:36.619Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Nettoomsætning Revenue",
+      "lado": "revenue",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        79.32982
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Andre driftsindtægter Other operating income",
+      "lado": "revenue",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        23.343225
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Vareforbrug Cost of sales",
+      "lado": "expense",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        35.149658
+      ],
+      "glosa": "Coste de las ventas"
+    },
+    {
+      "label": "Andre eksterne omkostninger Other external expenses",
+      "lado": "expense",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        7.005308
+      ],
+      "glosa": "Otros gastos externos"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+      "values": [
+        46.236951
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+      "values": [
+        3.886859
+      ],
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+      "values": [
+        0.356202
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Andre personaleomkostninger",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+      "values": [
+        3.561998
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment",
+      "lado": "expense",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        18.375737
+      ],
+      "glosa": "Amortización y pérdidas por deterioro del inmovilizado material e intangible"
+    },
+    {
+      "label": "Andre driftsomkostninger Other operating expenses",
+      "lado": "expense",
+      "page": 23,
+      "section": "estado",
+      "values": [
+        1.299319
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

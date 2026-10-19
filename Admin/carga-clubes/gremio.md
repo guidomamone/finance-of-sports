@@ -115,6 +115,83 @@ resultados"/gráficos de Inicio para mostrar "2024" en vez de un rango de tempor
 que sería falso para este club.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Brasil/Gremio/wf-2024-2025-1774995c.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Gremio/wf-2024-2025-1774995c.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Campeonato Brasileiro | pág. 29, Claude 0.88 |
+| 2 | Campeonato Gaúcho | pág. 29, Claude 0.88 |
+| 3 | Copa do Brasil | pág. 29, Claude 0.88 |
+| 4 | Copa Libertadores/Sul Americana | pág. 29, Claude 0.88 |
+| 5 | Campeonato Brasileiro Feminino | pág. 29, precedente |
+| 6 | Receitas Patrimoniais | pág. 28, precedente |
+| 7 | Receitas Publicitárias | pág. 28, precedente |
+| 8 | Receitas de Luvas Contratuais | pág. 28, precedente |
+| 9 | Receitas de Jogos (c) | pág. 28, precedente |
+| 10 | Receitas de Royalties | pág. 28, precedente |
+| 11 | Premiações de Competições | pág. 28, Jev 1 |
+| 12 | Locações (c) | pág. 28, Claude 0.8 |
+| 13 | Arrecadação Quadro Social | pág. 28, Jev 1 |
+| 14 | Vendas Grêmio Mania (b) | pág. 28, Jev 0.99 |
+| 15 | (-) Devoluções de vendas (b) | pág. 28, precedente |
+| 16 | (-) Impostos sobre vendas (b) | pág. 28, Jev 0.97 |
+| 17 | Outras Receitas do Desporto | pág. 28, Jev 0.98 |
+| 18 | Doações operação Arena | pág. 8, precedente |
+| 19 | Valor justo | pág. 8, Jev 1 |
+| 20 | Doações | pág. 30, precedente |
+| 21 | Venda de Atletas (b) | pág. 30, precedente |
+| 22 | Reversão despesas renegociação comissões e outras | pág. 30, Jev 1 |
+| 23 | Recuperação despesas Bancárias | pág. 30, Jev 1 |
+| 24 | Recuperação despesas correio – Loja | pág. 30, Jev 0.92 |
+| 25 | Ressarcimento despesas categoria de Base e Feminino | pág. 30, precedente |
+| 26 | Reembolso de despesas diversas | pág. 30, Jev 1 |
+| 27 | Mecanismo de Solidariedade (c) | pág. 30, precedente |
+| 28 | Festejos e Aniversários | pág. 30, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo Baixa Direitos Econômicos | pág. 30, Jev 0.96 |
+| 2 | Salários, benefícios encargos sociais | pág. 29, Claude 0.88 |
+| 3 | Despesas Federações, Imagens, Prémios, Mat. Esportivo e outras | pág. 29, Jev 0.96 |
+| 4 | Amortização de Direitos sobre Atletas Profissionais | pág. 29, precedente |
+| 5 | Serviços de terceiro | pág. 29, precedente |
+| 6 | Despesas de Viagens | pág. 29, precedente |
+| 7 | Negociação de atletas | pág. 29, precedente |
+| 8 | CMV – Grêmio Mania | pág. 29, precedente |
+| 9 | Ingressos a Sócios | pág. 29, precedente |
+| 10 | Salários, benefícios e Encargos Sociais - Demais Administrativas | pág. 29, precedente |
+| 11 | Serviços de Terceiros | pág. 29, precedente |
+| 12 | Contingências Judiciais | pág. 29, precedente |
+| 13 | Aluguéis, Seguros, Materiais de Consumo e de Expediente | pág. 29, precedente |
+| 14 | Depreciação/Amortização Ativos Imobilizados e intangíveis | pág. 29, Jev 0.99 |
+| 15 | Água, Luz, Telefonia, Manutenção, Transportes e outras | pág. 29, precedente |
+| 16 | Publicitárias | pág. 29, Jev 1 |
+| 17 | Provisão Créditos Liquidação Duvidosa | pág. 29, Jev 0.95 |
+| 18 | Outras despesas | pág. 29, precedente |
+| 19 | Tributos e Contribuições Federais | pág. 29, precedente |
+| 20 | Impairment direito de superfície | pág. 8, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): br-serieA, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série A" (tools/club-league-reference/br.json), coincidencia exacta "Grêmio".
+```
+
 ## 2024
 
 ### Meta
@@ -148,6 +225,14 @@ _note (data/):_
 
 ```text
 PDF oficial (42 páginas, texto nativo), auditado por Baker Tilly Brasil RS Auditores Independentes (opinião sem ressalvas), firmado marzo de 2025, descargado directo de gremio.net/documentos/. Transcripción completa en Clubes/Brasil/Gremio/demonstracoes-contabeis-2023-2024.md. Solo se cargó el ejercicio 2024 (la columna 2023 del mismo documento está "Reapresentada" tras un cambio de norma contable, no comparable 1:1 con un balance 2023 propio). Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923), investigado externamente — el documento no declara tipo de cambio propio.
+```
+
+### gremio-wf-2024-2025-1774995c
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/Gremio/wf-2024-2025-1774995c.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

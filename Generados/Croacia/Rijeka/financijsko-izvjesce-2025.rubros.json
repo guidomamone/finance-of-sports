@@ -1,52 +1,390 @@
 {
- "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.md",
- "pdf": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf",
- "club": "rijeka-hr",
- "year": 2025,
- "numberFormat": "espacio como separador de miles (escandinavo)",
- "generatedAt": "2026-09-30T21:59:46.218Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 3,
-  "notasUsadas": []
- },
- "ladoConocido": 3,
- "rubros": [
-  {
-   "label": "Prihodi od prodaje",
-   "lado": "revenue",
-   "page": 10,
-   "section": "HNK Rijeka s.d.d. / Račun dobiti i gubitka / za godinu koja je završila 31. prosinca 2025. / 2025. 2024. / Bilješka 000'EUR 000'EUR",
-   "values": [
-    16.565
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "Ostali poslovni prihodi",
-   "lado": "revenue",
-   "page": 10,
-   "section": "HNK Rijeka s.d.d. / Račun dobiti i gubitka / za godinu koja je završila 31. prosinca 2025. / 2025. 2024. / Bilješka 000'EUR 000'EUR",
-   "values": [
-    9.752
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "Materijalni troškovi",
-   "lado": "expense",
-   "page": 10,
-   "section": "HNK Rijeka s.d.d. / Račun dobiti i gubitka / za godinu koja je završila 31. prosinca 2025. / 2025. 2024. / Bilješka 000'EUR 000'EUR",
-   "values": [
-    -17.208
-   ],
-   "origen": "estado 2"
-  }
- ]
+  "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.md",
+  "pdf": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf",
+  "club": "rijeka-hr",
+  "year": 2025,
+  "generatedAt": "2026-10-19T16:42:17.509Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Dobit od prodaje igrača",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Prihodi od prodaje\"",
+      "values": [
+        9.727
+      ],
+      "glosa": "Beneficio por traspaso de jugadores"
+    },
+    {
+      "label": "Prihodi od sponzorstava",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Prihodi od prodaje\"",
+      "values": [
+        1.513
+      ],
+      "glosa": "Ingresos por patrocinios"
+    },
+    {
+      "label": "Prihodi od prodaje ulaznica",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Prihodi od prodaje\"",
+      "values": [
+        2.487
+      ],
+      "glosa": "Ingresos por taquilla y venta de entradas"
+    },
+    {
+      "label": "Prihodi od TV prava",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Prihodi od prodaje\"",
+      "values": [
+        1.336
+      ],
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Prihodi od prodaje ekonomskih prava igrača",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Prihodi od prodaje\"",
+      "values": [
+        0.068
+      ],
+      "glosa": "Ingresos por venta de derechos económicos de jugadores"
+    },
+    {
+      "label": "Najam poslovnog prostora",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Prihodi od prodaje\"",
+      "values": [
+        0.249
+      ],
+      "glosa": "Alquiler de locales comerciales"
+    },
+    {
+      "label": "Ostali prihodi od prodaje",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Prihodi od prodaje\"",
+      "values": [
+        1.185
+      ],
+      "glosa": "Otros ingresos por ventas"
+    },
+    {
+      "label": "UEFA nagrade i solidarne uplate",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Ostali poslovni prihodi\"",
+      "values": [
+        8.824
+      ],
+      "glosa": "Premios y pagos solidarios de la UEFA"
+    },
+    {
+      "label": "Donacije u zemlji",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Ostali poslovni prihodi\"",
+      "values": [
+        0.484
+      ],
+      "glosa": "Donaciones nacionales"
+    },
+    {
+      "label": "Prihodi od članarina",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Ostali poslovni prihodi\"",
+      "values": [
+        0.315
+      ],
+      "glosa": "Ingresos por cuotas de socios"
+    },
+    {
+      "label": "Ostali nespomenuti prihodi",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Ostali poslovni prihodi\"",
+      "values": [
+        0.129
+      ],
+      "glosa": "Otros ingresos no especificados"
+    },
+    {
+      "label": "Sportska oprema",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Troškovi materijala\"",
+      "values": [
+        0.303
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Roba za ambulantu",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Troškovi materijala\"",
+      "values": [
+        0.086
+      ],
+      "glosa": "Material médico y sanitario"
+    },
+    {
+      "label": "Utrošene sirovine i materijal",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Troškovi materijala\"",
+      "values": [
+        0.017
+      ],
+      "glosa": "Consumo de materias primas y materiales"
+    },
+    {
+      "label": "Ostalo",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Troškovi materijala\"",
+      "values": [
+        0.288
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Troškovi prodane robe",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\"",
+      "values": [
+        0.334
+      ],
+      "glosa": "Coste de las mercancías vendidas"
+    },
+    {
+      "label": "Naknade igračima i trenerima",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+      "values": [
+        10.031
+      ],
+      "glosa": "Retribuciones a jugadores y entrenadores"
+    },
+    {
+      "label": "Najam",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+      "values": [
+        1.718
+      ],
+      "glosa": "Arrendamientos y alquileres"
+    },
+    {
+      "label": "Intelektualne usluge",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+      "values": [
+        1.026
+      ],
+      "glosa": "Servicios profesionales independientes"
+    },
+    {
+      "label": "Trošak održavanja utakmica",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+      "values": [
+        1.529
+      ],
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Vanjske usluge",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+      "values": [
+        0.46
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Pripreme igrača",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+      "values": [
+        0.584
+      ],
+      "glosa": "Gastos de concentración y preparación de jugadores"
+    },
+    {
+      "label": "Marketinški troškovi",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+      "values": [
+        0.177
+      ],
+      "glosa": "Gastos de marketing y publicidad"
+    },
+    {
+      "label": "Prijevozne usluge",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+      "values": [
+        0.038
+      ],
+      "glosa": "Gastos de transporte"
+    },
+    {
+      "label": "Ostale usluge",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Materijalni troškovi\" > desglose de \"Ostali vanjski troškovi\"",
+      "values": [
+        0.617
+      ],
+      "glosa": "Otros servicios"
+    },
+    {
+      "label": "Neto plaće i nadnice",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Troškovi osoblja\"",
+      "values": [
+        0.483
+      ],
+      "glosa": "Sueldos y salarios netos"
+    },
+    {
+      "label": "Troškovi poreza i doprinosa iz plaća",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Troškovi osoblja\"",
+      "values": [
+        0.21
+      ],
+      "glosa": "Impuestos y cotizaciones retenidos sobre salarios"
+    },
+    {
+      "label": "Doprinosi na plaće",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Troškovi osoblja\"",
+      "values": [
+        0.114
+      ],
+      "glosa": "Cargas sociales a cargo de la empresa"
+    },
+    {
+      "label": "Nematerijalne imovine",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Amortizacija\"",
+      "values": [
+        1.267
+      ],
+      "glosa": "Inmovilizado intangible"
+    },
+    {
+      "label": "Materijalne imovine",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Amortizacija\"",
+      "values": [
+        0.01
+      ],
+      "glosa": "Inmovilizado material"
+    },
+    {
+      "label": "Naknade za transfere igrača",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Ostali troškovi\"",
+      "values": [
+        1.054
+      ],
+      "glosa": "Costes por transferencias de jugadores"
+    },
+    {
+      "label": "Reprezentacija",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Ostali troškovi\"",
+      "values": [
+        0.64
+      ],
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Naknade i kazne savezima",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Ostali troškovi\"",
+      "values": [
+        0.414
+      ],
+      "glosa": "Tasas y sanciones federativas"
+    },
+    {
+      "label": "Porezi i doprinosi koji ne ovise o rezultatu",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Ostali troškovi\"",
+      "values": [
+        0.042
+      ],
+      "glosa": "Impuestos no vinculados al resultado"
+    },
+    {
+      "label": "Dnevnice i putni troškovi",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Ostali troškovi\"",
+      "values": [
+        0.073
+      ],
+      "glosa": "Dietas y gastos de viaje"
+    },
+    {
+      "label": "Ostalo",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Ostali troškovi\"",
+      "values": [
+        0.814
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Vrijednosno usklađenje potraživanja",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.209
+      ],
+      "glosa": "Corrección valorativa por deterioro de créditos"
+    },
+    {
+      "label": "Ostali poslovni rashodi",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.402
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
 }

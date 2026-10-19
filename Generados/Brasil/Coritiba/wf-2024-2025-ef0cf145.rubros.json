@@ -1,0 +1,280 @@
+{
+  "md": "Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md",
+  "pdf": "Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.pdf",
+  "club": "coritiba",
+  "year": 2025,
+  "generatedAt": "2026-10-19T16:42:17.032Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Direitos de Transmissão de TV",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        13.543227
+      ],
+      "glosa": "Derechos de retransmisión televisiva"
+    },
+    {
+      "label": "Mensalidades de Associados",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        26.236358
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Transações de Atletas",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        41.408085
+      ],
+      "glosa": "Traspasos de futbolistas"
+    },
+    {
+      "label": "Competições/Bilheteria",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        9.155964
+      ],
+      "glosa": "Competiciones/Taquilla"
+    },
+    {
+      "label": "Patrocínios/Subvenção",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        19.173611
+      ],
+      "glosa": "Patrocinios/Subvenciones"
+    },
+    {
+      "label": "Patrimoniais",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        7.05131
+      ],
+      "glosa": "Ingresos patrimoniales"
+    },
+    {
+      "label": "Receitas com Vendas de Mercadorias",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        12.53858
+      ],
+      "glosa": "Ingresos por ventas de mercancías"
+    },
+    {
+      "label": "Outras Receitas",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        9.818733
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Tributos Sobre Receitas",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -5.044851
+      ],
+      "glosa": "Impuestos sobre los ingresos"
+    },
+    {
+      "label": "Taxas Federativas/Direito de Arena",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.998493
+      ],
+      "glosa": "Tasas federativas/Derecho de arena"
+    },
+    {
+      "label": "Futebol",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        89.80156
+      ],
+      "glosa": "Fútbol"
+    },
+    {
+      "label": "Futebol das Categorias de Base",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        17.42354
+      ],
+      "glosa": "Fútbol base"
+    },
+    {
+      "label": "Custos das Mercadorias Vendidas",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        5.102791
+      ],
+      "glosa": "Coste de las mercancías vendidas"
+    },
+    {
+      "label": "Amortização de Direitos Econômicos de Atletas",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        18.545239
+      ],
+      "glosa": "Amortización de derechos económicos de futbolistas"
+    },
+    {
+      "label": "Formação de Atletas",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.236121
+      ],
+      "glosa": "Formación de deportistas"
+    },
+    {
+      "label": "Pessoal, Benefícios e Encargos Sociais",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        33.964204
+      ],
+      "glosa": "Personal, beneficios y cargas sociales"
+    },
+    {
+      "label": "Conservação de Bens Patrimoniais",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        5.027648
+      ],
+      "glosa": "Conservación de bienes patrimoniales"
+    },
+    {
+      "label": "Multas e Honorários / Encargos Legais",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        3.023747
+      ],
+      "glosa": "Multas y honorarios / Gastos legales"
+    },
+    {
+      "label": "Serviços de Terceiros",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        12.925223
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Energia Elétrica, Gás, Água e Telefonia",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        1.549198
+      ],
+      "glosa": "Energía eléctrica, gas, agua y telefonía"
+    },
+    {
+      "label": "Propaganda, Publicidade e Eventos",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        0.09652
+      ],
+      "glosa": "Propaganda, publicidad y eventos"
+    },
+    {
+      "label": "Materiais de Almoxarifado",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        1.996713
+      ],
+      "glosa": "Materiales de almacén"
+    },
+    {
+      "label": "Impostos e Taxas",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        0.118022
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "Tecnologia da Informação",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        9.285786
+      ],
+      "glosa": "Tecnología de la información"
+    },
+    {
+      "label": "Locações de Equipamentos e Imóveis",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        1.662051
+      ],
+      "glosa": "Arrendamientos de equipos e inmuebles"
+    },
+    {
+      "label": "Outras Despesas Administrativas",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Administrativas e Marketing\"",
+      "values": [
+        11.601262
+      ],
+      "glosa": "Otros gastos administrativos"
+    },
+    {
+      "label": "Outras (Despesas) Receitas Operacionais e Não Operacionais",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        22.887789
+      ],
+      "glosa": "Otros (gastos) ingresos operativos y no operativos"
+    }
+  ]
+}

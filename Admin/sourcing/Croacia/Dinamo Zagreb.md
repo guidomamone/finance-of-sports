@@ -59,3 +59,5 @@ Resuelto el "pendiente 2023" y el 2025 que figuraba sin publicar. Todos escaneos
 - Quedan sin uso dos decisiones de Skupština en el CDN (marzo 2026 y agosto 2025): no son estados financieros.
 - Pendiente: consolidado 2018 (el club presentaba otra cosa entonces) y años anteriores a 2018.
 - Ojo para cargar: hay dos perímetros por año (consolidado vs la udruga sola). El sitio ya tiene el 2024 consolidado.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.pdf` (sourceId `dinamozagreb-hr-dinamo-2025-konsolidirano`).

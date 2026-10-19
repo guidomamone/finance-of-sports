@@ -1,0 +1,1309 @@
+{
+ "pdf": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.pdf",
+ "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md",
+ "mdSha1": "65f36be6df4ab07f72a541c93249859c7d911ea4",
+ "ubicacionSha1": "bac17d9de2dbbab1d6ef1fb60d78484e28e2d33a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:35:09.835Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b6",
+   "b7"
+  ],
+  "notas_gastos": [
+   "b8",
+   "b9"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L88: (expresado a moneda constante - comparativo con el ejercicio anterior); importes con decimales en pesos"
+  },
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L339: (expresado a moneda constante ...)"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L411: (expresado a moneda constante ...)"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L493: (expresado a moneda constante ...)"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "L582: (expresado a moneda constante ...)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 93,
+   "etiqueta": "Para fines generales ( Anexo B )",
+   "actual": "4.615.086.828,80",
+   "anterior": "4.119.735.013,64",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 94,
+   "etiqueta": "Específicos ( Anexo B )",
+   "actual": "10.025.940.514,69",
+   "anterior": "8.643.735.067,63",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 95,
+   "etiqueta": "Total Recursos Ordinarios",
+   "actual": "14.641.027.343,49",
+   "anterior": "12.763.470.081,27",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 98,
+   "etiqueta": "Específicos de sectores ( Anexo D )",
+   "actual": "-14.002.670.362,44",
+   "anterior": "-11.957.169.638,17",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 99,
+   "etiqueta": "Generales de administración ( Anexo E )",
+   "actual": "-1.737.663.525,70",
+   "anterior": "-2.248.762.175,54",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 100,
+   "etiqueta": "Amortizaciones de bienes ( Anexo A )",
+   "actual": "-169.580.738,13",
+   "anterior": "-165.102.640,04",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 101,
+   "etiqueta": "Total Gastos Ordinarios",
+   "actual": "-15.909.914.626,27",
+   "anterior": "-14.371.034.453,75",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 103,
+   "etiqueta": "Recupero Decreto 510/23",
+   "actual": "1.446.974.562,75",
+   "anterior": "1.723.178.108,48",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 105,
+   "etiqueta": "Superavit (deficit) Operativo",
+   "actual": "178.087.279,97",
+   "anterior": "115.613.736,00",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 107,
+   "etiqueta": "Resultados Financieros incluido RECPAM",
+   "actual": "497.688.217,31",
+   "anterior": "3.196.180.654,64",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 109,
+   "etiqueta": "Superavit (Deficit) Ordinarios",
+   "actual": "675.775.497,28",
+   "anterior": "3.311.794.390,64",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 111,
+   "etiqueta": "Superavit (Deficit ) del Ejercicio",
+   "actual": "675.775.497,28",
+   "anterior": "3.311.794.390,64",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 344,
+   "etiqueta": "Cuotas Sociales Gral",
+   "actual": "4.615.086.828,80",
+   "anterior": "4.119.735.013,64",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines generales ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 347,
+   "etiqueta": "Servicios a Socios (Anexo C)",
+   "actual": "562.062.511,76",
+   "anterior": "572.187.331,04",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 348,
+   "etiqueta": "Ingresos por Actividades Federadas (Anexo C)",
+   "actual": "1.314.433.627,25",
+   "anterior": "1.143.851.783,17",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 349,
+   "etiqueta": "Ingreso por Colonia de Vacaciones",
+   "actual": "640.953.667,96",
+   "anterior": "821.697.116,72",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 350,
+   "etiqueta": "Ingreso por Colegio Instituto Educativo",
+   "actual": "2.151.577.663,53",
+   "anterior": "1.487.718.354,01",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 351,
+   "etiqueta": "Ingreso por Escuelas Deportivas (Anexo C)",
+   "actual": "1.302.906.100,63",
+   "anterior": "1.191.167.126,58",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 352,
+   "etiqueta": "Ingresos Ponteveedra",
+   "actual": "117.751.563,75",
+   "anterior": "113.552.390,19",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 353,
+   "etiqueta": "Aranceles por actividades",
+   "actual": "6.089.685.134,87",
+   "anterior": "5.330.174.101,70",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 355,
+   "etiqueta": "Recaudaciones Eventos Deportivos",
+   "actual": "36.043.482,07",
+   "anterior": "31.706.111,80",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 356,
+   "etiqueta": "Ingresos por Torneos",
+   "actual": "21.790.195,00",
+   "anterior": "19.298.247,22",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 357,
+   "etiqueta": "Derechos de Television",
+   "actual": "526.881.496,50",
+   "anterior": "479.382.436,96",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 358,
+   "etiqueta": "Venta de Abonos y Plateas",
+   "actual": "251.887.469,03",
+   "anterior": "127.029.180,33",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 359,
+   "etiqueta": "Ingreso por Publicidad y Sponsors",
+   "actual": "348.887.981,51",
+   "anterior": "244.559.666,30",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 360,
+   "etiqueta": "Ingresos por Alquileres",
+   "actual": "1.341.911.399,96",
+   "anterior": "537.872.434,82",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 361,
+   "etiqueta": "Ingresos por Buffet",
+   "actual": "25.879.933,70",
+   "anterior": "7.267.712,80",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 362,
+   "etiqueta": "Futbol Profesional Ventas y Prestamos",
+   "actual": "1.210.638.786,92",
+   "anterior": "1.773.137.442,98",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 363,
+   "etiqueta": "Otros Ingresos",
+   "actual": "28.538.147,32",
+   "anterior": "17.651.929,73",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 364,
+   "etiqueta": "Otros Ingresos Ordinarios",
+   "actual": "3.792.458.892,01",
+   "anterior": "3.237.905.162,95",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 366,
+   "etiqueta": "Derechos de Formacion y afines",
+   "actual": "138.616.987,81",
+   "anterior": "65.374.355,98",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 367,
+   "etiqueta": "Subsidios Recibidos",
+   "actual": "5.179.500,00",
+   "anterior": "10.281.447,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 368,
+   "etiqueta": "Ingresos Extraordinarios",
+   "actual": "143.796.487,81",
+   "anterior": "75.655.802,98",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b6",
+   "linea": 369,
+   "etiqueta": "Total",
+   "actual": "10.025.940.514,69",
+   "anterior": "8.643.735.067,63",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Específicos ( Anexo B )"
+  },
+  {
+   "bloque": "b7",
+   "linea": 416,
+   "etiqueta": "Natación",
+   "actual": "144.651.694,04",
+   "anterior": "143.557.550,22",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Servicios a Socios (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 417,
+   "etiqueta": "Fitnes",
+   "actual": "110.724.277,60",
+   "anterior": "122.700.436,51",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Servicios a Socios (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 418,
+   "etiqueta": "Tenis",
+   "actual": "187.283.255,52",
+   "anterior": "171.482.782,74",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Servicios a Socios (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 419,
+   "etiqueta": "Racquetball",
+   "actual": "10.098.617,15",
+   "anterior": "4.971.904,15",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Servicios a Socios (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 420,
+   "etiqueta": "Otros",
+   "actual": "109.304.667,45",
+   "anterior": "50.869.119,87",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Servicios a Socios (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 422,
+   "etiqueta": "Futbol Infantil",
+   "actual": "114.673.811,62",
+   "anterior": "66.269.998,15",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 423,
+   "etiqueta": "Futsal",
+   "actual": "258.097.896,96",
+   "anterior": "167.343.706,55",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 424,
+   "etiqueta": "Hockey",
+   "actual": "143.717.858,67",
+   "anterior": "181.448.825,84",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 425,
+   "etiqueta": "Handball",
+   "actual": "214.745.776,09",
+   "anterior": "223.056.460,69",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 426,
+   "etiqueta": "Voleyball",
+   "actual": "264.601.416,51",
+   "anterior": "237.384.299,90",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 427,
+   "etiqueta": "Basquetball",
+   "actual": "156.451.984,17",
+   "anterior": "133.053.070,41",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 428,
+   "etiqueta": "Gimnasia Artistica y Ritmica",
+   "actual": "68.393.724,84",
+   "anterior": "43.049.395,55",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 429,
+   "etiqueta": "Tenis",
+   "actual": "41.775.740,51",
+   "anterior": "27.630.563,33",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 430,
+   "etiqueta": "Natación",
+   "actual": "12.042.861,50",
+   "anterior": "9.782.782,87",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 431,
+   "etiqueta": "Otros",
+   "actual": "39.932.556,38",
+   "anterior": "4.534.890,82",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Actividades Federadas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 433,
+   "etiqueta": "Natación",
+   "actual": "172.726.570,79",
+   "anterior": "178.157.273,50",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 434,
+   "etiqueta": "Tenis",
+   "actual": "163.338.880,96",
+   "anterior": "160.889.267,47",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 435,
+   "etiqueta": "Futsal",
+   "actual": "369.888.636,63",
+   "anterior": "311.771.046,58",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 436,
+   "etiqueta": "Gimnasia Artistica y Ritmica",
+   "actual": "122.921.598,68",
+   "anterior": "125.674.282,74",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 437,
+   "etiqueta": "Hockey",
+   "actual": "118.384.157,07",
+   "anterior": "94.706.053,04",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 438,
+   "etiqueta": "Basquetball",
+   "actual": "95.289.422,26",
+   "anterior": "85.261.612,31",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 439,
+   "etiqueta": "Patin",
+   "actual": "28.733.354,72",
+   "anterior": "20.589.142,53",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 440,
+   "etiqueta": "Handball",
+   "actual": "47.742.140,08",
+   "anterior": "45.003.281,52",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 441,
+   "etiqueta": "Voleyball",
+   "actual": "46.142.982,62",
+   "anterior": "33.784.174,21",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 442,
+   "etiqueta": "Efi",
+   "actual": "29.805.101,92",
+   "anterior": "20.462.143,63",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 443,
+   "etiqueta": "Running",
+   "actual": "7.601.274,80",
+   "anterior": "7.324.226,20",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 444,
+   "etiqueta": "Beisbol",
+   "actual": "30.231.906,44",
+   "anterior": "19.044.069,83",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 445,
+   "etiqueta": "Taekwondo",
+   "actual": "17.712.098,80",
+   "anterior": "12.818.898,67",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 446,
+   "etiqueta": "Boxeo",
+   "actual": "18.349.103,52",
+   "anterior": "15.209.506,43",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 447,
+   "etiqueta": "Racquetball",
+   "actual": "5.169.428,70",
+   "anterior": "5.126.471,31",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 448,
+   "etiqueta": "Judo/Karate/Lucha y otros deportes de cotacto",
+   "actual": "14.278.526,69",
+   "anterior": "16.568.388,55",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 449,
+   "etiqueta": "Ajedrez",
+   "actual": "4.349.195,30",
+   "anterior": "3.051.678,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b7",
+   "linea": 450,
+   "etiqueta": "Tenis de Mesa",
+   "actual": "10.241.720,63",
+   "anterior": "5.976.266,59",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingreso por Escuelas Deportivas (Anexo C)"
+  },
+  {
+   "bloque": "b8",
+   "linea": 497,
+   "etiqueta": "1- Departamento de Educacion Fisica",
+   "actual": "497.873.922,48",
+   "anterior": "477.677.420,37",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 499,
+   "etiqueta": "Basquetball Profesional",
+   "actual": "933.749.637,54",
+   "anterior": "873.540.734,75",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 500,
+   "etiqueta": "Basquetball",
+   "actual": "250.730.189,26",
+   "anterior": "202.605.721,32",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 501,
+   "etiqueta": "Beisball",
+   "actual": "17.247.431,74",
+   "anterior": "15.641.163,82",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 502,
+   "etiqueta": "Boxeo",
+   "actual": "21.676.036,98",
+   "anterior": "14.765.769,66",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 503,
+   "etiqueta": "Efi",
+   "actual": "25.917.430,00",
+   "anterior": "30.518.988,02",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 504,
+   "etiqueta": "Fitnes",
+   "actual": "107.085.970,20",
+   "anterior": "89.035.068,20",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 505,
+   "etiqueta": "Futsal",
+   "actual": "569.302.824,82",
+   "anterior": "401.737.897,01",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 506,
+   "etiqueta": "Gimnasia Artistica y Ritmica",
+   "actual": "189.018.373,56",
+   "anterior": "134.754.162,22",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 507,
+   "etiqueta": "Handball",
+   "actual": "248.661.155,90",
+   "anterior": "245.540.642,60",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 508,
+   "etiqueta": "Hockey",
+   "actual": "179.232.651,48",
+   "anterior": "195.783.686,52",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 509,
+   "etiqueta": "Judo",
+   "actual": "12.320.021,03",
+   "anterior": "22.899.972,16",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 510,
+   "etiqueta": "Natacion",
+   "actual": "573.953.284,68",
+   "anterior": "482.668.968,86",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 511,
+   "etiqueta": "Patin",
+   "actual": "18.688.496,76",
+   "anterior": "15.473.552,38",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 512,
+   "etiqueta": "Racquetball",
+   "actual": "1.538.671,00",
+   "anterior": "1.903.094,50",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 513,
+   "etiqueta": "Taekwondo",
+   "actual": "25.023.415,08",
+   "anterior": "21.206.573,76",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 514,
+   "etiqueta": "Tenis",
+   "actual": "377.632.997,89",
+   "anterior": "345.915.730,86",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 515,
+   "etiqueta": "Tenis de Mesa",
+   "actual": "17.851.836,77",
+   "anterior": "13.987.373,65",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 516,
+   "etiqueta": "Voley",
+   "actual": "295.855.078,06",
+   "anterior": "245.137.268,66",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 517,
+   "etiqueta": "Otros",
+   "actual": "152.472.641,99",
+   "anterior": "121.906.453,09",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 518,
+   "etiqueta": "Total Departamento Deportes",
+   "actual": "4.017.958.144,75",
+   "anterior": "3.475.022.822,04",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 520,
+   "etiqueta": "Departamento de Futbol Profesional",
+   "actual": "3.719.085.521,84",
+   "anterior": "3.184.890.235,34",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 521,
+   "etiqueta": "Departamento de Futbol Femenino",
+   "actual": "393.466.979,42",
+   "anterior": "231.610.557,36",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 522,
+   "etiqueta": "Departamento de Futbol Infantil",
+   "actual": "95.357.147,45",
+   "anterior": "88.614.681,90",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 523,
+   "etiqueta": "Departamento de Futbol Amateur",
+   "actual": "267.376.359,73",
+   "anterior": "277.837.821,78",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 524,
+   "etiqueta": "Total Departamento de Futbol",
+   "actual": "4.475.286.008,44",
+   "anterior": "3.782.953.296,38",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 525,
+   "etiqueta": "4- Departamento Medico",
+   "actual": "163.377.764,70",
+   "anterior": "116.106.973,30",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 527,
+   "etiqueta": "Egresos por Instituto Educativo",
+   "actual": "2.102.175.189,20",
+   "anterior": "1.464.899.500,27",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 528,
+   "etiqueta": "Egresos por Colonia de Vacaciones",
+   "actual": "328.551.251,21",
+   "anterior": "140.484.411,52",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 529,
+   "etiqueta": "Egresos Ponteveedra",
+   "actual": "318.710.272,55",
+   "anterior": "340.253.406,43",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 530,
+   "etiqueta": "Total Egresos por Actividades",
+   "actual": "2.749.436.712,95",
+   "anterior": "1.945.637.318,22",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 532,
+   "etiqueta": "Egresos Sede Social",
+   "actual": "302.053.794,20",
+   "anterior": "290.557.788,10",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 533,
+   "etiqueta": "Egresos Campo Deportivo",
+   "actual": "869.907.479,91",
+   "anterior": "800.931.171,49",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 534,
+   "etiqueta": "Egresos Anexos",
+   "actual": "22.156.549,65",
+   "anterior": "18.904.526,40",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 535,
+   "etiqueta": "Egresos Generales",
+   "actual": "904.136.413,38",
+   "anterior": "1.047.744.188,92",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 536,
+   "etiqueta": "Total Intendencia Campos de Deportes",
+   "actual": "2.098.254.237,14",
+   "anterior": "2.158.137.674,91",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 538,
+   "etiqueta": "Egresos Departamento Cultural",
+   "actual": "483.571,97",
+   "anterior": "1.634.132,95",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 539,
+   "etiqueta": "Total Otros Egresos",
+   "actual": "483.571,97",
+   "anterior": "1.634.132,95",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b8",
+   "linea": 540,
+   "etiqueta": "Total Gastos Específicos de Departamentos",
+   "actual": "14.002.670.362,44",
+   "anterior": "11.957.169.638,17",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo D )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 586,
+   "etiqueta": "Sueldos al Personal",
+   "actual": "503.781.512,67",
+   "anterior": "573.354.502,15",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 587,
+   "etiqueta": "Honorarios y Otras Retribuciones",
+   "actual": "185.041.196,61",
+   "anterior": "127.592.512,16",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 588,
+   "etiqueta": "Servicios de Telefonia e Internet",
+   "actual": "20.045.398,08",
+   "anterior": "12.590.786,15",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 589,
+   "etiqueta": "Provisiones, Previsiones por Juicios e Incobrables",
+   "actual": "379.306.062,99",
+   "anterior": "752.691.615,69",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 590,
+   "etiqueta": "Cargas Sociales",
+   "actual": "85.062.155,79",
+   "anterior": "160.616.963,73",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 591,
+   "etiqueta": "Gastos Bancarios",
+   "actual": "30.441.851,63",
+   "anterior": "32.260.551,89",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 592,
+   "etiqueta": "Gastos por Acreditacion de Tarjetas de Credito",
+   "actual": "105.373.780,46",
+   "anterior": "85.594.444,67",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 593,
+   "etiqueta": "Movilidad y Viaticos",
+   "actual": "6.055.560,95",
+   "anterior": "92.836,18",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 594,
+   "etiqueta": "Publicidad Institucional",
+   "actual": "52.092.170,93",
+   "anterior": "86.418.096,83",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 595,
+   "etiqueta": "Gastos Varios",
+   "actual": "4.597.513,62",
+   "anterior": "3.411.872,27",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 596,
+   "etiqueta": "Papeleria y Utiles",
+   "actual": "7.879.976,57",
+   "anterior": "15.642.217,62",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 597,
+   "etiqueta": "Insumos Informaticos",
+   "actual": "15.197.506,16",
+   "anterior": "38.688.621,05",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 598,
+   "etiqueta": "Franqueos, Telegramas y Correos",
+   "actual": "169.560,65",
+   "anterior": "589.971,16",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 599,
+   "etiqueta": "Mantenimiento Infraestructura",
+   "actual": "5.644.784,40",
+   "anterior": "3.876.356,09",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 600,
+   "etiqueta": "Impuestos / Tasas / Contribuciones",
+   "actual": "336.974.494,19",
+   "anterior": "355.340.827,90",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  },
+  {
+   "bloque": "b9",
+   "linea": 601,
+   "etiqueta": "Total",
+   "actual": "1.737.663.525,70",
+   "anterior": "2.248.762.175,54",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración ( Anexo E )"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 95,
+  "actual": "14.641.027.343,49"
+ },
+ "total_gastos": {
+  "linea": 101,
+  "actual": "-15.909.914.626,27"
+ },
+ "resultado": {
+  "linea": 111,
+  "actual": "675.775.497,28",
+  "anterior": "3.311.794.390,64"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan como anterior de b7 los importes 30/06/2024 aunque los totales del Anexo C (p.ej. 493.581.793,49 en L415) difieren de los del Anexo B (572.187.331,04 en L347)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Servicios a Socios (Anexo C)",
+   "texto": "Los totales 2024 de Anexo C (L415, L421, L432) no coinciden con los del Anexo B (L347, L348, L351); los de 2025 sí coinciden.",
+   "bloques": [
+    "b7",
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se clasifica 'Recupero Decreto 510/23' (L103) como ingreso fuera del total de recursos?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Recupero Decreto 510/23",
+   "texto": "L103 suma al resultado operativo pero está fuera de Total Recursos y Gastos; se cargó como 'otro'.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala en pesos (unidades) en moneda constante. En b6 se usó la columna Total (coincide con la de cada tipo de recurso). Los subtotales de b6 sin etiqueta en su fila (L353, L364, L368) se cargaron con la etiqueta del encabezado del grupo. Cuotas Sociales Gral (L344) detalla 'Para fines generales'; su subtotal L345 replica el mismo importe y no se cargó."
+}

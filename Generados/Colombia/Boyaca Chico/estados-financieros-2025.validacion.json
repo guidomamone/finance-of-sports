@@ -1,0 +1,21 @@
+{
+ "pdf": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md",
+ "mdSha1": "133ebd7f1dfcb8e64c16820188b86d89e34b9eef",
+ "modo": "digital",
+ "motivoModo": "4 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 830100504 vs 803100504, 44117431400 vs 44117431500, 61269519900 vs 61269519800; 49 números del .md no están en el PDF (tolerancia 15)",
+ "generado": "2026-10-19T16:13:58.025Z",
+ "fuentes": {
+  "3": "gemini",
+  "16": "pdftotext",
+  "17": "pdftotext",
+  "18": "pdftotext",
+  "19": "pdftotext",
+  "20": "pdftotext"
+ },
+ "hibridas": [
+  3
+ ],
+ "confirmados": 195,
+ "noConfirmados": []
+}

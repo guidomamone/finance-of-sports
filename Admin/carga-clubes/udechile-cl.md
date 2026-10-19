@@ -124,6 +124,55 @@ EXACTO el total de Costo de Ventas + Gasto de Administración impreso en los
 ============================================================================
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Borderó | pág. 72, precedente |
+| 2 | Publicidad | pág. 72, precedente |
+| 3 | Participación torneos Internacionales | pág. 72, precedente |
+| 4 | Derechos de T.V. | pág. 72, precedente |
+| 5 | Ingresos por ventas de productos | pág. 72, precedente |
+| 6 | (ventas de pases) | pág. 72, Jev 1 |
+| 7 | Cesión temporal de derechos federativos (Préstamos) | pág. 72, Jev 1 |
+| 8 | Otros (Derechos de Formación, Solidaridad, etc.) | pág. 72, precedente |
+| 9 | Ingresos varios | pág. 72, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Borderó (costos directos) | pág. 73, precedente |
+| 2 | Remuneraciones | pág. 73, precedente |
+| 3 | Amortización de pases | pág. 73, Jev 1 |
+| 4 | Deterioro de pases | pág. 73, Claude 0.9 |
+| 5 | Costo de venta pases de jugadores | pág. 73, Jev 0.98 |
+| 6 | Costo de ventas de productos | pág. 73, Jev 1 |
+| 7 | Concentraciones y viajes | pág. 73, Jev 0.99 |
+| 8 | Indumentaria y equipamiento deportivo | pág. 73, Jev 0.98 |
+| 9 | Otros gastos de operación | pág. 73, Jev 0.92 |
+| 10 | Servicios básicos | pág. 73, Jev 0.99 |
+| 11 | Asesorías | pág. 73, Jev 0.99 |
+| 12 | Depreciaciones y amortizaciones | pág. 73, Jev 0.99 |
+| 13 | Mantenciones | pág. 73, Jev 1 |
+| 14 | Remuneraciones Administración | pág. 73, Jev 1 |
+| 15 | Multas Conmebol y otras | pág. 73, precedente |
+| 16 | Publicidad | pág. 73, precedente |
+| 17 | Otros Gastos de Administración | pág. 73, Jev 0.98 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2024
 
 ### Gastos
@@ -245,6 +294,14 @@ _note (data/):_
 
 ```text
 Descargado de la CMF, misma ficha. Cifras confirmadas idénticas (sin reexpresar) contra el comparativo "2022" que trae el balance 2023, salvo una diferencia de redondeo de 0,001 M CLP en "Ingresos varios" (1.053,975 M en el documento propio de 2022 vs. 1.053,974 M en el comparativo del documento 2023) — redondeo del propio emisor, no un error de transcripción. Transcripción completa en Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2022.md.
+```
+
+### udechile-cl-estados-financieros-2025
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

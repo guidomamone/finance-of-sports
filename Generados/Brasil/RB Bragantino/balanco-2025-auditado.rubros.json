@@ -1,0 +1,150 @@
+{
+  "md": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md",
+  "pdf": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.pdf",
+  "club": "rbbragantino-br",
+  "year": 2025,
+  "generatedAt": "2026-10-19T17:37:08.124Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita de patrocínio e publicidade",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        397.569
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "Campeonato Brasileiro",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        109.528
+      ],
+      "glosa": "Campeonato Brasileño"
+    },
+    {
+      "label": "Campeonato Paulista",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        15.6
+      ],
+      "glosa": "Campeonato Paulista"
+    },
+    {
+      "label": "Receitas com repasses de direitos federativo",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        11.214
+      ],
+      "glosa": "Ingresos por cesión de derechos federativos"
+    },
+    {
+      "label": "Outras Receitas",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        6.821
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Bilheteria",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        3.911
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Copa do Brasil",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        9.541
+      ],
+      "glosa": "Copa de Brasil"
+    },
+    {
+      "label": "( - ) Encargos sobre receitas",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        -54.984
+      ],
+      "glosa": "( - ) Cargas sobre ingresos"
+    },
+    {
+      "label": "Outras receitas e Despesas operacionais",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        28.089
+      ],
+      "glosa": "Otros ingresos y gastos operativos"
+    },
+    {
+      "label": "Comissão técnica",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        41.85
+      ],
+      "glosa": "Cuerpo técnico"
+    },
+    {
+      "label": "Custo do departamento de futebol",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        325.62
+      ],
+      "glosa": "Costos del departamento de fútbol"
+    },
+    {
+      "label": "Gastos com jogos e bonificações",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        9.675
+      ],
+      "glosa": "Gastos de partidos y bonificaciones"
+    },
+    {
+      "label": "Custo com departamento amador",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        50.7
+      ],
+      "glosa": "Costos del departamento amateur"
+    },
+    {
+      "label": "Despesas gerais e administrativas",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        49.965
+      ],
+      "glosa": "Gastos generales y administrativos"
+    }
+  ]
+}

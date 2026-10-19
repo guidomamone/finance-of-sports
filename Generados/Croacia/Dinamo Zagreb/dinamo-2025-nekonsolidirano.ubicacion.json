@@ -1,0 +1,243 @@
+{
+ "pdf": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-nekonsolidirano.pdf",
+ "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-nekonsolidirano.md",
+ "mdSha1": "f70e44d80e681a9a00f8c8983ff90386bfc088b2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:18:22.861Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    170,
+    216
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    230,
+    272
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    284,
+    329
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    343,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    397,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    450,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    500,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    553,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    611,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    662,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    718,
+    731
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    747,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    765,
+    768
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    772,
+    775
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    791,
+    797
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    849,
+    855
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    955,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    971,
+    974
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    988,
+    993
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    999,
+    1005
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    1023,
+    1034
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    1038,
+    1046
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    1064,
+    1068
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    1074,
+    1082
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6",
+  "b7",
+  "b8",
+  "b9",
+  "b10"
+ ],
+ "notas_ingresos": [
+  "b17",
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b22",
+  "b23",
+  "b24"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "IZVJEŠTAJ O PRIHODIMA I RASHODIMA (EUR); notas: (svi iznosi izraženi su u eurima)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Ostvareno u izvještajnom razdoblju",
+ "columna_anterior": "Ostvareno prethodne godine",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de la página 23 sin título visible 'Prihodi od pružanja usluga / Prihodi od prodaje roba' (b17) o se carga como nota de ingresos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Prihodi od pružanja usluga",
+   "texto": "b17 no muestra el número ni el título de la nota en el índice; parece desglose de ingresos por ventas/servicios, pero conviene confirmar.",
+   "bloques": [
+    "b17"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento no consolidado (nekonsolidirano), formato de organización sin fines de lucro. Estado de ingresos y gastos en b6-b10 (pág. 12-16), en euros. Columna del ejercicio 2025 es la última. Faltan en el índice notas 9 (posiblemente gastos de personal) y otras; b16 no aparece. Bloques b1-b5 son balance; b11-b15 órganos del club. b17 debe cargarse como nota de ingresos (respuesta a la duda: no se deja afuera)."
+}

@@ -132,6 +132,73 @@ sección 16).
 ============================================================================
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Croacia/Rijeka/financijsko-izvjesce-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Dobit od prodaje igrača | pág. 25, Jev 0.98 |
+| 2 | Prihodi od sponzorstava | pág. 25, Jev 0.99 |
+| 3 | Prihodi od prodaje ulaznica | pág. 25, Jev 1 |
+| 4 | Prihodi od TV prava | pág. 25, Jev 1 |
+| 5 | Prihodi od prodaje ekonomskih prava igrača | pág. 25, Jev 1 |
+| 6 | Najam poslovnog prostora | pág. 25, precedente |
+| 7 | Ostali prihodi od prodaje | pág. 25, precedente |
+| 8 | UEFA nagrade i solidarne uplate | pág. 25, Jev 1 |
+| 9 | Donacije u zemlji | pág. 25, Jev 0.97 |
+| 10 | Prihodi od članarina | pág. 25, Jev 1 |
+| 11 | Ostali nespomenuti prihodi | pág. 25, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sportska oprema | pág. 26, Claude 0.8 |
+| 2 | Roba za ambulantu | pág. 26, precedente |
+| 3 | Utrošene sirovine i materijal | pág. 26, Jev 0.97 |
+| 4 | Ostalo | pág. 26, Jev 1 |
+| 5 | Troškovi prodane robe | pág. 26, Claude 0.8 |
+| 6 | Naknade igračima i trenerima | pág. 26, Jev 1 |
+| 7 | Najam | pág. 26, precedente |
+| 8 | Intelektualne usluge | pág. 26, Jev 0.95 |
+| 9 | Trošak održavanja utakmica | pág. 26, Jev 1 |
+| 10 | Vanjske usluge | pág. 26, Jev 0.97 |
+| 11 | Pripreme igrača | pág. 26, Jev 0.96 |
+| 12 | Marketinški troškovi | pág. 26, Jev 1 |
+| 13 | Prijevozne usluge | pág. 26, Jev 0.98 |
+| 14 | Ostale usluge | pág. 26, precedente |
+| 15 | Neto plaće i nadnice | pág. 26, precedente |
+| 16 | Troškovi poreza i doprinosa iz plaća | pág. 26, precedente |
+| 17 | Doprinosi na plaće | pág. 26, precedente |
+| 18 | Nematerijalne imovine | pág. 27, precedente |
+| 19 | Materijalne imovine | pág. 27, Jev 1 |
+| 20 | Naknade za transfere igrača | pág. 27, Jev 0.92 |
+| 21 | Reprezentacija | pág. 27, Jev 0.98 |
+| 22 | Naknade i kazne savezima | pág. 27, precedente |
+| 23 | Porezi i doprinosi koji ne ovise o rezultatu | pág. 27, Jev 0.99 |
+| 24 | Dnevnice i putni troškovi | pág. 27, Jev 0.95 |
+| 25 | Ostalo | pág. 27, Jev 1 |
+| 26 | Vrijednosno usklađenje potraživanja | pág. 10, Jev 1 |
+| 27 | Ostali poslovni rashodi | pág. 10, Jev 0.92 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): hr-hnl, verificado contra roster cacheado de "2025–26 Croatian Football League" (tools/club-league-reference/hr.json), coincidencia exacta "Rijeka".
+```
+
 ## 2024
 
 ### Gastos
@@ -170,4 +237,12 @@ _note (data/):_
 
 ```text
 Balance auditado COMBINADO (HNK Rijeka s.d.d. + Stadion Kantrida d.o.o., la sociedad que administra el estadio y vende las entradas), preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de octubre de 2024 de la HNS — combinación exigida desde esa fecha. Auditor: KPMG Croatia d.o.o. za reviziju. Dictamen limpio, sin salvedades. Se usó este informe combinado en vez del informe individual de HNK Rijeka s.d.d. a secas (también disponible en la misma carpeta) porque los ingresos de entradas/estadio se facturan a través de la subsidiaria: el individual habría subestimado el revenue real del club. Transcripción completa en Clubes/Croacia/Rijeka/financijsko-izvjesce-2024-kombinirani.md.
+```
+
+### rijeka-hr-financijsko-izvjesce-2025
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

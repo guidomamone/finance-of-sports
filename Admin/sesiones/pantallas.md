@@ -38,3 +38,44 @@
   Bestätigungsvermerk; solo está en el Unternehmensregister o el Bundesanzeiger, detrás de captcha. No se resuelve el captcha con ninguna herramienta:
   sigue pendiente (o candidato a mail al club, que Guido no quiere por ahora).
 - 282: por decisión de Guido (2026-10-19) Hamburgo 2024 se publicó "sin informe de auditoría" (`sin_informe`, línea 310 de `auditoria.jsonl`), con nota; si aparece el Bestätigungsvermerk 2023/24, pasa a sin_salvedades. ASSET_V 1401.
+
+## Pantallas 3, segunda tanda (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+
+- 252: `tools/ejercicios-nuevos.mjs` reconoce como "ya bajado" un PDF con una fecha `AAAA-MM-DD` del año esperado en el nombre (`cierre-2025-12-31`):
+  River (cierre de agosto a diciembre) pasa de "a mano" a "ya en su carpeta". Probado con `--club river`.
+- 252: lote 103 (`Admin/lotes/lote-103.txt`, 23 PDFs: el ejercicio siguiente de 21 clubes con el PDF ya en su carpeta; sin Bélgica, Noruega, Suiza, Países Bajos
+  ni Reino Unido). Cierres fijados con `ajustes.mjs`: FC Fredericia 2020 (2020-12-31) y Hajduk Split 2025 (2025-12-31). Costo: unos US$ 5,37 de transcripción
+  (15 sin `.md`, 2 sin tablas) más ~US$ 2,47 de lote; Colo-Colo y Universidad de Chile 2025 (más de 100 págs.) quedan fuera sin `--max-paginas 0`. Lo corrió Guido.
+- 273: sin cambio de código. `generate-sponsors.js` ya suma lo de `contexto-manual.json` por `data/contexto/<iso>.js` (43 de 45 sponsors manuales ya están;
+  los otros 2, Lierse 2020 y OH Leuven 2022, son años belgas no cargados). `--check` da "al día".
+
+### Qué queda (para TODO)
+
+- 252: River `estados-contables-cierre-2025-12-31.pdf` (sin `.md`) no está en el lote 103; falta para otro lote. Vasco da Gama 2024 quedó afuera: hay Associação y SAF y no sé cuál es el club.
+  14 clubes (AGF, Brøndby, Chaves, Estrela da Amadora, København, Mirassol, Nordsjælland, Osasuna, Randers, SønderjyskE, Torreense, União de Leiria, Vejle,
+  Villarreal) salen "ya en su carpeta" pero mi filtro por nombre no encontró el PDF del ejercicio siguiente: mirar si el script los marca de más.
+- 273: borrar el resto del punto (el generador ya suma el contexto manual); los años viejos sin sponsor quedan en null por decisión de Guido.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+### Lote 103, después de la transcripción (2026-10-19)
+
+- Transcripción y validación hechas (US$ 4,40). 0 años cargados todavía: 23 documentos frenados por la cola y por tres cierres.
+- Cierres fijados: Viborg 2025 (2025-06-30), Silkeborg 2025 (2025-12-31), Dinamo Zagreb consolidado 2025 (2025-12-31).
+- 23 casos de cola contestados por subagentes Sonnet (5 grupos por país) y revisados contra el .md los de Amazonas y Colo-Colo.
+- Amazonas 2025 (`demonstracoes-contabeis-2025-faf-1.pdf`) es el balance de la Federação Amazonense de Futebol, no del club: respondido `descartar`; falta que Guido
+  confirme si va a `Admin/registros/documentos-descartados.txt`, y buscar el balance 2025 de Amazonas FC.
+- Dinamo Zagreb 2025: hay dos documentos del mismo año (consolidado e individual); el sitio tiene el 2024 desde el consolidado, así que el consolidado es el que entra.
+  Rijeka: el 2024 cargado es combinado (HNK Rijeka + Stadion Kantrida) y el documento 2025 es individual: serie con perímetros mezclados (existe `financijsko-izvjesce-2024.md`, individual).
+  Colo-Colo 2025: la nota 21 suma 117.232 más que el estado; causa sin explicar (candidata a `Admin/dudas-por-club.md`).
+- El agente de Croacia usó Bash (solo para listar y buscar) aunque se le dijo que no.
+- Botafogo-SP: nada de lo respondido sale de `demonstracoes-contabeis-2022-2023.pdf` (es de Botafogo S.A.).
+
+### Lote 103, segunda corrida (2026-10-19)
+
+- 0 años cargados otra vez. La corrida categorizó solo 2 documentos de Basel (de Pipeline 5, US$ 0,056) y ninguno del lote 103: el registro todavía los tenía sin "listo-para-jev". Basel no se tocó (no se escribió nada). El ensayo ahora cotiza ~US$ 0,66 de categorización para los 22.
+- Unión Magdalena 2025: `[periodo]` frena con razón. El estado trae 2025 primero y el pipeline extrajo la segunda columna (2024) del documento 2025 (`.rubros.json` year 2024; la nota 24 toma 1.564.483, la columna 2024). Defecto de script, al TODO sin diseñar. Mi respuesta "aceptar" del caso 864aa95 estaba mal y la corregí con `corregir --valor no`. No cargar este año hasta resolverlo.

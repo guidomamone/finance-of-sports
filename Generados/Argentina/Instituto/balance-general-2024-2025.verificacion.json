@@ -1,0 +1,381 @@
+{
+ "pdf": "Clubes/Argentina/Instituto/balance-general-2024-2025.pdf",
+ "md": "Clubes/Argentina/Instituto/balance-general-2024-2025.md",
+ "generado": "2026-10-19T17:54:09.950Z",
+ "estado": "ok",
+ "clubId": "instituto",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Argentina/Instituto/balance-general-2024-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 99,
+   "etiqueta": "DÉFICIT EXTRAORDINARIO",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 99,
+   "motivo": "L99 repite 'Gastos extraordinarios' (L98, 1.038.794): las dos estaban como gasto y las filas sumaban 2 x 1.038.794 de más (diferencia 2.077.588 contra el total impreso); con la fila en 0 el resultado cierra con el Superávit final impreso 2.087.261.474. Claude 2026-10-19 (subagente Sonnet, revisado contra el .md L98-100)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "27393.078747 = 27393.078747",
+   "suma": 27393.078747,
+   "impreso": 27393.078747
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "25861.826397 = 25860.787603",
+   "suma": 25861.826397000004,
+   "impreso": 25860.787602999997
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.547473508864641e-12
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2024 de este documento suma ingresos 25037.575073; el sitio tiene 17958.365499"
+  }
+ ],
+ "notas": [
+  "la nota de \"Gastos extraordinarios(Nota 3 y 2.9.)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: sale la fila \"L99\" (2026-10-19, L99 repite 'Gastos extraordinarios' (L98, 1.038.794): las dos estaban como gasto y las filas sumaban 2 x 1.038.794 de más (diferencia 2.077.588 contra el total impreso); con la fila en 0 el resultado cierra con el Superávit final impreso 2.087.261.474. Claude 2026-10-19 (subagente Sonnet, revisado contra el .md L98-100))",
+  "duda de localizar confirmada por las sumas (usar-cuadro-por-segmento, \"Remuneraciones y cargas\"): ¿Se usa la columna FUTBOL de 'Remuneraciones y cargas' del Anexo V (b21) como salarios del plantel?",
+  "duda de localizar que no afecta la carga: El renglón del Anexo III mezcla cuotas sociales con abonos deportivos.",
+  "duda de extraer que no afecta la carga: El Anexo III solo abre por segmento la columna 2025; la de 2024 es total, por eso anterior queda null (L687).",
+  "duda de extraer que no afecta la carga: El renglón del estado es el total de sectores, así que se toma la columna 2025/2024 (L767-L783)."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 27393.078747,
+  "gastos": 25861.826397,
+  "financiero": 556.009124,
+  "impuesto": 0,
+  "resultadoImpreso": 2087.261474,
+  "resultadoParaCargar": 2087.261474,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Para fines generales (Anexo III)",
+   "lado": "ingreso",
+   "M": 3858.67127,
+   "pagina": 3,
+   "linea": 86,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Centros educativos",
+   "lado": "ingreso",
+   "M": 1860.968991,
+   "pagina": 15,
+   "linea": 688,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Abonos deportivos sede",
+   "lado": "ingreso",
+   "M": 138.046758,
+   "pagina": 15,
+   "linea": 690,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Derechos de TV",
+   "lado": "ingreso",
+   "M": 5322.741218,
+   "pagina": 15,
+   "linea": 691,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Entradas generales fútbol",
+   "lado": "ingreso",
+   "M": 35.396554,
+   "pagina": 15,
+   "linea": 692,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Entradas plateas y palcos fútbol",
+   "lado": "ingreso",
+   "M": 2324.40866,
+   "pagina": 15,
+   "linea": 693,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Publicidad institucional",
+   "lado": "ingreso",
+   "M": 14.985783,
+   "pagina": 15,
+   "linea": 694,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Publicidad otras competencias",
+   "lado": "ingreso",
+   "M": 1993.057168,
+   "pagina": 15,
+   "linea": 695,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Publicidad y sponsors fútbol",
+   "lado": "ingreso",
+   "M": 5939.360046,
+   "pagina": 15,
+   "linea": 696,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Recursos predio La Agustina",
+   "lado": "ingreso",
+   "M": 165.558451,
+   "pagina": 15,
+   "linea": 697,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Transferencias y préstamos de jugadores",
+   "lado": "ingreso",
+   "M": 4594.836822,
+   "pagina": 15,
+   "linea": 698,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Ventas de salón Gloriamanía",
+   "lado": "ingreso",
+   "M": 1047.529232,
+   "pagina": 15,
+   "linea": 699,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Subsidios recibidos",
+   "lado": "ingreso",
+   "M": 97.517794,
+   "pagina": 15,
+   "linea": 700,
+   "origen": "nota que desglosa \"Para fines específicos ( Anexo III)\""
+  },
+  {
+   "etiqueta": "Remuneraciones y cargas",
+   "lado": "gasto",
+   "M": 236.028547,
+   "pagina": 16,
+   "linea": 732,
+   "origen": "nota que desglosa \"Generales de administración (Anexo IV)\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 652.169935,
+   "pagina": 16,
+   "linea": 733,
+   "origen": "nota que desglosa \"Generales de administración (Anexo IV)\""
+  },
+  {
+   "etiqueta": "Servicios, luz, agua, gas, etc.",
+   "lado": "gasto",
+   "M": 44.698891,
+   "pagina": 16,
+   "linea": 734,
+   "origen": "nota que desglosa \"Generales de administración (Anexo IV)\""
+  },
+  {
+   "etiqueta": "Gastos bancarios",
+   "lado": "gasto",
+   "M": 650.310626,
+   "pagina": 16,
+   "linea": 735,
+   "origen": "nota que desglosa \"Generales de administración (Anexo IV)\""
+  },
+  {
+   "etiqueta": "Gastos de juicios",
+   "lado": "gasto",
+   "M": 63.781236,
+   "pagina": 16,
+   "linea": 736,
+   "origen": "nota que desglosa \"Generales de administración (Anexo IV)\""
+  },
+  {
+   "etiqueta": "(Recuperos) / Quebranto por Juicios",
+   "lado": "gasto",
+   "M": -103.020172,
+   "pagina": 16,
+   "linea": 737,
+   "origen": "nota que desglosa \"Generales de administración (Anexo IV)\""
+  },
+  {
+   "etiqueta": "Remuneraciones y cargas",
+   "lado": "gasto",
+   "M": 6086.836134,
+   "pagina": 17,
+   "linea": 769,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.773435,
+   "pagina": 17,
+   "linea": 770,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 1288.3452,
+   "pagina": 17,
+   "linea": 771,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 4146.2258,
+   "pagina": 17,
+   "linea": 772,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Mantenimiento de bienes de uso",
+   "lado": "gasto",
+   "M": 884.606457,
+   "pagina": 17,
+   "linea": 773,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Vigilancia sede",
+   "lado": "gasto",
+   "M": 119.384419,
+   "pagina": 17,
+   "linea": 774,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Servicios de energía, agua, gas, etc..",
+   "lado": "gasto",
+   "M": 342.901711,
+   "pagina": 17,
+   "linea": 775,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Gastos generales por eventos deportivos",
+   "lado": "gasto",
+   "M": 1130.207552,
+   "pagina": 17,
+   "linea": 776,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Viajes y concentraciones",
+   "lado": "gasto",
+   "M": 1386.761148,
+   "pagina": 17,
+   "linea": 777,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Compras de mercadería",
+   "lado": "gasto",
+   "M": 828.320664,
+   "pagina": 17,
+   "linea": 778,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Comisiones y acuerdos de rescisión",
+   "lado": "gasto",
+   "M": 4740.976594,
+   "pagina": 17,
+   "linea": 779,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Limpieza y vigilancia",
+   "lado": "gasto",
+   "M": 205.527311,
+   "pagina": 17,
+   "linea": 780,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Compras y préstamos de jugadores",
+   "lado": "gasto",
+   "M": 1650.86088,
+   "pagina": 17,
+   "linea": 781,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Vigilancia La Agustina",
+   "lado": "gasto",
+   "M": 536.244319,
+   "pagina": 17,
+   "linea": 782,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo V)\""
+  },
+  {
+   "etiqueta": "Depreciación de bienes de uso (Anexo I)",
+   "lado": "gasto",
+   "M": 494.536348,
+   "pagina": 3,
+   "linea": 92,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortización de Intangibles (Anexo II)",
+   "lado": "gasto",
+   "M": 474.310568,
+   "pagina": 3,
+   "linea": 93,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos extraordinarios(Nota 3 y 2.9.)",
+   "lado": "gasto",
+   "M": 1.038794,
+   "pagina": 3,
+   "linea": 98,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Res. Fin. y por tenencia incluido RECPAM(Nota 2.8.)",
+   "M": 556.009124,
+   "linea": 95
+  }
+ ],
+ "impuesto": []
+}

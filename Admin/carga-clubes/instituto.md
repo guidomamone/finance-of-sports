@@ -61,6 +61,72 @@ _de data/club-leagues/ar.js:_
 ascendido para 2023, ya en Primera al cierre
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Argentina/Instituto/balance-general-2024-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Argentina/Instituto/balance-general-2024-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Para fines generales (Anexo III) | pág. 3, Jev 0.92 |
+| 2 | Centros educativos | pág. 15, precedente |
+| 3 | Abonos deportivos sede | pág. 15, precedente |
+| 4 | Derechos de TV | pág. 15, precedente |
+| 5 | Entradas generales fútbol | pág. 15, precedente |
+| 6 | Entradas plateas y palcos fútbol | pág. 15, precedente |
+| 7 | Publicidad institucional | pág. 15, precedente |
+| 8 | Publicidad otras competencias | pág. 15, precedente |
+| 9 | Publicidad y sponsors fútbol | pág. 15, precedente |
+| 10 | Recursos predio La Agustina | pág. 15, precedente |
+| 11 | Transferencias y préstamos de jugadores | pág. 15, precedente |
+| 12 | Ventas de salón Gloriamanía | pág. 15, precedente |
+| 13 | Subsidios recibidos | pág. 15, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Remuneraciones y cargas | pág. 16, Claude 0.9 |
+| 2 | Honorarios | pág. 16, Claude 0.9 |
+| 3 | Servicios, luz, agua, gas, etc. | pág. 16, precedente |
+| 4 | Gastos bancarios | pág. 16, precedente |
+| 5 | Gastos de juicios | pág. 16, precedente |
+| 6 | (Recuperos) / Quebranto por Juicios | pág. 16, Claude 0.85 |
+| 7 | Remuneraciones y cargas | pág. 17, Claude 0.9 |
+| 8 | Seguros | pág. 17, precedente |
+| 9 | Honorarios | pág. 17, Claude 0.9 |
+| 10 | Diversos | pág. 17, precedente |
+| 11 | Mantenimiento de bienes de uso | pág. 17, precedente |
+| 12 | Vigilancia sede | pág. 17, precedente |
+| 13 | Servicios de energía, agua, gas, etc.. | pág. 17, precedente |
+| 14 | Gastos generales por eventos deportivos | pág. 17, precedente |
+| 15 | Viajes y concentraciones | pág. 17, precedente |
+| 16 | Compras de mercadería | pág. 17, precedente |
+| 17 | Comisiones y acuerdos de rescisión | pág. 17, precedente |
+| 18 | Limpieza y vigilancia | pág. 17, precedente |
+| 19 | Compras y préstamos de jugadores | pág. 17, precedente |
+| 20 | Vigilancia La Agustina | pág. 17, precedente |
+| 21 | Depreciación de bienes de uso (Anexo I) | pág. 3, precedente |
+| 22 | Amortización de Intangibles (Anexo II) | pág. 3, Jev 0.96 |
+| 23 | Gastos extraordinarios(Nota 3 y 2.9.) | pág. 3, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. L99 repite 'Gastos extraordinarios' (L98, 1.038.794): las dos estaban como gasto y las filas sumaban 2 x 1.038.794 de más (diferencia 2.077.588 contra el total impreso); con la fila en 0 el resultado cierra con el Superávit final impreso 2.087.261.474. Claude 2026-10-19 (subagente Sonnet, revisado contra el .md L98-100)
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): ar-primera, verificado contra roster cacheado de "2025 Argentine Primera División" (tools/club-league-reference/ar.json), coincidencia única por palabras "Instituto" = "Instituto ACC".
+```
+
 ## 2024
 
 ### Gastos
@@ -174,6 +240,14 @@ _note (data/):_
 
 ```text
 PDF oficial (17 páginas, texto nativo, sin necesidad de OCR), con informe de auditoría de fecha 15/10/2024. Instituto es el primer club nuevo agregado al sitio después de Vélez (Versión 94). Cifras en moneda homogénea reexpresada (RT 6, Resol. JG FACPCE 539/18). Convertido a USD con $909, el dólar mayorista de cierre al 30/6/2024 (mismo tipo de cambio ya usado para Racing y Vélez en esa misma fecha de cierre — el documento de Instituto no declara su propio tipo de cambio, a diferencia de Boca/Racing/Vélez, no tiene Anexo de moneda extranjera). SUPERÁVIT FINAL real del ejercicio: $1.830.503.804 ARS. El Anexo V ("Gastos Específicos de Sectores") desglosa gasto por sector (Fútbol/Básquet/La Agustina/Sede/Colegio/Tienda), mismo mecanismo que el Anexo III de Vélez para separar "Salarios y primas (plantel y cuerpo técnico)" del resto — ver comentario completo en data/ar/instituto-data.js. Presidente: Juan Manuel Cavagliatto ("Juntos por Instituto"), electo 4/5/2021, reelecto para el período 2022-2025 (institutoacc.com.ar/index.php/asumio-la-nueva-comision-directiva-en-instituto/), cubre la totalidad de este ejercicio. Club con 30.000 socios (institutoacc.com.ar/index.php/somos-30-mil-socios-y-socias/).
+```
+
+### instituto-balance-general-2024-2025
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Argentina/Instituto/balance-general-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

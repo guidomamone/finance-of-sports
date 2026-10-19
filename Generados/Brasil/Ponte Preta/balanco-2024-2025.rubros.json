@@ -1,0 +1,209 @@
+{
+  "md": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.md",
+  "pdf": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf",
+  "club": "pontepreta-br",
+  "year": 2025,
+  "generatedAt": "2026-10-19T16:42:17.458Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Quotas Globo-Camp.Brasileiro",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        1.660015
+      ],
+      "glosa": "Cuotas Globo - Campeonato Brasileño"
+    },
+    {
+      "label": "Quotas F.P.F",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        9.1175
+      ],
+      "glosa": "Cuotas F.P.F."
+    },
+    {
+      "label": "Premiação Campeonato Paulista",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        0.2
+      ],
+      "glosa": "Premios Campeonato Paulista"
+    },
+    {
+      "label": "Quotas Copa do Brasil-CBF",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        0.83
+      ],
+      "glosa": "Cuotas Copa de Brasil - CBF"
+    },
+    {
+      "label": "Publicidade/Propaganda",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        4.240984
+      ],
+      "glosa": "Publicidad / Propaganda"
+    },
+    {
+      "label": "Solidariedade / Compensação Formação",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        2.389897
+      ],
+      "glosa": "Solidaridad / Compensación por formación"
+    },
+    {
+      "label": "Administrativo - Estado",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.398765
+      ],
+      "glosa": "Administrativo - Estadio"
+    },
+    {
+      "label": "Administrativo - Jd Paineiras",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.053848
+      ],
+      "glosa": "Administrativo - Jd Paineiras"
+    },
+    {
+      "label": "Administrativo - Amador",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.988322
+      ],
+      "glosa": "Administrativo - Fútbol amateur"
+    },
+    {
+      "label": "Social / Outras",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.692
+      ],
+      "glosa": "Social / Otros"
+    },
+    {
+      "label": "Salários e Encargos /Outros",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        19.158725
+      ],
+      "glosa": "Sueldos y cargas sociales / Otros"
+    },
+    {
+      "label": "Serviços de Terceiros",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        3.0665
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Despesas com Jogos",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        5.573721
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Demais Gastos",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        14.887655
+      ],
+      "glosa": "Demás gastos"
+    },
+    {
+      "label": "Diferencia de redondeo",
+      "lado": "expense",
+      "section": "nota que desglosa \"Profissional\"",
+      "values": [
+        0.000001
+      ],
+      "glosa": "Diferencia de redondeo"
+    },
+    {
+      "label": "Administrativo - Estado",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.680125
+      ],
+      "glosa": "Administrativo - Estadio"
+    },
+    {
+      "label": "Administrativo - Jd Paineiras",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.51094
+      ],
+      "glosa": "Administrativo - Jd Paineiras"
+    },
+    {
+      "label": "Administrativo - Jd Eulina",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.480674
+      ],
+      "glosa": "Administrativo - Jd Eulina"
+    },
+    {
+      "label": "Amador",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.4534
+      ],
+      "glosa": "Fútbol amateur"
+    },
+    {
+      "label": "Depreciação/Amortizacao/Contingencia/Pept/Cnrd",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.299661
+      ],
+      "glosa": "Depreciación / Amortización / Contingencias / PEPT / CNRD"
+    }
+  ]
+}

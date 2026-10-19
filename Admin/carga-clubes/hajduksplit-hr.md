@@ -147,6 +147,97 @@ gestión sin confirmar fecha de inicio/fin del mandato).
 ============================================================================
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Croacia/Hajduk Split/financijsko-izvjesce-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Prihodi od ulaznica - Nacionalna natjecanja | pág. 10, Jev 0.99 |
+| 2 | Prihodi od ulaznica - UEFA klupska natjecanja | pág. 10, Claude 0.95 |
+| 3 | Prihodi od ulaznica - Godišnje ulaznice | pág. 10, precedente |
+| 4 | Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme) | pág. 10, Jev 1 |
+| 5 | Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi | pág. 10, Jev 1 |
+| 6 | Prihod od sponzorstva i oglašavanja - Reklamiranje na panoima oko terena za igru | pág. 10, Jev 1 |
+| 7 | Ostali nerazvrstani prihodi od sponzorstva i oglašavanja | pág. 10, Jev 0.94 |
+| 8 | Prava emitiranja - Nacionalna natjecanja | pág. 10, Jev 1 |
+| 9 | Komercijalni prihodi - Nacionalna natjecanja | pág. 10, Jev 1 |
+| 10 | Komercijalni prihodi - Prodaja proizvoda | pág. 10, Jev 1 |
+| 11 | Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica | pág. 10, precedente |
+| 12 | Ostali nerazvrstani komercijalni prihodi | pág. 10, Jev 1 |
+| 13 | Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade | pág. 10, Claude 0.8 |
+| 14 | Uefina klupska natjecanja - solidarne uplate | pág. 10, Jev 1 |
+| 15 | Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela | pág. 11, Jev 0.97 |
+| 16 | Donacije nepovezanih strana | pág. 11, Jev 1 |
+| 17 | Donacije i doprinosi povezanih strana | pág. 11, Jev 1 |
+| 18 | Prihodi od refundacije | pág. 36, Jev 1 |
+| 19 | Prihod od otpisa obveza | pág. 36, Jev 1 |
+| 20 | Prihod od naplačenih vrijednosnih usklađenja | pág. 36, Jev 1 |
+| 21 | Inventurni viškovi na robi | pág. 36, Jev 1 |
+| 22 | Ostali poslovni prihodi | pág. 36, precedente |
+| 23 | Prihod od raspolaganja registracijama igrača (uključujući prihode od ustupanja, solidarnih doprinosa i naknada za treniranje) | pág. 13, Jev 1 |
+| 24 | Dobit /(gubitak) od raspolaganja dugotrajnom imovinom | pág. 13, Jev 0.99 |
+| 25 | Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom | pág. 13, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Troškovi prodaje robe/proizvoda - izravni | pág. 12, Jev 0.99 |
+| 2 | Troškovi prodaje robe/proizvoda - ostali nerazvrstani | pág. 12, Jev 1 |
+| 3 | Plaće igrača | pág. 12, Jev 1 |
+| 4 | Ostali nerazvrstani troškovi primanja igrača | pág. 12, Jev 1 |
+| 5 | Plaće stručnog stožera | pág. 12, Jev 0.99 |
+| 6 | Ostali nerazvrstani troškovi primanja stručnog stožera | pág. 12, Claude 0.95 |
+| 7 | Plaće ostalih zaposlenika | pág. 12, Jev 0.99 |
+| 8 | Porezi i doprinosi - ostali zaposlenici | pág. 12, Jev 0.98 |
+| 9 | Ostali nerazvrstani troškovi za primanja ostalih zaposlenika | pág. 12, Jev 1 |
+| 10 | Amortizacija dugotrajne materijalne imovine | pág. 12, precedente |
+| 11 | Amortizacija ostale nematerijalne imovine (bez registracija igrača) | pág. 12, precedente |
+| 12 | Troškovi utakmica | pág. 12, precedente |
+| 13 | Troškovi sponzorstva i oglašavanja | pág. 12, Jev 1 |
+| 14 | Troškovi komercijalnih aktivnosti | pág. 12, Jev 1 |
+| 15 | Troškovi imovine i objekata | pág. 12, Jev 0.99 |
+| 16 | Kazne, penali naknada štete | pág. 37, Jev 0.95 |
+| 17 | Usluge konzult., stručnog nadzora i savjetovanja | pág. 37, Jev 0.97 |
+| 18 | Usluge pripreme i analitike sportaša | pág. 37, precedente |
+| 19 | Troškovi zakupa i lizinga | pág. 37, precedente |
+| 20 | Odvjetničke i bilježničke usluge, autorski honorari, ostale intelektualne usluge | pág. 37, Jev 0.99 |
+| 21 | Bankovne usluge i troškovi platnog prometa | pág. 37, precedente |
+| 22 | Naknade za korištenje prava intelekt. vlasništva | pág. 37, precedente |
+| 23 | Troškovi reprezentacije | pág. 37, Jev 0.99 |
+| 24 | Vrijednosno usklađenje od kupaca | pág. 37, Jev 0.99 |
+| 25 | Troškovi telekomunikacijskih i prijevoznih usluga | pág. 37, precedente |
+| 26 | Premije osiguranja | pág. 37, Claude 0.85 |
+| 27 | Darovanje za općekorisne namjene | pág. 37, Jev 0.98 |
+| 28 | Članarine, naknade i slična davanja | pág. 37, precedente |
+| 29 | Troškovi službenog puta, obrazovanja i ostalo | pág. 37, precedente |
+| 30 | Troškovi promidžbe | pág. 37, Jev 0.97 |
+| 31 | Troškovi komunalnih usluga | pág. 37, precedente |
+| 32 | Troškovi usklađenja | pág. 37, precedente |
+| 33 | Troškovi koji će se prefakturirati | pág. 37, Jev 0.95 |
+| 34 | Rashodi i otpisi potraživanja | pág. 37, Jev 0.98 |
+| 35 | Troškovi stjecanja registracija igrača (uključujući troškove ustupanja, solidarne doprinose i naknade za treniranje) | pág. 13, Jev 1 |
+| 36 | Nekapitalizirani troškovi za naknade agentima/posrednicima | pág. 13, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): cierre = 2025-12-31. ejercicio calendario: los financijsko izvješće de los clubes croatas cierran el 31-12 (Rijeka y Dinamo del mismo país lo hacen así); Pantallas 3, lote 103
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): hr-hnl, verificado contra roster cacheado de "2025–26 Croatian Football League" (tools/club-league-reference/hr.json), coincidencia exacta "Hajduk Split".
+```
+
 ## 2024
 
 ### Ingresos
@@ -190,4 +281,12 @@ _note (data/):_
 
 ```text
 Balance auditado de HNK Hajduk s.d.d., preparado según el Pravilnik o licenciranju i financijskoj održivosti klubova de la HNS. Auditor: Kalibović i partneri d.o.o. Dictamen limpio, sin salvedades. El documento fuente presenta varias celdas con calidad de OCR media (dígitos truncados o perdidos); los valores afectados se reconstruyeron cruzando contra los subtotales "Ukupno" impresos (ver comentario de cabecera de data/hr/hajduksplit-hr-data.js para el detalle de cada reconstrucción). Transcripción completa en Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2024.md.
+```
+
+### hajduksplit-hr-financijsko-izvjesce-2025
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

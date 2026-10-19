@@ -5,6 +5,12 @@ window.RANKINGS["cl-primera"] = {
     leagueSize: 16,
     wiki: {"t":"2025 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
+      { id:"colocolo-cl", revenue:51.554, reportType:"official_balance_sheet",
+        sourceId:"colocolo-cl-estados-financieros-2025",
+        mix:[["Comercial / Sponsors",16.084],["Estadio",10.7],["Televisión",9.973],["Venta de Jugadores",5.709],["Otros ingresos",9.087]] },
+      { id:"udechile-cl", revenue:39.18, reportType:"official_balance_sheet",
+        sourceId:"udechile-cl-estados-financieros-2025",
+        mix:[["Comercial / Sponsors",11.217],["Estadio",13.49],["Televisión",5.86],["Premios por competencias",6.961],["Venta de Jugadores",0.9],["Otros ingresos",0.752]] },
       { id:"catolica-cl", revenue:28.497, reportType:"official_balance_sheet",
         sourceId:"catolica-cl-estados-financieros-2025",
         mix:[["Cuotas Sociales",0.307],["Comercial / Sponsors",11.651],["Estadio",7.358],["Televisión",5.623],["Venta de Jugadores",2.062],["Otras secciones deportivas",0.569],["Otros ingresos",0.928]] },

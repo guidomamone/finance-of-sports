@@ -1,0 +1,361 @@
+{
+ "md": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md",
+ "generatedAt": "2026-10-19T17:17:42.850Z",
+ "rubrosHuella": "f36358c1d9670d40573a9de7b17029ddd4deac25",
+ "rubros": [
+  {
+   "label": "Food & beverage JYSK PARK",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sale of merchandise",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Transfer income",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Other revenue",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Sponsorship and collaboration agreements",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Prize income",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "TV revenue",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Entrance fees",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Compensation (FIFA/UEFA/DBU)",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "competition_bonus",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1132
+  },
+  {
+   "label": "Salary refunds",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 945
+  },
+  {
+   "label": "Sale of property, plant and equipment",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Other external expenses",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Other social security costs",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.62
+    ],
+    [
+     "lump_football_operations_expense",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Wages and salaries",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Pension costs",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Staff costs\"",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "wages_squad",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 984
+  },
+  {
+   "label": "Depreciation, amortisation and impairment losses",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "depreciation",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "other_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 1130
+  }
+ ]
+}

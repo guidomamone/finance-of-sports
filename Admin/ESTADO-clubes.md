@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 312 clubes, 1134 ejercicios, 21 países.
+TOTAL: 312 clubes, 1151 ejercicios, 21 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -35,11 +35,11 @@ ARGENTINA (19)
   Banfield                       1 ejercicio (2019/2020), balance, ARS
   Boca Juniors                   4 ejercicios (2021/2022, 2022/2023, 2024/2025, 2026/2027), balance + presupuesto, ARS
   Estudiantes de La Plata        4 ejercicios (2021/2022 a 2024/2025), balance, ARS
-  Ferro Carril Oeste             2 ejercicios (2021/2022 a 2022/2023), balance, ARS
+  Ferro Carril Oeste             3 ejercicios (2021/2022, 2022/2023, 2024/2025), balance, ARS
   Gimnasia y Esgrima (La Plata)  4 ejercicios (2022/2023 a 2025/2026), balance + presupuesto y balance + presupuesto, ARS
   Godoy Cruz                     1 ejercicio (2019/2020), balance, ARS
   Independiente                  2 ejercicios (2023/2024, 2025/2026), balance, ARS
-  Instituto ACC                  1 ejercicio (2023/2024), balance, ARS
+  Instituto ACC                  2 ejercicios (2023/2024 a 2024/2025), balance, ARS
   Los Andes                      2 ejercicios (2019/2020 a 2020/2021), balance, ARS
   Newell's Old Boys              1 ejercicio (2018/2019), balance, ARS
   Racing Club                    17 ejercicios (2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2023/2024, 2024/2025, 2025/2026, 2026/2027), balance + presupuesto y balance + presupuesto, USD/ARS
@@ -83,11 +83,11 @@ BRASIL (42)
   Avai                  5 ejercicios (2021 a 2025), balance, BRL
   Bahia                 2 ejercicios (2024 a 2025), balance, BRL
   Botafogo              3 ejercicios (2023 a 2025), balance, BRL
-  Botafogo-SP           1 ejercicio (2024), balance, BRL
+  Botafogo-SP           2 ejercicios (2024 a 2025), balance, BRL
   Ceará                 2 ejercicios (2024 a 2025), balance, BRL
-  Chapecoense           2 ejercicios (2017, 2021), balance, BRL
+  Chapecoense           3 ejercicios (2017, 2021, 2022), balance, BRL
   Corinthians           2 ejercicios (2024 a 2025), balance, BRL
-  Coritiba              2 ejercicios (2023 a 2024), balance, BRL
+  Coritiba              3 ejercicios (2023 a 2025), balance, BRL
   CRB                   6 ejercicios (2020 a 2025), balance, BRL
   Criciuma              14 ejercicios (2012 a 2025), balance, BRL
   Cruzeiro              4 ejercicios (2022 a 2025), balance, BRL
@@ -97,7 +97,7 @@ BRASIL (42)
   Fluminense            2 ejercicios (2024 a 2025), balance, BRL
   Fortaleza             1 ejercicio (2025), balance, BRL
   Goiás                 15 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025), balance, BRL
-  Grêmio                1 ejercicio (2024), balance, BRL
+  Grêmio                2 ejercicios (2024 a 2025), balance, BRL
   Guarani               2 ejercicios (2024 a 2025), balance, BRL
   Internacional         2 ejercicios (2024 a 2025), balance, BRL
   Ituano                1 ejercicio (2024), balance, BRL
@@ -108,10 +108,10 @@ BRASIL (42)
   Palmeiras             2 ejercicios (2024 a 2025), balance, BRL
   Paysandu              4 ejercicios (2021, 2023, 2024, 2025), balance, BRL
   Ponte Preta           3 ejercicios (2022 a 2024), balance, BRL
-  RB Bragantino         2 ejercicios (2019, 2024), balance, BRL
+  RB Bragantino         3 ejercicios (2019, 2024, 2025), balance, BRL
   Remo                  7 ejercicios (2019 a 2025), balance, BRL
   Santos                2 ejercicios (2024 a 2025), balance, BRL
-  São Paulo             2 ejercicios (2023 a 2024), balance, BRL
+  São Paulo             3 ejercicios (2023 a 2025), balance, BRL
   Sport Recife          1 ejercicio (2025), balance, BRL
   Vasco da Gama         1 ejercicio (2023), balance, BRL
   Vila Nova             9 ejercicios (2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025), balance, BRL
@@ -124,9 +124,9 @@ CH (3)
   St. Gallen  1 ejercicio (2024/2025), balance, CHF, sin deuda/caja
 
 CHILE (3)
-  Colo-Colo             3 ejercicios (2022 a 2024), balance, CLP
+  Colo-Colo             4 ejercicios (2022 a 2025), balance, CLP
   Universidad Católica  16 ejercicios (2010 a 2025), balance, CLP
-  Universidad de Chile  3 ejercicios (2022 a 2024), balance, CLP
+  Universidad de Chile  4 ejercicios (2022 a 2025), balance, CLP
 
 COLOMBIA (12)
   América de Cali         1 ejercicio (2025), balance, COP
@@ -158,15 +158,15 @@ ALEMANIA (11)
 DK (11)
   AGF              1 ejercicio (2020/2021), balance, DKK
   Brøndby          1 ejercicio (2020), balance, DKK
-  FC Fredericia    1 ejercicio (2019), balance, DKK
+  FC Fredericia    2 ejercicios (2019 a 2020), balance, DKK
   FC København     1 ejercicio (2024), balance, DKK
-  FC Midtjylland   1 ejercicio (2018/2019), balance, DKK
+  FC Midtjylland   2 ejercicios (2018/2019 a 2019/2020), balance, DKK
   FC Nordsjælland  1 ejercicio (2024), balance, DKK
   Randers FC       1 ejercicio (2022/2023), balance, DKK
-  Silkeborg IF     1 ejercicio (2024), balance, DKK
+  Silkeborg IF     2 ejercicios (2024 a 2025), balance, DKK
   SønderjyskE      1 ejercicio (2021/2022), balance, DKK
   Vejle            1 ejercicio (2024), balance, DKK
-  Viborg FF        1 ejercicio (2023/2024), balance, DKK
+  Viborg FF        2 ejercicios (2023/2024 a 2024/2025), balance, DKK
 
 EE (9)
   FCI Levadia          7 ejercicios (2019 a 2025), balance, EUR
@@ -238,12 +238,12 @@ GR (14)
   Volos NFC         7 ejercicios (2018/2019 a 2024/2025), balance, EUR
 
 HR (8)
-  Dinamo Zagreb  1 ejercicio (2024), balance, EUR
+  Dinamo Zagreb  2 ejercicios (2024 a 2025), balance, EUR
   Gorica         1 ejercicio (2025), balance, EUR
-  Hajduk Split   1 ejercicio (2024), balance, EUR
+  Hajduk Split   2 ejercicios (2024 a 2025), balance, EUR
   Istra 1961     1 ejercicio (2025), balance, EUR
   Osijek         1 ejercicio (2025), balance, EUR
-  Rijeka         1 ejercicio (2024), balance, EUR
+  Rijeka         2 ejercicios (2024 a 2025), balance, EUR
   Slaven Belupo  1 ejercicio (2025), balance, EUR
   Varaždin       1 ejercicio (2025), balance, EUR
 

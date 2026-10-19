@@ -1,0 +1,298 @@
+{
+ "pdf": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf",
+ "md": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md",
+ "mdSha1": "8ae621b530761b74fe74485def0f30e5d9ced048",
+ "ubicacionSha1": "5845bed19f26fb4a6005606d024a4d78beda0d5d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:09:22.085Z",
+ "ubicacion": {
+  "estado": [
+   "b18"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b25",
+   "b26"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b18",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2024/25 DKK' (L883), importes en coronas"
+  },
+  {
+   "bloque": "b25",
+   "escala": "unidades",
+   "evidencia": "Encabezado '2024/25 DKK' (L1125)"
+  },
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "Sin encabezado propio; I alt -2.693.035 coincide con L899 en DKK (L1163)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b18",
+   "linea": 885,
+   "etiqueta": "Nettoomsætning Revenue",
+   "actual": "79.329.820",
+   "anterior": "75.989.957",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 886,
+   "etiqueta": "Andre driftsindtægter Other operating income",
+   "actual": "23.343.225",
+   "anterior": "56.705.954",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 887,
+   "etiqueta": "Vareforbrug Cost of sales",
+   "actual": "-35.149.658",
+   "anterior": "-32.445.204",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 888,
+   "etiqueta": "Andre eksterne omkostninger Other external expenses",
+   "actual": "-7.005.308",
+   "anterior": "-7.162.920",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 889,
+   "etiqueta": "Bruttofortjeneste Gross profit",
+   "actual": "60.518.079",
+   "anterior": "93.087.787",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 890,
+   "etiqueta": "Personaleomkostninger Staff costs",
+   "actual": "-54.042.010",
+   "anterior": "-52.095.551",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 891,
+   "etiqueta": "Resultat før af- og nedskrivninger Profit before depreciation, amortisation, write-downs and impairment losses",
+   "actual": "6.476.069",
+   "anterior": "40.992.236",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 892,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment",
+   "actual": "-18.375.737",
+   "anterior": "-12.059.367",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 893,
+   "etiqueta": "Andre driftsomkostninger Other operating expenses",
+   "actual": "-1.299.319",
+   "anterior": "-1.263.649",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 894,
+   "etiqueta": "Resultat af primær drift Operating profit/loss",
+   "actual": "-13.198.987",
+   "anterior": "27.669.220",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 895,
+   "etiqueta": "Indtægter af andre kapitalandele, værdipapirer og tilgodehavender, der er anlægsaktiver Income from other investments and receivables that are fixed assets",
+   "actual": "196.462",
+   "anterior": "100.180",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 896,
+   "etiqueta": "Andre finansielle indtægter Financial income",
+   "actual": "769.400",
+   "anterior": "1.457.294",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 897,
+   "etiqueta": "Andre finansielle omkostninger Financial expenses",
+   "actual": "-160.522",
+   "anterior": "-42.681",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 898,
+   "etiqueta": "Resultat før skat Profit/loss before tax",
+   "actual": "-12.393.647",
+   "anterior": "29.184.013",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 899,
+   "etiqueta": "Skat af årets resultat Tax on profit or loss for the year",
+   "actual": "2.693.035",
+   "anterior": "-6.420.082",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 900,
+   "etiqueta": "Årets resultat Profit/loss for the year",
+   "actual": "-9.700.612",
+   "anterior": "22.763.931",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1129,
+   "etiqueta": "Lønninger",
+   "actual": "46.236.951",
+   "anterior": "44.094.465",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff costs"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1131,
+   "etiqueta": "Pensioner",
+   "actual": "3.886.859",
+   "anterior": "4.048.080",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff costs"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1133,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "356.202",
+   "anterior": "300.549",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff costs"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1135,
+   "etiqueta": "Andre personaleomkostninger",
+   "actual": "3.561.998",
+   "anterior": "3.652.457",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff costs"
+  },
+  {
+   "bloque": "b25",
+   "linea": 1137,
+   "etiqueta": "I alt",
+   "actual": "54.042.010",
+   "anterior": "52.095.551",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff costs"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1158,
+   "etiqueta": "Årets aktuelle skat",
+   "actual": "0",
+   "anterior": "5.973.066",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on profit or loss for the year"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1161,
+   "etiqueta": "Årets regulering af udskudt skat",
+   "actual": "-2.693.035",
+   "anterior": "447.016",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on profit or loss for the year"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1163,
+   "etiqueta": "I alt",
+   "actual": "-2.693.035",
+   "anterior": "6.420.082",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on profit or loss for the year"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 900,
+  "actual": "-9.700.612",
+  "anterior": "22.763.931"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el detalle de remuneración a dirección y directorio (L1143-L1151)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Personaleomkostninger Staff costs",
+   "texto": "Es información de remuneraciones incluida dentro de Lønninger/Pensioner, no un desglose aditivo (L1143-L1151); también se omite el número de empleados (L1139).",
+   "bloques": [
+    "b25"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El estado no imprime total de ingresos ni de gastos. En b26 los signos están invertidos respecto al estado (gasto positivo); se transcriben tal cual. Las columnas de b26 no tienen encabezado pero se asumen 2024/25 y 2023/24 por coincidencia con L899."
+}

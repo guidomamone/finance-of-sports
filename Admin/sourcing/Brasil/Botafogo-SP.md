@@ -28,3 +28,5 @@ Fuente: índice JSON FPF, entrada "Botafogo" (idClube 42; es Botafogo-SP/Ribeir�
 - `balanco-2017-botafogo-futebol-clube-associacao.pdf` — ej. 2017, **entidad predecesora**: "BOTAFOGO FUTEBOL CLUBE" (la asociación de Ribeirão Preto, escaneo 3 pp., balancete); no es la S.A. Cuenta como serie del club pero con ese caveat.
 - El FPF 2020 `RTA-219-2021...` es idéntico (md5) al ya existente `demonstracoes-financeiras-2019-2020.pdf`: no se duplicó.
 Serie en disco: 2017 (asociación), 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025. El "pendiente 2021" de arriba queda resuelto. Sin bajar: 2011-2016 (en el índice, jpg/pdf).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.pdf` (sourceId `botafogosp-br-demonstracoes-contabeis-2024-2025`).

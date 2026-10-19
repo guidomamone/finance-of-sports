@@ -1,0 +1,654 @@
+{
+ "pdf": "Clubes/Argentina/Instituto/balance-general-2024-2025.pdf",
+ "md": "Clubes/Argentina/Instituto/balance-general-2024-2025.md",
+ "mdSha1": "974dc96c9fc762b20ee3b41077cd780fb2d1fada",
+ "ubicacionSha1": "689f19264fd96ce1070eb4a5f8148c48bb5410a8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:35:59.144Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b19",
+   "b13"
+  ],
+  "notas_gastos": [
+   "b20",
+   "b21",
+   "b14"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L80: expresado en moneda homogénea (importes en pesos sin indicación de miles)"
+  },
+  {
+   "bloque": "b19",
+   "escala": "unidades",
+   "evidencia": "L687: columnas en $"
+  },
+  {
+   "bloque": "b13",
+   "escala": "unidades",
+   "evidencia": "Totales coinciden con b3 L95"
+  },
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "L731: $"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "Total 23.347.971.624 coincide con b3 L91"
+  },
+  {
+   "bloque": "b14",
+   "escala": "unidades",
+   "evidencia": "Total coincide con b3 L98"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 86,
+   "etiqueta": "Para fines generales (Anexo III)",
+   "actual": "3.858.671.270",
+   "anterior": "3.812.914.530",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 87,
+   "etiqueta": "Para fines específicos ( Anexo III)",
+   "actual": "23.534.407.477",
+   "anterior": "21.224.660.543",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 88,
+   "etiqueta": "Total recursos ordinarios",
+   "actual": "27.393.078.747",
+   "anterior": "25.037.575.073",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 90,
+   "etiqueta": "Generales de administración (Anexo IV)",
+   "actual": "(1.543.969.063)",
+   "anterior": "(2.676.602.066)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 91,
+   "etiqueta": "Específicos de sectores ( Anexo V)",
+   "actual": "(23.347.971.624)",
+   "anterior": "(19.801.844.890)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 92,
+   "etiqueta": "Depreciación de bienes de uso (Anexo I)",
+   "actual": "(494.536.348)",
+   "anterior": "(432.902.588)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 93,
+   "etiqueta": "Amortización de Intangibles (Anexo II)",
+   "actual": "(474.310.568)",
+   "anterior": "(442.114.659)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 94,
+   "etiqueta": "Total gastos ordinarios",
+   "actual": "(25.860.787.603)",
+   "anterior": "(23.353.464.203)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 95,
+   "etiqueta": "Res. Fin. y por tenencia incluido RECPAM(Nota 2.8.)",
+   "actual": "556.009.124",
+   "anterior": "894.346.411",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 96,
+   "etiqueta": "SUPERÁVIT ORDINARIO DEL EJERCICIO",
+   "actual": "2.088.300.268",
+   "anterior": "2.578.457.281",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 98,
+   "etiqueta": "Gastos extraordinarios(Nota 3 y 2.9.)",
+   "actual": "(1.038.794)",
+   "anterior": "(26.366.646)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 99,
+   "etiqueta": "DÉFICIT EXTRAORDINARIO",
+   "actual": "(1.038.794)",
+   "anterior": "(26.366.646)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 100,
+   "etiqueta": "SUPERÁVIT FINAL",
+   "actual": "2.087.261.474",
+   "anterior": "2.552.090.635",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 689,
+   "etiqueta": "Cuotas sociales y abonos deportivos",
+   "actual": "3.858.671.270",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines generales (Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 688,
+   "etiqueta": "Centros educativos",
+   "actual": "1.860.968.991",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 690,
+   "etiqueta": "Abonos deportivos sede",
+   "actual": "138.046.758",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 691,
+   "etiqueta": "Derechos de TV",
+   "actual": "5.322.741.218",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 692,
+   "etiqueta": "Entradas generales fútbol",
+   "actual": "35.396.554",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 693,
+   "etiqueta": "Entradas plateas y palcos fútbol",
+   "actual": "2.324.408.660",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 694,
+   "etiqueta": "Publicidad institucional",
+   "actual": "14.985.783",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 695,
+   "etiqueta": "Publicidad otras competencias",
+   "actual": "1.993.057.168",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 696,
+   "etiqueta": "Publicidad y sponsors fútbol",
+   "actual": "5.939.360.046",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 697,
+   "etiqueta": "Recursos predio La Agustina",
+   "actual": "165.558.451",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 698,
+   "etiqueta": "Transferencias y préstamos de jugadores",
+   "actual": "4.594.836.822",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 699,
+   "etiqueta": "Ventas de salón Gloriamanía",
+   "actual": "1.047.529.232",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b19",
+   "linea": 700,
+   "etiqueta": "Subsidios recibidos",
+   "actual": "97.517.794",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Para fines específicos ( Anexo III)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 425,
+   "etiqueta": "Intereses ganados",
+   "actual": "7.920.384",
+   "anterior": "71.808.880",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Res. Fin. y por tenencia incluido RECPAM(Nota 2.8.)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 427,
+   "etiqueta": "Intereses perdidos",
+   "actual": "(350.471.818)",
+   "anterior": "(133.459.107)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Res. Fin. y por tenencia incluido RECPAM(Nota 2.8.)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 428,
+   "etiqueta": "Diferencias de cambio ganadas",
+   "actual": "171.437.298",
+   "anterior": "-.-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Res. Fin. y por tenencia incluido RECPAM(Nota 2.8.)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 429,
+   "etiqueta": "Diferencias de cambio perdidas",
+   "actual": "(17.793.790)",
+   "anterior": "(124.299.143)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Res. Fin. y por tenencia incluido RECPAM(Nota 2.8.)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 430,
+   "etiqueta": "RECPAM",
+   "actual": "744.917.050",
+   "anterior": "1.080.295.781",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Res. Fin. y por tenencia incluido RECPAM(Nota 2.8.)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 431,
+   "etiqueta": "",
+   "actual": "556.009.124",
+   "anterior": "894.346.411",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Res. Fin. y por tenencia incluido RECPAM(Nota 2.8.)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 732,
+   "etiqueta": "Remuneraciones y cargas",
+   "actual": "236.028.547",
+   "anterior": "190.154.958",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración (Anexo IV)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 733,
+   "etiqueta": "Honorarios",
+   "actual": "652.169.935",
+   "anterior": "280.872.457",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración (Anexo IV)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 734,
+   "etiqueta": "Servicios, luz, agua, gas, etc.",
+   "actual": "44.698.891",
+   "anterior": "18.193.265",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración (Anexo IV)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 735,
+   "etiqueta": "Gastos bancarios",
+   "actual": "650.310.626",
+   "anterior": "1.590.477.689",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración (Anexo IV)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 736,
+   "etiqueta": "Gastos de juicios",
+   "actual": "63.781.236",
+   "anterior": "24.908.056",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración (Anexo IV)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 737,
+   "etiqueta": "(Recuperos) / Quebranto por Juicios",
+   "actual": "(103.020.172)",
+   "anterior": "571.995.641",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración (Anexo IV)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 738,
+   "etiqueta": "TOTALES",
+   "actual": "1.543.969.063",
+   "anterior": "2.676.602.066",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Generales de administración (Anexo IV)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 769,
+   "etiqueta": "Remuneraciones y cargas",
+   "actual": "6.086.836.134",
+   "anterior": "5.489.463.180",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 770,
+   "etiqueta": "Seguros",
+   "actual": "773.435",
+   "anterior": "9.764.100",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 771,
+   "etiqueta": "Honorarios",
+   "actual": "1.288.345.200",
+   "anterior": "1.559.924.584",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 772,
+   "etiqueta": "Diversos",
+   "actual": "4.146.225.800",
+   "anterior": "2.561.042.688",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 773,
+   "etiqueta": "Mantenimiento de bienes de uso",
+   "actual": "884.606.457",
+   "anterior": "1.216.357.529",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 774,
+   "etiqueta": "Vigilancia sede",
+   "actual": "119.384.419",
+   "anterior": "127.592.215",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 775,
+   "etiqueta": "Servicios de energía, agua, gas, etc..",
+   "actual": "342.901.711",
+   "anterior": "165.128.442",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 776,
+   "etiqueta": "Gastos generales por eventos deportivos",
+   "actual": "1.130.207.552",
+   "anterior": "1.248.663.758",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 777,
+   "etiqueta": "Viajes y concentraciones",
+   "actual": "1.386.761.148",
+   "anterior": "1.425.307.053",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 778,
+   "etiqueta": "Compras de mercadería",
+   "actual": "828.320.664",
+   "anterior": "933.086.287",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 779,
+   "etiqueta": "Comisiones y acuerdos de rescisión",
+   "actual": "4.740.976.594",
+   "anterior": "4.579.623.850",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 780,
+   "etiqueta": "Limpieza y vigilancia",
+   "actual": "205.527.311",
+   "anterior": "31.314.028",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 781,
+   "etiqueta": "Compras y préstamos de jugadores",
+   "actual": "1.650.860.880",
+   "anterior": "297.725.231",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 782,
+   "etiqueta": "Vigilancia La Agustina",
+   "actual": "536.244.319",
+   "anterior": "156.851.945",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b21",
+   "linea": 783,
+   "etiqueta": "TOTALES",
+   "actual": "23.347.971.624",
+   "anterior": "19.801.844.890",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Específicos de sectores ( Anexo V)"
+  },
+  {
+   "bloque": "b14",
+   "linea": 435,
+   "etiqueta": "Gastos del concurso",
+   "actual": "(1.038.794)",
+   "anterior": "(26.366.646)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos extraordinarios(Nota 3 y 2.9.)"
+  },
+  {
+   "bloque": "b14",
+   "linea": 437,
+   "etiqueta": "",
+   "actual": "(1.038.794)",
+   "anterior": "(26.366.646)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos extraordinarios(Nota 3 y 2.9.)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 88,
+  "actual": "27.393.078.747"
+ },
+ "total_gastos": {
+  "linea": 94,
+  "actual": "(25.860.787.603)"
+ },
+ "resultado": {
+  "linea": 100,
+  "actual": "2.087.261.474",
+  "anterior": "2.552.090.635"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan las filas del Anexo III (L688-L700) sin importe del año anterior, dado que la columna 'Total 2.024' no separa generales de específicos?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Para fines específicos ( Anexo III)",
+   "texto": "El Anexo III solo abre por segmento la columna 2025; la de 2024 es total, por eso anterior queda null (L687).",
+   "bloques": [
+    "b19"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se usa la columna de totales '2025' del Anexo V (L767) en lugar de las columnas por sector?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Específicos de sectores ( Anexo V)",
+   "texto": "El renglón del estado es el total de sectores, así que se toma la columna 2025/2024 (L767-L783).",
+   "bloques": [
+    "b21"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "No existen renglones 'Salarios del plantel' ni 'Cuotas sociales' con ese nombre exacto: la remuneración del plantel está dentro de 'Remuneraciones y cargas' del Anexo V (L769, FUTBOL 4.068.248.882) y las cuotas en 'Cuotas sociales y abonos deportivos' (L689). Diferencia de 1 en Para fines generales 2024 (3.812.914.530 vs 3.812.914.531) es redondeo. Depreciación y amortización (Anexos I y II) no tienen desglose en los bloques provistos."
+}

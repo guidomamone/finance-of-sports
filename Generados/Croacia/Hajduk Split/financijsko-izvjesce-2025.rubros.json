@@ -1,0 +1,620 @@
+{
+  "md": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.md",
+  "pdf": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.pdf",
+  "club": "hajduksplit-hr",
+  "year": 2025,
+  "generatedAt": "2026-10-19T16:42:17.327Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.460389
+      ],
+      "glosa": "Ingresos por venta de entradas - Competiciones nacionales"
+    },
+    {
+      "label": "Prihodi od ulaznica - UEFA klupska natjecanja",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.69901
+      ],
+      "glosa": "Ingresos por venta de entradas - Competiciones de clubes de la UEFA"
+    },
+    {
+      "label": "Prihodi od ulaznica - Godišnje ulaznice",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.544162
+      ],
+      "glosa": "Ingresos por venta de entradas - Abonos anuales"
+    },
+    {
+      "label": "Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.416692
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad - Proveedor técnico (Fabricante de equipamiento)"
+    },
+    {
+      "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.680891
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad - Patrocinador principal en la equipación"
+    },
+    {
+      "label": "Prihod od sponzorstva i oglašavanja - Reklamiranje na panoima oko terena za igru",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.896044
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad - Publicidad en vallas del terreno de juego"
+    },
+    {
+      "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.086672
+      ],
+      "glosa": "Otros ingresos no clasificados por patrocinio y publicidad"
+    },
+    {
+      "label": "Prava emitiranja - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.0596
+      ],
+      "glosa": "Derechos de retransmisión - Competiciones nacionales"
+    },
+    {
+      "label": "Komercijalni prihodi - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.380301
+      ],
+      "glosa": "Ingresos comerciales - Competiciones nacionales"
+    },
+    {
+      "label": "Komercijalni prihodi - Prodaja proizvoda",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.456689
+      ],
+      "glosa": "Ingresos comerciales - Venta de productos"
+    },
+    {
+      "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.09278
+      ],
+      "glosa": "Ingresos comerciales - Uso de instalaciones fuera de días de partido"
+    },
+    {
+      "label": "Ostali nerazvrstani komercijalni prihodi",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.429555
+      ],
+      "glosa": "Otros ingresos comerciales no clasificados"
+    },
+    {
+      "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.008605
+      ],
+      "glosa": "Competiciones de clubes de la UEFA - derechos de retransmisión, ingresos comerciales y premios"
+    },
+    {
+      "label": "Uefina klupska natjecanja - solidarne uplate",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.271361
+      ],
+      "glosa": "Competiciones de clubes de la UEFA - pagos solidarios"
+    },
+    {
+      "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.182748
+      ],
+      "glosa": "Donaciones y subvenciones u otros importes de organismos nacionales de fútbol"
+    },
+    {
+      "label": "Donacije nepovezanih strana",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.443602
+      ],
+      "glosa": "Donaciones de partes no vinculadas"
+    },
+    {
+      "label": "Donacije i doprinosi povezanih strana",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.303267
+      ],
+      "glosa": "Donaciones y aportaciones de partes vinculadas"
+    },
+    {
+      "label": "Prihodi od refundacije",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+      "values": [
+        0.142382
+      ],
+      "glosa": "Ingresos por reembolsos"
+    },
+    {
+      "label": "Prihod od otpisa obveza",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+      "values": [
+        0.000971
+      ],
+      "glosa": "Ingresos por cancelación de pasivos"
+    },
+    {
+      "label": "Prihod od naplačenih vrijednosnih usklađenja",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+      "values": [
+        0.00066
+      ],
+      "glosa": "Ingresos por recuperación de correcciones de valor"
+    },
+    {
+      "label": "Inventurni viškovi na robi",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+      "values": [
+        0.000406
+      ],
+      "glosa": "Excedentes de inventario de existencias"
+    },
+    {
+      "label": "Ostali poslovni prihodi",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni prihodi\"",
+      "values": [
+        0.007291
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Prihod od raspolaganja registracijama igrača (uključujući prihode od ustupanja, solidarnih doprinosa i naknada za treniranje)",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        17.306868
+      ],
+      "glosa": "Ingresos por enajenación de derechos federativos de jugadores (incluidos ingresos por cesiones, mecanismos de solidaridad y derechos de formación)"
+    },
+    {
+      "label": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+      "values": [
+        0.002825
+      ],
+      "glosa": "Beneficio/(pérdida) por enajenación de inmovilizado material"
+    },
+    {
+      "label": "Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+      "values": [
+        0.009492
+      ],
+      "glosa": "Beneficio/(pérdida) por enajenación de otro inmovilizado intangible"
+    },
+    {
+      "label": "Troškovi prodaje robe/proizvoda - izravni",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.866286
+      ],
+      "glosa": "Costes directos de venta de mercaderías/productos"
+    },
+    {
+      "label": "Troškovi prodaje robe/proizvoda - ostali nerazvrstani",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.843197
+      ],
+      "glosa": "Otros costes no clasificados de venta de mercaderías/productos"
+    },
+    {
+      "label": "Plaće igrača",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        11.029615
+      ],
+      "glosa": "Salarios de jugadores"
+    },
+    {
+      "label": "Ostali nerazvrstani troškovi primanja igrača",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.924043
+      ],
+      "glosa": "Otras retribuciones no clasificadas de jugadores"
+    },
+    {
+      "label": "Plaće stručnog stožera",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.759902
+      ],
+      "glosa": "Salarios del cuerpo técnico"
+    },
+    {
+      "label": "Ostali nerazvrstani troškovi primanja stručnog stožera",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.022599
+      ],
+      "glosa": "Otras retribuciones no clasificadas del cuerpo técnico"
+    },
+    {
+      "label": "Plaće ostalih zaposlenika",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.139304
+      ],
+      "glosa": "Salarios del resto del personal"
+    },
+    {
+      "label": "Porezi i doprinosi - ostali zaposlenici",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.20381
+      ],
+      "glosa": "Impuestos y cotizaciones sociales - resto del personal"
+    },
+    {
+      "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.909281
+      ],
+      "glosa": "Otras retribuciones no clasificadas del resto del personal"
+    },
+    {
+      "label": "Amortizacija dugotrajne materijalne imovine",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.429267
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.194598
+      ],
+      "glosa": "Amortización de otro inmovilizado intangible (excluidos derechos federativos de jugadores)"
+    },
+    {
+      "label": "Troškovi utakmica",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.826371
+      ],
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Troškovi sponzorstva i oglašavanja",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.199801
+      ],
+      "glosa": "Gastos de patrocinio y publicidad"
+    },
+    {
+      "label": "Troškovi komercijalnih aktivnosti",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.070835
+      ],
+      "glosa": "Gastos de actividades comerciales"
+    },
+    {
+      "label": "Troškovi imovine i objekata",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.542854
+      ],
+      "glosa": "Gastos de inmuebles e instalaciones"
+    },
+    {
+      "label": "Kazne, penali naknada štete",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.936777
+      ],
+      "glosa": "Multas, sanciones e indemnizaciones por daños"
+    },
+    {
+      "label": "Usluge konzult., stručnog nadzora i savjetovanja",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.619159
+      ],
+      "glosa": "Servicios de consultoría, supervisión técnica y asesoramiento"
+    },
+    {
+      "label": "Usluge pripreme i analitike sportaša",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.398678
+      ],
+      "glosa": "Servicios de preparación y análisis deportivo"
+    },
+    {
+      "label": "Troškovi zakupa i lizinga",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.35739
+      ],
+      "glosa": "Gastos de arrendamiento y leasing"
+    },
+    {
+      "label": "Odvjetničke i bilježničke usluge, autorski honorari, ostale intelektualne usluge",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.335955
+      ],
+      "glosa": "Servicios jurídicos, notariales, derechos de autor y otros servicios profesionales"
+    },
+    {
+      "label": "Bankovne usluge i troškovi platnog prometa",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.271858
+      ],
+      "glosa": "Servicios bancarios y gastos de intermediación de pagos"
+    },
+    {
+      "label": "Naknade za korištenje prava intelekt. vlasništva",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.257652
+      ],
+      "glosa": "Cánones por derechos de propiedad intelectual"
+    },
+    {
+      "label": "Troškovi reprezentacije",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.240772
+      ],
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Vrijednosno usklađenje od kupaca",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.1875
+      ],
+      "glosa": "Pérdidas por deterioro de créditos comerciales"
+    },
+    {
+      "label": "Troškovi telekomunikacijskih i prijevoznih usluga",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.186709
+      ],
+      "glosa": "Gastos de telecomunicaciones y transporte"
+    },
+    {
+      "label": "Premije osiguranja",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.179027
+      ],
+      "glosa": "Primas de seguros"
+    },
+    {
+      "label": "Darovanje za općekorisne namjene",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.163918
+      ],
+      "glosa": "Donaciones para fines benéficos y de interés público"
+    },
+    {
+      "label": "Članarine, naknade i slična davanja",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.132596
+      ],
+      "glosa": "Cuotas de afiliación, tasas y cánones similares"
+    },
+    {
+      "label": "Troškovi službenog puta, obrazovanja i ostalo",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.119825
+      ],
+      "glosa": "Gastos de viajes, dietas y formación"
+    },
+    {
+      "label": "Troškovi promidžbe",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.077597
+      ],
+      "glosa": "Gastos de promoción"
+    },
+    {
+      "label": "Troškovi komunalnih usluga",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.066461
+      ],
+      "glosa": "Gastos de suministros"
+    },
+    {
+      "label": "Troškovi usklađenja",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.051813
+      ],
+      "glosa": "Gastos de ajustes y regularizaciones"
+    },
+    {
+      "label": "Troškovi koji će se prefakturirati",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.011045
+      ],
+      "glosa": "Gastos a refacturar"
+    },
+    {
+      "label": "Rashodi i otpisi potraživanja",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Ostali nerazvrstani poslovni rashodi\"",
+      "values": [
+        0.007667
+      ],
+      "glosa": "Pérdidas y bajas de créditos comerciales"
+    },
+    {
+      "label": "Troškovi stjecanja registracija igrača (uključujući troškove ustupanja, solidarne doprinose i naknade za treniranje)",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.039704
+      ],
+      "glosa": "Costes de adquisición de derechos federativos de jugadores (incluidos costes de cesión, mecanismos de solidaridad y derechos de formación)"
+    },
+    {
+      "label": "Nekapitalizirani troškovi za naknade agentima/posrednicima",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.6128
+      ],
+      "glosa": "Gastos no capitalizados por comisiones a agentes/intermediarios"
+    }
+  ]
+}

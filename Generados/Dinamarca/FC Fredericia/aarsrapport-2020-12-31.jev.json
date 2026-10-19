@@ -1,0 +1,145 @@
+{
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.md",
+ "generatedAt": "2026-10-19T17:17:41.864Z",
+ "rubrosHuella": "4f62640e66afa968b45b5f5215729d191947e9ed",
+ "rubros": [
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "wages_squad",
+     0.75
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1112
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "admin_general_expense",
+     0.35000000000000003
+    ],
+    [
+     "wages_squad",
+     0.13
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Bruttofortjeneste",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1124
+  }
+ ]
+}

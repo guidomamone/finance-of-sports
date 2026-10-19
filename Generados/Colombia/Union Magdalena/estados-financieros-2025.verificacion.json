@@ -1,0 +1,586 @@
+{
+ "pdf": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.md",
+ "generado": "2026-10-19T18:34:29.273Z",
+ "estado": "ok",
+ "clubId": "unionmagdalena-co",
+ "year": 2024,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 0.0020000000013737917
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Otros Ingresos\" no suma el renglón (1516.386 contra 1496.386, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Costos de Venta\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se carga el ejercicio 2024 tomando la columna comparativa 'Ene - Dic 2024' del estado de resultados de los estados 2025 (b3)?",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Otros Ingresos\"): corregir no, en estados-financieros-2025.pdf"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Otros Ingresos",
+   "suma": 1516.386,
+   "objetivo": 1496.386
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Otros Ingresos",
+   "suma": 1516.386,
+   "objetivo": 1496.386
+  }
+ ],
+ "totales": {
+  "ingresos": 11232.004,
+  "gastos": 10664.752,
+  "financiero": 298.153,
+  "impuesto": 152.495,
+  "resultadoImpreso": 177.272,
+  "resultadoParaCargar": 177.272,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Taquilla - Venta de Boletería",
+   "lado": "ingreso",
+   "M": 1564.483,
+   "pagina": 46,
+   "linea": 1385,
+   "origen": "nota que desglosa \"Ingresos de Actividaes Ordinarias\""
+  },
+  {
+   "etiqueta": "Publicidad y Propaganda",
+   "lado": "ingreso",
+   "M": 764.772,
+   "pagina": 46,
+   "linea": 1386,
+   "origen": "nota que desglosa \"Ingresos de Actividaes Ordinarias\""
+  },
+  {
+   "etiqueta": "Participación Dimayor tv",
+   "lado": "ingreso",
+   "M": 5885.367,
+   "pagina": 46,
+   "linea": 1388,
+   "origen": "nota que desglosa \"Ingresos de Actividaes Ordinarias\""
+  },
+  {
+   "etiqueta": "Auxilios Dimayor",
+   "lado": "ingreso",
+   "M": 856.577,
+   "pagina": 46,
+   "linea": 1389,
+   "origen": "nota que desglosa \"Ingresos de Actividaes Ordinarias\""
+  },
+  {
+   "etiqueta": "Participación federación colombiana de futbol",
+   "lado": "ingreso",
+   "M": 544.931,
+   "pagina": 46,
+   "linea": 1392,
+   "origen": "nota que desglosa \"Ingresos de Actividaes Ordinarias\""
+  },
+  {
+   "etiqueta": "Venta de Artículos Deportivos",
+   "lado": "ingreso",
+   "M": 323.836,
+   "pagina": 46,
+   "linea": 1393,
+   "origen": "nota que desglosa \"Ingresos de Actividaes Ordinarias\""
+  },
+  {
+   "etiqueta": "Otros ingresos de partido",
+   "lado": "ingreso",
+   "M": 5.19,
+   "pagina": 46,
+   "linea": 1394,
+   "origen": "nota que desglosa \"Ingresos de Actividaes Ordinarias\""
+  },
+  {
+   "etiqueta": "Devoluciones en Servicios",
+   "lado": "ingreso",
+   "M": -209.538,
+   "pagina": 46,
+   "linea": 1396,
+   "origen": "nota que desglosa \"Ingresos de Actividaes Ordinarias\""
+  },
+  {
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "M": 1496.386,
+   "pagina": 4,
+   "linea": 125,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos del Personal",
+   "lado": "gasto",
+   "M": 4287.831,
+   "pagina": 48,
+   "linea": 1436,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 149.582,
+   "pagina": 48,
+   "linea": 1437,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Arriendos",
+   "lado": "gasto",
+   "M": 391.399,
+   "pagina": 48,
+   "linea": 1438,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Contribuciones y Afiliaciones",
+   "lado": "gasto",
+   "M": 1280.311,
+   "pagina": 48,
+   "linea": 1439,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 79.803,
+   "pagina": 48,
+   "linea": 1441,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Gastos Legales",
+   "lado": "gasto",
+   "M": 5.879,
+   "pagina": 48,
+   "linea": 1442,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Gastos de Viaje",
+   "lado": "gasto",
+   "M": 626.543,
+   "pagina": 48,
+   "linea": 1444,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Elemento de Aseo y Cafetería",
+   "lado": "gasto",
+   "M": 1.002,
+   "pagina": 48,
+   "linea": 1447,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Logística y Gastos de Partidos",
+   "lado": "gasto",
+   "M": 938.785,
+   "pagina": 48,
+   "linea": 1449,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Gastos de Pretemporada",
+   "lado": "gasto",
+   "M": 39.525,
+   "pagina": 48,
+   "linea": 1450,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Gastos de Entrenamientos",
+   "lado": "gasto",
+   "M": 182.898,
+   "pagina": 48,
+   "linea": 1451,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Otros Costos",
+   "lado": "gasto",
+   "M": 1.808,
+   "pagina": 48,
+   "linea": 1452,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Derechos Deportivos",
+   "lado": "gasto",
+   "M": 396.104,
+   "pagina": 48,
+   "linea": 1453,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Derechos Deportivos",
+   "lado": "gasto",
+   "M": 52.316,
+   "pagina": 48,
+   "linea": 1454,
+   "origen": "nota que desglosa \"Gastos de Venta\""
+  },
+  {
+   "etiqueta": "Costos de Venta",
+   "lado": "gasto",
+   "M": 202.141,
+   "pagina": 4,
+   "linea": 127,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gasto de Personal",
+   "lado": "gasto",
+   "M": 928.732,
+   "pagina": 49,
+   "linea": 1476,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 91.197,
+   "pagina": 49,
+   "linea": 1477,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 197.728,
+   "pagina": 49,
+   "linea": 1478,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 57.831,
+   "pagina": 49,
+   "linea": 1479,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 18.665,
+   "pagina": 49,
+   "linea": 1481,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 250.705,
+   "pagina": 49,
+   "linea": 1482,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Gastos Legales",
+   "lado": "gasto",
+   "M": 58.016,
+   "pagina": 49,
+   "linea": 1483,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Mantenimiento y Reparaciones",
+   "lado": "gasto",
+   "M": 113.917,
+   "pagina": 49,
+   "linea": 1484,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Adecuaciones e Instalaciones",
+   "lado": "gasto",
+   "M": 0.4,
+   "pagina": 49,
+   "linea": 1485,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Gastos de Viaje",
+   "lado": "gasto",
+   "M": 12.576,
+   "pagina": 49,
+   "linea": 1486,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Depreciación",
+   "lado": "gasto",
+   "M": 32.753,
+   "pagina": 49,
+   "linea": 1487,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Amortizaciones",
+   "lado": "gasto",
+   "M": 5.957,
+   "pagina": 49,
+   "linea": 1488,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 90.093,
+   "pagina": 49,
+   "linea": 1489,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Provisiones",
+   "lado": "gasto",
+   "M": 30.525,
+   "pagina": 49,
+   "linea": 1490,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Gastos Bancarios",
+   "lado": "gasto",
+   "M": 38.42,
+   "pagina": 49,
+   "linea": 1491,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Gastos Comisiones banc",
+   "lado": "gasto",
+   "M": 0.745,
+   "pagina": 49,
+   "linea": 1492,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Gastos Extraordinarios",
+   "lado": "gasto",
+   "M": 5.296,
+   "pagina": 49,
+   "linea": 1494,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  },
+  {
+   "etiqueta": "Gastos Diversos",
+   "lado": "gasto",
+   "M": 95.269,
+   "pagina": 49,
+   "linea": 1495,
+   "origen": "nota que desglosa \"Gastos de Administracion y otros gastos\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos Financieros",
+   "M": 30.333,
+   "linea": 132
+  },
+  {
+   "etiqueta": "Gastos Financieros",
+   "M": -267.82,
+   "linea": 133
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Gastos (-Ingreso) por Correccion Impuesto Cte",
+   "M": 0,
+   "linea": 137
+  },
+  {
+   "etiqueta": "Impuesto de Renta Corriente",
+   "M": -152.495,
+   "linea": 138
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "alarma",
+  "clave": "29eb75708acce785b486b3259688a5a5503118e7",
+  "rango": [
+   119,
+   144
+  ],
+  "lineasCargadas": [
+   1385,
+   1386,
+   1388,
+   1389,
+   1392,
+   1393,
+   1394,
+   1396,
+   125,
+   1436,
+   1437,
+   1438,
+   1439,
+   1441,
+   1442,
+   1444,
+   1447,
+   1449,
+   1450,
+   1451,
+   1452,
+   1453,
+   1454,
+   127,
+   1476,
+   1477,
+   1478,
+   1479,
+   1481,
+   1482,
+   1483,
+   1484,
+   1485,
+   1486,
+   1487,
+   1488,
+   1489,
+   1490,
+   1491,
+   1492,
+   1494,
+   1495,
+   132,
+   133,
+   137,
+   138
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 119 a 144 del .md):\nL119: | Resultado del Periodo | Notas | Ene - Dic 2025 | Ene - Dic 2024 | Variacion |\nL120: |---|---|---|---|---|\nL121: | **Ingresos por Actividades Continuadas** | | | | |\nL122: | Ingresos de Actividaes Ordinarias | 24 | 11,396,578 | 9,735,619 | 1,660,959 |\nL123: | **Beneficio Bruto** | | 11,396,578 | 9,735,619 | 1,660,959 |\nL124: | **Otros Ingresos o Gastos de Operación** | | | | |\nL125: | Otros Ingresos | 25 | 369,618 | 1,496,386 | -1,126,768 |\nL126: | Gastos de Venta | 26 | 11,721,102 | 8,433,786 | 3,287,317 |\nL127: | Costos de Venta | 27 | 122,101 | 202,141 | -80,040 |\nL128: | Gastos de Administracion y otros gastos | 28 | 2,092,300 | 2,028,825 | 63,475 |\nL129: | **Total Ingresos o Gastos de Operación** | | -13,565,885 | -9,168,365 | -4,397,520 |\nL130: | **Ganancia por Actividades de Operación** | | -2,169,307 | 567,254 | -2,736,561 |\nL131: | **Ingresos o Gastos Financieros** | | | | |\nL132: | Ingresos Financieros | 29 | 0 | 30,333 | -30,333 |\nL133: | Gastos Financieros | 29 | 179,738 | 267,820 | -88,082 |\nL134: | **Costo Financiero Neto** | | -179,738 | -237,487 | 57,749 |\nL135: | **Ganancia o Perdidas Antes de Impuestos** | | -2,349,045 | 329,767 | -2,678,812 |\nL136: | **Impuestos a la Ganancias** | | | | |\nL137: | Gastos (-Ingreso) por Correccion Impuesto Cte | | 22,834 | 0 | 22,834 |\nL138: | Impuesto de Renta Corriente | 30 | 0 | 152,495 | -152,495 |\nL139: | **Total Impuestos a la Ganancias** | | 22,834 | 152,495 | -129,661 |\nL140: | **(Pérdida) Ganancia procedente de operaciones continuadas** | | -2,371,879 | 177,272 | -2,549,151 |\nL141: | **Otro Resultado Integral** | | 0 | 0 | 0 |\nL142: | **Resultado Integral Total** | | -2,371,879 | -2,371,879 | -2,549,151 |\nL144: Corrección de la fila anterior, tal como figura impresa:\n\nLO QUE SE CARGA:\n- ingreso · \"Taquilla - Venta de Boletería\" · 1564.483 · L1385 (de una nota)\n- ingreso · \"Publicidad y Propaganda\" · 764.772 · L1386 (de una nota)\n- ingreso · \"Participación Dimayor tv\" · 5885.367 · L1388 (de una nota)\n- ingreso · \"Auxilios Dimayor\" · 856.577 · L1389 (de una nota)\n- ingreso · \"Participación federación colombiana de futbol\" · 544.931 · L1392 (de una nota)\n- ingreso · \"Venta de Artículos Deportivos\" · 323.836 · L1393 (de una nota)\n- ingreso · \"Otros ingresos de partido\" · 5.19 · L1394 (de una nota)\n- ingreso · \"Devoluciones en Servicios\" · -209.538 · L1396 (de una nota)\n- ingreso · \"Otros Ingresos\" · 1496.386 · L125\n- gasto · \"Gastos del Personal\" · 4287.831 · L1436 (de una nota)\n- gasto · \"Impuestos\" · 149.582 · L1437 (de una nota)\n- gasto · \"Arriendos\" · 391.399 · L1438 (de una nota)\n- gasto · \"Contribuciones y Afiliaciones\" · 1280.311 · L1439 (de una nota)\n- gasto · \"Servicios\" · 79.803 · L1441 (de una nota)\n- gasto · \"Gastos Legales\" · 5.879 · L1442 (de una nota)\n- gasto · \"Gastos de Viaje\" · 626.543 · L1444 (de una nota)\n- gasto · \"Elemento de Aseo y Cafetería\" · 1.002 · L1447 (de una nota)\n- gasto · \"Logística y Gastos de Partidos\" · 938.785 · L1449 (de una nota)\n- gasto · \"Gastos de Pretemporada\" · 39.525 · L1450 (de una nota)\n- gasto · \"Gastos de Entrenamientos\" · 182.898 · L1451 (de una nota)\n- gasto · \"Otros Costos\" · 1.808 · L1452 (de una nota)\n- gasto · \"Derechos Deportivos\" · 396.104 · L1453 (de una nota)\n- gasto · \"Derechos Deportivos\" · 52.316 · L1454 (de una nota)\n- gasto · \"Costos de Venta\" · 202.141 · L127\n- gasto · \"Gasto de Personal\" · 928.732 · L1476 (de una nota)\n- gasto · \"Honorarios\" · 91.197 · L1477 (de una nota)\n- gasto · \"Impuestos\" · 197.728 · L1478 (de una nota)\n- gasto · \"Arrendamientos\" · 57.831 · L1479 (de una nota)\n- gasto · \"Seguros\" · 18.665 · L1481 (de una nota)\n- gasto · \"Servicios\" · 250.705 · L1482 (de una nota)\n- gasto · \"Gastos Legales\" · 58.016 · L1483 (de una nota)\n- gasto · \"Mantenimiento y Reparaciones\" · 113.917 · L1484 (de una nota)\n- gasto · \"Adecuaciones e Instalaciones\" · 0.4 · L1485 (de una nota)\n- gasto · \"Gastos de Viaje\" · 12.576 · L1486 (de una nota)\n- gasto · \"Depreciación\" · 32.753 · L1487 (de una nota)\n- gasto · \"Amortizaciones\" · 5.957 · L1488 (de una nota)\n- gasto · \"Diversos\" · 90.093 · L1489 (de una nota)\n- gasto · \"Provisiones\" · 30.525 · L1490 (de una nota)\n- gasto · \"Gastos Bancarios\" · 38.42 · L1491 (de una nota)\n- gasto · \"Gastos Comisiones banc\" · 0.745 · L1492 (de una nota)\n- gasto · \"Gastos Extraordinarios\" · 5.296 · L1494 (de una nota)\n- gasto · \"Gastos Diversos\" · 95.269 · L1495 (de una nota)\n- financiero · \"Ingresos Financieros\" · 30.333 · L132\n- financiero · \"Gastos Financieros\" · -267.82 · L133\n- impuesto · \"Gastos (-Ingreso) por Correccion Impuesto Cte\" · 0 · L137\n- impuesto · \"Impuesto de Renta Corriente\" · -152.495 · L138",
+  "problemas": [
+   {
+    "tipo": "faltan",
+    "linea": 122,
+    "motivo": "Faltan los ingresos ordinarios 2025 (11,396,578). Las partes de la nota cargadas suman 9,735.618, que es el valor de 2024.",
+    "citaValida": true
+   },
+   {
+    "tipo": "faltan",
+    "linea": 125,
+    "motivo": "Faltan Otros Ingresos 2025 (369,618).",
+    "citaValida": true
+   },
+   {
+    "tipo": "faltan",
+    "linea": 126,
+    "motivo": "Faltan los Gastos de Venta 2025 (11,721,102). Las partes de la nota cargadas suman 8,433.786, que es el valor de 2024.",
+    "citaValida": true
+   },
+   {
+    "tipo": "faltan",
+    "linea": 127,
+    "motivo": "Faltan los Costos de Venta 2025 (122,101).",
+    "citaValida": true
+   },
+   {
+    "tipo": "faltan",
+    "linea": 128,
+    "motivo": "Faltan los Gastos de Administración 2025 (2,092,300). Las partes de la nota cargadas corresponden a 2024.",
+    "citaValida": true
+   },
+   {
+    "tipo": "faltan",
+    "linea": 133,
+    "motivo": "Faltan los Gastos Financieros 2025 (179,738).",
+    "citaValida": true
+   },
+   {
+    "tipo": "faltan",
+    "linea": 137,
+    "motivo": "Falta la corrección de impuesto 2025 (22,834).",
+    "citaValida": true
+   },
+   {
+    "tipo": "sobran",
+    "linea": 1385,
+    "motivo": "El desglose de ingresos ordinarios (L1385-L1396) es de 2024: suma 9,735.618.",
+    "citaValida": true
+   },
+   {
+    "tipo": "sobran",
+    "linea": 1436,
+    "motivo": "El desglose de gastos de venta (L1436-L1454) es de 2024: suma 8,433.786.",
+    "citaValida": true
+   },
+   {
+    "tipo": "sobran",
+    "linea": 1476,
+    "motivo": "El desglose de gastos de administración (L1476-L1495) corresponde a 2024 (2,028,825).",
+    "citaValida": true
+   },
+   {
+    "tipo": "sobran",
+    "linea": 125,
+    "motivo": "Se cargó 1,496.386, que es el dato del año anterior.",
+    "citaValida": true
+   },
+   {
+    "tipo": "sobran",
+    "linea": 127,
+    "motivo": "Se cargó 202.141, que es el dato del año anterior.",
+    "citaValida": true
+   },
+   {
+    "tipo": "sobran",
+    "linea": 132,
+    "motivo": "Se cargó 30.333, que es de 2024. En 2025 el renglón es 0.",
+    "citaValida": true
+   },
+   {
+    "tipo": "sobran",
+    "linea": 133,
+    "motivo": "Se cargó 267.82, que es de 2024.",
+    "citaValida": true
+   },
+   {
+    "tipo": "sobran",
+    "linea": 138,
+    "motivo": "Se cargó 152.495, que es de 2024. En 2025 el renglón es 0.",
+    "citaValida": true
+   }
+  ]
+ }
+}

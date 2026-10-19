@@ -35,6 +35,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'ferrocarriloeste-ar': {
     2022: {"estadio":"Ricardo Etcheverry","capacidad":24442,"sponsor":"Avalian","temporada":"2022 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1345354861","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175881249"}},
     2023: {"estadio":"Ricardo Etcheverri","capacidad":24442,"sponsor":"Avalian (hasta 2022) / Lepore","temporada":"2023 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1316703963","fuenteManual":"https://es.wikipedia.org/wiki/Club_Ferro_Carril_Oeste","manual":["sponsor"]},
+    2025: {"estadio":"Ricardo Etcheverri","capacidad":24442,"sponsor":"Lepore","temporada":"2025 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1334126024","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175881249"}},
   },
   'gimnasiaesgrima-ar': {
     2023: {"estadio":"Juan Carmelo Zerillo","capacidad":24544,"sponsor":"RapiCuota$","marca":"Givova","temporada":"2023 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274459"},
@@ -51,6 +52,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'instituto': {
     2024: {"estadio":"Juan Domingo Perón","capacidad":35535,"sponsor":"Banco Macro","marca":"Givova","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
+    2025: {"estadio":"Juan Domingo Perón","capacidad":26535,"sponsor":"Banco Macro","marca":"Givova","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
   },
   'losandes-ar': {
     2020: {"estadio":"Eduardo Gallardón","capacidad":35000,"sponsor":"Secco","marca":"Mitre","temporada":"Campeonato de Primera B 2019-20 (Argentina)","fuente":"https://es.wikipedia.org/w/index.php?oldid=170581856","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175768690","marca":"https://es.wikipedia.org/w/index.php?oldid=175768690"}},

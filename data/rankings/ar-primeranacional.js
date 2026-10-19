@@ -1,6 +1,15 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ar-primeranacional"] = {
+  2025: {
+    leagueSize: 34,
+    wiki: {"t":"2025 Primera Nacional","lang":"en","at":"2026-10-19","n":34},
+    clubs: [
+      { id:"ferrocarriloeste-ar", revenue:13.809, reportType:"official_balance_sheet",
+        sourceId:"ferrocarriloeste-ar-balance-ejercicio-121-2024-25",
+        mix:[["Comercial / Sponsors",0.299],["Estadio",0.247],["Televisión",0.452],["Premios por competencias",0.019],["Venta de Jugadores",1.039],["Educación",1.847],["Otras secciones deportivas",3.499],["Otros ingresos",6.406]] },
+    ],
+  },
   2023: {
     leagueSize: 34,
     wiki: {"t":"2023 Primera Nacional","lang":"en","at":"2026-10-17","n":34},

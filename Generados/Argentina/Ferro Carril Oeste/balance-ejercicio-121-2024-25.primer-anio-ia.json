@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md",
+ "clave": "65e6c94b0382cde926e09650a4c2a09a41b00b08",
+ "generado": "2026-10-19T16:42:28.080Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre todos los renglones del estado sin problemas. Las partes de nota de recursos específicos (L347-L367) suman unos 10.025,9 y reemplazan a L94. Las de gastos de sectores (L497-L538) suman unos 14.002,7 y reemplazan a L98. Las de gastos de administración (L586-L600) suman unos 1.737,7 y reemplazan a L99. Los demás renglones (L93, L100, L103 y L107) están cargados directamente y en su lado correcto. No se cargó ningún subtotal ni total."
+ }
+}

@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.md",
+  "pdf": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.pdf",
+  "club": "midtjylland-dk",
+  "year": 2020,
+  "generatedAt": "2026-10-19T16:42:17.413Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Nettoomsætning Revenue",
+      "lado": "revenue",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        87.61
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Andre driftsindtægter Other operating income",
+      "lado": "revenue",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        98.637
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Andre eksterne omkostninger Other external expenses",
+      "lado": "expense",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        61.833
+      ],
+      "glosa": "Otros gastos externos"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 34,
+      "section": "nota que desglosa \"Personaleomkostninger Staff expenses\"",
+      "values": [
+        93.413
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 34,
+      "section": "nota que desglosa \"Personaleomkostninger Staff expenses\"",
+      "values": [
+        7.544
+      ],
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 34,
+      "section": "nota que desglosa \"Personaleomkostninger Staff expenses\"",
+      "values": [
+        2.363
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Afskrivninger af immaterielle anlægsaktiver",
+      "lado": "expense",
+      "page": 34,
+      "section": "nota que desglosa \"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairment of intangible assets and property, plant and equipment\"",
+      "values": [
+        36.929
+      ],
+      "glosa": "Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "Afskrivninger af materielle anlægsaktiver",
+      "lado": "expense",
+      "page": 34,
+      "section": "nota que desglosa \"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairment of intangible assets and property, plant and equipment\"",
+      "values": [
+        3.126
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Andre driftsomkostninger Other operating expenses",
+      "lado": "expense",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        0.056
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

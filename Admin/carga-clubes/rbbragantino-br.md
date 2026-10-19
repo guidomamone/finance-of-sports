@@ -156,6 +156,49 @@ _de data/club-leagues/br.js:_
 campeón de la Série B 2019 (ascenso), 16° en la Série A 2024
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/RB Bragantino/balanco-2025-auditado.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Receita de patrocínio e publicidade | pág. 38, Jev 1 |
+| 2 | Campeonato Brasileiro | pág. 38, Jev 0.94 |
+| 3 | Campeonato Paulista | pág. 38, Jev 0.98 |
+| 4 | Receitas com repasses de direitos federativo | pág. 38, Jev 1 |
+| 5 | Outras Receitas | pág. 38, Jev 0.97 |
+| 6 | Bilheteria | pág. 38, Jev 1 |
+| 7 | Copa do Brasil | pág. 38, Jev 0.94 |
+| 8 | ( - ) Encargos sobre receitas | pág. 38, Jev 0.97 |
+| 9 | Outras receitas e Despesas operacionais | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Comissão técnica | pág. 6, precedente |
+| 2 | Custo do departamento de futebol | pág. 6, precedente |
+| 3 | Gastos com jogos e bonificações | pág. 6, precedente |
+| 4 | Custo com departamento amador | pág. 6, precedente |
+| 5 | Despesas gerais e administrativas | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): br-serieA, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série A" (tools/club-league-reference/br.json), coincidencia exacta "Red Bull Bragantino".
+```
+
 ## 2024
 
 ### Meta
@@ -213,6 +256,14 @@ _note (data/):_
 
 ```text
 PDF oficial recuperado vía Wayback Machine (mismo gotcha del sitio en vivo que 2019, ver Admin/sourcing/Brasil/RB Bragantino.md). Auditado por BDO RCS Auditores Independentes SS, firmado 11/02/2025, con capa de texto real. La transcripción disponible cubre 5 páginas (Balanço, DRE, DRA, DMPL, DFC) pero NO las Notas explicativas (que existen en el PDF de 8-9 páginas según la prensa) — sin ellas, "Custo do departamento de futebol" (la línea de gasto más grande, 311,878 M BRL) no se pudo desglosar entre sueldos y amortización de derechos federativos de atletas, se cargó entera a wages_squad como aproximación (ver comentario de cabecera). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923), ya en FX_CLOSE.
+```
+
+### rbbragantino-br-balanco-2025-auditado
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

@@ -14,6 +14,21 @@ const institutoRevenueLinesByYear = {
     { rawLabel:'Ventas de salón Gloriamanía', normalizedCategory:'other_income', amountNative:816.979303, disclosureLevel:'detailed' },
     { rawLabel:'Subsidios recibidos', normalizedCategory:'other_income', amountNative:21.961181, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Para fines generales (Anexo III)', normalizedCategory:'other_income', amountNative:3858.67127, disclosureLevel:'aggregated' },
+    { rawLabel:'Centros educativos', normalizedCategory:'education', amountNative:1860.968991, disclosureLevel:'aggregated' },
+    { rawLabel:'Abonos deportivos sede', normalizedCategory:'season_tickets', amountNative:138.046758, disclosureLevel:'aggregated' },
+    { rawLabel:'Derechos de TV', normalizedCategory:'broadcasting', amountNative:5322.741218, disclosureLevel:'aggregated' },
+    { rawLabel:'Entradas generales fútbol', normalizedCategory:'matchday_competition', amountNative:35.396554, disclosureLevel:'aggregated' },
+    { rawLabel:'Entradas plateas y palcos fútbol', normalizedCategory:'matchday_competition', amountNative:2324.40866, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidad institucional', normalizedCategory:'sponsorship_commercial', amountNative:14.985783, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidad otras competencias', normalizedCategory:'sponsorship_commercial', amountNative:1993.057168, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidad y sponsors fútbol', normalizedCategory:'sponsorship_commercial', amountNative:5939.360046, disclosureLevel:'aggregated' },
+    { rawLabel:'Recursos predio La Agustina', normalizedCategory:'other_sports', amountNative:165.558451, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferencias y préstamos de jugadores', normalizedCategory:'player_sales', amountNative:4594.836822, disclosureLevel:'aggregated' },
+    { rawLabel:'Ventas de salón Gloriamanía', normalizedCategory:'other_income', amountNative:1047.529232, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsidios recibidos', normalizedCategory:'other_income', amountNative:97.517794, disclosureLevel:'aggregated' },
+  ],
 };
 
 const institutoExpenseLinesByYear = {
@@ -51,6 +66,31 @@ const institutoExpenseLinesByYear = {
     { rawLabel:'Amortización del plantel profesional (intangibles)', normalizedCategory:'player_amortisation', amountNative:-317.109648, disclosureLevel:'detailed' },
     { rawLabel:'Gastos extraordinarios', normalizedCategory:'exceptional_items', amountNative:-18.911650, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Remuneraciones y cargas', normalizedCategory:'admin_general_expense', amountNative:-236.028547, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-652.169935, disclosureLevel:'aggregated' },
+    { rawLabel:'Servicios, luz, agua, gas, etc.', normalizedCategory:'admin_general_expense', amountNative:-44.698891, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos bancarios', normalizedCategory:'admin_general_expense', amountNative:-650.310626, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos de juicios', normalizedCategory:'admin_general_expense', amountNative:-63.781236, disclosureLevel:'aggregated' },
+    { rawLabel:'(Recuperos) / Quebranto por Juicios', normalizedCategory:'admin_general_expense', amountNative:103.020172, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneraciones y cargas', normalizedCategory:'admin_general_expense', amountNative:-6086.836134, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'education_expense', amountNative:-0.773435, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorarios', normalizedCategory:'admin_general_expense', amountNative:-1288.3452, disclosureLevel:'aggregated' },
+    { rawLabel:'Diversos', normalizedCategory:'other_expenses', amountNative:-4146.2258, disclosureLevel:'aggregated' },
+    { rawLabel:'Mantenimiento de bienes de uso', normalizedCategory:'admin_general_expense', amountNative:-884.606457, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilancia sede', normalizedCategory:'youth_other_sports_expense', amountNative:-119.384419, disclosureLevel:'aggregated' },
+    { rawLabel:'Servicios de energía, agua, gas, etc..', normalizedCategory:'admin_general_expense', amountNative:-342.901711, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos generales por eventos deportivos', normalizedCategory:'match_organisation_expense', amountNative:-1130.207552, disclosureLevel:'aggregated' },
+    { rawLabel:'Viajes y concentraciones', normalizedCategory:'match_organisation_expense', amountNative:-1386.761148, disclosureLevel:'aggregated' },
+    { rawLabel:'Compras de mercadería', normalizedCategory:'youth_other_sports_expense', amountNative:-828.320664, disclosureLevel:'aggregated' },
+    { rawLabel:'Comisiones y acuerdos de rescisión', normalizedCategory:'other_expenses', amountNative:-4740.976594, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpieza y vigilancia', normalizedCategory:'youth_other_sports_expense', amountNative:-205.527311, disclosureLevel:'aggregated' },
+    { rawLabel:'Compras y préstamos de jugadores', normalizedCategory:'player_amortisation', amountNative:-1650.86088, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilancia La Agustina', normalizedCategory:'youth_other_sports_expense', amountNative:-536.244319, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciación de bienes de uso (Anexo I)', normalizedCategory:'depreciation', amountNative:-494.536348, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortización de Intangibles (Anexo II)', normalizedCategory:'player_amortisation', amountNative:-474.310568, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos extraordinarios(Nota 3 y 2.9.)', normalizedCategory:'exceptional_items', amountNative:-1.038794, disclosureLevel:'aggregated' },
+  ],
 };
 
 const institutoFiscalYearMeta = {
@@ -63,6 +103,16 @@ const institutoFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:641.475849, tax:0,
     officialTotalRevenue:17958.365499, officialTotalExpenses:16750.425894, officialPAT:1830.503804,
+  },
+  2025: {
+    currency:'ARS', fxRef:'ARS@2025-06-30',
+    sourceId:'instituto-balance-general-2024-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:556.009124, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:27393.078747, officialTotalExpenses:25860.787603, officialPAT:2087.261474,
   },
 };
 
@@ -83,6 +133,11 @@ Object.assign(sources, {
       title:'Estados Contables (balance auditado), Ejercicio Económico N°70, 1°/7/2023 al 30/6/2024',
       type:'official_balance_sheet', reliability:'primary',
     },
+  'instituto-balance-general-2024-2025': {
+    id:'instituto-balance-general-2024-2025', clubId:'instituto',
+    title:'Instituto Atlético Central Córdoba — balance-general-2024-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
 });
 
 gestionesByClub.instituto = {

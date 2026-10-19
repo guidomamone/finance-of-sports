@@ -41,6 +41,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'botafogosp-br': {
     2024: {"estadio":"Santa Cruz","capacidad":29292,"sponsor":"EstrelaBet, Nicnet","marca":"Volt Sport","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
+    2025: {"estadio":"Santa Cruz","capacidad":29292,"sponsor":"HanzBet","marca":"Volt Sport","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
   'ceara-br': {
     2024: {"estadio":"Castelão","capacidad":63903,"sponsor":"Esportes da Sorte, Matrix Energia","marca":"Vozão (club manufactured kit)","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
@@ -49,6 +50,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'chapecoense-br': {
     2017: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora Alimentos","marca":"Umbro","temporada":"2017 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374511888"},
     2021: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora Coop","marca":"Umbro","temporada":"2021 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375901035"},
+    2022: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora","marca":"Umbro","temporada":"2022 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376405033"},
   },
   'corinthians-br': {
     2024: {"estadio":"Neo Química Arena","capacidad":48000,"sponsor":"Esportes da Sorte","marca":"Nike","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
@@ -57,6 +59,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'coritiba': {
     2023: {"estadio":"Couto Pereira","capacidad":40502,"sponsor":"Neodent","marca":"Sou 1909 (club manufactured kit)","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
     2024: {"estadio":"Couto Pereira","capacidad":40502,"sponsor":"Reals","marca":"Diadora","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
+    2025: {"estadio":"Couto Pereira","capacidad":40502,"sponsor":"Reals","marca":"Diadora","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
   'crb-br': {
     2020: {"estadio":"Rei Pelé","capacidad":17126,"sponsor":"Estadium.bet","marca":"Regatas (Club manufactured kit)","temporada":"2020 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1283248039"},
@@ -139,6 +142,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'gremio': {
     2024: {"estadio":"Arena do Grêmio","capacidad":55662,"sponsor":"Banrisul","marca":"Umbro","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
+    2025: {"estadio":"Arena do Grêmio","capacidad":60540,"sponsor":"Alfa / Energia Bet","marca":"Umbro","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
   'guarani-br': {
     2024: {"estadio":"Brinco de Ouro","capacidad":29130,"sponsor":"Única Saúde, ASA Alumínio, StarsTEA, Furacão Distribuidora","marca":"Kappa","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
@@ -194,6 +198,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'rbbragantino-br': {
     2019: {"estadio":"Nabi Abi Chedid","capacidad":17128,"sponsor":"Red Bull","marca":"Nike","temporada":"2019 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378401314"},
     2024: {"estadio":"Nabi Abi Chedid","capacidad":17022,"sponsor":"Red Bull","marca":"In-house","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
+    2025: {"estadio":"Cícero de Souza Marques","capacidad":12000,"sponsor":"Red Bull","marca":"Puma","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
   'remo-br': {
     2019: {"estadio":"Mangueirão","capacidad":45007,"sponsor":"VeganNation","marca":"Topper","temporada":"2019 Campeonato Brasileiro Série C","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353245145","fuenteLocal":"https://pt.wikipedia.org/w/index.php?oldid=71358754","local":["estadio","capacidad"],"fuenteManual":"https://en.wikipedia.org/wiki/2019_Clube_do_Remo_season","manual":["sponsor"]},
@@ -211,6 +216,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'saopaulo-br': {
     2023: {"estadio":"Morumbi","capacidad":72039,"sponsor":"Sportsbet.io","marca":"Adidas","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
     2024: {"estadio":"MorumBIS","capacidad":67428,"sponsor":"Superbet","marca":"New Balance","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
+    2025: {"estadio":"MorumBIS","capacidad":66671,"sponsor":"Superbet","marca":"New Balance","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
   'sportrecife-br': {
     2025: {"estadio":"Ilha do Retiro","capacidad":32983,"sponsor":"Betnacional","marca":"Umbro","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},

@@ -1,0 +1,292 @@
+{
+ "pdf": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md",
+ "mdSha1": "133ebd7f1dfcb8e64c16820188b86d89e34b9eef",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:13:38.606Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    12,
+    18
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    47,
+    57
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    59,
+    78
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    106,
+    113
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    117,
+    135
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 4,
+   "lineas": [
+    173,
+    188
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 5,
+   "lineas": [
+    217,
+    242
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    365,
+    372
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 8,
+   "lineas": [
+    380,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    473,
+    478
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    512,
+    516
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    522,
+    526
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    560,
+    571
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    581,
+    587
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    612,
+    615
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    621,
+    624
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    630,
+    633
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    661,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    673,
+    677
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    683,
+    689
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    717,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    734,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 16,
+   "lineas": [
+    767,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 16,
+   "lineas": [
+    789,
+    794
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 17,
+   "lineas": [
+    815,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 17,
+   "lineas": [
+    819,
+    828
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 17,
+   "lineas": [
+    836,
+    846
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 18,
+   "lineas": [
+    870,
+    871
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 18,
+   "lineas": [
+    873,
+    878
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 18,
+   "lineas": [
+    884,
+    900
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 19,
+   "lineas": [
+    928,
+    956
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 20,
+   "lineas": [
+    991,
+    1009
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b23",
+  "b27",
+  "b29"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25",
+  "b26",
+  "b30",
+  "b31",
+  "b32"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Cifras en pesos Colombianos)",
+ "moneda": "COP",
+ "columna_ejercicio": "Dic 31-2025",
+ "columna_anterior": "Dic 31-2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultado integral en b5 (pág. 3), estados individuales de la S.A. Notas: 16 ingresos operacionales (b23), 17 costo de ventas (b24, b25 y b26, que se continúan entre páginas), 18 otros ingresos (b27 y b29), 19 gastos de administración (b30 y b31) y 20 otros gastos (b32). Las notas 18, 19 y 20 tienen una columna PARCIAL 2025 además de DICIEMBRE 2025. b25 tiene la fila 'Prima de Servicios' en el encabezado."
+}
