@@ -31,9 +31,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 323: mejoras de script del lote 97 (Reino Unido): costo del reintento, filtro de la cola, notas inglesas, preguntas, perímetro, nombre legal --> Pipeline 4
+* 323: mejoras de script del lote 97 (Reino Unido): costo del reintento, notas inglesas, perímetro, nombre legal --> Pipeline 4
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; ah, el total de Basel que se suma como rubro; ai, St. Gallen intragrupo (con tu decisión de perímetro); aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión;  ai, St. Gallen intragrupo (con tu decisión de perímetro); aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -252,8 +252,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    entre una sola.
 af) listas de las ligas amateur belgas
    de esos años para el estadio (Lokeren-Temse 2022, Patro Eisden 2013-2015).
-   ah) Basel 2005, 2009 y 2012: la fila "Total Ertrag" entra como un rubro más y los ingresos salen el doble del total impreso
-   (detalle en la nota de Onboarding 3); esos tres años no se cargan hasta que se arregle.
+   ah) hecha (ya no duplica "Total Ertrag"); Basel 2005, 2009 y 2012 siguen en la cola por la "Verlustabdeckung" (cobertura de pérdidas
+   del holding, sin lado) y una transferencia a la holding en 2012: decisión de Guido.
    ai) St. Gallen: la compensación intragrupo "Entschädigung von/an FCSG Event AG" se suma como ingreso en la columna combinada (2018-19,
    2019-20, 2021-22 y 2023-24); con el perímetro de las dos sociedades sumadas debería netearse (decisión de perímetro de Guido pendiente).
    aj) la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen", y suma el subtotal
@@ -381,15 +381,13 @@ af) listas de las ligas amateur belgas
     automatizar "respuesta → fila" o programar posts; exponer solo las acciones necesarias. OmniRoute: gateway local de modelos con
     fallback, para abaratar la API (no Haiku, ver la regla de modelos); concentra credenciales y prompts, así que se revisa el repo
     antes. Quedan sin ubicar OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: pedir los links a Guido.
-323. MEJORAS DE SCRIPT VISTAS EN EL LOTE 97 (Reino Unido; Finanzas 5, a pedido de Guido, 2026-10-19). Cada una, un escalón con su ok:
+323. MEJORAS DE SCRIPT VISTAS EN EL LOTE 97 (Reino Unido; Finanzas 5, a pedido de Guido, 2026-10-19). Hechas la b (filtro de la cola) y la d
+    (aclaración del sí). Cada una, un escalón con su ok:
     a) `lote.mjs --reintentar` en ensayo da "~US$ 0,00 … 0 de 5" en el total, pero cada documento dice Mistral ~0,13-0,18 más localizar y
        extraer ~0,15 (en total ~US$ 1,4): el total no suma los que van a re-transcribir.
-    b) `cola.mjs` no filtra por lote: una opción `--lista <lote.txt>` o `--dir <carpeta>` (hoy hay que filtrar 191 casos de todo el proyecto).
     c) 19 de 36 "duda-de-extraer" son la nota "stated after charging" de clubes ingleses (depreciación, alquileres, honorarios del auditor),
        que siempre se contestan igual: no son desglose del renglón padre. Un escalón que las deje afuera sin preguntar, con la compuerta de
        que no sumen el renglón.
-    d) La pregunta cambia entre "¿Se dejan afuera…?" y "¿Se cargan…?" con la misma propuesta: el mismo criterio da `aceptar` o
-       `corregir "no"` y confunde. Una sola forma ("¿Se carga X?").
     e) `duda-tema` de perímetro con un solo estado de resultados (Arsenal 2021-22 y 2022-23, Burnley 2022-23): la regla 1 de perímetro
        de CONVENCIONES-DATOS ya lo decide; no debería ir a la cola.
     f) Alta de Harlequins (rugby): el nombre legal propuesto es una frase del texto; sale de "HARLEQUIN FOOTBALL CLUB LIMITED (REGISTERED

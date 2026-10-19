@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 823 — La cola se filtra por lote; Basel deja de duplicar el total (2026-10-19)
+
+* `cola.mjs --lista` y `--dir` filtran por lote o carpeta (323 b); el listado aclara qué significa el sí en "¿Se deja afuera…?" (323 d).
+* `verificar.mjs` (298 ah): un subtotal con hijas cuenta como componente; Basel 2005, 2009 y 2012 dejan de duplicar "Total Ertrag".
+  725 documentos medidos, 722 iguales.
+
 ## Versión 822 — Lote 101, primera tanda: Go Ahead Eagles 2023 y 2024 (2026-10-19)
 
 * Go Ahead Eagles 2023 y 2024. Basel 2010 y 2013-2020 con perímetro individual y Luzern con cierre al 30 de junio, por ajuste. Tres
