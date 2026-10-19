@@ -33,6 +33,9 @@ window.RANKINGS["be-challengerproleague"] = {
         sourceId:"beerschot-be-jaarrekening-2024-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.582],["Otros ingresos",3.527]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"liersesk-be", revenue:3.101, reportType:"official_balance_sheet",
+        sourceId:"liersesk-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.101]] },
     ],
   },
   2023: {

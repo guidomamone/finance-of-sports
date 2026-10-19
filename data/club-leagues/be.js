@@ -15,7 +15,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'cerclebrugge-be':  { 2025: 'be-proleague' },
   'dender-be':        { 2025: 'be-proleague' },
   'zultewaregem-be':  { 2025: 'liga-no-catalogada' },
-  'liersesk-be': { 2025: 'be-challengerproleague', 2022: 'be-challengerproleague', 2023: 'be-challengerproleague' },
+  'liersesk-be': { 2025: 'be-challengerproleague', 2022: 'be-challengerproleague', 2023: 'be-challengerproleague', 2024: 'be-challengerproleague' },
   'lokerentemse-be': { 2025: 'be-challengerproleague' },
   'lommelsk-be': { 2025: 'be-challengerproleague', 2018: null },
   'ohleuven-be': { 2025: 'be-proleague' },

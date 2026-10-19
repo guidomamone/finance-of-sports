@@ -990,6 +990,7 @@ window.SPONSORS_INDICE = [
   ["gobernacion-del-meta","Gobernación del Meta",["c"]],
   ["golaco","Golaço",["m"]],
   ["gold-meat","Gold Meat",["c"]],
+  ["golden-palace","Golden Palace",["c"]],
   ["goldenpark","GoldenPark",["c"]],
   ["goldenpark-casino","Goldenpark Casino",["c"]],
   ["golkiper","Golkiper",["m"]],

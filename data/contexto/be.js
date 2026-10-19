@@ -37,6 +37,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'liersesk-be': {
     2022: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"sponsor":"Keukens Van Lommel","marca":"Jako","temporada":"2021–22 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376207947"},
     2023: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"sponsor":"Keukens Van Lommel","marca":"Jako","temporada":"2022–23 Challenger Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380217514","fuenteManual":"https://nl.wikipedia.org/wiki/Eerste_klasse_B_2022-23_(voetbal_Belgi%C3%AB)","manual":["estadio","sponsor"]},
+    2024: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"sponsor":"Golden Palace","temporada":"2023–24 Challenger Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372570277","fuenteManual":"https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)","manual":["estadio","sponsor"]},
     2025: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'lokerentemse-be': {
