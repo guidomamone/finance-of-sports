@@ -2,5 +2,5 @@
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["hr-hnl"] = {
   2024: [{"id":"gorica-hr","revenue":4.629,"lo":2.593,"hi":8.785,"caso":"afuera","error":29,"de":[2025]},{"id":"istra-hr","revenue":4.954,"lo":2.775,"hi":9.4,"caso":"afuera","error":29,"de":[2025]},{"id":"osijek-hr","revenue":21.534,"lo":12.061,"hi":40.865,"caso":"afuera","error":29,"de":[2025]},{"id":"slavenbelupo-hr","revenue":6.512,"lo":3.647,"hi":12.357,"caso":"afuera","error":29,"de":[2025]},{"id":"varazdin-hr","revenue":5.879,"lo":3.293,"hi":11.157,"caso":"afuera","error":29,"de":[2025]}],
-  2025: [{"n":"Lokomotiva","revenue":4.501,"lo":1.454,"hi":13.874,"caso":"nuevo","error":50,"de":[]},{"n":"Šibenik","revenue":3.806,"lo":1.229,"hi":11.734,"caso":"nuevo","error":50,"de":[]}],
+  2025: [{"n":"Lokomotiva","revenue":4.502,"lo":1.454,"hi":13.854,"caso":"nuevo","error":50,"de":[]},{"n":"Šibenik","revenue":3.807,"lo":1.229,"hi":11.716,"caso":"nuevo","error":50,"de":[]}],
 };

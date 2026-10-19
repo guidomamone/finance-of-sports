@@ -98,6 +98,57 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2021–22 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "Basel".
 ```
 
+## 2008
+
+### Ingresos
+
+```text
+2008: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Suiza/Basel/geschaeftsbericht-2008.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Suiza/Basel/geschaeftsbericht-2008.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | aus Meisterschaft | pág. 18, Claude 0.88 |
+| 2 | aus UEFA-Spielen | pág. 18, precedente |
+| 3 | aus Cup-Spielen | pág. 18, precedente |
+| 4 | aus übrigen Spielen | pág. 18, Jev 0.99 |
+| 5 | Business Seats | pág. 18, precedente |
+| 6 | Sponsoring, Werbung | pág. 18, precedente |
+| 7 | Transferertrag | pág. 18, precedente |
+| 8 | TV-Entschädigungen | pág. 18, precedente |
+| 9 | Merchandising, Licensing | pág. 18, precedente |
+| 10 | Verbandseinnahmen | pág. 18, precedente |
+| 11 | Einnahmen Leistungsfussball Nachwuchs | pág. 18, precedente |
+| 12 | Diverses | pág. 18, Jev 1 |
+| 13 | Ausserordentlicher Ertrag | pág. 18, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Personalaufwand | pág. 18, precedente |
+| 2 | Organisationskosten Heimspiele | pág. 18, precedente |
+| 3 | Übriger Spielbetrieb | pág. 18, precedente |
+| 4 | Transferaufwand | pág. 18, precedente |
+| 5 | Werbung | pág. 18, precedente |
+| 6 | Administration | pág. 18, precedente |
+| 7 | Abschreibungen | pág. 18, precedente |
+| 8 | Aufwand Leistungsfussball Nachwuchs | pág. 18, precedente |
+| 9 | Übriger Aufwand | pág. 18, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2008–09 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia única por palabras "FC Basel" = "Basel".
+```
+
 ## 2007
 
 ### Ingresos
@@ -279,4 +330,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-2007.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### basel-ch-geschaeftsbericht-2008
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-2008.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
