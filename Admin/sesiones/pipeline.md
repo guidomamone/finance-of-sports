@@ -543,3 +543,17 @@ televisión y estadio en 0 (sin esto la (a) sola no destrababa nada: quedaba el 
 2019 (frena solo por "periodo"), 2020 y 2021 y Patro Eisden 2021 (carga true); 0 filas a la cola; 0 categorías distintas. Corrección a lo que dije al proponerla: no eran 6 documentos con el mismo freno;
 Patro Eisden 2022 y 2023 no tienen el freno de ingresos (solo "categorías en 0", se resuelve con el reintento). OJO, decisión de Guido ya tomada, pero para que quede escrito: Patro Eisden 2021 va a
 publicar ingresos 0 siendo un club con personal (62 = 362.273); el documento no abre la Brutomarge (60/61 vacío), y por la regla de la Brutomarge negativa quedó como gasto.
+
+**260, caja y deuda sin documento nuevo (Guido: "con un sonnet, y si no halla mucho, no es un drama").** Un Sonnet (solo lectura; en el primer intento no pudo listar carpetas, le armé el índice de .md)
+revisó 7 casos y dejó `Admin/mediciones/informe-260-caja-deuda-sin-documento-nuevo.md`. Contrasté las citas principales con los documentos (Ferroviária 2025, Mirassol 2024, Argentinos 2019, Unión 2024: coinciden).
+Resultado: sirven Ferroviária 2023-2025 (caja; deuda según la fila AFAC), Mirassol 2024 (hay balance: el TODO estaba viejo; caja 11.583.747,40, deuda 0), Argentinos Juniors 2019 (el archivo es
+`memoria-2018-2019.md`, no el balance; caja 30.282.796, deuda 43.400.000) y Unión 2022-2024 (2022 con asignación inferida por el OCR). Parciales: Ferroviária 2014 (sin pasivo no corriente) y Remo 2019 (caja 351.275,47 del DFC,
+sin deuda). No se pueden: Volos 2019-2020 (solo totales; no corriente 0) y Japón 2025 (por club solo ingresos). DECISIÓN DE GUIDO: la fila "Adiantamento para futuro aumento de capital" de Ferroviária (11,3 / 24,7 / 39,1 M; la nota dice
+"aportes del controlador", el auditor 2025 habla de "mútuo con acionistas"). Sin cargar nada todavía: se cargaría con ajustes `caja`/`deuda` con cita.
+
+**260, escrito (Guido, 2026-10-19: la AFAC de Ferroviária NO cuenta como deuda; cargar lo de alta o media).** Con ajustes `caja`/`deuda` con cita, corridos por `caja-deuda.mjs --club X --escribir` (escalón 0, sin API):
+Unión 2022, 2023 y 2024 (caja; deuda = TOTAL DEUDAS de la nota, sin Previsiones: es el criterio del club, su 2025 carga 8.619 + 137 M; NO usé la deuda financiera angosta del informe del Sonnet; 394,60 / 965,50 / 3.552,40 M ARS),
+Argentinos Juniors 2019 (solo caja 30,28 M ARS; su deuda cargada, 247,57 M, es el Total del pasivo, criterio del club en todos sus años: no se toca) y Mirassol 2024 (deuda 0, seguridad media: "Contas a pagar" sin nota).
+Ferroviária 2023-2025 ya tenía caja y deuda cargadas con exactamente los valores del informe (sin la fila Partes relacionadas ni la AFAC): sin cambios. Para que la herramienta encontrara la transcripción, la evidencia de Unión (3 fuentes) y de Argentinos Juniors
+nombra ahora el .md; y a Unión 2022-2024 le faltaban las claves `grossDebt:null, cash:null` (el escritor solo reemplaza `null`). `auditAll()` en el navegador: 3.059 checks OK, 0 que no cierran. audit.js P0 0 / P1 0. ASSET_V 1402.
+SIN CARGAR del 260: Ferroviária 2014 y Remo 2019 (parciales), Volos 2019-2020 y Japón 2025 (no se pueden).

@@ -96,6 +96,10 @@ receita - custos - despesas = superávit, sin línea financiera intermedia.
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e Bancos Conta Movimento / disponibilidades do ativo circulante: R$ 11.583.747,40 (impreso en prosa). El .md es el informe narrativo del auditor (no las demonstrações); cita la cifra en prosa, sección 1.1. Demonstrações individuais.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada; seguridad media): el balance patrimonial modelo 4 firmado de 2024 no trae ninguna fila de préstamos ni de financiamientos y no tiene pasivo no corriente; el pasivo circulante (1.923.431,97) es solo fornecedores, impostos, contas a pagar y receitas antecipadas. 'Contas a pagar' (672.744,89) no tiene nota, así que un préstamo escondido ahí no se puede descartar.
+```
+
 ## Gestiones
 
 _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_

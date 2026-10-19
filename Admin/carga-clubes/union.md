@@ -115,6 +115,10 @@ archivo — grossDebt/cash quedan sin cargar, no inventados.
 SUPERÁVIT FINAL real: $1.166.322.977 ARS.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): grossDebt de Unión = total de la nota Deudas sin Previsiones (criterio del club). 30/06/2024: TOTAL DEUDAS 3.552.401.997 (columna 2024; la de 2023 reexpresada es 3.587.106.472).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): Caja y bancos al 30/06/2024 (ejercicio 118) = 414.834.190 pesos (caja 200.878.243 + bancos 121.183.145 + moneda extranjera 0 + IPEI 92.772.802).
+```
+
 ## 2023
 
 ### Meta
@@ -123,6 +127,10 @@ SUPERÁVIT FINAL real: $1.166.322.977 ARS.
 No se encontró página de Estado de Situación Patrimonial en el escaneo disponible de este
 archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no inventados.
 SUPERÁVIT FINAL real: $893.901.287 ARS.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-19): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): grossDebt de Unión = total de la nota Deudas sin Previsiones (criterio del club). 30/06/2023: corriente 885.283.704,45 + no corriente 80.212.851,80 = TOTAL DEUDAS 965.496.556,25.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): Caja y bancos al 30/06/2023 (ejercicio 117, rectificativo) = 113.141.438,31 pesos.
 ```
 
 ## 2022
@@ -135,6 +143,10 @@ archivo (ver comentario de cabecera) — grossDebt/cash quedan sin cargar, no in
 SUPERÁVIT FINAL real: $190.408.914 ARS.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): grossDebt de Unión = total de la nota Deudas (corriente + no corriente), sin Previsiones: es el criterio del club (su 2025 carga 8.619,65 + 137,74 millones). 30/06/2022: corriente 334.598.794,11 + no corriente 60.001.507,93 = TOTAL DEUDAS 394.600.302,04. Incluye proveedores, fiscal y los cheques de pago diferido.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): Caja y bancos al 30/06/2022 (ejercicio 116, rectificativo) = 96.449.587,60 pesos.
+```
+
 ## Fuentes
 
 ### union-memoria-y-balance-116
@@ -145,6 +157,8 @@ _note (data/):_
 PDF oficial (52 páginas, escaneado sin capa de texto, transcripto vía OCR). Versión "Rectificativa" (corregida), firmada 4/3/2024. SUPERÁVIT FINAL real: $190.408.914 ARS. El Anexo IV (Gastos) SÍ tiene columnas por departamento razonablemente separables — verificado que sus 23 rubros suman exacto contra el Total de Gastos Ordinarios antes de cargar. No se encontró página de Estado de Situación Patrimonial en este escaneo — grossDebt/cash sin cargar. Convertido a USD con $124 (Anexo V, lado Activo/Créditos). Ver data/ar/union-data.js.
 ```
 
+Transcripción de este documento: `Clubes/Argentina/Union/memoria-y-balance-116.md`.
+
 ### union-memoria-y-balance-117
 
 _note (data/):_
@@ -153,6 +167,8 @@ _note (data/):_
 PDF oficial (63 páginas, escaneado sin capa de texto, transcripto vía OCR). Versión "Rectificativa" (corregida), firmada 4/3/2024. SUPERÁVIT FINAL real: $893.901.287 ARS. Anexo IV verificado (24 rubros suman exacto contra el Total de Gastos Ordinarios). No se encontró página de Estado de Situación Patrimonial — grossDebt/cash sin cargar. Convertido a USD con $255 (Anexo V, lado Activo/Créditos). Ver data/ar/union-data.js.
 ```
 
+Transcripción de este documento: `Clubes/Argentina/Union/memoria-y-balance-117.md`.
+
 ### union-estados-contables-118-2023-24
 
 _note (data/):_
@@ -160,6 +176,8 @@ _note (data/):_
 ```text
 PDF oficial (53 páginas, escaneado sin capa de texto, transcripto vía OCR), firmado 31/10/2024. SUPERÁVIT FINAL real: $1.166.322.977 ARS. A diferencia de 116/117, este archivo NO incluye el Anexo IV de detalle de Gastos por rubro — se cargó a nivel de las 6 categorías agregadas del Estado de Recursos y Gastos, con la excepción de "Amortizaciones" que se pudo partir en 2 cruzando contra el Anexo II (Activos Intangibles). No se encontró página de Estado de Situación Patrimonial — grossDebt/cash sin cargar. Convertido a USD con $890,50 (Anexo V, lado Activo/Créditos). Ver data/ar/union-data.js.
 ```
+
+Transcripción de este documento: `Clubes/Argentina/Union/estados-contables-118-2023-2024.md`.
 
 ### union-memoria-y-balance-119
 

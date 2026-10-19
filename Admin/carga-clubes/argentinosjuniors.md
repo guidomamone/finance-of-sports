@@ -113,6 +113,10 @@ de cabecera: al ser el año más reciente de esa presentación, su columna proba
 ~nominal, pero no hay balance auditado real de este ejercicio descargado para confirmarlo).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): Caja y bancos (Nota 3.a.) al 30/06/2019 = 30.282.796 pesos, en el estado de situación patrimonial de la memoria del ejercicio 115. La deuda cargada (247.566.408 = Total del pasivo) no se toca: es el criterio del club en todos sus años.
+```
+
 ## 2018
 
 ### Meta
@@ -190,6 +194,8 @@ _note (data/):_
 ```text
 PDF oficial de 2 páginas (texto nativo) preparado para la asamblea del club, con las cifras COMPARATIVAS de los 5 ejercicios a la vez, EN PESOS AJUSTADOS POR INFLACIÓN (dice explícito "cifras en pesos ajustadas por inflación" en el propio título de cada cuadro) — NO son pesos nominales, a diferencia de todo el resto del sitio. Usado SOLO para el Ejercicio 2019 (el más reciente de la presentación, su columna es ~nominal ya que la restatement se hace hacia atrás desde el año más nuevo) — los ejercicios 2015 a 2018 se reemplazaron con datos reales de los balances auditados de cada año (ver las 3 fuentes de abajo y el comentario de cabecera de data/ar/argentinosjuniors-data.js para el detalle completo del bug encontrado y corregido). El archivo "balance-2018-2019.pdf" del mismo club, a pesar del nombre, resultó ser la Memoria narrativa (sin una sola cifra contable), y no hay balance auditado real de 2018/2019 descargado — SUPERÁVIT 2019 $119.274.273 ARS sigue sin confirmar contra un documento primario propio.
 ```
+
+Transcripción de este documento: `Clubes/Argentina/Argentinos Juniors/presentacion-asamblea-2018-2019.md`.
 
 ### argentinosjuniors-balance-2015-2016
 
