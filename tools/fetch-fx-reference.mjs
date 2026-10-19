@@ -879,22 +879,25 @@ async function runOne(code, from, to) {
 // oficial, endpoint público sin key, la serie completa guardada en tools/fx-reference/. A diferencia
 // de las cotizaciones (que se curan a mano en FX_CLOSE), esta serie es chica (un valor por año), así
 // que data/deflactores.js se GENERA desde estos archivos: no se edita a mano.
-//   USD: deflactor implícito del PBI de EE.UU. (BEA), vía FRED, serie anual A191RD3A086NBEA, 2017=100.
+//   USD: deflactor implícito del PBI de EE.UU. (BEA), archivo anual público de las cuentas nacionales (NipaDataA.txt, serie A191RD), 2017=100.
+//        (to-do 302) Antes salía de FRED, que prohíbe el scraping y guardar copias. El archivo pesa ~12 MB y es de uso público, sin key.
 //   EUR: deflactor del PBI de la zona euro (Eurostat nama_10_gdp, EA20, PD15_EUR, B1GQ), 2015=100.
 // Se corre una vez por año, cuando las dos fuentes publican el año que cerró.
 // DESDE 1995 (antes 2000): Lazio 1998-99 cierra en 1999 y sin su valor `fac()` de js/finanzas-multi.js devuelve 1, así que ese año
 // quedaba nominal en "ajustado por inflación" sin ningún aviso. Si se carga un ejercicio anterior a 1995, bajar este corte.
 // ============================================================================
 const DEFLACTORES = {
-  USD: { file: 'deflactor-usd.json', nombre: 'deflactor del PBI de EE.UU.', fuente: 'BEA, vía FRED (A191RD3A086NBEA), índice 2017 = 100',
-    url: 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=A191RD3A086NBEA',
+  USD: { file: 'deflactor-usd.json', nombre: 'deflactor del PBI de EE.UU.', fuente: 'BEA (NIPA anual, serie A191RD), índice 2017 = 100',
+    url: 'https://apps.bea.gov/national/Release/TXT/NipaDataA.txt',
     async fetch() {
       const r = await fetchRetry(this.url);
       const out = {};
-      for (const line of (await r.text()).trim().split('\n').slice(1)) {
-        const [fecha, v] = line.split(',');
-        const y = Number(fecha.slice(0, 4));
-        if (y >= 1995 && v && v !== '.') out[y] = Number(v);
+      // Líneas `A191RD,<año>,"<valor>"` (el archivo trae todas las series de la BEA; el valor puede traer comas de miles).
+      for (const line of (await r.text()).split('\n')) {
+        if (!line.startsWith('A191RD,')) continue;
+        const [, año, v] = line.trim().match(/^A191RD,(\d{4}),"?([^"]*)"?$/) || [];
+        const y = Number(año), val = Number((v || '').replace(/,/g, ''));
+        if (y >= 1995 && Number.isFinite(val) && val > 0) out[y] = val;
       }
       return out;
     } },

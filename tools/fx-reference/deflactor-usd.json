@@ -1,7 +1,7 @@
 {
  "label": "deflactor del PBI de EE.UU. (anual)",
- "source": "BEA, vía FRED (A191RD3A086NBEA), índice 2017 = 100, https://fred.stlouisfed.org/graph/fredgraph.csv?id=A191RD3A086NBEA",
- "fetchedAt": "2026-10-09T19:57:16.883Z",
+ "source": "BEA (NIPA anual, serie A191RD), índice 2017 = 100, https://apps.bea.gov/national/Release/TXT/NipaDataA.txt",
+ "fetchedAt": "2026-10-19T14:19:23.798Z",
  "rangeFrom": "1995",
  "rangeTo": "2025",
  "count": 31,

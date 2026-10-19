@@ -6,7 +6,7 @@
 window.DEFLACTORES = {
   USD: {
     nombre: 'deflactor del PBI de EE.UU.',
-    fuente: 'BEA, vía FRED (A191RD3A086NBEA), índice 2017 = 100',
+    fuente: 'BEA (NIPA anual, serie A191RD), índice 2017 = 100',
     valores: {
       1995: 66.939, 1996: 68.164, 1997: 69.340, 1998: 70.119, 1999: 71.111, 2000: 72.722,
       2001: 74.360, 2002: 75.515, 2003: 77.006, 2004: 79.077, 2005: 81.556, 2006: 84.071,
