@@ -236,3 +236,5 @@ como letras para fos-pipeline, sin aplicarlas.
      2018 L545 y 2024 L1077); el total "Sum driftsinntekter" se suma además de su renglón (Fredrikstad 2024 L1064). Mismo patrón suizo: el
      total consolidado "Erträge netto" sumado junto al desglose de cada sociedad y los "-" impresos leídos al revés (St. Gallen 2024-25 L261,
      L330, L403). Los 11 ajustes a mano del lote 94 son exactamente estos casos.
+
+## Después del sexto merge (2026-10-19)

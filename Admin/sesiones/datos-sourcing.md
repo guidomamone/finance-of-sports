@@ -113,3 +113,5 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
 - 195: las gestiones de esas 7 preguntas, cuando contesten los clubes; CRB, Cuiabá, Ferroviária y Goiás siguen como estaban.
 - RWDM 2019: el registro tiene el cierre 2019-11-30, y el balance va del 30/11/2018 al 30/06/2019. Parece el defecto de fechas de
   cierre de la 298 f (pipeline).
+
+## Después del merge del 312 y el 195 (2026-10-19)

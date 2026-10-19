@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 762 — Mistral rehízo los 238 .md sin tablas; merges de pipeline 3, datos 2 y onboarding 2 (2026-10-19)
+
+`.jsonl` (cola, verificaciones, Claude API) con las líneas de las dos ramas; ASSET_V 1327, P0 0 / P1 0.
+
+- To-do 298 e2: la corrida de Mistral sobre los 238 .md viejos sin tablas, en main (238 listos, ~US$ 42,97 contra US$ 7,26 del ensayo: 298 e3).
+  La cita de Vasco da Gama 2024 del registro de entidades pasa a la línea del .md rehecho.
+- To-do 298 i: `tools/paises-referencia.json` y `paisDe` en `alta-club.mjs` (las 32 carpetas sin fila en PAISES se resuelven; Escocia como GB).
+- To-do 298 y1 a y3: el vocabulario noruego de costos financieros en singular (los 6 noruegos del lote 94 dejan de dar "no cierra"; la y2,
+  Fredrikstad 2024, sale sola) y tres escalones de verificar.mjs para St. Gallen 2024-25 (cierra exacto con la compensación de la cola).
+- To-do 312: la página de sponsor muestra "Otras fuentes". To-do 195: 18 gestiones confirmadas de Bélgica y Estonia (`data/gestiones/ee.js`,
+  criterio de Estonia en `Admin/gestiones-por-pais/ee.md`).
+- Lote 94: Go Ahead Eagles 2025, la primera de las 10 altas del borrador de Finanzas.
+
 ## Versión 761 — Merge de pipeline 2: la cola frena un no_es_rubro que deja un renglón vacío (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0.

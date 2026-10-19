@@ -246,3 +246,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
 - **y4 (después del merge de pipeline y onboarding):** sacar los ajustes `fila` que tapaban la y (8 noruegos y 3 de St. Gallen: "Erträge
   netto" L261, L330 y L403) y DEJAR los 2 de la compensación "Entschädigung" (L268-269): son una decisión de la cola, no un defecto del script.
   En los 718 `.filas.json` hay un solo par de filas sin lado que se anulan (+X / −X): no hace falta un escalón para eso.
+
+## Después del merge de la y1-y3 (2026-10-19)

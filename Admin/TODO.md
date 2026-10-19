@@ -27,7 +27,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 290 y 291: caja y deuda, lo que queda (Genoa 2022; la duda del factoring la decidís vos) --> Pipeline 3 (290), Principal (291)
 * 310: caja y deuda de un año sin vecino, cualquier país --> Pipeline 3
-* 292: cargar lo transcripto por subagentes: Países Bajos (en la cola), Bélgica, Suiza, Beşiktaş, Colombia y los .md viejos que rehace Mistral --> Onboarding 2
+* 292: cargar lo transcripto por subagentes: Países Bajos (en la cola), Bélgica, Suiza, Beşiktaş, Colombia y los 238 .md viejos ya rehechos por Mistral --> Onboarding 2
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
@@ -36,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 232: mejoras de script que dejó Grecia --> Pipeline 3
 * 279: la tool que duplicaba claves en club-leagues/ru.js --> Pipeline 3
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 3
-* 298: mejoras de script de Estonia y Bélgica (y y w de los noruegos primero; después j a n, p, q, s, v, u2, z, g2, e3) --> Pipeline 3
+* 298: mejoras de script de Estonia y Bélgica (y4 y w primero; después l a n, p, q, s, v, u2, z, g2, e3) --> Pipeline 3
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 3 (306, 307)
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 3
 * 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 3
@@ -56,7 +56,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 282: quién audita, lo que queda (50 informes; la compuerta del pipeline)
 * 294: registro de entidades, lo que queda (espera las 10 altas del borrador, PRIORIDAD de Onboarding 2) --> Finanzas 3
 * 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
-* 312: la página de sponsor no muestra la fuente propia de una entrada --> Datos 2
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
@@ -260,13 +259,16 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    los clubes del borrador `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando onboarding los publique (Viking, Vålerenga, Luzern,
    St. Gallen, Molde, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con
    cita). Después, fast-forward de la rama finanzas.
-298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, f, g (el 630 belga), h, o, r, t, u y x, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
+298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
    grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
-   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. e2) las 238 transcripciones viejas sin tablas ya están marcadas: falta la corrida de Mistral
-   (~US$ 7,26, la corre Guido): `caffeinate -i node tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --max-paginas 0 --limit 0
-   --ejecutar`; después entran a los lotes de carga de cada país. g2) partir en la cola cualquier fila según su nota (otros países, el 66A de Lommel SK
+   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. e3) el ensayo de pipeline.mjs estimó US$ 7,26 para rehacer los 238 .md sin tablas y la corrida
+   real costó US$ 42,97: que el ensayo dé el número real antes de la próxima corrida grande (ver la nota de Pipeline 2). w) antes-de-localizar
+   dice que el perímetro "se decide al ejecutar", pero lote.mjs frena igual. y4) sacar los ajustes `fila` que tapaban la y (8 noruegos y 3
+   de St. Gallen) y dejar los 2 de la compensación "Entschädigung" de St. Gallen; medir que lo cargado quede igual. RWDM 2019: el registro
+   tiene el cierre 2019-11-30 y el balance va del 30/11/2018 al 30/06/2019 (como la f). Escocia, Gales e Irlanda del Norte se ven como GB
+   ("Inglaterra") en el selector: decisión de pantalla pendiente. g2) partir en la cola cualquier fila según su nota (otros países, el 66A de Lommel SK
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola. l) a p) más casos de onboarding (reportType por año de un club existente, perímetro de la carga, año vecino con
@@ -300,8 +302,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    propio documento); (2) la deuda belga, con criterio a decidir (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos
    financieros); (3) OH Leuven y los documentos cuyo .md no trae la columna de códigos. Si caja-deuda vuelve a atar un valor al año
    equivocado (Tallinna Kalev en onboarding), mirar qué `.md` devolvió `mdDeFuente`.
-312. LA PÁGINA DE SPONSOR NO MUESTRA LA FUENTE PROPIA DE UNA ENTRADA (cierre de datos, pantallas). `generate-sponsors.js` ya pone como 6º
-   elemento de la entrada la fuente de lo que salió a mano o de la página del club; `js/sponsor.js` todavía muestra solo la fuente de la liga.
 309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de
    Wikipedia (`wiki` en `data/rankings/<liga>.js`) `leagueSize` es null, aunque la lista existe y alimenta los estimados: sin él no hay
    "N de los M" en el subtítulo de Ligas ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`)?
@@ -323,7 +323,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
        de las notas que viene DESPUÉS del estado de resultados.
 
 195. GESTIONES SIN FUENTE (solo entran las `confirmada: true`). Una tanda nueva se arma sola desde los casos de la cola con
-    `node tools/gestiones-tanda.mjs --armar --escribir` (la última, tanda-2026-10-14-2, cargó 12). Siguen sin cubrir:
+    `node tools/gestiones-tanda.mjs --armar --escribir` (la última, tanda-2026-10-19: 18 de Bélgica y Estonia, con criterio de Estonia en
+    `Admin/gestiones-por-pais/ee.md`; 7 preguntas a los clubes en `Admin/dudas-por-club.md`). Siguen sin cubrir:
     - con caso en la cola y la pregunta en `Admin/dudas-por-club.md` ("Gestiones sin fecha confirmada"): CRB 2020, Cuiabá 2022-2025, Vila
       Nova 2014, Ferroviária 2010-2013 y 2023 (además, criterio de SAF: presidente del consejo o director-presidente), Goiás 2010-2013 y
       2017, OFI 2018 (administración judicial: sin gestión, decisión de Guido);
