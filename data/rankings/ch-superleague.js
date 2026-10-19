@@ -1,6 +1,15 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ch-superleague"] = {
+  2025: {
+    leagueSize: null,
+    wiki: {"t":"2024–25 Swiss Super League","lang":"en","at":"2026-10-19","n":12},
+    clubs: [
+      { id:"luzern-ch", revenue:38.9, reportType:"official_balance_sheet",
+        sourceId:"luzern-ch-geschaeftsbericht-2024-25",
+        mix:[["Comercial / Sponsors",7.171],["Estadio",13.756],["Televisión",2.174],["Venta de Jugadores",8.124],["Otras secciones deportivas",3.281],["Otros ingresos",4.393]] },
+    ],
+  },
   2021: {
     leagueSize: null,
     wiki: {"t":"2020–21 Swiss Super League","lang":"en","at":"2026-10-19","n":10},

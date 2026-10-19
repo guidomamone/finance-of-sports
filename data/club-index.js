@@ -162,6 +162,7 @@ window.CLUB_INDEX = {
   "lokomotivmoscow-ru": {"n":"Lokomotiv Moscow","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "lommelsk-be": {"n":"Lommel SK","c":"BE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
   "losandes-ar": {"n":"Los Andes","c":"AR","q":"full","y":2,"last":2021,"yrs":[[2021,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
+  "luzern-ch": {"n":"Luzern","c":"CH","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "mafra-pt": {"n":"Mafra","c":"PT","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "mancity-gb": {"n":"Manchester City","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "maritimo-pt": {"n":"Maritimo","c":"PT","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
