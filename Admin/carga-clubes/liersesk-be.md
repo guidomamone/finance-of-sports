@@ -208,6 +208,35 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-19): be-challengerproleague, verificado contra roster cacheado de "2021–22 Belgian First Division B" (tools/club-league-reference/be.json), coincidencia exacta "Lierse Kempenzonen".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Brutomarge (+)/(-) | pág. 8, precedente |
+| 2 | Andere bedrijfskosten | pág. 8, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-div1amateur, verificado contra roster cacheado de "2019–20 Belgian First Amateur Division" (tools/club-league-reference/be.json), coincidencia exacta "Lierse Kempenzonen".
+```
+
 ## Fuentes
 
 ### liersesk-be-jaarrekening-2025-06-30-individual
@@ -240,4 +269,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### liersesk-be-jaarrekening-2020-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

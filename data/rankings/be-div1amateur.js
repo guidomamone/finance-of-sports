@@ -12,6 +12,7 @@ window.RANKINGS["be-div1amateur"] = {
   },
   2020: {
     leagueSize: 16,
+    sinDato: ["liersesk-be"],
     wiki: {"t":"2019–20 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"patroeisden-be", revenue:0.311, reportType:"official_balance_sheet",
