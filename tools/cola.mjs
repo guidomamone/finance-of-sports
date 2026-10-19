@@ -29,6 +29,7 @@
 // USO:
 //   node tools/cola.mjs                                  los casos pendientes, agrupados por documento, con qué abrir y qué mirar
 //   node tools/cola.mjs --todas                          también los respondidos
+//   node tools/cola.mjs --lista Admin/lotes/lote-NN.txt  solo los casos de los documentos de ese lote (to-do 323 b); también --dir "Clubes/<País>/<Club>"
 //   node tools/cola.mjs --responder <id> aceptar
 //   node tools/cola.mjs --responder <id> corregir --valor "1.234.567" --nota "en el PDF dice 1.234.567, Mistral leyó 1.284.567"
 //   node tools/cola.mjs --responder <id> preguntar-club --nota "¿el ingreso por transferencias es bruto o neto?"
@@ -327,8 +328,19 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const cerradosPorCarga = await cerrarCargados();
   if (cerradosPorCarga.length) console.log(`Cerré ${cerradosPorCarga.length} caso(s) de años que ya están en el sitio (no esperaban nada; si una etapa los vuelve a levantar, se reabren solos).\n`);
   const L = leer(); const { casos, resp, cerrado } = L;
-  const lista = [...casos.values()].filter((c) => A.includes('--todas') || pendiente(c, L));
-  if (!lista.length) { console.log('La cola está vacía.'); process.exit(0); }
+  // (to-do 323 b, ok de Guido 2026-10-19) FILTRO POR LOTE O CARPETA, solo para el listado: `--lista <lote.txt>` deja los casos de los documentos de
+  // esa lista (un caso de alta apunta a una carpeta: entra si algún documento de la lista está adentro) y `--dir <carpeta>` los de esa carpeta.
+  // No cambia ninguna respuesta ni ninguna etapa.
+  const docsLista = flag('--lista') ? readFileSync(resolve(ROOT, flag('--lista')), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : null;
+  const dirFiltro = flag('--dir') ? flag('--dir').replace(/\/+$/, '') + '/' : null;
+  const delFiltro = (c) => {
+    const p = c.pdf || '';
+    if (docsLista && !(docsLista.includes(p) || (p.endsWith('/') && docsLista.some((d) => d.startsWith(p))))) return false;
+    if (dirFiltro && !(p.startsWith(dirFiltro) || (p.endsWith('/') && dirFiltro.startsWith(p)))) return false;
+    return true;
+  };
+  const lista = [...casos.values()].filter((c) => (A.includes('--todas') || pendiente(c, L)) && delFiltro(c));
+  if (!lista.length) { console.log(docsLista || dirFiltro ? 'No hay casos en la cola para ese lote o carpeta.' : 'La cola está vacía.'); process.exit(0); }
   const porDoc = new Map(); for (const c of lista) { if (!porDoc.has(c.pdf)) porDoc.set(c.pdf, []); porDoc.get(c.pdf).push(c); }
   console.log(`COLA DE REVISIÓN: ${lista.length} caso(s) en ${porDoc.size} documento(s)${A.includes('--todas') ? '' : ' pendientes'}\n`);
   for (const [pdf, cs] of porDoc) {
@@ -337,6 +349,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       const r = resp.get(c.id);
       console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : cerrado.get(c.id) ? '   -> CERRADO: obsoleto' : ''}`);
       console.log(`      ${(c.motivo.startsWith('duda-') || c.motivo === 'categoria' || c.motivo === 'perimetro' || c.motivo === 'perfil') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
+      // (to-do 323 d, ok de Guido 2026-10-19, camino 3) la IA escribe la pregunta de una duda en dos formas: "¿Se carga X?" (sí = se carga) y "¿Se deja
+      // afuera X?" (sí = queda afuera), con la misma propuesta "sí": el mismo criterio daba `aceptar` o `corregir "no"` y confundía. Solo se agrega una
+      // aclaración al listado; lo guardado (la pregunta, la propuesta, las respuestas) no cambia, porque verificar.mjs (to-do 211) lee las dos formas.
+      if (/^¿\s*Se\s+dejan?\s+afuera\b/i.test(String(c.que || ''))) console.log('      (en esta pregunta «sí» = queda AFUERA de la carga; «no» = se carga)');
       if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);
       if (c.propuesta) console.log(`      Propuesta del sistema: ${c.propuesta}`);

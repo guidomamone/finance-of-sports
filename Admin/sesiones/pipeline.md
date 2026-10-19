@@ -557,3 +557,19 @@ Argentinos Juniors 2019 (solo caja 30,28 M ARS; su deuda cargada, 247,57 M, es e
 Ferroviária 2023-2025 ya tenía caja y deuda cargadas con exactamente los valores del informe (sin la fila Partes relacionadas ni la AFAC): sin cambios. Para que la herramienta encontrara la transcripción, la evidencia de Unión (3 fuentes) y de Argentinos Juniors
 nombra ahora el .md; y a Unión 2022-2024 le faltaban las claves `grossDebt:null, cash:null` (el escritor solo reemplaza `null`). `auditAll()` en el navegador: 3.059 checks OK, 0 que no cierran. audit.js P0 0 / P1 0. ASSET_V 1402.
 SIN CARGAR del 260: Ferroviária 2014 y Remo 2019 (parciales), Volos 2019-2020 y Japón 2025 (no se pueden).
+
+**323 b (Guido, "ok" 2026-10-19).** `cola.mjs --lista <lote.txt>` y `--dir <carpeta>`: filtran solo el listado (un caso de alta, que apunta a una carpeta, entra si algún documento de la lista está adentro).
+Medido: sin flags, igual que antes (101 casos en 92 documentos); lote 96 → 11, lote 100 → 1, `--dir Clubes/Noruega/Sarpsborg 08` → 12 (= 11 + 1, cruzan); `--dir Clubes/Suiza` → 5; una carpeta sin casos
+dice "No hay casos en la cola para ese lote o carpeta". No cambia respuestas ni etapas.
+**298 ah (Basel 2005, 2009, 2012), diagnóstico, sin código:** reproducido con los derivados de Onboarding 3 (copiados un rato a mi árbol y borrados). "Total Ertrag" (38,2 M en 2005) se cuenta además de sus renglones
+porque `esSumaDe(arriba)` solo suma renglones, y "Matcheinnahmen" (16,13 M) es un SUBTOTAL con 4 hijos: los 7 renglones de arriba suman 22,09 y falta el subtotal-con-hijos para llegar a 38,22. Arreglo propuesto:
+en `esSumaDe`, un subtotal que tiene hijos (`detalla_a` igual a su etiqueta) cuenta como componente. A diseñar y medir con la completa.
+
+**323 d (Guido, 2026-10-19, camino 3).** El prompt de `extraer.mjs` y `localizar.mjs` trae de ejemplo "¿Se deja afuera de la carga el cuadro…?" y la IA copia esa forma (212 casos de la cola). Cambiar el prompt a una sola forma habría
+roto el escalón 211 de `verificar.mjs` (cierra una duda cuando Guido ya contestó la otra del mismo cuadro, y exige que una sea "dejar afuera"; en Grecia cerró 9 de 59). Hecho: `cola.mjs` agrega al listado, bajo cada pregunta "¿Se deja(n)
+afuera…?", la línea «sí» = queda AFUERA de la carga; «no» = se carga. Medido: aparece en los 212 casos que tienen esa forma (con --todas) y en ninguno más; la cola pendiente da lo mismo que antes (101 casos en 92 documentos); lo guardado no cambia.
+
+**298 ah (Guido, 2026-10-19).** `verificar.mjs`: en la decisión final de `esSumaDe`, un subtotal con 2 hijas o más que suman su importe cuenta como componente (`esCompuesto`, `arribaConCompuestos`). Basel 2005 (76,43 → 38,69 M), 2009 (90,97 → 55,21 M) y 2012 (160,07 → 80,037417 M, exacto al
+total impreso) dejan de contar "Total Ertrag" de más. Medición de 725 documentos (base OK 689 / COLA 36; después igual): 722 idénticos y solo cambian esos tres. Primera versión (el compuesto dentro de `arriba` para todos los escalones): cambiaba además Parma 2016, Sassuolo 2018 y Milan
+2020-21 (lectura 5 "hoja", otras líneas): se acotó a la decisión final y volvieron a ser idénticos. Los tres Basel SIGUEN EN COLA: 2005 y 2009 traen la fila "Verlustabdeckung FC Basel Marketing AG / Holding AG" (0,47 y 9,72 M, cobertura de pérdidas del holding, sin lado, entra como ingreso por su signo) y 2012
+una transferencia de ganancia a la holding (L810). Es otro tema: a decidir con Guido (¿esa fila es ingreso? la nota de extraer dice que no es un ingreso operativo).

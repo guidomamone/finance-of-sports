@@ -16,6 +16,7 @@ caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar    
 caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar --cargar   # además escribe lo que queda listo (altas, cargas, commits)
 caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar --reintentar   # camino de error (ver abajo)
 node tools/cola.mjs                                                         # la cola humana
+node tools/cola.mjs --lista Admin/lotes/lote-NN.txt                          # solo los casos de ese lote (también --dir "Clubes/<País>/<Club>"; to-do 323 b)
 node tools/estado.mjs                                                       # el tablero: cada PDF en su etapa y escalón (gratis)
 node tools/inventario-transcripciones.mjs                                   # el registro, con la etapa de cada estado (gratis)
 node tools/inventario-transcripciones.mjs --solo <lista|carpeta>          # solo esos PDFs (~1 s); lo usan pipeline.mjs --lista/--dir y lote.mjs
@@ -406,6 +407,10 @@ Mitigaciones:
             Versión 611, ESCALÓN "columna anterior con signo": al decidir si un total es la suma de sus renglones, la columna del año anterior también acepta la suma con el signo impreso
             (como la lectura 4 para la columna actual). Cambian solo el chequeo del año vecino y "año anterior cargado" de AC Milan 2017-18 y 2018-19 y Lazio 2015-16 y 2016-17: los
             totales que se cargan, idénticos; los 4 pasan de cola a ok
+            To-do 298 ah, SUBTOTAL CON HIJOS: al decidir si un total es la suma de lo de arriba (solo en la decisión final, después de los escalones previos), un subtotal con 2 hijas o más
+            (que detallan_a él) que suman su importe cuenta como componente: las hijas no están en la lista de renglones y sin esto "Total Ertrag" de Basel (38,2 M) se contaba además de
+            sus componentes (ingresos 76,4 M). Medido en 725 documentos (los 722 de la lista de prueba más los 3 Basel): 722 idénticos; cambian Basel 2005, 2009 y 2012 (siguen en cola por la
+            fila "Verlustabdeckung", otro tema). La primera versión, que tocaba también los escalones previos, cambiaba Parma 2016, Sassuolo 2018 y Milan 2020-21: no entró
             To-do 232 m, ESCALÓN "presentación distinta": si el año vecino da distinto y la diferencia es exactamente UNA fila de gasto (no un
             total) de uno de los dos documentos, el chequeo queda sin decidir (uno la netea), sin casos en la cola. Olympiacos 2020/2021,
             Cuiabá 2022/2023; medido en los 112 casos de año vecino de la cola: 5 aciertos, 0 errores
