@@ -1,0 +1,135 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md",
+ "mdSha1": "8644564e65a52d6de51099f66f50725f59c188bf",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T11:17:36.570Z",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    104,
+    123
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    138,
+    168
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    178,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    333,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    394,
+    425
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    471,
+    474
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    488,
+    491
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    495,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    506,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    518,
+    523
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b4"
+ ],
+ "notas_gastos": [
+  "b4",
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2012",
+ "columna_anterior": "2011",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro 'Resultatregnskap 2012' de la memoria (b4) como desglose de ingresos y gastos del estado b1, tomando solo la columna 'Regnskap 31.12.12'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Salgsinntekt",
+   "texto": "b4 abre ingresos (Tilskudd FFK Sport ASA, Grasrotandel...) y gastos, pero tiene columnas de presupuesto y desvío que no se cargan.",
+   "bloques": [
+    "b4",
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que el documento no tiene ingresos de Televisión ni de Estadio (Billettinntekter en 0 en b4) y no hay más cuadros que los abran?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Billettinntekter",
+   "texto": "Los ingresos deportivos están en FFK Sport AS (no consolidada); el club solo recibe el 'Tilskudd FFK Sport ASA'.",
+   "bloques": [
+    "b4",
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado individual del club (no consolida FFK Sport AS ni Fredrikstad Stadion AS, regla de pequeñas empresas). b1 es el resultatregnskap oficial; b4 el detalle de la memoria con presupuesto. No hay filas de TV ni estadio: los ingresos de partido van en FFK Sport AS. b10 detalla honorarios de auditoría/jurídicos."
+}

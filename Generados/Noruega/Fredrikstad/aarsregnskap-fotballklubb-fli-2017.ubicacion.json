@@ -1,0 +1,167 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2017.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2017.md",
+ "mdSha1": "cc1732f24c7865527ddebf8cbd5bc817b0f76473",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T03:56:16.342Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    105,
+    129
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    145,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    185,
+    204
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    533,
+    551
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    559,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    591,
+    611
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    685,
+    691
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    697,
+    699
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    705,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    713,
+    717
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    729,
+    737
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    741,
+    747
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    761,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    774,
+    776
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    782,
+    786
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    794,
+    798
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b7"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, versión Brønnøysund del mismo estado); el estado de pág. 14 no indica escala, se asume en NOK unidades",
+ "moneda": "NOK",
+ "columna_ejercicio": "2017",
+ "columna_anterior": "2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el estado de resultados de pág. 2 (b1), por ser una copia del registro (Brønnøysund) del mismo estado de pág. 14 (b4)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 y b4 parecen el mismo resultatregnskap de Fredrikstad Fotballklubb 2017; se carga uno solo.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estados individuales de Fredrikstad Fotballklubb (no hay consolidado; FFK Sport AS y Aristokraten AS son filiales en Note 4). b1 (pág. 2) es la versión del registro del mismo estado de resultados que b4 (pág. 14). Note 3 (b7) desglosa los gastos de personal. Los cuadros de activo fijo/spillerstall, balance, patrimonio, deudas y filiales no se eligen."
+}

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.pdf",
  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.md",
- "generado": "2026-10-19T00:02:20.871Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-19T11:16:41.907Z",
+ "estado": "ok",
+ "clubId": "fredrikstad-no",
  "year": 2018,
  "escala": {
   "valor": "unidades",
@@ -23,10 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "b96ae0c",
-  "dd23702"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,14 +41,19 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 22.903598 - gastos 22.905462 ± financiero 1.3336 ± impuesto 0 no da el impreso -1.148565",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 0.0000010000000025822686
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "ok": true,
+   "detalle": "la columna 2017 de este documento suma ingresos 28.452409; el sitio tiene 28.452409"
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2017: 28.452409 en aarsregnskap-fotballklubb-fli-2017.pdf y 28.452409 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
@@ -68,7 +70,7 @@
   "resultadoImpreso": -1.148565,
   "resultadoParaCargar": -1.148565,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo"
  },
  "lineas": [
   {
@@ -137,7 +139,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": "rótulo",
   "impuesto": 1
  },
  "financiero": [
@@ -148,7 +150,7 @@
   },
   {
    "etiqueta": "Annen finanskostnad",
-   "M": 1.24015,
+   "M": -1.24015,
    "linea": 545
   }
  ],

@@ -1,0 +1,516 @@
+{
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md",
+ "generatedAt": "2026-10-19T11:18:27.725Z",
+ "rubrosHuella": "a9b7ed14ad9c194115d8ac92c533a538b4a229d9",
+ "rubros": [
+  {
+   "label": "Diverseinntekter",
+   "lado": "revenue",
+   "page": 9,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Medlemskontingent",
+   "lado": "revenue",
+   "page": 9,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "GRASROTANDEL",
+   "lado": "revenue",
+   "page": 9,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Jeg er med",
+   "lado": "revenue",
+   "page": 9,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Spilleautomater",
+   "lado": "revenue",
+   "page": 9,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Tilskudd FFK Sport ASA",
+   "lado": "revenue",
+   "page": 9,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Tilskudd, gaver",
+   "lado": "revenue",
+   "page": 9,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Treningsavgifter",
+   "lado": "revenue",
+   "page": 9,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "member_dues",
+   "confidence": 0.33,
+   "desdeCache": true
+  },
+  {
+   "label": "Adm. kostnader",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Utsmykning stadion",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.48
+    ],
+    [
+     "match_organisation_expense",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1175
+  },
+  {
+   "label": "Jeg er med!",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 874
+  },
+  {
+   "label": "Lønn Gatelag",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "youth_other_sports_expense",
+     0.11
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Reiseutgifter",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Lønn/honorar",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "wages_squad",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Sosiale tiltak, frivillige",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Kurs",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "wages_squad",
+     0.73
+    ],
+    [
+     "youth_other_sports_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1185
+  },
+  {
+   "label": "Revisjonsbistand",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Arrangement gatelag",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "match_organisation_expense",
+     0.22
+    ],
+    [
+     "youth_other_sports_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Kostnader gatelag",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "other_expenses",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ],
+    [
+     "youth_other_sports_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Gaver/medaljer",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Juridisk bistand",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Kontorkostnader",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Revisjonshonorar",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Representasjon/møter",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Tap på krav",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Ikke fradragsber. Kostn",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Utgifter Sport",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1047
+  }
+ ]
+}

@@ -38,6 +38,7 @@ window.RANKINGS_INDICE = {
   "nl-eerstedivisie": [2025,10,null],
   "nl-eredivisie": [2025,14,null],
   "no-1divisjon": [2025,1,null],
+  "no-2divisjon": [2018,1,null],
   "no-eliteserien": [2025,4,null],
   "pe-liga1": [2024,1,null],
   "pt-liga3": [2023,4,null],

@@ -1,0 +1,192 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.md",
+ "generado": "2026-10-19T11:14:38.832Z",
+ "estado": "ok",
+ "clubId": "fredrikstad-no",
+ "year": 2013,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2013-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "15.580961 = 15.580961",
+   "suma": 15.580961,
+   "impreso": 15.580960999999999
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "34.846049 = 34.846049",
+   "suma": 34.846048999999994,
+   "impreso": 34.846049
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 7.105427357601002e-15
+  },
+  {
+   "nombre": "documento del año 2014",
+   "ok": true,
+   "detalle": "ingresos de 2013: 15.580961 en este documento y 15.601441 en aarsregnskap-fotballklubb-fli-2014.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2012",
+   "ok": true,
+   "detalle": "ingresos de 2012: 23.063141 en aarsregnskap-fotballklubb-fli-2012.pdf y 23.063141 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2012: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Annen driftskostnad\" no suma el renglón (0.09 contra 17.181495, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (perimetro, \"SUM DRIFTSINNTEKTER\"): corregir no, en aarsregnskap-fotballklubb-fli-2013.pdf",
+  "duda de localizar que no afecta la carga: b12 parece repetir el estado de b1 dentro del årsmøtedokument.",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en aarsregnskap-fotballklubb-fli-2013.pdf",
+  "duda de extraer que no afecta la carga: Nota 3 (L1811) informa honorarios de auditoría, referenciada por 'Annen driftskostnad' (nota 3,7), pero es solo un detalle parcial sin año anterior."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Annen driftskostnad",
+   "suma": 0.09,
+   "objetivo": 17.181495
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Annen driftskostnad",
+   "suma": 0.09,
+   "objetivo": 17.181495
+  }
+ ],
+ "totales": {
+  "ingresos": 15.580961,
+  "gastos": 34.846049,
+  "financiero": 1.625359,
+  "impuesto": 0,
+  "resultadoImpreso": -17.953359,
+  "resultadoParaCargar": -17.953359,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Salgsinntekt",
+   "lado": "ingreso",
+   "M": 14.289455,
+   "pagina": 2,
+   "linea": 107,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftsinntekt",
+   "lado": "ingreso",
+   "M": 1.291506,
+   "pagina": 2,
+   "linea": 108,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 2.253392,
+   "pagina": 2,
+   "linea": 111,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 13.093523,
+   "pagina": 41,
+   "linea": 1799,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 1.883764,
+   "pagina": 41,
+   "linea": 1800,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 0.182305,
+   "pagina": 41,
+   "linea": 1801,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre ytelser",
+   "lado": "gasto",
+   "M": 0.163735,
+   "pagina": 41,
+   "linea": 1802,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning",
+   "lado": "gasto",
+   "M": 0.087835,
+   "pagina": 2,
+   "linea": 113,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 17.181495,
+   "pagina": 2,
+   "linea": 114,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 1.468544,
+   "linea": 118
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": -0.156815,
+   "linea": 120
+  }
+ ],
+ "impuesto": []
+}

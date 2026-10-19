@@ -1,0 +1,167 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2014.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2014.md",
+ "mdSha1": "817981978e3e63ddfd1e7f21c9b57003070fb16b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T03:53:45.018Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    104,
+    130
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    164,
+    186
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    192,
+    200
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    208,
+    212
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    230,
+    250
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    305,
+    311
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    317,
+    320
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 6,
+   "lineas": [
+    324,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 6,
+   "lineas": [
+    333,
+    338
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 7,
+   "lineas": [
+    350,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 7,
+   "lineas": [
+    361,
+    367
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 7,
+   "lineas": [
+    375,
+    377
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 8,
+   "lineas": [
+    389,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    734,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    772,
+    795
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    803,
+    820
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2014",
+ "columna_anterior": "2013",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el resultatregnskap repetido en el documento de årsmøte (b14, pág. 16) por ser copia de b1?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b14 parece reproducir el mismo estado de resultados 2014 de b1 dentro de los documentos de la asamblea anual.",
+   "bloques": [
+    "b14",
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual de Fredrikstad Fotballklubb en b1 (pág. 2), en NOK unidades. b6 desglosa los gastos de personal (Lønnskostnader). b7 (remuneración de directivos) y b8 (honorarios del auditor) son detalles informativos y no se eligen. b9 corresponde a filiales y no implica un consolidado. Los bloques b2-b5 y b15-b16 son balance, y b10-b13 son notas de activos y patrimonio."
+}

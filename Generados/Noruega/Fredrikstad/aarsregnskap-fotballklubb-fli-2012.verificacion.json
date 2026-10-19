@@ -1,0 +1,328 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md",
+ "generado": "2026-10-19T11:19:51.797Z",
+ "estado": "ok",
+ "clubId": "fredrikstad-no",
+ "year": 2012,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2012-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "23.063141 = 23.063141",
+   "suma": 23.063140999999998,
+   "impreso": 23.063140999999998
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "23.55486 = 23.55486",
+   "suma": 23.55486,
+   "impreso": 23.554859999999998
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0012939999999967977
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2013",
+   "ok": true,
+   "detalle": "ingresos de 2012: 23.063141 en este documento y 23.063141 en aarsregnskap-fotballklubb-fli-2013.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2011: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar que no afecta la carga: Los ingresos deportivos están en FFK Sport AS (no consolidada); el club solo recibe el 'Tilskudd FFK Sport ASA'.",
+  "duda de extraer que no afecta la carga: El cuadro b4 no indica a qué renglón del estado corresponde cada gasto; la suma L354+L355+L358 coincide con Lønnskostnad (L110).",
+  "duda de extraer que no afecta la carga: Signos de finanzas invertidos entre b1 L115 y b4 L382; se transcribe tal cual."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 23.063141,
+  "gastos": 23.55486,
+  "financiero": -1.026647,
+  "impuesto": 0,
+  "resultadoImpreso": -1.51966,
+  "resultadoParaCargar": -1.51966,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Diverseinntekter",
+   "lado": "ingreso",
+   "M": 0.000354,
+   "pagina": 9,
+   "linea": 336,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Medlemskontingent",
+   "lado": "ingreso",
+   "M": 0.08649,
+   "pagina": 9,
+   "linea": 339,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "GRASROTANDEL",
+   "lado": "ingreso",
+   "M": 0.677145,
+   "pagina": 9,
+   "linea": 340,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Jeg er med",
+   "lado": "ingreso",
+   "M": 1.148488,
+   "pagina": 9,
+   "linea": 341,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Spilleautomater",
+   "lado": "ingreso",
+   "M": 0.230242,
+   "pagina": 9,
+   "linea": 343,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Tilskudd FFK Sport ASA",
+   "lado": "ingreso",
+   "M": 19.769761,
+   "pagina": 9,
+   "linea": 345,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Tilskudd, gaver",
+   "lado": "ingreso",
+   "M": 1.088161,
+   "pagina": 9,
+   "linea": 346,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Treningsavgifter",
+   "lado": "ingreso",
+   "M": 0.0625,
+   "pagina": 9,
+   "linea": 347,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Lønn/honorar",
+   "lado": "gasto",
+   "M": 0.063134,
+   "pagina": 9,
+   "linea": 354,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Lønn Gatelag",
+   "lado": "gasto",
+   "M": 0.33521,
+   "pagina": 9,
+   "linea": 355,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Sosiale tiltak, frivillige",
+   "lado": "gasto",
+   "M": 0.03355,
+   "pagina": 9,
+   "linea": 358,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Utsmykning stadion",
+   "lado": "gasto",
+   "M": 0.016809,
+   "pagina": 9,
+   "linea": 349,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Adm. kostnader",
+   "lado": "gasto",
+   "M": 0.045,
+   "pagina": 9,
+   "linea": 350,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Jeg er med!",
+   "lado": "gasto",
+   "M": 0.071307,
+   "pagina": 9,
+   "linea": 351,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Kurs",
+   "lado": "gasto",
+   "M": 0.01183,
+   "pagina": 9,
+   "linea": 352,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Reiseutgifter",
+   "lado": "gasto",
+   "M": 0.035545,
+   "pagina": 9,
+   "linea": 353,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Arrangement gatelag",
+   "lado": "gasto",
+   "M": 0.078702,
+   "pagina": 9,
+   "linea": 356,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Kostnader gatelag",
+   "lado": "gasto",
+   "M": 0.17696,
+   "pagina": 9,
+   "linea": 357,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Revisjonshonorar",
+   "lado": "gasto",
+   "M": 0.05,
+   "pagina": 12,
+   "linea": 518,
+   "origen": "nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\""
+  },
+  {
+   "etiqueta": "Revisjonsbistand",
+   "lado": "gasto",
+   "M": 0.0265,
+   "pagina": 12,
+   "linea": 520,
+   "origen": "nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\""
+  },
+  {
+   "etiqueta": "Juridisk bistand",
+   "lado": "gasto",
+   "M": 0.08542,
+   "pagina": 12,
+   "linea": 522,
+   "origen": "nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\""
+  },
+  {
+   "etiqueta": "Kontorkostnader",
+   "lado": "gasto",
+   "M": 0.00644,
+   "pagina": 9,
+   "linea": 361,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Gaver/medaljer",
+   "lado": "gasto",
+   "M": 0.017425,
+   "pagina": 9,
+   "linea": 365,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Representasjon/møter",
+   "lado": "gasto",
+   "M": 0.0556,
+   "pagina": 9,
+   "linea": 366,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Ikke fradragsber. Kostn",
+   "lado": "gasto",
+   "M": 0.10025,
+   "pagina": 9,
+   "linea": 375,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Tap på krav",
+   "lado": "gasto",
+   "M": 1.188489,
+   "pagina": 9,
+   "linea": 376,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Utgifter Sport",
+   "lado": "gasto",
+   "M": 21.156689,
+   "pagina": 9,
+   "linea": 377,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": -1.027294,
+   "linea": 115
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": null,
+   "linea": 117
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": 0.000647,
+   "linea": 118
+  }
+ ],
+ "impuesto": []
+}

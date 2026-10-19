@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2014.md",
+  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2014.pdf",
+  "club": "fredrikstad-no",
+  "year": 2014,
+  "generatedAt": "2026-10-19T03:56:51.322Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Salgsinntekt",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        28.816918
+      ],
+      "glosa": "Ingresos por ventas"
+    },
+    {
+      "label": "Annen driftsinntekt",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        1.547231
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Varekostnad",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        3.170397
+      ],
+      "glosa": "Coste de las ventas"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        12.876374
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        1.888163
+      ],
+      "glosa": "Seguridad social a cargo de la empresa"
+    },
+    {
+      "label": "Pensjonskostnader",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.249785
+      ],
+      "glosa": "Costes de pensiones"
+    },
+    {
+      "label": "Andre ytelser",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.44589
+      ],
+      "glosa": "Otras prestaciones"
+    },
+    {
+      "label": "Avskrivning",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        1.59183
+      ],
+      "glosa": "Amortización"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        10.136399
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2015.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2015.md",
+ "mdSha1": "c9953085549f4d19de997966d1035f42bca8369a",
+ "ubicacionSha1": "8172679586f6c1cd6e93468dd7e8b965d90b8e58",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T03:55:26.622Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b7"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; los importes parecen en unidades (NOK)."
+  },
+  {
+   "bloque": "b7",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; los importes coinciden con el estado (L775 = L626)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 621,
+   "etiqueta": "Salgsinntekt",
+   "actual": "28 043 511",
+   "anterior": "29 353 601",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 622,
+   "etiqueta": "Annen driftsinntekt",
+   "actual": "4 134 031",
+   "anterior": "1 630 563",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 623,
+   "etiqueta": "Sum driftsinntekter",
+   "actual": "32 177 542",
+   "anterior": "30 984 164",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 625,
+   "etiqueta": "Varekostnad",
+   "actual": "4 018 900",
+   "anterior": "3 170 397",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 626,
+   "etiqueta": "Lønnskostnad",
+   "actual": "16 994 686",
+   "anterior": "15 460 212",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 627,
+   "etiqueta": "Avskrivning",
+   "actual": "169 916",
+   "anterior": "1 591 830",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 628,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "10 996 404",
+   "anterior": "10 756 414",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 629,
+   "etiqueta": "Sum driftskostnader",
+   "actual": "32 179 906",
+   "anterior": "30 978 853",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 630,
+   "etiqueta": "Driftsresultat",
+   "actual": "-2 364",
+   "anterior": "5 311",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 632,
+   "etiqueta": "Annen finansinntekt",
+   "actual": "48 832",
+   "anterior": "49 912",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 633,
+   "etiqueta": "Annen finanskostnad",
+   "actual": "11 356",
+   "anterior": "687",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 634,
+   "etiqueta": "Netto finansposter",
+   "actual": "37 476",
+   "anterior": "49 225",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 635,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "35 112",
+   "anterior": "54 536",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 636,
+   "etiqueta": "Årsresultat",
+   "actual": "35 112",
+   "anterior": "54 536",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 638,
+   "etiqueta": "Overføringer annen egenkapital",
+   "actual": "35 112",
+   "anterior": "54 536",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 771,
+   "etiqueta": "Lønninger",
+   "actual": "14 267 826",
+   "anterior": "12 876 374",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b7",
+   "linea": 772,
+   "etiqueta": "Arbeidsgiveravgift",
+   "actual": "2 052 939",
+   "anterior": "1 888 163",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b7",
+   "linea": 773,
+   "etiqueta": "Pensjonskostnader",
+   "actual": "211 498",
+   "anterior": "249 785",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b7",
+   "linea": 774,
+   "etiqueta": "Andre ytelser",
+   "actual": "462 423",
+   "anterior": "445 890",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b7",
+   "linea": 775,
+   "etiqueta": "Sum",
+   "actual": "16 994 686",
+   "anterior": "15 460 212",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 623,
+  "actual": "32 177 542"
+ },
+ "total_gastos": {
+  "linea": 629,
+  "actual": "32 179 906"
+ },
+ "resultado": {
+  "linea": 636,
+  "actual": "35 112",
+  "anterior": "54 536"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b4 y b7 como unidades (NOK) aunque el documento no imprime la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ninguna frase indica la escala (L618, L769); por la magnitud parecen coronas en unidades.",
+   "bloques": [
+    "b4",
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Annen finanskostnad (L633) figura en positivo pero se resta en Netto finansposter. No hay impuesto (resultado antes y después iguales). Nota 3 solo desglosa Lønnskostnad en lo transcripto."
+}

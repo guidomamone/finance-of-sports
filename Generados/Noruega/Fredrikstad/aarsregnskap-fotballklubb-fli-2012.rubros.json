@@ -1,0 +1,280 @@
+{
+  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md",
+  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf",
+  "club": "fredrikstad-no",
+  "year": 2012,
+  "generatedAt": "2026-10-19T11:18:12.485Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Diverseinntekter",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.000354
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Medlemskontingent",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.08649
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "GRASROTANDEL",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.677145
+      ],
+      "glosa": "Ingresos por lotería comunitaria (Grasrotandelen)"
+    },
+    {
+      "label": "Jeg er med",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        1.148488
+      ],
+      "glosa": "Campaña «Yo participo»"
+    },
+    {
+      "label": "Spilleautomater",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.230242
+      ],
+      "glosa": "Máquinas recreativas"
+    },
+    {
+      "label": "Tilskudd FFK Sport ASA",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        19.769761
+      ],
+      "glosa": "Subvención de FFK Sport ASA"
+    },
+    {
+      "label": "Tilskudd, gaver",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        1.088161
+      ],
+      "glosa": "Subvenciones y donaciones"
+    },
+    {
+      "label": "Treningsavgifter",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.0625
+      ],
+      "glosa": "Cuotas de entrenamiento"
+    },
+    {
+      "label": "Lønn/honorar",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.063134
+      ],
+      "glosa": "Sueldos y honorarios"
+    },
+    {
+      "label": "Lønn Gatelag",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.33521
+      ],
+      "glosa": "Sueldos del equipo Gatelag"
+    },
+    {
+      "label": "Sosiale tiltak, frivillige",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.03355
+      ],
+      "glosa": "Actividades sociales y voluntariado"
+    },
+    {
+      "label": "Utsmykning stadion",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.016809
+      ],
+      "glosa": "Acondicionamiento y ambientación del estadio"
+    },
+    {
+      "label": "Adm. kostnader",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.045
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Jeg er med!",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.071307
+      ],
+      "glosa": "Campaña «¡Yo participo!»"
+    },
+    {
+      "label": "Kurs",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.01183
+      ],
+      "glosa": "Cursos y formación"
+    },
+    {
+      "label": "Reiseutgifter",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.035545
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Arrangement gatelag",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.078702
+      ],
+      "glosa": "Eventos del equipo Gatelag"
+    },
+    {
+      "label": "Kostnader gatelag",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.17696
+      ],
+      "glosa": "Gastos del equipo Gatelag"
+    },
+    {
+      "label": "Revisjonshonorar",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\"",
+      "values": [
+        0.05
+      ],
+      "glosa": "Honorarios de auditoría"
+    },
+    {
+      "label": "Revisjonsbistand",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\"",
+      "values": [
+        0.0265
+      ],
+      "glosa": "Asistencia y asesoría de auditoría"
+    },
+    {
+      "label": "Juridisk bistand",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\"",
+      "values": [
+        0.08542
+      ],
+      "glosa": "Asesoría jurídica"
+    },
+    {
+      "label": "Kontorkostnader",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.00644
+      ],
+      "glosa": "Gastos de oficina"
+    },
+    {
+      "label": "Gaver/medaljer",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.017425
+      ],
+      "glosa": "Obsequios y medallas"
+    },
+    {
+      "label": "Representasjon/møter",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.0556
+      ],
+      "glosa": "Gastos de representación y reuniones"
+    },
+    {
+      "label": "Ikke fradragsber. Kostn",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.10025
+      ],
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Tap på krav",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        1.188489
+      ],
+      "glosa": "Pérdidas por insolvencias y créditos incobrables"
+    },
+    {
+      "label": "Utgifter Sport",
+      "lado": "expense",
+      "page": 9,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        21.156689
+      ],
+      "glosa": "Gastos deportivos"
+    }
+  ]
+}

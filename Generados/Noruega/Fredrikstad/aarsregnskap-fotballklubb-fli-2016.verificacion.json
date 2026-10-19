@@ -1,0 +1,157 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md",
+ "generado": "2026-10-19T11:11:25.007Z",
+ "estado": "ok",
+ "clubId": "fredrikstad-no",
+ "year": 2016,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2016-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "33.812973 = 33.812973",
+   "suma": 33.812973,
+   "impreso": 33.812973
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 1.6757428777935957e-15
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2016: 33.801587 en este documento y 33.801587 en aarsregnskap-fotballklubb-fli-2017.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": true,
+   "detalle": "ingresos de 2015: 32.177542 en aarsregnskap-fotballklubb-fli-2015.pdf y 32.177541 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "gastos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Lønnskostnad\" no suma el renglón (19.287753 contra 19.287756, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se carga el estado de resultados de las cuentas firmadas (b4, pág. 13) y se deja afuera la versión de b1 (pág. 2) por ser el mismo estado duplicado?",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-src-FFK_-_Årsmøte_2025.pdf",
+  "duda de extraer que no afecta la carga: Con 4 661 la nota suma 19 287 753 (3 menos que L549, redondeo), así que la cifra parece correcta pese a la gran caída vs 462 423 de 2015."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Lønnskostnad",
+   "suma": 19.287753,
+   "objetivo": 19.287756
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Lønnskostnad",
+   "suma": 19.287753,
+   "objetivo": 19.287756
+  }
+ ],
+ "totales": {
+  "ingresos": 33.801587,
+  "gastos": 33.812973,
+  "financiero": 0.052817,
+  "impuesto": 0,
+  "resultadoImpreso": 0.020569,
+  "resultadoParaCargar": 0.020569,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Annen driftsinntekt",
+   "lado": "ingreso",
+   "M": 33.801587,
+   "pagina": 13,
+   "linea": 546,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 4.006214,
+   "pagina": 13,
+   "linea": 548,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønnskostnad",
+   "lado": "gasto",
+   "M": 19.287756,
+   "pagina": 13,
+   "linea": 549,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Avskrivning",
+   "lado": "gasto",
+   "M": 0.541479,
+   "pagina": 13,
+   "linea": 550,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 9.977524,
+   "pagina": 13,
+   "linea": 551,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 0.042386,
+   "linea": 555
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": -0.010431,
+   "linea": 556
+  }
+ ],
+ "impuesto": []
+}

@@ -113,6 +113,7 @@ const LEAGUES = {
   'nl-eerstedivisie':  { name:'Eerste Divisie',        full:'Eerste Divisie de los Países Bajos',  country:'NL', sport:'futbol', tier:2 },
   'no-eliteserien':    { name:'Eliteserien',           full:'Eliteserien de Noruega',              country:'NO', sport:'futbol', tier:1 },
   'no-1divisjon':      { name:'1. divisjon',           full:'Norwegian First Division (Adeccoligaen/OBOS-ligaen)', country:'NO', sport:'futbol', tier:2 },
+  'no-2divisjon':      { name:'2. divisjon',           full:'Norwegian Second Division (2. divisjon)', country:'NO', sport:'futbol', tier:3 },
   'pt-primeiraliga':   { name:'Primeira Liga',         full:'Primeira Liga de Portugal',           country:'PT', sport:'futbol', tier:1 },
   'pt-ligaportugal2':  { name:'Liga Portugal 2',       full:'Liga Portugal 2',                     country:'PT', sport:'futbol', tier:2 },
   'pt-liga3':          { name:'Liga 3',                full:'Liga 3 de Portugal',                  country:'PT', sport:'futbol', tier:3 },

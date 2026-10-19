@@ -1,0 +1,296 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2014.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2014.md",
+ "mdSha1": "817981978e3e63ddfd1e7f21c9b57003070fb16b",
+ "ubicacionSha1": "dd5bee13dd07c736a1b88135768f48d6693d561d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T03:54:30.124Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b6"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L104: Beløp i: NOK"
+  },
+  {
+   "bloque": "b6",
+   "escala": "no se sabe",
+   "evidencia": "Nota 3 no indica escala; Sum 15 460 212 coincide con Lønnskostnad del estado en NOK (unidades)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 108,
+   "etiqueta": "Salgsinntekt",
+   "actual": "28 816 918",
+   "anterior": "14 309 935",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 109,
+   "etiqueta": "Annen driftsinntekt",
+   "actual": "1 547 231",
+   "anterior": "1 291 506",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 110,
+   "etiqueta": "Sum inntekter",
+   "actual": "30 364 149",
+   "anterior": "15 601 441",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 112,
+   "etiqueta": "Varekostnad",
+   "actual": "3 170 397",
+   "anterior": "2 260 157",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 113,
+   "etiqueta": "Lønnskostnad",
+   "actual": "15 460 212",
+   "anterior": "15 316 563",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 114,
+   "etiqueta": "Avskrivning",
+   "actual": "1 591 830",
+   "anterior": "87 835",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 115,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "10 136 399",
+   "anterior": "17 201 974",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 116,
+   "etiqueta": "Sum kostnader",
+   "actual": "30 358 838",
+   "anterior": "34 866 529",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 117,
+   "etiqueta": "Driftsresultat",
+   "actual": "5 311",
+   "anterior": "-19 265 088",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 119,
+   "etiqueta": "Annen finansinntekt",
+   "actual": "49 912",
+   "anterior": "1 468 544",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 120,
+   "etiqueta": "Sum finansinntekter",
+   "actual": "49 912",
+   "anterior": "1 468 544",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 121,
+   "etiqueta": "Annen finanskostnad",
+   "actual": "687",
+   "anterior": "156 815",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 122,
+   "etiqueta": "Sum finanskostnader",
+   "actual": "687",
+   "anterior": "156 815",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 123,
+   "etiqueta": "Netto finans",
+   "actual": "49 225",
+   "anterior": "1 311 729",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 124,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "54 536",
+   "anterior": "-17 953 359",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 125,
+   "etiqueta": "Ordinært resultat etter skattekostnad",
+   "actual": "54 536",
+   "anterior": "-17 953 359",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 126,
+   "etiqueta": "Årsresultat",
+   "actual": "54 536",
+   "anterior": "-17 953 359",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 127,
+   "etiqueta": "Totalresultat",
+   "actual": "54 536",
+   "anterior": "-17 953 359",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 129,
+   "etiqueta": "Overføringer annen egenkapital",
+   "actual": "54 536",
+   "anterior": "-17 953 359",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 130,
+   "etiqueta": "Sum overføringer og disponeringer",
+   "actual": "54 536",
+   "anterior": "-17 953 359",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 307,
+   "etiqueta": "Lønninger",
+   "actual": "12 876 374",
+   "anterior": "13 004 612",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b6",
+   "linea": 308,
+   "etiqueta": "Arbeidsgiveravgift",
+   "actual": "1 888 163",
+   "anterior": "1 883 764",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b6",
+   "linea": 309,
+   "etiqueta": "Pensjonskostnader",
+   "actual": "249 785",
+   "anterior": "182 305",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b6",
+   "linea": 310,
+   "etiqueta": "Andre ytelser",
+   "actual": "445 890",
+   "anterior": "245 881",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b6",
+   "linea": 311,
+   "etiqueta": "Sum",
+   "actual": "15 460 212",
+   "anterior": "15 316 562",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 110,
+  "actual": "30 364 149"
+ },
+ "total_gastos": {
+  "linea": 116,
+  "actual": "30 358 838"
+ },
+ "resultado": {
+  "linea": 126,
+  "actual": "54 536",
+  "anterior": "-17 953 359"
+ },
+ "dudas": [],
+ "observaciones": "Sin impuesto a las ganancias (resultado antes y después de impuestos iguales). En 2013 la Sum de Nota 3 (15 316 562) difiere en 1 de Lønnskostnad del estado (15 316 563): redondeo. Escala de b6 inferida como NOK por coincidencia del total con el estado."
+}
