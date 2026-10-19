@@ -205,6 +205,32 @@ export function periodoDe(mdText, nombreArchivo = '') {
         : { tipo: 'intermedio', meses: null, cierre: masCitado, evidencia: { pagina: l.pagina, texto: l.texto.slice(0, 200) }, confianza: 'media' };
     }
   }
+  // 3b. (to-do 298 f) EL PERÍODO QUE DECLARA EL FORMULARIO. Las cuentas NBB belgas y las estonias dicen el ejercicio en una frase fija, en
+  // celdas de una tabla o en prosa, que los pasos de arriba no ven (solo leen títulos fuera de tablas): "| met betrekking tot het boekjaar
+  // dat de periode dekt van | 01-07-2018 | tot | 30-06-2019 |" (Lommel SK 2019), "| ... dekt van | 01-07-2020 tot 30-06-2021 |" (RWDM 2021),
+  // "... dekt van 29-06-2018 tot 30-06-2019" en prosa (Beerschot 2019 -correction), "exercice couvrant la période du ... au ...", y en
+  // Estonia "| aruandeaasta algus: | 09.01.2023 |" y "| aruandeaasta lõpp: | 31.12.2023 |" (Harju JK Laagri 2023, primer ejercicio). Sin esto
+  // el cierre salía de la fecha más citada, que puede ser la de la asamblea (Lierse SK 2023: 28-10-2023, .md L27, contra 30-06-2023, L33) o el
+  // inicio del ejercicio (Beerschot 2019 -correction: 29-06-2018). Solo si los pasos 1-3 no decidieron; COMPUERTA: la frase, fin de mes al
+  // final, inicio antes del fin, 1 a 18 meses, y una sola fecha de fin entre todas las frases (el "vorige boekjaar" no es esta frase).
+  if (!res) {
+    const dia = (f) => Date.UTC(f.a, f.m - 1, f.d) / 864e5;
+    const FRASES = [/boekjaar dat de periode dekt van/, /exercice couvrant la periode du/];
+    const cands = []; let ini = null; let fin = null;
+    for (const p of pags) for (const raw of p.body.split('\n')) {
+      const tx = raw.replace(/\|/g, ' ').replace(/[*_]/g, ' ').replace(/\s+/g, ' ').trim(); const t = norm(tx);
+      const k = FRASES.map((re) => t.search(re)).find((x) => x >= 0);
+      if (k !== undefined) { const fs = fechasDe(tx).filter((f) => f.i >= k); if (fs.length >= 2) cands.push({ a: fs[0], b: fs[1], pagina: p.n, texto: tx }); }
+      if (/aruandeaasta algus/.test(t) && fechasDe(tx).length === 1) ini = { f: fechasDe(tx)[0], pagina: p.n, texto: tx };
+      if (/aruandeaasta lopp/.test(t) && fechasDe(tx).length === 1) fin = { f: fechasDe(tx)[0], pagina: p.n, texto: tx };
+    }
+    if (ini && fin) cands.push({ a: ini.f, b: fin.f, pagina: fin.pagina, texto: `${ini.texto} / ${fin.texto}` });
+    const validos = cands.filter(({ a, b }) => finDeMes(b) && dia(b) > dia(a) && (dia(b) - dia(a) + 1) / 30.44 >= 0.5 && (dia(b) - dia(a) + 1) / 30.44 <= 18.5);
+    if (validos.length && new Set(validos.map((c) => iso(c.b))).size === 1) {
+      const c = validos[0]; const n = Math.max(1, Math.round((dia(c.b) - dia(c.a) + 1) / 30.44));
+      res = { tipo: n === 12 ? 'anual' : tipoDeMeses(n), meses: n, inicio: iso(c.a), cierre: iso(c.b), cierreDe: 'período del formulario (to-do 298 f)', evidencia: { pagina: c.pagina, texto: c.texto.slice(0, 200) }, confianza: 'alta' };
+    }
+  }
   // 4. anual por descarte
   if (!res) res = { tipo: 'anual', meses: 12, cierre: masCitado, evidencia: null, confianza: masCitado ? 'media' : 'baja' };
   if (res.cierre && res.cierre > TOPE) res.cierre = null; // la compuerta, también para lo leído en los pasos 1-3
