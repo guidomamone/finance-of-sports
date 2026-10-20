@@ -26,7 +26,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **A. Cerrar lo abierto (en marcha)**
 * 261: Noruega, Molde FLI 2008-2024 (lote 116, corriendo) --> Onboarding 4
-* 255 fase 2: aplicar tus respuestas; las propuestas de skill te llegan para el ok de una sola lectura --> Docs 1
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
@@ -54,7 +53,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **F. Orden de la casa**
 * 326: check-in de outreach, el 2026-10-24
-* 257: skills que faltan (después del 255)
+* 255: los 12 chequeos automatizables del inventario, a decidir cuáles (Pipeline)
+* 257: skills que faltan
 * 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes del Reino Unido corriendo
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
 * 51: proceso de mails a clubes
@@ -170,8 +170,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
    (`Admin/fuentes-externas.md`, "Consecuencias").
-255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
-   lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
+255. CONSOLIDAR LAS REGLAS: fases 1 y 2 hechas (2026-10-20). Queda decidir cuáles de los 12 chequeos automatizables (sección 4 de
+   `Admin/consolidar-reglas-255.md`) se hacen, como hook o en audit.js (los hace Pipeline).
 257. SKILLS QUE FALTAN (mejoras de proyecto, pedido de Guido 2026-10-16). Producto/pantalla (mockup, ok, implementación, chequeo en celular; hoy mezclado en PANTALLA.md); contenido y
    difusión (un año cargado → hilo o post con el dato verificado y el link a la fuente); contrato de datos/API (esquema público y qué lo
    rompe); deploy/release (qué chequear antes de pushear y cómo verificar producción).

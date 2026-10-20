@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 852 — Reglas consolidadas: 27 cambios en skills, CLAUDE.md y memorias (2026-10-20) [255]
+
+- Aplicadas las 27 propuestas aprobadas del inventario del 255: el push no se pide, cada sesión corre sus lotes, HALLAZGOS solo para lo
+  que no frena, toda edición de skill se le muestra antes a Guido, CONVENCIONES se lee cuando la skill lo pide, la regla de historia y
+  contadores en un solo lugar (CLAUDE.md). Tres memorias borradas y dos reescritas.
+
 ## Versión 851 — Beşiktaş 2018: nota con subtotal (2026-10-20) [besiktas-tr]
 
 - `tools/verificar.mjs`: un renglón que sus hijas directas no cierran se busca en una nota con subtotal (Beşiktaş 2018, nota 18).
