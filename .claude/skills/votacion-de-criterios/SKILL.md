@@ -39,6 +39,9 @@ Un criterio de más arriba pesa más que todos los de abajo juntos. Un precedent
 
 ## 4. Cómo se cuenta
 
+- **Antes de contar: ¿cuánto mueve?** Para cada opción, medí cuánto cambia el dato frente a la otra: la diferencia, sobre el total de
+  ingresos o de gastos del año. Si es 1% o menos y no le cambia el signo al resultado, no se vota: se elige la opción más fiel al documento
+  (criterio 5), se anota con la medida y se carga. Si es más, votan tres, para que siempre haya desempate.
 - **Decidido:** 3 a 0, o 2 a 1 si el voto en minoría no tiene ningún criterio 1 a 3 a su favor.
 - **A Guido:** empate, un 2 a 1 con un criterio 1 a 3 en minoría, o una opción que cambia más de 10 años ya cargados. Se le manda a la
   principal en un solo mensaje: el caso, las opciones, los tres votos con sus citas y la recomendación.

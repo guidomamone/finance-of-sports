@@ -17,6 +17,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 868 — Materialidad en las votaciones; ningún año frena sin pasar por la Auditora (2026-10-20) [238]
+
+- Skill `votacion-de-criterios`: si la diferencia entre opciones es 1% o menos del total y no cambia el signo del resultado, no se vota (la opción
+  más fiel al documento). CONVENCIONES y `club-or-year-onboarding`: antes de dejar un año frenado por datos, la Auditora lo clasifica (precedente,
+  votación o club). Textos aprobados por Guido.
+- Merge de la Auditora: triage de la cola y de `dudas-por-club.md` (`Admin/registros/triage-*-2026-10-20.md`); Onboarding 4 aplica los (a).
+- Merge de Onboarding 4: Sporting 2008-10, Rapid Wien 2016-17 y Vålerenga 2022 y 2023 (AS más Elite).
+
 ## Versión 867 — El tablero cuenta bien lo cargado (2026-10-20) [238]
 
 - `tools/estado.mjs` compara el `cargado` del registro con `quien.mjs --pendientes` y lo regenera si no coincide: 1.852 ejercicios cargados

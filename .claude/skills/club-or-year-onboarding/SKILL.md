@@ -53,7 +53,9 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 7. Lo que frena se resuelve en este orden: un ajuste manual (gratis, sin preguntar); la cola, que contesta un subagente (ver "La cola" en la sección 4); si es
    un defecto de un script, se anota en `Admin/registros/frenados-por-script.jsonl` (pdf, defecto, detalle, sesión, fecha), se deja ese
    documento y se sigue con el resto. Lo arregla la sesión de pipeline, la única que edita `tools/` (`Admin/CONVENCIONES.md`, "ONBOARDING
-   CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA"). En un caso de categoría de la cola, `descartar` se rechaza: para sacar la fila es
+   CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA"). Si un año sigue frenado por datos (no cierra, casos de la cola sin precedente, o iría a
+   `Admin/dudas-por-club.md`), antes de dejarlo el caso va a la Auditora, que lo clasifica: (a) ajuste con precedente, que Onboarding carga;
+   (b) criterio nuevo, a votación; (c) recién ahí, al club (`Admin/CONVENCIONES.md`, «Antes de frenar un año, la Auditora»). En un caso de categoría de la cola, `descartar` se rechaza: para sacar la fila es
    `corregir --valor no_es_rubro`, y vale solo para ese documento. Un ajuste manual lo firma quien corre `tools/ajustes.mjs` (Claude si lo
    corre Claude Code, Guido si no; `--autor` lo fuerza).
 8. Escribir: lo que el lote dejó listo entra con `--cargar`. Lo que no, a mano: `node tools/cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año (club nuevo: `alta-club.mjs` en el mismo
