@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
+  "club": "lierse-kempenzonen",
+  "year": 2019,
+  "generatedAt": "2026-10-20T20:02:22.459Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Uitzonderlijke opbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Ingresos excepcionales"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.996766
+      ],
+      "glosa": "Remuneraciones y beneficios sociales directos"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.163692
+      ],
+      "glosa": "Aportaciones patronales a la seguridad social"
+    },
+    {
+      "label": "Andere personeelskosten",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.202603
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.094099
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.018143
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Uitzonderlijke kosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Gastos excepcionales"
+    }
+  ]
+}

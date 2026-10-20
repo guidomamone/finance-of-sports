@@ -1,0 +1,146 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md",
+ "generado": "2026-10-20T20:02:22.458Z",
+ "scriptHuella": "1b9f223960d0",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "c1f86a0",
+  "87cd805"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 0 - gastos 1.475303 ± financiero 0.011281 ± impuesto 0 no da el impreso -0.628623",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "códigos NBB del año 2019 iguales en este documento y en jaarrekening-2020-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0 y 0.866254)"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "códigos NBB del año 2018 iguales en este documento y en jaarrekening-2018-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0.417044 y 0.05)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2022-06-30-individual.pdf",
+  "duda de extraer que no afecta la carga: Ningún bloque indica la escala; el formato NBB abreviado se presenta en euros.",
+  "duda de extraer que no afecta la carga: El esquema abreviado no muestra ingresos ni compras por separado, solo el margen bruto en L237."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0,
+  "gastos": 1.475303,
+  "financiero": 0.011281,
+  "impuesto": 0,
+  "resultadoImpreso": -0.628623,
+  "resultadoParaCargar": -0.628623,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Uitzonderlijke opbrengsten",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 7,
+   "linea": 252,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "gasto",
+   "M": 0.996766,
+   "pagina": 12,
+   "linea": 393,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "gasto",
+   "M": 0.163692,
+   "pagina": 12,
+   "linea": 394,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Andere personeelskosten",
+   "lado": "gasto",
+   "M": 0.202603,
+   "pagina": 12,
+   "linea": 396,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.094099,
+   "pagina": 7,
+   "linea": 243,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.018143,
+   "pagina": 7,
+   "linea": 246,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Uitzonderlijke kosten",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 7,
+   "linea": 253,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële opbrengsten",
+   "M": 0.000052,
+   "linea": 249
+  },
+  {
+   "etiqueta": "Financiële kosten",
+   "M": 0.011229,
+   "linea": 250
+  }
+ ],
+ "impuesto": []
+}

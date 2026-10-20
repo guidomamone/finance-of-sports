@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual.pdf",
+  "club": "lierse-kempenzonen",
+  "year": 2018,
+  "generatedAt": "2026-10-20T20:02:22.398Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.367044
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Uitzonderlijke opbrengsten",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.05
+      ],
+      "glosa": "Ingresos excepcionales"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 10,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.368819
+      ],
+      "glosa": "Remuneraciones y prestaciones sociales directas"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 10,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.040562
+      ],
+      "glosa": "Cotizaciones patronales a la seguridad social"
+    },
+    {
+      "label": "Andere personeelskosten",
+      "lado": "expense",
+      "page": 10,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.03074
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.087351
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.016167
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Uitzonderlijke kosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.005559
+      ],
+      "glosa": "Gastos excepcionales"
+    }
+  ]
+}

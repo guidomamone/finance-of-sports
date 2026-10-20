@@ -1,0 +1,247 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "b68033b321d8e2db4ceaf07f8ef436d10db97fcd",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T20:02:06.392Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    20,
+    21
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    23,
+    26
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    135,
+    161
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    169,
+    208
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    218,
+    247
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    257,
+    264
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    276,
+    293
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    301,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    335,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    373,
+    403
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    413,
+    426
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    436,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    477,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    492,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    500,
+    503
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    505,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    523,
+    532
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    534,
+    538
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    540,
+    544
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    554,
+    555
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    559,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    565,
+    588
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    598,
+    603
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    607,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 19,
+   "lineas": [
+    667,
+    675
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b12"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro 'RESULTATEN' (6.4, pág. 13) como desglose de los gastos de personal y resultados financieros de la resultatenrekening?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b12 es la nota 6.4 de resultados (personal, financieros) del modelo abreviado VKT-vzw; contiene pocos importes y quizá solo plantilla.",
+   "bloques": [
+    "b12"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de vzw en modelo abreviado (VKT-vzw), en euros. El estado de resultados es b6 (Resultatenrekening, empieza con Brutomarge, por lo que ingresos y compras no están desglosados). b12 es la nota de resultados (personal y financieros). Se excluyen balance (b4-b5), resultaatverwerking (b7), vaste activa (b8-b10), schulden (b11), derechos y obligaciones (b13), partes vinculadas (b18-b19) y sociale balans (b22-b25)."
+}

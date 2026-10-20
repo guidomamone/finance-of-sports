@@ -1,0 +1,204 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual.md",
+ "mdSha1": "91d4b99d5db12e65e97ba6f756ec1cce05f1fcd0",
+ "ubicacionSha1": "d712558ba1a6878f18a9ea31096ad7e919ee6697",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T20:01:09.793Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b8"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala (cuentas anuales belgas suelen expresarse en euros, unidades)."
+  },
+  {
+   "bloque": "b8",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 242,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "367.044",
+   "anterior": "359.041",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 247,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "440.122",
+   "anterior": "166.193",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 248,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "87.351",
+   "anterior": "88.427",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 251,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "16.167",
+   "anterior": "4.599",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 253,
+   "etiqueta": "Positief (Negatief) bedrijfsresultaat (+)/(-)",
+   "actual": "-176.596",
+   "anterior": "99.821",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 254,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "275",
+   "anterior": "783",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 255,
+   "etiqueta": "Financiële kosten",
+   "actual": "162",
+   "anterior": "511",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 256,
+   "etiqueta": "Positief (Negatief) resultaat uit de gewone bedrijfsuitoefening (+)/(-)",
+   "actual": "-176.483",
+   "anterior": "100.094",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 257,
+   "etiqueta": "Uitzonderlijke opbrengsten",
+   "actual": "50.000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 258,
+   "etiqueta": "Uitzonderlijke kosten",
+   "actual": "5.559",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 259,
+   "etiqueta": "Positief (Negatief) resultaat van het boekjaar (+)/(-)",
+   "actual": "-140.014",
+   "anterior": "100.094",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 377,
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "actual": "368.819",
+   "anterior": "149.757",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b8",
+   "linea": 378,
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "actual": "40.562",
+   "anterior": "11.140",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b8",
+   "linea": 380,
+   "etiqueta": "Andere personeelskosten",
+   "actual": "30.740",
+   "anterior": "5.296",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 259,
+  "actual": "-140.014",
+  "anterior": "100.094"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la Brutomarge (L242, 367.044) como único dato de ingresos, sabiendo que es un neto de ingresos menos compras y no los ingresos brutos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "El esquema abreviado (L242) solo muestra margen bruto; Omzet y Bedrijfsopbrengsten no tienen importe.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toman los importes de b4 y b8 como euros en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque imprime la escala; las cuentas belgas se presentan en euros.",
+   "bloques": [
+    "b4",
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Se omitieron los datos de personal no monetarios (L373-L375). El resultado del ejercicio L259 (-140.014) coincide con -176.483+50.000-5.559 = -132.042? No coincide: diferencia de 7.972 posiblemente por impuestos/otros renglones no transcritos; revisar en PDF. Las notas de personal suman 440.121 vs 440.122 en el estado (redondeo)."
+}
