@@ -19,6 +19,9 @@ const raallalouvierebeRevenueLinesByYear = {
   2023: [
     { rawLabel:'Marge brute', normalizedCategory:'lump_football_operations', amountNative:1.098287, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Marge brute', normalizedCategory:'lump_football_operations', amountNative:1.045134, disclosureLevel:'aggregated' },
+  ],
 };
 const raallalouvierebeExpenseLinesByYear = {
   2025: [
@@ -60,6 +63,13 @@ const raallalouvierebeExpenseLinesByYear = {
     { rawLabel:'Amortissements et réductions de valeur sur frais d\'établissement, sur immobilisations incorporelles et corporelles', normalizedCategory:'depreciation', amountNative:-0.076505, disclosureLevel:'aggregated' },
     { rawLabel:'Autres charges d\'exploitation', normalizedCategory:'other_expenses', amountNative:-0.03234, disclosureLevel:'aggregated' },
     { rawLabel:'Charges d\'exploitation non récurrentes', normalizedCategory:'exceptional_items', amountNative:-0.003702, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Rémunérations, charges sociales et pensions', normalizedCategory:'wages_squad', amountNative:-1.912837, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortissements et réductions de valeur sur frais d\'établissement, sur immobilisations incorporelles et corporelles', normalizedCategory:'depreciation', amountNative:-0.090519, disclosureLevel:'aggregated' },
+    { rawLabel:'Réductions de valeur sur stocks, sur commandes en cours d\'exécution et sur créances commerciales: dotations (reprises)', normalizedCategory:'other_expenses', amountNative:-0.010642, disclosureLevel:'aggregated' },
+    { rawLabel:'Autres charges d\'exploitation', normalizedCategory:'other_expenses', amountNative:-0.007208, disclosureLevel:'aggregated' },
+    { rawLabel:'Charges d\'exploitation non récurrentes', normalizedCategory:'exceptional_items', amountNative:-0.001182, disclosureLevel:'aggregated' },
   ],
 };
 const raallalouvierebeFiscalYearMeta = {
@@ -168,6 +178,24 @@ const raallalouvierebeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.098287, officialTotalExpenses:1.591875, officialPAT:-0.512364,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'raallalouviere-be-jaarrekening-2024-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.022726, tax:-0.001974,
+    extraRows: [
+      {label:'Produits financiers récurrents', value:0.000284},
+      {label:'Charges financières récurrentes', value:-0.02301},
+      {label:'Impôts sur le résultat', value:-0.001974},
+    ],
+    sinDesglose: [
+      {renglon:'Marge brute', lado:'revenue', importe:1.045134, motivo:'Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.045134, officialTotalExpenses:2.022388, officialPAT:-1.001954,
+  },
 };
 const raallalouvierebePresupuestoOverlayByYear = {};
 
@@ -213,6 +241,11 @@ Object.assign(sources, {
   'raallalouviere-be-jaarrekening-2023-06-30-individual': {
     id:'raallalouviere-be-jaarrekening-2023-06-30-individual', clubId:'raallalouviere-be',
     title:'RAAL La Louvière SC — jaarrekening-2023-06-30-individual (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'raallalouviere-be-jaarrekening-2024-06-30-individual': {
+    id:'raallalouviere-be-jaarrekening-2024-06-30-individual', clubId:'raallalouviere-be',
+    title:'RAAL La Louvière SC — jaarrekening-2024-06-30-individual (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
