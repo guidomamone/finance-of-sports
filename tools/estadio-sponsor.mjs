@@ -388,7 +388,9 @@ async function main() {
   // Eerste Divisie neerlandesa tampoco tiene fuente del sponsor por temporada: sus páginas de en.wikipedia no traen la tabla de camisetas
   // (frenaban 11 altas del lote 93: ADO Den Haag, De Graafschap, FC Den Bosch, FC Dordrecht, FC Eindhoven, FC Volendam...).
   // (decisión de Guido, 2026-10-19: lo mismo para la 1. divisjon noruega: Fredrikstad 2013-2017.)
-  const SOLO_ESTADIO = new Set(['nl-eerstedivisie', 'no-1divisjon', 'no-2divisjon']);
+  // (to-do 298 b3, votación de Patro Eisden 2015, opción C, ok de Guido 2026-10-20) la segunda división belga (be-challengerproleague, también cuando se llamaba
+  // Second Division) tampoco tiene fuente del sponsor por temporada: alcanza el estadio.
+  const SOLO_ESTADIO = new Set(['nl-eerstedivisie', 'no-1divisjon', 'no-2divisjon', 'be-challengerproleague']);
   const amateur = (liga) => !!liga && (SOLO_ESTADIO.has(liga) || /amateur/i.test(`${LEAGUES[liga]?.name || ''} ${LEAGUES[liga]?.full || ''}`));
   const args = process.argv; const detalle = args.includes('--detalle'); const escribir = args.includes('--escribir');
   const arg = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
@@ -558,20 +560,27 @@ async function main() {
     if (d?.estadio && aliasEst[e.id]?.[d.estadio]) d.estadio = aliasEst[e.id][d.estadio];
     // lo manual gana, campo por campo; sin fuente no vale
     const m = manual[e.id]?.[e.y];
+    // (to-do 298 b3, REGLA de CONVENCIONES-DATOS "un dato de contexto sin fuente pública queda en null", ok de Guido 2026-10-20) `"sin-fuente": { "<campo>": "dónde se buscó" }`
+    // en contexto-manual.json: el campo (estadio, capacidad, sponsor o marca) queda en null y cuenta como RESUELTO para la compuerta (no frena). Vale solo con el texto de dónde
+    // se buscó; un campo que sí tiene valor no se pisa.
+    const sf = m && m['sin-fuente'] && typeof m['sin-fuente'] === 'object' ? Object.fromEntries(Object.entries(m['sin-fuente']).filter(([k, v]) => ['estadio', 'capacidad', 'sponsor', 'marca'].includes(k) && typeof v === 'string' && v.trim())) : {};
+    if (m && m['sin-fuente'] && !Object.keys(sf).length) console.error(`contexto-manual.json: ${e.id} ${e.y} "sin-fuente" sin campo válido o sin el texto de dónde se buscó: no se usa`);
     if (m) {
-      if (!m.fuente) { console.error(`contexto-manual.json: ${e.id} ${e.y} sin "fuente": no se usa`); }
+      if (!m.fuente) { if (Object.keys(m).some((k) => k !== 'sin-fuente')) console.error(`contexto-manual.json: ${e.id} ${e.y} sin "fuente": no se usa`); }
       // la fuente de Wikipedia queda en `fuente` (vale para los campos que no vinieron a mano); lo manual va en `fuenteManual` con la
       // lista de campos que puso (`manual`). Sin página de Wikipedia, la manual es la única fuente. Un campo con fuente propia (`fuentes`:
       // { campo: url }, cuando el estadio y el sponsor salen de páginas distintas) la lleva en `fuentesManual`.
       else {
-        const { fuente: fm, fuentes, ...campos } = m;
+        const { fuente: fm, fuentes, 'sin-fuente': _sf, ...campos } = m;
         const extra = { fuenteManual: fm, manual: Object.keys(campos), ...(fuentes ? { fuentesManual: fuentes } : {}) };
         d = d?.fuente ? { ...d, ...campos, ...extra } : { ...(d || {}), ...campos, fuente: fm, ...extra };
       }
     }
     const tiene = (k) => d && d[k] != null && d[k] !== '';
+    const resuelto = (k) => tiene(k) || !!sf[k]; // con valor, o en null con la marca `sin-fuente`
+    for (const k of Object.keys(sf)) if (!tiene(k)) { d ??= {}; (d.sinFuente ??= {})[k] = sf[k]; }
     if (tiene('estadio')) { n.est++; L.est++; } if (tiene('capacidad')) n.cap++; if (tiene('sponsor')) { n.sp++; L.sp++; } if (tiene('marca')) n.kit++;
-    if (!tiene('estadio') || (!tiene('sponsor') && !amateur(e.liga))) faltan.push(`${e.id} ${e.y}${e.liga ? ` (${e.liga}${e.s ? ' ' + e.s : ', sin lista'})` : ' (sin liga en club-leagues)'}: falta ${[!tiene('estadio') && 'estadio', !tiene('sponsor') && 'sponsor'].filter(Boolean).join(' y ')}`);
+    if (!resuelto('estadio') || (!resuelto('sponsor') && !amateur(e.liga))) faltan.push(`${e.id} ${e.y}${e.liga ? ` (${e.liga}${e.s ? ' ' + e.s : ', sin lista'})` : ' (sin liga en club-leagues)'}: falta ${[!resuelto('estadio') && 'estadio', !resuelto('sponsor') && 'sponsor'].filter(Boolean).join(' y ')}`);
     if (d) { const limpio = Object.fromEntries(Object.entries(d).filter(([, v]) => v != null && v !== '')); if (Object.keys(limpio).length > 1) ((salida[e.iso] ??= {})[e.id] ??= {})[e.y] = limpio; }
     if (detalle) console.log(`${e.id} ${e.y} (${e.liga || '-'} ${e.s || '-'}): estadio ${d?.estadio || '-'} | cap ${d?.capacidad || '-'} | sponsor ${d?.sponsor || '-'} | marca ${d?.marca || '-'}`);
   }
