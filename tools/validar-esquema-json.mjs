@@ -10,15 +10,15 @@
 // ============================================================================
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { resolve, join } from 'node:path';
-import { validar, categoriasDelSitio } from './json-datos.mjs';
+import { validar, categoriasDelSitio, referenciasExternas } from './json-datos.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const lista = [];
 (function walk(p) { if (statSync(p).isDirectory()) for (const f of readdirSync(p).sort()) walk(join(p, f)); else if (p.endsWith('.json')) lista.push(p); })(resolve(args[0] || resolve(ROOT, 'Generados', 'datos-json')));
-const categorias = categoriasDelSitio(); let mal = 0, conAvisos = 0, totalAvisos = 0; const A = process.argv.slice(2);
+const categorias = categoriasDelSitio(); const externos = referenciasExternas(); let mal = 0, conAvisos = 0, totalAvisos = 0; const A = process.argv.slice(2);
 for (const f of lista) {
-  let r; try { r = validar(JSON.parse(readFileSync(f, 'utf8')), { categorias }); } catch (x) { r = { errores: [`no se pudo leer: ${x.message}`], avisos: [] }; }
+  let r; try { r = validar(JSON.parse(readFileSync(f, 'utf8')), { categorias, externos }); } catch (x) { r = { errores: [`no se pudo leer: ${x.message}`], avisos: [] }; }
   if (r.errores.length) { mal++; console.log(`ERROR ${f.replace(ROOT + '/', '')}`); for (const m of r.errores.slice(0, 8)) console.log(`   ${m}`); if (r.errores.length > 8) console.log(`   ... y ${r.errores.length - 8} más`); }
   if (r.avisos.length) { conAvisos++; totalAvisos += r.avisos.length; if (A.includes('--avisos')) { console.log(`AVISO ${f.replace(ROOT + '/', '')}`); for (const m of r.avisos.slice(0, 5)) console.log(`   ${m}`); } }
 }
