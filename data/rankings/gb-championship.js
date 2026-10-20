@@ -44,6 +44,9 @@ window.RANKINGS["gb-championship"] = {
     leagueSize: 24,
     wiki: {"t":"2018–19 EFL Championship","lang":"en","at":"2026-10-19","n":24},
     clubs: [
+      { id:"leeds-gb", revenue:82.187, reportType:"official_balance_sheet",
+        sourceId:"leeds-gb-group-accounts-2018-19",
+        mix:[["Comercial / Sponsors",27.205],["Estadio",16.054],["Televisión",11.627],["Venta de Jugadores",19.919],["Otros ingresos",7.383]] },
       { id:"astonvilla-gb", revenue:64.808, reportType:"official_balance_sheet",
         sourceId:"astonvilla-gb-full-accounts-2018-19",
         mix:[["Comercial / Sponsors",20.681],["Estadio",16.062],["Televisión",28.064]] },

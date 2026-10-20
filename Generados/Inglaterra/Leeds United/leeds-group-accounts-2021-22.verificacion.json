@@ -1,0 +1,196 @@
+{
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2021-22.md",
+ "generado": "2026-10-20T18:14:06.623Z",
+ "estado": "ok",
+ "clubId": "leeds-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 189.206769 cierra; además se suman 2 línea(s) fuera de ese total (0.889647)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.552713678800501e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 190.096416 en este documento y 190.096416 en leeds-group-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (121.405579 contra 203.502431, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de localizar que no afecta la carga: b15 es un detalle de directores incluido dentro de los salarios de b14.",
+  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): aceptar, en leeds-group-accounts-2022-23.pdf",
+  "duda de localizar contestada por la respuesta de Guido sobre el mismo cuadro (b14, to-do 211): el cuadro queda afuera. \"¿Se cargan los 'Wages and salaries' de la nota 7 (b14) como gastos de personal totales, sin poder separar los salarios del plantel?\" | respondida: \"¿Se deja afuera de la carga el cuadro de cargos de la nota 5 'Operating profit' (L1040-L1047) por ser informativo y no un desglose sumable de Cost of sales/Administrative expenses?\""
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 121.405579,
+   "objetivo": 203.502431
+  }
+ ],
+ "totales": {
+  "ingresos": 190.096416,
+  "gastos": 223.677106,
+  "financiero": -3.129737,
+  "impuesto": 0,
+  "resultadoImpreso": -36.710427,
+  "resultadoParaCargar": -36.710427,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 24.579185,
+   "pagina": 22,
+   "linea": 982,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Television and broadcasting income",
+   "lado": "ingreso",
+   "M": 19.802631,
+   "pagina": 22,
+   "linea": 983,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Merchandising income",
+   "lado": "ingreso",
+   "M": 25.05464,
+   "pagina": 22,
+   "linea": 984,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Central distributions",
+   "lado": "ingreso",
+   "M": 95.870294,
+   "pagina": 22,
+   "linea": 985,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other commercial revenue",
+   "lado": "ingreso",
+   "M": 18.935151,
+   "pagina": 22,
+   "linea": 986,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Catering income",
+   "lado": "ingreso",
+   "M": 4.693913,
+   "pagina": 22,
+   "linea": 987,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Educational services",
+   "lado": "ingreso",
+   "M": 0.270955,
+   "pagina": 22,
+   "linea": 988,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 13,
+   "linea": 564,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gain/ (loss) on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 0.889647,
+   "pagina": 13,
+   "linea": 567,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 20.174675,
+   "pagina": 13,
+   "linea": 561,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 203.502431,
+   "pagina": 13,
+   "linea": 563,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Settlement of transfer dispute",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 13,
+   "linea": 565,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 6.598522,
+   "linea": 568
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -9.728259,
+   "linea": 569
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 571
+  }
+ ]
+}

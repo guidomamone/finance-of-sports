@@ -103,6 +103,45 @@ Nota 24 "Analysis of changes in net debt": Debt due within one year 37.177167 + 
 year 23.120370 = 60.297537, reconcilia EXACTO con cash-grossDebt=-55.288543 impreso.
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Leeds United/leeds-group-accounts-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate receipts | pág. 19, precedente |
+| 2 | Television and broadcasting income | pág. 19, Jev 1 |
+| 3 | Merchandising income | pág. 19, precedente |
+| 4 | Central distributions | pág. 19, Jev 1 |
+| 5 | Other commercial revenue | pág. 19, precedente |
+| 6 | Catering income | pág. 19, precedente |
+| 7 | Other operating income | pág. 10, Jev 0.99 |
+| 8 | Gain on disposal of players' registrations | pág. 10, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 10, precedente |
+| 2 | Administrative expenses | pág. 10, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-championship, verificado contra roster cacheado de "2018–19 EFL Championship" (tools/club-league-reference/gb.json), coincidencia exacta "Leeds United".
+```
+
 ## Fuentes
 
 ### leeds-gb-group-accounts-2024
@@ -119,6 +158,14 @@ _note (data/):_
 
 ```text
 Transcripción completa en Clubes/Inglaterra/Leeds United/leeds-group-accounts-2024-25.md.
+```
+
+### leeds-gb-group-accounts-2018-19
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Gestiones (Finanzas 5, 2026-10-19)

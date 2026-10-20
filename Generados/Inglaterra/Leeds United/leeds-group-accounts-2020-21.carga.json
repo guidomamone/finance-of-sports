@@ -1,0 +1,40 @@
+{
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf",
+ "generado": "2026-10-20T17:58:04.328Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
+  },
+  {
+   "etapa": "periodo",
+   "motivo": "el nombre del archivo dice otro cierre que el contenido (2023-03-31): confirmar qué ejercicio es antes de cargarlo"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2024 consolidado, 2025 consolidado"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-03-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada",
+  "nombreNoCoincide": true
+ },
+ "clubId": "leeds-gb",
+ "year": 2021,
+ "cortadoEn": "filas"
+}

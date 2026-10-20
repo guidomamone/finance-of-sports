@@ -17,6 +17,16 @@ const leedsGbRevenueLinesByYear = {
     { rawLabel:'Educational services', normalizedCategory:'education', amountNative:0.047410, disclosureLevel:'detailed' },
     { rawLabel:'Gain on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:24.765848, disclosureLevel:'detailed' },
   ],
+  2019: [
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:12.612796, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and broadcasting income', normalizedCategory:'broadcasting', amountNative:1.486, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising income', normalizedCategory:'sponsorship_commercial', amountNative:9.436899, disclosureLevel:'aggregated' },
+    { rawLabel:'Central distributions', normalizedCategory:'broadcasting', amountNative:7.649, disclosureLevel:'aggregated' },
+    { rawLabel:'Other commercial revenue', normalizedCategory:'sponsorship_commercial', amountNative:11.937394, disclosureLevel:'aggregated' },
+    { rawLabel:'Catering income', normalizedCategory:'other_income', amountNative:5.797676, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0.00286, disclosureLevel:'aggregated' },
+    { rawLabel:'Gain on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:15.649423, disclosureLevel:'aggregated' },
+  ],
 };
 
 const leedsGbExpenseLinesByYear = {
@@ -33,6 +43,10 @@ const leedsGbExpenseLinesByYear = {
     { rawLabel:'Impairment of players\' registrations', normalizedCategory:'player_impairment', amountNative:-3.014241, disclosureLevel:'detailed' },
     { rawLabel:'Depreciation of tangible assets', normalizedCategory:'depreciation', amountNative:-6.200495, disclosureLevel:'detailed' },
     { rawLabel:'Other operating expenses (residual, incluye crédito neto por negative goodwill — ver comentario de cabecera)', normalizedCategory:'other_expenses', amountNative:-47.072661, disclosureLevel:'estimated' },
+  ],
+  2019: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-9.970908, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-75.099771, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -54,6 +68,21 @@ const leedsGbFiscalYearMeta = {
     grossDebt:58.824929, cash:33.952665,
     netInterest:-5.542355, assetSales:0, tax:0, profitOnPlayerSales:0,
     officialTotalRevenue:161.755178, officialTotalExpenses:205.390711, officialPAT:-49.177888,
+  },
+  2019: {
+    currency:'GBP', fxRef:'GBP@2019-06-30',
+    sourceId:'leeds-gb-group-accounts-2018-19',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.900363, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:1.062},
+      {label:'Interest payable and similar expenses', value:-1.962363},
+      {label:'Tax on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:64.572048, officialTotalExpenses:85.070679, officialPAT:-21.398994,
   },
 };
 
@@ -83,6 +112,11 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/06233875/filing-history',
     publicNote:'Campeón del Championship 2024-25 (100 puntos), ascendido a la Premier League para la temporada 2025-26 (fuera del alcance de este ejercicio).',
+  },
+  'leeds-gb-group-accounts-2018-19': {
+    id:'leeds-gb-group-accounts-2018-19', clubId:'leeds-gb',
+    title:'Leeds United Football Club Limited — leeds-group-accounts-2018-19 (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 

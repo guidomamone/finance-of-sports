@@ -1,0 +1,301 @@
+{
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md",
+ "mdSha1": "6bee49526de1138caebd1773f3df59a7384a8d65",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T17:58:43.243Z",
+ "perimetroClub": null,
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    169,
+    169
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    402,
+    416
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    429,
+    451
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    467,
+    490
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    507,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    532,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    557,
+    592
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 20,
+   "lineas": [
+    818,
+    829
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    835,
+    843
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    849,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    860,
+    865
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    936,
+    942
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    960,
+    966
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    968,
+    972
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    989,
+    993
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    1008,
+    1020
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    1030,
+    1033
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    1037,
+    1040
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    1048,
+    1058
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    1074,
+    1078
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    1084,
+    1086
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    1092,
+    1099
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    1103,
+    1105
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 25,
+   "lineas": [
+    1111,
+    1115
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 26,
+   "lineas": [
+    1129,
+    1140
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 26,
+   "lineas": [
+    1150,
+    1158
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 26,
+   "lineas": [
+    1166,
+    1172
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 28,
+   "lineas": [
+    1248,
+    1253
+   ],
+   "tipo": "texto"
+  },
+  "b29": {
+   "pagina": 28,
+   "lineas": [
+    1260,
+    1262
+   ],
+   "tipo": "texto"
+  },
+  "b30": {
+   "pagina": 29,
+   "lineas": [
+    1297,
+    1301
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 29,
+   "lineas": [
+    1317,
+    1323
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b8",
+  "b11"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas en £ ('Period from 1 Jul 19 to 31 Jul 20 £'), cifras en libras enteras",
+ "moneda": "GBP",
+ "columna_ejercicio": "Period from 1 Jul 19 to 31 Jul 20 £",
+ "columna_anterior": "Year to 30 Jun 19 £",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado consolidado (b2) aunque el documento no trae cuenta de resultados individual de la compañía?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Solo hay Consolidated Statement of Comprehensive Income (b2); el individual no se presenta, solo hay balance de la compañía en b4.",
+   "bloques": [
+    "b2",
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿El índice no muestra ninguna nota que desglose Turnover y la carga se hace solo con el renglón del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Turnover",
+   "texto": "No aparece nota de análisis de ingresos (por ejemplo, Turnover por fuente) entre los bloques con cifras.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El ejercicio es de 13 meses (1-jul-2019 a 31-jul-2020) y la comparativa es de 12 meses. b11 (nota 7) abre los costos de personal (wages and salaries, social security, pension) y es la fuente de los salarios, sin separar al plantel; b10 son números de empleados y no importes. b8 abre amortización y deterioro de intangibles (jugadores). La nota de turnover no aparece en el índice."
+}

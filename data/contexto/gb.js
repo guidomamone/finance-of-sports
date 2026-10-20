@@ -74,6 +74,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'leeds-gb': {
+    2019: {"estadio":"Elland Road","capacidad":37890,"sponsor":"32Red","marca":"Kappa","temporada":"2018–19 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372863678"},
     2024: {"estadio":"Elland Road","capacidad":37608,"sponsor":"BOXT","marca":"Adidas","temporada":"2023–24 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374030992"},
     2025: {"estadio":"Elland Road","capacidad":37608,"sponsor":"Red Bull","marca":"Adidas","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
