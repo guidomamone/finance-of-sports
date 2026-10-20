@@ -4,9 +4,21 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'besiktas-tr': {
+    2006: {"temporada":"2005–06 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1282609643"},
+    2007: {"estadio":"BJK İnönü Stadium","capacidad":32086,"temporada":"2006–07 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344773066"},
+    2008: {"estadio":"BJK İnönü Stadium","capacidad":32086,"sponsor":"Cola Turka","marca":"Umbro","temporada":"2007–08 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369095991"},
+    2009: {"estadio":"BJK İnönü Stadium","capacidad":32086,"sponsor":"Cola Turka","marca":"Umbro","temporada":"2008–09 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369420257"},
+    2010: {"estadio":"BJK İnönü Stadium","capacidad":32086,"sponsor":"Cola Turka","marca":"Adidas","temporada":"2009–10 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1360666102"},
+    2011: {"estadio":"BJK İnönü Stadium","sponsor":"Cola Turka","marca":"Adidas","temporada":"2010–11 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1318828109"},
+    2014: {"estadio":"Atatürk Olympic Stadium","capacidad":76092,"sponsor":"Toyota","marca":"Adidas","temporada":"2013–14 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376073062"},
+    2015: {"estadio":"Atatürk Olympic Stadium","capacidad":76092,"sponsor":"Vodafone","marca":"Adidas","temporada":"2014–15 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1368112339"},
+    2016: {"estadio":"Vodafone Park","capacidad":41903,"sponsor":"Vodafone","marca":"Adidas","temporada":"2015–16 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371221761"},
+    2017: {"estadio":"Vodafone Park","capacidad":43500,"sponsor":"Vodafone","marca":"Adidas","temporada":"2016–17 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1324883177"},
+    2018: {"estadio":"Vodafone Park","capacidad":43500,"sponsor":"Vodafone","marca":"Adidas","temporada":"2017–18 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1361527691"},
     2019: {"estadio":"Vodafone Park","capacidad":41188,"sponsor":"Vodafone","marca":"Adidas","temporada":"2018–19 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1362211265"},
     2020: {"estadio":"Vodafone Park","capacidad":41188,"sponsor":"Vodafone","marca":"Adidas","temporada":"2019–20 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375997236"},
     2021: {"estadio":"Vodafone Park","capacidad":42590,"sponsor":"Beko","marca":"Adidas","temporada":"2020–21 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370258801"},
+    2022: {"estadio":"Vodafone Park","capacidad":42590,"sponsor":"Beko","marca":"Adidas","temporada":"2021–22 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370258708"},
     2023: {"estadio":"Vodafone Park","capacidad":42590,"sponsor":"Rain","marca":"Adidas","temporada":"2022–23 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370258876","fuenteManual":"https://en.wikipedia.org/wiki/2022%E2%80%9323_S%C3%BCper_Lig ; sponsor: https://www.turkgun.com/spor/besiktasta-yeni-sezon-forma-tanitimi-yapildi/184356 (Rain, patrocinio de pecho 2022-23)","manual":["estadio","capacidad","sponsor","marca"]},
   },
 });
