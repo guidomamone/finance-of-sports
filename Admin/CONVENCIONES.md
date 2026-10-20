@@ -77,6 +77,8 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     (qué quedó, qué pide, cuánto gastó), y el detalle va en la nota de la sesión, no en el chat.
   - **No se transcriben PDFs nuevos** (Guido, 2026-10-20). Se cargan los documentos que ya tienen `.md`. Arreglar o validar un `.md`
     que ya existe sí vale. Un documento sin `.md` se deja; no se lo transcribe ni se lo manda a Mistral.
+  - **Un documento que la localización ya marcó `sin_estado` no se vuelve a correr** con `--rehacer` ni `--reintentar`: el ensayo ya
+    lo avisa a costo 0, y reintentar no hace aparecer una tabla que el `.md` no tiene (Auditora, 2026-10-20; Colombia corrió tres veces por eso).
   - **El número de lote lo da la principal.** Las listas de corrida (`Admin/registros/.lote-lista-actual.txt` y compañía) son de cada
     carpeta; dos lotes en carpetas distintas pueden correr a la vez, dos en la misma no.
 
