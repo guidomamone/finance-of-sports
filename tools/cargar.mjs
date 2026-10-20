@@ -347,14 +347,18 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // semestral no pasa (el siguiente cierra 6 meses después) y un tramo suelto tampoco (no encadena). Se carga con nota pública, como el
     // primer ejercicio.
     let transicion = null;
-    if (!primero && per.tipo !== 'anual' && per.meses && per.meses < 12 && per.cierre) {
+    // (to-do 298 z2, votación 2026-10-20, 2 a 1: Admin/CONVENCIONES-DATOS.md) También el ejercicio de MÁS de 12 meses por cambio de cierre, que trae
+    // importes del año anterior (no es un primer ejercicio): se carga como el año del cierre, sin tope de meses. UNA compuerta, la contigüidad
+    // con el anterior: el cierre anterior + los meses del período = este cierre. El "siguiente cierra 12 meses después" es solo para los de
+    // menos de 12 (descarta el semestral); un período largo no tiene ese riesgo. Casos: Westerlo 2015 (18 meses), Aston Villa 2023-24 (13).
+    if (!primero && per.tipo !== 'anual' && per.meses && per.meses !== 12 && per.cierre) {
       const ym = (f, d) => { const [y, m] = String(f).split('-').map(Number); const t = y * 12 + (m - 1) + d; return `${Math.floor(t / 12)}-${String((t % 12) + 1).padStart(2, '0')}`; };
       const cierres = registro.filter((x) => x.pdf !== pdf && dirname(x.pdf) === dirname(pdf) && x.periodo?.tipo === 'anual' && x.periodo?.cierre).map((x) => ({ pdf: x.pdf, ym: String(x.periodo.cierre).slice(0, 7), cierre: x.periodo.cierre }));
       const ant = cierres.find((c) => c.ym === ym(per.cierre, -per.meses)); const sig = cierres.find((c) => c.ym === ym(per.cierre, 12));
       const diaDespues = (f) => { const d = new Date(`${f}T00:00:00Z`); d.setUTCDate(d.getUTCDate() + 1); return d.toISOString().slice(0, 10); };
-      if (ant && sig) transicion = { meses: per.meses, inicio: per.inicio || diaDespues(ant.cierre), cierre: per.cierre, anterior: ant.cierre, siguiente: sig.cierre };
+      if (ant && (sig || per.meses > 12)) transicion = { meses: per.meses, inicio: per.inicio || diaDespues(ant.cierre), cierre: per.cierre, anterior: ant.cierre, siguiente: sig?.cierre || null };
     }
-    if (transicion) { P.transicion = transicion; P.avisos.push(`ejercicio de transición por cambio de cierre (${per.meses} meses al ${per.cierre}): encadena con el cierre anterior ${transicion.anterior} y el siguiente ${transicion.siguiente}; se carga como el año, con nota pública (to-do 237 ab)`); }
+    if (transicion) { P.transicion = transicion; P.avisos.push(`ejercicio de transición por cambio de cierre (${per.meses} meses al ${per.cierre}): encadena con el cierre anterior ${transicion.anterior}${transicion.siguiente ? ` y el siguiente ${transicion.siguiente}` : ''}; se carga como el año, con nota pública (to-do 237 ab)`); }
     else if (primero) { P.primerEjercicio = primero; P.avisos.push(`primer ejercicio de la sociedad (${per.meses} meses${per.inicio ? `, desde ${per.inicio}` : ''}): la columna del año anterior no tiene importes; se carga como el año, con nota pública`); }
     else if (per.tipo !== 'anual') frena('periodo', `el documento cubre un período ${per.tipo}${per.meses ? ` de ${per.meses} meses` : ''}${per.cierre ? ` al ${per.cierre}` : ''}: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)`);
     if (per.nombreNoCoincide) frena('periodo', `el nombre del archivo dice otro cierre que el contenido (${per.cierre || '?'}): confirmar qué ejercicio es antes de cargarlo`);
