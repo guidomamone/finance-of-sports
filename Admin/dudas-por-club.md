@@ -695,11 +695,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   Umlaufvermögens" (TEUR 3.000, 2024/25 — deterioro de la participación en SK Gaming Beteiligungs
   GmbH) se sumó a `netInterest` por su posición en el esquema §275 Abs. 2 HGB (dentro del bloque de
   Finanzergebnis), no a `expenseLines` — ¿Guido prefiere otro tratamiento?
-- **FC Augsburg (`augsburg-de`)**: "Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung"
-  (reversión anual de un pasivo de primera consolidación, ítem puramente contable) se cargó como
-  `other_income` a falta de un campo dedicado — **¿el sitio debería tener un meta field propio para
-  ítems no-operativos de consolidación en los Konzernabschluss alemanes?** Probablemente se repita en
-  otros clubes con subsidiarias no 100%-propias.
 - **Eintracht Frankfurt (`eintrachtfrankfurt-de`)**: (a) "Frauen und Jugendfußball" combinado en una
   sola línea (7,6 M EUR) sin poder separar `womens_football` de `youth_football` — cargado como
   `other_income`; (b) "Transfer" (comisiones de agentes + fees, mezcla costos de compra Y venta de
@@ -858,12 +853,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## RCD Mallorca (`rcdmallorca-es`), Real Oviedo (`realoviedo-es`) y Rayo Vallecano (`rayovallecano-es`), España — onboarding Ejercicio 2024/25, sesión 2026-09-25
 
-- **RCD Mallorca — "Cesiones" (233.000€, dentro de "Otros ingresos")**: es ingreso por préstamo de
-  jugadores a otros clubes (cesión con o sin cargo), conceptualmente más cerca de `player_sales` que
-  del catch-all `other_income` donde quedó cargado. Getafe (mismo formato INFUT) SÍ la promovió a
-  `player_sales` propia en su sesión de carga; acá se dejó en el catch-all por no reabrir ese criterio
-  sin confirmar con Guido si conviene unificarlo retroactivamente entre los clubes españoles ya
-  cargados. Vale la pena decidir un criterio único y aplicarlo parejo.
 - **Real Oviedo — "Deterioro y resultado por enajenaciones" (2.771.029€) sin la palabra "jugadores"
   en su rótulo**: a diferencia de Mallorca/Rayo Vallecano (que sí dicen explícito "traspaso de
   jugadores"/"transferencia de jugadores"), este documento solo dice "Beneficios procedentes del
@@ -1057,12 +1046,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## Leeds United (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
 
-- **Amortización de intangibles no-jugador con reversión de "negative goodwill" en 2025**: en 2024 la
-  amortización no-jugador (goodwill/trademarks/software) suma +£0,231457m (normal), pero en 2025 la
-  reversión de negative goodwill (-£0,921580m) supera esa suma y da un CRÉDITO neto de -£0,651431m.
-  Se absorbió en el catch-all `other_expenses` en vez de crear una línea con signo positivo
-  (antinatural en un array de gastos) — ¿está bien este criterio para casos futuros con negative
-  goodwill?
 - **Atribución de gestión en FY2024 (cambio de dueño a mitad de año)**: Aser/Radrizzani controlaron
   ~3 meses, 49ers Enterprises los ~9 restantes y al cierre — se usó un solo `gestionId` (49ers) en
   vez de partir el ejercicio en dos gestiones. ¿Confirma este criterio?
