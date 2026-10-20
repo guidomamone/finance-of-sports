@@ -1342,7 +1342,9 @@ function checkEscala(api) {
   // ÉPOCA y no por tamaño ni por año: las Versiones 10 a 299 (sourcing y onboarding manual, antes del pipeline) viven en
   // `Admin/Archive/CHANGELOG-v010-v299.md`, de la más nueva a la más vieja; el CHANGELOG sigue desde la 300 y su cabecera dice dónde está lo anterior.
   // No se parte en rangos: una búsqueda tiene que elegir entre dos archivos como mucho.
-  for (const [f, limite] of [['Admin/CHANGELOG.md', 400], ['Admin/finance-of-sports-project.md', 1200], ['index.html', 150], ['Admin/ESTADO.md', 60], ['Admin/TODO.md', 60]]) {
+  for (const [f, limite] of [['Admin/CHANGELOG.md', 400], ['Admin/finance-of-sports-project.md', 1200], ['index.html', 150], ['Admin/ESTADO.md', 60], ['Admin/TODO.md', 60],
+    // (to-do 325 c) el resto de Admin/*.md con un umbral común: avisa si alguno se va de escala.
+    ...fs.readdirSync(path.join(ROOT, 'Admin')).filter(n => /\.md$/.test(n) && !/^(CHANGELOG|finance-of-sports-project|ESTADO|TODO)\.md$/.test(n)).map(n => ['Admin/' + n, 250])]) {
     const kb = fs.statSync(path.join(ROOT, f)).size / 1024;
     if (kb > limite) add('P3', 'archivo-pesado', `${f}: ${kb.toFixed(0)} KB (umbral ${limite} KB) — candidato a partir`);
   }
@@ -1554,17 +1556,23 @@ function listarFx(api) {
 // ---------------------------------------------------------------------------
 function checkDatosJson() {
   let J;
-  try { J = require('./json-datos.mjs'); } catch (e) { add('P2', 'datos-json-esquema', `no se pudo cargar tools/json-datos.mjs: ${e.message}`); return; }
+  try { J = require('./json-datos.mjs'); } catch (e) { add('P2', 'json-no-valida', `no se pudo cargar tools/json-datos.mjs: ${e.message}`); return; }
   const categorias = J.categoriasDelSitio(); const externos = J.referenciasExternas();
   for (const rel of archivosData()) {
     const id = idDeArchivo(rel);
+    let orig, j;
+    try { orig = J.leerClub(rel); j = JSON.parse(JSON.stringify(J.aJson(orig, { exportadoEn: '2026-01-01' }))); }
+    catch (e) { add('P2', 'json-no-valida', `${id}: no se pudo pasar al esquema JSON: ${e.message}`); continue; }
+    const r = J.validar(j, { categorias, externos });
+    for (const m of r.errores.slice(0, 3)) add('P2', 'json-no-valida', `${id}: ${m}`);
+    if (r.errores.length > 3) add('P2', 'json-no-valida', `${id}: ... y ${r.errores.length - 3} error(es) más del esquema`);
+    for (const m of r.avisos.slice(0, 3)) add('P2', 'json-aviso', `${id}: ${m}`);
+    // (to-do 325 a) ida y vuelta: JS -> JSON -> JS tiene que dar el mismo objeto; si no, el JSON y el JS se desfasaron.
     try {
-      const j = JSON.parse(JSON.stringify(J.aJson(J.leerClub(rel), { exportadoEn: '2026-01-01' })));
-      const r = J.validar(j, { categorias, externos });
-      for (const m of r.errores.slice(0, 3)) add('P2', 'datos-json-esquema', `${id}: ${m}`);
-      if (r.errores.length > 3) add('P2', 'datos-json-esquema', `${id}: ... y ${r.errores.length - 3} error(es) más del esquema`);
-      for (const m of r.avisos.slice(0, 3)) add('P2', 'datos-json-esquema', `${id}: ${m}`);
-    } catch (e) { add('P2', 'datos-json-esquema', `${id}: no se pudo pasar al esquema JSON: ${e.message}`); }
+      const d = J.diferencias(orig, J.evaluarJs(J.generarJs(j), id));
+      for (const x of d.slice(0, 3)) add('P2', 'json-js-desfasado', `${id}: ${x.ruta}: ${x.antes} -> ${x.despues}`);
+      if (d.length > 3) add('P2', 'json-js-desfasado', `${id}: ... y ${d.length - 3} diferencia(s) más`);
+    } catch (e) { add('P2', 'json-js-desfasado', `${id}: no se pudo regenerar el JS desde el JSON: ${e.message}`); }
   }
 }
 

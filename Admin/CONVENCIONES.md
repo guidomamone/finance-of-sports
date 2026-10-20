@@ -53,6 +53,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   - **Onboarding solo carga.** No edita `tools/`. Si un documento frena por un defecto de script, lo anota en
     `Admin/registros/frenados-por-script.jsonl` (una línea: `{"pdf", "defecto", "detalle", "sesion", "fecha"}`; `defecto` es la letra del
     TODO si ya existe, o una descripción corta), lo deja y sigue con el resto. No le pregunta a Guido por eso.
+  - **Un frenado resuelto se marca en su misma línea** con `"resuelto": "<letra o commit> <fecha>"` (o `"no era defecto: <qué se hizo> <fecha>"`); la marca la pone Pipeline al destrabar. Sin `resuelto` = pendiente.
   - **Pipeline es la única que toca `tools/`, y va siempre después.** Toma los frenados en orden. Por cada defecto: diseño, medición
     gratis (`medir-verificar`, `medir-cargar` o la que corresponda) y un informe corto para la auditora. No commitea hasta el veredicto.
   - **La auditora aprueba o rechaza en lugar de Guido.** Solo lee y escribe su veredicto en `Admin/registros/auditoria-proceso.jsonl` (y la

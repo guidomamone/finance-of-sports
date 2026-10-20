@@ -689,3 +689,11 @@ Gasto de API propio de la sesión: US$ 1,44 (Mistral US$ 0,91, Gemini 0,41 y Cla
 - **298 z2** (90ec805325, APROBADO): `cargar.mjs`, el ejercicio de transición de más de 12 meses con importes del año anterior y contiguo con el anterior se carga como el año del cierre. `medir-cargar` 0 distintos. Destraba Westerlo 2015.
 - **298 x2** (0dc98927e4): sin escalón. Una voz local (OCR) como respaldo de cifras en escaneos ahorraría ~22% de las páginas pero deja pasar al menos 1 de 82 con error real; la cascada actual (`chequeos-gratis.mjs`) deja pasar 0. `Admin/mediciones/x2-voz-local-escaneos.md`.
 - **245 fase 1** (b09b2d5b8a, APROBADO): `tools/json-datos.mjs`, `exportar-json.mjs`, `validar-esquema-json.mjs`, `ida-y-vuelta.mjs`. 313 de 313 idénticos, 0 errores, 4 clubes con avisos (rarezas del dato). Esquema en `Admin/mediciones/245-esquema.md`. Fase 2 (JSON como fuente) NO hecha: va con todo mergeado y sin worktrees, y se manda aparte a la auditora.
+
+## Pipeline 7 (2026-10-20)
+
+Gasto de API de la sesión: US$ 0 (todo gratis).
+
+- **Frenados:** `Admin/registros/frenados-por-script.jsonl` ahora tiene el campo `resuelto` (letra o commit y fecha) en la misma línea; las 6 líneas marcadas. Convención en una línea en `CONVENCIONES.md`, sección del contrato.
+- **325 a, b, c** (sin commitear hasta el veredicto): `audit.js` pasa `datos-json-esquema` a `json-no-valida`, `json-aviso` y `json-js-desfasado` (ida y vuelta JS→JSON→JS), todos P2; `ida-y-vuelta.mjs` lista cada club con avisos y su texto; `archivo-pesado` cubre los demás `Admin/*.md` con umbral 250 KB (hoy ninguno lo pasa). Medición: `audit.js --json` 1236 hallazgos antes y después, idénticos; `ida-y-vuelta` 314 idénticos; tiempo de audit ~16 s antes (el chequeo de ida y vuelta suma ~0,4 s).
+- **Para la principal al mergear:** borrar el 325 de `TODO.md` y una entrada en `CHANGELOG.md` (el hook no me deja escribirlos acá).
