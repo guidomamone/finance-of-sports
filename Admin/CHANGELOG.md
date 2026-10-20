@@ -17,6 +17,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 872 — Votaciones tanda 2 aplicadas; escala de criterios más objetiva (2026-10-20) [238 · hoffenheim-de, stuttgart-de, everton-gb, deportivopereira-co]
+
+- Votaciones tanda 2: Everton (venta a la matriz en assetSales), Pereira (bono de trayectoria a wages_squad), Hoffenheim y Stuttgart (officialPAT
+  antes de minoritarios y del partner silencioso: Hoffenheim 2024 y 2025 pasan a ganancia). Gimnasia LP espera la revotación.
+- Skill `votacion-de-criterios` (ok de Guido): materialidad de 1%; un precedente cuenta solo si es el mismo hecho económico; criterios nuevos
+  "realizado o no realizado" y "lo que entiende el lector"; las reglas de categoría llevan sus dos líneas para Jev y Claude.
+- Supabase: desde el 2026-10-30 una tabla nueva necesita su grant (PANTALLA); `saved_searches` no cambia.
+
 ## Versión 871 — Las reglas de categoría llegan a Jev y a Claude (2026-10-20) [329]
 
 - Cada `## REGLA:` de categoría en CONVENCIONES-DATOS lleva `CATEGORÍA (prompt)` y `EJEMPLO-CATEGORÍA`; `tools/reglas-categoria.mjs --escribir`
