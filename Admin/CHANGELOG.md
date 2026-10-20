@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 838 — Reino Unido: 22 años más y el alta de Celtic (2026-10-20)
+
+* Lote 108: Leeds, Liverpool 2022, Newcastle 2022-2024, Nottingham Forest 2022-23, Sunderland 2019-2023, West Ham 2020-2024 y Wolves
+  2020-2023. Alta de Celtic con 2024-25 (Scottish Premiership). Unión Magdalena 2025 con el cierre correcto (298 m2).
+
 ## Versión 837 — Stirling PDF no reemplaza a Mistral (2026-10-20)
 
 * 314 cerrado: Stirling PDF (Tesseract con enderezado) lee 52-94% de las cifras de los escaneos, contra 100% de Mistral; en 6 escaneos
