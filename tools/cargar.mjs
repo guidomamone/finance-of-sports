@@ -333,7 +333,9 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     // Sint-Truiden 2013, 15; Zulte Waregem 2012, 17). Misma compuerta: sin importes del año anterior. Los importes van tal cual (sin
     // prorratear: el fútbol arranca con la temporada; Anderlecht 2011 vendió 39,1 M y 2012, de 12 meses, 67,9 M).
     let primero = null;
-    if (per.tipo !== 'anual' && per.meses && per.meses !== 12 && e.md) {
+    // (to-do 298 w2) también de 12 meses redondeados cuando el período no es anual (Lierse SK 2019: 09-07-2018 a 30-06-2019, 11,7 meses): la
+    // compuerta es la misma (sin importes del año anterior); un período 'anual' no entra acá.
+    if (per.tipo !== 'anual' && per.meses && e.md) {
       const fp = resolve(ROOT, derivado(e.md, '.filas.json', { crear: false }));
       const fs = existsSync(fp) ? (JSON.parse(readFileSync(fp, 'utf8')).filas || []) : [];
       if (fs.length && fs.every((x) => x.anterior == null || String(x.anterior).trim() === '' || parseNumber(x.anterior) === 0)) primero = { meses: per.meses, inicio: per.inicio || null, cierre: per.cierre || null };
