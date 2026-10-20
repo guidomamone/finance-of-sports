@@ -191,8 +191,10 @@
    "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
  "notas_ingresos": [],
  "notas_gastos": [],
  "escala": "miles",
@@ -215,5 +217,5 @@
    "afecta_carga": true
   }
  ],
- "observaciones": "El documento son las cuentas individuales de Fulham Football Club Limited del ejercicio cerrado el 30-06-2022 (estado de resultados en b2, notas de ingresos b5 y gastos b6/b8). No contiene el ejercicio que cierra el 2023-03-28, por lo que se marca sin_estado. Si se quisiera cargar 2021-22, los bloques serían b2 (estado), b5 (ingresos), b6 y b8 (gastos), en £'000."
+ "observaciones": "El documento son las cuentas individuales de Fulham Football Club Limited del ejercicio cerrado el 30-06-2022 (estado de resultados en b2, notas de ingresos b5 y gastos b6/b8). No contiene el ejercicio que cierra el 2023-03-28, por lo que se marca sin_estado. Si se quisiera cargar 2021-22, los bloques serían b2 (estado), b5 (ingresos), b6 y b8 (gastos), en £'000. [ajuste manual `estado` (2026-10-19): los bloques del estado son b2; la IA había elegido ninguno. El estado de resultados (Profit and Loss Account and Other Comprehensive Income, pág. 14 del visor) es el bloque b2; el lote lo dejaba 'sin estado de resultados']"
 }
