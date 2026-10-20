@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf",
- "generado": "2026-10-20T21:17:19.809Z",
+ "generado": "2026-10-20T21:20:49.001Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (atleticobucaramanga-co)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "22 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Auxilio patrocinador bet play Liga femen\" -> womens_football 0.6; \"Auxilio Pruebas Covid-19 Dimayor\" -> competition_bonus 0.75; \"Auxilio Conmebol evolución\" -> competition_bonus 0.6; \"Bonificaciones\" -> wages_squad 0.6; \"Aportes a administradores de riesgos pro\" -> wages_squad 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2020: la pregunta ya está en la cola por estados-financieros-2019.pdf (24cfca1) y vale para este año"
   }
  ],
  "avisos": [],
@@ -108,9 +100,9 @@
     "amountNative": 41.667,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Auxilio Pruebas Covid-19 Dimayor",
@@ -118,9 +110,9 @@
     "amountNative": 131.6,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Auxilio Conmebol evolución",
@@ -128,9 +120,9 @@
     "amountNative": 272.157,
     "disclosureLevel": "aggregated",
     "_pag": 32,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Otros ingresos",
@@ -226,13 +218,13 @@
    },
    {
     "rawLabel": "Bonificaciones",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.541,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Indemnizaciones laborales",
@@ -246,53 +238,53 @@
    },
    {
     "rawLabel": "Aportes a administradores de riesgos profesionales",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.818,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Aportes a entidades promotoras de salud e.p.s",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.021,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Aportes a fondos de pensiones y o cesantias",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -9.908,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Aportes cajas de compensación familiar",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -3.445,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos medicos",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.035,
     "disclosureLevel": "aggregated",
     "_pag": 33,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Honorarios",
@@ -550,9 +542,9 @@
     "amountNative": -582.506,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Viaticos",
@@ -560,9 +552,9 @@
     "amountNative": -0.485,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Incapacidades",
@@ -710,9 +702,9 @@
     "amountNative": -6.417,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Serv. laboratorio/ examenes",
@@ -720,9 +712,9 @@
     "amountNative": -117.721,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Servicios medicos",
@@ -730,9 +722,9 @@
     "amountNative": -124.917,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Premios",
@@ -820,9 +812,9 @@
     "amountNative": -5,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Transporte Fletes y Acarreos",
@@ -870,9 +862,9 @@
     "amountNative": -5.649,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Cruz roja",
@@ -880,9 +872,9 @@
     "amountNative": -7.6,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos legales",
@@ -900,9 +892,9 @@
     "amountNative": -11.506,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Alojamiento y manuntencion",
@@ -940,9 +932,9 @@
     "amountNative": -0.248,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Otros gastos de viaje",
@@ -970,9 +962,9 @@
     "amountNative": -47.494,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Utiles de Papeleria",
@@ -1010,9 +1002,9 @@
     "amountNative": -62.155,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de representación",
@@ -1030,9 +1022,9 @@
     "amountNative": -726.423,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Otros",
@@ -1272,11 +1264,11 @@
    "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Actividades conexas (a)\")",
    "signoFijo": 41.667,
    "cat": "womens_football",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 41.667\" -> womens_football (precedente)",
    "destino": "revenue",
    "amountNative": 41.667
   },
@@ -1288,11 +1280,11 @@
    "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Actividades conexas (a)\")",
    "signoFijo": 131.6,
    "cat": "competition_bonus",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 131.600\"; auxilios Dimayor -> competition_bonus (precedente de Fortaleza CEIF, Boyaca Chico)",
    "destino": "revenue",
    "amountNative": 131.6
   },
@@ -1304,11 +1296,11 @@
    "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Actividades conexas (a)\")",
    "signoFijo": 272.157,
    "cat": "competition_bonus",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 272.157\"; auxilio de federacion -> competition_bonus como los demas auxilios de la fila",
    "destino": "revenue",
    "amountNative": 272.157
   },
@@ -1454,12 +1446,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 0.541,
-   "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): Nota 14(a) 2020 Gastos de personal de ADMINISTRACION: \"Bonificaciones | $ 541\"",
    "destino": "expense",
    "amountNative": -0.541
   },
@@ -1485,12 +1477,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 0.818,
-   "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): Nota 14(a) 2020 admin: \"Aportes a administradores de riesgos profesionales | $ 818\"",
    "destino": "expense",
    "amountNative": -0.818
   },
@@ -1501,12 +1493,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 0.021,
-   "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): Nota 14(a) 2020 admin: \"Aportes a entidades promotoras de salud e.p.s | $ 21\"",
    "destino": "expense",
    "amountNative": -0.021
   },
@@ -1517,12 +1509,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 9.908,
-   "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): Nota 14(a) 2020 admin: \"Aportes a fondos de pensiones y o cesantias | $ 9.908\"",
    "destino": "expense",
    "amountNative": -9.908
   },
@@ -1533,12 +1525,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 3.445,
-   "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): Nota 14(a) 2020 admin: \"Aportes cajas de compensación familiar | $ 3.445\"",
    "destino": "expense",
    "amountNative": -3.445
   },
@@ -1549,12 +1541,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 0.035,
-   "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): Nota 14(a) 2020 admin: \"Gastos medicos | $ 35\" (personal administrativo)",
    "destino": "expense",
    "amountNative": -0.035
   },
@@ -1942,11 +1934,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 582.506,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 582.506\"",
    "destino": "expense",
    "amountNative": -582.506
   },
@@ -1958,11 +1950,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 0.485,
    "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 485\" -> match_organisation_expense",
    "destino": "expense",
    "amountNative": -0.485
   },
@@ -2184,11 +2176,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 6.417,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 6.417\"",
    "destino": "expense",
    "amountNative": -6.417
   },
@@ -2200,11 +2192,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 117.721,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 117.721\"",
    "destino": "expense",
    "amountNative": -117.721
   },
@@ -2216,11 +2208,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\")",
    "signoFijo": 124.917,
    "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 124.917\"",
    "destino": "expense",
    "amountNative": -124.917
   },
@@ -2353,11 +2345,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\")",
    "signoFijo": 5,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 5.000\"",
    "destino": "expense",
    "amountNative": -5
   },
@@ -2429,11 +2421,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\")",
    "signoFijo": 5.649,
    "cat": "match_organisation_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 5.649\"",
    "destino": "expense",
    "amountNative": -5.649
   },
@@ -2445,11 +2437,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\")",
    "signoFijo": 7.6,
    "cat": "match_organisation_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 7.600\"",
    "destino": "expense",
    "amountNative": -7.6
   },
@@ -2476,11 +2468,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\")",
    "signoFijo": 11.506,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 11.506\"",
    "destino": "expense",
    "amountNative": -11.506
   },
@@ -2537,11 +2529,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de viaje (d)\")",
    "signoFijo": 0.248,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 248\"",
    "destino": "expense",
    "amountNative": -0.248
   },
@@ -2583,11 +2575,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos (e)\")",
    "signoFijo": 47.494,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 47.494\"",
    "destino": "expense",
    "amountNative": -47.494
   },
@@ -2644,11 +2636,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos (e)\")",
    "signoFijo": 62.155,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 62.155\"",
    "destino": "expense",
    "amountNative": -62.155
   },
@@ -2675,11 +2667,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos (e)\")",
    "signoFijo": 726.423,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 726.423\" (13% del gasto); mismo criterio abierto que 40f70ab (player_amortisation vs other_expenses). Decide Guido",
    "destino": "expense",
    "amountNative": -726.423
   },
@@ -2876,7 +2868,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 12,
   "lineasGasto": 93,
   "metaFilas": 3,
