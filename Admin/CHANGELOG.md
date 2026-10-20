@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 857 — Beşiktaş 2006-2008, Lierse Kempenzonen, La Louvière y Alianza FC (2026-10-20) [292 · 328 · besiktas-tr, liersekempenzonen-be, raallalouviere-be, alianzafc-co]
+
+- Merge de Onboarding 5: Beşiktaş 2006, 2007, 2008 y 2018 recargado (queda con 2006-2011 y 2014-2023); alta de Lierse Kempenzonen 2018-2021;
+  La Louvière 2018, 2019 y 2021-2024; alta de Alianza FC 2023.
+- To-do 328 nuevo: los pasos de una carga con tokens de sesión, reproducible por el script.
+
 ## Versión 856 — Molde 2008, 2010, 2011 y 2012 (2026-10-20) [261 · molde-no]
 
 - Merge de Onboarding 4: Molde FLI 2008 y 2010-2012 con sponsor `sin-fuente`. El Reino Unido del 261 queda cargado salvo la línea del auditor de Celtic.
