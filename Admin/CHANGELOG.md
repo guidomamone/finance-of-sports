@@ -17,6 +17,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 859 — Colombia cerrada; salen el 292 y el 165 (2026-10-20) [292 · 165 · 238 · 283 · atleticobucaramanga-co]
+
+- Merge de Onboarding 5: Atlético Bucaramanga 2019 y 2020 (alta), hecho con tokens de sesión (subagentes para localizar y extraer); 34 documentos de
+  Colombia sin estado de resultados a descartados. Sale el 292 (La Louvière 2020 queda afuera: 2 páginas en imagen).
+- Sale el 165 (las altas que queden entran por el 238). El 238 queda solo con lo gratis (27 propuestas listas y 12 frenados); lo caro, afuera por ahora.
+- El 283 frena por script (`cargar.mjs` no suma dos documentos en un año): va a Pipeline 7 después del 328.
+
 ## Versión 858 — Reino Unido y Noruega cerrados (261); propuesta del 328 (2026-10-20) [261 · 328 · molde-no, celtic-gb, fredrikstad-no, viking-no]
 
 - Merge de Onboarding 4: Molde FLI 2008-2024 completo (17 años); línea del auditor de Celtic 2021-2025 (BDO LLP). Fredrikstad sin lote (después de
