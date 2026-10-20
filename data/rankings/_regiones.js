@@ -26,7 +26,7 @@ window.RANKINGS_INDICE = {
   "ee-meistriliiga": [2025,9,10],
   "es-laliga": [2025,14,20],
   "es-segunda": [2025,3,22],
-  "gb-championship": [2025,3,24],
+  "gb-championship": [2022,4,24],
   "gb-leagueone": [2022,1,24],
   "gb-premierleague": [2024,17,20],
   "gb-scottishpremiership": [2025,1,12],

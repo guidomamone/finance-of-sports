@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.md",
  "mdSha1": "1158cf23ee34d88a2cf45150b34c0b6260e12e8a",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:59:09.600Z",
+ "generado": "2026-10-20T18:49:20.376Z",
  "perimetroClub": "individual",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 4,
@@ -195,27 +196,32 @@
  "estado": [
   "b2"
  ],
- "notas_ingresos": [],
- "notas_gastos": [],
+ "notas_ingresos": [
+  "b5"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b8"
+ ],
  "escala": "miles",
- "escala_evidencia": "Las notas indican £'000 (ej. b3, b5: '2022 £'000 | 2021 £'000')",
+ "escala_evidencia": "Las notas y el balance indican '2022 £'000 | 2021 £'000'; el estado b2 no muestra la escala en el encabezado, se asume £'000 como en el resto de las cuentas.",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
+ "columna_ejercicio": "2022",
+ "columna_anterior": "2021",
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se descarta este documento para el ejercicio que cierra el 2023-03-28 porque solo contiene cuentas del ejercicio cerrado el 30-06-2022 (L b2 'For the year ended 30 June 2022')?",
+   "pregunta": "¿El estado de resultados b2 (pág. 14) está expresado en £'000 como el balance y las notas?",
    "propuesta": "sí",
-   "tema": "cuadro-de-otro-anio",
-   "renglon": "",
-   "texto": "El estado de resultados b2 es del año al 30 de junio de 2022 con comparativo 2021; no hay cifras del ejercicio pedido.",
+   "tema": "escala",
+   "renglon": "Turnover",
+   "texto": "El encabezado de b2 solo dice '2022 | 2021' sin indicar la unidad, mientras que b3 y las notas dicen £'000.",
    "bloques": [
     "b2"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "El documento son las cuentas individuales de Fulham Football Club Limited del ejercicio cerrado el 30-06-2022 (estado de resultados en b2, notas de ingresos b5 y gastos b6/b8). No contiene el ejercicio que cierra el 2023-03-28, por lo que se marca sin_estado. Si se quisiera cargar 2021-22, los bloques serían b2 (estado), b5 (ingresos), b6 y b8 (gastos), en £'000. [ajuste manual `estado` (2026-10-19): los bloques del estado son b2; la IA había elegido ninguno. El estado de resultados (Profit and Loss Account and Other Comprehensive Income, pág. 14 del visor) es el bloque b2; el lote lo dejaba 'sin estado de resultados']"
+ "observaciones": "Cuentas individuales de Fulham Football Club Limited. Estado: b2. Ingresos: b5 (nota 2 Turnover). Gastos: b6 (nota 3, cargos incluidos en la pérdida: staff costs, amortización) y b8 (nota 5 Staff costs: wages and salaries, social security, pensiones), que corresponde a salarios. No hay separación entre salarios de jugadores y de otro personal; b9 muestra solo la plantilla media."
 }

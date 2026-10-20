@@ -1,0 +1,194 @@
+{
+ "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.md",
+ "generado": "2026-10-20T18:50:50.320Z",
+ "estado": "ok",
+ "clubId": "fulham-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf",
+   "campo": "cierre",
+   "valor": "2022-06-30",
+   "linea": null,
+   "motivo": "El .md dice 'For the year ended 30 June 2022'; el 28/03/2023 es el sello de presentación en Companies House, no el cierre",
+   "evidencia": ".md portada y L12-20",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf",
+   "campo": "estado",
+   "valor": "b2",
+   "linea": null,
+   "motivo": "El estado de resultados (Profit and Loss Account and Other Comprehensive Income, pág. 14 del visor) es el bloque b2; el lote lo dejaba 'sin estado de resultados'",
+   "evidencia": ".md L509-L529",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 71.589 cierra; además se suman 1 línea(s) fuera de ese total (12.479)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0020000000000024443
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 116.257; el sitio tiene 116.257"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 84.068 en este documento y 84.07 en fulham-full-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 116.257 en fulham-full-accounts-2020-21.pdf y 116.257 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses before depreciation, amortisation & impairment\" no suma el renglón (92.807 contra 110.099, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (escala, \"Turnover\"): aceptar, en fulham-full-accounts-2021-22.pdf",
+  "duda de extraer que no afecta la carga: L523 dice 'Loss' pero el importe 2 aparece sin paréntesis y el cuadro cuadra sumándolo como positivo."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses before depreciation, amortisation & impairment",
+   "suma": 92.807,
+   "objetivo": 110.099
+  }
+ ],
+ "totales": {
+  "ingresos": 84.068,
+  "gastos": 141.989,
+  "financiero": 0.029,
+  "impuesto": 0,
+  "resultadoImpreso": -57.89,
+  "resultadoParaCargar": -57.89,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate Receipts",
+   "lado": "ingreso",
+   "M": 6.824,
+   "pagina": 24,
+   "linea": 906,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Central Awards",
+   "lado": "ingreso",
+   "M": 49.215,
+   "pagina": 24,
+   "linea": 907,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 1.59,
+   "pagina": 24,
+   "linea": 908,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Compensation",
+   "lado": "ingreso",
+   "M": 4.497,
+   "pagina": 24,
+   "linea": 909,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorship and other Commercial Activities",
+   "lado": "ingreso",
+   "M": 9.463,
+   "pagina": 24,
+   "linea": 910,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 12.479,
+   "pagina": 14,
+   "linea": 522,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses before depreciation, amortisation & impairment",
+   "lado": "gasto",
+   "M": 110.099,
+   "pagina": 14,
+   "linea": 517,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "- Owned fixed assets",
+   "lado": "gasto",
+   "M": 0.862,
+   "pagina": 24,
+   "linea": 930,
+   "origen": "nota que desglosa \"Depreciation and amortisation\""
+  },
+  {
+   "etiqueta": "Amortisation of player registrations",
+   "lado": "gasto",
+   "M": 31.028,
+   "pagina": 24,
+   "linea": 932,
+   "origen": "nota que desglosa \"Depreciation and amortisation\""
+  },
+  {
+   "etiqueta": "Impairment",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 14,
+   "linea": 520,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Net interest receivable",
+   "M": 0.029,
+   "linea": 525
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation on loss",
+   "M": null,
+   "linea": 527
+  }
+ ]
+}
