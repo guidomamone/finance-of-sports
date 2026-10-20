@@ -66,6 +66,9 @@ window.RANKINGS["no-eliteserien"] = {
       { id:"sarpsborg08-no", revenue:10.794, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2022",
         mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.658],["Estadio",0.535],["Televisión",0.892],["Venta de Jugadores",4.54],["Otros ingresos",1.107]] },
+      { id:"valerenga-no", revenue:10.407, reportType:"official_balance_sheet",
+        sourceId:"valerenga-no-aarsregnskap-valerenga-fotball-as-2022",
+        mix:[["Cuotas Sociales",0.028],["Comercial / Sponsors",4.584],["Estadio",1.398],["Televisión",1.803],["Premios por competencias",0.017],["Venta de Jugadores",1.35],["Otros ingresos",1.225]] },
     ],
   },
   2021: {
