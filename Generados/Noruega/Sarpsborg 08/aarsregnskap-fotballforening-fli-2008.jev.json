@@ -1,0 +1,303 @@
+{
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.md",
+ "generatedAt": "2026-10-20T19:55:06.876Z",
+ "rubrosHuella": "0ef2b71a8e781406172b4aa5bbf6344702377fa7",
+ "rubros": [
+  {
+   "label": "Medlemsinntekter",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tilskudd",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mediainntekter",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre salgsinntekter",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reise- og oppholdskostnader bortekamper",
+   "lado": "expense",
+   "page": 6,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Salg/utleie spillere (Brutto)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Kampbillettinntekter",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Salgskostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre kostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Egne arrangement",
+   "lado": "expense",
+   "page": 6,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Administrasjonskostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Reklame-/sponsorinnt.",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Andre arrangementsinnt.",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "stadium_other",
+     0.14
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Kostnader reklame/sponsor",
+   "lado": "expense",
+   "page": 6,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1167
+  },
+  {
+   "label": "Kjøp/leie spillere",
+   "lado": "expense",
+   "page": 6,
+   "section": "nota que desglosa \"Annen driftskostnad\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1059
+  }
+ ]
+}

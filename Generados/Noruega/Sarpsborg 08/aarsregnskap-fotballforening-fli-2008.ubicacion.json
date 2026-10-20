@@ -1,0 +1,130 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.md",
+ "mdSha1": "809bc5e88035cbbc794e1fb086ced2a1935445cd",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:53:41.626Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    17,
+    23
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    70,
+    91
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    106,
+    136
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    209,
+    239
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    247,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    454,
+    504
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    508,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    558,
+    595
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    599,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    654,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    684,
+    693
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b4"
+ ],
+ "notas_gastos": [
+  "b4"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2008",
+ "columna_anterior": "2007",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro 'Resultatregnskap for 2008' de la pág. 6 (b4) como desglose de ingresos y gastos del estado oficial b2, ignorando la columna 'Budsjett 2009'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Salgsinntekt",
+   "texto": "b2 solo muestra 'Salgsinntekt' y gastos agregados; b4 (resultado de la memoria/junta, total ingresos 14 930 231) abre ingresos por categoría y gastos por naturaleza, pero no se vio b2 completo para confirmar que los totales coinciden.",
+   "bloques": [
+    "b4",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b2 es el estado de resultados oficial (NOK, unidades) de Sarpsborg 08 Fotballforening, individual. b4 es un estado de resultados de gestión con presupuesto 2009, usado como desglose; la columna Budsjett 2009 no se carga. b3/b5 son balances y b6-b9 notas de balance, excluidos."
+}
