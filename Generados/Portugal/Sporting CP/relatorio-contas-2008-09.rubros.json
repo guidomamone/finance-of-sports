@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.md",
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.pdf",
-  "club": "sporting-cp",
-  "year": null,
-  "generatedAt": "2026-10-15T21:55:08.433Z",
+  "club": "sportingcp-pt",
+  "year": 2009,
+  "generatedAt": "2026-10-20T21:26:17.419Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -184,7 +184,7 @@
       "values": [
         0.188
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Equipamentos Desportivos",
@@ -224,7 +224,7 @@
       "values": [
         0.166
       ],
-      "glosa": "Retribuciones de los órganos sociales"
+      "glosa": "Retribuciones de los órganos de administración"
     },
     {
       "label": "Remunerações do Pessoal",
@@ -244,7 +244,7 @@
       "values": [
         0.985
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre salarios"
     },
     {
       "label": "Seguros",
@@ -254,7 +254,7 @@
       "values": [
         0.845
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Outros",
@@ -274,7 +274,7 @@
       "values": [
         0.077
       ],
-      "glosa": "Amortizaciones excluyendo la amortización de la plantilla"
+      "glosa": "Amortizaciones excluyendo depreciación de la plantilla deportiva"
     },
     {
       "label": "Ajustamentos de dívidas a receber",
@@ -395,6 +395,16 @@
         0.742
       ],
       "glosa": "Pérdidas por deterioro - Fútbol profesional"
+    },
+    {
+      "label": "(Custos)/Proveitos com transacções de passes de jogadores",
+      "lado": "expense",
+      "page": 95,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        0.597
+      ],
+      "glosa": "(Gastos)/Ingresos por traspaso de derechos de jugadores"
     }
   ]
 }

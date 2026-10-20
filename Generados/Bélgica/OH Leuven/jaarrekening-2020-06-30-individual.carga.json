@@ -1,13 +1,9 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
- "generado": "2026-10-19T14:54:33.740Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-20T21:29:43.400Z",
+ "frena": [],
  "avisos": [
+  "categorías en 0 aun después del reintento (se carga así): Cuotas sociales",
   "gastos: ningún total impreso igual a la suma de las líneas (-21.192137); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
@@ -104,7 +100,7 @@
     "amountNative": 0.05327,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -174,8 +170,8 @@
     "amountNative": -0.02665,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 1,
-    "_conf": 0.99,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -199,14 +195,24 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Niet-recurrente bedrijfskosten",
+    "rawLabel": "Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
     "normalizedCategory": "exceptional_items",
-    "amountNative": -0.674559,
+    "amountNative": -0.567917,
     "disclosureLevel": "aggregated",
-    "_pag": 8,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere niet-recurrente bedrijfskosten",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.106642,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "fiscalYearMeta": {
@@ -249,7 +255,7 @@
    "title": "OH Leuven CV — jaarrekening-2020-06-30-individual (ejercicio 2020)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md",
@@ -269,7 +275,7 @@
  "year": 2020,
  "ajustes": null,
  "seleccion": {
-  "filas": 23,
+  "filas": 24,
   "notasUsadas": [],
   "refM": null
  },
@@ -407,7 +413,7 @@
    "signoFijo": -0.05327,
    "cat": "other_expenses",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -512,8 +518,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.02665,
    "cat": "other_expenses",
-   "conf": 0.99,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -550,20 +556,34 @@
    "amountNative": -0.048571
   },
   {
-   "label": "Niet-recurrente bedrijfskosten",
-   "page": 8,
-   "native": 0.674559,
+   "label": "Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 26,
+   "native": 0.567917,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.674559,
+   "origen": "verificacion (nota que desglosa \"Niet-recurrente bedrijfskosten\")",
+   "signoFijo": 0.567917,
    "cat": "exceptional_items",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Todo el 66A es el código 660 'Niet-recurrente afschrijvingen en waardeverminderingen op ... immateriële en materiële vaste activa' (1.141.007; 6630 y 664/7 solo en el año anterior). El documento no dice qué activos son: puede ser pases pero no está confirmado, así que no se fuerza player_impairment  [66A: '| (66A) | 1.141.007 | 24.227'; '| 660 | 1.141.007 |' (Nota 6.12, pág. 27); L473 'Niet-recurrente bedrijfskosten | 6.12 | 66A | 1.141.007' (pág. 9)]",
    "destino": "expense",
-   "amountNative": -0.674559
+   "amountNative": -0.567917
+  },
+  {
+   "label": "Andere niet-recurrente bedrijfskosten",
+   "page": 26,
+   "native": 0.106642,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Niet-recurrente bedrijfskosten\")",
+   "signoFijo": 0.106642,
+   "cat": "exceptional_items",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.106642
   },
   {
    "label": "Andere financiële opbrengsten",
@@ -610,11 +630,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Cuotas sociales"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Omzet\")": "gastos con signo",
@@ -622,6 +637,7 @@
    "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Andere bedrijfskosten\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Niet-recurrente bedrijfskosten\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -697,10 +713,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 7,
-  "lineasGasto": 12,
+  "lineasGasto": 13,
   "metaFilas": 4,
   "excluidas": 0
  }

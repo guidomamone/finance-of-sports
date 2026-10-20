@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.md",
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.pdf",
-  "club": "sporting-cp",
-  "year": null,
-  "generatedAt": "2026-10-15T21:55:08.473Z",
+  "club": "sportingcp-pt",
+  "year": 2010,
+  "generatedAt": "2026-10-20T21:26:17.457Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -87,6 +87,16 @@
       "glosa": "Otros ingresos de explotación"
     },
     {
+      "label": "(Custos)/Proveitos com transacções de passes de jogadores",
+      "lado": "revenue",
+      "page": 60,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.341
+      ],
+      "glosa": "(Gastos)/Ingresos por traspasos de jugadores"
+    },
+    {
       "label": "Subcontratos",
       "lado": "expense",
       "page": 71,
@@ -94,7 +104,7 @@
       "values": [
         9.8
       ],
-      "glosa": "Subcontratas"
+      "glosa": "Subcontratos"
     },
     {
       "label": "Trabalhos especializados",
@@ -214,7 +224,7 @@
       "values": [
         1.002
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros",
@@ -244,7 +254,7 @@
       "values": [
         0.09
       ],
-      "glosa": "Amortizaciones excluyendo la depreciación de la plantilla"
+      "glosa": "Amortizaciones excluyendo amortización de la plantilla"
     },
     {
       "label": "Ajustamentos de dívidas a receber",
@@ -254,7 +264,7 @@
       "values": [
         0.444
       ],
-      "glosa": "Ajustes por deterioro de cuentas por cobrar"
+      "glosa": "Ajustes por deterioro de cuentas a cobrar"
     },
     {
       "label": "Provisão para complemento de Pensões de Reforma",
@@ -304,7 +314,7 @@
       "values": [
         0.104
       ],
-      "glosa": "Impuesto de timbre"
+      "glosa": "Impuesto de transmisiones patrimoniales y actos jurídicos documentados"
     },
     {
       "label": "Multas e outras penalidades",

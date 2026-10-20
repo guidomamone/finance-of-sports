@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.md",
- "generado": "2026-10-16T18:10:36.506Z",
+ "generado": "2026-10-20T21:34:18.865Z",
+ "scriptHuella": "bb1724ebf1b3",
  "estado": "ok",
  "clubId": "sportingcp-pt",
  "year": 2009,
@@ -65,8 +66,7 @@
  "notas": [
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de localizar que no afecta la carga: b1 es una versión analítica del mismo estado individual de la SAD con columna de variación; b27 es el estado oficial con notas.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar que no afecta la carga: b1 es una versión analítica del mismo estado individual de la SAD con columna de variación; b27 es el estado oficial con notas."
  ],
  "reintentar": null,
  "reintentado": false,

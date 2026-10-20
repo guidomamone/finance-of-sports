@@ -155,3 +155,8 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - Viking FLI 2012, 2014, 2015, 2016 (121): no se cargan. El propio documento dice que el fútbol está en Viking Fotball ASA, que no consolida (2012 L224, 2014 L86, 2015 L85, 2016 L724): excepción 3 de la regla del club asociación y sociedad; a `documentos-descartados.txt` con cita. Viking 2008-2011 y 2013 no tienen `.md`: se dejan. Viking AS 2017-2024 ya está.
 - Noruega que queda: Aalesund y Vålerenga (esperan el 283). Sarpsborg 2008 cargado.
 - Gasto de sesión: unos US$ 19,5 de los US$ 30.
+
+### Onboarding 4: el 238, solo lo gratis (2026-10-20, lote 124)
+- Los 27 "Propuesta lista" de `estado.mjs` ya estaban todos en el sitio (el registro estaba viejo: los cargaron otras sesiones); no hubo nada que escribir. De los frenados: cargados OH Leuven 2020 (cola del perfil) y Rapid Wien 2024 (alta nueva: color #009150, liga `at-bundesliga` verificada con las listas 2023-24 y 2024-25, estadio y marca con fuente, sponsor `sin-fuente`, perímetro consolidado). Alianza FC, Bucaramanga, Llaneros y Lierse Kempenzonen ya estaban cargados.
+- Sporting 2008-09 y 2009-10: frenados por script (el registro no se actualiza, anotado). Benfica 2014-15 pos-AG: no cierra (ingresos 180.799 de las líneas contra 101.974 impreso; resultado impreso 7.072): hay que mirarlo contra el PDF, es un caso de datos, no de script. Rapid Wien 2013 a 2023 y 2025 tienen `.md` y siguen sin cargar (un lote aparte, ~US$ 0,15 por documento).
+- Gasto de la sesión: unos US$ 20 de los US$ 30.

@@ -1,20 +1,186 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.pdf",
- "generado": "2026-10-18T04:45:11.350Z",
+ "generado": "2026-10-20T21:34:37.100Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (rapidwien-at)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-09: Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH)"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-09: Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH)",
+  "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "rapidwien-at",
+  "year": 2024,
+  "cierre": "2024-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Umsatzerlöse",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 41.436186,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Erträge aus dem Abgang von Anlagevermögen",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Erträge aus der Auflösung von Rückstellungen",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.934896,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Übrige",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.004412,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Aufwendungen Spielbetrieb, Transfers etc.",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -3.921936,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Aufwendungen für bezogene Leistungen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -7.940708,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Löhne & Gehälter",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -16.405524,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Soziale Aufwendungen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -3.983233,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Abschreibungen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -3.786141,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Steuern, soweit sie nicht unter Steuern vom Einkommen fallen",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Übrige",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -6.950469,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2024-06-30",
+   "sourceId": "rapidwien-at-geschaeftsbericht-2023-24",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1.385647,
+   "tax": 0.192648,
+   "extraRows": [
+    {
+     "label": "Sonstige Zinsen und ähnliche Erträge",
+     "value": 0.270282
+    },
+    {
+     "label": "Abschreibungen auf Finanzanlagen",
+     "value": -0.108977
+    },
+    {
+     "label": "Zinsen und ähnliche Aufwendungen",
+     "value": -1.546952
+    },
+    {
+     "label": "Steuern vom Einkommen",
+     "value": 0.192648
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Umsatzerlöse",
+     "lado": "revenue",
+     "importe": 41.436186,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 44.375494,
+   "officialTotalExpenses": 42.988011,
+   "officialPAT": 0.194484
+  },
+  "source": {
+   "id": "rapidwien-at-geschaeftsbericht-2023-24",
+   "clubId": "rapidwien-at",
+   "title": "SK Rapid GmbH — geschaeftsbericht-2023-24 (ejercicio 2024)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.md",
  "reemplaza": false,
  "periodo": {
@@ -27,5 +193,339 @@
  },
  "clubId": "rapidwien-at",
  "year": 2024,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.pdf",
+   "campo": "cierre",
+   "valor": "2024-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2023-24; el registro no trae cierre",
+   "evidencia": "geschaeftsbericht-2023-24.md (portada/Gewinn-und-Verlust-Rechnung)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH",
+   "evidencia": "geschaeftsbericht-2023-24.md, 'Konsolidierte Bilanz'",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "seleccion": {
+  "filas": 15,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Umsatzerlöse",
+   "page": 26,
+   "native": 41.436186,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 41.436186,
+   "cat": "lump_football_operations",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 41.436186
+  },
+  {
+   "label": "Erträge aus dem Abgang von Anlagevermögen",
+   "page": 26,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Erträge aus der Auflösung von Rückstellungen",
+   "page": 26,
+   "native": 0.934896,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.934896,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.934896
+  },
+  {
+   "label": "Übrige",
+   "page": 26,
+   "native": 2.004412,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.004412,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-20: otros ingresos (Übrige)",
+   "destino": "revenue",
+   "amountNative": 2.004412
+  },
+  {
+   "label": "Aufwendungen Spielbetrieb, Transfers etc.",
+   "page": 26,
+   "native": 3.921936,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.921936,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: gastos de organización de partidos y de traspasos del club (Spielbetrieb): categoría propuesta, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -3.921936
+  },
+  {
+   "label": "Aufwendungen für bezogene Leistungen",
+   "page": 26,
+   "native": 7.940708,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.940708,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: otros gastos (servicios contratados)",
+   "destino": "expense",
+   "amountNative": -7.940708
+  },
+  {
+   "label": "Löhne & Gehälter",
+   "page": 26,
+   "native": 16.405524,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 16.405524,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: costo de personal total: wages_squad (convención del proyecto para costo de personal agregado)",
+   "destino": "expense",
+   "amountNative": -16.405524
+  },
+  {
+   "label": "Soziale Aufwendungen",
+   "page": 26,
+   "native": 3.983233,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.983233,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: costo de personal total: wages_squad (convención del proyecto para costo de personal agregado)",
+   "destino": "expense",
+   "amountNative": -3.983233
+  },
+  {
+   "label": "Abschreibungen",
+   "page": 26,
+   "native": 3.786141,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.786141,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: Abschreibungen = depreciación",
+   "destino": "expense",
+   "amountNative": -3.786141
+  },
+  {
+   "label": "Steuern, soweit sie nicht unter Steuern vom Einkommen fallen",
+   "page": 26,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Übrige",
+   "page": 26,
+   "native": 6.950469,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.950469,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.950469
+  },
+  {
+   "label": "Sonstige Zinsen und ähnliche Erträge",
+   "page": null,
+   "native": 0.270282,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Abschreibungen auf Finanzanlagen",
+   "page": null,
+   "native": -0.108977,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Zinsen und ähnliche Aufwendungen",
+   "page": null,
+   "native": -1.546952,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Steuern vom Einkommen",
+   "page": null,
+   "native": 0.192648,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 44.375494,
+  "expSum": -42.988011,
+  "officialTotalRevenue": 44.375494,
+  "officialTotalExpenses": 42.988011,
+  "officialPAT": 0.194484,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.194484,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 44.375494
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 42.988011
+  }
+ },
+ "liga": {
+  "valor": "at-bundesliga",
+  "fuente": "roster cacheado de \"2023–24 Austrian Football Bundesliga\" (tools/club-league-reference/at.json), coincidencia única por palabras \"SK Rapid\" = \"Rapid Wien\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2024,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2023-24; el registro no trae cierre",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2024-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2023-24; el registro no trae cierre)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-09)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Austria (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2024-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2024-06-30 = 0.9337 (Cierre BCE al 30/6/2024 (1 EUR = 1,071 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "rapidwien-at-geschaeftsbericht-2023-24",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "at-bundesliga",
+   "fuente": "roster cacheado de \"2023–24 Austrian Football Bundesliga\" (tools/club-league-reference/at.json), coincidencia única por palabras \"SK Rapid\" = \"Rapid Wien\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 4,
+  "lineasGasto": 7,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
 }

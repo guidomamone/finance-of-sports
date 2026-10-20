@@ -97,6 +97,9 @@ window.RANKINGS["be-challengerproleague"] = {
     leagueSize: 8,
     wiki: {"t":"2019–20 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [
+      { id:"ohleuven-be", revenue:8.542, reportType:"official_balance_sheet",
+        sourceId:"ohleuven-be-jaarrekening-2020-06-30-individual",
+        mix:[["Comercial / Sponsors",2.83],["Estadio",0.729],["Televisión",1.138],["Otros ingresos",3.844]] },
       { id:"beerschot-be", revenue:7.643, reportType:"official_balance_sheet",
         sourceId:"beerschot-be-jaarrekening-2020-06-30-individual",
         mix:[["Comercial / Sponsors",2.303],["Estadio",2.454],["Televisión",0.963],["Otros ingresos",1.922]] },

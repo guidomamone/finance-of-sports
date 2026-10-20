@@ -3,6 +3,7 @@ window.RANKINGS_INDICE = {
   "ar-primera": [2024,10,28],
   "ar-primerab": [2021,1,17],
   "ar-primeranacional": [2023,2,34],
+  "at-bundesliga": [2024,1,12],
   "be-challengerproleague": [2025,6,16],
   "be-div1amateur": [2024,2,18],
   "be-div2amateur": [2022,2,48],

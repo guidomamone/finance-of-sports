@@ -1,8 +1,9 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.pdf",
  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.md",
- "generado": "2026-10-18T04:45:09.851Z",
- "estado": "cola",
+ "generado": "2026-10-20T21:34:18.934Z",
+ "scriptHuella": "bb1724ebf1b3",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -33,10 +34,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "6c18014",
-  "311de6f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -68,7 +66,8 @@
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: El club usa consolidado en años cargados y b19 no dice el perímetro; es la única GuV del documento."
+  "duda de localizar que no afecta la carga: El club usa consolidado en años cargados y b19 no dice el perímetro; es la única GuV del documento.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en geschaeftsbericht-2023-24.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
