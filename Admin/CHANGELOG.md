@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 870 — Benfica 2014-15; correcciones de la tanda 1 (2026-10-20) [238 · 329 · 330 · benfica-pt, agf-dk, mechelen-be, rosariocentral]
+
+- Merge de Onboarding 4: Benfica 2014-15 cargado (de 2006 a 2026 solo le falta 2011);
+  AGF 2021 grossDebt a 0; Mechelen 2025 intangible a depreciation; tienda de Rosario Central a sponsorship_commercial.
+- To-dos nuevos: 329 (las reglas de categoría llegan a Jev y a Claude) y 330 (dónde se pierde lo decidido; después del 246 y el 245).
+
 ## Versión 869 — Benfica 2014-15 destrabado; votaciones tanda 1 (2026-10-20) [238 · benfica-pt]
 
 - `tools/verificar.mjs`: la fila de atribución del resultado («ACIONISTAS DA EMPRESA-MÃE») ya no se suma como ingreso. Medido sin cambios en

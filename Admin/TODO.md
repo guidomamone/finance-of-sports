@@ -49,7 +49,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
 **E. Orden de la casa**
-* 330: revisar todo el proyecto buscando dónde se gastan tokens en decidir o descubrir cosas que después se pierden (decisiones en el chat o en notas de sesión que no llegan a una regla, a un registro ni a una tool; hallazgos que no se leen nunca); proponer dónde tiene que quedar cada cosa
+* 330 (después del 246 y el 245, decisión de Guido): revisar todo el proyecto buscando dónde se gastan tokens en decidir o descubrir cosas que después se pierden (decisiones en el chat o en notas de sesión que no llegan a una regla, a un registro ni a una tool; hallazgos que no se leen nunca); proponer dónde tiene que quedar cada cosa
 * 326: check-in de outreach, el 2026-10-24
 * 257: skills que faltan
 * 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes corriendo en ningún worktree
