@@ -45,6 +45,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"96.com","marca":"Castore","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
   'celtic-gb': {
+    2021: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","fuente":"https://en.wikipedia.org/wiki/Celtic_Park","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"}},
     2024: {"sponsor":"Dafabet","marca":"Adidas","temporada":"2023–24 Scottish Premiership","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374234371"},
     2025: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","temporada":"2024–25 Scottish Premiership","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374234380","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sponsorship.sportbusiness.com/news/celtic-lands-long-term-extension-with-kit-sponsor-dafabet","marca":"https://www.scotsman.com/sport/football/celtic/celtic-fc-new-kit-unveil-adidas-home-shirt-heres-when-it-is-available-to-buy-and-the-price-4645920"}},
   },

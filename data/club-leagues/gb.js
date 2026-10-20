@@ -20,5 +20,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'leeds-gb':          { 2024: 'gb-championship',  2025: 'gb-championship', 2019: 'gb-championship', 2020: 'gb-championship', 2022: 'gb-premierleague', 2023: 'gb-premierleague', 2021: 'gb-premierleague' },
   'chelsea-gb':        { 2025: 'gb-premierleague', 2020: 'gb-premierleague', 2021: 'gb-premierleague', 2022: 'gb-premierleague', 2023: 'gb-premierleague', 2024: 'gb-premierleague' },
   'brighton-gb':       { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2020: 'gb-premierleague', 2021: 'gb-premierleague', 2022: 'gb-premierleague', 2023: 'gb-premierleague' },
-  'celtic-gb': { 2025: 'gb-scottishpremiership' },
+  'celtic-gb': { 2025: 'gb-scottishpremiership', 2021: null },
 });

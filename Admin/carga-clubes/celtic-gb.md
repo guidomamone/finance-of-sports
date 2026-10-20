@@ -76,6 +76,49 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-20): gb-scottishpremiership, verificado contra roster cacheado de "2024–25 Scottish Premiership" (tools/club-league-reference/gb.json), coincidencia exacta "Celtic".
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Escocia/Celtic/celtic-group-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ticketing | pág. 79, Jev 1 |
+| 2 | Merchandise vouchers for season ticket holders | pág. 79, precedente |
+| 3 | Commercial / sponsorship | pág. 79, Jev 1 |
+| 4 | Retail outlets and E-commerce | pág. 79, Jev 1 |
+| 5 | Media rights | pág. 79, Jev 1 |
+| 6 | Stadium operations | pág. 79, precedente |
+| 7 | Other | pág. 79, Jev 0.98 |
+| 8 | Profit on disposal of intangible assets | pág. 60, precedente |
+| 9 | Other income | pág. 60, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating expenses (before intangible asset transactions and exceptional items) | pág. 60, precedente |
+| 2 | Exceptional operating expenses | pág. 60, Jev 1 |
+| 3 | Amortisation of intangible assets | pág. 60, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = -1056. El estado quedó transcripto como texto y el bloque corta en Finance income (L2987): falta Finance expense (1,056), impreso en L2989
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): resultado-final = -12601. Resultado del ejercicio impreso (12,601) en L2999, fuera del bloque elegido (texto plano); verificar deduce el impuesto por diferencia (1,109 impreso en L2992)
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2021 (gb-premierleague, gb-championship, gb-leagueone): puede haber jugado otra división).
+```
+
 ## Fuentes
 
 ### celtic-gb-plc-group-accounts-2024-25
@@ -84,6 +127,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### celtic-gb-group-accounts-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Gestión
