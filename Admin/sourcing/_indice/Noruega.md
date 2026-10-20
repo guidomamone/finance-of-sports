@@ -16,6 +16,10 @@ mitad bajo una AS dedicada, y hay que comparar `driftsinntekter` para saber cuá
 fútbol profesional real — varios quedaron con perímetro sin confirmar. Ver
 `Admin/sourcing/Noruega/_notas-generales.md` y la sección 22 (propuesta) del skill de sourcing.
 
+**Listar sin navegador (2026-10-20, to-do 315):** `node tools/listar-brreg.mjs` pregunta al Regnskapsregisteret, por organisasjonsnummer y
+año, qué ejercicios existen (pedidos HEAD, no baja nada; ~0 tokens, unos 4 minutos) y los compara con lo cargado. Primera corrida: 63
+ejercicios de 6 clubes sin cargar, todos con el PDF ya bajado (`Admin/mediciones/crawl4ai-noruega-lista.md`).
+
 - [Rosenborg](<../Noruega/Rosenborg.md>) — 18 ejercicios, serie completa 2008-2025, sin cargar aún — Último chequeo: 2026-09-17
 - [Brann](<../Noruega/Brann.md>) — 18 ejercicios, serie completa 2008-2025, sin cargar aún — Último chequeo: 2026-09-17
 - [Molde](<../Noruega/Molde.md>) — 18 ejercicios 2008-2025 en 2 entidades, sin cargar aún — Último chequeo: 2026-09-17
