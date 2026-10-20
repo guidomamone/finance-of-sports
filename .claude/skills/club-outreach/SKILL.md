@@ -188,9 +188,9 @@ cuando llegue el momento:
 
 ## Cómo mantener este skill
 
-Actualizar la sección 1 (flujo de Etapa 1) si cambia el formato del frontmatter del borrador o el
-comportamiento de `tools/outreach-send.js`: tienen que quedar sincronizados, el script es la fuente
-de verdad de qué formato acepta. Actualizar la sección 4 (Etapas 2-4) recién cuando Guido decida
-activar alguna: mover la sección correspondiente de "documentada, no activa" a la sección 1 como
+Si cambia el formato del frontmatter del borrador o el comportamiento de `tools/outreach-send.js`,
+proponerle a Guido actualizar la sección 1 (tienen que quedar sincronizados: el script es la fuente
+de verdad de qué formato acepta). La sección 4 (Etapas 2-4) se actualiza recién cuando Guido decida
+activar alguna, también con su ok sobre el texto: mover la sección correspondiente de "documentada, no activa" a la sección 1 como
 flujo real, no dejarla duplicada en las dos partes. Cuando se haga el check-in de los 30 días, archivar
 `Admin/outreach/checkin-2026-10-24.md` en `Admin/Archive/` con su resultado.

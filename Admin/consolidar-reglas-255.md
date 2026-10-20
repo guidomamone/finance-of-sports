@@ -32,7 +32,7 @@ Vigente = la copia que dice lo último. Las demás pasaron a ser un puntero.
 
 ---
 
-## 2. Texto final para aprobar (skills y memorias; NO aplicado)
+## 2. Texto final aprobado (Guido, 2026-10-20: «ok a todas»; P-23 opción A). APLICADO todo: P-1 a P-23 por Docs 1, P-22 por la principal, P-24 a P-27 (memorias) por la principal
 
 Guido contestó las 9 preguntas (sección 3) y esta sección ya las incorpora. Cada propuesta dice archivo y línea de hoy, el texto de antes (literal) y el de después. Se lee de corrido y se contesta con
 «ok» o «no» por número. Las líneas son las de la rama al día con main. De la primera versión de este inventario ya están aplicadas por la principal las rutas con país de `start-session` y la salida del check-in de
