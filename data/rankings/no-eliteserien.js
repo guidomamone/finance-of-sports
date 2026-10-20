@@ -152,4 +152,13 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.016],["Otras secciones deportivas",0.011],["Otros ingresos",4.117]] },
     ],
   },
+  2009: {
+    leagueSize: 16,
+    wiki: {"t":"2009 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
+    clubs: [
+      { id:"molde-no", revenue:9.555, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2009",
+        mix:[["Cuotas Sociales",0.04],["Comercial / Sponsors",3.481],["Estadio",3.622],["Televisión",1.467],["Otros ingresos",0.945]] },
+    ],
+  },
 };

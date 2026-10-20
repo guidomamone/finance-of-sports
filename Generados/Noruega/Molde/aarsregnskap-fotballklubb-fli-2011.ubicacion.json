@@ -1,0 +1,293 @@
+{
+ "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2011.pdf",
+ "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2011.md",
+ "mdSha1": "cf062bc43fefc3a5f556f5f8b22121f10467ae0a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T20:07:47.194Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    19,
+    23
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    67,
+    92
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    107,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    148,
+    165
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    207,
+    233
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    283,
+    291
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    421,
+    435
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    441,
+    447
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    531,
+    536
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    544,
+    571
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    579,
+    607
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    688,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    702,
+    708
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    716,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    738,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 19,
+   "lineas": [
+    750,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 20,
+   "lineas": [
+    778,
+    785
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 20,
+   "lineas": [
+    791,
+    798
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 20,
+   "lineas": [
+    804,
+    810
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    814,
+    819
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    831,
+    843
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 21,
+   "lineas": [
+    849,
+    854
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 21,
+   "lineas": [
+    864,
+    870
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    894,
+    898
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 22,
+   "lineas": [
+    902,
+    906
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    910,
+    916
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    920,
+    922
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 23,
+   "lineas": [
+    938,
+    947
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 23,
+   "lineas": [
+    961,
+    963
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b10"
+ ],
+ "notas_ingresos": [
+  "b12",
+  "b13",
+  "b14"
+ ],
+ "notas_gastos": [
+  "b15",
+  "b16",
+  "b17",
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (importes completos, ej. 75 684 840)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2011",
+ "columna_anterior": "2010",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el resultado de la memoria (b10) en lugar del formulario de Brønnøysund (b2), dado que ambos son el mismo estado individual?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b2 (pág. 2, formato oficial) y b10 (pág. 15, memoria) dan los mismos totales; b10 es más detallado y referencia las notas.",
+   "bloques": [
+    "b2",
+    "b10"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma 12 493 639 (b10) como Netto finansposter 2011 aunque b2 imprime 12 493 629?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Netto finansposter",
+   "texto": "Diferencia de 10 NOK entre b10 y b2; el resultado 1 158 928 de b10 cuadra con la disposición de ambos.",
+   "bloques": [
+    "b2",
+    "b10"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado individual de Molde Fotballklubb (club). Se elige b10 (memoria, más detallado) con notas 2,3,5 (ingresos) y 7,8,9,10,11,12 (gastos); b14 es nota 5 Andre driftsinntekter. Nota 6 (salg spillere) no aparece como tabla. b9 es índice/presupuesto, excluido."
+}

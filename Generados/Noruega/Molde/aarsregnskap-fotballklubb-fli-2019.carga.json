@@ -1,0 +1,30 @@
+{
+ "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2019.pdf",
+ "generado": "2026-10-20T20:41:13.270Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 17 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2019.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "01.01.2019 - 31.12.2019"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "molde-no",
+ "year": 2019,
+ "cortadoEn": "filas"
+}

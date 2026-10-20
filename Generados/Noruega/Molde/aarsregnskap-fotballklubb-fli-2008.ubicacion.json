@@ -1,0 +1,497 @@
+{
+ "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2008.pdf",
+ "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2008.md",
+ "mdSha1": "a8717d17c61087724edad260ce7a0229b255415a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T20:01:34.077Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    17,
+    23
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    67,
+    98
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    128,
+    160
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    170,
+    181
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    217,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    281,
+    289
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    367,
+    370
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    374,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    490,
+    492
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    502,
+    528
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    538,
+    564
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    676,
+    684
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    690,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    714,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    738,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 19,
+   "lineas": [
+    752,
+    758
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 20,
+   "lineas": [
+    782,
+    789
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 20,
+   "lineas": [
+    795,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 20,
+   "lineas": [
+    808,
+    814
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    818,
+    823
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    833,
+    845
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 21,
+   "lineas": [
+    851,
+    857
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 21,
+   "lineas": [
+    873,
+    877
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    887,
+    892
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 22,
+   "lineas": [
+    896,
+    902
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    906,
+    908
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    912,
+    919
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    921,
+    923
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 23,
+   "lineas": [
+    943,
+    945
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 23,
+   "lineas": [
+    965,
+    968
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 24,
+   "lineas": [
+    1020,
+    1029
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 26,
+   "lineas": [
+    1079,
+    1084
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 26,
+   "lineas": [
+    1090,
+    1100
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 26,
+   "lineas": [
+    1106,
+    1108
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 27,
+   "lineas": [
+    1122,
+    1129
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 27,
+   "lineas": [
+    1131,
+    1141
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 27,
+   "lineas": [
+    1143,
+    1147
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 28,
+   "lineas": [
+    1159,
+    1166
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 28,
+   "lineas": [
+    1168,
+    1180
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 28,
+   "lineas": [
+    1182,
+    1186
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 29,
+   "lineas": [
+    1199,
+    1213
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 29,
+   "lineas": [
+    1215,
+    1227
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 30,
+   "lineas": [
+    1239,
+    1253
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 30,
+   "lineas": [
+    1255,
+    1267
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 36,
+   "lineas": [
+    1461,
+    1468
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 36,
+   "lineas": [
+    1484,
+    1496
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 39,
+   "lineas": [
+    1628,
+    1632
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 39,
+   "lineas": [
+    1648,
+    1658
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 46,
+   "lineas": [
+    1957,
+    1965
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 55,
+   "lineas": [
+    2481,
+    2487
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 55,
+   "lineas": [
+    2491,
+    2495
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 55,
+   "lineas": [
+    2503,
+    2504
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 55,
+   "lineas": [
+    2508,
+    2514
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 56,
+   "lineas": [
+    2598,
+    2607
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b10"
+ ],
+ "notas_ingresos": [
+  "b12",
+  "b13",
+  "b14"
+ ],
+ "notas_gastos": [
+  "b15",
+  "b16",
+  "b17",
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b2); importes en coronas enteras (ej. 50 625 080)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2008",
+ "columna_anterior": "2007",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el resultatregnskap de la memoria (b10, pág. 15, con notas) en lugar del formulario oficial de Brønnøysund (b2, pág. 2) como estado a cargar?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b2 y b10 parecen ser el mismo estado de Molde Fotballklubb en dos formatos; b10 es el que remite a las notas de desglose.",
+   "bloques": [
+    "b2",
+    "b10"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga los resultados por sección Hovedstyret/Sportslig utvalg y Breddefotball (b35-b40)?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "Son estados por departamento con presupuesto, sus renglones ya están abiertos en el estado y las notas.",
+   "bloques": [
+    "b35",
+    "b36",
+    "b37",
+    "b38",
+    "b39",
+    "b40"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento individual de Molde Fotballklubb (la asociación). b2 es el resultatregnskap oficial; b10 el de la memoria con notas 2-12. b32/b33 son cuadro regnskap vs budsjett (excluidos). Balances y notas de patrimonio/activo fijo excluidos."
+}

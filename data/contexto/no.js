@@ -17,6 +17,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Fredrikstad Stadion","capacidad":12560,"sponsor":"OBOS","marca":"Craft","temporada":"2024 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356845648"},
   },
   'molde-no': {
+    2008: {"estadio":"Aker Stadion","capacidad":11167,"temporada":"2008 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369291376"},
+    2009: {"estadio":"Aker Stadion","capacidad":11167,"sponsor":"Sparebanken Møre","marca":"Umbro","temporada":"2009 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369624445"},
     2025: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'sarpsborg08-no': {

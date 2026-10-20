@@ -1,0 +1,38 @@
+{
+ "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.pdf",
+ "generado": "2026-10-20T20:41:12.911Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 17 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2016-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Årsregnskapets periode: 01.01.2016 - 31.12.2016"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "molde-no",
+ "year": 2016,
+ "cortadoEn": "filas"
+}

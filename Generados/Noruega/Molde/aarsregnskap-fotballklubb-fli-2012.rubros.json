@@ -1,561 +1,410 @@
 {
- "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2012.md",
- "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2012.pdf",
- "club": "molde",
- "year": 2012,
- "numberFormat": "espacio como separador de miles (escandinavo)",
- "generatedAt": "2026-09-30T22:06:35.001Z",
- "tieOuts": {
-  "cierran": 70,
-  "noCierran": 4
- },
- "warnings": [
-  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
-  "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
-  "14 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
- ],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 52,
-  "notasUsadas": [
-   "11"
+  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2012.md",
+  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2012.pdf",
+  "club": "molde-no",
+  "year": 2012,
+  "generatedAt": "2026-10-20T20:35:02.196Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Medlemskontigent",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Medlemsinntekter/tilskudd\"",
+      "values": [
+        0.23451
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Egenandeler/deltakeravgift",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Medlemsinntekter/tilskudd\"",
+      "values": [
+        1.724613
+      ],
+      "glosa": "Cuotas de participación"
+    },
+    {
+      "label": "Markedsmidler NFF, NTF og UEFA",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Medlemsinntekter/tilskudd\"",
+      "values": [
+        35.849986
+      ],
+      "glosa": "Fondos comerciales de NFF, NTF y UEFA"
+    },
+    {
+      "label": "Andre tilskudd",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Medlemsinntekter/tilskudd\"",
+      "values": [
+        1.49681
+      ],
+      "glosa": "Otras subvenciones"
+    },
+    {
+      "label": "Inntekter Seriekamper",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Kamp- og billettinntekter\"",
+      "values": [
+        17.884063
+      ],
+      "glosa": "Ingresos por partidos de liga"
+    },
+    {
+      "label": "Inntekter NM Cup",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Kamp- og billettinntekter\"",
+      "values": [
+        1.893415
+      ],
+      "glosa": "Ingresos por Copa nacional"
+    },
+    {
+      "label": "Inntekter E-Cup",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Kamp- og billettinntekter\"",
+      "values": [
+        3.715751
+      ],
+      "glosa": "Ingresos por competiciones europeas"
+    },
+    {
+      "label": "Oppgjør NM Cup",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Kamp- og billettinntekter\"",
+      "values": [
+        0.819045
+      ],
+      "glosa": "Liquidación de Copa nacional"
+    },
+    {
+      "label": "Andre inntekter privatkamper etc.",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Kamp- og billettinntekter\"",
+      "values": [
+        0.117958
+      ],
+      "glosa": "Otros ingresos por partidos amistosos, etc."
+    },
+    {
+      "label": "Avtale MF/sponsor",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        21.175778
+      ],
+      "glosa": "Contratos de patrocinio y convenios"
+    },
+    {
+      "label": "Kiosksalg",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Andre driftsinntekter\"",
+      "values": [
+        2.61238
+      ],
+      "glosa": "Ventas de quioscos"
+    },
+    {
+      "label": "Andre driftsinntekter",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"Andre driftsinntekter\"",
+      "values": [
+        5.893977
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Salg spillere/Utleie",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.47625
+      ],
+      "glosa": "Venta y cesión de jugadores"
+    },
+    {
+      "label": "Administrasjon",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        2.34135
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Lønn spillere, trenere, støtteapparat og administrasjon",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Personalkostnader\"",
+      "values": [
+        49.726938
+      ],
+      "glosa": "Sueldos de jugadores, técnicos, personal auxiliar y administración"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Personalkostnader\"",
+      "values": [
+        6.921094
+      ],
+      "glosa": "Cargas sociales a cargo de la empresa"
+    },
+    {
+      "label": "Pensjonskostnad",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Personalkostnader\"",
+      "values": [
+        0.525568
+      ],
+      "glosa": "Gastos de pensiones"
+    },
+    {
+      "label": "Andre ytelser",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Personalkostnader\"",
+      "values": [
+        3.520808
+      ],
+      "glosa": "Otras prestaciones al personal"
+    },
+    {
+      "label": "Utgifter treningsleir/privatkamper",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        1.508771
+      ],
+      "glosa": "Gastos de concentraciones y partidos amistosos"
+    },
+    {
+      "label": "Leie treningsbaner etc.",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        1.401017
+      ],
+      "glosa": "Alquiler de campos de entrenamiento, etc."
+    },
+    {
+      "label": "Sportsrekvisita",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        2.191795
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Medisinske tjenester og rekvisita",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        0.117946
+      ],
+      "glosa": "Servicios y suministros médicos"
+    },
+    {
+      "label": "Andre sportslige kostnader",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        3.693098
+      ],
+      "glosa": "Otros gastos deportivos"
+    },
+    {
+      "label": "Baneleie serie- og cupkamper",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        0.466031
+      ],
+      "glosa": "Alquiler de instalaciones para partidos de liga y copa"
+    },
+    {
+      "label": "Avgift Norges Fotballforbund",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        0.404492
+      ],
+      "glosa": "Tasas de la Federación Noruega de Fútbol"
+    },
+    {
+      "label": "Annonsering seriekamper",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        0.640802
+      ],
+      "glosa": "Publicidad de partidos de liga"
+    },
+    {
+      "label": "Utgifter billettsalg",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        0.927409
+      ],
+      "glosa": "Gastos de venta de entradas"
+    },
+    {
+      "label": "Andre arrangementskostnader",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        1.690215
+      ],
+      "glosa": "Otros gastos de organización de eventos"
+    },
+    {
+      "label": "Utgifter cup kamper",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Andres arrangement\"",
+      "values": [
+        0.720457
+      ],
+      "glosa": "Gastos de partidos de copa"
+    },
+    {
+      "label": "Utgifter e-cup",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Andres arrangement\"",
+      "values": [
+        6.78849
+      ],
+      "glosa": "Gastos de competiciones europeas"
+    },
+    {
+      "label": "Utgifter andre arrangement",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Andres arrangement\"",
+      "values": [
+        0.199569
+      ],
+      "glosa": "Gastos de otros eventos"
+    },
+    {
+      "label": "Reisekostnader seriekamper",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Andres arrangement\"",
+      "values": [
+        1.987341
+      ],
+      "glosa": "Gastos de desplazamiento de partidos de liga"
+    },
+    {
+      "label": "Kjøp spillere",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Kjøp og leie spillere\"",
+      "values": [
+        0.082771
+      ],
+      "glosa": "Adquisición de jugadores"
+    },
+    {
+      "label": "Leie spillere",
+      "lado": "expense",
+      "page": 19,
+      "section": "nota que desglosa \"Kjøp og leie spillere\"",
+      "values": [
+        0.593761
+      ],
+      "glosa": "Cesión de jugadores (coste)"
+    },
+    {
+      "label": "Utgifter Prosjekt/Tiltak",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Andre driftskostnader\"",
+      "values": [
+        0.831641
+      ],
+      "glosa": "Gastos de proyectos e iniciativas"
+    },
+    {
+      "label": "Andre driftskostnader",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Andre driftskostnader\"",
+      "values": [
+        3.839266
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Varekjøp og andre kostnader kiosker",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Andre driftskostnader\"",
+      "values": [
+        1.338548
+      ],
+      "glosa": "Aprovisionamientos y otros gastos de quioscos"
+    },
+    {
+      "label": "Anleggskostnader",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0.130029
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Avskrivninger",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        13.044353
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Tap på fordringer",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Pérdidas por créditos incobrables"
+    }
   ]
- },
- "ladoConocido": 52,
- "rubros": [
-  {
-   "label": "Salgsinntekt",
-   "lado": "revenue",
-   "page": 2,
-   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
-   "values": [
-    85.38818
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Kiosksalg",
-   "lado": "revenue",
-   "page": 18,
-   "section": "### Note 4 Avtale med Molde Fotball AS / ### Note 5 Andre driftsinntekter",
-   "values": [
-    2.61238
-   ],
-   "origen": "nota 11 (ancla 0)",
-   "ancla": "Annen driftsinntekt"
-  },
-  {
-   "label": "Annen driftsinntekt",
-   "lado": "revenue",
-   "page": 2,
-   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
-   "values": [
-    8.506357
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Andre driftsinntekter",
-   "lado": "revenue",
-   "page": 18,
-   "section": "### Note 4 Avtale med Molde Fotball AS / ### Note 5 Andre driftsinntekter",
-   "values": [
-    5.893977
-   ],
-   "origen": "nota 11 (ancla 0)",
-   "ancla": "Annen driftsinntekt"
-  },
-  {
-   "label": "Lønnskostnad",
-   "lado": "expense",
-   "page": 2,
-   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
-   "values": [
-    60.694408
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
-   "lado": "expense",
-   "page": 2,
-   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
-   "values": [
-    13.044353
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Annen driftskostnad",
-   "lado": "expense",
-   "page": 2,
-   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
-   "values": [
-    31.894799
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Overføringer til/fra annen egenkapital",
-   "lado": null,
-   "page": 2,
-   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
-   "values": [
-    0.816753
-   ],
-   "origen": "estado 0"
-  },
-  {
-   "label": "Medlemsinntekter/tilskudd",
-   "lado": "revenue",
-   "page": 28,
-   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL HERRER / Resultatregnskap 2012",
-   "values": [
-    37569.265
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "Kamp- og billettinntekter",
-   "lado": "revenue",
-   "page": 28,
-   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL HERRER / Resultatregnskap 2012",
-   "values": [
-    24430.232
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "Reklame/sponsorinntekter",
-   "lado": "revenue",
-   "page": 28,
-   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL HERRER / Resultatregnskap 2012",
-   "values": [
-    21175.778
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "Andre driftsinntekter",
-   "lado": "revenue",
-   "page": 28,
-   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL HERRER / Resultatregnskap 2012",
-   "values": [
-    3876.806
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "Salg spillere/Utleie spillere",
-   "lado": "revenue",
-   "page": 28,
-   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL HERRER / Resultatregnskap 2012",
-   "values": [
-    476.25
-   ],
-   "origen": "estado 29"
-  },
-  {
-   "label": "Medlemsinntekter/tilskudd",
-   "lado": "revenue",
-   "page": 29,
-   "section": "# Molde Fotballklubb / BREDDEFOTBALLSTYRET / Resultatregnskap 2012",
-   "values": [
-    1779.655
-   ],
-   "origen": "estado 32"
-  },
-  {
-   "label": "Andre driftsinntekter",
-   "lado": "revenue",
-   "page": 29,
-   "section": "# Molde Fotballklubb / BREDDEFOTBALLSTYRET / Resultatregnskap 2012",
-   "values": [
-    4629.551
-   ],
-   "origen": "estado 32"
-  },
-  {
-   "label": "Administrasjon",
-   "lado": "expense",
-   "page": 29,
-   "section": "",
-   "values": [
-    416.263
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Personalkostnader",
-   "lado": "expense",
-   "page": 29,
-   "section": "",
-   "values": [
-    1219.714
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Trening og utstyr",
-   "lado": "expense",
-   "page": 29,
-   "section": "",
-   "values": [
-    1237.154
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Egne arrangement",
-   "lado": "expense",
-   "page": 29,
-   "section": "",
-   "values": [
-    132.569
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Andres arrangement",
-   "lado": "expense",
-   "page": 29,
-   "section": "",
-   "values": [
-    127.187
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Kjøp og leie spillere",
-   "lado": "expense",
-   "page": 29,
-   "section": "",
-   "values": [
-    11.6
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Kostnader sponsorer/overføringer",
-   "lado": "expense",
-   "page": 29,
-   "section": "",
-   "values": [
-    1927.075
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Anleggskostnader",
-   "lado": "expense",
-   "page": 29,
-   "section": "",
-   "values": [
-    130.029
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Avskrivninger",
-   "lado": "expense",
-   "page": 29,
-   "section": "",
-   "values": [
-    473.775
-   ],
-   "origen": "estado 33"
-  },
-  {
-   "label": "Administrasjon",
-   "lado": "expense",
-   "page": 28,
-   "section": "",
-   "values": [
-    1968.087
-   ],
-   "origen": "estado 30"
-  },
-  {
-   "label": "Personalkostnader",
-   "lado": "expense",
-   "page": 28,
-   "section": "",
-   "values": [
-    59474.694
-   ],
-   "origen": "estado 30"
-  },
-  {
-   "label": "Trening og utstyr",
-   "lado": "expense",
-   "page": 28,
-   "section": "",
-   "values": [
-    7675.473
-   ],
-   "origen": "estado 30"
-  },
-  {
-   "label": "Egne arrangement",
-   "lado": "expense",
-   "page": 28,
-   "section": "",
-   "values": [
-    3996.38
-   ],
-   "origen": "estado 30"
-  },
-  {
-   "label": "Andres arrangement",
-   "lado": "expense",
-   "page": 28,
-   "section": "",
-   "values": [
-    9568.67
-   ],
-   "origen": "estado 30"
-  },
-  {
-   "label": "Kjøp og leie spillere",
-   "lado": "expense",
-   "page": 28,
-   "section": "",
-   "values": [
-    664.932
-   ],
-   "origen": "estado 30"
-  },
-  {
-   "label": "Kostnader sponosorer/overføringer",
-   "lado": "expense",
-   "page": 28,
-   "section": "",
-   "values": [
-    4082.38
-   ],
-   "origen": "estado 30"
-  },
-  {
-   "label": "Avskrivninger",
-   "lado": "expense",
-   "page": 28,
-   "section": "",
-   "values": [
-    12570.578
-   ],
-   "origen": "estado 30"
-  },
-  {
-   "label": "Inntekter Seriekamper",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
-   "values": [
-    17.884063
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Inntekter NM Cup",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
-   "values": [
-    1.893415
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Inntekter E-Cup",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
-   "values": [
-    3.715751
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Oppgjør NM Cup",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
-   "values": [
-    0.819045
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Andre inntekter privatkamper etc.",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
-   "values": [
-    0.117958
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Publikumssnitt hjemmekamper i Tippeligaen",
-   "lado": "revenue",
-   "page": 18,
-   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
-   "values": [
-    0.00936
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Medlemskontigent",
-   "lado": "revenue",
-   "page": 18,
-   "section": "### Note 3 Medlemsinntekter og tilskudd",
-   "values": [
-    0.23451
-   ],
-   "origen": "estado 10"
-  },
-  {
-   "label": "Egenandeler/deltakeravgift",
-   "lado": "revenue",
-   "page": 18,
-   "section": "### Note 3 Medlemsinntekter og tilskudd",
-   "values": [
-    1.724613
-   ],
-   "origen": "estado 10"
-  },
-  {
-   "label": "Markedsmidler NFF, NTF og UEFA",
-   "lado": "revenue",
-   "page": 18,
-   "section": "### Note 3 Medlemsinntekter og tilskudd",
-   "values": [
-    35.849986
-   ],
-   "origen": "estado 10"
-  },
-  {
-   "label": "Andre tilskudd",
-   "lado": "revenue",
-   "page": 18,
-   "section": "### Note 3 Medlemsinntekter og tilskudd",
-   "values": [
-    1.49681
-   ],
-   "origen": "estado 10"
-  },
-  {
-   "label": "Lønn spillere, trenere, støtteapparat og administrasjon",
-   "lado": "expense",
-   "page": 19,
-   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
-   "values": [
-    49726.938
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Arbeidsgiveravgift",
-   "lado": "expense",
-   "page": 19,
-   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
-   "values": [
-    6921.094
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Pensjonskostnad",
-   "lado": "expense",
-   "page": 19,
-   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
-   "values": [
-    525.568
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Andre ytelser",
-   "lado": "expense",
-   "page": 19,
-   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
-   "values": [
-    3520.808
-   ],
-   "origen": "estado 13"
-  },
-  {
-   "label": "Utgifter Prosjekt/Tiltak",
-   "lado": "expense",
-   "page": 20,
-   "section": "## Note 12 Andre driftskostnader",
-   "values": [
-    831.641
-   ],
-   "origen": "estado 17"
-  },
-  {
-   "label": "Andre driftskostnader",
-   "lado": "expense",
-   "page": 20,
-   "section": "## Note 12 Andre driftskostnader",
-   "values": [
-    3839.266
-   ],
-   "origen": "estado 17"
-  },
-  {
-   "label": "Varekjøp og andre kostnader kiosker",
-   "lado": "expense",
-   "page": 20,
-   "section": "## Note 12 Andre driftskostnader",
-   "values": [
-    1338.548
-   ],
-   "origen": "estado 17"
-  },
-  {
-   "label": "Medlemsinntekter/tilskudd",
-   "lado": "revenue",
-   "page": 27,
-   "section": "# Totalbudsjett 2013 / # DRIFTSINNTEKTER",
-   "values": [
-    19865
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Kamp- og billettinntekter",
-   "lado": "revenue",
-   "page": 27,
-   "section": "# Totalbudsjett 2013 / # DRIFTSINNTEKTER",
-   "values": [
-    23645
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Avtale MF/sponsor",
-   "lado": "revenue",
-   "page": 27,
-   "section": "# Totalbudsjett 2013 / # DRIFTSINNTEKTER",
-   "values": [
-    30398
-   ],
-   "origen": "estado 27"
-  },
-  {
-   "label": "Andre driftsinntekter",
-   "lado": "revenue",
-   "page": 27,
-   "section": "# Totalbudsjett 2013 / # DRIFTSINNTEKTER",
-   "values": [
-    7900
-   ],
-   "origen": "estado 27"
-  }
- ]
 }
