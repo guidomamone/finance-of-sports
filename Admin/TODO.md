@@ -32,6 +32,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles)
 * 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos)
 
+* 329: que las decisiones de categoría lleguen a Jev y a Claude: cada regla de categoría que sale de una votación se registra como ejemplo en el banco que leen (`categorias-aprendidas.jsonl`, con su cita), y el categorizador de Claude recibe en el prompt las reglas de categoría de CONVENCIONES-DATOS --> Pipeline 7
+
 **C. Pantallas y distribución (después del 246)**
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
@@ -47,6 +49,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
 **E. Orden de la casa**
+* 330: revisar todo el proyecto buscando dónde se gastan tokens en decidir o descubrir cosas que después se pierden (decisiones en el chat o en notas de sesión que no llegan a una regla, a un registro ni a una tool; hallazgos que no se leen nunca); proponer dónde tiene que quedar cada cosa
 * 326: check-in de outreach, el 2026-10-24
 * 257: skills que faltan
 * 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes corriendo en ningún worktree
@@ -203,3 +206,12 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     `Admin/outreach/checkin-2026-10-24.md`; hay una tarea programada que lo pregunta, el archivo es el respaldo.
 327. CHEQUEOS QUE DEJÓ EL 255 (2026-10-20). Los 12 de la sección 4 de `Admin/Archive/consolidar-reglas-255.md`: elegir cuáles se automatizan
    (hook o audit.js) y hacerlos con el circuito de Pipeline. Nada urgente.
+329. DECISIONES DE CATEGORÍA QUE LLEGUEN A JEV Y A CLAUDE (pedido de Guido, 2026-10-20). Hoy una votación deja una REGLA en
+   `Admin/CONVENCIONES-DATOS.md` y una línea en `auditoria-proceso.jsonl`, pero Jev y el categorizador de Claude solo ven ejemplos ya
+   cargados y `categorias-aprendidas.jsonl`: la regla escrita no les llega. (a) Cada regla de categoría de una votación se registra
+   también como ejemplo en `categorias-aprendidas.jsonl`, con la cita de la votación. (b) El prompt de `categorizar-claude.mjs` recibe
+   las reglas de categoría de CONVENCIONES-DATOS. Circuito de Pipeline y Auditora.
+330. DÓNDE SE PIERDE LO QUE SE DECIDE O SE DESCUBRE (pedido de Guido, 2026-10-20). Revisar el proyecto entero (notas de sesión,
+   `Admin/Archive/`, HALLAZGOS, mediciones, dudas, registros, chats de sesiones) buscando tokens gastados en decidir o descubrir algo que
+   después no llega a ningún lado: una decisión que no quedó como REGLA ni en un registro, un hallazgo que nadie vuelve a leer, una
+   medición que no cambió nada. Proponer, para cada tipo, dónde tiene que quedar para que la próxima sesión no lo pague de nuevo.
