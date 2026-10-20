@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 866 — Rapid Wien 2013-2025 (2026-10-20) [238 · rapidwien-at]
+
+- Merge de Onboarding 4: Rapid Wien 2013-2016, 2018-2023 y 2025 (2017 a dudas-por-club).
+
 ## Versión 865 — Gasto por sesión (2026-10-20)
 
 - Los logs de API marcan la sesión (la carpeta del worktree, `tools/sesion.mjs`) y `node tools/gasto.mjs --sesion <carpeta>` da la cuenta de cada una;
