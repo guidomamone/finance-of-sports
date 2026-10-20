@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "vejle-dk",
+    "name": "VB Alliancen A/S",
+    "display_name": "Vejle",
+    "country": "DK",
+    "reporting_currency": "DKK",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "vejle-dk-aarsrapport-2024",
+      "club_id": "vejle-dk",
+      "title": "VB Alliancen A/S — Årsrapport 1. januar - 31. december 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "DKK",
+      "source_id": "vejle-dk-aarsrapport-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2024-12-31"},
+      "revenue": [
+        {
+          "label": "Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa explícitamente la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)",
+          "category": "lump_football_operations",
+          "amount": 47.596,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Personaleomkostninger (Lønninger + Pensioner + Andre omkostninger til social sikring)",
+          "category": "wages_squad",
+          "amount": -48.591,
+          "disclosure": "detailed",
+          "items": [["Lønninger",-45.433],["Pensioner",-2.471],["Andre omkostninger til social sikring",-0.687]]
+        },
+        {"label":"Andre driftsomkostninger (residual, sin nota propia)","category":"other_expenses","amount":-0.082,"disclosure":"aggregated"},
+        {
+          "label": "Immaterielle anlægsaktiver — afskrivninger (amortisation for the year, registraciones de jugadores)",
+          "category": "player_amortisation",
+          "amount": -2.392,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Materielle anlægsaktiver — afskrivninger (Andre anlæg, driftsmateriel og inventar + Indretning af lejede lokaler)",
+          "category": "depreciation",
+          "amount": -0.962,
+          "disclosure": "detailed",
+          "items": [["Andre anlæg, driftsmateriel og inventar",-0.828],["Indretning af lejede lokaler",-0.134]]
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.456,"tax":0.31,"gross_debt":24.128,"cash":4.548},
+      "official_totals": {"revenue":47.596,"expenses":52.027,"net_result":-3.665}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

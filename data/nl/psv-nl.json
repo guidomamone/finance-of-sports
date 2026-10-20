@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {"id":"psv-nl","name":"PSV N.V.","display_name":"PSV","country":"NL","reporting_currency":"EUR","fiscal_year_start":"07-01","sport":"futbol"},
+  "sources": [
+    {
+      "id": "psv-nl-jaarverslag-2024",
+      "club_id": "psv-nl",
+      "title": "Jaarverslag PSV N.V. boekjaar 2023-2024 (1 juli 2023 - 30 juni 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "psv-nl-jaarverslag-2025",
+      "club_id": "psv-nl",
+      "title": "Jaarverslag PSV N.V. boekjaar 2024-2025 (1 juli 2024 - 30 juni 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "psv-nl-jaarverslag-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Recettes competitie en KNVB beker","category":"matchday_competition","amount":4.099,"disclosure":"detailed"},
+        {"label":"Recettes Europees voetbal","category":"matchday_competition","amount":7.833,"disclosure":"detailed"},
+        {"label":"Seizoen Club Cards (inclusief All-in)","category":"season_tickets","amount":11.396,"disclosure":"detailed"},
+        {"label":"Premies Europees voetbal","category":"competition_bonus","amount":51.286,"disclosure":"detailed"},
+        {"label":"Overige wedstrijdopbrengsten","category":"stadium_other","amount":1.367,"disclosure":"detailed"},
+        {"label":"Partnerships","category":"sponsorship_commercial","amount":38.157,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"sponsorship_commercial","amount":10.342,"disclosure":"detailed"},
+        {"label":"Media","category":"broadcasting","amount":11.034,"disclosure":"detailed"},
+        {"label":"Stadionexploitatie","category":"stadium_other","amount":9.03,"disclosure":"detailed"},
+        {"label":"Overige opbrengsten","category":"other_income","amount":7.584,"disclosure":"detailed"},
+        {"label":"Vergoedingssommen (transferopbrengsten)","category":"player_sales","amount":31.25,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Kostprijs van de omzet","category":"other_expenses","amount":-9.598,"disclosure":"detailed"},
+        {
+          "label": "Lonen, salarissen en sociale lasten",
+          "category": "wages_squad",
+          "amount": -77.193,
+          "disclosure": "detailed",
+          "items": [["Lonen en salarissen",72.416],["Sociale lasten",3.596],["Pensioenlasten",1.181]]
+        },
+        {
+          "label": "Overige personeelskosten + Huisvestingskosten + Beheerskosten",
+          "category": "admin_general_expense",
+          "amount": -37.663,
+          "disclosure": "detailed",
+          "items": [["Overige personeelskosten",5.082],["Huisvestingskosten",12.234],["Beheerskosten",20.347]]
+        },
+        {"label":"Wedstrijdkosten","category":"match_organisation_expense","amount":-9.424,"disclosure":"detailed"},
+        {"label":"Afschrijvingen op materiële vaste activa","category":"depreciation","amount":-7.11,"disclosure":"detailed"},
+        {"label":"Afschrijving op vergoedingssommen","category":"player_amortisation","amount":-25.734,"disclosure":"detailed"},
+        {"label":"Bijzondere waardeverminderingen (vergoedingssommen)","category":"player_impairment","amount":-2.747,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.739,"tax":-3.519,"gross_debt":163.391,"cash":21.859},
+      "official_totals": {"revenue":183.378,"expenses":169.469,"net_result":9.651}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "psv-nl-jaarverslag-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Recettes competitie en KNVB beker","category":"matchday_competition","amount":4.398,"disclosure":"detailed"},
+        {"label":"Recettes Europees voetbal","category":"matchday_competition","amount":8.778,"disclosure":"detailed"},
+        {"label":"Seizoen Club Cards (inclusief All-in)","category":"season_tickets","amount":13.676,"disclosure":"detailed"},
+        {"label":"Premies Europees voetbal","category":"competition_bonus","amount":65.085,"disclosure":"detailed"},
+        {"label":"Overige wedstrijdopbrengsten","category":"stadium_other","amount":1.194,"disclosure":"detailed"},
+        {"label":"Partnerships","category":"sponsorship_commercial","amount":41.012,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"sponsorship_commercial","amount":11.274,"disclosure":"detailed"},
+        {"label":"Media","category":"broadcasting","amount":15.039,"disclosure":"detailed"},
+        {"label":"Stadionexploitatie","category":"stadium_other","amount":5.155,"disclosure":"detailed"},
+        {"label":"Overige opbrengsten","category":"other_income","amount":5.231,"disclosure":"detailed"},
+        {"label":"Vergoedingssommen (transferopbrengsten)","category":"player_sales","amount":23.676,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Kostprijs van de omzet","category":"other_expenses","amount":-7.886,"disclosure":"detailed"},
+        {
+          "label": "Lonen, salarissen en sociale lasten",
+          "category": "wages_squad",
+          "amount": -84.264,
+          "disclosure": "detailed",
+          "items": [["Lonen en salarissen",78.988],["Sociale lasten",4.1],["Pensioenlasten",1.176]]
+        },
+        {
+          "label": "Overige personeelskosten + Huisvestingskosten + Beheerskosten",
+          "category": "admin_general_expense",
+          "amount": -38.286,
+          "disclosure": "detailed",
+          "items": [["Overige personeelskosten",5.555],["Huisvestingskosten",12.267],["Beheerskosten",20.464]]
+        },
+        {"label":"Wedstrijdkosten","category":"match_organisation_expense","amount":-12.536,"disclosure":"detailed"},
+        {"label":"Afschrijvingen op materiële vaste activa","category":"depreciation","amount":-7.358,"disclosure":"detailed"},
+        {"label":"Afschrijving op vergoedingssommen","category":"player_amortisation","amount":-33.177,"disclosure":"detailed"},
+        {"label":"Bijzondere waardeverminderingen (vergoedingssommen)","category":"player_impairment","amount":0,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.909,"tax":-2.554,"gross_debt":140.827,"cash":9.155},
+      "official_totals": {"revenue":194.518,"expenses":183.507,"net_result":7.548}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

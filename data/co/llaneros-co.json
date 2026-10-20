@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "llaneros-co",
+    "name": "Club Llaneros S.A.",
+    "display_name": "Llaneros",
+    "country": "CO",
+    "reporting_currency": "COP",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "llaneros-co-estados-financieros-2025",
+      "club_id": "llaneros-co",
+      "title": "Club Llaneros S.A. — estados-financieros-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "COP",
+      "source_id": "llaneros-co-estados-financieros-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2025-12-31"},
+      "revenue": [
+        {"label":"Cesion de Derechos de TV","category":"broadcasting","amount":2557.762933,"disclosure":"aggregated"},
+        {"label":"Contratos Publicidad","category":"sponsorship_commercial","amount":6388.932082,"disclosure":"aggregated"},
+        {"label":"Auxilio Transporte Dimayor","category":"competition_bonus","amount":673.77927,"disclosure":"aggregated"},
+        {"label":"Auxilio Arbitraje Dimayor","category":"competition_bonus","amount":96.254181,"disclosure":"aggregated"},
+        {"label":"Auxilio Hotelero Dimayor","category":"competition_bonus","amount":192.508363,"disclosure":"aggregated"},
+        {"label":"Mecanismo de Solidaridad","category":"player_sales","amount":120,"disclosure":"aggregated"},
+        {"label":"Taquillas","category":"matchday_competition","amount":1826.318189,"disclosure":"aggregated"},
+        {"label":"Otros Ingresos","category":"other_income","amount":1.294537,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de Administración","category":"admin_general_expense","amount":-186.887168,"disclosure":"aggregated"},
+        {"label":"Gastos por beneficios a empleados","category":"wages_squad","amount":-6616.106802,"disclosure":"aggregated"},
+        {"label":"Honorarios","category":"admin_general_expense","amount":-304.3695,"disclosure":"aggregated"},
+        {"label":"Impuestos","category":"admin_general_expense","amount":-243.29674,"disclosure":"aggregated"},
+        {"label":"Arrendamientos","category":"admin_general_expense","amount":-15.574139,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general_expense","amount":-38.49822,"disclosure":"aggregated"},
+        {"label":"Servicios","category":"admin_general_expense","amount":-478.950141,"disclosure":"aggregated"},
+        {"label":"Gastos legales","category":"admin_general_expense","amount":-385.4103,"disclosure":"aggregated"},
+        {"label":"Mantenimiento y reparaciones","category":"admin_general_expense","amount":-0.31,"disclosure":"aggregated"},
+        {"label":"Adecuacion e instalacion","category":"admin_general_expense","amount":-816.568181,"disclosure":"aggregated"},
+        {"label":"Gastos de Viaje","category":"match_organisation_expense","amount":-1408.304135,"disclosure":"aggregated"},
+        {"label":"Otros Gstos","category":"other_expenses","amount":-228.43519,"disclosure":"aggregated"},
+        {"label":"Gastos extraordinarios","category":"exceptional_items","amount":-38.083024,"disclosure":"aggregated"},
+        {"label":"Gastos diversos","category":"other_expenses","amount":-44.283671,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-10.205,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":11856.849555,"expenses":10766.994187,"net_result":1041.567343},
+      "adjustments": {"extra_rows":[{"label":"Gastos Financieros","amount":null},{"label":"Diferido","amount":-10.205}]}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

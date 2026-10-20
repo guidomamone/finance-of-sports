@@ -581,7 +581,8 @@ function checkComentariosPublicados() {
     .flatMap(e => e.isDirectory() ? jsDe(dir + '/' + e.name) : e.name.endsWith('.js') ? [dir + '/' + e.name] : []);
   for (const rel of [...publicados(), ...jsDe('data')]) {
     const src = fs.readFileSync(path.join(ROOT, rel), 'utf8');
-    const todos = comentarios(rel, src);
+    // La cabecera fija que pone tools/generar-data.mjs ("GENERADO desde … no editar a mano") es el único comentario que un data file lleva.
+    const todos = comentarios(rel, src).filter(c => !/^GENERADO desde data\/[a-z]{2}\/[a-z0-9-]+\.json por tools\/generar-data\.mjs/.test(String(c.text).trim().replace(/^\/\/\s*/, '')));
     if (/^data\/(?:[a-z]{2}\/)?[^/]+-data\.js$/.test(rel) && todos.length) {
       add('P2', 'comentario-en-data-club',
         `${rel}: ${todos.length} comentarios (el primero en la línea ${todos[0].line}). Un data/<país>/<club>-data.js no lleva comentarios: la nota va a Admin/carga-clubes/<club>.md (regla: Admin/CONVENCIONES-DATOS.md)`);
@@ -799,6 +800,8 @@ const GENERADORES = [
   ['entidades.mjs',             'data/entidades/ (estructura de cada club, to-do 280)', 'entidades-desfasado'],
   ['estimar.mjs',               'data/estimados/ (y ningún estimado al lado de un año real)', 'estimados-desfasado'], // to-do 270; sin la carpeta, no chequea
   ['generate-sponsors.js',      'data/sponsors.js (sponsors y marcas de cada liga)', 'sponsors-desfasado'], // to-do 273; une equipos a clubes del sitio
+  ['generar-data.mjs',          'los data/<país>/<id>-data.js (se generan de su JSON: nunca a mano)', 'json-js-desfasado'], // to-do 245: el JSON es la fuente
+  ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v1.json)', 'json-no-valida'],
 ];
 function checkGenerados() {
   for (const [script, que, code] of GENERADORES) {
@@ -1514,29 +1517,21 @@ function listarFx(api) {
 }
 
 // ---------------------------------------------------------------------------
-// DATOS COMO JSON CON ESQUEMA (to-do 245, aprobado por Guido el 2026-10-20: aviso P2, no freno). Cada data/<país>/*-data.js se pasa al JSON del
-// esquema de Admin/mediciones/245-esquema.md (tools/json-datos.mjs) y se valida: una clave que el diccionario no conoce, un tipo mal, una categoría que no
-// está en category-map.js, un año repetido o fuera de orden. Cuesta menos de 1 segundo sobre los 313 clubes (medido). No escribe nada.
+// DATOS COMO JSON CON ESQUEMA (to-do 245, fase 2): el JSON de cada club (data/<país>/<id>.json) es la FUENTE. Que valide contra el esquema (`json-no-valida`)
+// y que el data file generado coincida con él (`json-js-desfasado`) lo chequean, como P1, los generadores de checkGenerados() (validar-esquema-json.mjs y
+// generar-data.mjs --check). Acá van solo los AVISOS del validador (el JSON valida pero tiene algo raro: una fuente o una gestión que vive fuera del archivo),
+// P2 que no frenan.
 // ---------------------------------------------------------------------------
 function checkDatosJson() {
   let J;
-  try { J = require('./json-datos.mjs'); } catch (e) { add('P2', 'json-no-valida', `no se pudo cargar tools/json-datos.mjs: ${e.message}`); return; }
+  try { J = require('./json-datos.mjs'); } catch (e) { add('P2', 'json-aviso', `no se pudo cargar tools/json-datos.mjs: ${e.message}`); return; }
   const categorias = J.categoriasDelSitio(); const externos = J.referenciasExternas();
   for (const rel of archivosData()) {
-    const id = idDeArchivo(rel);
-    let orig, j;
-    try { orig = J.leerClub(rel); j = JSON.parse(JSON.stringify(J.aJson(orig, { exportadoEn: '2026-01-01' }))); }
-    catch (e) { add('P2', 'json-no-valida', `${id}: no se pudo pasar al esquema JSON: ${e.message}`); continue; }
+    const id = idDeArchivo(rel); const rj = rel.replace(/-data\.js$/, '.json');
+    if (!fs.existsSync(path.join(ROOT, rj))) { add('P1', 'json-no-valida', `${id}: no tiene su JSON fuente (${rj}); el data file se genera de ahí`); continue; }
+    let j; try { j = JSON.parse(fs.readFileSync(path.join(ROOT, rj), 'utf8')); } catch (e) { continue; }
     const r = J.validar(j, { categorias, externos });
-    for (const m of r.errores.slice(0, 3)) add('P2', 'json-no-valida', `${id}: ${m}`);
-    if (r.errores.length > 3) add('P2', 'json-no-valida', `${id}: ... y ${r.errores.length - 3} error(es) más del esquema`);
     for (const m of r.avisos.slice(0, 3)) add('P2', 'json-aviso', `${id}: ${m}`);
-    // (to-do 325 a) ida y vuelta: JS -> JSON -> JS tiene que dar el mismo objeto; si no, el JSON y el JS se desfasaron.
-    try {
-      const d = J.diferencias(orig, J.evaluarJs(J.generarJs(j), id));
-      for (const x of d.slice(0, 3)) add('P2', 'json-js-desfasado', `${id}: ${x.ruta}: ${x.antes} -> ${x.despues}`);
-      if (d.length > 3) add('P2', 'json-js-desfasado', `${id}: ... y ${d.length - 3} diferencia(s) más`);
-    } catch (e) { add('P2', 'json-js-desfasado', `${id}: no se pudo regenerar el JS desde el JSON: ${e.message}`); }
   }
 }
 

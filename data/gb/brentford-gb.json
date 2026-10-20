@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "brentford-gb",
+    "name": "Brentford FC Ltd",
+    "display_name": "Brentford",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "brentford-gb-group-accounts-2024",
+      "club_id": "brentford-gb",
+      "title": "Brentford FC Ltd — Group Financial Statements, year ended 30 June 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03642327/filing-history",
+      "public_note": "Balance consolidado auditado (BDO LLP) de Brentford FC Ltd, depositado en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2024 (temporada 2023/24, Premier League, terminó 16°)."
+    },
+    {
+      "id": "brentford-gb-group-accounts-2025",
+      "club_id": "brentford-gb",
+      "title": "Brentford FC Ltd — Group Financial Statements, year ended 30 June 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03642327/filing-history",
+      "public_note": "Balance consolidado auditado (BDO LLP) de Brentford FC Ltd. Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25, Premier League, terminó 10°)."
+    },
+    {
+      "id": "brentford-gb-group-accounts-2021-22",
+      "club_id": "brentford-gb",
+      "title": "Brentford FC Ltd — brentford-group-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "brentford-gb-group-accounts-2022-23",
+      "club_id": "brentford-gb",
+      "title": "Brentford FC Ltd — brentford-group-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"benham","name":"Matthew Benham","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "brentford-gb-group-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Central distributions","category":"broadcasting","amount":114.944,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":14.975,"disclosure":"aggregated"},
+        {"label":"Matchday","category":"matchday_competition","amount":10.415,"disclosure":"aggregated"},
+        {"label":"Other","category":"player_sales","amount":0.579,"disclosure":"aggregated"},
+        {"label":"Rents received","category":"other_income","amount":0.084,"disclosure":"aggregated"},
+        {"label":"Grant income","category":"other_income","amount":0.012,"disclosure":"aggregated"},
+        {"label":"Loan player revenue","category":"player_sales","amount":1.507,"disclosure":"aggregated"},
+        {"label":"Other Income","category":"other_income","amount":0.28,"disclosure":"aggregated"},
+        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":4.583,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Administrative expenses","category":"other_expenses","amount":-116.751,"disclosure":"aggregated"},
+        {"label":"Loss on disposal of tangible fixed assets","category":"exceptional_items","amount":-0.955,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.215,"tax":-4.221,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":147.379,"expenses":116.751,"net_result":25.667},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":1.412},
+          {"label":"Interest payable and similar expenses","amount":-1.197},
+          {"label":"Tax (charge) / credit on profit / (loss)","amount":-4.221}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "brentford-gb-group-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Central Distributions","category":"broadcasting","amount":135.175,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":18.905,"disclosure":"aggregated"},
+        {"label":"Matchday","category":"matchday_competition","amount":11.25,"disclosure":"aggregated"},
+        {"label":"Other","category":"player_sales","amount":1.178,"disclosure":"aggregated"},
+        {"label":"Rents received","category":"other_income","amount":0.083,"disclosure":"aggregated"},
+        {"label":"Grant income","category":"other_income","amount":0.16,"disclosure":"aggregated"},
+        {"label":"Loan player revenue","category":"player_sales","amount":2.51,"disclosure":"aggregated"},
+        {"label":"Other Income","category":"other_income","amount":0.845,"disclosure":"aggregated"},
+        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":5.561,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Administrative expenses","category":"other_expenses","amount":-165.585,"disclosure":"aggregated"},
+        {"label":"Loss on sale of tangible fixed assets","category":"exceptional_items","amount":-0.076,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.843,"tax":1.746,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":175.667,"expenses":165.585,"net_result":10.909},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":1.165},
+          {"label":"Interest payable and similar expenses","amount":-2.008},
+          {"label":"Tax credit / (charge) on profit","amount":1.746}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "brentford-gb-group-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "benham",
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Central Distributions","category":"broadcasting","amount":127.5,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":16.029,"disclosure":"detailed"},
+        {"label":"Matchday","category":"matchday_competition","amount":11.341,"disclosure":"detailed"},
+        {"label":"Other (turnover, primariamente ingreso por préstamo de jugadores)","category":"player_sales","amount":11.666,"disclosure":"partial"},
+        {"label":"Other operating income","category":"other_income","amount":5.4,"disclosure":"detailed"},
+        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":25.198,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Employees and directors (wages, cargas sociales, pensión)","category":"wages_squad","amount":-114.371,"disclosure":"detailed"},
+        {"label":"Depreciation - owned assets","category":"depreciation","amount":-8.694,"disclosure":"detailed"},
+        {"label":"Intangible assets amortisation","category":"player_amortisation","amount":-35.631,"disclosure":"detailed"},
+        {"label":"Administrative expenses (resto sin desglosar)","category":"other_expenses","amount":-42.459,"disclosure":"not_disclosed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.852,"tax":0.356,"gross_debt":98.347,"cash":7.47},
+      "official_totals": {"revenue":197.134,"expenses":201.155,"net_result":-7.517}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "brentford-gb-group-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "benham",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Central distributions","category":"broadcasting","amount":139.547,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":19.357,"disclosure":"detailed"},
+        {"label":"Matchday","category":"matchday_competition","amount":12.376,"disclosure":"detailed"},
+        {"label":"Other (turnover, mismo criterio que 2024)","category":"player_sales","amount":1.796,"disclosure":"partial"},
+        {"label":"Other operating income","category":"other_income","amount":10.191,"disclosure":"detailed"},
+        {"label":"Gain on disposal of players' registrations","category":"player_sales","amount":27.236,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Employees and directors (wages, cargas sociales, pensión)","category":"wages_squad","amount":-130.778,"disclosure":"detailed"},
+        {"label":"Depreciation - owned assets","category":"depreciation","amount":-11.39,"disclosure":"detailed"},
+        {"label":"Intangible assets amortisation","category":"player_amortisation","amount":-47.872,"disclosure":"detailed"},
+        {"label":"Administrative expenses (resto sin desglosar)","category":"other_expenses","amount":-42.02,"disclosure":"not_disclosed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":8.796,"net_interest":-7.766,"tax":2.858,"gross_debt":132.072,"cash":1.977},
+      "official_totals": {"revenue":210.503,"expenses":232.06,"net_result":-17.669}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

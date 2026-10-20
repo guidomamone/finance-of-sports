@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "feyenoord-nl",
+    "name": "Feyenoord Rotterdam N.V.",
+    "display_name": "Feyenoord",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "feyenoord-nl-jaarverslag-2024",
+      "club_id": "feyenoord-nl",
+      "title": "Jaarverslag Feyenoord Rotterdam N.V. boekjaar 2023-2024 (1 juli 2023 - 30 juni 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "feyenoord-nl-jaarverslag-2025",
+      "club_id": "feyenoord-nl",
+      "title": "Jaarverslag Feyenoord Rotterdam N.V. boekjaar 2024-2025 (1 juli 2024 - 30 juni 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "feyenoord-nl-jaarverslag-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdopbrengsten","category":"matchday_competition","amount":67.316,"disclosure":"detailed"},
+        {"label":"Partnerships, business seats, units en boarding","category":"sponsorship_commercial","amount":39.593,"disclosure":"detailed"},
+        {"label":"Mediabaten","category":"broadcasting","amount":10.895,"disclosure":"detailed"},
+        {"label":"Merchandising & Business to Consumer activiteiten","category":"sponsorship_commercial","amount":3.539,"disclosure":"detailed"},
+        {"label":"Overige baten","category":"other_income","amount":4.332,"disclosure":"detailed"},
+        {"label":"Resultaat vergoedingssommen (transferopbrengsten)","category":"player_sales","amount":39.729,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Kostprijs van de omzet","category":"other_expenses","amount":-11.231,"disclosure":"detailed"},
+        {
+          "label": "Lonen, salarissen en sociale lasten",
+          "category": "wages_squad",
+          "amount": -66.139,
+          "disclosure": "detailed",
+          "items": [["Lonen en salarissen",61.035],["Pensioenen",0.943],["Sociale lasten",4.161]]
+        },
+        {
+          "label": "Overige personeelskosten + Huisvestingskosten + Beheer- en administratiekosten",
+          "category": "admin_general_expense",
+          "amount": -21.894,
+          "disclosure": "detailed",
+          "items": [["Overige personeelskosten",2.018],["Huisvestingskosten",8.5],["Beheer- en administratiekosten",11.376]]
+        },
+        {"label":"Wedstrijdkosten","category":"match_organisation_expense","amount":-11.302,"disclosure":"detailed"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-1.588,"disclosure":"detailed"},
+        {
+          "label": "Afschrijvingen en bijzondere waardeverminderingen vergoedingssommen",
+          "category": "player_amortisation",
+          "amount": -37.715,
+          "disclosure": "detailed"
+        },
+        {"label":"Afschrijvingen goodwill","category":"other_amortisation","amount":-0.25,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.982,"tax":-3.756,"gross_debt":97.781,"cash":0.062},
+      "official_totals": {"revenue":165.404,"expenses":150.119,"net_result":9.547}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "feyenoord-nl-jaarverslag-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdopbrengsten","category":"matchday_competition","amount":97.311,"disclosure":"detailed"},
+        {"label":"Partnerships, business seats, units en boarding","category":"sponsorship_commercial","amount":45.238,"disclosure":"detailed"},
+        {"label":"Mediabaten","category":"broadcasting","amount":11.716,"disclosure":"detailed"},
+        {"label":"Merchandising & Business to Consumer activiteiten","category":"sponsorship_commercial","amount":4.544,"disclosure":"detailed"},
+        {"label":"Overige baten","category":"other_income","amount":1.648,"disclosure":"detailed"},
+        {"label":"Resultaat vergoedingssommen (transferopbrengsten)","category":"player_sales","amount":60.334,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Kostprijs van de omzet","category":"other_expenses","amount":-12.483,"disclosure":"detailed"},
+        {
+          "label": "Lonen, salarissen en sociale lasten",
+          "category": "wages_squad",
+          "amount": -81.42,
+          "disclosure": "detailed",
+          "items": [["Lonen en salarissen",75.454],["Pensioenen",1.035],["Sociale lasten",4.931]]
+        },
+        {
+          "label": "Overige personeelskosten + Huisvestingskosten + Beheer- en administratiekosten",
+          "category": "admin_general_expense",
+          "amount": -26.48,
+          "disclosure": "detailed",
+          "items": [["Overige personeelskosten",4.399],["Huisvestingskosten",8.791],["Beheer- en administratiekosten",13.29]]
+        },
+        {"label":"Wedstrijdkosten","category":"match_organisation_expense","amount":-12.376,"disclosure":"detailed"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-1.559,"disclosure":"detailed"},
+        {
+          "label": "Afschrijvingen en bijzondere waardeverminderingen vergoedingssommen",
+          "category": "player_amortisation",
+          "amount": -54.968,
+          "disclosure": "detailed"
+        },
+        {"label":"Afschrijvingen goodwill","category":"other_amortisation","amount":0,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.433,"tax":-8.017,"gross_debt":113.356,"cash":14.648},
+      "official_totals": {"revenue":220.791,"expenses":189.286,"net_result":23.055}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

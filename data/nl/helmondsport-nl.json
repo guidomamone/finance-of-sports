@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "helmondsport-nl",
+    "name": "Helmond Sport",
+    "display_name": "Helmond Sport",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "helmondsport-nl-wf-2024-2025-4ef6ca45",
+      "club_id": "helmondsport-nl",
+      "title": "Helmond Sport — wf-2024-2025-4ef6ca45 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "helmondsport-nl-wf-2024-2025-4ef6ca45",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":5.135616,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":0.196967,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Afschrijvingen","category":"depreciation","amount":-0.056242,"disclosure":"aggregated"},
+        {"label":"Overige kosten","category":"lump_football_operations_expense","amount":-7.426289,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.079618,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":5.332583,"expenses":7.482531,"net_result":-2.229566},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële baten en lasten","amount":-0.079618},{"label":"Belastingen","amount":null}],
+        "no_breakdown": [
+          {"line":"Omzet","side":"revenue","amount":5.135616,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Overige kosten",
+            "side": "expense",
+            "amount": 7.426289,
+            "reason": "Claude 2026-10-18 (subagente Sonnet): 'Overige kosten' 7.426.289 NO es un 'otros gastos' comun: el estado reducido de la KvK (Omzet, Afschrijvingen, Overige kosten) lo usa para TODOS los costos operativos salvo la depreciacion (5.135.616 - 56.242 - 7.426.289 = -2.346.915), o sea que incluye sueldos del plantel, staff, estadio y administracion, sin desglose. Dejarlo en other_expenses haria desaparecer los sueldos del club (wagesToTurnover en 0). Corresponde el bolsón lump_football_operations_expense (monto real que la fuente no separa; no se inventa un desglose). Alternativa si Guido prefiere no usar el bolsón: other_expenses, pero con el rawLabel 'Overige kosten' igual. Es una decision de criterio (la regla pide consultarlo a Guido cuando el documento no permite categorizar como Boca). Entidad: Stichting Helmond Sport. [Overige kosten € 7.426.289 (L31); Omzet € 5.135.616 (L29); Bedrijfsr"
+          }
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "hoffenheim-de",
+    "name": "TSG 1899 Hoffenheim Fußball-Spielbetriebs GmbH",
+    "display_name": "TSG Hoffenheim",
+    "country": "DE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "hoffenheim-de-konzernabschluss-2024",
+      "club_id": "hoffenheim-de",
+      "title": "Konzernabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "hoffenheim-de-konzernabschluss-2025",
+      "club_id": "hoffenheim-de",
+      "title": "Konzernabschluss zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual (Dr. Markus Schütz, Vorsitzender der Geschäftsführung desde 8/7/2024)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "hoffenheim-de-konzernabschluss-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Medienrechte","category":"broadcasting","amount":58.005,"disclosure":"detailed"},
+        {"label":"Sponsoring","category":"sponsorship_commercial","amount":23.109,"disclosure":"detailed"},
+        {"label":"Transfers","category":"player_sales","amount":44.873,"disclosure":"detailed"},
+        {"label":"Handel","category":"sponsorship_commercial","amount":2.98,"disclosure":"detailed"},
+        {"label":"Spielbetrieb","category":"matchday_competition","amount":15.145,"disclosure":"detailed"},
+        {
+          "label": "Umsatzerlöse (resto, sin desglose adicional en el documento)",
+          "category": "other_income",
+          "amount": 5.104596,
+          "disclosure": "aggregated_residual"
+        },
+        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":1.57509,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Materialaufwand","category":"other_expenses","amount":-3.389566,"disclosure":"detailed"},
+        {
+          "label": "Personalaufwand",
+          "category": "wages_squad",
+          "amount": -90.996243,
+          "disclosure": "detailed",
+          "items": [["Löhne und Gehälter",-85.06454],["soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",-5.931703]]
+        },
+        {
+          "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — I. Immaterielle Vermögensgegenstände (entgeltlich erworbene Konzessionen; überwiegend Spielervermögen), laut Konzern-Anlagenspiegel",
+          "category": "player_amortisation",
+          "amount": -25.823,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — II. Sachanlagen, laut Konzern-Anlagenspiegel",
+          "category": "depreciation",
+          "amount": -4.315809,
+          "disclosure": "detailed",
+          "items": [
+            ["Grundstücke, grundstücksgleiche Rechte etc.",-3.143],
+            ["technische Anlagen und Maschinen",-0.391],
+            ["andere Anlagen, Betriebs- und Geschäftsausstattung",-0.783]
+          ]
+        },
+        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-54.148713,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":4.718732,"tax":24.430913,"gross_debt":58.277885,"cash":35.578492},
+      "official_totals": {"revenue":150.791686,"expenses":178.673331,"net_result":1.268}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "hoffenheim-de-konzernabschluss-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Medienrechte","category":"broadcasting","amount":84.099,"disclosure":"detailed"},
+        {"label":"Sponsoring","category":"sponsorship_commercial","amount":22.986,"disclosure":"detailed"},
+        {"label":"Transfers","category":"player_sales","amount":37.679,"disclosure":"detailed"},
+        {"label":"Handel","category":"sponsorship_commercial","amount":3.589,"disclosure":"detailed"},
+        {"label":"Spielbetrieb","category":"matchday_competition","amount":17.312,"disclosure":"detailed"},
+        {
+          "label": "Umsatzerlöse (resto, sin desglose adicional en el documento)",
+          "category": "other_income",
+          "amount": 6.276496,
+          "disclosure": "aggregated_residual"
+        },
+        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":1.456315,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Materialaufwand","category":"other_expenses","amount":-3.996119,"disclosure":"detailed"},
+        {
+          "label": "Personalaufwand",
+          "category": "wages_squad",
+          "amount": -94.870639,
+          "disclosure": "detailed",
+          "items": [["Löhne und Gehälter",-88.032356],["soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",-6.838283]]
+        },
+        {
+          "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — I. Immaterielle Vermögensgegenstände (entgeltlich erworbene Konzessionen; überwiegend Spielervermögen), laut Konzern-Anlagenspiegel",
+          "category": "player_amortisation",
+          "amount": -39.445,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — II. Sachanlagen, laut Konzern-Anlagenspiegel",
+          "category": "depreciation",
+          "amount": -4.440434,
+          "disclosure": "detailed",
+          "items": [
+            ["Grundstücke, grundstücksgleiche Rechte etc.",-3.187],
+            ["technische Anlagen und Maschinen",-0.263],
+            ["andere Anlagen, Betriebs- und Geschäftsausstattung",-0.991]
+          ]
+        },
+        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-60.442856,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":3.512087,"tax":27.38542,"gross_debt":79.418182,"cash":41.681699},
+      "official_totals": {"revenue":173.397811,"expenses":203.195048,"net_result":1.10027}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

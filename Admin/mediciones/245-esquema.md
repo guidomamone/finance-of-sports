@@ -1,7 +1,7 @@
-# To-do 245, fase 1: esquema JSON de los datos de un club (propuesta, 2026-10-20, Pipeline 6)
+# Esquema JSON de los datos de un club (to-do 245)
 
-Estado: PROPUESTA, sin código. Todo lo de abajo sale de leer los 313 `data/<país>/*-data.js` actuales (1.203 fuentes, 1.197 ejercicios,
-33.138 líneas). Nada se toca en `data/` ni en `js/` en esta fase.
+Estado: VIGENTE. El JSON `data/<país>/<id>.json` es la fuente de cada club y `<id>-data.js` se genera de ahí (`tools/generar-data.mjs`). El JSON Schema formal
+está en `data/schema/club-v1.json`. Lo de abajo describe el esquema; las secciones de "fase 1" y "fase 2" del final son historia de cómo se llegó.
 
 ## Qué hay hoy (medido)
 
@@ -47,7 +47,8 @@ archivo
     official_totals   { revenue, expenses, net_result }                  // officialTotalRevenue / Expenses / PAT
     adjustments       { extra_rows?[], no_breakdown?[], included_in? }   // extraRows, sinDesglose, incluidoEn tal cual
   budget_overlay      presupuesto*ByYear (cuando existe), mismo esquema por año
-  squad_transfers, results, titles   // pasesData, resultadosData, titulosData: se copian tal cual dentro de "extras" en la fase 1
+  squad_transfers, results, titles   // pasesData, resultadosData, titulosData; las claves de los bloques libres van en inglés (tabla de abajo), los textos quedan en español
+  extras              { budget_assumptions, budget_financial, budget_investments, finance_years, finance_managements }   // lo editorial de pocos clubes (Boca, River, Racing)
 ```
 
 Regla de la ida y vuelta: ningún campo se inventa ni se redondea; lo que hoy es `null`, `undefined` o falta se distingue (`null` explícito o clave ausente) para que
@@ -103,3 +104,18 @@ el JS regenerado dé los mismos objetos.
 Fase 1, sin tocar `data/` ni `js/`: (b) `tools/exportar-json.mjs` (solo lectura: lee los `data/*-data.js` y escribe a `Generados/datos-json/`, que no se publica);
 (c) `tools/validar-esquema-json.mjs`; (d) la prueba de ida y vuelta: se regenera el JS desde el JSON y se compara, objeto por objeto, contra el JS actual en los 313
 clubes, y se anota cuántos dan distinto y por qué. Fase 2 (no se hace ahora): que el JSON sea la fuente y el JS se genere desde ahí.
+
+
+## Claves de los bloques de texto libre (fase 2)
+
+`results` (por gestión), `titles`, `squad_transfers` y `extras` traducen sus claves al inglés con un solo diccionario (`CLAVES_LIBRES` de `tools/json-datos.mjs`, de
+ida y de vuelta); los valores, textos incluidos, quedan como están. `titulosLocales` → `local_titles`, `titulosInternacionales` → `international_titles`,
+`mejorResultadoLibertadores` → `best_libertadores_result`, `anio` → `year`, `competencia` → `competition`, `resultado` → `result`, `gestion` → `management`,
+`docLabel` → `doc_label`, `isResult` → `is_result`, `formato` → `format`. Las claves de datos (el apellido de cada gestión en `results`) no se tocan. El data file
+generado vuelve a los nombres de siempre, que son los que lee el motor del sitio.
+
+## Fase 2 (hecha)
+
+El JSON es la fuente (D1: `data/<país>/<id>.json`, publicado como dato abierto) y el sitio sigue cargando el `-data.js` generado (D2). Las tools de carga escriben el
+JSON con `tools/club-json.mjs`. Boca quedó con la estructura de los demás: sus fuentes, gestiones y socios viven en su data file, no en `data/clubs.js`. La identidad del
+club (`club.*`) es una copia de `data/clubs.js`, que sigue siendo la fuente de verdad porque hace falta antes de elegir un club (`generar-data.mjs --identidad` la refresca).

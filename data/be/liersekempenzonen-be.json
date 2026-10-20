@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "liersekempenzonen-be",
+    "name": "Lierse Kempenzonen VZW",
+    "display_name": "Lierse Kempenzonen",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "liersekempenzonen-be-jaarrekening-2018-06-30-individual",
+      "club_id": "liersekempenzonen-be",
+      "title": "Lierse Kempenzonen VZW — jaarrekening-2018-06-30-individual (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liersekempenzonen-be-jaarrekening-2019-06-30-individual",
+      "club_id": "liersekempenzonen-be",
+      "title": "Lierse Kempenzonen VZW — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liersekempenzonen-be-jaarrekening-2020-06-30-individual",
+      "club_id": "liersekempenzonen-be",
+      "title": "Lierse Kempenzonen VZW — jaarrekening-2020-06-30-individual (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liersekempenzonen-be-jaarrekening-2021-06-30-individual",
+      "club_id": "liersekempenzonen-be",
+      "title": "Lierse Kempenzonen VZW — jaarrekening-2021-06-30-individual (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-06-30",
+      "currency": "EUR",
+      "source_id": "liersekempenzonen-be-jaarrekening-2018-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2018-06-30"},
+      "revenue": [
+        {"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":0.367044,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke opbrengsten","category":"other_income","amount":0.05,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.368819,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.040562,"disclosure":"aggregated"},
+        {"label":"Andere personeelskosten","category":"wages_squad","amount":-0.03074,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -0.087351,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.016167,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke kosten","category":"exceptional_items","amount":-0.005559,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.000437,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.417044,"expenses":0.549198,"net_result":-0.140014},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële opbrengsten","amount":0.000275},{"label":"Financiële kosten","amount":0.000162}],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.367044,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "liersekempenzonen-be-jaarrekening-2019-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Uitzonderlijke opbrengsten","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":0.866254,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.996766,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.163692,"disclosure":"aggregated"},
+        {"label":"Andere personeelskosten","category":"wages_squad","amount":-0.202603,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -0.094099,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.018143,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke kosten","category":"exceptional_items","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.011177,"tax":-0.008396,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.866254,"expenses":1.475303,"net_result":-0.628623},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Financiële opbrengsten","amount":0.000052},
+          {"label":"Financiële kosten","amount":-0.011229},
+          {"label":"Belastingen op het resultaat (67/77)","amount":-0.008396}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.866254,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "liersekempenzonen-be-jaarrekening-2020-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":0.79939,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.961507,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.171455,"disclosure":"aggregated"},
+        {"label":"Andere personeelskosten","category":"wages_squad","amount":-0.173937,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -0.126445,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.00303,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.021,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.04527,"tax":-0.00549,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.79939,"expenses":1.457374,"net_result":-0.708745},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Financiële opbrengsten","amount":0.000154},
+          {"label":"Financiële kosten","amount":-0.045424},
+          {"label":"Belastingen op het resultaat (67/77)","amount":-0.00549}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.79939,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "liersekempenzonen-be-jaarrekening-2021-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":0.558356,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-1.28844,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -0.066604,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.01134,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.010882,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.02,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.024498,"tax":-0.047616,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.558356,"expenses":1.377266,"net_result":-0.911025},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.00003},
+          {"label":"Recurrente financiële kosten","amount":-0.024528},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.047616}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.558356,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

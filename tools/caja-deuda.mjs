@@ -76,6 +76,7 @@ import * as EV from './evidencia-club.mjs';
 import { ajusteDe, ajusteDelAnio, ajusteClubODoc, ajustePerimetroDe } from './ajustes.mjs';
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
+import { modificarClub } from './club-json.mjs'; // (to-do 245, fase 2) el JSON es la fuente de cada club
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
 import { formaImposible } from './verify-numbers.mjs';
 
@@ -1200,25 +1201,23 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
   // evidencia del club (Admin/carga-clubes/<club>.md), que entra en el snapshot para revertirse con el resto.
   const { snapshot, revertir, publicarCambios } = await import('./cargar.mjs');
   const evExtra = [EV.rutaRel(clubId)];
-  const dataPath = resolve(ROOT, rutaData(clubId)); const snap = snapshot(evExtra); const escritos = [rutaData(clubId), EV.rutaRel(clubId)];
+  const snap = snapshot(evExtra); const escritos = [EV.rutaRel(clubId)];
   try {
-    let t = readFileSync(dataPath, 'utf8');
     let ev = EV.leer(clubId);
-    const ini = t.search(/const \w+FiscalYearMeta\s*=\s*\{/); if (ini < 0) throw new Error('no encontré <club>FiscalYearMeta');
-    for (const anio of [...new Set(conValor.map((p) => p.anio))]) {
-      const abreObj = t.indexOf('{', ini); const cierraObj = cierreDe(t, abreObj);
-      const m = new RegExp(`\\n(\\s*)['"]?${anio}['"]?\\s*:\\s*\\{`).exec(t.slice(abreObj, cierraObj)); if (!m) throw new Error(`no encontré el año ${anio}`);
-      const abre = abreObj + m.index + m[0].length - 1; const cierra = cierreDe(t, abre); let bloque = t.slice(abre, cierra);
-      const notas = [];
-      for (const p of conValor.filter((x) => x.anio === anio)) {
-        const re = new RegExp(`\\b${p.cual}\\s*:\\s*null\\b`); if (!re.test(bloque)) throw new Error(`${anio}: no encontré ${p.cual}:null (¿ya tiene valor?)`);
-        bloque = bloque.replace(re, `${p.cual}:${r6(p.valor)}`);
-        notas.push(`${p.cual} escalón ${p.escalon} (compuerta: ${p.validacion}): ${p.filas.length ? p.filas.map((f) => `"${String(f.etiqueta).slice(0, 50)}" pág. ${f.pagina}`).join(' + ') : p.como}`);
+    // (to-do 245, fase 2) caja y deuda se completan en el JSON del club (financial.cash / gross_debt del año) y se regenera el data file
+    const [rj, rd] = modificarClub(clubId, (c) => {
+      for (const anio of [...new Set(conValor.map((p) => p.anio))]) {
+        const m = c.datos.fiscalYearMeta[anio]; if (!m) throw new Error(`no encontré el año ${anio}`);
+        const notas = [];
+        for (const p of conValor.filter((x) => x.anio === anio)) {
+          if (m[p.cual] !== null) throw new Error(`${anio}: no encontré ${p.cual}:null (¿ya tiene valor?)`);
+          m[p.cual] = r6(p.valor);
+          notas.push(`${p.cual} escalón ${p.escalon} (compuerta: ${p.validacion}): ${p.filas.length ? p.filas.map((f) => `"${String(f.etiqueta).slice(0, 50)}" pág. ${f.pagina}`).join(' + ') : p.como}`);
+        }
+        ev = EV.agregarTexto(ev, anio, 'Meta', [`tools/caja-deuda.mjs (${HOY}): ${notas.join('; ').replace(/\n/g, ' ')}`]);
       }
-      ev = EV.agregarTexto(ev, anio, 'Meta', [`tools/caja-deuda.mjs (${HOY}): ${notas.join('; ').replace(/\n/g, ' ')}`]);
-      t = t.slice(0, abre) + bloque + t.slice(cierra);
-    }
-    writeFileSync(dataPath, t);
+    });
+    escritos.push(rj, rd);
     EV.guardar(clubId, ev);
     const r = publicarCambios(snap, evExtra, escritos);
     console.log(r.ok ? `Escrito: ${r.escritos.join(', ')} · ${r.audit}` : `NO se escribió: ${r.motivo}`);
@@ -1371,21 +1370,23 @@ async function completarPersonal(clubId, { ejecutar = false, escribir = false, p
   if (partir) return partirFilaGlobal(clubId, d, r.res, { escribir });
   if (!escribir || !nuevos.length) return;
   const { snapshot, revertir, publicarCambios } = await import('./cargar.mjs');
-  const dataRel = rutaData(clubId); const dataPath = resolve(ROOT, dataRel); const evRel = EV.rutaRel(clubId);
-  const snap = snapshot([evRel]); const escritos = [dataRel, evRel];
+  const evRel = EV.rutaRel(clubId);
+  const snap = snapshot([evRel]); const escritos = [evRel];
   try {
-    let t = readFileSync(dataPath, 'utf8'); let ev = EV.leer(clubId);
-    const abreObj = t.indexOf('FiscalYearMeta = {'); const cierraObj = cierreDe(t, t.indexOf('{', abreObj));
-    for (const x of nuevos) {
-      const m = new RegExp(`\\n(\\s*)['"]?${x.anio}['"]?\\s*:\\s*\\{`).exec(t.slice(abreObj, cierraObj)); if (!m) throw new Error(`no encontré el año ${x.anio}`);
-      const abre = abreObj + m.index + m[0].length - 1; const cierra = cierreDe(t, abre); let bloque = t.slice(abre, cierra);
-      if (/\bstaffCost\s*:/.test(bloque)) continue;
-      if (!/\bcash\s*:\s*[^,\n]+,/.test(bloque)) throw new Error(`${x.anio}: no encontré cash: para poner staffCost al lado`);
-      bloque = bloque.replace(/(\bcash\s*:\s*[^,\n]+,)/, `$1 staffCost:${r6(x.valor)},`);
-      ev = EV.agregarTexto(ev, x.anio, 'Meta', [`tools/caja-deuda.mjs --personal (${HOY}): staffCost ${r6(x.valor)} (compuerta: ${x.validacion}): ${x.como}`]);
-      t = t.slice(0, abre) + bloque + t.slice(cierra);
-    }
-    writeFileSync(dataPath, t); EV.guardar(clubId, ev);
+    let ev = EV.leer(clubId);
+    // (to-do 245, fase 2) el costo de personal va al JSON del club (financial.staff_cost del año) y se regenera el data file
+    const aEscribir = [];
+    for (const x of nuevos) aEscribir.push(x);
+    const [rj, rd] = modificarClub(clubId, (c) => {
+      for (const x of aEscribir) {
+        const m = c.datos.fiscalYearMeta[x.anio]; if (!m) throw new Error(`no encontré el año ${x.anio}`);
+        if (m.staffCost !== undefined) continue;
+        if (!('cash' in m)) throw new Error(`${x.anio}: el año no tiene cash`);
+        m.staffCost = r6(x.valor);
+        ev = EV.agregarTexto(ev, x.anio, 'Meta', [`tools/caja-deuda.mjs --personal (${HOY}): staffCost ${r6(x.valor)} (compuerta: ${x.validacion}): ${x.como}`]);
+      }
+    });
+    escritos.push(rj, rd); EV.guardar(clubId, ev);
     const pr = publicarCambios(snap, [evRel], escritos);
     console.log(pr.ok ? `Escrito: ${pr.escritos.join(', ')} · ${pr.audit}` : `NO se escribió: ${pr.motivo}`);
   } catch (err) { const rv = revertir(snap, [evRel]); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); }

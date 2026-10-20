@@ -1,0 +1,787 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "sarpsborg08-no",
+    "name": "Sarpsborg 08 Fotballforening",
+    "display_name": "Sarpsborg 08",
+    "country": "NO",
+    "reporting_currency": "NOK",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2025",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2012",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2012 (ejercicio 2012)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2014",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2014 (ejercicio 2014)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2016",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2017",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2018",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2019",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2015",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2015 (ejercicio 2015)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2020",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2020 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2021",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2021 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2022",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2024",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2023",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2008",
+      "club_id": "sarpsborg08-no",
+      "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2008 (ejercicio 2008)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2008,
+      "period_end": "2008-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2008",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2008-12-31"},
+      "revenue": [
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.057,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":0.22305,"disclosure":"aggregated"},
+        {"label":"Kampbillettinntekter","category":"matchday_competition","amount":1.073252,"disclosure":"aggregated"},
+        {"label":"Andre arrangementsinnt.","category":"other_income","amount":0.233742,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":1.56012,"disclosure":"aggregated"},
+        {"label":"Reklame-/sponsorinnt.","category":"sponsorship_commercial","amount":8.015981,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere (Brutto)","category":"player_sales","amount":2.437,"disclosure":"aggregated"},
+        {"label":"Andre salgsinntekter","category":"other_income","amount":1.330087,"disclosure":"aggregated"},
+        {"label":"Diferencia de redondeo","category":"other_income","amount":-0.000001,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_expenses","amount":-1.166928,"disclosure":"aggregated"},
+        {"label":"Lønnskostnad","category":"wages_squad","amount":-11.86385,"disclosure":"aggregated"},
+        {"label":"Avskrivning på varige driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-0.100208,"disclosure":"aggregated"},
+        {"label":"Administrasjonskostnader","category":"admin_general_expense","amount":-0.884878,"disclosure":"aggregated"},
+        {"label":"Egne arrangement","category":"match_organisation_expense","amount":-1.50342,"disclosure":"aggregated"},
+        {"label":"Reise- og oppholdskostnader bortekamper","category":"match_organisation_expense","amount":-0.457708,"disclosure":"aggregated"},
+        {"label":"Kostnader reklame/sponsor","category":"admin_general_expense","amount":-0.571074,"disclosure":"aggregated"},
+        {"label":"Kjøp/leie spillere","category":"other_expenses","amount":-0.086442,"disclosure":"aggregated"},
+        {"label":"Salgskostnader","category":"other_expenses","amount":-0.556876,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-0.300208,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.156375,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":14.930231,"expenses":17.491592,"net_result":-2.717736}
+    },
+    {
+      "fiscal_year": 2012,
+      "period_end": "2012-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2012",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2012-12-31"},
+      "revenue": [
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.370066,"disclosure":"aggregated"},
+        {"label":"Billettinntekter","category":"matchday_competition","amount":3.227264,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":3.616825,"disclosure":"aggregated"},
+        {"label":"Andre salgsinntekter","category":"other_income","amount":1.833703,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":2.628265,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":0.790476,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorinntekter","category":"sponsorship_commercial","amount":11.858375,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":2.3942,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening, matriell, kurs","category":"other_expenses","amount":-2.107329,"disclosure":"aggregated"},
+        {"label":"Reise og oppholdskostander bortekamper","category":"match_organisation_expense","amount":-1.353564,"disclosure":"aggregated"},
+        {"label":"Salgskostnader","category":"other_expenses","amount":-0.664981,"disclosure":"aggregated"},
+        {"label":"Lønnskostnad","category":"wages_squad","amount":-12.071439,"disclosure":"aggregated"},
+        {"label":"Avskrivning på varige driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-0.48069,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-3.898519,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorkostnader","category":"admin_general_expense","amount":-3.929984,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-1.728093,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.106866,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":26.719174,"expenses":26.234599,"net_result":0.377709},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.003561},
+          {"label":"Annen finansinntekt","amount":0.00329},
+          {"label":"Annen rentekostnad","amount":-0.050891},
+          {"label":"Annen finanskostnad","amount":-0.062826}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2014,
+      "period_end": "2014-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2014",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2014-12-31"},
+      "revenue": [
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.258823,"disclosure":"aggregated"},
+        {"label":"Billettinntekter","category":"matchday_competition","amount":5.475782,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":4.282673,"disclosure":"aggregated"},
+        {"label":"Andre salgsinntekter","category":"other_income","amount":2.271759,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":6.16638,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":1.931104,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorinntekter","category":"sponsorship_commercial","amount":15.333625,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":9.440754,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening, matriell, kurs","category":"other_expenses","amount":-3.918066,"disclosure":"aggregated"},
+        {"label":"Reise og oppholdskostnader bortekamper","category":"match_organisation_expense","amount":-2.339752,"disclosure":"aggregated"},
+        {"label":"Salgskostnader","category":"other_expenses","amount":-0.897982,"disclosure":"aggregated"},
+        {"label":"Lønnskostnad","category":"wages_squad","amount":-20.507849,"disclosure":"aggregated"},
+        {"label":"Avskrivning på driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-0.536347,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-4.607887,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorkostnader","category":"admin_general_expense","amount":-5.026981,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-3.147236,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.042257,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":45.1609,"expenses":40.9821,"net_result":4.13654},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.019911},
+          {"label":"Annen finansinntekt","amount":0.096293},
+          {"label":"Annen rentekostnad","amount":-0.021374},
+          {"label":"Annen finanskostnad","amount":-0.137087}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2015,
+      "period_end": "2015-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2015",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2015-12-31"},
+      "revenue": [
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.344261,"disclosure":"aggregated"},
+        {"label":"Billettinntekter","category":"matchday_competition","amount":5.46125,"disclosure":"aggregated"},
+        {"label":"Cupoppgjør NFF","category":"competition_bonus","amount":1.266028,"disclosure":"aggregated"},
+        {"label":"Grasrotandel","category":"other_income","amount":1.235645,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"other_income","amount":1.039266,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":1.791653,"disclosure":"aggregated"},
+        {"label":"Kiosk salg","category":"other_income","amount":1.191064,"disclosure":"aggregated"},
+        {"label":"Supporterutstyr","category":"sponsorship_commercial","amount":1.841474,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":0.409081,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":6.513176,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":1.998957,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorinntekter","category":"sponsorship_commercial","amount":16.5456,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":6.542138,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening, matriell, kurs","category":"other_expenses","amount":-4.116991,"disclosure":"aggregated"},
+        {"label":"Reise og oppholdskostander bortekamper","category":"match_organisation_expense","amount":-2.831488,"disclosure":"aggregated"},
+        {"label":"Salgskostnader","category":"other_expenses","amount":-1.247693,"disclosure":"aggregated"},
+        {"label":"Lønn","category":"wages_squad","amount":-21.803897,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-2.812606,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.228403,"disclosure":"aggregated"},
+        {"label":"Andre relaterte ytelser","category":"wages_squad","amount":1.150186,"disclosure":"aggregated"},
+        {"label":"Avskrivning på driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-0.841221,"disclosure":"aggregated"},
+        {"label":"Påmeldingsavgifter/gebyr","category":"match_organisation_expense","amount":-0.655335,"disclosure":"aggregated"},
+        {"label":"Honorar medisinsk støtteapparat","category":"other_expenses","amount":-0.595186,"disclosure":"aggregated"},
+        {"label":"Agent/talentspeidere","category":"other_expenses","amount":-0.64447,"disclosure":"aggregated"},
+        {"label":"Reisekostnader/kilometergodt.","category":"match_organisation_expense","amount":-0.955311,"disclosure":"aggregated"},
+        {"label":"Leiekostnader","category":"other_expenses","amount":-0.792651,"disclosure":"aggregated"},
+        {"label":"Utdanningsmidler/fotballisenser","category":"other_expenses","amount":-0.944916,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-0.750053,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorkostnader","category":"admin_general_expense","amount":-5.334211,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-2.729702,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.039749,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":46.179593,"expenses":46.133948,"net_result":0.005895},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.004911},
+          {"label":"Annen finansinntekt","amount":0.074674},
+          {"label":"Annen rentekostnad","amount":-0.047578},
+          {"label":"Annen finanskostnad","amount":-0.071756}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2016-12-31"},
+      "revenue": [
+        {"label":"Billettinntekter","category":"matchday_competition","amount":4.662565,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.450211,"disclosure":"aggregated"},
+        {"label":"Cupoppgjør NFF","category":"competition_bonus","amount":0.721254,"disclosure":"aggregated"},
+        {"label":"Grasrotandel","category":"other_income","amount":1.343766,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"other_income","amount":1.6542,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":2.037584,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorinntekter","category":"sponsorship_commercial","amount":18.916052,"disclosure":"aggregated"},
+        {"label":"Kiosk salg","category":"other_income","amount":1.180533,"disclosure":"aggregated"},
+        {"label":"Supporterutstyr","category":"sponsorship_commercial","amount":0.686372,"disclosure":"aggregated"},
+        {"label":"Solidaritetsmidler","category":"player_sales","amount":1.421302,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":0.265807,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":8.284169,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":2.051868,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":12.740224,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening, matriell, kurs","category":"other_expenses","amount":-3.900777,"disclosure":"aggregated"},
+        {"label":"Reise og oppholdskostander bortekamper","category":"match_organisation_expense","amount":-1.789466,"disclosure":"aggregated"},
+        {"label":"Salgskostnader","category":"other_expenses","amount":-0.827889,"disclosure":"aggregated"},
+        {"label":"Lønn","category":"wages_squad","amount":-21.636942,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-3.066585,"disclosure":"aggregated"},
+        {"label":"Andre relaterte ytelser / Refusjoner","category":"wages_squad","amount":-1.114527,"disclosure":"aggregated"},
+        {"label":"Avskrivning på driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-1.014535,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-8.698726,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorkostnader","category":"admin_general_expense","amount":-5.566305,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-4.188376,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.201702,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":56.415907,"expenses":51.804128,"net_result":4.410077},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.008712},
+          {"label":"Annen finansinntekt","amount":0.029172},
+          {"label":"Annen rentekostnad","amount":-0.072973},
+          {"label":"Annen finanskostnad","amount":-0.166613}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2017-12-31"},
+      "revenue": [
+        {"label":"Billetinntekter","category":"matchday_competition","amount":10.498494,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.41888,"disclosure":"aggregated"},
+        {"label":"Cupoppgjør NFF","category":"competition_bonus","amount":1.179278,"disclosure":"aggregated"},
+        {"label":"Grasrotandel","category":"other_income","amount":1.336056,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"other_income","amount":4.785,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":1.720384,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorinntekter","category":"sponsorship_commercial","amount":21.688521,"disclosure":"aggregated"},
+        {"label":"Kiosk salg","category":"other_income","amount":1.662776,"disclosure":"aggregated"},
+        {"label":"Supporterutstyr","category":"sponsorship_commercial","amount":2.219196,"disclosure":"aggregated"},
+        {"label":"Solidaritetsmidler/UEFA","category":"competition_bonus","amount":3.461793,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":1.248519,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":12.615928,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":3.078983,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":15.059868,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening/materiell kostnader","category":"other_expenses","amount":-2.321628,"disclosure":"aggregated"},
+        {"label":"Kamp kostnader","category":"match_organisation_expense","amount":-3.476751,"disclosure":"aggregated"},
+        {"label":"Billettkostnader Cupfinale/event","category":"match_organisation_expense","amount":-3.526234,"disclosure":"aggregated"},
+        {"label":"Reise og oppholdskostander bortekamper","category":"match_organisation_expense","amount":-2.248191,"disclosure":"aggregated"},
+        {"label":"Salgskostnader","category":"other_expenses","amount":-2.135433,"disclosure":"aggregated"},
+        {"label":"Lønn","category":"wages_squad","amount":-29.534883,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-4.176987,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.378507,"disclosure":"aggregated"},
+        {"label":"Andre relaterte ytelser / Refusjoner","category":"wages_squad","amount":-0.52367,"disclosure":"aggregated"},
+        {"label":"Avskrivning på driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-1.844322,"disclosure":"aggregated"},
+        {"label":"Honorar medisinsk støtteapparat","category":"other_expenses","amount":-0.916217,"disclosure":"aggregated"},
+        {"label":"Agent/talentspeidere","category":"other_expenses","amount":-1.617969,"disclosure":"aggregated"},
+        {"label":"Reisekostnader/kilometergodt.","category":"match_organisation_expense","amount":-1.377948,"disclosure":"aggregated"},
+        {"label":"Leiekostnader","category":"other_expenses","amount":-1.955702,"disclosure":"aggregated"},
+        {"label":"Utdanningsmidler/fotballisenser","category":"other_expenses","amount":-3.143897,"disclosure":"aggregated"},
+        {"label":"Kostnader Videresalg Invest","category":"other_expenses","amount":-1.72075,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-1.641942,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorkostnader","category":"admin_general_expense","amount":-6.635189,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-5.050467,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.109996,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":80.973676,"expenses":74.226687,"net_result":6.636995},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.007622},
+          {"label":"Annen finansinntekt","amount":0.016754},
+          {"label":"Annen rentekostnad","amount":-0.105066},
+          {"label":"Annen finanskostnad","amount":-0.029306}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2018-12-31"},
+      "revenue": [
+        {"label":"Billettinntekter","category":"matchday_competition","amount":10.799302,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.54178,"disclosure":"aggregated"},
+        {"label":"Cupoppgjør NFF","category":"competition_bonus","amount":0.179476,"disclosure":"aggregated"},
+        {"label":"Media/tilskudd UEFA","category":"competition_bonus","amount":53.339762,"disclosure":"aggregated"},
+        {"label":"Grasrotandel","category":"other_income","amount":1.755421,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"other_income","amount":5.4875,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":1.419999,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorinntekter","category":"sponsorship_commercial","amount":27.920566,"disclosure":"aggregated"},
+        {"label":"Kiosk salg","category":"other_income","amount":2.119448,"disclosure":"aggregated"},
+        {"label":"Supporterutstyr","category":"sponsorship_commercial","amount":1.784621,"disclosure":"aggregated"},
+        {"label":"Solidaritetsmidler","category":"player_sales","amount":1.240989,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":0.688182,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":17.441622,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":1.061454,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":41.570877,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening/materiell kostnader","category":"other_expenses","amount":-4.543715,"disclosure":"aggregated"},
+        {"label":"Kamp kostnader","category":"match_organisation_expense","amount":-6.077228,"disclosure":"aggregated"},
+        {"label":"Reise og oppholdskostander bortekamper","category":"match_organisation_expense","amount":-11.272725,"disclosure":"aggregated"},
+        {"label":"Innkjøp av varer for videresalg","category":"other_expenses","amount":-1.656566,"disclosure":"aggregated"},
+        {"label":"Kostn /kjøp/salg spillere/utd midler","category":"player_amortisation","amount":-8.296499,"disclosure":"aggregated"},
+        {"label":"Lønn","category":"wages_squad","amount":-43.412691,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-6.681787,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.474999,"disclosure":"aggregated"},
+        {"label":"Andre relaterte ytelser / Refusjoner","category":"wages_squad","amount":-0.346041,"disclosure":"aggregated"},
+        {"label":"Avskrivning på driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-4.391933,"disclosure":"aggregated"},
+        {"label":"Honorar medisinsk støtteapparat","category":"other_expenses","amount":-1.152056,"disclosure":"aggregated"},
+        {"label":"Agent/talentspeidere","category":"other_expenses","amount":-2.741182,"disclosure":"aggregated"},
+        {"label":"Reisekostnader/kilometergodt.","category":"match_organisation_expense","amount":-1.887257,"disclosure":"aggregated"},
+        {"label":"Leiekostnader","category":"other_expenses","amount":-2.50332,"disclosure":"aggregated"},
+        {"label":"Gave til sammarbeidsklubber","category":"other_expenses","amount":-0.975,"disclosure":"aggregated"},
+        {"label":"Kostnader stadion UEFA","category":"match_organisation_expense","amount":-1.473431,"disclosure":"aggregated"},
+        {"label":"Kostnader Videresalg Invest","category":"other_expenses","amount":-3.127981,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-3.017256,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorkostnader","category":"admin_general_expense","amount":-8.30024,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-6.922218,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.400574,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":167.350999,"expenses":119.254125,"net_result":48.49745},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.054073},
+          {"label":"Annen finansinntekt","amount":0.719162},
+          {"label":"Annen rentekostnad","amount":-0.292804},
+          {"label":"Annen finanskostnad","amount":-0.079857}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2019-12-31"},
+      "revenue": [
+        {"label":"Billetinntekter","category":"matchday_competition","amount":5.497212,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.665763,"disclosure":"aggregated"},
+        {"label":"Cupoppgjør NFF","category":"competition_bonus","amount":0.18,"disclosure":"aggregated"},
+        {"label":"Media/tilskudd UEFA","category":"competition_bonus","amount":1.660498,"disclosure":"aggregated"},
+        {"label":"Grasrotandel","category":"other_income","amount":1.740286,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"other_income","amount":10.682,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":0.530236,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorinntekter","category":"sponsorship_commercial","amount":31.324296,"disclosure":"aggregated"},
+        {"label":"Kiosk salg","category":"other_income","amount":1.575543,"disclosure":"aggregated"},
+        {"label":"Supporterutstyr","category":"sponsorship_commercial","amount":0.983448,"disclosure":"aggregated"},
+        {"label":"Solidaritetsmidler","category":"player_sales","amount":-0.861223,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":0.457778,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":7.63828,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":1.214901,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":31.835973,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening/materiell kostnader","category":"other_expenses","amount":-4.693058,"disclosure":"aggregated"},
+        {"label":"Kamp kostnader","category":"match_organisation_expense","amount":-3.169108,"disclosure":"aggregated"},
+        {"label":"Reise og oppholdskostander bortekamper","category":"match_organisation_expense","amount":-3.279508,"disclosure":"aggregated"},
+        {"label":"Innkjøp av varer for videresalg","category":"other_expenses","amount":-1.171686,"disclosure":"aggregated"},
+        {"label":"Kostn./kjøp/salg spillere/utd.midler","category":"player_amortisation","amount":-8.044943,"disclosure":"aggregated"},
+        {"label":"Lønn","category":"wages_squad","amount":-35.057603,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-5.580634,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.492672,"disclosure":"aggregated"},
+        {"label":"Andre relaterte ytelser / Refusjoner","category":"wages_squad","amount":-0.248036,"disclosure":"aggregated"},
+        {"label":"Avskrivning på driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-7.869462,"disclosure":"aggregated"},
+        {"label":"Honorar medisinsk støtteapparat","category":"other_expenses","amount":-1.083383,"disclosure":"aggregated"},
+        {"label":"Agent/talentspeidere","category":"other_expenses","amount":-3.897215,"disclosure":"aggregated"},
+        {"label":"Reisekostnader/kilometergodt.","category":"match_organisation_expense","amount":-2.511709,"disclosure":"aggregated"},
+        {"label":"Leiekostnader","category":"other_expenses","amount":-2.735833,"disclosure":"aggregated"},
+        {"label":"Gave til samarbeidsklubber","category":"other_expenses","amount":-0.1,"disclosure":"aggregated"},
+        {"label":"Kostnader stadion UEFA","category":"match_organisation_expense","amount":-0.002226,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-2.346586,"disclosure":"aggregated"},
+        {"label":"Tap avgang Driftsmidler","category":"exceptional_items","amount":-3.189027,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorkostnader","category":"admin_general_expense","amount":-5.366425,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-8.19041,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.3943,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":95.124991,"expenses":95.840497,"net_result":-4.298833},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.134882},
+          {"label":"Annen finansinntekt","amount":0.124701},
+          {"label":"Annen rentekostnad","amount":-0.365587},
+          {"label":"Annen finanskostnad","amount":-0.288296}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2020-12-31"},
+      "revenue": [
+        {"label":"Billetinntekter","category":"matchday_competition","amount":0.25858,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.614433,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":4.527152,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorinntekter","category":"sponsorship_commercial","amount":30.459302,"disclosure":"aggregated"},
+        {"label":"Kiosk salg","category":"other_income","amount":0.281775,"disclosure":"aggregated"},
+        {"label":"Supporterutstyr","category":"sponsorship_commercial","amount":0.581453,"disclosure":"aggregated"},
+        {"label":"Solidaritetsmidler","category":"player_sales","amount":1.689553,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":0.465674,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":8.650934,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":7.436111,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":37.554448,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening/materiell kostnader","category":"other_expenses","amount":-1.38154,"disclosure":"aggregated"},
+        {"label":"Kampkostnader","category":"match_organisation_expense","amount":-1.3973,"disclosure":"aggregated"},
+        {"label":"Reise og oppholdskostander bortekamper","category":"match_organisation_expense","amount":-1.423855,"disclosure":"aggregated"},
+        {"label":"Salgskostnader","category":"other_expenses","amount":-12.789364,"disclosure":"aggregated"},
+        {"label":"Lønn","category":"wages_squad","amount":-32.323879,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-4.84323,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.497981,"disclosure":"aggregated"},
+        {"label":"Andre relaterte ytelser / Refusjoner","category":"wages_squad","amount":-0.359487,"disclosure":"aggregated"},
+        {"label":"Avskrivning på driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-7.263498,"disclosure":"aggregated"},
+        {"label":"Honorar medisinsk støtteapparat","category":"other_expenses","amount":-0.814106,"disclosure":"aggregated"},
+        {"label":"Agent/talentspeidere","category":"other_expenses","amount":-2.956518,"disclosure":"aggregated"},
+        {"label":"Reisekostnader/km.godtgjørelse","category":"match_organisation_expense","amount":-0.86273,"disclosure":"aggregated"},
+        {"label":"Leiekostnader","category":"other_expenses","amount":-2.165034,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-2.999876,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorkostnader","category":"admin_general_expense","amount":-6.278893,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-6.63344,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.320569,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":92.519415,"expenses":84.990731,"net_result":7.208115},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.011865},
+          {"label":"Annen finansinntekt","amount":0.648727},
+          {"label":"Annen rentekostnad","amount":-0.972011},
+          {"label":"Annen finanskostnad","amount":-0.00915}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2021",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2021-12-31"},
+      "revenue": [
+        {"label":"Billetinntekter","category":"matchday_competition","amount":4.469488,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.52874,"disclosure":"aggregated"},
+        {"label":"Kiosk salg","category":"other_income","amount":0.712646,"disclosure":"aggregated"},
+        {"label":"Supporterutstyr","category":"sponsorship_commercial","amount":0.56275,"disclosure":"aggregated"},
+        {"label":"Solidaritetsmidler","category":"player_sales","amount":2.044255,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":0.445746,"disclosure":"aggregated"},
+        {"label":"Cupoppgjør NFF","category":"competition_bonus","amount":0.923839,"disclosure":"aggregated"},
+        {"label":"Grasrotandel","category":"other_income","amount":1.766281,"disclosure":"aggregated"},
+        {"label":"Gaver/bidrag","category":"other_income","amount":0.887134,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":0.951984,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorinntekter","category":"sponsorship_commercial","amount":28.834355,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":9.841624,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":5.807216,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":23.603583,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening/materiell kostnader","category":"other_expenses","amount":-2.482753,"disclosure":"aggregated"},
+        {"label":"Kampkostnader","category":"match_organisation_expense","amount":-1.989981,"disclosure":"aggregated"},
+        {"label":"Reise og oppholdskostander bortekamper","category":"match_organisation_expense","amount":-2.065738,"disclosure":"aggregated"},
+        {"label":"Innkjøp av varer for videresalg","category":"other_expenses","amount":-0.533893,"disclosure":"aggregated"},
+        {"label":"Kostn.kjøp/salg spillere/utd.midler","category":"other_expenses","amount":-3.618602,"disclosure":"aggregated"},
+        {"label":"Lønn","category":"wages_squad","amount":-42.311084,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-6.345526,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.612728,"disclosure":"aggregated"},
+        {"label":"Andre ytelser / Refusjoner","category":"wages_squad","amount":0.250479,"disclosure":"aggregated"},
+        {"label":"Avskrivning på driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-6.614875,"disclosure":"aggregated"},
+        {"label":"Honorar medisinsk støtteapparat","category":"other_expenses","amount":-0.880844,"disclosure":"aggregated"},
+        {"label":"Agent/talentspeidere","category":"other_expenses","amount":-1.612212,"disclosure":"aggregated"},
+        {"label":"Reisekostnader/km.godtgjørelse","category":"match_organisation_expense","amount":-1.465518,"disclosure":"aggregated"},
+        {"label":"Leiekostnader","category":"other_expenses","amount":-2.452976,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-1.292603,"disclosure":"aggregated"},
+        {"label":"Reklame og sponsorkostnader","category":"admin_general_expense","amount":-5.712895,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-7.13347,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.126368,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":81.379641,"expenses":86.875219,"net_result":-6.621946},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.000865},
+          {"label":"Annen finansinntekt","amount":0.301252},
+          {"label":"Annen rentekostnad","amount":-1.057429},
+          {"label":"Annen finanskostnad","amount":-0.371056}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2022-12-31"},
+      "revenue": [
+        {"label":"Billetinntekter","category":"matchday_competition","amount":5.274688,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.596241,"disclosure":"aggregated"},
+        {"label":"Reklame- og sponsorinntekter","category":"sponsorship_commercial","amount":36.060365,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":8.795337,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":44.756778,"disclosure":"aggregated"},
+        {"label":"Andre salgsinntekter","category":"other_income","amount":5.510097,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":3.537229,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":1.869388,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
+          "category": "other_expenses",
+          "amount": -18.048344,
+          "disclosure": "aggregated"
+        },
+        {"label":"Trening, matriell, kamp kostn.","category":"other_expenses","amount":-6.965849,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-43.203474,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-6.262747,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.841484,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":0.157433,"disclosure":"aggregated"},
+        {"label":"Avskrivning av driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-6.423157,"disclosure":"aggregated"},
+        {"label":"Reise- og oppholdskostnader bortekamper","category":"match_organisation_expense","amount":-3.147705,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-10.020042,"disclosure":"aggregated"},
+        {"label":"Reklame- og sponsorkostnader","category":"admin_general_expense","amount":-8.044229,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-8.298063,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.596342,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":106.400123,"expenses":111.097661,"net_result":-6.293879},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.048457},
+          {"label":"Annen finansinntekt","amount":0.404741},
+          {"label":"Annen rentekostnad","amount":-1.254663},
+          {"label":"Annen finanskostnad","amount":-0.794877}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2023-12-31"},
+      "revenue": [
+        {"label":"Billetinntekter","category":"matchday_competition","amount":6.302385,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.665719,"disclosure":"aggregated"},
+        {"label":"Andre salgsinntekter","category":"other_income","amount":6.436355,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":6.052044,"disclosure":"aggregated"},
+        {"label":"Reklame- og sponsorinntekter","category":"sponsorship_commercial","amount":32.037096,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":20.144288,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":1.236754,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":73.670411,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening, matriell, kamp kostn.","category":"other_expenses","amount":-8.77361,"disclosure":"aggregated"},
+        {"label":"Reise- og oppholdskostnader bortekamper","category":"match_organisation_expense","amount":-3.906665,"disclosure":"aggregated"},
+        {"label":"Salgskostnader","category":"other_expenses","amount":-26.151779,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-46.202519,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-7.378294,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.484455,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":-0.008618,"disclosure":"aggregated"},
+        {"label":"Avskrivning av driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-6.618286,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-13.777199,"disclosure":"aggregated"},
+        {"label":"Reklame- og sponsorkostnader","category":"admin_general_expense","amount":-5.997944,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-8.272562,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.008445,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":146.545052,"expenses":127.571931,"net_result":18.981564},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.180908},
+          {"label":"Annen finansinntekt","amount":1.140622},
+          {"label":"Annen rentekostnad","amount":1.449287},
+          {"label":"Annen finanskostnad","amount":-0.136202}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2024-12-31"},
+      "revenue": [
+        {"label":"Billetinntekter","category":"matchday_competition","amount":6.443008,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.57349,"disclosure":"aggregated"},
+        {"label":"Reklame- og sponsorinntekter","category":"sponsorship_commercial","amount":29.530394,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":18.716329,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":134.601796,"disclosure":"aggregated"},
+        {"label":"Andre salgsinntekter","category":"other_income","amount":6.625487,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":6.280725,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":0.965469,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
+          "category": "other_expenses",
+          "amount": -61.027262,
+          "disclosure": "aggregated"
+        },
+        {"label":"Trening, matriell, kamp kostn.","category":"other_expenses","amount":-9.549225,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-47.461382,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-8.306292,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-1.009482,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":-0.870642,"disclosure":"aggregated"},
+        {"label":"Avskrivning av driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-11.134394,"disclosure":"aggregated"},
+        {"label":"bortekamper","category":"match_organisation_expense","amount":-3.970701,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-15.789924,"disclosure":"aggregated"},
+        {"label":"Reklame- og sponsorkostnader","category":"admin_general_expense","amount":-3.188788,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-9.033672,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.669765,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":203.736698,"expenses":171.341764,"net_result":29.725168},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.34324},
+          {"label":"Annen finansinntekt","amount":0.677255},
+          {"label":"Annen rentekostnad","amount":-1.324701},
+          {"label":"Annen finanskostnad","amount":-2.365559}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "NOK",
+      "source_id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2025-12-31"},
+      "revenue": [
+        {"label":"Billetinntekter","category":"matchday_competition","amount":11.408125,"disclosure":"aggregated"},
+        {"label":"Medlemsinntekter","category":"member_dues","amount":0.712295,"disclosure":"aggregated"},
+        {"label":"Andre salgsinntekter","category":"other_income","amount":13.051656,"disclosure":"aggregated"},
+        {"label":"Andre inntekter","category":"other_income","amount":9.289541,"disclosure":"aggregated"},
+        {"label":"Reklame- og sponsorinntekter","category":"sponsorship_commercial","amount":34.435007,"disclosure":"aggregated"},
+        {"label":"Mediainntekter","category":"broadcasting","amount":18.235206,"disclosure":"aggregated"},
+        {"label":"Tilskudd","category":"other_income","amount":0.76705,"disclosure":"aggregated"},
+        {"label":"Salg/utleie spillere","category":"player_sales","amount":134.979734,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Trening, matriell, kamp kostn.","category":"other_expenses","amount":-16.41132,"disclosure":"aggregated"},
+        {"label":"Reise- og oppholdskostnader bortekamper","category":"match_organisation_expense","amount":-5.456484,"disclosure":"aggregated"},
+        {"label":"Salgskostnader","category":"other_expenses","amount":-65.871707,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-52.008396,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-10.475799,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"wages_squad","amount":-1.053321,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"wages_squad","amount":-0.907956,"disclosure":"aggregated"},
+        {"label":"Avskrivning av driftsmidler og immaterielle eiendeler","category":"depreciation","amount":-14.599445,"disclosure":"aggregated"},
+        {"label":"Andre kostnader","category":"other_expenses","amount":-17.315133,"disclosure":"aggregated"},
+        {"label":"Reklame- og sponsorkostnader","category":"admin_general_expense","amount":-10.371944,"disclosure":"aggregated"},
+        {"label":"Admkost","category":"admin_general_expense","amount":-10.759014,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.165402,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":222.878614,"expenses":205.230519,"net_result":16.482693},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Annen renteinntekt","amount":0.70662},
+          {"label":"Annen finansinntekt","amount":1.238687},
+          {"label":"Annen rentekostnad","amount":-1.132192},
+          {"label":"Annen finanskostnad","amount":-1.978517}
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

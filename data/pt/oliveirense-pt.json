@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "oliveirense-pt",
+    "name": "União Desportiva Oliveirense - Futebol, SAD",
+    "display_name": "Oliveirense",
+    "country": "PT",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "oliveirense-pt-relatorio-e-contas-202425",
+      "club_id": "oliveirense-pt",
+      "title": "União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202425 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "oliveirense-pt-relatorio-e-contas-202223",
+      "club_id": "oliveirense-pt",
+      "title": "União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202223 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "oliveirense-pt-relatorio-e-contas-202324",
+      "club_id": "oliveirense-pt",
+      "title": "União Desportiva Oliveirense - Futebol, SAD — Relatorio-e-Contas-202324 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "oliveirense-pt-relatorio-e-contas-202223",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.004999,"disclosure":"aggregated"},
+        {"label":"Prestação de serviços","category":"lump_football_operations","amount":0.571986,"disclosure":"aggregated"},
+        {"label":"Federação P. Futebol / LPFP","category":"other_income","amount":0.035053,"disclosure":"aggregated"},
+        {"label":"Fundo Infraestruturas - Liga Portuguesa F[ilegible]","category":"other_income","amount":0.014488,"disclosure":"aggregated"},
+        {"label":"IEFP","category":"other_income","amount":0.002019,"disclosure":"aggregated"},
+        {"label":"Rendimentos suplementares","category":"other_income","amount":0.330229,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento obtidos","category":"other_income","amount":0.000011,"disclosure":"aggregated"},
+        {"label":"Rendimentos em investimentos não financeiros","category":"player_sales","amount":0.184,"disclosure":"aggregated"},
+        {"label":"Outras","category":"other_income","amount":0.002909,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.0015,"disclosure":"aggregated"},
+        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.082752,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general_expense","amount":-0.231986,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.036311,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.043194,"disclosure":"aggregated"},
+        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.123326,"disclosure":"aggregated"},
+        {"label":"Serviços diversos","category":"other_expenses","amount":-0.172768,"disclosure":"aggregated"},
+        {"label":"Salários e ordenados","category":"wages_squad","amount":-1.052248,"disclosure":"aggregated"},
+        {"label":"Gastos com rescisão de contratos","category":"wages_squad","amount":-0.0014,"disclosure":"aggregated"},
+        {"label":"Contribuições para a segurança social","category":"wages_squad","amount":-0.114754,"disclosure":"aggregated"},
+        {"label":"Outros gastos com o pessoal","category":"wages_squad","amount":-0.168701,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.000118,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.005363,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.000005,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.079586,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.009282,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.070397,"tax":-0.024468,"gross_debt":3.674536,"cash":0.136569},
+      "official_totals": {"revenue":1.145694,"expenses":2.123294,"net_result":-0.931672},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Juros e rendimentos similares obtidos","amount":0.070428},
+          {"label":"Juros e gastos similares suportados","amount":-0.000031},
+          {"label":"Imposto sobre o rendimento do período","amount":-0.024468}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Prestação de serviços",
+            "side": "revenue",
+            "amount": 0.571986,
+            "reason": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "oliveirense-pt-relatorio-e-contas-202324",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.031094,"disclosure":"aggregated"},
+        {"label":"Prestação de serviços","category":"lump_football_operations","amount":1.325492,"disclosure":"aggregated"},
+        {"label":"Não reembolsáveis: Subsídios relacionados com resultados - IEFP","category":"other_income","amount":0.005388,"disclosure":"aggregated"},
+        {
+          "label": "Não reembolsáveis: Subsídios relacionados com resultados - Federação Portuguesa de Futebol",
+          "category": "other_income",
+          "amount": 0.007317,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Não reembolsáveis: Subsídios relacionados com resultados - Liga Portuguesa de Futebol Profissional",
+          "category": "other_income",
+          "amount": 0.00625,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Não reembolsáveis: Subsídios relacionados com resultados - Fundo Infraestruturas - LPF",
+          "category": "other_income",
+          "amount": 0.030654,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Não reembolsáveis: Subsídios relacionados com resultados - Prémio Allianz Cup - LPF",
+          "category": "competition_bonus",
+          "amount": 0.030536,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Não reembolsáveis: Subsídios relacionados com resultados - Sub. Deslocação - FPF",
+          "category": "other_income",
+          "amount": 0.008381,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Não reembolsáveis: Subsídios relacionados com resultados - UD Oliveirense - fundos formação FIFA",
+          "category": "youth_football",
+          "amount": 0.021903,
+          "disclosure": "aggregated"
+        },
+        {"label":"Rendimentos suplementares","category":"other_income","amount":0.354967,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento obtidos","category":"other_income","amount":0.000012,"disclosure":"aggregated"},
+        {"label":"Outras","category":"other_income","amount":0.01156,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.004185,"disclosure":"aggregated"},
+        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.0353,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general_expense","amount":-0.442202,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.040489,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.062784,"disclosure":"aggregated"},
+        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.186789,"disclosure":"aggregated"},
+        {"label":"Serviços diversos","category":"other_expenses","amount":-0.295107,"disclosure":"aggregated"},
+        {"label":"Salários e ordenados","category":"wages_squad","amount":-1.338885,"disclosure":"aggregated"},
+        {"label":"Contribuições para a segurança social","category":"wages_squad","amount":-0.139226,"disclosure":"aggregated"},
+        {"label":"Outros gastos com o pessoal","category":"wages_squad","amount":-0.172513,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_expenses","amount":-0.37047,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.012037,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.15916,"tax":-0.05477,"gross_debt":4.841621,"cash":0.414566},
+      "official_totals": {"revenue":1.833554,"expenses":3.099986,"net_result":-1.162041},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Juros e rendimentos similares obtidos","amount":0.159268},
+          {"label":"Juros e gastos similares suportados","amount":-0.000108},
+          {"label":"Imposto sobre o rendimento do período","amount":-0.05477}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Prestação de serviços",
+            "side": "revenue",
+            "amount": 1.325492,
+            "reason": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "oliveirense-pt-relatorio-e-contas-202425",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.008868,"disclosure":"aggregated"},
+        {"label":"Prestação de serviços","category":"lump_football_operations","amount":1.141257,"disclosure":"aggregated"},
+        {"label":"Federação Portuguesa de Futebol","category":"other_income","amount":0.004065,"disclosure":"aggregated"},
+        {"label":"Liga Portuguesa de Futebol Profissional","category":"other_income","amount":0.023905,"disclosure":"aggregated"},
+        {"label":"Fundo Infraestruturas - LPF","category":"other_income","amount":0.037254,"disclosure":"aggregated"},
+        {"label":"Prémio Allianz Cup -LPF","category":"competition_bonus","amount":0.008654,"disclosure":"aggregated"},
+        {"label":"Subs. Deslocação - FPF","category":"other_income","amount":0.001224,"disclosure":"aggregated"},
+        {"label":"UDO - Fundos Formação FIFA","category":"youth_football","amount":0.060763,"disclosure":"aggregated"},
+        {"label":"Rendimentos suplementares","category":"other_income","amount":0.574802,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento obtidos","category":"other_income","amount":0.000001,"disclosure":"aggregated"},
+        {"label":"Outras","category":"other_income","amount":0.003995,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.004274,"disclosure":"aggregated"},
+        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.026325,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general_expense","amount":-0.684726,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general_expense","amount":-0.038138,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.050141,"disclosure":"aggregated"},
+        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.229731,"disclosure":"aggregated"},
+        {"label":"Serviços diversos","category":"other_expenses","amount":-0.218521,"disclosure":"aggregated"},
+        {"label":"Salários e ordenados","category":"wages_squad","amount":-1.622765,"disclosure":"aggregated"},
+        {"label":"Gastos com rescisão de contratos","category":"wages_squad","amount":-0.122923,"disclosure":"aggregated"},
+        {"label":"Contribuições para a segurança social","category":"wages_squad","amount":-0.141045,"disclosure":"aggregated"},
+        {"label":"Outros gastos com o pessoal","category":"wages_squad","amount":-0.257717,"disclosure":"aggregated"},
+        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.03,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general_expense","amount":-0.019071,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.000001,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_expenses","amount":-0.07259,"disclosure":"aggregated"},
+        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.049917,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.004548,"tax":-0.03774,"gross_debt":6.679944,"cash":0.744551},
+      "official_totals": {"revenue":1.864788,"expenses":3.567885,"net_result":-1.736289},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Juros e rendimentos similares obtidos","amount":0.149391},
+          {"label":"Juros e gastos similares suportados","amount":-0.144843},
+          {"label":"Imposto sobre o rendimento do período","amount":-0.03774}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Prestação de serviços",
+            "side": "revenue",
+            "amount": 1.141257,
+            "reason": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+          }
+        ],
+        "included_in": {
+          "matchday_competition": "lump_football_operations",
+          "stadium_other": "lump_football_operations",
+          "season_tickets": "lump_football_operations",
+          "broadcasting": {"in":"lump_football_operations","possible":true}
+        }
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

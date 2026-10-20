@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "fcemmen-nl",
+    "name": "FC Emmen B.V.",
+    "display_name": "FC Emmen",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "fcemmen-nl-f-04-fce-jaarverslag-2018-2019-incl-jaarcijfers-def",
+      "club_id": "fcemmen-nl",
+      "title": "FC Emmen B.V. — F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "fcemmen-nl-f-04-fce-jaarverslag-2018-2019-incl-jaarcijfers-def",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":1.193,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"sponsorship_commercial","amount":3.475,"disclosure":"aggregated"},
+        {"label":"Media gerelateerde baten","category":"broadcasting","amount":1.768,"disclosure":"aggregated"},
+        {"label":"Prijzengeld","category":"competition_bonus","amount":0.325,"disclosure":"aggregated"},
+        {"label":"Horeca","category":"stadium_other","amount":0.579,"disclosure":"aggregated"},
+        {"label":"Merchandise","category":"sponsorship_commercial","amount":0.114,"disclosure":"aggregated"},
+        {"label":"Subsidies & giften","category":"other_income","amount":0.056,"disclosure":"aggregated"},
+        {"label":"Overige baten","category":"other_income","amount":0.133,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Personeelskosten","category":"wages_squad","amount":-3.915,"disclosure":"aggregated"},
+        {"label":"Horeca","category":"other_expenses","amount":-0.43,"disclosure":"aggregated"},
+        {"label":"Verkoopkosten","category":"admin_general_expense","amount":-0.481,"disclosure":"aggregated"},
+        {"label":"Huisvestingskosten","category":"admin_general_expense","amount":-0.527,"disclosure":"aggregated"},
+        {"label":"Wedstrijd- en trainingskosten","category":"match_organisation_expense","amount":-0.67,"disclosure":"aggregated"},
+        {"label":"Algemene kosten","category":"admin_general_expense","amount":-0.304,"disclosure":"aggregated"},
+        {"label":"Afschrijvingskosten imm. & mat. vaste activa","category":"depreciation","amount":-0.203,"disclosure":"aggregated"},
+        {
+          "label": "Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen",
+          "category": "player_amortisation",
+          "amount": -0.062,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.006,"tax":-0.215,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":7.643,"expenses":6.592,"net_result":0.831},
+      "adjustments": {
+        "extra_rows": [{"label":"Som der rentebaten en rentelasten","amount":-0.006},{"label":"Som der belastingen resultaat uit gewone bedrijsvoering","amount":-0.215}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

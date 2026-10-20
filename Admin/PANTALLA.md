@@ -149,7 +149,7 @@ Inversiones" e "Ingresos y Egresos por Torneo" (los 4 cards de Finanzas que depe
 documento de PRESUPUESTO cargado, no un balance) se esconden enteros (`display:none` en el `.card`)
 cuando el club/ejercicio seleccionado no tiene datos en el mapa correspondiente
 (`presupuestoSupuestosByYear`/`presupuestoFinancieroByYear`/`presupuestoInversionesByYear` en el
-`data/<país>/<club>-data.js` del club, y el `#torneosBoca2027` de los 3 cards de torneo). Nada de mensaje
+data file del club (en su JSON, `extras.budget_assumptions` / `budget_financial` / `budget_investments`; el generador los emite con esos nombres), y el `#torneosBoca2027` de los 3 cards de torneo). Nada de mensaje
 "no hay supuestos para este ejercicio": si no hay dato, el card directamente no aparece.
 
 Implementación de referencia (`renderSupuestosCard`/`renderPresupuestoFinancieroCard`/
@@ -649,7 +649,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   compartida `noDataMsg()` que hacía esto se borró, ver el punto de más arriba en este mismo
   archivo — este párrafo la seguía citando en presente.) Los 3 se repintan
   juntos cada vez que cambia club/año/gestión. ACTUALIZADO (Versión 135): los datos de los 3
-  viven en el `data/<país>/<club>-data.js` de cada club, en `presupuestoSupuestosByYear` /
+  viven en el data file de cada club (generado de su JSON: `extras.budget_assumptions` / `budget_financial` / `budget_investments`), en `presupuestoSupuestosByYear` /
   `presupuestoFinancieroByYear` / `presupuestoInversionesByYear`, indexados por `[year]`. Antes
   eran 3 registros `[clubId][year]` adentro de `js/finanzas-render.js`, o sea datos de club en la
   capa de render: onboardear un presupuesto obligaba a editar el archivo del motor. Ahora no.

@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "liverpool-gb",
+    "name": "The Liverpool Football Club and Athletic Grounds Limited",
+    "display_name": "Liverpool",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "06-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "liverpool-gb-group-accounts-2024",
+      "club_id": "liverpool-gb",
+      "title": "The Liverpool Football Club and Athletic Grounds Limited — Annual report and consolidated financial statements, year ended 31 May 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary_official",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history",
+      "public_note": "Balance auditado consolidado, depositado en Companies House (Reino Unido) por The Liverpool Football Club and Athletic Grounds Limited, sociedad n.° 00035668. El documento no separa el costo de personal por área (plantel profesional vs. resto del club), así que \"Salarios del plantel\" en este ejercicio refleja el costo de personal TOTAL del grupo (jugadores, cuerpo técnico y todo el resto del staff), no solo el plantel profesional."
+    },
+    {
+      "id": "liverpool-gb-group-accounts-2025",
+      "club_id": "liverpool-gb",
+      "title": "The Liverpool Football Club and Athletic Grounds Limited — Annual report and consolidated financial statements, year ended 31 May 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary_official",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history",
+      "public_note": "Balance auditado consolidado, depositado en Companies House (Reino Unido) por The Liverpool Football Club and Athletic Grounds Limited, sociedad n.° 00035668. Mismo criterio de personal sin desglosar por área que el ejercicio 2023/24 (ver su nota)."
+    },
+    {
+      "id": "liverpool-gb-group-accounts-2021-22",
+      "club_id": "liverpool-gb",
+      "title": "The Liverpool Football Club and Athletic Grounds Limited — liverpool-group-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "liverpool-gb-group-accounts-2022-23",
+      "club_id": "liverpool-gb",
+      "title": "The Liverpool Football Club and Athletic Grounds Limited — liverpool-group-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Fenway Sports Group","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-05-31",
+      "currency": "GBP",
+      "source_id": "liverpool-gb-group-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-05-31"},
+      "revenue": [
+        {"label":"Media","category":"broadcasting","amount":260.841,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":246.663,"disclosure":"aggregated"},
+        {"label":"Match day","category":"matchday_competition","amount":86.767,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":28.124,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-67.305,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-545.041,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.58,"tax":-5.033,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":622.395,"expenses":612.346,"net_result":2.436},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.893},
+          {"label":"Interest payable and similar charges","amount":-3.473},
+          {"label":"Tax on profit/ loss on ordinary activities","amount":-5.033}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-05-31",
+      "currency": "GBP",
+      "source_id": "liverpool-gb-group-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-05-31"},
+      "revenue": [
+        {"label":"Media","category":"broadcasting","amount":241.553,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":272.523,"disclosure":"aggregated"},
+        {"label":"Match day","category":"matchday_competition","amount":79.76,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":33.767,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-70.543,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-561.517,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.548,"tax":2.075,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":627.603,"expenses":632.06,"net_result":-6.93},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":1.614},
+          {"label":"Interest payable and similar charges","amount":-6.162},
+          {"label":"Tax on loss/ profit on ordinary activities","amount":2.075}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-05-31",
+      "currency": "GBP",
+      "source_id": "liverpool-gb-group-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"GBP@2024-05-31"},
+      "revenue": [
+        {"label":"Media","category":"broadcasting","amount":203.705,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":308.398,"disclosure":"detailed"},
+        {"label":"Match day","category":"matchday_competition","amount":101.661,"disclosure":"detailed"},
+        {"label":"Profit on disposal of registrations","category":"player_sales","amount":22.017,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-83.483,"disclosure":"not_disclosed"},
+        {
+          "label": "Staff costs (wages and salaries, social security and pension costs — not split by department)",
+          "category": "wages_squad",
+          "amount": -386.086,
+          "disclosure": "detailed",
+          "items": [["Wages and salaries",-341.354],["Social security costs",-40.141],["Pension costs",-4.591]]
+        },
+        {
+          "label": "Administrative expenses (other operating costs, not further disclosed by department)",
+          "category": "admin_general_expense",
+          "amount": -83.097,
+          "disclosure": "partial",
+          "items": [
+            ["Operating lease rentals",-2.751],
+            ["Auditors' remuneration (audit, assurance and tax advisory fees)",-0.156],
+            ["Profit on disposal of tangible fixed assets",0.052],
+            ["Other administrative costs (not itemised by the source)",-80.242]
+          ]
+        },
+        {"label":"Amortisation of registrations","category":"player_amortisation","amount":-114.479,"disclosure":"detailed"},
+        {"label":"Impairment loss on registrations","category":"player_impairment","amount":-0.618,"disclosure":"detailed"},
+        {"label":"Depreciation of tangible fixed assets","category":"depreciation","amount":-15.218,"disclosure":"detailed"},
+        {"label":"Impairment loss on tangible fixed assets","category":"depreciation","amount":-0.458,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-9.446,"tax":13.626,"gross_debt":314.295,"cash":7.504},
+      "official_totals": {"revenue":635.781,"expenses":683.439,"net_result":-43.478}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-05-31",
+      "currency": "GBP",
+      "source_id": "liverpool-gb-group-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"GBP@2025-05-31"},
+      "revenue": [
+        {"label":"Media","category":"broadcasting","amount":263.659,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":323.472,"disclosure":"detailed"},
+        {"label":"Match day","category":"matchday_competition","amount":115.591,"disclosure":"detailed"},
+        {"label":"Profit on disposal of registrations","category":"player_sales","amount":53.268,"disclosure":"detailed"},
+        {
+          "label": "Other operating income",
+          "category": "other_income",
+          "amount": 12.892,
+          "disclosure": "detailed",
+          "items": [["Insurance settlement relating to historic loss of earnings",12.892]]
+        }
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-88.608,"disclosure":"not_disclosed"},
+        {
+          "label": "Staff costs (wages and salaries, social security and pension costs — not split by department)",
+          "category": "wages_squad",
+          "amount": -427.727,
+          "disclosure": "detailed",
+          "items": [["Wages and salaries",-374.795],["Social security costs",-48.881],["Pension costs",-4.051]]
+        },
+        {
+          "label": "Administrative expenses (other operating costs, not further disclosed by department)",
+          "category": "admin_general_expense",
+          "amount": -96.976,
+          "disclosure": "partial",
+          "items": [
+            ["Operating lease rentals",-3.093],
+            ["Auditors' remuneration (audit and assurance fees)",-0.15],
+            ["Profit on disposal of tangible fixed assets",0.009],
+            ["Other administrative costs (not itemised by the source)",-93.742]
+          ]
+        },
+        {"label":"Amortisation of registrations","category":"player_amortisation","amount":-117.165,"disclosure":"detailed"},
+        {"label":"Impairment loss on registrations","category":"player_impairment","amount":-0.183,"disclosure":"detailed"},
+        {"label":"Depreciation of tangible fixed assets","category":"depreciation","amount":-14.462,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.549,"tax":-6.939,"gross_debt":285.256,"cash":2.541},
+      "official_totals": {"revenue":768.882,"expenses":745.121,"net_result":8.273}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

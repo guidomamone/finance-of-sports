@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "fckobenhavn-dk",
+    "name": "F.C. København P/S",
+    "display_name": "FC København",
+    "country": "DK",
+    "reporting_currency": "DKK",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "fckobenhavn-aarsrapport-2024",
+      "club_id": "fckobenhavn-dk",
+      "title": "F.C. København P/S — Årsrapport for 2024 (1. januar - 31. december 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "DKK",
+      "source_id": "fckobenhavn-aarsrapport-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2024-12-31"},
+      "revenue": [
+        {"label":"Entréindtægter","category":"matchday_competition","amount":85.544,"disclosure":"detailed"},
+        {
+          "label": "TV- og præmie-indtægter (TV y premios por competencia, combinados por la fuente)",
+          "category": "broadcasting",
+          "amount": 110.836,
+          "disclosure": "detailed"
+        },
+        {"label":"Samarbejdspartnere","category":"sponsorship_commercial","amount":127.594,"disclosure":"detailed"},
+        {"label":"Merchandiseindtægter","category":"sponsorship_commercial","amount":57.327,"disclosure":"detailed"},
+        {"label":"Food & Beverage, konferencecenter m.v.","category":"stadium_other","amount":30.869,"disclosure":"detailed"},
+        {"label":"Ejendomsudlejning","category":"other_income","amount":32.19,"disclosure":"detailed"},
+        {"label":"Øvrige indtægter","category":"other_income","amount":22.199,"disclosure":"detailed"},
+        {
+          "label": "Andre driftsindtægter (fortjeneste ved afhændelse af kontraktrettigheder — venta de Orri Oskarsson y Elias Jelert)",
+          "category": "player_sales",
+          "amount": 287.954,
+          "disclosure": "detailed"
+        }
+      ],
+      "expenses": [
+        {"label":"Vareforbrug","category":"other_expenses","amount":-106.193,"disclosure":"detailed"},
+        {
+          "label": "Andre eksterne omkostninger (distribution, salg, reklame, administration, lokaler, tab på debitorer, leasing)",
+          "category": "admin_general_expense",
+          "amount": -181.906,
+          "disclosure": "detailed"
+        },
+        {"label":"Personaleomkostninger","category":"wages_squad","amount":-293.556,"disclosure":"detailed"},
+        {"label":"Amortiseringer af kontraktrettigheder","category":"player_amortisation","amount":-113.241,"disclosure":"detailed"},
+        {"label":"Nedskrivninger af kontraktrettigheder","category":"player_impairment","amount":-7.128,"disclosure":"detailed"},
+        {
+          "label": "Afskrivning på materielle anlægsaktiver (bygninger, indretning af lejede lokaler, produktionsanlæg og maskiner)",
+          "category": "depreciation",
+          "amount": -16.873,
+          "disclosure": "detailed",
+          "items": [["Afskrivning på bygninger",4.683],["Afskrivning på indretning af lejede lokaler",2.409],["Afskrivning på produktionsanlæg og maskiner",9.781]]
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":10.62,"tax":0,"gross_debt":0,"cash":76.684},
+      "official_totals": {"revenue":754.513,"expenses":718.897,"net_result":46.236}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

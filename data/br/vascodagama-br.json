@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "vascodagama-br",
+    "name": "Vasco da Gama Sociedade Anônima do Futebol",
+    "display_name": "Vasco da Gama",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "vascodagama-br-demonstracoes-2023",
+      "club_id": "vascodagama-br",
+      "title": "Vasco da Gama SAF — Demonstrações Contábeis 2023 (exercício findo em 31/12/2023 e período findo em 31/12/2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://media.vasco.com.br/transparencia"
+    }
+  ],
+  "management": [{"id":"sinconfirmar","name":"Vasco da Gama SAF (gestión no confirmada en detalle)","first_year":2023,"last_year":2023}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "BRL",
+      "source_id": "vascodagama-br-demonstracoes-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": "sinconfirmar",
+      "fx": {"ref":"BRL@2023-12-31"},
+      "revenue": [
+        {"label":"Direitos de transmissão","category":"broadcasting","amount":98.697,"disclosure":"detailed"},
+        {"label":"Bilheteria","category":"matchday_competition","amount":25.533,"disclosure":"detailed"},
+        {"label":"Marketing","category":"sponsorship_commercial","amount":48.982,"disclosure":"detailed"},
+        {"label":"Repasse de direitos federativos","category":"player_sales","amount":123.739,"disclosure":"detailed"},
+        {"label":"Mecanismo de solidariedade","category":"youth_football","amount":1.282,"disclosure":"detailed"},
+        {"label":"Programa de sócio torcedor","category":"member_dues","amount":31.798,"disclosure":"detailed"},
+        {"label":"Tour da Colina","category":"stadium_other","amount":0.988,"disclosure":"detailed"},
+        {"label":"Receitas com premiação","category":"competition_bonus","amount":19.838,"disclosure":"detailed"},
+        {"label":"Licenciamento e royalties","category":"sponsorship_commercial","amount":8.638,"disclosure":"detailed"},
+        {"label":"Receitas diversas","category":"other_income","amount":4.159,"disclosure":"detailed"},
+        {"label":"Deduções sobre a receita (impostos e outras)","category":"other_income","amount":-18.323,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Salários, encargos e benefícios a funcionários (custo dos serviços)","category":"wages_squad","amount":-123.573,"disclosure":"detailed"},
+        {"label":"Amortizações de direitos sobre atletas","category":"player_amortisation","amount":-58.783,"disclosure":"detailed"},
+        {"label":"Direitos de imagem","category":"wages_squad","amount":-36.235,"disclosure":"detailed"},
+        {"label":"Gastos com jogos e competições","category":"match_organisation_expense","amount":-30.314,"disclosure":"detailed"},
+        {"label":"Manutenção (custo dos serviços)","category":"admin_general_expense","amount":-7.47,"disclosure":"detailed"},
+        {"label":"Serviços profissionais (custo dos serviços)","category":"admin_general_expense","amount":-11.501,"disclosure":"detailed"},
+        {"label":"Custo de material esportivo","category":"admin_general_expense","amount":-2.924,"disclosure":"detailed"},
+        {"label":"Repasse de direitos econômicos","category":"other_expenses","amount":-27.232,"disclosure":"detailed"},
+        {"label":"Baixa de direitos econômicos de atletas profissionais","category":"player_amortisation","amount":-13.004,"disclosure":"detailed"},
+        {"label":"Baixa de direitos econômicos de atletas em formação","category":"player_amortisation","amount":-8.745,"disclosure":"detailed"},
+        {"label":"Gastos com negociação de atletas","category":"other_expenses","amount":-21.383,"disclosure":"detailed"},
+        {"label":"Outros (custo dos serviços)","category":"other_expenses","amount":-1.077,"disclosure":"detailed"},
+        {"label":"Salários, encargos e benefícios a funcionários (G&A)","category":"admin_general_expense","amount":-22.128,"disclosure":"detailed"},
+        {"label":"Despesas operacionais e de estruturação","category":"admin_general_expense","amount":-30.673,"disclosure":"detailed"},
+        {"label":"PECLD (recuperação líquida, valor reconciliado — ver cabecera)","category":"admin_general_expense","amount":0.02,"disclosure":"detailed"},
+        {"label":"Serviços profissionais (G&A)","category":"admin_general_expense","amount":-9.842,"disclosure":"detailed"},
+        {"label":"Manutenção (G&A)","category":"admin_general_expense","amount":-1.256,"disclosure":"detailed"},
+        {"label":"Provisão para riscos judiciais","category":"admin_general_expense","amount":-6.495,"disclosure":"detailed"},
+        {"label":"Outros (G&A)","category":"other_expenses","amount":-1.659,"disclosure":"detailed"},
+        {"label":"Outras receitas (despesas) operacionais","category":"other_expenses","amount":-0.579,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-53.976,"tax":0,"gross_debt":44.654,"cash":79.922},
+      "official_totals": {"revenue":345.331,"expenses":414.853,"net_result":-123.498}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

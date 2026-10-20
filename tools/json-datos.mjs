@@ -2,11 +2,13 @@
 // tools/json-datos.mjs — LOS DATOS DE UN CLUB COMO JSON CON ESQUEMA (to-do 245, fase 1; esquema aprobado por Guido el 2026-10-20).
 // El esquema, con sus dos ejemplos reales y las cuatro decisiones: Admin/mediciones/245-esquema.md.
 //
-// SOLO LECTURA. No toca data/ ni js/. Esta es la biblioteca; las tres herramientas que la usan:
-//   node tools/exportar-json.mjs       data/<país>/*-data.js  ->  un JSON por club  (default Generados/datos-json/<país>/<id>.json)
-//   node tools/validar-esquema-json.mjs  valida esos JSON contra el esquema
-//   node tools/ida-y-vuelta.mjs        JSON -> JS (generarJs) -> se evalúa y se compara con el JS actual, objeto por objeto, en todos los clubes
-// La fase 2 (que el JSON sea la fuente y el JS se genere de ahí) NO está hecha; generarJs() es el prototipo con el que se mide la ida y vuelta.
+// La biblioteca de los datos de un club (to-do 245, fase 2): el JSON `data/<país>/<id>.json` es la FUENTE y `data/<país>/<id>-data.js` se GENERA de ahí
+// (`generarJs`); el sitio sigue cargando el JS. Las herramientas que la usan:
+//   node tools/generar-data.mjs        JSON -> JS de todos los clubes (o --club; --check avisa si algún JS quedó viejo)
+//   node tools/validar-esquema-json.mjs  valida los JSON contra el esquema
+//   node tools/ida-y-vuelta.mjs        JSON -> JS (generarJs) -> se evalúa y se compara con el JS que está en disco, objeto por objeto
+//   node tools/exportar-json.mjs       JS -> JSON: la migración de una sola vez (fase 2); ya no es el camino de trabajo
+// Las tools que cargan datos (cargar, caja-deuda, dentro-de-otro, alta-club) leen y escriben el JSON con `leerJsonClub`/`modificarClub` de tools/club-json.mjs.
 //
 // QUÉ CONTIENE UN data/<país>/<id>-data.js (medido en los 313): revenueLinesByYear, expenseLinesByYear, fiscalYearMeta, presupuestoOverlayByYear,
 // pasesData, resultadosData, titulosData, window.CLUB_GENERIC_DATA[id], `sources` (las fuentes del club), gestionesByClub[id] (a veces),
@@ -43,7 +45,11 @@ const FX = { fxRef: 'ref', fx: 'rate', fxSource: 'source' };
 const META_DIRECTA = { currency: 'currency', sourceId: 'source_id', reportType: 'report_type', gestionId: 'management_id' };
 const META_ADJ = { extraRows: 'extra_rows', sinDesglose: 'no_breakdown', incluidoEn: 'included_in' };
 const OVERLAY = { currency: 'currency', sourceId: 'source_id', revenueLines: 'revenue', expenseLines: 'expenses' };
-const EXTRAS = ['presupuestoSupuestosByYear', 'presupuestoFinancieroByYear', 'presupuestoInversionesByYear', 'finanzasYears', 'finanzasGestiones'];
+// Lo editorial de pocos clubes (extras del JSON): el nombre del bloque y de cada clave pasa a inglés; los textos quedan en español.
+const EXTRAS = { presupuestoSupuestosByYear: 'budget_assumptions', presupuestoFinancieroByYear: 'budget_financial', presupuestoInversionesByYear: 'budget_investments', finanzasYears: 'finance_years', finanzasGestiones: 'finance_managements' };
+// Claves de los bloques de texto libre (resultados, títulos y extras): un solo diccionario, de ida y de vuelta. Una clave que no está queda como está
+// (los apellidos de las gestiones de `results` son datos, no claves del esquema).
+const CLAVES_LIBRES = { titulosLocales: 'local_titles', titulosInternacionales: 'international_titles', mejorResultadoLibertadores: 'best_libertadores_result', anio: 'year', competencia: 'competition', resultado: 'result', gestion: 'management', docLabel: 'doc_label', isResult: 'is_result', formato: 'format' };
 const CLUB = { id: 'id', name: 'name', displayName: 'display_name', country: 'country', reportingCurrency: 'reporting_currency', fiscalYearStart: 'fiscal_year_start', sport: 'sport' };
 
 const inv = (d) => Object.fromEntries(Object.entries(d).map(([a, b]) => [b, a]));
@@ -59,6 +65,8 @@ function mapear(o, dic, donde) {
 }
 const linea = (l, donde) => mapear(l, LINEA, donde);
 const sinTraducir = (v) => JSON.parse(JSON.stringify(v));
+// traduce las CLAVES de un valor libre (recursivo) con un diccionario; los valores no se tocan
+const traducirClaves = (v, dic) => Array.isArray(v) ? v.map((x) => traducirClaves(x, dic)) : v && typeof v === 'object' ? Object.fromEntries(Object.entries(v).map(([k, x]) => [has(dic, k) ? dic[k] : k, traducirClaves(x, dic)])) : v;
 
 // ---------------------------------------------------------------- leer los datos actuales
 let _sitio = null;
@@ -83,9 +91,9 @@ export function leerClub(rel) {
 export const todosLosArchivos = () => archivosData();
 
 // ---------------------------------------------------------------- JS actual -> JSON
-export function aJson(c, { exportadoEn = new Date().toISOString().slice(0, 10) } = {}) {
-  const { id, datos: d } = c; const ficha = clubes()[id] || null;
-  for (const k of Object.keys(d)) if (!['revenueLinesByYear', 'expenseLinesByYear', 'fiscalYearMeta', 'presupuestoOverlayByYear', 'pasesData', 'resultadosData', 'titulosData', ...EXTRAS].includes(k)) falla(`${id}: CLUB_GENERIC_DATA trae "${k}", que el esquema no conoce`);
+export function aJson(c, { exportadoEn = new Date().toISOString().slice(0, 10), ficha: fichaDada = null } = {}) {
+  const { id, datos: d } = c; const ficha = fichaDada || clubes()[id] || null;
+  for (const k of Object.keys(d)) if (!['revenueLinesByYear', 'expenseLinesByYear', 'fiscalYearMeta', 'presupuestoOverlayByYear', 'pasesData', 'resultadosData', 'titulosData', ...Object.keys(EXTRAS)].includes(k)) falla(`${id}: CLUB_GENERIC_DATA trae "${k}", que el esquema no conoce`);
   const j = { schema_version: SCHEMA_VERSION, exported_at: exportadoEn, unit: { ...UNIT } };
   j.club = ficha ? Object.fromEntries(Object.entries(CLUB).filter(([k]) => has(ficha, k)).map(([k, n]) => [n, ficha[k]])) : { id };
   j.sources = Object.entries(c.sources).map(([sid, s]) => { if (s.id !== sid) falla(`${id}: la fuente "${sid}" tiene id "${s.id}"`); return mapear(s, FUENTE, `${id} fuente ${sid}`); });
@@ -119,8 +127,9 @@ export function aJson(c, { exportadoEn = new Date().toISOString().slice(0, 10) }
       else if (has(FX, k)) (o.fx ||= {})[FX[k]] = v; else falla(`${id} presupuesto ${y}: clave desconocida "${k}"`);
     } return [y, o];
   }));
-  j.squad_transfers = sinTraducir(d.pasesData); j.results = sinTraducir(d.resultadosData); j.titles = sinTraducir(d.titulosData);
-  const ex = Object.fromEntries(EXTRAS.filter((k) => has(d, k)).map((k) => [k, sinTraducir(d[k])])); if (Object.keys(ex).length) j.legacy_extras = ex;
+  const libre = (x) => traducirClaves(sinTraducir(x), CLAVES_LIBRES);
+  j.squad_transfers = libre(d.pasesData); j.results = libre(d.resultadosData); j.titles = libre(d.titulosData);
+  const ex = Object.fromEntries(Object.entries(EXTRAS).filter(([k]) => has(d, k)).map(([k, n]) => [n, libre(d[k])])); if (Object.keys(ex).length) j.extras = ex;
   // nada de lo que el JSON guarda puede perderse al serializar (NaN, Infinity y undefined se vuelven null o desaparecen)
   const malo = buscarNoSerializable(j, ''); if (malo) falla(`${id}: valor no serializable en ${malo}`);
   return j;
@@ -159,8 +168,9 @@ export function deJson(j) {
   if (has(j, 'budget_overlay')) d.presupuestoOverlayByYear = Object.fromEntries(Object.entries(j.budget_overlay).map(([y, ov]) => {
     const o = {}; for (const [k, v] of Object.entries(ov)) { if (k === 'fx') for (const [a, b] of Object.entries(FX)) { if (has(v, b)) o[a] = v[b]; } else { const kk = inv(OVERLAY)[k]; o[kk] = Array.isArray(v) && (k === 'revenue' || k === 'expenses') ? v.map(lin) : v; } } return [y, o];
   }));
-  if (has(j, 'squad_transfers')) d.pasesData = j.squad_transfers; if (has(j, 'results')) d.resultadosData = j.results; if (has(j, 'titles')) d.titulosData = j.titles;
-  if (j.legacy_extras) Object.assign(d, j.legacy_extras);
+  const libre = (x) => traducirClaves(x, inv(CLAVES_LIBRES));
+  if (has(j, 'squad_transfers')) d.pasesData = libre(j.squad_transfers); if (has(j, 'results')) d.resultadosData = libre(j.results); if (has(j, 'titles')) d.titulosData = libre(j.titles);
+  if (j.extras) for (const [n, v] of Object.entries(j.extras)) d[inv(EXTRAS)[n]] = libre(v);
   for (const f of j.sources) s[f.id] = Object.fromEntries(Object.entries(f).map(([k, v]) => [inv(FUENTE)[k], v]));
   const gestiones = j.management ? { [id]: Object.fromEntries(j.management.map((g) => [g.id, Object.fromEntries(Object.entries(g).filter(([k]) => k !== 'id').map(([k, v]) => [inv(GESTION)[k], v]))])) } : {};
   const miembros = has(j, 'members') ? { [id]: j.members } : {};
@@ -170,17 +180,17 @@ export function deJson(j) {
 // ---------------------------------------------------------------- JSON -> texto de un data file (prototipo de la fase 2)
 const ident = (id) => id.replace(/-([a-z0-9])/g, (m, c) => c.toUpperCase()).replace(/[^A-Za-z0-9_]/g, '');
 const js = (v) => JSON.stringify(v);
-export function generarJs(j) {
+export function generarJs(j, { ruta = null } = {}) {
   const c = deJson(j); const p = ident(c.id); const d = c.datos;
   const porAnio = (o) => `{\n${Object.entries(o).map(([y, arr]) => `  ${y}: ${Array.isArray(arr) ? `[\n${arr.map((l) => `    ${js(l)},`).join('\n')}\n  ]` : js(arr)},`).join('\n')}\n}`;
-  let t = `// GENERADO desde el JSON (to-do 245, prototipo de la fase 2). Club ${c.id}.\n`;
+  let t = `// GENERADO desde ${ruta || `data/<país>/${c.id}.json`} por tools/generar-data.mjs: no editar a mano (se edita el JSON).\n`;
   t += `const ${p}RevenueLinesByYear = ${porAnio(d.revenueLinesByYear)};\n\nconst ${p}ExpenseLinesByYear = ${porAnio(d.expenseLinesByYear)};\n\n`;
   t += `const ${p}FiscalYearMeta = {\n${Object.entries(d.fiscalYearMeta).map(([y, m]) => `  ${y}: ${js(m)},`).join('\n')}\n};\n\n`;
   if (has(d, 'presupuestoOverlayByYear')) t += `const ${p}PresupuestoOverlayByYear = ${js(d.presupuestoOverlayByYear)};\n\n`;
   t += `const ${p}PasesData = ${js(d.pasesData)};\nconst ${p}ResultadosData = ${js(d.resultadosData)};\nconst ${p}TitulosData = ${js(d.titulosData)};\n\n`;
   t += `window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};\nwindow.CLUB_GENERIC_DATA[${js(c.id)}] = {\n  revenueLinesByYear: ${p}RevenueLinesByYear, expenseLinesByYear: ${p}ExpenseLinesByYear,\n  fiscalYearMeta: ${p}FiscalYearMeta, pasesData: ${p}PasesData,\n  resultadosData: ${p}ResultadosData, titulosData: ${p}TitulosData,\n`;
   if (has(d, 'presupuestoOverlayByYear')) t += `  presupuestoOverlayByYear: ${p}PresupuestoOverlayByYear,\n`;
-  for (const k of EXTRAS) if (has(d, k)) t += `  ${k}: ${js(d[k])},\n`;
+  for (const k of Object.keys(EXTRAS)) if (has(d, k)) t += `  ${k}: ${js(d[k])},\n`;
   t += `};\n\nObject.assign(sources, ${js(c.sources)});\n`;
   if (Object.keys(c.gestiones).length) t += `\ngestionesByClub[${js(c.id)}] = ${js(c.gestiones[c.id])};\n`;
   if (Object.keys(c.miembros).length) t += `\nmemberCountByClub[${js(c.id)}] = ${js(c.miembros[c.id])};\n`;
@@ -220,7 +230,7 @@ const itemsOk = (a) => Array.isArray(a) && a.every((x) => Array.isArray(x) && (x
 export function validar(j, { categorias = null, externos = null } = {}) {
   const e = []; const avisos = []; const err = (r, m) => e.push(`${r}: ${m}`); const aviso = (r, m) => avisos.push(`${r}: ${m}`);
   const claves = (o, permitidas, r, obligatorias = []) => { if (!o || typeof o !== 'object' || Array.isArray(o)) { err(r, 'tiene que ser un objeto'); return false; } for (const k of Object.keys(o)) if (!permitidas.includes(k)) err(r, `clave "${k}" que el esquema no conoce`); for (const k of obligatorias) if (!has(o, k)) err(r, `falta "${k}"`); return true; };
-  if (!claves(j, ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'management', 'members', 'years', 'budget_overlay', 'squad_transfers', 'results', 'titles', 'legacy_extras'], '', ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'years'])) return { errores: e, avisos };
+  if (!claves(j, ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'management', 'members', 'years', 'budget_overlay', 'squad_transfers', 'results', 'titles', 'extras'], '', ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'years'])) return { errores: e, avisos };
   if (j.schema_version !== SCHEMA_VERSION) err('schema_version', `vale ${j.schema_version}, se esperaba ${SCHEMA_VERSION}`);
   if (!FECHA_RE.test(j.exported_at || '')) err('exported_at', 'tiene que ser AAAA-MM-DD');
   if (claves(j.unit, ['scale', 'label'], 'unit', ['scale', 'label']) && j.unit.scale !== UNIT.scale) err('unit.scale', `vale ${j.unit.scale}, se esperaba ${UNIT.scale}`);
@@ -249,6 +259,7 @@ export function validar(j, { categorias = null, externos = null } = {}) {
       if (has(a, 'included_in') && claves(a.included_in, Object.keys(a.included_in), `${r}.adjustments.included_in`)) for (const [cat, v] of Object.entries(a.included_in)) { const rr = `${r}.adjustments.included_in.${cat}`; if (typeof v === 'string') continue; if (claves(v, Object.values(INCLUIDO), rr, ['in'])) { if (typeof v.in !== 'string') err(rr, 'in tiene que ser un texto'); if (has(v, 'possible') && typeof v.possible !== 'boolean') err(rr, 'possible tiene que ser true o false'); if (has(v, 'by') && typeof v.by !== 'string') err(rr, 'by tiene que ser un texto'); } }
     }
   });
+  if (has(j, 'extras')) claves(j.extras, Object.values(EXTRAS), 'extras');
   if (has(j, 'budget_overlay') && claves(j.budget_overlay, Object.keys(j.budget_overlay), 'budget_overlay')) for (const [y, o] of Object.entries(j.budget_overlay)) { claves(o, [...Object.values(OVERLAY), 'fx'], `budget_overlay.${y}`); if (o.revenue) lineas(o.revenue, `budget_overlay.${y}.revenue`, 'revenue'); if (o.expenses) lineas(o.expenses, `budget_overlay.${y}.expenses`, 'expense'); }
   return { errores: e, avisos };
 }
@@ -269,11 +280,11 @@ export function categoriasDelSitio() {
   return { revenue: vm.runInContext('REVENUE_CATEGORIES', ctx), expense: vm.runInContext('EXPENSE_CATEGORIES', ctx) };
 }
 export { ErrorDeEsquema };
-export const CAMPOS = { LINEA, FUENTE, GESTION, SIN_DESGLOSE, INCLUIDO, FINANCIERO, TOTALES, FX, META_DIRECTA, META_ADJ, OVERLAY, EXTRAS, CLUB };
+export const CAMPOS = { LINEA, FUENTE, GESTION, SIN_DESGLOSE, INCLUIDO, FINANCIERO, TOTALES, FX, META_DIRECTA, META_ADJ, OVERLAY, EXTRAS, CLUB, CLAVES_LIBRES };
 
 // El paquete que se publica (Frictionless, tools/exportar-paquete.mjs) lleva SOLO lo financiero (decisión de Guido, 2026-10-20): sin el contenido editorial de
-// pocos clubes (resultados, títulos, pases) ni los `legacy_extras`. Es una copia; el JSON completo de cada club no pierde nada.
+// pocos clubes (resultados, títulos, pases) ni los `extras`. Es una copia; el JSON completo de cada club no pierde nada.
 export function soloFinanciero(j) {
-  const { squad_transfers, results, titles, legacy_extras, ...resto } = j;
+  const { squad_transfers, results, titles, extras, ...resto } = j;
   return resto;
 }

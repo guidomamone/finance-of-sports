@@ -1,0 +1,394 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "aris-gr",
+    "name": "Athlitikos Syllogos Thessalonikis O Aris P.A.E.",
+    "display_name": "Aris",
+    "country": "GR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "aris-gr-fs-notes-elp-2019-06-30",
+      "club_id": "aris-gr",
+      "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_notes_ELP_2019-06-30 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "aris-gr-fs-notes-elp-2021-06-30",
+      "club_id": "aris-gr",
+      "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_notes_ELP_2021-06-30 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "aris-gr-fs-2023-06-30",
+      "club_id": "aris-gr",
+      "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_2023-06-30 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "aris-gr-fs-2024-06-30",
+      "club_id": "aris-gr",
+      "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_2024-06-30 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "aris-gr-fs-2025-06-30",
+      "club_id": "aris-gr",
+      "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_2025-06-30 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "aris-gr-fs-audited-art47-2022-06-30",
+      "club_id": "aris-gr",
+      "title": "Athlitikos Syllogos Thessalonikis O Aris P.A.E. — Aris_FS_audited_art47_2022-06-30 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "aris-gr-fs-notes-elp-2019-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":3.871541,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "Κέρδη και ζημίες από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)",
+          "category": "player_sales",
+          "amount": 0.3,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.071671,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)","category":"lump_football_operations_expense","amount":-4.001248,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.309839,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.07626,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις","category":"other_expenses","amount":-0.032558,"disclosure":"aggregated"},
+        {"label":"Προσαυξήσεις εισφορών ασφαλιστικών εισφορών","category":"other_expenses","amount":-0.009993,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις προηγούμενων χρήσεων","category":"other_expenses","amount":-0.002081,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.028381,"tax":0,"gross_debt":0,"cash":0.4205},
+      "official_totals": {"revenue":4.243212,"expenses":4.431979,"net_result":-0.217148},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.028381},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":3.871541,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)","side":"expense","amount":4.001248,"reason":"el documento no desglosa este renglón"}
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "aris-gr-fs-notes-elp-2021-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":6.86235,"disclosure":"aggregated"},
+        {
+          "label": "Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων (Πωλήσεις Ποδοσφαιριστών)",
+          "category": "player_sales",
+          "amount": 1.07127,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.682348,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)","category":"lump_football_operations_expense","amount":-6.267535,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.485331,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.119454,"disclosure":"aggregated"},
+        {"label":"Φορολογικά πρόστιμα και προσαυξήσεις","category":"other_expenses","amount":-0.077241,"disclosure":"aggregated"},
+        {"label":"Έκτακτα και ανόργανα έξοδα","category":"exceptional_items","amount":-1.271669,"disclosure":"aggregated"},
+        {"label":"Προβλέψεις για έκτακτους κινδύνους","category":"other_amortisation","amount":-1.386906,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.018853,"tax":0,"gross_debt":1.550983,"cash":0.649382},
+      "official_totals": {"revenue":8.615968,"expenses":8.336467,"net_result":-1.01102},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000169},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.019022},
+          {"label":"Φόροι εισοδήματος","amount":null}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":6.86235,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κόστος πωλήσεων (Έξοδα ποδοσφαιρικού τμήματος)","side":"expense","amount":6.267535,"reason":"el documento no desglosa este renglón"}
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "aris-gr-fs-audited-art47-2022-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":1.806267,"disclosure":"aggregated"},
+        {"label":"Έσοδα χορηγιών και διαφημίσεων","category":"sponsorship_commercial","amount":1.617254,"disclosure":"aggregated"},
+        {"label":"Έσοδα δικαιωμάτων μεταδόσεων","category":"broadcasting","amount":2.7615,"disclosure":"aggregated"},
+        {"label":"Εμπορικά έσοδα","category":"sponsorship_commercial","amount":0.326613,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα","category":"competition_bonus","amount":1.2841,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":0.05528,"disclosure":"aggregated"},
+        {"label":"Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)","category":"player_sales","amount":3.545,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων / υλικών / μη διανεμηθέντα","category":"other_expenses","amount":-0.095088,"disclosure":"aggregated"},
+        {"label":"Αμοιβές ποδοσφαιρικού","category":"wages_squad","amount":-7.539738,"disclosure":"aggregated"},
+        {"label":"Εισφορές ποδοσφαιρικού","category":"wages_squad","amount":-0.138362,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές ποδοσφαιρικού","category":"wages_squad","amount":-0.013005,"disclosure":"aggregated"},
+        {"label":"Αμοιβές προσωπικού","category":"admin_general_expense","amount":-0.048625,"disclosure":"aggregated"},
+        {"label":"Εισφορές & λοιπές παροχές προσωπικού","category":"admin_general_expense","amount":-0.01369,"disclosure":"aggregated"},
+        {"label":"Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού","category":"depreciation","amount":-0.175735,"disclosure":"aggregated"},
+        {
+          "label": "Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών)",
+          "category": "other_amortisation",
+          "amount": -0.024,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα τέλεσης αγώνων","category":"match_organisation_expense","amount":-0.270123,"disclosure":"aggregated"},
+        {"label":"Κόστη χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-0.121101,"disclosure":"aggregated"},
+        {"label":"Εμπορικές δαπάνες","category":"admin_general_expense","amount":-0.144,"disclosure":"aggregated"},
+        {"label":"Έξοδα εγκαταστάσεων","category":"admin_general_expense","amount":-0.091642,"disclosure":"aggregated"},
+        {
+          "label": "Λοιπά έξοδα ποδοσφαιρικού & Λοιπά λειτουργικά Έξοδα (ταξίδια, ποσοστά ΕΠΟ επι συμβολαίων, παράβολα, λοιπά λειτουργικά, κλπ)",
+          "category": "other_expenses",
+          "amount": -0.448065,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά Λειτουργικά Έξοδα & Προβλέψεις για έκτακτα και ανόργανα έξοδα",
+          "category": "other_expenses",
+          "amount": -0.033493,
+          "disclosure": "aggregated"
+        },
+        {"label":"Diferencia de redondeo","category":"other_expenses","amount":-0.000001,"disclosure":"aggregated"},
+        {"label":"Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)","category":"player_amortisation","amount":-3.596416,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.014299,"tax":0,"gross_debt":0.05467,"cash":0.240696},
+      "official_totals": {"revenue":11.396014,"expenses":12.753084,"net_result":-1.371368},
+      "adjustments": {"extra_rows":[{"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.014299},{"label":"Φορολογικά έσοδα (δαπάνες)","amount":null}]}
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "aris-gr-fs-2023-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":1.742726,"disclosure":"aggregated"},
+        {"label":"Έσοδα χορηγιών και διαφημίσεων","category":"sponsorship_commercial","amount":2.420877,"disclosure":"aggregated"},
+        {"label":"Έσοδα δικαιωμάτων μεταδόσεων","category":"broadcasting","amount":3.2,"disclosure":"aggregated"},
+        {"label":"Εμπορικά έσοδα","category":"sponsorship_commercial","amount":1.224047,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα","category":"competition_bonus","amount":1.167326,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":2.970337,"disclosure":"aggregated"},
+        {"label":"Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)","category":"player_sales","amount":2.466,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων / υλικών / μη διανεμηθέντα","category":"other_expenses","amount":-0.262718,"disclosure":"aggregated"},
+        {"label":"Αμοιβές ποδοσφαιρικού","category":"wages_squad","amount":-8.416861,"disclosure":"aggregated"},
+        {"label":"Εισφορές ποδοσφαιρικού","category":"wages_squad","amount":-0.180345,"disclosure":"aggregated"},
+        {"label":"Λοιπές παροχές ποδοσφαιρικού","category":"wages_squad","amount":-0.023528,"disclosure":"aggregated"},
+        {"label":"Αμοιβές προσωπικού","category":"admin_general_expense","amount":-0.078922,"disclosure":"aggregated"},
+        {"label":"Εισφορές & λοιπές παροχές προσωπικού","category":"admin_general_expense","amount":-0.127303,"disclosure":"aggregated"},
+        {"label":"Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού","category":"depreciation","amount":-0.210141,"disclosure":"aggregated"},
+        {
+          "label": "Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών)",
+          "category": "other_amortisation",
+          "amount": -0.012,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα τέλεσης αγώνων","category":"match_organisation_expense","amount":-0.53,"disclosure":"aggregated"},
+        {"label":"Κόστη χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-0.453405,"disclosure":"aggregated"},
+        {"label":"Εμπορικές δαπάνες","category":"admin_general_expense","amount":-0.535728,"disclosure":"aggregated"},
+        {"label":"Έξοδα εγκαταστάσεων","category":"admin_general_expense","amount":-0.736294,"disclosure":"aggregated"},
+        {
+          "label": "Λοιπά έξοδα ποδοσφαιρικού & Λοιπά λειτουργικά Έξοδα (ταξίδια, ποσοστά Ε.Π.Ο. επί συμβολαίων, παράβολα, λοιπά λειτουργικά, κλπ)",
+          "category": "other_expenses",
+          "amount": -1.39867,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Λοιπά Λειτουργικά Έξοδα & Προβλέψεις για έκτακτα και ανόργανα έξοδα",
+          "category": "other_expenses",
+          "amount": -1.849292,
+          "disclosure": "aggregated"
+        },
+        {"label":"Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)","category":"player_amortisation","amount":-1.641821,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.241882,"tax":0,"gross_debt":2.56163,"cash":1.914323},
+      "official_totals": {"revenue":15.191313,"expenses":16.457028,"net_result":-1.507598},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.241873},
+          {"label":"Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)","amount":-0.000009},
+          {"label":"Φορολογικά έσοδα (δαπάνες)","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "aris-gr-fs-2024-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":1.194851,"disclosure":"aggregated"},
+        {"label":"Έσοδα χορηγιών και διαφημίσεων","category":"sponsorship_commercial","amount":3.868454,"disclosure":"aggregated"},
+        {"label":"Έσοδα δικαιωμάτων μεταδόσεων","category":"broadcasting","amount":3.300006,"disclosure":"aggregated"},
+        {"label":"Εμπορικά έσοδα","category":"sponsorship_commercial","amount":0.763,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα","category":"competition_bonus","amount":1.154207,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":1.821663,"disclosure":"aggregated"},
+        {"label":"Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)","category":"player_sales","amount":4.2525,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων / υλικών / μη διανεμηθέντα","category":"other_expenses","amount":-0.023793,"disclosure":"aggregated"},
+        {"label":"Ποδοσφαιριστές-ημερομίσθια & μισθοί","category":"wages_squad","amount":-6.715962,"disclosure":"aggregated"},
+        {"label":"Ποδοσφαιριστές-εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.196209,"disclosure":"aggregated"},
+        {"label":"Δαπάνες παροχών προς ποδοσφαιριστές","category":"wages_squad","amount":-0.065917,"disclosure":"aggregated"},
+        {"label":"Τεχνικό προσωπικό-ημερομίσθια & μισθοί","category":"wages_squad","amount":-0.13155,"disclosure":"aggregated"},
+        {"label":"Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.0164,"disclosure":"aggregated"},
+        {"label":"Δαπάνες παροχών προς τεχνικό προσωπικό","category":"wages_squad","amount":-0.0188,"disclosure":"aggregated"},
+        {"label":"Λοιπό προσωπικό-ημερομίσθια & μισθοί","category":"admin_general_expense","amount":-0.0325,"disclosure":"aggregated"},
+        {"label":"Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-0.0051,"disclosure":"aggregated"},
+        {"label":"Δαπάνες παροχών προς λοιπό προσωπικό","category":"admin_general_expense","amount":-0.005748,"disclosure":"aggregated"},
+        {"label":"Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού","category":"depreciation","amount":-0.219443,"disclosure":"aggregated"},
+        {
+          "label": "Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών)",
+          "category": "other_amortisation",
+          "amount": -0.012,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα τέλεσης αγώνων","category":"match_organisation_expense","amount":-0.770716,"disclosure":"aggregated"},
+        {"label":"Κόστη χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-0.333075,"disclosure":"aggregated"},
+        {"label":"Εμπορικές δαπάνες","category":"admin_general_expense","amount":-0.41586,"disclosure":"aggregated"},
+        {"label":"Έξοδα εγκαταστάσεων","category":"admin_general_expense","amount":-0.791157,"disclosure":"aggregated"},
+        {"label":"Αμοιβές Manager","category":"other_expenses","amount":-0.489843,"disclosure":"aggregated"},
+        {"label":"Αθλητρικό υλικό","category":"other_expenses","amount":-0.398642,"disclosure":"aggregated"},
+        {"label":"Δικαστικά έξοδα","category":"admin_general_expense","amount":-0.057176,"disclosure":"aggregated"},
+        {"label":"Παράβολα συμμετοχής σε διοργανώσεις & επικύρωσης συμβολαίων","category":"other_expenses","amount":-0.034766,"disclosure":"aggregated"},
+        {"label":"Ποσοστά προς απόδοση σε φορείς","category":"other_expenses","amount":-0.408691,"disclosure":"aggregated"},
+        {"label":"Πρόστιμα – Προσαυξήσεις ρυθμίσεων","category":"other_expenses","amount":-0.363556,"disclosure":"aggregated"},
+        {"label":"Ασφάλιστρα ποδοσφαιριστών","category":"admin_general_expense","amount":-0.037233,"disclosure":"aggregated"},
+        {"label":"Αμοιβές & παροχές τρίτων","category":"admin_general_expense","amount":-1.387849,"disclosure":"aggregated"},
+        {"label":"Λοιποί φόροι & τέλη","category":"admin_general_expense","amount":-0.264846,"disclosure":"aggregated"},
+        {"label":"Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)","category":"player_amortisation","amount":-1.781165,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.275484,"tax":0,"gross_debt":3.268189,"cash":1.709531},
+      "official_totals": {"revenue":16.354681,"expenses":14.977997,"net_result":1.101201},
+      "adjustments": {
+        "extra_rows": [{"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.275484},{"label":"Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)","amount":null}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "aris-gr-fs-2025-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":1.771757,"disclosure":"aggregated"},
+        {"label":"Έσοδα χορηγιών και διαφημίσεων","category":"sponsorship_commercial","amount":4.83965,"disclosure":"aggregated"},
+        {"label":"Έσοδα δικαιωμάτων μεταδοσεων","category":"broadcasting","amount":3.449996,"disclosure":"aggregated"},
+        {"label":"Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα","category":"competition_bonus","amount":1.36674,"disclosure":"aggregated"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":3.083932,"disclosure":"aggregated"},
+        {
+          "label": "Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
+          "category": "player_sales",
+          "amount": 5.196467,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων / υλικών / μη διανεμηθέντα","category":"other_expenses","amount":-0.069195,"disclosure":"aggregated"},
+        {"label":"Ποδοσφαιριστές-ημερομίσθια & μισθοί","category":"wages_squad","amount":-7.893951,"disclosure":"aggregated"},
+        {"label":"Ποδοσφαιριστές-εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.22381,"disclosure":"aggregated"},
+        {"label":"Δαπάνες παροχών προς ποδοσφαιριστές","category":"wages_squad","amount":-0.044242,"disclosure":"aggregated"},
+        {"label":"Τεχνικό προσωπικό-ημερομίσθια & μισθοί","category":"wages_squad","amount":-0.23224,"disclosure":"aggregated"},
+        {"label":"Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης","category":"wages_squad","amount":-0.03085,"disclosure":"aggregated"},
+        {"label":"Δαπάνες παροχών προς τεχνικό προσωπικό","category":"wages_squad","amount":-0.02779,"disclosure":"aggregated"},
+        {"label":"Λοιπό προσωπικό-ημερομίσθια & μισθοί","category":"admin_general_expense","amount":-0.07835,"disclosure":"aggregated"},
+        {"label":"Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης","category":"admin_general_expense","amount":-0.01077,"disclosure":"aggregated"},
+        {"label":"Δαπάνες παροχών προς λοιπό προσωπικό","category":"admin_general_expense","amount":-0.011745,"disclosure":"aggregated"},
+        {"label":"Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού","category":"depreciation","amount":-0.283346,"disclosure":"aggregated"},
+        {
+          "label": "Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών)",
+          "category": "other_amortisation",
+          "amount": -0.012,
+          "disclosure": "aggregated"
+        },
+        {"label":"Έξοδα τέλεσης αγώνων","category":"match_organisation_expense","amount":-0.747961,"disclosure":"aggregated"},
+        {"label":"Κόστη χορηγιών και διαφημίσεων","category":"admin_general_expense","amount":-0.149914,"disclosure":"aggregated"},
+        {"label":"Εμπορικές δαπάνες","category":"admin_general_expense","amount":-0.164486,"disclosure":"aggregated"},
+        {"label":"Έξοδα εγκαταστάσεων","category":"admin_general_expense","amount":-1.240868,"disclosure":"aggregated"},
+        {"label":"Λοιπά Λειτουργικά Έξοδα","category":"other_expenses","amount":-4.053466,"disclosure":"aggregated"},
+        {"label":"Diferencia de redondeo","category":"other_expenses","amount":0.000001,"disclosure":"aggregated"},
+        {"label":"Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)","category":"player_amortisation","amount":-3.4595,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.312126,"tax":0,"gross_debt":3.323148,"cash":1.227561},
+      "official_totals": {"revenue":19.708542,"expenses":18.734483,"net_result":0.661933},
+      "adjustments": {
+        "extra_rows": [{"label":"Χρηματοοικονομικά έξοδα/δαπάνες","amount":-0.194341},{"label":"Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)","amount":-0.117785}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

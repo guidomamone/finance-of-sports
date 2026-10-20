@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "viborg-dk",
+    "name": "Viborg F.F. Prof. Fodbold A/S",
+    "display_name": "Viborg FF",
+    "country": "DK",
+    "reporting_currency": "DKK",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "viborg-aarsrapport-2024",
+      "club_id": "viborg-dk",
+      "title": "Viborg F.F. Prof. Fodbold A/S — Årsrapport for regnskabsåret 01.07.23 - 30.06.24",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as",
+      "club_id": "viborg-dk",
+      "title": "Viborg F.F. Prof. Fodbold A/S — 2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "DKK",
+      "source_id": "viborg-aarsrapport-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2024-06-30"},
+      "revenue": [
+        {
+          "label": "Nettoomsætning (recaudación de entradas, TV y comercial combinados, sin desglose numérico en la fuente)",
+          "category": "lump_football_operations",
+          "amount": 75.989957,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Andre driftsindtægter (resultado neto de transferencias — ingresos de transfer menos costos de transfer — más ganancia/pérdida neta por venta de activos fijos; venta de Anton Gaaei, Elias Achouri, Alassana Jatta, Jacob Friis, entre otros)",
+          "category": "player_sales",
+          "amount": 56.705954,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Vareforbrug (costo de mercadería + costos de cesión/préstamo de jugadores, mezclados sin separar)",
+          "category": "other_expenses",
+          "amount": -32.365378,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Andre eksterne omkostninger (ventas, vehículos, locales, administración, deudores incobrables)",
+          "category": "admin_general_expense",
+          "amount": -7.242746,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Personaleomkostninger",
+          "category": "wages_squad",
+          "amount": -52.095551,
+          "disclosure": "detailed",
+          "items": [["Lønninger",44.094465],["Pensioner",4.04808],["Andre omkostninger til social sikring",0.300549],["Andre personaleomkostninger",3.652457]]
+        },
+        {
+          "label": "Afskrivninger af erhvervede rettigheder (amortización de pases, Note 5)",
+          "category": "player_amortisation",
+          "amount": -9.91141,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Afskrivninger på materielle anlægsaktiver (bienes de uso: terrenos/edificios, mejoras a locales alquilados, equipamiento, Note 6)",
+          "category": "depreciation",
+          "amount": -2.147957,
+          "disclosure": "detailed",
+          "items": [
+            ["Afskrivning på grunde og bygninger",0.010732],
+            ["Afskrivning på indretning af lejede lokaler",1.183333],
+            ["Afskrivning på andre anlæg, driftsmateriel og inventar",0.953892]
+          ]
+        },
+        {
+          "label": "Andre driftsomkostninger (sin monto propio identificable para separar de other_expenses)",
+          "category": "other_expenses",
+          "amount": -1.263649,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.514793,"tax":-6.420082,"gross_debt":29.385639,"cash":30.026932},
+      "official_totals": {"revenue":132.695911,"expenses":105.026691,"net_result":22.763931}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "DKK",
+      "source_id": "viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2025-06-30"},
+      "revenue": [
+        {"label":"Nettoomsætning Revenue","category":"lump_football_operations","amount":79.32982,"disclosure":"aggregated"},
+        {"label":"Andre driftsindtægter Other operating income","category":"other_income","amount":23.343225,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Vareforbrug Cost of sales","category":"other_expenses","amount":-35.149658,"disclosure":"aggregated"},
+        {"label":"Andre eksterne omkostninger Other external expenses","category":"other_expenses","amount":-7.005308,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"wages_squad","amount":-46.236951,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"wages_squad","amount":-3.886859,"disclosure":"aggregated"},
+        {"label":"Andre omkostninger til social sikring","category":"wages_squad","amount":-0.356202,"disclosure":"aggregated"},
+        {"label":"Andre personaleomkostninger","category":"wages_squad","amount":-3.561998,"disclosure":"aggregated"},
+        {"label":"Andre driftsomkostninger Other operating expenses","category":"other_expenses","amount":-1.299319,"disclosure":"aggregated"},
+        {"label":"Amortisation during the year (player registrations)","category":"player_amortisation","amount":-15.751691,"disclosure":"aggregated"},
+        {"label":"Depreciation during the year (property, plant and equipment)","category":"depreciation","amount":-2.624046,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.80534,"tax":2.693035,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":102.673045,"expenses":115.872032,"net_result":-9.700612},
+      "adjustments": {
+        "extra_rows": [
+          {
+            "label": "Indtægter af andre kapitalandele, værdipapirer og tilgodehavender, der er anlægsaktiver Income from other investments and receivables that are fixed assets",
+            "amount": 0.196462
+          },
+          {"label":"Andre finansielle indtægter Financial income","amount":0.7694},
+          {"label":"Andre finansielle omkostninger Financial expenses","amount":-0.160522},
+          {"label":"Skat af årets resultat Tax on profit or loss for the year","amount":2.693035}
+        ],
+        "no_breakdown": [{"line":"Nettoomsætning Revenue","side":"revenue","amount":79.32982,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

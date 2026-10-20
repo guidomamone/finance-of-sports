@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "palmeiras-br",
+    "name": "Sociedade Esportiva Palmeiras",
+    "display_name": "Palmeiras",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "palmeiras-br-demonstracoes-2024",
+      "club_id": "palmeiras-br",
+      "title": "Demonstrações Financeiras e Relatório dos Auditores Independentes, Exercícios Findos em 31 de Dezembro de 2024 e de 2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.palmeiras.com.br/balancetes-e-demonstrativos-financeiros/"
+    },
+    {
+      "id": "palmeiras-br-demonstracoes-2025",
+      "club_id": "palmeiras-br",
+      "title": "Demonstrações Financeiras e Relatório dos Auditores Independentes, Exercícios Findos em 31 de Dezembro de 2025 e de 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://www.palmeiras.com.br/balancetes-e-demonstrativos-financeiros/"
+    }
+  ],
+  "management": [{"id":"leila","name":"Leila Pereira (2022-2024, reeleita 2025-2027)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "BRL",
+      "source_id": "palmeiras-br-demonstracoes-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "leila",
+      "fx": {"ref":"BRL@2024-12-31"},
+      "revenue": [
+        {"label":"Direitos de transmissão","category":"broadcasting","amount":170.868,"disclosure":"detailed"},
+        {"label":"Publicidade e patrocínio","category":"sponsorship_commercial","amount":142.976,"disclosure":"detailed"},
+        {"label":"Arrecadação de jogos","category":"matchday_competition","amount":52.805,"disclosure":"detailed"},
+        {"label":"Negociações com atletas (receita bruta)","category":"player_sales","amount":504.345,"disclosure":"detailed"},
+        {"label":"Sócio torcedor Avanti","category":"member_dues","amount":74.192,"disclosure":"detailed"},
+        {"label":"Incentivos Fiscais e outros","category":"other_income","amount":1.854,"disclosure":"detailed"},
+        {"label":"Premiações","category":"competition_bonus","amount":63.329,"disclosure":"detailed"},
+        {"label":"Arrecadação social","category":"member_dues","amount":67.659,"disclosure":"detailed"},
+        {"label":"Licenciamentos da marca e franquias","category":"sponsorship_commercial","amount":36.634,"disclosure":"detailed"},
+        {"label":"Departamentos amadores","category":"other_sports","amount":0.792,"disclosure":"detailed"},
+        {"label":"Contrato de superfícies - Arena (Allianz Parque)","category":"stadium_other","amount":81.9,"disclosure":"detailed"},
+        {"label":"Reversão de contingências - Real Arena","category":"other_income","amount":71.162,"disclosure":"detailed"},
+        {"label":"Outras Receitas (Rendas diversas, resto)","category":"other_income","amount":2.844,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Pessoal e encargos sociais (futebol profissional)","category":"wages_squad","amount":-319.79,"disclosure":"detailed"},
+        {"label":"Pessoal e encargos sociais (futebol feminino)","category":"youth_other_sports_expense","amount":-12.382,"disclosure":"detailed"},
+        {"label":"Pessoal e encargos sociais (futebol de base)","category":"youth_other_sports_expense","amount":-29.563,"disclosure":"detailed"},
+        {
+          "label": "Pessoal e encargos sociais (clube social e esportes amadores)",
+          "category": "youth_other_sports_expense",
+          "amount": -29.396,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas com direito de imagem (todas as colunas)","category":"wages_squad","amount":-87.293,"disclosure":"detailed"},
+        {"label":"Despesas com jogos (todas as colunas)","category":"match_organisation_expense","amount":-30.198,"disclosure":"detailed"},
+        {"label":"Despesas sócio torcedor Avanti","category":"admin_general_expense","amount":-5.794,"disclosure":"detailed"},
+        {"label":"Despesas gerais e administrativas (futebol profissional)","category":"admin_general_expense","amount":-158.331,"disclosure":"detailed"},
+        {"label":"Despesas gerais e administrativas (futebol feminino)","category":"youth_other_sports_expense","amount":-4.014,"disclosure":"detailed"},
+        {"label":"Despesas gerais e administrativas (futebol de base)","category":"youth_other_sports_expense","amount":-16.802,"disclosure":"detailed"},
+        {
+          "label": "Despesas gerais e administrativas (clube social e esportes amadores)",
+          "category": "youth_other_sports_expense",
+          "amount": -24.141,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação e amortização (todas as colunas)","category":"depreciation","amount":-18.894,"disclosure":"detailed"},
+        {
+          "label": "Amortização - direitos de atletas e comissão técnica (todas as colunas)",
+          "category": "player_amortisation",
+          "amount": -107.58,
+          "disclosure": "detailed"
+        },
+        {"label":"Negociações com atletas — Baixa de Intangível","category":"player_amortisation","amount":-63.996,"disclosure":"detailed"},
+        {"label":"Gastos com comissões, atletas e baixas — Baixa","category":"player_amortisation","amount":-5.098,"disclosure":"detailed"},
+        {
+          "label": "Gastos com comissões, atletas e baixas — Gastos com atletas/comissão técnica",
+          "category": "other_expenses",
+          "amount": -4.885,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos com comissões, atletas e baixas — Comissão","category":"other_expenses","amount":-64.008,"disclosure":"detailed"},
+        {
+          "label": "Gastos com comissões, atletas e baixas — Gastos com formação de atletas",
+          "category": "youth_other_sports_expense",
+          "amount": -14.553,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-76.456,"tax":0,"gross_debt":39.759,"cash":38.363},
+      "official_totals": {"revenue":1271.36,"expenses":996.718,"net_result":198.183}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "palmeiras-br-demonstracoes-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "leila",
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Direitos de transmissão","category":"broadcasting","amount":180.084,"disclosure":"detailed"},
+        {"label":"Publicidade e patrocínio","category":"sponsorship_commercial","amount":203.398,"disclosure":"detailed"},
+        {"label":"Arrecadação de jogos","category":"matchday_competition","amount":67.23,"disclosure":"detailed"},
+        {"label":"Sócio torcedor Avanti","category":"member_dues","amount":73.614,"disclosure":"detailed"},
+        {"label":"Incentivos fiscais e outros","category":"other_income","amount":3.125,"disclosure":"detailed"},
+        {"label":"Premiações","category":"competition_bonus","amount":318.945,"disclosure":"detailed"},
+        {"label":"Arrecadação social","category":"member_dues","amount":71.1,"disclosure":"detailed"},
+        {"label":"Licenciamentos da marca e franquias","category":"sponsorship_commercial","amount":33.458,"disclosure":"detailed"},
+        {"label":"Departamentos amadores","category":"other_sports","amount":0.899,"disclosure":"detailed"},
+        {"label":"Contrato de superfícies - Arena (Allianz Parque)","category":"stadium_other","amount":72,"disclosure":"detailed"},
+        {"label":"Negociações de Atletas (receita bruta, nota \"Outras Receitas\")","category":"player_sales","amount":602.208,"disclosure":"detailed"},
+        {"label":"Outras Receitas — Outros (nota \"Outras Receitas\")","category":"other_income","amount":2.429,"disclosure":"detailed"},
+        {"label":"Deduções da receita bruta (nota \"Outras Receitas\", INSS)","category":"other_income","amount":-0.004,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Pessoal e encargos sociais (futebol profissional)","category":"wages_squad","amount":-419.192,"disclosure":"detailed"},
+        {"label":"Pessoal e encargos sociais (futebol feminino)","category":"youth_other_sports_expense","amount":-15.624,"disclosure":"detailed"},
+        {"label":"Pessoal e encargos sociais (futebol de base)","category":"youth_other_sports_expense","amount":-42.38,"disclosure":"detailed"},
+        {
+          "label": "Pessoal e encargos sociais (clube social e esportes amadores)",
+          "category": "youth_other_sports_expense",
+          "amount": -48.633,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas com direito de imagem (todas as colunas)","category":"wages_squad","amount":-113.843,"disclosure":"detailed"},
+        {"label":"Despesas com jogos (todas as colunas)","category":"match_organisation_expense","amount":-53.922,"disclosure":"detailed"},
+        {"label":"Despesas sócio torcedor Avanti","category":"admin_general_expense","amount":-6.982,"disclosure":"detailed"},
+        {"label":"Despesas gerais e administrativas (futebol profissional)","category":"admin_general_expense","amount":-123.056,"disclosure":"detailed"},
+        {"label":"Despesas gerais e administrativas (futebol feminino)","category":"youth_other_sports_expense","amount":-7.623,"disclosure":"detailed"},
+        {"label":"Despesas gerais e administrativas (futebol de base)","category":"youth_other_sports_expense","amount":-25.351,"disclosure":"detailed"},
+        {
+          "label": "Despesas gerais e administrativas (clube social e esportes amadores)",
+          "category": "youth_other_sports_expense",
+          "amount": -35.465,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação e amortização (todas as colunas)","category":"depreciation","amount":-19.958,"disclosure":"detailed"},
+        {
+          "label": "Amortização - direitos de atletas e comissão técnica (todas as colunas)",
+          "category": "player_amortisation",
+          "amount": -228.169,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos com comissões, atletas e baixas — Perdas líquidas Negociações de Atletas",
+          "category": "player_amortisation",
+          "amount": -16.296,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos com comissões, atletas e baixas — Gastos com atletas/comissão técnica",
+          "category": "other_expenses",
+          "amount": -8.773,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos com comissões, atletas e baixas — Comissão","category":"other_expenses","amount":-68.342,"disclosure":"detailed"},
+        {
+          "label": "Gastos com comissões, atletas e baixas — Gastos com formação de atletas",
+          "category": "youth_other_sports_expense",
+          "amount": -12.768,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-89.714,"tax":0,"gross_debt":0.234,"cash":118.371},
+      "official_totals": {"revenue":1628.486,"expenses":1246.377,"net_result":292.395}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

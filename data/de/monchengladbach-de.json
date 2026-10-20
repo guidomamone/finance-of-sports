@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "monchengladbach-de",
+    "name": "Borussia VfL 1900 Mönchengladbach GmbH",
+    "display_name": "Borussia Mönchengladbach",
+    "country": "DE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "monchengladbach-de-jahresabschluss-2023",
+      "club_id": "monchengladbach-de",
+      "title": "Jahresabschluss zum Geschäftsjahr vom 01.01.2023 bis zum 31.12.2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "monchengladbach-de-jahresabschluss-2024",
+      "club_id": "monchengladbach-de",
+      "title": "Jahresabschluss zum Geschäftsjahr vom 01.01.2024 bis zum 31.12.2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2023,"last_year":2024}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "EUR",
+      "source_id": "monchengladbach-de-jahresabschluss-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2023-12-31"},
+      "revenue": [
+        {"label":"Erlöse aus dem Spielbetrieb","category":"matchday_competition","amount":21.268,"disclosure":"detailed"},
+        {"label":"Erlöse aus Werbung","category":"sponsorship_commercial","amount":40.189,"disclosure":"detailed"},
+        {"label":"Erlöse aus Fernseh- und Hörfunkverwertung","category":"broadcasting","amount":68.206,"disclosure":"detailed"},
+        {"label":"Erlöse aus Transfer","category":"player_sales","amount":38.054,"disclosure":"detailed"},
+        {"label":"Erlöse aus Handel","category":"sponsorship_commercial","amount":21.555,"disclosure":"detailed"},
+        {"label":"Umsatzerlöse (resto, sin desglose adicional en el documento)","category":"other_income","amount":8.449,"disclosure":"aggregated_residual"},
+        {
+          "label": "Sonstige betriebliche Erträge (incluye una aproximación del resultado financiero neto — ver comentario de cabecera de este archivo)",
+          "category": "other_income",
+          "amount": 0.61471,
+          "disclosure": "aggregated_residual"
+        }
+      ],
+      "expenses": [
+        {"label":"Aufwendungen für bezogene Waren (Materialaufwand)","category":"other_expenses","amount":-12.949497,"disclosure":"detailed"},
+        {
+          "label": "Personalaufwand",
+          "category": "wages_squad",
+          "amount": -102.008369,
+          "disclosure": "detailed",
+          "items": [["Löhne und Gehälter",-94.60714],["Soziale Abgaben",-7.401229]]
+        },
+        {
+          "label": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+          "category": "player_amortisation",
+          "amount": -28.187753,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+          "category": "depreciation",
+          "amount": -6.445541,
+          "disclosure": "detailed",
+          "items": [
+            ["Entgeltlich erworbene Konzessionen",-0.631081],
+            ["Grundstücke, grundstücksgleiche Rechte und Bauten",-4.529307],
+            ["Andere Anlagen, Betriebs- und Geschäftsausstattung",-1.285153]
+          ]
+        },
+        {
+          "label": "Sonstige betriebliche Aufwendungen (por diferencia contra el combinado \"Material- und sonstige betriebliche Aufwendungen\" del Lagebericht)",
+          "category": "other_expenses",
+          "amount": -38.634503,
+          "disclosure": "aggregated_residual"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-5.823501,"gross_debt":107.105528,"cash":0.493335},
+      "official_totals": {"revenue":198.33571,"expenses":188.225663,"net_result":4.286546}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "EUR",
+      "source_id": "monchengladbach-de-jahresabschluss-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2024-12-31"},
+      "revenue": [
+        {"label":"Erlöse aus dem Spielbetrieb","category":"matchday_competition","amount":23.407,"disclosure":"detailed"},
+        {"label":"Erlöse aus Werbung","category":"sponsorship_commercial","amount":42.149,"disclosure":"detailed"},
+        {"label":"Erlöse aus Fernseh- und Hörfunkverwertung","category":"broadcasting","amount":64.958,"disclosure":"detailed"},
+        {"label":"Erlöse aus Transfer","category":"player_sales","amount":18.909,"disclosure":"detailed"},
+        {"label":"Erlöse aus Handel","category":"sponsorship_commercial","amount":24.184,"disclosure":"detailed"},
+        {"label":"Umsatzerlöse (resto, sin desglose adicional en el documento)","category":"other_income","amount":8.681,"disclosure":"aggregated_residual"},
+        {
+          "label": "Sonstige betriebliche Erträge (incluye una aproximación del resultado financiero neto — ver comentario de cabecera de este archivo)",
+          "category": "other_income",
+          "amount": 0.104068,
+          "disclosure": "aggregated_residual"
+        }
+      ],
+      "expenses": [
+        {"label":"Aufwendungen für bezogene Waren (Materialaufwand)","category":"other_expenses","amount":-12.918763,"disclosure":"detailed"},
+        {
+          "label": "Personalaufwand",
+          "category": "wages_squad",
+          "amount": -98.505634,
+          "disclosure": "detailed",
+          "items": [["Löhne und Gehälter",-90.415952],["Soziale Abgaben",-8.089682]]
+        },
+        {
+          "label": "Abschreibungen — Spielerwerte, laut Anlagenspiegel (Abschreibung des Geschäftsjahres)",
+          "category": "player_amortisation",
+          "amount": -24.656798,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen — Entgeltlich erworbene Konzessionen + Sachanlagen, laut Anlagenspiegel",
+          "category": "depreciation",
+          "amount": -6.132014,
+          "disclosure": "detailed",
+          "items": [
+            ["Entgeltlich erworbene Konzessionen",-0.682733],
+            ["Grundstücke, grundstücksgleiche Rechte und Bauten",-4.306189],
+            ["Andere Anlagen, Betriebs- und Geschäftsausstattung",-1.143093]
+          ]
+        },
+        {
+          "label": "Sonstige betriebliche Aufwendungen (por diferencia contra el combinado \"Material- und sonstige betriebliche Aufwendungen\" del Lagebericht)",
+          "category": "other_expenses",
+          "amount": -42.691237,
+          "disclosure": "aggregated_residual"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0.079976,"gross_debt":107.921968,"cash":0.740841},
+      "official_totals": {"revenue":182.392068,"expenses":184.904447,"net_result":-2.432403}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -41,6 +41,12 @@ Con cualquier cambio real (datos, features, estructura, copy), sin que Guido lo 
 - **En un worktree no se editan `Admin/TODO.md`, `CHANGELOG.md` ni `ESTADO.md`:** la sesión deja `Admin/sesiones/<rama>.md` (qué cambió, qué queda, qué deja de ser cierto) y la principal escribe esos tres. Ver `worktree.md`, en la skill de arranque.
 - La lista de pendientes vive solo en `Admin/TODO.md`. El detalle del cierre: skill de arranque, sección 5.
 
+## Los datos de un club: la fuente es su JSON
+
+`data/<país>/<id>.json` es lo que se edita (y se publica como dato abierto); `data/<país>/<id>-data.js`, lo que carga el sitio, se GENERA de ahí
+(`node tools/generar-data.mjs`) y no se toca a mano. Las tools de carga escriben el JSON solas; el esquema y las reglas: `Admin/mediciones/245-esquema.md` y
+`Admin/CONVENCIONES-DATOS.md`. Los ids de club son `<slug>-<iso2>`; uno viejo (`boca`) sigue andando por `data/club-aliases.js`.
+
 ## Cada PDF nuevo: transcribirlo a Markdown ANTES de usarlo
 
 - Ningún PDF se usa sin transcribirlo antes a un `.md` completo y fiel. En el onboarding es la etapa 2 del pipeline

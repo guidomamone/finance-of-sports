@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "alianzafc-co",
+    "name": "Alianza FC S.A.",
+    "display_name": "Alianza FC",
+    "country": "CO",
+    "reporting_currency": "COP",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "alianzafc-co-estados-financieros-2023",
+      "club_id": "alianzafc-co",
+      "title": "Alianza FC S.A. — estados-financieros-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "COP",
+      "source_id": "alianzafc-co-estados-financieros-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2023-12-31"},
+      "revenue": [
+        {"label":"Otros Ingresos","category":"other_income","amount":130.486351,"disclosure":"aggregated"},
+        {"label":"Taquilla - venta de boletería","category":"matchday_competition","amount":540.11225,"disclosure":"aggregated"},
+        {"label":"Venta derechos deportivos","category":"player_sales","amount":4136.673785,"disclosure":"aggregated"},
+        {"label":"Préstamo derechos deportivos","category":"player_sales","amount":365.756449,"disclosure":"aggregated"},
+        {"label":"Publicidad y patrocinios","category":"sponsorship_commercial","amount":1176.949586,"disclosure":"aggregated"},
+        {"label":"DIMAYOR (derechos de televisión)","category":"broadcasting","amount":7966.544302,"disclosure":"aggregated"},
+        {"label":"Federación Colombiana de Fútbol","category":"competition_bonus","amount":462.875,"disclosure":"aggregated"},
+        {"label":"Convenios","category":"other_income","amount":16,"disclosure":"aggregated"},
+        {"label":"Donaciones","category":"other_income","amount":20,"disclosure":"aggregated"},
+        {"label":"Venta artículos deportivos","category":"sponsorship_commercial","amount":2.415953,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costos de Venta","category":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Gastos de personal","category":"admin_general_expense","amount":-1711.470936,"disclosure":"aggregated"},
+        {"label":"Honorarios","category":"admin_general_expense","amount":-155.981205,"disclosure":"aggregated"},
+        {"label":"Impuestos","category":"admin_general_expense","amount":-256.728447,"disclosure":"aggregated"},
+        {"label":"Arriendos","category":"admin_general_expense","amount":-10.194859,"disclosure":"aggregated"},
+        {"label":"seguros","category":"admin_general_expense","amount":-23.572277,"disclosure":"aggregated"},
+        {"label":"Servicios","category":"admin_general_expense","amount":-34.035571,"disclosure":"aggregated"},
+        {"label":"Gastos Legales","category":"admin_general_expense","amount":-27.402747,"disclosure":"aggregated"},
+        {"label":"Mantenimiento y reparaciones","category":"admin_general_expense","amount":-2.272533,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"admin_general_expense","amount":-3264.244042,"disclosure":"aggregated"},
+        {"label":"Depreciaciones","category":"depreciation","amount":-114.253422,"disclosure":"aggregated"},
+        {"label":"Honorarios","category":"admin_general_expense","amount":-173.359999,"disclosure":"aggregated"},
+        {"label":"Servicios","category":"admin_general_expense","amount":-346.387164,"disclosure":"aggregated"},
+        {"label":"Gastos de Viaje","category":"match_organisation_expense","amount":-618.97871,"disclosure":"aggregated"},
+        {"label":"Amortizaciones derechos deportivos","category":"player_amortisation","amount":-291.439505,"disclosure":"aggregated"},
+        {"label":"Otro Gastos de actividades ordinarias","category":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Devoluciones en ventas","category":"other_expenses","amount":-513.192677,"disclosure":"aggregated"},
+        {"label":"Gastos de personal (deportivos)","category":"wages_squad","amount":-3513.100819,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1022.272932,"tax":-1220.153483,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":14817.813676,"expenses":11056.614913,"net_result":1518.772348},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos Financiero","amount":16.56701},
+          {"label":"Costos Financieros","amount":-1038.839942},
+          {"label":"Gasto impuesto de renta y cree","amount":-1051.401},
+          {"label":"Impuesto diferido","amount":-168.752483}
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,0 +1,1393 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "asroma-it",
+    "name": "A.S. Roma S.r.l.",
+    "display_name": "AS Roma",
+    "country": "IT",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "asroma-it-bilancio-2022-consolidato",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2022-consolidato (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2018",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2025",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2019",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2023",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2024",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2021",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2021 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2009",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2009 (ejercicio 2009)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2013",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2013 (ejercicio 2013)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2014",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2014 (ejercicio 2014)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2015",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2015 (ejercicio 2015)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2016",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2017",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2007",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2007 (ejercicio 2007)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2008",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2008 (ejercicio 2008)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2011-consolidato",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2011-consolidato (ejercicio 2011)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2020",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2020 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2010",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2010 (ejercicio 2010)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2012",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2012 (ejercicio 2012)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2006",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2006 (ejercicio 2006)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "asroma-it-bilancio-2005",
+      "club_id": "asroma-it",
+      "title": "A.S. Roma S.r.l. — AS-Roma-bilancio-2005 (ejercicio 2005)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2005,
+      "period_end": "2005-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2005",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2005-06-30"},
+      "revenue": [
+        {"label":"– Gare campionato","category":"matchday_competition","amount":7.085,"disclosure":"aggregated"},
+        {"label":"– Gare coppe","category":"matchday_competition","amount":6.488,"disclosure":"aggregated"},
+        {"label":"– Altre gare","category":"matchday_competition","amount":2.674,"disclosure":"aggregated"},
+        {"label":"ABBONAMENTI","category":"season_tickets","amount":11.616,"disclosure":"aggregated"},
+        {"label":"b) Ricavi cessione temporanea giocatori","category":"player_sales","amount":0,"disclosure":"aggregated"},
+        {"label":"- vendita riviste","category":"sponsorship_commercial","amount":0.183,"disclosure":"aggregated"},
+        {"label":"- vendita abbonamenti riviste","category":"sponsorship_commercial","amount":0.014,"disclosure":"aggregated"},
+        {"label":"- vendita altri prodotti editoriali","category":"sponsorship_commercial","amount":0.06,"disclosure":"aggregated"},
+        {"label":"- vendite negozio Piazza Colonna","category":"sponsorship_commercial","amount":0.938,"disclosure":"aggregated"},
+        {"label":"- vendite negozio Via Appia","category":"sponsorship_commercial","amount":0.576,"disclosure":"aggregated"},
+        {"label":"- vendite negozio Via Cola di Rienzo","category":"sponsorship_commercial","amount":0.397,"disclosure":"aggregated"},
+        {"label":"- vendite per corrispondenza","category":"sponsorship_commercial","amount":0.112,"disclosure":"aggregated"},
+        {"label":"- vendite con automezzo mobile","category":"sponsorship_commercial","amount":0.057,"disclosure":"aggregated"},
+        {"label":"- vendite corner specializzati e altre attività","category":"sponsorship_commercial","amount":0.017,"disclosure":"aggregated"},
+        {"label":"- ricavi per *royalties","category":"other_income","amount":0.442,"disclosure":"aggregated"},
+        {"label":"- ricavi contrattuali American Express","category":"sponsorship_commercial","amount":0.139,"disclosure":"aggregated"},
+        {"label":"- ricavi vendite per *franchising","category":"sponsorship_commercial","amount":0.434,"disclosure":"aggregated"},
+        {"label":"- ricavi diversi attività commerciale","category":"sponsorship_commercial","amount":0.317,"disclosure":"aggregated"},
+        {"label":"4) Incrementi immobilizzazioni per capitalizzazione vivaio","category":"other_income","amount":1.358,"disclosure":"aggregated"},
+        {"label":"Sponsor ufficiale Mazda Motor Italia","category":"sponsorship_commercial","amount":7.765,"disclosure":"aggregated"},
+        {"label":"Sponsor tecnico Diadora – Invicta","category":"sponsorship_commercial","amount":6.25,"disclosure":"aggregated"},
+        {"label":"S.D.S. Società Diritti Sportivi S.r.l.","category":"broadcasting","amount":37.443,"disclosure":"aggregated"},
+        {"label":"RTI – Reti Televisivi Italia","category":"broadcasting","amount":17,"disclosure":"aggregated"},
+        {"label":"UEFA Champion League","category":"competition_bonus","amount":6.84,"disclosure":"aggregated"},
+        {"label":"S.E.D.S","category":"broadcasting","amount":7.5,"disclosure":"aggregated"},
+        {"label":"Sky Italia","category":"broadcasting","amount":2.175,"disclosure":"aggregated"},
+        {"label":"RAI - RAI Trade","category":"broadcasting","amount":0.2,"disclosure":"aggregated"},
+        {"label":"Lega Nazionale Professionisti","category":"broadcasting","amount":1.232,"disclosure":"aggregated"},
+        {"label":"Mutualità diritti televisivi fuori casa","category":"broadcasting","amount":4.157,"disclosure":"aggregated"},
+        {"label":"D.L.S. Media Group","category":"sponsorship_commercial","amount":5.731,"disclosure":"aggregated"},
+        {"label":"Nardelli","category":"sponsorship_commercial","amount":0.18,"disclosure":"aggregated"},
+        {"label":"Sbrizze","category":"sponsorship_commercial","amount":0.06,"disclosure":"aggregated"},
+        {"label":"5 BI","category":"sponsorship_commercial","amount":0.035,"disclosure":"aggregated"},
+        {"label":"Proventi per inserzioni pubblicitarie 'La Roma'","category":"sponsorship_commercial","amount":0.247,"disclosure":"aggregated"},
+        {"label":"Erica Ceramiche","category":"sponsorship_commercial","amount":0.027,"disclosure":"aggregated"},
+        {"label":"Corriere dello Sport","category":"sponsorship_commercial","amount":0.03,"disclosure":"aggregated"},
+        {"label":"Colt Telecom","category":"sponsorship_commercial","amount":0.005,"disclosure":"aggregated"},
+        {"label":"Sixtus","category":"sponsorship_commercial","amount":0.055,"disclosure":"aggregated"},
+        {"label":"Klesios","category":"sponsorship_commercial","amount":0.06,"disclosure":"aggregated"},
+        {"label":"Centralpol","category":"sponsorship_commercial","amount":0.1,"disclosure":"aggregated"},
+        {"label":"Altri proventi pubblicitari","category":"sponsorship_commercial","amount":0.041,"disclosure":"aggregated"},
+        {"label":"Diritti UMTS e prestazioni accessorie","category":"broadcasting","amount":3.5,"disclosure":"aggregated"},
+        {"label":"Diritti GSM e GPRS","category":"broadcasting","amount":1.139,"disclosure":"aggregated"},
+        {"label":"Utilizzo fondi rischi","category":"other_income","amount":0.287,"disclosure":"aggregated"},
+        {"label":"Indennizzi assicurativi per infortuni a calciatori","category":"other_income","amount":0.161,"disclosure":"aggregated"},
+        {"label":"Sopravvenienze attive","category":"other_income","amount":0.106,"disclosure":"aggregated"},
+        {"label":"Royalties Diadora-Invicta","category":"sponsorship_commercial","amount":0.412,"disclosure":"aggregated"},
+        {"label":"Proventi ritiro estivo","category":"other_income","amount":0.155,"disclosure":"aggregated"},
+        {"label":"Addebito materiale sportivo","category":"other_income","amount":0.145,"disclosure":"aggregated"},
+        {"label":"Addebiti per biglietti trasferte","category":"matchday_competition","amount":0.086,"disclosure":"aggregated"},
+        {"label":"Multe a tesserati","category":"other_income","amount":0.269,"disclosure":"aggregated"},
+        {"label":"Altri proventi diversi","category":"other_income","amount":0.232,"disclosure":"aggregated"},
+        {"label":"f) Contributi in c'esercizio","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"a) Plusvalenze da alienazioni","category":"player_sales","amount":25.264,"disclosure":"aggregated"},
+        {"label":"b) Sopravvenienze attive","category":"other_income","amount":1.462,"disclosure":"aggregated"},
+        {"label":"c) Altri proventi straordinari","category":"other_income","amount":19.993,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Indumenti sportivi e di rappresentanza","category":"admin_general_expense","amount":-1.316,"disclosure":"aggregated"},
+        {"label":"Materiale di consumo","category":"admin_general_expense","amount":-0.074,"disclosure":"aggregated"},
+        {"label":"Beni e prodotti da commercializzare","category":"other_expenses","amount":-1.671,"disclosure":"aggregated"},
+        {"label":"a) Spese per tesserati","category":"wages_squad","amount":-0.365,"disclosure":"aggregated"},
+        {"label":"b) Costi per attività sportiva","category":"match_organisation_expense","amount":-3.474,"disclosure":"aggregated"},
+        {"label":"c) Costi specifici tecnici","category":"match_organisation_expense","amount":-7.732,"disclosure":"aggregated"},
+        {"label":"d) Costi vitto, alloggio e locomozione","category":"match_organisation_expense","amount":-0.942,"disclosure":"aggregated"},
+        {"label":"e) Spese assicurative","category":"admin_general_expense","amount":-1.28,"disclosure":"aggregated"},
+        {"label":"Consulenze professionali, legali e notarili","category":"admin_general_expense","amount":-1.41,"disclosure":"aggregated"},
+        {"label":"Collaboratori sede","category":"admin_general_expense","amount":-0.328,"disclosure":"aggregated"},
+        {"label":"Spese postali e telefoniche","category":"admin_general_expense","amount":-0.137,"disclosure":"aggregated"},
+        {"label":"Spese di vigilanza","category":"match_organisation_expense","amount":-0.095,"disclosure":"aggregated"},
+        {"label":"Spese di esercizio automezzi","category":"admin_general_expense","amount":-0.042,"disclosure":"aggregated"},
+        {"label":"Spese manutenzione e gestione sede sociale e centro sportivo","category":"admin_general_expense","amount":-0.613,"disclosure":"aggregated"},
+        {"label":"Spese assemblee, adempimenti societari e di borsa","category":"admin_general_expense","amount":-0.08,"disclosure":"aggregated"},
+        {"label":"Trasporti e trasferte","category":"match_organisation_expense","amount":-0.163,"disclosure":"aggregated"},
+        {"label":"Spese canale televisivo Roma Channel","category":"admin_general_expense","amount":-0.516,"disclosure":"aggregated"},
+        {"label":"Manutenzione hardware, software e gestione sito internet","category":"admin_general_expense","amount":-0.083,"disclosure":"aggregated"},
+        {"label":"Emolumenti al Consiglio di Amministrazione","category":"admin_general_expense","amount":-1.536,"disclosure":"aggregated"},
+        {"label":"Onorari alla società di revisione contabile","category":"admin_general_expense","amount":-0.175,"disclosure":"aggregated"},
+        {"label":"Emolumenti al collegio sindacale","category":"admin_general_expense","amount":-0.098,"disclosure":"aggregated"},
+        {"label":"Consulenti attività professionali R.I.F.S.","category":"admin_general_expense","amount":-0.025,"disclosure":"aggregated"},
+        {
+          "label": "Spese per la stampa ed i servizi editoriali dei periodici R.I.F.S.",
+          "category": "admin_general_expense",
+          "amount": -0.327,
+          "disclosure": "aggregated"
+        },
+        {"label":"Consulenze e servizi da imprese R.I.F.S.","category":"admin_general_expense","amount":-0.022,"disclosure":"aggregated"},
+        {"label":"Spese di spedizione e distribuzione","category":"admin_general_expense","amount":-0.099,"disclosure":"aggregated"},
+        {"label":"Servizi e commissioni bancarie","category":"admin_general_expense","amount":-0.041,"disclosure":"aggregated"},
+        {"label":"Altre spese generali e amministrative","category":"admin_general_expense","amount":-0.182,"disclosure":"aggregated"},
+        {"label":"g) Spese pubblicità e promozione","category":"admin_general_expense","amount":-0.804,"disclosure":"aggregated"},
+        {"label":"a) Salari e stipendi","category":"wages_squad","amount":-73.359,"disclosure":"aggregated"},
+        {"label":"b) Oneri sociali","category":"wages_squad","amount":-1.638,"disclosure":"aggregated"},
+        {"label":"c) Trattamento di fine rapporto","category":"wages_squad","amount":-0.163,"disclosure":"aggregated"},
+        {"label":"d) Trattamento di quiescenza e simili","category":"wages_squad","amount":-0.186,"disclosure":"aggregated"},
+        {"label":"Costi d'impianto e di ampliamento","category":"other_amortisation","amount":-0.011,"disclosure":"aggregated"},
+        {"label":"Marchi","category":"other_amortisation","amount":-0.041,"disclosure":"aggregated"},
+        {"label":"Avviamento","category":"other_amortisation","amount":-0.001,"disclosure":"aggregated"},
+        {"label":"Capitalizzazioni costi del vivaio","category":"other_amortisation","amount":-1.653,"disclosure":"aggregated"},
+        {"label":"Diritti pluriennali prestazioni calciatori","category":"player_amortisation","amount":-28.601,"disclosure":"aggregated"},
+        {"label":"Oneri pluriennali ex art. 18 bis L.91/81","category":"other_amortisation","amount":-13.365,"disclosure":"aggregated"},
+        {"label":"Altre immobilizzazioni immateriali","category":"other_amortisation","amount":-0.078,"disclosure":"aggregated"},
+        {"label":"Terreni e fabbricati","category":"depreciation","amount":-0.37,"disclosure":"aggregated"},
+        {"label":"Impianti e macchinario","category":"depreciation","amount":-0.07,"disclosure":"aggregated"},
+        {"label":"Attrezzature Industriali e commerciali","category":"depreciation","amount":-0.017,"disclosure":"aggregated"},
+        {"label":"Altri beni","category":"depreciation","amount":-0.102,"disclosure":"aggregated"},
+        {"label":"c) Altre svalutazioni delle immobilizzazioni","category":"player_impairment","amount":-3.876,"disclosure":"aggregated"},
+        {"label":"d) Svalutazione dei crediti compresi nell'attivo circolante","category":"other_expenses","amount":-1.194,"disclosure":"aggregated"},
+        {"label":"a) Oneri tributari indiretti dell'esercizio","category":"admin_general_expense","amount":-1.015,"disclosure":"aggregated"},
+        {"label":"b) Sopravvenienze passive","category":"exceptional_items","amount":-0.668,"disclosure":"aggregated"},
+        {"label":"f) Altri oneri","category":"other_expenses","amount":-12.853,"disclosure":"aggregated"},
+        {"label":"a) Minusvalenze relative ad alienazioni","category":"exceptional_items","amount":-1.551,"disclosure":"aggregated"},
+        {"label":"b) Imposte esercizi precedenti","category":"exceptional_items","amount":-0.063,"disclosure":"aggregated"},
+        {"label":"c) Sopravvenienze passive","category":"exceptional_items","amount":-3.022,"disclosure":"aggregated"},
+        {"label":"d) Altri oneri","category":"other_expenses","amount":-0.09,"disclosure":"aggregated"},
+        {"label":"8) Spese godimento beni di terzi","category":"admin_general_expense","amount":-0.557,"disclosure":"aggregated"},
+        {"label":"11) Variazioni delle rimanenze di materie prime e merci","category":"other_expenses","amount":-0.032,"disclosure":"aggregated"},
+        {"label":"12) Accantonamento per rischi","category":"other_amortisation","amount":-0.401,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.665,"tax":-2.987,"gross_debt":7.745,"cash":2.631},
+      "official_totals": {"revenue":183.251,"expenses":163.303,"net_result":9.992},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"- da controllanti","amount":0},
+          {"label":"- da collegate","amount":0},
+          {"label":"- da terzi","amount":2.614},
+          {"label":"- da imprese controllanti","amount":-0.005},
+          {"label":"- da terzi","amount":-3.824},
+          {"label":"17bis) Utili e perdite su cambi","amount":0.097},
+          {"label":"19) Svalutazioni a) di partecipazioni (D, costo)","amount":-0.547},
+          {"label":"a) Imposte correnti","amount":-2.442},
+          {"label":"b) Imposte differite","amount":-0.545}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2006,
+      "period_end": "2006-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2006",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2006-06-30"},
+      "revenue": [
+        {"label":"a) Ricavi da gare","category":"matchday_competition","amount":21.046826,"disclosure":"aggregated"},
+        {"label":"c) Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":3.612966,"disclosure":"aggregated"},
+        {"label":"4) Incrementi immobilizzazioni per capitalizzazione vivaio","category":"other_income","amount":1.509963,"disclosure":"aggregated"},
+        {"label":"c) Sponsorizzazioni","category":"sponsorship_commercial","amount":7.55,"disclosure":"aggregated"},
+        {"label":"d) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":76.156096,"disclosure":"aggregated"},
+        {"label":"e) Proventi pubblicitari","category":"sponsorship_commercial","amount":7.070461,"disclosure":"aggregated"},
+        {"label":"f) Altri proventi","category":"other_income","amount":11.492132,"disclosure":"aggregated"},
+        {"label":"g) Contributi in c/esercizio","category":"other_income","amount":0.246861,"disclosure":"aggregated"},
+        {"label":"a) Plusvalenze da alienazioni","category":"player_sales","amount":3.527143,"disclosure":"aggregated"},
+        {"label":"b) Sopravvenienze attive","category":"other_income","amount":3.585079,"disclosure":"aggregated"},
+        {"label":"c) Altri proventi straordinari","category":"other_income","amount":22.638915,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"6) - Acquisti materie di consumo","category":"admin_general_expense","amount":-2.892324,"disclosure":"aggregated"},
+        {"label":"a) Spese per tesserati","category":"wages_squad","amount":-0.492398,"disclosure":"aggregated"},
+        {"label":"b) Costi per attività sportiva","category":"match_organisation_expense","amount":-1.870772,"disclosure":"aggregated"},
+        {"label":"c) Costi specifici tecnici","category":"match_organisation_expense","amount":-5.478606,"disclosure":"aggregated"},
+        {"label":"d) Costi vitto, alloggio e locomozione","category":"match_organisation_expense","amount":-0.879206,"disclosure":"aggregated"},
+        {"label":"e) Spese assicurative","category":"admin_general_expense","amount":-1.14904,"disclosure":"aggregated"},
+        {"label":"f) Spese amministrative e generali","category":"admin_general_expense","amount":-5.643577,"disclosure":"aggregated"},
+        {"label":"g) Spese pubblicità e promozione","category":"admin_general_expense","amount":-0.559534,"disclosure":"aggregated"},
+        {"label":"8) Spese godimento beni di terzi","category":"admin_general_expense","amount":-5.293919,"disclosure":"aggregated"},
+        {"label":"a) Salari e stipendi","category":"wages_squad","amount":-63.56442,"disclosure":"aggregated"},
+        {"label":"b) Oneri sociali","category":"wages_squad","amount":-1.615833,"disclosure":"aggregated"},
+        {"label":"c) Trattamento di fine rapporto","category":"wages_squad","amount":-0.157362,"disclosure":"aggregated"},
+        {"label":"d) Trattamento di quiescenza e simili","category":"wages_squad","amount":-0.206773,"disclosure":"aggregated"},
+        {"label":"a) Ammortamento immobilizzazioni immateriali","category":"player_amortisation","amount":-35.330654,"disclosure":"aggregated"},
+        {"label":"b) Ammortamento immobilizzazioni materiali","category":"depreciation","amount":-0.334469,"disclosure":"aggregated"},
+        {"label":"c) Altre svalutazioni delle immobilizzazioni","category":"player_impairment","amount":-0.108309,"disclosure":"aggregated"},
+        {"label":"d) Svalutazione dei crediti compresi nell'attivo circolante","category":"other_expenses","amount":-0.5,"disclosure":"aggregated"},
+        {"label":"11) - Variazione delle rimanenze di materie prime e merci","category":"other_expenses","amount":0.175289,"disclosure":"aggregated"},
+        {"label":"12) - Accantonamento per rischi","category":"other_amortisation","amount":-5.109753,"disclosure":"aggregated"},
+        {"label":"a) Oneri tributari indiretti dell'esercizio","category":"admin_general_expense","amount":-3.733608,"disclosure":"aggregated"},
+        {"label":"b) Sopravvenienze passive","category":"exceptional_items","amount":-0.090274,"disclosure":"aggregated"},
+        {"label":"f) Altri oneri","category":"other_expenses","amount":-13.714976,"disclosure":"aggregated"},
+        {"label":"a) di partecipazioni","category":"other_expenses","amount":-0.080961,"disclosure":"aggregated"},
+        {"label":"a) Minusvalenze relative ad alienazioni","category":"exceptional_items","amount":-2.427995,"disclosure":"aggregated"},
+        {"label":"c) Altri oneri straordinari","category":"exceptional_items","amount":-3.314898,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.235596,"tax":-3.022189,"gross_debt":2.184589,"cash":12.903696},
+      "official_totals": {"revenue":158.436442,"expenses":148.541205,"net_result":0.804285},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"- da terzi","amount":1.296643},
+          {"label":"-da terzi","amount":-1.566123},
+          {"label":"17bis) Utili e perdite su cambi","amount":0.033884},
+          {"label":"a) Imposte dell'esercizio","amount":-3.1},
+          {"label":"b) Imposte differite","amount":0.077811}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2007,
+      "period_end": "2007-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2007",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2007-06-30"},
+      "revenue": [
+        {"label":"RICAVI DA GARE","category":"matchday_competition","amount":36.226,"disclosure":"aggregated"},
+        {"label":"ALTRI RICAVI DELLE VENDITE E DELLE PRESTAZIONI","category":"other_income","amount":5.49,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":7.216,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":88.316,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":10.005,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":9.336,"disclosure":"aggregated"},
+        {"label":"f) Contributi in c/esercizio","category":"other_income","amount":1,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze (reduce costos)","category":"other_income","amount":0.238,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":4.428,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-4.054,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-19.088,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-6.398,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-75.757,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-17.005,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-17.528,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-0.114,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.956,"tax":-7.344,"gross_debt":1.897,"cash":30.396},
+      "official_totals": {"revenue":162.255,"expenses":139.944,"net_result":14.011},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"ONERI/PROVENTI FINANZIARI NETTI","amount":-0.792},
+          {"label":"Risultato (utile) di terzi","amount":-0.164},
+          {"label":"a) imposte correnti","amount":-3.632},
+          {"label":"b) imposte anticipate e differite","amount":-3.712}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2008,
+      "period_end": "2008-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2008",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2008-06-30"},
+      "revenue": [
+        {"label":"RICAVI DA GARE","category":"matchday_competition","amount":38.758,"disclosure":"aggregated"},
+        {"label":"ALTRI RICAVI DELLE VENDITE E DELLE PRESTAZIONI","category":"other_income","amount":6.428,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":11.119,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":104.223,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":11.492,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":16.293,"disclosure":"aggregated"},
+        {"label":"f) Contributi in c'esercizio","category":"other_income","amount":1,"disclosure":"aggregated"},
+        {"label":"GESTIONE OPERATIVA NETTA CALCIATORI","category":"player_sales","amount":14.545,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-4.921,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":0.386,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-22.265,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-6.836,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-94.492,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-18.781,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-24.097,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-4.279,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.164,"tax":-8.937,"gross_debt":1.261,"cash":37.01},
+      "official_totals": {"revenue":203.858,"expenses":175.285,"net_result":19.472},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"ONERI/PROVENTI FINANZIARI NETTI","amount":-0.164},
+          {"label":"a) imposte correnti","amount":-3.421},
+          {"label":"b) imposte anticipate e differite","amount":-5.516}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2009,
+      "period_end": "2009-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2009",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2009-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":31.92,"disclosure":"aggregated"},
+        {"label":"Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":6.576,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":10.988,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":88.332,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":11.05,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":11.116,"disclosure":"aggregated"},
+        {"label":"f) Contributi in c/esercizio","category":"other_income","amount":0.947,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":16.383,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-5.257,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":0.473,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-20.007,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-6.825,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-99.213,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-16.704,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-24.927,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-2.661,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.147,"tax":-4.627,"gross_debt":0.587,"cash":18.524},
+      "official_totals": {"revenue":177.312,"expenses":175.121,"net_result":-1.289},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Oneri/Proventi finanziari netti","amount":1.147},
+          {"label":"a) imposte correnti","amount":-4.783},
+          {"label":"b) imposte anticipate e differite","amount":0.156}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2010,
+      "period_end": "2010-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2010",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2010-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":23.821,"disclosure":"aggregated"},
+        {"label":"Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":7.109,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":12.499,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":75.151,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":9.776,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":7.741,"disclosure":"aggregated"},
+        {"label":"f) Contributi in c/esercizio","category":"other_income","amount":0.947,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":18.992,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-5.532,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":-0.256,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-21.067,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-7.107,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-101.245,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-16.855,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-24.327,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-0.236,"disclosure":"aggregated"},
+        {"label":"Risultato (utili) di terzi","category":"other_expenses","amount":-0.243,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.992,"tax":-3.167,"gross_debt":11.896,"cash":1.923},
+      "official_totals": {"revenue":156.036,"expenses":176.868,"net_result":-22.007},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Proventi (oneri) finanziari netti","amount":1.992},
+          {"label":"a) imposte correnti","amount":-3.18},
+          {"label":"b) imposte anticipate e differite","amount":0.013}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2011,
+      "period_end": "2011-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2011-consolidato",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2011-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":31.017,"disclosure":"aggregated"},
+        {"label":"Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":7.981,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":11.148,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":78.042,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":9.412,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":6.278,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":4.453,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-7.335,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":0.702,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-22.462,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-7.319,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-106.814,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-2.423,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-22.614,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-1.606,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.176,"tax":-3.818,"gross_debt":56.658,"cash":2.307},
+      "official_totals": {"revenue":148.331,"expenses":169.871,"net_result":-30.534},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Oneri/Proventi finanziari netti","amount":-5.176},
+          {"label":"a) imposte correnti","amount":-3.807},
+          {"label":"b) imposte anticipate e differite","amount":-0.011}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2012,
+      "period_end": "2012-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2012",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2012-06-30"},
+      "revenue": [
+        {"label":"Campionato","category":"matchday_competition","amount":7.236,"disclosure":"aggregated"},
+        {"label":"Coppe europee","category":"matchday_competition","amount":0.677,"disclosure":"aggregated"},
+        {"label":"Tim Cup","category":"matchday_competition","amount":0.365,"disclosure":"aggregated"},
+        {"label":"Squadre Minori","category":"youth_football","amount":0.012,"disclosure":"aggregated"},
+        {"label":"Gare amichevoli","category":"matchday_competition","amount":0.305,"disclosure":"aggregated"},
+        {"label":"Abbonamenti","category":"season_tickets","amount":6.207,"disclosure":"aggregated"},
+        {"label":"Ricavi da attività editoriale","category":"other_income","amount":0.089,"disclosure":"aggregated"},
+        {"label":"Ricavi da vendite A.S. Roma Store","category":"sponsorship_commercial","amount":1.679,"disclosure":"aggregated"},
+        {"label":"Ricavi da vendite affiliati","category":"sponsorship_commercial","amount":2.32,"disclosure":"aggregated"},
+        {"label":"Ricavi da vendite corners specializzati","category":"sponsorship_commercial","amount":0.001,"disclosure":"aggregated"},
+        {"label":"Ricavi per royalties","category":"other_income","amount":0.857,"disclosure":"aggregated"},
+        {"label":"Ricavi vendite per corrispondenza","category":"sponsorship_commercial","amount":0.212,"disclosure":"aggregated"},
+        {"label":"Ricavi vendita da mobile","category":"sponsorship_commercial","amount":0.11,"disclosure":"aggregated"},
+        {"label":"Ricavi diversi attività commerciale","category":"sponsorship_commercial","amount":0.143,"disclosure":"aggregated"},
+        {"label":"Sponsor Tecnico Kappa","category":"sponsorship_commercial","amount":6.15,"disclosure":"aggregated"},
+        {"label":"Sponsor Ufficiale Wind","category":"sponsorship_commercial","amount":5.5,"disclosure":"aggregated"},
+        {"label":"LNP Serie A – diritti Campionato Serie A","category":"broadcasting","amount":58.838,"disclosure":"aggregated"},
+        {"label":"LNP Serie A – diritti TIM Cup","category":"broadcasting","amount":0.278,"disclosure":"aggregated"},
+        {"label":"Tornei UEFA (Europa League / Champions League)","category":"broadcasting","amount":0.451,"disclosure":"aggregated"},
+        {"label":"Proventi Roma – Channel","category":"broadcasting","amount":1.703,"disclosure":"aggregated"},
+        {"label":"Commercializzazione Library AS Roma","category":"broadcasting","amount":1.664,"disclosure":"aggregated"},
+        {"label":"Proventi accessori LNP","category":"broadcasting","amount":1.361,"disclosure":"aggregated"},
+        {"label":"Altri diritti televisivi (amichevoli)","category":"broadcasting","amount":0.112,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":10.244,"disclosure":"aggregated"},
+        {"label":"Contributi in c/esercizio e proventi LNP","category":"other_income","amount":1.902,"disclosure":"aggregated"},
+        {"label":"Indennizzi assicurativi infortuni calciatori","category":"other_income","amount":1.896,"disclosure":"aggregated"},
+        {"label":"Riaddebiti ad entità correlate","category":"other_income","amount":0.053,"disclosure":"aggregated"},
+        {"label":"Proventi Campus Estivi","category":"youth_football","amount":0.326,"disclosure":"aggregated"},
+        {"label":"Proventi ritiri estivi","category":"other_income","amount":0.15,"disclosure":"aggregated"},
+        {"label":"Organizzazione Eventi sportivi","category":"other_income","amount":0.217,"disclosure":"aggregated"},
+        {"label":"Addebiti di costi per trasferte e materiale sportivo","category":"other_income","amount":0.57,"disclosure":"aggregated"},
+        {"label":"Sopravvenienze attive","category":"other_income","amount":2.426,"disclosure":"aggregated"},
+        {"label":"RAI (proventi canale tv Roma Channel)","category":"broadcasting","amount":0.25,"disclosure":"aggregated"},
+        {"label":"Proventi FIFA/UEFA/FIGC per tesserati","category":"other_income","amount":1.116,"disclosure":"aggregated"},
+        {"label":"Altri proventi diversi","category":"other_income","amount":0.553,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":9.06,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Indumenti sportivi e divise ufficiali","category":"admin_general_expense","amount":-1.821,"disclosure":"aggregated"},
+        {"label":"Materiale sportivo tecnico","category":"admin_general_expense","amount":-0.011,"disclosure":"aggregated"},
+        {"label":"Beni e prodotti da commercializzare","category":"other_expenses","amount":-3.19,"disclosure":"aggregated"},
+        {"label":"Materiale vario di consumo","category":"admin_general_expense","amount":-0.208,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":-0.736,"disclosure":"aggregated"},
+        {"label":"Costi per tesserati","category":"wages_squad","amount":-0.444,"disclosure":"aggregated"},
+        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-1.834,"disclosure":"aggregated"},
+        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-5.026,"disclosure":"aggregated"},
+        {"label":"Costi vitto, alloggio, locomozione e trasferte","category":"match_organisation_expense","amount":-0.774,"disclosure":"aggregated"},
+        {"label":"Spese assicurative","category":"admin_general_expense","amount":-3.056,"disclosure":"aggregated"},
+        {"label":"Consulenze, professionali, legali e notarili","category":"admin_general_expense","amount":-2.041,"disclosure":"aggregated"},
+        {
+          "label": "Consulenze giornalistiche, professionali e servizi merchandising.",
+          "category": "admin_general_expense",
+          "amount": -0.091,
+          "disclosure": "aggregated"
+        },
+        {"label":"Spese stampa e servizi editoriali del periodico 'La Roma'","category":"admin_general_expense","amount":-0.241,"disclosure":"aggregated"},
+        {"label":"Spese di spedizione e distribuzione periodico 'La Roma'","category":"admin_general_expense","amount":-0.123,"disclosure":"aggregated"},
+        {"label":"Collaboratori sede","category":"admin_general_expense","amount":-0.456,"disclosure":"aggregated"},
+        {"label":"Spese postali e telefoniche","category":"admin_general_expense","amount":-0.311,"disclosure":"aggregated"},
+        {"label":"Spese di vigilanza","category":"match_organisation_expense","amount":-0.216,"disclosure":"aggregated"},
+        {"label":"Spese manutenzione- gestione sede sociale e centro sportivo","category":"admin_general_expense","amount":-0.397,"disclosure":"aggregated"},
+        {
+          "label": "Spese manutenzione e gestione hardware, software e sito internet",
+          "category": "admin_general_expense",
+          "amount": -0.345,
+          "disclosure": "aggregated"
+        },
+        {"label":"Spese per assemblee, adempimenti societari e di borsa","category":"admin_general_expense","amount":-0.112,"disclosure":"aggregated"},
+        {"label":"Trasporti e trasferte","category":"match_organisation_expense","amount":-0.473,"disclosure":"aggregated"},
+        {
+          "label": "Emolumenti al Consiglio di Amministrazione/Organismo di Vigilanza",
+          "category": "admin_general_expense",
+          "amount": -0.136,
+          "disclosure": "aggregated"
+        },
+        {"label":"Onorari alla società di revisione contabile","category":"admin_general_expense","amount":-0.155,"disclosure":"aggregated"},
+        {"label":"Emolumenti al collegio sindacale","category":"admin_general_expense","amount":-0.096,"disclosure":"aggregated"},
+        {"label":"Costo digitalizzazione Library AS Roma","category":"admin_general_expense","amount":-0.2,"disclosure":"aggregated"},
+        {"label":"Costi di produzione Roma Channel","category":"admin_general_expense","amount":-1.616,"disclosure":"aggregated"},
+        {"label":"Oneri di progettazione nuovo Stadio","category":"admin_general_expense","amount":-0.18,"disclosure":"aggregated"},
+        {"label":"Altre spese generali e amministrative","category":"admin_general_expense","amount":-0.159,"disclosure":"aggregated"},
+        {"label":"Spese di pubblicità e promozione","category":"admin_general_expense","amount":-3.627,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-7.619,"disclosure":"aggregated"},
+        {"label":"Salari e stipendi","category":"wages_squad","amount":-99.19,"disclosure":"aggregated"},
+        {"label":"Oneri sociali","category":"wages_squad","amount":-3.038,"disclosure":"aggregated"},
+        {"label":"T.F.R.","category":"wages_squad","amount":-0.313,"disclosure":"aggregated"},
+        {"label":"Altri costi (Faifc)","category":"other_expenses","amount":-0.277,"disclosure":"aggregated"},
+        {"label":"Oneri tributari indiretti","category":"admin_general_expense","amount":-0.457,"disclosure":"aggregated"},
+        {"label":"Sopravvenienze passive","category":"exceptional_items","amount":-0.438,"disclosure":"aggregated"},
+        {"label":"- Costi accesso segnale televisivo LNP","category":"match_organisation_expense","amount":-1.052,"disclosure":"aggregated"},
+        {"label":"- Mutualità incassi gare Tim Cup","category":"match_organisation_expense","amount":-0.07,"disclosure":"aggregated"},
+        {"label":"- Contributi, ammende, spese LNP-Uefa","category":"match_organisation_expense","amount":-0.677,"disclosure":"aggregated"},
+        {"label":"- Acquisto biglietteria gare trasferta","category":"match_organisation_expense","amount":-0.006,"disclosure":"aggregated"},
+        {"label":"- Organizzazione eventi sportivi","category":"match_organisation_expense","amount":-0.097,"disclosure":"aggregated"},
+        {"label":"- Altri oneri diversi","category":"other_expenses","amount":-0.423,"disclosure":"aggregated"},
+        {"label":"Ammortamento delle immobilizzazioni immateriali","category":"player_amortisation","amount":-28.783,"disclosure":"aggregated"},
+        {"label":"Ammortamento delle immobilizzazioni materiali","category":"depreciation","amount":-0.177,"disclosure":"aggregated"},
+        {"label":"Svalutazione dei crediti correnti","category":"other_expenses","amount":-0.654,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-1.385,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.367,"tax":-3.409,"gross_debt":77.264,"cash":22.509},
+      "official_totals": {"revenue":125.033,"expenses":172.293,"net_result":-58.474},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Oneri/Proventi finanziari netti","amount":-7.146},
+          {"label":"Risultato di terzi","amount":-0.221},
+          {"label":"a) imposte correnti","amount":-2.405},
+          {"label":"b) imposte anticipate e differite","amount":-1.004}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2013,
+      "period_end": "2013-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2013",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2013-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":21.24,"disclosure":"aggregated"},
+        {"label":"Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":4.971,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":12.66,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":66.014,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":7.949,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":11.825,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":10.986,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-3.696,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":-1.31,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-26.609,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-7.954,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-94.231,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-4.547,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-32.315,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.723,"tax":-3.2,"gross_debt":97.152,"cash":8.643},
+      "official_totals": {"revenue":135.645,"expenses":170.662,"net_result":-39.94},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Oneri/Proventi finanziari netti","amount":-1.723},
+          {"label":"a) imposte correnti","amount":-2.707},
+          {"label":"b) imposte anticipate e differite","amount":-0.493}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2014,
+      "period_end": "2014-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2014",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2014-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":23.384,"disclosure":"aggregated"},
+        {"label":"Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":5.965,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":6.822,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":68.694,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":8.711,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":14.871,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":30.719,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-4.477,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":-0.12,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-30.902,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-7.599,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-107.591,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-6.852,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-28.872,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-0.8,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.012,"tax":-3.321,"gross_debt":136.934,"cash":4.858},
+      "official_totals": {"revenue":159.166,"expenses":187.213,"net_result":-38.38},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Proventi e oneri finanziari","amount":-7.012},
+          {"label":"a) imposte correnti","amount":-3.136},
+          {"label":"b) imposte anticipate e differite","amount":-0.185}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2015,
+      "period_end": "2015-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2015",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2015-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":43.619,"disclosure":"aggregated"},
+        {"label":"Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":6.164,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":5.06,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":102.817,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":8.615,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":14.351,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":27.651,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-5.958,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":0.794,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-39.179,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-7.988,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-136.069,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-8.26,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-40.215,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-0.82,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.8,"tax":-3.846,"gross_debt":176.65,"cash":18.284},
+      "official_totals": {"revenue":208.277,"expenses":237.695,"net_result":-41.064},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Proventi e oneri finanziari","amount":-7.8},
+          {"label":"a) imposte correnti","amount":-4.661},
+          {"label":"b) imposte anticipate e differite","amount":0.815}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2016-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":52.138,"disclosure":"aggregated"},
+        {"label":"Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":5.405,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":5.064,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":133.459,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":10.633,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":12.73,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":64.167,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-4.686,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":-0.663,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-43.739,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-8.302,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-154.985,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-4.933,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-54.581,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-0.16,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.297,"tax":-7.385,"gross_debt":190.713,"cash":8.698},
+      "official_totals": {"revenue":283.596,"expenses":272.049,"net_result":-14.135},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Proventi e oneri finanziari","amount":-18.297},
+          {"label":"a) imposte correnti","amount":-8.233},
+          {"label":"b) imposte anticipate e differite","amount":0.848}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2017-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":35.252,"disclosure":"aggregated"},
+        {"label":"Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":8.056,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":5.397,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":105.573,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":10.831,"disclosure":"aggregated"},
+        {"label":"e) Altri proventi","category":"other_income","amount":9.891,"disclosure":"aggregated"},
+        {"label":"Gestione operativa netta calciatori","category":"player_sales","amount":79.076,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-7.149,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":0.336,"disclosure":"aggregated"},
+        {"label":"Spese per Servizi","category":"admin_general_expense","amount":-42.464,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-9.793,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-145.026,"disclosure":"aggregated"},
+        {"label":"Oneri diversi di gestione","category":"other_expenses","amount":-5.711,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-58.855,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-0.2,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-21.309,"tax":-6.182,"gross_debt":261.084,"cash":51.845},
+      "official_totals": {"revenue":254.076,"expenses":268.862,"net_result":-42.277},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Proventi e oneri finanziari","amount":-21.309},
+          {"label":"a) imposte correnti","amount":-6.182},
+          {"label":"b) imposte anticipate e differite","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2018-06-30"},
+      "revenue": [
+        {"label":"Campionato Serie A","category":"matchday_competition","amount":11.598,"disclosure":"aggregated"},
+        {"label":"UEFA Champions League","category":"competition_bonus","amount":52.784,"disclosure":"aggregated"},
+        {"label":"Youth League","category":"competition_bonus","amount":0.048,"disclosure":"aggregated"},
+        {"label":"Tim Cup","category":"matchday_competition","amount":0.242,"disclosure":"aggregated"},
+        {"label":"Gare amichevoli","category":"matchday_competition","amount":3.628,"disclosure":"aggregated"},
+        {"label":"Abbonamenti Campionato","category":"season_tickets","amount":8.919,"disclosure":"aggregated"},
+        {"label":"Altri ricavi delle vendite e delle prestazioni","category":"other_income","amount":7.808,"disclosure":"aggregated"},
+        {"label":"b) Sponsorizzazioni","category":"sponsorship_commercial","amount":11.842,"disclosure":"aggregated"},
+        {"label":"c) Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":128.557,"disclosure":"aggregated"},
+        {"label":"d) Proventi pubblicitari","category":"sponsorship_commercial","amount":13.814,"disclosure":"aggregated"},
+        {"label":"Proventi LNP","category":"broadcasting","amount":2.086,"disclosure":"aggregated"},
+        {"label":"Indennizzi assicurativi infortuni calciatori","category":"other_income","amount":5.114,"disclosure":"aggregated"},
+        {"label":"Riaddebiti ed entità correlate","category":"other_income","amount":0.201,"disclosure":"aggregated"},
+        {"label":"AS Roma Camp","category":"youth_football","amount":0.35,"disclosure":"aggregated"},
+        {"label":"Ritiri estivi","category":"other_income","amount":0.325,"disclosure":"aggregated"},
+        {"label":"Scuola Calcio","category":"youth_football","amount":0.501,"disclosure":"aggregated"},
+        {"label":"Addebiti materiale sportivo","category":"other_income","amount":0.219,"disclosure":"aggregated"},
+        {"label":"Utilizzo fondi rischi","category":"other_income","amount":1.239,"disclosure":"aggregated"},
+        {"label":"Sopravvenienze attive","category":"other_income","amount":0.089,"disclosure":"aggregated"},
+        {"label":"Biglietti trasferite internazionali","category":"matchday_competition","amount":0.682,"disclosure":"aggregated"},
+        {"label":"Tessera Tifoso Away","category":"matchday_competition","amount":0.149,"disclosure":"aggregated"},
+        {"label":"Altri proventi diversi","category":"other_income","amount":0.671,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze (reduce costos)","category":"other_income","amount":0.082,"disclosure":"aggregated"},
+        {"label":"Ricavi da gestione dei diritti pluriennali prestazioni calciatori","category":"player_sales","amount":69.561,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Indumenti sportivi e materiale tecnico","category":"admin_general_expense","amount":-2.267,"disclosure":"aggregated"},
+        {"label":"Divise sociali ed altri beni","category":"admin_general_expense","amount":-0.405,"disclosure":"aggregated"},
+        {"label":"Beni e prodotti da commercializzare","category":"other_expenses","amount":-3.504,"disclosure":"aggregated"},
+        {"label":"Materiale vario di consumo","category":"admin_general_expense","amount":-0.786,"disclosure":"aggregated"},
+        {"label":"Costi per tesserati","category":"wages_squad","amount":-1.542,"disclosure":"aggregated"},
+        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-5.641,"disclosure":"aggregated"},
+        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-6.336,"disclosure":"aggregated"},
+        {"label":"Costi vitto, alloggio, locomozione e trasferte","category":"match_organisation_expense","amount":-2.254,"disclosure":"aggregated"},
+        {"label":"Spese assicurative","category":"admin_general_expense","amount":-5.865,"disclosure":"aggregated"},
+        {"label":"Consulenze e servizi professionali","category":"admin_general_expense","amount":-6.701,"disclosure":"aggregated"},
+        {"label":"Consulenze professionali per servizi commerciali","category":"admin_general_expense","amount":-1.174,"disclosure":"aggregated"},
+        {"label":"Spese postali, telefoniche ed altre utenze","category":"admin_general_expense","amount":-0.655,"disclosure":"aggregated"},
+        {"label":"Spese di vigilanza","category":"match_organisation_expense","amount":-0.157,"disclosure":"aggregated"},
+        {"label":"Manutenzione - gestione sede sociale e centro sportivo","category":"admin_general_expense","amount":-1.559,"disclosure":"aggregated"},
+        {"label":"Manutenzione e gestione hardware, software e sito internet","category":"admin_general_expense","amount":-2.041,"disclosure":"aggregated"},
+        {"label":"Spese per assemblee, societari e di borsa","category":"admin_general_expense","amount":-0.1,"disclosure":"aggregated"},
+        {"label":"Trasporti e trasferte","category":"match_organisation_expense","amount":-1.974,"disclosure":"aggregated"},
+        {"label":"Emolumenti al Consiglio di Amministrazione","category":"admin_general_expense","amount":-0.15,"disclosure":"aggregated"},
+        {"label":"Spese di revisione contabile","category":"admin_general_expense","amount":-0.234,"disclosure":"aggregated"},
+        {"label":"Emolumenti al Collegio sindacale / O.D.V.","category":"admin_general_expense","amount":-0.137,"disclosure":"aggregated"},
+        {"label":"Costi di produzione *Roma TV e Roma Radio","category":"admin_general_expense","amount":-4.878,"disclosure":"aggregated"},
+        {"label":"Spese Call Center Stadio ed altri servizi interinali","category":"admin_general_expense","amount":-0.025,"disclosure":"aggregated"},
+        {"label":"Altre spese generali e amministrative","category":"admin_general_expense","amount":-0.205,"disclosure":"aggregated"},
+        {"label":"Spese di pubblicità e promozione","category":"admin_general_expense","amount":-5.752,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-10.671,"disclosure":"aggregated"},
+        {"label":"Salari e stipendi","category":"wages_squad","amount":-150.958,"disclosure":"aggregated"},
+        {"label":"Oneri sociali","category":"wages_squad","amount":-6.452,"disclosure":"aggregated"},
+        {"label":"T.F.R.","category":"wages_squad","amount":-0.932,"disclosure":"aggregated"},
+        {"label":"Altri costi (Faifc)","category":"other_expenses","amount":-0.498,"disclosure":"aggregated"},
+        {"label":"Oneri tributari indiretti","category":"admin_general_expense","amount":-0.979,"disclosure":"aggregated"},
+        {"label":"Sopravvenienze passive","category":"exceptional_items","amount":-0.107,"disclosure":"aggregated"},
+        {"label":"- Costi accesso segnale televisivo LNP","category":"match_organisation_expense","amount":-1.063,"disclosure":"aggregated"},
+        {"label":"- Mutualità incassi gare TIM Cup","category":"match_organisation_expense","amount":-0.109,"disclosure":"aggregated"},
+        {"label":"- Contributi, ammende, spese LNP-FIGC-UEFA","category":"match_organisation_expense","amount":-1.355,"disclosure":"aggregated"},
+        {"label":"- Costi per acquisti biglietti gare in trasferta","category":"match_organisation_expense","amount":-0.68,"disclosure":"aggregated"},
+        {"label":"- Erogazioni liberali Roma","category":"other_expenses","amount":-0.973,"disclosure":"aggregated"},
+        {"label":"- Penalità contrattuali","category":"other_expenses","amount":-0.287,"disclosure":"aggregated"},
+        {"label":"- Altri oneri diversi","category":"other_expenses","amount":-0.731,"disclosure":"aggregated"},
+        {"label":"Ammortamento delle immobilizzazioni immateriali","category":"player_amortisation","amount":-57.457,"disclosure":"aggregated"},
+        {"label":"Ammortamento delle immobilizzazioni materiali","category":"depreciation","amount":-0.353,"disclosure":"aggregated"},
+        {"label":"Svalutazione dei crediti correnti","category":"other_expenses","amount":-1.41,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-0.546,"disclosure":"aggregated"},
+        {"label":"Oneri da gestione dei diritti pluriennali prestazioni calciatori","category":"other_expenses","amount":-23.639,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-24.489,"tax":-7.976,"gross_debt":266.393,"cash":30.898},
+      "official_totals": {"revenue":320.509,"expenses":313.435,"net_result":-25.498},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Proventi e oneri finanziari","amount":-24.714},
+          {"label":"Risultato di terzi","amount":0.225},
+          {"label":"Imposte dell'esercizio","amount":-7.976}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":66.284,"disclosure":"aggregated"},
+        {"label":"Ricavi delle vendite commerciali e licensing","category":"sponsorship_commercial","amount":7.716,"disclosure":"aggregated"},
+        {"label":"Sponsorizzazioni","category":"sponsorship_commercial","amount":24.22,"disclosure":"aggregated"},
+        {"label":"Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":111.919,"disclosure":"aggregated"},
+        {"label":"Pubblicità","category":"sponsorship_commercial","amount":11.395,"disclosure":"aggregated"},
+        {"label":"Altri","category":"other_income","amount":11.219,"disclosure":"aggregated"},
+        {"label":"Ricavi da gestione dei diritti pluriennali prestazioni calciatori","category":"player_sales","amount":148.262,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-7.195,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":0.163,"disclosure":"aggregated"},
+        {"label":"Spese per servizi","category":"admin_general_expense","amount":-54.784,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-10.866,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-184.42,"disclosure":"aggregated"},
+        {"label":"Altri costi","category":"other_expenses","amount":-7.367,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-87.412,"disclosure":"aggregated"},
+        {"label":"Oneri da gestione dei diritti pluriennali prestazioni calciatori","category":"other_expenses","amount":-15.934,"disclosure":"aggregated"},
+        {"label":"Accantonamenti per rischi","category":"other_amortisation","amount":-0.6,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-28.092,"tax":-8.964,"gross_debt":255.451,"cash":18.092},
+      "official_totals": {"revenue":381.015,"expenses":368.415,"net_result":-24.456},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Proventi finanziari","amount":2.614},
+          {"label":"Oneri finanziari","amount":-30.706},
+          {"label":"Imposte correnti","amount":-8.921},
+          {"label":"Imposte differite","amount":-0.043}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":26.19,"disclosure":"aggregated"},
+        {"label":"Ricavi delle vendite commerciali e licensing","category":"sponsorship_commercial","amount":5.743,"disclosure":"aggregated"},
+        {"label":"Sponsorizzazioni","category":"sponsorship_commercial","amount":17.397,"disclosure":"aggregated"},
+        {"label":"Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":80.282,"disclosure":"aggregated"},
+        {"label":"Pubblicità","category":"sponsorship_commercial","amount":6.806,"disclosure":"aggregated"},
+        {"label":"Altri ricavi","category":"other_income","amount":4.832,"disclosure":"aggregated"},
+        {"label":"Ricavi da gestione dei diritti pluriennali prestazioni calciatori","category":"player_sales","amount":32.561,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-6.726,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":0.161,"disclosure":"aggregated"},
+        {"label":"Spese per servizi","category":"admin_general_expense","amount":-50.93,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-5.574,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-155.069,"disclosure":"aggregated"},
+        {"label":"Altri costi","category":"other_expenses","amount":-6.914,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-104.238,"disclosure":"aggregated"},
+        {"label":"Oneri da gestione dei diritti pluriennali prestazioni calciatori","category":"other_expenses","amount":-16.461,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-32.155,"tax":-0.396,"gross_debt":289.87,"cash":7.706},
+      "official_totals": {"revenue":173.811,"expenses":345.751,"net_result":-204.492},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Proventi finanziari","amount":3.075},
+          {"label":"Oneri finanziari","amount":-35.23},
+          {"label":"imposte correnti","amount":-0.396},
+          {"label":"imposte differite","amount":0}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2021",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"Campionato Serie A","category":"matchday_competition","amount":0.099,"disclosure":"aggregated"},
+        {"label":"Competizioni europee","category":"competition_bonus","amount":12.82,"disclosure":"aggregated"},
+        {"label":"Ricavi delle vendite commerciali e licensing","category":"sponsorship_commercial","amount":6.14,"disclosure":"aggregated"},
+        {"label":"Sponsorizzazioni","category":"sponsorship_commercial","amount":19.927,"disclosure":"aggregated"},
+        {"label":"Competizioni nazionali","category":"broadcasting","amount":103.885,"disclosure":"aggregated"},
+        {"label":"Competizioni UEFA","category":"broadcasting","amount":11.934,"disclosure":"aggregated"},
+        {"label":"Library AS Roma","category":"broadcasting","amount":4.045,"disclosure":"aggregated"},
+        {"label":"Segnale TV","category":"broadcasting","amount":1.634,"disclosure":"aggregated"},
+        {"label":"AS Roma Media Center","category":"broadcasting","amount":2.729,"disclosure":"aggregated"},
+        {"label":"Pubblicità","category":"sponsorship_commercial","amount":14.916,"disclosure":"aggregated"},
+        {"label":"Ricavi non audiovisivi da Lega Serie A","category":"sponsorship_commercial","amount":4.001,"disclosure":"aggregated"},
+        {"label":"Indennizzi assicurativi","category":"other_income","amount":4.84,"disclosure":"aggregated"},
+        {"label":"Riaddebiti a società correlate","category":"other_income","amount":0.378,"disclosure":"aggregated"},
+        {"label":"Utilizzi fondi rischi","category":"other_income","amount":0.4,"disclosure":"aggregated"},
+        {"label":"Altri ricavi diversi","category":"other_income","amount":2.666,"disclosure":"aggregated"},
+        {"label":"Ricavi da gestione dei diritti pluriennali prestazioni calciatori","category":"player_sales","amount":36.125,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Indumenti sportivi e divise ufficiale","category":"admin_general_expense","amount":-1.881,"disclosure":"aggregated"},
+        {"label":"Materiali di consumo","category":"admin_general_expense","amount":-1.647,"disclosure":"aggregated"},
+        {"label":"Beni e prodotti da commercializzare","category":"other_expenses","amount":-2.218,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":-0.45,"disclosure":"aggregated"},
+        {"label":"Costi per tesserati","category":"wages_squad","amount":-0.005,"disclosure":"aggregated"},
+        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-5.893,"disclosure":"aggregated"},
+        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-6.903,"disclosure":"aggregated"},
+        {"label":"Costi di vitto, alloggio, locomozione e trasferte","category":"match_organisation_expense","amount":-2.238,"disclosure":"aggregated"},
+        {"label":"Spese assicurative","category":"admin_general_expense","amount":-6.596,"disclosure":"aggregated"},
+        {"label":"Prestazioni e servizi professionali","category":"admin_general_expense","amount":-16.194,"disclosure":"aggregated"},
+        {"label":"Produzione e sviluppo attività Media Center","category":"admin_general_expense","amount":-4.375,"disclosure":"aggregated"},
+        {"label":"Emolumenti Consiglio di Amministrazione","category":"admin_general_expense","amount":0.121,"disclosure":"aggregated"},
+        {"label":"Collegio Sindacale, Società di Revisione, OdV","category":"admin_general_expense","amount":-0.561,"disclosure":"aggregated"},
+        {"label":"Gestione sede sociale e centro sportivo","category":"admin_general_expense","amount":-1.196,"disclosure":"aggregated"},
+        {"label":"Servizi mensa e buoni pasto personale","category":"admin_general_expense","amount":-1.294,"disclosure":"aggregated"},
+        {"label":"Manutenzione e riparazioni","category":"admin_general_expense","amount":-1.923,"disclosure":"aggregated"},
+        {"label":"Viaggi e trasferte","category":"match_organisation_expense","amount":-0.425,"disclosure":"aggregated"},
+        {"label":"Altre spese","category":"other_expenses","amount":-1.6,"disclosure":"aggregated"},
+        {"label":"Spese di pubblicità e promozione","category":"admin_general_expense","amount":-1.862,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-4.66,"disclosure":"aggregated"},
+        {"label":"Salari e stipendi","category":"wages_squad","amount":-147.512,"disclosure":"aggregated"},
+        {"label":"Oneri contributivi e altri oneri","category":"wages_squad","amount":-4.014,"disclosure":"aggregated"},
+        {"label":"Salari e stipendi","category":"wages_squad","amount":-13.901,"disclosure":"aggregated"},
+        {"label":"Oneri sociali","category":"wages_squad","amount":-3.076,"disclosure":"aggregated"},
+        {"label":"T.F.R.","category":"wages_squad","amount":-0.895,"disclosure":"aggregated"},
+        {"label":"Oneri tributari indiretti","category":"admin_general_expense","amount":-0.561,"disclosure":"aggregated"},
+        {"label":"Oneri per accesso al segnale TV","category":"match_organisation_expense","amount":-1.155,"disclosure":"aggregated"},
+        {"label":"Vertenze legali e contenziosi","category":"other_expenses","amount":-0.181,"disclosure":"aggregated"},
+        {"label":"Contributi Lega Serie A, ammende e multe","category":"match_organisation_expense","amount":-1.532,"disclosure":"aggregated"},
+        {"label":"Altri oneri","category":"other_expenses","amount":-0.994,"disclosure":"aggregated"},
+        {"label":"Ammortamenti DPS calciatori","category":"player_amortisation","amount":-88.836,"disclosure":"aggregated"},
+        {"label":"Ammortamenti delle altre immobilizz. immateriali","category":"other_amortisation","amount":-0.468,"disclosure":"aggregated"},
+        {"label":"Ammortamento delle immobilizzazioni materiali","category":"depreciation","amount":-1.956,"disclosure":"aggregated"},
+        {"label":"Ammortamento Diritti d'uso","category":"depreciation","amount":-4.529,"disclosure":"aggregated"},
+        {"label":"Svalutazioni dei crediti correnti","category":"other_expenses","amount":-6.23,"disclosure":"aggregated"},
+        {"label":"Oneri da gestione dei diritti pluriennali prestazioni calciatori","category":"other_expenses","amount":-37.323,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-35.969,"tax":-1.176,"gross_debt":308.42,"cash":22.824},
+      "official_totals": {"revenue":226.539,"expenses":374.963,"net_result":-185.573},
+      "adjustments": {
+        "extra_rows": [{"label":"Proventi finanziari","amount":2.508},{"label":"Oneri finanziari","amount":-38.477},{"label":"imposte correnti","amount":-1.176}]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2022-consolidato",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Ricavi da gare","category":"matchday_competition","amount":39.957,"disclosure":"aggregated"},
+        {"label":"Ricavi delle vendite commerciali e licensing","category":"sponsorship_commercial","amount":13.989,"disclosure":"aggregated"},
+        {"label":"Sponsorizzazioni","category":"sponsorship_commercial","amount":8.241,"disclosure":"aggregated"},
+        {"label":"Diritti televisivi e diritti d'immagine","category":"broadcasting","amount":78.516,"disclosure":"aggregated"},
+        {"label":"Pubblicità","category":"sponsorship_commercial","amount":16.336,"disclosure":"aggregated"},
+        {"label":"Altri ricavi","category":"other_income","amount":34.152,"disclosure":"aggregated"},
+        {"label":"Ricavi da gestione dei diritti pluriennali prestazioni calciatori","category":"player_sales","amount":14.684,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Acquisti materie di consumo","category":"admin_general_expense","amount":-10.252,"disclosure":"aggregated"},
+        {"label":"Variazione delle rimanenze","category":"other_expenses","amount":0.544,"disclosure":"aggregated"},
+        {"label":"Spese per servizi","category":"admin_general_expense","amount":-63.207,"disclosure":"aggregated"},
+        {"label":"Spese per godimento beni di terzi","category":"admin_general_expense","amount":-6.868,"disclosure":"aggregated"},
+        {"label":"Spese per il personale","category":"wages_squad","amount":-182.831,"disclosure":"aggregated"},
+        {"label":"Altri costi","category":"other_expenses","amount":-21.707,"disclosure":"aggregated"},
+        {"label":"Ammortamenti e svalutazioni","category":"player_amortisation","amount":-90.277,"disclosure":"aggregated"},
+        {"label":"Oneri da gestione dei diritti pluriennali prestazioni calciatori","category":"other_expenses","amount":-26.29,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-23.938,"tax":-0.507,"gross_debt":355.912,"cash":22.821},
+      "official_totals": {"revenue":205.875,"expenses":400.888,"net_result":-219.459},
+      "adjustments": {
+        "extra_rows": [{"label":"Proventi finanziari","amount":2.676},{"label":"Oneri finanziari","amount":-26.614},{"label":"imposte correnti","amount":-0.507}]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"a) ricavi da gare","category":"matchday_competition","amount":33.377286,"disclosure":"aggregated"},
+        {"label":"b) abbonamenti","category":"season_tickets","amount":15.866698,"disclosure":"aggregated"},
+        {"label":"2) variazioni delle rimanenze di prodotti finiti","category":"other_income","amount":0.252067,"disclosure":"aggregated"},
+        {"label":"a) proventi da sponsorizzazioni","category":"sponsorship_commercial","amount":10.95,"disclosure":"aggregated"},
+        {"label":"b) proventi pubblicitari","category":"sponsorship_commercial","amount":15.821559,"disclosure":"aggregated"},
+        {"label":"c) proventi commerciali e royalties","category":"sponsorship_commercial","amount":21.824255,"disclosure":"aggregated"},
+        {"label":"d) proventi da cessione diritti audiovisivi","category":"broadcasting","amount":109.325538,"disclosure":"aggregated"},
+        {"label":"e) ricavi da cessione temporanea prestazioni calciatori","category":"player_sales","amount":3.416157,"disclosure":"aggregated"},
+        {
+          "label": "f) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
+          "category": "player_sales",
+          "amount": 47.131792,
+          "disclosure": "aggregated"
+        },
+        {"label":"g) altri proventi da trasferimento diritti calciatori","category":"player_sales","amount":5.563399,"disclosure":"aggregated"},
+        {"label":"h) ricavi e proventi diversi","category":"other_income","amount":13.527844,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Indumenti sportivi e divise ufficiale","category":"admin_general_expense","amount":-2.792,"disclosure":"aggregated"},
+        {"label":"Materiali di consumo","category":"admin_general_expense","amount":-1.438,"disclosure":"aggregated"},
+        {"label":"Beni e prodotti da commercializzare","category":"other_expenses","amount":-9.7,"disclosure":"aggregated"},
+        {"label":"Costi per tesserati","category":"wages_squad","amount":-2.306,"disclosure":"aggregated"},
+        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-9.338,"disclosure":"aggregated"},
+        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-8.288,"disclosure":"aggregated"},
+        {"label":"Costi di vitto, alloggio, locomozione gare","category":"match_organisation_expense","amount":-4.555,"disclosure":"aggregated"},
+        {"label":"Spese assicurative","category":"admin_general_expense","amount":-8.19,"disclosure":"aggregated"},
+        {"label":"Spese amministrative e generali","category":"admin_general_expense","amount":-25.691,"disclosure":"aggregated"},
+        {"label":"Spese di pubblicità e promozione","category":"admin_general_expense","amount":-7.231,"disclosure":"aggregated"},
+        {"label":"Centro sportivo di Trigoria","category":"match_organisation_expense","amount":-2.7,"disclosure":"aggregated"},
+        {"label":"Stadio Olimpico","category":"match_organisation_expense","amount":-3.928,"disclosure":"aggregated"},
+        {"label":"Altre sedi","category":"admin_general_expense","amount":-3.295,"disclosure":"aggregated"},
+        {"label":"Beni","category":"admin_general_expense","amount":-4.588,"disclosure":"aggregated"},
+        {"label":"Calciatori e calciatrici","category":"wages_squad","amount":-125.983,"disclosure":"aggregated"},
+        {"label":"Staff Tecnico","category":"wages_squad","amount":-17.967,"disclosure":"aggregated"},
+        {"label":"Dipendenti e dirigenti","category":"admin_general_expense","amount":-17.787,"disclosure":"aggregated"},
+        {"label":"b) oneri sociali","category":"wages_squad","amount":-9.388237,"disclosure":"aggregated"},
+        {"label":"c) trattamento di fine rapporto","category":"wages_squad","amount":-1.211118,"disclosure":"aggregated"},
+        {"label":"e) altri costi","category":"other_expenses","amount":-0.748489,"disclosure":"aggregated"},
+        {"label":"Ammortamento DPS Calciatori","category":"player_amortisation","amount":-55.645,"disclosure":"aggregated"},
+        {"label":"Ammortamento altre immob. Immateriali","category":"other_amortisation","amount":-0.546,"disclosure":"aggregated"},
+        {"label":"b) ammortamenti immobilizzazioni materiali","category":"depreciation","amount":-3.92308,"disclosure":"aggregated"},
+        {"label":"c) altre svalutazioni delle immobilizzazioni","category":"player_impairment","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "d) svalutazioni dei crediti dell'attive circolante e delle disponibilità liquide",
+          "category": "other_expenses",
+          "amount": -0.491626,
+          "disclosure": "aggregated"
+        },
+        {"label":"12) accantonamenti per rischi","category":"other_amortisation","amount":-0.058728,"disclosure":"aggregated"},
+        {"label":"a) costi per acquisizione temporanea prestazioni calciatori","category":"other_expenses","amount":-1.415828,"disclosure":"aggregated"},
+        {
+          "label": "b) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
+          "category": "exceptional_items",
+          "amount": -0.010429,
+          "disclosure": "aggregated"
+        },
+        {"label":"c) altri oneri da trasferimento diritti calciatori","category":"other_expenses","amount":-9.942395,"disclosure":"aggregated"},
+        {"label":"Oneri tributari indiretti","category":"admin_general_expense","amount":-0.325,"disclosure":"aggregated"},
+        {"label":"Biglietti trasferte","category":"match_organisation_expense","amount":-0.394,"disclosure":"aggregated"},
+        {"label":"Oneri lega","category":"match_organisation_expense","amount":-1.68,"disclosure":"aggregated"},
+        {"label":"Multe","category":"other_expenses","amount":-2.606,"disclosure":"aggregated"},
+        {"label":"Produzione gare","category":"match_organisation_expense","amount":-1.007,"disclosure":"aggregated"},
+        {"label":"Sopravvenienze passive","category":"exceptional_items","amount":-0.825,"disclosure":"aggregated"},
+        {"label":"Altri costi","category":"other_expenses","amount":-2.783,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-27.578385,"tax":-3.446901,"gross_debt":497.408828,"cash":44.005037},
+      "official_totals": {"revenue":277.056595,"expenses":347.942501,"net_result":-102.747288},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"16) altri proventi finanziari","amount":1.169325},
+          {"label":"a) verso imprese controllate","amount":null},
+          {"label":"b) verso imprese collegate","amount":null},
+          {"label":"c) verso imprese controllanti","amount":null},
+          {"label":"d) verso imprese sottoposte al controllo delle controllanti","amount":null},
+          {"label":"e) altri interessi e oneri finanziari","amount":-28.740257},
+          {"label":"17 bis) utile e perdite su cambi","amount":-0.007453},
+          {"label":"a) imposte correnti","amount":-5.847725},
+          {"label":"c) imposte differite","amount":-0.700215},
+          {"label":"e) proventi (oneri) da adesione al regime di consolidato fiscale","amount":3.101039}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"a) ricavi da gare","category":"matchday_competition","amount":39.174069,"disclosure":"aggregated"},
+        {"label":"b) abbonamenti","category":"season_tickets","amount":16.290643,"disclosure":"aggregated"},
+        {"label":"2) variazioni delle rimanenze di prodotti finiti","category":"other_income","amount":1.834252,"disclosure":"aggregated"},
+        {"label":"a) proventi da sponsorizzazioni","category":"sponsorship_commercial","amount":18.399384,"disclosure":"aggregated"},
+        {"label":"b) proventi pubblicitari","category":"sponsorship_commercial","amount":24.743181,"disclosure":"aggregated"},
+        {"label":"c) proventi commerciali e royalties","category":"sponsorship_commercial","amount":26.864751,"disclosure":"aggregated"},
+        {"label":"d) proventi da cessione diritti audiovisivi","category":"broadcasting","amount":104.146581,"disclosure":"aggregated"},
+        {"label":"e) ricavi da cessione temporanea prestazioni calciatori","category":"player_sales","amount":1.565535,"disclosure":"aggregated"},
+        {
+          "label": "f) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
+          "category": "player_sales",
+          "amount": 25.046418,
+          "disclosure": "aggregated"
+        },
+        {"label":"g) altri proventi da trasferimento diritti calciatori","category":"player_sales","amount":21.038216,"disclosure":"aggregated"},
+        {"label":"h) ricavi e proventi diversi","category":"other_income","amount":22.613434,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Indumenti sportivi e divise ufficiale","category":"admin_general_expense","amount":-3.367,"disclosure":"aggregated"},
+        {"label":"Materiali di consumo","category":"admin_general_expense","amount":-0.987,"disclosure":"aggregated"},
+        {"label":"Beni e prodotti da commercializzare","category":"other_expenses","amount":-12.549,"disclosure":"aggregated"},
+        {"label":"Costi per tesserati","category":"wages_squad","amount":-1.799,"disclosure":"aggregated"},
+        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-6.734,"disclosure":"aggregated"},
+        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-8.54,"disclosure":"aggregated"},
+        {"label":"Costi di vitto, alloggio, locomozione gare","category":"match_organisation_expense","amount":-3.743,"disclosure":"aggregated"},
+        {"label":"Spese assicurative","category":"admin_general_expense","amount":-8.216,"disclosure":"aggregated"},
+        {"label":"Spese amministrative e generali","category":"admin_general_expense","amount":-24.163,"disclosure":"aggregated"},
+        {"label":"Spese di pubblicità e promozione","category":"admin_general_expense","amount":-5.045,"disclosure":"aggregated"},
+        {"label":"Centro sportivo di Trigoria","category":"match_organisation_expense","amount":-2.7,"disclosure":"aggregated"},
+        {"label":"Stadio Olimpico","category":"match_organisation_expense","amount":-4.166,"disclosure":"aggregated"},
+        {"label":"Altre sedi","category":"admin_general_expense","amount":-3.516,"disclosure":"aggregated"},
+        {"label":"Beni","category":"admin_general_expense","amount":-4.07,"disclosure":"aggregated"},
+        {"label":"a) salari e stipendi","category":"wages_squad","amount":-189.464635,"disclosure":"aggregated"},
+        {"label":"b) oneri sociali","category":"wages_squad","amount":-10.603306,"disclosure":"aggregated"},
+        {"label":"c) trattamento di fine rapporto","category":"wages_squad","amount":-0.890082,"disclosure":"aggregated"},
+        {"label":"d) trattamento di quiescenza e simili","category":"wages_squad","amount":0,"disclosure":"aggregated"},
+        {"label":"e) altri costi","category":"other_expenses","amount":-1.168195,"disclosure":"aggregated"},
+        {"label":"Ammortamento DPS Calciatori","category":"player_amortisation","amount":-38.079,"disclosure":"aggregated"},
+        {"label":"Ammortamento DPS Calciatrici","category":"player_amortisation","amount":-0.029,"disclosure":"aggregated"},
+        {"label":"Ammortamento altre immob. Immateriali","category":"other_amortisation","amount":-0.951,"disclosure":"aggregated"},
+        {"label":"b) ammortamenti immobilizzazioni materiali","category":"depreciation","amount":-4.546359,"disclosure":"aggregated"},
+        {
+          "label": "d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide",
+          "category": "other_expenses",
+          "amount": -0.287125,
+          "disclosure": "aggregated"
+        },
+        {"label":"12) accantonamenti per rischi","category":"other_amortisation","amount":-4.956295,"disclosure":"aggregated"},
+        {"label":"b) costi per acquisizione temporanea prestazioni calciatori","category":"other_expenses","amount":-10.082075,"disclosure":"aggregated"},
+        {
+          "label": "c) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
+          "category": "exceptional_items",
+          "amount": -1.135911,
+          "disclosure": "aggregated"
+        },
+        {"label":"d) altri oneri da trasferimento diritti calciatori","category":"other_expenses","amount":-7.880849,"disclosure":"aggregated"},
+        {"label":"e) altri oneri diversi di gestione","category":"other_expenses","amount":-6.572815,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-11.060677,"tax":-5.778058,"gross_debt":476.262404,"cash":39.061084},
+      "official_totals": {"revenue":301.716464,"expenses":365.105736,"net_result":-81.364367},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"16) altri proventi finanziari","amount":6.045982},
+          {"label":"17) interessi ed altri oneri finanziari","amount":-17.104753},
+          {"label":"17 bis) utile e perdite su cambi","amount":-0.001906},
+          {"label":"20) imposte sul reddito dell'esercizio","amount":-5.778058}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "asroma-it-bilancio-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"a) ricavi da gare","category":"matchday_competition","amount":28.031802,"disclosure":"aggregated"},
+        {"label":"b) abbonamenti","category":"season_tickets","amount":16.434645,"disclosure":"aggregated"},
+        {"label":"a) proventi da sponsorizzazioni","category":"sponsorship_commercial","amount":21.137526,"disclosure":"aggregated"},
+        {"label":"b) proventi pubblicitari","category":"sponsorship_commercial","amount":24.912436,"disclosure":"aggregated"},
+        {"label":"c) proventi commerciali e royalties","category":"sponsorship_commercial","amount":25.621428,"disclosure":"aggregated"},
+        {"label":"d) proventi da cessione diritti audiovisivi","category":"broadcasting","amount":90.373519,"disclosure":"aggregated"},
+        {"label":"e) ricavi da cessione temporanea prestazioni calciatori","category":"player_sales","amount":5.663,"disclosure":"aggregated"},
+        {
+          "label": "f) plusvalenze da cessione diritti pluriennali prestazioni calciatori",
+          "category": "player_sales",
+          "amount": 29.888552,
+          "disclosure": "aggregated"
+        },
+        {"label":"g) altri proventi da trasferimento diritti calciatori","category":"player_sales","amount":13.121622,"disclosure":"aggregated"},
+        {"label":"h) ricavi e proventi diversi","category":"other_income","amount":15.056475,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Indumenti sportivi e divise ufficiale","category":"admin_general_expense","amount":-1.75,"disclosure":"aggregated"},
+        {"label":"Materiali di consumo","category":"admin_general_expense","amount":-0.984,"disclosure":"aggregated"},
+        {"label":"Beni e prodotti da commercializzare","category":"other_expenses","amount":-10.179,"disclosure":"aggregated"},
+        {"label":"Costi per tesserati","category":"wages_squad","amount":-0.252,"disclosure":"aggregated"},
+        {"label":"Costi per attività sportiva","category":"match_organisation_expense","amount":-7.192,"disclosure":"aggregated"},
+        {"label":"Costi specifici tecnici","category":"match_organisation_expense","amount":-6.758,"disclosure":"aggregated"},
+        {"label":"Costi di vitto, alloggio, locomozione gare","category":"match_organisation_expense","amount":-3.329,"disclosure":"aggregated"},
+        {"label":"Spese assicurative","category":"admin_general_expense","amount":-8.423,"disclosure":"aggregated"},
+        {"label":"Spese amministrative e generali","category":"admin_general_expense","amount":-22.871,"disclosure":"aggregated"},
+        {"label":"Spese di pubblicità e promozione","category":"admin_general_expense","amount":-5.196,"disclosure":"aggregated"},
+        {"label":"Centro sportivo di Trigoria","category":"match_organisation_expense","amount":-2.7,"disclosure":"aggregated"},
+        {"label":"Stadio Olimpico","category":"match_organisation_expense","amount":-4.026,"disclosure":"aggregated"},
+        {"label":"Altre sedi","category":"admin_general_expense","amount":-3.018,"disclosure":"aggregated"},
+        {"label":"Beni","category":"admin_general_expense","amount":-4.051,"disclosure":"aggregated"},
+        {"label":"Calciatori e calciatrici","category":"wages_squad","amount":-112.903,"disclosure":"aggregated"},
+        {"label":"Staff Tecnico","category":"wages_squad","amount":-15.494,"disclosure":"aggregated"},
+        {"label":"Dipendenti e dirigenti","category":"admin_general_expense","amount":-12.64,"disclosure":"aggregated"},
+        {"label":"b) oneri sociali","category":"wages_squad","amount":-9.77567,"disclosure":"aggregated"},
+        {"label":"c) trattamento di fine rapporto","category":"wages_squad","amount":-0.914402,"disclosure":"aggregated"},
+        {"label":"e) altri costi","category":"other_expenses","amount":-1.006119,"disclosure":"aggregated"},
+        {"label":"Ammortamento DPS Calciatori","category":"player_amortisation","amount":-45.5,"disclosure":"aggregated"},
+        {"label":"Ammortamento DPS Calciatrici","category":"player_amortisation","amount":-0.054,"disclosure":"aggregated"},
+        {"label":"Ammortamento altre immob. Immateriali","category":"other_amortisation","amount":-0.952,"disclosure":"aggregated"},
+        {"label":"b) ammortamenti immobilizzazioni materiali","category":"depreciation","amount":-4.865562,"disclosure":"aggregated"},
+        {
+          "label": "d) svalutazioni dei crediti dell'attivo circolante e delle disponibilità liquide",
+          "category": "other_expenses",
+          "amount": -0.829513,
+          "disclosure": "aggregated"
+        },
+        {"label":"11) variazioni delle rimanenze di prodotti finiti","category":"other_expenses","amount":1.548221,"disclosure":"aggregated"},
+        {"label":"12) accantonamenti per rischi","category":"other_amortisation","amount":-7.008318,"disclosure":"aggregated"},
+        {"label":"b) costi per acquisizione temporanea prestazioni calciatori","category":"other_expenses","amount":-0.93,"disclosure":"aggregated"},
+        {
+          "label": "c) minusvalenze da cessione diritti pluriennali prestazioni calciatori",
+          "category": "exceptional_items",
+          "amount": -3.259849,
+          "disclosure": "aggregated"
+        },
+        {"label":"d) altri oneri da trasferimento diritti calciatori","category":"other_expenses","amount":-6.233958,"disclosure":"aggregated"},
+        {"label":"Oneri tributari indiretti","category":"admin_general_expense","amount":-0.312,"disclosure":"aggregated"},
+        {"label":"Biglietti trasferte","category":"match_organisation_expense","amount":-0.329,"disclosure":"aggregated"},
+        {"label":"Oneri lega","category":"match_organisation_expense","amount":-0.905,"disclosure":"aggregated"},
+        {"label":"Multe","category":"other_expenses","amount":-0.331,"disclosure":"aggregated"},
+        {"label":"Sopravvenienze passive","category":"exceptional_items","amount":-0.797,"disclosure":"aggregated"},
+        {"label":"Altri costi","category":"other_expenses","amount":-0.979,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-13.937648,"tax":-4.985606,"gross_debt":412.648472,"cash":24.413083},
+      "official_totals": {"revenue":270.241005,"expenses":301.143321,"net_result":-53.884213},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"16) altri proventi finanziari","amount":4.359403},
+          {"label":"e) altri interessi e oneri finanziari","amount":-17.954026},
+          {"label":"17 bis) utile e perdite su cambi","amount":-0.343025},
+          {"label":"a) imposte correnti","amount":-11.367144},
+          {"label":"c) imposte differite","amount":-0.019536},
+          {"label":"e) proventi (oneri) da adesione al regime di consolidato fiscale","amount":6.401074}
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

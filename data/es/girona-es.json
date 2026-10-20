@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "girona-es",
+    "name": "Girona Futbol Club, S.A.D.",
+    "display_name": "Girona FC",
+    "country": "ES",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "girona-es-cuentas-anuales-2019-20",
+      "club_id": "girona-es",
+      "title": "Cuentas Anuales, Ejercicio cerrado el 30 de junio de 2020 (depósito estándar Registro Mercantil)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "girona-es-informe-auditoria-cuentas-anuales-2024-25",
+      "club_id": "girona-es",
+      "title": "Informe de Auditoría y Cuentas Anuales 2024-2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2020,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "girona-es-cuentas-anuales-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [
+        {
+          "label": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
+          "category": "lump_football_operations",
+          "amount": 14.998072,
+          "disclosure": "summary",
+          "items": [["Ventas",1.912708],["Prestación de servicios",13.085364]]
+        },
+        {"label":"Ingresos accesorios y otros de gestión corriente","category":"other_income","amount":11.542128,"disclosure":"summary"},
+        {"label":"Subvenciones de explotación incorporadas al resultado del ejercicio","category":"other_income","amount":0.140148,"disclosure":"detailed"},
+        {"label":"Imputación de subvenciones de inmovilizado no financiero y otras","category":"other_income","amount":0.20503,"disclosure":"detailed"},
+        {"label":"Otros resultados","category":"other_income","amount":0.021034,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Aprovisionamientos",
+          "category": "other_expenses",
+          "amount": -0.646276,
+          "disclosure": "detailed",
+          "items": [
+            ["Consumo de mercaderías",-0.241531],
+            ["Consumo de materias primas y otras materias consumibles",-0.051202],
+            ["Deterioro de mercaderías, materias primas y otros aprovisionamientos",-0.353543]
+          ]
+        },
+        {
+          "label": "Gastos de personal (sin separar plantel deportivo/no deportivo)",
+          "category": "wages_squad",
+          "amount": -24.012792,
+          "disclosure": "summary",
+          "items": [["Sueldos, salarios y asimilados",-22.924071],["Cargas sociales",-1.088722]]
+        },
+        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-7.70409,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general_expense","amount":-0.185053,"disclosure":"detailed"},
+        {
+          "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales (residuo contra el subtotal impreso, ver comentario de cabecera)",
+          "category": "other_expenses",
+          "amount": -5.957272,
+          "disclosure": "summary"
+        },
+        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-0.3535,"disclosure":"detailed"},
+        {"label":"Amortización del inmovilizado (sin separar jugadores del resto)","category":"player_amortisation","amount":-5.016471,"disclosure":"summary"}
+      ],
+      "financial": {"profit_on_player_sales":17.002692,"asset_sales":0,"net_interest":-0.041956,"tax":-0.025772,"gross_debt":3.167,"cash":3.856412},
+      "official_totals": {"revenue":26.906411,"expenses":43.875455,"net_result":-0.03408}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "girona-es-informe-auditoria-cuentas-anuales-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {
+          "label": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
+          "category": "lump_football_operations",
+          "amount": 110.914404,
+          "disclosure": "summary",
+          "items": [["Ventas",12.231604],["Prestación de servicios",98.682799]]
+        },
+        {"label":"Ingresos accesorios y otros de gestión corriente","category":"other_income","amount":32.23921,"disclosure":"summary"},
+        {"label":"Subvenciones de explotación incorporadas al resultado del ejercicio","category":"other_income","amount":0.586357,"disclosure":"detailed"},
+        {"label":"Imputación de subvenciones de inmovilizado no financiero y otras","category":"other_income","amount":0.20503,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Aprovisionamientos",
+          "category": "other_expenses",
+          "amount": -1.904535,
+          "disclosure": "detailed",
+          "items": [
+            ["Consumo de mercaderías",-1.329562],
+            ["Consumo de materias primas y otras materias consumibles",-0.199452],
+            ["Deterioro de mercaderías, materias primas y otros aprovisionamientos",-0.37552]
+          ]
+        },
+        {
+          "label": "Gastos de personal (sin separar plantel deportivo/no deportivo)",
+          "category": "wages_squad",
+          "amount": -76.622458,
+          "disclosure": "summary",
+          "items": [["Sueldos, salarios y asimilados",-73.53851],["Cargas sociales",-3.083948]]
+        },
+        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-20.849309,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general_expense","amount":-0.646909,"disclosure":"detailed"},
+        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-24.883181,"disclosure":"detailed"},
+        {
+          "label": "Amortización del inmovilizado (sin separar jugadores del resto; CORREGIDO por OCR, ver comentario de cabecera)",
+          "category": "player_amortisation",
+          "amount": -18.423581,
+          "disclosure": "summary"
+        },
+        {"label":"Otros resultados (negativo este ejercicio)","category":"other_expenses","amount":-0.174023,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":22.560578,"asset_sales":0,"net_interest":-1.004234,"tax":-5.502496,"gross_debt":47.221,"cash":11.121773},
+      "official_totals": {"revenue":143.945001,"expenses":143.503997,"net_result":16.494852}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

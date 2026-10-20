@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "panathinaikos-gr",
+    "name": "Panathinaikos Athlitikos Omilos P.A.E.",
+    "display_name": "Panathinaikos",
+    "country": "GR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "panathinaikos-gr-annual-fr-2025",
+      "club_id": "panathinaikos-gr",
+      "title": "Ετήσιες Οικονομικές Καταστάσεις (Annual Financial Report, IFRS), περίοδος 01.07.2024–30.06.2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "panathinaikos-gr-annual-fr-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":19.325224,"disclosure":"detailed"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":15.87489,"disclosure":"detailed"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":5.39399,"disclosure":"detailed"},
+        {"label":"Εμπορικά","category":"sponsorship_commercial","amount":3.85567,"disclosure":"detailed"},
+        {"label":"Αλληλεγγύη UEFA και χρηματικά έπαθλα","category":"competition_bonus","amount":9.953051,"disclosure":"detailed"},
+        {"label":"Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση","category":"competition_bonus","amount":2.652279,"disclosure":"detailed"},
+        {"label":"Λοιπά λειτουργικά έσοδα","category":"other_income","amount":0.545929,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων / υλικών","category":"other_expenses","amount":-0.337502,"disclosure":"detailed"},
+        {
+          "label": "Συμβόλαια, πριμ και αποζημιώσεις ποδοσφαιριστών / προπονητών",
+          "category": "wages_squad",
+          "amount": -44.650101,
+          "disclosure": "detailed",
+          "items": [["Συμβόλαια ποδοσφαιριστών / προπονητών",44.018972],["Πριμ ποδοσφαιριστών / προπονητών",0.5345],["Αποζημιώσεις",0.096629]]
+        },
+        {
+          "label": "Αμοιβές και μισθοί εργαζομένων, λοιπές παροχές και ασφάλιστρα",
+          "category": "admin_general_expense",
+          "amount": -6.436529,
+          "disclosure": "detailed",
+          "items": [["Αμοιβές και μισθοί εργαζομένων",4.693366],["Λοιπές Παροχές",1.579043],["Ασφάλιστρα και ιατροφαρμακευτική δαπάνη",0.16412]]
+        },
+        {"label":"Απομείωση και απαξίωση ενσώματων πάγιων στοιχείων","category":"depreciation","amount":-1.156489,"disclosure":"detailed"},
+        {"label":"Απομείωση και απαξίωση άλλων άυλων στοιχείων","category":"other_amortisation","amount":-0.05586,"disclosure":"detailed"},
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"admin_general_expense","amount":-20.07627,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":-10.983661,"asset_sales":-0.025836,"net_interest":-0.419796,"tax":0.045292,"gross_debt":0,"cash":1.474426},
+      "official_totals": {"revenue":57.601032,"expenses":72.71275,"net_result":-26.495719}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -43,6 +43,7 @@ import vm from 'node:vm';
 import { ajustesDe } from './ajustes.mjs';
 import * as EV from './evidencia-club.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
+import { modificarClub, leerJsonClub, rutaJson } from './club-json.mjs'; // (to-do 245, fase 2) las marcas se escriben en el JSON del club
 
 const ROOT = resolve(import.meta.dirname, '..');
 const HOY = new Date().toISOString().slice(0, 10);
@@ -126,42 +127,32 @@ function medir(M) {
 
 function cierreDe(txt, abre) { let n = 0; for (let i = abre; i < txt.length; i++) { if (txt[i] === '{') n++; else if (txt[i] === '}') { n--; if (!n) return i; } } return -1; }
 
-// Escribe las marcas de un club en su data/<país>/<club>-data.js: agrega (o completa) `incluidoEn:{…}` en el bloque del año de <club>FiscalYearMeta.
-// Saca de un texto de data/<país>/<club>-data.js TODAS las marcas que escribió esta tool (y su comentario). Las de un ajuste manual quedan.
-export function limpiar(t) {
-  t = t.replace(/^[ \t]*\/\/ tools\/dentro-de-otro\.mjs .*\n/gm, '');
-  t = t.replace(/(,\s*)?\b\w+:\{ en:'[^']*', posible:true, por:'precedente' \}/g, '');
-  t = t.replace(/incluidoEn:\{\s*,\s*/g, 'incluidoEn:{ ');
-  t = t.replace(/^[ \t]*incluidoEn:\{\s*\},?[ \t]*\n/gm, '');
-  return t;
-}
+// Las marcas de esta tool viven en el JSON del club: `adjustments.included_in.<categoría> = { in, possible: true, by: 'precedente' }` (en el data file
+// generado, `incluidoEn:{ <categoría>:{ en, posible:true, por:'precedente' } }`). Las de un ajuste manual (`incluye`) no llevan `by: 'precedente'` y no se tocan.
+const esMarca = (v) => v && typeof v === 'object' && v.posible === true && v.por === 'precedente';
+const contarMarcas = (j) => (j.years || []).reduce((k, y) => k + Object.values(y.adjustments?.included_in || {}).filter((v) => v && typeof v === 'object' && v.possible === true && v.by === 'precedente').length, 0);
 
-// La marca va al data file SIN comentario (to-do 209: data/ se publica); la nota que explica de dónde sale cada marca la devuelve, por año,
+// La marca no lleva comentario (to-do 209: data/ se publica); la nota que explica de dónde sale cada marca la devuelve, por año,
 // para la evidencia del club (marcarClub la escribe en Admin/carga-clubes/<club>.md).
 function escribirClub(id, porAnio) {
   const notas = {};
-  const p = resolve(ROOT, rutaData(id)); let t = limpiar(readFileSync(p, 'utf8'));
-  const ini = t.search(/const \w+FiscalYearMeta\s*=\s*\{/); if (ini < 0) throw new Error(`${id}: no encontré <club>FiscalYearMeta`);
-  for (const [y, marcas] of Object.entries(porAnio)) {
-    const abreObj = t.indexOf('{', ini); const cierraObj = cierreDe(t, abreObj);
-    const m = new RegExp(`\\n(\\s*)['"]?${y}['"]?\\s*:\\s*\\{`).exec(t.slice(abreObj, cierraObj)); if (!m) throw new Error(`${id} ${y}: no encontré el año`);
-    const abre = abreObj + m.index + m[0].length - 1; const cierra = cierreDe(t, abre); let bloque = t.slice(abre, cierra);
-    const pares = marcas.flatMap((x) => x.cats.map((c) => `${c}:{ en:'${x.en}', posible:true, por:'precedente' }`));
-    const nota = `// tools/dentro-de-otro.mjs (${HOY}): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados ${[...new Set(marcas.flatMap((x) => x.otros))].sort().join(', ')}): ${marcas.map((x) => x.fila).join(', ')}`;
-    const ya = /\bincluidoEn\s*:\s*\{/.exec(bloque);
-    if (ya) { // completar el objeto que ya está (un ajuste `incluye` manda: sus claves no se tocan)
-      const a0 = ya.index + ya[0].length - 1; const a1 = cierreDe(bloque, a0);
-      const nuevos = pares.filter((x) => !new RegExp(`\\b${x.split(':')[0]}\\s*:`).test(bloque.slice(a0, a1)));
-      if (!nuevos.length) continue;
-      bloque = bloque.slice(0, a1).replace(/\s*$/, '') + `, ${nuevos.join(', ')} ` + bloque.slice(a1);
-    } else {
-      const sangria = (/\n(\s+)\S/.exec(bloque) || [, '    '])[1];
-      bloque = bloque.replace(/^\{[^\n]*\n/, (x) => `${x}${sangria}incluidoEn:{ ${pares.join(', ')} },\n`);
+  modificarClub(id, (c) => {
+    // saca TODAS las marcas de esta tool (se recalculan); las de un ajuste manual quedan
+    for (const m of Object.values(c.datos.fiscalYearMeta)) {
+      if (!m.incluidoEn) continue;
+      for (const [cat, v] of Object.entries(m.incluidoEn)) if (esMarca(v)) delete m.incluidoEn[cat];
+      if (!Object.keys(m.incluidoEn).length) delete m.incluidoEn;
     }
-    notas[y] = nota.replace(/^\/\/ /, '');
-    t = t.slice(0, abre) + bloque + t.slice(cierra);
-  }
-  writeFileSync(p, t);
+    for (const [y, marcas] of Object.entries(porAnio)) {
+      const m = c.datos.fiscalYearMeta[y]; if (!m) throw new Error(`${id} ${y}: no encontré el año`);
+      const pares = marcas.flatMap((x) => x.cats.map((cat) => [cat, { en: x.en, posible: true, por: 'precedente' }]));
+      // un ajuste `incluye` manda: sus claves no se tocan
+      const nuevos = pares.filter(([cat]) => !(m.incluidoEn && Object.prototype.hasOwnProperty.call(m.incluidoEn, cat)));
+      if (!nuevos.length) continue;
+      m.incluidoEn = { ...(m.incluidoEn || {}), ...Object.fromEntries(nuevos) };
+      notas[y] = `tools/dentro-de-otro.mjs (${HOY}): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados ${[...new Set(marcas.flatMap((x) => x.otros))].sort().join(', ')})`;
+    }
+  });
   return notas;
 }
 
@@ -178,21 +169,20 @@ export function marcarClub(id, { M = motor(), log = () => {} } = {}) {
       (porAnio[a.y] ||= []).push(...pr[lado].map((x) => ({ ...x, en: LUMP[lado] })));
     }
   }
-  const p = resolve(ROOT, rutaData(id)); const viejo = readFileSync(p, 'utf8');
-  const antes = [...viejo.matchAll(MARCA_RE)].length;
+  const antes = contarMarcas(leerJsonClub(id));
   const despues = Object.values(porAnio).flat().reduce((k, x) => k + x.cats.length, 0);
   if (!antes && !despues) return { cambio: false, antes, despues, lineas };
+  const jsonAntes = readFileSync(resolve(ROOT, rutaJson(id)), 'utf8');
   const notas = escribirClub(id, porAnio);
   // la evidencia: saca TODAS las notas de esta tool en el club (como las marcas: se recalculan) y pone las de ahora en la meta de cada año
   const ev0 = EV.leer(id);
   let ev = EV.quitarLineas(ev0, null, 'Meta', [/^tools\/dentro-de-otro\.mjs \(/]);
   for (const [y, nota] of Object.entries(notas)) ev = EV.agregarTexto(ev, y, 'Meta', [nota]);
   if (ev !== ev0) EV.guardar(id, ev);
-  const cambio = readFileSync(p, 'utf8') !== viejo || ev !== ev0;
+  const cambio = readFileSync(resolve(ROOT, rutaJson(id)), 'utf8') !== jsonAntes || ev !== ev0;
   for (const l of lineas) log(l);
   return { cambio, antes, despues, lineas };
 }
-const MARCA_RE = /\b(\w+):\{ en:'[^']*', posible:true, por:'precedente' \}/g;
 
 async function main() {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
@@ -209,10 +199,10 @@ async function main() {
   const s0 = escribir ? snap(evExtra) : null; const escritos = []; let antes = 0; let despues = 0; let filas = 0;
   try {
     for (const id of ids) {
-      if (escribir) { const r = marcarClub(id, { M, log: (l) => console.log(`  ${l}`) }); antes += r.antes; despues += r.despues; filas += r.lineas.length; if (r.cambio) escritos.push(rutaData(id), EV.rutaRel(id)); continue; }
+      if (escribir) { const r = marcarClub(id, { M, log: (l) => console.log(`  ${l}`) }); antes += r.antes; despues += r.despues; filas += r.lineas.length; if (r.cambio) escritos.push(rutaJson(id), rutaData(id), EV.rutaRel(id)); continue; }
       // ensayo: lo mismo sin tocar el archivo
       const anios = aniosDe(M, id);
-      antes += [...readFileSync(resolve(ROOT, rutaData(id)), 'utf8').matchAll(MARCA_RE)].length;
+      antes += contarMarcas(leerJsonClub(id));
       for (const a of anios) { const pr = propuestasDe(M, anios, a); for (const lado of Object.keys(pr)) { console.log(`  ${id} ${a.y} ${lado.padEnd(8)}: ${pr[lado].map((x) => x.fila).join(', ')}  [precedente: ${pr[lado][0].otros.join(', ')}]`); despues += pr[lado].reduce((k, x) => k + x.cats.length, 0); filas++; } }
     }
     console.log(`\nMarcas por precedente en los archivos: ${antes} hoy → ${despues} después (por categoría; una fila puede ser varias). ${filas} lado(s)-año.${escribir ? '' : ' ENSAYO: agregá --escribir.'}`);

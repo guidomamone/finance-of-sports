@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "sochi-ru",
+    "name": "OOO Football Club Sochi",
+    "display_name": "Sochi",
+    "country": "RU",
+    "reporting_currency": "RUB",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "sochi-ru-bfo-2021-datos",
+      "club_id": "sochi-ru",
+      "title": "OOO Football Club Sochi — отчетность 2021 в ГИР БО (bo.nalog.gov.ru), ejercicio 2021",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sochi-ru-bfo-2022-datos",
+      "club_id": "sochi-ru",
+      "title": "OOO Football Club Sochi — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sochi-ru-bfo-2023-datos",
+      "club_id": "sochi-ru",
+      "title": "OOO Football Club Sochi — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sochi-ru-bfo-2024-datos",
+      "club_id": "sochi-ru",
+      "title": "OOO Football Club Sochi — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sochi-ru-bfo-2025-datos",
+      "club_id": "sochi-ru",
+      "title": "OOO Football Club Sochi — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "RUB",
+      "source_id": "sochi-ru-bfo-2021-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2021-12-31"},
+      "revenue": [
+        {
+          "label": "Спонсорская помощь для организации и проведения спортивных мероприятий",
+          "category": "sponsorship_commercial",
+          "amount": 1847.808,
+          "disclosure": "detailed"
+        },
+        {"label":"Выручка от продажи билетов на игры","category":"matchday_competition","amount":59.968,"disclosure":"detailed"},
+        {"label":"Доходы от продажи прав на трансляцию","category":"broadcasting","amount":154.672,"disclosure":"detailed"},
+        {"label":"Выручка от продажи сувенирной продукции","category":"sponsorship_commercial","amount":5.202,"disclosure":"detailed"},
+        {"label":"Прочая реализация","category":"other_income","amount":22.695,"disclosure":"detailed"},
+        {"label":"Доход от выбытия регистраций игроков (включая доход от аренды)","category":"player_sales","amount":32.66,"disclosure":"detailed"},
+        {"label":"Курсовые разницы","category":"other_income","amount":6.112,"disclosure":"detailed"},
+        {"label":"Призовые средства (выплаты РФС, прочих организаций)","category":"competition_bonus","amount":66.385,"disclosure":"detailed"},
+        {"label":"Доходы от выбытия ЦБ","category":"other_income","amount":50.808,"disclosure":"detailed"},
+        {
+          "label": "Доходы от выплат на развитие детско-юношеского футбола, целевое финансирование",
+          "category": "youth_football",
+          "amount": 31.338,
+          "disclosure": "detailed"
+        },
+        {"label":"Прочие доходы","category":"other_income","amount":14.291,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-2406.278,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-4.161,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-67.653,"disclosure":"aggregated"},
+        {"label":"Курсовые разницы","category":"other_expenses","amount":-8.306,"disclosure":"detailed"},
+        {"label":"Резерв под обесценение МПЗ","category":"other_expenses","amount":-26.241,"disclosure":"detailed"},
+        {"label":"Прочие расходы","category":"other_expenses","amount":-6.361,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":8.378,"tax":42.832,"gross_debt":115.1,"cash":79.651},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-175.851},
+      "adjustments": {
+        "extra_rows": [{"label":"Проценты к получению (2320)","amount":8.378},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":42.832}],
+        "no_breakdown": [
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 2406.278,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "RUB",
+      "source_id": "sochi-ru-bfo-2022-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2022-12-31"},
+      "revenue": [
+        {
+          "label": "Спонсорская помощь для организации и проведения спортивных мероприятий",
+          "category": "sponsorship_commercial",
+          "amount": 2120.139,
+          "disclosure": "detailed"
+        },
+        {"label":"Выручка от продажи билетов на игры","category":"matchday_competition","amount":61.567,"disclosure":"detailed"},
+        {"label":"Доходы от продажи прав на трансляцию","category":"broadcasting","amount":610.611,"disclosure":"detailed"},
+        {"label":"Выручка от продажи сувенирной продукции","category":"sponsorship_commercial","amount":8.316,"disclosure":"detailed"},
+        {"label":"Прочая реализация","category":"other_income","amount":29.27,"disclosure":"detailed"},
+        {"label":"Доход от выбытия регистраций игроков (включая доход от аренды)","category":"player_sales","amount":709.07,"disclosure":"detailed"},
+        {"label":"Курсовые разницы","category":"other_income","amount":80.638,"disclosure":"detailed"},
+        {"label":"Расформирование резерва под обесценение МПЗ","category":"other_income","amount":26.241,"disclosure":"detailed"},
+        {"label":"Призовые средства (выплаты РФС, прочих организаций)","category":"competition_bonus","amount":48.458,"disclosure":"detailed"},
+        {
+          "label": "Доходы от выплат на развитие детско-юношеского футбола, целевое финансирование",
+          "category": "youth_football",
+          "amount": 13.178,
+          "disclosure": "detailed"
+        },
+        {"label":"Прочие доходы","category":"other_income","amount":20.335,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-2823.867,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-6.947,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-124.221,"disclosure":"aggregated"},
+        {"label":"Благотворительная помощь","category":"other_expenses","amount":-46.233,"disclosure":"detailed"},
+        {"label":"Расходы по целевому финансированию","category":"youth_other_sports_expense","amount":-13.178,"disclosure":"detailed"},
+        {"label":"Солидарные выплаты на подготовку спортсменов","category":"other_expenses","amount":-13.042,"disclosure":"detailed"},
+        {"label":"Членские взносы","category":"admin_general_expense","amount":-17.5,"disclosure":"detailed"},
+        {"label":"Прочие расходы","category":"other_expenses","amount":-3.84,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":71.256,"tax":-159.742,"gross_debt":0,"cash":12.235},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":590.509},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Проценты к получению (2320)","amount":71.518},
+          {"label":"Проценты к уплате (2330)","amount":-0.262},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-159.742}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 2823.867,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "RUB",
+      "source_id": "sochi-ru-bfo-2023-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2023-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":2895.934,"disclosure":"aggregated"},
+        {"label":"Доход от выбытия регистраций игроков (включая доход аренды)","category":"player_sales","amount":385.808,"disclosure":"detailed"},
+        {"label":"Курсовые разницы","category":"other_income","amount":66.523,"disclosure":"detailed"},
+        {"label":"Призовые средства (выплаты РФС, прочих организаций)","category":"competition_bonus","amount":60.2,"disclosure":"detailed"},
+        {"label":"Прочие доходы","category":"other_income","amount":10.742,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-2326.957,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-31.077,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-71.486,"disclosure":"aggregated"},
+        {"label":"Резерв по сомнительным долгам","category":"other_expenses","amount":-41.333,"disclosure":"detailed"},
+        {"label":"Прочие расходы","category":"other_expenses","amount":-93.569,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":175.96,"tax":-223.4,"gross_debt":0,"cash":3.299},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":807.344},
+      "adjustments": {
+        "extra_rows": [{"label":"Проценты к получению (2320)","amount":175.96},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-223.4}],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":2895.934,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 2326.957,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "RUB",
+      "source_id": "sochi-ru-bfo-2024-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2024-12-31"},
+      "revenue": [
+        {
+          "label": "Спонсорская помощь для организации и проведения спортивных мероприятий",
+          "category": "sponsorship_commercial",
+          "amount": 2844.563,
+          "disclosure": "detailed"
+        },
+        {"label":"Выручка от продажи билетов на игры","category":"matchday_competition","amount":35.961,"disclosure":"detailed"},
+        {"label":"Доходы от продажи прав на трансляцию","category":"broadcasting","amount":187.354,"disclosure":"detailed"},
+        {"label":"Выручка от продажи сувенирной продукции","category":"sponsorship_commercial","amount":9.445,"disclosure":"detailed"},
+        {"label":"Прочая реализация","category":"other_income","amount":6.691,"disclosure":"detailed"},
+        {"label":"Доход от выбытия регистраций игроков (включая доход аренды)","category":"player_sales","amount":163.766,"disclosure":"detailed"},
+        {"label":"Курсовые разницы","category":"other_income","amount":5.781,"disclosure":"detailed"},
+        {"label":"Призовые средства (выплаты РФС, прочих организаций)","category":"competition_bonus","amount":12.6,"disclosure":"detailed"},
+        {"label":"Прочие доходы","category":"other_income","amount":10.605,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-2830.285,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-53.618,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-92.949,"disclosure":"aggregated"},
+        {"label":"Благотворительная помощь","category":"other_expenses","amount":-2.474,"disclosure":"detailed"},
+        {"label":"Резерв по сомнительным долгам","category":"other_expenses","amount":-9.723,"disclosure":"detailed"},
+        {"label":"Прочие расходы","category":"other_expenses","amount":-133.404,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":398.665,"tax":-89.652,"gross_debt":0,"cash":1458.369},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":463.325},
+      "adjustments": {
+        "extra_rows": [{"label":"Проценты к получению (2320)","amount":398.665},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-89.652}],
+        "no_breakdown": [
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 2830.285,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "RUB",
+      "source_id": "sochi-ru-bfo-2025-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2025-12-31"},
+      "revenue": [
+        {
+          "label": "Спонсорская помощь для организации и проведения спортивных мероприятий",
+          "category": "sponsorship_commercial",
+          "amount": 2341.194,
+          "disclosure": "detailed"
+        },
+        {"label":"Выручка от продажи билетов на игры","category":"matchday_competition","amount":50.092,"disclosure":"detailed"},
+        {"label":"Доходы от продажи прав на трансляцию","category":"broadcasting","amount":197.117,"disclosure":"detailed"},
+        {"label":"Выручка от продажи сувенирной продукции","category":"sponsorship_commercial","amount":9.757,"disclosure":"detailed"},
+        {"label":"Прочая реализация","category":"other_income","amount":5.243,"disclosure":"detailed"},
+        {"label":"Призовые выплаты (выплаты РФС, прочих организаций)","category":"competition_bonus","amount":49.772,"disclosure":"detailed"},
+        {
+          "label": "Доход от выбытия регистраций игроков (включая доход аренды и компенсационные выплаты)",
+          "category": "player_sales",
+          "amount": 60.353,
+          "disclosure": "detailed"
+        },
+        {"label":"Прочие","category":"other_income","amount":12.64,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-3248.653,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-48.978,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-122.182,"disclosure":"aggregated"},
+        {"label":"Расходы на развитие молодежного футбола","category":"youth_other_sports_expense","amount":-660.25,"disclosure":"detailed"},
+        {"label":"Курсовые разницы","category":"other_expenses","amount":-12.252,"disclosure":"detailed"},
+        {"label":"Прочие","category":"other_expenses","amount":-9.363,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":417.666,"tax":80.581,"gross_debt":0,"cash":559.567},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-877.263},
+      "adjustments": {
+        "extra_rows": [{"label":"Проценты к получению (2320)","amount":417.666},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":80.581}],
+        "no_breakdown": [
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 3248.653,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

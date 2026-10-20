@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "sunderland-gb",
+    "name": "Sunderland Association Football Club, Limited (The)",
+    "display_name": "Sunderland",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "08-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "sunderland-gb-full-accounts-2024",
+      "club_id": "sunderland-gb",
+      "title": "Sunderland Association Football Club, Limited (The) — Strategic Report, Report of the Directors and Financial Statements, year ended 31 July 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00049116/filing-history",
+      "public_note": "Cuentas individuales auditadas (Constantin, sin salvedades) de Sunderland Association Football Club, Limited (The), depositadas en Companies House (Reino Unido). Ejercicio cerrado el 31 de julio de 2024 (temporada 2023/24, EFL Championship)."
+    },
+    {
+      "id": "sunderland-gb-full-accounts-2025",
+      "club_id": "sunderland-gb",
+      "title": "Sunderland Association Football Club, Limited (The) — Strategic Report, Report of the Directors and Financial Statements, year ended 31 July 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00049116/filing-history",
+      "public_note": "Cuentas individuales auditadas (Constantin, sin salvedades) de Sunderland Association Football Club, Limited (The), depositadas en Companies House (Reino Unido). Ejercicio cerrado el 31 de julio de 2025 (temporada 2024/25, EFL Championship — el ascenso a la Premier League vía playoff ocurrió al FINAL de este ejercicio, para la temporada SIGUIENTE, 2025/26)."
+    },
+    {
+      "id": "sunderland-gb-full-accounts-2021-22",
+      "club_id": "sunderland-gb",
+      "title": "Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sunderland-gb-full-accounts-2018-19",
+      "club_id": "sunderland-gb",
+      "title": "Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2018-19 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sunderland-gb-full-accounts-2019-20",
+      "club_id": "sunderland-gb",
+      "title": "Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2019-20 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sunderland-gb-full-accounts-2020-21",
+      "club_id": "sunderland-gb",
+      "title": "Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "sunderland-gb-full-accounts-2022-23",
+      "club_id": "sunderland-gb",
+      "title": "Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"louisdreyfus","name":"Louis-Dreyfus / Mercator Investments","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-07-31",
+      "currency": "GBP",
+      "source_id": "sunderland-gb-full-accounts-2018-19",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2019-07-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":8.602,"disclosure":"aggregated"},
+        {"label":"Television and media","category":"broadcasting","amount":39.948,"disclosure":"aggregated"},
+        {"label":"Sponsorship and royalties","category":"sponsorship_commercial","amount":2.379,"disclosure":"aggregated"},
+        {"label":"Conference and banqueting","category":"other_income","amount":4.136,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":2.426,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":1.202,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players","category":"player_sales","amount":0.1,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-2.4,"disclosure":"aggregated"},
+        {"label":"Net operating expenses before exceptional items","category":"other_expenses","amount":-46.289,"disclosure":"aggregated"},
+        {"label":"Exceptional operating expense","category":"exceptional_items","amount":-20.538,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.148,"tax":-0.66,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":58.793,"expenses":48.689,"net_result":-11.242},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.076},
+          {"label":"Interest payable and similar expenses","amount":-0.224},
+          {"label":"Tax on loss","amount":-0.66},
+          {"label":"Income tax relating to other comprehensive income","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-07-31",
+      "currency": "GBP",
+      "source_id": "sunderland-gb-full-accounts-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2020-07-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":5.658,"disclosure":"aggregated"},
+        {"label":"Television and media","category":"broadcasting","amount":17.195,"disclosure":"aggregated"},
+        {"label":"Sponsorship and royalties","category":"sponsorship_commercial","amount":1.59,"disclosure":"aggregated"},
+        {"label":"Conference and banqueting","category":"other_income","amount":2.138,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":1.341,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":1.23,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":1.226,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players","category":"player_sales","amount":3.382,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-1.669,"disclosure":"aggregated"},
+        {"label":"Net operating expenses before exceptional items","category":"other_expenses","amount":-29.692,"disclosure":"aggregated"},
+        {"label":"Exceptional operating expense","category":"exceptional_items","amount":-4.77,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.956,"tax":0.705,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":33.76,"expenses":31.361,"net_result":-2.622},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.005},
+          {"label":"Interest payable and similar expenses","amount":-0.961},
+          {"label":"Tax on loss","amount":0.705}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-07-31",
+      "currency": "GBP",
+      "source_id": "sunderland-gb-full-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-07-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":1.222,"disclosure":"aggregated"},
+        {"label":"Television and media","category":"broadcasting","amount":5.378,"disclosure":"aggregated"},
+        {"label":"Sponsorship and royalties","category":"sponsorship_commercial","amount":1.166,"disclosure":"aggregated"},
+        {"label":"Conference and banqueting","category":"other_income","amount":0.012,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":1.606,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":1.343,"disclosure":"aggregated"},
+        {"label":"Profit of disposal of players contracts","category":"player_sales","amount":0.631,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":0.551,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-0.924,"disclosure":"aggregated"},
+        {"label":"Net operating expenses","category":"other_expenses","amount":-20.954,"disclosure":"aggregated"},
+        {"label":"Amortisation of players contracts","category":"player_amortisation","amount":-1.69,"disclosure":"aggregated"},
+        {"label":"Exceptional operating expense","category":"exceptional_items","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.12,"tax":0.033,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":11.909,"expenses":23.568,"net_result":-11.746},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":null},
+          {"label":"Interest payable and similar expenses","amount":-0.12},
+          {"label":"Tax on loss","amount":0.033}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-07-31",
+      "currency": "GBP",
+      "source_id": "sunderland-gb-full-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-07-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":9.482,"disclosure":"aggregated"},
+        {"label":"Television and media","category":"broadcasting","amount":3.246,"disclosure":"aggregated"},
+        {"label":"Sponsorship and royalties","category":"sponsorship_commercial","amount":1.329,"disclosure":"aggregated"},
+        {"label":"Conference and banqueting","category":"other_income","amount":8.021,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":2.116,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":1.691,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":0.007,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player contracts","category":"player_sales","amount":1.243,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-2.083,"disclosure":"aggregated"},
+        {"label":"Operating expenses","category":"other_expenses","amount":-30.876,"disclosure":"aggregated"},
+        {"label":"Amortisation of players contracts","category":"player_amortisation","amount":-2.052,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.001,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":27.135,"expenses":35.011,"net_result":-7.877},
+      "adjustments": {"extra_rows":[{"label":"Interest payable and similar expenses","amount":-0.001},{"label":"Tax on loss","amount":null}]}
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-07-31",
+      "currency": "GBP",
+      "source_id": "sunderland-gb-full-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-07-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":10.693,"disclosure":"aggregated"},
+        {"label":"Television and media","category":"broadcasting","amount":10.083,"disclosure":"aggregated"},
+        {"label":"Sponsorship and royalties","category":"sponsorship_commercial","amount":1.576,"disclosure":"aggregated"},
+        {"label":"Conference and banqueting","category":"other_income","amount":8.428,"disclosure":"aggregated"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":2.72,"disclosure":"aggregated"},
+        {"label":"Other","category":"other_income","amount":1.598,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":2.301,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player contracts","category":"player_sales","amount":0.306,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-4.13,"disclosure":"aggregated"},
+        {"label":"Operating expenses","category":"other_expenses","amount":-40.583,"disclosure":"aggregated"},
+        {"label":"Amortisation of players contracts","category":"player_amortisation","amount":-2.715,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.043,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":37.705,"expenses":47.428,"net_result":-9.68},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest payable and similar expenses","amount":null},
+          {"label":"Interest receivable and similar income","amount":0.043},
+          {"label":"Tax on loss","amount":null}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-07-31",
+      "currency": "GBP",
+      "source_id": "sunderland-gb-full-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "louisdreyfus",
+      "fx": {"ref":"GBP@2024-07-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":11.537,"disclosure":"detailed"},
+        {"label":"Television and media","category":"broadcasting","amount":10.443,"disclosure":"detailed"},
+        {"label":"Sponsorship and royalties","category":"sponsorship_commercial","amount":2.315,"disclosure":"detailed"},
+        {"label":"Conference and banqueting","category":"other_income","amount":8.713,"disclosure":"detailed"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":2.997,"disclosure":"detailed"},
+        {"label":"Other","category":"other_income","amount":1.447,"disclosure":"detailed"},
+        {"label":"Other operating income","category":"other_income","amount":0.025,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player contracts","category":"player_sales","amount":8.818,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-30.463,"disclosure":"detailed"},
+        {"label":"Amortisation of players contracts","category":"player_amortisation","amount":-3.983,"disclosure":"detailed"},
+        {"label":"Depreciation - owned assets","category":"depreciation","amount":-0.916,"disclosure":"detailed"},
+        {
+          "label": "Otros costos operativos (Cost of sales + Operating expenses no desglosados por naturaleza, neto de staff/amortización/depreciación)",
+          "category": "other_expenses",
+          "amount": -19.421,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.583,"tax":0,"gross_debt":8.289,"cash":0},
+      "official_totals": {"revenue":46.295,"expenses":54.783,"net_result":-9.071}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-07-31",
+      "currency": "GBP",
+      "source_id": "sunderland-gb-full-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "louisdreyfus",
+      "fx": {"ref":"GBP@2025-07-31"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":13.02,"disclosure":"detailed"},
+        {"label":"TV, Media and FL distribution","category":"broadcasting","amount":12.005,"disclosure":"detailed"},
+        {"label":"Sponsorship and royalties","category":"sponsorship_commercial","amount":3.888,"disclosure":"detailed"},
+        {"label":"Conference and banqueting","category":"other_income","amount":7.613,"disclosure":"detailed"},
+        {"label":"Retail and merchandising","category":"sponsorship_commercial","amount":1.18,"disclosure":"detailed"},
+        {"label":"Other","category":"other_income","amount":1.716,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player contracts","category":"player_sales","amount":45.843,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-52.899,"disclosure":"detailed"},
+        {"label":"Amortisation of players contracts","category":"player_amortisation","amount":-10.409,"disclosure":"detailed"},
+        {"label":"Depreciation - owned assets","category":"depreciation","amount":-1.315,"disclosure":"detailed"},
+        {
+          "label": "Otros costos operativos (Cost of sales + Operating expenses no desglosados por naturaleza, neto de staff/amortización/depreciación)",
+          "category": "other_expenses",
+          "amount": -20.973,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.948,"tax":0,"gross_debt":25.217,"cash":20.711},
+      "official_totals": {"revenue":85.265,"expenses":85.596,"net_result":-3.279}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

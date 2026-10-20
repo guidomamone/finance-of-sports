@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "alianzalima-pe",
+    "name": "Club Alianza Lima",
+    "display_name": "Alianza Lima",
+    "country": "PE",
+    "reporting_currency": "PEN",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "alianzalima-pe-eeff-2019",
+      "club_id": "alianzalima-pe",
+      "title": "Estados Financieros, Club Alianza Lima, al 31 de diciembre de 2019 y 2018",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "alianzalima-pe-eeff-2020",
+      "club_id": "alianzalima-pe",
+      "title": "Estados Financieros, Club Alianza Lima, al 31 de diciembre de 2020 y 2019",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "alianzalima-pe-eeff-2021",
+      "club_id": "alianzalima-pe",
+      "title": "Estados Financieros, Club Alianza Lima, al 31 de diciembre de 2021 y 2020",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "alianzalima-pe-eeff-2022",
+      "club_id": "alianzalima-pe",
+      "title": "Estados Financieros, Club Alianza Lima, al 31 de diciembre de 2022 y 2021",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "alianzalima-pe-eeff-2023",
+      "club_id": "alianzalima-pe",
+      "title": "Estados Financieros, Club Alianza Lima, al 31 de diciembre de 2023 y 2022",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "alianzalima-pe-eeff-2024",
+      "club_id": "alianzalima-pe",
+      "title": "Estados Financieros, Club Alianza Lima, al 31 de diciembre de 2024 y 2023 (Memoria Anual 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "PEN",
+      "source_id": "alianzalima-pe-eeff-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":3.314,"source":"document_close"},
+      "revenue": [
+        {"label":"Ingresos por derechos de transmisión televisiva","category":"broadcasting","amount":18.401167,"disclosure":"detailed"},
+        {"label":"Ingresos por auspicios publicitarios","category":"sponsorship_commercial","amount":12.300941,"disclosure":"detailed"},
+        {"label":"Ingresos por participación en torneos internacionales","category":"competition_bonus","amount":11.252943,"disclosure":"detailed"},
+        {"label":"Taquilla por torneos locales","category":"matchday_competition","amount":7.260732,"disclosure":"detailed"},
+        {"label":"Taquilla por torneos internacionales y amistosos","category":"matchday_competition","amount":3.995774,"disclosure":"detailed"},
+        {"label":"Cuotas de socios","category":"member_dues","amount":1.099599,"disclosure":"detailed"},
+        {"label":"Ingresos por derechos de formación y transferencias","category":"player_sales","amount":0.726,"disclosure":"detailed"},
+        {"label":"Franquicias de academias","category":"youth_football","amount":0.675986,"disclosure":"detailed"},
+        {"label":"Regalías","category":"sponsorship_commercial","amount":0.49981,"disclosure":"detailed"},
+        {"label":"Academias de fútbol y vóley","category":"other_sports","amount":0.48811,"disclosure":"detailed"},
+        {"label":"Concesionarios","category":"stadium_other","amount":0.291975,"disclosure":"detailed"},
+        {"label":"Diversos (otros ingresos deportivos)","category":"other_income","amount":2.383302,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Personal (gastos deportivos)","category":"wages_squad","amount":-18.700778,"disclosure":"detailed"},
+        {"label":"Servicios (gastos deportivos)","category":"match_organisation_expense","amount":-15.145809,"disclosure":"detailed"},
+        {"label":"Depreciación (gastos deportivos)","category":"depreciation","amount":-2.533594,"disclosure":"detailed"},
+        {"label":"Diversos (gastos deportivos)","category":"other_expenses","amount":-2.56555,"disclosure":"detailed"},
+        {"label":"Personal (gastos administrativos)","category":"admin_general_expense","amount":-3.484002,"disclosure":"detailed"},
+        {"label":"Servicios (gastos administrativos)","category":"admin_general_expense","amount":-2.35892,"disclosure":"detailed"},
+        {"label":"Estimaciones contables (gastos administrativos)","category":"admin_general_expense","amount":-0.163419,"disclosure":"detailed"},
+        {"label":"Diversos (gastos administrativos)","category":"admin_general_expense","amount":-0.690462,"disclosure":"detailed"},
+        {"label":"Gastos de marketing","category":"admin_general_expense","amount":-0.852249,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.45742,"tax":0,"gross_debt":48.669842,"cash":1.24065},
+      "official_totals": {"revenue":59.376339,"expenses":46.494783,"net_result":11.424136},
+      "adjustments": {"extra_rows":[{"label":"Gastos financieros, neto","amount":-1.602653},{"label":"Diferencia de cambio, neta","amount":0.145233}]}
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-12-31",
+      "currency": "PEN",
+      "source_id": "alianzalima-pe-eeff-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":3.621,"source":"document_close"},
+      "revenue": [
+        {"label":"Ingresos por derechos de transmisión televisiva","category":"broadcasting","amount":19.193625,"disclosure":"detailed"},
+        {"label":"Ingresos por auspicios publicitarios","category":"sponsorship_commercial","amount":10.167672,"disclosure":"detailed"},
+        {"label":"Ingresos por derechos de formación y transferencias","category":"player_sales","amount":5.879687,"disclosure":"detailed"},
+        {"label":"Taquilla por torneos locales","category":"matchday_competition","amount":3.011445,"disclosure":"detailed"},
+        {"label":"Taquilla por torneos internacionales y amistosos","category":"matchday_competition","amount":2.920665,"disclosure":"detailed"},
+        {"label":"Cuotas de socios","category":"member_dues","amount":0.790199,"disclosure":"detailed"},
+        {"label":"Regalías","category":"sponsorship_commercial","amount":0.318018,"disclosure":"detailed"},
+        {"label":"Academias de fútbol y vóley","category":"other_sports","amount":0.293797,"disclosure":"detailed"},
+        {"label":"Franquicias de academias","category":"youth_football","amount":0.264597,"disclosure":"detailed"},
+        {"label":"Concesionarios","category":"stadium_other","amount":0.132693,"disclosure":"detailed"},
+        {"label":"Diversos (otros ingresos deportivos)","category":"other_income","amount":1.564381,"disclosure":"detailed"},
+        {"label":"Ingresos por participación en torneos internacionales","category":"competition_bonus","amount":0.411333,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Personal (gastos deportivos)","category":"wages_squad","amount":-18.711159,"disclosure":"detailed"},
+        {"label":"Servicios (gastos deportivos)","category":"match_organisation_expense","amount":-15.190865,"disclosure":"detailed"},
+        {"label":"Depreciación (gastos deportivos)","category":"depreciation","amount":-3.564638,"disclosure":"detailed"},
+        {"label":"Amortización (gastos deportivos, derechos federativos)","category":"player_amortisation","amount":-0.967114,"disclosure":"detailed"},
+        {"label":"Diversos (gastos deportivos)","category":"other_expenses","amount":-1.316779,"disclosure":"detailed"},
+        {"label":"Personal (gastos administrativos)","category":"admin_general_expense","amount":-2.932057,"disclosure":"detailed"},
+        {"label":"Servicios (gastos administrativos)","category":"admin_general_expense","amount":-3.033907,"disclosure":"detailed"},
+        {"label":"Estimaciones contables (gastos administrativos)","category":"admin_general_expense","amount":-0.50793,"disclosure":"detailed"},
+        {"label":"Gastos de marketing","category":"admin_general_expense","amount":-1.22798,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.112686,"tax":0,"gross_debt":49.326356,"cash":1.111894},
+      "official_totals": {"revenue":44.948112,"expenses":47.452429,"net_result":-4.617003},
+      "adjustments": {"extra_rows":[{"label":"Gastos financieros, neto","amount":-1.230364},{"label":"Diferencia de cambio, neta","amount":-0.882322}]}
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "PEN",
+      "source_id": "alianzalima-pe-eeff-2021",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"rate":3.9865,"source":"document_close"},
+      "revenue": [
+        {"label":"Ingresos por derechos de transmisión televisiva","category":"broadcasting","amount":25.270915,"disclosure":"detailed"},
+        {"label":"Ingresos por auspicios publicitarios","category":"sponsorship_commercial","amount":15.474359,"disclosure":"detailed"},
+        {"label":"Ingresos por participación en torneos internacionales","category":"competition_bonus","amount":14.404729,"disclosure":"detailed"},
+        {"label":"Cuotas de socios","category":"member_dues","amount":1.994992,"disclosure":"detailed"},
+        {"label":"Campaña \"De vuelta a casa\"","category":"other_income","amount":0.94721,"disclosure":"detailed"},
+        {"label":"Ingresos por derechos de formación y transferencias","category":"player_sales","amount":0.866658,"disclosure":"detailed"},
+        {"label":"Taquilla por torneos locales","category":"matchday_competition","amount":0.337998,"disclosure":"detailed"},
+        {"label":"Regalías","category":"sponsorship_commercial","amount":0.236393,"disclosure":"detailed"},
+        {"label":"Academias de fútbol y vóley","category":"other_sports","amount":0.154233,"disclosure":"detailed"},
+        {"label":"Taquilla por torneos internacionales y amistosos","category":"matchday_competition","amount":0.077119,"disclosure":"detailed"},
+        {"label":"Diversos (otros ingresos deportivos)","category":"other_income","amount":1.021601,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Personal (gastos deportivos)","category":"wages_squad","amount":-22.084159,"disclosure":"detailed"},
+        {"label":"Servicios (gastos deportivos)","category":"match_organisation_expense","amount":-9.789858,"disclosure":"detailed"},
+        {"label":"Depreciación (gastos deportivos)","category":"depreciation","amount":-3.002081,"disclosure":"detailed"},
+        {"label":"Amortización (gastos deportivos, derechos federativos)","category":"player_amortisation","amount":-1.135495,"disclosure":"detailed"},
+        {"label":"Diversos (gastos deportivos)","category":"other_expenses","amount":-3.281446,"disclosure":"detailed"},
+        {"label":"Personal (gastos administrativos)","category":"admin_general_expense","amount":-3.408437,"disclosure":"detailed"},
+        {"label":"Servicios (gastos administrativos)","category":"admin_general_expense","amount":-2.021474,"disclosure":"detailed"},
+        {"label":"Estimaciones contables (gastos administrativos)","category":"admin_general_expense","amount":-0.903427,"disclosure":"detailed"},
+        {"label":"Diversos (gastos administrativos)","category":"admin_general_expense","amount":-0.831909,"disclosure":"detailed"},
+        {"label":"Gastos de marketing","category":"admin_general_expense","amount":-2.868085,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.691774,"tax":0,"gross_debt":54.907198,"cash":2.1188},
+      "official_totals": {"revenue":60.786207,"expenses":49.326371,"net_result":8.768062},
+      "adjustments": {"extra_rows":[{"label":"Gastos financieros, neto","amount":-1.256711},{"label":"Diferencia de cambio, neta","amount":-1.435063}]}
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "PEN",
+      "source_id": "alianzalima-pe-eeff-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"PEN@2022-12-31"},
+      "revenue": [
+        {"label":"Ingresos por derechos de transmisión televisiva","category":"broadcasting","amount":25.09704,"disclosure":"detailed"},
+        {"label":"Ingresos por auspicios publicitarios","category":"sponsorship_commercial","amount":21.210888,"disclosure":"detailed"},
+        {"label":"Ingresos por participación en torneos internacionales","category":"competition_bonus","amount":15.460312,"disclosure":"detailed"},
+        {"label":"Otros ingresos deportivos","category":"lump_football_operations","amount":27.284537,"disclosure":"not_disclosed"}
+      ],
+      "expenses": [
+        {"label":"Costos deportivos","category":"lump_football_operations_expense","amount":-60.792598,"disclosure":"not_disclosed"},
+        {"label":"Gastos administrativos","category":"admin_general_expense","amount":-8.734136,"disclosure":"not_disclosed"},
+        {"label":"Gastos de marketing","category":"admin_general_expense","amount":-5.984518,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.202567,"tax":0,"gross_debt":50.038719,"cash":6.131999},
+      "official_totals": {"revenue":89.052777,"expenses":75.511252,"net_result":12.338958},
+      "adjustments": {
+        "extra_rows": [{"label":"Gastos financieros, neto","amount":-1.095609},{"label":"Diferencia de cambio, neta","amount":-0.106958}],
+        "included_in": {
+          "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "other_sports": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "youth_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "PEN",
+      "source_id": "alianzalima-pe-eeff-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"PEN@2023-12-31"},
+      "revenue": [
+        {"label":"Ingresos por auspicios publicitarios","category":"sponsorship_commercial","amount":27.643857,"disclosure":"detailed"},
+        {"label":"Ingresos por derechos de transmisión televisiva","category":"broadcasting","amount":27.003971,"disclosure":"detailed"},
+        {"label":"Otros ingresos","category":"lump_football_operations","amount":37.861997,"disclosure":"not_disclosed"},
+        {"label":"Ingresos por participación en torneos internacionales","category":"competition_bonus","amount":12.941076,"disclosure":"detailed"},
+        {"label":"Ingresos por participación en torneos nacionales","category":"competition_bonus","amount":2.763297,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Costos deportivos","category":"lump_football_operations_expense","amount":-80.506543,"disclosure":"not_disclosed"},
+        {"label":"Gastos administrativos","category":"admin_general_expense","amount":-12.26551,"disclosure":"not_disclosed"},
+        {"label":"Gastos de marketing","category":"admin_general_expense","amount":-8.189132,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.514391,"tax":0,"gross_debt":47.027776,"cash":3.371734},
+      "official_totals": {"revenue":108.214198,"expenses":100.961185,"net_result":5.738622},
+      "adjustments": {
+        "extra_rows": [{"label":"Ingresos y gastos financieros, neto","amount":-0.687669},{"label":"Diferencia de cambio, neta","amount":-0.826722}],
+        "included_in": {
+          "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "other_sports": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "youth_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "PEN",
+      "source_id": "alianzalima-pe-eeff-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"PEN@2024-12-31"},
+      "revenue": [
+        {"label":"Otros ingresos","category":"lump_football_operations","amount":57.179317,"disclosure":"not_disclosed"},
+        {"label":"Ingresos por auspicios publicitarios","category":"sponsorship_commercial","amount":34.139985,"disclosure":"detailed"},
+        {"label":"Ingresos por derechos de transmisión televisiva","category":"broadcasting","amount":27.106486,"disclosure":"detailed"},
+        {"label":"Ingresos por participación en torneos internacionales","category":"competition_bonus","amount":1.83695,"disclosure":"detailed"},
+        {"label":"Ingresos por participación en torneos nacionales","category":"competition_bonus","amount":0.202988,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Costos deportivos","category":"lump_football_operations_expense","amount":-92.697274,"disclosure":"not_disclosed"},
+        {"label":"Gastos administrativos","category":"admin_general_expense","amount":-17.027913,"disclosure":"not_disclosed"},
+        {"label":"Gastos de marketing","category":"admin_general_expense","amount":-10.075328,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.029833,"tax":0,"gross_debt":47.233336,"cash":2.709729},
+      "official_totals": {"revenue":120.465726,"expenses":119.800515,"net_result":-1.364622},
+      "adjustments": {
+        "extra_rows": [{"label":"Ingresos y gastos financieros, neto","amount":-1.810517},{"label":"Diferencia de cambio, neta","amount":-0.219316}],
+        "included_in": {
+          "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "other_sports": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "youth_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        }
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

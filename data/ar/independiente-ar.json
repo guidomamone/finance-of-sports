@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "independiente-ar",
+    "name": "Club Atlético Independiente",
+    "display_name": "Independiente",
+    "country": "AR",
+    "reporting_currency": "ARS",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "independiente-ar-memoria-y-balance-2023-24",
+      "club_id": "independiente-ar",
+      "title": "Memoria y Balance (estados contables auditados), Ejercicio 1°/7/2023 al 30/6/2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "independiente-ar-estados-contables-2025-26",
+      "club_id": "independiente-ar",
+      "title": "Estados Contables (Informe de Tesorería, Estado de Situación Patrimonial y Estado de Recursos y Gastos), Ejercicio N°122, 1°/7/2025 al 30/6/2026",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "independiente-ar-memoria-2025-26",
+      "club_id": "independiente-ar",
+      "title": "Memoria (institucional/narrativa, sin estados contables), 122° Ejercicio Administrativo, 1°/7/2025 al 30/6/2026",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"grindetti","name":"Grindetti (2023-actual)","first_year":2024,"last_year":2026}],
+  "members": 175796,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "ARS",
+      "source_id": "independiente-ar-memoria-y-balance-2023-24",
+      "report_type": "official_balance_sheet",
+      "management_id": "grindetti",
+      "fx": {"rate":890.5,"source":"document_close"},
+      "revenue": [
+        {"label":"Ingresos por venta de entradas generales","category":"matchday_competition","amount":967.489472,"disclosure":"detailed"},
+        {"label":"Ingresos partidos amistosos","category":"matchday_competition","amount":463.418323,"disclosure":"detailed"},
+        {"label":"Derechos de T.V.","category":"broadcasting","amount":2836.075715,"disclosure":"detailed"},
+        {"label":"Publicidad y concesiones","category":"sponsorship_commercial","amount":3894.029816,"disclosure":"detailed"},
+        {"label":"Plateas","category":"season_tickets","amount":5879.551558,"disclosure":"detailed"},
+        {"label":"Varios (Fútbol Profesional)","category":"other_income","amount":844.389059,"disclosure":"detailed"},
+        {"label":"Ingresos por transferencias de futbolistas profesionales","category":"player_sales","amount":4145.523929,"disclosure":"detailed"},
+        {"label":"Resultados por derechos de formación y mecanismos de solidaridad","category":"player_sales","amount":591.419614,"disclosure":"detailed"},
+        {"label":"Fútbol Juvenil","category":"youth_football","amount":62.807704,"disclosure":"detailed"},
+        {"label":"Departamento Educación Física","category":"other_sports","amount":133.19358,"disclosure":"detailed"},
+        {"label":"Complejo de Tenis","category":"other_sports","amount":131.201365,"disclosure":"detailed"},
+        {"label":"Filial Capital Federal (actividades)","category":"other_income","amount":515.491235,"disclosure":"detailed"},
+        {"label":"Centro Educativo","category":"education","amount":1936.8973,"disclosure":"detailed"},
+        {"label":"Complejo Polideportivo Wilde","category":"other_sports","amount":261.266336,"disclosure":"detailed"},
+        {"label":"Estadio (concesiones, no recaudación de partidos)","category":"stadium_other","amount":72.525021,"disclosure":"detailed"},
+        {"label":"Cuotas de Socios (Filial Capital Federal)","category":"member_dues","amount":269.96535,"disclosure":"detailed"},
+        {"label":"Cuotas de Socios (Sede Central)","category":"member_dues","amount":13248.916744,"disclosure":"detailed"},
+        {"label":"Carnets de Asociados","category":"member_dues","amount":42.301581,"disclosure":"detailed"},
+        {"label":"Recursos Varios","category":"other_income","amount":883.151053,"disclosure":"detailed"},
+        {"label":"Resultado Inversiones","category":"other_income","amount":987.666079,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Jugadores","category":"wages_squad","amount":-11494.498654,"disclosure":"detailed"},
+        {"label":"Técnicos y preparadores físicos","category":"wages_squad","amount":-498.335033,"disclosure":"detailed"},
+        {"label":"Personal auxiliar fútbol","category":"wages_squad","amount":-1196.963202,"disclosure":"detailed"},
+        {"label":"Asistencia médica","category":"wages_squad","amount":-549.511496,"disclosure":"detailed"},
+        {"label":"Organización de partidos","category":"match_organisation_expense","amount":-1214.788836,"disclosure":"detailed"},
+        {
+          "label": "Concentraciones, traslados, estadías, cesiones y otros",
+          "category": "match_organisation_expense",
+          "amount": -2130.132189,
+          "disclosure": "detailed"
+        },
+        {"label":"Gastos partidos amistosos","category":"match_organisation_expense","amount":-60.245184,"disclosure":"detailed"},
+        {"label":"Gastos directos derivados de la venta de jugadores","category":"other_expenses","amount":-738.442785,"disclosure":"detailed"},
+        {"label":"Fútbol Juvenil (gasto)","category":"youth_other_sports_expense","amount":-1917.566423,"disclosure":"detailed"},
+        {"label":"Departamento Educación Física (gasto)","category":"youth_other_sports_expense","amount":-711.290588,"disclosure":"detailed"},
+        {"label":"Complejo de Tenis (gasto)","category":"youth_other_sports_expense","amount":-310.260968,"disclosure":"detailed"},
+        {"label":"Filial Capital Federal (gasto)","category":"youth_other_sports_expense","amount":-221.044991,"disclosure":"detailed"},
+        {"label":"Centro Educativo (gasto)","category":"education_expense","amount":-2324.309805,"disclosure":"detailed"},
+        {"label":"Complejo Polideportivo Wilde (gasto)","category":"youth_other_sports_expense","amount":-931.945511,"disclosure":"detailed"},
+        {"label":"Parque Santo Domingo (gasto)","category":"youth_other_sports_expense","amount":-1723.064013,"disclosure":"detailed"},
+        {"label":"Estadio (gasto)","category":"youth_other_sports_expense","amount":-1889.285004,"disclosure":"detailed"},
+        {"label":"Administración","category":"admin_general_expense","amount":-6576.118028,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-1318.497962,"disclosure":"detailed"},
+        {"label":"Amortización de bienes intangibles (plantel profesional)","category":"player_amortisation","amount":-4343.753047,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":9375.561845,"tax":0,"gross_debt":25968.939849,"cash":1704.38714},
+      "official_totals": {"revenue":38167.280834,"expenses":40150.053719,"net_result":7392.78896}
+    },
+    {
+      "fiscal_year": 2026,
+      "period_end": "2026-06-30",
+      "currency": "ARS",
+      "source_id": "independiente-ar-estados-contables-2025-26",
+      "report_type": "official_balance_sheet",
+      "management_id": "grindetti",
+      "fx": {"rate":1500,"source":"document_close"},
+      "revenue": [
+        {"label":"Ingresos por venta de entradas generales","category":"matchday_competition","amount":582.978874,"disclosure":"detailed"},
+        {"label":"Otras Competiciones (ingresos)","category":"matchday_competition","amount":2792.306789,"disclosure":"detailed"},
+        {"label":"Derechos T.V.","category":"broadcasting","amount":6288.636359,"disclosure":"detailed"},
+        {"label":"Publicidad y concesiones","category":"sponsorship_commercial","amount":10900.370217,"disclosure":"detailed"},
+        {"label":"Plateas","category":"season_tickets","amount":13901.105825,"disclosure":"detailed"},
+        {"label":"Varios (Fútbol Profesional)","category":"other_income","amount":1096.303927,"disclosure":"detailed"},
+        {"label":"Ingresos por transferencias de futbolistas profesionales","category":"player_sales","amount":25815.787269,"disclosure":"detailed"},
+        {"label":"Resultados por derechos de formación y mecanismos de solidaridad","category":"player_sales","amount":882.901082,"disclosure":"detailed"},
+        {"label":"Fútbol Juvenil","category":"youth_football","amount":227.501436,"disclosure":"detailed"},
+        {"label":"Departamento Educación Física","category":"other_sports","amount":355.836739,"disclosure":"detailed"},
+        {"label":"Complejo de Tenis","category":"other_sports","amount":1847.419418,"disclosure":"detailed"},
+        {"label":"Filial Capital Federal (actividades)","category":"other_income","amount":1190.871805,"disclosure":"detailed"},
+        {"label":"Centro Educativo","category":"education","amount":3425.277879,"disclosure":"detailed"},
+        {"label":"Complejo Polideportivo Wilde","category":"other_sports","amount":451.120923,"disclosure":"detailed"},
+        {"label":"Generales (Actividades Deportivas, Culturales y Sociales)","category":"other_income","amount":557.744193,"disclosure":"detailed"},
+        {"label":"Cuotas de Socios (Filial Capital Federal)","category":"member_dues","amount":548.964924,"disclosure":"detailed"},
+        {"label":"Cuotas de Socios (Sede Central)","category":"member_dues","amount":26904.152832,"disclosure":"detailed"},
+        {"label":"Carnets de Asociados","category":"member_dues","amount":116.634435,"disclosure":"detailed"},
+        {"label":"Recursos Varios","category":"other_income","amount":8293.309947,"disclosure":"detailed"},
+        {"label":"Resultado Inversiones","category":"other_income","amount":1246.308217,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Jugadores","category":"wages_squad","amount":-23208.823795,"disclosure":"detailed"},
+        {"label":"Técnicos y preparadores físicos","category":"wages_squad","amount":-1123.421025,"disclosure":"detailed"},
+        {"label":"Personal auxiliar fútbol","category":"wages_squad","amount":-1753.046366,"disclosure":"detailed"},
+        {"label":"Asistencia médica","category":"wages_squad","amount":-2021.631758,"disclosure":"detailed"},
+        {"label":"Organización partidos","category":"match_organisation_expense","amount":-1867.251651,"disclosure":"detailed"},
+        {
+          "label": "Concentraciones, traslados, estadías, cesiones y otros",
+          "category": "match_organisation_expense",
+          "amount": -10052.781424,
+          "disclosure": "detailed"
+        },
+        {"label":"Otras Competiciones (gastos)","category":"match_organisation_expense","amount":-20.781644,"disclosure":"detailed"},
+        {"label":"Gastos directos derivados de la venta de jugadores (Anexo D3)","category":"other_expenses","amount":-7612.638319,"disclosure":"detailed"},
+        {"label":"Fútbol Juvenil (gasto)","category":"youth_other_sports_expense","amount":-3855.156169,"disclosure":"detailed"},
+        {"label":"Departamento Educación Física (gasto)","category":"youth_other_sports_expense","amount":-1772.726075,"disclosure":"detailed"},
+        {"label":"Complejo de Tenis (gasto)","category":"youth_other_sports_expense","amount":-851.622319,"disclosure":"detailed"},
+        {"label":"Filial Capital Federal (gasto)","category":"youth_other_sports_expense","amount":-574.055059,"disclosure":"detailed"},
+        {"label":"Centro Educativo (gasto)","category":"education_expense","amount":-4035.248148,"disclosure":"detailed"},
+        {"label":"Complejo Polideportivo Wilde (gasto)","category":"youth_other_sports_expense","amount":-2171.867844,"disclosure":"detailed"},
+        {"label":"Parque Santo Domingo (gasto)","category":"youth_other_sports_expense","amount":-3892.444667,"disclosure":"detailed"},
+        {"label":"Estadio (gasto)","category":"youth_other_sports_expense","amount":-4512.8742,"disclosure":"detailed"},
+        {"label":"Administración","category":"admin_general_expense","amount":-17891.356666,"disclosure":"detailed"},
+        {
+          "label": "Depreciación de bienes de uso (neta de desafectación de Res. de Rev. Técnico)",
+          "category": "depreciation",
+          "amount": -2671.788371,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortización de bienes intangibles","category":"player_amortisation","amount":-17083.160446,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1325.222485,"tax":0,"gross_debt":52113.682021,"cash":978.164626},
+      "official_totals": {"revenue":107425.53309,"expenses":106972.675946,"net_result":1778.079629}
+    }
+  ],
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

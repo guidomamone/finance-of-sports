@@ -5,7 +5,7 @@
 //
 // Decisiones de Guido (2026-10-20): (1) licencia CC BY-NC 4.0, con el enlace a terminos.html ("Licencia y reuso"); (2) las cotizaciones `market_approx`
 // (ARS y CLP, 10 ejercicios) quedan, anotadas en `sources` con BCRA y SII y su restricción de uso comercial; (3) el paquete lleva SOLO lo financiero: los
-// archivos del paquete no traen squad_transfers, results, titles ni legacy_extras (soloFinanciero() de tools/json-datos.mjs).
+// archivos del paquete no traen squad_transfers, results, titles ni extras (soloFinanciero() de tools/json-datos.mjs).
 //
 // SOLO LECTURA sobre data/ y js/. Escribe en una carpeta que no se publica (default Generados/paquete/): datapackage.json y datos-json/<país>/<id>.json.
 // USO: node tools/exportar-paquete.mjs [--salida <carpeta>] [--fecha AAAA-MM-DD]

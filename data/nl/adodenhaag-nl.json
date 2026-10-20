@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "adodenhaag-nl",
+    "name": "NV ADO Den Haag",
+    "display_name": "ADO Den Haag",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "adodenhaag-nl-jaarrekening2024-25",
+      "club_id": "adodenhaag-nl",
+      "title": "NV ADO Den Haag — jaarrekening2024-25 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "adodenhaag-nl-jaarrekening2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":1.777882,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"sponsorship_commercial","amount":5.45522,"disclosure":"aggregated"},
+        {"label":"Media gerelateerde baten","category":"broadcasting","amount":1.135526,"disclosure":"aggregated"},
+        {"label":"Prijzengeld","category":"competition_bonus","amount":0.377553,"disclosure":"aggregated"},
+        {"label":"Horeca","category":"stadium_other","amount":2.287066,"disclosure":"aggregated"},
+        {"label":"Merchandise","category":"sponsorship_commercial","amount":0.534193,"disclosure":"aggregated"},
+        {"label":"Subsidies en giften","category":"other_income","amount":0.048882,"disclosure":"aggregated"},
+        {"label":"Overige baten","category":"other_income","amount":1.85163,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":1.098265,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lonen en salarissen","category":"wages_squad","amount":-7.443314,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"wages_squad","amount":-1.258234,"disclosure":"aggregated"},
+        {"label":"Pensioenlasten","category":"wages_squad","amount":-0.157357,"disclosure":"aggregated"},
+        {"label":"Overige personeelskosten","category":"admin_general_expense","amount":-1.296673,"disclosure":"aggregated"},
+        {"label":"Vergoedingssommen","category":"player_amortisation","amount":-0.369136,"disclosure":"aggregated"},
+        {"label":"Software","category":"other_amortisation","amount":-0.001083,"disclosure":"aggregated"},
+        {"label":"Goodwill","category":"other_amortisation","amount":-0.02,"disclosure":"aggregated"},
+        {"label":"Allocatie amortisatie vergoedingssommen","category":"player_amortisation","amount":0.369136,"disclosure":"aggregated"},
+        {"label":"Materiële vaste activa","category":"depreciation","amount":-0.3782,"disclosure":"aggregated"},
+        {"label":"Huisvestingskosten","category":"admin_general_expense","amount":-3.127141,"disclosure":"aggregated"},
+        {"label":"Wedstrijd- en trainingskosten","category":"match_organisation_expense","amount":-1.870848,"disclosure":"aggregated"},
+        {"label":"Verkoopkosten","category":"admin_general_expense","amount":-2.986742,"disclosure":"aggregated"},
+        {"label":"Algemene kosten","category":"admin_general_expense","amount":-1.539528,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.005219,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":14.566217,"expenses":20.07912,"net_result":-5.507684},
+      "adjustments": {"extra_rows":[{"label":"Financiële baten en lasten","amount":0.005219},{"label":"Belastingen","amount":null}]}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

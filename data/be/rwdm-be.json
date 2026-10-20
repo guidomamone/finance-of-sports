@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {"id":"rwdm-be","name":"RWDM","display_name":"RWDM","country":"BE","reporting_currency":"EUR","fiscal_year_start":"07-01","sport":"futbol"},
+  "sources": [
+    {
+      "id": "rwdm-be-jaarrekening-2025-06-30-individual",
+      "club_id": "rwdm-be",
+      "title": "RWDM — jaarrekening-2025-06-30-individual (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "rwdm-be-jaarrekening-2020-06-30-individual",
+      "club_id": "rwdm-be",
+      "title": "RWDM — jaarrekening-2020-06-30-individual (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "rwdm-be-jaarrekening-2021-06-30-individual",
+      "club_id": "rwdm-be",
+      "title": "RWDM — jaarrekening-2021-06-30-individual (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "rwdm-be-jaarrekening-2022-06-30-individual",
+      "club_id": "rwdm-be",
+      "title": "RWDM — jaarrekening-2022-06-30-individual (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "rwdm-be-jaarrekening-2023-06-30-individual",
+      "club_id": "rwdm-be",
+      "title": "RWDM — jaarrekening-2023-06-30-individual (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "rwdm-be-jaarrekening-2024-06-30-individual",
+      "club_id": "rwdm-be",
+      "title": "RWDM — jaarrekening-2024-06-30-individual (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "rwdm-be-jaarrekening-2020-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":0.890922,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-0.808101,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -0.062384,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.016847,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.001486,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.001649,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003862,"tax":0,"gross_debt":null,"cash":0.050076},
+      "official_totals": {"revenue":0.890922,"expenses":0.890467,"net_result":-0.003407},
+      "adjustments": {"no_breakdown":[{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.890922,"reason":"el documento no desglosa este renglón"}]}
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "rwdm-be-jaarrekening-2021-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":1.547882,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-1.758356,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": 0.036391,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.001639,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.138274,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.015265,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.060428,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.004664,"tax":-0.001894,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.547882,"expenses":1.799297,"net_result":-0.396247},
+      "adjustments": {
+        "extra_rows": [{"label":"Recurrente financiële kosten","amount":-0.004664},{"label":"Belastingen op het resultaat (+)/(-)","amount":-0.001894}],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.547882,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "rwdm-be-jaarrekening-2022-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [{"label":"Brutomarge","category":"lump_football_operations","amount":1.08213,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen","category":"wages_squad","amount":-2.644238,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -0.141046,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+          "category": "other_expenses",
+          "amount": -0.017243,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.01016,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.012898,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.08213,"expenses":2.812687,"net_result":-1.743454},
+      "adjustments": {
+        "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.000762},{"label":"Recurrente financiële kosten","amount":-0.01366}],
+        "no_breakdown": [{"line":"Brutomarge","side":"revenue","amount":1.08213,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "rwdm-be-jaarrekening-2023-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":1.628714,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-7.935338,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -1.378945,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+          "category": "other_expenses",
+          "amount": -0.000696,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.101918,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.052671,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.18262,"tax":-0.002772,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.628714,"expenses":9.416897,"net_result":-8.026247},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.000281},
+          {"label":"Recurrente financiële kosten","amount":-0.182901},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.002772}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.628714,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "rwdm-be-jaarrekening-2024-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":3.962984,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-20.875375,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.07007,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.0002,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-6.990742,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.46402,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.784095,"tax":-0.011516,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":3.962984,"expenses":28.400407,"net_result":-25.233035},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.000137},
+          {"label":"Recurrente financiële kosten","amount":-0.784232},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.011516}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":3.962984,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "rwdm-be-jaarrekening-2025-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":4.269374,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"other_income","amount":10.904952,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aankopen","category":"other_expenses","amount":-0.74886,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-7.016079,"disclosure":"aggregated"},
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-7.691859,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-1.231501,"disclosure":"aggregated"},
+        {"label":"Andere personeelskosten","category":"wages_squad","amount":-1.046765,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -2.5493,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+          "category": "exceptional_items",
+          "amount": -1.1895,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bedrijfsbelastingen en -taksen","category":"admin_general_expense","amount":-0.002771,"disclosure":"aggregated"},
+        {"label":"Andere","category":"other_expenses","amount":-0.338987,"disclosure":"aggregated"},
+        {
+          "label": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
+          "category": "exceptional_items",
+          "amount": -0.934104,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.00067,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.390847,"tax":-0.57858,"gross_debt":null,"cash":0.183058},
+      "official_totals": {"revenue":15.174326,"expenses":20.626122,"net_result":-14.545496},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andere financiële opbrengsten","amount":0.010508},
+          {"label":"Kosten van schulden","amount":-6.145338},
+          {
+            "label": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+            "amount": -0.133987
+          },
+          {"label":"Andere financiële kosten","amount":-0.06703},
+          {"label":"Niet-recurrente financiële kosten","amount":-0.055},
+          {"label":"Belastingen","amount":-0.57858}
+        ],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":4.269374,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

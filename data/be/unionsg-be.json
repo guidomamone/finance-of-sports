@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "unionsg-be",
+    "name": "Royale Union Saint-Gilloise SRL",
+    "display_name": "Union Saint-Gilloise",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "unionsg-be-jaarrekening-2025",
+      "club_id": "unionsg-be",
+      "title": "Comptes annuels de la Royale Union Saint-Gilloise SRL pour l'exercice du 1/7/2024 au 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "unionsg-be-jaarrekening-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Chiffre d'affaires","category":"lump_football_operations","amount":15.029834,"disclosure":"aggregated"},
+        {
+          "label": "Autres produits d'exploitation",
+          "category": "other_income",
+          "amount": 22.925706,
+          "disclosure": "aggregated",
+          "items": [["Subsides d’exploitation et montants compensatoires obtenus des pouvoirs publics (Nota 6.10)",10.074391],["Reste sans détail disponible",12.851315]]
+        },
+        {
+          "label": "Produits d'exploitation non récurrents — Plus-values sur réalisation d'immobilisations incorporelles (droits sur joueurs)",
+          "category": "player_sales",
+          "amount": 20.715719,
+          "disclosure": "detailed"
+        },
+        {"label":"Produits d'exploitation non récurrents — Autres","category":"other_income","amount":0.096854,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Approvisionnements et marchandises","category":"other_expenses","amount":-0.963428,"disclosure":"aggregated"},
+        {"label":"Services et biens divers","category":"other_expenses","amount":-18.078026,"disclosure":"aggregated"},
+        {
+          "label": "Rémunérations, charges sociales et pensions",
+          "category": "wages_squad",
+          "amount": -22.150441,
+          "disclosure": "detailed",
+          "items": [
+            ["Rémunérations et avantages sociaux directs",20.445031],
+            ["Cotisations patronales d’assurances sociales",1.174342],
+            ["Autres frais de personnel",0.531068]
+          ]
+        },
+        {
+          "label": "Amortissements — droits sur joueurs (immobilisations incorporelles)",
+          "category": "player_amortisation",
+          "amount": -10.115265,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortissements — immobilisations corporelles","category":"depreciation","amount":-0.449653,"disclosure":"detailed"},
+        {"label":"Réductions de valeur sur créances commerciales (dotations nettes)","category":"other_expenses","amount":-4.106085,"disclosure":"aggregated"},
+        {
+          "label": "Autres charges d'exploitation (impôts et taxes + autres, sin desglose confiable en la transcripción)",
+          "category": "admin_general_expense",
+          "amount": -0.266065,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.499375,"tax":-0.336402,"gross_debt":31.660587,"cash":1.27532},
+      "official_totals": {"revenue":58.768113,"expenses":56.128962,"net_result":1.803374}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

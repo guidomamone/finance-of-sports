@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "lokerentemse-be",
+    "name": "Koninklijke Sporting Club Lokeren - Temse VZW",
+    "display_name": "Lokeren-Temse",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "lokerentemse-be-jaarrekening-2025-06-30-individual",
+      "club_id": "lokerentemse-be",
+      "title": "Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2025-06-30-individual (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "lokerentemse-be-jaarrekening-2024-06-30-individual",
+      "club_id": "lokerentemse-be",
+      "title": "Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2024-06-30-individual (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "lokerentemse-be-jaarrekening-2023-06-30-individual-correction",
+      "club_id": "lokerentemse-be",
+      "title": "Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2023-06-30-individual-correction (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "lokerentemse-be-jaarrekening-2021-06-30-individual",
+      "club_id": "lokerentemse-be",
+      "title": "Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2021-06-30-individual (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "lokerentemse-be-jaarrekening-2022-06-30-individual",
+      "club_id": "lokerentemse-be",
+      "title": "Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2022-06-30-individual (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "lokerentemse-be-jaarrekening-2021-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"Overige bedrijfsopbrengsten (implícito en la Brutomarge)","category":"other_income","amount":0.076401,"disclosure":"aggregated"},
+        {"label":"Omzet","category":"lump_football_operations","amount":0.805246,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.488692,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-0.207898,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.001816,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.168361,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.009498,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.881647,"expenses":0.866767,"net_result":0.005382},
+      "adjustments": {
+        "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.000041},{"label":"Recurrente financiële kosten","amount":-0.009539}],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":0.805246,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "lokerentemse-be-jaarrekening-2022-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Overige bedrijfsopbrengsten (implícito en la Brutomarge)","category":"other_income","amount":0.06428,"disclosure":"aggregated"},
+        {"label":"Omzet","category":"lump_football_operations","amount":1.448549,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.78117,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-0.768227,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.002548,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.005042,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.004083,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.512829,"expenses":1.556987,"net_result":-0.04824},
+      "adjustments": {
+        "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.001217},{"label":"Recurrente financiële kosten","amount":-0.0053}],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":1.448549,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "lokerentemse-be-jaarrekening-2023-06-30-individual-correction",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Overige bedrijfsopbrengsten (implícito en la Brutomarge)","category":"other_income","amount":0.551469,"disclosure":"aggregated"},
+        {"label":"Waarvan: niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.11625,"disclosure":"aggregated"},
+        {"label":"Omzet","category":"lump_football_operations","amount":1.504443,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -1.394785,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-1.141957,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -0.035114,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+          "category": "other_expenses",
+          "amount": -0.029267,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.029673,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.020825,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":2.172162,"expenses":2.630796,"net_result":-0.479459},
+      "adjustments": {
+        "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.000073},{"label":"Recurrente financiële kosten","amount":-0.020898}],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":1.504443,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "lokerentemse-be-jaarrekening-2024-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":0.988874,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-1.236175,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": 0.016419,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.012923,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.013466,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.00012,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.033828,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.016384,"tax":-0.000054,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.988874,"expenses":1.266627,"net_result":-0.307657},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.002231},
+          {"label":"Niet-recurrente financiële opbrengsten","amount":0.016808},
+          {"label":"Recurrente financiële kosten","amount":-0.035423},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.000054}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.988874,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "lokerentemse-be-jaarrekening-2025-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Waarvan: niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.844978,"disclosure":"aggregated"},
+        {"label":"Omzet","category":"lump_football_operations","amount":0.282823,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfsopbrengsten (implícito en la Brutomarge)","category":"other_income","amount":0.050197,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.298662,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-0.036731,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": 0,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.003377,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.00313,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.011136,"tax":0,"gross_debt":null,"cash":0.044934},
+      "official_totals": {"revenue":1.177998,"expenses":0.3419,"net_result":0.824961},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.00012},
+          {"label":"Niet-recurrente financiële opbrengsten","amount":0},
+          {"label":"Recurrente financiële kosten","amount":-0.011142},
+          {"label":"Niet-recurrente financiële kosten","amount":-0.000114},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":0}
+        ],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":0.282823,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

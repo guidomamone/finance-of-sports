@@ -91,7 +91,7 @@ Licensing Report y los 10 clubes de Japón salen de ese mismo documento.
 ```text
 Perú (Alianza Lima, onboarding inicial del país): los EEFF 2019-2021 SÍ declaran su propio tipo de
 cambio de cierre (Nota "Riesgo de tipo de cambio", promedio ponderado SBS compra/venta) y van como
-fx literal + fxSource:'document_close' en data/pe/alianzalima-pe-data.js, NO acá. Los EEFF 2022-2024
+fx literal + fxSource:'document_close' en data/pe/alianzalima-pe.json (`fx.rate`, `fx.source`), NO acá. Los EEFF 2022-2024
 transcriptos para este club no incluyen esa nota (la transcripción llegó solo hasta los 3 estados
 principales, no a las notas), así que estos 3 son cotizaciones de mercado investigadas aparte.
 ```

@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "akrontolyatti-ru",
+    "name": "ANO Football Club Akron",
+    "display_name": "Akron Tolyatti",
+    "country": "RU",
+    "reporting_currency": "RUB",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "akrontolyatti-ru-bfo-2022-datos",
+      "club_id": "akrontolyatti-ru",
+      "title": "ANO Football Club Akron — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "akrontolyatti-ru-bfo-2023-datos",
+      "club_id": "akrontolyatti-ru",
+      "title": "ANO Football Club Akron — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "akrontolyatti-ru-bfo-2024-datos",
+      "club_id": "akrontolyatti-ru",
+      "title": "ANO Football Club Akron — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "akrontolyatti-ru-bfo-2025-datos",
+      "club_id": "akrontolyatti-ru",
+      "title": "ANO Football Club Akron — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "akrontolyatti-ru-bfo-2021-datos",
+      "club_id": "akrontolyatti-ru",
+      "title": "ANO Football Club Akron — отчетность 2021 в ГИР БО (bo.nalog.gov.ru), ejercicio 2021",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "RUB",
+      "source_id": "akrontolyatti-ru-bfo-2021-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2021-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":3.532,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":0.428,"disclosure":"aggregated"},
+        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":321.341,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-1.339,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-0.152,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-0.823,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-2.368,"disclosure":"aggregated"},
+        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-96.956,"disclosure":"aggregated"},
+        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-152.754,"disclosure":"aggregated"},
+        {
+          "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
+          "category": "other_expenses",
+          "amount": -44.379,
+          "disclosure": "aggregated"
+        },
+        {"label":"Прочие расходы (6350, форма 6)","category":"other_expenses","amount":-22.947,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.011,"tax":-0.322,"gross_debt":0,"cash":2.759},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":3.272},
+      "adjustments": {
+        "extra_rows": [{"label":"Проценты к получению (2320)","amount":0.011},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-0.322}],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":3.532,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {"line":"Себестоимость продаж (2120)","side":"gasto","amount":1.339,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Расходы на целевые мероприятия (6310, форма 6)",
+            "side": "gasto",
+            "amount": 96.956,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "RUB",
+      "source_id": "akrontolyatti-ru-bfo-2022-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2022-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":13.166,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":1.087,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"other_income","amount":42,"disclosure":"aggregated"},
+        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":351.134,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-0.871,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-1.53,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-9.955,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-2.176,"disclosure":"aggregated"},
+        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-126.309,"disclosure":"aggregated"},
+        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-200.665,"disclosure":"aggregated"},
+        {
+          "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
+          "category": "other_expenses",
+          "amount": -7.817,
+          "disclosure": "aggregated"
+        },
+        {"label":"Прочие расходы (6350, форма 6)","category":"other_expenses","amount":-43.703,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.541,"tax":5.106,"gross_debt":0,"cash":10.054},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":22.008},
+      "adjustments": {
+        "extra_rows": [{"label":"Проценты к получению (2320)","amount":2.541},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":5.106}],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":13.166,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {"line":"Себестоимость продаж (2120)","side":"gasto","amount":0.871,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Расходы на целевые мероприятия (6310, форма 6)",
+            "side": "gasto",
+            "amount": 126.309,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "RUB",
+      "source_id": "akrontolyatti-ru-bfo-2023-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2023-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":55.338,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":49.914,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"other_income","amount":0.253,"disclosure":"aggregated"},
+        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":466.986,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-2.16,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-5.455,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-15.273,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-52.706,"disclosure":"aggregated"},
+        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-457.76,"disclosure":"aggregated"},
+        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-16.423,"disclosure":"aggregated"},
+        {
+          "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
+          "category": "other_expenses",
+          "amount": -10.774,
+          "disclosure": "aggregated"
+        },
+        {"label":"Прочие расходы (6350, форма 6)","category":"other_expenses","amount":-59.467,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.235,"tax":-13.454,"gross_debt":7.135,"cash":4.849},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-59.746},
+      "adjustments": {
+        "extra_rows": [{"label":"Проценты к получению (2320)","amount":1.235},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-13.454}],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":55.338,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {"line":"Себестоимость продаж (2120)","side":"gasto","amount":2.16,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Расходы на целевые мероприятия (6310, форма 6)",
+            "side": "gasto",
+            "amount": 457.76,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "RUB",
+      "source_id": "akrontolyatti-ru-bfo-2024-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2024-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":337.147,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":56.645,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"other_income","amount":0.634,"disclosure":"aggregated"},
+        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":1345.02,"disclosure":"aggregated"},
+        {"label":"Прочие поступления (6250, форма 6)","category":"other_income","amount":67.764,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-201.568,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-125.022,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-35.145,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-42.105,"disclosure":"aggregated"},
+        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-1172.825,"disclosure":"aggregated"},
+        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-51.423,"disclosure":"aggregated"},
+        {
+          "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
+          "category": "other_expenses",
+          "amount": -20.377,
+          "disclosure": "aggregated"
+        },
+        {"label":"Прочие расходы (6350, форма 6)","category":"other_expenses","amount":-93.929,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":8.58,"tax":3.354,"gross_debt":0,"cash":26.729},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":76.75},
+      "adjustments": {
+        "extra_rows": [{"label":"Проценты к получению (2320)","amount":8.58},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":3.354}],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":337.147,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {"line":"Себестоимость продаж (2120)","side":"gasto","amount":201.568,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Расходы на целевые мероприятия (6310, форма 6)",
+            "side": "gasto",
+            "amount": 1172.825,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "RUB",
+      "source_id": "akrontolyatti-ru-bfo-2025-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2025-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":691.943,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":57.41,"disclosure":"aggregated"},
+        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":1615.051,"disclosure":"aggregated"},
+        {"label":"Прочие поступления (6250, форма 6)","category":"other_income","amount":60.89,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-244.247,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-432.555,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-40.473,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-38.472,"disclosure":"aggregated"},
+        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-1546.483,"disclosure":"aggregated"},
+        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-47.446,"disclosure":"aggregated"},
+        {
+          "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
+          "category": "other_expenses",
+          "amount": -32.51,
+          "disclosure": "aggregated"
+        },
+        {"label":"Прочие расходы (6350, форма 6)","category":"other_expenses","amount":-77.378,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":7.168,"tax":14.346,"gross_debt":0,"cash":61.752},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-12.756},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Проценты к получению (2320)","amount":7.84},
+          {"label":"Проценты к уплате (2330)","amount":-0.672},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":14.346}
+        ],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":691.943,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {"line":"Себестоимость продаж (2120)","side":"gasto","amount":244.247,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Расходы на целевые мероприятия (6310, форма 6)",
+            "side": "gasto",
+            "amount": 1546.483,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

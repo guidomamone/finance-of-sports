@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "villarrealcf-es",
+    "name": "Villarreal Club de Fútbol, S.A.D.",
+    "display_name": "Villarreal CF",
+    "country": "ES",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "villarrealcf-es-estados-financieros-2023-24",
+      "club_id": "villarrealcf-es",
+      "title": "Estados Financieros correspondientes al ejercicio anual terminado el 30 de junio de 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://web.archive.org/web/2024/https://villarrealcf.es/wp-content/uploads/2.b.ii-CCAA-Villarreal-firmadas.pdf"
+    }
+  ],
+  "management": [{"id":"ejercicio2024","name":"Ejercicio 2023/24","first_year":2024,"last_year":2024}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "villarrealcf-es-estados-financieros-2023-24",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {
+          "label": "Importe neto de la cifra de negocios (ventas, sin desglosar por concepto)",
+          "category": "lump_football_operations",
+          "amount": 119.721562,
+          "disclosure": "summary"
+        },
+        {"label":"Otros ingresos de explotación","category":"other_income","amount":8.564334,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Aprovisionamientos (consumo de mercaderías y materias primas)","category":"other_expenses","amount":-5.542115,"disclosure":"detailed"},
+        {
+          "label": "Sueldos, salarios y asimilados + Cargas sociales (sin separar plantel deportivo/no deportivo)",
+          "category": "wages_squad",
+          "amount": -108.089071,
+          "disclosure": "summary"
+        },
+        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-21.563438,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general_expense","amount":-0.24245,"disclosure":"detailed"},
+        {
+          "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+          "category": "other_expenses",
+          "amount": -0.001407,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-6.44751,"disclosure":"detailed"},
+        {
+          "label": "Amortización del inmovilizado (sin separar jugadores del resto, ver comentario arriba)",
+          "category": "player_amortisation",
+          "amount": -27.897705,
+          "disclosure": "summary"
+        }
+      ],
+      "financial": {"profit_on_player_sales":26.425834,"asset_sales":0,"net_interest":-0.945099,"tax":1.895827,"gross_debt":116.355224,"cash":47.616789},
+      "official_totals": {"revenue":128.285896,"expenses":169.783696,"net_result":-14.121238}
+    }
+  ],
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

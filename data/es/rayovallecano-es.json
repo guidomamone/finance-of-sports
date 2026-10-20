@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "rayovallecano-es",
+    "name": "Rayo Vallecano de Madrid, S.A.D.",
+    "display_name": "Rayo Vallecano",
+    "country": "ES",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "rayovallecano-es-informe-auditoria-cuentas-anuales-2024-25",
+      "club_id": "rayovallecano-es",
+      "title": "Informe de Auditoría, Cuentas Anuales e Informe de Gestión del ejercicio cerrado a 30 de junio de 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"martinpresa","name":"Martín Presa","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "rayovallecano-es-informe-auditoria-cuentas-anuales-2024-25",
+      "report_type": "official_balance_sheet",
+      "management_id": "martinpresa",
+      "fx": {"ref":"EUR@2025-06-30","source":"market_close"},
+      "revenue": [
+        {"label":"Ingresos por competiciones","category":"competition_bonus","amount":1.990519,"disclosure":"summary"},
+        {"label":"Ingresos por abonados y socios","category":"season_tickets","amount":3.155612,"disclosure":"detailed"},
+        {"label":"Ingresos por retransmisión","category":"broadcasting","amount":43.206514,"disclosure":"summary"},
+        {"label":"Ingresos por comercialización","category":"sponsorship_commercial","amount":0.557798,"disclosure":"detailed"},
+        {"label":"Ingresos por publicidad","category":"sponsorship_commercial","amount":7.10728,"disclosure":"detailed"},
+        {
+          "label": "Otros ingresos de explotación (accesorios, gestión corriente y subvenciones)",
+          "category": "other_income",
+          "amount": 1.974943,
+          "disclosure": "detailed",
+          "items": [["Ingresos accesorios y otros de gestión corriente",0.472629],["Subvenciones de explotación incorporadas al resultado del ejercicio",1.502314]]
+        },
+        {"label":"Excesos de provisiones","category":"other_income","amount":0.47025,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Aprovisionamientos",
+          "category": "other_expenses",
+          "amount": -1.291365,
+          "disclosure": "detailed",
+          "items": [["Compras de material deportivo",-1.042489],["Otros consumos",-0.248876]]
+        },
+        {
+          "label": "Gastos de personal no deportivo",
+          "category": "admin_general_expense",
+          "amount": -0.503022,
+          "disclosure": "detailed",
+          "items": [
+            ["Sueldos y salarios del personal no deportivo",-0.358913],
+            ["Indemnizaciones al personal no deportivo",-0.0035],
+            ["Seguridad social del personal no deportivo",-0.132114],
+            ["Cargas Sociales",-0.008494]
+          ]
+        },
+        {
+          "label": "Gastos plantilla deportiva (inscribible y no inscribible en la LFP)",
+          "category": "wages_squad",
+          "amount": -34.816465,
+          "disclosure": "detailed",
+          "items": [
+            [
+              "Plantilla deportiva inscribible en la LFP",
+              -32.444508,
+              [["Sueldos y salarios",-30.615356],["Seguridad social",-0.545327],["Primas colectivas",-1.283825]]
+            ],
+            [
+              "Plantilla deportiva no inscribible en la LFP",
+              -2.371957,
+              [["Sueldos y salarios",-1.837668],["Indemnizaciones",-0.004],["Seguridad social",-0.286647],["Primas colectivas",-0.243642]]
+            ]
+          ]
+        },
+        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-6.783907,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general_expense","amount":-0.015975,"disclosure":"detailed"},
+        {"label":"Desplazamientos","category":"match_organisation_expense","amount":-0.51398,"disclosure":"detailed"},
+        {
+          "label": "Gastos de adquisición de jugadores (plantilla inscribible y no inscribible en la LFP)",
+          "category": "other_expenses",
+          "amount": -4.643,
+          "disclosure": "detailed",
+          "items": [["Inscribible en la LFP",-4.625],["No inscribible en la LFP",-0.018]]
+        },
+        {
+          "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+          "category": "other_expenses",
+          "amount": -1.338815,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-1.280966,"disclosure":"detailed"},
+        {
+          "label": "Amortización derechos adquisición de jugadores (inscribible y no inscribible en la LFP)",
+          "category": "player_amortisation",
+          "amount": -7.038446,
+          "disclosure": "detailed"
+        },
+        {"label":"Otras amortizaciones","category":"other_amortisation","amount":-0.00333,"disclosure":"detailed"},
+        {"label":"Otros resultados","category":"other_expenses","amount":-0.230713,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":1.5,"asset_sales":0,"net_interest":-0.04341,"tax":0.053444,"gross_debt":1.202364,"cash":39.714987},
+      "official_totals": {"revenue":58.462916,"expenses":58.459984,"net_result":1.512965}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

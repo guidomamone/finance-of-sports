@@ -1,0 +1,584 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "patroeisden-be",
+    "name": "Patro Eisden Maasmechelen VZW",
+    "display_name": "Patro Eisden",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "patroeisden-be-jaarrekening-2025-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2025-06-30-individual (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2016-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2016-06-30-individual (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2017-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2017-06-30-individual (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2018-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2018-06-30-individual (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2019-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2020-06-30-individual-correction",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2020-06-30-individual-correction (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2024-06-30-individual-correction",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2024-06-30-individual-correction (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2021-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2021-06-30-individual (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2023-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2023-06-30-individual (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2022-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2022-06-30-individual (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2014-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2014-06-30-individual (ejercicio 2014)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2013-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2013-06-30-individual (ejercicio 2013)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "patroeisden-be-jaarrekening-2015-06-30-individual",
+      "club_id": "patroeisden-be",
+      "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2015-06-30-individual (ejercicio 2015)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2013,
+      "period_end": "2013-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2013-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2013-06-30"},
+      "revenue": [{"label":"Omzet","category":"lump_football_operations","amount":0.466399,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.222157,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.283438,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.022505,"disclosure":"aggregated"},
+        {"label":"Werkgeverspremies voor bovenwettelijke verzekeringen","category":"wages_squad","amount":-0.006999,"disclosure":"aggregated"},
+        {"label":"Ouderdoms- en overlevingspensioenen","category":"wages_squad","amount":-0.006957,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.004097,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.00073,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.466399,"expenses":0.546153,"net_result":-0.080484},
+      "adjustments": {"no_breakdown":[{"line":"Omzet","side":"revenue","amount":0.466399,"reason":"el documento no desglosa este renglón"}]}
+    },
+    {
+      "fiscal_year": 2014,
+      "period_end": "2014-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2014-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2014-06-30"},
+      "revenue": [
+        {"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":0.266761,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke opbrengsten","category":"other_income","amount":0.003113,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.354452,"disclosure":"aggregated"},
+        {"label":"Werkgeverspremies voor bovenwettelijke verzekeringen","category":"wages_squad","amount":-0.00457,"disclosure":"aggregated"},
+        {"label":"Ouderdoms- en overlevingspensioenen","category":"wages_squad","amount":-0.003792,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.006252,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.013014,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.269874,"expenses":0.369066,"net_result":-0.086178},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële opbrengsten","amount":0.013635},{"label":"Financiële kosten","amount":-0.000621}],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.266761,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2015,
+      "period_end": "2015-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2015-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2015-06-30"},
+      "revenue": [
+        {"label":"Bedrijfsopbrengsten","category":"lump_football_operations","amount":0.933485,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke opbrengsten","category":"other_income","amount":0.005293,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.397827,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.377459,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.090548,"disclosure":"aggregated"},
+        {"label":"Andere personeelskosten","category":"wages_squad","amount":-0.026934,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.0015,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.004472,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.009121,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.938778,"expenses":0.89874,"net_result":0.049158},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële opbrengsten","amount":0.009327},{"label":"Financiële kosten","amount":-0.000206}],
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.933485,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2016-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2016-06-30"},
+      "revenue": [{"label":"Bedrijfsopbrengsten","category":"lump_football_operations","amount":0.727579,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.462829,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.589012,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.121829,"disclosure":"aggregated"},
+        {"label":"Werkgeverspremies voor bovenwettelijke verzekeringen","category":"wages_squad","amount":-0.009283,"disclosure":"aggregated"},
+        {"label":"Andere personeelskosten","category":"wages_squad","amount":-0.051846,"disclosure":"aggregated"},
+        {"label":"Ouderdoms- en overlevingspensioenen","category":"wages_squad","amount":-0.032308,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.025483,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.000391,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.727579,"expenses":1.29259,"net_result":-0.56462},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële opbrengsten","amount":0.000527},{"label":"Financiële kosten","amount":-0.000136}],
+        "no_breakdown": [
+          {
+            "line": "Bedrijfsopbrengsten",
+            "side": "revenue",
+            "amount": 0.727579,
+            "reason": "Claude 2026-10-18 (subagente Sonnet): Igual que 2017: es la totalidad de los ingresos operativos sin desglose (Omzet 70 y 73 vacios), no 'Otros ingresos'. Cierra: 362.776 - 217.830 (60/61) = 144.946 = Brutomarge; 144.946 - 447.348 - 52.324 = -354.726 = 9901. [Bedrijfsopbrengsten 70/74 362.776 (L231); Omzet vacio (L232); 60/61 217.830 (L234)]"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2017-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2017-06-30"},
+      "revenue": [
+        {"label":"Bedrijfsopbrengsten","category":"lump_football_operations","amount":0.479824,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke opbrengsten","category":"other_income","amount":0.014961,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.354184,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.328469,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.090033,"disclosure":"aggregated"},
+        {"label":"Werkgeverspremies voor bovenwettelijke verzekeringen","category":"wages_squad","amount":-0.011399,"disclosure":"aggregated"},
+        {"label":"Andere personeelskosten","category":"wages_squad","amount":-0.061668,"disclosure":"aggregated"},
+        {"label":"Ouderdoms- en overlevingspensioenen","category":"wages_squad","amount":-0.014379,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.000977,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000373,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.494785,"expenses":0.861109,"net_result":-0.366697},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële opbrengsten","amount":0.00019},{"label":"Financiële kosten","amount":-0.000563}],
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.479824,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2018-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2018-06-30"},
+      "revenue": [{"label":"Bedrijfsopbrengsten","category":"lump_football_operations","amount":0.314774,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.362096,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.303854,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.046338,"disclosure":"aggregated"},
+        {"label":"Werkgeverspremies voor bovenwettelijke verzekeringen","category":"wages_squad","amount":-0.013993,"disclosure":"aggregated"},
+        {"label":"Andere personeelskosten","category":"wages_squad","amount":-0.01397,"disclosure":"aggregated"},
+        {"label":"Ouderdoms- en overlevingspensioenen","category":"wages_squad","amount":-0.000264,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.002611,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke kosten","category":"exceptional_items","amount":-0.1834,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.00355,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.314774,"expenses":0.743126,"net_result":-0.608202},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële opbrengsten","amount":0.007525},{"label":"Financiële kosten","amount":-0.003975}],
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.314774,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2019-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [{"label":"Bedrijfsopbrengsten","category":"lump_football_operations","amount":0.362776,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.21783,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-0.35269,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.072137,"disclosure":"aggregated"},
+        {"label":"Werkgeverspremies voor bovenwettelijke verzekeringen","category":"wages_squad","amount":-0.022521,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.052324,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.001122,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.362776,"expenses":0.717502,"net_result":-0.355848},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële opbrengsten","amount":0.000038},{"label":"Financiële kosten","amount":-0.00116}],
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.362776,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2020-06-30-individual-correction",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":0.277991,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-0.995646,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.00575,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+          "category": "exceptional_items",
+          "amount": 0.055215,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.011157,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.028086,"tax":-0.000131,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.277991,"expenses":1.012553,"net_result":-0.707564},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.00011},
+          {"label":"Recurrente financiële kosten","amount":-0.028196},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.000131}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.277991,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2021-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [],
+      "expenses": [
+        {"label":"Brutomarge (+)/(-)","category":"lump_football_operations_expense","amount":-0.140857,"disclosure":"aggregated"},
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-0.362273,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.015368,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+          "category": "exceptional_items",
+          "amount": -0.001573,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.022966,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.005053,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.031228,"tax":-0.002711,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0,"expenses":0.54809,"net_result":-0.582029},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.000012},
+          {"label":"Recurrente financiële kosten","amount":-0.03124},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.002711}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Brutomarge (+)/(-)",
+            "side": "expense",
+            "amount": 0.140857,
+            "reason": "precedente del país: 1 clubes (Lierse SK), titulo:bedrijfsopbrengsten en bedrijfskosten · Claude 2026-10-19 (subagente Sonnet, revisado)"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2022-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [{"label":"Overige bedrijfsopbrengsten (implícito en la Brutomarge)","category":"other_income","amount":0.768543,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -0.611452,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-2.12712,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+          "category": "other_expenses",
+          "amount": -0.0025,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (+)/(-) (bestedingen en terugnemingen)",
+          "category": "exceptional_items",
+          "amount": 0.045749,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.158584,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.008023,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.000327,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.016454,"tax":-0.002688,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.768543,"expenses":2.908006,"net_result":-2.112856},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.016229},
+          {"label":"Recurrente financiële kosten","amount":-0.032683},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.002688}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2023-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Overige bedrijfsopbrengsten (implícito en la Brutomarge)","category":"other_income","amount":1.427692,"disclosure":"aggregated"},
+        {"label":"Waarvan: niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.023567,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_expenses",
+          "amount": -1.69804,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-3.917783,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+          "category": "other_expenses",
+          "amount": 0.009781,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (+)/(-) (bestedingen en terugnemingen)",
+          "category": "exceptional_items",
+          "amount": 0.012882,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.01953,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.00125,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.025978,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.00423,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.022486,"tax":-0.003251,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.451259,"expenses":5.65578,"net_result":-4.173654},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.023445},
+          {"label":"Recurrente financiële kosten","amount":-0.000959},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.003251}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2024-06-30-individual-correction",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":3.068851,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-5.819894,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": 0.011831,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+          "category": "exceptional_items",
+          "amount": 0.007439,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.020365,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.075431,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.061083,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.068401,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.153673,"tax":-0.00653,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":3.068851,"expenses":5.957912,"net_result":-2.80991},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.175858},
+          {"label":"Recurrente financiële kosten","amount":-0.022185},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.00653}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":3.068851,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "patroeisden-be-jaarrekening-2025-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":1.841008,"disclosure":"aggregated"},
+        {"label":"Waarvan: niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.00181,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-6.166674,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.002006,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+          "category": "exceptional_items",
+          "amount": 0,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.092926,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.0435,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-0.092871,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.159525,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":10.685877,"tax":-0.027259,"gross_debt":null,"cash":0.011997},
+      "official_totals": {"revenue":1.842818,"expenses":6.514002,"net_result":5.946137},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.128946},
+          {"label":"Niet-recurrente financiële opbrengsten","amount":10.85},
+          {"label":"Recurrente financiële kosten","amount":-0.293069},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.027259}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.841008,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

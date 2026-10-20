@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "spartarotterdam-nl",
+    "name": "Sparta Beheer B.V.",
+    "display_name": "Sparta Rotterdam",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "spartarotterdam-nl-wf-2023-2024-7bc9c6f8",
+      "club_id": "spartarotterdam-nl",
+      "title": "Sparta Beheer B.V. — wf-2023-2024-7bc9c6f8 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "spartarotterdam-nl-wf-2023-2024-7bc9c6f8",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Netto-omzet","category":"lump_football_operations","amount":18.058718,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":2.729133,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lonen","category":"wages_squad","amount":-11.420257,"disclosure":"aggregated"},
+        {"label":"Overige lasten uit hoofde van personeelsbeloningen","category":"wages_squad","amount":-1.009513,"disclosure":"aggregated"},
+        {"label":"Horecakosten","category":"other_expenses","amount":-0.285215,"disclosure":"aggregated"},
+        {"label":"Verkoopkosten","category":"admin_general_expense","amount":-1.884033,"disclosure":"aggregated"},
+        {"label":"Huisvestingskosten","category":"admin_general_expense","amount":-2.083432,"disclosure":"aggregated"},
+        {"label":"Wedstrijd- en trainingskosten","category":"match_organisation_expense","amount":-1.233579,"disclosure":"aggregated"},
+        {"label":"Algemene kosten","category":"admin_general_expense","amount":-1.028426,"disclosure":"aggregated"},
+        {"label":"Afschrijving op materiële vaste activa","category":"depreciation","amount":-0.983572,"disclosure":"aggregated"},
+        {"label":"Afschrijving vergoedingssommen","category":"player_amortisation","amount":-1.665423,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.067737,"tax":0.938225,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":20.787851,"expenses":21.59345,"net_result":0.200363},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Rentebaten en -lasten en soortgelijke kosten","amount":-0.138885},
+          {"label":"Aandeel in resultaat van deelnemingen","amount":0.206622},
+          {"label":"Belastingen","amount":0.938225}
+        ],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":18.058718,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "sonderjyske-dk",
+    "name": "Sønderjyske Fodbold A/S",
+    "display_name": "SønderjyskE",
+    "country": "DK",
+    "reporting_currency": "DKK",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "sonderjyske-dk-aarsrapport-2022",
+      "club_id": "sonderjyske-dk",
+      "title": "Sønderjyske Fodbold A/S — Årsrapport 2021/22 (01.07.2021 - 30.06.2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "DKK",
+      "source_id": "sonderjyske-dk-aarsrapport-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2022-06-30"},
+      "revenue": [
+        {
+          "label": "Kompensation for aflyste arrangementer og lønomkostninger, COVID-19 (Note \"Særlige poster\")",
+          "category": "other_income",
+          "amount": 16.311422,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Bruttofortjeneste, resto (nettoomsætning, vareforbrug, andre driftsindtægter og eksterne omkostninger sammendraget, § 32 ÅRL — NO es revenue bruto)",
+          "category": "lump_football_operations",
+          "amount": 5.153565,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Personaleomkostninger",
+          "category": "wages_squad",
+          "amount": -50.298641,
+          "disclosure": "detailed",
+          "items": [["Lønninger",-45.442396],["Pensioner",-1.453435],["Andre omkostninger til social sikring",-0.607087],["Andre personaleomkostninger",-2.795723]]
+        },
+        {
+          "label": "Årets afskrivninger — Kontraktrettigheder (immaterielle anlægsaktiver)",
+          "category": "player_amortisation",
+          "amount": -2.229341,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Årets afskrivninger — materielle anlægsaktiver",
+          "category": "depreciation",
+          "amount": -0.397022,
+          "disclosure": "detailed",
+          "items": [["Andre anlæg, driftsmateriel og inventar",-0.297495],["Indretning af lejede lokaler",-0.099527]]
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.522751,"tax":0,"gross_debt":14.080333,"cash":0.014547},
+      "official_totals": {"revenue":21.464987,"expenses":52.925004,"net_result":-31.982769}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

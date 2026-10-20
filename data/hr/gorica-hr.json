@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "gorica-hr",
+    "name": "Hrvatski Nogometni klub GORICA s.d.d.",
+    "display_name": "Gorica",
+    "country": "HR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "gorica-hr-financijsko-izvjesce-2025",
+      "club_id": "gorica-hr",
+      "title": "Revidirani godišnji financijski izvještaji za 2025. godinu — HNK Gorica s.d.d.",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual (Ilija Karamatić, Predsjednik kluba)","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "EUR",
+      "source_id": "gorica-hr-financijsko-izvjesce-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-12-31"},
+      "revenue": [
+        {"label":"Prihodi od ulaznica - Nacionalna natjecanja","category":"matchday_competition","amount":0.203327,"disclosure":"detailed"},
+        {"label":"Prihodi od ulaznica - Članarine","category":"member_dues","amount":0.116731,"disclosure":"detailed"},
+        {
+          "label": "Prihod od sponzorstva i oglašavanja - Ukupno + Komercijalni prihodi - Ukupno",
+          "category": "sponsorship_commercial",
+          "amount": 0.431833,
+          "disclosure": "detailed",
+          "items": [
+            ["Prihod od sponzorstva i oglašavanja - Ukupno",0.352675],
+            ["Komercijalni prihodi - Ukupno (incl. 10.000 EUR no atribuible con certeza, ver comentario de cabecera)",0.079158]
+          ]
+        },
+        {"label":"Prihodi od prava emitiranja - Ukupno","category":"broadcasting","amount":0.701,"disclosure":"detailed"},
+        {"label":"Uefine nagrade i solidarne uplate - Ukupno","category":"competition_bonus","amount":0.963194,"disclosure":"detailed"},
+        {
+          "label": "Ostali poslovni prihodi - Ukupno (donacije + prihodi od nenogometnih djelatnosti + ostalo)",
+          "category": "other_income",
+          "amount": 1.138074,
+          "disclosure": "detailed",
+          "items": [
+            ["Donacije od države i lokalne samouprave",0.453275],
+            ["Donacije nepovezanih strana",0.664587],
+            ["Prihodi od nenogometnih djelatnosti",0.00455],
+            ["Ostali nerazvrstani poslovni prihodi",0.015662]
+          ]
+        },
+        {
+          "label": "Prihod od raspolaganja registracijama igrača (uključujući prihode od ustupanja, solidarnih doprinosa i naknada za treniranje)",
+          "category": "player_sales",
+          "amount": 0.48946,
+          "disclosure": "detailed"
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Troškovi primanja igrača + Troškovi primanja stručnog stožera",
+          "category": "wages_squad",
+          "amount": -3.315864,
+          "disclosure": "detailed",
+          "items": [
+            ["Plaće igrača",-2.329005],
+            ["Porezi i doprinosi - igrači",-0.217999],
+            ["Ostali nerazvrstani troškovi primanja igrača",-0.05555],
+            ["Plaće stručnog stožera",-0.669121],
+            ["Porezi i doprinosi - stručni stožer",-0.039161],
+            ["Ostali nerazvrstani troškovi primanja stručnog stožera",-0.005028]
+          ]
+        },
+        {
+          "label": "Trošak primanja ostalih zaposlenika + Troškovi primanja zaposlenika (ostali/nerazvrstani) + Troškovi imovine i objekata",
+          "category": "admin_general_expense",
+          "amount": -1.844115,
+          "disclosure": "detailed",
+          "items": [
+            ["Plaće ostalih zaposlenika",-1.179051],
+            ["Porezi i doprinosi - ostali zaposlenici",-0.290452],
+            ["Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",-0.122426],
+            ["Troškovi primanja zaposlenika - ostali/nerazvrstani",-0.114905],
+            ["Troškovi imovine i objekata",-0.137281]
+          ]
+        },
+        {"label":"Amortizacija dugotrajne materijalne imovine","category":"depreciation","amount":-0.055781,"disclosure":"detailed"},
+        {
+          "label": "Umanjenje vrijednosti ostale nematerijalne imovine (bez registracija igrača)",
+          "category": "other_amortisation",
+          "amount": -0.008355,
+          "disclosure": "detailed"
+        },
+        {"label":"Troškovi utakmica","category":"match_organisation_expense","amount":-0.312462,"disclosure":"detailed"},
+        {
+          "label": "Ostali nerazvrstani poslovni rashodi (Bilješka X) + Nekapitalizirani troškovi za naknade agentima/posrednicima",
+          "category": "other_expenses",
+          "amount": -1.346301,
+          "disclosure": "detailed",
+          "items": [["Ostali nerazvrstani poslovni rashodi",-1.198051],["Nekapitalizirani troškovi za naknade agentima/posrednicima",-0.14825]]
+        },
+        {
+          "label": "Troškovi stjecanja registracija igrača (uključujući troškove ustupanja, solidarne doprinose i naknade za treniranje)",
+          "category": "player_amortisation",
+          "amount": -0.089429,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.028251,"tax":0,"gross_debt":0.12651,"cash":0.002263},
+      "official_totals": {"revenue":4.043619,"expenses":6.972307,"net_result":-2.956939}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "fcdordrecht-nl",
+    "name": "FC Dordrecht Holding B.V.",
+    "display_name": "FC Dordrecht",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "fcdordrecht-nl-wf-2024-2025-602d6b96",
+      "club_id": "fcdordrecht-nl",
+      "title": "FC Dordrecht Holding B.V. — wf-2024-2025-602d6b96 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "fcdordrecht-nl-wf-2024-2025-602d6b96",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Netto-omzet","category":"lump_football_operations","amount":4.680373,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":1.156388,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lonen en salarissen","category":"wages_squad","amount":-2.008539,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"wages_squad","amount":-0.415736,"disclosure":"aggregated"},
+        {"label":"Pensioenlasten","category":"wages_squad","amount":-0.003541,"disclosure":"aggregated"},
+        {"label":"Overige personeelskosten","category":"admin_general_expense","amount":-0.855319,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen","category":"depreciation","amount":-0.164875,"disclosure":"aggregated"},
+        {"label":"Huisvestingskosten","category":"admin_general_expense","amount":-0.442573,"disclosure":"aggregated"},
+        {"label":"Kantoorkosten","category":"admin_general_expense","amount":-0.3714,"disclosure":"aggregated"},
+        {"label":"Verkoopkosten","category":"admin_general_expense","amount":-0.861632,"disclosure":"aggregated"},
+        {"label":"Algemene kosten","category":"admin_general_expense","amount":-0.451614,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.044471,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":5.836761,"expenses":5.575229,"net_result":0.217061},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële baten en lasten","amount":-0.044471},{"label":"Belastingen","amount":0}],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":4.680373,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

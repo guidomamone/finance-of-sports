@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "vitoria-br",
+    "name": "Esporte Clube Vitória",
+    "display_name": "Vitória",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "vitoria-br-demonstracoes-2025",
+      "club_id": "vitoria-br",
+      "title": "Demonstrações financeiras individuais e consolidadas acompanhadas do Relatório do Auditor Independente, Esporte Clube Vitória, Em 31 de dezembro de 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://ecvitoria.com.br/transparencia/demonstracao-financeira/"
+    }
+  ],
+  "management": [{"id":"sinconfirmar","name":"Gestión sin confirmar en detalle (firma 2025: Fabio Rios Mota, Presidente)","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "vitoria-br-demonstracoes-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "sinconfirmar",
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Direitos de transmissão de TV","category":"broadcasting","amount":114.552,"disclosure":"detailed"},
+        {"label":"Patrocínios e publicidades","category":"sponsorship_commercial","amount":38.129,"disclosure":"detailed"},
+        {"label":"Arrecadação de jogos","category":"matchday_competition","amount":9.077,"disclosure":"detailed"},
+        {
+          "label": "Premiações e outras (prêmios de copa + sócio torcedor, sem desglose — ver duda)",
+          "category": "competition_bonus",
+          "amount": 32.404,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas diversas (royalties, aluguéis de bares do estádio)","category":"other_income","amount":4.523,"disclosure":"detailed"},
+        {"label":"(-) Impostos e contribuições","category":"other_income","amount":-15.155,"disclosure":"detailed"},
+        {"label":"(-) Descontos concedidos","category":"other_income","amount":-0.64,"disclosure":"detailed"},
+        {"label":"Transações com atletas (Nota 29, venda de atletas)","category":"player_sales","amount":52.98,"disclosure":"detailed"},
+        {"label":"Outras receitas e despesas líquidas (Nota 29, segmento clube social)","category":"other_income","amount":0.742,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Pessoal (segmento futebol)","category":"wages_squad","amount":-86.85,"disclosure":"detailed"},
+        {"label":"Gerais e administrativas (segmento futebol)","category":"admin_general_expense","amount":-28.052,"disclosure":"detailed"},
+        {"label":"Serviços (segmento futebol)","category":"admin_general_expense","amount":-9.959,"disclosure":"detailed"},
+        {"label":"Tributárias (segmento futebol)","category":"admin_general_expense","amount":-13.934,"disclosure":"detailed"},
+        {"label":"Direito de imagem (Diretas)","category":"wages_squad","amount":-45.717,"disclosure":"detailed"},
+        {"label":"Despesas com jogos (Diretas)","category":"match_organisation_expense","amount":-16.755,"disclosure":"detailed"},
+        {"label":"Empréstimos de atletas (Diretas)","category":"other_expenses","amount":-4.498,"disclosure":"detailed"},
+        {"label":"Intermediação (Diretas)","category":"other_expenses","amount":-2.938,"disclosure":"detailed"},
+        {"label":"Multas contratuais (Diretas)","category":"other_expenses","amount":-3.5,"disclosure":"detailed"},
+        {"label":"Luvas (Diretas)","category":"other_expenses","amount":-2.256,"disclosure":"detailed"},
+        {"label":"Rateio de despesas administrativas (Diretas)","category":"admin_general_expense","amount":-1.629,"disclosure":"detailed"},
+        {"label":"Taxas e registros federações (Diretas)","category":"match_organisation_expense","amount":-0.941,"disclosure":"detailed"},
+        {"label":"Aquisições de direitos econômicos (Diretas)","category":"player_amortisation","amount":-1.917,"disclosure":"detailed"},
+        {"label":"Outras despesas diretas (Diretas)","category":"other_expenses","amount":-2.032,"disclosure":"detailed"},
+        {
+          "label": "Custo das transações com atletas (Nota 29a, reclassificado dentro de Diretas — ver gotcha)",
+          "category": "other_expenses",
+          "amount": -10.208,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortização intangível - Atletas profissionais","category":"player_amortisation","amount":-10.902,"disclosure":"detailed"},
+        {"label":"Contingências cíveis e trabalhistas (reversão líquida)","category":"exceptional_items","amount":1.272,"disclosure":"detailed"},
+        {"label":"Resultado de equivalência patrimonial","category":"exceptional_items","amount":4.149,"disclosure":"detailed"},
+        {"label":"Pessoal (segmento clube social e esportes olímpicos)","category":"youth_other_sports_expense","amount":-8.378,"disclosure":"detailed"},
+        {
+          "label": "Gerais e administrativas (segmento clube social e esportes olímpicos)",
+          "category": "youth_other_sports_expense",
+          "amount": -6.698,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortização intangível - Atletas da base (segmento clube social)",
+          "category": "youth_other_sports_expense",
+          "amount": -0.077,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciação e amortização (segmento clube social)","category":"youth_other_sports_expense","amount":-1.123,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-9.089,"tax":0,"gross_debt":10.273,"cash":0.066},
+      "official_totals": {"revenue":236.612,"expenses":258.364,"net_result":-25.418},
+      "adjustments": {"included_in":{"member_dues":"competition_bonus"}}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

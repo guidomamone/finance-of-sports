@@ -256,6 +256,7 @@ import { agregarCaso, casoYRespuesta } from './cola.mjs';
 import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAltas, ESTADOS } from './altas-registro.mjs';
 import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
+import { crearClub } from './club-json.mjs'; // (to-do 245, fase 2) el JSON es la fuente de cada club
 import { GENERADORES, queFalla } from './generadores.mjs';
 import { derivado } from './rutas.mjs';
 export { resumenAltas };
@@ -1457,29 +1458,9 @@ function escribir(r) {
       `FISCAL YEAR META PROPUESTO para ${r.ejercicio.anio} (NO registrado: un ejercicio con meta y`,
       'sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):',
       `  ${r.ejercicio.anio}: ${JSON.stringify(metaProp)}`]);
-    const esqueleto = `const ${v}RevenueLinesByYear = {};
-const ${v}ExpenseLinesByYear = {};
-const ${v}FiscalYearMeta = {};
-const ${v}PresupuestoOverlayByYear = {};
-
-const ${v}PasesData = [];
-const ${v}ResultadosData = {};
-const ${v}TitulosData = [];
-
-window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
-window.CLUB_GENERIC_DATA[${jsStr(id)}] = {
-  revenueLinesByYear: ${v}RevenueLinesByYear, expenseLinesByYear: ${v}ExpenseLinesByYear,
-  fiscalYearMeta: ${v}FiscalYearMeta, pasesData: ${v}PasesData,
-  resultadosData: ${v}ResultadosData, titulosData: ${v}TitulosData,
-  presupuestoOverlayByYear: ${v}PresupuestoOverlayByYear,
-};
-
-Object.assign(sources, {
-});
-
-memberCountByClub[${jsStr(id)}] = null;
-`;
-    mkdirSync(dirname(dataPath), { recursive: true }); writeFileSync(dataPath, esqueleto); escritos.push(rutaData(id, { pais: val('country') }));
+    // (to-do 245, fase 2) el esqueleto es el JSON del club (la fuente) y de ahí sale su data file
+    const ficha = { id, name: val('name'), displayName: val('displayName'), country: val('country'), reportingCurrency: val('reportingCurrency'), fiscalYearStart: val('fiscalYearStart'), sport: val('sport') || 'futbol' };
+    escritos.push(...crearClub(id, ficha, { pais: val('country') }));
 
     // 3. data/club-leagues/<iso2>.js
     const iso = val('country').toLowerCase();

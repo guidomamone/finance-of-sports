@@ -1,0 +1,713 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "talleres-ar",
+    "name": "Club Atlético Talleres Asociación Civil",
+    "display_name": "Talleres",
+    "country": "AR",
+    "reporting_currency": "ARS",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "talleres-ar-estados-contables-2024",
+      "club_id": "talleres-ar",
+      "title": "Estados Contables por el ejercicio finalizado el 31 de diciembre de 2024 (Club Atlético Talleres Asociación Civil)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "talleres-ar-estados-contables-2025",
+      "club_id": "talleres-ar",
+      "title": "Estados Contables por el ejercicio finalizado el 31 de diciembre de 2025 (Club Atlético Talleres Asociación Civil)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"fassi","name":"Andrés Miguel Fassi (Presidente)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "ARS",
+      "source_id": "talleres-ar-estados-contables-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "fassi",
+      "fx": {"ref":"ARS@2024-12-31","source":"market_close"},
+      "revenue": [
+        {
+          "label": "Ingresos por publicidad - Aliados estratégicos",
+          "category": "sponsorship_commercial",
+          "amount": 2741.239693,
+          "disclosure": "detailed",
+          "items": [["Ingresos por publicidad",1888.219993],["Ingresos por sponsoreo",861.99682],["Gastos por colocación de tarjetas",-8.97712]]
+        },
+        {"label":"Cuotas sociales","category":"member_dues","amount":14942.210788,"disclosure":"detailed","items":[["Ingresos socios",14942.210788]]},
+        {
+          "label": "Partidos fútbol profesional",
+          "category": "matchday_competition",
+          "amount": 187.42555,
+          "disclosure": "detailed",
+          "items": [
+            ["Entradas Generales - mayor",185.945176],
+            ["Plateas Generales - menor/jubilado",0],
+            ["Plateas Gasparini - mayor",0.445409],
+            ["Plateas Ardiles - mayor",0.866757],
+            ["Plateas Sur",0.168208]
+          ]
+        },
+        {
+          "label": "Ingresos AFA derechos televisación y otros",
+          "category": "broadcasting",
+          "amount": 4310.14466,
+          "disclosure": "detailed",
+          "items": [["Ingresos AFA - derechos televisación",4310.14466]]
+        },
+        {
+          "label": "Otros ingresos socios",
+          "category": "member_dues",
+          "amount": 453.16572,
+          "disclosure": "detailed",
+          "items": [["Emisión carnet",194.165818],["Ingresos especiales",179.614383],["Otros ingresos",79.385519]]
+        },
+        {"label":"Partidos amistosos","category":"matchday_competition","amount":67.704585,"disclosure":"detailed","items":[["Partidos amistosos",67.704585]]},
+        {
+          "label": "Partidos de copas",
+          "category": "matchday_competition",
+          "amount": 8949.051956,
+          "disclosure": "detailed",
+          "items": [["Copas locales",57.217056],["Copas internacionales",8891.8349]]
+        },
+        {
+          "label": "Ingresos concesiones gastronomía",
+          "category": "stadium_other",
+          "amount": 20.803953,
+          "disclosure": "detailed",
+          "items": [["Ingresos por concesiones merchandising",1.518314],["Ingresos por concesiones de bar",19.285639]]
+        },
+        {
+          "label": "Otros ingresos fútbol profesional",
+          "category": "other_income",
+          "amount": 4055.452434,
+          "disclosure": "detailed",
+          "items": [
+            ["Préstamos de jugadores y derechos de preferencia",2001.419157],
+            ["Mecanismo de solidaridad",287.935076],
+            ["Ingresos por cargas sociales - Decreto 510 (ex-1212)",1382.165462],
+            ["Otros ingresos service charge",383.932739]
+          ]
+        },
+        {
+          "label": "Total por transferencias de Derechos Económicos (neto)",
+          "category": "player_sales",
+          "amount": 26654.277641,
+          "disclosure": "aggregated_residual",
+          "items": [
+            ["Ingreso por transferencias de derechos económicos",41335.343337],
+            ["Costo computable de los activos transferidos",-6177.050546],
+            ["Gastos de transferencia",-8504.01515]
+          ]
+        },
+        {
+          "label": "Ingresos por tienda netos de costo de venta",
+          "category": "sponsorship_commercial",
+          "amount": 1269.25792,
+          "disclosure": "detailed",
+          "items": [
+            ["Indumentaria oficial",5547.365964],
+            ["Indumentaria otros",1166.181523],
+            ["Merchandising",352.670188],
+            ["Ventas anteriores tienda",0],
+            ["Otros ingresos tienda",53.043226],
+            ["Costos de mercadería vendida",-5850.002981]
+          ]
+        },
+        {
+          "label": "Ingresos deportes amateurs",
+          "category": "youth_football",
+          "amount": 149.241302,
+          "disclosure": "detailed",
+          "items": [["Entradas futbol amateur",12.18221],["Cuotas",41.610618],["Otros ingresos deportes amateur",95.448474]]
+        },
+        {
+          "label": "Otros ingresos ordinarios",
+          "category": "other_income",
+          "amount": 3052.095465,
+          "disclosure": "detailed",
+          "items": [["Otros ingresos",443.518387],["Donaciones",2602.995182],["Recupero gastos administrativos",5.581896]]
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Plantel y cuerpo técnico",
+          "category": "wages_squad",
+          "amount": -10162.603075,
+          "disclosure": "detailed",
+          "items": [
+            ["Sueldos y cargas sociales",-2882.34434],
+            ["Reconocimiento trayectoria",-3309.226503],
+            ["Premios",-3852.580394],
+            ["Otros gastos en personal",-118.451838]
+          ]
+        },
+        {
+          "label": "Alojamiento, movilidad y atención médica",
+          "category": "match_organisation_expense",
+          "amount": -3120.886457,
+          "disclosure": "detailed",
+          "items": [
+            ["Alojamiento",-689.663061],
+            ["Pasajes",-1303.099491],
+            ["Viáticos",-520.533268],
+            ["Almuerzos y cenas",-429.7716],
+            ["Seguros",-45.748251],
+            ["Atención médica y gastos de farmacia",-132.070786]
+          ]
+        },
+        {
+          "label": "Gastos operativos de partidos",
+          "category": "match_organisation_expense",
+          "amount": -1675.372637,
+          "disclosure": "detailed",
+          "items": [
+            ["Servicio policial",-561.822044],
+            ["Alquiler de vallas y generadores",-313.427466],
+            ["Servicio de control de acceso",-295.069497],
+            ["Servicio de sonido",-36.639688],
+            ["Boleteros",-1.133333],
+            ["Colocación de vallas y cartelería",-14.759788],
+            ["Entradas seguridad",0],
+            ["Gastos varios",-100.742053],
+            ["Habilitación municipal",-0.073722],
+            ["Imprenta entradas",0],
+            ["Multas",-194.417962],
+            ["Participación club visitante",-17.97043],
+            ["Seguro espectador",-83.836128],
+            ["Entradas de protocolo",-55.480526]
+          ]
+        },
+        {
+          "label": "Honorarios y viáticos",
+          "category": "match_organisation_expense",
+          "amount": -785.074469,
+          "disclosure": "detailed",
+          "items": [["Honorarios y viáticos personal",-737.707285],["Honorarios y traslado árbitros",-47.367184]]
+        },
+        {
+          "label": "Aportes A.F.A. y L.C.F.",
+          "category": "match_organisation_expense",
+          "amount": -310.833151,
+          "disclosure": "detailed",
+          "items": [["Aporte LCF",-231.850486],["Aportes AFA",-70.480861],["Inscripción copas internacionales",-5.717494],["AFA - otros gastos",-2.78431]]
+        },
+        {
+          "label": "Alquileres y expensas",
+          "category": "admin_general_expense",
+          "amount": -521.656983,
+          "disclosure": "detailed",
+          "items": [["Viviendas",-49.442171],["Locales",-117.479428],["Expensas",-61.466187],["Otros alquileres",-293.269197]]
+        },
+        {
+          "label": "Amortización de activos deportivos",
+          "category": "player_amortisation",
+          "amount": -17647.192347,
+          "disclosure": "detailed",
+          "items": [["Amortización jugadores fútbol profesional",-17647.192347]]
+        },
+        {
+          "label": "Prestamos, comisiones, gto. transferencias",
+          "category": "other_expenses",
+          "amount": -4719.255755,
+          "disclosure": "detailed",
+          "items": [
+            ["Préstamo de jugadores y derechos de preferencia",-941.545304],
+            ["Costo por rescisiones de contratos",-894.27781],
+            ["Gastos y comisiones transferencias",-2414.09972],
+            ["Mecanismo solidaridad",-469.332921],
+            ["Bono por uso del jugador",0]
+          ]
+        },
+        {
+          "label": "Inscripciones jugadores y técnicos",
+          "category": "match_organisation_expense",
+          "amount": -8.132518,
+          "disclosure": "detailed",
+          "items": [["Inscripciones jugadores AFA y LCF",-8.080097],["Inscripciones técnicos AFA",-0.052421]]
+        },
+        {
+          "label": "Otros gastos de entrenamientos",
+          "category": "match_organisation_expense",
+          "amount": -94.567079,
+          "disclosure": "detailed",
+          "items": [["Pelotas y elementos para entrenar",-24.045553],["Gastos varios de entrenamiento",-70.521526]]
+        },
+        {
+          "label": "Otros gastos (fútbol profesional)",
+          "category": "other_expenses",
+          "amount": -485.860391,
+          "disclosure": "detailed",
+          "items": [["Gastos de utilería",-5.755827],["Alquiler de canchas",-10.172743],["Gastos varios",-226.044623],["Service charge - socios y partidos",-243.887198]]
+        },
+        {
+          "label": "Gastos por sueldos y cargas sociales ord.",
+          "category": "admin_general_expense",
+          "amount": -5021.677229,
+          "disclosure": "detailed",
+          "items": [["Gastos por sueldos y cargas sociales",-4972.302014],["Mercadería personal interno",-49.375215]]
+        },
+        {
+          "label": "Gastos impositivos",
+          "category": "admin_general_expense",
+          "amount": -1644.386187,
+          "disclosure": "detailed",
+          "items": [
+            ["Iva no computable",-388.091403],
+            ["Impuesto a los débitos bancarios",-349.705955],
+            ["Impuesto a los créditos bancarios",-322.711777],
+            ["Otros impuestos",-505.586785],
+            ["Comercio e Industria",-78.290267]
+          ]
+        },
+        {
+          "label": "Gastos departamentos de servicios",
+          "category": "admin_general_expense",
+          "amount": -2791.599591,
+          "disclosure": "detailed",
+          "items": [
+            ["Comisiones por tarjetas",-513.483982],
+            ["Gastos bancarios",-152.487232],
+            ["Servicio técnico",-584.140609],
+            ["Librería y gastos de oficina",-197.24648],
+            ["Gastos de movilidad personal",-8.29594],
+            ["Gastos de escribanía",-0.393414],
+            ["Artículos de limpieza",-28.127318],
+            ["Insumos para carnet",-27.14332],
+            ["Servicios dispenser de agua",-4.222551],
+            ["Fletes y encomiendas",-20.049979],
+            ["Gastos área social",-18.666072],
+            ["Honorarios y costas judiciales",-207.728191],
+            ["Honorarios médicos",-1.267226],
+            ["Aguas cordobesas",-12.413122],
+            ["Ecogas",-1.035557],
+            ["Epec",-52.114936],
+            ["Telefonía fija",-58.140328],
+            ["Servicio de cable e internet",-66.973386],
+            ["Telefonía celular",-7.8985],
+            ["Honorarios contables",-52.742616],
+            ["Gastos varios de administración",-166.186982],
+            ["Servicio de limpieza",-98.452877],
+            ["Gastos de representación",-119.429109],
+            ["Mercadería de protocolo",-68.428166],
+            ["Gastos y comisiones mercado pago",-324.531698]
+          ]
+        },
+        {
+          "label": "Gastos de mantenimiento",
+          "category": "admin_general_expense",
+          "amount": -1336.866091,
+          "disclosure": "detailed",
+          "items": [
+            ["Artículos de electricidad",-12.438842],
+            ["Canchas sembrado",-35.181281],
+            ["Combustible",-26.628907],
+            ["Ferretería",-20.134865],
+            ["Fletes contenedores",-12.922909],
+            ["Gas a granel",-3.042859],
+            ["Indumentaria personal",-7.844495],
+            ["Mano de obra",-282.403406],
+            ["Matafuegos y otros",-1.057431],
+            ["Materiales construcción",-52.851742],
+            ["Pinturería",-19.754289],
+            ["Reparaciones maquinas",-2.936593],
+            ["Mantenimientos varios",-7.380169],
+            ["Seguridad",-831.348553],
+            ["Sistemas de riego",-3.887235],
+            ["Tratamiento de residuos",-15.738869],
+            ["Gastos por obras",-1.313646]
+          ]
+        },
+        {
+          "label": "Gastos de prensa y eventos",
+          "category": "admin_general_expense",
+          "amount": -231.959211,
+          "disclosure": "detailed",
+          "items": [["Gastos de prensa y eventos",-231.959211]]
+        },
+        {
+          "label": "Quebranto previsión deud. incobrables",
+          "category": "admin_general_expense",
+          "amount": -161.392326,
+          "disclosure": "detailed",
+          "items": [["Quebranto deudores incobrables",-161.392326]]
+        },
+        {
+          "label": "Depreciación de bienes de uso",
+          "category": "depreciation",
+          "amount": -1071.19481,
+          "disclosure": "detailed",
+          "items": [
+            ["Amortización muebles útiles e instalaciones",-273.134207],
+            ["Amortización equipos de computación",-149.1077],
+            ["Amortización máquinas y herramientas",-131.319945],
+            ["Amortización RT 31",-71.291275],
+            ["Amortización inmuebles",-429.29268],
+            ["Amortización rodados",-17.049003]
+          ]
+        },
+        {
+          "label": "Otros gastos ordinarios",
+          "category": "youth_other_sports_expense",
+          "amount": -4.879727,
+          "disclosure": "detailed",
+          "items": [["Básquet",-3.229709],["Vóley",-0.341523],["Patín",-0.143623],["Deportes Amateurs",0],["Donaciones",-1.111772],["Varios",-0.0531]]
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1860.248365,"tax":0,"gross_debt":21486.534385,"cash":220.025129},
+      "official_totals": {"revenue":66852.071667,"expenses":51795.390034,"net_result":13196.433268}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "ARS",
+      "source_id": "talleres-ar-estados-contables-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "fassi",
+      "fx": {"ref":"ARS@2025-12-31","source":"market_close"},
+      "revenue": [
+        {
+          "label": "Ingresos por publicidad - Aliados estratégicos",
+          "category": "sponsorship_commercial",
+          "amount": 5506.892384,
+          "disclosure": "detailed",
+          "items": [["Ingresos por publicidad",2219.582874],["Ingresos por sponsoreo",3304.156365],["Comisión de terceros por intermediación",-16.846855]]
+        },
+        {"label":"Cuotas sociales","category":"member_dues","amount":19330.446335,"disclosure":"detailed","items":[["Ingresos socios",19330.446335]]},
+        {
+          "label": "Partidos fútbol profesional",
+          "category": "matchday_competition",
+          "amount": 24.470236,
+          "disclosure": "detailed",
+          "items": [["Entradas Generales",9.281006],["Plateas Gasparini",5.039578],["Plateas Ardiles",10.149652],["Plateas Sur",0]]
+        },
+        {
+          "label": "Ingresos derechos televisación y otros",
+          "category": "broadcasting",
+          "amount": 7864.87788,
+          "disclosure": "detailed",
+          "items": [["Ingresos derechos televisación",7864.87788]]
+        },
+        {
+          "label": "Otros ingresos socios",
+          "category": "member_dues",
+          "amount": 57.24816,
+          "disclosure": "detailed",
+          "items": [["Emisión carnet",57.24816],["Ingresos especiales",0]]
+        },
+        {
+          "label": "Partidos de copas",
+          "category": "matchday_competition",
+          "amount": 6559.572424,
+          "disclosure": "detailed",
+          "items": [["Copas locales",484.808504],["Copas internacionales",6074.76392]]
+        },
+        {
+          "label": "Ingresos concesiones",
+          "category": "stadium_other",
+          "amount": 15.682623,
+          "disclosure": "detailed",
+          "items": [["Ingresos por concesiones",15.210731],["Ingresos por concesiones de bar",0.471892]]
+        },
+        {
+          "label": "Otros ingresos fútbol profesional",
+          "category": "other_income",
+          "amount": 7132.953713,
+          "disclosure": "detailed",
+          "items": [
+            ["Préstamos de jugadores y derechos de preferencia",1805.025056],
+            ["Otros ingresos futbol profesional",2315.391736],
+            ["Mecanismo de solidaridad",165.260346],
+            ["Ingresos por cargas sociales - Decreto 510 (ex-1212)",2663.788307],
+            ["Otros ingresos service charge",183.488268]
+          ]
+        },
+        {
+          "label": "Total por transferencias de Derechos Económicos (neto)",
+          "category": "player_sales",
+          "amount": 22962.612661,
+          "disclosure": "aggregated_residual",
+          "items": [
+            ["Ingreso por transferencias de derechos económicos",34473.063362],
+            ["Costo computable de los activos transferidos",-8013.599864],
+            ["Gastos de transferencia",-3496.850837]
+          ]
+        },
+        {
+          "label": "Ingresos por tienda netos de costo de venta",
+          "category": "sponsorship_commercial",
+          "amount": 2635.397905,
+          "disclosure": "detailed",
+          "items": [
+            ["Indumentaria oficial",6212.391367],
+            ["Indumentaria otros",599.338594],
+            ["Merchandising",425.850757],
+            ["Otros ingresos tienda",46.629298],
+            ["Costos de mercadería vendida",-4648.812111]
+          ]
+        },
+        {
+          "label": "Ingresos deportes amateurs",
+          "category": "youth_football",
+          "amount": 213.562146,
+          "disclosure": "detailed",
+          "items": [["Entradas futbol amateur",20.871429],["Cuotas",52.43121],["Otros ingresos deportes amateur",140.259507]]
+        },
+        {
+          "label": "Otros ingresos",
+          "category": "other_income",
+          "amount": 860.823681,
+          "disclosure": "detailed",
+          "items": [["Otros ingresos",488.645932],["Donaciones",372.099464],["Recupero gastos administrativos",0.078285]]
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Plantel y cuerpo técnico",
+          "category": "wages_squad",
+          "amount": -14033.133345,
+          "disclosure": "detailed",
+          "items": [
+            ["Sueldos y cargas sociales",-5138.150752],
+            ["Reconocimiento trayectoria",-6152.290803],
+            ["Premios",-2394.255228],
+            ["Otros gastos en personal",-348.436562]
+          ]
+        },
+        {
+          "label": "Alojamiento, movilidad y atención médica",
+          "category": "match_organisation_expense",
+          "amount": -4191.582415,
+          "disclosure": "detailed",
+          "items": [
+            ["Alojamiento",-975.479856],
+            ["Pasajes",-1477.452703],
+            ["Viáticos",-764.942053],
+            ["Almuerzos y cenas",-678.415159],
+            ["Seguros",-55.662427],
+            ["Atención médica y gastos de farmacia",-239.630217]
+          ]
+        },
+        {
+          "label": "Gastos operativos de partidos",
+          "category": "match_organisation_expense",
+          "amount": -2408.573547,
+          "disclosure": "detailed",
+          "items": [
+            ["Servicio policial",-815.827179],
+            ["Alquiler de vallas y generadores",-374.85344],
+            ["Servicio de control de acceso",-300.168276],
+            ["Servicio de sonido",-38.433433],
+            ["Boleteros",-1.615915],
+            ["Colocación de vallas y cartelería",-30.839016],
+            ["Gastos varios",-309.38723],
+            ["Habilitación municipal",-0.04503],
+            ["Multas",-258.85834],
+            ["Participación club visitante",0],
+            ["Seguro espectador",-245.157675],
+            ["Entradas de protocolo",-33.388013]
+          ]
+        },
+        {
+          "label": "Honorarios y viáticos",
+          "category": "match_organisation_expense",
+          "amount": -840.887802,
+          "disclosure": "detailed",
+          "items": [["Honorarios y viáticos personal",-787.117848],["Honorarios y traslado árbitros",-53.769954]]
+        },
+        {
+          "label": "Aportes A.F.A. y L.C.F.",
+          "category": "match_organisation_expense",
+          "amount": -270.335198,
+          "disclosure": "detailed",
+          "items": [["Aporte LCF",-226.557488],["Aportes AFA",-33.700711],["Inscripción copas internacionales",-7.019754],["AFA - otros gastos",-3.057245]]
+        },
+        {
+          "label": "Alquileres y expensas",
+          "category": "admin_general_expense",
+          "amount": -311.590318,
+          "disclosure": "detailed",
+          "items": [["Viviendas",-13.774061],["Locales",-172.036496],["Expensas",-40.077314],["Otros alquileres",-85.702447]]
+        },
+        {
+          "label": "Amortización de activos deportivos",
+          "category": "player_amortisation",
+          "amount": -27289.404336,
+          "disclosure": "detailed",
+          "items": [["Amortización jugadores fútbol profesional (Anexo I)",-27289.404336]]
+        },
+        {
+          "label": "Prestamos, gto. mercado y rescisiones",
+          "category": "other_expenses",
+          "amount": -3369.721904,
+          "disclosure": "detailed",
+          "items": [
+            ["Préstamo de jugadores y derechos de preferencia",-712.229],
+            ["Costo por rescisiones de contratos",-1591.689879],
+            ["Gastos y comisiones transferencias",-955.159843],
+            ["Mecanismo solidaridad",-110.643182]
+          ]
+        },
+        {
+          "label": "Otros gastos",
+          "category": "other_expenses",
+          "amount": -187.401476,
+          "disclosure": "detailed",
+          "items": [["Gastos de utilería",-2.581774],["Alquiler de canchas",-5.71026],["Gastos varios",-0.62251],["Service charge - socios y partidos",-178.486932]]
+        },
+        {
+          "label": "Otros gastos de entrenamientos",
+          "category": "match_organisation_expense",
+          "amount": -87.951523,
+          "disclosure": "detailed",
+          "items": [["Pelotas y elementos para entrenar",-23.820211],["Gastos varios de entrenamiento",-64.131312]]
+        },
+        {
+          "label": "Inscripciones jugadores y técnicos",
+          "category": "match_organisation_expense",
+          "amount": -16.455839,
+          "disclosure": "detailed",
+          "items": [["Inscripciones jugadores AFA y LCF",-4.652471],["Inscripciones técnicos AFA",-11.803368]]
+        },
+        {
+          "label": "Gastos por sueldos y cargas sociales",
+          "category": "admin_general_expense",
+          "amount": -10727.728475,
+          "disclosure": "detailed",
+          "items": [["Gastos por sueldos y cargas sociales",-10646.462531],["Indumentaria personal interno",-81.265944]]
+        },
+        {
+          "label": "Gastos impositivos",
+          "category": "admin_general_expense",
+          "amount": -1527.37542,
+          "disclosure": "detailed",
+          "items": [
+            ["Iva no computable",-677.271586],
+            ["Impuesto a los débitos bancarios",-403.778999],
+            ["Impuesto a los créditos bancarios",-332.518654],
+            ["Otros impuestos",-32.82084],
+            ["Comercio e Industria",-80.985341]
+          ]
+        },
+        {
+          "label": "Gastos departamentos de servicios",
+          "category": "admin_general_expense",
+          "amount": -3961.349371,
+          "disclosure": "detailed",
+          "items": [
+            ["Comisiones por tarjetas",-557.604555],
+            ["Gastos bancarios",-114.423575],
+            ["Servicio técnico",-920.548951],
+            ["Librería y gastos de oficina",-285.955776],
+            ["Gastos de movilidad personal",-5.382119],
+            ["Gastos de escribanía",-3.514327],
+            ["Artículos de limpieza",-17.903716],
+            ["Insumos para carnet",-12.568754],
+            ["Servicios dispenser de agua",-11.43904],
+            ["Fletes y encomiendas",-22.500753],
+            ["Gastos área social",-16.037002],
+            ["Honorarios y costas judiciales",-871.731019],
+            ["Honorarios médicos",-43.908569],
+            ["Aguas cordobesas",-23.017912],
+            ["Ecogas",-1.780482],
+            ["Epec",-95.426332],
+            ["Telefonía fija",0],
+            ["Servicio de cable e internet",-85.251191],
+            ["Telefonía celular",-59.576611],
+            ["Honorarios contables",-69.97972],
+            ["Gastos varios de administración",-172.68864],
+            ["Servicio de limpieza",-85.613535],
+            ["Gastos de representación",-193.157744],
+            ["Mercadería de protocolo",-134.775907],
+            ["Gastos y comisiones mercado pago",-156.563141]
+          ]
+        },
+        {
+          "label": "Gastos de preparación de jugadores de inferiores",
+          "category": "youth_other_sports_expense",
+          "amount": -386.869215,
+          "disclosure": "detailed",
+          "items": [["Gastos de preparación de jugadores inferiores",-386.869215]]
+        },
+        {
+          "label": "Gastos de mantenimiento",
+          "category": "admin_general_expense",
+          "amount": -1433.299331,
+          "disclosure": "detailed",
+          "items": [
+            ["Artículos de electricidad",-6.192469],
+            ["Canchas sembrado",-21.947767],
+            ["Combustible",-33.349903],
+            ["Ferretería",-8.857282],
+            ["Fletes contenedores",-15.856894],
+            ["Gas a granel",-2.937357],
+            ["Indumentaria personal",-14.53666],
+            ["Mano de obra",-49.392592],
+            ["Matafuegos y otros",-3.286808],
+            ["Materiales construcción",-131.242976],
+            ["Pinturería",-2.082187],
+            ["Reparaciones maquinas",-7.36282],
+            ["Mantenimientos varios",-27.658225],
+            ["Seguridad",-1079.495402],
+            ["Sistemas de riego",-0.856238],
+            ["Tratamiento de residuos",-28.243751],
+            ["Gastos por obras",0]
+          ]
+        },
+        {
+          "label": "Gastos de prensa y eventos",
+          "category": "admin_general_expense",
+          "amount": -393.266683,
+          "disclosure": "detailed",
+          "items": [["Gastos de prensa y eventos",-393.266683]]
+        },
+        {
+          "label": "Quebranto previsión deudores incobrables",
+          "category": "admin_general_expense",
+          "amount": -1.349431,
+          "disclosure": "detailed",
+          "items": [["Quebranto deudores incobrables",-1.349431]]
+        },
+        {
+          "label": "Depreciación de bienes de uso",
+          "category": "depreciation",
+          "amount": -1100.167905,
+          "disclosure": "detailed",
+          "items": [
+            ["Amortización muebles útiles e instalaciones",-347.225791],
+            ["Amortización equipos de computación",-154.107748],
+            ["Amortización máquinas y herramientas",-166.892798],
+            ["Amortización modelo de revaluación",-47.0387],
+            ["Amortización inmuebles",-348.223383],
+            ["Amortización rodados",-36.679485]
+          ]
+        },
+        {
+          "label": "Otros gastos (estructura)",
+          "category": "youth_other_sports_expense",
+          "amount": -21.749009,
+          "disclosure": "detailed",
+          "items": [["Básquet",-7.798532],["Vóley",-1.913189],["Patín",-1.186617],["Donaciones",-4.947088],["Varios",-5.903583]]
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-41.692293,"tax":0,"gross_debt":30269.641516,"cash":519.884887},
+      "official_totals": {"revenue":73164.540148,"expenses":72560.192543,"net_result":562.655312}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

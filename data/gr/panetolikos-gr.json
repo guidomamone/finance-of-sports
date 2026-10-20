@@ -1,0 +1,404 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "panetolikos-gr",
+    "name": "Panaitolikos G.F.S. P.A.E.",
+    "display_name": "Panetolikos",
+    "country": "GR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "panetolikos-gr-fs-2016-17",
+      "club_id": "panetolikos-gr",
+      "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2016-17 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "panetolikos-gr-fs-2017-18",
+      "club_id": "panetolikos-gr",
+      "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2017-18 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "panetolikos-gr-fs-2019-20",
+      "club_id": "panetolikos-gr",
+      "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2019-20 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "panetolikos-gr-fs-2021-06-30",
+      "club_id": "panetolikos-gr",
+      "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2021-06-30 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "panetolikos-gr-fs-2022-06-30",
+      "club_id": "panetolikos-gr",
+      "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2022-06-30 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "panetolikos-gr-fs-2023-06-30",
+      "club_id": "panetolikos-gr",
+      "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2023-06-30 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "panetolikos-gr-fs-2024-06-30",
+      "club_id": "panetolikos-gr",
+      "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2024-06-30 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "panetolikos-gr-fs-2025-06-30",
+      "club_id": "panetolikos-gr",
+      "title": "Panaitolikos G.F.S. P.A.E. — Panetolikos_FS_2025-06-30 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-06-30",
+      "currency": "EUR",
+      "source_id": "panetolikos-gr-fs-2016-17",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2017-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":0.712062,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.575265,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.030629,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-3.807846,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.385561,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.035004,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.058673,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.004497,"tax":0,"gross_debt":0,"cash":0.157712},
+      "official_totals": {"revenue":3.317956,"expenses":4.287083,"net_result":-0.973625},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.001262},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.005759},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.712062,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 3.807846,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]"
+          }
+        ],
+        "included_in": {
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-06-30",
+      "currency": "EUR",
+      "source_id": "panetolikos-gr-fs-2017-18",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2018-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":0.377138,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.122479,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.009284,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-3.850553,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.331746,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.045497,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.040496,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.008301,"tax":0,"gross_debt":0,"cash":0.227821},
+      "official_totals": {"revenue":2.508901,"expenses":4.268291,"net_result":-1.767691},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000858},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.009159},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.377138,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 3.850553,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]"
+          }
+        ],
+        "included_in": {
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "panetolikos-gr-fs-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":1.111543,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.521303,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.013314,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-4.428104,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.555211,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.029052,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.029196,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.005408,"tax":0,"gross_debt":0,"cash":0.375066},
+      "official_totals": {"revenue":3.64616,"expenses":5.041563,"net_result":-1.400811},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000761},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.006169},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.111543,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 4.428104,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]"
+          }
+        ],
+        "included_in": {
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "panetolikos-gr-fs-2021-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"Ευρωπαϊκή αγορά","category":"player_sales","amount":0.6,"disclosure":"aggregated"},
+        {"label":"Αγορές τρίτων χωρών","category":"lump_football_operations","amount":0.004192,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":3.839185,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.036941,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.274993,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.021783,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.02477,"disclosure":"aggregated"},
+        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-3.210043,"disclosure":"aggregated"},
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.288535,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.004455,"tax":0,"gross_debt":0,"cash":0.339471,"staff_cost":1.288535},
+      "official_totals": {"revenue":4.480318,"expenses":4.820124,"net_result":-0.344261},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000457},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.004912},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Αγορές τρίτων χωρών",
+            "side": "revenue",
+            "amount": 0.004192,
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Es el resto del Κύκλος εργασιών (604.192 = 600.000 + 4.192), clasificado por el documento como prestación de servicios sin más detalle y sin entradas (covid); no hay forma de saber qué servicio es. Queda como fútbol sin desglosar, igual que el Κύκλος εργασιών de 2020 y 2022 (lump_football_operations). Importe chico (4 mil euros). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md L1471 (pág. 35) \"Αγορές τρίτων χωρών | 4.192,00 | 6.880,00\"; L1465 \"Παροχή υπηρεσιών Σύνολο | 604.192,00\"; L1475 \"στην τρέχουσα χρήση δεν εκδόθηκαν εισιτήρια λόγω covid\"]"
+          },
+          {"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":3.210043,"reason":"el documento no desglosa este renglón"}
+        ],
+        "included_in": {
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "panetolikos-gr-fs-2022-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":0.224781,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":2.674408,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.083695,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.451573,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.092175,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.314804,"disclosure":"aggregated"},
+        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-3.614795,"disclosure":"aggregated"},
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.566222,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.020549,"tax":0,"gross_debt":0.675224,"cash":0.222422,"staff_cost":1.566222},
+      "official_totals": {"revenue":2.982884,"expenses":6.039569,"net_result":-3.077233},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.00023},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.020779},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.224781,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":3.614795,"reason":"el documento no desglosa este renglón"}
+        ],
+        "included_in": {
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "panetolikos-gr-fs-2023-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":0.300214,"disclosure":"aggregated"},
+        {"label":"Έσοδα από μεταγραφές","category":"player_sales","amount":0.1425,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα","category":"other_income","amount":0.001698,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":4.254506,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.052396,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.570216,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.088709,"disclosure":"aggregated"},
+        {"label":"Παροχές τρίτων","category":"admin_general_expense","amount":-0.018375,"disclosure":"aggregated"},
+        {"label":"Φόροι και τέλη","category":"admin_general_expense","amount":-0.0008,"disclosure":"aggregated"},
+        {"label":"Διάφορα έξοδα","category":"other_expenses","amount":-0.046825,"disclosure":"aggregated"},
+        {"label":"Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις","category":"other_expenses","amount":-0.089651,"disclosure":"aggregated"},
+        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-5.090619,"disclosure":"aggregated"},
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.716652,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.005245,"tax":0,"gross_debt":0,"cash":0.254909,"staff_cost":1.716652},
+      "official_totals": {"revenue":4.751314,"expenses":7.621847,"net_result":-2.875778},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.006931},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.012176},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [{"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":5.090619,"reason":"el documento no desglosa este renglón"}],
+        "included_in": {"broadcasting":{"in":"other_income","possible":true}}
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "panetolikos-gr-fs-2024-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":0.258358,"disclosure":"aggregated"},
+        {"label":"Έσοδα από μεταγραφές","category":"player_sales","amount":0.031448,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":4.412163,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.152163,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.58242,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.054834,"disclosure":"aggregated"},
+        {"label":"Παροχές τρίτων","category":"admin_general_expense","amount":-0.017595,"disclosure":"aggregated"},
+        {"label":"Φόροι και τέλη","category":"admin_general_expense","amount":-0.000944,"disclosure":"aggregated"},
+        {"label":"Διάφορα έξοδα","category":"other_expenses","amount":-0.110904,"disclosure":"aggregated"},
+        {"label":"Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις","category":"other_expenses","amount":-0.051238,"disclosure":"aggregated"},
+        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-4.869717,"disclosure":"aggregated"},
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.850317,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01714,"tax":0,"gross_debt":0,"cash":0.298815,"staff_cost":1.850317},
+      "official_totals": {"revenue":4.854132,"expenses":7.537969,"net_result":-2.700977},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":-0.000031},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.017109},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [{"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":4.869717,"reason":"el documento no desglosa este renglón"}],
+        "included_in": {"broadcasting":{"in":"other_income","possible":true}}
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "panetolikos-gr-fs-2025-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":0.371845,"disclosure":"aggregated"},
+        {"label":"Έσοδα από μεταγραφές","category":"player_sales","amount":0.028379,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":5.266495,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.126265,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-0.587996,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-0.075774,"disclosure":"aggregated"},
+        {"label":"Διάφορα έξοδα","category":"other_expenses","amount":-0.042041,"disclosure":"aggregated"},
+        {"label":"Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις","category":"other_expenses","amount":-0.073712,"disclosure":"aggregated"},
+        {"label":"Έξοδα προηγούμενων χρήσεων","category":"exceptional_items","amount":-0.153205,"disclosure":"aggregated"},
+        {"label":"Κόστος πωλήσεων (sin el costo de personal)","category":"lump_football_operations_expense","amount":-4.314462,"disclosure":"aggregated"},
+        {"label":"Σύνολο — Παροχές σε εργαζόμενους","category":"wages_squad","amount":-1.959575,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.012857,"tax":0,"gross_debt":0,"cash":0.222825,"staff_cost":1.959575},
+      "official_totals": {"revenue":5.792984,"expenses":7.05356,"net_result":-1.426639},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.001772},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.014629},
+          {"label":"Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [{"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":4.314462,"reason":"el documento no desglosa este renglón"}],
+        "included_in": {"broadcasting":{"in":"other_income","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

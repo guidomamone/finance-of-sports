@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "gremio-br",
+    "name": "Grêmio Foot-Ball Porto Alegrense",
+    "display_name": "Grêmio",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "gremio-br-demonstracoes-2023-2024",
+      "club_id": "gremio-br",
+      "title": "Demonstrações Contábeis dos Exercícios Findos em 31 de Dezembro de 2024 e de 2023 (Reapresentado)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://gremio.net/documentos/"
+    },
+    {
+      "id": "gremio-br-wf-2024-2025-1774995c",
+      "club_id": "gremio-br",
+      "title": "Grêmio Foot-Ball Porto Alegrense — wf-2024-2025-1774995c (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"guerraneto","name":"Guerra Neto (presidente al momento del balance 2024)","first_year":2024,"last_year":2024}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "BRL",
+      "source_id": "gremio-br-demonstracoes-2023-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "guerraneto",
+      "fx": {"ref":"BRL@2024-12-31"},
+      "revenue": [
+        {"label":"Receita de Transmissão","category":"broadcasting","amount":178.616,"disclosure":"detailed"},
+        {"label":"Receitas Patrimoniais","category":"member_dues","amount":99.046,"disclosure":"detailed"},
+        {"label":"Receitas Publicitárias","category":"sponsorship_commercial","amount":65.375,"disclosure":"detailed"},
+        {"label":"Receitas de Luvas Contratuais","category":"other_income","amount":17.706,"disclosure":"detailed"},
+        {"label":"Receitas de Jogos","category":"matchday_competition","amount":11.997,"disclosure":"detailed"},
+        {"label":"Receitas de Royalties","category":"other_income","amount":11.775,"disclosure":"detailed"},
+        {
+          "label": "Vendas Grêmio Mania (líquido de devoluções e impostos)",
+          "category": "sponsorship_commercial",
+          "amount": 18.566,
+          "disclosure": "detailed",
+          "items": [["Vendas Grêmio Mania",22.15],["Devoluções de vendas",-0.417],["Impostos sobre vendas",-3.167]]
+        },
+        {"label":"Venda de Atletas","category":"player_sales","amount":105.303,"disclosure":"detailed"},
+        {"label":"Mecanismo de Solidariedade","category":"player_sales","amount":1.017,"disclosure":"detailed"},
+        {"label":"Doações","category":"other_income","amount":0.011,"disclosure":"detailed"},
+        {"label":"Recuperação de Despesas","category":"other_income","amount":15.523,"disclosure":"detailed"},
+        {"label":"Valor justo (cessão de crédito Arena Porto-Alegrense, Nota 6-e)","category":"other_income","amount":88.995,"disclosure":"detailed"},
+        {"label":"Festejos e Aniversários","category":"other_income","amount":0.157,"disclosure":"detailed"},
+        {"label":"Multas e indenizações","category":"other_income","amount":0.934,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Salários, benefícios e encargos sociais (plantel)","category":"wages_squad","amount":-164.647,"disclosure":"detailed"},
+        {"label":"Amortização de Direitos sobre Atletas Profissionais","category":"player_amortisation","amount":-47.404,"disclosure":"detailed"},
+        {"label":"Despesas de Viagens","category":"match_organisation_expense","amount":-18.701,"disclosure":"detailed"},
+        {
+          "label": "Despesas Federações, Imagens, Prêmios, Material Esportivo e outras",
+          "category": "match_organisation_expense",
+          "amount": -134.467,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingressos a Sócios","category":"admin_general_expense","amount":-22.068,"disclosure":"detailed"},
+        {"label":"CMV – Grêmio Mania","category":"admin_general_expense","amount":-10.977,"disclosure":"detailed"},
+        {
+          "label": "Salários, benefícios e encargos sociais (demais administrativas)",
+          "category": "admin_general_expense",
+          "amount": -37.69,
+          "disclosure": "detailed"
+        },
+        {"label":"Tributos e Contribuições Federais","category":"admin_general_expense","amount":-7.263,"disclosure":"detailed"},
+        {"label":"Serviços de Terceiros","category":"admin_general_expense","amount":-15.776,"disclosure":"detailed"},
+        {"label":"Contingências Judiciais","category":"admin_general_expense","amount":-8.786,"disclosure":"detailed"},
+        {"label":"Aluguéis, Seguros, Materiais de Consumo e de Expediente","category":"admin_general_expense","amount":-7.919,"disclosure":"detailed"},
+        {"label":"Depreciação de Ativos Imobilizados","category":"depreciation","amount":-6.327,"disclosure":"detailed"},
+        {"label":"Água, Luz, Telefonia, Manutenção, Transportes e outras","category":"admin_general_expense","amount":-5.662,"disclosure":"detailed"},
+        {"label":"Outras despesas (administrativas)","category":"other_expenses","amount":-0.579,"disclosure":"detailed"},
+        {"label":"Negociação de Atletas (comissões e custos)","category":"other_expenses","amount":-22.15,"disclosure":"detailed"},
+        {"label":"Outras despesas (operacionais)","category":"other_expenses","amount":-0.12,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-60.893,"tax":0,"gross_debt":99.636,"cash":11.145},
+      "official_totals": {"revenue":615.021,"expenses":510.536,"net_result":43.592}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "BRL",
+      "source_id": "gremio-br-wf-2024-2025-1774995c",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2025-12-31"},
+      "revenue": [
+        {"label":"Campeonato Brasileiro","category":"broadcasting","amount":131.407,"disclosure":"aggregated"},
+        {"label":"Campeonato Gaúcho","category":"broadcasting","amount":8.92,"disclosure":"aggregated"},
+        {"label":"Copa do Brasil","category":"broadcasting","amount":5.853,"disclosure":"aggregated"},
+        {"label":"Copa Libertadores/Sul Americana","category":"broadcasting","amount":9.008,"disclosure":"aggregated"},
+        {"label":"Campeonato Brasileiro Feminino","category":"broadcasting","amount":0.36,"disclosure":"aggregated"},
+        {"label":"Receitas Patrimoniais","category":"member_dues","amount":2.287,"disclosure":"aggregated"},
+        {"label":"Receitas Publicitárias","category":"sponsorship_commercial","amount":107.592,"disclosure":"aggregated"},
+        {"label":"Receitas de Luvas Contratuais","category":"other_income","amount":0.833,"disclosure":"aggregated"},
+        {"label":"Receitas de Jogos (c)","category":"matchday_competition","amount":3.91,"disclosure":"aggregated"},
+        {"label":"Receitas de Royalties","category":"other_income","amount":7.656,"disclosure":"aggregated"},
+        {"label":"Premiações de Competições","category":"competition_bonus","amount":0.032,"disclosure":"aggregated"},
+        {"label":"Locações (c)","category":"other_income","amount":2.54,"disclosure":"aggregated"},
+        {"label":"Arrecadação Quadro Social","category":"member_dues","amount":67.551,"disclosure":"aggregated"},
+        {"label":"Vendas Grêmio Mania (b)","category":"sponsorship_commercial","amount":31.815,"disclosure":"aggregated"},
+        {"label":"(-) Devoluções de vendas (b)","category":"other_income","amount":-0.809,"disclosure":"aggregated"},
+        {"label":"(-) Impostos sobre vendas (b)","category":"other_income","amount":-5.358,"disclosure":"aggregated"},
+        {"label":"Outras Receitas do Desporto","category":"other_income","amount":1.942,"disclosure":"aggregated"},
+        {"label":"Doações operação Arena","category":"other_income","amount":135,"disclosure":"aggregated"},
+        {"label":"Valor justo","category":"other_income","amount":248.161,"disclosure":"aggregated"},
+        {"label":"Doações","category":"other_income","amount":12.507,"disclosure":"aggregated"},
+        {"label":"Venda de Atletas (b)","category":"player_sales","amount":123.804,"disclosure":"aggregated"},
+        {"label":"Reversão despesas renegociação comissões e outras","category":"other_income","amount":1.679,"disclosure":"aggregated"},
+        {"label":"Recuperação despesas Bancárias","category":"other_income","amount":0.02,"disclosure":"aggregated"},
+        {"label":"Recuperação despesas correio – Loja","category":"other_income","amount":1.969,"disclosure":"aggregated"},
+        {"label":"Ressarcimento despesas categoria de Base e Feminino","category":"other_income","amount":0.231,"disclosure":"aggregated"},
+        {"label":"Reembolso de despesas diversas","category":"other_income","amount":1.178,"disclosure":"aggregated"},
+        {"label":"Mecanismo de Solidariedade (c)","category":"player_sales","amount":3.301,"disclosure":"aggregated"},
+        {"label":"Festejos e Aniversários","category":"other_income","amount":0.156,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Custo Baixa Direitos Econômicos","category":"player_amortisation","amount":-9.221,"disclosure":"aggregated"},
+        {"label":"Salários, benefícios encargos sociais","category":"wages_squad","amount":-211.779,"disclosure":"aggregated"},
+        {
+          "label": "Despesas Federações, Imagens, Prémios, Mat. Esportivo e outras",
+          "category": "match_organisation_expense",
+          "amount": -111.434,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortização de Direitos sobre Atletas Profissionais","category":"player_amortisation","amount":-101.9,"disclosure":"aggregated"},
+        {"label":"Serviços de terceiro","category":"admin_general_expense","amount":-6.507,"disclosure":"aggregated"},
+        {"label":"Despesas de Viagens","category":"match_organisation_expense","amount":-21.889,"disclosure":"aggregated"},
+        {"label":"Negociação de atletas","category":"other_expenses","amount":-18.944,"disclosure":"aggregated"},
+        {"label":"CMV – Grêmio Mania","category":"admin_general_expense","amount":-15.726,"disclosure":"aggregated"},
+        {"label":"Ingressos a Sócios","category":"admin_general_expense","amount":-0.857,"disclosure":"aggregated"},
+        {
+          "label": "Salários, benefícios e Encargos Sociais - Demais Administrativas",
+          "category": "admin_general_expense",
+          "amount": -36.36,
+          "disclosure": "aggregated"
+        },
+        {"label":"Serviços de Terceiros","category":"admin_general_expense","amount":-29.626,"disclosure":"aggregated"},
+        {"label":"Contingências Judiciais","category":"admin_general_expense","amount":-14.717,"disclosure":"aggregated"},
+        {"label":"Aluguéis, Seguros, Materiais de Consumo e de Expediente","category":"admin_general_expense","amount":-11.776,"disclosure":"aggregated"},
+        {"label":"Depreciação/Amortização Ativos Imobilizados e intangíveis","category":"depreciation","amount":-10.359,"disclosure":"aggregated"},
+        {"label":"Água, Luz, Telefonia, Manutenção, Transportes e outras","category":"admin_general_expense","amount":-7.663,"disclosure":"aggregated"},
+        {"label":"Publicitárias","category":"admin_general_expense","amount":-2.383,"disclosure":"aggregated"},
+        {"label":"Provisão Créditos Liquidação Duvidosa","category":"other_expenses","amount":-2.134,"disclosure":"aggregated"},
+        {"label":"Outras despesas","category":"other_expenses","amount":-1.276,"disclosure":"aggregated"},
+        {"label":"Tributos e Contribuições Federais","category":"admin_general_expense","amount":-1.377,"disclosure":"aggregated"},
+        {"label":"Impairment direito de superfície","category":"exceptional_items","amount":-157.495,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-94.638,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":903.545,"expenses":615.928,"net_result":35.484},
+      "adjustments": {"extra_rows":[{"label":"Receitas financeiras","amount":34.122},{"label":"Despesas financeiras","amount":-128.76}]}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

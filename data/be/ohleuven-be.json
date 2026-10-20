@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "ohleuven-be",
+    "name": "OH Leuven CV",
+    "display_name": "OH Leuven",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "ohleuven-be-jaarrekening-2025-06-30-individual",
+      "club_id": "ohleuven-be",
+      "title": "OH Leuven CV — jaarrekening-2025-06-30-individual (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "ohleuven-be-jaarrekening-2019-06-30-individual",
+      "club_id": "ohleuven-be",
+      "title": "OH Leuven CV — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Ejercicio de transición por cambio de fecha de cierre: del 01/01/2019 al 30/06/2019 (6 meses)."
+    },
+    {
+      "id": "ohleuven-be-jaarrekening-2021-06-30-individual",
+      "club_id": "ohleuven-be",
+      "title": "OH Leuven CV — jaarrekening-2021-06-30-individual (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "ohleuven-be-jaarrekening-2024-06-30-individual",
+      "club_id": "ohleuven-be",
+      "title": "OH Leuven CV — jaarrekening-2024-06-30-individual (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "ohleuven-be-jaarrekening-2023-06-30-individual",
+      "club_id": "ohleuven-be",
+      "title": "OH Leuven CV — jaarrekening-2023-06-30-individual (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "ohleuven-be-jaarrekening-2020-06-30-individual",
+      "club_id": "ohleuven-be",
+      "title": "OH Leuven CV — jaarrekening-2020-06-30-individual (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "ohleuven-be-jaarrekening-2019-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":1.536938,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"other_income","amount":1.263823,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.001179,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aankopen","category":"other_expenses","amount":-0.144926,"disclosure":"aggregated"},
+        {"label":"Voorraad: afname (toename) (+)/(-)","category":"other_expenses","amount":-0.013825,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-3.422019,"disclosure":"aggregated"},
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-5.341597,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "player_amortisation",
+          "amount": -1.375507,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.027639,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.115146,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.038126,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.182588,"tax":-0.000638,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":2.80194,"expenses":10.440659,"net_result":-7.86007},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andere financiële opbrengsten","amount":0.000755},
+          {"label":"Kosten van schulden","amount":-0.14675},
+          {"label":"Andere financiële kosten","amount":-0.036593},
+          {"label":"Belastingen","amount":-0.000638}
+        ],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":1.536938,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "ohleuven-be-jaarrekening-2020-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [
+        {"label":"Ticketing & lidgelden","category":"matchday_competition","amount":0.651304,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"sponsorship_commercial","amount":1.694148,"disclosure":"aggregated"},
+        {"label":"TV rechten","category":"broadcasting","amount":1.016292,"disclosure":"aggregated"},
+        {"label":"Commercieel","category":"sponsorship_commercial","amount":0.833343,"disclosure":"aggregated"},
+        {"label":"Andere","category":"other_income","amount":1.146521,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"other_income","amount":2.057654,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.2288,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aankopen","category":"other_expenses","amount":-0.621447,"disclosure":"aggregated"},
+        {"label":"Voorraad: afname (toename) (+)/(-)","category":"other_expenses","amount":0.05327,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-7.550802,"disclosure":"aggregated"},
+        {"label":"Bezoldigingen en rechtstreekse sociale voordelen","category":"wages_squad","amount":-8.664017,"disclosure":"aggregated"},
+        {"label":"Werkgeversbijdragen voor sociale verzekeringen","category":"wages_squad","amount":-0.778962,"disclosure":"aggregated"},
+        {"label":"Werkgeverspremies voor bovenwettelijke verzekeringen","category":"wages_squad","amount":-0.021302,"disclosure":"aggregated"},
+        {"label":"Andere personeelskosten","category":"wages_squad","amount":-0.424093,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "player_amortisation",
+          "amount": -3.016365,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.02665,
+          "disclosure": "aggregated"
+        },
+        {"label":"Bedrijfsbelastingen en -taksen","category":"admin_general_expense","amount":-0.093198,"disclosure":"aggregated"},
+        {"label":"Andere","category":"other_expenses","amount":-0.048571,"disclosure":"aggregated"},
+        {
+          "label": "Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "exceptional_items",
+          "amount": -0.567917,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.106642,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.198914,"tax":-0.00061,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":7.628062,"expenses":21.192137,"net_result":-14.438158},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andere financiële opbrengsten","amount":0.00258},
+          {"label":"Kosten van schulden","amount":-0.187652},
+          {"label":"Andere financiële kosten","amount":-0.013842},
+          {"label":"Belastingen","amount":-0.00061}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "EUR",
+      "source_id": "ohleuven-be-jaarrekening-2021-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2021-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":6.418595,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"other_income","amount":4.163893,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.816864,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aankopen","category":"other_expenses","amount":-0.141318,"disclosure":"aggregated"},
+        {"label":"Voorraad: afname (toename) (+)/(-)","category":"other_expenses","amount":-0.014214,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-8.407269,"disclosure":"aggregated"},
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-15.530659,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "player_amortisation",
+          "amount": -3.872247,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": -0.000224,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.239968,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.073868,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.181103,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":11.399352,"expenses":28.205899,"net_result":-17.061519},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andere financiële opbrengsten","amount":0.001861},
+          {"label":"Kosten van schulden","amount":-0.177635},
+          {"label":"Andere financiële kosten","amount":-0.005329}
+        ],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":6.418595,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "ohleuven-be-jaarrekening-2023-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":15.165926,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"other_income","amount":6.144719,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.035056,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aankopen","category":"other_expenses","amount":-1.325454,"disclosure":"aggregated"},
+        {"label":"Voorraad: afname (toename)","category":"other_expenses","amount":0.013817,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-9.868559,"disclosure":"aggregated"},
+        {"label":"620","category":"wages_squad","amount":-19.53842,"disclosure":"aggregated"},
+        {"label":"621","category":"wages_squad","amount":-2.423178,"disclosure":"aggregated"},
+        {"label":"623","category":"wages_squad","amount":-0.683844,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "player_amortisation",
+          "amount": -4.128815,
+          "disclosure": "aggregated"
+        },
+        {"label":"640","category":"admin_general_expense","amount":-0.806932,"disclosure":"aggregated"},
+        {"label":"641/8","category":"other_expenses","amount":-0.062211,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.315017,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.775471,"tax":-0.265369,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":21.345701,"expenses":38.823596,"net_result":-18.833752},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andere financiële opbrengsten","amount":0.017192},
+          {"label":"Kosten van schulden","amount":-0.792462},
+          {"label":"Andere financiële kosten","amount":-0.000201},
+          {"label":"Belastingen","amount":-0.265369}
+        ],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":15.165926,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "ohleuven-be-jaarrekening-2024-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":24.749706,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"other_income","amount":6.699096,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.009901,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aankopen","category":"other_expenses","amount":-1.557743,"disclosure":"aggregated"},
+        {"label":"Voorraad: afname (toename)","category":"other_expenses","amount":0.001357,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-11.9256,"disclosure":"aggregated"},
+        {"label":"620","category":"wages_squad","amount":-22.237416,"disclosure":"aggregated"},
+        {"label":"621","category":"wages_squad","amount":-2.934009,"disclosure":"aggregated"},
+        {"label":"623","category":"wages_squad","amount":-0.717038,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "player_amortisation",
+          "amount": -5.382524,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+          "category": "other_expenses",
+          "amount": -0.007065,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
+          "category": "exceptional_items",
+          "amount": -0.316581,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.704575,"disclosure":"aggregated"},
+        {"label":"6630","category":"exceptional_items","amount":-0.01725,"disclosure":"aggregated"},
+        {"label":"664/7","category":"exceptional_items","amount":-0.006977,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.641832,"tax":-0.155921,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":31.458703,"expenses":45.464613,"net_result":-15.144471},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andere financiële opbrengsten","amount":0.055103},
+          {"label":"Kosten van schulden","amount":-0.696818},
+          {"label":"Andere financiële kosten","amount":-0.000117},
+          {"label":"Belastingen","amount":-0.155921}
+        ],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":24.749706,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "ohleuven-be-jaarrekening-2025-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":34.487424,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"other_income","amount":7.637273,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.192091,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Aankopen","category":"other_expenses","amount":-1.52052,"disclosure":"aggregated"},
+        {"label":"Voorraad: afname (toename)","category":"other_expenses","amount":-0.006668,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-13.036915,"disclosure":"aggregated"},
+        {"label":"620","category":"wages_squad","amount":-22.959673,"disclosure":"aggregated"},
+        {"label":"621","category":"wages_squad","amount":-2.928919,"disclosure":"aggregated"},
+        {"label":"623","category":"wages_squad","amount":-0.76072,"disclosure":"aggregated"},
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+          "category": "other_expenses",
+          "amount": 0.004378,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
+          "category": "exceptional_items",
+          "amount": 0.316581,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.716869,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-1.141007,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa (spelers)","category":"player_amortisation","amount":-4.196505,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.760631,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.936107,"tax":-0.207954,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":42.316788,"expenses":46.883042,"net_result":-6.53474},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Andere financiële opbrengsten","amount":0.066728},
+          {"label":"Kosten van schulden","amount":-1.00085},
+          {"label":"Andere financiële kosten","amount":-0.001985},
+          {"label":"Belastingen","amount":-0.207954}
+        ],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":34.487424,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

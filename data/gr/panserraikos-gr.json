@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "panserraikos-gr",
+    "name": "Mousikogymnastikos Syllogos Panserraikos P.A.E.",
+    "display_name": "Panserraikos",
+    "country": "GR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "panserraikos-gr-income-stmt-2023-06-30",
+      "club_id": "panserraikos-gr",
+      "title": "Mousikogymnastikos Syllogos Panserraikos P.A.E. — Panserraikos_income_stmt_2023-06-30 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "panserraikos-gr-income-stmt-2025-06-30",
+      "club_id": "panserraikos-gr",
+      "title": "Mousikogymnastikos Syllogos Panserraikos P.A.E. — Panserraikos_income_stmt_2025-06-30 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "panserraikos-gr-income-stmt-2023-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Έσοδα από εισιτήρια","category":"matchday_competition","amount":0.173084,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφημίσεις","category":"sponsorship_commercial","amount":0.387016,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":0.077492,"disclosure":"aggregated"},
+        {"label":"Άλλα λειτουργικά έσοδα","category":"other_income","amount":0.043795,"disclosure":"aggregated"},
+        {"label":"Αποζημίωση ειδικού σκοπού COVID","category":"other_income","amount":0.005336,"disclosure":"aggregated"},
+        {
+          "label": "Κέρδη/ζημίες από τη διάθεση (μετεγγραφών) και αποχώρηση ποδοσφαιριστών",
+          "category": "player_sales",
+          "amount": 0.186319,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά έσοδα/έξοδα μετεγγραφών","category":"player_sales","amount":0.1,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Δαπάνη παροχών προς εργαζομένους (ποδοσφαιριστών και λοιπών εργαζομένων )",
+          "category": "wages_squad",
+          "amount": -0.514544,
+          "disclosure": "aggregated"
+        },
+        {"label":"Απόσβεση και απομείωση ενσωματών παγίων στοιχείων ενεργητικού","category":"depreciation","amount":-0.002435,"disclosure":"aggregated"},
+        {"label":"Άλλα λειτουργικά έξοδα","category":"other_expenses","amount":-0.495685,"disclosure":"aggregated"},
+        {
+          "label": "Απόσβεση εγγραφών ποδοσφαιριστών και απομείωση εγγραφών ποδοσφαιριστών",
+          "category": "player_amortisation",
+          "amount": -0.63656,
+          "disclosure": "aggregated"
+        },
+        {"label":"Μη λειτουργικά έσοδα / έξοδα","category":"other_expenses","amount":-0.102569,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.00318,"tax":0,"gross_debt":0,"cash":0.118978},
+      "official_totals": {"revenue":0.973043,"expenses":1.751793,"net_result":-0.78193},
+      "adjustments": {"extra_rows":[{"label":"Χρηματοοικονομικά έσοδα και έξοδα","amount":-0.00318},{"label":"Φορολογικά έσοδα / δαπάνες","amount":0}]}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "panserraikos-gr-income-stmt-2025-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών","category":"lump_football_operations","amount":4.700403,"disclosure":"aggregated"},
+        {"label":"(+) Λοιπά συνήθη έσοδα","category":"other_income","amount":1.501129,"disclosure":"aggregated"},
+        {"label":"Κέρδη από διάθεση μη κυκλοφορούντων","category":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"(-) Κόστος πωλήσεων","category":"lump_football_operations_expense","amount":-2.407198,"disclosure":"aggregated"},
+        {"label":"Έξοδα διοίκησης","category":"admin_general_expense","amount":-2.153245,"disclosure":"aggregated"},
+        {"label":"Έξοδα διάθεσης","category":"admin_general_expense","amount":-1.741122,"disclosure":"aggregated"},
+        {"label":"Λοιπά έξοδα και ζημιές","category":"other_expenses","amount":-0.120579,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.011172,"tax":0,"gross_debt":0.009,"cash":0.203968},
+      "official_totals": {"revenue":6.201533,"expenses":6.422144,"net_result":-0.231783},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.011172},
+          {"label":"(-) Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Μείον: Φόροι εισοδήματος","amount":0}
+        ],
+        "no_breakdown": [
+          {"line":"Κύκλος εργασιών","side":"revenue","amount":4.700403,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "(-) Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 2.407198,
+            "reason": "Claude 2026-10-13 (subagente Sonnet): Precedente griego exacto y aceptado por Guido: 'Κόστος πωλήσεων' sin nota que lo abra -> lump_football_operations_expense en AEL (3 años), Levadiakos, OFI y Asteras (data/gr/aellarissa-gr-data.js L103-L115, levadiakos L40-L76). Es el caso real de 'el documento no desglosa' (§1, lump) y no un encabezado con líneas debajo. Matiz a tener presente: costo de ventas, gastos de administración y de venta suben exactamente igual (+52,56 %), señal de que el club repartió su gasto total entre funciones por porcentajes fijos, o sea que 'Κόστος πωλήσεων' no es solo fútbol puro; igual no hay con qué abrirlo y los otros dos renglones ya son admin_general_expense. Cita: Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.md L16: '(-) Κόστος πωλήσεων | 2.407.197,70 | 1.577.842,26' = 'costo de ventas', estado 'por función' (Κατάσταση αποτελεσμάτων κατά λειτουργία, L8). Sin desglose por naturaleza en notes_2025 (anexo de micro-entidad) ni en audit/board_minutes 2025 (Panserraikos_board_minutes_2025-06-30.md L72 solo repite el total)."
+          }
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

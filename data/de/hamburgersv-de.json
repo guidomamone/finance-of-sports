@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "hamburgersv-de",
+    "name": "HSV Fußball AG & Co. KGaA",
+    "display_name": "Hamburger SV",
+    "country": "DE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "hamburgersv-de-fussball-ag-jahresabschluss-2024",
+      "club_id": "hamburgersv-de",
+      "title": "Jahresabschluss der Hamburger SV Fußball AG zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "hamburgersv-de-fussball-ag-jahresabschluss-2025",
+      "club_id": "hamburgersv-de",
+      "title": "Jahresabschluss der HSV Fußball AG & Co. KGaA zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "hamburgersv-de-fussball-ag-jahresabschluss-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Erlöse aus dem Spielbetrieb","category":"matchday_competition","amount":48.486,"disclosure":"detailed"},
+        {"label":"Erlöse aus Werbung","category":"sponsorship_commercial","amount":13.539,"disclosure":"detailed"},
+        {"label":"Erlöse aus medialen Verwertungsrechten","category":"broadcasting","amount":21.539,"disclosure":"detailed"},
+        {"label":"Erlöse aus Transferentschädigungen","category":"player_sales","amount":1.6,"disclosure":"detailed"},
+        {"label":"Erlöse aus Merchandising und Catering","category":"sponsorship_commercial","amount":19.553,"disclosure":"detailed"},
+        {
+          "label": "Sonstige Erlöse (Drittveranstaltungen, HSV-Fußballschule, Upfrontzahlung, EURO 2024)",
+          "category": "other_income",
+          "amount": 18.409,
+          "disclosure": "detailed"
+        },
+        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":2.793,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Materialaufwand (Aufwendungen für bezogene Waren, Bereich Merchandising)",
+          "category": "other_expenses",
+          "amount": -6.624,
+          "disclosure": "detailed"
+        },
+        {"label":"Personalaufwand","category":"wages_squad","amount":-44.311,"disclosure":"detailed"},
+        {"label":"Abschreibungen — Spielernutzungsrechte","category":"player_amortisation","amount":-4.628,"disclosure":"detailed"},
+        {"label":"Abschreibungen — Sachanlagen","category":"depreciation","amount":-3.487,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen — Aufwendungen aus dem Spielbetrieb",
+          "category": "match_organisation_expense",
+          "amount": -30.114,
+          "disclosure": "detailed"
+        },
+        {"label":"Sonstige betriebliche Aufwendungen — Verwaltungsaufwendungen","category":"admin_general_expense","amount":-6.327,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Aufwendungen — Vermarktungsprovisionen","category":"other_expenses","amount":-5.698,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Aufwendungen — Transferaufwendungen","category":"other_expenses","amount":-1.679,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen (resto, sin desglose adicional en el documento)",
+          "category": "other_expenses",
+          "amount": -18.198,
+          "disclosure": "aggregated_residual"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.505,"tax":-1.201294,"gross_debt":57.848,"cash":35.723519},
+      "official_totals": {"revenue":125.919,"expenses":121.066,"net_result":2.146706}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "hamburgersv-de-fussball-ag-jahresabschluss-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Erlöse aus dem Spielbetrieb","category":"matchday_competition","amount":44.36,"disclosure":"detailed"},
+        {"label":"Erlöse aus Werbung","category":"sponsorship_commercial","amount":17.51,"disclosure":"detailed"},
+        {"label":"Erlöse aus medialen Verwertungsrechten","category":"broadcasting","amount":18.482,"disclosure":"detailed"},
+        {"label":"Erlöse aus Transferentschädigungen","category":"player_sales","amount":3.827,"disclosure":"detailed"},
+        {"label":"Erlöse aus Merchandising und Catering","category":"sponsorship_commercial","amount":23.753,"disclosure":"detailed"},
+        {
+          "label": "Sonstige Erlöse (Drittveranstaltungen, HSV-Fußballschule, Upfrontzahlung, EURO 2024/Taylor Swift)",
+          "category": "other_income",
+          "amount": 18.589,
+          "disclosure": "detailed"
+        },
+        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":2.525,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Materialaufwand (Aufwendungen für bezogene Waren, Bereich Merchandising)",
+          "category": "other_expenses",
+          "amount": -8.922,
+          "disclosure": "detailed"
+        },
+        {"label":"Personalaufwand","category":"wages_squad","amount":-46.816,"disclosure":"detailed"},
+        {"label":"Abschreibungen — Spielernutzungsrechte","category":"player_amortisation","amount":-6.341,"disclosure":"detailed"},
+        {"label":"Abschreibungen — Sachanlagen","category":"depreciation","amount":-3.857,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen — Aufwendungen aus dem Spielbetrieb",
+          "category": "match_organisation_expense",
+          "amount": -23.862,
+          "disclosure": "detailed"
+        },
+        {"label":"Sonstige betriebliche Aufwendungen — Verwaltungsaufwendungen","category":"admin_general_expense","amount":-5.999,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Aufwendungen — Vermarktungsprovisionen","category":"other_expenses","amount":-6.588,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Aufwendungen — Transferaufwendungen","category":"other_expenses","amount":-2.325,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen (resto, sin desglose adicional en el documento)",
+          "category": "other_expenses",
+          "amount": -18.589,
+          "disclosure": "aggregated_residual"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.11,"tax":-0.239952,"gross_debt":22.03,"cash":35.985966},
+      "official_totals": {"revenue":129.046,"expenses":123.299,"net_result":4.397048}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

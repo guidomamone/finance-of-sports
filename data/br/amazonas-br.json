@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "amazonas-br",
+    "name": "Amazonas Futebol Clube",
+    "display_name": "Amazonas",
+    "country": "BR",
+    "reporting_currency": "BRL",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "amazonas-br-balanco-2024",
+      "club_id": "amazonas-br",
+      "title": "Balanço Patrimonial em 31/12/2024 (Amazonas FC)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://web.archive.org/web/2026/https://amazonasfc.com.br/site/pagina/transparencia/"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "BRL",
+      "source_id": "amazonas-br-balanco-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"BRL@2024-12-31"},
+      "revenue": [{"label":"Receita de Atividades Esportivas","category":"lump_football_operations","amount":36.0557646,"disclosure":"aggregate"}],
+      "expenses": [
+        {"label":"Custo das atividades Esportivas","category":"lump_football_operations_expense","amount":-33.06579984,"disclosure":"aggregate"},
+        {"label":"Despesas Administrativas","category":"admin_general_expense","amount":-2.54805502,"disclosure":"aggregate"},
+        {"label":"Despesas Comerciais","category":"admin_general_expense","amount":-2.85553898,"disclosure":"aggregate"},
+        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.95349552,"disclosure":"aggregate"},
+        {"label":"Outras Despesas Operacionais","category":"other_expenses","amount":-0.00060156,"disclosure":"aggregate"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01401904,"tax":0,"gross_debt":0.9230075,"cash":0.12759833},
+      "official_totals": {"revenue":36.0557646,"expenses":39.42349092,"net_result":-3.38174536}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

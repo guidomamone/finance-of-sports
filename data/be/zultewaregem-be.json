@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "zultewaregem-be",
+    "name": "Grensverleggend NV (SV Zulte Waregem)",
+    "display_name": "Zulte Waregem",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "zultewaregem-be-jaarrekening-2025",
+      "club_id": "zultewaregem-be",
+      "title": "Jaarrekening van Grensverleggend NV (SV Zulte Waregem) voor het boekjaar van 1/7/2024 tot 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "zultewaregem-be-jaarrekening-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":13.087991,"disclosure":"aggregated"},
+        {"label":"Voorraad goederen in bewerking: toename (afname)","category":"other_income","amount":-0.405752,"disclosure":"aggregated"},
+        {
+          "label": "Andere bedrijfsopbrengsten — Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen",
+          "category": "other_income",
+          "amount": 1.80018,
+          "disclosure": "detailed"
+        },
+        {"label":"Andere bedrijfsopbrengsten — resto sin desglosar","category":"other_income","amount":1.380334,"disclosure":"aggregated"},
+        {
+          "label": "Niet-recurrente bedrijfsopbrengsten (probablemente venta de un inmueble comercial, según jaarverslag)",
+          "category": "other_income",
+          "amount": 2.630436,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {"label":"Handelsgoederen, grond- en hulpstoffen","category":"other_expenses","amount":-1.84072,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-3.571494,"disclosure":"aggregated"},
+        {
+          "label": "Bezoldigingen, sociale lasten en pensioenen",
+          "category": "wages_squad",
+          "amount": -11.116049,
+          "disclosure": "detailed",
+          "items": [
+            ["Bezoldigingen en rechtstreekse sociale voordelen",7.13704],
+            ["Werkgeversbijdragen voor sociale verzekeringen",1.086382],
+            ["Werkgeverspremies voor bovenwettelijke verzekeringen",0.597252],
+            ["Andere personeelskosten",2.295375]
+          ]
+        },
+        {
+          "label": "Afschrijvingen op immateriële vaste activa (spelersregistratierechten)",
+          "category": "player_amortisation",
+          "amount": -1.453102,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Afschrijvingen op materiële vaste activa",
+          "category": "depreciation",
+          "amount": -1.132129,
+          "disclosure": "detailed",
+          "items": [["Terreinen en gebouwen",0.986809],["Installaties, machines en uitrusting",0.139695],["Meubilair en rollend materieel",0.005625]]
+        },
+        {
+          "label": "Waardeverminderingen op voorraden en handelsvorderingen (netto terugneming)",
+          "category": "other_expenses",
+          "amount": 0.010309,
+          "disclosure": "aggregated"
+        },
+        {"label":"Voorzieningen voor risico's en kosten","category":"exceptional_items","amount":-0.063715,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten — Bedrijfsbelastingen en -taksen","category":"admin_general_expense","amount":-0.151095,"disclosure":"detailed"},
+        {"label":"Andere bedrijfskosten — Andere","category":"other_expenses","amount":-0.026818,"disclosure":"detailed"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional_items","amount":-0.023333,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.388994,"tax":0.020358,"gross_debt":29.448037,"cash":0.629659},
+      "official_totals": {"revenue":18.493189,"expenses":19.281098,"net_result":-4.243593}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

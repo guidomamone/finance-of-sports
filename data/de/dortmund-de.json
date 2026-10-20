@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "dortmund-de",
+    "name": "Borussia Dortmund GmbH & Co. KGaA",
+    "display_name": "Borussia Dortmund",
+    "country": "DE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "dortmund-de-geschaeftsbericht-2024",
+      "club_id": "dortmund-de",
+      "title": "Annual Report 2023/2024 (Geschäftsbericht) — Annual Financial Statements (HGB) of Borussia Dortmund GmbH & Co. KGaA",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "dortmund-de-geschaeftsbericht-2025",
+      "club_id": "dortmund-de",
+      "title": "Annual Report 2024/2025 (Geschäftsbericht) — Annual Financial Statements (HGB) of Borussia Dortmund GmbH & Co. KGaA",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual (Hans-Joachim Watzke, Chairman de la Geschäftsführung)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "dortmund-de-geschaeftsbericht-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Match operations","category":"matchday_competition","amount":52.582,"disclosure":"detailed"},
+        {"label":"Advertising","category":"sponsorship_commercial","amount":146.609,"disclosure":"detailed"},
+        {"label":"TV marketing","category":"broadcasting","amount":206.05,"disclosure":"detailed"},
+        {"label":"Transfer deals","category":"player_sales","amount":129.678,"disclosure":"detailed"},
+        {"label":"Conference, catering, miscellaneous","category":"other_income","amount":27.492,"disclosure":"detailed"},
+        {"label":"Other operating income","category":"other_income","amount":9.498,"disclosure":"aggregated_residual"}
+      ],
+      "expenses": [
+        {"label":"Personnel expenses — Match operations (professional squad)","category":"wages_squad","amount":-208.191,"disclosure":"detailed"},
+        {"label":"Personnel expenses — Retail and administration","category":"admin_general_expense","amount":-26.426,"disclosure":"detailed"},
+        {"label":"Personnel expenses — Amateur and youth football","category":"youth_other_sports_expense","amount":-16.133,"disclosure":"detailed"},
+        {
+          "label": "Amortisation of intangible fixed assets — player registrations (incl. write-downs)",
+          "category": "player_amortisation",
+          "amount": -91.025,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciation of tangible fixed assets","category":"depreciation","amount":-10.188,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Match operations","category":"match_organisation_expense","amount":-74.633,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Advertising","category":"admin_general_expense","amount":-14.275,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Transfer deals","category":"player_amortisation","amount":-39.754,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Retail","category":"admin_general_expense","amount":-2.248,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Administration","category":"admin_general_expense","amount":-54.032,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Other","category":"other_expenses","amount":-7.084,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":14.5,"tax":-4.562,"gross_debt":28.701,"cash":4.36},
+      "official_totals": {"revenue":571.908,"expenses":543.991,"net_result":37.857}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "dortmund-de-geschaeftsbericht-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Match operations","category":"matchday_competition","amount":55.221,"disclosure":"detailed"},
+        {"label":"Advertising","category":"sponsorship_commercial","amount":153.557,"disclosure":"detailed"},
+        {"label":"TV marketing","category":"broadcasting","amount":227.2,"disclosure":"detailed"},
+        {"label":"Transfer deals","category":"player_sales","amount":71.223,"disclosure":"detailed"},
+        {"label":"Conference, catering, miscellaneous","category":"other_income","amount":21.462,"disclosure":"detailed"},
+        {"label":"Other operating income","category":"other_income","amount":6.831,"disclosure":"aggregated_residual"}
+      ],
+      "expenses": [
+        {"label":"Personnel expenses — Match operations (professional squad)","category":"wages_squad","amount":-201.171,"disclosure":"detailed"},
+        {"label":"Personnel expenses — Retail and administration","category":"admin_general_expense","amount":-32.909,"disclosure":"detailed"},
+        {"label":"Personnel expenses — Amateur and youth football","category":"youth_other_sports_expense","amount":-14.707,"disclosure":"detailed"},
+        {
+          "label": "Amortisation of intangible fixed assets — player registrations (incl. write-downs)",
+          "category": "player_amortisation",
+          "amount": -90.759,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciation of tangible fixed assets","category":"depreciation","amount":-10.67,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Match operations","category":"match_organisation_expense","amount":-77.185,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Advertising","category":"admin_general_expense","amount":-15.808,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Transfer deals","category":"player_amortisation","amount":-31.662,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Retail","category":"admin_general_expense","amount":-1.859,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Administration","category":"admin_general_expense","amount":-51.157,"disclosure":"detailed"},
+        {"label":"Other operating expenses — Other","category":"other_expenses","amount":-8.97,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":12.355,"tax":-3.339,"gross_debt":34.173,"cash":20.633},
+      "official_totals": {"revenue":535.495,"expenses":536.857,"net_result":7.653}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "tottenham-gb",
+    "name": "Tottenham Hotspur Limited",
+    "display_name": "Tottenham Hotspur",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "tottenham-gb-group-accounts-2024",
+      "club_id": "tottenham-gb",
+      "title": "Tottenham Hotspur Limited — Annual Report and Consolidated Financial Statements, year ended 30 June 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01706358/filing-history",
+      "public_note": "Balance consolidado auditado (Deloitte LLP, sin salvedades) de Tottenham Hotspur Limited, depositado en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2024 (temporada 2023/24). Las cifras del grupo incluyen la actividad del plantel masculino y del plantel femenino combinadas, tal como aclara el propio documento (\"the operation of both a men's and a women's professional football club\")."
+    },
+    {
+      "id": "tottenham-gb-group-accounts-2025",
+      "club_id": "tottenham-gb",
+      "title": "Tottenham Hotspur Limited — Annual Report and Consolidated Financial Statements, year ended 30 June 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01706358/filing-history",
+      "public_note": "Balance consolidado auditado (Deloitte LLP, sin salvedades) de Tottenham Hotspur Limited, depositado en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25). Las cifras del grupo incluyen la actividad del plantel masculino y del plantel femenino combinadas, tal como aclara el propio documento (\"the operation of both a men's and a women's professional football club\")."
+    },
+    {
+      "id": "tottenham-gb-group-accounts-2021-22",
+      "club_id": "tottenham-gb",
+      "title": "Tottenham Hotspur Limited — tottenham-group-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "tottenham-gb-group-accounts-2022-23",
+      "club_id": "tottenham-gb",
+      "title": "Tottenham Hotspur Limited — tottenham-group-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"levy","name":"Levy (Executive Chairman, ENIC)","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "tottenham-gb-group-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Match receipts","category":"matchday_competition","amount":106.142,"disclosure":"aggregated"},
+        {"label":"UEFA prize money (before exceptional item)","category":"competition_bonus","amount":10.172,"disclosure":"aggregated"},
+        {"label":"TV and media (before exceptional item)","category":"broadcasting","amount":144.219,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":183.495,"disclosure":"aggregated"},
+        {"label":"- UEFA COVID Deduction","category":"competition_bonus","amount":-0.613,"disclosure":"aggregated"},
+        {"label":"Consideration","category":"player_sales","amount":24.719,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Net book value of disposals","category":"player_amortisation","amount":-5.569,"disclosure":"aggregated"},
+        {"label":"Salaries and bonuses","category":"wages_squad","amount":-181.819,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-26.42,"disclosure":"aggregated"},
+        {"label":"Other pension costs (see note 24)","category":"wages_squad","amount":-0.941,"disclosure":"aggregated"},
+        {"label":"Depreciation of property, plant and equipment","category":"depreciation","amount":-72.278,"disclosure":"aggregated"},
+        {"label":"- Onerous employment contracts","category":"admin_general_expense","amount":-0.528,"disclosure":"aggregated"},
+        {"label":"Other operating costs","category":"other_expenses","amount":-121.368,"disclosure":"aggregated"},
+        {
+          "label": "Amortisation, impairments and other net football trading income and expenditure",
+          "category": "player_amortisation",
+          "amount": -79.893,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-40.646,"tax":11.211,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":468.134,"expenses":488.816,"net_result":-50.117},
+      "adjustments": {"extra_rows":[{"label":"Finance income","amount":1.537},{"label":"Finance costs","amount":-42.183},{"label":"Tax","amount":11.211}]}
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "tottenham-gb-group-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Match receipts","category":"matchday_competition","amount":117.598,"disclosure":"aggregated"},
+        {"label":"UEFA Prize money (before exceptional item)","category":"competition_bonus","amount":56.207,"disclosure":"aggregated"},
+        {"label":"TV and media","category":"broadcasting","amount":148.078,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":227.75,"disclosure":"aggregated"},
+        {"label":"Consideration","category":"player_sales","amount":32.416,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Net book value of disposals","category":"player_amortisation","amount":-16.906,"disclosure":"aggregated"},
+        {"label":"Salaries and bonuses","category":"wages_squad","amount":-218.897,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-31.332,"disclosure":"aggregated"},
+        {"label":"Other pension costs (see note 25)","category":"wages_squad","amount":-0.892,"disclosure":"aggregated"},
+        {"label":"Depreciation of property, plant and equipment","category":"depreciation","amount":-71.868,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of property, plant and equipment","category":"other_expenses","amount":0.025,"disclosure":"aggregated"},
+        {"label":"- Onerous employment contracts","category":"admin_general_expense","amount":-5.11,"disclosure":"aggregated"},
+        {"label":"Other operating costs","category":"other_expenses","amount":-159.874,"disclosure":"aggregated"},
+        {
+          "label": "Amortisation, impairments and other net football trading income and expenditure",
+          "category": "player_amortisation",
+          "amount": -127.106,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-44.763,"tax":7.88,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":582.049,"expenses":631.96,"net_result":-86.794},
+      "adjustments": {"extra_rows":[{"label":"Finance income","amount":1.566},{"label":"Finance costs","amount":-46.329},{"label":"Tax","amount":7.88}]}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "tottenham-gb-group-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "levy",
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Match receipts","category":"matchday_competition","amount":105.847,"disclosure":"detailed"},
+        {"label":"UEFA Prize money","category":"competition_bonus","amount":1.262,"disclosure":"detailed"},
+        {"label":"TV and media","category":"broadcasting","amount":165.91,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":244.744,"disclosure":"detailed"},
+        {"label":"Other income","category":"other_income","amount":10.428,"disclosure":"not_disclosed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-221.929,"disclosure":"detailed"},
+        {"label":"Depreciation of property, plant and equipment","category":"depreciation","amount":-68.796,"disclosure":"detailed"},
+        {"label":"Loss on disposal of property, plant and equipment","category":"other_expenses","amount":-0.006,"disclosure":"detailed"},
+        {"label":"Exceptional items - Onerous employment contracts","category":"admin_general_expense","amount":-1.528,"disclosure":"detailed"},
+        {"label":"Other operating costs","category":"other_expenses","amount":-161.367,"disclosure":"not_disclosed"},
+        {
+          "label": "Amortisation, impairments and other net football trading income and expenditure",
+          "category": "player_amortisation",
+          "amount": -135.583,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":82.305,"asset_sales":0,"net_interest":-47.317,"tax":-0.196,"gross_debt":851.448,"cash":78.974},
+      "official_totals": {"revenue":528.191,"expenses":589.209,"net_result":-26.226}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "tottenham-gb-group-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "levy",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Match receipts","category":"matchday_competition","amount":126.473,"disclosure":"detailed"},
+        {"label":"UEFA Prize money","category":"competition_bonus","amount":34.716,"disclosure":"detailed"},
+        {"label":"TV and media","category":"broadcasting","amount":126.993,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":276.699,"disclosure":"detailed"},
+        {"label":"Other income","category":"other_income","amount":0.385,"disclosure":"not_disclosed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-255.811,"disclosure":"detailed"},
+        {"label":"Depreciation of property, plant and equipment","category":"depreciation","amount":-56.948,"disclosure":"detailed"},
+        {"label":"Profit on disposal of property, plant and equipment","category":"other_expenses","amount":0.11,"disclosure":"detailed"},
+        {
+          "label": "Exceptional items - Onerous employment contracts and other employment related payments",
+          "category": "admin_general_expense",
+          "amount": -11.601,
+          "disclosure": "detailed"
+        },
+        {"label":"Other operating costs","category":"other_expenses","amount":-197.259,"disclosure":"not_disclosed"},
+        {
+          "label": "Amortisation, impairments and other net football trading income and expenditure",
+          "category": "player_amortisation",
+          "amount": -146.72,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":52.565,"asset_sales":0,"net_interest":-70.23,"tax":25.962,"gross_debt":851.652,"cash":20.413},
+      "official_totals": {"revenue":565.266,"expenses":668.229,"net_result":-94.666}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

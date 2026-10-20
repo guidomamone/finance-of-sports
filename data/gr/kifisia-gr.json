@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "kifisia-gr",
+    "name": "Kifisia - Athlitiki Enosis P.A.E.",
+    "display_name": "Kifisia",
+    "country": "GR",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "kifisia-gr-notes-2024-06-30",
+      "club_id": "kifisia-gr",
+      "title": "Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2024-06-30 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "kifisia-gr-notes-2025-06-30",
+      "club_id": "kifisia-gr",
+      "title": "Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2025-06-30 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "kifisia-gr-notes-2023-06-30",
+      "club_id": "kifisia-gr",
+      "title": "Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2023-06-30 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "kifisia-gr-notes-2022-06-30",
+      "club_id": "kifisia-gr",
+      "title": "Kifisia - Athlitiki Enosis P.A.E. — Kifisia_notes_2022-06-30 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Primer ejercicio de la sociedad: del 09/08/2021 al 30/06/2022 (11 meses)."
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "EUR",
+      "source_id": "kifisia-gr-notes-2022-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2022-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":0.396935,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":0.0775,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.000767,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Αγορές εμπορευμάτων και υλικών","category":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Παροχές σε εργαζόμενους","category":"wages_squad","amount":-0.418349,"disclosure":"aggregated"},
+        {"label":"Αποσβέσεις","category":"depreciation","amount":-0.004741,"disclosure":"aggregated"},
+        {"label":"ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ","category":"admin_general_expense","amount":-0.119817,"disclosure":"aggregated"},
+        {"label":"ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ","category":"admin_general_expense","amount":-0.088497,"disclosure":"aggregated"},
+        {"label":"ΦΟΡΟΙ - ΤΕΛΗ","category":"admin_general_expense","amount":-0.071219,"disclosure":"aggregated"},
+        {"label":"ΔΙΑΦΟΡΑ ΕΞΟΔΑ","category":"other_expenses","amount":-0.219801,"disclosure":"aggregated"},
+        {"label":"ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ","category":"exceptional_items","amount":-0.003327,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000738,"tax":-0.000917,"gross_debt":0,"cash":0.06047},
+      "official_totals": {"revenue":0.475202,"expenses":0.925751,"net_result":-0.452204},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Πιστωτικοί τόκοι και συναφή έσοδα","amount":0},
+          {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.000738},
+          {"label":"Φόροι εισοδήματος","amount":-0.000917}
+        ],
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.396935,"reason":"el documento no desglosa este renglón"}],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "EUR",
+      "source_id": "kifisia-gr-notes-2023-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2023-06-30"},
+      "revenue": [
+        {"label":"Έσοδα εισιτηρίων","category":"matchday_competition","amount":0.034558,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφήμιση","category":"sponsorship_commercial","amount":0.575492,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"broadcasting","amount":0.0425,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.185802,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Παροχές σε εργαζόμενους","category":"wages_squad","amount":-0.54265,"disclosure":"aggregated"},
+        {"label":"Αποσβέσεις","category":"depreciation","amount":-0.009344,"disclosure":"aggregated"},
+        {"label":"ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ","category":"admin_general_expense","amount":-0.093384,"disclosure":"aggregated"},
+        {"label":"ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ","category":"admin_general_expense","amount":-0.122472,"disclosure":"aggregated"},
+        {"label":"ΦΟΡΟΙ - ΤΕΛΗ","category":"admin_general_expense","amount":-0.017135,"disclosure":"aggregated"},
+        {"label":"ΔΙΑΦΟΡΑ ΕΞΟΔΑ","category":"other_expenses","amount":-0.296953,"disclosure":"aggregated"},
+        {"label":"ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ","category":"exceptional_items","amount":-0.002383,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000434,"tax":0,"gross_debt":0,"cash":0.044708},
+      "official_totals": {"revenue":0.838352,"expenses":1.08432,"net_result":-0.246402},
+      "adjustments": {"extra_rows":[{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.000434},{"label":"Φόροι εισοδήματος","amount":0}]}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "kifisia-gr-notes-2024-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Κύκλος εργασιών (καθαρός)","category":"lump_football_operations","amount":3.012039,"disclosure":"aggregated"},
+        {"label":"Λοιπά συνήθη έσοδα","category":"other_income","amount":1.807637,"disclosure":"aggregated"},
+        {"label":"Λοιπά έσοδα και κέρδη","category":"other_income","amount":0.011132,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Αγορές εμπορευμάτων και υλικών","category":"other_expenses","amount":-0.001353,"disclosure":"aggregated"},
+        {"label":"Παροχές σε εργαζόμενους","category":"wages_squad","amount":-0.757094,"disclosure":"aggregated"},
+        {"label":"Αποσβέσεις","category":"depreciation","amount":-0.02716,"disclosure":"aggregated"},
+        {"label":"ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ","category":"admin_general_expense","amount":-0.496597,"disclosure":"aggregated"},
+        {"label":"ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ","category":"admin_general_expense","amount":-2.115419,"disclosure":"aggregated"},
+        {"label":"ΦΟΡΟΙ - ΤΕΛΗ","category":"admin_general_expense","amount":-0.076914,"disclosure":"aggregated"},
+        {"label":"ΔΙΑΦΟΡΑ ΕΞΟΔΑ","category":"other_expenses","amount":-0.550423,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000949,"tax":-0.013655,"gross_debt":0,"cash":0.037523},
+      "official_totals": {"revenue":4.830808,"expenses":4.024961,"net_result":0.791242},
+      "adjustments": {
+        "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.000949},{"label":"Φόροι εισοδήματος","amount":-0.013655}],
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":3.012039,"reason":"el documento no desglosa este renglón"}],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "kifisia-gr-notes-2025-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Έσοδα εισιτηρίων","category":"matchday_competition","amount":0.017152,"disclosure":"aggregated"},
+        {"label":"Χορηγίες και διαφήμιση","category":"sponsorship_commercial","amount":0.513533,"disclosure":"aggregated"},
+        {"label":"Δικαιώματα αναμετάδοσης","category":"broadcasting","amount":0.04,"disclosure":"aggregated"},
+        {"label":"Εμπορικές δραστηριότητες","category":"sponsorship_commercial","amount":0.001904,"disclosure":"aggregated"},
+        {"label":"Επίδομα μηχανισμού αλληλεγγύης και χρηματικά έπαθλα UEFA","category":"competition_bonus","amount":0.3608,"disclosure":"aggregated"},
+        {"label":"Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση","category":"other_income","amount":0.244238,"disclosure":"aggregated"},
+        {"label":"Άλλα λειτουργικά έσοδα","category":"other_income","amount":0.002643,"disclosure":"aggregated"},
+        {"label":"λοιπά έσοδα /έξοδα μεταγραφών","category":"player_sales","amount":0.06,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Κόστος πωλήσεων /υλικών","category":"other_expenses","amount":-0.006609,"disclosure":"aggregated"},
+        {"label":"Αμοιβές έμμισθου προσωπικού (μικτά ποσά)","category":"wages_squad","amount":-0.801916,"disclosure":"aggregated"},
+        {"label":"Κοινωνικές επιβαρύνσεις (εργοδοτικές εισφορές)","category":"wages_squad","amount":-0.125079,"disclosure":"aggregated"},
+        {"label":"Παρεπόμενες παροχές","category":"wages_squad","amount":-0.03,"disclosure":"aggregated"},
+        {"label":"Απόσβεση και απομείωση ενσώματων παγίων στοιχείων ενεργητικού","category":"depreciation","amount":-0.040201,"disclosure":"aggregated"},
+        {
+          "label": "Απόσβεση και απομείωση λοιπών άυλων στοιχείων (εξαιρουμένων ποδοσφαιριστών)",
+          "category": "other_amortisation",
+          "amount": -0.004018,
+          "disclosure": "aggregated"
+        },
+        {"label":"Λοιπά λειτουργικά έξοδα","category":"other_expenses","amount":-1.20541,"disclosure":"aggregated"},
+        {"label":"Απόσβεση εγγραφών παικτών και απομείωση εγγραφών παικτών","category":"player_amortisation","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.001116,"tax":-0.001,"gross_debt":0,"cash":0.017209},
+      "official_totals": {"revenue":1.240271,"expenses":2.213233,"net_result":-0.975079},
+      "adjustments": {"extra_rows":[{"label":"Χρηματοοικονομικά έσοδα / (έξοδα)","amount":-0.001116},{"label":"Φορολογικά έσοδα / (δαπάνες)","amount":-0.001}]}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

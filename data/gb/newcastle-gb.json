@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "newcastle-gb",
+    "name": "Newcastle United Limited",
+    "display_name": "Newcastle United",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "newcastle-gb-group-accounts-2025",
+      "club_id": "newcastle-gb",
+      "title": "Report and Financial Statements (Newcastle United Limited — cuentas consolidadas del grupo), ejercicio cerrado 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02529667/filing-history",
+      "public_note": "Cuentas consolidadas del grupo depositadas en Companies House (Reino Unido). Incluye 2 ganancias no operativas por reorganización societaria intra-grupo (venta de una subsidiaria y sale-and-leaseback de mejoras del estadio a una sociedad hermana), registradas aparte del resultado futbolístico."
+    },
+    {
+      "id": "newcastle-gb-group-accounts-2021-22",
+      "club_id": "newcastle-gb",
+      "title": "Newcastle United Limited — newcastle-group-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "newcastle-gb-group-accounts-2022-23",
+      "club_id": "newcastle-gb",
+      "title": "Newcastle United Limited — newcastle-group-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "newcastle-gb-group-accounts-2023-24",
+      "club_id": "newcastle-gb",
+      "title": "Newcastle United Limited — newcastle-group-accounts-2023-24 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "newcastle-gb-group-accounts-2019-20",
+      "club_id": "newcastle-gb",
+      "title": "Newcastle United Limited — newcastle-group-accounts-2019-20 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Ejercicio de transición por cambio de fecha de cierre: del 01/07/2019 al 31/07/2020 (13 meses)."
+    },
+    {
+      "id": "newcastle-gb-group-accounts-2018-19",
+      "club_id": "newcastle-gb",
+      "title": "Newcastle United Limited — newcastle-group-accounts-2018-19 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "newcastle-gb-group-accounts-2020-21",
+      "club_id": "newcastle-gb",
+      "title": "Newcastle United Limited — newcastle-group-accounts-2020-21 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"pifreuben","name":"Public Investment Fund / Reuben Brothers (tras salida de Staveley, jul-2024)","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "GBP",
+      "source_id": "newcastle-gb-group-accounts-2018-19",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2019-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":24.846,"disclosure":"aggregated"},
+        {"label":"Media","category":"broadcasting","amount":123.936,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":26.186,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":1.48,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' and staff registrations","category":"player_sales","amount":24.583,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses","category":"other_expenses","amount":-122.944,"disclosure":"aggregated"},
+        {"label":"Amortisation and impairment of players' registrations","category":"player_amortisation","amount":-38.611,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.674,"tax":-6.476,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":201.031,"expenses":161.555,"net_result":34.674},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":2.179},
+          {"label":"Interest payable and expenses","amount":-0.505},
+          {"label":"Tax on profit","amount":-6.476}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-07-31",
+      "currency": "GBP",
+      "source_id": "newcastle-gb-group-accounts-2019-20",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2020-07-31"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":17.443,"disclosure":"aggregated"},
+        {"label":"Media","category":"broadcasting","amount":106.103,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":25.85,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":3.23,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":26.288,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses","category":"other_expenses","amount":-147.952,"disclosure":"aggregated"},
+        {"label":"Amortisation and impairment of players' registrations","category":"player_amortisation","amount":-58.696,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.762,"tax":3.432,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":178.914,"expenses":206.648,"net_result":-22.54},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":1.87},
+          {"label":"Interest payable and expenses","amount":-0.108},
+          {"label":"Tax on (loss)/profit","amount":3.432}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "GBP",
+      "source_id": "newcastle-gb-group-accounts-2020-21",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2021-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":0.176,"disclosure":"aggregated"},
+        {"label":"Media","category":"broadcasting","amount":119.262,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":17.577,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":3.177,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":1.701,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses before amortisation and impairment","category":"other_expenses","amount":-123.333,"disclosure":"aggregated"},
+        {"label":"Amortisation and impairment of players' registrations","category":"player_amortisation","amount":-32.277,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.095,"tax":1.43,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":141.893,"expenses":155.61,"net_result":-12.192},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.385},
+          {"label":"Interest payable and expenses","amount":-0.29},
+          {"label":"Taxation","amount":1.43}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "newcastle-gb-group-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":27.529,"disclosure":"aggregated"},
+        {"label":"Media","category":"broadcasting","amount":124.111,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":26.545,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":1.801,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":5.832,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses before amortisation and impairment","category":"other_expenses","amount":-206.343,"disclosure":"aggregated"},
+        {"label":"Amortisation of intangible assets","category":"player_amortisation","amount":-49.721,"disclosure":"aggregated"},
+        {"label":"Impairment of intangible assets","category":"player_impairment","amount":-1.418,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.203,"tax":2.217,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":185.818,"expenses":257.482,"net_result":-70.65},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.186},
+          {"label":"Interest payable and expenses","amount":-1.389},
+          {"label":"Taxation","amount":2.217}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "newcastle-gb-group-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":37.914,"disclosure":"aggregated"},
+        {"label":"Media","category":"broadcasting","amount":165.485,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":43.915,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":2.951,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":2.836,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses before amortisation and impairment","category":"other_expenses","amount":-230.215,"disclosure":"aggregated"},
+        {"label":"Amortisation and impairment of players' registrations","category":"player_amortisation","amount":-89.343,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.873,"tax":-0.091,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":253.101,"expenses":319.558,"net_result":-73.421},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.617},
+          {"label":"Interest payable and similar expenses","amount":-7.49},
+          {"label":"Taxation","amount":-0.091}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "newcastle-gb-group-accounts-2023-24",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":50.095,"disclosure":"aggregated"},
+        {"label":"Media","category":"broadcasting","amount":153.95,"disclosure":"aggregated"},
+        {"label":"UEFA","category":"broadcasting","amount":29.835,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":83.573,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_income","amount":2.86,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of players' and staff registrations","category":"player_sales","amount":69.816,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of tangible fixed assets","category":"other_income","amount":0.113,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Operating expenses before amortisation and impairment","category":"other_expenses","amount":-291.484,"disclosure":"aggregated"},
+        {"label":"Amortisation of intangible assets","category":"player_amortisation","amount":-96.744,"disclosure":"aggregated"},
+        {"label":"Impairment of intangible assets","category":"player_impairment","amount":-0.801,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-12.292,"tax":-0.018,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":390.242,"expenses":389.029,"net_result":-11.097},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":2.127},
+          {"label":"Interest payable and similar expenses","amount":-14.419},
+          {"label":"Taxation","amount":-0.018}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "newcastle-gb-group-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "pifreuben",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday_competition","amount":51.56,"disclosure":"detailed"},
+        {"label":"Media","category":"broadcasting","amount":161.066,"disclosure":"detailed"},
+        {"label":"UEFA","category":"broadcasting","amount":0,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":120.179,"disclosure":"detailed"},
+        {"label":"Other income","category":"other_income","amount":2.517,"disclosure":"detailed"},
+        {"label":"Profit on disposal of players' and staff registrations","category":"player_sales","amount":19.875,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-243.477,"disclosure":"detailed"},
+        {"label":"Other operating expenses (residuo exacto, sin línea propia impresa)","category":"other_expenses","amount":-93.222,"disclosure":"estimated"},
+        {"label":"Depreciation","category":"depreciation","amount":-8.182,"disclosure":"detailed"},
+        {"label":"Amortisation of players' registrations","category":"player_amortisation","amount":-99.502,"disclosure":"detailed"},
+        {"label":"Impairment of players' registrations","category":"player_impairment","amount":-0.366,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":133.133,"net_interest":-8.853,"tax":0,"gross_debt":58.314,"cash":12.701},
+      "official_totals": {"revenue":355.197,"expenses":444.749,"net_result":34.728}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

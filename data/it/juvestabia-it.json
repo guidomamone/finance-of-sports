@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "juvestabia-it",
+    "name": "Società Sportiva Juve Stabia S.r.l.",
+    "display_name": "Juve Stabia",
+    "country": "IT",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "juvestabia-it-bilancio-2024-ifrs-sec-6k",
+      "club_id": "juvestabia-it",
+      "title": "Società Sportiva Juve Stabia S.r.l. — Juve Stabia-bilancio-2024-IFRS-SEC-6K (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "juvestabia-it-bilancio-2024-ifrs-sec-6k",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Sponsorships","category":"sponsorship_commercial","amount":2.023466,"disclosure":"aggregated"},
+        {"label":"Sponsorships - Related party","category":"sponsorship_commercial","amount":0.15,"disclosure":"aggregated"},
+        {"label":"Ticketing","category":"matchday_competition","amount":0.727035,"disclosure":"aggregated"},
+        {"label":"Gain on transfer of players","category":"player_sales","amount":0.23,"disclosure":"aggregated"},
+        {"label":"Revenue from Television rights","category":"broadcasting","amount":0.05,"disclosure":"aggregated"},
+        {"label":"Revenue from Contributions","category":"other_income","amount":0.538644,"disclosure":"aggregated"},
+        {"label":"Revenue from store","category":"sponsorship_commercial","amount":0.074261,"disclosure":"aggregated"},
+        {"label":"Other incomes","category":"other_income","amount":0.116954,"disclosure":"aggregated"},
+        {"label":"Other incomes","category":"other_income","amount":0.190721,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Ticketing","category":"match_organisation_expense","amount":-0.111591,"disclosure":"aggregated"},
+        {"label":"Sports equipment","category":"other_expenses","amount":-0.659782,"disclosure":"aggregated"},
+        {"label":"Player salaries","category":"wages_squad","amount":-2.463183,"disclosure":"aggregated"},
+        {"label":"Accomodation and transportation","category":"match_organisation_expense","amount":-0.053867,"disclosure":"aggregated"},
+        {"label":"Insurance","category":"admin_general_expense","amount":-0.014157,"disclosure":"aggregated"},
+        {"label":"Loan of players","category":"other_expenses","amount":-0.0075,"disclosure":"aggregated"},
+        {"label":"Other cost of revenues","category":"other_expenses","amount":-0.193876,"disclosure":"aggregated"},
+        {"label":"Amortization of multi-year football players rights","category":"player_amortisation","amount":-0.166,"disclosure":"aggregated"},
+        {"label":"Salaries and social security contributions","category":"admin_general_expense","amount":-1.010865,"disclosure":"aggregated"},
+        {"label":"Rental expenses","category":"admin_general_expense","amount":-0.043785,"disclosure":"aggregated"},
+        {"label":"Impairment of receivables","category":"other_expenses","amount":-0.090272,"disclosure":"aggregated"},
+        {"label":"Penalties and fines","category":"other_expenses","amount":-0.11377,"disclosure":"aggregated"},
+        {"label":"Operating and administrative expenses","category":"admin_general_expense","amount":-0.816133,"disclosure":"aggregated"},
+        {"label":"Impairment loss on intangible assets","category":"player_impairment","amount":-0.082667,"disclosure":"aggregated"},
+        {"label":"Depreciation costs","category":"depreciation","amount":-0.007872,"disclosure":"aggregated"},
+        {"label":"Amortization on Intangible assets","category":"player_amortisation","amount":-0.004474,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.120093,"tax":-0.127938,"gross_debt":0.510448,"cash":0.049496},
+      "official_totals": {"revenue":4.101081,"expenses":5.839794,"net_result":-1.986746},
+      "adjustments": {"extra_rows":[{"label":"Finance costs","amount":-0.120093},{"label":"Provision for income taxes","amount":-0.127938}]}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

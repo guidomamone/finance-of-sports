@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "arsenal-gb",
+    "name": "Arsenal Holdings Limited",
+    "display_name": "Arsenal",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "06-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "arsenal-gb-group-accounts-2024",
+      "club_id": "arsenal-gb",
+      "title": "Arsenal Holdings Limited — Annual Report and Financial Statements, year ended 31 May 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04250459/filing-history",
+      "public_note": "Balance consolidado auditado (Deloitte LLP, sin salvedades) de Arsenal Holdings Limited, la sociedad matriz del grupo, depositado en Companies House (Reino Unido). Ejercicio cerrado el 31 de mayo de 2024 (temporada 2023/24)."
+    },
+    {
+      "id": "arsenal-gb-group-accounts-2025",
+      "club_id": "arsenal-gb",
+      "title": "Arsenal Holdings Limited — Annual Report and Financial Statements, year ended 31 May 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04250459/filing-history",
+      "public_note": "Balance consolidado auditado (Deloitte LLP, sin salvedades) de Arsenal Holdings Limited, la sociedad matriz del grupo, depositado en Companies House (Reino Unido). Ejercicio cerrado el 31 de mayo de 2025 (temporada 2024/25)."
+    },
+    {
+      "id": "arsenal-gb-holdings-group-accounts-2021-22",
+      "club_id": "arsenal-gb",
+      "title": "Arsenal Holdings Limited — arsenal-holdings-group-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "arsenal-gb-holdings-group-accounts-2022-23",
+      "club_id": "arsenal-gb",
+      "title": "Arsenal Holdings Limited — arsenal-holdings-group-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"kroenke","name":"Kroenke / KSE UK Inc.","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-05-31",
+      "currency": "GBP",
+      "source_id": "arsenal-gb-holdings-group-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-05-31"},
+      "revenue": [
+        {
+          "label": "Turnover of the Group including its share of joint ventures",
+          "category": "lump_football_operations",
+          "amount": 372.362,
+          "disclosure": "aggregated"
+        },
+        {"label":"Share of turnover of joint venture","category":"lump_football_operations","amount":-0.455,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":22.238,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-124.567,"disclosure":"aggregated"},
+        {"label":"Impairment of player registrations","category":"player_impairment","amount":-2.456,"disclosure":"aggregated"},
+        {"label":"Depreciation and impairment charges (less amortisation of grants)","category":"depreciation","amount":-19.374,"disclosure":"aggregated"},
+        {"label":"Wages and salaries","category":"wages_squad","amount":-185.581,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-25,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"wages_squad","amount":-1.764,"disclosure":"aggregated"},
+        {"label":"Cost of property sales","category":"other_expenses","amount":-0.085,"disclosure":"aggregated"},
+        {"label":"Other operating charges","category":"other_expenses","amount":-74.065,"disclosure":"aggregated"},
+        {"label":"Share of joint venture operating (loss)","category":"other_expenses","amount":-1.524,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.21,"tax":-0.001,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":394.145,"expenses":434.416,"net_result":-45.482},
+      "adjustments": {
+        "extra_rows": [{"label":"Net finance charges","amount":-5.21},{"label":"Tax (charge)/credit on loss","amount":-0.001}],
+        "no_breakdown": [
+          {
+            "line": "Turnover of the Group including its share of joint ventures",
+            "side": "revenue",
+            "amount": 372.362,
+            "reason": "el documento no desglosa este renglón"
+          },
+          {
+            "line": "Share of turnover of joint venture",
+            "side": "revenue",
+            "amount": 0.455,
+            "reason": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)"
+          }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-05-31",
+      "currency": "GBP",
+      "source_id": "arsenal-gb-holdings-group-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-05-31"},
+      "revenue": [
+        {
+          "label": "Turnover of the Group including its share of joint ventures",
+          "category": "lump_football_operations",
+          "amount": 467.155,
+          "disclosure": "aggregated"
+        },
+        {"label":"Share of turnover of joint venture","category":"lump_football_operations","amount":-0.47,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":10.732,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-139.06,"disclosure":"aggregated"},
+        {"label":"Impairment of player registrations (see note 2)","category":"player_impairment","amount":-18.091,"disclosure":"aggregated"},
+        {"label":"Depreciation and impairment charges (less amortisation of grants)","category":"depreciation","amount":-16.983,"disclosure":"aggregated"},
+        {"label":"Wages and salaries","category":"wages_squad","amount":-204.648,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"wages_squad","amount":-28.569,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"wages_squad","amount":-1.549,"disclosure":"aggregated"},
+        {"label":"Cost of property sales","category":"other_expenses","amount":-0.472,"disclosure":"aggregated"},
+        {"label":"Other operating charges","category":"other_expenses","amount":-112.557,"disclosure":"aggregated"},
+        {"label":"Share of joint venture operating (loss)","category":"other_expenses","amount":-1.39,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.222,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":477.417,"expenses":523.319,"net_result":-52.124},
+      "adjustments": {
+        "extra_rows": [{"label":"Net finance charges","amount":-6.222},{"label":"Tax on loss","amount":null}],
+        "no_breakdown": [
+          {
+            "line": "Turnover of the Group including its share of joint ventures",
+            "side": "revenue",
+            "amount": 467.155,
+            "reason": "el documento no desglosa este renglón"
+          },
+          {
+            "line": "Share of turnover of joint venture",
+            "side": "revenue",
+            "amount": 0.47,
+            "reason": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)"
+          }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-05-31",
+      "currency": "GBP",
+      "source_id": "arsenal-gb-group-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "kroenke",
+      "fx": {"ref":"GBP@2024-05-31"},
+      "revenue": [
+        {"label":"Gate and other match day revenues","category":"matchday_competition","amount":131.652,"disclosure":"detailed"},
+        {"label":"Broadcasting","category":"broadcasting","amount":262.252,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":218.268,"disclosure":"detailed"},
+        {"label":"Property development","category":"other_income","amount":3.034,"disclosure":"detailed"},
+        {"label":"Player trading","category":"player_sales","amount":1.374,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":51.073,"disclosure":"detailed"},
+        {"label":"Share of joint venture operating loss","category":"other_income","amount":-1.934,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-327.822,"disclosure":"detailed"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-171.099,"disclosure":"detailed"},
+        {"label":"Depreciation and impairment charges (less amortisation of grants)","category":"depreciation","amount":-18.161,"disclosure":"detailed"},
+        {"label":"Other operating charges","category":"other_expenses","amount":-146.774,"disclosure":"detailed"},
+        {"label":"Cost of property sales","category":"other_expenses","amount":-1.118,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.432,"tax":0,"gross_debt":341.784,"cash":66.819},
+      "official_totals": {"revenue":665.719,"expenses":664.974,"net_result":-17.687}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-05-31",
+      "currency": "GBP",
+      "source_id": "arsenal-gb-group-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "kroenke",
+      "fx": {"ref":"GBP@2025-05-31"},
+      "revenue": [
+        {"label":"Gate and other match day revenues","category":"matchday_competition","amount":153.854,"disclosure":"detailed"},
+        {"label":"Broadcasting","category":"broadcasting","amount":272.784,"disclosure":"detailed"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":263.193,"disclosure":"detailed"},
+        {"label":"Property","category":"other_income","amount":0.713,"disclosure":"detailed"},
+        {"label":"Player trading","category":"player_sales","amount":0.454,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":81.237,"disclosure":"detailed"},
+        {"label":"Share of joint venture operating loss","category":"other_income","amount":-1.69,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-346.804,"disclosure":"detailed"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-171.627,"disclosure":"detailed"},
+        {"label":"Impairment of player registrations","category":"player_impairment","amount":-15.241,"disclosure":"detailed"},
+        {"label":"Depreciation and impairment charges (less amortisation of grants)","category":"depreciation","amount":-19.778,"disclosure":"detailed"},
+        {"label":"Other operating charges","category":"other_expenses","amount":-200.756,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-17.687,"tax":-0.029,"gross_debt":358.294,"cash":55.994},
+      "official_totals": {"revenue":770.545,"expenses":754.206,"net_result":-1.377}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

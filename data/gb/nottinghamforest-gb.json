@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "nottinghamforest-gb",
+    "name": "Nottingham Forest Football Club Limited",
+    "display_name": "Nottingham Forest",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "nottinghamforest-gb-full-accounts-2024",
+      "club_id": "nottinghamforest-gb",
+      "title": "Nottingham Forest Football Club Limited — Annual Report and Financial Statements, year ended 30 June 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01630402/filing-history",
+      "public_note": "Cuentas individuales auditadas (Azets Audit Services, sin salvedades) de Nottingham Forest Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2024 (temporada 2023/24, 2ª temporada de retorno a la Premier League)."
+    },
+    {
+      "id": "nottinghamforest-gb-full-accounts-2025",
+      "club_id": "nottinghamforest-gb",
+      "title": "Nottingham Forest Football Club Limited — Annual Report and Financial Statements, year ended 30 June 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01630402/filing-history",
+      "public_note": "Cuentas individuales auditadas (Azets Audit Services, sin salvedades) de Nottingham Forest Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25)."
+    },
+    {
+      "id": "nottinghamforest-gb-full-accounts-2022-23",
+      "club_id": "nottinghamforest-gb",
+      "title": "Nottingham Forest Football Club Limited — nottinghamforest-full-accounts-2022-23 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "nottinghamforest-gb-full-accounts-2021-22",
+      "club_id": "nottinghamforest-gb",
+      "title": "Nottingham Forest Football Club Limited — nottinghamforest-full-accounts-2021-22 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"marinakis","name":"Marinakis / NF Football Investments","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-06-30",
+      "currency": "GBP",
+      "source_id": "nottinghamforest-gb-full-accounts-2021-22",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2022-06-30"},
+      "revenue": [
+        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":2.689,"disclosure":"aggregated"},
+        {"label":"Catering","category":"other_income","amount":0.141,"disclosure":"aggregated"},
+        {"label":"Grants & royalties","category":"sponsorship_commercial","amount":10.143,"disclosure":"aggregated"},
+        {"label":"TV & radio","category":"broadcasting","amount":2.016,"disclosure":"aggregated"},
+        {"label":"Ticket & membership sales","category":"matchday_competition","amount":8.227,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"sponsorship_commercial","amount":1.925,"disclosure":"aggregated"},
+        {"label":"Programme & other match day income","category":"matchday_competition","amount":0.484,"disclosure":"aggregated"},
+        {"label":"Other non match day income","category":"other_income","amount":0.036,"disclosure":"aggregated"},
+        {"label":"Players","category":"player_sales","amount":0.473,"disclosure":"aggregated"},
+        {"label":"Retail","category":"sponsorship_commercial","amount":3.549,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":4.084,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-5.512,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-73.684,"disclosure":"aggregated"},
+        {"label":"Other operating (expenses)/income","category":"other_expenses","amount":-0.02,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.768,"tax":0.607,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":33.767,"expenses":79.216,"net_result":-45.61},
+      "adjustments": {"extra_rows":[{"label":"Interest payable and similar expenses","amount":-0.768},{"label":"Tax on loss","amount":0.607}]}
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-06-30",
+      "currency": "GBP",
+      "source_id": "nottinghamforest-gb-full-accounts-2022-23",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2023-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":10.992,"disclosure":"aggregated"},
+        {"label":"Media related activity","category":"broadcasting","amount":124.836,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"sponsorship_commercial","amount":7.127,"disclosure":"aggregated"},
+        {"label":"Other commercial","category":"sponsorship_commercial","amount":11.803,"disclosure":"aggregated"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":2.614,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_expenses","amount":-11.176,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general_expense","amount":-203.14,"disclosure":"aggregated"},
+        {"label":"Other operating expenses","category":"other_expenses","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.302,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":157.372,"expenses":214.316,"net_result":-67.246},
+      "adjustments": {"extra_rows":[{"label":"Interest payable and similar expenses","amount":-10.302},{"label":"Tax on loss","amount":null}]}
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "GBP",
+      "source_id": "nottinghamforest-gb-full-accounts-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "marinakis",
+      "fx": {"ref":"GBP@2024-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":14.408,"disclosure":"detailed"},
+        {"label":"Media related activity","category":"broadcasting","amount":130.019,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"sponsorship_commercial","amount":8.55,"disclosure":"detailed"},
+        {"label":"Other commercial","category":"sponsorship_commercial","amount":21.088,"disclosure":"detailed"},
+        {"label":"Loan fees received","category":"player_sales","amount":15.487,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":100.531,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-166.399,"disclosure":"detailed"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-61.685,"disclosure":"detailed"},
+        {"label":"Depreciation of owned tangible fixed assets","category":"depreciation","amount":-1.159,"disclosure":"detailed"},
+        {
+          "label": "Otros costos operativos (Cost of sales + Administrative expenses no desglosados por naturaleza, neto de staff/amortización/depreciación)",
+          "category": "other_expenses",
+          "amount": -33.564,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-15.177,"tax":0,"gross_debt":95.847,"cash":0.029},
+      "official_totals": {"revenue":290.083,"expenses":262.807,"net_result":12.099}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "nottinghamforest-gb-full-accounts-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "marinakis",
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Gate receipts","category":"matchday_competition","amount":20.251,"disclosure":"detailed"},
+        {"label":"Media related activity","category":"broadcasting","amount":158.6,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"sponsorship_commercial","amount":10.09,"disclosure":"detailed"},
+        {"label":"Other commercial","category":"sponsorship_commercial","amount":28.421,"disclosure":"detailed"},
+        {"label":"Loan fees received","category":"player_sales","amount":4.384,"disclosure":"detailed"},
+        {"label":"Profit on disposal of player registrations","category":"player_sales","amount":7.017,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Staff costs","category":"wages_squad","amount":-166.651,"disclosure":"detailed"},
+        {"label":"Amortisation of player registrations","category":"player_amortisation","amount":-68.883,"disclosure":"detailed"},
+        {"label":"Impairment of player registrations","category":"player_impairment","amount":-5.322,"disclosure":"detailed"},
+        {"label":"Depreciation of owned tangible fixed assets","category":"depreciation","amount":-1.894,"disclosure":"detailed"},
+        {
+          "label": "Otros costos operativos (Cost of sales + Administrative expenses no desglosados por naturaleza, neto de staff/amortización/impairment/depreciación)",
+          "category": "other_expenses",
+          "amount": -43.923,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-21.011,"tax":0,"gross_debt":146.485,"cash":13.224},
+      "official_totals": {"revenue":228.763,"expenses":286.673,"net_result":-78.921}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

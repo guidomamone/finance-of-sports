@@ -595,7 +595,7 @@ solo esos 4 cambian, 0 filas a la cola, 0 categorías distintas.
   de grupos la descartaba). Ahora el código acepta "." y "-" (empieza con letra o número), y la unión de grupos informa cuántos fueron
   (GRUPOS, para el tope de 40 por grupo de listas-lote). Lote 92: 41 -> 45 de 51 listas; las 6 que faltan no tienen página en Wikipedia.
   Las 358 listas guardadas, con el lector viejo y el nuevo: mismos equipos (tr-superlig 2019 deja de leer un "team1" comentado).
-- Datos como JSON con esquema (to-do 245, fase 1, solo lectura): `node tools/exportar-json.mjs` escribe un JSON por club (default `Generados/datos-json/<país>/<id>.json`, esquema en `Admin/mediciones/245-esquema.md`); `node tools/validar-esquema-json.mjs [carpeta]` lo valida; `node tools/ida-y-vuelta.mjs` regenera el JS desde el JSON y lo compara objeto por objeto con `data/` (313 de 313 idénticos). La biblioteca y el diccionario de nombres, en `tools/json-datos.mjs`. `node tools/audit.js` lo corre sobre los 313 (chequeos P2, no frenan: `json-no-valida`, `json-aviso` y `json-js-desfasado`, este último la ida y vuelta JS→JSON→JS; `ida-y-vuelta.mjs` lista además cada club con avisos y su texto). La fase 2 (que el JSON sea la fuente) no está hecha.
+- Datos como JSON con esquema (to-do 245): el JSON de cada club, `data/<país>/<id>.json`, es la FUENTE y el `data/<país>/<id>-data.js` que carga el sitio se genera de ahí. Las tools de carga (`cargar.mjs`, `caja-deuda.mjs`, `dentro-de-otro.mjs`, `alta-club.mjs`) leen y escriben el JSON con `tools/club-json.mjs` (`modificarClub(id, (c) => …)`: se arma con los nombres de siempre, se valida contra `data/schema/club-v1.json` y se regenera el JS; si no valida, no se escribe nada). A mano: editar el JSON y correr `node tools/generar-data.mjs` (`--check` avisa si algún JS no coincide; `--identidad` vuelve a copiar la identidad del club de `data/clubs.js`); `node tools/validar-esquema-json.mjs` lo valida y `node tools/ida-y-vuelta.mjs` regenera el JS del JSON en memoria y lo compara objeto por objeto con el que está en disco. `node tools/audit.js` corre el validador y `generar-data.mjs --check` como P1 (`json-no-valida`, `json-js-desfasado`). La biblioteca y el diccionario de nombres, en `tools/json-datos.mjs`; `tools/exportar-json.mjs` (JS → JSON) fue la migración de una sola vez.
 - Extracto de Wikipedia para las gestiones (to-do 195): `node tools/wiki-extracto.mjs "<título>" --lang pt --ficha | --seccion "Presidentes" | --secciones` baja por la API la ficha o UNA sección de la página, en texto corto y con la URL de fuente (una página entera de club pesa 250 a 450 KB; la ficha, ~0,5 a 0,9 KB; una sección, 1 a 6 KB). Lo corre Onboarding y le pasa el extracto al subagente. No toca datos.
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año. Se commitean TODOS los archivos que lista "Alta escrita (...)",
   también los compartidos (`data/currency-map.js` con el tipo de cambio nuevo): en las altas italianas quedó afuera y se commiteó suelto.
@@ -679,7 +679,7 @@ solo esos 4 cambian, 0 filas a la cola, 0 categorías distintas.
   de la carpeta y lo marca `clubDeCarpeta` (to-do 232 f).
   Las marcas "Posiblemente dentro de otro rubro" las pone `--escribir` solo (no hay un paso más). Para un club cargado a mano o corregido
   fuera de `cargar.mjs`: `node tools/dentro-de-otro.mjs --club <id> [--escribir]`.
-- Dónde queda la evidencia: el data file no lleva comentarios (`Admin/CONVENCIONES-DATOS.md`). `cargar.mjs --escribir` deja en
+- Dónde queda la evidencia: ni el JSON ni el data file llevan comentarios (`Admin/CONVENCIONES-DATOS.md`). `cargar.mjs --escribir` deja en
   `Admin/carga-clubes/<clubId>.md`, en la sección del año, la cabecera "cargado por… tie-out", la tabla de filas con la página y el
   escalón de cada categoría, los ajustes manuales y la nota de meta, y de dónde salió la liga. Lo edita solo a través de
   `tools/evidencia-club.mjs`; con `--reemplazar` saca SUS líneas de ese año (lo escrito a mano queda) y las vuelve a escribir. Si la
@@ -805,7 +805,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
   En un caso de categoría, `descartar` se rechaza (to-do 205: parecía "descarto la pregunta" y sacaba la fila): para sacar la fila,
   `corregir --valor no_es_rubro`; para un año ya cargado, la categoría con la que está publicado.
-- Una categoría que da 0 porque el documento la junta con otra línea: ajuste `incluye` (`--valor <categoría> --categoria <donde está> [--posible]`); `cargar.mjs` la escribe en `fiscalYearMeta.incluidoEn` y no la revisa como un 0 (Versión 511).
+- Una categoría que da 0 porque el documento la junta con otra línea: ajuste `incluye` (`--valor <categoría> --categoria <donde está> [--posible]`); `cargar.mjs` la escribe en `adjustments.included_in` del año del JSON (`incluidoEn` en el data file generado) y no la revisa como un 0 (Versión 511).
 - Para fijar la categoría de una fila sin que haya un caso: `node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."`.
 - La próxima corrida toma la respuesta.
 - Al abrir la cola, se cierran solos (estado "obsoleto", sin efecto en ninguna tool) los casos de `verificar` y de `cargar · perimetro` de
@@ -1102,9 +1102,8 @@ resumen: si se resume o se salta contenido "poco relevante", se pierde
 justamente el dato suelto que capaz hace falta en una sesión futura.
 
 Una vez que el `.md` está armado, se usa ESE archivo (no el PDF) para extraer
-los datos que se vayan a cargar a `<club>RevenueLinesByYear`/
-`<club>ExpenseLinesByYear`/etc. (ver `data/ar/river-ar-data.js` para el shape, el
-mismo que usan todos los clubes incluida Boca desde la Versión 102), y para
+los datos que se vayan a cargar a `years[].revenue`/`expenses` del JSON del club
+(ver `data/ar/river-ar.json` para el shape, el mismo que usan todos los clubes incluida Boca), y para
 cualquier experimentación de formato que pida Guido más adelante sobre ese
 mismo documento.
 

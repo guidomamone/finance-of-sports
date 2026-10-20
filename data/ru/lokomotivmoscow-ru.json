@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "lokomotivmoscow-ru",
+    "name": "AO Football Club Lokomotiv",
+    "display_name": "Lokomotiv Moscow",
+    "country": "RU",
+    "reporting_currency": "RUB",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "lokomotivmoscow-ru-bfo-2021-datos",
+      "club_id": "lokomotivmoscow-ru",
+      "title": "AO Football Club Lokomotiv — отчетность 2021 в ГИР БО (bo.nalog.gov.ru), ejercicio 2021",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "lokomotivmoscow-ru-bfo-2022-datos",
+      "club_id": "lokomotivmoscow-ru",
+      "title": "AO Football Club Lokomotiv — отчетность 2022 в ГИР БО (bo.nalog.gov.ru), ejercicio 2022",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "lokomotivmoscow-ru-bfo-2023-datos",
+      "club_id": "lokomotivmoscow-ru",
+      "title": "AO Football Club Lokomotiv — отчетность 2023 в ГИР БО (bo.nalog.gov.ru), ejercicio 2023",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "lokomotivmoscow-ru-bfo-2024-datos",
+      "club_id": "lokomotivmoscow-ru",
+      "title": "AO Football Club Lokomotiv — отчетность 2024 в ГИР БО (bo.nalog.gov.ru), ejercicio 2024",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "lokomotivmoscow-ru-bfo-2025-datos",
+      "club_id": "lokomotivmoscow-ru",
+      "title": "AO Football Club Lokomotiv — отчетность 2025 в ГИР БО (bo.nalog.gov.ru), ejercicio 2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "currency": "RUB",
+      "source_id": "lokomotivmoscow-ru-bfo-2021-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2021-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":5506.957,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":1405.56,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-8309.653,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-29.195,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-445.974,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-807.17,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-99.027,"tax":199.48,"gross_debt":3609.622,"cash":2161.343},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-2579.022},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Проценты к получению (2320)","amount":21.981},
+          {"label":"Проценты к уплате (2330)","amount":-121.008},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":199.48}
+        ],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":5506.957,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 8309.653,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "RUB",
+      "source_id": "lokomotivmoscow-ru-bfo-2022-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2022-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":6785.05,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":4514.359,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-6168.544,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-25.832,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-536.424,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-4208.064,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-316.376,"tax":-41.179,"gross_debt":0,"cash":683.148},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":2.99},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Проценты к получению (2320)","amount":171.566},
+          {"label":"Проценты к уплате (2330)","amount":-487.942},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-41.179}
+        ],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":6785.05,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 6168.544,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "RUB",
+      "source_id": "lokomotivmoscow-ru-bfo-2023-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2023-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":7383.651,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":1148.417,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-6664.846,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-8.915,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-645.024,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-1728.129,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":75.727,"tax":68.597,"gross_debt":0,"cash":107.937},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-370.522},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Проценты к получению (2320)","amount":144.936},
+          {"label":"Проценты к уплате (2330)","amount":-69.209},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":68.597}
+        ],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":7383.651,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 6664.846,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "RUB",
+      "source_id": "lokomotivmoscow-ru-bfo-2024-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2024-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":6718.143,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":1727.029,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-6983.275,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-27.221,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-704.497,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-1904.767,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":98.692,"tax":277.368,"gross_debt":0,"cash":69.309},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-798.528},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Проценты к получению (2320)","amount":197.028},
+          {"label":"Проценты к уплате (2330)","amount":-98.336},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":277.368}
+        ],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":6718.143,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 6983.275,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "RUB",
+      "source_id": "lokomotivmoscow-ru-bfo-2025-datos",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"RUB@2025-12-31"},
+      "revenue": [
+        {"label":"Выручка (2110)","category":"lump_football_operations","amount":7425.193,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_income","amount":1325.186,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-8377.362,"disclosure":"aggregated"},
+        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-35.314,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-600.601,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-938.988,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":107.701,"tax":234.746,"gross_debt":0,"cash":295.776},
+      "official_totals": {"revenue":null,"expenses":null,"net_result":-859.439},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Проценты к получению (2320)","amount":305.011},
+          {"label":"Проценты к уплате (2330)","amount":-197.31},
+          {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":234.746}
+        ],
+        "no_breakdown": [
+          {"line":"Выручка (2110)","side":"ingreso","amount":7425.193,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 8377.362,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+          }
+        ],
+        "included_in": {
+          "broadcasting": {"in":"lump_football_operations","possible":true},
+          "matchday_competition": {"in":"lump_football_operations","possible":true},
+          "member_dues": {"in":"lump_football_operations","possible":true},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true}
+        }
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

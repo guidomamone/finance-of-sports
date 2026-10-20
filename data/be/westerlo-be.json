@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "westerlo-be",
+    "name": "KVC Westerlo BV",
+    "display_name": "Westerlo",
+    "country": "BE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "westerlo-be-jaarrekening-2025",
+      "club_id": "westerlo-be",
+      "title": "Jaarrekening van KVC Westerlo BV voor het boekjaar van 1/7/2024 tot 30/6/2025",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "westerlo-be-jaarrekening-2015-06-30-individual",
+      "club_id": "westerlo-be",
+      "title": "KVC Westerlo BV — jaarrekening-2015-06-30-individual (ejercicio 2015)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Ejercicio de transición por cambio de fecha de cierre: del 01/01/2014 al 30/06/2015 (18 meses)."
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2015,
+      "period_end": "2015-06-30",
+      "currency": "EUR",
+      "source_id": "westerlo-be-jaarrekening-2015-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2015-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"lump_football_operations","amount":4.882931,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","category":"wages_squad","amount":-4.221367,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "amount": -0.375183,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_expenses",
+          "amount": 0.019506,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+          "category": "exceptional_items",
+          "amount": -0.041553,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_expenses","amount":-0.013432,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke kosten","category":"exceptional_items","amount":-0.052751,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003796,"tax":-0.068497,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":4.882931,"expenses":4.590476,"net_result":0.125859},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Financiële opbrengsten","amount":-0.000001},
+          {"label":"Financiële kosten","amount":-0.003795},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.068497}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":4.882931,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "westerlo-be-jaarrekening-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Omzet","category":"lump_football_operations","amount":14.373418,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfsopbrengsten","category":"other_income","amount":16.309398,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfsopbrengsten","category":"other_income","amount":0.046566,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Handelsgoederen, grond- en hulpstoffen","category":"other_expenses","amount":-3.49556,"disclosure":"aggregated"},
+        {"label":"Diensten en diverse goederen","category":"other_expenses","amount":-12.257662,"disclosure":"aggregated"},
+        {
+          "label": "Bezoldigingen, sociale lasten en pensioenen",
+          "category": "wages_squad",
+          "amount": -17.858655,
+          "disclosure": "detailed",
+          "items": [
+            ["Bezoldigingen en rechtstreekse sociale voordelen",14.675317],
+            ["Werkgeversbijdragen voor sociale verzekeringen",2.250854],
+            ["Werkgeverspremies voor bovenwettelijke verzekeringen",0.138962],
+            ["Andere personeelskosten",0.793522]
+          ]
+        },
+        {
+          "label": "Afschrijvingen op immateriële vaste activa (spelersregistratierechten)",
+          "category": "player_amortisation",
+          "amount": -6.801978,
+          "disclosure": "detailed"
+        },
+        {"label":"Afschrijvingen op materiële vaste activa","category":"depreciation","amount":-1.196318,"disclosure":"detailed"},
+        {
+          "label": "Afschrijvingen — residuo no explicado entre Nota 6.2.1/6.3.x y el código 630 impreso (redondeo)",
+          "category": "other_amortisation",
+          "amount": -0.003058,
+          "disclosure": "aggregated"
+        },
+        {"label":"Waardeverminderingen op voorraden en bestellingen (netto)","category":"other_expenses","amount":-0.003645,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten — Bedrijfsbelastingen en -taksen","category":"admin_general_expense","amount":-0.27375,"disclosure":"detailed"},
+        {"label":"Andere bedrijfskosten — Andere","category":"other_expenses","amount":-0.034178,"disclosure":"detailed"},
+        {
+          "label": "Niet-recurrente bedrijfskosten (minderwaarden bij realisatie van immateriële en materiële vaste activa)",
+          "category": "player_impairment",
+          "amount": -0.201673,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.087489,"tax":-0.283163,"gross_debt":39.407332,"cash":0.13509},
+      "official_totals": {"revenue":30.729382,"expenses":42.126477,"net_result":-11.767747}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

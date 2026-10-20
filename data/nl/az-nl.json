@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {"id":"az-nl","name":"AZ Holding B.V.","display_name":"AZ","country":"NL","reporting_currency":"EUR","fiscal_year_start":"07-01","sport":"futbol"},
+  "sources": [
+    {
+      "id": "az-nl-jaarrekening-2024",
+      "club_id": "az-nl",
+      "title": "Jaarrekening AZ Holding B.V. boekjaar 2023-2024 (1 juli 2023 - 30 juni 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "az-nl-jaarrekening-2025",
+      "club_id": "az-nl",
+      "title": "Jaarrekening AZ Holding B.V. boekjaar 2024-2025 (1 juli 2024 - 30 juni 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "az-nl-jaarrekening-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":11.499,"disclosure":"detailed"},
+        {"label":"Sponsoropbrengsten","category":"sponsorship_commercial","amount":15.097,"disclosure":"detailed"},
+        {"label":"Opbrengst Televisiegelden","category":"broadcasting","amount":8.284,"disclosure":"detailed"},
+        {"label":"Opbrengst Merchandising, magazines en internet","category":"sponsorship_commercial","amount":1.131,"disclosure":"detailed"},
+        {"label":"Opbrengst Horeca","category":"stadium_other","amount":5.253,"disclosure":"detailed"},
+        {"label":"Verhuur spelers en detachering personeel","category":"other_income","amount":0.687,"disclosure":"detailed"},
+        {"label":"Vergoedingssommen spelers (netto, overige bedrijfsopbrengsten)","category":"player_sales","amount":44.223,"disclosure":"detailed"},
+        {"label":"Overige bedrijfsopbrengsten","category":"other_income","amount":2.047,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Lonen en salarissen, sociale lasten en pensioenlasten",
+          "category": "wages_squad",
+          "amount": -32.588,
+          "disclosure": "detailed",
+          "items": [["Lonen en salarissen",29.652],["Sociale lasten",2.501],["Pensioenlasten",0.435]]
+        },
+        {"label":"Afschrijvingen immateriële vaste activa (boekwaarde spelers)","category":"player_amortisation","amount":-12.064,"disclosure":"detailed"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-2.552,"disclosure":"detailed"},
+        {
+          "label": "Overige personeelskosten + Huisvestingskosten + Verkoopkosten + Autokosten + Kantoorkosten + Algemene kosten",
+          "category": "admin_general_expense",
+          "amount": -14.658,
+          "disclosure": "detailed",
+          "items": [
+            ["Overige personeelskosten",2.572],
+            ["Huisvestingskosten",4.952],
+            ["Verkoopkosten",4.741],
+            ["Autokosten",1.315],
+            ["Kantoorkosten",0.691],
+            ["Algemene kosten",0.387]
+          ]
+        },
+        {"label":"Wedstrijd- en trainingkosten","category":"match_organisation_expense","amount":-5.707,"disclosure":"detailed"},
+        {"label":"Overige lasten","category":"other_expenses","amount":-0.451,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.9690000000000003,"tax":-4.642,"gross_debt":39.275,"cash":14.012},
+      "official_totals": {"revenue":88.22,"expenses":68.02,"net_result":12.589}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "az-nl-jaarrekening-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":24.535,"disclosure":"detailed"},
+        {"label":"Sponsoropbrengsten","category":"sponsorship_commercial","amount":16.324,"disclosure":"detailed"},
+        {"label":"Opbrengst Televisiegelden","category":"broadcasting","amount":9.965,"disclosure":"detailed"},
+        {"label":"Opbrengst Merchandising, magazines en internet","category":"sponsorship_commercial","amount":1.392,"disclosure":"detailed"},
+        {"label":"Opbrengst Horeca","category":"stadium_other","amount":6.38,"disclosure":"detailed"},
+        {"label":"Verhuur spelers en detachering personeel","category":"other_income","amount":0.698,"disclosure":"detailed"},
+        {"label":"Vergoedingssommen spelers (netto, overige bedrijfsopbrengsten)","category":"player_sales","amount":29.498,"disclosure":"detailed"},
+        {"label":"Overige bedrijfsopbrengsten","category":"other_income","amount":2.411,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {
+          "label": "Lonen en salarissen, sociale lasten en pensioenlasten",
+          "category": "wages_squad",
+          "amount": -37.794,
+          "disclosure": "detailed",
+          "items": [["Lonen en salarissen",34.461],["Sociale lasten",2.856],["Pensioenlasten",0.477]]
+        },
+        {"label":"Afschrijvingen immateriële vaste activa (boekwaarde spelers)","category":"player_amortisation","amount":-9.514,"disclosure":"detailed"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-2.83,"disclosure":"detailed"},
+        {
+          "label": "Overige personeelskosten + Huisvestingskosten + Verkoopkosten + Autokosten + Kantoorkosten + Algemene kosten",
+          "category": "admin_general_expense",
+          "amount": -19.207,
+          "disclosure": "detailed",
+          "items": [
+            ["Overige personeelskosten",4.28],
+            ["Huisvestingskosten",6.221],
+            ["Verkoopkosten",5.859],
+            ["Autokosten",1.395],
+            ["Kantoorkosten",0.83],
+            ["Algemene kosten",0.622]
+          ]
+        },
+        {"label":"Wedstrijd- en trainingkosten","category":"match_organisation_expense","amount":-7.765,"disclosure":"detailed"},
+        {"label":"Overige lasten","category":"other_expenses","amount":-0.804,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.051,"tax":-3.936,"gross_debt":37.578,"cash":8.877},
+      "official_totals": {"revenue":91.202,"expenses":77.914,"net_result":10.402}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

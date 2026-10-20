@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "sccambuur-nl",
+    "name": "SC Cambuur-Leeuwarden B.V.",
+    "display_name": "SC Cambuur",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "sccambuur-nl-jaarverslag-sc-cambuur-2024-2025",
+      "club_id": "sccambuur-nl",
+      "title": "SC Cambuur-Leeuwarden B.V. — Jaarverslag-SC-Cambuur-2024-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "sccambuur-nl-jaarverslag-sc-cambuur-2024-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Netto-omzet","category":"lump_football_operations","amount":10.544,"disclosure":"aggregated"},
+        {"label":"Vergoedingssommen","category":"player_sales","amount":0.075,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Kostprijs van de omzet","category":"other_expenses","amount":-0.181,"disclosure":"aggregated"},
+        {"label":"Lonen en salarissen","category":"wages_squad","amount":-7.364,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen","category":"depreciation","amount":-0.491,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-5.579,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.531,"tax":-0.068,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":10.619,"expenses":13.615,"net_result":-3.595},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële baten","amount":0.011},{"label":"Financiële lasten","amount":-0.542},{"label":"Belastingen","amount":-0.068}],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":10.544,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

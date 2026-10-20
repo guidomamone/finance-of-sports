@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "willemii-nl",
+    "name": "Willem II Holding B.V.",
+    "display_name": "Willem II",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "willemii-nl-jaarverslag-2024-2025",
+      "club_id": "willemii-nl",
+      "title": "Willem II Holding B.V. — Willem-II-Jaarverslag-2024-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "willemii-nl-jaarverslag-2024-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":3.358038,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"sponsorship_commercial","amount":8.004763,"disclosure":"aggregated"},
+        {"label":"Media gerelateerde baten","category":"broadcasting","amount":3.3791,"disclosure":"aggregated"},
+        {"label":"Merchandise","category":"sponsorship_commercial","amount":0.861242,"disclosure":"aggregated"},
+        {"label":"Horeca","category":"stadium_other","amount":0.935463,"disclosure":"aggregated"},
+        {"label":"Prijzengeld","category":"competition_bonus","amount":1.53185,"disclosure":"aggregated"},
+        {"label":"Overige baten","category":"other_income","amount":0.679722,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":1.571597,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lonen","category":"wages_squad","amount":-8.877293,"disclosure":"aggregated"},
+        {"label":"Overige personeelsbeloningen","category":"wages_squad","amount":-0.80445,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"wages_squad","amount":-1.061336,"disclosure":"aggregated"},
+        {"label":"Pensioenlasten","category":"wages_squad","amount":-0.178478,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen immateriële vaste activa","category":"player_amortisation","amount":-1.031,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.836525,"disclosure":"aggregated"},
+        {"label":"Betaalde huur","category":"admin_general_expense","amount":-0.210866,"disclosure":"aggregated"},
+        {"label":"Onderhoud en schoonmaak","category":"admin_general_expense","amount":-1.131569,"disclosure":"aggregated"},
+        {"label":"Energiekosten","category":"admin_general_expense","amount":-0.253379,"disclosure":"aggregated"},
+        {"label":"Overige huisvestingskosten","category":"admin_general_expense","amount":-0.219842,"disclosure":"aggregated"},
+        {"label":"Hospitality","category":"other_expenses","amount":-0.63267,"disclosure":"aggregated"},
+        {"label":"Spelershome en jeugdaccommodatie","category":"other_expenses","amount":-0.204906,"disclosure":"aggregated"},
+        {"label":"Kosten sponsoring/reclame/promotie","category":"admin_general_expense","amount":-0.483558,"disclosure":"aggregated"},
+        {"label":"Merchandise","category":"other_expenses","amount":-0.593653,"disclosure":"aggregated"},
+        {"label":"Heffing KNVB","category":"match_organisation_expense","amount":-0.242371,"disclosure":"aggregated"},
+        {"label":"Kosten dubieuze debiteuren","category":"admin_general_expense","amount":-0.009558,"disclosure":"aggregated"},
+        {"label":"Overige verkoopkosten","category":"admin_general_expense","amount":-0.250243,"disclosure":"aggregated"},
+        {"label":"Uitrusting en spelmaterialen","category":"other_expenses","amount":-0.472673,"disclosure":"aggregated"},
+        {"label":"Reis- en verblijfkosten incl. trainingskampen","category":"match_organisation_expense","amount":-0.184486,"disclosure":"aggregated"},
+        {"label":"Kosten veiligheid","category":"match_organisation_expense","amount":-0.701569,"disclosure":"aggregated"},
+        {"label":"Overige wedstrijdkosten","category":"match_organisation_expense","amount":-0.37232,"disclosure":"aggregated"},
+        {"label":"Automatiseringskosten","category":"admin_general_expense","amount":-0.203109,"disclosure":"aggregated"},
+        {"label":"Scoutingskosten","category":"other_expenses","amount":-0.149113,"disclosure":"aggregated"},
+        {"label":"Accountantskosten","category":"admin_general_expense","amount":-0.096645,"disclosure":"aggregated"},
+        {"label":"Advieskosten","category":"admin_general_expense","amount":-0.100156,"disclosure":"aggregated"},
+        {"label":"Algemene verzekeringen","category":"admin_general_expense","amount":-0.05646,"disclosure":"aggregated"},
+        {"label":"Contributies","category":"admin_general_expense","amount":-0.126813,"disclosure":"aggregated"},
+        {"label":"Overige kosten","category":"other_expenses","amount":-0.561945,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.302082,"tax":0.005186,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":20.321775,"expenses":20.046986,"net_result":-0.022107},
+      "adjustments": {"extra_rows":[{"label":"Financiële baten en lasten","amount":-0.302082},{"label":"Vennootschapsbelasting","amount":0.005186}]}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

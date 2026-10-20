@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "nacbreda-nl",
+    "name": "NAC Breda B.V.",
+    "display_name": "NAC Breda",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "nacbreda-nl-jaarrekening-2024-2025",
+      "club_id": "nacbreda-nl",
+      "title": "NAC Breda B.V. — NAC-Breda-Jaarrekening-2024-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "nacbreda-nl-jaarrekening-2024-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":3.930225,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"sponsorship_commercial","amount":7.580148,"disclosure":"aggregated"},
+        {"label":"Media gerelateerde baten","category":"broadcasting","amount":2.834542,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"sponsorship_commercial","amount":0.271365,"disclosure":"aggregated"},
+        {"label":"Food & Beverage","category":"stadium_other","amount":1.337949,"disclosure":"aggregated"},
+        {"label":"Opleidingen","category":"youth_football","amount":0.272455,"disclosure":"aggregated"},
+        {"label":"Overige baten","category":"other_income","amount":2.449265,"disclosure":"aggregated"},
+        {"label":"Opbrengst vergoedingssommen","category":"player_sales","amount":3.05268,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfsopbrengsten","category":"other_income","amount":0.013004,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Wedstrijd- en trainingskosten","category":"match_organisation_expense","amount":-1.707815,"disclosure":"aggregated"},
+        {"label":"Huisvestingkosten","category":"admin_general_expense","amount":-2.878863,"disclosure":"aggregated"},
+        {"label":"Verkoopkosten","category":"admin_general_expense","amount":-1.661898,"disclosure":"aggregated"},
+        {"label":"Overige kosten","category":"other_expenses","amount":-1.29113,"disclosure":"aggregated"},
+        {"label":"Brutoloon","category":"wages_squad","amount":-7.931277,"disclosure":"aggregated"},
+        {"label":"Wedstrijdpremies","category":"wages_squad","amount":-0.273594,"disclosure":"aggregated"},
+        {"label":"Overige personeelskosten","category":"admin_general_expense","amount":-2.731781,"disclosure":"aggregated"},
+        {"label":"Pensioenpremies","category":"wages_squad","amount":-0.135313,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"wages_squad","amount":-0.944243,"disclosure":"aggregated"},
+        {"label":"Bedrijfsgebouwen en -terreinen","category":"depreciation","amount":-0.10118,"disclosure":"aggregated"},
+        {"label":"Machines en installaties","category":"depreciation","amount":-0.131275,"disclosure":"aggregated"},
+        {"label":"Andere vaste bedrijfsmiddelen","category":"depreciation","amount":-0.167653,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen vergoedingssommen clubs","category":"player_amortisation","amount":-0.572525,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen hand- en tekengelden","category":"player_amortisation","amount":-0.181389,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-0.04608,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.046969,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":21.741633,"expenses":20.756016,"net_result":0.938648},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Rentebaten en soortgelijke opbrengsten","amount":0.022924},
+          {"label":"Rentelasten en soortgelijke kosten","amount":-0.069893},
+          {"label":"Belastingen","amount":null}
+        ]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

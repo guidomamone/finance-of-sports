@@ -19,7 +19,11 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   data/<país>/<club>-data.js, ninguno inline acá. Desde la Versión 238, el CSS tampoco
   vive acá: está en css/styles.css, referenciado con un <link> que lleva el
   mismo `?v=` que los <script src> propios.
-- data/<país>/<clubId>-data.js: un archivo por club, en la carpeta de su país (código ISO de `clubs[clubId].country` en
+- data/<país>/<clubId>.json: LA FUENTE de los datos de un club (to-do 245, fase 2): el esquema, `schema_version`, la unidad (millones de la moneda del
+  club) y los nombres de campo en inglés están en `Admin/mediciones/245-esquema.md` y `data/schema/club-v1.json`. Se publica como dato abierto. Las tools
+  de carga lo leen y escriben con `tools/club-json.mjs` (`modificarClub`), que lo valida y regenera el data file; `tools/generar-data.mjs` lo hace a mano
+  (`--check` lo vigila, `audit.js` lo corre).
+- data/<país>/<clubId>-data.js: GENERADO desde ese JSON (no se edita), un archivo por club, en la carpeta de su país (código ISO de `clubs[clubId].country` en
   minúscula, igual que `data/club-leagues/` y `data/gestiones/`). El sitio arma la ruta en `loadClubData()`; las tools, SOLO con
   `tools/data-clubes.js` (`rutaData(clubId)`, `archivosData()`, `idDeArchivo()`): ninguna tool arma esa ruta a mano.
 - ASSET_V (`window.ASSET_V`, declarado en un `<script>` inline en index.html
@@ -313,7 +317,7 @@ Hasta que `index.html` se separó en archivos por club, todos los datos vivían 
 Boca. Lo que sigue es la estructura VIGENTE desde el día uno para cualquier club nuevo, no una
 limpieza de una sola vez:
 
-- **Datos del club, en su propio `data/<país>/<club>-data.js`.** Mismo patrón que ya tienen
+- **Datos del club, en su propio `data/<país>/<club>.json` (fuente) y su `-data.js` generado.** El generador emite el patrón que ya tienen
   `data/ar/river-ar-data.js`/`data/ar/racing-ar-data.js`/`data/ar/boca-ar-data.js`: `<club>RevenueLinesByYear`,
   `<club>ExpenseLinesByYear`, `<club>FiscalYearMeta`, `<club>PasesData`, `<club>ResultadosData`,
   `<club>TitulosData`. NUNCA pegues los datos de un club nuevo inline en el `<script>` de
@@ -374,17 +378,15 @@ limpieza de una sola vez:
      todavía no se pidió, a diferencia de todo lo del punto 1c.
 
      **`brandColor`**: el procedimiento para un club nuevo está en `.claude/skills/club-or-year-onboarding/club-nuevo.md` (sección "Color de marca").
-  1c. `sources{}`/`gestionesByClub{}`/`memberCountByClub{}` NO se tocan en `data/clubs.js` — se
-     autoregistran al final de tu propio `data/<país>/<club>-data.js`, mismo momento que el registro en
-     `CLUB_GENERIC_DATA` (punto 2 de abajo), copiando el patrón de cualquier club ya cargado como
-     plantilla:
+  1c. `sources{}`/`gestionesByClub{}`/`memberCountByClub{}` NO se tocan en `data/clubs.js` (Boca incluida): en el JSON del club son `sources[]`,
+     `management[]` y `members`, y el generador (`tools/generar-data.mjs`) emite al final de su `data/<país>/<club>-data.js`, junto al registro en
+     `CLUB_GENERIC_DATA` (punto 2 de abajo):
      ```js
      Object.assign(sources, { '<club>-fuente-1': {...}, '<club>-fuente-2': {...} });
-     gestionesByClub.<club> = { <gestionId>: { nombre:'...', firstYear:..., lastYear:... } };
-     memberCountByClub.<club> = <número o null>;
+     gestionesByClub['<club>'] = { <gestionId>: { nombre:'...', firstYear:..., lastYear:... } };
+     memberCountByClub['<club>'] = <número o null>;
      ```
-     Nunca redeclares estos 3 con `const` (ya existen, declarados una sola vez en `data/clubs.js`
-     con Boca adentro) — solo asignales una propiedad nueva o hacé `Object.assign`. Esto es seguro
+     Los 3 están declarados una sola vez en `data/clubs.js` (vacíos) y los data files solo les asignan una propiedad o hacen `Object.assign`. Esto es seguro
      porque los 3 solo se LEEN para el club actualmente elegido (después de que su propio archivo ya
      cargó), a diferencia de `clubs{}` (punto 1b), que hace falta para TODOS los clubes desde el
      arranque.
@@ -507,7 +509,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
 
 - CONVENCIÓN DE ARCHIVOS: un club = un `data/<país>/<clubId>-data.js`, cargado bajo
   demanda por `loadClubData(clubId)` armando el path por convención. Onboardear un
-  club NO requiere tocar `index.html`: alcanza con el `data/*.js` nuevo y su
+  club NO requiere tocar `index.html`: alcanza con el JSON nuevo (`alta-club.mjs` lo crea y genera su `-data.js`) y su
   entrada en `data/clubs.js`, más correr `node tools/generate-club-index.js`.
   El `clubId` de todo club es `<slug>-<iso2>` (`nacional-uy`), porque el id nombra el
   archivo y prefija cada `sourceId`. Los ids viejos sin país viven en `data/club-aliases.js`

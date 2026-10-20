@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "eintrachtfrankfurt-de",
+    "name": "Eintracht Frankfurt Fußball Aktiengesellschaft",
+    "display_name": "Eintracht Frankfurt",
+    "country": "DE",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "eintrachtfrankfurt-de-konzernabschluss-2024",
+      "club_id": "eintrachtfrankfurt-de",
+      "title": "Konzernabschluss zum Geschäftsjahr vom 01.07.2023 bis zum 30.06.2024 (Unternehmensregister)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "eintrachtfrankfurt-de-konzernabschluss-2025",
+      "club_id": "eintrachtfrankfurt-de",
+      "title": "Konzernabschluss zum Geschäftsjahr vom 01.07.2024 bis zum 30.06.2025 (Unternehmensregister)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "eintrachtfrankfurt-de-konzernabschluss-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Spielbetrieb","category":"matchday_competition","amount":24.565,"disclosure":"detailed"},
+        {"label":"Vermarktung","category":"sponsorship_commercial","amount":84.419,"disclosure":"detailed"},
+        {"label":"TV-Rechte","category":"broadcasting","amount":92.614,"disclosure":"detailed"},
+        {
+          "label": "Spielertransfer",
+          "category": "player_sales",
+          "amount": 143.163,
+          "disclosure": "detailed",
+          "items": [["Veräußerungserlöse von aktivierten und nichtaktivierten Spielern",143.026],["Erlöse aus Ausleihgebühren",0.137]]
+        },
+        {"label":"Merchandising und Catering","category":"sponsorship_commercial","amount":27.184,"disclosure":"detailed"},
+        {"label":"Frauen und Jugendfußball","category":"other_income","amount":7.622,"disclosure":"detailed"},
+        {"label":"Fußballschule","category":"youth_football","amount":1.065,"disclosure":"detailed"},
+        {"label":"Sonstiges","category":"other_income","amount":0.177,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":9.696068,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Aufwendungen für bezogene Waren","category":"admin_general_expense","amount":-12.208902,"disclosure":"detailed"},
+        {"label":"Personalaufwand (sportlicher Bereich, 77,5%)","category":"wages_squad","amount":-109.6,"disclosure":"detailed"},
+        {"label":"Personalaufwand (Verwaltung / Back Office, 22,5%)","category":"admin_general_expense","amount":-31.778594,"disclosure":"detailed"},
+        {"label":"Abschreibungen auf Spielerwerte (Männer, Frauen, NLZ)","category":"player_amortisation","amount":-27.823,"disclosure":"detailed"},
+        {
+          "label": "Abschreibungen auf Lizenzen/Software und Geschäfts- oder Firmenwert",
+          "category": "other_amortisation",
+          "amount": -1.217,
+          "disclosure": "detailed"
+        },
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-5.278,"disclosure":"detailed"},
+        {"label":"Spielbetrieb Lizenzfußball (Restbuchwerte aus Spielerabgängen)","category":"player_amortisation","amount":-16.492,"disclosure":"detailed"},
+        {
+          "label": "Spielbetrieb Lizenzfußball (organización y logística, desglose parcial en Nota 19: Verbandsabgaben, seguridad, uso del estadio, viajes, atención sanitaria, indumentaria, centro de entrenamiento)",
+          "category": "match_organisation_expense",
+          "amount": -26.414,
+          "disclosure": "aggregated"
+        },
+        {"label":"Marketing und Kommunikation","category":"admin_general_expense","amount":-57.77,"disclosure":"detailed"},
+        {"label":"Transfer","category":"other_expenses","amount":-38.907,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"admin_general_expense","amount":-4.784,"disclosure":"detailed"},
+        {"label":"Verwaltung","category":"admin_general_expense","amount":-13.138,"disclosure":"detailed"},
+        {
+          "label": "Frauen- und Jugendfußball",
+          "category": "youth_other_sports_expense",
+          "amount": -7.251,
+          "disclosure": "detailed",
+          "items": [["Nachwuchsleistungszentrum (NLZ)",4.366],["Frauenfußball",2.885]]
+        },
+        {"label":"Fußballschule","category":"youth_other_sports_expense","amount":-0.986,"disclosure":"detailed"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.132041,"tax":-4.867652,"gross_debt":57.069177,"cash":3.666443},
+      "official_totals": {"revenue":390.50482,"expenses":353.647338,"net_result":26.857789}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "eintrachtfrankfurt-de-konzernabschluss-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "actual",
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Spielbetrieb","category":"matchday_competition","amount":28.523,"disclosure":"detailed"},
+        {"label":"Vermarktung","category":"sponsorship_commercial","amount":91.571,"disclosure":"detailed"},
+        {"label":"TV-Rechte","category":"broadcasting","amount":107.937,"disclosure":"detailed"},
+        {
+          "label": "Spielertransfer",
+          "category": "player_sales",
+          "amount": 118.58,
+          "disclosure": "detailed",
+          "items": [["Veräußerungserlöse von aktivierten und nichtaktivierten Spielern",117.95],["Erlöse aus Ausleihgebühren",0.63]]
+        },
+        {"label":"Merchandising und Catering","category":"sponsorship_commercial","amount":29.236,"disclosure":"detailed"},
+        {"label":"Frauen und Jugendfußball","category":"other_income","amount":7.597,"disclosure":"detailed"},
+        {"label":"Sonstiges","category":"other_income","amount":0.248,"disclosure":"detailed"},
+        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":5.439701,"disclosure":"detailed"}
+      ],
+      "expenses": [
+        {"label":"Aufwendungen für bezogene Waren","category":"admin_general_expense","amount":-13.445403,"disclosure":"detailed"},
+        {"label":"Personalaufwand (sportlicher Bereich, 79,2%)","category":"wages_squad","amount":-140.4,"disclosure":"detailed"},
+        {"label":"Personalaufwand (Verwaltung / Back Office, 20,8%)","category":"admin_general_expense","amount":-36.900117,"disclosure":"detailed"},
+        {"label":"Abschreibungen auf Spielerwerte (Männer, Frauen, NLZ)","category":"player_amortisation","amount":-38.33,"disclosure":"detailed"},
+        {
+          "label": "Abschreibungen auf Lizenzen/Software und Geschäfts- oder Firmenwert",
+          "category": "other_amortisation",
+          "amount": -1.425,
+          "disclosure": "detailed"
+        },
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-6.236,"disclosure":"detailed"},
+        {"label":"Spielbetrieb Lizenzfußball (Restbuchwerte aus Spielerabgängen)","category":"player_amortisation","amount":-12.606,"disclosure":"detailed"},
+        {
+          "label": "Spielbetrieb Lizenzfußball (organización y logística, desglose parcial en Nota 19: Verbandsabgaben, seguridad, uso del estadio, viajes, atención sanitaria, centro de entrenamiento, indumentaria)",
+          "category": "match_organisation_expense",
+          "amount": -28.12,
+          "disclosure": "aggregated"
+        },
+        {"label":"Marketing und Kommunikation","category":"admin_general_expense","amount":-63.887,"disclosure":"detailed"},
+        {"label":"Transfer","category":"other_expenses","amount":-26.306,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"admin_general_expense","amount":-4.567,"disclosure":"detailed"},
+        {"label":"Verwaltung","category":"admin_general_expense","amount":-13.186,"disclosure":"detailed"},
+        {
+          "label": "Frauen- und Jugendfußball",
+          "category": "youth_other_sports_expense",
+          "amount": -6.68,
+          "disclosure": "detailed",
+          "items": [["Nachwuchsleistungszentrum (NLZ)",4.596],["Frauenfußball",2.084]]
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5.43105,"tax":-0.067432,"gross_debt":60.715487,"cash":4.383441},
+      "official_totals": {"revenue":389.131471,"expenses":392.089555,"net_result":-8.456566}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

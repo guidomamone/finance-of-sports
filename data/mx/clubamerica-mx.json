@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "clubamerica-mx",
+    "name": "Club de Fútbol América, S.A. de C.V.",
+    "display_name": "Club América",
+    "country": "MX",
+    "reporting_currency": "MXN",
+    "fiscal_year_start": "01-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "clubamerica-mx-ollamani-2025",
+      "club_id": "clubamerica-mx",
+      "title": "Ollamani, S.A.B. de C.V.: Reporte Financiero BMV (Trimestre 4D, Año 2025), Nota de Segmentos (\"Segmento de Fútbol\")",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "url": "https://ollamani.com.mx/reportes-3/",
+      "public_note": "Club América no publica un balance propio. Las cifras salen del segmento de fútbol de Ollamani, la compañía que controla al club, y ese segmento incluye también el negocio del Estadio Banorte sin desglose posible entre los dos. A nivel de segmento no se informan deuda ni caja."
+    }
+  ],
+  "management": [{"id":"ollamani","name":"Ollamani, S.A.B. (post-escisión de Televisa, 2024-actual)","first_year":2025,"last_year":2025}],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "MXN",
+      "source_id": "clubamerica-mx-ollamani-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": "ollamani",
+      "fx": {"rate":17.9528,"source":"document_close"},
+      "revenue": [
+        {
+          "label": "Ingresos del Segmento de Fútbol (incluye Estadio Banorte; Ollamani no desglosa Club América por separado, ver comentario de cabecera de este archivo)",
+          "category": "lump_football_operations",
+          "amount": 2795.643,
+          "disclosure": "detailed"
+        }
+      ],
+      "expenses": [
+        {
+          "label": "Costos y gastos del Segmento de Fútbol (cifra IMPLÍCITA: Ingresos del segmento menos Utilidad operativa del segmento antes de D&A informada por Ollamani; el documento no desglosa costos por rubro a nivel segmento)",
+          "category": "lump_football_operations_expense",
+          "amount": -2751.732,
+          "disclosure": "detailed"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":2795.643,"expenses":2751.732,"net_result":null}
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

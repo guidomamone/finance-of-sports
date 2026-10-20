@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-10-20",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "almerecity-nl",
+    "name": "Almere City FC B.V.",
+    "display_name": "Almere City",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "futbol"
+  },
+  "sources": [
+    {
+      "id": "almerecity-nl-wf-2024-2025-68975c13",
+      "club_id": "almerecity-nl",
+      "title": "Almere City FC B.V. — wf-2024-2025-68975c13 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "EUR",
+      "source_id": "almerecity-nl-wf-2024-2025-68975c13",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2025-06-30"},
+      "revenue": [
+        {"label":"Netto-omzet","category":"lump_football_operations","amount":15.391477,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":0.371884,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Lonen en salarissen","category":"wages_squad","amount":-9.325684,"disclosure":"aggregated"},
+        {"label":"Overige personeelskosten","category":"admin_general_expense","amount":-1.834305,"disclosure":"aggregated"},
+        {"label":"Afschrijving vaste activa","category":"depreciation","amount":-0.361672,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-4.102788,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.141762,"tax":0.00285,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":15.763361,"expenses":15.624449,"net_result":0},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Rentebaten en soortgelijke opbrengsen","amount":0},
+          {"label":"Rentelasten en soortgelijke kosten","amount":-0.141762},
+          {"label":"Vennootschapsbelasting","amount":0.00285}
+        ],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":15.391477,"reason":"el documento no desglosa este renglón"}]
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}
