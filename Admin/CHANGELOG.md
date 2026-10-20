@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 834 — Reino Unido: Burnley, Manchester City y Tottenham; cierre de Finanzas 5 (2026-10-20)
+
+* Burnley 2022 y 2023 (perímetro consolidado), Manchester City 2021 y 2023 y Tottenham 2022. Gestiones de Demin, Abramovich, Radrizzani,
+  Ashley, Donald y Lawwell. West Ham 2020-21 a 2023-24 sin la fila duplicada de "Exceptional items" (ajuste; el escalón es la 298 r2).
+
 ## Versión 833 — St. Gallen, Juventude, Ponte Preta y Patro Eisden; cierre del día (2026-10-19)
 
 * St. Gallen 2019, 2022 y 2023 con el perímetro AG + Event AG (como 2024-25); 298 ai: `verificar.mjs` saca la compensación intragrupo

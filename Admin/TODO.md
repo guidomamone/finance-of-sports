@@ -37,7 +37,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino: arranca por Latinoamérica (161 transcriptos y validados, ~US$ 50, en lotes de 5 a 8 clubes; espera tu ok) --> Pantallas 3
-* 261: Reino Unido: lotes 97 a 99 casi cargados (Arsenal, Aston Villa, Bournemouth, Brentford, Brighton, Burnley, Chelsea, Crystal Palace, Everton, Fulham, Man City y otros); quedan el reintento del lote 106, Newcastle 2020-21 (11 meses), Fulham 2021-22 y el alta de Celtic; la cola de transcripción por Mistral --> Finanzas 5
+* 261: Reino Unido: cargados 34 años de los lotes 97 a 99 y 106; quedan 25 casos de verificar del lote 106 (Leeds, Liverpool, Sunderland, Wolves) y volver a correr el 98; 4 escaneos sin estado de resultados (fijar con el ajuste `estado`, como Fulham); Newcastle 2020-21 (11 meses: falta validar la transcripción de 2019-20); Fulham 2021-22 (correr el 104 con --reintentar); el alta de Celtic (3 casos, color, liga y gestión) y sus otros años; la cola de transcripción por Mistral. Detalle: `Admin/Archive/sesion-finanzas-5-2026-10-20-cierre.md` --> Onboarding
 * 165 c: altas de los países nuevos que faltan --> Pantallas 3
 * 195: gestiones (presidentes) sin fuente confirmada (casi todas esperan respuesta del club)
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
