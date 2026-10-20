@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 855 — Un número contestado con corregir queda confirmado (2026-10-20) [261 · molde-no]
+
+- `tools/verificar.mjs`: un caso `numero-no-confirmado` contestado con `corregir --valor` cuenta como confirmado (Molde FLI 2016 y 2024).
+  Aprobado por la Auditora; lo cargado no cambia.
+
 ## Versión 854 — Molde FLI 2009-2023 (2026-10-20) [261 · molde-no]
 
 - Merge de Onboarding 4: Molde FLI 2009-2015 y 2017-2023 (lote 116; la AS va a descartados). 2016 y 2024 frenados por
