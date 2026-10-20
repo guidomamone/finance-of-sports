@@ -134,6 +134,48 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): no-eliteserien, verificado contra roster cacheado de "2022 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Viking".
 ```
 
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Viking/aarsregnskap-viking-fotball-as-2018.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Inntekter fra samarbeidsavtaler | pág. 6, precedente |
+| 2 | Billettinntekter fra kamper | pág. 6, precedente |
+| 3 | Netto gevinst ved salag av spillere | pág. 6, Jev 0.99 |
+| 4 | Medieinntekter NTF | pág. 6, Jev 1 |
+| 5 | Annen driftsinntekt | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Lønninger | pág. 20, Jev 0.96 |
+| 2 | Arbeidsgiveravgift | pág. 20, Jev 0.98 |
+| 3 | Personalkostnader fra Viking FK | pág. 20, precedente |
+| 4 | Pensjonskostnad (OTP) | pág. 20, precedente |
+| 5 | Andre personalkostnader | pág. 20, precedente |
+| 6 | Avskrivning på varige driftsmidler og immaterielle eiendeler | pág. 6, Jev 1 |
+| 7 | Nedskrivning av varige driftsmidler og immaterielle eiendeler | pág. 6, Jev 0.91 |
+| 8 | Annen driftskostnad | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): no-1divisjon, verificado contra roster cacheado de "2018 Norwegian First Division" (tools/club-league-reference/no.json), coincidencia exacta "Viking".
+```
+
 ## Fuentes
 
 ### viking-no-aarsregnskap-viking-fotball-as-2025
@@ -150,4 +192,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### viking-no-aarsregnskap-viking-fotball-as-2018
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

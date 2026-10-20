@@ -10,6 +10,15 @@ window.RANKINGS["no-1divisjon"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.944],["Otros ingresos",0.044]] },
     ],
   },
+  2018: {
+    leagueSize: 16,
+    wiki: {"t":"2018 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"viking-no", revenue:8.325, reportType:"official_balance_sheet",
+        sourceId:"viking-no-aarsregnskap-viking-fotball-as-2018",
+        mix:[["Comercial / Sponsors",4.299],["Estadio",0.843],["Televisión",1.032],["Venta de Jugadores",0.87],["Otros ingresos",1.282]] },
+    ],
+  },
   2017: {
     leagueSize: 16,
     wiki: {"t":"2017 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},

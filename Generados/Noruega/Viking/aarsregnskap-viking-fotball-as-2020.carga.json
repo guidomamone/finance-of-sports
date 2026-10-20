@@ -1,19 +1,9 @@
 {
  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2020.pdf",
- "generado": "2026-10-20T19:48:47.460Z",
- "frena": [
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2020: la pregunta ya está en la cola por aarsregnskap-viking-fotball-as-2017.pdf (74278dd) y vale para este año"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2020: la pregunta ya está en la cola por aarsregnskap-viking-fotball-as-2017.pdf (b2c3c6a) y vale para este año"
-  }
- ],
+ "generado": "2026-10-20T19:49:38.990Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-20: Viking Fotball AS presenta Konsernregnskap en 2017-2024 (con Viking Stadion AS, 100%, el estadio del club): mismo perímetro que el 2025 ya cargado (consolidado), coherencia de la serie (CONVENCIONES-DATOS, perímetro))",
-  "materialidad: \"Andre personalkostnader\" va como wages_squad con 0.7 (las dudas de gastos suman 0.81% de su lado)",
   "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -120,9 +110,9 @@
     "amountNative": -0.828483,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": "materialidad",
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.81% (≤ 1%) y esta tiene 0.7"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
@@ -363,11 +353,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 0.828483,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.81% (≤ 1%) y esta tiene 0.7",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-20: otros costos de personal, parte del costo de personal total: wages_squad",
    "destino": "expense",
    "amountNative": -0.828483
   },
@@ -545,8 +535,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 5,
   "lineasGasto": 8,
   "metaFilas": 4,

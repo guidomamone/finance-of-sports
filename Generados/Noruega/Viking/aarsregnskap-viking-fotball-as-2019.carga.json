@@ -1,20 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2019.pdf",
- "generado": "2026-10-20T19:48:47.321Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Ordinære avskrivninger\" -> depreciation 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2019: la pregunta ya está en la cola por aarsregnskap-viking-fotball-as-2017.pdf (74278dd) y vale para este año"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2019: la pregunta ya está en la cola por aarsregnskap-viking-fotball-as-2017.pdf (b2c3c6a) y vale para este año"
-  }
- ],
+ "generado": "2026-10-20T19:49:38.898Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-20: Viking Fotball AS presenta Konsernregnskap en 2017-2024 (con Viking Stadion AS, 100%, el estadio del club): mismo perímetro que el 2025 ya cargado (consolidado), coherencia de la serie (CONVENCIONES-DATOS, perímetro))",
   "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-12-31); pregunta en la cola (no frena)"
@@ -133,9 +120,9 @@
     "amountNative": -7.924786,
     "disclosureLevel": "aggregated",
     "_pag": 20,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Nedskrivninger",
@@ -385,11 +372,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 7.924786,
    "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20: depreciación ordinaria (Ordinære avskrivninger)",
    "destino": "expense",
    "amountNative": -7.924786
   },
@@ -552,8 +539,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 5,
   "lineasGasto": 8,
   "metaFilas": 4,

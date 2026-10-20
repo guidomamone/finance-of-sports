@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2017.pdf",
- "generado": "2026-10-20T19:48:46.784Z",
+ "generado": "2026-10-20T19:49:38.475Z",
  "frena": [
   {
    "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Tap ved salg av spillere\" -> player_impairment 0.4; \"Andre personalkostnader\" -> wages_squad 0.7"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2017: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2017: pregunta en la cola humana (node tools/cola.mjs)"
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Tap ved salg av spillere\" -> player_impairment 0.4"
   }
  ],
  "avisos": [
@@ -155,9 +147,9 @@
     "amountNative": -0.689184,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
@@ -444,11 +436,11 @@
    "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
    "signoFijo": 0.689184,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20: otros costos de personal, parte del costo de personal total: wages_squad",
    "destino": "expense",
    "amountNative": -0.689184
   },
@@ -618,7 +610,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 6,
   "lineasGasto": 10,
   "metaFilas": 4,
