@@ -55,7 +55,8 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     TODO si ya existe, o una descripción corta), lo deja y sigue con el resto. No le pregunta a Guido por eso.
   - **Pipeline es la única que toca `tools/`, y va siempre después.** Toma los frenados en orden. Por cada defecto: diseño, medición
     gratis (`medir-verificar`, `medir-cargar` o la que corresponda) y un informe corto para la auditora. No commitea hasta el veredicto.
-  - **La auditora aprueba o rechaza en lugar de Guido.** Solo lee y escribe su veredicto en `Admin/registros/auditoria-proceso.jsonl`.
+  - **La auditora aprueba o rechaza en lugar de Guido.** Solo lee y escribe su veredicto en `Admin/registros/auditoria-proceso.jsonl` (y la
+    REGLA que sale de una votación, en `Admin/CONVENCIONES-DATOS.md`; skill `votacion-de-criterios`).
     Aprueba sola cuando se cumple todo: (1) la medición no cambia ningún año ya cargado; (2) el cambio no agrega un criterio de datos
     nuevo (perímetro, categoría, período, tratamiento de una partida); (3) cierra los casos que dice cerrar; (4) no endurece una compuerta
     (ver la memoria de no endurecer reglas). Si falla (1) o (3), rechaza con el motivo. Si es (2) o (4), lo deriva a Guido.

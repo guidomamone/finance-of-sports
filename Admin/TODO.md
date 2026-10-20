@@ -32,7 +32,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **C. Abaratar antes del onboarding grande**
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script (z2, Westerlo 2015 de 18 meses y Aston Villa de 13, a decidir con vos; g2, condicional; q2, partir una fila mixta en Silkeborg y Viborg 2025, ya cargados: a decidir con vos) --> Pipeline
+* 298: mejoras de script (z2, Westerlo 2015 de 18 meses y Aston Villa de 13, a decidir con vos; g2, condicional) --> Pipeline
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -251,8 +251,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola.
-   q2) partir una fila que mezcla amortización de pases con depreciación (Silkeborg 2025 "Depreciation, amortisation and impairment" 6.502
-   + 6.168; Viborg 2025): hoy va entera a player_amortisation y la cifra no es exacta (mismo espíritu que la g2).
    z2) (también Aston Villa 2023-24, 13 meses por cambio de cierre de mayo a junio, precedente Wolves 2025: la compuerta de `cargar.mjs`,
    `per.meses < 12`, no reconoce una transición de más de 12 meses con importes del año anterior; Aston Villa se carga con la compuerta
    salteada a mano esa sola vez) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en

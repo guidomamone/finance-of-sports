@@ -414,3 +414,11 @@ financiera solo si el club responde: si el documento lo llama "deuda financiera"
 Se lee en la nota de cada documento: la etiqueta ("debiti verso altri finanziatori") no alcanza. Casos: Monza 2024, 13,5 M de Factorit
 pro soluto, deuda 0; Genoa 2022, 30,4 M de Banca Sistema que la propia nota llama "debito finanziario autoliquidante", deuda 95,7 M. Por eso
 `tools/vocabulario.mjs` no suma "altri finanziatori" por su cuenta: lo decide la lectura del documento (escalón 1b o 2, o un ajuste con cita).
+
+## REGLA: una línea de depreciación y amortización junta se parte con las notas (votación 3 a 0, 2026-10-20, Silkeborg y Viborg 2025)
+
+Cuando el estado de resultados junta en una línea la amortización de los derechos de jugadores y la depreciación de bienes de uso
+("Depreciation, amortisation and impairment") pero las notas las abren, se parte con los importes de las notas: derechos de jugadores a
+`player_amortisation`, bienes de uso a `depreciation`. Si las notas no la abren, va entera a `player_amortisation` con `incluidoEn` (la regla
+de la línea que junta dos conceptos). Precedente: Silkeborg 2024 y Viborg 2024 ya estaban partidos. Casos: Silkeborg 2025 (12.670 = Note 10
+6.502 + Note 11 6.168) y Viborg 2025 (18.375.737 = 15.751.691 + 2.624.046). Registro: `Admin/registros/auditoria-proceso.jsonl`.
