@@ -429,3 +429,10 @@ Cuando el estado de resultados junta en una línea la amortización de los derec
 `player_amortisation`, bienes de uso a `depreciation`. Si las notas no la abren, va entera a `player_amortisation` con `incluidoEn` (la regla
 de la línea que junta dos conceptos). Precedente: Silkeborg 2024 y Viborg 2024 ya estaban partidos. Casos: Silkeborg 2025 (12.670 = Note 10
 6.502 + Note 11 6.168) y Viborg 2025 (18.375.737 = 15.751.691 + 2.624.046). Registro: `Admin/registros/auditoria-proceso.jsonl`.
+
+## REGLA: una gestión (presidente) sin fuente pública queda en null (Guido, 2026-10-20)
+
+Una gestión se busca en la web (búsqueda general, la página del club, Wikipedia y la prensa). Si no aparece una fuente que confirme quién
+estaba a cargo al cierre, el año queda sin gestión (`null`) y no se espera la respuesta del club: la pregunta en `Admin/dudas-por-club.md`
+puede quedar, pero no frena nada. Para Wikipedia no se abre la página entera (es lo que hace caer a los subagentes): se lee solo la ficha o
+la sección que hace falta.
