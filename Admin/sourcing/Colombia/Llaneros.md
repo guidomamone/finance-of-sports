@@ -28,3 +28,5 @@
 **Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
 
 Estados financieros en disco ahora: 9 ejercicios (2016-2020, 2022-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2025 desde `Clubes/Colombia/Llaneros/estados-financieros-2025.pdf` (sourceId `llaneros-co-estados-financieros-2025`).

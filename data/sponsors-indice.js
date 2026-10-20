@@ -1515,6 +1515,7 @@ window.SPONSORS_INDICE = [
   ["matthai","Matthäi",["c"]],
   ["max","MAX",["c"]],
   ["max-sport","Max Sport",["m"]],
+  ["maxi-cola","Maxi Cola",["c"]],
   ["maxizoo","MaxiZoo",["c"]],
   ["maxrun","MaxRun",["m"]],
   ["mayfair","Mayfair",["c"]],
