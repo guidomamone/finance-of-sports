@@ -18,7 +18,7 @@ sirve y llevalo a donde se lee: una regla a `Admin/CONVENCIONES.md` (proceso), `
 
 - Leé `Admin/ESTADO.md` (qué hay armado hoy), vos solo, sin que Guido lo pida. `Admin/TODO.md` NO se lee al arrancar: se abre cuando
   la tarea es elegir qué sigue, cuando Guido lo pide, o para agregar o borrar un punto. Qué hay cargado de cada club:
-  `Admin/ESTADO-clubes.md` (generado).
+  `Admin/ESTADO-clubes.md` (generado). `Admin/CONVENCIONES.md` (reglas de proceso) se lee cuando la skill de la tarea lo pide.
 - **Usá la skill que corresponde a la tarea; es obligatorio.** Sin ella, una sesión contradice un criterio ya decidido sin saber que
   existía (pasó de verdad). Empezá por `start-session-finance-of-sports-project`, salvo que la tarea sea onboardear clubes o tocar
   las tools del pipeline: ahí `club-or-year-onboarding`, que trae su propio arranque. Las demás: `club-sourcing` (buscar documentos),
@@ -37,6 +37,7 @@ Con cualquier cambio real (datos, features, estructura, copy), sin que Guido lo 
   `Admin/ESTADO-clubes.md` no se escribe a mano: `node tools/generate-club-index.js`.
 - **`Admin/TODO.md`**: se BORRA lo resuelto (no se marca "RESUELTO"). Un punto nuevo toma el número siguiente al más alto.
 - **`Admin/CHANGELOG.md`**: siempre una entrada, corta (qué cambió). `Admin/finance-of-sports-project.md` solo si amerita el porqué.
+- **En un worktree no se editan `Admin/TODO.md`, `CHANGELOG.md` ni `ESTADO.md`:** la sesión deja `Admin/sesiones/<rama>.md` (qué cambió, qué queda, qué deja de ser cierto) y la principal escribe esos tres. Ver `worktree.md`, en la skill de arranque.
 - La lista de pendientes vive solo en `Admin/TODO.md`. El detalle del cierre: skill de arranque, sección 5.
 
 ## Cada PDF nuevo: transcribirlo a Markdown ANTES de usarlo

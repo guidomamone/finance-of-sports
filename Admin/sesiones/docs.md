@@ -35,3 +35,9 @@ Para que la principal lo agregue (la sesión no toca `TODO.md`): chequeos `json-
 
 Fase 2 del 255: aplicar lo que Guido apruebe del inventario (19 propuestas de skill, `CLAUDE.md` y memoria), contestar las 9 preguntas, y decidir cuáles de los
 12 chequeos de la sección 4 se hacen (hooks del 250 o `audit.js`).
+
+## 255 fase 2 (DOCS 1)
+
+- `CLAUDE.md`: en un worktree se deja la nota de sesión y la principal escribe TODO, CHANGELOG y ESTADO; `CONVENCIONES.md` se lee cuando la skill de la tarea lo pide (Q-1, Q-9).
+- `Admin/CONVENCIONES.md`: la regla de rayas largas queda solo para el texto visible del sitio (Q-7).
+- `Admin/consolidar-reglas-255.md`: sección 2 reescrita con el texto final de 27 propuestas (23 de skill, 4 de memoria) y sección 3 con las respuestas de Guido. Queda una pregunta nueva (R-1).
