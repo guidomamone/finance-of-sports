@@ -1,0 +1,416 @@
+{
+ "pdf": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.pdf",
+ "md": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md",
+ "mdSha1": "499ddf7a85cafe86304edaad18c2dece362f1bd8",
+ "ubicacionSha1": "37806ff7a4a950f30e8fa4f634d3061b198f68a6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T17:07:47.397Z",
+ "ubicacion": {
+  "estado": [
+   "b12"
+  ],
+  "notas_ingresos": [
+   "b24",
+   "b25"
+  ],
+  "notas_gastos": [
+   "b26",
+   "b28",
+   "b29"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b12",
+   "escala": "miles",
+   "evidencia": "L3808: Notes £000 £000"
+  },
+  {
+   "bloque": "b24",
+   "escala": "miles",
+   "evidencia": "L4944: £000 £000"
+  },
+  {
+   "bloque": "b25",
+   "escala": "miles",
+   "evidencia": "L4970: £000 £000"
+  },
+  {
+   "bloque": "b26",
+   "escala": "miles",
+   "evidencia": "L4990: £000 £000"
+  },
+  {
+   "bloque": "b28",
+   "escala": "miles",
+   "evidencia": "L5055: £000 £000"
+  },
+  {
+   "bloque": "b29",
+   "escala": "miles",
+   "evidencia": "continuación de b28 (£000)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b12",
+   "linea": 3810,
+   "etiqueta": "Revenue",
+   "actual": "143,597",
+   "anterior": "124,580",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3811,
+   "etiqueta": "Operating expenses (before intangible asset transactions and exceptional items)",
+   "actual": "(117,062)",
+   "anterior": "(105,394)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3812,
+   "etiqueta": "Profit from trading before intangible asset transactions and exceptional items",
+   "actual": "26,535",
+   "anterior": "19,186",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3813,
+   "etiqueta": "Exceptional operating (expense)/income",
+   "actual": "(2,005)",
+   "anterior": "203",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3814,
+   "etiqueta": "Amortisation of intangible assets",
+   "actual": "(13,845)",
+   "anterior": "(11,483)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3815,
+   "etiqueta": "Profit on disposal of intangible assets",
+   "actual": "31,488",
+   "anterior": "6,637",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3816,
+   "etiqueta": "Operating profit",
+   "actual": "42,173",
+   "anterior": "14,543",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3817,
+   "etiqueta": "Finance income",
+   "actual": "5,082",
+   "anterior": "4,726",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3818,
+   "etiqueta": "Finance expense",
+   "actual": "(1,568)",
+   "anterior": "(1,444)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3819,
+   "etiqueta": "Profit before tax",
+   "actual": "45,687",
+   "anterior": "17,825",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3820,
+   "etiqueta": "Tax expense",
+   "actual": "(11,753)",
+   "anterior": "(4,441)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 3821,
+   "etiqueta": "Profit and total comprehensive profit for the year",
+   "actual": "33,934",
+   "anterior": "13,384",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b24",
+   "linea": 4946,
+   "etiqueta": "Ticketing",
+   "actual": "49,789",
+   "anterior": "40,823",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b24",
+   "linea": 4947,
+   "etiqueta": "Commercial / sponsorship",
+   "actual": "12,968",
+   "anterior": "13,831",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b24",
+   "linea": 4948,
+   "etiqueta": "Retail outlets and e-commerce",
+   "actual": "23,137",
+   "anterior": "22,650",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b24",
+   "linea": 4949,
+   "etiqueta": "Media rights",
+   "actual": "45,208",
+   "anterior": "36,374",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b24",
+   "linea": 4950,
+   "etiqueta": "Stadium operations",
+   "actual": "10,461",
+   "anterior": "8,814",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b24",
+   "linea": 4951,
+   "etiqueta": "Other",
+   "actual": "2,034",
+   "anterior": "2,088",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b25",
+   "linea": 4973,
+   "etiqueta": "Football and Stadium Operations",
+   "actual": "61,202",
+   "anterior": "49,971",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b25",
+   "linea": 4974,
+   "etiqueta": "Merchandising",
+   "actual": "30,061",
+   "anterior": "30,089",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b25",
+   "linea": 4975,
+   "etiqueta": "Multimedia and Other Commercial Activities",
+   "actual": "52,334",
+   "anterior": "44,520",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b26",
+   "linea": 4992,
+   "etiqueta": "Staff costs (Note 9)",
+   "actual": "74,763",
+   "anterior": "65,595",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses (before intangible asset transactions and exceptional items)"
+  },
+  {
+   "bloque": "b26",
+   "linea": 4993,
+   "etiqueta": "Depreciation of property, plant and equipment (Note 16}",
+   "actual": "2,713",
+   "anterior": "2,560",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses (before intangible asset transactions and exceptional items)"
+  },
+  {
+   "bloque": "b26",
+   "linea": 4994,
+   "etiqueta": "Impairment of intangible assets and other prepaid costs (Note 8)",
+   "actual": "2,004",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Exceptional operating (expense)/income"
+  },
+  {
+   "bloque": "b26",
+   "linea": 4995,
+   "etiqueta": "Amortisation of intangible assets (Note 17)",
+   "actual": "13,845",
+   "anterior": "11,483",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation of intangible assets"
+  },
+  {
+   "bloque": "b26",
+   "linea": 4996,
+   "etiqueta": "Foreign exchange loss",
+   "actual": "291",
+   "anterior": "213",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Operating expenses (before intangible asset transactions and exceptional items)"
+  },
+  {
+   "bloque": "b26",
+   "linea": 4997,
+   "etiqueta": "Cost of inventories recognised as expense",
+   "actual": "16,823",
+   "anterior": "16,483",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses (before intangible asset transactions and exceptional items)"
+  },
+  {
+   "bloque": "b26",
+   "linea": 4999,
+   "etiqueta": "Short term and variable lease expense for leases not recognised under IFRS16",
+   "actual": "13",
+   "anterior": "63",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses (before intangible asset transactions and exceptional items)"
+  },
+  {
+   "bloque": "b28",
+   "linea": 5058,
+   "etiqueta": "Wages and salaries",
+   "actual": "65,850",
+   "anterior": "57,814",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (Note 9)"
+  },
+  {
+   "bloque": "b28",
+   "linea": 5059,
+   "etiqueta": "Social security costs",
+   "actual": "7,798",
+   "anterior": "6,703",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (Note 9)"
+  },
+  {
+   "bloque": "b28",
+   "linea": 5060,
+   "etiqueta": "Other pension costs",
+   "actual": "1,115",
+   "anterior": "1,078",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (Note 9)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 5061,
+   "etiqueta": "",
+   "actual": "74,763",
+   "anterior": "65,595",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (Note 9)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 3810,
+  "actual": "143,597"
+ },
+ "total_gastos": {
+  "linea": 3811,
+  "actual": "(117,062)"
+ },
+ "resultado": {
+  "linea": 3821,
+  "actual": "33,934",
+  "anterior": "13,384"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro 'Revenue by category' (b24, L4946-L4951) como desglose principal de Revenue y se deja el de segmentos (b25, L4973-L4975) como alternativo?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Revenue",
+   "texto": "Dos cuadros desglosan Revenue (143,597) por criterios distintos; cargar ambos duplicaría.",
+   "bloques": [
+    "b24",
+    "b25"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que no existe un renglón 'Salarios del plantel' separado y que el gasto de personal se carga solo con 'Wages and salaries' (L5058) sin separar jugadores?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Staff costs (Note 9)",
+   "texto": "El cuadro de Staff costs (L5058-L5061) no separa salarios del plantel; la nota L5062 solo menciona personal de agencia.",
+   "bloques": [
+    "b28",
+    "b29"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Las líneas de b26 son partidas 'after charging' y no suman el total de gastos operativos; algunas (amortización, deterioro) corresponden a otros renglones del estado. El cuadro de Staff costs no distingue salarios del plantel."
+}

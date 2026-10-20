@@ -1,0 +1,336 @@
+{
+ "pdf": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.pdf",
+ "generado": "2026-10-20T17:08:30.826Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (celtic-gb)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 5 documento(s) mirados)",
+  "categorías en 0 aun después del reintento (se carga así): Salarios del plantel",
+  "gastos: ningún total impreso igual a la suma de las líneas (-130.907); queda la suma, verificada por el resultado del ejercicio"
+ ],
+ "ejercicio": {
+  "clubId": "celtic-gb",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Revenue",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 143.597,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Profit on disposal of intangible assets",
+    "normalizedCategory": "player_sales",
+    "amountNative": 31.488,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Operating expenses (before intangible asset transactions and exceptional items)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -117.062,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Exceptional operating (expense)/income",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -2.005,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisation of intangible assets",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -13.845,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2025-06-30",
+   "sourceId": "celtic-gb-plc-group-accounts-2024-25",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 3.514,
+   "tax": -11.753,
+   "extraRows": [
+    {
+     "label": "Finance income",
+     "value": 5.082
+    },
+    {
+     "label": "Finance expense",
+     "value": -1.568
+    },
+    {
+     "label": "Tax expense",
+     "value": -11.753
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Revenue",
+     "lado": "revenue",
+     "importe": 143.597,
+     "motivo": "Claude 2026-10-20: el estado trae un solo renglón Revenue; el desglose por categoría (nota 4, pág. 74 del visor) lo evalúa el reintento; si el desglose entra, este total no se suma aparte"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 175.085,
+   "officialTotalExpenses": 130.907,
+   "officialPAT": 33.934
+  },
+  "source": {
+   "id": "celtic-gb-plc-group-accounts-2024-25",
+   "clubId": "celtic-gb",
+   "title": "Celtic plc — celtic-plc-group-accounts-2024-25 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "celtic-gb",
+ "year": 2025,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 8,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Revenue",
+   "page": 56,
+   "native": 143.597,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 143.597,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: el estado trae un solo renglón Revenue; el desglose por categoría (nota 4, pág. 74 del visor) lo evalúa el reintento; si el desglose entra, este total no se suma aparte",
+   "destino": "revenue",
+   "amountNative": 143.597
+  },
+  {
+   "label": "Profit on disposal of intangible assets",
+   "page": 56,
+   "native": 31.488,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 31.488,
+   "cat": "player_sales",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 31.488
+  },
+  {
+   "label": "Operating expenses (before intangible asset transactions and exceptional items)",
+   "page": 56,
+   "native": 117.062,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 117.062,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (renglón total de gastos operativos o costo de ventas en other_expenses; consideration en player_sales; derechos y deducciones de UEFA y TV en la categoría de su ingreso)",
+   "destino": "expense",
+   "amountNative": -117.062
+  },
+  {
+   "label": "Exceptional operating (expense)/income",
+   "page": 56,
+   "native": 2.005,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.005,
+   "cat": "exceptional_items",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.005
+  },
+  {
+   "label": "Amortisation of intangible assets",
+   "page": 56,
+   "native": 13.845,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 13.845,
+   "cat": "player_amortisation",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -13.845
+  },
+  {
+   "label": "Finance income",
+   "page": null,
+   "native": 5.082,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Finance expense",
+   "page": null,
+   "native": -1.568,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax expense",
+   "page": null,
+   "native": -11.753,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 175.085,
+  "expSum": -130.907,
+  "officialTotalRevenue": 175.085,
+  "officialTotalExpenses": 130.907,
+  "officialPAT": 33.934,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 33.934,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 175.085
+  }
+ },
+ "liga": {
+  "valor": "gb-scottishpremiership",
+  "fuente": "roster cacheado de \"2024–25 Scottish Premiership\" (tools/club-league-reference/gb.json), coincidencia exacta \"Celtic\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (132 de 134 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Escocia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2025-06-30 = 0.7299 (Cierre BCE al 30/6/2025, cruzando GBP/EUR (0,85550) × EUR/USD (1,1720) (1 GBP ≈ 1,3700 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "celtic-gb-plc-group-accounts-2024-25",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-scottishpremiership",
+   "fuente": "roster cacheado de \"2024–25 Scottish Premiership\" (tools/club-league-reference/gb.json), coincidencia exacta \"Celtic\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 2,
+  "lineasGasto": 3,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

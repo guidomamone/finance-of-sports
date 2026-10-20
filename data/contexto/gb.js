@@ -44,6 +44,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"W88","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"96.com","marca":"Castore","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
+  'celtic-gb': {
+    2025: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","temporada":"2024–25 Scottish Premiership","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374234380","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sponsorship.sportbusiness.com/news/celtic-lands-long-term-extension-with-kit-sponsor-dafabet","marca":"https://www.scotsman.com/sport/football/celtic/celtic-fc-new-kit-unveil-adidas-home-shirt-heres-when-it-is-available-to-buy-and-the-price-4645920"}},
+  },
   'chelsea-gb': {
     2020: {"estadio":"Stamford Bridge","capacidad":40834,"sponsor":"Three","marca":"Nike","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
     2021: {"estadio":"Stamford Bridge","capacidad":40834,"sponsor":"Three","marca":"Nike","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
