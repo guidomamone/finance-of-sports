@@ -28,7 +28,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 
 **A. En marcha**
 * 246: ids estables con mapa de alias; primero el diseño, para tu ok --> Datos 3
-* 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos), después del 246 --> Datos 3
+* 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos), después del 246 --> sesión nueva en Opus (ok de Guido)
 
 **B. Pantallas y distribución (después del 246)**
 * Vålerenga: la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
