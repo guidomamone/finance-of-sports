@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2020-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2020-06-30-individual.md",
- "generado": "2026-10-20T20:02:22.527Z",
- "scriptHuella": "1b9f223960d0",
- "estado": "cola",
+ "generado": "2026-10-20T20:44:27.054Z",
+ "scriptHuella": "b54df45c8846",
+ "estado": "ok",
  "clubId": null,
  "year": 2020,
  "escala": {
@@ -12,12 +12,22 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "cbc81bc",
-  "8091042",
-  "990a2a8"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2020-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "5490",
+   "linea": 265,
+   "etiqueta": "Belastingen op het resultaat (67/77)",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "El .md omite la fila de impuestos: resultado del ejercicio impreso -708.745 menos resultado ordinario -703.255 = 5.490",
+   "evidencia": ".md L262 y L265",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -32,8 +42,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 0.005182999999999938
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 9.999999999177334e-7
   },
   {
    "nombre": "documento del año 2021",
@@ -51,7 +61,10 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: fila \"Belastingen op het resultaat (67/77)\" (impuesto) 5490 (2026-10-20, El .md omite la fila de impuestos: resultado del ejercicio impreso -708.745 menos resultado ordinario -703.255 = 5.490)",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Positief (Negatief) resultaat van het boekjaar (+)/(-)\"): aceptar, en jaarrekening-2020-06-30-individual.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
@@ -59,11 +72,11 @@
   "ingresos": 0.79939,
   "gastos": 1.457374,
   "financiero": 0.045578,
-  "impuesto": 0,
+  "impuesto": 0.00549,
   "resultadoImpreso": -0.708745,
   "resultadoParaCargar": -0.708745,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -124,13 +137,13 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": "rótulo",
   "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Financiële opbrengsten",
-   "M": -0.000154,
+   "M": 0.000154,
    "linea": 260
   },
   {
@@ -139,5 +152,11 @@
    "linea": 261
   }
  ],
- "impuesto": []
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (67/77)",
+   "M": -0.00549,
+   "linea": 265
+  }
+ ]
 }
