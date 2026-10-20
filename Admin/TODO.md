@@ -28,14 +28,14 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias; primero el diseño, para tu ok --> Datos 3
 * 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos), después del 246 --> Datos 3
 
-**C. Pantallas y distribución (después del 246)**
+**B. Pantallas y distribución (después del 246)**
 * Vålerenga: la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 259: material de difusión (después de 241)
 * 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
-**D. Técnico (cuando haya tiempo; nada urgente)**
+**C. Técnico (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
@@ -43,7 +43,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): elegir cuáles van a hook o a audit.js (Pipeline)
 * 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
-**E. Orden de la casa**
+**D. Orden de la casa**
 * 330 (después del 246 y el 245, decisión de Guido): revisar todo el proyecto buscando dónde se gastan tokens en decidir o descubrir cosas que después se pierden (decisiones en el chat o en notas de sesión que no llegan a una regla, a un registro ni a una tool; hallazgos que no se leen nunca); proponer dónde tiene que quedar cada cosa
 * 326: check-in de outreach, el 2026-10-24
 * 257: skills que faltan
