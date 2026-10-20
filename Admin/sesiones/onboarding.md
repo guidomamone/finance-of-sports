@@ -212,4 +212,4 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 
 ### Onboarding 6: Estudiantes LP (2026-10-20)
 - "Resultado por revaluación de jugadores" 2023 (291 M, Nota 16) y 2024 (4.053 M, Nota 13 = hechos posteriores: ventas pactadas tras el cierre, saldo en Jugadores destinados a la venta) pasó de `player_sales` a `other_income` (voto de la Auditora); ajustes `categoria` en los dos documentos; 2024-25 no repite la fila. `Admin/carga-clubes/estudianteslp.md` corregido. ASSET_V 1513.
-- Gimnasia LP: la Auditora (3 a 0) pide la nota pública sin decir no-cash, y la principal pidió sacarla (espera a Guido). Sin nota hasta que la principal confirme.
+- Gimnasia LP: `publicNote` repuesta en 2024 y 2025 (3 a 0, other_income como está; el documento no explica la fila). ASSET_V 1514. La "Nota 16" que cita la fila de Estudiantes 2023 no aparece como nota en el documento (solo la cita la propia fila).
