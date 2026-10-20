@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.md",
- "generado": "2026-10-19T16:17:39.971Z",
+ "generado": "2026-10-20T19:55:22.232Z",
+ "scriptHuella": "1b9f223960d0",
  "estado": "ok",
  "clubId": "stgallen-ch",
  "year": 2019,
@@ -38,7 +39,7 @@
   {
    "nombre": "documento del año 2020",
    "ok": true,
-   "detalle": "ingresos de 2019: 34.815 en este documento y 34.81 en geschaeftsbericht-2019-20.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2019: 28.41 en este documento y 28.41 en geschaeftsbericht-2019-20.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -47,7 +48,10 @@
   }
  ],
  "notas": [
+  "\"Entschädigung von FCSG Event AG\" (L194) y \"Entschädigung an FCSG AG\" (L202) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
+  "\"Entschädigung von FCSG Event AG\" (L321) y \"Entschädigung an FCSG AG\" (L329) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
   "la lectura base no cerraba; cerró con la lectura 4",
+  "\"Entschädigung von FCSG Event AG\" (L321) y \"Entschädigung an FCSG AG\" (L329) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
   "duda de localizar ya contestada para el club (antes de su alta) (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",
   "duda de extraer ya contestada para el club (perimetro, \"Entschädigung von FCSG Event AG\"): corregir no, en geschaeftsbericht-2023-24.pdf"
@@ -56,8 +60,8 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 34.815,
-  "gastos": 39.806,
+  "ingresos": 28.41,
+  "gastos": 33.401,
   "financiero": -0.067,
   "impuesto": -0.004,
   "resultadoImpreso": -5.063,
@@ -72,14 +76,6 @@
    "M": 28.001,
    "pagina": 7,
    "linea": 320,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Entschädigung von FCSG Event AG",
-   "lado": "ingreso",
-   "M": 6.405,
-   "pagina": 7,
-   "linea": 321,
    "origen": "estado"
   },
   {
@@ -128,14 +124,6 @@
    "M": 4.145,
    "pagina": 7,
    "linea": 327,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Entschädigung an FCSG AG",
-   "lado": "gasto",
-   "M": 6.405,
-   "pagina": 7,
-   "linea": 329,
    "origen": "estado"
   },
   {

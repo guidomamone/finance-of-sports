@@ -14,7 +14,7 @@ window.RANKINGS_INDICE = {
   "br-serieB": [2025,17,20],
   "br-serieC": [2024,3,20],
   "br-serieD": [2018,2,68],
-  "ch-superleague": [2019,3,10],
+  "ch-superleague": [2020,3,10],
   "cl-primera": [2025,3,16],
   "co-primeraA": [2025,13,20],
   "co-primeraB": [2018,2,16],
