@@ -20,6 +20,7 @@
 // no consume tokens de Claude sea 1 PDF o sean 2000 -- ver la sección de esto en Admin/Archive/test-costo-transcripcion.md.
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync } from 'node:fs';
+import { SESION } from './sesion.mjs'; // gasto por sesión
 import { resolve, dirname, basename, extname, join } from 'node:path';
 import { derivado, ubicar } from './rutas.mjs';
 import { execFileSync } from 'node:child_process';
@@ -222,6 +223,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, op
       const fidelidadP1 = fidelidad ? fidelidad.findings.filter((f) => f.sev === 'P1').length : null;
 
       const record = {
+      sesion: SESION,
         ts: new Date().toISOString(),
         pdf: pdfPath.replace(projectRoot + '/', ''),
         md: mdPath.replace(projectRoot + '/', ''),
@@ -249,7 +251,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, op
 
   appendFileSync(
     failuresPath,
-    JSON.stringify({ ts: new Date().toISOString(), pdf: pdfPath.replace(projectRoot + '/', ''), error: lastErr }) + '\n',
+    JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, pdf: pdfPath.replace(projectRoot + '/', ''), error: lastErr }) + '\n',
     'utf8'
   );
   return { ok: false, pdf: pdfPath, error: lastErr };
@@ -288,7 +290,7 @@ async function runBatch(pending, apiKey, concurrency, timeoutMs, opts = {}) {
       res = { ok: false, pdf: pdfPath, error: String(err?.message ?? err) };
       appendFileSync(
         failuresPath,
-        JSON.stringify({ ts: new Date().toISOString(), pdf: pdfPath.replace(projectRoot + '/', ''), error: res.error }) + '\n',
+        JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, pdf: pdfPath.replace(projectRoot + '/', ''), error: res.error }) + '\n',
         'utf8'
       );
     }

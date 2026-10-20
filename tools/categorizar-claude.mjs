@@ -83,6 +83,7 @@
 // ============================================================================
 
 import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
+import { SESION } from './sesion.mjs'; // gasto por sesión
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
@@ -397,7 +398,7 @@ export async function categorizarConClaude({ club, year = null, rubros, modelo =
   const r = await callClaude({ apiKey: apiKey || readKey(), model: modelo, effort: esfuerzo, system, user: text });
   if (r.pendiente) return { resultados: [], pendiente: true, costUsd: 0, model: modelo };
   const costUsd = costOf(modelo, r.usage) * (r.batch ? FACTOR_BATCH : 1);
-  if (!r.batch) appendFileSync(costLogPath, JSON.stringify({ ts: new Date().toISOString(), tarea: 'categorizar', club, year, model: r.model || modelo, promptTokenCount: (r.usage?.input_tokens || 0) + (r.usage?.cache_creation_input_tokens || 0) + (r.usage?.cache_read_input_tokens || 0), cacheReadTokens: r.usage?.cache_read_input_tokens || 0, candidatesTokenCount: r.usage?.output_tokens || 0, costUsd: Number(costUsd.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: r.stopReason || null, rubros: ids.length, error: r.error || undefined }) + '\n');
+  if (!r.batch) appendFileSync(costLogPath, JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, tarea: 'categorizar', club, year, model: r.model || modelo, promptTokenCount: (r.usage?.input_tokens || 0) + (r.usage?.cache_creation_input_tokens || 0) + (r.usage?.cache_read_input_tokens || 0), cacheReadTokens: r.usage?.cache_read_input_tokens || 0, candidatesTokenCount: r.usage?.output_tokens || 0, costUsd: Number(costUsd.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: r.stopReason || null, rubros: ids.length, error: r.error || undefined }) + '\n');
   if (r.error) return { resultados: [], error: r.error, usage: r.usage, costUsd, model: modelo };
   const byId = new Map((r.parsed.rubros || []).map((x) => [x.id, x]));
   const resultados = ids.map((i, n) => { const x = byId.get(n + 1); return { idx: i, label: rs[i].label, lado: rs[i].lado, categoria: x?.categoria ?? null, confianza: x?.confianza ?? null, motivo: x?.motivo ?? (x ? '' : 'sin respuesta para este id') }; });
@@ -467,7 +468,7 @@ async function backtest(opt) {
       const perRubro = (r.costUsd || 0) / Math.max(1, r.resultados.length);
       for (const x of r.resultados) {
         const src = d.rubros[x.idx];
-        appendFileSync(outPath, JSON.stringify({ ts: new Date().toISOString(), club: d.club, year: d.year, side: src.lado, label: src.label, truth: src.truth, jev: src.jev, jevConf: src.jevConf, categoria: x.categoria, confianza: x.confianza, motivo: x.motivo, model: r.model, costUsd: Number(perRubro.toFixed(6)), docRubros: r.resultados.length, docCost: Number((r.costUsd || 0).toFixed(6)), usage: r.usage }) + '\n');
+        appendFileSync(outPath, JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, club: d.club, year: d.year, side: src.lado, label: src.label, truth: src.truth, jev: src.jev, jevConf: src.jevConf, categoria: x.categoria, confianza: x.confianza, motivo: x.motivo, model: r.model, costUsd: Number(perRubro.toFixed(6)), docRubros: r.resultados.length, docCost: Number((r.costUsd || 0).toFixed(6)), usage: r.usage }) + '\n');
       }
       console.log(`  ${doneN}/${todo.length} ${d.club} ${d.year}: ${r.resultados.length} rubros, ${r.resultados.filter((x) => x.categoria === src0(d, x)).length} aciertos, $${(r.costUsd || 0).toFixed(4)} (acumulado $${cost.toFixed(3)})`);
     }

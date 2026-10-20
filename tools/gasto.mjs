@@ -23,7 +23,9 @@
 //   node tools/gasto.mjs                    resumen por motor y por día, top documentos, pagado sin .md
 //   node tools/gasto.mjs --desde 2026-09-30 solo lo gastado desde esa fecha (UTC), para medir un piloto
 //   node tools/gasto.mjs --lista Admin/mi-piloto.txt   gasto por documento de los PDFs de esa lista (una ruta por línea)
+//   node tools/gasto.mjs --sesion fos-pipeline   solo lo gastado por esa sesión (la carpeta del worktree; tools/sesion.mjs la marca en cada línea de los logs de API)
 //   node tools/gasto.mjs --json             todo en JSON
+// POR SESIÓN: cada llamada nueva lleva `sesion`; lo anterior a la marca figura como «(sin marca)». Así la Auditora controla el presupuesto de cada sesión sin sumar a mano.
 // ============================================================================
 
 import { readFileSync, existsSync } from 'node:fs';
@@ -34,6 +36,7 @@ const args = process.argv.slice(2);
 const flagVal = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
 const desde = flagVal('--desde');
 const listaPath = flagVal('--lista');
+const sesionSel = flagVal('--sesion');
 const JSON_OUT = args.includes('--json');
 
 const readJsonl = (rel) => {
@@ -41,17 +44,18 @@ const readJsonl = (rel) => {
   if (!existsSync(p)) return [];
   return readFileSync(p, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
 };
-const enRango = (r) => !desde || String(r.ts || '') >= desde;
+const enRango = (r) => (!desde || String(r.ts || '') >= desde) && (!sesionSel || (r.sesion || '(sin marca)') === sesionSel);
 const usd = (n) => `$${n.toFixed(2)}`;
 
 // ---------------------------------------------------------------- por motor y por día
 const motores = { mistral: 'Admin/registros/api/mistral.jsonl', gemini: 'Admin/registros/api/gemini.jsonl', 'claude-api': 'Admin/registros/api/claude-api.jsonl' };
-const porMotor = {}; const porDia = {};
+const porMotor = {}; const porDia = {}; const porSesion = {};
 for (const [motor, rel] of Object.entries(motores)) {
   for (const r of readJsonl(rel).filter(enRango)) {
     const c = Number(r.costUsd) || 0;
     porMotor[motor] ??= { llamadas: 0, usd: 0, paginas: 0 };
     porMotor[motor].llamadas++; porMotor[motor].usd += c; porMotor[motor].paginas += Number(r.pagesProcessed) || 0;
+    const ses = r.sesion || '(sin marca)'; porSesion[ses] ??= { llamadas: 0, usd: 0 }; porSesion[ses].llamadas++; porSesion[ses].usd += c;
     const dia = String(r.ts || '').slice(0, 10) || 'sin fecha';
     porDia[dia] ??= {}; porDia[dia][motor] = (porDia[dia][motor] || 0) + c;
   }
@@ -105,10 +109,12 @@ if (listaPath) {
 }
 const total = Object.values(porMotor).reduce((a, m) => a + m.usd, 0);
 // (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: se sale cuando la escritura terminó.
-if (JSON_OUT) { await new Promise((fin) => process.stdout.write(JSON.stringify({ desde, porMotor, porDia, porDoc: Object.fromEntries(docsSel), pagadoSinMd }, null, 1) + '\n', fin)); process.exit(0); }
+if (JSON_OUT) { await new Promise((fin) => process.stdout.write(JSON.stringify({ desde, sesion: sesionSel, porMotor, porSesion, porDia, porDoc: Object.fromEntries(docsSel), pagadoSinMd }, null, 1) + '\n', fin)); process.exit(0); }
 
-console.log(`Gasto registrado${desde ? ` desde ${desde}` : ''}: ${usd(total)} (Jev: sin registro de costo)`);
+console.log(`Gasto registrado${desde ? ` desde ${desde}` : ''}${sesionSel ? ` de la sesión ${sesionSel}` : ''}: ${usd(total)} (Jev: sin registro de costo)`);
 for (const [m, v] of Object.entries(porMotor)) console.log(`  ${m.padEnd(11)} ${usd(v.usd).padStart(9)}  ${v.llamadas} llamadas${v.paginas ? `, ${v.paginas} páginas` : ''}`);
+console.log('\nPor sesión:');
+for (const [s, v] of Object.entries(porSesion).sort((x, y) => y[1].usd - x[1].usd)) console.log(`  ${s.padEnd(22)} ${usd(v.usd).padStart(9)}  ${v.llamadas} llamadas`);
 console.log('\nPor día:');
 for (const [d, v] of Object.entries(porDia).sort()) console.log(`  ${d}  ${usd(Object.values(v).reduce((a, x) => a + x, 0)).padStart(8)}   ${Object.entries(v).map(([m, x]) => `${m} ${usd(x)}`).join(' · ')}`);
 const conGasto = docsSel.map(([pdf, d]) => ({ pdf, ...d, total: d.transcripcion + d.validacion })).filter((d) => d.total > 0).sort((a, b) => b.total - a.total);
