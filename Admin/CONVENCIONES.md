@@ -30,8 +30,9 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     ya está en el árbol principal; el sourcing los crea. Además el onboarding necesita el preview
     para `auditAll()`, y `.claude/launch.json` tiene el puerto fijo con `autoPort:false`.
   - **Un PDF bajado en el worktree NO viaja al mergear**, porque `*.pdf` está en `.gitignore`. Si
-    borrás el worktree, se perdió el documento fuente. Consolidalos con `rsync` al árbol principal
-    ANTES de hacer `git worktree remove`, o simplemente no borres el worktree.
+    borrás el worktree, se perdió el documento fuente. Pasalos al árbol principal ANTES de hacer
+    `git worktree remove` (cómo, con `rsync -a --no-links`: `.claude/skills/start-session-finance-of-sports-project/worktree.md`),
+    o simplemente no borres el worktree.
   - **El número de Versión se decide al MERGEAR, no al escribir.** Las dos ramas van a querer el
     mismo. El que mergea segundo renumera su entrada; el conflicto al final de `Admin/CHANGELOG.md`
     es esperable y mecánico.
@@ -75,30 +76,26 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     carpeta; dos lotes en carpetas distintas pueden correr a la vez, dos en la misma no.
 
 - DÓNDE VA UN DOCUMENTO NUEVO, Y POR QUÉ NO ES UNA CUESTIÓN DE ORDEN (Versión 196, pedido de Guido:
-  *"the entire project has too many files scattered. i want some order"*). **Todo documento interno
-  va adentro de `Admin/`.** Interno = escrito para Guido o para una sesión futura: estado, reglas,
-  pendientes, notas, planes, historia. Si lo dejás suelto en la raíz **se publica**: Netlify sirve
+  *"the entire project has too many files scattered. i want some order"*). La regla (todo documento
+  interno va adentro de `Admin/`; la extensión no dice si es interno; `CLAUDE.md` es la única excepción)
+  está en `CLAUDE.md`, "DÓNDE PONER UN DOCUMENTO NUEVO". Acá el porqué: Netlify sirve
   la raíz del repo, y lo único que no sale es lo que `netlify.toml` borra del artefacto de deploy —
   que desde esta versión es `Admin/` entera, con un solo `rm -rf`, en vez de una lista de nombres a
   la que había que acordarse de sumar cada archivo nuevo. Esa lista ya se escapó tres veces, la
-  última con `COMO-CORRE-EL-PROYECTO.html` servido en producción. `node tools/audit.js` lo caza
-  (`doc-interno-no-excluido`, P2) si te olvidás.
-  - **La extensión no dice nada sobre si un documento es interno.** El chequeo miraba solo `.md` y
-    por eso no vio el `.html` durante semanas. Hoy mira las dos.
-  - **`CLAUDE.md` es la única excepción y se queda en la raíz**, porque Claude Code lo carga por
-    convención desde ahí. Tiene su propia línea en `netlify.toml`.
+  última con `COMO-CORRE-EL-PROYECTO.html` servido en producción. El chequeo `doc-interno-no-excluido`
+  (P2 de `node tools/audit.js`) mira `.md` y `.html` (miraba solo `.md` y no vio el `.html` durante semanas).
+  `CLAUDE.md` se queda en la raíz porque Claude Code lo carga por convención desde ahí; tiene su propia línea en `netlify.toml`.
   - **Nunca agregues una regla por nombre suelto al `.gitignore` para "no publicar" algo.** Publicar
     y respaldar son dos problemas distintos (ver la cabecera de `netlify.toml`): el `.gitignore`
     resuelve el segundo al revés de como se quiere. Y un patrón sin barra matchea en CUALQUIER
     nivel, así que una regla `<NOMBRE>.md` también ignora `Admin/<NOMBRE>.md` — es exactamente la trampa que
     esta versión desarmó.
 
-- LO QUE ESTÁ CERRADO SE ARCHIVA, NO SE BORRA NI SE APILA (Versión 196). `Admin/Archive/` es para
+- LO QUE ESTÁ CERRADO SE ARCHIVA, NO SE BORRA NI SE APILA (Versión 196). La regla (y qué se rescata antes
+  de archivar) está en `CLAUDE.md`. `Admin/Archive/` es para
   documentos que cumplieron su función entera y pasaron a ser historia: un plan con todos sus puntos
-  cerrados, una sección que ahora se genera desde los datos. **Antes de archivar algo, sacale lo que
-  todavía sirve** y llevalo a donde se lee — un criterio vivo a este archivo o a la skill que
-  corresponda, un pendiente a `Admin/TODO.md`. Si no queda nada que rescatar, probablemente había
-  que borrarlo y no archivarlo. Lo archivado lleva un banner que dice de qué Versión es, porque sus
+  cerrados, una sección que ahora se genera desde los datos. Si no queda nada que rescatar,
+  probablemente había que borrarlo y no archivarlo. Lo archivado lleva un banner que dice de qué Versión es, porque sus
   rutas y sus números son los de ese día. Ver `Admin/Archive/README.md`.
 
 - UNA PREMISA VENCIDA EN LA TO-DO SE ESCRIBE AL CERRAR EL PUNTO (auditoría del eje `tokens`,

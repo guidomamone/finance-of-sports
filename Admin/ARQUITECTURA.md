@@ -24,18 +24,14 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   `tools/data-clubes.js` (`rutaData(clubId)`, `archivosData()`, `idDeArchivo()`): ninguna tool arma esa ruta a mano.
 - ASSET_V (`window.ASSET_V`, declarado en un `<script>` inline en index.html
   justo antes de los `<script src>` propios, Versión 115): la versión de los
-  assets propios, para invalidar el caché del navegador en cada deploy. Los
-  `?v=` de los `<script src>` ESTÁTICOS (los de index.html y los que arma
-  `tools/generate-fuentes-page.js`) son LITERALES, no leen la constante — hay
-  que cambiar el número Y cada tag a mano. Solo 2 cargadores DINÁMICOS la leen
-  de verdad: `loadClubData()` (el `data/<país>/<club>-data.js` que se inyecta al
+  assets propios, para invalidar el caché del navegador en cada deploy. La regla de subirlo
+  (la constante Y cada `?v=`, que son literales) y el bug que la motivó están una sola vez, en
+  `Admin/PANTALLA.md`, "CACHE DE ASSETS". Lo de arquitectura: solo 2 cargadores DINÁMICOS leen la
+  constante: `loadClubData()` (el `data/<país>/<club>-data.js` que se inyecta al
   elegir un club) e `I18N.load()` (el `data/lang/<code>.js` del idioma
-  elegido). Cambiar uno de los dos lugares sin el otro es PEOR que no cambiar
-  ninguno: el navegador termina mezclando un archivo nuevo con otros viejos
-  de su propio caché (pasó de verdad, ver CLAUDE.md, sección "Gotchas de
-  tooling", para el bug real que costó). `node tools/audit.js` lo chequea
-  como `asset-v-desfasado` (P1). Subir ASSET_V también desactualiza las 42
-  páginas de `fuentes.html`/`fuentes/<clubId>.html` (ese generador LEE el
+  elegido); los `?v=` que arma `tools/generate-fuentes-page.js` también son literales.
+  `node tools/audit.js` lo chequea como `asset-v-desfasado` (P1). Subir ASSET_V también
+  desactualiza las páginas de `fuentes.html`/`fuentes/<clubId>.html` (ese generador LEE el
   ASSET_V de `index.html`), así que después de subirlo hay que correr
   `tools/generate-fuentes-page.js` de nuevo aunque no se haya tocado un solo
   dato de ningún club.

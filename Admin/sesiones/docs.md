@@ -21,3 +21,17 @@ Para que la principal lo agregue (la sesión no toca `TODO.md`): chequeos `json-
 - `node tools/faltantes-liga.mjs` escribe en `data/`: lo corre quien pueda tocar `data/`.
 - `Admin/dudas-por-club.md` nombra `resultado-N.json` (P2 `ruta-muerta`): decidir si se renombra o va a `tools/audit-ignore.json`.
 - Para aplicar el inventario hay que fijar antes dos cosas (D1 y D2 del inventario): dónde vive el JSON fuente y si el sitio sigue cargando el JS generado.
+
+# Cierre de DOCS 1, segunda tarea (to-do 255, fase 1: consolidar las reglas)
+
+## Qué cambió (para CHANGELOG)
+
+- `Admin/consolidar-reglas-255.md`: inventario de reglas repetidas o contradichas entre `CLAUDE.md`, las skills, las memorias y los `Admin/*.md`.
+- Dedupes aplicados (5 reglas, solo `Admin/*.md`): `ASSET_V` (3 copias en `PANTALLA.md` y una en `ARQUITECTURA.md` quedaron en una), pasar PDFs del worktree
+  (`CONVENCIONES.md` remite a `worktree.md` y deja de decir `rsync` a secas), el data file sin comentarios, dónde va un documento nuevo y lo cerrado se archiva
+  (`CONVENCIONES.md` remite a `CLAUDE.md`).
+
+## Qué queda (para TODO)
+
+Fase 2 del 255: aplicar lo que Guido apruebe del inventario (19 propuestas de skill, `CLAUDE.md` y memoria), contestar las 9 preguntas, y decidir cuáles de los
+12 chequeos de la sección 4 se hacen (hooks del 250 o `audit.js`).

@@ -678,7 +678,7 @@ solo esos 4 cambian, 0 filas a la cola, 0 categorías distintas.
   de la carpeta y lo marca `clubDeCarpeta` (to-do 232 f).
   Las marcas "Posiblemente dentro de otro rubro" las pone `--escribir` solo (no hay un paso más). Para un club cargado a mano o corregido
   fuera de `cargar.mjs`: `node tools/dentro-de-otro.mjs --club <id> [--escribir]`.
-- Dónde queda la evidencia: `data/<país>/<club>-data.js` no lleva comentarios (se publica). `cargar.mjs --escribir` deja en
+- Dónde queda la evidencia: el data file no lleva comentarios (`Admin/CONVENCIONES-DATOS.md`). `cargar.mjs --escribir` deja en
   `Admin/carga-clubes/<clubId>.md`, en la sección del año, la cabecera "cargado por… tie-out", la tabla de filas con la página y el
   escalón de cada categoría, los ajustes manuales y la nota de meta, y de dónde salió la liga. Lo edita solo a través de
   `tools/evidencia-club.mjs`; con `--reemplazar` saca SUS líneas de ese año (lo escrito a mano queda) y las vuelve a escribir. Si la
