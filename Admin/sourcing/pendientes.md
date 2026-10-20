@@ -69,9 +69,9 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Cañuelas — sin-buscar: 2021 (ar-primerab)
 - J. J. de Urquiza — sin-buscar: 2021 (ar-primerab), 2020 (ar-primerab)
 
-## Austria (19 clubes, 20 club-años)
+## Austria (19 clubes, 21 club-años)
 
-- Austria Klagenfurt — sin-buscar: 2024 (at-bundesliga)
+- Austria Klagenfurt — sin-buscar: 2025 (at-bundesliga), 2024 (at-bundesliga)
 - Austria Lustenau — sin-buscar: 2024 (at-bundesliga), 2019 (at-2liga)
 - Admira Wacker Mödling — sin-buscar: 2019 (at-bundesliga)
 - St. Pölten — sin-buscar: 2019 (at-bundesliga)

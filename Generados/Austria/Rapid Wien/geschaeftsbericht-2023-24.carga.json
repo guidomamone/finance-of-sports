@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.pdf",
- "generado": "2026-10-20T21:29:44.249Z",
+ "generado": "2026-10-20T21:32:34.776Z",
  "frena": [
   {
    "etapa": "club",
@@ -474,10 +474,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de at 2024 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "at-bundesliga",
+  "fuente": "roster cacheado de \"2023–24 Austrian Football Bundesliga\" (tools/club-league-reference/at.json), coincidencia única por palabras \"SK Rapid\" = \"Rapid Wien\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -516,9 +515,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de at 2024 cacheada",
-   "estado": "pendiente"
+   "valor": "at-bundesliga",
+   "fuente": "roster cacheado de \"2023–24 Austrian Football Bundesliga\" (tools/club-league-reference/at.json), coincidencia única por palabras \"SK Rapid\" = \"Rapid Wien\"",
+   "estado": "ok"
   }
  },
  "resumen": {
