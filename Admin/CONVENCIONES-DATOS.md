@@ -407,6 +407,24 @@ confirmación: pasa a `depreciation` el 1,11 M y a `other_income` el 8,54 M). We
 
 CATEGORÍA (prompt): en Bélgica, el intangible «Concessies, octrooien, licenties…» y su amortización van a depreciation, y el residuo de «Andere bedrijfsopbrengsten» a other_income, salvo que el documento diga que es de jugadores o de transferencias (entonces player_amortisation y player_sales); no agregues palabras que el documento no imprime.
 
+## REGLA: la ganancia por vender inversiones o filiales (también a la matriz) va a `assetSales`, no a los ingresos (votación 3 a 0, 2026-10-20)
+
+"Profit on disposal of investments" y parecidos (venta de una filial o de una participación, incluida la deconsolidación intragrupo) se cargan en
+el meta `assetSales` del año, no como línea de ingresos: así los ingresos cierran con el turnover impreso y el resultado con el impreso. Casos:
+Everton 2025 (£49,2 M, venta de Everton FC Women y Goodison Park Stadium a la matriz Roundhouse), Newcastle 2025 (venta de una filial) y Brentford 2025.
+
+## REGLA: los bonos de fichaje o de trayectoria pagados a jugadores y técnicos por nombre son `wages_squad` (votación 3 a 0, 2026-10-20)
+
+Un bono pagado a personas, sin contrato de pase con otro club, es remuneración, no `player_amortisation` (que es adquisición de pases a otros clubes).
+Caso: Deportivo Pereira 2025, "Trayectoria deportiva" (8,9 % de los gastos).
+
+## REGLA: `officialPAT` de un consolidado alemán con partner silencioso o minoritarios es el resultado ANTES de esas asignaciones (votación 3 a 0, 2026-10-20)
+
+Se carga la línea del resultado consolidado total (Konzernjahresüberschuss), no la que queda después de la asignación al partner silencioso o a otros
+socios; la asignación no es un impuesto. Criterio de Augsburg y Eintracht Frankfurt. Caso: Hoffenheim 2023/24 y 2024/25 (línea 14: +1,268 M y +1,100 M
+en vez de la línea 16: -0,368 M y -0,189 M; `tax` deja de absorber la asignación). Pendiente de revisar: Stuttgart carga el resultado después de
+minoritarios y suma el NCI a `tax`, el criterio contrario.
+
 ## REGLA: entidades del club, grupos multiclub e ingresos de las otras entidades
 
 Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.jsonl` (cada línea con su cita) y lo verifica
