@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 861 — Alta de Rapid Wien; OH Leuven 2020 (2026-10-20) [238 · 328 · rapidwien-at, ohleuven-be]
+
+- Merge de Onboarding 4: OH Leuven 2020 y alta de Rapid Wien con 2024. Frenados: Sporting CP 2008-10 (script) y Benfica 2014-15 (ya en HALLAZGOS).
+- Merge de Docs 1: el texto del 328 rehecho con las tools nuevas, para el ok de Guido.
+
 ## Versión 860 — Cargar sin API: cuatro herramientas (2026-10-20) [328]
 
 - `tools/armar-a-mano.mjs` (arma `.ubicacion.json` y `.filas.json` con sus huellas desde una especificación y valida cada fila contra el `.md`),

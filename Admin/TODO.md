@@ -25,15 +25,15 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (en marcha)**
-* 238 (solo lo gratis o de centavos; lo caro queda afuera por ahora, decisión de Guido 2026-10-20): los 27 documentos con propuesta lista y los 12 frenados en la cola o sin cerrar; hecho eso, el 238 se cierra --> Onboarding 4
-* 328: carga con tokens de sesión: propuesta en `Admin/carga-con-tokens-328.md` : las 4 tools están (CHANGELOG 860); falta que Docs 1 acorte el texto de la skill para tu ok --> Docs 1
+* 238 (solo lo gratis o de centavos; lo caro queda afuera por ahora): las 27 propuestas listas ya estaban en el sitio; cargados OH Leuven 2020 y Rapid Wien 2024 (alta); falta Rapid Wien 2013-2023 y 2025 (~US$ 0,15 por documento, lote 125); hecho eso, el 238 se cierra --> Onboarding 4
+* 328: carga con tokens de sesión: las 4 tools están (CHANGELOG 860) y el texto de la skill está en `Admin/carga-con-tokens-328.md`, sección 2; espera tu ok
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
 * 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos)
 
 **C. Cargar lo ya transcripto (no se transcribe más; cada sesión con su presupuesto)**
-* 283: Vålerenga y Aalesund, sumar el AS y el FLI con los `.md` que ya hay (criterio decidido; frenado por script: `cargar.mjs` carga un documento por año y no suma dos; frenados-por-script.jsonl) --> Pipeline 7, después del 328
+* 283: Vålerenga y Aalesund: `suma-con` y `tools/suma-entidades.mjs` aprobados por la Auditora (falta el merge); después Onboarding carga Vålerenga 2022 y 2023 con armar-a-mano. Para Pantallas: el resultado repite etiquetas de las dos entidades --> Pipeline 7 y Onboarding 4
 
 **D. Pantallas y distribución (después del 246)**
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
