@@ -23,6 +23,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2024 Eliteserien","lang":"en","at":"2026-09-30","n":16},
     clubs: [
+      { id:"molde-no", revenue:19.992, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2024",
+        mix:[["Comercial / Sponsors",3.215],["Estadio",2.058],["Venta de Jugadores",0.256],["Otros ingresos",14.462]] },
       { id:"viking-no", revenue:19.515, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2024",
         mix:[["Comercial / Sponsors",5.778],["Estadio",1.571],["Televisión",3.233],["Venta de Jugadores",6.762],["Otros ingresos",2.171]] },

@@ -33,6 +33,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2021: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2021 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312260742"},
     2022: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2022 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312230967"},
     2023: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2023 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1364297219"},
+    2024: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2024 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356845648"},
     2025: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'sarpsborg08-no': {

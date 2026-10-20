@@ -231,6 +231,14 @@ const moldenoRevenueLinesByYear = {
     { rawLabel:'Andre driftsinntekter', normalizedCategory:'other_income', amountNative:7.565164, disclosureLevel:'aggregated' },
     { rawLabel:'Salg spillere/Utleie', normalizedCategory:'player_sales', amountNative:0, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Medlemsinntekter/tilskudd', normalizedCategory:'other_income', amountNative:158.867123, disclosureLevel:'aggregated' },
+    { rawLabel:'Kamp- og billettinntekter', normalizedCategory:'matchday_competition', amountNative:23.364385, disclosureLevel:'aggregated' },
+    { rawLabel:'Avtale MF/sponsor', normalizedCategory:'sponsorship_commercial', amountNative:36.505323, disclosureLevel:'aggregated' },
+    { rawLabel:'Kiosksalg', normalizedCategory:'other_income', amountNative:3.496384, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre driftsinntekter', normalizedCategory:'other_income', amountNative:1.832607, disclosureLevel:'aggregated' },
+    { rawLabel:'Salg spillere/Utleie', normalizedCategory:'player_sales', amountNative:2.909818, disclosureLevel:'aggregated' },
+  ],
 };
 const moldenoExpenseLinesByYear = {
   2025: [
@@ -694,6 +702,32 @@ const moldenoExpenseLinesByYear = {
     { rawLabel:'Avskrivninger', normalizedCategory:'depreciation', amountNative:-14.53853, disclosureLevel:'aggregated' },
     { rawLabel:'Tap på fordringer', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Administrasjon', normalizedCategory:'admin_general_expense', amountNative:-5.963189, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønn spillere, trener, støtteapparat og administrasjon', normalizedCategory:'wages_squad', amountNative:-129.192128, disclosureLevel:'aggregated' },
+    { rawLabel:'Arbeidsgiveravgift', normalizedCategory:'wages_squad', amountNative:-19.653073, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnad', normalizedCategory:'wages_squad', amountNative:-1.28478, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre ytelser', normalizedCategory:'wages_squad', amountNative:-1.023282, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter treningsleir/pilvalkamper', normalizedCategory:'match_organisation_expense', amountNative:-7.478977, disclosureLevel:'aggregated' },
+    { rawLabel:'Leie treningsbaner etc.', normalizedCategory:'other_expenses', amountNative:-2.558595, disclosureLevel:'aggregated' },
+    { rawLabel:'Sportsrekvisita', normalizedCategory:'other_expenses', amountNative:-4.118172, disclosureLevel:'aggregated' },
+    { rawLabel:'Medisinske tjenester og rekvisita', normalizedCategory:'other_expenses', amountNative:-0.18637, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre sportslige kostnader', normalizedCategory:'other_expenses', amountNative:-5.408431, disclosureLevel:'aggregated' },
+    { rawLabel:'Banlele serie- og cupkamper', normalizedCategory:'match_organisation_expense', amountNative:-0.07943, disclosureLevel:'aggregated' },
+    { rawLabel:'Avgift Norges Fotballforbund', normalizedCategory:'match_organisation_expense', amountNative:-0.657622, disclosureLevel:'aggregated' },
+    { rawLabel:'Annonsering seriekamper', normalizedCategory:'match_organisation_expense', amountNative:-0.59635, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter billettssalg', normalizedCategory:'match_organisation_expense', amountNative:-0.743433, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre arrangementskostnader', normalizedCategory:'match_organisation_expense', amountNative:-3.165737, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter cup kamper', normalizedCategory:'match_organisation_expense', amountNative:-1.637259, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter e-cup', normalizedCategory:'match_organisation_expense', amountNative:-11.831805, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter andre arrangement', normalizedCategory:'match_organisation_expense', amountNative:-1.761138, disclosureLevel:'aggregated' },
+    { rawLabel:'Reisekostnader seriekamper', normalizedCategory:'match_organisation_expense', amountNative:-6.616736, disclosureLevel:'aggregated' },
+    { rawLabel:'Kjøp og leie spillere', normalizedCategory:'other_expenses', amountNative:-7.945706, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre driftskostnader', normalizedCategory:'other_expenses', amountNative:-7.852916, disclosureLevel:'aggregated' },
+    { rawLabel:'Anleggskostnader', normalizedCategory:'admin_general_expense', amountNative:-0.221515, disclosureLevel:'aggregated' },
+    { rawLabel:'Avskrivninger', normalizedCategory:'depreciation', amountNative:-59.960192, disclosureLevel:'aggregated' },
+    { rawLabel:'Tap på fordringer', normalizedCategory:'other_expenses', amountNative:-0.200224, disclosureLevel:'aggregated' },
+  ],
 };
 const moldenoFiscalYearMeta = {
   2025: {
@@ -866,6 +900,16 @@ const moldenoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:91.491761, officialTotalExpenses:105.150141, officialPAT:0.213053,
   },
+  2024: {
+    currency:'NOK', fxRef:'NOK@2024-12-31',
+    sourceId:'molde-no-aarsregnskap-fotballklubb-fli-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:62.643524, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:226.97564, officialTotalExpenses:280.13706, officialPAT:9.4821,
+  },
 };
 const moldenoPresupuestoOverlayByYear = {};
 
@@ -965,6 +1009,11 @@ Object.assign(sources, {
   'molde-no-aarsregnskap-fotballklubb-fli-2016': {
     id:'molde-no-aarsregnskap-fotballklubb-fli-2016', clubId:'molde-no',
     title:'Molde Fotballklubb — aarsregnskap-fotballklubb-fli-2016 (ejercicio 2016)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'molde-no-aarsregnskap-fotballklubb-fli-2024': {
+    id:'molde-no-aarsregnskap-fotballklubb-fli-2024', clubId:'molde-no',
+    title:'Molde Fotballklubb — aarsregnskap-fotballklubb-fli-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
