@@ -38,3 +38,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2014 desde `Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.pdf` (sourceId `patroeisden-be-jaarrekening-2014-06-30-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2013 desde `Clubes/Bélgica/Patro Eisden/jaarrekening-2013-06-30-individual.pdf` (sourceId `patroeisden-be-jaarrekening-2013-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2015 desde `Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.pdf` (sourceId `patroeisden-be-jaarrekening-2015-06-30-individual`).
