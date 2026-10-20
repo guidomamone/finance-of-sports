@@ -21,6 +21,8 @@ que dice `ESTADO.md` era verdad ese día.
   298 b3: `estadio-sponsor.mjs` acepta la marca (con dónde se buscó) y la segunda belga pide solo estadio (votación de Patro Eisden 2015).
   Destraba 6 ejercicios belgas. 298 a3: `cargar.mjs` avisa cuando carga un caché de verificar más viejo que el script.
 * Votaciones: Patro Eisden 2013 queda con liga null (3 a 0); 2015, opción C elegida por Guido.
+* 245, estándares abiertos: `data/schema/club-v1.json` (JSON Schema 2020-12, publicado) valida los 314 JSON con un validador estándar
+  (ajv); el `datapackage.json` (Frictionless, CC BY-NC 4.0, solo lo financiero) lo arma la herramienta para la fase 2. Aprobado por la auditora.
 
 ## Versión 842 — Auditoría de código y documentos; lote 111 y 112 (2026-10-20)
 
