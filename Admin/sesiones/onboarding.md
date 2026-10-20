@@ -209,3 +209,7 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - VfB Stuttgart 2023 y 2024: `officialPAT` a la línea 21 "Jahresüberschuss" (antes de los minoritarios), como Hoffenheim, Augsburg y Eintracht: 0,777 M (antes 0,679; konzernabschluss-2023.md L917) y 15,533 M (antes 15,443; 2024 L1149). `tax` recalculado por diferencia (-0,480 y -2,491). Ajustes `resultado-final` con la cita. ASSET_V 1510.
 - Gimnasia LP: la `publicNote` de 2024 y 2025 ya había entrado (instrucción de la Auditora, tanda 2); la principal pide no tocarlo. Si Guido lo prefiere, se revierte quitando las dos líneas `publicNote` de `data/ar/gimnasiaesgrima-ar-data.js`.
 - Gimnasia LP: `publicNote` de 2024 y 2025 sacada (pedido de la principal: el caso espera a Guido); datos como estaban. ASSET_V 1511.
+
+### Onboarding 6: Estudiantes LP (2026-10-20)
+- "Resultado por revaluación de jugadores" 2023 (291 M, Nota 16) y 2024 (4.053 M, Nota 13 = hechos posteriores: ventas pactadas tras el cierre, saldo en Jugadores destinados a la venta) pasó de `player_sales` a `other_income` (voto de la Auditora); ajustes `categoria` en los dos documentos; 2024-25 no repite la fila. `Admin/carga-clubes/estudianteslp.md` corregido. ASSET_V 1513.
+- Gimnasia LP: la Auditora (3 a 0) pide la nota pública sin decir no-cash, y la principal pidió sacarla (espera a Guido). Sin nota hasta que la principal confirme.
