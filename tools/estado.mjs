@@ -33,7 +33,23 @@ const flagVal = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] 
 const dir = flagVal('--dir');
 const regPath = resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl');
 
-if (args.includes('--actualizar') || !existsSync(regPath)) {
+// (frenado «registro: cargado no se actualiza») El registro es un archivo derivado y trackeado: lo que se carga en un worktree no lo marca `cargado` en el de main
+// (28 documentos cargados figuraban como «Propuesta lista»). Antes de contar, se compara su `cargado` con lo que dice quien.mjs --pendientes (3 s, la misma fuente con la
+// que lo arma inventario-transcripciones.mjs): si alguna entrada no coincide, el registro está viejo y se regenera (15 s, gratis).
+function registroViejo() {
+  if (!existsSync(regPath)) return false;
+  const r = spawnSync('node', [resolve(ROOT, 'tools/quien.mjs'), '--pendientes'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 512 * 1024 * 1024 });
+  if (r.status !== 0) return false;
+  const pend = new Set([...(r.stdout || '').matchAll(/^=== (.+?) ===$/gm)].map((m) => m[1]));
+  if (!pend.size) return false;
+  for (const l of readFileSync(regPath, 'utf8').split('\n')) {
+    if (!l.trim()) continue;
+    let e; try { e = JSON.parse(l); } catch { continue; }
+    if (e.pdf && e.cargado !== !pend.has(e.pdf)) return true;
+  }
+  return false;
+}
+if (args.includes('--actualizar') || !existsSync(regPath) || registroViejo()) {
   process.stdout.write('Regenerando el registro (sin API)... ');
   spawnSync('node', [resolve(ROOT, 'tools/inventario-transcripciones.mjs')], { cwd: ROOT, stdio: 'ignore' });
   console.log('listo.');
