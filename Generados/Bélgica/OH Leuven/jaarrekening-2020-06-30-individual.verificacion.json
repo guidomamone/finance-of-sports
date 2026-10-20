@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md",
- "generado": "2026-10-19T14:54:29.120Z",
+ "generado": "2026-10-20T21:29:24.908Z",
+ "scriptHuella": "bb1724ebf1b3",
  "estado": "ok",
  "clubId": "ohleuven-be",
  "year": 2020,
@@ -25,14 +26,14 @@
    "nombre": "total de gastos",
    "ok": true,
    "detalle": "21.866696 = 21.866695",
-   "suma": 21.866695999999994,
+   "suma": 21.866695999999997,
    "impreso": 21.866695
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 5.329070518200751e-15
+   "dif": 1.7763568394002505e-15
   },
   {
    "nombre": "lectura",
@@ -58,38 +59,20 @@
  "notas": [
   "escalón \"códigos NBB\": el estado se lee por sus códigos (L407-L444, esquema completo); cierran exacto todos sus totales impresos",
   "la nota de \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\" no suma el renglón (0.032891 contra 0.02665, sumando sus renglones): quedó el renglón del estado",
-  "la nota de \"Niet-recurrente bedrijfskosten\" no suma el renglón (0.674559 contra 0.674559, sumando sus renglones): quedó el renglón del estado",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de localizar que no afecta la carga: b26 es una versión resumida de la cuenta de resultados ya presente en b5 (VOL 4).",
-  "duda de localizar que no afecta la carga: b1 indica que el ejercicio anterior va de 01-01 a 30-06, no es un período de 12 meses comparable.",
-  "duda de extraer ya contestada para el club (columna, \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"): aceptar, en jaarrekening-2020-06-30-individual.pdf",
-  "duda de extraer que no afecta la carga: En b20 (texto sin tabla) L1613 tiene un solo importe y 567.917+106.642=674.559 cuadra con el actual.",
-  "duda de extraer que no afecta la carga: La nota b21 sólo tiene columna Boekjaar (L1650) y 610 coincide con L442.",
-  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; el formulario BNB usa euros."
+  "duda de localizar que no afecta la carga: b26 es una presentación resumida de la misma cuenta de resultados del ejercicio al 30/06/2020.",
+  "duda de localizar que no afecta la carga: b1 indica ejercicio anterior de duración irregular.",
+  "duda de extraer que no afecta la carga: No hay un renglón propio de cuotas sociales; los 'lidgelden' (cuotas de socios) vienen sumados con ticketing en L1491.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2023-06-30-individual.pdf",
+  "duda de extraer que no afecta la carga: En L1613 la transcripción sin tabla muestra un solo importe; 567.917+106.642=674.559 confirma que es Boekjaar."
  ],
- "reintentar": [
-  {
-   "renglon": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-   "suma": 0.032891,
-   "objetivo": 0.02665
-  },
-  {
-   "renglon": "Niet-recurrente bedrijfskosten",
-   "suma": 0.674559,
-   "objetivo": 0.674559
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
    "suma": 0.032891,
    "objetivo": 0.02665
-  },
-  {
-   "renglon": "Niet-recurrente bedrijfskosten",
-   "suma": 0.674559,
-   "objetivo": 0.674559
   }
  ],
  "totales": {
@@ -248,12 +231,20 @@
    "origen": "nota que desglosa \"Andere bedrijfskosten\""
   },
   {
-   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "etiqueta": "Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
    "lado": "gasto",
-   "M": 0.674559,
-   "pagina": 8,
-   "linea": 424,
-   "origen": "estado"
+   "M": 0.567917,
+   "pagina": 26,
+   "linea": 1613,
+   "origen": "nota que desglosa \"Niet-recurrente bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Andere niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.106642,
+   "pagina": 26,
+   "linea": 1623,
+   "origen": "nota que desglosa \"Niet-recurrente bedrijfskosten\""
   }
  ],
  "signosCarga": {

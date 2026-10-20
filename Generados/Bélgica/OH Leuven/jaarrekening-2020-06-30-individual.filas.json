@@ -2,9 +2,9 @@
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md",
  "mdSha1": "dd42fd3a85243d4137c0a70f34afb3b9c273e9b8",
- "ubicacionSha1": "b9afb5e4d913bf62e7a1f92bed766df9c1eb836c",
+ "ubicacionSha1": "ca84034329f989a5f0c4a31913079aad7e962590",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T15:27:57.731Z",
+ "generado": "2026-10-20T21:28:33.548Z",
  "ubicacion": {
   "estado": [
    "b5"
@@ -12,43 +12,36 @@
   "notas_ingresos": [
    "b17",
    "b18",
-   "b19"
+   "b19",
+   "b20"
   ],
-  "notas_gastos": [
-   "b20",
-   "b21"
-  ]
+  "notas_gastos": []
  },
  "escalas": [
   {
    "bloque": "b5",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala en el bloque (formulario BNB en euros, presumiblemente unidades)"
+   "evidencia": "No se imprime la escala en el bloque; formato belga BNB suele ser en euros (unidades)."
   },
   {
    "bloque": "b17",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b18",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b19",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b20",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
-  },
-  {
-   "bloque": "b21",
-   "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   }
  ],
  "filas": [
@@ -483,16 +476,6 @@
    "detalla_a": "Andere bedrijfskosten"
   },
   {
-   "bloque": "b17",
-   "linea": 1530,
-   "etiqueta": "Kosten voor de onderneming",
-   "actual": "20.180",
-   "anterior": null,
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": "Diensten en diverse goederen"
-  },
-  {
    "bloque": "b18",
    "linea": 1548,
    "etiqueta": "Wisselresultaten",
@@ -604,16 +587,6 @@
   },
   {
    "bloque": "b20",
-   "linea": 1608,
-   "etiqueta": "NIET-RECURRENTE KOSTEN",
-   "actual": "674.559",
-   "anterior": "38.126",
-   "tipo": "subtotal",
-   "lado": "gasto",
-   "detalla_a": "Niet-recurrente bedrijfskosten"
-  },
-  {
-   "bloque": "b20",
    "linea": 1609,
    "etiqueta": "Niet-recurrente bedrijfskosten",
    "actual": "674.559",
@@ -641,26 +614,6 @@
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Niet-recurrente bedrijfskosten"
-  },
-  {
-   "bloque": "b21",
-   "linea": 1656,
-   "etiqueta": "Belastingen op het resultaat van vorige boekjaren",
-   "actual": "610",
-   "anterior": null,
-   "tipo": "renglon",
-   "lado": "impuesto",
-   "detalla_a": "Belastingen"
-  },
-  {
-   "bloque": "b21",
-   "linea": 1657,
-   "etiqueta": "Verschuldigde of betaalde belastingsupplementen",
-   "actual": "610",
-   "anterior": null,
-   "tipo": "renglon",
-   "lado": "impuesto",
-   "detalla_a": "Belastingen op het resultaat van vorige boekjaren"
   }
  ],
  "total_ingresos": {
@@ -678,65 +631,42 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga la fila 'Kosten voor de onderneming' (L1530, 20.180) de uitzendkrachten como detalle de 'Diensten en diverse goederen'?",
+   "pregunta": "¿Se carga 'Ticketing & lidgelden' (L1491, 651.304) como la fila que contiene las cuotas sociales, sin un renglón separado de 'Cuotas sociales'?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Diensten en diverse goederen",
-   "texto": "L1530 es costo de personal interino (cuenta 617), incluido en servicios y bienes diversos, pero el vínculo no está impreso.",
+   "renglon": "Omzet",
+   "texto": "No hay un renglón propio de cuotas sociales; los 'lidgelden' (cuotas de socios) vienen sumados con ticketing en L1491.",
    "bloques": [
     "b17"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se carga la fila 'Geboekt' L1518 que no tiene importe en Boekjaar (solo 17.577 en Vorig boekjaar)?",
-   "propuesta": "no",
-   "tema": "columna",
-   "renglon": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-   "texto": "L1518 sólo tiene importe del año anterior; el actual está vacío.",
-   "bloques": [
-    "b17"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿El importe 567.917 de L1613 corresponde a la columna Boekjaar?",
-   "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "Niet-recurrente bedrijfskosten",
-   "texto": "En b20 (texto sin tabla) L1613 tiene un solo importe y 567.917+106.642=674.559 cuadra con el actual.",
-   "bloques": [
-    "b20"
    ],
    "afecta_carga": false
   },
   {
-   "pregunta": "¿Los importes 610 de L1656-L1657 son de la columna Boekjaar?",
-   "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "Belastingen",
-   "texto": "La nota b21 sólo tiene columna Boekjaar (L1650) y 610 coincide con L442.",
-   "bloques": [
-    "b21"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se confirma que los importes están en euros (unidades)?",
+   "pregunta": "¿Se confirma que los importes del documento están en euros (unidades), aunque ningún bloque imprime la escala?",
    "propuesta": "sí",
    "tema": "escala",
    "renglon": "",
-   "texto": "Ningún bloque imprime la escala; el formulario BNB usa euros.",
+   "texto": "Ni b5 ni las notas indican la escala; el formato BNB usa euros.",
    "bloques": [
     "b5",
     "b17",
     "b18",
     "b19",
-    "b20",
-    "b21"
+    "b20"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El importe 567.917 de L1613 corresponde a la columna 'Boekjaar' y el año anterior está vacío?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Niet-recurrente bedrijfskosten",
+   "texto": "En L1613 la transcripción sin tabla muestra un solo importe; 567.917+106.642=674.559 confirma que es Boekjaar.",
+   "bloques": [
+    "b20"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Se excluyeron datos no monetarios de b17 (personal, FTE, horas L1502-L1504, L1528-L1529). La desagregación por actividad de Omzet (L1491-L1495) suma 5.341.608, igual que la geográfica (L1497)."
+ "observaciones": "Escala no impresa; probablemente euros. 'Cuotas sociales' (lidgelden) está incluida en 'Ticketing & lidgelden' (L1491) del desglose de Omzet. La línea L1497 'Belgie' es el desglose geográfico de la misma Omzet (no sumar con el desglose por categoría). L1518 tiene importe solo en el año anterior. Los datos de personal (cantidades, horas) no se extrajeron por no ser importes."
 }

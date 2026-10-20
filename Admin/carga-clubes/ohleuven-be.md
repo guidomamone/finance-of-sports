@@ -221,6 +221,55 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-19): be-proleague, verificado contra roster cacheado de "2020–21 Belgian First Division A" (tools/club-league-reference/be.json), coincidencia exacta "Oud-Heverlee Leuven".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ticketing & lidgelden | pág. 24, precedente |
+| 2 | Sponsoring | pág. 24, Jev 1 |
+| 3 | TV rechten | pág. 24, Jev 1 |
+| 4 | Commercieel | pág. 24, Jev 1 |
+| 5 | Andere | pág. 24, precedente |
+| 6 | Andere bedrijfsopbrengsten | pág. 8, precedente |
+| 7 | Niet-recurrente bedrijfsopbrengsten | pág. 8, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 8, precedente |
+| 2 | Voorraad: afname (toename) (+)/(-) | pág. 8, precedente |
+| 3 | Diensten en diverse goederen | pág. 8, precedente |
+| 4 | Bezoldigingen en rechtstreekse sociale voordelen | pág. 24, Jev 0.99 |
+| 5 | Werkgeversbijdragen voor sociale verzekeringen | pág. 24, Jev 0.95 |
+| 6 | Werkgeverspremies voor bovenwettelijke verzekeringen | pág. 24, Claude 0.85 |
+| 7 | Andere personeelskosten | pág. 24, Claude 0.88 |
+| 8 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 8, precedente |
+| 9 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | pág. 8, precedente |
+| 10 | Bedrijfsbelastingen en -taksen | pág. 24, Jev 1 |
+| 11 | Andere | pág. 24, Jev 1 |
+| 12 | Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 26, Jev 0.97 |
+| 13 | Andere niet-recurrente bedrijfskosten | pág. 26, Jev 0.9 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): be-challengerproleague, verificado contra roster cacheado de "2019–20 Belgian First Division B" (tools/club-league-reference/be.json), coincidencia exacta "OH Leuven".
+```
+
 ## 2019
 
 ### Ingresos
@@ -302,4 +351,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### ohleuven-be-jaarrekening-2020-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

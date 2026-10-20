@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
   "club": "ohleuven-be",
   "year": 2020,
-  "generatedAt": "2026-10-18T15:28:00.195Z",
+  "generatedAt": "2026-10-20T21:28:33.609Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -94,7 +94,7 @@
       "values": [
         -0.05327
       ],
-      "glosa": "Existencias: disminución (aumento) (+)/(-)"
+      "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
     },
     {
       "label": "Diensten en diverse goederen",
@@ -154,7 +154,7 @@
       "values": [
         3.016365
       ],
-      "glosa": "Amortizaciones y pérdidas por deterioro de gastos de establecimiento, inmovilizado material e intangible"
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
@@ -164,7 +164,7 @@
       "values": [
         0.02665
       ],
-      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Bedrijfsbelastingen en -taksen",
@@ -187,14 +187,24 @@
       "glosa": "Otros"
     },
     {
-      "label": "Niet-recurrente bedrijfskosten",
+      "label": "Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
       "lado": "expense",
-      "page": 8,
-      "section": "estado",
+      "page": 26,
+      "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
       "values": [
-        0.674559
+        0.567917
       ],
-      "glosa": "Gastos de explotación no recurrentes"
+      "glosa": "Amortizaciones y correcciones de valor no recurrentes sobre gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+      "values": [
+        0.106642
+      ],
+      "glosa": "Otros gastos de explotación no recurrentes"
     }
   ]
 }
