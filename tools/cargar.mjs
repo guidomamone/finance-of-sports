@@ -103,6 +103,7 @@ import { parseNumber } from './datos-sitio.mjs';
 import { validacionAlDia } from './cache-al-dia.mjs'; // (to-do 237 ak)
 import { GENERADORES, queFalla } from './generadores.mjs'; // (to-do 298 x)
 import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs'; // (to-do 298 ah)
+import { combinar as combinarEntidades } from './suma-entidades.mjs'; // (to-do 283)
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.
@@ -463,7 +464,14 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   {
     const pv = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false }));
     if (!existsSync(pv)) { return corta('filas', 'no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)'); }
-    const VV = JSON.parse(readFileSync(pv, 'utf8'));
+    let VV = JSON.parse(readFileSync(pv, 'utf8'));
+    // (to-do 283) UN EJERCICIO QUE SUMA DOS ENTIDADES: el ajuste `suma-con` junta este documento con el de la otra entidad (tools/suma-entidades.mjs).
+    const ajSuma = ajusteDe(pdf, 'suma-con');
+    if (ajSuma && VV.estado === 'ok') {
+      const S = combinarEntidades(pdf, VV, ajSuma);
+      if (S.error) return corta('filas', S.error);
+      VV = S.V; P.suma = { nota: S.nota, otra: S.otra.pdf, transferencia: S.T, categorias: S.otra.categorias }; P.avisos.push(`suma de dos entidades: ${S.otra.pdf.split('/').pop()} se suma a este documento; transferencia ${S.T} fuera de ingresos y gastos`);
+    }
     notasVerif = VV.notas || []; ingresosVerif = VV.totales?.ingresos ?? null;
     // (to-do 298 a3) AVISO, no freno: el caché lo hizo otra versión de verificar.mjs (o de sus reglas). Correr tools/verificar.mjs sobre este PDF (gratis) antes de cargar.
     if (VV.scriptHuella && VV.scriptHuella !== huellaVerificar()) P.avisos.push(`caché viejo: el .verificacion.json es de otra versión de verificar.mjs (sello ${VV.scriptHuella}, hoy ${huellaVerificar()}); correr node tools/verificar.mjs "${pdf}" --rubros (gratis) por si hoy da otra cosa (to-do 298 a3)`);
@@ -490,6 +498,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
 
   // ---- 4. categoría de cada fila
   const cj = existsSync(catPath) ? JSON.parse(readFileSync(catPath, 'utf8')) : { rubros: [] };
+  if (P.suma && existsSync(P.suma.categorias)) cj.rubros = [...(cj.rubros || []), ...(JSON.parse(readFileSync(P.suma.categorias, 'utf8')).rubros || [])]; // las del documento propio primero (porEtiqueta toma la primera)
   // Por etiqueta Y lado (Versión 377): la misma etiqueta puede estar de los dos lados en un documento (Fortaleza 2025 "Diversos"). Si el
   // rubro no trae lado, vale solo por etiqueta.
   const porEtiqueta = new Map(); for (const r of cj.rubros || []) { const k = norm(r.label); if (!porEtiqueta.has(k)) porEtiqueta.set(k, r); if (r.lado && !porEtiqueta.has(`${k}|${r.lado}`)) porEtiqueta.set(`${k}|${r.lado}`, r); }
@@ -1306,7 +1315,8 @@ export function escribir(P) {
       const dmy = (f) => f.split('-').reverse().join('/');
       const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).`
         : P.transicion ? `Ejercicio de transición por cambio de fecha de cierre: ${P.transicion.inicio ? `del ${dmy(P.transicion.inicio)} ` : ''}al ${dmy(P.transicion.cierre)} (${P.transicion.meses} meses).` : null;
-      src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n${notaPrimero ? `    publicNote:${js(notaPrimero)},\n` : ''}  },\n`, dataRel);
+      const notaPublica = [notaPrimero, P.suma?.nota].filter(Boolean).join(' ');
+      src = insertarEnObjeto(src, 'Object.assign(sources, {', `  ${js(S.id)}: {\n    id:${js(S.id)}, clubId:${js(S.clubId)},\n    title:${js(S.title)},\n    type:${js(S.type)}, reliability:${js(S.reliability)},\n${notaPublica ? `    publicNote:${js(notaPublica)},\n` : ''}  },\n`, dataRel);
       if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
     }
     writeFileSync(dataPath, src); escritos.push(dataRel);
