@@ -57,7 +57,7 @@ async function mergear(rama) {
   if (git(['rev-parse', '--abbrev-ref', 'HEAD']).trim() !== 'main') throw new Error('mergear se corre sobre main');
   const sucio = git(['status', '--porcelain', '--untracked-files=no']).trim(); if (sucio) throw new Error(`hay cambios sin commitear en main:\n${sucio}`);
   const base = git(['merge-base', 'main', rama]).trim();
-  const tocados = git(['diff', '--name-only', base, rama]).split('\n').filter(Boolean);
+  const tocados = git(['diff', '--name-only', base, rama, '--']).split('\n').filter(Boolean);
   const docs = tocados.filter((f) => DOCS_PRINCIPAL.includes(f));
   if (docs.length) throw new Error(`la rama ${rama} editó ${docs.join(', ')}: esos los escribe solo la sesión principal (su cierre va en Admin/sesiones/<nombre>.md)`);
   try { git(['merge', '--no-ff', '--no-commit', rama]); } catch { /* con conflictos sale con error: se miran abajo */ }
