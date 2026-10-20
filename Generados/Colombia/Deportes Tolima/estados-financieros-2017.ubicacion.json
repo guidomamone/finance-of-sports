@@ -1,0 +1,247 @@
+{
+ "pdf": "Clubes/Colombia/Deportes Tolima/estados-financieros-2017.pdf",
+ "md": "Clubes/Colombia/Deportes Tolima/estados-financieros-2017.md",
+ "mdSha1": "d60e21658f3e8c3d3e0cb112a7f63cca976dd186",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:09.365Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 17,
+   "lineas": [
+    619,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 18,
+   "lineas": [
+    633,
+    639
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 18,
+   "lineas": [
+    645,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 19,
+   "lineas": [
+    665,
+    672
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 19,
+   "lineas": [
+    676,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    688,
+    694
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    702,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 20,
+   "lineas": [
+    731,
+    734
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    744,
+    752
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    771,
+    776
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    792,
+    797
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    805,
+    810
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    814,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    820,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    826,
+    828
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    838,
+    846
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    854,
+    860
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    873,
+    878
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    892,
+    899
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    907,
+    911
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    925,
+    930
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    940,
+    950
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    968,
+    980
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    988,
+    995
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 27,
+   "lineas": [
+    999,
+    1008
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 27,
+   "lineas": [
+    1014,
+    1027
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 27,
+   "lineas": [
+    1033,
+    1046
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 28,
+   "lineas": [
+    1054,
+    1057
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "AÑO 2017",
+ "columna_anterior": "AÑO 2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento es solo 'Notas a los estados financieros' (arranca en pág. 1; el índice empieza en la Nota 1, pág. 17). No contiene el estado de resultados integral ni el balance. Las notas 16 a 20 (ingresos b23-b24, gastos de administración b25-b26, gastos de ventas b27, otros ingresos y costos b27, otro resultado integral b28) solo desglosan renglones; no se armó un estado a partir de ellas."
+}

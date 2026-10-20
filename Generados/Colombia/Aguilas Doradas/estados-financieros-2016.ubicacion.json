@@ -1,0 +1,196 @@
+{
+ "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2016.pdf",
+ "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2016.md",
+ "mdSha1": "84737039ae936f9b5def30314323f93c02cbf0a1",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.591Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    60,
+    65
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    69,
+    74
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    95,
+    100
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    107,
+    109
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    113,
+    115
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    141,
+    149
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 5,
+   "lineas": [
+    153,
+    157
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 5,
+   "lineas": [
+    161,
+    169
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 6,
+   "lineas": [
+    185,
+    188
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 6,
+   "lineas": [
+    195,
+    197
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 6,
+   "lineas": [
+    204,
+    209
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 7,
+   "lineas": [
+    225,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 7,
+   "lineas": [
+    242,
+    258
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 8,
+   "lineas": [
+    274,
+    276
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 8,
+   "lineas": [
+    283,
+    285
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 8,
+   "lineas": [
+    289,
+    295
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 8,
+   "lineas": [
+    299,
+    305
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 10,
+   "lineas": [
+    367,
+    371
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 10,
+   "lineas": [
+    375,
+    379
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 11,
+   "lineas": [
+    394,
+    402
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "2016",
+ "columna_anterior": "2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja el ejercicio 2016 sin carga porque el documento trae solo las notas y no el estado de resultados integral?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El .md (portada pág. 1, notas 1 a 17 y conciliaciones de transición) no contiene el estado de resultados integral; la nota 11 (b10) trae una sola fila 'INGRESOS' y la 13 (b13) gastos de administración, pero no hay estado con resultado del año.",
+   "bloques": [
+    "b10",
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de notas a los estados financieros individuales de Talento Dorado S.A. (Águilas Doradas), 2016 y 2015, sin estado de situación ni estado de resultados. Notas de ingresos (b10), gastos de administración (b13), gastos de ventas (b14), costos financieros (b17) y otras ganancias y pérdidas (b16) existen, pero no hay estado ni resultado del año impreso; el único dato de resultado es 'Utilidad Antes de Impuestos $1.050.398.120' en la conciliación fiscal (b12). No se arma un estado desde las notas."
+}

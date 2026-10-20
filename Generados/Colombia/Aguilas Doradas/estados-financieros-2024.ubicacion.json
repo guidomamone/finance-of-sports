@@ -1,0 +1,216 @@
+{
+ "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2024.pdf",
+ "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2024.md",
+ "mdSha1": "b43de02e9e9137e7556347edb94e6a47835b1657",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.801Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    119,
+    124
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    128,
+    132
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    157,
+    160
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    183,
+    189
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    195,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    205,
+    209
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    235,
+    252
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    271,
+    287
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    312,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    322,
+    329
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    350,
+    355
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    361,
+    364
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    370,
+    375
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    394,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    403,
+    406
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    412,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    447,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    523,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    559,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    606,
+    608
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 18,
+   "lineas": [
+    623,
+    634
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    640,
+    645
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "AÑO 2024",
+ "columna_anterior": "AÑO 2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja el ejercicio 2024 sin carga porque el documento trae solo las notas y no el estado de resultados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Las notas 16.1 y 16.2 (ingresos, b17-b18), 17.1 (gastos de administración, b19), 17.2 (gastos de ventas, b20-b21) y 17.3 (no operacionales, b22) existen con totales, pero no hay estado de resultados ni resultado del año impreso.",
+   "bloques": [
+    "b17",
+    "b18",
+    "b19",
+    "b20",
+    "b21",
+    "b22"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento 'Notas a los estados financieros 2024' (transcripto con Mistral OCR, escaneado: verificar cifras contra el PDF antes de usarlas). Sin estado de situación ni de resultados. No se arma un estado desde las notas."
+}

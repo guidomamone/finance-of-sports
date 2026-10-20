@@ -1,0 +1,279 @@
+{
+ "pdf": "Clubes/Colombia/Deportes Tolima/estados-financieros-2018.pdf",
+ "md": "Clubes/Colombia/Deportes Tolima/estados-financieros-2018.md",
+ "mdSha1": "5548eef8c325a939eb319fe13055371799c46e41",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:09.410Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 17,
+   "lineas": [
+    676,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 18,
+   "lineas": [
+    690,
+    694
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 18,
+   "lineas": [
+    700,
+    708
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 19,
+   "lineas": [
+    720,
+    727
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 19,
+   "lineas": [
+    733,
+    737
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    745,
+    752
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    760,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 21,
+   "lineas": [
+    797,
+    800
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    808,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    827,
+    837
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    841,
+    850
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    858,
+    864
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    872,
+    877
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    886,
+    891
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    894,
+    896
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    899,
+    902
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    910,
+    918
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    928,
+    934
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    945,
+    958
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    961,
+    967
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    975,
+    977
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    981,
+    989
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    997,
+    1001
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 25,
+   "lineas": [
+    1009,
+    1015
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 26,
+   "lineas": [
+    1029,
+    1039
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 26,
+   "lineas": [
+    1051,
+    1055
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 27,
+   "lineas": [
+    1059,
+    1069
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 27,
+   "lineas": [
+    1077,
+    1093
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 27,
+   "lineas": [
+    1099,
+    1106
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 28,
+   "lineas": [
+    1110,
+    1118
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 28,
+   "lineas": [
+    1124,
+    1137
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 28,
+   "lineas": [
+    1143,
+    1146
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "AÑO 2018",
+ "columna_anterior": "AÑO 2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento es solo 'Notas a los estados financieros' (el índice empieza en la Nota 1, pág. 17). No contiene el estado de resultados integral ni el balance. Las notas 16 a 20 (ingresos b26-b27, gastos de administración b28, gastos de ventas b29-b30, otros ingresos y costos b31, otro resultado integral b32) solo desglosan renglones; el cálculo del impuesto de renta (b19-b20) trae ingresos 21.335.838 pero es una base fiscal, no el estado. No se armó un estado a partir de las notas."
+}

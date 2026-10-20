@@ -1,0 +1,207 @@
+{
+ "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2022.pdf",
+ "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2022.md",
+ "mdSha1": "36604a0aecbef7c0884108e3d771673e2bc5b9bb",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.750Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    93,
+    98
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    102,
+    106
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    130,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    152,
+    157
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    185,
+    191
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    197,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    207,
+    211
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    227,
+    234
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    244,
+    249
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    267,
+    270
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    276,
+    281
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 10,
+   "lineas": [
+    287,
+    290
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    306,
+    309
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 11,
+   "lineas": [
+    315,
+    323
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    345,
+    356
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    380,
+    388
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    392,
+    396
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    418,
+    432
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    448,
+    455
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    461,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    503,
+    506
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "AÑO 2022",
+ "columna_anterior": "AÑO 2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja el ejercicio 2022 sin carga porque el documento trae solo notas, y la conciliación fiscal 16.1 (b18) no es un estado de resultados con año anterior?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Las notas 15.1 y 15.2 (ingresos, b15-b16), 17 (gastos de administración, b20) y 18 (gastos de ventas, b21) existen, pero no hay estado de resultados; la 16.1 tiene columnas CONTABLE NIIF / FISCAL sin año anterior.",
+   "bloques": [
+    "b15",
+    "b16",
+    "b18",
+    "b20",
+    "b21"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de notas de Talento Dorado S.A. 2022 sin estado de situación ni de resultados. Nota 16.2 (b19) costos financieros con total. No se arma un estado desde las notas."
+}

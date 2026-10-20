@@ -82,4 +82,22 @@ window.RANKINGS["co-primeraA"] = {
         mix:[["Comercial / Sponsors",0.805],["Estadio",0.913],["Televisión",1.186],["Premios por competencias",0.091],["Venta de Jugadores",9.291],["Otros ingresos",0.045]] },
     ],
   },
+  2020: {
+    leagueSize: 20,
+    wiki: {"t":"2020 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
+    clubs: [
+      { id:"atleticobucaramanga-co", revenue:1.576, reportType:"official_balance_sheet",
+        sourceId:"atleticobucaramanga-co-estados-financieros-2020",
+        mix:[["Comercial / Sponsors",0.539],["Estadio",0.083],["Televisión",0.668],["Premios por competencias",0.272],["Otras secciones deportivas",0.012],["Otros ingresos",0.002]] },
+    ],
+  },
+  2019: {
+    leagueSize: 20,
+    wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
+    clubs: [
+      { id:"atleticobucaramanga-co", revenue:3.981, reportType:"official_balance_sheet",
+        sourceId:"atleticobucaramanga-co-estados-financieros-2019",
+        mix:[["Comercial / Sponsors",0.719],["Estadio",0.625],["Televisión",1.626],["Premios por competencias",0.468],["Venta de Jugadores",0.488],["Otros ingresos",0.054]] },
+    ],
+  },
 };

@@ -1,0 +1,124 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.pdf",
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.md",
+ "mdSha1": "d0e8daf24165cdafb2e6bcbcf6fed4245b9363ec",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.890Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 10,
+   "lineas": [
+    226,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    256,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    279,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    296,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    307,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    342,
+    345
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    351,
+    361
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    376,
+    391
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    401,
+    404
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    416,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    452,
+    460
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    470,
+    479
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b8",
+  "b10",
+  "b11",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "L7 (pág. 1): \"Estos estados financieros se presentan en miles de pesos colombianos\"",
+ "moneda": "COP",
+ "columna_ejercicio": "Diciembre 31 de 2017",
+ "columna_anterior": "Diciembre 31 de 2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Documento de políticas contables y NOTAS solamente: no trae estado de resultados del ejercicio 2017. Las notas de gastos (15 costos, 17 gastos de administración, 18 costos financieros, 19 otros gastos) están en el índice; las notas de ingresos (ingresos por actividades ordinarias, otros ingresos) y la de impuesto no aparecen como bloque con cifras, y no hay resultado del ejercicio impreso. No se arma un estado desde las notas."
+}

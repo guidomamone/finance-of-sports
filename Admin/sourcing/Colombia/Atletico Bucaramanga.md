@@ -32,3 +32,7 @@
 Estados financieros en disco ahora: 9 ejercicios (2016-2020, 2022-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
 
 Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y contarle, no preguntar); verde y amarillo en partes iguales (infobox es.wikipedia: 'Verde, Amarillo' #009846 / #FFE900; escudo amarillo arriba y verde abajo; hinchada 'amarilla'); sin footylogos ni hex de camiseta en el infobox. Candidatos: #009846 (primero de la lista) o null, verificado 2026-10-09, verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2019 desde `Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf` (sourceId `atleticobucaramanga-co-estados-financieros-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2020 desde `Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf` (sourceId `atleticobucaramanga-co-estados-financieros-2020`).

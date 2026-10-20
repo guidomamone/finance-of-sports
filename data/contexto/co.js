@@ -9,12 +9,20 @@ Object.assign(window.CLUB_CONTEXT, {
   'americadecali-co': {
     2025: {"estadio":"Pascual Guerrero","capacidad":38588,"sponsor":"Águila","marca":"Le Coq Sportif","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
+  'atleticobucaramanga-co': {
+    2019: {"estadio":"Alfonso López","capacidad":28000,"temporada":"2019 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264218","fuenteManual":"https://en.wikipedia.org/wiki/2019_Categor%C3%ADa_Primera_A_season (tabla de estadios)","manual":["estadio","capacidad"],"sinFuente":{"sponsor":"Buscado: en.wikipedia 2019 Categoría Primera A (tabla de camisetas sin la fila del club en lo leído), es.wikipedia del club y la web general: ninguna fuente nombra el sponsor de camiseta de ese año"}},
+    2020: {"estadio":"Alfonso López","capacidad":28000,"temporada":"2020 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375528276","fuenteManual":"https://en.wikipedia.org/wiki/2020_Categor%C3%ADa_Primera_A_season (tabla de estadios) ; en 2020 jugó algunos partidos en el Daniel Villa Zapata de Barrancabermeja por el Preolímpico","manual":["estadio","capacidad"],"sinFuente":{"sponsor":"Buscado: en.wikipedia 2020 Categoría Primera A (tabla de camisetas sin la fila del club en lo leído), es.wikipedia del club y la web general: ninguna fuente nombra el sponsor de camiseta de ese año"}},
+  },
   'atlnacional-co': {
     2025: {"estadio":"Atanasio Girardot","capacidad":44863,"sponsor":"Betsson","marca":"Nike","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'boyacachico-co': {
     2024: {"estadio":"La Independencia","capacidad":20630,"marca":"Geus","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
     2025: {"estadio":"La Independencia","capacidad":20630,"sponsor":"Pool","marca":"Geus","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'bucaramanga-co': {
+    2019: {"temporada":"2019 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264218"},
+    2020: {"temporada":"2020 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375528276"},
   },
   'depcali-co': {
     2025: {"estadio":"Deportivo Cali","capacidad":42000,"sponsor":"Wplay, Pastas La Muñeca, FluoCardent","marca":"Hillside","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},

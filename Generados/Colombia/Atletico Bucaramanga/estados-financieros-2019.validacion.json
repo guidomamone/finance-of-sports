@@ -1,0 +1,24 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf",
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.md",
+ "mdSha1": "7d496f708d2107b1058d739cd29d70e2a6cc1a8c",
+ "modo": "digital",
+ "motivoModo": "3 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 2496 vs 2492, 2131 vs 2111, 372028 vs 372828; 66 números del .md no están en el PDF (tolerancia 19)",
+ "generado": "2026-10-20T21:16:32.485Z",
+ "fuentes": {
+  "9": "gemini",
+  "30": "pdftotext",
+  "31": "pdftotext",
+  "32": "pdftotext",
+  "33": "pdftotext",
+  "34": "pdftotext",
+  "35": "pdftotext",
+  "36": "pdftotext",
+  "37": "pdftotext"
+ },
+ "hibridas": [
+  9
+ ],
+ "confirmados": 205,
+ "noConfirmados": []
+}

@@ -2,8 +2,8 @@
  "pdf": "Clubes/Colombia/Deportes Tolima/estados-financieros-2023.pdf",
  "md": "Clubes/Colombia/Deportes Tolima/estados-financieros-2023.md",
  "mdSha1": "65e884bac3ae9d1325f042a94515dca2b8e4abf0",
- "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T19:42:26.937Z",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:09.713Z",
  "perimetroClub": null,
  "bloques": {
   "b1": {
@@ -663,94 +663,17 @@
    "tipo": "tabla"
   }
  },
- "sin_estado": false,
+ "sin_estado": true,
  "estado": [],
- "notas_ingresos": [
-  "b40",
-  "b41",
-  "b42",
-  "b43",
-  "b65",
-  "b66",
-  "b67",
-  "b68",
-  "b69"
- ],
- "notas_gastos": [
-  "b44",
-  "b45",
-  "b46",
-  "b47",
-  "b48",
-  "b49",
-  "b50",
-  "b51",
-  "b52",
-  "b53",
-  "b54",
-  "b55",
-  "b56",
-  "b57",
-  "b58",
-  "b59",
-  "b60",
-  "b61",
-  "b62",
-  "b63",
-  "b64",
-  "b70",
-  "b71",
-  "b72",
-  "b73"
- ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
  "escala": "no se sabe",
- "escala_evidencia": "No se ve el estado de resultados; las notas citan importes como '$ 405 millones' para una provisión cuyo valor de tabla parece en miles (ej. $634,407 impuesto diferido), lo que sugiere miles de pesos.",
+ "escala_evidencia": "",
  "moneda": "COP",
- "columna_ejercicio": "DIC-23",
- "columna_anterior": "DIC-22",
+ "columna_ejercicio": "DIC - 23",
+ "columna_anterior": "DIC - 22",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿El estado de resultados integral 2023 está en páginas del PDF que no figuran en el índice (antes de la pág. 20)?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice empieza en la pág. 20 con las notas; no aparece ningún bloque con el estado de resultados.",
-   "bloques": [],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera de la carga el anexo del equipo femenino (b74-b82) por ser un subconjunto de importes ya incluidos en las notas 16-19?",
-   "propuesta": "sí",
-   "tema": "usar-cuadro-por-segmento",
-   "renglon": "",
-   "texto": "El anexo técnico del equipo femenino (pág. 55-58) parece un segmento que repite partidas ya abiertas en las notas generales.",
-   "bloques": [
-    "b74",
-    "b75",
-    "b76",
-    "b77",
-    "b78",
-    "b79",
-    "b80",
-    "b81",
-    "b82"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Los importes de las notas están expresados en miles de pesos colombianos?",
-   "propuesta": "sí",
-   "tema": "escala",
-   "renglon": "",
-   "texto": "No hay frase de escala visible; el texto de la pág. 37 dice '$ 405 millones' para la provisión de demandas.",
-   "bloques": [
-    "b31",
-    "b32"
-   ],
-   "afecta_carga": true
-  }
- ],
- "observaciones": "No se encontró en el índice el bloque del estado de resultados; se eligen las notas 16 a 20 (ingresos operacionales, gastos de administración, gastos de ventas, otros ingresos y gastos, impuesto de renta). b41, b61, b62 y b63 detallan por club/jugador, pero cierran rubros (venta de derechos, préstamos, costo de vendidos) y se incluyen tentativamente como desglose de renglón; podrían excluirse. Estados individuales del Club Deportes Tolima S.A."
+ "dudas": [],
+ "observaciones": "El documento es solo 'Notas a los estados financieros' (el índice empieza en la Nota 1, pág. 20). No contiene el estado de resultados integral ni el balance. Las notas de ingresos, gastos y otros ingresos y costos solo desglosan renglones. Al final (pág. 55-58, b74-b82) trae un anexo técnico de ingresos y gastos del EQUIPO FEMENINO 2023 (una sola columna DIC-23): es un anexo parcial de una unidad, no el estado del club. No se armó un estado a partir de las notas."
 }

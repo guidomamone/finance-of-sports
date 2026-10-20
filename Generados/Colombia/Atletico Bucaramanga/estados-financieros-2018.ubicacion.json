@@ -1,0 +1,213 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2018.pdf",
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2018.md",
+ "mdSha1": "a4cfa263bd1a8eb3a876da90cbdc1dda25705889",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.916Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    166,
+    172
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    192,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    216,
+    220
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    232,
+    236
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    242,
+    252
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    276,
+    280
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    286,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    307,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    329,
+    333
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    339,
+    347
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    361,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    372,
+    376
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    384,
+    389
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    400,
+    406
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    414,
+    421
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    433,
+    454
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    462,
+    465
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    477,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    506,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    522,
+    532
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 18,
+   "lineas": [
+    550,
+    556
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b15",
+  "b17"
+ ],
+ "notas_gastos": [
+  "b16",
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "El documento no imprime la escala; se infiere por cruce: Caja general 2018 $1.603.732 (L169) coincide con la columna 2018 del documento 2019, que dice \"Cifras en miles de pesos colombianos\"",
+ "moneda": "COP",
+ "columna_ejercicio": "Diciembre 31 de 2018",
+ "columna_anterior": "Diciembre 31 de 2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que las cifras del documento 2018 están en miles de pesos colombianos aunque el documento no lo imprime (L169 Caja general $1.603.732 = columna 2018 del documento 2019, en miles)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ni las notas ni las políticas de 2018 dicen la escala; se deduce del cruce con el documento 2019.",
+   "bloques": [
+    "b15",
+    "b16",
+    "b18"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento de políticas contables y NOTAS solamente (pág. 1 a 17): sin estado de resultados del ejercicio 2018. Notas 14 (ingresos por actividades ordinarias), 15 (costos), 16 (otros ingresos), 17 (gastos de administración), 18 (costos financieros) y 19 (otros gastos) con total impreso, pero sin resultado del ejercicio impreso ni nota de impuesto a la renta. No se arma un estado desde las notas."
+}

@@ -1,0 +1,554 @@
+{
+ "pdf": "Clubes/Colombia/La Equidad/estados-financieros-2023.pdf",
+ "md": "Clubes/Colombia/La Equidad/estados-financieros-2023.md",
+ "mdSha1": "e7ad5ddbc18f7e17db2e9db3076f8470d8d48123",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:10.147Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    35,
+    41
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    172,
+    184
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 16,
+   "lineas": [
+    372,
+    385
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    397,
+    411
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 18,
+   "lineas": [
+    419,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    446,
+    463
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 19,
+   "lineas": [
+    473,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    485,
+    502
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    516,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    524,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    542,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    558,
+    565
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    571,
+    578
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    583,
+    587
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    601,
+    613
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    619,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    640,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    656,
+    659
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 23,
+   "lineas": [
+    665,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    685,
+    690
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    696,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    723,
+    743
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    755,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    769,
+    774
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 26,
+   "lineas": [
+    776,
+    782
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 27,
+   "lineas": [
+    794,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 27,
+   "lineas": [
+    808,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 28,
+   "lineas": [
+    863,
+    869
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 29,
+   "lineas": [
+    888,
+    894
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 29,
+   "lineas": [
+    901,
+    905
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 29,
+   "lineas": [
+    909,
+    916
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 30,
+   "lineas": [
+    940,
+    958
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 31,
+   "lineas": [
+    978,
+    982
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 31,
+   "lineas": [
+    992,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 31,
+   "lineas": [
+    1007,
+    1011
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 32,
+   "lineas": [
+    1025,
+    1044
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 32,
+   "lineas": [
+    1048,
+    1051
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 32,
+   "lineas": [
+    1055,
+    1059
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 33,
+   "lineas": [
+    1078,
+    1082
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 33,
+   "lineas": [
+    1088,
+    1091
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 33,
+   "lineas": [
+    1097,
+    1100
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 34,
+   "lineas": [
+    1115,
+    1121
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 34,
+   "lineas": [
+    1127,
+    1143
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 35,
+   "lineas": [
+    1157,
+    1173
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 35,
+   "lineas": [
+    1177,
+    1182
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 35,
+   "lineas": [
+    1186,
+    1196
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 36,
+   "lineas": [
+    1206,
+    1217
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 37,
+   "lineas": [
+    1241,
+    1244
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 37,
+   "lineas": [
+    1252,
+    1263
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 37,
+   "lineas": [
+    1269,
+    1273
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 38,
+   "lineas": [
+    1285,
+    1300
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 38,
+   "lineas": [
+    1306,
+    1323
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 39,
+   "lineas": [
+    1337,
+    1350
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 39,
+   "lineas": [
+    1358,
+    1362
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 39,
+   "lineas": [
+    1368,
+    1371
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 40,
+   "lineas": [
+    1385,
+    1388
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 40,
+   "lineas": [
+    1392,
+    1396
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 40,
+   "lineas": [
+    1402,
+    1406
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 40,
+   "lineas": [
+    1410,
+    1414
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 41,
+   "lineas": [
+    1430,
+    1436
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 41,
+   "lineas": [
+    1442,
+    1447
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 42,
+   "lineas": [
+    1463,
+    1470
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 43,
+   "lineas": [
+    1496,
+    1501
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b43",
+  "b44",
+  "b45",
+  "b46",
+  "b47",
+  "b49",
+  "b50"
+ ],
+ "notas_gastos": [
+  "b48",
+  "b51",
+  "b52",
+  "b53",
+  "b54"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Cifras expresadas en miles de pesos colombianos)",
+ "moneda": "COP",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022 Reexpresado",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el 'Estado de Resultado Integral' b6 (pág. 18) y su repetición b8 (pág. 19), que son del año 2022 reexpresado y no del ejercicio 2023?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "Las columnas de b6 y b8 son 'Año 2022 Reexpresado (Nota 5) | Variación | Año 2022 Presentado'; el documento no trae el estado de resultados de 2023.",
+   "bloques": [
+    "b6",
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento trae la nota 5 de reexpresión (balance b4-b5 y estado b6/b8 de 2022 reexpresado), pero no el estado de resultados de 2023. Las notas 21 a 27 (b43 a b54) desglosan ingresos y gastos de 2023, pero no se arma un estado a partir de ellas. b60-b62 (pág. 41-42, nota 'Equipo femenino', no auditada) y b21 (cálculo del impuesto) no son el estado."
+}

@@ -1,0 +1,612 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf",
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.md",
+ "mdSha1": "e796be445f7e93019761f10d520ed37b340356a9",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.975Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    17,
+    44
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    50,
+    55
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    69,
+    96
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    102,
+    111
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    146,
+    147
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    151,
+    156
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    160,
+    164
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    172,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 8,
+   "lineas": [
+    180,
+    185
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 8,
+   "lineas": [
+    189,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 9,
+   "lineas": [
+    224,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 10,
+   "lineas": [
+    265,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    313,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    367,
+    382
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    591,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    601,
+    606
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    622,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    627,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    639,
+    640
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 21,
+   "lineas": [
+    644,
+    648
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 22,
+   "lineas": [
+    666,
+    672
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    676,
+    682
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 23,
+   "lineas": [
+    692,
+    693
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 23,
+   "lineas": [
+    697,
+    701
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    717,
+    722
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 24,
+   "lineas": [
+    730,
+    731
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    735,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 24,
+   "lineas": [
+    748,
+    759
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    793,
+    797
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 25,
+   "lineas": [
+    803,
+    814
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 26,
+   "lineas": [
+    828,
+    841
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 26,
+   "lineas": [
+    851,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 27,
+   "lineas": [
+    864,
+    865
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 27,
+   "lineas": [
+    869,
+    872
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 27,
+   "lineas": [
+    876,
+    880
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 27,
+   "lineas": [
+    884,
+    885
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 27,
+   "lineas": [
+    889,
+    896
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 27,
+   "lineas": [
+    906,
+    910
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 28,
+   "lineas": [
+    924,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 28,
+   "lineas": [
+    946,
+    950
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 29,
+   "lineas": [
+    964,
+    970
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 29,
+   "lineas": [
+    976,
+    985
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 30,
+   "lineas": [
+    997,
+    1001
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 30,
+   "lineas": [
+    1013,
+    1019
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 31,
+   "lineas": [
+    1039,
+    1046
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 32,
+   "lineas": [
+    1064,
+    1074
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 32,
+   "lineas": [
+    1078,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 33,
+   "lineas": [
+    1106,
+    1121
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 33,
+   "lineas": [
+    1125,
+    1142
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 34,
+   "lineas": [
+    1150,
+    1151
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 34,
+   "lineas": [
+    1155,
+    1161
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 34,
+   "lineas": [
+    1165,
+    1166
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 34,
+   "lineas": [
+    1170,
+    1179
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 34,
+   "lineas": [
+    1183,
+    1184
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 34,
+   "lineas": [
+    1188,
+    1192
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 35,
+   "lineas": [
+    1210,
+    1226
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 36,
+   "lineas": [
+    1236,
+    1237
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 36,
+   "lineas": [
+    1241,
+    1265
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 36,
+   "lineas": [
+    1269,
+    1270
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 36,
+   "lineas": [
+    1274,
+    1277
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 37,
+   "lineas": [
+    1285,
+    1286
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 37,
+   "lineas": [
+    1290,
+    1299
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 37,
+   "lineas": [
+    1303,
+    1304
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 37,
+   "lineas": [
+    1308,
+    1314
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 37,
+   "lineas": [
+    1318,
+    1319
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 37,
+   "lineas": [
+    1323,
+    1332
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 38,
+   "lineas": [
+    1346,
+    1350
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 38,
+   "lineas": [
+    1360,
+    1368
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 39,
+   "lineas": [
+    1384,
+    1388
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 39,
+   "lineas": [
+    1400,
+    1404
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 40,
+   "lineas": [
+    1412,
+    1418
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b11"
+ ],
+ "notas_ingresos": [
+  "b46",
+  "b47",
+  "b67",
+  "b69"
+ ],
+ "notas_gastos": [
+  "b48",
+  "b49",
+  "b51",
+  "b53",
+  "b55",
+  "b56",
+  "b58",
+  "b60",
+  "b62",
+  "b64",
+  "b66",
+  "b68",
+  "b70"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "L222 (pág. 9, encabezado del estado de resultados): \"Cifras en miles de pesos colombianos\"; carátula de las notas (b2, pág. 3): \"Cifras en miles de Pesos Colombianos\"",
+ "moneda": "COP",
+ "columna_ejercicio": "31 de diciembre de 2020",
+ "columna_anterior": "31 de diciembre de 2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual por función del gasto en b11 (pág. 9, L226-L237). No hay nota de impuesto a las ganancias (el gasto por impuestos 2020 es $ -). Se eligieron las notas 13 a 19 y sus sub-cuadros (a) a (e); no se eligen balance (b6-b10), patrimonio (b12), flujo (b13-b14) ni las notas de balance (1 a 12). Los sub-cuadros (a)...(e) imprimen solo el ejercicio 2020 (sin columna anterior); en varios la primera fila quedó como encabezado de la tabla (b51, b53, b55, b58, b60, b62, b64, b66) y se extrajo igual. El balance (L193) imprime 'Utilidad / Pérdida del periodo $ 424.049' sin signo, mientras estado y nota 12 dicen -424.049: no afecta la carga."
+}

@@ -1,0 +1,199 @@
+{
+ "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2018.pdf",
+ "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2018.md",
+ "mdSha1": "a7264f92604e7e637db53c5dd87734704f1f8066",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.646Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    70,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    92,
+    97
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    105,
+    108
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    128,
+    132
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    137,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    158,
+    165
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    173,
+    179
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 7,
+   "lineas": [
+    198,
+    202
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 7,
+   "lineas": [
+    206,
+    212
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 7,
+   "lineas": [
+    218,
+    221
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 8,
+   "lineas": [
+    238,
+    241
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 8,
+   "lineas": [
+    245,
+    253
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 9,
+   "lineas": [
+    280,
+    290
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 9,
+   "lineas": [
+    298,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 10,
+   "lineas": [
+    321,
+    329
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 10,
+   "lineas": [
+    333,
+    347
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 10,
+   "lineas": [
+    351,
+    356
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 11,
+   "lineas": [
+    371,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 11,
+   "lineas": [
+    378,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 11,
+   "lineas": [
+    397,
+    399
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "2018",
+ "columna_anterior": "2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja el ejercicio 2018 sin carga porque el documento trae solo notas, y la conciliación fiscal 13.1 (b14-b15) no es un estado de resultados con año anterior?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Las notas 12 (ingresos, b13), 14 (gastos de administración, b19) y 15 (gastos de ventas, b20) existen, pero no hay estado de resultados; la 13.1 muestra una columna 'CONTABLE NIIF' con ingresos, gastos y 'UTILIDAD DESPUES DE IMPUESTOS' sin columna del año anterior. Solo un reintento 'notas como estado' (aprobado por Guido) la usaría.",
+   "bloques": [
+    "b13",
+    "b14",
+    "b15",
+    "b19",
+    "b20"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento 'Estados Financieros Individuales ... 2018' de Talento Dorado S.A. que en realidad contiene solo notas (efectivo, cuentas por cobrar, derechos deportivos, pasivos, patrimonio, ingresos, impuesto, costos financieros, gastos). No hay estado de situación ni de resultados. No se arma un estado desde las notas."
+}
