@@ -762,3 +762,37 @@ window.CLUB_GENERIC_DATA['boca-ar'] = {
   presupuestoFinancieroByYear: bocaPresupuestoFinancieroByYear,
   presupuestoInversionesByYear: bocaPresupuestoInversionesByYear,
 };
+
+Object.assign(sources, {
+  'boca-ar-presupuesto-2026-27': {
+      id:'boca-ar-presupuesto-2026-27', clubId:'boca-ar',
+      title:'Presupuesto Económico, Financiero y de Inversiones, Ejercicio N°123 (jul-2026 a jun-2027)',
+      type:'official_budget', reliability:'primary',
+    },
+  'boca-ar-balance-2024-25': {
+      id:'boca-ar-balance-2024-25', clubId:'boca-ar',
+      title:'Memoria y Balance (estados contables auditados), Ejercicio Económico N°121, 1/7/2024 a 30/6/2025',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.bocajuniors.com.ar/club/presupuesto',
+    },
+  'boca-ar-balance-2021-22': {
+      id:'boca-ar-balance-2021-22', clubId:'boca-ar',
+      title:'Estados Contables auditados, Ejercicio Económico N°118, 1/7/2021 a 30/6/2022',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.bocajuniors.com.ar/rebrand/files/EECC_30525418835_2022.pdf',
+    },
+  'boca-ar-balance-2022-23': {
+      id:'boca-ar-balance-2022-23', clubId:'boca-ar',
+      title:'Estados Contables auditados, Ejercicio Económico N°119, 1/7/2022 a 30/6/2023',
+      type:'official_balance_sheet', reliability:'primary',
+      url:'https://www.bocajuniors.com.ar/rebrand/files/balance_01_07_22_al_30_06_23_firmado.pdf',
+    },
+});
+
+gestionesByClub['boca-ar'] = {
+      riquelme:  { nombre:'Riquelme (2023-actual)', firstYear:2025, lastYear:2027 },
+      ameal:     { nombre:'Ameal (2019-2023)',      firstYear:2022, lastYear:2023 },
+      angelici:  { nombre:'Angelici (2015-2019)',   firstYear:2018, lastYear:2019 },
+    };
+
+memberCountByClub['boca-ar'] = 365000;
