@@ -20,4 +20,31 @@ window.RANKINGS["gb-scottishpremiership"] = {
         mix:[["Comercial / Sponsors",46.143],["Estadio",62.784],["Televisión",46.008],["Venta de Jugadores",8.395],["Otros ingresos",2.898]] },
     ],
   },
+  2023: {
+    leagueSize: 12,
+    wiki: {"t":"2022–23 Scottish Premiership","lang":"en","at":"2026-10-20","n":12},
+    clubs: [
+      { id:"celtic-gb", revenue:187.903, reportType:"official_balance_sheet",
+        sourceId:"celtic-gb-group-accounts-2022-23",
+        mix:[["Comercial / Sponsors",45.241],["Estadio",64.852],["Televisión",39.637],["Venta de Jugadores",18.36],["Otros ingresos",19.812]] },
+    ],
+  },
+  2022: {
+    leagueSize: 12,
+    wiki: {"t":"2021–22 Scottish Premiership","lang":"en","at":"2026-10-20","n":12},
+    clubs: [
+      { id:"celtic-gb", revenue:142.394, reportType:"official_balance_sheet",
+        sourceId:"celtic-gb-group-accounts-2021-22",
+        mix:[["Comercial / Sponsors",36.458],["Estadio",52.285],["Televisión",16.16],["Venta de Jugadores",35.25],["Otros ingresos",2.24]] },
+    ],
+  },
+  2021: {
+    leagueSize: 12,
+    wiki: {"t":"2020–21 Scottish Premiership","lang":"en","at":"2026-10-20","n":12},
+    clubs: [
+      { id:"celtic-gb", revenue:103.941, reportType:"official_balance_sheet",
+        sourceId:"celtic-gb-group-accounts-2020-21",
+        mix:[["Comercial / Sponsors",38.06],["Estadio",28.777],["Televisión",15.551],["Venta de Jugadores",13.038],["Otros ingresos",8.515]] },
+    ],
+  },
 };
