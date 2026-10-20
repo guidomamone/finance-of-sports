@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf",
- "generado": "2026-10-20T18:24:21.487Z",
+ "generado": "2026-10-20T18:51:26.264Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
-  },
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2023-03-31): confirmar qué ejercicio es antes de cargarlo"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
    "etapa": "filas",
-   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -28,10 +16,10 @@
  "periodo": {
   "tipo": "anual",
   "meses": 12,
-  "cierre": "2023-03-31",
+  "cierre": "2021-06-30",
   "anual": "temporada",
-  "confianza": "media",
-  "nombreNoCoincide": true
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-20): Consolidated Statement of Comprehensive Income 'Period from 1 August 2020 to 30 June 2021' (11 meses, pág. 13 del visor); el 2023-03-31 del registro es el sello de presentación"
  },
  "clubId": "leeds-gb",
  "year": 2021,
