@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 850 — Beşiktaş 2006-2008 destrabados (2026-10-20) [292 · besiktas-tr]
+
+- `tools/alta-club.mjs` reconoce la fecha de un tipo de cambio con meses en turco, fechas repetidas por columna y bloques con fecha:
+  Beşiktaş 2007 (1,3253) y 2008 (1,2067) salen solos; 2006 va con ajuste manual fx 1,5357 (votación 3 a 0). Aprobado por la Auditora.
+- CONVENCIONES: un documento ya marcado `sin_estado` no se vuelve a correr con `--rehacer` ni `--reintentar`.
+
 ## Versión 849 — St. Gallen recargado, Patro Eisden 2013 y 2015, 255 fase 2, regla de fx (2026-10-20) [292 · 255 · stgallen-ch, patroeisden-be, llaneros-co, besiktas-tr]
 
 - Merge de Onboarding 5: St. Gallen 2019 y 2022 recargados sin la compensación intragrupo y 2020 cargado; Patro Eisden 2013 y 2015 con
