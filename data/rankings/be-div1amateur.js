@@ -13,12 +13,14 @@ window.RANKINGS["be-div1amateur"] = {
   },
   2023: {
     leagueSize: 20,
-    sinDato: ["raallalouviere-be"],
     wiki: {"t":"2022–23 Belgian National Division 1","lang":"en","at":"2026-10-19","n":20},
     clubs: [
       { id:"patroeisden-be", revenue:1.577, reportType:"official_balance_sheet",
         sourceId:"patroeisden-be-jaarrekening-2023-06-30-individual",
         mix:[["Otros ingresos",1.577]] },
+      { id:"raallalouviere-be", revenue:1.193, reportType:"official_balance_sheet",
+        sourceId:"raallalouviere-be-jaarrekening-2023-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.193]] },
     ],
   },
   2022: {
