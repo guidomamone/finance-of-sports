@@ -1,0 +1,425 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.md",
+ "mdSha1": "5d21931240a20977f6b94e5e91352c18249dd755",
+ "ubicacionSha1": "1289b12b94a3883288f2aebf71b490a31ba0aec1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:02:35.240Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b15"
+  ],
+  "notas_gastos": [
+   "b18",
+   "b16",
+   "b22"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L742: \"2024 £000\""
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "L1417: \"2024 £000\""
+  },
+  {
+   "bloque": "b18",
+   "escala": "miles",
+   "evidencia": "L1461: \"2024 £000\""
+  },
+  {
+   "bloque": "b16",
+   "escala": "miles",
+   "evidencia": "L1432: \"2024 £000\""
+  },
+  {
+   "bloque": "b22",
+   "escala": "miles",
+   "evidencia": "L1511: \"2024 £000\""
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 744,
+   "etiqueta": "Turnover",
+   "actual": "320,313",
+   "anterior": "250,265",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 745,
+   "etiqueta": "Operating expenses before amortisation and impairment",
+   "actual": "(291,484)",
+   "anterior": "(228,636)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 746,
+   "etiqueta": "Operating profit before amortisation and impairment",
+   "actual": "28,829",
+   "anterior": "21,629",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 747,
+   "etiqueta": "Amortisation and impairment of players' registrations",
+   "actual": "(97,545)",
+   "anterior": "(89,343)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 748,
+   "etiqueta": "Operating loss before profit on disposal of players' and staff registrations and tangible fixed assets",
+   "actual": "(68,716)",
+   "anterior": "(67,714)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 749,
+   "etiqueta": "Profit on disposal of players' and staff registrations",
+   "actual": "69,816",
+   "anterior": "2,836",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 750,
+   "etiqueta": "Profit on disposal of tangible fixed assets",
+   "actual": "113",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 751,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "1,213",
+   "anterior": "(64,878)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 752,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "2,127",
+   "anterior": "617",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 753,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(14,419)",
+   "anterior": "(7,490)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 754,
+   "etiqueta": "Loss before tax",
+   "actual": "(11,079)",
+   "anterior": "(71,751)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 755,
+   "etiqueta": "Taxation",
+   "actual": "(18)",
+   "anterior": "(91)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 756,
+   "etiqueta": "Loss and total comprehensive income for the year",
+   "actual": "(11,097)",
+   "anterior": "(71,842)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1419,
+   "etiqueta": "Matchday",
+   "actual": "50,095",
+   "anterior": "37,914",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1420,
+   "etiqueta": "Media",
+   "actual": "153,950",
+   "anterior": "165,485",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1421,
+   "etiqueta": "UEFA",
+   "actual": "29,835",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1422,
+   "etiqueta": "Commercial",
+   "actual": "83,573",
+   "anterior": "43,915",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1423,
+   "etiqueta": "Other income",
+   "actual": "2,860",
+   "anterior": "2,951",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1424,
+   "etiqueta": "",
+   "actual": "320,313",
+   "anterior": "250,265",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1463,
+   "etiqueta": "Wages and salaries",
+   "actual": "194,522",
+   "anterior": "163,221",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1464,
+   "etiqueta": "Social security costs",
+   "actual": "23,536",
+   "anterior": "21,532",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1465,
+   "etiqueta": "Other pension costs",
+   "actual": "680",
+   "anterior": "347",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1466,
+   "etiqueta": "",
+   "actual": "218,738",
+   "anterior": "185,100",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1434,
+   "etiqueta": "Other operating income – release of capital grants",
+   "actual": "(87)",
+   "anterior": "(87)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Operating profit/(loss)"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1436,
+   "etiqueta": "- owned and long leasehold",
+   "actual": "4,962",
+   "anterior": "3,425",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1437,
+   "etiqueta": "Amortisation of intangible assets",
+   "actual": "96,744",
+   "anterior": "86,811",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation and impairment of players' registrations"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1438,
+   "etiqueta": "Impairment of intangible assets",
+   "actual": "801",
+   "anterior": "2,532",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation and impairment of players' registrations"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1439,
+   "etiqueta": "Operating lease payments",
+   "actual": "696",
+   "anterior": "696",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1440,
+   "etiqueta": "Foreign exchange (gains)/losses",
+   "actual": "(1,316)",
+   "anterior": "845",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1513,
+   "etiqueta": "Term loan interest payable",
+   "actual": "5,815",
+   "anterior": "3,715",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1514,
+   "etiqueta": "Interest payable on multi employer pension scheme",
+   "actual": "4",
+   "anterior": "8",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1515,
+   "etiqueta": "Unwinding of discount on deferred payments for players' registrations",
+   "actual": "8,626",
+   "anterior": "4,255",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1516,
+   "etiqueta": "Other interest payable",
+   "actual": "(26)",
+   "anterior": "(488)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1517,
+   "etiqueta": "",
+   "actual": "14,419",
+   "anterior": "7,490",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 744,
+  "actual": "320,313"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 756,
+  "actual": "(11,097)",
+  "anterior": "(71,842)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan las filas del cuadro 'charging/(crediting)' (L1434-L1440) solo como detalle informativo, sin sumarlas a los gastos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses before amortisation and impairment",
+   "texto": "La nota L1430 es un listado de partidas incluidas en el resultado operativo, no un desglose que sume a un renglón; mezcla ingresos, amortizaciones y diferencias de cambio.",
+   "bloques": [
+    "b16"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Wages and salaries' (L1463) como salarios totales del personal, aunque no hay una fila específica de 'Salarios del plantel'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses before amortisation and impairment",
+   "texto": "El cuadro de staff costs (L1459-L1466) no separa plantel del resto del personal; no hay fila 'Salarios del plantel' en los bloques.",
+   "bloques": [
+    "b18"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Todo en £000. No hay total de gastos impreso. La columna anterior del estado es '2023 restated'; las notas b15, b16 y b22 rotulan '2023' sin restated. No existe fila 'Salarios del plantel': el cuadro de costos de personal (b18) solo trae Wages and salaries, Social security costs y Other pension costs, sin cuadro por segmento."
+}

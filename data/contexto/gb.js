@@ -93,6 +93,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"City of Manchester Stadium","capacidad":52900,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'newcastle-gb': {
+    2022: {"estadio":"St James' Park","capacidad":52305,"sponsor":"FUN88","marca":"Castore","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2025: {"estadio":"St James' Park","capacidad":52258,"sponsor":"Sela","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'nottinghamforest-gb': {

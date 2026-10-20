@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.md",
+  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.pdf",
+  "club": "newcastle-gb",
+  "year": 2020,
+  "generatedAt": "2026-10-20T17:51:00.022Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        17.443
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Media",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        106.103
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        25.85
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Other income",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        3.23
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Profit on disposal of players' registrations",
+      "lado": "revenue",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        26.288
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos de jugadores"
+    },
+    {
+      "label": "Operating expenses",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        147.952
+      ],
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Amortisation and impairment of players' registrations",
+      "lado": "expense",
+      "page": 15,
+      "section": "estado",
+      "values": [
+        58.696
+      ],
+      "glosa": "Amortización y deterioro de derechos federativos de jugadores"
+    }
+  ]
+}

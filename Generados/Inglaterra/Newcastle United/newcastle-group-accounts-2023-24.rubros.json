@@ -1,0 +1,110 @@
+{
+  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.md",
+  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.pdf",
+  "club": "newcastle-gb",
+  "year": 2024,
+  "generatedAt": "2026-10-20T18:11:40.310Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        50.095
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Media",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        153.95
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "UEFA",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        29.835
+      ],
+      "glosa": "UEFA"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        83.573
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Other income",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        2.86
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Profit on disposal of players' and staff registrations",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        69.816
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos de jugadores y cuerpo técnico"
+    },
+    {
+      "label": "Profit on disposal of tangible fixed assets",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        0.113
+      ],
+      "glosa": "Beneficio por enajenación de inmovilizado material"
+    },
+    {
+      "label": "Operating expenses before amortisation and impairment",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        291.484
+      ],
+      "glosa": "Gastos de explotación antes de amortización y deterioro de valor"
+    },
+    {
+      "label": "Amortisation of intangible assets",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Amortisation and impairment of players' registrations\"",
+      "values": [
+        96.744
+      ],
+      "glosa": "Amortización de activos intangibles"
+    },
+    {
+      "label": "Impairment of intangible assets",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Amortisation and impairment of players' registrations\"",
+      "values": [
+        0.801
+      ],
+      "glosa": "Deterioro de valor de activos intangibles"
+    }
+  ]
+}

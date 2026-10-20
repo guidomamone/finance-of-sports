@@ -1,0 +1,452 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.pdf",
+ "generado": "2026-10-20T18:14:10.729Z",
+ "frena": [],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2025 consolidado",
+  "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
+ ],
+ "ejercicio": {
+  "clubId": "newcastle-gb",
+  "year": 2024,
+  "cierre": "2024-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Matchday",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 50.095,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Media",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 153.95,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "UEFA",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 29.835,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 83.573,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other income",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.86,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of players' and staff registrations",
+    "normalizedCategory": "player_sales",
+    "amountNative": 69.816,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of tangible fixed assets",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.113,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Operating expenses before amortisation and impairment",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -291.484,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisation of intangible assets",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -96.744,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impairment of intangible assets",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -0.801,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2024-06-30",
+   "sourceId": "newcastle-gb-group-accounts-2023-24",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -12.292,
+   "tax": -0.018,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 2.127
+    },
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -14.419
+    },
+    {
+     "label": "Taxation",
+     "value": -0.018
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 390.242,
+   "officialTotalExpenses": 389.029,
+   "officialPAT": -11.097
+  },
+  "source": {
+   "id": "newcastle-gb-group-accounts-2023-24",
+   "clubId": "newcastle-gb",
+   "title": "Newcastle United Limited — newcastle-group-accounts-2023-24 (ejercicio 2024)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "newcastle-gb",
+ "year": 2024,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 13,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Matchday",
+   "page": 35,
+   "native": 50.095,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 50.095,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 50.095
+  },
+  {
+   "label": "Media",
+   "page": 35,
+   "native": 153.95,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 153.95,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 153.95
+  },
+  {
+   "label": "UEFA",
+   "page": 35,
+   "native": 29.835,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 29.835,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 29.835
+  },
+  {
+   "label": "Commercial",
+   "page": 35,
+   "native": 83.573,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 83.573,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 83.573
+  },
+  {
+   "label": "Other income",
+   "page": 35,
+   "native": 2.86,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 2.86,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.86
+  },
+  {
+   "label": "Profit on disposal of players' and staff registrations",
+   "page": 18,
+   "native": 69.816,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 69.816,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 69.816
+  },
+  {
+   "label": "Profit on disposal of tangible fixed assets",
+   "page": 18,
+   "native": 0.113,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.113,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.113
+  },
+  {
+   "label": "Operating expenses before amortisation and impairment",
+   "page": 18,
+   "native": 291.484,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 291.484,
+   "cat": "other_expenses",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -291.484
+  },
+  {
+   "label": "Amortisation of intangible assets",
+   "page": 35,
+   "native": 96.744,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Amortisation and impairment of players' registrations\")",
+   "signoFijo": 96.744,
+   "cat": "player_amortisation",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -96.744
+  },
+  {
+   "label": "Impairment of intangible assets",
+   "page": 35,
+   "native": 0.801,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Amortisation and impairment of players' registrations\")",
+   "signoFijo": 0.801,
+   "cat": "player_impairment",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.801
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 2.127,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -14.419,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Taxation",
+   "page": null,
+   "native": -0.018,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Amortisation and impairment of players' registrations\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 390.242,
+  "expSum": -389.029,
+  "officialTotalRevenue": 390.242,
+  "officialTotalExpenses": 389.029,
+  "officialPAT": -11.097,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -11.097,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 390.242
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 389.029
+  }
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2023–24 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Newcastle United\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2024,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2024-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (113 de 115 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2024-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2024-06-30 = 0.7906 (Cierre BCE del viernes 28/6/2024 (el 30 es domingo, sin cotización), cruzando GBP/EUR (0,84638) × EUR/USD (1,0705) (1 GBP ≈ 1,2648 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "newcastle-gb-group-accounts-2023-24",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2023–24 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Newcastle United\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 7,
+  "lineasGasto": 3,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

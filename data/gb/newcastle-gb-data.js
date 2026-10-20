@@ -7,6 +7,13 @@ const newcastleGbRevenueLinesByYear = {
     { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:2.517, disclosureLevel:'detailed' },
     { rawLabel:'Profit on disposal of players\' and staff registrations', normalizedCategory:'player_sales', amountNative:19.875, disclosureLevel:'detailed' },
   ],
+  2022: [
+    { rawLabel:'Matchday', normalizedCategory:'matchday_competition', amountNative:27.529, disclosureLevel:'aggregated' },
+    { rawLabel:'Media', normalizedCategory:'broadcasting', amountNative:124.111, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:26.545, disclosureLevel:'aggregated' },
+    { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:1.801, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:5.832, disclosureLevel:'aggregated' },
+  ],
 };
 
 const newcastleGbExpenseLinesByYear = {
@@ -16,6 +23,11 @@ const newcastleGbExpenseLinesByYear = {
     { rawLabel:'Depreciation', normalizedCategory:'depreciation', amountNative:-8.182, disclosureLevel:'detailed' },
     { rawLabel:'Amortisation of players\' registrations', normalizedCategory:'player_amortisation', amountNative:-99.502, disclosureLevel:'detailed' },
     { rawLabel:'Impairment of players\' registrations', normalizedCategory:'player_impairment', amountNative:-0.366, disclosureLevel:'detailed' },
+  ],
+  2022: [
+    { rawLabel:'Operating expenses before amortisation and impairment', normalizedCategory:'other_expenses', amountNative:-206.343, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of intangible assets', normalizedCategory:'player_amortisation', amountNative:-49.721, disclosureLevel:'aggregated' },
+    { rawLabel:'Impairment of intangible assets', normalizedCategory:'player_impairment', amountNative:-1.418, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -28,6 +40,21 @@ const newcastleGbFiscalYearMeta = {
     grossDebt:58.314, cash:12.701,
     profitOnPlayerSales:0, assetSales:133.133, netInterest:-8.853, tax:0,
     officialTotalRevenue:355.197, officialTotalExpenses:444.749, officialPAT:34.728,
+  },
+  2022: {
+    currency:'GBP', fxRef:'GBP@2022-06-30',
+    sourceId:'newcastle-gb-group-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.203, tax:2.217,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.186},
+      {label:'Interest payable and expenses', value:-1.389},
+      {label:'Taxation', value:2.217},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:185.818, officialTotalExpenses:257.482, officialPAT:-70.65,
   },
 };
 
@@ -51,6 +78,11 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/02529667/filing-history',
     publicNote:'Cuentas consolidadas del grupo depositadas en Companies House (Reino Unido). Incluye 2 ganancias no operativas por reorganización societaria intra-grupo (venta de una subsidiaria y sale-and-leaseback de mejoras del estadio a una sociedad hermana), registradas aparte del resultado futbolístico.',
+  },
+  'newcastle-gb-group-accounts-2021-22': {
+    id:'newcastle-gb-group-accounts-2021-22', clubId:'newcastle-gb',
+    title:'Newcastle United Limited — newcastle-group-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 

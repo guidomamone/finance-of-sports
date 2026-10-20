@@ -43,3 +43,5 @@ Todos en `Clubes/Inglaterra/Newcastle United/` (los PDF no se trackean; son esca
 - `newcastle-group-accounts-2021-22.pdf`
 - `newcastle-group-accounts-2020-21.pdf`
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2022 desde `Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.pdf` (sourceId `newcastle-gb-group-accounts-2021-22`).

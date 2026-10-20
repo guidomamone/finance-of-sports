@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.md",
+  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.pdf",
+  "club": "newcastle-gb",
+  "year": 2023,
+  "generatedAt": "2026-10-20T18:11:40.262Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 33,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        37.914
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Media",
+      "lado": "revenue",
+      "page": 33,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        165.485
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 33,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        43.915
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Other income",
+      "lado": "revenue",
+      "page": 33,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        2.951
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Profit on disposal of players' registrations",
+      "lado": "revenue",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        2.836
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Operating expenses before amortisation and impairment",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        230.215
+      ],
+      "glosa": "Gastos de explotación antes de amortización y deterioro"
+    },
+    {
+      "label": "Amortisation and impairment of players' registrations",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        89.343
+      ],
+      "glosa": "Amortización y deterioro de derechos federativos"
+    }
+  ]
+}

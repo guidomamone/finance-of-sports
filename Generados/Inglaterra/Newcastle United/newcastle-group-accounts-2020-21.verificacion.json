@@ -1,0 +1,153 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md",
+ "generado": "2026-10-20T18:14:06.717Z",
+ "estado": "ok",
+ "clubId": "newcastle-gb",
+ "year": 2021,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 140.192 cierra; además se suman 1 línea(s) fuera de ese total (1.701)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.2434497875801753e-14
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 141.893 en este documento y 141.893 en newcastle-group-accounts-2021-22.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 178.914 en newcastle-group-accounts-2019-20.pdf y 178.914 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses before amortisation and impairment\" no suma el renglón (106.829 contra 123.333, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: Los períodos tienen distinta duración (11 vs 13 meses) según el encabezado de b4."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses before amortisation and impairment",
+   "suma": 106.829,
+   "objetivo": 123.333
+  }
+ ],
+ "totales": {
+  "ingresos": 141.893,
+  "gastos": 155.61,
+  "financiero": 0.095,
+  "impuesto": 1.43,
+  "resultadoImpreso": -12.192,
+  "resultadoParaCargar": -12.192,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 0.176,
+   "pagina": 27,
+   "linea": 1317,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Media",
+   "lado": "ingreso",
+   "M": 119.262,
+   "pagina": 27,
+   "linea": 1318,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 17.577,
+   "pagina": 27,
+   "linea": 1319,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 3.177,
+   "pagina": 27,
+   "linea": 1320,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 1.701,
+   "pagina": 14,
+   "linea": 674,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses before amortisation and impairment",
+   "lado": "gasto",
+   "M": 123.333,
+   "pagina": 14,
+   "linea": 670,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation and impairment of players' registrations",
+   "lado": "gasto",
+   "M": 32.277,
+   "pagina": 14,
+   "linea": 672,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.385,
+   "linea": 676
+  },
+  {
+   "etiqueta": "Interest payable and expenses",
+   "M": -0.29,
+   "linea": 677
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation",
+   "M": 1.43,
+   "linea": 679
+  }
+ ]
+}

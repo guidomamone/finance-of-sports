@@ -1,0 +1,162 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.md",
+ "generado": "2026-10-20T18:14:06.748Z",
+ "estado": "ok",
+ "clubId": "newcastle-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 179.986 cierra; además se suman 1 línea(s) fuera de ese total (5.832)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.263256414560601e-14
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 185.818 en este documento y 185.818 en newcastle-group-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 141.893 en newcastle-group-accounts-2020-21.pdf y 141.893 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses before amortisation and impairment\" no suma el renglón (170.204 contra 206.343, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: El comparativo cubre 11 meses por cambio de fecha de cierre.",
+  "duda de extraer que no afecta la carga: L1306: no hay renglón específico 'Salarios del plantel'; los costos de personal son del total del staff."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses before amortisation and impairment",
+   "suma": 170.204,
+   "objetivo": 206.343
+  }
+ ],
+ "totales": {
+  "ingresos": 185.818,
+  "gastos": 257.482,
+  "financiero": -1.203,
+  "impuesto": 2.217,
+  "resultadoImpreso": -70.65,
+  "resultadoParaCargar": -70.65,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 27.529,
+   "pagina": 33,
+   "linea": 1258,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Media",
+   "lado": "ingreso",
+   "M": 124.111,
+   "pagina": 33,
+   "linea": 1259,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 26.545,
+   "pagina": 33,
+   "linea": 1260,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 1.801,
+   "pagina": 33,
+   "linea": 1261,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 5.832,
+   "pagina": 17,
+   "linea": 621,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses before amortisation and impairment",
+   "lado": "gasto",
+   "M": 206.343,
+   "pagina": 17,
+   "linea": 617,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation of intangible assets",
+   "lado": "gasto",
+   "M": 49.721,
+   "pagina": 33,
+   "linea": 1276,
+   "origen": "nota que desglosa \"Amortisation and impairment of players' registrations\""
+  },
+  {
+   "etiqueta": "Impairment of intangible assets",
+   "lado": "gasto",
+   "M": 1.418,
+   "pagina": 33,
+   "linea": 1277,
+   "origen": "nota que desglosa \"Amortisation and impairment of players' registrations\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.186,
+   "linea": 623
+  },
+  {
+   "etiqueta": "Interest payable and expenses",
+   "M": -1.389,
+   "linea": 624
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation",
+   "M": 2.217,
+   "linea": 626
+  }
+ ]
+}

@@ -1,0 +1,425 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.md",
+ "mdSha1": "bd9d5536dad685107d63bb1dcd97e5db5f6dcffd",
+ "ubicacionSha1": "fca57718deda5781f844554cd6041fbcfddc4390",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:01:35.242Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [
+   "b12"
+  ],
+  "notas_gastos": [
+   "b15",
+   "b13",
+   "b19"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "miles",
+   "evidencia": "L614: Year ended 30 June 2022 £000"
+  },
+  {
+   "bloque": "b12",
+   "escala": "miles",
+   "evidencia": "L1256: Year ended 30 June 2022 £000"
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "L1304: Year ended 30 June 2022 £000"
+  },
+  {
+   "bloque": "b13",
+   "escala": "miles",
+   "evidencia": "L1270: 2022 £000"
+  },
+  {
+   "bloque": "b19",
+   "escala": "miles",
+   "evidencia": "L1358: Year ended 30 June 2022 £000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 616,
+   "etiqueta": "Turnover",
+   "actual": "179,986",
+   "anterior": "140,192",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 617,
+   "etiqueta": "Operating expenses before amortisation and impairment",
+   "actual": "(206,343)",
+   "anterior": "(123,333)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 618,
+   "etiqueta": "Operating (loss)/profit before amortisation and impairment",
+   "actual": "(26,357)",
+   "anterior": "16,859",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 619,
+   "etiqueta": "Amortisation and impairment of players' registrations",
+   "actual": "(51,139)",
+   "anterior": "(32,277)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 620,
+   "etiqueta": "Operating loss before profit on disposal of players' registrations",
+   "actual": "(77,496)",
+   "anterior": "(15,418)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 621,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "5,832",
+   "anterior": "1,701",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 622,
+   "etiqueta": "Operating loss",
+   "actual": "(71,664)",
+   "anterior": "(13,717)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 623,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "186",
+   "anterior": "385",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 624,
+   "etiqueta": "Interest payable and expenses",
+   "actual": "(1,389)",
+   "anterior": "(290)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 625,
+   "etiqueta": "Loss before tax",
+   "actual": "(72,867)",
+   "anterior": "(13,622)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 626,
+   "etiqueta": "Taxation",
+   "actual": "2,217",
+   "anterior": "1,430",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 627,
+   "etiqueta": "Loss and total comprehensive income for the year",
+   "actual": "(70,650)",
+   "anterior": "(12,192)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 1258,
+   "etiqueta": "Matchday",
+   "actual": "27,529",
+   "anterior": "176",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1259,
+   "etiqueta": "Media",
+   "actual": "124,111",
+   "anterior": "119,262",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1260,
+   "etiqueta": "Commercial",
+   "actual": "26,545",
+   "anterior": "17,577",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1261,
+   "etiqueta": "Other income",
+   "actual": "1,801",
+   "anterior": "3,177",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1262,
+   "etiqueta": "",
+   "actual": "179,986",
+   "anterior": "140,192",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1306,
+   "etiqueta": "Wages and salaries",
+   "actual": "149,225",
+   "anterior": "93,951",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1307,
+   "etiqueta": "Social security costs",
+   "actual": "20,783",
+   "anterior": "12,583",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1308,
+   "etiqueta": "Other pension costs",
+   "actual": "196",
+   "anterior": "295",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1309,
+   "etiqueta": "",
+   "actual": "170,204",
+   "anterior": "106,829",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1272,
+   "etiqueta": "Other operating income – CJRS grant income",
+   "actual": "-",
+   "anterior": "(900)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1273,
+   "etiqueta": "Other operating income – release of capital grants",
+   "actual": "(87)",
+   "anterior": "(87)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1275,
+   "etiqueta": "- owned and long leasehold",
+   "actual": "2,518",
+   "anterior": "2,205",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1276,
+   "etiqueta": "Amortisation of intangible assets",
+   "actual": "49,721",
+   "anterior": "32,277",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation and impairment of players' registrations"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1277,
+   "etiqueta": "Impairment of intangible assets",
+   "actual": "1,418",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation and impairment of players' registrations"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1278,
+   "etiqueta": "Operating lease payments",
+   "actual": "637",
+   "anterior": "633",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1279,
+   "etiqueta": "Foreign exchange losses",
+   "actual": "1,116",
+   "anterior": "89",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1360,
+   "etiqueta": "Term loan interest payable",
+   "actual": "36",
+   "anterior": "213",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1361,
+   "etiqueta": "Interest payable on multi employer pension scheme",
+   "actual": "12",
+   "anterior": "8",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1362,
+   "etiqueta": "Interest payable on hire purchase contracts and finance leases",
+   "actual": "6",
+   "anterior": "17",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1363,
+   "etiqueta": "Unwinding of the discount on deferred payments for players' registrations",
+   "actual": "1,278",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1364,
+   "etiqueta": "Other interest payable",
+   "actual": "57",
+   "anterior": "52",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1365,
+   "etiqueta": "",
+   "actual": "1,389",
+   "anterior": "290",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 616,
+  "actual": "179,986"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 627,
+  "actual": "(70,650)",
+  "anterior": "(12,192)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro de cargos de b13 (L1272-L1279) como detalle de gastos aunque es un cuadro informativo 'stated after charging' que cruza varios renglones del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating loss",
+   "texto": "L1268: el cuadro no desglosa un único renglón; mezcla ingresos, amortizaciones y diferencias de cambio.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se interpreta 'Wages and salaries' (L1306) como el renglón de salarios del plantel, aunque incluye todo el personal?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "L1306: no hay renglón específico 'Salarios del plantel'; los costos de personal son del total del staff.",
+   "bloques": [
+    "b15"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado y notas en £000. No se imprime total de gastos. Staff costs (b15) son parte de Operating expenses before amortisation and impairment. Amortización 49,721 + deterioro 1,418 = 51,139 (L619)."
+}

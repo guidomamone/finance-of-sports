@@ -1,0 +1,70 @@
+{
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.md",
+ "generatedAt": "2026-10-20T18:12:25.678Z",
+ "rubrosHuella": "9ed48ad2f13e8506be50d1daaef0578eca00956d",
+ "rubros": [
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "page": 33,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Media",
+   "lado": "revenue",
+   "page": 33,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 33,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 33,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Operating expenses before amortisation and impairment",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisation and impairment of players' registrations",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
+   "desdeCache": true
+  }
+ ]
+}
