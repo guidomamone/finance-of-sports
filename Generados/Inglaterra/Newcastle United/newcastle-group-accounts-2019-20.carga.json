@@ -1,13 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.pdf",
- "generado": "2026-10-20T18:26:18.614Z",
- "frena": [
-  {
-   "etapa": "periodo",
-   "motivo": "el documento cubre un período otro de 13 meses al 2020-07-31: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)"
-  }
- ],
+ "generado": "2026-10-20T19:25:38.833Z",
+ "frena": [],
  "avisos": [
+  "ejercicio de transición por cambio de cierre (13 meses al 2020-07-31): encadena con el cierre anterior 2019-06-30; se carga como el año, con nota pública (to-do 237 ab)",
   "perímetro heredado del año cargado más cercano (2022, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
   "el documento cierra 2020-07-31 (ejercicio desde el 08-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
   "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
@@ -141,6 +137,13 @@
    "texto": "For the 13 month period ended 31 July 2020"
   },
   "confianza": "alta"
+ },
+ "transicion": {
+  "meses": 13,
+  "inicio": "2019-07-01",
+  "cierre": "2020-07-31",
+  "anterior": "2019-06-30",
+  "siguiente": null
  },
  "clubId": "newcastle-gb",
  "year": 2020,
@@ -375,8 +378,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 5,
   "lineasGasto": 2,
   "metaFilas": 3,

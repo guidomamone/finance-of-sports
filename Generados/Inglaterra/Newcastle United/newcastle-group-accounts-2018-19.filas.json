@@ -1,0 +1,327 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.pdf",
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.md",
+ "mdSha1": "8beb52d5b755a3a30b246304df38d4e3c63e56fc",
+ "ubicacionSha1": "aef72b90c906bcb736f5778410c04973c2aca3f1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:25:27.472Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b8"
+  ],
+  "notas_gastos": [
+   "b9",
+   "b11",
+   "b14"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L377: '2019 £000'"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L937: '2019 £000'"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "L951: '2019 £000'"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L985: '2019 £000'"
+  },
+  {
+   "bloque": "b14",
+   "escala": "miles",
+   "evidencia": "L1020: '2019 £000'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 379,
+   "etiqueta": "Turnover",
+   "actual": "176,448",
+   "anterior": "178,495",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 380,
+   "etiqueta": "Operating expenses",
+   "actual": "(122,944)",
+   "anterior": "(119,593)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 381,
+   "etiqueta": "Amortisation and impairment of players' registrations",
+   "actual": "(38,611)",
+   "anterior": "(41,336)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 382,
+   "etiqueta": "Operating profit",
+   "actual": "14,893",
+   "anterior": "17,566",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 387,
+   "etiqueta": "Profit on disposal of players' and staff registrations",
+   "actual": "24,583",
+   "anterior": "3,585",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 388,
+   "etiqueta": "Profit before interest and taxation",
+   "actual": "39,476",
+   "anterior": "21,151",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 389,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "2,179",
+   "anterior": "1,911",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 390,
+   "etiqueta": "Interest payable and expenses",
+   "actual": "(505)",
+   "anterior": "(127)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 391,
+   "etiqueta": "Profit on ordinary activities before tax",
+   "actual": "41,150",
+   "anterior": "22,935",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 392,
+   "etiqueta": "Tax on profit",
+   "actual": "(6,476)",
+   "anterior": "(4,336)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 393,
+   "etiqueta": "Profit and total comprehensive income for the year",
+   "actual": "34,674",
+   "anterior": "18,599",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 939,
+   "etiqueta": "Matchday",
+   "actual": "24,846",
+   "anterior": "23,937",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 940,
+   "etiqueta": "Media",
+   "actual": "123,936",
+   "anterior": "126,406",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 941,
+   "etiqueta": "Commercial",
+   "actual": "26,186",
+   "anterior": "26,704",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 942,
+   "etiqueta": "Other income",
+   "actual": "1,480",
+   "anterior": "1,448",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 943,
+   "etiqueta": "",
+   "actual": "176,448",
+   "anterior": "178,495",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 987,
+   "etiqueta": "Wages and salaries",
+   "actual": "84,944",
+   "anterior": "82,557",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 988,
+   "etiqueta": "Social security costs",
+   "actual": "11,776",
+   "anterior": "10,767",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 989,
+   "etiqueta": "Other pension costs",
+   "actual": "78",
+   "anterior": "299",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 990,
+   "etiqueta": "",
+   "actual": "96,798",
+   "anterior": "93,623",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1022,
+   "etiqueta": "Other interest receivable",
+   "actual": "2,158",
+   "anterior": "1,894",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1023,
+   "etiqueta": "Bank interest receivable",
+   "actual": "21",
+   "anterior": "17",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1024,
+   "etiqueta": "",
+   "actual": "2,179",
+   "anterior": "1,911",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 379,
+  "actual": "176,448"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 393,
+  "actual": "34,674",
+  "anterior": "34,674"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'The operating profit is stated after charging/(crediting)' (L953-L959) por ser informativo y no un desglose sumable de Operating expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses",
+   "texto": "El cuadro b9 (L953-L959) mezcla partidas informativas, incluye la amortización ya expuesta en L381 y no suma a ningún renglón del estado.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan los costos de personal (L987-L990) como desglose parcial de 'Operating expenses' (L380)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses",
+   "texto": "Staff costs (96,798, L990) son solo una parte de Operating expenses (122,944, L380); el resto no se desglosa.",
+   "bloques": [
+    "b11",
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera las filas de análisis repetidas L384-L386 del estado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Operating profit",
+   "texto": "L384-L386 reexpresan el Operating profit (L382) y repiten la amortización de L381.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Todas las cifras en £000. No hay total de gastos impreso. Retained earnings (L394-L395) excluidas por no ser resultados. Corrección: en 'resultado', anterior debe ser 18,599 (L393)."
+}
