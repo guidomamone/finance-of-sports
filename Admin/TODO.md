@@ -173,7 +173,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    sitio se genera desde ahí. FASE 1 HECHA (2026-10-20, aprobada por la auditora): esquema en `Admin/mediciones/245-esquema.md` (por club,
    millones con `unit.scale`, nombres en inglés, `period_end` y `exported_at`); `tools/exportar-json.mjs`, `tools/validar-esquema-json.mjs`
    y `tools/ida-y-vuelta.mjs` (313 de 313 idénticos). Falta la FASE 2: que el JSON sea la fuente y el JS se genere desde ahí (con todo
-   mergeado y sin worktrees, como el 246), con los cambios de skills y documentos que inventaría Docs 1.
+   mergeado y sin worktrees, como el 246), con los cambios de skills y documentos que inventaría Docs 1. En la fase 2 también (Guido,
+   2026-10-20): los nombres de campo de los bloques de texto libre pasan al inglés (los textos quedan en español) y Boca se normaliza a la
+   estructura de los otros clubes (sus fuentes y gestiones viven hoy en clubs.js y gestiones/ar.js).
 246. IDS ESTABLES (mejoras de proyecto, pedido de Guido 2026-10-16). Conviven ids sin país (realmadrid, athleticclub) y con país (elche-es, corinthians-br). Normalizar antes de tener
    clientes de una API, con un mapa de alias de los ids viejos.
 247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
