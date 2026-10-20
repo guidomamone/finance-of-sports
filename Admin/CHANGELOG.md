@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 840 — Los datos como JSON con esquema, fase 1 (2026-10-20)
+
+* 245 fase 1: esquema JSON por club, exportador, validador y prueba de ida y vuelta (313 clubes idénticos, 0 errores), sin tocar
+  `data/` ni `js/`. Aprobado por la auditora.
+
 ## Versión 839 — Caja y deuda cerrado; extracto de Wikipedia (2026-10-20)
 
 * 260 cerrado: Ferroviária 2014, Remo 2019 y Volos 2019-2020 quedan sin caja ni deuda (decisión de Guido); Japón 2025 es un callejón sin

@@ -170,7 +170,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    WhatsApp y Google no ejecutan JS: sin esto la preview es la portada y nadie que busque "deuda de Boca" llega. Mockups con Design antes de codear.
 245. DATOS COMO JSON CON ESQUEMA (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy son JS (`const xRevenueLinesByYear = {...}`), sin versión de esquema, con la unidad implícita
    (millones) y la moneda en otro archivo. JSON con schema_version, unit/scale/currency explícitos y fecha de corte, como fuente; el JS del
-   sitio se genera desde ahí.
+   sitio se genera desde ahí. FASE 1 HECHA (2026-10-20, aprobada por la auditora): esquema en `Admin/mediciones/245-esquema.md` (por club,
+   millones con `unit.scale`, nombres en inglés, `period_end` y `exported_at`); `tools/exportar-json.mjs`, `tools/validar-esquema-json.mjs`
+   y `tools/ida-y-vuelta.mjs` (313 de 313 idénticos). Falta la FASE 2: que el JSON sea la fuente y el JS se genere desde ahí (con todo
+   mergeado y sin worktrees, como el 246), con los cambios de skills y documentos que inventaría Docs 1.
 246. IDS ESTABLES (mejoras de proyecto, pedido de Guido 2026-10-16). Conviven ids sin país (realmadrid, athleticclub) y con país (elche-es, corinthians-br). Normalizar antes de tener
    clientes de una API, con un mapa de alias de los ids viejos.
 247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
