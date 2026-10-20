@@ -55,7 +55,7 @@ const EXCLUIDOS = [
 const SOLO_CLUB_BRIEFING = /^Generados\/.*\.briefing\.json$/;
 const esJsLike = (f) => /\.(js|mjs|cjs|json)$/.test(f);
 
-function reglas(mapa) {
+function reglas(mapa, S = [], sourceIdNuevo = {}) {
   const alt = Object.keys(mapa).sort((a, b) => b.length - a.length).join('|');
   const nuevo = (m) => mapa[m];
   return {
@@ -63,12 +63,9 @@ function reglas(mapa) {
     // [nombre, regex, reemplazo, soloJsLike]
     lista: [
       ['comillas', new RegExp(`(['"\`])(${alt})\\1`, 'g'), (_, q, id) => q + nuevo(id) + q, false],
-      ['clave', new RegExp(`(?<![\\w.$'"\`-])(${alt})(\\s*:)(?!:)`, 'g'), (_, id, c) => nuevo(id) + c, true],
-      ['sourceId', new RegExp(`(['"\`])(${alt})-(?=[a-z0-9])`, 'g'), (m, q, id, off, str) => {
-        // Un id que ya lleva su país (clubamerica-mx en archivos viejos) no es un sourceId: no se duplica el sufijo.
-        const iso = mapa[id].slice(-2); const resto = str.slice(off + m.length);
-        return resto.startsWith(iso) && !/^[a-z0-9]/.test(resto.slice(2)) ? m : q + nuevo(id) + '-';
-      }, false],
+      ['clave', new RegExp(`(?<![\\w.$'"\`-])(${alt})(\\s*:)(?!:)`, 'g'), (_, id, c) => `'${nuevo(id)}'` + c, true],
+      ['sourceId', S.length ? new RegExp(`(?<![\\w-])(${S.map((x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})(?![\\w-])`, 'g') : /(?!)/g,
+        (m) => sourceIdNuevo[m], false],
       ['archivo-data', new RegExp(`(?<![\\w-])(${alt})(-data\\.js)`, 'g'), (_, id, s) => nuevo(id) + s, false],
       ['ruta-club', new RegExp(`((?:fuentes|carga-clubes)/)(${alt})(\\.html|\\.md|(?![\\w-]))`, 'g'), (_, p, id, e) => p + nuevo(id) + e, false],
       ['club=', new RegExp(`(club=)(${alt})(?![\\w-])`, 'g'), (_, p, id) => p + nuevo(id), false],
@@ -155,7 +152,18 @@ const { mapa: mapaClubs, errores } = derivarMapa();
 const aliasesGuardados = leerAliases();
 const mapa = Object.keys(mapaClubs).length ? mapaClubs : (aliasesGuardados || {});
 if (errores.length) { console.error('El mapa no cumple las reglas del diseño:\n' + errores.join('\n')); process.exit(2); }
-const R = reglas(mapa);
+// Los sourceIds de cada club: los tokens `<id>-…` que usa su propio data file (leído ANTES de mover). Tokens parecidos fuera de ahí (entidades
+// como botafogo-saf, slugs de sponsors, ejemplos en documentos) no son sourceIds y no se tocan.
+const S = []; const sourceIdNuevo = {};
+if (!VERIFICAR) for (const [v, n] of Object.entries(mapa)) {
+  const f = resolve(ROOT, `data/${n.slice(-2)}/${v}-data.js`);
+  if (!existsSync(f)) continue;
+  for (const m of new Set(readFileSync(f, 'utf8').match(new RegExp(`(?<![\\w-])${v}-[a-z0-9][a-z0-9-]*`, 'g')) || [])) {
+    if (mapa[m] || m.startsWith(v + '-data')) continue;
+    S.push(m); sourceIdNuevo[m] = n + m.slice(v.length);
+  }
+}
+const R = reglas(mapa, S, sourceIdNuevo);
 
 if (VERIFICAR) {
   let malos = 0; const dud = [];

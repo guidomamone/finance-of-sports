@@ -11,59 +11,58 @@
 
 ## Cambios por regla
   comillas: 1886
-  sourceId: 2055
-  archivo-data: 117
+  archivo-data: 120
   ruta-club: 88
+  sourceId: 139
   club=: 3
   clave-cola: 1
   briefing: 179
   clave: 107
   audit-ignore: 19
 
-## Archivos tocados por carpeta (355 archivos)
-  Admin/ARQUITECTURA.md: 1 archivos, 19 cambios
-  Admin/CONVENCIONES-DATOS.md: 1 archivos, 4 cambios
-  Admin/PANTALLA.md: 1 archivos, 12 cambios
-  Admin/PIPELINE.md: 1 archivos, 11 cambios
-  Admin/carga-clubes: 30 archivos, 47 cambios
+## Archivos tocados por carpeta (353 archivos)
+  Admin/ARQUITECTURA.md: 1 archivos, 13 cambios
+  Admin/CONVENCIONES-DATOS.md: 1 archivos, 1 cambios
+  Admin/PANTALLA.md: 1 archivos, 7 cambios
+  Admin/PIPELINE.md: 1 archivos, 5 cambios
+  Admin/carga-clubes: 30 archivos, 41 cambios
   Admin/dudas-por-club.md: 1 archivos, 9 cambios
   Admin/fx-cotizaciones.md: 1 archivos, 1 cambios
-  Admin/gestiones-por-pais: 24 archivos, 168 cambios
-  Admin/outreach: 1 archivos, 2 cambios
-  Admin/registros: 8 archivos, 557 cambios
-  Admin/sourcing: 28 archivos, 40 cambios
+  Admin/gestiones-por-pais: 24 archivos, 85 cambios
+  Admin/outreach: 1 archivos, 1 cambios
+  Admin/registros: 8 archivos, 306 cambios
+  Admin/sourcing: 27 archivos, 41 cambios
   Generados: 179 archivos, 179 cambios
-  data/auditoria: 5 archivos, 62 cambios
+  data/auditoria: 5 archivos, 31 cambios
   data/category-map.js: 1 archivos, 1 cambios
-  data/club-index.js: 1 archivos, 82 cambios
+  data/club-index.js: 1 archivos, 41 cambios
   data/club-leagues: 6 archivos, 41 cambios
-  data/clubs.js: 1 archivos, 141 cambios
-  data/contexto: 6 archivos, 82 cambios
-  data/entidades: 3 archivos, 21 cambios
-  data/estimados: 10 archivos, 480 cambios
-  data/faltantes: 10 archivos, 498 cambios
-  data/gestiones: 6 archivos, 60 cambios
-  data/rankings: 9 archivos, 312 cambios
-  data/sponsors-indice.js: 1 archivos, 2 cambios
-  data/sponsors.js: 1 archivos, 1438 cambios
+  data/clubs.js: 1 archivos, 96 cambios
+  data/contexto: 6 archivos, 41 cambios
+  data/entidades: 3 archivos, 6 cambios
+  data/estimados: 10 archivos, 240 cambios
+  data/faltantes: 10 archivos, 249 cambios
+  data/gestiones: 6 archivos, 41 cambios
+  data/rankings: 9 archivos, 206 cambios
+  data/sponsors.js: 1 archivos, 718 cambios
   fuentes.html: 1 archivos, 41 cambios
-  js/finanzas-render.js: 1 archivos, 2 cambios
+  js/finanzas-render.js: 1 archivos, 1 cambios
   js/principal.js: 1 archivos, 1 cambios
   metodologia.html: 1 archivos, 1 cambios
   sitemap.xml: 1 archivos, 41 cambios
-  tools/alta-club.mjs: 1 archivos, 4 cambios
+  tools/alta-club.mjs: 1 archivos, 2 cambios
   tools/audit-ignore.json: 1 archivos, 21 cambios
-  tools/brand-color-reference: 3 archivos, 35 cambios
-  tools/carpetas-clubes.mjs: 1 archivos, 3 cambios
-  tools/club-league-reference: 2 archivos, 10 cambios
-  tools/contexto-manual.json: 1 archivos, 10 cambios
-  tools/data-clubes.js: 1 archivos, 6 cambios
-  tools/estadio-alias.json: 1 archivos, 6 cambios
-  tools/memoria-categorias.mjs: 1 archivos, 2 cambios
+  tools/brand-color-reference: 3 archivos, 12 cambios
+  tools/carpetas-clubes.mjs: 1 archivos, 2 cambios
+  tools/club-league-reference: 2 archivos, 5 cambios
+  tools/contexto-manual.json: 1 archivos, 5 cambios
+  tools/data-clubes.js: 1 archivos, 4 cambios
+  tools/estadio-alias.json: 1 archivos, 3 cambios
+  tools/memoria-categorias.mjs: 1 archivos, 1 cambios
   tools/perfil-clubes.mjs: 1 archivos, 1 cambios
-  tools/reddit-archive-search.mjs: 1 archivos, 2 cambios
+  tools/reddit-archive-search.mjs: 1 archivos, 1 cambios
 
-## Dudosos: aparece el id viejo y ningún contexto lo reconoció (prosa; quedan como están) — 254
+## Dudosos: aparece el id viejo y ningún contexto lo reconoció (prosa; quedan como están) — 284
   Admin/ARQUITECTURA.md:183: racing-pdfs/ y river-pdfs/). Guido pidió el PDF y su transcripción uno al
   Admin/ARQUITECTURA.md:416: - **Nunca armes un objeto `{ river: X, racing: Y, <club>: Z }` de una sola vez para indexarlo
   Admin/ARQUITECTURA.md:420: `{ river: riverFiscalYearMeta, racing: racingFiscalYearMeta }`). Usá siempre un ternario
@@ -76,6 +75,7 @@
   Admin/COMO-CORRE-EL-PROYECTO.html:585: <p class="gnote">Cada número de los bloques elegidos tiene que estar confirmado por una segunda lectura independiente. En <code>.validacion.json</code
   Admin/CONVENCIONES-DATOS.md:379: EJEMPLO-CATEGORÍA: rosariocentral | revenue | Ingresos por ventas tiendas | sponsorship_commercial
   Admin/PIPELINE.md:132: - i) la etapa 4 confirma cada número contra una fuente independiente;
+  Admin/PIPELINE.md:983: tipo `racing-pdfs/`, `river-pdfs/` al nivel raíz (eso fue un error temprano,
   Admin/carga-clubes/atlnacional-co.md:28: para 2025 — EXACTO igual a la suma independiente Revenue-Expenses+
   Admin/carga-clubes/atlnacional-co.md:82: SIIS como officialPAT por ser la referencia cruzada independiente.
   Admin/carga-clubes/atlnacional-co.md:140: Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900464187). El PDF trae solo las notas (texto nativo, sin tabla de Estado de Resultado Integr
@@ -111,6 +111,13 @@
   Admin/registros/cola-revision.jsonl:5462: {"tipo":"caso","id":"1354b5c","ts":"2026-10-10T14:16:09.478Z","clave":"Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf|cargar|gestion|goias-br","
   Admin/registros/cola-revision.jsonl:5527: {"tipo":"respuesta","id":"44e2542","ts":"2026-10-10T14:45:34.203Z","decision":"aceptar","valor":null,"nota":"Levadiakos 2019: L580-583 + L600-606 son 
   Admin/registros/cola-revision.jsonl:11126: {"tipo":"respuesta","id":"5c55004","ts":"2026-10-19T02:23:38.154Z","decision":"corregir","valor":"no","nota":"Claude 2026-10-18 (subagente Sonnet): La
+  Admin/registros/entidades.jsonl:95: {"tipo":"entidad","id":"botafogo-saf","nombre":"Sociedade Anônima de Futebol Botafogo","forma":"sociedad","pais":"BR","clubId":"botafogo-br","cita":{"
+  Admin/registros/entidades.jsonl:102: {"tipo":"relacion","de":"eagle-football","a":"botafogo-saf","rel":"controla","pct":90,"desde":2023,"hasta":null,"cita":{"md":"Clubes/Brasil/Botafogo/d
+  Admin/registros/entidades.jsonl:103: {"tipo":"relacion","de":"botafogo-fr","a":"botafogo-saf","rel":"participa","pct":10,"desde":2023,"hasta":null,"cita":{"md":"Clubes/Brasil/Botafogo/dem
+  Admin/registros/entidades.jsonl:104: {"tipo":"relacion","de":"botafogo-saf","a":"saf-botafogo-base","rel":"controla","pct":100,"consolidada":true,"desde":2024,"hasta":null,"cita":{"md":"C
+  Admin/registros/entidades.jsonl:122: {"tipo":"carga","clubId":"botafogo-br","anio":2023,"entidad":"botafogo-saf","perimetro":"individual","cita":{"md":"Clubes/Brasil/Botafogo/demonstracoe
+  Admin/registros/entidades.jsonl:123: {"tipo":"carga","clubId":"botafogo-br","anio":2024,"entidad":"botafogo-saf","perimetro":"consolidado","cita":{"md":"Clubes/Brasil/Botafogo/demonstraco
+  Admin/registros/entidades.jsonl:124: {"tipo":"carga","clubId":"botafogo-br","anio":2025,"entidad":"botafogo-saf","perimetro":"consolidado","cita":{"md":"Clubes/Brasil/Botafogo/demonstraco
   Admin/registros/perfil-clubes.jsonl:260: {"clubId":"adodenhaag-nl","otrosDeportes":false,"otrosDeportesEvidencia":"respuesta 5c55004 en la cola (Claude 2026-10-18 (subagente Sonnet): Las secc
   Admin/sourcing/Argentina/Argentinos Juniors.md:12: `argentinosjuniors.com.ar/noticias/institucional/informe-contable/` (29/10/2020) tiene 2 imágenes
   Admin/sourcing/Argentina/Argentinos Juniors.md:72: `argentinosjuniors.mystagingwebsite.com` en un fetch — parece un artefacto de caché/staging del
@@ -174,6 +181,7 @@
   Admin/sourcing/España/FC Barcelona.md:18: (`fcbarcelona.es/es/club/transparencia/informacion-legal-institucional-y-economica`), distinta de
   Admin/sourcing/España/FC Barcelona.md:21: `fcbarcelona.es` SÍ devolvió el listado completo de PDFs directamente vía WebFetch (sin necesitar
   Admin/sourcing/España/FC Barcelona.md:23: distintos según el año (`fcbarcelona.com/fcbarcelona/document/...`,
+  Admin/sourcing/España/FC Barcelona.md:24: `fcbarcelona-static-files.s3.amazonaws.com`, `platform-static-files.s3.amazonaws.com/HawkEye/...`),
   Admin/sourcing/España/FC Barcelona.md:29: - Contacto: `fcbarcelona.es/es/club/organizacion-y-plan-estrategico/comisiones-y-organos/reportes-anuales`
   Admin/sourcing/España/FC Barcelona.md:31: `fcbarcelona.es/es/club/transparencia/informacion-legal-institucional-y-economica` (cuentas
   Admin/sourcing/España/Rayo Vallecano.md:28: tasación de un experto independiente. Es una salvedad de VALORACIÓN DE ACTIVO NO CORRIENTE, no
@@ -275,7 +283,18 @@
   Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:4294: tasación a un experto independiente a partir del cual se ha procedido a la reversión de deterioro de valor
   Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:4299: tasación a un experto independiente a partir del cual se ha procedido a la reversión de deterioro de valor
   Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:9315: de Fútbol Profesional" y sus sociedades dependientes, es un informe independiente al Informe de Gestión,
+  data/entidades/br.js:177: "entidad": "botafogo-saf",
+  data/entidades/br.js:186: "entidad": "botafogo-saf",
+  data/entidades/br.js:195: "entidad": "botafogo-saf",
+  data/entidades/br.js:217: "botafogo-saf": {
+  data/entidades/br.js:281: "a": "botafogo-saf",
+  data/entidades/br.js:292: "a": "botafogo-saf",
+  data/entidades/br.js:302: "de": "botafogo-saf",
   data/lang/en.js:289: "selector.search.ph": "Search a club, a league or a country\u2026  (e.g. \"boca\", \"laliga\", \"japan\")",
+  data/sponsors-indice.js:2542: ["union-investment","Union Investment",["c"]],
+  data/sponsors-indice.js:2543: ["union-standard-group","Union Standard Group",["c"]],
+  data/sponsors.js:2546: "union-investment": {"n":"Union Investment","roles":["c"],"e":[["at-bundesliga",2024,"Austria Lustenau",null,"c"]]},
+  data/sponsors.js:2547: "union-standard-group": {"n":"Union Standard Group","roles":["c"],"e":[["gb-premierleague",2021,"Sheffield United",null,"c"],["gb-premierleague",2020,
   index.html:100: placeholder="Buscá un club, una liga o un país&#8230;  (ej. &quot;boca&quot;, &quot;laliga&quot;, &quot;japón&quot;)">
   index.html:729: (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."
   js/finanzas-render.js:514: : rt === 'unofficial_mirror' ? t('finanzas.banner.mirror', 'Balance real y auditado (informe de auditoría independiente incluido), pero descargado de 
@@ -286,16 +305,26 @@
   tools/archivo/prepare-onboarding.mjs:46: //   node tools/prepare-onboarding.mjs river 2021 "Clubes/Argentina/River/estados-contables-2020-2021.md" --out /tmp/briefing.json
   tools/archivo/prepare-onboarding.mjs:47: //   node tools/prepare-onboarding.mjs river 2021 archivo.md --json   (imprime a stdout, no escribe archivo)
   tools/auditoria.mjs:159: 'informe de(l)? auditor', 'auditor(es)? independiente', 'dictamen', 'opini[oó]n', 'salvedad', 'revisor fiscal', 'empresa en funcionamiento',
+  tools/brand-color-reference/argentina.json:48: "slug": "river-plate",
   tools/brand-color-reference/argentina.json:49: "name": "river plate",
+  tools/brand-color-reference/argentina.json:66: "slug": "boca-juniors",
   tools/brand-color-reference/argentina.json:67: "name": "boca juniors",
+  tools/brand-color-reference/argentina.json:94: "slug": "independiente-rivadavia",
   tools/brand-color-reference/argentina.json:95: "name": "independiente rivadavia",
+  tools/brand-color-reference/argentina.json:156: "slug": "velez-sarsfield",
   tools/brand-color-reference/argentina.json:157: "name": "velez sarsfield",
+  tools/brand-color-reference/argentina.json:196: "slug": "union-argentina",
   tools/brand-color-reference/argentina.json:197: "name": "union argentina",
+  tools/brand-color-reference/argentina.json:300: "slug": "racing-club-argentina",
   tools/brand-color-reference/argentina.json:301: "name": "racing club argentina",
+  tools/brand-color-reference/argentina.json:400: "slug": "instituto-cordoba",
   tools/brand-color-reference/argentina.json:401: "name": "instituto cordoba",
   tools/brand-color-reference/brasil.json:23: "name": "mirassol fc",
+  tools/brand-color-reference/colombia.json:154: "slug": "union-magdalena",
   tools/brand-color-reference/colombia.json:155: "name": "union magdalena",
+  tools/brand-color-reference/colombia.json:346: "slug": "independiente-santa-fe",
   tools/brand-color-reference/colombia.json:347: "name": "independiente santa fe",
+  tools/brand-color-reference/colombia.json:378: "slug": "independiente-medellin",
   tools/brand-color-reference/colombia.json:379: "name": "independiente medellin",
   tools/exportar-json.mjs:8: //   node tools/exportar-json.mjs --club mirassol       uno
   tools/fetch-fx-reference.mjs:57: // segunda fuente independiente día por día (BCE cruzado, SNB fin de mes, ČNB) —
