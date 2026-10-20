@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 865 — Gasto por sesión (2026-10-20)
+
+- Los logs de API marcan la sesión (la carpeta del worktree, `tools/sesion.mjs`) y `node tools/gasto.mjs --sesion <carpeta>` da la cuenta de cada una;
+  lo anterior sale «(sin marca)». Aprobado por la Auditora.
+
 ## Versión 864 — Sporting CP 2008-10 destrabado (2026-10-20) [sportingcp-pt]
 
 - `tools/verificar.mjs`: `avisarRegistro` usa la misma compuerta que `cargar.mjs` (la huella del `.md`, no la fecha). Aprobado por la Auditora.
