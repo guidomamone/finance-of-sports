@@ -212,9 +212,9 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.union = {
+gestionesByClub['union-ar'] = {
     spahn: { nombre:'Spahn (2009-actual)', firstYear:2025, lastYear:2025 },
   };
 
-memberCountByClub.union = null;
+memberCountByClub['union-ar'] = null;
 

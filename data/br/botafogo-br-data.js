@@ -231,8 +231,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.botafogo = {
+gestionesByClub['botafogo-br'] = {
     sinconfirmar: { nombre:'SAF Botafogo (gestión no confirmada en detalle)', firstYear:2023, lastYear:2025 },
   };
 
-memberCountByClub.botafogo = null;
+memberCountByClub['botafogo-br'] = null;

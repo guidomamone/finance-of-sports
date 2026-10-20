@@ -45,8 +45,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.visselkobe = {
+gestionesByClub['visselkobe-jp'] = {
   temporada2025: { nombre:'Temporada 2025', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.visselkobe = null;
+memberCountByClub['visselkobe-jp'] = null;

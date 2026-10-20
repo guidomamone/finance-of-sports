@@ -184,8 +184,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.coritiba = {
+gestionesByClub['coritiba-br'] = {
     sinconfirmar: { nombre:'Gestión actual', firstYear:2023, lastYear:2024 },
   };
 
-memberCountByClub.coritiba = null;
+memberCountByClub['coritiba-br'] = null;

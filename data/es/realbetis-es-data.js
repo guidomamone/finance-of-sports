@@ -60,8 +60,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.realbetis = {
+gestionesByClub['realbetis-es'] = {
     ejercicio2025: { nombre:'Ejercicio 2024/25', firstYear:2025, lastYear:2025 },
   };
 
-memberCountByClub.realbetis = null;
+memberCountByClub['realbetis-es'] = null;

@@ -59,8 +59,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.fcbarcelona = {
+gestionesByClub['fcbarcelona-es'] = {
     ejercicio2025: { nombre:'Ejercicio 2024/25', firstYear:2025, lastYear:2025 },
   };
 
-memberCountByClub.fcbarcelona = null;
+memberCountByClub['fcbarcelona-es'] = null;

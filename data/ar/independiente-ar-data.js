@@ -142,9 +142,9 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.independiente = {
+gestionesByClub['independiente-ar'] = {
     grindetti: { nombre:'Grindetti (2023-actual)', firstYear:2024, lastYear:2026 },
   };
 
-memberCountByClub.independiente = 175796;
+memberCountByClub['independiente-ar'] = 175796;
 

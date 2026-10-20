@@ -162,9 +162,9 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.rosariocentral = {
+gestionesByClub['rosariocentral-ar'] = {
     belloso: { nombre:'Belloso (2022-actual)', firstYear:2023, lastYear:2025 },
   };
 
-memberCountByClub.rosariocentral = 96000;
+memberCountByClub['rosariocentral-ar'] = 96000;
 

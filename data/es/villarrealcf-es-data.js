@@ -49,8 +49,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.villarrealcf = {
+gestionesByClub['villarrealcf-es'] = {
     ejercicio2024: { nombre:'Ejercicio 2023/24', firstYear:2024, lastYear:2024 },
   };
 
-memberCountByClub.villarrealcf = null;
+memberCountByClub['villarrealcf-es'] = null;

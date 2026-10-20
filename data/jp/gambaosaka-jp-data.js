@@ -45,8 +45,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.gambaosaka = {
+gestionesByClub['gambaosaka-jp'] = {
   temporada2025: { nombre:'Temporada 2025', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.gambaosaka = null;
+memberCountByClub['gambaosaka-jp'] = null;

@@ -252,8 +252,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.oncecaldas = {
+gestionesByClub['oncecaldas-co'] = {
   actual: { nombre:'Gestión actual', firstYear:2022, lastYear:2025 },
 };
 
-memberCountByClub.oncecaldas = null;
+memberCountByClub['oncecaldas-co'] = null;

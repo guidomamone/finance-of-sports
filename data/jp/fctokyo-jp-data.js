@@ -45,8 +45,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.fctokyo = {
+gestionesByClub['fctokyo-jp'] = {
   temporada2025: { nombre:'Temporada 2025', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.fctokyo = null;
+memberCountByClub['fctokyo-jp'] = null;

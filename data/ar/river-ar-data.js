@@ -145,10 +145,10 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.river = {
+gestionesByClub['river-ar'] = {
     brito:    { nombre:'Brito (2021-actual)',   firstYear:2024, lastYear:2024 },
     donofrio: { nombre:"D'Onofrio (2013-2021)", firstYear:2021, lastYear:2021 },
   };
 
-memberCountByClub.river = null;
+memberCountByClub['river-ar'] = null;
 

@@ -227,8 +227,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.cruzeiro = {
+gestionesByClub['cruzeiro-br'] = {
     sinconfirmar: { nombre:'SAF Cruzeiro (gestión no confirmada en detalle)', firstYear:2022, lastYear:2025 },
   };
 
-memberCountByClub.cruzeiro = null;
+memberCountByClub['cruzeiro-br'] = null;

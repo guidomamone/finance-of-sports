@@ -147,8 +147,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.gremio = {
+gestionesByClub['gremio-br'] = {
     guerraneto: { nombre:'Guerra Neto (presidente al momento del balance 2024)', firstYear:2024, lastYear:2024 },
   };
 
-memberCountByClub.gremio = null;
+memberCountByClub['gremio-br'] = null;

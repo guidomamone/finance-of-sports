@@ -63,8 +63,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.atleticomadrid = {
+gestionesByClub['atleticomadrid-es'] = {
     ejercicio2025: { nombre:'Ejercicio 2024/25', firstYear:2025, lastYear:2025 },
   };
 
-memberCountByClub.atleticomadrid = null;
+memberCountByClub['atleticomadrid-es'] = null;

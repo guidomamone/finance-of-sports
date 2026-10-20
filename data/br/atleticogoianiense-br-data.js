@@ -71,8 +71,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.atleticogoianiense = {
+gestionesByClub['atleticogoianiense-br'] = {
     sinconfirmar: { nombre:'Atlético Goianiense (gestión no confirmada en detalle)', firstYear:2025, lastYear:2025 },
   };
 
-memberCountByClub.atleticogoianiense = null;
+memberCountByClub['atleticogoianiense-br'] = null;

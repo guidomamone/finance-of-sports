@@ -45,8 +45,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.sanfreccehiroshima = {
+gestionesByClub['sanfreccehiroshima-jp'] = {
   temporada2025: { nombre:'Temporada 2025', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.sanfreccehiroshima = null;
+memberCountByClub['sanfreccehiroshima-jp'] = null;

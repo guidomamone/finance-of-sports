@@ -1083,10 +1083,10 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.racing = {
+gestionesByClub['racing-ar'] = {
     milito: { nombre:'Milito (2024-actual)', firstYear:2025, lastYear:2027 },
     blanco: { nombre:'Blanco (2013-2024)',   firstYear:2014, lastYear:2024 },
   };
 
-memberCountByClub.racing = 86529;
+memberCountByClub['racing-ar'] = 86529;
 

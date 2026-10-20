@@ -45,8 +45,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.urawareddiamonds = {
+gestionesByClub['urawareddiamonds-jp'] = {
   temporada2025: { nombre:'Temporada 2025', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.urawareddiamonds = null;
+memberCountByClub['urawareddiamonds-jp'] = null;

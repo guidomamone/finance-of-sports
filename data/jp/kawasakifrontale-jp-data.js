@@ -45,8 +45,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.kawasakifrontale = {
+gestionesByClub['kawasakifrontale-jp'] = {
   temporada2025: { nombre:'Temporada 2025', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.kawasakifrontale = null;
+memberCountByClub['kawasakifrontale-jp'] = null;

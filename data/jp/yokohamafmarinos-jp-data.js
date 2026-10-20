@@ -45,8 +45,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.yokohamafmarinos = {
+gestionesByClub['yokohamafmarinos-jp'] = {
   temporada2025: { nombre:'Temporada 2025', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.yokohamafmarinos = null;
+memberCountByClub['yokohamafmarinos-jp'] = null;

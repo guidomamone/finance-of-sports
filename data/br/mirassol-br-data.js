@@ -47,8 +47,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.mirassol = {
+gestionesByClub['mirassol-br'] = {
     sinconfirmar: { nombre:'Gestión actual', firstYear:2024, lastYear:2024 },
   };
 
-memberCountByClub.mirassol = null;
+memberCountByClub['mirassol-br'] = null;

@@ -238,9 +238,9 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.argentinosjuniors = {
+gestionesByClub['argentinosjuniors-ar'] = {
     malaspina: { nombre:'Malaspina (2015-actual)', firstYear:2016, lastYear:2019 },
   };
 
-memberCountByClub.argentinosjuniors = 20069;
+memberCountByClub['argentinosjuniors-ar'] = 20069;
 

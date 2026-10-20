@@ -251,10 +251,10 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.estudianteslp = {
+gestionesByClub['estudianteslp-ar'] = {
     gorostegui: { nombre:'Gorostegui (2021-2024)', firstYear:2022, lastYear:2023 },
     veron: { nombre:'Verón (2024-actual)', firstYear:2024, lastYear:2024 },
   };
 
-memberCountByClub.estudianteslp = 56000;
+memberCountByClub['estudianteslp-ar'] = 56000;
 

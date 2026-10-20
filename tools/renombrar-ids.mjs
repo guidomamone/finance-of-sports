@@ -71,6 +71,7 @@ function reglas(mapa, S = [], sourceIdNuevo = {}) {
       ['club=', new RegExp(`(club=)(${alt})(?![\\w-])`, 'g'), (_, p, id) => p + nuevo(id), false],
       ['audit-ignore', new RegExp(`("match":\\s*")(${alt})( )`, 'g'), (_, p, id, e) => p + nuevo(id) + e, true],
       ['clave-cola', new RegExp(`(\\|)(${alt})(?=["|])`, 'g'), (_, p, id) => p + nuevo(id), false, /\.jsonl$/],
+      ['propiedad-registro', new RegExp(`(gestionesByClub|memberCountByClub)\\.(${alt})(?![\\w-])`, 'g'), (_, p, id) => `${p}['${nuevo(id)}']`, true],
       ['generic-data', new RegExp(`(CLUB_GENERIC_DATA)\\.(${alt})(?![\\w-])`, 'g'), (_, p, id) => `${p}['${nuevo(id)}']`, true],
     ],
   };

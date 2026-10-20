@@ -85,8 +85,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.envigado = {
+gestionesByClub['envigado-co'] = {
   actual: { nombre:'Gestión actual', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.envigado = null;
+memberCountByClub['envigado-co'] = null;

@@ -50,8 +50,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.clubamerica = {
+gestionesByClub['clubamerica-mx'] = {
   ollamani: { nombre:'Ollamani, S.A.B. (post-escisión de Televisa, 2024-actual)', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.clubamerica = null;
+memberCountByClub['clubamerica-mx'] = null;

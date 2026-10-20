@@ -45,8 +45,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.nagoyagrampus = {
+gestionesByClub['nagoyagrampus-jp'] = {
   temporada2025: { nombre:'Temporada 2025', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.nagoyagrampus = null;
+memberCountByClub['nagoyagrampus-jp'] = null;

@@ -874,11 +874,11 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.velez = {
+gestionesByClub['velez-ar'] = {
     berlanga: { nombre:'Berlanga (2023-actual)', firstYear:2024, lastYear:2025 },
     rapisarda: { nombre:'Rapisarda (2017-2023)', firstYear:2018, lastYear:2023 },
     gamez: { nombre:'Gámez (2014-2017)', firstYear:2015, lastYear:2017 },
   };
 
-memberCountByClub.velez = 72889;
+memberCountByClub['velez-ar'] = 72889;
 

@@ -63,8 +63,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.sevillafc = {
+gestionesByClub['sevillafc-es'] = {
     ejercicio2025: { nombre:'Ejercicio 2024/25', firstYear:2025, lastYear:2025 },
   };
 
-memberCountByClub.sevillafc = null;
+memberCountByClub['sevillafc-es'] = null;

@@ -415,11 +415,11 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.sanlorenzo = {
+gestionesByClub['sanlorenzo-ar'] = {
     abdo: { nombre:'Abdo (hasta 2012)', firstYear:2011, lastYear:2012 },
     lammens: { nombre:'Lammens (2012-2019)', firstYear:2013, lastYear:2014 },
     moretti: { nombre:'Moretti (2023-actual)', firstYear:2024, lastYear:2024 },
   };
 
-memberCountByClub.sanlorenzo = 89700;
+memberCountByClub['sanlorenzo-ar'] = 89700;
 

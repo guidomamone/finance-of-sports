@@ -45,8 +45,8 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.cerezoosaka = {
+gestionesByClub['cerezoosaka-jp'] = {
   temporada2025: { nombre:'Temporada 2025', firstYear:2025, lastYear:2025 },
 };
 
-memberCountByClub.cerezoosaka = null;
+memberCountByClub['cerezoosaka-jp'] = null;

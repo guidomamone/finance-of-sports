@@ -140,9 +140,9 @@ Object.assign(sources, {
   },
 });
 
-gestionesByClub.instituto = {
+gestionesByClub['instituto-ar'] = {
     cavagliatto: { nombre:'Cavagliatto (2021-actual)', firstYear:2024, lastYear:2024 },
   };
 
-memberCountByClub.instituto = 30000;
+memberCountByClub['instituto-ar'] = 30000;
 

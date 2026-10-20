@@ -65,8 +65,8 @@ Object.assign(sources, {
     },
 });
 
-gestionesByClub.ituano = {
+gestionesByClub['ituano-br'] = {
     sinconfirmar: { nombre:'Gestión actual', firstYear:2024, lastYear:2024 },
   };
 
-memberCountByClub.ituano = null;
+memberCountByClub['ituano-br'] = null;
