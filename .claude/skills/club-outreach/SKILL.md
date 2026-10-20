@@ -167,7 +167,7 @@ agotados, todo bundleado en un solo mail) vive en la sección 1.
 
 ## 4. Etapas 2, 3 y 4: documentadas, NO ACTIVAS
 
-No se activan sin que Guido lo decida explícitamente, y no antes del check-in del 2026-10-24 (ver
+No se activan sin que Guido lo decida explícitamente, y no antes del check-in de los 30 días (ver
 `Admin/outreach/checkin-2026-10-24.md`). Quedan documentadas acá para no tener que rediseñarlas
 cuando llegue el momento:
 
@@ -186,19 +186,11 @@ cuando llegue el momento:
   hasta 50.000/mes); el único ajuste real es el ritmo de warm-up de reputación del subdominio si el
   crecimiento es abrupto.
 
-## 5. El check-in de 30 días
-
-Programado para el 2026-10-24 (30 días desde que arrancó la Etapa 1). Ver
-`Admin/outreach/checkin-2026-10-24.md` para qué evaluar exactamente. Hay además una tarea programada
-fuera de esta sesión que lo pregunta en esa fecha; el archivo es el respaldo por si esa tarea no
-corre (la app tiene que estar abierta para que dispare).
-
 ## Cómo mantener este skill
 
 Actualizar la sección 1 (flujo de Etapa 1) si cambia el formato del frontmatter del borrador o el
 comportamiento de `tools/outreach-send.js`: tienen que quedar sincronizados, el script es la fuente
 de verdad de qué formato acepta. Actualizar la sección 4 (Etapas 2-4) recién cuando Guido decida
 activar alguna: mover la sección correspondiente de "documentada, no activa" a la sección 1 como
-flujo real, no dejarla duplicada en las dos partes. Si el check-in del 2026-10-24 ya pasó, borrar la
-sección 5 (o reemplazarla por el resultado) y archivar `Admin/outreach/checkin-2026-10-24.md` en
-`Admin/Archive/`.
+flujo real, no dejarla duplicada en las dos partes. Cuando se haga el check-in de los 30 días, archivar
+`Admin/outreach/checkin-2026-10-24.md` en `Admin/Archive/` con su resultado.

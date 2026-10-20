@@ -176,6 +176,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    mergeado y sin worktrees, como el 246), con los cambios de skills y documentos que inventaría Docs 1. En la fase 2 también (Guido,
    2026-10-20): los nombres de campo de los bloques de texto libre pasan al inglés (los textos quedan en español) y Boca se normaliza a la
    estructura de los otros clubes (sus fuentes y gestiones viven hoy en clubs.js y gestiones/ar.js).
+   Decidido (Guido, 2026-10-20): el JSON fuente vive en `data/<país>/<club>.json` y se publica como dato abierto (D1); el sitio sigue
+   cargando el `-data.js`, que pasa a ser GENERADO desde el JSON (D2). Inventario: `Admin/mediciones/245-inventario-docs.md`.
 246. IDS ESTABLES (mejoras de proyecto, pedido de Guido 2026-10-16). Conviven ids sin país (realmadrid, athleticclub) y con país (elche-es, corinthians-br). Normalizar antes de tener
    clientes de una API, con un mapa de alias de los ids viejos.
 247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
@@ -364,4 +366,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     a) `audit.js`: `json-no-valida` y `json-js-desfasado` antes de la fase 2 del 245 (la parte P2 la está sumando Pipeline 6);
     b) `ida-y-vuelta.mjs`: listar qué clubes validan con avisos y el texto del aviso (hoy solo da el número);
     c) `archivo-pesado` de `audit.js` extendido a los demás `Admin/*.md` (hoy solo el CHANGELOG; `finance-of-sports-project.md` pesa 520 KB).
+326. CHECK-IN DE OUTREACH A LOS 30 DÍAS (2026-10-24, sacado de la skill `club-outreach`): evaluar lo que dice
+    `Admin/outreach/checkin-2026-10-24.md`; hay una tarea programada que lo pregunta, el archivo es el respaldo.
 
