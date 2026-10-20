@@ -38,6 +38,16 @@ window.RANKINGS["be-div1amateur"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.311]] },
     ],
   },
+  2019: {
+    leagueSize: 16,
+    sinDato: ["liersesk-be"],
+    wiki: {"t":"2018–19 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"liersekempenzonen-be", revenue:0.986, reportType:"official_balance_sheet",
+        sourceId:"liersekempenzonen-be-jaarrekening-2019-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.986]] },
+    ],
+  },
   2018: {
     leagueSize: 16,
     wiki: {"t":"2017–18 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},

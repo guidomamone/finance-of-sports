@@ -41,6 +41,46 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2018: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2018-06-30","sourceId":"liersekempenzonen-be-jaarrekening-2018-06-30-individual"}
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Uitzonderlijke opbrengsten | pág. 7, Jev 1 |
+| 2 | Brutomarge (+)/(-) | pág. 7, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bezoldigingen en rechtstreekse sociale voordelen | pág. 12, Jev 0.99 |
+| 2 | Werkgeversbijdragen voor sociale verzekeringen | pág. 12, Jev 1 |
+| 3 | Andere personeelskosten | pág. 12, Claude 0.8 |
+| 4 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 7, Jev 0.92 |
+| 5 | Andere bedrijfskosten | pág. 7, Jev 0.91 |
+| 6 | Uitzonderlijke kosten | pág. 7, Jev 1 |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = 8396. El .md omite la fila de impuestos del esquema abreviado: resultado del ejercicio impreso -628.623 menos resultado ordinario -620.227 = 8.396
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = 866254. El esquema abreviado solo publica el margen bruto (L237); la extracción no lo trajo como ingreso en 2019; en 2018, 2020 y 2021 sí
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): be-div1amateur, verificado contra roster cacheado de "2018–19 Belgian First Amateur Division" (tools/club-league-reference/be.json), coincidencia exacta "Lierse Kempenzonen".
+```
+
 ## 2018
 
 ### Ingresos
@@ -87,4 +127,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### liersekempenzonen-be-jaarrekening-2019-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

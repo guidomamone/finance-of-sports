@@ -3,6 +3,10 @@ const liersekempenzonenbeRevenueLinesByYear = {
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:0.367044, disclosureLevel:'aggregated' },
     { rawLabel:'Uitzonderlijke opbrengsten', normalizedCategory:'other_income', amountNative:0.05, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Uitzonderlijke opbrengsten', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:0.866254, disclosureLevel:'aggregated' },
+  ],
 };
 const liersekempenzonenbeExpenseLinesByYear = {
   2018: [
@@ -12,6 +16,14 @@ const liersekempenzonenbeExpenseLinesByYear = {
     { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.087351, disclosureLevel:'aggregated' },
     { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.016167, disclosureLevel:'aggregated' },
     { rawLabel:'Uitzonderlijke kosten', normalizedCategory:'exceptional_items', amountNative:-0.005559, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Bezoldigingen en rechtstreekse sociale voordelen', normalizedCategory:'wages_squad', amountNative:-0.996766, disclosureLevel:'aggregated' },
+    { rawLabel:'Werkgeversbijdragen voor sociale verzekeringen', normalizedCategory:'wages_squad', amountNative:-0.163692, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere personeelskosten', normalizedCategory:'wages_squad', amountNative:-0.202603, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.094099, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.018143, disclosureLevel:'aggregated' },
+    { rawLabel:'Uitzonderlijke kosten', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' },
   ],
 };
 const liersekempenzonenbeFiscalYearMeta = {
@@ -32,6 +44,24 @@ const liersekempenzonenbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.417044, officialTotalExpenses:0.549198, officialPAT:-0.140014,
   },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'liersekempenzonen-be-jaarrekening-2019-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.011177, tax:-0.008396,
+    extraRows: [
+      {label:'Financiële opbrengsten', value:0.000052},
+      {label:'Financiële kosten', value:-0.011229},
+      {label:'Belastingen op het resultaat (67/77)', value:-0.008396},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:0.866254, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.866254, officialTotalExpenses:1.475303, officialPAT:-0.628623,
+  },
 };
 const liersekempenzonenbePresupuestoOverlayByYear = {};
 
@@ -51,6 +81,11 @@ Object.assign(sources, {
   'liersekempenzonen-be-jaarrekening-2018-06-30-individual': {
     id:'liersekempenzonen-be-jaarrekening-2018-06-30-individual', clubId:'liersekempenzonen-be',
     title:'Lierse Kempenzonen VZW — jaarrekening-2018-06-30-individual (ejercicio 2018)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'liersekempenzonen-be-jaarrekening-2019-06-30-individual': {
+    id:'liersekempenzonen-be-jaarrekening-2019-06-30-individual', clubId:'liersekempenzonen-be',
+    title:'Lierse Kempenzonen VZW — jaarrekening-2019-06-30-individual (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
