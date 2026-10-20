@@ -144,6 +144,10 @@ export async function localizar(pdf, { registro, perimetroClub, ejecutar = false
   if (!rehacer && existsSync(out)) {
     const guardada = JSON.parse(readFileSync(out, 'utf8'));
     const vieja = perimetroClub !== undefined && Object.hasOwn(guardada, 'perimetroClub') && (guardada.perimetroClub ?? null) !== (perimetroClub ?? null);
+    // (to-do 298 v2) El ajuste `estado` que llegó DESPUÉS de la localización también vale sobre lo guardado: gana sobre lo que eligió la IA,
+    // como al localizar (aplicarAjusteEstado), sin llamar a la API. Caso: Fulham 2021-22 quedó sin_estado (la IA tomó el sello de presentación
+    // como cierre); con el ajuste `estado` b2 y el cierre arreglado el lote lo salteaba igual.
+    if (!vieja && !modelo) { const aj = ajusteDe(pdf, 'estado'); const ids = String(aj?.valor || '').split(/[,\s]+/).filter(Boolean); if (ids.length && (guardada.sin_estado || (guardada.estado || []).join(',') !== ids.join(','))) { aplicarAjusteEstado(guardada, pdf, aj); writeFileSync(out, JSON.stringify(guardada, null, 1)); } }
     if (!vieja) return { hecho: true, archivo: out, datos: guardada, costo: 0 };
   }
   const mdText = readFileSync(resolve(ROOT, md), 'utf8');
