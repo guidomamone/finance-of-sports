@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 836 — Listar un regulador sin navegador (2026-10-20)
+
+* `tools/listar-brreg.mjs`: lista los ejercicios de los clubes noruegos en brreg con pedidos HEAD, sin bajar nada. Noruega tiene 63
+  ejercicios en el portal sin cargar, con el PDF ya bajado. Crawl4AI no hace falta en portales con HTTP plano (315 cerrado).
+* Votación de criterios (skill nueva `votacion-de-criterios`): primera votación, q2, 3 a 0 por partir con las notas la línea de
+  depreciación y amortización (REGLA nueva en CONVENCIONES-DATOS).
+
 ## Versión 835 — Primeros arreglos aprobados por la auditora (2026-10-20)
 
 * 298 af (`data/club-leagues/be.js`: Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022) y 298 w2 (`cargar.mjs`: un primer ejercicio de

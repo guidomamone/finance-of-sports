@@ -53,8 +53,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **F. Técnico: herramientas a probar y datos para afuera (cuando haya tiempo; nada urgente)**
 * 314: Stirling PDF contra los PDFs difíciles (escaneos, tablas rotadas), comparado con Tesseract y Mistral
-* 315: Crawl4AI para bajar la lista de documentos de un regulador y compararla con lo cargado
-* 316: detector de documentos nuevos (después de 315; mejora el 252)
+* 316: detector de documentos nuevos (la prueba de brreg está; boceto escrito; mejora el 252)
 * 317: Supabase como espejo de lectura de un país, para auditar en SQL (experimento descartable)
 * 318: Open Notebook sobre las transcripciones de un país, para encontrar patrones
 * 319: la skill I have ADHD en una sesión de lote, con y sin
@@ -351,11 +350,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     rotadas, filas que no concilian), contra Tesseract y Mistral: una tabla "PDF difícil → motor → fidelidad contra los totales oficiales".
     No cambia nada del pipeline; si gana en algún caso, se diseña un escalón con el ok de Guido. Conectado con el costo de Mistral (298) y
     con los escaneos del 261.
-315. PROBAR CRAWL4AI PARA SOURCING (idea, 2026-10-19; Guido, 2026-10-20: Bélgica y Noruega se listan con curl o la API, sin navegador; Crawl4AI
-    queda para el primer portal que solo funcione con navegador). Que un script baje en Markdown la lista de documentos de un portal de regulador
-    (empezar por uno ya conocido, el belga o el noruego) y la compare con `Admin/ESTADO-clubes.md`. Mide si reemplaza navegar con el Browser
-    pane (menos tokens: va con la regla de scripts antes que sesión). Va con las notas de `club-sourcing`.
-316. DETECTOR DE DOCUMENTOS NUEVOS (idea, 2026-10-19; optimiza el 252). Hoy `tools/ejercicios-nuevos.mjs` corre una vez por mes. Con Maxun o
+316. DETECTOR DE DOCUMENTOS NUEVOS (idea, 2026-10-19; optimiza el 252). Prueba del 315 hecha (2026-10-20): `tools/listar-brreg.mjs` lista
+    los ejercicios de Noruega en brreg sin bajar nada (~0 tokens, 225 s); 63 ejercicios de 6 clubes noruegos no están cargados, pero los
+    PDFs ya están en `Clubes/Noruega`: el hueco es de carga. Boceto en `Admin/mediciones/boceto-vigilar-portal-316.md`. Crawl4AI, para el
+    primer portal que necesite navegador. Hoy `tools/ejercicios-nuevos.mjs` corre una vez por mes. Con Maxun o
     con 315 más una tarea programada, vigilar los portales que publican cada año y dejar los candidatos en `Admin/sourcing/README.md`,
     sin que Guido tenga que pasar los links. Después de 315.
 317. SUPABASE COMO ESPEJO DE LECTURA (idea, 2026-10-19; con el 245 y el 258). Un experimento descartable: exportar los ejercicios de un solo
