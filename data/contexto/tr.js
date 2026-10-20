@@ -4,6 +4,7 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'besiktas-tr': {
+    2019: {"estadio":"Vodafone Park","capacidad":41188,"sponsor":"Vodafone","marca":"Adidas","temporada":"2018–19 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1362211265"},
     2023: {"estadio":"Vodafone Park","capacidad":42590,"sponsor":"Rain","marca":"Adidas","temporada":"2022–23 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370258876","fuenteManual":"https://en.wikipedia.org/wiki/2022%E2%80%9323_S%C3%BCper_Lig ; sponsor: https://www.turkgun.com/spor/besiktasta-yeni-sezon-forma-tanitimi-yapildi/184356 (Rain, patrocinio de pecho 2022-23)","manual":["estadio","capacidad","sponsor","marca"]},
   },
 });

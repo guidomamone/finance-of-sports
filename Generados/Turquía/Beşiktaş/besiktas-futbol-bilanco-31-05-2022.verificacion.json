@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2022.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2022.md",
- "generado": "2026-10-20T19:07:01.848Z",
- "estado": "cola",
+ "generado": "2026-10-20T19:17:02.253Z",
+ "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2022,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "d19b1c4"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,7 +49,8 @@
  "notas": [
   "la nota de \"Yatırım faaliyetlerinden gelirler\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: La nota 19 ya desglosa Hasılat por tipo de ingreso; el segmento solo repartiría por sociedad.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro 'Niteliklerine göre giderler' (nota 21, L1934-L1953) por ser una reclasificación por naturaleza de los mismos gastos ya desglosados en las notas 19 y 20?",
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
   "duda de extraer que no afecta la carga: L1974 es una nota al pie en prosa, no una tabla; sus importes ya están dentro de 136.626.350 de L1971."
  ],
  "reintentar": null,

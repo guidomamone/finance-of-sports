@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2014.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2014.md",
- "generado": "2026-10-20T19:07:01.392Z",
+ "generado": "2026-10-20T19:17:01.960Z",
  "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2014,
@@ -42,8 +42,8 @@
   }
  ],
  "notas": [
-  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se carga el cuadro 'Niteliklerine göre giderler' (b54) como desglose por naturaleza de los gastos, sin duplicar los cuadros por función b51/b52/b53?",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro 'Niteliklerine göre giderler' (b54, L3000-L3022) por ser una reclasificación por naturaleza de gastos ya desglosados en b51, b52 y b53?",
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
   "duda de extraer que no afecta la carga: El total de la nota difiere en 2 TL del estado; se carga el importe del estado."
  ],
  "reintentar": null,

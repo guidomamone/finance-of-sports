@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2020.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2020.md",
- "generado": "2026-10-20T19:07:01.744Z",
+ "generado": "2026-10-20T19:17:02.182Z",
  "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2020,
@@ -50,7 +50,7 @@
   "el desglose de \"Esas faaliyetlerden diğer gelirler\" (4 filas) no suma la fila: quedó la fila",
   "la nota de \"Yatırım faaliyetlerinden gelirler\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: El cuadro b19 abre por segmento, pero la nota 19 (b62) ya desglosa hasılat por tipo de ingreso.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro 'Niteliklerine göre giderler' (nota 21, L2821-L2842) por ser una reclasificación por naturaleza de gastos ya desglosados en las notas 19 y 20?"
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf"
  ],
  "reintentar": [
   {

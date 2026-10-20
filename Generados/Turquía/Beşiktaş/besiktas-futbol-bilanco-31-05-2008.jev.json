@@ -1,0 +1,438 @@
+{
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2008.md",
+ "generatedAt": "2026-10-20T19:17:03.513Z",
+ "rubrosHuella": "79a2eede7a902e4639fc8179835764be7c3673b7",
+ "rubros": [
+  {
+   "label": "TV yayın gelirleri",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kombine kart hasılatı",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "season_tickets",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorluk gelirleri",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Lisanslı ürün satışı",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "İsim hakkı gelirleri",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Maç hasılatları",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Futbolcu satış geliri",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Seyahat satışı",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Lisans geliri",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Sigorta satışı",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Futbolcu cezaları",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diğer",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "İndirimler",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Kur farkı gelirleri",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gelir ve Karlar\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "BJK Dernek cari hesap faiz geliri",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gelir ve Karlar\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sporcu ve teknik kadro ücretleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Futbolcu hak itfa payı",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ticari mal maliyeti",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Seyahat gideri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Tesis giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Maç giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisman ve itfa payları",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "depreciation",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Diğer hizmet maliyeti",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Personel giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Faaliyet Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisman giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Faaliyet Giderleri (-)\"",
+   "choice": "other_amortisation",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Kur farkı giderleri",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Önceki dönem gider ve zararları",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+   "choice": "exceptional_items",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Çalışmayan kısım gider ve zararları",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Şüpheli alacak karşılığı",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Stok ve haklar değer düşüş karşılığı",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "TFF ve UEFA gideri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Cari dönem prekont gelirleri ve önceki dönem reeskont iptali",
+   "lado": "revenue",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gelir ve Karlar\"",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1114
+  },
+  {
+   "label": "Cari dönem reeskont gideri ve önceki dönem prekont iptali",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Komisyon giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Faaliyet Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Süper kupa ve UEFA kupası katılım gelirleri",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Stat giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1166
+  },
+  {
+   "label": "Şampiyonlar ligi gelirleri",
+   "lado": "revenue",
+   "page": 50,
+   "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "competition_bonus",
+     0.9400000000000001
+    ],
+    [
+     "broadcasting",
+     0.06
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1039
+  }
+ ]
+}

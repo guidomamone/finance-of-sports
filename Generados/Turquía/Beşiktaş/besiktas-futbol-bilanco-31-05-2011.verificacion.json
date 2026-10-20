@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2011.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2011.md",
- "generado": "2026-10-20T19:07:01.374Z",
- "estado": "cola",
+ "generado": "2026-10-20T19:17:01.926Z",
+ "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2011,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "fb2a375"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,7 +42,7 @@
   }
  ],
  "notas": [
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro 'NOT 31 – Niteliklerine göre giderler' (L2024-L2059), que reagrupa por naturaleza los gastos de comercialización y administración ya desglosados en NOT 30?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
   "duda de extraer que no afecta la carga: La numeración de notas está corrida en una unidad respecto del estado (L248 nota 28, L1942 NOT 29), pero los totales coinciden."
  ],
  "reintentar": null,

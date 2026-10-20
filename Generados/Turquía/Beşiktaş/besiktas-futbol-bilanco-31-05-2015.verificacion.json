@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2015.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2015.md",
- "generado": "2026-10-20T19:07:01.458Z",
- "estado": "cola",
+ "generado": "2026-10-20T19:17:01.996Z",
+ "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2015,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "6fe3fe0"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,7 +47,8 @@
   }
  ],
  "notas": [
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro 'Niteliklerine göre giderler' (b51, L2939-L2958) por ser una reclasificación por naturaleza de gastos ya desglosados en b48, b49 y b50?",
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
   "duda de extraer que no afecta la carga: b53 repite las filas L2978-L2979 de b52 por solapamiento de página."
  ],
  "reintentar": null,
