@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2024.pdf",
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2024.md",
- "generado": "2026-10-20T20:58:05.892Z",
- "scriptHuella": "b54df45c8846",
+ "generado": "2026-10-20T21:00:47.878Z",
+ "scriptHuella": "bb1724ebf1b3",
  "estado": "ok",
  "clubId": "molde-no",
  "year": 2024,
@@ -349,5 +349,15 @@
    "linea": 749
   }
  ],
- "impuesto": []
+ "impuesto": [],
+ "confirmadosPorSumas": [
+  {
+   "linea": 1003,
+   "numero": "2 558 596"
+  },
+  {
+   "linea": 1025,
+   "numero": "11 831 806"
+  }
+ ]
 }
