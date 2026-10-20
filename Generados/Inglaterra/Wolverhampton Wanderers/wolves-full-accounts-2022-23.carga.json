@@ -1,0 +1,427 @@
+{
+ "pdf": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2022-23.pdf",
+ "generado": "2026-10-20T18:14:11.857Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 4 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)",
+  "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
+ ],
+ "ejercicio": {
+  "clubId": "wolves-gb",
+  "year": 2023,
+  "cierre": "2023-05-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Gate receipts",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 15.105,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsorship and advertising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 13.343,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Broadcasting rights",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 11.148,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 13.718,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "League distributions",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 113.795,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other turnover",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.466,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of player registrations",
+    "normalizedCategory": "player_sales",
+    "amountNative": 43.874,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Operating expenses",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -266.119,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2023-05-31",
+   "sourceId": "wolves-gb-full-accounts-2022-23",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -10.402,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.308
+    },
+    {
+     "label": "Interest payable and similar charges",
+     "value": -10.71
+    },
+    {
+     "label": "Tax on (loss)/profit)",
+     "value": null
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 212.449,
+   "officialTotalExpenses": 266.119,
+   "officialPAT": -64.072
+  },
+  "source": {
+   "id": "wolves-gb-full-accounts-2022-23",
+   "clubId": "wolves-gb",
+   "title": "Wolverhampton Wanderers Football Club (1986) Limited — wolves-full-accounts-2022-23 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2022-23.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-05-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "wolves-gb",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 12,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Gate receipts",
+   "page": 29,
+   "native": 15.105,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 15.105,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 15.105
+  },
+  {
+   "label": "Sponsorship and advertising",
+   "page": 29,
+   "native": 13.343,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 13.343,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.343
+  },
+  {
+   "label": "Broadcasting rights",
+   "page": 29,
+   "native": 11.148,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 11.148,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.148
+  },
+  {
+   "label": "Commercial",
+   "page": 29,
+   "native": 13.718,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 13.718,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.718
+  },
+  {
+   "label": "League distributions",
+   "page": 29,
+   "native": 113.795,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 113.795,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 113.795
+  },
+  {
+   "label": "Other turnover",
+   "page": 29,
+   "native": 1.466,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 1.466,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.466
+  },
+  {
+   "label": "Other operating income",
+   "page": 20,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "page": 20,
+   "native": 43.874,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 43.874,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 43.874
+  },
+  {
+   "label": "Operating expenses",
+   "page": 20,
+   "native": 266.119,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 266.119,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (renglón total de gastos operativos o costo de ventas en other_expenses; consideration en player_sales; derechos y deducciones de UEFA y TV en la categoría de su ingreso)",
+   "destino": "expense",
+   "amountNative": -266.119
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.308,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar charges",
+   "page": null,
+   "native": -10.71,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on (loss)/profit)",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 212.449,
+  "expSum": -266.119,
+  "officialTotalRevenue": 212.449,
+  "officialTotalExpenses": 266.119,
+  "officialPAT": -64.072,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -64.072,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 212.449
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 266.119
+  }
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Wolverhampton Wanderers\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-05-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (52 de 54 fechas de fin de mes caen en el mes 5))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2023-05-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2023-05-31 = 0.806842 (Tipo spot del Bank of England al 2023-05-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "wolves-gb-full-accounts-2022-23",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Wolverhampton Wanderers\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 8,
+  "lineasGasto": 1,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

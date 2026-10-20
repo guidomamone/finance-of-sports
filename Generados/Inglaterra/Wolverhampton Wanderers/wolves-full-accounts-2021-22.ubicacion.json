@@ -1,0 +1,264 @@
+{
+ "pdf": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2021-22.md",
+ "mdSha1": "2aa1c8b1531dc429a53d0b40d1f11ecf0617ce5c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:10:19.590Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 11,
+   "lineas": [
+    414,
+    426
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 18,
+   "lineas": [
+    673,
+    685
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 19,
+   "lineas": [
+    705,
+    727
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 20,
+   "lineas": [
+    749,
+    755
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 27,
+   "lineas": [
+    1036,
+    1044
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 27,
+   "lineas": [
+    1050,
+    1052
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 27,
+   "lineas": [
+    1060,
+    1067
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 28,
+   "lineas": [
+    1080,
+    1082
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 28,
+   "lineas": [
+    1090,
+    1095
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 28,
+   "lineas": [
+    1099,
+    1103
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 29,
+   "lineas": [
+    1118,
+    1120
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 29,
+   "lineas": [
+    1130,
+    1134
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 29,
+   "lineas": [
+    1138,
+    1142
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 30,
+   "lineas": [
+    1159,
+    1172
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 31,
+   "lineas": [
+    1191,
+    1206
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 32,
+   "lineas": [
+    1221,
+    1233
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 32,
+   "lineas": [
+    1237,
+    1239
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 32,
+   "lineas": [
+    1243,
+    1245
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 33,
+   "lineas": [
+    1260,
+    1266
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 33,
+   "lineas": [
+    1274,
+    1282
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 34,
+   "lineas": [
+    1299,
+    1304
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 34,
+   "lineas": [
+    1312,
+    1318
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 34,
+   "lineas": [
+    1326,
+    1330
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 35,
+   "lineas": [
+    1343,
+    1348
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 35,
+   "lineas": [
+    1352,
+    1355
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 36,
+   "lineas": [
+    1392,
+    1396
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b5"
+ ],
+ "notas_gastos": [
+  "b7",
+  "b9",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: '2022 £'000 | 2021 £'000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2022 £'000",
+ "columna_anterior": "2021 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de la columna '2022 £'000' del estado de resultados (b2) y no las columnas 'Operations' y 'Player amortisation & trading', que solo lo abren por segmento?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El estado b2 tiene columnas por segmento además del total 2022 y del 2021.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se toma 'Wages and salaries' de la nota 8 (b9) como el renglón de salarios, sabiendo que incluye a todo el personal y no solo al plantel?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 8 no separa los sueldos del plantel de los del resto del personal; b10 solo da cantidades de empleados.",
+   "bloques": [
+    "b9",
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de Wolverhampton Wanderers Football Club (1986) Limited (b2, pág. 18). El título dice 'AS AT 31 MAY 2022', pero es el ejercicio cerrado el 31-05-2022. Notas elegidas: turnover (b5), cargos operativos (b7), costos de personal (b9) e intereses (b12). b10 es cantidad de empleados y no se carga. No hay un desglose específico de salarios del plantel."
+}

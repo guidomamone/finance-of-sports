@@ -126,6 +126,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"London Stadium","capacidad":62500,"sponsor":"Betway","marca":"Umbro","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'wolves-gb': {
+    2020: {"estadio":"Molineux Stadium","capacidad":32050,"sponsor":"ManBetX","marca":"Adidas","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
     2024: {"estadio":"Molineux Stadium","capacidad":31750,"sponsor":"AstroPay","marca":"Castore","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Molineux Stadium","capacidad":31750,"sponsor":"DEBET","marca":"Sudu","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

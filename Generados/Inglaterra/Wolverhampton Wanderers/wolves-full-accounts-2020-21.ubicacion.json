@@ -1,0 +1,268 @@
+{
+ "pdf": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2020-21.md",
+ "mdSha1": "21ba3c54b48a16f8fcb82cfb6e1cee48987d8a93",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:09:48.391Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    108,
+    115
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    344,
+    344
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    367,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 18,
+   "lineas": [
+    626,
+    637
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 19,
+   "lineas": [
+    654,
+    676
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 20,
+   "lineas": [
+    690,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 28,
+   "lineas": [
+    1003,
+    1011
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 28,
+   "lineas": [
+    1018,
+    1025
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 28,
+   "lineas": [
+    1029,
+    1031
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 29,
+   "lineas": [
+    1043,
+    1048
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 29,
+   "lineas": [
+    1052,
+    1056
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 29,
+   "lineas": [
+    1061,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 30,
+   "lineas": [
+    1081,
+    1085
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 30,
+   "lineas": [
+    1089,
+    1096
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 31,
+   "lineas": [
+    1107,
+    1121
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 32,
+   "lineas": [
+    1135,
+    1150
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 33,
+   "lineas": [
+    1161,
+    1173
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 33,
+   "lineas": [
+    1177,
+    1179
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 33,
+   "lineas": [
+    1183,
+    1185
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 34,
+   "lineas": [
+    1196,
+    1202
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 34,
+   "lineas": [
+    1210,
+    1218
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 35,
+   "lineas": [
+    1231,
+    1236
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 35,
+   "lineas": [
+    1243,
+    1249
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 35,
+   "lineas": [
+    1256,
+    1260
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 36,
+   "lineas": [
+    1269,
+    1274
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 36,
+   "lineas": [
+    1278,
+    1281
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 37,
+   "lineas": [
+    1302,
+    1304
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 37,
+   "lineas": [
+    1316,
+    1320
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b7"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b10",
+  "b13"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del Profit and Loss Account: '2021 £'000 | 2020 £'000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2021 £'000",
+ "columna_anterior": "2020 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan como 'Salarios del plantel' los importes de la nota 7 Employees (Wages and salaries, Social security costs, Pension; b10) aunque no separan entre plantel y personal no deportivo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 7 (b10) da los costos de personal totales; el documento no separa los del plantel de los del resto del personal.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Las cuentas son solo individuales, de Wolverhampton Wanderers Football Club (1986) Limited. El estado de resultados es b4: tiene columnas por operaciones y por amortización y traspaso de jugadores, además de los totales 2021 y 2020. Se usan las columnas de totales. Notas elegidas: b7 abre el turnover; b8 detalla los cargos operativos (amortizaciones y resultado por venta de jugadores); b10 son los costos de personal; b13 son los intereses. No se eligen b1 (impacto Covid), b11 (número de empleados) ni b15 (conciliación de impuestos)."
+}
