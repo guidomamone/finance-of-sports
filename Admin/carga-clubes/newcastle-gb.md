@@ -109,6 +109,45 @@ Yasir Al-Rumayyan (2021-10-07 a hoy): Non-Executive Chairman desde el cierre de 
 Duda: Discrepancia de fecha entre PIF (7/10/2021) y Wikipedia (19/11/2021).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Matchday | pág. 35, precedente |
+| 2 | Media | pág. 35, precedente |
+| 3 | UEFA | pág. 35, precedente |
+| 4 | Commercial | pág. 35, precedente |
+| 5 | Other income | pág. 35, precedente |
+| 6 | Profit on disposal of players' and staff registrations | pág. 18, precedente |
+| 7 | Profit on disposal of tangible fixed assets | pág. 18, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating expenses before amortisation and impairment | pág. 18, Jev 0.97 |
+| 2 | Amortisation of intangible assets | pág. 35, Jev 0.98 |
+| 3 | Impairment of intangible assets | pág. 35, Jev 0.99 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2023–24 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Newcastle United".
+```
+
 ## 2023
 
 ### Ingresos
@@ -206,6 +245,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### newcastle-gb-group-accounts-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Gestiones (Finanzas 5, 2026-10-19)

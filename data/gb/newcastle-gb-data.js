@@ -21,6 +21,15 @@ const newcastleGbRevenueLinesByYear = {
     { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:2.951, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:2.836, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Matchday', normalizedCategory:'matchday_competition', amountNative:50.095, disclosureLevel:'aggregated' },
+    { rawLabel:'Media', normalizedCategory:'broadcasting', amountNative:153.95, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA', normalizedCategory:'broadcasting', amountNative:29.835, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:83.573, disclosureLevel:'aggregated' },
+    { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:2.86, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of players\' and staff registrations', normalizedCategory:'player_sales', amountNative:69.816, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of tangible fixed assets', normalizedCategory:'other_income', amountNative:0.113, disclosureLevel:'aggregated' },
+  ],
 };
 
 const newcastleGbExpenseLinesByYear = {
@@ -39,6 +48,11 @@ const newcastleGbExpenseLinesByYear = {
   2023: [
     { rawLabel:'Operating expenses before amortisation and impairment', normalizedCategory:'other_expenses', amountNative:-230.215, disclosureLevel:'aggregated' },
     { rawLabel:'Amortisation and impairment of players\' registrations', normalizedCategory:'player_amortisation', amountNative:-89.343, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Operating expenses before amortisation and impairment', normalizedCategory:'other_expenses', amountNative:-291.484, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of intangible assets', normalizedCategory:'player_amortisation', amountNative:-96.744, disclosureLevel:'aggregated' },
+    { rawLabel:'Impairment of intangible assets', normalizedCategory:'player_impairment', amountNative:-0.801, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -82,6 +96,21 @@ const newcastleGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:253.101, officialTotalExpenses:319.558, officialPAT:-73.421,
   },
+  2024: {
+    currency:'GBP', fxRef:'GBP@2024-06-30',
+    sourceId:'newcastle-gb-group-accounts-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-12.292, tax:-0.018,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:2.127},
+      {label:'Interest payable and similar expenses', value:-14.419},
+      {label:'Taxation', value:-0.018},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:390.242, officialTotalExpenses:389.029, officialPAT:-11.097,
+  },
 };
 
 const newcastleGbPresupuestoOverlayByYear = {};
@@ -113,6 +142,11 @@ Object.assign(sources, {
   'newcastle-gb-group-accounts-2022-23': {
     id:'newcastle-gb-group-accounts-2022-23', clubId:'newcastle-gb',
     title:'Newcastle United Limited — newcastle-group-accounts-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'newcastle-gb-group-accounts-2023-24': {
+    id:'newcastle-gb-group-accounts-2023-24', clubId:'newcastle-gb',
+    title:'Newcastle United Limited — newcastle-group-accounts-2023-24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
