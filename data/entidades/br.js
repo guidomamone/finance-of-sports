@@ -170,7 +170,7 @@ Object.assign(window.CLUB_ENTIDADES, {
    }
   ]
  },
- "botafogo": {
+ "botafogo-br": {
   "cargas": [
    {
     "anio": 2023,
@@ -218,7 +218,7 @@ Object.assign(window.CLUB_ENTIDADES, {
     "nombre": "Sociedade Anônima de Futebol Botafogo",
     "forma": "sociedad",
     "pais": "BR",
-    "clubId": "botafogo",
+    "clubId": "botafogo-br",
     "fuente": {
      "md": "Clubes/Brasil/Botafogo/demonstracoes-financeiras-2024.md",
      "linea": 1501

@@ -2877,6 +2877,7 @@ window.CLUB_SELECTOR = (function(){
   function savedClub(){
     try {
       var id = localStorage.getItem(LS_CLUB);
+      if(id && window.resolverClubId) id = window.resolverClubId(id);
       return (id && clubs[id]) ? id : null;
     } catch(e){ return null; }
   }

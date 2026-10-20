@@ -62,7 +62,7 @@ Intereses + Otros (Gmf, descuentos) + Gastos Bancarios = $2.761.779 M) =
 -1.041.619 M, EXACTO igual a los 2 totales impresos por separado.
 
 tax = RESIDUO (mismo criterio que Once Caldas, ver comentario en
-data/co/oncecaldas-data.js): pretax calculado línea por línea desde las Notas
+data/co/oncecaldas-co-data.js): pretax calculado línea por línea desde las Notas
 18-23 = Revenue(57.387.255) - Expenses(55.225.028) + netInterest(-1.041.619)
 = 1.120.608. officialPAT confirmado por la vista SIIS = -6.954.741 (pérdida).
 tax = officialPAT - pretax = -6.954.741 - 1.120.608 = -8.075.349. Esto NO es

@@ -77,11 +77,11 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Juan Carlos Trujillo Velásquez', corto:'Trujillo', cargo:'Presidente', desde:'2020-01-01', hasta:null,
       fuente:'https://www.las2orillas.co/?p=918944', confirmada:true },
   ],
-  'envigado': [
+  'envigado-co': [
     { nombre:'Óscar Armando Astudillo Palomino', corto:'Astudillo', cargo:'Presidente', desde:'2025-11-21', hasta:null,
       fuente:'https://telemedellin.tv/?p=152246', confirmada:true },
   ],
-  'oncecaldas': [
+  'oncecaldas-co': [
     { nombre:'Tulio Mario Castrillón', corto:'Castrillón', cargo:'Presidente', desde:'2016-01-01', hasta:'2024-10-01',
       fuente:'https://www.clarosports.com/colombia/liga-bet-play/oficial-tulio-mario-castrillon-deja-de-ser-presidente-de-once-caldas/', confirmada:true },
     { nombre:'Daniel Jaramillo Vélez', corto:'Jaramillo', cargo:'Presidente', desde:'2024-10-01', hasta:null,

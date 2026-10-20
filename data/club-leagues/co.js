@@ -1,8 +1,8 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  envigado: { 2025: 'co-primeraA' },
-  oncecaldas: { 2022: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2025: 'co-primeraA' },
+  'envigado-co': { 2025: 'co-primeraA' },
+  'oncecaldas-co': { 2022: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2025: 'co-primeraA' },
   'americadecali-co': { 2025: 'co-primeraA' },
   'atlnacional-co': { 2025: 'co-primeraA' },
   'depcali-co': { 2025: 'co-primeraA' },

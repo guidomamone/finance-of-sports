@@ -55,7 +55,7 @@ export function guardarPerfil(clubId, campo, valor, evidencia, fuente = 'guido-c
 // Ahora cada CHEQUEO tiene un año (el ejercicio del documento que se miró) y vale para los años a menos de VENTANA_PERFIL de él. Un año
 // fuera de toda ventana vuelve a preguntar (una vez por club, campo y tramo: cargar.mjs). Si un chequeo nuevo contradice al más cercano,
 // cargar.mjs / cola.mjs abren una revisión de los años entre los dos (perfil-cambio).
-// Año de un chequeo: `anio` de la línea; en las líneas viejas, los años citados en su evidencia ("data/boca-data.js: 2022 y 2023 'Cuotas
+// Año de un chequeo: `anio` de la línea; en las líneas viejas, los años citados en su evidencia ("data/boca-ar-data.js: 2022 y 2023 'Cuotas
 // sociales'"). Una línea vieja sin ningún año no cuenta como chequeo (decisión de Guido: se vuelve a preguntar; eran 24).
 export const VENTANA_PERFIL = 5;
 export const anioDeDoc = (pdf) => { const m = String(pdf || '').match(/(?:19|20)\d{2}(?!.*(?:19|20)\d{2})/); return m ? Number(m[0]) : null; };

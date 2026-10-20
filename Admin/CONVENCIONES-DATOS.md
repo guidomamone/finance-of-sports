@@ -129,7 +129,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
 - EL `clubId` DE UN CLUB NUEVO LLEVA EL PAÍS AL FINAL (Versión 129, decidido antes del selector
   jerárquico). `racingsantander-es`, `nacional-uy`, `independiente-co`. Por qué: el `clubId` no es
   una clave más, nombra el archivo de datos (`data/<país>/<clubId>-data.js`, por convención de
-  `loadClubData()`) y prefija cada `sourceId` (`racing-balance-2009`), así que una colisión se paga
+  `loadClubData()`) y prefija cada `sourceId` (`racing-ar-balance-2009`), así que una colisión se paga
   en tres lugares. Los nombres se repiten entre países mucho más de lo que parece: Racing
   (Argentina y Santander), Independiente (Argentina, del Valle, Medellín), Unión (Argentina,
   Española, Magdalena), Nacional (Uruguay, Paraguay, Colombia, Ecuador). Ya pasa en `fuentes/`, con
@@ -137,11 +137,12 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   OJO CON LA SINTAXIS: un id con guion NO es una clave JS válida sin comillas, así que en
   `data/clubs.js` va `'racing-es': { id:'racing-es', ... }`, con la clave entre comillas. Se
   descubrió rompiendo el archivo al probar el chequeo.
-  LOS 41 CLUBES DE ANTES NO SE MIGRAN AHORA, a propósito: renombrarlos toca sus archivos, sus
-  sourceIds y el club guardado en el localStorage de cada visitante, y no arregla ninguna colisión
-  real porque todavía no hay ninguna. `node tools/audit.js` avisa (`clubid-heredado-ambiguo`, P2)
-  exactamente el día que un id heredado deja de ser inequívoco, o sea cuando entra un club de otro
-  país con el mismo nombre base: ESE es el momento de renombrar el viejo, no antes.
+  EL FORMATO ES `<slug>-<iso2>` PARA TODOS, con el `country` de `clubs.js`. Un id nunca se reutiliza ni
+  se borra de la historia: si un club cambia de id, el viejo pasa a `data/club-aliases.js` (alias →
+  id vivo, sin cadenas, y un alias nunca es también un id vivo) y queda para siempre, porque hay links
+  compartidos, búsquedas guardadas y `fuentes/<id>.html` indexadas con el id viejo. Para el redirect de
+  `fuentes/` se agregan las dos reglas 301 a `netlify.toml`. `node tools/audit.js` vigila el formato
+  (`clubid-sin-pais`, P1) y el mapa (`alias-roto`, P1). Los tools aceptan un id viejo (`normalizarId()`).
 - `note` ES INTERNA Y NO SE RENDERIZA NUNCA; LO QUE VE EL VISITANTE ES `publicNote` (Versión 127,
   después de que Guido revisara la primera versión de la pestaña Fuentes: "veo que en Salvedades a
   veces pones 'descargado por Guido' o direcciones que son de mi computadora. Eso no puede

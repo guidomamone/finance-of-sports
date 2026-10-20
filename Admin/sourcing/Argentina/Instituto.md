@@ -10,7 +10,7 @@ búsqueda web: no intentado esta ronda · regulador/país: no aplica — 2026-10
   primer club nuevo agregado después de Vélez — 5to del motor genérico). Superávit final real:
   $1.830.503.804 ARS. Convertido a USD con $909 (dólar mayorista de cierre al 30/6/2024 — el
   documento no declara su propio tipo de cambio, a diferencia de Boca/Racing/Vélez). Ver
-  `data/ar/instituto-data.js` para el detalle completo de categorización (el Anexo V separa gasto por
+  `data/ar/instituto-ar-data.js` para el detalle completo de categorización (el Anexo V separa gasto por
   sector — Fútbol/Básquet/La Agustina/Sede/Colegio/Tienda —, mismo mecanismo que el Anexo III de
   Vélez). Presidente: Juan Manuel Cavagliatto ("Juntos por Instituto"), gestión 2022-2025.
 - Memoria Anual, mismo Ejercicio N°70 — misma noticia, otro Drive (6 págs, narrativa, sin usar).
@@ -85,4 +85,4 @@ se destrabó desde el 2026-09-22) y ver si ya existe algo del 2025-26.
   `informe-comision-revisora-2024-2025.pdf`. Falta transcribir y cargar (onboarding).
 - Último chequeo: 2026-10-18.
 
-- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Argentina/Instituto/balance-general-2024-2025.pdf` (sourceId `instituto-balance-general-2024-2025`).
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Argentina/Instituto/balance-general-2024-2025.pdf` (sourceId `instituto-ar-balance-general-2024-2025`).

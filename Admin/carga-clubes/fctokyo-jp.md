@@ -1,0 +1,48 @@
+# fctokyo — evidencia de carga
+
+Lo que había como comentario en `data/jp/fctokyo-jp-data.js`, movido tal cual por `tools/archivo/mover-comentarios-data.mjs` (la regla:
+`Admin/CONVENCIONES-DATOS.md`, "data/<país>/<club>-data.js NO LLEVA COMENTARIOS"). Una sección por ejercicio; adentro, ingresos, gastos y
+meta. Las notas de cada fila van en una tabla con su número de fila (hay nombres de rubro repetidos en un mismo año).
+
+## Cabecera
+
+```text
+============================================================================
+data/jp/fctokyo-jp-data.js — FC Tokyo (FC東京). Mismo lote de carga y misma
+fuente que Kashima Antlers (data/jp/kashimaantlers-jp-data.js) — ver ESE archivo
+para la metodología completa. Acá solo el detalle específico de FC Tokyo.
+
+Abreviado "FC東京" en las tablas del club_doc-2025.pdf (ojo con el gotcha de
+ancho de caracteres documentado en Admin/sourcing/Japón/_notas-generales.md: otros
+años pueden abreviar "ＦＣ東京" con caracteres de ancho completo).
+============================================================================
+```
+
+## 2025
+
+### Ingresos
+
+```text
+Millones de JPY, Ejercicio 2025. Página 8: FC東京 2025年度 = 7.210 (+221 vs. 2024).
+Página 9 (Sponsor): 3.223. Página 10 (Gate): 1.439.
+```
+
+## Gestiones
+
+_investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
+
+```text
+Shigeya Kawagishi (2022-02-01 a 2026-07-01): Soccer Magazine WEB dice que asumiría el 2022-02-01 (fecha prevista, nota previa al ingreso; MIXI toma la gestión). Reemplazó a Naoki Ohkane. El club confirma 'desde febrero de 2022'. Deja el cargo el 2026-07-01 (anuncio oficial 2026-05-28; sucesor Eisuke Shirai). Dueño: MIXI (empresa).
+```
+
+## Fuentes
+
+### fctokyo-jp-jleague-doc-2025
+
+_note (data/):_
+
+```text
+Documento publicado por la propia J.League (no por FC Tokyo directamente), como parte de su Club Licensing System — cubre los 60 clubes de J1/J2/J3. Copia local en Clubes/Japón/_J.League (todos los clubes)/club_doc-2025.pdf (carpeta compartida por los 10 clubes de Japón cargados). Ingreso Total/Sponsor/Gate son cifras reales por club (págs. 8-10); el resto de categorías de ingreso y TODOS los costos solo se publican a nivel de división J1/J2/J3, no por club individual (ver comentario completo en data/jp/kashimaantlers-jp-data.js). fx:150 JPY/USD es placeholder de referencia, no declarado por el documento.
+```
+
+2026-10-15 (to-do 232 ab): 2025 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.

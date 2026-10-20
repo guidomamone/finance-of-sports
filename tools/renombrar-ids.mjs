@@ -50,7 +50,7 @@ const EXCLUIDOS = [
   /^Clubes\//, /^Admin\/Archive\//, /^auditorias\//, /^Prototyping\//, /^\.claude\//, /^Admin\/sesiones\//, /^Admin\/mediciones\//,
   /^Admin\/CHANGELOG\.md$/, /^Admin\/finance-of-sports-project\.md$/, /^Admin\/TODO\.md$/, /^Admin\/ESTADO\.md$/,
   /^Admin\/registros\/api\//, /^Admin\/registros\/transcripciones-/, /^Admin\/registros\/caja-deuda-resto\.log$/,
-  /^tools\/renombrar-ids\.mjs$/, /^tools\/audit\.js$/, /^js\/selector\.js$/, /^package(-lock)?\.json$/,
+  /^tools\/renombrar-ids\.mjs$/, /^data\/club-aliases\.js$/, /^netlify\.toml$/, /^tools\/reddit-archive-search\.mjs$/, /^tools\/audit\.js$/, /^js\/selector\.js$/, /^package(-lock)?\.json$/,
 ];
 const SOLO_CLUB_BRIEFING = /^Generados\/.*\.briefing\.json$/;
 const esJsLike = (f) => /\.(js|mjs|cjs|json)$/.test(f);
@@ -132,11 +132,22 @@ function movimientos(mapa) {
 }
 
 // ---- 4. Alias y redirects ---------------------------------------------------------------------------------------------------------------
+const HELPERS = `
+// resolverClubId('boca') -> 'boca-ar'; un id que no es alias vuelve igual. resolverClubIds(x) lo aplica a cada texto de un objeto o lista
+// (el estado de una búsqueda guardada lleva ids de club a varias alturas). Sin dependencias: lo usan la URL, el selector y Mi cuenta.
+window.resolverClubId = function (id) { return Object.prototype.hasOwnProperty.call(window.CLUB_ALIASES, id) ? window.CLUB_ALIASES[id] : id; };
+window.resolverClubIds = function (v) {
+  if (typeof v === 'string') return window.resolverClubId(v);
+  if (Array.isArray(v)) return v.map(window.resolverClubIds);
+  if (v && typeof v === 'object') { var o = {}; Object.keys(v).forEach(function (k) { o[k] = window.resolverClubIds(v[k]); }); return o; }
+  return v;
+};
+`;
 function textoAliases(mapa) {
   const filas = Object.entries(mapa).sort(([a], [b]) => (a < b ? -1 : 1)).map(([v, n]) => `  ${JSON.stringify(v)}: ${JSON.stringify(n)}`);
   return `// Los ids viejos de club (sin país) y a qué id apuntan hoy (to-do 246). NO se borra ninguna entrada: un link compartido o una búsqueda guardada\n`
     + `// con el id viejo tiene que seguir abriendo. Lo escribe tools/renombrar-ids.mjs; un alias nuevo se agrega a mano y \`audit.js\` lo chequea\n`
-    + `// (alias-roto). Las páginas fuentes/<id>.html viejas redirigen desde netlify.toml.\nwindow.CLUB_ALIASES = {\n${filas.join(',\n')}\n};\n`;
+    + `// (alias-roto). Las páginas fuentes/<id>.html viejas redirigen desde netlify.toml.\nwindow.CLUB_ALIASES = {\n${filas.join(',\n')}\n};\n${HELPERS}`;
 }
 const MARCA_I = '# ids-alias:inicio (lo escribe tools/renombrar-ids.mjs; no editar a mano)', MARCA_F = '# ids-alias:fin';
 function bloqueRedirects(mapa) {

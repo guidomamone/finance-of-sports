@@ -276,7 +276,7 @@ PDF oficial (texto nativo), descargado del Portal de Transparência oficial del 
 ### window.CLUB_GENERIC_DATA
 
 ```text
-Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Versión 95).
+Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-ar-data.js, Versión 95).
 ```
 
 ### memberCountByClub['sportrecife-br']

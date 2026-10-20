@@ -130,7 +130,7 @@ verificar de dónde sale antes de asumir que hace falta convertirlo de nuevo.
 
 Encontrado al agregar la card "Supuestos" de Racing: las cards `bocaPresupuestoOficialCard`
 funcionan bien sin `style="display:none"` en el HTML porque Boca ES el club que carga por default
-(`currentClub = 'boca'`), así que "visible por default" ya es el estado correcto para ellas. Pero
+(`currentClub = 'boca-ar'`), así que "visible por default" ya es el estado correcto para ellas. Pero
 `refreshAllForClub()`, la función que esconde/muestra estas cards por club, NO se llama en el
 `INIT` de la página (`refreshFinanzas()` sí, `refreshAllForClub()` no; ver el bloque
 `// ---------- INIT ----------` al final del `<script>`), solo se llama cuando el usuario CAMBIA de
@@ -154,7 +154,7 @@ cuando el club/ejercicio seleccionado no tiene datos en el mapa correspondiente
 
 Implementación de referencia (`renderSupuestosCard`/`renderPresupuestoFinancieroCard`/
 `renderPresupuestoInversionesCard`/`renderTorneosCard` en index.html): cada función busca el dato en
-su mapa `[clubId][year]` (o chequea `clubId==='boca' && year===2027` para los 3 cards de Boca 2027
+su mapa `[clubId][year]` (o chequea `clubId==='boca-ar' && year===2027` para los 3 cards de Boca 2027
 con HTML estático); si no hay dato, pone `style.display='none'` en el `.card` y sale; si hay dato,
 lo pone en `''` (visible) y pinta el contenido. No queda ninguna función `noDataMsg()` en el código:
 se borró junto con este cambio, porque ya no la llama nadie.
@@ -320,7 +320,7 @@ con el primer ejercicio real (Racing 2019/2020):
    lee como un bug, no como una limitación real.
 
 Al implementar el punto 3 salió a la luz una ASIMETRÍA real en los datos del overlay de Racing 2020
-(`data/ar/racing-data.js`, `racingPresupuestoOverlayByYear[2020]`): `revenueLines` excluía a propósito
+(`data/ar/racing-ar-data.js`, `racingPresupuestoOverlayByYear[2020]`): `revenueLines` excluía a propósito
 su línea "extraordinaria" (`Cobros por venta de inversiones financieras`, 96 M) mientras que
 `expenseLines` SÍ incluía su análoga (`Egresos extraordinarios`) como línea normal — con ese
 criterio mixto, sumar `ingresos - gastos` del propio overlay no daba el superávit/déficit
@@ -817,7 +817,7 @@ Texto movido sin cambios.
   Región → País → Clubes → Ejercicio de cada club. El resuelto se encoge a una
   línea con lo que elegiste y un "Cambiar"; ninguno es obligatorio ("Elegir más
   tarde" está en todos, por eso ninguno dice "opcional"). Arriba, el buscador:
-  el que ya sabe qué quiere escribe "boca" o "primera div" y llega en un paso —
+  el que ya sabe qué quiere escribe "boca-ar" o "primera div" y llega en un paso —
   busca clubes Y ligas, agrupados. Se abre con Ctrl/Cmd+K, con "Buscar un club o
   una liga" del header, desde Inicio o desde "Cambiar de club" en Finanzas. Vive en `js/selector.js`
   y se alimenta de `clubs.js` + `club-index.js` + `leagues.js` +
@@ -862,7 +862,7 @@ Texto movido sin cambios.
   El menú es el MISMO `#mainNav` mostrado como panel debajo del header, más idioma y contacto (`.m-extra`, fuera del nav a propósito:
   todo `#mainNav button` se trata como pestaña). La moneda vive en el panel de Finanzas (también en escritorio) y el botón de club no se muestra en ningún ancho ("Buscar un club o una liga", la lupa en el teléfono, abre el mismo selector; el club se nombra en el título de Finanzas). Entre 701 y 900 px sigue el header de
   varias filas; en escritorio, nada cambió.
-- EL ESTADO EN LA URL (`js/principal.js`, "EL ESTADO EN LA URL"). `?tab=finanzas&club=river&anios=2021,2024`,
+- EL ESTADO EN LA URL (`js/principal.js`, "EL ESTADO EN LA URL"). `?tab=finanzas&club=river-ar&anios=2021,2024`,
   `?tab=liga&liga=es-laliga&anio=2025`; Inicio no lleva nada. Un link copiado abre la misma pestaña, club, años, liga y ejercicio, y
   "atrás" vuelve a lo anterior: pestaña, club y liga suman una entrada al historial (`pushState`); los años y el ejercicio de una liga
   la reemplazan, para no llenar el historial con cada click. Al abrir, la URL le gana al club guardado; un club o una liga que no
@@ -895,7 +895,7 @@ Texto movido sin cambios.
   LADO. Un lado es una SUMA DE BLOQUES**, y cada bloque tiene su propio agregador:
 
       { kind:'liga',   league:'ar-primera', years:[2025],             agg:'promedio'|'suma' }
-      { kind:'clubes', pares:[['boca',2025], ['river',null]],         agg:'promedio'|'suma' }
+      { kind:'clubes', pares:[['boca-ar',2025], ['river-ar',null]],         agg:'promedio'|'suma' }
 
   De ahí sale el caso que lo motivó, de Guido: "promedio de clubes colombianos +
   sumatoria de 6 clubes brasileros" contra Real Madrid. Los cards se llenan con el

@@ -900,65 +900,29 @@ function checkRankings(api) {
   }
 }
 
-// --- D14: el espacio de nombres de clubId (Versión 129) --------------------
-// `clubId` no lleva país, y no es una clave más: nombra el archivo de datos
-// (`data/<país>/<clubId>-data.js`, por convención de loadClubData()) y prefija cada
-// sourceId (`racing-balance-2009`). Los ids de hoy son `racing`, `independiente`,
-// `union`, `sanlorenzo`: los cuatro nombres existen en varios países (Racing de
-// Santander, Independiente del Valle y el de Medellín, Unión Española, Unión
-// Magdalena). Ya pasa en `fuentes/`, con un Olimpia de Honduras y otro de
-// Paraguay, y ahí no choca solo porque el país es una carpeta.
-//
-// La convención, desde la Versión 129 y escrita en Admin/CONVENCIONES.md: todo club
-// NUEVO lleva el país al final del id (`racingsantander-es`). Los 41 de antes
-// quedan como están, listados acá abajo: migrarlos tocaría sus archivos, sus
-// sourceIds y el club guardado en el localStorage de cada visitante, y no
-// arregla ninguna colisión real, porque todavía no hay ninguna.
-const CLUB_IDS_SIN_PAIS_HEREDADOS = [
-  "argentinosjuniors", "athleticclub", "atleticogoianiense", "atleticomadrid", "boca", "botafogo",
-  "celtavigo", "cerezoosaka", "clubamerica", "coritiba", "cruzeiro", "deportivoalaves",
-  "envigado", "estudianteslp", "fcbarcelona", "fctokyo", "gambaosaka", "gremio",
-  "independiente", "instituto", "ituano", "kashimaantlers", "kawasakifrontale", "mirassol",
-  "nagoyagrampus", "oncecaldas", "racing", "realbetis", "realmadrid", "river",
-  "rosariocentral", "sanfreccehiroshima", "sanlorenzo", "sevillafc", "union", "urawareddiamonds",
-  "valenciacf", "velez", "villarrealcf", "visselkobe", "yokohamafmarinos",
-];
-
+// --- D14: el espacio de nombres de clubId ---------------------------------
+// `clubId` nombra el archivo de datos (`data/<país>/<clubId>-data.js`, por convención de loadClubData()) y prefija cada sourceId.
+// Formato: `<slug>-<iso2>`, con el `country` de clubs.js (Admin/CONVENCIONES-DATOS.md, "Identidad del club"). Los ids que no lo cumplían
+// se renombraron en el to-do 246; los viejos viven en `data/club-aliases.js` para siempre, y `alias-roto` vigila ese mapa.
 function checkClubIds(api) {
-  const heredados = new Set(CLUB_IDS_SIN_PAIS_HEREDADOS);
-  const paises = new Set(Object.values(api.clubs).map(c => (c.country || '').toLowerCase()).filter(Boolean));
-  // El "nombre base" es el id sin su sufijo de país, para comparar peras con peras.
-  const base = id => {
-    const m = id.match(/^(.*)-([a-z]{2})$/);
-    return (m && paises.has(m[2])) ? m[1] : id;
-  };
-
-  // El disparador de migración: mientras `racing` sea el único, "racing" significa
-  // Racing Club sin ambigüedad. El día que entra `racing-es`, el id pelado pasa a ser
-  // el único de la familia que no dice de qué país es, y ahí sí conviene renombrarlo a
-  // `racing-ar`. O sea que esto no prohíbe la convivencia (es justamente la convención
-  // funcionando): avisa cuándo un id heredado se volvió ambiguo, que es el único
-  // momento en que migrarlo vale lo que cuesta.
-  const porBase = {};
-  for (const id of Object.keys(api.clubs)) (porBase[base(id)] = porBase[base(id)] || []).push(id);
-  for (const b of Object.keys(porBase)) {
-    if (porBase[b].length < 2) continue;
-    const pelados = porBase[b].filter(id => id === b);
-    const conPais = porBase[b].filter(id => id !== b);
-    if (!pelados.length) continue;  // todos con país: no hay nada ambiguo
-    for (const id of pelados) {
-      const pais = (api.clubs[id].country || 'xx').toLowerCase();
-      add('P2', 'clubid-heredado-ambiguo', `el id '${id}' (${api.clubs[id].country}) ya no es inequívoco: existe ${conPais.join(', ')} con el mismo nombre base. Es el momento de renombrarlo a '${id}-${pais}' (el archivo data/${id}-data.js, el clubId y el prefijo de sus sourceId)`);
+  for (const id of Object.keys(api.clubs)) {
+    const iso = (api.clubs[id].country || 'xx').toLowerCase();
+    if (!id.endsWith('-' + iso)) {
+      add('P1', 'clubid-sin-pais', `el club '${id}' tiene un id que no termina en su país (esperado '${id.replace(/-[a-z]{2}$/, '')}-${iso}'): la convención de ids es <slug>-<iso2>, ver Admin/CONVENCIONES-DATOS.md`);
     }
   }
-
-  const sinPais = Object.keys(api.clubs).filter(id => !heredados.has(id) && !/-[a-z]{2}$/.test(id));
-  for (const id of sinPais) {
-    add('P2', 'clubid-sin-pais', `el club '${id}' es nuevo y su id no termina en el país (ej. '${id}-${(api.clubs[id].country || 'xx').toLowerCase()}'), que es la convención desde la Versión 129: ver Admin/CONVENCIONES.md`);
+  let aliases = {};
+  try {
+    const txt = fs.readFileSync(path.join(ROOT, 'data/club-aliases.js'), 'utf8');
+    aliases = JSON.parse(txt.match(/CLUB_ALIASES\s*=\s*(\{[\s\S]*?\});/)[1]);
+  } catch (e) {
+    add('P1', 'alias-roto', `no se pudo leer data/club-aliases.js: ${e.message}`);
+    return;
   }
-  const heredadosVivos = Object.keys(api.clubs).filter(id => heredados.has(id)).length;
-  if (heredadosVivos) {
-    add('P3', 'clubid-heredado', `${heredadosVivos} clubes con id sin país, de antes de la convención. No es un error y no urge migrarlos: el chequeo de colisión de arriba avisa si alguna vez chocan de verdad`);
+  for (const [viejo, nuevo] of Object.entries(aliases)) {
+    if (!api.clubs[nuevo]) add('P1', 'alias-roto', `el alias '${viejo}' apunta a '${nuevo}', que no es un club del sitio`);
+    else if (api.clubs[viejo]) add('P1', 'alias-roto', `el alias '${viejo}' es también un id vivo de club: un alias nunca se reutiliza`);
+    else if (aliases[nuevo]) add('P1', 'alias-roto', `el alias '${viejo}' apunta a '${nuevo}', que a su vez es un alias (sin cadenas)`);
   }
 }
 

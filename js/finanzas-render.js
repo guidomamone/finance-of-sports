@@ -629,7 +629,7 @@
   // esconde. Los "Gastos" de ese card son solo organización y logística de cada torneo (el presupuesto no reparte los sueldos por
   // competencia), así que la "Diferencia" no es el resultado real del torneo: cada card lo aclara.
   function renderTorneosCard(clubId, year){
-    const isBoca2027 = clubId === 'boca' && year === 2027;
+    const isBoca2027 = clubId === 'boca-ar' && year === 2027;
     document.getElementById('torneosBoca2027').style.display = isBoca2027 ? '' : 'none';
   }
 

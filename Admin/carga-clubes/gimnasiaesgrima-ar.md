@@ -436,7 +436,7 @@ presupuestos de Racing/Boca. Igual que Newell's/Banfield/Talleres, se dejan vac�
 ### window.CLUB_GENERIC_DATA
 
 ```text
-Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Versión 95).
+Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-ar-data.js, Versión 95).
 ```
 
 ### gestionesByClub['gimnasiaesgrima-ar']

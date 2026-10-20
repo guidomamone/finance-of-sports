@@ -368,7 +368,7 @@ PDF oficial (texto nativo, mismo canal que 2024), auditado por BDO RCS Auditores
 ### window.CLUB_GENERIC_DATA
 
 ```text
-Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Versión 95).
+Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-ar-data.js, Versión 95).
 ```
 
 ### gestionesByClub['fluminense-br']

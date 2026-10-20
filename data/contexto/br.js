@@ -15,7 +15,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Ligga Arena","capacidad":42372,"sponsor":"Esportes da Sorte","marca":"Umbro","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
     2025: {"estadio":"Ligga Arena","capacidad":42372,"sponsor":"Viva Sorte Bet","marca":"Umbro","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
-  'atleticogoianiense': {
+  'atleticogoianiense-br': {
     2025: {"estadio":"Antônio Accioly","capacidad":12500,"sponsor":"Blaze","marca":"Dragão Premium","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
   'atleticomineiro-br': {
@@ -34,7 +34,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Casa de Apostas Arena Fonte Nova","capacidad":50000,"sponsor":"Esportes da Sorte","marca":"Esquadrão","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
     2025: {"estadio":"Casa de Apostas Arena Fonte Nova","capacidad":49500,"sponsor":"Viva Sorte Bet","marca":"Puma","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
-  'botafogo': {
+  'botafogo-br': {
     2023: {"estadio":"Olímpico Nilton Santos","capacidad":44661,"sponsor":"Parimatch","marca":"Reebok","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
     2024: {"estadio":"Olímpico Nilton Santos","capacidad":46931,"sponsor":"Parimatch","marca":"Reebok","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
     2025: {"estadio":"Olímpico Nilton Santos","capacidad":44661,"sponsor":"Vbet","marca":"Reebok","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
@@ -56,7 +56,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Neo Química Arena","capacidad":48000,"sponsor":"Esportes da Sorte","marca":"Nike","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
     2025: {"estadio":"Neo Química Arena","capacidad":47252,"sponsor":"Esportes da Sorte","marca":"Nike","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
-  'coritiba': {
+  'coritiba-br': {
     2023: {"estadio":"Couto Pereira","capacidad":40502,"sponsor":"Neodent","marca":"Sou 1909 (club manufactured kit)","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
     2024: {"estadio":"Couto Pereira","capacidad":40502,"sponsor":"Reals","marca":"Diadora","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
     2025: {"estadio":"Couto Pereira","capacidad":40502,"sponsor":"Reals","marca":"Diadora","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
@@ -85,7 +85,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Heriberto Hülse","capacidad":19300,"sponsor":"EstrelaBet","marca":"Volt Sport","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
     2025: {"estadio":"Heriberto Hülse","capacidad":19225,"sponsor":"Estrela Bet","marca":"Volt Sport","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
-  'cruzeiro': {
+  'cruzeiro-br': {
     2022: {"estadio":"Mineirão","capacidad":61846,"sponsor":"Supermercados BH","marca":"Adidas","temporada":"2022 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376405033"},
     2023: {"estadio":"Mineirão","capacidad":61927,"sponsor":"Betfair","marca":"Adidas","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
     2024: {"estadio":"Mineirão","capacidad":61846,"sponsor":"Betfair","marca":"Adidas","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
@@ -140,7 +140,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Estádio da Serrinha","capacidad":14450,"sponsor":"BETesporte","marca":"Gr33n (club manufactured kit)","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
     2025: {"estadio":"Estádio da Serrinha","capacidad":14450,"sponsor":"Viva Sorte Bet","marca":"Diadora","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
-  'gremio': {
+  'gremio-br': {
     2024: {"estadio":"Arena do Grêmio","capacidad":55662,"sponsor":"Banrisul","marca":"Umbro","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
     2025: {"estadio":"Arena do Grêmio","capacidad":60540,"sponsor":"Alfa / Energia Bet","marca":"Umbro","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
@@ -152,14 +152,14 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Beira-Rio","capacidad":50128,"sponsor":"Banrisul","marca":"Adidas","temporada":"2024 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669015"},
     2025: {"estadio":"Beira-Rio","capacidad":49055,"sponsor":"Alfa","marca":"Adidas","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
-  'ituano': {
+  'ituano-br': {
     2024: {"estadio":"Novelli Júnior","capacidad":18560,"sponsor":"Starrett","marca":"Alluri","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
   },
   'juventude-br': {
     2020: {"estadio":"Alfredo Jaconi","capacidad":19924,"sponsor":"Banrisul","marca":"19treze (Club manufactured kit)","temporada":"2020 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1283248039"},
     2021: {"estadio":"Alfredo Jaconi","capacidad":19924,"sponsor":"Banrisul","marca":"19treze (club manufactured kit)","temporada":"2021 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375901035"},
   },
-  'mirassol': {
+  'mirassol-br': {
     2024: {"estadio":"Campos Maia","capacidad":15000,"sponsor":"Guaraná Poty, Bet7k","marca":"Athleta","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
   },
   'novorizontino-br': {

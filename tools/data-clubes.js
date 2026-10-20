@@ -8,10 +8,10 @@
 // USO (CommonJS y ESM):
 //   const { rutaData, archivosData, idDeArchivo } = require('./data-clubes.js');
 //   import { rutaData, archivosData, idDeArchivo } from './data-clubes.js';
-//   rutaData('boca')                        -> 'data/ar/boca-data.js' (relativa a la raíz del repo)
+//   rutaData('boca-ar')                        -> 'data/ar/boca-ar-data.js' (relativa a la raíz del repo)
 //   rutaData('nuevo-xx', { pais: 'XX' })    -> para un alta, cuando el club todavía no está en clubs.js
 //   archivosData()                          -> todos los data files de club, ordenados por nombre de archivo (el orden de siempre)
-//   idDeArchivo('data/ar/boca-data.js')     -> 'boca'
+//   idDeArchivo('data/ar/boca-ar-data.js')     -> 'boca-ar'
 // ============================================================================
 'use strict';
 const fs = require('fs');
@@ -34,8 +34,21 @@ function paisDe(clubId) {
   return paises[clubId] || null;
 }
 
+// Los ids viejos (to-do 246) y a qué id apuntan hoy: data/club-aliases.js. Un `--club boca` de memoria sigue andando y avisa.
+let aliases = null;
+function normalizarId(id, { avisar = true } = {}) {
+  if (!aliases) {
+    aliases = {};
+    try { aliases = JSON.parse(fs.readFileSync(path.join(DATA, 'club-aliases.js'), 'utf8').match(/CLUB_ALIASES\s*=\s*(\{[\s\S]*?\});/)[1]); } catch (e) { /* sin mapa: ningún alias */ }
+  }
+  if (!Object.prototype.hasOwnProperty.call(aliases, id)) return id;
+  if (avisar) console.warn(`[ids] '${id}' es un id viejo: usá '${aliases[id]}'`);
+  return aliases[id];
+}
+
 // Un club que no está en clubs.js (y sin `pais`) devuelve la ruta plana, que no existe: un existsSync da false, que es lo correcto.
 function rutaData(clubId, { pais } = {}) {
+  clubId = normalizarId(clubId);
   const p = (pais || '').toLowerCase() || paisDe(clubId);
   return p ? `data/${p}/${clubId}-data.js` : `data/${clubId}-data.js`;
 }
@@ -62,3 +75,4 @@ exports.rutaData = rutaData;
 exports.archivosData = archivosData;
 exports.idDeArchivo = idDeArchivo;
 exports.paisDe = paisDe;
+exports.normalizarId = normalizarId;

@@ -51,7 +51,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": null
   }
  },
- "argentinosjuniors": {
+ "argentinosjuniors-ar": {
   "2016": {
    "auditor": {
     "nombre": "Rodolfo Jorge Brizi",
@@ -115,7 +115,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "boca": {
+ "boca-ar": {
   "2022": {
    "auditor": {
     "nombre": "Becher y Asociados S.R.L.",
@@ -153,7 +153,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "estudianteslp": {
+ "estudianteslp-ar": {
   "2022": {
    "auditor": {
     "nombre": "BECHER Y ASOCIADOS S.R.L.",
@@ -281,7 +281,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "independiente": {
+ "independiente-ar": {
   "2024": {
    "auditor": {
     "nombre": "Walter Hugo Rivero",
@@ -307,7 +307,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "instituto": {
+ "instituto-ar": {
   "2024": {
    "auditor": null,
    "dictamen": "sin_informe",
@@ -355,7 +355,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "racing": {
+ "racing-ar": {
   "2009": {
    "auditor": null,
    "dictamen": "sin_informe",
@@ -495,7 +495,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "river": {
+ "river-ar": {
   "2021": {
    "auditor": {
     "nombre": "Adler, Hasenclever & Asociados S.R.L.",
@@ -509,7 +509,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "rosariocentral": {
+ "rosariocentral-ar": {
   "2023": {
    "auditor": {
     "nombre": "Grant Thornton",
@@ -536,7 +536,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "sanlorenzo": {
+ "sanlorenzo-ar": {
   "2013": {
    "auditor": {
     "nombre": "Bertora & Asociados",
@@ -606,7 +606,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": null
   }
  },
- "union": {
+ "union-ar": {
   "2022": {
    "auditor": null,
    "dictamen": "sin_informe",
@@ -650,7 +650,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "velez": {
+ "velez-ar": {
   "2015": {
    "auditor": {
     "nombre": "Bértora & Asociados",

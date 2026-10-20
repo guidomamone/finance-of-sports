@@ -363,7 +363,7 @@ Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglate
 
 ```text
 mancityGbPresupuestoOverlayByYear: sin presupuesto oficial cargado (solo hay balances
-auditados), vacío por ahora, mismo mecanismo que el resto de los clubes (ver data/ar/river-data.js).
+auditados), vacío por ahora, mismo mecanismo que el resto de los clubes (ver data/ar/river-ar-data.js).
 ```
 
 ### mancityGbPasesData

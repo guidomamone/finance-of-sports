@@ -177,7 +177,7 @@ window.GRUPOS = {
   },
   "clubes": [
    {
-    "clubId": "botafogo",
+    "clubId": "botafogo-br",
     "nombre": "Sociedade Anônima de Futebol Botafogo",
     "pais": "BR",
     "control": true,
@@ -229,7 +229,7 @@ window.GRUPOS = {
    }
   ],
   "ingresos": {
-   "botafogo": {
+   "botafogo-br": {
     "2023": 110.98,
     "2024": 107.34,
     "2025": 247.129

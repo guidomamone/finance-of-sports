@@ -989,9 +989,9 @@ que mantener sincronizadas).
 
 Ejemplo actual: `Clubes/Argentina/Boca/`, `Clubes/Argentina/River/`,
 `Clubes/Argentina/Racing/`. País y club van CAPITALIZADOS (`Argentina`,
-`Boca`, `River`, `Racing` — no `argentina`/`boca` en minúscula). Ojo: esto es
+`Boca`, `River`, `Racing` — no `argentina`/`boca-ar` en minúscula). Ojo: esto es
 distinto del criterio que sigue usando el CÓDIGO del sitio para los
-`clubId` (`boca`, `river`, `racing`, siempre en minúscula) — son dos
+`clubId` (`boca-ar`, `river-ar`, `racing-ar`, siempre en minúscula) — son dos
 convenciones separadas a propósito, una para carpetas (legible para Guido en
 Finder), otra para identificadores internos (consistente con el resto del
 código). Si en el futuro se agrega un club de otro país (ej. Flamengo,
@@ -1103,7 +1103,7 @@ justamente el dato suelto que capaz hace falta en una sesión futura.
 
 Una vez que el `.md` está armado, se usa ESE archivo (no el PDF) para extraer
 los datos que se vayan a cargar a `<club>RevenueLinesByYear`/
-`<club>ExpenseLinesByYear`/etc. (ver `data/ar/river-data.js` para el shape, el
+`<club>ExpenseLinesByYear`/etc. (ver `data/ar/river-ar-data.js` para el shape, el
 mismo que usan todos los clubes incluida Boca desde la Versión 102), y para
 cualquier experimentación de formato que pida Guido más adelante sobre ese
 mismo documento.

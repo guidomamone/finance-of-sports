@@ -1,7 +1,7 @@
 // Generado por tools/auditoria.mjs desde Admin/registros/auditoria.jsonl. No editar a mano.
 window.CLUB_AUDITORIA = window.CLUB_AUDITORIA || {};
 Object.assign(window.CLUB_AUDITORIA, {
- "clubamerica": {
+ "clubamerica-mx": {
   "2025": {
    "auditor": {
     "nombre": "KPMG",

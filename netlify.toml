@@ -69,3 +69,497 @@
     echo "paginas de fuentes que SI se publican: $(ls fuentes/*.html 2>/dev/null | wc -l)"
     true
   """
+
+# ids-alias:inicio (lo escribe tools/renombrar-ids.mjs; no editar a mano)
+[[redirects]]
+  from = "/fuentes/argentinosjuniors.html"
+  to = "/fuentes/argentinosjuniors-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/argentinosjuniors"
+  to = "/fuentes/argentinosjuniors-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/athleticclub.html"
+  to = "/fuentes/athleticclub-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/athleticclub"
+  to = "/fuentes/athleticclub-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/atleticogoianiense.html"
+  to = "/fuentes/atleticogoianiense-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/atleticogoianiense"
+  to = "/fuentes/atleticogoianiense-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/atleticomadrid.html"
+  to = "/fuentes/atleticomadrid-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/atleticomadrid"
+  to = "/fuentes/atleticomadrid-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/boca.html"
+  to = "/fuentes/boca-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/boca"
+  to = "/fuentes/boca-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/botafogo.html"
+  to = "/fuentes/botafogo-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/botafogo"
+  to = "/fuentes/botafogo-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/celtavigo.html"
+  to = "/fuentes/celtavigo-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/celtavigo"
+  to = "/fuentes/celtavigo-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/cerezoosaka.html"
+  to = "/fuentes/cerezoosaka-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/cerezoosaka"
+  to = "/fuentes/cerezoosaka-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/clubamerica.html"
+  to = "/fuentes/clubamerica-mx.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/clubamerica"
+  to = "/fuentes/clubamerica-mx.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/coritiba.html"
+  to = "/fuentes/coritiba-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/coritiba"
+  to = "/fuentes/coritiba-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/cruzeiro.html"
+  to = "/fuentes/cruzeiro-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/cruzeiro"
+  to = "/fuentes/cruzeiro-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/deportivoalaves.html"
+  to = "/fuentes/deportivoalaves-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/deportivoalaves"
+  to = "/fuentes/deportivoalaves-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/envigado.html"
+  to = "/fuentes/envigado-co.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/envigado"
+  to = "/fuentes/envigado-co.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/estudianteslp.html"
+  to = "/fuentes/estudianteslp-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/estudianteslp"
+  to = "/fuentes/estudianteslp-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/fcbarcelona.html"
+  to = "/fuentes/fcbarcelona-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/fcbarcelona"
+  to = "/fuentes/fcbarcelona-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/fctokyo.html"
+  to = "/fuentes/fctokyo-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/fctokyo"
+  to = "/fuentes/fctokyo-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/gambaosaka.html"
+  to = "/fuentes/gambaosaka-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/gambaosaka"
+  to = "/fuentes/gambaosaka-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/gremio.html"
+  to = "/fuentes/gremio-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/gremio"
+  to = "/fuentes/gremio-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/independiente.html"
+  to = "/fuentes/independiente-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/independiente"
+  to = "/fuentes/independiente-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/instituto.html"
+  to = "/fuentes/instituto-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/instituto"
+  to = "/fuentes/instituto-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/ituano.html"
+  to = "/fuentes/ituano-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/ituano"
+  to = "/fuentes/ituano-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/kashimaantlers.html"
+  to = "/fuentes/kashimaantlers-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/kashimaantlers"
+  to = "/fuentes/kashimaantlers-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/kawasakifrontale.html"
+  to = "/fuentes/kawasakifrontale-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/kawasakifrontale"
+  to = "/fuentes/kawasakifrontale-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/mirassol.html"
+  to = "/fuentes/mirassol-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/mirassol"
+  to = "/fuentes/mirassol-br.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/nagoyagrampus.html"
+  to = "/fuentes/nagoyagrampus-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/nagoyagrampus"
+  to = "/fuentes/nagoyagrampus-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/oncecaldas.html"
+  to = "/fuentes/oncecaldas-co.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/oncecaldas"
+  to = "/fuentes/oncecaldas-co.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/racing.html"
+  to = "/fuentes/racing-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/racing"
+  to = "/fuentes/racing-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/realbetis.html"
+  to = "/fuentes/realbetis-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/realbetis"
+  to = "/fuentes/realbetis-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/realmadrid.html"
+  to = "/fuentes/realmadrid-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/realmadrid"
+  to = "/fuentes/realmadrid-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/river.html"
+  to = "/fuentes/river-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/river"
+  to = "/fuentes/river-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/rosariocentral.html"
+  to = "/fuentes/rosariocentral-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/rosariocentral"
+  to = "/fuentes/rosariocentral-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/sanfreccehiroshima.html"
+  to = "/fuentes/sanfreccehiroshima-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/sanfreccehiroshima"
+  to = "/fuentes/sanfreccehiroshima-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/sanlorenzo.html"
+  to = "/fuentes/sanlorenzo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/sanlorenzo"
+  to = "/fuentes/sanlorenzo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/sevillafc.html"
+  to = "/fuentes/sevillafc-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/sevillafc"
+  to = "/fuentes/sevillafc-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/union.html"
+  to = "/fuentes/union-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/union"
+  to = "/fuentes/union-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/urawareddiamonds.html"
+  to = "/fuentes/urawareddiamonds-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/urawareddiamonds"
+  to = "/fuentes/urawareddiamonds-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/valenciacf.html"
+  to = "/fuentes/valenciacf-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/valenciacf"
+  to = "/fuentes/valenciacf-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/velez.html"
+  to = "/fuentes/velez-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/velez"
+  to = "/fuentes/velez-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/villarrealcf.html"
+  to = "/fuentes/villarrealcf-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/villarrealcf"
+  to = "/fuentes/villarrealcf-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/visselkobe.html"
+  to = "/fuentes/visselkobe-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/visselkobe"
+  to = "/fuentes/visselkobe-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/yokohamafmarinos.html"
+  to = "/fuentes/yokohamafmarinos-jp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fuentes/yokohamafmarinos"
+  to = "/fuentes/yokohamafmarinos-jp.html"
+  status = 301
+  force = true
+# ids-alias:fin

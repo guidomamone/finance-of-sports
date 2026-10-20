@@ -7,7 +7,7 @@ se verificó). El modelo de monedas y tipos de cambio: `Admin/ARQUITECTURA.md`, 
 ## Antes de 'ARS@2015-06-30' (y las que siguen)
 
 ```text
-Las 5 de abajo vivían escritas a mano en data/ar/argentinosjuniors-data.js (to-do 21(b),
+Las 5 de abajo vivían escritas a mano en data/ar/argentinosjuniors-ar-data.js (to-do 21(b),
 movidas el 2026-09-20). Son la MISMA serie que la de 2014 de arriba — dólar vendedor BNA de
 cierre, investigada en datos.gob.ar/series — así que su lugar es acá y no adentro de un club.
 ANTES DE MOVERLAS SE CONFIRMÓ QUE DE VERDAD SON DE MERCADO, que es lo que el to-do pedía: los

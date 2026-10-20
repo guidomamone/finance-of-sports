@@ -72,7 +72,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "envigado": {
+ "envigado-co": {
   "2025": {
    "auditor": {
     "nombre": "Grant Thornton",
@@ -208,7 +208,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
- "oncecaldas": {
+ "oncecaldas-co": {
   "2022": {
    "auditor": {
     "nombre": "Asesorías y Soluciones Contables S.A.S.",

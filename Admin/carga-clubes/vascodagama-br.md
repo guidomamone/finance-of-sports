@@ -195,7 +195,7 @@ PDF oficial (texto nativo, 82 páginas), auditado por Grant Thornton Auditores I
 ### window.CLUB_GENERIC_DATA
 
 ```text
-Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Versión 95).
+Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-ar-data.js, Versión 95).
 ```
 
 ### gestionesByClub['vascodagama-br']

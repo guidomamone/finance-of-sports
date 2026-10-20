@@ -3,7 +3,7 @@
 // No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
-  'clubamerica': {
+  'clubamerica-mx': {
     2025: {"estadio":"Estadio Ciudad de los Deportes","capacidad":34253,"sponsor":"Caliente","marca":"Adidas","temporada":"2025–26 Liga MX season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378733146"},
   },
 });

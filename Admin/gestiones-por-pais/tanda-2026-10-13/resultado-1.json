@@ -3,7 +3,7 @@
   "BR": "En las SAF/sociedades se cargó al dueño si es persona con nombre (Textor en Botafogo, Ronaldo y luego Pedro Lourenço en Cruzeiro) y, si el dueño es empresa o fondo (Treecorp en Coritiba, 777 en Vasco, Red Bull en Bragantino) o la asociación misma (América, Fortaleza), al presidente del Conselho de Administração; en los clubes asociativos (Mirassol, Ituano, Ponte Preta, Ceará, Sport) al presidente del club. Atlético Goianiense: Adson Batista, presidente del consejo de la SAF y diretor presidente. Precedente en data/gestiones/br.js: Atlético Mineiro y Bahia usan al ejecutivo (CEO/diretor presidente) de la SAF; aquí se siguió la regla de las instrucciones, a decidir por Guido si se unifica."
  },
  "clubes": {
-  "botafogo": {
+  "botafogo-br": {
    "gestiones": [
     {
      "nombre": "John Textor",
@@ -29,7 +29,7 @@
     "No se encontró fuente primaria (botafogo.com.br) con la fecha del 3-mar-2022; la fecha sale de resúmenes de prensa del comunicado oficial."
    ]
   },
-  "cruzeiro": {
+  "cruzeiro-br": {
    "gestiones": [
     {
      "nombre": "Ronaldo Nazário",
@@ -66,7 +66,7 @@
     "Ronaldo siguió en el Conselho de Administração tras vender (aparece en los balances 2024 y 2025); no se carga como gestión."
    ]
   },
-  "mirassol": {
+  "mirassol-br": {
    "gestiones": [
     {
      "nombre": "Edson Antonio Ermenegildo",
@@ -88,7 +88,7 @@
     "El año 1995 es de Wikipedia; otras notas de prensa dicen '30 años al mando' (coherente). Falta el día/mes de asunción."
    ]
   },
-  "ituano": {
+  "ituano-br": {
    "gestiones": [
     {
      "nombre": "João Paulo Ruiz",
@@ -111,7 +111,7 @@
     "No se verificó que siga en el cargo hoy (mandato hasta 2026): hasta:null asume que sí."
    ]
   },
-  "coritiba": {
+  "coritiba-br": {
    "gestiones": [
     {
      "nombre": "Bruno Levi D'Ancona",
@@ -137,7 +137,7 @@
     "Wikipedia pt lista a Marianna Libano como presidenta del club asociativo desde 2025 (chapa electa 27-12-2024, posse 6-01-2025); la asociación solo tiene el 10% y una silla."
    ]
   },
-  "atleticogoianiense": {
+  "atleticogoianiense-br": {
    "gestiones": [
     {
      "nombre": "Adson José Batista",

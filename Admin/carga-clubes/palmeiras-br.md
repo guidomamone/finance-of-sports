@@ -238,7 +238,7 @@ PDF oficial (texto nativo), mesmo canal que o de 2024, mesma estrutura de DRE em
 ### window.CLUB_GENERIC_DATA
 
 ```text
-Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-data.js, Versión 95).
+Registro en CLUB_GENERIC_DATA (ver comentario completo en instituto-ar-data.js, Versión 95).
 ```
 
 ### gestionesByClub['palmeiras-br']

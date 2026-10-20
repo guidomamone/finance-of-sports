@@ -23,7 +23,7 @@ Ambos son balances auditados reales (Crowe U.K. LLP), no presupuestos.
 
 amountNative en millones de GBP nativos (moneda NUEVA para el sitio, GBP no existe todavía en
 data/currency-map.js — no se agrega acá, es tarea de otra sesión/otro archivo). revenue positivo,
-expense NEGATIVO, mismo criterio que river-data.js/racing-data.js.
+expense NEGATIVO, mismo criterio que river-ar-data.js/racing-ar-data.js.
 
 GANANCIA POR VENTA DE JUGADORES: el P&L de Everton (Consolidated Profit and Loss Account) NO
 desglosa ingreso bruto por transferencias y costo bruto por separado, solo reporta un renglón

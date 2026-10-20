@@ -26,7 +26,7 @@
       ejercicio anterior sí trae los estados primarios completos, serviría para validar el criterio
       que se usó en 2025.
 - Contacto: siis.ia.supersociedades.gov.co (NIT 890801447); oncecaldas.co.
-- **CARGADO al sitio (sesión 2026-09-13, Ejercicio 2025 únicamente)**: ver `data/co/oncecaldas-data.js`.
+- **CARGADO al sitio (sesión 2026-09-13, Ejercicio 2025 únicamente)**: ver `data/co/oncecaldas-co-data.js`.
   El PDF `estados-financieros-2025.pdf` (a pesar del nombre) son las NOTAS a los estados financieros
   (34 páginas), no incluye el Estado de Situación Financiera/Estado de Resultado Integral primario
   como tabla aparte. El resultado del ejercicio ($9.138,546 M COP) se confirmó triple dentro del

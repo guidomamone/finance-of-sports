@@ -30,7 +30,7 @@ dos fechas de cierre distintas (ver club-data-mapping SKILL.md sección 6.5).
 
 CIFRAS: el documento está en MILES de pesos chilenos (M$). Acá se guardan
 divididas por 1.000, en MILLONES de CLP nativos (mismo criterio que
-oncecaldas-data.js para COP).
+oncecaldas-co-data.js para COP).
 
 TIPO DE CAMBIO: ninguno de los 3 balances declara su propio tipo de cambio
 de cierre en un Anexo dedicado — se buscó explícito ("moneda extranjera"/

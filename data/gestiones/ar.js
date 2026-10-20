@@ -1,7 +1,7 @@
 window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
 
 Object.assign(window.CLUB_GESTIONES, {
-  racing: [
+  'racing-ar': [
     { nombre:'Rodolfo Molina', corto:'Molina', cargo:'Presidente', desde:'2008-12-21', hasta:'2011-12-27',
       fuente:'https://es.wikipedia.org/wiki/Anexo:Presidentes_del_Racing_Club', confirmada:true },
     { nombre:'Gastón Cogorno', corto:'Cogorno', cargo:'Presidente', desde:'2011-12-27', hasta:'2013-09-30',
@@ -11,7 +11,7 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Diego Milito', corto:'Milito', cargo:'Presidente', desde:'2024-12-19', hasta:null,
       fuente:'https://www.espn.com.ar/futbol/argentina/nota/_/id/14584260/diego-milito-asumio-como-nuevo-presidente-de-racing', confirmada:true },
   ],
-  boca: [
+  'boca-ar': [
     { nombre:'Daniel Angelici', corto:'Angelici', cargo:'Presidente', desde:'2011-12-14', hasta:'2019-12-19',
       fuente:'https://es.wikipedia.org/wiki/Anexo:Presidentes_del_Club_Atl%C3%A9tico_Boca_Juniors', confirmada:true },
     { nombre:'Jorge Amor Ameal', corto:'Ameal', cargo:'Presidente', desde:'2019-12-19', hasta:'2023-12-27',
@@ -25,7 +25,7 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Julio Cucchi', corto:'Cucchi', cargo:'Presidente', desde:'2021-11-01', hasta:null,
       fuente:'https://www.mundoascenso.com.ar/noticia/131208-cucchi-es-el-nuevo-presidente-de-almagro', confirmada:true },
   ],
-  argentinosjuniors: [
+  'argentinosjuniors-ar': [
     { nombre:'Luis Segura', corto:'Segura', cargo:'Presidente', desde:'2002-01-01', hasta:'2015-12-22',
       fuente:'https://es.wikipedia.org/wiki/Luis_Segura_(dirigente)', confirmada:true },
     { nombre:'Cristian Malaspina', corto:'Malaspina', cargo:'Presidente', desde:'2015-12-22', hasta:null,
@@ -55,11 +55,11 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'José Mansur', corto:'Mansur', cargo:'Presidente', desde:'2025-12-14', hasta:null,
       fuente:'https://es.wikipedia.org/wiki/Jos%C3%A9_Mansur', confirmada:true },
   ],
-  independiente: [
+  'independiente-ar': [
     { nombre:'Néstor Grindetti', corto:'Grindetti', cargo:'Presidente', desde:'2023-04-11', hasta:null,
       fuente:'https://www.espn.com.ar/futbol/argentina/nota/_/id/11888747/independiente-anuncio-que-grindetti-asume-como-nuevo-presidente-club-avellaneda-doman-renuncia', confirmada:true },
   ],
-  instituto: [
+  'instituto-ar': [
     { nombre:'Juan Manuel Cavagliatto', corto:'Cavagliatto', cargo:'Presidente', desde:'2021-05-03', hasta:null,
       fuente:'https://www.ellitoral.com/deportes/juan-manuel-cavagliatto-asumio-presidente-instituto-cordoba_0_cynbGg8IXh.html', confirmada:true },
   ],
@@ -73,7 +73,7 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Eduardo Bermúdez', corto:'Bermúdez', cargo:'Presidente', desde:'2016-06-21', hasta:'2021-09-20',
       fuente:'https://www.lacapital.com.ar/ovacion/eduardo-bermudez-asumio-como-presidente-newells-y-confirmo-la-continuidad-osella-n968017.html', confirmada:true },
   ],
-  river: [
+  'river-ar': [
     { nombre:"Rodolfo D'Onofrio", corto:"D'Onofrio", cargo:'Presidente', desde:'2013-12-17', hasta:'2021-12-14',
       fuente:'https://www.infobae.com/2013/12/17/1531459-empezo-una-nueva-era-river-rodolfo-donofrio-asumio-oficialmente-como-presidente-la-ausencia-daniel-passarella/', confirmada:true },
     { nombre:'Jorge Brito', corto:'Brito', cargo:'Presidente', desde:'2021-12-14', hasta:'2025-11-03',
@@ -81,11 +81,11 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Stéfano Di Carlo', corto:'Di Carlo', cargo:'Presidente', desde:'2025-11-03', hasta:null,
       fuente:'https://www.espn.com.ar/futbol/argentina/nota/_/id/15911322/stefano-di-carlo-asumio-como-presidente-de-river', confirmada:true },
   ],
-  rosariocentral: [
+  'rosariocentral-ar': [
     { nombre:'Gonzalo Belloso', corto:'Belloso', cargo:'Presidente', desde:'2022-12-18', hasta:null,
       fuente:'https://rosariocentral.com/noticia/gonzalo-belloso-nuevo-presidente-de-rosario-central/', confirmada:true },
   ],
-  sanlorenzo: [
+  'sanlorenzo-ar': [
     { nombre:'Carlos Abdo', corto:'Abdo', cargo:'Presidente', desde:'2010-12-28', hasta:'2012-08-01',
       fuente:'https://www.elesquiu.com/deportes/2010/12/12/carlos-abdo-electo-presidente-lorenzo-13093.html', confirmada:true },
     { nombre:'Matías Lammens', corto:'Lammens', cargo:'Presidente', desde:'2012-08-01', hasta:'2019-12-18',
@@ -101,11 +101,11 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Andrés Fassi', corto:'Fassi', cargo:'Presidente', desde:'2014-12-02', hasta:null,
       fuente:'https://es.wikipedia.org/wiki/Andr%C3%A9s_Fassi', confirmada:true },
   ],
-  union: [
+  'union-ar': [
     { nombre:'Luis Spahn', corto:'Spahn', cargo:'Presidente', desde:'2009-07-24', hasta:null,
       fuente:'https://www.ellitoral.com/actualidad-tatengue/luis-spahn-gano-elecciones-union-seguira-presidente_0_zgsXDMAYQl.html', confirmada:true },
   ],
-  velez: [
+  'velez-ar': [
     { nombre:'Raúl Gámez', corto:'Gámez', cargo:'Presidente', desde:'2014-11-26', hasta:'2017-11-21',
       fuente:'https://velez.com.ar/club/notas/2014/11/20/144542_', confirmada:true },
     { nombre:'Sergio Rapisarda', corto:'Rapisarda', cargo:'Presidente', desde:'2017-11-21', hasta:'2023-11-22',
@@ -113,7 +113,7 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Fabián Berlanga', corto:'Berlanga', cargo:'Presidente', desde:'2023-11-22', hasta:null,
       fuente:'https://velez.com.ar/club/notas/2023/11/22/231727_asumio-la-nueva-conduccion', confirmada:true },
   ],
-  estudianteslp: [
+  'estudianteslp-ar': [
     { nombre:'Martín Gorostegui', corto:'Gorostegui', cargo:'Presidente', desde:'2021-03-27', hasta:'2024-04-06',
       fuente:'https://es.wikipedia.org/wiki/Presidentes_del_Club_Estudiantes_de_La_Plata', confirmada:true },
     { nombre:'Juan Sebastián Verón', corto:'Verón', cargo:'Presidente', desde:'2024-04-06', hasta:null,

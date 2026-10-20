@@ -37,7 +37,7 @@
  },
  {
   "code": "signo-invertido",
-  "match": "cruzeiro 2024 ingreso \"Impostos e contribuições / Vendas canceladas\"",
+  "match": "cruzeiro-br 2024 ingreso \"Impostos e contribuições / Vendas canceladas\"",
   "motivo": "VERIFICADO (onboarding de Cruzeiro 2024, tanda de 20 transcripts, 2026-09-25). Deducción impresa por el propio documento (Nota 25) dentro de Receita operacional líquida, mismo tratamiento que el ejercicio 2025 ya cargado de este club. Tie-out exacto contra officialTotalRevenue."
  },
  {
@@ -57,27 +57,27 @@
  },
  {
   "code": "catchall-dominante",
-  "match": "coritiba 2023 Ingresos",
+  "match": "coritiba-br 2023 Ingresos",
   "motivo": "VERIFICADO (onboarding de Coritiba 2023, tanda de 20 transcripts, 2026-09-25). La línea dominante es la cesión del 20% de los derechos comerciales del Brasileirão a Liga Forte União (R$152M de R$216,65M), un ingreso extraordinario real sin categoría propia mejor disponible en la taxonomía hoy. Ver Admin/dudas-por-club.md y Admin/TODO.md."
  },
  {
   "code": "signo-invertido",
-  "match": "botafogo 2023 ingreso \"Deduções sobre a receita",
+  "match": "botafogo-br 2023 ingreso \"Deduções sobre a receita",
   "motivo": "VERIFICADO (onboarding de Botafogo(Rio) 2023, 2da tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos por el propio documento (Nota 16.9), mismo tratamiento que las deducciones ya aceptadas de otros clubes brasileños. Tie-out exacto contra officialTotalRevenue."
  },
  {
   "code": "signo-invertido",
-  "match": "botafogo 2025 ingreso \"Deduções sobre a receita",
+  "match": "botafogo-br 2025 ingreso \"Deduções sobre a receita",
   "motivo": "Mismo caso que 2023 de este club (ver entrada arriba)."
  },
  {
   "code": "signo-invertido",
-  "match": "cruzeiro 2022 ingreso \"Impostos e contribuições\"",
+  "match": "cruzeiro-br 2022 ingreso \"Impostos e contribuições\"",
   "motivo": "VERIFICADO (onboarding de Cruzeiro 2022, 2da tanda de 20 transcripts, 2026-09-25). Deducción fiscal impresa como línea negativa dentro de Ingresos, mismo tratamiento que 2024/2025 ya cargados de este club. Tie-out exacto."
  },
  {
   "code": "signo-invertido",
-  "match": "cruzeiro 2023 ingreso \"Impostos e contribuições\"",
+  "match": "cruzeiro-br 2023 ingreso \"Impostos e contribuições\"",
   "motivo": "Mismo caso que 2022 de este club (ver entrada arriba)."
  },
  {
@@ -97,7 +97,7 @@
  },
  {
   "code": "catchall-dominante",
-  "match": "cruzeiro 2023 Ingresos",
+  "match": "cruzeiro-br 2023 Ingresos",
   "motivo": "VERIFICADO (onboarding de Cruzeiro 2023, 2da tanda de 20 transcripts, 2026-09-25). Impulsado por un ingreso financiero/patrimonial extraordinario real (reducción de deuda de R$181.913 mil vía Plano de Recuperação Judicial del Cruzeiro Associação) y la venta de 20% de la participación en la LFU (R$192.780 mil) — ninguno tiene categoría de \"venta de intangible no-jugador\" mejor disponible hoy."
  },
  {
@@ -238,7 +238,7 @@
  {
   "code": "categoria-cruzada",
   "match": "atleticomineiro-br 2024 ingreso \"Custo de mercadorias e produtos",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Atlético Mineiro, 2026-09-24). El propio balance agrupa esta línea dentro de 'Deduções da receita' (costo de las camisetas vendidas, neteado contra el ingreso de merchandising), así que se cargó como línea negativa dentro de revenueLines usando 'admin_general_expense' (misma categoría que Botafogo usa para 'Custo venda de mercadoria', ver data/br/botafogo-data.js) — cruce de taxonomía intencional, monto inmaterial (0,2%-0,7% del revenue), no un error."
+  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (onboarding de Atlético Mineiro, 2026-09-24). El propio balance agrupa esta línea dentro de 'Deduções da receita' (costo de las camisetas vendidas, neteado contra el ingreso de merchandising), así que se cargó como línea negativa dentro de revenueLines usando 'admin_general_expense' (misma categoría que Botafogo usa para 'Custo venda de mercadoria', ver data/br/botafogo-br-data.js) — cruce de taxonomía intencional, monto inmaterial (0,2%-0,7% del revenue), no un error."
  },
  {
   "code": "categoria-cruzada",
@@ -367,57 +367,57 @@
  },
  {
   "code": "categoria-cruzada",
-  "match": "racing 2009 ingreso \"Desafectación de previsiones y provisiones (extraordinario)\"",
+  "match": "racing-ar 2009 ingreso \"Desafectación de previsiones y provisiones (extraordinario)\"",
   "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo el catch-all de Ingresos, que desde la Versión 189 se llama 'Otros ingresos' (antes 'Otras secciones deportivas y otros ingresos'). El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
  },
  {
   "code": "categoria-cruzada",
-  "match": "racing 2009 ingreso \"Condonaciones (extraordinario)\"",
+  "match": "racing-ar 2009 ingreso \"Condonaciones (extraordinario)\"",
   "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo el catch-all de Ingresos, que desde la Versión 189 se llama 'Otros ingresos' (antes 'Otras secciones deportivas y otros ingresos'). El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
  },
  {
   "code": "categoria-cruzada",
-  "match": "racing 2010 ingreso \"Desafectación de previsiones (extraordinario)\"",
+  "match": "racing-ar 2010 ingreso \"Desafectación de previsiones (extraordinario)\"",
   "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo el catch-all de Ingresos, que desde la Versión 189 se llama 'Otros ingresos' (antes 'Otras secciones deportivas y otros ingresos'). El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
  },
  {
   "code": "categoria-cruzada",
-  "match": "racing 2012 ingreso \"Desafectación de Previsiones y Provisiones (extraordinario)\"",
+  "match": "racing-ar 2012 ingreso \"Desafectación de Previsiones y Provisiones (extraordinario)\"",
   "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo el catch-all de Ingresos, que desde la Versión 189 se llama 'Otros ingresos' (antes 'Otras secciones deportivas y otros ingresos'). El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
  },
  {
   "code": "categoria-cruzada",
-  "match": "racing 2014 ingreso \"Desafectación de Previsiones y Provisiones (extraordinario)\"",
+  "match": "racing-ar 2014 ingreso \"Desafectación de Previsiones y Provisiones (extraordinario)\"",
   "motivo": "DECISIÓN DE GUIDO, 2026-09-20 (to-do 20(d), cerrado): estas líneas de INGRESO extraordinario de Racing se quedan en 'exceptional_items' aunque esa categoría sea de la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario con su propia fila en Formato simplificado— y se descartó. CONSECUENCIA ACEPTADA, que hay que saber antes de 'arreglarlo': en Formato simplificado estas líneas caen bajo el catch-all de Ingresos, que desde la Versión 189 se llama 'Otros ingresos' (antes 'Otras secciones deportivas y otros ingresos'). El total del ejercicio cierra igual (el motor las suma por su monto, no por su bucket) y Formato del club las muestra con su rawLabel textual, que dice '(extraordinario)'. NO recategorizar sin volver a preguntarle a Guido."
  },
  {
   "code": "balance-sin-pat",
-  "match": "clubamerica 2025",
-  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (to-do 20(a), 2026-09-20). Club América no publica balance propio: la controladora pública es Ollamani, que reporta un 'Segmento de Fútbol' bajo IFRS 8 agrupando al club (varonil y femenil) CON el Estadio Banorte. Ese segmento informa 'UTILIDAD DEL SEGMENTO', que NO es el resultado neto del club: no le imputa costos financieros ni impuestos. Cargar esos $43.911 M como officialPAT publicaría un 'Resultado neto' que ningún documento afirma — exactamente lo que este proyecto no hace. officialTotalExpenses SÍ se carga porque es una identidad aritmética exacta del segmento. El razonamiento completo está en la cabecera de data/mx/clubamerica-data.js."
+  "match": "clubamerica-mx 2025",
+  "motivo": "VERIFICADO CONTRA EL DOCUMENTO (to-do 20(a), 2026-09-20). Club América no publica balance propio: la controladora pública es Ollamani, que reporta un 'Segmento de Fútbol' bajo IFRS 8 agrupando al club (varonil y femenil) CON el Estadio Banorte. Ese segmento informa 'UTILIDAD DEL SEGMENTO', que NO es el resultado neto del club: no le imputa costos financieros ni impuestos. Cargar esos $43.911 M como officialPAT publicaría un 'Resultado neto' que ningún documento afirma — exactamente lo que este proyecto no hace. officialTotalExpenses SÍ se carga porque es una identidad aritmética exacta del segmento. El razonamiento completo está en la cabecera de data/mx/clubamerica-mx-data.js."
  },
  {
   "code": "signo-invertido",
-  "match": "botafogo 2024 ingreso \"Deduções sobre a receita",
+  "match": "botafogo-br 2024 ingreso \"Deduções sobre a receita",
   "motivo": "VERIFICADO contra Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.md (to-do 20(c), 2026-09-20). La DRE lo imprime como 'Deduções sobre a receita ... (55.051)', entre paréntesis, que es la notación contable brasilera para negativo. Es una deducción real sobre la receita bruta (impostos, direito de arena), no un signo dado vuelta."
  },
  {
   "code": "signo-invertido",
-  "match": "coritiba 2024 ingreso \"(-) Tributos sobre receitas",
+  "match": "coritiba-br 2024 ingreso \"(-) Tributos sobre receitas",
   "motivo": "VERIFICADO contra Clubes/Brasil/Coritiba/demonstracoes-financeiras-2024.md (to-do 20(c), 2026-09-20). Impreso '(3.501.142)' en dos lugares del documento (DRE y nota), entre paréntesis. Deducción real."
  },
  {
   "code": "signo-invertido",
-  "match": "cruzeiro 2025 ingreso \"Impostos e contribuições",
+  "match": "cruzeiro-br 2025 ingreso \"Impostos e contribuições",
   "motivo": "VERIFICADO contra Clubes/Brasil/Cruzeiro/informativo-financeiro-2025.md (to-do 20(c), 2026-09-20). Impreso '(-) Impostos e contribuições/ Vendas canceladas (49.669)': lleva el signo menos explícito ADEMÁS de los paréntesis. Deducción real."
  },
  {
   "code": "signo-invertido",
-  "match": "ituano 2024 ingreso \"(-) Impostos Incidentes",
+  "match": "ituano-br 2024 ingreso \"(-) Impostos Incidentes",
   "motivo": "VERIFICADO contra Clubes/Brasil/Ituano/relatorio-auditoria-2024.md (to-do 20(c), 2026-09-20). Impreso '(-) Impostos Incidentes s/ Vendas e Serviços (1.071.240,15)', con el menos explícito y entre paréntesis. Deducción real."
  },
  {
   "code": "signo-invertido",
-  "match": "envigado 2025 ingreso \"Devoluciones, rebajas y descuentos",
+  "match": "envigado-co 2025 ingreso \"Devoluciones, rebajas y descuentos",
   "motivo": "VERIFICADO POR ARITMÉTICA contra Clubes/Colombia/Envigado/estados-financieros-2025.md (to-do 20(c), 2026-09-20). ES EL ÚNICO DE LOS CINCO QUE NO TRAE PARÉNTESIS NI SIGNO: la nota de ingresos lista 'Devoluciones rebajas y descuentos 6.956.359.533' como un número positivo más de la lista. Se resolvió sumando la nota entera: los 17 rubros dan 43.845.339.915 y el 'Total Ingresos de actividades ordinarias' impreso es 36.888.980.382. La resta da EXACTO al peso (43.845.339.915 - 6.956.359.533 = 36.888.980.382); sumarlo se va 13.912.719.066 de largo. O sea que el documento lo imprime en positivo y lo resta en el total. La política contable de la Nota dice lo mismo: los ingresos se reconocen netos de 'rebajas, descuentos comerciales y similares'."
  },
  {
@@ -722,7 +722,7 @@
  },
  {
   "code": "outlier-liga",
-  "match": "botafogo 2025: 247.1 M USD contra una mediana de 9.6 M USD en BR (26×)",
+  "match": "botafogo-br 2025: 247.1 M USD contra una mediana de 9.6 M USD en BR (26×)",
   "motivo": "VERIFICADO contra la fuente (to-do 219, Claude 2026-10-13, subagente): La suma cargada da exacto lo impreso en miles de reales (columna Controladora). El monto es grande por R$733 M de venta de jugadores; es un club gigante contra una mediana que tiran para abajo los clubes chicos. Cita: Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.md l.1333-1351 'Valores expressos em milhares de reais': Receita Operacional 655.033, Deduções (81.027), Outras receitas operacionais 52.436, Receitas transações de direitos de atletas 733.361 → 1.359,803 M BRL (PTAX 5,5024)."
  },
  {

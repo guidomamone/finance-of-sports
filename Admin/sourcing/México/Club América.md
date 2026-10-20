@@ -75,12 +75,12 @@
 ## CARGADO al sitio (sesión de onboarding, ver Versión 107 en CHANGELOG.md/finance-of-sports-project.md)
 
 El Ejercicio 2025 (año calendario completo, 1/1/2025-31/12/2025) ya está cargado en
-`data/mx/clubamerica-data.js`, vía la Nota de Segmentos IFRS 8 del `reporte-financiero-ollamani-2025-auditado.pdf`
+`data/mx/clubamerica-mx-data.js`, vía la Nota de Segmentos IFRS 8 del `reporte-financiero-ollamani-2025-auditado.pdf`
 (transcripción de las páginas relevantes en `Clubes/México/Club América/segmento-futbol-2025.md`).
 Decisiones de mapeo (segment bundling con Estadio Banorte, `officialPAT` deliberadamente `null`
 porque la "utilidad de segmento" impresa NO es un PAT comparable, `grossDebt`/`cash` en 0/0 por
 ausencia de balance a nivel de segmento, discrepancia de tipo de cambio dentro del propio
-documento) documentadas en el comentario de cabecera de `data/mx/clubamerica-data.js` y en el registro
+documento) documentadas en el comentario de cabecera de `data/mx/clubamerica-mx-data.js` y en el registro
 narrativo completo de `finance-of-sports-project.md` (Versión 107).
 
 El Ejercicio 2024 (`reporte-financiero-ollamani-2024-auditado.pdf`, período inicial de 11 meses,

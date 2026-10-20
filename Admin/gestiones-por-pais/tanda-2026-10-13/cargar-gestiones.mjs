@@ -4,9 +4,9 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import * as EV from '../../../tools/evidencia-club.mjs';
 const [D] = process.argv.slice(2); const ESCRIBIR = process.argv.includes('--escribir');
-const HOLD = new Set(['americamineiro-br','coritiba','vascodagama-br','fortaleza-br','rbbragantino-br','ferroviaria-br','novorizontino-br','cuiaba-br',
+const HOLD = new Set(['americamineiro-br','coritiba-br','vascodagama-br','fortaleza-br','rbbragantino-br','ferroviaria-br','novorizontino-br','cuiaba-br',
   'lokomotivmoscow-ru','dynamomoscow-ru','baltikakaliningrad-ru','parinizhnynovgorod-ru','sochi-ru','rubinkazan-ru',
-  'koln-de','hamburgersv-de','rbleipzig-de','monchengladbach-de','clubamerica','alianzalima-pe']);
+  'koln-de','hamburgersv-de','rbleipzig-de','monchengladbach-de','clubamerica-mx','alianzalima-pe']);
 const q = (s) => "'" + String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'") + "'";
 const porPais = {}; const evid = []; const criterios = {}; let n = 0, clubes = 0;
 const iL = process.argv.indexOf('--lotes'); const LOTES = iL > 0 ? process.argv[iL + 1].split(',').map(Number) : [1, 2, 3, 4, 5, 6];

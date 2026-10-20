@@ -69,10 +69,7 @@
 // ----------------------------------------------------------------------------
 // id               slug del nombre de la carpeta + '-' + ISO2 del país (convención
 //                  de la Versión 129, `Admin/CONVENCIONES.md`: 'agf-dk',
-//                  'racingsantander-es'). `pregunta` si choca con un id existente o
-//                  si su base coincide con un id HEREDADO sin país ('racing',
-//                  'union'...): la convención dice que ESE es el momento de
-//                  renombrar el viejo, y eso lo decide Guido.
+//                  'racingsantander-es'). `pregunta` si choca con un id existente.
 // displayName      el nombre de la carpeta (que ya es el nombre corto legible que
 //                  eligió el sourcing), sin lo que vaya entre paréntesis.
 // name             el nombre LEGAL: se busca en el `.md` una línea con el nombre del
@@ -1039,7 +1036,6 @@ export function analizar(docArg, sitio, ov = {}) {
     const id = `${base}-${iso}`;
     if (!pais || !pais.iso2) r.campos.push(campo('id', id, 'slug del nombre de la carpeta + país', 'pregunta', { pregunta: pais && pais.pregunta ? pais.pregunta : `País "${paisCarpeta}" sin ISO2: ¿qué sufijo lleva el id?` }));
     else if (sitio.clubs[id]) r.campos.push(campo('id', id, 'slug del nombre de la carpeta + país', 'pregunta', { pregunta: `El id '${id}' ya existe en data/clubs.js (${sitio.clubs[id].name}) y ninguna señal dice que sea este club. ¿Es el mismo club (y la carpeta se llama distinto) o hace falta otro id?` }));
-    else if (sitio.clubs[base]) r.campos.push(campo('id', id, 'slug del nombre de la carpeta + país', 'pregunta', { pregunta: `El id base '${base}' es un id HEREDADO sin país (${sitio.clubs[base].name}, ${sitio.clubs[base].country}). Admin/CONVENCIONES.md (Versión 129): el día que entra un homónimo de otro país hay que renombrar el viejo a '${base}-${String(sitio.clubs[base].country).toLowerCase()}' (su archivo, su clubId y cada sourceId). ¿Se renombra ahora?` }));
     else r.campos.push(campo('id', id, `slug de "${displayName}" + '-${iso}' (convención de clubId, Admin/CONVENCIONES.md Versión 129)`));
     // name
     r.campos.push(decidirNombre(md, displayName, r.carpeta, r.pdf, { ov }));

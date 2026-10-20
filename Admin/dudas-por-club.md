@@ -65,7 +65,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   2026-09-26: no se encontró una línea equivalente para recategorizar.** El to-do (originado en
   `auditorias/2026-09-22-catchall-no-futbol.md` sección 4-i) lista a Estudiantes entre los 7 clubes
   con este concepto "escondido" en `youth_football`/`other_income`, pero la única línea de
-  `data/ar/estudianteslp-data.js` en `youth_football` es "Recursos fútbol infantil/amateur" — se revisó
+  `data/ar/estudianteslp-ar-data.js` en `youth_football` es "Recursos fútbol infantil/amateur" — se revisó
   el texto de los 4 balances (`Clubes/Argentina/Estudiantes LP/*.md`) y esa línea es ingreso
   operativo de la Escuela de Fútbol Infantil/divisiones amateur (aranceles, sponsors puntuales:
   "Mains Sponsors Futbol Infantil"), no cobros de FIFA training compensation/mecanismo de
@@ -83,11 +83,11 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   "desde 2015" (reelecto dic-2019, dic-2023), pero no se encontró el mes exacto de esa primera
   asunción. Si fue DESPUÉS del cierre del Ejercicio 2015 (30/6/2015), ese ejercicio en particular no
   debería caer bajo su gestión (se cargó con `gestionId:null` por las dudas, ver
-  `data/ar/argentinosjuniors-data.js`). A quién preguntarle: prensa institucional del club o
+  `data/ar/argentinosjuniors-ar-data.js`). A quién preguntarle: prensa institucional del club o
   argentinosjuniors.com.ar/institucional.
 - **El archivo "balance-2018-2019.pdf" del club es en realidad la Memoria narrativa completa**, sin
   una sola cifra de balance — el nombre del archivo no es fiable como indicador de contenido (mismo
-  hallazgo que ya tenía river-data.js). Por eso el Ejercicio 2019 sigue viniendo de la presentación
+  hallazgo que ya tenía river-ar-data.js). Por eso el Ejercicio 2019 sigue viniendo de la presentación
   de asamblea (ver duda de abajo), no de un balance auditado propio — si el club publica en el
   futuro el balance completo con Anexos de ese ejercicio, se podría re-cargar con detalle real.
 - **Ejercicio 2019 sin balance auditado propio para confirmar si sus cifras son nominales**: se
@@ -142,7 +142,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
 - **to-do 43 (unificar "derechos de formación/mecanismo de solidaridad" a `player_sales`), sesión
   2026-09-26: mismo caso que Estudiantes LP, no se encontró línea equivalente.** El to-do lista a
   Unión entre los 7 clubes con este concepto "escondido" en el catch-all, pero la única línea de
-  `data/ar/union-data.js` en `youth_football` es "Ingresos Fútbol Amateur" — revisando las memorias del
+  `data/ar/union-ar-data.js` en `youth_football` es "Ingresos Fútbol Amateur" — revisando las memorias del
   club (`Clubes/Argentina/Union/*.md`), el Departamento de Fútbol Amateur es la estructura de
   divisiones inferiores/pensión, y su línea de ingresos no tiene ninguna mención a mecanismo de
   solidaridad o derechos de formación por jugadores transferidos. De hecho Unión YA tiene una línea
@@ -175,7 +175,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
 - **Por qué "Estadio" y "Parque Santo Domingo" no tienen línea de INGRESO en el Anexo V este año**
   (ambos ejercicios, 2026 y 2025, muestran "-"), cuando el 120° Ejercicio (2023-24) sí tenía una
   línea real "Estadio (concesiones, no recaudación de partidos)" con plata (72,525021 M). Hipótesis
-  no confirmada (ver la evidencia en `Admin/carga-clubes/independiente.md`): esa recaudación podría estar
+  no confirmada (ver la evidencia en `Admin/carga-clubes/independiente-ar.md`): esa recaudación podría estar
   embebida este año dentro de "Publicidad y concesiones" del Anexo D (Fútbol Profesional) en vez de
   quedar como línea de departamento aparte — no se pudo confirmar con lo que dice el documento.
 
@@ -239,7 +239,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   disponible en las notas descargadas (no hay una línea de "ganancia extraordinaria" ni similar,
   pese a que la compañía sigue en un acuerdo de reestructuración de pasivos desde 2012, lo que
   sugiere que podría haber un ítem de este tipo no desglosado en el documento). Se cargó el club de
-  todos modos (ver `data/co/oncecaldas-data.js`, comentario de cabecera) usando el PAT confirmado como
+  todos modos (ver `data/co/oncecaldas-co-data.js`, comentario de cabecera) usando el PAT confirmado como
   ancla y despejando `tax` como residuo (pretax línea por línea menos PAT confirmado), documentado
   explícito en el código como una aproximación, no un número impreso. **Pregunta para el club/SIIS**:
   ¿qué explica la diferencia entre la "Utilidad contable" de la Nota 15 ($9.846,710 M) y la suma de
@@ -252,7 +252,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   impreso) — y la fila "IMPUESTO DE RENTA Y COMPLEMENTARIO" del documento contradice a su propio
   detalle: la fila resumen (en negrita) muestra **0**, pero la fila de detalle inmediatamente debajo
   muestra **1.761.301**. Se cargó igual usando el mismo método de residuo que 2025 (PAT confirmado
-  menos pretax línea por línea, ver `data/co/oncecaldas-data.js`). A diferencia de 2025, el PAT 2024
+  menos pretax línea por línea, ver `data/co/oncecaldas-co-data.js`). A diferencia de 2025, el PAT 2024
   ($4.112,260 M) NO está confirmado triple: sale de una sola fuente (Cuenta de Patrimonio, fila
   "Utilidad o pérdida del ejercicio") — el dictamen del revisor fiscal 2024 es una opinión limpia
   que no narra la cifra (a diferencia del de 2025). **Pregunta para el club/SIIS**: ¿por qué la Nota
@@ -273,7 +273,7 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   del resultado del ejercicio (receita R$ 59.339.448,33, despesas operacionais R$ 19.090.092,99,
   superávit R$ 4.143.614,12) sí cierran exacto entre sí y con el porcentaje de custos que el propio
   documento publica a 14 decimales, así que el ejercicio 2024 se cargó igual, solo sin patrimonio.
-  Ver `data/br/mirassol-data.js`.
+  Ver `data/br/mirassol-br-data.js`.
 - **Aparte, el documento tiene varios errores de redacción** que conviene tener en cuenta si alguien
   vuelve a leerlo: cifras cuya versión en letras no coincide con el número (el PL final
   R$ 30.267.600,99 está escrito en letras como el saldo inicial; las disponibilidades
@@ -1389,7 +1389,7 @@ completo? ¿un ejercicio normal set-2025/dic-2025 que implicaría un Ejercicio 1
 encontrado?). El acta de asamblea que lo aprueba está adjunta a la misma presentación
 (`acta-asamblea-estados-contables-cierre-2025-12-31.pdf`) y debería aclararlo. Ver
 `Admin/sourcing/Argentina/River.md` para el detalle completo del hallazgo. Responderla en la sesión que
-transcriba estos documentos, antes de mapear el ejercicio a `river-data.js` — no asumir el período
+transcriba estos documentos, antes de mapear el ejercicio a `river-ar-data.js` — no asumir el período
 sin leerlo.
 
 ## Sourcing de Europa del Este (sesión 2026-10-03): preguntas de mapeo y de clubes
