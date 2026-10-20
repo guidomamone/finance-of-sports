@@ -351,7 +351,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     rotadas, filas que no concilian), contra Tesseract y Mistral: una tabla "PDF difícil → motor → fidelidad contra los totales oficiales".
     No cambia nada del pipeline; si gana en algún caso, se diseña un escalón con el ok de Guido. Conectado con el costo de Mistral (298) y
     con los escaneos del 261.
-315. PROBAR CRAWL4AI PARA SOURCING (idea, 2026-10-19). Que un script baje en Markdown la lista de documentos de un portal de regulador
+315. PROBAR CRAWL4AI PARA SOURCING (idea, 2026-10-19; Guido, 2026-10-20: Bélgica y Noruega se listan con curl o la API, sin navegador; Crawl4AI
+    queda para el primer portal que solo funcione con navegador). Que un script baje en Markdown la lista de documentos de un portal de regulador
     (empezar por uno ya conocido, el belga o el noruego) y la compare con `Admin/ESTADO-clubes.md`. Mide si reemplaza navegar con el Browser
     pane (menos tokens: va con la regla de scripts antes que sesión). Va con las notas de `club-sourcing`.
 316. DETECTOR DE DOCUMENTOS NUEVOS (idea, 2026-10-19; optimiza el 252). Hoy `tools/ejercicios-nuevos.mjs` corre una vez por mes. Con Maxun o
