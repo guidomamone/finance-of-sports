@@ -269,7 +269,14 @@ Lo mismo vale para un primer ejercicio de MÁS de 12 meses (decisión de Guido, 
 y su primer cierre llega 14 a 18 meses después. Se carga como el año del cierre, con los importes tal cual (sin prorratear: el fútbol
 arranca con la temporada) y la misma nota. Casos: Anderlecht 2011 (24/02/2010 – 30/06/2011, 16 meses; vendió 39,1 M y en 2012, de 12
 meses, 67,9 M), RAAL La Louvière 2018, Sint-Truiden 2013 y Zulte Waregem 2012. Un cambio de cierre largo (Westerlo 2015, 01/01/2014 –
-30/06/2015) tiene importes del año anterior y no entra por esta regla.
+30/06/2015) tiene importes del año anterior y no entra por esta regla, sino por la siguiente.
+
+**Ejercicio de transición de más de 12 meses por cambio de cierre (votación, 2026-10-20, 2 a 1).** Un ejercicio largo que SÍ trae importes del
+año anterior, contiguo con el anterior y que contiene la temporada entera, se carga como el año del cierre, con los importes tal cual (sin
+prorratear: prorratear inventa un desglose mensual que el documento no trae) y `publicNote` con las fechas y los meses. Sin tope de meses: un
+tope contradiría a Anderlecht 2011 (16 meses) ya cargado, y ningún caso conocido pasa de 18. Casos: Westerlo 2015 (01/01/2014 – 30/06/2015,
+18 meses), Aston Villa 2023-24 (13 meses) y Wolves 2025 (01/06/2024 – 30/06/2025, 13 meses). Un tramo que deja afuera parte de la temporada
+sigue siendo parcial. La comparabilidad con un año de 12 meses la cubre la `publicNote`.
 
 **Ejercicio de 11 meses por cambio de cierre (decisión de Guido, 2026-10-15).** Cuando un club pasa el cierre de julio a junio, el ejercicio
 de transición (1 de agosto a 30 de junio, 11 meses) se carga como el año: contiene la temporada entera y no hay otro tramo que buscar. Casos:
