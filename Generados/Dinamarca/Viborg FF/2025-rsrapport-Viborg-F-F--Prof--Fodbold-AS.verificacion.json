@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf",
  "md": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md",
- "generado": "2026-10-19T17:54:10.133Z",
+ "generado": "2026-10-20T18:29:54.944Z",
  "estado": "ok",
  "clubId": "viborg-dk",
  "year": 2025,
@@ -21,6 +21,32 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf",
+   "campo": "fila",
+   "valor": "-15751691",
+   "linea": 1196,
+   "etiqueta": "Amortisation during the year (player registrations)",
+   "lado": "gasto",
+   "reemplaza": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment",
+   "motivo": "Se parte 'Af- og nedskrivninger' (18.375.737, L892) según la regla de CONVENCIONES-DATOS: amortización de pases (L1196) a player_amortisation y bienes de uso (L1225: 10.732 + 1.615.226 + 998.088 = 2.624.046) a depreciation; el total no cambia",
+   "evidencia": ".md L892, L1196, L1225",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf",
+   "campo": "fila",
+   "valor": "-2624046",
+   "linea": 1225,
+   "etiqueta": "Depreciation during the year (property, plant and equipment)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Parte de 'Af- og nedskrivninger' (15.751.691 + 2.624.046 = 18.375.737): depreciación de bienes de uso (L1225)",
+   "evidencia": ".md L892, L1225",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
   }
  ],
  "cola": [],
@@ -47,7 +73,10 @@
    "detalle": "la columna 2024 de este documento suma ingresos 132.695911; el sitio tiene 132.695911"
   }
  ],
- "notas": [],
+ "notas": [
+  "ajuste manual: fila \"Amortisation during the year (player registrations)\" (gasto) -15751691, en lugar de \"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment\" (2026-10-20, Se parte 'Af- og nedskrivninger' (18.375.737, L892) según la regla de CONVENCIONES-DATOS: amortización de pases (L1196) a player_amortisation y bienes de uso (L1225: 10.732 + 1.615.226 + 998.088 = 2.624.046) a depreciation; el total no cambia)",
+  "ajuste manual: fila \"Depreciation during the year (property, plant and equipment)\" (gasto) -2624046 (2026-10-20, Parte de 'Af- og nedskrivninger' (15.751.691 + 2.624.046 = 18.375.737): depreciación de bienes de uso (L1225))"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
@@ -127,20 +156,28 @@
    "origen": "nota que desglosa \"Personaleomkostninger Staff costs\""
   },
   {
-   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment",
-   "lado": "gasto",
-   "M": 18.375737,
-   "pagina": 23,
-   "linea": 892,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Andre driftsomkostninger Other operating expenses",
    "lado": "gasto",
    "M": 1.299319,
    "pagina": 23,
    "linea": 893,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation during the year (player registrations)",
+   "lado": "gasto",
+   "M": 15.751691,
+   "pagina": 31,
+   "linea": 1196,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Depreciation during the year (property, plant and equipment)",
+   "lado": "gasto",
+   "M": 2.624046,
+   "pagina": 32,
+   "linea": 1225,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

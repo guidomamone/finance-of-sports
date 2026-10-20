@@ -29,8 +29,9 @@ const viborgdkExpenseLinesByYear = {
     { rawLabel:'Pensioner', normalizedCategory:'wages_squad', amountNative:-3.886859, disclosureLevel:'aggregated' },
     { rawLabel:'Andre omkostninger til social sikring', normalizedCategory:'wages_squad', amountNative:-0.356202, disclosureLevel:'aggregated' },
     { rawLabel:'Andre personaleomkostninger', normalizedCategory:'wages_squad', amountNative:-3.561998, disclosureLevel:'aggregated' },
-    { rawLabel:'Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment', normalizedCategory:'player_amortisation', amountNative:-18.375737, disclosureLevel:'aggregated' },
     { rawLabel:'Andre driftsomkostninger Other operating expenses', normalizedCategory:'other_expenses', amountNative:-1.299319, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation during the year (player registrations)', normalizedCategory:'player_amortisation', amountNative:-15.751691, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation during the year (property, plant and equipment)', normalizedCategory:'depreciation', amountNative:-2.624046, disclosureLevel:'aggregated' },
   ],
 };
 

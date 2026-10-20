@@ -46,7 +46,8 @@ const silkeborgdkExpenseLinesByYear = {
     { rawLabel:'Wages and salaries', normalizedCategory:'wages_squad', amountNative:-48.332, disclosureLevel:'aggregated' },
     { rawLabel:'Pension costs', normalizedCategory:'wages_squad', amountNative:-2.078, disclosureLevel:'aggregated' },
     { rawLabel:'Other social security costs', normalizedCategory:'wages_squad', amountNative:-0.685, disclosureLevel:'aggregated' },
-    { rawLabel:'Depreciation, amortisation and impairment losses', normalizedCategory:'player_amortisation', amountNative:-12.67, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of intangible assets (player registrations)', normalizedCategory:'player_amortisation', amountNative:-6.502, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation of property, plant and equipment', normalizedCategory:'depreciation', amountNative:-6.168, disclosureLevel:'aggregated' },
   ],
 };
 

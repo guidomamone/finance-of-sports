@@ -113,7 +113,7 @@ grossDebt: no hay ninguna línea de préstamo bancario en el balance — los pas
 ### Ingresos
 
 ```text
-2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2025: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -139,19 +139,16 @@ Generados/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.catego
 | 2 | Wages and salaries | pág. 19, Claude 0.85 |
 | 3 | Pension costs | pág. 19, Jev 0.93 |
 | 4 | Other social security costs | pág. 19, Claude 0.85 |
-| 5 | Depreciation, amortisation and impairment losses | pág. 13, precedente |
+| 5 | Amortisation of intangible assets (player registrations) | pág. 20, precedente |
+| 6 | Depreciation of property, plant and equipment | pág. 20, precedente |
 
 ### Meta
 
 ```text
 2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): cierre = 2025-12-31. el informe dice 'Financial year: 01.01.2025- 31.12.2025' (.md línea 59)
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): dk-superliga, verificado contra roster cacheado de "2025–26 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia única por palabras "Silkeborg" = "Silkeborg IF".
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = -6502. Se parte 'Depreciation, amortisation and impairment losses' (12.670, L366) según la regla de CONVENCIONES-DATOS: amortización de pases (Note 10, L602) a player_amortisation y bienes de uso (Note 11, L616) a depreciation; el total no cambia
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = -6168. Parte de 'Depreciation, amortisation and impairment losses' (6.502 + 6.168 = 12.670): depreciación de bienes de uso (Note 11, L616)
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## 2024

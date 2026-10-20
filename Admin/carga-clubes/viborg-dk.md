@@ -181,7 +181,7 @@ gestionesByClub (mismo criterio que fckobenhavn-dk/anderlecht-be).
 ### Ingresos
 
 ```text
-2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2025: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -200,21 +200,18 @@ Generados/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.catego
 | 4 | Pensioner | pág. 30, Jev 0.95 |
 | 5 | Andre omkostninger til social sikring | pág. 30, Jev 0.92 |
 | 6 | Andre personaleomkostninger | pág. 30, precedente |
-| 7 | Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairments losses of intangible assets and property, plant and equipment | pág. 23, precedente |
-| 8 | Andre driftsomkostninger Other operating expenses | pág. 23, Jev 0.99 |
+| 7 | Andre driftsomkostninger Other operating expenses | pág. 23, Jev 0.99 |
+| 8 | Amortisation during the year (player registrations) | pág. 31, precedente |
+| 9 | Depreciation during the year (property, plant and equipment) | pág. 32, precedente |
 
 ### Meta
 
 ```text
 2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): cierre = 2025-06-30. el informe dice 'regnskabsåret 01.07.24 - 30.06.25' (.md línea 12)
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = -15751691. Se parte 'Af- og nedskrivninger' (18.375.737, L892) según la regla de CONVENCIONES-DATOS: amortización de pases (L1196) a player_amortisation y bienes de uso (L1225: 10.732 + 1.615.226 + 998.088 = 2.624.046) a depreciation; el total no cambia
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = -2624046. Parte de 'Af- og nedskrivninger' (15.751.691 + 2.624.046 = 18.375.737): depreciación de bienes de uso (L1225)
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): dk-superliga, verificado contra roster cacheado de "2024–25 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia única por palabras "Viborg" = "Viborg FF".
 ```
 
 ## 2024
