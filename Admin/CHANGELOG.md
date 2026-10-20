@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 856 — Molde 2008, 2010, 2011 y 2012 (2026-10-20) [261 · molde-no]
+
+- Merge de Onboarding 4: Molde FLI 2008 y 2010-2012 con sponsor `sin-fuente`. El Reino Unido del 261 queda cargado salvo la línea del auditor de Celtic.
+
 ## Versión 855 — Un número contestado con corregir queda confirmado (2026-10-20) [261 · molde-no]
 
 - `tools/verificar.mjs`: un caso `numero-no-confirmado` contestado con `corregir --valor` cuenta como confirmado (Molde FLI 2016 y 2024).
