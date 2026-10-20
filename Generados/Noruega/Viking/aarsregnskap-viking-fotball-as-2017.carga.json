@@ -1,17 +1,11 @@
 {
  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2017.pdf",
- "generado": "2026-10-20T19:49:38.475Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Tap ved salg av spillere\" -> player_impairment 0.4"
-  }
- ],
+ "generado": "2026-10-20T19:52:08.821Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-20: Viking Fotball AS presenta Konsernregnskap en 2017-2024 (con Viking Stadion AS, 100%, el estadio del club): mismo perímetro que el 2025 ya cargado (consolidado), coherencia de la serie (CONVENCIONES-DATOS, perímetro))",
-  "ingresos: ningún total impreso igual a la suma de las líneas (83.089378); queda la suma, verificada por el resultado del ejercicio",
-  "gastos: ningún total impreso igual a la suma de las líneas (-89.916217); queda la suma, verificada por el resultado del ejercicio",
-  "gestión: ningún presidente confirmado cubre 2017 (cierre 2017-12-31); pregunta en la cola (no frena)"
+  "gestión: ningún presidente confirmado cubre 2017 (cierre 2017-12-31); pregunta en la cola (no frena)",
+  "respuesta de la cola del otro lado: \"Tap ved salg av spillere\" (player_sales) se mudan sin cambiar su efecto y el resultado cierra con el impreso (to-do 237 f)"
  ],
  "ejercicio": {
   "clubId": "viking-no",
@@ -70,6 +64,16 @@
     "_fuenteCat": "categorias.json"
    },
    {
+    "rawLabel": "Tap ved salg av spillere",
+    "normalizedCategory": "player_sales",
+    "amountNative": -0.540816,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola (del otro lado: se muda sin cambiar su efecto, to-do 237 f)"
+   },
+   {
     "rawLabel": "Medieinntekter NTF",
     "normalizedCategory": "broadcasting",
     "amountNative": 11.013187,
@@ -81,16 +85,6 @@
    }
   ],
   "expenseLines": [
-   {
-    "rawLabel": "Tap ved salg av spillere",
-    "normalizedCategory": "player_impairment",
-    "amountNative": -0.540816,
-    "disclosureLevel": "aggregated",
-    "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
-   },
    {
     "rawLabel": "Varekostnad",
     "normalizedCategory": "other_expenses",
@@ -212,8 +206,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 83.089378,
-   "officialTotalExpenses": 89.916217,
+   "officialTotalRevenue": 82.548562,
+   "officialTotalExpenses": 89.375401,
    "officialPAT": -9.910906
   },
   "source": {
@@ -326,16 +320,16 @@
    "label": "Tap ved salg av spillere",
    "page": 30,
    "native": 0.540816,
-   "ladoDoc": "expense",
+   "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Netto gevinst ved salg av spillere\")",
-   "signoFijo": 0.540816,
-   "cat": "player_impairment",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "signoFijo": -0.540816,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola (del otro lado: se muda sin cambiar su efecto, to-do 237 f)",
    "enLista": true,
-   "enCola": true,
-   "destino": "expense",
+   "notaGuido": "Claude 2026-10-20: pérdida por venta de jugadores: resultado por venta de jugadores en player_sales (convención ya cargada de Leeds 2020-21)",
+   "destino": "revenue",
    "amountNative": -0.540816
   },
   {
@@ -537,28 +531,38 @@
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Netto gevinst ved salg av spillere\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Netto gevinst ved salg av spillere\")": "gastos con signo",
    "verificacion (nota que desglosa \"Lønnskostnad\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 83.089378,
-  "expSum": -89.916217,
-  "officialTotalRevenue": 83.089378,
-  "officialTotalExpenses": 89.916217,
+  "revSum": 82.548562,
+  "expSum": -89.375401,
+  "officialTotalRevenue": 82.548562,
+  "officialTotalExpenses": 89.375401,
   "officialPAT": -9.910906,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "por-resultado",
-   "gastos": "por-resultado"
+   "ingresos": "impreso",
+   "gastos": "impreso"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
    "pag": null,
    "M": -9.910906,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 82.548562
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 89.375401
   }
  },
  "liga": {
@@ -609,10 +613,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
-  "lineasIngreso": 6,
-  "lineasGasto": 10,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 7,
+  "lineasGasto": 9,
   "metaFilas": 4,
   "excluidas": 0
  }

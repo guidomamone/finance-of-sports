@@ -38,6 +38,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Intility Arena","capacidad":16556,"sponsor":"OBOS","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'viking-no': {
+    2017: {"estadio":"Viking Stadion","capacidad":16300,"sponsor":"Lyse","marca":"Diadora","temporada":"2017 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1332616218"},
     2018: {"estadio":"Viking Stadion","capacidad":15900,"temporada":"2018 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356915016"},
     2019: {"estadio":"Viking Stadion","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2019 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311013521"},
     2020: {"estadio":"Viking Stadion","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2020 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311013715"},
