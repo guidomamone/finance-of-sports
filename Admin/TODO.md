@@ -27,6 +27,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **A. Cerrar lo abierto (en marcha)**
 * 238 (solo lo gratis o de centavos; lo caro queda afuera por ahora): cargados Rapid Wien, Sporting 2008-10, Benfica 2014-15 y la tanda 1 de votaciones; falta aplicar los casos con precedente del triage (`Admin/registros/triage-*-2026-10-20.md`) y la tanda 2 de votaciones (Auditora); hecho eso, el 238 se cierra --> Onboarding 6 y Auditora
 
+* 331: Jev con país: decirle el país del club en el texto y elegir los ejemplos dando prioridad al mismo país y después al mismo idioma (hoy los elige solo por palabras en común y mezcla Argentina, España y Colombia) --> Pipeline 7
+
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
 * 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos)
@@ -203,3 +205,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    `Admin/Archive/`, HALLAZGOS, mediciones, dudas, registros, chats de sesiones) buscando tokens gastados en decidir o descubrir algo que
    después no llega a ningún lado: una decisión que no quedó como REGLA ni en un registro, un hallazgo que nadie vuelve a leer, una
    medición que no cambió nada. Proponer, para cada tipo, dónde tiene que quedar para que la próxima sesión no lo pague de nuevo.
+331. JEV CON PAÍS (pedido de Guido, 2026-10-20). `tools/jev-categorizar.mjs` le pasa a Jev el rubro, el id del club, la sección y 8
+   ejemplos elegidos solo por palabras en común: no le dice el país y los ejemplos mezclan países del mismo idioma (español: Argentina,
+   España, Colombia, Chile; portugués: Brasil y Portugal; alemán: Alemania, Austria y Suiza), donde la misma palabra puede ser otra cosa.
+   (a) el país en el texto; (b) ejemplos del mismo país primero, después del mismo idioma. Medir contra lo cargado; no cambia años cargados.
