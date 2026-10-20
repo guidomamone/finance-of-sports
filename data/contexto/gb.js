@@ -82,6 +82,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Elland Road","capacidad":37608,"sponsor":"Red Bull","marca":"Adidas","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
   'liverpool-gb': {
+    2022: {"estadio":"Anfield","capacidad":53394,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2024: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
