@@ -33,6 +33,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'stgallen-ch': {
     2019: {"estadio":"kybunpark","capacidad":19456,"sponsor":"St.Galler Kantonalbank","marca":"Jako","temporada":"2018–19 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374571783"},
+    2020: {"estadio":"Kybunpark","capacidad":19456,"sponsor":"St.Galler Kantonalbank","marca":"Jako","temporada":"2019–20 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1270002926","fuenteManual":"Geschäftsbericht FC St.Gallen 2019/20 (Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md, L27: \"unserem Hauptsponsor, der St.Galler Kantonalbank\")","manual":["sponsor"]},
     2021: {"estadio":"Kybunpark","capacidad":19456,"sponsor":"St.Galler Kantonalbank","marca":"Jako","temporada":"2020–21 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375823179"},
     2022: {"estadio":"Kybunpark","capacidad":19456,"sponsor":"St.Galler Kantonalbank","marca":"Jako","temporada":"2021–22 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376314426"},
     2023: {"estadio":"Kybunpark","capacidad":19455,"sponsor":"St.Galler Kantonalbank","marca":"Jako","temporada":"2022–23 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376915115"},

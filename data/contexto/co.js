@@ -37,7 +37,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Metropolitano Roberto Meléndez","capacidad":46692,"sponsor":"Olímpica, Águila, Tecnoglass","marca":"Adidas","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'llaneros-co': {
-    2025: {"estadio":"Bello Horizonte – Rey Pelé","capacidad":15000,"sponsor":"Maxi Cola","marca":"Aerosport","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356","fuenteManual":"https://en.wikipedia.org/wiki/2025_Categor%C3%ADa_Primera_A_season (tablas Stadia y Personnel and kits; sponsors de camiseta listados: Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta; se toma el primero)","manual":["estadio","capacidad","sponsor","marca"]},
+    2025: {"estadio":"Bello Horizonte – Rey Pelé","capacidad":15000,"sponsor":"Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta","marca":"Aerosport","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356","fuenteManual":"https://en.wikipedia.org/wiki/2025_Categor%C3%ADa_Primera_A_season (tablas Stadia y Personnel and kits; sponsors de camiseta listados: Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta)","manual":["estadio","capacidad","sponsor","marca"]},
   },
   'millonarios-co': {
     2025: {"estadio":"Nemesio Camacho El Campín","capacidad":39512,"sponsor":"Cerveza Andina","marca":"Adidas","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},

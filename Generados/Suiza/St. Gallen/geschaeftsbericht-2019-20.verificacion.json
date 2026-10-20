@@ -1,8 +1,9 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md",
- "generado": "2026-10-20T18:26:00.235Z",
- "estado": "cola",
+ "generado": "2026-10-20T19:57:47.461Z",
+ "scriptHuella": "1b9f223960d0",
+ "estado": "ok",
  "clubId": "stgallen-ch",
  "year": 2020,
  "escala": {
@@ -11,10 +12,21 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "3531cbd"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "la TV de la Swiss Football League está dentro de 'Diverse Erträge inklusive Swiss Football League' (4.785 mil CHF, L263), mezclada con otros ingresos; pregunta al club en dudas-por-club (Claude 2026-10-20, precedente 2025)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -39,8 +51,8 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": false,
-   "detalle": "la columna 2019 de este documento suma ingresos 28.41; el sitio tiene 34.815"
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 28.41; el sitio tiene 28.41"
   },
   {
    "nombre": "documento del año 2021",
@@ -62,7 +74,8 @@
   "\"Entschädigung von FCSG Event AG\" (L194) y \"Entschädigung an FCSG AG\" (L202) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2019-20.pdf",
   "duda de extraer ya contestada para el club (perimetro, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2023-24.pdf",
-  "duda de extraer que no afecta la carga: No hay renglón de TV explícito; los derechos SFL parecen estar dentro de L263."
+  "duda de extraer que no afecta la carga: No hay renglón de TV explícito; los derechos SFL parecen estar dentro de L263.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": true,

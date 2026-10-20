@@ -42,3 +42,9 @@ es consistente con un Geschäftsbericht completo, no un resumen.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2021 desde `Clubes/Suiza/St. Gallen/geschaeftsbericht-2020-21.pdf` (sourceId `stgallen-ch-geschaeftsbericht-2020-21`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2024 desde `Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.pdf` (sourceId `stgallen-ch-geschaeftsbericht-2023-24`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2019 desde `Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf` (sourceId `stgallen-ch-geschaeftsbericht-2018-19`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2022 desde `Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.pdf` (sourceId `stgallen-ch-geschaeftsbericht-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2020 desde `Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf` (sourceId `stgallen-ch-geschaeftsbericht-2019-20`).

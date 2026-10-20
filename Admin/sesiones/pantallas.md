@@ -131,3 +131,9 @@ Presupuesto US$ 10; gastado ~US$ 8,5 (Beşiktaş ~5,5, Colombia ~1,2, Westerlo y
 ### Qué deja de ser cierto en ESTADO
 
 - Turquía existe en el sitio (Beşiktaş, 13 años); Colombia suma Llaneros; St. Gallen tiene 2019, 2021-2025 menos 2020; Bélgica suma Westerlo 2015.
+
+### Onboarding 5, segunda tanda (2026-10-20)
+
+- St. Gallen 2019 y 2022 recargados con `--reemplazar` (sin la compensación intragrupo, 298 ai) y St. Gallen 2020 cargado (sponsor St.Galler Kantonalbank con fuente, L27 del informe). Patro Eisden 2013 y 2015 cargados con sponsor `sin-fuente` (2013 con liga null, 2015 con el caso anio-anterior aceptado: cambio de modelo abreviado a completo).
+- Gasto total de la sesión ~US$ 9. Sin hacer por presupuesto: Lierse Kempenzonen 2018-2021 (alta nueva, 7 casos en cola), La Louvière 2018-2024, Alianza y Tolima de Colombia.
+- Lotes 115 y 115b (St. Gallen), 116 y 116b (Patro, Lierse Kempenzonen).

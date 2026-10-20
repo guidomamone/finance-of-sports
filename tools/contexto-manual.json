@@ -402,7 +402,10 @@
   "patroeisden-be": {
     "2013": {
       "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen",
+      "sin-fuente": {
+        "sponsor": "Buscado el 2012-13: nl.wikipedia y en.wikipedia del club, en.wikipedia de la temporada (sin tabla de camisetas), búsqueda web general y kit archive (403): ninguna fuente nombra el sponsor de camiseta"
+      }
     },
     "2014": {
       "estadio": "Gemeentelijk Sportparkstadion",
@@ -410,7 +413,10 @@
     },
     "2015": {
       "estadio": "Gemeentelijk Sportparkstadion",
-      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen",
+      "sin-fuente": {
+        "sponsor": "Buscado el 2014-15: nl.wikipedia y en.wikipedia del club, en.wikipedia de la temporada (sin tabla de camisetas), búsqueda web general y kit archive (403): ninguna fuente nombra el sponsor de camiseta"
+      }
     },
     "2017": {
       "estadio": "Gemeentelijk Sportparkstadion",
@@ -535,6 +541,10 @@
     }
   },
   "stgallen-ch": {
+    "2020": {
+      "sponsor": "St.Galler Kantonalbank",
+      "fuente": "Geschäftsbericht FC St.Gallen 2019/20 (Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md, L27: \"unserem Hauptsponsor, der St.Galler Kantonalbank\")"
+    },
     "2024": {
       "estadio": "Kybunpark",
       "sponsor": "St.Galler Kantonalbank",
@@ -698,9 +708,9 @@
     "2025": {
       "estadio": "Bello Horizonte – Rey Pelé",
       "capacidad": 15000,
-      "sponsor": "Maxi Cola",
+      "sponsor": "Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta",
       "marca": "Aerosport",
-      "fuente": "https://en.wikipedia.org/wiki/2025_Categor%C3%ADa_Primera_A_season (tablas Stadia y Personnel and kits; sponsors de camiseta listados: Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta; se toma el primero)"
+      "fuente": "https://en.wikipedia.org/wiki/2025_Categor%C3%ADa_Primera_A_season (tablas Stadia y Personnel and kits; sponsors de camiseta listados: Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta)"
     }
   }
 }
