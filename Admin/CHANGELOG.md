@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 842 — Auditoría de código y documentos; lote 111 y 112 (2026-10-20)
+
+* Docs 1: auditoría de los ejes `codigo` y `docs` (sin P0; `auditAll()` OK en 313 clubes) e inventario de lo que cambia en skills y
+  documentos el día de la fase 2 del 245 (`Admin/mediciones/245-inventario-docs.md`). `ARQUITECTURA.md` al día.
+* Lotes 111 y 112: Manchester City 2022, Tottenham 2023, Fulham 2022, Leeds 2021, Liverpool 2023, Boyacá Chicó 2025 y Celtic 2021-2024.
+* `worktree.mjs mergear`: la rama `ligas` chocaba con la carpeta `Ligas/`.
+
 ## Versión 841 — Suiza, Bélgica y el alta de Turquía (2026-10-20)
 
 * Luzern 2023, St. Gallen 2021 y 2024, Lierse SK 2019, Patro Eisden 2014 y Lokeren-Temse 2021-2022. Turquía, país nuevo: alta de

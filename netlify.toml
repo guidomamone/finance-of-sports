@@ -24,7 +24,7 @@
 #
 # QUÉ NO HACE FALTA LISTAR: Netlify ya no publica archivos ni carpetas que
 # empiezan con punto, así que `.claude/skills/` (que sí está trackeado, con las
-# 98 menciones a Guido de los 6 skills) NUNCA estuvo publicado — verificado en
+# menciones a Guido de las skills) NUNCA estuvo publicado — verificado en
 # producción, devuelve 404. Tampoco hace falta listar los `*.pdf`, que siguen
 # fuera por `.gitignore` por peso, no por privacidad.
 #
