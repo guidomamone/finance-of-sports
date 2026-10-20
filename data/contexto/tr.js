@@ -4,8 +4,8 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'besiktas-tr': {
-    2006: {"temporada":"2005–06 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1282609643"},
-    2007: {"estadio":"BJK İnönü Stadium","capacidad":32086,"temporada":"2006–07 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344773066"},
+    2006: {"estadio":"BJK İnönü Stadium","capacidad":32086,"sponsor":"Turkcell","temporada":"2005–06 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1282609643","fuenteManual":"estadio y capacidad: https://en.wikipedia.org/wiki/2006%E2%80%9307_S%C3%BCper_Lig (tabla de estadios; mismo estadio en 2005-06); sponsor: Beşiktaş Futbol Yatırımları, balance 31.05.2006 (Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.md L1900: \"forma göğüs ve kol reklam sponsoru olan Turkcell\")","manual":["estadio","capacidad","sponsor"]},
+    2007: {"estadio":"BJK İnönü Stadium","capacidad":32086,"temporada":"2006–07 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344773066","sinFuente":{"sponsor":"Buscado el sponsor de camiseta 2006-07: en.wikipedia 2006-07 Süper Lig (sin tabla de camisetas), balance 31.05.2007 del club (sin mención del sponsor de camiseta): sin fuente"}},
     2008: {"estadio":"BJK İnönü Stadium","capacidad":32086,"sponsor":"Cola Turka","marca":"Umbro","temporada":"2007–08 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369095991"},
     2009: {"estadio":"BJK İnönü Stadium","capacidad":32086,"sponsor":"Cola Turka","marca":"Umbro","temporada":"2008–09 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369420257"},
     2010: {"estadio":"BJK İnönü Stadium","capacidad":32086,"sponsor":"Cola Turka","marca":"Adidas","temporada":"2009–10 Süper Lig","fuente":"https://en.wikipedia.org/w/index.php?oldid=1360666102"},

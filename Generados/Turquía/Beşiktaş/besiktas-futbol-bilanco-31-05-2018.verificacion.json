@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md",
- "generado": "2026-10-20T19:35:20.086Z",
+ "generado": "2026-10-20T20:42:31.855Z",
+ "scriptHuella": "b54df45c8846",
  "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2018,
@@ -11,7 +12,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf",
+   "campo": "desglose",
+   "valor": "-98157",
+   "linea": null,
+   "etiqueta": "Satışların maliyeti (-)",
+   "categoria": null,
+   "motivo": "errata del documento: la nota 18 (desglose del costo de ventas) difiere en 98.157 del total impreso 620.293.100 (decisión de la principal 2026-10-20)",
+   "evidencia": ".md L326 y L2575-2587",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -48,7 +62,7 @@
  ],
  "notas": [
   "el desglose de \"Esas faaliyetlerden diğer gelirler\" (5 filas) no suma la fila: quedó la fila",
-  "la nota de \"Satışların maliyeti (-)\" no suma el renglón (68.277152 contra 620.2931, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: el desglose de \"Satışların maliyeti (-)\" se abre con una fila \"Diferencia en el documento\" de -98157 (2026-10-20, errata del documento: la nota 18 (desglose del costo de ventas) difiere en 98.157 del total impreso 620.293.100 (decisión de la principal 2026-10-20))",
   "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2018.pdf",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
   "duda de extraer que no afecta la carga: El encabezado dice 2015 (L2561 y otros) pero los totales coinciden con la columna 2016-2017 del estado; parece errata."
@@ -60,11 +74,6 @@
    "renglon": "Esas faaliyetlerden diğer gelirler",
    "suma": 37.988791,
    "objetivo": 0.169309
-  },
-  {
-   "renglon": "Satışların maliyeti (-)",
-   "suma": 68.277152,
-   "objetivo": 620.2931
   }
  ],
  "totales": {
@@ -191,12 +200,108 @@
    "origen": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\""
   },
   {
-   "etiqueta": "Satışların maliyeti (-)",
+   "etiqueta": "Satılan ticari mallar maliyeti",
    "lado": "gasto",
-   "M": 620.2931,
+   "M": 68.277152,
+   "pagina": 50,
+   "linea": 2574,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Ücret giderleri",
+   "lado": "gasto",
+   "M": 393.952632,
+   "pagina": 50,
+   "linea": 2576,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Amortisman ve tükenme payları",
+   "lado": "gasto",
+   "M": 46.936871,
+   "pagina": 50,
+   "linea": 2577,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Maç giderleri",
+   "lado": "gasto",
+   "M": 18.397653,
+   "pagina": 50,
+   "linea": 2578,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Futbolcu kiralama giderleri",
+   "lado": "gasto",
+   "M": 15.90239,
+   "pagina": 50,
+   "linea": 2579,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Seyahat giderleri",
+   "lado": "gasto",
+   "M": 14.79504,
+   "pagina": 50,
+   "linea": 2580,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Haklar değer düşüklüğü karşılık gideri",
+   "lado": "gasto",
+   "M": 8.627987,
+   "pagina": 50,
+   "linea": 2581,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Futbolcu sözleşme fesih giderleri",
+   "lado": "gasto",
+   "M": 8.554355,
+   "pagina": 50,
+   "linea": 2582,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Menajerlik giderleri",
+   "lado": "gasto",
+   "M": 8.359055,
+   "pagina": 50,
+   "linea": 2583,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Federasyon giderleri",
+   "lado": "gasto",
+   "M": 6.533347,
+   "pagina": 50,
+   "linea": 2584,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Malzeme giderleri",
+   "lado": "gasto",
+   "M": 1.736279,
+   "pagina": 50,
+   "linea": 2585,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Diğer giderler",
+   "lado": "gasto",
+   "M": 28.318496,
+   "pagina": 50,
+   "linea": 2586,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Diferencia en el documento",
+   "lado": "gasto",
+   "M": -0.098157,
    "pagina": 10,
    "linea": 326,
-   "origen": "estado"
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
   },
   {
    "etiqueta": "Personel ücret ve giderleri",

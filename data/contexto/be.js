@@ -36,6 +36,12 @@ Object.assign(window.CLUB_CONTEXT, {
   'gent-be': {
     2025: {"estadio":"Planet Group Arena","capacidad":20000,"sponsor":"Bâloise","marca":"Craft","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
+  'liersekempenzonen-be': {
+    2018: {"estadio":"Herman Vanderpoortenstadion","temporada":"2017–18 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353492631","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
+    2019: {"estadio":"Herman Vanderpoortenstadion","temporada":"2018–19 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170241","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
+    2020: {"estadio":"Herman Vanderpoortenstadion","temporada":"2019–20 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170258","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
+    2021: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"sponsor":"Keukens Van Lommel","marca":"Jako","temporada":"2020–21 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375726247","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
+  },
   'liersesk-be': {
     2019: {"estadio":"Herman Vanderpoortenstadion","temporada":"2018–19 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170241","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
     2020: {"estadio":"Herman Vanderpoortenstadion","sponsor":"Keukens Van Lommel","temporada":"2019–20 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170258","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio","sponsor"],"fuentesManual":{"sponsor":"https://www.lierse.com/nieuws/keukens-van-lommel-fiere-nieuwe-hoofdsponsor-van-lierse"}},
@@ -88,6 +94,12 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Gemeentelijk Sportparkstadion","capacidad":5500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'raallalouviere-be': {
+    2018: {"estadio":"Stade du Tivoli","fuente":"https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)","fuenteManual":"https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)","manual":["estadio"],"sinFuente":{"sponsor":"Buscado: en.wikipedia RAAL La Louvière y la lista de la Second Amateur Division 2018-19 (sin tabla de camisetas); ninguna fuente nombra el sponsor de camiseta; liga del año sin fuente que distinga RAAL de La Louvière Centre"}},
+    2019: {"estadio":"Stade du Tivoli","temporada":"2018–19 Belgian Second Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353501944","fuenteManual":"https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)","manual":["estadio"],"sinFuente":{"sponsor":"Buscado: en.wikipedia RAAL La Louvière y la lista de la Second Amateur Division 2018-19 (sin tabla de camisetas); ninguna fuente nombra el sponsor de camiseta; liga del año sin fuente que distinga RAAL de La Louvière Centre"}},
+    2021: {"estadio":"Stade du Tivoli","temporada":"2020–21 Belgian Division 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375725723","fuenteManual":"https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)","manual":["estadio"]},
+    2022: {"estadio":"Stade du Tivoli","temporada":"2021–22 Belgian Division 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376207467","fuenteManual":"https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)","manual":["estadio"]},
+    2023: {"estadio":"Stade du Tivoli","temporada":"2022–23 Belgian National Division 1","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356937354","fuenteManual":"https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)","manual":["estadio"]},
+    2024: {"estadio":"Stade du Tivoli","temporada":"2023–24 Belgian National Division 1","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354171109","fuenteManual":"https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re (jugó en el Stade du Tivoli hasta 2025)","manual":["estadio"]},
     2025: {"estadio":"Stade du Tivoli","capacidad":12500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'rwdm-be': {

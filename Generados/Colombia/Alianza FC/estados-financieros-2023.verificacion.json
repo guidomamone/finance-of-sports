@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
  "md": "Clubes/Colombia/Alianza FC/estados-financieros-2023.md",
- "generado": "2026-10-20T19:47:02.849Z",
+ "generado": "2026-10-20T20:54:26.192Z",
+ "scriptHuella": "b54df45c8846",
  "estado": "ok",
  "clubId": null,
  "year": 2023,
@@ -11,29 +12,300 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "540112250",
+   "linea": 669,
+   "etiqueta": "Taquilla - venta de boletería",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L669",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "matchday_competition",
+   "linea": null,
+   "etiqueta": "Taquilla - venta de boletería",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L669",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "4136673785",
+   "linea": 670,
+   "etiqueta": "Venta derechos deportivos",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L670",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Venta derechos deportivos",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L670",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "365756449",
+   "linea": 671,
+   "etiqueta": "Préstamo derechos deportivos",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L671",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Préstamo derechos deportivos",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L671",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "1176949586",
+   "linea": 672,
+   "etiqueta": "Publicidad y patrocinios",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L672",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "sponsorship_commercial",
+   "linea": null,
+   "etiqueta": "Publicidad y patrocinios",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L672",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "7966544302",
+   "linea": 673,
+   "etiqueta": "DIMAYOR (derechos de televisión)",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L673",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "broadcasting",
+   "linea": null,
+   "etiqueta": "DIMAYOR (derechos de televisión)",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L673",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "462875000",
+   "linea": 674,
+   "etiqueta": "Federación Colombiana de Fútbol",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L674",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Federación Colombiana de Fútbol",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L674",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "16000000",
+   "linea": 675,
+   "etiqueta": "Convenios",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L675",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "Convenios",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L675",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "20000000",
+   "linea": 676,
+   "etiqueta": "Donaciones",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L676",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "Donaciones",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L676",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "2415953",
+   "linea": 677,
+   "etiqueta": "Venta artículos deportivos",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L677",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "sponsorship_commercial",
+   "linea": null,
+   "etiqueta": "Venta artículos deportivos",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L677",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "513192677",
+   "linea": 679,
+   "etiqueta": "Devoluciones en ventas",
+   "lado": "gasto",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14: devolución en ventas, deduce del ingreso (las filas suman el total 14.174.134.648 solo restándola). Se carga como fila de gasto con categoría de ingreso (other_income), que la ubica como ingreso negativo",
+   "evidencia": ".md L679",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "Devoluciones en ventas",
+   "motivo": "Devoluciones en ventas (nota 14, L679): deducción del ingreso que la tool no puede cargar como ingreso negativo con ajuste fila; se carga como gasto, ingresos quedan brutos de devoluciones (el total impreso es neto: 14.321.188.009)",
+   "evidencia": ".md L679",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "3513100819",
+   "linea": 708,
+   "etiqueta": "Gastos de personal (deportivos)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 708,
+   "motivo": "Gastos Deportivos: nómina del plantel y cuerpo técnico (L707-708); el rótulo de administración (L697) queda aparte",
+   "evidencia": ".md L707-708",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Gastos de personal (deportivos)",
+   "motivo": "nómina de Gastos Deportivos",
+   "evidencia": ".md L708",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "sin ingreso por uso del estadio: la taquilla va aparte y el arrendamiento es de la Alcaldía (L241)",
+   "evidencia": ".md L669, L241",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+   "ok": false,
+   "detalle": "las líneas suman 14817.813676 y el total impreso dice 14321.188009"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 6.821210263296962e-13
-  },
-  {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+   "dif": 1.1368683772161603e-12
   },
   {
    "nombre": "año anterior cargado",
@@ -49,9 +321,17 @@
  "notas": [
   "la nota de \"Ingresos de actividades ordinarias\" no suma el renglón (15200.520002 contra 14174.134648, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Otros Ingresos\" no suma el renglón (130.486351 contra 130.486351, sumando sus renglones): quedó el renglón del estado",
-  "escalón \"nota exacta en la lectura 5\": \"Gastos de administración\" (L84) se abre en las 10 filas de su nota, que suman exacto el renglón",
-  "escalón \"nota exacta en la lectura 5\": \"Gastos Deportivos\" (L85) se abre en las 5 filas de su nota, que suman exacto el renglón",
-  "la lectura base no cerraba; cerró con la lectura 5",
+  "ajuste manual: fila \"Taquilla - venta de boletería\" (ingreso) 540112250, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677))",
+  "ajuste manual: fila \"Venta derechos deportivos\" (ingreso) 4136673785, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677))",
+  "ajuste manual: fila \"Préstamo derechos deportivos\" (ingreso) 365756449, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677))",
+  "ajuste manual: fila \"Publicidad y patrocinios\" (ingreso) 1176949586, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677))",
+  "ajuste manual: fila \"DIMAYOR (derechos de televisión)\" (ingreso) 7966544302, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677))",
+  "ajuste manual: fila \"Federación Colombiana de Fútbol\" (ingreso) 462875000, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677))",
+  "ajuste manual: fila \"Convenios\" (ingreso) 16000000, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677))",
+  "ajuste manual: fila \"Donaciones\" (ingreso) 20000000, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677))",
+  "ajuste manual: fila \"Venta artículos deportivos\" (ingreso) 2415953, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677))",
+  "ajuste manual: fila \"Devoluciones en ventas\" (gasto) 513192677, en lugar de \"Ingresos de actividades ordinarias\" (2026-10-20, Nota 14: devolución en ventas, deduce del ingreso (las filas suman el total 14.174.134.648 solo restándola). Se carga como fila de gasto con categoría de ingreso (other_income), que la ubica como ingreso negativo)",
+  "ajuste manual: fila \"Gastos de personal (deportivos)\" (gasto) 3513100819, en lugar de la fila de L708 (2026-10-20, Gastos Deportivos: nómina del plantel y cuerpo técnico (L707-708); el rótulo de administración (L697) queda aparte)",
   "duda de extraer que no afecta la carga: L680 menos L682 = 130.486.351 = L83; el subtotal de la nota mezcla otros ingresos y financieros.",
   "duda de extraer que no afecta la carga: Las cifras comparativas 2022 de gastos no coinciden entre estado (L84-L85) y nota (L696, L707), posible reclasificación."
  ],
@@ -81,8 +361,8 @@
   }
  ],
  "totales": {
-  "ingresos": 14304.620999,
-  "gastos": 10543.422236,
+  "ingresos": 14817.813676,
+  "gastos": 11056.614913,
   "financiero": 1055.406952,
   "impuesto": 1220.153483,
   "resultadoImpreso": 1518.772348,
@@ -92,20 +372,92 @@
  },
  "lineas": [
   {
-   "etiqueta": "Ingresos de actividades ordinarias",
-   "lado": "ingreso",
-   "M": 14174.134648,
-   "pagina": 2,
-   "linea": 80,
-   "origen": "estado (lectura 5: hoja)"
-  },
-  {
    "etiqueta": "Otros Ingresos",
    "lado": "ingreso",
    "M": 130.486351,
    "pagina": 2,
    "linea": 83,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Taquilla - venta de boletería",
+   "lado": "ingreso",
+   "M": 540.11225,
+   "pagina": 14,
+   "linea": 669,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Venta derechos deportivos",
+   "lado": "ingreso",
+   "M": 4136.673785,
+   "pagina": 14,
+   "linea": 670,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Préstamo derechos deportivos",
+   "lado": "ingreso",
+   "M": 365.756449,
+   "pagina": 14,
+   "linea": 671,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Publicidad y patrocinios",
+   "lado": "ingreso",
+   "M": 1176.949586,
+   "pagina": 14,
+   "linea": 672,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "DIMAYOR (derechos de televisión)",
+   "lado": "ingreso",
+   "M": 7966.544302,
+   "pagina": 14,
+   "linea": 673,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Federación Colombiana de Fútbol",
+   "lado": "ingreso",
+   "M": 462.875,
+   "pagina": 14,
+   "linea": 674,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Convenios",
+   "lado": "ingreso",
+   "M": 16,
+   "pagina": 14,
+   "linea": 675,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Donaciones",
+   "lado": "ingreso",
+   "M": 20,
+   "pagina": 14,
+   "linea": 676,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Venta artículos deportivos",
+   "lado": "ingreso",
+   "M": 2.415953,
+   "pagina": 14,
+   "linea": 677,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Costos de Venta",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 2,
+   "linea": 81,
+   "origen": "estado"
   },
   {
    "etiqueta": "Gastos de personal",
@@ -188,14 +540,6 @@
    "origen": "nota que desglosa \"Gastos de administración\""
   },
   {
-   "etiqueta": "Gastos de personal",
-   "lado": "gasto",
-   "M": 3513.100819,
-   "pagina": 15,
-   "linea": 708,
-   "origen": "nota que desglosa \"Gastos Deportivos\""
-  },
-  {
    "etiqueta": "Honorarios",
    "lado": "gasto",
    "M": 173.359999,
@@ -226,6 +570,30 @@
    "pagina": 15,
    "linea": 713,
    "origen": "nota que desglosa \"Gastos Deportivos\""
+  },
+  {
+   "etiqueta": "Otro Gastos de actividades ordinarias",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 2,
+   "linea": 86,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Devoluciones en ventas",
+   "lado": "gasto",
+   "M": 513.192677,
+   "pagina": 14,
+   "linea": 679,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Gastos de personal (deportivos)",
+   "lado": "gasto",
+   "M": 3513.100819,
+   "pagina": 15,
+   "linea": 708,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
@@ -259,14 +627,23 @@
  "primerAnio": {
   "escalon": 3,
   "estado": "confirmado",
-  "clave": "e721e7d65509f7d877df83d40048dbc3a6313cc0",
+  "clave": "95f36de610f13c462fc1a7a059fe714072acbb50",
   "rango": [
    77,
    98
   ],
   "lineasCargadas": [
-   80,
    83,
+   669,
+   670,
+   671,
+   672,
+   673,
+   674,
+   675,
+   676,
+   677,
+   81,
    697,
    698,
    699,
@@ -277,16 +654,18 @@
    704,
    705,
    706,
-   708,
    709,
    710,
    711,
    713,
+   86,
+   679,
+   708,
    88,
    89,
    92,
    93
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 77 a 98 del .md):\nL78: |   | NOTA | AÑO 2023 | AÑO 2022 | VAR% | VARIACION$  |\nL79: | --- | --- | --- | --- | --- | --- |\nL80: |  Ingresos de actividades ordinarias | 14 | 14.174.134.648 | 13.070.575.623 | 8% | 1.103.559.025  |\nL81: |  Costos de Venta | 15 | - | - | 0% | -  |\nL82: |  **Utilidad bruta** |  | **14.174.134.648** | **13.070.575.623** | **8%** | **1.103.559.025**  |\nL83: |  Otros Ingresos |  | 130.486.351 | 996.649.504 | -87% | (866.163.153)  |\nL84: |  Gastos de administración | 16 | 5.600.156.039 | 8.062.173.727 | -31% | (2.462.017.688)  |\nL85: |  Gastos Deportivos | 16 | 4.943.266.197 | 4.509.602.501 |  | 433.663.696  |\nL86: |  Otro Gastos de actividades ordinarias | 17 | - | 129.044.189 | -100% | (129.044.189)  |\nL87: |  **Utilidad (Perdida) operativa** |  | **3.761.198.763** | **1.366.404.710** | **175%** | **2.394.794.053**  |\nL88: |  Ingresos Financiero |  | 16.567.010 | 608.949 | 2621% | 15.958.061  |\nL89: |  Costos Financieros |  | 1.038.839.942 | 144.665.875 | 618% | 894.174.067  |\nL90: |  **Costo Financiero Neto** |  | **-1.022.272.932** | **-144.056.926** | **610%** | **-878.216.006**  |\nL91: |  **(Perdida) Utilidad antes de impuestos de renta** |  | **2.738.925.831** | **1.222.347.784** | **124%** | **1.516.578.047**  |\nL92: |  Gasto impuesto de renta y cree | 18 | 1.051.401.000 | 682.043.224 | 54% | 369.357.776  |\nL93: |  Impuesto diferido |  | 168.752.483 | 54.030.456 | 212% | 114.722.027  |\nL94: |  **(Perdida) Utilidad Neta del periodo** |  | **1.518.772.348** | **486.274.104** | **212%** | **1.032.498.244**  |\nL95: |  **Resultado del ejercicio** |  | **1.518.772.348** | **486.274.104** | **212%** | **1.032.498.244**  |\nL97: Las notas adjuntas son parte integral de estos estados de resultados integrales.\n\nLO QUE SE CARGA:\n- ingreso · \"Ingresos de actividades ordinarias\" · 14174.134648 · L80\n- ingreso · \"Otros Ingresos\" · 130.486351 · L83\n- gasto · \"Gastos de personal\" · 1711.470936 · L697 (de una nota)\n- gasto · \"Honorarios\" · 155.981205 · L698 (de una nota)\n- gasto · \"Impuestos\" · 256.728447 · L699 (de una nota)\n- gasto · \"Arriendos\" · 10.194859 · L700 (de una nota)\n- gasto · \"seguros\" · 23.572277 · L701 (de una nota)\n- gasto · \"Servicios\" · 34.035571 · L702 (de una nota)\n- gasto · \"Gastos Legales\" · 27.402747 · L703 (de una nota)\n- gasto · \"Mantenimiento y reparaciones\" · 2.272533 · L704 (de una nota)\n- gasto · \"Diversos\" · 3264.244042 · L705 (de una nota)\n- gasto · \"Depreciaciones\" · 114.253422 · L706 (de una nota)\n- gasto · \"Gastos de personal\" · 3513.100819 · L708 (de una nota)\n- gasto · \"Honorarios\" · 173.359999 · L709 (de una nota)\n- gasto · \"Servicios\" · 346.387164 · L710 (de una nota)\n- gasto · \"Gastos de Viaje\" · 618.97871 · L711 (de una nota)\n- gasto · \"Amortizaciones derechos deportivos\" · 291.439505 · L713 (de una nota)\n- financiero · \"Ingresos Financiero\" · 16.56701 · L88\n- financiero · \"Costos Financieros\" · -1038.839942 · L89\n- impuesto · \"Gasto impuesto de renta y cree\" · -1051.401 · L92\n- impuesto · \"Impuesto diferido\" · -168.752483 · L93"
+  "user": "ESTADO DE RESULTADOS (líneas 77 a 98 del .md):\nL78: |   | NOTA | AÑO 2023 | AÑO 2022 | VAR% | VARIACION$  |\nL79: | --- | --- | --- | --- | --- | --- |\nL80: |  Ingresos de actividades ordinarias | 14 | 14.174.134.648 | 13.070.575.623 | 8% | 1.103.559.025  |\nL81: |  Costos de Venta | 15 | - | - | 0% | -  |\nL82: |  **Utilidad bruta** |  | **14.174.134.648** | **13.070.575.623** | **8%** | **1.103.559.025**  |\nL83: |  Otros Ingresos |  | 130.486.351 | 996.649.504 | -87% | (866.163.153)  |\nL84: |  Gastos de administración | 16 | 5.600.156.039 | 8.062.173.727 | -31% | (2.462.017.688)  |\nL85: |  Gastos Deportivos | 16 | 4.943.266.197 | 4.509.602.501 |  | 433.663.696  |\nL86: |  Otro Gastos de actividades ordinarias | 17 | - | 129.044.189 | -100% | (129.044.189)  |\nL87: |  **Utilidad (Perdida) operativa** |  | **3.761.198.763** | **1.366.404.710** | **175%** | **2.394.794.053**  |\nL88: |  Ingresos Financiero |  | 16.567.010 | 608.949 | 2621% | 15.958.061  |\nL89: |  Costos Financieros |  | 1.038.839.942 | 144.665.875 | 618% | 894.174.067  |\nL90: |  **Costo Financiero Neto** |  | **-1.022.272.932** | **-144.056.926** | **610%** | **-878.216.006**  |\nL91: |  **(Perdida) Utilidad antes de impuestos de renta** |  | **2.738.925.831** | **1.222.347.784** | **124%** | **1.516.578.047**  |\nL92: |  Gasto impuesto de renta y cree | 18 | 1.051.401.000 | 682.043.224 | 54% | 369.357.776  |\nL93: |  Impuesto diferido |  | 168.752.483 | 54.030.456 | 212% | 114.722.027  |\nL94: |  **(Perdida) Utilidad Neta del periodo** |  | **1.518.772.348** | **486.274.104** | **212%** | **1.032.498.244**  |\nL95: |  **Resultado del ejercicio** |  | **1.518.772.348** | **486.274.104** | **212%** | **1.032.498.244**  |\nL97: Las notas adjuntas son parte integral de estos estados de resultados integrales.\n\nLO QUE SE CARGA:\n- ingreso · \"Otros Ingresos\" · 130.486351 · L83\n- ingreso · \"Taquilla - venta de boletería\" · 540.11225 · L669 (de una nota)\n- ingreso · \"Venta derechos deportivos\" · 4136.673785 · L670 (de una nota)\n- ingreso · \"Préstamo derechos deportivos\" · 365.756449 · L671 (de una nota)\n- ingreso · \"Publicidad y patrocinios\" · 1176.949586 · L672 (de una nota)\n- ingreso · \"DIMAYOR (derechos de televisión)\" · 7966.544302 · L673 (de una nota)\n- ingreso · \"Federación Colombiana de Fútbol\" · 462.875 · L674 (de una nota)\n- ingreso · \"Convenios\" · 16 · L675 (de una nota)\n- ingreso · \"Donaciones\" · 20 · L676 (de una nota)\n- ingreso · \"Venta artículos deportivos\" · 2.415953 · L677 (de una nota)\n- gasto · \"Costos de Venta\" · 0 · L81\n- gasto · \"Gastos de personal\" · 1711.470936 · L697 (de una nota)\n- gasto · \"Honorarios\" · 155.981205 · L698 (de una nota)\n- gasto · \"Impuestos\" · 256.728447 · L699 (de una nota)\n- gasto · \"Arriendos\" · 10.194859 · L700 (de una nota)\n- gasto · \"seguros\" · 23.572277 · L701 (de una nota)\n- gasto · \"Servicios\" · 34.035571 · L702 (de una nota)\n- gasto · \"Gastos Legales\" · 27.402747 · L703 (de una nota)\n- gasto · \"Mantenimiento y reparaciones\" · 2.272533 · L704 (de una nota)\n- gasto · \"Diversos\" · 3264.244042 · L705 (de una nota)\n- gasto · \"Depreciaciones\" · 114.253422 · L706 (de una nota)\n- gasto · \"Honorarios\" · 173.359999 · L709 (de una nota)\n- gasto · \"Servicios\" · 346.387164 · L710 (de una nota)\n- gasto · \"Gastos de Viaje\" · 618.97871 · L711 (de una nota)\n- gasto · \"Amortizaciones derechos deportivos\" · 291.439505 · L713 (de una nota)\n- gasto · \"Otro Gastos de actividades ordinarias\" · 0 · L86\n- gasto · \"Devoluciones en ventas\" · 513.192677 · L679 (de una nota)\n- gasto · \"Gastos de personal (deportivos)\" · 3513.100819 · L708 (de una nota)\n- financiero · \"Ingresos Financiero\" · 16.56701 · L88\n- financiero · \"Costos Financieros\" · -1038.839942 · L89\n- impuesto · \"Gasto impuesto de renta y cree\" · -1051.401 · L92\n- impuesto · \"Impuesto diferido\" · -168.752483 · L93"
  }
 }

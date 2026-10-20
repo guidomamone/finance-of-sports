@@ -5,6 +5,9 @@ window.RANKINGS["be-div1amateur"] = {
     leagueSize: 18,
     wiki: {"t":"2023–24 Belgian National Division 1","lang":"en","at":"2026-10-19","n":18},
     clubs: [
+      { id:"raallalouviere-be", revenue:1.119, reportType:"official_balance_sheet",
+        sourceId:"raallalouviere-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.119]] },
       { id:"lokerentemse-be", revenue:1.059, reportType:"official_balance_sheet",
         sourceId:"lokerentemse-be-jaarrekening-2024-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.059]] },
@@ -17,6 +20,9 @@ window.RANKINGS["be-div1amateur"] = {
       { id:"patroeisden-be", revenue:1.577, reportType:"official_balance_sheet",
         sourceId:"patroeisden-be-jaarrekening-2023-06-30-individual",
         mix:[["Otros ingresos",1.577]] },
+      { id:"raallalouviere-be", revenue:1.193, reportType:"official_balance_sheet",
+        sourceId:"raallalouviere-be-jaarrekening-2023-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.193]] },
     ],
   },
   2022: {
@@ -33,9 +39,22 @@ window.RANKINGS["be-div1amateur"] = {
     sinDato: ["liersesk-be"],
     wiki: {"t":"2019–20 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"liersekempenzonen-be", revenue:0.895, reportType:"official_balance_sheet",
+        sourceId:"liersekempenzonen-be-jaarrekening-2020-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.895]] },
       { id:"patroeisden-be", revenue:0.311, reportType:"official_balance_sheet",
         sourceId:"patroeisden-be-jaarrekening-2020-06-30-individual-correction",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.311]] },
+    ],
+  },
+  2019: {
+    leagueSize: 16,
+    sinDato: ["liersesk-be"],
+    wiki: {"t":"2018–19 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"liersekempenzonen-be", revenue:0.986, reportType:"official_balance_sheet",
+        sourceId:"liersekempenzonen-be-jaarrekening-2019-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.986]] },
     ],
   },
   2018: {

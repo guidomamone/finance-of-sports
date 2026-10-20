@@ -1,0 +1,68 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2019-06-30-individual.md",
+ "club": "raallalouviere-be",
+ "year": 2019,
+ "generatedAt": "2026-10-20T21:00:48.456Z",
+ "rubrosHuella": "9b56c7b9c1c2fa20219359acd52baeb5f9a73d93",
+ "jevHuella": "7b5ac835bc75e0ead9d5e28055a8aa20f5493697",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Marge brute d'exploitation",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto de explotación",
+   "page": 12,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 2,
+   "confCache": 0.6,
+   "motivo": "Margen bruto en esquema abreviado belga sustituye cifra de negocios; club usa 'Chiffre d'affaires' como bolsón",
+   "jev": "other_income",
+   "jevConf": 0.85,
+   "desdeCache": true,
+   "categoria": "lump_football_operations",
+   "confianza": 0.6
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones",
+   "page": 12,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material",
+   "page": 12,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 12,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

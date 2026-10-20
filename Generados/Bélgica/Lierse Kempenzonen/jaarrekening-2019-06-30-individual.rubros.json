@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
   "club": "lierse-kempenzonen",
   "year": 2019,
-  "generatedAt": "2026-10-20T20:02:22.459Z",
+  "generatedAt": "2026-10-20T20:46:07.144Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -17,6 +17,16 @@
       "glosa": "Ingresos excepcionales"
     },
     {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 7,
+      "section": "ajuste manual",
+      "values": [
+        0.866254
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
       "label": "Bezoldigingen en rechtstreekse sociale voordelen",
       "lado": "expense",
       "page": 12,
@@ -24,7 +34,7 @@
       "values": [
         0.996766
       ],
-      "glosa": "Remuneraciones y beneficios sociales directos"
+      "glosa": "Remuneraciones y prestaciones sociales directas"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -34,7 +44,7 @@
       "values": [
         0.163692
       ],
-      "glosa": "Aportaciones patronales a la seguridad social"
+      "glosa": "Cotizaciones patronales a la seguridad social"
     },
     {
       "label": "Andere personeelskosten",
@@ -54,7 +64,7 @@
       "values": [
         0.094099
       ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y pérdidas por deterioro de gastos de establecimiento, inmovilizado intangible y material"
     },
     {
       "label": "Andere bedrijfskosten",

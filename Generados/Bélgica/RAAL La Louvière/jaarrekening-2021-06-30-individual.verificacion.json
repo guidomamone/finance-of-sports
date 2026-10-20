@@ -1,0 +1,133 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.md",
+ "generado": "2026-10-20T21:00:46.721Z",
+ "scriptHuella": "b54df45c8846",
+ "estado": "ok",
+ "clubId": "raallalouviere-be",
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.0408340855860843e-17
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 0.480032 en este documento y 0.480032 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
+  }
+ ],
+ "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L742-L765, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-2677fac4.pdf",
+  "duda de extraer que no afecta la carga: Esquema abreviado: Chiffre d'affaires (L744) y Approvisionnements (L745) vienen vacíos y solo se informa el margen bruto."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.480032,
+  "gastos": 0.49689,
+  "financiero": -0.012096,
+  "impuesto": 0,
+  "resultadoImpreso": -0.028954,
+  "resultadoParaCargar": -0.028954,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Marge brute",
+   "lado": "ingreso",
+   "M": 0.480032,
+   "pagina": 11,
+   "linea": 742,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Rémunérations, charges sociales et pensions",
+   "lado": "gasto",
+   "M": 0.306132,
+   "pagina": 11,
+   "linea": 746,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": "gasto",
+   "M": 0.104875,
+   "pagina": 11,
+   "linea": 747,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+   "lado": "gasto",
+   "M": 0.03,
+   "pagina": 11,
+   "linea": 749,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Autres charges d'exploitation",
+   "lado": "gasto",
+   "M": 0.055883,
+   "pagina": 11,
+   "linea": 750,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Produits financiers récurrents",
+   "M": 0.000001,
+   "linea": 755
+  },
+  {
+   "etiqueta": "Charges financières récurrentes",
+   "M": -0.012097,
+   "linea": 759
+  }
+ ],
+ "impuesto": []
+}

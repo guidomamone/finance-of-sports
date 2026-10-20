@@ -3,6 +3,9 @@
 // No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
+  'alianzafc-co': {
+    2023: {"estadio":"Daniel Villa Zapata","capacidad":10400,"marca":"Pin-Go","temporada":"2023 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377160814","fuenteManual":"https://en.wikipedia.org/wiki/2023_Categor%C3%ADa_Primera_A_season (tablas de estadios y de camisetas, Alianza Petrolera)","manual":["estadio","capacidad","marca"],"sinFuente":{"sponsor":"Buscado: la celda de sponsor de camiseta de Alianza Petrolera está vacía en en.wikipedia 2023 Categoría Primera A; es.wikipedia del club sin sponsor; ninguna fuente lo nombra"}},
+  },
   'americadecali-co': {
     2025: {"estadio":"Pascual Guerrero","capacidad":38588,"sponsor":"Águila","marca":"Le Coq Sportif","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },

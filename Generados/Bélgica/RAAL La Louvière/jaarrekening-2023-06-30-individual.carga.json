@@ -1,0 +1,325 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.pdf",
+ "generado": "2026-10-20T21:00:49.384Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual); 9 documento(s) mirados)"
+ ],
+ "ejercicio": {
+  "clubId": "raallalouviere-be",
+  "year": 2023,
+  "cierre": "2023-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Marge brute",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 1.098287,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Rémunérations, charges sociales et pensions",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.479328,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.076505,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Autres charges d'exploitation",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.03234,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Charges d'exploitation non récurrentes",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.003702,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2023-06-30",
+   "sourceId": "raallalouviere-be-jaarrekening-2023-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.018068,
+   "tax": -0.000709,
+   "extraRows": [
+    {
+     "label": "Charges financières récurrentes",
+     "value": -0.018068
+    },
+    {
+     "label": "Impôts sur le résultat",
+     "value": -0.000709
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Marge brute",
+     "lado": "revenue",
+     "importe": 1.098287,
+     "motivo": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 1.098287,
+   "officialTotalExpenses": 1.591875,
+   "officialPAT": -0.512364
+  },
+  "source": {
+   "id": "raallalouviere-be-jaarrekening-2023-06-30-individual",
+   "clubId": "raallalouviere-be",
+   "title": "RAAL La Louvière SC — jaarrekening-2023-06-30-individual (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "inicio": "2022-07-01",
+  "cierre": "2023-06-30",
+  "cierreDe": "período del formulario (to-do 298 f)",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "l'exercice couvrant la période du 01-07-2022 au 30-06-2023"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "raallalouviere-be",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 7,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Marge brute",
+   "page": 11,
+   "native": 1.098287,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.098287,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
+   "destino": "revenue",
+   "amountNative": 1.098287
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "page": 11,
+   "native": 1.479328,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.479328,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.479328
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "page": 11,
+   "native": 0.076505,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.076505,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No son derechos de jugadores: el único inmaterial del estado 6.2.1 son \"Frais de développement\" (actés 26.000); el resto de los 558.871 es material (actés 347.123 + 105.781 + 72.251 + otros). Sin derechos de jugadores no corresponde player_amortisation. Mismo criterio que Dender (630 combinado a dep [Estado de inmovilizados incorporales 6.2.1, \"FRAIS DE DÉVELOPPEMENT\", Actés 8071 = 26.000; materiales Actés 8271 = 347.123, 8272 = 105.781, 8273 = 72.251; cuenta de resultados pág. 7: 630 = 558.871]",
+   "destino": "expense",
+   "amountNative": -0.076505
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "page": 11,
+   "native": 0.03234,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.03234,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.03234
+  },
+  {
+   "label": "Charges d'exploitation non récurrentes",
+   "page": 11,
+   "native": 0.003702,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.003702,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Charges d'exploitation non récurrentes (66A, nota 6.12) es gasto no recurrente. La mayoría de los clubes belgas lo cargan en exceptional_items (Genk, Gent, Cercle, Dender, Sint-Truiden, Zulte, Lokeren, Lierse SK); solo Standard Liège lo dejó en other_expenses. Importe mínimo (3.193). [Cuenta de resultados pág. 7: \"Charges d'exploitation non récurrentes | 6.12 | 66A | 3.193\"]",
+   "destino": "expense",
+   "amountNative": -0.003702
+  },
+  {
+   "label": "Charges financières récurrentes",
+   "page": null,
+   "native": -0.018068,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Impôts sur le résultat",
+   "page": null,
+   "native": -0.000709,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 1.098287,
+  "expSum": -1.588173,
+  "officialTotalRevenue": 1.098287,
+  "officialTotalExpenses": 1.591875,
+  "officialPAT": -0.512364,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.512364,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 1.098287
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 1.591875
+  }
+ },
+ "liga": {
+  "valor": "be-div1amateur",
+  "fuente": "roster cacheado de \"2022–23 Belgian National Division 1\" (tools/club-league-reference/be.json), coincidencia exacta \"RAAL La Louvière\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2023-06-30) y contenido del .md (9 de 10 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2023-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2023-06-30 = 0.9203 (Cierre BCE al 30/6/2023 (1 EUR = 1,0866 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "raallalouviere-be-jaarrekening-2023-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "be-div1amateur",
+   "fuente": "roster cacheado de \"2022–23 Belgian National Division 1\" (tools/club-league-reference/be.json), coincidencia exacta \"RAAL La Louvière\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 4,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

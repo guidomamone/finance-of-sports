@@ -1,0 +1,79 @@
+{
+ "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md",
+ "generatedAt": "2026-10-20T20:46:19.573Z",
+ "rubrosHuella": "1c9f210f0c0a7c564d21dda2aa492eeb90cac8bd",
+ "rubros": [
+  {
+   "label": "Uitzonderlijke opbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "revenue",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Uitzonderlijke kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

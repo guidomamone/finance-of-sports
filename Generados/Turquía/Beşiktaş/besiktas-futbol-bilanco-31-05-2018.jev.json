@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md",
- "generatedAt": "2026-10-20T19:17:04.743Z",
- "rubrosHuella": "c8ea317325b701a58d191636b4b93d25993f5231",
+ "generatedAt": "2026-10-20T20:42:32.651Z",
+ "rubrosHuella": "b661ca9a14fef619dd4e4c92700602beca424bc0",
  "rubros": [
   {
    "label": "Şampiyonlar ligi ve UEFA gelirleri",
@@ -103,6 +103,15 @@
    "desdeCache": true
   },
   {
+   "label": "Genel yönetim katılım gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
+   "choice": "member_dues",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
    "label": "Konusu kalmayan karşılıklar (*)",
    "lado": "revenue",
    "page": 53,
@@ -118,6 +127,105 @@
    "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
    "choice": "other_income",
    "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Satılan ticari mallar maliyeti",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Ücret giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisman ve tükenme payları",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "depreciation",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Maç giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Futbolcu kiralama giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Seyahat giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Futbolcu sözleşme fesih giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "player_impairment",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Menajerlik giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Federasyon giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Malzeme giderleri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Diğer giderler",
+   "lado": "expense",
+   "page": 51,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
    "desdeCache": true
   },
   {
@@ -154,15 +262,6 @@
    "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
    "choice": "admin_general_expense",
    "confidence": 0.98,
-   "desdeCache": true
-  },
-  {
-   "label": "Amortisman ve tükenme payları",
-   "lado": "expense",
-   "page": 51,
-   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
-   "choice": "depreciation",
-   "confidence": 0.85,
    "desdeCache": true
   },
   {
@@ -265,21 +364,21 @@
    "desdeCache": true
   },
   {
-   "label": "Diğer giderler",
-   "lado": "expense",
-   "page": 51,
-   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
-   "choice": "other_expenses",
-   "confidence": 0.97,
-   "desdeCache": true
-  },
-  {
    "label": "Esas faaliyetlerden kur farkı giderleri",
    "lado": "expense",
    "page": 53,
    "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
    "choice": "other_expenses",
    "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Özel maliyetler değer düşüklüğü karşılık gideri (*)",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+   "choice": "depreciation",
+   "confidence": 0.49,
    "desdeCache": true
   },
   {
@@ -310,73 +409,50 @@
    "desdeCache": true
   },
   {
-   "label": "Satışların maliyeti (-)",
+   "label": "Haklar değer düşüklüğü karşılık gideri",
+   "lado": "expense",
+   "page": 50,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "player_impairment",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_impairment",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Diferencia en el documento",
    "lado": "expense",
    "page": 10,
-   "section": "estado",
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
    "choice": "other_expenses",
-   "confidence": 0.76,
+   "confidence": 0.92,
    "top3": [
     [
      "other_expenses",
-     0.78
+     0.93
     ],
     [
      "lump_football_operations_expense",
-     0.12
+     0.05
     ],
     [
-     "player_amortisation",
-     0.1
-    ]
-   ],
-   "tokens": 1010
-  },
-  {
-   "label": "Genel yönetim katılım gelirleri",
-   "lado": "revenue",
-   "page": 53,
-   "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
-   "choice": "member_dues",
-   "confidence": 0.86,
-   "top3": [
-    [
-     "member_dues",
-     0.87
-    ],
-    [
-     "other_income",
-     0.12
-    ],
-    [
-     "lump_football_operations",
+     "match_organisation_expense",
      0.01
     ]
    ],
-   "tokens": 1064
-  },
-  {
-   "label": "Özel maliyetler değer düşüklüğü karşılık gideri (*)",
-   "lado": "expense",
-   "page": 53,
-   "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
-   "choice": "depreciation",
-   "confidence": 0.49,
-   "top3": [
-    [
-     "depreciation",
-     0.53
-    ],
-    [
-     "other_expenses",
-     0.41
-    ],
-    [
-     "other_amortisation",
-     0.03
-    ]
-   ],
-   "tokens": 1193
+   "tokens": 1153
   }
  ]
 }

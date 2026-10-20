@@ -14,3 +14,11 @@
 - Número de empresa tomado de companyweb.be (búsqueda web); confirmado contra el nombre del depositante en la BNB. Los ejercicios en modelo abreviado (`Verkort`) pueden no traer cuenta de resultados completa: revisar al transcribir.
 - 6 depósitos; ver también Lierse SK.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2018 desde `Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual.pdf` (sourceId `liersekempenzonen-be-jaarrekening-2018-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2019 desde `Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf` (sourceId `liersekempenzonen-be-jaarrekening-2019-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2020 desde `Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2020-06-30-individual.pdf` (sourceId `liersekempenzonen-be-jaarrekening-2020-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2021 desde `Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2021-06-30-individual.pdf` (sourceId `liersekempenzonen-be-jaarrekening-2021-06-30-individual`).

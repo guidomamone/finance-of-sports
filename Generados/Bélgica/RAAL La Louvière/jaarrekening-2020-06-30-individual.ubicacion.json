@@ -1,0 +1,213 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.md",
+ "mdSha1": "1496e02527bdc16059c6f1e3a6ff282333640b1e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T20:56:51.339Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    28,
+    36
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    519,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    552,
+    557
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    579,
+    583
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    587,
+    589
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    597,
+    602
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    777,
+    781
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    787,
+    790
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    1050,
+    1055
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    1058,
+    1067
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    1070,
+    1079
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    1145,
+    1149
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    1153,
+    1157
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    1380,
+    1382
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    1414,
+    1416
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 26,
+   "lineas": [
+    1448,
+    1450
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    1480,
+    1482
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    1516,
+    1518
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    1558,
+    1560
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 30,
+   "lineas": [
+    1576,
+    1580
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 30,
+   "lineas": [
+    1582,
+    1605
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 31,
+   "lineas": [
+    1628,
+    1643
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "COMPTES ANNUELS EN EUROS (b1)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Exercice",
+ "columna_anterior": "Exercice précédent",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF trae en la página 12 un 'Compte de résultats' (A 4) del ejercicio al 30-06-2020 que la transcripción no capturó?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice salta del bilan (pág. 10-11) a affectations et prélèvements (pág. 13). La página 12, donde iría el compte de résultats en el modelo belga, no tiene ningún bloque con cifras.",
+   "bloques": [
+    "b2",
+    "b6",
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales (modelo abreviado BNB) de RAAL La Louvière, ejercicio del 01-07-2019 al 30-06-2020, en euros. En el índice aparecen el balance (b2-b6), affectations (b7-b8), deudas (b9-b11), garantías (b12-b13), el informe del auditor (b14-b19) y el bilan social (b20-b22). No hay ningún bloque del compte de résultats: probablemente está en la pág. 12 y no se transcribió. Hasta revisarlo en el PDF, se marca sin_estado. El bilan social (b20) trae los frais de personnel, pero no es el estado de resultados."
+}

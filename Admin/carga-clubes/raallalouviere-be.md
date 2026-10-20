@@ -87,6 +87,188 @@ tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del docum
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Marge brute | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Rémunérations, charges sociales et pensions | pág. 11, precedente |
+| 2 | Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles | pág. 11, precedente |
+| 3 | Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) | pág. 11, precedente |
+| 4 | Autres charges d'exploitation | pág. 11, precedente |
+| 5 | Charges d'exploitation non récurrentes | pág. 11, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Marge brute | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Rémunérations, charges sociales et pensions | pág. 11, precedente |
+| 2 | Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles | pág. 11, precedente |
+| 3 | Autres charges d'exploitation | pág. 11, precedente |
+| 4 | Charges d'exploitation non récurrentes | pág. 11, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Bélgica/RAAL La Louvière/jaarrekening-2022-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/RAAL La Louvière/jaarrekening-2022-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Marge brute | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Rémunérations, charges sociales et pensions | pág. 11, precedente |
+| 2 | Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles | pág. 11, precedente |
+| 3 | Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) | pág. 11, precedente |
+| 4 | Provisions pour risques et charges: dotations (utilisations et reprises) | pág. 11, Jev 0.98 |
+| 5 | Autres charges d'exploitation | pág. 11, precedente |
+| 6 | Charges d'exploitation non récurrentes | pág. 11, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Marge brute | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Rémunérations, charges sociales et pensions | pág. 11, precedente |
+| 2 | Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles | pág. 11, precedente |
+| 3 | Provisions pour risques et charges: dotations (utilisations et reprises) | pág. 11, Jev 0.98 |
+| 4 | Autres charges d'exploitation | pág. 11, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Bélgica/RAAL La Louvière/jaarrekening-2019-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/RAAL La Louvière/jaarrekening-2019-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Marge brute d'exploitation | pág. 12, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Rémunérations, charges sociales et pensions | pág. 12, precedente |
+| 2 | Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles | pág. 12, precedente |
+| 3 | Autres charges d'exploitation | pág. 12, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): be-div2amateur, verificado contra roster cacheado de "2018–19 Belgian Second Amateur Division" (tools/club-league-reference/be.json), coincidencia única por palabras "La Louvière" = "RAAL La Louvière".
+```
+
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Marge brute d'exploitation | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Rémunérations, charges sociales et pensions | pág. 11, precedente |
+| 2 | Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles | pág. 11, precedente |
+| 3 | Autres charges d'exploitation | pág. 11, precedente |
+
+### Meta
+
+```text
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): reportType = official_balance_sheet. Revisión del alta (Claude, 2026-10-09): comptes annuels del ejercicio 12-05-2017 a 30-06-2018; no es presupuesto
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## Fuentes
 
 ### raallalouviere-be-wf-2024-2025-2677fac4
@@ -95,4 +277,52 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### raallalouviere-be-jaarrekening-2018-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### raallalouviere-be-jaarrekening-2019-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/RAAL La Louvière/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### raallalouviere-be-jaarrekening-2021-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### raallalouviere-be-jaarrekening-2022-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/RAAL La Louvière/jaarrekening-2022-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### raallalouviere-be-jaarrekening-2023-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### raallalouviere-be-jaarrekening-2024-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

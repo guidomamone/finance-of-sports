@@ -1,20 +1,50 @@
 {
- "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md",
- "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.pdf",
- "club": "raal-la-louviere",
- "year": 2018,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:55:26.044Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": false,
-  "motivo": "sin estado de resultados"
- },
- "ladoConocido": 0,
- "rubros": []
+  "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.pdf",
+  "club": "raallalouviere-be",
+  "year": 2018,
+  "generatedAt": "2026-10-20T20:58:58.554Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Marge brute d'exploitation",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.430494
+      ],
+      "glosa": "Margen bruto de explotación"
+    },
+    {
+      "label": "Rémunérations, charges sociales et pensions",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.578307
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.086931
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.002507
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
 }

@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 315 clubes, 1259 ejercicios, 22 países.
+TOTAL: 317 clubes, 1273 ejercicios, 22 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -50,7 +50,7 @@ ARGENTINA (19)
   Unión                          4 ejercicios (2021/2022 a 2024/2025), balance, ARS
   Vélez Sarsfield                11 ejercicios (2014/2015 a 2024/2025), balance, ARS
 
-BE (22)
+BE (23)
   Anderlecht            1 ejercicio (2024/2025), balance, EUR
   Antwerp               1 ejercicio (2024/2025), balance, EUR
   Beerschot             7 ejercicios (2018/2019 a 2024/2025), balance, EUR
@@ -60,13 +60,14 @@ BE (22)
   Dender EH             1 ejercicio (2024/2025), balance, EUR
   Genk                  1 ejercicio (2024/2025), balance, EUR
   Gent                  1 ejercicio (2024/2025), balance, EUR
+  Lierse Kempenzonen    4 ejercicios (2017/2018 a 2020/2021), balance, EUR, sin deuda/caja
   Lierse SK             7 ejercicios (2018/2019 a 2024/2025), balance, EUR
   Lokeren-Temse         5 ejercicios (2020/2021 a 2024/2025), balance, EUR
   Lommel SK             8 ejercicios (2017/2018 a 2024/2025), balance, EUR
   Mechelen              1 ejercicio (2024/2025), balance, EUR
   OH Leuven             5 ejercicios (2018/2019, 2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Patro Eisden          13 ejercicios (2012/2013 a 2024/2025), balance, EUR
-  RAAL La Louvière      1 ejercicio (2024/2025), balance, EUR
+  RAAL La Louvière      7 ejercicios (2017/2018, 2018/2019, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
   RWDM                  6 ejercicios (2019/2020 a 2024/2025), balance, EUR
   Sint-Truiden          1 ejercicio (2024/2025), balance, EUR
   Standard Liège        1 ejercicio (2024/2025), balance, EUR
@@ -128,7 +129,8 @@ CHILE (3)
   Universidad Católica  16 ejercicios (2010 a 2025), balance, CLP
   Universidad de Chile  4 ejercicios (2022 a 2025), balance, CLP
 
-COLOMBIA (13)
+COLOMBIA (14)
+  Alianza FC              1 ejercicio (2023), balance, COP, sin deuda/caja
   América de Cali         1 ejercicio (2025), balance, COP
   Atlético Nacional       1 ejercicio (2025), balance, COP
   Boyacá Chicó            2 ejercicios (2024 a 2025), balance, COP
@@ -386,6 +388,6 @@ RU (16)
   Zenit                  5 ejercicios (2021 a 2025), balance, RUB
 
 TR (1)
-  Beşiktaş  13 ejercicios (2008/2009, 2009/2010, 2010/2011, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023), balance, TRY, sin deuda/caja
+  Beşiktaş  16 ejercicios (2005/2006, 2006/2007, 2007/2008, 2008/2009, 2009/2010, 2010/2011, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023), balance, TRY, sin deuda/caja
 
 ===== CLUB-INDEX:END =====

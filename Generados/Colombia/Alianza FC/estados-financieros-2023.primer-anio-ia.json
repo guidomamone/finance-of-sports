@@ -1,13 +1,13 @@
 {
  "md": "Clubes/Colombia/Alianza FC/estados-financieros-2023.md",
- "clave": "e721e7d65509f7d877df83d40048dbc3a6313cc0",
- "generado": "2026-10-20T19:46:14.384Z",
+ "clave": "95f36de610f13c462fc1a7a059fe714072acbb50",
+ "generado": "2026-10-20T20:53:39.766Z",
  "fuente": "API",
  "datos": {
   "faltan": [],
   "sobran": [],
   "repetidas": [],
   "lado_equivocado": [],
-  "observacion": "Sin problemas. Las filas de nota L697-L706 suman 5.600,156039 y reemplazan a Gastos de administración (L84). Las filas L708-L713 suman 4.943,266197 y reemplazan a Gastos Deportivos (L85). Costos de Venta y Otros gastos están en cero en 2023. Los subtotales no se cargaron. El resultado reconstruido da 1.518,772348, igual al impreso."
+  "observacion": "Los ingresos ordinarios (L80) se reemplazan por su apertura en nota (L669-L677) neta de devoluciones (L679); los gastos de administración (L84) y deportivos (L85) se reemplazan por sus aperturas en nota (L697-L713). Los subtotales no se cargan, los renglones en cero no generan problema y el resultado coincide con el impreso. No se detectan problemas."
  }
 }

@@ -1,26 +1,149 @@
 {
  "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
- "generado": "2026-10-20T20:03:08.038Z",
+ "generado": "2026-10-20T20:46:20.784Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (liersekempenzonen-be)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "liersekempenzonen-be",
+  "year": 2019,
+  "cierre": "2019-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Uitzonderlijke opbrengsten",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Brutomarge (+)/(-)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.866254,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Bezoldigingen en rechtstreekse sociale voordelen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.996766,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Werkgeversbijdragen voor sociale verzekeringen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.163692,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere personeelskosten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.202603,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.094099,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.018143,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Uitzonderlijke kosten",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2019-06-30",
+   "sourceId": "liersekempenzonen-be-jaarrekening-2019-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.011177,
+   "tax": -0.008396,
+   "extraRows": [
+    {
+     "label": "Financiële opbrengsten",
+     "value": 0.000052
+    },
+    {
+     "label": "Financiële kosten",
+     "value": -0.011229
+    },
+    {
+     "label": "Belastingen op het resultaat (67/77)",
+     "value": -0.008396
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Brutomarge (+)/(-)",
+     "lado": "revenue",
+     "importe": 0.866254,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.866254,
+   "officialTotalExpenses": 1.475303,
+   "officialPAT": -0.628623
+  },
+  "source": {
+   "id": "liersekempenzonen-be-jaarrekening-2019-06-30-individual",
+   "clubId": "liersekempenzonen-be",
+   "title": "Lierse Kempenzonen VZW — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md",
  "reemplaza": false,
  "periodo": {
@@ -36,5 +159,284 @@
  },
  "clubId": "liersekempenzonen-be",
  "year": 2019,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "8396",
+   "linea": 254,
+   "etiqueta": "Belastingen op het resultaat (67/77)",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "El .md omite la fila de impuestos del esquema abreviado: resultado del ejercicio impreso -628.623 menos resultado ordinario -620.227 = 8.396",
+   "evidencia": ".md L251 y L254",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "866254",
+   "linea": 237,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "El esquema abreviado solo publica el margen bruto (L237); la extracción no lo trajo como ingreso en 2019; en 2018, 2020 y 2021 sí",
+   "evidencia": ".md L237",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "seleccion": {
+  "filas": 11,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Uitzonderlijke opbrengsten",
+   "page": 7,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Brutomarge (+)/(-)",
+   "page": 7,
+   "native": 0.866254,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.866254,
+   "cat": "lump_football_operations",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.866254
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "page": 12,
+   "native": 0.996766,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 0.996766,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.996766
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "page": 12,
+   "native": 0.163692,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 0.163692,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.163692
+  },
+  {
+   "label": "Andere personeelskosten",
+   "page": 12,
+   "native": 0.202603,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 0.202603,
+   "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.202603
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 7,
+   "native": 0.094099,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.094099,
+   "cat": "depreciation",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.094099
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 7,
+   "native": 0.018143,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.018143,
+   "cat": "other_expenses",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.018143
+  },
+  {
+   "label": "Uitzonderlijke kosten",
+   "page": 7,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Financiële opbrengsten",
+   "page": null,
+   "native": 0.000052,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Financiële kosten",
+   "page": null,
+   "native": -0.011229,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen op het resultaat (67/77)",
+   "page": null,
+   "native": -0.008396,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos con signo",
+   "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.866254,
+  "expSum": -1.475303,
+  "officialTotalRevenue": 0.866254,
+  "officialTotalExpenses": 1.475303,
+  "officialPAT": -0.628623,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.628623,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.866254
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 1.475303
+  }
+ },
+ "liga": {
+  "valor": "be-div1amateur",
+  "fuente": "roster cacheado de \"2018–19 Belgian First Amateur Division\" (tools/club-league-reference/be.json), coincidencia exacta \"Lierse Kempenzonen\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2019,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), presente en el .md (el año más citado con fecha de cierre es 2020)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2019-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2019-06-30) y contenido del .md (8 de 9 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2019-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2019-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2019-06-30 = 0.878735 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2019-06-28, 2019-06-30 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "liersekempenzonen-be-jaarrekening-2019-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "be-div1amateur",
+   "fuente": "roster cacheado de \"2018–19 Belgian First Amateur Division\" (tools/club-league-reference/be.json), coincidencia exacta \"Lierse Kempenzonen\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 2,
+  "lineasGasto": 6,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

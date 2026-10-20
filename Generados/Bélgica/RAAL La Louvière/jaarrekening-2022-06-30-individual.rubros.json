@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2022-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2022-06-30-individual.pdf",
+  "club": "raallalouviere-be",
+  "year": 2022,
+  "generatedAt": "2026-10-20T20:58:58.698Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Marge brute",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.836649
+      ],
+      "glosa": "Margen bruto"
+    },
+    {
+      "label": "Rémunérations, charges sociales et pensions",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.772848
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.105582
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.044386
+      ],
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones)"
+    },
+    {
+      "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.003
+      ],
+      "glosa": "Provisiones para riesgos y cargas: dotaciones (utilizaciones y reversiones)"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.005082
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Charges d'exploitation non récurrentes",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.123236
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}
