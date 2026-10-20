@@ -127,4 +127,13 @@ window.RANKINGS["tr-superlig"] = {
         mix:[["Comercial / Sponsors",22.48],["Estadio",14.103],["Televisión",27.517],["Premios por competencias",10.433],["Venta de Jugadores",2.029],["Otros ingresos",28.862]] },
     ],
   },
+  2006: {
+    leagueSize: 20,
+    wiki: {"t":"2005–06 Süper Lig","lang":"en","at":"2026-10-20","n":20},
+    clubs: [
+      { id:"besiktas-tr", revenue:63.354, reportType:"official_balance_sheet",
+        sourceId:"besiktas-tr-futbol-bilanco-31-05-2006",
+        mix:[["Comercial / Sponsors",13.961],["Estadio",6.407],["Televisión",19.212],["Venta de Jugadores",5.964],["Otros ingresos",17.81]] },
+    ],
+  },
 };
