@@ -35,7 +35,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 238: Latinoamérica, 161 documentos transcriptos y validados (~US$ 50, en lotes de 5 a 8 clubes; espera tu ok y presupuesto)
 * 261: lo que queda: Reino Unido (casos del lote 106 de Sunderland y Wolves, volver a correr el 98, 4 escaneos sin estado de resultados, línea del auditor de Celtic) y Noruega (Fredrikstad, Viking FLI 2008-2016)
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI con los `.md` que ya hay (criterio decidido; falta implementar), después de Noruega
-* 292: lo que queda: Bélgica (Lierse Kempenzonen 2018-2021, alta nueva con 7 casos en cola; La Louvière 2018-2024) y Colombia (Alianza FC, alta; Tolima, La Equidad, Bucaramanga y Águilas Doradas, varios sin estado de resultados en el `.md`); Beşiktaş 2006-2008 (destrabados: 2007 y 2008 por alta-club, 2006 con ajuste fx 1,5357) y recargar 2018 (ajuste `desglose` -98157), lote 117 --> Onboarding 5
+* 292: lo que queda: Bélgica (Lierse Kempenzonen 2018-2021, alta nueva con 7 casos en cola; La Louvière 2018-2024) y Colombia (Alianza FC, alta; Tolima, La Equidad, Bucaramanga y Águilas Doradas, varios sin estado de resultados en el `.md`; lo que no lo tenga, a descartados), con tokens de sesión y US$ 0 de API (Guido, 2026-10-20); Beşiktaş 2006-2008 (destrabados: 2007 y 2008 por alta-club, 2006 con ajuste fx 1,5357) y recargar 2018 (ajuste `desglose` -98157), lote 117 --> Onboarding 5
 * 165 c: altas de los países nuevos, solo con documentos ya transcriptos
 
 **D. Pantallas y distribución (después del 246)**
@@ -49,11 +49,11 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
 * 270: estimado de club nuevo: volver a medir cuando entren más años de Noruega, Suiza y Países Bajos
+* 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): elegir cuáles van a hook o a audit.js (Pipeline)
 * 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
 **F. Orden de la casa**
 * 326: check-in de outreach, el 2026-10-24
-* 255: los 12 chequeos automatizables del inventario, a decidir cuáles (Pipeline)
 * 257: skills que faltan
 * 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes del Reino Unido corriendo
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
@@ -170,8 +170,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
    (`Admin/fuentes-externas.md`, "Consecuencias").
-255. CONSOLIDAR LAS REGLAS: fases 1 y 2 hechas (2026-10-20). Queda decidir cuáles de los 12 chequeos automatizables (sección 4 de
-   `Admin/consolidar-reglas-255.md`) se hacen, como hook o en audit.js (los hace Pipeline).
 257. SKILLS QUE FALTAN (mejoras de proyecto, pedido de Guido 2026-10-16). Producto/pantalla (mockup, ok, implementación, chequeo en celular; hoy mezclado en PANTALLA.md); contenido y
    difusión (un año cargado → hilo o post con el dato verificado y el link a la fuente); contrato de datos/API (esquema público y qué lo
    rompe); deploy/release (qué chequear antes de pushear y cómo verificar producción).
@@ -286,4 +284,5 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     antes. Quedan sin ubicar OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: pedir los links a Guido.
 326. CHECK-IN DE OUTREACH A LOS 30 DÍAS (2026-10-24, sacado de la skill `club-outreach`): evaluar lo que dice
     `Admin/outreach/checkin-2026-10-24.md`; hay una tarea programada que lo pregunta, el archivo es el respaldo.
-
+327. CHEQUEOS QUE DEJÓ EL 255 (2026-10-20). Los 12 de la sección 4 de `Admin/Archive/consolidar-reglas-255.md`: elegir cuáles se automatizan
+   (hook o audit.js) y hacerlos con el circuito de Pipeline. Nada urgente.

@@ -60,3 +60,4 @@ Qué hay hoy:
 - `sesion-datos-sourcing-2026-10-18-d.md` — copia del cierre de datos-sourcing en el merge de la 733 (252).
 - `sesion-proyecto-2026-10-18.md` — copia del cierre de proyecto (250 y 244), pasada en la 737; la rama siguió con el 300.
 - `sesion-pipeline-2026-10-18-b.md` y `sesion-pantallas-2026-10-18-g.md` — copias de los cierres en el merge de la 738.
+- `consolidar-reglas-255.md` — inventario del to-do 255 (reglas repetidas y contradichas, las 27 propuestas aplicadas y los 12 chequeos que quedan en el 327). Archivado en la 853.

@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 853 — 255 cerrado (2026-10-20) [255 · 327 · 292]
+
+- El 255 sale del TODO; su inventario pasa a `Admin/Archive/consolidar-reglas-255.md`. Los 12 chequeos automatizables quedan como el 327.
+- 292: Bélgica y Colombia, con tokens de sesión y sin API (Guido).
+
 ## Versión 852 — Reglas consolidadas: 27 cambios en skills, CLAUDE.md y memorias (2026-10-20) [255]
 
 - Aplicadas las 27 propuestas aprobadas del inventario del 255: el push no se pide, cada sesión corre sus lotes, HALLAZGOS solo para lo
