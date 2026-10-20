@@ -25,22 +25,20 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (en marcha)**
-* 238 (solo lo gratis o de centavos; lo caro queda afuera por ahora): las 27 propuestas listas ya estaban en el sitio; cargados OH Leuven 2020 y Rapid Wien 2024 (alta); falta Rapid Wien 2013-2023 y 2025 (~US$ 0,15 por documento, lote 125); hecho eso, el 238 se cierra --> Onboarding 4
+* 238 (solo lo gratis o de centavos; lo caro queda afuera por ahora): falta Rapid Wien 2013-2023 y 2025 (~US$ 0,15 por documento, lote 125) y volver a correr Sporting CP 2008-10 (destrabado); hecho eso, el 238 se cierra --> Onboarding 4
+* 283: Vålerenga y Aalesund: la suma de las dos entidades ya está en main (CHANGELOG 862); falta cargar Vålerenga 2022 y 2023 (lote 126). Para Pantallas: el resultado repite etiquetas de las dos entidades --> Onboarding 4
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
 * 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos)
 
-**C. Cargar lo ya transcripto (no se transcribe más; cada sesión con su presupuesto)**
-* 283: Vålerenga y Aalesund: `suma-con` y `tools/suma-entidades.mjs` en main (CHANGELOG 862); Onboarding carga Vålerenga 2022 y 2023 con armar-a-mano. Para Pantallas: el resultado repite etiquetas de las dos entidades --> Onboarding 4
-
-**D. Pantallas y distribución (después del 246)**
+**C. Pantallas y distribución (después del 246)**
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 259: material de difusión (después de 241)
 * 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
-**E. Técnico (cuando haya tiempo; nada urgente)**
+**D. Técnico (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
@@ -48,7 +46,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): elegir cuáles van a hook o a audit.js (Pipeline)
 * 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
-**F. Orden de la casa**
+**E. Orden de la casa**
 * 326: check-in de outreach, el 2026-10-24
 * 257: skills que faltan
 * 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes corriendo en ningún worktree
