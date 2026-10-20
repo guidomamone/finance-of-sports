@@ -555,7 +555,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // .filas.json, no había chequeo: Fortaleza CEIF 2023 nunca se comparó con 2024 porque el primero de 2024 es certificacion-ef-2024.pdf.
     const filasDe = (x) => resolve(ROOT, derivado(x.md, '.filas.json', { crear: false }));
     // (to-do 237 l) un documento descartado o parcial no es vecino: no es del club o no cubre el año (Rio Ave 2014-15, de la asociación).
-    const otro = registro.find((x) => x.pdf !== pdf && x.pdf.startsWith(carpeta + '/') && !DESCARTADOS.has(x.pdf) && !PARCIALES.has(x.pdf) && x.md && existsSync(filasDe(x)) && anioDe(x) === year + dy);
+    // (to-do 283) en una carpeta con dos entidades que se suman (ajuste `suma-con`: Vålerenga AS y Elite) el vecino es de la MISMA entidad: el documento que es la
+    // "otra entidad" de una suma solo se compara con otros de su rol, y los demás no se comparan con él.
+    const esOtra = (p) => registro.some((r) => r.pdf.startsWith(carpeta + '/') && ajusteDe(r.pdf, 'suma-con')?.valor === p);
+    const miRol = esOtra(pdf);
+    const otro = registro.find((x) => x.pdf !== pdf && x.pdf.startsWith(carpeta + '/') && !DESCARTADOS.has(x.pdf) && !PARCIALES.has(x.pdf) && x.md && existsSync(filasDe(x)) && anioDe(x) === year + dy && esOtra(x.pdf) === miRol);
     if (!otro) return null;
     const pF2 = filasDe(otro);
     // (to-do 298 t) el vecino también por sus códigos NBB (si los trae y cierran)

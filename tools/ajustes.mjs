@@ -36,6 +36,9 @@
 //   desglose          (Versión 382) etiqueta = el renglón; valor = la diferencia TAL CUAL impresa entre el renglón y la suma de su detalle (un
 //                     error del documento); --categoria opcional para la fila de la diferencia. verificar.mjs abre el desglose con una fila
 //                     más, "Diferencia en el documento", si la diferencia es exactamente esa. Caso: Fortaleza 2022 "Patrocinios (1)", 54.000.
+//   suma-con          (to-do 283) sobre el PDF de una entidad: el ejercicio suma el de otra entidad del mismo año (Vålerenga: el AS y el Elite no consolidan). valor = el PDF
+//                     de la otra entidad; --etiqueta = el renglón de gasto propio del que se resta la transferencia; --etiqueta-otra = el ingreso espejo del otro documento
+//                     (se saca entero); --evidencia = las dos líneas. cargar.mjs suma los dos documentos sin contar dos veces la transferencia (tools/suma-entidades.mjs).
 //   anio              (Versión 390) valor: el año del ejercicio cuando el NOMBRE DEL ARCHIVO lo dice mal: escalón 0 del año en
 //                     tools/alta-club.mjs (analizar, que también usa cargar.mjs) y en tools/quien.mjs --quien. Caso: Goiás,
 //                     "demonstracoes-contabeis-2017-2016.pdf" es el ejercicio 2017 (con 2016 de comparativo) y el nombre daba 2016.
@@ -83,7 +86,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda', 'escala'];
+export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda', 'escala', 'suma-con'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 // (to-do 224) UNA LECTURA POR PROCESO, igual que leer() de cola.mjs: 18 de los 36 s de `verificar.mjs --lista` sobre 237 documentos eran
@@ -204,12 +207,13 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (campo === 'deuda-incluye' && !flag('--valor')) { console.error('deuda-incluye necesita --valor "término; término"'); process.exit(1); }
     if (!['perimetro', 'deuda-incluye', 'name'].includes(campo) && pdf.endsWith('/')) { console.error('solo `perimetro`, `deuda-incluye` y `name` se fijan para la carpeta de un club'); process.exit(1); }
     if (['resultado-final', 'fila', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
+    if (campo === 'suma-con' && (!flag('--valor') || !flag('--etiqueta') || !flag('--etiqueta-otra') || !flag('--evidencia'))) { console.error('suma-con necesita --valor (el PDF de la otra entidad), --etiqueta (renglón de gasto propio), --etiqueta-otra (ingreso espejo del otro documento) y --evidencia (las dos líneas)'); process.exit(1); }
     if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
     // (to-do 263) --anio AAAA: solo en caja / deuda, para un PDF que alimenta dos años del sitio (ver ajusteDelAnio, arriba).
     if (flag('--anio') !== null && (!CAMPOS_POR_ANIO.includes(campo) || !/^\d{4}$/.test(flag('--anio') || ''))) { console.error(`--anio AAAA solo va con ${CAMPOS_POR_ANIO.join(' / ')}`); process.exit(1); }
     if (flag('--reemplaza-linea') !== null && !/^\d+$/.test(flag('--reemplaza-linea') || '')) { console.error('--reemplaza-linea necesita el número de línea del .md'); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
-    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), ...(flag('--anio') ? { anio: Number(flag('--anio')) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
+    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'suma-con' ? { etiqueta: flag('--etiqueta'), etiquetaOtra: flag('--etiqueta-otra') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), ...(flag('--anio') ? { anio: Number(flag('--anio')) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
     appendFileSync(ARCHIVO, JSON.stringify(a) + '\n');
     console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.anio ? ` (año ${a.anio})` : ''}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
   } else {
