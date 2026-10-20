@@ -36,3 +36,5 @@ Color de marca: null — en.wikipedia: colores verde y blanco, camiseta local ma
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2019 desde `Clubes/Bélgica/RAAL La Louvière/jaarrekening-2019-06-30-individual.pdf` (sourceId `raallalouviere-be-jaarrekening-2019-06-30-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2021 desde `Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.pdf` (sourceId `raallalouviere-be-jaarrekening-2021-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2022 desde `Clubes/Bélgica/RAAL La Louvière/jaarrekening-2022-06-30-individual.pdf` (sourceId `raallalouviere-be-jaarrekening-2022-06-30-individual`).
