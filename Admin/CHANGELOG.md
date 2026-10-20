@@ -26,6 +26,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 * Lote 108: Leeds, Liverpool 2022, Newcastle 2022-2024, Nottingham Forest 2022-23, Sunderland 2019-2023, West Ham 2020-2024 y Wolves
   2020-2023. Alta de Celtic con 2024-25 (Scottish Premiership). Unión Magdalena 2025 con el cierre correcto (298 m2).
+* Silkeborg y Viborg 2025: la línea de depreciación y amortización partida con las notas (REGLA por votación).
 
 ## Versión 837 — Stirling PDF no reemplaza a Mistral (2026-10-20)
 
