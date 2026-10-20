@@ -25,6 +25,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2015: {"estadio":"Aker Stadion","capacidad":11800,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2015 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372827917"},
     2017: {"estadio":"Aker Stadion","capacidad":11800,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2017 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1332616218"},
     2018: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2018 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311642550"},
+    2021: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2021 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312260742"},
     2025: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'sarpsborg08-no': {
