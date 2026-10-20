@@ -1,0 +1,555 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.pdf",
+ "generado": "2026-10-20T19:48:47.925Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Ordinære avskrivninger\" -> depreciation 0.6"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-20: Viking Fotball AS presenta Konsernregnskap en 2017-2024 (con Viking Stadion AS, 100%, el estadio del club): mismo perímetro que el 2025 ya cargado (consolidado), coherencia de la serie (CONVENCIONES-DATOS, perímetro))",
+  "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "viking-no",
+  "year": 2024,
+  "cierre": "2024-12-31",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Inntekt fra samarbeidsavtaler",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 65.605095,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Billettinntekt fra kamper",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 17.83223,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Medieinntekter",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 36.706251,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gevinst ved salg av spillertettigheter",
+    "normalizedCategory": "player_sales",
+    "amountNative": 76.769325,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Annen driftsinntekt",
+    "normalizedCategory": "other_income",
+    "amountNative": 24.651566,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Lønninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -11.295951,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Arbeidsgiveravgift",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.655147,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Personalkostnader fra Viking FK",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -61.560858,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Pensjonskostnad (OTP)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.380386,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Andre personalkostnader",
+    "normalizedCategory": "wages_squad",
+    "amountNative": 0.679137,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Ordinære avskrivninger",
+    "normalizedCategory": "depreciation",
+    "amountNative": -21.689421,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Nedskrivninger",
+    "normalizedCategory": "player_impairment",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Annen driftskostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -93.346471,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "NOK",
+   "fxRef": "NOK@2024-12-31",
+   "sourceId": "viking-no-aarsregnskap-viking-fotball-as-2024",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -2.236118,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Renteinntekt",
+     "value": 0.730524
+    },
+    {
+     "label": "Netto finansinntekt",
+     "value": 0.777159
+    },
+    {
+     "label": "Rentekostnad",
+     "value": -3.743801
+    },
+    {
+     "label": "Skattekostnad på ordinært resultat",
+     "value": 0
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 221.564467,
+   "officialTotalExpenses": 189.249097,
+   "officialPAT": 30.079253
+  },
+  "source": {
+   "id": "viking-no-aarsregnskap-viking-fotball-as-2024",
+   "clubId": "viking-no",
+   "title": "Viking Fotball AS — aarsregnskap-viking-fotball-as-2024 (ejercicio 2024)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "01.01.2024 - 31.12.2024"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "viking-no",
+ "year": 2024,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 17,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Inntekt fra samarbeidsavtaler",
+   "page": 22,
+   "native": 65.605095,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 65.605095,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 65.605095
+  },
+  {
+   "label": "Billettinntekt fra kamper",
+   "page": 22,
+   "native": 17.83223,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 17.83223,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 17.83223
+  },
+  {
+   "label": "Medieinntekter",
+   "page": 22,
+   "native": 36.706251,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 36.706251,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 36.706251
+  },
+  {
+   "label": "Gevinst ved salg av spillertettigheter",
+   "page": 22,
+   "native": 76.769325,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 76.769325,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 76.769325
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "page": 22,
+   "native": 24.651566,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 24.651566,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 24.651566
+  },
+  {
+   "label": "Lønninger",
+   "page": 29,
+   "native": 11.295951,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
+   "signoFijo": 11.295951,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Note 3, sueldos de los 12 empleados del AS: Lønnskostnad entero a wages_squad. Suma: 13 927 807 + 2 101 645 + 80 010 132 + 529 119 + 325 704 = 96 894 407. [Lønninger 13 927 807 (L1036)]",
+   "destino": "expense",
+   "amountNative": -11.295951
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "page": 29,
+   "native": 1.655147,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
+   "signoFijo": 1.655147,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales van con el sueldo: wages_squad. [Arbeidsgiveravgift 2 101 645 (L1037)]",
+   "destino": "expense",
+   "amountNative": -1.655147
+  },
+  {
+   "label": "Personalkostnader fra Viking FK",
+   "page": 29,
+   "native": 61.560858,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
+   "signoFijo": 61.560858,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Es el costo de personal de jugadores, entrenadores y cuerpo tecnico del primer equipo, que Viking FK emplea y el AS paga por contrato (nota * del documento). Decision de Guido: se carga como esta. wages_squad. [Personalkostnader fra Viking FK* 80 010 132 (L1038); '...alle direkte lønnskostnader knyttet til disse personene skal dekkes av Viking Fotball AS' (L1043)]",
+   "destino": "expense",
+   "amountNative": -61.560858
+  },
+  {
+   "label": "Pensjonskostnad (OTP)",
+   "page": 29,
+   "native": 0.380386,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
+   "signoFijo": 0.380386,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pension obligatoria (OTP) va con el sueldo: wages_squad. La nota dice que los aportes se contabilizan como lønnskostnad. [Pensjonskostnad (OTP)** 529 119 (L1039)]",
+   "destino": "expense",
+   "amountNative": -0.380386
+  },
+  {
+   "label": "Andre personalkostnader",
+   "page": 29,
+   "native": 0.679137,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")",
+   "signoFijo": -0.679137,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otros costos de personal dentro de Note 3 (la nota dice que la periodizacion de sign-on fees se gasta como sueldo): wages_squad. Monto chico. [Andre personalkostnader 325 704 (L1040)]",
+   "destino": "expense",
+   "amountNative": 0.679137
+  },
+  {
+   "label": "Ordinære avskrivninger",
+   "page": 22,
+   "native": 21.689421,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 21.689421,
+   "cat": "depreciation",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -21.689421
+  },
+  {
+   "label": "Nedskrivninger",
+   "page": 22,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "player_impairment",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Annen driftskostnad",
+   "page": 22,
+   "native": 93.346471,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 93.346471,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -93.346471
+  },
+  {
+   "label": "Renteinntekt",
+   "page": null,
+   "native": 0.730524,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Netto finansinntekt",
+   "page": null,
+   "native": 0.777159,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Rentekostnad",
+   "page": null,
+   "native": -3.743801,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skattekostnad på ordinært resultat",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Lønn og sosiale kostnader\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 221.564467,
+  "expSum": -189.249097,
+  "officialTotalRevenue": 221.564467,
+  "officialTotalExpenses": 189.249097,
+  "officialPAT": 30.079253,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 30.079253,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 221.564467
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 189.249097
+  }
+ },
+ "liga": {
+  "valor": "no-eliteserien",
+  "fuente": "roster cacheado de \"2024 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Viking\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2024,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2024-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (13 de 13 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-20)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "NOK",
+   "fuente": "moneda de curso legal de Noruega (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "NOK@2024-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene NOK@2024-12-31 = 11.3534 (Tipo medio de referencia de Norges Bank al 2024-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "viking-no-aarsregnskap-viking-fotball-as-2024",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "no-eliteserien",
+   "fuente": "roster cacheado de \"2024 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Viking\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 5,
+  "lineasGasto": 8,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

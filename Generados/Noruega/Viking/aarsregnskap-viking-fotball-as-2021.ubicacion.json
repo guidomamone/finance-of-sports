@@ -1,0 +1,273 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2021.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2021.md",
+ "mdSha1": "d6c78479e768fa134126ec288af283192b865ef8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:47:02.460Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    120,
+    150
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    178,
+    206
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    220,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    258,
+    285
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    299,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    341,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    556,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    613,
+    638
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    646,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    703,
+    728
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    738,
+    762
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    782,
+    786
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    857,
+    871
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    889,
+    896
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    901,
+    904
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    908,
+    912
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    926,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    938,
+    949
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 23,
+   "lineas": [
+    953,
+    969
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    988,
+    991
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    995,
+    998
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 24,
+   "lineas": [
+    1004,
+    1008
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 24,
+   "lineas": [
+    1012,
+    1016
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 24,
+   "lineas": [
+    1022,
+    1030
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 24,
+   "lineas": [
+    1032,
+    1040
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 25,
+   "lineas": [
+    1064,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 25,
+   "lineas": [
+    1092,
+    1096
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 25,
+   "lineas": [
+    1098,
+    1102
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 26,
+   "lineas": [
+    1118,
+    1122
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado consolidado de la pág. 6 (b4) y se deja afuera la versión de la pág. 18 (b10, columnas Morselskap/Konsern) por duplicada?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b10 parece repetir en formato de dos perímetros los estados b1 (individual) y b4 (consolidado).",
+   "bloques": [
+    "b4",
+    "b10",
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "b1 es el resultatregnskap individual de Viking Fotball AS (morselskap); b4 es el konsernresultatregnskap (consolidado con Viking Stadion AS). Se elige el consolidado b4. b10 repite ambos perímetros lado a lado. Nota 4 de lønnskostnader (b14) es 'Morselskap og konsern', aplica al consolidado. b17 (honorarios de auditoría) no se elige como desglose."
+}

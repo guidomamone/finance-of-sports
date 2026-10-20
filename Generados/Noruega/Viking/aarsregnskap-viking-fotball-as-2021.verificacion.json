@@ -1,0 +1,208 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2021.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2021.md",
+ "generado": "2026-10-20T19:48:17.376Z",
+ "estado": "ok",
+ "clubId": "viking-no",
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "124.189109 = 124.189109",
+   "suma": 124.189109,
+   "impreso": 124.18910899999999
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "113.858843 = 113.858843",
+   "suma": 113.858843,
+   "impreso": 113.858843
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 7.105427357601002e-15
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 124.189109 en este documento y 124.189109 en aarsregnskap-viking-fotball-as-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 111.785694 en aarsregnskap-viking-fotball-as-2020.pdf y 111.785694 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b10 parece repetir en formato de dos perímetros los estados b1 (individual) y b4 (consolidado)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 124.189109,
+  "gastos": 113.858843,
+  "financiero": 2.294664,
+  "impuesto": -3.241936,
+  "resultadoImpreso": 11.596256,
+  "resultadoParaCargar": 11.596256,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Inntekt fra samarbeidsavtaler",
+   "lado": "ingreso",
+   "M": 48.646715,
+   "pagina": 6,
+   "linea": 262,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Billettinntekt fra kamper",
+   "lado": "ingreso",
+   "M": 8.708865,
+   "pagina": 6,
+   "linea": 263,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Medieinntekter NTF",
+   "lado": "ingreso",
+   "M": 23.044766,
+   "pagina": 6,
+   "linea": 264,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gevinst ved salg av spillere",
+   "lado": "ingreso",
+   "M": 19.560125,
+   "pagina": 6,
+   "linea": 265,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftsinntekt",
+   "lado": "ingreso",
+   "M": 24.228638,
+   "pagina": 6,
+   "linea": 266,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 5.89645,
+   "pagina": 22,
+   "linea": 891,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 1.158038,
+   "pagina": 22,
+   "linea": 892,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Personalkostnader fra Viking FK*",
+   "lado": "gasto",
+   "M": 42.387274,
+   "pagina": 22,
+   "linea": 893,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnad (OTP)**",
+   "lado": "gasto",
+   "M": 0.251921,
+   "pagina": 22,
+   "linea": 894,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre personalkostnader",
+   "lado": "gasto",
+   "M": 1.166761,
+   "pagina": 22,
+   "linea": 895,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 10.373985,
+   "pagina": 6,
+   "linea": 270,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 0.016667,
+   "pagina": 6,
+   "linea": 271,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 52.607747,
+   "pagina": 6,
+   "linea": 272,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.159359,
+   "linea": 276
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": -1.641162,
+   "linea": 278
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": -0.494143,
+   "linea": 279
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skattekostnad på ordinært resultat",
+   "M": 3.241936,
+   "linea": 283
+  }
+ ]
+}

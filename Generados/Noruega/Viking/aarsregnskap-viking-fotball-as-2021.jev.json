@@ -1,0 +1,124 @@
+{
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2021.md",
+ "generatedAt": "2026-10-20T19:48:42.703Z",
+ "rubrosHuella": "a3dbc77931f804e519afb4292a29068aa137979e",
+ "rubros": [
+  {
+   "label": "Inntekt fra samarbeidsavtaler",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Billettinntekt fra kamper",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Medieinntekter NTF",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gevinst ved salg av spillere",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 22,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 22,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Personalkostnader fra Viking FK*",
+   "lado": "expense",
+   "page": 22,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensjonskostnad (OTP)**",
+   "lado": "expense",
+   "page": 22,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre personalkostnader",
+   "lado": "expense",
+   "page": 22,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  }
+ ]
+}

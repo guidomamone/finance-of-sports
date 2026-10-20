@@ -34,3 +34,5 @@ Todos ejercicio calendario. Escaneos sin capa de texto.
 - Último chequeo: 2026-09-17.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf` (sourceId `viking-no-aarsregnskap-viking-fotball-as-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2022 desde `Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2022.pdf` (sourceId `viking-no-aarsregnskap-viking-fotball-as-2022`).

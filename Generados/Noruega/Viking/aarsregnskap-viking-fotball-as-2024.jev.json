@@ -1,0 +1,138 @@
+{
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.md",
+ "generatedAt": "2026-10-20T19:48:42.854Z",
+ "rubrosHuella": "36e2a4c2967d9de8929b2f433c41f5c4d1ae19fb",
+ "rubros": [
+  {
+   "label": "Inntekt fra samarbeidsavtaler",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Billettinntekt fra kamper",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Medieinntekter",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Personalkostnader fra Viking FK*",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensjonskostnad (OTP)**",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre personalkostnader",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Ordinære avskrivninger",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Nedskrivninger",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado",
+   "choice": "player_impairment",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Gevinst ved salg av spillertettigheter",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1048
+  }
+ ]
+}

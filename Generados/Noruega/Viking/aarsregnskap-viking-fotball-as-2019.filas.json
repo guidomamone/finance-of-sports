@@ -1,0 +1,345 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2019.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2019.md",
+ "mdSha1": "1d59e229148c600d1648ddf87d4c732df58f60fa",
+ "ubicacionSha1": "cb9640f405bb74681ebbc3c57c1a750cc3a52d14",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:46:51.956Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b28"
+  ],
+  "notas_gastos": [
+   "b12"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes en coronas completas (ej. 103 265 385) (L729-L748)"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "Importes en coronas completas, coinciden con el estado (L1206-L1208)"
+  },
+  {
+   "bloque": "b12",
+   "escala": "unidades",
+   "evidencia": "Importes en coronas completas, coinciden con el estado (L986-L991)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 729,
+   "etiqueta": "Inntekt fra samarbeidsavtaler",
+   "actual": "46 427 956",
+   "anterior": "37 350 345",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 730,
+   "etiqueta": "Billettinntekt fra kamper",
+   "actual": "12 756 143",
+   "anterior": "7 320 356",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 731,
+   "etiqueta": "Medieinntekter NTF",
+   "actual": "15 006 455",
+   "anterior": "8 962 228",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 732,
+   "etiqueta": "Netto gevinst ved salg av spillere",
+   "actual": "878 347",
+   "anterior": "7 557 137",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 733,
+   "etiqueta": "Annen driftsinntekt",
+   "actual": "28 196 484",
+   "anterior": "11 139 168",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 734,
+   "etiqueta": "Sum driftsinntekter",
+   "actual": "103 265 385",
+   "anterior": "72 329 234",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 735,
+   "etiqueta": "Lønn og sosiale kostnader",
+   "actual": "39 653 489",
+   "anterior": "31 814 620",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 736,
+   "etiqueta": "Ordinære avskrivninger",
+   "actual": "7 924 786",
+   "anterior": "7 690 523",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 737,
+   "etiqueta": "Nedskrivninger",
+   "actual": "0",
+   "anterior": "3 015 783",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 738,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "54 059 334",
+   "anterior": "36 197 536",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 739,
+   "etiqueta": "Sum driftskostnader",
+   "actual": "101 637 609",
+   "anterior": "78 718 462",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 740,
+   "etiqueta": "**DRIFTSRESULTAT**",
+   "actual": "1 627 776",
+   "anterior": "-6 389 228",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 742,
+   "etiqueta": "Annen renteinntekt",
+   "actual": "83 976",
+   "anterior": "35 180",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 743,
+   "etiqueta": "Annen rentekostnad",
+   "actual": "2 745 855",
+   "anterior": "3 070 553",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 744,
+   "etiqueta": "Annen finanskostnad",
+   "actual": "-6 534",
+   "anterior": "4 884",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 745,
+   "etiqueta": "**RESULTAT AV FINANSPOSTER**",
+   "actual": "-2 655 345",
+   "anterior": "-3 040 257",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 746,
+   "etiqueta": "**ORDINÆRT RESULTAT PØR SKATTEKOSTNAD**",
+   "actual": "-1 027 569",
+   "anterior": "-9 429 485",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 747,
+   "etiqueta": "Skattekostnad på ordinært resultat",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 748,
+   "etiqueta": "**ÅRSRESULTAT**",
+   "actual": "-1 027 569",
+   "anterior": "-9 429 485",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b28",
+   "linea": 1206,
+   "etiqueta": "Gevinst ved salg av spillere",
+   "actual": "878 347",
+   "anterior": "7 557 137",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Netto gevinst ved salg av spillere"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1207,
+   "etiqueta": "Tap ved salg av spillere",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Netto gevinst ved salg av spillere"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1208,
+   "etiqueta": "**Netto gevinst ved salg av spillere**",
+   "actual": "878 347",
+   "anterior": "7 557 137",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Netto gevinst ved salg av spillere"
+  },
+  {
+   "bloque": "b12",
+   "linea": 986,
+   "etiqueta": "Lønninger",
+   "actual": "4 036 896",
+   "anterior": "4 778 069",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b12",
+   "linea": 987,
+   "etiqueta": "Arbeidsgivenavgift",
+   "actual": "1 009 076",
+   "anterior": "894 568",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b12",
+   "linea": 988,
+   "etiqueta": "Personalkostnader fra Viking FK*",
+   "actual": "33 182 545",
+   "anterior": "23 234 570",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b12",
+   "linea": 989,
+   "etiqueta": "Pensjonskostnad (OTP)**",
+   "actual": "163 189",
+   "anterior": "596 899",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b12",
+   "linea": 990,
+   "etiqueta": "Andre personalkostnader",
+   "actual": "1 261 783",
+   "anterior": "2 310 514",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b12",
+   "linea": 991,
+   "etiqueta": "**Sum lønnskostnader**",
+   "actual": "39 653 489",
+   "anterior": "31 814 620",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 734,
+  "actual": "103 265 385"
+ },
+ "total_gastos": {
+  "linea": 739,
+  "actual": "101 637 609"
+ },
+ "resultado": {
+  "linea": 748,
+  "actual": "-1 027 569",
+  "anterior": "-9 429 485"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Annen rentekostnad' (L743, 2 745 855) como gasto financiero positivo aunque la suma de L742-L744 no reproduce exactamente -2 655 345 por el signo de L744?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Annen rentekostnad",
+   "texto": "83 976 - 2 745 855 - (-6 534) = -2 655 345, o sea 'Annen finanskostnad' -6 534 es un costo negativo; se cargan tal cual impresos (L742-L745).",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Se usaron las columnas derechas (KONSERN) del estado b7; las izquierdas son MORSELSKAP. Notas b28 y b12 coinciden en ingresos de venta de jugadores y en salarios (iguales para matriz y consolidado). El cuadro de disposición (L749-L752) es de la matriz y no se extrajo."
+}

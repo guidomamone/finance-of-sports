@@ -1,0 +1,38 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2023.pdf",
+ "generado": "2026-10-20T19:48:47.843Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-20: Viking Fotball AS presenta Konsernregnskap en 2017-2024 (con Viking Stadion AS, 100%, el estadio del club): mismo perímetro que el 2025 ya cargado (consolidado), coherencia de la serie (CONVENCIONES-DATOS, perímetro))"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2023.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "01.01.2023 - 31.12.2023"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "viking-no",
+ "year": 2023,
+ "cortadoEn": "filas"
+}
