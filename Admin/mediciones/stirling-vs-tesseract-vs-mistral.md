@@ -56,3 +56,36 @@ Unos 0,9 a 3,4 s por página. Costo local: US$ 0 (la arrancada de Stirling tarda
 **Ahorro estimado.** Con 0 de 6, el ahorro medido es US$ 0. Con una muestra tan chica, el ahorro real podría ser 0 o hasta de un tercio de los escaneos (no puedo acotarlo mejor con 6). La cola pendiente de `estado.mjs`: 8.073 PDFs sin transcripción (~US$ 1.591, no todos son escaneos: los digitales ya tienen el texto propio, gratis) y 317 escaneos sin validar (~US$ 48). Para tener un número hay que repetir la medición con unos 30 escaneos y cerrar las sumas de verdad (extraer + verificar), no con el proxy de acá.
 
 **Riesgo.** Una lectura local puede cerrar las sumas y tener mal un número fuera de ellas (notas, comparativos, cifras que el proyecto muestra). En los cuatro documentos donde Stirling halló 26/30, 7/9 y 8/9 de las líneas, faltaban 43/189, 51/168 y 35/139 de las cifras del documento: eso es lo que se perdería sin darse cuenta si las sumas cerraran. Si se hace el híbrido, la compuerta tiene que exigir además el chequeo de cifras de `validar-bloques` contra el PDF, no solo las sumas.
+
+## Parte A del híbrido: 10 ejercicios noruegos de Viking sin `.md` (2026-10-20)
+
+Elegí Viking porque es el único club de la lista de 63 (`crawl4ai-noruega-lista.md`) que tiene PDFs sin `.md` y no es Vålerenga ni Aalesund:
+2017, 2018, 2019, 2020, 2021, 2023 y 2024 (el 2022 no está en la carpeta) y, para llegar a 10, Viking 2012, 2014 y 2016 (fuera de la lista).
+Los diez son escaneos (el PDF no trae texto). Mistral (`pipeline.mjs`, etapa 2, ensayo US$ 1,96): costó **US$ 1,44** reales. Esos diez `.md` quedan como transcripción normal.
+
+| Viking | Págs. | Stirling (s) | check-transcripcion-fidelidad | Cifras de Mistral (4+ díg.) que Stirling halla | Págs. con cifras completas |
+|---|---|---|---|---|---|
+| 2012 | 13 | 41 | sin hallazgos | 87/145 (60%) | 7/13 |
+| 2014 | 19 | 56 | sin hallazgos | 136/151 (90%) | 11/19 |
+| 2016 | 23 | 70 | P3 páginas cortas | 101/157 (64%) | 12/23 |
+| 2017 | 25 | 75 | sin hallazgos | 96/171 (56%) | 13/25 |
+| 2018 | 23 | 71 | sin hallazgos | 132/182 (73%) | 10/23 |
+| 2019 | 23 | 65 | P3 páginas cortas | 95/182 (52%) | 12/23 |
+| 2020 | 23 | 68 | P3 páginas cortas | 131/184 (71%) | 12/23 |
+| 2021 | 25 | 77 | sin hallazgos | 138/176 (78%) | 18/25 |
+| 2023 | 24 | 70 | P3 páginas cortas | 136/180 (76%) | 17/24 |
+| 2024 | 29 | 87 | P3 páginas cortas | 143/191 (75%) | 20/29 |
+
+**Resultado: 0 de 10 habrían pasado sin Mistral.** Stirling halla entre 52% y 90% de las cifras que Mistral leyó, y en ningún documento todas las páginas con cifras salen completas. El chequeo de fidelidad, otra vez, deja pasar casi todo (marcas de página y placeholders, no números). Además Stirling trae entre 68 y 138 cifras por documento que Mistral no tiene (partidas de dígitos o lecturas mal hechas; no se sabe cuál de los dos tiene razón sin el PDF a mano). No medí "las sumas cierran con lo impreso" para estos diez porque no tienen filas extraídas: hacerlo es extraer y verificar sobre la lectura de Stirling (API de Claude); con una cobertura de 52 a 90% no vale la pena, ya fallaría. Costo de Mistral que el híbrido habría ahorrado en estos diez: US$ 0 de US$ 1,44.
+
+## Parte B: detector gratis de orientación (`tesseract --psm 0`)
+
+Por página, `tesseract --psm 0` da el giro (`Rotate`). Se giró cada página antes del OCR y se volvió a medir (cifras cargadas que aparecen en la lectura):
+
+| PDF | Giros detectados | Tesseract psm 6 sin giro → con giro | Stirling sin giro → con giro |
+|---|---|---|---|
+| Sporting CP 1999 | págs. 1 y 2: 90° | 4% → 15% | 4% → 22% |
+| Sporting CP 2000 | págs. 1 y 2: 90° | 3% → 21% | 3% → 45% |
+| Sarpsborg 2015, Fredrikstad 2014 y 2015, Ferroviária 2015-b | ninguno | sin cambio | 90/88/94/83% → 83/88/100/83% (ruido) |
+
+El detector arregla las páginas dadas vuelta y mejora a Stirling en Sporting (de 3-4% a 22-45%), pero ni así llega a lo que cierra las sumas, y en los documentos sin páginas giradas no cambia nada. Gratis, ~1 s por página.
