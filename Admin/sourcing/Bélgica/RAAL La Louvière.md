@@ -30,3 +30,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 Color de marca: null — en.wikipedia: colores verde y blanco, camiseta local mayormente blanca (DH, nov-2025); blanco con acento, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf` (sourceId `raallalouviere-be-wf-2024-2025-2677fac4`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2018 desde `Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.pdf` (sourceId `raallalouviere-be-jaarrekening-2018-06-30-individual`).
