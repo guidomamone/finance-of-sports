@@ -34,3 +34,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Bélgica/Patro Eisden/jaarrekening-2023-06-30-individual.pdf` (sourceId `patroeisden-be-jaarrekening-2023-06-30-individual`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.pdf` (sourceId `patroeisden-be-jaarrekening-2022-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2014 desde `Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.pdf` (sourceId `patroeisden-be-jaarrekening-2014-06-30-individual`).

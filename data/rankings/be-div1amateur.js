@@ -56,4 +56,13 @@ window.RANKINGS["be-div1amateur"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.548],["Otros ingresos",0.017]] },
     ],
   },
+  2014: {
+    leagueSize: 36,
+    wiki: {"t":"2013–14 Belgian Third Division","lang":"en","at":"2026-10-19","n":36},
+    clubs: [
+      { id:"patroeisden-be", revenue:0.369, reportType:"official_balance_sheet",
+        sourceId:"patroeisden-be-jaarrekening-2014-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.364],["Otros ingresos",0.004]] },
+    ],
+  },
 };
