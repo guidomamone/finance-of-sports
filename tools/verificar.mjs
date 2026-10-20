@@ -986,7 +986,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // corta): solo si NINGUNA lectura cerró, se prueban las lecturas 4 y 5 sin esas filas. Compuerta: cierra EXACTO. Caso: Lierse SK 2025 (L255-256),
   // Brutomarge 2.706.155 y debajo "Waarvan: niet-recurrente bedrijfsopbrengsten" 82.200; Patro Eisden 2025 (1.810). Antes, un ajuste `fila` en 0.
   let escalonDeLosCuales = false;
-  const esDeLosCuales = (f) => f.tipo === 'renglon' && DE_LOS_CUALES_RE.test(normalizar(f.etiqueta || ''));
+  // (to-do 298 r2) También una fila que el .md imprime debajo de un encabezado "Analysed as" (hasta 3 líneas antes, en la misma tabla): el
+  // desglose del renglón de arriba ("Exceptional items" ya dentro de "Administrative expenses", West Ham 2020-21 a 2023-24). Misma compuerta.
+  const lineasMdAs = (() => { try { return readFileSync(resolve(ROOT, md), 'utf8').split('\n'); } catch { return []; } })();
+  const bajoAnalysedAs = (f) => { for (let i = f.linea - 2; i >= Math.max(0, f.linea - 4); i--) { const t = lineasMdAs[i] || ''; if (!t.startsWith('|')) return false; if (/^\|\s*[*_]*\s*analysed as\b/i.test(t)) return true; } return false; };
+  const esDeLosCuales = (f) => f.tipo === 'renglon' && (DE_LOS_CUALES_RE.test(normalizar(f.etiqueta || '')) || (f.linea && bajoAnalysedAs(f)));
   if (!E && [...ing4, ...gas4, ...ing5, ...gas5].some(esDeLosCuales)) {
     for (const [n, i0, g0] of [[4, ing4, gas4], [5, ing5, gas5]]) {
       const e = evaluar(n, false, null, { ing: i0.filter((f) => !esDeLosCuales(f)), gas: g0.filter((f) => !esDeLosCuales(f)) });
