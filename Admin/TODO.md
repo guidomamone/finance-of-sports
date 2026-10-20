@@ -25,6 +25,9 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (en marcha)**
+* 292: lo que queda: Colombia (Tolima, La Equidad, Bucaramanga y Águilas Doradas, con tokens de sesión; los `estados-financieros-2025` de Tolima, La Equidad y Bucaramanga sin estado de resultados, a descartados) y La Louvière 2020 (2 páginas en imagen) --> Onboarding 5
+* 261: lo que queda: Reino Unido (solo la línea del auditor de Celtic 2021-2025) y Noruega (Fredrikstad, Viking FLI 2008-2016, Molde 2016 y 2024) --> Onboarding 4
+* 328: los pasos de una carga con tokens de sesión, reproducible por el script (propuesta de texto para tu ok) --> Docs 1
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
@@ -32,9 +35,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **C. Cargar lo ya transcripto (no se transcribe más; cada sesión con su presupuesto)**
 * 238: Latinoamérica, 161 documentos transcriptos y validados (~US$ 50, en lotes de 5 a 8 clubes; espera tu ok y presupuesto)
-* 261: lo que queda: Reino Unido (solo la línea del auditor de Celtic 2021-2025) y Noruega (Fredrikstad, Viking FLI 2008-2016, Molde 2016 y 2024)
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI con los `.md` que ya hay (criterio decidido; falta implementar), después de Noruega
-* 292: lo que queda: Colombia (Tolima, La Equidad, Bucaramanga y Águilas Doradas, con tokens de sesión; los `estados-financieros-2025` de Tolima, La Equidad y Bucaramanga sin estado de resultados, a descartados) y La Louvière 2020 (2 páginas en imagen) --> Onboarding 5
 * 165 c: altas de los países nuevos, solo con documentos ya transcriptos
 
 **D. Pantallas y distribución (después del 246)**
@@ -54,7 +55,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **F. Orden de la casa**
 * 326: check-in de outreach, el 2026-10-24
 * 257: skills que faltan
-* 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes del Reino Unido corriendo
+* 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes corriendo en ningún worktree
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
 * 51: proceso de mails a clubes
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
