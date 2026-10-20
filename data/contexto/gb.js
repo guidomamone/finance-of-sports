@@ -77,6 +77,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2019: {"estadio":"Elland Road","capacidad":37890,"sponsor":"32Red","marca":"Kappa","temporada":"2018–19 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372863678"},
     2020: {"estadio":"Elland Road","capacidad":37890,"sponsor":"32Red","marca":"Kappa","temporada":"2019–20 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380740679"},
     2022: {"estadio":"Elland Road","capacidad":37792,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Elland Road","capacidad":37608,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Elland Road","capacidad":37608,"sponsor":"BOXT","marca":"Adidas","temporada":"2023–24 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374030992"},
     2025: {"estadio":"Elland Road","capacidad":37608,"sponsor":"Red Bull","marca":"Adidas","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
