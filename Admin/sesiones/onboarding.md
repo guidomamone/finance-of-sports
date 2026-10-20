@@ -165,3 +165,9 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - Cargados 2013 a 2016, 2018 a 2023 y 2025 (11 años con el 2024 anterior). Estadio con fuente y sponsor `sin-fuente` en `contexto-manual.json` para todos los años (el sponsor de camiseta no tiene fuente pública en esos años); ajuste `anio` 2013 para el documento 2010-11 a 2012-13. Cola: perímetro consolidado (el informe 2022-23 dice "konsolidierte Betrachtung"), perfil sin cuotas ni otras secciones (son del Verein), categorías de la GuV de gestión.
 - Rapid Wien 2017 (2016/17) frena: el resultado impreso no cierra con el cuadro (62.001 de diferencia, "Steuern aus Erträgen" +4,7 M); a `Admin/dudas-por-club.md`.
 - Gasto de la sesión: unos US$ 22 de los US$ 30.
+
+### Onboarding 4: Sporting y Vålerenga (2026-10-20, noche)
+- Sporting CP 2009 y 2010 cargados (lote 126; resultado por transacciones de pases a `player_sales`).
+- Vålerenga 2022 y 2023 cargados con la suma del AS y el Elite (283): los 4 documentos por el lote normal (localizar y extraer, ~US$ 0,8; los `.md` ya existían), `estado` b2 en el Elite y perímetro individual de los cuatro, ajuste `suma-con` en cada AS (transferencia 64 M en 2022 y 87,5 M en 2023, "Annen driftskostnad" del AS contra "Overføring fra samarbeidsselskap" del Elite), cuatro líneas `carga` con perímetro `suma` y su nota en `entidades.jsonl`, estadio con fuente y sponsor 2023 `sin-fuente`. Cuidado: la nota pública sale de la evidencia del ajuste; si dice ".md" el audit da P1 (`nota-publica-con-interno`): la evidencia va sin nombres de archivo.
+- Aalesund: no se hizo. Hay 16 pares (AS 2008-2025 y FLI 2008-2024, sin 2018) con `.md`, pero no hay una fila de transferencia entre las dos (AS: Lønnskostnad 7,3 M; FLI 40,8 M en 2023) ni una cláusula de colaboración como la de Vålerenga: primero hay que decidir si corresponde sumar y cómo.
+- Gasto de la sesión: unos US$ 24 de los US$ 30.
