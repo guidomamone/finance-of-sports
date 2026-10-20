@@ -183,9 +183,21 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2012 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"molde-no", revenue:16.868, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2012",
+        mix:[["Cuotas Sociales",0.042],["Comercial / Sponsors",3.804],["Estadio",3.721],["Televisión",6.44],["Premios por competencias",0.668],["Venta de Jugadores",0.086],["Otros ingresos",2.107]] },
       { id:"fredrikstad-no", revenue:4.143, reportType:"official_balance_sheet",
         sourceId:"fredrikstad-no-aarsregnskap-fotballklubb-fli-2012",
         mix:[["Cuotas Sociales",0.016],["Otras secciones deportivas",0.011],["Otros ingresos",4.117]] },
+    ],
+  },
+  2010: {
+    leagueSize: 16,
+    wiki: {"t":"2010 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
+    clubs: [
+      { id:"molde-no", revenue:11.32, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2010",
+        mix:[["Comercial / Sponsors",4.901],["Estadio",2.907],["Premios por competencias",0.129],["Venta de Jugadores",0.287],["Otros ingresos",3.097]] },
     ],
   },
   2009: {
@@ -195,6 +207,15 @@ window.RANKINGS["no-eliteserien"] = {
       { id:"molde-no", revenue:9.555, reportType:"official_balance_sheet",
         sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2009",
         mix:[["Cuotas Sociales",0.04],["Comercial / Sponsors",3.481],["Estadio",3.622],["Televisión",1.467],["Otros ingresos",0.945]] },
+    ],
+  },
+  2008: {
+    leagueSize: 14,
+    wiki: {"t":"2008 Eliteserien","lang":"en","at":"2026-10-19","n":14},
+    clubs: [
+      { id:"molde-no", revenue:7.292, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2008",
+        mix:[["Cuotas Sociales",0.03],["Comercial / Sponsors",3.243],["Estadio",2.311],["Televisión",1.085],["Venta de Jugadores",0.001],["Otros ingresos",0.622]] },
     ],
   },
 };
