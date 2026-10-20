@@ -15,7 +15,7 @@
 // (resultadosData, titulosData, finanzas*) y los supuestos del presupuesto de 5 se copian sin traducir sus claves internas (`legacy_extras`).
 // Una clave que el diccionario no conoce es un error (nunca se descarta ni se adivina): el exportador lo dice y la ida y vuelta lo mide.
 // ============================================================================
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createRequire } from 'node:module';
 import vm from 'node:vm';
@@ -214,7 +214,7 @@ export function diferencias(a, b) {
 const FECHA_RE = /^\d{4}-\d{2}-\d{2}$/;
 const ES_NUM = (x) => typeof x === 'number' && Number.isFinite(x);
 const itemsOk = (a) => Array.isArray(a) && a.every((x) => Array.isArray(x) && (x.length === 2 || x.length === 3) && typeof x[0] === 'string' && ES_NUM(x[1]) && (x.length === 2 || itemsOk(x[2])));
-export function validar(j, { categorias = null } = {}) {
+export function validar(j, { categorias = null, externos = null } = {}) {
   const e = []; const avisos = []; const err = (r, m) => e.push(`${r}: ${m}`); const aviso = (r, m) => avisos.push(`${r}: ${m}`);
   const claves = (o, permitidas, r, obligatorias = []) => { if (!o || typeof o !== 'object' || Array.isArray(o)) { err(r, 'tiene que ser un objeto'); return false; } for (const k of Object.keys(o)) if (!permitidas.includes(k)) err(r, `clave "${k}" que el esquema no conoce`); for (const k of obligatorias) if (!has(o, k)) err(r, `falta "${k}"`); return true; };
   if (!claves(j, ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'management', 'members', 'years', 'budget_overlay', 'squad_transfers', 'results', 'titles', 'legacy_extras'], '', ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'years', 'squad_transfers', 'results', 'titles'])) return { errores: e, avisos };
@@ -225,7 +225,7 @@ export function validar(j, { categorias = null } = {}) {
   const fuentes = new Set(); (Array.isArray(j.sources) ? j.sources : (err('sources', 'tiene que ser una lista'), [])).forEach((s, i) => { const r = `sources[${i}]`; if (!claves(s, Object.values(FUENTE), r, ['id', 'club_id', 'title', 'type', 'reliability'])) return; if (fuentes.has(s.id)) err(r, `id repetido ${s.id}`); fuentes.add(s.id); for (const k of ['id', 'title', 'type', 'reliability']) if (typeof s[k] !== 'string' || !s[k]) err(r, `"${k}" tiene que ser un texto`); });
   const gest = new Set(); if (has(j, 'management')) (Array.isArray(j.management) ? j.management : []).forEach((g, i) => { const r = `management[${i}]`; claves(g, ['id', ...Object.values(GESTION)], r, ['id', 'name', 'first_year', 'last_year']); gest.add(g.id); });
   if (has(j, 'members') && j.members !== null && !ES_NUM(j.members)) err('members', 'número o null');
-  const lineas = (arr, r, lado) => { if (!Array.isArray(arr)) return err(r, 'tiene que ser una lista'); arr.forEach((l, i) => { const rr = `${r}[${i}]`; if (!claves(l, Object.values(LINEA), rr, ['label', 'category', 'amount'])) return; if (typeof l.label !== 'string') err(rr, 'label tiene que ser un texto'); if (!ES_NUM(l.amount)) err(rr, 'amount tiene que ser un número finito'); if (categorias) { const todas = [...categorias.revenue, ...categorias.expense]; if (!todas.includes(l.category)) err(rr, `categoría "${l.category}" que no está en data/category-map.js`); else if (!categorias[lado].includes(l.category)) aviso(rr, `categoría "${l.category}" de ${lado === 'revenue' ? 'gasto' : 'ingreso'} en una línea de ${lado === 'revenue' ? 'ingresos' : 'gastos'}`); } if (has(l, 'items') && !itemsOk(l.items)) err(rr, 'items tiene que ser una lista de [texto, número] o [texto, número, subitems]'); }); };
+  const lineas = (arr, r, lado) => { if (!Array.isArray(arr)) return err(r, 'tiene que ser una lista'); arr.forEach((l, i) => { const rr = `${r}[${i}]`; if (!claves(l, Object.values(LINEA), rr, ['label', 'category', 'amount'])) return; if (typeof l.label !== 'string') err(rr, 'label tiene que ser un texto'); if (!ES_NUM(l.amount)) err(rr, 'amount tiene que ser un número finito'); if (categorias && ![...categorias.revenue, ...categorias.expense].includes(l.category)) err(rr, `categoría "${l.category}" que no está en data/category-map.js`); /* una categoría del otro lado (exceptional_items en ingresos, regla de CONVENCIONES-DATOS; el costo de las camisetas de Atlético Mineiro) NO es un aviso acá: la vigila audit.js (categoria-cruzada) con su lista revisada en tools/audit-ignore.json */ if (has(l, 'items') && !itemsOk(l.items)) err(rr, 'items tiene que ser una lista de [texto, número] o [texto, número, subitems]'); }); };
   const anios = new Set();
   (Array.isArray(j.years) ? j.years : (err('years', 'tiene que ser una lista'), [])).forEach((y, i) => {
     const r = `years[${y && y.fiscal_year}]`; if (!claves(y, ['fiscal_year', 'period_end', 'currency', 'fx', 'source_id', 'report_type', 'management_id', 'revenue', 'expenses', 'financial', 'official_totals', 'adjustments'], r, ['fiscal_year', 'period_end'])) return;
@@ -234,8 +234,8 @@ export function validar(j, { categorias = null } = {}) {
     if (!FECHA_RE.test(y.period_end || '')) err(r, 'period_end AAAA-MM-DD');
     if (has(y, 'currency') && !/^[A-Z]{3}$/.test(y.currency || '')) err(r, `currency "${y.currency}" no es ISO 4217`);
     if (has(y, 'fx')) claves(y.fx, Object.values(FX), `${r}.fx`);
-    if (y.source_id != null && !fuentes.has(y.source_id)) aviso(r, `source_id "${y.source_id}" no está en sources[] (la fuente vive fuera de este archivo)`);
-    if (has(y, 'management_id') && y.management_id !== null && !gest.has(y.management_id)) aviso(r, `management_id "${y.management_id}" no está en management[] (la gestión vive fuera de este archivo)`);
+    if (y.source_id != null && !fuentes.has(y.source_id) && !(externos && externos.fuentes.has(y.source_id))) aviso(r, `source_id "${y.source_id}" no está en sources[] ni en el registro de fuentes de data/clubs.js`);
+    if (has(y, 'management_id') && y.management_id !== null && !gest.has(y.management_id)) { if (!(externos && (externos.gestiones.get(j.club.id) || new Set()).has(y.management_id))) aviso(r, `management_id "${y.management_id}" no está en management[] ni en data/gestiones/ (el id de una gestión es su \"corto\" en minúsculas)`); }
     if (has(y, 'revenue')) lineas(y.revenue, `${r}.revenue`, 'revenue'); if (has(y, 'expenses')) lineas(y.expenses, `${r}.expenses`, 'expense');
     if (has(y, 'financial') && claves(y.financial, Object.values(FINANCIERO), `${r}.financial`)) for (const [k, v] of Object.entries(y.financial)) if (v !== null && !ES_NUM(v)) err(`${r}.financial`, `${k} número o null`);
     if (has(y, 'official_totals') && claves(y.official_totals, Object.values(TOTALES), `${r}.official_totals`)) for (const [k, v] of Object.entries(y.official_totals)) if (v !== null && !ES_NUM(v)) err(`${r}.official_totals`, `${k} número o null`);
@@ -243,6 +243,18 @@ export function validar(j, { categorias = null } = {}) {
   });
   if (has(j, 'budget_overlay') && claves(j.budget_overlay, Object.keys(j.budget_overlay), 'budget_overlay')) for (const [y, o] of Object.entries(j.budget_overlay)) { claves(o, [...Object.values(OVERLAY), 'fx'], `budget_overlay.${y}`); if (o.revenue) lineas(o.revenue, `budget_overlay.${y}.revenue`, 'revenue'); if (o.expenses) lineas(o.expenses, `budget_overlay.${y}.expenses`, 'expense'); }
   return { errores: e, avisos };
+}
+// Las referencias que NO viven en el data file del club: las fuentes registradas en data/clubs.js (`const sources`) y las gestiones de
+// data/gestiones/<país>.js (CLUB_GESTIONES[club]; el id de una gestión es su `corto` en minúsculas y sin tildes).
+export function referenciasExternas() {
+  const sb = { console, window: {} }; sb.window.window = sb.window; const ctx = vm.createContext(sb);
+  vm.runInContext(readFileSync(resolve(ROOT, 'data/clubs.js'), 'utf8'), ctx);
+  const fuentes = new Set(Object.keys(vm.runInContext('typeof sources !== "undefined" ? sources : {}', ctx)));
+  const g = { console, window: {} }; g.window.window = g.window; const gc = vm.createContext(g);
+  for (const f of readdirSync(resolve(ROOT, 'data/gestiones'))) if (f.endsWith('.js')) vm.runInContext(readFileSync(resolve(ROOT, 'data/gestiones', f), 'utf8'), gc);
+  const norm = (t) => String(t).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const gestiones = new Map(Object.entries(g.window.CLUB_GESTIONES || {}).map(([club, lista]) => [club, new Set(lista.map((x) => norm(x.corto || x.nombre)))]));
+  return { fuentes, gestiones };
 }
 export function categoriasDelSitio() {
   const ctx = vm.createContext({ window: {} }); vm.runInContext(readFileSync(resolve(ROOT, 'data/category-map.js'), 'utf8'), ctx);
