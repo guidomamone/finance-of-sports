@@ -188,6 +188,15 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.016],["Otras secciones deportivas",0.011],["Otros ingresos",4.117]] },
     ],
   },
+  2010: {
+    leagueSize: 16,
+    wiki: {"t":"2010 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
+    clubs: [
+      { id:"molde-no", revenue:11.32, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2010",
+        mix:[["Comercial / Sponsors",4.901],["Estadio",2.907],["Premios por competencias",0.129],["Venta de Jugadores",0.287],["Otros ingresos",3.097]] },
+    ],
+  },
   2009: {
     leagueSize: 16,
     wiki: {"t":"2009 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
