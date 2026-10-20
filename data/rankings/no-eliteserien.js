@@ -138,6 +138,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2014 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"molde-no", revenue:13.53, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2014",
+        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",4.974],["Estadio",2.791],["Televisión",3.501],["Premios por competencias",0.099],["Otros ingresos",2.131]] },
       { id:"sarpsborg08-no", revenue:6.076, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2014",
         mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",2.063],["Estadio",0.737],["Televisión",0.83],["Venta de Jugadores",1.27],["Otros ingresos",1.142]] },
