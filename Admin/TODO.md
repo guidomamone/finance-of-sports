@@ -32,7 +32,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **C. Abaratar antes del onboarding grande**
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor) --> Pipeline 6
-* 298: mejoras de script (z2, Westerlo 2015 de 18 meses y Aston Villa de 13, en votación; x2, el chequeo de fidelidad que no mira cifras; g2, condicional) --> Pipeline
+* 298: mejoras de script (z2, el escalón de cargar.mjs para la transición de más de 12 meses (regla ya votada); x2, el chequeo de fidelidad que no mira cifras; g2, condicional) --> Pipeline
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -40,7 +40,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 261: Reino Unido: cargados 34 años de los lotes 97 a 99 y 106; quedan 25 casos de verificar del lote 106 (Leeds, Liverpool, Sunderland, Wolves) y volver a correr el 98; 4 escaneos sin estado de resultados (fijar con el ajuste `estado`, como Fulham); Newcastle 2020-21 (11 meses: falta validar la transcripción de 2019-20); Fulham 2021-22 (correr el 104 con --reintentar); el alta de Celtic (3 casos, color, liga y gestión) y sus otros años; la cola de transcripción por Mistral. Detalle: `Admin/Archive/sesion-finanzas-5-2026-10-20-cierre.md` --> Onboarding 4
 * 165 c: altas de los países nuevos que faltan --> Onboarding 5
 * 195: gestiones (presidentes) sin fuente confirmada (casi todas esperan respuesta del club)
-* 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia --> votación (Auditora)
+* 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia (criterio ya decidido; falta implementar: transcribir y verificar Vålerenga, registrar la suma en entidades.jsonl, la nota en Finanzas) --> sesión propia, después de Noruega
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
@@ -252,14 +252,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    x2) `check-transcripcion-fidelidad.js` da "sin hallazgos" aunque la transcripción no tenga ninguna de las cifras del documento: mira
    marcas de página y placeholders, no números (medido en el 314, 0 de 11 cifras halladas y sin hallazgos). No sirve de guardia para un
    motor nuevo; un chequeo de cifras contra el PDF (validar-bloques) sí.
-   z2) (también Aston Villa 2023-24, 13 meses por cambio de cierre de mayo a junio, precedente Wolves 2025: la compuerta de `cargar.mjs`,
-   `per.meses < 12`, no reconoce una transición de más de 12 meses con importes del año anterior; Aston Villa se carga con la compuerta
-   salteada a mano esa sola vez) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
-   ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
-   2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
-   con ajustes si el resultado sigue exacto). El detalle,
-   con líneas y montos, en `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
-   `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
+   z2) DECIDIDO por votación (2026-10-20, REGLA en CONVENCIONES-DATOS): un ejercicio de transición de más de 12 meses con importes del
+   año anterior se carga como el año del cierre, sin tope. Falta el escalón de `cargar.mjs` que hoy lo frena (Westerlo 2015, Aston Villa 2023-24).
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Medido otra vez el 2026-10-19 con 1.011 club-años (`node tools/estimar.mjs --medir --detalle`): sigue en 50%,
