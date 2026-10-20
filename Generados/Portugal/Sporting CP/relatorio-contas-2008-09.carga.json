@@ -1,14 +1,12 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.pdf",
- "generado": "2026-10-20T22:12:54.111Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"(Custos)/Proveitos com transacções de pa\" -> other_expenses 0"
-  }
- ],
+ "generado": "2026-10-20T22:13:25.967Z",
+ "frena": [],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)"
+  "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
+  "ingresos: ningún total impreso igual a la suma de las líneas (46.225); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-55.616); queda la suma, verificada por el resultado del ejercicio",
+  "respuesta de la cola del otro lado: \"(Custos)/Proveitos com transacções de passes de jogadores\" (player_sales) se mudan sin cambiar su efecto y el resultado cierra con el impreso (to-do 237 f)"
  ],
  "ejercicio": {
   "clubId": "sportingcp-pt",
@@ -125,6 +123,16 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(Custos)/Proveitos com transacções de passes de jogadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": -0.597,
+    "disclosureLevel": "aggregated",
+    "_pag": 95,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola (del otro lado: se muda sin cambiar su efecto, to-do 237 f)"
    }
   ],
   "expenseLines": [
@@ -407,16 +415,6 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "(Custos)/Proveitos com transacções de passes de jogadores",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -0.597,
-    "disclosureLevel": "aggregated",
-    "_pag": 95,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado"
    }
   ],
   "fiscalYearMeta": {
@@ -449,8 +447,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 46.822,
-   "officialTotalExpenses": 56.213,
+   "officialTotalRevenue": 46.225,
+   "officialTotalExpenses": 55.616,
    "officialPAT": -13.349
   },
   "source": {
@@ -1088,17 +1086,17 @@
    "label": "(Custos)/Proveitos com transacções de passes de jogadores",
    "page": 95,
    "native": 0.597,
-   "ladoDoc": "expense",
+   "ladoDoc": "revenue",
    "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))",
-   "signoFijo": 0.597,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado",
+   "signoFijo": -0.597,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola (del otro lado: se muda sin cambiar su efecto, to-do 237 f)",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
-   "destino": "expense",
+   "notaGuido": "Claude 2026-10-20: resultado por transacciones de pases de jugadores: player_sales (convención ya cargada)",
+   "destino": "revenue",
    "amountNative": -0.597
   },
   {
@@ -1156,37 +1154,27 @@
    "verificacion (nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Outros custos operacionais\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Amortizações e perdas de imparidade com passes de jogadores\")": "gastos sin signo (se invierten)",
-   "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))": "gastos con signo",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 46.822,
-  "expSum": -56.213,
-  "officialTotalRevenue": 46.822,
-  "officialTotalExpenses": 56.213,
+  "revSum": 46.225,
+  "expSum": -55.616,
+  "officialTotalRevenue": 46.225,
+  "officialTotalExpenses": 55.616,
   "officialPAT": -13.349,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "impreso",
-   "gastos": "impreso"
+   "ingresos": "por-resultado",
+   "gastos": "por-resultado"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
    "pag": null,
    "M": -13.349,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
-  },
-  "revImpreso": {
-   "label": "total de ingresos (verificado)",
-   "pag": null,
-   "M": 46.822
-  },
-  "expImpreso": {
-   "label": "total de gastos (verificado)",
-   "pag": null,
-   "M": 56.213
   }
  },
  "liga": {
@@ -1237,10 +1225,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
-  "lineasIngreso": 11,
-  "lineasGasto": 29,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 12,
+  "lineasGasto": 28,
   "metaFilas": 4,
   "excluidas": 0
  }

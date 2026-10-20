@@ -1526,6 +1526,76 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): pt-primeiraliga, verificado contra roster cacheado de "2009–10 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
 ```
 
+## 2009
+
+### Ingresos
+
+```text
+2009: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Sporting CP/relatorio-contas-2008-09.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Quotizações | pág. 114, precedente |
+| 2 | Direitos Televisivos | pág. 114, precedente |
+| 3 | Bilheteira | pág. 114, Jev 1 |
+| 4 | Bilhetes de Época | pág. 114, precedente |
+| 5 | Patrocínios e Publicidade | pág. 114, precedente |
+| 6 | Merchandising e Licenciamento | pág. 114, precedente |
+| 7 | Serviços Diretos | pág. 114, precedente |
+| 8 | Outras | pág. 114, precedente |
+| 9 | Participações nas Competições Europeias | pág. 115, precedente |
+| 10 | Benefícios contratuais | pág. 115, precedente |
+| 11 | Outras | pág. 115, precedente |
+| 12 | (Custos)/Proveitos com transacções de passes de jogadores | pág. 95, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 116, precedente |
+| 2 | Trabalhos especializados | pág. 116, precedente |
+| 3 | Organização de jogos | pág. 116, precedente |
+| 4 | Deslocações e Estadas | pág. 116, precedente |
+| 5 | Honorários | pág. 116, precedente |
+| 6 | Comissões | pág. 116, precedente |
+| 7 | Seguros | pág. 116, Claude 0.85 |
+| 8 | Equipamentos Desportivos | pág. 116, precedente |
+| 9 | Publicidade e Propaganda | pág. 116, precedente |
+| 10 | Outros FSE | pág. 116, precedente |
+| 11 | Remunerações Órgãos Sociais | pág. 116, precedente |
+| 12 | Remunerações do Pessoal | pág. 116, Claude 0.85 |
+| 13 | Encargos com remunerações | pág. 116, precedente |
+| 14 | Seguros | pág. 116, Claude 0.85 |
+| 15 | Outros | pág. 116, precedente |
+| 16 | Amortizações excluindo depreciação do plantel | pág. 95, precedente |
+| 17 | Ajustamentos de dívidas a receber | pág. 117, Jev 1 |
+| 18 | Provisão para complemento de Pensões de Reforma | pág. 117, precedente |
+| 19 | Outras provisões para riscos e encargos | pág. 117, precedente |
+| 20 | Cedência de Jogadores de terceiros | pág. 117, precedente |
+| 21 | Quotizações | pág. 117, precedente |
+| 22 | Imposto de Selo | pág. 117, precedente |
+| 23 | Multas e outras penalidades | pág. 117, precedente |
+| 24 | Penalidades Contratuais | pág. 117, precedente |
+| 25 | Prospecção de Mercado | pág. 117, precedente |
+| 26 | Outros | pág. 117, precedente |
+| 27 | Amortizações do exercício - Futebol profissional | pág. 118, precedente |
+| 28 | Perdas por imparidade - Futebol profissional | pág. 118, precedente |
+
+### Meta
+
+```text
+2009: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2009-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): pt-primeiraliga, verificado contra roster cacheado de "2008–09 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
+```
+
 ## 2008
 
 ### Ingresos
@@ -2085,7 +2155,7 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
 ### Liga
@@ -2153,7 +2223,7 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors
 ```
 
 ### Liga
@@ -2380,4 +2450,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sportingcp-pt-relatorio-contas-2008-09
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

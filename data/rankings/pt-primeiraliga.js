@@ -433,6 +433,9 @@ window.RANKINGS["pt-primeiraliga"] = {
       { id:"benfica-pt", revenue:73.993, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-prestacao-contas-2009-11-03",
         mix:[["Cuotas Sociales",11.629],["Comercial / Sponsors",17.014],["Estadio",12.066],["Televisión",14.238],["Premios por competencias",1.227],["Venta de Jugadores",11.623],["Otros ingresos",6.197]] },
+      { id:"sportingcp-pt", revenue:65.334, reportType:"official_balance_sheet",
+        sourceId:"sportingcp-pt-relatorio-contas-2008-09",
+        mix:[["Cuotas Sociales",6.264],["Comercial / Sponsors",8.715],["Estadio",14.418],["Televisión",15.229],["Premios por competencias",14.134],["Venta de Jugadores",-0.844],["Otros ingresos",7.418]] },
     ],
   },
   2008: {
