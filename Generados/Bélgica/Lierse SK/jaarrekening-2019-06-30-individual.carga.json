@@ -1,21 +1,11 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.pdf",
- "generado": "2026-10-19T14:54:32.855Z",
- "frena": [
-  {
-   "etapa": "periodo",
-   "motivo": "el documento cubre un período otro de 12 meses al 2019-06-30: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ninguna fila de ingresos con categoría aceptable"
-  }
+ "generado": "2026-10-20T18:30:41.877Z",
+ "frena": [],
+ "avisos": [
+  "primer ejercicio de la sociedad (12 meses, desde 2018-07-09): la columna del año anterior no tiene importes; se carga como el año, con nota pública",
+  "ingresos: el documento (esquema abreviado, códigos NBB) no informa ingresos: el resultado cierra con la Brutomarge negativa como gasto; officialTotalRevenue 0"
  ],
- "avisos": [],
  "ejercicio": {
   "clubId": "liersesk-be",
   "year": 2019,
@@ -64,7 +54,7 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
+   "officialTotalRevenue": 0,
    "officialTotalExpenses": 0.003851,
    "officialPAT": -0.003878
   },
@@ -74,7 +64,7 @@
    "title": "Lierse SK — jaarrekening-2019-06-30-individual (ejercicio 2019)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.md",
@@ -89,6 +79,11 @@
    "texto": "met betrekking tot het boekjaar dat de periode dekt van 09-07-2018 tot 30-06-2019"
   },
   "confianza": "alta"
+ },
+ "primerEjercicio": {
+  "meses": 12,
+  "inicio": "2018-07-09",
+  "cierre": "2019-06-30"
  },
  "clubId": "liersesk-be",
  "year": 2019,
@@ -143,16 +138,6 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -163,11 +148,12 @@
  "totales": {
   "revSum": 0,
   "expSum": -0.003851,
-  "officialTotalRevenue": null,
+  "officialTotalRevenue": 0,
   "officialTotalExpenses": 0.003851,
   "officialPAT": -0.003878,
   "verificacion": {
    "pat": "impreso",
+   "ingresos": "por-resultado",
    "gastos": "impreso"
   },
   "patImpreso": {
@@ -230,8 +216,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 0,
   "lineasGasto": 2,
   "metaFilas": 1,
