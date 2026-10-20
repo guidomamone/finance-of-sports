@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 867 — El tablero cuenta bien lo cargado (2026-10-20) [238]
+
+- `tools/estado.mjs` compara el `cargado` del registro con `quien.mjs --pendientes` y lo regenera si no coincide: 1.852 ejercicios cargados
+  y 0 propuestas listas pendientes (antes contaba 28 que ya estaban en el sitio). Aprobado por la Auditora.
+
 ## Versión 866 — Rapid Wien 2013-2025 (2026-10-20) [238 · rapidwien-at]
 
 - Merge de Onboarding 4: Rapid Wien 2013-2016, 2018-2023 y 2025 (2017 a dudas-por-club).
