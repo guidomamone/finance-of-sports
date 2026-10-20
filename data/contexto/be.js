@@ -46,8 +46,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'lokerentemse-be': {
-    2021: {"temporada":"2020–21 Belgian Division 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375725723"},
-    2022: {"temporada":"2021–22 Belgian Division 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376207467"},
+    2021: {"estadio":"Daknamstadion","temporada":"2020–21 Belgian Division 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375725723","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)","manual":["estadio"]},
+    2022: {"estadio":"Daknamstadion","temporada":"2021–22 Belgian Division 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376207467","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)","manual":["estadio"]},
     2023: {"estadio":"Daknamstadion","temporada":"2022–23 Belgian Division 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353502088","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)","manual":["estadio"]},
     2024: {"estadio":"Daknamstadion","temporada":"2023–24 Belgian National Division 1","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354171109","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)","manual":["estadio"]},
     2025: {"estadio":"Daknamstadion","capacidad":12136,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
@@ -73,7 +73,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Den Dreef","capacidad":10000,"sponsor":"Star Casino","marca":"Stanno","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'patroeisden-be': {
-    2014: {"temporada":"2013–14 Belgian Third Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353501808"},
+    2013: {"estadio":"Gemeentelijk Sportparkstadion","fuente":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen","fuenteManual":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen","manual":["estadio"]},
+    2014: {"estadio":"Gemeentelijk Sportparkstadion","temporada":"2013–14 Belgian Third Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353501808","fuenteManual":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen","manual":["estadio"]},
     2015: {"estadio":"Gemeentelijk Sportparkstadion","capacidad":5000,"temporada":"2014–15 Belgian Second Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353478239","fuenteManual":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen","manual":["estadio"]},
     2016: {"estadio":"Patro-stadion","capacidad":5000,"sponsor":"e.Baillien","marca":"Jartazi","temporada":"2015–16 Belgian Second Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353494562"},
     2017: {"estadio":"Gemeentelijk Sportparkstadion","temporada":"2016–17 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353492624","fuenteManual":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen","manual":["estadio"]},
