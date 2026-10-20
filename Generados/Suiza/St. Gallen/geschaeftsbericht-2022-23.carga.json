@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.pdf",
- "generado": "2026-10-19T16:19:18.848Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Erträge brutto\" -> lump_football_operations 0.45; \"Direkte Kosten\" -> match_organisation_expense 0.4"
-  }
- ],
+ "generado": "2026-10-19T18:42:25.396Z",
+ "frena": [],
  "avisos": [
   "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado. Años cargados: 2025 consolidado",
   "gastos: ningún total impreso igual a la suma de las líneas (-35.16); queda la suma, verificada por el resultado del ejercicio",
@@ -24,9 +19,9 @@
     "amountNative": 37.47,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ertragsminderungen",
@@ -52,13 +47,13 @@
   "expenseLines": [
    {
     "rawLabel": "Direkte Kosten",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -11.154,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Personalaufwand",
@@ -136,7 +131,13 @@
      "renglon": "Erträge brutto",
      "lado": "revenue",
      "importe": 37.47,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations"
+    },
+    {
+     "renglon": "Direkte Kosten",
+     "lado": "expense",
+     "importe": 11.154,
+     "motivo": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos"
     }
    ],
    "grossDebt": null,
@@ -185,11 +186,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 37.47,
    "cat": "lump_football_operations",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations",
    "destino": "revenue",
    "amountNative": 37.47
   },
@@ -230,12 +231,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 11.154,
-   "cat": "match_organisation_expense",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos",
    "destino": "expense",
    "amountNative": -11.154
   },
@@ -376,10 +377,9 @@
   "label": "Noon buying rate de Nueva York (Reserva Federal, H.10) al 2023-06-30"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de ch 2023 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "ch-superleague",
+  "fuente": "roster cacheado de \"2022–23 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"St. Gallen\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -418,14 +418,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de ch 2023 cacheada",
-   "estado": "pendiente"
+   "valor": "ch-superleague",
+   "fuente": "roster cacheado de \"2022–23 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"St. Gallen\"",
+   "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 3,
   "lineasGasto": 6,
   "metaFilas": 2,
