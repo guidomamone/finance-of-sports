@@ -80,6 +80,105 @@ Verificado el 2026-09-28 contra el roster ya cacheado de "2024 Liga DIMAYOR" (ba
 el onboarding de Once Caldas, mismo día) -- Boyacá Chicó apareció ahí mismo, sin fetch nuevo.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Boyaca Chico/estados-financieros-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Taquilla Venta Boletería Masculina | pág. 16, precedente |
+| 2 | Ingresos por Derechos de Televisión | pág. 16, precedente |
+| 3 | Ingresos por auxilio Hotelero - Dimayor | pág. 16, precedente |
+| 4 | Ingresos por auxilio de Transportes - Dimayor | pág. 16, precedente |
+| 5 | Ingresos por auxilio de Arbitraje - Dimayor | pág. 16, precedente |
+| 6 | Ventas por Auxilio de Logística - Dimayor | pág. 16, precedente |
+| 7 | Ingresos por Auxilio de Mejoramientos - Dimayor | pág. 16, precedente |
+| 8 | Ingresos por Auxilios - Federación Colombiana de Futbol | pág. 16, precedente |
+| 9 | Ingresos por Patrocinios recibidos de terceros | pág. 16, precedente |
+| 10 | Ingresos por Servicios de Publicidad | pág. 16, precedente |
+| 11 | Ingresos Videos Oficiales Apuestas 2024 | pág. 16, precedente |
+| 12 | Menos: Devoluciones | pág. 16, precedente |
+| 13 | Intereses | pág. 17, ? 0.6 |
+| 14 | Pasarelas | pág. 17, Jev 0.95 |
+| 15 | Sanitas | pág. 17, Jev 0.97 |
+| 16 | Seguros de Vida Suramericana | pág. 17, Jev 1 |
+| 17 | La Equidad Seguros de Vida | pág. 18, Jev 1 |
+| 18 | Ingresos Federación Colombiana de Futbol | pág. 18, Jev 0.99 |
+| 19 | Otros Ingresos | pág. 18, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Salarios | pág. 16, Jev 1 |
+| 2 | Cesantías | pág. 16, Jev 1 |
+| 3 | Intereses Sobre Cesantías | pág. 16, Jev 0.96 |
+| 4 | Prima de Servicios | pág. 17, Jev 0.97 |
+| 5 | Vacaciones | pág. 17, Jev 0.96 |
+| 6 | Aportes ARP | pág. 17, precedente |
+| 7 | Aportes a Fondo de Pensiones | pág. 17, Jev 0.93 |
+| 8 | Aportes Caja, ICBF, SENA | pág. 17, Claude 0.8 |
+| 9 | Auxilio de Transporte | pág. 17, Jev 0.96 |
+| 10 | Incapacidades | pág. 17, Jev 0.97 |
+| 11 | Bonificaciones | pág. 17, Jev 1 |
+| 12 | Otros Honorarios (*) | pág. 17, precedente |
+| 13 | Gastos de Personal | pág. 18, Claude 0.9 |
+| 14 | Revisoría Fiscal | pág. 18, Jev 1 |
+| 15 | Asesoría Jurídica | pág. 18, Jev 1 |
+| 16 | Asesoría Contable | pág. 18, Jev 1 |
+| 17 | Impuestos | pág. 18, Jev 1 |
+| 18 | Arrendamientos | pág. 18, Jev 0.98 |
+| 19 | Seguros | pág. 18, Jev 0.92 |
+| 20 | Servicio de Aseo | pág. 18, Jev 0.99 |
+| 21 | Teléfono Fijo | pág. 18, Jev 1 |
+| 22 | Teléfono Celular | pág. 19, Jev 1 |
+| 23 | Correo, portes y telegramas | pág. 19, Jev 1 |
+| 24 | Transporte Fletes y Acarreos | pág. 19, Jev 1 |
+| 25 | Otros | pág. 19, Jev 0.95 |
+| 26 | Gastos Notariales | pág. 19, Jev 1 |
+| 27 | Registro mercantil | pág. 19, Jev 1 |
+| 28 | Mantenimiento Construcciones | pág. 19, Jev 0.96 |
+| 29 | Equipo Computación y comunicación | pág. 19, Jev 0.98 |
+| 30 | Clase A | pág. 19, Claude 0.8 |
+| 31 | Clase B | pág. 19, Claude 0.8 |
+| 32 | Derechos de Uso | pág. 19, precedente |
+| 33 | Construcciones y edificaciones | pág. 19, Claude 0.9 |
+| 34 | Flota y Equipo Transporte | pág. 19, Claude 0.9 |
+| 35 | Elementos Aseo | pág. 19, Jev 1 |
+| 36 | Elementos Cafetería | pág. 19, Jev 1 |
+| 37 | Útiles Papelería | pág. 19, Jev 1 |
+| 38 | Fotocopias | pág. 19, Jev 1 |
+| 39 | Combustibles | pág. 19, Jev 1 |
+| 40 | Estampilla al Adulto Mayor 2% | pág. 19, Jev 0.91 |
+| 41 | Estampilla Electrificadora Rural 1% | pág. 19, Claude 0.9 |
+| 42 | casino y restaurante | pág. 19, Jev 0.97 |
+| 43 | Otros gastos | pág. 19, Jev 0.96 |
+| 44 | Gastos de ventas | pág. 3, precedente |
+| 45 | Gastos Bancarios | pág. 20, precedente |
+| 46 | Gravamen 4 * 1000 | pág. 20, Jev 0.92 |
+| 47 | Comisiones | pág. 20, Jev 0.96 |
+| 48 | IVA Bancario | pág. 20, Jev 0.98 |
+| 49 | Sanciones DIAN | pág. 20, Claude 0.85 |
+| 50 | Multas SIC | pág. 20, Jev 0.98 |
+| 51 | Embargos Colpensiones | pág. 20, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): co-primeraA, verificado contra roster cacheado de "2025 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia exacta "Boyacá Chicó".
+```
+
 ## 2024
 
 ### Ingresos
@@ -127,3 +226,11 @@ Descargado vía SIIS (siis.ia.supersociedades.gov.co). PAT confirmado doble: Not
 ```
 
 2026-10-15 (to-do 232 ab): 2024 (deuda y caja): de 0 a null. Estaban en 0 por la convención vieja ("0 = no se cargó"); sin dato no es cero. Los completa tools/caja-deuda.mjs si el documento los trae.
+
+### boyacachico-co-estados-financieros-2025
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```

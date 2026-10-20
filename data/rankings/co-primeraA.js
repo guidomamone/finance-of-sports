@@ -38,6 +38,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"unionmagdalena-co", revenue:3.132, reportType:"official_balance_sheet",
         sourceId:"unionmagdalena-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",0.582],["Estadio",0.412],["Televisión",1.959],["Premios por competencias",0.18],["Otros ingresos",-0.001]] },
+      { id:"boyacachico-co", revenue:2.477, reportType:"official_balance_sheet",
+        sourceId:"boyacachico-co-estados-financieros-2025",
+        mix:[["Comercial / Sponsors",0.505],["Estadio",0.065],["Televisión",2.106],["Premios por competencias",0.195],["Otros ingresos",-0.394]] },
     ],
   },
   2024: {
