@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 841 — Suiza, Bélgica y el alta de Turquía (2026-10-20)
+
+* Luzern 2023, St. Gallen 2021 y 2024, Lierse SK 2019, Patro Eisden 2014 y Lokeren-Temse 2021-2022. Turquía, país nuevo: alta de
+  Beşiktaş con 2023 (Süper Lig, Vodafone Park). Frenados: St. Gallen 2020 (en frenados-por-script) y Patro Eisden 2013 y 2015 (sponsor sin
+  fuente).
+
 ## Versión 840 — Los datos como JSON con esquema, fase 1 (2026-10-20)
 
 * 245 fase 1: esquema JSON por club, exportador, validador y prueba de ida y vuelta (313 clubes idénticos, 0 errores), sin tocar
