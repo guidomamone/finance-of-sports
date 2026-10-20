@@ -276,6 +276,7 @@ Mitigaciones:
 ### 6 Verificar
 
 - a) Notas: reemplazan a su renglón solo si suman, también anidadas (una fila de una nota abierta por otro cuadro). Se lee la estructura impresa: qué subtotal suma qué, cuadros de detalle que no se suman
+  Si las filas directas no cierran y alguna es un subtotal con filas propias (nota 18 de Beşiktaş: costo de ventas = mercaderías + "Satılan hizmet maliyeti" con sus 11 filas), se prueba otra vez con esas filas también (hasta 3 niveles), con la misma compuerta y el ajuste `desglose` (error del documento) como siempre.
   dos veces, subtotales impresos arriba de sus componentes.
   Si las filas que dicen abrir un renglón no lo cierran, se prueba solo con las del mismo lado (to-do 163: "altri" es renglón de ingresos y
   del 16) y 17), y las notas de intereses también dicen abrir "altri"). Escalón, no regla: como regla rompía Goiás 2025, cuya nota mezcla
@@ -692,7 +693,7 @@ Riesgos:
 - ii) el documento no declara y la moneda no está en el archivo de series (cuáles hay: `node tools/audit.js --fx`).
 
 Mitigaciones:
-- i) si están en una tabla con una fecha por columna, gana la fecha más nueva; si no (frase, años sueltos, activo y pasivo), a la cola;
+- i) si están en una tabla con una fecha por columna (la fecha puede repetirse: importe, tipo y total de cada año; meses en turco incluidos) o en bloques que arrancan con una línea que es solo una fecha ("31.05.2007" y una tabla debajo), gana la fecha más nueva; si el bloque de la fecha más nueva trae varios tipos distintos (Beşiktaş 2006: caja 1,5357, préstamos 1,5442), o si no (frase, años sueltos, activo y pasivo), a la cola;
 - ii) se agrega la moneda al script de series oficiales; mientras tanto, frena.
 
 ### 9 Publicar

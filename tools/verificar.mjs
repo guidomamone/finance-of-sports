@@ -509,6 +509,18 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === f.etiqueta.trim());
       const obj = Math.abs(f[campo] || 0);
       let c = hijas.length >= 2 ? (cerrarNota(obj, hijas, campo, f.u || 0) || cerrarConAjuste(f, hijas, campo)) : null;
+      // (frenado de Beşiktaş 2018) NOTA CON UN SUBTOTAL QUE TIENE FILAS PROPIAS: si las filas que dicen abrir este renglón no lo cierran y alguna
+      // es un subtotal que a su vez tiene filas propias (detalla_a = ese subtotal), se prueba otra vez con esas filas también, en el orden del documento
+      // (hasta 3 niveles). Misma compuerta (cerrarNota). Caso: Beşiktaş 2018, nota 18: "Satışların maliyeti" = mercaderías 68,3 + "Satılan hizmet maliyeti"
+      // 552,1 (subtotal con 11 filas: salarios 393,9...) = 620,3; con las hijas directas sumaba 68,3 y quedaba el total como una línea. (La nota de ese año no suma por un error del documento, 98.157: se abre con el ajuste `desglose`.)
+      if (!c && hijas.some((h) => h.tipo !== 'renglon')) {
+        const conjunto = new Set(hijas); let frontera = hijas.filter((h) => h.tipo !== 'renglon');
+        for (let nivel = 0; nivel < 3 && frontera.length; nivel++) {
+          const nuevas = filas.filter((h) => !conjunto.has(h) && h.detalla_a && frontera.some((s) => s.etiqueta.trim() === h.detalla_a.trim()));
+          nuevas.forEach((h) => conjunto.add(h)); frontera = nuevas.filter((h) => h.tipo !== 'renglon');
+        }
+        if (conjunto.size > hijas.length) { const ampliadas = filas.filter((h) => conjunto.has(h)); c = cerrarNota(obj, ampliadas, campo, f.u || 0) || cerrarConAjuste(f, ampliadas, campo); }
+      }
       // ESCALÓN DEL LADO (to-do 163, problema 1; ok de Guido): si las filas que dicen abrir este renglón no lo cierran, se prueba SOLO con las
       // del mismo lado que el renglón. Nombres repetidos: en el formato italiano "altri" es el renglón de ingresos 5), el 16) y el 17), y las
       // notas de intereses (lado financiero) también dicen abrir "altri" (Bologna 2020-21: 9 filas de ingresos 79.927.218 + 8 de intereses =
