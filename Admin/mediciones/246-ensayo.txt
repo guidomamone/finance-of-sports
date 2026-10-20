@@ -1,0 +1,320 @@
+# 246 — ENSAYO de renombrar-ids (41 ids)
+
+## Archivos a mover (123)
+  data/ar/boca-data.js -> data/ar/boca-ar-data.js
+  fuentes/boca.html -> fuentes/boca-ar.html
+  Admin/carga-clubes/boca.md -> Admin/carga-clubes/boca-ar.md
+  data/ar/river-data.js -> data/ar/river-ar-data.js
+  fuentes/river.html -> fuentes/river-ar.html
+  Admin/carga-clubes/river.md -> Admin/carga-clubes/river-ar.md
+  … 123 en total (data 41, fuentes 41, carga-clubes 41)
+
+## Cambios por regla
+  comillas: 1886
+  sourceId: 2055
+  archivo-data: 117
+  ruta-club: 88
+  club=: 3
+  clave-cola: 1
+  briefing: 179
+  clave: 107
+  audit-ignore: 19
+
+## Archivos tocados por carpeta (355 archivos)
+  Admin/ARQUITECTURA.md: 1 archivos, 19 cambios
+  Admin/CONVENCIONES-DATOS.md: 1 archivos, 4 cambios
+  Admin/PANTALLA.md: 1 archivos, 12 cambios
+  Admin/PIPELINE.md: 1 archivos, 11 cambios
+  Admin/carga-clubes: 30 archivos, 47 cambios
+  Admin/dudas-por-club.md: 1 archivos, 9 cambios
+  Admin/fx-cotizaciones.md: 1 archivos, 1 cambios
+  Admin/gestiones-por-pais: 24 archivos, 168 cambios
+  Admin/outreach: 1 archivos, 2 cambios
+  Admin/registros: 8 archivos, 557 cambios
+  Admin/sourcing: 28 archivos, 40 cambios
+  Generados: 179 archivos, 179 cambios
+  data/auditoria: 5 archivos, 62 cambios
+  data/category-map.js: 1 archivos, 1 cambios
+  data/club-index.js: 1 archivos, 82 cambios
+  data/club-leagues: 6 archivos, 41 cambios
+  data/clubs.js: 1 archivos, 141 cambios
+  data/contexto: 6 archivos, 82 cambios
+  data/entidades: 3 archivos, 21 cambios
+  data/estimados: 10 archivos, 480 cambios
+  data/faltantes: 10 archivos, 498 cambios
+  data/gestiones: 6 archivos, 60 cambios
+  data/rankings: 9 archivos, 312 cambios
+  data/sponsors-indice.js: 1 archivos, 2 cambios
+  data/sponsors.js: 1 archivos, 1438 cambios
+  fuentes.html: 1 archivos, 41 cambios
+  js/finanzas-render.js: 1 archivos, 2 cambios
+  js/principal.js: 1 archivos, 1 cambios
+  metodologia.html: 1 archivos, 1 cambios
+  sitemap.xml: 1 archivos, 41 cambios
+  tools/alta-club.mjs: 1 archivos, 4 cambios
+  tools/audit-ignore.json: 1 archivos, 21 cambios
+  tools/brand-color-reference: 3 archivos, 35 cambios
+  tools/carpetas-clubes.mjs: 1 archivos, 3 cambios
+  tools/club-league-reference: 2 archivos, 10 cambios
+  tools/contexto-manual.json: 1 archivos, 10 cambios
+  tools/data-clubes.js: 1 archivos, 6 cambios
+  tools/estadio-alias.json: 1 archivos, 6 cambios
+  tools/memoria-categorias.mjs: 1 archivos, 2 cambios
+  tools/perfil-clubes.mjs: 1 archivos, 1 cambios
+  tools/reddit-archive-search.mjs: 1 archivos, 2 cambios
+
+## Dudosos: aparece el id viejo y ningún contexto lo reconoció (prosa; quedan como están) — 254
+  Admin/ARQUITECTURA.md:183: racing-pdfs/ y river-pdfs/). Guido pidió el PDF y su transcripción uno al
+  Admin/ARQUITECTURA.md:416: - **Nunca armes un objeto `{ river: X, racing: Y, <club>: Z }` de una sola vez para indexarlo
+  Admin/ARQUITECTURA.md:420: `{ river: riverFiscalYearMeta, racing: racingFiscalYearMeta }`). Usá siempre un ternario
+  Admin/ARQUITECTURA.md:424: encontrás un objeto de este tipo en el código (buscá `river:` seguido de `racing:` en la misma
+  Admin/ARQUITECTURA.md:437: REGLA PERMANENTE, pedido explícito de Guido: "muchos años de racing tienen ambos presupuesto y
+  Admin/ARQUITECTURA.md:438: balance, porque racing tiene de todo en la pagina... para cuando un mismo año tenga both presupuesto
+  Admin/ARQUITECTURA.md:452: 1. El balance real va en los lugares de siempre: `racing{Revenue,Expense}LinesByYear[year]` +
+  Admin/ARQUITECTURA.md:475: `rawLabel`s crudos siempre) — sin esto, la primera carga real (Guido: "no quedó bien racing. porque
+  Admin/COMO-CORRE-EL-PROYECTO.html:525: <tr><td class="mono">4 Validar</td><td>Cada número de esos bloques → confirmado contra una lectura independiente: el texto propio del PDF si es digita
+  Admin/COMO-CORRE-EL-PROYECTO.html:585: <p class="gnote">Cada número de los bloques elegidos tiene que estar confirmado por una segunda lectura independiente. En <code>.validacion.json</code
+  Admin/CONVENCIONES-DATOS.md:379: EJEMPLO-CATEGORÍA: rosariocentral | revenue | Ingresos por ventas tiendas | sponsorship_commercial
+  Admin/PIPELINE.md:132: - i) la etapa 4 confirma cada número contra una fuente independiente;
+  Admin/carga-clubes/atlnacional-co.md:28: para 2025 — EXACTO igual a la suma independiente Revenue-Expenses+
+  Admin/carga-clubes/atlnacional-co.md:82: SIIS como officialPAT por ser la referencia cruzada independiente.
+  Admin/carga-clubes/atlnacional-co.md:140: Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900464187). El PDF trae solo las notas (texto nativo, sin tabla de Estado de Resultado Integr
+  Admin/carga-clubes/flamengo-br.md:22: Demonstrações Financeiras + parecer del auditor independiente + parecer del Conselho Fiscal — PDF
+  Admin/carga-clubes/flamengo-br.md:170: para projetos incentivados foi de R$ 70 milhões"), buena confirmación cruzada independiente.
+  Admin/carga-clubes/flamengo-br.md:326: PDF oficial (texto nativo), descargado del bucket de assets del sitio oficial (ver Admin/sourcing/Brasil/Flamengo.md para cómo se ubicó — la sección d
+  Admin/carga-clubes/fluminense-br.md:181: carta do presidente 2025) — buena confirmación cruzada independiente en los 2 años.
+  Admin/carga-clubes/rayovallecano-es.md:26: tasación de ese derecho de uso por un experto independiente que permitiera
+  Admin/carga-clubes/rayovallecano-es.md:56: reconciliado exacto de forma independiente sumando las 12 líneas
+  Admin/carga-clubes/rayovallecano-es.md:182: PDF oficial (50 págs., con capa de texto real, sin necesidad de OCR). OPINIÓN DE AUDITORÍA CON SALVEDADES (AUDRIA, S.L.): el auditor no pudo confirmar
+  Admin/carga-clubes/rbbragantino-br.md:102: de caixa no fim do exercício 4.256", pág. 5) — cross-check independiente, alta confianza.
+  Admin/carga-clubes/rwdm-be.md:287: John Textor (2021-12-24 a hoy): Compró el 80% del RWDM (L'Avenir 12/1/2022); en su carta del 31/5/2023 dice 'Le 24 décembre 2021 ... je suis devenu pr
+  Admin/carga-clubes/saopaulo-br.md:132: confirmación cruzada independiente).
+  Admin/carga-clubes/unionmagdalena-co.md:33: cruce numérico independiente, solo identidad de firmantes.
+  Admin/dudas-por-club.md:87: argentinosjuniors.com.ar/institucional.
+  Admin/dudas-por-club.md:842: tasación independiente del derecho de uso sobre el Campo de Fútbol de Vallecas (Convenio con la
+  Admin/dudas-por-club.md:881: reconcilia exacto, y coincide de forma independiente con un pasivo NUEVO del balance ese año
+  Admin/gestiones-por-pais/tanda-2026-10-13/resultado-1.json:29: "No se encontró fuente primaria (botafogo.com.br) con la fecha del 3-mar-2022; la fecha sale de resúmenes de prensa del comunicado oficial."
+  Admin/gestiones-por-pais/tanda-2026-10-19/resultado-6.json:29: "John Textor": "Compró el 80% del RWDM (L'Avenir 12/1/2022); en su carta del 31/5/2023 dice 'Le 24 décembre 2021 ... je suis devenu propriétaire major
+  Admin/ligas-por-pais/es.md:37: villarrealcf) todavía NO está acá. Son 20 también, pero no se escribe hasta
+  Admin/outreach/cola/velez-2026-09-26.md:2: club: velez
+  Admin/outreach/contactos.json:10: "source": "WebSearch, snippet de velez.com.ar/prensa — el email en la página está ofuscado (protección de Cloudflare), no se pudo confirmar leyendo el
+  Admin/registros/altas-club.jsonl:205: {"carpeta":"Clubes/Dinamarca/OB/","pais":"Dinamarca","club":"OB","fecha":"2026-10-20T21:30:48.113Z","huella":"b0c130c6e1f72e66b6ab933740570b14b3b3cae4
+  Admin/registros/auditoria.jsonl:7: {"clubId":"alianzalima-pe","anio":2019,"auditor":{"nombre":"TGS Sarrio & Asociados","tipo":"firma"},"dictamen":"sin_salvedades","continuidad":false,"c
+  Admin/registros/auditoria.jsonl:8: {"clubId":"almagro-ar","anio":2018,"auditor":{"nombre":"Francisco Lopedote","tipo":"persona"},"dictamen":"sin_salvedades","continuidad":false,"citas":
+  Admin/registros/auditoria.jsonl:663: {"clubId":"alianzalima-pe","anio":2020,"auditor":{"nombre":"TGS Sarrio & Asociados","tipo":"firma"},"dictamen":"sin_salvedades","continuidad":false,"c
+  Admin/registros/auditoria.jsonl:664: {"clubId":"alianzalima-pe","anio":2021,"auditor":{"nombre":"Ropert, Sarrio y Asociados SC","tipo":"firma"},"dictamen":"sin_salvedades","continuidad":f
+  Admin/registros/categorias-aprendidas.jsonl:16: {"ts":"2026-09-30T19:19:15.978Z","club":"argentinos-juniors","year":"2018","lado":"revenue","label":"Fútbol profesional (Anexo IV)","glosa":null,"cate
+  Admin/registros/categorias-aprendidas.jsonl:17: {"ts":"2026-09-30T19:19:15.978Z","club":"argentinos-juniors","year":"2018","lado":"revenue","label":"Actividades deportivas y culturales (Anexo IV)","
+  Admin/registros/categorias-aprendidas.jsonl:18: {"ts":"2026-09-30T19:19:15.978Z","club":"argentinos-juniors","year":"2018","lado":"revenue","label":"Diversos (Anexo IV)","glosa":null,"categoria":"ot
+  Admin/registros/categorias-aprendidas.jsonl:321: {"ts":"2026-10-02T02:42:23.498Z","club":"fortaleza-ceif","year":null,"lado":"expense","label":"Industria Y Comercio","padre":"Total Gastos de Administ
+  Admin/registros/categorias-aprendidas.jsonl:323: {"ts":"2026-10-02T02:42:23.498Z","club":"fortaleza-ceif","year":null,"lado":"expense","label":"Responsabilidad Civil Y Extracontractual","padre":"Tota
+  Admin/registros/cola-revision.jsonl:5462: {"tipo":"caso","id":"1354b5c","ts":"2026-10-10T14:16:09.478Z","clave":"Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf|cargar|gestion|goias-br","
+  Admin/registros/cola-revision.jsonl:5527: {"tipo":"respuesta","id":"44e2542","ts":"2026-10-10T14:45:34.203Z","decision":"aceptar","valor":null,"nota":"Levadiakos 2019: L580-583 + L600-606 son 
+  Admin/registros/cola-revision.jsonl:11126: {"tipo":"respuesta","id":"5c55004","ts":"2026-10-19T02:23:38.154Z","decision":"corregir","valor":"no","nota":"Claude 2026-10-18 (subagente Sonnet): La
+  Admin/registros/perfil-clubes.jsonl:260: {"clubId":"adodenhaag-nl","otrosDeportes":false,"otrosDeportesEvidencia":"respuesta 5c55004 en la cola (Claude 2026-10-18 (subagente Sonnet): Las secc
+  Admin/sourcing/Argentina/Argentinos Juniors.md:12: `argentinosjuniors.com.ar/noticias/institucional/informe-contable/` (29/10/2020) tiene 2 imágenes
+  Admin/sourcing/Argentina/Argentinos Juniors.md:72: `argentinosjuniors.mystagingwebsite.com` en un fetch — parece un artefacto de caché/staging del
+  Admin/sourcing/Argentina/Mitre (Santiago del Estero).md:5: (infodelestero.com) sin confirmar de forma independiente esta sesión · regulador/país: no aplica ·
+  Admin/sourcing/Argentina/Mitre (Santiago del Estero).md:62: - **Prensa (infodelestero.com)**: no se pudo confirmar de forma independiente esta sesión — los
+  Admin/sourcing/Argentina/Newells Old Boys.md:14: "Autoconvocados NOB" (grupo independiente de socios/hinchas, NO el club) con cifras derivadas
+  Admin/sourcing/Argentina/Rosario Central.md:7: - Memoria, Ejercicio 2022-23 — rosariocentral.com/wp-content/uploads/2023/10/Memeria-ClubAtleticoRosarioCentral.pdf
+  Admin/sourcing/Argentina/Rosario Central.md:25: URL oficial: `rosariocentral.com/wp-content/uploads/2025/10/Balance.pdf` — nombre genérico, sin año
+  Admin/sourcing/Argentina/Rosario Central.md:38: de esa asamblea (`rosariocentral.com/noticia/fueron-aprobados-memoria-y-balance-en-la-asamblea-
+  Admin/sourcing/Argentina/Rosario Central.md:56: Virtual" (rosariocentral.miclub.info) sigue sin probarse a fondo (portal de socios, likely gateado
+  Admin/sourcing/Argentina/Rosario Central.md:59: - Contacto: sección Socios (rosariocentral.com/socios/) o Prensa (rosariocentral.com/prensa/);
+  Admin/sourcing/Argentina/San Lorenzo.md:16: `sanlorenzo.com.ar/club/noticias/1702688572_ball` — sin PDF adjunto, verificado en el HTML crudo).
+  Admin/sourcing/Argentina/San Lorenzo.md:30: - Archivo oficial de balances — sanlorenzo.com.ar/club/balances (página índice dedicada). Descargados
+  Admin/sourcing/Argentina/San Lorenzo.md:58: - Contacto: la página sanlorenzo.com.ar/club/balances ya es el canal de publicación oficial; para pedir
+  Admin/sourcing/Argentina/San Lorenzo.md:61: - Color de marca: `#00325A` — `theme-color` del sitio oficial (`sanlorenzo.com.ar`), verificado
+  Admin/sourcing/Argentina/Velez Sarsfield.md:4: velez.com.ar/elclubesdelossocios/memorias-estados-contables (página institucional dedicada, la
+  Admin/sourcing/Argentina/Velez Sarsfield.md:8: alojados nativamente en velez.com.ar/pdf/.
+  Admin/sourcing/Argentina/Velez Sarsfield.md:15: `js/finanzas-render.js` que estaban hardcodeados a river/racing, ver detalle en VERSIÓN 82 del
+  Admin/sourcing/Argentina/Velez Sarsfield.md:53: - Contacto: no se relevó sección de contacto específica; formulario general de velez.com.ar o
+  Admin/sourcing/Australia/_notas-generales.md:3: Barrido 1 (Sonnet, 3 agentes) — 2026-10-03. Primer barrido de la región Oceanía: AFL (18 clubes), NRL (16, ver `_notas-NRL.md`), federaciones y franqu
+  Admin/sourcing/Brasil/Athletic Club.md:3: **Ángulos**: sitio oficial: HIT (SAF acfutebol.com.br/transparencia, solo 2023-2025; asociación athleticclub.com.br: piezas 2019, 2021, 2022, 2023, ot
+  Admin/sourcing/Brasil/Athletic Club.md:6: **sitio propio, distinto del sitio del club social**: `athleticclub.com.br` es la asociación (noticias,
+  Admin/sourcing/Brasil/Athletic Club.md:9: los dos está en el footer del sitio del club, no en el menú — buscar solo dentro de `athleticclub.com.br`
+  Admin/sourcing/Brasil/Athletic Club.md:30: - Contacto: acfutebol.com.br/transparencia (SAF); athleticclub.com.br/o-clube/governanca/ (club social, sin
+  Admin/sourcing/Brasil/Athletic Club.md:36: - Nuevo en disco: tres piezas de la **asociación Athletic Club** (CNPJ 24.735.169/0001-58, distinta de la SAF A.C. Esportes) halladas por Wayback CDX 
+  Admin/sourcing/Brasil/Athletic Club.md:42: - **Nuevo en disco** (asociación Athletic Club, NO la SAF): `associacao-relatorio-gestao-financeira-2021.pdf` (2 pp) y `associacao-relatorio-gestao-fi
+  Admin/sourcing/Brasil/Athletic Club.md:43: - La SAF A.C. Esportes (CNPJ 44.637.793/0001-20) no tiene 2021-2022 público en ningún canal hallado: Wix `/transparencia` y `/transparency-portal/fina
+  Admin/sourcing/Brasil/Atletico Goianiense.md:7: directo del portal de transparencia propio del club (atleticogoianiense.com.br/up/TRANSPARENCIA-26/).
+  Admin/sourcing/Brasil/Atletico Goianiense.md:9: (atleticogoianiense.com.br/transparencia-2020.html) no explorada en detalle todavía.
+  Admin/sourcing/Brasil/Atletico Goianiense.md:10: - Contacto: atleticogoianiense.com.br/up/TRANSPARENCIA-26/ (año más reciente);
+  Admin/sourcing/Brasil/Atletico Goianiense.md:11: atleticogoianiense.com.br/transparencia-2020.html (años anteriores, sin explorar).
+  Admin/sourcing/Brasil/Atletico Goianiense.md:19: - La página buena es `atleticogoianiense.com.br/transparencia/financas.html` (los hrefs usan comillas SIMPLES, un regex con comillas dobles no los ve;
+  Admin/sourcing/Brasil/Botafogo-SP.md:15: botafogo.com.br, que es el Botafogo carioca); también indexado en
+  Admin/sourcing/Brasil/Botafogo.md:6: portal de transparencia oficial del propio club (botafogo.com.br/download/transparencia/balanco).
+  Admin/sourcing/Brasil/Botafogo.md:16: - Contacto: botafogo.com.br/download/transparencia/balanco (SAF); static.botafogo.com.br (associação).
+  Admin/sourcing/Brasil/Coritiba.md:3: **Ángulos**: sitio oficial: parcial (coritiba.com.br es SPA Fanbase sin sección de transparencia/DFS visible hoy; los archivos viven en Wayback) · fed
+  Admin/sourcing/Brasil/Coritiba.md:14: - Contacto: federacaopr.sfo3.digitaloceanspaces.com (bucket de la federación); coritiba.com.br,
+  Admin/sourcing/Brasil/Coritiba.md:22: - El sitio actual (`coritiba.com.br`, CMS Fanbase, SPA que devuelve 650 bytes por curl) no tiene ruta de transparencia (`/transparencia` da "Ops! Pare
+  Admin/sourcing/Brasil/Coritiba.md:24: (`coritiba.com.br`, filtro `Balanco|DFS`) lista `/Content/Arquivos/Balancos/DFS ...pdf`, `/ged/Arquivos/Balancos/...` y `/Content/Arquivos/pdfs/balanc
+  Admin/sourcing/Brasil/Cruzeiro.md:13: - Contacto: cruzeiro-website-project-documents.s3.us-east-1.amazonaws.com/Documentos+obrigatórios+SITE/FINANCEIRO/
+  Admin/sourcing/Brasil/Cruzeiro.md:21: - Del Wayback CDX de `cruzeiro.com.br` (ejercicios previos a la SAF, **Cruzeiro Esporte Clube asociación**): `demonstracoes-financeiras-2019.pdf` (46 
+  Admin/sourcing/Brasil/Cruzeiro.md:22: - Los hosts live `cms.cruzeiro.com.br`/`cruzeiro.com.br/ckfinder/...` ya no sirven (dan error/HTML); solo Wayback. Capturas sin truncar.
+  Admin/sourcing/Brasil/Flamengo.md:11: auditor independiente + parecer del Conselho Fiscal — paquete completo, confirmado por texto
+  Admin/sourcing/Brasil/Flamengo.md:48: - Bajados a `Clubes/Brasil/Flamengo/` (nombre `demonstracoes-financeiras-<año>.pdf`, md5 distintos, verificados con `pdftotext` de las primeras página
+  Admin/sourcing/Brasil/Gremio.md:3: **Ángulos**: sitio oficial: HIT (gremio.net/documentos/<archivo>.pdf baja con curl aunque la página /documentos/ da 403) · federación/regulador: no ap
+  Admin/sourcing/Brasil/Gremio.md:9: exercícios findos em 31 de dezembro de 2024 e de 2023", bajado directo de gremio.net/documentos/.
+  Admin/sourcing/Brasil/Gremio.md:11: - Contacto: gremio.net/documentos/ (patrón de archivo `DF_Gremio_FBPA_<año>_Publicacao.pdf`).
+  Admin/sourcing/Brasil/Gremio.md:18: - `gremio.net/documentos/` y `gremio.net/governanca/documentos` dan **403 (también en el Browser pane)**, pero los PDF individuales bajan con curl 200
+  Admin/sourcing/Brasil/Gremio.md:19: predecible (`DF_Gremio_FBPA_2024_Publicacao.pdf` solo vale para 2024; 2023 y 2025 dan 404). Lo que lo resolvió: **Wayback CDX `gremio.net/documentos/*
+  Admin/sourcing/Brasil/Paulistano.md:5: - **Persona jurídica propia** (associação, CNPJ 60.927.472/0001-16). Publica demonstrações financeiras con parecer de auditoría independiente, relatór
+  Admin/sourcing/Brasil/_notas-generales.md:46: presentó demonstração contábil 2025 con auditor independiente el 30/04/2026, pero no se encontró la
+  Admin/sourcing/Canadá/Saskatchewan Roughriders.md:9: - **Canal**: Annual Report completo para la Asamblea Anual (junio), con informe del auditor independiente, estado de situación financiera, de
+  Admin/sourcing/Canadá/Winnipeg Blue Bombers.md:10: - **Canal**: el club publica cada año, en abril, un **Annual Report** completo con informe del auditor independiente, estados no consolidados
+  Admin/sourcing/Canadá/_notas-generales.md:9: rinden cuentas a sus accionistas con un informe anual que incluye informe del auditor independiente. Es el análogo canadiense de
+  Admin/sourcing/Colombia/Atletico Nacional.md:18: independiente Revenue-Expenses+netInterest calculada desde las notas de ingresos/gastos — sin
+  Admin/sourcing/Colombia/Once Caldas.md:28: - Contacto: siis.ia.supersociedades.gov.co (NIT 890801447); oncecaldas.co.
+  Admin/sourcing/España/Deportivo Alavés.md:9: - **Cómo se encontró**: la página `deportivoalaves.com/es/club/transparencia` no devuelve nada útil
+  Admin/sourcing/España/Deportivo Alavés.md:14: la MISMA página de transparencia del club (`deportivoalaves.com/es/club/transparencia`) —
+  Admin/sourcing/España/Deportivo Alavés.md:27: - Contacto: `deportivoalaves.com/es/club/transparencia` (la página real trae TODO el archivo
+  Admin/sourcing/España/FC Barcelona.md:9: `fcbarcelona.es/es/club/organizacion-y-plan-estrategico/comisiones-y-organos/reportes-anuales`
+  Admin/sourcing/España/FC Barcelona.md:18: (`fcbarcelona.es/es/club/transparencia/informacion-legal-institucional-y-economica`), distinta de
+  Admin/sourcing/España/FC Barcelona.md:21: `fcbarcelona.es` SÍ devolvió el listado completo de PDFs directamente vía WebFetch (sin necesitar
+  Admin/sourcing/España/FC Barcelona.md:23: distintos según el año (`fcbarcelona.com/fcbarcelona/document/...`,
+  Admin/sourcing/España/FC Barcelona.md:29: - Contacto: `fcbarcelona.es/es/club/organizacion-y-plan-estrategico/comisiones-y-organos/reportes-anuales`
+  Admin/sourcing/España/FC Barcelona.md:31: `fcbarcelona.es/es/club/transparencia/informacion-legal-institucional-y-economica` (cuentas
+  Admin/sourcing/España/Rayo Vallecano.md:28: tasación de un experto independiente. Es una salvedad de VALORACIÓN DE ACTIVO NO CORRIENTE, no
+  Admin/sourcing/España/Real Madrid.md:13: - **Cómo se encontró**: la página `realmadrid.com/es-ES/el-club/transparencia/informes-economicos`
+  Admin/sourcing/España/Real Madrid.md:14: y `realmadrid.com/es-ES/el-club/transparencia/cuentas-anuales` son SPAs (React/Next) que no sirven
+  Admin/sourcing/España/Real Madrid.md:30: - Contacto: `realmadrid.com/es-ES/el-club/transparencia/informes-economicos` (serie histórica) y
+  Admin/sourcing/España/Real Madrid.md:31: `realmadrid.com/es-ES/el-club/transparencia/cuentas-anuales` (ejercicio más reciente + registro
+  Admin/sourcing/España/Sevilla FC.md:3: **Ángulos**: sitio oficial: agotado (JGA 2025 en mediaverse.sevillafc.hiway.media + archivo legado sevillafc.es/sites/default/files) · Wayback CDX: ag
+  Admin/sourcing/España/Sevilla FC.md:8: la Junta General de Accionistas (`sevillafc.es/el-club/la-entidad/accionista/jga`), que resultó
+  Admin/sourcing/España/Sevilla FC.md:23: 2020-21 en resultados de búsqueda (`sevillafc.es/sites/default/files/documents/CUENTAS ANUALES_JGA
+  Admin/sourcing/España/Sevilla FC.md:27: `sevillafc.es/sites/default/files/documents/` (Drupal) parece rechazar requests sin sesión de
+  Admin/sourcing/España/Sevilla FC.md:32: - Contacto: `sevillafc.es/el-club/la-entidad/accionista/jga` (página JGA, la más productiva) y
+  Admin/sourcing/España/Sevilla FC.md:33: `sevillafc.es/el-club/la-entidad/ley-de-transparencia` (existe pero renderiza vacío para fetch
+  Admin/sourcing/España/Sevilla FC.md:43: Con archive.org de vuelta se barrió `sevillafc.es` (dominio completo) y salieron 4 informes de auditoría + cuentas del archivo legado `sevillafc.es/si
+  Admin/sourcing/España/Valencia CF.md:3: **Ángulos**: sitio oficial: agotado (valenciacf.com/public/Attachment + seguro.valenciacf.com legado) · Wayback CDX: agotado (seguro.valenciacf.com 18
+  Admin/sourcing/España/Valencia CF.md:10: - Todos bajados de `valenciacf.com/public/Attachment/<año>/<mes>/<archivo>.pdf` — un patrón de CDN
+  Admin/sourcing/España/Valencia CF.md:20: página `valenciacf.com/accionistas` (existe, mencionada en resultados de búsqueda, no se navegó a
+  Admin/sourcing/España/Valencia CF.md:24: - Contacto: `valenciacf.com/accionistas` (no explorado a fondo, próximo paso) y
+  Admin/sourcing/España/Valencia CF.md:25: `valenciacf.com/public/Attachment/` (patrón de CDN donde viven los PDFs ya encontrados).
+  Admin/sourcing/España/Valencia CF.md:33: El pendiente de la sesión 2026-09-13 ("probar seguro.valenciacf.com vía Wayback") se resolvió: el subdominio legado SÍ está archivado. Bajados: 2018-1
+  Admin/sourcing/España/Villarreal CF.md:7: - **Gotcha de bloqueo**: el dominio `villarrealcf.es` bloquea con **403 Forbidden** cualquier fetch
+  Admin/sourcing/España/Villarreal CF.md:18: 2021-22 (`villarrealcf.es/wp-content/uploads/2023/02/2.b.ii-CCAA-Villarreal-21-22-firmadas-1.pdf`)
+  Admin/sourcing/España/Villarreal CF.md:23: `villarrealcf.es/wp-content/uploads/<año-subida>/<nombre>.pdf`) en cuanto Wayback esté disponible
+  Admin/sourcing/España/Villarreal CF.md:25: - Contacto: `villarrealcf.es/es/transparencia-economico-financiera/` (la página en sí también
+  Admin/sourcing/España/_notas-generales.md:21: Villarreal CF (`villarrealcf.es/wp-content/uploads/...`), solucionado con Wayback Machine.
+  Admin/sourcing/España/_notas-generales.md:102: (devuelve un HTML con status 200)** y los listados de ese momento (`sevillafc.es` dominio completo,
+  Admin/sourcing/Estados Unidos/Detroit City FC.md:23: | `detroit-city-fc-form-c-ar-fy2025.pdf` | FY2025 | 2026-04-30 | 58 | **con informe de auditor independiente** |
+  Admin/sourcing/Estados Unidos/Green Bay Packers.md:36: resumidos, auditados por una firma independiente (Wipfli LLP). Ese reporte se publica como parte de
+  Admin/sourcing/Estados Unidos/Oakland Ballers.md:6: - **Liga / competencia**: Pioneer League (liga independiente asociada a MLB Draft League; Estados Unidos). El club
+  Admin/sourcing/Estados Unidos/Toronto Raptors.md:14: así que tampoco generan una obligación de disclosure independiente.
+  Admin/sourcing/Estados Unidos/Toronto Raptors.md:53: por Rogers en la transacción — no es deuda pública, no genera disclosure independiente.
+  Admin/sourcing/Guatemala/_notas-generales.md:10: federación en `fedefutguate.gt/informacionpublica/` (ej. informe de auditoría independiente al
+  Admin/sourcing/Guatemala/_notas-generales.md:11: 31-dic-2022/2021, y dictamen de auditor independiente al período 2023) — pero esto es la
+  Admin/sourcing/Inglaterra/Bath Rugby.md:5: - **Deporte**: Rugby union
+  Admin/sourcing/Inglaterra/Bristol Bears.md:6: - **Liga / competencia**: rugby union (Premiership)
+  Admin/sourcing/Inglaterra/Exeter Chiefs.md:6: - **Liga / competencia**: rugby union (Premiership)
+  Admin/sourcing/Inglaterra/Gloucester Rugby.md:6: - **Liga / competencia**: rugby union (Premiership)
+  Admin/sourcing/Inglaterra/Harlequins.md:5: - **Deporte**: Rugby union
+  Admin/sourcing/Inglaterra/Leeds Rugby.md:6: - **Liga / competencia**: rugby league (Super League) + rugby union/cricket en Headingley
+  Admin/sourcing/Inglaterra/Leicester Tigers.md:5: - **Deporte**: Rugby union
+  Admin/sourcing/Inglaterra/London Irish.md:6: - **Liga / competencia**: rugby union (ex Premiership, clausurado)
+  Admin/sourcing/Inglaterra/Northampton Saints.md:5: - **Deporte**: Rugby union
+  Admin/sourcing/Inglaterra/Saracens.md:6: - **Liga / competencia**: rugby union (Premiership)
+  Admin/sourcing/Inglaterra/_notas-generales.md:5: (fútbol, rugby union, cricket y Fórmula 1) porque el hallazgo NO es un canal por deporte: es un
+  Admin/sourcing/Irlanda/UCD.md:15: - Probable que no publique cuentas como club independiente.
+  Admin/sourcing/Italia/Benetton Rugby.md:5: - **Deporte / liga**: rugby union, United Rugby Championship + EPCR.
+  Admin/sourcing/Italia/Biella Rugby.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Fiamme Oro Rugby.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Juve Stabia.md:20: Contexto: Comisión independiente (`vigilanzasport.it`) le aplicó puntos de penalización en 2026 y contestó "truffa aggravata" a Domus S.r.l., la dueña
+  Admin/sourcing/Italia/Mogliano Rugby.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Petrarca Rugby.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Rovigo Delta.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Rugby Calvisano.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Rugby Colorno.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Rugby Lyons.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Rugby Parabiago.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Rugby San Donà.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Rugby Viadana.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Rugby Vicenza.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Valorugby Emilia.md:5: - **Deporte / liga**: rugby union, Serie A Elite 2026/27 (ex Top10) o categoría indicada abajo.
+  Admin/sourcing/Italia/Zebre Parma.md:5: - **Deporte / liga**: rugby union, United Rugby Championship + EPCR. Franquicia federal.
+  Admin/sourcing/Ligas/tff-turquia.md:8: independiente. En la portada hay un `2026TFFFaaliyetRaporu.pdf` (más de 10 MB) que no se pudo leer: no se sabe su período ni si trae estados auditados
+  Admin/sourcing/Montenegro/_notas-generales.md:3: Pasada corta, **sin ningún PDF**. Los sitios de Budućnost, Sutjeska y Mornar (`fkbuducnost.me`, `fksutjeska.me`, `fkmornar.me`) no conectan desde acá 
+  Admin/sourcing/México/Atlas.md:53: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Atlético San Luis.md:50: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Chivas Guadalajara.md:25: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/FC Juárez.md:17: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/León.md:32: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Mazatlán FC.md:35: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Monterrey.md:28: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Necaxa.md:19: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Pachuca.md:29: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Puebla.md:24: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Pumas UNAM.md:34: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Querétaro.md:17: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Santos Laguna.md:24: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Tigres UANL.md:32: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Tijuana.md:20: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/Toluca.md:22: LIGA MX SÍ producen estados financieros dictaminados por un tercero independiente — el **Reglamento
+  Admin/sourcing/México/_notas-generales.md:50: financieros dictaminados por un tercero independiente", conforme a las Normas de Información
+  Admin/sourcing/Sudáfrica/_notas-generales.md:24: externa vs. revisión independiente vs. compilación — nunca la obliga a publicar ante el CIPC.
+  Admin/sourcing/Turquía/Kasımpaşa.md:14: tablolar hakkında bağımsız denetçi raporu" (dictamen del auditor independiente sobre los estados
+  Admin/sourcing/_indice/Brasil.md:33: - [Gremio](../Brasil/Gremio.md) — 1 ejercicio real (2023-2024), no es SAF — **CARGADO al sitio: Ejercicio 2024** · **Barrido 2026-10-03**: 8 ejercicio
+  Admin/sourcing/_indice/Inglaterra.md:104: - [Saracens](../Inglaterra/Saracens.md) — **rugby union (Premiership)** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo: 2026-10-03
+  Admin/sourcing/_indice/Inglaterra.md:118: - [Exeter Chiefs](../Inglaterra/Exeter Chiefs.md) — **rugby union (Premiership)** — 5 ejercicios en disco (grupo), sin cargar al sitio — Último cheque
+  Admin/sourcing/_indice/Inglaterra.md:119: - [Bristol Bears](../Inglaterra/Bristol Bears.md) — **rugby union (Premiership)** — 5 ejercicios en disco (grupo), sin cargar al sitio — Último cheque
+  Admin/sourcing/_indice/Inglaterra.md:120: - [Gloucester Rugby](../Inglaterra/Gloucester Rugby.md) — **rugby union (Premiership)** — 5 ejercicios en disco, sin cargar al sitio — Último chequeo:
+  Admin/sourcing/_indice/Inglaterra.md:121: - [London Irish](../Inglaterra/London Irish.md) — **rugby union (clausurado 2022)** — 5 ejercicios en disco (2016/17-2020/21), sin cargar al sitio — Ú
+  Admin/sourcing/_indice/Inglaterra.md:123: - [Bath Rugby](../Inglaterra/Bath Rugby.md) — **rugby union (Premiership)** — 2 ejercicios reales, ingresos £23,3 M verificados, 16 disponibles — Últi
+  Admin/sourcing/_indice/Inglaterra.md:124: - [Harlequins](../Inglaterra/Harlequins.md) — **rugby union (Premiership)** — 1 ejercicio real (2022/23), 13 disponibles; los 2 últimos son cuentas ab
+  Admin/sourcing/_indice/Inglaterra.md:125: - [Leicester Tigers](../Inglaterra/Leicester Tigers.md) — **rugby union (Premiership)** — 2 ejercicios reales, 12 disponibles — Último chequeo: 2026-0
+  Admin/sourcing/_indice/Inglaterra.md:126: - [Northampton Saints](../Inglaterra/Northampton Saints.md) — **rugby union (Premiership)** — 2 ejercicios reales, 14 disponibles — Último chequeo: 20
+  Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:2115: tercero, el reembolso se reconoce como un activo independiente, siempre que sea prácticamente segura
+  Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:3144: económica y rama de actividad independiente dotada de autonomía funcional o productiva y viabilidad
+  Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:3773: Allocation” o “PPA”) con la asistencia de un experto independiente, concluyéndose la existencia de una
+  Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:4153: valoración independiente mediante el método de Descuento de Flujos de Caja (DCF), considerando los
+  Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:4270: un experto independiente en relación con las inversiones detalladas en esta Nota, a partir del cual se
+  Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:4274: de tasación a un experto independiente en relación con las inversiones detalladas en esta Nota sin que se
+  Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:4294: tasación a un experto independiente a partir del cual se ha procedido a la reversión de deterioro de valor
+  Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:4299: tasación a un experto independiente a partir del cual se ha procedido a la reversión de deterioro de valor
+  Ligas/España/LaLiga/laliga-cuentas-anuales-consolidadas-2024-25.md:9315: de Fútbol Profesional" y sus sociedades dependientes, es un informe independiente al Informe de Gestión,
+  data/lang/en.js:289: "selector.search.ph": "Search a club, a league or a country\u2026  (e.g. \"boca\", \"laliga\", \"japan\")",
+  index.html:100: placeholder="Buscá un club, una liga o un país&#8230;  (ej. &quot;boca&quot;, &quot;laliga&quot;, &quot;japón&quot;)">
+  index.html:729: (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."
+  js/finanzas-render.js:514: : rt === 'unofficial_mirror' ? t('finanzas.banner.mirror', 'Balance real y auditado (informe de auditoría independiente incluido), pero descargado de 
+  js/finanzas-render.js:539: ? t('finanzas.banner.mirror', 'Balance real y auditado (informe de auditoría independiente incluido), pero descargado de una réplica de una comunidad 
+  tools/archivo/mover-comentarios-data.mjs:9: //   node tools/mover-comentarios-data.mjs udinese-it racing          # muda esos clubes (escribe data/ y Admin/carga-clubes/)
+  tools/archivo/onboard.mjs:50: //     node tools/onboard.mjs "Clubes/Argentina/River/estados-contables-2021-2022.pdf" --club river --year 2022
+  tools/archivo/prepare-onboarding.mjs:45: //   node tools/prepare-onboarding.mjs oncecaldas 2025 "Clubes/Colombia/Once Caldas/estados-financieros-2025.md"
+  tools/archivo/prepare-onboarding.mjs:46: //   node tools/prepare-onboarding.mjs river 2021 "Clubes/Argentina/River/estados-contables-2020-2021.md" --out /tmp/briefing.json
+  tools/archivo/prepare-onboarding.mjs:47: //   node tools/prepare-onboarding.mjs river 2021 archivo.md --json   (imprime a stdout, no escribe archivo)
+  tools/auditoria.mjs:159: 'informe de(l)? auditor', 'auditor(es)? independiente', 'dictamen', 'opini[oó]n', 'salvedad', 'revisor fiscal', 'empresa en funcionamiento',
+  tools/brand-color-reference/argentina.json:49: "name": "river plate",
+  tools/brand-color-reference/argentina.json:67: "name": "boca juniors",
+  tools/brand-color-reference/argentina.json:95: "name": "independiente rivadavia",
+  tools/brand-color-reference/argentina.json:157: "name": "velez sarsfield",
+  tools/brand-color-reference/argentina.json:197: "name": "union argentina",
+  tools/brand-color-reference/argentina.json:301: "name": "racing club argentina",
+  tools/brand-color-reference/argentina.json:401: "name": "instituto cordoba",
+  tools/brand-color-reference/brasil.json:23: "name": "mirassol fc",
+  tools/brand-color-reference/colombia.json:155: "name": "union magdalena",
+  tools/brand-color-reference/colombia.json:347: "name": "independiente santa fe",
+  tools/brand-color-reference/colombia.json:379: "name": "independiente medellin",
+  tools/exportar-json.mjs:8: //   node tools/exportar-json.mjs --club mirassol       uno
+  tools/fetch-fx-reference.mjs:57: // segunda fuente independiente día por día (BCE cruzado, SNB fin de mes, ČNB) —
+  tools/fetch-fx-reference.mjs:738: // Contra una segunda fuente oficial independiente, el BCE cruzado (DKK por EUR
+  tools/inventario-transcripciones.mjs:29: //                           segunda transcripción independiente (Gemini o Claude por API).
+  tools/inventario-transcripciones.mjs:37: //   comparacion:<voz>       tools/compare-transcripts.mjs contra otra transcripción independiente.
+  tools/inventario-transcripciones.mjs:181: // 1) Otra voz independiente que ya exista Y coincida (chequeos de Gemini/Claude): la más fuerte.
+  tools/jev-categorizar.mjs:32: //           --sin-mismo-club (los ejemplos salen solo de otros clubes: el caso de un club nuevo), --etiqueta _nombre (no pisa el informe de otra vari
+  tools/ligas-sin-verificar.mjs:126: const linea = src.split('\n').find((l) => new RegExp(`^\\s*'?${d.id}'?:\\s*\\{`).test(l)); // con espacios de alineación ("'fredericia-dk':     {") o 
+  tools/mistral-ocr-transcribe.mjs:111: > total mal leído puede colar igual si no hay una fuente independiente para comparar). Borrar esta
+  tools/outreach-send.js:21: //   club: velez
+  tools/reddit-archive-search.mjs:14: //   node tools/reddit-archive-search.mjs subs boca
+  tools/resolver-inventario.mjs:623: // 2) Escaneo (o texto ilegible): hace falta una segunda voz independiente.
+  tools/suggest-category-precedent.mjs:38: //   node tools/suggest-category-precedent.mjs oncecaldas "DIMAYOR" "Patrocinio"
+  tools/suggest-category-precedent.mjs:39: //   node tools/suggest-category-precedent.mjs oncecaldas "DIMAYOR" --side revenue
+  tools/suggest-category-precedent.mjs:40: //   node tools/suggest-category-precedent.mjs oncecaldas --stdin   (una etiqueta por línea)
+  tools/suggest-category-precedent.mjs:41: //   node tools/suggest-category-precedent.mjs oncecaldas --list    (vuelca todo el precedente, los 2 lados)
+  tools/suggest-category-precedent.mjs:42: //   node tools/suggest-category-precedent.mjs oncecaldas "DIMAYOR" --json
+  tools/suggest-category-precedent.mjs:98: const union = new Set([...a, ...b]).size;
+  tools/suggest-category-precedent.mjs:99: return union === 0 ? 0 : inter / union;
+  tools/validar-bloques.mjs:14: //      de cobertura): Gemini lee LA IMAGEN de esa página (tools/gemini-transcribe.mjs sobre un PDF de una sola página), independiente de
+  tools/verify-numbers.mjs:10: // Es independiente del formato de tablas: no mira rubros ni columnas, solo el CONJUNTO de números
