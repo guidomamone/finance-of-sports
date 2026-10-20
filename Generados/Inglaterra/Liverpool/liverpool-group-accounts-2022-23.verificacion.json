@@ -1,0 +1,162 @@
+{
+ "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.md",
+ "generado": "2026-10-20T18:51:26.540Z",
+ "estado": "ok",
+ "clubId": "liverpool-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.pdf",
+   "campo": "cierre",
+   "valor": "2023-05-31",
+   "linea": null,
+   "motivo": "Consolidated Profit and Loss Account 'for the year ended 31 May 2023' (pág. 14 del visor); el 2024-02-29 del registro es el sello de presentación",
+   "evidencia": ".md b3",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.pdf",
+   "campo": "estado",
+   "valor": "b3",
+   "linea": null,
+   "motivo": "El estado de resultados (Consolidated Profit and Loss Account and Other Comprehensive Income, pág. 14 del visor) es el bloque b3; el lote lo dejaba 'sin estado de resultados'",
+   "evidencia": "pág. 14 del visor",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 593.836 cierra; además se suman 1 línea(s) fuera de ese total (33.767)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 6.217248937900877e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 622.395; el sitio tiene 622.395"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 622.395 en liverpool-group-accounts-2021-22.pdf y 622.395 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (498.159 contra 561.517, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Turnover\"): ¿Se deja afuera de la carga el desglose 'By geographical market' de Turnover (L1012-L1016) por duplicar el desglose por actividad?",
+  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): aceptar, en liverpool-group-accounts-2021-22.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 498.159,
+   "objetivo": 561.517
+  }
+ ],
+ "totales": {
+  "ingresos": 627.603,
+  "gastos": 632.06,
+  "financiero": -4.548,
+  "impuesto": 2.075,
+  "resultadoImpreso": -6.93,
+  "resultadoParaCargar": -6.93,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Media",
+   "lado": "ingreso",
+   "M": 241.553,
+   "pagina": 26,
+   "linea": 1008,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 272.523,
+   "pagina": 26,
+   "linea": 1009,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Match day",
+   "lado": "ingreso",
+   "M": 79.76,
+   "pagina": 26,
+   "linea": 1010,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 33.767,
+   "pagina": 14,
+   "linea": 527,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 70.543,
+   "pagina": 14,
+   "linea": 524,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 561.517,
+   "pagina": 14,
+   "linea": 526,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 1.614,
+   "linea": 529
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -6.162,
+   "linea": 530
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss/ profit on ordinary activities",
+   "M": 2.075,
+   "linea": 532
+  }
+ ]
+}

@@ -2,7 +2,7 @@ window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'arsenal-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2022: 'gb-premierleague', 2023: 'gb-premierleague' },
-  'liverpool-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2022: 'gb-premierleague' },
+  'liverpool-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2022: 'gb-premierleague', 2023: 'gb-premierleague' },
   'mancity-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2021: 'gb-premierleague', 2023: 'gb-premierleague', 2022: 'gb-premierleague' },
   'everton-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2022: 'gb-premierleague', 2023: 'gb-premierleague' },
   'tottenham-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2022: 'gb-premierleague', 2023: 'gb-premierleague' },

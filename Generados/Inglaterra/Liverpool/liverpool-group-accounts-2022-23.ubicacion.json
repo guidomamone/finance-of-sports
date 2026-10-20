@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.md",
  "mdSha1": "c06683db3a98c8d94d8ef69c0b3aae346cac27c3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T17:19:41.963Z",
+ "generado": "2026-10-20T18:50:18.586Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -263,29 +264,40 @@
    "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b10",
+  "b15"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b13",
+  "b16",
+  "b17"
+ ],
  "escala": "miles",
- "escala_evidencia": "2023 £000 (encabezado de b3)",
+ "escala_evidencia": "Encabezado: '2023 £000 | 2022 £000'",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "2023 £000",
+ "columna_anterior": "2022 £000",
+ "perimetro": "consolidado",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se confirma que este documento (cuentas al 31 May 2023) no contiene el estado de resultados del ejercicio que cierra el 2024-02-29?",
+   "pregunta": "¿Se cargan como salarios del plantel los importes de 'Wages and salaries' del cuadro de costos de personal (b13), sabiendo que incluyen a todo el personal y no solo a los jugadores?",
    "propuesta": "sí",
-   "tema": "cuadro-de-otro-anio",
-   "renglon": "",
-   "texto": "El estado de resultados consolidado (b3) es 'for the year ended 31 May 2023', con columnas 2023 y 2022; no hay ningún período cerrado en febrero de 2024.",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 4 (b13) da los costos de personal agregados del Group sin separar jugadores del resto; el cuadro b12 solo trae número de empleados por categoría.",
    "bloques": [
-    "b3"
+    "b13",
+    "b12"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "El documento corresponde al ejercicio cerrado el 31-05-2023 (Consolidated Profit and Loss Account, b3, con notas b10, b11, b13, b15, b16 y b17). No trae ninguna cifra del ejercicio que cierra el 2024-02-29, por lo que se marca sin_estado. Además, solo hay estado de resultados consolidado del grupo; no hay uno individual separado."
+ "observaciones": "El documento presenta el estado de resultados consolidado del grupo (b3); no hay cuenta de resultados individual, solo balance de la Company (b5). La nota 2 Turnover (b10) desglosa los ingresos por actividad (Media, Commercial, Matchday) y por geografía. La nota 3 (b11) detalla partidas incluidas en los gastos administrativos (amortización e impairment de jugadores, depreciación, auditoría). La nota 4 (b13) informa los costos de personal: Wages and salaries, Social security y Pension. Las notas 6, 7 y 8 (b15, b16, b17) abren los intereses cobrados, los intereses pagados y el impuesto. Se excluye b18, que es una conciliación de impuestos."
 }

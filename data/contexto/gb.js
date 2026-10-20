@@ -85,6 +85,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'liverpool-gb': {
     2022: {"estadio":"Anfield","capacidad":53394,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Anfield","capacidad":53394,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
