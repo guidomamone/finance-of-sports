@@ -4,7 +4,7 @@
 //
 // POR QUÉ. Para las gestiones (to-do 195) los subagentes abrían la página completa de un club en Wikipedia y se caían por tamaño. Casi
 // siempre alcanza con la ficha (presidente, fundación) o con UNA sección ("History", "Presidents", "Historia", "Presidentes"). Esto baja
-// SOLO eso, por la API de MediaWiki (wikitext crudo, sin resumen de un modelo: mismo criterio que fetch-club-league-reference.mjs) y lo
+// SOLO eso, por la API de MediaWiki (HTML renderizado, para que las plantillas ya vengan expandidas; sin resumen de un modelo: mismo criterio que fetch-club-league-reference.mjs) y lo
 // devuelve como texto plano corto, con la URL de la página y la sección como fuente.
 //
 // USO:
