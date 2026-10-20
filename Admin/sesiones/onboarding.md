@@ -208,3 +208,4 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 ### Onboarding 6: Stuttgart (2026-10-20)
 - VfB Stuttgart 2023 y 2024: `officialPAT` a la línea 21 "Jahresüberschuss" (antes de los minoritarios), como Hoffenheim, Augsburg y Eintracht: 0,777 M (antes 0,679; konzernabschluss-2023.md L917) y 15,533 M (antes 15,443; 2024 L1149). `tax` recalculado por diferencia (-0,480 y -2,491). Ajustes `resultado-final` con la cita. ASSET_V 1510.
 - Gimnasia LP: la `publicNote` de 2024 y 2025 ya había entrado (instrucción de la Auditora, tanda 2); la principal pide no tocarlo. Si Guido lo prefiere, se revierte quitando las dos líneas `publicNote` de `data/ar/gimnasiaesgrima-ar-data.js`.
+- Gimnasia LP: `publicNote` de 2024 y 2025 sacada (pedido de la principal: el caso espera a Guido); datos como estaban. ASSET_V 1511.
