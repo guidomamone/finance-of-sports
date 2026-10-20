@@ -52,7 +52,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
 **F. Técnico: herramientas a probar y datos para afuera (cuando haya tiempo; nada urgente)**
-* 314: Stirling PDF contra los PDFs difíciles (escaneos, tablas rotadas), comparado con Tesseract y Mistral
 * 316: detector de documentos nuevos (la prueba de brreg está; boceto escrito; mejora el 252)
 * 317: Supabase como espejo de lectura de un país, para auditar en SQL (experimento descartable)
 * 318: Open Notebook sobre las transcripciones de un país, para encontrar patrones
@@ -349,10 +348,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
         con Higgsfield (321);
     (d) un calendario: qué liga o club se publica cada semana, para no repetir;
     (e) enlaces a `/club/<id>` con tarjeta al compartir (241) y medir qué publicaciones traen visitas. Depende de 241 y 246.
-314. PROBAR STIRLING PDF (idea, 2026-10-19). Levantarlo en Docker local y medirlo contra los PDFs que hoy dan más trabajo (escaneos, tablas
-    rotadas, filas que no concilian), contra Tesseract y Mistral: una tabla "PDF difícil → motor → fidelidad contra los totales oficiales".
-    No cambia nada del pipeline; si gana en algún caso, se diseña un escalón con el ok de Guido. Conectado con el costo de Mistral (298) y
-    con los escaneos del 261.
 316. DETECTOR DE DOCUMENTOS NUEVOS (idea, 2026-10-19; optimiza el 252). Prueba del 315 hecha (2026-10-20): `tools/listar-brreg.mjs` lista
     los ejercicios de Noruega en brreg sin bajar nada (~0 tokens, 225 s); 63 ejercicios de 6 clubes noruegos no están cargados, pero los
     PDFs ya están en `Clubes/Noruega`: el hueco es de carga. Boceto en `Admin/mediciones/boceto-vigilar-portal-316.md`. Crawl4AI, para el

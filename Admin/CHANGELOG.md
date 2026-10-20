@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 837 — Stirling PDF no reemplaza a Mistral (2026-10-20)
+
+* 314 cerrado: Stirling PDF (Tesseract con enderezado) lee 52-94% de las cifras de los escaneos, contra 100% de Mistral; en 6 escaneos
+  cargados y 10 de Viking sin cargar, 0 habrían pasado sin Mistral. El detector de orientación (`tesseract --psm 0`) arregla páginas
+  dadas vuelta (Sporting 1999 y 2000), pero no alcanza. Detalle en `Admin/mediciones/stirling-vs-tesseract-vs-mistral.md`. Viking 2012,
+  2014, 2016-2021, 2023 y 2024 quedan transcriptos con Mistral (US$ 1,44).
+
 ## Versión 836 — Listar un regulador sin navegador (2026-10-20)
 
 * `tools/listar-brreg.mjs`: lista los ejercicios de los clubes noruegos en brreg con pedidos HEAD, sin bajar nada. Noruega tiene 63
