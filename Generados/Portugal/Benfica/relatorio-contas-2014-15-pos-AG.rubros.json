@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.pdf",
   "club": "benfica-pt",
   "year": 2015,
-  "generatedAt": "2026-10-16T01:34:17.245Z",
+  "generatedAt": "2026-10-20T22:45:47.898Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,37 +34,17 @@
       "values": [
         8.682
       ],
-      "glosa": "Servicios corporativos y hospitality"
+      "glosa": "Corporativo"
     },
     {
-      "label": "LIGA NACIONAL",
+      "label": "RECEITAS DE BILHETEIRA",
       "lado": "revenue",
       "page": 117,
-      "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\" > desglose de \"RECEITAS DE BILHETEIRA\"",
+      "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\"",
       "values": [
-        4.254
+        5.2
       ],
-      "glosa": "Liga nacional"
-    },
-    {
-      "label": "LIGA DOS CAMPEDES",
-      "lado": "revenue",
-      "page": 117,
-      "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\" > desglose de \"RECEITAS DE BILHETEIRA\"",
-      "values": [
-        0.729
-      ],
-      "glosa": "Liga de Campeones"
-    },
-    {
-      "label": "PARTICULARES",
-      "lado": "revenue",
-      "page": 117,
-      "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\" > desglose de \"RECEITAS DE BILHETEIRA\"",
-      "values": [
-        0.217
-      ],
-      "glosa": "Particulares"
+      "glosa": "Ingresos de taquilla"
     },
     {
       "label": "BILHETES DE ÉPOCA",
@@ -94,7 +74,7 @@
       "values": [
         2.341
       ],
-      "glosa": "Arrendamiento de espacios"
+      "glosa": "Alquiler de espacios"
     },
     {
       "label": "OUTROS",
@@ -114,7 +94,7 @@
       "values": [
         14.522
       ],
-      "glosa": "Premios UEFA"
+      "glosa": "Premios de la UEFA"
     },
     {
       "label": "INDEMNIZAÇÕES DE SEGUROS",
@@ -134,7 +114,7 @@
       "values": [
         1.35
       ],
-      "glosa": "Cánones y regalías"
+      "glosa": "Regalías"
     },
     {
       "label": "ASSISTÊNCIA TÉCNICA",
@@ -164,7 +144,7 @@
       "values": [
         72.78
       ],
-      "glosa": "Enajenaciones de derechos federativos"
+      "glosa": "Enajenaciones de derechos de deportistas"
     },
     {
       "label": "CEDÊNCIA DE DIREITOS BENFICA STARS FUND",
@@ -194,7 +174,7 @@
       "values": [
         5.697
       ],
-      "glosa": "Servicios profesionales independientes"
+      "glosa": "Trabajos especializados"
     },
     {
       "label": "DESLOCAÇÕES E ESTADAS",
@@ -214,7 +194,7 @@
       "values": [
         2.654
       ],
-      "glosa": "Reparaciones y conservación"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "HOMORÁRIOS",
@@ -254,7 +234,7 @@
       "values": [
         1.71
       ],
-      "glosa": "Servicios de catering y bebidas"
+      "glosa": "Servicios de catering y refrescos"
     },
     {
       "label": "ELETRICIDADE",
@@ -314,7 +294,7 @@
       "values": [
         1.071
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratas"
     },
     {
       "label": "DESPESAS MÉDICAS",
@@ -364,7 +344,7 @@
       "values": [
         0.463
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "REMUNERAÇÕES VARIÁVEIS",
@@ -374,7 +354,7 @@
       "values": [
         0.095
       ],
-      "glosa": "Retribuciones variables"
+      "glosa": "Remuneraciones variables"
     },
     {
       "label": "REMUNERAÇÕES FIXAS",
@@ -384,7 +364,7 @@
       "values": [
         40.087
       ],
-      "glosa": "Retribuciones fijas"
+      "glosa": "Remuneraciones fijas"
     },
     {
       "label": "REMUNERAÇÕES VARIÁVEIS",
@@ -394,7 +374,7 @@
       "values": [
         9.138
       ],
-      "glosa": "Retribuciones variables"
+      "glosa": "Remuneraciones variables"
     },
     {
       "label": "INDEMNIZAÇÕES",
@@ -424,7 +404,7 @@
       "values": [
         4.773
       ],
-      "glosa": "Cargas sociales sobre salarios"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "SEGUROS DE ACIDENTES DE TRABALHO",
@@ -484,7 +464,7 @@
       "values": [
         0.014
       ],
-      "glosa": "Utillaje y herramientas"
+      "glosa": "Herramientas y utillaje"
     },
     {
       "label": "EQUIPAMENTO ADMINISTRATIVO",
@@ -552,7 +532,7 @@
       "page": 124,
       "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
       "values": [
-        -0.55
+        0.55
       ],
       "glosa": "Dotación a provisiones para otros riesgos"
     },
@@ -562,7 +542,7 @@
       "page": 124,
       "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
       "values": [
-        1.388
+        -1.388
       ],
       "glosa": "Reversión de provisiones para otros riesgos"
     },
@@ -572,7 +552,7 @@
       "page": 124,
       "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
       "values": [
-        -1.022
+        1.022
       ],
       "glosa": "Dotación por deterioro de clientes/deudores"
     },
@@ -582,9 +562,9 @@
       "page": 124,
       "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
       "values": [
-        1.174
+        -1.174
       ],
-      "glosa": "Reversión del deterioro de clientes/deudores"
+      "glosa": "Reversión de deterioro de clientes/deudores"
     },
     {
       "label": "REFORÇO DE IMPARIDADES DE DIREITOS DE TV",
@@ -592,9 +572,9 @@
       "page": 124,
       "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
       "values": [
-        -0.197
+        0.197
       ],
-      "glosa": "Dotación por deterioro de derechos de televisión"
+      "glosa": "Dotación por deterioro de derechos de TV"
     },
     {
       "label": "IMPOSTOS",
@@ -604,7 +584,7 @@
       "values": [
         1.354
       ],
-      "glosa": "Tributos"
+      "glosa": "Impuestos"
     },
     {
       "label": "OUTROS GASTOS E PERDAS OPERACIONAIS",
@@ -617,16 +597,6 @@
       "glosa": "Otros gastos y pérdidas de explotación"
     },
     {
-      "label": "",
-      "lado": "expense",
-      "page": 92,
-      "section": "estado",
-      "values": [
-        106.474
-      ],
-      "glosa": ""
-    },
-    {
       "label": "AMORTIZAÇÕES DE DIREITOS DE ATLETAS",
       "lado": "expense",
       "page": 125,
@@ -634,7 +604,7 @@
       "values": [
         30.423
       ],
-      "glosa": "Amortizaciones de derechos federativos"
+      "glosa": "Amortizaciones de derechos de deportistas"
     },
     {
       "label": "REVERSÃO DE IMPARIDADES",
@@ -654,7 +624,7 @@
       "values": [
         7.806
       ],
-      "glosa": "Gastos asociados a enajenaciones de derechos federativos"
+      "glosa": "Gastos asociados a enajenaciones de derechos de deportistas"
     },
     {
       "label": "ALIENAÇÕES DE DIREITOS DE ATLETAS",
@@ -664,7 +634,7 @@
       "values": [
         2.319
       ],
-      "glosa": "Enajenaciones de derechos federativos"
+      "glosa": "Enajenaciones de derechos de deportistas"
     },
     {
       "label": "OUTROS GASTOS E PERDAS",
@@ -675,6 +645,26 @@
         3.376
       ],
       "glosa": "Otros gastos y pérdidas"
+    },
+    {
+      "label": "GANHOS EM EMPRESAS ASSOCIADAS",
+      "lado": "expense",
+      "page": 127,
+      "section": "nota que desglosa \"RESULTADOS RELATIVOS A INVESTIMENTOS EM PARTICIPADAS\"",
+      "values": [
+        -0.001
+      ],
+      "glosa": "Ganancias en empresas asociadas"
+    },
+    {
+      "label": "Perdas em empresas associadas",
+      "lado": "expense",
+      "page": 127,
+      "section": "nota que desglosa \"RESULTADOS RELATIVOS A INVESTIMENTOS EM PARTICIPADAS\"",
+      "values": [
+        5.893
+      ],
+      "glosa": "Pérdidas en empresas asociadas"
     }
   ]
 }

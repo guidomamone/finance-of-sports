@@ -1,0 +1,644 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.md",
+ "generatedAt": "2026-10-20T22:46:05.490Z",
+ "rubrosHuella": "3f1a12d20403393120d0a3eadd302f127391a6d7",
+ "rubros": [
+  {
+   "label": "RECEITAS DE TELEVISÃO",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "PATROCÍNIOS E PUBLICIDADE",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "CORPORATE",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\"",
+   "choice": "stadium_other",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "RECEITAS DE BILHETEIRA",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "BILHETES DE ÉPOCA",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\"",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "QUOTIZAÇÕES",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RENDAS DE ESPAÇO",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\"",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "OUTROS",
+   "lado": "revenue",
+   "page": 117,
+   "section": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\"",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "PREMIOS DA UEFA",
+   "lado": "revenue",
+   "page": 118,
+   "section": "nota que desglosa \"OUTROS RENDIMENTOS E SANHOS OPERACIONAIS ^{1)}\"",
+   "choice": "competition_bonus",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "INDEMNIZAÇÕES DE SEGUROS",
+   "lado": "revenue",
+   "page": 118,
+   "section": "nota que desglosa \"OUTROS RENDIMENTOS E SANHOS OPERACIONAIS ^{1)}\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "ROVALTIES",
+   "lado": "revenue",
+   "page": 118,
+   "section": "nota que desglosa \"OUTROS RENDIMENTOS E SANHOS OPERACIONAIS ^{1)}\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "ASSISTÊNCIA TÉCNICA",
+   "lado": "revenue",
+   "page": 118,
+   "section": "nota que desglosa \"OUTROS RENDIMENTOS E SANHOS OPERACIONAIS ^{1)}\"",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "OUTROS RENDIMENTOS OPERACIONAIS",
+   "lado": "revenue",
+   "page": 118,
+   "section": "nota que desglosa \"OUTROS RENDIMENTOS E SANHOS OPERACIONAIS ^{1)}\"",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "ALIENAÇÕES DE DIREITOS DE ATLETAS",
+   "lado": "expense",
+   "page": 125,
+   "section": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\"",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "CEDÊNCIA DE DIREITOS BENFICA STARS FUND",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\"",
+   "choice": "player_sales",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "OUTROS RENDIMENTOS E GANHOS",
+   "lado": "revenue",
+   "page": 125,
+   "section": "nota que desglosa \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\"",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "TRABALHOS ESPECIALIZADOS",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DESLOCAÇÕES E ESTADAS",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "CONSERVAÇÃO E REPARAÇÃO",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "CEDÊNCIA DIREITOS DE IMAGEM",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "wages_squad",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "EQUIPAMENTO DESPORTIVO",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "ELETRICIDADE",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "PUBLICIDADE E PROPAGANDA",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "VIGILÂNCIA E SEGURANÇA",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "RENDAS E ALUGUERES",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "LICENÇA MARCA BENFICA",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "SUBCONTRATOS",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "DESPESAS MÉDICAS",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "LIMPEZA, HIGIENE E CONFORTO",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "ÁGUA E OUTROS FLUÍDOS",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "OUTROS FORNECIMENTOS E SERVIÇOS",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "REMUNERAÇÕES FIXAS",
+   "lado": "expense",
+   "page": 121,
+   "section": "nota que desglosa \"GASTOS COM PESSOAL\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "REMUNERAÇÕES VARIÁVEIS",
+   "lado": "expense",
+   "page": 121,
+   "section": "nota que desglosa \"GASTOS COM PESSOAL\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "INDEMNIZAÇÕES",
+   "lado": "expense",
+   "page": 121,
+   "section": "nota que desglosa \"GASTOS COM PESSOAL\"",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "BENEFÍCIOS PÓS-EMPREGO",
+   "lado": "expense",
+   "page": 121,
+   "section": "nota que desglosa \"GASTOS COM PESSOAL\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "ENCARGOS SOBRE REMUNERAÇÕES",
+   "lado": "expense",
+   "page": 121,
+   "section": "nota que desglosa \"GASTOS COM PESSOAL\"",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "SEGUROS DE ACIDENTES DE TRABALHO",
+   "lado": "expense",
+   "page": 121,
+   "section": "nota que desglosa \"GASTOS COM PESSOAL\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "OUTROS GASTOS COM PESSOAL",
+   "lado": "expense",
+   "page": 121,
+   "section": "nota que desglosa \"GASTOS COM PESSOAL\"",
+   "choice": "wages_squad",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "EDIFÍCIOS E OUTRAS CONSTRUÇÕES",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "EQUIPAMENTO BÁSICO",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "EQUIPAMENTO DE TRANSPORTE",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "FERRAMENTAS E UTENSÍLIOS",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "EQUIPAMENTO ADMINISTRATIVO",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "OUTROS ATIVOS TANGÍVEIS",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIREITOS DE TV",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "other_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIREITO DE UTILIZAÇÃO DA MARCA",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "GALERIA COMERCIAL",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "REFORÇO DE PROVISÕES PARA OUTROS RISCOS",
+   "lado": "expense",
+   "page": 124,
+   "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
+   "choice": "other_amortisation",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS",
+   "lado": "expense",
+   "page": 124,
+   "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
+   "choice": "other_amortisation",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "REFORÇO DE IMPARIDADES DE CLIENTES/DEVEDORES",
+   "lado": "expense",
+   "page": 124,
+   "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES",
+   "lado": "expense",
+   "page": 124,
+   "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "IMPOSTOS",
+   "lado": "expense",
+   "page": 124,
+   "section": "nota que desglosa \"OUTROS GASTOS E PERDAS OPERACIONAIS ^{4)}\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "OUTROS GASTOS E PERDAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 124,
+   "section": "nota que desglosa \"OUTROS GASTOS E PERDAS OPERACIONAIS ^{4)}\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "AMORTIZAÇÕES DE DIREITOS DE ATLETAS",
+   "lado": "expense",
+   "page": 125,
+   "section": "nota que desglosa \"AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS ASSOCIADOS A ALIENAÇÕES DE DIREITOS DE ATLETAS",
+   "lado": "expense",
+   "page": 125,
+   "section": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "OUTROS GASTOS E PERDAS",
+   "lado": "expense",
+   "page": 125,
+   "section": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "GANHOS EM EMPRESAS ASSOCIADAS",
+   "lado": "expense",
+   "page": 127,
+   "section": "nota que desglosa \"RESULTADOS RELATIVOS A INVESTIMENTOS EM PARTICIPADAS\"",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Perdas em empresas associadas",
+   "lado": "expense",
+   "page": 127,
+   "section": "nota que desglosa \"RESULTADOS RELATIVOS A INVESTIMENTOS EM PARTICIPADAS\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "SERVIÇOS DE CATERINE/GOFTDRINK",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "HOMORÁRIOS",
+   "lado": "expense",
+   "page": 119,
+   "section": "nota que desglosa \"FORNECIMENTOS E SERVIÇOS EXTERNOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "REFORÇO DE IMPARIDADES DE DIREITOS DE TV",
+   "lado": "expense",
+   "page": 124,
+   "section": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\"",
+   "choice": "other_amortisation",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_amortisation",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "player_impairment",
+     0.03
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "REVERSÃO DE IMPARIDADES",
+   "lado": "expense",
+   "page": 125,
+   "section": "nota que desglosa \"AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS\"",
+   "choice": "player_impairment",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "player_impairment",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "other_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 1126
+  },
+  {
+   "label": "PRODUÇÃO PRÓPRIA DE CONTÉUDOS",
+   "lado": "expense",
+   "page": 123,
+   "section": "nota que desglosa \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\"",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "depreciation",
+     0.08
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1081
+  }
+ ]
+}

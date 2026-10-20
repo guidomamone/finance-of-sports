@@ -44,6 +44,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2012: {"estadio":"Estádio da Luz","capacidad":65467,"sponsor":"TMN","marca":"Adidas","temporada":"2011–12 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370843885"},
     2013: {"estadio":"Estádio da Luz","capacidad":65467,"sponsor":"MEO","marca":"Adidas","temporada":"2012–13 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380110482"},
     2014: {"estadio":"Estádio da Luz","capacidad":65647,"sponsor":"MEO","marca":"Adidas","temporada":"2013–14 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377657715"},
+    2015: {"estadio":"Estádio da Luz","capacidad":65642,"sponsor":"MEO (home) Moche (away)","marca":"Adidas","temporada":"2014–15 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373543736"},
     2016: {"estadio":"Estádio da Luz","capacidad":64642,"sponsor":"Emirates","marca":"Adidas","temporada":"2015–16 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373035345"},
     2017: {"estadio":"Estádio da Luz","capacidad":64642,"sponsor":"Emirates","marca":"Adidas","temporada":"2016–17 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377252928"},
     2018: {"estadio":"Estádio da Luz","capacidad":64642,"sponsor":"Emirates","marca":"Adidas","temporada":"2017–18 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375124888"},

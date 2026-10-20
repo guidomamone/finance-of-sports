@@ -1033,6 +1033,101 @@ tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento si
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2015–16 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2015
+
+### Ingresos
+
+```text
+2015: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | RECEITAS DE TELEVISÃO | pág. 117, precedente |
+| 2 | PATROCÍNIOS E PUBLICIDADE | pág. 117, precedente |
+| 3 | CORPORATE | pág. 117, precedente |
+| 4 | RECEITAS DE BILHETEIRA | pág. 117, precedente |
+| 5 | BILHETES DE ÉPOCA | pág. 117, precedente |
+| 6 | QUOTIZAÇÕES | pág. 117, precedente |
+| 7 | RENDAS DE ESPAÇO | pág. 117, precedente |
+| 8 | OUTROS | pág. 117, precedente |
+| 9 | PREMIOS DA UEFA | pág. 118, precedente |
+| 10 | INDEMNIZAÇÕES DE SEGUROS | pág. 118, precedente |
+| 11 | ROVALTIES | pág. 118, precedente |
+| 12 | ASSISTÊNCIA TÉCNICA | pág. 118, precedente |
+| 13 | OUTROS RENDIMENTOS OPERACIONAIS | pág. 118, precedente |
+| 14 | ALIENAÇÕES DE DIREITOS DE ATLETAS | pág. 125, precedente |
+| 15 | CEDÊNCIA DE DIREITOS BENFICA STARS FUND | pág. 125, precedente |
+| 16 | OUTROS RENDIMENTOS E GANHOS | pág. 125, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | TRABALHOS ESPECIALIZADOS | pág. 119, precedente |
+| 2 | DESLOCAÇÕES E ESTADAS | pág. 119, precedente |
+| 3 | CONSERVAÇÃO E REPARAÇÃO | pág. 119, precedente |
+| 4 | HOMORÁRIOS | pág. 119, precedente |
+| 5 | CEDÊNCIA DIREITOS DE IMAGEM | pág. 119, precedente |
+| 6 | EQUIPAMENTO DESPORTIVO | pág. 119, precedente |
+| 7 | SERVIÇOS DE CATERINE/GOFTDRINK | pág. 119, precedente |
+| 8 | ELETRICIDADE | pág. 119, precedente |
+| 9 | PUBLICIDADE E PROPAGANDA | pág. 119, precedente |
+| 10 | VIGILÂNCIA E SEGURANÇA | pág. 119, precedente |
+| 11 | RENDAS E ALUGUERES | pág. 119, precedente |
+| 12 | LICENÇA MARCA BENFICA | pág. 119, precedente |
+| 13 | SUBCONTRATOS | pág. 119, precedente |
+| 14 | DESPESAS MÉDICAS | pág. 119, precedente |
+| 15 | LIMPEZA, HIGIENE E CONFORTO | pág. 119, precedente |
+| 16 | ÁGUA E OUTROS FLUÍDOS | pág. 119, precedente |
+| 17 | OUTROS FORNECIMENTOS E SERVIÇOS | pág. 119, precedente |
+| 18 | REMUNERAÇÕES FIXAS | pág. 121, precedente |
+| 19 | REMUNERAÇÕES VARIÁVEIS | pág. 121, precedente |
+| 20 | REMUNERAÇÕES FIXAS | pág. 121, precedente |
+| 21 | REMUNERAÇÕES VARIÁVEIS | pág. 121, precedente |
+| 22 | INDEMNIZAÇÕES | pág. 121, precedente |
+| 23 | BENEFÍCIOS PÓS-EMPREGO | pág. 121, precedente |
+| 24 | ENCARGOS SOBRE REMUNERAÇÕES | pág. 121, precedente |
+| 25 | SEGUROS DE ACIDENTES DE TRABALHO | pág. 121, precedente |
+| 26 | OUTROS GASTOS COM PESSOAL | pág. 121, precedente |
+| 27 | EDIFÍCIOS E OUTRAS CONSTRUÇÕES | pág. 123, precedente |
+| 28 | EQUIPAMENTO BÁSICO | pág. 123, precedente |
+| 29 | EQUIPAMENTO DE TRANSPORTE | pág. 123, precedente |
+| 30 | FERRAMENTAS E UTENSÍLIOS | pág. 123, precedente |
+| 31 | EQUIPAMENTO ADMINISTRATIVO | pág. 123, precedente |
+| 32 | OUTROS ATIVOS TANGÍVEIS | pág. 123, precedente |
+| 33 | DIREITOS DE TV | pág. 123, precedente |
+| 34 | PRODUÇÃO PRÓPRIA DE CONTÉUDOS | pág. 123, Claude 0.8 |
+| 35 | DIREITO DE UTILIZAÇÃO DA MARCA | pág. 123, precedente |
+| 36 | GALERIA COMERCIAL | pág. 123, precedente |
+| 37 | REFORÇO DE PROVISÕES PARA OUTROS RISCOS | pág. 124, precedente |
+| 38 | REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS | pág. 124, precedente |
+| 39 | REFORÇO DE IMPARIDADES DE CLIENTES/DEVEDORES | pág. 124, precedente |
+| 40 | REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES | pág. 124, precedente |
+| 41 | REFORÇO DE IMPARIDADES DE DIREITOS DE TV | pág. 124, precedente |
+| 42 | IMPOSTOS | pág. 124, precedente |
+| 43 | OUTROS GASTOS E PERDAS OPERACIONAIS | pág. 124, precedente |
+| 44 | AMORTIZAÇÕES DE DIREITOS DE ATLETAS | pág. 125, precedente |
+| 45 | REVERSÃO DE IMPARIDADES | pág. 125, Claude 0.85 |
+| 46 | GASTOS ASSOCIADOS A ALIENAÇÕES DE DIREITOS DE ATLETAS | pág. 125, precedente |
+| 47 | ALIENAÇÕES DE DIREITOS DE ATLETAS | pág. 125, precedente |
+| 48 | OUTROS GASTOS E PERDAS | pág. 125, precedente |
+| 49 | GANHOS EM EMPRESAS ASSOCIADAS | pág. 127, precedente |
+| 50 | Perdas em empresas associadas | pág. 127, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): pt-primeiraliga, verificado contra roster cacheado de "2014–15 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## 2014
 
 ### Ingresos
@@ -2007,4 +2102,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2007-08.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### benfica-pt-relatorio-contas-2014-15-pos-ag
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
