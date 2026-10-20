@@ -10,6 +10,15 @@ window.RANKINGS["tr-superlig"] = {
         mix:[["Comercial / Sponsors",40.339],["Estadio",14.815],["Televisión",7.611],["Premios por competencias",1.214],["Venta de Jugadores",0.194],["Otros ingresos",13.451]] },
     ],
   },
+  2022: {
+    leagueSize: 20,
+    wiki: {"t":"2021–22 Süper Lig","lang":"en","at":"2026-10-20","n":20},
+    clubs: [
+      { id:"besiktas-tr", revenue:70.038, reportType:"official_balance_sheet",
+        sourceId:"besiktas-tr-futbol-bilanco-31-05-2022",
+        mix:[["Comercial / Sponsors",26.509],["Estadio",7.645],["Televisión",9.398],["Premios por competencias",16.548],["Venta de Jugadores",0.019],["Otros ingresos",9.919]] },
+    ],
+  },
   2021: {
     leagueSize: 21,
     wiki: {"t":"2020–21 Süper Lig","lang":"en","at":"2026-09-30","n":21},
