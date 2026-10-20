@@ -141,6 +141,43 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/West Ham United/westham-full-accounts-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match receipts and related football activities | pág. 32, precedente |
+| 2 | Broadcast and central sponsorship distributions | pág. 32, precedente |
+| 3 | Commercial activities | pág. 32, precedente |
+| 4 | Retail and merchandising | pág. 32, precedente |
+| 5 | Other operating income | pág. 24, precedente |
+| 6 | Profit on sale of players | pág. 34, Jev 1 |
+| 7 | Income from loan of players | pág. 34, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Administrative expenses | pág. 24, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2019–20 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+```
+
 ## Fuentes
 
 ### westham-gb-full-accounts-2025
@@ -157,6 +194,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### westham-gb-full-accounts-2019-20
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

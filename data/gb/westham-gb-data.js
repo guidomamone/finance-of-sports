@@ -15,6 +15,15 @@ const westhamGbRevenueLinesByYear = {
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:2.495, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of players', normalizedCategory:'player_sales', amountNative:16.98, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Match receipts and related football activities', normalizedCategory:'matchday_competition', amountNative:22.431, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcast and central sponsorship distributions', normalizedCategory:'broadcasting', amountNative:82.52, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial activities', normalizedCategory:'sponsorship_commercial', amountNative:25.111, disclosureLevel:'aggregated' },
+    { rawLabel:'Retail and merchandising', normalizedCategory:'sponsorship_commercial', amountNative:8.56, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:1.377, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on sale of players', normalizedCategory:'player_sales', amountNative:22.833, disclosureLevel:'aggregated' },
+    { rawLabel:'Income from loan of players', normalizedCategory:'player_sales', amountNative:2.1, disclosureLevel:'aggregated' },
+  ],
 };
 
 const westhamGbExpenseLinesByYear = {
@@ -26,6 +35,9 @@ const westhamGbExpenseLinesByYear = {
   ],
   2023: [
     { rawLabel:'Operating costs', normalizedCategory:'other_expenses', amountNative:-253.776, disclosureLevel:'aggregated' },
+  ],
+  2020: [
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-224.542, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -54,6 +66,21 @@ const westhamGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:254.836, officialTotalExpenses:253.776, officialPAT:-16.169,
   },
+  2020: {
+    currency:'GBP', fxRef:'GBP@2020-05-31',
+    sourceId:'westham-gb-full-accounts-2019-20',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-5.134, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.031},
+      {label:'Interest payable and similar expenses', value:-5.165},
+      {label:'Tax on Loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:164.932, officialTotalExpenses:224.542, officialPAT:-64.744,
+  },
 };
 
 const westhamGbPresupuestoOverlayByYear = {};
@@ -81,6 +108,11 @@ Object.assign(sources, {
   'westham-gb-full-accounts-2022-23': {
     id:'westham-gb-full-accounts-2022-23', clubId:'westham-gb',
     title:'West Ham United Football Club Limited — westham-full-accounts-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'westham-gb-full-accounts-2019-20': {
+    id:'westham-gb-full-accounts-2019-20', clubId:'westham-gb',
+    title:'West Ham United Football Club Limited — westham-full-accounts-2019-20 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

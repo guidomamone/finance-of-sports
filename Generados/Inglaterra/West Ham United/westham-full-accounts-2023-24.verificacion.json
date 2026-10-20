@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.pdf",
  "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.md",
- "generado": "2026-10-20T18:11:40.731Z",
- "estado": "cola",
+ "generado": "2026-10-20T18:14:07.114Z",
+ "estado": "ok",
  "clubId": "westham-gb",
  "year": 2024,
  "escala": {
@@ -26,9 +26,7 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "e033d03"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,19 +47,14 @@
    "dif": 0.0010000000000545128
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 254.836; el sitio tiene 254.836"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 254.836 en westham-full-accounts-2022-23.pdf y 254.836 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "gastos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
   }
  ],
  "notas": [
