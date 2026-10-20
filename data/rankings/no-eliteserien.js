@@ -129,6 +129,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2015 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
     clubs: [
+      { id:"molde-no", revenue:13.215, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2015",
+        mix:[["Cuotas Sociales",0.026],["Comercial / Sponsors",1.164],["Estadio",2.108],["Televisión",7.564],["Premios por competencias",0.645],["Otros ingresos",1.709]] },
       { id:"sarpsborg08-no", revenue:5.242, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2015",
         mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",2.087],["Estadio",0.62],["Televisión",0.739],["Premios por competencias",0.144],["Venta de Jugadores",0.743],["Otros ingresos",0.87]] },
