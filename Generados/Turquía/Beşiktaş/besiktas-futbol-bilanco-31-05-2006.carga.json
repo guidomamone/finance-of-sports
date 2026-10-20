@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf",
- "generado": "2026-10-20T19:12:08.367Z",
+ "generado": "2026-10-20T20:51:47.012Z",
  "frena": [
-  {
-   "etapa": "alta:fx",
-   "motivo": "El documento declara varios tipos de cambio a USD (1.5357 (línea 1426: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\") | 1.5442 (línea 1452: \"| Krediler | 35.875.329 | USD | 1,5442 | (55.398.683) |\") | 1.355 (línea 1453: \"| Krediler | 5.000.000 | USD | 1,355 | (6.775.000) |\")). Regla #0: gana el de CIERRE que declara el documento. ¿Cuál es?"
-  },
   {
    "etapa": "categoria-en-cola",
    "motivo": "14 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kombine Kart Hasılatı\" -> matchday_competition 0.7; \"Futbolcu Satış Zararı\" -> player_sales 0.6; \"Diğer\" -> other_income 0; \"Hizmet Gelirleri (net)\" -> other_income 0; \"Diğer\" -> other_income 0"
@@ -17,10 +13,6 @@
   {
    "etapa": "perfil-en-cola",
    "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2006: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "fx",
-   "motivo": "sin tipo de cambio: el documento declara 3 valores de tipo de cambio a USD: 1.5357 (línea 1426: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\") | 1.5442 (línea 1452: \"| Krediler | 35.875.329 | USD | 1,5442 | (55.398.683) |\") | 1.355 (línea 1453: \"| Krediler | 5.000.000 | USD | 1,355 | (6.775.000) |\")"
   }
  ],
  "avisos": [
@@ -528,6 +520,8 @@
   ],
   "fiscalYearMeta": {
    "currency": "TRY",
+   "fx": 1.5357,
+   "fxSource": "manual",
    "sourceId": "besiktas-tr-futbol-bilanco-31-05-2006",
    "reportType": "official_balance_sheet",
    "gestionId": null,
@@ -576,7 +570,18 @@
  },
  "clubId": "besiktas-tr",
  "year": 2006,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf",
+   "campo": "fx",
+   "valor": "1.5357",
+   "linea": null,
+   "motivo": "Tipo de cambio de cierre 2006-05-31 (YTL por USD) fijado por la votación 3 a 0 (regla de caja y bancos en CONVENCIONES-DATOS), pedido de la principal",
+   "evidencia": "mensaje de la principal, 2026-10-20",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
  "seleccion": {
   "filas": 52,
   "notasUsadas": [],
@@ -1441,13 +1446,9 @@
    "estado": "ok"
   },
   "fx": {
-   "valor": [
-    1.5357,
-    1.5442,
-    1.355
-   ],
-   "fuente": "el documento declara 3 valores de tipo de cambio a USD: 1.5357 (línea 1426: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\") | 1.5442 (línea 1452: \"| Krediler | 35.875.329 | USD | 1,5442 | (55.398.683) |\") | 1.355 (línea 1453: \"| Krediler | 5.000.000 | USD | 1,355 | (6.775.000) |\")",
-   "estado": "pregunta"
+   "valor": 1.5357,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): Tipo de cambio de cierre 2006-05-31 (YTL por USD) fijado por la votación 3 a 0 (regla de caja y bancos en CONVENCIONES-DATOS), pedido de la principal",
+   "estado": "ok"
   },
   "sourceId": {
    "valor": "besiktas-tr-futbol-bilanco-31-05-2006",
@@ -1462,7 +1463,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 3,
   "lineasIngreso": 22,
   "lineasGasto": 27,
   "metaFilas": 3,

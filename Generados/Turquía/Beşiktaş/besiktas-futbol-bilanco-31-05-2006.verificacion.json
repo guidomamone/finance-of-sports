@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.md",
- "generado": "2026-10-20T19:07:01.067Z",
+ "generado": "2026-10-20T20:51:44.750Z",
  "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2006,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf",
+   "campo": "fx",
+   "valor": "1.5357",
+   "linea": null,
+   "motivo": "Tipo de cambio de cierre 2006-05-31 (YTL por USD) fijado por la votación 3 a 0 (regla de caja y bancos en CONVENCIONES-DATOS), pedido de la principal",
+   "evidencia": "mensaje de la principal, 2026-10-20",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
