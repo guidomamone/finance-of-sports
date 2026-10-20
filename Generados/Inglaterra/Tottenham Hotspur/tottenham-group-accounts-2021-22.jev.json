@@ -1,0 +1,329 @@
+{
+ "md": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.md",
+ "generatedAt": "2026-10-19T18:48:07.588Z",
+ "rubrosHuella": "6092f94af1ff74bf007b4f2f2f7ad464a2029fa6",
+ "rubros": [
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Net book value of disposals",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Profit on disposal of intangible fixed assets\"",
+   "choice": "exceptional_items",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "exceptional_items",
+     0.5700000000000001
+    ],
+    [
+     "player_amortisation",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "UEFA prize money (before exceptional item)",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Salaries and bonuses",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Match receipts",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "TV and media (before exceptional item)",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "- UEFA COVID Deduction",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "competition_bonus",
+     0.36
+    ],
+    [
+     "broadcasting",
+     0.03
+    ]
+   ],
+   "tokens": 1140
+  },
+  {
+   "label": "Consideration",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Profit on disposal of intangible fixed assets\"",
+   "choice": "player_sales",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "player_sales",
+     0.65
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 845
+  },
+  {
+   "label": "Other pension costs (see note 24)",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\"",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Depreciation of property, plant and equipment",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "- Onerous employment contracts",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Amortisation, impairments and other net football trading income and expenditure",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_amortisation",
+     0.98
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Other operating costs",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 989
+  }
+ ]
+}

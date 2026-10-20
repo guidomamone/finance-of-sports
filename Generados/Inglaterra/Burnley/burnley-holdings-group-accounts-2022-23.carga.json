@@ -1,15 +1,15 @@
 {
  "pdf": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.pdf",
- "generado": "2026-10-19T17:24:35.026Z",
+ "generado": "2026-10-19T17:46:54.934Z",
  "frena": [],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (individual); 4 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-19: Los años 2024 y 2025 ya cargados son consolidados (Burnley FC Holdings) y los documentos 2021-22 y 2022-23 solo traen el estado de resultados consolidado: la serie no cambia de perímetro (regla 1 de perímetro de CONVENCIONES-DATOS))"
  ],
  "ejercicio": {
   "clubId": "burnley-gb",
   "year": 2023,
   "cierre": "2023-07-31",
-  "perimetro": "individual",
+  "perimetro": "consolidado",
   "revenueLines": [
    {
     "rawLabel": "Match income",
@@ -180,7 +180,7 @@
    "title": "Burnley FC Holdings Limited — burnley-holdings-group-accounts-2022-23 (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
   }
  },
  "md": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.md",
@@ -496,7 +496,7 @@
    "estado": "ok"
   },
   "perimetro": {
-   "valor": "individual",
+   "valor": "consolidado",
    "fuente": "ajuste manual (2026-10-19)",
    "estado": "ok"
   },

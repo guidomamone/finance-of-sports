@@ -1,0 +1,160 @@
+{
+  "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2020-21.md",
+  "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2020-21.pdf",
+  "club": "mancity-gb",
+  "year": 2021,
+  "generatedAt": "2026-10-19T18:26:33.631Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"**Revenue**\"",
+      "values": [
+        0.732
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Broadcasting - UEFA",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"**Revenue**\"",
+      "values": [
+        114.765
+      ],
+      "glosa": "Retransmisión - UEFA"
+    },
+    {
+      "label": "Broadcasting - all other",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"**Revenue**\"",
+      "values": [
+        182.683
+      ],
+      "glosa": "Retransmisión - resto"
+    },
+    {
+      "label": "Other commercial activities",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"**Revenue**\"",
+      "values": [
+        271.669
+      ],
+      "glosa": "Otras actividades comerciales"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        1.244
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Profit on disposal of players' registrations",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        68.545
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos de jugadores"
+    },
+    {
+      "label": "Direct cost of sales and consumables",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        0.067
+      ],
+      "glosa": "Costes directos de ventas y consumibles"
+    },
+    {
+      "label": "Remuneration of Auditors (audit fees)",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        0.06
+      ],
+      "glosa": "Remuneración de los auditores (honorarios de auditoría)"
+    },
+    {
+      "label": "Other external charges",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        99.766
+      ],
+      "glosa": "Otros gastos externos"
+    },
+    {
+      "label": "Wages and salaries",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\"",
+      "values": [
+        310.737
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Social security costs",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\"",
+      "values": [
+        42.502
+      ],
+      "glosa": "Costes de seguridad social"
+    },
+    {
+      "label": "Other pension costs",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\"",
+      "values": [
+        1.45
+      ],
+      "glosa": "Otros costes de pensiones"
+    },
+    {
+      "label": "Amortisation and impairment of intangible assets (Note 11)",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        164.427
+      ],
+      "glosa": "Amortización y deterioro de activos intangibles (Nota 11)"
+    },
+    {
+      "label": "Owned (Note 12)",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        9.376
+      ],
+      "glosa": "En propiedad (Nota 12)"
+    },
+    {
+      "label": "Leased (Note 13)",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        1.452
+      ],
+      "glosa": "En arrendamiento (Nota 13)"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.pdf",
  "md": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.md",
- "generado": "2026-10-19T17:24:31.610Z",
+ "generado": "2026-10-19T17:46:34.547Z",
  "estado": "ok",
  "clubId": "burnley-gb",
  "year": 2023,
@@ -42,8 +42,8 @@
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en burnley-holdings-group-accounts-2022-23.pdf",
-  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se usa la columna 'Total 2023 £000' de b3 y no las columnas por actividad (Operations excluding player trading / Player trading)?",
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se cargan del estado b3 solo las columnas 'Total 2023 £000' y 'Total As restated 2022 £000', ignorando las columnas por operaciones/player trading?",
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se toman para el año anterior los importes 2022 reexpresados (As restated) en lugar de los originalmente publicados?",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro 'The operating profit/(loss) is stated after charging/(crediting)' (L1197-L1201)?"
  ],
  "reintentar": null,

@@ -50,3 +50,13 @@ Todos en `Clubes/Inglaterra/Chelsea/` (los PDF no se trackean; son escaneos, hay
 - `chelsea-fc-holdings-group-accounts-2021-22.pdf`
 - `chelsea-fc-holdings-group-accounts-2020-21.pdf`
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2020-21.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2023-24`).

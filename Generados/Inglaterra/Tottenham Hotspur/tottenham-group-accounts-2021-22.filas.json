@@ -1,0 +1,497 @@
+{
+ "pdf": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.md",
+ "mdSha1": "ae6bf2f5d1a6b38d60d5279bca64f088e8b318e0",
+ "ubicacionSha1": "632f8bfd4c155b2d431e04ca65c9cb57ef54f133",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T18:11:10.862Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b7"
+  ],
+  "notas_gastos": [
+   "b9",
+   "b13",
+   "b14",
+   "b15",
+   "b16"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "miles",
+   "evidencia": "L768: 2022 Total £'000"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L1174: £'000 £’000"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "L1206: 2022 £'000"
+  },
+  {
+   "bloque": "b13",
+   "escala": "miles",
+   "evidencia": "L1277: 2022 £'000"
+  },
+  {
+   "bloque": "b14",
+   "escala": "miles",
+   "evidencia": "L1299: 2022 £'000"
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "L1307: 2022 £'000"
+  },
+  {
+   "bloque": "b16",
+   "escala": "miles",
+   "evidencia": "L1313: 2022 £'000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 770,
+   "etiqueta": "Revenue",
+   "actual": "443,415",
+   "anterior": "360,405",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 771,
+   "etiqueta": "Operating expenses",
+   "actual": "(483,247)",
+   "anterior": "(422,730)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 772,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "(39,832)",
+   "anterior": "(62,325)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 773,
+   "etiqueta": "Profit on disposal of intangible fixed assets",
+   "actual": "19,150",
+   "anterior": "18,939",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 774,
+   "etiqueta": "Profit/(loss) from operations",
+   "actual": "(20,682)",
+   "anterior": "(43,386)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 775,
+   "etiqueta": "Finance income",
+   "actual": "1,537",
+   "anterior": "1,584",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 776,
+   "etiqueta": "Finance costs",
+   "actual": "(42,183)",
+   "anterior": "(38,387)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 777,
+   "etiqueta": "Loss before taxation",
+   "actual": "(61,328)",
+   "anterior": "(80,189)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 778,
+   "etiqueta": "Tax",
+   "actual": "11,211",
+   "anterior": "(3,612)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 779,
+   "etiqueta": "Loss for the year",
+   "actual": "(50,117)",
+   "anterior": "(83,801)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 1176,
+   "etiqueta": "Match receipts",
+   "actual": "106,142",
+   "anterior": "1,900",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1177,
+   "etiqueta": "UEFA prize money (before exceptional item)",
+   "actual": "10,172",
+   "anterior": "23,635",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1178,
+   "etiqueta": "TV and media (before exceptional item)",
+   "actual": "144,219",
+   "anterior": "184,422",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1179,
+   "etiqueta": "Commercial",
+   "actual": "183,495",
+   "anterior": "151,915",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1180,
+   "etiqueta": "Revenue before exceptional items",
+   "actual": "444,028",
+   "anterior": "361,872",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1182,
+   "etiqueta": "- PL Rebate 2019/20",
+   "actual": "-",
+   "anterior": "524",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1183,
+   "etiqueta": "- UEFA COVID Deduction",
+   "actual": "(613)",
+   "anterior": "(1,991)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1208,
+   "etiqueta": "Staff costs (see note 5)",
+   "actual": "209,180",
+   "anterior": "204,875",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1209,
+   "etiqueta": "Depreciation of property, plant and equipment",
+   "actual": "72,278",
+   "anterior": "72,137",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1210,
+   "etiqueta": "Profit on disposal of property, plant and equipment",
+   "actual": "-",
+   "anterior": "137",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1212,
+   "etiqueta": "- Onerous employment contracts",
+   "actual": "528",
+   "anterior": "2,917",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1213,
+   "etiqueta": "Other operating costs",
+   "actual": "121,368",
+   "anterior": "59,776",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1214,
+   "etiqueta": "Operating expenses excluding football trading",
+   "actual": "403,354",
+   "anterior": "339,842",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1216,
+   "etiqueta": "Amortisation, impairments and other net football trading income and expenditure",
+   "actual": "79,893",
+   "anterior": "82,888",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1217,
+   "etiqueta": "Total operating expenses",
+   "actual": "483,247",
+   "anterior": "422,730",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1279,
+   "etiqueta": "Salaries and bonuses",
+   "actual": "181,819",
+   "anterior": "179,789",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 5)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1280,
+   "etiqueta": "Social security costs",
+   "actual": "26,420",
+   "anterior": "24,462",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 5)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1281,
+   "etiqueta": "Other pension costs (see note 24)",
+   "actual": "941",
+   "anterior": "624",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 5)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1282,
+   "etiqueta": "",
+   "actual": "209,180",
+   "anterior": "204,875",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 5)"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1301,
+   "etiqueta": "Consideration",
+   "actual": "24,719",
+   "anterior": "20,039",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit on disposal of intangible fixed assets"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1302,
+   "etiqueta": "Net book value of disposals",
+   "actual": "(5,569)",
+   "anterior": "(1,100)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Profit on disposal of intangible fixed assets"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1303,
+   "etiqueta": "",
+   "actual": "19,150",
+   "anterior": "18,939",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Profit on disposal of intangible fixed assets"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1309,
+   "etiqueta": "Interest income",
+   "actual": "88",
+   "anterior": "621",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finance income"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1310,
+   "etiqueta": "Notional interest income on deferred receipts for sales of players' registrations",
+   "actual": "1,449",
+   "anterior": "963",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finance income"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1311,
+   "etiqueta": "",
+   "actual": "1,537",
+   "anterior": "1,584",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finance income"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1315,
+   "etiqueta": "Interest expense",
+   "actual": "(23,693)",
+   "anterior": "(18,202)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finance costs"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1316,
+   "etiqueta": "Notional interest expense on deferred payments for players' registrations",
+   "actual": "(10,101)",
+   "anterior": "(9,692)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finance costs"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1317,
+   "etiqueta": "Notional interest expense on deferred income relating to commercial revenues",
+   "actual": "(6,350)",
+   "anterior": "(9,420)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finance costs"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1318,
+   "etiqueta": "Notional interest expense on leases",
+   "actual": "(718)",
+   "anterior": "(691)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finance costs"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1319,
+   "etiqueta": "Amortisation of debt issue costs",
+   "actual": "(1,115)",
+   "anterior": "(281)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finance costs"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1320,
+   "etiqueta": "Net loss arising on financial assets mandatorily measured at FVTPL*",
+   "actual": "(206)",
+   "anterior": "(101)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finance costs"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1321,
+   "etiqueta": "",
+   "actual": "(42,183)",
+   "anterior": "(38,387)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finance costs"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 770,
+  "actual": "443,415"
+ },
+ "total_gastos": {
+  "linea": 771,
+  "actual": "(483,247)"
+ },
+ "resultado": {
+  "linea": 779,
+  "actual": "(50,117)",
+  "anterior": "(83,801)"
+ },
+ "dudas": [],
+ "observaciones": "Todas las escalas en £'000. b16 repite L1310-L1311 de b15 (solapamiento de transcripción); se cargaron una sola vez desde b15. En b2 se tomó solo la columna '2022 Total £'000'. Los ítems excepcionales de b7 (L1182-L1183) concilian Revenue before exceptional items (444,028) con Revenue (443,415)."
+}

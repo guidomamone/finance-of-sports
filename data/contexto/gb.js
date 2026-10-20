@@ -39,8 +39,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Falmer Stadium","capacidad":31876,"sponsor":"American Express","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'burnley-gb': {
-    2022: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"Spreadex Sports","marca":"Umbro","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
-    2023: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"Classic Football Shirts (Home & Third) EMA Equity Partners (Away)","marca":"Umbro","temporada":"2022–23 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376810302"},
+    2022: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"Spreadex Sports","marca":"Umbro","temporada":"2021–22 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358361756","fuenteManual":"https://en.wikipedia.org/w/index.php?oldid=1376972129","manual":["estadio","capacidad","sponsor","marca"]},
+    2023: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"Classic Football Shirts (Home & Third) EMA Equity Partners (Away)","marca":"Umbro","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138","fuenteManual":"https://en.wikipedia.org/w/index.php?oldid=1376810302","manual":["estadio","capacidad","sponsor","marca"]},
     2024: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"W88","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"96.com","marca":"Castore","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
@@ -79,6 +79,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'mancity-gb': {
+    2021: {"estadio":"City of Manchester Stadium","capacidad":55017,"sponsor":"Puma","marca":"Fernandinho|Fernandinho (footballer, born May 1985)}}","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
+    2023: {"estadio":"City of Manchester Stadium","capacidad":53400,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"City of Manchester Stadium","capacidad":53400,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"City of Manchester Stadium","capacidad":52900,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
@@ -94,6 +96,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Spreadex Sports","marca":"Hummel","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
   'tottenham-gb': {
+    2022: {"estadio":"Tottenham Hotspur Stadium","capacidad":62850,"sponsor":"AIA","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2024: {"estadio":"Tottenham Hotspur Stadium","capacidad":62850,"sponsor":"AIA","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Tottenham Hotspur Stadium","capacidad":62850,"sponsor":"AIA","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

@@ -82,3 +82,7 @@ Todos en `Clubes/Inglaterra/Manchester City/` (los PDF no se trackean; son escan
 ## WorldFootball (sourcing 2026-10-08, año 2023)
 
 Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 2 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2023-2024; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Inglaterra/Manchester City/mancity-full-accounts-2020-21.pdf` (sourceId `mancity-gb-full-accounts-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.pdf` (sourceId `mancity-gb-full-accounts-2022-23`).

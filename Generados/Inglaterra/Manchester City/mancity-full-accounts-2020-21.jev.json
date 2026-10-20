@@ -1,0 +1,184 @@
+{
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2020-21.md",
+ "generatedAt": "2026-10-19T18:48:04.415Z",
+ "rubrosHuella": "3d3ef9e80683563b4d1a8848a1b65fa4dbca5c4b",
+ "rubros": [
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"**Revenue**\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Broadcasting - UEFA",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"**Revenue**\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Broadcasting - all other",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"**Revenue**\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other commercial activities",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"**Revenue**\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Direct cost of sales and consumables",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneration of Auditors (audit fees)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other external charges",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Wages and salaries",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\"",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Other pension costs",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\"",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Leased (Note 13)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Amortisation and impairment of intangible assets (Note 11)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "player_amortisation",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "player_amortisation",
+     0.67
+    ],
+    [
+     "other_amortisation",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1109
+  },
+  {
+   "label": "Owned (Note 12)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1034
+  }
+ ]
+}

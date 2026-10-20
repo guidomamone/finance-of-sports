@@ -3,7 +3,7 @@
   "pdf": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.pdf",
   "club": "burnley-gb",
   "year": 2022,
-  "generatedAt": "2026-10-19T15:59:09.815Z",
+  "generatedAt": "2026-10-19T17:46:34.536Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         7.021
       ],
-      "glosa": "Ingresos por partidos"
+      "glosa": "Ingresos por días de partido"
     },
     {
       "label": "Television rights",
@@ -60,7 +60,7 @@
       "label": "Other operating income",
       "lado": "revenue",
       "page": 15,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         1.232
       ],
@@ -70,7 +70,7 @@
       "label": "Profit on disposal of player registrations",
       "lado": "revenue",
       "page": 15,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         54.719
       ],
@@ -94,7 +94,7 @@
       "values": [
         9.828
       ],
-      "glosa": "Gastos de seguridad social"
+      "glosa": "Costes de seguridad social"
     },
     {
       "label": "Cost of defined contribution scheme",
@@ -104,23 +104,23 @@
       "values": [
         0.141
       ],
-      "glosa": "Coste de planes de aportación definida"
+      "glosa": "Coste de planes de pensiones de aportación definida"
     },
     {
       "label": "Depreciation",
       "lado": "expense",
       "page": 15,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         2.37
       ],
-      "glosa": "Amortización de inmovilizado material"
+      "glosa": "Amortización del inmovilizado material"
     },
     {
       "label": "Other operating expenses",
       "lado": "expense",
       "page": 15,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         19.13
       ],
@@ -130,7 +130,7 @@
       "label": "Amortisation of player registrations",
       "lado": "expense",
       "page": 15,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         22.703
       ],

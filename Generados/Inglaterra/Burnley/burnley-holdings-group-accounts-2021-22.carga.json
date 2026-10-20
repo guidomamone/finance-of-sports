@@ -1,15 +1,15 @@
 {
  "pdf": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.pdf",
- "generado": "2026-10-19T17:24:34.921Z",
+ "generado": "2026-10-19T18:46:45.424Z",
  "frena": [],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (individual); 4 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-19: Los años 2024 y 2025 ya cargados son consolidados (Burnley FC Holdings) y los documentos 2021-22 y 2022-23 solo traen el estado de resultados consolidado: la serie no cambia de perímetro (regla 1 de perímetro de CONVENCIONES-DATOS))"
  ],
  "ejercicio": {
   "clubId": "burnley-gb",
   "year": 2022,
   "cierre": "2022-07-31",
-  "perimetro": "individual",
+  "perimetro": "consolidado",
   "revenueLines": [
    {
     "rawLabel": "Match income",
@@ -180,7 +180,7 @@
    "title": "Burnley FC Holdings Limited — burnley-holdings-group-accounts-2021-22 (ejercicio 2022)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
   }
  },
  "md": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.md",
@@ -282,7 +282,7 @@
    "page": 15,
    "native": 1.232,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 1.232,
    "cat": "other_income",
    "conf": 0.99,
@@ -297,7 +297,7 @@
    "page": 15,
    "native": 54.719,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 54.719,
    "cat": "player_sales",
    "conf": 0.99,
@@ -357,7 +357,7 @@
    "page": 15,
    "native": 2.37,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 2.37,
    "cat": "depreciation",
    "conf": 1,
@@ -372,7 +372,7 @@
    "page": 15,
    "native": 19.13,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 19.13,
    "cat": "other_expenses",
    "conf": 1,
@@ -387,7 +387,7 @@
    "page": 15,
    "native": 22.703,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 22.703,
    "cat": "player_amortisation",
    "conf": 1,
@@ -434,7 +434,7 @@
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
-   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Staff costs\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
@@ -496,7 +496,7 @@
    "estado": "ok"
   },
   "perimetro": {
-   "valor": "individual",
+   "valor": "consolidado",
    "fuente": "ajuste manual (2026-10-19)",
    "estado": "ok"
   },

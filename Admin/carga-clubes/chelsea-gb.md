@@ -84,6 +84,201 @@ _antes de Todd Boehly (data/gestiones/gb.js):_
 Boehly dejó la presidencia al vender su parte a Clearlake (anuncio del 16/9/2026). Desde entonces no se carga a nadie (Clearlake es un fondo).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Broadcasting | pág. 36, precedente |
+| 2 | Commercial | pág. 36, precedente |
+| 3 | Matchday | pág. 36, precedente |
+| 4 | Other operating income | pág. 21, Jev 0.99 |
+| 5 | Profit on disposal of player registrations | pág. 21, precedente |
+| 6 | Proceeds on sale of investment | pág. 44, Jev 0.99 |
+| 7 | Profit on disposal of fixed assets | pág. 21, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Less: net assets of subsidiary on disposal | pág. 44, precedente |
+| 2 | Cost of sales | pág. 21, precedente |
+| 3 | Administrative expenses | pág. 21, precedente |
+| 4 | Fair value loss on investment properties | pág. 21, Jev 0.96 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2023–24 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Chelsea".
+```
+
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Broadcasting | pág. 36, precedente |
+| 2 | Commercial | pág. 36, precedente |
+| 3 | Matchday | pág. 36, precedente |
+| 4 | Research and development tax credit | pág. 36, Jev 1 |
+| 5 | Recharged costs (see Note 2) | pág. 36, Jev 0.99 |
+| 6 | Settlement fee | pág. 36, Jev 0.96 |
+| 7 | Profit on disposal of player registrations | pág. 21, precedente |
+| 8 | Profit on disposal of fixed assets | pág. 21, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 21, precedente |
+| 2 | Administrative expenses | pág. 21, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Chelsea".
+```
+
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Broadcasting | pág. 32, precedente |
+| 2 | Commercial | pág. 32, precedente |
+| 3 | Matchday | pág. 32, precedente |
+| 4 | Other operating income | pág. 18, Jev 0.99 |
+| 5 | Profit on disposal of player registrations | pág. 18, precedente |
+| 6 | Fair value gain/(loss) on investment properties | pág. 18, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 18, precedente |
+| 2 | Administrative expenses | pág. 18, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 45. La extracción omitió esta fila del estado de resultados (L722, 45 en £000): sin ella el resultado da -121.327 y el impreso es -121.282
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Chelsea".
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Broadcasting | pág. 31, precedente |
+| 2 | Commercial | pág. 31, precedente |
+| 3 | Matchday | pág. 31, precedente |
+| 4 | Research and development tax credit | pág. 31, Jev 1 |
+| 5 | Recharged costs | pág. 31, Jev 0.99 |
+| 6 | Insurance claim | pág. 31, Jev 1 |
+| 7 | Profit on disposal of player registrations | pág. 17, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 17, precedente |
+| 2 | Administrative expenses | pág. 17, precedente |
+| 3 | Exceptional administrative expenses | pág. 17, Claude 0.85 |
+| 4 | Fair value loss on investment properties | pág. 17, Jev 0.96 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Chelsea".
+```
+
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Broadcasting | pág. 28, precedente |
+| 2 | Commercial | pág. 28, precedente |
+| 3 | Matchday | pág. 28, precedente |
+| 4 | Profit on disposal of player registrations | pág. 14, precedente |
+| 5 | Profit on disposal of tangible fixed assets | pág. 14, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 14, precedente |
+| 2 | Administrative expenses | pág. 14, precedente |
+| 3 | Exceptional administrative expenses | pág. 14, Claude 0.85 |
+| 4 | Fair value loss on investment properties | pág. 14, Jev 0.96 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2019–20 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Chelsea".
+```
+
 ## Fuentes
 
 ### chelsea-gb-group-accounts-2025
@@ -92,6 +287,46 @@ _note (data/):_
 
 ```text
 Cuentas consolidadas del grupo, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2024-25.md. Ver comentario de cabecera de data/gb/chelsea-gb-data.js para el detalle completo de categorización y las dudas abiertas (Cost of sales sin desglose, gap de amortización/deterioro, grossDebt).
+```
+
+### chelsea-gb-fc-holdings-group-accounts-2019-20
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### chelsea-gb-fc-holdings-group-accounts-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### chelsea-gb-fc-holdings-group-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### chelsea-gb-fc-holdings-group-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### chelsea-gb-fc-holdings-group-accounts-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Gestiones (Finanzas 5, 2026-10-19)

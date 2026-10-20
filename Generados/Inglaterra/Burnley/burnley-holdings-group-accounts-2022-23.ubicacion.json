@@ -3,8 +3,8 @@
  "md": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.md",
  "mdSha1": "9269814c11ca61269613fe417f48aab31cb96752",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:21:05.313Z",
- "perimetroClub": "individual",
+ "generado": "2026-10-19T17:46:34.071Z",
+ "perimetroClub": "consolidado",
  "bloques": {
   "b1": {
    "pagina": 6,
@@ -310,27 +310,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el estado consolidado (b3) aunque el club venía cargando el perímetro individual, dado que el documento no trae cuenta de resultados individual?",
+   "pregunta": "¿Se cargan del estado b3 solo las columnas 'Total 2023 £000' y 'Total As restated 2022 £000', ignorando las columnas por operaciones/player trading?",
    "propuesta": "sí",
-   "tema": "perimetro",
+   "tema": "columna",
    "renglon": "",
-   "texto": "Las cuentas de Burnley FC Holdings solo presentan el Consolidated Statement of Comprehensive Income (b3); la sociedad holding no publica P&L propia, y los años cargados son individuales.",
+   "texto": "El estado b3 separa operaciones excluyendo traspasos y player trading, además del total.",
    "bloques": [
     "b3"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se usa la columna 'Total 2023 £000' de b3 y no las columnas por actividad (Operations excluding player trading / Player trading)?",
+   "pregunta": "¿Se toman para el año anterior los importes 2022 reexpresados (As restated) en lugar de los originalmente publicados?",
    "propuesta": "sí",
    "tema": "columna",
    "renglon": "",
-   "texto": "El estado b3 tiene columnas separadas por actividad y una columna total.",
+   "texto": "El estado 2022 figura como 'As restated' por corrección de error.",
    "bloques": [
     "b3"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Solo hay estado de resultados consolidado (b3), con la comparativa 2022 reexpresada (restated). Las notas de personal (b12) traen columnas Group y Company: se usa Group. b14 detalla cargos incluidos en el resultado operativo (amortización, depreciación, resultado por venta de jugadores). b19 es una conciliación de impuestos y se excluye."
+ "observaciones": "Estado de resultados consolidado en b3 (Consolidated Statement of Comprehensive Income). No hay estado de resultados individual de la sociedad, solo balance y cambios en el patrimonio de Company (b5, b7). b10 desglosa Turnover; b12 gastos de personal (usar columnas Group); b14 cargos incluidos en el resultado operativo (amortización de jugadores, depreciación, resultado por venta de jugadores); b16/b17 intereses; b18 impuesto."
 }

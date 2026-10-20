@@ -2,9 +2,9 @@
  "pdf": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.pdf",
  "md": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.md",
  "mdSha1": "dbbeaeb8281128653953a0bfa174027aa3036225",
- "ubicacionSha1": "f61b123c8af323bad32838fc31993cfaef4bf2c3",
+ "ubicacionSha1": "0401112f080300badca125aacb5d7a6d5bc35508",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:56:23.481Z",
+ "generado": "2026-10-19T17:46:26.829Z",
  "ubicacion": {
   "estado": [
    "b4"
@@ -16,39 +16,45 @@
   "notas_gastos": [
    "b14",
    "b16",
-   "b19"
+   "b19",
+   "b20"
   ]
  },
  "escalas": [
   {
    "bloque": "b4",
    "escala": "miles",
-   "evidencia": "L453: columnas 'Total 2022 £000'"
+   "evidencia": "L453: Total 2022 £000"
   },
   {
    "bloque": "b12",
    "escala": "miles",
-   "evidencia": "L994: '2022 £000'"
+   "evidencia": "L994: 2022 £000"
   },
   {
    "bloque": "b13",
    "escala": "miles",
-   "evidencia": "L1007: '2022 £000'"
+   "evidencia": "L1007: 2022 £000"
   },
   {
    "bloque": "b14",
    "escala": "miles",
-   "evidencia": "L1024: 'Group 2022 £000'"
+   "evidencia": "L1024: Group 2022 £000"
   },
   {
    "bloque": "b16",
    "escala": "miles",
-   "evidencia": "L1050: '2022 £000'"
+   "evidencia": "L1050: 2022 £000"
   },
   {
    "bloque": "b19",
    "escala": "miles",
-   "evidencia": "L1091: '2022 £000'"
+   "evidencia": "L1091: 2022 £000"
+  },
+  {
+   "bloque": "b20",
+   "escala": "miles",
+   "evidencia": "L1109: 2022 £000"
   }
  ],
  "filas": [
@@ -313,56 +319,6 @@
    "detalla_a": "Staff costs"
   },
   {
-   "bloque": "b16",
-   "linea": 1052,
-   "etiqueta": "Exchange differences",
-   "actual": "(357)",
-   "anterior": "-",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": "Other operating expenses"
-  },
-  {
-   "bloque": "b16",
-   "linea": 1053,
-   "etiqueta": "Depreciation of tangible fixed assets",
-   "actual": "2,370",
-   "anterior": "1,791",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": "Depreciation"
-  },
-  {
-   "bloque": "b16",
-   "linea": 1054,
-   "etiqueta": "Amortisation of player registrations",
-   "actual": "22,703",
-   "anterior": "21,411",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": "Amortisation of player registrations"
-  },
-  {
-   "bloque": "b16",
-   "linea": 1055,
-   "etiqueta": "Profit on disposal of player registrations",
-   "actual": "(54,719)",
-   "anterior": "(5,102)",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "Profit on disposal of player registrations"
-  },
-  {
-   "bloque": "b16",
-   "linea": 1056,
-   "etiqueta": "Other operating lease rentals",
-   "actual": "357",
-   "anterior": "311",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": "Other operating expenses"
-  },
-  {
    "bloque": "b19",
    "linea": 1093,
    "etiqueta": "Other loan interest payable",
@@ -411,6 +367,86 @@
    "tipo": "subtotal",
    "lado": "financiero",
    "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1112,
+   "etiqueta": "Current tax on profits for the year",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/(loss)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1113,
+   "etiqueta": "Adjustments in respect of previous periods",
+   "actual": "10",
+   "anterior": "(3,274)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/(loss)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1114,
+   "etiqueta": "Total current tax",
+   "actual": "10",
+   "anterior": "(3,274)",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/(loss)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1116,
+   "etiqueta": "Origination and reversal of timing differences",
+   "actual": "9,405",
+   "anterior": "2,561",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/(loss)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1117,
+   "etiqueta": "Changes to tax rates",
+   "actual": "107",
+   "anterior": "281",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/(loss)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1118,
+   "etiqueta": "Adjustments in respect of prior periods",
+   "actual": "662",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/(loss)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1119,
+   "etiqueta": "Total deferred tax",
+   "actual": "10,174",
+   "anterior": "2,842",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/(loss)"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1120,
+   "etiqueta": "Taxation on profit/(loss)",
+   "actual": "10,184",
+   "anterior": "(432)",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/(loss)"
   }
  ],
  "total_ingresos": null,
@@ -422,27 +458,39 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan como desglose las filas de la nota 'stated after charging/(crediting)' (L1052-L1056), aunque no suman ningún renglón del estado?",
-   "propuesta": "no",
+   "pregunta": "¿Se deja afuera de la carga el cuadro de la nota 7 'operating profit is stated after charging' (L1052-L1056) por ser una nota informativa que no desglosa un único renglón del estado?",
+   "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Other operating expenses",
-   "texto": "La nota b16 es informativa: repite renglones del estado y da partidas sueltas de Other operating expenses (L1052, L1056) que no lo desglosan completo.",
+   "renglon": "",
+   "texto": "b16 mezcla partidas de varios renglones (depreciación, amortización, venta de jugadores, alquileres, diferencias de cambio) y no es un desglose aditivo de ninguno.",
    "bloques": [
     "b16"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿El importe de 'Exchange differences' 2022 es (357), igual al de 'Other operating lease rentals' (L1052 vs L1056)?",
+   "pregunta": "¿Se confirma que los totales de la nota de impuestos (L1120: 10,184 y (432)) tienen signo inverso al estado (L468) y se cargan tal cual?",
    "propuesta": "sí",
-   "tema": "fila-ilegible",
-   "renglon": "Other operating expenses",
-   "texto": "L1052 y L1056 muestran el mismo 357, posible error de transcripción.",
+   "tema": "otro",
+   "renglon": "Tax on profit/(loss)",
+   "texto": "La nota presenta el cargo como positivo y el estado como negativo; es convención de signo.",
    "bloques": [
-    "b16"
+    "b4",
+    "b20"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja sin desglose 'Other operating expenses' (L460) porque no hay nota que lo detalle?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Other operating expenses",
+   "texto": "Ningún bloque desglosa los 19,130 de L460.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Escala £000 en todos los bloques. b14 se tomó la columna Group. No hay total de ingresos ni de gastos impresos."
+ "observaciones": "Se tomó la columna Total 2022 £000 del estado; las notas tienen columnas 2022/2021 (b14 columnas Group). No hay totales impresos de ingresos ni gastos. Notas b16 excluidas de filas por ser informativas."
 }

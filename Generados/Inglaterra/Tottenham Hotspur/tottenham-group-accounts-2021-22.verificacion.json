@@ -1,0 +1,226 @@
+{
+ "pdf": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.md",
+ "generado": "2026-10-19T19:07:01.647Z",
+ "estado": "ok",
+ "clubId": "tottenham-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Revenue\" 443.415 cierra; además se suman 2 línea(s) fuera de ese total (19.15)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "483.247 = 483.247",
+   "suma": 483.24700000000007,
+   "impreso": 483.247
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.105427357601002e-14
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 462.565,
+  "gastos": 483.247,
+  "financiero": -40.646,
+  "impuesto": 11.211,
+  "resultadoImpreso": -50.117,
+  "resultadoParaCargar": -50.117,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Match receipts",
+   "lado": "ingreso",
+   "M": 106.142,
+   "pagina": 23,
+   "linea": 1176,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "UEFA prize money (before exceptional item)",
+   "lado": "ingreso",
+   "M": 10.172,
+   "pagina": 23,
+   "linea": 1177,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "TV and media (before exceptional item)",
+   "lado": "ingreso",
+   "M": 144.219,
+   "pagina": 23,
+   "linea": 1178,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 183.495,
+   "pagina": 23,
+   "linea": 1179,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "- UEFA COVID Deduction",
+   "lado": "ingreso",
+   "M": -0.613,
+   "pagina": 23,
+   "linea": 1183,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Consideration",
+   "lado": "ingreso",
+   "M": 24.719,
+   "pagina": 26,
+   "linea": 1301,
+   "origen": "nota que desglosa \"Profit on disposal of intangible fixed assets\""
+  },
+  {
+   "etiqueta": "Net book value of disposals",
+   "lado": "gasto",
+   "M": 5.569,
+   "pagina": 26,
+   "linea": 1302,
+   "origen": "nota que desglosa \"Profit on disposal of intangible fixed assets\""
+  },
+  {
+   "etiqueta": "Salaries and bonuses",
+   "lado": "gasto",
+   "M": 181.819,
+   "pagina": 25,
+   "linea": 1279,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\""
+  },
+  {
+   "etiqueta": "Social security costs",
+   "lado": "gasto",
+   "M": 26.42,
+   "pagina": 25,
+   "linea": 1280,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\""
+  },
+  {
+   "etiqueta": "Other pension costs (see note 24)",
+   "lado": "gasto",
+   "M": 0.941,
+   "pagina": 25,
+   "linea": 1281,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\""
+  },
+  {
+   "etiqueta": "Depreciation of property, plant and equipment",
+   "lado": "gasto",
+   "M": 72.278,
+   "pagina": 24,
+   "linea": 1209,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "- Onerous employment contracts",
+   "lado": "gasto",
+   "M": 0.528,
+   "pagina": 24,
+   "linea": 1212,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Other operating costs",
+   "lado": "gasto",
+   "M": 121.368,
+   "pagina": 24,
+   "linea": 1213,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Amortisation, impairments and other net football trading income and expenditure",
+   "lado": "gasto",
+   "M": 79.893,
+   "pagina": 24,
+   "linea": 1216,
+   "origen": "nota que desglosa \"Operating expenses\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finance income",
+   "M": 1.537,
+   "linea": 775
+  },
+  {
+   "etiqueta": "Finance costs",
+   "M": -42.183,
+   "linea": 776
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax",
+   "M": 11.211,
+   "linea": 778
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "69334bd86f9216c59b55fe228fc8b683404086c7",
+  "rango": [
+   767,
+   782
+  ],
+  "lineasCargadas": [
+   1176,
+   1177,
+   1178,
+   1179,
+   1183,
+   1301,
+   1302,
+   1279,
+   1280,
+   1281,
+   1209,
+   1212,
+   1213,
+   1216,
+   775,
+   776,
+   778
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 767 a 782 del .md):\nL768: | | Notes | 2022 Operations, excluding football trading* £'000 | 2022 Football trading* £'000 | 2022 Total £'000 | 2021 Operations, excluding football trading* £'000 | 2021 Football trading* £'000 | 2021 Total £'000 |\nL769: |---|---|---|---|---|---|---|---|\nL770: | Revenue | 2 | 443,415 | - | 443,415 | 360,405 | - | 360,405 |\nL771: | Operating expenses | 3 | (403,354) | (79,893) | (483,247) | (339,842) | (82,888) | (422,730) |\nL772: | Operating profit/(loss) | | 40,061 | (79,893) | (39,832) | 20,563 | (82,888) | (62,325) |\nL773: | Profit on disposal of intangible fixed assets | 6 | - | 19,150 | 19,150 | - | 18,939 | 18,939 |\nL774: | Profit/(loss) from operations | 4 | 40,061 | (60,743) | (20,682) | 20,563 | (63,949) | (43,386) |\nL775: | Finance income | 7 | | | 1,537 | | | 1,584 |\nL776: | Finance costs | 7 | | | (42,183) | | | (38,387) |\nL777: | Loss before taxation | | | | (61,328) | | | (80,189) |\nL778: | Tax | 8 | | | 11,211 | | | (3,612) |\nL779: | Loss for the year | 20 | | | (50,117) | | | (83,801) |\nL781: * Football trading represents amortisation, impairment and profit on disposal of intangible fixed assets, and other football trading-related income and expenditure (see notes 3,6).\nL782: There were no other gains or losses in either the current or prior year; accordingly no consolidated statement of comprehensive income is presented.\n\nLO QUE SE CARGA:\n- ingreso · \"Match receipts\" · 106.142 · L1176 (de una nota)\n- ingreso · \"UEFA prize money (before exceptional item)\" · 10.172 · L1177 (de una nota)\n- ingreso · \"TV and media (before exceptional item)\" · 144.219 · L1178 (de una nota)\n- ingreso · \"Commercial\" · 183.495 · L1179 (de una nota)\n- ingreso · \"- UEFA COVID Deduction\" · -0.613 · L1183 (de una nota)\n- ingreso · \"Consideration\" · 24.719 · L1301 (de una nota)\n- gasto · \"Net book value of disposals\" · 5.569 · L1302 (de una nota)\n- gasto · \"Salaries and bonuses\" · 181.819 · L1279 (de una nota)\n- gasto · \"Social security costs\" · 26.42 · L1280 (de una nota)\n- gasto · \"Other pension costs (see note 24)\" · 0.941 · L1281 (de una nota)\n- gasto · \"Depreciation of property, plant and equipment\" · 72.278 · L1209 (de una nota)\n- gasto · \"- Onerous employment contracts\" · 0.528 · L1212 (de una nota)\n- gasto · \"Other operating costs\" · 121.368 · L1213 (de una nota)\n- gasto · \"Amortisation, impairments and other net football trading income and expenditure\" · 79.893 · L1216 (de una nota)\n- financiero · \"Finance income\" · 1.537 · L775\n- financiero · \"Finance costs\" · -42.183 · L776\n- impuesto · \"Tax\" · 11.211 · L778"
+ }
+}

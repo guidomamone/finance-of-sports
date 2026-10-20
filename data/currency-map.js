@@ -239,6 +239,8 @@ const FX_CLOSE = {
   'CLP@2025-12-31': { fx: 907.13, source: 'market_close', label: 'Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2026-01-02, 2025-12-31 no es día hábil)' },
   'DKK@2025-06-30': { fx: 6.366, source: 'market_close', label: 'Tipo oficial de Danmarks Nationalbank al 2025-06-30' },
   'CHF@2023-06-30': { fx: 0.8947, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2023-06-30' },
+  'GBP@2023-07-31': { fx: 0.777424, source: 'market_close', label: 'Tipo spot del Bank of England al 2023-07-31' },
+  'GBP@2022-07-31': { fx: 0.822233, source: 'market_close', label: 'Tipo spot del Bank of England, última rueda hábil antes del cierre (2022-07-29, 2022-07-31 no es día hábil)' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

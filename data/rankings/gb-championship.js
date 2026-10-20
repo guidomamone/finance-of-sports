@@ -28,6 +28,18 @@ window.RANKINGS["gb-championship"] = {
         mix:[["Comercial / Sponsors",6.816],["Estadio",14.804],["Televisión",13.4],["Venta de Jugadores",11.315],["Otros ingresos",13.069]] },
     ],
   },
+  2022: {
+    leagueSize: 24,
+    wiki: {"t":"2021–22 EFL Championship","lang":"en","at":"2026-10-19","n":24},
+    clubs: [
+      { id:"burnley-gb", revenue:218.135, reportType:"official_balance_sheet",
+        sourceId:"burnley-gb-holdings-group-accounts-2021-22",
+        mix:[["Comercial / Sponsors",2.451],["Estadio",10.654],["Televisión",127.572],["Venta de Jugadores",66.549],["Otros ingresos",10.909]] },
+      { id:"bournemouth-gb", revenue:73.818, reportType:"official_balance_sheet",
+        sourceId:"bournemouth-gb-full-accounts-2021-22",
+        mix:[["Comercial / Sponsors",4.102],["Estadio",6.237],["Televisión",52.013],["Venta de Jugadores",8.322],["Otros ingresos",3.145]] },
+    ],
+  },
   2019: {
     leagueSize: 24,
     wiki: {"t":"2018–19 EFL Championship","lang":"en","at":"2026-10-19","n":24},

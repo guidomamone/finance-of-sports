@@ -3,8 +3,8 @@
  "md": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.md",
  "mdSha1": "dbbeaeb8281128653953a0bfa174027aa3036225",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:54:59.220Z",
- "perimetroClub": "individual",
+ "generado": "2026-10-19T17:45:41.679Z",
+ "perimetroClub": "consolidado",
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -322,7 +322,8 @@
  "notas_gastos": [
   "b14",
   "b16",
-  "b19"
+  "b19",
+  "b20"
  ],
  "escala": "miles",
  "escala_evidencia": "Encabezado del estado: 'Total 2022 £000'",
@@ -333,38 +334,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el estado consolidado (b4) aunque el club usa perímetro individual en años anteriores, dado que el documento no trae cuenta de resultados individual de la holding?",
+   "pregunta": "¿Se cargan del estado b4 solo las columnas 'Total 2022 £000' y 'Total 2021 £000', ignorando las columnas 'Operations excluding player trading' y 'Player trading'?",
    "propuesta": "sí",
-   "tema": "perimetro",
+   "tema": "columna",
    "renglon": "",
-   "texto": "Solo hay Consolidated Statement of Comprehensive Income (b4); la Company no presenta P&L propio (exención), y la holding no es el club operativo.",
+   "texto": "El estado consolidado b4 presenta columnas separadas por operaciones y player trading además del total.",
    "bloques": [
     "b4"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se toma la columna 'Total 2022 £000' de b4 e ignoran las columnas 'Operations excluding player trading' y 'Player trading'?",
-   "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "",
-   "texto": "b4 separa por operación y traspasos; las columnas parciales suman al total.",
-   "bloques": [
-    "b4"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se usan solo las columnas Group de la nota de personal b14 (no las Company)?",
+   "pregunta": "¿Se toman de la nota de personal b14 solo las columnas 'Group' y no las de 'Company'?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "Wages and salaries",
-   "texto": "b14 trae columnas Group y Company; corresponde Group para coincidir con el estado consolidado.",
+   "texto": "La nota 6 muestra importes del grupo y de la sociedad individual.",
    "bloques": [
     "b14"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Solo existe estado de resultados consolidado (b4) de Burnley FC Holdings; no hay P&L individual. El perímetro difiere del usado previamente (individual), a revisar. Notas: b12 turnover, b13 otros ingresos operativos, b14 personal, b16 cargos operativos (amortización jugadores, beneficio venta registros), b19 intereses. b20/b21 impuestos (conciliación) excluidos."
+ "observaciones": "Estado de resultados consolidado en b4 (pág. 15), sin estado individual de resultados en el índice. Notas: turnover (b12), otros ingresos de explotación (b13), personal (b14, columnas Group), cargos en resultado operativo (b16: amortizaciones, resultado por venta de jugadores), intereses (b19), impuesto (b20). Se excluyen balances, flujos, patrimonio, activos fijos, conciliación fiscal y KPI."
 }

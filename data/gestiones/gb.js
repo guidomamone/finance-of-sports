@@ -48,6 +48,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.forbes.com/sites/briansolomon/2013/07/12/billionaire-shahid-khan-completes-deal-for-premier-leagues-fulham/', confirmada:true },
   ],
   'leeds-gb': [
+    { nombre:'Andrea Radrizzani', corto:'Radrizzani', cargo:'Chairman', desde:'2017-05-23', hasta:'2023-07-18',
+      fuente:'https://en.wikipedia.org/wiki/Andrea_Radrizzani', confirmada:true },
     { nombre:'Paraag Marathe', corto:'Marathe', cargo:'Chairman', desde:'2023-07-18', hasta:null,
       fuente:'https://www.theleedspress.com/leeds-united-takeover-complete-after-efl-approve-of-sale-to-49ers-enterprises-35708/', confirmada:true },
   ],
@@ -60,6 +62,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.espn.co.uk/football/story/_/id/37522382/olympiakos-owner-evangelos-marinakis-completes-nottingham-forest-takeover', confirmada:true },
   ],
   'sunderland-gb': [
+    { nombre:'Stewart Donald', corto:'Donald', cargo:'Dueño', desde:'2018-05-21', hasta:'2021-02-18',
+      fuente:'https://en.wikipedia.org/wiki/Stewart_Donald', confirmada:true },
     { nombre:'Kyril Louis-Dreyfus', corto:'Louis-Dreyfus', cargo:'Chairman', desde:'2021-02-18', hasta:null,
       fuente:'https://www.safc.com/news/club-news/2021/february/kld-acquires-controlling-interest-in-sunderland-afc', confirmada:true },
   ],
@@ -82,7 +86,13 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.expressandstar.com/sport/football/wolverhampton-wanderers/ten-years-of-fosun-the-highs-and-lows-of-jeff-shi-at-wolves-8782815', confirmada:true },
   ],
   'newcastle-gb': [
+    { nombre:'Mike Ashley', corto:'Ashley', cargo:'Dueño', desde:'2007-06-15', hasta:'2021-10-07',
+      fuente:'https://en.wikipedia.org/wiki/Mike_Ashley_(businessman)', confirmada:true },
     { nombre:'Yasir Al-Rumayyan', corto:'Al-Rumayyan', cargo:'Chairman', desde:'2021-10-07', hasta:null,
       fuente:'https://www.pif.gov.sa/en/news-and-insights/press-releases/2021/nufc/', confirmada:true },
+  ],
+  'celtic-gb': [
+    { nombre:'Peter Lawwell', corto:'Lawwell', cargo:'Chairman', desde:'2023-01-01', hasta:'2025-12-31',
+      fuente:'https://www.investegate.co.uk/announcement/rns/celtic--ccp/board-change/2773711', confirmada:true },
   ],
 });

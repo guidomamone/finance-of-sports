@@ -1,0 +1,547 @@
+{
+ "pdf": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.pdf",
+ "generado": "2026-10-19T19:10:36.651Z",
+ "frena": [],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2024 consolidado, 2025 consolidado",
+  "ingresos: ningún total impreso igual a la suma de las líneas (468.134); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-488.816); queda la suma, verificada por el resultado del ejercicio"
+ ],
+ "ejercicio": {
+  "clubId": "tottenham-gb",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Match receipts",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 106.142,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "UEFA prize money (before exceptional item)",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 10.172,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "TV and media (before exceptional item)",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 144.219,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 183.495,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "- UEFA COVID Deduction",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": -0.613,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Consideration",
+    "normalizedCategory": "player_sales",
+    "amountNative": 24.719,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Net book value of disposals",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -5.569,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Salaries and bonuses",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -181.819,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Social security costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -26.42,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other pension costs (see note 24)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.941,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Depreciation of property, plant and equipment",
+    "normalizedCategory": "depreciation",
+    "amountNative": -72.278,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "- Onerous employment contracts",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.528,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating costs",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -121.368,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisation, impairments and other net football trading income and expenditure",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -79.893,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2022-06-30",
+   "sourceId": "tottenham-gb-group-accounts-2021-22",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -40.646,
+   "tax": 11.211,
+   "extraRows": [
+    {
+     "label": "Finance income",
+     "value": 1.537
+    },
+    {
+     "label": "Finance costs",
+     "value": -42.183
+    },
+    {
+     "label": "Tax",
+     "value": 11.211
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 468.134,
+   "officialTotalExpenses": 488.816,
+   "officialPAT": -50.117
+  },
+  "source": {
+   "id": "tottenham-gb-group-accounts-2021-22",
+   "clubId": "tottenham-gb",
+   "title": "Tottenham Hotspur Limited — tottenham-group-accounts-2021-22 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "tottenham-gb",
+ "year": 2022,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 17,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Match receipts",
+   "page": 23,
+   "native": 106.142,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Revenue\")",
+   "signoFijo": 106.142,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 106.142
+  },
+  {
+   "label": "UEFA prize money (before exceptional item)",
+   "page": 23,
+   "native": 10.172,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Revenue\")",
+   "signoFijo": 10.172,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.172
+  },
+  {
+   "label": "TV and media (before exceptional item)",
+   "page": 23,
+   "native": 144.219,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Revenue\")",
+   "signoFijo": 144.219,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 144.219
+  },
+  {
+   "label": "Commercial",
+   "page": 23,
+   "native": 183.495,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Revenue\")",
+   "signoFijo": 183.495,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 183.495
+  },
+  {
+   "label": "- UEFA COVID Deduction",
+   "page": 23,
+   "native": 0.613,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Revenue\")",
+   "signoFijo": -0.613,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (renglón total de gastos operativos o costo de ventas en other_expenses; consideration en player_sales; derechos y deducciones de UEFA y TV en la categoría de su ingreso)",
+   "destino": "revenue",
+   "amountNative": -0.613
+  },
+  {
+   "label": "Consideration",
+   "page": 26,
+   "native": 24.719,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Profit on disposal of intangible fixed assets\")",
+   "signoFijo": 24.719,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (renglón total de gastos operativos o costo de ventas en other_expenses; consideration en player_sales; derechos y deducciones de UEFA y TV en la categoría de su ingreso)",
+   "destino": "revenue",
+   "amountNative": 24.719
+  },
+  {
+   "label": "Net book value of disposals",
+   "page": 26,
+   "native": 5.569,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Profit on disposal of intangible fixed assets\")",
+   "signoFijo": 5.569,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (renglón total de gastos operativos o costo de ventas en other_expenses; consideration en player_sales; derechos y deducciones de UEFA y TV en la categoría de su ingreso)",
+   "destino": "expense",
+   "amountNative": -5.569
+  },
+  {
+   "label": "Salaries and bonuses",
+   "page": 25,
+   "native": 181.819,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\")",
+   "signoFijo": 181.819,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -181.819
+  },
+  {
+   "label": "Social security costs",
+   "page": 25,
+   "native": 26.42,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\")",
+   "signoFijo": 26.42,
+   "cat": "wages_squad",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -26.42
+  },
+  {
+   "label": "Other pension costs (see note 24)",
+   "page": 25,
+   "native": 0.941,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\")",
+   "signoFijo": 0.941,
+   "cat": "wages_squad",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.941
+  },
+  {
+   "label": "Depreciation of property, plant and equipment",
+   "page": 24,
+   "native": 72.278,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 72.278,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -72.278
+  },
+  {
+   "label": "- Onerous employment contracts",
+   "page": 24,
+   "native": 0.528,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 0.528,
+   "cat": "admin_general_expense",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.528
+  },
+  {
+   "label": "Other operating costs",
+   "page": 24,
+   "native": 121.368,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 121.368,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -121.368
+  },
+  {
+   "label": "Amortisation, impairments and other net football trading income and expenditure",
+   "page": 24,
+   "native": 79.893,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 79.893,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -79.893
+  },
+  {
+   "label": "Finance income",
+   "page": null,
+   "native": 1.537,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Finance costs",
+   "page": null,
+   "native": -42.183,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax",
+   "page": null,
+   "native": 11.211,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Revenue\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Profit on disposal of intangible fixed assets\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Operating expenses\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 468.134,
+  "expSum": -488.816,
+  "officialTotalRevenue": 468.134,
+  "officialTotalExpenses": 488.816,
+  "officialPAT": -50.117,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "por-resultado",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -50.117,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  }
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Tottenham Hotspur\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (100 de 103 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2022-06-30 = 0.82352 (Tipo spot del Bank of England al 2022-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "tottenham-gb-group-accounts-2021-22",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Tottenham Hotspur\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 6,
+  "lineasGasto": 8,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

@@ -178,6 +178,96 @@ _antes de Khaldoon Al Mubarak (data/gestiones/gb.js):_
 Nombrado chairman el 23/9/2008 según Companies House; el club cambió de dueño el 1/9/2008. Se usa la fecha de Companies House.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Manchester City/mancity-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Matchday | pág. 27, precedente |
+| 2 | Broadcasting - UEFA | pág. 27, precedente |
+| 3 | Broadcasting - all other | pág. 27, precedente |
+| 4 | Other commercial activities | pág. 27, precedente |
+| 5 | Other operating income | pág. 14, precedente |
+| 6 | Profit on disposal of players' registrations | pág. 14, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Direct cost of sales and consumables | pág. 27, precedente |
+| 2 | Remuneration of Auditors (audit fees) | pág. 27, precedente |
+| 3 | Other external charges | pág. 27, precedente |
+| 4 | Wages and salaries | pág. 28, Jev 0.96 |
+| 5 | Social security costs | pág. 28, Jev 0.95 |
+| 6 | Other pension costs | pág. 28, Jev 0.93 |
+| 7 | Share-based payments | pág. 28, Claude 0.8 |
+| 8 | Amortisation and impairment of intangible assets | pág. 27, precedente |
+| 9 | Profit on disposal of property, plant and equipment | pág. 27, Jev 0.99 |
+| 10 | Owned | pág. 27, Claude 0.93 |
+| 11 | Leased | pág. 27, Claude 0.93 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Manchester City".
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Manchester City/mancity-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Manchester City/mancity-full-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Matchday | pág. 26, precedente |
+| 2 | Broadcasting - UEFA | pág. 26, precedente |
+| 3 | Broadcasting - all other | pág. 26, precedente |
+| 4 | Other commercial activities | pág. 26, precedente |
+| 5 | Other operating income | pág. 13, precedente |
+| 6 | Profit on disposal of players' registrations | pág. 13, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Direct cost of sales and consumables | pág. 26, precedente |
+| 2 | Remuneration of Auditors (audit fees) | pág. 26, precedente |
+| 3 | Other external charges | pág. 26, precedente |
+| 4 | Wages and salaries | pág. 27, Jev 0.96 |
+| 5 | Social security costs | pág. 27, Jev 0.95 |
+| 6 | Other pension costs | pág. 27, Jev 0.93 |
+| 7 | Amortisation and impairment of intangible assets | pág. 26, precedente |
+| 8 | Owned | pág. 26, precedente |
+| 9 | Leased | pág. 26, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Manchester City".
+```
+
 ## Fuentes
 
 ### mancity-gb-full-accounts-2024
@@ -194,6 +284,22 @@ _note (data/):_
 
 ```text
 PDF de 39 páginas depositado en Companies House ("Full accounts"), mismo formato y auditor (BDO LLP) que el ejercicio 2023-24. Transcripción completa en Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md.
+```
+
+### mancity-gb-full-accounts-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Manchester City/mancity-full-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### mancity-gb-full-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros
