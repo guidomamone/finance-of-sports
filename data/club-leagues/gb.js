@@ -7,7 +7,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'everton-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2022: 'gb-premierleague', 2023: 'gb-premierleague' },
   'tottenham-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2022: 'gb-premierleague' },
   'nottinghamforest-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2023: 'gb-premierleague' },
-  'sunderland-gb':       { 2024: 'gb-championship',  2025: 'gb-championship', 2022: 'gb-leagueone', 2019: 'gb-leagueone' },
+  'sunderland-gb':       { 2024: 'gb-championship',  2025: 'gb-championship', 2022: 'gb-leagueone', 2019: 'gb-leagueone', 2020: 'gb-leagueone' },
   'westham-gb':          { 2025: 'gb-premierleague', 2023: 'gb-premierleague' },
   'wolves-gb':           { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'astonvilla-gb':  { 2025: 'gb-premierleague', 2023: 'gb-premierleague', 2019: 'gb-championship', 2021: 'gb-premierleague', 2022: 'gb-premierleague', 2020: 'gb-premierleague', 2024: 'gb-premierleague' },
