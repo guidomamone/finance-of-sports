@@ -11,7 +11,7 @@ Cada archivo de club define siempre las mismas piezas: `revenueLinesByYear`, `ex
 Una línea tiene `rawLabel`, `normalizedCategory` (26 categorías), `amountNative`, `disclosureLevel` (en 170 líneas falta) y, en 493, `items` (pares [rótulo, importe]).
 `fiscalYearMeta[año]` tiene 11 campos que siempre están (`currency`, `sourceId`, `reportType`, `netInterest`, `tax`, `officialTotalRevenue/Expenses`...)
 y otros opcionales (`fxRef` 1.107 de 1.197, `extraRows` 852, `sinDesglose` 312, `incluidoEn` 167, `fx`+`fxSource` 90-107, `staffCost` 9).
-La unidad es implícita (millones de la moneda del club, `amountNative`); la moneda está en cada año y en `data/clubs.js`; el cierre del ejercicio está en `data/club-index.js`.
+La unidad es implícita (millones de la moneda del club, `amountNative`); la moneda está en cada año y en `data/clubs.js`; el cierre del ejercicio lo da `tools/cierre-ejercicio.js` (`cierreDelClub`: registro del club, ajuste o inicio del año fiscal).
 
 ## Qué se decide (producto, 4 puntos)
 
@@ -20,7 +20,7 @@ La unidad es implícita (millones de la moneda del club, `amountNative`); la mon
    enteras: cambiaría los números (redondeos de 6 decimales) y la ida y vuelta dejaría de dar idéntico.
 3. **Nombres en inglés y snake_case** (`label`, `category`, `amount`, `fiscal_year`...), pensados para una API; un diccionario fijo los traduce de ida y de vuelta a los de hoy.
    Alternativa: dejar los nombres actuales (camelCase y mezcla español/inglés como `sinDesglose.renglon`). Recomiendo traducir una vez, ahora que nadie los consume afuera.
-4. **"Fecha de corte" son dos cosas, las dos explícitas**: `period_end` por ejercicio (el cierre, de `club-index.js`) y `exported_at` del archivo (cuándo se generó).
+4. **"Fecha de corte" son dos cosas, las dos explícitas**: `period_end` por ejercicio (el cierre, de `cierreDelClub`) y `exported_at` del archivo (cuándo se generó).
 
 ## Esquema (schema_version "1.0")
 
@@ -35,7 +35,7 @@ archivo
   members             número o null                                      // memberCountByClub
   years[]             (uno por ejercicio, ordenados)
     fiscal_year       2024
-    period_end        "2024-12-31"  (o null si el índice no lo tiene)
+    period_end        "2024-12-31"  (de cierreDelClub)
     currency          "BRL"
     fx                { ref, rate, source }      // ref = "BRL@2024-12-31"; rate y source solo si el ejercicio los fija
     source_id         id de sources[]
