@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 864 — Sporting CP 2008-10 destrabado (2026-10-20) [sportingcp-pt]
+
+- `tools/verificar.mjs`: `avisarRegistro` usa la misma compuerta que `cargar.mjs` (la huella del `.md`, no la fecha). Aprobado por la Auditora.
+
 ## Versión 863 — Cargar con tokens de sesión, paso a paso (2026-10-20) [328]
 
 - Skill `club-or-year-onboarding`: sección 3 c) y archivo nuevo `carga-con-tokens.md` (texto aprobado por Guido): la especificación con
