@@ -24,13 +24,9 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-**A. Cerrar lo abierto (en marcha)**
-* (nada)
-
-
-**B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
-* 246: ids estables con mapa de alias (antes de los links compartibles)
-* 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos)
+**A. En marcha**
+* 246: ids estables con mapa de alias; primero el diseño, para tu ok --> Datos 3
+* 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos), después del 246 --> Datos 3
 
 **C. Pantallas y distribución (después del 246)**
 * Vålerenga: la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
