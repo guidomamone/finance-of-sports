@@ -88,9 +88,8 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   P1), para que un club borrado o una membresía que cambia no deje un
   ranking de 1 en la portada sin avisar.
 - data/ar/river-data.js, data/ar/racing-data.js: datos de esos dos clubes
-  (ingresos/gastos por línea, resultados deportivos,
-  títulos), cada uno con comentarios explicando qué es real y qué es
-  placeholder.
+  (ingresos/gastos por línea, resultados deportivos, títulos). Sin comentarios (los data files no los llevan,
+  `Admin/CONVENCIONES-DATOS.md`): qué es real y qué es placeholder está en `Admin/ESTADO-clubes.md` y en `Admin/carga-clubes/<club>.md`.
 - js/selector.js: ELEGIR Y COMPARAR, que desde la Versión 152 son lo mismo y
   viven juntos (93 KB, el archivo más grande de `js/`). Tres cosas adentro:
   (1) el MODAL PASO A PASO que reemplazó al panel de 5 columnas — Deporte →
@@ -356,17 +355,17 @@ limpieza de una sola vez:
   interruptor es `ABONOS_DENTRO_DE_ESTADIO` en `js/finanzas-calc.js`, no los datos.
 - **Lazy-loading: sumar el club a la carga bajo demanda, NUNCA al `<head>` fijo.** El archivo
   `data/<país>/<club>-data.js` NO va en la lista de `<script src>` del `<head>` de index.html (esa lista
-  solo tiene `clubs.js`/`category-map.js`/`boca-data.js`/`js/finanzas-calc.js`/
-  `js/finanzas-render.js`, porque Boca es el club default). En cambio:
+  solo tiene los compartidos: `clubs.js`, `category-map.js`, `js/finanzas-*.js`, etc.; ningún club entra eager,
+  tampoco Boca). En cambio:
   1. Nada que tocar en index.html para esto: `loadClubData(clubId)` construye el path directo,
-     `'data/' + clubId + '-data.js'`, sin ningún mapa central que mantener a mano (con 1000 clubes
+     `'data/' + clubs[clubId].country.toLowerCase() + '/' + clubId + '-data.js'`, sin ningún mapa central que mantener a mano (con 1000 clubes
      de destino, un mapa así se vuelve un artefacto de cientos/miles de líneas y una fuente segura
      de typos/colisiones entre agentes en paralelo). Con que tu archivo se llame así (que ya es la
      convención de TODOS los clubes cargados hasta ahora, sin excepción), alcanza —
      `loadClubData` ya sabe inyectar el `<script>` la primera vez que alguien elige ese club en
      `clubSelect`. Si alguna vez un club necesita un nombre de archivo distinto por algún motivo
      real, agregá una entrada a `CLUB_DATA_SCRIPT_OVERRIDE` (cerca de `loadClubData`, en
-     index.html) en vez de volver al mapa completo.
+     `js/principal.js`) en vez de volver al mapa completo.
   1b. Sumá la entrada de identidad del club a `clubs{}` en `data/clubs.js` (`id`/`name`/
      `displayName`/`country`/`reportingCurrency`/`fiscalYearStart`/`sport`/`brandColor`, copiá el
      shape de cualquier club ya cargado). `displayName` es el nombre CORTO que se muestra en el
@@ -430,8 +429,8 @@ limpieza de una sola vez:
   línea/bloque), convertilo ANTES de sumarle una tercera rama, no repliques el patrón viejo.
 - **Verificación obligatoria en el navegador, no alcanza con que el código "se vea bien":** con
   Network abierto, cargar la página de cero y confirmar que `data/<país>/<club>-data.js` NO aparece en la
-  lista (solo `clubs.js`/`category-map.js`/`boca-data.js`/los 2 `js/finanzas-*.js`); elegir el club
-  nuevo y confirmar que ahí SÍ aparece un único GET 200; volver a Boca y de nuevo al club nuevo, y
+  lista (solo los compartidos: `clubs.js`, `category-map.js`, los `js/finanzas-*.js`); elegir el club
+  nuevo y confirmar que ahí SÍ aparece un único GET 200; elegir otro club y volver al nuevo, y
   confirmar que esta vez NO se vuelve a pedir (debe quedar cacheado en `clubDataLoaded`). Un
   `window.addEventListener('error', ...)` propio durante ese ciclo (en vez de solo leer la consola
   acumulada) es más confiable para no dejar pasar un `ReferenceError` real (ver
@@ -614,7 +613,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   `catch-all dominante` (P2) que había quedado sin revisar tras onboardear los 20 clubes de la
   Versión 201 (varios alemanes con "Sonstige betriebliche Aufwendungen" sin partir, y 2 españoles con
   "Ingresos accesorios y otros de gestión corriente" sin partir) se verificaron uno por uno contra el
-  comentario de cabecera de cada `data/<país>/<club>-data.js` — no es un error de carga, es el techo real de
+  cabecera que traía cada `data/<país>/<club>-data.js` (hoy esa evidencia vive en `Admin/carga-clubes/<club>.md`) — no es un error de carga, es el techo real de
   lo que declara cada balance — y quedaron silenciados. El P1 `fuentes-indice-desfasado` de esa misma
   corrida (13 clubes que el generador no podía clasificar solo) se resolvió con `OVERRIDES` en
   `tools/generate-fuentes-index.js`. Desde la Versión 125 audita además la
