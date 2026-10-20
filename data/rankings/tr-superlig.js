@@ -46,6 +46,15 @@ window.RANKINGS["tr-superlig"] = {
         mix:[["Comercial / Sponsors",45.902],["Estadio",16.648],["Televisión",30.932],["Premios por competencias",12.758],["Venta de Jugadores",14.149],["Otros ingresos",0.08]] },
     ],
   },
+  2018: {
+    leagueSize: 18,
+    wiki: {"t":"2017–18 Süper Lig","lang":"en","at":"2026-10-20","n":18},
+    clubs: [
+      { id:"besiktas-tr", revenue:210.712, reportType:"official_balance_sheet",
+        sourceId:"besiktas-tr-futbol-bilanco-31-05-2018",
+        mix:[["Comercial / Sponsors",61.228],["Estadio",23.572],["Televisión",30.32],["Premios por competencias",46.468],["Venta de Jugadores",39.503],["Otros ingresos",9.621]] },
+    ],
+  },
   2017: {
     leagueSize: 18,
     wiki: {"t":"2016–17 Süper Lig","lang":"en","at":"2026-10-20","n":18},

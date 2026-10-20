@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md",
- "generado": "2026-10-20T19:30:02.682Z",
+ "generado": "2026-10-20T19:35:20.086Z",
  "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2018,
@@ -49,23 +49,12 @@
  "notas": [
   "el desglose de \"Esas faaliyetlerden diğer gelirler\" (5 filas) no suma la fila: quedó la fila",
   "la nota de \"Satışların maliyeti (-)\" no suma el renglón (68.277152 contra 620.2931, sumando sus renglones): quedó el renglón del estado",
-  "duda de localizar que no afecta la carga: El cuadro por segmento (Futbol, Sportif Ürünler, TV) probablemente repite importes ya abiertos en la nota 18 (b60).",
+  "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2018.pdf",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
-  "duda de extraer que no afecta la carga: Los encabezados de las notas (ej. L2561) dicen 2015 pero los totales coinciden con la columna 2016-2017 del estado; parece errata."
+  "duda de extraer que no afecta la carga: El encabezado dice 2015 (L2561 y otros) pero los totales coinciden con la columna 2016-2017 del estado; parece errata."
  ],
- "reintentar": [
-  {
-   "renglon": "Esas faaliyetlerden diğer gelirler",
-   "suma": 37.988791,
-   "objetivo": 0.169309
-  },
-  {
-   "renglon": "Satışların maliyeti (-)",
-   "suma": 68.277152,
-   "objetivo": 620.2931
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Esas faaliyetlerden diğer gelirler",
