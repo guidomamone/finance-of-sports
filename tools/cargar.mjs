@@ -961,6 +961,20 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     return { meta, cierraPat, lecturaGasto };
   };
   let { meta, cierraPat, lecturaGasto } = buscarPat();
+  // ESCALÓN p2 (to-do 298 p2): un rótulo financiero ("Intereses") contestado no_es_rubro en la cola con el lado del documento a la vista, que
+  // no es una línea de ingreso ni de gasto (club-data-mapping §2: los intereses van al resultado financiero) y que el resultado impreso
+  // necesita: si ninguna lectura cerró, las filas así pasan a netInterest con su signo y se vuelve a buscar. Compuerta: cierra el resultado
+  // impreso; si no cierra, vuelven a excluidas. Caso: Boyacá Chicó 2025 (Intereses L839 de ingreso y L999 de gasto, mismo rótulo).
+  if (!cierraPat && patImpresos.length) {
+    const candFin = filas.filter((f) => f.destino === 'excluida' && f.cat === 'no_es_rubro' && f.ladoDoc && FINANCIERO_RE.test(norm(f.label)));
+    if (candFin.length) {
+      for (const f of candFin) f.destino = 'netInterest';
+      metaFilas.push(...candFin);
+      const b2 = buscarPat();
+      if (b2.cierraPat) { ({ meta, cierraPat, lecturaGasto } = b2); P.avisos.push(`resultado financiero: ${candFin.map((f) => `"${f.label}" ${f.native} (${f.ladoDoc === 'revenue' ? 'ingreso' : 'gasto'})`).join('; ')} contestado no_es_rubro en la cola pasa al resultado financiero: con eso cierra el resultado impreso (to-do 298 p2)`); }
+      else { for (const f of candFin) f.destino = 'excluida'; metaFilas.length -= candFin.length; }
+    }
+  }
   for (const f of exp) f.amountNative = r6(lecturaGasto.v(f));
   P.signos.elegida = cierraPat ? cierraPat.lectura : `${lecturaGasto.nombre} (ninguna lectura cerró el resultado)`;
   const expSinExc = exp.filter((f) => f.cat !== 'exceptional_items').reduce((a, f) => a + f.amountNative, 0);
