@@ -255,6 +255,7 @@ const FX_CLOSE = {
   'TRY@2022-05-31': { fx: 16.3876, source: 'market_close', label: 'Döviz alış del TCMB al 2022-05-31' },
   'TRY@2009-05-31': { fx: 1.5345, source: 'market_close', label: 'Döviz alış del TCMB, última rueda hábil antes del cierre (2009-05-29, 2009-05-31 no es día hábil)' },
   'TRY@2010-05-31': { fx: 1.5665, source: 'market_close', label: 'Döviz alış del TCMB al 2010-05-31' },
+  'TRY@2011-05-31': { fx: 1.5859, source: 'market_close', label: 'Döviz alış del TCMB al 2011-05-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

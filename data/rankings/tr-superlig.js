@@ -64,6 +64,15 @@ window.RANKINGS["tr-superlig"] = {
         mix:[["Comercial / Sponsors",28.424],["Estadio",8.101],["Televisión",29.082],["Venta de Jugadores",2.143],["Otros ingresos",6.172]] },
     ],
   },
+  2011: {
+    leagueSize: 18,
+    wiki: {"t":"2010–11 Süper Lig","lang":"en","at":"2026-10-20","n":18},
+    clubs: [
+      { id:"besiktas-tr", revenue:95.117, reportType:"official_balance_sheet",
+        sourceId:"besiktas-tr-futbol-bilanco-31-05-2011",
+        mix:[["Comercial / Sponsors",25.877],["Estadio",17.715],["Televisión",40.306],["Premios por competencias",2.509],["Venta de Jugadores",1.005],["Otros ingresos",7.704]] },
+    ],
+  },
   2010: {
     leagueSize: 18,
     wiki: {"t":"2009–10 Süper Lig","lang":"en","at":"2026-10-20","n":18},
