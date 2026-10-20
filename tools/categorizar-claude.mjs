@@ -84,6 +84,7 @@
 
 import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
 import { SESION } from './sesion.mjs'; // gasto por sesión
+import { afinidad } from './pais-club.mjs'; // (to-do 331) ejemplos del mismo país primero, a igual parecido
 import { reglasParaPrompt } from './reglas-categoria.mjs'; // (to-do 329) las reglas de categoría de CONVENCIONES-DATOS al prompt
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.mjs';
@@ -210,7 +211,8 @@ export function makeRetriever(lines) {
       if (q.side && b.side !== q.side) continue;
       const s = jaccard(qw, b.w); if (s > 0) scored.push([s, b]);
     }
-    scored.sort((a, b) => b[0] - a[0]);
+    // (to-do 331) a igual parecido de palabras: primero los del mismo país, después los del mismo idioma
+    scored.sort((a, b) => (b[0] - a[0] > 1e-12 || a[0] - b[0] > 1e-12) ? b[0] - a[0] : afinidad(q.club, b[1].club) - afinidad(q.club, a[1].club));
     const seen = new Set(); const out = [];
     for (const [, b] of scored) { const kk = `${norm(b.label)}|${b.cat}`; if (seen.has(kk)) continue; seen.add(kk); out.push(b); if (out.length >= k) break; }
     return out;
