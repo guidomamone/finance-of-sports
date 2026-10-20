@@ -41,6 +41,44 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2018: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2018-06-30","sourceId":"liersekempenzonen-be-jaarrekening-2018-06-30-individual"}
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2020-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Lierse Kempenzonen/jaarrekening-2020-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Brutomarge (+)/(-) | pág. 7, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bezoldigingen en rechtstreekse sociale voordelen | pág. 13, Jev 0.99 |
+| 2 | Werkgeversbijdragen voor sociale verzekeringen | pág. 13, Jev 1 |
+| 3 | Andere personeelskosten | pág. 13, Claude 0.8 |
+| 4 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 7, Jev 0.92 |
+| 5 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | pág. 7, Jev 0.99 |
+| 6 | Andere bedrijfskosten | pág. 7, Jev 0.91 |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = 5490. El .md omite la fila de impuestos: resultado del ejercicio impreso -708.745 menos resultado ordinario -703.255 = 5.490
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): be-div1amateur, verificado contra roster cacheado de "2019–20 Belgian First Amateur Division" (tools/club-league-reference/be.json), coincidencia exacta "Lierse Kempenzonen".
+```
+
 ## 2019
 
 ### Ingresos
@@ -135,4 +173,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### liersekempenzonen-be-jaarrekening-2020-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

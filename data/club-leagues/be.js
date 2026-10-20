@@ -23,5 +23,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'rwdm-be': { 2025: 'be-challengerproleague', 2020: null, 2021: 'be-challengerproleague', 2022: 'be-challengerproleague', 2023: 'be-challengerproleague', 2024: 'be-proleague' },
   'beerschot-be': { 2025: 'be-proleague', 2019: 'be-challengerproleague', 2021: 'be-proleague', 2022: 'be-proleague', 2024: 'be-challengerproleague', 2020: 'be-challengerproleague', 2023: 'be-challengerproleague' },
   'raallalouviere-be': { 2025: 'be-challengerproleague' },
-  'liersekempenzonen-be': { 2018: 'be-challengerproleague', 2019: 'be-div1amateur' },
+  'liersekempenzonen-be': { 2018: 'be-challengerproleague', 2019: 'be-div1amateur', 2020: 'be-div1amateur' },
 });

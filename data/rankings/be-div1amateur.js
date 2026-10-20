@@ -33,6 +33,9 @@ window.RANKINGS["be-div1amateur"] = {
     sinDato: ["liersesk-be"],
     wiki: {"t":"2019–20 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"liersekempenzonen-be", revenue:0.895, reportType:"official_balance_sheet",
+        sourceId:"liersekempenzonen-be-jaarrekening-2020-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.895]] },
       { id:"patroeisden-be", revenue:0.311, reportType:"official_balance_sheet",
         sourceId:"patroeisden-be-jaarrekening-2020-06-30-individual-correction",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.311]] },

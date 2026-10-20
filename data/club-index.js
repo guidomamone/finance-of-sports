@@ -174,7 +174,7 @@ window.CLUB_INDEX = {
   "leixoes-pt": {"n":"Leixoes","c":"PT","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "levadiakos-gr": {"n":"Levadiakos","c":"GR","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "levante-es": {"n":"Levante UD","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "liersekempenzonen-be": {"n":"Lierse Kempenzonen","c":"BE","q":"full","y":2,"last":2019,"yrs":[[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
+  "liersekempenzonen-be": {"n":"Lierse Kempenzonen","c":"BE","q":"full","y":3,"last":2020,"yrs":[[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
   "liersesk-be": {"n":"Lierse SK","c":"BE","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "liverpool-gb": {"n":"Liverpool","c":"GB","q":"mixed","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "llaneros-co": {"n":"Llaneros","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
