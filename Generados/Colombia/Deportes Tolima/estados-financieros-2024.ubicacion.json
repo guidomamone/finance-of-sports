@@ -1,0 +1,615 @@
+{
+ "pdf": "Clubes/Colombia/Deportes Tolima/estados-financieros-2024.pdf",
+ "md": "Clubes/Colombia/Deportes Tolima/estados-financieros-2024.md",
+ "mdSha1": "b69ea6b982be24afa46937bac0a66299f3a5d95c",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:09.756Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    39,
+    45
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    69,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    81,
+    85
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    122,
+    128
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    291,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    319,
+    325
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    385,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    544,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 23,
+   "lineas": [
+    666,
+    670
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 23,
+   "lineas": [
+    678,
+    681
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    690,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    705,
+    726
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    730,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    743,
+    750
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    754,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    771,
+    776
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    786,
+    794
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    798,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    808,
+    819
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    843,
+    853
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    861,
+    869
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    873,
+    881
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    895,
+    915
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    917,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 30,
+   "lineas": [
+    942,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 31,
+   "lineas": [
+    965,
+    980
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 32,
+   "lineas": [
+    984,
+    990
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 33,
+   "lineas": [
+    1000,
+    1003
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 33,
+   "lineas": [
+    1007,
+    1016
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 33,
+   "lineas": [
+    1020,
+    1029
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 34,
+   "lineas": [
+    1037,
+    1043
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 34,
+   "lineas": [
+    1049,
+    1057
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 35,
+   "lineas": [
+    1065,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 35,
+   "lineas": [
+    1092,
+    1106
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 36,
+   "lineas": [
+    1114,
+    1120
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 36,
+   "lineas": [
+    1132,
+    1139
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 37,
+   "lineas": [
+    1151,
+    1154
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 37,
+   "lineas": [
+    1160,
+    1166
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 37,
+   "lineas": [
+    1170,
+    1174
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 38,
+   "lineas": [
+    1186,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 38,
+   "lineas": [
+    1194,
+    1200
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 38,
+   "lineas": [
+    1208,
+    1211
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 39,
+   "lineas": [
+    1227,
+    1243
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 40,
+   "lineas": [
+    1251,
+    1264
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 40,
+   "lineas": [
+    1274,
+    1279
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 41,
+   "lineas": [
+    1287,
+    1317
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 42,
+   "lineas": [
+    1325,
+    1338
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 42,
+   "lineas": [
+    1344,
+    1360
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 43,
+   "lineas": [
+    1370,
+    1378
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 43,
+   "lineas": [
+    1382,
+    1401
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 44,
+   "lineas": [
+    1409,
+    1417
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 44,
+   "lineas": [
+    1421,
+    1437
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 45,
+   "lineas": [
+    1449,
+    1464
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 45,
+   "lineas": [
+    1470,
+    1492
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 46,
+   "lineas": [
+    1500,
+    1505
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 46,
+   "lineas": [
+    1509,
+    1515
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 46,
+   "lineas": [
+    1519,
+    1547
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 47,
+   "lineas": [
+    1555,
+    1564
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 47,
+   "lineas": [
+    1568,
+    1580
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 48,
+   "lineas": [
+    1588,
+    1622
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 49,
+   "lineas": [
+    1630,
+    1647
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 49,
+   "lineas": [
+    1651,
+    1658
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 49,
+   "lineas": [
+    1662,
+    1668
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 50,
+   "lineas": [
+    1676,
+    1701
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 50,
+   "lineas": [
+    1705,
+    1723
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 51,
+   "lineas": [
+    1733,
+    1747
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 51,
+   "lineas": [
+    1753,
+    1759
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 51,
+   "lineas": [
+    1763,
+    1766
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 52,
+   "lineas": [
+    1774,
+    1781
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 52,
+   "lineas": [
+    1785,
+    1796
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 52,
+   "lineas": [
+    1800,
+    1807
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 53,
+   "lineas": [
+    1815,
+    1820
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 53,
+   "lineas": [
+    1824,
+    1833
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 53,
+   "lineas": [
+    1839,
+    1842
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "DIC-24",
+ "columna_anterior": "DIC-23",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento es solo 'Notas a los estados financieros' (pág. 1 es Nota 1 Entidad que informa; Nota 2 bases de preparación; las notas con cifras van de la Nota 3 en pág. 23 a la Nota 23 Impuesto de renta en pág. 53). No contiene el estado de resultados integral ni el balance. La tabla 'Resumen estados de resultados 2011 a 2024' (b43, pág. 39) es la serie de utilidad neta por año de la nota de patrimonio, no el estado del ejercicio. Las notas 19 a 22 solo desglosan renglones; no se armó un estado a partir de ellas."
+}

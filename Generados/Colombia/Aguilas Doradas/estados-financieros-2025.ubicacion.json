@@ -2,8 +2,8 @@
  "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2025.pdf",
  "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2025.md",
  "mdSha1": "5a9cb432258ba2d1a981219388941f2b7fd23c62",
- "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T19:41:00.249Z",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.830Z",
  "perimetroClub": null,
  "bloques": {
   "b1": {
@@ -161,17 +161,10 @@
  },
  "sin_estado": true,
  "estado": [],
- "notas_ingresos": [
-  "b15",
-  "b16"
- ],
- "notas_gastos": [
-  "b17",
-  "b18",
-  "b19"
- ],
- "escala": "unidades",
- "escala_evidencia": "Las notas expresan importes en pesos completos (ej. 'Ascienden a $21.137.372.357').",
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
  "moneda": "COP",
  "columna_ejercicio": "AÑO 2025",
  "columna_anterior": "AÑO 2024",
@@ -179,26 +172,20 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El PDF tiene un estado de resultados de 2025 que no fue transcripto como tabla (por ejemplo, en las primeras páginas)?",
-   "propuesta": "no",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice solo muestra notas desde la pág. 4 (nota 2 en adelante); no aparece ningún bloque con el estado de resultados.",
-   "bloques": [],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Falta en el índice una nota 16 (costos operacionales) entre los ingresos (b16) y los gastos de administración (b17)?",
+   "pregunta": "¿Se deja el ejercicio 2025 sin carga por ahora, porque el .md solo trae las notas y las páginas en imagen sin transcribir podrían contener el estado de resultados?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "",
-   "texto": "La numeración salta de la nota 15.2 (b16) a la nota 17 (b17); no aparece ninguna nota 16.",
+   "texto": "El .md arranca en 'Notas y revelaciones ... 2024 y 2025'; las notas 15 (ingresos, b15-b16), 17.1 (gastos de administración, b17), 17.2 (gastos de ventas, b18) y 17.3 (b19) tienen totales, pero ningún estado de resultados. Hay 13 páginas en imagen sin transcribir que habría que revisar en el PDF.",
    "bloques": [
+    "b15",
     "b16",
-    "b17"
+    "b17",
+    "b18",
+    "b19"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "No se encontró el estado de resultados entre los bloques; solo están las notas de una entidad individual (Talento Dorado S.A.). Las notas de ingresos son b15 (operacionales) y b16 (no operacionales). Las notas de gastos son b17 (administración), b18 (ventas) y b19 (no operacionales). Se excluye b6 porque es un detalle por jugador."
+ "observaciones": "Solo notas (sin estado de situación ni de resultados) en el texto transcripto. Antes de cerrar como sin estado, transcribir o mirar las páginas en imagen del PDF por si incluyen el estado de resultados. No se arma un estado desde las notas."
 }

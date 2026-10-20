@@ -1,0 +1,199 @@
+{
+ "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2023.pdf",
+ "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2023.md",
+ "mdSha1": "cd3efaa1120021d8a25e6738202697ee6b869041",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.775Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    101,
+    106
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    123,
+    127
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    158,
+    163
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    185,
+    217
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    238,
+    244
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    250,
+    254
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    281,
+    285
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    291,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    319,
+    324
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    330,
+    333
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    354,
+    359
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    365,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    377,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    396,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    410,
+    421
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    465,
+    473
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    500,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    536,
+    543
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    551,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    574,
+    582
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "AÑO 2023",
+ "columna_anterior": "AÑO 2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja el ejercicio 2023 sin carga porque el documento trae solo notas, y la conciliación fiscal 16.1 (b17) no es un estado de resultados con año anterior?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Las notas 15.1 y 15.2 (ingresos, b15-b16) y 17 (gastos de administración y ventas por columnas ADMON/VENTAS, b19-b20) existen, pero no hay estado de resultados; la 16.1 tiene columnas CONTABLE NIIF / FISCAL sin año anterior.",
+   "bloques": [
+    "b15",
+    "b16",
+    "b17",
+    "b19",
+    "b20"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de notas de Talento Dorado S.A. 2023 sin estado de situación ni de resultados. Nota 16.2 (b18) costos financieros con total. No se arma un estado desde las notas."
+}

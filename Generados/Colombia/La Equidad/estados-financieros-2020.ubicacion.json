@@ -1,0 +1,685 @@
+{
+ "pdf": "Clubes/Colombia/La Equidad/estados-financieros-2020.pdf",
+ "md": "Clubes/Colombia/La Equidad/estados-financieros-2020.md",
+ "mdSha1": "c6ff8f39a1bef031694d15f5af54754f2747bb2d",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:10.037Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    31
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    165,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 16,
+   "lineas": [
+    372,
+    390
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    398,
+    423
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    425,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    453,
+    458
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    463,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    499,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    516,
+    523
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    527,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    536,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    553,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    565,
+    572
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    576,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    585,
+    586
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    598,
+    605
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    611,
+    618
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    622,
+    629
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    631,
+    632
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    642,
+    649
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 22,
+   "lineas": [
+    656,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    686,
+    695
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 23,
+   "lineas": [
+    700,
+    714
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 24,
+   "lineas": [
+    732,
+    739
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 25,
+   "lineas": [
+    752,
+    757
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 25,
+   "lineas": [
+    766,
+    787
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 26,
+   "lineas": [
+    805,
+    815
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 26,
+   "lineas": [
+    821,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 27,
+   "lineas": [
+    849,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 27,
+   "lineas": [
+    862,
+    866
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 28,
+   "lineas": [
+    880,
+    886
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 28,
+   "lineas": [
+    897,
+    900
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 28,
+   "lineas": [
+    909,
+    913
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 29,
+   "lineas": [
+    928,
+    936
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 29,
+   "lineas": [
+    945,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 30,
+   "lineas": [
+    983,
+    987
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 31,
+   "lineas": [
+    1002,
+    1007
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 31,
+   "lineas": [
+    1016,
+    1020
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 32,
+   "lineas": [
+    1033,
+    1043
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 32,
+   "lineas": [
+    1049,
+    1052
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 32,
+   "lineas": [
+    1061,
+    1065
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 33,
+   "lineas": [
+    1080,
+    1083
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 33,
+   "lineas": [
+    1091,
+    1094
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 33,
+   "lineas": [
+    1102,
+    1108
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 34,
+   "lineas": [
+    1126,
+    1142
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 35,
+   "lineas": [
+    1161,
+    1164
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 36,
+   "lineas": [
+    1179,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 36,
+   "lineas": [
+    1197,
+    1204
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 37,
+   "lineas": [
+    1221,
+    1242
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 37,
+   "lineas": [
+    1251,
+    1256
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 38,
+   "lineas": [
+    1271,
+    1278
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 38,
+   "lineas": [
+    1287,
+    1291
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 39,
+   "lineas": [
+    1306,
+    1319
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 39,
+   "lineas": [
+    1328,
+    1334
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 40,
+   "lineas": [
+    1349,
+    1357
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 40,
+   "lineas": [
+    1366,
+    1370
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 40,
+   "lineas": [
+    1379,
+    1383
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 41,
+   "lineas": [
+    1400,
+    1406
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 41,
+   "lineas": [
+    1415,
+    1427
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 42,
+   "lineas": [
+    1446,
+    1469
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 43,
+   "lineas": [
+    1484,
+    1488
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 43,
+   "lineas": [
+    1497,
+    1503
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 43,
+   "lineas": [
+    1512,
+    1516
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 44,
+   "lineas": [
+    1533,
+    1536
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 44,
+   "lineas": [
+    1545,
+    1557
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 45,
+   "lineas": [
+    1574,
+    1579
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 45,
+   "lineas": [
+    1588,
+    1595
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 45,
+   "lineas": [
+    1604,
+    1607
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 46,
+   "lineas": [
+    1622,
+    1628
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 46,
+   "lineas": [
+    1637,
+    1643
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 46,
+   "lineas": [
+    1652,
+    1659
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 47,
+   "lineas": [
+    1678,
+    1681
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 47,
+   "lineas": [
+    1690,
+    1702
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 48,
+   "lineas": [
+    1717,
+    1720
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 48,
+   "lineas": [
+    1729,
+    1741
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 49,
+   "lineas": [
+    1760,
+    1765
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 49,
+   "lineas": [
+    1774,
+    1777
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b45",
+  "b47",
+  "b48"
+ ],
+ "notas_gastos": [
+  "b46",
+  "b49",
+  "b50",
+  "b51",
+  "b52",
+  "b53",
+  "b54",
+  "b55",
+  "b56",
+  "b57",
+  "b58",
+  "b59",
+  "b60",
+  "b61",
+  "b62",
+  "b63",
+  "b64",
+  "b65",
+  "b66",
+  "b67",
+  "b68",
+  "b69",
+  "b70",
+  "b71",
+  "b72",
+  "b73",
+  "b74",
+  "b75",
+  "b76"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Cifras expresadas en miles de pesos colombianos)",
+ "moneda": "COP",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019 Reexpresado",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el 'Estado de Resultado Integral' b5 (pág. 17, líneas 425-443), que es del año 2019 reexpresado y no del ejercicio 2020?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "Las columnas de b5 son 'Año 2019 Reexpresado Nota 5 | Variación | Año 2019 Presentado'; el documento no trae el estado de resultados de 2020.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento trae 'Notas' con el cambio de política contable (nota 5): balance y estado de resultados de 2019 reexpresado (b3, b4, b5), pero no el estado de resultados de 2020. Las notas 25 a 31 (b45 a b76) desglosan ingresos y gastos de 2020 pero no se arma un estado a partir de ellas."
+}

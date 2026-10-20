@@ -1,0 +1,261 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2016.pdf",
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2016.md",
+ "mdSha1": "1484f1ac6b3f57421e659255cc3885b41c479c4b",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.865Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    68,
+    73
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    85,
+    121
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    188,
+    197
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    211,
+    223
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 18,
+   "lineas": [
+    421,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    451,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    484,
+    488
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 20,
+   "lineas": [
+    497,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    514,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    543,
+    547
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    557,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    574,
+    586
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    599,
+    605
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    612,
+    620
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    637,
+    641
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    660,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    673,
+    676
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    684,
+    687
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    697,
+    703
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    710,
+    714
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    727,
+    741
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    750,
+    755
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    768,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    800,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    813,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 30,
+   "lineas": [
+    835,
+    843
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    852,
+    857
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b20",
+  "b22"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b23",
+  "b24",
+  "b26",
+  "b27"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "b1 (pág. 4, L~30-40 de la carátula): \"Cifras en miles de Pesos Colombianos\"",
+ "moneda": "COP",
+ "columna_ejercicio": "2016",
+ "columna_anterior": "2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro b25 (Detalle de los saldos de Otros Gastos, L813-L822), que repite idéntico al b24 (L800-L809, Total 268.418)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Otros gastos",
+   "texto": "La nota 20 imprime dos veces la misma tabla (mismas filas y total $268.418); se elige b24 y no b25.",
+   "bloques": [
+    "b24",
+    "b25"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento solo de NOTAS a los estados financieros individuales (pág. 1 a 31): no trae estado de resultados integral del ejercicio 2016; las notas 16 a 22 (ingresos, costos de ventas, otros ingresos, gastos de administración, otros gastos, costos financieros, ingresos/gasto por impuestos) desglosan renglones del estado que no está en el documento. Las notas 16-22 tienen total impreso (ingresos 7.315.028; costos 6.556.760; otros ingresos 202.256; admin 224.546; otros gastos 268.418; costos financieros 38.983; impuestos 201.076) pero ninguna cifra de resultado del ejercicio impresa. No se arma un estado desde las notas."
+}

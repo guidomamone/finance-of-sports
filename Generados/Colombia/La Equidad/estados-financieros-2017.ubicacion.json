@@ -1,0 +1,548 @@
+{
+ "pdf": "Clubes/Colombia/La Equidad/estados-financieros-2017.pdf",
+ "md": "Clubes/Colombia/La Equidad/estados-financieros-2017.md",
+ "mdSha1": "a6647b4ecf324adbb9f8439daddee9fa5f267146",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:09.941Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    23,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    145,
+    156
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    322,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    337,
+    342
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    350,
+    359
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    373,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    390,
+    398
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    412,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    428,
+    437
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    451,
+    468
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    474,
+    482
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    498,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    531,
+    538
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    542,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    567,
+    572
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    576,
+    581
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    591,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    612,
+    615
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    621,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    636,
+    640
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 18,
+   "lineas": [
+    656,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 19,
+   "lineas": [
+    702,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    728,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    748,
+    753
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    767,
+    772
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    780,
+    787
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    803,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    811,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    821,
+    829
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 23,
+   "lineas": [
+    841,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 24,
+   "lineas": [
+    872,
+    877
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 24,
+   "lineas": [
+    883,
+    898
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 25,
+   "lineas": [
+    916,
+    939
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 26,
+   "lineas": [
+    953,
+    960
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 26,
+   "lineas": [
+    966,
+    973
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 27,
+   "lineas": [
+    987,
+    993
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 27,
+   "lineas": [
+    999,
+    1013
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 28,
+   "lineas": [
+    1027,
+    1033
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 28,
+   "lineas": [
+    1039,
+    1047
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 28,
+   "lineas": [
+    1053,
+    1059
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 29,
+   "lineas": [
+    1073,
+    1080
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 29,
+   "lineas": [
+    1086,
+    1092
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 30,
+   "lineas": [
+    1106,
+    1118
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 31,
+   "lineas": [
+    1134,
+    1159
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 32,
+   "lineas": [
+    1173,
+    1178
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 32,
+   "lineas": [
+    1184,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 32,
+   "lineas": [
+    1196,
+    1203
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 33,
+   "lineas": [
+    1217,
+    1223
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 33,
+   "lineas": [
+    1229,
+    1242
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 34,
+   "lineas": [
+    1258,
+    1265
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 34,
+   "lineas": [
+    1271,
+    1279
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 35,
+   "lineas": [
+    1293,
+    1298
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 35,
+   "lineas": [
+    1304,
+    1311
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 36,
+   "lineas": [
+    1327,
+    1332
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 36,
+   "lineas": [
+    1338,
+    1342
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 36,
+   "lineas": [
+    1348,
+    1352
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 37,
+   "lineas": [
+    1366,
+    1379
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 38,
+   "lineas": [
+    1393,
+    1399
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 38,
+   "lineas": [
+    1405,
+    1419
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 39,
+   "lineas": [
+    1437,
+    1442
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b30",
+  "b32"
+ ],
+ "notas_gastos": [
+  "b31",
+  "b33",
+  "b34",
+  "b35",
+  "b36",
+  "b37",
+  "b38",
+  "b39",
+  "b40",
+  "b41",
+  "b42",
+  "b43",
+  "b44",
+  "b45",
+  "b46",
+  "b47",
+  "b48",
+  "b49",
+  "b50",
+  "b51",
+  "b52",
+  "b53",
+  "b54",
+  "b55",
+  "b56",
+  "b57",
+  "b58",
+  "b59",
+  "b60"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Cifras expresadas en miles de pesos colombianos)",
+ "moneda": "COP",
+ "columna_ejercicio": "Diciembre 31 2017",
+ "columna_anterior": "Diciembre 31 2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro b6 (pág. 11, matriz por columnas Activo/Pasivo/Patrimonio/Ingresos/Gastos/Costo de Venta/Resultados, 'Balance 31 Dic 2016')?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "Es la reexpresión del balance y resultados de 2016 (año anterior), no el estado de resultados de 2017; no hay estado de 2017 en el documento.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento es solo 'Notas a los Estados Financieros' (pág. 1-39): no trae el estado de resultados integral de 2017. Hay notas 20 a 26 con ingresos y gastos (b30 a b60), pero ninguna es el estado y no se arma uno a partir de ellas."
+}

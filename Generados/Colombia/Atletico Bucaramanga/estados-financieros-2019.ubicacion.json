@@ -1,0 +1,441 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf",
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.md",
+ "mdSha1": "7d496f708d2107b1058d739cd29d70e2a6cc1a8c",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.944Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    18,
+    20
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    49,
+    54
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    68,
+    95
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    101,
+    111
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    161,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    170,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    183,
+    188
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    192,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 8,
+   "lineas": [
+    202,
+    209
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    240,
+    253
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    283,
+    296
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    329,
+    373
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    381,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    608,
+    613
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    617,
+    622
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    636,
+    641
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    653,
+    659
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    663,
+    670
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 22,
+   "lineas": [
+    680,
+    686
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    704,
+    708
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 23,
+   "lineas": [
+    726,
+    736
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 24,
+   "lineas": [
+    764,
+    768
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 24,
+   "lineas": [
+    774,
+    784
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 25,
+   "lineas": [
+    797,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 25,
+   "lineas": [
+    815,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 25,
+   "lineas": [
+    826,
+    832
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 26,
+   "lineas": [
+    842,
+    846
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 26,
+   "lineas": [
+    850,
+    859
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 26,
+   "lineas": [
+    868,
+    872
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 27,
+   "lineas": [
+    885,
+    893
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 27,
+   "lineas": [
+    906,
+    910
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 28,
+   "lineas": [
+    922,
+    929
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 28,
+   "lineas": [
+    935,
+    943
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 29,
+   "lineas": [
+    957,
+    962
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 29,
+   "lineas": [
+    972,
+    979
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 30,
+   "lineas": [
+    993,
+    1003
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 30,
+   "lineas": [
+    1007,
+    1014
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 31,
+   "lineas": [
+    1033,
+    1046
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 31,
+   "lineas": [
+    1048,
+    1065
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 32,
+   "lineas": [
+    1082,
+    1098
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 33,
+   "lineas": [
+    1108,
+    1133
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 33,
+   "lineas": [
+    1137,
+    1143
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 34,
+   "lineas": [
+    1151,
+    1179
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 35,
+   "lineas": [
+    1187,
+    1194
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 35,
+   "lineas": [
+    1198,
+    1207
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 35,
+   "lineas": [
+    1216,
+    1220
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 36,
+   "lineas": [
+    1235,
+    1245
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 37,
+   "lineas": [
+    1272,
+    1276
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 37,
+   "lineas": [
+    1287,
+    1291
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 39,
+   "lineas": [
+    1337,
+    1341
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b10"
+ ],
+ "notas_ingresos": [
+  "b36",
+  "b37",
+  "b46",
+  "b48"
+ ],
+ "notas_gastos": [
+  "b38",
+  "b39",
+  "b40",
+  "b41",
+  "b42",
+  "b43",
+  "b44",
+  "b45",
+  "b47",
+  "b49"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "L238 (pág. 9, encabezado del estado de resultados): \"Cifras en miles de pesos colombianos\"; carátula de las notas (b2, pág. 3): \"Cifras en miles de Pesos Colombianos\"",
+ "moneda": "COP",
+ "columna_ejercicio": "31 de diciembre de 2019",
+ "columna_anterior": "31 de diciembre de 2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual por función del gasto en b10 (pág. 9, L242-L253). No hay nota de impuesto a las ganancias: la fila 'Ingreso (gasto) por impuestos' (-361.862) solo está en el estado. Se eligieron las notas 13, 15, 16, 17, 18, 19 y 20 y sus sub-cuadros (a) a (e); no se eligen balance (b5-b9), patrimonio (b11), flujo (b12-b13) ni las notas de balance (1 a 12, b14-b35 incluidos los cuadros de demandas por persona). Los sub-cuadros (a)...(e) imprimen solo el ejercicio 2019 (sin columna anterior). La nota 14 (costos de venta) no tiene cifras (reclasificación a gastos de venta 2018). La nota 14 cita gastos de venta 2019 de $11.369.919 en el texto, pero el cuadro y el estado imprimen 11.368.189."
+}

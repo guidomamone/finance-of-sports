@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2017.pdf",
+ "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2017.md",
+ "mdSha1": "4e2aa67b7cccc314cb3f6fad772688e9010ee355",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.620Z",
+ "perimetroClub": null,
+ "bloques": {},
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "2017",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja el ejercicio 2017 sin carga porque el .md solo transcribe el dictamen del revisor fiscal (5 páginas) y ninguna tabla?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El .md (L1-L126) es solo la carta/dictamen de ML Asesorías S.A.S. fechada 26-mar-2018, sin estados ni notas; el PDF puede tener más páginas que no se transcribieron.",
+   "bloques": [],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El .md tiene 5 páginas con solo el dictamen del revisor fiscal (Omar Giraldo López). Menciona porcentajes (ingresos operacionales +17,3% vs 2016, +$1.638 millones) pero no imprime estado de resultados ni notas con cifras. Índice de bloques vacío. Puede ser un PDF cuyas páginas de estados quedaron sin transcribir: conviene revisar el PDF."
+}

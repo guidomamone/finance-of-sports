@@ -2,8 +2,8 @@
  "pdf": "Clubes/Colombia/La Equidad/estados-financieros-2025.pdf",
  "md": "Clubes/Colombia/La Equidad/estados-financieros-2025.md",
  "mdSha1": "984e451e9263bffa4feccd876ac54a2a25c3fc82",
- "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T19:41:11.622Z",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:10.203Z",
  "perimetroClub": null,
  "bloques": {
   "b1": {
@@ -416,8 +416,8 @@
   "b44",
   "b45"
  ],
- "escala": "no se sabe",
- "escala_evidencia": "No se ve el estado de resultados en el índice; las notas muestran importes como $278.438 o $2.483.500, probablemente en miles de pesos, pero no hay frase que lo indique.",
+ "escala": "miles",
+ "escala_evidencia": "no se ve la frase en el índice; las cifras de las notas (ej. Total Impuestos 41.620, Dimayor) están en miles como en los años anteriores",
  "moneda": "COP",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
@@ -425,40 +425,16 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El PDF contiene el estado de resultados integral 2025 en páginas anteriores a la 18, que no aparecen en este índice?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "El índice empieza en la pág. 18 con la Nota 5. Las notas 20 a 26 desglosan ingresos y gastos, pero no aparece el estado principal.",
-   "bloques": [
-    "b35",
-    "b42"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Los importes están expresados en miles de pesos colombianos?",
+   "pregunta": "¿La escala de las notas de 2025 es miles de pesos colombianos, como en los demás años del club?",
    "propuesta": "sí",
    "tema": "escala",
    "renglon": "",
-   "texto": "Ningún bloque visible indica la escala de los importes.",
-   "bloques": [],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se dejan afuera de la carga los cuadros del equipo femenino (Nota 28), por ser un subconjunto que no abre renglones del estado?",
-   "propuesta": "sí",
-   "tema": "usar-cuadro-por-segmento",
-   "renglon": "",
-   "texto": "La Nota 28 detalla ingresos y gastos de una sola división, y esos importes ya están incluidos en las notas 20 a 25.",
+   "texto": "El índice de bloques no incluye la frase de escala de este documento; no cambia nada mientras no haya estado cargado.",
    "bloques": [
-    "b46",
-    "b47",
-    "b48",
-    "b49"
+    "b35"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "El índice no incluye el estado de resultados; solo trae notas, desde la pág. 18. Se marcan como candidatas a desglose las notas de ingresos (20, 22) y de gastos (21, 23 a 26). Las notas 36 a 38 abren los renglones Dimayor, Actividades Conexas y Publicidad de la Nota 20. Si el estado está en páginas anteriores, hay que pedirlo."
+ "observaciones": "El documento es solo 'Notas a los Estados Financieros' (pág. 18-37 con cifras): no trae el estado de resultados integral de 2025. Hay notas 20 a 26 con ingresos y gastos (b35 a b45), pero ninguna es el estado y no se arma uno a partir de ellas. b46-b49 (nota 28, equipo femenino) no son el estado."
 }

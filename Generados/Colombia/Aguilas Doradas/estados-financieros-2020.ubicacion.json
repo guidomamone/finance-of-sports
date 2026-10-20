@@ -1,0 +1,223 @@
+{
+ "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2020.pdf",
+ "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2020.md",
+ "mdSha1": "8b0aab12f097767897824e84d4ce6826fd8f8d7c",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:08.699Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    80,
+    81
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    96,
+    101
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    105,
+    109
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    119,
+    121
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    136,
+    138
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    146,
+    150
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    152,
+    162
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 7,
+   "lineas": [
+    187,
+    193
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 7,
+   "lineas": [
+    197,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 8,
+   "lineas": [
+    224,
+    230
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 9,
+   "lineas": [
+    249,
+    254
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 9,
+   "lineas": [
+    260,
+    263
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 9,
+   "lineas": [
+    269,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 9,
+   "lineas": [
+    275,
+    278
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 10,
+   "lineas": [
+    293,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 10,
+   "lineas": [
+    303,
+    308
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 10,
+   "lineas": [
+    312,
+    320
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 11,
+   "lineas": [
+    343,
+    354
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 11,
+   "lineas": [
+    362,
+    368
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 12,
+   "lineas": [
+    385,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 12,
+   "lineas": [
+    397,
+    404
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 12,
+   "lineas": [
+    408,
+    423
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 13,
+   "lineas": [
+    444,
+    446
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "COP",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja el ejercicio 2020 sin carga porque el documento trae solo notas, y la conciliación fiscal 16.1 (b19-b20) no es un estado de resultados con año anterior?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Las notas 15 (ingresos, b18), 17 (gastos de administración, b22) y 18 (gastos de ventas, b23) existen, pero no hay estado de resultados; la 16.1 tiene columnas CONTABLE NIIF / FISCAL sin año anterior.",
+   "bloques": [
+    "b18",
+    "b19",
+    "b20",
+    "b22",
+    "b23"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de notas de Talento Dorado S.A. 2020 sin estado de situación ni de resultados. Nota 16.2 (b21) costos financieros con total. No se arma un estado desde las notas."
+}

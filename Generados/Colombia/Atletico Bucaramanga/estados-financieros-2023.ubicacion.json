@@ -1,0 +1,451 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2023.pdf",
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2023.md",
+ "mdSha1": "aee50a479758dfb528c22e954dc5c42617a2cb01",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:09.126Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    103,
+    108
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    120,
+    147
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    151,
+    161
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    359,
+    364
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    368,
+    371
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    377,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    395,
+    403
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    409,
+    413
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    425,
+    430
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    434,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    448,
+    452
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    458,
+    461
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    475,
+    478
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    482,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    494,
+    503
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    527,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    536,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    549,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 22,
+   "lineas": [
+    560,
+    570
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    582,
+    587
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 22,
+   "lineas": [
+    591,
+    594
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    600,
+    607
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 23,
+   "lineas": [
+    615,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 23,
+   "lineas": [
+    627,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 24,
+   "lineas": [
+    647,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 24,
+   "lineas": [
+    658,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 25,
+   "lineas": [
+    683,
+    686
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 25,
+   "lineas": [
+    696,
+    702
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    708,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 26,
+   "lineas": [
+    724,
+    732
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 26,
+   "lineas": [
+    742,
+    755
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 27,
+   "lineas": [
+    761,
+    776
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 27,
+   "lineas": [
+    780,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 27,
+   "lineas": [
+    787,
+    790
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 27,
+   "lineas": [
+    794,
+    801
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 28,
+   "lineas": [
+    813,
+    826
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 28,
+   "lineas": [
+    830,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 29,
+   "lineas": [
+    854,
+    858
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 29,
+   "lineas": [
+    862,
+    868
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 29,
+   "lineas": [
+    872,
+    889
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 29,
+   "lineas": [
+    893,
+    898
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 30,
+   "lineas": [
+    906,
+    920
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 30,
+   "lineas": [
+    926,
+    931
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 30,
+   "lineas": [
+    939,
+    945
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 31,
+   "lineas": [
+    953,
+    956
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 31,
+   "lineas": [
+    964,
+    970
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 31,
+   "lineas": [
+    978,
+    982
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 32,
+   "lineas": [
+    988,
+    998
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 32,
+   "lineas": [
+    1004,
+    1007
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 32,
+   "lineas": [
+    1018,
+    1022
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 33,
+   "lineas": [
+    1030,
+    1034
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b30",
+  "b43",
+  "b45"
+ ],
+ "notas_gastos": [
+  "b31",
+  "b32",
+  "b33",
+  "b34",
+  "b35",
+  "b36",
+  "b37",
+  "b38",
+  "b39",
+  "b40",
+  "b41",
+  "b42",
+  "b44",
+  "b46",
+  "b47"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "b1 (pág. 5): \"Cifras en miles de Pesos Colombianos\"; L1 de la transcripción: \"miles de pesos colombianos\"",
+ "moneda": "COP",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento es \"Notas a los estados financieros individuales a diciembre 31 de 2023 y 2022\": tabla de contenido desde la descripción de la entidad hasta la nota 20, sin estado de situación financiera ni estado de resultados. Las notas 13 a 20 tienen total impreso; no hay resultado del ejercicio impreso salvo la fila Pérdida del periodo de la nota 12 (patrimonio, b28). b34 (servicios de administración) no tiene año en el encabezado. No se arma un estado desde las notas."
+}

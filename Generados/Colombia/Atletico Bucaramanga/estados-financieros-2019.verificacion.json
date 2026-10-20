@@ -1,0 +1,939 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf",
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.md",
+ "generado": "2026-10-20T21:16:32.675Z",
+ "scriptHuella": "bb1724ebf1b3",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2019,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.006999999999720785
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 13047.875 en este documento y 13047.875 en estados-financieros-2020.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Otros ingresos\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "el desglose de \"Otros gastos\" (8 filas) no suma la fila: quedó la fila"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Otros gastos",
+   "suma": 798.771,
+   "objetivo": 4.395
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Otros gastos",
+   "suma": 798.771,
+   "objetivo": 4.395
+  }
+ ],
+ "totales": {
+  "ingresos": 13047.875,
+  "gastos": 13367.695,
+  "financiero": -52.215,
+  "impuesto": -361.862,
+  "resultadoImpreso": -733.89,
+  "resultadoParaCargar": -733.89,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Taquilla venta de boleteria",
+   "lado": "ingreso",
+   "M": 2047.612,
+   "pagina": 30,
+   "linea": 996,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta y préstamo de derechos deportivos",
+   "lado": "ingreso",
+   "M": 1580,
+   "pagina": 30,
+   "linea": 997,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Publicidad y propaganda",
+   "lado": "ingreso",
+   "M": 97.8,
+   "pagina": 30,
+   "linea": 998,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Derechos de televisión",
+   "lado": "ingreso",
+   "M": 5162.038,
+   "pagina": 30,
+   "linea": 999,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Patrocinios",
+   "lado": "ingreso",
+   "M": 1720.04,
+   "pagina": 30,
+   "linea": 1000,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Reclamaciones mecanismo de solidaridad",
+   "lado": "ingreso",
+   "M": 19.712,
+   "pagina": 30,
+   "linea": 1001,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Auxilio hotelero Dimayor",
+   "lado": "ingreso",
+   "M": 891.585,
+   "pagina": 30,
+   "linea": 1010,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Actividades conexas (a)\""
+  },
+  {
+   "etiqueta": "Auxilio Federacion Colombiana de Futbol",
+   "lado": "ingreso",
+   "M": 643.561,
+   "pagina": 30,
+   "linea": 1011,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Actividades conexas (a)\""
+  },
+  {
+   "etiqueta": "Auxilio patrocinador bet play Liga 2020",
+   "lado": "ingreso",
+   "M": 540,
+   "pagina": 30,
+   "linea": 1012,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Actividades conexas (a)\""
+  },
+  {
+   "etiqueta": "Otros Auxilios Dimayor",
+   "lado": "ingreso",
+   "M": 167.475,
+   "pagina": 30,
+   "linea": 1013,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Actividades conexas (a)\""
+  },
+  {
+   "etiqueta": "Otros ingresos",
+   "lado": "ingreso",
+   "M": 178.052,
+   "pagina": 9,
+   "linea": 247,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costos de ventas mercancias",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 9,
+   "linea": 243,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sueldos de administracion",
+   "lado": "gasto",
+   "M": 117.973,
+   "pagina": 31,
+   "linea": 1051,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Auxilio de transporte",
+   "lado": "gasto",
+   "M": 4.865,
+   "pagina": 31,
+   "linea": 1052,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Otros Auxilios",
+   "lado": "gasto",
+   "M": 66.653,
+   "pagina": 31,
+   "linea": 1053,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Cesantias",
+   "lado": "gasto",
+   "M": 10.187,
+   "pagina": 31,
+   "linea": 1054,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Intereses de cesantias",
+   "lado": "gasto",
+   "M": 1.017,
+   "pagina": 31,
+   "linea": 1055,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Prima de servicios",
+   "lado": "gasto",
+   "M": 9.923,
+   "pagina": 31,
+   "linea": 1056,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Vacaciones",
+   "lado": "gasto",
+   "M": 6.062,
+   "pagina": 31,
+   "linea": 1057,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Indemnizaciones laborales",
+   "lado": "gasto",
+   "M": 28.01,
+   "pagina": 31,
+   "linea": 1058,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes a administradores de riesgos profesionales",
+   "lado": "gasto",
+   "M": 1.787,
+   "pagina": 31,
+   "linea": 1059,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes a entidades promotoras de salud e.p.s",
+   "lado": "gasto",
+   "M": 1.302,
+   "pagina": 31,
+   "linea": 1060,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes a fondos de pensiones y o cesantias",
+   "lado": "gasto",
+   "M": 22.951,
+   "pagina": 31,
+   "linea": 1061,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes cajas de compensación familiar",
+   "lado": "gasto",
+   "M": 4.639,
+   "pagina": 31,
+   "linea": 1062,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes i.c.b.f.",
+   "lado": "gasto",
+   "M": 0.324,
+   "pagina": 31,
+   "linea": 1063,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes sena",
+   "lado": "gasto",
+   "M": 0.216,
+   "pagina": 31,
+   "linea": 1064,
+   "origen": "nota que desglosa \"Gastos de administracion\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 58.323,
+   "pagina": 31,
+   "linea": 1037,
+   "origen": "nota que desglosa \"Gastos de administracion\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 50.4,
+   "pagina": 31,
+   "linea": 1039,
+   "origen": "nota que desglosa \"Gastos de administracion\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 3.556,
+   "pagina": 31,
+   "linea": 1040,
+   "origen": "nota que desglosa \"Gastos de administracion\""
+  },
+  {
+   "etiqueta": "Gastos legales",
+   "lado": "gasto",
+   "M": 2.534,
+   "pagina": 31,
+   "linea": 1041,
+   "origen": "nota que desglosa \"Gastos de administracion\""
+  },
+  {
+   "etiqueta": "Mantenimiento y reparaciones",
+   "lado": "gasto",
+   "M": 1.127,
+   "pagina": 31,
+   "linea": 1042,
+   "origen": "nota que desglosa \"Gastos de administracion\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 8.585,
+   "pagina": 31,
+   "linea": 1043,
+   "origen": "nota que desglosa \"Gastos de administracion\""
+  },
+  {
+   "etiqueta": "Gastos varios",
+   "lado": "gasto",
+   "M": 0.294,
+   "pagina": 31,
+   "linea": 1044,
+   "origen": "nota que desglosa \"Gastos de administracion\""
+  },
+  {
+   "etiqueta": "Provisiones demandas laborales (nota 9)",
+   "lado": "gasto",
+   "M": 800,
+   "pagina": 31,
+   "linea": 1045,
+   "origen": "nota que desglosa \"Gastos de administracion\""
+  },
+  {
+   "etiqueta": "Salario integral",
+   "lado": "gasto",
+   "M": 3703.061,
+   "pagina": 33,
+   "linea": 1111,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Sueldos Ordinarios",
+   "lado": "gasto",
+   "M": 771.203,
+   "pagina": 33,
+   "linea": 1112,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Auxilio de transporte",
+   "lado": "gasto",
+   "M": 9.07,
+   "pagina": 33,
+   "linea": 1113,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Auxilios de vivienda y sostenimiento",
+   "lado": "gasto",
+   "M": 235.832,
+   "pagina": 33,
+   "linea": 1114,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Viaticos",
+   "lado": "gasto",
+   "M": 1.12,
+   "pagina": 33,
+   "linea": 1115,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Cesantias",
+   "lado": "gasto",
+   "M": 68.535,
+   "pagina": 33,
+   "linea": 1116,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Intereses de cesantias",
+   "lado": "gasto",
+   "M": 6.216,
+   "pagina": 33,
+   "linea": 1117,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Prima de servicios",
+   "lado": "gasto",
+   "M": 69.899,
+   "pagina": 33,
+   "linea": 1118,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Vacaciones",
+   "lado": "gasto",
+   "M": 193.693,
+   "pagina": 33,
+   "linea": 1119,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Otros auxilios",
+   "lado": "gasto",
+   "M": 11.844,
+   "pagina": 33,
+   "linea": 1120,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Dotacion y suministro a trabajadores",
+   "lado": "gasto",
+   "M": 15.669,
+   "pagina": 33,
+   "linea": 1121,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Indemnizaciones laborales",
+   "lado": "gasto",
+   "M": 61.967,
+   "pagina": 33,
+   "linea": 1122,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes a administradoras de riesgos profesionales",
+   "lado": "gasto",
+   "M": 78.872,
+   "pagina": 33,
+   "linea": 1123,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes a entidades promotoras de salud eps",
+   "lado": "gasto",
+   "M": 206.225,
+   "pagina": 33,
+   "linea": 1124,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes a fondo de pensiones y cesantias",
+   "lado": "gasto",
+   "M": 395.384,
+   "pagina": 33,
+   "linea": 1125,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes cajas de compensacion",
+   "lado": "gasto",
+   "M": 140.266,
+   "pagina": 33,
+   "linea": 1126,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes icbf",
+   "lado": "gasto",
+   "M": 79.629,
+   "pagina": 33,
+   "linea": 1127,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Aportes sena",
+   "lado": "gasto",
+   "M": 53.188,
+   "pagina": 33,
+   "linea": 1128,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Medicamentos y botiquin",
+   "lado": "gasto",
+   "M": 9.164,
+   "pagina": 33,
+   "linea": 1129,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Serv. laboratorio/ examenes",
+   "lado": "gasto",
+   "M": 3.4,
+   "pagina": 33,
+   "linea": 1130,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Servicios medicos",
+   "lado": "gasto",
+   "M": 110.6,
+   "pagina": 33,
+   "linea": 1131,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "Premios",
+   "lado": "gasto",
+   "M": 63.156,
+   "pagina": 33,
+   "linea": 1132,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de personal (a)\""
+  },
+  {
+   "etiqueta": "De vehiculos",
+   "lado": "gasto",
+   "M": 1.246,
+   "pagina": 33,
+   "linea": 1140,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Impuestos (b)\""
+  },
+  {
+   "etiqueta": "De espectaculos publicos",
+   "lado": "gasto",
+   "M": 197.097,
+   "pagina": 33,
+   "linea": 1141,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Impuestos (b)\""
+  },
+  {
+   "etiqueta": "Impoconsumo 8%",
+   "lado": "gasto",
+   "M": 5.57,
+   "pagina": 33,
+   "linea": 1142,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Impuestos (b)\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 14.81,
+   "pagina": 32,
+   "linea": 1088,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Contribuciones y afiliaciones",
+   "lado": "gasto",
+   "M": 19.843,
+   "pagina": 32,
+   "linea": 1089,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 6.014,
+   "pagina": 32,
+   "linea": 1090,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Aseo y vigilancia",
+   "lado": "gasto",
+   "M": 17.72,
+   "pagina": 34,
+   "linea": 1154,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Servicios Temporales",
+   "lado": "gasto",
+   "M": 2.829,
+   "pagina": 34,
+   "linea": 1155,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Servicios publicos",
+   "lado": "gasto",
+   "M": 0.306,
+   "pagina": 34,
+   "linea": 1156,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Transporte Fletes y Acarreos",
+   "lado": "gasto",
+   "M": 133.097,
+   "pagina": 34,
+   "linea": 1157,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Sub 20",
+   "lado": "gasto",
+   "M": 10.276,
+   "pagina": 34,
+   "linea": 1158,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Arbitraje",
+   "lado": "gasto",
+   "M": 136.012,
+   "pagina": 34,
+   "linea": 1159,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Logistica",
+   "lado": "gasto",
+   "M": 0.27,
+   "pagina": 34,
+   "linea": 1160,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Refrigerios",
+   "lado": "gasto",
+   "M": 26.168,
+   "pagina": 34,
+   "linea": 1161,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Alquiler cancha",
+   "lado": "gasto",
+   "M": 7.416,
+   "pagina": 34,
+   "linea": 1162,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Boleteria",
+   "lado": "gasto",
+   "M": 119.317,
+   "pagina": 34,
+   "linea": 1163,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Mantenimiento gramilla",
+   "lado": "gasto",
+   "M": 76.553,
+   "pagina": 34,
+   "linea": 1164,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Servicio administracion",
+   "lado": "gasto",
+   "M": 12.492,
+   "pagina": 34,
+   "linea": 1165,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Utilidad",
+   "lado": "gasto",
+   "M": 13.513,
+   "pagina": 34,
+   "linea": 1166,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Convenio publicidad",
+   "lado": "gasto",
+   "M": 3.524,
+   "pagina": 34,
+   "linea": 1167,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Inscripciones torneos",
+   "lado": "gasto",
+   "M": 8.6,
+   "pagina": 34,
+   "linea": 1168,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Bomberos",
+   "lado": "gasto",
+   "M": 34.795,
+   "pagina": 34,
+   "linea": 1169,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Cruz roja",
+   "lado": "gasto",
+   "M": 15.78,
+   "pagina": 34,
+   "linea": 1170,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Ambulancia",
+   "lado": "gasto",
+   "M": 3.22,
+   "pagina": 34,
+   "linea": 1171,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Convenios",
+   "lado": "gasto",
+   "M": 1610.926,
+   "pagina": 34,
+   "linea": 1172,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "No deducibles",
+   "lado": "gasto",
+   "M": 3.622,
+   "pagina": 34,
+   "linea": 1173,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Vallas",
+   "lado": "gasto",
+   "M": 2.492,
+   "pagina": 34,
+   "linea": 1174,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Imprevistos",
+   "lado": "gasto",
+   "M": 3.108,
+   "pagina": 34,
+   "linea": 1175,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Servicios no gravados",
+   "lado": "gasto",
+   "M": 2.568,
+   "pagina": 34,
+   "linea": 1176,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Asesorias deportivas",
+   "lado": "gasto",
+   "M": 9.144,
+   "pagina": 34,
+   "linea": 1177,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Asesoria medica",
+   "lado": "gasto",
+   "M": 0.3,
+   "pagina": 34,
+   "linea": 1178,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Servicios (c)\""
+  },
+  {
+   "etiqueta": "Gastos legales",
+   "lado": "gasto",
+   "M": 28.965,
+   "pagina": 32,
+   "linea": 1092,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Mantenimiento y reparación",
+   "lado": "gasto",
+   "M": 14.947,
+   "pagina": 32,
+   "linea": 1093,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Alojamiento y manuntencion",
+   "lado": "gasto",
+   "M": 100.662,
+   "pagina": 35,
+   "linea": 1190,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de viaje (d)\""
+  },
+  {
+   "etiqueta": "Pasajes Aereos",
+   "lado": "gasto",
+   "M": 121.303,
+   "pagina": 35,
+   "linea": 1191,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de viaje (d)\""
+  },
+  {
+   "etiqueta": "Pasajes terrestres",
+   "lado": "gasto",
+   "M": 4.449,
+   "pagina": 35,
+   "linea": 1192,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de viaje (d)\""
+  },
+  {
+   "etiqueta": "Peajes",
+   "lado": "gasto",
+   "M": 0.858,
+   "pagina": 35,
+   "linea": 1193,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Gastos de viaje (d)\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 35.015,
+   "pagina": 32,
+   "linea": 1095,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Utiles de Papeleria",
+   "lado": "gasto",
+   "M": 1.693,
+   "pagina": 35,
+   "linea": 1201,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos (e)\""
+  },
+  {
+   "etiqueta": "Combustibles y lubricantes",
+   "lado": "gasto",
+   "M": 1.532,
+   "pagina": 35,
+   "linea": 1202,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos (e)\""
+  },
+  {
+   "etiqueta": "Taxis y buses",
+   "lado": "gasto",
+   "M": 1.03,
+   "pagina": 35,
+   "linea": 1203,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos (e)\""
+  },
+  {
+   "etiqueta": "Casino y Restaurantes",
+   "lado": "gasto",
+   "M": 139.235,
+   "pagina": 35,
+   "linea": 1204,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos (e)\""
+  },
+  {
+   "etiqueta": "Prestamo de jugadores",
+   "lado": "gasto",
+   "M": 2115.115,
+   "pagina": 35,
+   "linea": 1205,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos (e)\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 16.771,
+   "pagina": 35,
+   "linea": 1206,
+   "origen": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos (e)\""
+  },
+  {
+   "etiqueta": "Impuestos asumidos",
+   "lado": "gasto",
+   "M": 134.374,
+   "pagina": 36,
+   "linea": 1240,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Demandas laborales (a)",
+   "lado": "gasto",
+   "M": 29.763,
+   "pagina": 36,
+   "linea": 1241,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Indemnizaciones",
+   "lado": "gasto",
+   "M": 57.8,
+   "pagina": 36,
+   "linea": 1242,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Multas sanciones y litigios (b)",
+   "lado": "gasto",
+   "M": 572.439,
+   "pagina": 36,
+   "linea": 1243,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 4.395,
+   "pagina": 36,
+   "linea": 1244,
+   "origen": "nota que desglosa \"Otros gastos\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 2.078,
+   "linea": 249
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -54.293,
+   "linea": 250
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": -361.862,
+   "linea": 252
+  }
+ ]
+}

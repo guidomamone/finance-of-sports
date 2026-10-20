@@ -1,0 +1,454 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2024.pdf",
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2024.md",
+ "mdSha1": "bd5fdf7bbc1b6faf1c5ebb2d3969195dd3ff214c",
+ "modelo": "claude-sonnet-5-5 (subagente de sesión, a mano)",
+ "generado": "2026-10-20T21:16:09.181Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    101,
+    106
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    120,
+    147
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    153,
+    163
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    391,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    400,
+    403
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    409,
+    413
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    419,
+    423
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    437,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    446,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    465,
+    468
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    478,
+    481
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    490,
+    494
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    496,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    531,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    538,
+    542
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    550,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    584,
+    587
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    595,
+    598
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    604,
+    614
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    630,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 22,
+   "lineas": [
+    639,
+    642
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    648,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    659,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 23,
+   "lineas": [
+    681,
+    684
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    692,
+    708
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 24,
+   "lineas": [
+    718,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    729,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 24,
+   "lineas": [
+    741,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    758,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 25,
+   "lineas": [
+    775,
+    788
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 26,
+   "lineas": [
+    796,
+    807
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 26,
+   "lineas": [
+    811,
+    814
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 26,
+   "lineas": [
+    818,
+    827
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 26,
+   "lineas": [
+    831,
+    837
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 27,
+   "lineas": [
+    849,
+    862
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 27,
+   "lineas": [
+    866,
+    890
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 28,
+   "lineas": [
+    898,
+    903
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 28,
+   "lineas": [
+    907,
+    938
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 29,
+   "lineas": [
+    946,
+    951
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 29,
+   "lineas": [
+    955,
+    972
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 29,
+   "lineas": [
+    978,
+    983
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 30,
+   "lineas": [
+    995,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 30,
+   "lineas": [
+    1008,
+    1011
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 30,
+   "lineas": [
+    1019,
+    1026
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 30,
+   "lineas": [
+    1034,
+    1038
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 31,
+   "lineas": [
+    1042,
+    1044
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 31,
+   "lineas": [
+    1046,
+    1056
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 31,
+   "lineas": [
+    1058,
+    1061
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 31,
+   "lineas": [
+    1063,
+    1067
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 32,
+   "lineas": [
+    1075,
+    1080
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b29",
+  "b41",
+  "b43"
+ ],
+ "notas_gastos": [
+  "b30",
+  "b31",
+  "b32",
+  "b33",
+  "b34",
+  "b35",
+  "b36",
+  "b37",
+  "b38",
+  "b39",
+  "b40",
+  "b42",
+  "b44",
+  "b45"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "b1 (pág. 5): \"Cifras en miles de Pesos Colombianos\"",
+ "moneda": "COP",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La segunda columna del cuadro b30 (Gastos de administración, encabezado \"2024 | 2024\") es la de 2023?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Gastos de administración",
+   "texto": "El encabezado imprime 2024 dos veces; por el resto de las notas (2024 | 2023) la segunda sería 2023.",
+   "bloques": [
+    "b30"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento es \"Notas a los estados financieros individuales a diciembre 31 de 2024 y 2023\": sin estado de situación financiera ni estado de resultados. Notas 13 a 20 con total impreso; sin resultado del ejercicio impreso salvo la fila Pérdida del periodo de la nota 12 (patrimonio, b27). Otro encabezado con error de año: b14 (activos por impuestos corrientes) dice \"2024 | 2025\". No se arma un estado desde las notas."
+}
