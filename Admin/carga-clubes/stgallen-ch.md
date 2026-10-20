@@ -303,17 +303,16 @@ tools/cargar.mjs (2026-10-20): ch-superleague, verificado contra roster cacheado
 ### Ingresos
 
 ```text
-2019: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2019: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Suiza/St. Gallen/geschaeftsbericht-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Erträge brutto | pág. 7, precedente |
-| 2 | Entschädigung von FCSG Event AG | pág. 7, Jev 0.9 |
-| 3 | Ertragsminderungen | pág. 7, precedente |
-| 4 | Ausserordentlicher Ertrag | pág. 7, precedente |
-| 5 | Auflösung Rückstellungen | pág. 7, Jev 1 |
+| 2 | Ertragsminderungen | pág. 7, precedente |
+| 3 | Ausserordentlicher Ertrag | pág. 7, precedente |
+| 4 | Auflösung Rückstellungen | pág. 7, Jev 1 |
 
 ### Gastos
 
@@ -322,27 +321,20 @@ Generados/Suiza/St. Gallen/geschaeftsbericht-2018-19.categorias.json (escalón d
 | 1 | Direkte Kosten | pág. 7, precedente |
 | 2 | Personalaufwand | pág. 7, precedente |
 | 3 | Sonstiger Betriebsaufwand | pág. 7, precedente |
-| 4 | Entschädigung an FCSG AG | pág. 7, precedente |
-| 5 | Abschreibungen Spielerwerte | pág. 7, precedente |
-| 6 | Abschreibungen Sachanlagen | pág. 7, precedente |
-| 7 | Ausserordentlicher Aufwand | pág. 7, Jev 1 |
-| 8 | Ausserordentliche Abschreibungen | pág. 7, precedente |
+| 4 | Abschreibungen Spielerwerte | pág. 7, precedente |
+| 5 | Abschreibungen Sachanlagen | pág. 7, precedente |
+| 6 | Ausserordentlicher Aufwand | pág. 7, precedente |
+| 7 | Ausserordentliche Abschreibungen | pág. 7, precedente |
 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Estadio, Venta de Jugadores, Otras secciones deportivas, Organización de partidos
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2018–19 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "St. Gallen".
 ```
 
 ## Fuentes

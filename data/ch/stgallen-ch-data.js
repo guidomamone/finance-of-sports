@@ -14,13 +14,6 @@ const stgallenchRevenueLinesByYear = {
     { rawLabel:'Veränderung Wertberichtigungen', normalizedCategory:'other_income', amountNative:0.021, disclosureLevel:'aggregated' },
     { rawLabel:'Ertragsminderungen', normalizedCategory:'other_income', amountNative:-0.484, disclosureLevel:'aggregated' },
   ],
-  2019: [
-    { rawLabel:'Erträge brutto', normalizedCategory:'lump_football_operations', amountNative:28.001, disclosureLevel:'aggregated' },
-    { rawLabel:'Entschädigung von FCSG Event AG', normalizedCategory:'other_income', amountNative:6.405, disclosureLevel:'aggregated' },
-    { rawLabel:'Ertragsminderungen', normalizedCategory:'other_income', amountNative:-0.304, disclosureLevel:'aggregated' },
-    { rawLabel:'Ausserordentlicher Ertrag', normalizedCategory:'other_income', amountNative:0.713, disclosureLevel:'aggregated' },
-    { rawLabel:'Auflösung Rückstellungen', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
-  ],
   2022: [
     { rawLabel:'Erträge brutto', normalizedCategory:'lump_football_operations', amountNative:31.998, disclosureLevel:'aggregated' },
     { rawLabel:'Ertragsminderungen', normalizedCategory:'other_income', amountNative:-0.315, disclosureLevel:'aggregated' },
@@ -62,6 +55,12 @@ const stgallenchRevenueLinesByYear = {
     { rawLabel:'Ertragsminderungen', normalizedCategory:'other_income', amountNative:-0.369, disclosureLevel:'aggregated' },
     { rawLabel:'Ausserordentlicher Ertrag', normalizedCategory:'other_income', amountNative:1.482, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Erträge brutto', normalizedCategory:'lump_football_operations', amountNative:28.001, disclosureLevel:'aggregated' },
+    { rawLabel:'Ertragsminderungen', normalizedCategory:'other_income', amountNative:-0.304, disclosureLevel:'aggregated' },
+    { rawLabel:'Ausserordentlicher Ertrag', normalizedCategory:'other_income', amountNative:0.713, disclosureLevel:'aggregated' },
+    { rawLabel:'Auflösung Rückstellungen', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+  ],
 };
 const stgallenchExpenseLinesByYear = {
   2025: [
@@ -77,16 +76,6 @@ const stgallenchExpenseLinesByYear = {
     { rawLabel:'Sonstiger Betriebsaufwand', normalizedCategory:'admin_general_expense', amountNative:-5.372, disclosureLevel:'aggregated' },
     { rawLabel:'Abschreibungen Sachanlagen', normalizedCategory:'depreciation', amountNative:-1.362, disclosureLevel:'aggregated' },
     { rawLabel:'Abschreibungen Spielerwerte', normalizedCategory:'player_amortisation', amountNative:-2.059, disclosureLevel:'aggregated' },
-  ],
-  2019: [
-    { rawLabel:'Direkte Kosten', normalizedCategory:'lump_football_operations_expense', amountNative:-8.165, disclosureLevel:'aggregated' },
-    { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-14.747, disclosureLevel:'aggregated' },
-    { rawLabel:'Sonstiger Betriebsaufwand', normalizedCategory:'admin_general_expense', amountNative:-4.145, disclosureLevel:'aggregated' },
-    { rawLabel:'Entschädigung an FCSG AG', normalizedCategory:'other_expenses', amountNative:-6.405, disclosureLevel:'aggregated' },
-    { rawLabel:'Abschreibungen Spielerwerte', normalizedCategory:'player_amortisation', amountNative:-0.846, disclosureLevel:'aggregated' },
-    { rawLabel:'Abschreibungen Sachanlagen', normalizedCategory:'depreciation', amountNative:-1.339, disclosureLevel:'aggregated' },
-    { rawLabel:'Ausserordentlicher Aufwand', normalizedCategory:'exceptional_items', amountNative:-0.16, disclosureLevel:'aggregated' },
-    { rawLabel:'Ausserordentliche Abschreibungen', normalizedCategory:'exceptional_items', amountNative:-3.999, disclosureLevel:'aggregated' },
   ],
   2022: [
     { rawLabel:'Direkte Kosten', normalizedCategory:'lump_football_operations_expense', amountNative:-8.912, disclosureLevel:'aggregated' },
@@ -132,6 +121,15 @@ const stgallenchExpenseLinesByYear = {
     { rawLabel:'Abschreibungen Sachanlagen', normalizedCategory:'depreciation', amountNative:-1.373, disclosureLevel:'aggregated' },
     { rawLabel:'Abschreibungen Spielerwerte', normalizedCategory:'player_amortisation', amountNative:-1.279, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Direkte Kosten', normalizedCategory:'lump_football_operations_expense', amountNative:-8.165, disclosureLevel:'aggregated' },
+    { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-14.747, disclosureLevel:'aggregated' },
+    { rawLabel:'Sonstiger Betriebsaufwand', normalizedCategory:'admin_general_expense', amountNative:-4.145, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen Spielerwerte', normalizedCategory:'player_amortisation', amountNative:-0.846, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen Sachanlagen', normalizedCategory:'depreciation', amountNative:-1.339, disclosureLevel:'aggregated' },
+    { rawLabel:'Ausserordentlicher Aufwand', normalizedCategory:'exceptional_items', amountNative:-0.16, disclosureLevel:'aggregated' },
+    { rawLabel:'Ausserordentliche Abschreibungen', normalizedCategory:'exceptional_items', amountNative:-3.999, disclosureLevel:'aggregated' },
+  ],
 };
 const stgallenchFiscalYearMeta = {
   2025: {
@@ -148,25 +146,6 @@ const stgallenchFiscalYearMeta = {
     incluidoEn:{"broadcasting":{"en":"other_income","posible":true}},
     grossDebt:null, cash:null,
     officialTotalRevenue:45.101, officialTotalExpenses:44.681, officialPAT:0.117,
-  },
-  2019: {
-    incluidoEn:{ member_dues:{ en:'lump_football_operations', posible:true, por:'precedente' }, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' }, other_sports:{ en:'lump_football_operations', posible:true, por:'precedente' }, youth_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, womens_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
-    currency:'CHF', fxRef:'CHF@2019-06-30',
-    sourceId:'stgallen-ch-geschaeftsbericht-2018-19',
-    reportType:'official_balance_sheet',
-    gestionId:null,
-    profitOnPlayerSales:0, assetSales:0,
-    netInterest:-0.067, tax:-0.004,
-    extraRows: [
-      {label:'Finanzerfolg', value:-0.067},
-      {label:'Steuern', value:-0.004},
-    ],
-    sinDesglose: [
-      {renglon:'Erträge brutto', lado:'revenue', importe:28.001, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations'},
-      {renglon:'Direkte Kosten', lado:'expense', importe:8.165, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos'},
-    ],
-    grossDebt:null, cash:null,
-    officialTotalRevenue:34.815, officialTotalExpenses:35.647, officialPAT:-5.063,
   },
   2022: {
     incluidoEn:{ member_dues:{ en:'lump_football_operations', posible:true, por:'precedente' }, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' }, other_sports:{ en:'lump_football_operations', posible:true, por:'precedente' }, youth_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, womens_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
@@ -233,6 +212,25 @@ const stgallenchFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:40.311, officialTotalExpenses:40.207, officialPAT:0.013,
+  },
+  2019: {
+    incluidoEn:{ member_dues:{ en:'lump_football_operations', posible:true, por:'precedente' }, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' }, other_sports:{ en:'lump_football_operations', posible:true, por:'precedente' }, youth_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, womens_football:{ en:'lump_football_operations', posible:true, por:'precedente' }, match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    currency:'CHF', fxRef:'CHF@2019-06-30',
+    sourceId:'stgallen-ch-geschaeftsbericht-2018-19',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.067, tax:-0.004,
+    extraRows: [
+      {label:'Finanzerfolg', value:-0.067},
+      {label:'Steuern', value:-0.004},
+    ],
+    sinDesglose: [
+      {renglon:'Erträge brutto', lado:'revenue', importe:28.001, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations'},
+      {renglon:'Direkte Kosten', lado:'expense', importe:8.165, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:28.41, officialTotalExpenses:29.242, officialPAT:-5.063,
   },
 };
 const stgallenchPresupuestoOverlayByYear = {};
