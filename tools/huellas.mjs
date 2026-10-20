@@ -22,12 +22,25 @@
 // ============================================================================
 
 import { readFileSync, existsSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { createHash } from 'node:crypto';
 
 const sha1 = (s) => createHash('sha1').update(s).digest('hex');
 const leer = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
 const rutas = (mdAbs) => ({ rubros: derivado(mdAbs, '.rubros.json', { crear: false }), jev: derivado(mdAbs, '.jev.json', { crear: false }), cats: derivado(mdAbs, '.categorias.json', { crear: false }) });
+
+// (to-do 298 a3) LA HUELLA DEL CÓDIGO DE LA VERIFICACIÓN. verificar.mjs la guarda en cada .verificacion.json (`scriptHuella`); cargar.mjs la compara con la de hoy
+// y AVISA (no frena) si no coincide: ese caché lo hizo otra versión del verificador. Caso: St. Gallen 2019 y 2022 se cargaron con un caché anterior a la 298 ai y
+// quedaron con la compensación intragrupo sumada. Qué entra: verificar.mjs y los tres archivos de reglas que cambian lo que da (vocabulario, nbb, verify-numbers);
+// no la cola, los ajustes ni los registros, que cambian todos los días sin cambiar el algoritmo. Un caché sin el campo (hecho antes de este sello) no avisa.
+let _huellaVerificar = null;
+export function huellaVerificar() {
+  if (_huellaVerificar) return _huellaVerificar;
+  const dir = import.meta.dirname;
+  _huellaVerificar = sha1(['verificar.mjs', 'vocabulario.mjs', 'nbb.mjs', 'verify-numbers.mjs'].map((f) => readFileSync(resolve(dir, f), 'utf8')).join('\u0000')).slice(0, 12);
+  return _huellaVerificar;
+}
 
 export function huellaRubros(rj) {
   return sha1(JSON.stringify((rj?.rubros || []).map((r) => [r.label, r.lado ?? null, r.values ?? null, r.page ?? null, r.columns ?? null])));

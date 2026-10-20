@@ -109,7 +109,7 @@ import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs'; // (to-do 298 ah)
 const ARGS = process.argv.slice(2);
 process.argv = process.argv.slice(0, 2);
 const { analizar } = await import('./alta-club.mjs');
-const { categoriasAlDia } = await import('./huellas.mjs');
+const { categoriasAlDia, huellaVerificar } = await import('./huellas.mjs');
 const { precedenteFamilia } = await import('./categorizar-claude.mjs');
 const { clubDeRuta } = await import('./carpetas-clubes.mjs');
 const { derivado } = await import('./rutas.mjs');
@@ -465,6 +465,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     if (!existsSync(pv)) { return corta('filas', 'no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)'); }
     const VV = JSON.parse(readFileSync(pv, 'utf8'));
     notasVerif = VV.notas || []; ingresosVerif = VV.totales?.ingresos ?? null;
+    // (to-do 298 a3) AVISO, no freno: el caché lo hizo otra versión de verificar.mjs (o de sus reglas). Correr tools/verificar.mjs sobre este PDF (gratis) antes de cargar.
+    if (VV.scriptHuella && VV.scriptHuella !== huellaVerificar()) P.avisos.push(`caché viejo: el .verificacion.json es de otra versión de verificar.mjs (sello ${VV.scriptHuella}, hoy ${huellaVerificar()}); correr node tools/verificar.mjs "${pdf}" --rubros (gratis) por si hoy da otra cosa (to-do 298 a3)`);
     if (VV.estado !== 'ok') { return corta('filas', `la verificación tiene ${VV.cola.length} caso(s) pendientes en la cola humana (node tools/cola.mjs)`); }
     P.ajustes = VV.ajustes || null; // ajustes manuales que aplicó verificar.mjs (Versión 366): se escriben como comentario en la meta del año
     // Formato de cada fila: {label, page, section, native, tside, origen}. Ingresos y gastos en positivo (los signos los decide

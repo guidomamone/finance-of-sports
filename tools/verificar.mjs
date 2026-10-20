@@ -37,6 +37,7 @@ import { pedidoPrimerAnio, respuestaGuardada, compuertaPrimerAnio } from './prim
 import { createHash } from 'node:crypto';
 import { resolve, dirname, basename, join } from 'node:path';
 import { derivado } from './rutas.mjs';
+import { huellaVerificar } from './huellas.mjs';
 import { agregarCaso, respuestaDe, cerrarObsoletos, respuestaPorDetalle } from './cola.mjs';
 import { clubDeRuta } from './carpetas-clubes.mjs';
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
@@ -1735,7 +1736,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const obsoletos = cerrarObsoletos(pdf, 'verificar', vigentes);
   if (obsoletos) notas.push(`${obsoletos} caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)`);
   const yaReintentado = Number(U.indiceAmpliado === true ? 1 : U.indiceAmpliado || 0) >= VERSION_AMPLIADO; // reintentado con el índice ampliado vigente
-  const out = { pdf, md, generado: new Date().toISOString(), estado: cola.length ? 'cola' : 'ok', clubId, year, escala, ajustes: ajustes.length ? ajustes : null, cola, chequeos, notas,
+  const out = { pdf, md, generado: new Date().toISOString(), scriptHuella: huellaVerificar(), estado: cola.length ? 'cola' : 'ok', clubId, year, escala, ajustes: ajustes.length ? ajustes : null, cola, chequeos, notas,
     reintentar: reintentos.length && !yaReintentado ? reintentos : null, reintentado: yaReintentado, faltasDesglose: reintentos.length ? reintentos : null, // faltasDesglose: siempre, para tools/diagnostico-desglose.mjs
     // resultadoParaCargar (Versión 344; desde la 364 sale de la escalera del resultado final, y desde la 366 un ajuste manual gana): si cerró contra "resultado antes de impuestos",
     // el resultado del ejercicio es ese ± el impuesto, el que esté impreso; null si no se pudo confirmar (va a la cola). cargar.mjs hace su

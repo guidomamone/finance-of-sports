@@ -61,7 +61,7 @@ async function medir(salida) {
       catch (e) { out = String(e.stdout || ''); }
       let j; try { j = JSON.parse(out.slice(out.indexOf('{'))); } catch { res.push({ pdf, error: 'sin json' }); continue; }
       res.push({ pdf, clubId: j.clubId ?? null, year: j.year ?? null, sourceId: j.procedencia?.sourceId?.valor ?? null,
-        frena: (j.frena || []).map((f) => f.etapa), frenaMotivos: (j.frena || []).map((f) => `${f.etapa}: ${String(f.motivo).slice(0, 160)}`), carga: j.resumen?.carga,
+        cacheViejo: (j.avisos || []).some((a) => /^caché viejo:/.test(a)), frena: (j.frena || []).map((f) => f.etapa), frenaMotivos: (j.frena || []).map((f) => `${f.etapa}: ${String(f.motivo).slice(0, 160)}`), carga: j.resumen?.carga,
         filas: (j.filas || []).map((f) => [f.label, f.origen, f.cat, f.destino, !!f.enCola, f.casoCola?.detalle || null, f.amountNative]) });
       if (++hechos % 50 === 0) console.log(hechos, '/', docs.length);
     }
@@ -88,6 +88,7 @@ function comparar(fa, fb) {
   console.log(`\ndocumentos distintos: ${docs} · filas que pasan a la cola: ${colaNuevas} · filas con categoría o destino distinto: ${catCambia}`);
 }
 
+const club_pub = (generic, d) => { const ym = generic[d.clubId]?.fiscalYearMeta?.[d.year]; return !!(ym && d.sourceId && ym.sourceId === d.sourceId); };
 function contraSitio(f) {
   const { generic } = loadSite();
   const docs = readFileSync(f, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
@@ -102,9 +103,11 @@ function contraSitio(f) {
     const difs = [...new Set([...Object.keys(pub), ...Object.keys(ens)])].filter((k) => Math.abs((pub[k] || 0) - (ens[k] || 0)) > 0.001).map((k) => `${k} ${(pub[k] || 0).toFixed(6)} -> ${(ens[k] || 0).toFixed(6)}`);
     if (difs.length) distintos.push(`${d.pdf} (${d.clubId} ${d.year}): ${difs.join('; ')}`); else iguales++;
   }
+  const viejos = docs.filter((d) => d.cacheViejo);
   console.log(`publicados con el mismo documento: ${comparados + frenados.length} · el ensayo reproduce lo publicado: ${iguales} · distinto: ${distintos.length} · el ensayo frena: ${frenados.length}`);
   if (distintos.length) console.log('\nDISTINTO (publicado -> ensayo, por categoría):\n' + distintos.join('\n'));
   if (frenados.length) console.log('\nFRENA:\n' + frenados.join('\n'));
+  if (viejos.length) console.log(`\nCACHÉ VIEJO (el .verificacion.json es de otra versión de verificar.mjs; to-do 298 a3), ${viejos.length}:\n` + viejos.map((d) => `${d.pdf}${club_pub(generic, d) ? ' (PUBLICADO)' : ''}`).join('\n'));
 }
 
 if (flag('--salida')) medir(resolve(flag('--salida')));
