@@ -178,6 +178,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    estructura de los otros clubes (sus fuentes y gestiones viven hoy en clubs.js y gestiones/ar.js).
    Decidido (Guido, 2026-10-20): el JSON fuente vive en `data/<país>/<club>.json` y se publica como dato abierto (D1); el sitio sigue
    cargando el `-data.js`, que pasa a ser GENERADO desde el JSON (D2). Inventario: `Admin/mediciones/245-inventario-docs.md`.
+   Antes de la fase 2 (Guido, 2026-10-20): el esquema como JSON Schema formal y un `datapackage.json` de Frictionless Data --> Pipeline 6.
 246. IDS ESTABLES (mejoras de proyecto, pedido de Guido 2026-10-16). Conviven ids sin país (realmadrid, athleticclub) y con país (elche-es, corinthians-br). Normalizar antes de tener
    clientes de una API, con un mapa de alias de los ids viejos.
 247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
