@@ -47,6 +47,21 @@ const stgallenchRevenueLinesByYear = {
     { rawLabel:'Diverse Ertragsminderungen', normalizedCategory:'other_income', amountNative:-0.09, disclosureLevel:'aggregated' },
     { rawLabel:'Ausserordentlicher Ertrag', normalizedCategory:'other_income', amountNative:3.822, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Erträge aus Transfers und Leihgebühren', normalizedCategory:'player_sales', amountNative:4.886, disclosureLevel:'aggregated' },
+    { rawLabel:'Diverse Erträge inklusive Swiss Football League', normalizedCategory:'other_income', amountNative:5.565, disclosureLevel:'aggregated' },
+    { rawLabel:'Erträge aus Future Champs Ostschweiz', normalizedCategory:'youth_football', amountNative:1.389, disclosureLevel:'aggregated' },
+    { rawLabel:'Erträge von Gönnern und Mitgliedern', normalizedCategory:'member_dues', amountNative:1.219, disclosureLevel:'aggregated' },
+    { rawLabel:'Ertrag aus Fussballspielen', normalizedCategory:'matchday_competition', amountNative:9.168, disclosureLevel:'aggregated' },
+    { rawLabel:'Ertrag aus Werbung und Sponsoring', normalizedCategory:'sponsorship_commercial', amountNative:8.544, disclosureLevel:'aggregated' },
+    { rawLabel:'Ertrag aus Hospitality und Logen', normalizedCategory:'stadium_other', amountNative:4.916, disclosureLevel:'aggregated' },
+    { rawLabel:'Ertrag aus Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:2.094, disclosureLevel:'aggregated' },
+    { rawLabel:'Ertrag aus Drittveranstaltungen', normalizedCategory:'other_income', amountNative:0.076, disclosureLevel:'aggregated' },
+    { rawLabel:'Ertrag aus Conference Arena / Diverse Erträge', normalizedCategory:'other_income', amountNative:1.335, disclosureLevel:'aggregated' },
+    { rawLabel:'Veränderung Wertberichtigungen', normalizedCategory:'other_income', amountNative:0.006, disclosureLevel:'aggregated' },
+    { rawLabel:'Ertragsminderungen', normalizedCategory:'other_income', amountNative:-0.369, disclosureLevel:'aggregated' },
+    { rawLabel:'Ausserordentlicher Ertrag', normalizedCategory:'other_income', amountNative:1.482, disclosureLevel:'aggregated' },
+  ],
 };
 const stgallenchExpenseLinesByYear = {
   2025: [
@@ -102,6 +117,20 @@ const stgallenchExpenseLinesByYear = {
     { rawLabel:'Abschreibungen Sachanlagen', normalizedCategory:'depreciation', amountNative:-1.562, disclosureLevel:'aggregated' },
     { rawLabel:'Abschreibungen Spielerwerte', normalizedCategory:'player_amortisation', amountNative:-0.853, disclosureLevel:'aggregated' },
     { rawLabel:'Ausserordentlicher Aufwand', normalizedCategory:'exceptional_items', amountNative:-0.001, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Aufwand für Spielbetrieb', normalizedCategory:'match_organisation_expense', amountNative:-4.051, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand für Transfers', normalizedCategory:'other_expenses', amountNative:-0.791, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand für Spielorganisation Fussball', normalizedCategory:'match_organisation_expense', amountNative:-3.295, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand für Catering', normalizedCategory:'other_expenses', amountNative:-2.013, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand für Werbung und Sponsoring', normalizedCategory:'admin_general_expense', amountNative:-0.945, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand für Merchandising', normalizedCategory:'other_expenses', amountNative:-1.394, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand für Drittveranstaltungen', normalizedCategory:'other_expenses', amountNative:-0.015, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand für Conference Arena / Diverses', normalizedCategory:'other_expenses', amountNative:-0.101, disclosureLevel:'aggregated' },
+    { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-19.95, disclosureLevel:'aggregated' },
+    { rawLabel:'Sonstiger Betriebsaufwand', normalizedCategory:'admin_general_expense', amountNative:-5, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen Sachanlagen', normalizedCategory:'depreciation', amountNative:-1.373, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen Spielerwerte', normalizedCategory:'player_amortisation', amountNative:-1.279, disclosureLevel:'aggregated' },
   ],
 };
 const stgallenchFiscalYearMeta = {
@@ -191,6 +220,20 @@ const stgallenchFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:29.792, officialTotalExpenses:28.997, officialPAT:0.879,
   },
+  2024: {
+    currency:'CHF', fxRef:'CHF@2024-06-30',
+    sourceId:'stgallen-ch-geschaeftsbericht-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.079, tax:-0.012,
+    extraRows: [
+      {label:'Finanzerfolg', value:-0.079},
+      {label:'Steuern', value:-0.012},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:40.311, officialTotalExpenses:40.207, officialPAT:0.013,
+  },
 };
 const stgallenchPresupuestoOverlayByYear = {};
 
@@ -230,6 +273,11 @@ Object.assign(sources, {
   'stgallen-ch-geschaeftsbericht-2020-21': {
     id:'stgallen-ch-geschaeftsbericht-2020-21', clubId:'stgallen-ch',
     title:'FC St.Gallen AG — geschaeftsbericht-2020-21 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'stgallen-ch-geschaeftsbericht-2023-24': {
+    id:'stgallen-ch-geschaeftsbericht-2023-24', clubId:'stgallen-ch',
+    title:'FC St.Gallen AG — geschaeftsbericht-2023-24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

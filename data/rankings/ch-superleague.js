@@ -18,6 +18,9 @@ window.RANKINGS["ch-superleague"] = {
     leagueSize: 12,
     wiki: {"t":"2023–24 Swiss Super League","lang":"en","at":"2026-10-19","n":12},
     clubs: [
+      { id:"stgallen-ch", revenue:44.83, reportType:"official_balance_sheet",
+        sourceId:"stgallen-ch-geschaeftsbericht-2023-24",
+        mix:[["Cuotas Sociales",1.356],["Comercial / Sponsors",11.831],["Estadio",15.663],["Venta de Jugadores",5.434],["Otras secciones deportivas",1.545],["Otros ingresos",9.002]] },
       { id:"luzern-ch", revenue:33.9, reportType:"official_balance_sheet",
         sourceId:"luzern-ch-geschaeftsbericht-2023-24",
         mix:[["Comercial / Sponsors",5.852],["Estadio",12.546],["Televisión",1.957],["Venta de Jugadores",7.898],["Otras secciones deportivas",2.848],["Otros ingresos",2.799]] },
