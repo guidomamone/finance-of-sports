@@ -52,5 +52,7 @@ Un criterio de más arriba pesa más que todos los de abajo juntos. Un precedent
   "motivo","votos":[...]}`.
 - Si se decidió una regla nueva, una REGLA en `Admin/CONVENCIONES-DATOS.md` con el caso que la originó y "(votación, fecha)". Así la
   próxima vez es precedente y no se vota.
+- Si la regla es de categoría, lleva dos líneas más: `CATEGORÍA (prompt)` (una frase para el categorizador) y `EJEMPLO-CATEGORÍA` (un caso
+  real con club, lado, etiqueta y categoría). Después se corre `node tools/reglas-categoria.mjs --escribir`, que la registra para Jev y Claude.
 - Si la regla cambia años cargados, la aplicación va a Onboarding (los datos) o a Pipeline (si hace falta un escalón de script), por la
   principal.
