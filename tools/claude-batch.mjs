@@ -11,6 +11,7 @@
 //     esperaba recoge el envío al volver a correr en vez de pagarlo otra vez. Un pedido vencido (24 h) no se cobra y vuelve a la cola.
 // ============================================================================
 import { appendFileSync, readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
+import { SESION } from './sesion.mjs'; // gasto por sesión
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 
@@ -23,7 +24,7 @@ export const idBatch = (body) => createHash('sha1').update(JSON.stringify(body))
 // importarlo: categorizar-claude.mjs importa este módulo). Escritura y lectura de caché como costOf: 1,25 y 0,1 de la entrada.
 const PRECIO = { 'claude-opus-5-5': { in: 4, out: 20 }, 'claude-sonnet-5-5': { in: 2, out: 10 } };
 const costoBatch = (model, u = {}) => { const p = PRECIO[model] || PRECIO['claude-opus-5-5']; const inTok = (u.input_tokens || 0) + 1.25 * (u.cache_creation_input_tokens || 0) + 0.1 * (u.cache_read_input_tokens || 0); return ((inTok * p.in + (u.output_tokens || 0) * p.out) / 1e6) * FACTOR_BATCH; };
-const registrarCosto = (m, meta, custom_id, envio) => appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea: meta.tarea, pdf: meta.pdf, model: m.model, promptTokenCount: m.usage?.input_tokens, cacheReadTokens: m.usage?.cache_read_input_tokens, candidatesTokenCount: m.usage?.output_tokens, costUsd: Number(costoBatch(m.model, m.usage).toFixed(6)), stopReason: m.stop_reason, batch: true, envio, custom_id }) + '\n');
+const registrarCosto = (m, meta, custom_id, envio) => appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, tarea: meta.tarea, pdf: meta.pdf, model: m.model, promptTokenCount: m.usage?.input_tokens, cacheReadTokens: m.usage?.cache_read_input_tokens, candidatesTokenCount: m.usage?.output_tokens, costUsd: Number(costoBatch(m.model, m.usage).toFixed(6)), stopReason: m.stop_reason, batch: true, envio, custom_id }) + '\n');
 export const enBatch = () => process.env.FOS_CLAUDE_BATCH === '1';
 export const FACTOR_BATCH = 0.5;
 const CACHE_DIR = resolve(ROOT, 'Generados', '_cache');

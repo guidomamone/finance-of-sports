@@ -52,6 +52,7 @@
 // ============================================================================
 
 import { readFileSync, appendFileSync } from 'node:fs';
+import { SESION } from './sesion.mjs'; // gasto por sesión
 import { resolve } from 'node:path';
 import { readKey, costOf } from './categorizar-claude.mjs';
 
@@ -255,7 +256,7 @@ export async function preguntarAClaude({ md, preguntas, ctx = {}, modelo = MODEL
   const t0 = Date.now();
   const r = await llamar({ apiKey: apiKey || readKey(), model: modelo, effort: esfuerzo, user });
   const costUsd = costOf(modelo, r.usage || {});
-  appendFileSync(COST_LOG, JSON.stringify({ ts: new Date().toISOString(), tarea, club: ctx.carpeta || null, year: ctx.anio || null, model: r.model || modelo, promptTokenCount: (r.usage?.input_tokens || 0) + (r.usage?.cache_creation_input_tokens || 0) + (r.usage?.cache_read_input_tokens || 0), cacheReadTokens: r.usage?.cache_read_input_tokens || 0, candidatesTokenCount: r.usage?.output_tokens || 0, costUsd: Number(costUsd.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: r.stopReason || null, preguntas: preguntas.length, error: r.error || undefined }) + '\n');
+  appendFileSync(COST_LOG, JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, tarea, club: ctx.carpeta || null, year: ctx.anio || null, model: r.model || modelo, promptTokenCount: (r.usage?.input_tokens || 0) + (r.usage?.cache_creation_input_tokens || 0) + (r.usage?.cache_read_input_tokens || 0), cacheReadTokens: r.usage?.cache_read_input_tokens || 0, candidatesTokenCount: r.usage?.output_tokens || 0, costUsd: Number(costUsd.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: r.stopReason || null, preguntas: preguntas.length, error: r.error || undefined }) + '\n');
   if (r.error) return { respuestas: [], paginasEnviadas: elegidas, entero, costUsd, model: modelo, error: r.error };
   const porId = new Map((r.parsed.respuestas || []).map((x) => [x.id, x]));
   const respuestas = preguntas.map((p) => {

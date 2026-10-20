@@ -39,6 +39,7 @@
 // ============================================================================
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, statSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
+import { SESION } from './sesion.mjs'; // gasto por sesión
 import { tmpdir } from 'node:os';
 import { resolve, dirname, basename, extname, join } from 'node:path';
 import { derivado, ubicar } from './rutas.mjs';
@@ -241,7 +242,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, op
   } catch (err) {
     if (tmp) rmSync(tmp, { recursive: true, force: true });
     lastErr = `No se pudo preparar el PDF: ${err.message}`;
-    appendFileSync(failuresPath, JSON.stringify({ ts: new Date().toISOString(), pdf: pdfPath.replace(projectRoot + '/', ''), error: lastErr }) + '\n', 'utf8');
+    appendFileSync(failuresPath, JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, pdf: pdfPath.replace(projectRoot + '/', ''), error: lastErr }) + '\n', 'utf8');
     return { ok: false, pdf: pdfPath, error: lastErr };
   }
 
@@ -297,6 +298,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, op
     const fidelidad = checkFidelidad(mdPath);
     const fidelidadP1 = fidelidad ? fidelidad.findings.filter((f) => f.sev === 'P1').length : null;
     const record = {
+      sesion: SESION,
       ts: new Date().toISOString(),
       pdf: pdfPath.replace(projectRoot + '/', ''),
       md: mdPath.replace(projectRoot + '/', ''),
@@ -315,7 +317,7 @@ async function transcribeOne(pdfPath, apiKey, timeoutMs = DEFAULT_TIMEOUT_MS, op
 
   appendFileSync(
     failuresPath,
-    JSON.stringify({ ts: new Date().toISOString(), pdf: pdfPath.replace(projectRoot + '/', ''), error: lastErr }) + '\n',
+    JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, pdf: pdfPath.replace(projectRoot + '/', ''), error: lastErr }) + '\n',
     'utf8'
   );
   return { ok: false, pdf: pdfPath, error: lastErr };

@@ -69,7 +69,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   - **Cada sesión corre sus propios lotes y tiene un presupuesto** (Guido, 2026-10-20). La sesión larga sus lotes en su carpeta, en
     segundo plano (`caffeinate -i node tools/lote.mjs … --ejecutar`), y lee el resultado sola; ni Guido ni la principal largan lotes
     en la carpeta de otra. Guido fija un presupuesto total en US$ por sesión. Antes de cada corrida paga, el ensayo gratis da el costo:
-    si entra en lo que queda, se corre sin preguntar; si no, se frena y se le avisa a la principal. La cuenta sale de `node tools/gasto.mjs`
+    si entra en lo que queda, se corre sin preguntar; si no, se frena y se le avisa a la principal. La cuenta sale de `node tools/gasto.mjs --sesion <la carpeta del worktree>` (cada llamada nueva lleva su sesión; lo anterior figura «(sin marca)»)
     (lee los registros de la API) y va en la nota de la sesión. La auditora compara, en cada merge, lo gastado contra el presupuesto y
     los ensayos, y marca la plata tirada: lotes que no escribieron nada, reintentos repetidos, corridas dobles.
   - **Las sesiones de worktree le escriben solo a la principal, corto** (Guido, 2026-10-20: lo que escribe una sesión es lo más

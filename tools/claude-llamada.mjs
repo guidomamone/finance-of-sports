@@ -30,6 +30,7 @@
 // ============================================================================
 
 import { appendFileSync } from 'node:fs';
+import { SESION } from './sesion.mjs'; // gasto por sesión
 import { resolve } from 'node:path';
 import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
 export { enviarColaBatch, pendientesEnCola, enBatch } from './claude-batch.mjs';
@@ -66,7 +67,7 @@ async function leerStream(res) {
 // `registrar: false` en el modo batch: el costo ya lo anotó claude-batch.mjs al recoger el envío (una vez por pedido).
 function procesar(j, { tarea, pdf, t0, factor = 1, registrar = true, modelo = MODELO }) {
   const costo = costOf(modelo, j.usage) * factor;
-  if (registrar) appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea, pdf, model: j.model, promptTokenCount: j.usage?.input_tokens, cacheReadTokens: j.usage?.cache_read_input_tokens, candidatesTokenCount: j.usage?.output_tokens, costUsd: Number(costo.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: j.stop_reason, ...(factor !== 1 ? { batch: true } : {}) }) + '\n');
+  if (registrar) appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, tarea, pdf, model: j.model, promptTokenCount: j.usage?.input_tokens, cacheReadTokens: j.usage?.cache_read_input_tokens, candidatesTokenCount: j.usage?.output_tokens, costUsd: Number(costo.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: j.stop_reason, ...(factor !== 1 ? { batch: true } : {}) }) + '\n');
   if (j.stop_reason === 'refusal') return { error: `refusal: ${JSON.stringify(j.stop_details)}`, costo };
   if (j.stop_reason === 'max_tokens') return { error: 'respuesta cortada por el tope de salida (max_tokens)', costo };
   const texto = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text).join('');
