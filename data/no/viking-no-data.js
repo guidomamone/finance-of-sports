@@ -41,6 +41,13 @@ const vikingnoRevenueLinesByYear = {
     { rawLabel:'Gevinst ved salg av spillere', normalizedCategory:'player_sales', amountNative:19.560125, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftsinntekt', normalizedCategory:'other_income', amountNative:24.228638, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Inntekt fra samarbeidsavtaler', normalizedCategory:'sponsorship_commercial', amountNative:56.580264, disclosureLevel:'aggregated' },
+    { rawLabel:'Billettinntekt fra kamper', normalizedCategory:'matchday_competition', amountNative:18.453235, disclosureLevel:'aggregated' },
+    { rawLabel:'Medieinntekter', normalizedCategory:'broadcasting', amountNative:29.879937, disclosureLevel:'aggregated' },
+    { rawLabel:'Gevinst ved salg av spillere', normalizedCategory:'player_sales', amountNative:36.584869, disclosureLevel:'aggregated' },
+    { rawLabel:'Annen driftsinntekt', normalizedCategory:'other_income', amountNative:19.796338, disclosureLevel:'aggregated' },
+  ],
 };
 const vikingnoExpenseLinesByYear = {
   2025: [
@@ -103,6 +110,12 @@ const vikingnoExpenseLinesByYear = {
     { rawLabel:'Avskrivning på varige driftsmidler og immaterielle eiendeler', normalizedCategory:'depreciation', amountNative:-10.373985, disclosureLevel:'aggregated' },
     { rawLabel:'Nedskrivning av varige driftsmidler og immaterielle eiendeler', normalizedCategory:'other_expenses', amountNative:-0.016667, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-52.607747, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Lønn og sosiale kostnader', normalizedCategory:'wages_squad', amountNative:-67.385846, disclosureLevel:'aggregated' },
+    { rawLabel:'Ordinære avskrivninger', normalizedCategory:'depreciation', amountNative:-17.925743, disclosureLevel:'aggregated' },
+    { rawLabel:'Nedskrivning av varige driftsmidler og immaterielle eiendeler', normalizedCategory:'other_expenses', amountNative:-1.587544, disclosureLevel:'aggregated' },
+    { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-71.372413, disclosureLevel:'aggregated' },
   ],
 };
 const vikingnoFiscalYearMeta = {
@@ -203,6 +216,22 @@ const vikingnoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:124.189109, officialTotalExpenses:113.858843, officialPAT:11.596256,
   },
+  2023: {
+    currency:'NOK', fxRef:'NOK@2023-12-31',
+    sourceId:'viking-no-aarsregnskap-viking-fotball-as-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.111498, tax:0,
+    extraRows: [
+      {label:'Annen renteinntekt', value:0.566538},
+      {label:'Annen finansinntekt', value:2.652264},
+      {label:'Annen rentekostnad', value:-3.107304},
+      {label:'Skattekostnad på ordinært resultat', value:0},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:161.294643, officialTotalExpenses:158.271546, officialPAT:3.134595,
+  },
 };
 const vikingnoPresupuestoOverlayByYear = {};
 
@@ -247,6 +276,11 @@ Object.assign(sources, {
   'viking-no-aarsregnskap-viking-fotball-as-2021': {
     id:'viking-no-aarsregnskap-viking-fotball-as-2021', clubId:'viking-no',
     title:'Viking Fotball AS — aarsregnskap-viking-fotball-as-2021 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'viking-no-aarsregnskap-viking-fotball-as-2023': {
+    id:'viking-no-aarsregnskap-viking-fotball-as-2023', clubId:'viking-no',
+    title:'Viking Fotball AS — aarsregnskap-viking-fotball-as-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
