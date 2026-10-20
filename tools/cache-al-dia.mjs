@@ -24,6 +24,14 @@ const ROOT = resolve(import.meta.dirname, '..');
 
 export const shaMd = (mdRel) => { try { return createHash('sha1').update(readFileSync(resolve(ROOT, mdRel))).digest('hex'); } catch { return null; } };
 
+// ¿La fila (etiqueta, importe, línea del .md) sigue en su línea? La regla de cacheAlDia(), que también usa tools/armar-a-mano.mjs al armar un documento a mano.
+const planoLinea = (t) => String(t).toLowerCase().replace(/[*|_]/g, ' ').replace(/\s+/g, ' ').trim();
+export function filaEnSuLinea(lineas, f) {
+  const l0 = planoLinea(lineas[f.linea - 1] || ''); const imp = String(f.actual); const cabeza = planoLinea(f.etiqueta).slice(0, 12);
+  if (!(cabeza && l0.includes(cabeza)) && !l0.includes(imp)) return false;
+  return lineas.slice(f.linea - 1, f.linea + 3).some((l) => l.includes(imp));
+}
+
 // { alDia, escalon, detalle }
 export function cacheAlDia(mdRel) {
   const pf = resolve(ROOT, derivado(mdRel, '.filas.json', { crear: false }));
@@ -36,13 +44,7 @@ export function cacheAlDia(mdRel) {
   // Una fila "sigue en su línea" si la línea citada tiene el comienzo de la etiqueta o el importe, y el importe está en esa línea o en
   // las 3 siguientes: una etiqueta partida en dos renglones se cita en el primero y el número cae en el siguiente (UC 2010 y 2011, cuadro
   // por segmento: "Ingresos por Borderó (Recaudación" / "Entradas) ... 833.101"; sin esto daban "viejos" con el .md sin cambios).
-  const plano = (t) => String(t).toLowerCase().replace(/[*|_]/g, ' ').replace(/\s+/g, ' ').trim();
-  const enSuLinea = (f) => {
-    const l0 = plano(lineas[f.linea - 1] || ''); const imp = String(f.actual); const cabeza = plano(f.etiqueta).slice(0, 12);
-    if (!(cabeza && l0.includes(cabeza)) && !l0.includes(imp)) return false;
-    return lineas.slice(f.linea - 1, f.linea + 3).some((l) => l.includes(imp));
-  };
-  const fuera = filas.filter((f) => !enSuLinea(f));
+  const fuera = filas.filter((f) => !filaEnSuLinea(lineas, f));
   if (!fuera.length) return { alDia: true, escalon: 1, detalle: `las ${filas.length} filas siguen en su línea` };
   const ej = fuera[0];
   return { alDia: false, escalon: null, detalle: `el .md cambió desde extraer: ${fuera.length} de ${filas.length} filas fuera de su línea (ej. "${String(ej.etiqueta).slice(0, 40)}" ${ej.actual}, citada en L${ej.linea})` };
