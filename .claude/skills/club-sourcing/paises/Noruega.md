@@ -3,6 +3,8 @@
 El **Regnskapsregisteret** del Brønnøysundregistrene (el registro central noruego). Último chequeo:
 2026-09-17.
 
+- **Qué ejercicios hay publicados, sin navegador:** `node tools/listar-brreg.mjs` (pedidos HEAD por organisasjonsnummer y año, no baja
+  nada; compara con lo cargado). Resultado de la primera corrida: `Admin/mediciones/crawl4ai-noruega-lista.md`.
 - **`data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/<organisasjonsnummer>/<año>`
   descarga por `curl` directo, sin login, sin captcha, sin pago**, con series de hasta 18 ejercicios
   consecutivos (2008-2025) — más profundo que Bélgica/Dinamarca/Grecia en la mayoría de los clubes.
