@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 835 — Primeros arreglos aprobados por la auditora (2026-10-20)
+
+* 298 af (`data/club-leagues/be.js`: Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022) y 298 w2 (`cargar.mjs`: un primer ejercicio de
+  12 meses redondeados con período no anual entra por la compuerta de primer ejercicio; Lierse SK 2019). Los dos con veredicto APROBADO
+  de la sesión auditora, el método nuevo (CONVENCIONES).
+
 ## Versión 834 — Reino Unido: Burnley, Manchester City y Tottenham; cierre de Finanzas 5 (2026-10-20)
 
 * Burnley 2022 y 2023 (perímetro consolidado), Manchester City 2021 y 2023 y Tottenham 2022. Gestiones de Demin, Abramovich, Radrizzani,

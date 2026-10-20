@@ -25,14 +25,14 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 292: cargar lo transcripto: Suiza, Países Bajos y Bélgica casi completos; quedan St. Gallen 2020, 2021 y 2024 (dudas de localizar en la cola, "¿la TV está dentro de Diverse Erträge?", y volver a correr sg6), Luzern 2023 (recargar: la 298 k2 ya está), Lierse SK 2019 (298 w2), Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022 (filas de la 298 af ya decididas: escribirlas), y después Beşiktaş y Colombia --> Pantallas 3 (St. Gallen --> Pipeline)
+* 292: cargar lo transcripto: Suiza, Países Bajos y Bélgica casi completos; quedan St. Gallen 2020, 2021 y 2024 (dudas de localizar en la cola, "¿la TV está dentro de Diverse Erträge?", y volver a correr sg6), Luzern 2023 (recargar: la 298 k2 ya está), Lierse SK 2019, Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022 (destrabados: 298 af y w2 en main), y después Beşiktaş y Colombia --> Pantallas 3 (St. Gallen --> Pipeline)
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script (af: escribir las filas belgas ya decididas y bajar sus listas; aj; z2, Westerlo 2015 de 18 meses y Aston Villa de 13, a decidir con vos; g2, condicional; p2, q2, r2, s2, v2 y w2) --> Pipeline
+* 298: mejoras de script (aj; z2, Westerlo 2015 de 18 meses y Aston Villa de 13, a decidir con vos; g2, condicional; p2, q2, r2, s2 y v2) --> Pipeline
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -251,8 +251,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola.
-af) listas de las ligas amateur belgas
-   de esos años para el estadio (Lokeren-Temse 2022, Patro Eisden 2013-2015).
    p2) dos filas con el mismo rótulo en lados opuestos ("Intereses" de ingreso y de gasto, Boyacá Chicó 2025, L839 y L999): distinguirlas
    antes de pasarlas al resultado financiero (lo propuso un subagente de Pantallas 3).
    q2) partir una fila que mezcla amortización de pases con depreciación (Silkeborg 2025 "Depreciation, amortisation and impairment" 6.502
@@ -264,8 +262,6 @@ af) listas de las ligas amateur belgas
    año del mismo club.
    v2) un documento que quedó "sin estado de resultados (queda como fuente)" en la primera corrida no se vuelve a localizar ni con
    `--reintentar`, aunque el .md lo traiga (Fulham 2021-22, L509-516: el registro quedó con el cierre del sello de presentación, 28/03/2023).
-   w2) primer ejercicio de exactamente 12 meses (Lierse SK 2019, 09-07-2018 a 30-06-2019, columna del año anterior vacía): la compuerta de
-   primer ejercicio de `cargar.mjs` exige meses distinto de 12 y lo frena por "periodo".
    z2) (también Aston Villa 2023-24, 13 meses por cambio de cierre de mayo a junio, precedente Wolves 2025: la compuerta de `cargar.mjs`,
    `per.meses < 12`, no reconoce una transición de más de 12 meses con importes del año anterior; Aston Villa se carga con la compuerta
    salteada a mano esa sola vez) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
