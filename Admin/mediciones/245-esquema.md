@@ -1,0 +1,105 @@
+# To-do 245, fase 1: esquema JSON de los datos de un club (propuesta, 2026-10-20, Pipeline 6)
+
+Estado: PROPUESTA, sin código. Todo lo de abajo sale de leer los 313 `data/<país>/*-data.js` actuales (1.203 fuentes, 1.197 ejercicios,
+33.138 líneas). Nada se toca en `data/` ni en `js/` en esta fase.
+
+## Qué hay hoy (medido)
+
+Cada archivo de club define siempre las mismas piezas: `revenueLinesByYear`, `expenseLinesByYear`, `fiscalYearMeta`, `presupuestoOverlayByYear`,
+`pasesData`, `resultadosData`, `titulosData`, más `Object.assign(sources, {...})` (las fuentes), a veces `gestionesByClub.<id>` (40 clubes) y
+`memberCountByClub.<id>` (32). Cinco clubes traen además `presupuestoSupuestos/Financiero/InversionesByYear`; uno, `finanzasYears` y `finanzasGestiones`.
+Una línea tiene `rawLabel`, `normalizedCategory` (26 categorías), `amountNative`, `disclosureLevel` (en 170 líneas falta) y, en 493, `items` (pares [rótulo, importe]).
+`fiscalYearMeta[año]` tiene 11 campos que siempre están (`currency`, `sourceId`, `reportType`, `netInterest`, `tax`, `officialTotalRevenue/Expenses`...)
+y otros opcionales (`fxRef` 1.107 de 1.197, `extraRows` 852, `sinDesglose` 312, `incluidoEn` 167, `fx`+`fxSource` 90-107, `staffCost` 9).
+La unidad es implícita (millones de la moneda del club, `amountNative`); la moneda está en cada año y en `data/clubs.js`; el cierre del ejercicio lo da `tools/cierre-ejercicio.js` (`cierreDelClub`: registro del club, ajuste o inicio del año fiscal).
+
+## Qué se decide (producto, 4 puntos)
+
+1. **Un archivo por club** (`<id>.json`, 313 archivos), no por país. Diffs chicos, igual que hoy.
+2. **Los importes se quedan en millones de la moneda del club**, con la unidad escrita: `"unit": {"scale": 1000000, "label": "millions of currency"}`. No se pasa a unidades
+   enteras: cambiaría los números (redondeos de 6 decimales) y la ida y vuelta dejaría de dar idéntico.
+3. **Nombres en inglés y snake_case** (`label`, `category`, `amount`, `fiscal_year`...), pensados para una API; un diccionario fijo los traduce de ida y de vuelta a los de hoy.
+   Alternativa: dejar los nombres actuales (camelCase y mezcla español/inglés como `sinDesglose.renglon`). Recomiendo traducir una vez, ahora que nadie los consume afuera.
+4. **"Fecha de corte" son dos cosas, las dos explícitas**: `period_end` por ejercicio (el cierre, de `cierreDelClub`) y `exported_at` del archivo (cuándo se generó).
+
+## Esquema (schema_version "1.0")
+
+```
+archivo
+  schema_version      "1.0"
+  exported_at         "2026-10-20"
+  unit                { scale: 1000000, label: "millions of currency" }   // vale para todos los importes del archivo
+  club                { id, name, display_name, country, reporting_currency, fiscal_year_start, sport }
+  sources[]           { id, title, type, reliability, url }
+  management[]        { id, name, first_year, last_year }               // gestionesByClub
+  members             número o null                                      // memberCountByClub
+  years[]             (uno por ejercicio, ordenados)
+    fiscal_year       2024
+    period_end        "2024-12-31"  (de cierreDelClub)
+    currency          "BRL"
+    fx                { ref, rate, source }      // ref = "BRL@2024-12-31"; rate y source solo si el ejercicio los fija
+    source_id         id de sources[]
+    report_type       "official_balance_sheet" | ...
+    management_id     id de management[] o null
+    revenue[]         { label, category, amount, disclosure, items?: [[label, amount]] }
+    expenses[]        igual (amount negativo, como hoy)
+    financial         { net_interest, tax, profit_on_player_sales, asset_sales, gross_debt, cash, staff_cost? }   // null donde hoy es null
+    official_totals   { revenue, expenses, net_result }                  // officialTotalRevenue / Expenses / PAT
+    adjustments       { extra_rows?[], no_breakdown?[], included_in? }   // extraRows, sinDesglose, incluidoEn tal cual
+  budget_overlay      presupuesto*ByYear (cuando existe), mismo esquema por año
+  squad_transfers, results, titles   // pasesData, resultadosData, titulosData: se copian tal cual dentro de "extras" en la fase 1
+```
+
+Regla de la ida y vuelta: ningún campo se inventa ni se redondea; lo que hoy es `null`, `undefined` o falta se distingue (`null` explícito o clave ausente) para que
+el JS regenerado dé los mismos objetos.
+
+## Dos ejemplos reales (recortados)
+
+**Mirassol 2024** (formato agregado, un solo ejercicio, sin `fx` ni `items`):
+
+```json
+{
+  "schema_version": "1.0", "exported_at": "2026-10-20",
+  "unit": {"scale": 1000000, "label": "millions of currency"},
+  "club": {"id": "mirassol", "name": "Mirassol Futebol Clube", "display_name": "Mirassol", "country": "BR", "reporting_currency": "BRL", "fiscal_year_start": "01-01", "sport": "futbol"},
+  "sources": [{"id": "mirassol-relatorio-auditoria-2024", "title": "Relatório de Auditoria Contábil, Exercício 2024", "type": "official_balance_sheet", "reliability": "primary", "url": "https://mirassolfc.com.br/"}],
+  "management": [{"id": "sinconfirmar", "name": "Gestión actual", "first_year": 2024, "last_year": 2024}],
+  "members": null,
+  "years": [{
+    "fiscal_year": 2024, "period_end": "2024-12-31", "currency": "BRL",
+    "fx": {"ref": "BRL@2024-12-31", "rate": null, "source": null},
+    "source_id": "mirassol-relatorio-auditoria-2024", "report_type": "official_balance_sheet", "management_id": "sinconfirmar",
+    "revenue": [{"label": "Receita do exercício (bruta, operacional — sem desagregação na fonte)", "category": "lump_football_operations", "amount": 59.339448, "disclosure": "aggregated"}],
+    "expenses": [
+      {"label": "Custos", "category": "lump_football_operations_expense", "amount": -36.105741, "disclosure": "aggregated"},
+      {"label": "Despesas operacionais", "category": "admin_general_expense", "amount": -19.090093, "disclosure": "aggregated"}],
+    "financial": {"net_interest": 0, "tax": 0, "profit_on_player_sales": 0, "asset_sales": 0, "gross_debt": 0, "cash": 11.583747},
+    "official_totals": {"revenue": 59.339448, "expenses": 55.195834, "net_result": 4.143614}
+  }]
+}
+```
+
+**AGF (Dinamarca) 2021** (formato detallado, con `items` dentro de una línea y deuda y caja):
+
+```json
+{
+  "club": {"id": "agf-dk", "country": "DK", "reporting_currency": "DKK"},
+  "years": [{
+    "fiscal_year": 2021, "currency": "DKK", "fx": {"ref": "DKK@2021-06-30"},
+    "source_id": "agf-aarsrapport-2020-21", "report_type": "official_balance_sheet", "management_id": null,
+    "revenue": [
+      {"label": "Entré- og tv-indtægter (entradas y TV combinadas, la fuente no las separa)", "category": "broadcasting", "amount": 34.673, "disclosure": "detailed"},
+      {"label": "Udlejningsvirksomhed + Restaurations- og cateringvirksomhed + Arrangementer/billetsalg (Ceres Park & Arena, segmento Faciliteter)", "category": "stadium_other", "amount": 19.154, "disclosure": "detailed",
+       "items": [["Udlejningsvirksomhed", 7.148], ["Restaurations- og cateringvirksomhed", 8.385], ["Arrangementer, billetsalg", 3.621]]}
+    ],
+    "financial": {"net_interest": 4.865, "tax": 0.5, "profit_on_player_sales": 0, "asset_sales": -0.292, "gross_debt": 4.627, "cash": 29.347},
+    "official_totals": {"revenue": 188.321, "expenses": 168.076, "net_result": 25.318}
+  }]
+}
+```
+
+## Fase 1 (lo que sigue si Guido aprueba los 4 puntos) y fase 2
+
+Fase 1, sin tocar `data/` ni `js/`: (b) `tools/exportar-json.mjs` (solo lectura: lee los `data/*-data.js` y escribe a `Generados/datos-json/`, que no se publica);
+(c) `tools/validar-esquema-json.mjs`; (d) la prueba de ida y vuelta: se regenera el JS desde el JSON y se compara, objeto por objeto, contra el JS actual en los 313
+clubes, y se anota cuántos dan distinto y por qué. Fase 2 (no se hace ahora): que el JSON sea la fuente y el JS se genere desde ahí.
