@@ -74,6 +74,16 @@ const rapidwienatRevenueLinesByYear = {
     { rawLabel:'Fanreisen', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
     { rawLabel:'sonstige Erlöse', normalizedCategory:'other_income', amountNative:10.87771, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Ticketing', normalizedCategory:'matchday_competition', amountNative:5.350824, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsoring', normalizedCategory:'sponsorship_commercial', amountNative:8.197448, disclosureLevel:'aggregated' },
+    { rawLabel:'Hospitality – VIP', normalizedCategory:'matchday_competition', amountNative:6.389253, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:2.538767, disclosureLevel:'aggregated' },
+    { rawLabel:'Rechteverwertung', normalizedCategory:'broadcasting', amountNative:13.466553, disclosureLevel:'aggregated' },
+    { rawLabel:'Transfererlöse', normalizedCategory:'player_sales', amountNative:5.04581, disclosureLevel:'aggregated' },
+    { rawLabel:'Fanreisen', normalizedCategory:'other_income', amountNative:0.287059, disclosureLevel:'aggregated' },
+    { rawLabel:'sonstige Erlöse', normalizedCategory:'other_income', amountNative:8.355478, disclosureLevel:'aggregated' },
+  ],
 };
 const rapidwienatExpenseLinesByYear = {
   2024: [
@@ -205,6 +215,23 @@ const rapidwienatExpenseLinesByYear = {
     { rawLabel:'Abschreibungen für Abnutzung', normalizedCategory:'depreciation', amountNative:-1.901944, disclosureLevel:'aggregated' },
     { rawLabel:'Transferaufwendungen', normalizedCategory:'player_amortisation', amountNative:-3.000604, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Umsetzung Sponsofeistungen', normalizedCategory:'admin_general_expense', amountNative:-0.412699, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand Heimspiele', normalizedCategory:'match_organisation_expense', amountNative:-3.072573, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand Hospitality – VIP', normalizedCategory:'other_expenses', amountNative:-2.490741, disclosureLevel:'aggregated' },
+    { rawLabel:'Wareneinsatz Merchandising', normalizedCategory:'admin_general_expense', amountNative:-1.351287, disclosureLevel:'aggregated' },
+    { rawLabel:'eigene Medien und Produktionskosten', normalizedCategory:'admin_general_expense', amountNative:-0.216866, disclosureLevel:'aggregated' },
+    { rawLabel:'Fanreisen', normalizedCategory:'other_expenses', amountNative:-0.249641, disclosureLevel:'aggregated' },
+    { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-20.262314, disclosureLevel:'aggregated' },
+    { rawLabel:'Abgaben, Gebühren, Strafen', normalizedCategory:'admin_general_expense', amountNative:-0.434659, disclosureLevel:'aggregated' },
+    { rawLabel:'Spiel- und Trainingsbetrieb', normalizedCategory:'match_organisation_expense', amountNative:-2.03924, disclosureLevel:'aggregated' },
+    { rawLabel:'Managementgebühren und Vermittlungsprovisionen', normalizedCategory:'other_expenses', amountNative:-0.759288, disclosureLevel:'aggregated' },
+    { rawLabel:'Stadion-, Miet- und Instandhaltungsaufwand', normalizedCategory:'admin_general_expense', amountNative:-3.376563, disclosureLevel:'aggregated' },
+    { rawLabel:'Klubservice, Events, PR und Marketing', normalizedCategory:'admin_general_expense', amountNative:-0.649741, disclosureLevel:'aggregated' },
+    { rawLabel:'Verwaltungs-, Versicherungs- und sonstiger Aufwand', normalizedCategory:'admin_general_expense', amountNative:-3.278345, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen für Abnutzung', normalizedCategory:'depreciation', amountNative:-1.660871, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferaufwendungen', normalizedCategory:'player_amortisation', amountNative:-2.272612, disclosureLevel:'aggregated' },
+  ],
 };
 const rapidwienatFiscalYearMeta = {
   2024: {
@@ -325,6 +352,20 @@ const rapidwienatFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:40.475029, officialTotalExpenses:38.663203, officialPAT:0.697416,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'rapidwien-at-geschaeftsbericht-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.986708, tax:-0.361191,
+    extraRows: [
+      {label:'Finanzergebnis', value:-0.986708},
+      {label:'Steuern aus Erträgen', value:-0.361191},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:49.631192, officialTotalExpenses:42.52744, officialPAT:5.755853,
+  },
 };
 const rapidwienatPresupuestoOverlayByYear = {};
 
@@ -379,6 +420,11 @@ Object.assign(sources, {
   'rapidwien-at-geschaeftsbericht-2020-21': {
     id:'rapidwien-at-geschaeftsbericht-2020-21', clubId:'rapidwien-at',
     title:'SK Rapid GmbH — geschaeftsbericht-2020-21 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'rapidwien-at-geschaeftsbericht-2021-22': {
+    id:'rapidwien-at-geschaeftsbericht-2021-22', clubId:'rapidwien-at',
+    title:'SK Rapid GmbH — geschaeftsbericht-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

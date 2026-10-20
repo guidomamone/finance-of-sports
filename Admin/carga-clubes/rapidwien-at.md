@@ -79,13 +79,67 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2020, 2021): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2020, 2021, 2022): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
 ```
 
 ### Liga
 
 ```text
 alta-club.mjs (2026-10-20): at-bundesliga, verificado contra roster cacheado de "2023–24 Austrian Football Bundesliga" (tools/club-league-reference/at.json), coincidencia única por palabras "SK Rapid" = "Rapid Wien".
+```
+
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Austria/Rapid Wien/geschaeftsbericht-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Austria/Rapid Wien/geschaeftsbericht-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ticketing | pág. 24, Jev 1 |
+| 2 | Sponsoring | pág. 24, Jev 1 |
+| 3 | Hospitality – VIP | pág. 24, precedente |
+| 4 | Merchandising | pág. 24, Jev 0.99 |
+| 5 | Rechteverwertung | pág. 24, precedente |
+| 6 | Transfererlöse | pág. 24, Jev 0.99 |
+| 7 | Fanreisen | pág. 24, precedente |
+| 8 | sonstige Erlöse | pág. 24, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Umsetzung Sponsofeistungen | pág. 24, precedente |
+| 2 | Aufwand Heimspiele | pág. 24, Jev 1 |
+| 3 | Aufwand Hospitality – VIP | pág. 24, Jev 0.97 |
+| 4 | Wareneinsatz Merchandising | pág. 24, precedente |
+| 5 | eigene Medien und Produktionskosten | pág. 24, Jev 0.93 |
+| 6 | Fanreisen | pág. 24, precedente |
+| 7 | Personalaufwand | pág. 24, precedente |
+| 8 | Abgaben, Gebühren, Strafen | pág. 24, precedente |
+| 9 | Spiel- und Trainingsbetrieb | pág. 24, Claude 0.85 |
+| 10 | Managementgebühren und Vermittlungsprovisionen | pág. 24, precedente |
+| 11 | Stadion-, Miet- und Instandhaltungsaufwand | pág. 24, precedente |
+| 12 | Klubservice, Events, PR und Marketing | pág. 24, precedente |
+| 13 | Verwaltungs-, Versicherungs- und sonstiger Aufwand | pág. 24, Jev 0.99 |
+| 14 | Abschreibungen für Abnutzung | pág. 24, Jev 0.93 |
+| 15 | Transferaufwendungen | pág. 24, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2022-06-30. Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2021-22; el registro no trae cierre
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): perimetro = consolidado. Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2022 cacheada).
 ```
 
 ## 2021
@@ -530,4 +584,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### rapidwien-at-geschaeftsbericht-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
