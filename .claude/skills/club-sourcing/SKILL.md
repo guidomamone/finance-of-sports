@@ -433,16 +433,16 @@ archivo del país/región que estés buscando; no hace falta leer los demás.
 
 ## Cómo mantener este skill
 
-Cada país vive en su propio archivo bajo `paises/`, no en una sección de este `SKILL.md`. Actualizar
-el archivo del país correspondiente la primera vez que produzca un hallazgo real de metodología (un
-regulador que aplica a todos los clubes de ese país, un gotcha de navegación que costó descubrir);
-no hace falta una entrada por cada club individual, eso vive en `Admin/sourcing/<País>/<Club>.md`. Si un
-ángulo ya documentado ahí como "bloqueado" se destraba (ej. Uruguay consigue un pedido de acceso a
-información pública), actualizar ese archivo en vez de dejarlo diciendo que sigue bloqueado.
+Cada país vive en su propio archivo bajo `paises/`, no en una sección de este `SKILL.md`. Cuando un país
+produce un hallazgo real de metodología (un regulador que aplica a todos los clubes de ese país, un gotcha de
+navegación que costó descubrir), o un ángulo documentado ahí como "bloqueado" se destraba (ej. Uruguay consigue
+un pedido de acceso a información pública), proponele a Guido el texto exacto del cambio al archivo del país
+y esperá su ok; mientras tanto el hallazgo se documenta en `Admin/sourcing/<País>/<Club>.md`. La regla vale también
+para editar a mano los `paises/*.md`. No hace falta una entrada por cada club individual.
 
-**País nuevo, sin canal documentado todavía**: crear `paises/<País>.md` (mismo formato que cualquiera
-de los existentes: título, canal/regulador, gotchas, fecha de último chequeo) y agregarle su línea al
-índice de la sección "Países" más arriba, en el mismo orden en que aparecen los demás (no hay un
+**País nuevo, sin canal documentado todavía**: proponer `paises/<País>.md` (mismo formato que cualquiera
+de los existentes: título, canal/regulador, gotchas, fecha de último chequeo) y su línea en el
+índice de la sección "Países" más arriba, con el mismo ok, en el mismo orden en que aparecen los demás (no hay un
 criterio de orden estricto; geográfico/alfabético es lo que ya viene siendo). Un país que hoy no
 tiene nada ("sin metodología país-nivel todavía", ver `paises/Peru-Paraguay-Bolivia-Venezuela.md`)
 igual amerita archivo propio si se investiga y se confirma que no hay canal: "ya se buscó y no hay

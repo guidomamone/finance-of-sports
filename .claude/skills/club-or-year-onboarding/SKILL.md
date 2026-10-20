@@ -1,6 +1,6 @@
 ---
 name: club-or-year-onboarding
-description: Onboardear clubes en finance-of-sports con el pipeline (de un PDF a un año cargado en el sitio) — correr lotes que Guido ejecuta en su terminal, leer los resultados y la cola humana, cargar con los scripts, y mejorar los scripts de a un escalón con su ok. Usar SIEMPRE que Guido diga "onboarding" o pida cargar un club o un año, y para cualquier cambio a las tools del pipeline (`tools/lote.mjs`, `cargar.mjs`, `caja-deuda.mjs` y las de cada etapa). El proceso etapa por etapa está en `Admin/PIPELINE.md`.
+description: Onboardear clubes en finance-of-sports con el pipeline (de un PDF a un año cargado en el sitio) — correr lotes en segundo plano, leer los resultados y la cola humana, cargar con los scripts, y mejorar los scripts de a un escalón con su ok. Usar SIEMPRE que Guido diga "onboarding" o pida cargar un club o un año, y para cualquier cambio a las tools del pipeline (`tools/lote.mjs`, `cargar.mjs`, `caja-deuda.mjs` y las de cada etapa). El proceso etapa por etapa está en `Admin/PIPELINE.md`.
 ---
 
 # Onboarding de clubes con el pipeline
@@ -13,7 +13,7 @@ está en `Admin/PIPELINE.md`.
 
 Que un PDF de un club llegue solo hasta el año cargado en el sitio:
 
-- sin gastar tokens de sesión (todo en scripts que corre Guido en su terminal),
+- sin gastar tokens de sesión (todo en scripts de `tools/` que la propia sesión corre en segundo plano),
 - barato en dólares de API,
 - sin errores en los números.
 
@@ -32,8 +32,8 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 ### a) Correr clubes
 
 1. La etapa 2 (transcribir con Mistral y validar el inventario: primero la validación gratis, y solo las páginas dudosas se pagan) la hace `tools/pipeline.mjs`, no el lote: `lote.mjs` saltea los PDFs sin `.md` y
-   arranca en la etapa 3. Ensayo: `node tools/pipeline.mjs --dir "Clubes/<País>/<Club>" --max-paginas 0 --limit 0`; Guido
-   corre lo mismo con `caffeinate -i` y `--ejecutar`. `--max-paginas 0` incluye los PDFs de más de 100 páginas (sin él quedan para el
+   arranca en la etapa 3. Ensayo: `node tools/pipeline.mjs --dir "Clubes/<País>/<Club>" --max-paginas 0 --limit 0`; la sesión
+   corre lo mismo con `caffeinate -i` y `--ejecutar`, dentro de su presupuesto (`Admin/CONVENCIONES.md`). `--max-paginas 0` incluye los PDFs de más de 100 páginas (sin él quedan para el
    final). El costo es el del ensayo (cuenta páginas); el de `estado.mjs` es fijo por documento y subestima los PDFs largos.
 2. Armar la lista (`Admin/lotes/lote-NN.txt`). Club nuevo (alta): un solo ejercicio en el lote, el más reciente que traiga estado de resultados completo. Cuando el alta esté hecha y la cola de ese año contestada, el resto de los años va en el lote siguiente, donde las respuestas del primero ya sirven de precedente y no se repiten las preguntas. Club que ya está en el sitio: todos los años de la etapa más baja juntos. Un documento sin
    estado de resultados (informe del auditor, memoria sola) no va a la lista: se le propone a Guido para `Admin/registros/documentos-descartados.txt`
@@ -43,11 +43,11 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 3. Club nuevo: el lote fija el perímetro solo (`perimetro-senales.mjs`, con la regla de `Admin/CONVENCIONES-DATOS.md`) y deduce el
    cierre de los documentos vecinos. `node tools/antes-de-localizar.mjs --lista <lista>` dice qué falta (gratis). Un ajuste a mano
    (`node tools/ajustes.mjs`) solo para lo que el lote frena e imprime, antes de localizar, para no pagar dos veces la localización.
-4. Ensayo: `node tools/lote.mjs --lista Admin/lotes/lote-NN.txt` (gratis). Decirle a Guido qué etapa toca, para qué sirve y cuánto cuesta.
-5. Guido corre `caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar`, y con `--cargar` si lo que quede listo se
+4. Ensayo: `node tools/lote.mjs --lista Admin/lotes/lote-NN.txt` (gratis). Decirle a la principal qué etapa toca, para qué sirve y cuánto cuesta.
+5. La sesión corre `caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-NN.txt --ejecutar` en segundo plano, y con `--cargar` si lo que quede listo se
    escribe en esa misma corrida (`tools/cargar-lote.mjs`: alta del club, un commit por año; si ningún año entra, revierte el alta). Si el
    final del lote pide `--reintentar`, va con una lista que tenga SOLO los documentos que lo necesitan, y se lo digo.
-6. Leer el resultado: el bloque final que pega Guido (no la terminal entera), `Generados/`, `estado.mjs` y `cola.mjs`. Mostrarlo en un solo mensaje,
+6. Leer el resultado: la salida del lote (no la terminal entera), `Generados/`, `estado.mjs` y `cola.mjs`. Mostrarlo en un solo mensaje,
    con una tabla etapa · ejercicios · qué significa la etapa · qué falta (solo lo pendiente: los cargados y descartados van en una línea
    aparte), y las decisiones numeradas con la recomendación al lado.
 7. Lo que frena se resuelve en este orden: un ajuste manual (gratis, sin preguntar); la cola, que contesta un subagente (ver "La cola" en la sección 4); si es
@@ -58,7 +58,7 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
    corre Claude Code, Guido si no; `--autor` lo fuerza).
 8. Escribir: lo que el lote dejó listo entra con `--cargar`. Lo que no, a mano: `node tools/cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año (club nuevo: `alta-club.mjs` en el mismo
    commit que su primer año). Después caja y deuda: `node tools/caja-deuda.mjs --club <id>` (ensayo); `--ejecutar --escribir` lo corre
-   Guido, porque sus escalones 1b (Jev) y 2 (IA) usan API.
+   la sesión si el ensayo gratis entra en el presupuesto; si no, se frena y se avisa a la principal.
    Club nuevo: antes de cargar su primer año, un subagente Sonnet revisa contra el documento lo que propuso el alta (nombre legal, tipo
    de documento y fecha de cierre); lo que esté mal se corrige con un ajuste (`name`, `reportType`, `cierre`). Si el nombre legal quedó
    como pregunta en la cola (la portada y lo más frecuente no coinciden), el subagente propone la respuesta con cita del documento. Se
@@ -85,12 +85,14 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
   - camino limpio: reglas pocas y estrictas; si todo cierra sin interpretar nada, se carga solo;
   - camino de dudas: lo que no pasa no se "arregla" con otra regla; se le pregunta a la IA algo puntual con cita del documento, y si tampoco
     alcanza, va a la cola.
-- **No perseguir casos sin daño.** Si un defecto no afecta ningún dato cargado ni frena nada hoy, se mide su impacto y se anota en
-  `Admin/HALLAZGOS-pipeline.md`, sección "Conocido, sin daño hoy", con la condición para retomarlo; no va al TODO y no se diseña un
-  arreglo. Si la condición se cumple, vuelve al TODO. Una regla que "siempre incluye/excluye" algo es manta corta: va como
+- **No perseguir casos sin daño.** `Admin/HALLAZGOS-pipeline.md`, sección "Conocido, sin daño hoy", es SOLO para un defecto que no
+  afecta ningún dato cargado ni frena nada: se mide su impacto y se anota con la condición para retomarlo, y no se diseña un arreglo.
+  Un defecto que frena una carga no va ahí: va a `Admin/registros/frenados-por-script.jsonl` (sección 3a, punto 7) y sigue el circuito de
+  `Admin/CONVENCIONES.md` (Pipeline arregla, la Auditora aprueba). Si la condición de un caso de HALLAZGOS se cumple, pasa a ese
+  circuito. Una regla que "siempre incluye/excluye" algo es manta corta: va como
   escalón (probar lo que dijo la IA y, solo si la compuerta no cierra, probar lo otro).
 - **Arreglar en los scripts, nunca a mano.** Lo que se repite va a un script de `tools/` con un ensayo que estime el costo. Gastar
-  dólares de API está bien; tokens de sesión, no. Archivos grandes se leen con filtros, no enteros.
+  dólares de API está bien, dentro del presupuesto de la sesión (`Admin/CONVENCIONES.md`); tokens de sesión, no. Archivos grandes se leen con filtros, no enteros.
 - **Ejemplos concretos:** club, año, fila, importe, antes y después. Explicar las siglas.
 - **Páginas:** decir siempre las dos, "página N del visor (impreso M al pie)".
 - **La cola (Guido no la revisa).** Preguntas concretas de sí o no, con la página del visor y las líneas del .md. Las contesta un subagente
@@ -100,7 +102,6 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
   Sonnet)". Un "no sé" que frena el alta de un club o la carga de un año se le pregunta a Guido, de sí o no y diciéndole exactamente qué
   abrir ("abrí el PDF en la página N del visor; en el .md, líneas X-Y; fijate si..."); si es algo que solo el club sabe, va a
   `Admin/dudas-por-club.md`.
-- **Sin la herramienta de preguntas:** las decisiones van numeradas en el mensaje.
 - Ajuste `categoria` = MUDAR una fila de lado (salta la compuerta del lado). Para aceptar/corregir dentro del mismo lado: la cola
   (`cola.mjs --corregir-categoria`), que respeta la compuerta. Caso: Novorizontino 2024, "Premiações" es ingreso y gasto.
 
@@ -112,8 +113,9 @@ el del medio y el más nuevo) y `Admin/lotes/prueba-completa.txt` (todos los doc
 `node tools/lotes-prueba.mjs --escribir`; correrlo cuando entran clubes o años nuevos. Un caso nuevo que rompió algo va a la rápida, con su motivo.
 
 ```bash
-node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt > /tmp/medir-antes.txt 2>&1     # antes del cambio
-node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt > /tmp/medir-despues.txt 2>&1   # después; diff entre los dos
+node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt > <carpeta de scratchpad de la sesión>/medir-antes.txt 2>&1     # antes del cambio
+node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt > <carpeta de scratchpad de la sesión>/medir-despues.txt 2>&1   # después; diff entre los dos
+# la ruta del scratchpad va escrita entera, sin /tmp ni variables
 ```
 
 Además, según lo que toque: lo mismo con `--reintentar` (camino de error); `node tools/caja-deuda.mjs --medir` en TODOS los clubes (caja y deuda);
@@ -122,7 +124,7 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 
 ## 6. Trampas
 
-- `git status` se ensucia solo mientras Guido corre lotes (logs en `Admin/`, `.md` en `Clubes/`, y los `.json` de `Generados/`):
+- `git status` se ensucia solo mientras corre un lote (logs en `Admin/`, `.md` en `Clubes/`, y los `.json` de `Generados/`):
   revisar antes de commitear; los de `Generados/` van con los logs.
 - `estado.mjs` mientras corre un lote muestra una foto a mitad de camino.
 - Los ensayos no llaman a ninguna API, pero reescriben el registro (`Admin/registros/transcripciones-estado.jsonl`) y la lista temporal de la
@@ -149,12 +151,11 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 
 - Cambió una tool → `Admin/PIPELINE.md` al día (ese texto no necesita el ok de Guido).
 - Se midió algo y no entró → una línea en `Admin/HALLAZGOS-pipeline.md`.
-- Pendiente nuevo o resuelto → `Admin/TODO.md` (lo resuelto se borra).
-- Una entrada en `Admin/CHANGELOG.md` por cada cambio real.
-- Git: commitear el código separado de los logs de los lotes. Sin push: cada push a `main` es un deploy y lo hace Guido.
+- El resto del cierre (nota de sesión en un worktree, o TODO, CHANGELOG y ESTADO en la principal): `CLAUDE.md`, «Antes de terminar la sesión».
+- Commitear el código separado de los logs de los lotes.
 
 ## 9. Cómo mantener este skill
 
 Acá van las reglas y el modo de trabajar, que cambian poco; cambiarlas requiere proponerle el texto a Guido. El proceso va en
 `Admin/PIPELINE.md`, los pendientes en `Admin/TODO.md`, los descartes medidos en `Admin/HALLAZGOS-pipeline.md` y la historia en
-`Admin/CHANGELOG.md`. Si una sección de acá empieza a contar casos uno por uno o cuándo se decidió algo, va a uno de esos archivos.
+`Admin/CHANGELOG.md`. Si una sección de acá empieza a contar casos uno por uno o cuándo se decidió algo, va a uno de esos archivos. Sin historia ni contadores: ver `CLAUDE.md`.
