@@ -46,9 +46,7 @@ palco, Recuperos de cargas sociales Dto 1212, etc.) se cargó como líneas de re
 normales (other_income/other_expenses), NO como parte de RECPAM/netInterest — el propio documento
 los separa de "RESULTADOS FINANCIEROS Y POR TENENCIA" (que SÍ va a netInterest).
 
-"Resultado por revaluación de jugadores" y "Gastos por transferencias y préstamos jugadores"/
-"Amortización acelerada por libertad de acción" van a `player_sales`/`player_amortisation`
-respectivamente (economía de pases, columna "Fútbol - Plantel profesional").
+"Resultado por revaluación de jugadores" (sin cobro) va a `other_income`, nunca a `player_sales` (291 M en 2023, Nota 16; 4.053 M en 2024, Nota 13: hechos posteriores, ventas pactadas tras el cierre; 2024-25 no repite la fila). "Gastos por transferencias y préstamos jugadores"/"Amortización acelerada por libertad de acción" van a `player_amortisation` (economía de pases, columna "Fútbol - Plantel profesional").
 
 grossDebt = "Deudas" (Nota 3.5) corriente+no corriente, EXCLUYENDO "Fondos específicos" y
 "Previsiones" — mismo criterio que Boca/Vélez/Instituto. cash = Caja y bancos.
