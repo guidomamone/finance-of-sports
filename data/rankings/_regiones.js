@@ -28,7 +28,7 @@ window.RANKINGS_INDICE = {
   "es-segunda": [2025,3,22],
   "gb-championship": [2025,3,24],
   "gb-leagueone": [2022,1,24],
-  "gb-premierleague": [2025,16,20],
+  "gb-premierleague": [2024,17,20],
   "gb-scottishpremiership": [2025,1,12],
   "gr-superleague": [2025,12,14],
   "gr-superleague2": [2023,3,30],
