@@ -10,4 +10,13 @@ window.RANKINGS["gb-leagueone"] = {
         mix:[["Comercial / Sponsors",4.19],["Estadio",11.532],["Televisión",3.948],["Venta de Jugadores",1.512],["Otros ingresos",11.82]] },
     ],
   },
+  2019: {
+    leagueSize: 24,
+    wiki: {"t":"2018–19 EFL League One","lang":"en","at":"2026-10-19","n":24},
+    clubs: [
+      { id:"sunderland-gb", revenue:71.998, reportType:"official_balance_sheet",
+        sourceId:"sunderland-gb-full-accounts-2018-19",
+        mix:[["Comercial / Sponsors",5.884],["Estadio",10.534],["Televisión",48.92],["Venta de Jugadores",0.122],["Otros ingresos",6.537]] },
+    ],
+  },
 };

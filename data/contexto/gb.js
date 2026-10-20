@@ -104,6 +104,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"City Ground","capacidad":31042,"sponsor":"Kaiyun Sports","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'sunderland-gb': {
+    2019: {"estadio":"Stadium of Light","capacidad":48707,"sponsor":"BETDAQ","marca":"Adidas","temporada":"2018–19 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380005833"},
     2022: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Great Annual Savings Group","marca":"Nike","temporada":"2021–22 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358363186"},
     2024: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Spreadex Sports","marca":"Nike","temporada":"2023–24 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374030992"},
     2025: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Spreadex Sports","marca":"Hummel","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},

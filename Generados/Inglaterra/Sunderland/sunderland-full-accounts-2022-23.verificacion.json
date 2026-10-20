@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.pdf",
  "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.md",
- "generado": "2026-10-20T18:11:40.568Z",
- "estado": "cola",
+ "generado": "2026-10-20T18:14:06.991Z",
+ "estado": "ok",
  "clubId": "sunderland-gb",
  "year": 2023,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "05a4b1f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -33,14 +31,14 @@
    "dif": 0
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 27.135; el sitio tiene 27.135"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 27.135 en sunderland-full-accounts-2021-22.pdf y 27.135 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
   }
  ],
  "notas": [

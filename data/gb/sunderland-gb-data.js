@@ -28,6 +28,15 @@ const sunderlandGbRevenueLinesByYear = {
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0.007, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of player contracts', normalizedCategory:'player_sales', amountNative:1.243, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:8.602, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and media', normalizedCategory:'broadcasting', amountNative:39.948, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship and royalties', normalizedCategory:'sponsorship_commercial', amountNative:2.379, disclosureLevel:'aggregated' },
+    { rawLabel:'Conference and banqueting', normalizedCategory:'other_income', amountNative:4.136, disclosureLevel:'aggregated' },
+    { rawLabel:'Retail and merchandising', normalizedCategory:'sponsorship_commercial', amountNative:2.426, disclosureLevel:'aggregated' },
+    { rawLabel:'Other', normalizedCategory:'other_income', amountNative:1.202, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of players', normalizedCategory:'player_sales', amountNative:0.1, disclosureLevel:'aggregated' },
+  ],
 };
 
 const sunderlandGbExpenseLinesByYear = {
@@ -47,6 +56,11 @@ const sunderlandGbExpenseLinesByYear = {
     { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-2.083, disclosureLevel:'aggregated' },
     { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-30.876, disclosureLevel:'aggregated' },
     { rawLabel:'Amortisation of players contracts', normalizedCategory:'player_amortisation', amountNative:-2.052, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-2.4, disclosureLevel:'aggregated' },
+    { rawLabel:'Net operating expenses before exceptional items', normalizedCategory:'other_expenses', amountNative:-46.289, disclosureLevel:'aggregated' },
+    { rawLabel:'Exceptional operating expense', normalizedCategory:'exceptional_items', amountNative:-20.538, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -83,6 +97,22 @@ const sunderlandGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:27.135, officialTotalExpenses:35.011, officialPAT:-7.877,
   },
+  2019: {
+    currency:'GBP', fxRef:'GBP@2019-07-31',
+    sourceId:'sunderland-gb-full-accounts-2018-19',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.148, tax:-0.66,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.076},
+      {label:'Interest payable and similar expenses', value:-0.224},
+      {label:'Tax on loss', value:-0.66},
+      {label:'Income tax relating to other comprehensive income', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:58.793, officialTotalExpenses:48.689, officialPAT:-11.242,
+  },
 };
 
 const sunderlandGbPresupuestoOverlayByYear = {};
@@ -117,6 +147,11 @@ Object.assign(sources, {
   'sunderland-gb-full-accounts-2021-22': {
     id:'sunderland-gb-full-accounts-2021-22', clubId:'sunderland-gb',
     title:'Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sunderland-gb-full-accounts-2018-19': {
+    id:'sunderland-gb-full-accounts-2018-19', clubId:'sunderland-gb',
+    title:'Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2018-19 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
