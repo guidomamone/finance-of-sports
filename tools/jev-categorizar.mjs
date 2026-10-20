@@ -40,6 +40,7 @@ import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { abrirCache } from './respuestas-cache.mjs';
 import { derivado, ubicar } from './rutas.mjs';
+import { paisDeClub, afinidad } from './pais-club.mjs'; // (to-do 331) el país del club en el texto y los ejemplos del mismo país primero
 import { lineasAprendidas } from './memoria-categorias.mjs';
 import vm from 'node:vm';
 import { archivosData } from './data-clubes.js';
@@ -96,7 +97,8 @@ let stopAll = null;
 async function askJev(key, { label, section, club, side, examples, useSide }) {
   const criteria = (SIDE_KNOWN || useSide) && side ? Object.fromEntries(Object.entries(ALL).filter(([k]) => sideOf(k) === side)) : ALL;
   const exText = examples && examples.length ? `Ejemplos de rubros parecidos que ya están categorizados en el sitio (los clubes tienen convenciones propias; guiate por ellos):\n${examples.map((x) => `- "${x.label}" (${x.club}) -> ${x.truth}`).join('\n')}\n` : '';
-  const state = [`Rubro de un estado financiero de un club de fútbol${club ? ` (${club})` : ''}${section ? `, sección: ${section}` : ''}.`, exText, `Texto del rubro, tal cual figura en el documento: "${label}"`].filter(Boolean).join('\n');
+  const pc = club ? paisDeClub(club) : null; // (to-do 331) el país del club: la misma palabra puede ser otra cosa en otro país del mismo idioma
+  const state = [`Rubro de un estado financiero de un club de fútbol${club ? ` (${club}${pc ? `, de ${pc.nombre}` : ''})` : ''}${section ? `, sección: ${section}` : ''}.`, exText, `Texto del rubro, tal cual figura en el documento: "${label}"`].filter(Boolean).join('\n');
   const body = { state, model: 'jev-latest', questions: { categoria: { type: 'choice', instructions: 'Elegí la categoría de la lista a la que corresponde este rubro. Si no encaja en ninguna, elegí la más genérica (other_income / other_expenses).', criteria } } };
   for (let attempt = 0; attempt < 5; attempt++) {
     if (stopAll) return { error: stopAll };
@@ -147,7 +149,8 @@ function makeRetriever(bank) {
       if (!inter) continue;
       scored.push([inter / (qw.size + b.w.size - inter), b]);
     }
-    scored.sort((a, b) => b[0] - a[0]);
+    // (to-do 331) a igual parecido de palabras: primero los del mismo país, después los del mismo idioma
+    scored.sort((a, b) => (b[0] - a[0] > 1e-12 || a[0] - b[0] > 1e-12) ? b[0] - a[0] : afinidad(q.club, b[1].club) - afinidad(q.club, a[1].club));
     const seen = new Set(); const out = [];
     for (const [, b] of scored) { const k = `${b.label.toLowerCase()}|${b.truth}`; if (seen.has(k)) continue; seen.add(k); out.push(b); if (out.length >= K_EXAMPLES) break; }
     return out;
