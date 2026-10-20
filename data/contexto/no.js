@@ -19,6 +19,8 @@ Object.assign(window.CLUB_CONTEXT, {
   'molde-no': {
     2008: {"estadio":"Aker Stadion","capacidad":11167,"temporada":"2008 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369291376"},
     2009: {"estadio":"Aker Stadion","capacidad":11167,"sponsor":"Sparebanken Møre","marca":"Umbro","temporada":"2009 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369624445"},
+    2012: {"estadio":"Aker Stadion","temporada":"2012 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1322214361"},
+    2013: {"estadio":"Aker Stadion","capacidad":11800,"sponsor":"Sparebanken Møre","marca":"Umbro","temporada":"2013 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369123721"},
     2025: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'sarpsborg08-no': {

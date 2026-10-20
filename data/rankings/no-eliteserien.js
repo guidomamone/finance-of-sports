@@ -143,6 +143,15 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",2.063],["Estadio",0.737],["Televisión",0.83],["Venta de Jugadores",1.27],["Otros ingresos",1.142]] },
     ],
   },
+  2013: {
+    leagueSize: 16,
+    wiki: {"t":"2013 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
+    clubs: [
+      { id:"molde-no", revenue:15.189, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2013",
+        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",5.73],["Estadio",3.339],["Televisión",3.672],["Premios por competencias",0.196],["Otros ingresos",2.217]] },
+    ],
+  },
   2012: {
     leagueSize: 16,
     wiki: {"t":"2012 Eliteserien","lang":"en","at":"2026-10-19","n":16},
