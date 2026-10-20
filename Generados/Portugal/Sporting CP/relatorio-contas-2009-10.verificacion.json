@@ -1,7 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2009-10.md",
- "generado": "2026-10-16T18:10:36.552Z",
+ "generado": "2026-10-20T21:29:25.021Z",
+ "scriptHuella": "bb1724ebf1b3",
  "estado": "ok",
  "clubId": "sportingcp-pt",
  "year": 2010,
@@ -66,8 +67,7 @@
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b2 es la versión analítica del relatório de gestão; el estado financiero oficial es b56 (pág. 60).",
-  "duda de localizar que no afecta la carga: Desglosan saldos y operaciones por contraparte, no por categoría de ingreso/gasto.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar que no afecta la carga: Desglosan saldos y operaciones por contraparte, no por categoría de ingreso/gasto."
  ],
  "reintentar": null,
  "reintentado": false,
