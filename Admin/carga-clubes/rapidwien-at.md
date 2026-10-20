@@ -88,6 +88,51 @@ tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por pr
 alta-club.mjs (2026-10-20): at-bundesliga, verificado contra roster cacheado de "2023–24 Austrian Football Bundesliga" (tools/club-league-reference/at.json), coincidencia única por palabras "SK Rapid" = "Rapid Wien".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Austria/Rapid Wien/geschaeftsbericht-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Austria/Rapid Wien/geschaeftsbericht-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Umsatzerlöse | pág. 22, precedente |
+| 2 | Erträge aus der Auflösung von Rückstellungen | pág. 22, precedente |
+| 3 | Übrige | pág. 22, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aufwendungen Spielbetrieb, Transfers etc. | pág. 22, precedente |
+| 2 | Aufwendungen für bezogene Leistungen | pág. 22, precedente |
+| 3 | Löhne & Gehälter | pág. 22, precedente |
+| 4 | Soziale Aufwendungen | pág. 22, precedente |
+| 5 | Abschreibungen | pág. 22, precedente |
+| 6 | Sonstige betriebliche Aufwendungen | pág. 22, Jev 0.96 |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2023-06-30. Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2022-23; el registro no trae cierre
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): perimetro = consolidado. Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2020, 2021, 2022): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2023 cacheada).
+```
+
 ## 2022
 
 ### Ingresos
@@ -592,4 +637,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### rapidwien-at-geschaeftsbericht-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

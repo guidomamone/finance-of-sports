@@ -84,6 +84,11 @@ const rapidwienatRevenueLinesByYear = {
     { rawLabel:'Fanreisen', normalizedCategory:'other_income', amountNative:0.287059, disclosureLevel:'aggregated' },
     { rawLabel:'sonstige Erlöse', normalizedCategory:'other_income', amountNative:8.355478, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Umsatzerlöse', normalizedCategory:'lump_football_operations', amountNative:42.627915, disclosureLevel:'aggregated' },
+    { rawLabel:'Erträge aus der Auflösung von Rückstellungen', normalizedCategory:'other_income', amountNative:0.54837, disclosureLevel:'aggregated' },
+    { rawLabel:'Übrige', normalizedCategory:'other_income', amountNative:2.168731, disclosureLevel:'aggregated' },
+  ],
 };
 const rapidwienatExpenseLinesByYear = {
   2024: [
@@ -232,6 +237,14 @@ const rapidwienatExpenseLinesByYear = {
     { rawLabel:'Abschreibungen für Abnutzung', normalizedCategory:'depreciation', amountNative:-1.660871, disclosureLevel:'aggregated' },
     { rawLabel:'Transferaufwendungen', normalizedCategory:'player_amortisation', amountNative:-2.272612, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Aufwendungen Spielbetrieb, Transfers etc.', normalizedCategory:'match_organisation_expense', amountNative:-4.959545, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwendungen für bezogene Leistungen', normalizedCategory:'other_expenses', amountNative:-7.98637, disclosureLevel:'aggregated' },
+    { rawLabel:'Löhne & Gehälter', normalizedCategory:'wages_squad', amountNative:-14.74041, disclosureLevel:'aggregated' },
+    { rawLabel:'Soziale Aufwendungen', normalizedCategory:'wages_squad', amountNative:-3.636215, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen', normalizedCategory:'depreciation', amountNative:-4.200133, disclosureLevel:'aggregated' },
+    { rawLabel:'Sonstige betriebliche Aufwendungen', normalizedCategory:'other_expenses', amountNative:-7.88835, disclosureLevel:'aggregated' },
+  ],
 };
 const rapidwienatFiscalYearMeta = {
   2024: {
@@ -366,6 +379,26 @@ const rapidwienatFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:49.631192, officialTotalExpenses:42.52744, officialPAT:5.755853,
   },
+  2023: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'rapidwien-at-geschaeftsbericht-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.355653, tax:-0.529837,
+    extraRows: [
+      {label:'Sonstige Zinsen und ähnliche Erträge', value:0.031363},
+      {label:'Abschreibungen auf Finanzanlagen', value:-0.221119},
+      {label:'Zinsen und ähnliche Aufwendungen', value:-1.165897},
+      {label:'Steuern vom Einkommen', value:-0.529837},
+    ],
+    sinDesglose: [
+      {renglon:'Umsatzerlöse', lado:'revenue', importe:42.627915, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:45.345016, officialTotalExpenses:43.411023, officialPAT:0.048502,
+  },
 };
 const rapidwienatPresupuestoOverlayByYear = {};
 
@@ -425,6 +458,11 @@ Object.assign(sources, {
   'rapidwien-at-geschaeftsbericht-2021-22': {
     id:'rapidwien-at-geschaeftsbericht-2021-22', clubId:'rapidwien-at',
     title:'SK Rapid GmbH — geschaeftsbericht-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'rapidwien-at-geschaeftsbericht-2022-23': {
+    id:'rapidwien-at-geschaeftsbericht-2022-23', clubId:'rapidwien-at',
+    title:'SK Rapid GmbH — geschaeftsbericht-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
