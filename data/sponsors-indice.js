@@ -76,6 +76,7 @@ window.SPONSORS_INDICE = [
   ["aircash","Aircash",["c"]],
   ["airdolomiti","AirDolomiti",["c"]],
   ["airtox","Airtox",["c"]],
+  ["aitabu-hotel-campestre","Aitabü Hotel Campestre",["c"]],
   ["ak-1","AK-1",["c"]],
   ["aka","AKA",["c"]],
   ["akhmat-foundation","Akhmat Foundation",["c"]],
