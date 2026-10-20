@@ -517,15 +517,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   COROLARIO (Versión 155): las claves que quedan huérfanas al borrar una feature se borran de
   `data/lang/en.js` en el mismo movimiento — el merge del selector dejó 88. El audit no las detecta:
   cuenta las que FALTAN, no las que sobran.
-- ASSET_V SE SUBE EN DOS LUGARES, NO EN UNO (Versión 125, bug real de esta sesión): `window.ASSET_V`
-  es una constante inline, pero los `?v=` de los `<script src>` estáticos del final del `<body>` son
-  LITERALES, no salen de ella (solo los 2 cargadores dinámicos, `loadClubData()` e `I18N.load()`,
-  la leen de verdad). Subir la constante y olvidarse de los tags deja al navegador sirviendo los
-  `js/data` viejos de su caché con el HTML nuevo: pasó al migrar los `fx`, llegó un
-  `currency-map.js` cacheado sin `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, y la
-  página entera tiró `ReferenceError`. Las notas del proyecto y `CLAUDE.md` decían que los
-  tags llevaban la constante, que no era cierto. Ahora lo chequea `node tools/audit.js`
-  (`asset-v-desfasado`, P1): compara la constante contra cada tag.
+- ASSET_V SE SUBE EN DOS LUGARES, NO EN UNO (la constante y cada `?v=`): la regla y el bug que la motivó están una sola vez, en "CACHE DE ASSETS" (más abajo).
 - 2 BUGS REALES CORREGIDOS + REGLA NUEVA DE ORDEN DEL DROPDOWN (Versión 96): (1) Boca (club default)
   aparecía con TODOS los gráficos de Finanzas vacíos en la primera carga de la página, y solo se
   arreglaba solo después de cambiar de club y volver — causa: `pasesDataForClub`/
@@ -937,8 +929,10 @@ Texto movido sin cambios.
   de ella, solo los 2 cargadores dinámicos (`loadClubData()`, `I18N.load()`) la
   leen. Hay que cambiar la constante Y los tags. Subir uno solo es peor que no
   subir ninguno: mezcla archivos nuevos con archivos viejos de la caché, que es
-  el estado en el que el sitio tira `ReferenceError`. Lo chequea
-  `node tools/audit.js` (`asset-v-desfasado`, P1).
+  el estado en el que el sitio tira `ReferenceError` (pasó al migrar los `fx`: llegó un
+  `currency-map.js` cacheado sin `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, y
+  la página entera falló). Lo chequea `node tools/audit.js` (`asset-v-desfasado`, P1):
+  compara la constante contra cada tag.
 - BRANDING: RESUELTO en la Versión 117 (decisión de Guido). La marca es distinta
   por idioma, a propósito: "El deporte en Números" en castellano, "Finance of
   Sports" en inglés (clave `site.name`, `data/lang/en.js`), que es además el
@@ -968,19 +962,10 @@ Texto movido sin cambios.
   de este entorno parece compartirse por origen entre pestañas, no por
   pestaña). Lo único que funcionó de forma confiable: cambiar la URL exacta
   del `<script src="...">` con un query string.
-  **ACTUALIZADO (Versión 115): esto ya NO es un truco temporal, ahora es una
-  convención del proyecto.** Todos los `<script src>` propios llevan un `?v=`,
-  y `window.ASSET_V` está declarado en un `<script>` inline justo antes de ellos.
-  **CORRECCIÓN IMPORTANTE (Versión 125, este párrafo decía algo que no era
-  cierto y costó un bug): los `?v=` de los `<script src>` estáticos son
-  LITERALES, NO salen de `ASSET_V`.** Solo los 2 cargadores dinámicos
-  (`loadClubData()` e `I18N.load()`) leen la constante de verdad. O sea que hay
-  que cambiar la constante Y los tags, y cambiar uno solo es PEOR que no cambiar
-  ninguno: el navegador mezcla archivos nuevos con archivos viejos de su caché
-  (pasó al migrar los `fx`: llegó un `currency-map.js` cacheado sin
-  `fxMetaFor()` mientras `finanzas-calc.js` ya lo llamaba, `ReferenceError` en
-  toda la página). Lo chequea `node tools/audit.js` (`asset-v-desfasado`, P1),
-  que compara la constante contra cada tag. Para forzar recarga durante una
+  **Esto es una convención del proyecto, no un truco temporal:** todos los `<script src>`
+  propios llevan un `?v=` y `window.ASSET_V` está declarado en un `<script>` inline justo
+  antes de ellos. Se sube la constante Y los tags (regla y por qué, en "CACHE DE ASSETS", más
+  arriba). Para forzar recarga durante una
   sesión de desarrollo: subí ASSET_V (y los tags) a un valor que nunca se pidió
   antes (ej. `115a`), navegá, confirmá, y dejalo en un valor limpio al terminar. Sirve
   igual en producción: sin esto, un visitante que ya entró antes se puede
