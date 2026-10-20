@@ -1,0 +1,301 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2023.md",
+ "generatedAt": "2026-10-20T19:47:03.988Z",
+ "rubrosHuella": "60b3ec437f64836ae778c9235ca10ae5e0a38d10",
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos Deportivos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos Deportivos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "wages_squad",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "seguros",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Gastos de personal",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos Deportivos\"",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "wages_squad",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Arriendos",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 926
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.82
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Amortizaciones derechos deportivos",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos Deportivos\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Gastos de Viaje",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Gastos Deportivos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1006
+  }
+ ]
+}

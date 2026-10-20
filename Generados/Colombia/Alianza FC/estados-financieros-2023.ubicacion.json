@@ -1,0 +1,157 @@
+{
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2023.md",
+ "mdSha1": "f28bd0bad586cdb7ad9ad8824d287992a81a9d92",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:44:17.697Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    55
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    78,
+    95
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    117,
+    136
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    158,
+    163
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    171,
+    180
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 4,
+   "lineas": [
+    200,
+    202
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    329,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    350,
+    356
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    364,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    513,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    576,
+    585
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    589,
+    594
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    598,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    611,
+    648
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    666,
+    686
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    694,
+    728
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b15"
+ ],
+ "notas_gastos": [
+  "b16"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Cifras expresadas en pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "AÑO 2023",
+ "columna_anterior": "AÑO 2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados integrales individual en b2 (pág. 2). b15 desglosa los ingresos de actividades ordinarias y b16 los gastos operacionales (administración, personal, etc.). Se excluyen el balance, el estado de cambios en el patrimonio, el flujo de efectivo, las notas de activo y pasivo, la lista de accionistas y los detalles por tercero o jugador."
+}

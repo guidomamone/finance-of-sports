@@ -1,0 +1,522 @@
+{
+ "pdf": "Clubes/Colombia/Llaneros/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Llaneros/estados-financieros-2025.md",
+ "mdSha1": "08a54df2db47f21c7e1546a10832614eeac6146e",
+ "ubicacionSha1": "78a0c3d4fc3591767f03fc104ba48d9cd5c1381d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:44:13.870Z",
+ "ubicacion": {
+  "estado": [
+   "b25"
+  ],
+  "notas_ingresos": [
+   "b16",
+   "b17",
+   "b18"
+  ],
+  "notas_gastos": [
+   "b19",
+   "b20",
+   "b21",
+   "b22"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b25",
+   "escala": "unidades",
+   "evidencia": "Importes con signo $ y sin indicación de miles (ej. $ 11.855.555.018)"
+  },
+  {
+   "bloque": "b16",
+   "escala": "unidades",
+   "evidencia": "Sin indicación de escala; mismos importes que el estado"
+  },
+  {
+   "bloque": "b17",
+   "escala": "unidades",
+   "evidencia": "Sin indicación de escala; total coincide con el estado"
+  },
+  {
+   "bloque": "b18",
+   "escala": "unidades",
+   "evidencia": "Sin indicación de escala; coincide con el estado"
+  },
+  {
+   "bloque": "b19",
+   "escala": "unidades",
+   "evidencia": "Sin indicación de escala; coincide con el estado"
+  },
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "Sin indicación de escala; coincide con el estado"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "Sin indicación de escala; coincide con el estado"
+  },
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "Sin indicación de escala; coincide con el estado"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b25",
+   "linea": 1018,
+   "etiqueta": "Ingresos de Actividades Ordinarias",
+   "actual": "$ 11.855.555.018",
+   "anterior": "$ 5.777.133.800",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1019,
+   "etiqueta": "TOTAL INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "actual": "$ 11.855.555.018",
+   "anterior": "$ 5.777.133.800",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1020,
+   "etiqueta": "Otros Ingresos",
+   "actual": "$ 1.294.537",
+   "anterior": "$ 33.497.962",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1021,
+   "etiqueta": "Gastos de Administración",
+   "actual": "$ 186.887.168",
+   "anterior": "$ 153.840.649",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1022,
+   "etiqueta": "Gastos de Ventas",
+   "actual": "$ 10.535.823.348",
+   "anterior": "$ 6.764.839.250",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1023,
+   "etiqueta": "Otros Gastos",
+   "actual": "$ 82.366.696",
+   "anterior": "$ 303.382.764",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1024,
+   "etiqueta": "Gastos Financieros",
+   "actual": "$ -",
+   "anterior": "$ 380.805",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1025,
+   "etiqueta": "UTILIDAD ANTES DE IMPUESTOS",
+   "actual": "$ 1.051.772.343",
+   "anterior": "-$ 1.411.811.706",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1027,
+   "etiqueta": "Diferido",
+   "actual": "$ 10.205.000",
+   "anterior": "$ 10.205.000",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1028,
+   "etiqueta": "Gastos por Impuestos Renta",
+   "actual": "$ 10.205.000",
+   "anterior": "$ 10.205.000",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 1029,
+   "etiqueta": "Ganancia (Perdida) del Periodo",
+   "actual": "$ 1.041.567.343",
+   "anterior": "-$ 1.422.016.706",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 593,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "11.855.555.018",
+   "anterior": "5.777.133.800",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b16",
+   "linea": 594,
+   "etiqueta": "TOTAL",
+   "actual": "11.855.555.018",
+   "anterior": "5.777.133.800",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b17",
+   "linea": 598,
+   "etiqueta": "Cesion de Derechos de TV",
+   "actual": "2.557.762.933",
+   "anterior": "1.397.962.617",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b17",
+   "linea": 599,
+   "etiqueta": "Contratos Publicidad",
+   "actual": "6.388.932.082",
+   "anterior": "1.476.147.059",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b17",
+   "linea": 600,
+   "etiqueta": "Auxilio Transporte Dimayor",
+   "actual": "673.779.270",
+   "anterior": "63.326.696",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b17",
+   "linea": 601,
+   "etiqueta": "Auxilio Arbitraje Dimayor",
+   "actual": "96.254.181",
+   "anterior": "45.207.663",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b17",
+   "linea": 602,
+   "etiqueta": "Auxilio Hotelero Dimayor",
+   "actual": "192.508.363",
+   "anterior": "86.052.888",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b17",
+   "linea": 603,
+   "etiqueta": "Mecanismo de Solidaridad",
+   "actual": "120.000.000",
+   "anterior": "1.078.173.699",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b17",
+   "linea": 604,
+   "etiqueta": "Taquillas",
+   "actual": "1.826.318.189",
+   "anterior": "1.630.263.178",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b17",
+   "linea": 605,
+   "etiqueta": "TOTAL",
+   "actual": "11.855.555.018",
+   "anterior": "5.777.133.800",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de Actividades Ordinarias"
+  },
+  {
+   "bloque": "b18",
+   "linea": 628,
+   "etiqueta": "Otros Ingresos",
+   "actual": "1.294.537",
+   "anterior": "33.497.962",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros Ingresos"
+  },
+  {
+   "bloque": "b18",
+   "linea": 629,
+   "etiqueta": "TOTAL",
+   "actual": "1.294.537",
+   "anterior": "33.497.962",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Otros Ingresos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 642,
+   "etiqueta": "Gastos por beneficios a empleados",
+   "actual": "186.887.168",
+   "anterior": "153.840.649",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Administración"
+  },
+  {
+   "bloque": "b19",
+   "linea": 643,
+   "etiqueta": "TOTAL",
+   "actual": "186.887.168",
+   "anterior": "153.840.649",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Administración"
+  },
+  {
+   "bloque": "b20",
+   "linea": 656,
+   "etiqueta": "Gastos por beneficios a empleados",
+   "actual": "6.616.106.802",
+   "anterior": "4.376.377.251",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 657,
+   "etiqueta": "Honorarios",
+   "actual": "304.369.500",
+   "anterior": "279.056.001",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 658,
+   "etiqueta": "Impuestos",
+   "actual": "243.296.740",
+   "anterior": "264.156.962",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 659,
+   "etiqueta": "Arrendamientos",
+   "actual": "15.574.139",
+   "anterior": "262.580.137",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 660,
+   "etiqueta": "Seguros",
+   "actual": "38.498.220",
+   "anterior": "20.118.225",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 661,
+   "etiqueta": "Servicios",
+   "actual": "478.950.141",
+   "anterior": "454.618.156",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 662,
+   "etiqueta": "Gastos legales",
+   "actual": "385.410.300",
+   "anterior": "64.982.685",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 663,
+   "etiqueta": "Mantenimiento y reparaciones",
+   "actual": "310.000",
+   "anterior": "3.015.704",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 664,
+   "etiqueta": "Adecuacion e instalacion",
+   "actual": "816.568.181",
+   "anterior": "289.216.776",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 665,
+   "etiqueta": "Gastos de Viaje",
+   "actual": "1.408.304.135",
+   "anterior": "494.948.759",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 666,
+   "etiqueta": "Otros Gstos",
+   "actual": "228.435.190",
+   "anterior": "255.768.594",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 667,
+   "etiqueta": "TOTAL",
+   "actual": "10.535.823.348",
+   "anterior": "6.764.839.250",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Ventas"
+  },
+  {
+   "bloque": "b21",
+   "linea": 699,
+   "etiqueta": "Gastos extraordinarios",
+   "actual": "38.083.024",
+   "anterior": "144.706.855",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros Gastos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 700,
+   "etiqueta": "Gastos diversos",
+   "actual": "44.283.671",
+   "anterior": "158.675.907",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros Gastos"
+  },
+  {
+   "bloque": "b21",
+   "linea": 701,
+   "etiqueta": "TOTAL",
+   "actual": "82.366.695",
+   "anterior": "303.382.762",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Otros Gastos"
+  },
+  {
+   "bloque": "b22",
+   "linea": 709,
+   "etiqueta": "Financieros",
+   "actual": "0",
+   "anterior": "380.805",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Gastos Financieros"
+  },
+  {
+   "bloque": "b22",
+   "linea": 710,
+   "etiqueta": "TOTAL",
+   "actual": "0",
+   "anterior": "380.805",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Gastos Financieros"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 1029,
+  "actual": "$ 1.041.567.343",
+  "anterior": "-$ 1.422.016.706"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se acepta la diferencia entre 'Otros Gastos' del estado ($ 82.366.696, L1023) y el TOTAL de la nota (82.366.695, L701) como redondeo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Otros Gastos",
+   "texto": "Diferencia de 1 unidad en 2025 y 2 en 2024 (L1023 vs L701), atribuible a redondeo.",
+   "bloques": [
+    "b25",
+    "b21"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se carga una sola vez el cuadro de b16 (L593-L594), que es resumen de un renglón ya desglosado en b17?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Ingresos de Actividades Ordinarias",
+   "texto": "b16 L593-L594 repite el renglón del estado y b17 reproduce las mismas líneas antes del desglose L598-L605.",
+   "bloques": [
+    "b16",
+    "b17"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado no imprime total de gastos ni total de ingresos que incluya Otros Ingresos; solo el subtotal de actividades ordinarias (L1019). El impuesto corriente (L1026) no tiene importe. La variación % del TOTAL en L667 (814,56%) parece errónea pero no afecta importes."
+}

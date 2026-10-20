@@ -1,0 +1,180 @@
+{
+  "md": "Clubes/Colombia/Alianza FC/estados-financieros-2023.md",
+  "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+  "club": "alianza-fc",
+  "year": 2023,
+  "generatedAt": "2026-10-20T19:46:04.419Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        14174.134648
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros Ingresos",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        130.486351
+      ],
+      "glosa": "Otros Ingresos"
+    },
+    {
+      "label": "Gastos de personal",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        1711.470936
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Honorarios",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        155.981205
+      ],
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Impuestos",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        256.728447
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Arriendos",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        10.194859
+      ],
+      "glosa": "Arriendos"
+    },
+    {
+      "label": "seguros",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        23.572277
+      ],
+      "glosa": "seguros"
+    },
+    {
+      "label": "Servicios",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        34.035571
+      ],
+      "glosa": "Servicios"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        27.402747
+      ],
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenimiento y reparaciones",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        2.272533
+      ],
+      "glosa": "Mantenimiento y reparaciones"
+    },
+    {
+      "label": "Diversos",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        3264.244042
+      ],
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        114.253422
+      ],
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos de personal",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos Deportivos\"",
+      "values": [
+        3513.100819
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Honorarios",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos Deportivos\"",
+      "values": [
+        173.359999
+      ],
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Servicios",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos Deportivos\"",
+      "values": [
+        346.387164
+      ],
+      "glosa": "Servicios"
+    },
+    {
+      "label": "Gastos de Viaje",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos Deportivos\"",
+      "values": [
+        618.97871
+      ],
+      "glosa": "Gastos de Viaje"
+    },
+    {
+      "label": "Amortizaciones derechos deportivos",
+      "lado": "expense",
+      "page": 15,
+      "section": "nota que desglosa \"Gastos Deportivos\"",
+      "values": [
+        291.439505
+      ],
+      "glosa": "Amortizaciones derechos deportivos"
+    }
+  ]
+}

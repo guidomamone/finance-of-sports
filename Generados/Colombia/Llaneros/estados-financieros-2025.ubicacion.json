@@ -1,0 +1,250 @@
+{
+ "pdf": "Clubes/Colombia/Llaneros/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Llaneros/estados-financieros-2025.md",
+ "mdSha1": "08a54df2db47f21c7e1546a10832614eeac6146e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:43:41.272Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    40,
+    46
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    166,
+    171
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    352,
+    356
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    362,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    382,
+    385
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    389,
+    394
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    428,
+    432
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    438,
+    441
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    453,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    462,
+    465
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    502,
+    512
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 10,
+   "lineas": [
+    518,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 10,
+   "lineas": [
+    527,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 10,
+   "lineas": [
+    545,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 11,
+   "lineas": [
+    577,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 11,
+   "lineas": [
+    591,
+    594
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    596,
+    605
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    626,
+    629
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 12,
+   "lineas": [
+    640,
+    643
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 12,
+   "lineas": [
+    654,
+    667
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 13,
+   "lineas": [
+    697,
+    701
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 13,
+   "lineas": [
+    707,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    954,
+    967
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 17,
+   "lineas": [
+    973,
+    993
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    1016,
+    1029
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 20,
+   "lineas": [
+    1051,
+    1063
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 21,
+   "lineas": [
+    1081,
+    1109
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b25"
+ ],
+ "notas_ingresos": [
+  "b16",
+  "b17",
+  "b18"
+ ],
+ "notas_gastos": [
+  "b19",
+  "b20",
+  "b21",
+  "b22"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "No hay frase de escala; los importes se imprimen con decimales (ej. 'TOTAL ACTIVOS (2025): 5.256.231.659,38'), por lo que están en pesos.",
+ "moneda": "COP",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultado integral individual en b25 (pág. 18). Notas de ingresos: b16 (total de ingresos ordinarios), b17 (desglose de ingresos ordinarios) y b18 (otros ingresos). Notas de gastos: b19 (gastos de administración), b20 (gastos de personal deportivo y otros), b21 (otros gastos) y b22 (gastos financieros). Se descartaron el balance, el estado de cambios en el patrimonio y el flujo de efectivo."
+}

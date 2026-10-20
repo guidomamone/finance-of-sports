@@ -1,0 +1,230 @@
+{
+  "md": "Clubes/Colombia/Llaneros/estados-financieros-2025.md",
+  "pdf": "Clubes/Colombia/Llaneros/estados-financieros-2025.pdf",
+  "club": "llaneros",
+  "year": 2025,
+  "generatedAt": "2026-10-20T19:46:04.374Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Cesion de Derechos de TV",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Ingresos de Actividades Ordinarias\"",
+      "values": [
+        2557.762933
+      ],
+      "glosa": "Cesion de Derechos de TV"
+    },
+    {
+      "label": "Contratos Publicidad",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Ingresos de Actividades Ordinarias\"",
+      "values": [
+        6388.932082
+      ],
+      "glosa": "Contratos Publicidad"
+    },
+    {
+      "label": "Auxilio Transporte Dimayor",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Ingresos de Actividades Ordinarias\"",
+      "values": [
+        673.77927
+      ],
+      "glosa": "Auxilio Transporte Dimayor"
+    },
+    {
+      "label": "Auxilio Arbitraje Dimayor",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Ingresos de Actividades Ordinarias\"",
+      "values": [
+        96.254181
+      ],
+      "glosa": "Auxilio Arbitraje Dimayor"
+    },
+    {
+      "label": "Auxilio Hotelero Dimayor",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Ingresos de Actividades Ordinarias\"",
+      "values": [
+        192.508363
+      ],
+      "glosa": "Auxilio Hotelero Dimayor"
+    },
+    {
+      "label": "Mecanismo de Solidaridad",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Ingresos de Actividades Ordinarias\"",
+      "values": [
+        120
+      ],
+      "glosa": "Mecanismo de Solidaridad"
+    },
+    {
+      "label": "Taquillas",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Ingresos de Actividades Ordinarias\"",
+      "values": [
+        1826.318189
+      ],
+      "glosa": "Taquillas"
+    },
+    {
+      "label": "Otros Ingresos",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        1.294537
+      ],
+      "glosa": "Otros Ingresos"
+    },
+    {
+      "label": "Gastos de Administración",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        186.887168
+      ],
+      "glosa": "Gastos de Administración"
+    },
+    {
+      "label": "Gastos por beneficios a empleados",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        6616.106802
+      ],
+      "glosa": "Gastos por beneficios a empleados"
+    },
+    {
+      "label": "Honorarios",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        304.3695
+      ],
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Impuestos",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        243.29674
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Arrendamientos",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        15.574139
+      ],
+      "glosa": "Arrendamientos"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        38.49822
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Servicios",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        478.950141
+      ],
+      "glosa": "Servicios"
+    },
+    {
+      "label": "Gastos legales",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        385.4103
+      ],
+      "glosa": "Gastos legales"
+    },
+    {
+      "label": "Mantenimiento y reparaciones",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        0.31
+      ],
+      "glosa": "Mantenimiento y reparaciones"
+    },
+    {
+      "label": "Adecuacion e instalacion",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        816.568181
+      ],
+      "glosa": "Adecuacion e instalacion"
+    },
+    {
+      "label": "Gastos de Viaje",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        1408.304135
+      ],
+      "glosa": "Gastos de Viaje"
+    },
+    {
+      "label": "Otros Gstos",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Gastos de Ventas\"",
+      "values": [
+        228.43519
+      ],
+      "glosa": "Otros Gstos"
+    },
+    {
+      "label": "Gastos extraordinarios",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Otros Gastos\"",
+      "values": [
+        38.083024
+      ],
+      "glosa": "Gastos extraordinarios"
+    },
+    {
+      "label": "Gastos diversos",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Otros Gastos\"",
+      "values": [
+        44.283671
+      ],
+      "glosa": "Gastos diversos"
+    }
+  ]
+}

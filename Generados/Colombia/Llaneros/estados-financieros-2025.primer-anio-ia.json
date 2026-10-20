@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Colombia/Llaneros/estados-financieros-2025.md",
+ "clave": "85fd5a5824d06e8a51052588442721c389fa5c05",
+ "generado": "2026-10-20T19:46:08.692Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre los renglones del estado sin problemas. Los ingresos ordinarios (L1018) se abren en la nota L598-L604 y sus partes suman 11.855,56. Los gastos de ventas (L1022) se abren en L656-L666 y suman 10.535,82. Los otros gastos (L1023) se abren en L699-L700 y suman 82,37. Otros ingresos, gastos de administración, gastos financieros (en cero) e impuesto diferido se cargan directamente del estado."
+ }
+}
