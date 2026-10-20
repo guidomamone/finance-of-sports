@@ -29,6 +29,14 @@ const mancityGbRevenueLinesByYear = {
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:5.456, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:121.72, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Matchday', normalizedCategory:'matchday_competition', amountNative:54.482, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting - UEFA', normalizedCategory:'broadcasting', amountNative:90.499, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting - all other', normalizedCategory:'broadcasting', amountNative:158.561, disclosureLevel:'aggregated' },
+    { rawLabel:'Other commercial activities', normalizedCategory:'sponsorship_commercial', amountNative:309.472, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:6.068, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:67.699, disclosureLevel:'aggregated' },
+  ],
 };
 
 const mancityGbExpenseLinesByYear = {
@@ -74,6 +82,18 @@ const mancityGbExpenseLinesByYear = {
     { rawLabel:'Amortisation and impairment of intangible assets', normalizedCategory:'player_amortisation', amountNative:-145.448, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of property, plant and equipment', normalizedCategory:'other_expenses', amountNative:-1.236, disclosureLevel:'aggregated' },
     { rawLabel:'Owned', normalizedCategory:'depreciation', amountNative:-10.613, disclosureLevel:'aggregated' },
+    { rawLabel:'Leased', normalizedCategory:'depreciation', amountNative:-1.452, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Direct cost of sales and consumables', normalizedCategory:'admin_general_expense', amountNative:-8.587, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneration of Auditors (audit fees)', normalizedCategory:'admin_general_expense', amountNative:-0.052, disclosureLevel:'aggregated' },
+    { rawLabel:'Other external charges', normalizedCategory:'other_expenses', amountNative:-124.69, disclosureLevel:'aggregated' },
+    { rawLabel:'Wages and salaries', normalizedCategory:'wages_squad', amountNative:-308.675, disclosureLevel:'aggregated' },
+    { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-44.35, disclosureLevel:'aggregated' },
+    { rawLabel:'Other pension costs', normalizedCategory:'wages_squad', amountNative:-0.856, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and impairment of intangible assets', normalizedCategory:'player_amortisation', amountNative:-140.708, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of property, plant and equipment', normalizedCategory:'other_expenses', amountNative:-1.119, disclosureLevel:'aggregated' },
+    { rawLabel:'Owned', normalizedCategory:'depreciation', amountNative:-9.999, disclosureLevel:'aggregated' },
     { rawLabel:'Leased', normalizedCategory:'depreciation', amountNative:-1.452, disclosureLevel:'aggregated' },
   ],
 };
@@ -137,6 +157,21 @@ const mancityGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:839.944, officialTotalExpenses:753.862, officialPAT:80.371,
   },
+  2022: {
+    currency:'GBP', fxRef:'GBP@2022-06-30',
+    sourceId:'mancity-gb-full-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-4.567, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.778},
+      {label:'Interest payable and similar charges', value:-5.345},
+      {label:'Taxation', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:686.781, officialTotalExpenses:640.488, officialPAT:41.726,
+  },
 };
 
 const mancityGbPresupuestoOverlayByYear = {};
@@ -176,6 +211,11 @@ Object.assign(sources, {
   'mancity-gb-full-accounts-2022-23': {
     id:'mancity-gb-full-accounts-2022-23', clubId:'mancity-gb',
     title:'Manchester City Football Club Limited — mancity-full-accounts-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'mancity-gb-full-accounts-2021-22': {
+    id:'mancity-gb-full-accounts-2021-22', clubId:'mancity-gb',
+    title:'Manchester City Football Club Limited — mancity-full-accounts-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

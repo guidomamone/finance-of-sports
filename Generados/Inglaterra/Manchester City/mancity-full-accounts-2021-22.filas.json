@@ -1,0 +1,529 @@
+{
+ "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.md",
+ "mdSha1": "f40ebf14a702e28815709e278c3ffea8531073b0",
+ "ubicacionSha1": "1057ec65141d48243609d99930e5a17b5094f2b7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:39:27.831Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b6",
+   "b10"
+  ],
+  "notas_gastos": [
+   "b7",
+   "b9",
+   "b11",
+   "b12"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "miles",
+   "evidencia": "Total 2022 £000"
+  },
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "2022 £000"
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "2022 £000"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "2022 £000"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "2022 £000"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "2022 £000"
+  },
+  {
+   "bloque": "b12",
+   "escala": "miles",
+   "evidencia": "2022 £000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 522,
+   "etiqueta": "Revenue",
+   "actual": "613,014",
+   "anterior": "569,849",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 523,
+   "etiqueta": "Other operating income",
+   "actual": "6,068",
+   "anterior": "1,244",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 524,
+   "etiqueta": "Operating expenses",
+   "actual": "(640,488)",
+   "anterior": "(629,837)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 525,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "(21,406)",
+   "anterior": "(58,744)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 526,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "67,699",
+   "anterior": "68,545",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 527,
+   "etiqueta": "Profit/(loss) before interest and taxation",
+   "actual": "46,293",
+   "anterior": "9,801",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 528,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "778",
+   "anterior": "1,525",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 529,
+   "etiqueta": "Interest payable and similar charges",
+   "actual": "(5,345)",
+   "anterior": "(6,278)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 530,
+   "etiqueta": "Profit on ordinary activities before taxation",
+   "actual": "41,726",
+   "anterior": "5,048",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 531,
+   "etiqueta": "Taxation",
+   "actual": "-",
+   "anterior": "(2,681)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 532,
+   "etiqueta": "Profit on ordinary activities after taxation",
+   "actual": "41,726",
+   "anterior": "2,367",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 1024,
+   "etiqueta": "Matchday",
+   "actual": "54,482",
+   "anterior": "732",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1025,
+   "etiqueta": "Broadcasting - UEFA",
+   "actual": "90,499",
+   "anterior": "114,765",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1026,
+   "etiqueta": "Broadcasting - all other",
+   "actual": "158,561",
+   "anterior": "182,683",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1027,
+   "etiqueta": "Other commercial activities",
+   "actual": "309,472",
+   "anterior": "271,669",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1028,
+   "etiqueta": "",
+   "actual": "613,014",
+   "anterior": "569,849",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1096,
+   "etiqueta": "Bank interest",
+   "actual": "91",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1097,
+   "etiqueta": "Other",
+   "actual": "687",
+   "anterior": "1,525",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1098,
+   "etiqueta": "",
+   "actual": "778",
+   "anterior": "1,525",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1041,
+   "etiqueta": "Other operating income",
+   "actual": "6,068",
+   "anterior": "1,244",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1042,
+   "etiqueta": "",
+   "actual": "6,068",
+   "anterior": "1,224",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1044,
+   "etiqueta": "Direct cost of sales and consumables",
+   "actual": "8,587",
+   "anterior": "67",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1045,
+   "etiqueta": "Remuneration of Auditors (audit fees)",
+   "actual": "52",
+   "anterior": "60",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1046,
+   "etiqueta": "Other external charges",
+   "actual": "124,690",
+   "anterior": "99,766",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1047,
+   "etiqueta": "Employee costs (Note 7)",
+   "actual": "353,881",
+   "anterior": "354,689",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1048,
+   "etiqueta": "Amortisation and impairment of intangible assets (Note 11)",
+   "actual": "140,708",
+   "anterior": "164,427",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1049,
+   "etiqueta": "Profit on disposal of property, plant and equipment",
+   "actual": "1,119",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1051,
+   "etiqueta": "Owned (Note 12)",
+   "actual": "9,999",
+   "anterior": "9,376",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1052,
+   "etiqueta": "Leased (Note 13)",
+   "actual": "1,452",
+   "anterior": "1,452",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1053,
+   "etiqueta": "",
+   "actual": "640,488",
+   "anterior": "629,837",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1087,
+   "etiqueta": "Wages and salaries",
+   "actual": "308,675",
+   "anterior": "310,737",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employee costs (Note 7)"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1088,
+   "etiqueta": "Social security costs",
+   "actual": "44,350",
+   "anterior": "42,502",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employee costs (Note 7)"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1089,
+   "etiqueta": "Other pension costs",
+   "actual": "856",
+   "anterior": "1,450",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employee costs (Note 7)"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1090,
+   "etiqueta": "",
+   "actual": "353,881",
+   "anterior": "354,689",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Employee costs (Note 7)"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1104,
+   "etiqueta": "Bank loans and overdrafts",
+   "actual": "1",
+   "anterior": "1,155",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1105,
+   "etiqueta": "Interest expense on leases",
+   "actual": "5,344",
+   "anterior": "5,123",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1106,
+   "etiqueta": "",
+   "actual": "5,345",
+   "anterior": "6,278",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1123,
+   "etiqueta": "UK corporation tax at 19% (2021: 19%) on profits for the period",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1124,
+   "etiqueta": "Total current tax charge",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1126,
+   "etiqueta": "Impact of change in UK corporation tax rate",
+   "actual": "-",
+   "anterior": "2,681",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1127,
+   "etiqueta": "Total deferred tax charge",
+   "actual": "-",
+   "anterior": "2,681",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1128,
+   "etiqueta": "Total tax charge",
+   "actual": "-",
+   "anterior": "2,681",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Taxation"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": {
+  "linea": 524,
+  "actual": "(640,488)"
+ },
+ "resultado": {
+  "linea": 532,
+  "actual": "41,726",
+  "anterior": "2,367"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Profit on disposal of property, plant and equipment' (L1049, 1,119) como gasto, tal como suma en el total de 640,488?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses",
+   "texto": "Pese a llamarse 'Profit', el importe suma para llegar a 640,488 en L1053; parece un error de etiqueta (posible pérdida).",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se toma 1,244 (L1041 y L523) como valor 2021 de Other operating income, ignorando el 1,224 del subtotal L1042?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Other operating income",
+   "texto": "El subtotal 2021 impreso en L1042 (1,224) difiere en 20 del renglón y del estado (1,244); probable error tipográfico.",
+   "bloques": [
+    "b7",
+    "b2"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta que la columna pedida 'Total 2022' corresponde al ejercicio cerrado el 30-06-2022 y no al 2023-03-30 indicado?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "L518 dice 'for the year ended 30 June 2022', no coincide con el cierre 2023-03-30 indicado.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala £000 en todos los bloques. Se omitió el bloque de conciliación 'Operating loss' (L1055-L1057) por ser una reexpresión del resultado operativo ya cargado en L525. No hay total de ingresos impreso. En 2021 la amortización de b7 (164,427) difiere de L1056 (145,697) por incluir deterioro."
+}
