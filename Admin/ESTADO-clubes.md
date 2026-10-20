@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 319 clubes, 1284 ejercicios, 23 países.
+TOTAL: 319 clubes, 1285 ejercicios, 23 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -51,7 +51,7 @@ ARGENTINA (19)
   Vélez Sarsfield                11 ejercicios (2014/2015 a 2024/2025), balance, ARS
 
 AT (1)
-  Rapid Wien  6 ejercicios (2012/2013, 2013/2014, 2014/2015, 2015/2016, 2017/2018, 2023/2024), balance, EUR, sin deuda/caja
+  Rapid Wien  7 ejercicios (2012/2013, 2013/2014, 2014/2015, 2015/2016, 2017/2018, 2019/2020, 2023/2024), balance, EUR, sin deuda/caja
 
 BE (23)
   Anderlecht            1 ejercicio (2024/2025), balance, EUR
