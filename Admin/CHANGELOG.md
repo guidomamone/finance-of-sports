@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 843 — Un dato de contexto sin fuente ya no frena (2026-10-20)
+
+* REGLA de Guido: estadio, sponsor, liga o gestión sin fuente pública quedan en null con la marca `sin-fuente` y el año se carga igual.
+  298 b3: `estadio-sponsor.mjs` acepta la marca (con dónde se buscó) y la segunda belga pide solo estadio (votación de Patro Eisden 2015).
+  Destraba 6 ejercicios belgas. 298 a3: `cargar.mjs` avisa cuando carga un caché de verificar más viejo que el script.
+* Votaciones: Patro Eisden 2013 queda con liga null (3 a 0); 2015, opción C elegida por Guido.
+
 ## Versión 842 — Auditoría de código y documentos; lote 111 y 112 (2026-10-20)
 
 * Docs 1: auditoría de los ejes `codigo` y `docs` (sin P0; `auditAll()` OK en 313 clubes) e inventario de lo que cambia en skills y

@@ -234,25 +234,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    Lote 101: Luzern 2019 y 2022 y Go Ahead Eagles 2021-2024 cargados; Basel espera la 324; Luzern 2018 y 2024 frenan por estadio o
    sponsor, 2020 y 2023 por categorías en cola (y el tie-out de gastos de 2023). Sigue el lote 102 (Lommel, Lierse, Patro Eisden).
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
-   b3) `estadio-sponsor.mjs`: aceptar la marca `sin-fuente` de `tools/contexto-manual.json` como dato resuelto (hoy un sponsor null cuenta
-   como falta y frena), y sumar `be-challengerproleague` a `SOLO_ESTADIO`. REGLA en CONVENCIONES-DATOS ("un dato de contexto sin fuente
-   pública queda en null"). Destraba Patro Eisden 2015.
-   a3) cachés viejos que se cargan en silencio: `cargar.mjs` lee el `.verificacion.json` y no avisa si es anterior a un cambio de
-   `tools/verificar.mjs` (St. Gallen 2019 y 2022 se cargaron con un caché previo a la 298 ai). Un aviso al cargar, o que
-   `medir-cargar --contra-sitio` lo diga.
-   vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
-   absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
-   grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
-   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. aa) `tools/worktree.mjs mergear` deja sin commitear `data/sponsors.js` y `data/sponsors-indice.js`, que regenera
-   `generate-sponsors.js`: sumarlos a su lista de `git add` (el commit siguiente frena por asset-v-sin-subir).
-   Aviso para la próxima corrida grande: 368 documentos viejos sin tablas (221 en "revisar", 102 en "pendiente-segunda-voz", 38 en
-   "sin-tablas") se rehacen con Mistral (~US$ 83 más la validación) apenas pasen por resolver-inventario; el ensayo ya lo cotiza.
-   RWDM 2019: el registro
-   tiene el cierre 2019-11-30 y el balance va del 30/11/2018 al 30/06/2019 (como la f). Escocia, Gales e Irlanda del Norte se ven como GB
-   ("Inglaterra") en el selector: decisión de pantalla pendiente. g2) partir en la cola cualquier fila según su nota (otros países, el 66A de Lommel SK
-   2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
-   frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
-   entre una sola.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Medido otra vez el 2026-10-19 con 1.011 club-años (`node tools/estimar.mjs --medir --detalle`): sigue en 50%,
