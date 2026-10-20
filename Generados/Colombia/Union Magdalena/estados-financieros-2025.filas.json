@@ -2,9 +2,9 @@
  "pdf": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.pdf",
  "md": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.md",
  "mdSha1": "700a1be79d0e076f555008d7640de802b448b2f1",
- "ubicacionSha1": "91be32a624a93a8b36a3809dc5865c31fe7de5a7",
+ "ubicacionSha1": "1156b92842a9d5c53af38f43ed22098363c2fad3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:42:16.747Z",
+ "generado": "2026-10-19T18:55:31.395Z",
  "ubicacion": {
   "estado": [
    "b3"
@@ -29,38 +29,38 @@
   },
   {
    "bloque": "b38",
-   "escala": "no se sabe",
-   "evidencia": "La nota no indica escala; coincide con el estado (miles)"
+   "escala": "miles",
+   "evidencia": "Sin frase propia; totales coinciden con el estado en miles (L1397)"
   },
   {
    "bloque": "b39",
-   "escala": "no se sabe",
-   "evidencia": "La nota no indica escala; coincide con el estado (miles)"
+   "escala": "miles",
+   "evidencia": "Sin frase propia; total coincide con el estado (L1422)"
   },
   {
    "bloque": "b43",
-   "escala": "no se sabe",
-   "evidencia": "La nota no indica escala; coincide con el estado (miles)"
+   "escala": "miles",
+   "evidencia": "Sin frase propia; total coincide con el estado (L1506)"
   },
   {
    "bloque": "b40",
-   "escala": "no se sabe",
-   "evidencia": "La nota no indica escala; coincide con el estado (miles)"
+   "escala": "miles",
+   "evidencia": "Sin frase propia; total coincide con el estado (L1455)"
   },
   {
    "bloque": "b41",
-   "escala": "no se sabe",
-   "evidencia": "La nota no indica escala; coincide con el estado (miles)"
+   "escala": "miles",
+   "evidencia": "Sin frase propia; total coincide con el estado (L1462)"
   },
   {
    "bloque": "b42",
-   "escala": "no se sabe",
-   "evidencia": "La nota no indica escala; coincide con el estado (miles)"
+   "escala": "miles",
+   "evidencia": "Sin frase propia; total coincide con el estado (L1496)"
   },
   {
    "bloque": "b44",
-   "escala": "no se sabe",
-   "evidencia": "La nota no indica escala; coincide con el estado (miles)"
+   "escala": "miles",
+   "evidencia": "Sin frase propia; total coincide con el estado (L1523)"
   }
  ],
  "filas": [
@@ -68,8 +68,8 @@
    "bloque": "b3",
    "linea": 122,
    "etiqueta": "Ingresos de Actividaes Ordinarias",
-   "actual": "9,735,619",
-   "anterior": null,
+   "actual": "11,396,578",
+   "anterior": "9,735,619",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
@@ -78,8 +78,8 @@
    "bloque": "b3",
    "linea": 123,
    "etiqueta": "Beneficio Bruto",
-   "actual": "9,735,619",
-   "anterior": null,
+   "actual": "11,396,578",
+   "anterior": "9,735,619",
    "tipo": "subtotal",
    "lado": "resultado",
    "detalla_a": null
@@ -88,8 +88,8 @@
    "bloque": "b3",
    "linea": 125,
    "etiqueta": "Otros Ingresos",
-   "actual": "1,496,386",
-   "anterior": null,
+   "actual": "369,618",
+   "anterior": "1,496,386",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
@@ -98,8 +98,8 @@
    "bloque": "b3",
    "linea": 126,
    "etiqueta": "Gastos de Venta",
-   "actual": "8,433,786",
-   "anterior": null,
+   "actual": "11,721,102",
+   "anterior": "8,433,786",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
@@ -108,8 +108,8 @@
    "bloque": "b3",
    "linea": 127,
    "etiqueta": "Costos de Venta",
-   "actual": "202,141",
-   "anterior": null,
+   "actual": "122,101",
+   "anterior": "202,141",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
@@ -118,8 +118,8 @@
    "bloque": "b3",
    "linea": 128,
    "etiqueta": "Gastos de Administracion y otros gastos",
-   "actual": "2,028,825",
-   "anterior": null,
+   "actual": "2,092,300",
+   "anterior": "2,028,825",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
@@ -128,8 +128,8 @@
    "bloque": "b3",
    "linea": 129,
    "etiqueta": "Total Ingresos o Gastos de Operación",
-   "actual": "-9,168,365",
-   "anterior": null,
+   "actual": "-13,565,885",
+   "anterior": "-9,168,365",
    "tipo": "subtotal",
    "lado": "otro",
    "detalla_a": null
@@ -138,8 +138,8 @@
    "bloque": "b3",
    "linea": 130,
    "etiqueta": "Ganancia por Actividades de Operación",
-   "actual": "567,254",
-   "anterior": null,
+   "actual": "-2,169,307",
+   "anterior": "567,254",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
@@ -148,8 +148,8 @@
    "bloque": "b3",
    "linea": 132,
    "etiqueta": "Ingresos Financieros",
-   "actual": "30,333",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "30,333",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
@@ -158,8 +158,8 @@
    "bloque": "b3",
    "linea": 133,
    "etiqueta": "Gastos Financieros",
-   "actual": "267,820",
-   "anterior": null,
+   "actual": "179,738",
+   "anterior": "267,820",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
@@ -168,8 +168,8 @@
    "bloque": "b3",
    "linea": 134,
    "etiqueta": "Costo Financiero Neto",
-   "actual": "-237,487",
-   "anterior": null,
+   "actual": "-179,738",
+   "anterior": "-237,487",
    "tipo": "subtotal",
    "lado": "financiero",
    "detalla_a": null
@@ -178,8 +178,8 @@
    "bloque": "b3",
    "linea": 135,
    "etiqueta": "Ganancia o Perdidas Antes de Impuestos",
-   "actual": "329,767",
-   "anterior": null,
+   "actual": "-2,349,045",
+   "anterior": "329,767",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
@@ -188,8 +188,8 @@
    "bloque": "b3",
    "linea": 137,
    "etiqueta": "Gastos (-Ingreso) por Correccion Impuesto Cte",
-   "actual": "0",
-   "anterior": null,
+   "actual": "22,834",
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "impuesto",
    "detalla_a": null
@@ -198,8 +198,8 @@
    "bloque": "b3",
    "linea": 138,
    "etiqueta": "Impuesto de Renta Corriente",
-   "actual": "152,495",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "152,495",
    "tipo": "renglon",
    "lado": "impuesto",
    "detalla_a": null
@@ -208,8 +208,8 @@
    "bloque": "b3",
    "linea": 139,
    "etiqueta": "Total Impuestos a la Ganancias",
-   "actual": "152,495",
-   "anterior": null,
+   "actual": "22,834",
+   "anterior": "152,495",
    "tipo": "subtotal",
    "lado": "impuesto",
    "detalla_a": null
@@ -218,8 +218,8 @@
    "bloque": "b3",
    "linea": 140,
    "etiqueta": "(Pérdida) Ganancia procedente de operaciones continuadas",
-   "actual": "177,272",
-   "anterior": null,
+   "actual": "-2,371,879",
+   "anterior": "177,272",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
@@ -229,17 +229,27 @@
    "linea": 141,
    "etiqueta": "Otro Resultado Integral",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 142,
+   "etiqueta": "Resultado Integral Total",
+   "actual": "-2,371,879",
+   "anterior": "-2,371,879",
+   "tipo": "resultado",
+   "lado": "resultado",
    "detalla_a": null
   },
   {
    "bloque": "b38",
    "linea": 1385,
    "etiqueta": "Taquilla - Venta de Boletería",
-   "actual": "1,564,483",
-   "anterior": null,
+   "actual": "1,542,620",
+   "anterior": "1,564,483",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -248,8 +258,8 @@
    "bloque": "b38",
    "linea": 1386,
    "etiqueta": "Publicidad y Propaganda",
-   "actual": "764,772",
-   "anterior": null,
+   "actual": "1,961,092",
+   "anterior": "764,772",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -259,7 +269,7 @@
    "linea": 1387,
    "etiqueta": "Prestamo Derechos Deportivos",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -268,8 +278,8 @@
    "bloque": "b38",
    "linea": 1388,
    "etiqueta": "Participación Dimayor tv",
-   "actual": "5,885,367",
-   "anterior": null,
+   "actual": "6,157,191",
+   "anterior": "5,885,367",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -278,8 +288,8 @@
    "bloque": "b38",
    "linea": 1389,
    "etiqueta": "Auxilios Dimayor",
-   "actual": "856,577",
-   "anterior": null,
+   "actual": "1,204,633",
+   "anterior": "856,577",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -289,7 +299,7 @@
    "linea": 1390,
    "etiqueta": "Reintegros Dimayor",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -299,7 +309,7 @@
    "linea": 1391,
    "etiqueta": "Amortización de Ingreso Dimayor",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -308,8 +318,8 @@
    "bloque": "b38",
    "linea": 1392,
    "etiqueta": "Participación federación colombiana de futbol",
-   "actual": "544,931",
-   "anterior": null,
+   "actual": "674,436",
+   "anterior": "544,931",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -318,8 +328,8 @@
    "bloque": "b38",
    "linea": 1393,
    "etiqueta": "Venta de Artículos Deportivos",
-   "actual": "323,836",
-   "anterior": null,
+   "actual": "224,950",
+   "anterior": "323,836",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -328,8 +338,8 @@
    "bloque": "b38",
    "linea": 1394,
    "etiqueta": "Otros ingresos de partido",
-   "actual": "5,190",
-   "anterior": null,
+   "actual": "3,808",
+   "anterior": "5,190",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -339,7 +349,7 @@
    "linea": 1395,
    "etiqueta": "Indemnización y Cotribución por formación",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -348,8 +358,8 @@
    "bloque": "b38",
    "linea": 1396,
    "etiqueta": "Devoluciones en Servicios",
-   "actual": "-209,538",
-   "anterior": null,
+   "actual": "-372,151",
+   "anterior": "-209,538",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -358,8 +368,8 @@
    "bloque": "b38",
    "linea": 1397,
    "etiqueta": "TOTALES",
-   "actual": "9,735,619",
-   "anterior": null,
+   "actual": "11,396,578",
+   "anterior": "9,735,619",
    "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Ingresos de Actividaes Ordinarias"
@@ -368,8 +378,8 @@
    "bloque": "b39",
    "linea": 1413,
    "etiqueta": "Recuperaciones",
-   "actual": "69,746",
-   "anterior": null,
+   "actual": "126,206",
+   "anterior": "69,746",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Otros Ingresos"
@@ -379,17 +389,17 @@
    "linea": 1414,
    "etiqueta": "Diferencia en Cambio",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
-   "lado": "ingreso",
+   "lado": "financiero",
    "detalla_a": "Otros Ingresos"
   },
   {
    "bloque": "b39",
    "linea": 1415,
    "etiqueta": "Descuento Comerciales",
-   "actual": "341",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "341",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Otros Ingresos"
@@ -398,8 +408,8 @@
    "bloque": "b39",
    "linea": 1416,
    "etiqueta": "Otros Arriendos",
-   "actual": "1,296,595",
-   "anterior": null,
+   "actual": "200,000",
+   "anterior": "1,296,595",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Otros Ingresos"
@@ -409,7 +419,7 @@
    "linea": 1417,
    "etiqueta": "Otras Comisiones",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Otros Ingresos"
@@ -418,8 +428,8 @@
    "bloque": "b39",
    "linea": 1418,
    "etiqueta": "Utilidad en Venta de Prop planta y Equipo",
-   "actual": "89,709",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "89,709",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Otros Ingresos"
@@ -428,8 +438,8 @@
    "bloque": "b39",
    "linea": 1419,
    "etiqueta": "Utilidad En Venta de Otros Bienes",
-   "actual": "5,166",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "5,166",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Otros Ingresos"
@@ -438,8 +448,8 @@
    "bloque": "b39",
    "linea": 1421,
    "etiqueta": "Diversos",
-   "actual": "54,829",
-   "anterior": null,
+   "actual": "43,411",
+   "anterior": "54,829",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": "Otros Ingresos"
@@ -448,8 +458,8 @@
    "bloque": "b39",
    "linea": 1422,
    "etiqueta": "TOTALES",
-   "actual": "1,496,386",
-   "anterior": null,
+   "actual": "369,618",
+   "anterior": "1,496,386",
    "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Otros Ingresos"
@@ -458,8 +468,8 @@
    "bloque": "b43",
    "linea": 1504,
    "etiqueta": "Ingresos por Intereses",
-   "actual": "30,333",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "30,333",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": "Ingresos Financieros"
@@ -468,8 +478,8 @@
    "bloque": "b43",
    "linea": 1505,
    "etiqueta": "Gastos por Intereses",
-   "actual": "267,820",
-   "anterior": null,
+   "actual": "179,738",
+   "anterior": "267,820",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": "Gastos Financieros"
@@ -478,8 +488,8 @@
    "bloque": "b43",
    "linea": 1506,
    "etiqueta": "Total Ingresos Y Gastos Financieros",
-   "actual": "-237,487",
-   "anterior": null,
+   "actual": "-179,738",
+   "anterior": "-237,487",
    "tipo": "subtotal",
    "lado": "financiero",
    "detalla_a": "Costo Financiero Neto"
@@ -488,8 +498,8 @@
    "bloque": "b40",
    "linea": 1436,
    "etiqueta": "Gastos del Personal",
-   "actual": "4,287,831",
-   "anterior": null,
+   "actual": "7,492,134",
+   "anterior": "4,287,831",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -498,8 +508,8 @@
    "bloque": "b40",
    "linea": 1437,
    "etiqueta": "Impuestos",
-   "actual": "149,582",
-   "anterior": null,
+   "actual": "113,952",
+   "anterior": "149,582",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -508,8 +518,8 @@
    "bloque": "b40",
    "linea": 1438,
    "etiqueta": "Arriendos",
-   "actual": "391,399",
-   "anterior": null,
+   "actual": "622,870",
+   "anterior": "391,399",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -518,8 +528,8 @@
    "bloque": "b40",
    "linea": 1439,
    "etiqueta": "Contribuciones y Afiliaciones",
-   "actual": "1,280,311",
-   "anterior": null,
+   "actual": "1,494,847",
+   "anterior": "1,280,311",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -529,7 +539,7 @@
    "linea": 1440,
    "etiqueta": "Seguros",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -538,8 +548,8 @@
    "bloque": "b40",
    "linea": 1441,
    "etiqueta": "Servicios",
-   "actual": "79,803",
-   "anterior": null,
+   "actual": "216,512",
+   "anterior": "79,803",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -548,8 +558,8 @@
    "bloque": "b40",
    "linea": 1442,
    "etiqueta": "Gastos Legales",
-   "actual": "5,879",
-   "anterior": null,
+   "actual": "12,782",
+   "anterior": "5,879",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -559,7 +569,7 @@
    "linea": 1443,
    "etiqueta": "Mantenimiento",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -568,8 +578,8 @@
    "bloque": "b40",
    "linea": 1444,
    "etiqueta": "Gastos de Viaje",
-   "actual": "626,543",
-   "anterior": null,
+   "actual": "488,099",
+   "anterior": "626,543",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -579,7 +589,7 @@
    "linea": 1445,
    "etiqueta": "Amortizaciones Derechos Deportivos",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -589,7 +599,7 @@
    "linea": 1446,
    "etiqueta": "Comisiones",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -598,8 +608,8 @@
    "bloque": "b40",
    "linea": 1447,
    "etiqueta": "Elemento de Aseo y Cafetería",
-   "actual": "1,002",
-   "anterior": null,
+   "actual": "2,136",
+   "anterior": "1,002",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -609,7 +619,7 @@
    "linea": 1448,
    "etiqueta": "Casino y Restaurante",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -618,8 +628,8 @@
    "bloque": "b40",
    "linea": 1449,
    "etiqueta": "Logística y Gastos de Partidos",
-   "actual": "938,785",
-   "anterior": null,
+   "actual": "978,086",
+   "anterior": "938,785",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -628,8 +638,8 @@
    "bloque": "b40",
    "linea": 1450,
    "etiqueta": "Gastos de Pretemporada",
-   "actual": "39,525",
-   "anterior": null,
+   "actual": "7,990",
+   "anterior": "39,525",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -638,8 +648,8 @@
    "bloque": "b40",
    "linea": 1451,
    "etiqueta": "Gastos de Entrenamientos",
-   "actual": "182,898",
-   "anterior": null,
+   "actual": "211,694",
+   "anterior": "182,898",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -648,8 +658,8 @@
    "bloque": "b40",
    "linea": 1452,
    "etiqueta": "Otros Costos",
-   "actual": "1,808",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "1,808",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -658,8 +668,8 @@
    "bloque": "b40",
    "linea": 1453,
    "etiqueta": "Derechos Deportivos",
-   "actual": "396,104",
-   "anterior": null,
+   "actual": "80,000",
+   "anterior": "396,104",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -668,8 +678,8 @@
    "bloque": "b40",
    "linea": 1454,
    "etiqueta": "Derechos Deportivos",
-   "actual": "52,316",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "52,316",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -678,8 +688,8 @@
    "bloque": "b40",
    "linea": 1455,
    "etiqueta": "TOTALES",
-   "actual": "8,433,786",
-   "anterior": null,
+   "actual": "11,721,102",
+   "anterior": "8,433,786",
    "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Gastos de Venta"
@@ -688,8 +698,8 @@
    "bloque": "b41",
    "linea": 1461,
    "etiqueta": "Costo de Venta",
-   "actual": "202,141",
-   "anterior": null,
+   "actual": "122,101",
+   "anterior": "202,141",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Costos de Venta"
@@ -698,8 +708,8 @@
    "bloque": "b41",
    "linea": 1462,
    "etiqueta": "Total Ingresos Y Gastos Financieros",
-   "actual": "202,141",
-   "anterior": null,
+   "actual": "122,101",
+   "anterior": "202,141",
    "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Costos de Venta"
@@ -708,8 +718,8 @@
    "bloque": "b42",
    "linea": 1476,
    "etiqueta": "Gasto de Personal",
-   "actual": "928,732",
-   "anterior": null,
+   "actual": "980,556",
+   "anterior": "928,732",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -718,8 +728,8 @@
    "bloque": "b42",
    "linea": 1477,
    "etiqueta": "Honorarios",
-   "actual": "91,197",
-   "anterior": null,
+   "actual": "128,456",
+   "anterior": "91,197",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -728,8 +738,8 @@
    "bloque": "b42",
    "linea": 1478,
    "etiqueta": "Impuestos",
-   "actual": "197,728",
-   "anterior": null,
+   "actual": "199,685",
+   "anterior": "197,728",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -738,8 +748,8 @@
    "bloque": "b42",
    "linea": 1479,
    "etiqueta": "Arrendamientos",
-   "actual": "57,831",
-   "anterior": null,
+   "actual": "69,972",
+   "anterior": "57,831",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -749,7 +759,7 @@
    "linea": 1480,
    "etiqueta": "Contribuciones y Afiliaciones",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -758,8 +768,8 @@
    "bloque": "b42",
    "linea": 1481,
    "etiqueta": "Seguros",
-   "actual": "18,665",
-   "anterior": null,
+   "actual": "14,534",
+   "anterior": "18,665",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -768,8 +778,8 @@
    "bloque": "b42",
    "linea": 1482,
    "etiqueta": "Servicios",
-   "actual": "250,705",
-   "anterior": null,
+   "actual": "284,842",
+   "anterior": "250,705",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -778,8 +788,8 @@
    "bloque": "b42",
    "linea": 1483,
    "etiqueta": "Gastos Legales",
-   "actual": "58,016",
-   "anterior": null,
+   "actual": "5,629",
+   "anterior": "58,016",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -788,8 +798,8 @@
    "bloque": "b42",
    "linea": 1484,
    "etiqueta": "Mantenimiento y Reparaciones",
-   "actual": "113,917",
-   "anterior": null,
+   "actual": "86,987",
+   "anterior": "113,917",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -798,8 +808,8 @@
    "bloque": "b42",
    "linea": 1485,
    "etiqueta": "Adecuaciones e Instalaciones",
-   "actual": "400",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "400",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -808,8 +818,8 @@
    "bloque": "b42",
    "linea": 1486,
    "etiqueta": "Gastos de Viaje",
-   "actual": "12,576",
-   "anterior": null,
+   "actual": "2,381",
+   "anterior": "12,576",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -818,8 +828,8 @@
    "bloque": "b42",
    "linea": 1487,
    "etiqueta": "Depreciación",
-   "actual": "32,753",
-   "anterior": null,
+   "actual": "92,795",
+   "anterior": "32,753",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -828,8 +838,8 @@
    "bloque": "b42",
    "linea": 1488,
    "etiqueta": "Amortizaciones",
-   "actual": "5,957",
-   "anterior": null,
+   "actual": "8,869",
+   "anterior": "5,957",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -838,8 +848,8 @@
    "bloque": "b42",
    "linea": 1489,
    "etiqueta": "Diversos",
-   "actual": "90,093",
-   "anterior": null,
+   "actual": "73,859",
+   "anterior": "90,093",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -848,8 +858,8 @@
    "bloque": "b42",
    "linea": 1490,
    "etiqueta": "Provisiones",
-   "actual": "30,525",
-   "anterior": null,
+   "actual": "49,775",
+   "anterior": "30,525",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -858,8 +868,8 @@
    "bloque": "b42",
    "linea": 1491,
    "etiqueta": "Gastos Bancarios",
-   "actual": "38,420",
-   "anterior": null,
+   "actual": "49,717",
+   "anterior": "38,420",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -868,8 +878,8 @@
    "bloque": "b42",
    "linea": 1492,
    "etiqueta": "Gastos Comisiones banc",
-   "actual": "745",
-   "anterior": null,
+   "actual": "3,823",
+   "anterior": "745",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -879,17 +889,17 @@
    "linea": 1493,
    "etiqueta": "Gastos por Diferencia en cambio",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
-   "lado": "gasto",
+   "lado": "financiero",
    "detalla_a": "Gastos de Administracion y otros gastos"
   },
   {
    "bloque": "b42",
    "linea": 1494,
    "etiqueta": "Gastos Extraordinarios",
-   "actual": "5,296",
-   "anterior": null,
+   "actual": "1,758",
+   "anterior": "5,296",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -898,8 +908,8 @@
    "bloque": "b42",
    "linea": 1495,
    "etiqueta": "Gastos Diversos",
-   "actual": "95,269",
-   "anterior": null,
+   "actual": "38,662",
+   "anterior": "95,269",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -908,8 +918,8 @@
    "bloque": "b42",
    "linea": 1496,
    "etiqueta": "TOTALES",
-   "actual": "2,028,825",
-   "anterior": null,
+   "actual": "2,092,300",
+   "anterior": "2,028,825",
    "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Gastos de Administracion y otros gastos"
@@ -918,8 +928,8 @@
    "bloque": "b44",
    "linea": 1520,
    "etiqueta": "Impuesto Corriente Renta 31%2021 y 32% 2020",
-   "actual": "152,495",
-   "anterior": null,
+   "actual": "0",
+   "anterior": "152,495",
    "tipo": "renglon",
    "lado": "impuesto",
    "detalla_a": "Impuesto de Renta Corriente"
@@ -929,7 +939,7 @@
    "linea": 1521,
    "etiqueta": "Ingresos por Impuestos Deferido",
    "actual": "0",
-   "anterior": null,
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "impuesto",
    "detalla_a": "Total Impuestos a la Ganancias"
@@ -938,8 +948,8 @@
    "bloque": "b44",
    "linea": 1522,
    "etiqueta": "Gastos por Impuesto Diferido",
-   "actual": "0",
-   "anterior": null,
+   "actual": "22,834",
+   "anterior": "0",
    "tipo": "renglon",
    "lado": "impuesto",
    "detalla_a": "Gastos (-Ingreso) por Correccion Impuesto Cte"
@@ -948,8 +958,8 @@
    "bloque": "b44",
    "linea": 1523,
    "etiqueta": "Total Impuestos a la Ganancias",
-   "actual": "152,495",
-   "anterior": null,
+   "actual": "22,834",
+   "anterior": "152,495",
    "tipo": "subtotal",
    "lado": "impuesto",
    "detalla_a": "Total Impuestos a la Ganancias"
@@ -959,32 +969,44 @@
  "total_gastos": null,
  "resultado": {
   "linea": 140,
-  "actual": "177,272",
-  "anterior": null
+  "actual": "-2,371,879",
+  "anterior": "177,272"
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el renglón sin etiqueta de L1420 con -20,000 en 2024 en la nota de Otros Ingresos?",
+   "pregunta": "¿Se deja afuera de la carga la fila sin etiqueta de L1420 (0 en 2025, -20,000 en 2024) de la nota de Otros Ingresos?",
    "propuesta": "sí",
    "tema": "fila-ilegible",
    "renglon": "Otros Ingresos",
-   "texto": "L1420 tiene importe -20,000 pero sin etiqueta; es necesario para que la nota sume 1,496,386.",
+   "texto": "L1420 no tiene etiqueta; su importe 2025 es 0, así que no altera la carga del ejercicio.",
    "bloques": [
     "b39"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   },
   {
-   "pregunta": "¿Se ignora el 'Resultado Integral Total' de L142, cuya columna 2024 repite -2,371,879 (dato de 2025) en vez de 177,272?",
+   "pregunta": "¿Se toma como resultado del ejercicio el de L140 (-2,371,879) e ignora el año anterior de L142 (-2,371,879), que parece un error de transcripción?",
    "propuesta": "sí",
-   "tema": "otro",
+   "tema": "columna",
    "renglon": "Resultado Integral Total",
-   "texto": "L142 muestra en Ene - Dic 2024 el mismo importe que 2025, inconsistente con L140 y L141; se toma L140 como resultado.",
+   "texto": "L142 repite -2,371,879 en la columna 2024, cuando L140 da 177,272 y ORI es 0.",
    "bloques": [
     "b3"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se carga el impuesto 2025 (22,834) como diferido según Nota 30 (L1522) aunque el estado lo rotula 'Correccion Impuesto Cte' (L137)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Gastos (-Ingreso) por Correccion Impuesto Cte",
+   "texto": "El rótulo del estado (L137) y la nota (L1522) difieren en la naturaleza del mismo importe.",
+   "bloques": [
+    "b3",
+    "b44"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Ejercicio pedido = columna 'Ene - Dic 2024' (notas: 'Dic. 31 2024'). No hay columna de año anterior (2023) en el documento; anterior queda null. Las notas no indican escala; se asumen iguales al estado (miles). Los dos renglones 'Derechos Deportivos' (L1453, L1454) se cargan por separado. El total de b41 está mal rotulado ('Total Ingresos Y Gastos Financieros') pero corresponde a Costo de Venta."
+ "observaciones": "Las notas no indican escala; se asume miles por coincidencia con el estado. El estado no imprime total de ingresos ni de gastos. En el estado los gastos se presentan en positivo y se restan en el subtotal L129. Nota 27 (L1462) tiene rótulo de total erróneo copiado de la nota financiera. Nota 26 repite 'Derechos Deportivos' en L1453 y L1454."
 }

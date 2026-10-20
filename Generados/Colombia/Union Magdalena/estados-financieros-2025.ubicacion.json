@@ -3,7 +3,7 @@
  "md": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.md",
  "mdSha1": "700a1be79d0e076f555008d7640de802b448b2f1",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:41:19.922Z",
+ "generado": "2026-10-19T18:54:31.115Z",
  "perimetroClub": null,
  "bloques": {
   "b1": {
@@ -401,22 +401,10 @@
  "escala": "miles",
  "escala_evidencia": "(Expresado en miles de Pesos colombianos)",
  "moneda": "COP",
- "columna_ejercicio": "Ene - Dic 2024",
- "columna_anterior": null,
+ "columna_ejercicio": "Ene - Dic 2025",
+ "columna_anterior": "Ene - Dic 2024",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿Se carga el ejercicio 2024 tomando la columna comparativa 'Ene - Dic 2024' del estado de resultados de los estados 2025 (b3)?",
-   "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "",
-   "texto": "El documento es de 2025; el ejercicio pedido (2024) solo aparece como columna comparativa, sin año anterior (2023).",
-   "bloques": [
-    "b3"
-   ],
-   "afecta_carga": true
-  }
- ],
- "observaciones": "Documento de estados financieros individuales 2025 con comparativo 2024. Para el ejercicio 2024 se usa la columna 'Ene - Dic 2024' del estado de resultados (b3) y las columnas 'Dic. 31 2024' de las notas 24-30. No hay columna 2023. b43 contiene ingresos y gastos financieros (nota 29)."
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Unión Magdalena S.A. en b3 (pág. 4). Notas 24-30 desglosan ingresos ordinarios, otros ingresos, gastos de venta, costo de venta, gastos administrativos, financieros e impuestos. b43 incluye ingresos y gastos financieros. Los estados se titulan 'intermedios' pero cubren Ene-Dic 2025."
 }
