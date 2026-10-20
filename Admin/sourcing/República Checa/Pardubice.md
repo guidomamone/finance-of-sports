@@ -35,3 +35,5 @@ Los 10 PDF confirmados `PDF document` real. Tamaños entre 151 KB y 4,2 MB.
 - Último chequeo: 2026-09-17.
 
 Color de marca: #FF0000 — infobox de en.wikipedia (kit local rojo; escudo rojo; cs.wikipedia lista rojo, blanco y azul), verificado 2026-10-09.
+
+- Pendiente (sacado del to-do 284, 2026-10-20): no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s. lo hace Guido.

@@ -24,51 +24,42 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-**A. Cerrar lo abierto (chico, ya en marcha)**
-* 292: cargar lo transcripto: quedan St. Gallen 2019 y 2022 (recargar) y 2020, Patro Eisden 2013 y 2015 (destrabados por la regla sin-fuente y la 298 b3), los años belgas que destraba la b3, Beşiktaş 2006-2008 (frenados por fx: Pipeline 7) y Colombia (Alianza FC, Tolima, Águilas Doradas: otra sesión con presupuesto) --> Onboarding 5
+**A. Cerrar lo abierto (en marcha)**
+* 292: St. Gallen 2019 y 2022 (recargar) y 2020, Patro Eisden 2013 y 2015, los años belgas que destraba la 298 b3 y el sponsor de Llaneros --> Onboarding 5
+* 261: Noruega, Molde FLI 2008-2024 (lote 116, corriendo) --> Onboarding 4
+* Frenados por script (`Admin/registros/frenados-por-script.jsonl`): Beşiktaş 2006-2008 (tipo de cambio), Beşiktaş 2018 (nota 18) y el aviso del ensayo cuando el `.md` no trae estado de resultados --> Pipeline 7
+* 255 fase 2: aplicar tus respuestas; las propuestas de skill te llegan para el ok de una sola lectura --> Docs 1
 
-**B. Bases baratas que después cuestan caro cambiar**
-* 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
+**B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
+* 246: ids estables con mapa de alias (antes de los links compartibles)
+* 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos)
 
-**C. Abaratar antes del onboarding grande**
-* 298: mejoras de script: todo hecho salvo la g2 (condicional); lo nuevo entra por Admin/registros/frenados-por-script.jsonl --> Pipeline 6
-(van antes de D: cada documento que se procese después sale más barato y con menos cola)
+**C. Cargar lo ya transcripto (no se transcribe más; cada sesión con su presupuesto)**
+* 238: Latinoamérica, 161 documentos transcriptos y validados (~US$ 50, en lotes de 5 a 8 clubes; espera tu ok y presupuesto)
+* 261: lo que queda: Reino Unido (casos del lote 106 de Sunderland y Wolves, volver a correr el 98, 4 escaneos sin estado de resultados, línea del auditor de Celtic) y Noruega (Fredrikstad, Viking FLI 2008-2016)
+* 283: Vålerenga y Aalesund, sumar el AS y el FLI con los `.md` que ya hay (criterio decidido; falta implementar), después de Noruega
+* 292 Colombia: Alianza FC (alta), Tolima, La Equidad, Bucaramanga y Águilas Doradas (varios sin estado de resultados en el `.md`)
+* 165 c: altas de los países nuevos, solo con documentos ya transcriptos
 
-**D. Onboarding grande**
-* 238: llevar a 0 los documentos que quedaron a mitad de camino: arranca por Latinoamérica (161 transcriptos y validados, ~US$ 50, en lotes de 5 a 8 clubes; espera tu ok) --> Onboarding 4
-* 261: Reino Unido: cargados Celtic 2021-2024, Newcastle 2019-2021, Man City 2022, Tottenham 2023, Fulham 2022, Leeds 2021 y Liverpool 2023; quedan los casos de verificar del lote 106 (Sunderland, Wolves) y volver a correr el 98; 4 escaneos sin estado de resultados (ajuste `estado`, como Fulham); línea del auditor de Celtic 2021-2025. Noruega: cargados Viking AS 2017-2024 y Sarpsborg 08 2008; quedan Molde FLI 2008-2024 (lote 116 armado), Fredrikstad, y Viking FLI 2008-2016 (antes de la AS, se cargaría) --> sesión con presupuesto nuevo
-* 165 c: altas de los países nuevos que faltan --> Onboarding 5
-* 195: gestiones sin fuente: buscar en la web y, si no aparece, null (Guido, 2026-10-20; REGLA en CONVENCIONES-DATOS); el script `tools/wiki-extracto.mjs` ya está --> Onboarding 5
-* 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia (criterio ya decidido; falta implementar con los .md que ya hay: verificar Vålerenga, registrar la suma en entidades.jsonl, la nota en Finanzas) --> sesión propia, después de Noruega
-
-**E. Pantallas**
+**D. Pantallas y distribución (después del 246)**
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
-
-**E2. Distribución (depende de 246)**
-* 255 fase 2: aplicar lo que apruebes del inventario (`Admin/consolidar-reglas-255.md`: 19 propuestas de skill y memoria, 9 contradicciones, 12 chequeos) --> Docs 1
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 259: material de difusión (después de 241: el deck tiene que poder linkear)
+* 259: material de difusión (después de 241)
 * 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
-**F. Técnico: herramientas a probar y datos para afuera (cuando haya tiempo; nada urgente)**
-* 317: Supabase como espejo de lectura de un país, para auditar en SQL (experimento descartable)
-* 318: Open Notebook sobre las transcripciones de un país, para encontrar patrones
-* 319: la skill I have ADHD en una sesión de lote, con y sin
-* 320: Browser Use para portales con formularios fijos (cuando aparezca uno)
-* 321: Higgsfield para imágenes y video del 313
-* 322: Zapier y OmniRoute, a demanda
-* 248: taxonomía genérica y subcategorías por deporte (antes del esquema)
-* 270: estimado de club nuevo: queda como está; volver a medir cuando entren más años de Noruega, Suiza y Países Bajos
-* 245: datos como JSON con esquema
+**E. Técnico (cuando haya tiempo; nada urgente)**
+* 248: taxonomía genérica y subcategorías por deporte
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
+* 270: estimado de club nuevo: volver a medir cuando entren más años de Noruega, Suiza y Países Bajos
+* 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
-**G. Orden de la casa**
-* 255: consolidar las reglas repartidas (lo chequeable ya pasó a hooks)
-* 257: skills que faltan (después de 255)
+**F. Orden de la casa**
+* 326: check-in de outreach, el 2026-10-24
+* 257: skills que faltan (después del 255)
+* 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes del Reino Unido corriendo
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
 * 51: proceso de mails a clubes
-* 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`, ensayo 3 a unir y 21 duplicados al archivo); la principal la corre cuando no haya ningún lote del Reino Unido corriendo (toca Cardiff y Swansea)
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
@@ -201,9 +192,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
    Vålerenga: 40 `.md` de subagentes que cortaron por el límite de uso están SIN trackear y SIN verificar en
    fos-onboarding (algunos sin mirar las imágenes): validarlos con `pipeline.mjs --lista Admin/lotes/transcribir-valerenga.txt`. Los PDFs sin `.md` no se transcriben (Guido, 2026-10-20).
-284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: FLI 2012-2018 y 2024 cargados. Sarpsborg 08:
-   FLI 2012 y 2014-2025 cargados; 2008 sin liga confirmada. Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
-   lo hace Guido.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
    contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
    compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil), sin silenciar ni mover nada; va con el 278.
@@ -227,16 +215,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    entren más años de Noruega, Suiza y Países Bajos.
 278. CARPETAS DUPLICADAS EN Clubes/. Cardiff y Swansea en `Inglaterra/` y `Gales/`; `Suiza/FC St. Gallen` y `Suiza/St. Gallen`.
    `faltantes-liga` las lee juntas. Unificar sin borrar ningún PDF y chequeando antes las referencias del pipeline.
-195. GESTIONES SIN FUENTE (solo entran las `confirmada: true`). Una tanda nueva se arma sola desde los casos de la cola con
-    `node tools/gestiones-tanda.mjs --armar --escribir` (la última, tanda-2026-10-19: 18 de Bélgica y Estonia, con criterio de Estonia en
-    `Admin/gestiones-por-pais/ee.md`; 7 preguntas a los clubes en `Admin/dudas-por-club.md`). Siguen sin cubrir:
-    - con caso en la cola y la pregunta en `Admin/dudas-por-club.md` ("Gestiones sin fecha confirmada"): CRB 2020, Cuiabá 2022-2025, Vila
-      Nova 2014, Ferroviária 2010-2013 y 2023 (además, criterio de SAF: presidente del consejo o director-presidente), Goiás 2010-2013 y
-      2017, OFI 2018 (administración judicial: sin gestión, decisión de Guido);
-    - sin caso en la cola, buscados en la tanda-2026-10-19-2 sin confirmar (esperan respuesta del club, ya en `Admin/dudas-por-club.md`):
-      Novorizontino 2010 y Cruzeiro 2024-2025 (Pedro Lourenço: compra firmada el 29-04-2024, CADE el 12-06-2024);
-    Las dudas de cada club, en "## Gestiones" de su `Admin/carga-clubes/<club>.md`; los casos `firmo` (la gestión cambió entre el cierre y
-    la aprobación del balance), ahí mismo, sin cargar.
 
 51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1. El envío queda afuera de cualquier sesión
     de chat: Resend + subdominio propio + una cola de archivos que Guido revisa, con el envío
