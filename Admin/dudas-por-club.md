@@ -382,16 +382,6 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   área de socios/accionistas), ya que la Firmenbuch confirma que la FK Austria Wien AG sí deposita
   cuentas pero el documento está bloqueado por login+pago (ver `Admin/sourcing/Austria/Austria Wien.md`).
 
-## OH Leuven (sourcing de Bélgica, sesión 2026-09-17, no bloqueó la elección de entidad pero queda sin confirmar)
-
-- **¿Qué son las otras 2 entidades "Oud-Heverlee Leuven"?**: además de la BV correcta (0668.426.703,
-  la que tiene turnover real), existen "OUD-HEVERLEE LEUVEN" NV (0864.391.150) y "OUD - HEVERLEE
-  LEUVEN" VZW (0430.065.732), ambas con el campo Omzet en blanco en su depósito más reciente. Es
-  razonable asumir que una es la asociación histórica madre y la otra una sociedad patrimonial
-  (estadio/estructura), mismo patrón que Hamburger SV en Alemania, pero no se abrió ninguno de los 2
-  PDFs para confirmarlo — a quién preguntarle: no hace falta, alcanza con abrir esos 2 PDFs en una
-  sesión futura si se necesita el dato.
-
 ## Cercle Brugge (sourcing de Bélgica, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
 
 - **¿Existía el club bajo otra razón social antes de 2015?**: no se encontró ningún depósito
@@ -584,11 +574,6 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
 - **Falta el ejercicio 2019**: existe el dato de referencia mencionado en el post de 2020, pero no
   se ubicó el documento/post propio de 2019 en ningún canal.
 
-## Thun (sourcing de Suiza, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
-
-- **Hueco en el ejercicio 2017** entre 2016/17 y 2018 — podría ser un año de transición de ejercicio
-  fiscal (de temporada a año calendario), no confirmado.
-
 ## Zürich (sourcing de Suiza, sesión 2026-09-17, pregunta de criterio, no bloqueante)
 
 - **El Geschäftsbericht 2011 existe en Yumpu (subido por la cuenta oficial del club) pero tiene la
@@ -609,11 +594,6 @@ Yatırım ve Futbol İşletmeciliği A.Ş., payları 2005 yılında halka arz ed
 bolsa en 2005. La entidad operativa (Futbol A.Ş.) se constituyó el 21 de abril de 2004 en Trabzon.
 De paso se completó la serie completa 2015/16-2024/25, así que el hueco que motivaba la pregunta ya
 no existe. Ver `Admin/sourcing/Turquía/Trabzonspor.md`.)*
-
-## Polissya (sourcing de Ucrania, sesión 2026-09-18, no bloqueó la descarga pero queda sin confirmar)
-
-- **Dos EDRPOU candidatos**: 40372249 (la empresa comunal confirmada) y 44547377 (sin relación
-  aclarada) — confirmar cuál corresponde a los PDF descargados antes de cargar los datos.
 
 ## Obolon (sourcing de Ucrania, sesión 2026-09-18, pregunta real, no bloqueó nada)
 
