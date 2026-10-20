@@ -678,3 +678,14 @@ Gasto de API de la sesión (`node tools/gasto.mjs`): US$ 0 (todo fueron medicion
 - **298 v2** (358cf480d9): `localizar.mjs` aplica el ajuste `estado` a una localización guardada. Solo cambia Fulham 2021-22 (ensayo ~US$ 0,09).
 - **Sin código:** aj (HALLAZGOS, no frena), s2 (la cubre la p1), q2 (cambiaría Silkeborg y Viborg 2025, ya cargados: derivar a Guido).
 - **Destrabados para Onboarding:** Patro Eisden 2013-2015, Lokeren-Temse 2021-2022, Lierse SK 2019, Boyacá Chicó 2025, Fulham 2021-22 (volver a correr el lote).
+
+### Pipeline 6, segunda parte (2026-10-20)
+
+Gasto de API propio de la sesión: US$ 1,44 (Mistral US$ 0,91, Gemini 0,41 y Claude 0,12 de los 10 ejercicios de Viking de la prueba del híbrido, 314; contado por las líneas que esa corrida agregó a `Admin/registros/api/`). `node tools/gasto.mjs --desde 2026-10-20` da más (US$ 7,95 en esta rama) porque suma lo que otras sesiones ya mergearon el mismo día.
+
+- **314 (Stirling PDF contra Tesseract y Mistral)**, `Admin/mediciones/stirling-vs-tesseract-vs-mistral.md`: Stirling mejora a Tesseract pelado en escaneos nórdicos (88-94% de las cifras contra 24-59%) pero no cierra sumas; el esquema híbrido (lectura local primero) ahorra US$ 0 en 6 + 10 escaneos. Detector de orientación gratis (`tesseract --psm 0`): arregla las páginas dadas vuelta de Sporting (Stirling 3-4% a 22-45%), sin efecto en el resto. Sin escalón. Los 10 `.md` de Viking (2012, 2014, 2016-2021, 2023, 2024) quedan como transcripción normal. Instalado `openjdk` (brew) y el jar de Stirling en el scratchpad.
+- **260:** `caja-deuda.mjs --medir` y el informe: ningún año se completa sin documento nuevo (Ferroviária 2014, Remo 2019, Volos 2019-2020 y Japón 2025 necesitan documento).
+- **wiki-extracto** (4fdcd94ff4, d081e56bc8, APROBADO): `tools/wiki-extracto.mjs`, ficha o sección de Wikipedia en texto corto para los subagentes de las gestiones (195).
+- **298 z2** (90ec805325, APROBADO): `cargar.mjs`, el ejercicio de transición de más de 12 meses con importes del año anterior y contiguo con el anterior se carga como el año del cierre. `medir-cargar` 0 distintos. Destraba Westerlo 2015.
+- **298 x2** (0dc98927e4): sin escalón. Una voz local (OCR) como respaldo de cifras en escaneos ahorraría ~22% de las páginas pero deja pasar al menos 1 de 82 con error real; la cascada actual (`chequeos-gratis.mjs`) deja pasar 0. `Admin/mediciones/x2-voz-local-escaneos.md`.
+- **245 fase 1** (b09b2d5b8a, APROBADO): `tools/json-datos.mjs`, `exportar-json.mjs`, `validar-esquema-json.mjs`, `ida-y-vuelta.mjs`. 313 de 313 idénticos, 0 errores, 4 clubes con avisos (rarezas del dato). Esquema en `Admin/mediciones/245-esquema.md`. Fase 2 (JSON como fuente) NO hecha: va con todo mergeado y sin worktrees, y se manda aparte a la auditora.

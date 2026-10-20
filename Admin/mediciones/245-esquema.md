@@ -37,7 +37,7 @@ archivo
     fiscal_year       2024
     period_end        "2024-12-31"  (de cierreDelClub)
     currency          "BRL"
-    fx                { ref, rate, source }      // ref = "BRL@2024-12-31"; rate y source solo si el ejercicio los fija
+    fx                { ref, rate, source }      // ref = "BRL@2024-12-31"; cada sub-clave solo si el ejercicio la tiene (clave ausente ≠ null)
     source_id         id de sources[]
     report_type       "official_balance_sheet" | ...
     management_id     id de management[] o null
@@ -67,7 +67,7 @@ el JS regenerado dé los mismos objetos.
   "members": null,
   "years": [{
     "fiscal_year": 2024, "period_end": "2024-12-31", "currency": "BRL",
-    "fx": {"ref": "BRL@2024-12-31", "rate": null, "source": null},
+    "fx": {"ref": "BRL@2024-12-31"},
     "source_id": "mirassol-relatorio-auditoria-2024", "report_type": "official_balance_sheet", "management_id": "sinconfirmar",
     "revenue": [{"label": "Receita do exercício (bruta, operacional — sem desagregação na fonte)", "category": "lump_football_operations", "amount": 59.339448, "disclosure": "aggregated"}],
     "expenses": [
