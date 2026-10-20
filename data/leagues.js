@@ -86,6 +86,7 @@ const LEAGUES = {
   'gb-scottishpremiership': { name:'Premiership',       full:'Scottish Premiership',                country:'GB', sport:'futbol', tier:1 },
   'ee-meistriliiga':   { name:'Meistriliiga',           full:'Meistriliiga de Estonia',             country:'EE', sport:'futbol', tier:1 },
   'gr-superleague':    { name:'Super League',           full:'Super League Greece',                 country:'GR', sport:'futbol', tier:1 },
+  'tr-superlig':       { name:'Süper Lig',              full:'Süper Lig de Turquía',                country:'TR', sport:'futbol', tier:1 },
   'hr-hnl':            { name:'HNL',                    full:'Hrvatska nogometna liga',             country:'HR', sport:'futbol', tier:1 },
   'jp-j1':             { name:'J1 League',             full:'J1 League',                           country:'JP', sport:'futbol', tier:1 },
   'mx-ligamx':         { name:'Liga MX',               full:'Liga MX',                             country:'MX', sport:'futbol', tier:1 },
