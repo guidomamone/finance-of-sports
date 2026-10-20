@@ -678,7 +678,9 @@ function fxDeclarado(md, moneda, mercado, cierre = null) {
 //     de 2025") es el encabezado; tiene que tener exactamente tantas fechas como números con decimales tiene la fila, y no repetir fechas;
 //   - entonces la k-ésima fecha es la de la k-ésima columna.
 const MESES_FX = { enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6, julio: 7, agosto: 8, septiembre: 9, setiembre: 9, octubre: 10, noviembre: 11, diciembre: 12,
-  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 };
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+  // turco (norm() ya pasó ı a i y quitó las diéresis): Beşiktaş "31 Mayıs 2008"
+  ocak: 1, subat: 2, mart: 3, nisan: 4, mayis: 5, haziran: 6, temmuz: 7, agustos: 8, eylul: 9, ekim: 10, kasim: 11, aralik: 12 };
 function fechasDe(linea) {
   const out = []; const t = norm(linea);
   for (const m of t.matchAll(/\b(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})\b|\b(\d{4})-(\d{2})-(\d{2})\b|\b(\d{1,2}) (?:de )?([a-z]+),? (?:de |del )?(?:ano )?(\d{4})\b/g)) {
@@ -697,7 +699,21 @@ function fechaDeColumna(md, item) {
   if (k < 0) return null;
   for (let j = i - 1; j >= Math.max(0, i - 8); j--) {
     const f = fechasDe(L[j]);
-    if (f.length >= 2) return f.length === nums.length && new Set(f).size === f.length ? f[k] : null;
+    if (f.length >= 2) return f.length === nums.length ? f[k] : null; // una fecha por columna; puede repetirse (importe, tipo y total de cada año bajo la misma fecha)
+  }
+  return null;
+}
+
+// La fecha de un valor que NO está en una tabla con una fecha por columna sino en un bloque: una línea que es solo una fecha ("31.05.2006") y,
+// dentro de las 3 siguientes, una tabla. Solo identifica de qué fecha es el valor; quién gana lo sigue decidiendo la regla de la fecha más nueva.
+function fechaDeBloque(md, item) {
+  const L = md.split('\n');
+  for (let j = item.linea - 2; j >= Math.max(0, item.linea - 62); j--) {
+    const t = L[j].trim(); if (!t) continue;
+    if (/^[\d./ -]{8,12}$/.test(t) || /^\d{1,2} [^\W\d_]+ \d{4}$/u.test(t)) {
+      const f = fechasDe(t);
+      if (f.length === 1 && L.slice(j + 1, j + 5).some((x) => x.trimStart().startsWith('|'))) return f[0];
+    }
   }
   return null;
 }
@@ -1249,7 +1265,7 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
     // "Dólar Estadounidense 907,13 996,48" debajo de "Conversiones a pesos chilenos 31-12-2025 31-12-2024": gana 907,13. Solo se usa si hay
     // más de un valor (con uno solo no cambia nada) y solo si la fila y el encabezado se corresponden uno a uno (ver fechaDeColumna); si no,
     // sigue como antes y termina en la pregunta (cola). Ver la medición en Admin/CHANGELOG.md, Versión 328.
-    const conFecha = grupos.length > 1 ? grupos.flatMap((g) => g.items.map((i) => ({ g, f: fechaDeColumna(md, i) }))).filter((x) => x.f) : [];
+    const conFecha = grupos.length > 1 ? grupos.flatMap((g) => g.items.map((i) => ({ g, f: fechaDeColumna(md, i) || fechaDeBloque(md, i) }))).filter((x) => x.f) : [];
     const fechas = [...new Set(conFecha.map((x) => x.f))].sort();
     const masNueva = fechas.length >= 2 ? conFecha.filter((x) => x.f === fechas[fechas.length - 1]) : [];
     const porFecha = masNueva.length && new Set(masNueva.map((x) => x.g)).size === 1 ? masNueva[0] : null;
