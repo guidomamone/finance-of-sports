@@ -44,6 +44,16 @@ const wolvesGbRevenueLinesByYear = {
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:2.741, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:14.977, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:15.105, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:13.343, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting rights', normalizedCategory:'broadcasting', amountNative:11.148, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:13.718, disclosureLevel:'aggregated' },
+    { rawLabel:'League distributions', normalizedCategory:'broadcasting', amountNative:113.795, disclosureLevel:'aggregated' },
+    { rawLabel:'Other turnover', normalizedCategory:'other_income', amountNative:1.466, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:43.874, disclosureLevel:'aggregated' },
+  ],
 };
 
 const wolvesGbExpenseLinesByYear = {
@@ -71,6 +81,9 @@ const wolvesGbExpenseLinesByYear = {
   ],
   2022: [
     { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-220.869, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-266.119, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -138,6 +151,21 @@ const wolvesGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:183.377, officialTotalExpenses:220.869, officialPAT:-43.089,
   },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-05-31',
+    sourceId:'wolves-gb-full-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-10.402, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.308},
+      {label:'Interest payable and similar charges', value:-10.71},
+      {label:'Tax on (loss)/profit)', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:212.449, officialTotalExpenses:266.119, officialPAT:-64.072,
+  },
 };
 
 const wolvesGbPresupuestoOverlayByYear = {};
@@ -182,6 +210,11 @@ Object.assign(sources, {
   'wolves-gb-full-accounts-2021-22': {
     id:'wolves-gb-full-accounts-2021-22', clubId:'wolves-gb',
     title:'Wolverhampton Wanderers Football Club (1986) Limited — wolves-full-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'wolves-gb-full-accounts-2022-23': {
+    id:'wolves-gb-full-accounts-2022-23', clubId:'wolves-gb',
+    title:'Wolverhampton Wanderers Football Club (1986) Limited — wolves-full-accounts-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
