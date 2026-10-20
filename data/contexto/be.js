@@ -40,7 +40,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2018: {"estadio":"Herman Vanderpoortenstadion","temporada":"2017–18 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353492631","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
     2019: {"estadio":"Herman Vanderpoortenstadion","temporada":"2018–19 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170241","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
     2020: {"estadio":"Herman Vanderpoortenstadion","temporada":"2019–20 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170258","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
-    2021: {"estadio":"Herman Vanderpoortenstadion","temporada":"2020–21 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375726247","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
+    2021: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"sponsor":"Keukens Van Lommel","marca":"Jako","temporada":"2020–21 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375726247","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},
   },
   'liersesk-be': {
     2019: {"estadio":"Herman Vanderpoortenstadion","temporada":"2018–19 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170241","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)","manual":["estadio"]},

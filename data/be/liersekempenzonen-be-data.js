@@ -10,6 +10,9 @@ const liersekempenzonenbeRevenueLinesByYear = {
   2020: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:0.79939, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:0.558356, disclosureLevel:'aggregated' },
+  ],
 };
 const liersekempenzonenbeExpenseLinesByYear = {
   2018: [
@@ -35,6 +38,13 @@ const liersekempenzonenbeExpenseLinesByYear = {
     { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.126445, disclosureLevel:'aggregated' },
     { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:-0.00303, disclosureLevel:'aggregated' },
     { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.021, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-1.28844, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.066604, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:-0.01134, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.010882, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.02, disclosureLevel:'aggregated' },
   ],
 };
 const liersekempenzonenbeFiscalYearMeta = {
@@ -91,6 +101,24 @@ const liersekempenzonenbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.79939, officialTotalExpenses:1.457374, officialPAT:-0.708745,
   },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'liersekempenzonen-be-jaarrekening-2021-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.024498, tax:-0.047616,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.00003},
+      {label:'Recurrente financiële kosten', value:-0.024528},
+      {label:'Belastingen op het resultaat (+)/(-)', value:-0.047616},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:0.558356, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.558356, officialTotalExpenses:1.377266, officialPAT:-0.911025,
+  },
 };
 const liersekempenzonenbePresupuestoOverlayByYear = {};
 
@@ -120,6 +148,11 @@ Object.assign(sources, {
   'liersekempenzonen-be-jaarrekening-2020-06-30-individual': {
     id:'liersekempenzonen-be-jaarrekening-2020-06-30-individual', clubId:'liersekempenzonen-be',
     title:'Lierse Kempenzonen VZW — jaarrekening-2020-06-30-individual (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'liersekempenzonen-be-jaarrekening-2021-06-30-individual': {
+    id:'liersekempenzonen-be-jaarrekening-2021-06-30-individual', clubId:'liersekempenzonen-be',
+    title:'Lierse Kempenzonen VZW — jaarrekening-2021-06-30-individual (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
