@@ -261,6 +261,26 @@ const besiktastrRevenueLinesByYear = {
     { rawLabel:'Önceki Dönem Reeskont İptali', normalizedCategory:'other_income', amountNative:0.066022, disclosureLevel:'aggregated' },
     { rawLabel:'Diğer', normalizedCategory:'other_income', amountNative:1.007443, disclosureLevel:'aggregated' },
   ],
+  2007: [
+    { rawLabel:'TV Yayın Gelirleri', normalizedCategory:'broadcasting', amountNative:30.038987, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorluk Gelirleri', normalizedCategory:'sponsorship_commercial', amountNative:11.631851, disclosureLevel:'aggregated' },
+    { rawLabel:'Maç Hasılatları', normalizedCategory:'matchday_competition', amountNative:3.424748, disclosureLevel:'aggregated' },
+    { rawLabel:'İsim Hakkı Gelirleri', normalizedCategory:'sponsorship_commercial', amountNative:4.359575, disclosureLevel:'aggregated' },
+    { rawLabel:'Lisans Geliri', normalizedCategory:'sponsorship_commercial', amountNative:0.367294, disclosureLevel:'aggregated' },
+    { rawLabel:'Futbolcu Kira Gelirleri', normalizedCategory:'player_sales', amountNative:0.025, disclosureLevel:'aggregated' },
+    { rawLabel:'Bonservis Geliri', normalizedCategory:'player_sales', amountNative:0.38808, disclosureLevel:'aggregated' },
+    { rawLabel:'Futbolcu Cezaları', normalizedCategory:'other_income', amountNative:0.572615, disclosureLevel:'aggregated' },
+    { rawLabel:'Kombine Kart Hasılatı', normalizedCategory:'matchday_competition', amountNative:9.569759, disclosureLevel:'aggregated' },
+    { rawLabel:'Futbolcu Satış Zararı', normalizedCategory:'player_sales', amountNative:-2.57998, disclosureLevel:'aggregated' },
+    { rawLabel:'Sigorta Satışı', normalizedCategory:'other_income', amountNative:0.0589, disclosureLevel:'aggregated' },
+    { rawLabel:'Seyahat Satışı', normalizedCategory:'other_income', amountNative:1.166196, disclosureLevel:'aggregated' },
+    { rawLabel:'Lisanslı Ürün Satışı', normalizedCategory:'sponsorship_commercial', amountNative:8.051784, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer', normalizedCategory:'other_income', amountNative:1.438753, disclosureLevel:'aggregated' },
+    { rawLabel:'İndirimler', normalizedCategory:'other_income', amountNative:-0.881173, disclosureLevel:'aggregated' },
+    { rawLabel:'Hizmet Gelirleri (net)', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Esas Faaliyetlerden Diğer Gelirler / faiz+temettü+kira (net)', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer Faaliyetlerden Gelir ve Karlar', normalizedCategory:'other_income', amountNative:36.295647, disclosureLevel:'aggregated' },
+  ],
 };
 const besiktastrExpenseLinesByYear = {
   2023: [
@@ -795,6 +815,34 @@ const besiktastrExpenseLinesByYear = {
     { rawLabel:'Kur Farkı Giderleri', normalizedCategory:'other_expenses', amountNative:-14.721541, disclosureLevel:'aggregated' },
     { rawLabel:'Diğer', normalizedCategory:'other_expenses', amountNative:-0.019297, disclosureLevel:'aggregated' },
   ],
+  2007: [
+    { rawLabel:'Ticari Mal Maliyeti', normalizedCategory:'other_expenses', amountNative:-5.037821, disclosureLevel:'aggregated' },
+    { rawLabel:'Sporcu ve Teknik Kadro Ücretleri', normalizedCategory:'wages_squad', amountNative:-55.600076, disclosureLevel:'aggregated' },
+    { rawLabel:'Stad Giderleri', normalizedCategory:'match_organisation_expense', amountNative:-2.250369, disclosureLevel:'aggregated' },
+    { rawLabel:'Tesis Giderleri', normalizedCategory:'admin_general_expense', amountNative:-2.002789, disclosureLevel:'aggregated' },
+    { rawLabel:'Seyahat Gideri', normalizedCategory:'match_organisation_expense', amountNative:-1.41648, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisman ve İtfa Payları', normalizedCategory:'depreciation', amountNative:-0.531868, disclosureLevel:'aggregated' },
+    { rawLabel:'Federasyon ve UEFA Gideri', normalizedCategory:'match_organisation_expense', amountNative:-1.149822, disclosureLevel:'aggregated' },
+    { rawLabel:'Futbolcu Hak İtfa Payı', normalizedCategory:'player_amortisation', amountNative:-7.572919, disclosureLevel:'aggregated' },
+    { rawLabel:'Maç Giderleri', normalizedCategory:'match_organisation_expense', amountNative:-2.257409, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer Hizmet Maliyeti', normalizedCategory:'other_expenses', amountNative:-3.371642, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisman Giderleri', normalizedCategory:'depreciation', amountNative:-0.10441, disclosureLevel:'aggregated' },
+    { rawLabel:'Sergi-Reklam Giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.077525, disclosureLevel:'aggregated' },
+    { rawLabel:'Personel Giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.814345, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer', normalizedCategory:'other_expenses', amountNative:-1.109243, disclosureLevel:'aggregated' },
+    { rawLabel:'Personel giderleri', normalizedCategory:'admin_general_expense', amountNative:-1.666423, disclosureLevel:'aggregated' },
+    { rawLabel:'Komisyon ve Diğer Hizmet Giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.811133, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisman ve Tükenme Payları', normalizedCategory:'player_amortisation', amountNative:-1.086456, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer', normalizedCategory:'other_expenses', amountNative:-2.513681, disclosureLevel:'aggregated' },
+    { rawLabel:'Cari Dönem Reeskont Gideri', normalizedCategory:'other_expenses', amountNative:-0.006745, disclosureLevel:'aggregated' },
+    { rawLabel:'Önceki Dönem Prekont İptali', normalizedCategory:'other_expenses', amountNative:-0.276877, disclosureLevel:'aggregated' },
+    { rawLabel:'Çalışmayan Kısım Gider ve Zararları', normalizedCategory:'player_amortisation', amountNative:-2.201587, disclosureLevel:'aggregated' },
+    { rawLabel:'Önceki Dönem Gider ve Zararları', normalizedCategory:'exceptional_items', amountNative:-0.389252, disclosureLevel:'aggregated' },
+    { rawLabel:'Stok ve Haklar Değer Düşüş Karşılığı', normalizedCategory:'other_expenses', amountNative:-0.024785, disclosureLevel:'aggregated' },
+    { rawLabel:'Şüpheli Alacak Karşılığı', normalizedCategory:'other_expenses', amountNative:-0.179201, disclosureLevel:'aggregated' },
+    { rawLabel:'Kur Farkı Giderleri', normalizedCategory:'other_expenses', amountNative:-13.446064, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer', normalizedCategory:'other_expenses', amountNative:-0.596099, disclosureLevel:'aggregated' },
+  ],
 };
 const besiktastrFiscalYearMeta = {
   2023: {
@@ -1042,6 +1090,21 @@ const besiktastrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:97.292906, officialTotalExpenses:95.862741, officialPAT:-12.541578,
   },
+  2007: {
+    currency:'TRY', fx:1.3253, fxSource:'document_close',
+    sourceId:'besiktas-tr-futbol-bilanco-31-05-2007',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-9.654827, tax:0.170965,
+    extraRows: [
+      {label:'Finansman Giderleri (-)', value:-9.654827},
+      {label:'Net Parasal Pozisyon Kar/Zararı', value:0},
+      {label:'Vergiler', value:0.170965},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:103.928036, officialTotalExpenses:106.105769, officialPAT:-12.050502,
+  },
 };
 const besiktastrPresupuestoOverlayByYear = {};
 
@@ -1131,6 +1194,11 @@ Object.assign(sources, {
   'besiktas-tr-futbol-bilanco-31-05-2006': {
     id:'besiktas-tr-futbol-bilanco-31-05-2006', clubId:'besiktas-tr',
     title:'Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. — besiktas-futbol-bilanco-31-05-2006 (ejercicio 2006)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'besiktas-tr-futbol-bilanco-31-05-2007': {
+    id:'besiktas-tr-futbol-bilanco-31-05-2007', clubId:'besiktas-tr',
+    title:'Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. — besiktas-futbol-bilanco-31-05-2007 (ejercicio 2007)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
