@@ -20,6 +20,9 @@ que dice `ESTADO.md` era verdad ese día.
 * 298 af (`data/club-leagues/be.js`: Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022) y 298 w2 (`cargar.mjs`: un primer ejercicio de
   12 meses redondeados con período no anual entra por la compuerta de primer ejercicio; Lierse SK 2019). Los dos con veredicto APROBADO
   de la sesión auditora, el método nuevo (CONVENCIONES).
+* 298 r2 (una fila de gasto presentada como desglose no se suma aparte: West Ham 2020-24), p2 (filas con el mismo rótulo en lados opuestos:
+  Boyacá Chicó 2025) y v2 (`--reintentar` vuelve a localizar un documento que quedó sin estado de resultados: Fulham 2021-22), aprobados
+  por la auditora. aj y s2 no necesitaban código.
 
 ## Versión 834 — Reino Unido: Burnley, Manchester City y Tottenham; cierre de Finanzas 5 (2026-10-20)
 
