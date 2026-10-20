@@ -1,0 +1,477 @@
+{
+ "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf",
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.md",
+ "generado": "2026-10-20T19:07:01.067Z",
+ "estado": "ok",
+ "clubId": "besiktas-tr",
+ "year": 2006,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.00005899999996472616
+  },
+  {
+   "nombre": "documento del año 2007",
+   "ok": true,
+   "detalle": "ingresos de 2006: 97.292906 en este documento y 97.292906 en besiktas-futbol-bilanco-31-05-2007.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2005: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: El encabezado de b3 muestra una sola columna de importes; las notas b50-b57 también traen solo el ejercicio corriente."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 97.292906,
+  "gastos": 96.212712,
+  "financiero": -13.626482,
+  "impuesto": 0.004651,
+  "resultadoImpreso": -12.541578,
+  "resultadoParaCargar": -12.541578,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "TV Yayın Gelirleri",
+   "lado": "ingreso",
+   "M": 29.503588,
+   "pagina": 38,
+   "linea": 2036,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Sponsorluk Gelirleri",
+   "lado": "ingreso",
+   "M": 10.141237,
+   "pagina": 38,
+   "linea": 2037,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Maç Hasılatları",
+   "lado": "ingreso",
+   "M": 2.130844,
+   "pagina": 38,
+   "linea": 2038,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "İsim Hakkı Gelirleri",
+   "lado": "ingreso",
+   "M": 4.363314,
+   "pagina": 38,
+   "linea": 2039,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Lisans Geliri",
+   "lado": "ingreso",
+   "M": 0.707971,
+   "pagina": 38,
+   "linea": 2040,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Futbolcu Kira Gelirleri",
+   "lado": "ingreso",
+   "M": 2.26076,
+   "pagina": 38,
+   "linea": 2041,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Futbolcu Cezaları",
+   "lado": "ingreso",
+   "M": 0.55934,
+   "pagina": 38,
+   "linea": 2042,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Kombine Kart Hasılatı",
+   "lado": "ingreso",
+   "M": 7.708976,
+   "pagina": 38,
+   "linea": 2043,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Futbolcu Satış Geliri",
+   "lado": "ingreso",
+   "M": 7.796984,
+   "pagina": 38,
+   "linea": 2044,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Futbolcu Satış Zararı",
+   "lado": "ingreso",
+   "M": -0.899383,
+   "pagina": 38,
+   "linea": 2045,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Sigorta Satışı",
+   "lado": "ingreso",
+   "M": 0.06631,
+   "pagina": 38,
+   "linea": 2046,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Seyahat Satışı",
+   "lado": "ingreso",
+   "M": 0.804355,
+   "pagina": 38,
+   "linea": 2047,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Lisanslı Ürün Satışı",
+   "lado": "ingreso",
+   "M": 6.228109,
+   "pagina": 38,
+   "linea": 2048,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Diğer",
+   "lado": "ingreso",
+   "M": 2.450531,
+   "pagina": 38,
+   "linea": 2049,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "İndirimler",
+   "lado": "ingreso",
+   "M": -1.195048,
+   "pagina": 38,
+   "linea": 2050,
+   "origen": "nota que desglosa \"Satış Gelirleri (net)\""
+  },
+  {
+   "etiqueta": "Hizmet Gelirleri (net)",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 5,
+   "linea": 156,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Esas Faaliyetlerden Diğer Gelirler / faiz+temettü+kira (net)",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 5,
+   "linea": 157,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "BJK Dernek Cari Hesap Faiz Geliri",
+   "lado": "ingreso",
+   "M": 12.492239,
+   "pagina": 39,
+   "linea": 2098,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gelir ve Karlar\""
+  },
+  {
+   "etiqueta": "Kur Farkı Gelirleri",
+   "lado": "ingreso",
+   "M": 10.822437,
+   "pagina": 39,
+   "linea": 2099,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gelir ve Karlar\""
+  },
+  {
+   "etiqueta": "Cari Dönem Prekont Gelirleri",
+   "lado": "ingreso",
+   "M": 0.276877,
+   "pagina": 39,
+   "linea": 2100,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gelir ve Karlar\""
+  },
+  {
+   "etiqueta": "Önceki Dönem Reeskont İptali",
+   "lado": "ingreso",
+   "M": 0.066022,
+   "pagina": 39,
+   "linea": 2101,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gelir ve Karlar\""
+  },
+  {
+   "etiqueta": "Diğer",
+   "lado": "ingreso",
+   "M": 1.007443,
+   "pagina": 39,
+   "linea": 2102,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gelir ve Karlar\""
+  },
+  {
+   "etiqueta": "Ticari Mal Maliyeti",
+   "lado": "gasto",
+   "M": 4.016514,
+   "pagina": 39,
+   "linea": 2065,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Sporcu ve Teknik Kadro Ücretleri",
+   "lado": "gasto",
+   "M": 40.788107,
+   "pagina": 39,
+   "linea": 2066,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Stad Giderleri",
+   "lado": "gasto",
+   "M": 2.51538,
+   "pagina": 39,
+   "linea": 2067,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Tesis Giderleri",
+   "lado": "gasto",
+   "M": 2.165134,
+   "pagina": 39,
+   "linea": 2068,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Seyahat Gideri",
+   "lado": "gasto",
+   "M": 1.57906,
+   "pagina": 39,
+   "linea": 2069,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Amortisman ve İtfa Payları",
+   "lado": "gasto",
+   "M": 0.488603,
+   "pagina": 39,
+   "linea": 2070,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Federasyon ve UEFA Gideri",
+   "lado": "gasto",
+   "M": 1.645304,
+   "pagina": 39,
+   "linea": 2071,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Futbolcu Hak İtfa Payı",
+   "lado": "gasto",
+   "M": 8.921709,
+   "pagina": 39,
+   "linea": 2072,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Maç Giderleri",
+   "lado": "gasto",
+   "M": 1.96315,
+   "pagina": 39,
+   "linea": 2073,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Diğer Hizmet Maliyeti",
+   "lado": "gasto",
+   "M": 2.533916,
+   "pagina": 39,
+   "linea": 2074,
+   "origen": "nota que desglosa \"Satışların Maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Sponsorluk Giderleri",
+   "lado": "gasto",
+   "M": 0.349998,
+   "pagina": 39,
+   "linea": 2082,
+   "origen": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama satış dağıtım giderleri\""
+  },
+  {
+   "etiqueta": "Amortisman Giderleri",
+   "lado": "gasto",
+   "M": 0.112693,
+   "pagina": 39,
+   "linea": 2083,
+   "origen": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama satış dağıtım giderleri\""
+  },
+  {
+   "etiqueta": "Sergi-Reklam Giderleri",
+   "lado": "gasto",
+   "M": 0.005475,
+   "pagina": 39,
+   "linea": 2084,
+   "origen": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama satış dağıtım giderleri\""
+  },
+  {
+   "etiqueta": "Personel Giderleri",
+   "lado": "gasto",
+   "M": 1.190356,
+   "pagina": 39,
+   "linea": 2085,
+   "origen": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama satış dağıtım giderleri\""
+  },
+  {
+   "etiqueta": "Diğer",
+   "lado": "gasto",
+   "M": 0.657198,
+   "pagina": 39,
+   "linea": 2086,
+   "origen": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama satış dağıtım giderleri\""
+  },
+  {
+   "etiqueta": "Personel giderleri",
+   "lado": "gasto",
+   "M": 1.783683,
+   "pagina": 39,
+   "linea": 2088,
+   "origen": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Genel Yönetim Giderleri\""
+  },
+  {
+   "etiqueta": "Komisyon ve Diğer Hizmet Giderleri",
+   "lado": "gasto",
+   "M": 0.760719,
+   "pagina": 39,
+   "linea": 2089,
+   "origen": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Genel Yönetim Giderleri\""
+  },
+  {
+   "etiqueta": "Amortisman ve Tükenme Payları",
+   "lado": "gasto",
+   "M": 1.19684,
+   "pagina": 39,
+   "linea": 2090,
+   "origen": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Genel Yönetim Giderleri\""
+  },
+  {
+   "etiqueta": "Diğer",
+   "lado": "gasto",
+   "M": 1.25117,
+   "pagina": 39,
+   "linea": 2091,
+   "origen": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Genel Yönetim Giderleri\""
+  },
+  {
+   "etiqueta": "Cari Dönem Reeskont Gideri",
+   "lado": "gasto",
+   "M": 0.051046,
+   "pagina": 39,
+   "linea": 2104,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\""
+  },
+  {
+   "etiqueta": "Önceki Dönem Prekont İptali",
+   "lado": "gasto",
+   "M": 0.272185,
+   "pagina": 39,
+   "linea": 2105,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\""
+  },
+  {
+   "etiqueta": "Çalışmayan Kısım Gider ve Zararları",
+   "lado": "gasto",
+   "M": 2.544195,
+   "pagina": 39,
+   "linea": 2106,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\""
+  },
+  {
+   "etiqueta": "Önceki Dönem Gider ve Zararları",
+   "lado": "gasto",
+   "M": 0.349971,
+   "pagina": 39,
+   "linea": 2107,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\""
+  },
+  {
+   "etiqueta": "Stok ve Haklar Değer Düşüş Karşılığı",
+   "lado": "gasto",
+   "M": 3.112191,
+   "pagina": 39,
+   "linea": 2108,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\""
+  },
+  {
+   "etiqueta": "Şüpheli Alacak Karşılığı",
+   "lado": "gasto",
+   "M": 1.217277,
+   "pagina": 40,
+   "linea": 2121,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\""
+  },
+  {
+   "etiqueta": "Kur Farkı Giderleri",
+   "lado": "gasto",
+   "M": 14.721541,
+   "pagina": 40,
+   "linea": 2122,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\""
+  },
+  {
+   "etiqueta": "Diğer",
+   "lado": "gasto",
+   "M": 0.019297,
+   "pagina": 40,
+   "linea": 2123,
+   "origen": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finansman Giderleri (-)",
+   "M": -13.626482,
+   "linea": 163
+  },
+  {
+   "etiqueta": "Net Parasal Pozisyon Kar/Zararı",
+   "M": 0,
+   "linea": 165
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Vergiler",
+   "M": 0.004651,
+   "linea": 168
+  }
+ ]
+}

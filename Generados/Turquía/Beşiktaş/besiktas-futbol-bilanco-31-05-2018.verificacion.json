@@ -1,0 +1,452 @@
+{
+ "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf",
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md",
+ "generado": "2026-10-20T19:07:01.633Z",
+ "estado": "cola",
+ "clubId": "besiktas-tr",
+ "year": 2018,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "edb9c63",
+  "cefd6ae"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.8829382497642655e-13
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": false,
+   "detalle": "ingresos de 2018: 944.157302 en este documento y 910.819332 en besiktas-futbol-bilanco-31-05-2019.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2017: 604.012413 en besiktas-futbol-bilanco-31-05-2017.pdf y 604.012413 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Esas faaliyetlerden diğer gelirler\" (5 filas) no suma la fila: quedó la fila",
+  "la nota de \"Satışların maliyeti (-)\" no suma el renglón (68.277152 contra 620.2931, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: El cuadro por segmento (Futbol, Sportif Ürünler, TV) probablemente repite importes ya abiertos en la nota 18 (b60).",
+  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro 'Niteliklerine göre giderler' (b63, L2647-L2668) por ser una reclasificación por naturaleza de gastos ya desglosados en b60, b61 y b62?",
+  "duda de extraer que no afecta la carga: Los encabezados de las notas (ej. L2561) dicen 2015 pero los totales coinciden con la columna 2016-2017 del estado; parece errata."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Esas faaliyetlerden diğer gelirler",
+   "suma": 37.988791,
+   "objetivo": 0.169309
+  },
+  {
+   "renglon": "Satışların maliyeti (-)",
+   "suma": 68.277152,
+   "objetivo": 620.2931
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Esas faaliyetlerden diğer gelirler",
+   "suma": 37.988791,
+   "objetivo": 0.169309
+  },
+  {
+   "renglon": "Satışların maliyeti (-)",
+   "suma": 68.277152,
+   "objetivo": 620.2931
+  }
+ ],
+ "totales": {
+  "ingresos": 944.157302,
+  "gastos": 765.438175,
+  "financiero": -159.235006,
+  "impuesto": -9.436353,
+  "resultadoImpreso": 10.047768,
+  "resultadoParaCargar": 10.047768,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Şampiyonlar ligi ve UEFA gelirleri",
+   "lado": "ingreso",
+   "M": 208.213926,
+   "pagina": 50,
+   "linea": 2563,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Futbolcu satış ve kiralama gelirleri",
+   "lado": "ingreso",
+   "M": 177.00671,
+   "pagina": 50,
+   "linea": 2564,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Yayın gelirleri",
+   "lado": "ingreso",
+   "M": 135.8567,
+   "pagina": 50,
+   "linea": 2565,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Lisanslı ürün satış gelirleri",
+   "lado": "ingreso",
+   "M": 133.857167,
+   "pagina": 50,
+   "linea": 2566,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Maç hasılatları ve kombine kart loca geliri",
+   "lado": "ingreso",
+   "M": 105.622607,
+   "pagina": 50,
+   "linea": 2567,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Sponsorluk ve reklam geliri",
+   "lado": "ingreso",
+   "M": 72.971059,
+   "pagina": 50,
+   "linea": 2568,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "İsim ve lisans hakkı gelirleri",
+   "lado": "ingreso",
+   "M": 67.520679,
+   "pagina": 50,
+   "linea": 2569,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Diğer",
+   "lado": "ingreso",
+   "M": 13.521606,
+   "pagina": 50,
+   "linea": 2570,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Satıştan iadeler(-)",
+   "lado": "ingreso",
+   "M": -7.346675,
+   "pagina": 50,
+   "linea": 2571,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Satış iskontoları / indirimleri (-)",
+   "lado": "ingreso",
+   "M": -1.055268,
+   "pagina": 50,
+   "linea": 2572,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Esas faaliyetlerden kur farkı gelirleri",
+   "lado": "ingreso",
+   "M": 33.363603,
+   "pagina": 53,
+   "linea": 2684,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\""
+  },
+  {
+   "etiqueta": "Genel yönetim katılım gelirleri",
+   "lado": "ingreso",
+   "M": 4.011472,
+   "pagina": 53,
+   "linea": 2685,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\""
+  },
+  {
+   "etiqueta": "Konusu kalmayan karşılıklar (*)",
+   "lado": "ingreso",
+   "M": 0.444407,
+   "pagina": 53,
+   "linea": 2686,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\""
+  },
+  {
+   "etiqueta": "Esas faaliyetlerden diğer gelirler",
+   "lado": "ingreso",
+   "M": 0.169309,
+   "pagina": 53,
+   "linea": 2687,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\""
+  },
+  {
+   "etiqueta": "Satışların maliyeti (-)",
+   "lado": "gasto",
+   "M": 620.2931,
+   "pagina": 10,
+   "linea": 326,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Personel ücret ve giderleri",
+   "lado": "gasto",
+   "M": 9.410406,
+   "pagina": 51,
+   "linea": 2606,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Kira giderleri",
+   "lado": "gasto",
+   "M": 5.441213,
+   "pagina": 51,
+   "linea": 2607,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Lojistik hizmet gideri",
+   "lado": "gasto",
+   "M": 2.339636,
+   "pagina": 51,
+   "linea": 2608,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Kargo ve nakliye giderleri",
+   "lado": "gasto",
+   "M": 1.316728,
+   "pagina": 51,
+   "linea": 2609,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Amortisman ve tükenme payları",
+   "lado": "gasto",
+   "M": 0.978218,
+   "pagina": 51,
+   "linea": 2610,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Yemek giderleri",
+   "lado": "gasto",
+   "M": 0.760868,
+   "pagina": 51,
+   "linea": 2611,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Ambalaj malzemesi giderleri",
+   "lado": "gasto",
+   "M": 0.631913,
+   "pagina": 51,
+   "linea": 2612,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Web yayın giderleri",
+   "lado": "gasto",
+   "M": 0.287782,
+   "pagina": 51,
+   "linea": 2613,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Tanıtım, fuar ve sergi giderleri",
+   "lado": "gasto",
+   "M": 0.279414,
+   "pagina": 51,
+   "linea": 2614,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Reklam ve ilan giderleri",
+   "lado": "gasto",
+   "M": 0.233293,
+   "pagina": 51,
+   "linea": 2615,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Haberleşme giderleri",
+   "lado": "gasto",
+   "M": 0.147955,
+   "pagina": 51,
+   "linea": 2616,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Diğer",
+   "lado": "gasto",
+   "M": 2.786467,
+   "pagina": 51,
+   "linea": 2617,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Müşavirlik, dava ve icra noter giderleri",
+   "lado": "gasto",
+   "M": 13.178395,
+   "pagina": 51,
+   "linea": 2624,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Personel ücret ve giderleri",
+   "lado": "gasto",
+   "M": 3.535196,
+   "pagina": 51,
+   "linea": 2625,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Şüpheli alacak karşılık giderleri",
+   "lado": "gasto",
+   "M": 1.186107,
+   "pagina": 51,
+   "linea": 2626,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Vergi resim ve harçlar",
+   "lado": "gasto",
+   "M": 0.869923,
+   "pagina": 51,
+   "linea": 2627,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Amortisman ve tükenme/itfa payları",
+   "lado": "gasto",
+   "M": 0.713414,
+   "pagina": 51,
+   "linea": 2628,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Haberleşme giderleri",
+   "lado": "gasto",
+   "M": 0.474934,
+   "pagina": 51,
+   "linea": 2629,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Danışmanlık giderleri",
+   "lado": "gasto",
+   "M": 0.107033,
+   "pagina": 51,
+   "linea": 2630,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Kargo ve nakliye giderleri",
+   "lado": "gasto",
+   "M": 0.051729,
+   "pagina": 51,
+   "linea": 2631,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Diğer giderler",
+   "lado": "gasto",
+   "M": 2.087904,
+   "pagina": 51,
+   "linea": 2632,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Esas faaliyetlerden kur farkı giderleri",
+   "lado": "gasto",
+   "M": 87.614233,
+   "pagina": 53,
+   "linea": 2695,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\""
+  },
+  {
+   "etiqueta": "Özel maliyetler değer düşüklüğü karşılık gideri (*)",
+   "lado": "gasto",
+   "M": 6.839206,
+   "pagina": 53,
+   "linea": 2696,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\""
+  },
+  {
+   "etiqueta": "Vade farkı gideri",
+   "lado": "gasto",
+   "M": 2.060306,
+   "pagina": 53,
+   "linea": 2697,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\""
+  },
+  {
+   "etiqueta": "Dava karşılık giderleri",
+   "lado": "gasto",
+   "M": 0.974776,
+   "pagina": 53,
+   "linea": 2698,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\""
+  },
+  {
+   "etiqueta": "Esas faaliyetlerden diğer giderler",
+   "lado": "gasto",
+   "M": 0.838026,
+   "pagina": 53,
+   "linea": 2699,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finansman gelirleri",
+   "M": 65.062676,
+   "linea": 333
+  },
+  {
+   "etiqueta": "Finansman giderleri (-)",
+   "M": -224.297682,
+   "linea": 334
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Dönem vergi gideri",
+   "M": -10.47008,
+   "linea": 336
+  },
+  {
+   "etiqueta": "Ertelenmiş vergi geliri/(gideri)",
+   "M": 1.033727,
+   "linea": 337
+  }
+ ]
+}

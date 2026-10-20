@@ -1,282 +1,360 @@
 {
- "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.md",
- "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.pdf",
- "club": "besiktas",
- "year": 2009,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:08:14.189Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 27,
-  "notasUsadas": []
- },
- "ladoConocido": 23,
- "rubros": [
-  {
-   "label": "31 Mayıs 2008 Devir",
-   "lado": null,
-   "page": 38,
-   "section": "### d) Geçmiş Yıl Kar / Zararları",
-   "values": [
-    -25954.147
-   ],
-   "origen": "estado 37"
-  },
-  {
-   "label": "Olağanüstü Yedekler",
-   "lado": null,
-   "page": 38,
-   "section": "### d) Geçmiş Yıl Kar / Zararları",
-   "values": [
-    221.454
-   ],
-   "origen": "estado 37"
-  },
-  {
-   "label": "31 Mayıs 2009",
-   "lado": null,
-   "page": 38,
-   "section": "### d) Geçmiş Yıl Kar / Zararları",
-   "values": [
-    -27078.203
-   ],
-   "origen": "estado 37"
-  },
-  {
-   "label": "Satış Gelirleri (net)",
-   "lado": "revenue",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    85.165152
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Satışların Maliyeti (-)",
-   "lado": "expense",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    -85.159178
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Pazarlama, Satış ve Dağıtım Giderleri (-)",
-   "lado": "revenue",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    -2.734287
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Genel Yönetim Giderleri (-)",
-   "lado": "expense",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    -5.110693
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Diğer Faaliyet Gelirleri",
-   "lado": "revenue",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    0.391372
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Diğer Faaliyet Giderleri (-)",
-   "lado": "expense",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    -7.387496
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Finansal Gelirler",
-   "lado": "revenue",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    21.859444
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Finansal Giderler (-)",
-   "lado": "expense",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    -36.383647
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Dönem Vergi Gelir/Gideri",
-   "lado": "expense",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    -0.062135
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Ertelenmiş Vergi Gelir/Gideri",
-   "lado": "expense",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    0.003825
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Azınlık Payları",
-   "lado": "revenue",
-   "page": 8,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
-   "values": [
-    0.000485
-   ],
-   "origen": "estado 4"
-  },
-  {
-   "label": "Pazarlama, Satış ve Dağıtım Giderleri",
-   "lado": "expense",
-   "page": 40,
-   "section": "NOT 30 – NİTELİKLERİNE GÖRE GİDERLER",
-   "values": [
-    -1737.594
-   ],
-   "origen": "estado 41"
-  },
-  {
-   "label": "Yönetim Giderleri",
-   "lado": "expense",
-   "page": 40,
-   "section": "NOT 30 – NİTELİKLERİNE GÖRE GİDERLER",
-   "values": [
-    -2220.764
-   ],
-   "origen": "estado 41"
-  },
-  {
-   "label": "Personel Ücret ve Giderleri",
-   "lado": "expense",
-   "page": 40,
-   "section": "NOT 30 – NİTELİKLERİNE GÖRE GİDERLER",
-   "values": [
-    -3370.689
-   ],
-   "origen": "estado 41"
-  },
-  {
-   "label": "Amortisman Giderleri",
-   "lado": "expense",
-   "page": 40,
-   "section": "NOT 30 – NİTELİKLERİNE GÖRE GİDERLER",
-   "values": [
-    -515.933
-   ],
-   "origen": "estado 41"
-  },
-  {
-   "label": "Karşılık gideri",
-   "lado": "expense",
-   "page": 40,
-   "section": "Diğer Faaliyet Giderleri",
-   "values": [
-    -1146.2
-   ],
-   "origen": "estado 43"
-  },
-  {
-   "label": "Faiz gelirleri",
-   "lado": "revenue",
-   "page": 41,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / NOT 32 – FİNANSAL GELİRLER",
-   "values": [
-    3.769759
-   ],
-   "origen": "estado 44"
-  },
-  {
-   "label": "Menkul kıymet satış karları",
-   "lado": "revenue",
-   "page": 41,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / NOT 32 – FİNANSAL GELİRLER",
-   "values": [
-    0.003909
-   ],
-   "origen": "estado 44"
-  },
-  {
-   "label": "Kambiyo karları",
-   "lado": "revenue",
-   "page": 41,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / NOT 32 – FİNANSAL GELİRLER",
-   "values": [
-    17.979663
-   ],
-   "origen": "estado 44"
-  },
-  {
-   "label": "Reeskont faiz gelirleri",
-   "lado": "revenue",
-   "page": 41,
-   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / NOT 32 – FİNANSAL GELİRLER",
-   "values": [
-    0.106113
-   ],
-   "origen": "estado 44"
-  },
-  {
-   "label": "Kısa vadeli borçlanma giderleri(-)",
-   "lado": "expense",
-   "page": 41,
-   "section": "NOT 33 – FİNANSAL GİDERLER",
-   "values": [
-    -7.195112
-   ],
-   "origen": "estado 45"
-  },
-  {
-   "label": "Reeskont faiz giderleri(-)",
-   "lado": "expense",
-   "page": 41,
-   "section": "NOT 33 – FİNANSAL GİDERLER",
-   "values": [
-    -0.201448
-   ],
-   "origen": "estado 45"
-  },
-  {
-   "label": "Diğer",
-   "lado": "expense",
-   "page": 41,
-   "section": "NOT 33 – FİNANSAL GİDERLER",
-   "values": [
-    -3.64802
-   ],
-   "origen": "estado 45"
-  }
- ]
+  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.md",
+  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.pdf",
+  "club": "besiktas-tr",
+  "year": 2009,
+  "generatedAt": "2026-10-20T19:07:01.294Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Yayın gelirleri",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        28.341165
+      ],
+      "glosa": "Ingresos por derechos audiovisuales"
+    },
+    {
+      "label": "Kombine kart ve loca geliri",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        10.813481
+      ],
+      "glosa": "Ingresos por abonos y palcos"
+    },
+    {
+      "label": "Sponsorluk ve reklam geliri",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        15.960321
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "Futbolcu satış ve kiralama gelirleri",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        1.7
+      ],
+      "glosa": "Ingresos por venta y cesión de jugadores"
+    },
+    {
+      "label": "Lisanslı ürün satış gelirleri",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        14.510202
+      ],
+      "glosa": "Ingresos por venta de productos oficiales"
+    },
+    {
+      "label": "İsim hakkı gelirleri, lisans gelirleri",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        5.451187
+      ],
+      "glosa": "Ingresos por derechos de denominación y licencias"
+    },
+    {
+      "label": "UEFA ve süper kupa katılım gelirleri",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        0.581837
+      ],
+      "glosa": "Ingresos por participación en UEFA y Supercopa"
+    },
+    {
+      "label": "Maç hasılatları",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        6.667796
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Seyahat satış gelirleri",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        1.035519
+      ],
+      "glosa": "Ingresos por venta de viajes"
+    },
+    {
+      "label": "Sigorta satış gelirleri",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        0.056076
+      ],
+      "glosa": "Ingresos por venta de seguros"
+    },
+    {
+      "label": "Diğer",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\"",
+      "values": [
+        0.938459
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Yurtdışı satışlar",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        0.015889
+      ],
+      "glosa": "Ventas en el extranjero"
+    },
+    {
+      "label": "Satıştan iadeler(-)",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        -0.894517
+      ],
+      "glosa": "Devoluciones sobre ventas (-)"
+    },
+    {
+      "label": "Satış iskontoları(-)",
+      "lado": "revenue",
+      "page": 39,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        -0.012263
+      ],
+      "glosa": "Descuentos sobre ventas (-)"
+    },
+    {
+      "label": "Konusu Kalmayan Karşılıklar",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Diğer Faaliyet Gelirleri\"",
+      "values": [
+        0.001551
+      ],
+      "glosa": "Exceso de provisiones"
+    },
+    {
+      "label": "Diğer olağan gelir ve karlar",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Diğer Faaliyet Gelirleri\"",
+      "values": [
+        0.34628
+      ],
+      "glosa": "Otros ingresos y ganancias ordinarios"
+    },
+    {
+      "label": "Önceki dönem gelir ve karlar",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Diğer Faaliyet Gelirleri\"",
+      "values": [
+        0.009488
+      ],
+      "glosa": "Ingresos y ganancias de ejercicios anteriores"
+    },
+    {
+      "label": "Diğer Olağandışı Gelir ve Karlar",
+      "lado": "revenue",
+      "page": 40,
+      "section": "nota que desglosa \"Diğer Faaliyet Gelirleri\"",
+      "values": [
+        0.034054
+      ],
+      "glosa": "Otros ingresos y ganancias extraordinarios"
+    },
+    {
+      "label": "Satılan ticari mallar maliyeti(-)",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        9.134433
+      ],
+      "glosa": "Coste de las mercancías vendidas (-)"
+    },
+    {
+      "label": "Satılan hizmet maliyeti(-)",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        74.045684
+      ],
+      "glosa": "Coste de los servicios prestados (-)"
+    },
+    {
+      "label": "Futbolcu Satış Zararı (-)",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        1.979061
+      ],
+      "glosa": "Pérdidas por venta de jugadores (-)"
+    },
+    {
+      "label": "Personel Ücret ve Giderleri",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Pazarlama, Satış ve Dağıtım Giderleri (-)\"",
+      "values": [
+        0.910689
+      ],
+      "glosa": "Sueldos y gastos de personal"
+    },
+    {
+      "label": "Kira giderleri",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Pazarlama, Satış ve Dağıtım Giderleri (-)\"",
+      "values": [
+        0.470937
+      ],
+      "glosa": "Gastos de alquiler"
+    },
+    {
+      "label": "Amortisman giderleri",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Pazarlama, Satış ve Dağıtım Giderleri (-)\"",
+      "values": [
+        0.086005
+      ],
+      "glosa": "Gastos de amortización"
+    },
+    {
+      "label": "Tan. Org. Fuar ve sergi giderleri",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Pazarlama, Satış ve Dağıtım Giderleri (-)\"",
+      "values": [
+        0.59718
+      ],
+      "glosa": "Gastos de promoción, organización, ferias y exposiciones"
+    },
+    {
+      "label": "Diğer giderler",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Pazarlama, Satış ve Dağıtım Giderleri (-)\"",
+      "values": [
+        0.669476
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Personel Ücret ve Giderleri",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+      "values": [
+        2.46
+      ],
+      "glosa": "Sueldos y gastos de personal"
+    },
+    {
+      "label": "Amortisman giderleri",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+      "values": [
+        0.429929
+      ],
+      "glosa": "Gastos de amortización"
+    },
+    {
+      "label": "Bina + Kira+Yönetim giderleri",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+      "values": [
+        0.336429
+      ],
+      "glosa": "Gastos de edificios, alquiler y administración"
+    },
+    {
+      "label": "Komisyon ve diğer hizmet giderleri",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+      "values": [
+        1.087926
+      ],
+      "glosa": "Comisiones y otros gastos de servicios"
+    },
+    {
+      "label": "Tan. Org. Fuar ve sergi giderleri",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+      "values": [
+        0.796409
+      ],
+      "glosa": "Gastos de promoción, organización, ferias y exposiciones"
+    },
+    {
+      "label": "Çalışılmayan kısım gider ve zararlar",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Diğer Faaliyet Giderleri (-)\"",
+      "values": [
+        6.070258
+      ],
+      "glosa": "Gastos y pérdidas por capacidad ociosa"
+    },
+    {
+      "label": "Önceki Dönem Gider ve Zararları",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Diğer Faaliyet Giderleri (-)\"",
+      "values": [
+        0.168521
+      ],
+      "glosa": "Gastos y pérdidas de ejercicios anteriores"
+    },
+    {
+      "label": "Diğer olağandışı gider ve zararlar",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Diğer Faaliyet Giderleri (-)\"",
+      "values": [
+        0.002517
+      ],
+      "glosa": "Otros gastos y pérdidas extraordinarios"
+    },
+    {
+      "label": "Karşılık gideri",
+      "lado": "expense",
+      "page": 40,
+      "section": "nota que desglosa \"Diğer Faaliyet Giderleri (-)\"",
+      "values": [
+        1.1462
+      ],
+      "glosa": "Dotación a las provisiones"
+    }
+  ]
 }

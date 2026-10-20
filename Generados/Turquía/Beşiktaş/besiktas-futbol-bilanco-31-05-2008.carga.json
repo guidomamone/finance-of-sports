@@ -1,0 +1,42 @@
+{
+ "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2008.pdf",
+ "generado": "2026-10-20T19:12:10.437Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "alta:fx",
+   "motivo": "El documento declara varios tipos de cambio a USD (1.2067 (línea 1691: \"| USD | 6.537 | 1,2067 | 7.888 | 35.271 | 1,3253 | 46.744 |\") | 1.3253 (línea 1691: \"| USD | 6.537 | 1,2067 | 7.888 | 35.271 | 1,3253 | 46.744 |\")). Regla #0: gana el de CIERRE que declara el documento. ¿Cuál es?"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-20: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 9 ejercicio(s) con un solo perímetro (consolidado); 16 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2008.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2008-05-31",
+  "evidencia": {
+   "pagina": 2,
+   "texto": "1 HAZİRAN 2007 – 31 MAYIS 2008 HESAP DÖNEMİNE AİT"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "besiktas-tr",
+ "year": 2008,
+ "cortadoEn": "filas"
+}

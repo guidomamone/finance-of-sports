@@ -1,0 +1,420 @@
+{
+  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md",
+  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf",
+  "club": "besiktas-tr",
+  "year": 2018,
+  "generatedAt": "2026-10-20T19:07:01.634Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Şampiyonlar ligi ve UEFA gelirleri",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        208.213926
+      ],
+      "glosa": "Ingresos por Liga de Campeones y UEFA"
+    },
+    {
+      "label": "Futbolcu satış ve kiralama gelirleri",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        177.00671
+      ],
+      "glosa": "Ingresos por traspaso y cesión de futbolistas"
+    },
+    {
+      "label": "Yayın gelirleri",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        135.8567
+      ],
+      "glosa": "Ingresos por derechos de retransmisión"
+    },
+    {
+      "label": "Lisanslı ürün satış gelirleri",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        133.857167
+      ],
+      "glosa": "Ingresos por venta de productos con licencia"
+    },
+    {
+      "label": "Maç hasılatları ve kombine kart loca geliri",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        105.622607
+      ],
+      "glosa": "Ingresos por taquilla, abonos y palcos"
+    },
+    {
+      "label": "Sponsorluk ve reklam geliri",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        72.971059
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "İsim ve lisans hakkı gelirleri",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        67.520679
+      ],
+      "glosa": "Ingresos por derechos de denominación y licencias"
+    },
+    {
+      "label": "Diğer",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        13.521606
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Satıştan iadeler(-)",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        -7.346675
+      ],
+      "glosa": "Devoluciones sobre ventas (-)"
+    },
+    {
+      "label": "Satış iskontoları / indirimleri (-)",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Hasılat\"",
+      "values": [
+        -1.055268
+      ],
+      "glosa": "Descuentos sobre ventas (-)"
+    },
+    {
+      "label": "Esas faaliyetlerden kur farkı gelirleri",
+      "lado": "revenue",
+      "page": 53,
+      "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
+      "values": [
+        33.363603
+      ],
+      "glosa": "Diferencias positivas de cambio de la actividad ordinaria"
+    },
+    {
+      "label": "Genel yönetim katılım gelirleri",
+      "lado": "revenue",
+      "page": 53,
+      "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
+      "values": [
+        4.011472
+      ],
+      "glosa": "Ingresos por cuotas de gestión general"
+    },
+    {
+      "label": "Konusu kalmayan karşılıklar (*)",
+      "lado": "revenue",
+      "page": 53,
+      "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
+      "values": [
+        0.444407
+      ],
+      "glosa": "Excesos y reversiones de provisiones (*)"
+    },
+    {
+      "label": "Esas faaliyetlerden diğer gelirler",
+      "lado": "revenue",
+      "page": 53,
+      "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
+      "values": [
+        0.169309
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Satışların maliyeti (-)",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        620.2931
+      ],
+      "glosa": "Coste de las ventas (-)"
+    },
+    {
+      "label": "Personel ücret ve giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        9.410406
+      ],
+      "glosa": "Gastos de personal y remuneraciones"
+    },
+    {
+      "label": "Kira giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        5.441213
+      ],
+      "glosa": "Gastos de arrendamiento"
+    },
+    {
+      "label": "Lojistik hizmet gideri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        2.339636
+      ],
+      "glosa": "Gastos de servicios logísticos"
+    },
+    {
+      "label": "Kargo ve nakliye giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        1.316728
+      ],
+      "glosa": "Gastos de flete y transporte"
+    },
+    {
+      "label": "Amortisman ve tükenme payları",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        0.978218
+      ],
+      "glosa": "Amortizaciones y depreciaciones"
+    },
+    {
+      "label": "Yemek giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        0.760868
+      ],
+      "glosa": "Gastos de manutención y comedor"
+    },
+    {
+      "label": "Ambalaj malzemesi giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        0.631913
+      ],
+      "glosa": "Gastos de material de embalaje"
+    },
+    {
+      "label": "Web yayın giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        0.287782
+      ],
+      "glosa": "Gastos de portal web y publicaciones digitales"
+    },
+    {
+      "label": "Tanıtım, fuar ve sergi giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        0.279414
+      ],
+      "glosa": "Gastos de promoción, ferias y exposiciones"
+    },
+    {
+      "label": "Reklam ve ilan giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        0.233293
+      ],
+      "glosa": "Gastos de publicidad y propaganda"
+    },
+    {
+      "label": "Haberleşme giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        0.147955
+      ],
+      "glosa": "Gastos de comunicaciones"
+    },
+    {
+      "label": "Diğer",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+      "values": [
+        2.786467
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Müşavirlik, dava ve icra noter giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+      "values": [
+        13.178395
+      ],
+      "glosa": "Gastos de asesoría jurídica, litigios y notariales"
+    },
+    {
+      "label": "Personel ücret ve giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+      "values": [
+        3.535196
+      ],
+      "glosa": "Gastos de personal y remuneraciones"
+    },
+    {
+      "label": "Şüpheli alacak karşılık giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+      "values": [
+        1.186107
+      ],
+      "glosa": "Dotación para insolvencias y créditos de dudoso cobro"
+    },
+    {
+      "label": "Vergi resim ve harçlar",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+      "values": [
+        0.869923
+      ],
+      "glosa": "Impuestos, tasas y tributos"
+    },
+    {
+      "label": "Amortisman ve tükenme/itfa payları",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+      "values": [
+        0.713414
+      ],
+      "glosa": "Dotación para amortización y depreciación"
+    },
+    {
+      "label": "Haberleşme giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+      "values": [
+        0.474934
+      ],
+      "glosa": "Gastos de comunicaciones"
+    },
+    {
+      "label": "Danışmanlık giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+      "values": [
+        0.107033
+      ],
+      "glosa": "Gastos de consultoría"
+    },
+    {
+      "label": "Kargo ve nakliye giderleri",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+      "values": [
+        0.051729
+      ],
+      "glosa": "Gastos de flete y transporte"
+    },
+    {
+      "label": "Diğer giderler",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+      "values": [
+        2.087904
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Esas faaliyetlerden kur farkı giderleri",
+      "lado": "expense",
+      "page": 53,
+      "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+      "values": [
+        87.614233
+      ],
+      "glosa": "Diferencias negativas de cambio de la actividad ordinaria"
+    },
+    {
+      "label": "Özel maliyetler değer düşüklüğü karşılık gideri (*)",
+      "lado": "expense",
+      "page": 53,
+      "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+      "values": [
+        6.839206
+      ],
+      "glosa": "Dotación por deterioro de mejoras en bienes arrendados (*)"
+    },
+    {
+      "label": "Vade farkı gideri",
+      "lado": "expense",
+      "page": 53,
+      "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+      "values": [
+        2.060306
+      ],
+      "glosa": "Gastos por intereses de aplazamiento comercial"
+    },
+    {
+      "label": "Dava karşılık giderleri",
+      "lado": "expense",
+      "page": 53,
+      "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+      "values": [
+        0.974776
+      ],
+      "glosa": "Dotación a la provisión para litigios"
+    },
+    {
+      "label": "Esas faaliyetlerden diğer giderler",
+      "lado": "expense",
+      "page": 53,
+      "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+      "values": [
+        0.838026
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}
