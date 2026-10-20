@@ -300,13 +300,11 @@ Object.assign(sources, {
     id:'gimnasiaesgrima-ar-balance-2023-2024', clubId:'gimnasiaesgrima-ar',
     title:'Balance General, 137° Ejercicio Económico (1°/7/2023 al 30/6/2024)',
     type:'official_balance_sheet', reliability:'primary',
-    publicNote:'El documento no explica la fila "Incremento Valor Jugadores FP"; se muestra tal como figura, en otros ingresos.',
   },
   'gimnasiaesgrima-ar-balance-2024-2025': {
     id:'gimnasiaesgrima-ar-balance-2024-2025', clubId:'gimnasiaesgrima-ar',
     title:'Balance General, 138° Ejercicio Económico (1°/7/2024 al 30/6/2025)',
     type:'official_balance_sheet', reliability:'primary',
-    publicNote:'El documento no explica la fila "Incremento Valor Jugadores FP"; se muestra tal como figura, en otros ingresos.',
   },
   'gimnasiaesgrima-ar-presupuesto-2023-2024': {
     id:'gimnasiaesgrima-ar-presupuesto-2023-2024', clubId:'gimnasiaesgrima-ar',
