@@ -113,6 +113,21 @@ const moldenoRevenueLinesByYear = {
     { rawLabel:'Andre driftsinntekter', normalizedCategory:'other_income', amountNative:3.39322, disclosureLevel:'aggregated' },
     { rawLabel:'Salg spillere/Utleie', normalizedCategory:'player_sales', amountNative:0.11, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Medlemskontingent', normalizedCategory:'member_dues', amountNative:0.251977, disclosureLevel:'aggregated' },
+    { rawLabel:'Egenandeler/deltakeravgift', normalizedCategory:'other_income', amountNative:3.136573, disclosureLevel:'aggregated' },
+    { rawLabel:'Markedsmidler NFF, NTF og UEFA', normalizedCategory:'broadcasting', amountNative:252.654499, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre tilskudd', normalizedCategory:'other_income', amountNative:6.969517, disclosureLevel:'aggregated' },
+    { rawLabel:'Inntekter Seriekamper', normalizedCategory:'matchday_competition', amountNative:13.292224, disclosureLevel:'aggregated' },
+    { rawLabel:'Inntekter NM Cup', normalizedCategory:'matchday_competition', amountNative:1.13782, disclosureLevel:'aggregated' },
+    { rawLabel:'Inntekter E-Cup', normalizedCategory:'competition_bonus', amountNative:8.499098, disclosureLevel:'aggregated' },
+    { rawLabel:'Oppgjør NM Cup', normalizedCategory:'matchday_competition', amountNative:2.312453, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre inntekter privatkamper etc.', normalizedCategory:'matchday_competition', amountNative:0.337957, disclosureLevel:'aggregated' },
+    { rawLabel:'Avtale MF/sponsor', normalizedCategory:'sponsorship_commercial', amountNative:20.587956, disclosureLevel:'aggregated' },
+    { rawLabel:'Kiosksalg', normalizedCategory:'other_income', amountNative:3.495627, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre driftsinntekter', normalizedCategory:'other_income', amountNative:1.078266, disclosureLevel:'aggregated' },
+    { rawLabel:'Salg spillere/Utleie', normalizedCategory:'player_sales', amountNative:1.186839, disclosureLevel:'aggregated' },
+  ],
 };
 const moldenoExpenseLinesByYear = {
   2025: [
@@ -337,6 +352,34 @@ const moldenoExpenseLinesByYear = {
     { rawLabel:'Anleggskostnader', normalizedCategory:'admin_general_expense', amountNative:-0.25044, disclosureLevel:'aggregated' },
     { rawLabel:'Avskrivninger', normalizedCategory:'depreciation', amountNative:-18.458514, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Administrasjon', normalizedCategory:'admin_general_expense', amountNative:-5.034714, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønn spillere, trenere, støtteapparat og administrasjon', normalizedCategory:'wages_squad', amountNative:-112.910578, disclosureLevel:'aggregated' },
+    { rawLabel:'Arbeidsgiveravgift', normalizedCategory:'wages_squad', amountNative:-17.1964, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnad', normalizedCategory:'wages_squad', amountNative:-1.177949, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre ytelser', normalizedCategory:'wages_squad', amountNative:-0.83559, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter treningsleir/privatkamper', normalizedCategory:'match_organisation_expense', amountNative:-4.751191, disclosureLevel:'aggregated' },
+    { rawLabel:'Leie treningsbaner etc.', normalizedCategory:'other_expenses', amountNative:-2.327033, disclosureLevel:'aggregated' },
+    { rawLabel:'Sportsrekvisita', normalizedCategory:'other_expenses', amountNative:-4.364783, disclosureLevel:'aggregated' },
+    { rawLabel:'Medisinske tjenester og rekvisita', normalizedCategory:'other_expenses', amountNative:-0.188705, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre sportslige kostnader', normalizedCategory:'other_expenses', amountNative:-4.956631, disclosureLevel:'aggregated' },
+    { rawLabel:'Baneleie serie- og cupkamper', normalizedCategory:'match_organisation_expense', amountNative:-0.038102, disclosureLevel:'aggregated' },
+    { rawLabel:'Avgift Norges Fotballforbund', normalizedCategory:'match_organisation_expense', amountNative:-0.639493, disclosureLevel:'aggregated' },
+    { rawLabel:'Annonsering seriekamper', normalizedCategory:'match_organisation_expense', amountNative:-0.698757, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter billettsalg', normalizedCategory:'match_organisation_expense', amountNative:-0.769893, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre arrangementskostnader', normalizedCategory:'match_organisation_expense', amountNative:-2.021809, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter cup kamper', normalizedCategory:'match_organisation_expense', amountNative:-2.225157, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter e-cup', normalizedCategory:'match_organisation_expense', amountNative:-14.151807, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter andre arrangement', normalizedCategory:'match_organisation_expense', amountNative:-1.579854, disclosureLevel:'aggregated' },
+    { rawLabel:'Reisekostnader seriekamper', normalizedCategory:'match_organisation_expense', amountNative:-5.752716, disclosureLevel:'aggregated' },
+    { rawLabel:'Kjøp og leie spillere', normalizedCategory:'other_expenses', amountNative:-2.936159, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter Prosjekt/Tiltak', normalizedCategory:'other_expenses', amountNative:-0.94498, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre driftskostnader', normalizedCategory:'other_expenses', amountNative:-4.814278, disclosureLevel:'aggregated' },
+    { rawLabel:'Varekjøp og andre kostnader kiosker', normalizedCategory:'other_expenses', amountNative:-1.991104, disclosureLevel:'aggregated' },
+    { rawLabel:'Anleggskostnader', normalizedCategory:'admin_general_expense', amountNative:-0.128727, disclosureLevel:'aggregated' },
+    { rawLabel:'Avskrivninger', normalizedCategory:'depreciation', amountNative:-37.930143, disclosureLevel:'aggregated' },
+    { rawLabel:'Tap på fordringer', normalizedCategory:'other_expenses', amountNative:-0.106614, disclosureLevel:'aggregated' },
+  ],
 };
 const moldenoFiscalYearMeta = {
   2025: {
@@ -419,6 +462,16 @@ const moldenoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:124.730053, officialTotalExpenses:143.382283, officialPAT:-0.072762,
   },
+  2023: {
+    currency:'NOK', fxRef:'NOK@2023-12-31',
+    sourceId:'molde-no-aarsregnskap-fotballklubb-fli-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:39.945461, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:314.940806, officialTotalExpenses:230.473167, officialPAT:124.413097,
+  },
 };
 const moldenoPresupuestoOverlayByYear = {};
 
@@ -473,6 +526,11 @@ Object.assign(sources, {
   'molde-no-aarsregnskap-fotballklubb-fli-2021': {
     id:'molde-no-aarsregnskap-fotballklubb-fli-2021', clubId:'molde-no',
     title:'Molde Fotballklubb — aarsregnskap-fotballklubb-fli-2021 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'molde-no-aarsregnskap-fotballklubb-fli-2023': {
+    id:'molde-no-aarsregnskap-fotballklubb-fli-2023', clubId:'molde-no',
+    title:'Molde Fotballklubb — aarsregnskap-fotballklubb-fli-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
