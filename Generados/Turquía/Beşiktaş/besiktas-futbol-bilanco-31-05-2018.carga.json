@@ -1,14 +1,18 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf",
- "generado": "2026-10-20T19:17:40.146Z",
+ "generado": "2026-10-20T19:30:07.861Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Satışların maliyeti (-)\" -> other_expenses 0; \"Özel maliyetler değer düşüklüğü karşılık\" -> other_expenses 0.6"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Salarios del plantel. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "tie-out-resultado",
+   "motivo": "resultado: ingresos 944.157302 + gastos -145.145075 + netInterest -159.235006 + tax -9.436353 = 630.340868 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 10.047768)"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "gastos: las filas suman -145.145075 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
  "avisos": [
@@ -164,16 +168,6 @@
    }
   ],
   "expenseLines": [
-   {
-    "rawLabel": "Satışların maliyeti (-)",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -620.2931,
-    "disclosureLevel": "aggregated",
-    "_pag": 10,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.5 (fila verificada: no se excluye sola): se propone la genérica de su lado"
-   },
    {
     "rawLabel": "Personel ücret ve giderleri",
     "normalizedCategory": "admin_general_expense",
@@ -400,9 +394,9 @@
     "amountNative": -6.839206,
     "disclosureLevel": "aggregated",
     "_pag": 53,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Vade farkı gideri",
@@ -445,29 +439,11 @@
    "assetSales": 0,
    "netInterest": -159.235006,
    "tax": -9.436353,
-   "extraRows": [
-    {
-     "label": "Finansman gelirleri",
-     "value": 65.062676
-    },
-    {
-     "label": "Finansman giderleri (-)",
-     "value": -224.297682
-    },
-    {
-     "label": "Dönem vergi gideri",
-     "value": -10.47008
-    },
-    {
-     "label": "Ertelenmiş vergi geliri/(gideri)",
-     "value": 1.033727
-    }
-   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 944.157302,
-   "officialTotalExpenses": 765.438175,
-   "officialPAT": 10.047768
+   "officialTotalExpenses": null,
+   "officialPAT": null
   },
   "source": {
    "id": "besiktas-tr-futbol-bilanco-31-05-2018",
@@ -716,15 +692,14 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 620.2931,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.5 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "cat": "no_es_rubro",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -620.2931
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2018.md L326 'Satislarin maliyeti (-)' 620.293.100 es el total impreso del estado de resultados y de la nota 18 (L2587 'Satislarin maliyeti toplami'): = ticari mallar 68.277.152 + hizmet 552.114.105 y sus renglones (L2574-L2586). Cargarlo lo duplicaria; queda afuera.",
+   "destino": "excluida"
   },
   {
    "label": "Personel ücret ve giderleri",
@@ -753,7 +728,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2010 'Kira giderleri' 379.053 esta en Pazarlama, Satis ve Dagitim Giderleri (2011.md L1996 comparativo): alquiler de locales de marketing; admin_general_expense (marketing -> admin segun precedente).",
    "destino": "expense",
    "amountNative": -5.441213
   },
@@ -1071,11 +1046,11 @@
    "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")",
    "signoFijo": 6.839206,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -6.839206
   },
@@ -1180,40 +1155,27 @@
   "porTabla": {
    "verificacion (nota que desglosa \"Hasılat\")": "gastos con signo",
    "verificacion (nota que desglosa \"Esas faaliyetlerden diğer gelirler\")": "gastos con signo",
-   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado)": "gastos con signo",
    "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
  },
  "totales": {
   "revSum": 944.157302,
-  "expSum": -765.438175,
+  "expSum": -145.145075,
   "officialTotalRevenue": 944.157302,
-  "officialTotalExpenses": 765.438175,
-  "officialPAT": 10.047768,
+  "officialTotalExpenses": null,
+  "officialPAT": null,
   "verificacion": {
-   "pat": "impreso",
-   "ingresos": "impreso",
-   "gastos": "impreso"
-  },
-  "patImpreso": {
-   "label": "resultado detectado por proponer-carga",
-   "pag": null,
-   "M": 10.047768,
-   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+   "ingresos": "impreso"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
    "M": 944.157302
-  },
-  "expImpreso": {
-   "label": "total de gastos (verificado)",
-   "pag": null,
-   "M": 765.438175
   }
  },
  "fxCloseNuevo": {
@@ -1223,10 +1185,9 @@
   "label": "Döviz alış del TCMB al 2018-05-31"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de tr 2018 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "tr-superlig",
+  "fuente": "roster cacheado de \"2017–18 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -1270,17 +1231,17 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de tr 2018 cacheada",
-   "estado": "pendiente"
+   "valor": "tr-superlig",
+   "fuente": "roster cacheado de \"2017–18 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+   "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 3,
   "lineasIngreso": 14,
-  "lineasGasto": 27,
+  "lineasGasto": 26,
   "metaFilas": 4,
-  "excluidas": 0
+  "excluidas": 1
  }
 }

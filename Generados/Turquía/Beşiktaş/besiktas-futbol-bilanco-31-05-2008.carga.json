@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2008.pdf",
- "generado": "2026-10-20T19:17:36.695Z",
+ "generado": "2026-10-20T19:30:06.185Z",
  "frena": [
   {
    "etapa": "alta:fx",
    "motivo": "El documento declara varios tipos de cambio a USD (1.2067 (línea 1691: \"| USD | 6.537 | 1,2067 | 7.888 | 35.271 | 1,3253 | 46.744 |\") | 1.3253 (línea 1691: \"| USD | 6.537 | 1,2067 | 7.888 | 35.271 | 1,3253 | 46.744 |\")). Regla #0: gana el de CIERRE que declara el documento. ¿Cuál es?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Stat giderleri\" -> admin_general_expense 0.5; \"Cari dönem reeskont gideri ve önceki dön\" -> other_expenses 0.6"
   },
   {
    "etapa": "fx",
@@ -249,13 +245,13 @@
    },
    {
     "rawLabel": "Stat giderleri",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "match_organisation_expense",
     "amountNative": -2.834888,
     "disclosureLevel": "aggregated",
     "_pag": 50,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "TFF ve UEFA gideri",
@@ -423,9 +419,9 @@
     "amountNative": -0.267355,
     "disclosureLevel": "aggregated",
     "_pag": 51,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Şüpheli alacak karşılığı",
@@ -856,12 +852,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Satışların Maliyeti (-)\")",
    "signoFijo": 2.834888,
-   "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2008 'Stat giderleri' 2.834.888: costo del estadio por partido (en 2010/2011 'Stad Giderleri' L1974 del 2011.md); mismo criterio que alquiler/costo de estadio -> match_organisation_expense.",
    "destino": "expense",
    "amountNative": -2.834888
   },
@@ -907,7 +903,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2010 'Tesis Giderleri' 2.534.758 (comparativo en 2011.md L1975): costo de instalaciones/mantenimiento; admin_general_expense, igual que 2006/2007 (el otro ano del club ya se acepto asi).",
    "destino": "expense",
    "amountNative": -2.189653
   },
@@ -1118,11 +1114,11 @@
    "origen": "verificacion (nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\")",
    "signoFijo": 0.267355,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -0.267355
   },
@@ -1230,10 +1226,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de tr 2008 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "tr-superlig",
+  "fuente": "roster cacheado de \"2007–08 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -1275,14 +1270,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de tr 2008 cacheada",
-   "estado": "pendiente"
+   "valor": "tr-superlig",
+   "fuente": "roster cacheado de \"2007–08 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+   "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 19,
   "lineasGasto": 24,
   "metaFilas": 2,

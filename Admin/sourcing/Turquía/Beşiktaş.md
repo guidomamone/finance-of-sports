@@ -49,3 +49,5 @@ No hizo falta pasar el WAF de `bjk.com.tr` — KAP solo alcanzó con el Browser 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2017 desde `Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2017.pdf` (sourceId `besiktas-tr-futbol-bilanco-31-05-2017`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2022 desde `Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2022.pdf` (sourceId `besiktas-tr-futbol-bilanco-31-05-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2009 desde `Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.pdf` (sourceId `besiktas-tr-futbol-bilanco-31-05-2009`).

@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2015.pdf",
- "generado": "2026-10-20T19:17:39.204Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Stat kira giderleri\" -> admin_general_expense 0.55; \"Vergi cezası (*)\" -> other_expenses 0.55"
-  }
- ],
+ "generado": "2026-10-20T19:30:07.301Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-20: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 9 ejercicio(s) con un solo perímetro (consolidado); 16 documento(s) mirados)"
  ],
@@ -200,13 +195,13 @@
    },
    {
     "rawLabel": "Stat kira giderleri",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "match_organisation_expense",
     "amountNative": -2.89326,
     "disclosureLevel": "aggregated",
     "_pag": 53,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Bonservis ve kiralama giderleri",
@@ -476,7 +471,7 @@
     "_pag": 56,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)"
    },
    {
     "rawLabel": "Vergi cezası (*)",
@@ -484,9 +479,9 @@
     "amountNative": -12.316571,
     "disclosureLevel": "aggregated",
     "_pag": 56,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Dava karşılık giderleri",
@@ -852,12 +847,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\")",
    "signoFijo": 2.89326,
-   "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2015 'Stat kira giderleri' 2.89326: alquiler del estadio para partidos; match_organisation_expense (igual que 2014 'Stad kira giderleri').",
    "destino": "expense",
    "amountNative": -2.89326
   },
@@ -873,7 +868,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2010 'Bonservis Ve Kiralama Giderleri' 3.139.475 (comparativo en 2011.md L1970): costo de pases/prestamos; mismo criterio que 2014 (Bonservis ve kiralama giderleri -> other_expenses), no amortizacion.",
    "destino": "expense",
    "amountNative": -3.98314
   },
@@ -998,7 +993,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2010 'Kira giderleri' 379.053 esta en Pazarlama, Satis ve Dagitim Giderleri (2011.md L1996 comparativo): alquiler de locales de marketing; admin_general_expense (marketing -> admin segun precedente).",
    "destino": "expense",
    "amountNative": -1.729738
   },
@@ -1273,10 +1268,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -13.948128
   },
@@ -1288,11 +1281,11 @@
    "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")",
    "signoFijo": 12.316571,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -12.316571
   },
@@ -1414,10 +1407,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de tr 2015 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "tr-superlig",
+  "fuente": "roster cacheado de \"2014–15 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -1456,14 +1448,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de tr 2015 cacheada",
-   "estado": "pendiente"
+   "valor": "tr-superlig",
+   "fuente": "roster cacheado de \"2014–15 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+   "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 13,
   "lineasGasto": 36,
   "metaFilas": 4,

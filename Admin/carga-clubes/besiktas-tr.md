@@ -592,6 +592,75 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2013–14 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
 ```
 
+## 2009
+
+### Ingresos
+
+```text
+2009: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 39, Jev 1 |
+| 2 | Kombine kart ve loca geliri | pág. 39, precedente |
+| 3 | Sponsorluk ve reklam geliri | pág. 39, Jev 1 |
+| 4 | Futbolcu satış ve kiralama gelirleri | pág. 39, Jev 1 |
+| 5 | Lisanslı ürün satış gelirleri | pág. 39, Jev 1 |
+| 6 | İsim hakkı gelirleri, lisans gelirleri | pág. 39, Jev 1 |
+| 7 | UEFA ve süper kupa katılım gelirleri | pág. 39, Jev 1 |
+| 8 | Maç hasılatları | pág. 39, Jev 1 |
+| 9 | Seyahat satış gelirleri | pág. 39, precedente |
+| 10 | Sigorta satış gelirleri | pág. 39, Jev 0.91 |
+| 11 | Diğer | pág. 39, Jev 0.99 |
+| 12 | Yurtdışı satışlar | pág. 39, precedente |
+| 13 | Satıştan iadeler(-) | pág. 39, precedente |
+| 14 | Satış iskontoları(-) | pág. 39, Jev 0.99 |
+| 15 | Konusu Kalmayan Karşılıklar | pág. 40, precedente |
+| 16 | Diğer olağan gelir ve karlar | pág. 40, Jev 0.99 |
+| 17 | Önceki dönem gelir ve karlar | pág. 40, Jev 1 |
+| 18 | Diğer Olağandışı Gelir ve Karlar | pág. 40, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti(-) | pág. 39, precedente |
+| 2 | Satılan hizmet maliyeti(-) | pág. 39, precedente |
+| 3 | Futbolcu Satış Zararı (-) | pág. 39, precedente |
+| 4 | Personel Ücret ve Giderleri | pág. 39, precedente |
+| 5 | Kira giderleri | pág. 39, precedente |
+| 6 | Amortisman giderleri | pág. 39, precedente |
+| 7 | Tan. Org. Fuar ve sergi giderleri | pág. 39, Jev 0.9 |
+| 8 | Diğer giderler | pág. 39, precedente |
+| 9 | Personel Ücret ve Giderleri | pág. 40, precedente |
+| 10 | Amortisman giderleri | pág. 40, precedente |
+| 11 | Bina + Kira+Yönetim giderleri | pág. 40, Jev 0.99 |
+| 12 | Komisyon ve diğer hizmet giderleri | pág. 40, Jev 0.97 |
+| 13 | Tan. Org. Fuar ve sergi giderleri | pág. 40, Jev 0.9 |
+| 14 | Çalışılmayan kısım gider ve zararlar | pág. 40, precedente |
+| 15 | Önceki Dönem Gider ve Zararları | pág. 40, Jev 0.9 |
+| 16 | Diğer olağandışı gider ve zararlar | pág. 40, Jev 0.9 |
+| 17 | Karşılık gideri | pág. 40, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2014, 2017, 2019, 2020, 2021, 2022, 2023): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2008–09 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
 ## Fuentes
 
 ### besiktas-tr-futbol-bilanco-31-05-2023
@@ -648,4 +717,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2009
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

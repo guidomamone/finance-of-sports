@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2016.pdf",
- "generado": "2026-10-20T19:17:39.531Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Stat kira giderleri\" -> admin_general_expense 0.55; \"Vergi cezası (*)\" -> other_expenses 0.55"
-  }
- ],
+ "generado": "2026-10-20T19:30:07.581Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-20: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 9 ejercicio(s) con un solo perímetro (consolidado); 16 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-381.179189); queda la suma, verificada por el resultado del ejercicio",
@@ -232,13 +227,13 @@
    },
    {
     "rawLabel": "Stat kira giderleri",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "match_organisation_expense",
     "amountNative": -3.869695,
     "disclosureLevel": "aggregated",
     "_pag": 53,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Bonservis ve kiralama giderleri",
@@ -526,9 +521,9 @@
     "amountNative": -9.516515,
     "disclosureLevel": "aggregated",
     "_pag": 56,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Vade farkı gideri",
@@ -949,12 +944,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\")",
    "signoFijo": 3.869695,
-   "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2016 'Stat kira giderleri' 3.869.695: alquiler del estadio; match_organisation_expense.",
    "destino": "expense",
    "amountNative": -3.869695
   },
@@ -970,7 +965,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2010 'Bonservis Ve Kiralama Giderleri' 3.139.475 (comparativo en 2011.md L1970): costo de pases/prestamos; mismo criterio que 2014 (Bonservis ve kiralama giderleri -> other_expenses), no amortizacion.",
    "destino": "expense",
    "amountNative": -3.657425
   },
@@ -1048,7 +1043,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2010 'Kira giderleri' 379.053 esta en Pazarlama, Satis ve Dagitim Giderleri (2011.md L1996 comparativo): alquiler de locales de marketing; admin_general_expense (marketing -> admin segun precedente).",
    "destino": "expense",
    "amountNative": -2.984371
   },
@@ -1399,11 +1394,11 @@
    "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")",
    "signoFijo": 9.516515,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -9.516515
   },
@@ -1593,8 +1588,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 13,
   "lineasGasto": 41,
   "metaFilas": 4,

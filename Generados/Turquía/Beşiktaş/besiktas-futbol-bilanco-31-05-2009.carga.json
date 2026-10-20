@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.pdf",
- "generado": "2026-10-20T19:17:37.032Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kombine kart ve loca geliri\" -> matchday_competition 0.75; \"Seyahat satış gelirleri\" -> other_income 0.7; \"Yurtdışı satışlar\" -> other_income 0.55; \"Satılan hizmet maliyeti(-)\" -> other_expenses 0.6; \"Futbolcu Satış Zararı (-)\" -> player_amortisation 0.5"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-20T19:30:06.447Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-20: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 9 ejercicio(s) con un solo perímetro (consolidado); 16 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-100.220616); queda la suma, verificada por el resultado del ejercicio",
@@ -38,9 +29,9 @@
     "amountNative": 10.813481,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sponsorluk ve reklam geliri",
@@ -108,9 +99,9 @@
     "amountNative": 1.035519,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sigorta satış gelirleri",
@@ -138,9 +129,9 @@
     "amountNative": 0.015889,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Satıştan iadeler(-)",
@@ -216,13 +207,13 @@
    },
    {
     "rawLabel": "Satılan hizmet maliyeti(-)",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -74.045684,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Futbolcu Satış Zararı (-)",
@@ -230,9 +221,9 @@
     "amountNative": -1.979061,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Personel Ücret ve Giderleri",
@@ -336,13 +327,13 @@
    },
    {
     "rawLabel": "Çalışılmayan kısım gider ve zararlar",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -6.070258,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Önceki Dönem Gider ve Zararları",
@@ -370,9 +361,9 @@
     "amountNative": -1.1462,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -401,6 +392,14 @@
     {
      "label": "Ertelenmiş Vergi Gelir/Gideri",
      "value": 0.003825
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Satılan hizmet maliyeti(-)",
+     "lado": "expense",
+     "importe": 74.045684,
+     "motivo": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2009.md L1432 'Satilan hizmet maliyeti(-)' 74.045.684 es la UNICA linea de costo de servicios de la nota 28 y no hay desglose en ningun lado del doc 2009 (el estado de resultados L233 solo trae Satislarin Maliyeti 85.159.178 = 9.134.433 + 74.045.684 + 1.979.061). Incluye sueldos, amortizacion de pases, partidos, etc. mezclados -> bolson sin desglosar. No es subtotal duplicado ("
     }
    ],
    "grossDebt": null,
@@ -460,11 +459,11 @@
    "origen": "verificacion (nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\")",
    "signoFijo": 10.813481,
    "cat": "matchday_competition",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2009.md L1416 'Kombine kart ve loca geliri' 10.813.481 dentro de Yurtici satislar: precedente 'kombine kart loca' -> matchday_competition.",
    "destino": "revenue",
    "amountNative": 10.813481
   },
@@ -566,11 +565,11 @@
    "origen": "verificacion (nota que desglosa \"Satış Gelirleri (net)\" > desglose de \"Yurtiçi satışlar\")",
    "signoFijo": 1.035519,
    "cat": "other_income",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "revenue",
    "amountNative": 1.035519
   },
@@ -612,11 +611,11 @@
    "origen": "verificacion (nota que desglosa \"Satış Gelirleri (net)\")",
    "signoFijo": 0.015889,
    "cat": "other_income",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "revenue",
    "amountNative": 0.015889
   },
@@ -732,12 +731,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Satışların Maliyeti (-)\")",
    "signoFijo": 74.045684,
-   "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2009.md L1432 'Satilan hizmet maliyeti(-)' 74.045.684 es la UNICA linea de costo de servicios de la nota 28 y no hay desglose en ningun lado del doc 2009 (el estado de resultados L233 solo trae Satislarin Maliyeti 85.159.178 = 9.134.433 + 74.045.684 + 1.979.061). Incluye sueldos, amortizacion de pases, partidos, etc. mezclados -> bolson sin desglosar. No es subtotal duplicado (",
    "destino": "expense",
    "amountNative": -74.045684
   },
@@ -749,11 +748,11 @@
    "origen": "verificacion (nota que desglosa \"Satışların Maliyeti (-)\")",
    "signoFijo": 1.979061,
    "cat": "player_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2009.md L1433 'Futbolcu Satis Zarari (-)' 1.979.061 esta en la seccion de COSTO de ventas (no en ingresos como en 2006/2007): es el valor residual del pase dado de baja en la venta, va al bucket de compra de jugadores; player_amortisation (criterio: costo de jugadores). Aplicar el mismo criterio en 2010 y 2011.",
    "destino": "expense",
    "amountNative": -1.979061
   },
@@ -784,7 +783,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2010 'Kira giderleri' 379.053 esta en Pazarlama, Satis ve Dagitim Giderleri (2011.md L1996 comparativo): alquiler de locales de marketing; admin_general_expense (marketing -> admin segun precedente).",
    "destino": "expense",
    "amountNative": -0.470937
   },
@@ -917,12 +916,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Diğer Faaliyet Giderleri (-)\")",
    "signoFijo": 6.070258,
-   "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2009.md L1498 'Calismayan kisim gider ve zararlar' 6.070.258: parte de la amortizacion de licencias de futbolistas en periodos sin actividad efectiva (explicacion en 2011.md L2096) -> player_amortisation, igual que 2006/2007.",
    "destino": "expense",
    "amountNative": -6.070258
   },
@@ -964,11 +963,11 @@
    "origen": "verificacion (nota que desglosa \"Diğer Faaliyet Giderleri (-)\")",
    "signoFijo": 1.1462,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -1.1462
   },
@@ -1015,12 +1014,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "tax"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Salarios del plantel",
-   "lado": "gasto"
   }
  ],
  "signos": {
@@ -1118,8 +1111,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 18,
   "lineasGasto": 17,
   "metaFilas": 4,

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md",
- "generado": "2026-10-20T19:17:02.107Z",
+ "generado": "2026-10-20T19:30:02.682Z",
  "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2018,
@@ -31,6 +31,11 @@
    "dif": 1.8829382497642655e-13
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2017 de este documento suma ingresos 604.012413; el sitio tiene 604.012413"
+  },
+  {
    "nombre": "documento del año 2019",
    "ok": false,
    "detalle": "ingresos de 2018: 944.157302 en este documento y 910.819332 en besiktas-futbol-bilanco-31-05-2019.pdf (columna del año anterior)"
@@ -39,11 +44,6 @@
    "nombre": "documento del año 2017",
    "ok": true,
    "detalle": "ingresos de 2017: 604.012413 en besiktas-futbol-bilanco-31-05-2017.pdf y 604.012413 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
   }
  ],
  "notas": [
