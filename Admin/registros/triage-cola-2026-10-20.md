@@ -1,0 +1,33 @@
+# Triage de la cola humana (auditora, 2026-10-20) — solo lectura, sobre `node tools/cola.mjs` de main
+
+Estado: 167 casos en 119 documentos. `node tools/estado.mjs`: "No cerró" 2 (Benfica 2014-15 pos-AG, Rapid Wien 2016-17; más Tolima 2023 que sale en la cola), "Propuesta frenada" 2 (IBE, motivo "registro": es lo que arregla `avisarRegistro` de Pipeline 7 con la huella; se destraban al mergear). `Admin/dudas-por-club.md` (130 secciones) NO lo revisé entero: lo marco abajo.
+
+## (a) se resuelve con un ajuste/respuesta que tiene precedente
+
+1. **Gestiones: 103 casos → responder `descartar`** (queda null, no frena). Regla: CONVENCIONES-DATOS "una gestión sin fuente pública queda en null" (2026-10-20); Onboarding 5 contestó 34 así. Antes, una búsqueda general + `wiki-extracto`. Por club: Basel 17, Sarpsborg 08 12, Rapid Wien 12, Viking 9, Tartu Tammeka 7, Lommel 5, RWDM 4, Harju JK Laagri 3, Beerschot 3, Go Ahead Eagles 2, Dinamo Zagreb 2, Celtic 2 y 1 cada uno: Willem II, Vålerenga, Vitesse, VVV-Venlo, Union Magdalena, Sparta Rotterdam, SC Heerenveen, SC Cambuur, Roda JC, PEC Zwolle, NAC Breda, Heracles, Helmond, Fredrikstad, Fortuna Sittard, FC Utrecht, FC Twente, FC Emmen, FC Eindhoven, FC Dordrecht, FC Den Bosch, Estoril Praia, De Graafschap, Almere City, ADO Den Haag.
+2. **AEK Athens (5 documentos: Notes 2022, FS 2023, FS 2024, orthi epanalipsi 2022, Notes 2025)**: "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες" → `aceptar` (wages_squad). Precedente: AEK ya carga "Αμοιβές ποδοσφαιρικού" como wages_squad (data/gr/aekathens-gr-data.js) y la regla de la línea que junta dos conceptos va entera a la categoría principal (CONVENCIONES-DATOS "una línea que junta dos conceptos…").
+3. **De Graafschap 2021-22 "Resultaat vergoedingssommen"** → `corregir --valor player_sales` (propuesta decía other_expenses). Precedente: la misma etiqueta ya está cargada como player_sales en data/nl.
+4. **Dinamo Zagreb 2025 (33 casos)**: precedente del mismo club solo para "Članarine" ingreso → `corregir --valor member_dues` (data/hr/dinamozagreb-hr-data.js, 3 veces). Aceptar las propuestas de administración/otros gastos (servicios, alquileres, mantenimiento, materiales: admin_general_expense / other_expenses, criterio general de club-data-mapping para costos no deportivos). "Doprinosi za zdravstveno osiguranje" (contribuciones de salud) → wages_squad (cargas sociales pegadas al sueldo, casos-por-pais-y-formato.md L30-33). Revisar a mano solo: "Ostali rashodi za radnike", "Zdravstvene i veterinarske usluge" y "Neotpisana vrijednost… otuđene imovine" (7,05 M, ver (b)).
+5. **Nombres legales (alta, 6)**: Warwickshire CCC → aceptar "The Warwickshire County Cricket Club Limited"; Yorkshire CCC → "The Yorkshire County Cricket Club Limited" (portada); FC St. Gallen → "FC St. Gallen AG"; Atletico FC → "Club Deportivo Atletico Futbol Club SA" (portada); **FC Thun → corregir `--valor "FC Thun AG"`** (la propuesta "Jahresbericht Fc Thun AG" está mal); Harlequins: la portada no dice nada → mirar el documento.
+6. **Perfil (5; Midtjylland 2020 socios y otros deportes, Viking 2012 socios y otros deportes, 1 más)**: regla de memoria "no frenar la carga por socios/otros deportes": googlear el club y contestar `corregir --valor sí|no`.
+7. **Viking FLI 2015 y 2016 "Overføringer og disponeringer"**: responder `sí` (afuera): son aplicaciones del resultado al patrimonio, no ingresos ni gastos (SKILL de mapping §2 y la lógica de resultado del ejercicio).
+8. **Rapid Wien 2016-17 (4 casos: no-cierra ingresos, no-cierra resultado, duda de localizar, duda de extraer)** y **Benfica 2014-15 pos-AG (2 no-cierra)**: los dos ya se resolvieron con ajustes con precedente (fila / resultado-final / Diferencia en el documento, ajuste `desglose`, caso Fortaleza 2022 y Benfica); el caso Rapid de 62.001 es un descuadre del propio documento (resultado impreso L1546 vs L1542+L1545) → ajuste `resultado-final` con cita. Que Onboarding los cierre en la cola.
+9. **Tolima 2023** (no-cierra ingresos 0 vs 33,32 M, 3 duda-tema, 1 primer-anio, 1 duda-de-localizar): el .md no trae estado de resultados (ya lo dijo Onboarding 5): queda como fuente sin estado (`sin_estado`), no se reintenta (cuesta y no sirve). Responder las dudas con "sin estado".
+10. **Excelsior 2023-24 "resultaat deelneming"** → no es una línea de ingresos: va al resultado financiero (`netInterest`), igual que "Resultat af kapitalandele i tilknyttede virksomheder" de Randers y Vejle (casos-por-pais-y-formato.md L101-104).
+
+## (b) criterio nuevo → votación
+- **Viking FLI 2014 "Refundert lønn, pensjon… Viking ASA" (30,08 M)**: ingreso que es reembolso exacto del gasto salarial; ¿se carga bruto (fidelidad) o neteado? No hay precedente igual (el de St. Gallen es simétrico y está decidido).
+- **Viking FLI 2015**: ¿el documento es solo de la asociación y no se carga nada? Roza la REGLA "qué entidad se carga cuando el fútbol está en una sociedad aparte" (punto 3): hay que ver el documento.
+- **Dinamo Zagreb "Neotpisana vrijednost… otuđene i rashodovane imovine" (valor residual de activos dados de baja, 7,05 M)** → ¿exceptional_items? Hay un precedente parecido de Beşiktaş (pérdida en venta de jugadores → player_amortisation), pero para activos no deportivos no hay regla.
+- **Porto consolidado 2021-22, año anterior**: la columna 2021 suma 254,20 contra 268,33 cargado. Parece comparativo reexpresado (regla Salernitana: el comparativo no reemplaza lo cargado) → probablemente (a) aceptar, pero hay que mirar la diferencia del 5 % en el documento.
+
+## (c) necesita al club
+- Ninguno claro hoy. Rapid Wien (el impuesto diferido y el descuadre impreso de 62 mil) se puede cerrar con ajuste y nota; si Guido quiere, va a `dudas-por-club.md`.
+
+## Pendiente
+- `Admin/dudas-por-club.md`: 130 secciones, 2004 líneas. No lo clasifiqué. Propongo una pasada con subagentes de lectura (por bloques de ~20 secciones) solo si querés.
+
+## Cierre de los dos (b) que quedaban (auditora, mismo día)
+- **Dinamo Zagreb "Neotpisana vrijednost… otuđene imovine" (7,05 M)**: ya tiene precedente, no se vota: las menos-valias por alienación de activos van a `exceptional_items` (Portugal "Perdas com alienações… (menos-valias)", Italia "minusvalenze da alienazioni", en varios clubes). Aceptar la propuesta del sistema.
+- **Porto 2021-22, año anterior**: el documento lo dice (relatorio-contas-consolidadas-2021-22.md L266, L905 "30 junho 2021* (reexpresso)", Nota 2, cambio de política contable de los derechos de jugadores). Regla "un comparativo reexpresado no es la transcripción del año" (CONVENCIONES-DATOS): se acepta, lo cargado no se toca.
+- **Viking FLI 2014 y 2015**: ya descartados (el fútbol está en Viking Fotball ASA), no se votan.
