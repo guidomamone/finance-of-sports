@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 844 — Chequeos de la auditoría y frenados resueltos (2026-10-20)
+
+* 325: `audit.js` suma `json-no-valida`, `json-aviso` y `json-js-desfasado` (avisos) y `archivo-pesado` cubre todo `Admin/*.md`;
+  `ida-y-vuelta.mjs` lista los clubes con avisos. `frenados-por-script.jsonl` gana el campo `resuelto` (6 marcados). Aprobado por la auditora.
+
 ## Versión 843 — Un dato de contexto sin fuente ya no frena (2026-10-20)
 
 * REGLA de Guido: estadio, sponsor, liga o gestión sin fuente pública quedan en null con la marca `sin-fuente` y el año se carga igual.

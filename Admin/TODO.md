@@ -347,10 +347,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     automatizar "respuesta → fila" o programar posts; exponer solo las acciones necesarias. OmniRoute: gateway local de modelos con
     fallback, para abaratar la API (no Haiku, ver la regla de modelos); concentra credenciales y prompts, así que se revisa el repo
     antes. Quedan sin ubicar OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: pedir los links a Guido.
-325. CHEQUEOS DE LA AUDITORÍA QUE FALTAN (de Docs 1, 2026-10-20; informe en `Admin/mediciones/auditoria-codigo-docs-2026-10-20.md`):
-    a) `audit.js`: `json-no-valida` y `json-js-desfasado` antes de la fase 2 del 245 (la parte P2 la está sumando Pipeline 6);
-    b) `ida-y-vuelta.mjs`: listar qué clubes validan con avisos y el texto del aviso (hoy solo da el número);
-    c) `archivo-pesado` de `audit.js` extendido a los demás `Admin/*.md` (hoy solo el CHANGELOG; `finance-of-sports-project.md` pesa 520 KB).
 326. CHECK-IN DE OUTREACH A LOS 30 DÍAS (2026-10-24, sacado de la skill `club-outreach`): evaluar lo que dice
     `Admin/outreach/checkin-2026-10-24.md`; hay una tarea programada que lo pregunta, el archivo es el respaldo.
 
