@@ -213,3 +213,8 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 ### Onboarding 6: Estudiantes LP (2026-10-20)
 - "Resultado por revaluación de jugadores" 2023 (291 M, Nota 16) y 2024 (4.053 M, Nota 13 = hechos posteriores: ventas pactadas tras el cierre, saldo en Jugadores destinados a la venta) pasó de `player_sales` a `other_income` (voto de la Auditora); ajustes `categoria` en los dos documentos; 2024-25 no repite la fila. `Admin/carga-clubes/estudianteslp.md` corregido. ASSET_V 1513.
 - Gimnasia LP: `publicNote` repuesta en 2024 y 2025 (3 a 0, other_income como está; el documento no explica la fila). ASSET_V 1514. La "Nota 16" que cita la fila de Estudiantes 2023 no aparece como nota en el documento (solo la cita la propia fila).
+
+### Onboarding 6: Godoy Cruz y cierre del 238 gratis (2026-10-20)
+- Godoy Cruz 2020 "Ingreso por Derechos de Tanteo" (38,59 M) de `player_sales` a `other_income` (tanda 3 de la Auditora), ajuste `categoria` con cita (L164); el comparativo 2019 no está cargado. Las cesiones de Getafe no cambian nada. ASSET_V 1515.
+- Cerrado el 238 en lo gratis: cola en 0 (AEK), dudas OH Leuven/Thun/Polissya fuera, tandas 2 y 3 aplicadas (Hoffenheim, Stuttgart, Estudiantes LP, Gimnasia LP, Godoy Cruz). Queda lo pagado/no aplicado: Rosario Central residuales y Independiente estadio (ver arriba), pares duplicados de Rep. Checa, Aalesund y Vålerenga 2008-21.
+- Gasto: US$ 1,20 de 6, sin lote.

@@ -157,7 +157,7 @@ window.RANKINGS["ar-primera"] = {
         mix:[["Cuotas Sociales",0.9],["Comercial / Sponsors",0.393],["Estadio",0.316],["Televisión",2.336],["Venta de Jugadores",2.662],["Educación",0.398],["Otras secciones deportivas",0.33],["Otros ingresos",2.682]] },
       { id:"godoycruz-ar", revenue:8.724, reportType:"official_balance_sheet",
         sourceId:"godoycruz-ar-estados-contables-2019-20",
-        mix:[["Cuotas Sociales",0.333],["Comercial / Sponsors",0.434],["Estadio",0.368],["Televisión",3.733],["Venta de Jugadores",2.488],["Educación",0.455],["Otras secciones deportivas",0.052],["Otros ingresos",0.86]] },
+        mix:[["Cuotas Sociales",0.333],["Comercial / Sponsors",0.434],["Estadio",0.368],["Televisión",3.733],["Venta de Jugadores",1.94],["Educación",0.455],["Otras secciones deportivas",0.052],["Otros ingresos",1.408]] },
     ],
   },
   2019: {
