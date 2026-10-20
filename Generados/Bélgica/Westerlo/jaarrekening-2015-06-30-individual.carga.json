@@ -1,0 +1,393 @@
+{
+ "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf",
+ "generado": "2026-10-20T19:26:48.537Z",
+ "frena": [],
+ "avisos": [
+  "ejercicio de transición por cambio de cierre (18 meses al 2015-06-30): encadena con el cierre anterior 2013-12-31 y el siguiente 2016-06-30; se carga como el año, con nota pública (to-do 237 ab)",
+  "materialidad: \"Andere bedrijfskosten\" va como other_expenses con 0.75 (las dudas de gastos suman 0.28% de su lado)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-4.590476); queda la suma, verificada por el resultado del ejercicio"
+ ],
+ "ejercicio": {
+  "clubId": "westerlo-be",
+  "year": 2015,
+  "cierre": "2015-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Brutomarge (+)/(-)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 4.882931,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -4.221367,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.375183,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.019506,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.041553,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.013432,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": "materialidad",
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.28% (≤ 1%) y esta tiene 0.75"
+   },
+   {
+    "rawLabel": "Uitzonderlijke kosten",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.052751,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2015-06-30",
+   "sourceId": "westerlo-be-jaarrekening-2015-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.003796,
+   "tax": -0.068497,
+   "extraRows": [
+    {
+     "label": "Financiële opbrengsten",
+     "value": -0.000001
+    },
+    {
+     "label": "Financiële kosten",
+     "value": -0.003795
+    },
+    {
+     "label": "Belastingen op het resultaat (+)/(-)",
+     "value": -0.068497
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Brutomarge (+)/(-)",
+     "lado": "revenue",
+     "importe": 4.882931,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 4.882931,
+   "officialTotalExpenses": 4.590476,
+   "officialPAT": 0.125859
+  },
+  "source": {
+   "id": "westerlo-be-jaarrekening-2015-06-30-individual",
+   "clubId": "westerlo-be",
+   "title": "KVC Westerlo BV — jaarrekening-2015-06-30-individual (ejercicio 2015)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "otro",
+  "meses": 18,
+  "inicio": "2014-01-01",
+  "cierre": "2015-06-30",
+  "cierreDe": "período del formulario (to-do 298 f)",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "met betrekking tot het boekjaar dat de periode dekt van 01-01-2014 tot 30-06-2015"
+  },
+  "confianza": "alta"
+ },
+ "transicion": {
+  "meses": 18,
+  "inicio": "2014-01-01",
+  "cierre": "2015-06-30",
+  "anterior": "2013-12-31",
+  "siguiente": "2016-06-30"
+ },
+ "clubId": "westerlo-be",
+ "year": 2015,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 10,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "page": 6,
+   "native": 4.882931,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.882931,
+   "cat": "lump_football_operations",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.882931
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "page": 6,
+   "native": 4.221367,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.221367,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.221367
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 6,
+   "native": 0.375183,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.375183,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 2 clubes (Lierse SK, Patro Eisden), titulo:bedrijfsopbrengsten en bedrijfskosten · Claude 2026-10-18 (subagente Sonnet): la fila se partió con ajustes fila + categoria según la nota de activos fijos (pases / bienes de uso)",
+   "destino": "expense",
+   "amountNative": -0.375183
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "page": 6,
+   "native": 0.019506,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -0.019506,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.019506
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+   "page": 6,
+   "native": 0.041553,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.041553,
+   "cat": "exceptional_items",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.041553
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 6,
+   "native": 0.013432,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.013432,
+   "cat": "other_expenses",
+   "conf": 0.75,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.28% (≤ 1%) y esta tiene 0.75",
+   "enLista": true,
+   "enCola": false,
+   "destino": "expense",
+   "amountNative": -0.013432
+  },
+  {
+   "label": "Uitzonderlijke kosten",
+   "page": 6,
+   "native": 0.052751,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.052751,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.052751
+  },
+  {
+   "label": "Financiële opbrengsten",
+   "page": null,
+   "native": -0.000001,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Financiële kosten",
+   "page": null,
+   "native": -0.003795,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen op het resultaat (+)/(-)",
+   "page": null,
+   "native": -0.068497,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 4.882931,
+  "expSum": -4.590476,
+  "officialTotalRevenue": 4.882931,
+  "officialTotalExpenses": 4.590476,
+  "officialPAT": 0.125859,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.125859,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 4.882931
+  }
+ },
+ "liga": {
+  "valor": "be-proleague",
+  "fuente": "roster cacheado de \"2014–15 Belgian Pro League\" (tools/club-league-reference/be.json), coincidencia exacta \"Westerlo\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2015,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2015-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2015-06-30) y contenido del .md (2 de 4 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2015-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2015-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2015-06-30 = 0.893735 (Tipo de referencia del Banco Central Europeo al 2015-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "westerlo-be-jaarrekening-2015-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "be-proleague",
+   "fuente": "roster cacheado de \"2014–15 Belgian Pro League\" (tools/club-league-reference/be.json), coincidencia exacta \"Westerlo\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 6,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

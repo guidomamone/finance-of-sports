@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.md",
+ "clave": "cdade0fc0691c31b392fa93adfe51121624644c5",
+ "generado": "2026-10-20T19:25:33.768Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [
+   {
+    "linea": 285,
+    "motivo": "Financiële opbrengsten (1 en miles) es un ingreso financiero, pero se cargó con signo negativo (-0.000001), como si fuera un costo."
+   }
+  ],
+  "observacion": "La Brutomarge se carga como renglón porque Omzet y 60/61 están vacíos (esquema abreviado belga). Los subtotales 9901, 9902, 9903, 9904 y 9905 no se cargaron, y está bien que así sea. El efecto del signo de los ingresos financieros es mínimo (0.000002) y queda dentro del redondeo."
+ }
+}

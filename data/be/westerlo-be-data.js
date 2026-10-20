@@ -4,6 +4,9 @@ const westerloBeRevenueLinesByYear = {
     { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:16.309398, disclosureLevel:'aggregated' },
     { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.046566, disclosureLevel:'aggregated' },
   ],
+  2015: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:4.882931, disclosureLevel:'aggregated' },
+  ],
 };
 
 const westerloBeExpenseLinesByYear = {
@@ -21,6 +24,14 @@ const westerloBeExpenseLinesByYear = {
     { rawLabel:'Andere bedrijfskosten — Andere', normalizedCategory:'other_expenses', amountNative:-0.034178, disclosureLevel:'detailed' },
     { rawLabel:'Niet-recurrente bedrijfskosten (minderwaarden bij realisatie van immateriële en materiële vaste activa)', normalizedCategory:'player_impairment', amountNative:-0.201673, disclosureLevel:'aggregated' },
   ],
+  2015: [
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-4.221367, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.375183, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:0.019506, disclosureLevel:'aggregated' },
+    { rawLabel:'Voorzieningen voor risico\'s en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)', normalizedCategory:'exceptional_items', amountNative:-0.041553, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.013432, disclosureLevel:'aggregated' },
+    { rawLabel:'Uitzonderlijke kosten', normalizedCategory:'exceptional_items', amountNative:-0.052751, disclosureLevel:'aggregated' },
+  ],
 };
 
 const westerloBeFiscalYearMeta = {
@@ -34,6 +45,24 @@ const westerloBeFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     grossDebt:39.407332, cash:0.135090,
     officialTotalRevenue:30.729382, officialTotalExpenses:42.126477, officialPAT:-11.767747,
+  },
+  2015: {
+    currency:'EUR', fxRef:'EUR@2015-06-30',
+    sourceId:'westerlo-be-jaarrekening-2015-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.003796, tax:-0.068497,
+    extraRows: [
+      {label:'Financiële opbrengsten', value:-0.000001},
+      {label:'Financiële kosten', value:-0.003795},
+      {label:'Belastingen op het resultaat (+)/(-)', value:-0.068497},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:4.882931, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:4.882931, officialTotalExpenses:4.590476, officialPAT:0.125859,
   },
 };
 
@@ -56,6 +85,12 @@ Object.assign(sources, {
     id:'westerlo-be-jaarrekening-2025', clubId:'westerlo-be',
     title:'Jaarrekening van KVC Westerlo BV voor het boekjaar van 1/7/2024 tot 30/6/2025',
     type:'official_balance_sheet', reliability:'primary',
+  },
+  'westerlo-be-jaarrekening-2015-06-30-individual': {
+    id:'westerlo-be-jaarrekening-2015-06-30-individual', clubId:'westerlo-be',
+    title:'KVC Westerlo BV — jaarrekening-2015-06-30-individual (ejercicio 2015)',
+    type:'official_balance_sheet', reliability:'primary',
+    publicNote:'Ejercicio de transición por cambio de fecha de cierre: del 01/01/2014 al 30/06/2015 (18 meses).',
   },
 });
 
