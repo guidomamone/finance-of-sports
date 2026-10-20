@@ -436,6 +436,20 @@ contable valúa a costo, sin nota que la explique): `other_income`. Estudiantes 
 de los ingresos; balance con "Jugadores destinados a la venta" y ventas pactadas después del cierre): estaba en `player_sales`, pasa a `other_income`
 (2 votos a 1; Onboarding verifica antes la nota del documento y revisa que 2024-25 no vuelva a contar esas ventas).
 
+## REGLA: el ingreso por cesión (préstamo) de jugadores sigue a cómo lo imprime el documento (votación, 2026-10-20)
+
+Si el documento lo imprime como línea propia ("Cesiones" de Getafe, "Ingresos por cesiones (préstamo de jugadores)" de Osasuna, "Prestamos jugadores" de Boca
+y Gimnasia), va a `player_sales`. Si viene dentro de "Otros ingresos" sin desglose (Mallorca 2025, 0,233 M, 0,3 % de los ingresos; Oviedo), queda en
+`other_income`: no se inventa un desglose que el documento no da (la diferencia es inmaterial). Votos: C, A, A; los tres coinciden en todo lo material.
+
+## REGLA: el "derecho de tanteo" cobrado va a `other_income`, no a `player_sales` (votación 3 a 0, 2026-10-20)
+
+Un ingreso por derecho de tanteo que el documento no liga a una transferencia ya hecha ni a "Ingresos venta de jugadores" va a `other_income`: en
+`player_sales` el lector entendería que se vendió un jugador. Si el documento lo liga a una venta concreta, vuelve a `player_sales`. Caso: Godoy Cruz 2020,
+"Ingreso por Derechos de Tanteo" 38,59 M (6,3 % de los ingresos): pasa a `other_income`; la "Rescisión de Contrato" (2,35 M, 0,4 %) queda en `player_sales`.
+CATEGORÍA (prompt): un ingreso por derecho de tanteo que el documento no liga a una transferencia ya hecha va a other_income, no a player_sales.
+EJEMPLO-CATEGORÍA: godoycruz-ar | revenue | Ingreso por Derechos de Tanteo | other_income
+
 ## REGLA: entidades del club, grupos multiclub e ingresos de las otras entidades
 
 Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.jsonl` (cada línea con su cita) y lo verifica
