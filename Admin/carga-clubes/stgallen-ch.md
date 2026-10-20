@@ -205,7 +205,7 @@ tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Suiza/St. Gallen/geschaeftsbericht-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -214,7 +214,6 @@ Generados/Suiza/St. Gallen/geschaeftsbericht-2021-22.categorias.json (escalón d
 | 1 | Erträge brutto | pág. 16, precedente |
 | 2 | Ertragsminderungen | pág. 16, precedente |
 | 3 | Ausserordentlicher Ertrag | pág. 16, precedente |
-| 4 | Entschädigung von FCSG Event AG | pág. 16, Jev 0.9 |
 
 ### Gastos
 
@@ -225,24 +224,17 @@ Generados/Suiza/St. Gallen/geschaeftsbericht-2021-22.categorias.json (escalón d
 | 3 | Sonstiger Betriebsaufwand | pág. 16, precedente |
 | 4 | Abschreibungen Sachanlagen | pág. 16, precedente |
 | 5 | Abschreibungen Spielerwerte | pág. 16, precedente |
-| 6 | Ausserordentlicher Aufwand | pág. 16, Jev 1 |
-| 7 | Entschädigung an FCSG AG | pág. 16, precedente |
+| 6 | Ausserordentlicher Aufwand | pág. 16, precedente |
 
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Estadio, Venta de Jugadores, Otras secciones deportivas, Organización de partidos
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2021–22 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "St. Gallen".
 ```
 
 ## 2021
