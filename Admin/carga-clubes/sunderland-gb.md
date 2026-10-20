@@ -128,6 +128,47 @@ grossDebt = Bank Overdraft (Nota 14). cash = "Cash at bank" (balance: Current as
 Stocks 0.100 + Debtors 11.791 + Cash = 11.891 impreso -> Cash = 0).
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate receipts | pág. 23, precedente |
+| 2 | Television and media | pág. 23, precedente |
+| 3 | Sponsorship and royalties | pág. 23, precedente |
+| 4 | Conference and banqueting | pág. 23, precedente |
+| 5 | Retail and merchandising | pág. 23, precedente |
+| 6 | Other | pág. 23, precedente |
+| 7 | Other operating income | pág. 14, precedente |
+| 8 | Other operating income | pág. 14, precedente |
+| 9 | Profit on disposal of player contracts | pág. 14, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 14, Claude 0.8 |
+| 2 | Operating expenses | pág. 14, Claude 0.8 |
+| 3 | Amortisation of players contracts | pág. 14, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-championship, verificado contra roster cacheado de "2022–23 EFL Championship" (tools/club-league-reference/gb.json), coincidencia exacta "Sunderland".
+```
+
 ## 2022
 
 ### Ingresos
@@ -336,6 +377,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sunderland-gb-full-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

@@ -28,6 +28,15 @@ window.RANKINGS["gb-championship"] = {
         mix:[["Comercial / Sponsors",6.816],["Estadio",14.804],["Televisión",13.4],["Venta de Jugadores",11.315],["Otros ingresos",13.069]] },
     ],
   },
+  2023: {
+    leagueSize: 24,
+    wiki: {"t":"2022–23 EFL Championship","lang":"en","at":"2026-09-30","n":24},
+    clubs: [
+      { id:"sunderland-gb", revenue:48.5, reportType:"official_balance_sheet",
+        sourceId:"sunderland-gb-full-accounts-2022-23",
+        mix:[["Comercial / Sponsors",5.526],["Estadio",13.754],["Televisión",12.97],["Venta de Jugadores",0.394],["Otros ingresos",15.856]] },
+    ],
+  },
   2022: {
     leagueSize: 24,
     wiki: {"t":"2021–22 EFL Championship","lang":"en","at":"2026-10-19","n":24},

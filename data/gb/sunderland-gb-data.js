@@ -57,6 +57,17 @@ const sunderlandGbRevenueLinesByYear = {
     { rawLabel:'Profit of disposal of players contracts', normalizedCategory:'player_sales', amountNative:0.631, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0.551, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:10.693, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and media', normalizedCategory:'broadcasting', amountNative:10.083, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship and royalties', normalizedCategory:'sponsorship_commercial', amountNative:1.576, disclosureLevel:'aggregated' },
+    { rawLabel:'Conference and banqueting', normalizedCategory:'other_income', amountNative:8.428, disclosureLevel:'aggregated' },
+    { rawLabel:'Retail and merchandising', normalizedCategory:'sponsorship_commercial', amountNative:2.72, disclosureLevel:'aggregated' },
+    { rawLabel:'Other', normalizedCategory:'other_income', amountNative:1.598, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:2.301, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of player contracts', normalizedCategory:'player_sales', amountNative:0.306, disclosureLevel:'aggregated' },
+  ],
 };
 
 const sunderlandGbExpenseLinesByYear = {
@@ -92,6 +103,11 @@ const sunderlandGbExpenseLinesByYear = {
     { rawLabel:'Net operating expenses', normalizedCategory:'other_expenses', amountNative:-20.954, disclosureLevel:'aggregated' },
     { rawLabel:'Amortisation of players contracts', normalizedCategory:'player_amortisation', amountNative:-1.69, disclosureLevel:'aggregated' },
     { rawLabel:'Exceptional operating expense', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-4.13, disclosureLevel:'aggregated' },
+    { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-40.583, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of players contracts', normalizedCategory:'player_amortisation', amountNative:-2.715, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -174,6 +190,21 @@ const sunderlandGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:11.909, officialTotalExpenses:23.568, officialPAT:-11.746,
   },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-07-31',
+    sourceId:'sunderland-gb-full-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.043, tax:0,
+    extraRows: [
+      {label:'Interest payable and similar expenses', value:null},
+      {label:'Interest receivable and similar income', value:0.043},
+      {label:'Tax on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:37.705, officialTotalExpenses:47.428, officialPAT:-9.68,
+  },
 };
 
 const sunderlandGbPresupuestoOverlayByYear = {};
@@ -223,6 +254,11 @@ Object.assign(sources, {
   'sunderland-gb-full-accounts-2020-21': {
     id:'sunderland-gb-full-accounts-2020-21', clubId:'sunderland-gb',
     title:'Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2020-21 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sunderland-gb-full-accounts-2022-23': {
+    id:'sunderland-gb-full-accounts-2022-23', clubId:'sunderland-gb',
+    title:'Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
