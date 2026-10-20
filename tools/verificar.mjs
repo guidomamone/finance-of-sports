@@ -1304,11 +1304,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       if (confirma) { confirmadosPorSumas.push({ linea: nc.linea, numero: nc.numero }); notas.push(`línea ${nc.linea}: ${nc.numero} no está en el ${V.modo === 'digital' ? 'texto del PDF' : 'segunda lectura'}; las sumas lo confirman (${porque})`); continue; }
       const r2 = caso('numero-no-confirmado', `${nc.linea}:${nc.numero}`, `En "${fila.etiqueta}" la transcripción dice ${nc.numero}${nc.segundaLeyo ? ` y la segunda lectura del PDF dice ${nc.segundaLeyo}` : ' y no se pudo confirmar contra el PDF'}. Las sumas cierran, pero no alcanzan para elegir: ${nc.segundaLeyo ? 'con los dos números el resultado cierra' : 'no hay otra lectura y el cierre no es exacto'}. ¿El PDF dice ${nc.numero}?`, { pagina: nc.pagina, lineas: [nc.linea, nc.linea], propuesta: 'sí' });
       if (r2?.decision === 'aceptar') confirmadosPorSumas.push({ linea: nc.linea, numero: nc.numero });
-      else if (r2?.decision === 'corregir' && r2.valor) { fila.M = (parseNumber(r2.valor) ?? fila.M / mult(fila.bloque)) * mult(fila.bloque); notas.push(`línea ${nc.linea}: valor corregido por Guido (${r2.valor})`); }
+      else if (r2?.decision === 'corregir' && r2.valor) { fila.M = (parseNumber(r2.valor) ?? fila.M / mult(fila.bloque)) * mult(fila.bloque); confirmadosPorSumas.push({ linea: nc.linea, numero: nc.numero }); notas.push(`línea ${nc.linea}: valor corregido por Guido (${r2.valor})`); }
       continue;
     }
     const r = caso('numero-no-confirmado', `${nc.linea}:${nc.numero}`, `En "${fila.etiqueta}" la transcripción dice ${nc.numero}${nc.segundaLeyo ? ` y la segunda lectura del PDF dice ${nc.segundaLeyo}` : ` y no se pudo confirmar contra el PDF${nc.sinSegunda ? ' (sin segunda lectura de esa página)' : ''}`}. Las sumas no cierran.`, { pagina: nc.pagina, lineas: [nc.linea, nc.linea], propuesta: nc.segundaLeyo ? `usar ${nc.segundaLeyo}` : null });
-    if (r?.decision === 'corregir' && r.valor) { fila.M = (parseNumber(r.valor) ?? fila.M / mult(fila.bloque)) * mult(fila.bloque); notas.push(`línea ${nc.linea}: valor corregido por Guido (${r.valor})`); }
+    // (frenado de Molde FLI 2016 y 2024) un número cuya pregunta se contestó con un valor (`corregir`) quedó confirmado contra el PDF igual que con `aceptar`: sin esto
+    // avisarRegistro() lo seguía contando como sin confirmar y el registro no pasaba a listo-para-jev.
+    if (r?.decision === 'corregir' && r.valor) { fila.M = (parseNumber(r.valor) ?? fila.M / mult(fila.bloque)) * mult(fila.bloque); confirmadosPorSumas.push({ linea: nc.linea, numero: nc.numero }); notas.push(`línea ${nc.linea}: valor corregido por Guido (${r.valor})`); }
   }
 
   // 4. año anterior: la columna comparativa contra lo ya cargado
