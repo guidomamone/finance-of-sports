@@ -1,0 +1,38 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2016.pdf",
+ "generado": "2026-10-20T21:09:12.150Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del documento, 2026-10-20: Viking Fotballklubb FLI es el club antes de Viking Fotball AS (fundada 2016-11): un solo documento del ejercicio, individual; el ajuste de la carpeta (consolidado) es de la AS desde 2017)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2016.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2016-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Årsregnskapets periode: 01.01.2016 - 31.12.2016"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "viking-no",
+ "year": 2016,
+ "cortadoEn": "filas"
+}

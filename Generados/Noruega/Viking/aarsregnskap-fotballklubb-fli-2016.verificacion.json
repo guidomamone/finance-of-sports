@@ -1,0 +1,254 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2016.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2016.md",
+ "generado": "2026-10-20T21:08:32.641Z",
+ "scriptHuella": "bb1724ebf1b3",
+ "estado": "cola",
+ "clubId": "viking-no",
+ "year": 2016,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2016.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "Viking Fotballklubb FLI es el club antes de Viking Fotball AS (fundada 2016-11): un solo documento del ejercicio, individual; el ajuste de la carpeta (consolidado) es de la AS desde 2017",
+   "evidencia": "CONVENCIONES-DATOS, regla del club asociación y sociedad, punto 1",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2016.pdf",
+   "campo": "estado",
+   "valor": "b2,b3",
+   "linea": null,
+   "motivo": "El estado de resultados (RESULTATREGNSKAP, pág. 2-3 del visor) son los bloques b2,b3; el lote lo dejaba 'sin estado de resultados'",
+   "evidencia": "pág. 2 del visor",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [
+  "ecc53a6"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "40.868561 = 40.868561",
+   "suma": 40.868561,
+   "impreso": 40.868561
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "41.086216 = 41.086216",
+   "suma": 41.08621599999999,
+   "impreso": 41.086216
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 6.494804694057166e-15
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": null,
+   "detalle": "no se puede comparar: perímetros distintos (este documento individual, aarsregnskap-viking-fotball-as-2017.pdf consolidado); ingresos 40.868561 y 88.151587"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": true,
+   "detalle": "ingresos de 2015: 41.140493 en aarsregnskap-fotballklubb-fli-2015.pdf y 41.140493 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en aarsregnskap-viking-fotball-as-2024.pdf",
+  "duda de extraer que no afecta la carga: L83 y L86 son importes idénticos: sueldos de jugadores reembolsados por Viking AS, se netean pero el estado los imprime brutos."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 40.868561,
+  "gastos": 41.086216,
+  "financiero": 0.639257,
+  "impuesto": 0,
+  "resultadoImpreso": 0.421602,
+  "resultadoParaCargar": 0.421602,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Inntekter for dugnad bodsalg Viking Stadion",
+   "lado": "ingreso",
+   "M": 0.16389,
+   "pagina": 2,
+   "linea": 75,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Medlemskontinenter",
+   "lado": "ingreso",
+   "M": 1.46005,
+   "pagina": 2,
+   "linea": 76,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sponsorinntekter",
+   "lado": "ingreso",
+   "M": 0.8074,
+   "pagina": 2,
+   "linea": 77,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tilskudd / gaver / spillemidler",
+   "lado": "ingreso",
+   "M": 2.09476,
+   "pagina": 2,
+   "linea": 78,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inntekter fra bingo og spilleautomater",
+   "lado": "ingreso",
+   "M": 0.116513,
+   "pagina": 2,
+   "linea": 79,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inntekter FFO",
+   "lado": "ingreso",
+   "M": 2.486696,
+   "pagina": 2,
+   "linea": 80,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftsinntekt inkl fotballskole og egenandeler",
+   "lado": "ingreso",
+   "M": 3.786759,
+   "pagina": 2,
+   "linea": 81,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inntekter fra fotballturnering",
+   "lado": "ingreso",
+   "M": 0.0865,
+   "pagina": 2,
+   "linea": 82,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Refundert lønn, pensjon, arb. avg. mm. Viking AS",
+   "lado": "ingreso",
+   "M": 29.865993,
+   "pagina": 2,
+   "linea": 83,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønn, pensjon, arb. avg. mm spillere/trenere",
+   "lado": "gasto",
+   "M": 29.865993,
+   "pagina": 2,
+   "linea": 86,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønnskostnader andre ansatte Viking FK",
+   "lado": "gasto",
+   "M": 5.147477,
+   "pagina": 2,
+   "linea": 87,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 0.098,
+   "pagina": 2,
+   "linea": 88,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Utgifter fotballturnering",
+   "lado": "gasto",
+   "M": 0.085832,
+   "pagina": 2,
+   "linea": 89,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Utgifter til deltakelse turneringer og reiseutgifter trenere",
+   "lado": "gasto",
+   "M": 2.027785,
+   "pagina": 2,
+   "linea": 90,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Idrettsutstyr mm",
+   "lado": "gasto",
+   "M": 0.597694,
+   "pagina": 2,
+   "linea": 91,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre driftskostnader",
+   "lado": "gasto",
+   "M": 3.180125,
+   "pagina": 2,
+   "linea": 92,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vedlikehold Vikinghuset",
+   "lado": "gasto",
+   "M": 0.08331,
+   "pagina": 2,
+   "linea": 93,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.639257,
+   "linea": 97
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": 0,
+   "linea": 99
+  }
+ ],
+ "impuesto": []
+}

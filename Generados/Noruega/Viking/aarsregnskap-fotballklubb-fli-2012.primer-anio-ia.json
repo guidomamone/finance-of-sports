@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.md",
+ "clave": "844e6f37e833729a9df21073cbddde21e2812c98",
+ "generado": "2026-10-20T21:05:54.725Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "La L94 (reembolso de Viking ASA, 43,466 M) es un ingreso que, curiosamente, no está incluido en 'Sum driftsinntekter'. Igual hace falta para que cierre el resultado: 8,151 + 43,466 − 51,358 = 0,260 M de resultado operativo. Está bien cargarla como ingreso. La L95 se abre en las notas L230-232, cuyas partes suman 43,466 M. La L96 se abre en L238-240, que suman 4,593 M. Las demás filas coinciden con los renglones del estado. Los movimientos de patrimonio de L110-116 son la distribución del resultado y no se cargan."
+ }
+}

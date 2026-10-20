@@ -1,0 +1,200 @@
+{
+  "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.md",
+  "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.pdf",
+  "club": "viking-no",
+  "year": null,
+  "generatedAt": "2026-10-20T21:05:50.226Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Inntekter for dugnad bodsalg Viking Stadion",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.56844
+      ],
+      "glosa": "Ingresos por puestos de venta (trabajo voluntario) en el Viking Stadion"
+    },
+    {
+      "label": "Medlemskontingenter",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.987472
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Sponsorinntekter",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.5554
+      ],
+      "glosa": "Ingresos por patrocinio"
+    },
+    {
+      "label": "Tilskudd og gaver",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.992705
+      ],
+      "glosa": "Subvenciones y donaciones"
+    },
+    {
+      "label": "Inntekter fra bingo og spilleautomater",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.390149
+      ],
+      "glosa": "Ingresos por bingo y máquinas de juego"
+    },
+    {
+      "label": "Inntekter FFO",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.273215
+      ],
+      "glosa": "Ingresos por actividades extraescolares de fútbol (FFO)"
+    },
+    {
+      "label": "Annen driftsinntekt inkl fotballskole og egenandeler",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.383742
+      ],
+      "glosa": "Otros ingresos de explotación, incl. escuela de fútbol y aportaciones de participantes"
+    },
+    {
+      "label": "Refunderte lønn, pensjon, arb.avg. mm. Viking ASA",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        43.466085
+      ],
+      "glosa": "Reembolso de salarios, pensiones, cargas sociales, etc. Viking ASA"
+    },
+    {
+      "label": "Lønn, honorar, sign on fee",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønn, pensjon, arb.g.avg. mm spillere/trenere\"",
+      "values": [
+        37.821593
+      ],
+      "glosa": "Sueldos, honorarios y primas de fichaje"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønn, pensjon, arb.g.avg. mm spillere/trenere\"",
+      "values": [
+        5.399489
+      ],
+      "glosa": "Cargas sociales a cargo del empleador"
+    },
+    {
+      "label": "Offentlig tjenestepensjonsforsikring",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønn, pensjon, arb.g.avg. mm spillere/trenere\"",
+      "values": [
+        0.245003
+      ],
+      "glosa": "Seguro de planes de pensiones"
+    },
+    {
+      "label": "Lønn",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønnskostnader andre ansatte Viking FK\"",
+      "values": [
+        3.956609
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønnskostnader andre ansatte Viking FK\"",
+      "values": [
+        0.581562
+      ],
+      "glosa": "Cargas sociales a cargo del empleador"
+    },
+    {
+      "label": "Offentlig tjenestepensjonsforsikring",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Lønnskostnader andre ansatte Viking FK\"",
+      "values": [
+        0.054832
+      ],
+      "glosa": "Seguro de planes de pensiones"
+    },
+    {
+      "label": "Avskrivning på varige driftsmidler",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.123
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Utgifter til deltakelse turneringer og reiseutgifter trenere",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.820414
+      ],
+      "glosa": "Gastos por participación en torneos y desplazamientos de entrenadores"
+    },
+    {
+      "label": "Idrettsutstyr m.m",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.530838
+      ],
+      "glosa": "Material deportivo y otros"
+    },
+    {
+      "label": "Andre driftskostnader",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.780902
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Vedlikehold Vikinghuset",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.043452
+      ],
+      "glosa": "Mantenimiento de Vikinghuset"
+    }
+  ]
+}

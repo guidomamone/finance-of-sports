@@ -1,0 +1,337 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2015.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2015.md",
+ "mdSha1": "99c8662dc86101552de3952fff804a229a42bdf6",
+ "ubicacionSha1": "8fdecd46955b46316cd7af7bf5f37c9cb58d9aef",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:07:53.712Z",
+ "ubicacion": {
+  "estado": [
+   "b1",
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L73: Beløp i: NOK"
+  },
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "Continuación del estado de b1 (Beløp i: NOK, L73)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 77,
+   "etiqueta": "Inntekter for dugnad bodsalg Viking Stadion",
+   "actual": "431 292",
+   "anterior": "423 480",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 78,
+   "etiqueta": "Medlemskontigenter",
+   "actual": "1 444 144",
+   "anterior": "1 098 505",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 79,
+   "etiqueta": "Sponsorinntekter",
+   "actual": "691 569",
+   "anterior": "1 098 400",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 80,
+   "etiqueta": "Tilskudd / gaver / spillemidler",
+   "actual": "1 880 222",
+   "anterior": "1 802 904",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 81,
+   "etiqueta": "Inntekter fra bingo og spilleautomater",
+   "actual": "170 918",
+   "anterior": "771 300",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 82,
+   "etiqueta": "Inntekter FFO",
+   "actual": "2 899 475",
+   "anterior": "2 392 620",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 83,
+   "etiqueta": "Annen driftsinntekt inkl fotballskole og egenandeler",
+   "actual": "3 347 800",
+   "anterior": "3 350 166",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 84,
+   "etiqueta": "Inntekter fra fotballturnering",
+   "actual": "11 950",
+   "anterior": "339 350",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 85,
+   "etiqueta": "Refundert lønn, pensjon, arb. avg. mm. Viking ASA",
+   "actual": "30 263 123",
+   "anterior": "30 083 332",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 86,
+   "etiqueta": "Sum inntekter",
+   "actual": "41 140 493",
+   "anterior": "41 360 057",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 88,
+   "etiqueta": "Lønn, pensjon, arb. avg. mm. Viking ASA",
+   "actual": "30 263 123",
+   "anterior": "30 083 332",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 89,
+   "etiqueta": "Lønnskostnader andre ansatte Viking FK",
+   "actual": "7 277 452",
+   "anterior": "6 098 548",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 90,
+   "etiqueta": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "actual": "322 277",
+   "anterior": "500 399",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 91,
+   "etiqueta": "Utgifter fotballturnering",
+   "actual": "19 050",
+   "anterior": "703 429",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 92,
+   "etiqueta": "Utgifter til deltakelse turneringer og reiseutgifter trenere",
+   "actual": "1 517 929",
+   "anterior": "2 136 030",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 93,
+   "etiqueta": "Idrettsutstyr mm",
+   "actual": "500 007",
+   "anterior": "511 563",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 94,
+   "etiqueta": "Andre driftskostnader",
+   "actual": "3 034 869",
+   "anterior": "2 484 342",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 95,
+   "etiqueta": "Vedlikehold Vikinghuset",
+   "actual": "26 099",
+   "anterior": "74 144",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 96,
+   "etiqueta": "Sum kostnader",
+   "actual": "42 960 806",
+   "anterior": "42 591 787",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 97,
+   "etiqueta": "Driftsresultat",
+   "actual": "-1 820 313",
+   "anterior": "-1 231 730",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 99,
+   "etiqueta": "Annen renteinntekt",
+   "actual": "699 158",
+   "anterior": "131 889",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 100,
+   "etiqueta": "Sum finansinntekter",
+   "actual": "699 158",
+   "anterior": "131 889",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 101,
+   "etiqueta": "Annen rentekostnad",
+   "actual": "774",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 102,
+   "etiqueta": "Sum finanskostnader",
+   "actual": "774",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 103,
+   "etiqueta": "Netto finans",
+   "actual": "698 384",
+   "anterior": "131 889",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 104,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "-1 121 929",
+   "anterior": "-1 099 841",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 114,
+   "etiqueta": "Ordinært resultat etter skattekostnad",
+   "actual": "-1 121 929",
+   "anterior": "-1 099 841",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 116,
+   "etiqueta": "Årsresultat",
+   "actual": "-1 121 929",
+   "anterior": "-1 099 841",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 86,
+  "actual": "41 140 493"
+ },
+ "total_gastos": {
+  "linea": 96,
+  "actual": "42 960 806"
+ },
+ "resultado": {
+  "linea": 116,
+  "actual": "-1 121 929",
+  "anterior": "-1 099 841"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas de 'Overføringer og disponeringer' (L118-L121)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Sum overføringer og disponeringer",
+   "texto": "L117-L121 son aplicaciones del resultado a fondos de patrimonio, no ingresos ni gastos.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Los ingresos incluyen el reintegro de salarios de Viking ASA (L85) que se compensa exactamente con el gasto L88. No hay impuesto a las ganancias. Las aplicaciones a fondos (L118-L121) se excluyeron."
+}
