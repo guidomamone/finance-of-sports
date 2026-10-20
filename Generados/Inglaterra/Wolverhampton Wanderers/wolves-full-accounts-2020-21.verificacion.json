@@ -1,0 +1,163 @@
+{
+ "pdf": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2020-21.md",
+ "generado": "2026-10-20T18:14:07.169Z",
+ "estado": "ok",
+ "clubId": "wolves-gb",
+ "year": 2021,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 194.096 cierra; además se suman 1 línea(s) fuera de ese total (60.76)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "228.374 = 228.374",
+   "suma": 228.374,
+   "impreso": 228.374
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.842170943040401e-14
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 254.856 en este documento y 254.856 en wolves-full-accounts-2021-22.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 142.129 en wolves-full-accounts-2019-20.pdf y 142.129 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses\" no suma el renglón (212.221 contra 228.374, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Profit on disposal of player registrations\"): ¿Se trata 'Profit on disposal of player registration' (L1024) como reexpresión del renglón L631 y se excluye del desglose de gastos?"
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses",
+   "suma": 212.221,
+   "objetivo": 228.374
+  }
+ ],
+ "totales": {
+  "ingresos": 254.856,
+  "gastos": 228.374,
+  "financiero": -5.372,
+  "impuesto": 0,
+  "resultadoImpreso": 21.11,
+  "resultadoParaCargar": 21.11,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 0.144,
+   "pagina": 28,
+   "linea": 1005,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorship and advertising",
+   "lado": "ingreso",
+   "M": 15.493,
+   "pagina": 28,
+   "linea": 1006,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcasting rights",
+   "lado": "ingreso",
+   "M": 27.706,
+   "pagina": 28,
+   "linea": 1007,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 7.832,
+   "pagina": 28,
+   "linea": 1008,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "League distributions",
+   "lado": "ingreso",
+   "M": 141.645,
+   "pagina": 28,
+   "linea": 1009,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other turnover",
+   "lado": "ingreso",
+   "M": 1.276,
+   "pagina": 28,
+   "linea": 1010,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of player registrations",
+   "lado": "ingreso",
+   "M": 60.76,
+   "pagina": 18,
+   "linea": 631,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses",
+   "lado": "gasto",
+   "M": 228.374,
+   "pagina": 18,
+   "linea": 629,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": null,
+   "linea": 633
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -5.372,
+   "linea": 634
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on Profit/(loss)",
+   "M": null,
+   "linea": 636
+  }
+ ]
+}

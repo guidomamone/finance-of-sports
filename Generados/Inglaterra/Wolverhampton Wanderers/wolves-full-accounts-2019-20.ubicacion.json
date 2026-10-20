@@ -1,0 +1,245 @@
+{
+ "pdf": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2019-20.md",
+ "mdSha1": "e1369c61e787c6f2a7c7ede19629fa9a1196031a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:09:19.043Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    10,
+    10
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    154,
+    158
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 16,
+   "lineas": [
+    658,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    688,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 18,
+   "lineas": [
+    729,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 26,
+   "lineas": [
+    1031,
+    1039
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 26,
+   "lineas": [
+    1047,
+    1057
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 26,
+   "lineas": [
+    1061,
+    1063
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 27,
+   "lineas": [
+    1079,
+    1084
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    1090,
+    1094
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 28,
+   "lineas": [
+    1108,
+    1111
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 28,
+   "lineas": [
+    1123,
+    1127
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 28,
+   "lineas": [
+    1131,
+    1136
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 29,
+   "lineas": [
+    1152,
+    1167
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 30,
+   "lineas": [
+    1185,
+    1199
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 31,
+   "lineas": [
+    1211,
+    1223
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 31,
+   "lineas": [
+    1229,
+    1231
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 32,
+   "lineas": [
+    1245,
+    1251
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 32,
+   "lineas": [
+    1259,
+    1268
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 33,
+   "lineas": [
+    1284,
+    1288
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 33,
+   "lineas": [
+    1296,
+    1302
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 33,
+   "lineas": [
+    1308,
+    1313
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 34,
+   "lineas": [
+    1325,
+    1328
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 34,
+   "lineas": [
+    1348,
+    1352
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 35,
+   "lineas": [
+    1378,
+    1382
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b6"
+ ],
+ "notas_gastos": [
+  "b7",
+  "b9",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: '2020 £'000 | 2019 £'000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2020 £'000",
+ "columna_anterior": "2019 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los salarios del plantel usando el total de 'Wages and salaries' de la nota 7 (b9), ya que no hay apertura entre plantel y no plantel?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 7 (b9) da los costos de personal totales, sin separar jugadores de no jugadores; b10 solo muestra el número de empleados.",
+   "bloques": [
+    "b9",
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento contiene únicamente las cuentas individuales de Wolverhampton Wanderers Football Club (1986) Limited. El estado de resultados es b3, con columnas por operaciones/amortización y traspaso de jugadores y totales 2020 y 2019. La nota 4 de ingresos es b6. La nota 5 de cargos operativos es b7, la nota 7 de personal es b9 y la nota 9 de intereses es b12. b2 es una conciliación del efecto Covid y no se toma."
+}

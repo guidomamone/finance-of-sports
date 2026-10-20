@@ -1,0 +1,290 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md",
+ "mdSha1": "41ce16136933439b38e6114a8372592c84bc396e",
+ "ubicacionSha1": "913a8033c8b3a7551df5f4be27fb06997af4b4c9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:01:03.465Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b8"
+  ],
+  "notas_gastos": [
+   "b9",
+   "b11"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L667: columnas '£000'"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L1315: columnas '£000'"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "L1334: '2021 £000'"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L1355: '30 June 2021 £000'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 669,
+   "etiqueta": "Turnover",
+   "actual": "140,192",
+   "anterior": "152,626",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 670,
+   "etiqueta": "Operating expenses before amortisation and impairment",
+   "actual": "(123,333)",
+   "anterior": "(147,952)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 671,
+   "etiqueta": "Operating profit before amortisation and impairment",
+   "actual": "16,859",
+   "anterior": "4,674",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 672,
+   "etiqueta": "Amortisation and impairment of players' registrations",
+   "actual": "(32,277)",
+   "anterior": "(58,696)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 673,
+   "etiqueta": "Operating loss before profit on disposal of players' registrations",
+   "actual": "(15,418)",
+   "anterior": "(54,022)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 674,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "1,701",
+   "anterior": "26,288",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 675,
+   "etiqueta": "Operating loss",
+   "actual": "(13,717)",
+   "anterior": "(27,734)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 676,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "385",
+   "anterior": "1,870",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 677,
+   "etiqueta": "Interest payable and expenses",
+   "actual": "(290)",
+   "anterior": "(108)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 678,
+   "etiqueta": "Loss before tax",
+   "actual": "(13,622)",
+   "anterior": "(25,972)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 679,
+   "etiqueta": "Taxation",
+   "actual": "1,430",
+   "anterior": "3,432",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 680,
+   "etiqueta": "Loss and total comprehensive income for the period",
+   "actual": "(12,192)",
+   "anterior": "(22,540)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1317,
+   "etiqueta": "Matchday",
+   "actual": "176",
+   "anterior": "17,443",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1318,
+   "etiqueta": "Media",
+   "actual": "119,262",
+   "anterior": "106,103",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1319,
+   "etiqueta": "Commercial",
+   "actual": "17,577",
+   "anterior": "25,850",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1320,
+   "etiqueta": "Other income",
+   "actual": "3,177",
+   "anterior": "3,230",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1321,
+   "etiqueta": "",
+   "actual": "140,192",
+   "anterior": "152,626",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1357,
+   "etiqueta": "Wages and salaries",
+   "actual": "93,951",
+   "anterior": "106,878",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1358,
+   "etiqueta": "Social security costs",
+   "actual": "12,583",
+   "anterior": "14,115",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1359,
+   "etiqueta": "Other pension costs",
+   "actual": "295",
+   "anterior": "153",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1360,
+   "etiqueta": "",
+   "actual": "106,829",
+   "anterior": "121,146",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 669,
+  "actual": "140,192"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 680,
+  "actual": "(12,192)",
+  "anterior": "(22,540)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de cargos del resultado operativo (L1336-L1342) por ser informativo y no un desglose sumable de un renglón?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses before amortisation and impairment",
+   "texto": "L1334-L1342 mezcla partidas de distintos renglones (amortización L672, ingresos por subsidios, diferencias de cambio) sin total.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga el cuadro de Staff costs (L1357-L1360) como desglose de 'Operating expenses before amortisation and impairment'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses before amortisation and impairment",
+   "texto": "No hay renglón 'Salarios del plantel' en el estado; los costos de personal (L1360) están incluidos en los gastos operativos de L670 (puede incluir personal capitalizado).",
+   "bloques": [
+    "b11",
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No hay total de gastos impreso. El estado no tiene renglón específico de salarios; se asigna Staff costs (b11) a Operating expenses before amortisation and impairment. Ejercicio de 11 meses vs 13 meses del anterior."
+}

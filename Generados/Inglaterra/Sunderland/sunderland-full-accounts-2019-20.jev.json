@@ -1,0 +1,106 @@
+{
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2019-20.md",
+ "generatedAt": "2026-10-20T17:55:35.558Z",
+ "rubrosHuella": "8350c0383e8abf93888b6755e2fdba23caba8d6b",
+ "rubros": [
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Television and media",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorship and royalties",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Conference and banqueting",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Retail and merchandising",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of players",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Net operating expenses before exceptional items",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Exceptional operating expense",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.97,
+   "desdeCache": true
+  }
+ ]
+}

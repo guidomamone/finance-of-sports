@@ -1,0 +1,173 @@
+{
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.md",
+ "generado": "2026-10-20T18:14:06.655Z",
+ "estado": "ok",
+ "clubId": "leeds-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 189.683547 cierra; además se suman 1 línea(s) fuera de ese total (73.345427)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.815970093361102e-14
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 190.096416 en leeds-group-accounts-2021-22.pdf y 190.096416 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (145.857096 contra 275.080123, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): aceptar, en leeds-group-accounts-2022-23.pdf",
+  "duda de localizar contestada por la respuesta de Guido sobre el mismo cuadro (b13, to-do 211): el cuadro queda afuera. \"¿Se carga el cuadro de costes de personal 'The aggregate payroll costs' (b13) como desglose de salarios, aunque no separe plantel de otro personal?\" | respondida: \"¿Se deja afuera de la carga el cuadro de cargos de la nota 5 'Operating profit' (L1040-L1047) por ser informativo y no un desglose sumable de Cost of sales/Administrative expenses?\""
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 145.857096,
+   "objetivo": 275.080123
+  }
+ ],
+ "totales": {
+  "ingresos": 263.028974,
+  "gastos": 295.65768,
+  "financiero": -1.075424,
+  "impuesto": 0,
+  "resultadoImpreso": -33.70413,
+  "resultadoParaCargar": -33.70413,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 29.921168,
+   "pagina": 22,
+   "linea": 1014,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Television and broadcasting income",
+   "lado": "ingreso",
+   "M": 17.44213,
+   "pagina": 22,
+   "linea": 1015,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Merchandising income",
+   "lado": "ingreso",
+   "M": 24.017167,
+   "pagina": 22,
+   "linea": 1016,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Central distributions",
+   "lado": "ingreso",
+   "M": 94.102405,
+   "pagina": 22,
+   "linea": 1017,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other commercial revenue",
+   "lado": "ingreso",
+   "M": 18.302149,
+   "pagina": 22,
+   "linea": 1018,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Catering income",
+   "lado": "ingreso",
+   "M": 5.736823,
+   "pagina": 22,
+   "linea": 1019,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Educational services",
+   "lado": "ingreso",
+   "M": 0.161705,
+   "pagina": 22,
+   "linea": 1020,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Gain on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 73.345427,
+   "pagina": 13,
+   "linea": 598,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 20.577557,
+   "pagina": 13,
+   "linea": 594,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 275.080123,
+   "pagina": 13,
+   "linea": 596,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 11.909865,
+   "linea": 599
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -12.985289,
+   "linea": 600
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 602
+  }
+ ]
+}

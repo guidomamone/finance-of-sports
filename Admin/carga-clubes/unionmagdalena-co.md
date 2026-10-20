@@ -124,6 +124,76 @@ Verificado el 2026-09-24 (onboarding, Versión 217) contra "2018 Categoría Prim
 (Wikipedia): subcampeón del Torneo Águila 2018, ascendido a Primera A para 2019.
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Colombia/Union Magdalena/estados-financieros-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Union Magdalena/estados-financieros-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Taquilla - Venta de Boletería | pág. 46, precedente |
+| 2 | Publicidad y Propaganda | pág. 46, precedente |
+| 3 | Participación Dimayor tv | pág. 46, Jev 1 |
+| 4 | Auxilios Dimayor | pág. 46, Jev 1 |
+| 5 | Participación federación colombiana de futbol | pág. 46, precedente |
+| 6 | Venta de Artículos Deportivos | pág. 46, precedente |
+| 7 | Otros ingresos de partido | pág. 46, precedente |
+| 8 | Devoluciones en Servicios | pág. 46, Jev 1 |
+| 9 | Recuperaciones | pág. 47, Jev 1 |
+| 10 | Otros Arriendos | pág. 47, Claude 0.88 |
+| 11 | Diversos | pág. 47, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gastos del Personal | pág. 48, Claude 0.85 |
+| 2 | Impuestos | pág. 48, Jev 1 |
+| 3 | Arriendos | pág. 48, precedente |
+| 4 | Contribuciones y Afiliaciones | pág. 48, Jev 0.99 |
+| 5 | Servicios | pág. 48, Jev 0.98 |
+| 6 | Gastos Legales | pág. 48, Jev 1 |
+| 7 | Gastos de Viaje | pág. 48, Jev 1 |
+| 8 | Elemento de Aseo y Cafetería | pág. 48, Jev 0.97 |
+| 9 | Logística y Gastos de Partidos | pág. 48, Jev 1 |
+| 10 | Gastos de Pretemporada | pág. 48, precedente |
+| 11 | Gastos de Entrenamientos | pág. 48, precedente |
+| 12 | Derechos Deportivos | pág. 48, Jev 0.98 |
+| 13 | Costos de Venta | pág. 4, Jev 0.99 |
+| 14 | Gasto de Personal | pág. 49, Claude 0.88 |
+| 15 | Honorarios | pág. 49, Jev 1 |
+| 16 | Impuestos | pág. 49, Jev 1 |
+| 17 | Arrendamientos | pág. 49, Jev 1 |
+| 18 | Seguros | pág. 49, Claude 0.88 |
+| 19 | Servicios | pág. 49, Jev 0.98 |
+| 20 | Gastos Legales | pág. 49, Jev 1 |
+| 21 | Mantenimiento y Reparaciones | pág. 49, Jev 0.98 |
+| 22 | Gastos de Viaje | pág. 49, Jev 1 |
+| 23 | Depreciación | pág. 49, Jev 1 |
+| 24 | Amortizaciones | pág. 49, Jev 0.96 |
+| 25 | Diversos | pág. 49, Jev 0.97 |
+| 26 | Provisiones | pág. 49, precedente |
+| 27 | Gastos Bancarios | pág. 49, precedente |
+| 28 | Gastos Comisiones banc | pág. 49, Jev 1 |
+| 29 | Gastos Extraordinarios | pág. 49, Jev 1 |
+| 30 | Gastos Diversos | pág. 49, Jev 0.99 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): co-primeraA, verificado contra roster cacheado de "2025 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia exacta "Unión Magdalena".
+```
+
 ## 2018
 
 ### Gastos
@@ -175,6 +245,14 @@ _note (data/):_
 
 ```text
 Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 891700992, punto de entrada "Pymes-Individuales"). PDF con texto nativo (pdftotext -layout), incluye el Estado de Situación Financiera y el Estado de Resultado Integral primarios completos, no solo notas — cada nota (24-29) reconcilia exacta contra el total impreso, sin ningún residuo. Se complementa con certificacion-ef-2018.md (PDF escaneado, OCR), que certifica la elaboración bajo NIIF-PYMES y nombra a los firmantes, sin aportar un total propio. SIIS tiene además un ejercicio 2021 sourceado para este club (dictamen del revisor fiscal) pero todavía NO transcripto ni cargado — queda pendiente para una sesión futura. Los cortes 2016/2017/2019/2020 están verificados como vacíos en SIIS (formulario presentado sin paquete de estados financieros adjunto). Transcripciones completas en Clubes/Colombia/Union Magdalena/estados-financieros-2018.md y certificacion-ef-2018.md.
+```
+
+### unionmagdalena-co-estados-financieros-2025
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Colombia/Union Magdalena/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

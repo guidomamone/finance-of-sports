@@ -1,0 +1,399 @@
+{
+ "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
+ "generado": "2026-10-20T18:24:25.164Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "westham-gb ya tiene el ejercicio 2022 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['westham-gb-full-accounts-2021-22'] ya existe"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)",
+  "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
+ ],
+ "ejercicio": {
+  "clubId": "westham-gb",
+  "year": 2022,
+  "cierre": "2022-05-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Match receipts and related football activities",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 40.852,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Broadcast and central sponsorship distributions",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 163.62,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial activities",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 34.266,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Retail and merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 13.053,
+    "disclosureLevel": "aggregated",
+    "_pag": 33,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.406,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of players",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.709,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -234.059,
+    "disclosureLevel": "aggregated",
+    "_pag": 24,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2022-05-31",
+   "sourceId": "westham-gb-full-accounts-2021-22",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -7.532,
+   "tax": -1.748,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.092
+    },
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -7.624
+    },
+    {
+     "label": "Tax (charge)/credit on profit/(loss)",
+     "value": -1.748
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 254.906,
+   "officialTotalExpenses": 234.059,
+   "officialPAT": 11.567
+  },
+  "source": {
+   "id": "westham-gb-full-accounts-2021-22",
+   "clubId": "westham-gb",
+   "title": "West Ham United Football Club Limited — westham-full-accounts-2021-22 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-05-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "westham-gb",
+ "year": 2022,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 996,
+   "etiqueta": "Exceptional items",
+   "lado": "gasto",
+   "reemplaza": "Exceptional items",
+   "motivo": "Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto",
+   "evidencia": ".md L996",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 10,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Match receipts and related football activities",
+   "page": 33,
+   "native": 40.852,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 40.852,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 40.852
+  },
+  {
+   "label": "Broadcast and central sponsorship distributions",
+   "page": 33,
+   "native": 163.62,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 163.62,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 163.62
+  },
+  {
+   "label": "Commercial activities",
+   "page": 33,
+   "native": 34.266,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 34.266,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 34.266
+  },
+  {
+   "label": "Retail and merchandising",
+   "page": 33,
+   "native": 13.053,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 13.053,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.053
+  },
+  {
+   "label": "Other operating income",
+   "page": 24,
+   "native": 2.406,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.406,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.406
+  },
+  {
+   "label": "Profit on disposal of players",
+   "page": 24,
+   "native": 0.709,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.709,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.709
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 24,
+   "native": 234.059,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 234.059,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -234.059
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.092,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -7.624,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax (charge)/credit on profit/(loss)",
+   "page": null,
+   "native": -1.748,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 254.906,
+  "expSum": -234.059,
+  "officialTotalRevenue": 254.906,
+  "officialTotalExpenses": 234.059,
+  "officialPAT": 11.567,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 11.567,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 254.906
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 234.059
+  }
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-05-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (71 de 74 fechas de fin de mes caen en el mes 5))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2022-05-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2022-05-31 = 0.793588 (Tipo spot del Bank of England al 2022-05-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "westham-gb-full-accounts-2021-22",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "data/club-leagues/gb.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 6,
+  "lineasGasto": 1,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

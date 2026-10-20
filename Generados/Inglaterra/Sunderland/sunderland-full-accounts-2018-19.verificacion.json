@@ -1,0 +1,177 @@
+{
+ "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2018-19.pdf",
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2018-19.md",
+ "generado": "2026-10-20T18:14:06.901Z",
+ "estado": "ok",
+ "clubId": "sunderland-gb",
+ "year": 2019,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"TURNOVER\" 58.693 cierra; además se suman 1 línea(s) fuera de ese total (0.1)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 3.552713678800501e-15
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 58.793 en este documento y 58.793 en sunderland-full-accounts-2019-20.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Net operating expenses before exceptional items\" no suma el renglón (32 contra 46.289, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer ya contestada para el club (perimetro, \"Net operating expenses before exceptional items\"): corregir no, en sunderland-full-accounts-2018-19.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Net operating expenses before exceptional items",
+   "suma": 32,
+   "objetivo": 46.289
+  }
+ ],
+ "totales": {
+  "ingresos": 58.793,
+  "gastos": 69.227,
+  "financiero": 0.3,
+  "impuesto": 0.66,
+  "resultadoImpreso": -11.242,
+  "resultadoParaCargar": -11.242,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 8.602,
+   "pagina": 17,
+   "linea": 652,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Television and media",
+   "lado": "ingreso",
+   "M": 39.948,
+   "pagina": 17,
+   "linea": 653,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Sponsorship and royalties",
+   "lado": "ingreso",
+   "M": 2.379,
+   "pagina": 17,
+   "linea": 654,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Conference and banqueting",
+   "lado": "ingreso",
+   "M": 4.136,
+   "pagina": 17,
+   "linea": 655,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Retail and merchandising",
+   "lado": "ingreso",
+   "M": 2.426,
+   "pagina": 17,
+   "linea": 656,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 1.202,
+   "pagina": 17,
+   "linea": 657,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Profit on disposal of players",
+   "lado": "ingreso",
+   "M": 0.1,
+   "pagina": 10,
+   "linea": 336,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 2.4,
+   "pagina": 10,
+   "linea": 330,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Net operating expenses before exceptional items",
+   "lado": "gasto",
+   "M": 46.289,
+   "pagina": 10,
+   "linea": 332,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Exceptional operating expense",
+   "lado": "gasto",
+   "M": 20.538,
+   "pagina": 10,
+   "linea": 334,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.076,
+   "linea": 338
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.224,
+   "linea": 340
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": -0.66,
+   "linea": 342
+  },
+  {
+   "etiqueta": "Income tax relating to other comprehensive income",
+   "M": null,
+   "linea": 346
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md",
+ "clave": "663911c533085c8a0f326d54eacfeaefc86edcfb",
+ "generado": "2026-10-20T17:02:28.675Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todos los renglones del ejercicio están cargados una sola vez y del lado correcto. Los subtotales (L3812, L3816, L3819, L3821) y las ganancias por acción no se cargan, como corresponde. Verificación: 143.597 + 31.488 − 117.062 − 2.005 − 13.845 + 5.082 − 1.568 − 11.753 = 33.934, igual al resultado impreso."
+ }
+}

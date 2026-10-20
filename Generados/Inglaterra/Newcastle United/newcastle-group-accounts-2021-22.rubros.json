@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.md",
+  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.pdf",
+  "club": "newcastle-gb",
+  "year": 2022,
+  "generatedAt": "2026-10-20T17:50:58.793Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 33,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        27.529
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Media",
+      "lado": "revenue",
+      "page": 33,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        124.111
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 33,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        26.545
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Other income",
+      "lado": "revenue",
+      "page": 33,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        1.801
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Profit on disposal of players' registrations",
+      "lado": "revenue",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        5.832
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Operating expenses before amortisation and impairment",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        206.343
+      ],
+      "glosa": "Gastos de explotación antes de amortizaciones y deterioro"
+    },
+    {
+      "label": "Amortisation of intangible assets",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Amortisation and impairment of players' registrations\"",
+      "values": [
+        49.721
+      ],
+      "glosa": "Amortización de activos intangibles"
+    },
+    {
+      "label": "Impairment of intangible assets",
+      "lado": "expense",
+      "page": 33,
+      "section": "nota que desglosa \"Amortisation and impairment of players' registrations\"",
+      "values": [
+        1.418
+      ],
+      "glosa": "Deterioro de activos intangibles"
+    }
+  ]
+}

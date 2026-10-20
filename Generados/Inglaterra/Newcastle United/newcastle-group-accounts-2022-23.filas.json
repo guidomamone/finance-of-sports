@@ -1,0 +1,391 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2022-23.md",
+ "mdSha1": "226d5c6068792ba338a5e63d33269897ce577127",
+ "ubicacionSha1": "264f3a8f892732f011010088802105edf9d5d645",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:02:03.217Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b12",
+   "b18"
+  ],
+  "notas_gastos": [
+   "b13",
+   "b15",
+   "b19"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "2023 £000 (L831)"
+  },
+  {
+   "bloque": "b12",
+   "escala": "miles",
+   "evidencia": "2023 £000 (L1515)"
+  },
+  {
+   "bloque": "b18",
+   "escala": "miles",
+   "evidencia": "2023 £000 (L1602)"
+  },
+  {
+   "bloque": "b13",
+   "escala": "miles",
+   "evidencia": "2023 £000 (L1529)"
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "2023 £000 (L1559)"
+  },
+  {
+   "bloque": "b19",
+   "escala": "miles",
+   "evidencia": "2023 £000 (L1610)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 833,
+   "etiqueta": "Turnover",
+   "actual": "250,265",
+   "anterior": "179,986",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 834,
+   "etiqueta": "Operating expenses before amortisation and impairment",
+   "actual": "(230,215)",
+   "anterior": "(206,343)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 835,
+   "etiqueta": "Operating profit/(loss) before amortisation and impairment",
+   "actual": "20,050",
+   "anterior": "(26,357)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 836,
+   "etiqueta": "Amortisation and impairment of players' registrations",
+   "actual": "(89,343)",
+   "anterior": "(51,139)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 837,
+   "etiqueta": "Operating loss before profit on disposal of players' registrations",
+   "actual": "(69,293)",
+   "anterior": "(77,496)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 838,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "2,836",
+   "anterior": "5,832",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 839,
+   "etiqueta": "Operating loss",
+   "actual": "(66,457)",
+   "anterior": "(71,664)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 840,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "617",
+   "anterior": "186",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 841,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(7,490)",
+   "anterior": "(1,389)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 842,
+   "etiqueta": "Loss before tax",
+   "actual": "(73,330)",
+   "anterior": "(72,867)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 843,
+   "etiqueta": "Taxation",
+   "actual": "(91)",
+   "anterior": "2,217",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 844,
+   "etiqueta": "Loss and total comprehensive income for the year",
+   "actual": "(73,421)",
+   "anterior": "(70,650)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 1517,
+   "etiqueta": "Matchday",
+   "actual": "37,914",
+   "anterior": "27,529",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1518,
+   "etiqueta": "Media",
+   "actual": "165,485",
+   "anterior": "124,111",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1519,
+   "etiqueta": "Commercial",
+   "actual": "43,915",
+   "anterior": "26,545",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1520,
+   "etiqueta": "Other income",
+   "actual": "2,951",
+   "anterior": "1,801",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1521,
+   "etiqueta": "",
+   "actual": "250,265",
+   "anterior": "179,986",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1604,
+   "etiqueta": "Bank interest receivable",
+   "actual": "515",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1605,
+   "etiqueta": "Unwinding of discount on deferred payments for players' registrations",
+   "actual": "102",
+   "anterior": "186",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b18",
+   "linea": 1606,
+   "etiqueta": "",
+   "actual": "617",
+   "anterior": "186",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1561,
+   "etiqueta": "Wages and salaries",
+   "actual": "164,800",
+   "anterior": "149,225",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1562,
+   "etiqueta": "Social security costs",
+   "actual": "21,532",
+   "anterior": "20,783",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1563,
+   "etiqueta": "Other pension costs",
+   "actual": "347",
+   "anterior": "196",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1564,
+   "etiqueta": "",
+   "actual": "186,679",
+   "anterior": "170,204",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before amortisation and impairment"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1612,
+   "etiqueta": "Term loan interest payable",
+   "actual": "3,715",
+   "anterior": "36",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1613,
+   "etiqueta": "Interest payable on multi employer pension scheme",
+   "actual": "8",
+   "anterior": "12",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1614,
+   "etiqueta": "Interest payable on hire purchase contracts and finance leases",
+   "actual": "-",
+   "anterior": "6",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1615,
+   "etiqueta": "Unwinding of discount on deferred payments for players' registrations",
+   "actual": "4,255",
+   "anterior": "1,278",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1616,
+   "etiqueta": "Other interest payable",
+   "actual": "(488)",
+   "anterior": "57",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1617,
+   "etiqueta": "",
+   "actual": "7,490",
+   "anterior": "1,389",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 833,
+  "actual": "250,265"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 844,
+  "actual": "(73,421)",
+  "anterior": "(70,650)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de cargos operativos 'The operating loss is stated after charging/(crediting)' (L1531-L1537)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Es una nota informativa con partidas que cruzan varios renglones (amortizaciones de L836, depreciación, diferencias de cambio) y no desglosa un único renglón del estado (L1531-L1537).",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Wages and salaries' (L1561, 164,800) como salarios totales del club y no solo del plantel?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses before amortisation and impairment",
+   "texto": "No hay renglón 'Salarios del plantel' separado; L1561 incluye a todo el personal, no solo jugadores.",
+   "bloques": [
+    "b15"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Todo en £000. No se imprime total de gastos. El cuadro de staff costs (b15) es parte de 'Operating expenses before amortisation and impairment'; no existe desglose específico de salarios del plantel."
+}

@@ -42,3 +42,13 @@ Todos en `Clubes/Inglaterra/West Ham United/` (los PDF no se trackean; son escan
 ## WorldFootball (sourcing 2026-10-08, año 2023)
 
 Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 2 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2024-2025; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2023 desde `Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.pdf` (sourceId `westham-gb-full-accounts-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2020 desde `Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.pdf` (sourceId `westham-gb-full-accounts-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2021 desde `Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.pdf` (sourceId `westham-gb-full-accounts-2020-21`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2022 desde `Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf` (sourceId `westham-gb-full-accounts-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2024 desde `Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.pdf` (sourceId `westham-gb-full-accounts-2023-24`).

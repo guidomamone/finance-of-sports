@@ -8,7 +8,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'depcali-co': { 2025: 'co-primeraA' },
   'santafe-co': { 2025: 'co-primeraA' },
   'junior-co': { 2025: 'co-primeraA' },
-  'unionmagdalena-co': { 2018: 'co-primeraB' },
+  'unionmagdalena-co': { 2018: 'co-primeraB', 2025: 'co-primeraA' },
   'millonarios-co': { 2025: 'co-primeraA' },
   'deportivopereira-co': { 2025: 'co-primeraA' },
   'boyacachico-co': { 2024: 'co-primeraA' },

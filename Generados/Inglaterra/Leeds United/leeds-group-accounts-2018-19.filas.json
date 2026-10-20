@@ -1,0 +1,346 @@
+{
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf",
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.md",
+ "mdSha1": "9ac5dbfb9eb8c8bd66b6bc195b1ea88ae6ac3607",
+ "ubicacionSha1": "d6bd7e6431233f0ca37c07bb325285983a27e72c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T17:58:33.540Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b8"
+  ],
+  "notas_gastos": [
+   "b9",
+   "b11",
+   "b14"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "Columnas '2019 £' / '2018 £' con importes completos (L359)"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Columnas '2019 £' / '2018 £' (L771)"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "Columnas '2019 £' / '2018 £' (L787)"
+  },
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "Columnas '2019 £' / '2018 £' (L832)"
+  },
+  {
+   "bloque": "b14",
+   "escala": "unidades",
+   "evidencia": "Columnas '2019 £' / '2018 £' (L873)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 361,
+   "etiqueta": "Turnover",
+   "actual": "48,919,765",
+   "anterior": "40,737,293",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 362,
+   "etiqueta": "Cost of sales",
+   "actual": "(9,970,908)",
+   "anterior": "(8,337,266)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 363,
+   "etiqueta": "Gross profit",
+   "actual": "38,948,857",
+   "anterior": "32,400,027",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 364,
+   "etiqueta": "Administrative expenses",
+   "actual": "(75,099,771)",
+   "anterior": "(53,109,286)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 365,
+   "etiqueta": "Other operating income",
+   "actual": "2,860",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 366,
+   "etiqueta": "Operating loss",
+   "actual": "(36,148,054)",
+   "anterior": "(20,709,259)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 367,
+   "etiqueta": "Gain on disposal of players' registrations",
+   "actual": "15,649,423",
+   "anterior": "18,100,397",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 368,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "1,062,000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 369,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(1,962,363)",
+   "anterior": "(1,706,935)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 370,
+   "etiqueta": "Loss before taxation",
+   "actual": "(21,398,994)",
+   "anterior": "(4,315,797)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 371,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 372,
+   "etiqueta": "Loss for the financial year and total comprehensive income",
+   "actual": "(21,398,994)",
+   "anterior": "(4,315,797)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 773,
+   "etiqueta": "Gate receipts",
+   "actual": "12,612,796",
+   "anterior": "11,261,512",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 774,
+   "etiqueta": "Television and broadcasting income",
+   "actual": "1,486,000",
+   "anterior": "881,250",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 775,
+   "etiqueta": "Merchandising income",
+   "actual": "9,436,899",
+   "anterior": "6,681,334",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 776,
+   "etiqueta": "Central distributions",
+   "actual": "7,649,000",
+   "anterior": "6,780,533",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 777,
+   "etiqueta": "Other commercial revenue",
+   "actual": "11,937,394",
+   "anterior": "9,891,599",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 778,
+   "etiqueta": "Catering income",
+   "actual": "5,797,676",
+   "anterior": "5,241,065",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 779,
+   "etiqueta": "",
+   "actual": "48,919,765",
+   "anterior": "40,737,293",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 833,
+   "etiqueta": "Wages and salaries",
+   "actual": "41,458,543",
+   "anterior": "28,090,979",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 834,
+   "etiqueta": "Social security costs",
+   "actual": "4,588,503",
+   "anterior": "2,818,399",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 835,
+   "etiqueta": "Other pension costs",
+   "actual": "114,546",
+   "anterior": "448,635",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 836,
+   "etiqueta": "",
+   "actual": "46,161,592",
+   "anterior": "31,358,013",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b14",
+   "linea": 875,
+   "etiqueta": "Interest on obligations under finance leases contracts",
+   "actual": "426,354",
+   "anterior": "420,416",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b14",
+   "linea": 876,
+   "etiqueta": "Other interest payable and similar charges",
+   "actual": "1,536,009",
+   "anterior": "1,286,519",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b14",
+   "linea": 877,
+   "etiqueta": "",
+   "actual": "1,962,363",
+   "anterior": "1,706,935",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 361,
+  "actual": "48,919,765"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 372,
+  "actual": "(21,398,994)",
+  "anterior": "(4,315,797)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los costos de personal de la nota 7 (L833-L836) como desglose de 'Administrative expenses', aunque el documento no indica si parte está en 'Cost of sales'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota 7 (L831) no asigna los payroll costs a un renglón del estado; 'Wages and salaries' (L833) es la fila de salarios, que incluye plantel y resto del personal sin separarlo.",
+   "bloques": [
+    "b11",
+    "b2"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de cargos operativos de la nota 5 (L789-L796)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating loss",
+   "texto": "Son partidas informativas cargadas en el resultado operativo (amortización, depreciación, etc.) que no desglosan un renglón concreto ni suman a un total del estado.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Todas las cifras en libras (unidades). No hay renglón separado de 'Salarios del plantel'; el único dato de salarios es 'Wages and salaries' (L833) en la nota 7, que no distingue plantel de otro personal. No hay total de gastos impreso."
+}

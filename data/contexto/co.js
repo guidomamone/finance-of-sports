@@ -49,5 +49,6 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'unionmagdalena-co': {
     2018: {"estadio":"Sierra Nevada","capacidad":16000,"sponsor":"Alcaldía de Santa Marta","marca":"FSS","temporada":"2018 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264206","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=174862459","marca":"https://es.wikipedia.org/w/index.php?oldid=174862459"}},
+    2025: {"estadio":"Sierra Nevada","capacidad":16000,"sponsor":"Colanta, Pool, Águila, Mega Tiendas","marca":"Aerosport","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
 });

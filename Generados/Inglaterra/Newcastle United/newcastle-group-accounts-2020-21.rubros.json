@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md",
+  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
+  "club": "newcastle-gb",
+  "year": 2021,
+  "generatedAt": "2026-10-20T17:50:58.778Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        0.176
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Media",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        119.262
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        17.577
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Other income",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        3.177
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Profit on disposal of players' registrations",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        1.701
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos de jugadores"
+    },
+    {
+      "label": "Operating expenses before amortisation and impairment",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        123.333
+      ],
+      "glosa": "Gastos de explotación antes de amortización y deterioro"
+    },
+    {
+      "label": "Amortisation and impairment of players' registrations",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        32.277
+      ],
+      "glosa": "Amortización y deterioro de derechos federativos de jugadores"
+    }
+  ]
+}

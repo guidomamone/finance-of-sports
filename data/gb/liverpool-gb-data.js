@@ -14,6 +14,12 @@ const liverpoolGbRevenueLinesByYear = {
       ['Insurance settlement relating to historic loss of earnings', 12.892],
     ]},
   ],
+  2022: [
+    { rawLabel:'Media', normalizedCategory:'broadcasting', amountNative:260.841, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:246.663, disclosureLevel:'aggregated' },
+    { rawLabel:'Match day', normalizedCategory:'matchday_competition', amountNative:86.767, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:28.124, disclosureLevel:'aggregated' },
+  ],
 };
 
 const liverpoolGbExpenseLinesByYear = {
@@ -48,6 +54,10 @@ const liverpoolGbExpenseLinesByYear = {
     { rawLabel:'Impairment loss on registrations', normalizedCategory:'player_impairment', amountNative:-0.183, disclosureLevel:'detailed' },
     { rawLabel:'Depreciation of tangible fixed assets', normalizedCategory:'depreciation', amountNative:-14.462, disclosureLevel:'detailed' },
   ],
+  2022: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-67.305, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-545.041, disclosureLevel:'aggregated' },
+  ],
 };
 
 const liverpoolGbFiscalYearMeta = {
@@ -70,6 +80,21 @@ const liverpoolGbFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-8.549, tax:-6.939,
     officialTotalRevenue:768.882, officialTotalExpenses:745.121, officialPAT:8.273,
+  },
+  2022: {
+    currency:'GBP', fxRef:'GBP@2022-05-31',
+    sourceId:'liverpool-gb-group-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.58, tax:-5.033,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.893},
+      {label:'Interest payable and similar charges', value:-3.473},
+      {label:'Tax on profit/ loss on ordinary activities', value:-5.033},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:622.395, officialTotalExpenses:612.346, officialPAT:2.436,
   },
 };
 
@@ -101,6 +126,11 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary_official',
     url:'https://find-and-update.company-information.service.gov.uk/company/00035668/filing-history',
     publicNote:'Balance auditado consolidado, depositado en Companies House (Reino Unido) por The Liverpool Football Club and Athletic Grounds Limited, sociedad n.° 00035668. Mismo criterio de personal sin desglosar por área que el ejercicio 2023/24 (ver su nota).',
+  },
+  'liverpool-gb-group-accounts-2021-22': {
+    id:'liverpool-gb-group-accounts-2021-22', clubId:'liverpool-gb',
+    title:'The Liverpool Football Club and Athletic Grounds Limited — liverpool-group-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 

@@ -28,6 +28,15 @@ window.RANKINGS["gb-championship"] = {
         mix:[["Comercial / Sponsors",6.816],["Estadio",14.804],["Televisión",13.4],["Venta de Jugadores",11.315],["Otros ingresos",13.069]] },
     ],
   },
+  2023: {
+    leagueSize: 24,
+    wiki: {"t":"2022–23 EFL Championship","lang":"en","at":"2026-09-30","n":24},
+    clubs: [
+      { id:"sunderland-gb", revenue:48.5, reportType:"official_balance_sheet",
+        sourceId:"sunderland-gb-full-accounts-2022-23",
+        mix:[["Comercial / Sponsors",5.526],["Estadio",13.754],["Televisión",12.97],["Venta de Jugadores",0.394],["Otros ingresos",15.856]] },
+    ],
+  },
   2022: {
     leagueSize: 24,
     wiki: {"t":"2021–22 EFL Championship","lang":"en","at":"2026-10-19","n":24},
@@ -38,12 +47,28 @@ window.RANKINGS["gb-championship"] = {
       { id:"bournemouth-gb", revenue:73.818, reportType:"official_balance_sheet",
         sourceId:"bournemouth-gb-full-accounts-2021-22",
         mix:[["Comercial / Sponsors",4.102],["Estadio",6.237],["Televisión",52.013],["Venta de Jugadores",8.322],["Otros ingresos",3.145]] },
+      { id:"nottinghamforest-gb", revenue:41.003, reportType:"official_balance_sheet",
+        sourceId:"nottinghamforest-gb-full-accounts-2021-22",
+        mix:[["Comercial / Sponsors",22.229],["Estadio",10.578],["Televisión",2.448],["Venta de Jugadores",5.534],["Otros ingresos",0.215]] },
+    ],
+  },
+  2020: {
+    leagueSize: 24,
+    wiki: {"t":"2019–20 EFL Championship","lang":"en","at":"2026-10-19","n":24},
+    clubs: [
+      { id:"leeds-gb", revenue:89.047, reportType:"official_balance_sheet",
+        sourceId:"leeds-gb-group-accounts-2019-20",
+        mix:[["Venta de Jugadores",13.294],["Fútbol profesional (sin desglosar por la fuente)",71.122],["Otros ingresos",4.631]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2019: {
     leagueSize: 24,
     wiki: {"t":"2018–19 EFL Championship","lang":"en","at":"2026-10-19","n":24},
     clubs: [
+      { id:"leeds-gb", revenue:82.187, reportType:"official_balance_sheet",
+        sourceId:"leeds-gb-group-accounts-2018-19",
+        mix:[["Comercial / Sponsors",27.205],["Estadio",16.054],["Televisión",11.627],["Venta de Jugadores",19.919],["Otros ingresos",7.383]] },
       { id:"astonvilla-gb", revenue:64.808, reportType:"official_balance_sheet",
         sourceId:"astonvilla-gb-full-accounts-2018-19",
         mix:[["Comercial / Sponsors",20.681],["Estadio",16.062],["Televisión",28.064]] },

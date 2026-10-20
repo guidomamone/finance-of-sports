@@ -1,0 +1,79 @@
+{
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2020-21.md",
+ "generatedAt": "2026-10-20T17:55:35.560Z",
+ "rubrosHuella": "1e907323a373198af968645c9c121f1d70cb5307",
+ "rubros": [
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorship and advertising",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Broadcasting rights",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "League distributions",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Other turnover",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Operating expenses",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.38,
+   "desdeCache": true
+  }
+ ]
+}

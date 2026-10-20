@@ -1,0 +1,173 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2023-24.md",
+ "generado": "2026-10-20T18:14:06.810Z",
+ "estado": "ok",
+ "clubId": "newcastle-gb",
+ "year": 2024,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 320.313 cierra; además se suman 2 línea(s) fuera de ese total (69.929)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.815970093361102e-14
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 253.101 en newcastle-group-accounts-2022-23.pdf y 253.101 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses before amortisation and impairment\" no suma el renglón (225.712 contra 291.484, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: Son conciliaciones del estado y no desgloses de renglones.",
+  "duda de extraer que no afecta la carga: El cuadro de staff costs (L1459-L1466) no separa plantel del resto del personal; no hay fila 'Salarios del plantel' en los bloques."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses before amortisation and impairment",
+   "suma": 225.712,
+   "objetivo": 291.484
+  }
+ ],
+ "totales": {
+  "ingresos": 390.242,
+  "gastos": 389.029,
+  "financiero": -12.292,
+  "impuesto": -0.018,
+  "resultadoImpreso": -11.097,
+  "resultadoParaCargar": -11.097,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 50.095,
+   "pagina": 35,
+   "linea": 1419,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Media",
+   "lado": "ingreso",
+   "M": 153.95,
+   "pagina": 35,
+   "linea": 1420,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "UEFA",
+   "lado": "ingreso",
+   "M": 29.835,
+   "pagina": 35,
+   "linea": 1421,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 83.573,
+   "pagina": 35,
+   "linea": 1422,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 2.86,
+   "pagina": 35,
+   "linea": 1423,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of players' and staff registrations",
+   "lado": "ingreso",
+   "M": 69.816,
+   "pagina": 18,
+   "linea": 749,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of tangible fixed assets",
+   "lado": "ingreso",
+   "M": 0.113,
+   "pagina": 18,
+   "linea": 750,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses before amortisation and impairment",
+   "lado": "gasto",
+   "M": 291.484,
+   "pagina": 18,
+   "linea": 745,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation of intangible assets",
+   "lado": "gasto",
+   "M": 96.744,
+   "pagina": 35,
+   "linea": 1437,
+   "origen": "nota que desglosa \"Amortisation and impairment of players' registrations\""
+  },
+  {
+   "etiqueta": "Impairment of intangible assets",
+   "lado": "gasto",
+   "M": 0.801,
+   "pagina": 35,
+   "linea": 1438,
+   "origen": "nota que desglosa \"Amortisation and impairment of players' registrations\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 2.127,
+   "linea": 752
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -14.419,
+   "linea": 753
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation",
+   "M": -0.018,
+   "linea": 755
+  }
+ ]
+}

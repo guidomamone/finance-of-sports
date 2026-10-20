@@ -1,0 +1,140 @@
+{
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2019-20.md",
+ "generado": "2026-10-20T18:14:06.542Z",
+ "estado": "ok",
+ "clubId": "leeds-gb",
+ "year": 2020,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4210854715202004e-14
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 64.572048 en leeds-group-accounts-2018-19.pdf y 64.572048 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (78.290456 contra 108.398516, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: Solo hay Consolidated Statement of Comprehensive Income (b2); el individual no se presenta, solo hay balance de la compañía en b4."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 78.290456,
+   "objetivo": 108.398516
+  }
+ ],
+ "totales": {
+  "ingresos": 67.840326,
+  "gastos": 129.284374,
+  "financiero": -0.977936,
+  "impuesto": 0,
+  "resultadoImpreso": -62.421984,
+  "resultadoParaCargar": -62.421984,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Turnover",
+   "lado": "ingreso",
+   "M": 54.18398,
+   "pagina": 10,
+   "linea": 404,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 3.528322,
+   "pagina": 10,
+   "linea": 408,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gain on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 10.128024,
+   "pagina": 10,
+   "linea": 410,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 13.885858,
+   "pagina": 10,
+   "linea": 405,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 108.398516,
+   "pagina": 10,
+   "linea": 407,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Television and broadcasting rebate",
+   "lado": "gasto",
+   "M": 7,
+   "pagina": 10,
+   "linea": 411,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 1.05751,
+   "linea": 412
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -2.035446,
+   "linea": 413
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 415
+  }
+ ]
+}

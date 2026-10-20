@@ -186,6 +186,41 @@ Tom Werner (2010-12-01 a hoy): Chairman del club desde el 1/12/2010 (Wikipedia y
 Duda: No verifiqué si sigue de chairman en octubre 2026 (ninguna fuente indica un cambio).
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Media | pág. 26, precedente |
+| 2 | Commercial | pág. 26, precedente |
+| 3 | Match day | pág. 26, precedente |
+| 4 | Profit on disposal of players' registrations | pág. 14, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 14, precedente |
+| 2 | Administrative expenses | pág. 14, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Liverpool".
+```
+
 ## Fuentes
 
 ### liverpool-gb-group-accounts-2024
@@ -202,6 +237,14 @@ _note (data/):_
 
 ```text
 Transcripción completa en Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2024-25.md. Ejercicio cerrado el 31 de mayo. Controlante última: Fenway Sports Group, LLC (Nota 25). Incluye "Other operating income" (12,9 M GBP) por un seguro de lucro cesante, cargado a other_income.
+```
+
+### liverpool-gb-group-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

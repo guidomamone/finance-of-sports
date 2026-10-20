@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf",
- "generado": "2026-10-19T15:53:05.751Z",
+ "generado": "2026-10-20T17:11:37.689Z",
  "frena": [
   {
    "etapa": "registro",
    "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
-  },
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2023-03-28): confirmar qué ejercicio es antes de cargarlo"
   },
   {
    "etapa": "categorizacion",
@@ -28,11 +24,10 @@
  "periodo": {
   "tipo": "anual",
   "meses": 12,
-  "cierre": "2023-03-28",
-  "evidencia": null,
-  "confianza": "media",
+  "cierre": "2022-06-30",
   "anual": "temporada",
-  "nombreNoCoincide": true
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-19): El .md dice 'For the year ended 30 June 2022'; el 28/03/2023 es el sello de presentación en Companies House, no el cierre"
  },
  "clubId": "fulham-gb",
  "year": 2022,

@@ -1,0 +1,253 @@
+{
+ "pdf": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2022-23.md",
+ "mdSha1": "38f89b224e09ef4c720e6789bd1f95e44220e759",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:10:47.480Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 12,
+   "lineas": [
+    391,
+    403
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 20,
+   "lineas": [
+    680,
+    692
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 21,
+   "lineas": [
+    712,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 22,
+   "lineas": [
+    755,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 29,
+   "lineas": [
+    1035,
+    1043
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 29,
+   "lineas": [
+    1049,
+    1051
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 29,
+   "lineas": [
+    1059,
+    1066
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 30,
+   "lineas": [
+    1081,
+    1083
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 30,
+   "lineas": [
+    1091,
+    1096
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 30,
+   "lineas": [
+    1100,
+    1104
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 31,
+   "lineas": [
+    1119,
+    1121
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 31,
+   "lineas": [
+    1131,
+    1135
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 31,
+   "lineas": [
+    1139,
+    1144
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 32,
+   "lineas": [
+    1161,
+    1173
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 33,
+   "lineas": [
+    1192,
+    1207
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 34,
+   "lineas": [
+    1222,
+    1234
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 34,
+   "lineas": [
+    1238,
+    1240
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 34,
+   "lineas": [
+    1244,
+    1246
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 35,
+   "lineas": [
+    1261,
+    1267
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 35,
+   "lineas": [
+    1275,
+    1283
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 36,
+   "lineas": [
+    1300,
+    1304
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 36,
+   "lineas": [
+    1312,
+    1318
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 36,
+   "lineas": [
+    1326,
+    1328
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 37,
+   "lineas": [
+    1341,
+    1347
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 37,
+   "lineas": [
+    1351,
+    1354
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 38,
+   "lineas": [
+    1391,
+    1395
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b5"
+ ],
+ "notas_gastos": [
+  "b7",
+  "b9",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "2023 £'000",
+ "moneda": "GBP",
+ "columna_ejercicio": "2023 £'000",
+ "columna_anterior": "2022 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los salarios del plantel usando la nota 8 'Staff costs' (b9), sin separar jugadores de no jugadores porque la nota no los distingue?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 8 (b9) da sueldos totales del personal, incluidos directores; solo el número de empleados (b10) separa playing/non-playing staff.",
+   "bloques": [
+    "b9",
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de Wolverhampton Wanderers Football Club (1986) Limited (b2), con columnas por operaciones y por amortización/traspaso de jugadores; se usan las columnas totales 2023/2022. b5 abre el turnover, b7 los cargos operativos (amortización, resultado por venta de jugadores), b9 los costos de personal y b12 los intereses. b10 es número de empleados, no importes."
+}

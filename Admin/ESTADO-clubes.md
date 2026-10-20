@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 312 clubes, 1171 ejercicios, 21 países.
+TOTAL: 313 clubes, 1197 ejercicios, 21 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -140,7 +140,7 @@ COLOMBIA (12)
   Junior de Barranquilla  1 ejercicio (2025), balance, COP
   Millonarios             1 ejercicio (2025), balance, COP
   Once Caldas             4 ejercicios (2022 a 2025), balance, COP
-  Unión Magdalena         1 ejercicio (2018), balance, COP
+  Unión Magdalena         2 ejercicios (2018, 2025), balance, COP
 
 ALEMANIA (11)
   1. FC Köln                2 ejercicios (2023/2024 a 2024/2025), balance, EUR
@@ -200,26 +200,27 @@ ESPAÑA (19)
   Valencia CF         1 ejercicio (2024/2025), balance, EUR
   Villarreal CF       1 ejercicio (2023/2024), balance, EUR
 
-INGLATERRA (19)
+INGLATERRA (20)
   AFC Bournemouth          4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   Arsenal                  4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   Aston Villa              7 ejercicios (2018/2019 a 2024/2025), balance, GBP
   Brentford                4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   Brighton                 6 ejercicios (2019/2020 a 2024/2025), balance, GBP
   Burnley                  4 ejercicios (2021/2022 a 2024/2025), balance, GBP
+  Celtic                   1 ejercicio (2024/2025), balance, GBP, sin deuda/caja
   Chelsea                  6 ejercicios (2019/2020 a 2024/2025), balance, GBP
   Crystal Palace           4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   Everton                  4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   Fulham                   4 ejercicios (2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, GBP
-  Leeds United             2 ejercicios (2023/2024 a 2024/2025), balance, GBP
-  Liverpool                2 ejercicios (2023/2024 a 2024/2025), balance, GBP
+  Leeds United             6 ejercicios (2018/2019, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, GBP
+  Liverpool                3 ejercicios (2021/2022, 2023/2024, 2024/2025), balance, GBP
   Manchester City          4 ejercicios (2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, GBP
-  Newcastle United         1 ejercicio (2024/2025), balance, GBP
-  Nottingham Forest        2 ejercicios (2023/2024 a 2024/2025), balance, GBP
-  Sunderland               2 ejercicios (2023/2024 a 2024/2025), balance, GBP
+  Newcastle United         4 ejercicios (2021/2022 a 2024/2025), balance, GBP
+  Nottingham Forest        4 ejercicios (2021/2022 a 2024/2025), balance, GBP
+  Sunderland               7 ejercicios (2018/2019 a 2024/2025), balance, GBP
   Tottenham Hotspur        3 ejercicios (2021/2022, 2023/2024, 2024/2025), balance, GBP
-  West Ham United          1 ejercicio (2024/2025), balance, GBP
-  Wolverhampton Wanderers  2 ejercicios (2023/2024 a 2024/2025), balance, GBP
+  West Ham United          6 ejercicios (2019/2020 a 2024/2025), balance, GBP
+  Wolverhampton Wanderers  6 ejercicios (2019/2020 a 2024/2025), balance, GBP
 
 GR (14)
   AEK Athens        10 ejercicios (2015/2016 a 2024/2025), balance, EUR

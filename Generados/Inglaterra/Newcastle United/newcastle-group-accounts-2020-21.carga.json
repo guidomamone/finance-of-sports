@@ -1,0 +1,383 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
+ "generado": "2026-10-20T18:26:18.019Z",
+ "frena": [
+  {
+   "etapa": "periodo",
+   "motivo": "el documento cubre un período otro de 11 meses al 2021-06-30: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)"
+  }
+ ],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2022, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
+  "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
+ ],
+ "ejercicio": {
+  "clubId": "newcastle-gb",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Matchday",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.176,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Media",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 119.262,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 17.577,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other income",
+    "normalizedCategory": "other_income",
+    "amountNative": 3.177,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of players' registrations",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.701,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Operating expenses before amortisation and impairment",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -123.333,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisation and impairment of players' registrations",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -32.277,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2021-06-30",
+   "sourceId": "newcastle-gb-group-accounts-2020-21",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.095,
+   "tax": 1.43,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.385
+    },
+    {
+     "label": "Interest payable and expenses",
+     "value": -0.29
+    },
+    {
+     "label": "Taxation",
+     "value": 1.43
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 141.893,
+   "officialTotalExpenses": 155.61,
+   "officialPAT": -12.192
+  },
+  "source": {
+   "id": "newcastle-gb-group-accounts-2020-21",
+   "clubId": "newcastle-gb",
+   "title": "Newcastle United Limited — newcastle-group-accounts-2020-21 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "otro",
+  "meses": 11,
+  "cierre": "2021-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "For the 11 month period ended 30 June 2021"
+  },
+  "confianza": "alta"
+ },
+ "clubId": "newcastle-gb",
+ "year": 2021,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 10,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Matchday",
+   "page": 27,
+   "native": 0.176,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.176,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.176
+  },
+  {
+   "label": "Media",
+   "page": 27,
+   "native": 119.262,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 119.262,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 119.262
+  },
+  {
+   "label": "Commercial",
+   "page": 27,
+   "native": 17.577,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 17.577,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 17.577
+  },
+  {
+   "label": "Other income",
+   "page": 27,
+   "native": 3.177,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 3.177,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.177
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "page": 14,
+   "native": 1.701,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.701,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.701
+  },
+  {
+   "label": "Operating expenses before amortisation and impairment",
+   "page": 14,
+   "native": 123.333,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 123.333,
+   "cat": "other_expenses",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -123.333
+  },
+  {
+   "label": "Amortisation and impairment of players' registrations",
+   "page": 14,
+   "native": 32.277,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 32.277,
+   "cat": "player_amortisation",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -32.277
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.385,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and expenses",
+   "page": null,
+   "native": -0.29,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Taxation",
+   "page": null,
+   "native": 1.43,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 141.893,
+  "expSum": -155.61,
+  "officialTotalRevenue": 141.893,
+  "officialTotalExpenses": 155.61,
+  "officialPAT": -12.192,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -12.192,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 141.893
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 155.61
+  }
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2020–21 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Newcastle United\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (73 de 98 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2021-06-30 = 0.723641 (Tipo spot del Bank of England al 2021-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "newcastle-gb-group-accounts-2020-21",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2020–21 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Newcastle United\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 5,
+  "lineasGasto": 2,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

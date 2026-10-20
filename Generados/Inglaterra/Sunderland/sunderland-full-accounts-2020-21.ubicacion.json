@@ -1,0 +1,308 @@
+{
+ "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2020-21.md",
+ "mdSha1": "5afde140800563dcec50f93cf8fcc3d4ca773233",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:05:04.332Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    267,
+    271
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    272,
+    272
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    504,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    535,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    552,
+    574
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    587,
+    596
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 22,
+   "lineas": [
+    820,
+    828
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 22,
+   "lineas": [
+    833,
+    838
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 22,
+   "lineas": [
+    842,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 23,
+   "lineas": [
+    866,
+    869
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    873,
+    879
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    883,
+    887
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    891,
+    895
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    940,
+    954
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    958,
+    971
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 26,
+   "lineas": [
+    992,
+    994
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    996,
+    998
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    1004,
+    1006
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    1014,
+    1016
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    1018,
+    1020
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 26,
+   "lineas": [
+    1026,
+    1028
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 26,
+   "lineas": [
+    1030,
+    1033
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 27,
+   "lineas": [
+    1045,
+    1047
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 27,
+   "lineas": [
+    1051,
+    1057
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 27,
+   "lineas": [
+    1063,
+    1070
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 27,
+   "lineas": [
+    1076,
+    1078
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 28,
+   "lineas": [
+    1092,
+    1097
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 28,
+   "lineas": [
+    1104,
+    1106
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 28,
+   "lineas": [
+    1110,
+    1119
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 29,
+   "lineas": [
+    1160,
+    1162
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 29,
+   "lineas": [
+    1166,
+    1173
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 30,
+   "lineas": [
+    1180,
+    1184
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 30,
+   "lineas": [
+    1188,
+    1190
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b7"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b10",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del Income Statement: '2021 £'000 | 2020 £'000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2021 £'000",
+ "columna_anterior": "2020 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los salarios del plantel con el total de la nota 4 (Wages and salaries + Social security + Other pension costs, b8), ya que no se separa plantel de staff?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 4 (b8) da los costes de personal totales sin separar jugadores del resto; parece repetir filas (posible desglose directores o año anterior).",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Sunderland Association Football Club Limited. Estado de resultados b3 (Income Statement). b7 desglosa el turnover; b8 costes de personal (nota 4); b10 amortizaciones y depreciación; b12 amortización y beneficio por venta de contratos de jugadores. Se excluyen balance, cambios en el patrimonio, activos fijos, deudores/acreedores, reservas y pensiones."
+}

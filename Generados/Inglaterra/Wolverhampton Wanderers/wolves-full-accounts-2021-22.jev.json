@@ -1,0 +1,88 @@
+{
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2021-22.md",
+ "generatedAt": "2026-10-20T17:55:35.560Z",
+ "rubrosHuella": "dabc6fbd95c2a922faed36935ca33a5bced42826",
+ "rubros": [
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorship and advertising",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Broadcasting rights",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "League distributions",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Other turnover",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "lado": "revenue",
+   "page": 18,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Operating expenses",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.38,
+   "desdeCache": true
+  }
+ ]
+}

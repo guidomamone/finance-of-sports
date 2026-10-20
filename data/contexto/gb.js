@@ -44,6 +44,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"W88","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"96.com","marca":"Castore","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
+  'celtic-gb': {
+    2025: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","temporada":"2024–25 Scottish Premiership","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374234380","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sponsorship.sportbusiness.com/news/celtic-lands-long-term-extension-with-kit-sponsor-dafabet","marca":"https://www.scotsman.com/sport/football/celtic/celtic-fc-new-kit-unveil-adidas-home-shirt-heres-when-it-is-available-to-buy-and-the-price-4645920"}},
+  },
   'chelsea-gb': {
     2020: {"estadio":"Stamford Bridge","capacidad":40834,"sponsor":"Three","marca":"Nike","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
     2021: {"estadio":"Stamford Bridge","capacidad":40834,"sponsor":"Three","marca":"Nike","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
@@ -71,10 +74,15 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'leeds-gb': {
+    2019: {"estadio":"Elland Road","capacidad":37890,"sponsor":"32Red","marca":"Kappa","temporada":"2018–19 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372863678"},
+    2020: {"estadio":"Elland Road","capacidad":37890,"sponsor":"32Red","marca":"Kappa","temporada":"2019–20 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380740679"},
+    2022: {"estadio":"Elland Road","capacidad":37792,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Elland Road","capacidad":37608,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Elland Road","capacidad":37608,"sponsor":"BOXT","marca":"Adidas","temporada":"2023–24 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374030992"},
     2025: {"estadio":"Elland Road","capacidad":37608,"sponsor":"Red Bull","marca":"Adidas","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
   'liverpool-gb': {
+    2022: {"estadio":"Anfield","capacidad":53394,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2024: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
@@ -85,13 +93,23 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"City of Manchester Stadium","capacidad":52900,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'newcastle-gb': {
+    2022: {"estadio":"St James' Park","capacidad":52305,"sponsor":"FUN88","marca":"Castore","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"St James' Park","capacidad":52305,"sponsor":"FUN88","marca":"Castore","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
+    2024: {"estadio":"St James' Park","capacidad":52257,"sponsor":"Sela","marca":"Castore","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"St James' Park","capacidad":52258,"sponsor":"Sela","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'nottinghamforest-gb': {
+    2022: {"estadio":"City Ground","capacidad":30445,"sponsor":"BOXT","marca":"Macron","temporada":"2021–22 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358361756"},
+    2023: {"estadio":"City Ground","capacidad":30332,"sponsor":"UNHCR","marca":"Macron","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"City Ground","capacidad":30404,"sponsor":"Kaiyun Sports","marca":"Adidas","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"City Ground","capacidad":31042,"sponsor":"Kaiyun Sports","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'sunderland-gb': {
+    2019: {"estadio":"Stadium of Light","capacidad":48707,"sponsor":"BETDAQ","marca":"Adidas","temporada":"2018–19 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380005833"},
+    2020: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Children with Cancer UK","marca":"Adidas","temporada":"2019–20 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1366642605"},
+    2021: {"estadio":"Stadium of Light","capacidad":48707,"sponsor":"Great Annual Savings Group","marca":"Nike","temporada":"2020–21 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358363174"},
+    2022: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Great Annual Savings Group","marca":"Nike","temporada":"2021–22 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358363186"},
+    2023: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Spreadex Sports","marca":"Nike","temporada":"2022–23 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376810302"},
     2024: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Spreadex Sports","marca":"Nike","temporada":"2023–24 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374030992"},
     2025: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Spreadex Sports","marca":"Hummel","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
@@ -101,9 +119,18 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Tottenham Hotspur Stadium","capacidad":62850,"sponsor":"AIA","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'westham-gb': {
+    2020: {"estadio":"London Stadium","capacidad":60000,"sponsor":"Betway","marca":"Umbro","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
+    2021: {"estadio":"London Stadium","capacidad":60000,"sponsor":"Betway","marca":"Umbro","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
+    2022: {"estadio":"London Stadium","capacidad":60000,"sponsor":"Betway","marca":"Umbro","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"London Stadium","capacidad":62500,"sponsor":"Betway","marca":"Umbro","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
+    2024: {"estadio":"London Stadium","capacidad":62500,"sponsor":"Betway","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"London Stadium","capacidad":62500,"sponsor":"Betway","marca":"Umbro","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'wolves-gb': {
+    2020: {"estadio":"Molineux Stadium","capacidad":32050,"sponsor":"ManBetX","marca":"Adidas","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
+    2021: {"estadio":"Molineux Stadium","capacidad":32050,"sponsor":"ManBetX","marca":"Adidas","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
+    2022: {"estadio":"Molineux Stadium","capacidad":32050,"sponsor":"ManBetX","marca":"Castore","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Molineux Stadium","capacidad":31750,"sponsor":"AstroPay","marca":"Castore","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Molineux Stadium","capacidad":31750,"sponsor":"AstroPay","marca":"Castore","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Molineux Stadium","capacidad":31750,"sponsor":"DEBET","marca":"Sudu","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

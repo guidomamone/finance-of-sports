@@ -1,0 +1,209 @@
+{
+ "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.md",
+ "generado": "2026-10-20T18:26:00.661Z",
+ "estado": "ok",
+ "clubId": "nottinghamforest-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "-20",
+   "linea": 423,
+   "etiqueta": "Other operating (expenses)/income",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "La extracción omitió esta fila del estado de resultados (L423, (20) en £000): sin ella el resultado da -45,59 y el impreso es -45,61",
+   "evidencia": "pág. 13 del visor, .md L423",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 29.683 cierra; además se suman 1 línea(s) fuera de ese total (4.084)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.105427357601002e-15
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 33.767 en este documento y 33.767 en nottinghamforest-full-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Other operating (expenses)/income\" (gasto) -20 (2026-10-20, La extracción omitió esta fila del estado de resultados (L423, (20) en £000): sin ella el resultado da -45,59 y el impreso es -45,61)",
+  "duda de localizar que no afecta la carga: La columna comparativa es '13 Months ended 30 June 2021'.",
+  "duda de extraer que no afecta la carga: El costo de personal de b11 (L888) no coincide con ningún renglón del estado; no hay una fila específica de salarios del plantel, solo 'Wages and salaries' (L885) del total del personal.",
+  "duda de extraer que no afecta la carga: La nota 7 lista cargos incluidos en el resultado operativo, no un desglose que sume a un renglón (L917)."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 33.767,
+  "gastos": 79.216,
+  "financiero": -0.768,
+  "impuesto": 0.607,
+  "resultadoImpreso": -45.61,
+  "resultadoParaCargar": -45.61,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Sponsorship and advertising",
+   "lado": "ingreso",
+   "M": 2.689,
+   "pagina": 24,
+   "linea": 833,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Catering",
+   "lado": "ingreso",
+   "M": 0.141,
+   "pagina": 24,
+   "linea": 834,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Grants & royalties",
+   "lado": "ingreso",
+   "M": 10.143,
+   "pagina": 24,
+   "linea": 835,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "TV & radio",
+   "lado": "ingreso",
+   "M": 2.016,
+   "pagina": 24,
+   "linea": 836,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Ticket & membership sales",
+   "lado": "ingreso",
+   "M": 8.227,
+   "pagina": 24,
+   "linea": 837,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 1.925,
+   "pagina": 24,
+   "linea": 838,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Programme & other match day income",
+   "lado": "ingreso",
+   "M": 0.484,
+   "pagina": 24,
+   "linea": 839,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other non match day income",
+   "lado": "ingreso",
+   "M": 0.036,
+   "pagina": 24,
+   "linea": 840,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Players",
+   "lado": "ingreso",
+   "M": 0.473,
+   "pagina": 24,
+   "linea": 841,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Retail",
+   "lado": "ingreso",
+   "M": 3.549,
+   "pagina": 24,
+   "linea": 842,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of player registrations",
+   "lado": "ingreso",
+   "M": 4.084,
+   "pagina": 13,
+   "linea": 426,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 5.512,
+   "pagina": 13,
+   "linea": 420,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 73.684,
+   "pagina": 13,
+   "linea": 422,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other operating (expenses)/income",
+   "lado": "gasto",
+   "M": 0.02,
+   "pagina": 13,
+   "linea": 423,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.768,
+   "linea": 425
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": 0.607,
+   "linea": 429
+  }
+ ]
+}

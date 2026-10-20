@@ -104,6 +104,192 @@ _antes de David Sullivan (data/gestiones/gb.js):_
 Sullivan y Gold compraron el club el 19/1/2010; Sullivan es el cabeza (Gold, co-chairman, murió en enero de 2023).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/West Ham United/westham-full-accounts-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match receipts and related football activities | pág. 36, precedente |
+| 2 | Broadcast and central sponsorship distributions | pág. 36, precedente |
+| 3 | Commercial activities | pág. 36, precedente |
+| 4 | Retail and merchandising | pág. 36, precedente |
+| 5 | Other operating income | pág. 27, precedente |
+| 6 | Profit on disposal of players | pág. 27, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating costs | pág. 27, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2023–24 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+```
+
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/West Ham United/westham-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match receipts and related football activities | pág. 35, precedente |
+| 2 | Broadcast and central sponsorship distributions | pág. 35, precedente |
+| 3 | Commercial activities | pág. 35, precedente |
+| 4 | Retail and merchandising | pág. 35, precedente |
+| 5 | Other operating income | pág. 26, precedente |
+| 6 | Profit on disposal of players | pág. 26, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating costs | pág. 26, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+```
+
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/West Ham United/westham-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match receipts and related football activities | pág. 33, precedente |
+| 2 | Broadcast and central sponsorship distributions | pág. 33, precedente |
+| 3 | Commercial activities | pág. 33, precedente |
+| 4 | Retail and merchandising | pág. 33, precedente |
+| 5 | Other operating income | pág. 24, precedente |
+| 6 | Profit on disposal of players | pág. 24, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Administrative expenses | pág. 24, Jev 1 |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/West Ham United/westham-full-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match receipts and related football activities | pág. 34, precedente |
+| 2 | Broadcast and central sponsorship distributions | pág. 34, precedente |
+| 3 | Commercial activities | pág. 34, precedente |
+| 4 | Retail and merchandising | pág. 34, precedente |
+| 5 | Other operating income | pág. 25, precedente |
+| 6 | Profit on sale of players | pág. 36, Jev 1 |
+| 7 | Income from loan of players | pág. 36, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Administrative expenses | pág. 25, Jev 1 |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items (1.443) ya está dentro de Administrative expenses ('Analysed as'): duplicaba el gasto
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+```
+
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/West Ham United/westham-full-accounts-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match receipts and related football activities | pág. 32, precedente |
+| 2 | Broadcast and central sponsorship distributions | pág. 32, precedente |
+| 3 | Commercial activities | pág. 32, precedente |
+| 4 | Retail and merchandising | pág. 32, precedente |
+| 5 | Other operating income | pág. 24, precedente |
+| 6 | Profit on sale of players | pág. 34, Jev 1 |
+| 7 | Income from loan of players | pág. 34, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Administrative expenses | pág. 24, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2019–20 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+```
+
 ## Fuentes
 
 ### westham-gb-full-accounts-2025
@@ -112,6 +298,46 @@ _note (data/):_
 
 ```text
 PDF con texto nativo, transcripción completa en Clubes/Inglaterra/West Ham United/west-ham-united-full-accounts-2024-25.md. Cuentas individuales, subsidiaria de WH Holding Limited (no consolida, exenta bajo Section 400). No declara tipo de cambio propio (fxRef apunta a FX_CLOSE). Único ejercicio disponible (a diferencia de otros clubes ingleses de esta sesión, no había un 2do PDF transcripto).
+```
+
+### westham-gb-full-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### westham-gb-full-accounts-2019-20
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### westham-gb-full-accounts-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### westham-gb-full-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### westham-gb-full-accounts-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

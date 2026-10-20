@@ -1,0 +1,288 @@
+{
+ "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2019-20.md",
+ "mdSha1": "a769e87703e0271a845c9d0e56817d510ca427e3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:04:21.282Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    177,
+    185
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    211,
+    215
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    387,
+    404
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    415,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    433,
+    457
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    471,
+    480
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    674,
+    682
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 20,
+   "lineas": [
+    687,
+    692
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    696,
+    702
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    715,
+    719
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    723,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    734,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    742,
+    746
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    760,
+    764
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    770,
+    780
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    784,
+    786
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    797,
+    811
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    816,
+    829
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    852,
+    854
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    870,
+    872
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    880,
+    883
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    895,
+    897
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    902,
+    911
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 25,
+   "lineas": [
+    917,
+    924
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 25,
+   "lineas": [
+    930,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 26,
+   "lineas": [
+    944,
+    949
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 26,
+   "lineas": [
+    956,
+    958
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 26,
+   "lineas": [
+    962,
+    967
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 27,
+   "lineas": [
+    988,
+    994
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 27,
+   "lineas": [
+    1006,
+    1008
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 27,
+   "lineas": [
+    1012,
+    1019
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 28,
+   "lineas": [
+    1033,
+    1037
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b7"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b10",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del Income Statement: 2020 £'000 | 2019 £'000",
+ "moneda": "GBP",
+ "columna_ejercicio": "2020 £'000",
+ "columna_anterior": "2019 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Sunderland Association Football Club Limited (b3). La nota 3 de turnover (b7) desglosa los ingresos por clase de negocio. La nota 4 (b8) abre los costes de personal en sueldos, cargas sociales y pensiones; es la que corresponde a salarios, aunque no separa el plantel del resto del personal. Las notas 5 y 6 (b10, b12) abren amortizaciones y el resultado por traspasos de jugadores. No se eligió el estado de resultado integral (b4) ni la conciliación de impuestos (b15)."
+}

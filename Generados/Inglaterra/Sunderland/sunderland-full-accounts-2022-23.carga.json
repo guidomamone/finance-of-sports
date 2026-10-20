@@ -1,0 +1,510 @@
+{
+ "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.pdf",
+ "generado": "2026-10-20T18:24:24.511Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "sunderland-gb ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['sunderland-gb-full-accounts-2022-23'] ya existe"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
+  "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
+ ],
+ "ejercicio": {
+  "clubId": "sunderland-gb",
+  "year": 2023,
+  "cierre": "2023-07-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Gate receipts",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 10.693,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Television and media",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 10.083,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsorship and royalties",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.576,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Conference and banqueting",
+    "normalizedCategory": "other_income",
+    "amountNative": 8.428,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Retail and merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.72,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.598,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.301,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of player contracts",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.306,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -4.13,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Operating expenses",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -40.583,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisation of players contracts",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -2.715,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2023-07-31",
+   "sourceId": "sunderland-gb-full-accounts-2022-23",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.043,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest payable and similar expenses",
+     "value": null
+    },
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.043
+    },
+    {
+     "label": "Tax on loss",
+     "value": null
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 37.705,
+   "officialTotalExpenses": 47.428,
+   "officialPAT": -9.68
+  },
+  "source": {
+   "id": "sunderland-gb-full-accounts-2022-23",
+   "clubId": "sunderland-gb",
+   "title": "Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2022-23 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-07-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "sunderland-gb",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 15,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Gate receipts",
+   "page": 23,
+   "native": 10.693,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 10.693,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.693
+  },
+  {
+   "label": "Television and media",
+   "page": 23,
+   "native": 10.083,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 10.083,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.083
+  },
+  {
+   "label": "Sponsorship and royalties",
+   "page": 23,
+   "native": 1.576,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 1.576,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.576
+  },
+  {
+   "label": "Conference and banqueting",
+   "page": 23,
+   "native": 8.428,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 8.428,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.428
+  },
+  {
+   "label": "Retail and merchandising",
+   "page": 23,
+   "native": 2.72,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 2.72,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.72
+  },
+  {
+   "label": "Other",
+   "page": 23,
+   "native": 1.598,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 1.598,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.598
+  },
+  {
+   "label": "Other operating income",
+   "page": 14,
+   "native": 2.301,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.301,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.301
+  },
+  {
+   "label": "Other operating income",
+   "page": 14,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Profit on disposal of player contracts",
+   "page": 14,
+   "native": 0.306,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.306,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.306
+  },
+  {
+   "label": "Cost of sales",
+   "page": 14,
+   "native": 4.13,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.13,
+   "cat": "other_expenses",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.13
+  },
+  {
+   "label": "Operating expenses",
+   "page": 14,
+   "native": 40.583,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 40.583,
+   "cat": "other_expenses",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -40.583
+  },
+  {
+   "label": "Amortisation of players contracts",
+   "page": 14,
+   "native": 2.715,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.715,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.715
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.043,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"TURNOVER\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 37.705,
+  "expSum": -47.428,
+  "officialTotalRevenue": 37.705,
+  "officialTotalExpenses": 47.428,
+  "officialPAT": -9.68,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -9.68,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 37.705
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 47.428
+  }
+ },
+ "liga": {
+  "valor": "gb-championship",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-07-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (52 de 58 fechas de fin de mes caen en el mes 7))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2023-07-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2023-07-31 = 0.777424 (Tipo spot del Bank of England al 2023-07-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "sunderland-gb-full-accounts-2022-23",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-championship",
+   "fuente": "data/club-leagues/gb.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 9,
+  "lineasGasto": 3,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

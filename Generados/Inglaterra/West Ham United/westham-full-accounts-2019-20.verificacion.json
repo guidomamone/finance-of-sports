@@ -1,0 +1,155 @@
+{
+ "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.md",
+ "generado": "2026-10-20T18:14:07.020Z",
+ "estado": "ok",
+ "clubId": "westham-gb",
+ "year": 2020,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4210854715202004e-14
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 164.932 en este documento y 164.932 en westham-full-accounts-2020-21.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (195.515 contra 224.542, sumando sus renglones): quedó el renglón del estado"
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 195.515,
+   "objetivo": 224.542
+  }
+ ],
+ "totales": {
+  "ingresos": 164.932,
+  "gastos": 224.542,
+  "financiero": -5.134,
+  "impuesto": 0,
+  "resultadoImpreso": -64.744,
+  "resultadoParaCargar": -64.744,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Match receipts and related football activities",
+   "lado": "ingreso",
+   "M": 22.431,
+   "pagina": 32,
+   "linea": 1321,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcast and central sponsorship distributions",
+   "lado": "ingreso",
+   "M": 82.52,
+   "pagina": 32,
+   "linea": 1322,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial activities",
+   "lado": "ingreso",
+   "M": 25.111,
+   "pagina": 32,
+   "linea": 1323,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Retail and merchandising",
+   "lado": "ingreso",
+   "M": 8.56,
+   "pagina": 32,
+   "linea": 1324,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 1.377,
+   "pagina": 24,
+   "linea": 914,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on sale of players",
+   "lado": "ingreso",
+   "M": 22.833,
+   "pagina": 34,
+   "linea": 1386,
+   "origen": "nota que desglosa \"Profit on disposal of players\""
+  },
+  {
+   "etiqueta": "Income from loan of players",
+   "lado": "ingreso",
+   "M": 2.1,
+   "pagina": 34,
+   "linea": 1387,
+   "origen": "nota que desglosa \"Profit on disposal of players\""
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 224.542,
+   "pagina": 24,
+   "linea": 915,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.031,
+   "linea": 919
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -5.165,
+   "linea": 920
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on Loss",
+   "M": null,
+   "linea": 922
+  }
+ ]
+}
