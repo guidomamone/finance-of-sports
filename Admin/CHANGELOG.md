@@ -17,6 +17,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 848 — Onboarding 4: Celtic, Newcastle, Viking y Sarpsborg (2026-10-20) [261 · celtic-gb, newcastle-gb, viking-no, sarpsborg08-no]
+
+- Merge de Onboarding 4: Celtic 2021-2024; Newcastle 2019, 2020 (13 meses) y 2021 (11 meses); Man City 2022, Tottenham 2023, Fulham 2022, Leeds 2021,
+  Liverpool 2023 y Boyacá Chicó 2025; Silkeborg y Viborg 2025 partidos; Viking AS 2017-2024 (consolidado); Sarpsborg 08 2008 (FLI).
+- A descartados: Viking FLI 2017-2024 (la AS lleva el fútbol) y Sarpsborg Fotball Invest AS 2008.
+- Los dos lotes 114 (Colombia de Onboarding 5 y Newcastle de Onboarding 4): el de Newcastle queda como `lote-114-onb4.txt`.
+
 ## Versión 847 — Docs 1 y Auditora mergeados; regla turca; salen 252 y 316 (2026-10-20) [255 · 252 · 316 · besiktas-tr, llaneros-co]
 
 - Merge de ligas (Docs 1): inventario del 255 en `Admin/consolidar-reglas-255.md` y 5 reglas dedupeadas en `Admin/*.md`.
