@@ -44,3 +44,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2014 desde `Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2014.pdf` (sourceId `molde-no-aarsregnskap-fotballklubb-fli-2014`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2015 desde `Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2015.pdf` (sourceId `molde-no-aarsregnskap-fotballklubb-fli-2015`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2017 desde `Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2017.pdf` (sourceId `molde-no-aarsregnskap-fotballklubb-fli-2017`).

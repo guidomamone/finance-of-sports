@@ -108,6 +108,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2017 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"molde-no", revenue:11.443, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2017",
+        mix:[["Cuotas Sociales",0.031],["Comercial / Sponsors",4.674],["Estadio",2.119],["Televisión",3.161],["Premios por competencias",0.004],["Otros ingresos",1.455]] },
       { id:"viking-no", revenue:10.061, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2017",
         mix:[["Comercial / Sponsors",4.817],["Estadio",0.92],["Televisión",1.342],["Venta de Jugadores",1.606],["Otros ingresos",1.375]] },
