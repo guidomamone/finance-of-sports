@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 860 — Cargar sin API: cuatro herramientas (2026-10-20) [328]
+
+- `tools/armar-a-mano.mjs` (arma `.ubicacion.json` y `.filas.json` con sus huellas desde una especificación y valida cada fila contra el `.md`),
+  `huellas.mjs --documento`, `--desde-sesion` en `jev-categorizar.mjs` y `categorizar-claude.mjs`, y `lote.mjs --ejecutar --sin-api` (frena donde pagaría).
+  Aprobadas por la Auditora; ninguna cambia años cargados.
+
 ## Versión 859 — Colombia cerrada; salen el 292 y el 165 (2026-10-20) [292 · 165 · 238 · 283 · atleticobucaramanga-co]
 
 - Merge de Onboarding 5: Atlético Bucaramanga 2019 y 2020 (alta), hecho con tokens de sesión (subagentes para localizar y extraer); 34 documentos de

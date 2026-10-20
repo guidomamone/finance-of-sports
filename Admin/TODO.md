@@ -26,7 +26,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **A. Cerrar lo abierto (en marcha)**
 * 238 (solo lo gratis o de centavos; lo caro queda afuera por ahora, decisión de Guido 2026-10-20): los 27 documentos con propuesta lista y los 12 frenados en la cola o sin cerrar; hecho eso, el 238 se cierra --> Onboarding 4
-* 328: carga con tokens de sesión: propuesta en `Admin/carga-con-tokens-328.md` : primero las 4 tools (Pipeline 7, con la Auditora), después Docs 1 acorta el texto de la skill para tu ok --> Pipeline 7
+* 328: carga con tokens de sesión: propuesta en `Admin/carga-con-tokens-328.md` : las 4 tools están (CHANGELOG 860); falta que Docs 1 acorte el texto de la skill para tu ok --> Docs 1
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
