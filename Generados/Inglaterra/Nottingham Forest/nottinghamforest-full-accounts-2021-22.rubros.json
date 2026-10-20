@@ -3,7 +3,7 @@
   "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
   "club": "nottinghamforest-gb",
   "year": 2022,
-  "generatedAt": "2026-10-20T17:50:58.991Z",
+  "generatedAt": "2026-10-20T18:26:00.661Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         8.227
       ],
-      "glosa": "Venta de entradas y abonos"
+      "glosa": "Venta de abonos y entradas"
     },
     {
       "label": "Commercial",
@@ -64,7 +64,7 @@
       "values": [
         1.925
       ],
-      "glosa": "Comercial"
+      "glosa": "Ingresos comerciales"
     },
     {
       "label": "Programme & other match day income",
@@ -74,7 +74,7 @@
       "values": [
         0.484
       ],
-      "glosa": "Venta de programas y otros ingresos de días de partido"
+      "glosa": "Venta de programas y otros ingresos de día de partido"
     },
     {
       "label": "Other non match day income",
@@ -84,7 +84,7 @@
       "values": [
         0.036
       ],
-      "glosa": "Otros ingresos no derivados de días de partido"
+      "glosa": "Otros ingresos no relacionados con día de partido"
     },
     {
       "label": "Players",
@@ -104,7 +104,7 @@
       "values": [
         3.549
       ],
-      "glosa": "Venta minorista"
+      "glosa": "Venta al por menor"
     },
     {
       "label": "Profit on disposal of player registrations",
@@ -135,6 +135,16 @@
         73.684
       ],
       "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Other operating (expenses)/income",
+      "lado": "expense",
+      "page": 13,
+      "section": "ajuste manual",
+      "values": [
+        0.02
+      ],
+      "glosa": "Otros (gastos)/ingresos de explotación"
     }
   ]
 }

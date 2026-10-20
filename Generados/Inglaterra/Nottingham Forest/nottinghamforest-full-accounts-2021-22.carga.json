@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
- "generado": "2026-10-20T18:14:10.813Z",
- "frena": [
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 33.767 + gastos -79.196 + netInterest -0.768 + tax 0.607 = -45.59 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -45.61)"
-  }
- ],
+ "generado": "2026-10-20T18:26:18.460Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (individual); 4 documento(s) mirados)",
   "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
@@ -145,6 +140,16 @@
     "amountNative": -73.684,
     "disclosureLevel": "aggregated",
     "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating (expenses)/income",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.02,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
     "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
@@ -160,11 +165,21 @@
    "assetSales": 0,
    "netInterest": -0.768,
    "tax": 0.607,
+   "extraRows": [
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -0.768
+    },
+    {
+     "label": "Tax on loss",
+     "value": 0.607
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 33.767,
-   "officialTotalExpenses": 79.196,
-   "officialPAT": null
+   "officialTotalExpenses": 79.216,
+   "officialPAT": -45.61
   },
   "source": {
    "id": "nottinghamforest-gb-full-accounts-2021-22",
@@ -187,9 +202,23 @@
  },
  "clubId": "nottinghamforest-gb",
  "year": 2022,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "-20",
+   "linea": 423,
+   "etiqueta": "Other operating (expenses)/income",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "La extracción omitió esta fila del estado de resultados (L423, (20) en £000): sin ella el resultado da -45,59 y el impreso es -45,61",
+   "evidencia": "pág. 13 del visor, .md L423",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
  "seleccion": {
-  "filas": 15,
+  "filas": 16,
   "notasUsadas": [],
   "refM": null
  },
@@ -386,11 +415,26 @@
    "signoFijo": 73.684,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -73.684
+  },
+  {
+   "label": "Other operating (expenses)/income",
+   "page": 13,
+   "native": 0.02,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.02,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.02
   },
   {
    "label": "Interest payable and similar expenses",
@@ -419,19 +463,27 @@
   "porTabla": {
    "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 33.767,
-  "expSum": -79.196,
+  "expSum": -79.216,
   "officialTotalRevenue": 33.767,
-  "officialTotalExpenses": 79.196,
-  "officialPAT": null,
+  "officialTotalExpenses": 79.216,
+  "officialPAT": -45.61,
   "verificacion": {
+   "pat": "impreso",
    "ingresos": "impreso",
    "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -45.61,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
@@ -441,7 +493,7 @@
   "expImpreso": {
    "label": "total de gastos (verificado)",
    "pag": null,
-   "M": 79.196
+   "M": 79.216
   }
  },
  "liga": {
@@ -492,10 +544,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 11,
-  "lineasGasto": 2,
+  "lineasGasto": 3,
   "metaFilas": 2,
   "excluidas": 0
  }

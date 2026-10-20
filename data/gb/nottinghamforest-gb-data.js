@@ -22,6 +22,19 @@ const nottinghamforestGbRevenueLinesByYear = {
     { rawLabel:'Other commercial', normalizedCategory:'sponsorship_commercial', amountNative:11.803, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:2.614, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Sponsorship and advertising', normalizedCategory:'sponsorship_commercial', amountNative:2.689, disclosureLevel:'aggregated' },
+    { rawLabel:'Catering', normalizedCategory:'other_income', amountNative:0.141, disclosureLevel:'aggregated' },
+    { rawLabel:'Grants & royalties', normalizedCategory:'sponsorship_commercial', amountNative:10.143, disclosureLevel:'aggregated' },
+    { rawLabel:'TV & radio', normalizedCategory:'broadcasting', amountNative:2.016, disclosureLevel:'aggregated' },
+    { rawLabel:'Ticket & membership sales', normalizedCategory:'matchday_competition', amountNative:8.227, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:1.925, disclosureLevel:'aggregated' },
+    { rawLabel:'Programme & other match day income', normalizedCategory:'matchday_competition', amountNative:0.484, disclosureLevel:'aggregated' },
+    { rawLabel:'Other non match day income', normalizedCategory:'other_income', amountNative:0.036, disclosureLevel:'aggregated' },
+    { rawLabel:'Players', normalizedCategory:'player_sales', amountNative:0.473, disclosureLevel:'aggregated' },
+    { rawLabel:'Retail', normalizedCategory:'sponsorship_commercial', amountNative:3.549, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:4.084, disclosureLevel:'aggregated' },
+  ],
 };
 
 const nottinghamforestGbExpenseLinesByYear = {
@@ -42,6 +55,11 @@ const nottinghamforestGbExpenseLinesByYear = {
     { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-11.176, disclosureLevel:'aggregated' },
     { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-203.14, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating expenses', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-5.512, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-73.684, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating (expenses)/income', normalizedCategory:'other_expenses', amountNative:-0.02, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -78,6 +96,20 @@ const nottinghamforestGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:157.372, officialTotalExpenses:214.316, officialPAT:-67.246,
   },
+  2022: {
+    currency:'GBP', fxRef:'GBP@2022-06-30',
+    sourceId:'nottinghamforest-gb-full-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.768, tax:0.607,
+    extraRows: [
+      {label:'Interest payable and similar expenses', value:-0.768},
+      {label:'Tax on loss', value:0.607},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:33.767, officialTotalExpenses:79.216, officialPAT:-45.61,
+  },
 };
 
 const nottinghamforestGbPresupuestoOverlayByYear = {};
@@ -112,6 +144,11 @@ Object.assign(sources, {
   'nottinghamforest-gb-full-accounts-2022-23': {
     id:'nottinghamforest-gb-full-accounts-2022-23', clubId:'nottinghamforest-gb',
     title:'Nottingham Forest Football Club Limited — nottinghamforest-full-accounts-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'nottinghamforest-gb-full-accounts-2021-22': {
+    id:'nottinghamforest-gb-full-accounts-2021-22', clubId:'nottinghamforest-gb',
+    title:'Nottingham Forest Football Club Limited — nottinghamforest-full-accounts-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

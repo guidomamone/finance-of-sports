@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.md",
- "generatedAt": "2026-10-20T17:55:35.558Z",
- "rubrosHuella": "661eb585e7934320f12b9b1733b2abf8c8cfd929",
+ "generatedAt": "2026-10-20T18:26:16.348Z",
+ "rubrosHuella": "719032a834f94ca38edeba1d5c2b0de61ca52275",
  "rubros": [
   {
    "label": "Sponsorship and advertising",
@@ -119,6 +119,29 @@
    "choice": "admin_general_expense",
    "confidence": 1,
    "desdeCache": true
+  },
+  {
+   "label": "Other operating (expenses)/income",
+   "lado": "expense",
+   "page": 13,
+   "section": "ajuste manual",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1021
   }
  ]
 }

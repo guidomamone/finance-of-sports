@@ -47,6 +47,9 @@ window.RANKINGS["gb-championship"] = {
       { id:"bournemouth-gb", revenue:73.818, reportType:"official_balance_sheet",
         sourceId:"bournemouth-gb-full-accounts-2021-22",
         mix:[["Comercial / Sponsors",4.102],["Estadio",6.237],["Televisión",52.013],["Venta de Jugadores",8.322],["Otros ingresos",3.145]] },
+      { id:"nottinghamforest-gb", revenue:41.003, reportType:"official_balance_sheet",
+        sourceId:"nottinghamforest-gb-full-accounts-2021-22",
+        mix:[["Comercial / Sponsors",22.229],["Estadio",10.578],["Televisión",2.448],["Venta de Jugadores",5.534],["Otros ingresos",0.215]] },
     ],
   },
   2020: {

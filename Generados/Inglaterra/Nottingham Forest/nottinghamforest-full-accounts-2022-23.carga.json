@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.pdf",
- "generado": "2026-10-20T18:14:10.898Z",
- "frena": [],
+ "generado": "2026-10-20T18:24:23.581Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "nottinghamforest-gb ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['nottinghamforest-gb-full-accounts-2022-23'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (individual); 4 documento(s) mirados)",
   "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
@@ -331,8 +340,8 @@
  },
  "liga": {
   "valor": "gb-premierleague",
-  "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Nottingham Forest\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -372,13 +381,13 @@
   },
   "liga": {
    "valor": "gb-premierleague",
-   "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Nottingham Forest\"",
+   "fuente": "data/club-leagues/gb.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 5,
   "lineasGasto": 3,
   "metaFilas": 2,
