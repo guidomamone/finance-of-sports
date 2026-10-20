@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.pdf",
- "generado": "2026-10-19T14:54:33.067Z",
+ "generado": "2026-10-20T18:30:42.901Z",
  "frena": [],
  "avisos": [],
  "ejercicio": {
@@ -112,7 +112,7 @@
    "title": "Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2021-06-30-individual (ejercicio 2021)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.md",
@@ -287,8 +287,8 @@
  },
  "liga": {
   "valor": "be-div2amateur",
-  "fuente": "roster cacheado de \"2020–21 Belgian Division 2\" (tools/club-league-reference/be.json), coincidencia exacta \"Lokeren-Temse\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -328,7 +328,7 @@
   },
   "liga": {
    "valor": "be-div2amateur",
-   "fuente": "roster cacheado de \"2020–21 Belgian Division 2\" (tools/club-league-reference/be.json), coincidencia exacta \"Lokeren-Temse\"",
+   "fuente": "data/club-leagues/be.js ya tiene la fila",
    "estado": "ok"
   }
  },
