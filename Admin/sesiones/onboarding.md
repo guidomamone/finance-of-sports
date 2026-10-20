@@ -133,3 +133,7 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - Frenados por script (`Admin/registros/frenados-por-script.jsonl`): Man City 2021-22, Tottenham 2022-23 y Fulham 2021-22 (298 v2, ya en main), y Newcastle 2019-20 (13 meses) y 2020-21 (11 meses) por 298 z2. Dejé ajustes `cierre` y `estado` para Man City, Tottenham, Leeds 2020-21 y Liverpool 2022-23: esperan el merge de v2.
 - Gasto de la sesión: US$ 6,27 (934,18 − 927,91) de los US$ 15.
 - Pendiente: St. Gallen (número de lote), otros años de Celtic, Silkeborg y Viborg 2025 (partir "Depreciation, amortisation and impairment"), Patro Eisden, Lokeren-Temse, Lierse 2019, Boyacá Chicó, Noruega (63 ejercicios) y el 238.
+
+### Silkeborg 2025 y Viborg 2025: partición de amortización y depreciación (Onboarding 4, 2026-10-20)
+- Pedido de la principal (votación 3 a 0): partir "Depreciation, amortisation and impairment" con los importes de las notas. Hecho con ajustes `fila` (una conserva el reemplazo del renglón total) y `--corregir-categoria` (player_amortisation y depreciation), `cargar.mjs --reemplazar --escribir`. Silkeborg: 12.670 = 6.502 (L602) + 6.168 (L616); Viborg: 18.375.737 = 15.751.691 (L1196) + 2.624.046 (L1225). Los totales no cambian. `cargar.mjs` pudo partir la fila: no hay frenado por script.
+- Para recargar un año ya cargado con una categoría nueva, `lote.mjs` no sirve (no categoriza lo que ya está en el sitio); sirve la cola con `--corregir-categoria` y `cargar.mjs --desde-verificacion --reemplazar`.
