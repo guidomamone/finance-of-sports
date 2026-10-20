@@ -44,6 +44,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2021: {"estadio":"Viking Stadion","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2021 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312260742"},
     2022: {"estadio":"SR-Bank Arena","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2022 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312230967"},
     2023: {"estadio":"SR-Bank Arena","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2023 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1364297219"},
+    2024: {"estadio":"Viking Stadion","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2024 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356845648"},
     2025: {"estadio":"Lyse Arena","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
 });

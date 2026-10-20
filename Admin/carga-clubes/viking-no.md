@@ -92,6 +92,48 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): no-eliteserien, verificado contra roster cacheado de "2025 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Viking".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Inntekt fra samarbeidsavtaler | pág. 22, precedente |
+| 2 | Billettinntekt fra kamper | pág. 22, precedente |
+| 3 | Medieinntekter | pág. 22, precedente |
+| 4 | Gevinst ved salg av spillertettigheter | pág. 22, precedente |
+| 5 | Annen driftsinntekt | pág. 22, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Lønninger | pág. 29, precedente |
+| 2 | Arbeidsgiveravgift | pág. 29, precedente |
+| 3 | Personalkostnader fra Viking FK | pág. 29, precedente |
+| 4 | Pensjonskostnad (OTP) | pág. 29, precedente |
+| 5 | Andre personalkostnader | pág. 29, precedente |
+| 6 | Ordinære avskrivninger | pág. 22, precedente |
+| 7 | Nedskrivninger | pág. 22, Jev 0.92 |
+| 8 | Annen driftskostnad | pág. 22, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): no-eliteserien, verificado contra roster cacheado de "2024 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Viking".
+```
+
 ## 2023
 
 ### Ingresos
@@ -396,4 +438,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### viking-no-aarsregnskap-viking-fotball-as-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

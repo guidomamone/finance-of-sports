@@ -48,6 +48,13 @@ const vikingnoRevenueLinesByYear = {
     { rawLabel:'Gevinst ved salg av spillere', normalizedCategory:'player_sales', amountNative:36.584869, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftsinntekt', normalizedCategory:'other_income', amountNative:19.796338, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Inntekt fra samarbeidsavtaler', normalizedCategory:'sponsorship_commercial', amountNative:65.605095, disclosureLevel:'aggregated' },
+    { rawLabel:'Billettinntekt fra kamper', normalizedCategory:'matchday_competition', amountNative:17.83223, disclosureLevel:'aggregated' },
+    { rawLabel:'Medieinntekter', normalizedCategory:'broadcasting', amountNative:36.706251, disclosureLevel:'aggregated' },
+    { rawLabel:'Gevinst ved salg av spillertettigheter', normalizedCategory:'player_sales', amountNative:76.769325, disclosureLevel:'aggregated' },
+    { rawLabel:'Annen driftsinntekt', normalizedCategory:'other_income', amountNative:24.651566, disclosureLevel:'aggregated' },
+  ],
 };
 const vikingnoExpenseLinesByYear = {
   2025: [
@@ -116,6 +123,16 @@ const vikingnoExpenseLinesByYear = {
     { rawLabel:'Ordinære avskrivninger', normalizedCategory:'depreciation', amountNative:-17.925743, disclosureLevel:'aggregated' },
     { rawLabel:'Nedskrivning av varige driftsmidler og immaterielle eiendeler', normalizedCategory:'other_expenses', amountNative:-1.587544, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-71.372413, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Lønninger', normalizedCategory:'wages_squad', amountNative:-11.295951, disclosureLevel:'aggregated' },
+    { rawLabel:'Arbeidsgiveravgift', normalizedCategory:'wages_squad', amountNative:-1.655147, disclosureLevel:'aggregated' },
+    { rawLabel:'Personalkostnader fra Viking FK', normalizedCategory:'wages_squad', amountNative:-61.560858, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnad (OTP)', normalizedCategory:'wages_squad', amountNative:-0.380386, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre personalkostnader', normalizedCategory:'wages_squad', amountNative:0.679137, disclosureLevel:'aggregated' },
+    { rawLabel:'Ordinære avskrivninger', normalizedCategory:'depreciation', amountNative:-21.689421, disclosureLevel:'aggregated' },
+    { rawLabel:'Nedskrivninger', normalizedCategory:'player_impairment', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-93.346471, disclosureLevel:'aggregated' },
   ],
 };
 const vikingnoFiscalYearMeta = {
@@ -232,6 +249,22 @@ const vikingnoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:161.294643, officialTotalExpenses:158.271546, officialPAT:3.134595,
   },
+  2024: {
+    currency:'NOK', fxRef:'NOK@2024-12-31',
+    sourceId:'viking-no-aarsregnskap-viking-fotball-as-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.236118, tax:0,
+    extraRows: [
+      {label:'Renteinntekt', value:0.730524},
+      {label:'Netto finansinntekt', value:0.777159},
+      {label:'Rentekostnad', value:-3.743801},
+      {label:'Skattekostnad på ordinært resultat', value:0},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:221.564467, officialTotalExpenses:189.249097, officialPAT:30.079253,
+  },
 };
 const vikingnoPresupuestoOverlayByYear = {};
 
@@ -281,6 +314,11 @@ Object.assign(sources, {
   'viking-no-aarsregnskap-viking-fotball-as-2023': {
     id:'viking-no-aarsregnskap-viking-fotball-as-2023', clubId:'viking-no',
     title:'Viking Fotball AS — aarsregnskap-viking-fotball-as-2023 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'viking-no-aarsregnskap-viking-fotball-as-2024': {
+    id:'viking-no-aarsregnskap-viking-fotball-as-2024', clubId:'viking-no',
+    title:'Viking Fotball AS — aarsregnskap-viking-fotball-as-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
