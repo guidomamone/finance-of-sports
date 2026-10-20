@@ -1,20 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.pdf",
- "generado": "2026-10-19T18:56:29.577Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Arriendos\" -> match_organisation_expense 0.6; \"Gastos de Pretemporada\" -> match_organisation_expense 0.75; \"Gastos de Entrenamientos\" -> match_organisation_expense 0.7; \"Provisiones\" -> other_expenses 0.75; \"Gastos Bancarios\" -> other_expenses 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2025: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2025: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-20T17:00:07.710Z",
+ "frena": [],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-13933.745); queda la suma, verificada por el resultado del ejercicio (el impreso \"total de gastos (verificado)\" 13935.503 difiere en 1.758: redondeo)",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-12-31); pregunta en la cola (no frena)"
@@ -159,13 +146,13 @@
    },
    {
     "rawLabel": "Arriendos",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -622.87,
     "disclosureLevel": "aggregated",
     "_pag": 48,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Contribuciones y Afiliaciones",
@@ -233,9 +220,9 @@
     "amountNative": -7.99,
     "disclosureLevel": "aggregated",
     "_pag": 48,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de Entrenamientos",
@@ -243,9 +230,9 @@
     "amountNative": -211.694,
     "disclosureLevel": "aggregated",
     "_pag": 48,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Derechos Deportivos",
@@ -389,23 +376,23 @@
    },
    {
     "rawLabel": "Provisiones",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "other_amortisation",
     "amountNative": -49.775,
     "disclosureLevel": "aggregated",
     "_pag": 49,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos Bancarios",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -49.717,
     "disclosureLevel": "aggregated",
     "_pag": 49,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos Comisiones banc",
@@ -478,7 +465,7 @@
    "title": "Unión Magdalena S.A. — estados-financieros-2025 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Colombia/Union Magdalena/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Colombia/Union Magdalena/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.md",
@@ -704,12 +691,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
    "signoFijo": 622.87,
-   "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): 'Arriendos' genérico, sin decir que sea de estadio o partidos: criterio conservador, otros gastos.",
    "destino": "expense",
    "amountNative": -622.87
   },
@@ -811,11 +798,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
    "signoFijo": 7.99,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): pretemporada del plantel: organización de partidos.",
    "destino": "expense",
    "amountNative": -7.99
   },
@@ -827,11 +814,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
    "signoFijo": 211.694,
    "cat": "match_organisation_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, baja): entrenamientos del plantel; la alternativa es other_expenses.",
    "destino": "expense",
    "amountNative": -211.694
   },
@@ -1052,12 +1039,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
    "signoFijo": 49.775,
-   "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): provisiones van a other_amortisation por la regla de provisiones del SKILL.md sección 1.",
    "destino": "expense",
    "amountNative": -49.775
   },
@@ -1068,12 +1055,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
    "signoFijo": 49.717,
-   "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): gastos bancarios son comisiones de administración, no intereses.",
    "destino": "expense",
    "amountNative": -49.717
   },
@@ -1249,8 +1236,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 11,
   "lineasGasto": 30,
   "metaFilas": 4,

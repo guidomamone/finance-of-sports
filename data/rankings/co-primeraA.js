@@ -35,6 +35,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"fortalezaceif-co", revenue:6.348, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",1.163],["Estadio",1.144],["Televisión",0.416],["Premios por competencias",0.215],["Venta de Jugadores",3.079],["Otros ingresos",0.33]] },
+      { id:"unionmagdalena-co", revenue:3.132, reportType:"official_balance_sheet",
+        sourceId:"unionmagdalena-co-estados-financieros-2025",
+        mix:[["Comercial / Sponsors",0.582],["Estadio",0.412],["Televisión",1.959],["Premios por competencias",0.18],["Otros ingresos",-0.001]] },
     ],
   },
   2024: {

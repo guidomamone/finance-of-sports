@@ -284,7 +284,7 @@ window.CLUB_INDEX = {
   "udinese-it": {"n":"Udinese","c":"IT","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "uniaodeleiria-pt": {"n":"União de Leiria","c":"PT","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "union": {"n":"Unión","c":"AR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
-  "unionmagdalena-co": {"n":"Unión Magdalena","c":"CO","q":"full","y":1,"last":2018,"yrs":[[2018,"official_balance_sheet"]]},
+  "unionmagdalena-co": {"n":"Unión Magdalena","c":"CO","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
   "unionsg-be": {"n":"Union Saint-Gilloise","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "urawareddiamonds": {"n":"Urawa Red Diamonds","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "valenciacf": {"n":"Valencia CF","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
