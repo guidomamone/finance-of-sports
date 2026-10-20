@@ -116,15 +116,14 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   queda al fondo de la lista para siempre.** Escribirlo es la única señal de que los OTROS puntos
   de la lista también pueden estar en la misma situación — fue así como, después del primer caso,
   se encontró el segundo.
-- REGLA DE ESTILO (Versión 42, pedida por Guido: "los odio a los em dashes"): no usar el carácter
-  em dash (—, U+2014) en ningún texto nuevo de este archivo, ni en comentarios ni en copy visible
-  para el usuario. Usar punto y arrancar oración nueva, coma, dos puntos o paréntesis según
-  corresponda. La ÚNICA excepción es el carácter "—" usado como símbolo de "sin dato"/"no aplica"
+- REGLA DE ESTILO (Versión 42, pedida por Guido: "los odio a los em dashes"): la regla vale SOLO para el
+  texto visible del sitio (copy de la página, traducciones, notas públicas): no usar el carácter
+  em dash (—, U+2014). Usar punto y arrancar oración nueva, coma, dos puntos o paréntesis según
+  corresponda. En documentos internos, skills y comentarios de código no aplica (decisión de Guido,
+  2026-10-20). La ÚNICA excepción dentro del sitio es el carácter "—" usado como símbolo de "sin dato"/"no aplica"
   en celdas de tabla (`fmtPctDisplay`/`fmtPctOfTotal`/varios `td` de
   `buildNativeSectionHtml`/`renderNativePLTable`/etc.): ese uso no es puntuación de una oración, es
-  un símbolo de tabla, y se mantiene igual que siempre. Toda la prosa del archivo (este comentario
-  incluido) y
-  los 2 skills de `.claude/skills/` se limpiaron de em dashes en esta sesión.
+  un símbolo de tabla, y se mantiene igual que siempre.
 
 - UNA FUENTE EXTERNA NUEVA SE ANOTA ANTES DE PUBLICAR (Guido, 2026-10-18). Antes de publicar datos que salgan de una fuente externa nueva
   (una cotización, un deflactor, una lista, Wikipedia…), se suma a `Admin/fuentes-externas.md` con sus términos leídos en su página: qué
