@@ -1,11 +1,11 @@
 // GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["ee-meistriliiga"] = {
-  2019: [{"n":"Maardu Linnameeskond","revenue":1.287,"lo":0.423,"hi":4.037,"caso":"nuevo","error":51,"de":[]},{"n":"Tulevik","revenue":0.781,"lo":0.256,"hi":2.448,"caso":"nuevo","error":51,"de":[]}],
-  2020: [{"n":"Legion","revenue":1.122,"lo":0.368,"hi":3.517,"caso":"nuevo","error":51,"de":[]},{"n":"Tulevik","revenue":1.598,"lo":0.525,"hi":5.011,"caso":"nuevo","error":51,"de":[]}],
-  2021: [{"n":"Legion","revenue":2.482,"lo":0.815,"hi":7.781,"caso":"nuevo","error":51,"de":[]},{"n":"Tulevik","revenue":1.505,"lo":0.494,"hi":4.719,"caso":"nuevo","error":51,"de":[]},{"n":"Vaprus","revenue":0.913,"lo":0.3,"hi":2.862,"caso":"nuevo","error":51,"de":[]}],
-  2022: [{"n":"Legion","revenue":1.434,"lo":0.471,"hi":4.495,"caso":"nuevo","error":51,"de":[]},{"n":"Vaprus","revenue":0.869,"lo":0.286,"hi":2.726,"caso":"nuevo","error":51,"de":[]}],
-  2023: [{"n":"Vaprus","revenue":1.095,"lo":0.36,"hi":3.433,"caso":"nuevo","error":51,"de":[]}],
-  2024: [{"n":"Nõmme United","revenue":2.598,"lo":0.853,"hi":8.145,"caso":"nuevo","error":51,"de":[]},{"n":"Vaprus","revenue":1.334,"lo":0.438,"hi":4.181,"caso":"nuevo","error":51,"de":[]}],
-  2025: [{"n":"Vaprus","revenue":3.884,"lo":1.276,"hi":12.179,"caso":"nuevo","error":51,"de":[]}],
+  2019: [{"n":"Maardu Linnameeskond","revenue":1.287,"lo":0.424,"hi":4.038,"caso":"nuevo","error":51,"de":[]},{"n":"Tulevik","revenue":0.78,"lo":0.257,"hi":2.449,"caso":"nuevo","error":51,"de":[]}],
+  2020: [{"n":"Legion","revenue":1.121,"lo":0.37,"hi":3.518,"caso":"nuevo","error":51,"de":[]},{"n":"Tulevik","revenue":1.597,"lo":0.527,"hi":5.014,"caso":"nuevo","error":51,"de":[]}],
+  2021: [{"n":"Legion","revenue":2.481,"lo":0.818,"hi":7.787,"caso":"nuevo","error":51,"de":[]},{"n":"Tulevik","revenue":1.504,"lo":0.496,"hi":4.721,"caso":"nuevo","error":51,"de":[]},{"n":"Vaprus","revenue":0.912,"lo":0.301,"hi":2.862,"caso":"nuevo","error":51,"de":[]}],
+  2022: [{"n":"Legion","revenue":1.433,"lo":0.473,"hi":4.497,"caso":"nuevo","error":51,"de":[]},{"n":"Vaprus","revenue":0.869,"lo":0.287,"hi":2.726,"caso":"nuevo","error":51,"de":[]}],
+  2023: [{"n":"Vaprus","revenue":1.094,"lo":0.361,"hi":3.434,"caso":"nuevo","error":51,"de":[]}],
+  2024: [{"n":"Nõmme United","revenue":2.596,"lo":0.856,"hi":8.15,"caso":"nuevo","error":51,"de":[]},{"n":"Vaprus","revenue":1.332,"lo":0.44,"hi":4.182,"caso":"nuevo","error":51,"de":[]}],
+  2025: [{"n":"Vaprus","revenue":3.883,"lo":1.281,"hi":12.188,"caso":"nuevo","error":51,"de":[]}],
 };

@@ -32,6 +32,17 @@ const leedsGbRevenueLinesByYear = {
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:3.528322, disclosureLevel:'aggregated' },
     { rawLabel:'Gain on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:10.128024, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:24.579185, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and broadcasting income', normalizedCategory:'broadcasting', amountNative:19.802631, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising income', normalizedCategory:'sponsorship_commercial', amountNative:25.05464, disclosureLevel:'aggregated' },
+    { rawLabel:'Central distributions', normalizedCategory:'broadcasting', amountNative:95.870294, disclosureLevel:'aggregated' },
+    { rawLabel:'Other commercial revenue', normalizedCategory:'sponsorship_commercial', amountNative:18.935151, disclosureLevel:'aggregated' },
+    { rawLabel:'Catering income', normalizedCategory:'other_income', amountNative:4.693913, disclosureLevel:'aggregated' },
+    { rawLabel:'Educational services', normalizedCategory:'education', amountNative:0.270955, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Gain/ (loss) on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:0.889647, disclosureLevel:'aggregated' },
+  ],
 };
 
 const leedsGbExpenseLinesByYear = {
@@ -57,6 +68,11 @@ const leedsGbExpenseLinesByYear = {
     { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-13.885858, disclosureLevel:'aggregated' },
     { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-108.398516, disclosureLevel:'aggregated' },
     { rawLabel:'Television and broadcasting rebate', normalizedCategory:'other_expenses', amountNative:-7, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-20.174675, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-203.502431, disclosureLevel:'aggregated' },
+    { rawLabel:'Settlement of transfer dispute', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -113,6 +129,21 @@ const leedsGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:67.840326, officialTotalExpenses:129.284374, officialPAT:-62.421984,
   },
+  2022: {
+    currency:'GBP', fxRef:'GBP@2022-06-30',
+    sourceId:'leeds-gb-group-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-3.129737, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:6.598522},
+      {label:'Interest payable and similar expenses', value:-9.728259},
+      {label:'Tax on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:190.096416, officialTotalExpenses:223.677106, officialPAT:-36.710427,
+  },
 };
 
 const leedsGbPresupuestoOverlayByYear = {};
@@ -150,6 +181,11 @@ Object.assign(sources, {
   'leeds-gb-group-accounts-2019-20': {
     id:'leeds-gb-group-accounts-2019-20', clubId:'leeds-gb',
     title:'Leeds United Football Club Limited — leeds-group-accounts-2019-20 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'leeds-gb-group-accounts-2021-22': {
+    id:'leeds-gb-group-accounts-2021-22', clubId:'leeds-gb',
+    title:'Leeds United Football Club Limited — leeds-group-accounts-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
