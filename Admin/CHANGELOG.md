@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 871 — Las reglas de categoría llegan a Jev y a Claude (2026-10-20) [329]
+
+- Cada `## REGLA:` de categoría en CONVENCIONES-DATOS lleva `CATEGORÍA (prompt)` y `EJEMPLO-CATEGORÍA`; `tools/reglas-categoria.mjs --escribir`
+  registra los ejemplos en `categorias-aprendidas.jsonl` y `categorizar-claude.mjs` lee las frases en el prompt. Medido: 0 años cargados cambian.
+  Aprobado por la Auditora. Sale el 329.
+
 ## Versión 870 — Benfica 2014-15; correcciones de la tanda 1 (2026-10-20) [238 · 329 · 330 · benfica-pt, agf-dk, mechelen-be, rosariocentral]
 
 - Merge de Onboarding 4: Benfica 2014-15 cargado (de 2006 a 2026 solo le falta 2011);
