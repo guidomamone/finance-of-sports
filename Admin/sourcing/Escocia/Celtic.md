@@ -56,3 +56,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2022 desde `Clubes/Escocia/Celtic/celtic-group-accounts-2021-22.pdf` (sourceId `celtic-gb-group-accounts-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2023 desde `Clubes/Escocia/Celtic/celtic-group-accounts-2022-23.pdf` (sourceId `celtic-gb-group-accounts-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2024 desde `Clubes/Escocia/Celtic/celtic-group-accounts-2023-24.pdf` (sourceId `celtic-gb-group-accounts-2023-24`).

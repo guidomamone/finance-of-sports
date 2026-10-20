@@ -643,10 +643,6 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Manta — sin-buscar: 2022 (ec-serieb)
 - Olmedo — sin-buscar: 2022 (ec-serieb)
 
-## Escocia (1 clubes, 1 club-años)
-
-- Celtic — sin-buscar: 2024 (gb-scottishpremiership)
-
 ## España (16 clubes, 28 club-años)
 
 - Albacete — sin-buscar: 2025 (es-segunda), 2024 (es-segunda), 2020 (es-segunda)

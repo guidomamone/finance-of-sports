@@ -35,6 +35,17 @@ const celticgbRevenueLinesByYear = {
     { rawLabel:'Profit on disposal of intangible assets', normalizedCategory:'player_sales', amountNative:14.441, disclosureLevel:'aggregated' },
     { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:13.5, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Ticketing', normalizedCategory:'matchday_competition', amountNative:40.823, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial / sponsorship', normalizedCategory:'sponsorship_commercial', amountNative:13.831, disclosureLevel:'aggregated' },
+    { rawLabel:'Retail outlets and e-commerce', normalizedCategory:'sponsorship_commercial', amountNative:22.65, disclosureLevel:'aggregated' },
+    { rawLabel:'Media rights', normalizedCategory:'broadcasting', amountNative:36.374, disclosureLevel:'aggregated' },
+    { rawLabel:'Stadium operations', normalizedCategory:'stadium_other', amountNative:8.814, disclosureLevel:'aggregated' },
+    { rawLabel:'Other', normalizedCategory:'other_income', amountNative:2.088, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of Intangible assets', normalizedCategory:'player_sales', amountNative:6.637, disclosureLevel:'aggregated' },
+    { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Exceptional operating Income/(expenses)', normalizedCategory:'other_income', amountNative:0.203, disclosureLevel:'aggregated' },
+  ],
 };
 const celticgbExpenseLinesByYear = {
   2025: [
@@ -58,6 +69,10 @@ const celticgbExpenseLinesByYear = {
     { rawLabel:'Operating expenses (before intangible asset transactions and exceptional items)', normalizedCategory:'other_expenses', amountNative:-95.432, disclosureLevel:'aggregated' },
     { rawLabel:'Exceptional operating expenses', normalizedCategory:'exceptional_items', amountNative:-0.131, disclosureLevel:'aggregated' },
     { rawLabel:'Amortisation of intangible assets', normalizedCategory:'player_amortisation', amountNative:-12.088, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Operating expenses (before intangible asset transactions and exceptional items)', normalizedCategory:'other_expenses', amountNative:-105.394, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of intangible assets', normalizedCategory:'player_amortisation', amountNative:-11.483, disclosureLevel:'aggregated' },
   ],
 };
 const celticgbFiscalYearMeta = {
@@ -125,6 +140,21 @@ const celticgbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:147.792, officialTotalExpenses:107.52, officialPAT:33.332,
   },
+  2024: {
+    currency:'GBP', fxRef:'GBP@2024-06-30',
+    sourceId:'celtic-gb-group-accounts-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:3.282, tax:-4.441,
+    extraRows: [
+      {label:'Finance income', value:4.726},
+      {label:'Finance expense', value:-1.444},
+      {label:'Tax expense', value:-4.441},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:131.42, officialTotalExpenses:116.877, officialPAT:13.384,
+  },
 };
 const celticgbPresupuestoOverlayByYear = {};
 
@@ -159,6 +189,11 @@ Object.assign(sources, {
   'celtic-gb-group-accounts-2022-23': {
     id:'celtic-gb-group-accounts-2022-23', clubId:'celtic-gb',
     title:'Celtic plc — celtic-group-accounts-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'celtic-gb-group-accounts-2023-24': {
+    id:'celtic-gb-group-accounts-2023-24', clubId:'celtic-gb',
+    title:'Celtic plc — celtic-group-accounts-2023-24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
