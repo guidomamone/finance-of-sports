@@ -1,6 +1,10 @@
 window.CLUB_GESTIONES = window.CLUB_GESTIONES || {};
 
 Object.assign(window.CLUB_GESTIONES, {
+  'stgallen-ch': [
+    { nombre:'Matthias Hüppi', corto:'Hüppi', cargo:'Presidente', desde:'2018-01-01', hasta:null,
+      fuente:'https://www.nau.ch/sport/fussball/matthias-huppi-wird-prasident-vom-fc-st-gallen-65276105', confirmada:true },
+  ],
   'basel-ch': [
     { nombre:'Gigi Oeri', corto:'Oeri', cargo:'Presidente', desde:'2006-05-09', hasta:'2012-01-01',
       fuente:'https://financeofsports.com/Clubes/Suiza/Basel/geschaeftsbericht-2006.md', confirmada:true },
