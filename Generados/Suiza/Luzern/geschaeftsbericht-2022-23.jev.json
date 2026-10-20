@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.md",
- "generatedAt": "2026-10-19T16:08:16.518Z",
- "rubrosHuella": "278b41396aa93f400af08f6f0886fd71d0ddc73b",
+ "generatedAt": "2026-10-20T18:21:11.765Z",
+ "rubrosHuella": "9c8782fe94ea771f31eae0ad6f45de4286f8c4be",
  "rubros": [
   {
    "label": "Meisterschaft Eintritte",
@@ -22,6 +22,15 @@
    "desdeCache": true
   },
   {
+   "label": "Schweizer Cup",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Matchorganisation\"",
+   "choice": "competition_bonus",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
    "label": "UEFA Clubwettbewerbe",
    "lado": "revenue",
    "page": 26,
@@ -31,10 +40,19 @@
    "desdeCache": true
   },
   {
+   "label": "Freundschaftsspiele",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Matchorganisation\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
    "label": "Sponsoring, Werbung",
    "lado": "revenue",
    "page": 21,
-   "section": "estado",
+   "section": "estado (lectura 5: hoja)",
    "choice": "sponsorship_commercial",
    "confidence": 1,
    "desdeCache": true
@@ -43,7 +61,7 @@
    "label": "TV-Entschädigungen Übertragungsrechte",
    "lado": "revenue",
    "page": 21,
-   "section": "estado",
+   "section": "estado (lectura 5: hoja)",
    "choice": "broadcasting",
    "confidence": 1,
    "desdeCache": true
@@ -52,7 +70,7 @@
    "label": "Transferertrag",
    "lado": "revenue",
    "page": 21,
-   "section": "estado",
+   "section": "estado (lectura 5: hoja)",
    "choice": "player_sales",
    "confidence": 1,
    "desdeCache": true
@@ -94,12 +112,30 @@
    "desdeCache": true
   },
   {
+   "label": "Anlässe (FCL-Fussballcamp, Pfingstmasters)",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
+   "choice": "youth_football",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
    "label": "Diverse Einnahmen",
    "lado": "revenue",
    "page": 27,
    "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
    "choice": "other_income",
    "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Konferenzen, Events swissporarena",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Events\"",
+   "choice": "stadium_other",
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -130,19 +166,46 @@
    "desdeCache": true
   },
   {
-   "label": "Sonstiger Betriebsertrag",
+   "label": "Ausmietung Stewards",
    "lado": "revenue",
-   "page": 21,
-   "section": "estado",
+   "page": 27,
+   "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Anpassung Delkredere",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
    "choice": "other_income",
    "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Swiss-Olympic-Stabilisierungspaket",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sonstiges",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Sonstiger Betriebsertrag\"",
+   "choice": "other_income",
+   "confidence": 0.98,
    "desdeCache": true
   },
   {
    "label": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
    "lado": "revenue",
    "page": 21,
-   "section": "estado",
+   "section": "estado (lectura 5: hoja)",
    "choice": "other_income",
    "confidence": 1,
    "desdeCache": true
@@ -151,7 +214,7 @@
    "label": "Erfolg aus Equity-Beteiligungen",
    "lado": "revenue",
    "page": 21,
-   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
    "choice": "other_income",
    "confidence": 1,
    "desdeCache": true
@@ -160,7 +223,7 @@
    "label": "Minderheitsanteil am Jahresergebnis",
    "lado": "revenue",
    "page": 21,
-   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
    "choice": "other_income",
    "confidence": 1,
    "desdeCache": true
@@ -190,6 +253,96 @@
    "section": "nota que desglosa \"Personalaufwand\"",
    "choice": "admin_general_expense",
    "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Miete und Unterhalt Stadion",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Sicherheitskosten Matchtag (ohne Stewards)",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Abgaben öffentlicher Verkehr",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Medical und Material",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ticketing und Vorverkaufsgebühren",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Diverse Kosten Spielbetrieb",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "VIP-Cateringkosten Spieltag",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwand übriger Spielbetrieb",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Rückvergütungen Lieferanten",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferaufwand definitive Übertritte",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Transferaufwand\"",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
    "desdeCache": true
   },
   {
@@ -283,10 +436,19 @@
    "desdeCache": true
   },
   {
+   "label": "Konferenzen, Events",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Events\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
    "label": "Merchandising",
    "lado": "expense",
    "page": 21,
-   "section": "estado",
+   "section": "estado (lectura 5: hoja)",
    "choice": "admin_general_expense",
    "confidence": 0.93,
    "desdeCache": true
@@ -295,7 +457,7 @@
    "label": "Energie, Wasser und Entsorgung",
    "lado": "expense",
    "page": 21,
-   "section": "estado",
+   "section": "estado (lectura 5: hoja)",
    "choice": "admin_general_expense",
    "confidence": 0.99,
    "desdeCache": true
@@ -349,7 +511,7 @@
    "label": "Abschreibungen mobile Sachanlagen",
    "lado": "expense",
    "page": 21,
-   "section": "estado",
+   "section": "estado (lectura 5: hoja)",
    "choice": "depreciation",
    "confidence": 1,
    "desdeCache": true
@@ -358,7 +520,7 @@
    "label": "Abschreibungen immaterielle Sachanlagen",
    "lado": "expense",
    "page": 21,
-   "section": "estado",
+   "section": "estado (lectura 5: hoja)",
    "choice": "depreciation",
    "confidence": 0.69,
    "desdeCache": true
@@ -367,171 +529,33 @@
    "label": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
    "lado": "expense",
    "page": 21,
-   "section": "estado",
+   "section": "estado (lectura 5: hoja)",
    "choice": "exceptional_items",
    "confidence": 1,
    "desdeCache": true
   },
   {
-   "label": "Anlässe (FCL-Fussballcamp, Pfingstmasters)",
-   "lado": "revenue",
-   "page": 27,
-   "section": "nota que desglosa \"Leistungsfussball Nachwuchs\"",
-   "choice": "youth_football",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "youth_football",
-     0.99
-    ],
-    [
-     "other_income",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1069
-  },
-  {
-   "label": "Freundschaftsspiele",
-   "lado": "revenue",
-   "page": 26,
-   "section": "nota que desglosa \"Matchorganisation\"",
-   "choice": "matchday_competition",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "matchday_competition",
-     0.99
-    ],
-    [
-     "other_income",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1052
-  },
-  {
-   "label": "Schweizer Cup",
-   "lado": "revenue",
-   "page": 26,
-   "section": "nota que desglosa \"Matchorganisation\"",
-   "choice": "competition_bonus",
-   "confidence": 0.49,
-   "top3": [
-    [
-     "competition_bonus",
-     0.53
-    ],
-    [
-     "matchday_competition",
-     0.44
-    ],
-    [
-     "other_income",
-     0.02
-    ]
-   ],
-   "tokens": 1024
-  },
-  {
-   "label": "Spielbetrieb und Matchorganisation",
+   "label": "Aufwand 1. Mannschaft Super League/AWSL",
    "lado": "expense",
-   "page": 21,
-   "section": "estado",
+   "page": 28,
+   "section": "nota que desglosa \"Spielbetrieb und Matchorganisation\"",
    "choice": "match_organisation_expense",
-   "confidence": 0.84,
+   "confidence": 0.79,
    "top3": [
     [
      "match_organisation_expense",
-     0.85
-    ],
-    [
-     "youth_other_sports_expense",
-     0.12
+     0.81
     ],
     [
      "lump_football_operations_expense",
-     0.02
-    ]
-   ],
-   "tokens": 1049
-  },
-  {
-   "label": "Konferenzen, Events",
-   "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Events\"",
-   "choice": "other_expenses",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "other_expenses",
-     0.98
-    ],
-    [
-     "admin_general_expense",
-     0.02
+     0.1
     ],
     [
      "wages_squad",
-     0
+     0.06
     ]
    ],
-   "tokens": 1009
-  },
-  {
-   "label": "Transferaufwand definitive Übertritte",
-   "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Transferaufwand\"",
-   "choice": "player_amortisation",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "player_amortisation",
-     0.98
-    ],
-    [
-     "other_expenses",
-     0.02
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1035
-  },
-  {
-   "label": "Konferenzen, Events swissporarena",
-   "lado": "revenue",
-   "page": 27,
-   "section": "nota que desglosa \"Events\"",
-   "choice": "stadium_other",
-   "confidence": 1,
-   "top3": [
-    [
-     "stadium_other",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1034
+   "tokens": 1056
   }
  ]
 }
