@@ -84,6 +84,7 @@
 
 import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
 import { SESION } from './sesion.mjs'; // gasto por sesión
+import { reglasParaPrompt } from './reglas-categoria.mjs'; // (to-do 329) las reglas de categoría de CONVENCIONES-DATOS al prompt
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
@@ -246,6 +247,9 @@ const CRITERIOS = `CRITERIOS DEL SITIO (resumen del skill club-data-mapping; si 
 - Premios por avance de ronda/participación: competition_bonus solo si el documento los separa de la recaudación; si no, matchday_competition.
 - Intereses, diferencias de cambio, resultado financiero, impuesto a las ganancias, subtotales y totales NO son líneas del sitio: respondé ${NOT_A_LINE}.`;
 
+// (to-do 329) Las reglas de categoría que salieron de una votación o de una decisión de Guido (líneas «CATEGORÍA (prompt):» de Admin/CONVENCIONES-DATOS.md). Mandan sobre los criterios de arriba.
+const REGLAS_DECIDIDAS = (() => { const r = reglasParaPrompt(); return r.length ? `\n\nREGLAS YA DECIDIDAS (votaciones y decisiones de Guido; mandan sobre los criterios de arriba):\n${r.join('\n')}` : ''; })();
+
 function systemPrompt() {
   const fmt = (side, name) => Object.entries(CATS[side]).map(([k, v]) => `- ${k} [${name}] ${v.label}${v.desc ? ` — ${v.desc}` : ''}`).join('\n');
   return `Categorizás rubros de estados financieros de clubes de fútbol para el sitio financeofsports.com. Cada rubro va a UNA categoría del sitio.
@@ -256,7 +260,7 @@ ${fmt('revenue', 'INGRESO')}
 CATEGORÍAS DE GASTOS:
 ${fmt('expense', 'GASTO')}
 
-${CRITERIOS}
+${CRITERIOS}${REGLAS_DECIDIDAS}
 
 CÓMO RESPONDER:
 - Una entrada por cada rubro PENDIENTE (los marcados con [#id]), con su id. No categorices las filas sin id: son contexto.

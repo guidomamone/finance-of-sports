@@ -375,6 +375,10 @@ byte no hace falta: el inventario los marca `duplicado`.
 Los ingresos de la tienda del club (Rosario Central, Talleres) van a `sponsorship_commercial`, que ya incluye el merchandising. No se crean
 `merchandise_sales` ni `cost_of_goods_sold`. El costo de la mercadería vendida queda donde está cargado.
 
+CATEGORÍA (prompt): los ingresos de la tienda del club (merchandising, «tienda», «ventas tiendas», «store») van a sponsorship_commercial; no existen merchandise_sales ni cost_of_goods_sold, y el costo de la mercadería queda donde está cargado.
+EJEMPLO-CATEGORÍA: rosariocentral | revenue | Ingresos por ventas tiendas | sponsorship_commercial
+EJEMPLO-CATEGORÍA: talleres-ar | revenue | Ingresos por tienda netos de costo de venta | sponsorship_commercial
+
 ## REGLA: `grossDebt` con leasing IFRS 16 o deuda con partes relacionadas (votación 3 a 0, 2026-10-20)
 
 Vale para todos los países la regla de `club-data-mapping/referencia/formato-simplificado.md` ("Deuda financiera sin precedente del club"): el
@@ -390,6 +394,9 @@ que es única (y, si se recompra, lo que pasa después). Casos: Ceará 2024 ("Ve
 la recompra de 2025 va a `other_amortisation`), Coritiba 2023 y América Mineiro (cesión a la Liga Forte União). Un porcentaje así de grande se
 silencia en `tools/audit-ignore.json` con el motivo, no se recategoriza.
 
+CATEGORÍA (prompt): la venta o cesión de un porcentaje de derechos de TV o comerciales a un fondo (o a la liga) va a other_income, ingreso único; no a broadcasting ni a exceptional_items.
+EJEMPLO-CATEGORÍA: ceara-br | revenue | Venda de direitos de participação (LFF) | other_income
+
 ## REGLA: el intangible belga "Concessies, octrooien, licenties…" no es de jugadores sin confirmación del documento (votación 3 a 0, 2026-10-20)
 
 La amortización de ese intangible va a `depreciation` y el residuo de "Andere bedrijfsopbrengsten" a `other_income`, salvo que el propio
@@ -397,6 +404,8 @@ documento (una nota de reglas de evaluación, el Jaarverslag con la cifra) diga 
 `player_amortisation` y `player_sales`. El rótulo cargado no agrega palabras que el documento no imprime ("spelersregistratierechten",
 "probablemente…"). Casos: Dender (`depreciation`), Charleroi y Anderlecht (confirmados por texto: `player_amortisation`), Mechelen 2025 (sin
 confirmación: pasa a `depreciation` el 1,11 M y a `other_income` el 8,54 M). Westerlo y Antwerp: mirar si tienen la confirmación por texto.
+
+CATEGORÍA (prompt): en Bélgica, el intangible «Concessies, octrooien, licenties…» y su amortización van a depreciation, y el residuo de «Andere bedrijfsopbrengsten» a other_income, salvo que el documento diga que es de jugadores o de transferencias (entonces player_amortisation y player_sales); no agregues palabras que el documento no imprime.
 
 ## REGLA: entidades del club, grupos multiclub e ingresos de las otras entidades
 
@@ -458,6 +467,8 @@ Cuando el estado de resultados junta en una línea la amortización de los derec
 de la línea que junta dos conceptos). Precedente: Silkeborg 2024 y Viborg 2024 ya estaban partidos. Casos: Silkeborg 2025 (12.670 = Note 10
 6.502 + Note 11 6.168) y Viborg 2025 (18.375.737 = 15.751.691 + 2.624.046). Registro: `Admin/registros/auditoria-proceso.jsonl`.
 
+CATEGORÍA (prompt): una línea que junta la amortización de derechos de jugadores y la depreciación de bienes de uso se parte con los importes de las notas (jugadores a player_amortisation, bienes de uso a depreciation); si las notas no la abren, va entera a player_amortisation.
+
 ## REGLA: una gestión (presidente) sin fuente pública queda en null (Guido, 2026-10-20)
 
 Una gestión se busca en la web (búsqueda general, la página del club, Wikipedia y la prensa). Si no aparece una fuente que confirme quién
@@ -478,6 +489,10 @@ con el estadio, igual que en la Eerste Divisie y las segundas noruegas (`SOLO_ES
 
 Las partidas que el balance imprime dentro de las actividades principales (Tecil - faiz, Reeskont, kur farkı, vade farkı) se cargan
 como líneas operativas (`other_income` / `other_expenses`), no como `netInterest`. El resultado financiero es el bloque Finansman.
+
+CATEGORÍA (prompt): en un balance turco, las partidas que el propio balance imprime dentro de las actividades principales (Tecil - faiz, Reeskont, kur farkı, vade farkı) van como líneas operativas (other_income / other_expenses), no como interés neto.
+EJEMPLO-CATEGORÍA: besiktas-tr | expense | Tecil - faiz giderleri | other_expenses
+EJEMPLO-CATEGORÍA: besiktas-tr | revenue | Reeskont gelirleri | other_income
 
 ## REGLA: si el documento declara varios tipos de cambio a USD del mismo día de cierre, vale el de caja y bancos (votación 3 a 0, 2026-10-20, Beşiktaş 2006)
 
