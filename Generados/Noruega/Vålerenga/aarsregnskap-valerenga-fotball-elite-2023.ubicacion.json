@@ -1,0 +1,306 @@
+{
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2023.pdf",
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2023.md",
+ "mdSha1": "3770315ee0d7b1318d69a6543818f331da87bde9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T22:21:29.615Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    14
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    58,
+    91
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    97,
+    102
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    115,
+    144
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    150,
+    162
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    181,
+    183
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    185,
+    187
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 6,
+   "lineas": [
+    197,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 6,
+   "lineas": [
+    201,
+    203
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 6,
+   "lineas": [
+    205,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 6,
+   "lineas": [
+    209,
+    211
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 6,
+   "lineas": [
+    213,
+    215
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 6,
+   "lineas": [
+    217,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 7,
+   "lineas": [
+    227,
+    257
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 8,
+   "lineas": [
+    269,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 9,
+   "lineas": [
+    298,
+    314
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    376,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 11,
+   "lineas": [
+    385,
+    388
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 11,
+   "lineas": [
+    392,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 11,
+   "lineas": [
+    401,
+    408
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 11,
+   "lineas": [
+    414,
+    419
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 11,
+   "lineas": [
+    423,
+    426
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 12,
+   "lineas": [
+    436,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 12,
+   "lineas": [
+    444,
+    446
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 12,
+   "lineas": [
+    451,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 12,
+   "lineas": [
+    466,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 13,
+   "lineas": [
+    487,
+    491
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 15,
+   "lineas": [
+    583,
+    600
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 16,
+   "lineas": [
+    619,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 28,
+   "lineas": [
+    1037,
+    1039
+   ],
+   "tipo": "texto"
+  },
+  "b31": {
+   "pagina": 31,
+   "lineas": [
+    1123,
+    1144
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b17",
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "notas_gastos": [
+  "b23"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b2, misma entidad; el estado auditado b14 no indica escala, se asume en kroner)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga Vålerenga Fotball Elite (org. 914 175 232) aunque la entidad del sitio es Vålerenga Fotball AS, que no tiene estado de resultados en este documento?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento solo trae cuentas de Vålerenga Fotball Elite; Vålerenga Fotball AS aparece solo como parte relacionada (b21).",
+   "bloques": [
+    "b14",
+    "b21"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se usa el estado b14 (auditado, pág. 7) y se deja afuera b2 (copia del Brønnøysund, pág. 2) por duplicado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b2 y b14 parecen el mismo resultatregnskap con distinto formato.",
+   "bloques": [
+    "b2",
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento de Vålerenga Fotball Elite, sin estados de Vålerenga Fotball AS ni consolidado. Estado elegido: b14 (b2 es copia de registro; b3 destino del resultado). Notas: Nota 2 ingresos (b17 arrangement, b18 transferencia de la sociedad cooperante, b19 venta/préstamo de jugadores, b20 otros), Nota 4 salarios (b23). No hay desglose separado de televisión ni de estadio ni de salarios del plantel en el documento; los derechos de TV/comerciales probablemente están en Vålerenga Fotball AS y llegan vía 'Overføring fra samarbeidsselskap'. [ajuste manual `estado` (2026-10-20): los bloques del estado son b2; la IA había elegido b14. El estado de resultados (RESULTATREGNSKAP del registro, pág. 2 del visor) es el bloque b2; el lote lo dejaba 'sin estado de resultados']"
+}

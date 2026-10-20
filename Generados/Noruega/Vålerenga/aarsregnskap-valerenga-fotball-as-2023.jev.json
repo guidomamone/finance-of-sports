@@ -1,0 +1,124 @@
+{
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.md",
+ "generatedAt": "2026-10-20T22:24:09.304Z",
+ "rubrosHuella": "d19d8b543598666137a812b6078516ba4ad40071",
+ "rubros": [
+  {
+   "label": "Sponsorinntekter",
+   "lado": "revenue",
+   "page": 10,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Markeds- og medieinntekter",
+   "lado": "revenue",
+   "page": 10,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "broadcasting",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Billettsalg (ordinært)",
+   "lado": "revenue",
+   "page": 10,
+   "section": "nota que desglosa \"Salgsinntekt\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Viderefakturert",
+   "lado": "revenue",
+   "page": 10,
+   "section": "nota que desglosa \"Andre inntekter\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diverse inntekter",
+   "lado": "revenue",
+   "page": 10,
+   "section": "nota que desglosa \"Andre inntekter\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 10,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 10,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 10,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 10,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Avskrivning av driftsmidler",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  }
+ ]
+}

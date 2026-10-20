@@ -1,0 +1,359 @@
+{
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.pdf",
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.md",
+ "mdSha1": "02d0ea349d5cfea617ab58ceb14bd64a52fbd72b",
+ "ubicacionSha1": "9113f9b5dae5afb48375b2fca90bc379e8ada1b7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T22:24:08.267Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b16",
+   "b17"
+  ],
+  "notas_gastos": [
+   "b18"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L56: Beløp i: NOK"
+  },
+  {
+   "bloque": "b16",
+   "escala": "unidades",
+   "evidencia": "Importes completos coincidentes con el estado (L321 = L61), sin indicación de escala"
+  },
+  {
+   "bloque": "b17",
+   "escala": "unidades",
+   "evidencia": "Importes completos coincidentes con el estado (L329 = L63)"
+  },
+  {
+   "bloque": "b18",
+   "escala": "unidades",
+   "evidencia": "Importes completos coincidentes con el estado (L339 = L67)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 61,
+   "etiqueta": "Salgsinntekt",
+   "actual": "98 363 448",
+   "anterior": "76 875 180",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 63,
+   "etiqueta": "Andre inntekter",
+   "actual": "2 191 613",
+   "anterior": "7 327 469",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 64,
+   "etiqueta": "Sum inntekter",
+   "actual": "100 555 061",
+   "anterior": "84 202 649",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 66,
+   "etiqueta": "Varekostnad",
+   "actual": "407 396",
+   "anterior": "175 871",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 67,
+   "etiqueta": "Lønnskostnad",
+   "actual": "15 829 297",
+   "anterior": "11 617 742",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 68,
+   "etiqueta": "Avskrivning av driftsmidler",
+   "actual": "551 516",
+   "anterior": "1 075 775",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 69,
+   "etiqueta": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "actual": "2 268 921",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 70,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "116 180 151",
+   "anterior": "95 291 505",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 71,
+   "etiqueta": "Sum kostnader",
+   "actual": "135 237 282",
+   "anterior": "108 160 892",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 72,
+   "etiqueta": "Driftsresultat",
+   "actual": "-34 682 221",
+   "anterior": "-23 958 243",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 74,
+   "etiqueta": "Annen finansinntekt",
+   "actual": "81 514 139",
+   "anterior": "11 287 765",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 75,
+   "etiqueta": "Sum finansinntekter",
+   "actual": "81 514 139",
+   "anterior": "11 287 765",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 76,
+   "etiqueta": "Annen finanskostnad",
+   "actual": "40 881 025",
+   "anterior": "30 151 449",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 77,
+   "etiqueta": "Sum finanskostnader",
+   "actual": "40 881 025",
+   "anterior": "30 151 449",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 78,
+   "etiqueta": "Netto finans",
+   "actual": "40 633 115",
+   "anterior": "-18 863 684",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 79,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "5 950 894",
+   "anterior": "-42 821 928",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 81,
+   "etiqueta": "Ordinært resultat etter skattekostnad",
+   "actual": "5 950 894",
+   "anterior": "-42 821 928",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 82,
+   "etiqueta": "Årsresultat",
+   "actual": "5 950 894",
+   "anterior": "-42 821 928",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 318,
+   "etiqueta": "Sponsorinntekter",
+   "actual": "50 500 894",
+   "anterior": "45 340 549",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Salgsinntekt"
+  },
+  {
+   "bloque": "b16",
+   "linea": 319,
+   "etiqueta": "Markeds- og medieinntekter",
+   "actual": "29 023 425",
+   "anterior": "17 770 123",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Salgsinntekt"
+  },
+  {
+   "bloque": "b16",
+   "linea": 320,
+   "etiqueta": "Billettsalg (ordinært)",
+   "actual": "18 839 129",
+   "anterior": "13 764 508",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Salgsinntekt"
+  },
+  {
+   "bloque": "b16",
+   "linea": 321,
+   "etiqueta": "Sum Salgsinntekter",
+   "actual": "98 363 448",
+   "anterior": "76 875 180",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Salgsinntekt"
+  },
+  {
+   "bloque": "b17",
+   "linea": 327,
+   "etiqueta": "Viderefakturert",
+   "actual": "1 480 699",
+   "anterior": "4 007 054",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Andre inntekter"
+  },
+  {
+   "bloque": "b17",
+   "linea": 328,
+   "etiqueta": "Diverse inntekter",
+   "actual": "710 914",
+   "anterior": "3 320 415",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Andre inntekter"
+  },
+  {
+   "bloque": "b17",
+   "linea": 329,
+   "etiqueta": "Sum andre inntekter",
+   "actual": "2 191 613",
+   "anterior": "7 327 469",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Andre inntekter"
+  },
+  {
+   "bloque": "b18",
+   "linea": 335,
+   "etiqueta": "Lønninger",
+   "actual": "13 554 362",
+   "anterior": "9 410 081",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b18",
+   "linea": 336,
+   "etiqueta": "Arbeidsgiveravgift",
+   "actual": "1 899 512",
+   "anterior": "1 612 415",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b18",
+   "linea": 337,
+   "etiqueta": "Pensjonskostnader",
+   "actual": "209 256",
+   "anterior": "396 783",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b18",
+   "linea": 338,
+   "etiqueta": "Andre ytelser",
+   "actual": "166 167",
+   "anterior": "198 462",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  },
+  {
+   "bloque": "b18",
+   "linea": 339,
+   "etiqueta": "Sum lønnskostnader",
+   "actual": "15 829 297",
+   "anterior": "11 617 742",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Lønnskostnad"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 64,
+  "actual": "100 555 061"
+ },
+ "total_gastos": {
+  "linea": 71,
+  "actual": "135 237 282"
+ },
+ "resultado": {
+  "linea": 82,
+  "actual": "5 950 894",
+  "anterior": "-42 821 928"
+ },
+ "dudas": [],
+ "observaciones": "Escala en NOK unidades. Se omitieron L83-L84 (repiten el Årsresultat) y las asignaciones L86-L89 (no son resultados). Økonomitjenester (L62) y Skattekostnad (L80) sin importe. Annen finansinntekt 2023 (81,5 MNOK) es muy alta, posiblemente incluye venta de jugadores; no hay nota que la desglose."
+}

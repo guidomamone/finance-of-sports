@@ -1,0 +1,314 @@
+{
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2022.pdf",
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2022.md",
+ "generado": "2026-10-20T22:22:32.882Z",
+ "scriptHuella": "5a6683fb1731",
+ "estado": "ok",
+ "clubId": "valerenga-no",
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2022.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "Ni el AS ni el Elite consolidan al otro (to-do 283): cada documento es individual; el ejercicio suma los dos con el ajuste suma-con del AS",
+   "evidencia": "TODO 283; entidades.jsonl (relación vinculada, no consolidada)",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2022.pdf",
+   "campo": "estado",
+   "valor": "b2",
+   "linea": null,
+   "motivo": "El estado de resultados (RESULTATREGNSKAP del registro, pág. 2 del visor) es el bloque b2; el lote lo dejaba 'sin estado de resultados'",
+   "evidencia": "pág. 2 del visor",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "82.377756 = 82.377756",
+   "suma": 82.377756,
+   "impreso": 82.37775599999999
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "92.87839 = 92.878389",
+   "suma": 92.87838999999998,
+   "impreso": 92.878389
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 0.000001999999977519984
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 82.377756 en este documento y 82.377756 en aarsregnskap-valerenga-fotball-elite-2023.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Overføring fra samarbeidsselskap\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en aarsregnskap-valerenga-fotball-elite-2023.pdf",
+  "duda de localizar que no afecta la carga: b2 (extracto Brønnøysund) y b21 (cuentas auditadas) parecen el mismo estado de resultados 2022."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 82.377756,
+  "gastos": 92.87839,
+  "financiero": 33.370286,
+  "impuesto": 0,
+  "resultadoImpreso": 0.136702,
+  "resultadoParaCargar": 0.136702,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Salgsprovisjoner og diverse salg",
+   "lado": "ingreso",
+   "M": 0.021814,
+   "pagina": 25,
+   "linea": 875,
+   "origen": "nota que desglosa \"Arrangementsinntekter\""
+  },
+  {
+   "etiqueta": "Cupkasse",
+   "lado": "ingreso",
+   "M": 0.172,
+   "pagina": 25,
+   "linea": 876,
+   "origen": "nota que desglosa \"Arrangementsinntekter\""
+  },
+  {
+   "etiqueta": "Billettandel hospitalitykunder",
+   "lado": "ingreso",
+   "M": 0.017821,
+   "pagina": 25,
+   "linea": 877,
+   "origen": "nota que desglosa \"Arrangementsinntekter\""
+  },
+  {
+   "etiqueta": "Overføring fra samarbeidsselskap",
+   "lado": "ingreso",
+   "M": 64,
+   "pagina": 2,
+   "linea": 63,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Spillersalg",
+   "lado": "ingreso",
+   "M": 12.809036,
+   "pagina": 25,
+   "linea": 891,
+   "origen": "nota que desglosa \"Salg og utleie av spillere\""
+  },
+  {
+   "etiqueta": "Solidaritetsinntekter",
+   "lado": "ingreso",
+   "M": 0.501113,
+   "pagina": 25,
+   "linea": 893,
+   "origen": "nota que desglosa \"Salg og utleie av spillere\""
+  },
+  {
+   "etiqueta": "Viderefakturering",
+   "lado": "ingreso",
+   "M": 0.028372,
+   "pagina": 25,
+   "linea": 900,
+   "origen": "nota que desglosa \"Annen driftsinntekt\""
+  },
+  {
+   "etiqueta": "Andre avtaler",
+   "lado": "ingreso",
+   "M": 1.387,
+   "pagina": 25,
+   "linea": 901,
+   "origen": "nota que desglosa \"Annen driftsinntekt\""
+  },
+  {
+   "etiqueta": "Tilskudd",
+   "lado": "ingreso",
+   "M": 2.994421,
+   "pagina": 25,
+   "linea": 902,
+   "origen": "nota que desglosa \"Annen driftsinntekt\""
+  },
+  {
+   "etiqueta": "Medlemskontigenter",
+   "lado": "ingreso",
+   "M": 0.279,
+   "pagina": 25,
+   "linea": 903,
+   "origen": "nota que desglosa \"Annen driftsinntekt\""
+  },
+  {
+   "etiqueta": "Andre inntekter",
+   "lado": "ingreso",
+   "M": 0.167179,
+   "pagina": 25,
+   "linea": 904,
+   "origen": "nota que desglosa \"Annen driftsinntekt\""
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 51.102721,
+   "pagina": 26,
+   "linea": 934,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Folketrygdavgift",
+   "lado": "gasto",
+   "M": 7.892534,
+   "pagina": 26,
+   "linea": 935,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 0.598856,
+   "pagina": 26,
+   "linea": 936,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre lønns- og personalkostnader",
+   "lado": "gasto",
+   "M": 0.1785,
+   "pagina": 26,
+   "linea": 937,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 0.243818,
+   "pagina": 2,
+   "linea": 69,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Kontorhold, hus og lokaler",
+   "lado": "gasto",
+   "M": 1.665801,
+   "pagina": 2,
+   "linea": 70,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bilgodtgjørelse, diett og transport",
+   "lado": "gasto",
+   "M": 0.325448,
+   "pagina": 2,
+   "linea": 71,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Trening, kurs og utdanning",
+   "lado": "gasto",
+   "M": 2.283968,
+   "pagina": 2,
+   "linea": 72,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Utstyr, varekost",
+   "lado": "gasto",
+   "M": 0.524734,
+   "pagina": 2,
+   "linea": 73,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Kjøp og leie av spillere",
+   "lado": "gasto",
+   "M": 23.24717,
+   "pagina": 2,
+   "linea": 74,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Arrangementskostnader",
+   "lado": "gasto",
+   "M": 1.521252,
+   "pagina": 2,
+   "linea": 75,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bane, anlegg og maskiner",
+   "lado": "gasto",
+   "M": 0.150133,
+   "pagina": 2,
+   "linea": 76,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 3.143455,
+   "pagina": 2,
+   "linea": 77,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.162892,
+   "linea": 81
+  },
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 21.840918,
+   "linea": 82
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": -0.005702,
+   "linea": 84
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": -11.360774,
+   "linea": 85
+  }
+ ],
+ "impuesto": []
+}
