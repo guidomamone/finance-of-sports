@@ -33,7 +33,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos)
 
 **C. Cargar lo ya transcripto (no se transcribe más; cada sesión con su presupuesto)**
-* 283: Vålerenga y Aalesund: `suma-con` y `tools/suma-entidades.mjs` aprobados por la Auditora (falta el merge); después Onboarding carga Vålerenga 2022 y 2023 con armar-a-mano. Para Pantallas: el resultado repite etiquetas de las dos entidades --> Pipeline 7 y Onboarding 4
+* 283: Vålerenga y Aalesund: `suma-con` y `tools/suma-entidades.mjs` en main (CHANGELOG 862); Onboarding carga Vålerenga 2022 y 2023 con armar-a-mano. Para Pantallas: el resultado repite etiquetas de las dos entidades --> Onboarding 4
 
 **D. Pantallas y distribución (después del 246)**
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)

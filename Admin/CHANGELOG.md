@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 862 — Sumar dos entidades en un año (2026-10-20) [283 · valerenga-no, aalesund-no]
+
+- `cargar.mjs` suma el AS y el Elite/FLI con el ajuste `suma-con` (`tools/suma-entidades.mjs`), sin contar dos veces la transferencia.
+  Medido en Vålerenga 2022 y 2023; sin el ajuste todo idéntico. Aprobado por la Auditora.
+
 ## Versión 861 — Alta de Rapid Wien; OH Leuven 2020 (2026-10-20) [238 · 328 · rapidwien-at, ohleuven-be]
 
 - Merge de Onboarding 4: OH Leuven 2020 y alta de Rapid Wien con 2024. Frenados: Sporting CP 2008-10 (script) y Benfica 2014-15 (ya en HALLAZGOS).
