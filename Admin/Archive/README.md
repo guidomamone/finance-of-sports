@@ -41,6 +41,7 @@ Qué hay hoy:
 - `auditoria-pipeline-2026-10-02.md` — la auditoría del pipeline del 2026-10-02; sus propuestas pasaron al TODO y a `Admin/PIPELINE.md`. Archivado el 2026-10-06 (to-do 109).
 - `selector-merge-a-produccion.md` — era `Prototyping/Selector/MERGE-A-PRODUCCION.md`: cómo se llevó el prototipo 4 del selector a producción. Archivado el 2026-10-06 (to-do 109).
 - `CHANGELOG-v010-v299.md` — la primera parte de `Admin/CHANGELOG.md`: Versiones 10 a 299 (sourcing y onboarding manual, antes del pipeline), de la más nueva a la más vieja. Archivado en la 598.
+- `CHANGELOG-v300-v672.md` — la segunda parte: Versiones 300 a 672 (2026-09-30 al 2026-10-12). Archivado en la 846 (to-do 256: el CHANGELOG guarda solo la última semana).
 - `sesion-pantallas-2026-10-17.md` — el cierre de la sesión `pantallas` (worktree): qué cambió, qué quedó y qué dejó de ser cierto. Pasado a TODO, CHANGELOG y ESTADO. Archivado en la 712.
 - `sesion-datos-sourcing-2026-10-18.md` — el cierre de la sesión `datos-sourcing`: faltantes por liga, listas, estimados, y el formato de `data/faltantes/` y `data/estimados/` para pantallas (lo cita el to-do 275). Archivado en la 714.
 - `sesion-onboarding-2026-10-18.md` — el cierre de la rama `onboarding`: limpieza de las transcripciones por subagentes, gestiones, altas y los to-dos 280 a 287. Archivado en la 715.

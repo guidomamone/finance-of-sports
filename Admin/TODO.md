@@ -36,10 +36,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino: arranca por Latinoamérica (161 transcriptos y validados, ~US$ 50, en lotes de 5 a 8 clubes; espera tu ok) --> Onboarding 4
-* 261: Reino Unido: cargados 34 años de los lotes 97 a 99 y 106; quedan 25 casos de verificar del lote 106 (Leeds, Liverpool, Sunderland, Wolves) y volver a correr el 98; 4 escaneos sin estado de resultados (fijar con el ajuste `estado`, como Fulham); Newcastle 2020-21 (11 meses: falta validar la transcripción de 2019-20); Fulham 2021-22 (correr el 104 con --reintentar); el alta de Celtic (3 casos, color, liga y gestión) y sus otros años; la cola de transcripción por Mistral. Detalle: `Admin/Archive/sesion-finanzas-5-2026-10-20-cierre.md` --> Onboarding 4
+* 261: Reino Unido: cargados 34 años de los lotes 97 a 99 y 106; quedan 25 casos de verificar del lote 106 (Leeds, Liverpool, Sunderland, Wolves) y volver a correr el 98; 4 escaneos sin estado de resultados (fijar con el ajuste `estado`, como Fulham); Newcastle 2020-21 (11 meses: falta validar la transcripción de 2019-20); Fulham 2021-22 (correr el 104 con --reintentar); el alta de Celtic (3 casos, color, liga y gestión) y sus otros años. Detalle: `Admin/Archive/sesion-finanzas-5-2026-10-20-cierre.md` --> Onboarding 4
 * 165 c: altas de los países nuevos que faltan --> Onboarding 5
 * 195: gestiones sin fuente: buscar en la web y, si no aparece, null (Guido, 2026-10-20; REGLA en CONVENCIONES-DATOS); el script `tools/wiki-extracto.mjs` ya está --> Onboarding 5
-* 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia (criterio ya decidido; falta implementar: transcribir y verificar Vålerenga, registrar la suma en entidades.jsonl, la nota en Finanzas) --> sesión propia, después de Noruega
+* 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia (criterio ya decidido; falta implementar con los .md que ya hay: verificar Vålerenga, registrar la suma en entidades.jsonl, la nota en Finanzas) --> sesión propia, después de Noruega
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
@@ -58,8 +58,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 320: Browser Use para portales con formularios fijos (cuando aparezca uno)
 * 321: Higgsfield para imágenes y video del 313
 * 322: Zapier y OmniRoute, a demanda
-* 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
-* 130 y 183: otros deportes, polideportivos e Italia fuera del fútbol (después de 248)
+* 248: taxonomía genérica y subcategorías por deporte (antes del esquema)
 * 270: estimado de club nuevo: queda como está; volver a medir cuando entren más años de Noruega, Suiza y Países Bajos
 * 245: datos como JSON con esquema
 * 247: registro público de correcciones (sobre 245)
@@ -67,7 +66,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **G. Orden de la casa**
 * 255: consolidar las reglas repartidas (lo chequeable ya pasó a hooks)
-* 256: CHANGELOG corto
 * 257: skills que faltan (después de 255)
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
 * 51: proceso de mails a clubes
@@ -101,15 +99,13 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
        61 .md hechos y commiteados; falta lo mismo que Estonia (`pipeline.mjs --lista` y el lote). (3) Suiza: 36 .md hechos y
        commiteados (St. Gallen 2018-19 a 2024-25, FC St. Gallen AG y Event AG 2024-25, FC Aarau 2025, FC Thun 2021 y 2025, Luzern
        2017-18 a 2019-20 y 2021-22 a 2024-25, Grasshopper 2022-23); Basel también hecho (16 del FC Basel 2006-2021 con Verein y AG; Tourismus 2023 y
-       Theater 2022-23 descartados); falta Young Boys y la validación con el pipeline. Basel: se carga la AG (el fútbol), no el Verein. Luzern 2022-23 y FC Thun 2021 traen los estados como imagen: los validará la segunda voz. Grasshopper 2022-23 es un anuario
+       Theater 2022-23 descartados); falta la validación con el pipeline. Basel: se carga la AG (el fútbol), no el Verein. Luzern 2022-23 y FC Thun 2021 traen los estados como imagen: los validará la segunda voz. Grasshopper 2022-23 es un anuario
        sin estados financieros (proponer a descartados). (4) Turquía, Beşiktaş: 14 .md hechos (2006-2008, 2010-2013, 2018, 2019, 2021-2024);
-       2012, 2013 y 2024 son solo el informe de gestión, sin estados financieros. Faltan 2014-2017 y 2020, y los demás clubes turcos. El comparador da "no" en las páginas imagen del informe del
+       2012, 2013 y 2024 son solo el informe de gestión, sin estados financieros. El comparador da "no" en las páginas imagen del informe del
        comisario (no tienen texto): se toman como buenas si sus totales coinciden con el balance. Para notar al cargar Bélgica:
        Patro Eisden 2024 sin "correction" trae al final el informe del revisor de otra entidad (Patro Eisden Jeugd VZW); el informe del
        comisario de Lierse SK 2023 habla de la vzw Lierse Kempenzonen (confirmar la entidad de cada carpeta); Patro Eisden 2017 y 2020
-       traen el pasivo del año anterior descuadrado en el propio PDF. Cómo: un subagente Sonnet por documento, en tandas de ~8, con las reglas de
-       `Admin/transcripcion-subagentes/reglas.md` (formato, columnas, cifras partidas, páginas imagen) y los dos chequeos
-       (`check-transcripcion-fidelidad.js` y `Admin/transcripcion-subagentes/comparar-numeros.mjs`); ~110.000 tokens por documento de ~20 págs.
+       traen el pasivo del año anterior descuadrado en el propio PDF.
        Para notar al verificar Estonia: Laagri 2023 es un primer ejercicio de menos de un año (constituido el 09.01.2023); Flora 2025 pág. 29
        y Nõmme Kalju 2024 traen descuadres del propio PDF en el patrimonio; varios informes traen consolidado y la MTÜ sola.
        (5) Países Bajos y Colombia (sesión de transcripción del 2026-10-16): 167 .md hechos y commiteados (Países Bajos 159, Colombia 8),
@@ -126,10 +122,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
        - Arreglos chicos en los .md: Ajax 2024-25 pág. 44 (sacar las descripciones "Grafiek: ..." agregadas), portadas en imagen de Sparta
          2024-25 y 2020-21, ADO Den Haag 2023-24 págs. 5 y 8 sin contenido.
        - Revisar contra el PDF las filas que el subagente reubicó y las páginas leídas del render (lista en el archivo de avance).
-       Quedan 468 PDFs digitales sin transcribir en los países de este to-do: Colombia 203 (59 son certificaciones y dictámenes), Rep. Checa
-       116, Dinamarca 84, Turquía 27, Noruega 18, Croacia 12, Ucrania 6, Suiza 1 y Países Bajos 1 (Ajax 2013-14). La lista de escaneos para
-       Mistral, en el archivo de avance.
-    b) SIGUIENTE. Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
+    b) SIGUIENTE. Los demás países, uno por vez y solo con documentos ya transcriptos, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
        2026-10-10): Noruega 8, Portugal 7, Rep. Checa 7, Colombia 4, Países Bajos 4, Turquía 4, Ucrania 3, Corea 2, Suiza 2, Bélgica,
@@ -184,7 +177,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
    ni cuándo, dato por dato. Un registro público versionado.
 248. TAXONOMÍA GENÉRICA + SUBCATEGORÍAS POR DEPORTE (mejoras de proyecto, pedido de Guido 2026-10-16). Una capa genérica (ingresos y gastos operativos, deuda) y las subcategorías de cada
-   deporte debajo, para que wages_squad no quede como campo de primer nivel de una API (ver to-do 130).
+   deporte debajo, para que wages_squad no quede como campo de primer nivel de una API. Sin otros deportes por ahora (Guido, 2026-10-20: no se transcribe más).
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
@@ -194,13 +187,12 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    nota; ya bajados) y onboardearlos; cargar los clubes con el PDF del ejercicio siguiente ya bajado (`node tools/ejercicios-nuevos.mjs` los lista;
    onboarding); Gladbach y Stuttgart 2025, en el Unternehmensregister desde enero de 2027 (publica a los ~13 meses). Lote 103 hecho (17
    ejercicios, 2026-10-19). Quedan: Unión Magdalena 2025 (rehacer con la 298 m2, ya en main), Boyacá Chicó 2025 (298 p2), Juventude 2021 y
-   Ponte Preta 2025 (socios y otros deportes, en dudas-por-club), River `estados-contables-cierre-2025-12-31.pdf` (sin `.md`, otro lote),
+   Ponte Preta 2025 (socios y otros deportes, en dudas-por-club),
    Vasco da Gama 2024 (Associação o SAF: ¿cuál es el club?), Amazonas FC 2025 (buscar el balance del club; el bajado es de la federación), y
    14 clubes que el script da "ya en su carpeta" sin el PDF del ejercicio siguiente (AGF, Brøndby, Chaves, Estrela da Amadora, København,
    Mirassol, Nordsjælland, Osasuna, Randers, SønderjyskE, Torreense, União de Leiria, Vejle, Villarreal): ver si los marca de más.
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
    lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
-256. CHANGELOG CORTO (mejoras de proyecto, pedido de Guido 2026-10-16). Casi 3.000 líneas y git ya guarda la historia: dejar los últimos 30 días y archivar el resto en Admin/Archive/.
 257. SKILLS QUE FALTAN (mejoras de proyecto, pedido de Guido 2026-10-16). Producto/pantalla (mockup, ok, implementación, chequeo en celular; hoy mezclado en PANTALLA.md); contenido y
    difusión (un año cargado → hilo o post con el dato verificado y el link a la fuente); contrato de datos/API (esquema público y qué lo
    rompe); deploy/release (qué chequear antes de pushear y cómo verificar producción).
@@ -217,8 +209,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
    FLI los sueldos, que el AS le paga como transferencia (Vålerenga Elite 2023: 85,4 M de sueldos; el AS le transfiere 87,5 M); ninguno
    consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
-   Vålerenga: 46 PDFs sin `.md`; 40 `.md` de subagentes que cortaron por el límite de uso están SIN trackear y SIN verificar en
-   fos-onboarding (algunos sin mirar las imágenes): validarlos con `pipeline.mjs --lista Admin/lotes/transcribir-valerenga.txt` o rehacerlos con Mistral.
+   Vålerenga: 40 `.md` de subagentes que cortaron por el límite de uso están SIN trackear y SIN verificar en
+   fos-onboarding (algunos sin mirar las imágenes): validarlos con `pipeline.mjs --lista Admin/lotes/transcribir-valerenga.txt`. Los PDFs sin `.md` no se transcriben (Guido, 2026-10-20).
 284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: FLI 2012-2018 y 2024 cargados. Sarpsborg 08:
    FLI 2012 y 2014-2025 cargados; 2008 sin liga confirmada. Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
    lo hace Guido.
@@ -256,19 +248,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     Las dudas de cada club, en "## Gestiones" de su `Admin/carga-clubes/<club>.md`; los casos `firmo` (la gestión cambió entre el cierre y
     la aprobación del balance), ahí mismo, sin cargar.
 
-130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
-    Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,
-    escuelas, Lei de Incentivo): no encaja con las categorías de fútbol. Colombia sumó béisbol (Caimanes,
-    Toros) y básquet (Titanes) con balance propio de sociedad anónima. Decidir antes de transcribir.
-    Inglaterra suma cricket: Warwickshire CCC (The Warwickshire County Cricket Club Limited, consolida Birmingham Phoenix y Edgbaston
-    Experience) tiene un caso de alta en la cola (670a1fe) sin contestar hasta que se decida esto.
-    También el béisbol de México (ex to-dos 50 y 144): **`DIABLOS` en la BMV — explicado, 2026-09-29, decisión sigue pendiente de Guido**: Diablos Rojos del México es un equipo de BÉISBOL (Liga Mexicana de Béisbol, no fútbol) que cotiza en la Bolsa Mexicana de Valores desde diciembre 2024 y reporta trimestralmente — mismo patrón "Ollamani" (disclosure vía mercado de valores en vez de FOI) que ya rindió para otros casos. Por qué quedó pausado: abre LIGA nueva (LMB) Y DEPORTE nuevo (béisbol, no fútbol) — un cambio de alcance real, no una fuente más del mismo tipo de club. Dato para la decisión: el sitio YA tiene contenido de otro deporte en `Clubes/` sin cargar al sitio todavía (Green Bay Packers/NFL, Atlanta Braves/MLB, MSG Sports/NBA-NHL — piloto de prueba de Firecrawl, to-do 75, no una decisión de producto de sumar otros deportes). Si en algún momento se decide onboardear alguno de esos, DIABLOS encajaría en el mismo movimiento de alcance; si no, se puede seguir ignorando sin costo (no hay ninguna transcripción ni sourcing hecho todavía de DIABLOS). Sin acción hasta que Guido decida.
-        (Aclaración 2026-10-04: desde el 2026-10-03 Diablos Rojos SÍ está sourceado, 4 ejercicios FY2022-FY2025: ver
-        `Admin/sourcing/México/Diablos Rojos del México.md`. Lo que sigue pendiente es la decisión de abrir béisbol.)
-
-183. ITALIA FUERA DEL FÚTBOL. Hay PDFs sin transcribir de rugby (FIR, Zebre Parma), tenis (FITP, FITP Business & Media, Mario Belardinelli) y entes (Sport e Salute, Sportcast, Circolo Canottieri
-    Aniene) en Clubes/Italia. Guido dijo que las federaciones entran al sitio, pero el esquema de otros deportes no está decidido (to-do 130). No se tocaron en el lote 40, que fue solo fútbol.
-
 51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1. El envío queda afuera de cualquier sesión
     de chat: Resend + subdominio propio + una cola de archivos que Guido revisa, con el envío
     disparado por Guido desde su propia terminal. Proceso completo en
@@ -302,15 +281,13 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-261. REINO UNIDO: TRANSCRIPCIÓN POR SUBAGENTES (pedido de Guido, 2026-10-16: gastar la ventana de 5 horas de la suscripción). 114 .md hechos y
+261. REINO UNIDO: CARGAR LO YA TRANSCRIPTO (no se transcribe más: Guido, 2026-10-20). 114 .md hechos y
     commiteados (93 con subagentes Opus y 21 con Sonnet) (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
-    años 2021-2026 de los clubes de Premier, F1, cricket y rugby que ya tenían algún .md. Cola, scripts e instrucciones:
-    `Admin/transcripcion-subagentes/README.md` (van 77 de 1531 bloques; Guido, 2026-10-19: no transcribir más con subagentes, el resto va por Mistral con el ensayo; `claim.sh` tiene la ruta de la principal: en un worktree, una copia apuntada a esa carpeta; quedan unos 3600 PDFs, casi todos escaneos). Falta:
+    años 2021-2026 de los clubes de Premier, F1, cricket y rugby que ya tenían algún .md. Falta:
     a) Validados los 118 (19-10: 106 + los 12 de Sonnet, US$ 8,59 + 1,3). Falta el lote de carga (etapa 3 en adelante). Ojo al cargar: Leeds 2019-20 es de 13 meses
        y 2020-21 la versión "AMENDED" de 11; Red Bull 2020, usar el turnover del estado (229.754), no el de la pág. 4. Falta el lote (etapa 3 en adelante); Celtic 2020-21 con
        `--max-paginas 0`. Tres con páginas que solo validó Claude (Celtic 2021-22 pág. 52; los otros en `transcripciones-estado.jsonl`):
        cerrar con sum-check al onboardear. Notas de West Ham 2019-21 y parte de Aston Villa cerradas por sumas: mirarlas antes de caja y deuda.
-    c) Los 3 `wf-*` duplicados ya están en descartados y los mal nombrados, anotados en `sociedad-por-documento.md`. Antes de transcribir el resto de los `wf-*` (están al final de la cola), mirar si repiten un documento ya transcripto.
     d) Chelsea 2021-22 (Sonnet): solo los 4 estados se miraron contra la imagen; las notas se corrigieron por sumas. Revisar las notas
        contra el PDF antes de cargar caja y deuda.
 313. CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.

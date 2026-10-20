@@ -71,6 +71,11 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     si entra en lo que queda, se corre sin preguntar; si no, se frena y se le avisa a la principal. La cuenta sale de `node tools/gasto.mjs`
     (lee los registros de la API) y va en la nota de la sesión. La auditora compara, en cada merge, lo gastado contra el presupuesto y
     los ensayos, y marca la plata tirada: lotes que no escribieron nada, reintentos repetidos, corridas dobles.
+  - **Las sesiones de worktree le escriben solo a la principal, corto** (Guido, 2026-10-20: lo que escribe una sesión es lo más
+    caro en tokens, y Guido lee solo a la principal). Nada de explicaciones para Guido. El aviso de fin de turno va en 3 a 5 líneas
+    (qué quedó, qué pide, cuánto gastó), y el detalle va en la nota de la sesión, no en el chat.
+  - **No se transcriben PDFs nuevos** (Guido, 2026-10-20). Se cargan los documentos que ya tienen `.md`. Arreglar o validar un `.md`
+    que ya existe sí vale. Un documento sin `.md` se deja; no se lo transcribe ni se lo manda a Mistral.
   - **El número de lote lo da la principal.** Las listas de corrida (`Admin/registros/.lote-lista-actual.txt` y compañía) son de cada
     carpeta; dos lotes en carpetas distintas pueden correr a la vez, dos en la misma no.
 
