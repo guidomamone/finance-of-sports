@@ -4,6 +4,6 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'rapidwien-at': {
-    2024: {"estadio":"Allianz Stadion","marca":"Puma","temporada":"2023–24 Austrian Football Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377433242","fuenteManual":"https://en.wikipedia.org/wiki/Allianz_Stadion","manual":["estadio","marca"],"fuentesManual":{"marca":"https://www.footyheadlines.com/2023/07/rapid-wien-23-24-away-kit.html"},"sinFuente":{"sponsor":"Buscado el 2026-10-20 (temporada 2023-24): en.wikipedia del club y de la temporada, thestadiumbusiness, footyheadlines (kit 2023-24) y búsqueda web general: ninguna fuente nombra el sponsor de camiseta de los hombres de 2023-24."}},
+    2024: {"estadio":"Allianz Stadion","sponsor":"Wien Energie","marca":"Puma","temporada":"2023–24 Austrian Football Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377433242","fuenteManual":"https://en.wikipedia.org/wiki/Allianz_Stadion","manual":["estadio","marca"],"fuentesManual":{"marca":"https://www.footyheadlines.com/2023/07/rapid-wien-23-24-away-kit.html"}},
   },
 });
