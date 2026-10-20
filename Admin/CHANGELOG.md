@@ -17,6 +17,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 849 — St. Gallen recargado, Patro Eisden 2013 y 2015, 255 fase 2, regla de fx (2026-10-20) [292 · 255 · stgallen-ch, patroeisden-be, llaneros-co, besiktas-tr]
+
+- Merge de Onboarding 5: St. Gallen 2019 y 2022 recargados sin la compensación intragrupo y 2020 cargado; Patro Eisden 2013 y 2015 con
+  sponsor `sin-fuente`; Llaneros con los tres sponsors de la fuente. Sus lotes 115 y 116 chocaban con los de Onboarding 4: quedan como `-onb5`.
+- Merge de Docs 1: 255 fase 2 (CLAUDE.md y CONVENCIONES con las respuestas Q-1, Q-7 y Q-9; texto final de las propuestas de skill).
+- Merge de la Auditora: Beşiktaş 2006 fx votado 3 a 0; REGLA nueva en CONVENCIONES-DATOS (varios tipos USD del mismo cierre: caja y bancos).
+
 ## Versión 848 — Onboarding 4: Celtic, Newcastle, Viking y Sarpsborg (2026-10-20) [261 · celtic-gb, newcastle-gb, viking-no, sarpsborg08-no]
 
 - Merge de Onboarding 4: Celtic 2021-2024; Newcastle 2019, 2020 (13 meses) y 2021 (11 meses); Man City 2022, Tottenham 2023, Fulham 2022, Leeds 2021,

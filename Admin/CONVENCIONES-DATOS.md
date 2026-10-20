@@ -450,3 +450,7 @@ con el estadio, igual que en la Eerste Divisie y las segundas noruegas (`SOLO_ES
 
 Las partidas que el balance imprime dentro de las actividades principales (Tecil - faiz, Reeskont, kur farkı, vade farkı) se cargan
 como líneas operativas (`other_income` / `other_expenses`), no como `netInterest`. El resultado financiero es el bloque Finansman.
+
+## REGLA: si el documento declara varios tipos de cambio a USD del mismo día de cierre, vale el de caja y bancos (votación 3 a 0, 2026-10-20, Beşiktaş 2006)
+
+El `fx` es el de caja y bancos (`document_close`). Caso: Beşiktaş 2006, 1,5357 contra el 1,5442 de pasivos.
