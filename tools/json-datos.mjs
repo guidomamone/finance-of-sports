@@ -26,7 +26,10 @@ const require = createRequire(import.meta.url);
 const { cierreEjercicio } = require('./cierre-ejercicio.js');
 
 export const SCHEMA_VERSION = '1.0';
+// (el diccionario completo vive acá abajo; el generador del JSON Schema, tools/generar-schema-json.mjs, lee estas listas para no duplicarlas)
 export const UNIT = { scale: 1000000, label: 'millions of currency' };
+// Valores de `disclosure` que usan hoy las líneas de los 313 clubes (lista cerrada, igual que las categorías: un valor nuevo se agrega acá y en el schema a propósito).
+export const DISCLOSURE = ['aggregate', 'aggregated', 'aggregated_residual', 'detailed', 'estimated', 'lump', 'not_disclosed', 'partial', 'summary'];
 
 // ---------------------------------------------------------------- diccionario (campo de hoy <-> campo del JSON)
 const LINEA = { rawLabel: 'label', normalizedCategory: 'category', amountNative: 'amount', disclosureLevel: 'disclosure', items: 'items' };
@@ -156,7 +159,7 @@ export function deJson(j) {
   if (has(j, 'budget_overlay')) d.presupuestoOverlayByYear = Object.fromEntries(Object.entries(j.budget_overlay).map(([y, ov]) => {
     const o = {}; for (const [k, v] of Object.entries(ov)) { if (k === 'fx') for (const [a, b] of Object.entries(FX)) { if (has(v, b)) o[a] = v[b]; } else { const kk = inv(OVERLAY)[k]; o[kk] = Array.isArray(v) && (k === 'revenue' || k === 'expenses') ? v.map(lin) : v; } } return [y, o];
   }));
-  d.pasesData = j.squad_transfers; d.resultadosData = j.results; d.titulosData = j.titles;
+  if (has(j, 'squad_transfers')) d.pasesData = j.squad_transfers; if (has(j, 'results')) d.resultadosData = j.results; if (has(j, 'titles')) d.titulosData = j.titles;
   if (j.legacy_extras) Object.assign(d, j.legacy_extras);
   for (const f of j.sources) s[f.id] = Object.fromEntries(Object.entries(f).map(([k, v]) => [inv(FUENTE)[k], v]));
   const gestiones = j.management ? { [id]: Object.fromEntries(j.management.map((g) => [g.id, Object.fromEntries(Object.entries(g).filter(([k]) => k !== 'id').map(([k, v]) => [inv(GESTION)[k], v]))])) } : {};
@@ -217,15 +220,15 @@ const itemsOk = (a) => Array.isArray(a) && a.every((x) => Array.isArray(x) && (x
 export function validar(j, { categorias = null, externos = null } = {}) {
   const e = []; const avisos = []; const err = (r, m) => e.push(`${r}: ${m}`); const aviso = (r, m) => avisos.push(`${r}: ${m}`);
   const claves = (o, permitidas, r, obligatorias = []) => { if (!o || typeof o !== 'object' || Array.isArray(o)) { err(r, 'tiene que ser un objeto'); return false; } for (const k of Object.keys(o)) if (!permitidas.includes(k)) err(r, `clave "${k}" que el esquema no conoce`); for (const k of obligatorias) if (!has(o, k)) err(r, `falta "${k}"`); return true; };
-  if (!claves(j, ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'management', 'members', 'years', 'budget_overlay', 'squad_transfers', 'results', 'titles', 'legacy_extras'], '', ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'years', 'squad_transfers', 'results', 'titles'])) return { errores: e, avisos };
+  if (!claves(j, ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'management', 'members', 'years', 'budget_overlay', 'squad_transfers', 'results', 'titles', 'legacy_extras'], '', ['schema_version', 'exported_at', 'unit', 'club', 'sources', 'years'])) return { errores: e, avisos };
   if (j.schema_version !== SCHEMA_VERSION) err('schema_version', `vale ${j.schema_version}, se esperaba ${SCHEMA_VERSION}`);
   if (!FECHA_RE.test(j.exported_at || '')) err('exported_at', 'tiene que ser AAAA-MM-DD');
   if (claves(j.unit, ['scale', 'label'], 'unit', ['scale', 'label']) && j.unit.scale !== UNIT.scale) err('unit.scale', `vale ${j.unit.scale}, se esperaba ${UNIT.scale}`);
-  if (claves(j.club, Object.values(CLUB), 'club', ['id']) && !/^[a-z0-9][a-z0-9-]*$/.test(j.club.id || '')) err('club.id', 'id con formato raro');
+  if (claves(j.club, Object.values(CLUB), 'club', ['id'])) { if (!/^[a-z0-9][a-z0-9-]*$/.test(j.club.id || '')) err('club.id', 'id con formato raro'); if (has(j.club, 'country') && !/^[A-Z]{2}$/.test(j.club.country)) err('club.country', 'tiene que ser un código de 2 letras en mayúsculas'); if (has(j.club, 'reporting_currency') && !/^[A-Z]{3}$/.test(j.club.reporting_currency)) err('club.reporting_currency', 'ISO 4217'); }
   const fuentes = new Set(); (Array.isArray(j.sources) ? j.sources : (err('sources', 'tiene que ser una lista'), [])).forEach((s, i) => { const r = `sources[${i}]`; if (!claves(s, Object.values(FUENTE), r, ['id', 'club_id', 'title', 'type', 'reliability'])) return; if (fuentes.has(s.id)) err(r, `id repetido ${s.id}`); fuentes.add(s.id); for (const k of ['id', 'title', 'type', 'reliability']) if (typeof s[k] !== 'string' || !s[k]) err(r, `"${k}" tiene que ser un texto`); });
   const gest = new Set(); if (has(j, 'management')) (Array.isArray(j.management) ? j.management : []).forEach((g, i) => { const r = `management[${i}]`; claves(g, ['id', ...Object.values(GESTION)], r, ['id', 'name', 'first_year', 'last_year']); gest.add(g.id); });
   if (has(j, 'members') && j.members !== null && !ES_NUM(j.members)) err('members', 'número o null');
-  const lineas = (arr, r, lado) => { if (!Array.isArray(arr)) return err(r, 'tiene que ser una lista'); arr.forEach((l, i) => { const rr = `${r}[${i}]`; if (!claves(l, Object.values(LINEA), rr, ['label', 'category', 'amount'])) return; if (typeof l.label !== 'string') err(rr, 'label tiene que ser un texto'); if (!ES_NUM(l.amount)) err(rr, 'amount tiene que ser un número finito'); if (categorias && ![...categorias.revenue, ...categorias.expense].includes(l.category)) err(rr, `categoría "${l.category}" que no está en data/category-map.js`); /* una categoría del otro lado (exceptional_items en ingresos, regla de CONVENCIONES-DATOS; el costo de las camisetas de Atlético Mineiro) NO es un aviso acá: la vigila audit.js (categoria-cruzada) con su lista revisada en tools/audit-ignore.json */ if (has(l, 'items') && !itemsOk(l.items)) err(rr, 'items tiene que ser una lista de [texto, número] o [texto, número, subitems]'); }); };
+  const lineas = (arr, r, lado) => { if (!Array.isArray(arr)) return err(r, 'tiene que ser una lista'); arr.forEach((l, i) => { const rr = `${r}[${i}]`; if (!claves(l, Object.values(LINEA), rr, ['label', 'category', 'amount'])) return; if (typeof l.label !== 'string') err(rr, 'label tiene que ser un texto'); if (has(l, 'disclosure') && !DISCLOSURE.includes(l.disclosure)) err(rr, `disclosure "${l.disclosure}" desconocido`); if (!ES_NUM(l.amount)) err(rr, 'amount tiene que ser un número finito'); if (categorias && ![...categorias.revenue, ...categorias.expense].includes(l.category)) err(rr, `categoría "${l.category}" que no está en data/category-map.js`); /* una categoría del otro lado (exceptional_items en ingresos, regla de CONVENCIONES-DATOS; el costo de las camisetas de Atlético Mineiro) NO es un aviso acá: la vigila audit.js (categoria-cruzada) con su lista revisada en tools/audit-ignore.json */ if (has(l, 'items') && !itemsOk(l.items)) err(rr, 'items tiene que ser una lista de [texto, número] o [texto, número, subitems]'); }); };
   const anios = new Set();
   (Array.isArray(j.years) ? j.years : (err('years', 'tiene que ser una lista'), [])).forEach((y, i) => {
     const r = `years[${y && y.fiscal_year}]`; if (!claves(y, ['fiscal_year', 'period_end', 'currency', 'fx', 'source_id', 'report_type', 'management_id', 'revenue', 'expenses', 'financial', 'official_totals', 'adjustments'], r, ['fiscal_year', 'period_end'])) return;
@@ -239,7 +242,12 @@ export function validar(j, { categorias = null, externos = null } = {}) {
     if (has(y, 'revenue')) lineas(y.revenue, `${r}.revenue`, 'revenue'); if (has(y, 'expenses')) lineas(y.expenses, `${r}.expenses`, 'expense');
     if (has(y, 'financial') && claves(y.financial, Object.values(FINANCIERO), `${r}.financial`)) for (const [k, v] of Object.entries(y.financial)) if (v !== null && !ES_NUM(v)) err(`${r}.financial`, `${k} número o null`);
     if (has(y, 'official_totals') && claves(y.official_totals, Object.values(TOTALES), `${r}.official_totals`)) for (const [k, v] of Object.entries(y.official_totals)) if (v !== null && !ES_NUM(v)) err(`${r}.official_totals`, `${k} número o null`);
-    if (has(y, 'adjustments')) claves(y.adjustments, Object.values(META_ADJ), `${r}.adjustments`);
+    if (has(y, 'adjustments') && claves(y.adjustments, Object.values(META_ADJ), `${r}.adjustments`)) {
+      const a = y.adjustments;
+      if (has(a, 'extra_rows')) (Array.isArray(a.extra_rows) ? a.extra_rows : (err(`${r}.adjustments.extra_rows`, 'tiene que ser una lista'), [])).forEach((x, i) => { const rr = `${r}.adjustments.extra_rows[${i}]`; if (claves(x, ['label', 'amount'], rr, ['label', 'amount'])) { if (typeof x.label !== 'string') err(rr, 'label tiene que ser un texto'); if (x.amount !== null && !ES_NUM(x.amount)) err(rr, 'amount número o null'); } });
+      if (has(a, 'no_breakdown')) (Array.isArray(a.no_breakdown) ? a.no_breakdown : (err(`${r}.adjustments.no_breakdown`, 'tiene que ser una lista'), [])).forEach((x, i) => { const rr = `${r}.adjustments.no_breakdown[${i}]`; if (claves(x, Object.values(SIN_DESGLOSE), rr, Object.values(SIN_DESGLOSE))) { for (const k of ['line', 'side', 'reason']) if (typeof x[k] !== 'string') err(rr, `${k} tiene que ser un texto`); if (!ES_NUM(x.amount)) err(rr, 'amount tiene que ser un número finito'); } });
+      if (has(a, 'included_in') && claves(a.included_in, Object.keys(a.included_in), `${r}.adjustments.included_in`)) for (const [cat, v] of Object.entries(a.included_in)) { const rr = `${r}.adjustments.included_in.${cat}`; if (typeof v === 'string') continue; if (claves(v, Object.values(INCLUIDO), rr, ['in'])) { if (typeof v.in !== 'string') err(rr, 'in tiene que ser un texto'); if (has(v, 'possible') && typeof v.possible !== 'boolean') err(rr, 'possible tiene que ser true o false'); if (has(v, 'by') && typeof v.by !== 'string') err(rr, 'by tiene que ser un texto'); } }
+    }
   });
   if (has(j, 'budget_overlay') && claves(j.budget_overlay, Object.keys(j.budget_overlay), 'budget_overlay')) for (const [y, o] of Object.entries(j.budget_overlay)) { claves(o, [...Object.values(OVERLAY), 'fx'], `budget_overlay.${y}`); if (o.revenue) lineas(o.revenue, `budget_overlay.${y}.revenue`, 'revenue'); if (o.expenses) lineas(o.expenses, `budget_overlay.${y}.expenses`, 'expense'); }
   return { errores: e, avisos };
@@ -261,3 +269,11 @@ export function categoriasDelSitio() {
   return { revenue: vm.runInContext('REVENUE_CATEGORIES', ctx), expense: vm.runInContext('EXPENSE_CATEGORIES', ctx) };
 }
 export { ErrorDeEsquema };
+export const CAMPOS = { LINEA, FUENTE, GESTION, SIN_DESGLOSE, INCLUIDO, FINANCIERO, TOTALES, FX, META_DIRECTA, META_ADJ, OVERLAY, EXTRAS, CLUB };
+
+// El paquete que se publica (Frictionless, tools/exportar-paquete.mjs) lleva SOLO lo financiero (decisión de Guido, 2026-10-20): sin el contenido editorial de
+// pocos clubes (resultados, títulos, pases) ni los `legacy_extras`. Es una copia; el JSON completo de cada club no pierde nada.
+export function soloFinanciero(j) {
+  const { squad_transfers, results, titles, legacy_extras, ...resto } = j;
+  return resto;
+}

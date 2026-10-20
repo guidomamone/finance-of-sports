@@ -1,0 +1,542 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://financeofsports.com/data/schema/club-v1.json",
+  "title": "Finance of Sports: datos de un club (schema_version 1.0)",
+  "description": "Un archivo por club. Importes en millones de la moneda del club (unit.scale); gastos en negativo. Se genera con tools/generar-schema-json.mjs; la propuesta y el diccionario de campos: Admin/mediciones/245-esquema.md.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "exported_at": {
+      "$ref": "#/$defs/fecha"
+    },
+    "unit": {
+      "type": "object",
+      "properties": {
+        "scale": {
+          "const": 1000000
+        },
+        "label": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "scale",
+        "label"
+      ],
+      "additionalProperties": false
+    },
+    "club": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "reporting_currency": {
+          "$ref": "#/$defs/moneda"
+        },
+        "fiscal_year_start": {
+          "type": "string",
+          "pattern": "^\\d{2}-\\d{2}$"
+        },
+        "sport": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fuente"
+      }
+    },
+    "management": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "first_year": {
+            "type": "integer"
+          },
+          "last_year": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "first_year",
+          "last_year"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "members": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "years": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/anio"
+      }
+    },
+    "budget_overlay": {
+      "type": "object",
+      "patternProperties": {
+        "^\\d{4}$": {
+          "$ref": "#/$defs/overlay"
+        }
+      },
+      "additionalProperties": false
+    },
+    "squad_transfers": {
+      "type": "array",
+      "description": "Opcional: no va en el paquete publicado (solo lo financiero)."
+    },
+    "results": {
+      "type": "object"
+    },
+    "titles": {
+      "type": "array"
+    },
+    "legacy_extras": {
+      "type": "object",
+      "description": "Contenido editorial de pocos clubes copiado con sus claves originales (sin traducir): finanzas*, supuestos del presupuesto."
+    }
+  },
+  "required": [
+    "schema_version",
+    "exported_at",
+    "unit",
+    "club",
+    "sources",
+    "years"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "fecha": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "moneda": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 4217"
+    },
+    "fuente": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "club_id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "reliability": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "public_note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "club_id",
+        "title",
+        "type",
+        "reliability"
+      ],
+      "additionalProperties": false
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      },
+      "description": "Desglose de una línea: [rótulo, importe] o [rótulo, importe, subitems]."
+    },
+    "item": {
+      "oneOf": [
+        {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2,
+          "items": false
+        },
+        {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "$ref": "#/$defs/items"
+            }
+          ],
+          "minItems": 3,
+          "maxItems": 3,
+          "items": false
+        }
+      ]
+    },
+    "linea": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "admin_general_expense",
+            "broadcasting",
+            "competition_bonus",
+            "depreciation",
+            "education",
+            "education_expense",
+            "exceptional_items",
+            "lump_football_operations",
+            "lump_football_operations_expense",
+            "match_organisation_expense",
+            "matchday_competition",
+            "member_dues",
+            "other_amortisation",
+            "other_expenses",
+            "other_income",
+            "other_sports",
+            "player_amortisation",
+            "player_impairment",
+            "player_sales",
+            "season_tickets",
+            "sponsorship_commercial",
+            "stadium_other",
+            "wages_squad",
+            "womens_football",
+            "youth_football",
+            "youth_other_sports_expense"
+          ]
+        },
+        "amount": {
+          "type": "number"
+        },
+        "disclosure": {
+          "enum": [
+            "aggregate",
+            "aggregated",
+            "aggregated_residual",
+            "detailed",
+            "estimated",
+            "lump",
+            "not_disclosed",
+            "partial",
+            "summary"
+          ]
+        },
+        "items": {
+          "$ref": "#/$defs/items"
+        }
+      },
+      "required": [
+        "label",
+        "category",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "fx": {
+      "type": "object",
+      "properties": {
+        "ref": {
+          "type": "string"
+        },
+        "rate": {
+          "type": "number"
+        },
+        "source": {
+          "type": "string"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "anio": {
+      "type": "object",
+      "properties": {
+        "fiscal_year": {
+          "type": "integer"
+        },
+        "period_end": {
+          "$ref": "#/$defs/fecha"
+        },
+        "currency": {
+          "$ref": "#/$defs/moneda"
+        },
+        "fx": {
+          "$ref": "#/$defs/fx"
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "report_type": {
+          "type": "string"
+        },
+        "management_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "revenue": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/linea"
+          }
+        },
+        "expenses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/linea"
+          }
+        },
+        "financial": {
+          "type": "object",
+          "properties": {
+            "profit_on_player_sales": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "asset_sales": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "net_interest": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "tax": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "gross_debt": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "cash": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "staff_cost": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "official_totals": {
+          "type": "object",
+          "properties": {
+            "revenue": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "expenses": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "net_result": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "adjustments": {
+          "type": "object",
+          "properties": {
+            "extra_rows": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string"
+                  },
+                  "amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "label",
+                  "amount"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "no_breakdown": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "line": {
+                    "type": "string"
+                  },
+                  "side": {
+                    "type": "string"
+                  },
+                  "amount": {
+                    "type": "number"
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "line",
+                  "side",
+                  "amount",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "included_in": {
+              "type": "object",
+              "additionalProperties": {
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "in": {
+                        "type": "string"
+                      },
+                      "possible": {
+                        "type": "boolean"
+                      },
+                      "by": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "in"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "fiscal_year",
+        "period_end"
+      ],
+      "additionalProperties": false
+    },
+    "overlay": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "$ref": "#/$defs/moneda"
+        },
+        "fx": {
+          "$ref": "#/$defs/fx"
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "revenue": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/linea"
+          }
+        },
+        "expenses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/linea"
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  }
+}
