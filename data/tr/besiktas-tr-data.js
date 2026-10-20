@@ -170,6 +170,21 @@ const besiktastrRevenueLinesByYear = {
     { rawLabel:'Diğer olağan gelir ve karlar', normalizedCategory:'other_income', amountNative:0.00281, disclosureLevel:'aggregated' },
     { rawLabel:'Diğer olağandışı gelir ve karlar', normalizedCategory:'other_income', amountNative:0.176138, disclosureLevel:'aggregated' },
   ],
+  2015: [
+    { rawLabel:'Yayın gelirleri', normalizedCategory:'broadcasting', amountNative:76.457577, disclosureLevel:'aggregated' },
+    { rawLabel:'Lisanslı ürün satış gelirleri', normalizedCategory:'sponsorship_commercial', amountNative:46.17784, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorluk ve reklam geliri', normalizedCategory:'sponsorship_commercial', amountNative:35.731011, disclosureLevel:'aggregated' },
+    { rawLabel:'İsim ve lisans hakkı gelirleri', normalizedCategory:'sponsorship_commercial', amountNative:18.286056, disclosureLevel:'aggregated' },
+    { rawLabel:'Şampiyonlar ligi ve UEFA gelirleri', normalizedCategory:'competition_bonus', amountNative:20.189248, disclosureLevel:'aggregated' },
+    { rawLabel:'Maç hasılatları ve kombine kart loca geliri', normalizedCategory:'matchday_competition', amountNative:25.563916, disclosureLevel:'aggregated' },
+    { rawLabel:'Futbolcu satış ve kiralama gelirleri', normalizedCategory:'player_sales', amountNative:2.136188, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer', normalizedCategory:'other_income', amountNative:3.084509, disclosureLevel:'aggregated' },
+    { rawLabel:'Satıştan iadeler(-)', normalizedCategory:'other_income', amountNative:-3.985883, disclosureLevel:'aggregated' },
+    { rawLabel:'Satış iskontoları / indirimleri (-)', normalizedCategory:'other_income', amountNative:-0.821829, disclosureLevel:'aggregated' },
+    { rawLabel:'Esas faaliyetlerden kur farkı gelirleri', normalizedCategory:'other_income', amountNative:6.4365, disclosureLevel:'aggregated' },
+    { rawLabel:'Konusu kalmayan karşılıklar', normalizedCategory:'other_income', amountNative:0.752388, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer gelir ve karlar', normalizedCategory:'other_income', amountNative:1.809506, disclosureLevel:'aggregated' },
+  ],
 };
 const besiktastrExpenseLinesByYear = {
   2023: [
@@ -539,6 +554,44 @@ const besiktastrExpenseLinesByYear = {
     { rawLabel:'Karşılık gideri (**)', normalizedCategory:'other_expenses', amountNative:-6.246597, disclosureLevel:'aggregated' },
     { rawLabel:'Haklar Değer Düşüklüğü Karşılığı', normalizedCategory:'player_impairment', amountNative:-3.619062, disclosureLevel:'aggregated' },
   ],
+  2015: [
+    { rawLabel:'Satılan ticari mallar maliyeti', normalizedCategory:'other_expenses', amountNative:-24.578626, disclosureLevel:'aggregated' },
+    { rawLabel:'Ücret giderleri', normalizedCategory:'wages_squad', amountNative:-155.365004, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisman ve tükenme payları', normalizedCategory:'player_amortisation', amountNative:-23.018979, disclosureLevel:'aggregated' },
+    { rawLabel:'Maç giderleri', normalizedCategory:'match_organisation_expense', amountNative:-7.557588, disclosureLevel:'aggregated' },
+    { rawLabel:'Seyahat giderleri', normalizedCategory:'match_organisation_expense', amountNative:-6.551248, disclosureLevel:'aggregated' },
+    { rawLabel:'Stat kira giderleri', normalizedCategory:'match_organisation_expense', amountNative:-2.89326, disclosureLevel:'aggregated' },
+    { rawLabel:'Bonservis ve kiralama giderleri', normalizedCategory:'other_expenses', amountNative:-3.98314, disclosureLevel:'aggregated' },
+    { rawLabel:'Lisans giderleri', normalizedCategory:'other_expenses', amountNative:-2.204676, disclosureLevel:'aggregated' },
+    { rawLabel:'Federasyon giderleri', normalizedCategory:'match_organisation_expense', amountNative:-2.633202, disclosureLevel:'aggregated' },
+    { rawLabel:'Malzeme giderleri', normalizedCategory:'other_expenses', amountNative:-0.949144, disclosureLevel:'aggregated' },
+    { rawLabel:'Bakım ve onarım giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.490889, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer giderler', normalizedCategory:'other_expenses', amountNative:-5.77582, disclosureLevel:'aggregated' },
+    { rawLabel:'Personel ücret ve giderleri', normalizedCategory:'admin_general_expense', amountNative:-4.373006, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklam ve ilan giderleri', normalizedCategory:'admin_general_expense', amountNative:-1.42431, disclosureLevel:'aggregated' },
+    { rawLabel:'Kira giderleri', normalizedCategory:'admin_general_expense', amountNative:-1.729738, disclosureLevel:'aggregated' },
+    { rawLabel:'Çağrı merkezi giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.283441, disclosureLevel:'aggregated' },
+    { rawLabel:'Kargo ve nakliye giderleri', normalizedCategory:'admin_general_expense', amountNative:-1.677257, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorluk giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.639148, disclosureLevel:'aggregated' },
+    { rawLabel:'Tanıtım, fuar ve sergi giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.226188, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisman ve tükenme payları', normalizedCategory:'player_amortisation', amountNative:-0.446689, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer', normalizedCategory:'other_expenses', amountNative:-2.370004, disclosureLevel:'aggregated' },
+    { rawLabel:'Personel ücret ve giderleri', normalizedCategory:'admin_general_expense', amountNative:-5.191201, disclosureLevel:'aggregated' },
+    { rawLabel:'Müşavirlik, dava ve icra noter giderleri', normalizedCategory:'admin_general_expense', amountNative:-3.506555, disclosureLevel:'aggregated' },
+    { rawLabel:'Şüpheli alacak karşılık giderleri', normalizedCategory:'other_expenses', amountNative:-3.377142, disclosureLevel:'aggregated' },
+    { rawLabel:'Vergi resim ve harçlar', normalizedCategory:'admin_general_expense', amountNative:-0.276064, disclosureLevel:'aggregated' },
+    { rawLabel:'Haberleşme giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.266657, disclosureLevel:'aggregated' },
+    { rawLabel:'Danışmanlık giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.421427, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisman ve tükenme/itfa payları', normalizedCategory:'depreciation', amountNative:-0.098487, disclosureLevel:'aggregated' },
+    { rawLabel:'Kargo ve nakliye giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.17166, disclosureLevel:'aggregated' },
+    { rawLabel:'Temsil tanıtma ağırlama giderleri', normalizedCategory:'admin_general_expense', amountNative:-0.204581, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer giderler', normalizedCategory:'other_expenses', amountNative:-1.400027, disclosureLevel:'aggregated' },
+    { rawLabel:'Esas faaliyetlerden kur farkı giderleri', normalizedCategory:'other_expenses', amountNative:-16.532239, disclosureLevel:'aggregated' },
+    { rawLabel:'Tecil - faiz giderleri', normalizedCategory:'other_expenses', amountNative:-13.948128, disclosureLevel:'aggregated' },
+    { rawLabel:'Vergi cezası (*)', normalizedCategory:'other_expenses', amountNative:-12.316571, disclosureLevel:'aggregated' },
+    { rawLabel:'Dava karşılık giderleri', normalizedCategory:'other_expenses', amountNative:-0.196735, disclosureLevel:'aggregated' },
+    { rawLabel:'Diğer olağan gider ve zararlar', normalizedCategory:'other_expenses', amountNative:-1.410198, disclosureLevel:'aggregated' },
+  ],
 };
 const besiktastrFiscalYearMeta = {
   2023: {
@@ -705,6 +758,22 @@ const besiktastrFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:150.846424, officialTotalExpenses:230.104774, officialPAT:-120.079175,
   },
+  2015: {
+    currency:'TRY', fx:2.8, fxSource:'document_close',
+    sourceId:'besiktas-tr-futbol-bilanco-31-05-2015',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-62.425016, tax:-1.381631,
+    extraRows: [
+      {label:'Finansman gelirleri', value:4.3423},
+      {label:'Finansman giderleri (-)', value:-66.767316},
+      {label:'Dönem vergi gideri', value:-1.272475},
+      {label:'Ertelenmiş vergi geliri / (gideri)', value:-0.109156},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:231.817027, officialTotalExpenses:308.489029, officialPAT:-140.478649,
+  },
 };
 const besiktastrPresupuestoOverlayByYear = {};
 
@@ -769,6 +838,11 @@ Object.assign(sources, {
   'besiktas-tr-futbol-bilanco-31-05-2011': {
     id:'besiktas-tr-futbol-bilanco-31-05-2011', clubId:'besiktas-tr',
     title:'Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. — besiktas-futbol-bilanco-31-05-2011 (ejercicio 2011)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'besiktas-tr-futbol-bilanco-31-05-2015': {
+    id:'besiktas-tr-futbol-bilanco-31-05-2015', clubId:'besiktas-tr',
+    title:'Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. — besiktas-futbol-bilanco-31-05-2015 (ejercicio 2015)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

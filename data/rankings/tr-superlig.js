@@ -55,6 +55,15 @@ window.RANKINGS["tr-superlig"] = {
         mix:[["Comercial / Sponsors",58.569],["Estadio",19.811],["Televisión",30.789],["Premios por competencias",41.16],["Venta de Jugadores",13.88],["Otros ingresos",6.735]] },
     ],
   },
+  2015: {
+    leagueSize: 18,
+    wiki: {"t":"2014–15 Süper Lig","lang":"en","at":"2026-10-20","n":18},
+    clubs: [
+      { id:"besiktas-tr", revenue:82.792, reportType:"official_balance_sheet",
+        sourceId:"besiktas-tr-futbol-bilanco-31-05-2015",
+        mix:[["Comercial / Sponsors",35.784],["Estadio",9.13],["Televisión",27.306],["Premios por competencias",7.21],["Venta de Jugadores",0.763],["Otros ingresos",2.598]] },
+    ],
+  },
   2014: {
     leagueSize: 18,
     wiki: {"t":"2013–14 Süper Lig","lang":"en","at":"2026-10-20","n":18},
