@@ -1,0 +1,196 @@
+{
+ "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2020-21.md",
+ "generado": "2026-10-20T18:11:40.513Z",
+ "estado": "cola",
+ "clubId": "sunderland-gb",
+ "year": 2021,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "e0e03ad",
+  "d31abf3"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"TURNOVER\" 10.727 cierra; además se suman 2 línea(s) fuera de ese total (1.182)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 11.909 en este documento y 11.909 en sunderland-full-accounts-2021-22.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 33.76 en sunderland-full-accounts-2019-20.pdf y 33.76 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Amortisation of players contracts\" no suma el renglón (3.38 contra 1.69, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: L518 muestra 961 sin paréntesis en 2020, pero la cuenta cuadra como gasto (-2,366-961=-3,327)."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Amortisation of players contracts",
+   "suma": 3.38,
+   "objetivo": 1.69
+  }
+ ],
+ "totales": {
+  "ingresos": 11.909,
+  "gastos": 23.568,
+  "financiero": -0.12,
+  "impuesto": 0.033,
+  "resultadoImpreso": -11.746,
+  "resultadoParaCargar": -11.746,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 1.222,
+   "pagina": 22,
+   "linea": 822,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Television and media",
+   "lado": "ingreso",
+   "M": 5.378,
+   "pagina": 22,
+   "linea": 823,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Sponsorship and royalties",
+   "lado": "ingreso",
+   "M": 1.166,
+   "pagina": 22,
+   "linea": 824,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Conference and banqueting",
+   "lado": "ingreso",
+   "M": 0.012,
+   "pagina": 22,
+   "linea": 825,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Retail and merchandising",
+   "lado": "ingreso",
+   "M": 1.606,
+   "pagina": 22,
+   "linea": 826,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 1.343,
+   "pagina": 22,
+   "linea": 827,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Profit of disposal of players contracts",
+   "lado": "ingreso",
+   "M": 0.631,
+   "pagina": 13,
+   "linea": 512,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.551,
+   "pagina": 13,
+   "linea": 513,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 0.924,
+   "pagina": 13,
+   "linea": 507,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Net operating expenses",
+   "lado": "gasto",
+   "M": 20.954,
+   "pagina": 13,
+   "linea": 509,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation of players contracts",
+   "lado": "gasto",
+   "M": 1.69,
+   "pagina": 13,
+   "linea": 511,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Exceptional operating expense",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 13,
+   "linea": 514,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": null,
+   "linea": 516
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.12,
+   "linea": 518
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": 0.033,
+   "linea": 520
+  }
+ ]
+}

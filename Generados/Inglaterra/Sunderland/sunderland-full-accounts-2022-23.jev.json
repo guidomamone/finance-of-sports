@@ -1,0 +1,106 @@
+{
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.md",
+ "generatedAt": "2026-10-20T17:55:35.559Z",
+ "rubrosHuella": "9cd0578f427417c093f6ec9b94fa4671150b61f0",
+ "rubros": [
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Television and media",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorship and royalties",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Conference and banqueting",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Retail and merchandising",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of player contracts",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Operating expenses",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisation of players contracts",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

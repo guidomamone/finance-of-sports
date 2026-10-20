@@ -1,0 +1,406 @@
+{
+ "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2020-21.md",
+ "mdSha1": "5afde140800563dcec50f93cf8fcc3d4ca773233",
+ "ubicacionSha1": "29ab9c396560c3e2a7e63221a8eed62445c39d1c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:05:27.029Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b7"
+  ],
+  "notas_gastos": [
+   "b8",
+   "b10",
+   "b12"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L504: 2021 £'000"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L820: 2021 £'000"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L833: 2021 £'000"
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "L866: 2021 £'000"
+  },
+  {
+   "bloque": "b12",
+   "escala": "miles",
+   "evidencia": "L883: 2021 £'000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 506,
+   "etiqueta": "TURNOVER",
+   "actual": "10,727",
+   "anterior": "29,152",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 507,
+   "etiqueta": "Cost of sales",
+   "actual": "(924)",
+   "anterior": "(1,669)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 508,
+   "etiqueta": "GROSS PROFIT",
+   "actual": "9,803",
+   "anterior": "27,483",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 509,
+   "etiqueta": "Net operating expenses",
+   "actual": "(20,954)",
+   "anterior": "(27,892)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 510,
+   "etiqueta": "",
+   "actual": "(11,151)",
+   "anterior": "(409)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 511,
+   "etiqueta": "Amortisation of players contracts",
+   "actual": "(1,690)",
+   "anterior": "(1,800)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 512,
+   "etiqueta": "Profit of disposal of players contracts",
+   "actual": "631",
+   "anterior": "3,382",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 513,
+   "etiqueta": "Other operating income",
+   "actual": "551",
+   "anterior": "1,226",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 514,
+   "etiqueta": "Exceptional operating expense",
+   "actual": "-",
+   "anterior": "(4,770)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 515,
+   "etiqueta": "OPERATING LOSS",
+   "actual": "(11,659)",
+   "anterior": "(2,371)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 516,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "-",
+   "anterior": "5",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 517,
+   "etiqueta": "",
+   "actual": "(11,659)",
+   "anterior": "(2,366)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 518,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(120)",
+   "anterior": "961",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 519,
+   "etiqueta": "LOSS BEFORE TAXATION",
+   "actual": "(11,779)",
+   "anterior": "(3,327)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 520,
+   "etiqueta": "Tax on loss",
+   "actual": "33",
+   "anterior": "(705)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 521,
+   "etiqueta": "LOSS FOR THE FINANCIAL YEAR",
+   "actual": "(11,746)",
+   "anterior": "(2,622)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 822,
+   "etiqueta": "Gate receipts",
+   "actual": "1,222",
+   "anterior": "5,658",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b7",
+   "linea": 823,
+   "etiqueta": "Television and media",
+   "actual": "5,378",
+   "anterior": "17,195",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b7",
+   "linea": 824,
+   "etiqueta": "Sponsorship and royalties",
+   "actual": "1,166",
+   "anterior": "1,590",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b7",
+   "linea": 825,
+   "etiqueta": "Conference and banqueting",
+   "actual": "12",
+   "anterior": "2,138",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b7",
+   "linea": 826,
+   "etiqueta": "Retail and merchandising",
+   "actual": "1,606",
+   "anterior": "1,341",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b7",
+   "linea": 827,
+   "etiqueta": "Other",
+   "actual": "1,343",
+   "anterior": "1,230",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b7",
+   "linea": 828,
+   "etiqueta": "",
+   "actual": "10,727",
+   "anterior": "29,152",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b8",
+   "linea": 835,
+   "etiqueta": "Wages and salaries",
+   "actual": "11,864",
+   "anterior": "14,504",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 836,
+   "etiqueta": "Social security costs",
+   "actual": "1,380",
+   "anterior": "1,630",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 837,
+   "etiqueta": "Other pension costs",
+   "actual": "119",
+   "anterior": "139",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 838,
+   "etiqueta": "",
+   "actual": "13,363",
+   "anterior": "16,273",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 868,
+   "etiqueta": "Depreciation - owned assets",
+   "actual": "606",
+   "anterior": "733",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "OPERATING LOSS"
+  },
+  {
+   "bloque": "b10",
+   "linea": 869,
+   "etiqueta": "Players contracts amortisation",
+   "actual": "1,690",
+   "anterior": "1,800",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation of players contracts"
+  },
+  {
+   "bloque": "b12",
+   "linea": 885,
+   "etiqueta": "Amortisation of players contracts",
+   "actual": "1,690",
+   "anterior": "1,800",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation of players contracts"
+  },
+  {
+   "bloque": "b12",
+   "linea": 886,
+   "etiqueta": "Profit on disposal of players contracts",
+   "actual": "(631)",
+   "anterior": "(3,382)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit of disposal of players contracts"
+  },
+  {
+   "bloque": "b12",
+   "linea": 887,
+   "etiqueta": "",
+   "actual": "1,059",
+   "anterior": "(1,582)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 506,
+  "actual": "10,727"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 521,
+  "actual": "(11,746)",
+  "anterior": "(2,622)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Wages and salaries' (L835, 11,864) como salarios totales sin asignarlo a un renglón del estado, ya que no hay un renglón 'Salarios del plantel' separado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Net operating expenses",
+   "texto": "La nota 4 (L835-L838) desglosa costos de empleados que están incluidos mayormente en Net operating expenses (L509), sin separar plantel de otros empleados.",
+   "bloques": [
+    "b8",
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma el signo de 'Interest payable and similar expenses' 2020 (L518, 961 positivo) tal cual está impreso?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Interest payable and similar expenses",
+   "texto": "L518 muestra 961 sin paréntesis en 2020, pero la cuenta cuadra como gasto (-2,366-961=-3,327).",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "No existe renglón 'Salarios del plantel' en el estado; el costo de personal está en la nota 4 (b8) sin distinguir plantel. Las notas b10 y b12 repiten la amortización de contratos ya presente en el estado. No se imprime total de gastos."
+}

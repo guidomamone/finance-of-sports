@@ -1,0 +1,27 @@
+{
+ "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.pdf",
+ "generado": "2026-10-20T18:12:28.331Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2022-23.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-07-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "sunderland-gb",
+ "year": 2023,
+ "cortadoEn": "filas"
+}

@@ -272,7 +272,7 @@ window.CLUB_INDEX = {
   "standardliege-be": {"n":"Standard Liège","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "stgallen-ch": {"n":"St. Gallen","c":"CH","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "stuttgart-de": {"n":"VfB Stuttgart","c":"DE","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
-  "sunderland-gb": {"n":"Sunderland","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "sunderland-gb": {"n":"Sunderland","c":"GB","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "talleres-ar": {"n":"Talleres","c":"AR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "tallinnakalev-ee": {"n":"Tallinna Kalev","c":"EE","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "tartutammeka-ee": {"n":"Tartu Tammeka","c":"EE","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},

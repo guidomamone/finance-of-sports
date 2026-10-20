@@ -1,0 +1,284 @@
+{
+ "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2018-19.pdf",
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2018-19.md",
+ "mdSha1": "1bf8ab8525898fda3a1dd098570b44e0b17aee8f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:03:49.005Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    29,
+    38
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    327,
+    348
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    362,
+    386
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    404,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    650,
+    658
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    664,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    673,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    699,
+    705
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    709,
+    714
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    718,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    728,
+    732
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    754,
+    766
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    772,
+    775
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    791,
+    805
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    813,
+    826
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    854,
+    860
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    867,
+    870
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    879,
+    885
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    892,
+    899
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    915,
+    917
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 22,
+   "lineas": [
+    923,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    944,
+    951
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 23,
+   "lineas": [
+    971,
+    975
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 23,
+   "lineas": [
+    983,
+    988
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    998,
+    1000
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 23,
+   "lineas": [
+    1004,
+    1008
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    1028,
+    1033
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 24,
+   "lineas": [
+    1045,
+    1055
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    1071,
+    1075
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 25,
+   "lineas": [
+    1079,
+    1081
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b5"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b8",
+  "b9"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: 2019 £'000 | 2018 £'000",
+ "moneda": "GBP",
+ "columna_ejercicio": "2019 £'000",
+ "columna_anterior": "2018 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los 'Wages and salaries' de la nota 4 (b6) como salarios totales del personal, sabiendo que no separan plantel de resto de empleados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 4 (b6) es la única que abre gastos de personal y no distingue jugadores de personal administrativo.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Sunderland Association Football Club Limited, que es la entidad pedida. b2 es el estado de resultados (Statement of Comprehensive Income). b5 abre la cifra de negocios. b6 contiene los gastos de personal (sueldos, cargas sociales y pensiones), que es lo que se usa para el renglón de salarios. b8 y b9 abren las amortizaciones, el deterioro y el resultado por venta de contratos de jugadores. b12 es la conciliación de impuestos y queda excluido. b16-b19 son datos de las filiales y también quedan excluidos."
+}

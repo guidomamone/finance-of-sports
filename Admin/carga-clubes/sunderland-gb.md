@@ -128,6 +128,46 @@ grossDebt = Bank Overdraft (Nota 14). cash = "Cash at bank" (balance: Current as
 Stocks 0.100 + Debtors 11.791 + Cash = 11.891 impreso -> Cash = 0).
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Sunderland/sunderland-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate receipts | pág. 24, precedente |
+| 2 | Television and media | pág. 24, precedente |
+| 3 | Sponsorship and royalties | pág. 24, precedente |
+| 4 | Conference and banqueting | pág. 24, precedente |
+| 5 | Retail and merchandising | pág. 24, precedente |
+| 6 | Other | pág. 24, precedente |
+| 7 | Other operating income | pág. 15, precedente |
+| 8 | Profit on disposal of player contracts | pág. 15, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 15, Claude 0.8 |
+| 2 | Operating expenses | pág. 15, Claude 0.8 |
+| 3 | Amortisation of players contracts | pág. 15, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-leagueone, verificado contra roster cacheado de "2021–22 EFL League One" (tools/club-league-reference/gb.json), coincidencia exacta "Sunderland".
+```
+
 ## Fuentes
 
 ### sunderland-gb-full-accounts-2024
@@ -144,6 +184,14 @@ _note (data/):_
 
 ```text
 PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2024-25.md. La fila "Other operating income" de 2025 no aparece en el Income Statement transcripto (nil, confirmado contra Nota 5); ver comentario de cabecera de este archivo. Mismo criterio de categorización que el ejercicio 2024. fxRef apunta a FX_CLOSE, entrada GBP@2025-07-31 agregada en esta sesión.
+```
+
+### sunderland-gb-full-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

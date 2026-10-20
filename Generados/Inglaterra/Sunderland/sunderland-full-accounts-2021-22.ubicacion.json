@@ -1,0 +1,290 @@
+{
+ "pdf": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2021-22.md",
+ "mdSha1": "2e03fcec24d473afea17f0742bf47e48d2edf947",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:05:32.219Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 15,
+   "lineas": [
+    522,
+    536
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 16,
+   "lineas": [
+    550,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 17,
+   "lineas": [
+    567,
+    591
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 18,
+   "lineas": [
+    611,
+    620
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 24,
+   "lineas": [
+    863,
+    871
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 24,
+   "lineas": [
+    877,
+    882
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 24,
+   "lineas": [
+    886,
+    892
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 25,
+   "lineas": [
+    914,
+    917
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 25,
+   "lineas": [
+    921,
+    928
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    935,
+    939
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    943,
+    946
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    962,
+    966
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 26,
+   "lineas": [
+    974,
+    986
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 27,
+   "lineas": [
+    999,
+    1013
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    1020,
+    1033
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 28,
+   "lineas": [
+    1050,
+    1053
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    1061,
+    1063
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    1065,
+    1067
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    1073,
+    1075
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    1077,
+    1080
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 29,
+   "lineas": [
+    1096,
+    1098
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    1105,
+    1111
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1121,
+    1128
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1138,
+    1140
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 30,
+   "lineas": [
+    1155,
+    1160
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 30,
+   "lineas": [
+    1168,
+    1170
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1174,
+    1179
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 31,
+   "lineas": [
+    1202,
+    1208
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 31,
+   "lineas": [
+    1229,
+    1231
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 31,
+   "lineas": [
+    1235,
+    1242
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 32,
+   "lineas": [
+    1255,
+    1259
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 32,
+   "lineas": [
+    1263,
+    1265
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b5",
+  "b10"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b8",
+  "b10",
+  "b11"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del Income Statement: '2022 £'000 | 2021 £'000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2022 £'000",
+ "columna_anterior": "2021 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Sunderland Association Football Club Limited (b1), en £'000. El ingreso (Turnover) se abre por clase de negocio en b5. Los gastos de personal, que incluyen los salarios del plantel, se abren en b6 (Wages and salaries, Social security costs, Other pension costs). La amortización se abre en b8. La nota 6 de contratos de jugadores (b10) abre la amortización de los contratos y el resultado por venta de jugadores. Los intereses se abren en b11. Se excluyen b2 (otro resultado integral), b3 (balance), b4 (evolución del patrimonio), b7 (cantidad de empleados), b13 (conciliación de impuestos), los cuadros de activo fijo, los de deudores y acreedores, el capital, las reservas y la pensión."
+}

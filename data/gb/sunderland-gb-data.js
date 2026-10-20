@@ -18,6 +18,16 @@ const sunderlandGbRevenueLinesByYear = {
     { rawLabel:'Other', normalizedCategory:'other_income', amountNative:1.716, disclosureLevel:'detailed' },
     { rawLabel:'Profit on disposal of player contracts', normalizedCategory:'player_sales', amountNative:45.843, disclosureLevel:'detailed' },
   ],
+  2022: [
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:9.482, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and media', normalizedCategory:'broadcasting', amountNative:3.246, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship and royalties', normalizedCategory:'sponsorship_commercial', amountNative:1.329, disclosureLevel:'aggregated' },
+    { rawLabel:'Conference and banqueting', normalizedCategory:'other_income', amountNative:8.021, disclosureLevel:'aggregated' },
+    { rawLabel:'Retail and merchandising', normalizedCategory:'sponsorship_commercial', amountNative:2.116, disclosureLevel:'aggregated' },
+    { rawLabel:'Other', normalizedCategory:'other_income', amountNative:1.691, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0.007, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of player contracts', normalizedCategory:'player_sales', amountNative:1.243, disclosureLevel:'aggregated' },
+  ],
 };
 
 const sunderlandGbExpenseLinesByYear = {
@@ -32,6 +42,11 @@ const sunderlandGbExpenseLinesByYear = {
     { rawLabel:'Amortisation of players contracts', normalizedCategory:'player_amortisation', amountNative:-10.409, disclosureLevel:'detailed' },
     { rawLabel:'Depreciation - owned assets', normalizedCategory:'depreciation', amountNative:-1.315, disclosureLevel:'detailed' },
     { rawLabel:'Otros costos operativos (Cost of sales + Operating expenses no desglosados por naturaleza, neto de staff/amortización/depreciación)', normalizedCategory:'other_expenses', amountNative:-20.973, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-2.083, disclosureLevel:'aggregated' },
+    { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-30.876, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of players contracts', normalizedCategory:'player_amortisation', amountNative:-2.052, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -53,6 +68,20 @@ const sunderlandGbFiscalYearMeta = {
     grossDebt:25.217, cash:20.711,
     profitOnPlayerSales:0, assetSales:0, netInterest:-2.948, tax:0,
     officialTotalRevenue:85.265, officialTotalExpenses:85.596, officialPAT:-3.279,
+  },
+  2022: {
+    currency:'GBP', fxRef:'GBP@2022-07-31',
+    sourceId:'sunderland-gb-full-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.001, tax:0,
+    extraRows: [
+      {label:'Interest payable and similar expenses', value:-0.001},
+      {label:'Tax on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:27.135, officialTotalExpenses:35.011, officialPAT:-7.877,
   },
 };
 
@@ -84,6 +113,11 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/00049116/filing-history',
     publicNote:'Cuentas individuales auditadas (Constantin, sin salvedades) de Sunderland Association Football Club, Limited (The), depositadas en Companies House (Reino Unido). Ejercicio cerrado el 31 de julio de 2025 (temporada 2024/25, EFL Championship — el ascenso a la Premier League vía playoff ocurrió al FINAL de este ejercicio, para la temporada SIGUIENTE, 2025/26).',
+  },
+  'sunderland-gb-full-accounts-2021-22': {
+    id:'sunderland-gb-full-accounts-2021-22', clubId:'sunderland-gb',
+    title:'Sunderland Association Football Club, Limited (The) — sunderland-full-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 
