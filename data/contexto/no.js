@@ -20,6 +20,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'sarpsborg08-no': {
+    2008: {"estadio":"Sarpsborg Stadion","temporada":"2008 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1322218691","fuenteManual":"https://en.wikipedia.org/wiki/Sarpsborg_Stadion","manual":["estadio"]},
     2012: {"estadio":"Sarpsborg Stadion","capacidad":5000,"temporada":"2012 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369041342"},
     2014: {"estadio":"Sarpsborg Stadion","capacidad":4700,"sponsor":"Borregaard","marca":"Select","temporada":"2014 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1322214627"},
     2015: {"estadio":"Sarpsborg Stadion","capacidad":4700,"sponsor":"Borregaard","marca":"Select","temporada":"2015 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372827917"},
