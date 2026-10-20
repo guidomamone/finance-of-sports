@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2024.pdf",
- "generado": "2026-10-20T20:49:09.430Z",
+ "generado": "2026-10-20T20:50:48.352Z",
  "frena": [
   {
    "etapa": "registro",
@@ -375,10 +375,10 @@
    "origen": "verificacion (estado)",
    "signoFijo": 158.867123,
    "cat": "other_income",
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
    "conf": 1,
    "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
    "notaGuido": "Claude 2026-10-20: Medlemsinntekter/tilskudd es un total mixto, en su mayoría tilskudd (Andre tilskudd 92 de 100 M en 2022): se carga como otros ingresos; el desglose por tipo no cierra con el estado (nota 2, 43.000 de diferencia)",
    "destino": "revenue",
    "amountNative": 158.867123

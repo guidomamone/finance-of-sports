@@ -27,6 +27,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2017: {"estadio":"Aker Stadion","capacidad":11800,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2017 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1332616218"},
     2018: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2018 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311642550"},
     2019: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2019 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311013521"},
+    2020: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2020 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311013715"},
     2021: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Nike","temporada":"2021 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312260742"},
     2022: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2022 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312230967"},
     2023: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2023 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1364297219"},
