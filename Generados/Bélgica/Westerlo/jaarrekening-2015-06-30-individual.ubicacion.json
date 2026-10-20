@@ -1,0 +1,224 @@
+{
+ "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.md",
+ "mdSha1": "fae1b6ae5b0da6c2cf989a58ccd6ba32254b334d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:25:10.595Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    179,
+    206
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    216,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    272,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    332,
+    347
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    386,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    451,
+    471
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    525,
+    549
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    583,
+    586
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    588,
+    593
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    595,
+    598
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    631,
+    643
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    645,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    710,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    779,
+    793
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    843,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    898,
+    905
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    913,
+    915
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    937,
+    941
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    974,
+    994
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    1014,
+    1017
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    1042,
+    1055
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 18,
+   "lineas": [
+    1113,
+    1123
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Jaarrekening in het verkort schema (VKT) neergelegd bij de NBB: bedragen in EUR zonder vermelding van duizenden (b1: 'EUR').",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga el cuadro de personal (b19/b20) y el cuadro de resultados financieros (b15), y se carga solo la resultatenrekening b4?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b15 (pág. 13) trae renglones financieros sueltos (disconto, voorzieningen 653/656) y b19 trae personeelskosten del sociaal balans; no parecen desglosar renglones de b4.",
+   "bloques": [
+    "b15",
+    "b19",
+    "b20",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de KVC Westerlo (BE 0436.473.670), modelo abreviado (VKT). Estado de resultados en b4 (pág. 6). b5 es la resultaatverwerking (destino del resultado), no se elige. b2/b3 balance; b6-b8 activo fijo; resto anexos sociales y de deudas."
+}

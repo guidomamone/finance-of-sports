@@ -1,0 +1,678 @@
+{
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+ "generado": "2026-10-20T19:47:09.388Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (alianzafc-co)"
+  },
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Arriendos\" -> admin_general_expense 0.65; \"Diversos\" -> admin_general_expense 0.55"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2023: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2023: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  }
+ ],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "alianzafc-co",
+  "year": 2023,
+  "cierre": "2023-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos de actividades ordinarias",
+    "normalizedCategory": "other_income",
+    "amountNative": 14174.134648,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros Ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 130.486351,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Gastos de personal",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1711.470936,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Honorarios",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -155.981205,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impuestos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -256.728447,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Arriendos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -10.194859,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "seguros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -23.572277,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Servicios",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -34.035571,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos Legales",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -27.402747,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mantenimiento y reparaciones",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.272533,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diversos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3264.244042,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Depreciaciones",
+    "normalizedCategory": "depreciation",
+    "amountNative": -114.253422,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de personal",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3513.100819,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Honorarios",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -173.359999,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Servicios",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -346.387164,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de Viaje",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -618.97871,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortizaciones derechos deportivos",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -291.439505,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2023-12-31",
+   "sourceId": "alianzafc-co-estados-financieros-2023",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1022.272932,
+   "tax": -1220.153483,
+   "extraRows": [
+    {
+     "label": "Ingresos Financiero",
+     "value": 16.56701
+    },
+    {
+     "label": "Costos Financieros",
+     "value": -1038.839942
+    },
+    {
+     "label": "Gasto impuesto de renta y cree",
+     "value": -1051.401
+    },
+    {
+     "label": "Impuesto diferido",
+     "value": -168.752483
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 14304.620999,
+   "officialTotalExpenses": 10543.422236,
+   "officialPAT": 1518.772348
+  },
+  "source": {
+   "id": "alianzafc-co-estados-financieros-2023",
+   "clubId": "alianzafc-co",
+   "title": "Alianza FC S.A. — estados-financieros-2023 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Colombia/Alianza FC/estados-financieros-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2023.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "alianzafc-co",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 21,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "page": 2,
+   "native": 14174.134648,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 14174.134648,
+   "cat": "other_income",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 14174.134648
+  },
+  {
+   "label": "Otros Ingresos",
+   "page": 2,
+   "native": 130.486351,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 130.486351,
+   "cat": "other_income",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 130.486351
+  },
+  {
+   "label": "Gastos de personal",
+   "page": 15,
+   "native": 1711.470936,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 1711.470936,
+   "cat": "admin_general_expense",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1711.470936
+  },
+  {
+   "label": "Honorarios",
+   "page": 15,
+   "native": 155.981205,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 155.981205,
+   "cat": "admin_general_expense",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -155.981205
+  },
+  {
+   "label": "Impuestos",
+   "page": 15,
+   "native": 256.728447,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 256.728447,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -256.728447
+  },
+  {
+   "label": "Arriendos",
+   "page": 15,
+   "native": 10.194859,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 10.194859,
+   "cat": "admin_general_expense",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -10.194859
+  },
+  {
+   "label": "seguros",
+   "page": 15,
+   "native": 23.572277,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 23.572277,
+   "cat": "admin_general_expense",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -23.572277
+  },
+  {
+   "label": "Servicios",
+   "page": 15,
+   "native": 34.035571,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 34.035571,
+   "cat": "admin_general_expense",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -34.035571
+  },
+  {
+   "label": "Gastos Legales",
+   "page": 15,
+   "native": 27.402747,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 27.402747,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -27.402747
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "page": 15,
+   "native": 2.272533,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 2.272533,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.272533
+  },
+  {
+   "label": "Diversos",
+   "page": 15,
+   "native": 3264.244042,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 3264.244042,
+   "cat": "admin_general_expense",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -3264.244042
+  },
+  {
+   "label": "Depreciaciones",
+   "page": 15,
+   "native": 114.253422,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 114.253422,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -114.253422
+  },
+  {
+   "label": "Gastos de personal",
+   "page": 15,
+   "native": 3513.100819,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos Deportivos\")",
+   "signoFijo": 3513.100819,
+   "cat": "admin_general_expense",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3513.100819
+  },
+  {
+   "label": "Honorarios",
+   "page": 15,
+   "native": 173.359999,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos Deportivos\")",
+   "signoFijo": 173.359999,
+   "cat": "admin_general_expense",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -173.359999
+  },
+  {
+   "label": "Servicios",
+   "page": 15,
+   "native": 346.387164,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos Deportivos\")",
+   "signoFijo": 346.387164,
+   "cat": "admin_general_expense",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -346.387164
+  },
+  {
+   "label": "Gastos de Viaje",
+   "page": 15,
+   "native": 618.97871,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos Deportivos\")",
+   "signoFijo": 618.97871,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -618.97871
+  },
+  {
+   "label": "Amortizaciones derechos deportivos",
+   "page": 15,
+   "native": 291.439505,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos Deportivos\")",
+   "signoFijo": 291.439505,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -291.439505
+  },
+  {
+   "label": "Ingresos Financiero",
+   "page": null,
+   "native": 16.56701,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos Financieros",
+   "page": null,
+   "native": -1038.839942,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Gasto impuesto de renta y cree",
+   "page": null,
+   "native": -1051.401,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "Impuesto diferido",
+   "page": null,
+   "native": -168.752483,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel",
+   "lado": "gasto"
+  },
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos con signo",
+   "verificacion (nota que desglosa \"Gastos de administración\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos Deportivos\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 14304.620999,
+  "expSum": -10543.422236,
+  "officialTotalRevenue": 14304.620999,
+  "officialTotalExpenses": 10543.422236,
+  "officialPAT": 1518.772348,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1518.772348,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 14304.620999
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 10543.422236
+  }
+ },
+ "liga": {
+  "valor": "co-primeraA",
+  "fuente": "roster cacheado de \"2023 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia única por palabras \"Alianza Petrolera\" = \"Alianza FC\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (4 de 4 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2023-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2023-12-31 = 3822.05 (TRM oficial (Banco de la República / Superfinanciera de Colombia) al 31/12/2023)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "alianzafc-co-estados-financieros-2023",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraA",
+   "fuente": "roster cacheado de \"2023 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia única por palabras \"Alianza Petrolera\" = \"Alianza FC\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 5,
+  "lineasIngreso": 2,
+  "lineasGasto": 15,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

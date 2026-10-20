@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2007.pdf",
- "generado": "2026-10-20T19:12:09.727Z",
+ "generado": "2026-10-20T19:30:05.901Z",
  "frena": [
   {
    "etapa": "alta:fx",
    "motivo": "El documento declara varios tipos de cambio a USD (1.3253 (línea 1558: \"| Kasa | 1.735 | USD | 1,3253 | 2.299 |\") | 1.5357 (línea 1602: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\") | 1.223 (línea 1602: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\")). Regla #0: gana el de CIERRE que declara el documento. ¿Cuál es?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "12 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kombine Kart Hasılatı\" -> matchday_competition 0.7; \"Futbolcu Satış Zararı\" -> player_sales 0.6; \"Diğer\" -> other_income 0; \"Hizmet Gelirleri (net)\" -> other_income 0; \"Stad Giderleri\" -> match_organisation_expense 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2007: la pregunta ya está en la cola por besiktas-futbol-bilanco-31-05-2006.pdf (2f36438) y vale para este año"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2007: la pregunta ya está en la cola por besiktas-futbol-bilanco-31-05-2006.pdf (4a077f5) y vale para este año"
   },
   {
    "etapa": "fx",
@@ -119,9 +107,9 @@
     "amountNative": 9.569759,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Futbolcu Satış Zararı",
@@ -129,9 +117,9 @@
     "amountNative": -2.57998,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sigorta Satışı",
@@ -169,9 +157,9 @@
     "amountNative": 1.438753,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "İndirimler",
@@ -189,9 +177,9 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Esas Faaliyetlerden Diğer Gelirler / faiz+temettü+kira (net)",
@@ -241,9 +229,9 @@
     "amountNative": -2.250369,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Tesis Giderleri",
@@ -251,9 +239,9 @@
     "amountNative": -2.002789,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Seyahat Gideri",
@@ -311,9 +299,9 @@
     "amountNative": -3.371642,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Amortisman Giderleri",
@@ -321,9 +309,9 @@
     "amountNative": -0.10441,
     "disclosureLevel": "aggregated",
     "_pag": 43,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sergi-Reklam Giderleri",
@@ -401,9 +389,9 @@
     "amountNative": -0.006745,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.55 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Önceki Dönem Prekont İptali",
@@ -411,19 +399,19 @@
     "amountNative": -0.276877,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.5 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Çalışmayan Kısım Gider ve Zararları",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -2.201587,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Önceki Dönem Gider ve Zararları",
@@ -437,13 +425,13 @@
    },
    {
     "rawLabel": "Stok ve Haklar Değer Düşüş Karşılığı",
-    "normalizedCategory": "player_impairment",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.024785,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Şüpheli Alacak Karşılığı",
@@ -664,11 +652,11 @@
    "origen": "verificacion (nota que desglosa \"Satış Gelirleri (net)\")",
    "signoFijo": 9.569759,
    "cat": "matchday_competition",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "revenue",
    "amountNative": 9.569759
   },
@@ -680,11 +668,11 @@
    "origen": "verificacion (nota que desglosa \"Satış Gelirleri (net)\")",
    "signoFijo": -2.57998,
    "cat": "player_sales",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "revenue",
    "amountNative": -2.57998
   },
@@ -741,12 +729,12 @@
    "origen": "verificacion (nota que desglosa \"Satış Gelirleri (net)\")",
    "signoFijo": 1.438753,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "revenue",
    "amountNative": 1.438753
   },
@@ -773,12 +761,12 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "revenue",
    "amountNative": 0
   },
@@ -850,11 +838,11 @@
    "origen": "verificacion (nota que desglosa \"Satışların Maliyeti (-)\")",
    "signoFijo": 2.250369,
    "cat": "match_organisation_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -2.250369
   },
@@ -866,11 +854,11 @@
    "origen": "verificacion (nota que desglosa \"Satışların Maliyeti (-)\")",
    "signoFijo": 2.002789,
    "cat": "admin_general_expense",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -2.002789
   },
@@ -957,11 +945,11 @@
    "origen": "verificacion (nota que desglosa \"Satışların Maliyeti (-)\")",
    "signoFijo": 3.371642,
    "cat": "other_expenses",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -3.371642
   },
@@ -973,11 +961,11 @@
    "origen": "verificacion (nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama Satış Dağıtım Giderleri\")",
    "signoFijo": 0.10441,
    "cat": "depreciation",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -0.10441
   },
@@ -1095,12 +1083,12 @@
    "origen": "verificacion (nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\")",
    "signoFijo": 0.006745,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.55 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -0.006745
   },
@@ -1112,12 +1100,12 @@
    "origen": "verificacion (nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\")",
    "signoFijo": 0.276877,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.5 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -0.276877
   },
@@ -1128,12 +1116,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\")",
    "signoFijo": 2.201587,
-   "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2007.md L2443 Calismayan Kisim Gider ve Zararlari 2.201.587: amortizacion de licencias de futbolistas en periodos sin actividad (explicacion en 2011.md L2096); player_amortisation.",
    "destino": "expense",
    "amountNative": -2.201587
   },
@@ -1159,12 +1147,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\")",
    "signoFijo": 0.024785,
-   "cat": "player_impairment",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2007.md L2445 'Stok ve Haklar Deger Dusus Karsiligi' (24.785): igual a la provision acumulada de stock del balance al 31.05.2007 (2007.md L1058 y L1125 Stok Deger Dusus Karsiligi 24.785), o sea es deterioro de existencias, no de pases -> other_expenses. (Diferente de 2006, cuyo 3.112.191 supera la provision de stock de 132.835.) Si Guido prefiere sostener el criterio de la etiq",
    "destino": "expense",
    "amountNative": -0.024785
   },
@@ -1283,10 +1271,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de tr 2007 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "tr-superlig",
+  "fuente": "roster cacheado de \"2006–07 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -1329,14 +1316,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de tr 2007 cacheada",
-   "estado": "pendiente"
+   "valor": "tr-superlig",
+   "fuente": "roster cacheado de \"2006–07 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+   "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 18,
   "lineasGasto": 26,
   "metaFilas": 3,

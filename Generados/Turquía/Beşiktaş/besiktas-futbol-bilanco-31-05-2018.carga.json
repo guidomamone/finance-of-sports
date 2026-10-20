@@ -1,24 +1,482 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf",
- "generado": "2026-10-20T19:12:13.076Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-20T19:35:21.788Z",
+ "frena": [],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del club, 2026-10-20: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 9 ejercicio(s) con un solo perímetro (consolidado); 16 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-20: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 9 ejercicio(s) con un solo perímetro (consolidado); 16 documento(s) mirados)",
+  "materialidad: \"Genel yönetim katılım gelirleri\" va como other_income con 0.75 (las dudas de ingresos suman 0.42% de su lado)",
+  "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "besiktas-tr",
+  "year": 2018,
+  "cierre": "2018-05-31",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Şampiyonlar ligi ve UEFA gelirleri",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 208.213926,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Futbolcu satış ve kiralama gelirleri",
+    "normalizedCategory": "player_sales",
+    "amountNative": 177.00671,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Yayın gelirleri",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 135.8567,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lisanslı ürün satış gelirleri",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 133.857167,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Maç hasılatları ve kombine kart loca geliri",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 105.622607,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Sponsorluk ve reklam geliri",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 72.971059,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "İsim ve lisans hakkı gelirleri",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 67.520679,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diğer",
+    "normalizedCategory": "other_income",
+    "amountNative": 13.521606,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Satıştan iadeler(-)",
+    "normalizedCategory": "other_income",
+    "amountNative": -7.346675,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Satış iskontoları / indirimleri (-)",
+    "normalizedCategory": "other_income",
+    "amountNative": -1.055268,
+    "disclosureLevel": "aggregated",
+    "_pag": 50,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Esas faaliyetlerden kur farkı gelirleri",
+    "normalizedCategory": "other_income",
+    "amountNative": 33.363603,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Genel yönetim katılım gelirleri",
+    "normalizedCategory": "other_income",
+    "amountNative": 4.011472,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": "materialidad",
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.42% (≤ 1%) y esta tiene 0.75"
+   },
+   {
+    "rawLabel": "Konusu kalmayan karşılıklar (*)",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.444407,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Esas faaliyetlerden diğer gelirler",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.169309,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Satışların maliyeti (-)",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -620.2931,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Personel ücret ve giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -9.410406,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kira giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.441213,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Lojistik hizmet gideri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.339636,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Kargo ve nakliye giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.316728,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Amortisman ve tükenme payları",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.978218,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Yemek giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.760868,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Ambalaj malzemesi giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.631913,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Web yayın giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.287782,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tanıtım, fuar ve sergi giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.279414,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Reklam ve ilan giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.233293,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Haberleşme giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.147955,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diğer",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.786467,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
+   },
+   {
+    "rawLabel": "Müşavirlik, dava ve icra noter giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -13.178395,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Personel ücret ve giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.535196,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Şüpheli alacak karşılık giderleri",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.186107,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Vergi resim ve harçlar",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.869923,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisman ve tükenme/itfa payları",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.713414,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Haberleşme giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.474934,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Danışmanlık giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.107033,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kargo ve nakliye giderleri",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.051729,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Diğer giderler",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.087904,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Esas faaliyetlerden kur farkı giderleri",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -87.614233,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Özel maliyetler değer düşüklüğü karşılık gideri (*)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -6.839206,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Vade farkı gideri",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.060306,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Dava karşılık giderleri",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.974776,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Esas faaliyetlerden diğer giderler",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.838026,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "TRY",
+   "fxRef": "TRY@2018-05-31",
+   "sourceId": "besiktas-tr-futbol-bilanco-31-05-2018",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -159.235006,
+   "tax": -9.436353,
+   "extraRows": [
+    {
+     "label": "Finansman gelirleri",
+     "value": 65.062676
+    },
+    {
+     "label": "Finansman giderleri (-)",
+     "value": -224.297682
+    },
+    {
+     "label": "Dönem vergi gideri",
+     "value": -10.47008
+    },
+    {
+     "label": "Ertelenmiş vergi geliri/(gideri)",
+     "value": 1.033727
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Satışların maliyeti (-)",
+     "lado": "expense",
+     "importe": 620.2931,
+     "motivo": "Claude 2026-10-20 (Onboarding 5): corrijo mi respuesta anterior (no_es_rubro): la extracción de 2018 no trae el desglose de la nota 18 (L2575-2587), y sin el total faltan 620.293.100 de gastos; se carga el total impreso como bloque de fútbol sin desglosar (precedente 2009)"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 944.157302,
+   "officialTotalExpenses": 765.438175,
+   "officialPAT": 10.047768
+  },
+  "source": {
+   "id": "besiktas-tr-futbol-bilanco-31-05-2018",
+   "clubId": "besiktas-tr",
+   "title": "Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. — besiktas-futbol-bilanco-31-05-2018 (ejercicio 2018)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md",
  "reemplaza": false,
  "periodo": {
@@ -31,5 +489,790 @@
  },
  "clubId": "besiktas-tr",
  "year": 2018,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 45,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Şampiyonlar ligi ve UEFA gelirleri",
+   "page": 50,
+   "native": 208.213926,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": 208.213926,
+   "cat": "competition_bonus",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 208.213926
+  },
+  {
+   "label": "Futbolcu satış ve kiralama gelirleri",
+   "page": 50,
+   "native": 177.00671,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": 177.00671,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 177.00671
+  },
+  {
+   "label": "Yayın gelirleri",
+   "page": 50,
+   "native": 135.8567,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": 135.8567,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 135.8567
+  },
+  {
+   "label": "Lisanslı ürün satış gelirleri",
+   "page": 50,
+   "native": 133.857167,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": 133.857167,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 133.857167
+  },
+  {
+   "label": "Maç hasılatları ve kombine kart loca geliri",
+   "page": 50,
+   "native": 105.622607,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": 105.622607,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5, nota 19/22 del documento)",
+   "destino": "revenue",
+   "amountNative": 105.622607
+  },
+  {
+   "label": "Sponsorluk ve reklam geliri",
+   "page": 50,
+   "native": 72.971059,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": 72.971059,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 72.971059
+  },
+  {
+   "label": "İsim ve lisans hakkı gelirleri",
+   "page": 50,
+   "native": 67.520679,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": 67.520679,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 67.520679
+  },
+  {
+   "label": "Diğer",
+   "page": 50,
+   "native": 13.521606,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": 13.521606,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.521606
+  },
+  {
+   "label": "Satıştan iadeler(-)",
+   "page": 50,
+   "native": 7.346675,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": -7.346675,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -7.346675
+  },
+  {
+   "label": "Satış iskontoları / indirimleri (-)",
+   "page": 50,
+   "native": 1.055268,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Hasılat\")",
+   "signoFijo": -1.055268,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -1.055268
+  },
+  {
+   "label": "Esas faaliyetlerden kur farkı gelirleri",
+   "page": 53,
+   "native": 33.363603,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer gelirler\")",
+   "signoFijo": 33.363603,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 33.363603
+  },
+  {
+   "label": "Genel yönetim katılım gelirleri",
+   "page": 53,
+   "native": 4.011472,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer gelirler\")",
+   "signoFijo": 4.011472,
+   "cat": "other_income",
+   "conf": 0.75,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.42% (≤ 1%) y esta tiene 0.75",
+   "enLista": true,
+   "enCola": false,
+   "destino": "revenue",
+   "amountNative": 4.011472
+  },
+  {
+   "label": "Konusu kalmayan karşılıklar (*)",
+   "page": 53,
+   "native": 0.444407,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer gelirler\")",
+   "signoFijo": 0.444407,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.444407
+  },
+  {
+   "label": "Esas faaliyetlerden diğer gelirler",
+   "page": 53,
+   "native": 0.169309,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer gelirler\")",
+   "signoFijo": 0.169309,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.169309
+  },
+  {
+   "label": "Satışların maliyeti (-)",
+   "page": 10,
+   "native": 620.2931,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 620.2931,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): corrijo mi respuesta anterior (no_es_rubro): la extracción de 2018 no trae el desglose de la nota 18 (L2575-2587), y sin el total faltan 620.293.100 de gastos; se carga el total impreso como bloque de fútbol sin desglosar (precedente 2009)",
+   "destino": "expense",
+   "amountNative": -620.2931
+  },
+  {
+   "label": "Personel ücret ve giderleri",
+   "page": 51,
+   "native": 9.410406,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 9.410406,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.410406
+  },
+  {
+   "label": "Kira giderleri",
+   "page": 51,
+   "native": 5.441213,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 5.441213,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2010 'Kira giderleri' 379.053 esta en Pazarlama, Satis ve Dagitim Giderleri (2011.md L1996 comparativo): alquiler de locales de marketing; admin_general_expense (marketing -> admin segun precedente).",
+   "destino": "expense",
+   "amountNative": -5.441213
+  },
+  {
+   "label": "Lojistik hizmet gideri",
+   "page": 51,
+   "native": 2.339636,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 2.339636,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5, nota 19/22 del documento)",
+   "destino": "expense",
+   "amountNative": -2.339636
+  },
+  {
+   "label": "Kargo ve nakliye giderleri",
+   "page": 51,
+   "native": 1.316728,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 1.316728,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5, nota 19/22 del documento)",
+   "destino": "expense",
+   "amountNative": -1.316728
+  },
+  {
+   "label": "Amortisman ve tükenme payları",
+   "page": 51,
+   "native": 0.978218,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 0.978218,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): la fila se parte por ajuste (nota 12): futbolistas player_amortisation, resto depreciation",
+   "destino": "expense",
+   "amountNative": -0.978218
+  },
+  {
+   "label": "Yemek giderleri",
+   "page": 51,
+   "native": 0.760868,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 0.760868,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5, nota 19/22 del documento)",
+   "destino": "expense",
+   "amountNative": -0.760868
+  },
+  {
+   "label": "Ambalaj malzemesi giderleri",
+   "page": 51,
+   "native": 0.631913,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 0.631913,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5, nota 19/22 del documento)",
+   "destino": "expense",
+   "amountNative": -0.631913
+  },
+  {
+   "label": "Web yayın giderleri",
+   "page": 51,
+   "native": 0.287782,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 0.287782,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.287782
+  },
+  {
+   "label": "Tanıtım, fuar ve sergi giderleri",
+   "page": 51,
+   "native": 0.279414,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 0.279414,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.279414
+  },
+  {
+   "label": "Reklam ve ilan giderleri",
+   "page": 51,
+   "native": 0.233293,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 0.233293,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.233293
+  },
+  {
+   "label": "Haberleşme giderleri",
+   "page": 51,
+   "native": 0.147955,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 0.147955,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.147955
+  },
+  {
+   "label": "Diğer",
+   "page": 51,
+   "native": 2.786467,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
+   "signoFijo": 2.786467,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.786467
+  },
+  {
+   "label": "Müşavirlik, dava ve icra noter giderleri",
+   "page": 51,
+   "native": 13.178395,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")",
+   "signoFijo": 13.178395,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -13.178395
+  },
+  {
+   "label": "Personel ücret ve giderleri",
+   "page": 51,
+   "native": 3.535196,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")",
+   "signoFijo": 3.535196,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.535196
+  },
+  {
+   "label": "Şüpheli alacak karşılık giderleri",
+   "page": 51,
+   "native": 1.186107,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")",
+   "signoFijo": 1.186107,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.186107
+  },
+  {
+   "label": "Vergi resim ve harçlar",
+   "page": 51,
+   "native": 0.869923,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")",
+   "signoFijo": 0.869923,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.869923
+  },
+  {
+   "label": "Amortisman ve tükenme/itfa payları",
+   "page": 51,
+   "native": 0.713414,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")",
+   "signoFijo": 0.713414,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.713414
+  },
+  {
+   "label": "Haberleşme giderleri",
+   "page": 51,
+   "native": 0.474934,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")",
+   "signoFijo": 0.474934,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.474934
+  },
+  {
+   "label": "Danışmanlık giderleri",
+   "page": 51,
+   "native": 0.107033,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")",
+   "signoFijo": 0.107033,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.107033
+  },
+  {
+   "label": "Kargo ve nakliye giderleri",
+   "page": 51,
+   "native": 0.051729,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")",
+   "signoFijo": 0.051729,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5, nota 19/22 del documento)",
+   "destino": "expense",
+   "amountNative": -0.051729
+  },
+  {
+   "label": "Diğer giderler",
+   "page": 51,
+   "native": 2.087904,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")",
+   "signoFijo": 2.087904,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.087904
+  },
+  {
+   "label": "Esas faaliyetlerden kur farkı giderleri",
+   "page": 53,
+   "native": 87.614233,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")",
+   "signoFijo": 87.614233,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -87.614233
+  },
+  {
+   "label": "Özel maliyetler değer düşüklüğü karşılık gideri (*)",
+   "page": 53,
+   "native": 6.839206,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")",
+   "signoFijo": 6.839206,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
+   "destino": "expense",
+   "amountNative": -6.839206
+  },
+  {
+   "label": "Vade farkı gideri",
+   "page": 53,
+   "native": 2.060306,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")",
+   "signoFijo": 2.060306,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.060306
+  },
+  {
+   "label": "Dava karşılık giderleri",
+   "page": 53,
+   "native": 0.974776,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")",
+   "signoFijo": 0.974776,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5, nota 19/22 del documento): provisión por juicios, no amortización",
+   "destino": "expense",
+   "amountNative": -0.974776
+  },
+  {
+   "label": "Esas faaliyetlerden diğer giderler",
+   "page": 53,
+   "native": 0.838026,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")",
+   "signoFijo": 0.838026,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.838026
+  },
+  {
+   "label": "Finansman gelirleri",
+   "page": null,
+   "native": 65.062676,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Finansman giderleri (-)",
+   "page": null,
+   "native": -224.297682,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Dönem vergi gideri",
+   "page": null,
+   "native": -10.47008,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "Ertelenmiş vergi geliri/(gideri)",
+   "page": null,
+   "native": 1.033727,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Hasılat\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Esas faaliyetlerden diğer gelirler\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Genel yönetim giderleri (-)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 944.157302,
+  "expSum": -765.438175,
+  "officialTotalRevenue": 944.157302,
+  "officialTotalExpenses": 765.438175,
+  "officialPAT": 10.047768,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 10.047768,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 944.157302
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 765.438175
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "TRY@2018-05-31",
+  "fx": 4.4808,
+  "source": "market_close",
+  "label": "Döviz alış del TCMB al 2018-05-31"
+ },
+ "liga": {
+  "valor": "tr-superlig",
+  "fuente": "roster cacheado de \"2017–18 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2018,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2018-05-31",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2018-05-31) y contenido del .md (289 de 289 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-20)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "TRY",
+   "fuente": "moneda de curso legal de Turquía (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 12 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "TRY@2018-05-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 4.4808. --escribir agrega 'TRY@2018-05-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "besiktas-tr-futbol-bilanco-31-05-2018",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "tr-superlig",
+   "fuente": "roster cacheado de \"2017–18 Süper Lig\" (tools/club-league-reference/tr.json), coincidencia exacta \"Beşiktaş\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 14,
+  "lineasGasto": 27,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
 }

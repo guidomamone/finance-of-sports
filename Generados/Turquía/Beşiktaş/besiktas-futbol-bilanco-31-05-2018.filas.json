@@ -4,7 +4,7 @@
  "mdSha1": "58d0ba70b357c741e1989d2aba8b6b94eb9da1dc",
  "ubicacionSha1": "86ed91f47dbbace33c44577ed289a389237a9084",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T19:01:34.285Z",
+ "generado": "2026-10-20T19:34:27.823Z",
  "ubicacion": {
   "estado": [
    "b7"
@@ -32,42 +32,42 @@
   {
    "bloque": "b60",
    "escala": "unidades",
-   "evidencia": "Importes coinciden con el estado en TL (L2573 = L325)"
+   "evidencia": "Sin frase propia; L2573 906.168.511 coincide con Hasılat del estado en TL (L325)"
   },
   {
    "bloque": "b61",
    "escala": "unidades",
-   "evidencia": "Total L2618 coincide con L328"
+   "evidencia": "Sin frase propia; L2618 coincide con L328 en TL"
   },
   {
    "bloque": "b62",
    "escala": "unidades",
-   "evidencia": "Total L2633 coincide con L329"
+   "evidencia": "Sin frase propia; L2633 coincide con L329 en TL"
   },
   {
    "bloque": "b63",
    "escala": "unidades",
-   "evidencia": "Mismas cifras en TL que b60"
+   "evidencia": "Sin frase propia; mismos importes que b60/b61/b62 en TL"
   },
   {
    "bloque": "b64",
    "escala": "unidades",
-   "evidencia": "Total L2688 coincide con L330"
+   "evidencia": "Sin frase propia; L2688 coincide con L330 en TL"
   },
   {
    "bloque": "b65",
    "escala": "unidades",
-   "evidencia": "Total L2700 coincide con L331"
+   "evidencia": "Sin frase propia; L2700 coincide con L331 en TL"
   },
   {
    "bloque": "b66",
    "escala": "unidades",
-   "evidencia": "Total L2711 coincide con L333"
+   "evidencia": "Sin frase propia; L2711 coincide con L333 en TL"
   },
   {
    "bloque": "b67",
    "escala": "unidades",
-   "evidencia": "Total L2720 coincide con L334"
+   "evidencia": "Sin frase propia; L2720 coincide con L334 en TL"
   }
  ],
  "filas": [
@@ -522,96 +522,6 @@
    "detalla_a": "Satışların maliyeti (-)"
   },
   {
-   "bloque": "b60",
-   "linea": 2588,
-   "etiqueta": "",
-   "actual": "285.875.411",
-   "anterior": "146.502.474",
-   "tipo": "resultado",
-   "lado": "resultado",
-   "detalla_a": "Brüt kar"
-  },
-  {
-   "bloque": "b64",
-   "linea": 2684,
-   "etiqueta": "Esas faaliyetlerden kur farkı gelirleri",
-   "actual": "33.363.603",
-   "anterior": "7.934.841",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "Esas faaliyetlerden diğer gelirler"
-  },
-  {
-   "bloque": "b64",
-   "linea": 2685,
-   "etiqueta": "Genel yönetim katılım gelirleri",
-   "actual": "4.011.472",
-   "anterior": "-",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "Esas faaliyetlerden diğer gelirler"
-  },
-  {
-   "bloque": "b64",
-   "linea": 2686,
-   "etiqueta": "Konusu kalmayan karşılıklar (*)",
-   "actual": "444.407",
-   "anterior": "12.257.332",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "Esas faaliyetlerden diğer gelirler"
-  },
-  {
-   "bloque": "b64",
-   "linea": 2687,
-   "etiqueta": "Esas faaliyetlerden diğer gelirler",
-   "actual": "169.309",
-   "anterior": "961.655",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "Esas faaliyetlerden diğer gelirler"
-  },
-  {
-   "bloque": "b64",
-   "linea": 2688,
-   "etiqueta": "",
-   "actual": "37.988.791",
-   "anterior": "21.153.828",
-   "tipo": "subtotal",
-   "lado": "ingreso",
-   "detalla_a": "Esas faaliyetlerden diğer gelirler"
-  },
-  {
-   "bloque": "b66",
-   "linea": 2709,
-   "etiqueta": "Faiz ve adat gelirleri",
-   "actual": "47.171.966",
-   "anterior": "28.618.108",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": "Finansman gelirleri"
-  },
-  {
-   "bloque": "b66",
-   "linea": 2710,
-   "etiqueta": "Kur farkı gelirleri",
-   "actual": "17.890.710",
-   "anterior": "9.020.945",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": "Finansman gelirleri"
-  },
-  {
-   "bloque": "b66",
-   "linea": 2711,
-   "etiqueta": "",
-   "actual": "65.062.676",
-   "anterior": "37.639.053",
-   "tipo": "subtotal",
-   "lado": "financiero",
-   "detalla_a": "Finansman gelirleri"
-  },
-  {
    "bloque": "b61",
    "linea": 2606,
    "etiqueta": "Personel ücret ve giderleri",
@@ -842,6 +752,56 @@
    "detalla_a": "Genel yönetim giderleri (-)"
   },
   {
+   "bloque": "b64",
+   "linea": 2684,
+   "etiqueta": "Esas faaliyetlerden kur farkı gelirleri",
+   "actual": "33.363.603",
+   "anterior": "7.934.841",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Esas faaliyetlerden diğer gelirler"
+  },
+  {
+   "bloque": "b64",
+   "linea": 2685,
+   "etiqueta": "Genel yönetim katılım gelirleri",
+   "actual": "4.011.472",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Esas faaliyetlerden diğer gelirler"
+  },
+  {
+   "bloque": "b64",
+   "linea": 2686,
+   "etiqueta": "Konusu kalmayan karşılıklar (*)",
+   "actual": "444.407",
+   "anterior": "12.257.332",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Esas faaliyetlerden diğer gelirler"
+  },
+  {
+   "bloque": "b64",
+   "linea": 2687,
+   "etiqueta": "Esas faaliyetlerden diğer gelirler",
+   "actual": "169.309",
+   "anterior": "961.655",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Esas faaliyetlerden diğer gelirler"
+  },
+  {
+   "bloque": "b64",
+   "linea": 2688,
+   "etiqueta": "",
+   "actual": "37.988.791",
+   "anterior": "21.153.828",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Esas faaliyetlerden diğer gelirler"
+  },
+  {
    "bloque": "b65",
    "linea": 2695,
    "etiqueta": "Esas faaliyetlerden kur farkı giderleri",
@@ -902,6 +862,36 @@
    "detalla_a": "Esas faaliyetlerden diğer giderler (-)"
   },
   {
+   "bloque": "b66",
+   "linea": 2709,
+   "etiqueta": "Faiz ve adat gelirleri",
+   "actual": "47.171.966",
+   "anterior": "28.618.108",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansman gelirleri"
+  },
+  {
+   "bloque": "b66",
+   "linea": 2710,
+   "etiqueta": "Kur farkı gelirleri",
+   "actual": "17.890.710",
+   "anterior": "9.020.945",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansman gelirleri"
+  },
+  {
+   "bloque": "b66",
+   "linea": 2711,
+   "etiqueta": "",
+   "actual": "65.062.676",
+   "anterior": "37.639.053",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansman gelirleri"
+  },
+  {
    "bloque": "b67",
    "linea": 2717,
    "etiqueta": "Faiz giderleri",
@@ -951,11 +941,11 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro 'Niteliklerine göre giderler' (b63, L2647-L2668) por ser una reclasificación por naturaleza de gastos ya desglosados en b60, b61 y b62?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Niteliklerine göre giderler' (b63, L2649-L2668), por ser una reclasificación por naturaleza de gastos ya cargados en b60, b61 y b62?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "",
-   "texto": "El total L2668 (667.111.628) es la suma de costo de ventas, comercialización y administración ya desglosados en otras notas; cargarlo duplicaría gastos.",
+   "texto": "L2668 (667.111.628) = costo de ventas + comercialización + administración; cargarlo duplicaría gastos.",
    "bloques": [
     "b63",
     "b60",
@@ -965,11 +955,11 @@
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se toma la columna '1 Haziran 2015- 31 Mayıs 2017' de las notas como el año anterior 2016-2017?",
+   "pregunta": "¿Se toma la segunda columna de las notas (encabezada '1 Haziran 2015- 31 Mayıs 2017') como el año anterior 2016-2017?",
    "propuesta": "sí",
    "tema": "columna",
    "renglon": "",
-   "texto": "Los encabezados de las notas (ej. L2561) dicen 2015 pero los totales coinciden con la columna 2016-2017 del estado; parece errata.",
+   "texto": "El encabezado dice 2015 (L2561 y otros) pero los totales coinciden con la columna 2016-2017 del estado; parece errata.",
    "bloques": [
     "b60",
     "b61",
@@ -982,5 +972,5 @@
    "afecta_carga": false
   }
  ],
- "observaciones": "Escala en TL (unidades). No hay total de ingresos ni de gastos impresos. Las filas de b60 L2576-L2586 desglosan 'Satılan hizmet maliyeti' (subtotal dentro de la misma nota). El cuadro b63 se extrajo no se cargó por ser vista por naturaleza duplicada (ver dudas)."
+ "observaciones": "Salarios del plantel: 'Ücret giderleri' (L2576) dentro de 'Satılan hizmet maliyeti' (L2575), que detalla 'Satışların maliyeti (-)'. Las notas no indican escala; se asume TL por coincidencia de totales con el estado. No hay totales de ingresos ni de gastos impresos. L2588 (285.875.411) repite el Brüt kar y no se extrajo."
 }

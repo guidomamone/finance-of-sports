@@ -1,0 +1,204 @@
+{
+ "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2025.md",
+ "mdSha1": "5a9cb432258ba2d1a981219388941f2b7fd23c62",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:41:00.249Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    74,
+    79
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    83,
+    87
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    119,
+    125
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    133,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    143,
+    147
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    170,
+    206
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    231,
+    235
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    254,
+    261
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    269,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    279,
+    282
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    301,
+    306
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 10,
+   "lineas": [
+    312,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    334,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 11,
+   "lineas": [
+    341,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    372,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    420,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    456,
+    470
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    489,
+    502
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    506,
+    511
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b15",
+  "b16"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18",
+  "b19"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas expresan importes en pesos completos (ej. 'Ascienden a $21.137.372.357').",
+ "moneda": "COP",
+ "columna_ejercicio": "AÑO 2025",
+ "columna_anterior": "AÑO 2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF tiene un estado de resultados de 2025 que no fue transcripto como tabla (por ejemplo, en las primeras páginas)?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo muestra notas desde la pág. 4 (nota 2 en adelante); no aparece ningún bloque con el estado de resultados.",
+   "bloques": [],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Falta en el índice una nota 16 (costos operacionales) entre los ingresos (b16) y los gastos de administración (b17)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La numeración salta de la nota 15.2 (b16) a la nota 17 (b17); no aparece ninguna nota 16.",
+   "bloques": [
+    "b16",
+    "b17"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No se encontró el estado de resultados entre los bloques; solo están las notas de una entidad individual (Talento Dorado S.A.). Las notas de ingresos son b15 (operacionales) y b16 (no operacionales). Las notas de gastos son b17 (administración), b18 (ventas) y b19 (no operacionales). Se excluye b6 porque es un detalle por jugador."
+}

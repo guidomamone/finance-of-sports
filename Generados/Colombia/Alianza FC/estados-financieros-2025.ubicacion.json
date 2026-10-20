@@ -1,0 +1,230 @@
+{
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2025.md",
+ "mdSha1": "bc109729380989c16b110d8e8c2901ed2e9466f0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:41:19.262Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    19,
+    24
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    30,
+    33
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    37,
+    45
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    49,
+    51
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 2,
+   "lineas": [
+    55,
+    57
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 2,
+   "lineas": [
+    61,
+    64
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 2,
+   "lineas": [
+    68,
+    71
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 2,
+   "lineas": [
+    75,
+    79
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 2,
+   "lineas": [
+    83,
+    94
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 2,
+   "lineas": [
+    98,
+    103
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 2,
+   "lineas": [
+    107,
+    111
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 3,
+   "lineas": [
+    117,
+    123
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 3,
+   "lineas": [
+    127,
+    132
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 3,
+   "lineas": [
+    136,
+    142
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 3,
+   "lineas": [
+    146,
+    151
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 3,
+   "lineas": [
+    155,
+    158
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 3,
+   "lineas": [
+    162,
+    164
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 3,
+   "lineas": [
+    170,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 4,
+   "lineas": [
+    182,
+    185
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 4,
+   "lineas": [
+    189,
+    194
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 4,
+   "lineas": [
+    200,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 4,
+   "lineas": [
+    225,
+    227
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b20"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b22"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Los estados financieros se presentan en pesos colombianos (cifras como $7.845.762 sin indicación de miles)",
+ "moneda": "COP",
+ "columna_ejercicio": "31/12/2025",
+ "columna_anterior": "31/12/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El documento omite el estado de resultados integral de 2025 y solo trae notas (Nota 21 ingresos, Nota 22 gastos, Nota 23 impuesto)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo muestra notas a los estados financieros; ningún bloque es la cuenta de resultados.",
+   "bloques": [
+    "b20",
+    "b21",
+    "b22"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan los otros ingresos no operacionales y gastos financieros/no operacionales que aparecen en texto sobre b21 y b22?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Otros ingresos no operacionales",
+   "texto": "Los importes de recuperaciones, indemnizaciones, otros gastos no operacionales y gastos financieros están en texto, no en tabla.",
+   "bloques": [
+    "b21",
+    "b22"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No se encontró bloque de estado de resultados; solo notas individuales. Se marcan las notas de ingresos (b20) y gastos (b21 administración y ventas, b22 impuesto a las ganancias). Estados individuales en pesos colombianos."
+}

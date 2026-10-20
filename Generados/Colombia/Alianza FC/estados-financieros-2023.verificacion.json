@@ -1,0 +1,292 @@
+{
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2023.md",
+ "generado": "2026-10-20T19:47:02.849Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 6.821210263296962e-13
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Ingresos de actividades ordinarias\" no suma el renglón (15200.520002 contra 14174.134648, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Otros Ingresos\" no suma el renglón (130.486351 contra 130.486351, sumando sus renglones): quedó el renglón del estado",
+  "escalón \"nota exacta en la lectura 5\": \"Gastos de administración\" (L84) se abre en las 10 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Gastos Deportivos\" (L85) se abre en las 5 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer que no afecta la carga: L680 menos L682 = 130.486.351 = L83; el subtotal de la nota mezcla otros ingresos y financieros.",
+  "duda de extraer que no afecta la carga: Las cifras comparativas 2022 de gastos no coinciden entre estado (L84-L85) y nota (L696, L707), posible reclasificación."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Ingresos de actividades ordinarias",
+   "suma": 15200.520002,
+   "objetivo": 14174.134648
+  },
+  {
+   "renglon": "Otros Ingresos",
+   "suma": 130.486351,
+   "objetivo": 130.486351
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Ingresos de actividades ordinarias",
+   "suma": 15200.520002,
+   "objetivo": 14174.134648
+  },
+  {
+   "renglon": "Otros Ingresos",
+   "suma": 130.486351,
+   "objetivo": 130.486351
+  }
+ ],
+ "totales": {
+  "ingresos": 14304.620999,
+  "gastos": 10543.422236,
+  "financiero": 1055.406952,
+  "impuesto": 1220.153483,
+  "resultadoImpreso": 1518.772348,
+  "resultadoParaCargar": 1518.772348,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "lado": "ingreso",
+   "M": 14174.134648,
+   "pagina": 2,
+   "linea": 80,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "M": 130.486351,
+   "pagina": 2,
+   "linea": 83,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Gastos de personal",
+   "lado": "gasto",
+   "M": 1711.470936,
+   "pagina": 15,
+   "linea": 697,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 155.981205,
+   "pagina": 15,
+   "linea": 698,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 256.728447,
+   "pagina": 15,
+   "linea": 699,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Arriendos",
+   "lado": "gasto",
+   "M": 10.194859,
+   "pagina": 15,
+   "linea": 700,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "seguros",
+   "lado": "gasto",
+   "M": 23.572277,
+   "pagina": 15,
+   "linea": 701,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 34.035571,
+   "pagina": 15,
+   "linea": 702,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gastos Legales",
+   "lado": "gasto",
+   "M": 27.402747,
+   "pagina": 15,
+   "linea": 703,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Mantenimiento y reparaciones",
+   "lado": "gasto",
+   "M": 2.272533,
+   "pagina": 15,
+   "linea": 704,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 3264.244042,
+   "pagina": 15,
+   "linea": 705,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 114.253422,
+   "pagina": 15,
+   "linea": 706,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gastos de personal",
+   "lado": "gasto",
+   "M": 3513.100819,
+   "pagina": 15,
+   "linea": 708,
+   "origen": "nota que desglosa \"Gastos Deportivos\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 173.359999,
+   "pagina": 15,
+   "linea": 709,
+   "origen": "nota que desglosa \"Gastos Deportivos\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 346.387164,
+   "pagina": 15,
+   "linea": 710,
+   "origen": "nota que desglosa \"Gastos Deportivos\""
+  },
+  {
+   "etiqueta": "Gastos de Viaje",
+   "lado": "gasto",
+   "M": 618.97871,
+   "pagina": 15,
+   "linea": 711,
+   "origen": "nota que desglosa \"Gastos Deportivos\""
+  },
+  {
+   "etiqueta": "Amortizaciones derechos deportivos",
+   "lado": "gasto",
+   "M": 291.439505,
+   "pagina": 15,
+   "linea": 713,
+   "origen": "nota que desglosa \"Gastos Deportivos\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos Financiero",
+   "M": 16.56701,
+   "linea": 88
+  },
+  {
+   "etiqueta": "Costos Financieros",
+   "M": -1038.839942,
+   "linea": 89
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Gasto impuesto de renta y cree",
+   "M": -1051.401,
+   "linea": 92
+  },
+  {
+   "etiqueta": "Impuesto diferido",
+   "M": -168.752483,
+   "linea": 93
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "e721e7d65509f7d877df83d40048dbc3a6313cc0",
+  "rango": [
+   77,
+   98
+  ],
+  "lineasCargadas": [
+   80,
+   83,
+   697,
+   698,
+   699,
+   700,
+   701,
+   702,
+   703,
+   704,
+   705,
+   706,
+   708,
+   709,
+   710,
+   711,
+   713,
+   88,
+   89,
+   92,
+   93
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 77 a 98 del .md):\nL78: |   | NOTA | AÑO 2023 | AÑO 2022 | VAR% | VARIACION$  |\nL79: | --- | --- | --- | --- | --- | --- |\nL80: |  Ingresos de actividades ordinarias | 14 | 14.174.134.648 | 13.070.575.623 | 8% | 1.103.559.025  |\nL81: |  Costos de Venta | 15 | - | - | 0% | -  |\nL82: |  **Utilidad bruta** |  | **14.174.134.648** | **13.070.575.623** | **8%** | **1.103.559.025**  |\nL83: |  Otros Ingresos |  | 130.486.351 | 996.649.504 | -87% | (866.163.153)  |\nL84: |  Gastos de administración | 16 | 5.600.156.039 | 8.062.173.727 | -31% | (2.462.017.688)  |\nL85: |  Gastos Deportivos | 16 | 4.943.266.197 | 4.509.602.501 |  | 433.663.696  |\nL86: |  Otro Gastos de actividades ordinarias | 17 | - | 129.044.189 | -100% | (129.044.189)  |\nL87: |  **Utilidad (Perdida) operativa** |  | **3.761.198.763** | **1.366.404.710** | **175%** | **2.394.794.053**  |\nL88: |  Ingresos Financiero |  | 16.567.010 | 608.949 | 2621% | 15.958.061  |\nL89: |  Costos Financieros |  | 1.038.839.942 | 144.665.875 | 618% | 894.174.067  |\nL90: |  **Costo Financiero Neto** |  | **-1.022.272.932** | **-144.056.926** | **610%** | **-878.216.006**  |\nL91: |  **(Perdida) Utilidad antes de impuestos de renta** |  | **2.738.925.831** | **1.222.347.784** | **124%** | **1.516.578.047**  |\nL92: |  Gasto impuesto de renta y cree | 18 | 1.051.401.000 | 682.043.224 | 54% | 369.357.776  |\nL93: |  Impuesto diferido |  | 168.752.483 | 54.030.456 | 212% | 114.722.027  |\nL94: |  **(Perdida) Utilidad Neta del periodo** |  | **1.518.772.348** | **486.274.104** | **212%** | **1.032.498.244**  |\nL95: |  **Resultado del ejercicio** |  | **1.518.772.348** | **486.274.104** | **212%** | **1.032.498.244**  |\nL97: Las notas adjuntas son parte integral de estos estados de resultados integrales.\n\nLO QUE SE CARGA:\n- ingreso · \"Ingresos de actividades ordinarias\" · 14174.134648 · L80\n- ingreso · \"Otros Ingresos\" · 130.486351 · L83\n- gasto · \"Gastos de personal\" · 1711.470936 · L697 (de una nota)\n- gasto · \"Honorarios\" · 155.981205 · L698 (de una nota)\n- gasto · \"Impuestos\" · 256.728447 · L699 (de una nota)\n- gasto · \"Arriendos\" · 10.194859 · L700 (de una nota)\n- gasto · \"seguros\" · 23.572277 · L701 (de una nota)\n- gasto · \"Servicios\" · 34.035571 · L702 (de una nota)\n- gasto · \"Gastos Legales\" · 27.402747 · L703 (de una nota)\n- gasto · \"Mantenimiento y reparaciones\" · 2.272533 · L704 (de una nota)\n- gasto · \"Diversos\" · 3264.244042 · L705 (de una nota)\n- gasto · \"Depreciaciones\" · 114.253422 · L706 (de una nota)\n- gasto · \"Gastos de personal\" · 3513.100819 · L708 (de una nota)\n- gasto · \"Honorarios\" · 173.359999 · L709 (de una nota)\n- gasto · \"Servicios\" · 346.387164 · L710 (de una nota)\n- gasto · \"Gastos de Viaje\" · 618.97871 · L711 (de una nota)\n- gasto · \"Amortizaciones derechos deportivos\" · 291.439505 · L713 (de una nota)\n- financiero · \"Ingresos Financiero\" · 16.56701 · L88\n- financiero · \"Costos Financieros\" · -1038.839942 · L89\n- impuesto · \"Gasto impuesto de renta y cree\" · -1051.401 · L92\n- impuesto · \"Impuesto diferido\" · -168.752483 · L93"
+ }
+}

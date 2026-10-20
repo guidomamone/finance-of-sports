@@ -3,8 +3,9 @@
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md",
  "mdSha1": "58d0ba70b357c741e1989d2aba8b6b94eb9da1dc",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T19:00:33.349Z",
+ "generado": "2026-10-20T19:33:20.691Z",
  "perimetroClub": "consolidado",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -705,16 +706,28 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro por segmento 1 Haziran 2017 – 31 Mayıs 2018 (b18), porque las notas 18-23 ya abren los renglones del estado?",
+   "pregunta": "¿Se usa el cuadro 'Niteliklerine göre giderler' (b63, nota 20) para abrir los salarios del plantel ('Ücret giderleri')?",
    "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Ücret giderleri",
+   "texto": "Los salarios de futbolistas no figuran aparte en el estado (b7); la nota 20 de gastos por naturaleza y la nota 18 de costo de ventas (b60) son las que podrían abrirlos.",
+   "bloques": [
+    "b63",
+    "b60"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro por segmento 2017-2018 (b18) porque solo repite importes del estado y sus notas?",
+   "propuesta": "no",
    "tema": "usar-cuadro-por-segmento",
-   "renglon": "Hasılat",
-   "texto": "El cuadro por segmento (Futbol, Sportif Ürünler, TV) probablemente repite importes ya abiertos en la nota 18 (b60).",
+   "renglon": "",
+   "texto": "El cuadro por segmento abre hasılat y costos por Futbol/Sportif/TV, lo que no está claramente desglosado en otras notas.",
    "bloques": [
     "b18"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Solo hay estados consolidados de Beşiktaş Futbol Yatırımları y bağlı ortaklıkları. b7 es el estado de resultados consolidado. Las notas b60-b67 tienen el encabezado de la columna anterior impreso como '1 Haziran 2015- 31 Mayıs 2017' (errata, corresponde a 2016-2017). Se excluyen balance, flujo, patrimonio, presupuesto (b14) y segmentos (b16-b19)."
+ "observaciones": "Estado de resultados consolidado del grupo Beşiktaş Futbol Yatırımları (b7). Notas: 18 Hasılat y costo de ventas (b60), 19 marketing y administración (b61, b62), 20 gastos por naturaleza con 'Ücret giderleri' (b63), 21 otros ingresos/gastos operativos (b64, b65), 22-23 financieros (b66, b67). Los encabezados de notas dicen '1 Haziran 2015- 31 Mayıs 2017' para el año anterior, probable errata por 2016. Excluidos balance, flujo, patrimonio, presupuesto (b14) y segmentos 2016-17 (b19)."
 }

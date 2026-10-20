@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2020.pdf",
- "generado": "2026-10-20T19:12:13.566Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Futbolcu sözleşme fesih giderleri\" -> exceptional_items 0.45; \"Yatırım amaçlı gayrimenkul avansları içi\" -> other_expenses 0.5"
-  }
- ],
+ "generado": "2026-10-20T19:17:40.713Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-20: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 9 ejercicio(s) con un solo perímetro (consolidado); 16 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-728.146895); queda la suma, verificada por el resultado del ejercicio",
@@ -196,9 +191,9 @@
     "amountNative": -41.533218,
     "disclosureLevel": "aggregated",
     "_pag": 55,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Maç giderleri",
@@ -256,9 +251,9 @@
     "amountNative": -7.852293,
     "disclosureLevel": "aggregated",
     "_pag": 55,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diğer giderler",
@@ -286,9 +281,9 @@
     "amountNative": -0.577018,
     "disclosureLevel": "aggregated",
     "_pag": 55,
-    "_escalon": 2,
-    "_conf": 0.85,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Lojistik hizmet gideri",
@@ -850,11 +845,11 @@
    "origen": "verificacion (nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\")",
    "signoFijo": 41.533218,
    "cat": "exceptional_items",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -41.533218
   },
@@ -944,11 +939,11 @@
    "origen": "verificacion (nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\")",
    "signoFijo": 7.852293,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -7.852293
   },
@@ -990,10 +985,11 @@
    "origen": "verificacion (nota que desglosa \"Pazarlama giderleri (-)\")",
    "signoFijo": 0.577018,
    "cat": "admin_general_expense",
-   "conf": 0.85,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "expense",
    "amountNative": -0.577018
   },
@@ -1490,8 +1486,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 36,
   "metaFilas": 4,

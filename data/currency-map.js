@@ -247,6 +247,17 @@ const FX_CLOSE = {
   'GBP@2021-07-31': { fx: 0.719062, source: 'market_close', label: 'Tipo spot del Bank of England, última rueda hábil antes del cierre (2021-07-30, 2021-07-31 no es día hábil)' },
   'CHF@2021-06-30': { fx: 0.9253, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2021-06-30' },
   'TRY@2023-05-31': { fx: 20.6632, source: 'market_close', label: 'Döviz alış del TCMB al 2023-05-31' },
+  'TRY@2019-05-31': { fx: 5.8613, source: 'market_close', label: 'Döviz alış del TCMB al 2019-05-31' },
+  'TRY@2020-05-31': { fx: 6.8138, source: 'market_close', label: 'Döviz alış del TCMB, última rueda hábil antes del cierre (2020-05-29, 2020-05-31 no es día hábil)' },
+  'TRY@2021-05-31': { fx: 8.499, source: 'market_close', label: 'Döviz alış del TCMB al 2021-05-31' },
+  'TRY@2014-05-31': { fx: 2.0916, source: 'market_close', label: 'Döviz alış del TCMB, última rueda hábil antes del cierre (2014-05-30, 2014-05-31 no es día hábil)' },
+  'TRY@2017-05-31': { fx: 3.5334, source: 'market_close', label: 'Döviz alış del TCMB al 2017-05-31' },
+  'TRY@2022-05-31': { fx: 16.3876, source: 'market_close', label: 'Döviz alış del TCMB al 2022-05-31' },
+  'TRY@2009-05-31': { fx: 1.5345, source: 'market_close', label: 'Döviz alış del TCMB, última rueda hábil antes del cierre (2009-05-29, 2009-05-31 no es día hábil)' },
+  'TRY@2010-05-31': { fx: 1.5665, source: 'market_close', label: 'Döviz alış del TCMB al 2010-05-31' },
+  'TRY@2011-05-31': { fx: 1.5859, source: 'market_close', label: 'Döviz alış del TCMB al 2011-05-31' },
+  'TRY@2016-05-31': { fx: 2.9515, source: 'market_close', label: 'Döviz alış del TCMB al 2016-05-31' },
+  'TRY@2018-05-31': { fx: 4.4808, source: 'market_close', label: 'Döviz alış del TCMB al 2018-05-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

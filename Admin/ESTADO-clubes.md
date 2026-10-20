@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 314 clubes, 1215 ejercicios, 22 países.
+TOTAL: 315 clubes, 1229 ejercicios, 22 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -71,7 +71,7 @@ BE (22)
   Sint-Truiden          1 ejercicio (2024/2025), balance, EUR
   Standard Liège        1 ejercicio (2024/2025), balance, EUR
   Union Saint-Gilloise  1 ejercicio (2024/2025), balance, EUR
-  Westerlo              1 ejercicio (2024/2025), balance, EUR
+  Westerlo              2 ejercicios (2014/2015, 2024/2025), balance, EUR
   Zulte Waregem         1 ejercicio (2024/2025), balance, EUR
 
 BRASIL (42)
@@ -128,7 +128,7 @@ CHILE (3)
   Universidad Católica  16 ejercicios (2010 a 2025), balance, CLP
   Universidad de Chile  4 ejercicios (2022 a 2025), balance, CLP
 
-COLOMBIA (12)
+COLOMBIA (13)
   América de Cali         1 ejercicio (2025), balance, COP
   Atlético Nacional       1 ejercicio (2025), balance, COP
   Boyacá Chicó            2 ejercicios (2024 a 2025), balance, COP
@@ -138,6 +138,7 @@ COLOMBIA (12)
   Fortaleza CEIF          9 ejercicios (2017 a 2025), balance, COP
   Independiente Santa Fe  1 ejercicio (2025), balance, COP
   Junior de Barranquilla  1 ejercicio (2025), balance, COP
+  Llaneros                1 ejercicio (2025), balance, COP, sin deuda/caja
   Millonarios             1 ejercicio (2025), balance, COP
   Once Caldas             4 ejercicios (2022 a 2025), balance, COP
   Unión Magdalena         2 ejercicios (2018, 2025), balance, COP
@@ -385,6 +386,6 @@ RU (16)
   Zenit                  5 ejercicios (2021 a 2025), balance, RUB
 
 TR (1)
-  Beşiktaş  1 ejercicio (2022/2023), balance, TRY, sin deuda/caja
+  Beşiktaş  13 ejercicios (2008/2009, 2009/2010, 2010/2011, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023), balance, TRY, sin deuda/caja
 
 ===== CLUB-INDEX:END =====

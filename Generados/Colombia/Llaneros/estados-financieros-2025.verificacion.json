@@ -1,0 +1,301 @@
+{
+ "pdf": "Clubes/Colombia/Llaneros/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Llaneros/estados-financieros-2025.md",
+ "generado": "2026-10-20T19:47:02.822Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0.0000010000010206567822
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Otros Ingresos\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Gastos de Administración\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer que no afecta la carga: Diferencia de 1 unidad en 2025 y 2 en 2024 (L1023 vs L701), atribuible a redondeo.",
+  "duda de extraer que no afecta la carga: b16 L593-L594 repite el renglón del estado y b17 reproduce las mismas líneas antes del desglose L598-L605."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 11856.849555,
+  "gastos": 10805.077211,
+  "financiero": 0,
+  "impuesto": 10.205,
+  "resultadoImpreso": 1041.567343,
+  "resultadoParaCargar": 1041.567343,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Cesion de Derechos de TV",
+   "lado": "ingreso",
+   "M": 2557.762933,
+   "pagina": 11,
+   "linea": 598,
+   "origen": "nota que desglosa \"Ingresos de Actividades Ordinarias\""
+  },
+  {
+   "etiqueta": "Contratos Publicidad",
+   "lado": "ingreso",
+   "M": 6388.932082,
+   "pagina": 11,
+   "linea": 599,
+   "origen": "nota que desglosa \"Ingresos de Actividades Ordinarias\""
+  },
+  {
+   "etiqueta": "Auxilio Transporte Dimayor",
+   "lado": "ingreso",
+   "M": 673.77927,
+   "pagina": 11,
+   "linea": 600,
+   "origen": "nota que desglosa \"Ingresos de Actividades Ordinarias\""
+  },
+  {
+   "etiqueta": "Auxilio Arbitraje Dimayor",
+   "lado": "ingreso",
+   "M": 96.254181,
+   "pagina": 11,
+   "linea": 601,
+   "origen": "nota que desglosa \"Ingresos de Actividades Ordinarias\""
+  },
+  {
+   "etiqueta": "Auxilio Hotelero Dimayor",
+   "lado": "ingreso",
+   "M": 192.508363,
+   "pagina": 11,
+   "linea": 602,
+   "origen": "nota que desglosa \"Ingresos de Actividades Ordinarias\""
+  },
+  {
+   "etiqueta": "Mecanismo de Solidaridad",
+   "lado": "ingreso",
+   "M": 120,
+   "pagina": 11,
+   "linea": 603,
+   "origen": "nota que desglosa \"Ingresos de Actividades Ordinarias\""
+  },
+  {
+   "etiqueta": "Taquillas",
+   "lado": "ingreso",
+   "M": 1826.318189,
+   "pagina": 11,
+   "linea": 604,
+   "origen": "nota que desglosa \"Ingresos de Actividades Ordinarias\""
+  },
+  {
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "M": 1.294537,
+   "pagina": 18,
+   "linea": 1020,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de Administración",
+   "lado": "gasto",
+   "M": 186.887168,
+   "pagina": 18,
+   "linea": 1021,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos por beneficios a empleados",
+   "lado": "gasto",
+   "M": 6616.106802,
+   "pagina": 12,
+   "linea": 656,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 304.3695,
+   "pagina": 12,
+   "linea": 657,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 243.29674,
+   "pagina": 12,
+   "linea": 658,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 15.574139,
+   "pagina": 12,
+   "linea": 659,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 38.49822,
+   "pagina": 12,
+   "linea": 660,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 478.950141,
+   "pagina": 12,
+   "linea": 661,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Gastos legales",
+   "lado": "gasto",
+   "M": 385.4103,
+   "pagina": 12,
+   "linea": 662,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Mantenimiento y reparaciones",
+   "lado": "gasto",
+   "M": 0.31,
+   "pagina": 12,
+   "linea": 663,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Adecuacion e instalacion",
+   "lado": "gasto",
+   "M": 816.568181,
+   "pagina": 12,
+   "linea": 664,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Gastos de Viaje",
+   "lado": "gasto",
+   "M": 1408.304135,
+   "pagina": 12,
+   "linea": 665,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Otros Gstos",
+   "lado": "gasto",
+   "M": 228.43519,
+   "pagina": 12,
+   "linea": 666,
+   "origen": "nota que desglosa \"Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Gastos extraordinarios",
+   "lado": "gasto",
+   "M": 38.083024,
+   "pagina": 13,
+   "linea": 699,
+   "origen": "nota que desglosa \"Otros Gastos\""
+  },
+  {
+   "etiqueta": "Gastos diversos",
+   "lado": "gasto",
+   "M": 44.283671,
+   "pagina": 13,
+   "linea": 700,
+   "origen": "nota que desglosa \"Otros Gastos\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Gastos Financieros",
+   "M": null,
+   "linea": 1024
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Diferido",
+   "M": -10.205,
+   "linea": 1027
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "85fd5a5824d06e8a51052588442721c389fa5c05",
+  "rango": [
+   1015,
+   1032
+  ],
+  "lineasCargadas": [
+   598,
+   599,
+   600,
+   601,
+   602,
+   603,
+   604,
+   1020,
+   1021,
+   656,
+   657,
+   658,
+   659,
+   660,
+   661,
+   662,
+   663,
+   664,
+   665,
+   666,
+   699,
+   700,
+   1024,
+   1027
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 1015 a 1032 del .md):\nL1016: |  Concepto | Notas | 2025 | 2024 | VARIACION ABSOLUTA | VARIACION RELATIVA  |\nL1017: | --- | --- | --- | --- | --- | --- |\nL1018: |  Ingresos de Actividades Ordinarias | 18 | $ 11.855.555.018 | $ 5.777.133.800 | $ 6.078.421.218 | 105%  |\nL1019: |  **TOTAL INGRESOS DE ACTIVIDADES ORDINARIAS** |  | **$ 11.855.555.018** | **$ 5.777.133.800** |  |   |\nL1020: |  Otros Ingresos | 19 | $ 1.294.537 | $ 33.497.962 | -$ 32.203.425 | -96%  |\nL1021: |  Gastos de Administración | 20 | $ 186.887.168 | $ 153.840.649 | $ 33.046.519 | 21%  |\nL1022: |  Gastos de Ventas | 21 | $ 10.535.823.348 | $ 6.764.839.250 | $ 3.770.984.098 | 56%  |\nL1023: |  Otros Gastos | 22 | $ 82.366.696 | $ 303.382.764 | -$ 221.016.068 | -73%  |\nL1024: |  Gastos Financieros | 23 | $ - | $ 380.805 | -$ 380.805 | -100%  |\nL1025: |  **UTILIDAD ANTES DE IMPUESTOS** |  | **$ 1.051.772.343** | **-$ 1.411.811.706** | $ 2.463.584.049 | -174%  |\nL1026: |  Corriente |  |  |  |  |   |\nL1027: |  Diferido |  | $ 10.205.000 | $ 10.205.000 | $ - | 0%  |\nL1028: |  **Gastos por Impuestos Renta** |  | **$ 10.205.000** | **$ 10.205.000** | $ - | 0%  |\nL1029: |  **Ganancia (Perdida) del Periodo** |  | **$ 1.041.567.343** | **-$ 1.422.016.706** | $ 2.463.584.049 | -173%  |\nL1031: **JUAN CARLOS TRUJILLO**\nL1032: Representante Legal\n\nLO QUE SE CARGA:\n- ingreso · \"Cesion de Derechos de TV\" · 2557.762933 · L598 (de una nota)\n- ingreso · \"Contratos Publicidad\" · 6388.932082 · L599 (de una nota)\n- ingreso · \"Auxilio Transporte Dimayor\" · 673.77927 · L600 (de una nota)\n- ingreso · \"Auxilio Arbitraje Dimayor\" · 96.254181 · L601 (de una nota)\n- ingreso · \"Auxilio Hotelero Dimayor\" · 192.508363 · L602 (de una nota)\n- ingreso · \"Mecanismo de Solidaridad\" · 120 · L603 (de una nota)\n- ingreso · \"Taquillas\" · 1826.318189 · L604 (de una nota)\n- ingreso · \"Otros Ingresos\" · 1.294537 · L1020\n- gasto · \"Gastos de Administración\" · 186.887168 · L1021\n- gasto · \"Gastos por beneficios a empleados\" · 6616.106802 · L656 (de una nota)\n- gasto · \"Honorarios\" · 304.3695 · L657 (de una nota)\n- gasto · \"Impuestos\" · 243.29674 · L658 (de una nota)\n- gasto · \"Arrendamientos\" · 15.574139 · L659 (de una nota)\n- gasto · \"Seguros\" · 38.49822 · L660 (de una nota)\n- gasto · \"Servicios\" · 478.950141 · L661 (de una nota)\n- gasto · \"Gastos legales\" · 385.4103 · L662 (de una nota)\n- gasto · \"Mantenimiento y reparaciones\" · 0.31 · L663 (de una nota)\n- gasto · \"Adecuacion e instalacion\" · 816.568181 · L664 (de una nota)\n- gasto · \"Gastos de Viaje\" · 1408.304135 · L665 (de una nota)\n- gasto · \"Otros Gstos\" · 228.43519 · L666 (de una nota)\n- gasto · \"Gastos extraordinarios\" · 38.083024 · L699 (de una nota)\n- gasto · \"Gastos diversos\" · 44.283671 · L700 (de una nota)\n- financiero · \"Gastos Financieros\" · 0 · L1024\n- impuesto · \"Diferido\" · -10.205 · L1027"
+ }
+}

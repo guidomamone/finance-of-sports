@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2019.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2019.md",
- "generado": "2026-10-20T19:07:06.230Z",
- "estado": "cola",
+ "generado": "2026-10-20T19:17:02.145Z",
+ "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2019,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "17bcd06",
-  "1fe12f3"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -57,8 +54,7 @@
  "notas": [
   "el desglose de \"Esas faaliyetlerden diğer gelirler\" (5 filas) no suma la fila: quedó la fila",
   "duda de localizar que no afecta la carga: El cuadro por segmentos (Futbol, Sportif Ürünler, TV) parece repetir importes ya abiertos en b59.",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga la nota 20 'Niteliklerine göre giderler' (b62, L1912-L1931) por ser una reclasificación por naturaleza de gastos ya desglosados en las notas por función?",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf"
  ],
  "reintentar": [
   {

@@ -1,0 +1,173 @@
+{
+ "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.md",
+ "generado": "2026-10-20T19:26:38.096Z",
+ "estado": "ok",
+ "clubId": "westerlo-be",
+ "year": 2015,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 9.99999999806711e-7
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2014: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar que no afecta la carga: b15 (pág. 13) trae renglones financieros sueltos (disconto, voorzieningen 653/656) y b19 trae personeelskosten del sociaal balans; no parecen desglosar renglones de b4.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2015-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 4.882931,
+  "gastos": 4.68478,
+  "financiero": 0.003796,
+  "impuesto": 0.068497,
+  "resultadoImpreso": 0.125859,
+  "resultadoParaCargar": 0.125859,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 4.882931,
+   "pagina": 6,
+   "linea": 275,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 4.221367,
+   "pagina": 6,
+   "linea": 278,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.375183,
+   "pagina": 6,
+   "linea": 279,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": -0.019506,
+   "pagina": 6,
+   "linea": 280,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.041553,
+   "pagina": 6,
+   "linea": 281,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.013432,
+   "pagina": 6,
+   "linea": 282,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Uitzonderlijke kosten",
+   "lado": "gasto",
+   "M": 0.052751,
+   "pagina": 6,
+   "linea": 289,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële opbrengsten",
+   "M": -0.000001,
+   "linea": 285
+  },
+  {
+   "etiqueta": "Financiële kosten",
+   "M": -0.003795,
+   "linea": 286
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": -0.068497,
+   "linea": 293
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "alarma",
+  "clave": "cdade0fc0691c31b392fa93adfe51121624644c5",
+  "rango": [
+   272,
+   300
+  ],
+  "lineasCargadas": [
+   275,
+   278,
+   279,
+   280,
+   281,
+   282,
+   289,
+   285,
+   286,
+   293
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 272 a 300 del .md):\nL272: |   | Toel. | Codes | Boekjaar | Vorig boekjaar  |\nL273: | --- | --- | --- | --- | --- |\nL274: |  **Bedrijfsopbrengsten en bedrijfskosten** |  |  |  |   |\nL275: |  Brutomarge (+)/(-) |  | 9900 | 4.882.931 | -330  |\nL276: |  Omzet |  | 70 |  |   |\nL277: |  Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen |  | 60/61 |  |   |\nL278: |  Bezoldigingen, sociale lasten en pensioenen (+)/(-) | 5.6 | 62 | 4.221.367 |   |\nL279: |  Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa |  | 630 | 375.183 |   |\nL280: |  Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) |  | 631/4 | -19.506 |   |\nL281: |  Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-) |  | 635/7 | 41.553 |   |\nL282: |  Andere bedrijfskosten |  | 640/8 | 13.432 | 492  |\nL283: |  Als herstructureringskosten geactiveerde bedrijfskosten (-) |  | 649 |  |   |\nL284: |  **Bedrijfswinst (Bedrijfsverlies) (+)/(-)** |  | 9901 | **250.901** | **-822**  |\nL285: |  **Financiële opbrengsten** | 5.6 | 75 | **1** |   |\nL286: |  **Financiële kosten** | 5.6 | 65 | **3.795** | **42**  |\nL287: |  **Winst (Verlies) uit de gewone bedrijfsuitoefening vóór belasting (+)/(-)** |  | 9902 | **247.108** | **-864**  |\nL288: |  **Uitzonderlijke opbrengsten** |  | 76 |  |   |\nL289: |  **Uitzonderlijke kosten** |  | 66 | **52.751** |   |\nL290: |  **Winst (Verlies) van het boekjaar vóór belasting (+)/(-)** |  | 9903 | **194.356** | **-864**  |\nL291: |  **Onttrekking aan de uitgestelde belastingen** |  | 780 |  |   |\nL292: |  **Overboeking naar de uitgestelde belastingen** |  | 680 |  |   |\nL293: |  **Belastingen op het resultaat (+)/(-)** |  | 67/77 | **68.497** |   |\nL294: |  **Winst (Verlies) van het boekjaar (+)/(-)** |  | 9904 | **125.859** | **-864**  |\nL295: |  **Onttrekking aan de belastingvrije reserves** |  | 789 |  |   |\nL296: |  **Overboeking naar de belastingvrije reserves** |  | 689 |  |   |\nL297: |  **Te bestemmen winst (verlies) van het boekjaar (+)/(-)** |  | 9905 | **125.859** | **-864**  |\nL299: 6/19\n\nLO QUE SE CARGA:\n- ingreso · \"Brutomarge (+)/(-)\" · 4.882931 · L275\n- gasto · \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\" · 4.221367 · L278\n- gasto · \"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële v\" · 0.375183 · L279\n- gasto · \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen:\" · -0.019506 · L280\n- gasto · \"Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-\" · 0.041553 · L281\n- gasto · \"Andere bedrijfskosten\" · 0.013432 · L282\n- gasto · \"Uitzonderlijke kosten\" · 0.052751 · L289\n- financiero · \"Financiële opbrengsten\" · -0.000001 · L285\n- financiero · \"Financiële kosten\" · -0.003795 · L286\n- impuesto · \"Belastingen op het resultaat (+)/(-)\" · -0.068497 · L293",
+  "problemas": [
+   {
+    "tipo": "lado_equivocado",
+    "linea": 285,
+    "motivo": "Financiële opbrengsten (1 en miles) es un ingreso financiero, pero se cargó con signo negativo (-0.000001), como si fuera un costo.",
+    "citaValida": true
+   }
+  ]
+ }
+}

@@ -30,3 +30,5 @@ Nombre confirmado en la API (`enterpriseName: "KVC WESTERLO"`) en los 27 depósi
 turnover contra la VZW homónima para descartarla.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2015 desde `Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf` (sourceId `westerlo-be-jaarrekening-2015-06-30-individual`).

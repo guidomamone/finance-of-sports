@@ -1,0 +1,941 @@
+{
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2010.md",
+ "generatedAt": "2026-10-20T19:17:04.088Z",
+ "rubrosHuella": "52118348c43b22adf5ef76303f6dc2a85de8fabc",
+ "rubros": [
+  {
+   "label": "Yayın Gelirleri",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kombine Kart Ve Loca Geliri",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "matchday_competition",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorluk Ve Reklam Geliri",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Uefa Ve Süper Kupa Katılım Gelirleri",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Maç Hasılatları",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diğer",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sigorta SatıĢı",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "sponsorship_commercial",
+     0.14
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Lisanslı Ürün SatıĢ Gelirleri",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1098
+  },
+  {
+   "label": "SatıĢtan iadeler(-)",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Önceki Dönem Gelir Ve Karlar",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"Diğer Faaliyet Gelirleri\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Seyahat SatıĢı",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "sponsorship_commercial",
+     0.08
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Satılan Ticari Mallar Maliyeti(-)",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Ücret Giderleri",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Maç Giderleri",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Seyahat Giderleri",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Federasyon Giderleri",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "YurtdıĢı satıĢlar",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\"",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "player_sales",
+     0.13
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Bonservis Ve Kiralama Giderleri",
+   "lado": "expense",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Ġsim Ve Lisans Hakkı Gelirleri",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Malzeme Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Lisans Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.3,
+   "desdeCache": true
+  },
+  {
+   "label": "Stad Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Tesis Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Diğer Giderler",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Futbolcu SatıĢ Ve Kiralama Gelirleri",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Personel Ücret ve Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Kira giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Pazarlama, SatıĢ ve Dağıtım Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Yemek Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Pazarlama, SatıĢ ve Dağıtım Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "SatıĢ iskontoları / indirimleri (-)",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Diğer OlağandıĢı Gelir Ve Karlar",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"Diğer Faaliyet Gelirleri\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Amortisman ve Tükenme/Ġtfa Payları",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "depreciation",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Konusu Kalmayan KarĢılıklar",
+   "lado": "revenue",
+   "page": 45,
+   "section": "nota que desglosa \"Diğer Faaliyet Gelirleri\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1120
+  },
+  {
+   "label": "Futbolcu SatıĢ Zararı (-)",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "exceptional_items",
+     0.17
+    ],
+    [
+     "player_impairment",
+     0.03
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Sporcu Menejerlik Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"SatıĢların Maliyeti (-)\" > desglose de \"Satılan Hizmet Maliyeti(-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "player_amortisation",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Reklam ve Ġlan Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Pazarlama, SatıĢ ve Dağıtım Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "ġampiyonlar Ligi Gelirleri",
+   "lado": "revenue",
+   "page": 43,
+   "section": "nota que desglosa \"SatıĢ Gelirleri (net)\" > desglose de \"Yurtiçi satıĢlar\"",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "competition_bonus",
+     0.94
+    ],
+    [
+     "broadcasting",
+     0.06
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Tanıtım, Organizasyon Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "match_organisation_expense",
+     0.21000000000000002
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Kargo, Nakliye, Hamaliye Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "DanıĢmanlık, Denetim, Menejerlik Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Peryodik Kiralama Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "HaberleĢme Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "MüĢavirlik Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Aidat Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "match_organisation_expense",
+     0.24
+    ],
+    [
+     "other_expenses",
+     0.24
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Dava ve Ġcra, Noter Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Önceki Dönem Gider Ve Zararları",
+   "lado": "expense",
+   "page": 46,
+   "section": "nota que desglosa \"Diğer Faaliyet Giderleri (-)\"",
+   "choice": "exceptional_items",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Temsil, Tanıtma, Ağırlama Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Matbaa, Yayın, Kırtasiye Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Yurtiçi Seyahat Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Ya zılı Basın Ġlan ve Reklam Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Vergi, Resim ve Harçlar",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "ġehiriçi Yol Giderleri",
+   "lado": "expense",
+   "page": 44,
+   "section": "nota que desglosa \"Genel Yönetim Giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Diğer OlağandıĢı Gider Ve Zararlar",
+   "lado": "expense",
+   "page": 46,
+   "section": "nota que desglosa \"Diğer Faaliyet Giderleri (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "exceptional_items",
+     0.47
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "KarĢılık Gideri",
+   "lado": "expense",
+   "page": 46,
+   "section": "nota que desglosa \"Diğer Faaliyet Giderleri (-)\"",
+   "choice": "other_amortisation",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_amortisation",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "ÇalıĢılmayan Kısım Gider Ve Zararlar(*)",
+   "lado": "expense",
+   "page": 46,
+   "section": "nota que desglosa \"Diğer Faaliyet Giderleri (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "exceptional_items",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1045
+  }
+ ]
+}

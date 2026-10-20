@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2023.md",
+ "clave": "e721e7d65509f7d877df83d40048dbc3a6313cc0",
+ "generado": "2026-10-20T19:46:14.384Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas. Las filas de nota L697-L706 suman 5.600,156039 y reemplazan a Gastos de administración (L84). Las filas L708-L713 suman 4.943,266197 y reemplazan a Gastos Deportivos (L85). Costos de Venta y Otros gastos están en cero en 2023. Los subtotales no se cargaron. El resultado reconstruido da 1.518,772348, igual al impreso."
+ }
+}

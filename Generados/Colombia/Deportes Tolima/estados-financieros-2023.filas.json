@@ -1,0 +1,1093 @@
+{
+ "pdf": "Clubes/Colombia/Deportes Tolima/estados-financieros-2023.pdf",
+ "md": "Clubes/Colombia/Deportes Tolima/estados-financieros-2023.md",
+ "mdSha1": "65e884bac3ae9d1325f042a94515dca2b8e4abf0",
+ "ubicacionSha1": "d58da25ce57842aaedc4a84a4af23942c1b98cff",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:43:32.523Z",
+ "ubicacion": {
+  "estado": [],
+  "notas_ingresos": [
+   "b40",
+   "b41",
+   "b42",
+   "b43",
+   "b65",
+   "b66",
+   "b67",
+   "b68",
+   "b69"
+  ],
+  "notas_gastos": [
+   "b44",
+   "b45",
+   "b46",
+   "b47",
+   "b48",
+   "b49",
+   "b50",
+   "b51",
+   "b52",
+   "b53",
+   "b54",
+   "b55",
+   "b56",
+   "b57",
+   "b58",
+   "b59",
+   "b60",
+   "b61",
+   "b62",
+   "b63",
+   "b64",
+   "b70",
+   "b71",
+   "b72",
+   "b73"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b40",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en los bloques; importes con '$' sin indicar miles (probablemente miles de pesos)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b40",
+   "linea": 1329,
+   "etiqueta": "Taquillas",
+   "actual": "$ 6.958.004",
+   "anterior": "$ 9.476.527",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1330,
+   "etiqueta": "Venta de Derechos Deportivos 1(A)",
+   "actual": "$ 2.349.258",
+   "anterior": "$ 1.106.812",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1331,
+   "etiqueta": "Prestamo de Derechos Deportivos",
+   "actual": "$ 282.484",
+   "anterior": "$ 351.062",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1332,
+   "etiqueta": "Publicidad y Propaganda 2(A)",
+   "actual": "$ 5.657.089",
+   "anterior": "$ 5.581.776",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1333,
+   "etiqueta": "Dimayor y Federación 3(A)",
+   "actual": "$ 8.523.217",
+   "anterior": "$ 6.686.919",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1334,
+   "etiqueta": "Participación en Eventos 4(A)",
+   "actual": "$ 6.762.108",
+   "anterior": "$ 16.142.527",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1335,
+   "etiqueta": "Venta de Artículos Deportivos",
+   "actual": "$ 2.878.385",
+   "anterior": "$ 2.158.175",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1336,
+   "etiqueta": "Actividades Conexas",
+   "actual": "$ 20.168",
+   "anterior": "$ 20.169",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1337,
+   "etiqueta": "SUBTOTAL",
+   "actual": "$ 33.430.713",
+   "anterior": "$ 41.523.967",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1338,
+   "etiqueta": "Devoluciones en Artículos Deportivos",
+   "actual": "-$ 110.296",
+   "anterior": "-$ 112.326",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1339,
+   "etiqueta": "TOTAL INGRESOS ACTIVIDADES DE OPERACIÓN",
+   "actual": "$ 33.320.417",
+   "anterior": "$ 41.411.641",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b41",
+   "linea": 1351,
+   "etiqueta": "Deportivo Pereira Fc Sa",
+   "actual": "$ 2.349.258",
+   "anterior": "$ -",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Venta de Derechos Deportivos 1(A)"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1349,
+   "etiqueta": "Al Adalah Club",
+   "actual": "$ -",
+   "anterior": "$ 881.149",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Venta de Derechos Deportivos 1(A)"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1350,
+   "etiqueta": "Club Liga deportiva Universitaria",
+   "actual": "$ -",
+   "anterior": "$ 225.663",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Venta de Derechos Deportivos 1(A)"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1352,
+   "etiqueta": "TOTAL VENTA DERECHOS DEPORTIVOS",
+   "actual": "$ 2.349.258",
+   "anterior": "$ 1.106.812",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Venta de Derechos Deportivos 1(A)"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1386,
+   "etiqueta": "TOTAL PUBLICIDAD Y PROPAGANDA",
+   "actual": "$ 5.657.089",
+   "anterior": "$ 5.581.776",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Publicidad y Propaganda 2(A)"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1397,
+   "etiqueta": "Derechos de Televisión",
+   "actual": "$ 6.150.686",
+   "anterior": "$ 4.790.538",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Dimayor y Federación 3(A)"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1405,
+   "etiqueta": "Federación Colombiana de Futbol",
+   "actual": "$ 619.712",
+   "anterior": "$ 550.603",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Dimayor y Federación 3(A)"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1409,
+   "etiqueta": "**TOTAL DIMAYOR Y FEDERACION**",
+   "actual": "$ 8.523.217",
+   "anterior": "$ 6.686.919",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Dimayor y Federación 3(A)"
+  },
+  {
+   "bloque": "b65",
+   "linea": 1803,
+   "etiqueta": "Financieros (1)",
+   "actual": "$ 1,354,603",
+   "anterior": "$ 1,757,840",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1804,
+   "etiqueta": "Recuperaciones (2)",
+   "actual": "$ 1,081",
+   "anterior": "$ 95,450",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1805,
+   "etiqueta": "Indemnizaciones (3)",
+   "actual": "$ 515,539",
+   "anterior": "$ 460,444",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1806,
+   "etiqueta": "Ingresos de Ejercicios Anteriores",
+   "actual": "$ -",
+   "anterior": "$ 5,213",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1807,
+   "etiqueta": "Venta, Propiedades, Planta y Equipo",
+   "actual": "$ 1,000,000",
+   "anterior": "$ -",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1808,
+   "etiqueta": "Otros (4)",
+   "actual": "$ 228,002",
+   "anterior": "$ 2,180,261",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1809,
+   "etiqueta": "**TOTAL INGRESOS NO OPERACIONALES**",
+   "actual": "$ 3,099,225",
+   "anterior": "$ 4,499,208",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1810,
+   "etiqueta": "Financieros (5)",
+   "actual": "$ 820,943",
+   "anterior": "$ 811,447",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1811,
+   "etiqueta": "Perdida en Venta y Retiro de Activos",
+   "actual": "$ 1,297",
+   "anterior": "$ 11,089",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1812,
+   "etiqueta": "Extraordinarios (6)",
+   "actual": "$ 45,212",
+   "anterior": "$ 192,468",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1813,
+   "etiqueta": "Otros (7)",
+   "actual": "$ 52,159",
+   "anterior": "$ 456,870",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b65",
+   "linea": 1814,
+   "etiqueta": "**TOTAL GASTOS NO OPERACIONALES**",
+   "actual": "$ 919,611",
+   "anterior": "$ 1,471,874",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b66",
+   "linea": 1822,
+   "etiqueta": "Intereses",
+   "actual": "$ 1,186,275",
+   "anterior": "$ 629,420",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros (1)"
+  },
+  {
+   "bloque": "b66",
+   "linea": 1823,
+   "etiqueta": "Diferencia en Cambio",
+   "actual": "$ 17,458",
+   "anterior": "$ 1,056,957",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros (1)"
+  },
+  {
+   "bloque": "b66",
+   "linea": 1824,
+   "etiqueta": "Descuentos Comerciales Condicionados",
+   "actual": "$ 93,408",
+   "anterior": "$ 71,456",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros (1)"
+  },
+  {
+   "bloque": "b66",
+   "linea": 1825,
+   "etiqueta": "Otros",
+   "actual": "$ 57,462",
+   "anterior": "$ 7",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros (1)"
+  },
+  {
+   "bloque": "b66",
+   "linea": 1826,
+   "etiqueta": "**TOTAL FINANCIEROS**",
+   "actual": "$ 1,354,603",
+   "anterior": "$ 1,757,840",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Financieros (1)"
+  },
+  {
+   "bloque": "b67",
+   "linea": 1833,
+   "etiqueta": "Reintegro de Costos o Gastos",
+   "actual": "$ 1.081",
+   "anterior": "$ 95.309",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperaciones (2)"
+  },
+  {
+   "bloque": "b67",
+   "linea": 1835,
+   "etiqueta": "**TOTAL RECUPERACIONES**",
+   "actual": "$ 1.081",
+   "anterior": "$ 95.450",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Recuperaciones (2)"
+  },
+  {
+   "bloque": "b68",
+   "linea": 1845,
+   "etiqueta": "Incapacidades ARL",
+   "actual": "$ 66,639",
+   "anterior": "$ -",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Indemnizaciones (3)"
+  },
+  {
+   "bloque": "b68",
+   "linea": 1846,
+   "etiqueta": "Otras",
+   "actual": "$ 448,900",
+   "anterior": "$ 460,444",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Indemnizaciones (3)"
+  },
+  {
+   "bloque": "b68",
+   "linea": 1847,
+   "etiqueta": "TOTAL INDEMNIZACIONES",
+   "actual": "$ 515,539",
+   "anterior": "$ 460,444",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Indemnizaciones (3)"
+  },
+  {
+   "bloque": "b69",
+   "linea": 1864,
+   "etiqueta": "TOTAL OTROS",
+   "actual": "$ 228.002",
+   "anterior": "$ 2.180.261",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Otros (4)"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1417,
+   "etiqueta": "Gastos de Personal",
+   "actual": "$ 1.908.192",
+   "anterior": "$ 1.477.388",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1418,
+   "etiqueta": "Honorarios",
+   "actual": "$ 212.859",
+   "anterior": "$ 494.749",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1419,
+   "etiqueta": "Impuestos (1)",
+   "actual": "$ 370.320",
+   "anterior": "$ 427.842",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1420,
+   "etiqueta": "Arrendamientos (2)",
+   "actual": "$ 179.877",
+   "anterior": "$ 139.162",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1421,
+   "etiqueta": "Contribuciones y Afiliaciones",
+   "actual": "$ 45.066",
+   "anterior": "$ 2.979",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1422,
+   "etiqueta": "Seguros",
+   "actual": "$ 10.589",
+   "anterior": "$ 14.207",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1423,
+   "etiqueta": "Servicios (3)",
+   "actual": "$ 131.576",
+   "anterior": "$ 48.105",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1424,
+   "etiqueta": "Gastos Legales",
+   "actual": "$ 64.931",
+   "anterior": "$ 19.641",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1425,
+   "etiqueta": "Mantenimiento y Reparaciones",
+   "actual": "$ 47.875",
+   "anterior": "$ 17.142",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1426,
+   "etiqueta": "Adecuación e Instalación",
+   "actual": "$ 2.228",
+   "anterior": "$ 4.394",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1427,
+   "etiqueta": "Gastos de Viaje",
+   "actual": "$ 187.097",
+   "anterior": "$ 82.498",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1428,
+   "etiqueta": "Depreciaciones (4)",
+   "actual": "$ 705.358",
+   "anterior": "$ 597.400",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1429,
+   "etiqueta": "Deterioro",
+   "actual": "$ 5.672",
+   "anterior": "$ -",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1430,
+   "etiqueta": "Diversos (5)",
+   "actual": "$ 150.301",
+   "anterior": "$ 1.954.771",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1431,
+   "etiqueta": "**TOTAL GASTOS DE ADMINISTRACION**",
+   "actual": "$ 4.021.941",
+   "anterior": "$ 5.280.278",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b45",
+   "linea": 1448,
+   "etiqueta": "TOTAL IMPUESTOS",
+   "actual": "$ 370.320",
+   "anterior": "$ 427.842",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Impuestos (1)"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1457,
+   "etiqueta": "TOTAL ARRENDAMIENTOS",
+   "actual": "$ 179.877",
+   "anterior": "$ 139.162",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Arrendamientos (2)"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1475,
+   "etiqueta": "TOTAL SERVICIOS",
+   "actual": "$ 131.576",
+   "anterior": "$ 48.105",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Servicios (3)"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1491,
+   "etiqueta": "TOTAL DEPRECIACIONES",
+   "actual": "$ 705,358",
+   "anterior": "$ 597,400",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Depreciaciones (4)"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1509,
+   "etiqueta": "TOTAL DIVERSOS",
+   "actual": "$ 150,301",
+   "anterior": "$ 1,954,771",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Diversos (5)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1523,
+   "etiqueta": "Gastos de Personal",
+   "actual": "$ 14.735.222",
+   "anterior": "$ 12.074.940",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1524,
+   "etiqueta": "Honorarios (1)",
+   "actual": "$ 372.775",
+   "anterior": "$ 19.403",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1525,
+   "etiqueta": "Impuestos (2)",
+   "actual": "$ 709.469",
+   "anterior": "$ 975.668",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1526,
+   "etiqueta": "Arrendamientos (3)",
+   "actual": "$ 1.064.146",
+   "anterior": "$ 1.093.022",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1527,
+   "etiqueta": "Contribuciones y Afiliaciones",
+   "actual": "$ 17.777",
+   "anterior": "$ -",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1528,
+   "etiqueta": "Seguros",
+   "actual": "$ 97.678",
+   "anterior": "$ 39.586",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1529,
+   "etiqueta": "Servicios (4)",
+   "actual": "$ 2.762.402",
+   "anterior": "$ 4.223.553",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1530,
+   "etiqueta": "Gastos Legales",
+   "actual": "$ 16.922",
+   "anterior": "$ 10.600",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1531,
+   "etiqueta": "Mantenimiento y Reparaciones (5)",
+   "actual": "$ 233.797",
+   "anterior": "$ 253.454",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1532,
+   "etiqueta": "Adecuación e Instalación",
+   "actual": "$ 22.410",
+   "anterior": "$ 33.918",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1533,
+   "etiqueta": "Gastos de Viaje (6)",
+   "actual": "$ 1.778.736",
+   "anterior": "$ 1.884.580",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1534,
+   "etiqueta": "Amortizaciones",
+   "actual": "$ 5.931.968",
+   "anterior": "$ 3.403.817",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1535,
+   "etiqueta": "Derechos Deportivos",
+   "actual": "$ -",
+   "anterior": "$ -",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1536,
+   "etiqueta": "Diversos (7)",
+   "actual": "$ 4.010.574",
+   "anterior": "$ 8.810.931",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 1537,
+   "etiqueta": "**TOTAL GASTOS DE VENTAS**",
+   "actual": "$ 31.753.876",
+   "anterior": "$ 32.823.472",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b52",
+   "linea": 1581,
+   "etiqueta": "**TOTAL HONORARIOS**",
+   "actual": "372.775",
+   "anterior": "19.403",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Honorarios (1)"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1589,
+   "etiqueta": "De Espectáculos Públicos",
+   "actual": "$ 705.380",
+   "anterior": "$ 947.606",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Impuestos (2)"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1591,
+   "etiqueta": "**TOTAL IMPUESTOS**",
+   "actual": "$ 709.469",
+   "anterior": "$ 975.668",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Impuestos (2)"
+  },
+  {
+   "bloque": "b54",
+   "linea": 1602,
+   "etiqueta": "**TOTAL ARENDAMIENTOS**",
+   "actual": "$ 1.064.146",
+   "anterior": "$ 1.093.022",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Arrendamientos (3)"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1622,
+   "etiqueta": "Propaganda y Publicidad",
+   "actual": "$ 1.371.300",
+   "anterior": "$ 3.323.152",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios (4)"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1623,
+   "etiqueta": "Otros Servicios de Partidos(a)",
+   "actual": "$ 1.059.993",
+   "anterior": "$ 647.255",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios (4)"
+  },
+  {
+   "bloque": "b55",
+   "linea": 1624,
+   "etiqueta": "TOTAL SERVICIOS",
+   "actual": "$ 2.762.402",
+   "anterior": "$ 4.223.553",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Servicios (4)"
+  },
+  {
+   "bloque": "b56",
+   "linea": 1645,
+   "etiqueta": "TOTAL OTROS",
+   "actual": "$ 1.059.993",
+   "anterior": "$ 647.255",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Otros Servicios de Partidos(a)"
+  },
+  {
+   "bloque": "b57",
+   "linea": 1662,
+   "etiqueta": "TOTAL MANTENIMIENTO Y REPARACIONES",
+   "actual": "$ 233.797",
+   "anterior": "$ 253.454",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Mantenimiento y Reparaciones (5)"
+  },
+  {
+   "bloque": "b58",
+   "linea": 1673,
+   "etiqueta": "TOTAL GASTOS DE VIAJE",
+   "actual": "$ 1.778.736",
+   "anterior": "$ 1.884.580",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de Viaje (6)"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1681,
+   "etiqueta": "Comisiones (a)",
+   "actual": "$ 284.765",
+   "anterior": "$ 102.707",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos (7)"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1693,
+   "etiqueta": "Préstamo de Jugadores (b)",
+   "actual": "$ 417.000",
+   "anterior": "$ 3.607.315",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos (7)"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1694,
+   "etiqueta": "Costo de Jugadores Vendidos y entregados por liquidaciones (c) y (d)",
+   "actual": "$ 665.386",
+   "anterior": "$ 1.582.221",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos (7)"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1695,
+   "etiqueta": "Indemnización por Formación",
+   "actual": "$ 1.022.500",
+   "anterior": "$ 39.200",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos (7)"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1696,
+   "etiqueta": "Otros (e)",
+   "actual": "$ 1.301.782",
+   "anterior": "$ 3.341.746",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos (7)"
+  },
+  {
+   "bloque": "b59",
+   "linea": 1697,
+   "etiqueta": "**TOTAL DIVERSOS**",
+   "actual": "$ 4.010.574",
+   "anterior": "$ 8.810.930",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Diversos (7)"
+  },
+  {
+   "bloque": "b70",
+   "linea": 1872,
+   "etiqueta": "Intereses",
+   "actual": "$ 649,137",
+   "anterior": "$ 332,732",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros (5)"
+  },
+  {
+   "bloque": "b70",
+   "linea": 1874,
+   "etiqueta": "Diferencia en Cambio",
+   "actual": "$ 135,801",
+   "anterior": "$ 448,607",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros (5)"
+  },
+  {
+   "bloque": "b70",
+   "linea": 1877,
+   "etiqueta": "TOTAL FINANCIEROS",
+   "actual": "$ 820,943",
+   "anterior": "$ 811,447",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Financieros (5)"
+  },
+  {
+   "bloque": "b71",
+   "linea": 1890,
+   "etiqueta": "**TOTAL EXTRAORDINARIOS**",
+   "actual": "$ 45.212",
+   "anterior": "$ 192.468",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Extraordinarios (6)"
+  },
+  {
+   "bloque": "b72",
+   "linea": 1900,
+   "etiqueta": "**TOTAL OTROS**",
+   "actual": "$ 52,159",
+   "anterior": "$ 456,870",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Otros (7)"
+  },
+  {
+   "bloque": "b73",
+   "linea": 1909,
+   "etiqueta": "**TOTAL IMPUESTO DE RENTA**",
+   "actual": "$ 11.008",
+   "anterior": "$ 804.454",
+   "tipo": "total",
+   "lado": "impuesto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 1339,
+  "actual": "$ 33.320.417"
+ },
+ "total_gastos": null,
+ "resultado": null,
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro duplicado de gastos de ventas en L1543-L1549 (total $ 31.660.371, Diversos $ 3.917.072)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "**TOTAL GASTOS DE VENTAS**",
+   "texto": "L1543-L1549 repite parte de la nota de gastos de ventas con cifras distintas a L1537 ($ 31.753.876).",
+   "bloques": [
+    "b51",
+    "b50"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga el subtotal del cuadro (c) Costo de jugadores vendidos ($ 533.870, L1748) aunque con (d) ($ 130.682, L1775) suma 664.552 y no 665.386 de L1694?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Costo de Jugadores Vendidos y entregados por liquidaciones (c) y (d)",
+   "texto": "Los detalles (c) y (d) no cuadran con L1694 por 834 (posible doble conteo de L1774).",
+   "bloques": [
+    "b59",
+    "b62",
+    "b63"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se confirma que los importes están en miles de pesos colombianos?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque imprime la escala.",
+   "bloques": [
+    "b40"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No se recibió el estado de resultados; solo notas. Se cargaron renglones de la Nota 16, 17, gastos de ventas y Nota 19 más los totales de cada desglose; los detalles por contraparte/persona se omitieron salvo partidas relevantes. No hay total de gastos ni resultado del ejercicio impreso."
+}

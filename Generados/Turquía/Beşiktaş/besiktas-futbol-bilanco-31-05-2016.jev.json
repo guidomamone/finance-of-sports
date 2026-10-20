@@ -1,0 +1,453 @@
+{
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2016.md",
+ "generatedAt": "2026-10-20T19:17:04.643Z",
+ "rubrosHuella": "34deaba336098e06b4a51d3d93d9202af4437a6d",
+ "rubros": [
+  {
+   "label": "Yayın gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Hasılat\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Futbolcu satış ve kiralama gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Hasılat\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Lisanslı ürün satış gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Hasılat\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorluk ve reklam geliri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Hasılat\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Maç hasılatları ve kombine kart loca geliri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Hasılat\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Şampiyonlar ligi ve UEFA gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Hasılat\"",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "İsim ve lisans hakkı gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Hasılat\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diğer",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Satış iskontoları / indirimleri (-)",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Hasılat\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Esas faaliyetlerden kur farkı gelirleri",
+   "lado": "revenue",
+   "page": 56,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Konusu kalmayan karşılıklar (*)",
+   "lado": "revenue",
+   "page": 56,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diğer gelir ve karlar",
+   "lado": "revenue",
+   "page": 56,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Satılan ticari mallar maliyeti",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Ücret giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisman ve tükenme payları",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "depreciation",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Futbolcu sözleşme fesih giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "player_impairment",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Maç giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Seyahat giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ceza giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Menajerlik giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Stat kira giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Bonservis ve kiralama giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Federasyon giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Malzeme giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Diğer giderler",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Personel ücret ve giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Kira giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Lojistik hizmet gideri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorluk giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Kargo ve nakliye giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Yemek giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Ambalaj Malzemesi Giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Tanıtım, fuar ve sergi giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Haberleşme giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reklam ve ilan giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Çağrı merkezi giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Pazarlama giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Müşavirlik, dava ve icra noter giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Şüpheli alacak karşılık giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Vergi resim ve harçlar",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Danışmanlık giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisman ve tükenme/itfa payları",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "player_amortisation",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Temsil tanıtma ağırlama giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "nota que desglosa \"Genel yönetim giderleri (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Esas faaliyetlerden kur farkı giderleri",
+   "lado": "expense",
+   "page": 56,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Vergi cezası (*)",
+   "lado": "expense",
+   "page": 56,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Vade farkı gideri",
+   "lado": "expense",
+   "page": 56,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Dava karşılık giderleri",
+   "lado": "expense",
+   "page": 56,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Diğer olağan gider ve zararlar",
+   "lado": "expense",
+   "page": 56,
+   "section": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Satıştan iadeler (-)",
+   "lado": "revenue",
+   "page": 53,
+   "section": "nota que desglosa \"Hasılat\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1045
+  }
+ ]
+}

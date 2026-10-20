@@ -1,0 +1,70 @@
+{
+ "pdf": "Clubes/Colombia/Deportes Tolima/estados-financieros-2023.pdf",
+ "md": "Clubes/Colombia/Deportes Tolima/estados-financieros-2023.md",
+ "generado": "2026-10-20T19:46:04.307Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "8f56cce",
+  "c72ec3f",
+  "7c04196",
+  "bb24228",
+  "618bdc6",
+  "bb24228",
+  "db02ebe"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": false,
+   "detalle": "las líneas suman 0 y el total impreso dice 33.320417"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": null,
+   "detalle": "extraer.mjs no encontró el resultado impreso"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "duda de extraer que no afecta la carga: Los detalles (c) y (d) no cuadran con L1694 por 834 (posible doble conteo de L1774)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0,
+  "gastos": 0,
+  "financiero": 0,
+  "impuesto": 0,
+  "resultadoImpreso": null,
+  "resultadoParaCargar": null,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": []
+}

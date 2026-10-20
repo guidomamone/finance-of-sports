@@ -94,4 +94,13 @@ window.RANKINGS["be-proleague"] = {
         mix:[["Comercial / Sponsors",2.78],["Estadio",1.929],["Televisión",2.42],["Otros ingresos",3.953]] },
     ],
   },
+  2015: {
+    leagueSize: 16,
+    wiki: {"t":"2014–15 Belgian Pro League","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"westerlo-be", revenue:5.464, reportType:"official_balance_sheet",
+        sourceId:"westerlo-be-jaarrekening-2015-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.464]] },
+    ],
+  },
 };

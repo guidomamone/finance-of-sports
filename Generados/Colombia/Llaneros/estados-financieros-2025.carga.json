@@ -1,0 +1,741 @@
+{
+ "pdf": "Clubes/Colombia/Llaneros/estados-financieros-2025.pdf",
+ "generado": "2026-10-20T19:47:09.174Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (llaneros-co)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-20: Club Llaneros S.A. presenta estados de una sola entidad; 'consolidado' en el .md es boilerplate de la política de deterioro y cesantías/vacaciones consolidadas (laborales))",
+  "gastos: ningún total impreso igual a la suma de las líneas (-10766.994187); queda la suma, verificada por el resultado del ejercicio"
+ ],
+ "ejercicio": {
+  "clubId": "llaneros-co",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Cesion de Derechos de TV",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 2557.762933,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Contratos Publicidad",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 6388.932082,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Auxilio Transporte Dimayor",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 673.77927,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Auxilio Arbitraje Dimayor",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 96.254181,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Auxilio Hotelero Dimayor",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 192.508363,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mecanismo de Solidaridad",
+    "normalizedCategory": "player_sales",
+    "amountNative": 120,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Taquillas",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 1826.318189,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros Ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.294537,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Gastos de Administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -186.887168,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos por beneficios a empleados",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -6616.106802,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Honorarios",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -304.3695,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impuestos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -243.29674,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Arrendamientos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -15.574139,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Seguros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -38.49822,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Servicios",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -478.950141,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos legales",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -385.4103,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mantenimiento y reparaciones",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.31,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Adecuacion e instalacion",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -816.568181,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Gastos de Viaje",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1408.304135,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros Gstos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -228.43519,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos extraordinarios",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -38.083024,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos diversos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -44.283671,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2025-12-31",
+   "sourceId": "llaneros-co-estados-financieros-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0,
+   "tax": -10.205,
+   "extraRows": [
+    {
+     "label": "Gastos Financieros",
+     "value": null
+    },
+    {
+     "label": "Diferido",
+     "value": -10.205
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 11856.849555,
+   "officialTotalExpenses": 10766.994187,
+   "officialPAT": 1041.567343
+  },
+  "source": {
+   "id": "llaneros-co-estados-financieros-2025",
+   "clubId": "llaneros-co",
+   "title": "Club Llaneros S.A. — estados-financieros-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Colombia/Llaneros/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Colombia/Llaneros/estados-financieros-2025.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "llaneros-co",
+ "year": 2025,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 24,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Cesion de Derechos de TV",
+   "page": 11,
+   "native": 2557.762933,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de Actividades Ordinarias\")",
+   "signoFijo": 2557.762933,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2557.762933
+  },
+  {
+   "label": "Contratos Publicidad",
+   "page": 11,
+   "native": 6388.932082,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de Actividades Ordinarias\")",
+   "signoFijo": 6388.932082,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6388.932082
+  },
+  {
+   "label": "Auxilio Transporte Dimayor",
+   "page": 11,
+   "native": 673.77927,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de Actividades Ordinarias\")",
+   "signoFijo": 673.77927,
+   "cat": "competition_bonus",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 673.77927
+  },
+  {
+   "label": "Auxilio Arbitraje Dimayor",
+   "page": 11,
+   "native": 96.254181,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de Actividades Ordinarias\")",
+   "signoFijo": 96.254181,
+   "cat": "competition_bonus",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 96.254181
+  },
+  {
+   "label": "Auxilio Hotelero Dimayor",
+   "page": 11,
+   "native": 192.508363,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de Actividades Ordinarias\")",
+   "signoFijo": 192.508363,
+   "cat": "competition_bonus",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 192.508363
+  },
+  {
+   "label": "Mecanismo de Solidaridad",
+   "page": 11,
+   "native": 120,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de Actividades Ordinarias\")",
+   "signoFijo": 120,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 120
+  },
+  {
+   "label": "Taquillas",
+   "page": 11,
+   "native": 1826.318189,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de Actividades Ordinarias\")",
+   "signoFijo": 1826.318189,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1826.318189
+  },
+  {
+   "label": "Otros Ingresos",
+   "page": 18,
+   "native": 1.294537,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.294537,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.294537
+  },
+  {
+   "label": "Gastos de Administración",
+   "page": 18,
+   "native": 186.887168,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 186.887168,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -186.887168
+  },
+  {
+   "label": "Gastos por beneficios a empleados",
+   "page": 12,
+   "native": 6616.106802,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 6616.106802,
+   "cat": "wages_squad",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6616.106802
+  },
+  {
+   "label": "Honorarios",
+   "page": 12,
+   "native": 304.3695,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 304.3695,
+   "cat": "admin_general_expense",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -304.3695
+  },
+  {
+   "label": "Impuestos",
+   "page": 12,
+   "native": 243.29674,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 243.29674,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -243.29674
+  },
+  {
+   "label": "Arrendamientos",
+   "page": 12,
+   "native": 15.574139,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 15.574139,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): gasto de infraestructura/administración, admin_general_expense",
+   "destino": "expense",
+   "amountNative": -15.574139
+  },
+  {
+   "label": "Seguros",
+   "page": 12,
+   "native": 38.49822,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 38.49822,
+   "cat": "admin_general_expense",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -38.49822
+  },
+  {
+   "label": "Servicios",
+   "page": 12,
+   "native": 478.950141,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 478.950141,
+   "cat": "admin_general_expense",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -478.950141
+  },
+  {
+   "label": "Gastos legales",
+   "page": 12,
+   "native": 385.4103,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 385.4103,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -385.4103
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "page": 12,
+   "native": 0.31,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 0.31,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): gasto de infraestructura/administración, admin_general_expense",
+   "destino": "expense",
+   "amountNative": -0.31
+  },
+  {
+   "label": "Adecuacion e instalacion",
+   "page": 12,
+   "native": 816.568181,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 816.568181,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): gasto de infraestructura/administración, admin_general_expense",
+   "destino": "expense",
+   "amountNative": -816.568181
+  },
+  {
+   "label": "Gastos de Viaje",
+   "page": 12,
+   "native": 1408.304135,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 1408.304135,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1408.304135
+  },
+  {
+   "label": "Otros Gstos",
+   "page": 12,
+   "native": 228.43519,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de Ventas\")",
+   "signoFijo": 228.43519,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -228.43519
+  },
+  {
+   "label": "Gastos extraordinarios",
+   "page": 13,
+   "native": 38.083024,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Otros Gastos\")",
+   "signoFijo": 38.083024,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -38.083024
+  },
+  {
+   "label": "Gastos diversos",
+   "page": 13,
+   "native": 44.283671,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Otros Gastos\")",
+   "signoFijo": 44.283671,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -44.283671
+  },
+  {
+   "label": "Gastos Financieros",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Diferido",
+   "page": null,
+   "native": -10.205,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Ingresos de Actividades Ordinarias\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos de Ventas\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Otros Gastos\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 11856.849555,
+  "expSum": -10766.994187,
+  "officialTotalRevenue": 11856.849555,
+  "officialTotalExpenses": 10766.994187,
+  "officialPAT": 1041.567343,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1041.567343,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 11856.849555
+  }
+ },
+ "liga": {
+  "valor": "co-primeraA",
+  "fuente": "roster cacheado de \"2025 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Llaneros\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (9 de 9 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-20)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2025-12-31 = 3757.08 (TRM oficial (Superintendencia Financiera de Colombia) al 31/12/2025)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "llaneros-co-estados-financieros-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraA",
+   "fuente": "roster cacheado de \"2025 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Llaneros\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 8,
+  "lineasGasto": 14,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

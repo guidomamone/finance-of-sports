@@ -122,6 +122,959 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2022–23 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 48, precedente |
+| 2 | Lisanslı ürün satış gelirleri | pág. 48, precedente |
+| 3 | Maç hasılatları ve kombine kart loca geliri | pág. 48, precedente |
+| 4 | Futbolcu kiralama ve yetiştirme gelirleri | pág. 48, precedente |
+| 5 | Sponsorluk ve reklam geliri | pág. 48, precedente |
+| 6 | İsim ve lisans hakkı gelirleri | pág. 48, precedente |
+| 7 | UEFA gelirleri | pág. 48, precedente |
+| 8 | Diğer | pág. 48, precedente |
+| 9 | Satıştan iadeler (-) | pág. 48, precedente |
+| 10 | Satış iskontoları / indirimleri (-) | pág. 48, precedente |
+| 11 | Konusu kalmayan karşılıklar | pág. 50, precedente |
+| 12 | Esas faaliyetlerden kur farkı gelirleri | pág. 50, precedente |
+| 13 | Esas faaliyetlerden diğer gelirler (*) | pág. 50, precedente |
+| 14 | Yatırım faaliyetlerinden gelirler | pág. 10, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti | pág. 48, precedente |
+| 2 | Ücret giderleri | pág. 48, precedente |
+| 3 | Amortisman ve tükenme payları | pág. 48, precedente |
+| 4 | Maç giderleri | pág. 48, precedente |
+| 5 | Futbolcu kiralama giderleri | pág. 48, precedente |
+| 6 | Seyahat giderleri | pág. 48, precedente |
+| 7 | Federasyon giderleri | pág. 48, precedente |
+| 8 | Malzeme giderleri | pág. 48, precedente |
+| 9 | Diğer giderler | pág. 48, precedente |
+| 10 | Personel ücret ve giderleri | pág. 48, precedente |
+| 11 | Lojistik hizmet gideri | pág. 48, precedente |
+| 12 | Amortisman ve tükenme payları | pág. 48, precedente |
+| 13 | Yemek giderleri | pág. 48, precedente |
+| 14 | Kargo ve nakliye giderleri | pág. 48, precedente |
+| 15 | Ambalaj malzemesi giderleri | pág. 48, precedente |
+| 16 | Web yayın giderleri | pág. 48, precedente |
+| 17 | Tanıtım, fuar ve sergi giderleri | pág. 48, precedente |
+| 18 | Reklam ve ilan giderleri | pág. 48, precedente |
+| 19 | Haberleşme giderleri | pág. 48, precedente |
+| 20 | Diğer | pág. 48, precedente |
+| 21 | Müşavirlik, dava ve icra noter giderleri | pág. 49, precedente |
+| 22 | Personel ücret ve giderleri | pág. 49, precedente |
+| 23 | Amortisman ve tükenme/itfa payları | pág. 49, precedente |
+| 24 | Vergi resim ve harçlar | pág. 49, precedente |
+| 25 | Şüpheli alacak karşılık giderleri | pág. 49, precedente |
+| 26 | Haberleşme giderleri | pág. 49, precedente |
+| 27 | Danışmanlık giderleri | pág. 49, precedente |
+| 28 | Kargo ve nakliye giderleri | pág. 49, precedente |
+| 29 | Diğer giderler | pág. 49, precedente |
+| 30 | Esas faaliyetlerden kur farkı giderleri | pág. 50, precedente |
+| 31 | Vade farkı gideri | pág. 50, precedente |
+| 32 | Dava karşılık giderleri | pág. 50, precedente |
+| 33 | Esas faaliyetlerden diğer giderler | pág. 50, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2021–22 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 55, precedente |
+| 2 | Lisanslı ürün satış gelirleri | pág. 55, precedente |
+| 3 | Maç hasılatları ve kombine kart loca geliri | pág. 55, precedente |
+| 4 | Futbolcu kiralama ve yetiştime gelirleri | pág. 55, precedente |
+| 5 | Sponsorluk ve reklam geliri | pág. 55, precedente |
+| 6 | İsim ve lisans hakkı gelirleri | pág. 55, precedente |
+| 7 | UEFA gelirleri | pág. 55, precedente |
+| 8 | Diğer | pág. 55, precedente |
+| 9 | Satıştan iadeler(-) | pág. 55, precedente |
+| 10 | Satış iskontoları / indirimleri (-) | pág. 55, precedente |
+| 11 | Konusu kalmayan karşılıklar (*) | pág. 57, precedente |
+| 12 | Esas faaliyetlerden kur farkı gelirleri | pág. 57, precedente |
+| 13 | Esas faaliyetlerden diğer gelirler | pág. 57, precedente |
+| 14 | Yatırım faaliyetlerinden gelirler | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti | pág. 55, precedente |
+| 2 | Ücret giderleri | pág. 55, precedente |
+| 3 | Amortisman ve tükenme payları | pág. 55, precedente |
+| 4 | Maç giderleri | pág. 55, precedente |
+| 5 | Futbolcu kiralama giderleri | pág. 55, precedente |
+| 6 | Seyahat giderleri | pág. 55, precedente |
+| 7 | Federasyon giderleri | pág. 55, precedente |
+| 8 | Malzeme giderleri | pág. 55, precedente |
+| 9 | Yatırım amaçlı gayrimenkul avansları için gider karşılığı | pág. 55, precedente |
+| 10 | Diğer giderler | pág. 55, precedente |
+| 11 | Personel ücret ve giderleri | pág. 55, precedente |
+| 12 | Kira giderleri | pág. 55, precedente |
+| 13 | Lojistik hizmet gideri | pág. 55, precedente |
+| 14 | Amortisman ve tükenme payları | pág. 55, precedente |
+| 15 | Yemek giderleri | pág. 55, precedente |
+| 16 | Kargo ve nakliye giderleri | pág. 55, precedente |
+| 17 | Ambalaj malzemesi giderleri | pág. 55, precedente |
+| 18 | Web yayın giderleri | pág. 55, precedente |
+| 19 | Tanıtım, fuar ve sergi giderleri | pág. 55, precedente |
+| 20 | Reklam ve ilan giderleri | pág. 55, precedente |
+| 21 | Haberleşme giderleri | pág. 55, precedente |
+| 22 | Diğer | pág. 55, precedente |
+| 23 | Müşavirlik, dava ve icra noter giderleri | pág. 56, precedente |
+| 24 | Personel ücret ve giderleri | pág. 56, precedente |
+| 25 | Amortisman ve tükenme/itfa payları | pág. 56, precedente |
+| 26 | Vergi resim ve harçlar | pág. 56, precedente |
+| 27 | Şüpheli alacak karşılık giderleri | pág. 56, precedente |
+| 28 | Haberleşme giderleri | pág. 56, precedente |
+| 29 | Danışmanlık giderleri | pág. 56, precedente |
+| 30 | Kargo ve nakliye giderleri | pág. 56, precedente |
+| 31 | Diğer giderler | pág. 56, precedente |
+| 32 | Esas faaliyetlerden kur farkı giderleri | pág. 57, precedente |
+| 33 | Vade farkı gideri | pág. 57, precedente |
+| 34 | Dava karşılık giderleri | pág. 57, precedente |
+| 35 | Esas faaliyetlerden diğer giderler | pág. 57, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2020–21 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 55, precedente |
+| 2 | Lisanslı ürün satış gelirleri | pág. 55, precedente |
+| 3 | Maç hasılatları ve kombine kart loca geliri | pág. 55, precedente |
+| 4 | Futbolcu kiralama ve yetiştime gelirleri | pág. 55, precedente |
+| 5 | Sponsorluk ve reklam geliri | pág. 55, precedente |
+| 6 | İsim ve lisans hakkı gelirleri | pág. 55, precedente |
+| 7 | UEFA gelirleri | pág. 55, precedente |
+| 8 | Diğer | pág. 55, precedente |
+| 9 | Satıştan iadeler(-) | pág. 55, precedente |
+| 10 | Satış iskontoları / indirimleri (-) | pág. 55, precedente |
+| 11 | Konusu kalmayan karşılıklar (*) | pág. 57, precedente |
+| 12 | Esas faaliyetlerden kur farkı gelirleri | pág. 57, precedente |
+| 13 | Esas faaliyetlerden diğer gelirler | pág. 57, precedente |
+| 14 | Yatırım faaliyetlerinden gelirler | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti | pág. 55, precedente |
+| 2 | Ücret giderleri | pág. 55, precedente |
+| 3 | Amortisman ve tükenme payları | pág. 55, precedente |
+| 4 | Futbolcu sözleşme fesih giderleri | pág. 55, precedente |
+| 5 | Maç giderleri | pág. 55, precedente |
+| 6 | Futbolcu kiralama giderleri | pág. 55, precedente |
+| 7 | Seyahat giderleri | pág. 55, precedente |
+| 8 | Federasyon giderleri | pág. 55, precedente |
+| 9 | Malzeme giderleri | pág. 55, precedente |
+| 10 | Yatırım amaçlı gayrimenkul avansları için gider karşılığı | pág. 55, precedente |
+| 11 | Diğer giderler | pág. 55, precedente |
+| 12 | Personel ücret ve giderleri | pág. 55, precedente |
+| 13 | Kira giderleri | pág. 55, precedente |
+| 14 | Lojistik hizmet gideri | pág. 55, precedente |
+| 15 | Amortisman ve tükenme payları | pág. 55, precedente |
+| 16 | Yemek giderleri | pág. 55, precedente |
+| 17 | Kargo ve nakliye giderleri | pág. 55, precedente |
+| 18 | Ambalaj malzemesi giderleri | pág. 55, precedente |
+| 19 | Web yayın giderleri | pág. 55, precedente |
+| 20 | Tanıtım, fuar ve sergi giderleri | pág. 55, precedente |
+| 21 | Reklam ve ilan giderleri | pág. 55, precedente |
+| 22 | Haberleşme giderleri | pág. 55, precedente |
+| 23 | Diğer | pág. 55, precedente |
+| 24 | Müşavirlik, dava ve icra noter giderleri | pág. 56, precedente |
+| 25 | Personel ücret ve giderleri | pág. 56, precedente |
+| 26 | Amortisman ve tükenme/itfa payları | pág. 56, precedente |
+| 27 | Vergi resim ve harçlar | pág. 56, precedente |
+| 28 | Şüpheli alacak karşılık giderleri | pág. 56, precedente |
+| 29 | Haberleşme giderleri | pág. 56, precedente |
+| 30 | Danışmanlık giderleri | pág. 56, precedente |
+| 31 | Kargo ve nakliye giderleri | pág. 56, precedente |
+| 32 | Diğer giderler | pág. 56, precedente |
+| 33 | Esas faaliyetlerden kur farkı giderleri | pág. 57, precedente |
+| 34 | Vade farkı gideri | pág. 57, precedente |
+| 35 | Dava karşılık giderleri | pág. 57, precedente |
+| 36 | Esas faaliyetlerden diğer giderler | pág. 57, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2019–20 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2019.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 48, precedente |
+| 2 | Lisanslı ürün satış gelirleri | pág. 48, precedente |
+| 3 | Maç hasılatları ve kombine kart loca geliri | pág. 48, precedente |
+| 4 | Futbolcu satış ve kiralama gelirleri | pág. 48, Jev 1 |
+| 5 | Sponsorluk ve reklam geliri | pág. 48, precedente |
+| 6 | İsim ve lisans hakkı gelirleri | pág. 48, precedente |
+| 7 | Şampiyonlar ligi ve UEFA gelirleri | pág. 48, Jev 0.99 |
+| 8 | Diğer | pág. 48, precedente |
+| 9 | Satıştan iadeler(-) | pág. 48, precedente |
+| 10 | Satış iskontoları / indirimleri (-) | pág. 48, precedente |
+| 11 | Konusu kalmayan karşılıklar (*) | pág. 50, precedente |
+| 12 | Esas faaliyetlerden kur farkı gelirleri | pág. 50, precedente |
+| 13 | Esas faaliyetlerden diğer gelirler | pág. 50, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti | pág. 48, precedente |
+| 2 | Ücret giderleri | pág. 48, precedente |
+| 3 | Amortisman ve tükenme payları | pág. 48, precedente |
+| 4 | Futbolcu sözleşme fesih giderleri | pág. 48, precedente |
+| 5 | Maç giderleri | pág. 48, precedente |
+| 6 | Futbolcu kiralama giderleri | pág. 48, precedente |
+| 7 | Seyahat giderleri | pág. 48, precedente |
+| 8 | Federasyon giderleri | pág. 48, precedente |
+| 9 | Malzeme giderleri | pág. 48, precedente |
+| 10 | Diğer giderler | pág. 48, precedente |
+| 11 | Personel ücret ve giderleri | pág. 48, precedente |
+| 12 | Kira giderleri | pág. 48, precedente |
+| 13 | Lojistik hizmet gideri | pág. 48, precedente |
+| 14 | Amortisman ve tükenme payları | pág. 48, precedente |
+| 15 | Yemek giderleri | pág. 48, precedente |
+| 16 | Kargo ve nakliye giderleri | pág. 48, precedente |
+| 17 | Ambalaj malzemesi giderleri | pág. 48, precedente |
+| 18 | Web yayın giderleri | pág. 48, precedente |
+| 19 | Tanıtım, fuar ve sergi giderleri | pág. 48, precedente |
+| 20 | Reklam ve ilan giderleri | pág. 48, precedente |
+| 21 | Haberleşme giderleri | pág. 48, precedente |
+| 22 | Diğer | pág. 48, precedente |
+| 23 | Müşavirlik, dava ve icra noter giderleri | pág. 49, precedente |
+| 24 | Personel ücret ve giderleri | pág. 49, precedente |
+| 25 | Amortisman ve tükenme/itfa payları | pág. 49, precedente |
+| 26 | Vergi resim ve harçlar | pág. 49, precedente |
+| 27 | Şüpheli alacak karşılık giderleri | pág. 49, precedente |
+| 28 | Haberleşme giderleri | pág. 49, precedente |
+| 29 | Danışmanlık giderleri | pág. 49, precedente |
+| 30 | Kargo ve nakliye giderleri | pág. 49, precedente |
+| 31 | Diğer giderler | pág. 49, precedente |
+| 32 | Esas faaliyetlerden kur farkı giderleri | pág. 50, precedente |
+| 33 | Vade farkı gideri | pág. 50, precedente |
+| 34 | Esas faaliyetlerden diğer giderler | pág. 50, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2018–19 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Şampiyonlar ligi ve UEFA gelirleri | pág. 50, Jev 0.99 |
+| 2 | Futbolcu satış ve kiralama gelirleri | pág. 50, Jev 1 |
+| 3 | Yayın gelirleri | pág. 50, precedente |
+| 4 | Lisanslı ürün satış gelirleri | pág. 50, precedente |
+| 5 | Maç hasılatları ve kombine kart loca geliri | pág. 50, precedente |
+| 6 | Sponsorluk ve reklam geliri | pág. 50, precedente |
+| 7 | İsim ve lisans hakkı gelirleri | pág. 50, precedente |
+| 8 | Diğer | pág. 50, precedente |
+| 9 | Satıştan iadeler(-) | pág. 50, precedente |
+| 10 | Satış iskontoları / indirimleri (-) | pág. 50, precedente |
+| 11 | Esas faaliyetlerden kur farkı gelirleri | pág. 53, precedente |
+| 12 | Genel yönetim katılım gelirleri | pág. 53, ? 0.75 |
+| 13 | Konusu kalmayan karşılıklar (*) | pág. 53, precedente |
+| 14 | Esas faaliyetlerden diğer gelirler | pág. 53, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satışların maliyeti (-) | pág. 10, precedente |
+| 2 | Personel ücret ve giderleri | pág. 51, precedente |
+| 3 | Kira giderleri | pág. 51, precedente |
+| 4 | Lojistik hizmet gideri | pág. 51, precedente |
+| 5 | Kargo ve nakliye giderleri | pág. 51, precedente |
+| 6 | Amortisman ve tükenme payları | pág. 51, precedente |
+| 7 | Yemek giderleri | pág. 51, precedente |
+| 8 | Ambalaj malzemesi giderleri | pág. 51, precedente |
+| 9 | Web yayın giderleri | pág. 51, precedente |
+| 10 | Tanıtım, fuar ve sergi giderleri | pág. 51, precedente |
+| 11 | Reklam ve ilan giderleri | pág. 51, precedente |
+| 12 | Haberleşme giderleri | pág. 51, precedente |
+| 13 | Diğer | pág. 51, precedente |
+| 14 | Müşavirlik, dava ve icra noter giderleri | pág. 51, precedente |
+| 15 | Personel ücret ve giderleri | pág. 51, precedente |
+| 16 | Şüpheli alacak karşılık giderleri | pág. 51, precedente |
+| 17 | Vergi resim ve harçlar | pág. 51, precedente |
+| 18 | Amortisman ve tükenme/itfa payları | pág. 51, precedente |
+| 19 | Haberleşme giderleri | pág. 51, precedente |
+| 20 | Danışmanlık giderleri | pág. 51, precedente |
+| 21 | Kargo ve nakliye giderleri | pág. 51, precedente |
+| 22 | Diğer giderler | pág. 51, precedente |
+| 23 | Esas faaliyetlerden kur farkı giderleri | pág. 53, precedente |
+| 24 | Özel maliyetler değer düşüklüğü karşılık gideri (*) | pág. 53, precedente |
+| 25 | Vade farkı gideri | pág. 53, precedente |
+| 26 | Dava karşılık giderleri | pág. 53, precedente |
+| 27 | Esas faaliyetlerden diğer giderler | pág. 53, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2010, 2011, 2014, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2017–18 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2017
+
+### Ingresos
+
+```text
+2017: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2017.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2017.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Şampiyonlar ligi ve UEFA gelirleri | pág. 55, Jev 0.99 |
+| 2 | Yayın gelirleri | pág. 55, precedente |
+| 3 | Lisanslı ürün satış gelirleri | pág. 55, precedente |
+| 4 | İsim ve lisans hakkı gelirleri | pág. 55, precedente |
+| 5 | Maç hasılatları ve kombine kart loca geliri | pág. 55, precedente |
+| 6 | Sponsorluk ve reklam geliri | pág. 55, precedente |
+| 7 | Futbolcu satış ve kiralama gelirleri | pág. 55, Jev 1 |
+| 8 | Diğer | pág. 55, precedente |
+| 9 | Satıştan iadeler(-) | pág. 55, precedente |
+| 10 | Satış iskontoları / indirimleri (-) | pág. 55, precedente |
+| 11 | Konusu kalmayan karşılıklar (*) | pág. 58, precedente |
+| 12 | Esas faaliyetlerden kur farkı gelirleri | pág. 58, precedente |
+| 13 | Esas faaliyetlerden diğer gelirler | pág. 58, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti | pág. 55, precedente |
+| 2 | Ücret giderleri | pág. 55, precedente |
+| 3 | Amortisman ve tükenme payları | pág. 55, precedente |
+| 4 | Futbolcu kiralama giderleri | pág. 55, precedente |
+| 5 | Maç giderleri | pág. 55, precedente |
+| 6 | Futbolcu sözleşme fesih giderleri | pág. 55, precedente |
+| 7 | Seyahat giderleri | pág. 55, precedente |
+| 8 | Menajerlik giderleri | pág. 55, Jev 0.99 |
+| 9 | Federasyon giderleri | pág. 55, precedente |
+| 10 | Malzeme giderleri | pág. 55, precedente |
+| 11 | Ceza giderleri | pág. 55, Jev 0.96 |
+| 12 | Diğer giderler | pág. 55, precedente |
+| 13 | Personel ücret ve giderleri | pág. 56, precedente |
+| 14 | Kira giderleri | pág. 56, precedente |
+| 15 | Lojistik hizmet gideri | pág. 56, precedente |
+| 16 | Kargo ve nakliye giderleri | pág. 56, precedente |
+| 17 | Amortisman ve tükenme payları | pág. 56, precedente |
+| 18 | Yemek giderleri | pág. 56, precedente |
+| 19 | Ambalaj malzemesi giderleri | pág. 56, precedente |
+| 20 | Web yayın giderleri | pág. 56, precedente |
+| 21 | Tanıtım, fuar ve sergi giderleri | pág. 56, precedente |
+| 22 | Reklam ve ilan giderleri | pág. 56, precedente |
+| 23 | Haberleşme giderleri | pág. 56, precedente |
+| 24 | Diğer | pág. 56, precedente |
+| 25 | Müşavirlik, dava ve icra noter giderleri | pág. 56, precedente |
+| 26 | Personel ücret ve giderleri | pág. 56, precedente |
+| 27 | Şüpheli alacak karşılık giderleri | pág. 56, precedente |
+| 28 | Vergi resim ve harçlar | pág. 56, precedente |
+| 29 | Amortisman ve tükenme/itfa payları | pág. 56, precedente |
+| 30 | Haberleşme giderleri | pág. 56, precedente |
+| 31 | Kargo ve nakliye giderleri | pág. 56, precedente |
+| 32 | Temsil tanıtma ağırlama giderleri | pág. 56, precedente |
+| 33 | Diğer giderler | pág. 56, precedente |
+| 34 | Esas faaliyetlerden kur farkı giderleri | pág. 58, precedente |
+| 35 | Dava karşılık giderleri | pág. 58, precedente |
+| 36 | Esas faaliyetlerden diğer giderler | pág. 58, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2016–17 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2016.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 53, precedente |
+| 2 | Futbolcu satış ve kiralama gelirleri | pág. 53, Jev 1 |
+| 3 | Lisanslı ürün satış gelirleri | pág. 53, precedente |
+| 4 | Sponsorluk ve reklam geliri | pág. 53, precedente |
+| 5 | Maç hasılatları ve kombine kart loca geliri | pág. 53, precedente |
+| 6 | Şampiyonlar ligi ve UEFA gelirleri | pág. 53, Jev 0.99 |
+| 7 | İsim ve lisans hakkı gelirleri | pág. 53, precedente |
+| 8 | Diğer | pág. 53, precedente |
+| 9 | Satıştan iadeler (-) | pág. 53, precedente |
+| 10 | Satış iskontoları / indirimleri (-) | pág. 53, precedente |
+| 11 | Esas faaliyetlerden kur farkı gelirleri | pág. 56, precedente |
+| 12 | Konusu kalmayan karşılıklar (*) | pág. 56, precedente |
+| 13 | Diğer gelir ve karlar | pág. 56, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti | pág. 53, precedente |
+| 2 | Ücret giderleri | pág. 53, precedente |
+| 3 | Amortisman ve tükenme payları | pág. 53, precedente |
+| 4 | Futbolcu sözleşme fesih giderleri | pág. 53, precedente |
+| 5 | Maç giderleri | pág. 53, precedente |
+| 6 | Seyahat giderleri | pág. 53, precedente |
+| 7 | Ceza giderleri | pág. 53, Jev 0.96 |
+| 8 | Menajerlik giderleri | pág. 53, Jev 0.99 |
+| 9 | Stat kira giderleri | pág. 53, precedente |
+| 10 | Bonservis ve kiralama giderleri | pág. 53, precedente |
+| 11 | Federasyon giderleri | pág. 53, precedente |
+| 12 | Malzeme giderleri | pág. 53, precedente |
+| 13 | Diğer giderler | pág. 53, precedente |
+| 14 | Personel ücret ve giderleri | pág. 54, precedente |
+| 15 | Kira giderleri | pág. 54, precedente |
+| 16 | Lojistik hizmet gideri | pág. 54, precedente |
+| 17 | Sponsorluk giderleri | pág. 54, precedente |
+| 18 | Kargo ve nakliye giderleri | pág. 54, precedente |
+| 19 | Amortisman ve tükenme payları | pág. 54, precedente |
+| 20 | Yemek giderleri | pág. 54, precedente |
+| 21 | Ambalaj Malzemesi Giderleri | pág. 54, precedente |
+| 22 | Tanıtım, fuar ve sergi giderleri | pág. 54, precedente |
+| 23 | Haberleşme giderleri | pág. 54, precedente |
+| 24 | Reklam ve ilan giderleri | pág. 54, precedente |
+| 25 | Çağrı merkezi giderleri | pág. 54, precedente |
+| 26 | Diğer | pág. 54, precedente |
+| 27 | Personel ücret ve giderleri | pág. 54, precedente |
+| 28 | Müşavirlik, dava ve icra noter giderleri | pág. 54, precedente |
+| 29 | Şüpheli alacak karşılık giderleri | pág. 54, precedente |
+| 30 | Vergi resim ve harçlar | pág. 54, precedente |
+| 31 | Danışmanlık giderleri | pág. 54, precedente |
+| 32 | Amortisman ve tükenme/itfa payları | pág. 54, precedente |
+| 33 | Haberleşme giderleri | pág. 54, precedente |
+| 34 | Kargo ve nakliye giderleri | pág. 54, precedente |
+| 35 | Temsil tanıtma ağırlama giderleri | pág. 54, precedente |
+| 36 | Diğer giderler | pág. 54, precedente |
+| 37 | Esas faaliyetlerden kur farkı giderleri | pág. 56, precedente |
+| 38 | Vergi cezası (*) | pág. 56, precedente |
+| 39 | Vade farkı gideri | pág. 56, precedente |
+| 40 | Dava karşılık giderleri | pág. 56, precedente |
+| 41 | Diğer olağan gider ve zararlar | pág. 56, Jev 0.95 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2015–16 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2015
+
+### Ingresos
+
+```text
+2015: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2015.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2015.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 53, precedente |
+| 2 | Lisanslı ürün satış gelirleri | pág. 53, precedente |
+| 3 | Sponsorluk ve reklam geliri | pág. 53, precedente |
+| 4 | İsim ve lisans hakkı gelirleri | pág. 53, precedente |
+| 5 | Şampiyonlar ligi ve UEFA gelirleri | pág. 53, Jev 0.99 |
+| 6 | Maç hasılatları ve kombine kart loca geliri | pág. 53, precedente |
+| 7 | Futbolcu satış ve kiralama gelirleri | pág. 53, Jev 1 |
+| 8 | Diğer | pág. 53, precedente |
+| 9 | Satıştan iadeler(-) | pág. 53, precedente |
+| 10 | Satış iskontoları / indirimleri (-) | pág. 53, precedente |
+| 11 | Esas faaliyetlerden kur farkı gelirleri | pág. 56, precedente |
+| 12 | Konusu kalmayan karşılıklar | pág. 56, precedente |
+| 13 | Diğer gelir ve karlar | pág. 56, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti | pág. 53, precedente |
+| 2 | Ücret giderleri | pág. 53, precedente |
+| 3 | Amortisman ve tükenme payları | pág. 53, precedente |
+| 4 | Maç giderleri | pág. 53, precedente |
+| 5 | Seyahat giderleri | pág. 53, precedente |
+| 6 | Stat kira giderleri | pág. 53, precedente |
+| 7 | Bonservis ve kiralama giderleri | pág. 53, precedente |
+| 8 | Lisans giderleri | pág. 53, precedente |
+| 9 | Federasyon giderleri | pág. 53, precedente |
+| 10 | Malzeme giderleri | pág. 53, precedente |
+| 11 | Bakım ve onarım giderleri | pág. 53, precedente |
+| 12 | Diğer giderler | pág. 53, precedente |
+| 13 | Personel ücret ve giderleri | pág. 54, precedente |
+| 14 | Reklam ve ilan giderleri | pág. 54, precedente |
+| 15 | Kira giderleri | pág. 54, precedente |
+| 16 | Çağrı merkezi giderleri | pág. 54, precedente |
+| 17 | Kargo ve nakliye giderleri | pág. 54, precedente |
+| 18 | Sponsorluk giderleri | pág. 54, precedente |
+| 19 | Tanıtım, fuar ve sergi giderleri | pág. 54, precedente |
+| 20 | Amortisman ve tükenme payları | pág. 54, precedente |
+| 21 | Diğer | pág. 54, precedente |
+| 22 | Personel ücret ve giderleri | pág. 54, precedente |
+| 23 | Müşavirlik, dava ve icra noter giderleri | pág. 54, precedente |
+| 24 | Şüpheli alacak karşılık giderleri | pág. 54, precedente |
+| 25 | Vergi resim ve harçlar | pág. 54, precedente |
+| 26 | Haberleşme giderleri | pág. 54, precedente |
+| 27 | Danışmanlık giderleri | pág. 54, precedente |
+| 28 | Amortisman ve tükenme/itfa payları | pág. 54, precedente |
+| 29 | Kargo ve nakliye giderleri | pág. 54, precedente |
+| 30 | Temsil tanıtma ağırlama giderleri | pág. 54, precedente |
+| 31 | Diğer giderler | pág. 54, precedente |
+| 32 | Esas faaliyetlerden kur farkı giderleri | pág. 56, precedente |
+| 33 | Tecil - faiz giderleri | pág. 56, precedente |
+| 34 | Vergi cezası (*) | pág. 56, precedente |
+| 35 | Dava karşılık giderleri | pág. 56, precedente |
+| 36 | Diğer olağan gider ve zararlar | pág. 56, Jev 0.95 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2014–15 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2014
+
+### Ingresos
+
+```text
+2014: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2014.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2014.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 55, precedente |
+| 2 | Lisanslı ürün satış gelirleri | pág. 55, precedente |
+| 3 | Sponsorluk ve reklam geliri | pág. 55, precedente |
+| 4 | İsim ve lisans hakkı gelirleri | pág. 55, precedente |
+| 5 | Kombine kart ve loca geliri | pág. 55, precedente |
+| 6 | Maç hasılatları | pág. 55, Jev 1 |
+| 7 | Futbolcu satış ve kiralama gelirleri | pág. 55, Jev 1 |
+| 8 | Diğer | pág. 55, precedente |
+| 9 | Yurtdışı satışlar | pág. 55, precedente |
+| 10 | Satıştan iadeler(-) | pág. 55, precedente |
+| 11 | Satış iskontoları / indirimleri (-) | pág. 55, precedente |
+| 12 | Esas faaliyetlerden kur farkı gelirleri | pág. 58, precedente |
+| 13 | Konusu kalmayan karşılıklar | pág. 58, precedente |
+| 14 | Reeskont gelirleri | pág. 58, Jev 0.92 |
+| 15 | Diğer gelir ve karlar | pág. 58, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti | pág. 55, precedente |
+| 2 | Ücret giderleri | pág. 55, precedente |
+| 3 | Amortisman ve tükenme payları (*) | pág. 55, Jev 0.92 |
+| 4 | Futbolcu değer düşüklüğü karşılığı | pág. 55, Jev 0.92 |
+| 5 | Maç giderleri | pág. 55, precedente |
+| 6 | Seyahat giderleri | pág. 55, precedente |
+| 7 | Stad kira giderleri | pág. 55, precedente |
+| 8 | Bonservis ve kiralama giderleri | pág. 55, precedente |
+| 9 | Lisans giderleri | pág. 55, precedente |
+| 10 | Federasyon giderleri | pág. 55, precedente |
+| 11 | Malzeme giderleri | pág. 55, precedente |
+| 12 | Futbolcu sözleşme fesih giderleri | pág. 55, precedente |
+| 13 | Bakım ve onarım giderleri | pág. 55, precedente |
+| 14 | Diğer giderler | pág. 55, precedente |
+| 15 | Personel ücret ve giderleri | pág. 56, precedente |
+| 16 | Reklam ve ilan giderleri | pág. 56, precedente |
+| 17 | Kira giderleri | pág. 56, precedente |
+| 18 | Çağrı merkezi giderleri | pág. 56, precedente |
+| 19 | Kargo ve nakliye giderleri | pág. 56, precedente |
+| 20 | Sponsorluk giderleri | pág. 56, precedente |
+| 21 | Tanıtım, fuar ve sergi giderleri | pág. 56, precedente |
+| 22 | Amortisman ve tükenme payları | pág. 56, precedente |
+| 23 | Diğer | pág. 56, precedente |
+| 24 | Personel ücret ve giderleri | pág. 56, precedente |
+| 25 | Müşavirlik giderleri | pág. 56, Jev 0.99 |
+| 26 | Dava ve icra noter giderleri | pág. 56, Jev 0.96 |
+| 27 | Şüpheli alacak karşılık giderleri | pág. 56, precedente |
+| 28 | Vergi resim ve harçlar | pág. 56, precedente |
+| 29 | Haberleşme giderleri | pág. 56, precedente |
+| 30 | Danışmanlık giderleri | pág. 56, precedente |
+| 31 | Amortisman ve tükenme/itfa payları | pág. 56, precedente |
+| 32 | Kargo ve nakliye giderleri | pág. 56, precedente |
+| 33 | Temsil tanıtma ağırlama giderleri | pág. 56, precedente |
+| 34 | Diğer giderler | pág. 56, precedente |
+| 35 | Esas faaliyetlerden kur farkı giderleri | pág. 58, precedente |
+| 36 | Tecil - faiz giderleri | pág. 58, precedente |
+| 37 | Reeskont gideri | pág. 58, precedente |
+| 38 | Dava karşılık giderleri | pág. 58, precedente |
+| 39 | Diğer olağan gider ve zararlar | pág. 58, Jev 0.95 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2013–14 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2011
+
+### Ingresos
+
+```text
+2011: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2011.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2011.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 48, Jev 1 |
+| 2 | Kombine kart ve loca geliri | pág. 48, precedente |
+| 3 | Sponsorluk ve reklam geliri | pág. 48, Jev 1 |
+| 4 | Futbolcu satış ve kiralama gelirleri | pág. 48, Jev 1 |
+| 5 | Lisanslı ürün satış gelirleri | pág. 48, Jev 1 |
+| 6 | Đsim ve Lisans hakkı gelirleri | pág. 48, precedente |
+| 7 | UEFA ve süper kupa katılım gelirleri/Şampiyonlar ligi | pág. 48, Jev 1 |
+| 8 | Maç hasılatları | pág. 48, Jev 1 |
+| 9 | Sigorta Satışı | pág. 48, Jev 0.99 |
+| 10 | Seyahat Satışı | pág. 48, Jev 0.97 |
+| 11 | Đletişim Faaliyet Geliri | pág. 48, precedente |
+| 12 | Diğer | pág. 48, precedente |
+| 13 | Satıştan iadeler(-) | pág. 48, precedente |
+| 14 | Satış iskontoları / indirimleri (-) | pág. 48, Jev 0.99 |
+| 15 | Konusu Kalmayan Karşılıklar | pág. 50, precedente |
+| 16 | Önceki dönem gelir ve karlar | pág. 50, Jev 1 |
+| 17 | Diğer olağan gelir ve karlar | pág. 50, Jev 0.99 |
+| 18 | Diğer olağandışı gelir ve karlar | pág. 50, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti(-) | pág. 48, precedente |
+| 2 | Ücret Giderleri | pág. 48, precedente |
+| 3 | Maç Giderleri | pág. 48, precedente |
+| 4 | Seyahat Giderleri | pág. 48, precedente |
+| 5 | Federasyon Giderleri | pág. 48, precedente |
+| 6 | Amortisman ve Tükenme Payları | pág. 48, precedente |
+| 7 | Bonservis ve Kiralama Giderleri | pág. 48, precedente |
+| 8 | Sporcu Menajerlik Giderleri | pág. 48, precedente |
+| 9 | Malzeme Giderleri | pág. 48, precedente |
+| 10 | Lisans Giderleri | pág. 48, precedente |
+| 11 | Stad Giderleri | pág. 48, precedente |
+| 12 | Tesis Giderleri | pág. 48, precedente |
+| 13 | Diğer Giderler | pág. 48, precedente |
+| 14 | Futbolcu Satış Zararı (-) | pág. 48, precedente |
+| 15 | Personel Ücret ve Giderleri | pág. 49, precedente |
+| 16 | Kira giderleri | pág. 49, precedente |
+| 17 | Tan. Org. Fuar ve sergi giderleri | pág. 49, Jev 0.9 |
+| 18 | Amortisman giderleri | pág. 49, precedente |
+| 19 | Reklam ve Đlan Giderleri | pág. 49, precedente |
+| 20 | Diğer | pág. 49, Jev 1 |
+| 21 | Personel Ücret ve Giderleri | pág. 49, precedente |
+| 22 | Periyodik Kiralama Giderleri | pág. 49, Jev 0.96 |
+| 23 | Danışmanlık Denetim Menajerlik Giderleri | pág. 49, Jev 1 |
+| 24 | Kargo Nakliye Hammaliye Giderleri | pág. 49, Jev 0.96 |
+| 25 | Haberleşme Giderleri | pág. 49, precedente |
+| 26 | Müşavirlik Giderleri | pág. 49, Jev 0.99 |
+| 27 | Tanıtım Organizasyon Giderleri | pág. 49, Jev 0.97 |
+| 28 | Aidat Giderleri | pág. 49, precedente |
+| 29 | Şehir içi Yol Giderleri | pág. 49, precedente |
+| 30 | Temsil Tanıtma Ağırlama Giderleri | pág. 49, precedente |
+| 31 | Dava Ve Đcra Noter Giderleri | pág. 49, Jev 0.96 |
+| 32 | Matbaa Yayın Kırtasiye Giderleri | pág. 49, Jev 1 |
+| 33 | Yurtiçi Seyahat Giderleri | pág. 49, Jev 1 |
+| 34 | Reklam ve Đlan Giderleri | pág. 49, precedente |
+| 35 | Vergi Resim ve Harçlar | pág. 49, precedente |
+| 36 | Amortisman ve Tükenme/itfa payları | pág. 49, precedente |
+| 37 | Diğer Giderler | pág. 49, precedente |
+| 38 | Çalışılmayan kısım gider ve zararlar (*) | pág. 50, precedente |
+| 39 | Önceki Dönem Gider ve Zararları | pág. 50, Jev 0.9 |
+| 40 | Diğer olağandışı gider ve zararlar | pág. 50, Jev 0.9 |
+| 41 | Karşılık gideri (**) | pág. 50, precedente |
+| 42 | Haklar Değer Düşüklüğü Karşılığı | pág. 50, Claude 0.8 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2010–11 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2010
+
+### Ingresos
+
+```text
+2010: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2010.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2010.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın Gelirleri | pág. 43, Jev 1 |
+| 2 | Kombine Kart Ve Loca Geliri | pág. 43, precedente |
+| 3 | Sponsorluk Ve Reklam Geliri | pág. 43, Jev 1 |
+| 4 | ġampiyonlar Ligi Gelirleri | pág. 43, Jev 0.94 |
+| 5 | Futbolcu SatıĢ Ve Kiralama Gelirleri | pág. 43, Jev 1 |
+| 6 | Lisanslı Ürün SatıĢ Gelirleri | pág. 43, precedente |
+| 7 | Ġsim Ve Lisans Hakkı Gelirleri | pág. 43, precedente |
+| 8 | Uefa Ve Süper Kupa Katılım Gelirleri | pág. 43, Jev 1 |
+| 9 | Maç Hasılatları | pág. 43, Jev 1 |
+| 10 | Sigorta SatıĢı | pág. 43, precedente |
+| 11 | Seyahat SatıĢı | pág. 43, precedente |
+| 12 | Diğer | pág. 43, Jev 0.99 |
+| 13 | YurtdıĢı satıĢlar | pág. 43, precedente |
+| 14 | SatıĢtan iadeler(-) | pág. 43, Jev 1 |
+| 15 | SatıĢ iskontoları / indirimleri (-) | pág. 43, precedente |
+| 16 | Konusu Kalmayan KarĢılıklar | pág. 45, precedente |
+| 17 | Önceki Dönem Gelir Ve Karlar | pág. 45, Jev 1 |
+| 18 | Diğer OlağandıĢı Gelir Ve Karlar | pág. 45, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan Ticari Mallar Maliyeti(-) | pág. 43, precedente |
+| 2 | Ücret Giderleri | pág. 43, precedente |
+| 3 | Maç Giderleri | pág. 43, precedente |
+| 4 | Seyahat Giderleri | pág. 43, precedente |
+| 5 | Federasyon Giderleri | pág. 43, precedente |
+| 6 | Amortisman Ve Tükenme/Ġtfa Payları | pág. 43, precedente |
+| 7 | Bonservis Ve Kiralama Giderleri | pág. 43, precedente |
+| 8 | Sporcu Menejerlik Giderleri | pág. 44, Claude 0.8 |
+| 9 | Malzeme Giderleri | pág. 44, precedente |
+| 10 | Lisans Giderleri | pág. 44, precedente |
+| 11 | Stad Giderleri | pág. 44, precedente |
+| 12 | Tesis Giderleri | pág. 44, precedente |
+| 13 | Diğer Giderler | pág. 44, precedente |
+| 14 | Futbolcu SatıĢ Zararı (-) | pág. 44, precedente |
+| 15 | Personel Ücret ve Giderleri | pág. 44, precedente |
+| 16 | Kira giderleri | pág. 44, precedente |
+| 17 | Yemek Giderleri | pág. 44, precedente |
+| 18 | Tanıtım, Organizasyon Giderleri | pág. 44, precedente |
+| 19 | Reklam ve Ġlan Giderleri | pág. 44, precedente |
+| 20 | Amortisman ve Tükenme/Ġtfa Payları | pág. 44, precedente |
+| 21 | Diğer Giderler | pág. 44, precedente |
+| 22 | Personel Ücret ve Giderleri | pág. 44, precedente |
+| 23 | Peryodik Kiralama Giderleri | pág. 44, Jev 0.96 |
+| 24 | DanıĢmanlık, Denetim, Menejerlik Giderleri | pág. 44, Jev 1 |
+| 25 | Kargo, Nakliye, Hamaliye Giderleri | pág. 44, Jev 0.99 |
+| 26 | HaberleĢme Giderleri | pág. 44, precedente |
+| 27 | MüĢavirlik Giderleri | pág. 44, Claude 0.85 |
+| 28 | Tanıtım, Organizasyon Giderleri | pág. 44, precedente |
+| 29 | Aidat Giderleri | pág. 44, precedente |
+| 30 | Amortisman ve Tükenme/Ġtfa Payları | pág. 44, precedente |
+| 31 | Temsil, Tanıtma, Ağırlama Giderleri | pág. 44, Jev 0.9 |
+| 32 | Dava ve Ġcra, Noter Giderleri | pág. 44, Jev 0.93 |
+| 33 | Matbaa, Yayın, Kırtasiye Giderleri | pág. 44, Jev 1 |
+| 34 | Yurtiçi Seyahat Giderleri | pág. 44, Jev 1 |
+| 35 | Ya zılı Basın Ġlan ve Reklam Giderleri | pág. 44, Jev 1 |
+| 36 | Vergi, Resim ve Harçlar | pág. 44, precedente |
+| 37 | ġehiriçi Yol Giderleri | pág. 44, precedente |
+| 38 | Diğer Giderler | pág. 44, precedente |
+| 39 | ÇalıĢılmayan Kısım Gider Ve Zararlar(*) | pág. 46, precedente |
+| 40 | Önceki Dönem Gider Ve Zararları | pág. 46, Jev 0.9 |
+| 41 | Diğer OlağandıĢı Gider Ve Zararlar | pág. 46, precedente |
+| 42 | KarĢılık Gideri | pág. 46, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2009–10 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
+## 2009
+
+### Ingresos
+
+```text
+2009: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Yayın gelirleri | pág. 39, Jev 1 |
+| 2 | Kombine kart ve loca geliri | pág. 39, precedente |
+| 3 | Sponsorluk ve reklam geliri | pág. 39, Jev 1 |
+| 4 | Futbolcu satış ve kiralama gelirleri | pág. 39, Jev 1 |
+| 5 | Lisanslı ürün satış gelirleri | pág. 39, Jev 1 |
+| 6 | İsim hakkı gelirleri, lisans gelirleri | pág. 39, Jev 1 |
+| 7 | UEFA ve süper kupa katılım gelirleri | pág. 39, Jev 1 |
+| 8 | Maç hasılatları | pág. 39, Jev 1 |
+| 9 | Seyahat satış gelirleri | pág. 39, precedente |
+| 10 | Sigorta satış gelirleri | pág. 39, Jev 0.91 |
+| 11 | Diğer | pág. 39, Jev 0.99 |
+| 12 | Yurtdışı satışlar | pág. 39, precedente |
+| 13 | Satıştan iadeler(-) | pág. 39, precedente |
+| 14 | Satış iskontoları(-) | pág. 39, Jev 0.99 |
+| 15 | Konusu Kalmayan Karşılıklar | pág. 40, precedente |
+| 16 | Diğer olağan gelir ve karlar | pág. 40, Jev 0.99 |
+| 17 | Önceki dönem gelir ve karlar | pág. 40, Jev 1 |
+| 18 | Diğer Olağandışı Gelir ve Karlar | pág. 40, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Satılan ticari mallar maliyeti(-) | pág. 39, precedente |
+| 2 | Satılan hizmet maliyeti(-) | pág. 39, precedente |
+| 3 | Futbolcu Satış Zararı (-) | pág. 39, precedente |
+| 4 | Personel Ücret ve Giderleri | pág. 39, precedente |
+| 5 | Kira giderleri | pág. 39, precedente |
+| 6 | Amortisman giderleri | pág. 39, precedente |
+| 7 | Tan. Org. Fuar ve sergi giderleri | pág. 39, Jev 0.9 |
+| 8 | Diğer giderler | pág. 39, precedente |
+| 9 | Personel Ücret ve Giderleri | pág. 40, precedente |
+| 10 | Amortisman giderleri | pág. 40, precedente |
+| 11 | Bina + Kira+Yönetim giderleri | pág. 40, Jev 0.99 |
+| 12 | Komisyon ve diğer hizmet giderleri | pág. 40, Jev 0.97 |
+| 13 | Tan. Org. Fuar ve sergi giderleri | pág. 40, Jev 0.9 |
+| 14 | Çalışılmayan kısım gider ve zararlar | pág. 40, precedente |
+| 15 | Önceki Dönem Gider ve Zararları | pág. 40, Jev 0.9 |
+| 16 | Diğer olağandışı gider ve zararlar | pág. 40, Jev 0.9 |
+| 17 | Karşılık gideri | pág. 40, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2010, 2011, 2014, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): tr-superlig, verificado contra roster cacheado de "2008–09 Süper Lig" (tools/club-league-reference/tr.json), coincidencia exacta "Beşiktaş".
+```
+
 ## Fuentes
 
 ### besiktas-tr-futbol-bilanco-31-05-2023
@@ -130,4 +1083,100 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2019
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2020
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2014
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2017
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2009
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2010
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2011
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2011.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2015
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2016
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### besiktas-tr-futbol-bilanco-31-05-2018
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

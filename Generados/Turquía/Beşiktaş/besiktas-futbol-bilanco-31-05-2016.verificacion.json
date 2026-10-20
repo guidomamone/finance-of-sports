@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2016.pdf",
  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2016.md",
- "generado": "2026-10-20T19:07:01.523Z",
- "estado": "cola",
+ "generado": "2026-10-20T19:30:02.636Z",
+ "estado": "ok",
  "clubId": "besiktas-tr",
  "year": 2016,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "7244434",
-  "f53f748"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -50,7 +47,8 @@
   }
  ],
  "notas": [
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se deja afuera de la carga el cuadro 'Niteliklerine göre giderler' (nota 19, L2027-L2048) por ser una reclasificación por naturaleza de gastos ya desglosados en las notas 17 y 18?"
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): corregir sí, en besiktas-futbol-bilanco-31-05-2022.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -525,6 +523,12 @@
    "etiqueta": "Ertelenmiş vergi gideri",
    "M": -0.135895,
    "linea": 234
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 2064,
+   "numero": "6.329.656"
   }
  ]
 }

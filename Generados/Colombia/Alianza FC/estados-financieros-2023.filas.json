@@ -1,0 +1,777 @@
+{
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2023.md",
+ "mdSha1": "f28bd0bad586cdb7ad9ad8824d287992a81a9d92",
+ "ubicacionSha1": "dcbff2d1f65e21f4d462c21d3fab726e30cab820",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:46:04.131Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b15"
+  ],
+  "notas_gastos": [
+   "b16"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L76: Cifras expresadas en pesos colombianos"
+  },
+  {
+   "bloque": "b15",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; importes coinciden con el estado en pesos (L668 = L80)"
+  },
+  {
+   "bloque": "b16",
+   "escala": "unidades",
+   "evidencia": "Sin frase de escala; importes coinciden con el estado en pesos (L696 = L84)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 80,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "14.174.134.648",
+   "anterior": "13.070.575.623",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 81,
+   "etiqueta": "Costos de Venta",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 82,
+   "etiqueta": "Utilidad bruta",
+   "actual": "14.174.134.648",
+   "anterior": "13.070.575.623",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 83,
+   "etiqueta": "Otros Ingresos",
+   "actual": "130.486.351",
+   "anterior": "996.649.504",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 84,
+   "etiqueta": "Gastos de administración",
+   "actual": "5.600.156.039",
+   "anterior": "8.062.173.727",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 85,
+   "etiqueta": "Gastos Deportivos",
+   "actual": "4.943.266.197",
+   "anterior": "4.509.602.501",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 86,
+   "etiqueta": "Otro Gastos de actividades ordinarias",
+   "actual": "-",
+   "anterior": "129.044.189",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 87,
+   "etiqueta": "Utilidad (Perdida) operativa",
+   "actual": "3.761.198.763",
+   "anterior": "1.366.404.710",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 88,
+   "etiqueta": "Ingresos Financiero",
+   "actual": "16.567.010",
+   "anterior": "608.949",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 89,
+   "etiqueta": "Costos Financieros",
+   "actual": "1.038.839.942",
+   "anterior": "144.665.875",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 90,
+   "etiqueta": "Costo Financiero Neto",
+   "actual": "-1.022.272.932",
+   "anterior": "-144.056.926",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 91,
+   "etiqueta": "(Perdida) Utilidad antes de impuestos de renta",
+   "actual": "2.738.925.831",
+   "anterior": "1.222.347.784",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 92,
+   "etiqueta": "Gasto impuesto de renta y cree",
+   "actual": "1.051.401.000",
+   "anterior": "682.043.224",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 93,
+   "etiqueta": "Impuesto diferido",
+   "actual": "168.752.483",
+   "anterior": "54.030.456",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 94,
+   "etiqueta": "(Perdida) Utilidad Neta del periodo",
+   "actual": "1.518.772.348",
+   "anterior": "486.274.104",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 95,
+   "etiqueta": "Resultado del ejercicio",
+   "actual": "1.518.772.348",
+   "anterior": "486.274.104",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 668,
+   "etiqueta": "Actividades Deportivas",
+   "actual": "14.174.134.648",
+   "anterior": "13.070.575.623",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 669,
+   "etiqueta": "Taquilla - venta de boletería",
+   "actual": "540.112.250",
+   "anterior": "860.670.961",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 670,
+   "etiqueta": "venta derechos deportivos",
+   "actual": "4.136.673.785",
+   "anterior": "2.881.756.500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 671,
+   "etiqueta": "préstamo derechos deportivos",
+   "actual": "365.756.449",
+   "anterior": "599.750.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 672,
+   "etiqueta": "Publicidad y patrocinios",
+   "actual": "1.176.949.586",
+   "anterior": "1.216.908.882",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 673,
+   "etiqueta": "DIMAYOR",
+   "actual": "7.966.544.302",
+   "anterior": "5.927.265.397",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 674,
+   "etiqueta": "Federación colombiana de Futbol",
+   "actual": "462.875.000",
+   "anterior": "458.100.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 675,
+   "etiqueta": "Convenios",
+   "actual": "16.000.000",
+   "anterior": "7.200.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 676,
+   "etiqueta": "Donaciones",
+   "actual": "20.000.000",
+   "anterior": "10.130.819",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 677,
+   "etiqueta": "Venta Artículos deportivos",
+   "actual": "2.415.953",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 678,
+   "etiqueta": "Actividades conexas",
+   "actual": "-",
+   "anterior": "1.108.793.064",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 679,
+   "etiqueta": "Devoluciones en ventas",
+   "actual": "513.192.677",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b15",
+   "linea": 680,
+   "etiqueta": "OTROS INGRESOS - NO OPERACIONALES",
+   "actual": "147.053.361",
+   "anterior": "997.258.453",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Otros Ingresos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 681,
+   "etiqueta": "Arrendamiento",
+   "actual": "16.789.917",
+   "anterior": "103.714.326",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros Ingresos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 682,
+   "etiqueta": "Financieros",
+   "actual": "16.567.010",
+   "anterior": "608.949",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos Financiero"
+  },
+  {
+   "bloque": "b15",
+   "linea": 683,
+   "etiqueta": "Recuperaciones de deducciones",
+   "actual": "113.381.243",
+   "anterior": "89.850.791",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros Ingresos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 684,
+   "etiqueta": "Indemnizaciones",
+   "actual": "-",
+   "anterior": "48.565.516",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros Ingresos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 685,
+   "etiqueta": "Diversos",
+   "actual": "315.191",
+   "anterior": "754.518.871",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros Ingresos"
+  },
+  {
+   "bloque": "b15",
+   "linea": 686,
+   "etiqueta": "TOTAL INGRESOS",
+   "actual": "14.321.188.009",
+   "anterior": "14.067.834.076",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 694,
+   "etiqueta": "OPERACIONALES",
+   "actual": "10.543.422.236",
+   "anterior": "12.571.776.228",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 696,
+   "etiqueta": "Gastos de Administración",
+   "actual": "5.600.156.039",
+   "anterior": "7.578.169.554",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 697,
+   "etiqueta": "Gastos de personal",
+   "actual": "1.711.470.936",
+   "anterior": "1.971.328.811",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 698,
+   "etiqueta": "Honorarios",
+   "actual": "155.981.205",
+   "anterior": "406.040.513",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 699,
+   "etiqueta": "Impuestos",
+   "actual": "256.728.447",
+   "anterior": "249.359.698",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 700,
+   "etiqueta": "Arriendos",
+   "actual": "10.194.859",
+   "anterior": "76.180.062",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 701,
+   "etiqueta": "seguros",
+   "actual": "23.572.277",
+   "anterior": "46.483.333",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 702,
+   "etiqueta": "Servicios",
+   "actual": "34.035.571",
+   "anterior": "356.543.417",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 703,
+   "etiqueta": "Gastos Legales",
+   "actual": "27.402.747",
+   "anterior": "4.635.937",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 704,
+   "etiqueta": "Mantenimiento y reparaciones",
+   "actual": "2.272.533",
+   "anterior": "278.233.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 705,
+   "etiqueta": "Diversos",
+   "actual": "3.264.244.042",
+   "anterior": "4.025.246.566",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 706,
+   "etiqueta": "Depreciaciones",
+   "actual": "114.253.422",
+   "anterior": "164.118.217",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b16",
+   "linea": 707,
+   "etiqueta": "Gastos Deportivos",
+   "actual": "4.943.266.197",
+   "anterior": "4.993.606.674",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos Deportivos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 708,
+   "etiqueta": "Gastos de personal",
+   "actual": "3.513.100.819",
+   "anterior": "4.093.069.387",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Deportivos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 709,
+   "etiqueta": "Honorarios",
+   "actual": "173.359.999",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Deportivos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 710,
+   "etiqueta": "Servicios",
+   "actual": "346.387.164",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Deportivos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 711,
+   "etiqueta": "Gastos de Viaje",
+   "actual": "618.978.710",
+   "anterior": "484.004.173",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Deportivos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 712,
+   "etiqueta": "Derechos deportivos",
+   "actual": "-",
+   "anterior": "7.000.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Deportivos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 713,
+   "etiqueta": "Amortizaciones derechos deportivos",
+   "actual": "291.439.505",
+   "anterior": "409.533.114",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Deportivos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 714,
+   "etiqueta": "OTROS GASTOS",
+   "actual": "1.038.839.942",
+   "anterior": "273.710.064",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Costos Financieros"
+  },
+  {
+   "bloque": "b16",
+   "linea": 715,
+   "etiqueta": "Financieros",
+   "actual": "174.855.446",
+   "anterior": "123.665.875",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "OTROS GASTOS"
+  },
+  {
+   "bloque": "b16",
+   "linea": 716,
+   "etiqueta": "Gastos Bancarios",
+   "actual": "52.503.946",
+   "anterior": "48.825.494",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros"
+  },
+  {
+   "bloque": "b16",
+   "linea": 717,
+   "etiqueta": "Comisiones",
+   "actual": "26.059.646",
+   "anterior": "16.364.791",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros"
+  },
+  {
+   "bloque": "b16",
+   "linea": 718,
+   "etiqueta": "Intereses",
+   "actual": "94.823.890",
+   "anterior": "30.009.144",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros"
+  },
+  {
+   "bloque": "b16",
+   "linea": 719,
+   "etiqueta": "Diferencia cambio",
+   "actual": "-",
+   "anterior": "25.153.655",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros"
+  },
+  {
+   "bloque": "b16",
+   "linea": 720,
+   "etiqueta": "Otros",
+   "actual": "1.467.965",
+   "anterior": "3.312.791",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financieros"
+  },
+  {
+   "bloque": "b16",
+   "linea": 721,
+   "etiqueta": "Gastos Extraordinarios",
+   "actual": "611.733.812",
+   "anterior": "129.044.189",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "OTROS GASTOS"
+  },
+  {
+   "bloque": "b16",
+   "linea": 722,
+   "etiqueta": "Costos y gastos de ejercicios anteriores",
+   "actual": "10.000.000",
+   "anterior": "72.000.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Extraordinarios"
+  },
+  {
+   "bloque": "b16",
+   "linea": 723,
+   "etiqueta": "sanciones",
+   "actual": "600.000.000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Extraordinarios"
+  },
+  {
+   "bloque": "b16",
+   "linea": 724,
+   "etiqueta": "Impuestos asumidos",
+   "actual": "1.733.812",
+   "anterior": "57.044.189",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Extraordinarios"
+  },
+  {
+   "bloque": "b16",
+   "linea": 725,
+   "etiqueta": "Gastos Diversos",
+   "actual": "252.250.683",
+   "anterior": "21.000.000",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "OTROS GASTOS"
+  },
+  {
+   "bloque": "b16",
+   "linea": 726,
+   "etiqueta": "Donaciones",
+   "actual": "12.000.000",
+   "anterior": "21.000.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Diversos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 727,
+   "etiqueta": "Demandas comerciales",
+   "actual": "230.100.000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Diversos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 728,
+   "etiqueta": "Otros",
+   "actual": "10.150.683",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Diversos"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 686,
+  "actual": "14.321.188.009"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 95,
+  "actual": "1.518.772.348",
+  "anterior": "486.274.104"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se trata 'OTROS GASTOS' (L714, 1.038.839.942) como desglose de 'Costos Financieros' (L89) aunque incluye gastos extraordinarios y diversos no financieros?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Costos Financieros",
+   "texto": "El importe de L714 coincide con Costos Financieros del estado (L89), pero sólo 174.855.446 (L715) son financieros; el resto (sanciones, demandas) son gastos no financieros clasificados allí.",
+   "bloques": [
+    "b2",
+    "b16"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se asigna 'OTROS INGRESOS - NO OPERACIONALES' (L680, 147.053.361) al renglón 'Otros Ingresos' (L83, 130.486.351) excluyendo 'Financieros' (L682) que va a 'Ingresos Financiero'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Otros Ingresos",
+   "texto": "L680 menos L682 = 130.486.351 = L83; el subtotal de la nota mezcla otros ingresos y financieros.",
+   "bloques": [
+    "b2",
+    "b15"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan los importes 2022 del estado (L84 8.062.173.727, L85 4.509.602.501) aunque difieren de la nota (L696 7.578.169.554, L707 4.993.606.674)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Gastos de administración",
+   "texto": "Las cifras comparativas 2022 de gastos no coinciden entre estado (L84-L85) y nota (L696, L707), posible reclasificación.",
+   "bloques": [
+    "b2",
+    "b16"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en pesos colombianos; notas sin escala explícita pero consistentes. L90 Costo Financiero Neto no coincide exactamente con L88-L89 2022 (608.949-144.665.875=-144.056.926 ok). No hay total de gastos impreso. Impuestos: renta y diferido L92-L93."
+}
