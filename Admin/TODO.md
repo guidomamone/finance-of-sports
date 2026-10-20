@@ -26,7 +26,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **A. Cerrar lo abierto (en marcha)**
 * 292: lo que queda: Colombia (Tolima, La Equidad, Bucaramanga y Águilas Doradas, con tokens de sesión; los `estados-financieros-2025` de Tolima, La Equidad y Bucaramanga sin estado de resultados, a descartados) y La Louvière 2020 (2 páginas en imagen) --> Onboarding 5
-* 328: carga con tokens de sesión: propuesta en `Admin/carga-con-tokens-328.md` (texto de skill y 4 tools que faltan); espera tu ok
+* 328: carga con tokens de sesión: propuesta en `Admin/carga-con-tokens-328.md` : primero las 4 tools (Pipeline 7, con la Auditora), después Docs 1 acorta el texto de la skill para tu ok --> Pipeline 7
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
@@ -34,7 +34,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **C. Cargar lo ya transcripto (no se transcribe más; cada sesión con su presupuesto)**
 * 238: Latinoamérica, 161 documentos transcriptos y validados (~US$ 50, en lotes de 5 a 8 clubes; espera tu ok y presupuesto)
-* 283: Vålerenga y Aalesund, sumar el AS y el FLI con los `.md` que ya hay (criterio decidido; falta implementar; Noruega ya está)
+* 283: Vålerenga y Aalesund, sumar el AS y el FLI con los `.md` que ya hay (criterio decidido; falta implementar; lotes 122 y 123) --> Onboarding 4
 * 165 c: altas de los países nuevos, solo con documentos ya transcriptos
 
 **D. Pantallas y distribución (después del 246)**
