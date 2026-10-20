@@ -1999,6 +1999,3 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
 
 - **Juventude 2021**: tiene planes de sócio-torcedor (Jaconero; búsqueda web), pero "Receitas Patrimoniais" y "Outras Receitas" no desglosan dónde registra las mensalidades. ¿En qué línea del balance están?
 - **Ponte Preta 2025**: tiene el programa "Torcedor Camisa 10+" (19.130 sócios-torcedores según el Torcedômetro). ¿Las mensalidades están en "Social / Outras" (2.692.000 en 2025)?
-
-## SK Rapid Wien 2016/17 (onboarding, lote 125, 2026-10-20: frena ese año)
-- `geschaeftsbericht-2016-17.pdf`, GuV de gestión (L1535-L1546 del .md): GESCHÄFTSERGEBNIS 2.829.055 + TRANSFERERGEBNIS −540.736 da 2.288.319, pero el JAHRESERGEBNIS impreso es 2.226.318 (diferencia de 62.001). Además "Steuern aus Erträgen" +4.717.915 (Ertrag por impuesto diferido) hace que las líneas sumen 43,95 M de ingresos contra el total impreso de 41,65 M. ¿Cuál es el resultado y el desglose correctos del ejercicio?

@@ -171,3 +171,8 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - Vålerenga 2022 y 2023 cargados con la suma del AS y el Elite (283): los 4 documentos por el lote normal (localizar y extraer, ~US$ 0,8; los `.md` ya existían), `estado` b2 en el Elite y perímetro individual de los cuatro, ajuste `suma-con` en cada AS (transferencia 64 M en 2022 y 87,5 M en 2023, "Annen driftskostnad" del AS contra "Overføring fra samarbeidsselskap" del Elite), cuatro líneas `carga` con perímetro `suma` y su nota en `entidades.jsonl`, estadio con fuente y sponsor 2023 `sin-fuente`. Cuidado: la nota pública sale de la evidencia del ajuste; si dice ".md" el audit da P1 (`nota-publica-con-interno`): la evidencia va sin nombres de archivo.
 - Aalesund: no se hizo. Hay 16 pares (AS 2008-2025 y FLI 2008-2024, sin 2018) con `.md`, pero no hay una fila de transferencia entre las dos (AS: Lønnskostnad 7,3 M; FLI 40,8 M en 2023) ni una cláusula de colaboración como la de Vålerenga: primero hay que decidir si corresponde sumar y cómo.
 - Gasto de la sesión: unos US$ 24 de los US$ 30.
+
+### Onboarding 4: Rapid Wien 2017 y Benfica 2014-15 (2026-10-20)
+- Rapid Wien 2017 (2016/17) cargado: el Jahresergebnis impreso es 2.288.319 (L1556, balance L1367, texto L1733); la extracción había leído 2.226.318 (de ahí la "diferencia de 62.001"). Ajuste `resultado-final` 2288319; "Steuern aus Erträgen" (+4,72 M, impuesto diferido) va al impuesto. Sacada de `dudas-por-club.md`.
+- Benfica 2014-15 pos-AG: no cierra con `fila` (la fila de gasto toma el valor absoluto, no admite reversión); frenado anotado para Pipeline.
+- Gasto de la sesión: unos US$ 24 de los US$ 30.
