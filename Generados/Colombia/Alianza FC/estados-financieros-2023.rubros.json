@@ -3,28 +3,118 @@
   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
   "club": "alianza-fc",
   "year": 2023,
-  "generatedAt": "2026-10-20T19:46:04.419Z",
+  "generatedAt": "2026-10-20T20:53:35.902Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
-    {
-      "label": "Ingresos de actividades ordinarias",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado (lectura 5: hoja)",
-      "values": [
-        14174.134648
-      ],
-      "glosa": "Ingresos de actividades ordinarias"
-    },
     {
       "label": "Otros Ingresos",
       "lado": "revenue",
       "page": 2,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         130.486351
       ],
       "glosa": "Otros Ingresos"
+    },
+    {
+      "label": "Taquilla - venta de boletería",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        540.11225
+      ],
+      "glosa": "Taquilla - venta de boletería"
+    },
+    {
+      "label": "Venta derechos deportivos",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        4136.673785
+      ],
+      "glosa": "Venta derechos deportivos"
+    },
+    {
+      "label": "Préstamo derechos deportivos",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        365.756449
+      ],
+      "glosa": "Préstamo derechos deportivos"
+    },
+    {
+      "label": "Publicidad y patrocinios",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        1176.949586
+      ],
+      "glosa": "Publicidad y patrocinios"
+    },
+    {
+      "label": "DIMAYOR (derechos de televisión)",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        7966.544302
+      ],
+      "glosa": "DIMAYOR (derechos de televisión)"
+    },
+    {
+      "label": "Federación Colombiana de Fútbol",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        462.875
+      ],
+      "glosa": "Federación Colombiana de Fútbol"
+    },
+    {
+      "label": "Convenios",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        16
+      ],
+      "glosa": "Convenios"
+    },
+    {
+      "label": "Donaciones",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        20
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Venta artículos deportivos",
+      "lado": "revenue",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        2.415953
+      ],
+      "glosa": "Venta artículos deportivos"
+    },
+    {
+      "label": "Costos de Venta",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Costos de Venta"
     },
     {
       "label": "Gastos de personal",
@@ -127,16 +217,6 @@
       "glosa": "Depreciaciones"
     },
     {
-      "label": "Gastos de personal",
-      "lado": "expense",
-      "page": 15,
-      "section": "nota que desglosa \"Gastos Deportivos\"",
-      "values": [
-        3513.100819
-      ],
-      "glosa": "Gastos de personal"
-    },
-    {
       "label": "Honorarios",
       "lado": "expense",
       "page": 15,
@@ -175,6 +255,36 @@
         291.439505
       ],
       "glosa": "Amortizaciones derechos deportivos"
+    },
+    {
+      "label": "Otro Gastos de actividades ordinarias",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otro Gastos de actividades ordinarias"
+    },
+    {
+      "label": "Devoluciones en ventas",
+      "lado": "expense",
+      "page": 14,
+      "section": "ajuste manual",
+      "values": [
+        513.192677
+      ],
+      "glosa": "Devoluciones en ventas"
+    },
+    {
+      "label": "Gastos de personal (deportivos)",
+      "lado": "expense",
+      "page": 15,
+      "section": "ajuste manual",
+      "values": [
+        3513.100819
+      ],
+      "glosa": "Gastos de personal (deportivos)"
     }
   ]
 }

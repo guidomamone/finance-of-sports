@@ -1,47 +1,19 @@
 {
  "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
- "generado": "2026-10-20T19:47:09.388Z",
+ "generado": "2026-10-20T20:54:27.890Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (alianzafc-co)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Arriendos\" -> admin_general_expense 0.65; \"Diversos\" -> admin_general_expense 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2023: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2023: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
- "avisos": [
-  "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
- ],
+ "avisos": [],
  "ejercicio": {
   "clubId": "alianzafc-co",
   "year": 2023,
   "cierre": "2023-12-31",
   "perimetro": "individual",
   "revenueLines": [
-   {
-    "rawLabel": "Ingresos de actividades ordinarias",
-    "normalizedCategory": "other_income",
-    "amountNative": 14174.134648,
-    "disclosureLevel": "aggregated",
-    "_pag": 2,
-    "_escalon": 1,
-    "_conf": 0.96,
-    "_fuenteCat": "categorias.json"
-   },
    {
     "rawLabel": "Otros Ingresos",
     "normalizedCategory": "other_income",
@@ -51,9 +23,109 @@
     "_escalon": 2,
     "_conf": 0.8,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Taquilla - venta de boletería",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 540.11225,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14"
+   },
+   {
+    "rawLabel": "Venta derechos deportivos",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4136.673785,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14"
+   },
+   {
+    "rawLabel": "Préstamo derechos deportivos",
+    "normalizedCategory": "player_sales",
+    "amountNative": 365.756449,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14"
+   },
+   {
+    "rawLabel": "Publicidad y patrocinios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1176.949586,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14"
+   },
+   {
+    "rawLabel": "DIMAYOR (derechos de televisión)",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 7966.544302,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14"
+   },
+   {
+    "rawLabel": "Federación Colombiana de Fútbol",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 462.875,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14"
+   },
+   {
+    "rawLabel": "Convenios",
+    "normalizedCategory": "other_income",
+    "amountNative": 16,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14"
+   },
+   {
+    "rawLabel": "Donaciones",
+    "normalizedCategory": "other_income",
+    "amountNative": 20,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14"
+   },
+   {
+    "rawLabel": "Venta artículos deportivos",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.415953,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14"
    }
   ],
   "expenseLines": [
+   {
+    "rawLabel": "Costos de Venta",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
    {
     "rawLabel": "Gastos de personal",
     "normalizedCategory": "admin_general_expense",
@@ -90,9 +162,9 @@
     "amountNative": -10.194859,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "seguros",
@@ -140,9 +212,9 @@
     "amountNative": -3264.244042,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Depreciaciones",
@@ -152,16 +224,6 @@
     "_pag": 15,
     "_escalon": 1,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Gastos de personal",
-    "normalizedCategory": "admin_general_expense",
-    "amountNative": -3513.100819,
-    "disclosureLevel": "aggregated",
-    "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.85,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -203,6 +265,36 @@
     "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otro Gastos de actividades ordinarias",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Devoluciones en ventas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -513.192677,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): Devoluciones en ventas (nota 14, L679): deducción del ingreso que la tool no puede cargar como ingreso negativo con ajuste fila; se carga como gasto, ingresos quedan brutos de devoluciones (el total impreso es neto: 14.321.188.009)"
+   },
+   {
+    "rawLabel": "Gastos de personal (deportivos)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -3513.100819,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): nómina de Gastos Deportivos"
    }
   ],
   "fiscalYearMeta": {
@@ -235,8 +327,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 14304.620999,
-   "officialTotalExpenses": 10543.422236,
+   "officialTotalRevenue": 14817.813676,
+   "officialTotalExpenses": 11056.614913,
    "officialPAT": 1518.772348
   },
   "source": {
@@ -260,34 +352,295 @@
  },
  "clubId": "alianzafc-co",
  "year": 2023,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "540112250",
+   "linea": 669,
+   "etiqueta": "Taquilla - venta de boletería",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L669",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "matchday_competition",
+   "linea": null,
+   "etiqueta": "Taquilla - venta de boletería",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L669",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "4136673785",
+   "linea": 670,
+   "etiqueta": "Venta derechos deportivos",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L670",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Venta derechos deportivos",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L670",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "365756449",
+   "linea": 671,
+   "etiqueta": "Préstamo derechos deportivos",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L671",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Préstamo derechos deportivos",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L671",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "1176949586",
+   "linea": 672,
+   "etiqueta": "Publicidad y patrocinios",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L672",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "sponsorship_commercial",
+   "linea": null,
+   "etiqueta": "Publicidad y patrocinios",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L672",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "7966544302",
+   "linea": 673,
+   "etiqueta": "DIMAYOR (derechos de televisión)",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L673",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "broadcasting",
+   "linea": null,
+   "etiqueta": "DIMAYOR (derechos de televisión)",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L673",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "462875000",
+   "linea": 674,
+   "etiqueta": "Federación Colombiana de Fútbol",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L674",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Federación Colombiana de Fútbol",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L674",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "16000000",
+   "linea": 675,
+   "etiqueta": "Convenios",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L675",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "Convenios",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L675",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "20000000",
+   "linea": 676,
+   "etiqueta": "Donaciones",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L676",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "Donaciones",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L676",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "2415953",
+   "linea": 677,
+   "etiqueta": "Venta artículos deportivos",
+   "lado": "ingreso",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14 (ingresos de actividades ordinarias, .md L666-686): la extracción trajo el total 14.174.134.648 sin abrir; se abre en sus renglones (suman el total: 14.687.327.325 - devoluciones 513.192.677)",
+   "evidencia": ".md L677",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "sponsorship_commercial",
+   "linea": null,
+   "etiqueta": "Venta artículos deportivos",
+   "motivo": "categoría del renglón de la nota 14",
+   "evidencia": ".md L677",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "513192677",
+   "linea": 679,
+   "etiqueta": "Devoluciones en ventas",
+   "lado": "gasto",
+   "reemplaza": "Ingresos de actividades ordinarias",
+   "motivo": "Nota 14: devolución en ventas, deduce del ingreso (las filas suman el total 14.174.134.648 solo restándola). Se carga como fila de gasto con categoría de ingreso (other_income), que la ubica como ingreso negativo",
+   "evidencia": ".md L679",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "Devoluciones en ventas",
+   "motivo": "Devoluciones en ventas (nota 14, L679): deducción del ingreso que la tool no puede cargar como ingreso negativo con ajuste fila; se carga como gasto, ingresos quedan brutos de devoluciones (el total impreso es neto: 14.321.188.009)",
+   "evidencia": ".md L679",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "fila",
+   "valor": "3513100819",
+   "linea": 708,
+   "etiqueta": "Gastos de personal (deportivos)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 708,
+   "motivo": "Gastos Deportivos: nómina del plantel y cuerpo técnico (L707-708); el rótulo de administración (L697) queda aparte",
+   "evidencia": ".md L707-708",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Gastos de personal (deportivos)",
+   "motivo": "nómina de Gastos Deportivos",
+   "evidencia": ".md L708",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "sin ingreso por uso del estadio: la taquilla va aparte y el arrendamiento es de la Alcaldía (L241)",
+   "evidencia": ".md L669, L241",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
  "seleccion": {
-  "filas": 21,
+  "filas": 32,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
   {
-   "label": "Ingresos de actividades ordinarias",
-   "page": 2,
-   "native": 14174.134648,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
-   "signoFijo": 14174.134648,
-   "cat": "other_income",
-   "conf": 0.96,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 14174.134648
-  },
-  {
    "label": "Otros Ingresos",
    "page": 2,
    "native": 130.486351,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 130.486351,
    "cat": "other_income",
    "conf": 0.8,
@@ -296,6 +649,165 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 130.486351
+  },
+  {
+   "label": "Taquilla - venta de boletería",
+   "page": 14,
+   "native": 540.11225,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 540.11225,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 540.11225
+  },
+  {
+   "label": "Venta derechos deportivos",
+   "page": 14,
+   "native": 4136.673785,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 4136.673785,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 4136.673785
+  },
+  {
+   "label": "Préstamo derechos deportivos",
+   "page": 14,
+   "native": 365.756449,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 365.756449,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 365.756449
+  },
+  {
+   "label": "Publicidad y patrocinios",
+   "page": 14,
+   "native": 1176.949586,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1176.949586,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 1176.949586
+  },
+  {
+   "label": "DIMAYOR (derechos de televisión)",
+   "page": 14,
+   "native": 7966.544302,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 7966.544302,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 7966.544302
+  },
+  {
+   "label": "Federación Colombiana de Fútbol",
+   "page": 14,
+   "native": 462.875,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 462.875,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 462.875
+  },
+  {
+   "label": "Convenios",
+   "page": 14,
+   "native": 16,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 16,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 16
+  },
+  {
+   "label": "Donaciones",
+   "page": 14,
+   "native": 20,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 20,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 20
+  },
+  {
+   "label": "Venta artículos deportivos",
+   "page": 14,
+   "native": 2.415953,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 2.415953,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): categoría del renglón de la nota 14",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 2.415953
+  },
+  {
+   "label": "Costos de Venta",
+   "page": 2,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
   },
   {
    "label": "Gastos de personal",
@@ -350,11 +862,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
    "signoFijo": 10.194859,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): gasto de administración",
    "destino": "expense",
    "amountNative": -10.194859
   },
@@ -426,11 +938,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
    "signoFijo": 3264.244042,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): gasto de administración",
    "destino": "expense",
    "amountNative": -3264.244042
   },
@@ -448,21 +960,6 @@
    "enLista": true,
    "destino": "expense",
    "amountNative": -114.253422
-  },
-  {
-   "label": "Gastos de personal",
-   "page": 15,
-   "native": 3513.100819,
-   "ladoDoc": "expense",
-   "origen": "verificacion (nota que desglosa \"Gastos Deportivos\")",
-   "signoFijo": 3513.100819,
-   "cat": "admin_general_expense",
-   "conf": 0.85,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "expense",
-   "amountNative": -3513.100819
   },
   {
    "label": "Honorarios",
@@ -525,6 +1022,53 @@
    "amountNative": -291.439505
   },
   {
+   "label": "Otro Gastos de actividades ordinarias",
+   "page": 2,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_expenses",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Devoluciones en ventas",
+   "page": 14,
+   "native": 513.192677,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 513.192677,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): Devoluciones en ventas (nota 14, L679): deducción del ingreso que la tool no puede cargar como ingreso negativo con ajuste fila; se carga como gasto, ingresos quedan brutos de devoluciones (el total impreso es neto: 14.321.188.009)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -513.192677
+  },
+  {
+   "label": "Gastos de personal (deportivos)",
+   "page": 15,
+   "native": 3513.100819,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 3513.100819,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-20): nómina de Gastos Deportivos",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -3513.100819
+  },
+  {
    "label": "Ingresos Financiero",
    "page": null,
    "native": 16.56701,
@@ -569,23 +1113,10 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Salarios del plantel",
-   "lado": "gasto"
-  },
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
-   "verificacion (estado (lectura 5: hoja))": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos de administración\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos Deportivos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
@@ -593,10 +1124,10 @@
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 14304.620999,
-  "expSum": -10543.422236,
-  "officialTotalRevenue": 14304.620999,
-  "officialTotalExpenses": 10543.422236,
+  "revSum": 14817.813676,
+  "expSum": -11056.614913,
+  "officialTotalRevenue": 14817.813676,
+  "officialTotalExpenses": 11056.614913,
   "officialPAT": 1518.772348,
   "verificacion": {
    "pat": "impreso",
@@ -612,12 +1143,12 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 14304.620999
+   "M": 14817.813676
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
    "pag": null,
-   "M": 10543.422236
+   "M": 11056.614913
   }
  },
  "liga": {
@@ -669,9 +1200,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
-  "lineasIngreso": 2,
-  "lineasGasto": 15,
+  "motivos": 1,
+  "lineasIngreso": 10,
+  "lineasGasto": 18,
   "metaFilas": 4,
   "excluidas": 0
  }

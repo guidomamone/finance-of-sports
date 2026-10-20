@@ -68,6 +68,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"oncecaldas", revenue:6.766, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-estados-financieros-2023",
         mix:[["Comercial / Sponsors",1.227],["Estadio",1.38],["Televisión",1.882],["Premios por competencias",0.128],["Venta de Jugadores",1.809],["Otros ingresos",0.34]] },
+      { id:"alianzafc-co", revenue:3.877, reportType:"official_balance_sheet",
+        sourceId:"alianzafc-co-estados-financieros-2023",
+        mix:[["Comercial / Sponsors",0.309],["Estadio",0.141],["Televisión",2.084],["Premios por competencias",0.121],["Venta de Jugadores",1.178],["Otros ingresos",0.044]] },
     ],
   },
   2022: {
