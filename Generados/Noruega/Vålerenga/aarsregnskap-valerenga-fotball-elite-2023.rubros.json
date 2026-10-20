@@ -1,0 +1,250 @@
+{
+  "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2023.md",
+  "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2023.pdf",
+  "club": "valerenga-no",
+  "year": 2023,
+  "generatedAt": "2026-10-20T22:22:32.945Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Cupkasse",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Arrangementsinntekter\"",
+      "values": [
+        0.929674
+      ],
+      "glosa": "Ingresos por torneos de copa"
+    },
+    {
+      "label": "Billettandel hospitalitykunder",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Arrangementsinntekter\"",
+      "values": [
+        0.06
+      ],
+      "glosa": "Porción de entradas de clientes de hospitality"
+    },
+    {
+      "label": "Overføring fra samarbeidsselskap",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        87.5
+      ],
+      "glosa": "Transferencias de empresas colaboradoras"
+    },
+    {
+      "label": "Spillersalg",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Salg og utleie av spillere\"",
+      "values": [
+        94.331926
+      ],
+      "glosa": "Venta de jugadores"
+    },
+    {
+      "label": "Utleie spillere",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Salg og utleie av spillere\"",
+      "values": [
+        0.417557
+      ],
+      "glosa": "Cesión de jugadores"
+    },
+    {
+      "label": "Solidaritetsinntekter",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Salg og utleie av spillere\"",
+      "values": [
+        -0.054211
+      ],
+      "glosa": "Ingresos por mecanismo de solidaridad"
+    },
+    {
+      "label": "Viderefakturering (kostnad)",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Annen driftsinntekt\"",
+      "values": [
+        -0.221531
+      ],
+      "glosa": "Refacturación (gasto)"
+    },
+    {
+      "label": "Andre avtaler",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Annen driftsinntekt\"",
+      "values": [
+        0.876639
+      ],
+      "glosa": "Otros acuerdos"
+    },
+    {
+      "label": "Tilskudd",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Annen driftsinntekt\"",
+      "values": [
+        4.10653
+      ],
+      "glosa": "Subvenciones"
+    },
+    {
+      "label": "Medlemskontigenter",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Annen driftsinntekt\"",
+      "values": [
+        0.3996
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Andre inntekter (kostnad)",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Annen driftsinntekt\"",
+      "values": [
+        -0.348595
+      ],
+      "glosa": "Otros ingresos (gastos)"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        73.571116
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Folketrygdavgift",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        10.732668
+      ],
+      "glosa": "Seguridad social a cargo de la empresa"
+    },
+    {
+      "label": "Pensjonskostnader",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.746634
+      ],
+      "glosa": "Costes de planes de pensiones"
+    },
+    {
+      "label": "Andre lønns- og personalkostnader",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.373668
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.251414
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado material e intangible"
+    },
+    {
+      "label": "Kontorhold, hus og lokaler",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        1.116196
+      ],
+      "glosa": "Gastos de oficina, inmuebles y locales"
+    },
+    {
+      "label": "Bilgodtgjørelse, diett og transport",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.1196
+      ],
+      "glosa": "Asignación de vehículos, dietas y transporte"
+    },
+    {
+      "label": "Trening, kurs og utdanning",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.929208
+      ],
+      "glosa": "Entrenamiento, cursos y formación"
+    },
+    {
+      "label": "Utstyr, varekost",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.597684
+      ],
+      "glosa": "Equipamiento y coste de ventas"
+    },
+    {
+      "label": "Kjøp og leie av spillere",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        56.604891
+      ],
+      "glosa": "Compra y cesión de jugadores"
+    },
+    {
+      "label": "Arrangementskostnader",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        1.807255
+      ],
+      "glosa": "Gastos de organización de eventos y partidos"
+    },
+    {
+      "label": "Bane, anlegg og maskiner",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.220263
+      ],
+      "glosa": "Campos, instalaciones y maquinaria"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        5.252899
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

@@ -1,28 +1,28 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf",
  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.md",
- "mdSha1": "44469ccfb4b2f076bc52eaac3a42c4ab170e4a75",
- "ubicacionSha1": "49469ee6bf9a6c12c5a5d1de45d1dbc6d0e2c8e2",
+ "mdSha1": "ee798b794a08d7f809c57e0a3b08b6947dabc796",
+ "ubicacionSha1": "a3746adc203496839198464ef9469ec9b0b95d95",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T22:02:34.502Z",
+ "generado": "2026-10-20T22:31:59.377Z",
  "ubicacion": {
   "estado": [
-   "b22"
+   "b24"
   ],
   "notas_ingresos": [],
   "notas_gastos": []
  },
  "escalas": [
   {
-   "bloque": "b22",
-   "escala": "unidades",
-   "evidencia": "No hay frase de escala; los importes se imprimen completos (ej. UMSATZERLÖSE 41.648.591), consistentes con euros en unidades."
+   "bloque": "b24",
+   "escala": "no se sabe",
+   "evidencia": "El cuadro no indica escala; los importes parecen en euros (unidades) pero no hay frase que lo diga."
   }
  ],
  "filas": [
   {
-   "bloque": "b22",
-   "linea": 1514,
+   "bloque": "b24",
+   "linea": 1524,
    "etiqueta": "Ticketing",
    "actual": "7.731.656",
    "anterior": "10.439.914",
@@ -31,8 +31,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1515,
+   "bloque": "b24",
+   "linea": 1525,
    "etiqueta": "Sponsoring",
    "actual": "9.748.078",
    "anterior": "8.168.525",
@@ -41,8 +41,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1516,
+   "bloque": "b24",
+   "linea": 1526,
    "etiqueta": "Hospitality (VIP)",
    "actual": "8.227.783",
    "anterior": "1.752.737",
@@ -51,8 +51,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1517,
+   "bloque": "b24",
+   "linea": 1527,
    "etiqueta": "Merchandising",
    "actual": "3.328.045",
    "anterior": "3.169.172",
@@ -61,9 +61,9 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1518,
-   "etiqueta": "Rechtverwertung",
+   "bloque": "b24",
+   "linea": 1528,
+   "etiqueta": "Rechteverwertung",
    "actual": "9.341.420",
    "anterior": "12.292.694",
    "tipo": "renglon",
@@ -71,8 +71,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1519,
+   "bloque": "b24",
+   "linea": 1529,
    "etiqueta": "sonstige Erlöse",
    "actual": "3.271.608",
    "anterior": "3.536.518",
@@ -81,8 +81,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1520,
+   "bloque": "b24",
+   "linea": 1530,
    "etiqueta": "UMSATZERLÖSE",
    "actual": "41.648.591",
    "anterior": "39.359.560",
@@ -91,9 +91,9 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1521,
-   "etiqueta": "Umsetzung Sponserleistungen",
+   "bloque": "b24",
+   "linea": 1531,
+   "etiqueta": "Umsetzung Sponsorleistungen",
    "actual": "-465.749",
    "anterior": "-246.865",
    "tipo": "renglon",
@@ -101,9 +101,9 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1522,
-   "etiqueta": "Aufwand Heimsziele",
+   "bloque": "b24",
+   "linea": 1532,
+   "etiqueta": "Aufwand Heimspiele",
    "actual": "-3.920.548",
    "anterior": "-5.172.893",
    "tipo": "renglon",
@@ -111,8 +111,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1523,
+   "bloque": "b24",
+   "linea": 1533,
    "etiqueta": "Aufwand Hospitality (VIP)",
    "actual": "-3.039.836",
    "anterior": "-997.766",
@@ -121,9 +121,9 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1524,
-   "etiqueta": "Warenersatz Merchandising",
+   "bloque": "b24",
+   "linea": 1534,
+   "etiqueta": "Wareneinsatz Merchandising",
    "actual": "-2.255.637",
    "anterior": "-1.648.258",
    "tipo": "renglon",
@@ -131,8 +131,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1525,
+   "bloque": "b24",
+   "linea": 1535,
    "etiqueta": "eigene Medien und Produktionskosten",
    "actual": "-254.347",
    "anterior": "-218.941",
@@ -141,8 +141,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1526,
+   "bloque": "b24",
+   "linea": 1536,
    "etiqueta": "MATERIALAUFWAND UND BEZOGENE LEISTUNGEN",
    "actual": "-9.936.116",
    "anterior": "-8.284.723",
@@ -151,8 +151,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1527,
+   "bloque": "b24",
+   "linea": 1537,
    "etiqueta": "ROHERTRAG",
    "actual": "31.712.475",
    "anterior": "31.074.837",
@@ -161,8 +161,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1528,
+   "bloque": "b24",
+   "linea": 1538,
    "etiqueta": "Personalaufwand Sport",
    "actual": "-16.748.905",
    "anterior": "-15.045.553",
@@ -171,9 +171,9 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1529,
-   "etiqueta": "Sonstige Personalaufwand",
+   "bloque": "b24",
+   "linea": 1539,
+   "etiqueta": "Sonstiger Personalaufwand",
    "actual": "-4.641.309",
    "anterior": "-3.670.874",
    "tipo": "renglon",
@@ -181,8 +181,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1530,
+   "bloque": "b24",
+   "linea": 1540,
    "etiqueta": "PERSONALAUFWAND",
    "actual": "-21.390.214",
    "anterior": "-18.716.427",
@@ -191,8 +191,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1531,
+   "bloque": "b24",
+   "linea": 1541,
    "etiqueta": "Abgaben, Gebühren und Strafen",
    "actual": "-382.190",
    "anterior": "-432.679",
@@ -201,8 +201,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1532,
+   "bloque": "b24",
+   "linea": 1542,
    "etiqueta": "Spiel- und Trainingsbetrieb",
    "actual": "-1.613.404",
    "anterior": "-1.384.384",
@@ -211,8 +211,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1533,
+   "bloque": "b24",
+   "linea": 1543,
    "etiqueta": "Management-Gebühren und Vermittlungsprovisionen",
    "actual": "-827.573",
    "anterior": "-618.755",
@@ -221,9 +221,9 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1534,
-   "etiqueta": "Stadion-, Mail- und Instandhaltungsaufwand",
+   "bloque": "b24",
+   "linea": 1544,
+   "etiqueta": "Stadion-, Miet- und Instandhaltungsaufwand",
    "actual": "-2.327.155",
    "anterior": "-2.051.224",
    "tipo": "renglon",
@@ -231,8 +231,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1535,
+   "bloque": "b24",
+   "linea": 1545,
    "etiqueta": "Klubservice, Events, PR und Marketing",
    "actual": "-767.029",
    "anterior": "-463.256",
@@ -241,9 +241,9 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1536,
-   "etiqueta": "Verwaltung-, Versicherungs- und sonst. Aufwand",
+   "bloque": "b24",
+   "linea": 1546,
+   "etiqueta": "Verwaltung-, Versicherunungs- und sonst. Aufwand",
    "actual": "-3.205.679",
    "anterior": "-2.688.833",
    "tipo": "renglon",
@@ -251,8 +251,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1537,
+   "bloque": "b24",
+   "linea": 1547,
    "etiqueta": "SACHAUFWAND",
    "actual": "-9.123.030",
    "anterior": "-7.639.131",
@@ -261,8 +261,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1538,
+   "bloque": "b24",
+   "linea": 1548,
    "etiqueta": "Abschreibungen für Abnutzung",
    "actual": "-1.688.130",
    "anterior": "-226.573",
@@ -271,8 +271,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1539,
+   "bloque": "b24",
+   "linea": 1549,
    "etiqueta": "Finanzergebnis",
    "actual": "-1.399.962",
    "anterior": "-865.778",
@@ -281,9 +281,9 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1540,
-   "etiqueta": "s.o. Ergebnis",
+   "bloque": "b24",
+   "linea": 1550,
+   "etiqueta": "a.o. Ergebnis",
    "actual": "-",
    "anterior": "91.264",
    "tipo": "renglon",
@@ -291,8 +291,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1541,
+   "bloque": "b24",
+   "linea": 1551,
    "etiqueta": "Steuern aus Erträgen",
    "actual": "4.717.915",
    "anterior": "-3.338",
@@ -301,8 +301,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1542,
+   "bloque": "b24",
+   "linea": 1552,
    "etiqueta": "GESCHÄFTSERGEBNIS",
    "actual": "2.829.055",
    "anterior": "3.714.854",
@@ -311,8 +311,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1543,
+   "bloque": "b24",
+   "linea": 1553,
    "etiqueta": "Transferlöse",
    "actual": "2.302.164",
    "anterior": "9.332.639",
@@ -321,8 +321,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1544,
+   "bloque": "b24",
+   "linea": 1554,
    "etiqueta": "Transferaufwendungen",
    "actual": "-2.842.900",
    "anterior": "-1.458.078",
@@ -331,20 +331,20 @@
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1545,
+   "bloque": "b24",
+   "linea": 1555,
    "etiqueta": "TRANSFERERGEBNIS",
    "actual": "-540.736",
    "anterior": "7.874.561",
-   "tipo": "resultado",
+   "tipo": "subtotal",
    "lado": "resultado",
    "detalla_a": null
   },
   {
-   "bloque": "b22",
-   "linea": 1546,
+   "bloque": "b24",
+   "linea": 1556,
    "etiqueta": "JAHRESERGEBNIS",
-   "actual": "2.226.318",
+   "actual": "2.288.319",
    "anterior": "11.589.415",
    "tipo": "resultado",
    "lado": "resultado",
@@ -352,49 +352,38 @@
   }
  ],
  "total_ingresos": {
-  "linea": 1520,
+  "linea": 1530,
   "actual": "41.648.591"
  },
  "total_gastos": null,
  "resultado": {
-  "linea": 1546,
-  "actual": "2.226.318",
+  "linea": 1556,
+  "actual": "2.288.319",
   "anterior": "11.589.415"
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga JAHRESERGEBNIS 2.226.318 (L1546) tal como está impreso aunque GESCHÄFTSERGEBNIS 2.829.055 más TRANSFERERGEBNIS -540.736 dan 2.288.319?",
+   "pregunta": "¿Se cargan los importes del cuadro b24 como euros (unidades)?",
    "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "JAHRESERGEBNIS",
-   "texto": "Diferencia de unos 62.001 entre el resultado del ejercicio impreso en L1546 y la suma de L1542 y L1545; en 2015/16 sí cierra.",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El cuadro (L1520-L1556) no imprime la escala; por magnitud parecen euros.",
    "bloques": [
-    "b22"
+    "b24"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se carga 'Steuern aus Erträgen' 4.717.915 (L1541) con signo positivo como impuesto, tal como figura?",
+   "pregunta": "¿Se carga 'Steuern aus Erträgen' 2016/17 como 4.717.915 positivo (ingreso por impuestos) tal como está impreso en L1551?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Steuern aus Erträgen",
-   "texto": "En L1541 el impuesto aparece positivo (ingreso) por 4.717.915, importe inusual frente a -3.338 del año anterior, aunque cuadra con GESCHÄFTSERGEBNIS.",
+   "texto": "L1551 muestra un impuesto positivo grande y un Δ de -141.440% inconsistente; podría ser un error de signo o un ítem mal clasificado.",
    "bloques": [
-    "b22"
+    "b24"
    ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se toman los importes de b22 en unidades (euros)?",
-   "propuesta": "sí",
-   "tema": "escala",
-   "renglon": "",
-   "texto": "El cuadro L1512 no indica escala; las cifras completas sugieren euros en unidades.",
-   "bloques": [
-    "b22"
-   ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Cuadro por competencias (nacional/internacional); se tomó la columna GESAMT y 2015/16. Los ingresos por transferencias (L1543) no están incluidos en UMSATZERLÖSE. No hay total de gastos impreso."
+ "observaciones": "Cuadro de gestión por competiciones (nacional/internacional); se tomó solo la columna GESAMT y 2015/16. No hay total de gastos impreso. 'a.o. Ergebnis' actual es '-' (cero)."
 }

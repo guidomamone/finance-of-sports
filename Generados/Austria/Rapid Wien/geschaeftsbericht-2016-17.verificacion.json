@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf",
  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.md",
- "generado": "2026-10-20T22:04:23.071Z",
- "scriptHuella": "bb1724ebf1b3",
- "estado": "cola",
+ "generado": "2026-10-20T22:32:24.935Z",
+ "scriptHuella": "5a6683fb1731",
+ "estado": "ok",
  "clubId": "rapidwien-at",
  "year": 2017,
  "escala": {
@@ -32,30 +32,50 @@
    "evidencia": "geschaeftsbericht-2016-17.md, 'Konsolidierte Bilanz'",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf",
+   "campo": "resultado-final",
+   "valor": "2288319",
+   "linea": 1556,
+   "motivo": "El Jahresergebnis impreso es 2.288.319 (balance L1367, texto L1733 y GuV L1556); la extracción leyó 2.226.318. Con él las líneas cierran: ingresos 43,951 - gastos 44,980 - financiero 1,400 + Steuern aus Erträgen 4,718 (impuesto diferido) = 2,288",
+   "evidencia": ".md L1556, L1367, L1733",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
   }
  ],
- "cola": [
-  "e52e976",
-  "1ebe0ef",
-  "4ca5e9f",
-  "740a3eb"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 43.950754 y el total impreso dice 41.648591"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "el documento no lo imprime"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 43.950754 - gastos 44.980391 ± financiero -1.399962 ± impuesto 4.717915 no da el impreso 2.226318",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000030000000013075123
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "2.288319 por ajuste manual (2288319: El Jahresergebnis impreso es 2.288.319 (balance L1367, texto L1733 y GuV L1556); la extracción leyó 2.226.318. Con él las líneas cierran: ingresos 43,951 - gastos 44,980 - financiero 1,400 + Steuern aus Erträgen 4,718 (impuesto diferido) = 2,288); impuesto deducido -4.717918 (antes de impuestos -2.429599; el documento imprimía 4.717915)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2016 de este documento suma ingresos 48.692199; el sitio tiene 48.783464"
   },
   {
    "nombre": "documento del año 2018",
@@ -66,17 +86,13 @@
    "nombre": "documento del año 2016",
    "ok": true,
    "detalle": "ingresos de 2016: 48.783464 en geschaeftsbericht-2015-16.pdf y 48.692199 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2024-25.pdf",
-  "duda de extraer que no afecta la carga: En L1541 el impuesto aparece positivo (ingreso) por 4.717.915, importe inusual frente a -3.338 del año anterior, aunque cuadra con GESCHÄFTSERGEBNIS.",
-  "duda de extraer que no afecta la carga: El cuadro L1512 no indica escala; las cifras completas sugieren euros en unidades."
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "ajuste manual: resultado final 2288319 (2026-10-20, El Jahresergebnis impreso es 2.288.319 (balance L1367, texto L1733 y GuV L1556); la extracción leyó 2.226.318. Con él las líneas cierran: ingresos 43,951 - gastos 44,980 - financiero 1,400 + Steuern aus Erträgen 4,718 (impuesto diferido) = 2,288)",
+  "duda de localizar que no afecta la carga: El balance anterior (b20) se titula 'Konsolidierte Bilanz des SK Rapid' y b24 sigue en la misma sección 2.2.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en geschaeftsbericht-2023-24.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -85,11 +101,18 @@
   "ingresos": 43.950754,
   "gastos": 44.980391,
   "financiero": -1.399962,
-  "impuesto": 4.717915,
-  "resultadoImpreso": 2.226318,
-  "resultadoParaCargar": 2.226318,
-  "resultadoFinal": null,
-  "lecturaSignos": null
+  "impuesto": -4.717918,
+  "resultadoImpreso": 2.288319,
+  "resultadoParaCargar": 2.288319,
+  "resultadoFinal": {
+   "valor": 2.288319,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/registros/ajustes-manuales.jsonl",
+   "impuestoImpreso": 4.717915,
+   "impuestoDeducido": -4.717918
+  },
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -97,194 +120,194 @@
    "lado": "ingreso",
    "M": 7.731656,
    "pagina": 23,
-   "linea": 1514,
-   "origen": "estado"
+   "linea": 1524,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Sponsoring",
    "lado": "ingreso",
    "M": 9.748078,
    "pagina": 23,
-   "linea": 1515,
-   "origen": "estado"
+   "linea": 1525,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Hospitality (VIP)",
    "lado": "ingreso",
    "M": 8.227783,
    "pagina": 23,
-   "linea": 1516,
-   "origen": "estado"
+   "linea": 1526,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Merchandising",
    "lado": "ingreso",
    "M": 3.328045,
    "pagina": 23,
-   "linea": 1517,
-   "origen": "estado"
+   "linea": 1527,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Rechtverwertung",
+   "etiqueta": "Rechteverwertung",
    "lado": "ingreso",
    "M": 9.34142,
    "pagina": 23,
-   "linea": 1518,
-   "origen": "estado"
+   "linea": 1528,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "sonstige Erlöse",
    "lado": "ingreso",
    "M": 3.271608,
    "pagina": 23,
-   "linea": 1519,
-   "origen": "estado"
+   "linea": 1529,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Transferlöse",
    "lado": "ingreso",
    "M": 2.302164,
    "pagina": 23,
-   "linea": 1543,
-   "origen": "estado"
+   "linea": 1553,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Umsetzung Sponserleistungen",
+   "etiqueta": "Umsetzung Sponsorleistungen",
    "lado": "gasto",
    "M": 0.465749,
    "pagina": 23,
-   "linea": 1521,
-   "origen": "estado"
+   "linea": 1531,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Aufwand Heimsziele",
+   "etiqueta": "Aufwand Heimspiele",
    "lado": "gasto",
    "M": 3.920548,
    "pagina": 23,
-   "linea": 1522,
-   "origen": "estado"
+   "linea": 1532,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Aufwand Hospitality (VIP)",
    "lado": "gasto",
    "M": 3.039836,
    "pagina": 23,
-   "linea": 1523,
-   "origen": "estado"
+   "linea": 1533,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Warenersatz Merchandising",
+   "etiqueta": "Wareneinsatz Merchandising",
    "lado": "gasto",
    "M": 2.255637,
    "pagina": 23,
-   "linea": 1524,
-   "origen": "estado"
+   "linea": 1534,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "eigene Medien und Produktionskosten",
    "lado": "gasto",
    "M": 0.254347,
    "pagina": 23,
-   "linea": 1525,
-   "origen": "estado"
+   "linea": 1535,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Personalaufwand Sport",
    "lado": "gasto",
    "M": 16.748905,
    "pagina": 23,
-   "linea": 1528,
-   "origen": "estado"
+   "linea": 1538,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Sonstige Personalaufwand",
+   "etiqueta": "Sonstiger Personalaufwand",
    "lado": "gasto",
    "M": 4.641309,
    "pagina": 23,
-   "linea": 1529,
-   "origen": "estado"
+   "linea": 1539,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Abgaben, Gebühren und Strafen",
    "lado": "gasto",
    "M": 0.38219,
    "pagina": 23,
-   "linea": 1531,
-   "origen": "estado"
+   "linea": 1541,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Spiel- und Trainingsbetrieb",
    "lado": "gasto",
    "M": 1.613404,
    "pagina": 23,
-   "linea": 1532,
-   "origen": "estado"
+   "linea": 1542,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Management-Gebühren und Vermittlungsprovisionen",
    "lado": "gasto",
    "M": 0.827573,
    "pagina": 23,
-   "linea": 1533,
-   "origen": "estado"
+   "linea": 1543,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Stadion-, Mail- und Instandhaltungsaufwand",
+   "etiqueta": "Stadion-, Miet- und Instandhaltungsaufwand",
    "lado": "gasto",
    "M": 2.327155,
    "pagina": 23,
-   "linea": 1534,
-   "origen": "estado"
+   "linea": 1544,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Klubservice, Events, PR und Marketing",
    "lado": "gasto",
    "M": 0.767029,
    "pagina": 23,
-   "linea": 1535,
-   "origen": "estado"
+   "linea": 1545,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
-   "etiqueta": "Verwaltung-, Versicherungs- und sonst. Aufwand",
+   "etiqueta": "Verwaltung-, Versicherunungs- und sonst. Aufwand",
    "lado": "gasto",
    "M": 3.205679,
    "pagina": 23,
-   "linea": 1536,
-   "origen": "estado"
+   "linea": 1546,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Abschreibungen für Abnutzung",
    "lado": "gasto",
    "M": 1.68813,
    "pagina": 23,
-   "linea": 1538,
-   "origen": "estado"
+   "linea": 1548,
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Transferaufwendungen",
    "lado": "gasto",
    "M": 2.8429,
    "pagina": 23,
-   "linea": 1544,
-   "origen": "estado"
+   "linea": 1554,
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Finanzergebnis",
    "M": -1.399962,
-   "linea": 1539
+   "linea": 1549
   }
  ],
  "impuesto": [
   {
-   "etiqueta": "Steuern aus Erträgen",
-   "M": 4.717915,
-   "linea": 1541
+   "etiqueta": "Steuern aus Erträgen (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": 4.717918,
+   "linea": 1551
   }
  ]
 }

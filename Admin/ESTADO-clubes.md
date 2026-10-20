@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 319 clubes, 1290 ejercicios, 23 países.
+TOTAL: 319 clubes, 1295 ejercicios, 23 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -51,7 +51,7 @@ ARGENTINA (19)
   Vélez Sarsfield                11 ejercicios (2014/2015 a 2024/2025), balance, ARS
 
 AT (1)
-  Rapid Wien  12 ejercicios (2012/2013, 2013/2014, 2014/2015, 2015/2016, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  Rapid Wien  13 ejercicios (2012/2013 a 2024/2025), balance, EUR, sin deuda/caja
 
 BE (23)
   Anderlecht            1 ejercicio (2024/2025), balance, EUR
@@ -332,7 +332,7 @@ NO (6)
   Fredrikstad   8 ejercicios (2012, 2013, 2014, 2015, 2016, 2017, 2018, 2024), balance, NOK, sin deuda/caja
   Molde         18 ejercicios (2008 a 2025), balance, NOK, sin deuda/caja
   Sarpsborg 08  14 ejercicios (2008, 2012, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025), balance, NOK, sin deuda/caja
-  Vålerenga     1 ejercicio (2025), balance, NOK, sin deuda/caja
+  Vålerenga     3 ejercicios (2022, 2023, 2025), balance, NOK, sin deuda/caja
   Viking        9 ejercicios (2017 a 2025), balance, NOK, sin deuda/caja
 
 PERÚ (1)
@@ -366,7 +366,7 @@ PT (33)
   Porto               9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
   Rio Ave             9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
   Santa Clara         6 ejercicios (2019/2020 a 2024/2025), balance, EUR
-  Sporting CP         24 ejercicios (1999/2000, 2000/2001, 2001/2002, 2002/2003, 2003/2004, 2004/2005, 2005/2006, 2006/2007, 2007/2008, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, PTE/EUR
+  Sporting CP         26 ejercicios (1999/2000 a 2024/2025), balance, PTE/EUR
   Tondela             1 ejercicio (2020/2021), balance, EUR
   Torreense           3 ejercicios (2021/2022 a 2023/2024), balance, EUR
   União de Leiria     2 ejercicios (2022/2023 a 2023/2024), balance, EUR
