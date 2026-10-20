@@ -116,8 +116,7 @@ VERIFICACIÓN (regla #1 de CLAUDE.md, "precisión antes que velocidad"):
   (officialPAT) impreso. Cierre perfecto en tres pasos, cada uno contra un subtotal
   impreso del documento.
 
-grossDebt: "Leasingforpligtelser" (pasivo de leasing IFRS16, corriente 2.223 + no
-  corriente 2.404 = 4.627) es la única línea de deuda reconocible en el balance —
+grossDebt: 0 (CORREGIDO 2026-10-20, regla grossDebt votada 3-0: el pasivo de leasing IFRS16 con fila propia, "Leasingforpligtelser" corriente 2.223 + no corriente 2.404 = 4.627, queda fuera; no hay deuda financiera). Antes se había cargado 4.627, la única línea de deuda reconocible en el balance —
   Leverandørgæld (proveedores), Anden gæld (otra deuda sin desglosar), Periodiseret
   omsætning/Modtagne forudbetalinger (ingresos diferidos/anticipos de clientes) son
   pasivos operativos, no deuda financiera. Aproximación (no hay línea de "préstamo

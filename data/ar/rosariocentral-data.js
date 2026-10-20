@@ -31,7 +31,7 @@ const rosarioCentralRevenueLinesByYear = {
     { rawLabel:'Ingresos por derechos de televisión', normalizedCategory:'broadcasting', amountNative:5844.152621, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos por organización de espectáculos y eventos', normalizedCategory:'other_income', amountNative:131.528448, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos por publicidad y propaganda', normalizedCategory:'sponsorship_commercial', amountNative:3124.761134, disclosureLevel:'detailed' },
-    { rawLabel:'Ingresos por ventas tiendas', normalizedCategory:'other_income', amountNative:3880.592172, disclosureLevel:'detailed' },
+    { rawLabel:'Ingresos por ventas tiendas', normalizedCategory:'sponsorship_commercial', amountNative:3880.592172, disclosureLevel:'detailed' },
     { rawLabel:'Otros ingresos', normalizedCategory:'other_income', amountNative:2011.625198, disclosureLevel:'detailed' },
     { rawLabel:'Venta de jugadores', normalizedCategory:'player_sales', amountNative:2248.491317, disclosureLevel:'detailed' },
   ],

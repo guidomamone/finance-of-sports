@@ -37,7 +37,7 @@ window.RANKINGS["be-proleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",23.647],["Otros ingresos",18.758]] },
       { id:"mechelen-be", revenue:39.248, reportType:"official_balance_sheet",
         sourceId:"mechelen-be-jaarrekening-2025",
-        mix:[["Venta de Jugadores",10.005],["Fútbol profesional (sin desglosar por la fuente)",24.485],["Otros ingresos",4.758]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",24.485],["Otros ingresos",14.763]] },
       { id:"westerlo-be", revenue:36.017, reportType:"official_balance_sheet",
         sourceId:"westerlo-be-jaarrekening-2025",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",16.846],["Otros ingresos",19.17]] },

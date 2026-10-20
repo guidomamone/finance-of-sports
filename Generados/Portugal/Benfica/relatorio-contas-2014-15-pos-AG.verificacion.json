@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.pdf",
  "md": "Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.md",
- "generado": "2026-10-20T22:30:32.581Z",
- "scriptHuella": "5a6683fb1731",
- "estado": "cola",
+ "generado": "2026-10-20T22:46:17.120Z",
+ "scriptHuella": "0b3b0490e72c",
+ "estado": "ok",
  "clubId": "benfica-pt",
  "year": 2015,
  "escala": {
@@ -13,31 +13,33 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "b4cf6d7",
-  "0762757"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": false,
-   "detalle": "las líneas suman 180.799 y el total impreso dice 101.974"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"\" 106.474 cierra; además se suman 48 línea(s) fuera de ese total (151.969)"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 180.799 - gastos 258.443 ± financiero -17.718 ± impuesto 0.266 no da el impreso 7.072",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": true,
-   "detalle": "la columna 2014 de este documento suma ingresos 180.615; el sitio tiene 180.752"
+   "detalle": "la columna 2014 de este documento suma ingresos 180.752; el sitio tiene 180.752"
   },
   {
    "nombre": "documento del año 2016",
@@ -47,10 +49,22 @@
   {
    "nombre": "documento del año 2014",
    "ok": true,
-   "detalle": "ingresos de 2014: 180.752 en relatorio-contas-2013-14-pos-AG.pdf y 180.615 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2014: 180.752 en relatorio-contas-2013-14-pos-AG.pdf y 180.752 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
+  "escalón \"nota exacta en la lectura 6\": \"PRESTAÇÃO DE SERVIÇOS\" (L2615) se abre en las 8 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"OUTROS RENDIMENTOS E SANHOS OPERACIONAIS ^{1)}\" (L2616) se abre en las 5 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"RENDIMENTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\" (L2627) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"FORNECIMENTOS E SERVIÇOS EXTERNOS\" (L2619) se abre en las 17 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"GASTOS COM PESSOAL\" (L2620) se abre en las 9 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"DEPRECIAÇÕES/AMORTIZAÇÕES ^{2)}\" (L2621) se abre en las 10 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"PROVISÕES/IMPARIDADES ^{3)}\" (L2622) se abre en las 5 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"OUTROS GASTOS E PERDAS OPERACIONAIS ^{4)}\" (L2623) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"AMORTIZAÇÕES E PERDAS DE IMPARIDADE DE DIREITOS DE ATLETAS\" (L2626) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\" (L2628) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"RESULTADOS RELATIVOS A INVESTIMENTOS EM PARTICIPADAS\" (L2633) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2023-24.pdf",
   "duda de extraer ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en relatorio-contas-2014-15-pos-AG.pdf",
   "duda de extraer que no afecta la carga: No hay frase de escala en los bloques; magnitudes (L2615 80.049) sugieren miles de euros."
@@ -60,13 +74,13 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 180.799,
-  "gastos": 258.443,
+  "gastos": 156.275,
   "financiero": -17.718,
   "impuesto": 0.266,
   "resultadoImpreso": 7.072,
   "resultadoParaCargar": 7.072,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -94,28 +108,12 @@
    "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
   },
   {
-   "etiqueta": "LIGA NACIONAL",
+   "etiqueta": "RECEITAS DE BILHETEIRA",
    "lado": "ingreso",
-   "M": 4.254,
+   "M": 5.2,
    "pagina": 117,
-   "linea": 3630,
-   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\" > desglose de \"RECEITAS DE BILHETEIRA\""
-  },
-  {
-   "etiqueta": "LIGA DOS CAMPEDES",
-   "lado": "ingreso",
-   "M": 0.729,
-   "pagina": 117,
-   "linea": 3631,
-   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\" > desglose de \"RECEITAS DE BILHETEIRA\""
-  },
-  {
-   "etiqueta": "PARTICULARES",
-   "lado": "ingreso",
-   "M": 0.217,
-   "pagina": 117,
-   "linea": 3632,
-   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\" > desglose de \"RECEITAS DE BILHETEIRA\""
+   "linea": 3611,
+   "origen": "nota que desglosa \"PRESTAÇÃO DE SERVIÇOS\""
   },
   {
    "etiqueta": "BILHETES DE ÉPOCA",
@@ -504,7 +502,7 @@
   {
    "etiqueta": "REFORÇO DE PROVISÕES PARA OUTROS RISCOS",
    "lado": "gasto",
-   "M": -0.55,
+   "M": 0.55,
    "pagina": 124,
    "linea": 3894,
    "origen": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\""
@@ -512,7 +510,7 @@
   {
    "etiqueta": "REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS",
    "lado": "gasto",
-   "M": 1.388,
+   "M": -1.388,
    "pagina": 124,
    "linea": 3895,
    "origen": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\""
@@ -520,7 +518,7 @@
   {
    "etiqueta": "REFORÇO DE IMPARIDADES DE CLIENTES/DEVEDORES",
    "lado": "gasto",
-   "M": -1.022,
+   "M": 1.022,
    "pagina": 124,
    "linea": 3898,
    "origen": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\""
@@ -528,7 +526,7 @@
   {
    "etiqueta": "REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES",
    "lado": "gasto",
-   "M": 1.174,
+   "M": -1.174,
    "pagina": 124,
    "linea": 3899,
    "origen": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\""
@@ -536,7 +534,7 @@
   {
    "etiqueta": "REFORÇO DE IMPARIDADES DE DIREITOS DE TV",
    "lado": "gasto",
-   "M": -0.197,
+   "M": 0.197,
    "pagina": 124,
    "linea": 3902,
    "origen": "nota que desglosa \"PROVISÕES/IMPARIDADES ^{3)}\""
@@ -556,14 +554,6 @@
    "pagina": 124,
    "linea": 3921,
    "origen": "nota que desglosa \"OUTROS GASTOS E PERDAS OPERACIONAIS ^{4)}\""
-  },
-  {
-   "etiqueta": "",
-   "lado": "gasto",
-   "M": 106.474,
-   "pagina": 92,
-   "linea": 2624,
-   "origen": "estado"
   },
   {
    "etiqueta": "AMORTIZAÇÕES DE DIREITOS DE ATLETAS",
@@ -604,6 +594,22 @@
    "pagina": 125,
    "linea": 3962,
    "origen": "nota que desglosa \"GASTOS COM TRANSAÇÕES DE DIREITOS DE ATLETAS\""
+  },
+  {
+   "etiqueta": "GANHOS EM EMPRESAS ASSOCIADAS",
+   "lado": "gasto",
+   "M": -0.001,
+   "pagina": 127,
+   "linea": 4030,
+   "origen": "nota que desglosa \"RESULTADOS RELATIVOS A INVESTIMENTOS EM PARTICIPADAS\""
+  },
+  {
+   "etiqueta": "Perdas em empresas associadas",
+   "lado": "gasto",
+   "M": 5.893,
+   "pagina": 127,
+   "linea": 4031,
+   "origen": "nota que desglosa \"RESULTADOS RELATIVOS A INVESTIMENTOS EM PARTICIPADAS\""
   }
  ],
  "signosCarga": {

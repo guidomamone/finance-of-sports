@@ -364,6 +364,9 @@ window.RANKINGS["pt-primeiraliga"] = {
     leagueSize: 18,
     wiki: {"t":"2014–15 Primeira Liga","lang":"en","at":"2026-09-30","n":18},
     clubs: [
+      { id:"benfica-pt", revenue:202.296, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2014-15-pos-ag",
+        mix:[["Cuotas Sociales",2.883],["Comercial / Sponsors",23.921],["Estadio",20.55],["Televisión",38.745],["Premios por competencias",16.249],["Venta de Jugadores",88.197],["Otros ingresos",11.751]] },
       { id:"sportingcp-pt", revenue:96.655, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2014-15",
         mix:[["Comercial / Sponsors",13.605],["Estadio",14.093],["Televisión",19.416],["Premios por competencias",13.342],["Venta de Jugadores",31.801],["Otros ingresos",4.398]] },

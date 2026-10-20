@@ -194,3 +194,7 @@ _note (data/):_
 ```text
 Cuentas INDIVIDUALES (no hay consolidado disponible para este club). Depositado en la Balanscentrale de la Nationale Bank van België (NBB). PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Mechelen/jaarrekening-2025-06-30-individual.md. Nota 6.10 (desglose de Omzet por categoría/mercado geográfico) no fue completada por el club en este filing; "Andere bedrijfsopbrengsten" solo desglosa el componente de subsidios estatales, el resto queda sin especificar (ver comentario de cabecera del archivo de datos). El ejercicio incluyó un procedimiento de "alarmbelprocedure" (activo neto por debajo de la mitad del capital) resuelto con un aumento de capital de ~17M EUR vía conversión de préstamos de accionistas.
 ```
+
+## Corrección del 2026-10-20 (regla de la Auditora, votación 3 a 0: intangible belga)
+- "Afschrijvingen op immateriële vaste activa": la nota 6.2.3 "Concessies, octrooien, licenties, knowhow, merken en soortgelijke rechten" no dice que sea de jugadores: 1,112255 pasa de `player_amortisation` a `depreciation` (rótulo sin "spelersregistratierechten").
+- "Andere bedrijfsopbrengsten", resto sin desglosar (8,5361): de `player_sales` a `other_income` (rótulo sin "probablemente"). Mismos totales de ingresos y gastos.
