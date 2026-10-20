@@ -31,7 +31,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 260: caja y deuda: medido el 2026-10-20, nada se completa sin documento nuevo; faltan Ferroviária 2014 (balanço con pasivo no corriente), Remo 2019 (balanço patrimonial), Volos 2019-2020 (notas con la apertura) y Japón 2025 (balance por club): es sourcing
+* 260: caja y deuda: Ferroviária 2014, Remo 2019 y Volos 2019-2020 quedan en null (Guido, 2026-10-20); solo falta Japón 2025 (balance por club): si es un callejón sin salida, se cierra el to-do --> Sourcing 1
 * 298: mejoras de script (z2, el escalón de cargar.mjs para la transición de más de 12 meses (regla ya votada); x2, el chequeo de fidelidad que no mira cifras; g2, condicional) --> Pipeline
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
