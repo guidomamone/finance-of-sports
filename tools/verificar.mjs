@@ -44,6 +44,7 @@ import { cierrePorVecinos } from './cierre-vecinos.mjs';
 import { VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 import { ajusteDe, ajustesDe, ajustePerimetroDe } from './ajustes.mjs';
+import { validacionAlDia } from './cache-al-dia.mjs'; // (frenado de Sporting CP) la compuerta de cargar.mjs también en avisarRegistro
 import { COBERTURA_PERDIDAS_RE, FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, DE_LOS_CUALES_RE, normalizar } from './vocabulario.mjs';
 import { DESCARTADOS, PARCIALES } from './etapa-doc.mjs';
 import { filasNBB, leerEstadoNBB } from './nbb.mjs';
@@ -1846,7 +1847,9 @@ function avisarRegistro(md, nRubros, registro, out = null) {
   // avisarRegistro() solo corre con la etapa 6 en "ok". Si las sumas no cierran, verificar() ya manda cada número a la cola
   // ('numero-no-confirmado', "no se pudo confirmar contra el PDF").
   const sinConfirmar = (v.noConfirmados || []).filter((n) => (!usados || usados.has(n.bloque)) && !pasaCompuerta(n) && entraEnLaCarga(n) && !porSumas(n) && !n.sinSegunda && !confirmadosAMano.some((a) => Number(a.linea) === Number(n.linea) && String(a.valor).trim() === String(n.numero).trim()));
-  if (sinConfirmar.length || !v.generado || new Date(v.generado).getTime() < statSync(mdAbs).mtimeMs) return false;
+  // (frenado de Sporting CP 2008-09 y 2009-10) "al día" = la misma compuerta que usa cargar.mjs: la huella del .md si la validación la tiene (validacionAlDia); la fecha solo es el respaldo. Con la fecha sola,
+  // un `touch` del .md (misma huella) dejaba el registro sin actualizar y cargar.mjs repetía «el registro no se actualizó».
+  if (sinConfirmar.length || !v.generado || !validacionAlDia(md)) return false;
   // ESCALERA DE LA MARCA (Versión 644, to-do 203, ok de Guido el 2026-10-09: "como escalón, no manta corta").
   //   escalón 1 (el de siempre): 5 rubros o más -> listo-para-jev.
   //   escalón 2 (nuevo): menos de 5 rubros, pero la etapa 6 cerró CONTRA EL RESULTADO IMPRESO (el chequeo "resultado del ejercicio" en ok, no
