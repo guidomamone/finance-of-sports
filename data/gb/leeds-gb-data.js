@@ -27,6 +27,11 @@ const leedsGbRevenueLinesByYear = {
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0.00286, disclosureLevel:'aggregated' },
     { rawLabel:'Gain on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:15.649423, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Turnover', normalizedCategory:'lump_football_operations', amountNative:54.18398, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:3.528322, disclosureLevel:'aggregated' },
+    { rawLabel:'Gain on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:10.128024, disclosureLevel:'aggregated' },
+  ],
 };
 
 const leedsGbExpenseLinesByYear = {
@@ -47,6 +52,11 @@ const leedsGbExpenseLinesByYear = {
   2019: [
     { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-9.970908, disclosureLevel:'aggregated' },
     { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-75.099771, disclosureLevel:'aggregated' },
+  ],
+  2020: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-13.885858, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-108.398516, disclosureLevel:'aggregated' },
+    { rawLabel:'Television and broadcasting rebate', normalizedCategory:'other_expenses', amountNative:-7, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -84,6 +94,25 @@ const leedsGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:64.572048, officialTotalExpenses:85.070679, officialPAT:-21.398994,
   },
+  2020: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'GBP', fxRef:'GBP@2020-07-31',
+    sourceId:'leeds-gb-group-accounts-2019-20',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.977936, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:1.05751},
+      {label:'Interest payable and similar expenses', value:-2.035446},
+      {label:'Tax on loss', value:null},
+    ],
+    sinDesglose: [
+      {renglon:'Turnover', lado:'revenue', importe:54.18398, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:67.840326, officialTotalExpenses:129.284374, officialPAT:-62.421984,
+  },
 };
 
 const leedsGbPresupuestoOverlayByYear = {};
@@ -116,6 +145,11 @@ Object.assign(sources, {
   'leeds-gb-group-accounts-2018-19': {
     id:'leeds-gb-group-accounts-2018-19', clubId:'leeds-gb',
     title:'Leeds United Football Club Limited — leeds-group-accounts-2018-19 (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'leeds-gb-group-accounts-2019-20': {
+    id:'leeds-gb-group-accounts-2019-20', clubId:'leeds-gb',
+    title:'Leeds United Football Club Limited — leeds-group-accounts-2019-20 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

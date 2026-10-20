@@ -40,6 +40,16 @@ window.RANKINGS["gb-championship"] = {
         mix:[["Comercial / Sponsors",4.102],["Estadio",6.237],["Televisión",52.013],["Venta de Jugadores",8.322],["Otros ingresos",3.145]] },
     ],
   },
+  2020: {
+    leagueSize: 24,
+    wiki: {"t":"2019–20 EFL Championship","lang":"en","at":"2026-10-19","n":24},
+    clubs: [
+      { id:"leeds-gb", revenue:89.047, reportType:"official_balance_sheet",
+        sourceId:"leeds-gb-group-accounts-2019-20",
+        mix:[["Venta de Jugadores",13.294],["Fútbol profesional (sin desglosar por la fuente)",71.122],["Otros ingresos",4.631]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
   2019: {
     leagueSize: 24,
     wiki: {"t":"2018–19 EFL Championship","lang":"en","at":"2026-10-19","n":24},
