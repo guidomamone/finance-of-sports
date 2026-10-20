@@ -1,0 +1,175 @@
+{
+ "md": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.md",
+ "generatedAt": "2026-10-20T18:47:58.423Z",
+ "rubrosHuella": "ddb54d7559df679d2c816d48ca6ce67a66d77bdd",
+ "rubros": [
+  {
+   "label": "Match receipts",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "UEFA Prize money (before exceptional item)",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Consideration",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Profit on disposal of intangible fixed assets\"",
+   "choice": "player_sales",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Net book value of disposals",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Profit on disposal of intangible fixed assets\"",
+   "choice": "exceptional_items",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Salaries and bonuses",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciation of property, plant and equipment",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "- Onerous employment contracts",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating costs",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisation, impairments and other net football trading income and expenditure",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "TV and media",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Profit on disposal of property, plant and equipment",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Other pension costs (see note 25)",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1029
+  }
+ ]
+}

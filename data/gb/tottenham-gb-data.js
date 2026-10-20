@@ -21,6 +21,13 @@ const tottenhamGbRevenueLinesByYear = {
     { rawLabel:'- UEFA COVID Deduction', normalizedCategory:'competition_bonus', amountNative:-0.613, disclosureLevel:'aggregated' },
     { rawLabel:'Consideration', normalizedCategory:'player_sales', amountNative:24.719, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Match receipts', normalizedCategory:'matchday_competition', amountNative:117.598, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA Prize money (before exceptional item)', normalizedCategory:'competition_bonus', amountNative:56.207, disclosureLevel:'aggregated' },
+    { rawLabel:'TV and media', normalizedCategory:'broadcasting', amountNative:148.078, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:227.75, disclosureLevel:'aggregated' },
+    { rawLabel:'Consideration', normalizedCategory:'player_sales', amountNative:32.416, disclosureLevel:'aggregated' },
+  ],
 };
 
 const tottenhamGbExpenseLinesByYear = {
@@ -49,6 +56,17 @@ const tottenhamGbExpenseLinesByYear = {
     { rawLabel:'- Onerous employment contracts', normalizedCategory:'admin_general_expense', amountNative:-0.528, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating costs', normalizedCategory:'other_expenses', amountNative:-121.368, disclosureLevel:'aggregated' },
     { rawLabel:'Amortisation, impairments and other net football trading income and expenditure', normalizedCategory:'player_amortisation', amountNative:-79.893, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Net book value of disposals', normalizedCategory:'player_amortisation', amountNative:-16.906, disclosureLevel:'aggregated' },
+    { rawLabel:'Salaries and bonuses', normalizedCategory:'wages_squad', amountNative:-218.897, disclosureLevel:'aggregated' },
+    { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-31.332, disclosureLevel:'aggregated' },
+    { rawLabel:'Other pension costs (see note 25)', normalizedCategory:'wages_squad', amountNative:-0.892, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation of property, plant and equipment', normalizedCategory:'depreciation', amountNative:-71.868, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of property, plant and equipment', normalizedCategory:'other_expenses', amountNative:0.025, disclosureLevel:'aggregated' },
+    { rawLabel:'- Onerous employment contracts', normalizedCategory:'admin_general_expense', amountNative:-5.11, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating costs', normalizedCategory:'other_expenses', amountNative:-159.874, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation, impairments and other net football trading income and expenditure', normalizedCategory:'player_amortisation', amountNative:-127.106, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -86,6 +104,21 @@ const tottenhamGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:468.134, officialTotalExpenses:488.816, officialPAT:-50.117,
   },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-06-30',
+    sourceId:'tottenham-gb-group-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-44.763, tax:7.88,
+    extraRows: [
+      {label:'Finance income', value:1.566},
+      {label:'Finance costs', value:-46.329},
+      {label:'Tax', value:7.88},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:582.049, officialTotalExpenses:631.96, officialPAT:-86.794,
+  },
 };
 
 const tottenhamGbPresupuestoOverlayByYear = {};
@@ -120,6 +153,11 @@ Object.assign(sources, {
   'tottenham-gb-group-accounts-2021-22': {
     id:'tottenham-gb-group-accounts-2021-22', clubId:'tottenham-gb',
     title:'Tottenham Hotspur Limited — tottenham-group-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'tottenham-gb-group-accounts-2022-23': {
+    id:'tottenham-gb-group-accounts-2022-23', clubId:'tottenham-gb',
+    title:'Tottenham Hotspur Limited — tottenham-group-accounts-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

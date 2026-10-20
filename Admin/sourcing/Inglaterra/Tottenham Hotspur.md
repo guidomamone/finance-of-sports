@@ -80,3 +80,5 @@ Todos en `Clubes/Inglaterra/Tottenham Hotspur/` (los PDF no se trackean; son esc
 <!-- /ing-sourcing -->
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.pdf` (sourceId `tottenham-gb-group-accounts-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2023 desde `Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.pdf` (sourceId `tottenham-gb-group-accounts-2022-23`).
