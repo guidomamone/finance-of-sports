@@ -44,6 +44,13 @@ const newcastleGbRevenueLinesByYear = {
     { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:1.48, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of players\' and staff registrations', normalizedCategory:'player_sales', amountNative:24.583, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Matchday', normalizedCategory:'matchday_competition', amountNative:0.176, disclosureLevel:'aggregated' },
+    { rawLabel:'Media', normalizedCategory:'broadcasting', amountNative:119.262, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:17.577, disclosureLevel:'aggregated' },
+    { rawLabel:'Other income', normalizedCategory:'other_income', amountNative:3.177, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:1.701, disclosureLevel:'aggregated' },
+  ],
 };
 
 const newcastleGbExpenseLinesByYear = {
@@ -75,6 +82,10 @@ const newcastleGbExpenseLinesByYear = {
   2019: [
     { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-122.944, disclosureLevel:'aggregated' },
     { rawLabel:'Amortisation and impairment of players\' registrations', normalizedCategory:'player_amortisation', amountNative:-38.611, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Operating expenses before amortisation and impairment', normalizedCategory:'other_expenses', amountNative:-123.333, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation and impairment of players\' registrations', normalizedCategory:'player_amortisation', amountNative:-32.277, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -163,6 +174,21 @@ const newcastleGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:201.031, officialTotalExpenses:161.555, officialPAT:34.674,
   },
+  2021: {
+    currency:'GBP', fxRef:'GBP@2021-06-30',
+    sourceId:'newcastle-gb-group-accounts-2020-21',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.095, tax:1.43,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.385},
+      {label:'Interest payable and expenses', value:-0.29},
+      {label:'Taxation', value:1.43},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:141.893, officialTotalExpenses:155.61, officialPAT:-12.192,
+  },
 };
 
 const newcastleGbPresupuestoOverlayByYear = {};
@@ -210,6 +236,11 @@ Object.assign(sources, {
   'newcastle-gb-group-accounts-2018-19': {
     id:'newcastle-gb-group-accounts-2018-19', clubId:'newcastle-gb',
     title:'Newcastle United Limited — newcastle-group-accounts-2018-19 (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'newcastle-gb-group-accounts-2020-21': {
+    id:'newcastle-gb-group-accounts-2020-21', clubId:'newcastle-gb',
+    title:'Newcastle United Limited — newcastle-group-accounts-2020-21 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
