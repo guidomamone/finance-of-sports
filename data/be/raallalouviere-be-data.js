@@ -7,6 +7,9 @@ const raallalouvierebeRevenueLinesByYear = {
   2018: [
     { rawLabel:'Marge brute d\'exploitation', normalizedCategory:'lump_football_operations', amountNative:0.430494, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Marge brute d\'exploitation', normalizedCategory:'lump_football_operations', amountNative:0.496957, disclosureLevel:'aggregated' },
+  ],
 };
 const raallalouvierebeExpenseLinesByYear = {
   2025: [
@@ -23,6 +26,11 @@ const raallalouvierebeExpenseLinesByYear = {
     { rawLabel:'Rémunérations, charges sociales et pensions', normalizedCategory:'wages_squad', amountNative:-0.578307, disclosureLevel:'aggregated' },
     { rawLabel:'Amortissements et réductions de valeur sur frais d\'établissement, sur immobilisations incorporelles et corporelles', normalizedCategory:'depreciation', amountNative:-0.086931, disclosureLevel:'aggregated' },
     { rawLabel:'Autres charges d\'exploitation', normalizedCategory:'other_expenses', amountNative:-0.002507, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Rémunérations, charges sociales et pensions', normalizedCategory:'wages_squad', amountNative:-0.518027, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortissements et réductions de valeur sur frais d\'établissement, sur immobilisations incorporelles et corporelles', normalizedCategory:'depreciation', amountNative:-0.157759, disclosureLevel:'aggregated' },
+    { rawLabel:'Autres charges d\'exploitation', normalizedCategory:'other_expenses', amountNative:-0.004676, disclosureLevel:'aggregated' },
   ],
 };
 const raallalouvierebeFiscalYearMeta = {
@@ -61,6 +69,24 @@ const raallalouvierebeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.430494, officialTotalExpenses:0.667745, officialPAT:-0.239007,
   },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'raallalouviere-be-jaarrekening-2019-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.006669, tax:0.000047,
+    extraRows: [
+      {label:'Produits financiers récurrents', value:0.000005},
+      {label:'Charges financières récurrentes', value:-0.006674},
+      {label:'Impôts sur le résultat', value:0.000047},
+    ],
+    sinDesglose: [
+      {renglon:'Marge brute d\'exploitation', lado:'revenue', importe:0.496957, motivo:'Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.496957, officialTotalExpenses:0.680462, officialPAT:-0.190128,
+  },
 };
 const raallalouvierebePresupuestoOverlayByYear = {};
 
@@ -87,6 +113,11 @@ Object.assign(sources, {
     title:'RAAL La Louvière SC — jaarrekening-2018-06-30-individual (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
     publicNote:'Primer ejercicio de la sociedad: del 12/05/2017 al 30/06/2018 (14 meses).',
+  },
+  'raallalouviere-be-jaarrekening-2019-06-30-individual': {
+    id:'raallalouviere-be-jaarrekening-2019-06-30-individual', clubId:'raallalouviere-be',
+    title:'RAAL La Louvière SC — jaarrekening-2019-06-30-individual (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 

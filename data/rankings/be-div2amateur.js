@@ -34,6 +34,9 @@ window.RANKINGS["be-div2amateur"] = {
     leagueSize: 48,
     wiki: {"t":"2018–19 Belgian Second Amateur Division","lang":"en","at":"2026-10-19","n":48},
     clubs: [
+      { id:"raallalouviere-be", revenue:0.566, reportType:"official_balance_sheet",
+        sourceId:"raallalouviere-be-jaarrekening-2019-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.566]] },
       { id:"patroeisden-be", revenue:0.413, reportType:"official_balance_sheet",
         sourceId:"patroeisden-be-jaarrekening-2019-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.413]] },
