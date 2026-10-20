@@ -17,6 +17,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 869 — Benfica 2014-15 destrabado; votaciones tanda 1 (2026-10-20) [238 · benfica-pt]
+
+- `tools/verificar.mjs`: la fila de atribución del resultado («ACIONISTAS DA EMPRESA-MÃE») ya no se suma como ingreso. Medido sin cambios en
+  lo cargado (Vitória Guimarães 2021-22 incluido). Aprobado por la Auditora.
+- Votaciones de la Auditora, tanda 1 (3 a 0): grossDebt con leasing y vinculadas, venta de derechos a un fondo, intangibles belgas, tienda a
+  sponsorship_commercial (Guido). REGLAS en CONVENCIONES-DATOS.
+
 ## Versión 868 — Materialidad en las votaciones; ningún año frena sin pasar por la Auditora (2026-10-20) [238]
 
 - Skill `votacion-de-criterios`: si la diferencia entre opciones es 1% o menos del total y no cambia el signo del resultado, no se vota (la opción
