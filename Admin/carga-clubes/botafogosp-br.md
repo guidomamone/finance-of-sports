@@ -125,7 +125,7 @@ Financeiras' (0,078496) = -0,076494 M BRL. Check final: 46,032661 - 49,500044 +
 (-0,076494) = -3,543877 M BRL = 'LUCRO (PREJUÍZO) DO EXERCÍCIO' impreso (R$-3.543.877),
 EXACTO.
 
-grossDebt = 'Partes Relacionadas' (circulante 0,166667 + não circulante 53,426590 =
+grossDebt (revisado 2026-10-20 con la regla grossDebt de la Auditora: se mantiene, la nota o. Partes Relacionadas dice "operações de mútuo financeiro", L461) = 'Partes Relacionadas' (circulante 0,166667 + não circulante 53,426590 =
 53,593257 M BRL — préstamos del accionista/controlante, la línea más parecida a
 financiamiento real que separa el propio Balanço Patrimonial). OJO, criterio distinto de
 Palmeiras/Botafogo do Rio: este documento NO tiene una línea "Empréstimos e

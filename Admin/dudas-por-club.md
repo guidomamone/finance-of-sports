@@ -181,11 +181,6 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
 
 ## Rosario Central (Ejercicio 2024-25, sesión 2026-09-23)
 
-- **"Ingresos por ventas tiendas" / "Costo de mercadería vendida"** (3.880,59M / 2.673,79M): venta
-  minorista de indumentaria/merchandising del club, sin categoría propia en `category-map.js` hoy
-  (cargadas a `other_income`/`other_expenses`) — candidatas a `merchandise_sales`/
-  `cost_of_goods_sold` si más clubes reportan una tienda con este volumen (no es solo Rosario
-  Central: Talleres también tenía una línea de tienda neta de costo en la Versión 207).
 - **"Ingresos fútbol profesional" (2.732,08M) y "Gastos de fútbol profesional" (5.308,77M)**: líneas
   residuales sin más desglose en el documento (a diferencia de TV/entradas/sponsors, que sí tienen
   fila propia) — vale preguntarle al club qué componen específicamente.
@@ -1035,11 +1030,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## Fulham (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
 
-- **`grossDebt`**: la única partida "deuda-like" es un préstamo del dueño sin interés y "repayable
-  on demand" (Amounts due to immediate parent company: £44,398m en 2024, £0 en 2025, convertido a
-  equity). Se usó tal cual, pero es discutible tratarlo como deuda financiera real dado que no
-  devenga interés — decisión pendiente de Guido si se quiere un criterio distinto para este tipo de
-  préstamo intra-grupo.
 - **"Compensation" (£0,873m 2024 / £4,013m 2025, creciendo)**: "sums from collaboration agreements
   with other Clubs and remediation of lost income" — categorizado como `other_income` a falta de
   mejor opción. Vale la pena confirmar si está relacionado a la obra del Riverside Stand.

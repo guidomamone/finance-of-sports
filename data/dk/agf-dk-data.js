@@ -41,7 +41,7 @@ const agfdkFiscalYearMeta = {
     assetSales:-0.292,
     netInterest:4.865,
     tax:0.500,
-    grossDebt:4.627, cash:29.347,
+    grossDebt:0, cash:29.347,
     officialTotalRevenue:188.321, officialTotalExpenses:168.076, officialPAT:25.318,
   },
 };

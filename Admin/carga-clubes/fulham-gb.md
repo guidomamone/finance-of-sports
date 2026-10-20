@@ -36,7 +36,7 @@ parts"), no dos conceptos distintos.
 Clubs and remediation of lost income" — no encaja limpio en ninguna categoría, va a `other_income`
 (catch-all). Duda genuina en Admin/dudas-por-club.md.
 
-GROSSDEBT: Fulham FC Limited no tiene ninguna nota "Borrowings" en ningún ejercicio. La única
+GROSSDEBT (revisado 2026-10-20 con la regla grossDebt de la Auditora: se mantiene, la nota de empresa en funcionamiento 2023-24 lo llama "unsecured loan with its immediate parent company"): Fulham FC Limited no tiene ninguna nota "Borrowings" en ningún ejercicio. La única
 partida deuda-like es "Amounts due to immediate parent company" (préstamo del dueño, SIN interés,
 "repayable on demand", que se convierte en acciones): £44,398m (2024), £0 (2025, todo convertido
 a equity en el año). Se usa ese valor tentativamente — duda genuina en Admin/dudas-por-club.md

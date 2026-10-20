@@ -37,7 +37,7 @@ window.RANKINGS["ar-primera"] = {
         mix:[["Cuotas Sociales",9.368],["Comercial / Sponsors",1.625],["Estadio",1.648],["Televisión",5.12],["Premios por competencias",6.945],["Venta de Jugadores",12.581],["Educación",1.79],["Otras secciones deportivas",1.737],["Otros ingresos",8.949]] },
       { id:"rosariocentral", revenue:39.476, reportType:"official_balance_sheet",
         sourceId:"rosariocentral-estados-contables-2024-25",
-        mix:[["Cuotas Sociales",15.331],["Comercial / Sponsors",2.682],["Estadio",5.775],["Televisión",5.016],["Venta de Jugadores",1.93],["Otras secciones deportivas",0.951],["Otros ingresos",7.79]] },
+        mix:[["Cuotas Sociales",15.331],["Comercial / Sponsors",6.013],["Estadio",5.775],["Televisión",5.016],["Venta de Jugadores",1.93],["Otras secciones deportivas",0.951],["Otros ingresos",4.459]] },
       { id:"gimnasiaesgrima-ar", revenue:27.317, reportType:"official_budget_and_balance",
         sourceId:"gimnasiaesgrima-ar-balance-2024-2025",
         mix:[["Cuotas Sociales",5.588],["Comercial / Sponsors",0.821],["Estadio",2.26],["Televisión",4.05],["Premios por competencias",0.041],["Venta de Jugadores",6.229],["Educación",1.112],["Otras secciones deportivas",0.509],["Otros ingresos",6.707]] },
