@@ -24,11 +24,19 @@ Si aparece una regla, el resultado es "ya decidido por <regla>", con la cita, y 
 2. **Precedente de la misma liga.**
 3. **Precedente del mismo país.**
 4. **Precedente del mismo deporte.**
-5. **Fidelidad al documento:** no inventar un desglose que el documento no da; lo impreso manda.
-6. **Preservar las sumas:** el total y el resultado siguen cerrando con lo impreso.
-7. **Comparabilidad:** el mismo rubro significa lo mismo en todos los clubes (taxonomía de `club-data-mapping`).
 
-Un criterio de más arriba pesa más que todos los de abajo juntos. Un precedente cuenta solo si es el mismo tipo de caso, con su cita.
+   Un precedente (1 a 4) cuenta solo si es **el mismo hecho económico**, no el mismo nombre de renglón: los dos son una venta, o los dos son
+   una revaluación, y el votante cita la nota del documento de cada uno que lo muestra. Sin esa cita, el precedente no suma.
+5. **Fidelidad al documento:** no inventar un desglose que el documento no da; lo impreso manda.
+6. **Realizado o no realizado:** una ganancia o un gasto sin contraparte que pagó o va a pagar (una revaluación, una estimación, un ajuste a
+   valor razonable) nunca va a un rubro que el lector entiende como plata que entró o salió, como `player_sales`. Va a `other_income`,
+   `other_expenses` o `exceptional_items`, según el lado.
+7. **Lo que entiende el lector:** si un periodista ve ese número en ese rubro del sitio, ¿entiende lo que pasó de verdad? La opción que lo
+   haría entender otra cosa pierde.
+8. **Preservar las sumas:** el total y el resultado siguen cerrando con lo impreso.
+9. **Comparabilidad:** el mismo rubro significa lo mismo en todos los clubes (taxonomía de `club-data-mapping`).
+
+Un criterio de más arriba pesa más que todos los de abajo juntos.
 
 ## 3. Cómo se vota
 
@@ -42,8 +50,8 @@ Un criterio de más arriba pesa más que todos los de abajo juntos. Un precedent
 - **Antes de contar: ¿cuánto mueve?** Para cada opción, medí cuánto cambia el dato frente a la otra: la diferencia, sobre el total de
   ingresos o de gastos del año. Si es 1% o menos y no le cambia el signo al resultado, no se vota: se elige la opción más fiel al documento
   (criterio 5), se anota con la medida y se carga. Si es más, votan tres, para que siempre haya desempate.
-- **Decidido:** 3 a 0, o 2 a 1 si el voto en minoría no tiene ningún criterio 1 a 3 a su favor.
-- **A Guido:** empate, un 2 a 1 con un criterio 1 a 3 en minoría, o una opción que cambia más de 10 años ya cargados. Se le manda a la
+- **Decidido:** 3 a 0, o 2 a 1 si el voto en minoría no tiene ningún precedente 1 a 3 que sea el mismo hecho a su favor.
+- **A Guido:** empate, un 2 a 1 con un precedente 1 a 3 que sea el mismo hecho en minoría, o una opción que cambia más de 10 años ya cargados. Se le manda a la
   principal en un solo mensaje: el caso, las opciones, los tres votos con sus citas y la recomendación.
 
 ## 5. Dónde queda
