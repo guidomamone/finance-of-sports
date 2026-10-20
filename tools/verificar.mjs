@@ -167,6 +167,11 @@ export function cerrarNota(obj, hijas, campo = 'M', uObj = 0) {
   return null;
 }
 
+// (frenado de Benfica 2014-15 pos-AG) Una fila SIN LADO que viene DESPUÉS de una fila de resultado y repite su importe exacto es la ATRIBUCIÓN del resultado («ATRIBUÍVEL A:
+// ACIONISTAS DA EMPRESA-MÃE 7.072» debajo de «RESULTADO LÍQUIDO DO PERÍODO 7.072»), no un renglón: las lecturas 3 y 6 la sumaban como ingreso y el resultado no cerraba.
+// `campo` es la columna que se compara ('M' el año, 'A' el anterior).
+export const repiteResultado = (estado, f, campo = 'M') => estado.some((r) => r !== f && r.tipo === 'resultado' && r.linea < f.linea && isFinite(r[campo]) && isFinite(f[campo]) && Math.abs(r[campo] - f[campo]) <= 0.5 * (f.u || 0) + 1e-12);
+
 export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
   const pF = resolve(ROOT, derivado(md, '.filas.json', { crear: false }));
@@ -591,12 +596,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       if (nivel < 6) return hojas;
       const g6 = A.estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); const neg6 = g6.length ? g6.filter((f) => f.M < 0).length >= g6.length / 2 : true;
       const enV = ventana ? enVentanaOtros(A) : () => true;
-      return [...hojas, ...A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && enV(f) && (neg6 ? f[campo] > 0 : f[campo] < 0)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) }))]; // (Versión 434) lectura 6
+      return [...hojas, ...A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && enV(f) && !repiteResultado(A.estado, f, campo) && (neg6 ? f[campo] > 0 : f[campo] < 0)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) }))]; // (Versión 434) lectura 6
     }
     const g = A.estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); const neg = g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true;
-    const otrosI = A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && (neg ? f[campo] > 0 : f[campo] < 0)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) }));
+    const otrosI = A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] && !repiteResultado(A.estado, f, campo) && (neg ? f[campo] > 0 : f[campo] < 0)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) }));
     const acumB = acum === true || acum === 'sin-otros'; // (to-do 237 q) 'sin-otros': el escalón "acumulados" cerró sin las filas sin lado; 'otros-resultado': cerró con ellas al signo del resultado
-    const otrosV = nivel !== 4 ? otrosI : acum === 'sin-otros' ? [] : acum === 'otros-resultado' ? A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] > 0).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) })) : otrosI;
+    const otrosV = nivel !== 4 ? otrosI : acum === 'sin-otros' ? [] : acum === 'otros-resultado' ? A.estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f[campo]) && f[campo] > 0 && !repiteResultado(A.estado, f, campo)).map((f) => ({ ...f, [campo]: Math.abs(f[campo]) })) : otrosI;
     return [...A.lineasDeLado('ingreso', campo, true, nivel >= 4, (subRep || acumB) && nivel === 4, false, acumB && nivel === 4), ...otrosV];
   };
   // compara los ingresos del año en común (mi columna actual con la "año anterior" del siguiente, o al revés) con mi documento a escala k
@@ -777,7 +782,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const resFinal = F.resultado && !resEsAntes ? (parseNumber(F.resultado.actual) ?? NaN) * mult(estado[0]?.bloque) : resCerca ? resCerca.M : null;
   const filaAntes = estado.find((f) => f.tipo === 'resultado' && ANTES_RE.test(f.etiqueta) && isFinite(f.M));
   const gastosNeg = (() => { const g = estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); return g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true; })();
-  const otros = estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && f.M);
+  const otros = estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && f.M && !repiteResultado(estado, f, 'M'));
   const ing0 = lineasDeLado('ingreso'); const gas0 = lineasDeLado('gasto');
   // AJUSTES MANUALES DE FILAS (Versión 368; tools/ajustes.mjs, campo `fila`): escalón 0, antes de la escalera de lecturas. Agrega la fila
   // que la extracción no trajo, o reemplaza la que trajo mal (`reemplaza`), en la escala del documento; los chequeos corren igual sobre el
