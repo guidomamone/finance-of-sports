@@ -48,14 +48,19 @@ const { loadSite } = await import('./datos-sitio.mjs');
 const { faltaAntesDeLocalizar } = await import('./antes-de-localizar.mjs');
 const { cacheAlDia, validacionAlDia, ubicacionAlDia } = await import('./cache-al-dia.mjs');
 const { gastoPorDocumento, lineasGasto } = await import('./gasto-doc.mjs');
-const { categoriasAlDia } = await import('./huellas.mjs');
+const { categoriasAlDia, jevAlDia } = await import('./huellas.mjs');
 process.argv = argvAntes;
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARGS = process.argv.slice(2);
 const flag = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 const LISTA = flag('--lista'); const EJECUTAR = ARGS.includes('--ejecutar'); const REHACER = ARGS.includes('--rehacer');
-const CARGAR = ARGS.includes('--cargar'); // (Versión 642) al final, tools/cargar-lote.mjs: altas, cargas y un commit por año (ensayo sin --ejecutar)
+// --sin-api (to-do 328): con --ejecutar, corre todo lo gratis y FRENA, documento por documento, donde hoy llamaría a una API (localizar, extraer, validar un escaneo,
+// resolver el inventario, el perímetro por Jev, el primer año, Jev, Claude). Lo que ya está hecho (caché al día, categorías al día, o escrito por la sesión con
+// armar-a-mano.mjs y --desde-sesion) sigue de largo. `API` = puede llamar a una API: es EJECUTAR salvo con --sin-api.
+const SIN_API = ARGS.includes('--sin-api'); const API = EJECUTAR && !SIN_API;
+const CARGAR = ARGS.includes('--cargar');
+let frenaSinApi = () => {}; // se define abajo, cuando existe `estado` // (Versión 642) al final, tools/cargar-lote.mjs: altas, cargas y un commit por año (ensayo sin --ejecutar)
 // --reintentar (Versión 336, CAMINO DE ERROR: decisión de Guido, las reglas extra son "para cuando haya errores"): solo los documentos cuya
 // última verificación marcó desgloses que no suman (verificacion.reintentar) vuelven a localizar con el índice ampliado (filas que terminan
 // en "-") y a extraer con la lista de lo que no sumó. Una sola vez por documento (después queda `reintentado`). El resto del lote no se toca.
@@ -156,20 +161,21 @@ const sitio = loadSite(); // (Versión 442) antes del loop: "año ya cargado" mi
 const propuestaEnSitio = (e) => { const c = leerDerivado(e, '.carga.json'); const anio = ajusteDe(e.pdf, 'anio')?.valor ?? c?.year; return !!(c?.clubId && anio && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[anio]); };
 // (to-do 298 q) `cotizados`: los que el ensayo cotiza para localizar o extraer; también van a categorizar
 let usd = 0; const estado = {}; const cotizados = new Set(); const aRetranscribir = []; const aTextoPropio = []; const aFijar = [];
+frenaSinApi = (pdf, etapa, costo) => { if (SIN_API) estado[pdf] = `frena (--sin-api): ${etapa} llamaría a la API${costo ? ` (~US$ ${Number(costo).toFixed(3)})` : ''}`; };
 // Páginas interiores (sin las 2 primeras ni la última) con menos de 200 caracteres de texto propio: son imágenes.
 const paginasEnImagen = (pdf) => {
   const n = Number((spawnSync('pdfinfo', [resolve(ROOT, pdf)], { encoding: 'utf8' }).stdout.match(/Pages:\s+(\d+)/) || [])[1] || 0); const out = [];
   for (let i = 3; i < n; i++) { const t = spawnSync('pdftotext', ['-f', String(i), '-l', String(i), resolve(ROOT, pdf), '-'], { encoding: 'utf8' }).stdout || ''; if (t.replace(/\s/g, '').length < 200) out.push(i); }
   return out;
 };
-console.log(`\n=== 1/5 · Leer el documento (etapas 3-5: localizar, validar, extraer)${EJECUTAR ? '' : ' — ENSAYO: no llama a ninguna API'} ===`);
+console.log(`\n=== 1/5 · Leer el documento (etapas 3-5: localizar, validar, extraer)${API ? '' : SIN_API ? ' — SIN API: frena donde llamaría a una' : ' — ENSAYO: no llama a ninguna API'} ===`);
 // ETAPA 3, ANTES DE LA COMPUERTA: EL PERÍMETRO DEL CLUB POR SEÑALES (tools/perimetro-senales.mjs, aprobado por Guido el 2026-10-06). Para cada
 // club de la lista que frenaría por perímetro, mira todos sus .md y, si coinciden (tablas de cada perímetro y el voto de 3 criterios, uno de
 // Jev), fija el ajuste del club; si no, la compuerta frena como siempre y Guido decide. En el ensayo no pregunta a Jev ni escribe: dice qué
 // fijaría. Caso: lote 14, 12 clubes italianos nuevos, 29 documentos frenados por perímetro.
 const { fijarPerimetroDeClubes } = await import('./perimetro-senales.mjs');
-const PS = await fijarPerimetroDeClubes(docs, { registro, ejecutar: EJECUTAR, descartados, faltaPerimetro: (p) => faltaAntesDeLocalizar(p, { registro })?.falta === 'perimetro' });
-const previstoPerimetro = EJECUTAR ? null : new Map([...PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']), ...PS.flatMap((x) => x.porDocumento.map((d) => [d.pdf, d.valor]))]);
+const PS = await fijarPerimetroDeClubes(docs, { registro, ejecutar: API, descartados, faltaPerimetro: (p) => faltaAntesDeLocalizar(p, { registro })?.falta === 'perimetro' });
+const previstoPerimetro = API ? null : new Map([...PS.filter((x) => x.valor || x.pendienteJev).map((x) => [x.carpeta, x.valor || '?']), ...PS.flatMap((x) => x.porDocumento.map((d) => [d.pdf, d.valor]))]);
 for (const x of PS) console.log(`  perímetro ${x.carpeta}: ${x.valor || x.porDocumento.length ? `${x.escrito ? 'fijado' : 'se fija al ejecutar'}: ${x.valor || 'sin perímetro del club, uno por documento'} (${x.detalle})` : x.pendienteJev ? `se decide al ejecutar, con Jev o Claude (${x.detalle})` : `no se fija solo: ${x.detalle}`}`);
 // PROPUESTAS FRESCAS ANTES DE REINTENTAR (Versión 643, to-do 196, ok de Guido el 2026-10-09). Qué reintentar por "categoría en 0" sale de la
 // propuesta guardada (<doc>.carga.json), que solo se escribe cuando corre el lote. Si después el club se dio de alta fuera del lote, la propuesta
@@ -218,6 +224,7 @@ for (const pdf of docs) {
   }
   let resolverEnsayo = false;
   if (e.estado === 'revisar' && !e.cargado) {
+    if (SIN_API) { estado[pdf] = 'frena (--sin-api): el inventario dice "revisar" y resolver-inventario pagaría las páginas dudosas'; console.log(`  ${pdf}: ${estado[pdf]}`); continue; }
     const R = node('tools/resolver-inventario.mjs', ['--pdf', pdf, ...(EJECUTAR ? ['--ejecutar'] : [])], { silencioso: true });
     const sal = `${R.stdout || ''}`;
     if (!EJECUTAR) {
@@ -275,8 +282,8 @@ for (const pdf of docs) {
   const ajRes = ajusteDe(pdf, 'resultado-final');
   const candidatoAjuste = REINTENTAR && ubAntes && !ubAntes.intentoNotasConAjuste && (ubAntes.sin_estado || !(ubAntes.estado || []).length) && ajRes?.linea;
   if (candidatoNotas || candidatoAjuste) {
-    const L3 = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: true, notasComoEstado: true, pistaResultado: candidatoAjuste ? { valor: ajRes.valor, linea: ajRes.linea } : null });
-    if (L3.ensayo) { cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L3.usd + EX.usd; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
+    const L3 = await localizar(pdf, { registro, perimetroClub, ejecutar: API, rehacer: true, notasComoEstado: true, pistaResultado: candidatoAjuste ? { valor: ajRes.valor, linea: ajRes.linea } : null });
+    if (L3.ensayo) { frenaSinApi(pdf, 'localizar (las notas hacen de estado)', L3.usd); cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L3.usd + EX.usd; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
     if (L3.error) { estado[pdf] = `localizar (notas como estado): ${L3.error}`; continue; }
     usd += L3.costo || 0;
     if (L3.datos.sin_estado) { estado[pdf] = 'sin estado de resultados ni notas con resultado impreso (queda como fuente)'; console.log(`  ${pdf}: ${estado[pdf]}`); continue; }
@@ -303,7 +310,7 @@ for (const pdf of docs) {
   }
   const TP = resolverEnsayo ? null : paginasARearmar(pdf, e.md, e); const pagsTP = TP?.paginas; // (Versión 433) en el ensayo, el 1a va primero
   if (pagsTP) {
-    if (!(REINTENTAR && EJECUTAR)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar ~US$ 0,05 + extraer ${estimarExtraerSinBloques(pdf).texto}`); if (!EJECUTAR) usd += 0.05 + estimarExtraerSinBloques(pdf).usd; continue; }
+    if (!(REINTENTAR && API)) { aTextoPropio.push({ pdf, paginas: pagsTP }); console.log(`  ${pdf}: ${TP.metodo === 'regiones' ? 'rearmada con el texto propio (columnas) y sigue sin cerrar' : 'la transcripción no coincide con el texto propio del PDF'} (págs. ${pagsTP.join(', ')}): rearmar (método ${TP.metodo}, --reintentar, gratis) + localizar ~US$ 0,05 + extraer ${estimarExtraerSinBloques(pdf).texto}`); if (!EJECUTAR) usd += 0.05 + estimarExtraerSinBloques(pdf).usd; continue; }
     const RA = rearmar(pdf, pagsTP, TP.metodo);
     console.log(`  ${pdf}: págs. ${RA.paginas.join(', ') || 'ninguna'} rearmadas con el texto propio del PDF (etapa 2, escalón 1, método ${TP.metodo})${RA.rechazadas.length ? `; págs. ${RA.rechazadas.join(', ')} NO (la compuerta del rearmado: perdían filas de tabla, queda la transcripción anterior)` : ''}`);
     const L4 = await localizar(pdf, { registro, perimetroClub, ejecutar: true, rehacer: true }); usd += L4.costo || 0;
@@ -332,7 +339,7 @@ for (const pdf of docs) {
   // hacen de estado" (etapa 3, escalón 2), el reintento relocaliza en ese modo (con el índice ampliado y la lista de lo que faltó). Caso:
   // Fortaleza 2017 (solo notas) relocalizó en el modo normal, dio "sin estado" y pisó la localización buena.
   const enModoNotas = !!reintento && !!ubAntes?.estadoDesdeNotas;
-  const L = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo, ampliado: !!reintento, reintento, notasComoEstado: enModoNotas });
+  const L = await localizar(pdf, { registro, perimetroClub, ejecutar: API, rehacer: REHACER || !!reintento || cacheViejo, ampliado: !!reintento, reintento, notasComoEstado: enModoNotas });
   // MODO BATCH (tools/lote-batch.mjs, Batch API): la respuesta de localizar llega en la ola siguiente; el documento se corta acá.
   if (L.pendiente) { estado[pdf] = 'esperando la Batch API (localizar)'; console.log(`  ${pdf}: localizar pendiente de la Batch API`); continue; }
   if (!L.ensayo && !L.error && reintento && reintento.some((x) => x.categoria)) { try { writeFileSync(resolve(ROOT, derivado(e.md, '.reintento-categorias.json')), JSON.stringify({ fecha: new Date().toISOString(), categorias: reintento.filter((x) => x.categoria).map((x) => x.categoria), modoNotas: enModoNotas }, null, 1)); } catch { /* sin marca: como antes */ } }
@@ -344,7 +351,7 @@ for (const pdf of docs) {
     usd += L.costo || 0; estado[pdf] = 'reintento sin estado: queda la localización anterior'; console.log(`  ${pdf}: el reintento no encontró estado; queda la localización anterior (el intento, en .ubicacion-reintento.json)`);
     continue;
   }
-  if (L.ensayo) { cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L.usd + EX.usd; console.log(`  ${pdf}: ${enModoNotas ? 'reintento con las notas como estado: ' : ''}localizar ~US$ ${L.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
+  if (L.ensayo) { frenaSinApi(pdf, 'localizar', L.usd); cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L.usd + EX.usd; console.log(`  ${pdf}: ${enModoNotas ? 'reintento con las notas como estado: ' : ''}localizar ~US$ ${L.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
   if (L.datos.sin_estado) {
@@ -354,7 +361,7 @@ for (const pdf of docs) {
     // (que lee las imágenes); con --reintentar se hace y se vuelve a localizar. Si no, queda como fuente (como siempre).
     const enImagen = paginasEnImagen(pdf);
     const candidato = !String(e.motor || '').includes('mistral') && enImagen.length >= 2;
-    if (candidato && REINTENTAR && EJECUTAR && !e.retranscritoPorLote) {
+    if (candidato && REINTENTAR && API && !e.retranscritoPorLote) {
       // La transcripción vieja se MUEVE a Generados/ (mistral-ocr-transcribe.mjs no pisa un .md existente: "Ya existe el .md -- no lo piso",
       // UC 2015 en la primera corrida). Si Mistral falla, se restaura.
       const mdAbs = resolve(ROOT, e.md); const previo = resolve(ROOT, derivado(e.md, `.previo-${new Date().toISOString().slice(0, 10)}.md`));
@@ -388,9 +395,9 @@ for (const pdf of docs) {
   const valVieja = !cargado && !REHACER && !reintento && !cacheViejo && !validacionAlDia(e.md);
   if (ubVieja) console.log(`  ${pdf}: las filas son de otra localización: se rehacen validar y extraer`);
   else if (valVieja) console.log(`  ${pdf}: la validación es de otra versión del .md: se rehace validar (no localizar ni extraer)`);
-  const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo || ubVieja || valVieja }); usd += (EJECUTAR ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
-  const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo || ubVieja, reintento });
-  if (X.ensayo) { cotizados.add(pdf); usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
+  const V = await validar(pdf, { registro, ejecutar: API, rehacer: REHACER || !!reintento || cacheViejo || ubVieja || valVieja }); usd += (API ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
+  const X = await extraer(pdf, { registro, ejecutar: API, rehacer: REHACER || !!reintento || cacheViejo || ubVieja, reintento });
+  if (X.ensayo) { frenaSinApi(pdf, 'extraer', X.usd); cotizados.add(pdf); usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
   if (X.pendiente) { estado[pdf] = 'esperando la Batch API (extraer)'; console.log(`  ${pdf}: extraer pendiente de la Batch API`); continue; }
   usd += X.costo || 0;
   if (X.error) { estado[pdf] = `extraer: ${X.error}`; continue; }
@@ -403,7 +410,7 @@ const imprimirAFijar = () => {
   console.log(`\nFALTA FIJAR ANTES DE LOCALIZAR (etapa 3; ${aFijar.length} documento(s) sin pagar hasta que esté fijado; gratis):`);
   for (const c of [...new Set(aFijar.map((x) => x.comando))]) console.log(`  ${c}`);
 };
-if (!EJECUTAR) imprimirAFijar();
+if (!API) imprimirAFijar();
 avisoCorrecciones();
 // (to-do 298 q, ok de Guido 2026-10-19) LA CATEGORIZACIÓN DEL ENSAYO cuenta solo los documentos que van a llegar a categorizar (quedaron
 // "extraído" o el ensayo los cotiza para localizar o extraer; no testigos) y cuyo .categorias.json no está al día (huellas, tools/huellas.mjs: categoriasAlDia, la misma compuerta de
@@ -428,8 +435,9 @@ for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).start
   if (pend214.length) {
     console.log(`\n=== Etapa 6, primer año (escalón 3): ${pend214.length} documento(s) ===`);
     writeFileSync(resolve(ROOT, 'Admin', 'registros', '.lote-primer-anio.txt'), pend214.join('\n') + '\n');
-    node('tools/primer-anio-ia.mjs', ['--lista', 'Admin/registros/.lote-primer-anio.txt', '--ejecutar']);
-    for (const [pdf, r] of verificarLista(pend214, { registro, sitio, escribirRubros: true })) {
+    if (SIN_API) { for (const d of pend214) estado[d] = 'frena (--sin-api): el primer año llamaría a Claude (primer-anio-ia.mjs --exportar, que contesta la sesión, y --importar)'; console.log(`  --sin-api: ${pend214.length} documento(s) quedan para primer-anio-ia.mjs --exportar/--importar`); }
+    else node('tools/primer-anio-ia.mjs', ['--lista', 'Admin/registros/.lote-primer-anio.txt', '--ejecutar']);
+    if (!SIN_API) for (const [pdf, r] of verificarLista(pend214, { registro, sitio, escribirRubros: true })) {
       estado[pdf] = r.error ? `verificar: ${r.error}` : r.estado === 'ok' ? 'verificado' : `verificado con ${r.cola.length} caso(s) en la cola`;
       if (!r.error) for (const c of r.chequeos.filter((x) => x.nombre === 'primer año')) console.log(`  ${pdf.split('/').slice(2).join('/')}: ok primer año: ${c.detalle}`);
     }
@@ -437,13 +445,21 @@ for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).start
 }
 
 console.log('\n=== 3/5 · Categorizar las filas (etapa 7) ===');
-const conRubros = docs.filter((d) => String(estado[d]).startsWith('verificado'));
+let conRubros = docs.filter((d) => String(estado[d]).startsWith('verificado'));
+if (SIN_API) {
+  // Sin API: solo siguen los documentos con Jev y las categorías al día (los dejó la sesión con --desde-sesion o ya estaban); el resto frena.
+  const alDia = (d) => { const e = registro.find((x) => x.pdf === d); try { return !!e?.md && jevAlDia(resolve(ROOT, e.md)) && categoriasAlDia(resolve(ROOT, e.md)); } catch { return false; } };
+  for (const d of conRubros.filter((x) => !alDia(x))) { estado[d] = 'frena (--sin-api): faltan las categorías (jev-categorizar.mjs y categorizar-claude.mjs con --desde-sesion <json>)'; console.log(`  ${d}: ${estado[d]}`); }
+  conRubros = conRubros.filter(alDia);
+}
 if (conRubros.length) {
   writeFileSync(resolve(ROOT, 'Admin', 'registros', '.lote-lista-actual.txt'), conRubros.join('\n') + '\n');
   node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // (Versión 640) --solo: solo la lista del lote
-  node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
-  node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
-  node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
+  if (!SIN_API) {
+    node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
+    node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
+    node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
+  }
   console.log('\n=== 4/5 · Proponer la carga (etapa 8, todavía no escribe el sitio) ===');
   node('tools/cargar.mjs', ['--lista', 'Admin/registros/.lote-lista-actual.txt', '--desde-verificacion']);
 }

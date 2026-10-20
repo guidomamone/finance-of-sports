@@ -25,6 +25,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { createHash } from 'node:crypto';
+import { pathToFileURL } from 'node:url';
 
 const sha1 = (s) => createHash('sha1').update(s).digest('hex');
 const leer = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
@@ -63,4 +64,27 @@ export function categoriasAlDia(mdAbs) {
 // Lista de PDFs de un archivo (una ruta por línea, # = comentario), como la usan pipeline.mjs y resolver-inventario.mjs.
 export function leerLista(ruta) {
   return new Set(readFileSync(ruta, 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')));
+}
+
+// (to-do 328, tool 3) CLI: las huellas de un documento, para armar a mano los archivos de las etapas pagas (armar-a-mano.mjs las calcula igual) o para ver
+// por qué una etapa dice "no al día". Gratis, solo lectura.   USO: node tools/huellas.mjs --documento "Clubes/<País>/<Club>/<doc>.pdf"
+if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
+  const i = process.argv.indexOf('--documento');
+  if (i < 0 || !process.argv[i + 1]) { console.error('uso: node tools/huellas.mjs --documento "<pdf o md>"'); process.exit(1); }
+  const ROOT = resolve(import.meta.dirname, '..');
+  const mdRel = process.argv[i + 1].replace(/\.pdf$/i, '.md'); const mdAbs = resolve(ROOT, mdRel);
+  if (!existsSync(mdAbs)) { console.error(`no existe ${mdRel}`); process.exit(1); }
+  const { shaMd, huellaUbicacion, cacheAlDia, ubicacionAlDia, validacionAlDia } = await import('./cache-al-dia.mjs');
+  const p = rutas(mdAbs); const pu = derivado(mdAbs, '.ubicacion.json', { crear: false }); const pf = derivado(mdAbs, '.filas.json', { crear: false });
+  const ub = leer(pu); const fj = leer(pf); const rj = leer(p.rubros); const jj = leer(p.jev); const cj = leer(p.cats);
+  const linea = (nombre, hoy, guardado) => console.log(`${nombre.padEnd(14)} hoy ${hoy ?? '-'}${guardado === undefined ? '' : `  · guardada ${guardado ?? '-'}  ${hoy && guardado === hoy ? 'OK' : guardado === undefined ? '' : guardado === null ? '(sin huella guardada: vale la fecha)' : 'NO COINCIDE'}`}`);
+  console.log(mdRel);
+  linea('mdSha1', shaMd(mdRel), ub?.mdSha1 ?? null);
+  console.log(`  (.filas.json mdSha1 ${fj?.mdSha1 ?? '-'}; .validacion.json mdSha1 ${leer(derivado(mdAbs, '.validacion.json', { crear: false }))?.mdSha1 ?? '-'})`);
+  linea('ubicacionSha1', ub ? huellaUbicacion(ub) : null, fj ? (fj.ubicacionSha1 ?? null) : null);
+  linea('rubrosHuella', rj ? huellaRubros(rj) : null, jj ? (jj.rubrosHuella ?? null) : null);
+  linea('jevHuella', jj ? huellaJev(jj) : null, cj ? (cj.jevHuella ?? null) : null);
+  if (cj) console.log(`  (.categorias.json rubrosHuella ${cj.rubrosHuella ?? '-'})`);
+  const ca = cacheAlDia(mdRel);
+  console.log(`caché de localizar/extraer al día: ${ca.alDia ? 'sí' : 'NO'} (${ca.detalle}); ubicación al día para las filas: ${ubicacionAlDia(mdRel) ? 'sí' : 'NO'}; validación al día: ${validacionAlDia(mdRel) ? 'sí' : 'NO'}; jev al día: ${jevAlDia(mdAbs) ? 'sí' : 'NO'}; categorías al día: ${categoriasAlDia(mdAbs) ? 'sí' : 'NO'}`);
 }

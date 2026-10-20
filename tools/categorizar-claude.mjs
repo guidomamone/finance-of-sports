@@ -68,6 +68,9 @@
 //   node tools/categorizar-claude.mjs --backtest --sin-club --etiqueta _sinclub # variante sin las líneas del club
 //   node tools/categorizar-claude.mjs --informe [--etiqueta _x]
 //   node tools/categorizar-claude.mjs --listos [--limit 10] [--dry-run] [--lista Admin/mi-piloto.txt]
+//   node tools/categorizar-claude.mjs --listos --desde-sesion <respuestas.json>   (to-do 328) SIN API: la sesión contesta los rubros que quedan para Claude (escalón 2).
+//       {"pdf":"<pdf>","respuestas":[{"label":"<etiqueta>","categoria":"<categoria>","confianza":0.9,"motivo":"<una frase>"}]}; el --dry-run dice cuántos rubros faltan
+//       contestar. Escalones 0 y 1 y la memoria como siempre; deja el mismo <md>.categorias.json (modelo 'sesión (Claude Code)', costo 0) y registra las aprendidas. Si falta un rubro, no escribe nada.
 //   Extras: --modelo (default claude-opus-5-5), --esfuerzo low|medium|high (default low; Haiku no lo usa),
 //           --concurrencia 4, --semilla 7, --umbral-jev 0.9, --jev-jsonl <ruta>
 //
@@ -522,13 +525,16 @@ async function listos(opt) {
   const jevViejo = docs.filter((e) => { const rj = rubrosDe(e.md); const jj = jevDe(e.md); return !rj || !jj || jj.rubrosHuella !== huellaRubros(rj); });
   docs = docs.filter((e) => !jevViejo.includes(e));
   if (jevViejo.length) console.log(`${jevViejo.length} documento(s) sin .jev.json al día con su lista de rubros: no se mandan a Claude (primero Jev).`);
+  const sesion = opt.desdeSesion ? JSON.parse(readFileSync(resolve(root, opt.desdeSesion), 'utf8')) : null;
+  if (sesion) docs = docs.filter((e) => e.pdf === sesion.pdf);
+  if (sesion) opt.modelo = 'sesión (Claude Code)';
   docs = [...new Map(docs.map((e) => [e.md, e])).values()];
   if (opt.limit > 0) docs = docs.slice(0, opt.limit);
   console.log(`${docs.length} documento(s) con Jev hecho y sin categorías finales.${opt.dry ? ' (dry-run)' : ''}`);
   // Versión 319: además de lo cargado en el sitio, lo que Claude ya resolvió antes (tools/memoria-categorias.mjs, Admin/registros/categorias-aprendidas.jsonl,
   // confianza >= 0,80): entra como contexto del club y como ejemplos de otros clubes; producción siempre gana sobre lo aprendido.
   const prod = allLines(); const aprendidas = lineasAprendidas({ produccion: prod });
-  const lines = [...prod, ...aprendidas]; const retriever = makeRetriever(lines); const apiKey = opt.dry ? null : readKey(); let cost = 0;
+  const lines = [...prod, ...aprendidas]; const retriever = makeRetriever(lines); const apiKey = opt.dry || sesion ? null : readKey(); let cost = 0;
   const aprendidasFirmes = aprendidas.filter((l) => l.conf >= MIN_PRECEDENTE);
   if (aprendidas.length) console.log(`Memoria de categorías: ${aprendidas.length} rubros aprendidos de Claude (${aprendidasFirmes.length} usables como precedente del mismo club).`);
   // Memoria de respuestas (Versión 321, tools/respuestas-cache.mjs): lo que Claude ya contestó para este club y lado no se vuelve a mandar.
@@ -562,8 +568,17 @@ async function listos(opt) {
       else if (guardada) { rubros.push({ ...base, pendiente: false, ya: guardada.categoria, escalon: 2, confCache: guardada.confianza, motivo: guardada.motivo, jev: j?.choice, jevConf: j?.confidence, desdeCache: true }); nDesdeCache++; }
       else rubros.push({ ...base, pendiente: true, jev: j?.choice, jevConf: j?.confidence });
     }
-    const r = await categorizarConClaude({ club: rj.club, year: rj.year, rubros, modelo: opt.modelo, esfuerzo: opt.esfuerzo, contextoClub: !opt.sinClub, lines, retriever, apiKey, dryRun: opt.dry });
+    // (to-do 328) --desde-sesion: el mismo resultado que devolvería categorizarConClaude, con las respuestas del archivo (sin API, costo 0).
+    const deSesion = (pend) => {
+      const porLabel = new Map((sesion.respuestas || []).map((x) => [norm(x.label), x]));
+      const faltan = []; const malas = []; const resultados = [];
+      pend.forEach((x, i) => { if (!x.pendiente) return; const s = porLabel.get(norm(x.label)); if (!s) faltan.push(x.label); else if (!(s.categoria in CATS.revenue) && !(s.categoria in CATS.expense) && s.categoria !== NOT_A_LINE) malas.push(`${x.label} -> ${s.categoria}`); else resultados.push({ idx: i, categoria: s.categoria, confianza: s.confianza ?? null, motivo: s.motivo || null }); });
+      if (faltan.length || malas.length) return { error: `NO SE ESCRIBE: ${faltan.length ? `faltan ${faltan.length} rubro(s) (${faltan.slice(0, 5).join(' | ')})` : ''}${malas.length ? ` · categoría inexistente: ${malas.slice(0, 5).join(' | ')}` : ''}`, sinEscribir: true };
+      return { resultados, costUsd: 0 };
+    };
+    const r = sesion && !opt.dry ? deSesion(rubros) : await categorizarConClaude({ club: rj.club, year: rj.year, rubros, modelo: opt.modelo, esfuerzo: opt.esfuerzo, contextoClub: !opt.sinClub, lines, retriever, apiKey, dryRun: opt.dry });
     if (r.pendiente) { console.log(`  ${e.md}: pendiente de la Batch API (ola siguiente)`); continue; }
+    if (r.sinEscribir) { console.log(`  ${e.md}: ${r.error}`); continue; }
     if (opt.dry) { console.log(`  ${e.md}: ${rubros.length} rubros (${rubros.filter((x) => x.escalon === 0).length} por precedente, ${rubros.filter((x) => x.escalon === 1).length} por Jev, ${rubros.filter((x) => x.pendiente).length} a Claude; ~${Math.round(r.promptChars / 4 || 0)} tokens)`); continue; }
     cost += r.costUsd || 0;
     const byIdx = new Map((r.resultados || []).map((x) => [x.idx, x]));
@@ -596,6 +611,7 @@ if (isMain) {
     sinClub: args.includes('--sin-club'),
     dry: args.includes('--dry-run'),
     sinCache: args.includes('--sin-cache'),
+    desdeSesion: flagVal('--desde-sesion'),
   };
   if (args.includes('--backtest')) await backtest(opt);
   else if (args.includes('--informe')) informe(opt);

@@ -26,6 +26,8 @@
 //   node tools/jev-categorizar.mjs --backtest --limit 200            # 200 rubros ya cargados (~$0.01)
 //   node tools/jev-categorizar.mjs --backtest --limit 0              # TODOS los rubros únicos cargados (miles)
 //   node tools/jev-categorizar.mjs --listos [--limit 10]             # los documentos listo-para-jev (10 documentos)
+//   --listos --desde-sesion <respuestas.json> --lista <lista>   (to-do 328) SIN API: las categorías las puso la sesión. El JSON es {"pdf":"<pdf>","respuestas":[{"label":"<etiqueta>","choice":"<categoria>","confidence":0.9}]}
+//                 con UNA respuesta por rubro único del .rubros.json del documento; deja el mismo <md>.jev.json con `origen: 'sesión'`. Si falta algún rubro o una categoría no existe, no escribe nada.
 //   Extras: --concurrencia 8, --semilla 7, --lado-conocido, --ejemplos 8 (le muestra 8 rubros parecidos ya categorizados),
 //           --sin-mismo-club (los ejemplos salen solo de otros clubes: el caso de un club nuevo), --etiqueta _nombre (no pisa el informe de otra variante), --club river, --dry-run
 //
@@ -48,6 +50,7 @@ const flagVal = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] 
 const BACKTEST = args.includes('--backtest');
 const LISTOS = args.includes('--listos');
 const DRY = args.includes('--dry-run');
+const DESDE_SESION = flagVal('--desde-sesion'); // (to-do 328) archivo con las respuestas de la sesión; no se llama a Jev
 const SIDE_KNOWN = args.includes('--lado-conocido');
 const limit = flagVal('--limit') !== null ? Number(flagVal('--limit')) : (BACKTEST ? 200 : 10);
 const concurrency = Number(flagVal('--concurrencia') || 8);
@@ -229,11 +232,14 @@ async function listos() {
   // antes se miraba solo si el archivo existía, y 438 listas re-preparadas quedaron con categorías de la versión vieja).
   // `--lista <archivo>`: solo esos PDFs (lo usa lote.mjs para que la etapa 7 toque SOLO los documentos del lote).
   const lista = flagVal('--lista') ? leerLista(resolve(root, flagVal('--lista'))) : null;
-  let docs = ledger.filter((e) => e.jev === 'listo-para-jev' && (!lista || lista.has(e.pdf)) && existsSync(resolve(root, derivado(e.md, '.rubros.json'))) && !jevAlDia(resolve(root, e.md)));
+  const sesion = DESDE_SESION ? JSON.parse(readFileSync(resolve(root, DESDE_SESION), 'utf8')) : null;
+  let docs = ledger.filter((e) => e.jev === 'listo-para-jev' && (!lista || lista.has(e.pdf)) && (!sesion || e.pdf === sesion.pdf) && existsSync(resolve(root, derivado(e.md, '.rubros.json'))) && !jevAlDia(resolve(root, e.md)));
   if (limit > 0) docs = docs.slice(0, limit);
   console.log(`${docs.length} documento(s) listo-para-jev sin categorizar o con la categorización desactualizada.${DRY ? ' (dry-run)' : ''}`);
   if (DRY || !docs.length) return;
-  const key = readKey(); let total = 0;
+  const key = DESDE_SESION ? null : readKey(); let total = 0;
+  const nl = (t) => String(t).toLowerCase().replace(/\s+/g, ' ').trim();
+  const deSesion = DESDE_SESION ? new Map((JSON.parse(readFileSync(resolve(root, DESDE_SESION), 'utf8')).respuestas || []).map((x) => [nl(x.label), x])) : null;
   // Ejemplos parecidos ya categorizados en el sitio (de todos los clubes) y, cuando el documento indica si la tabla es de
   // ingresos o de gastos, solo las categorías de ese lado: son las dos mejoras que llevaron el acierto de 69,5% a 86,6%.
   // Versión 319: a los ejemplos de lo cargado en el sitio se suman los rubros que Claude ya resolvió con confianza >= 0,80
@@ -249,9 +255,10 @@ async function listos() {
   for (const e of docs) {
     const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
     const uniqLabels = [...new Map(rj.rubros.map((r) => [r.label.toLowerCase(), r])).values()];
-    const results = [];
+    const results = []; const faltan = []; const malas = [];
     await pool(uniqLabels, async (r) => {
       const base = { label: r.label, lado: r.lado || null, page: r.page, section: r.section };
+      if (deSesion) { const s = deSesion.get(nl(r.label)); if (!s) faltan.push(r.label); else if (sideOf(s.choice) === '?') malas.push(`${r.label} -> ${s.choice}`); else results.push({ ...base, choice: s.choice, confidence: s.confidence ?? null, origen: 'sesión' }); return; }
       const guardada = SIN_CACHE ? null : cache.get(rj.club, r.lado, r.label);
       if (guardada) { desdeCache++; results.push({ ...base, ...guardada, desdeCache: true }); return; }
       const useSide = Boolean(r.lado);
@@ -261,6 +268,7 @@ async function listos() {
       if (!resp.error && resp.choice) cache.set(rj.club, r.lado, r.label, { choice: resp.choice, confidence: resp.confidence ?? null });
       results.push({ ...base, ...resp });
     });
+    if (deSesion && (faltan.length || malas.length)) { console.log(`  ${e.pdf}: NO SE ESCRIBE .jev.json: ${faltan.length ? `faltan ${faltan.length} rubro(s) en el archivo de la sesión (${faltan.slice(0, 5).join(' | ')})` : ''}${malas.length ? ` · categoría inexistente: ${malas.slice(0, 5).join(' | ')}` : ''}`); continue; }
     if (stopAll) { console.log(`\nDETENIDO: ${stopAll}`); break; }
     writeFileSync(resolve(root, derivado(e.md, '.jev.json')), JSON.stringify({ md: e.md, generatedAt: new Date().toISOString(), rubrosHuella: huellaRubros(rj), rubros: results }, null, 1));
     const hi = results.filter((r) => r.confidence >= 0.9).length;
