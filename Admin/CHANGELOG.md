@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 833 — St. Gallen, Juventude, Ponte Preta y Patro Eisden; cierre del día (2026-10-19)
+
+* St. Gallen 2019, 2022 y 2023 con el perímetro AG + Event AG (como 2024-25); 298 ai: `verificar.mjs` saca la compensación intragrupo
+  (St. Gallen 2021-22: ingresos 42,469 → 32,669). Juventude 2021, Ponte Preta 2025 y Patro Eisden 2022. Unión Magdalena 2025 rehecho
+  con el cierre 2025-12-31 (falta la pasada de carga). Cierres de Pipeline 5 y Pantallas 3 (segunda tanda) en `Admin/Archive/`.
+
 ## Versión 832 — Quién audita: aviso al cargar (2026-10-19)
 
 * 282 f: `cargar-lote.mjs`, al final, lista los años recién escritos sin línea en `auditoria.jsonl` y arma sus extractos en

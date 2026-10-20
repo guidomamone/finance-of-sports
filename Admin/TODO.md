@@ -25,14 +25,14 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 292: cargar lo transcripto: Suiza (Basel, Luzern 2018-2024 salvo 2023, St. Gallen cargándose), Países Bajos y Bélgica (Lommel, Lierse 2020-2021, Patro Eisden 2021-2023) hechos; quedan Luzern 2023 (recargar: la 298 k2 ya está), Lierse SK 2019 (298 w2), Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022 (ligas de la 298 af), y después Beşiktaş y Colombia --> Pantallas 3 (St. Gallen --> Pipeline 5)
+* 292: cargar lo transcripto: Suiza, Países Bajos y Bélgica casi completos; quedan St. Gallen 2020, 2021 y 2024 (dudas de localizar en la cola, "¿la TV está dentro de Diverse Erträge?", y volver a correr sg6), Luzern 2023 (recargar: la 298 k2 ya está), Lierse SK 2019 (298 w2), Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022 (filas de la 298 af ya decididas: escribirlas), y después Beşiktaş y Colombia --> Pantallas 3 (St. Gallen --> Pipeline)
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script (af, ligas belgas: aprobada, la escribe; aj, signos de la columna previa; z2, Westerlo 2015 de 18 meses y Aston Villa de 13, a decidir con vos; g2, condicional; nuevas p2, q2, r2, s2, v2 y w2, de los lotes 97, 98 y 103) --> Pipeline 5
+* 298: mejoras de script (af: escribir las filas belgas ya decididas y bajar sus listas; aj; z2, Westerlo 2015 de 18 meses y Aston Villa de 13, a decidir con vos; g2, condicional; p2, q2, r2, s2, v2 y w2) --> Pipeline
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -47,7 +47,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 252: ejercicios nuevos: lote 103 hecho (19 ejercicios de 2025); quedan Unión Magdalena 2025 (en la cola), River cierre 2025-12-31, Vasco da Gama 2024, Amazonas FC 2025 y los 14 clubes que el script marca de más; Alemania en enero de 2027 --> Pantallas 3
+* 252: ejercicios nuevos: lote 103 hecho (19 ejercicios de 2025); Unión Magdalena 2025 listo para una pasada barata de carga (lote 105, --ejecutar --cargar); quedan River cierre 2025-12-31, Vasco da Gama 2024, Amazonas FC 2025 y los 14 clubes que el script marca de más; Alemania en enero de 2027 --> Pantallas 3
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 * 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
@@ -253,12 +253,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    entre una sola.
 af) listas de las ligas amateur belgas
    de esos años para el estadio (Lokeren-Temse 2022, Patro Eisden 2013-2015).
-   ai) St. Gallen: la compensación intragrupo "Entschädigung von/an FCSG Event AG" se suma como ingreso en la columna combinada (2018-19,
-   2019-20, 2021-22 y 2023-24); con el perímetro de las dos sociedades sumadas debería netearse (decisión de perímetro de Guido pendiente).
-   Y 6 casos de la cola ("Erträge brutto" y "Direkte Kosten" 2018-19, 2021-22 y 2022-23): ¿se carga el desglose de las cuentas individuales
-   de las dos sociedades (suman casi exacto) en vez de la fila consolidada? Si no: lump_football_operations y other_expenses.
-   aj) la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen", y suma el subtotal
-   "Erträge netto" cuando el documento lo imprime. Detalle de ah a aj en `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`.
    p2) dos filas con el mismo rótulo en lados opuestos ("Intereses" de ingreso y de gasto, Boyacá Chicó 2025, L839 y L999): distinguirlas
    antes de pasarlas al resultado financiero (lo propuso un subagente de Pantallas 3).
    q2) partir una fila que mezcla amortización de pases con depreciación (Silkeborg 2025 "Depreciation, amortisation and impairment" 6.502
