@@ -247,6 +247,7 @@ const FX_CLOSE = {
   'GBP@2021-07-31': { fx: 0.719062, source: 'market_close', label: 'Tipo spot del Bank of England, última rueda hábil antes del cierre (2021-07-30, 2021-07-31 no es día hábil)' },
   'CHF@2021-06-30': { fx: 0.9253, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2021-06-30' },
   'TRY@2023-05-31': { fx: 20.6632, source: 'market_close', label: 'Döviz alış del TCMB al 2023-05-31' },
+  'NOK@2008-12-31': { fx: 6.9989, source: 'market_close', label: 'Tipo medio de referencia de Norges Bank al 2008-12-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

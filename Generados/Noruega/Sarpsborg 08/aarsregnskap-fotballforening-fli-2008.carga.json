@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.pdf",
- "generado": "2026-10-20T19:58:26.550Z",
+ "generado": "2026-10-20T19:59:44.879Z",
  "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-19: perimetro-senales.mjs: el ejercicio 2008-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)"
@@ -605,10 +605,9 @@
   "label": "Tipo medio de referencia de Norges Bank al 2008-12-31"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no aparece en los rosters cacheados de 2008 (no-eliteserien, no-1divisjon, no-2divisjon): puede haber jugado otra división",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "no-1divisjon",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -647,9 +646,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no aparece en los rosters cacheados de 2008 (no-eliteserien, no-1divisjon, no-2divisjon): puede haber jugado otra división",
-   "estado": "pendiente"
+   "valor": "no-1divisjon",
+   "fuente": "data/club-leagues/no.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {
