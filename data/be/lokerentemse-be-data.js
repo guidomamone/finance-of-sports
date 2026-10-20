@@ -16,6 +16,10 @@ const lokerentemsebeRevenueLinesByYear = {
     { rawLabel:'Overige bedrijfsopbrengsten (implícito en la Brutomarge)', normalizedCategory:'other_income', amountNative:0.076401, disclosureLevel:'aggregated' },
     { rawLabel:'Omzet', normalizedCategory:'lump_football_operations', amountNative:0.805246, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Overige bedrijfsopbrengsten (implícito en la Brutomarge)', normalizedCategory:'other_income', amountNative:0.06428, disclosureLevel:'aggregated' },
+    { rawLabel:'Omzet', normalizedCategory:'lump_football_operations', amountNative:1.448549, disclosureLevel:'aggregated' },
+  ],
 };
 const lokerentemsebeExpenseLinesByYear = {
   2025: [
@@ -46,6 +50,12 @@ const lokerentemsebeExpenseLinesByYear = {
     { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-0.207898, disclosureLevel:'aggregated' },
     { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.001816, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.168361, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-0.78117, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-0.768227, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.002548, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.005042, disclosureLevel:'aggregated' },
   ],
 };
 const lokerentemsebeFiscalYearMeta = {
@@ -122,6 +132,23 @@ const lokerentemsebeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.881647, officialTotalExpenses:0.866767, officialPAT:0.005382,
   },
+  2022: {
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'lokerentemse-be-jaarrekening-2022-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.004083, tax:0,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.001217},
+      {label:'Recurrente financiële kosten', value:-0.0053},
+    ],
+    sinDesglose: [
+      {renglon:'Omzet', lado:'revenue', importe:1.448549, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.512829, officialTotalExpenses:1.556987, officialPAT:-0.04824,
+  },
 };
 const lokerentemsebePresupuestoOverlayByYear = {};
 
@@ -156,6 +183,11 @@ Object.assign(sources, {
   'lokerentemse-be-jaarrekening-2021-06-30-individual': {
     id:'lokerentemse-be-jaarrekening-2021-06-30-individual', clubId:'lokerentemse-be',
     title:'Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2021-06-30-individual (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'lokerentemse-be-jaarrekening-2022-06-30-individual': {
+    id:'lokerentemse-be-jaarrekening-2022-06-30-individual', clubId:'lokerentemse-be',
+    title:'Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2022-06-30-individual (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
