@@ -15,6 +15,13 @@ const nottinghamforestGbRevenueLinesByYear = {
     { rawLabel:'Loan fees received', normalizedCategory:'player_sales', amountNative:4.384, disclosureLevel:'detailed' },
     { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:7.017, disclosureLevel:'detailed' },
   ],
+  2023: [
+    { rawLabel:'Gate receipts', normalizedCategory:'matchday_competition', amountNative:10.992, disclosureLevel:'aggregated' },
+    { rawLabel:'Media related activity', normalizedCategory:'broadcasting', amountNative:124.836, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:7.127, disclosureLevel:'aggregated' },
+    { rawLabel:'Other commercial', normalizedCategory:'sponsorship_commercial', amountNative:11.803, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:2.614, disclosureLevel:'aggregated' },
+  ],
 };
 
 const nottinghamforestGbExpenseLinesByYear = {
@@ -30,6 +37,11 @@ const nottinghamforestGbExpenseLinesByYear = {
     { rawLabel:'Impairment of player registrations', normalizedCategory:'player_impairment', amountNative:-5.322, disclosureLevel:'detailed' },
     { rawLabel:'Depreciation of owned tangible fixed assets', normalizedCategory:'depreciation', amountNative:-1.894, disclosureLevel:'detailed' },
     { rawLabel:'Otros costos operativos (Cost of sales + Administrative expenses no desglosados por naturaleza, neto de staff/amortización/impairment/depreciación)', normalizedCategory:'other_expenses', amountNative:-43.923, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-11.176, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-203.14, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating expenses', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -51,6 +63,20 @@ const nottinghamforestGbFiscalYearMeta = {
     grossDebt:146.485, cash:13.224,
     profitOnPlayerSales:0, assetSales:0, netInterest:-21.011, tax:0,
     officialTotalRevenue:228.763, officialTotalExpenses:286.673, officialPAT:-78.921,
+  },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-06-30',
+    sourceId:'nottinghamforest-gb-full-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-10.302, tax:0,
+    extraRows: [
+      {label:'Interest payable and similar expenses', value:-10.302},
+      {label:'Tax on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:157.372, officialTotalExpenses:214.316, officialPAT:-67.246,
   },
 };
 
@@ -82,6 +108,11 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/01630402/filing-history',
     publicNote:'Cuentas individuales auditadas (Azets Audit Services, sin salvedades) de Nottingham Forest Football Club Limited, depositadas en Companies House (Reino Unido). Ejercicio cerrado el 30 de junio de 2025 (temporada 2024/25).',
+  },
+  'nottinghamforest-gb-full-accounts-2022-23': {
+    id:'nottinghamforest-gb-full-accounts-2022-23', clubId:'nottinghamforest-gb',
+    title:'Nottingham Forest Football Club Limited — nottinghamforest-full-accounts-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 

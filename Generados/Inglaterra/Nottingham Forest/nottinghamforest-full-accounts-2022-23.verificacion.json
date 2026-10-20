@@ -1,0 +1,151 @@
+{
+ "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.md",
+ "generado": "2026-10-20T18:14:06.871Z",
+ "estado": "ok",
+ "clubId": "nottinghamforest-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 154.758 cierra; además se suman 1 línea(s) fuera de ese total (2.614)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4210854715202004e-14
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 33.767 en nottinghamforest-full-accounts-2021-22.pdf y 33.767 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (144.912 contra 203.14, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: La nota de remuneraciones (L929) no indica a qué renglón del estado pertenece; parte podría estar en 'Cost of sales'."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 144.912,
+   "objetivo": 203.14
+  }
+ ],
+ "totales": {
+  "ingresos": 157.372,
+  "gastos": 214.316,
+  "financiero": -10.302,
+  "impuesto": 0,
+  "resultadoImpreso": -67.246,
+  "resultadoParaCargar": -67.246,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 10.992,
+   "pagina": 25,
+   "linea": 889,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Media related activity",
+   "lado": "ingreso",
+   "M": 124.836,
+   "pagina": 25,
+   "linea": 890,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 7.127,
+   "pagina": 25,
+   "linea": 891,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other commercial",
+   "lado": "ingreso",
+   "M": 11.803,
+   "pagina": 25,
+   "linea": 892,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of player registrations",
+   "lado": "ingreso",
+   "M": 2.614,
+   "pagina": 14,
+   "linea": 461,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 11.176,
+   "pagina": 14,
+   "linea": 455,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 203.14,
+   "pagina": 14,
+   "linea": 457,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other operating expenses",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 14,
+   "linea": 458,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -10.302,
+   "linea": 460
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 463
+  }
+ ]
+}

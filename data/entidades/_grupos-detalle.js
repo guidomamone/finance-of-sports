@@ -665,6 +665,7 @@ window.GRUPOS = {
   ],
   "ingresos": {
    "nottinghamforest-gb": {
+    "2023": 200.083,
     "2024": 366.915,
     "2025": 313.417
    },

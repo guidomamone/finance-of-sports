@@ -1,0 +1,502 @@
+{
+ "pdf": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2021-22.md",
+ "mdSha1": "0ec81436754341052843fa8635fe47973a062b99",
+ "ubicacionSha1": "63fdf22c8ca404f61877346de0cb88006942f912",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:03:08.445Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b7"
+  ],
+  "notas_gastos": [
+   "b11",
+   "b14",
+   "b15",
+   "b16"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "miles",
+   "evidencia": "L417: Year ended 30 June 2022 £000"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L830: 2022 £000"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L883: 2022 £000"
+  },
+  {
+   "bloque": "b14",
+   "escala": "miles",
+   "evidencia": "L917: 2022 £000"
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "L929: 2022 £000"
+  },
+  {
+   "bloque": "b16",
+   "escala": "miles",
+   "evidencia": "L937: 2022 £000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 419,
+   "etiqueta": "Turnover",
+   "actual": "29,683",
+   "anterior": "18,408",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 420,
+   "etiqueta": "Cost of sales",
+   "actual": "(5,512)",
+   "anterior": "(7,398)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 421,
+   "etiqueta": "Gross profit",
+   "actual": "24,171",
+   "anterior": "11,010",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 422,
+   "etiqueta": "Administrative expenses",
+   "actual": "(73,684)",
+   "anterior": "(46,765)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 423,
+   "etiqueta": "Other operating (expenses)/income",
+   "actual": "(20)",
+   "anterior": "1,325",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 424,
+   "etiqueta": "Operating loss",
+   "actual": "(49,533)",
+   "anterior": "(34,430)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 425,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(768)",
+   "anterior": "(418)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 426,
+   "etiqueta": "Profit on disposal of player registrations",
+   "actual": "4,084",
+   "anterior": "14,322",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 427,
+   "etiqueta": "Loans written off",
+   "actual": "-",
+   "anterior": "5,000",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 428,
+   "etiqueta": "Loss before taxation",
+   "actual": "(46,217)",
+   "anterior": "(15,526)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 429,
+   "etiqueta": "Tax on loss",
+   "actual": "607",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 430,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(45,610)",
+   "anterior": "(15,526)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 833,
+   "etiqueta": "Sponsorship and advertising",
+   "actual": "2,689",
+   "anterior": "2,957",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 834,
+   "etiqueta": "Catering",
+   "actual": "141",
+   "anterior": "7",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 835,
+   "etiqueta": "Grants & royalties",
+   "actual": "10,143",
+   "anterior": "9,592",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 836,
+   "etiqueta": "TV & radio",
+   "actual": "2,016",
+   "anterior": "1,358",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 837,
+   "etiqueta": "Ticket & membership sales",
+   "actual": "8,227",
+   "anterior": "1,257",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 838,
+   "etiqueta": "Commercial",
+   "actual": "1,925",
+   "anterior": "20",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 839,
+   "etiqueta": "Programme & other match day income",
+   "actual": "484",
+   "anterior": "25",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 840,
+   "etiqueta": "Other non match day income",
+   "actual": "36",
+   "anterior": "4",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 841,
+   "etiqueta": "Players",
+   "actual": "473",
+   "anterior": "558",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 842,
+   "etiqueta": "Retail",
+   "actual": "3,549",
+   "anterior": "2,580",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 843,
+   "etiqueta": "Other",
+   "actual": "-",
+   "anterior": "51",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 844,
+   "etiqueta": "",
+   "actual": "29,683",
+   "anterior": "18,408",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 885,
+   "etiqueta": "Wages and salaries",
+   "actual": "51,817",
+   "anterior": "31,940",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 886,
+   "etiqueta": "Social security costs",
+   "actual": "6,593",
+   "anterior": "5,128",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 887,
+   "etiqueta": "Pension costs",
+   "actual": "155",
+   "anterior": "128",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 888,
+   "etiqueta": "",
+   "actual": "58,565",
+   "anterior": "37,196",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 919,
+   "etiqueta": "Exchange losses/(gains)",
+   "actual": "96",
+   "anterior": "(640)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b14",
+   "linea": 920,
+   "etiqueta": "Government grants",
+   "actual": "-",
+   "anterior": "(1,046)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b14",
+   "linea": 921,
+   "etiqueta": "Depreciation of owned tangible fixed assets",
+   "actual": "424",
+   "anterior": "585",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b14",
+   "linea": 922,
+   "etiqueta": "Loss on disposal of tangible fixed assets",
+   "actual": "6",
+   "anterior": "11",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b14",
+   "linea": 923,
+   "etiqueta": "Amortisation of intangible assets",
+   "actual": "7,310",
+   "anterior": "5,101",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b14",
+   "linea": 924,
+   "etiqueta": "Promotion related payments",
+   "actual": "20,920",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b14",
+   "linea": 925,
+   "etiqueta": "Operating lease charges",
+   "actual": "185",
+   "anterior": "212",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "bloque": "b15",
+   "linea": 931,
+   "etiqueta": "Other interest on financial liabilities",
+   "actual": "718",
+   "anterior": "389",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b15",
+   "linea": 932,
+   "etiqueta": "Net interest on the net defined benefit liability",
+   "actual": "50",
+   "anterior": "29",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b15",
+   "linea": 933,
+   "etiqueta": "",
+   "actual": "768",
+   "anterior": "418",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b16",
+   "linea": 939,
+   "etiqueta": "Profit/loss on disposal of player registrations",
+   "actual": "4,084",
+   "anterior": "14,322",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit on disposal of player registrations"
+  },
+  {
+   "bloque": "b16",
+   "linea": 940,
+   "etiqueta": "Loans written off",
+   "actual": "-",
+   "anterior": "5,000",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Loans written off"
+  },
+  {
+   "bloque": "b16",
+   "linea": 941,
+   "etiqueta": "",
+   "actual": "4,084",
+   "anterior": "19,322",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 419,
+  "actual": "29,683"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 430,
+  "actual": "(45,610)",
+  "anterior": "(15,526)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro de remuneraciones (L885-L888, total 58,565) sin asignarlo a un renglón del estado, ya que se reparte entre Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El costo de personal de b11 (L888) no coincide con ningún renglón del estado; no hay una fila específica de salarios del plantel, solo 'Wages and salaries' (L885) del total del personal.",
+   "bloques": [
+    "b11",
+    "b2"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan las filas de la nota 7 (L919-L925) como informativas de 'Operating loss' y no como desglose sumable?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating loss",
+   "texto": "La nota 7 lista cargos incluidos en el resultado operativo, no un desglose que sume a un renglón (L917).",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "No aparece una fila 'Salarios del plantel' en el documento; el único dato de salarios es 'Wages and salaries' (L885) dentro de la remuneración total del personal (b11). El ejercicio anterior abarca 13 meses."
+}

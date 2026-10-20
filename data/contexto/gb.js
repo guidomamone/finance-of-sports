@@ -99,6 +99,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"St James' Park","capacidad":52258,"sponsor":"Sela","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'nottinghamforest-gb': {
+    2023: {"estadio":"City Ground","capacidad":30332,"sponsor":"UNHCR","marca":"Macron","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"City Ground","capacidad":30404,"sponsor":"Kaiyun Sports","marca":"Adidas","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"City Ground","capacidad":31042,"sponsor":"Kaiyun Sports","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

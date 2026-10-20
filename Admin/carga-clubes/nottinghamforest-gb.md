@@ -118,6 +118,43 @@ el Championship, confirmado por el propio Strategic Report de cada documento. El
 pero cae enteramente dentro de la temporada 2024/25 de Premier League, sin ambigüedad de liga.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate receipts | pág. 25, precedente |
+| 2 | Media related activity | pág. 25, precedente |
+| 3 | Merchandising | pág. 25, precedente |
+| 4 | Other commercial | pág. 25, precedente |
+| 5 | Profit on disposal of player registrations | pág. 14, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 14, precedente |
+| 2 | Administrative expenses | pág. 14, Jev 1 |
+| 3 | Other operating expenses | pág. 14, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Nottingham Forest".
+```
+
 ## Fuentes
 
 ### nottinghamforest-gb-full-accounts-2024
@@ -134,6 +171,14 @@ _note (data/):_
 
 ```text
 PDF con texto nativo, transcripción completa en Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2024-25.md. Mismo criterio de categorización que el ejercicio 2024.
+```
+
+### nottinghamforest-gb-full-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Nottingham Forest/nottinghamforest-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros
