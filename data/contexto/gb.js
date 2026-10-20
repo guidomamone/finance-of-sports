@@ -106,6 +106,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'sunderland-gb': {
     2019: {"estadio":"Stadium of Light","capacidad":48707,"sponsor":"BETDAQ","marca":"Adidas","temporada":"2018–19 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380005833"},
     2020: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Children with Cancer UK","marca":"Adidas","temporada":"2019–20 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1366642605"},
+    2021: {"estadio":"Stadium of Light","capacidad":48707,"sponsor":"Great Annual Savings Group","marca":"Nike","temporada":"2020–21 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358363174"},
     2022: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Great Annual Savings Group","marca":"Nike","temporada":"2021–22 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358363186"},
     2024: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Spreadex Sports","marca":"Nike","temporada":"2023–24 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374030992"},
     2025: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Spreadex Sports","marca":"Hummel","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},

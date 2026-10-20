@@ -53,3 +53,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2019 desde `Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2018-19.pdf` (sourceId `sunderland-gb-full-accounts-2018-19`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2020 desde `Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2019-20.pdf` (sourceId `sunderland-gb-full-accounts-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2021 desde `Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2020-21.pdf` (sourceId `sunderland-gb-full-accounts-2020-21`).
