@@ -47,10 +47,10 @@ const stuttgartDeFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:'wehrle',
     netInterest:-6.290382,
-    tax:-0.578130,
+    tax:-0.480418,
     profitOnPlayerSales:0, assetSales:0,
     grossDebt:125.909849, cash:9.153243,
-    officialTotalRevenue:217.622653, officialTotalExpenses:210.074841, officialPAT:0.679300,
+    officialTotalRevenue:217.622653, officialTotalExpenses:210.074841, officialPAT:0.777012,
   },
   2024: {
     currency:'EUR', fxRef:'EUR@2024-12-31',
@@ -58,10 +58,10 @@ const stuttgartDeFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:'wehrle',
     netInterest:-3.910318,
-    tax:-2.580281,
+    tax:-2.490705,
     profitOnPlayerSales:0, assetSales:0,
     grossDebt:140.706446, cash:10.438385,
-    officialTotalRevenue:299.815224, officialTotalExpenses:277.881350, officialPAT:15.443276,
+    officialTotalRevenue:299.815224, officialTotalExpenses:277.881350, officialPAT:15.532851,
   },
 };
 
