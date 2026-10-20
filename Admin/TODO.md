@@ -239,9 +239,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola.
-   x2) `check-transcripcion-fidelidad.js` da "sin hallazgos" aunque la transcripción no tenga ninguna de las cifras del documento: mira
-   marcas de página y placeholders, no números (medido en el 314, 0 de 11 cifras halladas y sin hallazgos). No sirve de guardia para un
-   motor nuevo; un chequeo de cifras contra el PDF (validar-bloques) sí.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Medido otra vez el 2026-10-19 con 1.011 club-años (`node tools/estimar.mjs --medir --detalle`): sigue en 50%,
