@@ -7,7 +7,8 @@ window.RANKINGS["gb-scottishpremiership"] = {
     clubs: [
       { id:"celtic-gb", revenue:239.875, reportType:"official_balance_sheet",
         sourceId:"celtic-gb-plc-group-accounts-2024-25",
-        mix:[["Venta de Jugadores",43.14],["Fútbol profesional (sin desglosar por la fuente)",196.735]] },
+        mix:[["Venta de Jugadores",43.14],["Fútbol profesional (sin desglosar por la fuente)",196.735]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };
