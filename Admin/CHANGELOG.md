@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 854 — Molde FLI 2009-2023 (2026-10-20) [261 · molde-no]
+
+- Merge de Onboarding 4: Molde FLI 2009-2015 y 2017-2023 (lote 116; la AS va a descartados). 2016 y 2024 frenados por
+  "numero-no-confirmado contestado no destraba" (anotados en frenados-por-script.jsonl).
+
 ## Versión 853 — 255 cerrado (2026-10-20) [255 · 327 · 292]
 
 - El 255 sale del TODO; su inventario pasa a `Admin/Archive/consolidar-reglas-255.md`. Los 12 chequeos automatizables quedan como el 327.
