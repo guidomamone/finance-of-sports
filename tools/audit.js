@@ -1546,6 +1546,27 @@ function listarFx(api) {
   console.log('Lo que declara un documento va literal en el archivo del club; lo que es cotización de mercado sale de FX_CLOSE (data/currency-map.js).');
 }
 
+// ---------------------------------------------------------------------------
+// DATOS COMO JSON CON ESQUEMA (to-do 245, aprobado por Guido el 2026-10-20: aviso P2, no freno). Cada data/<país>/*-data.js se pasa al JSON del
+// esquema de Admin/mediciones/245-esquema.md (tools/json-datos.mjs) y se valida: una clave que el diccionario no conoce, un tipo mal, una categoría que no
+// está en category-map.js, un año repetido o fuera de orden. Cuesta menos de 1 segundo sobre los 313 clubes (medido). No escribe nada.
+// ---------------------------------------------------------------------------
+function checkDatosJson() {
+  let J;
+  try { J = require('./json-datos.mjs'); } catch (e) { add('P2', 'datos-json-esquema', `no se pudo cargar tools/json-datos.mjs: ${e.message}`); return; }
+  const categorias = J.categoriasDelSitio(); const externos = J.referenciasExternas();
+  for (const rel of archivosData()) {
+    const id = idDeArchivo(rel);
+    try {
+      const j = JSON.parse(JSON.stringify(J.aJson(J.leerClub(rel), { exportadoEn: '2026-01-01' })));
+      const r = J.validar(j, { categorias, externos });
+      for (const m of r.errores.slice(0, 3)) add('P2', 'datos-json-esquema', `${id}: ${m}`);
+      if (r.errores.length > 3) add('P2', 'datos-json-esquema', `${id}: ... y ${r.errores.length - 3} error(es) más del esquema`);
+      for (const m of r.avisos.slice(0, 3)) add('P2', 'datos-json-esquema', `${id}: ${m}`);
+    } catch (e) { add('P2', 'datos-json-esquema', `${id}: no se pudo pasar al esquema JSON: ${e.message}`); }
+  }
+}
+
 function main() {
   let api;
   try { api = loadEngine(); }
@@ -1575,6 +1596,7 @@ function main() {
   checkRutasMuertas();
   checkHigiene(api);
   checkGestiones(api);
+  checkDatosJson();
 
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
   // (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.
