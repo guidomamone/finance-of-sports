@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 313 clubes, 1197 ejercicios, 21 países.
+TOTAL: 314 clubes, 1205 ejercicios, 22 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -60,12 +60,12 @@ BE (22)
   Dender EH             1 ejercicio (2024/2025), balance, EUR
   Genk                  1 ejercicio (2024/2025), balance, EUR
   Gent                  1 ejercicio (2024/2025), balance, EUR
-  Lierse SK             6 ejercicios (2019/2020 a 2024/2025), balance, EUR
-  Lokeren-Temse         3 ejercicios (2022/2023 a 2024/2025), balance, EUR
+  Lierse SK             7 ejercicios (2018/2019 a 2024/2025), balance, EUR
+  Lokeren-Temse         5 ejercicios (2020/2021 a 2024/2025), balance, EUR
   Lommel SK             8 ejercicios (2017/2018 a 2024/2025), balance, EUR
   Mechelen              1 ejercicio (2024/2025), balance, EUR
   OH Leuven             5 ejercicios (2018/2019, 2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  Patro Eisden          10 ejercicios (2015/2016 a 2024/2025), balance, EUR
+  Patro Eisden          11 ejercicios (2013/2014, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
   RAAL La Louvière      1 ejercicio (2024/2025), balance, EUR
   RWDM                  6 ejercicios (2019/2020 a 2024/2025), balance, EUR
   Sint-Truiden          1 ejercicio (2024/2025), balance, EUR
@@ -120,8 +120,8 @@ BRASIL (42)
 
 CH (3)
   Basel       17 ejercicios (2005 a 2021), balance, CHF
-  Luzern      6 ejercicios (2017/2018, 2018/2019, 2019/2020, 2021/2022, 2023/2024, 2024/2025), balance, CHF, sin deuda/caja
-  St. Gallen  4 ejercicios (2018/2019, 2021/2022, 2022/2023, 2024/2025), balance, CHF, sin deuda/caja
+  Luzern      7 ejercicios (2017/2018, 2018/2019, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, CHF, sin deuda/caja
+  St. Gallen  6 ejercicios (2018/2019, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, CHF, sin deuda/caja
 
 CHILE (3)
   Colo-Colo             4 ejercicios (2022 a 2025), balance, CLP
@@ -383,5 +383,8 @@ RU (16)
   Sochi                  5 ejercicios (2021 a 2025), balance, RUB
   Spartak Moscow         5 ejercicios (2021 a 2025), balance, RUB
   Zenit                  5 ejercicios (2021 a 2025), balance, RUB
+
+TR (1)
+  Beşiktaş  1 ejercicio (2022/2023), balance, TRY, sin deuda/caja
 
 ===== CLUB-INDEX:END =====

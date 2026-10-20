@@ -1,0 +1,887 @@
+{
+ "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf",
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.md",
+ "mdSha1": "9ac0e53c30f3173265a544458fda84f0db04fcf2",
+ "ubicacionSha1": "43155b6edfd58dae6197c55a24d42cf59abeb425",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:49:18.075Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b50",
+   "b53"
+  ],
+  "notas_gastos": [
+   "b51",
+   "b52",
+   "b54",
+   "b55",
+   "b56"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L149: (Para Birimi- Aksi belirtilmedikçe Yeni Türk Lirası – YTL ); L151: GELİR TABLOSU (YTL)"
+  },
+  {
+   "bloque": "b50",
+   "escala": "unidades",
+   "evidencia": "Nota sin frase propia; misma nota con L2059: Aksi belirtilmedikçe Yeni Türk Lirası – YTL"
+  },
+  {
+   "bloque": "b53",
+   "escala": "unidades",
+   "evidencia": "L2059/L2117: Aksi belirtilmedikçe Yeni Türk Lirası – YTL"
+  },
+  {
+   "bloque": "b51",
+   "escala": "unidades",
+   "evidencia": "L2059: (Para Birimi- Aksi belirtilmedikçe Yeni Türk Lirası – YTL )"
+  },
+  {
+   "bloque": "b52",
+   "escala": "unidades",
+   "evidencia": "L2059: Aksi belirtilmedikçe Yeni Türk Lirası – YTL"
+  },
+  {
+   "bloque": "b54",
+   "escala": "unidades",
+   "evidencia": "L2117: (Para Birimi- Aksi belirtilmedikçe Yeni Türk Lirası – YTL )"
+  },
+  {
+   "bloque": "b55",
+   "escala": "unidades",
+   "evidencia": "L2117: Aksi belirtilmedikçe Yeni Türk Lirası – YTL"
+  },
+  {
+   "bloque": "b56",
+   "escala": "unidades",
+   "evidencia": "L2117: Aksi belirtilmedikçe Yeni Türk Lirası – YTL"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 153,
+   "etiqueta": "ESAS FAALİYET GELİRLERİ",
+   "actual": "72.627.888",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 154,
+   "etiqueta": "Satış Gelirleri (net)",
+   "actual": "72.627.888",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 155,
+   "etiqueta": "Satışların Maliyeti (-)",
+   "actual": "(66.616.877)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 156,
+   "etiqueta": "Hizmet Gelirleri (net)",
+   "actual": "0",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 157,
+   "etiqueta": "Esas Faaliyetlerden Diğer Gelirler / faiz+temettü+kira (net)",
+   "actual": "0",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 158,
+   "etiqueta": "BRÜT ESAS FAALİYET KARI/ZARARI",
+   "actual": "6.011.011",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 159,
+   "etiqueta": "Faaliyet Giderleri (-)",
+   "actual": "(7.308.132)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 160,
+   "etiqueta": "NET ESAS FAALİYET KARI/ZARARI",
+   "actual": "(1.297.121)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 161,
+   "etiqueta": "Diğer Faaliyetlerden Gelir ve Karlar",
+   "actual": "24.665.018",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 162,
+   "etiqueta": "Diğer Faaliyetlerden Gider ve Zararlar (-)",
+   "actual": "(22.287.703)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 163,
+   "etiqueta": "Finansman Giderleri (-)",
+   "actual": "(13.626.482)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 164,
+   "etiqueta": "FAALİYET KARI/ZARARI",
+   "actual": "(12.546.288)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 165,
+   "etiqueta": "Net Parasal Pozisyon Kar/Zararı",
+   "actual": "0",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 166,
+   "etiqueta": "ANA ORTAKLIK DIŞI KAR/ZARAR",
+   "actual": "59",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 167,
+   "etiqueta": "VERGİ ÖNCESİ KAR/ZARAR",
+   "actual": "(12.546.229)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 168,
+   "etiqueta": "Vergiler",
+   "actual": "4.651",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 169,
+   "etiqueta": "NET DÖNEM KARI/ZARARI",
+   "actual": "(12.541.578)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b50",
+   "linea": 2036,
+   "etiqueta": "TV Yayın Gelirleri",
+   "actual": "29.503.588",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2037,
+   "etiqueta": "Sponsorluk Gelirleri",
+   "actual": "10.141.237",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2038,
+   "etiqueta": "Maç Hasılatları",
+   "actual": "2.130.844",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2039,
+   "etiqueta": "İsim Hakkı Gelirleri",
+   "actual": "4.363.314",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2040,
+   "etiqueta": "Lisans Geliri",
+   "actual": "707.971",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2041,
+   "etiqueta": "Futbolcu Kira Gelirleri",
+   "actual": "2.260.760",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2042,
+   "etiqueta": "Futbolcu Cezaları",
+   "actual": "559.340",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2043,
+   "etiqueta": "Kombine Kart Hasılatı",
+   "actual": "7.708.976",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2044,
+   "etiqueta": "Futbolcu Satış Geliri",
+   "actual": "7.796.984",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2045,
+   "etiqueta": "Futbolcu Satış Zararı",
+   "actual": "(899.383)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2046,
+   "etiqueta": "Sigorta Satışı",
+   "actual": "66.310",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2047,
+   "etiqueta": "Seyahat Satışı",
+   "actual": "804.355",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2048,
+   "etiqueta": "Lisanslı Ürün Satışı",
+   "actual": "6.228.109",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2049,
+   "etiqueta": "Diğer",
+   "actual": "2.450.531",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2050,
+   "etiqueta": "İndirimler",
+   "actual": "(1.195.048)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2063,
+   "etiqueta": "Satış Gelirleri (Net)",
+   "actual": "72.627.888",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Satış Gelirleri (net)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2064,
+   "etiqueta": "Satışların Maliyeti",
+   "actual": "(66.616.877)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2065,
+   "etiqueta": "Ticari Mal Maliyeti",
+   "actual": "(4.016.514)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2066,
+   "etiqueta": "Sporcu ve Teknik Kadro Ücretleri",
+   "actual": "(40.788.107)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2067,
+   "etiqueta": "Stad Giderleri",
+   "actual": "(2.515.380)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2068,
+   "etiqueta": "Tesis Giderleri",
+   "actual": "(2.165.134)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2069,
+   "etiqueta": "Seyahat Gideri",
+   "actual": "(1.579.060)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2070,
+   "etiqueta": "Amortisman ve İtfa Payları",
+   "actual": "(488.603)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2071,
+   "etiqueta": "Federasyon ve UEFA Gideri",
+   "actual": "(1.645.304)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2072,
+   "etiqueta": "Futbolcu Hak İtfa Payı",
+   "actual": "(8.921.709)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2073,
+   "etiqueta": "Maç Giderleri",
+   "actual": "(1.963.150)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2074,
+   "etiqueta": "Diğer Hizmet Maliyeti",
+   "actual": "(2.533.916)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Satışların Maliyeti (-)"
+  },
+  {
+   "bloque": "b51",
+   "linea": 2075,
+   "etiqueta": "Brüt Esas Faaliyet Karı / Zararı",
+   "actual": "6.011.011",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "BRÜT ESAS FAALİYET KARI/ZARARI"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2081,
+   "etiqueta": "Pazarlama satış dağıtım giderleri",
+   "actual": "(2.315.720)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Faaliyet Giderleri (-)"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2082,
+   "etiqueta": "Sponsorluk Giderleri",
+   "actual": "(349.998)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pazarlama satış dağıtım giderleri"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2083,
+   "etiqueta": "Amortisman Giderleri",
+   "actual": "(112.693)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pazarlama satış dağıtım giderleri"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2084,
+   "etiqueta": "Sergi-Reklam Giderleri",
+   "actual": "(5.475)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pazarlama satış dağıtım giderleri"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2085,
+   "etiqueta": "Personel Giderleri",
+   "actual": "(1.190.356)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pazarlama satış dağıtım giderleri"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2086,
+   "etiqueta": "Diğer",
+   "actual": "(657.198)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pazarlama satış dağıtım giderleri"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2087,
+   "etiqueta": "Genel Yönetim Giderleri",
+   "actual": "(4.992.412)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Faaliyet Giderleri (-)"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2088,
+   "etiqueta": "Personel giderleri",
+   "actual": "(1.783.683)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Genel Yönetim Giderleri"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2089,
+   "etiqueta": "Komisyon ve Diğer Hizmet Giderleri",
+   "actual": "(760.719)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Genel Yönetim Giderleri"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2090,
+   "etiqueta": "Amortisman ve Tükenme Payları",
+   "actual": "(1.196.840)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Genel Yönetim Giderleri"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2091,
+   "etiqueta": "Diğer",
+   "actual": "(1.251.170)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Genel Yönetim Giderleri"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2092,
+   "etiqueta": "Toplam Faaliyet Giderleri",
+   "actual": "(7.308.132)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Faaliyet Giderleri (-)"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2098,
+   "etiqueta": "BJK Dernek Cari Hesap Faiz Geliri",
+   "actual": "12.492.239",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diğer Faaliyetlerden Gelir ve Karlar"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2099,
+   "etiqueta": "Kur Farkı Gelirleri",
+   "actual": "10.822.437",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diğer Faaliyetlerden Gelir ve Karlar"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2100,
+   "etiqueta": "Cari Dönem Prekont Gelirleri",
+   "actual": "276.877",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Diğer Faaliyetlerden Gelir ve Karlar"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2101,
+   "etiqueta": "Önceki Dönem Reeskont İptali",
+   "actual": "66.022",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Diğer Faaliyetlerden Gelir ve Karlar"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2102,
+   "etiqueta": "Diğer",
+   "actual": "1.007.443",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Diğer Faaliyetlerden Gelir ve Karlar"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2103,
+   "etiqueta": "Toplam Diğer gelirler:",
+   "actual": "24.665.018",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Diğer Faaliyetlerden Gelir ve Karlar"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2104,
+   "etiqueta": "Cari Dönem Reeskont Gideri",
+   "actual": "(51.046)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diğer Faaliyetlerden Gider ve Zararlar (-)"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2105,
+   "etiqueta": "Önceki Dönem Prekont İptali",
+   "actual": "(272.185)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diğer Faaliyetlerden Gider ve Zararlar (-)"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2106,
+   "etiqueta": "Çalışmayan Kısım Gider ve Zararları",
+   "actual": "(2.544.195)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diğer Faaliyetlerden Gider ve Zararlar (-)"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2107,
+   "etiqueta": "Önceki Dönem Gider ve Zararları",
+   "actual": "(349.971)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diğer Faaliyetlerden Gider ve Zararlar (-)"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2108,
+   "etiqueta": "Stok ve Haklar Değer Düşüş Karşılığı",
+   "actual": "(3.112.191)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diğer Faaliyetlerden Gider ve Zararlar (-)"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2121,
+   "etiqueta": "Şüpheli Alacak Karşılığı",
+   "actual": "(1.217.277)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diğer Faaliyetlerden Gider ve Zararlar (-)"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2122,
+   "etiqueta": "Kur Farkı Giderleri",
+   "actual": "(14.721.541)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diğer Faaliyetlerden Gider ve Zararlar (-)"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2123,
+   "etiqueta": "Diğer",
+   "actual": "(19.297)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diğer Faaliyetlerden Gider ve Zararlar (-)"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2124,
+   "etiqueta": "Toplam Diğer Giderler:",
+   "actual": "(22.287.703)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Diğer Faaliyetlerden Gider ve Zararlar (-)"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2125,
+   "etiqueta": "Diğer gelirler/(giderler) - net",
+   "actual": "2.377.315",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b55",
+   "linea": 2131,
+   "etiqueta": "Faiz Gideri",
+   "actual": "(5.729.910)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansman Giderleri (-)"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2132,
+   "etiqueta": "Kur Farkı Gideri",
+   "actual": "(6.722.884)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansman Giderleri (-)"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2133,
+   "etiqueta": "Komisyon",
+   "actual": "(690.624)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansman Giderleri (-)"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2134,
+   "etiqueta": "Diğer",
+   "actual": "(483.064)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansman Giderleri (-)"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2135,
+   "etiqueta": "Toplam Finansman Gideri",
+   "actual": "(13.626.482)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansman Giderleri (-)"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2147,
+   "etiqueta": "Cari Dönem Vergi Gideri",
+   "actual": "(94.486)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Vergiler"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2148,
+   "etiqueta": "Ertelenmiş Vergi",
+   "actual": "99.137",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Vergiler"
+  },
+  {
+   "bloque": "b56",
+   "linea": 2149,
+   "etiqueta": "Toplam",
+   "actual": "4.651",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Vergiler"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 169,
+  "actual": "(12.541.578)",
+  "anterior": null
+ },
+ "dudas": [],
+ "observaciones": "El estado (b3) solo trae la columna del ejercicio 2005-2006; no hay año anterior. No se imprimen total de ingresos ni de gastos. La nota 38 se reparte entre b53 (ingresos y primeros gastos) y b54 (resto de gastos y total); las filas de gasto de b53 y b54 suman (22.287.703). L2125 es el neto de la nota 38 (24.665.018 - 22.287.703), no un renglón del estado. La línea L170 (ganancia por acción) no se extrae como importe."
+}

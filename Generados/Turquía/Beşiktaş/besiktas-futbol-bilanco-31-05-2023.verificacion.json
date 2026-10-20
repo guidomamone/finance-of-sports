@@ -1,0 +1,582 @@
+{
+ "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf",
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.md",
+ "generado": "2026-10-20T18:44:04.601Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf",
+   "campo": "fila",
+   "valor": "129587090",
+   "linea": 1473,
+   "etiqueta": "Amortisman ve tükenme payları (futbolcu lisansları, nota 12)",
+   "lado": "gasto",
+   "reemplaza": "Amortisman ve tükenme payları",
+   "motivo": "Regla de CONVENCIONES-DATOS (línea de depreciación y amortización junta, se parte con las notas, votación 3 a 0, 2026-10-20). Las tres filas 'Amortisman ve tükenme payları' del estado (143.340.662 + 9.331.442 + 687.806) suman 153.359.910 = total de la nota de segmentos; la nota 12 da la amortización de derechos de futbolistas y lo demás es de bienes de uso y derechos de uso",
+   "evidencia": "pág. 48 y 50 del visor; .md L1130 (total 153.359.910), L1468-1473 (nota 12: cargo del año 129.587.090 de intangibles, casi todo licencias de futbolistas), L1909",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf",
+   "campo": "fila",
+   "valor": "23085014",
+   "linea": 1130,
+   "etiqueta": "Amortisman ve tükenme payları (maddi duran varlıklar ve kullanım hakkı)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Corrección: las filas del estado con esa etiqueta son 143.340.662 (costo de servicios) y 9.331.442 (marketing) = 152.672.104; la tercera (687.806, gastos de administración, 'Amortisman ve tükenme/itfa payları') queda aparte. Resto = 152.672.104 - 129.587.090",
+   "evidencia": ".md L1130, L1909, L1468-1473",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Amortisman ve tükenme payları (futbolcu lisansları, nota 12)",
+   "motivo": "derechos de futbolistas (nota 12), parte de la amortización junta",
+   "evidencia": ".md L1468-1473",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Amortisman ve tükenme payları (maddi duran varlıklar ve kullanım hakkı)",
+   "motivo": "bienes de uso y derechos de uso, resto de la amortización junta",
+   "evidencia": ".md L1130",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 5.115907697472721e-13
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Yatırım faaliyetlerinden gelirler\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Amortisman ve tükenme payları (futbolcu lisansları, nota 12)\" (gasto) 129587090, en lugar de \"Amortisman ve tükenme payları\" (2026-10-20, Regla de CONVENCIONES-DATOS (línea de depreciación y amortización junta, se parte con las notas, votación 3 a 0, 2026-10-20). Las tres filas 'Amortisman ve tükenme payları' del estado (143.340.662 + 9.331.442 + 687.806) suman 153.359.910 = total de la nota de segmentos; la nota 12 da la amortización de derechos de futbolistas y lo demás es de bienes de uso y derechos de uso)",
+  "ajuste manual: fila \"Amortisman ve tükenme payları (maddi duran varlıklar ve kullanım hakkı)\" (gasto) 23085014 (2026-10-20, Corrección: las filas del estado con esa etiqueta son 143.340.662 (costo de servicios) y 9.331.442 (marketing) = 152.672.104; la tercera (687.806, gastos de administración, 'Amortisman ve tükenme/itfa payları') queda aparte. Resto = 152.672.104 - 129.587.090)",
+  "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"Hasılat\"): aceptar, en besiktas-futbol-bilanco-31-05-2023.pdf",
+  "duda de extraer que no afecta la carga: Es una reclasificación por naturaleza de Satışların maliyeti + Pazarlama + Genel yönetim (total L1939 (1.797.547.104) = suma de los tres), ya desglosados en b56, b57 y b58."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1603.948272,
+  "gastos": 1944.096806,
+  "financiero": -128.260099,
+  "impuesto": -38.553939,
+  "resultadoImpreso": -506.962572,
+  "resultadoParaCargar": -506.962572,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Lisanslı ürün satış gelirleri",
+   "lado": "ingreso",
+   "M": 318.834226,
+   "pagina": 48,
+   "linea": 1846,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Maç hasılatları ve kombine kart loca geliri",
+   "lado": "ingreso",
+   "M": 306.124129,
+   "pagina": 48,
+   "linea": 1847,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Sponsorluk ve reklam geliri",
+   "lado": "ingreso",
+   "M": 258.089187,
+   "pagina": 48,
+   "linea": 1848,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "İsim ve lisans hakkı gelirleri",
+   "lado": "ingreso",
+   "M": 256.609946,
+   "pagina": 48,
+   "linea": 1849,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Yayın gelirleri",
+   "lado": "ingreso",
+   "M": 157.273762,
+   "pagina": 48,
+   "linea": 1850,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "UEFA gelirleri",
+   "lado": "ingreso",
+   "M": 25.085224,
+   "pagina": 48,
+   "linea": 1851,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Futbolcu kiralama ve yetiştirme gelirleri",
+   "lado": "ingreso",
+   "M": 4,
+   "pagina": 48,
+   "linea": 1852,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Diğer",
+   "lado": "ingreso",
+   "M": 21.14976,
+   "pagina": 48,
+   "linea": 1853,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Satıştan iadeler (-)",
+   "lado": "ingreso",
+   "M": -14.508349,
+   "pagina": 48,
+   "linea": 1854,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Satış iskontoları / indirimleri (-)",
+   "lado": "ingreso",
+   "M": -5.19232,
+   "pagina": 48,
+   "linea": 1855,
+   "origen": "nota que desglosa \"Hasılat\""
+  },
+  {
+   "etiqueta": "Konusu kalmayan karşılıklar",
+   "lado": "ingreso",
+   "M": 23.999743,
+   "pagina": 50,
+   "linea": 1955,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\""
+  },
+  {
+   "etiqueta": "Esas faaliyetlerden kur farkı gelirleri",
+   "lado": "ingreso",
+   "M": 6.786205,
+   "pagina": 50,
+   "linea": 1956,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\""
+  },
+  {
+   "etiqueta": "Esas faaliyetlerden diğer gelirler (*)",
+   "lado": "ingreso",
+   "M": 0.93899,
+   "pagina": 50,
+   "linea": 1957,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer gelirler\""
+  },
+  {
+   "etiqueta": "Yatırım faaliyetlerinden gelirler",
+   "lado": "ingreso",
+   "M": 244.757769,
+   "pagina": 10,
+   "linea": 252,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Satılan ticari mallar maliyeti",
+   "lado": "gasto",
+   "M": 154.337332,
+   "pagina": 48,
+   "linea": 1857,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\""
+  },
+  {
+   "etiqueta": "Ücret giderleri",
+   "lado": "gasto",
+   "M": 1091.502916,
+   "pagina": 48,
+   "linea": 1859,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\""
+  },
+  {
+   "etiqueta": "Maç giderleri",
+   "lado": "gasto",
+   "M": 53.191966,
+   "pagina": 48,
+   "linea": 1861,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\""
+  },
+  {
+   "etiqueta": "Seyahat giderleri",
+   "lado": "gasto",
+   "M": 39.680673,
+   "pagina": 48,
+   "linea": 1862,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\""
+  },
+  {
+   "etiqueta": "Futbolcu kiralama giderleri",
+   "lado": "gasto",
+   "M": 8.269985,
+   "pagina": 48,
+   "linea": 1863,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\""
+  },
+  {
+   "etiqueta": "Federasyon giderleri",
+   "lado": "gasto",
+   "M": 6.73162,
+   "pagina": 48,
+   "linea": 1864,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\""
+  },
+  {
+   "etiqueta": "Malzeme giderleri",
+   "lado": "gasto",
+   "M": 4.92676,
+   "pagina": 48,
+   "linea": 1865,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\""
+  },
+  {
+   "etiqueta": "Diğer giderler",
+   "lado": "gasto",
+   "M": 199.047449,
+   "pagina": 48,
+   "linea": 1866,
+   "origen": "nota que desglosa \"Satışların maliyeti (-)\" > desglose de \"Satılan hizmet maliyeti\""
+  },
+  {
+   "etiqueta": "Personel ücret ve giderleri",
+   "lado": "gasto",
+   "M": 25.025962,
+   "pagina": 48,
+   "linea": 1876,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Lojistik hizmet gideri",
+   "lado": "gasto",
+   "M": 8.203455,
+   "pagina": 48,
+   "linea": 1878,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Yemek giderleri",
+   "lado": "gasto",
+   "M": 3.065111,
+   "pagina": 48,
+   "linea": 1879,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Kargo ve nakliye giderleri",
+   "lado": "gasto",
+   "M": 2.017497,
+   "pagina": 48,
+   "linea": 1880,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Ambalaj malzemesi giderleri",
+   "lado": "gasto",
+   "M": 1.616513,
+   "pagina": 48,
+   "linea": 1881,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Reklam ve ilan giderleri",
+   "lado": "gasto",
+   "M": 0.806602,
+   "pagina": 48,
+   "linea": 1882,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Tanıtım, fuar ve sergi giderleri",
+   "lado": "gasto",
+   "M": 0.699769,
+   "pagina": 48,
+   "linea": 1883,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Web yayın giderleri",
+   "lado": "gasto",
+   "M": 0.553238,
+   "pagina": 48,
+   "linea": 1884,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Haberleşme giderleri",
+   "lado": "gasto",
+   "M": 0.265112,
+   "pagina": 48,
+   "linea": 1885,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Diğer",
+   "lado": "gasto",
+   "M": 15.768111,
+   "pagina": 48,
+   "linea": 1886,
+   "origen": "nota que desglosa \"Pazarlama giderleri (-)\""
+  },
+  {
+   "etiqueta": "Müşavirlik, dava ve icra noter giderleri",
+   "lado": "gasto",
+   "M": 13.891789,
+   "pagina": 49,
+   "linea": 1905,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Personel ücret ve giderleri",
+   "lado": "gasto",
+   "M": 3.413304,
+   "pagina": 49,
+   "linea": 1906,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Şüpheli alacak karşılık giderleri",
+   "lado": "gasto",
+   "M": 2.538822,
+   "pagina": 49,
+   "linea": 1907,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Vergi resim ve harçlar",
+   "lado": "gasto",
+   "M": 1.803395,
+   "pagina": 49,
+   "linea": 1908,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Amortisman ve tükenme/itfa payları",
+   "lado": "gasto",
+   "M": 0.687806,
+   "pagina": 49,
+   "linea": 1909,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Danışmanlık giderleri",
+   "lado": "gasto",
+   "M": 0.564212,
+   "pagina": 49,
+   "linea": 1910,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Haberleşme giderleri",
+   "lado": "gasto",
+   "M": 0.450966,
+   "pagina": 49,
+   "linea": 1911,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Kargo ve nakliye giderleri",
+   "lado": "gasto",
+   "M": 0.072604,
+   "pagina": 49,
+   "linea": 1912,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Diğer giderler",
+   "lado": "gasto",
+   "M": 5.742031,
+   "pagina": 49,
+   "linea": 1913,
+   "origen": "nota que desglosa \"Genel yönetim giderleri (-)\""
+  },
+  {
+   "etiqueta": "Esas faaliyetlerden kur farkı giderleri",
+   "lado": "gasto",
+   "M": 120.888145,
+   "pagina": 50,
+   "linea": 1964,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\""
+  },
+  {
+   "etiqueta": "Dava karşılık giderleri",
+   "lado": "gasto",
+   "M": 14.995326,
+   "pagina": 50,
+   "linea": 1965,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\""
+  },
+  {
+   "etiqueta": "Esas faaliyetlerden diğer giderler",
+   "lado": "gasto",
+   "M": 10.147485,
+   "pagina": 50,
+   "linea": 1966,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\""
+  },
+  {
+   "etiqueta": "Vade farkı gideri",
+   "lado": "gasto",
+   "M": 0.518746,
+   "pagina": 50,
+   "linea": 1967,
+   "origen": "nota que desglosa \"Esas faaliyetlerden diğer giderler (-)\""
+  },
+  {
+   "etiqueta": "Amortisman ve tükenme payları (futbolcu lisansları, nota 12)",
+   "lado": "gasto",
+   "M": 129.58709,
+   "pagina": 39,
+   "linea": 1473,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Amortisman ve tükenme payları (maddi duran varlıklar ve kullanım hakkı)",
+   "lado": "gasto",
+   "M": 23.085014,
+   "pagina": 32,
+   "linea": 1130,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finansman gelirleri",
+   "M": 213.871165,
+   "linea": 254
+  },
+  {
+   "etiqueta": "Finansman giderleri (-)",
+   "M": -342.131264,
+   "linea": 255
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Dönem vergi gideri",
+   "M": -39.679793,
+   "linea": 257
+  },
+  {
+   "etiqueta": "Ertelenmiş vergi geliri/(gideri)",
+   "M": 1.125854,
+   "linea": 258
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "a40088651a0c9f4ce964418f12c7b91f371d0ab3",
+  "rango": [
+   241,
+   275
+  ],
+  "lineasCargadas": [
+   1846,
+   1847,
+   1848,
+   1849,
+   1850,
+   1851,
+   1852,
+   1853,
+   1854,
+   1855,
+   1955,
+   1956,
+   1957,
+   252,
+   1857,
+   1859,
+   1861,
+   1862,
+   1863,
+   1864,
+   1865,
+   1866,
+   1876,
+   1878,
+   1879,
+   1880,
+   1881,
+   1882,
+   1883,
+   1884,
+   1885,
+   1886,
+   1905,
+   1906,
+   1907,
+   1908,
+   1909,
+   1910,
+   1911,
+   1912,
+   1913,
+   1964,
+   1965,
+   1966,
+   1967,
+   1473,
+   1130,
+   254,
+   255,
+   257,
+   258
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 241 a 275 del .md):\nL241: | Kar veya (zarar) kısmı | Dipnot Referansları | Cari Dönem Bağımsız Denetimden Geçmiş 1 Haziran 2022- 31 Mayıs 2023 | Geçmiş Dönem Bağımsız Denetimden Geçmiş 1 Haziran 2021- 31 Mayıs 2022 |\nL242: | --- | --- | --- | --- |\nL243: | **Esas faaliyet gelirleri** | | | |\nL244: | Hasılat | 19 | 1.327.465.565 | 987.914.619 |\nL245: | Satışların maliyeti (-) | 19 | (1.701.029.363) | (1.295.418.952) |\nL246: | **Brüt kar/(zarar)** | | (373.563.798) | (307.504.333) |\nL247: | Pazarlama giderleri (-) | 20 | (67.352.812) | (33.797.781) |\nL248: | Genel yönetim giderleri (-) | 20 | (29.164.929) | (40.567.540) |\nL249: | Esas faaliyetlerden diğer gelirler | 22 | 31.724.938 | 159.837.373 |\nL250: | Esas faaliyetlerden diğer giderler (-) | 22 | (146.549.702) | (109.680.954) |\nL251: | **Esas faaliyet karı/(zararı)** | | (584.906.303) | (331.713.235) |\nL252: | Yatırım faaliyetlerinden gelirler | 23 | 244.757.769 | - |\nL253: | **Finansman geliri/(gideri) öncesi faaliyet karı/(zararı)** | | (340.148.534) | (331.713.235) |\nL254: | Finansman gelirleri | 24 | 213.871.165 | 312.480.843 |\nL255: | Finansman giderleri (-) | 25 | (342.131.264) | (677.969.106) |\nL256: | **Sürdürülen faaliyetler vergi öncesi karı/(zararı)** | | (468.408.633) | (697.201.498) |\nL257: | Dönem vergi gideri | 26 | (39.679.793) | (18.696.542) |\nL258: | Ertelenmiş vergi geliri/(gideri) | 26 | 1.125.854 | (981.594) |\nL259: | **Sürdürülen faaliyetler dönem karı/(zararı)** | | (506.962.572) | (716.879.634) |\nL260: | **Dönem karının/(zararının) dağılımı** | | | |\nL261: | - Kontrol gücü olmayan paylar | | - | - |\nL262: | - Ana ortaklık payları | 27 | (506.962.572) | (716.879.634) |\nL263: | **Pay başına kazanç/(kayıp)** | | | |\nL264: | (Hisse başına TL olarak ifade edilmiştir) | | | |\nL265: | - Sürdürülen faaliyetlerden pay başına kazanç/(kayıp) | 27 | (2,1123) | (2,9870) |\nL266: | **Diğer kapsamlı gelirler/(giderler)** | | 1.457.026 | (3.762.878) |\nL267: | Çalışanlara sağlanan faydalara ilişkin aktüeryal kayıp | 15 | 1.518.442 | (3.852.835) |\nL268: | -Vergi etkisi | 26 | (61.416) | 89.957 |\nL269: | **Toplam kapsamlı gelir/(gider)** | | (505.505.546) | (720.642.512) |\nL270: | **Toplam kapsamlı gelirin/(giderin) dağılımı** | | | |\nL271: | - Kontrol gücü olmayan paylar | | - | - |\nL272: | - Ana ortaklık payları | | (505.505.546) | (720.642.512) |\nL274: İlişikte sunulan muhasebe politikaları ve dipnotlar bu konsolide finansal tabloların tamamlayıcı parçalarıdır.\n\nLO QUE SE CARGA:\n- ingreso · \"Lisanslı ürün satış gelirleri\" · 318.834226 · L1846 (de una nota)\n- ingreso · \"Maç hasılatları ve kombine kart loca geliri\" · 306.124129 · L1847 (de una nota)\n- ingreso · \"Sponsorluk ve reklam geliri\" · 258.089187 · L1848 (de una nota)\n- ingreso · \"İsim ve lisans hakkı gelirleri\" · 256.609946 · L1849 (de una nota)\n- ingreso · \"Yayın gelirleri\" · 157.273762 · L1850 (de una nota)\n- ingreso · \"UEFA gelirleri\" · 25.085224 · L1851 (de una nota)\n- ingreso · \"Futbolcu kiralama ve yetiştirme gelirleri\" · 4 · L1852 (de una nota)\n- ingreso · \"Diğer\" · 21.14976 · L1853 (de una nota)\n- ingreso · \"Satıştan iadeler (-)\" · -14.508349 · L1854 (de una nota)\n- ingreso · \"Satış iskontoları / indirimleri (-)\" · -5.19232 · L1855 (de una nota)\n- ingreso · \"Konusu kalmayan karşılıklar\" · 23.999743 · L1955 (de una nota)\n- ingreso · \"Esas faaliyetlerden kur farkı gelirleri\" · 6.786205 · L1956 (de una nota)\n- ingreso · \"Esas faaliyetlerden diğer gelirler (*)\" · 0.93899 · L1957 (de una nota)\n- ingreso · \"Yatırım faaliyetlerinden gelirler\" · 244.757769 · L252\n- gasto · \"Satılan ticari mallar maliyeti\" · 154.337332 · L1857 (de una nota)\n- gasto · \"Ücret giderleri\" · 1091.502916 · L1859 (de una nota)\n- gasto · \"Maç giderleri\" · 53.191966 · L1861 (de una nota)\n- gasto · \"Seyahat giderleri\" · 39.680673 · L1862 (de una nota)\n- gasto · \"Futbolcu kiralama giderleri\" · 8.269985 · L1863 (de una nota)\n- gasto · \"Federasyon giderleri\" · 6.73162 · L1864 (de una nota)\n- gasto · \"Malzeme giderleri\" · 4.92676 · L1865 (de una nota)\n- gasto · \"Diğer giderler\" · 199.047449 · L1866 (de una nota)\n- gasto · \"Personel ücret ve giderleri\" · 25.025962 · L1876 (de una nota)\n- gasto · \"Lojistik hizmet gideri\" · 8.203455 · L1878 (de una nota)\n- gasto · \"Yemek giderleri\" · 3.065111 · L1879 (de una nota)\n- gasto · \"Kargo ve nakliye giderleri\" · 2.017497 · L1880 (de una nota)\n- gasto · \"Ambalaj malzemesi giderleri\" · 1.616513 · L1881 (de una nota)\n- gasto · \"Reklam ve ilan giderleri\" · 0.806602 · L1882 (de una nota)\n- gasto · \"Tanıtım, fuar ve sergi giderleri\" · 0.699769 · L1883 (de una nota)\n- gasto · \"Web yayın giderleri\" · 0.553238 · L1884 (de una nota)\n- gasto · \"Haberleşme giderleri\" · 0.265112 · L1885 (de una nota)\n- gasto · \"Diğer\" · 15.768111 · L1886 (de una nota)\n- gasto · \"Müşavirlik, dava ve icra noter giderleri\" · 13.891789 · L1905 (de una nota)\n- gasto · \"Personel ücret ve giderleri\" · 3.413304 · L1906 (de una nota)\n- gasto · \"Şüpheli alacak karşılık giderleri\" · 2.538822 · L1907 (de una nota)\n- gasto · \"Vergi resim ve harçlar\" · 1.803395 · L1908 (de una nota)\n- gasto · \"Amortisman ve tükenme/itfa payları\" · 0.687806 · L1909 (de una nota)\n- gasto · \"Danışmanlık giderleri\" · 0.564212 · L1910 (de una nota)\n- gasto · \"Haberleşme giderleri\" · 0.450966 · L1911 (de una nota)\n- gasto · \"Kargo ve nakliye giderleri\" · 0.072604 · L1912 (de una nota)\n- gasto · \"Diğer giderler\" · 5.742031 · L1913 (de una nota)\n- gasto · \"Esas faaliyetlerden kur farkı giderleri\" · 120.888145 · L1964 (de una nota)\n- gasto · \"Dava karşılık giderleri\" · 14.995326 · L1965 (de una nota)\n- gasto · \"Esas faaliyetlerden diğer giderler\" · 10.147485 · L1966 (de una nota)\n- gasto · \"Vade farkı gideri\" · 0.518746 · L1967 (de una nota)\n- gasto · \"Amortisman ve tükenme payları (futbolcu lisansları, nota 12)\" · 129.58709 · L1473 (de una nota)\n- gasto · \"Amortisman ve tükenme payları (maddi duran varlıklar ve kullanım hakkı)\" · 23.085014 · L1130 (de una nota)\n- financiero · \"Finansman gelirleri\" · 213.871165 · L254\n- financiero · \"Finansman giderleri (-)\" · -342.131264 · L255\n- impuesto · \"Dönem vergi gideri\" · -39.679793 · L257\n- impuesto · \"Ertelenmiş vergi geliri/(gideri)\" · 1.125854 · L258"
+ }
+}

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.pdf",
  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.md",
- "generado": "2026-10-19T16:32:48.030Z",
+ "generado": "2026-10-20T18:20:54.773Z",
  "estado": "ok",
  "clubId": "luzern-ch",
  "year": 2023,
@@ -28,23 +28,23 @@
   {
    "nombre": "total de ingresos",
    "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 9.999999930343506e-7
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000010000000036924916
   },
   {
    "nombre": "lectura",
    "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
   },
   {
    "nombre": "año anterior cargado",
@@ -63,27 +63,26 @@
   }
  ],
  "notas": [
-  "la nota de \"Sonstiger Betriebsertrag\" no suma el renglón (0.754269 contra 0.181535, sumando sus renglones): quedó el renglón del estado",
-  "la nota de \"Spielbetrieb und Matchorganisation\" no suma el renglón (6.875887 contra 5.861309, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Merchandising\" no suma el renglón (0.483126 contra 0.425546, sumando sus renglones): quedó el renglón del estado",
-  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
-  "la lectura base no cerraba; cerró con la lectura 4",
+  "escalón \"nota exacta en la lectura 6\": \"Matchorganisation\" (L1511) se abre en las 5 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Leistungsfussball Nachwuchs\" (L1515) se abre en las 6 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Events\" (L1516) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Merchandising\" (L1517) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Sonstiger Betriebsertrag\" (L1518) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Personalaufwand\" (L1521) se abre en las 11 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Spielbetrieb und Matchorganisation\" (L1522) se abre en las 10 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Transferaufwand\" (L1523) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Werbung und Sponsoring\" (L1524) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Leistungsfussball Nachwuchs\" (L1525) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Events\" (L1526) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Administrations- und sonstiger Betriebsaufwand\" (L1529) se abre en las 5 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar que no afecta la carga: El estado b50 remite a notas 16-18 y 29-35 que no aparecen como bloques con cifras en el índice.",
   "duda de localizar que no afecta la carga: Son cuadros por segmento en miles con Ertrag/Aufwand/DB1 que no abren renglones nuevos del estado.",
   "duda de extraer que no afecta la carga: L1532 trae un asterisco junto al importe cuya nota al pie no está en la transcripción.",
   "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Unternehmenserfolg nach Minderheiten\"): aceptar, en geschaeftsbericht-2024-25.pdf"
  ],
  "reintentar": [
-  {
-   "renglon": "Sonstiger Betriebsertrag",
-   "suma": 0.754269,
-   "objetivo": 0.181535
-  },
-  {
-   "renglon": "Spielbetrieb und Matchorganisation",
-   "suma": 6.875887,
-   "objetivo": 5.861309
-  },
   {
    "renglon": "Merchandising",
    "suma": 0.483126,
@@ -93,16 +92,6 @@
  "reintentado": false,
  "faltasDesglose": [
   {
-   "renglon": "Sonstiger Betriebsertrag",
-   "suma": 0.754269,
-   "objetivo": 0.181535
-  },
-  {
-   "renglon": "Spielbetrieb und Matchorganisation",
-   "suma": 6.875887,
-   "objetivo": 5.861309
-  },
-  {
    "renglon": "Merchandising",
    "suma": 0.483126,
    "objetivo": 0.425546
@@ -111,12 +100,12 @@
  "totales": {
   "ingresos": 28.530231,
   "gastos": 31.428929,
-  "financiero": 0.198764,
-  "impuesto": 0.004884,
-  "resultadoImpreso": 3.102345,
-  "resultadoParaCargar": 3.102345,
+  "financiero": -0.198764,
+  "impuesto": -0.004884,
+  "resultadoImpreso": -3.102345,
+  "resultadoParaCargar": -3.102345,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -165,7 +154,7 @@
    "M": 5.41341,
    "pagina": 21,
    "linea": 1512,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "TV-Entschädigungen Übertragungsrechte",
@@ -173,7 +162,7 @@
    "M": 2.1955,
    "pagina": 21,
    "linea": 1513,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Transferertrag",
@@ -181,7 +170,7 @@
    "M": 1.718613,
    "pagina": 21,
    "linea": 1514,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Sponsoren- und Spendenbeiträge",
@@ -264,12 +253,36 @@
    "origen": "nota que desglosa \"Merchandising\""
   },
   {
-   "etiqueta": "Sonstiger Betriebsertrag",
+   "etiqueta": "Ausmietung Stewards",
    "lado": "ingreso",
-   "M": 0.181535,
-   "pagina": 21,
-   "linea": 1518,
-   "origen": "estado"
+   "M": 0.340834,
+   "pagina": 27,
+   "linea": 2094,
+   "origen": "nota que desglosa \"Sonstiger Betriebsertrag\""
+  },
+  {
+   "etiqueta": "Anpassung Delkredere",
+   "lado": "ingreso",
+   "M": -0.202727,
+   "pagina": 27,
+   "linea": 2095,
+   "origen": "nota que desglosa \"Sonstiger Betriebsertrag\""
+  },
+  {
+   "etiqueta": "Swiss-Olympic-Stabilisierungspaket",
+   "lado": "ingreso",
+   "M": -0.08364,
+   "pagina": 27,
+   "linea": 2096,
+   "origen": "nota que desglosa \"Sonstiger Betriebsertrag\""
+  },
+  {
+   "etiqueta": "Sonstiges",
+   "lado": "ingreso",
+   "M": 0.127068,
+   "pagina": 27,
+   "linea": 2097,
+   "origen": "nota que desglosa \"Sonstiger Betriebsertrag\""
   },
   {
    "etiqueta": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
@@ -277,7 +290,7 @@
    "M": 5.456835,
    "pagina": 21,
    "linea": 1539,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Erfolg aus Equity-Beteiligungen",
@@ -285,7 +298,7 @@
    "M": 0.085225,
    "pagina": 21,
    "linea": 1536,
-   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
   },
   {
    "etiqueta": "Minderheitsanteil am Jahresergebnis",
@@ -293,7 +306,7 @@
    "M": 0.165704,
    "pagina": 21,
    "linea": 1543,
-   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
   },
   {
    "etiqueta": "Personalkosten inkl. Spesen",
@@ -384,12 +397,84 @@
    "origen": "nota que desglosa \"Personalaufwand\""
   },
   {
-   "etiqueta": "Spielbetrieb und Matchorganisation",
+   "etiqueta": "Miete und Unterhalt Stadion",
    "lado": "gasto",
-   "M": 5.861309,
-   "pagina": 21,
-   "linea": 1522,
-   "origen": "estado"
+   "M": 1.50526,
+   "pagina": 28,
+   "linea": 2176,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Sicherheitskosten Matchtag (ohne Stewards)",
+   "lado": "gasto",
+   "M": 0.914685,
+   "pagina": 28,
+   "linea": 2177,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Abgaben öffentlicher Verkehr",
+   "lado": "gasto",
+   "M": 0.307617,
+   "pagina": 28,
+   "linea": 2178,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Medical und Material",
+   "lado": "gasto",
+   "M": 0.541618,
+   "pagina": 28,
+   "linea": 2179,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Ticketing und Vorverkaufsgebühren",
+   "lado": "gasto",
+   "M": 0.276012,
+   "pagina": 28,
+   "linea": 2180,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Aufwand 1. Mannschaft Super League/AWSL",
+   "lado": "gasto",
+   "M": 0.661088,
+   "pagina": 28,
+   "linea": 2181,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Diverse Kosten Spielbetrieb",
+   "lado": "gasto",
+   "M": 0.683883,
+   "pagina": 28,
+   "linea": 2182,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "VIP-Cateringkosten Spieltag",
+   "lado": "gasto",
+   "M": 1.395624,
+   "pagina": 28,
+   "linea": 2183,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Aufwand übriger Spielbetrieb",
+   "lado": "gasto",
+   "M": 0.082811,
+   "pagina": 28,
+   "linea": 2184,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Rückvergütungen Lieferanten",
+   "lado": "gasto",
+   "M": -0.507289,
+   "pagina": 28,
+   "linea": 2186,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
   },
   {
    "etiqueta": "Transferaufwand definitive Übertritte",
@@ -501,7 +586,7 @@
    "M": 0.425546,
    "pagina": 21,
    "linea": 1527,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Energie, Wasser und Entsorgung",
@@ -509,7 +594,7 @@
    "M": 0.341605,
    "pagina": 21,
    "linea": 1528,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Verwaltungsaufwand",
@@ -557,7 +642,7 @@
    "M": 0.221291,
    "pagina": 21,
    "linea": 1532,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Abschreibungen immaterielle Sachanlagen",
@@ -565,7 +650,7 @@
    "M": 2.311866,
    "pagina": 21,
    "linea": 1533,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
@@ -573,12 +658,12 @@
    "M": 0.146149,
    "pagina": 21,
    "linea": 1538,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {
-  "financiero": -1,
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

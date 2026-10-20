@@ -15,6 +15,8 @@ const lierseskbeRevenueLinesByYear = {
   ],
   2021: [
   ],
+  2019: [
+  ],
 };
 const lierseskbeExpenseLinesByYear = {
   2025: [
@@ -54,6 +56,10 @@ const lierseskbeExpenseLinesByYear = {
   2021: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations_expense', amountNative:-0.001436, disclosureLevel:'aggregated' },
     { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.000201, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations_expense', amountNative:-0.001372, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.002479, disclosureLevel:'aggregated' },
   ],
 };
 const lierseskbeFiscalYearMeta = {
@@ -164,6 +170,19 @@ const lierseskbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0, officialTotalExpenses:0.001637, officialPAT:0.014209,
   },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'liersesk-be-jaarrekening-2019-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000027, tax:0,
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'expense', importe:0.001372, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0, officialTotalExpenses:0.003851, officialPAT:-0.003878,
+  },
 };
 const lierseskbePresupuestoOverlayByYear = {};
 
@@ -209,6 +228,12 @@ Object.assign(sources, {
     id:'liersesk-be-jaarrekening-2021-06-30-individual', clubId:'liersesk-be',
     title:'Lierse SK — jaarrekening-2021-06-30-individual (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
+  },
+  'liersesk-be-jaarrekening-2019-06-30-individual': {
+    id:'liersesk-be-jaarrekening-2019-06-30-individual', clubId:'liersesk-be',
+    title:'Lierse SK — jaarrekening-2019-06-30-individual (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+    publicNote:'Primer ejercicio de la sociedad: del 09/07/2018 al 30/06/2019 (12 meses).',
   },
 });
 

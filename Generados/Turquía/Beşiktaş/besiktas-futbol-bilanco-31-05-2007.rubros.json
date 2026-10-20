@@ -1,0 +1,450 @@
+{
+  "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2007.md",
+  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2007.pdf",
+  "club": "besiktas-tr",
+  "year": 2007,
+  "generatedAt": "2026-10-20T19:07:01.132Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "TV Yayın Gelirleri",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        30.038987
+      ],
+      "glosa": "Ingresos por retransmisión televisiva"
+    },
+    {
+      "label": "Sponsorluk Gelirleri",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        11.631851
+      ],
+      "glosa": "Ingresos por patrocinio"
+    },
+    {
+      "label": "Maç Hasılatları",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        3.424748
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "İsim Hakkı Gelirleri",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        4.359575
+      ],
+      "glosa": "Ingresos por derechos de denominación"
+    },
+    {
+      "label": "Lisans Geliri",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        0.367294
+      ],
+      "glosa": "Ingresos por licencias"
+    },
+    {
+      "label": "Futbolcu Kira Gelirleri",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        0.025
+      ],
+      "glosa": "Ingresos por cesión de futbolistas"
+    },
+    {
+      "label": "Bonservis Geliri",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        0.38808
+      ],
+      "glosa": "Ingresos por traspaso de futbolistas"
+    },
+    {
+      "label": "Futbolcu Cezaları",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        0.572615
+      ],
+      "glosa": "Ingresos por sanciones a futbolistas"
+    },
+    {
+      "label": "Kombine Kart Hasılatı",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        9.569759
+      ],
+      "glosa": "Ingresos por abonos de temporada"
+    },
+    {
+      "label": "Futbolcu Satış Zararı",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        -2.57998
+      ],
+      "glosa": "Pérdidas por traspaso de futbolistas"
+    },
+    {
+      "label": "Sigorta Satışı",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        0.0589
+      ],
+      "glosa": "Ingresos por venta de seguros"
+    },
+    {
+      "label": "Seyahat Satışı",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        1.166196
+      ],
+      "glosa": "Ingresos por venta de viajes"
+    },
+    {
+      "label": "Lisanslı Ürün Satışı",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        8.051784
+      ],
+      "glosa": "Ventas de productos licenciados"
+    },
+    {
+      "label": "Diğer",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        1.438753
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "İndirimler",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Satış Gelirleri (net)\"",
+      "values": [
+        -0.881173
+      ],
+      "glosa": "Descuentos"
+    },
+    {
+      "label": "Hizmet Gelirleri (net)",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Ingresos por prestación de servicios (neto)"
+    },
+    {
+      "label": "Esas Faaliyetlerden Diğer Gelirler / faiz+temettü+kira (net)",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos de explotación / intereses+dividendos+alquileres (neto)"
+    },
+    {
+      "label": "Diğer Faaliyetlerden Gelir ve Karlar",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        36.295647
+      ],
+      "glosa": "Ingresos y ganancias de otras actividades"
+    },
+    {
+      "label": "Ticari Mal Maliyeti",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        5.037821
+      ],
+      "glosa": "Coste de las mercancías vendidas"
+    },
+    {
+      "label": "Sporcu ve Teknik Kadro Ücretleri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        55.600076
+      ],
+      "glosa": "Retribuciones de deportistas y cuerpo técnico"
+    },
+    {
+      "label": "Stad Giderleri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        2.250369
+      ],
+      "glosa": "Gastos del estadio"
+    },
+    {
+      "label": "Tesis Giderleri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        2.002789
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Seyahat Gideri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        1.41648
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Amortisman ve İtfa Payları",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        0.531868
+      ],
+      "glosa": "Dotaciones para amortizaciones"
+    },
+    {
+      "label": "Federasyon ve UEFA Gideri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        1.149822
+      ],
+      "glosa": "Gastos de la Federación y UEFA"
+    },
+    {
+      "label": "Futbolcu Hak İtfa Payı",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        7.572919
+      ],
+      "glosa": "Amortización de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Maç Giderleri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        2.257409
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Diğer Hizmet Maliyeti",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Satışların Maliyeti (-)\"",
+      "values": [
+        3.371642
+      ],
+      "glosa": "Otros costes de servicios"
+    },
+    {
+      "label": "Amortisman Giderleri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama Satış Dağıtım Giderleri\"",
+      "values": [
+        0.10441
+      ],
+      "glosa": "Gastos de amortización"
+    },
+    {
+      "label": "Sergi-Reklam Giderleri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama Satış Dağıtım Giderleri\"",
+      "values": [
+        0.077525
+      ],
+      "glosa": "Gastos de publicidad y propaganda"
+    },
+    {
+      "label": "Personel Giderleri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama Satış Dağıtım Giderleri\"",
+      "values": [
+        0.814345
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Diğer",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Pazarlama Satış Dağıtım Giderleri\"",
+      "values": [
+        1.109243
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Personel giderleri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Genel Yönetim Giderleri\"",
+      "values": [
+        1.666423
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Komisyon ve Diğer Hizmet Giderleri",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Genel Yönetim Giderleri\"",
+      "values": [
+        0.811133
+      ],
+      "glosa": "Comisiones y otros gastos de servicios"
+    },
+    {
+      "label": "Amortisman ve Tükenme Payları",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Genel Yönetim Giderleri\"",
+      "values": [
+        1.086456
+      ],
+      "glosa": "Dotaciones para amortización y agotamiento"
+    },
+    {
+      "label": "Diğer",
+      "lado": "expense",
+      "page": 43,
+      "section": "nota que desglosa \"Faaliyet Giderleri (-)\" > desglose de \"Genel Yönetim Giderleri\"",
+      "values": [
+        2.513681
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Cari Dönem Reeskont Gideri",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+      "values": [
+        0.006745
+      ],
+      "glosa": "Gastos por descuento financiero del ejercicio corriente"
+    },
+    {
+      "label": "Önceki Dönem Prekont İptali",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+      "values": [
+        0.276877
+      ],
+      "glosa": "Reversión de descuento comercial del ejercicio anterior"
+    },
+    {
+      "label": "Çalışmayan Kısım Gider ve Zararları",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+      "values": [
+        2.201587
+      ],
+      "glosa": "Gastos y pérdidas por capacidad ociosa"
+    },
+    {
+      "label": "Önceki Dönem Gider ve Zararları",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+      "values": [
+        0.389252
+      ],
+      "glosa": "Gastos y pérdidas de ejercicios anteriores"
+    },
+    {
+      "label": "Stok ve Haklar Değer Düşüş Karşılığı",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+      "values": [
+        0.024785
+      ],
+      "glosa": "Provisión por deterioro de existencias y derechos"
+    },
+    {
+      "label": "Şüpheli Alacak Karşılığı",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+      "values": [
+        0.179201
+      ],
+      "glosa": "Provisión para insolvencias de dudoso cobro"
+    },
+    {
+      "label": "Kur Farkı Giderleri",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+      "values": [
+        13.446064
+      ],
+      "glosa": "Pérdidas por diferencias de cambio"
+    },
+    {
+      "label": "Diğer",
+      "lado": "expense",
+      "page": 44,
+      "section": "nota que desglosa \"Diğer Faaliyetlerden Gider ve Zararlar (-)\"",
+      "values": [
+        0.596099
+      ],
+      "glosa": "Otros"
+    }
+  ]
+}

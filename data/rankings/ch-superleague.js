@@ -18,6 +18,9 @@ window.RANKINGS["ch-superleague"] = {
     leagueSize: 12,
     wiki: {"t":"2023–24 Swiss Super League","lang":"en","at":"2026-10-19","n":12},
     clubs: [
+      { id:"stgallen-ch", revenue:44.83, reportType:"official_balance_sheet",
+        sourceId:"stgallen-ch-geschaeftsbericht-2023-24",
+        mix:[["Cuotas Sociales",1.356],["Comercial / Sponsors",11.831],["Estadio",15.663],["Venta de Jugadores",5.434],["Otras secciones deportivas",1.545],["Otros ingresos",9.002]] },
       { id:"luzern-ch", revenue:33.9, reportType:"official_balance_sheet",
         sourceId:"luzern-ch-geschaeftsbericht-2023-24",
         mix:[["Comercial / Sponsors",5.852],["Estadio",12.546],["Televisión",1.957],["Venta de Jugadores",7.898],["Otras secciones deportivas",2.848],["Otros ingresos",2.799]] },
@@ -25,12 +28,15 @@ window.RANKINGS["ch-superleague"] = {
   },
   2023: {
     leagueSize: 10,
-    sinDato: ["luzern-ch"],
     wiki: {"t":"2022–23 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
     clubs: [
       { id:"stgallen-ch", revenue:41.542, reportType:"official_balance_sheet",
         sourceId:"stgallen-ch-geschaeftsbericht-2022-23",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",41.88],["Otros ingresos",-0.338]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",41.88],["Otros ingresos",-0.338]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"luzern-ch", revenue:31.888, reportType:"official_balance_sheet",
+        sourceId:"luzern-ch-geschaeftsbericht-2022-23",
+        mix:[["Comercial / Sponsors",6.591],["Estadio",10.864],["Televisión",2.454],["Premios por competencias",0.7],["Venta de Jugadores",1.921],["Otras secciones deportivas",2.567],["Otros ingresos",6.791]] },
     ],
   },
   2022: {
@@ -39,7 +45,8 @@ window.RANKINGS["ch-superleague"] = {
     clubs: [
       { id:"stgallen-ch", revenue:44.47, reportType:"official_balance_sheet",
         sourceId:"stgallen-ch-geschaeftsbericht-2021-22",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",33.506],["Otros ingresos",10.964]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",33.506],["Otros ingresos",10.964]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"luzern-ch", revenue:27.974, reportType:"official_balance_sheet",
         sourceId:"luzern-ch-geschaeftsbericht-2021-22",
         mix:[["Comercial / Sponsors",6.49],["Estadio",10.375],["Televisión",2.128],["Venta de Jugadores",4.553],["Otras secciones deportivas",2.186],["Otros ingresos",2.243]] },
@@ -52,6 +59,9 @@ window.RANKINGS["ch-superleague"] = {
       { id:"basel-ch", revenue:65.115, reportType:"official_balance_sheet",
         sourceId:"basel-ch-geschaeftsbericht-unternehmen-2021",
         mix:[["Comercial / Sponsors",10.121],["Estadio",5.83],["Televisión",3.119],["Premios por competencias",21.052],["Venta de Jugadores",7.267],["Otras secciones deportivas",2.539],["Otros ingresos",15.186]] },
+      { id:"stgallen-ch", revenue:32.197, reportType:"official_balance_sheet",
+        sourceId:"stgallen-ch-geschaeftsbericht-2020-21",
+        mix:[["Cuotas Sociales",1.075],["Comercial / Sponsors",7.756],["Estadio",5.791],["Venta de Jugadores",5.098],["Otras secciones deportivas",1.535],["Otros ingresos",10.942]] },
     ],
   },
   2020: {
@@ -75,7 +85,8 @@ window.RANKINGS["ch-superleague"] = {
         mix:[["Comercial / Sponsors",13.445],["Estadio",7.377],["Televisión",3.617],["Premios por competencias",26.423],["Venta de Jugadores",17.827],["Otras secciones deportivas",0.628],["Otros ingresos",2.145]] },
       { id:"stgallen-ch", revenue:35.678, reportType:"official_balance_sheet",
         sourceId:"stgallen-ch-geschaeftsbericht-2018-19",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",28.695],["Otros ingresos",6.983]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",28.695],["Otros ingresos",6.983]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras secciones deportivas","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"luzern-ch", revenue:26.648, reportType:"official_balance_sheet",
         sourceId:"luzern-ch-geschaeftsbericht-2018-19",
         mix:[["Comercial / Sponsors",5.914],["Estadio",8.691],["Televisión",2.598],["Premios por competencias",0.907],["Venta de Jugadores",4.703],["Otras secciones deportivas",1.944],["Otros ingresos",1.891]] },

@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.pdf",
- "generado": "2026-10-19T14:54:34.007Z",
+ "generado": "2026-10-20T18:30:42.575Z",
  "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2014 (cierre 2014-06-30); pregunta en la cola (no frena)"
@@ -114,7 +114,7 @@
    "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2014-06-30-individual (ejercicio 2014)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.md",
@@ -290,8 +290,8 @@
  },
  "liga": {
   "valor": "be-div1amateur",
-  "fuente": "roster cacheado de \"2013–14 Belgian Third Division\" (tools/club-league-reference/be.json), coincidencia exacta \"Patro Eisden Maasmechelen\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -331,7 +331,7 @@
   },
   "liga": {
    "valor": "be-div1amateur",
-   "fuente": "roster cacheado de \"2013–14 Belgian Third Division\" (tools/club-league-reference/be.json), coincidencia exacta \"Patro Eisden Maasmechelen\"",
+   "fuente": "data/club-leagues/be.js ya tiene la fila",
    "estado": "ok"
   }
  },

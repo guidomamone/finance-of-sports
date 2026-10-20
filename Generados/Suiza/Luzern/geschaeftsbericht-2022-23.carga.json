@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.pdf",
- "generado": "2026-10-19T16:32:50.445Z",
- "frena": [
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 28.530231 + gastos -31.428929 + netInterest -0.198764 + tax -0.004884 = -3.102346 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 3.102345)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -31.28278 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-20T18:21:17.104Z",
+ "frena": [],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2022, consolidado); el documento trae el consolidado. Años cargados: 2019 consolidado, 2022 consolidado, 2025 consolidado",
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado. Años cargados: 2018 consolidado, 2019 consolidado, 2020 consolidado, 2022 consolidado, 2024 consolidado, 2025 consolidado",
+  "gastos: ningún total impreso igual a la suma de las líneas (-31.28278); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -27,7 +19,7 @@
     "amountNative": 4.785103,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -37,7 +29,7 @@
     "amountNative": 3.752924,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -202,12 +194,42 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Sonstiger Betriebsertrag",
+    "rawLabel": "Ausmietung Stewards",
     "normalizedCategory": "other_income",
-    "amountNative": 0.181535,
+    "amountNative": 0.340834,
     "disclosureLevel": "aggregated",
-    "_pag": 21,
-    "_escalon": 1,
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Anpassung Delkredere",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.202727,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Swiss-Olympic-Stabilisierungspaket",
+    "normalizedCategory": "other_income",
+    "amountNative": -0.08364,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sonstiges",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.127068,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -269,8 +291,8 @@
     "amountNative": -0.809445,
     "disclosureLevel": "aggregated",
     "_pag": 27,
-    "_escalon": 2,
-    "_conf": 0.85,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -354,14 +376,104 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "Spielbetrieb und Matchorganisation",
+    "rawLabel": "Miete und Unterhalt Stadion",
     "normalizedCategory": "match_organisation_expense",
-    "amountNative": -5.861309,
+    "amountNative": -1.50526,
     "disclosureLevel": "aggregated",
-    "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.88,
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Sicherheitskosten Matchtag (ohne Stewards)",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.914685,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Abgaben öffentlicher Verkehr",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.307617,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Medical und Material",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.541618,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ticketing und Vorverkaufsgebühren",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.276012,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Aufwand 1. Mannschaft Super League/AWSL",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.661088,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 2,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diverse Kosten Spielbetrieb",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.683883,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "VIP-Cateringkosten Spieltag",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.395624,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Aufwand übriger Spielbetrieb",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.082811,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Rückvergütungen Lieferanten",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": 0.507289,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Transferaufwand definitive Übertritte",
@@ -604,11 +716,21 @@
    "assetSales": 0,
    "netInterest": -0.198764,
    "tax": -0.004884,
+   "extraRows": [
+    {
+     "label": "Finanzergebnis",
+     "value": -0.198764
+    },
+    {
+     "label": "Direkte Steuern",
+     "value": -0.004884
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 28.530231,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalExpenses": 31.28278,
+   "officialPAT": -3.102345
   },
   "source": {
    "id": "luzern-ch-geschaeftsbericht-2022-23",
@@ -616,7 +738,7 @@
    "title": "FCL Holding AG — geschaeftsbericht-2022-23 (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
   }
  },
  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.md",
@@ -644,7 +766,7 @@
   }
  ],
  "seleccion": {
-  "filas": 59,
+  "filas": 71,
   "notasUsadas": [],
   "refM": null
  },
@@ -658,7 +780,7 @@
    "signoFijo": 4.785103,
    "cat": "matchday_competition",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -673,7 +795,7 @@
    "signoFijo": 3.752924,
    "cat": "matchday_competition",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -731,7 +853,7 @@
    "page": 21,
    "native": 5.41341,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 5.41341,
    "cat": "sponsorship_commercial",
    "conf": 1,
@@ -746,7 +868,7 @@
    "page": 21,
    "native": 2.1955,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 2.1955,
    "cat": "broadcasting",
    "conf": 1,
@@ -761,7 +883,7 @@
    "page": 21,
    "native": 1.718613,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 1.718613,
    "cat": "player_sales",
    "conf": 1,
@@ -927,26 +1049,71 @@
    "amountNative": 0.105982
   },
   {
-   "label": "Sonstiger Betriebsertrag",
-   "page": 21,
-   "native": 0.181535,
+   "label": "Ausmietung Stewards",
+   "page": 27,
+   "native": 0.340834,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.181535,
+   "origen": "verificacion (nota que desglosa \"Sonstiger Betriebsertrag\")",
+   "signoFijo": 0.340834,
    "cat": "other_income",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 0.181535
+   "amountNative": 0.340834
+  },
+  {
+   "label": "Anpassung Delkredere",
+   "page": 27,
+   "native": 0.202727,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Sonstiger Betriebsertrag\")",
+   "signoFijo": -0.202727,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.202727
+  },
+  {
+   "label": "Swiss-Olympic-Stabilisierungspaket",
+   "page": 27,
+   "native": 0.08364,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Sonstiger Betriebsertrag\")",
+   "signoFijo": -0.08364,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.08364
+  },
+  {
+   "label": "Sonstiges",
+   "page": 27,
+   "native": 0.127068,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Sonstiger Betriebsertrag\")",
+   "signoFijo": 0.127068,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.127068
   },
   {
    "label": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
    "page": 21,
    "native": 5.456835,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 5.456835,
    "cat": "other_income",
    "conf": 1,
@@ -961,7 +1128,7 @@
    "page": 21,
    "native": 0.085225,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))",
    "signoFijo": 0.085225,
    "cat": "other_income",
    "conf": 1,
@@ -976,7 +1143,7 @@
    "page": 21,
    "native": 0.165704,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))",
    "signoFijo": 0.165704,
    "cat": "other_income",
    "conf": 1,
@@ -1026,8 +1193,8 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 0.809445,
    "cat": "admin_general_expense",
-   "conf": 0.85,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -1162,19 +1329,157 @@
    "amountNative": -0.078705
   },
   {
-   "label": "Spielbetrieb und Matchorganisation",
-   "page": 21,
-   "native": 5.861309,
+   "label": "Miete und Unterhalt Stadion",
+   "page": 28,
+   "native": 1.50526,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 5.861309,
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": 1.50526,
    "cat": "match_organisation_expense",
-   "conf": 0.88,
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Nota 24 'Aufwand Spielbetrieb und Matchorganisation': alquiler a Stadion Luzern AG y mantenimiento de la swissporarena, más el daño en las bandas LED (164 TCHF). Es renglón mixto alquiler-mantenimiento del estadio; alternativa posible admin_general_expense (mantenimiento de estadio). Se acepta match_organisation_expense porque el club lo agrupa en su bloque de Matchorganisation y es el alquiler de la sede para jugar los partidos. [Miete und Unterhalt Stadion | 1’852’160 (L1794); 'Zunahme ... Schadenfall ... LED-Banden (164 TCHF) ... Mietzins ... um 27 TCHF erhöht' (L1807)]",
+   "destino": "expense",
+   "amountNative": -1.50526
+  },
+  {
+   "label": "Sicherheitskosten Matchtag (ohne Stewards)",
+   "page": 28,
+   "native": 0.914685,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": 0.914685,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.914685
+  },
+  {
+   "label": "Abgaben öffentlicher Verkehr",
+   "page": 28,
+   "native": 0.307617,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": 0.307617,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.307617
+  },
+  {
+   "label": "Medical und Material",
+   "page": 28,
+   "native": 0.541618,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": 0.541618,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.541618
+  },
+  {
+   "label": "Ticketing und Vorverkaufsgebühren",
+   "page": 28,
+   "native": 0.276012,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": 0.276012,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.276012
+  },
+  {
+   "label": "Aufwand 1. Mannschaft Super League/AWSL",
+   "page": 28,
+   "native": 0.661088,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": 0.661088,
+   "cat": "match_organisation_expense",
+   "conf": 0.92,
    "escalon": 2,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -5.861309
+   "amountNative": -0.661088
+  },
+  {
+   "label": "Diverse Kosten Spielbetrieb",
+   "page": 28,
+   "native": 0.683883,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": 0.683883,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costos varios de la operación de partidos dentro del bloque Spielbetrieb. match_organisation_expense. [Diverse Kosten Spielbetrieb | 519’321 (L1800)]",
+   "destino": "expense",
+   "amountNative": -0.683883
+  },
+  {
+   "label": "VIP-Cateringkosten Spieltag",
+   "page": 28,
+   "native": 1.395624,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": 1.395624,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.395624
+  },
+  {
+   "label": "Aufwand übriger Spielbetrieb",
+   "page": 28,
+   "native": 0.082811,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": 0.082811,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.082811
+  },
+  {
+   "label": "Rückvergütungen Lieferanten",
+   "page": 28,
+   "native": 0.507289,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")",
+   "signoFijo": -0.507289,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Reintegros de proveedores del catering de día de partido (participaciones sobre ventas y kickbacks de Food and Beverage); la nota 24 los resta dentro del mismo bloque (total bruto 6’539’937 menos 451’037 = 6’088’900 neto). Va con el bloque, match_organisation_expense, con signo negativo (reduce el gasto). [Rückvergütungen Lieferanten | −451’037 (L1804); 'Umsatzbeteiligungen und Kickbacks der Lieferanten, welche uns am Matchtag beliefern' (L1813)]",
+   "destino": "expense",
+   "amountNative": 0.507289
   },
   {
    "label": "Transferaufwand definitive Übertritte",
@@ -1380,7 +1685,7 @@
    "page": 21,
    "native": 0.425546,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.425546,
    "cat": "admin_general_expense",
    "conf": 1,
@@ -1395,7 +1700,7 @@
    "page": 21,
    "native": 0.341605,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.341605,
    "cat": "admin_general_expense",
    "conf": 1,
@@ -1486,7 +1791,7 @@
    "page": 21,
    "native": 0.221291,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.221291,
    "cat": "depreciation",
    "conf": 1,
@@ -1501,7 +1806,7 @@
    "page": 21,
    "native": 2.311866,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 2.311866,
    "cat": "player_amortisation",
    "conf": 1,
@@ -1517,7 +1822,7 @@
    "page": 21,
    "native": 0.146149,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
+   "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.146149,
    "cat": "exceptional_items",
    "conf": 1,
@@ -1553,39 +1858,43 @@
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Matchorganisation\")": "gastos con signo",
-   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Leistungsfussball Nachwuchs\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Events\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Merchandising\")": "gastos con signo",
-   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
+   "verificacion (nota que desglosa \"Sonstiger Betriebsertrag\")": "gastos con signo",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))": "gastos con signo",
    "verificacion (nota que desglosa \"Personalaufwand\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Spielbetrieb und Matchorganisation\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Transferaufwand\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Werbung und Sponsoring\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 28.530231,
   "expSum": -31.28278,
   "officialTotalRevenue": 28.530231,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
+  "officialTotalExpenses": 31.28278,
+  "officialPAT": -3.102345,
   "verificacion": {
-   "ingresos": "impreso"
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -3.102345,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
    "M": 28.530231
   }
- },
- "fxCloseNuevo": {
-  "key": "CHF@2023-06-30",
-  "fx": 0.8947,
-  "source": "market_close",
-  "label": "Noon buying rate de Nueva York (Reserva Federal, H.10) al 2023-06-30"
  },
  "liga": {
   "valor": "ch-superleague",
@@ -1620,7 +1929,7 @@
   },
   "fxRef": {
    "valor": "CHF@2023-06-30",
-   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.8947. --escribir agrega 'CHF@2023-06-30' a FX_CLOSE",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene CHF@2023-06-30 = 0.8947 (Noon buying rate de Nueva York (Reserva Federal, H.10) al 2023-06-30)",
    "estado": "ok"
   },
   "sourceId": {
@@ -1635,10 +1944,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 22,
-  "lineasGasto": 35,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 25,
+  "lineasGasto": 44,
   "metaFilas": 2,
   "excluidas": 0
  }

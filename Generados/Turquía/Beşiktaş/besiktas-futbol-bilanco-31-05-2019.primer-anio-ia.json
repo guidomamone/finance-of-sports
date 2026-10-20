@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2019.md",
+ "clave": "740d145af8217d92b120b12f2982f76f57ea76e8",
+ "generado": "2026-10-20T19:07:06.179Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todo lo cargado cuadra con el estado. Los renglones de hasılat (L224), costo de ventas (L225), gastos de comercialización (L227), gastos generales (L228) y otros ingresos y gastos operativos (L229-L230) se reemplazan por las partes que los abren en las notas. Las sumas de esas partes coinciden con cada renglón: 704,28; 649,55; 28,24; 23,93; 1,82 y 64,02. Los renglones financieros y de impuestos salen directo del estado (L232, L233, L235 y L236). No se cargaron subtotales ni datos del año anterior."
+ }
+}

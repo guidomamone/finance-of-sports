@@ -103,6 +103,60 @@ incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con ot
 alta-club.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2024–25 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "St. Gallen".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Suiza/St. Gallen/geschaeftsbericht-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Erträge aus Transfers und Leihgebühren | pág. 10, precedente |
+| 2 | Diverse Erträge inklusive Swiss Football League | pág. 10, precedente |
+| 3 | Erträge aus Future Champs Ostschweiz | pág. 10, precedente |
+| 4 | Erträge von Gönnern und Mitgliedern | pág. 10, precedente |
+| 5 | Ertrag aus Fussballspielen | pág. 11, precedente |
+| 6 | Ertrag aus Werbung und Sponsoring | pág. 11, precedente |
+| 7 | Ertrag aus Hospitality und Logen | pág. 11, precedente |
+| 8 | Ertrag aus Merchandising | pág. 11, precedente |
+| 9 | Ertrag aus Drittveranstaltungen | pág. 11, precedente |
+| 10 | Ertrag aus Conference Arena / Diverse Erträge | pág. 11, precedente |
+| 11 | Veränderung Wertberichtigungen | pág. 10, Jev 1 |
+| 12 | Ertragsminderungen | pág. 11, Jev 0.99 |
+| 13 | Ausserordentlicher Ertrag | pág. 9, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aufwand für Spielbetrieb | pág. 10, precedente |
+| 2 | Aufwand für Transfers | pág. 10, precedente |
+| 3 | Aufwand für Spielorganisation Fussball | pág. 11, precedente |
+| 4 | Aufwand für Catering | pág. 11, precedente |
+| 5 | Aufwand für Werbung und Sponsoring | pág. 11, precedente |
+| 6 | Aufwand für Merchandising | pág. 11, precedente |
+| 7 | Aufwand für Drittveranstaltungen | pág. 11, precedente |
+| 8 | Aufwand für Conference Arena / Diverses | pág. 11, precedente |
+| 9 | Personalaufwand | pág. 9, precedente |
+| 10 | Sonstiger Betriebsaufwand | pág. 9, precedente |
+| 11 | Abschreibungen Sachanlagen | pág. 9, precedente |
+| 12 | Abschreibungen Spielerwerte | pág. 9, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): ch-superleague, verificado contra roster cacheado de "2023–24 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "St. Gallen".
+```
+
 ## 2023
 
 ### Ingresos
@@ -134,6 +188,10 @@ Generados/Suiza/St. Gallen/geschaeftsbericht-2022-23.categorias.json (escalón d
 ```text
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Estadio, Venta de Jugadores, Otras secciones deportivas, Organización de partidos
 ```
 
 ### Liga
@@ -177,10 +235,67 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Estadio, Venta de Jugadores, Otras secciones deportivas, Organización de partidos
+```
+
 ### Liga
 
 ```text
 tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2021–22 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "St. Gallen".
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Suiza/St. Gallen/geschaeftsbericht-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Suiza/St. Gallen/geschaeftsbericht-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Erträge aus Transfers und Leihgebühren | pág. 10, precedente |
+| 2 | Diverse Erträge inklusive Swiss Football League | pág. 10, precedente |
+| 3 | Erträge aus Future Champs Ostschweiz | pág. 10, precedente |
+| 4 | Erträge von Gönnern und Mitgliedern | pág. 10, precedente |
+| 5 | Ertrag aus Fussballspielen | pág. 11, precedente |
+| 6 | Ertrag aus Werbung und Sponsoring | pág. 11, precedente |
+| 7 | Ertrag aus Merchandising | pág. 11, precedente |
+| 8 | Ertrag aus Conference Arena / Diverse Erträge | pág. 11, precedente |
+| 9 | Veränderung Wertberichtigungen | pág. 10, Jev 1 |
+| 10 | Debitorenverluste | pág. 11, Jev 1 |
+| 11 | Veränderung Wertberichtigungen | pág. 11, Jev 1 |
+| 12 | Diverse Ertragsminderungen | pág. 11, Jev 0.98 |
+| 13 | Ausserordentlicher Ertrag | pág. 9, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aufwand für Spielbetrieb | pág. 10, precedente |
+| 2 | Aufwand für Transfers | pág. 10, precedente |
+| 3 | Aufwand für Spielorganisation Fussball | pág. 11, precedente |
+| 4 | Aufwand für Werbung und Sponsoring | pág. 11, precedente |
+| 5 | Aufwand für Merchandising | pág. 11, precedente |
+| 6 | Aufwand für Conference Arena / Diverses | pág. 11, precedente |
+| 7 | Personalaufwand | pág. 9, precedente |
+| 8 | Sonstiger Betriebsaufwand | pág. 9, precedente |
+| 9 | Abschreibungen Sachanlagen | pág. 9, precedente |
+| 10 | Abschreibungen Spielerwerte | pág. 9, precedente |
+| 11 | Ausserordentlicher Aufwand | pág. 9, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): ch-superleague, verificado contra roster cacheado de "2020–21 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "St. Gallen".
 ```
 
 ## 2019
@@ -218,6 +333,10 @@ Generados/Suiza/St. Gallen/geschaeftsbericht-2018-19.categorias.json (escalón d
 ```text
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2024, 2025): Cuotas Sociales, Comercial / Sponsors, Estadio, Venta de Jugadores, Otras secciones deportivas, Organización de partidos
 ```
 
 ### Liga
@@ -258,4 +377,20 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### stgallen-ch-geschaeftsbericht-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Suiza/St. Gallen/geschaeftsbericht-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### stgallen-ch-geschaeftsbericht-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
