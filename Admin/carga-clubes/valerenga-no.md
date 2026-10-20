@@ -85,6 +85,74 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): no-eliteserien, verificado contra roster cacheado de "2025 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Vålerenga".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sponsorinntekter | pág. 10, precedente |
+| 2 | Markeds- og medieinntekter | pág. 10, precedente |
+| 3 | Billettsalg (ordinært) | pág. 10, precedente |
+| 4 | Viderefakturert | pág. 10, precedente |
+| 5 | Diverse inntekter | pág. 10, precedente |
+| 6 | Cupkasse | pág. 11, Jev 0.99 |
+| 7 | Billettandel hospitalitykunder | pág. 11, precedente |
+| 8 | Spillersalg | pág. 11, Jev 1 |
+| 9 | Utleie spillere | pág. 11, Jev 1 |
+| 10 | Solidaritetsinntekter | pág. 11, Jev 0.98 |
+| 11 | Viderefakturering (kostnad) | pág. 11, Jev 0.95 |
+| 12 | Andre avtaler | pág. 11, Jev 0.96 |
+| 13 | Tilskudd | pág. 11, Jev 0.99 |
+| 14 | Medlemskontigenter | pág. 11, Jev 1 |
+| 15 | Andre inntekter (kostnad) | pág. 11, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Varekostnad | pág. 2, precedente |
+| 2 | Lønninger | pág. 10, precedente |
+| 3 | Arbeidsgiveravgift | pág. 10, precedente |
+| 4 | Pensjonskostnader | pág. 10, precedente |
+| 5 | Andre ytelser | pág. 10, precedente |
+| 6 | Avskrivning av driftsmidler | pág. 2, precedente |
+| 7 | Nedskrivning av varige driftsmidler og immaterielle eiendeler | pág. 2, precedente |
+| 8 | Annen driftskostnad | pág. 2, precedente |
+| 9 | Lønninger | pág. 12, precedente |
+| 10 | Folketrygdavgift | pág. 12, Jev 0.99 |
+| 11 | Pensjonskostnader | pág. 12, precedente |
+| 12 | Andre lønns- og personalkostnader | pág. 12, Claude 0.8 |
+| 13 | Nedskrivning av varige driftsmidler og immaterielle eiendeler | pág. 2, precedente |
+| 14 | Kontorhold, hus og lokaler | pág. 2, Jev 1 |
+| 15 | Bilgodtgjørelse, diett og transport | pág. 2, precedente |
+| 16 | Trening, kurs og utdanning | pág. 2, precedente |
+| 17 | Utstyr, varekost | pág. 2, Jev 0.9 |
+| 18 | Kjøp og leie av spillere | pág. 2, Jev 0.99 |
+| 19 | Arrangementskostnader | pág. 2, Jev 0.97 |
+| 20 | Bane, anlegg og maskiner | pág. 2, precedente |
+| 21 | Annen driftskostnad | pág. 2, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): perimetro = individual. Ni el AS ni el Elite consolidan al otro (to-do 283): cada documento es individual; el ejercicio suma los dos con el ajuste suma-con del AS
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): suma-con = Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2023.pdf. Vålerenga: el AS y el Elite no consolidan; el ejercicio suma los dos sin contar dos veces la transferencia del AS al Elite (to-do 283)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): estado = b2. El estado de resultados es el bloque b2 (pág. 2); b3 solo trae el encabezado de año y la fila 'Sum overføringer og disponeringer', que no es ingreso ni gasto
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): no-eliteserien, verificado contra roster cacheado de "2023 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Vålerenga".
+```
+
 ## 2022
 
 ### Ingresos
@@ -167,4 +235,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### valerenga-no-aarsregnskap-valerenga-fotball-as-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

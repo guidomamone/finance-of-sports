@@ -24,6 +24,23 @@ const valerenganoRevenueLinesByYear = {
     { rawLabel:'Medlemskontigenter', normalizedCategory:'member_dues', amountNative:0.279, disclosureLevel:'aggregated' },
     { rawLabel:'Andre inntekter', normalizedCategory:'other_income', amountNative:0.167179, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Sponsorinntekter', normalizedCategory:'sponsorship_commercial', amountNative:50.500894, disclosureLevel:'aggregated' },
+    { rawLabel:'Markeds- og medieinntekter', normalizedCategory:'broadcasting', amountNative:29.023425, disclosureLevel:'aggregated' },
+    { rawLabel:'Billettsalg (ordinært)', normalizedCategory:'matchday_competition', amountNative:18.839129, disclosureLevel:'aggregated' },
+    { rawLabel:'Viderefakturert', normalizedCategory:'other_income', amountNative:1.480699, disclosureLevel:'aggregated' },
+    { rawLabel:'Diverse inntekter', normalizedCategory:'other_income', amountNative:0.710914, disclosureLevel:'aggregated' },
+    { rawLabel:'Cupkasse', normalizedCategory:'competition_bonus', amountNative:0.929674, disclosureLevel:'aggregated' },
+    { rawLabel:'Billettandel hospitalitykunder', normalizedCategory:'matchday_competition', amountNative:0.06, disclosureLevel:'aggregated' },
+    { rawLabel:'Spillersalg', normalizedCategory:'player_sales', amountNative:94.331926, disclosureLevel:'aggregated' },
+    { rawLabel:'Utleie spillere', normalizedCategory:'player_sales', amountNative:0.417557, disclosureLevel:'aggregated' },
+    { rawLabel:'Solidaritetsinntekter', normalizedCategory:'player_sales', amountNative:-0.054211, disclosureLevel:'aggregated' },
+    { rawLabel:'Viderefakturering (kostnad)', normalizedCategory:'other_income', amountNative:-0.221531, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre avtaler', normalizedCategory:'other_income', amountNative:0.876639, disclosureLevel:'aggregated' },
+    { rawLabel:'Tilskudd', normalizedCategory:'other_income', amountNative:4.10653, disclosureLevel:'aggregated' },
+    { rawLabel:'Medlemskontigenter', normalizedCategory:'member_dues', amountNative:0.3996, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre inntekter (kostnad)', normalizedCategory:'other_income', amountNative:-0.348595, disclosureLevel:'aggregated' },
+  ],
 };
 const valerenganoExpenseLinesByYear = {
   2025: [
@@ -57,6 +74,29 @@ const valerenganoExpenseLinesByYear = {
     { rawLabel:'Arrangementskostnader', normalizedCategory:'match_organisation_expense', amountNative:-1.521252, disclosureLevel:'aggregated' },
     { rawLabel:'Bane, anlegg og maskiner', normalizedCategory:'admin_general_expense', amountNative:-0.150133, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-3.143455, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Varekostnad', normalizedCategory:'other_expenses', amountNative:-0.407396, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønninger', normalizedCategory:'wages_squad', amountNative:-13.554362, disclosureLevel:'aggregated' },
+    { rawLabel:'Arbeidsgiveravgift', normalizedCategory:'wages_squad', amountNative:-1.899512, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnader', normalizedCategory:'wages_squad', amountNative:-0.209256, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre ytelser', normalizedCategory:'wages_squad', amountNative:-0.166167, disclosureLevel:'aggregated' },
+    { rawLabel:'Avskrivning av driftsmidler', normalizedCategory:'depreciation', amountNative:-0.551516, disclosureLevel:'aggregated' },
+    { rawLabel:'Nedskrivning av varige driftsmidler og immaterielle eiendeler', normalizedCategory:'other_expenses', amountNative:-2.268921, disclosureLevel:'aggregated' },
+    { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-28.680151, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønninger', normalizedCategory:'wages_squad', amountNative:-73.571116, disclosureLevel:'aggregated' },
+    { rawLabel:'Folketrygdavgift', normalizedCategory:'wages_squad', amountNative:-10.732668, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnader', normalizedCategory:'wages_squad', amountNative:-0.746634, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre lønns- og personalkostnader', normalizedCategory:'wages_squad', amountNative:-0.373668, disclosureLevel:'aggregated' },
+    { rawLabel:'Nedskrivning av varige driftsmidler og immaterielle eiendeler', normalizedCategory:'other_expenses', amountNative:-0.251414, disclosureLevel:'aggregated' },
+    { rawLabel:'Kontorhold, hus og lokaler', normalizedCategory:'admin_general_expense', amountNative:-1.116196, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilgodtgjørelse, diett og transport', normalizedCategory:'match_organisation_expense', amountNative:-0.1196, disclosureLevel:'aggregated' },
+    { rawLabel:'Trening, kurs og utdanning', normalizedCategory:'other_expenses', amountNative:-0.929208, disclosureLevel:'aggregated' },
+    { rawLabel:'Utstyr, varekost', normalizedCategory:'other_expenses', amountNative:-0.597684, disclosureLevel:'aggregated' },
+    { rawLabel:'Kjøp og leie av spillere', normalizedCategory:'other_expenses', amountNative:-56.604891, disclosureLevel:'aggregated' },
+    { rawLabel:'Arrangementskostnader', normalizedCategory:'match_organisation_expense', amountNative:-1.807255, disclosureLevel:'aggregated' },
+    { rawLabel:'Bane, anlegg og maskiner', normalizedCategory:'admin_general_expense', amountNative:-0.220263, disclosureLevel:'aggregated' },
+    { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-5.252899, disclosureLevel:'aggregated' },
   ],
 };
 const valerenganoFiscalYearMeta = {
@@ -93,6 +133,24 @@ const valerenganoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:102.580405, officialTotalExpenses:137.039282, officialPAT:-42.685226,
   },
+  2023: {
+    currency:'NOK', fxRef:'NOK@2023-12-31',
+    sourceId:'valerenga-no-aarsregnskap-valerenga-fotball-as-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:5.143771, tax:0,
+    extraRows: [
+      {label:'Annen finansinntekt', value:81.514139},
+      {label:'Annen finanskostnad', value:-40.881025},
+      {label:'Annen renteinntekt', value:0},
+      {label:'Annen finansinntekt', value:53.87474},
+      {label:'Annen rentekostnad', value:-0.024306},
+      {label:'Annen finanskostnad', value:-89.339777},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:201.05265, officialTotalExpenses:200.060777, officialPAT:6.135645,
+  },
 };
 const valerenganoPresupuestoOverlayByYear = {};
 
@@ -119,6 +177,12 @@ Object.assign(sources, {
     title:'Vålerenga Fotball AS — aarsregnskap-valerenga-fotball-as-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
     publicNote:'Suma de dos entidades que no consolidan: aarsregnskap-valerenga-fotball-as-2022 y aarsregnskap-valerenga-fotball-elite-2022. La primera no imprime la transferencia a la segunda como renglón: el importe (64 millones) sale del ingreso «Overføring fra samarbeidsselskap» de la segunda y se resta de «Annen driftskostnad» de la primera (evidencia: Elite 2022, pág. 2 del visor: Overføring fra samarbeidsselskap 64 000 000; AS 2022, pág. 2 del visor: Annen driftskostnad 95 291 505, y la cláusula del contrato de colaboración: el AS recibe los ingresos del Elite a cambio de cubrir todos sus gastos); el resultado es la suma de los dos resultados impresos.',
+  },
+  'valerenga-no-aarsregnskap-valerenga-fotball-as-2023': {
+    id:'valerenga-no-aarsregnskap-valerenga-fotball-as-2023', clubId:'valerenga-no',
+    title:'Vålerenga Fotball AS — aarsregnskap-valerenga-fotball-as-2023 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+    publicNote:'Suma de dos entidades que no consolidan: aarsregnskap-valerenga-fotball-as-2023 y aarsregnskap-valerenga-fotball-elite-2023. La primera no imprime la transferencia a la segunda como renglón: el importe (87,5 millones) sale del ingreso «Overføring fra samarbeidsselskap» de la segunda y se resta de «Annen driftskostnad» de la primera (evidencia: Elite 2023, pág. 2 del visor: Overføring fra samarbeidsselskap 87 500 000; AS 2023, pág. 2 del visor: Annen driftskostnad 116 180 151, y la nota del contrato de colaboración con el Elite: el AS cubre los gastos del Elite); el resultado es la suma de los dos resultados impresos.',
   },
 });
 
