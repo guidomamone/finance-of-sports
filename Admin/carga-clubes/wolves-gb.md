@@ -152,6 +152,44 @@ Jeff Shi (2016-07-01 a 2025-12-19): Chairman desde la compra por Fosun en julio 
 Duda: El Chairman actual es Nathan Shi (interino desde 12/2025, luego permanente según un reporte de mayo 2026); no se cargó porque ningún cierre le corresponde. Si se quiere mostrar la gestión actual, falta fecha y fuente de su confirmación.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate receipts | pág. 27, precedente |
+| 2 | Sponsorship and advertising | pág. 27, precedente |
+| 3 | Broadcasting rights | pág. 27, precedente |
+| 4 | Commercial | pág. 27, precedente |
+| 5 | League distributions | pág. 27, precedente |
+| 6 | Other turnover | pág. 27, precedente |
+| 7 | Other operating income | pág. 18, precedente |
+| 8 | Profit on disposal of player registrations | pág. 18, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating expenses | pág. 18, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Wolverhampton Wanderers".
+```
+
 ## 2021
 
 ### Ingresos
@@ -258,6 +296,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### wolves-gb-full-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros
