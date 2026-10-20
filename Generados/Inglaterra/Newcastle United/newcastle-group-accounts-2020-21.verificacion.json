@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md",
- "generado": "2026-10-20T19:25:27.705Z",
+ "generado": "2026-10-20T19:29:56.042Z",
  "estado": "ok",
  "clubId": "newcastle-gb",
  "year": 2021,
@@ -31,6 +31,11 @@
    "dif": 1.2434497875801753e-14
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 178.914; el sitio tiene 178.914"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2021: 141.893 en este documento y 141.893 en newcastle-group-accounts-2021-22.pdf (columna del año anterior)"
@@ -39,11 +44,6 @@
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 178.914 en newcastle-group-accounts-2019-20.pdf y 178.914 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [

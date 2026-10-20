@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.pdf",
  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.md",
- "generado": "2026-10-20T19:25:27.621Z",
- "estado": "cola",
+ "generado": "2026-10-20T19:29:56.014Z",
+ "estado": "ok",
  "clubId": "newcastle-gb",
  "year": 2019,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "c7b1e30",
-  "6218320"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -46,17 +43,11 @@
  ],
  "notas": [
   "la nota de \"Operating expenses\" no suma el renglón (96.798 contra 122.944, sumando sus renglones): quedó el renglón del estado",
-  "duda de localizar que no afecta la carga: Solo hay estado de resultados consolidado; la compañía no presenta cuenta propia (solo balance individual b5).",
-  "duda de extraer que no afecta la carga: L384-L386 reexpresan el Operating profit (L382) y repiten la amortización de L381."
+  "duda de extraer ya contestada para el club (perimetro, \"Operating expenses\"): aceptar, en newcastle-group-accounts-2018-19.pdf",
+  "duda de extraer que no afecta la carga: El cuadro de L987-L990 no distingue plantel de resto del personal; no hay fila 'Salarios del plantel'."
  ],
- "reintentar": [
-  {
-   "renglon": "Operating expenses",
-   "suma": 96.798,
-   "objetivo": 122.944
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Operating expenses",

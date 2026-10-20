@@ -276,4 +276,13 @@ window.RANKINGS["gb-premierleague"] = {
         mix:[["Comercial / Sponsors",23.532],["Estadio",13.741],["Televisión",96.134]] },
     ],
   },
+  2019: {
+    leagueSize: 21,
+    wiki: {"t":"2018–19 Premier League","lang":"en","at":"2026-10-19","n":21},
+    clubs: [
+      { id:"newcastle-gb", revenue:255.872, reportType:"official_balance_sheet",
+        sourceId:"newcastle-gb-group-accounts-2018-19",
+        mix:[["Comercial / Sponsors",33.33],["Estadio",31.624],["Televisión",157.746],["Venta de Jugadores",31.289],["Otros ingresos",1.884]] },
+    ],
+  },
 };

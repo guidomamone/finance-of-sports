@@ -257,6 +257,42 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2019–20 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Newcastle United".
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Matchday | pág. 25, precedente |
+| 2 | Media | pág. 25, precedente |
+| 3 | Commercial | pág. 25, precedente |
+| 4 | Other income | pág. 25, precedente |
+| 5 | Profit on disposal of players' and staff registrations | pág. 12, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating expenses | pág. 12, precedente |
+| 2 | Amortisation and impairment of players' registrations | pág. 12, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2018–19 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Newcastle United".
+```
+
 ## Fuentes
 
 ### newcastle-gb-group-accounts-2025
@@ -297,6 +333,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### newcastle-gb-group-accounts-2018-19
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Gestiones (Finanzas 5, 2026-10-19)

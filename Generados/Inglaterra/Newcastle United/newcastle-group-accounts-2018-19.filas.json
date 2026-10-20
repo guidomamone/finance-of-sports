@@ -4,7 +4,7 @@
  "mdSha1": "8beb52d5b755a3a30b246304df38d4e3c63e56fc",
  "ubicacionSha1": "aef72b90c906bcb736f5778410c04973c2aca3f1",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T19:25:27.472Z",
+ "generado": "2026-10-20T19:29:44.314Z",
  "ubicacion": {
   "estado": [
    "b3"
@@ -285,43 +285,31 @@
  "resultado": {
   "linea": 393,
   "actual": "34,674",
-  "anterior": "34,674"
+  "anterior": "18,599"
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro 'The operating profit is stated after charging/(crediting)' (L953-L959) por ser informativo y no un desglose sumable de Operating expenses?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro de b9 (L953-L959, partidas cargadas al resultado operativo) por ser informativo y no un desglose aditivo de 'Operating expenses'?",
    "propuesta": "sí",
-   "tema": "otro",
+   "tema": "perimetro",
    "renglon": "Operating expenses",
-   "texto": "El cuadro b9 (L953-L959) mezcla partidas informativas, incluye la amortización ya expuesta en L381 y no suma a ningún renglón del estado.",
+   "texto": "L949-L959 lista cargos/créditos mezclando amortización (ya en L381) y otros conceptos; no suma a ningún renglón del estado.",
    "bloques": [
     "b9"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se cargan los costos de personal (L987-L990) como desglose parcial de 'Operating expenses' (L380)?",
+   "pregunta": "¿Se carga 'Wages and salaries' (L987, 84,944) como salarios totales sin separar 'Salarios del plantel', dado que el documento no imprime el desglose por plantel?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Operating expenses",
-   "texto": "Staff costs (96,798, L990) son solo una parte de Operating expenses (122,944, L380); el resto no se desglosa.",
+   "renglon": "Wages and salaries",
+   "texto": "El cuadro de L987-L990 no distingue plantel de resto del personal; no hay fila 'Salarios del plantel'.",
    "bloques": [
-    "b11",
-    "b3"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se dejan afuera las filas de análisis repetidas L384-L386 del estado?",
-   "propuesta": "sí",
-   "tema": "cuadro-duplicado",
-   "renglon": "Operating profit",
-   "texto": "L384-L386 reexpresan el Operating profit (L382) y repiten la amortización de L381.",
-   "bloques": [
-    "b3"
+    "b11"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Todas las cifras en £000. No hay total de gastos impreso. Retained earnings (L394-L395) excluidas por no ser resultados. Corrección: en 'resultado', anterior debe ser 18,599 (L393)."
+ "observaciones": "Las filas L384-L386 (análisis del resultado operativo) se omitieron por repetir L381-L382; L394-L395 son resultados acumulados, no del ejercicio. No hay total de gastos impreso. El cuadro de staff costs (b11) desglosa parte de 'Operating expenses'; no existe fila específica de salarios del plantel."
 }

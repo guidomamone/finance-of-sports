@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.md",
  "mdSha1": "8beb52d5b755a3a30b246304df38d4e3c63e56fc",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T19:24:29.512Z",
+ "generado": "2026-10-20T19:29:25.174Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 3,
@@ -340,17 +341,16 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el estado consolidado (b3) aunque la entidad del sitio sea Newcastle United Limited, que es la matriz del grupo?",
+   "pregunta": "¿Se cargan los 'Wages and salaries' de la nota 7 (b11) como salarios del plantel aunque incluyen a todo el personal del grupo?",
    "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "Solo hay estado de resultados consolidado; la compañía no presenta cuenta propia (solo balance individual b5).",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 7 no separa plantel de resto del personal; es el único desglose de costos de personal.",
    "bloques": [
-    "b3",
-    "b5"
+    "b11"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado de resultados consolidado del grupo Newcastle United Limited en b3 (incluye resultado acumulado al pie). b8 desglosa turnover por clase (matchday, media, commercial, other income). b9 (operating profit stated after), b11 (staff costs) y b14 (interest receivable) son notas de detalle. Se excluyen el balance, el flujo de efectivo, los impuestos y el resumen de b2."
+ "observaciones": "El documento es de MASH Holdings / Newcastle United Limited group; solo trae estado de resultados consolidado (b3). El balance individual de la sociedad (b5) no tiene cuenta de resultados. b8 desglosa turnover por clase (matchday, media, commercial, other income). b9 abre partidas de gastos operativos, b11 costos de personal, b14 intereses a cobrar. b16 (impuesto) es desglose del cargo fiscal; se omite b17 por ser conciliación."
 }
