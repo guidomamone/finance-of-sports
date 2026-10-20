@@ -46,3 +46,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2023 desde `Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.pdf` (sourceId `westham-gb-full-accounts-2022-23`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2020 desde `Clubes/Inglaterra/West Ham United/westham-full-accounts-2019-20.pdf` (sourceId `westham-gb-full-accounts-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2021 desde `Clubes/Inglaterra/West Ham United/westham-full-accounts-2020-21.pdf` (sourceId `westham-gb-full-accounts-2020-21`).
