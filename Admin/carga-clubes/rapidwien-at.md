@@ -78,10 +78,68 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+```
+
 ### Liga
 
 ```text
 alta-club.mjs (2026-10-20): at-bundesliga, verificado contra roster cacheado de "2023–24 Austrian Football Bundesliga" (tools/club-league-reference/at.json), coincidencia única por palabras "SK Rapid" = "Rapid Wien".
+```
+
+## 2014
+
+### Ingresos
+
+```text
+2014: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Austria/Rapid Wien/geschaeftsbericht-2013-14.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sponsoring | pág. 34, Jev 1 |
+| 2 | + Ticketing & Fanreisen | pág. 34, Jev 0.96 |
+| 3 | + Rechteverwertung | pág. 34, precedente |
+| 4 | + Merchandising | pág. 34, Jev 0.99 |
+| 5 | + Hospitality (VIP) | pág. 34, precedente |
+| 6 | + Sonstige Erlöse | pág. 34, Jev 0.99 |
+| 7 | a.o. Erträge | pág. 34, Jev 1 |
+| 8 | Transfererlöse | pág. 34, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aufwand Heimspiele und Fanreisen | pág. 34, Jev 1 |
+| 2 | + Wareneinsatz Merchandising | pág. 34, precedente |
+| 3 | + Aufwand Hospitality VIP | pág. 34, Jev 0.93 |
+| 4 | + Umsetzung Sponsorleistungen | pág. 34, precedente |
+| 5 | + Eigene Medien und Produktionskosten | pág. 34, precedente |
+| 6 | Personalaufwand Sport | pág. 34, Jev 1 |
+| 7 | + Sonstiger Personalaufwand | pág. 34, precedente |
+| 8 | Verwaltungs-, Versicherungs- und sonst. Aufwand | pág. 34, Jev 0.99 |
+| 9 | + Stadion-, Miet- und Instandhaltungsaufwand | pág. 34, precedente |
+| 10 | + Spiel- und Trainingsbetrieb | pág. 34, precedente |
+| 11 | + Klubservice, Events, PR und Marketing | pág. 34, precedente |
+| 12 | + Management-Gebühren und Vermittlungsprovisionen | pág. 34, precedente |
+| 13 | + Abgaben, Gebühren & Strafen | pág. 34, precedente |
+| 14 | Abschreibungen für Abnutzung | pág. 34, Jev 0.93 |
+| 15 | Transferaufwendungen | pág. 34, precedente |
+
+### Meta
+
+```text
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2014-06-30. Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2013-14; el registro no trae cierre
+2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): perimetro = consolidado. Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2014 cacheada).
 ```
 
 ## 2013
@@ -154,4 +212,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2010-11-2012-13.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### rapidwien-at-geschaeftsbericht-2013-14
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

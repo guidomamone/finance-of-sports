@@ -7,7 +7,8 @@ window.RANKINGS["at-bundesliga"] = {
     clubs: [
       { id:"rapidwien-at", revenue:47.527, reportType:"official_balance_sheet",
         sourceId:"rapidwien-at-geschaeftsbericht-2023-24",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",44.378],["Otros ingresos",3.148]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",44.378],["Otros ingresos",3.148]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };
