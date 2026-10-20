@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.pdf",
- "generado": "2026-10-19T18:34:45.502Z",
+ "generado": "2026-10-19T18:56:29.577Z",
  "frena": [
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2024-12-31): confirmar qué ejercicio es antes de cargarlo"
-  },
   {
    "etapa": "categoria-en-cola",
    "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Arriendos\" -> match_organisation_expense 0.6; \"Gastos de Pretemporada\" -> match_organisation_expense 0.75; \"Gastos de Entrenamientos\" -> match_organisation_expense 0.7; \"Provisiones\" -> other_expenses 0.75; \"Gastos Bancarios\" -> other_expenses 0.6"
@@ -20,7 +16,7 @@
   }
  ],
  "avisos": [
-  "gastos: ningún total impreso igual a la suma de las líneas (-10659.456); queda la suma, verificada por el resultado del ejercicio (el impreso \"total de gastos (verificado)\" 10664.752 difiere en 5.296: redondeo)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-13933.745); queda la suma, verificada por el resultado del ejercicio (el impreso \"total de gastos (verificado)\" 13935.503 difiere en 1.758: redondeo)",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -32,7 +28,7 @@
    {
     "rawLabel": "Taquilla - Venta de Boletería",
     "normalizedCategory": "matchday_competition",
-    "amountNative": 1564.483,
+    "amountNative": 1542.62,
     "disclosureLevel": "aggregated",
     "_pag": 46,
     "_escalon": 0,
@@ -42,7 +38,7 @@
    {
     "rawLabel": "Publicidad y Propaganda",
     "normalizedCategory": "sponsorship_commercial",
-    "amountNative": 764.772,
+    "amountNative": 1961.092,
     "disclosureLevel": "aggregated",
     "_pag": 46,
     "_escalon": 0,
@@ -52,7 +48,7 @@
    {
     "rawLabel": "Participación Dimayor tv",
     "normalizedCategory": "broadcasting",
-    "amountNative": 5885.367,
+    "amountNative": 6157.191,
     "disclosureLevel": "aggregated",
     "_pag": 46,
     "_escalon": 1,
@@ -62,7 +58,7 @@
    {
     "rawLabel": "Auxilios Dimayor",
     "normalizedCategory": "broadcasting",
-    "amountNative": 856.577,
+    "amountNative": 1204.633,
     "disclosureLevel": "aggregated",
     "_pag": 46,
     "_escalon": 1,
@@ -72,7 +68,7 @@
    {
     "rawLabel": "Participación federación colombiana de futbol",
     "normalizedCategory": "competition_bonus",
-    "amountNative": 544.931,
+    "amountNative": 674.436,
     "disclosureLevel": "aggregated",
     "_pag": 46,
     "_escalon": 0,
@@ -82,7 +78,7 @@
    {
     "rawLabel": "Venta de Artículos Deportivos",
     "normalizedCategory": "sponsorship_commercial",
-    "amountNative": 323.836,
+    "amountNative": 224.95,
     "disclosureLevel": "aggregated",
     "_pag": 46,
     "_escalon": 0,
@@ -92,7 +88,7 @@
    {
     "rawLabel": "Otros ingresos de partido",
     "normalizedCategory": "matchday_competition",
-    "amountNative": 5.19,
+    "amountNative": 3.808,
     "disclosureLevel": "aggregated",
     "_pag": 46,
     "_escalon": 0,
@@ -102,7 +98,7 @@
    {
     "rawLabel": "Devoluciones en Servicios",
     "normalizedCategory": "other_income",
-    "amountNative": -209.538,
+    "amountNative": -372.151,
     "disclosureLevel": "aggregated",
     "_pag": 46,
     "_escalon": 1,
@@ -110,21 +106,41 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Otros Ingresos",
+    "rawLabel": "Recuperaciones",
     "normalizedCategory": "other_income",
-    "amountNative": 1496.386,
+    "amountNative": 126.206,
     "disclosureLevel": "aggregated",
-    "_pag": 4,
-    "_escalon": 0,
+    "_pag": 47,
+    "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros Arriendos",
+    "normalizedCategory": "other_income",
+    "amountNative": 200,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diversos",
+    "normalizedCategory": "other_income",
+    "amountNative": 43.411,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
    {
     "rawLabel": "Gastos del Personal",
     "normalizedCategory": "wages_squad",
-    "amountNative": -4287.831,
+    "amountNative": -7492.134,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 2,
@@ -134,7 +150,7 @@
    {
     "rawLabel": "Impuestos",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -149.582,
+    "amountNative": -113.952,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 1,
@@ -144,7 +160,7 @@
    {
     "rawLabel": "Arriendos",
     "normalizedCategory": "match_organisation_expense",
-    "amountNative": -391.399,
+    "amountNative": -622.87,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 2,
@@ -154,7 +170,7 @@
    {
     "rawLabel": "Contribuciones y Afiliaciones",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -1280.311,
+    "amountNative": -1494.847,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 1,
@@ -164,7 +180,7 @@
    {
     "rawLabel": "Servicios",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -79.803,
+    "amountNative": -216.512,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 1,
@@ -174,7 +190,7 @@
    {
     "rawLabel": "Gastos Legales",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -5.879,
+    "amountNative": -12.782,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 1,
@@ -184,7 +200,7 @@
    {
     "rawLabel": "Gastos de Viaje",
     "normalizedCategory": "match_organisation_expense",
-    "amountNative": -626.543,
+    "amountNative": -488.099,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 1,
@@ -194,7 +210,7 @@
    {
     "rawLabel": "Elemento de Aseo y Cafetería",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -1.002,
+    "amountNative": -2.136,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 1,
@@ -204,7 +220,7 @@
    {
     "rawLabel": "Logística y Gastos de Partidos",
     "normalizedCategory": "match_organisation_expense",
-    "amountNative": -938.785,
+    "amountNative": -978.086,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 1,
@@ -214,7 +230,7 @@
    {
     "rawLabel": "Gastos de Pretemporada",
     "normalizedCategory": "match_organisation_expense",
-    "amountNative": -39.525,
+    "amountNative": -7.99,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 2,
@@ -224,7 +240,7 @@
    {
     "rawLabel": "Gastos de Entrenamientos",
     "normalizedCategory": "match_organisation_expense",
-    "amountNative": -182.898,
+    "amountNative": -211.694,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 2,
@@ -232,29 +248,9 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Otros Costos",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -1.808,
-    "disclosureLevel": "aggregated",
-    "_pag": 48,
-    "_escalon": 1,
-    "_conf": 0.99,
-    "_fuenteCat": "categorias.json"
-   },
-   {
     "rawLabel": "Derechos Deportivos",
     "normalizedCategory": "player_amortisation",
-    "amountNative": -396.104,
-    "disclosureLevel": "aggregated",
-    "_pag": 48,
-    "_escalon": 1,
-    "_conf": 0.98,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Derechos Deportivos",
-    "normalizedCategory": "player_amortisation",
-    "amountNative": -52.316,
+    "amountNative": -80,
     "disclosureLevel": "aggregated",
     "_pag": 48,
     "_escalon": 1,
@@ -264,7 +260,7 @@
    {
     "rawLabel": "Costos de Venta",
     "normalizedCategory": "other_expenses",
-    "amountNative": -202.141,
+    "amountNative": -122.101,
     "disclosureLevel": "aggregated",
     "_pag": 4,
     "_escalon": 1,
@@ -274,7 +270,7 @@
    {
     "rawLabel": "Gasto de Personal",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -928.732,
+    "amountNative": -980.556,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 2,
@@ -284,7 +280,7 @@
    {
     "rawLabel": "Honorarios",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -91.197,
+    "amountNative": -128.456,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -294,7 +290,7 @@
    {
     "rawLabel": "Impuestos",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -197.728,
+    "amountNative": -199.685,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -304,7 +300,7 @@
    {
     "rawLabel": "Arrendamientos",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -57.831,
+    "amountNative": -69.972,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -314,7 +310,7 @@
    {
     "rawLabel": "Seguros",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -18.665,
+    "amountNative": -14.534,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 2,
@@ -324,7 +320,7 @@
    {
     "rawLabel": "Servicios",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -250.705,
+    "amountNative": -284.842,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -334,7 +330,7 @@
    {
     "rawLabel": "Gastos Legales",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -58.016,
+    "amountNative": -5.629,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -344,7 +340,7 @@
    {
     "rawLabel": "Mantenimiento y Reparaciones",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -113.917,
+    "amountNative": -86.987,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -352,19 +348,9 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Adecuaciones e Instalaciones",
-    "normalizedCategory": "admin_general_expense",
-    "amountNative": -0.4,
-    "disclosureLevel": "aggregated",
-    "_pag": 49,
-    "_escalon": 1,
-    "_conf": 0.99,
-    "_fuenteCat": "categorias.json"
-   },
-   {
     "rawLabel": "Gastos de Viaje",
     "normalizedCategory": "match_organisation_expense",
-    "amountNative": -12.576,
+    "amountNative": -2.381,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -374,7 +360,7 @@
    {
     "rawLabel": "Depreciación",
     "normalizedCategory": "depreciation",
-    "amountNative": -32.753,
+    "amountNative": -92.795,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -384,7 +370,7 @@
    {
     "rawLabel": "Amortizaciones",
     "normalizedCategory": "other_amortisation",
-    "amountNative": -5.957,
+    "amountNative": -8.869,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -394,7 +380,7 @@
    {
     "rawLabel": "Diversos",
     "normalizedCategory": "other_expenses",
-    "amountNative": -90.093,
+    "amountNative": -73.859,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -404,7 +390,7 @@
    {
     "rawLabel": "Provisiones",
     "normalizedCategory": "other_expenses",
-    "amountNative": -30.525,
+    "amountNative": -49.775,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 2,
@@ -414,7 +400,7 @@
    {
     "rawLabel": "Gastos Bancarios",
     "normalizedCategory": "other_expenses",
-    "amountNative": -38.42,
+    "amountNative": -49.717,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 2,
@@ -424,7 +410,7 @@
    {
     "rawLabel": "Gastos Comisiones banc",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -0.745,
+    "amountNative": -3.823,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -434,7 +420,7 @@
    {
     "rawLabel": "Gastos Extraordinarios",
     "normalizedCategory": "exceptional_items",
-    "amountNative": -5.296,
+    "amountNative": -1.758,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -444,7 +430,7 @@
    {
     "rawLabel": "Gastos Diversos",
     "normalizedCategory": "other_expenses",
-    "amountNative": -95.269,
+    "amountNative": -38.662,
     "disclosureLevel": "aggregated",
     "_pag": 49,
     "_escalon": 1,
@@ -460,31 +446,31 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": -237.487,
-   "tax": -152.495,
+   "netInterest": -179.738,
+   "tax": -22.834,
    "extraRows": [
     {
      "label": "Ingresos Financieros",
-     "value": 30.333
-    },
-    {
-     "label": "Gastos Financieros",
-     "value": -267.82
-    },
-    {
-     "label": "Gastos (-Ingreso) por Correccion Impuesto Cte",
      "value": 0
     },
     {
+     "label": "Gastos Financieros",
+     "value": -179.738
+    },
+    {
+     "label": "Gastos (-Ingreso) por Correccion Impuesto Cte",
+     "value": -22.834
+    },
+    {
      "label": "Impuesto de Renta Corriente",
-     "value": -152.495
+     "value": 0
     }
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 11232.004,
-   "officialTotalExpenses": 10659.456,
-   "officialPAT": 177.272
+   "officialTotalRevenue": 11766.196,
+   "officialTotalExpenses": 13933.745,
+   "officialPAT": -2371.879
   },
   "source": {
    "id": "unionmagdalena-co-estados-financieros-2025",
@@ -500,17 +486,16 @@
  "periodo": {
   "tipo": "anual",
   "meses": 12,
-  "cierre": "2024-12-31",
+  "cierre": "2025-12-31",
   "evidencia": null,
   "confianza": "media",
-  "anual": "calendario",
-  "nombreNoCoincide": true
+  "anual": "calendario"
  },
  "clubId": "unionmagdalena-co",
  "year": 2025,
  "ajustes": null,
  "seleccion": {
-  "filas": 46,
+  "filas": 45,
   "notasUsadas": [],
   "refM": null
  },
@@ -518,175 +503,207 @@
   {
    "label": "Taquilla - Venta de Boletería",
    "page": 46,
-   "native": 1564.483,
+   "native": 1542.62,
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Ingresos de Actividaes Ordinarias\")",
-   "signoFijo": 1564.483,
+   "signoFijo": 1542.62,
    "cat": "matchday_competition",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 1564.483
+   "amountNative": 1542.62
   },
   {
    "label": "Publicidad y Propaganda",
    "page": 46,
-   "native": 764.772,
+   "native": 1961.092,
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Ingresos de Actividaes Ordinarias\")",
-   "signoFijo": 764.772,
+   "signoFijo": 1961.092,
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 764.772
+   "amountNative": 1961.092
   },
   {
    "label": "Participación Dimayor tv",
    "page": 46,
-   "native": 5885.367,
+   "native": 6157.191,
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Ingresos de Actividaes Ordinarias\")",
-   "signoFijo": 5885.367,
+   "signoFijo": 6157.191,
    "cat": "broadcasting",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 5885.367
+   "amountNative": 6157.191
   },
   {
    "label": "Auxilios Dimayor",
    "page": 46,
-   "native": 856.577,
+   "native": 1204.633,
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Ingresos de Actividaes Ordinarias\")",
-   "signoFijo": 856.577,
+   "signoFijo": 1204.633,
    "cat": "broadcasting",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 856.577
+   "amountNative": 1204.633
   },
   {
    "label": "Participación federación colombiana de futbol",
    "page": 46,
-   "native": 544.931,
+   "native": 674.436,
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Ingresos de Actividaes Ordinarias\")",
-   "signoFijo": 544.931,
+   "signoFijo": 674.436,
    "cat": "competition_bonus",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 544.931
+   "amountNative": 674.436
   },
   {
    "label": "Venta de Artículos Deportivos",
    "page": 46,
-   "native": 323.836,
+   "native": 224.95,
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Ingresos de Actividaes Ordinarias\")",
-   "signoFijo": 323.836,
+   "signoFijo": 224.95,
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 323.836
+   "amountNative": 224.95
   },
   {
    "label": "Otros ingresos de partido",
    "page": 46,
-   "native": 5.19,
+   "native": 3.808,
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Ingresos de Actividaes Ordinarias\")",
-   "signoFijo": 5.19,
+   "signoFijo": 3.808,
    "cat": "matchday_competition",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 5.19
+   "amountNative": 3.808
   },
   {
    "label": "Devoluciones en Servicios",
    "page": 46,
-   "native": 209.538,
+   "native": 372.151,
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Ingresos de Actividaes Ordinarias\")",
-   "signoFijo": -209.538,
+   "signoFijo": -372.151,
    "cat": "other_income",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": -209.538
+   "amountNative": -372.151
   },
   {
-   "label": "Otros Ingresos",
-   "page": 4,
-   "native": 1496.386,
+   "label": "Recuperaciones",
+   "page": 47,
+   "native": 126.206,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 1496.386,
+   "origen": "verificacion (nota que desglosa \"Otros Ingresos\")",
+   "signoFijo": 126.206,
    "cat": "other_income",
    "conf": 1,
-   "escalon": 0,
+   "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
-   "amountNative": 1496.386
+   "amountNative": 126.206
+  },
+  {
+   "label": "Otros Arriendos",
+   "page": 47,
+   "native": 200,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros Ingresos\")",
+   "signoFijo": 200,
+   "cat": "other_income",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 200
+  },
+  {
+   "label": "Diversos",
+   "page": 47,
+   "native": 43.411,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros Ingresos\")",
+   "signoFijo": 43.411,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "precedente del país: 1 clubes (Fortaleza CEIF), nota:otros ingresos · Guido 2026-10-02: tabla de categorías de Fortaleza aprobada: diversos en otros ingresos",
+   "destino": "revenue",
+   "amountNative": 43.411
   },
   {
    "label": "Gastos del Personal",
    "page": 48,
-   "native": 4287.831,
+   "native": 7492.134,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 4287.831,
+   "signoFijo": 7492.134,
    "cat": "wages_squad",
    "conf": 0.85,
    "escalon": 2,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -4287.831
+   "amountNative": -7492.134
   },
   {
    "label": "Impuestos",
    "page": 48,
-   "native": 149.582,
+   "native": 113.952,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 149.582,
+   "signoFijo": 113.952,
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -149.582
+   "amountNative": -113.952
   },
   {
    "label": "Arriendos",
    "page": 48,
-   "native": 391.399,
+   "native": 622.87,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 391.399,
+   "signoFijo": 622.87,
    "cat": "match_organisation_expense",
    "conf": 0.6,
    "escalon": 2,
@@ -694,105 +711,105 @@
    "enLista": true,
    "enCola": true,
    "destino": "expense",
-   "amountNative": -391.399
+   "amountNative": -622.87
   },
   {
    "label": "Contribuciones y Afiliaciones",
    "page": 48,
-   "native": 1280.311,
+   "native": 1494.847,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 1280.311,
+   "signoFijo": 1494.847,
    "cat": "admin_general_expense",
    "conf": 0.99,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -1280.311
+   "amountNative": -1494.847
   },
   {
    "label": "Servicios",
    "page": 48,
-   "native": 79.803,
+   "native": 216.512,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 79.803,
+   "signoFijo": 216.512,
    "cat": "admin_general_expense",
    "conf": 0.98,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -79.803
+   "amountNative": -216.512
   },
   {
    "label": "Gastos Legales",
    "page": 48,
-   "native": 5.879,
+   "native": 12.782,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 5.879,
+   "signoFijo": 12.782,
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -5.879
+   "amountNative": -12.782
   },
   {
    "label": "Gastos de Viaje",
    "page": 48,
-   "native": 626.543,
+   "native": 488.099,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 626.543,
+   "signoFijo": 488.099,
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -626.543
+   "amountNative": -488.099
   },
   {
    "label": "Elemento de Aseo y Cafetería",
    "page": 48,
-   "native": 1.002,
+   "native": 2.136,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 1.002,
+   "signoFijo": 2.136,
    "cat": "admin_general_expense",
    "conf": 0.97,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -1.002
+   "amountNative": -2.136
   },
   {
    "label": "Logística y Gastos de Partidos",
    "page": 48,
-   "native": 938.785,
+   "native": 978.086,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 938.785,
+   "signoFijo": 978.086,
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -938.785
+   "amountNative": -978.086
   },
   {
    "label": "Gastos de Pretemporada",
    "page": 48,
-   "native": 39.525,
+   "native": 7.99,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 39.525,
+   "signoFijo": 7.99,
    "cat": "match_organisation_expense",
    "conf": 0.75,
    "escalon": 2,
@@ -800,15 +817,15 @@
    "enLista": true,
    "enCola": true,
    "destino": "expense",
-   "amountNative": -39.525
+   "amountNative": -7.99
   },
   {
    "label": "Gastos de Entrenamientos",
    "page": 48,
-   "native": 182.898,
+   "native": 211.694,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 182.898,
+   "signoFijo": 211.694,
    "cat": "match_organisation_expense",
    "conf": 0.7,
    "escalon": 2,
@@ -816,270 +833,225 @@
    "enLista": true,
    "enCola": true,
    "destino": "expense",
-   "amountNative": -182.898
-  },
-  {
-   "label": "Otros Costos",
-   "page": 48,
-   "native": 1.808,
-   "ladoDoc": "expense",
-   "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 1.808,
-   "cat": "other_expenses",
-   "conf": 0.99,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "expense",
-   "amountNative": -1.808
+   "amountNative": -211.694
   },
   {
    "label": "Derechos Deportivos",
    "page": 48,
-   "native": 396.104,
+   "native": 80,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 396.104,
+   "signoFijo": 80,
    "cat": "player_amortisation",
    "conf": 0.98,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -396.104
-  },
-  {
-   "label": "Derechos Deportivos",
-   "page": 48,
-   "native": 52.316,
-   "ladoDoc": "expense",
-   "origen": "verificacion (nota que desglosa \"Gastos de Venta\")",
-   "signoFijo": 52.316,
-   "cat": "player_amortisation",
-   "conf": 0.98,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "expense",
-   "amountNative": -52.316
+   "amountNative": -80
   },
   {
    "label": "Costos de Venta",
    "page": 4,
-   "native": 202.141,
+   "native": 122.101,
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
-   "signoFijo": 202.141,
+   "signoFijo": 122.101,
    "cat": "other_expenses",
    "conf": 0.99,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -202.141
+   "amountNative": -122.101
   },
   {
    "label": "Gasto de Personal",
    "page": 49,
-   "native": 928.732,
+   "native": 980.556,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 928.732,
+   "signoFijo": 980.556,
    "cat": "admin_general_expense",
    "conf": 0.88,
    "escalon": 2,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -928.732
+   "amountNative": -980.556
   },
   {
    "label": "Honorarios",
    "page": 49,
-   "native": 91.197,
+   "native": 128.456,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 91.197,
+   "signoFijo": 128.456,
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -91.197
+   "amountNative": -128.456
   },
   {
    "label": "Impuestos",
    "page": 49,
-   "native": 197.728,
+   "native": 199.685,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 197.728,
+   "signoFijo": 199.685,
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -197.728
+   "amountNative": -199.685
   },
   {
    "label": "Arrendamientos",
    "page": 49,
-   "native": 57.831,
+   "native": 69.972,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 57.831,
+   "signoFijo": 69.972,
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -57.831
+   "amountNative": -69.972
   },
   {
    "label": "Seguros",
    "page": 49,
-   "native": 18.665,
+   "native": 14.534,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 18.665,
+   "signoFijo": 14.534,
    "cat": "admin_general_expense",
    "conf": 0.88,
    "escalon": 2,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -18.665
+   "amountNative": -14.534
   },
   {
    "label": "Servicios",
    "page": 49,
-   "native": 250.705,
+   "native": 284.842,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 250.705,
+   "signoFijo": 284.842,
    "cat": "admin_general_expense",
    "conf": 0.98,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -250.705
+   "amountNative": -284.842
   },
   {
    "label": "Gastos Legales",
    "page": 49,
-   "native": 58.016,
+   "native": 5.629,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 58.016,
+   "signoFijo": 5.629,
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -58.016
+   "amountNative": -5.629
   },
   {
    "label": "Mantenimiento y Reparaciones",
    "page": 49,
-   "native": 113.917,
+   "native": 86.987,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 113.917,
+   "signoFijo": 86.987,
    "cat": "admin_general_expense",
    "conf": 0.98,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -113.917
-  },
-  {
-   "label": "Adecuaciones e Instalaciones",
-   "page": 49,
-   "native": 0.4,
-   "ladoDoc": "expense",
-   "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 0.4,
-   "cat": "admin_general_expense",
-   "conf": 0.99,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "expense",
-   "amountNative": -0.4
+   "amountNative": -86.987
   },
   {
    "label": "Gastos de Viaje",
    "page": 49,
-   "native": 12.576,
+   "native": 2.381,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 12.576,
+   "signoFijo": 2.381,
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -12.576
+   "amountNative": -2.381
   },
   {
    "label": "Depreciación",
    "page": 49,
-   "native": 32.753,
+   "native": 92.795,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 32.753,
+   "signoFijo": 92.795,
    "cat": "depreciation",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -32.753
+   "amountNative": -92.795
   },
   {
    "label": "Amortizaciones",
    "page": 49,
-   "native": 5.957,
+   "native": 8.869,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 5.957,
+   "signoFijo": 8.869,
    "cat": "other_amortisation",
    "conf": 0.96,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -5.957
+   "amountNative": -8.869
   },
   {
    "label": "Diversos",
    "page": 49,
-   "native": 90.093,
+   "native": 73.859,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 90.093,
+   "signoFijo": 73.859,
    "cat": "other_expenses",
    "conf": 0.97,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -90.093
+   "amountNative": -73.859
   },
   {
    "label": "Provisiones",
    "page": 49,
-   "native": 30.525,
+   "native": 49.775,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 30.525,
+   "signoFijo": 49.775,
    "cat": "other_expenses",
    "conf": 0.75,
    "escalon": 2,
@@ -1087,15 +1059,15 @@
    "enLista": true,
    "enCola": true,
    "destino": "expense",
-   "amountNative": -30.525
+   "amountNative": -49.775
   },
   {
    "label": "Gastos Bancarios",
    "page": 49,
-   "native": 38.42,
+   "native": 49.717,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 38.42,
+   "signoFijo": 49.717,
    "cat": "other_expenses",
    "conf": 0.6,
    "escalon": 2,
@@ -1103,57 +1075,57 @@
    "enLista": true,
    "enCola": true,
    "destino": "expense",
-   "amountNative": -38.42
+   "amountNative": -49.717
   },
   {
    "label": "Gastos Comisiones banc",
    "page": 49,
-   "native": 0.745,
+   "native": 3.823,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 0.745,
+   "signoFijo": 3.823,
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -0.745
+   "amountNative": -3.823
   },
   {
    "label": "Gastos Extraordinarios",
    "page": 49,
-   "native": 5.296,
+   "native": 1.758,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 5.296,
+   "signoFijo": 1.758,
    "cat": "exceptional_items",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -5.296
+   "amountNative": -1.758
   },
   {
    "label": "Gastos Diversos",
    "page": 49,
-   "native": 95.269,
+   "native": 38.662,
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")",
-   "signoFijo": 95.269,
+   "signoFijo": 38.662,
    "cat": "other_expenses",
    "conf": 0.99,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -95.269
+   "amountNative": -38.662
   },
   {
    "label": "Ingresos Financieros",
    "page": null,
-   "native": 30.333,
+   "native": 0,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1164,7 +1136,7 @@
   {
    "label": "Gastos Financieros",
    "page": null,
-   "native": -267.82,
+   "native": -179.738,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1175,7 +1147,7 @@
   {
    "label": "Gastos (-Ingreso) por Correccion Impuesto Cte",
    "page": null,
-   "native": 0,
+   "native": -22.834,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1186,7 +1158,7 @@
   {
    "label": "Impuesto de Renta Corriente",
    "page": null,
-   "native": -152.495,
+   "native": 0,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1198,19 +1170,20 @@
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Ingresos de Actividaes Ordinarias\")": "gastos con signo",
-   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Otros Ingresos\")": "gastos con signo",
    "verificacion (nota que desglosa \"Gastos de Venta\")": "gastos sin signo (se invierten)",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos de Administracion y otros gastos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 11232.004,
-  "expSum": -10659.456,
-  "officialTotalRevenue": 11232.004,
-  "officialTotalExpenses": 10659.456,
-  "officialPAT": 177.272,
+  "revSum": 11766.196,
+  "expSum": -13933.745,
+  "officialTotalRevenue": 11766.196,
+  "officialTotalExpenses": 13933.745,
+  "officialPAT": -2371.879,
   "verificacion": {
    "pat": "impreso",
    "ingresos": "impreso",
@@ -1219,13 +1192,13 @@
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
    "pag": null,
-   "M": 177.272,
+   "M": -2371.879,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 11232.004
+   "M": 11766.196
   }
  },
  "liga": {
@@ -1277,9 +1250,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
-  "lineasIngreso": 9,
-  "lineasGasto": 33,
+  "motivos": 3,
+  "lineasIngreso": 11,
+  "lineasGasto": 30,
   "metaFilas": 4,
   "excluidas": 0
  }

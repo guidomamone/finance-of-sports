@@ -36,6 +36,18 @@ const pontepretaBrRevenueLinesByYear = {
     { rawLabel:'Administrativo - Amador', normalizedCategory:'youth_football', amountNative:0.971491, disclosureLevel:'detailed' },
     { rawLabel:'Social / Outras', normalizedCategory:'other_income', amountNative:1.901677, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Quotas Globo-Camp.Brasileiro', normalizedCategory:'broadcasting', amountNative:1.660015, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotas F.P.F', normalizedCategory:'broadcasting', amountNative:9.1175, disclosureLevel:'aggregated' },
+    { rawLabel:'Premiação Campeonato Paulista', normalizedCategory:'competition_bonus', amountNative:0.2, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotas Copa do Brasil-CBF', normalizedCategory:'broadcasting', amountNative:0.83, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade/Propaganda', normalizedCategory:'sponsorship_commercial', amountNative:4.240984, disclosureLevel:'aggregated' },
+    { rawLabel:'Solidariedade / Compensação Formação', normalizedCategory:'player_sales', amountNative:2.389897, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrativo - Estado', normalizedCategory:'stadium_other', amountNative:1.398765, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrativo - Jd Paineiras', normalizedCategory:'other_sports', amountNative:0.053848, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrativo - Amador', normalizedCategory:'youth_football', amountNative:0.988322, disclosureLevel:'aggregated' },
+    { rawLabel:'Social / Outras', normalizedCategory:'other_income', amountNative:2.692, disclosureLevel:'aggregated' },
+  ],
 };
 
 const pontepretaBrExpenseLinesByYear = {
@@ -91,6 +103,18 @@ const pontepretaBrExpenseLinesByYear = {
     { rawLabel:'Amador', normalizedCategory:'youth_other_sports_expense', amountNative:-3.084546, disclosureLevel:'detailed' },
     { rawLabel:'Depreciação/Contingência/Pept/CNRD (ajuste extraordinário fora dos departamentos — ver cabecera)', normalizedCategory:'exceptional_items', amountNative:-22.168194, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Salários e Encargos /Outros', normalizedCategory:'wages_squad', amountNative:-19.158725, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços de Terceiros', normalizedCategory:'admin_general_expense', amountNative:-3.0665, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas com Jogos', normalizedCategory:'match_organisation_expense', amountNative:-5.573721, disclosureLevel:'aggregated' },
+    { rawLabel:'Demais Gastos', normalizedCategory:'other_expenses', amountNative:-14.887655, disclosureLevel:'aggregated' },
+    { rawLabel:'Diferencia de redondeo', normalizedCategory:'other_expenses', amountNative:-0.000001, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrativo - Estado', normalizedCategory:'match_organisation_expense', amountNative:-3.680125, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrativo - Jd Paineiras', normalizedCategory:'youth_other_sports_expense', amountNative:-0.51094, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrativo - Jd Eulina', normalizedCategory:'youth_other_sports_expense', amountNative:-0.480674, disclosureLevel:'aggregated' },
+    { rawLabel:'Amador', normalizedCategory:'youth_other_sports_expense', amountNative:-3.4534, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciação/Amortizacao/Contingencia/Pept/Cnrd', normalizedCategory:'exceptional_items', amountNative:-6.299661, disclosureLevel:'aggregated' },
+  ],
 };
 
 const pontepretaBrFiscalYearMeta = {
@@ -123,6 +147,16 @@ const pontepretaBrFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0.040222, tax:0,
     officialTotalRevenue:79.650568, officialTotalExpenses:50.521953, officialPAT:7.000643,
+  },
+  2025: {
+    currency:'BRL', fxRef:'BRL@2025-12-31',
+    sourceId:'pontepreta-br-balanco-2024-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.0357, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:23.571331, officialTotalExpenses:50.811741, officialPAT:-33.57577,
   },
 };
 
@@ -158,6 +192,11 @@ Object.assign(sources, {
     title:'Associação Atlética Ponte Preta — Demonstrações Financeiras, Balanços Patrimoniais em 31/12/2024 e 31/12/2023',
     type:'official_balance_sheet', reliability:'primary',
     url:'https://futebolpaulista.com.br/Repositorio/Institucional/2024/Balanco%20Publicacao%20FPF.pdf',
+  },
+  'pontepreta-br-balanco-2024-2025': {
+    id:'pontepreta-br-balanco-2024-2025', clubId:'pontepreta-br',
+    title:'Associação Atlética Ponte Preta — balanco-2024-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 

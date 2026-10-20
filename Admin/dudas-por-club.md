@@ -1997,5 +1997,5 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
 
 ## Juventude y Ponte Preta (onboarding, lote 103, sesión 2026-10-19: no frena la carga)
 
-- **Juventude 2021**: ¿el club tiene socios que pagan cuota (mensalidades, sócio-torcedor) y en qué línea del balance las registra ("Receitas Patrimoniais" y "Outras Receitas" no tienen desglose)? ¿Tiene otras modalidades deportivas con ingresos o gastos propios? Se carga con "Cuotas sociales" y "Otras secciones deportivas" en 0.
-- **Ponte Preta 2025**: ¿qué compone "Social / Outras" (2.692.000 en 2025): incluye mensalidades de socios o sócio-torcedor? "Cuotas sociales" queda en 0.
+- **Juventude 2021**: tiene planes de sócio-torcedor (Jaconero; búsqueda web), pero "Receitas Patrimoniais" y "Outras Receitas" no desglosan dónde registra las mensalidades. ¿En qué línea del balance están?
+- **Ponte Preta 2025**: tiene el programa "Torcedor Camisa 10+" (19.130 sócios-torcedores según el Torcedômetro). ¿Las mensalidades están en "Social / Outras" (2.692.000 en 2025)?

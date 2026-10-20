@@ -1,9 +1,18 @@
 {
  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf",
- "generado": "2026-10-19T18:34:44.979Z",
- "frena": [],
+ "generado": "2026-10-19T18:40:40.325Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "colocolo-cl ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['colocolo-cl-estados-financieros-2025'] ya existe"
+  }
+ ],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado",
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
   "categorías en 0 aun después del reintento (se carga así): Otras secciones deportivas",
   "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
  ],
@@ -664,8 +673,8 @@
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 9,
   "lineasGasto": 9,
   "metaFilas": 4,

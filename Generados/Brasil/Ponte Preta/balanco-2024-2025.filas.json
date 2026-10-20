@@ -4,7 +4,7 @@
  "mdSha1": "1ecdd70ded8caad2fea6f9b7cd5c9820aade6300",
  "ubicacionSha1": "2eff2c80ea66462235294cd0aab2644ce803f36f",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:37:42.915Z",
+ "generado": "2026-10-19T18:42:03.186Z",
  "ubicacion": {
   "estado": [
    "b3"
@@ -23,22 +23,22 @@
   {
    "bloque": "b3",
    "escala": "unidades",
-   "evidencia": "L58: (Valores Expressos em reais)"
+   "evidencia": "(Valores Expressos em reais)"
   },
   {
    "bloque": "b23",
    "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes consistentes con reais del estado (total L422 = L64)"
+   "evidencia": "Sin indicación; importes coinciden con el estado en reais"
   },
   {
    "bloque": "b25",
    "escala": "no se sabe",
-   "evidencia": "Sin indicación; total L431 coincide con L72 en reais"
+   "evidencia": "Sin indicación; total coincide con el estado en reais"
   },
   {
    "bloque": "b26",
    "escala": "no se sabe",
-   "evidencia": "Sin indicación; coherente con reais"
+   "evidencia": "Sin indicación"
   },
   {
    "bloque": "b28",
@@ -48,7 +48,7 @@
   {
    "bloque": "b32",
    "escala": "no se sabe",
-   "evidencia": "Sin indicación; total L489 coincide con L72 en reais"
+   "evidencia": "Sin indicación; total coincide con el estado"
   }
  ],
  "filas": [
@@ -458,11 +458,11 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro 18.(b) (L485-L489) por duplicar el desglose de 'Profissional' ya cargado de L427-L431?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro 18.(b) (L485-L489) por duplicar el desglose de 'Profissional' ya tomado de L427-L431?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "Profissional",
-   "texto": "L485-L489 repite los mismos importes de L427-L431 (diferencia de 1 en L488 es redondeo).",
+   "texto": "L485-L489 repite los mismos importes que L427-L431 (diferencia de 1 en L488, redondeo).",
    "bloques": [
     "b32",
     "b25"
@@ -470,28 +470,28 @@
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Las filas de b28 (L443-L449) son continuación del desglose de 'Demais Gastos' de la nota 18.(a)?",
+   "pregunta": "¿No existe en este documento una fila de 'Cuotas sociales' (Quotas sociais/Mensalidades) en las notas, quedando sólo el renglón 'Social / Outras' (L68) del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Social / Outras",
+   "texto": "No aparece ninguna nota que desglose 'Social / Outras' (L68); las cuotas sociales estarían dentro de ese renglón.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Las filas de b28 (L443-L449) forman parte del desglose de 'Demais Gastos' (18.(a)) continuando desde L441?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Demais Gastos",
-   "texto": "b26 suma 12.467.193 con L443-L449, y con los tres renglones de b28 llega a 14.887.655; L443 es un subtotal intermedio sin título claro.",
+   "texto": "La suma de L437-L441 + L443 no es evidente y el cuadro de b28 está cortado; su pertenencia es ambigua.",
    "bloques": [
     "b26",
     "b28"
    ],
    "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Las celdas vacías de 2025 en 'Receita transmissão' (L416) y 'Venda Atletas' (L418) son cero?",
-   "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "Profissional",
-   "texto": "Sin importe 2025 impreso; la suma de los demás renglones da 18.438.396 (L422).",
-   "bloques": [
-    "b23"
-   ],
-   "afecta_carga": false
   }
  ],
- "observaciones": "Estado en reais. El renglón de ingresos incluye 'Resultado Financeiro Líquido' (L69) dentro del total de receitas. La tabla de receitas (b23) no imprime encabezado de columnas; se asume 2025/2024 por coincidencia del total L422 con L64."
+ "observaciones": "Estado en reais. Notas de ingresos Profissional (L413-L420) con 2025 vacío en 'Receita transmissão' y 'Venda Atletas' (actual vacío). No hay impuesto a las ganancias. No se encontró fila explícita de cuotas sociales."
 }

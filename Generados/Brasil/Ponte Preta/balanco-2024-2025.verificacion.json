@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf",
  "md": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.md",
- "generado": "2026-10-19T18:34:29.220Z",
+ "generado": "2026-10-19T18:56:26.097Z",
  "estado": "ok",
  "clubId": "pontepreta-br",
  "year": 2025,
@@ -45,11 +45,11 @@
   "escalón \"nota exacta en la lectura 5\": \"Profissional\" (L64) se abre en las 6 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"Profissional\" (L72) se abre en las 5 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Profissional\"): ¿Se deja afuera de la carga el cuadro 18.(b) (L485-L489) por duplicar el desglose de 'Profissional' ya cargado de L427-L431?",
-  "duda de extraer que no afecta la carga: Sin importe 2025 impreso; la suma de los demás renglones da 18.438.396 (L422)."
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Profissional\"): ¿Se deja afuera de la carga el cuadro 18.(b) (L485-L489) por duplicar el desglose de 'Profissional' ya tomado de L427-L431?",
+  "duda de extraer que no afecta la carga: No aparece ninguna nota que desglose 'Social / Outras' (L68); las cuotas sociales estarían dentro de ese renglón."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 23.571331,

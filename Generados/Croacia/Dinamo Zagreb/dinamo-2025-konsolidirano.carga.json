@@ -1,9 +1,18 @@
 {
  "pdf": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.pdf",
- "generado": "2026-10-19T18:34:45.136Z",
- "frena": [],
+ "generado": "2026-10-19T18:40:40.493Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "dinamozagreb-hr ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['dinamozagreb-hr-dinamo-2025-konsolidirano'] ya existe"
+  }
+ ],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado. Años cargados: 2024 consolidado",
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado. Años cargados: 2024 consolidado, 2025 consolidado",
   "gastos: ningún total impreso igual a la suma de las líneas (-68.701354); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-12-31); pregunta en la cola (no frena)"
  ],
@@ -1853,8 +1862,8 @@
  },
  "liga": {
   "valor": "hr-hnl",
-  "fuente": "roster cacheado de \"2025–26 Croatian Football League\" (tools/club-league-reference/hr.json), coincidencia exacta \"Dinamo Zagreb\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1894,13 +1903,13 @@
   },
   "liga": {
    "valor": "hr-hnl",
-   "fuente": "roster cacheado de \"2025–26 Croatian Football League\" (tools/club-league-reference/hr.json), coincidencia exacta \"Dinamo Zagreb\"",
+   "fuente": "data/club-leagues/hr.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 27,
   "lineasGasto": 40,
   "metaFilas": 4,

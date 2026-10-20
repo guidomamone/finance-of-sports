@@ -19,6 +19,15 @@ window.RANKINGS["be-div1amateur"] = {
         mix:[["Otros ingresos",1.577]] },
     ],
   },
+  2022: {
+    leagueSize: 15,
+    wiki: {"t":"2021–22 Belgian National Division 1","lang":"en","at":"2026-10-19","n":15},
+    clubs: [
+      { id:"patroeisden-be", revenue:0.798, reportType:"official_balance_sheet",
+        sourceId:"patroeisden-be-jaarrekening-2022-06-30-individual",
+        mix:[["Otros ingresos",0.798]] },
+    ],
+  },
   2020: {
     leagueSize: 16,
     sinDato: ["liersesk-be"],

@@ -79,3 +79,30 @@
 
 - 0 años cargados otra vez. La corrida categorizó solo 2 documentos de Basel (de Pipeline 5, US$ 0,056) y ninguno del lote 103: el registro todavía los tenía sin "listo-para-jev". Basel no se tocó (no se escribió nada). El ensayo ahora cotiza ~US$ 0,66 de categorización para los 22.
 - Unión Magdalena 2025: `[periodo]` frena con razón. El estado trae 2025 primero y el pipeline extrajo la segunda columna (2024) del documento 2025 (`.rubros.json` year 2024; la nota 24 toma 1.564.483, la columna 2024). Defecto de script, al TODO sin diseñar. Mi respuesta "aceptar" del caso 864aa95 estaba mal y la corregí con `corregir --valor no`. No cargar este año hasta resolverlo.
+
+### Cierre del día (2026-10-19): lote 103 completo, Patro Eisden, Unión Magdalena
+
+#### Qué cambió (para CHANGELOG)
+
+- Lote 103: Juventude 2021 y Ponte Preta 2025 cargados (perfil contestado con búsqueda web: la regla de Guido es que ninguna carga se frena por socios u otros deportes; memoria `no-frenar-carga-por-socios`). Los 3 casos de Ponte Preta (b28 es continuación de 'Demais Gastos'; sin fila de mensalidades) se contestaron.
+- Patro Eisden 2022 cargado (caso 7c6165f: esquema abreviado belga, como los otros años).
+- Unión Magdalena 2025 rehecho con el cierre 2025-12-31 (lote 105, `Admin/lotes/lote-105.txt`, arreglo 298 m2 de `periodo.mjs`): ahora extrae la columna 2025. Respondidos sus 7 casos (socios no, otros deportes no, 5 categorías), falta una pasada para que se escriba.
+- Dinamo Zagreb 2025: las ventas de activos de la cola quedan como `exceptional_items` (revertí mi `no_es_rubro`, que rompía el tie-out).
+
+#### Qué queda (para TODO)
+
+- Unión Magdalena 2025: una pasada barata (`caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-105.txt --ejecutar --cargar`); su gestión (caso cac54f1, firma Alberto Mario Garzón Wilches, Presidente, L1572 del .md) necesita una URL de fuente para `data/gestiones/co.js` y no frena.
+- Lierse SK 2019: cambio de `cargar.mjs` (sacar `per.meses !== 12` de la compuerta de primer ejercicio): 298 w2, de Pipeline 5.
+- Boyacá Chicó 2025 (298 p2) y Silkeborg/Viborg (q2): de Pipeline 5. Juventude y Ponte Preta: las preguntas al club siguen en `Admin/dudas-por-club.md`.
+- Mejora de script (al TODO): que el gate `perfil-en-cola` de `cargar.mjs` nunca frene una carga.
+- Gestión de Dinamo Zagreb 2025 (Zajec hasta el 16-09-2025, Boban desde esa fecha): falta URL de fuente.
+
+#### Por dónde seguir
+
+1. **238 por Latinoamérica**: 161 documentos transcriptos y validados sin localizar (ARG 24, BRA 41, LAT 96), unos US$ 50 de localizar y extraer. Un lote de 5 a 8 clubes por vez, la cola contestada por subagentes (sin Bash), número de lote a pedir a la principal. `node tools/estado.mjs` da el conteo actual; no armé el lote.
+2. **165 c** (altas de los países que faltan): después del 238, un país por vez con el pipeline (skill `club-or-year-onboarding`).
+3. Escala total de `estado.mjs` al 2026-10-19: 8.074 PDFs solo PDF (~US$ 1.591, Reino Unido 3.450, Estonia 1.313, Noruega 714), 1.099 transcriptos y validados sin localizar (~US$ 328) y 622 con cifras distintas o escaneos sin validar (~US$ 78). Bélgica, Noruega, Suiza, Países Bajos y Reino Unido son de otras sesiones.
+
+#### Qué deja de ser cierto en ESTADO
+
+- Nada nuevo más allá de lo cargado (`node tools/generate-club-index.js` regenera `ESTADO-clubes.md`).

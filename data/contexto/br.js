@@ -157,6 +157,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'juventude-br': {
     2020: {"estadio":"Alfredo Jaconi","capacidad":19924,"sponsor":"Banrisul","marca":"19treze (Club manufactured kit)","temporada":"2020 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1283248039"},
+    2021: {"estadio":"Alfredo Jaconi","capacidad":19924,"sponsor":"Banrisul","marca":"19treze (club manufactured kit)","temporada":"2021 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375901035"},
   },
   'mirassol': {
     2024: {"estadio":"Campos Maia","capacidad":15000,"sponsor":"Guaraná Poty, Bet7k","marca":"Athleta","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
@@ -194,6 +195,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"estadio":"Moisés Lucarelli","capacidad":19728,"sponsor":"PixBet","marca":"1900 (club manufactured kit)","temporada":"2022 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376405033"},
     2023: {"estadio":"Moisés Lucarelli","capacidad":19728,"sponsor":"EstrelaBet","marca":"1900 (club manufactured kit)","temporada":"2023 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1324792245"},
     2024: {"estadio":"Moisés Lucarelli","capacidad":19728,"sponsor":"EstrelaBet, DESKTOP","marca":"Diadora","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
+    2025: {"estadio":"Moisés Lucarelli","capacidad":19728,"sponsor":"GingaBet, DESKTOP","marca":"Diadora","temporada":"2025 Campeonato Brasileiro Série C","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375636209"},
   },
   'rbbragantino-br': {
     2019: {"estadio":"Nabi Abi Chedid","capacidad":17128,"sponsor":"Red Bull","marca":"Nike","temporada":"2019 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378401314"},

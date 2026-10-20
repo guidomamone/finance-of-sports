@@ -8,6 +8,9 @@ window.RANKINGS["br-serieC"] = {
       { id:"guarani-br", revenue:11.553, reportType:"official_balance_sheet",
         sourceId:"guarani-br-demonstracoes-2024-2025",
         mix:[["Cuotas Sociales",0.385],["Comercial / Sponsors",0.332],["Televisión",2.599],["Premios por competencias",0.044],["Venta de Jugadores",7.657],["Otros ingresos",0.536]] },
+      { id:"pontepreta-br", revenue:4.284, reportType:"official_balance_sheet",
+        sourceId:"pontepreta-br-balanco-2024-2025",
+        mix:[["Comercial / Sponsors",0.771],["Estadio",0.254],["Televisión",2.11],["Premios por competencias",0.036],["Venta de Jugadores",0.434],["Otras secciones deportivas",0.189],["Otros ingresos",0.489]] },
     ],
   },
   2024: {

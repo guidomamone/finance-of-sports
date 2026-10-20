@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf",
  "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
- "generado": "2026-10-19T18:34:29.189Z",
+ "generado": "2026-10-19T18:42:03.224Z",
  "estado": "ok",
  "clubId": "juventude-br",
  "year": 2021,
@@ -31,25 +31,20 @@
    "dif": 3.552713678800501e-15
   },
   {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
-  },
-  {
    "nombre": "año anterior cargado",
    "ok": true,
    "detalle": "la columna 2020 de este documento suma ingresos 32.383448; el sitio tiene 32.383448"
   }
  ],
  "notas": [
-  "la lectura base no cerraba; cerró con la lectura 2",
   "línea 515: 33.655.776,98 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (3355577698) el resultado daría -3304.140545 y no cierra)",
   "línea 516: 6.880.702,54 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (698070254) el resultado daría -673.408175 y no cierra)",
-  "duda de extraer que no afecta la carga: L188+L190..L193 suman 17.781.376,45 (igual al resultado L197), no -921.799,29; el subtotal operativo impreso en L195 parece erróneo.",
-  "duda de extraer ya contestada para el club (cuadro-de-otro-anio, \"Custo da Atividade do Desporto\"): aceptar, en demonstracoes-financeiras-2021.pdf"
+  "duda de localizar que no afecta la carga: La nota 19 (b20) es el único desglose de ingresos y no tiene una fila de mensalidades o cuotas de socios.",
+  "duda de extraer que no afecta la carga: El total 2020 de la nota de costos (L518) no coincide con el estado (L186) y sus partidas suman 13.923.510,07; solo afecta el año anterior.",
+  "duda de extraer que no afecta la carga: L195 es la suma de L190-L193, no el resultado operativo; el resultado del ejercicio L197 = L188 + L195."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 68.262559,

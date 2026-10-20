@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.md",
- "generado": "2026-10-19T16:25:20.731Z",
- "estado": "cola",
+ "generado": "2026-10-19T18:57:03.601Z",
+ "estado": "ok",
  "clubId": "patroeisden-be",
  "year": 2022,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "7c6165f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,6 +36,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio tiene 2021 sin líneas de ingresos"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2022: 0.768543 en este documento y 0.768543 en jaarrekening-2023-06-30-individual.pdf (columna del año anterior)"
@@ -46,16 +49,6 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "códigos NBB del año 2021 iguales en este documento y en jaarrekening-2021-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0 y 0.190904)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
