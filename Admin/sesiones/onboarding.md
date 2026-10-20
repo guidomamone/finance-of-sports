@@ -126,3 +126,10 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 ### Qué queda
 - Corridas pedidas a la principal (comando y número de lote): lote-105 (Unión Magdalena 2025), lote-99 (alta de Celtic), Man City 2021-22 + Tottenham 2022-23 + Fulham 2021-22 con `--reintentar`, el resto del lote 98 (~US$ 4,20), y St. Gallen (2020, 2021, 2024 y los demás años) cuando haya número.
 - Newcastle 2019-20 está transcripto y sin localizar: va al lote para que la cadena de cierres reconozca los 11 meses de 2020-21.
+
+### Onboarding 4: avance (2026-10-20, tarde)
+- Cargados: Unión Magdalena 2025; Celtic 2025 (alta, color #018749, liga `gb-scottishpremiership`); lote 108 del Reino Unido: Leeds 2019, 2020, 2022 y 2023, Liverpool 2022, Newcastle 2022 a 2024, Nottingham Forest 2022 y 2023, Sunderland 2019 a 2023, West Ham 2020 a 2024, Wolves 2020 a 2023 (22 años). Forest 2022 salió con el ajuste `fila` de "Other operating (expenses)/income" (-20, L423).
+- Cola del lote 108 (66 casos en tres pasadas) contestada con los criterios ya decididos: Staff costs total a `wages_squad`, listas "stated after charging" afuera, cuadros de nota Turnover mal transcriptos (Leeds 2019-20) se cargan con el renglón del estado. Perfil de Leeds: sin socios y sin otros deportes.
+- Frenados por script (`Admin/registros/frenados-por-script.jsonl`): Man City 2021-22, Tottenham 2022-23 y Fulham 2021-22 (298 v2, ya en main), y Newcastle 2019-20 (13 meses) y 2020-21 (11 meses) por 298 z2. Dejé ajustes `cierre` y `estado` para Man City, Tottenham, Leeds 2020-21 y Liverpool 2022-23: esperan el merge de v2.
+- Gasto de la sesión: US$ 6,27 (934,18 − 927,91) de los US$ 15.
+- Pendiente: St. Gallen (número de lote), otros años de Celtic, Silkeborg y Viborg 2025 (partir "Depreciation, amortisation and impairment"), Patro Eisden, Lokeren-Temse, Lierse 2019, Boyacá Chicó, Noruega (63 ejercicios) y el 238.
