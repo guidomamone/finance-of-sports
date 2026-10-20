@@ -51,7 +51,9 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
    con una tabla etapa · ejercicios · qué significa la etapa · qué falta (solo lo pendiente: los cargados y descartados van en una línea
    aparte), y las decisiones numeradas con la recomendación al lado.
 7. Lo que frena se resuelve en este orden: un ajuste manual (gratis, sin preguntar); la cola, que contesta un subagente (ver "La cola" en la sección 4); si es
-   un defecto de un script, una sesión del tipo b). En un caso de categoría de la cola, `descartar` se rechaza: para sacar la fila es
+   un defecto de un script, se anota en `Admin/registros/frenados-por-script.jsonl` (pdf, defecto, detalle, sesión, fecha), se deja ese
+   documento y se sigue con el resto. Lo arregla la sesión de pipeline, la única que edita `tools/` (`Admin/CONVENCIONES.md`, "ONBOARDING
+   CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA"). En un caso de categoría de la cola, `descartar` se rechaza: para sacar la fila es
    `corregir --valor no_es_rubro`, y vale solo para ese documento. Un ajuste manual lo firma quien corre `tools/ajustes.mjs` (Claude si lo
    corre Claude Code, Guido si no; `--autor` lo fuerza).
 8. Escribir: lo que el lote dejó listo entra con `--cargar`. Lo que no, a mano: `node tools/cargar.mjs "<pdf>" --desde-verificacion --escribir`, un commit por año (club nuevo: `alta-club.mjs` en el mismo
@@ -66,7 +68,8 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 
 1. Mirar 2-3 casos reales antes de afirmar la causa.
 2. Mostrar el diseño en pocas líneas, con la escalera completa y el escalón nuevo, y un ejemplo real que recorra cada escalón. No
-   escribir código antes del ok de Guido.
+   commitear antes del veredicto de la sesión auditora. A Guido va solo lo que agrega un criterio de datos o endurece una compuerta
+   (`Admin/CONVENCIONES.md`).
 3. Medir antes y después con los lotes de prueba (sección 5).
 4. Un commit por cambio. La tool lleva cabecera y comentarios largos; `Admin/PIPELINE.md` queda al día.
 
