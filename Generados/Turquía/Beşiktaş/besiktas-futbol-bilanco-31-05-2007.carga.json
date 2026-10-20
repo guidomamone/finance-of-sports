@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2007.pdf",
- "generado": "2026-10-20T19:30:05.901Z",
- "frena": [
-  {
-   "etapa": "alta:fx",
-   "motivo": "El documento declara varios tipos de cambio a USD (1.3253 (línea 1558: \"| Kasa | 1.735 | USD | 1,3253 | 2.299 |\") | 1.5357 (línea 1602: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\") | 1.223 (línea 1602: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\")). Regla #0: gana el de CIERRE que declara el documento. ¿Cuál es?"
-  },
-  {
-   "etapa": "fx",
-   "motivo": "sin tipo de cambio: el documento declara 3 valores de tipo de cambio a USD: 1.3253 (línea 1558: \"| Kasa | 1.735 | USD | 1,3253 | 2.299 |\") | 1.5357 (línea 1602: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\") | 1.223 (línea 1602: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\")"
-  }
- ],
+ "generado": "2026-10-20T20:40:06.713Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-20: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 9 ejercicio(s) con un solo perímetro (consolidado); 16 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-106.105769); queda la suma, verificada por el resultado del ejercicio"
@@ -159,7 +150,7 @@
     "_pag": 42,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "İndirimler",
@@ -466,6 +457,8 @@
   ],
   "fiscalYearMeta": {
    "currency": "TRY",
+   "fx": 1.3253,
+   "fxSource": "document_close",
    "sourceId": "besiktas-tr-futbol-bilanco-31-05-2007",
    "reportType": "official_balance_sheet",
    "gestionId": null,
@@ -731,10 +724,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): ",
    "destino": "revenue",
    "amountNative": 1.438753
   },
@@ -1302,13 +1293,9 @@
    "estado": "ok"
   },
   "fx": {
-   "valor": [
-    1.3253,
-    1.5357,
-    1.223
-   ],
-   "fuente": "el documento declara 3 valores de tipo de cambio a USD: 1.3253 (línea 1558: \"| Kasa | 1.735 | USD | 1,3253 | 2.299 |\") | 1.5357 (línea 1602: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\") | 1.223 (línea 1602: \"| Kasa | 796 | USD | 1,5357 | 1.223 |\")",
-   "estado": "pregunta"
+   "valor": 1.3253,
+   "fuente": "declarado por el documento, línea 1558: \"| Kasa | 1.735 | USD | 1,3253 | 2.299 |\" (elegido entre 3 valores por ser el de la fecha más nueva de la tabla, 2007-05-31)",
+   "estado": "ok"
   },
   "sourceId": {
    "valor": "besiktas-tr-futbol-bilanco-31-05-2007",
@@ -1322,8 +1309,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 18,
   "lineasGasto": 26,
   "metaFilas": 3,
