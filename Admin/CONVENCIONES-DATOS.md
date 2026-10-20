@@ -427,6 +427,15 @@ socios; la asignación no es un impuesto. Criterio de Augsburg y Eintracht Frank
 en vez de la línea 16: -0,368 M y -0,189 M; `tax` deja de absorber la asignación). Pendiente de revisar: Stuttgart carga el resultado después de
 minoritarios y suma el NCI a `tax`, el criterio contrario.
 
+## REGLA: una revaluación de jugadores o una fila de valor de jugadores sin explicar va a `other_income`, nunca a `player_sales` (votación 3 a 0, 2026-10-20)
+
+`player_sales` es plata que entró por una venta. Una revaluación o un incremento de valor de jugadores (sin cobro en el ejercicio) va a `other_income`;
+si el documento no explica la fila, la `publicNote` del año lo dice y no afirma que sea no-cash ni extraordinaria. El porcentaje alto se silencia en
+`tools/audit-ignore.json` con el motivo. Casos: Gimnasia LP 2024 y 2025, "Incremento Valor Jugadores FP" (13 % y 6 % de los ingresos; la política
+contable valúa a costo, sin nota que la explique): `other_income`. Estudiantes LP 2023 y 2024, "Resultado por revaluación de jugadores" (3,8 % y 8,1 %
+de los ingresos; balance con "Jugadores destinados a la venta" y ventas pactadas después del cierre): estaba en `player_sales`, pasa a `other_income`
+(2 votos a 1; Onboarding verifica antes la nota del documento y revisa que 2024-25 no vuelva a contar esas ventas).
+
 ## REGLA: entidades del club, grupos multiclub e ingresos de las otras entidades
 
 Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.jsonl` (cada línea con su cita) y lo verifica
