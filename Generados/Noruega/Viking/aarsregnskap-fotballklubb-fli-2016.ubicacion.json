@@ -1,0 +1,160 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2016.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2016.md",
+ "mdSha1": "aabd3177ef20b8d84f0165686dd1c9306b721a0a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:05:49.718Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    21,
+    25
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    71,
+    102
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    112,
+    119
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    135,
+    161
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    179,
+    192
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    296,
+    306
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    547,
+    580
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    588,
+    607
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    615,
+    633
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    690,
+    696
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    718,
+    732
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    746,
+    750
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    754,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    764,
+    773
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    785,
+    787
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2",
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b2)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2016",
+ "columna_anterior": "2015",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que el documento contiene solo las cuentas de Viking Fotballklubb (org. 970 179 461, el club/asociación) y no las de Viking Fotball AS, por lo que no se carga nada para Viking Fotball AS?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Los estados b2/b7 son de VIKING FOTBALLKLUBB / Viking F.K., y la nota 5 (b11) menciona Viking Fotball AS como entidad distinta que cubre los costes del primer equipo.",
+   "bloques": [
+    "b2",
+    "b7",
+    "b11"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento es el årsregnskap de Viking Fotballklubb (FLI), con dos versiones de la cuenta de resultados de la misma entidad: b2-b3, presentación oficial con org.nr 970 179 461, y b7, versión en las notas de Viking F.K. La entidad del sitio es Viking Fotball AS, que es una sociedad distinta. Por eso marco sin_estado = true. Si se decidiera cargar el club, el estado sería b2+b3 (o b7) con la nota de personal b11 y la del auditor b13. [ajuste manual `estado` (2026-10-20): los bloques del estado son b2,b3; la IA había elegido ninguno. El estado de resultados (RESULTATREGNSKAP, pág. 2-3 del visor) son los bloques b2,b3; el lote lo dejaba 'sin estado de resultados']"
+}

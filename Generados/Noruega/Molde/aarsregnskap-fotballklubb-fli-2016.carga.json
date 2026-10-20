@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.pdf",
- "generado": "2026-10-20T20:58:08.399Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 cerró, pero la etapa 4 dejó hasta 1 número(s) sin confirmar (Generados/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.validacion.json, \"noConfirmados\"; ver to-do 160)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  }
- ],
+ "generado": "2026-10-20T21:00:50.119Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 17 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)"
  ],
@@ -28,7 +19,7 @@
     "_pag": 30,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Egenandeler/deltakeravgift",
@@ -58,7 +49,7 @@
     "_pag": 30,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Inntekter Seriekamper",
@@ -68,7 +59,7 @@
     "_pag": 30,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Inntekter E-Cup",
@@ -78,7 +69,7 @@
     "_pag": 30,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Oppgjør NM Cup",
@@ -108,7 +99,7 @@
     "_pag": 27,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Andre driftsinntekter",
@@ -118,7 +109,7 @@
     "_pag": 27,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Salg spillere/Utleie",
@@ -128,7 +119,7 @@
     "_pag": 27,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
@@ -140,7 +131,7 @@
     "_pag": 27,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Lønn spillere, trenere, støtteapparat og administrasjon",
@@ -190,7 +181,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Leie treningsbaner etc.",
@@ -210,7 +201,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Medisinske tjenester og rekvisita",
@@ -230,7 +221,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Baneleie serie- og cupkamper",
@@ -240,7 +231,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Avgift Norges Fotballforbund",
@@ -270,7 +261,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Andre arrangementskostnader",
@@ -280,7 +271,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Utgifter cup kamper",
@@ -290,7 +281,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Utgifter e-cup",
@@ -300,7 +291,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Utgifter andre arrangement",
@@ -320,7 +311,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Kjøp og leie spillere",
@@ -330,7 +321,7 @@
     "_pag": 27,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Utgifter Prosjekt/Tiltak",
@@ -340,7 +331,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Andre driftskostnader",
@@ -350,7 +341,7 @@
     "_pag": 32,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Varekjøp og andre kostnader kiosker",
@@ -390,7 +381,7 @@
     "_pag": 27,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+    "_fuenteCat": "categorias.json"
    }
   ],
   "fiscalYearMeta": {
@@ -415,7 +406,7 @@
    "title": "Molde Fotballklubb — aarsregnskap-fotballklubb-fli-2016 (ejercicio 2016)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.md",
@@ -450,7 +441,7 @@
    "cat": "member_dues",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.2414
@@ -497,7 +488,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 2.676946
@@ -512,7 +503,7 @@
    "cat": "matchday_competition",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 15.886014
@@ -527,7 +518,7 @@
    "cat": "competition_bonus",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 1.955355
@@ -574,7 +565,7 @@
    "cat": "sponsorship_commercial",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 21.337446
@@ -589,7 +580,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 7.565164
@@ -604,7 +595,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0
@@ -619,7 +610,7 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.873958
@@ -698,7 +689,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -1.588668
@@ -729,7 +720,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -2.396781
@@ -760,7 +751,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -4.20076
@@ -775,7 +766,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.099401
@@ -822,7 +813,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.776567
@@ -837,7 +828,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -1.743428
@@ -852,7 +843,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.142673
@@ -867,7 +858,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -2.075884
@@ -898,7 +889,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -2.148738
@@ -913,7 +904,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.500689
@@ -928,7 +919,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.757227
@@ -943,7 +934,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -2.597736
@@ -1006,7 +997,7 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": 0
@@ -1113,8 +1104,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 11,
   "lineasGasto": 26,
   "metaFilas": 1,

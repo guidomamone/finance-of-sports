@@ -1,0 +1,296 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.md",
+ "generado": "2026-10-20T21:06:25.650Z",
+ "scriptHuella": "bb1724ebf1b3",
+ "estado": "ok",
+ "clubId": "viking-no",
+ "year": 2012,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "Viking Fotballklubb FLI es el club antes de Viking Fotball AS (fundada 2016-11): un solo documento del ejercicio, individual; el ajuste de la carpeta (consolidado) es de la AS desde 2017",
+   "evidencia": "CONVENCIONES-DATOS, regla del club asociación y sociedad, punto 1",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.pdf",
+   "campo": "cierre",
+   "valor": "2012-12-31",
+   "linea": null,
+   "motivo": "Ejercicio calendario 2012 (Regnskapsregisteret, todos los ejercicios de Viking son calendario)",
+   "evidencia": "Admin/sourcing/Noruega/Viking.md: 'Todos ejercicio calendario'",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 4.107825191113079e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2011: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Lønn, pensjon, arb.g.avg. mm spillere/trenere\" (L95) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Lønnskostnader andre ansatte Viking FK\" (L96) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar cerrada por la regla 1 de perímetro (el documento trae un solo estado, individual): ¿Se carga el Resultatregnskap de Viking F.K. (b9) aunque la entidad del sitio sea Viking Fotball AS/ASA?",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-fotballklubb-fli-2012.pdf",
+  "duda de extraer que no afecta la carga: L235 es un neto informativo (coste menos reembolso) que vale 0 y no corresponde a ningún renglón del estado."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 51.617208,
+  "gastos": 51.357694,
+  "financiero": 0.49195,
+  "impuesto": 0,
+  "resultadoImpreso": 0.750658,
+  "resultadoParaCargar": 0.750658,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Inntekter for dugnad bodsalg Viking Stadion",
+   "lado": "ingreso",
+   "M": 0.56844,
+   "pagina": 2,
+   "linea": 86,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Medlemskontingenter",
+   "lado": "ingreso",
+   "M": 0.987472,
+   "pagina": 2,
+   "linea": 87,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sponsorinntekter",
+   "lado": "ingreso",
+   "M": 0.5554,
+   "pagina": 2,
+   "linea": 88,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Tilskudd og gaver",
+   "lado": "ingreso",
+   "M": 0.992705,
+   "pagina": 2,
+   "linea": 89,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Inntekter fra bingo og spilleautomater",
+   "lado": "ingreso",
+   "M": 2.390149,
+   "pagina": 2,
+   "linea": 90,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Inntekter FFO",
+   "lado": "ingreso",
+   "M": 1.273215,
+   "pagina": 2,
+   "linea": 91,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Annen driftsinntekt inkl fotballskole og egenandeler",
+   "lado": "ingreso",
+   "M": 1.383742,
+   "pagina": 2,
+   "linea": 92,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Refunderte lønn, pensjon, arb.avg. mm. Viking ASA",
+   "lado": "ingreso",
+   "M": 43.466085,
+   "pagina": 2,
+   "linea": 94,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Lønn, honorar, sign on fee",
+   "lado": "gasto",
+   "M": 37.821593,
+   "pagina": 6,
+   "linea": 230,
+   "origen": "nota que desglosa \"Lønn, pensjon, arb.g.avg. mm spillere/trenere\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 5.399489,
+   "pagina": 6,
+   "linea": 231,
+   "origen": "nota que desglosa \"Lønn, pensjon, arb.g.avg. mm spillere/trenere\""
+  },
+  {
+   "etiqueta": "Offentlig tjenestepensjonsforsikring",
+   "lado": "gasto",
+   "M": 0.245003,
+   "pagina": 6,
+   "linea": 232,
+   "origen": "nota que desglosa \"Lønn, pensjon, arb.g.avg. mm spillere/trenere\""
+  },
+  {
+   "etiqueta": "Lønn",
+   "lado": "gasto",
+   "M": 3.956609,
+   "pagina": 6,
+   "linea": 238,
+   "origen": "nota que desglosa \"Lønnskostnader andre ansatte Viking FK\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 0.581562,
+   "pagina": 6,
+   "linea": 239,
+   "origen": "nota que desglosa \"Lønnskostnader andre ansatte Viking FK\""
+  },
+  {
+   "etiqueta": "Offentlig tjenestepensjonsforsikring",
+   "lado": "gasto",
+   "M": 0.054832,
+   "pagina": 6,
+   "linea": 240,
+   "origen": "nota que desglosa \"Lønnskostnader andre ansatte Viking FK\""
+  },
+  {
+   "etiqueta": "Avskrivning på varige driftsmidler",
+   "lado": "gasto",
+   "M": 0.123,
+   "pagina": 2,
+   "linea": 97,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Utgifter til deltakelse turneringer og reiseutgifter trenere",
+   "lado": "gasto",
+   "M": 0.820414,
+   "pagina": 2,
+   "linea": 98,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Idrettsutstyr m.m",
+   "lado": "gasto",
+   "M": 0.530838,
+   "pagina": 2,
+   "linea": 99,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Andre driftskostnader",
+   "lado": "gasto",
+   "M": 1.780902,
+   "pagina": 2,
+   "linea": 100,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Vedlikehold Vikinghuset",
+   "lado": "gasto",
+   "M": 0.043452,
+   "pagina": 2,
+   "linea": 101,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.491547,
+   "linea": 105
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": -0.000403,
+   "linea": 106
+  }
+ ],
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "844e6f37e833729a9df21073cbddde21e2812c98",
+  "rango": [
+   83,
+   119
+  ],
+  "lineasCargadas": [
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   94,
+   230,
+   231,
+   232,
+   238,
+   239,
+   240,
+   97,
+   98,
+   99,
+   100,
+   101,
+   105,
+   106
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 83 a 119 del .md):\nL83: |   | Note | 2012 | 2011  |\nL84: | --- | --- | --- | --- |\nL85: |  **Driftsinntekter og driftskostnader**  |   |   |   |\nL86: |  Inntekter for dugnad bodsalg Viking Stadion |  | 568 440 | 474 781  |\nL87: |  Medlemskontingenter |  | 987 472 | 874 700  |\nL88: |  Sponsorinntekter |  | 555 400 | 651 500  |\nL89: |  Tilskudd og gaver |  | 992 705 | 10 916 290  |\nL90: |  Inntekter fra bingo og spilleautomater |  | 2 390 149 | 3 929 933  |\nL91: |  Inntekter FFO |  | 1 273 215 | 1 242 025  |\nL92: |  Annen driftsinntekt inkl fotballskole og egenandeler |  | 1 383 742 | 1 094 156  |\nL93: |  **Sum driftsinntekter** |  | **8 151 123** | **19 183 385**  |\nL94: |  **Refunderte lønn, pensjon, arb.avg. mm. Viking ASA** | **5** | **43 466 085** | **37 687 202**  |\nL95: |  Lønn, pensjon, arb.g.avg. mm spillere/trenere | 5 | 43 466 085 | 37 687 202  |\nL96: |  Lønnskostnader andre ansatte Viking FK | 5 | 4 593 003 | 4 254 863  |\nL97: |  Avskrivning på varige driftsmidler | 6 | 123 000 | 61 000  |\nL98: |  Utgifter til deltakelse turneringer og reiseutgifter trenere |  | 820 414 | 846 740  |\nL99: |  Idrettsutstyr m.m |  | 530 838 | 399 972  |\nL100: |  Andre driftskostnader | 5 | 1 780 902 | 1 564 903  |\nL101: |  Vedlikehold Vikinghuset |  | 43 452 | 3 254 053  |\nL102: |  **Sum driftskostnader** |  | **51 357 695** | **48 068 732**  |\nL103: |  **Driftsresultat** |  | **259 514** | **8 801 854**  |\nL104: |  **Finansinntekter og finanskostnader**  |   |   |   |\nL105: |  Annen renteinntekt |  | 491 547 | 486 623  |\nL106: |  Annen rentekostnad |  | 403 | 1  |\nL107: |  **Sum finansposter** |  | **491 144** | **486 622**  |\nL108: |  **Årsresultat** |  | **750 658** | **9 288 476**  |\nL109: |  **Overføringer til/fra egenkapital**  |   |   |   |\nL110: |  Overført til spillerutviklingsfond |  | 0 | -255 815  |\nL111: |  Overført fra spillerutviklingsfond |  | 103 000 | 35 936  |\nL112: |  Overført til/fra annen egenkapital |  | 1 794 353 | -9 068 596  |\nL113: |  Gave til Stiftelsen Viking FK |  | -3 000 000 | 0  |\nL114: |  Overført til anleggsfond |  | 0 | -1 000 000  |\nL115: |  Overført fra anleggsfond |  | 351 989 | 1 000 000  |\nL116: |  **Sum overføringer** |  | **750 658** | **9 288 476**  |\nL118: --- pág. 3 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Inntekter for dugnad bodsalg Viking Stadion\" · 0.56844 · L86\n- ingreso · \"Medlemskontingenter\" · 0.987472 · L87\n- ingreso · \"Sponsorinntekter\" · 0.5554 · L88\n- ingreso · \"Tilskudd og gaver\" · 0.992705 · L89\n- ingreso · \"Inntekter fra bingo og spilleautomater\" · 2.390149 · L90\n- ingreso · \"Inntekter FFO\" · 1.273215 · L91\n- ingreso · \"Annen driftsinntekt inkl fotballskole og egenandeler\" · 1.383742 · L92\n- ingreso · \"Refunderte lønn, pensjon, arb.avg. mm. Viking ASA\" · 43.466085 · L94\n- gasto · \"Lønn, honorar, sign on fee\" · 37.821593 · L230 (de una nota)\n- gasto · \"Arbeidsgiveravgift\" · 5.399489 · L231 (de una nota)\n- gasto · \"Offentlig tjenestepensjonsforsikring\" · 0.245003 · L232 (de una nota)\n- gasto · \"Lønn\" · 3.956609 · L238 (de una nota)\n- gasto · \"Arbeidsgiveravgift\" · 0.581562 · L239 (de una nota)\n- gasto · \"Offentlig tjenestepensjonsforsikring\" · 0.054832 · L240 (de una nota)\n- gasto · \"Avskrivning på varige driftsmidler\" · 0.123 · L97\n- gasto · \"Utgifter til deltakelse turneringer og reiseutgifter trenere\" · 0.820414 · L98\n- gasto · \"Idrettsutstyr m.m\" · 0.530838 · L99\n- gasto · \"Andre driftskostnader\" · 1.780902 · L100\n- gasto · \"Vedlikehold Vikinghuset\" · 0.043452 · L101\n- financiero · \"Annen renteinntekt\" · 0.491547 · L105\n- financiero · \"Annen rentekostnad\" · -0.000403 · L106"
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2012.md",
+ "mdSha1": "7065ece92e0cbe4c6c6ea466f1c723bceae83bb8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:03:14.998Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    21,
+    22
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    24,
+    27
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    29,
+    33
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    35,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 1,
+   "lineas": [
+    38,
+    40
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 1,
+   "lineas": [
+    42,
+    43
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 1,
+   "lineas": [
+    45,
+    47
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 1,
+   "lineas": [
+    53,
+    71
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 2,
+   "lineas": [
+    83,
+    116
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 3,
+   "lineas": [
+    124,
+    140
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 4,
+   "lineas": [
+    148,
+    172
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 5,
+   "lineas": [
+    200,
+    206
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 6,
+   "lineas": [
+    228,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 7,
+   "lineas": [
+    255,
+    259
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 7,
+   "lineas": [
+    265,
+    269
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 7,
+   "lineas": [
+    273,
+    282
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b9"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "No se indica escala; las notas expresan importes en kroner completos (ej. 'kr 2.442.428', honorario revisor 38 500).",
+ "moneda": "NOK",
+ "columna_ejercicio": "2012",
+ "columna_anterior": "2011",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el Resultatregnskap de Viking F.K. (b9) aunque la entidad del sitio sea Viking Fotball AS/ASA?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento es de la asociación Viking F.K. (forening, no puede ser matriz), mientras que la entidad del sitio es Viking Fotball AS; la nota 5 menciona que Viking Fotball ASA cubre los costos de personal del primer equipo.",
+   "bloques": [
+    "b9",
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Único estado de resultados: b9 (Viking F.K., asociación), individual. b13 desglosa los costos de personal (nota 5). b14 y b15 corresponden a retribuciones de directivos y honorarios del auditor, por lo que no se eligen. b10 y b11 son balance, b12 es patrimonio y b16 es activo fijo. No se encontró el estado de Viking Fotball AS en este documento."
+}
