@@ -1,0 +1,281 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2015-16.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2015-16.md",
+ "mdSha1": "c78dc1deb8f0e58c1d7afebda199f69fd3436de3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T22:01:10.307Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    26,
+    30
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    34,
+    41
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    45,
+    48
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    502,
+    515
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    525,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    583,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    605,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    627,
+    638
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    654,
+    658
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    666,
+    670
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    674,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    684,
+    686
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    690,
+    695
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    744,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    787,
+    800
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    802,
+    815
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    817,
+    830
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 20,
+   "lineas": [
+    966,
+    992
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 22,
+   "lineas": [
+    1084,
+    1102
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    1122,
+    1139
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 23,
+   "lineas": [
+    1210,
+    1244
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    1508,
+    1512
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    1594,
+    1613
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1642,
+    1653
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1661,
+    1672
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 31,
+   "lineas": [
+    1748,
+    1756
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 31,
+   "lineas": [
+    1766,
+    1774
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 43,
+   "lineas": [
+    2278,
+    2284
+   ],
+   "tipo": "texto"
+  },
+  "b29": {
+   "pagina": 58,
+   "lineas": [
+    2957,
+    2965
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b21"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "No hay una frase explícita; los importes están impresos en euros completos (p. ej. UMSATZERLÖSE 39.359.560), y el texto cercano habla de un EBITDA de 83.000 Euro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "GESAMT",
+ "columna_anterior": "2014/15",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se toma la 'Gewinn- und Verlustrechnung nach Wettbewerben' (b21, pág. 23) como estado de resultados consolidado del grupo SK Rapid, que incluye a SK Rapid GmbH, igual que la 'Konsolidierte Bilanz' de la pág. 22?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El título de b21 no dice consolidado ni individual, pero el balance de la misma sección (b19/b20) es 'Konsolidierte Bilanz des SK Rapid', y no hay un estado separado de SK Rapid GmbH.",
+   "bloques": [
+    "b21",
+    "b19"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan solo los importes de la columna GESAMT de b21 y se ignoran las columnas 'Nat. Wettbev.' e 'Int. Wettbev.'?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "Las columnas por competición solo reparten los mismos renglones que ya abre la columna GESAMT, sin desglosar ningún renglón adicional.",
+   "bloques": [
+    "b21"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El único estado de resultados del documento es b21: una P&L de gestión por competición (nacional/internacional), con columna GESAMT 2015/16 y comparativo 2014/15. El Jahresergebnis 2015/16 es 11.589.417 (= Geschäftsergebnis 3.714.856 + Transferergebnis 7.874.561). No hay notas que desglosen sus renglones. b24/b25 son benchmarks de clusters de ligas y b19/b20 son el balance; no se eligen."
+}

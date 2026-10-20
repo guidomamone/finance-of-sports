@@ -1,0 +1,290 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.md",
+ "generado": "2026-10-20T22:04:23.071Z",
+ "scriptHuella": "bb1724ebf1b3",
+ "estado": "cola",
+ "clubId": "rapidwien-at",
+ "year": 2017,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf",
+   "campo": "cierre",
+   "valor": "2017-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2016-17; el registro no trae cierre",
+   "evidencia": "geschaeftsbericht-2016-17.md (portada/Gewinn-und-Verlust-Rechnung)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH",
+   "evidencia": "geschaeftsbericht-2016-17.md, 'Konsolidierte Bilanz'",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "e52e976",
+  "1ebe0ef",
+  "4ca5e9f",
+  "740a3eb"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": false,
+   "detalle": "las líneas suman 43.950754 y el total impreso dice 41.648591"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 43.950754 - gastos 44.980391 ± financiero -1.399962 ± impuesto 4.717915 no da el impreso 2.226318",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2017: 43.950754 en este documento y 43.950754 en geschaeftsbericht-2017-18.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2016: 48.783464 en geschaeftsbericht-2015-16.pdf y 48.692199 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2024-25.pdf",
+  "duda de extraer que no afecta la carga: En L1541 el impuesto aparece positivo (ingreso) por 4.717.915, importe inusual frente a -3.338 del año anterior, aunque cuadra con GESCHÄFTSERGEBNIS.",
+  "duda de extraer que no afecta la carga: El cuadro L1512 no indica escala; las cifras completas sugieren euros en unidades."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 43.950754,
+  "gastos": 44.980391,
+  "financiero": -1.399962,
+  "impuesto": 4.717915,
+  "resultadoImpreso": 2.226318,
+  "resultadoParaCargar": 2.226318,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticketing",
+   "lado": "ingreso",
+   "M": 7.731656,
+   "pagina": 23,
+   "linea": 1514,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 9.748078,
+   "pagina": 23,
+   "linea": 1515,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Hospitality (VIP)",
+   "lado": "ingreso",
+   "M": 8.227783,
+   "pagina": 23,
+   "linea": 1516,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 3.328045,
+   "pagina": 23,
+   "linea": 1517,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Rechtverwertung",
+   "lado": "ingreso",
+   "M": 9.34142,
+   "pagina": 23,
+   "linea": 1518,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "sonstige Erlöse",
+   "lado": "ingreso",
+   "M": 3.271608,
+   "pagina": 23,
+   "linea": 1519,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transferlöse",
+   "lado": "ingreso",
+   "M": 2.302164,
+   "pagina": 23,
+   "linea": 1543,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Umsetzung Sponserleistungen",
+   "lado": "gasto",
+   "M": 0.465749,
+   "pagina": 23,
+   "linea": 1521,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwand Heimsziele",
+   "lado": "gasto",
+   "M": 3.920548,
+   "pagina": 23,
+   "linea": 1522,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwand Hospitality (VIP)",
+   "lado": "gasto",
+   "M": 3.039836,
+   "pagina": 23,
+   "linea": 1523,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Warenersatz Merchandising",
+   "lado": "gasto",
+   "M": 2.255637,
+   "pagina": 23,
+   "linea": 1524,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "eigene Medien und Produktionskosten",
+   "lado": "gasto",
+   "M": 0.254347,
+   "pagina": 23,
+   "linea": 1525,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Personalaufwand Sport",
+   "lado": "gasto",
+   "M": 16.748905,
+   "pagina": 23,
+   "linea": 1528,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sonstige Personalaufwand",
+   "lado": "gasto",
+   "M": 4.641309,
+   "pagina": 23,
+   "linea": 1529,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abgaben, Gebühren und Strafen",
+   "lado": "gasto",
+   "M": 0.38219,
+   "pagina": 23,
+   "linea": 1531,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Spiel- und Trainingsbetrieb",
+   "lado": "gasto",
+   "M": 1.613404,
+   "pagina": 23,
+   "linea": 1532,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Management-Gebühren und Vermittlungsprovisionen",
+   "lado": "gasto",
+   "M": 0.827573,
+   "pagina": 23,
+   "linea": 1533,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Stadion-, Mail- und Instandhaltungsaufwand",
+   "lado": "gasto",
+   "M": 2.327155,
+   "pagina": 23,
+   "linea": 1534,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Klubservice, Events, PR und Marketing",
+   "lado": "gasto",
+   "M": 0.767029,
+   "pagina": 23,
+   "linea": 1535,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Verwaltung-, Versicherungs- und sonst. Aufwand",
+   "lado": "gasto",
+   "M": 3.205679,
+   "pagina": 23,
+   "linea": 1536,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen für Abnutzung",
+   "lado": "gasto",
+   "M": 1.68813,
+   "pagina": 23,
+   "linea": 1538,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Transferaufwendungen",
+   "lado": "gasto",
+   "M": 2.8429,
+   "pagina": 23,
+   "linea": 1544,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzergebnis",
+   "M": -1.399962,
+   "linea": 1539
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern aus Erträgen",
+   "M": 4.717915,
+   "linea": 1541
+  }
+ ]
+}

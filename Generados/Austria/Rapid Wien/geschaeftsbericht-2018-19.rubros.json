@@ -1,20 +1,250 @@
 {
- "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.md",
- "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.pdf",
- "club": "rapid-wien",
- "year": 2019,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:51:20.885Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": false,
-  "motivo": "sin estado de resultados"
- },
- "ladoConocido": 0,
- "rubros": []
+  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.md",
+  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.pdf",
+  "club": "rapidwien-at",
+  "year": 2019,
+  "generatedAt": "2026-10-20T22:04:23.102Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ticketing",
+      "lado": "revenue",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.855942
+      ],
+      "glosa": "Venta de entradas"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        10.331924
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Hospitality (VIP)",
+      "lado": "revenue",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.137466
+      ],
+      "glosa": "Hospitality (VIP)"
+    },
+    {
+      "label": "Merchandising",
+      "lado": "revenue",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.605285
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Rechteverwertung",
+      "lado": "revenue",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        14.275566
+      ],
+      "glosa": "Explotación de derechos"
+    },
+    {
+      "label": "Fanreisen",
+      "lado": "revenue",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.196134
+      ],
+      "glosa": "Viajes de aficionados"
+    },
+    {
+      "label": "sonstige Erlöse",
+      "lado": "revenue",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.814958
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Transfererlöse",
+      "lado": "revenue",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.528031
+      ],
+      "glosa": "Ingresos por traspasos"
+    },
+    {
+      "label": "Umsetzung Sponsorleistungen",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.486255
+      ],
+      "glosa": "Gastos de ejecución de patrocinios"
+    },
+    {
+      "label": "Aufwand Heimspiele",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.78037
+      ],
+      "glosa": "Gastos de partidos como local"
+    },
+    {
+      "label": "Aufwand Hospitality VIP",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.155297
+      ],
+      "glosa": "Gastos de hospitality VIP"
+    },
+    {
+      "label": "Wareneinsatz Merchandising",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.341667
+      ],
+      "glosa": "Coste de ventas de merchandising"
+    },
+    {
+      "label": "eigene Medien und Produktionskosten",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.327705
+      ],
+      "glosa": "Gastos de medios propios y producción"
+    },
+    {
+      "label": "Fanreisen",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.125508
+      ],
+      "glosa": "Viajes de aficionados"
+    },
+    {
+      "label": "Personalaufwand Sport",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        17.367045
+      ],
+      "glosa": "Gastos de personal deportivo"
+    },
+    {
+      "label": "sonstiger Personalaufwand",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.91066
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Abgaben, Gebühren, Strafen",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.426003
+      ],
+      "glosa": "Tributos, tasas y sanciones"
+    },
+    {
+      "label": "Spiel- und Trainingsbetrieb",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.823862
+      ],
+      "glosa": "Gastos de competición y entrenamiento"
+    },
+    {
+      "label": "Management-Gebühren und Vermittlungsprovisionen",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.390801
+      ],
+      "glosa": "Honorarios de gestión y comisiones de intermediación"
+    },
+    {
+      "label": "Stadion-, Miet- und Instandhaltungsaufwand",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.726157
+      ],
+      "glosa": "Gastos de estadio, alquiler y mantenimiento"
+    },
+    {
+      "label": "Klubservice, Events, PR und Marketing",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.882927
+      ],
+      "glosa": "Servicios al club, eventos, RR. PP. y marketing"
+    },
+    {
+      "label": "Verwaltung-, Versicherunungs- und sonst. Aufwand",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.7458
+      ],
+      "glosa": "Gastos de administración, seguros y otros"
+    },
+    {
+      "label": "Abschreibungen für Abnutzung",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.913813
+      ],
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "Transferauwendungen",
+      "lado": "expense",
+      "page": 56,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.874182
+      ],
+      "glosa": "Gastos por traspasos"
+    }
+  ]
 }

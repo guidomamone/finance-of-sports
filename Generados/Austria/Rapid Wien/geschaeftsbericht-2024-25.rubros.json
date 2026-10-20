@@ -1,0 +1,120 @@
+{
+  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.md",
+  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.pdf",
+  "club": "rapidwien-at",
+  "year": 2025,
+  "generatedAt": "2026-10-20T21:56:05.371Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "**Umsatzerlöse**",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        58.395122
+      ],
+      "glosa": "**Cifra de negocios**"
+    },
+    {
+      "label": "Erträge aus dem Abgang von Anlagevermögen",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.015325
+      ],
+      "glosa": "Ingresos por enajenación de inmovilizado"
+    },
+    {
+      "label": "Erträge aus der Auflösung von Rückstellungen",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.169107
+      ],
+      "glosa": "Ingresos por reversión de provisiones"
+    },
+    {
+      "label": "Übrige",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        2.841364
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Aufwendungen Spielbetrieb, Transfers etc.",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        6.191201
+      ],
+      "glosa": "Gastos de competición, traspasos, etc."
+    },
+    {
+      "label": "Aufwendungen für bezogene Leistungen",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        10.947091
+      ],
+      "glosa": "Gastos por servicios recibidos"
+    },
+    {
+      "label": "Löhne & Gehälter",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        23.898805
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Soziale Aufwendungen",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        4.616527
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "**Abschreibungen**",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        4.98819
+      ],
+      "glosa": "**Amortizaciones**"
+    },
+    {
+      "label": "Steuern, soweit sie nicht unter Steuern vom Einkommen fallen",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Impuestos, en la medida en que no correspondan a impuestos sobre la renta"
+    },
+    {
+      "label": "Übrige",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        9.317458
+      ],
+      "glosa": "Otros"
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2017-18.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2017-18.md",
+ "generado": "2026-10-20T21:58:58.653Z",
+ "scriptHuella": "bb1724ebf1b3",
+ "estado": "ok",
+ "clubId": "rapidwien-at",
+ "year": 2018,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2017-18.pdf",
+   "campo": "cierre",
+   "valor": "2018-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2017-18; el registro no trae cierre",
+   "evidencia": "geschaeftsbericht-2017-18.md (portada/Gewinn-und-Verlust-Rechnung)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2017-18.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH",
+   "evidencia": "geschaeftsbericht-2017-18.md, 'Konsolidierte Bilanz'",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000010000000076892945
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: El balance previo (b19) se titula 'Konsolidierte Bilanz des SK Rapid' y b23 está en la misma sección 2.2.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en geschaeftsbericht-2023-24.pdf",
+  "duda de extraer que no afecta la carga: El cuadro L1339 tiene columnas por competencia; se cargó GESAMT, que es la pedida, y la columna int. Wettbew. está vacía."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 41.71129,
+  "gastos": 38.051463,
+  "financiero": -1.285727,
+  "impuesto": -0.001889,
+  "resultadoImpreso": 2.37221,
+  "resultadoParaCargar": 2.37221,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticketing",
+   "lado": "ingreso",
+   "M": 4.813434,
+   "pagina": 21,
+   "linea": 1341,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 9.007512,
+   "pagina": 21,
+   "linea": 1342,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Hospitality (VIP)",
+   "lado": "ingreso",
+   "M": 7.920459,
+   "pagina": 21,
+   "linea": 1343,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 2.549312,
+   "pagina": 21,
+   "linea": 1344,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Rechteverwertung",
+   "lado": "ingreso",
+   "M": 3.665876,
+   "pagina": 21,
+   "linea": 1345,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "sonstige Erlöse",
+   "lado": "ingreso",
+   "M": 2.77112,
+   "pagina": 21,
+   "linea": 1346,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Transfererlöse",
+   "lado": "ingreso",
+   "M": 10.983577,
+   "pagina": 21,
+   "linea": 1369,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Umsetzung Sponsorleistungen",
+   "lado": "gasto",
+   "M": 0.33486,
+   "pagina": 21,
+   "linea": 1348,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Aufwand Heimspiele",
+   "lado": "gasto",
+   "M": 2.585466,
+   "pagina": 21,
+   "linea": 1349,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Aufwand Hospitality (VIP)",
+   "lado": "gasto",
+   "M": 2.312515,
+   "pagina": 21,
+   "linea": 1350,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Wareneinsatz Merchandising",
+   "lado": "gasto",
+   "M": 1.390387,
+   "pagina": 21,
+   "linea": 1351,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "eigene Medien und Produktionskosten",
+   "lado": "gasto",
+   "M": 0.161688,
+   "pagina": 21,
+   "linea": 1352,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Personalaufwand Sport",
+   "lado": "gasto",
+   "M": 14.079703,
+   "pagina": 21,
+   "linea": 1355,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "sonstiger Personalaufwand",
+   "lado": "gasto",
+   "M": 4.536919,
+   "pagina": 21,
+   "linea": 1356,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Abgaben, Gebühren und Strafen",
+   "lado": "gasto",
+   "M": 0.401825,
+   "pagina": 21,
+   "linea": 1358,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spiel- und Trainingsbetrieb",
+   "lado": "gasto",
+   "M": 1.363179,
+   "pagina": 21,
+   "linea": 1359,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Management-Gebühren und Vermittlungsprovisionen",
+   "lado": "gasto",
+   "M": 0.830444,
+   "pagina": 21,
+   "linea": 1360,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Stadion-, Miet- und Instandhaltungsaufwand",
+   "lado": "gasto",
+   "M": 2.189542,
+   "pagina": 21,
+   "linea": 1361,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Klubservice, Events, PR und Marketing",
+   "lado": "gasto",
+   "M": 0.639513,
+   "pagina": 21,
+   "linea": 1362,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Verwaltungs-, Versicherungs- und sonst. Aufwand",
+   "lado": "gasto",
+   "M": 2.010223,
+   "pagina": 21,
+   "linea": 1363,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Abschreibungen für Abnutzung",
+   "lado": "gasto",
+   "M": 1.779882,
+   "pagina": 21,
+   "linea": 1365,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Transferaufwendungen",
+   "lado": "gasto",
+   "M": 3.435317,
+   "pagina": 21,
+   "linea": 1370,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzergebnis",
+   "M": -1.285727,
+   "linea": 1366
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern aus Erträgen",
+   "M": -0.001889,
+   "linea": 1367
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "24c3e509497f8f2f217d9679fb7794fe46cc0473",
+  "rango": [
+   1338,
+   1375
+  ],
+  "lineasCargadas": [
+   1341,
+   1342,
+   1343,
+   1344,
+   1345,
+   1346,
+   1369,
+   1348,
+   1349,
+   1350,
+   1351,
+   1352,
+   1355,
+   1356,
+   1358,
+   1359,
+   1360,
+   1361,
+   1362,
+   1363,
+   1365,
+   1370,
+   1366,
+   1367
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 1338 a 1375 del .md):\nL1339: | SK RAPID | nat. Wettbew. | int. Wettbew. | GESAMT | [%]-Anteil | 2016/17 | ∆ |\nL1340: |---|---|---|---|---|---|---|\nL1341: | Ticketing | 4.813.434 | - | 4.813.434 | 16% | 7.731.656 | -38% |\nL1342: | Sponsoring | 9.007.512 | - | 9.007.512 | 29% | 9.748.078 | -8% |\nL1343: | Hospitality (VIP) | 7.920.459 | - | 7.920.459 | 26% | 8.227.783 | -4% |\nL1344: | Merchandising | 2.549.312 | - | 2.549.312 | 8% | 3.328.045 | -23% |\nL1345: | Rechteverwertung | 3.665.876 | - | 3.665.876 | 12% | 9.341.420 | -61% |\nL1346: | sonstige Erlöse | 2.771.120 | - | 2.771.120 | 9% | 3.271.608 | -15% |\nL1347: | **UMSATZERLÖSE** | **30.723.269** | **-** | **30.723.269** | **100%** | **41.648.591** | **-26%** |\nL1348: | Umsetzung Sponsorleistungen | -334.860 | - | -334.860 | -1% | -465.749 | -28% |\nL1349: | Aufwand Heimspiele | -2.585.466 | - | -2.585.466 | -8% | -3.920.548 | -34% |\nL1350: | Aufwand Hospitality (VIP) | -2.312.515 | - | -2.312.515 | -8% | -3.039.836 | -24% |\nL1351: | Wareneinsatz Merchandising | -1.390.387 | - | -1.390.387 | -5% | -2.255.637 | -38% |\nL1352: | eigene Medien und Produktionskosten | -161.688 | - | -161.688 | -1% | -254.346 | -36% |\nL1353: | **MATERIALAUFWAND UND BEZOGENE LEISTUNGEN** | **-6.784.915** | **-** | **-6.784.915** | **-22%** | **-9.936.115** | **-32%** |\nL1354: | **ROHERTRAG** | **23.938.354** | **-** | **23.938.354** | **78%** | **31.712.476** | **-25%** |\nL1355: | Personalaufwand Sport | -14.079.703 | - | -14.079.703 | -46% | -16.748.905 | -16% |\nL1356: | sonstiger Personalaufwand | -4.536.919 | - | -4.536.919 | -15% | -4.641.309 | -2% |\nL1357: | **PERSONALAUFWAND** | **-18.616.622** | **-** | **-18.616.622** | **-61%** | **-21.390.214** | **-13%** |\nL1358: | Abgaben, Gebühren und Strafen | -401.825 | - | -401.825 | -1% | -382.190 | 5% |\nL1359: | Spiel- und Trainingsbetrieb | -1.363.179 | - | -1.363.179 | -4% | -1.613.404 | -16% |\nL1360: | Management-Gebühren und Vermittlungsprovisionen | -830.444 | - | -830.444 | -3% | -827.573 | 0% |\nL1361: | Stadion-, Miet- und Instandhaltungsaufwand | -2.189.542 | - | -2.189.542 | -7% | -2.327.155 | -6% |\nL1362: | Klubservice, Events, PR und Marketing | -639.513 | - | -639.513 | -2% | -767.029 | -17% |\nL1363: | Verwaltungs-, Versicherungs- und sonst. Aufwand | -2.010.223 | - | -2.010.223 | -7% | -3.205.679 | -37% |\nL1364: | **SACHAUFWAND** | **-7.434.726** | **-** | **-7.434.726** | **-24%** | **-9.123.030** | **-19%** |\nL1365: | Abschreibungen für Abnutzung | -1.779.882 | - | -1.779.882 | -6% | -1.688.130 | 5% |\nL1366: | Finanzergebnis | -1.285.727 | - | -1.285.727 | -4% | -1.399.962 | -8% |\nL1367: | Steuern aus Erträgen | -1.889 | - | -1.889 | 0% | 4.717.915 | -100% |\nL1368: | **GESCHÄFTSERGEBNIS** | **-5.176.050** | **-** | **-5.176.050** | **-17%** | **2.829.056** | **-283%** |\nL1369: | Transfererlöse | - | - | 10.983.577 | - | 2.302.164 | 377% |\nL1370: | Transferaufwendungen | - | - | -3.435.317 | - | -2.842.900 | 21% |\nL1371: | **TRANSFERERGEBNIS** | **-** | **-** | **7.548.260** | **25%** | **-540.736** | **-1496%** |\nL1372: | **JAHRESERGEBNIS** | | | **2.372.210** | **8%** | **2.288.320** | **0%** |\nL1374: Michael Krammer – Präsident\nL1375: Martin Bruckner – Finanzreferent\n\nLO QUE SE CARGA:\n- ingreso · \"Ticketing\" · 4.813434 · L1341\n- ingreso · \"Sponsoring\" · 9.007512 · L1342\n- ingreso · \"Hospitality (VIP)\" · 7.920459 · L1343\n- ingreso · \"Merchandising\" · 2.549312 · L1344\n- ingreso · \"Rechteverwertung\" · 3.665876 · L1345\n- ingreso · \"sonstige Erlöse\" · 2.77112 · L1346\n- ingreso · \"Transfererlöse\" · 10.983577 · L1369\n- gasto · \"Umsetzung Sponsorleistungen\" · 0.33486 · L1348\n- gasto · \"Aufwand Heimspiele\" · 2.585466 · L1349\n- gasto · \"Aufwand Hospitality (VIP)\" · 2.312515 · L1350\n- gasto · \"Wareneinsatz Merchandising\" · 1.390387 · L1351\n- gasto · \"eigene Medien und Produktionskosten\" · 0.161688 · L1352\n- gasto · \"Personalaufwand Sport\" · 14.079703 · L1355\n- gasto · \"sonstiger Personalaufwand\" · 4.536919 · L1356\n- gasto · \"Abgaben, Gebühren und Strafen\" · 0.401825 · L1358\n- gasto · \"Spiel- und Trainingsbetrieb\" · 1.363179 · L1359\n- gasto · \"Management-Gebühren und Vermittlungsprovisionen\" · 0.830444 · L1360\n- gasto · \"Stadion-, Miet- und Instandhaltungsaufwand\" · 2.189542 · L1361\n- gasto · \"Klubservice, Events, PR und Marketing\" · 0.639513 · L1362\n- gasto · \"Verwaltungs-, Versicherungs- und sonst. Aufwand\" · 2.010223 · L1363\n- gasto · \"Abschreibungen für Abnutzung\" · 1.779882 · L1365\n- gasto · \"Transferaufwendungen\" · 3.435317 · L1370\n- financiero · \"Finanzergebnis\" · -1.285727 · L1366\n- impuesto · \"Steuern aus Erträgen\" · -0.001889 · L1367"
+ }
+}

@@ -1,0 +1,255 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2022-23.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2022-23.md",
+ "mdSha1": "ff948a5122b01efe6dc55f9d23dbb65414e45ce3",
+ "ubicacionSha1": "95347ce52fce7d82de55f64cbc41426b20bb535f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:55:31.384Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala; los importes con 3 grupos de dígitos (42.627.915) sugieren unidades (EUR), pero no está impreso."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 670,
+   "etiqueta": "Umsatzerlöse",
+   "actual": "42.627.915",
+   "anterior": "42.930.015",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 672,
+   "etiqueta": "Erträge aus der Auflösung von Rückstellungen",
+   "actual": "548.370",
+   "anterior": "338.144",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 673,
+   "etiqueta": "Übrige",
+   "actual": "2.168.731",
+   "anterior": "6.363.031",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 674,
+   "etiqueta": "Sonstige betriebliche Erträge",
+   "actual": "2.717.101",
+   "anterior": "6.701.175",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 675,
+   "etiqueta": "Aufwendungen Spielbetrieb, Transfers etc.",
+   "actual": "-4.959.545",
+   "anterior": "-3.880.117",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 676,
+   "etiqueta": "Aufwendungen für bezogene Leistungen",
+   "actual": "-7.986.370",
+   "anterior": "-7.901.536",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 677,
+   "etiqueta": "Aufwendungen",
+   "actual": "-12.945.916",
+   "anterior": "-11.781.653",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 678,
+   "etiqueta": "Löhne & Gehälter",
+   "actual": "-14.740.410",
+   "anterior": "-17.090.959",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 679,
+   "etiqueta": "Soziale Aufwendungen",
+   "actual": "-3.636.215",
+   "anterior": "-3.217.188",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 680,
+   "etiqueta": "Personalaufwand",
+   "actual": "-18.376.626",
+   "anterior": "-20.308.147",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 681,
+   "etiqueta": "Abschreibungen",
+   "actual": "-4.200.133",
+   "anterior": "-2.844.250",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 683,
+   "etiqueta": "Übrige",
+   "actual": "-7.888.350",
+   "anterior": "-7.593.389",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 684,
+   "etiqueta": "Sonstige betriebliche Aufwendungen",
+   "actual": "-7.888.350",
+   "anterior": "-7.593.389",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 685,
+   "etiqueta": "Betriebsergebnis",
+   "actual": "1.933.992",
+   "anterior": "7.103.752",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 686,
+   "etiqueta": "Sonstige Zinsen und ähnliche Erträge",
+   "actual": "31.363",
+   "anterior": "103",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 687,
+   "etiqueta": "Abschreibungen auf Finanzanlagen",
+   "actual": "-221.119",
+   "anterior": "-116.041",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 688,
+   "etiqueta": "Zinsen und ähnliche Aufwendungen",
+   "actual": "-1.165.897",
+   "anterior": "-870.770",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 689,
+   "etiqueta": "Finanzergebnis",
+   "actual": "-1.355.653",
+   "anterior": "-986.708",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 690,
+   "etiqueta": "ERGEBNIS VOR STEUERN",
+   "actual": "578.339",
+   "anterior": "6.117.044",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 691,
+   "etiqueta": "Steuern vom Einkommen",
+   "actual": "-529.837",
+   "anterior": "-361.191",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 692,
+   "etiqueta": "ERGEBNIS NACH STEUERN",
+   "actual": "48.502",
+   "anterior": "5.755.853",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 692,
+  "actual": "48.502",
+  "anterior": "5.755.853"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (L670-L692) como unidades de euro?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b4 no imprime la escala; por el formato (42.627.915) parecen euros en unidades.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados de SK Rapid sin notas de desglose. Filas L671 y L682 con '-' en ambas columnas se omitieron por no tener importe. No hay total de ingresos ni de gastos impreso. 'Übrige' aparece dos veces (L673 en otros ingresos, L683 en otros gastos)."
+}

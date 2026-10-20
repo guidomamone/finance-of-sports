@@ -1,0 +1,189 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2019-20.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2019-20.md",
+ "mdSha1": "1fac11abf05123c82abd9ec921a3e0c965d7d567",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:53:28.910Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    42,
+    45
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    54,
+    58
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    62,
+    70
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    258,
+    272
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    276,
+    278
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    280,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    300,
+    339
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    341,
+    348
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    364,
+    399
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    401,
+    404
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    410,
+    424
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    426,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    446,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    601,
+    630
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    632,
+    652
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 19,
+   "lineas": [
+    799,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    823,
+    838
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 22,
+   "lineas": [
+    954,
+    994
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    1352,
+    1356
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b18"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos en euros completos sin indicación de miles (ej. Umsatzerlöse 31.351.586)",
+ "moneda": "EUR",
+ "columna_ejercicio": "GESAMT 2019/20",
+ "columna_anterior": "GESAMT (VJ)",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la GuV nach Wettbewerben (b18, pág. 22) como estado de resultados del ejercicio 2019/20, usando la columna 'GESAMT 2019/20'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice no muestra otra cuenta de resultados formal; b18 es una GuV de gestión por competiciones que el índice (b2) ubica junto a la 'Konsolidierte Bilanz des SK Rapid'.",
+   "bloques": [
+    "b18"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo b18 contiene la cuenta de resultados (Gewinn-und-Verlust-Rechnung nach Wettbewerben 2019/20), en euros. Las columnas 'nation. Wettbew.' e 'internation. Wettbew.' son segmentos sin desglose adicional; se usa GESAMT 2019/20 y GESAMT (VJ). Balance consolidado en b16/b17 (no elegido). Formato de gestión: el resultado de transferencias se presenta por debajo del Geschäftsergebnis."
+}

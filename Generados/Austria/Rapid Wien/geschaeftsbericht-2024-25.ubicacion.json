@@ -1,0 +1,175 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.md",
+ "mdSha1": "6fc959ef9d97d895d7b8f131fbc18d95847a2055",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:55:46.227Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    58,
+    70
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    313,
+    316
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 17,
+   "lineas": [
+    547,
+    550
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 24,
+   "lineas": [
+    798,
+    801
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 24,
+   "lineas": [
+    805,
+    824
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 25,
+   "lineas": [
+    838,
+    841
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 25,
+   "lineas": [
+    845,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 28,
+   "lineas": [
+    999,
+    1024
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 31,
+   "lineas": [
+    1150,
+    1155
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 31,
+   "lineas": [
+    1157,
+    1177
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 32,
+   "lineas": [
+    1193,
+    1196
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 32,
+   "lineas": [
+    1198,
+    1215
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 33,
+   "lineas": [
+    1231,
+    1234
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 33,
+   "lineas": [
+    1236,
+    1261
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 34,
+   "lineas": [
+    1282,
+    1302
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 35,
+   "lineas": [
+    1323,
+    1341
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 36,
+   "lineas": [
+    1362,
+    1387
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos con todos los dígitos (p. ej. Umsatzerlöse 58.395.122), sin indicación de miles; escala en unidades de euro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024/25",
+ "columna_anterior": "2023/24",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la GuV consolidada (b8, pág. 28) en lugar de la GuV individual de SK Rapid GmbH (b17, pág. 36)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El club tiene cargado el perímetro consolidado; el documento trae además la GuV individual de SK Rapid GmbH (b17) y la del Verein (b14).",
+   "bloques": [
+    "b8",
+    "b17",
+    "b14"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b8 = GuV consolidada (3.3). b14 = GuV de SK Rapid (Verein), b17 = GuV individual de SK Rapid GmbH (3.8). Se elige el consolidado por continuidad con años cargados. No hay notas de desglose en el índice."
+}

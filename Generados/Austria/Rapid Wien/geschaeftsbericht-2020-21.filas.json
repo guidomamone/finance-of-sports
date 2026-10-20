@@ -1,0 +1,348 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2020-21.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2020-21.md",
+ "mdSha1": "ecf99a25945c5d76c38b79d66a7da2e1b4d96ac9",
+ "ubicacionSha1": "cfcd156350daeb113e46e78a01d26aab7b8e0a50",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:54:26.325Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; los importes parecen en unidades (EUR) por su magnitud (p. ej. 40.475.029), pero no hay frase que lo diga."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 2125,
+   "etiqueta": "Ticketing",
+   "actual": "1.198.953",
+   "anterior": "3.798.377",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2126,
+   "etiqueta": "Sponsoring",
+   "actual": "8.676.083",
+   "anterior": "9.035.109",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2127,
+   "etiqueta": "Hospitality - VIP",
+   "actual": "2.639.493",
+   "anterior": "7.187.286",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2128,
+   "etiqueta": "Merchandising",
+   "actual": "2.487.302",
+   "anterior": "2.777.708",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2129,
+   "etiqueta": "Rechteverwertung",
+   "actual": "11.306.474",
+   "anterior": "4.518.253",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2130,
+   "etiqueta": "Transfererlöse",
+   "actual": "3.289.014",
+   "anterior": "10.716.155",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2131,
+   "etiqueta": "Fanreisen",
+   "actual": "–",
+   "anterior": "9.522",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2132,
+   "etiqueta": "sonstige Erlöse",
+   "actual": "10.877.710",
+   "anterior": "4.025.332",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2133,
+   "etiqueta": "Umsatzerlöse",
+   "actual": "40.475.029",
+   "anterior": "42.067.741",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2134,
+   "etiqueta": "Umsetzung Sponsorleistungen",
+   "actual": "-276.707",
+   "anterior": "-294.417",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2135,
+   "etiqueta": "Aufwand Heimspiele",
+   "actual": "-772.285",
+   "anterior": "-1.950.712",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2136,
+   "etiqueta": "Aufwand Hospitality - VIP",
+   "actual": "-463.176",
+   "anterior": "-1.576.214",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2137,
+   "etiqueta": "Wareneinsatz Merchandising",
+   "actual": "-1.152.097",
+   "anterior": "-1.365.283",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2138,
+   "etiqueta": "eigene Medien und Produktionskosten",
+   "actual": "-252.324",
+   "anterior": "-271.417",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2139,
+   "etiqueta": "Fanreisen",
+   "actual": "–",
+   "anterior": "-6.726",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2140,
+   "etiqueta": "Materialaufwand und bezogene Leistungen",
+   "actual": "-2.916.588",
+   "anterior": "-5.464.769",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2141,
+   "etiqueta": "ROHERTRAG",
+   "actual": "37.558.441",
+   "anterior": "36.602.972",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2142,
+   "etiqueta": "Personalaufwand",
+   "actual": "-21.227.213",
+   "anterior": "-18.312.942",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2143,
+   "etiqueta": "Abgaben, Gebühren, Strafen",
+   "actual": "-148.524",
+   "anterior": "-299.623",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2144,
+   "etiqueta": "Spiel- und Trainingsbetrieb",
+   "actual": "-1.412.781",
+   "anterior": "-1.192.212",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2145,
+   "etiqueta": "Managementgebühren und Vermittlungsprovisionen",
+   "actual": "-971.683",
+   "anterior": "-1.110.660",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2146,
+   "etiqueta": "Stadion-, Miet- und Instandhaltungsaufwand",
+   "actual": "-2.391.454",
+   "anterior": "-2.260.106",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2147,
+   "etiqueta": "Klubservice, Events, PR und Marketing",
+   "actual": "-610.954",
+   "anterior": "-550.278",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2148,
+   "etiqueta": "Verwaltungs-, Versicherungs- und sonst. Aufwand",
+   "actual": "-4.081.457",
+   "anterior": "-4.539.199",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2149,
+   "etiqueta": "Sachaufwand",
+   "actual": "-9.616.852",
+   "anterior": "-9.952.078",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2150,
+   "etiqueta": "Abschreibungen für Abnutzung",
+   "actual": "-1.901.944",
+   "anterior": "-2.129.832",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2151,
+   "etiqueta": "Transferaufwendungen",
+   "actual": "-3.000.604",
+   "anterior": "-4.919.562",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2152,
+   "etiqueta": "Finanzergebnis",
+   "actual": "-1.112.662",
+   "anterior": "-1.050.301",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2153,
+   "etiqueta": "Steuern aus Erträgen",
+   "actual": "-1.750",
+   "anterior": "-437.364",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 2154,
+   "etiqueta": "JAHRESERGEBNIS",
+   "actual": "697.416",
+   "anterior": "-199.107",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 2133,
+  "actual": "40.475.029"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 2154,
+  "actual": "697.416",
+  "anterior": "-199.107"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de la GuV de b7 (L2123-L2154) como unidades de euro?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b7 no imprime la escala; por la magnitud (L2133: 40.475.029) parecen euros en unidades.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados de gestión (formato por actividad) de SK Rapid 2020/21; se omiten las columnas de porcentaje. No hay total de gastos impreso. 'Fanreisen' aparece tanto como ingreso (L2131) como gasto (L2139), con '–' en el ejercicio actual. Sin notas de desglose."
+}

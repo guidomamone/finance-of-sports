@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2015-16.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2015-16.md",
+ "mdSha1": "c78dc1deb8f0e58c1d7afebda199f69fd3436de3",
+ "modo": "digital",
+ "motivoModo": "2 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 22846382 vs 22848382, 54425936 vs 54425938",
+ "generado": "2026-10-20T22:01:10.587Z",
+ "fuentes": {
+  "23": "pdftotext"
+ },
+ "confirmados": 120,
+ "noConfirmados": [
+  {
+   "bloque": "b21",
+   "pagina": 23,
+   "linea": 1218,
+   "numero": "22.846.382",
+   "segundaLeyo": "22848382",
+   "sinSegunda": false,
+   "texto": "|  **UMSATZERLÖSE** | **21.958.413** | **17.401.147** | **39.359.560** | **100%** | **22.846.382** | **72%**  |"
+  },
+  {
+   "bloque": "b21",
+   "pagina": 23,
+   "linea": 1244,
+   "numero": "22051",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "|  **JANRIEBERGEBNIS** | **2.753.477** | **8.835.940** | **11.589.417** | **29%** | **50.344** | **22051%**  |"
+  }
+ ]
+}

@@ -1,0 +1,206 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2021-22.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2021-22.md",
+ "mdSha1": "cc570b57c7e770c3ec01639258ebdacbcd97fafa",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:54:40.402Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    160,
+    163
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    177,
+    181
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    185,
+    188
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    538,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    556,
+    570
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    576,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    599,
+    643
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    661,
+    699
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    701,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    735,
+    749
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    751,
+    759
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    761,
+    767
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    775,
+    802
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    870,
+    877
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    919,
+    948
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    950,
+    984
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    1165,
+    1168
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    1188,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 22,
+   "lineas": [
+    1204,
+    1226
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    1228,
+    1244
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    1356,
+    1387
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b21"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos en euros completos (p. ej. Umsatzerlöse 49.631.191, coincide con 'GESAMTUMSATZ € 49,63 MILLIONEN' en b18)",
+ "moneda": "EUR",
+ "columna_ejercicio": "GESAMT 2021/22",
+ "columna_anterior": "GESAMT 2020/21",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La Gewinn-und-Verlust-Rechnung 2021/22 de b21 (encabezado 'SK RAPID') es la consolidada del grupo SK Rapid que corresponde cargar para SK Rapid GmbH?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El balance de b19 se titula 'Konsolidierte Bilanz des SK Rapid' pero la GuV de b21 no dice explícitamente consolidada ni separa la GmbH del Verein.",
+   "bloques": [
+    "b21",
+    "b19"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Único estado de resultados: b21 (pág. 24, 4.4 GuV 2021/22), en euros, columnas de importe y % sobre ingresos; se toman solo las columnas de importe. Se asume consolidado del SK Rapid, en línea con el balance consolidado (b19/b20). No hay cuadros de notas con desglose de ingresos o gastos en el índice. b18 son indicadores, no se carga."
+}

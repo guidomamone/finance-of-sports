@@ -1,0 +1,288 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.md",
+ "mdSha1": "6fc959ef9d97d895d7b8f131fbc18d95847a2055",
+ "ubicacionSha1": "649e721a75459a0cb2faa4261f3a8f4f330780e0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:56:04.972Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala; los importes parecen en euros (unidades) por su formato completo, pero no hay frase que lo diga."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 1001,
+   "etiqueta": "**Umsatzerlöse**",
+   "actual": "58.395.122",
+   "anterior": "41.436.186",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1002,
+   "etiqueta": "Erträge aus dem Abgang von Anlagevermögen",
+   "actual": "15.325",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1003,
+   "etiqueta": "Erträge aus der Auflösung von Rückstellungen",
+   "actual": "169.107",
+   "anterior": "934.896",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1004,
+   "etiqueta": "Übrige",
+   "actual": "2.841.364",
+   "anterior": "2.004.412",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1005,
+   "etiqueta": "**Sonstige betriebliche Erträge**",
+   "actual": "3.025.796",
+   "anterior": "2.939.307",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1006,
+   "etiqueta": "**Gesamtleistung**",
+   "actual": "61.420.918",
+   "anterior": "44.375.493",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1007,
+   "etiqueta": "Aufwendungen Spielbetrieb, Transfers etc.",
+   "actual": "-6.191.201",
+   "anterior": "-3.921.936",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1008,
+   "etiqueta": "Aufwendungen für bezogene Leistungen",
+   "actual": "-10.947.091",
+   "anterior": "-7.941.955",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1009,
+   "etiqueta": "**Aufwendungen**",
+   "actual": "-17.138.292",
+   "anterior": "-11.863.892",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1010,
+   "etiqueta": "Löhne & Gehälter",
+   "actual": "-23.898.805",
+   "anterior": "-16.652.515",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1011,
+   "etiqueta": "Soziale Aufwendungen",
+   "actual": "-4.616.527",
+   "anterior": "-3.736.242",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1012,
+   "etiqueta": "**Personalaufwand**",
+   "actual": "-28.515.332",
+   "anterior": "-20.388.757",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1013,
+   "etiqueta": "**Abschreibungen**",
+   "actual": "-4.988.190",
+   "anterior": "-3.784.894",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1014,
+   "etiqueta": "Steuern, soweit sie nicht unter Steuern vom Einkommen fallen",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1015,
+   "etiqueta": "Übrige",
+   "actual": "-9.317.458",
+   "anterior": "-6.950.469",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1016,
+   "etiqueta": "**Sonstige betriebliche Aufwendungen**",
+   "actual": "-9.317.458",
+   "anterior": "-6.950.469",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1017,
+   "etiqueta": "**Betriebsergebnis**",
+   "actual": "1.461.646",
+   "anterior": "1.387.482",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1018,
+   "etiqueta": "Sonstige Zinsen und ähnliche Erträge",
+   "actual": "302.652",
+   "anterior": "270.282",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1019,
+   "etiqueta": "Abschreibungen auf Finanzanlagen",
+   "actual": "-113.712",
+   "anterior": "-108.977",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1020,
+   "etiqueta": "Zinsen und ähnliche Aufwendungen",
+   "actual": "-1.588.717",
+   "anterior": "-1.546.951",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1021,
+   "etiqueta": "**Finanzergebnis**",
+   "actual": "-1.399.777",
+   "anterior": "-1.385.646",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1022,
+   "etiqueta": "Ergebnis vor Steuern",
+   "actual": "61.869",
+   "anterior": "1.835",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1023,
+   "etiqueta": "Steuern vom Einkommen",
+   "actual": "-38.465",
+   "anterior": "192.648",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 1024,
+   "etiqueta": "**Ergebnis nach Steuern**",
+   "actual": "23.404",
+   "anterior": "194.484",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 1006,
+  "actual": "61.420.918"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 1024,
+  "actual": "23.404",
+  "anterior": "194.484"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (b8, L1001-L1024) como euros en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b8 no imprime la escala; los importes con siete-ocho dígitos sugieren euros en unidades.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado consolidado sin notas de desglose. No hay total de gastos impreso (se obtiene sumando Aufwendungen, Personalaufwand, Abschreibungen y Sonstige betriebliche Aufwendungen). Ergebnis vor Steuern 2023/24 (1.835) más impuesto (192.648) da 194.483 vs 194.484 impreso: redondeo."
+}

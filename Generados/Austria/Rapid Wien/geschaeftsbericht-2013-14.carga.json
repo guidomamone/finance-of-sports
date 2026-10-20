@@ -1,0 +1,794 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.pdf",
+ "generado": "2026-10-20T22:00:36.864Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-09: Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH)",
+  "gestión: ningún presidente confirmado cubre 2014 (cierre 2014-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "rapidwien-at",
+  "year": 2014,
+  "cierre": "2014-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Sponsoring",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 7.275321,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "+ Ticketing & Fanreisen",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 6.412027,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "+ Rechteverwertung",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 4.29228,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "+ Merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.852899,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "+ Hospitality (VIP)",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.852774,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "+ Sonstige Erlöse",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.512206,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "a.o. Erträge",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.223636,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transfererlöse",
+    "normalizedCategory": "player_sales",
+    "amountNative": 5.224711,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Aufwand Heimspiele und Fanreisen",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2.558052,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "+ Wareneinsatz Merchandising",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.118089,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "+ Aufwand Hospitality VIP",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.589055,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "+ Umsetzung Sponsorleistungen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.508334,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "+ Eigene Medien und Produktionskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.306488,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Personalaufwand Sport",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -11.090202,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "+ Sonstiger Personalaufwand",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.311579,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Verwaltungs-, Versicherungs- und sonst. Aufwand",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.079574,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "+ Stadion-, Miet- und Instandhaltungsaufwand",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.747621,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "+ Spiel- und Trainingsbetrieb",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.295773,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "+ Klubservice, Events, PR und Marketing",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.731993,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "+ Management-Gebühren und Vermittlungsprovisionen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.39047,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "+ Abgaben, Gebühren & Strafen",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.097872,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Abschreibungen für Abnutzung",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.351386,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transferaufwendungen",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -2.255285,
+    "disclosureLevel": "aggregated",
+    "_pag": 34,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2014-06-30",
+   "sourceId": "rapidwien-at-geschaeftsbericht-2013-14",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.011112,
+   "tax": -0.02225,
+   "extraRows": [
+    {
+     "label": "Finanzergebnis",
+     "value": -0.011112
+    },
+    {
+     "label": "Steuern aus Erträgen",
+     "value": -0.02225
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 27.645854,
+   "officialTotalExpenses": 27.431773,
+   "officialPAT": 0.180719
+  },
+  "source": {
+   "id": "rapidwien-at-geschaeftsbericht-2013-14",
+   "clubId": "rapidwien-at",
+   "title": "SK Rapid GmbH — geschaeftsbericht-2013-14 (ejercicio 2014)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2014-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2013-14; el registro no trae cierre"
+ },
+ "clubId": "rapidwien-at",
+ "year": 2014,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.pdf",
+   "campo": "cierre",
+   "valor": "2014-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2013-14; el registro no trae cierre",
+   "evidencia": "geschaeftsbericht-2013-14.md (portada/Gewinn-und-Verlust-Rechnung)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH",
+   "evidencia": "geschaeftsbericht-2013-14.md, 'Konsolidierte Bilanz'",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "seleccion": {
+  "filas": 25,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Sponsoring",
+   "page": 34,
+   "native": 7.275321,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.275321,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.275321
+  },
+  {
+   "label": "+ Ticketing & Fanreisen",
+   "page": 34,
+   "native": 6.412027,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.412027,
+   "cat": "matchday_competition",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.412027
+  },
+  {
+   "label": "+ Rechteverwertung",
+   "page": 34,
+   "native": 4.29228,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.29228,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "revenue",
+   "amountNative": 4.29228
+  },
+  {
+   "label": "+ Merchandising",
+   "page": 34,
+   "native": 1.852899,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.852899,
+   "cat": "sponsorship_commercial",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.852899
+  },
+  {
+   "label": "+ Hospitality (VIP)",
+   "page": 34,
+   "native": 0.852774,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.852774,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "revenue",
+   "amountNative": 0.852774
+  },
+  {
+   "label": "+ Sonstige Erlöse",
+   "page": 34,
+   "native": 1.512206,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.512206,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.512206
+  },
+  {
+   "label": "a.o. Erträge",
+   "page": 34,
+   "native": 0.223636,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.223636,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.223636
+  },
+  {
+   "label": "Transfererlöse",
+   "page": 34,
+   "native": 5.224711,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.224711,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.224711
+  },
+  {
+   "label": "Aufwand Heimspiele und Fanreisen",
+   "page": 34,
+   "native": 2.558052,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.558052,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.558052
+  },
+  {
+   "label": "+ Wareneinsatz Merchandising",
+   "page": 34,
+   "native": 1.118089,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.118089,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -1.118089
+  },
+  {
+   "label": "+ Aufwand Hospitality VIP",
+   "page": 34,
+   "native": 0.589055,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.589055,
+   "cat": "other_expenses",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.589055
+  },
+  {
+   "label": "+ Umsetzung Sponsorleistungen",
+   "page": 34,
+   "native": 0.508334,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.508334,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -0.508334
+  },
+  {
+   "label": "+ Eigene Medien und Produktionskosten",
+   "page": 34,
+   "native": 0.306488,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.306488,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -0.306488
+  },
+  {
+   "label": "Personalaufwand Sport",
+   "page": 34,
+   "native": 11.090202,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 11.090202,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -11.090202
+  },
+  {
+   "label": "+ Sonstiger Personalaufwand",
+   "page": 34,
+   "native": 2.311579,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.311579,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: otros costos de personal, parte del costo de personal total: wages_squad",
+   "destino": "expense",
+   "amountNative": -2.311579
+  },
+  {
+   "label": "Verwaltungs-, Versicherungs- und sonst. Aufwand",
+   "page": 34,
+   "native": 2.079574,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.079574,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.079574
+  },
+  {
+   "label": "+ Stadion-, Miet- und Instandhaltungsaufwand",
+   "page": 34,
+   "native": 1.747621,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.747621,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -1.747621
+  },
+  {
+   "label": "+ Spiel- und Trainingsbetrieb",
+   "page": 34,
+   "native": 1.295773,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.295773,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -1.295773
+  },
+  {
+   "label": "+ Klubservice, Events, PR und Marketing",
+   "page": 34,
+   "native": 0.731993,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.731993,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -0.731993
+  },
+  {
+   "label": "+ Management-Gebühren und Vermittlungsprovisionen",
+   "page": 34,
+   "native": 0.39047,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.39047,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -0.39047
+  },
+  {
+   "label": "+ Abgaben, Gebühren & Strafen",
+   "page": 34,
+   "native": 0.097872,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.097872,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -0.097872
+  },
+  {
+   "label": "Abschreibungen für Abnutzung",
+   "page": 34,
+   "native": 0.351386,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.351386,
+   "cat": "depreciation",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.351386
+  },
+  {
+   "label": "Transferaufwendungen",
+   "page": 34,
+   "native": 2.255285,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.255285,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20: categoría propuesta por el sistema, sin precedente en contra",
+   "destino": "expense",
+   "amountNative": -2.255285
+  },
+  {
+   "label": "Finanzergebnis",
+   "page": null,
+   "native": -0.011112,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Steuern aus Erträgen",
+   "page": null,
+   "native": -0.02225,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 27.645854,
+  "expSum": -27.431773,
+  "officialTotalRevenue": 27.645854,
+  "officialTotalExpenses": 27.431773,
+  "officialPAT": 0.180719,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.180719,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 27.645854
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 27.431773
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de at 2014 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2014,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2013-14; el registro no trae cierre",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2014-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2013-14; el registro no trae cierre)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-09)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Austria (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2014-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2014-06-30 = 0.732172 (Tipo de referencia del Banco Central Europeo al 2014-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "rapidwien-at-geschaeftsbericht-2013-14",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no hay ninguna liga-temporada de at 2014 cacheada",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 8,
+  "lineasGasto": 15,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

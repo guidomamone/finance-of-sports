@@ -1,0 +1,256 @@
+{
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2019-20.md",
+ "generatedAt": "2026-10-20T21:59:00.329Z",
+ "rubrosHuella": "51020d90c04bfe5a2b1a68e4249d2d4f5b450aa6",
+ "rubros": [
+  {
+   "label": "Ticketing",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsoring",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Hospitality (VIP)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "stadium_other",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Rechteverwertung",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Fanreisen",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "sonstige Erlöse",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Transfererlöse",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Umsetzung Sponsorleistungen",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwand Heimspiele",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Wareneinsatz Merchandising",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "eigene Medien und Produktionskosten",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Personalaufwand Sport",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "sonstiger Personalaufwand",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Abgaben, Gebühren, Strafen",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Spiel- und Trainingsbetrieb",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Management-Gebühren und Vermittlungsprovisionen",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Stadion-, Miet- und Instandhaltungsaufwand",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Klubservice, Events, PR und Marketing",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen für Abnutzung",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwand Hospitality VIP",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Transferauwendungen",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "player_amortisation",
+     0.19
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Verwaltung-, Versicherungs- und sonst. Aufwand",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1074
+  }
+ ]
+}

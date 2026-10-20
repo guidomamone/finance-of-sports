@@ -1,0 +1,81 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2022-23.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2022-23.md",
+ "mdSha1": "ff948a5122b01efe6dc55f9d23dbb65414e45ce3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:55:15.815Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    49,
+    57
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 18,
+   "lineas": [
+    479,
+    500
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 19,
+   "lineas": [
+    508,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 22,
+   "lineas": [
+    668,
+    692
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "No hay frase de escala; los importes se imprimen con todos los dígitos (p. ej. Umsatzerlöse 42.627.915), lo que corresponde a euros en unidades.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2022/23",
+ "columna_anterior": "2021/22",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la GuV 'SK RAPID' (b4) como estado de SK Rapid GmbH aunque el balance habla de 'Vereinskapital' (posible estado del Verein y no de la GmbH)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El balance (b3) muestra 'Vereinskapital', lo que sugiere que las cifras son de la asociación y no de la GmbH registrada en el sitio.",
+   "bloques": [
+    "b4",
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La GuV de b4 es individual y no consolidada, y se acepta así aunque los años cargados son consolidados?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El título '3.3 Gewinn-und-Verlust-Rechnung 2022/23' no indica 'Konzern'; es el único estado de resultados del documento.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay un estado de resultados (b4, pág. 22), titulado SK RAPID, sin notas de desglose. b2 y b3 son balance y se excluyen. No se indica si es consolidado ni si corresponde al Verein o a la GmbH."
+}

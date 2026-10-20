@@ -1,0 +1,142 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2020-21.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2020-21.md",
+ "mdSha1": "ecf99a25945c5d76c38b79d66a7da2e1b4d96ac9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:54:05.362Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 11,
+   "lineas": [
+    984,
+    990
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    993,
+    1000
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    1062,
+    1099
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    1103,
+    1103
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    1109,
+    1116
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 20,
+   "lineas": [
+    1874,
+    1918
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 22,
+   "lineas": [
+    2123,
+    2154
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 25,
+   "lineas": [
+    2615,
+    2618
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 25,
+   "lineas": [
+    2630,
+    2632
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    2836,
+    2836
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 31,
+   "lineas": [
+    3446,
+    3446
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 31,
+   "lineas": [
+    3455,
+    3455
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 40,
+   "lineas": [
+    4633,
+    4633
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos con separador de miles y sin indicación de escala (ej. Umsatzerlöse 40.475.029), lo que corresponde a euros en unidades.",
+ "moneda": "EUR",
+ "columna_ejercicio": "GESAMT 2020/21",
+ "columna_anterior": "GESAMT 2019/20",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la 'GEWINN-UND-VERLUST-RECHNUNG 2020/21' (b7, pág. 22) como estado consolidado del SK Rapid, igual que en los años ya cargados?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El balance de la pág. 20 se titula 'KONSOLIDIERTE BILANZ DES SK RAPID', pero la cuenta de resultados (b7) no indica en su título si es consolidada o de la SK Rapid GmbH.",
+   "bloques": [
+    "b7",
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Único estado de resultados: b7 (pág. 22), en formato de gestión con columnas 'GESAMT', probablemente consolidado como el balance b6. b6 es el balance y no se elige. b3/b5 son resultados deportivos. b8/b9 son comparativas de estructura de ingresos con la Bundesliga alemana y no se eligen. No hay notas de desglose."
+}
