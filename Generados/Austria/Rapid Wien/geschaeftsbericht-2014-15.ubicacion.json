@@ -1,0 +1,189 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2014-15.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2014-15.md",
+ "mdSha1": "a8421ab609c99cb7d86d99047e04212919e98191",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:51:39.031Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    22,
+    33
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    37,
+    44
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    48,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 25,
+   "lineas": [
+    530,
+    536
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 28,
+   "lineas": [
+    588,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 30,
+   "lineas": [
+    691,
+    736
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 31,
+   "lineas": [
+    746,
+    775
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 31,
+   "lineas": [
+    793,
+    804
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 32,
+   "lineas": [
+    830,
+    847
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 33,
+   "lineas": [
+    865,
+    878
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 33,
+   "lineas": [
+    880,
+    893
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 33,
+   "lineas": [
+    895,
+    908
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 35,
+   "lineas": [
+    964,
+    976
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 36,
+   "lineas": [
+    1002,
+    1010
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 39,
+   "lineas": [
+    1090,
+    1125
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 40,
+   "lineas": [
+    1147,
+    1182
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 42,
+   "lineas": [
+    1265,
+    1299
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 46,
+   "lineas": [
+    1481,
+    1492
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 58,
+   "lineas": [
+    1848,
+    1856
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b17"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos con detalle a la unidad (ej. 7.646.646 Sponsoring, 22.848.382 Umsatzerlöse); no hay leyenda de escala.",
+ "moneda": "EUR",
+ "columna_ejercicio": "GESAMT",
+ "columna_anterior": "Vgl. Vorjahr (Saison 2013/14)",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Ergebnis nach Geschäftsfeldern' (b18, pág. 46) por repetir resultados por segmento ya contenidos en b17?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "b18 muestra resultado por segmento (Internacional, Nacional, Transfer), que no desglosa renglones de ingresos o gastos no abiertos en b17.",
+   "bloques": [
+    "b18"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "b17 es la GuV consolidada (Verein, SK Rapid Wirtschaftsbetriebe GmbH y otra sociedad) de la Saison 2014/15 (1.7.2014–30.6.2015), en formato de gestión con columnas por competencia; se carga la columna GESAMT. No hay estado individual de SK Rapid GmbH separado en el documento. b16 es balance, se excluye."
+}

@@ -1,0 +1,224 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2013-14.md",
+ "mdSha1": "471c8ecd2ccb6629c44c1e284000ac3e00122b75",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:51:05.658Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    33,
+    40
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    44,
+    48
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 20,
+   "lineas": [
+    763,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 20,
+   "lineas": [
+    768,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 24,
+   "lineas": [
+    943,
+    961
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 26,
+   "lineas": [
+    1142,
+    1179
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 26,
+   "lineas": [
+    1183,
+    1185
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 27,
+   "lineas": [
+    1205,
+    1214
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 32,
+   "lineas": [
+    1504,
+    1539
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 33,
+   "lineas": [
+    1660,
+    1660
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 34,
+   "lineas": [
+    1675,
+    1709
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 38,
+   "lineas": [
+    2090,
+    2120
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 39,
+   "lineas": [
+    2136,
+    2150
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 40,
+   "lineas": [
+    2177,
+    2181
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 40,
+   "lineas": [
+    2184,
+    2184
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 40,
+   "lineas": [
+    2203,
+    2216
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 40,
+   "lineas": [
+    2219,
+    2219
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 41,
+   "lineas": [
+    2249,
+    2251
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 41,
+   "lineas": [
+    2253,
+    2255
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 50,
+   "lineas": [
+    2783,
+    2787
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 69,
+   "lineas": [
+    3651,
+    3658
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 74,
+   "lineas": [
+    3859,
+    3859
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b11"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos con todos los dígitos (p. ej. 22.197.507 Umsatzerlöse), sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "GESAMT",
+ "columna_anterior": "Vgl. Vorjahr (Saison 2012/13)",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Ergebnis internationaler Wettbewerb' (b12, pág. 38), que repite la columna 'Internationaler Wettbewerb' de la GuV b11?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "b12 solo repite importes del segmento internacional que ya figuran en b11 y no abre renglones nuevos.",
+   "bloques": [
+    "b12"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro 'Ergebnis nach Geschäftsfeldern' (b13, pág. 39) por ser un resumen por segmento sin desglose adicional?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "b13 agrupa el resultado en tres áreas de negocio con totales de ingresos y gastos ya contenidos en b11.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "La GuV de b11 es la consolidada (Verein, SK Rapid Wirtschaftsbetriebe GmbH y SK Rapid Sportstättenbetrieb GmbH), para la temporada 1.7.2013–30.6.2014. Para el ejercicio se usa la columna GESAMT y para el año anterior la columna 'Vgl. Vorjahr'. Las columnas por competición nacional/internacional son un desglose por segmento que no aporta renglones nuevos. Las notas 1) a 32) se citan pero no aparecen transcritas como tablas."
+}

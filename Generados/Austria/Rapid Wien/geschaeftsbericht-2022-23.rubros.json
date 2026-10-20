@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2022-23.md",
+  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2022-23.pdf",
+  "club": "rapidwien-at",
+  "year": 2023,
+  "generatedAt": "2026-10-20T21:56:05.347Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Umsatzerlöse",
+      "lado": "revenue",
+      "page": 22,
+      "section": "estado",
+      "values": [
+        42.627915
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Erträge aus der Auflösung von Rückstellungen",
+      "lado": "revenue",
+      "page": 22,
+      "section": "estado",
+      "values": [
+        0.54837
+      ],
+      "glosa": "Ingresos por reversión de provisiones"
+    },
+    {
+      "label": "Übrige",
+      "lado": "revenue",
+      "page": 22,
+      "section": "estado",
+      "values": [
+        2.168731
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Aufwendungen Spielbetrieb, Transfers etc.",
+      "lado": "expense",
+      "page": 22,
+      "section": "estado",
+      "values": [
+        4.959545
+      ],
+      "glosa": "Gastos de competición, traspasos, etc."
+    },
+    {
+      "label": "Aufwendungen für bezogene Leistungen",
+      "lado": "expense",
+      "page": 22,
+      "section": "estado",
+      "values": [
+        7.98637
+      ],
+      "glosa": "Gastos por servicios contratados"
+    },
+    {
+      "label": "Löhne & Gehälter",
+      "lado": "expense",
+      "page": 22,
+      "section": "estado",
+      "values": [
+        14.74041
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Soziale Aufwendungen",
+      "lado": "expense",
+      "page": 22,
+      "section": "estado",
+      "values": [
+        3.636215
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Abschreibungen",
+      "lado": "expense",
+      "page": 22,
+      "section": "estado",
+      "values": [
+        4.200133
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Sonstige betriebliche Aufwendungen",
+      "lado": "expense",
+      "page": 22,
+      "section": "estado",
+      "values": [
+        7.88835
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

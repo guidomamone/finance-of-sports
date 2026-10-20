@@ -1,0 +1,212 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.md",
+ "mdSha1": "5ac7793fd045a6433b5a2d7fa8a4ced8f46a338c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:53:12.075Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 30,
+   "lineas": [
+    1700,
+    1702
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 30,
+   "lineas": [
+    1706,
+    1709
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 31,
+   "lineas": [
+    1772,
+    1774
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 31,
+   "lineas": [
+    1777,
+    1783
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 31,
+   "lineas": [
+    1785,
+    1788
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 31,
+   "lineas": [
+    1790,
+    1795
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 32,
+   "lineas": [
+    1823,
+    1834
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 32,
+   "lineas": [
+    1836,
+    1840
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 32,
+   "lineas": [
+    1846,
+    1848
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 32,
+   "lineas": [
+    1856,
+    1866
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 33,
+   "lineas": [
+    1882,
+    1892
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 34,
+   "lineas": [
+    1899,
+    1906
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 34,
+   "lineas": [
+    1913,
+    1924
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 39,
+   "lineas": [
+    2051,
+    2051
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 39,
+   "lineas": [
+    2065,
+    2065
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 39,
+   "lineas": [
+    2067,
+    2067
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 52,
+   "lineas": [
+    2911,
+    2934
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 53,
+   "lineas": [
+    2939,
+    2952
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 64,
+   "lineas": [
+    4285,
+    4292
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 66,
+   "lineas": [
+    4498,
+    4498
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 92,
+   "lineas": [
+    6043,
+    6047
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 92,
+   "lineas": [
+    6068,
+    6068
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "EUR",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Hay en el PDF una consolidierte Gewinn- und Verlustrechnung 2018/19 (probablemente cerca de las págs. 52-55) que la transcripción no capturó como bloque?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo trae el balance consolidado (b17 activo, b18 pasivo, págs. 52-53) y ningún bloque con la cuenta de resultados; podría haberse perdido en la transcripción.",
+   "bloques": [
+    "b17",
+    "b18"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Ninguno de los bloques indexados es un estado de resultados: b7-b11 son resultados deportivos y tablas de posiciones, b12-b13 son listas de personal, b17-b18 son el balance consolidado (Aktiva/Passiva), b19 es la amortización del crédito y b21 son estadísticas de redes sociales. El informe usa el perímetro consolidado (KONSOLIDIERTE BILANZ DES SK RAPID) y la moneda sería EUR. Conviene revisar el PDF por si la GuV consolidada existe y no fue transcripta."
+}

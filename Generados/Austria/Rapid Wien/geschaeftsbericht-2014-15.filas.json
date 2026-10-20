@@ -1,0 +1,375 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2014-15.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2014-15.md",
+ "mdSha1": "a8421ab609c99cb7d86d99047e04212919e98191",
+ "ubicacionSha1": "8a94652f0c58308aed1a6b807cd10446055cc492",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:52:01.484Z",
+ "ubicacion": {
+  "estado": [
+   "b17"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b17",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes impresos con separador de miles sin aclaración (p.ej. 22.848.382), se asumen euros en unidades"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b17",
+   "linea": 1267,
+   "etiqueta": "Sponsoring",
+   "actual": "7.646.646",
+   "anterior": "7.275.321",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1268,
+   "etiqueta": "+ Ticketing, Fanreisen & Events",
+   "actual": "4.535.992",
+   "anterior": "6.412.027",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1269,
+   "etiqueta": "+ Rechteverwertung & Zentralvermarktung",
+   "actual": "3.987.385",
+   "anterior": "4.292.280",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1270,
+   "etiqueta": "+ Merchandising",
+   "actual": "2.135.783",
+   "anterior": "1.852.899",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1271,
+   "etiqueta": "+ Hospitality (VIP)",
+   "actual": "972.266",
+   "anterior": "852.774",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1272,
+   "etiqueta": "+ Sonstige Erlöse",
+   "actual": "3.570.310",
+   "anterior": "1.512.206",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1273,
+   "etiqueta": "= ∑ Umsatzerlöse",
+   "actual": "22.848.382",
+   "anterior": "22.197.507",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1274,
+   "etiqueta": "Aufwand Heimspiele, Fanreisen & Events",
+   "actual": "-2.418.437",
+   "anterior": "-2.558.052",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1275,
+   "etiqueta": "+ Wareneinsatz Merchandising",
+   "actual": "-1.173.401",
+   "anterior": "-1.118.089",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1276,
+   "etiqueta": "+ Aufwand Hospitality VIP",
+   "actual": "-713.933",
+   "anterior": "-589.055",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1277,
+   "etiqueta": "+ Umsetzung Sponsorleistungen",
+   "actual": "-407.397",
+   "anterior": "-508.334",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1278,
+   "etiqueta": "+ Eigene Medien und Produktionskosten",
+   "actual": "-287.983",
+   "anterior": "-306.488",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1279,
+   "etiqueta": "= ∑ Materialaufwand und bezogene Leistungen",
+   "actual": "-5.001.151",
+   "anterior": "-5.080.017",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1280,
+   "etiqueta": "ROHERTRAG",
+   "actual": "17.847.231",
+   "anterior": "17.117.490",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1281,
+   "etiqueta": "Personalaufwand Sport",
+   "actual": "-9.851.651",
+   "anterior": "-11.090.202",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1282,
+   "etiqueta": "+ Sonstiger Personalaufwand",
+   "actual": "-2.301.210",
+   "anterior": "-2.311.579",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1283,
+   "etiqueta": "= ∑ Personalaufwand",
+   "actual": "-12.152.861",
+   "anterior": "-13.401.781",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1284,
+   "etiqueta": "Verwaltungs-, Versicherungs- und sonst. Aufwand",
+   "actual": "-2.341.170",
+   "anterior": "-2.079.574",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1285,
+   "etiqueta": "+ Stadion-, Miet- und Instandhaltungsaufwand",
+   "actual": "-2.079.073",
+   "anterior": "-1.747.621",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1286,
+   "etiqueta": "+ Spiel- und Trainingsbetrieb",
+   "actual": "-1.122.651",
+   "anterior": "-1.295.773",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1287,
+   "etiqueta": "+ Klubservice, Events, PR und Marketing",
+   "actual": "-359.174",
+   "anterior": "-731.993",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1288,
+   "etiqueta": "+ Management-Gebühren und Vermittlungsprovisionen",
+   "actual": "-327.210",
+   "anterior": "-390.470",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1289,
+   "etiqueta": "+ Abgaben, Gebühren & Strafen",
+   "actual": "-243.823",
+   "anterior": "-97.872",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1290,
+   "etiqueta": "= ∑ Sachaufwand",
+   "actual": "-6.473.101",
+   "anterior": "-6.343.303",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1291,
+   "etiqueta": "Abschreibungen für Abnutzung",
+   "actual": "-304.502",
+   "anterior": "-351.386",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1292,
+   "etiqueta": "Finanzergebnis",
+   "actual": "-289.536",
+   "anterior": "-11.112",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1293,
+   "etiqueta": "a.o. Erträge",
+   "actual": "242.968",
+   "anterior": "223.636",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1294,
+   "etiqueta": "Steuern aus Erträgen",
+   "actual": "-15.930",
+   "anterior": "-22.250",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1295,
+   "etiqueta": "GESCHÄFTSERGEBNIS",
+   "actual": "-1.145.731",
+   "anterior": "-2.788.707",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1296,
+   "etiqueta": "Transfererlöse",
+   "actual": "1.795.220",
+   "anterior": "5.224.711",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1297,
+   "etiqueta": "Transferaufwendungen",
+   "actual": "-599.146",
+   "anterior": "-2.255.285",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1298,
+   "etiqueta": "TRANSFERERGEBNIS",
+   "actual": "1.196.074",
+   "anterior": "2.969.426",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 1299,
+   "etiqueta": "JAHRESERGEBNIS",
+   "actual": "50.344",
+   "anterior": "180.719",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 1299,
+  "actual": "50.344",
+  "anterior": "180.719"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que los importes de b17 (L1265-L1299) están en euros en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El cuadro no imprime la escala; por magnitud parecen euros enteros.",
+   "bloques": [
+    "b17"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en formato escalonado por segmentos; se tomó solo la columna GESAMT y la del año anterior. Gastos impresos con signo negativo. Umsatzerlöse (L1273) es el total de ingresos operativos pero no incluye a.o. Erträge ni Transfererlöse, por eso no se informó como total de ingresos; no hay total de gastos impreso."
+}

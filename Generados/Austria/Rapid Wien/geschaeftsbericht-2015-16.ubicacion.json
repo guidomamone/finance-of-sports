@@ -1,0 +1,228 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2015-16.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2015-16.md",
+ "mdSha1": "2c3c2494ce9af62a0b5f171ec71764520d686c6a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:52:06.476Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 15,
+   "lineas": [
+    1494,
+    1507
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 15,
+   "lineas": [
+    1517,
+    1550
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 15,
+   "lineas": [
+    1558,
+    1562
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 16,
+   "lineas": [
+    1574,
+    1593
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 16,
+   "lineas": [
+    1597,
+    1616
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    1620,
+    1631
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    1640,
+    1645
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    1656,
+    1661
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    1665,
+    1672
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    1676,
+    1681
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    1688,
+    1691
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    2313,
+    2331
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    2333,
+    2350
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    2364,
+    2371
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    2377,
+    2384
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    2941,
+    2941
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    3340,
+    3359
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    3370,
+    3384
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    3409,
+    3418
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 29,
+   "lineas": [
+    3434,
+    3438
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 31,
+   "lineas": [
+    3811,
+    3811
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 34,
+   "lineas": [
+    3986,
+    3986
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 40,
+   "lineas": [
+    4999,
+    4999
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 51,
+   "lineas": [
+    6142,
+    6142
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "EUR",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El documento omite la consolidierte Gewinn- und Verlustrechnung 2015/16, de modo que solo trae el balance consolidado (b12-b13, pág. 22)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice muestra solo el balance consolidado en la pág. 22 y ningún bloque con la cuenta de resultados; podría estar en una página sin transcribir o como gráfico.",
+   "bloques": [
+    "b12",
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El índice solo trae el balance consolidado (b12 Aktiva, b13 Passiva), series de Bilanzsumme y EK-Bilanz (b14, b15) y comparativas sectoriales (b17, b19, b20). No aparece ningún bloque de estado de resultados (GuV) del ejercicio 2015/16, por eso sin_estado = true."
+}

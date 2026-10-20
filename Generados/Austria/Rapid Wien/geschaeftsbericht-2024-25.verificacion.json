@@ -1,0 +1,203 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.md",
+ "generado": "2026-10-20T21:58:58.796Z",
+ "scriptHuella": "bb1724ebf1b3",
+ "estado": "ok",
+ "clubId": "rapidwien-at",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2024-25; el registro no trae cierre",
+   "evidencia": "geschaeftsbericht-2024-25.md (portada/Gewinn-und-Verlust-Rechnung)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "El documento presenta solo el estado consolidado (Konsolidierte Bilanz): un ejercicio con un solo perímetro publicado se carga con ese (CONVENCIONES-DATOS, perímetro); igual que 2010-13 a 2023-24 ya ajustados",
+   "evidencia": "revisión del alta 2026-10-09",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "61.420918 = 61.420918",
+   "suma": 61.42091799999999,
+   "impreso": 61.420918
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 5.152128723651117e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 44.375494; el sitio tiene 44.375494"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 44.375494 en geschaeftsbericht-2023-24.pdf y 44.375494 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2024-25.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en geschaeftsbericht-2023-24.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 61.420918,
+  "gastos": 59.959272,
+  "financiero": -1.399777,
+  "impuesto": -0.038465,
+  "resultadoImpreso": 0.023404,
+  "resultadoParaCargar": 0.023404,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "**Umsatzerlöse**",
+   "lado": "ingreso",
+   "M": 58.395122,
+   "pagina": 28,
+   "linea": 1001,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Erträge aus dem Abgang von Anlagevermögen",
+   "lado": "ingreso",
+   "M": 0.015325,
+   "pagina": 28,
+   "linea": 1002,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Erträge aus der Auflösung von Rückstellungen",
+   "lado": "ingreso",
+   "M": 0.169107,
+   "pagina": 28,
+   "linea": 1003,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übrige",
+   "lado": "ingreso",
+   "M": 2.841364,
+   "pagina": 28,
+   "linea": 1004,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwendungen Spielbetrieb, Transfers etc.",
+   "lado": "gasto",
+   "M": 6.191201,
+   "pagina": 28,
+   "linea": 1007,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aufwendungen für bezogene Leistungen",
+   "lado": "gasto",
+   "M": 10.947091,
+   "pagina": 28,
+   "linea": 1008,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Löhne & Gehälter",
+   "lado": "gasto",
+   "M": 23.898805,
+   "pagina": 28,
+   "linea": 1010,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Soziale Aufwendungen",
+   "lado": "gasto",
+   "M": 4.616527,
+   "pagina": 28,
+   "linea": 1011,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "**Abschreibungen**",
+   "lado": "gasto",
+   "M": 4.98819,
+   "pagina": 28,
+   "linea": 1013,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Steuern, soweit sie nicht unter Steuern vom Einkommen fallen",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 28,
+   "linea": 1014,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übrige",
+   "lado": "gasto",
+   "M": 9.317458,
+   "pagina": 28,
+   "linea": 1015,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Sonstige Zinsen und ähnliche Erträge",
+   "M": 0.302652,
+   "linea": 1018
+  },
+  {
+   "etiqueta": "Abschreibungen auf Finanzanlagen",
+   "M": -0.113712,
+   "linea": 1019
+  },
+  {
+   "etiqueta": "Zinsen und ähnliche Aufwendungen",
+   "M": -1.588717,
+   "linea": 1020
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern vom Einkommen",
+   "M": -0.038465,
+   "linea": 1023
+  }
+ ]
+}

@@ -1437,6 +1437,7 @@ window.SPONSORS_INDICE = [
   ["links-management-technology","Links Management & Technology",["c"]],
   ["lino-sonego","Lino Sonego",["c"]],
   ["linz","Linz",["c"]],
+  ["linz-ag","Linz AG",["c"]],
   ["liofilchem","Liofilchem",["c"]],
   ["lion-sport","Lion Sport",["c"]],
   ["liqui-moly","Liqui Moly",["c"]],

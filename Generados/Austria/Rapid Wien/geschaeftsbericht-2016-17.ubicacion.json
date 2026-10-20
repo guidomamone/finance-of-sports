@@ -1,0 +1,271 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.md",
+ "mdSha1": "98c71f9eb52bb8e3b844d42fe2950566d4ab910e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T21:52:27.571Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 13,
+   "lineas": [
+    2221,
+    2234
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 13,
+   "lineas": [
+    2260,
+    2273
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    2277,
+    2291
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    2295,
+    2327
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    2331,
+    2336
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    2666,
+    2666
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    2702,
+    2702
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    2714,
+    2714
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    2723,
+    2723
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    2732,
+    2732
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    2737,
+    2737
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    2762,
+    2762
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    2768,
+    2768
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    2786,
+    2786
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 21,
+   "lineas": [
+    3819,
+    3841
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    3863,
+    3880
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    5160,
+    5168
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    5211,
+    5220
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    5237,
+    5240
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    5414,
+    5438
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 29,
+   "lineas": [
+    5614,
+    5614
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    5822,
+    5822
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 32,
+   "lineas": [
+    6590,
+    6594
+   ],
+   "tipo": "texto"
+  },
+  "b24": {
+   "pagina": 32,
+   "lineas": [
+    6596,
+    6598
+   ],
+   "tipo": "texto"
+  },
+  "b25": {
+   "pagina": 32,
+   "lineas": [
+    6606,
+    6611
+   ],
+   "tipo": "texto"
+  },
+  "b26": {
+   "pagina": 39,
+   "lineas": [
+    7856,
+    7856
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 40,
+   "lineas": [
+    7935,
+    7941
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 50,
+   "lineas": [
+    9429,
+    9429
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "EUR",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Stadionrelevante Positionen Saison 2013/14 – Saison 2016/17' de la pág. 28 (b20), por ser una comparación parcial de posiciones vinculadas al estadio y no el estado de resultados completo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "UMSATZERLÖSE",
+   "texto": "El b20 compara 2013/14 con 2016/17 solo para posiciones relacionadas con el estadio; no tiene personal deportivo ni resultado neto, y el documento no muestra una GuV completa (solo balance consolidado en pág. 21).",
+   "bloques": [
+    "b20"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El documento tiene en alguna página una Gewinn- und Verlustrechnung consolidada 2016/17 que no aparece en el índice?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Solo aparecen el balance consolidado (b15, b16) y cuadros deportivos o de benchmarking; no hay estado de resultados.",
+   "bloques": [
+    "b15",
+    "b16"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El índice no tiene estado de resultados del ejercicio 2016/17. Hay balance consolidado (b15 activo, b16 pasivo; se excluyen). b20 es un análisis de posiciones relevantes para el estadio que compara 2013/14 con 2016/17, en EUR (unidades); no es la GuV completa. Los demás bloques son de kader, redes sociales y benchmarking de ligas."
+}
