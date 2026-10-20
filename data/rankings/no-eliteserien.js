@@ -57,6 +57,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2021 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"viking-no", revenue:14.081, reportType:"official_balance_sheet",
+        sourceId:"viking-no-aarsregnskap-viking-fotball-as-2021",
+        mix:[["Comercial / Sponsors",5.516],["Estadio",0.987],["Televisión",2.613],["Venta de Jugadores",2.218],["Otros ingresos",2.747]] },
       { id:"sarpsborg08-no", revenue:9.227, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2021",
         mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.333],["Estadio",0.507],["Televisión",1.116],["Premios por competencias",0.105],["Venta de Jugadores",2.908],["Otros ingresos",1.199]] },
