@@ -26,8 +26,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **A. Cerrar lo abierto (en marcha)**
 * 292: lo que queda: Colombia (Tolima, La Equidad, Bucaramanga y Águilas Doradas, con tokens de sesión; los `estados-financieros-2025` de Tolima, La Equidad y Bucaramanga sin estado de resultados, a descartados) y La Louvière 2020 (2 páginas en imagen) --> Onboarding 5
-* 261: lo que queda: Reino Unido (solo la línea del auditor de Celtic 2021-2025) y Noruega (Fredrikstad, Viking FLI 2008-2016, Molde 2016 y 2024) --> Onboarding 4
-* 328: los pasos de una carga con tokens de sesión, reproducible por el script (propuesta de texto para tu ok) --> Docs 1
+* 328: carga con tokens de sesión: propuesta en `Admin/carga-con-tokens-328.md` (texto de skill y 4 tools que faltan); espera tu ok
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
@@ -35,7 +34,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **C. Cargar lo ya transcripto (no se transcribe más; cada sesión con su presupuesto)**
 * 238: Latinoamérica, 161 documentos transcriptos y validados (~US$ 50, en lotes de 5 a 8 clubes; espera tu ok y presupuesto)
-* 283: Vålerenga y Aalesund, sumar el AS y el FLI con los `.md` que ya hay (criterio decidido; falta implementar), después de Noruega
+* 283: Vålerenga y Aalesund, sumar el AS y el FLI con los `.md` que ya hay (criterio decidido; falta implementar; Noruega ya está)
 * 165 c: altas de los países nuevos, solo con documentos ya transcriptos
 
 **D. Pantallas y distribución (después del 246)**
@@ -245,15 +244,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-261. REINO UNIDO: CARGAR LO YA TRANSCRIPTO (no se transcribe más: Guido, 2026-10-20). 114 .md hechos y
-    commiteados (93 con subagentes Opus y 21 con Sonnet) (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
-    años 2021-2026 de los clubes de Premier, F1, cricket y rugby que ya tenían algún .md. Falta:
-    a) Validados los 118 (19-10: 106 + los 12 de Sonnet, US$ 8,59 + 1,3). Falta el lote de carga (etapa 3 en adelante). Ojo al cargar: Leeds 2019-20 es de 13 meses
-       y 2020-21 la versión "AMENDED" de 11; Red Bull 2020, usar el turnover del estado (229.754), no el de la pág. 4. Falta el lote (etapa 3 en adelante); Celtic 2020-21 con
-       `--max-paginas 0`. Tres con páginas que solo validó Claude (Celtic 2021-22 pág. 52; los otros en `transcripciones-estado.jsonl`):
-       cerrar con sum-check al onboardear. Notas de West Ham 2019-21 y parte de Aston Villa cerradas por sumas: mirarlas antes de caja y deuda.
-    d) Chelsea 2021-22 (Sonnet): solo los 4 estados se miraron contra la imagen; las notas se corrigieron por sumas. Revisar las notas
-       contra el PDF antes de cargar caja y deuda.
 313. CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
     Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
     (a) la skill de contenido y difusión (ya es el 257): un año cargado → hilo o post con el dato verificado y el link a la fuente;

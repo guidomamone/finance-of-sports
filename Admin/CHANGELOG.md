@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 858 — Reino Unido y Noruega cerrados (261); propuesta del 328 (2026-10-20) [261 · 328 · molde-no, celtic-gb, fredrikstad-no, viking-no]
+
+- Merge de Onboarding 4: Molde FLI 2008-2024 completo (17 años); línea del auditor de Celtic 2021-2025 (BDO LLP). Fredrikstad sin lote (después de
+  2018 solo deposita Fotballinvest AS, que no es el club) y Viking FLI 2012-2016 a descartados (el fútbol está en Viking Fotball ASA). Sale el 261.
+- Merge de Docs 1: propuesta del 328 en `Admin/carga-con-tokens-328.md` (texto de skill y 4 tools que faltan; sin probar).
+
 ## Versión 857 — Beşiktaş 2006-2008, Lierse Kempenzonen, La Louvière y Alianza FC (2026-10-20) [292 · 328 · besiktas-tr, liersekempenzonen-be, raallalouviere-be, alianzafc-co]
 
 - Merge de Onboarding 5: Beşiktaş 2006, 2007, 2008 y 2018 recargado (queda con 2006-2011 y 2014-2023); alta de Lierse Kempenzonen 2018-2021;
