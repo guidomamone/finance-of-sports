@@ -370,6 +370,34 @@ ejercicio (p. ej. el jaarverslag del club y el depósito en la KvK): entra el qu
 club; si los dos lo traen, el más completo (con notas). El otro va a `Admin/registros/documentos-descartados.txt`. Los idénticos byte a
 byte no hace falta: el inventario los marca `duplicado`.
 
+## REGLA: la tienda del club va a la categoría de merchandising que ya existe (Guido, 2026-10-20)
+
+Los ingresos de la tienda del club (Rosario Central, Talleres) van a `sponsorship_commercial`, que ya incluye el merchandising. No se crean
+`merchandise_sales` ni `cost_of_goods_sold`. El costo de la mercadería vendida queda donde está cargado.
+
+## REGLA: `grossDebt` con leasing IFRS 16 o deuda con partes relacionadas (votación 3 a 0, 2026-10-20)
+
+Vale para todos los países la regla de `club-data-mapping/referencia/formato-simplificado.md` ("Deuda financiera sin precedente del club"): el
+leasing IFRS 16 queda fuera si tiene fila propia (dentro solo si viene mezclado en las deudas financieras sin separar); la deuda con la
+controlante, los accionistas o las partes relacionadas cuenta solo si la nota la llama préstamo. Si nada califica, `grossDebt` es 0. Casos:
+AGF (solo leasing: 0), Silkeborg (0), SønderjyskE (sin vinculadas), Chelsea (0). Botafogo-SP 2024 y Fulham 2024 dependen de cómo la nota llame
+al saldo.
+
+## REGLA: la venta o cesión de un % de derechos de TV o comerciales a un fondo es `other_income`, ingreso único (votación 3 a 0, 2026-10-20)
+
+Va como `other_income`, no como `broadcasting` ni `exceptional_items`: es una operación patrimonial, no la TV del año. La `publicNote` del año dice
+que es única (y, si se recompra, lo que pasa después). Casos: Ceará 2024 ("Venda de direitos de participação", R$60,1 M, 37 % de los ingresos;
+la recompra de 2025 va a `other_amortisation`), Coritiba 2023 y América Mineiro (cesión a la Liga Forte União). Un porcentaje así de grande se
+silencia en `tools/audit-ignore.json` con el motivo, no se recategoriza.
+
+## REGLA: el intangible belga "Concessies, octrooien, licenties…" no es de jugadores sin confirmación del documento (votación 3 a 0, 2026-10-20)
+
+La amortización de ese intangible va a `depreciation` y el residuo de "Andere bedrijfsopbrengsten" a `other_income`, salvo que el propio
+documento (una nota de reglas de evaluación, el Jaarverslag con la cifra) diga que es de jugadores o de transferencias: entonces
+`player_amortisation` y `player_sales`. El rótulo cargado no agrega palabras que el documento no imprime ("spelersregistratierechten",
+"probablemente…"). Casos: Dender (`depreciation`), Charleroi y Anderlecht (confirmados por texto: `player_amortisation`), Mechelen 2025 (sin
+confirmación: pasa a `depreciation` el 1,11 M y a `other_income` el 8,54 M). Westerlo y Antwerp: mirar si tienen la confirmación por texto.
+
 ## REGLA: entidades del club, grupos multiclub e ingresos de las otras entidades
 
 Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.jsonl` (cada línea con su cita) y lo verifica
