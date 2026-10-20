@@ -48,6 +48,24 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     solo país a propósito (ver el porqué en `CLAUDE.md`): dos sesiones en países distintos no
     comparten un solo archivo y no pueden conflictuar.
 
+- ONBOARDING CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA (pedido de Guido, 2026-10-20: "quitarme de en medio en los arreglos de script").
+  Tres sesiones de worktree con un rol cada una; la principal mergea, corre los comandos y hace de correo.
+  - **Onboarding solo carga.** No edita `tools/`. Si un documento frena por un defecto de script, lo anota en
+    `Admin/registros/frenados-por-script.jsonl` (una línea: `{"pdf", "defecto", "detalle", "sesion", "fecha"}`; `defecto` es la letra del
+    TODO si ya existe, o una descripción corta), lo deja y sigue con el resto. No le pregunta a Guido por eso.
+  - **Pipeline es la única que toca `tools/`, y va siempre después.** Toma los frenados en orden. Por cada defecto: diseño, medición
+    gratis (`medir-verificar`, `medir-cargar` o la que corresponda) y un informe corto para la auditora. No commitea hasta el veredicto.
+  - **La auditora aprueba o rechaza en lugar de Guido.** Solo lee y escribe su veredicto en `Admin/registros/auditoria-proceso.jsonl`.
+    Aprueba sola cuando se cumple todo: (1) la medición no cambia ningún año ya cargado; (2) el cambio no agrega un criterio de datos
+    nuevo (perímetro, categoría, período, tratamiento de una partida); (3) cierra los casos que dice cerrar; (4) no endurece una compuerta
+    (ver la memoria de no endurecer reglas). Si falla (1) o (3), rechaza con el motivo. Si es (2) o (4), lo deriva a Guido.
+    También audita las cargas de onboarding con la skill `auditoria-finance-of-sports`: sumas, fuentes, nada cargado a mano sin evidencia.
+  - **A Guido solo le llega lo que cambia un criterio**, junto en un mensaje numerado de la principal por día.
+  - **El circuito:** frenado → pipeline (diseño y medición) → auditora → commit → la principal mergea y le devuelve a onboarding (o a una
+    sesión nueva) la lista de documentos destrabados, que los carga o los vuelve a frenar.
+  - **El número de lote lo da la principal.** Las listas de corrida (`Admin/registros/.lote-lista-actual.txt` y compañía) son de cada
+    carpeta; dos lotes en carpetas distintas pueden correr a la vez, dos en la misma no.
+
 - DÓNDE VA UN DOCUMENTO NUEVO, Y POR QUÉ NO ES UNA CUESTIÓN DE ORDEN (Versión 196, pedido de Guido:
   *"the entire project has too many files scattered. i want some order"*). **Todo documento interno
   va adentro de `Admin/`.** Interno = escrito para Guido o para una sesión futura: estado, reglas,
