@@ -105,6 +105,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Tottenham Hotspur Stadium","capacidad":62850,"sponsor":"AIA","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'westham-gb': {
+    2023: {"estadio":"London Stadium","capacidad":62500,"sponsor":"Betway","marca":"Umbro","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2025: {"estadio":"London Stadium","capacidad":62500,"sponsor":"Betway","marca":"Umbro","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'wolves-gb': {

@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.md",
+  "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.pdf",
+  "club": "westham-gb",
+  "year": 2023,
+  "generatedAt": "2026-10-20T17:50:59.620Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Match receipts and related football activities",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        40.267
+      ],
+      "glosa": "Ingresos por partidos y actividades futbolísticas relacionadas"
+    },
+    {
+      "label": "Broadcast and central sponsorship distributions",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        147.584
+      ],
+      "glosa": "Ingresos por retransmisión y patrocinios centralizados"
+    },
+    {
+      "label": "Commercial activities",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        34.534
+      ],
+      "glosa": "Actividades comerciales"
+    },
+    {
+      "label": "Retail and merchandising",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        12.976
+      ],
+      "glosa": "Venta al por menor y merchandising"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        2.495
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Profit on disposal of players",
+      "lado": "revenue",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        16.98
+      ],
+      "glosa": "Beneficio por traspaso de jugadores"
+    },
+    {
+      "label": "Operating costs",
+      "lado": "expense",
+      "page": 26,
+      "section": "estado",
+      "values": [
+        253.776
+      ],
+      "glosa": "Gastos de explotación"
+    }
+  ]
+}

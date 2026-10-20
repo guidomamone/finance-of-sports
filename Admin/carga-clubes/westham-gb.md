@@ -104,6 +104,43 @@ _antes de David Sullivan (data/gestiones/gb.js):_
 Sullivan y Gold compraron el club el 19/1/2010; Sullivan es el cabeza (Gold, co-chairman, murió en enero de 2023).
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/West Ham United/westham-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match receipts and related football activities | pág. 35, precedente |
+| 2 | Broadcast and central sponsorship distributions | pág. 35, precedente |
+| 3 | Commercial activities | pág. 35, precedente |
+| 4 | Retail and merchandising | pág. 35, precedente |
+| 5 | Other operating income | pág. 26, precedente |
+| 6 | Profit on disposal of players | pág. 26, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating costs | pág. 26, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): fila = 0. Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "West Ham United".
+```
+
 ## Fuentes
 
 ### westham-gb-full-accounts-2025
@@ -112,6 +149,14 @@ _note (data/):_
 
 ```text
 PDF con texto nativo, transcripción completa en Clubes/Inglaterra/West Ham United/west-ham-united-full-accounts-2024-25.md. Cuentas individuales, subsidiaria de WH Holding Limited (no consolida, exenta bajo Section 400). No declara tipo de cambio propio (fxRef apunta a FX_CLOSE). Único ejercicio disponible (a diferencia de otros clubes ingleses de esta sesión, no había un 2do PDF transcripto).
+```
+
+### westham-gb-full-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

@@ -1,0 +1,70 @@
+{
+ "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.md",
+ "generatedAt": "2026-10-20T17:55:35.559Z",
+ "rubrosHuella": "18d1918dfad87f81084de7b04b57c970e970cae8",
+ "rubros": [
+  {
+   "label": "Match receipts and related football activities",
+   "lado": "revenue",
+   "page": 36,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Broadcast and central sponsorship distributions",
+   "lado": "revenue",
+   "page": 36,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercial activities",
+   "lado": "revenue",
+   "page": 36,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Retail and merchandising",
+   "lado": "revenue",
+   "page": 36,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 27,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of players",
+   "lado": "revenue",
+   "page": 27,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Operating costs",
+   "lado": "expense",
+   "page": 27,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.24,
+   "desdeCache": true
+  }
+ ]
+}

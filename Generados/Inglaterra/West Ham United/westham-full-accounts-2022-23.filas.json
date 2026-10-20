@@ -1,0 +1,515 @@
+{
+ "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2022-23.md",
+ "mdSha1": "dc44d8138f839f8b9b5ab4f5f48fc6081bf2cd3a",
+ "ubicacionSha1": "55de1af05fc29281d7e5c45eff4435e2fc76cff5",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:08:35.559Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b6",
+   "b13"
+  ],
+  "notas_gastos": [
+   "b7",
+   "b8",
+   "b9",
+   "b15"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L985: '2023 Total £000'"
+  },
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "L1418: '2023 £000'"
+  },
+  {
+   "bloque": "b13",
+   "escala": "miles",
+   "evidencia": "L1505: '2023 £000'"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L1438: '2023 £000'"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L1452: '2023 £000'"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "L1465: '2023 £000'"
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "L1528: '2023 £000'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 987,
+   "etiqueta": "Turnover",
+   "actual": "235,361",
+   "anterior": "251,791",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 988,
+   "etiqueta": "Other operating income",
+   "actual": "2,495",
+   "anterior": "2,406",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 989,
+   "etiqueta": "Operating costs",
+   "actual": "(253,776)",
+   "anterior": "(234,059)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 990,
+   "etiqueta": "Operating (loss)/profit",
+   "actual": "(15,920)",
+   "anterior": "20,138",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 992,
+   "etiqueta": "Operating (loss)/profit before Exceptional items (Non-GAAP)",
+   "actual": "(11,979)",
+   "anterior": "22,726",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 993,
+   "etiqueta": "Exceptional items",
+   "actual": "(3,941)",
+   "anterior": "(2,588)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 994,
+   "etiqueta": "Operating (loss)/profit",
+   "actual": "(15,920)",
+   "anterior": "20,138",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 995,
+   "etiqueta": "Profit on disposal of players",
+   "actual": "16,980",
+   "anterior": "709",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 996,
+   "etiqueta": "Profit on operating activities before interest and taxation",
+   "actual": "1,060",
+   "anterior": "20,847",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 997,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "579",
+   "anterior": "92",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 998,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(19,025)",
+   "anterior": "(7,624)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 999,
+   "etiqueta": "(Loss)/profit before taxation",
+   "actual": "(17,386)",
+   "anterior": "13,315",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 1000,
+   "etiqueta": "Tax on (loss)/profit",
+   "actual": "1,217",
+   "anterior": "(1,748)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 1001,
+   "etiqueta": "(Loss)/profit after taxation",
+   "actual": "(16,169)",
+   "anterior": "11,567",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 1002,
+   "etiqueta": "Other comprehensive income for the financial year",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 1003,
+   "etiqueta": "Total comprehensive (expense)/income for the financial year",
+   "actual": "(16,169)",
+   "anterior": "11,567",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 1420,
+   "etiqueta": "Match receipts and related football activities",
+   "actual": "40,267",
+   "anterior": "40,852",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1421,
+   "etiqueta": "Broadcast and central sponsorship distributions",
+   "actual": "147,584",
+   "anterior": "163,620",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1422,
+   "etiqueta": "Commercial activities",
+   "actual": "34,534",
+   "anterior": "34,266",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1423,
+   "etiqueta": "Retail and merchandising",
+   "actual": "12,976",
+   "anterior": "13,053",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1424,
+   "etiqueta": "",
+   "actual": "235,361",
+   "anterior": "251,791",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1507,
+   "etiqueta": "Profit on sale of players",
+   "actual": "16,980",
+   "anterior": "709",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit on disposal of players"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1508,
+   "etiqueta": "",
+   "actual": "16,980",
+   "anterior": "709",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Profit on disposal of players"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1440,
+   "etiqueta": "Stadium lease penalty clause",
+   "actual": "*3,941",
+   "anterior": "2,588",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Exceptional items"
+  },
+  {
+   "bloque": "b7",
+   "linea": 1441,
+   "etiqueta": "",
+   "actual": "3,941",
+   "anterior": "2,588",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Exceptional items"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1454,
+   "etiqueta": "Employment costs (note 5)",
+   "actual": "135,343",
+   "anterior": "134,397",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1455,
+   "etiqueta": "Premier League Youth Academy grant income",
+   "actual": "(1,160)",
+   "anterior": "(1,161)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Operating costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1456,
+   "etiqueta": "Loss on translation of foreign currency",
+   "actual": "600",
+   "anterior": "288",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Operating costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1457,
+   "etiqueta": "Amortisation of intangible fixed assets (note 11)",
+   "actual": "65,306",
+   "anterior": "48,825",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1458,
+   "etiqueta": "Depreciation on tangible fixed assets (note 12)",
+   "actual": "2,440",
+   "anterior": "3,104",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1459,
+   "etiqueta": "Fees payable to the Company's auditors for the audit of the Company's financial statements",
+   "actual": "100",
+   "anterior": "90",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1460,
+   "etiqueta": "Operating leases – land and buildings",
+   "actual": "3,569",
+   "anterior": "3,646",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating costs"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1461,
+   "etiqueta": "Operating leases – plant and machinery",
+   "actual": "48",
+   "anterior": "68",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating costs"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1467,
+   "etiqueta": "Wages and salaries",
+   "actual": "117,490",
+   "anterior": "117,551",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employment costs (note 5)"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1468,
+   "etiqueta": "Social security costs",
+   "actual": "17,576",
+   "anterior": "16,606",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employment costs (note 5)"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1469,
+   "etiqueta": "Other pension costs",
+   "actual": "277",
+   "anterior": "240",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employment costs (note 5)"
+  },
+  {
+   "bloque": "b9",
+   "linea": 1470,
+   "etiqueta": "",
+   "actual": "135,343",
+   "anterior": "134,397",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Employment costs (note 5)"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1530,
+   "etiqueta": "Interest payable on secured loans",
+   "actual": "6,722",
+   "anterior": "6,284",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1531,
+   "etiqueta": "Interest on loans from shareholders",
+   "actual": "-",
+   "anterior": "835",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1532,
+   "etiqueta": "Other finance costs",
+   "actual": "750",
+   "anterior": "505",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1533,
+   "etiqueta": "Implied interest on transfer fees payable with extended payment terms",
+   "actual": "11,553",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1534,
+   "etiqueta": "",
+   "actual": "19,025",
+   "anterior": "7,624",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 1001,
+  "actual": "(16,169)",
+  "anterior": "11,567"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que no hay en el documento un renglón separado de 'Salarios del plantel' y que el gasto salarial se carga solo con 'Wages and salaries' (L1467, 117,490) de la nota 5?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "Los bloques dados no distinguen salarios del plantel de otros empleados; L1467 es el total de sueldos.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se trata la nota 4 (L1454-L1461) como desglose parcial de 'Operating costs', sin esperar que sume 253,776?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating costs",
+   "texto": "La nota 4 lista cargos incluidos en el resultado operativo, no un desglose completo de Operating costs (L989).",
+   "bloques": [
+    "b8",
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El asterisco en '*3,941' (L1440) se transcribió tal cual. Las filas de b8 son partidas informativas cargadas en el resultado operativo; no suman Operating costs. El documento no imprime total de ingresos ni total de gastos."
+}

@@ -1,0 +1,103 @@
+{
+ "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2023-24.md",
+ "club": "westham-gb",
+ "year": 2024,
+ "generatedAt": "2026-10-20T17:55:36.554Z",
+ "rubrosHuella": "18d1918dfad87f81084de7b04b57c970e970cae8",
+ "jevHuella": "22039780ffa00e47a04e7437e5446f48ea7d88a2",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Match receipts and related football activities",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos por taquilla y actividades futbolísticas relacionadas",
+   "page": 36,
+   "pendiente": false,
+   "ya": "matchday_competition",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "matchday_competition",
+   "confianza": 1
+  },
+  {
+   "label": "Broadcast and central sponsorship distributions",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Distribuciones por retransmisión y patrocinio centralizado",
+   "page": 36,
+   "pendiente": false,
+   "ya": "broadcasting",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "broadcasting",
+   "confianza": 1
+  },
+  {
+   "label": "Commercial activities",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Actividades comerciales",
+   "page": 36,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Retail and merchandising",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Venta minorista y merchandising",
+   "page": 36,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 27,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Profit on disposal of players",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Beneficio por enajenación de jugadores",
+   "page": 27,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "player_sales",
+   "confianza": 1
+  },
+  {
+   "label": "Operating costs",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de explotación",
+   "page": 27,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

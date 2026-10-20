@@ -1,0 +1,172 @@
+{
+ "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.md",
+ "generado": "2026-10-20T18:11:40.677Z",
+ "estado": "cola",
+ "clubId": "westham-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 996,
+   "etiqueta": "Exceptional items",
+   "lado": "gasto",
+   "reemplaza": "Exceptional items",
+   "motivo": "Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto",
+   "evidencia": ".md L996",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [
+  "df3c0af"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-15
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 254.906 en este documento y 254.906 en westham-full-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 214.116 en westham-full-accounts-2020-21.pdf y 214.116 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Profit on disposal of players\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Administrative expenses\" no suma el renglón (191.579 contra 234.059, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Exceptional items\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: sale la fila \"Exceptional items\" (2026-10-19, Exceptional items ya está dentro de Administrative expenses / Operating costs ('Analysed as'): duplicaba el gasto)",
+  "duda de extraer que no afecta la carga: No hay una fila 'Salarios del plantel'; L1488 es salarios de todos los empleados."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 191.579,
+   "objetivo": 234.059
+  }
+ ],
+ "totales": {
+  "ingresos": 254.906,
+  "gastos": 234.059,
+  "financiero": -7.532,
+  "impuesto": -1.748,
+  "resultadoImpreso": 11.567,
+  "resultadoParaCargar": 11.567,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Match receipts and related football activities",
+   "lado": "ingreso",
+   "M": 40.852,
+   "pagina": 33,
+   "linea": 1442,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcast and central sponsorship distributions",
+   "lado": "ingreso",
+   "M": 163.62,
+   "pagina": 33,
+   "linea": 1443,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial activities",
+   "lado": "ingreso",
+   "M": 34.266,
+   "pagina": 33,
+   "linea": 1444,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Retail and merchandising",
+   "lado": "ingreso",
+   "M": 13.053,
+   "pagina": 33,
+   "linea": 1445,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 2.406,
+   "pagina": 24,
+   "linea": 991,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of players",
+   "lado": "ingreso",
+   "M": 0.709,
+   "pagina": 24,
+   "linea": 998,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 234.059,
+   "pagina": 24,
+   "linea": 992,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.092,
+   "linea": 1000
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -7.624,
+   "linea": 1001
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax (charge)/credit on profit/(loss)",
+   "M": -1.748,
+   "linea": 1003
+  }
+ ]
+}
