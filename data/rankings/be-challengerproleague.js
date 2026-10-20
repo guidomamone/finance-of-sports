@@ -118,6 +118,15 @@ window.RANKINGS["be-challengerproleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.585]] },
     ],
   },
+  2018: {
+    leagueSize: 8,
+    wiki: {"t":"2017–18 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
+    clubs: [
+      { id:"liersekempenzonen-be", revenue:0.486, reportType:"official_balance_sheet",
+        sourceId:"liersekempenzonen-be-jaarrekening-2018-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.428],["Otros ingresos",0.058]] },
+    ],
+  },
   2016: {
     leagueSize: 17,
     wiki: {"t":"2015–16 Belgian Second Division","lang":"en","at":"2026-10-19","n":17},

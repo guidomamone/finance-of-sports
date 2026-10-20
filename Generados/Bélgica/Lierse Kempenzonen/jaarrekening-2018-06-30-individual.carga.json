@@ -1,15 +1,13 @@
 {
  "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual.pdf",
- "generado": "2026-10-20T20:44:33.726Z",
+ "generado": "2026-10-20T20:46:20.601Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (liersekempenzonen-be)"
   }
  ],
- "avisos": [
-  "gestión: ningún presidente confirmado cubre 2018 (cierre 2018-06-30); pregunta en la cola (no frena)"
- ],
+ "avisos": [],
  "ejercicio": {
   "clubId": "liersekempenzonen-be",
   "year": 2018,

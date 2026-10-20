@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md",
- "generado": "2026-10-20T20:44:27.022Z",
+ "generado": "2026-10-20T20:46:07.143Z",
  "scriptHuella": "b54df45c8846",
  "estado": "ok",
  "clubId": null,
@@ -25,6 +25,19 @@
    "evidencia": ".md L251 y L254",
    "autor": "Claude",
    "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "866254",
+   "linea": 237,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "El esquema abreviado solo publica el margen bruto (L237); la extracción no lo trajo como ingreso en 2019; en 2018, 2020 y 2021 sí",
+   "evidencia": ".md L237",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
   }
  ],
  "cola": [],
@@ -41,14 +54,14 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 0 - gastos 1.475303 ± financiero 0.011281 ± impuesto 0.008396 no da el impreso -0.628623",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 9.999999999177334e-7
   },
   {
    "nombre": "documento del año 2020",
    "ok": true,
-   "detalle": "códigos NBB del año 2019 iguales en este documento y en jaarrekening-2020-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0 y 0.866254)"
+   "detalle": "ingresos de 2019: 0.866254 en este documento y 0.866254 en jaarrekening-2020-06-30-individual.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2018",
@@ -63,6 +76,7 @@
  ],
  "notas": [
   "ajuste manual: fila \"Belastingen op het resultaat (67/77)\" (impuesto) 8396 (2026-10-20, El .md omite la fila de impuestos del esquema abreviado: resultado del ejercicio impreso -628.623 menos resultado ordinario -620.227 = 8.396)",
+  "ajuste manual: fila \"Brutomarge (+)/(-)\" (ingreso) 866254 (2026-10-20, El esquema abreviado solo publica el margen bruto (L237); la extracción no lo trajo como ingreso en 2019; en 2018, 2020 y 2021 sí)",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2022-06-30-individual.pdf",
   "duda de extraer ya contestada para el club (fila-ilegible, \"Positief (Negatief) resultaat van het boekjaar (+)/(-)\"): aceptar, en jaarrekening-2020-06-30-individual.pdf",
   "duda de extraer que no afecta la carga: Ningún bloque indica la escala; el formato NBB abreviado se presenta en euros.",
@@ -72,14 +86,14 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 0,
+  "ingresos": 0.866254,
   "gastos": 1.475303,
   "financiero": 0.011281,
   "impuesto": 0.008396,
   "resultadoImpreso": -0.628623,
   "resultadoParaCargar": -0.628623,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -89,6 +103,14 @@
    "pagina": 7,
    "linea": 252,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 0.866254,
+   "pagina": 7,
+   "linea": 237,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
@@ -140,8 +162,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": "rótulo",
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -151,14 +173,14 @@
   },
   {
    "etiqueta": "Financiële kosten",
-   "M": 0.011229,
+   "M": -0.011229,
    "linea": 250
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen op het resultaat (67/77)",
-   "M": 0.008396,
+   "M": -0.008396,
    "linea": 254
   }
  ]

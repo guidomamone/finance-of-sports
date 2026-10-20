@@ -1,35 +1,13 @@
 {
  "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
- "generado": "2026-10-20T20:44:33.911Z",
+ "generado": "2026-10-20T20:46:20.784Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (liersekempenzonen-be)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2019: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2019: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 0 + gastos -1.475303 + netInterest 0.011281 + tax 0.008396 = -1.455626 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -0.628623)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 0 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
- "avisos": [
-  "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-06-30); pregunta en la cola (no frena)"
- ],
+ "avisos": [],
  "ejercicio": {
   "clubId": "liersekempenzonen-be",
   "year": 2019,
@@ -44,6 +22,16 @@
     "_pag": 7,
     "_escalon": 1,
     "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Brutomarge (+)/(-)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.866254,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.99,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -117,13 +105,35 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": 0.011281,
-   "tax": 0.008396,
+   "netInterest": -0.011177,
+   "tax": -0.008396,
+   "extraRows": [
+    {
+     "label": "Financiële opbrengsten",
+     "value": 0.000052
+    },
+    {
+     "label": "Financiële kosten",
+     "value": -0.011229
+    },
+    {
+     "label": "Belastingen op het resultaat (67/77)",
+     "value": -0.008396
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Brutomarge (+)/(-)",
+     "lado": "revenue",
+     "importe": 0.866254,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
+   "officialTotalRevenue": 0.866254,
    "officialTotalExpenses": 1.475303,
-   "officialPAT": null
+   "officialPAT": -0.628623
   },
   "source": {
    "id": "liersekempenzonen-be-jaarrekening-2019-06-30-individual",
@@ -162,10 +172,23 @@
    "evidencia": ".md L251 y L254",
    "autor": "Claude",
    "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "866254",
+   "linea": 237,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "El esquema abreviado solo publica el margen bruto (L237); la extracción no lo trajo como ingreso en 2019; en 2018, 2020 y 2021 sí",
+   "evidencia": ".md L237",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
   }
  ],
  "seleccion": {
-  "filas": 10,
+  "filas": 11,
   "notasUsadas": [],
   "refM": null
  },
@@ -184,6 +207,21 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0
+  },
+  {
+   "label": "Brutomarge (+)/(-)",
+   "page": 7,
+   "native": 0.866254,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.866254,
+   "cat": "lump_football_operations",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.866254
   },
   {
    "label": "Bezoldigingen en rechtstreekse sociale voordelen",
@@ -289,7 +327,7 @@
   {
    "label": "Financiële kosten",
    "page": null,
-   "native": 0.011229,
+   "native": -0.011229,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -300,7 +338,7 @@
   {
    "label": "Belastingen op het resultaat (67/77)",
    "page": null,
-   "native": 0.008396,
+   "native": -0.008396,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -309,32 +347,36 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 0,
+  "revSum": 0.866254,
   "expSum": -1.475303,
-  "officialTotalRevenue": null,
+  "officialTotalRevenue": 0.866254,
   "officialTotalExpenses": 1.475303,
-  "officialPAT": null,
+  "officialPAT": -0.628623,
   "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
    "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.628623,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.866254
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
@@ -391,8 +433,8 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 6,
-  "lineasIngreso": 1,
+  "motivos": 1,
+  "lineasIngreso": 2,
   "lineasGasto": 6,
   "metaFilas": 3,
   "excluidas": 0

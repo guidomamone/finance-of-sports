@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.md",
- "generatedAt": "2026-10-20T20:44:28.147Z",
- "rubrosHuella": "d6c0b7f730f36567936a058eea5be6b3c59a2ea6",
+ "generatedAt": "2026-10-20T20:46:19.573Z",
+ "rubrosHuella": "1c9f210f0c0a7c564d21dda2aa492eeb90cac8bd",
  "rubros": [
   {
    "label": "Uitzonderlijke opbrengsten",
@@ -10,6 +10,15 @@
    "section": "estado",
    "choice": "other_income",
    "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "revenue",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
    "desdeCache": true
   },
   {
