@@ -79,7 +79,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2020, 2021, 2022): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
 ```
 
 ### Liga
@@ -126,7 +126,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2020, 2021, 2022): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
 ```
 
 ### Liga
@@ -171,7 +171,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2020, 2021, 2022): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022): Comercial / Sponsors, Estadio, Televisión, Venta de Jugadores
 ```
 
 ### Liga
@@ -341,6 +341,61 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2020 cacheada).
+```
+
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Austria/Rapid Wien/geschaeftsbericht-2018-19.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ticketing | pág. 56, precedente |
+| 2 | Sponsoring | pág. 56, precedente |
+| 3 | Hospitality (VIP) | pág. 56, precedente |
+| 4 | Merchandising | pág. 56, precedente |
+| 5 | Rechteverwertung | pág. 56, precedente |
+| 6 | Fanreisen | pág. 56, precedente |
+| 7 | sonstige Erlöse | pág. 56, precedente |
+| 8 | Transfererlöse | pág. 56, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Umsetzung Sponsorleistungen | pág. 56, precedente |
+| 2 | Aufwand Heimspiele | pág. 56, precedente |
+| 3 | Aufwand Hospitality VIP | pág. 56, precedente |
+| 4 | Wareneinsatz Merchandising | pág. 56, precedente |
+| 5 | eigene Medien und Produktionskosten | pág. 56, Jev 0.93 |
+| 6 | Fanreisen | pág. 56, precedente |
+| 7 | Personalaufwand Sport | pág. 56, precedente |
+| 8 | sonstiger Personalaufwand | pág. 56, precedente |
+| 9 | Abgaben, Gebühren, Strafen | pág. 56, precedente |
+| 10 | Spiel- und Trainingsbetrieb | pág. 56, precedente |
+| 11 | Management-Gebühren und Vermittlungsprovisionen | pág. 56, precedente |
+| 12 | Stadion-, Miet- und Instandhaltungsaufwand | pág. 56, precedente |
+| 13 | Klubservice, Events, PR und Marketing | pág. 56, precedente |
+| 14 | Verwaltung-, Versicherunungs- und sonst. Aufwand | pág. 56, precedente |
+| 15 | Abschreibungen für Abnutzung | pág. 56, precedente |
+| 16 | Transferauwendungen | pág. 56, precedente |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2019-06-30. Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2018-19; el registro no trae cierre
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): perimetro = consolidado. Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): at-bundesliga, verificado contra roster cacheado de "2018–19 Austrian Football Bundesliga" (tools/club-league-reference/at.json), coincidencia exacta "Rapid Wien".
 ```
 
 ## 2018
@@ -700,4 +755,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### rapidwien-at-geschaeftsbericht-2018-19
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

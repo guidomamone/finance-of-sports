@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.pdf",
  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.md",
- "generado": "2026-10-20T22:04:23.102Z",
+ "generado": "2026-10-20T22:10:49.230Z",
  "scriptHuella": "bb1724ebf1b3",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "rapidwien-at",
  "year": 2019,
  "escala": {
@@ -34,9 +34,7 @@
    "fecha": "2026-10-09"
   }
  ],
- "cola": [
-  "41dd510"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -60,6 +58,11 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 41.706847; el sitio tiene 41.71129"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2019: 50.745306 en este documento y 50.745306 en geschaeftsbericht-2019-20.pdf (columna del año anterior)"
@@ -68,11 +71,6 @@
    "nombre": "documento del año 2018",
    "ok": true,
    "detalle": "ingresos de 2018: 41.71129 en geschaeftsbericht-2017-18.pdf y 41.706847 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   }
  ],
  "notas": [

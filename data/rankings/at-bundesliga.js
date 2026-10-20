@@ -21,4 +21,13 @@ window.RANKINGS["at-bundesliga"] = {
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
+  2019: {
+    leagueSize: 12,
+    wiki: {"t":"2018–19 Austrian Football Bundesliga","lang":"en","at":"2026-09-30","n":12},
+    clubs: [
+      { id:"rapidwien-at", revenue:57.748, reportType:"official_balance_sheet",
+        sourceId:"rapidwien-at-geschaeftsbericht-2018-19",
+        mix:[["Comercial / Sponsors",14.723],["Estadio",17.062],["Televisión",16.246],["Venta de Jugadores",5.153],["Otros ingresos",4.565]] },
+    ],
+  },
 };
