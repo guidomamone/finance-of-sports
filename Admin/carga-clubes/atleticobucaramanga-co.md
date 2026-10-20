@@ -41,6 +41,141 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2019: {"reportType":"official_balance_sheet","currency":"COP","fxRef":"COP@2019-12-31","sourceId":"atleticobucaramanga-co-estados-financieros-2019"}
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Atletico Bucaramanga/estados-financieros-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Taquilla venta de boletería | pág. 32, Jev 1 |
+| 2 | Publicidad y propaganda | pág. 32, Jev 1 |
+| 3 | Derechos de televisión | pág. 32, Jev 1 |
+| 4 | Patrocinios | pág. 32, Jev 1 |
+| 5 | Auxilio hotelero Dimayor | pág. 32, Jev 0.95 |
+| 6 | Auxilio arbitraje Dimayor | pág. 32, Jev 0.9 |
+| 7 | Auxilio Logístico Dimayor | pág. 32, Jev 0.99 |
+| 8 | Auxilio Federacion Colombiana de Futbol | pág. 32, Claude 0.8 |
+| 9 | Auxilio patrocinador bet play Liga femenina 2020 | pág. 32, precedente |
+| 10 | Auxilio Pruebas Covid-19 Dimayor | pág. 32, precedente |
+| 11 | Auxilio Conmebol evolución | pág. 32, precedente |
+| 12 | Otros ingresos | pág. 9, Claude 0.85 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costos de ventas mercancías | pág. 9, Jev 0.97 |
+| 2 | Sueldos de administracion | pág. 33, Jev 1 |
+| 3 | Auxilio de transporte | pág. 33, Jev 0.97 |
+| 4 | Otros Auxilios | pág. 33, Jev 0.94 |
+| 5 | Cesantias | pág. 33, Jev 0.97 |
+| 6 | Intereses de cesantias | pág. 33, Jev 0.93 |
+| 7 | Prima de servicios | pág. 33, Jev 0.97 |
+| 8 | Vacaciones | pág. 33, Jev 1 |
+| 9 | Bonificaciones | pág. 33, precedente |
+| 10 | Indemnizaciones laborales | pág. 33, Jev 0.92 |
+| 11 | Aportes a administradores de riesgos profesionales | pág. 33, precedente |
+| 12 | Aportes a entidades promotoras de salud e.p.s | pág. 33, precedente |
+| 13 | Aportes a fondos de pensiones y o cesantias | pág. 33, precedente |
+| 14 | Aportes cajas de compensación familiar | pág. 33, precedente |
+| 15 | Gastos medicos | pág. 33, precedente |
+| 16 | Honorarios | pág. 33, Jev 1 |
+| 17 | Industria y comercio | pág. 34, Claude 0.95 |
+| 18 | De timbres | pág. 34, Jev 1 |
+| 19 | A la propiedad raíz | pág. 34, Jev 0.99 |
+| 20 | Derechos sobre instrumentos publicos | pág. 34, Claude 0.85 |
+| 21 | De vehículos | pág. 34, Jev 0.95 |
+| 22 | Contribuciones y afiliaciones | pág. 33, Jev 1 |
+| 23 | Procesamiento electronico por servicios | pág. 34, Jev 1 |
+| 24 | Acueducto y alcantarillado. | pág. 34, Jev 1 |
+| 25 | Energía electrica | pág. 34, Jev 1 |
+| 26 | Telefono Fijo e Internet | pág. 34, Jev 1 |
+| 27 | Transporte, Fletes y Acarreos | pág. 34, Jev 0.98 |
+| 28 | Servicio Mensajeria/ domicilios | pág. 34, Claude 0.85 |
+| 29 | Logistica | pág. 34, Jev 0.99 |
+| 30 | Servicio de administracion edificio | pág. 34, Jev 0.99 |
+| 31 | Gastos legales | pág. 33, Jev 1 |
+| 32 | Mantenimiento y reparaciones | pág. 33, Jev 0.99 |
+| 33 | Construcciones y edificaciones | pág. 34, Jev 0.95 |
+| 34 | Equipo de oficina | pág. 34, Claude 0.85 |
+| 35 | Equipo de computación y comunicación | pág. 34, Claude 0.85 |
+| 36 | Gastos de viaje | pág. 33, Jev 1 |
+| 37 | Diversos | pág. 33, precedente |
+| 38 | Salario integral | pág. 36, Jev 1 |
+| 39 | Sueldos Ordinarios | pág. 36, Claude 0.8 |
+| 40 | Auxilio de transporte | pág. 36, Jev 0.97 |
+| 41 | Auxilios de vivienda y sostenimiento | pág. 36, precedente |
+| 42 | Viaticos | pág. 36, precedente |
+| 43 | Incapacidades | pág. 36, Jev 0.98 |
+| 44 | Cesantias | pág. 36, Jev 0.97 |
+| 45 | Intereses de cesantias | pág. 36, Jev 0.93 |
+| 46 | Prima de servicios | pág. 36, Jev 0.97 |
+| 47 | Vacaciones | pág. 36, Jev 1 |
+| 48 | Otros auxilios | pág. 36, Jev 0.94 |
+| 49 | Dotacion y suministro a trabajadores | pág. 36, Jev 0.92 |
+| 50 | Indemnizaciones laborales | pág. 36, Jev 0.92 |
+| 51 | Aportes a administradoras de riesgos profesionales | pág. 36, Claude 0.8 |
+| 52 | Aportes a entidades promotoras de salud eps | pág. 36, Claude 0.8 |
+| 53 | Aportes a fondo de pensiones y cesantias | pág. 36, Jev 0.98 |
+| 54 | Aportes cajas de compensacion | pág. 36, Claude 0.8 |
+| 55 | Aportes icbf | pág. 36, Jev 1 |
+| 56 | Aportes sena | pág. 36, Jev 0.98 |
+| 57 | Medicamentos y botiquin | pág. 36, precedente |
+| 58 | Serv. laboratorio/ examenes | pág. 36, precedente |
+| 59 | Servicios medicos | pág. 36, precedente |
+| 60 | Premios | pág. 36, Jev 0.92 |
+| 61 | Honorarios | pág. 35, Jev 1 |
+| 62 | De espectaculos publicos | pág. 36, Jev 0.97 |
+| 63 | Impoconsumo 8% | pág. 36, Claude 0.8 |
+| 64 | Arrendamientos | pág. 35, precedente |
+| 65 | Contribuciones y afiliaciones | pág. 35, Jev 1 |
+| 66 | Seguros | pág. 35, Claude 0.85 |
+| 67 | Aseo y vigilancia | pág. 37, Jev 0.96 |
+| 68 | Servicios Temporales | pág. 37, precedente |
+| 69 | Transporte Fletes y Acarreos | pág. 37, Jev 0.97 |
+| 70 | Arbitraje | pág. 37, Jev 1 |
+| 71 | Logistica | pág. 37, Jev 0.99 |
+| 72 | Boleteria | pág. 37, Claude 0.8 |
+| 73 | Bomberos | pág. 37, precedente |
+| 74 | Cruz roja | pág. 37, precedente |
+| 75 | Gastos legales | pág. 35, Jev 1 |
+| 76 | Mantenimiento y reparación | pág. 35, precedente |
+| 77 | Alojamiento y manuntencion | pág. 37, Jev 0.99 |
+| 78 | Pasajes Aereos | pág. 37, Jev 0.95 |
+| 79 | Pasajes terrestres | pág. 37, Jev 0.95 |
+| 80 | Peajes | pág. 37, precedente |
+| 81 | Otros gastos de viaje | pág. 37, Jev 0.91 |
+| 82 | Depreciaciones | pág. 35, Jev 1 |
+| 83 | Comisiones | pág. 37, precedente |
+| 84 | Utiles de Papeleria | pág. 37, Jev 0.93 |
+| 85 | Elementos de aseo y cafeteria | pág. 37, Jev 0.99 |
+| 86 | Combustibles y lubricantes | pág. 37, Jev 0.98 |
+| 87 | Casino y Restaurantes | pág. 37, precedente |
+| 88 | Gastos de representación | pág. 37, Jev 0.98 |
+| 89 | Prestamo de jugadores | pág. 37, precedente |
+| 90 | Otros | pág. 37, Jev 1 |
+| 91 | Impuestos asumidos | pág. 38, precedente |
+| 92 | Multas sanciones y litigios | pág. 38, Jev 0.93 |
+| 93 | Otros gastos | pág. 38, Jev 1 |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2020-12-31. Revisión del alta (Claude, 2026-10-09): el registro no trae cierre; el ejercicio del documento termina el 31 de diciembre de 2020 (todas las sociedades colombianas del club cierran en diciembre)
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): co-primeraA, verificado contra roster cacheado de "2020 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia exacta "Atlético Bucaramanga".
+```
+
 ## 2019
 
 ### Ingresos
@@ -183,4 +318,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### atleticobucaramanga-co-estados-financieros-2020
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
