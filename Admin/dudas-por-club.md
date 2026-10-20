@@ -59,25 +59,8 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   en la misma fila, así que si la respuesta fuera "incluye recaudación", el número visible no se
   movería — solo cambiaría qué renglón del acordeón la muestra.
 
-## Rosario Central
-
-- **Dos cotizaciones de USD en el mismo balance (Ejercicio 2022/2023)**: el Anexo IV (moneda
-  extranjera) declara $255,00 para USD del lado del Activo (Caja y bancos) y $268,00 del lado del
-  Pasivo (Acreedores varios fútbol) — mismo ejercicio, mismo cierre, dos cotizaciones distintas
-  (probablemente comprador/vendedor). Se usó $255,00 (coherente con `cash`) como fx único del sitio,
-  pero es una aproximación. Mismo patrón se repitió en Estudiantes LP 2022 ($125,03/$125,23) y San
-  Lorenzo 2013 ($5,355/$5,388) — parece ser una práctica contable habitual (no un error), pero vale
-  confirmar con algún club si hay un criterio único preferible para reportar (ej. el promedio, o
-  siempre "comprador").
-
 ## Estudiantes de La Plata
 
-- **Atribución de gestión, Ejercicio 2024 (cierre 30/6/2024)**: el balance está firmado por Juan
-  Sebastián Verón como Presidente (proclamado el 6/4/2024, ~3 meses antes del cierre), pero Martín
-  Gorostegui presidió la gran mayoría de los meses de ese mismo ejercicio (jul-2023 a abr-2024). Se
-  cargó `gestionId:'veron'` (criterio de "quien firma/está a cargo al cierre", igual que
-  Berlanga/Belloso), pero vale confirmar con Guido si prefiere el criterio de "quien presidió más
-  meses" para casos como este, que daría Gorostegui en cambio.
 - **to-do 43 (unificar "derechos de formación/mecanismo de solidaridad" a `player_sales`), sesión
   2026-09-26: no se encontró una línea equivalente para recategorizar.** El to-do (originado en
   `auditorias/2026-09-22-catchall-no-futbol.md` sección 4-i) lista a Estudiantes entre los 7 clubes
@@ -118,13 +101,6 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
 
 ## San Lorenzo de Almagro
 
-- **Atribución de gestión, Ejercicio 2023/2024 (cierre 30/6/2024)**: el ejercicio quedó dividido
-  casi exactamente a la mitad entre 2 presidentes — Marcelo Tinelli (jul-2023 a 26/12/2023) y
-  Marcelo Moretti (26/12/2023 a jun-2024, electo 17/12/2023). Se cargó `gestionId:'moretti'`
-  (criterio de "quien está a cargo al cierre", igual que Berlanga/Belloso/Verón), pero por lo pareja
-  que fue la división de meses (~6 vs. ~6) es el caso más ambiguo de todos los que se cargaron con
-  este criterio — vale confirmar con Guido si prefiere el criterio de "quien presidió más meses"
-  para casos tan parejos como este (mismo tipo de duda que Estudiantes LP 2024, Gorostegui/Verón).
 - **Presupuesto en caja, separado en Ordinario/Extraordinario, en vez de un presupuesto económico
   devengado**: a diferencia de los balances auditados del propio club (que sí devengan, Estado de
   Recursos y Gastos normal), el Presupuesto 2023-2024 (`Clubes/Argentina/San Lorenzo/
@@ -216,9 +192,6 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
 - **"Gastos bancarios y financieros" (889,62M)**: categorizado como `admin_general_expense`
   (comisiones/gastos operativos, distinto del resultado financiero ya separado en `netInterest`),
   sin certeza total de que no incluya algo de naturaleza financiera pura.
-- **"Servicios de terceros" (1.438,05M)**: ambiguo entre honorarios profesionales y servicios
-  operativos tercerizados, fue a `other_expenses`.
-
 ## Racing Club (hallazgo de esta sesión, no una pregunta para el club)
 
 - **Categorización interna inconsistente, Ejercicios 2009/2010/2012/2014**: 5 líneas de revenue
@@ -229,23 +202,6 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   auditoría en el navegador (`REVENUE_CATEGORIES`/`EXPENSE_CATEGORIES` vs. cada línea cargada) al
   verificar los clubes nuevos de esta sesión — no es de esta sesión, viene de una carga anterior de
   Racing. Queda como to-do de limpieza, no es urgente (no afecta ningún número mostrado).
-
-## Club América (Ollamani, S.A.B.)
-
-- **Dos tipos de cambio de cierre distintos para la MISMA fecha, dentro del MISMO reporte**: el
-  Reporte Financiero BMV 2025 (`Clubes/México/Club América/reporte-financiero-ollamani-2025-auditado.pdf`)
-  declara $18.0012 MXN/USD al 31/12/2025 en la sección MD&A (pág. 7, comentario de "Gastos
-  financieros, neto") pero $17.9528 MXN/USD para la MISMA fecha en la Nota a los estados financieros
-  auditados (pág. 104, footnote de la misma partida). Se usó $17.9528 (la cifra de la Nota formal)
-  para `data/mx/clubamerica-data.js`, pero no se encontró una explicación de por qué el mismo documento
-  trae dos cifras — a quién preguntarle: Ollamani Investor Relations (contacto en
-  ollamani.com.mx/reportes-3/, o el propio `ir@ollamani.com.mx` si existe, no confirmado).
-- **¿Vale la pena cargar el Ejercicio 2024 (11 meses) como 2do punto de la serie?**: PDF ya
-  descargado (`reporte-financiero-ollamani-2024-auditado.pdf`), cubre el período inicial de la
-  compañía (1/2/2024 a 31/12/2024, no un año calendario completo por el spin-off de fin de enero
-  2024) — no es una duda para el club, es una decisión de producto para Guido (¿mostrar un ejercicio
-  de 11 meses al lado de uno de 12 sin aclarar la diferencia de longitud confunde más de lo que
-  aporta?).
 
 ## Deportes Tolima (hallazgo de esta sesión — NO se cargó al sitio por esto)
 
@@ -308,18 +264,6 @@ comentario de `gestionesByClub.velez`. No es algo para preguntarle al club.)*
   25 no reconcilia contra su propio total, y cuál es el valor correcto del "Impuesto de Renta y
   Complementario" (0 o 1.761.301)? Igual que Deportes Tolima arriba, se necesitaría el Estado de
   Resultado Integral primario para confirmar.
-
-## Boyacá Chicó (hallazgo de esta sesión, no bloqueó la carga)
-
-- **Ejercicio 2024, Nota 16 "Ingresos Operacionales": una línea "Menos: Devoluciones" de
-  -$1.726.052.997,15, el 21% del ingreso BRUTO del club**, sin que el documento aclare a qué
-  concepto de ingreso corresponde (no está indentada bajo ninguna línea específica, aparece suelta
-  al final de la tabla). Se cargó como línea propia en `other_income` (negativa,
-  `data/co/boyacachico-co-data.js`) en vez de forzarla contra un rubro puntual (ej. Derechos de TV, la
-  línea más grande) sin base real para esa atribución. **Pregunta para el club/SIIS**: ¿a qué
-  ingreso corresponde esta devolución/reversión? El PAT del ejercicio reconcilia igual (confirmado
-  doble, ver comentario de cabecera del archivo), así que no bloqueó la carga — pero afecta a qué
-  categoría se le atribuye ese 21% del ingreso bruto en Formato Simplificado.
 
 ## Mirassol Futebol Clube (hallazgo de esta sesión, no bloqueó la carga del resultado, sí la del patrimonio)
 
@@ -460,19 +404,6 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   este patrón (operaba como "De Klokke" hasta 2011) — no está confirmado si a Cercle Brugge le pasa
   lo mismo o si simplemente no hay registro más antiguo en la Centrale des bilans.
 
-## Guangzhou Evergrande (sourcing de China, sesión 2026-09-17, pregunta de criterio para Guido, no para el club)
-
-- **¿Cargar al sitio un club que ya no juega en la CSL actual?**: es el único club chino que alguna
-  vez cotizó con disclosure completo (NEEQ:834338, 2015-2021) — 5 ejercicios anuales reales
-  (2015-2019) + semestral 2020 ya descargados en `Clubes/China/Guangzhou Evergrande/`, con cifras
-  reales de la crisis (FY2019: ingresos RMB 783M, pérdida neta -RMB 1.943M, patrimonio neto negativo
-  ~RMB 4.150M). El club descendió y prácticamente desapareció tras el colapso del grupo Evergrande.
-  Tiene valor documental único (es la única serie financiera auditada real de un club chino, y
-  documenta con números una de las quiebras más grandes del fútbol mundial), pero no es un club
-  vigente de la temporada corriente — no está claro si el criterio del proyecto es limitarse a
-  clubes activos o si vale la pena cargarlo igual como caso histórico. Decisión de Guido, no del
-  club.
-
 ## Henan (sourcing de China, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
 
 - **¿Vale la pena revisar los EEFF de Jianye Real Estate (HKEX:0832) de 2021-2023?**: durante ese
@@ -531,13 +462,6 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
   francés), pero existe además una SIREN francesa parecida (515109692, "AS Monaco Football Club
   SA") sin confirmar si es la misma entidad con doble registro o una filial menor.
 
-## Olympique Lyonnais (sourcing de Francia, sesión 2026-09-17, no bloqueó la descarga pero queda sin cerrar)
-
-- **¿El DEU de Eagle Football Group desglosa el segmento "Olympique Lyonnais" puro?**: el documento
-  consolida el fútbol de Lyon con otros clubes del grupo (Botafogo, RWD Molenbeek, y Crystal Palace
-  hasta 2025) — no se confirmó si trae un desglose por segmento que aísle a Lyon, o si hace falta
-  cruzarlo con el bilan individual de la SASP vía el agregado DNCG para tener el perímetro correcto.
-
 ## Grecia — huecos genuinos sin explicación encontrada (sourcing, sesión 2026-09-17, no son preguntas para el club, son pendientes técnicos)
 
 - **Aris**: falta el ejercicio FY2019/20 pese a continuidad en el resto de los años — no se encontró
@@ -545,15 +469,6 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
 - **Atromitos**: falta el ejercicio FY2017/18, mismo patrón.
 - **Panetolikos**: faltan FY2018/19 y FY2020/21 — el único club griego con dos huecos.
 - **PAOK**: falta el ejercicio FY2017/18.
-
-## AEK Athens (sourcing de Grecia, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
-
-- **¿Cuál de las dos versiones del ejercicio 2021/22 usar?**: hay dos archivos depositados,
-  `Notes_IFRS_2022` y `FS_orthi_epanalipsi_2022` ("orthi epanalipsi" = repetición/corrección), sin
-  que el nombre del archivo aclare cuál es la versión final a usar.
-- **2 archivos sin fecha de ejercicio confirmada**: `AEK_oikonomika_stoixeia.pdf` y
-  `AEK_oikonomikes_katastaseis.pdf` (los IDs de ΓΕΜΗ más antiguos de la ficha del club) — falta
-  abrirlos y confirmar a qué ejercicio corresponden.
 
 ## Panserraikos (sourcing de Grecia, sesión 2026-09-17, no bloqueó la descarga pero queda sin confirmar)
 
@@ -574,28 +489,6 @@ describía como "club e.V. sin escindir" estaba desactualizada/imprecisa. Ver
 - **El link oficial "Informazioni finanziarie" del sitio del club apunta a un Google Drive borrado o
   roto (404)** — se le podría pedir directo al club que lo arregle, ya que aparentemente sí tenían
   intención de publicar.
-
-## Parma (sourcing de Italia, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
-
-- **¿Cuánto dura el ejercicio de transición jun→dic 2018?**: no se confirmó si cubre 12 meses o si
-  hay un puente de 18 meses no localizado en ningún otro documento.
-
-## Genoa (sourcing de Italia, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
-
-- **¿Cuánto dura el ejercicio de transición dic→jun 30.06.2024?**: no se confirmó si cubre 6 o 12
-  meses.
-
-## Inter (sourcing de Italia, sesión 2026-09-17, pregunta de criterio, no para el club)
-
-- **¿Cargar el perímetro "Inter Media and Communication S.p.A."?**: hay una serie 2017-2025 (sin
-  OCR todavía) de esta entidad, que no es el club entero sino una unidad de negocio — decisión de
-  Guido si vale la pena cargarla como dato complementario o descartarla por no representar al club.
-
-## Vålerenga (sourcing de Noruega, sesión 2026-09-17, no bloqueó la descarga pero queda sin cerrar — la más importante de las 5)
-
-- **¿Cuál de las 3 entidades es "el club" a cargar?**: hay 3 entidades activas con depósitos
-  (Elite FLI con 18 ejercicios, una AS comercial con 17, y una FLI paraguas con 11) — no está
-  confirmado cuál concentra el fútbol profesional real, o si hace falta consolidar más de una.
 
 ## Bodø/Glimt (sourcing de Noruega, sesión 2026-09-17, no bloqueó nada, solo sin cerrar)
 
@@ -779,32 +672,6 @@ no existe. Ver `Admin/sourcing/Turquía/Trabzonspor.md`.)*
   chequearlo en la nota de contexto operacional antes de cargar cualquier cifra — mismo criterio de
   perímetro que ya se aplicó a Ollamani/Club América y a MSG Sports.
 
-
-
-## Alquileres y arrendamientos sin especificar (pregunta común a 6 clubes)
-
-Salió del relevamiento del 2026-09-22 (`auditorias/2026-09-22-catchall-no-futbol.md`) al crear la
-categoría `stadium_other`. Estos 6 clubes tienen una línea de ingreso por alquiler o arrendamiento
-cuyo rótulo NO dice de qué propiedad se trata, así que no se puede saber si es el estadio (y va a
-la fila "Estadio") o la sede/otra propiedad (y se queda en "Otros ingresos"). Se dejaron todas en
-`other_income`, que es lo conservador, pero varias pesan de verdad:
-
-- **Argentinos Juniors — "Diversos (alquileres, concesiones, etc.)"**: hasta **14,2% de sus
-  ingresos** (Ejercicio 2017), la línea no futbolística más grande de todo el relevamiento después
-  del colegio de Vélez. El balance no la abre. ¿Qué se alquila y cuánto es cada cosa?
-- **Unión de Santa Fe — "Recursos por alquiler de instalaciones"**: crece de 12,1 M a 103,4 M ARS
-  entre ejercicios. ¿Qué instalaciones — el 15 de Abril, el estadio cubierto, La Tatenguita?
-- **Racing — "Ingresos Alquiler"** (9 ejercicios): ¿el Cilindro, o propiedades de la sede?
-- **Rosario Central — "Alquileres" y "Concesiones"**: ¿el Gigante de Arroyito o el complejo?
-- **Envigado — "Arrendamientos"**: ¿el Polideportivo Sur, que además no es propio?
-- **Botafogo — "Locações"** (17,0 M BRL): ¿el Nilton Santos, o inmuebles del club?
-
-Por qué vale preguntarlo y no deducirlo: el estadio es la unidad de negocio que más le interesa a
-un hincha o a un periodista, y meter ahí un alquiler que en realidad es de un local de la sede
-sería inventar. La pregunta concreta para cada club es la misma: *"la línea X de su Estado de
-Recursos y Gastos, ¿corresponde al estadio o a otras propiedades del club? Si es mixta, ¿cuánto es
-cada parte?"*.
-
 ## Onboarding de 20 clubes nuevos (Colombia, España, Alemania, Inglaterra — sesión 2026-09-22)
 
 Dudas que quedaron de cargar los 20 clubes de esta sesión (Colombia: América de Cali, Atlético
@@ -822,38 +689,18 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   SIIS), no una cifra impresa directamente — ¿por qué el documento no imprime el desglose completo
   corriente/diferido como una cifra final única, a diferencia de los demás clubes colombianos de
   esta tanda?
-- **Independiente Santa Fe (`santafe-co`)**: la Nota 21 (Ingresos) suma $2.294.550.661 MÁS que el
-  total impreso por el propio documento, aunque cada línea individual reconcilia contra su propia
-  variación 2024→2025 — es un error de cuadre de la FUENTE (se cargó el total impreso, con una línea
-  de ajuste explícita visible). Además, el nombre del Representante Legal salió parcialmente
-  ilegible en el OCR de la certificación ("LUIS ?DUARDO MENDEZ B.") — usar `gestionId:'actual'`
-  hasta confirmar.
 - **Getafe CF (`getafe-es`)**: "Ingresos LNFP" (330K€ 2024, 361K€ 2025) — ¿es distribución de TV,
   solidaridad, u otro concepto de la liga? Se cargó como `other_income` por descarte.
-- **Girona FC (`girona-es`)**: "Ingresos accesorios y otros de gestión corriente" es una línea
-  enorme sin desglose (43% del revenue en 2019/20, 22% en 2024/25) — ¿derechos de TV agrupados?
-  ¿ingresos comerciales del City Football Group? Categorizado como `other_income` por descarte.
 - **1. FC Köln (`koln-de`)**: "Abschreibungen auf Finanzanlagen und auf Wertpapiere des
   Umlaufvermögens" (TEUR 3.000, 2024/25 — deterioro de la participación en SK Gaming Beteiligungs
   GmbH) se sumó a `netInterest` por su posición en el esquema §275 Abs. 2 HGB (dentro del bloque de
   Finanzergebnis), no a `expenseLines` — ¿Guido prefiere otro tratamiento?
-- **FC Augsburg (`augsburg-de`)**: "Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung"
-  (reversión anual de un pasivo de primera consolidación, ítem puramente contable) se cargó como
-  `other_income` a falta de un campo dedicado — **¿el sitio debería tener un meta field propio para
-  ítems no-operativos de consolidación en los Konzernabschluss alemanes?** Probablemente se repita en
-  otros clubes con subsidiarias no 100%-propias.
 - **Eintracht Frankfurt (`eintrachtfrankfurt-de`)**: (a) "Frauen und Jugendfußball" combinado en una
   sola línea (7,6 M EUR) sin poder separar `womens_football` de `youth_football` — cargado como
   `other_income`; (b) "Transfer" (comisiones de agentes + fees, mezcla costos de compra Y venta de
   jugadores, 26-39 M EUR) no tiene categoría propia distinta de `player_amortisation` (que es
   específicamente para amortizar el plantel propio) — cargado como `other_expenses`. **¿Vale la pena
   una categoría `player_transaction_costs` separada?**
-- **VfB Stuttgart (`stuttgart-de`)**: "Handel und Sonstiges" (el rubro de revenue que más creció:
-  57,5M→81,1M→109,5M EUR) mezcla merchandising con venta NETA de jugadores sin desglose exacto (el
-  Anhang confirma que el ingreso de transferencias está "unter den Umsatzerlöse ausgewiesen" pero sin
-  decir en qué renglón) — cargado como `lump_football_operations` en vez de `player_sales`,
-  consecuencia: "Venta de Jugadores" muestra $0 en Formato Simplificado pese a ventas reales (Endo,
-  Mavropanos, Sosa 2023). **Pedirle a VfB Stuttgart el desglose exacto.**
 - **Arsenal (`arsenal-gb`)**: (a) "Share of joint venture operating loss" (participación en el
   resultado de Arsenal Broadband Limited, −£1,9-1,7M) no encaja en ningún campo de `fiscalYearMeta` —
   se cargó como `revenueLine` `other_income` negativa a falta de un campo para "resultado de
@@ -863,35 +710,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   Women Ltd y Goodison Park Stadium Ltd A LA MATRIZ Roundhouse — deconsolidación intragrupo, no venta
   de jugadores ni de activos operativos) se cargó en `assetSales` a falta de una categoría para
   "ganancia por reestructuración corporativa/deconsolidación".
-- **Manchester City (`mancity-gb`)**: (a) employee costs sin desglose por área, todo a `wages_squad`;
-  (b) una celda ambigua de "profit/loss on disposal PP&E" 2023-24 se reconstruyó cruzando contra
-  2024-25 (tie-out cierra, pero vale revisar el PDF original si hay dudas); (c) `netInterest` tomado
-  del Statement of P&L primario y no de las Notas 9/10 (hay una discrepancia real entre ambos, por
-  FX/derivados, sin investigar la razón contable exacta); (d) `grossDebt:0` es un cero REAL — la
-  deuda del term loan de City Football Group no está en el perímetro de esta sociedad (Manchester
-  City Football Club Limited, cuentas individuales, no las consolidadas del grupo).
-- **Tottenham Hotspur (`tottenham-gb`)**: (a) "Commercial" (Nota 2) mezcla Sponsorship/Merchandising/
-  ingresos no futbolísticos del estadio (NFL, conciertos, F1 Drive, stadium tours) sin reconciliar
-  exacto contra el total de la nota — no se promovió nada a `stadium_other`, el rótulo real es
-  "Commercial"; (b) "Amortisation, impairments and other net football trading income and
-  expenditure" se cargó como una sola línea a `player_amortisation` porque el desglose de la Nota 4
-  no reconciliaba exacto contra el neto de la Nota 3 (diferencia de 2.526, sin explicación en el
-  documento transcripto); (c) `gestionId:'levy'` (Daniel Levy, Executive Chairman hasta el 4/9/2025)
-  en vez de Joe Lewis/ENIC (controlante último), que ningún documento nombra explícitamente.
-- **Newell's Old Boys (`newells-ar`)**, Ejercicio 2018-19: (a) "Complejo Ricardone"
-  ($2,65M, `youth_other_sports_expense`) — la Memoria solo confirma la escrituración del predio ese
-  año, no qué actividad aloja; (b) "Concesiones" ($1,59M) y "Derechos de fútbol" ($2,62M), dentro de
-  Fútbol Profesional, son demasiado genéricos para una categoría propia — cargados en `other_income`.
-  Los 2 montos son chicos frente al total ($775M de ingresos). No se encontró cantidad de socios en
-  ninguna de las 98 páginas.
-- **Banfield (`banfield-ar`)**, Ejercicio 2019-20: (a) "Entradas Grales., Plateas, Palcos y Abonos"
-  ($22,28M) mezcla entrada por partido con abono/season ticket en una sola línea, no separable con
-  este documento — cargada entera a `matchday_competition`; (b) "Formación de Jugadores" ($50,31M) y
-  "Fútbol Amateur - Derechos" ($4,55M) se cargaron a `player_sales` con confianza razonable pero no
-  total — **vale preguntarle al club si son solidarity payments FIFA/derechos de formación puros o
-  otra cosa**. No se encontró cantidad de socios en el documento. Pendiente además (ya anotado en
-  `Admin/sourcing/Argentina/Banfield.md`): el 105° Ejercicio (2024-25) solo existe en video de YouTube, y la
-  numeración de ejercicios entre el 116° y el 105° es inconsistente entre los 2 documentos del club.
 - **Gimnasia y Esgrima LP (`gimnasiaesgrima-ar`)**, Ejercicios 2023-24 y 2024-25: "Incremento Valor
   Jugadores FP" ($2.900,94M en 2024; $2.051,11M en 2025), fila nueva desde 2024 sin sub-ítems ni nota
   que la explique, distinta de "Ventas Jugadores" (que existe aparte). Por el nombre podría ser una
@@ -915,28 +733,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   `player_sales` en vez de `other_income`) **o si es otra cosa** (ganancia por la renegociación de
   derechos de participación con el inversor LFU, revaluación de instrumentos financieros, etc.). Se
   cargó conservador a `other_income` en los 3 años (2023 no tiene esta línea).
-- **"Receitas de transmissão e de imagem e desempenho"** (línea combinada, presente en los 3 años,
-  entre 22% y 32% del revenue): título mezcla TV/derechos de transmisión ("transmissão", confirmado
-  por la Nota de receitas a realizar que detalla un contrato de TV con la Liga Forte Futebol) con
-  "imagem e desempenho" (¿derechos de imagen? ¿premios por desempeño deportivo?), sin desglose en
-  ningún balance. Se cargó entera a `broadcasting` por ser el término dominante del título. **Vale
-  preguntarle al club qué proporción es TV pura vs. imagen/desempeño** — si "desempenho" resultara ser
-  premios por rendimiento deportivo, una porción debería ir a `competition_bonus` en cambio.
-- **"Receitas com atividades sociais da entidade"** (línea chica, 0,4%-2,9% del revenue según el año):
-  no queda claro si es cuota de socios (`member_dues`) o ingreso de eventos/actividades sociales
-  genéricas del club (que es multideportivo, no solo fútbol). Se cargó a `other_income` por default
-  conservador. Impacto bajo en los totales, no urgente.
-- **Depreciações e amortizações, 2024/2025**: en 2023 se pudo desagregar en `player_amortisation`
-  (amortización de atletas) vs. `depreciation` (inmuebles) cruzando la Nota 20 con la Demonstração do
-  Fluxo de Caixa (cierra exacto). En 2024 ese mismo cruce NO cierra (el flujo de caja trae R$9,26M en
-  3 ítems de D&A, pero la Nota 21 solo imprime -R$5.431.895 para la línea combinada) — hay de por
-  medio un ajuste "Ajuste intangível adequação NBC ITG 2003" (-R$9.720.361, contra patrimonio
-  directo, no por resultado) que probablemente rompe la correspondencia. En 2025 el balance ni
-  siquiera trae una línea de D&A separada (todo cae dentro de "Despesas administrativas", sin
-  desglose). Se dejó la línea combinada de 2024 entera en `depreciation` sin forzar el split. **No es
-  necesariamente una pregunta para el club** (es más bien releer los balances 2024/2025 con más
-  detalle, o cruzar contra las notas de Imobilizado/Intangível de cada año), pero queda como pendiente
-  técnico si se quiere mayor precisión en el bucket "Compra de jugadores" de Formato Simplificado.
 - **Resultado operacional antes do resultado financeiro, balance 2025, pág. 10 del PDF**: imprime
   -R$58.842.916, que NO reconcilia ni con la Nota 23 ("Divulgação adicional do resultado", que suma
   por segmento a -R$53.842.916) ni con el Superávit/Déficit final (-R$60.354.558, que solo cierra si
@@ -983,15 +779,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   inferencia por patrón — no está escrito en el balance). Si se necesita el dato exacto, habría que
   buscarlo en el próprio instrumento de emissão de debêntures (escritura), no en las demonstrações
   financeiras.
-- **"Custo com atletas negociados"** (Nota "Custo com atividades esportivas", crece de -1,567 M en
-  2023 a -66,898 M en 2024 y baja a -30,979 M en 2025): el documento no explica qué compone esta línea
-  más allá del nombre (¿comisiones de intermediarios? ¿pérdida contable en la venta -valor libro del
-  pase vs. precio de venta-? ¿indemnizaciones a jugadores salientes?). Se cargó conservador a
-  `other_expenses` (no a `player_amortisation`, que ya tiene su propia línea "Amortização dos direitos
-  econômicos" separada). El salto 2024 (66,898 M, año con las ventas de Cristian Pavón, Jemerson y
-  otros según la Nota 26 de "Outras receitas operacionais") sugiere que puede estar correlacionado con
-  el volumen de ventas de ese año — vale la pena preguntarle al club el desglose exacto si se vuelve a
-  tocar este club.
 - **Cambio de presidencia sin nota de prensa**: se confirmó por firma en el propio balance (Bruno
   Muzzi firma 2023 y 2024, Pedro Daniel firma el Relatório Integrado 2025) pero no se buscó
   externamente la fecha exacta de la transición ni el motivo — si se necesita esa precisión (ej. para
@@ -1001,32 +788,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## Athletico Paranaense (`athleticoparanaense-br`) y Vitória (`vitoria-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
 
-- **Athletico Paranaense — "Custo das Operações de Eventos" (Nota 19, -3,085 M en 2024, -10,116 M en
-  2025) y "Custo de Transmissão" (Nota 19, solo 2025, -0,404 M)**: se cargaron a `admin_general_expense`
-  por descarte (no hay categoría más específica para "costo de operar eventos no futbolísticos en la
-  Arena" ni para "costo de producir la transmisión propia"), pero no se confirmó con el club qué
-  actividades concretas componen "Operações de Eventos" (¿recitales? ¿alquiler de la Arena a
-  terceros?) — el salto de 3,085 M a 10,116 M en un año (+228%) no tiene explicación en el documento.
-- **Vitória — "Premiações e outras" (Nota 23, 32,404 M en 2025, ~18% del revenue del segmento
-  futebol)**: la nota (d) dice que mezcla "premiações recebidas... pela participação e/ou pela
-  qualificação em fases seguintes da Copa do Brasil e Copa Nordeste" CON "recebimentos ligados ao
-  programa de sócio torcedor", sin desglosar cuánto es cada concepto. Se cargó la línea entera como
-  `competition_bonus` (por ser el concepto "básico" según la redacción de la nota), pero
-  conceptualmente una porción debería ir a `member_dues`. Vale la pena preguntarle al club el
-  desglose exacto entre premios deportivos y cuotas de socio-hincha si se vuelve a tocar este club o
-  se carga un ejercicio nuevo con la misma estructura.
-- **Vitória — inconsistencia real entre la Nota 29 y la DRE impresa** (ver la evidencia en `Admin/carga-clubes/vitoria-br.md`): la Nota 29 declara que desde 2025 las transações com
-  atletas y su costo directo ("Custo das transações com atletas", -10,208 M) se reconocen juntos en
-  "Outras receitas e despesas" del segmento clube social, pero el total que imprime esa nota
-  (43,514 M) NO coincide con lo que imprime la DRE para esa misma línea (53,724 M) — la diferencia
-  exacta (10,208 M) coincide con el "Custo das transações com atletas". Cruzando con la Nota 27
-  (Despesas diretas, segmento futebol) se confirmó que esa diferencia está efectivamente sumada
-  dentro de "Diretas" (-92,391 M impreso vs. -82,183 M que da la propia Nota 27 sin ese costo). Se
-  cargó siguiendo la DRE real (que es la que reconcilia con el Déficit final auditado), no la
-  redacción literal de la Nota 29(a) — pero esto es una inconsistencia interna real del documento
-  auditado (no un error de transcripción de esta sesión), y valdría la pena preguntarle al club/al
-  auditor (RSM Brasil) cuál de las 2 lecturas es la correcta para la próxima vez que se publique un
-  balance con la misma estructura.
 - **Vitória — "Premiações e outras" también incluye, según la nota (d), la aclaración de que "durante
   o ano de 2024 o Clube atingiu marca de 42 mil sócios"** — no se cargó como `memberCountByClub`
   (queda `null`) porque es un umbral alcanzado durante 2024, no un conteo puntual al cierre de 2025
@@ -1040,32 +801,9 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## RB Bragantino (`rbbragantino-br`), Brasil — onboarding 2019/2024, sesión 2026-09-24
 
-- **"Custo do departamento de futebol"** (línea grande, ambos años) casi con certeza mezcla sueldos
-  del plantel con amortización de derechos económicos de jugadores, pero el balance no trae las
-  Notas explicativas que la desagreguen (solo el Balanço/DRE primarios se transcribieron) — se
-  cargó entera a una sola categoría sin poder separar la porción salarial de la porción de
-  amortización. **Vale pedirle al club (o buscar si existe una versión con notas completas) el
-  desglose real de esta línea**, sobre todo para 2024 (año con plantel más caro, post-recompra por
-  Red Bull).
-- **2019: la tabla del Passivo (circulante/não circulante) se reconstruyó por orden de impresión
-  cruzando contra los subtotales**, no confirmando cada rubro contra su propio rótulo — el PDF
-  original era vectorial sin capa de texto real (ver la evidencia en `Admin/carga-clubes/rbbragantino-br.md` y el gotcha en `Admin/sourcing/Brasil/RB Bragantino.md`). El DRE (de donde
-  sale el tie-out de Revenue/Expenses/PAT) sí cerró exacto, así que el riesgo queda acotado a
-  `grossDebt`/`cash` de ESE año puntual, no a los ingresos/gastos. Si en el futuro aparece una copia
-  más legible del PDF de 2019, vale la pena re-verificar esas 2 cifras.
 - Se sabe que existen al menos 2 documentos más del club en Wayback Machine (balance 2022 y un año
   sin identificar todavía) que no se bajaron esta sesión — quedan para una sesión futura de
   sourcing/transcripción.
-
-## Corinthians (`corinthians-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
-
-- **"Premiações, Fiel Torcedor, Loterias e Outras"** (2024 solamente, el documento 2025 SÍ separa
-  estos 4 conceptos): mezcla premios deportivos, programa de socios-hinchas, lotería (Timemania) y
-  otros ingresos sin desglose. Se cargó entera a `other_income`. **Vale pedirle al club el desglose
-  retroactivo 2024**, ya que 2025 muestra que el dato existe internamente.
-- **"Custo com vendas e aquisição de atletas"** (2024) y **"Despesa na cessão de atletas"** (2025):
-  sin nota propia de detalle en ninguno de los 2 balances — se asumieron como comisiones/costos de
-  transacción (`other_expenses`) sin confirmación documental de su composición exacta.
 
 ## Palmeiras (`palmeiras-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
 
@@ -1075,45 +813,12 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   ya establecido para Palmeiras (a diferencia de Corinthians/Botafogo/Atlético Mineiro). Podría
   ameritar reclasificación a `exceptional_items` en una sesión futura si se confirma que es un litigio
   puntual no recurrente.
-- **`grossDebt`** (línea "Empréstimos e financiamentos") es chica frente a "Antecipação de contratos"
-  (factoring de recibíveis futuros, R$452-633 M según el año), que el propio balance categoriza
-  aparte del préstamo bancario — documentado en el comentario de cabecera para que no se asuma que
-  `grossDebt` captura toda la deuda financiera real del club.
-
-## São Paulo (`saopaulo-br`), Brasil — onboarding 2023/2024, sesión 2026-09-24
-
-- **"Direitos de transmissão de TV/Premiações"** (línea combinada, sin desglose en ningún balance —
-  a diferencia de Flamengo/Botafogo, que sí separan TV de premios): material, ~35-40% del bloque
-  "Futebol profissional" (R$259,4 M en 2023 / R$239,4 M en 2024). Cargada entera a `broadcasting`.
-  Un desglose real necesitaría venir del club.
-
 ## Santos (`santos-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
 
-- **Deuda financiera sin línea 100% pura**: la Nota 11 "Empréstimos e Antecipação de recebíveis"
-  mezcla préstamos bancarios reales con factoring contra cuotas futuras de la Federação Paulista
-  (2024: R$129,591 M; 2025: R$94,338 M). Es la línea más angosta disponible, pero no es deuda
-  bancaria pura — documentado en el comentario de cabecera.
 - **Caja extremadamente baja** (R$170 mil en 2024, R$295 mil en 2025): no es error de transcripción
   — el propio Relatório da Administração dedica varios párrafos a la crisis de liquidez del club
   (déficit financiero de R$62 M a fines de 2023). Vale la pena que se lea en el sitio como hallazgo
   real, no como un número sospechoso.
-- **"Receitas com manutenção e frequência"** se categorizó como `member_dues` por ser lo más cercano
-  a cuota social (ligada al Programa "Sócio Rei", Nota 7.1), pero el documento no lo llama
-  explícitamente "cuota social" — inferencia razonable, no 100% certera.
-
-## Internacional (`internacional-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
-
-- **"Realização da cessão por direito de exploração"** (~R$19,5 M/año, cargada a `other_income`):
-  ligada a un contrato de 2012 de construcción/operación del Complexo Beira-Rio, pero no queda claro
-  por qué amortizar ese pasivo genera un INGRESO en el resultado en vez de reducir un activo — el
-  documento no lo explica.
-- **"Estacionamento"** (línea chica, cargada conservadoramente a `other_income`): probablemente
-  estacionamiento del Beira-Rio en día de partido, pero el rótulo no nombra el estadio explícitamente,
-  así que por el criterio conservador de `stadium_other` no se categorizó ahí.
-- Las Notas 22 y 23 del balance 2025 no suman exacto contra su propio subtotal impreso (diferencias
-  de R$20 mil y R$1 mil) — no se pudo identificar qué línea puntual tiene el error de redondeo del
-  propio documento.
-
 ## Fluminense (`fluminense-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
 
 - **Opinión de auditoría CON SALVEDAD en 2025** (BDO, firmada 30/4/2026): la Administración decidió
@@ -1128,40 +833,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 - **"Luvas"** (línea de ingreso, R$1,133 M, Nota 17): sin categoría clara — cargada a `other_income`.
   Podría ser un ingreso tipo bono de fichaje, valdría confirmarlo con el club.
-- **"Multas rescisórias de atletas"**: aparece simétrica en ingresos (2,227 M) y gastos (12,682 M) —
-  cargada a `other_income`/`other_expenses` en vez de forzarla a `player_sales`/`player_amortisation`,
-  por tratarse de penalidades contractuales, no ventas/amortización. Confirmar si se repite en
-  ejercicios futuros del club.
-
-## Bahia (`bahia-br`), Brasil — onboarding 2024/2025, sesión 2026-09-24
-
-- **"Sócios e bilheteria" nunca se separan** en ninguna nota de ningún año, pese a que la Nota
-  17(b) del balance 2025 confirma que son 2 flujos de ingreso reales y distintos. Se cargó la línea
-  combinada a `matchday_competition`, lo que deja "Cuotas Sociales" en $0 para Bahia en Formato
-  Simplificado. Vale la pena pedirle al club el desglose.
-- **Amortización de pases 2024 no viene desglosada** en el balance tal cual se presentó ese año (la
-  Nota 16 "Custo das Atividades" solo tiene 4 líneas sin una de "Amortização" separada), aunque el
-  flujo de caja confirma que existe (R$98,430 mil de amortización no-efectivo). Se usó como proxy la
-  línea "Custos com negociação" (R$97,272 mil, muy cercana), inferida cruzando contra la propia
-  reexpresión que el balance 2025 hace de 2024 (Nota 2.20) — documentado como inferencia, no lectura
-  literal del documento 2024 tal cual se presentó.
-
-## Chapecoense (`chapecoense-br`), Brasil — onboarding 2021, sesión 2026-09-24
-
-- **Inconsistencia real del propio documento entre 3 lecturas del resultado del ejercicio**: la
-  Demonstração do Superávit/Déficit impresa (pág. 7, imagen dentro de un PDF de texto nativo) dice
-  -R$59,564 M; el Estado de Flujo de Efectivo dice -R$59,184 M; y la suma de las Notas explicativas
-  detalladas (cada una reconciliando exacta contra su propio subtotal) da -R$59,872 M. Las 3 caen
-  dentro de ~1% entre sí — ver la evidencia en `Admin/carga-clubes/chapecoense-br.md`
-  ("INCONSISTENCIA DE FUENTE") para el detalle completo. Se usó -59,872 como `officialPAT` (el valor
-  que reconcilia con los datos efectivamente cargados) en vez del titular de la pág. 7, para que
-  `verifyTieOuts()`/`tools/audit.js` no fallen por un defecto real del documento. **Candidato fuerte a
-  mail al club** (o a la Federação Catarinense) pidiendo una versión corregida o una aclaración.
-- La tabla de "Empréstimos" del Passivo (pág. 6, también imagen) muestra 10,837 M circulante para
-  2021, pero la Nota 18 (texto nativo, con desglose verificable por institución financiera) muestra
-  8,310 M — se usó la cifra de la Nota 18 para `grossDebt`, mismo criterio que el resto del archivo
-  (preferir texto nativo con desglose sobre una imagen sin desglose).
-
 ## Vasco da Gama (`vascodagama-br`), Brasil — onboarding 2023, sesión 2026-09-24
 
 - **HALLAZGO IMPORTANTE, afecta el alcance de esta carga**: el documento que se esperaba usar para
@@ -1172,11 +843,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   de `demonstracoes-contabeis-2023.md`) en vez de los 2 planeados. **Falta re-sourcear el balance
   2024 real de la SAF** (la URL oficial sigue bloqueada por Cloudflare, ver `Admin/sourcing/Brasil/Vasco da
   Gama.md`) o esperar a que se publique un 2025 auditado.
-- La línea "PECLD" de Gastos generales y administrativas del ejercicio 2023 salió con OCR degradado
-  ("PECLD 20 (3.229)") — se reconstruyó por reconciliación como un crédito de +0,020 M (no el -3,229
-  que sugería el OCR), impacto inmaterial (0,03% de G&A) pero vale una relectura manual del PDF en
-  algún momento.
-
 ## Ferro Carril Oeste (`ferrocarriloeste-ar`), Argentina — onboarding Ejercicios 118/119 (2021-22, 2022-23), sesión 2026-09-24
 
 - **"Recupero Decreto 1212/03"** (línea grande en los 2 ejercicios, $82,6 M y $184,0 M): el Decreto
@@ -1187,12 +853,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## RCD Mallorca (`rcdmallorca-es`), Real Oviedo (`realoviedo-es`) y Rayo Vallecano (`rayovallecano-es`), España — onboarding Ejercicio 2024/25, sesión 2026-09-25
 
-- **RCD Mallorca — "Cesiones" (233.000€, dentro de "Otros ingresos")**: es ingreso por préstamo de
-  jugadores a otros clubes (cesión con o sin cargo), conceptualmente más cerca de `player_sales` que
-  del catch-all `other_income` donde quedó cargado. Getafe (mismo formato INFUT) SÍ la promovió a
-  `player_sales` propia en su sesión de carga; acá se dejó en el catch-all por no reabrir ese criterio
-  sin confirmar con Guido si conviene unificarlo retroactivamente entre los clubes españoles ya
-  cargados. Vale la pena decidir un criterio único y aplicarlo parejo.
 - **Real Oviedo — "Deterioro y resultado por enajenaciones" (2.771.029€) sin la palabra "jugadores"
   en su rótulo**: a diferencia de Mallorca/Rayo Vallecano (que sí dicen explícito "traspaso de
   jugadores"/"transferencia de jugadores"), este documento solo dice "Beneficios procedentes del
@@ -1211,15 +871,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   estadio" — sería necesario revisar la Memoria completa (Nota 6, citada en la salvedad) para
   confirmarlo. No afecta los datos de Finanzas cargados (ingresos/gastos/PAT del ejercicio), solo la
   composición del activo no corriente, que este sitio no carga en detalle.
-- **Rayo Vallecano — `netInterest` reconstruido por residuo, no por lectura directa**: la sección de
-  Resultado Financiero de la Cuenta de Pérdidas y Ganancias perdió sus números en la extracción del
-  PDF (quedaron solo las etiquetas "13. Ingresos financieros"/"14. Gastos financieros"/etc., sin
-  cifra). El valor cargado (-43.409,90€) sale de restar 2 anclas confirmadas por partida doble
-  (Resultado del ejercicio impreso 2 veces, menos Resultado de Explotación reconciliado exacto, menos
-  el neto de la Nota de Impuesto sobre beneficios) — matemáticamente sólido, pero valdría la pena
-  releer manualmente la página 10 del PDF original (no el `.md`) para confirmar el desglose
-  Ingresos/Gastos financieros/Diferencias de cambio línea por línea, en vez de depender del residuo.
-
 ## Millonarios (`millonarios-co`), Colombia — onboarding 2025, sesión 2026-09-25
 
 - **Nota 23 "Costo Deportivo y de Ventas"** agrupa en una sola línea ($45.741 M) el costo del
@@ -1349,15 +1000,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   2026-09-13, se repite acá porque sigue sin resolver y sería relevante si en el futuro aparece un
   documento cargable de este club).
 
-## Wolverhampton Wanderers (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
-
-- **El ejercicio "2025" cubre 13 meses, no 12** (1/6/2024 a 30/6/2025): la compañía cambió su fecha de
-  cierre de ejercicio de 31 de mayo a 30 de junio, y el documento disponible es el período de
-  transición completo, no un año calendario normal. Se cargó igual (la alternativa era dejar a Wolves
-  con un solo ejercicio real), documentado en detalle en la evidencia en `Admin/carga-clubes/wolves-gb.md`. Pregunta para Guido: ¿preferís una nota visible de "13 meses" en el sitio
-  para este ejercicio, o alcanza con la documentación interna? Cualquier comparación año a año entre
-  2024 (12 meses) y 2025 (13 meses) va a sobreestimar el crecimiento real de este club.
-
 ## Aston Villa (Inglaterra) — onboarding 2024-25, sesión 2026-09-25
 
 - **Limitación estructural genuina, no un error de carga**: a diferencia de TODOS los demás clubes
@@ -1372,15 +1014,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   Resultado neto SÍ sean correctos. No hay nada que preguntarle al club — es la estructura societaria
   real, documentada así en el propio balance auditado — pero vale la pena que quien lea este club en
   el sitio sepa que el desglose de gastos es menos confiable que el de otros clubes ingleses.
-
-## Brentford (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
-
-- **Ejercicio 2023-24, Nota de intereses pagados con un total que no reconcilia**: el documento
-  imprime un total de intereses pagados (£6,020M) que no coincide con la suma de sus propios 2
-  componentes desglosados. Se usó £5,020M (la suma exacta de los 2 componentes, y el único valor que
-  hace cerrar "Loss before taxation" contra el total impreso) — mismo patrón de error de imprenta/OCR
-  ya visto en otros documentos de este tipo. Vale la pena confirmar contra el PDF original si se
-  quiere citar este ejercicio con más certeza.
 
 ## Newcastle United (Inglaterra) — onboarding 2024-25, sesión 2026-09-25
 
@@ -1402,11 +1035,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## Fulham (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
 
-- **"Gate Receipts" 2025 con valor forzado por el total**: la transcripción OCR trae un número que no
-  reconcilia contra Turnover total menos las otras 4 líneas — se usó el valor matemáticamente forzado
-  (15,010), consistente con un patrón de error OCR 1↔4 ya visto en el documento 2023-24 del mismo
-  club. Confirmar contra el PDF original, pág. 24, columna 2025, antes de citar esta cifra con más
-  confianza.
 - **`grossDebt`**: la única partida "deuda-like" es un préstamo del dueño sin interés y "repayable
   on demand" (Amounts due to immediate parent company: £44,398m en 2024, £0 en 2025, convertido a
   equity). Se usó tal cual, pero es discutible tratarlo como deuda financiera real dado que no
@@ -1418,12 +1046,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## Leeds United (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
 
-- **Amortización de intangibles no-jugador con reversión de "negative goodwill" en 2025**: en 2024 la
-  amortización no-jugador (goodwill/trademarks/software) suma +£0,231457m (normal), pero en 2025 la
-  reversión de negative goodwill (-£0,921580m) supera esa suma y da un CRÉDITO neto de -£0,651431m.
-  Se absorbió en el catch-all `other_expenses` en vez de crear una línea con signo positivo
-  (antinatural en un array de gastos) — ¿está bien este criterio para casos futuros con negative
-  goodwill?
 - **Atribución de gestión en FY2024 (cambio de dueño a mitad de año)**: Aser/Radrizzani controlaron
   ~3 meses, 49ers Enterprises los ~9 restantes y al cierre — se usó un solo `gestionId` (49ers) en
   vez de partir el ejercicio en dos gestiones. ¿Confirma este criterio?
@@ -1436,29 +1058,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   including player wages"), pero es discutible — la Nota 8 "Employees" da un costo total de personal
   del grupo (£359,265m) que mezcla plantel (133 personas) con administración/comercial (929
   personas), sin costo por área, así que tampoco resuelve el problema con precisión.
-- **Gap no explicado (£1,646m, 0,7%) entre el P&L y las notas de amortización/deterioro de pases**:
-  el P&L imprime -224,344 para esa columna combinada; la Nota 6 desglosa amortización (213,893) +
-  deterioro (12,097) = 225,990. Se usó el número del P&L porque es el único que hace cerrar el
-  resultado exacto — el origen de la diferencia no está explicado en el documento.
-- **`grossDebt`**: Chelsea no tiene ninguna línea de deuda bancaria — se usó `grossDebt:0`, excluyendo
-  los £396,135m de "transfer fee payables" (trade creditors por pases) siguiendo el criterio estricto de club-data-mapping/referencia/formato-simplificado.md, "grossDebt". Muchos análisis de finanzas de fútbol tratan esos payables como deuda
-  económica real — decisión pendiente si Guido prefiere ese criterio alternativo.
-
-## Brighton & Hove Albion (Inglaterra) — onboarding 2023-24/2024-25, sesión 2026-09-25
-
-- **Restatement del ejercicio 2024 (impuesto diferido), ¿usar la cifra original o la restated?** El
-  documento del ejercicio 2024/25 (Nota 27, "Prior period adjustment") reconoce retroactivamente un
-  activo por impuesto diferido de £22.897k que el balance de 2023/24 no había reconocido, lo que sube
-  el resultado neto de ESE ejercicio de £56.065m (como se depositó originalmente en Companies House,
-  19/12/2024) a £73.369m (columna "2024 (As restated)" del documento de 2025). Se cargó la cifra
-  ORIGINAL (56.065), tal cual el propio documento del ejercicio 2023/24 la declaró — mismo criterio
-  de "cada ejercicio usa su propio documento primario" que ya rige para las reexpresiones por
-  inflación de los balances argentinos, aunque este caso es distinto (una corrección de error
-  contable real, no una reexpresión por poder adquisitivo). La corrección NO afecta Turnover/
-  Operating expenses/Player trading/Interest, solo Tax y el resultado neto. ¿Preferís reflejar la
-  cifra restated (73.369) en su lugar, ya que es la que BDO LLP considera la correcta con
-  retrospectiva completa? Ver la evidencia en `Admin/carga-clubes/brighton-gb.md`.
-
 ## Países Bajos (Ajax, PSV, Feyenoord, AZ) — onboarding 2023/24-2024/25, país nuevo, sesión 2026-09-25
 
 - **Feyenoord — línea "Partnerships, business seats, units en boarding" (Netto-omzet, nota 3.1)**:
@@ -1530,23 +1129,6 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
 
 ## Bayern Munich (Alemania) — onboarding 2023-24/2024-25, sesión 2026-09-25
 
-- **`netInterest`/`tax` reconstruidos como RESIDUALES, no leídos de una línea propia**: la fuente
-  cargada es el comunicado oficial anual "Jahresabschluss der Saison <año>" (fcbayern.com), un
-  resumen de 7 páginas con Balance y GuV condensados — a diferencia de Werder Bremen/Köln/RB Leipzig
-  (Konzernabschluss/Jahresabschluss completo con Anhang notarial vía unternehmensregister.de), Bayern
-  no deposita ahí porque su AG no está obligada (no cotiza en bolsa). El documento solo imprime
-  EBITDA/EBT/Jahresüberschuss, sin desglosar el resultado financiero ni el impuesto a las ganancias
-  como líneas propias. Se reconstruyeron por diferencia (netInterest = EBT − (EBITDA−Abschreibungen);
-  tax = Jahresüberschuss − EBT), y el total cierra bien (≤0,1 M€ de diferencia, redondeo del propio
-  documento a 1 decimal) — pero es una aproximación, no una lectura directa. Pregunta para Bayern (o
-  para una sesión futura que consiga el Jahresabschluss completo con Anhang, si existe alguno
-  públicamente accesible pese a no cotizar): ¿cuál es el desglose real de "Finanzergebnis"/"Steuern
-  vom Einkommen und vom Ertrag" de la AG Einzelabschluss para los ejercicios 2023/24 y 2024/25?
-- **Nivel de cuentas (Einzelabschluss vs. Konzern) da 2 pares de cifras oficiales distintas para el
-  mismo ejercicio** (908,1 M€ vs. 951,5 M€ de Umsatz 2023/24, por ejemplo) — se usó el Einzelabschluss
-  porque es el único con desglose de ingresos/gastos por rubro (ver la evidencia en `Admin/carga-clubes/bayernmunich-de.md`). Si Guido prefiere el Konzern (que incluye Allianz Arena München
-  Stadion GmbH y el resto de subsidiarias, más representativo del "negocio Bayern" completo) habría
-  que resignar el desglose por `normalizedCategory`, ya que el documento no lo da a ese nivel.
 - **`verifyTieOuts()` marca 3 checks de este club como "NO CIERRA" (diferencia de 0,1 M€)**: Revenue
   2024, Revenue 2025 y Resultado neto (PAT) 2025 — verificado en el navegador el 2026-09-25. No es un
   error de carga: la fuente redondea cada cifra a 1 decimal (100.000 €), así que 6 líneas de revenue
@@ -1555,53 +1137,14 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   la evidencia en `Admin/carga-clubes/bayernmunich-de.md` para que ninguna sesión futura lo confunda
   con un bug — la pregunta de si conseguir un documento con más precisión sigue abierta arriba.
 
-## Croacia (Dinamo Zagreb, Hajduk Split, Rijeka) — onboarding 2024, país nuevo, sesión 2026-09-25
-
-- **"Članarine" (cuotas de socios) agrupado dentro de "Prihodi od ulaznica" (ingresos de entradas)**:
-  la plantilla oficial de reporte financiero que exige la HNS (Federación de Fútbol de Croacia) pone
-  las cuotas de socios como una sub-línea DENTRO del bloque de ingresos de entradas/abonos, no como
-  categoría separada — a diferencia del criterio argentino, donde "Cuotas Sociales" es un bloque
-  propio, independiente de la recaudación de entradas. Se mapeó como `member_dues` de todos modos
-  (traducción literal del rótulo), pero es una categorización con incertidumbre genuina: ¿la HNS la
-  agrupa ahí porque conceptualmente el club la trata como una forma de acceso al estadio (una
-  membresía que incluye entrada), o es solo una cuestión de formato del formulario? Aparece en Dinamo
-  Zagreb (888.330€, ver `data/hr/dinamozagreb-hr-data.js`) y probablemente en los otros 2 clubes croatas
-  con la misma plantilla — si se carga un 4to club croata en el futuro, confirmar si el patrón se
-  repite antes de asumir que es el criterio fijo del país.
-
-## Bélgica (Club Brugge, Anderlecht, Genk, Gent) — onboarding 2024/25, país nuevo, sesión 2026-09-25
-
-- **"Andere bedrijfsopbrengsten" (otros ingresos operativos) mezcla plusvalía de venta de jugadores
-  con recupero de retención impositiva sobre sueldos ("bedrijfsvoorheffing"), sin desglose propio**:
-  el mismo patrón aparece en los 3 clubes con ejercicio individual (Anderlecht, Genk, Gent) — la
-  plantilla contable belga (código NBB) agrupa ambos conceptos en una sola línea, y el propio
-  Jaarverslag de cada club solo aclara en texto narrativo que el componente MAYORITARIO es la
-  plusvalía de pases, sin dar el monto exacto de la porción de recupero impositivo. Se categorizó la
-  línea completa como `player_sales` por ser el componente mayoritario declarado, pero es una
-  aproximación, no una separación exacta. Adicionalmente, "Omzet" (Turnover) tampoco separa
-  ticketing/sponsors/TV en ningún desglose disponible en estos 3 documentos — a diferencia de Club
-  Brugge, que sí trae ese desglose (usa la versión consolidada). Si algún club belga publica en el
-  futuro un informe con más desglose, revisar si se puede separar estas líneas con más precisión.
-
 ## Dinamarca (FC København, Brøndby, FC Midtjylland) — onboarding, país nuevo, sesión 2026-09-25
 
-- **FC København — "TV- og præmie-indtægter" mezcla derechos de TV con premios por competencia, sin
-  desglose**: se categorizó como `broadcasting` (TV listado primero en el rótulo, y el salto de
-  110.836 t.kr. en 2024 a 477.453 t.kr. en 2023 —año de fase de grupos de Champions League— es
-  consistente con que la porción de TV/UEFA domina), pero es una aproximación, no una certeza.
 - **FC København y Brøndby — "Ejendomsudlejning"/"Udlejning erhvervsejendom" (alquiler de
   inmuebles/propiedad comercial) categorizado como `other_income`, no `stadium_other`**: a diferencia
   de las líneas de F&B/eventos (que sí se cargaron como `stadium_other` por estar en la sede propia),
   estos rótulos no nombran el estadio ni una parte de él — se aplicó el criterio conservador de
   `club-data-mapping` sección 1. Si en el futuro se confirma que el inmueble alquilado es parte del
   propio estadio (Parken/Brøndby Stadion), recategorizar a `stadium_other`.
-- **Brøndby 2020 — "Entré-, TV- og præmieindtægter" categorizado como `broadcasting`, no
-  `matchday_competition`**: la línea mezcla entradas + TV + premios en un solo monto, y 2020 fue un
-  año con la mayoría de los partidos a puertas cerradas por COVID-19 (el club recibió compensación
-  estatal por "pérdida de organizador"), así que la porción de recaudación de entradas fue mínima ese
-  año específico — decisión puntual de 2020, no un criterio general para reusar en otro ejercicio de
-  este club si se carga uno con público normal.
-
 ## Tanda de 20 transcripts al azar (sesión 2026-09-25) — 17 clubes/ejercicios nuevos + 3 ediciones
 
 Pedido de Guido: elegir 20 transcripciones ya hechas y sin cargar, sin orden particular, y
@@ -1890,7 +1433,6 @@ sin leerlo.
 - **Letonia**: Riga FC (patrimonio neto de -5,16 M EUR en 2021 a +0,79 M en 2025: ¿condonación o aporte de capital?), Valmiera (facturación de 0 a 1,69 M EUR y activos de 1,6 M a 73 mil: ¿traspaso de actividad?).
 - **Kazajistán**: Kaspiy FK (el DFO solo tiene 2021-2022). **Georgia**: Dinamo Batumi (reportal.ge hasta 2022).
 - **Ucrania**: Dynamo Kyiv (la consolidada bajada de Wayback, ¿es 2020 u otro año?).
-
 
 ## Salernitana (onboarding de Italia, sesión 2026-10-08, el ejercicio 2022 se cargó con el comparativo del año siguiente)
 
