@@ -1,0 +1,309 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.md",
+ "generado": "2026-10-20T22:04:23.102Z",
+ "scriptHuella": "bb1724ebf1b3",
+ "estado": "cola",
+ "clubId": "rapidwien-at",
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.pdf",
+   "campo": "cierre",
+   "valor": "2019-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): ejercicio 1.7-30.6 de la temporada 2018-19; el registro no trae cierre",
+   "evidencia": "geschaeftsbericht-2018-19.md (portada/Gewinn-und-Verlust-Rechnung)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH",
+   "evidencia": "geschaeftsbericht-2018-19.md, 'Konsolidierte Bilanz'",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "41dd510"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.000003000000010022763
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 50.745306 en este documento y 50.745306 en geschaeftsbericht-2019-20.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2018: 41.71129 en geschaeftsbericht-2017-18.pdf y 41.706847 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: El título de b25 no dice si es consolidado o de la SK Rapid GmbH; el balance de pág. 52 sí se titula konsolidiert.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en geschaeftsbericht-2023-24.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2024-25.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 50.745306,
+  "gastos": 49.278052,
+  "financiero": -1.285003,
+  "impuesto": -0.002265,
+  "resultadoImpreso": 0.179989,
+  "resultadoParaCargar": 0.179989,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticketing",
+   "lado": "ingreso",
+   "M": 6.855942,
+   "pagina": 56,
+   "linea": 1621,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 10.331924,
+   "pagina": 56,
+   "linea": 1622,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Hospitality (VIP)",
+   "lado": "ingreso",
+   "M": 8.137466,
+   "pagina": 56,
+   "linea": 1623,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 2.605285,
+   "pagina": 56,
+   "linea": 1624,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Rechteverwertung",
+   "lado": "ingreso",
+   "M": 14.275566,
+   "pagina": 56,
+   "linea": 1625,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Fanreisen",
+   "lado": "ingreso",
+   "M": 1.196134,
+   "pagina": 56,
+   "linea": 1626,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "sonstige Erlöse",
+   "lado": "ingreso",
+   "M": 2.814958,
+   "pagina": 56,
+   "linea": 1627,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Transfererlöse",
+   "lado": "ingreso",
+   "M": 4.528031,
+   "pagina": 56,
+   "linea": 1651,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Umsetzung Sponsorleistungen",
+   "lado": "gasto",
+   "M": 0.486255,
+   "pagina": 56,
+   "linea": 1629,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Aufwand Heimspiele",
+   "lado": "gasto",
+   "M": 3.78037,
+   "pagina": 56,
+   "linea": 1630,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Aufwand Hospitality VIP",
+   "lado": "gasto",
+   "M": 3.155297,
+   "pagina": 56,
+   "linea": 1631,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Wareneinsatz Merchandising",
+   "lado": "gasto",
+   "M": 1.341667,
+   "pagina": 56,
+   "linea": 1632,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "eigene Medien und Produktionskosten",
+   "lado": "gasto",
+   "M": 0.327705,
+   "pagina": 56,
+   "linea": 1633,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Fanreisen",
+   "lado": "gasto",
+   "M": 1.125508,
+   "pagina": 56,
+   "linea": 1634,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Personalaufwand Sport",
+   "lado": "gasto",
+   "M": 17.367045,
+   "pagina": 56,
+   "linea": 1637,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "sonstiger Personalaufwand",
+   "lado": "gasto",
+   "M": 4.91066,
+   "pagina": 56,
+   "linea": 1638,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Abgaben, Gebühren, Strafen",
+   "lado": "gasto",
+   "M": 0.426003,
+   "pagina": 56,
+   "linea": 1640,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Spiel- und Trainingsbetrieb",
+   "lado": "gasto",
+   "M": 1.823862,
+   "pagina": 56,
+   "linea": 1641,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Management-Gebühren und Vermittlungsprovisionen",
+   "lado": "gasto",
+   "M": 1.390801,
+   "pagina": 56,
+   "linea": 1642,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Stadion-, Miet- und Instandhaltungsaufwand",
+   "lado": "gasto",
+   "M": 2.726157,
+   "pagina": 56,
+   "linea": 1643,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Klubservice, Events, PR und Marketing",
+   "lado": "gasto",
+   "M": 0.882927,
+   "pagina": 56,
+   "linea": 1644,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Verwaltung-, Versicherunungs- und sonst. Aufwand",
+   "lado": "gasto",
+   "M": 2.7458,
+   "pagina": 56,
+   "linea": 1645,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Abschreibungen für Abnutzung",
+   "lado": "gasto",
+   "M": 1.913813,
+   "pagina": 56,
+   "linea": 1647,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Transferauwendungen",
+   "lado": "gasto",
+   "M": 4.874182,
+   "pagina": 56,
+   "linea": 1652,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzergebnis",
+   "M": -1.285003,
+   "linea": 1648
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern aus Erträgen",
+   "M": -0.002265,
+   "linea": 1649
+  }
+ ]
+}

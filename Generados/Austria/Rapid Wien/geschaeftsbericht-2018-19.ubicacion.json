@@ -1,212 +1,297 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.pdf",
  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2018-19.md",
- "mdSha1": "5ac7793fd045a6433b5a2d7fa8a4ced8f46a338c",
+ "mdSha1": "cfd5df41ef84509a1c1b2fac2f9e13ab366dd7b0",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T21:53:12.075Z",
+ "generado": "2026-10-20T22:03:58.473Z",
  "perimetroClub": "consolidado",
  "bloques": {
   "b1": {
-   "pagina": 30,
+   "pagina": 3,
    "lineas": [
-    1700,
-    1702
+    60,
+    63
    ],
    "tipo": "texto"
   },
   "b2": {
-   "pagina": 30,
+   "pagina": 3,
    "lineas": [
-    1706,
-    1709
+    67,
+    76
    ],
    "tipo": "texto"
   },
   "b3": {
-   "pagina": 31,
+   "pagina": 30,
    "lineas": [
-    1772,
-    1774
+    631,
+    645
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b4": {
-   "pagina": 31,
+   "pagina": 30,
    "lineas": [
-    1777,
-    1783
+    649,
+    667
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b5": {
    "pagina": 31,
    "lineas": [
-    1785,
-    1788
+    677,
+    709
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b6": {
-   "pagina": 31,
+   "pagina": 32,
    "lineas": [
-    1790,
-    1795
+    725,
+    763
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b7": {
    "pagina": 32,
    "lineas": [
-    1823,
-    1834
+    765,
+    782
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b8": {
    "pagina": 32,
    "lineas": [
-    1836,
-    1840
+    784,
+    791
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b9": {
-   "pagina": 32,
-   "lineas": [
-    1846,
-    1848
-   ],
-   "tipo": "texto"
-  },
-  "b10": {
-   "pagina": 32,
-   "lineas": [
-    1856,
-    1866
-   ],
-   "tipo": "texto"
-  },
-  "b11": {
    "pagina": 33,
    "lineas": [
-    1882,
-    1892
+    813,
+    827
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 33,
+   "lineas": [
+    829,
+    843
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 34,
+   "lineas": [
+    853,
+    889
+   ],
+   "tipo": "tabla"
   },
   "b12": {
-   "pagina": 34,
+   "pagina": 35,
    "lineas": [
-    1899,
-    1906
+    907,
+    918
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b13": {
-   "pagina": 34,
+   "pagina": 41,
    "lineas": [
-    1913,
-    1924
+    992,
+    1009
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b14": {
-   "pagina": 39,
+   "pagina": 42,
    "lineas": [
-    2051,
-    2051
+    1031,
+    1044
    ],
    "tipo": "tabla"
   },
   "b15": {
-   "pagina": 39,
+   "pagina": 42,
    "lineas": [
-    2065,
-    2065
+    1046,
+    1059
    ],
    "tipo": "tabla"
   },
   "b16": {
-   "pagina": 39,
+   "pagina": 42,
    "lineas": [
-    2067,
-    2067
+    1061,
+    1074
    ],
    "tipo": "tabla"
   },
   "b17": {
-   "pagina": 52,
+   "pagina": 44,
    "lineas": [
-    2911,
-    2934
+    1166,
+    1181
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b18": {
-   "pagina": 53,
+   "pagina": 44,
    "lineas": [
-    2939,
-    2952
+    1183,
+    1203
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b19": {
-   "pagina": 64,
+   "pagina": 44,
    "lineas": [
-    4285,
-    4292
+    1205,
+    1213
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b20": {
-   "pagina": 66,
+   "pagina": 45,
    "lineas": [
-    4498,
-    4498
+    1239,
+    1252
    ],
    "tipo": "tabla"
   },
   "b21": {
-   "pagina": 92,
+   "pagina": 47,
    "lineas": [
-    6043,
-    6047
+    1298,
+    1311
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b22": {
+   "pagina": 47,
+   "lineas": [
+    1313,
+    1324
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 52,
+   "lineas": [
+    1469,
+    1491
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 53,
+   "lineas": [
+    1499,
+    1514
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 56,
+   "lineas": [
+    1619,
+    1654
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 64,
+   "lineas": [
+    2086,
+    2093
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 65,
+   "lineas": [
+    2170,
+    2174
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
    "pagina": 92,
    "lineas": [
-    6068,
-    6068
+    2818,
+    2821
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 92,
+   "lineas": [
+    2825,
+    2834
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 92,
+   "lineas": [
+    2840,
+    2844
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 92,
+   "lineas": [
+    2850,
+    2855
    ],
    "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
+ "sin_estado": false,
+ "estado": [
+  "b25"
+ ],
  "notas_ingresos": [],
  "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "escala": "unidades",
+ "escala_evidencia": "Los importes están impresos en euros completos (ej. 46.217.275 Umsatzerlöse); no hay leyenda de miles.",
  "moneda": "EUR",
- "columna_ejercicio": "",
- "columna_anterior": null,
+ "columna_ejercicio": "GESAMT 2018/19",
+ "columna_anterior": "GESAMT (VJ)",
  "perimetro": "no se sabe",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Hay en el PDF una consolidierte Gewinn- und Verlustrechnung 2018/19 (probablemente cerca de las págs. 52-55) que la transcripción no capturó como bloque?",
+   "pregunta": "¿Se usa la 'Gewinn-und-Verlust-Rechnung nach Wettbewerben 2018/19' (b25), columna GESAMT 2018/19, como estado de resultados del ejercicio, aunque no sea la GuV formal según UGB?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "",
-   "texto": "El índice solo trae el balance consolidado (b17 activo, b18 pasivo, págs. 52-53) y ningún bloque con la cuenta de resultados; podría haberse perdido en la transcripción.",
+   "renglon": "JAHRESERGEBNIS",
+   "texto": "El documento no trae otra GuV; b25 es una cuenta de gestión por competiciones con columnas nacional/internacional y total.",
    "bloques": [
-    "b17",
-    "b18"
+    "b25"
    ],
    "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La GuV de b25 corresponde al perímetro consolidado (como el balance b23 'Konsolidierte Bilanz')?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El título de b25 no dice si es consolidado o de la SK Rapid GmbH; el balance de pág. 52 sí se titula konsolidiert.",
+   "bloques": [
+    "b25",
+    "b23"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Ninguno de los bloques indexados es un estado de resultados: b7-b11 son resultados deportivos y tablas de posiciones, b12-b13 son listas de personal, b17-b18 son el balance consolidado (Aktiva/Passiva), b19 es la amortización del crédito y b21 son estadísticas de redes sociales. El informe usa el perímetro consolidado (KONSOLIDIERTE BILANZ DES SK RAPID) y la moneda sería EUR. Conviene revisar el PDF por si la GuV consolidada existe y no fue transcripta."
+ "observaciones": "Único estado de resultados: b25 (pág. 56), con columnas por competición (nacional/internacional) y GESAMT; se carga la columna GESAMT 2018/19 y GESAMT (VJ) como año anterior. El resto de bloques son balance (b23, b24), deportivos, créditos o estadísticas digitales. Perímetro probablemente consolidado (sección 2.2 con balance consolidado), sin confirmación explícita."
 }

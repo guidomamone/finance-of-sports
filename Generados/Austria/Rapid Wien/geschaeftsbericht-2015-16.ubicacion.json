@@ -1,228 +1,281 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2015-16.pdf",
  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2015-16.md",
- "mdSha1": "2c3c2494ce9af62a0b5f171ec71764520d686c6a",
+ "mdSha1": "c78dc1deb8f0e58c1d7afebda199f69fd3436de3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T21:52:06.476Z",
+ "generado": "2026-10-20T22:01:10.307Z",
  "perimetroClub": "consolidado",
  "bloques": {
   "b1": {
-   "pagina": 15,
+   "pagina": 2,
    "lineas": [
-    1494,
-    1507
+    26,
+    30
    ],
    "tipo": "tabla"
   },
   "b2": {
-   "pagina": 15,
+   "pagina": 2,
    "lineas": [
-    1517,
-    1550
+    34,
+    41
    ],
    "tipo": "tabla"
   },
   "b3": {
-   "pagina": 15,
+   "pagina": 2,
    "lineas": [
-    1558,
-    1562
+    45,
+    48
    ],
    "tipo": "tabla"
   },
   "b4": {
-   "pagina": 16,
+   "pagina": 15,
    "lineas": [
-    1574,
-    1593
+    502,
+    515
    ],
    "tipo": "tabla"
   },
   "b5": {
-   "pagina": 16,
+   "pagina": 15,
    "lineas": [
-    1597,
-    1616
+    525,
+    559
    ],
    "tipo": "tabla"
   },
   "b6": {
    "pagina": 16,
    "lineas": [
-    1620,
-    1631
+    583,
+    601
    ],
    "tipo": "tabla"
   },
   "b7": {
    "pagina": 16,
    "lineas": [
-    1640,
-    1645
+    605,
+    623
    ],
    "tipo": "tabla"
   },
   "b8": {
    "pagina": 16,
    "lineas": [
-    1656,
-    1661
+    627,
+    638
    ],
    "tipo": "tabla"
   },
   "b9": {
    "pagina": 16,
    "lineas": [
-    1665,
-    1672
+    654,
+    658
    ],
    "tipo": "tabla"
   },
   "b10": {
    "pagina": 16,
    "lineas": [
-    1676,
-    1681
+    666,
+    670
    ],
    "tipo": "tabla"
   },
   "b11": {
    "pagina": 16,
    "lineas": [
-    1688,
-    1691
+    674,
+    680
    ],
    "tipo": "tabla"
   },
   "b12": {
-   "pagina": 22,
+   "pagina": 16,
    "lineas": [
-    2313,
-    2331
+    684,
+    686
    ],
    "tipo": "tabla"
   },
   "b13": {
-   "pagina": 22,
+   "pagina": 16,
    "lineas": [
-    2333,
-    2350
+    690,
+    695
    ],
    "tipo": "tabla"
   },
   "b14": {
-   "pagina": 22,
+   "pagina": 17,
    "lineas": [
-    2364,
-    2371
+    744,
+    761
    ],
    "tipo": "tabla"
   },
   "b15": {
-   "pagina": 22,
+   "pagina": 18,
    "lineas": [
-    2377,
-    2384
+    787,
+    800
    ],
    "tipo": "tabla"
   },
   "b16": {
-   "pagina": 25,
+   "pagina": 18,
    "lineas": [
-    2941,
-    2941
+    802,
+    815
    ],
    "tipo": "tabla"
   },
   "b17": {
-   "pagina": 28,
+   "pagina": 18,
    "lineas": [
-    3340,
-    3359
+    817,
+    830
    ],
    "tipo": "tabla"
   },
   "b18": {
-   "pagina": 28,
+   "pagina": 20,
    "lineas": [
-    3370,
-    3384
+    966,
+    992
    ],
    "tipo": "tabla"
   },
   "b19": {
-   "pagina": 29,
+   "pagina": 22,
    "lineas": [
-    3409,
-    3418
+    1084,
+    1102
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b20": {
-   "pagina": 29,
+   "pagina": 22,
    "lineas": [
-    3434,
-    3438
+    1122,
+    1139
    ],
-   "tipo": "texto"
+   "tipo": "tabla"
   },
   "b21": {
-   "pagina": 31,
+   "pagina": 23,
    "lineas": [
-    3811,
-    3811
+    1210,
+    1244
    ],
    "tipo": "tabla"
   },
   "b22": {
-   "pagina": 34,
+   "pagina": 27,
    "lineas": [
-    3986,
-    3986
+    1508,
+    1512
    ],
    "tipo": "tabla"
   },
   "b23": {
-   "pagina": 40,
+   "pagina": 28,
    "lineas": [
-    4999,
-    4999
+    1594,
+    1613
    ],
    "tipo": "tabla"
   },
   "b24": {
-   "pagina": 51,
+   "pagina": 29,
    "lineas": [
-    6142,
-    6142
+    1642,
+    1653
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1661,
+    1672
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 31,
+   "lineas": [
+    1748,
+    1756
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 31,
+   "lineas": [
+    1766,
+    1774
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 43,
+   "lineas": [
+    2278,
+    2284
+   ],
+   "tipo": "texto"
+  },
+  "b29": {
+   "pagina": 58,
+   "lineas": [
+    2957,
+    2965
    ],
    "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
+ "sin_estado": false,
+ "estado": [
+  "b21"
+ ],
  "notas_ingresos": [],
  "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "",
+ "escala": "unidades",
+ "escala_evidencia": "No hay una frase explícita; los importes están impresos en euros completos (p. ej. UMSATZERLÖSE 39.359.560), y el texto cercano habla de un EBITDA de 83.000 Euro.",
  "moneda": "EUR",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "GESAMT",
+ "columna_anterior": "2014/15",
+ "perimetro": "consolidado",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El documento omite la consolidierte Gewinn- und Verlustrechnung 2015/16, de modo que solo trae el balance consolidado (b12-b13, pág. 22)?",
+   "pregunta": "¿Se toma la 'Gewinn- und Verlustrechnung nach Wettbewerben' (b21, pág. 23) como estado de resultados consolidado del grupo SK Rapid, que incluye a SK Rapid GmbH, igual que la 'Konsolidierte Bilanz' de la pág. 22?",
    "propuesta": "sí",
-   "tema": "otro",
+   "tema": "perimetro",
    "renglon": "",
-   "texto": "El índice muestra solo el balance consolidado en la pág. 22 y ningún bloque con la cuenta de resultados; podría estar en una página sin transcribir o como gráfico.",
+   "texto": "El título de b21 no dice consolidado ni individual, pero el balance de la misma sección (b19/b20) es 'Konsolidierte Bilanz des SK Rapid', y no hay un estado separado de SK Rapid GmbH.",
    "bloques": [
-    "b12",
-    "b13"
+    "b21",
+    "b19"
    ],
    "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan solo los importes de la columna GESAMT de b21 y se ignoran las columnas 'Nat. Wettbev.' e 'Int. Wettbev.'?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "Las columnas por competición solo reparten los mismos renglones que ya abre la columna GESAMT, sin desglosar ningún renglón adicional.",
+   "bloques": [
+    "b21"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "El índice solo trae el balance consolidado (b12 Aktiva, b13 Passiva), series de Bilanzsumme y EK-Bilanz (b14, b15) y comparativas sectoriales (b17, b19, b20). No aparece ningún bloque de estado de resultados (GuV) del ejercicio 2015/16, por eso sin_estado = true."
+ "observaciones": "El único estado de resultados del documento es b21: una P&L de gestión por competición (nacional/internacional), con columna GESAMT 2015/16 y comparativo 2014/15. El Jahresergebnis 2015/16 es 11.589.417 (= Geschäftsergebnis 3.714.856 + Transferergebnis 7.874.561). No hay notas que desglosen sus renglones. b24/b25 son benchmarks de clusters de ligas y b19/b20 son el balance; no se eligen."
 }

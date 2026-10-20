@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2010-11-2012-13.pdf",
- "generado": "2026-10-20T21:59:13.050Z",
- "frena": [
-  {
-   "etapa": "año",
-   "motivo": "alta-club.mjs dice ejercicio 2013 y quien.mjs --quien (el que usa el registro) dice 2011"
-  }
- ],
+ "generado": "2026-10-20T22:00:36.453Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del documento, 2026-10-09: Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH)",
   "gestión: ningún presidente confirmado cubre 2013 (cierre 2013-06-30); pregunta en la cola (no frena)"
@@ -788,8 +783,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 8,
   "lineasGasto": 15,
   "metaFilas": 2,

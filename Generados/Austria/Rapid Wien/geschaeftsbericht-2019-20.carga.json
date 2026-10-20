@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2019-20.pdf",
- "generado": "2026-10-20T21:59:13.765Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Transferauwendungen\" -> player_amortisation 0.6"
-  }
- ],
+ "generado": "2026-10-20T22:00:37.542Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del documento, 2026-10-09: Revisión del alta (Claude, 2026-10-09): el documento presenta solo el consolidado del Verein SK Rapid con su filial 100% SK Rapid GmbH)",
   "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-06-30); pregunta en la cola (no frena)"
@@ -255,9 +250,9 @@
     "amountNative": -4.919562,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -699,11 +694,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 4.919562,
    "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-20: Transferaufwendungen (gastos de traspasos de jugadores): categoría propuesta, igual que 2014",
    "destino": "expense",
    "amountNative": -4.919562
   },
@@ -814,8 +809,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 8,
   "lineasGasto": 16,
   "metaFilas": 2,
