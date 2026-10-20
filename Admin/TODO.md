@@ -24,6 +24,8 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
+Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 313 y el 51 quedan para más adelante (E).
+
 **A. En marcha**
 * 246: ids estables con mapa de alias; primero el diseño, para tu ok --> Datos 3
 * 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos), después del 246 --> Datos 3
@@ -33,7 +35,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 259: material de difusión (después de 241)
-* 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte
@@ -49,8 +50,11 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 257: skills que faltan
 * 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes corriendo en ningún worktree
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
-* 51: proceso de mails a clubes
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
+
+**E. Más adelante (Guido, 2026-10-20)**
+* 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
+* 51: proceso de mails a clubes
 
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
