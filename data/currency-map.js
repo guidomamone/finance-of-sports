@@ -23,6 +23,7 @@ const CURRENCY_META = {
   RUB: { scale: 1, unitSuffix: 'M' }, // Rusia
   NOK: { scale: 1, unitSuffix: 'M' },
   CHF: { scale: 1, unitSuffix: 'M' },
+  TRY: { scale: 1, unitSuffix: 'M' },
 };
 
 // Fallback para un código ISO sin entrada propia: nunca rompe ni muestra la unidad equivocada.
@@ -242,6 +243,7 @@ const FX_CLOSE = {
   'GBP@2023-07-31': { fx: 0.777424, source: 'market_close', label: 'Tipo spot del Bank of England al 2023-07-31' },
   'GBP@2022-07-31': { fx: 0.822233, source: 'market_close', label: 'Tipo spot del Bank of England, última rueda hábil antes del cierre (2022-07-29, 2022-07-31 no es día hábil)' },
   'CHF@2021-06-30': { fx: 0.9253, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2021-06-30' },
+  'TRY@2023-05-31': { fx: 20.6632, source: 'market_close', label: 'Döviz alış del TCMB al 2023-05-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve
@@ -281,6 +283,7 @@ const FX_PLAUSIBLE_RANGE = {
   RUB: [20, 140], // Rusia
   NOK: [4.5, 13],
   CHF: [0.65, 1.95],
+  TRY: [0.5, 70],
 };
 
 // checkFxSanity(): avisa por consola (warn, no error) si algún fx cae fuera del rango plausible de su moneda. Una moneda sin rango

@@ -48,6 +48,7 @@ window.RANKINGS_INDICE = {
   "pt-primeiraliga": [2023,16,18],
   "ru-pervayaliga": [2022,4,20],
   "ru-premierliga": [2025,16,16],
+  "tr-superlig": [2023,1,19],
 };
 window.RANKINGS_REGION = {
   mundo: { year:2025, total:256, clubs:[

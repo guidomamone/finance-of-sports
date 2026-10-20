@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 312 clubes, 1178 ejercicios, 21 países.
+TOTAL: 313 clubes, 1179 ejercicios, 22 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -382,5 +382,8 @@ RU (16)
   Sochi                  5 ejercicios (2021 a 2025), balance, RUB
   Spartak Moscow         5 ejercicios (2021 a 2025), balance, RUB
   Zenit                  5 ejercicios (2021 a 2025), balance, RUB
+
+TR (1)
+  Beşiktaş  1 ejercicio (2022/2023), balance, TRY, sin deuda/caja
 
 ===== CLUB-INDEX:END =====

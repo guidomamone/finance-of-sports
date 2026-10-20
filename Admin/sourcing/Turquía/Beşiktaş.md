@@ -35,3 +35,5 @@ No hizo falta pasar el WAF de `bjk.com.tr` — KAP solo alcanzó con el Browser 
 
 - Ninguna. Serie completa 2005/06-2023/24 (19 ejercicios).
 - Último chequeo: 2026-09-18.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2023 desde `Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf` (sourceId `besiktas-tr-futbol-bilanco-31-05-2023`).
