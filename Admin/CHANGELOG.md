@@ -17,6 +17,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 873 — Jev y Claude saben el país del club; tanda 3 (2026-10-20) [331 · 238 · godoycruz-ar, estudianteslp, gimnasiaesgrima-ar]
+
+- `jev-categorizar.mjs` y `categorizar-claude.mjs` reciben el país del club (`tools/pais-club.mjs`) y, a igual parecido, los ejemplos del mismo
+  país y después del mismo idioma salen primero. Medido: cambia la lista de ejemplos en 24 % de las consultas, no cambia años cargados. Sale el 331.
+- Votaciones tanda 3 y Gimnasia revotada con la escala nueva: Gimnasia LP queda en other_income con nota; Estudiantes LP 2023-24 revaluación de
+  jugadores a other_income; Godoy Cruz 2020 derechos de tanteo a other_income; cesiones en España siguen al documento.
+
 ## Versión 872 — Votaciones tanda 2 aplicadas; escala de criterios más objetiva (2026-10-20) [238 · hoffenheim-de, stuttgart-de, everton-gb, deportivopereira-co]
 
 - Votaciones tanda 2: Everton (venta a la matriz en assetSales), Pereira (bono de trayectoria a wages_squad), Hoffenheim y Stuttgart (officialPAT
