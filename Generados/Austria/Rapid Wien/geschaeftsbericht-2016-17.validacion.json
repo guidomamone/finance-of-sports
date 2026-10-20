@@ -1,32 +1,13 @@
 {
  "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf",
  "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.md",
- "mdSha1": "44469ccfb4b2f076bc52eaac3a42c4ab170e4a75",
+ "mdSha1": "ee798b794a08d7f809c57e0a3b08b6947dabc796",
  "modo": "digital",
- "motivoModo": "4 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 7958006 vs 7956006, 4296075 vs 4286075, 4202315 vs 4282215",
- "generado": "2026-10-20T22:02:01.708Z",
+ "motivoModo": null,
+ "generado": "2026-10-20T22:31:36.093Z",
  "fuentes": {
   "23": "pdftotext"
  },
- "confirmados": 113,
- "noConfirmados": [
-  {
-   "bloque": "b22",
-   "pagina": 23,
-   "linea": 1518,
-   "numero": "4.296.075",
-   "segundaLeyo": "4286075",
-   "sinSegunda": false,
-   "texto": "|  Rechtverwertung | 4.296.075 | 5.055.345 | 9.341.420 | 22% | 12.292.694 | -24%  |"
-  },
-  {
-   "bloque": "b22",
-   "pagina": 23,
-   "linea": 1546,
-   "numero": "2.226.318",
-   "segundaLeyo": null,
-   "sinSegunda": false,
-   "texto": "|  **JAHRESERGEBNIS** |  |  | **2.226.318** | **5%** | **11.589.415** | **-89%**  |"
-  }
- ]
+ "confirmados": 115,
+ "noConfirmados": []
 }

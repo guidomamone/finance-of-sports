@@ -3,14 +3,14 @@
   "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2016-17.pdf",
   "club": "rapidwien-at",
   "year": 2017,
-  "generatedAt": "2026-10-20T22:04:23.072Z",
+  "generatedAt": "2026-10-20T22:31:59.477Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
       "label": "Ticketing",
       "lado": "revenue",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         7.731656
       ],
@@ -20,7 +20,7 @@
       "label": "Sponsoring",
       "lado": "revenue",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         9.748078
       ],
@@ -30,67 +30,67 @@
       "label": "Hospitality (VIP)",
       "lado": "revenue",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         8.227783
       ],
-      "glosa": "Hospitalidad (VIP)"
+      "glosa": "Hospitality (VIP)"
     },
     {
       "label": "Merchandising",
       "lado": "revenue",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         3.328045
       ],
       "glosa": "Merchandising"
     },
     {
-      "label": "Rechtverwertung",
+      "label": "Rechteverwertung",
       "lado": "revenue",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         9.34142
       ],
-      "glosa": "Explotación de derechos de retransmisión"
+      "glosa": "Explotación de derechos"
     },
     {
       "label": "sonstige Erlöse",
       "lado": "revenue",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         3.271608
       ],
-      "glosa": "Otros ingresos de explotación"
+      "glosa": "Otros ingresos"
     },
     {
       "label": "Transferlöse",
       "lado": "revenue",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         2.302164
       ],
-      "glosa": "Ingresos por traspasos de jugadores"
+      "glosa": "Ingresos por traspasos"
     },
     {
-      "label": "Umsetzung Sponserleistungen",
+      "label": "Umsetzung Sponsorleistungen",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.465749
       ],
-      "glosa": "Costes de activación y ejecución de patrocinios"
+      "glosa": "Gastos de ejecución de patrocinios"
     },
     {
-      "label": "Aufwand Heimsziele",
+      "label": "Aufwand Heimspiele",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         3.920548
       ],
@@ -100,47 +100,47 @@
       "label": "Aufwand Hospitality (VIP)",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         3.039836
       ],
-      "glosa": "Gastos de hospitalidad (VIP)"
+      "glosa": "Gastos de hospitality (VIP)"
     },
     {
-      "label": "Warenersatz Merchandising",
+      "label": "Wareneinsatz Merchandising",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         2.255637
       ],
-      "glosa": "Coste de ventas y aprovisionamientos de merchandising"
+      "glosa": "Coste de ventas de merchandising"
     },
     {
       "label": "eigene Medien und Produktionskosten",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.254347
       ],
-      "glosa": "Costes de medios propios y producción"
+      "glosa": "Gastos de medios propios y producción"
     },
     {
       "label": "Personalaufwand Sport",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         16.748905
       ],
       "glosa": "Gastos de personal deportivo"
     },
     {
-      "label": "Sonstige Personalaufwand",
+      "label": "Sonstiger Personalaufwand",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         4.641309
       ],
@@ -150,81 +150,81 @@
       "label": "Abgaben, Gebühren und Strafen",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.38219
       ],
-      "glosa": "Tributos, tasas y sanciones"
+      "glosa": "Tasas, tributos y sanciones"
     },
     {
       "label": "Spiel- und Trainingsbetrieb",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         1.613404
       ],
-      "glosa": "Gastos de partidos y entrenamientos"
+      "glosa": "Gastos de competición y entrenamiento"
     },
     {
       "label": "Management-Gebühren und Vermittlungsprovisionen",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.827573
       ],
       "glosa": "Honorarios de gestión y comisiones de intermediación"
     },
     {
-      "label": "Stadion-, Mail- und Instandhaltungsaufwand",
+      "label": "Stadion-, Miet- und Instandhaltungsaufwand",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         2.327155
       ],
-      "glosa": "Gastos de estadio, correo y mantenimiento"
+      "glosa": "Gastos de estadio, alquiler y mantenimiento"
     },
     {
       "label": "Klubservice, Events, PR und Marketing",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.767029
       ],
-      "glosa": "Servicios al club, eventos, relaciones públicas y marketing"
+      "glosa": "Servicios del club, eventos, relaciones públicas y marketing"
     },
     {
-      "label": "Verwaltung-, Versicherungs- und sonst. Aufwand",
+      "label": "Verwaltung-, Versicherunungs- und sonst. Aufwand",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         3.205679
       ],
-      "glosa": "Gastos de administración, seguros y otros gastos de explotación"
+      "glosa": "Gastos de administración, seguros y otros gastos"
     },
     {
       "label": "Abschreibungen für Abnutzung",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         1.68813
       ],
-      "glosa": "Dotación para amortizaciones"
+      "glosa": "Amortizaciones"
     },
     {
       "label": "Transferaufwendungen",
       "lado": "expense",
       "page": 23,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         2.8429
       ],
-      "glosa": "Gastos por traspasos de jugadores"
+      "glosa": "Gastos por traspasos"
     }
   ]
 }
