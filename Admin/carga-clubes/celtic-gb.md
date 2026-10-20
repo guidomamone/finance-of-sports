@@ -85,3 +85,7 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+## Gestión
+
+Peter Lawwell (Chairman, `data/gestiones/gb.js`): `desde` 2023-01-01 (anuncio de cambio de Board, RNS "Board Change", 2022-12), `hasta` 2025-12-31 (el fin sale de Wikipedia). Anotado por Onboarding 4 (2026-10-20); la fuente es la que dejó Finanzas 5.
