@@ -1,0 +1,78 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.md",
+ "club": "raallalouviere-be",
+ "year": 2021,
+ "generatedAt": "2026-10-20T20:59:57.312Z",
+ "rubrosHuella": "0422e4a2f4511a874ddfe3f2b1283e3289d1972f",
+ "jevHuella": "f53fac51dc060e407aab74ae021157492e430c5a",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0072888,
+ "rubros": [
+  {
+   "label": "Marge brute",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto",
+   "page": 11,
+   "pendiente": true,
+   "jev": "lump_football_operations",
+   "jevConf": 0.78,
+   "escalon": 2,
+   "categoria": "lump_football_operations",
+   "confianza": 0.75,
+   "motivo": "Margen bruto abreviado agrupa cifra de negocios y gastos; club usa lump para 'Chiffre d'affaires'"
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones",
+   "page": 11,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material",
+   "page": 11,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones)",
+   "page": 11,
+   "pendiente": false,
+   "ya": "exceptional_items",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "exceptional_items",
+   "confianza": 0.98
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 11,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

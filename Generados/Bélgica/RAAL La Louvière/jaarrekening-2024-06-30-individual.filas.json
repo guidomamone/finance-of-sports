@@ -1,0 +1,257 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.md",
+ "mdSha1": "26efdf1b22768534eb9fec983d4d7f062b626ca2",
+ "ubicacionSha1": "54c9db2a69ebdc4e5e99f5f439225e3477909256",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T20:58:58.533Z",
+ "ubicacion": {
+  "estado": [
+   "b13"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b24"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b13",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no imprime la escala; en las cuentas anuales belgas (modelo BNB) los importes suelen estar en euros (unidades), pero aquí no se indica."
+  },
+  {
+   "bloque": "b24",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no imprime la escala; los códigos 76/66 coinciden con el estado (2.059 y 1.182)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b13",
+   "linea": 995,
+   "etiqueta": "Marge brute",
+   "actual": "1.045.134",
+   "anterior": "1.098.287",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 996,
+   "etiqueta": "Dont: produits d'exploitation non récurrents",
+   "actual": "2.059",
+   "anterior": "10.610",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 999,
+   "etiqueta": "Rémunérations, charges sociales et pensions",
+   "actual": "1.912.837",
+   "anterior": "1.479.328",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1000,
+   "etiqueta": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "actual": "90.519",
+   "anterior": "76.505",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1001,
+   "etiqueta": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+   "actual": "10.642",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1003,
+   "etiqueta": "Autres charges d'exploitation",
+   "actual": "7.208",
+   "anterior": "32.340",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1005,
+   "etiqueta": "Charges d'exploitation non récurrentes",
+   "actual": "1.182",
+   "anterior": "3.702",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1006,
+   "etiqueta": "Bénéfice (Perte) d'exploitation",
+   "actual": "-977.254",
+   "anterior": "-493.587",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1007,
+   "etiqueta": "Produits financiers",
+   "actual": "284",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1008,
+   "etiqueta": "Produits financiers récurrents",
+   "actual": "284",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Produits financiers"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1011,
+   "etiqueta": "Charges financières",
+   "actual": "23.010",
+   "anterior": "18.068",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1012,
+   "etiqueta": "Charges financières récurrentes",
+   "actual": "23.010",
+   "anterior": "18.068",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Charges financières"
+  },
+  {
+   "bloque": "b13",
+   "linea": 1014,
+   "etiqueta": "Bénéfice (Perte) de l'exercice avant impôts",
+   "actual": "-999.980",
+   "anterior": "-511.655",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1017,
+   "etiqueta": "Impôts sur le résultat",
+   "actual": "1.974",
+   "anterior": "709",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1018,
+   "etiqueta": "Bénéfice (Perte) de l'exercice",
+   "actual": "-1.001.954",
+   "anterior": "-512.364",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1021,
+   "etiqueta": "Bénéfice (Perte) de l'exercice à affecter",
+   "actual": "-1.001.954",
+   "anterior": "-512.364",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b24",
+   "linea": 1426,
+   "etiqueta": "(66A)",
+   "actual": "1.182",
+   "anterior": "3.702",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Charges d'exploitation non récurrentes"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 1018,
+  "actual": "-1.001.954",
+  "anterior": "-512.364"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Marge brute' (L995) como ingreso neto, dado que el modelo abreviado no separa Chiffre d'affaires (70) ni Approvisionnements (60/61)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Marge brute",
+   "texto": "El estado abreviado solo informa la marge brute (L995); las ventas brutas y compras no están impresas.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se asume que los importes de b13 y b24 están en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque imprime la escala; el formato BNB usa euros.",
+   "bloques": [
+    "b13",
+    "b24"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga la fila 9087 '35,8 / 33,3' (L1421) por ser personal promedio (ETP) y no un importe?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El código 9087 corresponde al número medio de trabajadores, no a un importe monetario (L1421).",
+   "bloques": [
+    "b24"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas 76/76A de b24 (L1422-L1423) porque duplican 'Dont: produits d'exploitation non récurrents' ya incluido en la marge brute?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Dont: produits d'exploitation non récurrents",
+   "texto": "2.059 de L1423 es el mismo importe de L996, que es un 'dont' de la marge brute.",
+   "bloques": [
+    "b13",
+    "b24"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas abreviadas modelo BNB. La nota b24 solo desglosa los resultados no recurrentes (76A = 2.059; 66A = 1.182) y coincide con el estado. La fila 66 (L1425) es el total de esa nota y no se repite. La fila 'Dont' (L996) está incluida dentro de la marge brute, no se suma aparte."
+}

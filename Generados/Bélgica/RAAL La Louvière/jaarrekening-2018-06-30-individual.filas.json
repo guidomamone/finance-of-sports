@@ -1,0 +1,166 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md",
+ "mdSha1": "02f961d131c39f16f475b730ad50776ecd03d56e",
+ "ubicacionSha1": "e042541c994cd7f5f0478daddd7962fd28881382",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T20:56:20.656Z",
+ "ubicacion": {
+  "estado": [
+   "b14"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b14",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la unidad; los modelos belgas abreviados suelen estar en euros (unidades), pero no está impreso en el bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b14",
+   "linea": 701,
+   "etiqueta": "Marge brute d'exploitation",
+   "actual": "430.494",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 705,
+   "etiqueta": "Rémunérations, charges sociales et pensions",
+   "actual": "578.307",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 706,
+   "etiqueta": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "actual": "86.931",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 709,
+   "etiqueta": "Autres charges d'exploitation",
+   "actual": "2.507",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 712,
+   "etiqueta": "Bénéfice (Perte) d'exploitation",
+   "actual": "-237.251",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 717,
+   "etiqueta": "Charges financières",
+   "actual": "1.578",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 718,
+   "etiqueta": "Charges financières récurrentes",
+   "actual": "1.578",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 720,
+   "etiqueta": "Bénéfice (Perte) de l'exercice avant impôts",
+   "actual": "-238.829",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 723,
+   "etiqueta": "Impôts sur le résultat",
+   "actual": "178",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 724,
+   "etiqueta": "Bénéfice (Perte) de l'exercice",
+   "actual": "-239.007",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 727,
+   "etiqueta": "Bénéfice (Perte) de l'exercice à affecter",
+   "actual": "-239.007",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 724,
+  "actual": "-239.007",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado b14 en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b14 (L696-L727) no imprime la unidad; en el modelo abreviado belga las cifras van en euros.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Marge brute d'exploitation' (L701, 430.494) como único dato de ingresos, sin cifra de negocios separada?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Marge brute d'exploitation",
+   "texto": "Modelo abreviado: L701 es margen bruto (ingresos netos de compras y servicios); el Chiffre d'affaires (L703) no se informa.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Esquema abreviado belga sin columna de ejercicio anterior con importes (primer ejercicio o columna vacía). No hay total de ingresos ni de gastos impresos. Los gastos de explotación figuran como importes positivos."
+}

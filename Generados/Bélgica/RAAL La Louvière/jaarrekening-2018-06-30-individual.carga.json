@@ -1,0 +1,316 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.pdf",
+ "generado": "2026-10-20T21:00:48.841Z",
+ "frena": [],
+ "avisos": [
+  "primer ejercicio de la sociedad (14 meses, desde 2017-05-12): la columna del año anterior no tiene importes; se carga como el año, con nota pública",
+  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual); 9 documento(s) mirados)"
+ ],
+ "ejercicio": {
+  "clubId": "raallalouviere-be",
+  "year": 2018,
+  "cierre": "2018-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Marge brute d'exploitation",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.430494,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Rémunérations, charges sociales et pensions",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.578307,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.086931,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Autres charges d'exploitation",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.002507,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2018-06-30",
+   "sourceId": "raallalouviere-be-jaarrekening-2018-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.001578,
+   "tax": -0.000178,
+   "extraRows": [
+    {
+     "label": "Charges financières récurrentes",
+     "value": -0.001578
+    },
+    {
+     "label": "Impôts sur le résultat",
+     "value": -0.000178
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Marge brute d'exploitation",
+     "lado": "revenue",
+     "importe": 0.430494,
+     "motivo": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.430494,
+   "officialTotalExpenses": 0.667745,
+   "officialPAT": -0.239007
+  },
+  "source": {
+   "id": "raallalouviere-be-jaarrekening-2018-06-30-individual",
+   "clubId": "raallalouviere-be",
+   "title": "RAAL La Louvière SC — jaarrekening-2018-06-30-individual (ejercicio 2018)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "otro",
+  "meses": 14,
+  "inicio": "2017-05-12",
+  "cierre": "2018-06-30",
+  "cierreDe": "período del formulario (to-do 298 f)",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "et relatifs à l'exercice couvrant la période du 12-05-2017 au 30-06-2018"
+  },
+  "confianza": "alta"
+ },
+ "primerEjercicio": {
+  "meses": 14,
+  "inicio": "2017-05-12",
+  "cierre": "2018-06-30"
+ },
+ "clubId": "raallalouviere-be",
+ "year": 2018,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): comptes annuels del ejercicio 12-05-2017 a 30-06-2018; no es presupuesto",
+   "evidencia": "jaarrekening-2018-06-30-individual.md L26",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "seleccion": {
+  "filas": 6,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Marge brute d'exploitation",
+   "page": 11,
+   "native": 0.430494,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.430494,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
+   "destino": "revenue",
+   "amountNative": 0.430494
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "page": 11,
+   "native": 0.578307,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.578307,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.578307
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "page": 11,
+   "native": 0.086931,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.086931,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No son derechos de jugadores: el único inmaterial del estado 6.2.1 son \"Frais de développement\" (actés 26.000); el resto de los 558.871 es material (actés 347.123 + 105.781 + 72.251 + otros). Sin derechos de jugadores no corresponde player_amortisation. Mismo criterio que Dender (630 combinado a dep [Estado de inmovilizados incorporales 6.2.1, \"FRAIS DE DÉVELOPPEMENT\", Actés 8071 = 26.000; materiales Actés 8271 = 347.123, 8272 = 105.781, 8273 = 72.251; cuenta de resultados pág. 7: 630 = 558.871]",
+   "destino": "expense",
+   "amountNative": -0.086931
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "page": 11,
+   "native": 0.002507,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.002507,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002507
+  },
+  {
+   "label": "Charges financières récurrentes",
+   "page": null,
+   "native": -0.001578,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Impôts sur le résultat",
+   "page": null,
+   "native": -0.000178,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.430494,
+  "expSum": -0.667745,
+  "officialTotalRevenue": 0.430494,
+  "officialTotalExpenses": 0.667745,
+  "officialPAT": -0.239007,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.239007,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.430494
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 0.667745
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no aparece en los rosters cacheados de 2018 (be-proleague, be-challengerproleague, be-div1amateur): puede haber jugado otra división",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2018,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2018-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2018-06-30) y contenido del .md (2 de 2 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): comptes annuels del ejercicio 12-05-2017 a 30-06-2018; no es presupuesto",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2018-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2018-06-30 = 0.85778 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2018-06-29, 2018-06-30 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "raallalouviere-be-jaarrekening-2018-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no aparece en los rosters cacheados de 2018 (be-proleague, be-challengerproleague, be-div1amateur): puede haber jugado otra división",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 3,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

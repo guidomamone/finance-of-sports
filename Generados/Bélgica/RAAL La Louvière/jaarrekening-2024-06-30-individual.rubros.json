@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.pdf",
+  "club": "raallalouviere-be",
+  "year": 2024,
+  "generatedAt": "2026-10-20T20:58:58.778Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Marge brute",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.045134
+      ],
+      "glosa": "Margen bruto"
+    },
+    {
+      "label": "Rémunérations, charges sociales et pensions",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.912837
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.090519
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.010642
+      ],
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.007208
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Charges d'exploitation non récurrentes",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.001182
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

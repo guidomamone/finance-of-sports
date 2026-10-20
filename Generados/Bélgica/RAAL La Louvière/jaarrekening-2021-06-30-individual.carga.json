@@ -1,0 +1,320 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.pdf",
+ "generado": "2026-10-20T21:00:49.203Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual); 9 documento(s) mirados)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-0.46689); queda la suma, verificada por el resultado del ejercicio"
+ ],
+ "ejercicio": {
+  "clubId": "raallalouviere-be",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Marge brute",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.480032,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Rémunérations, charges sociales et pensions",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.306132,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.104875,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.03,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Autres charges d'exploitation",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.055883,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-06-30",
+   "sourceId": "raallalouviere-be-jaarrekening-2021-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.012096,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Produits financiers récurrents",
+     "value": 0.000001
+    },
+    {
+     "label": "Charges financières récurrentes",
+     "value": -0.012097
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Marge brute",
+     "lado": "revenue",
+     "importe": 0.480032,
+     "motivo": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.480032,
+   "officialTotalExpenses": 0.46689,
+   "officialPAT": -0.028954
+  },
+  "source": {
+   "id": "raallalouviere-be-jaarrekening-2021-06-30-individual",
+   "clubId": "raallalouviere-be",
+   "title": "RAAL La Louvière SC — jaarrekening-2021-06-30-individual (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "inicio": "2020-07-01",
+  "cierre": "2021-06-30",
+  "cierreDe": "período del formulario (to-do 298 f)",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "et relatifs à l'exercice couvrant la période du 01-07-2020 au 30-06-2021"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "raallalouviere-be",
+ "year": 2021,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 7,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Marge brute",
+   "page": 11,
+   "native": 0.480032,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.480032,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations",
+   "destino": "revenue",
+   "amountNative": 0.480032
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "page": 11,
+   "native": 0.306132,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.306132,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.306132
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "page": 11,
+   "native": 0.104875,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.104875,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No son derechos de jugadores: el único inmaterial del estado 6.2.1 son \"Frais de développement\" (actés 26.000); el resto de los 558.871 es material (actés 347.123 + 105.781 + 72.251 + otros). Sin derechos de jugadores no corresponde player_amortisation. Mismo criterio que Dender (630 combinado a dep [Estado de inmovilizados incorporales 6.2.1, \"FRAIS DE DÉVELOPPEMENT\", Actés 8071 = 26.000; materiales Actés 8271 = 347.123, 8272 = 105.781, 8273 = 72.251; cuenta de resultados pág. 7: 630 = 558.871]",
+   "destino": "expense",
+   "amountNative": -0.104875
+  },
+  {
+   "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+   "page": 11,
+   "native": 0.03,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.03,
+   "cat": "exceptional_items",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.03
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "page": 11,
+   "native": 0.055883,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.055883,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.055883
+  },
+  {
+   "label": "Produits financiers récurrents",
+   "page": null,
+   "native": 0.000001,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Charges financières récurrentes",
+   "page": null,
+   "native": -0.012097,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.480032,
+  "expSum": -0.46689,
+  "officialTotalRevenue": 0.480032,
+  "officialTotalExpenses": 0.46689,
+  "officialPAT": -0.028954,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.028954,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.480032
+  }
+ },
+ "liga": {
+  "valor": "be-div2amateur",
+  "fuente": "roster cacheado de \"2020–21 Belgian Division 2\" (tools/club-league-reference/be.json), coincidencia única por palabras \"La Louvière\" = \"RAAL La Louvière\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2021-06-30) y contenido del .md (8 de 8 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-06-30 = 0.8415 (Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "raallalouviere-be-jaarrekening-2021-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "be-div2amateur",
+   "fuente": "roster cacheado de \"2020–21 Belgian Division 2\" (tools/club-league-reference/be.json), coincidencia única por palabras \"La Louvière\" = \"RAAL La Louvière\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 4,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

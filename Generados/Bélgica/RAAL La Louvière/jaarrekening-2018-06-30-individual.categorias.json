@@ -1,0 +1,65 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md",
+ "club": "raallalouviere-be",
+ "year": 2018,
+ "generatedAt": "2026-10-20T20:59:54.750Z",
+ "rubrosHuella": "cec2cce5eec8432741b989235802e480051889d8",
+ "jevHuella": "7e0d1ef85ef1dd3d2532bb660772663773187b40",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.021246,
+ "rubros": [
+  {
+   "label": "Marge brute d'exploitation",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto de explotación",
+   "page": 11,
+   "pendiente": true,
+   "jev": "other_income",
+   "jevConf": 0.85,
+   "escalon": 2,
+   "categoria": "lump_football_operations",
+   "confianza": 0.6,
+   "motivo": "Margen bruto en esquema abreviado belga sustituye cifra de negocios; club usa 'Chiffre d'affaires' como bolsón"
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones",
+   "page": 11,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material",
+   "page": 11,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 11,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

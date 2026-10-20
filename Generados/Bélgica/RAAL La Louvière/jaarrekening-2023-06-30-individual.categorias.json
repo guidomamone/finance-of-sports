@@ -1,0 +1,81 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.md",
+ "club": "raallalouviere-be",
+ "year": 2023,
+ "generatedAt": "2026-10-20T21:00:48.463Z",
+ "rubrosHuella": "09865e679397bddf9e7d3a3f0ca25a094a57c758",
+ "jevHuella": "d09bc1c613128eed61bf109dc26874bde3010454",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Marge brute",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto",
+   "page": 11,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 2,
+   "confCache": 0.75,
+   "motivo": "Margen bruto abreviado agrupa cifra de negocios y gastos; club usa lump para 'Chiffre d'affaires'",
+   "jev": "lump_football_operations",
+   "jevConf": 0.78,
+   "desdeCache": true,
+   "categoria": "lump_football_operations",
+   "confianza": 0.75
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones",
+   "page": 11,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material",
+   "page": 11,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 11,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Charges d'exploitation non récurrentes",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de explotación no recurrentes",
+   "page": 11,
+   "pendiente": false,
+   "ya": "exceptional_items",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "exceptional_items",
+   "confianza": 1
+  }
+ ]
+}

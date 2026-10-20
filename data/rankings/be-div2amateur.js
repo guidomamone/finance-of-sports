@@ -12,6 +12,7 @@ window.RANKINGS["be-div2amateur"] = {
   },
   2022: {
     leagueSize: 48,
+    sinDato: ["raallalouviere-be"],
     wiki: {"t":"2021–22 Belgian Division 2","lang":"en","at":"2026-10-19","n":48},
     clubs: [
       { id:"lokerentemse-be", revenue:1.571, reportType:"official_balance_sheet",
@@ -21,6 +22,7 @@ window.RANKINGS["be-div2amateur"] = {
   },
   2021: {
     leagueSize: 49,
+    sinDato: ["raallalouviere-be"],
     wiki: {"t":"2020–21 Belgian Division 2","lang":"en","at":"2026-10-19","n":49},
     clubs: [
       { id:"lokerentemse-be", revenue:1.048, reportType:"official_balance_sheet",

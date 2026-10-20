@@ -1,0 +1,139 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.md",
+ "generado": "2026-10-20T21:00:46.778Z",
+ "scriptHuella": "b54df45c8846",
+ "estado": "ok",
+ "clubId": "raallalouviere-be",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.000001000000000139778
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 1.098287 en este documento y 1.098287 en jaarrekening-2024-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 0.836649 en jaarrekening-2022-06-30-individual.pdf y 0.836649 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
+  }
+ ],
+ "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L1029-L1052, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer que no afecta la carga: L1455 es el efectivo medio de personal, no un monto monetario; además el encabezado 'Intérêts portés à l'actif' no corresponde a las filas.",
+  "duda de extraer que no afecta la carga: Ni b13 ni b24 imprimen la escala; las cuentas anuales BNB suelen estar en euros."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.098287,
+  "gastos": 1.591875,
+  "financiero": -0.018068,
+  "impuesto": -0.000709,
+  "resultadoImpreso": -0.512364,
+  "resultadoParaCargar": -0.512364,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Marge brute",
+   "lado": "ingreso",
+   "M": 1.098287,
+   "pagina": 11,
+   "linea": 1029,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Rémunérations, charges sociales et pensions",
+   "lado": "gasto",
+   "M": 1.479328,
+   "pagina": 11,
+   "linea": 1033,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": "gasto",
+   "M": 0.076505,
+   "pagina": 11,
+   "linea": 1034,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Autres charges d'exploitation",
+   "lado": "gasto",
+   "M": 0.03234,
+   "pagina": 11,
+   "linea": 1037,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Charges d'exploitation non récurrentes",
+   "lado": "gasto",
+   "M": 0.003702,
+   "pagina": 11,
+   "linea": 1039,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Charges financières récurrentes",
+   "M": -0.018068,
+   "linea": 1046
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Impôts sur le résultat",
+   "M": -0.000709,
+   "linea": 1051
+  }
+ ]
+}

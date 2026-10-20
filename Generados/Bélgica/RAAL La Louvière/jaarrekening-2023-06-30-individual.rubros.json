@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.pdf",
+  "club": "raallalouviere-be",
+  "year": 2023,
+  "generatedAt": "2026-10-20T20:58:58.751Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Marge brute",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.098287
+      ],
+      "glosa": "Margen bruto"
+    },
+    {
+      "label": "Rémunérations, charges sociales et pensions",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        1.479328
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.076505
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.03234
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Charges d'exploitation non récurrentes",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.003702
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}
