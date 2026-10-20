@@ -20,6 +20,13 @@ const vikingnoRevenueLinesByYear = {
     { rawLabel:'Medieinntekter NTF', normalizedCategory:'broadcasting', amountNative:8.962228, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftsinntekt', normalizedCategory:'other_income', amountNative:11.139168, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Inntekt fra samarbeidsavtaler', normalizedCategory:'sponsorship_commercial', amountNative:46.427956, disclosureLevel:'aggregated' },
+    { rawLabel:'Billettinntekt fra kamper', normalizedCategory:'matchday_competition', amountNative:12.756143, disclosureLevel:'aggregated' },
+    { rawLabel:'Medieinntekter NTF', normalizedCategory:'broadcasting', amountNative:15.006455, disclosureLevel:'aggregated' },
+    { rawLabel:'Netto gevinst ved salg av spillere', normalizedCategory:'player_sales', amountNative:0.878347, disclosureLevel:'aggregated' },
+    { rawLabel:'Annen driftsinntekt', normalizedCategory:'other_income', amountNative:28.196484, disclosureLevel:'aggregated' },
+  ],
 };
 const vikingnoExpenseLinesByYear = {
   2025: [
@@ -52,6 +59,16 @@ const vikingnoExpenseLinesByYear = {
     { rawLabel:'Avskrivning på varige driftsmidler og immaterielle eiendeler', normalizedCategory:'depreciation', amountNative:-7.690523, disclosureLevel:'aggregated' },
     { rawLabel:'Nedskrivning av varige driftsmidler og immaterielle eiendeler', normalizedCategory:'other_expenses', amountNative:-3.015783, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-36.197536, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Lønninger', normalizedCategory:'wages_squad', amountNative:-4.036896, disclosureLevel:'aggregated' },
+    { rawLabel:'Arbeidsgivenavgift', normalizedCategory:'wages_squad', amountNative:-1.009076, disclosureLevel:'aggregated' },
+    { rawLabel:'Personalkostnader fra Viking FK', normalizedCategory:'wages_squad', amountNative:-33.182545, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnad (OTP)', normalizedCategory:'wages_squad', amountNative:-0.163189, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre personalkostnader', normalizedCategory:'wages_squad', amountNative:-1.261783, disclosureLevel:'aggregated' },
+    { rawLabel:'Ordinære avskrivninger', normalizedCategory:'depreciation', amountNative:-7.924786, disclosureLevel:'aggregated' },
+    { rawLabel:'Nedskrivninger', normalizedCategory:'player_impairment', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-54.059334, disclosureLevel:'aggregated' },
   ],
 };
 const vikingnoFiscalYearMeta = {
@@ -104,6 +121,22 @@ const vikingnoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:72.329234, officialTotalExpenses:78.718463, officialPAT:-9.429485,
   },
+  2019: {
+    currency:'NOK', fxRef:'NOK@2019-12-31',
+    sourceId:'viking-no-aarsregnskap-viking-fotball-as-2019',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-2.655345, tax:0,
+    extraRows: [
+      {label:'Annen renteinntekt', value:0.083976},
+      {label:'Annen rentekostnad', value:-2.745855},
+      {label:'Annen finanskostnad', value:0.006534},
+      {label:'Skattekostnad på ordinært resultat', value:0},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:103.265385, officialTotalExpenses:101.637609, officialPAT:-1.027569,
+  },
 };
 const vikingnoPresupuestoOverlayByYear = {};
 
@@ -133,6 +166,11 @@ Object.assign(sources, {
   'viking-no-aarsregnskap-viking-fotball-as-2018': {
     id:'viking-no-aarsregnskap-viking-fotball-as-2018', clubId:'viking-no',
     title:'Viking Fotball AS — aarsregnskap-viking-fotball-as-2018 (ejercicio 2018)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'viking-no-aarsregnskap-viking-fotball-as-2019': {
+    id:'viking-no-aarsregnskap-viking-fotball-as-2019', clubId:'viking-no',
+    title:'Viking Fotball AS — aarsregnskap-viking-fotball-as-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

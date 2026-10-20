@@ -75,6 +75,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2019 Eliteserien","lang":"en","at":"2026-09-28","n":16},
     clubs: [
+      { id:"viking-no", revenue:11.761, reportType:"official_balance_sheet",
+        sourceId:"viking-no-aarsregnskap-viking-fotball-as-2019",
+        mix:[["Comercial / Sponsors",5.288],["Estadio",1.453],["Televisión",1.709],["Venta de Jugadores",0.1],["Otros ingresos",3.211]] },
       { id:"sarpsborg08-no", revenue:10.834, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2019",
         mix:[["Cuotas Sociales",0.076],["Comercial / Sponsors",3.68],["Estadio",0.626],["Televisión",0.87],["Premios por competencias",0.21],["Venta de Jugadores",3.528],["Otros ingresos",1.845]] },
