@@ -25,15 +25,14 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (en marcha)**
-* 238 (solo lo gratis o de centavos; lo caro queda afuera por ahora): falta Rapid Wien 2013-2023 y 2025 (~US$ 0,15 por documento, lote 125) y volver a correr Sporting CP 2008-10 (destrabado); hecho eso, el 238 se cierra --> Onboarding 4
-* 283: Vålerenga y Aalesund: la suma de las dos entidades ya está en main (CHANGELOG 862); falta cargar Vålerenga 2022 y 2023 (lote 126). Para Pantallas: el resultado repite etiquetas de las dos entidades --> Onboarding 4
+* 238 (solo lo gratis o de centavos; lo caro queda afuera por ahora): cargados Rapid Wien, Sporting 2008-10, Benfica 2014-15 y la tanda 1 de votaciones; falta aplicar los casos con precedente del triage (`Admin/registros/triage-*-2026-10-20.md`) y la tanda 2 de votaciones (Auditora); hecho eso, el 238 se cierra --> Onboarding 6 y Auditora
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
 * 245 fase 2: el JSON pasa a ser la fuente y el `-data.js` se genera desde ahí (D1 y D2 decididos)
 
-
 **C. Pantallas y distribución (después del 246)**
+* Vålerenga: la tabla de Finanzas repite etiquetas de las dos entidades sumadas (dos «Lønnskostnad»); mostrar de qué entidad es cada una
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 259: material de difusión (después de 241)
@@ -118,11 +117,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    queda Go Ahead Eagles 2025 (sin canal público: candidato a mail, sin outreach) (Lazio 2006 ya salió de Wayback; Roma 2022 queda pendiente por decisión de Guido: no hay informe del consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
    cambian de informe (los dos están bajados). En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
-283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
-   FLI los sueldos, que el AS le paga como transferencia (Vålerenga Elite 2023: 85,4 M de sueldos; el AS le transfiere 87,5 M); ninguno
-   consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
-   Vålerenga: 40 `.md` de subagentes que cortaron por el límite de uso están SIN trackear y SIN verificar en
-   fos-onboarding (algunos sin mirar las imágenes): validarlos con `pipeline.mjs --lista Admin/lotes/transcribir-valerenga.txt`. Los PDFs sin `.md` no se transcriben (Guido, 2026-10-20).
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
    contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
    compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil), sin silenciar ni mover nada; va con el 278.

@@ -22,6 +22,7 @@ que dice `ESTADO.md` era verdad ese día.
 - Cada `## REGLA:` de categoría en CONVENCIONES-DATOS lleva `CATEGORÍA (prompt)` y `EJEMPLO-CATEGORÍA`; `tools/reglas-categoria.mjs --escribir`
   registra los ejemplos en `categorias-aprendidas.jsonl` y `categorizar-claude.mjs` lee las frases en el prompt. Medido: 0 años cargados cambian.
   Aprobado por la Auditora. Sale el 329.
+- Sale el 283: Vålerenga 2022 y 2023 cargados sumando el AS y el Elite (Aalesund, cuando haya los dos documentos del mismo año).
 
 ## Versión 870 — Benfica 2014-15; correcciones de la tanda 1 (2026-10-20) [238 · 329 · 330 · benfica-pt, agf-dk, mechelen-be, rosariocentral]
 
