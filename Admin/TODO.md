@@ -26,7 +26,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **A. Cerrar lo abierto (en marcha)**
 * 238 (solo lo gratis o de centavos; lo caro queda afuera por ahora): las 27 propuestas listas ya estaban en el sitio; cargados OH Leuven 2020 y Rapid Wien 2024 (alta); falta Rapid Wien 2013-2023 y 2025 (~US$ 0,15 por documento, lote 125); hecho eso, el 238 se cierra --> Onboarding 4
-* 328: carga con tokens de sesión: las 4 tools están (CHANGELOG 860) y el texto de la skill está en `Admin/carga-con-tokens-328.md`, sección 2; espera tu ok
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
 * 246: ids estables con mapa de alias (antes de los links compartibles)
@@ -206,7 +205,3 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     `Admin/outreach/checkin-2026-10-24.md`; hay una tarea programada que lo pregunta, el archivo es el respaldo.
 327. CHEQUEOS QUE DEJÓ EL 255 (2026-10-20). Los 12 de la sección 4 de `Admin/Archive/consolidar-reglas-255.md`: elegir cuáles se automatizan
    (hook o audit.js) y hacerlos con el circuito de Pipeline. Nada urgente.
-328. CARGA CON TOKENS DE SESIÓN, PASO A PASO (pedido de Guido, 2026-10-20). Cuando una etapa paga (localizar, extraer, Jev, IA) se
-   reemplaza con tokens de sesión, cada sesión pierde minutos viendo cómo hacer la carga a mano y que quede reproducible por el script.
-   Escribir los pasos ya armados (qué archivos escribe la sesión, con qué huellas, qué ajustes, cómo se verifica) como skill o sección
-   de `club-or-year-onboarding`, con el ok de Guido sobre el texto. --> Docs 1

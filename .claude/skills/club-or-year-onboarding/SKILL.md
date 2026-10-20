@@ -73,6 +73,12 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 3. Medir antes y después con los lotes de prueba (sección 5).
 4. Un commit por cambio. La tool lleva cabecera y comentarios largos; `Admin/PIPELINE.md` queda al día.
 
+### c) Cargar con tokens de sesión
+
+Si Guido pide cargar «con tokens» (sin localizar, extraer, Jev ni Claude por API), el procedimiento está en `carga-con-tokens.md`, en esta carpeta: la sesión escribe la
+especificación de las filas y las respuestas de categoría, y las tools arman los archivos y corren el resto. No edita `tools/`: lo que falte va a
+`Admin/registros/frenados-por-script.jsonl`.
+
 ## 4. Reglas de Guido
 
 - **Un cambio por vez.** No mezclar varios arreglos en una tanda.

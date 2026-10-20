@@ -61,3 +61,4 @@ Qué hay hoy:
 - `sesion-proyecto-2026-10-18.md` — copia del cierre de proyecto (250 y 244), pasada en la 737; la rama siguió con el 300.
 - `sesion-pipeline-2026-10-18-b.md` y `sesion-pantallas-2026-10-18-g.md` — copias de los cierres en el merge de la 738.
 - `consolidar-reglas-255.md` — inventario del to-do 255 (reglas repetidas y contradichas, las 27 propuestas aplicadas y los 12 chequeos que quedan en el 327). Archivado en la 853.
+- `carga-con-tokens-328.md` — propuesta del to-do 328 (cómo se hacía, las 4 tools y el texto aprobado). Aplicada en `club-or-year-onboarding/carga-con-tokens.md`. Archivado en la 863.

@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 863 — Cargar con tokens de sesión, paso a paso (2026-10-20) [328]
+
+- Skill `club-or-year-onboarding`: sección 3 c) y archivo nuevo `carga-con-tokens.md` (texto aprobado por Guido): la especificación con
+  armar-a-mano, verificar, Jev y Claude con `--desde-sesion`, y el lote con `--sin-api`. Sale el 328.
+
 ## Versión 862 — Sumar dos entidades en un año (2026-10-20) [283 · valerenga-no, aalesund-no]
 
 - `cargar.mjs` suma el AS y el Elite/FLI con el ajuste `suma-con` (`tools/suma-entidades.mjs`), sin contar dos veces la transferencia.
