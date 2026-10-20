@@ -197,3 +197,10 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - Dudas sacadas de `dudas-por-club.md`: OH Leuven (las otras entidades NV/VZW no tienen turnover; la BV cargada es la del fútbol), Thun (el informe 2018 dice que el ejercicio pasó a año calendario en 2017: 2017 es un tramo corto 01.07-31.12 que solo existe como comparativo, no se carga) y Polissya (el EDRPOU del documento es 40372249).
 - NO apliqué los demás (a?): Rosario Central (residuales a other_income/other_expenses, no a lump) y similares piden recategorizar datos cargados por consistencia (criterio cerrado); Independiente (estadio) y República Checa (pares duplicados) no se pueden confirmar sin abrir PDFs/hipótesis no confirmada. Siguen en sus secciones.
 - Esperando la tanda 2 de la Auditora.
+
+### Onboarding 6: tanda 2 de la Auditora (2026-10-20)
+- Hoffenheim 2024 y 2025: `officialPAT` a la línea 14 (Konzernjahresüberschuss): +1,268 M y +1,100 M (antes -0,368 y -0,189); `tax` recalculado por diferencia (24,431 y 27,385) para que ingresos, gastos y PAT sigan cerrando. Ajustes `resultado-final` en los dos documentos (sin recarga: mismas filas).
+- Gimnasia LP 2024 y 2025: `publicNote` en las dos fuentes diciendo que el documento no explica "Incremento Valor Jugadores FP" (sin decir no-cash); sigue en other_income (A GUIDO, 2 a 1). La duda queda en `dudas-por-club.md`.
+- Sin cambios por voto o regla: Everton (assetSales), Pereira "Trayectoria deportiva" (wages_squad), Palmeiras, América de Cali, Botafogo nota 19, Eintracht "Transfer", Panserraikos, Groningen, Stichting (ya están como la regla dice). Rosario Central tienda: ya estaba en sponsorship_commercial.
+- ASSET_V 1507. Falta la tanda 3 (Getafe y Godoy Cruz: cesión, rescisión y tanteo).
+- Gasto: US$ 1,20 de 6.

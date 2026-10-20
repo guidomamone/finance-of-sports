@@ -51,11 +51,11 @@ const hoffenheimDeFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:'actual',
     netInterest:4.718732,
-    tax:22.794546,
+    tax:24.430913,
     profitOnPlayerSales:0, assetSales:0,
     grossDebt:58.277885, cash:35.578492,
     officialTotalRevenue:150.791686, officialTotalExpenses:178.673331,
-    officialPAT:-0.368366,
+    officialPAT:1.268,
   },
   2025: {
     currency:'EUR', fxRef:'EUR@2025-06-30',
@@ -63,11 +63,11 @@ const hoffenheimDeFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:'actual',
     netInterest:3.512087,
-    tax:26.095994,
+    tax:27.385420,
     profitOnPlayerSales:0, assetSales:0,
     grossDebt:79.418182, cash:41.681699,
     officialTotalRevenue:173.397811, officialTotalExpenses:203.195048,
-    officialPAT:-0.189156,
+    officialPAT:1.100270,
   },
 };
 
