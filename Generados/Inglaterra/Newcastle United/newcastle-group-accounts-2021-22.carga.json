@@ -1,9 +1,18 @@
 {
  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2021-22.pdf",
- "generado": "2026-10-20T18:14:10.564Z",
- "frena": [],
+ "generado": "2026-10-20T18:24:22.810Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "newcastle-gb ya tiene el ejercicio 2022 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['newcastle-gb-group-accounts-2021-22'] ya existe"
+  }
+ ],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2025 consolidado",
+  "perímetro heredado del año cargado más cercano (2023, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
   "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
  ],
  "ejercicio": {
@@ -346,8 +355,8 @@
  },
  "liga": {
   "valor": "gb-premierleague",
-  "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Newcastle United\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -387,13 +396,13 @@
   },
   "liga": {
    "valor": "gb-premierleague",
-   "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Newcastle United\"",
+   "fuente": "data/club-leagues/gb.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 5,
   "lineasGasto": 3,
   "metaFilas": 3,

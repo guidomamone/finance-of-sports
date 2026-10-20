@@ -1,9 +1,18 @@
 {
  "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2018-19.pdf",
- "generado": "2026-10-20T18:14:09.872Z",
- "frena": [],
+ "generado": "2026-10-20T18:24:20.379Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "leeds-gb ya tiene el ejercicio 2019 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['leeds-gb-group-accounts-2018-19'] ya existe"
+  }
+ ],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2024 consolidado, 2025 consolidado",
+  "perímetro heredado del año cargado más cercano (2020, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2019 consolidado, 2020 consolidado, 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
   "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
  ],
  "ejercicio": {
@@ -394,16 +403,10 @@
    "M": 85.070679
   }
  },
- "fxCloseNuevo": {
-  "key": "GBP@2019-06-30",
-  "fx": 0.785669,
-  "source": "market_close",
-  "label": "Tipo spot del Bank of England, última rueda hábil antes del cierre (2019-06-28, 2019-06-30 no es día hábil)"
- },
  "liga": {
   "valor": "gb-championship",
-  "fuente": "roster cacheado de \"2018–19 EFL Championship\" (tools/club-league-reference/gb.json), coincidencia exacta \"Leeds United\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -433,7 +436,7 @@
   },
   "fxRef": {
    "valor": "GBP@2019-06-30",
-   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.785669. --escribir agrega 'GBP@2019-06-30' a FX_CLOSE",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2019-06-30 = 0.785669 (Tipo spot del Bank of England, última rueda hábil antes del cierre (2019-06-28, 2019-06-30 no es día hábil))",
    "estado": "ok"
   },
   "sourceId": {
@@ -443,13 +446,13 @@
   },
   "liga": {
    "valor": "gb-championship",
-   "fuente": "roster cacheado de \"2018–19 EFL Championship\" (tools/club-league-reference/gb.json), coincidencia exacta \"Leeds United\"",
+   "fuente": "data/club-leagues/gb.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 8,
   "lineasGasto": 2,
   "metaFilas": 3,

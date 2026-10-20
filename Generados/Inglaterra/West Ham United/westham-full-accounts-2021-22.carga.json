@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Inglaterra/West Ham United/westham-full-accounts-2021-22.pdf",
- "generado": "2026-10-20T18:14:11.454Z",
- "frena": [],
+ "generado": "2026-10-20T18:24:25.164Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "westham-gb ya tiene el ejercicio 2022 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['westham-gb-full-accounts-2021-22'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)",
   "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
@@ -334,8 +343,8 @@
  },
  "liga": {
   "valor": "gb-premierleague",
-  "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"West Ham United\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -375,13 +384,13 @@
   },
   "liga": {
    "valor": "gb-premierleague",
-   "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"West Ham United\"",
+   "fuente": "data/club-leagues/gb.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 6,
   "lineasGasto": 1,
   "metaFilas": 3,

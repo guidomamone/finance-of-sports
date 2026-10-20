@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2020-21.pdf",
- "generado": "2026-10-20T18:14:11.700Z",
- "frena": [],
+ "generado": "2026-10-20T18:24:25.796Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "wolves-gb ya tiene el ejercicio 2021 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['wolves-gb-full-accounts-2020-21'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 4 ejercicio(s) con un solo perímetro (individual); 6 documento(s) mirados)",
   "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
@@ -346,8 +355,8 @@
  },
  "liga": {
   "valor": "gb-premierleague",
-  "fuente": "roster cacheado de \"2020–21 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Wolverhampton Wanderers\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -387,13 +396,13 @@
   },
   "liga": {
    "valor": "gb-premierleague",
-   "fuente": "roster cacheado de \"2020–21 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Wolverhampton Wanderers\"",
+   "fuente": "data/club-leagues/gb.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 7,
   "lineasGasto": 1,
   "metaFilas": 3,

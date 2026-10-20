@@ -1,9 +1,18 @@
 {
  "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.pdf",
- "generado": "2026-10-20T18:14:10.313Z",
- "frena": [],
+ "generado": "2026-10-20T18:24:21.870Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "leeds-gb ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['leeds-gb-group-accounts-2022-23'] ya existe"
+  }
+ ],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2024 consolidado, 2025 consolidado",
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2019 consolidado, 2020 consolidado, 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
   "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
  ],
  "ejercicio": {
@@ -396,8 +405,8 @@
  },
  "liga": {
   "valor": "gb-premierleague",
-  "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Leeds United\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -437,13 +446,13 @@
   },
   "liga": {
    "valor": "gb-premierleague",
-   "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Leeds United\"",
+   "fuente": "data/club-leagues/gb.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 8,
   "lineasGasto": 2,
   "metaFilas": 3,
