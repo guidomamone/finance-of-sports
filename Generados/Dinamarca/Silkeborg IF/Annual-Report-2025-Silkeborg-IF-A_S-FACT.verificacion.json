@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf",
  "md": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md",
- "generado": "2026-10-19T17:28:57.581Z",
+ "generado": "2026-10-20T18:29:38.040Z",
  "estado": "ok",
  "clubId": "silkeborg-dk",
  "year": 2025,
@@ -21,6 +21,32 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf",
+   "campo": "fila",
+   "valor": "-6502",
+   "linea": 602,
+   "etiqueta": "Amortisation of intangible assets (player registrations)",
+   "lado": "gasto",
+   "reemplaza": "Depreciation, amortisation and impairment losses",
+   "motivo": "Se parte 'Depreciation, amortisation and impairment losses' (12.670, L366) según la regla de CONVENCIONES-DATOS: amortización de pases (Note 10, L602) a player_amortisation y bienes de uso (Note 11, L616) a depreciation; el total no cambia",
+   "evidencia": ".md L366, L602, L616",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf",
+   "campo": "fila",
+   "valor": "-6168",
+   "linea": 616,
+   "etiqueta": "Depreciation of property, plant and equipment",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Parte de 'Depreciation, amortisation and impairment losses' (6.502 + 6.168 = 12.670): depreciación de bienes de uso (Note 11, L616)",
+   "evidencia": ".md L366, L616",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
   }
  ],
  "cola": [],
@@ -48,6 +74,8 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Amortisation of intangible assets (player registrations)\" (gasto) -6502, en lugar de \"Depreciation, amortisation and impairment losses\" (2026-10-20, Se parte 'Depreciation, amortisation and impairment losses' (12.670, L366) según la regla de CONVENCIONES-DATOS: amortización de pases (Note 10, L602) a player_amortisation y bienes de uso (Note 11, L616) a depreciation; el total no cambia)",
+  "ajuste manual: fila \"Depreciation of property, plant and equipment\" (gasto) -6168 (2026-10-20, Parte de 'Depreciation, amortisation and impairment losses' (6.502 + 6.168 = 12.670): depreciación de bienes de uso (Note 11, L616))",
   "duda de localizar que no afecta la carga: b12 abre Executive Board y Board of Directors, que ya están dentro de Staff costs (nota 5)."
  ],
  "reintentar": null,
@@ -185,12 +213,20 @@
    "origen": "nota que desglosa \"Staff costs\""
   },
   {
-   "etiqueta": "Depreciation, amortisation and impairment losses",
+   "etiqueta": "Amortisation of intangible assets (player registrations)",
    "lado": "gasto",
-   "M": 12.67,
-   "pagina": 13,
-   "linea": 366,
-   "origen": "estado"
+   "M": 6.502,
+   "pagina": 20,
+   "linea": 602,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Depreciation of property, plant and equipment",
+   "lado": "gasto",
+   "M": 6.168,
+   "pagina": 20,
+   "linea": 616,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
