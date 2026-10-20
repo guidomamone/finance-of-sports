@@ -41,3 +41,8 @@ Fase 2 del 255: aplicar lo que Guido apruebe del inventario (19 propuestas de sk
 - `CLAUDE.md`: en un worktree se deja la nota de sesión y la principal escribe TODO, CHANGELOG y ESTADO; `CONVENCIONES.md` se lee cuando la skill de la tarea lo pide (Q-1, Q-9).
 - `Admin/CONVENCIONES.md`: la regla de rayas largas queda solo para el texto visible del sitio (Q-7).
 - `Admin/consolidar-reglas-255.md`: sección 2 reescrita con el texto final de 27 propuestas (23 de skill, 4 de memoria) y sección 3 con las respuestas de Guido. Queda una pregunta nueva (R-1).
+
+## To-do 328 (DOCS 1)
+
+- `Admin/carga-con-tokens-328.md`: cómo se hace hoy una carga con tokens de sesión (el único precedente real es Aris 2022 y los `filas-a-mano`), el texto exacto para el ok de Guido
+  (un renglón en `club-or-year-onboarding/SKILL.md` y un archivo nuevo `carga-con-tokens.md`) y 4 frenados para Pipeline. Nada probado de punta a punta.
