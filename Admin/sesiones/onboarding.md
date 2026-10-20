@@ -115,3 +115,14 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - **Patro Eisden 2022**: sigue frenado (ver el log del lote 102).
 - **Lierse SK 2019**: frena por "periodo" (el documento cubre un período distinto de 12 meses).
 - **Lokeren-Temse 2021-2022 y Patro Eisden 2013-2015**: faltan las listas de las ligas amateur belgas (298 ae/af de Pipeline).
+
+## Onboarding 4 (2026-10-20)
+
+### Qué cambió
+- Reino Unido, lote 98: contesté los 25 casos de la cola (Leeds, Liverpool, Sunderland, Wolves) con los criterios ya decididos: "Staff costs" total va a `wages_squad` (convención ya cargada de cada club: Leeds, Liverpool, Sunderland y Wolves ya lo llevan así); las listas "stated after charging" no se cargan como desglose y los cuadros que la pregunta llama "dejar afuera" quedan afuera (Sunderland 2018-19, nota 6, duplica amortización y venta de jugadores).
+- Ajuste `estado` (los escaneos sin estado de resultados): Man City 2021-22 = b2 (pág. 13 del visor) y Tottenham 2022-23 = b3 (pág. 19). Leeds 2020-21 y Liverpool 2022-23 ya se localizan en el ensayo. Falta correr con `--reintentar` (como Fulham: el lote no relocaliza solo).
+- St. Gallen 2020, 2021 y 2024: "¿la TV está dentro de Diverse Erträge?": aceptar, con el precedente de 2025 (ajuste `incluye` = broadcasting, `other_income`, `--posible`), y los tres ajustes cargados. Los casos de gestión de St. Gallen no frenan (la tanda de gestiones los toma).
+
+### Qué queda
+- Corridas pedidas a la principal (comando y número de lote): lote-105 (Unión Magdalena 2025), lote-99 (alta de Celtic), Man City 2021-22 + Tottenham 2022-23 + Fulham 2021-22 con `--reintentar`, el resto del lote 98 (~US$ 4,20), y St. Gallen (2020, 2021, 2024 y los demás años) cuando haya número.
+- Newcastle 2019-20 está transcripto y sin localizar: va al lote para que la cadena de cierres reconozca los 11 meses de 2020-21.
