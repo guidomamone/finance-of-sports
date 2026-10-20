@@ -285,3 +285,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     `Admin/outreach/checkin-2026-10-24.md`; hay una tarea programada que lo pregunta, el archivo es el respaldo.
 327. CHEQUEOS QUE DEJÓ EL 255 (2026-10-20). Los 12 de la sección 4 de `Admin/Archive/consolidar-reglas-255.md`: elegir cuáles se automatizan
    (hook o audit.js) y hacerlos con el circuito de Pipeline. Nada urgente.
+328. CARGA CON TOKENS DE SESIÓN, PASO A PASO (pedido de Guido, 2026-10-20). Cuando una etapa paga (localizar, extraer, Jev, IA) se
+   reemplaza con tokens de sesión, cada sesión pierde minutos viendo cómo hacer la carga a mano y que quede reproducible por el script.
+   Escribir los pasos ya armados (qué archivos escribe la sesión, con qué huellas, qué ajustes, cómo se verifica) como skill o sección
+   de `club-or-year-onboarding`, con el ok de Guido sobre el texto. --> Docs 1
