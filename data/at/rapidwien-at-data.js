@@ -89,6 +89,12 @@ const rapidwienatRevenueLinesByYear = {
     { rawLabel:'Erträge aus der Auflösung von Rückstellungen', normalizedCategory:'other_income', amountNative:0.54837, disclosureLevel:'aggregated' },
     { rawLabel:'Übrige', normalizedCategory:'other_income', amountNative:2.168731, disclosureLevel:'aggregated' },
   ],
+  2025: [
+    { rawLabel:'Umsatzerlöse', normalizedCategory:'lump_football_operations', amountNative:58.395122, disclosureLevel:'aggregated' },
+    { rawLabel:'Erträge aus dem Abgang von Anlagevermögen', normalizedCategory:'other_income', amountNative:0.015325, disclosureLevel:'aggregated' },
+    { rawLabel:'Erträge aus der Auflösung von Rückstellungen', normalizedCategory:'other_income', amountNative:0.169107, disclosureLevel:'aggregated' },
+    { rawLabel:'Übrige', normalizedCategory:'other_income', amountNative:2.841364, disclosureLevel:'aggregated' },
+  ],
 };
 const rapidwienatExpenseLinesByYear = {
   2024: [
@@ -245,6 +251,15 @@ const rapidwienatExpenseLinesByYear = {
     { rawLabel:'Abschreibungen', normalizedCategory:'depreciation', amountNative:-4.200133, disclosureLevel:'aggregated' },
     { rawLabel:'Sonstige betriebliche Aufwendungen', normalizedCategory:'other_expenses', amountNative:-7.88835, disclosureLevel:'aggregated' },
   ],
+  2025: [
+    { rawLabel:'Aufwendungen Spielbetrieb, Transfers etc.', normalizedCategory:'match_organisation_expense', amountNative:-6.191201, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwendungen für bezogene Leistungen', normalizedCategory:'other_expenses', amountNative:-10.947091, disclosureLevel:'aggregated' },
+    { rawLabel:'Löhne & Gehälter', normalizedCategory:'wages_squad', amountNative:-23.898805, disclosureLevel:'aggregated' },
+    { rawLabel:'Soziale Aufwendungen', normalizedCategory:'wages_squad', amountNative:-4.616527, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen', normalizedCategory:'depreciation', amountNative:-4.98819, disclosureLevel:'aggregated' },
+    { rawLabel:'Steuern, soweit sie nicht unter Steuern vom Einkommen fallen', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Übrige', normalizedCategory:'other_expenses', amountNative:-9.317458, disclosureLevel:'aggregated' },
+  ],
 };
 const rapidwienatFiscalYearMeta = {
   2024: {
@@ -399,6 +414,26 @@ const rapidwienatFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:45.345016, officialTotalExpenses:43.411023, officialPAT:0.048502,
   },
+  2025: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, player_sales:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'rapidwien-at-geschaeftsbericht-2024-25',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.399777, tax:-0.038465,
+    extraRows: [
+      {label:'Sonstige Zinsen und ähnliche Erträge', value:0.302652},
+      {label:'Abschreibungen auf Finanzanlagen', value:-0.113712},
+      {label:'Zinsen und ähnliche Aufwendungen', value:-1.588717},
+      {label:'Steuern vom Einkommen', value:-0.038465},
+    ],
+    sinDesglose: [
+      {renglon:'Umsatzerlöse', lado:'revenue', importe:58.395122, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:61.420918, officialTotalExpenses:59.959272, officialPAT:0.023404,
+  },
 };
 const rapidwienatPresupuestoOverlayByYear = {};
 
@@ -463,6 +498,11 @@ Object.assign(sources, {
   'rapidwien-at-geschaeftsbericht-2022-23': {
     id:'rapidwien-at-geschaeftsbericht-2022-23', clubId:'rapidwien-at',
     title:'SK Rapid GmbH — geschaeftsbericht-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'rapidwien-at-geschaeftsbericht-2024-25': {
+    id:'rapidwien-at-geschaeftsbericht-2024-25', clubId:'rapidwien-at',
+    title:'SK Rapid GmbH — geschaeftsbericht-2024-25 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

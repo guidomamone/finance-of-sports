@@ -3,7 +3,7 @@ window.RANKINGS_INDICE = {
   "ar-primera": [2024,10,28],
   "ar-primerab": [2021,1,17],
   "ar-primeranacional": [2023,2,34],
-  "at-bundesliga": [2024,1,12],
+  "at-bundesliga": [2025,1,12],
   "be-challengerproleague": [2025,6,16],
   "be-div1amateur": [2024,2,18],
   "be-div2amateur": [2022,2,48],
@@ -54,7 +54,7 @@ window.RANKINGS_INDICE = {
   "tr-superlig": [2023,1,19],
 };
 window.RANKINGS_REGION = {
-  mundo: { year:2025, total:260, clubs:[
+  mundo: { year:2025, total:261, clubs:[
     { id:"realmadrid", league:"es-laliga", revenue:1388.522 },
     { id:"fcbarcelona", league:"es-laliga", revenue:1167.798 },
     { id:"bayernmunich-de", league:"de-bundesliga", revenue:1085.912 },
