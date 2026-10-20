@@ -25,29 +25,29 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 292: cargar lo transcripto: Suiza, Países Bajos y Bélgica casi completos; quedan St. Gallen 2020, 2021 y 2024 (dudas de localizar en la cola, "¿la TV está dentro de Diverse Erträge?", y volver a correr sg6), Luzern 2023 (recargar: la 298 k2 ya está), Lierse SK 2019, Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022 (destrabados: 298 af y w2 en main), y después Beşiktaş y Colombia --> Pantallas 3 (St. Gallen --> Pipeline)
+* 292: cargar lo transcripto: Suiza, Países Bajos y Bélgica casi completos; quedan St. Gallen 2020, 2021 y 2024 (dudas de localizar en la cola, "¿la TV está dentro de Diverse Erträge?", y volver a correr sg6), Luzern 2023 (recargar: la 298 k2 ya está), Lierse SK 2019, Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022 (destrabados: 298 af y w2 en main), y después Beşiktaş y Colombia --> Onboarding 5
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script (z2, Westerlo 2015 de 18 meses y Aston Villa de 13, a decidir con vos; g2, condicional) --> Pipeline
+* 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor) --> Pipeline 6
+* 298: mejoras de script (z2, Westerlo 2015 de 18 meses y Aston Villa de 13, en votación; x2, el chequeo de fidelidad que no mira cifras; g2, condicional) --> Pipeline
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
-* 238: llevar a 0 los documentos que quedaron a mitad de camino: arranca por Latinoamérica (161 transcriptos y validados, ~US$ 50, en lotes de 5 a 8 clubes; espera tu ok) --> Pantallas 3
-* 261: Reino Unido: cargados 34 años de los lotes 97 a 99 y 106; quedan 25 casos de verificar del lote 106 (Leeds, Liverpool, Sunderland, Wolves) y volver a correr el 98; 4 escaneos sin estado de resultados (fijar con el ajuste `estado`, como Fulham); Newcastle 2020-21 (11 meses: falta validar la transcripción de 2019-20); Fulham 2021-22 (correr el 104 con --reintentar); el alta de Celtic (3 casos, color, liga y gestión) y sus otros años; la cola de transcripción por Mistral. Detalle: `Admin/Archive/sesion-finanzas-5-2026-10-20-cierre.md` --> Onboarding
-* 165 c: altas de los países nuevos que faltan --> Pantallas 3
+* 238: llevar a 0 los documentos que quedaron a mitad de camino: arranca por Latinoamérica (161 transcriptos y validados, ~US$ 50, en lotes de 5 a 8 clubes; espera tu ok) --> Onboarding 4
+* 261: Reino Unido: cargados 34 años de los lotes 97 a 99 y 106; quedan 25 casos de verificar del lote 106 (Leeds, Liverpool, Sunderland, Wolves) y volver a correr el 98; 4 escaneos sin estado de resultados (fijar con el ajuste `estado`, como Fulham); Newcastle 2020-21 (11 meses: falta validar la transcripción de 2019-20); Fulham 2021-22 (correr el 104 con --reintentar); el alta de Celtic (3 casos, color, liga y gestión) y sus otros años; la cola de transcripción por Mistral. Detalle: `Admin/Archive/sesion-finanzas-5-2026-10-20-cierre.md` --> Onboarding 4
+* 165 c: altas de los países nuevos que faltan --> Onboarding 5
 * 195: gestiones (presidentes) sin fuente confirmada (casi todas esperan respuesta del club)
-* 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
+* 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia --> votación (Auditora)
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 252: ejercicios nuevos: lote 103 hecho (19 ejercicios de 2025); Unión Magdalena 2025 listo para una pasada barata de carga (lote 105, --ejecutar --cargar); quedan River cierre 2025-12-31, Vasco da Gama 2024, Amazonas FC 2025 y los 14 clubes que el script marca de más; Alemania en enero de 2027 --> Pantallas 3
+* 252: ejercicios nuevos: lote 103 hecho (19 ejercicios de 2025); Unión Magdalena 2025 listo para una pasada barata de carga (lote 105, --ejecutar --cargar); quedan River cierre 2025-12-31, Vasco da Gama 2024, Amazonas FC 2025 y los 14 clubes que el script marca de más; Alemania en enero de 2027 --> Onboarding 4
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 * 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
