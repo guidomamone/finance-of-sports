@@ -310,7 +310,7 @@ window.CLUB_INDEX = {
   "westerlo-be": {"n":"Westerlo","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "westham-gb": {"n":"West Ham United","c":"GB","q":"full","y":6,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
   "willemii-nl": {"n":"Willem II","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "wolves-gb": {"n":"Wolverhampton Wanderers","c":"GB","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2020,"official_balance_sheet"]],"ci":{"2025":"06-30"}},
+  "wolves-gb": {"n":"Wolverhampton Wanderers","c":"GB","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"]],"ci":{"2025":"06-30"}},
   "yokohamafmarinos": {"n":"Yokohama F. Marinos","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "zenit-ru": {"n":"Zenit","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "zultewaregem-be": {"n":"Zulte Waregem","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
