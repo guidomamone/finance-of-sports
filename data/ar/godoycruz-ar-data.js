@@ -22,7 +22,7 @@ const godoycruzRevenueLinesByYear = {
     { rawLabel:'Ingreso Recupero ART - Seguros', normalizedCategory:'other_income', amountNative:1.453859, disclosureLevel:'detailed' },
     { rawLabel:'Ingreso por Alquiler Instalaciones Deportivas', normalizedCategory:'other_income', amountNative:1.403526, disclosureLevel:'detailed' },
     { rawLabel:'Ingreso por Partido Amistoso', normalizedCategory:'matchday_competition', amountNative:18.229545, disclosureLevel:'detailed' },
-    { rawLabel:'Ingreso por Derechos de Tanteo', normalizedCategory:'player_sales', amountNative:38.591521, disclosureLevel:'detailed' },
+    { rawLabel:'Ingreso por Derechos de Tanteo', normalizedCategory:'other_income', amountNative:38.591521, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos Ayuda ATP', normalizedCategory:'other_income', amountNative:0.155697, disclosureLevel:'detailed' },
     { rawLabel:'Ingreso Acuerdo Deuda Clubes', normalizedCategory:'other_income', amountNative:32.812278, disclosureLevel:'detailed' },
   ],
