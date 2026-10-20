@@ -21,6 +21,8 @@ que dice `ESTADO.md` era verdad ese día.
   salida (la J.League publica un balance resumido sin caja ni préstamos; ningún club cotiza en EDINET).
 * `tools/wiki-extracto.mjs`: trae la ficha o una sección de una página de Wikipedia en texto corto (para las gestiones del 195), aprobado
   por la auditora.
+* 298 z2: `cargar.mjs` carga un ejercicio de transición de más de 12 meses con importes del año anterior como el año del cierre (regla
+  votada; medición: 0 documentos distintos). Destraba Westerlo 2015 y Newcastle 2020-21.
 
 ## Versión 838 — Reino Unido: 22 años más y el alta de Celtic (2026-10-20)
 

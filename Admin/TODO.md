@@ -31,7 +31,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 298: mejoras de script (z2, el escalón de cargar.mjs para la transición de más de 12 meses (regla ya votada); x2, el chequeo de fidelidad que no mira cifras; g2, condicional) --> Pipeline
+* 298: mejoras de script (x2, el chequeo de fidelidad que no mira cifras; g2, condicional) --> Pipeline
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -242,8 +242,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    x2) `check-transcripcion-fidelidad.js` da "sin hallazgos" aunque la transcripción no tenga ninguna de las cifras del documento: mira
    marcas de página y placeholders, no números (medido en el 314, 0 de 11 cifras halladas y sin hallazgos). No sirve de guardia para un
    motor nuevo; un chequeo de cifras contra el PDF (validar-bloques) sí.
-   z2) DECIDIDO por votación (2026-10-20, REGLA en CONVENCIONES-DATOS): un ejercicio de transición de más de 12 meses con importes del
-   año anterior se carga como el año del cierre, sin tope. Falta el escalón de `cargar.mjs` que hoy lo frena (Westerlo 2015, Aston Villa 2023-24).
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Medido otra vez el 2026-10-19 con 1.011 club-años (`node tools/estimar.mjs --medir --detalle`): sigue en 50%,
