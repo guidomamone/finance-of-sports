@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 874 — Sale el 238 (lo gratis) (2026-10-20) [238 · godoycruz-ar]
+
+- Merge de Onboarding 6: Godoy Cruz 2020 tanteo a other_income; cola de AEK en 0; dudas de OH Leuven, Thun y Polissya resueltas. Sale el 238
+  (decisión de Guido: lo caro, localizar los 1.008 documentos sin localizar, queda afuera por ahora). Lo que no se aplicó del triage (Rosario
+  residuales, Independiente estadio, Rep. Checa) queda en `Admin/registros/triage-dudas-2026-10-20.md` y en la nota de Onboarding 6.
+
 ## Versión 873 — Jev y Claude saben el país del club; tanda 3 (2026-10-20) [331 · 238 · godoycruz-ar, estudianteslp, gimnasiaesgrima-ar]
 
 - `jev-categorizar.mjs` y `categorizar-claude.mjs` reciben el país del club (`tools/pais-club.mjs`) y, a igual parecido, los ejemplos del mismo
