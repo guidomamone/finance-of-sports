@@ -71,3 +71,5 @@ Color de marca: #009150 — infobox de en.wikipedia (body1 de la camiseta local)
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2018 desde `Clubes/Austria/Rapid Wien/geschaeftsbericht-2017-18.pdf` (sourceId `rapidwien-at-geschaeftsbericht-2017-18`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2020 desde `Clubes/Austria/Rapid Wien/geschaeftsbericht-2019-20.pdf` (sourceId `rapidwien-at-geschaeftsbericht-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2021 desde `Clubes/Austria/Rapid Wien/geschaeftsbericht-2020-21.pdf` (sourceId `rapidwien-at-geschaeftsbericht-2020-21`).
