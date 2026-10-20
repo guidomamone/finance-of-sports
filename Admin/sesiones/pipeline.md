@@ -666,3 +666,15 @@ preguntarle, aunque el escalón ya esté aprobado (memoria `no-endurecer-reglas-
 5. **298 z2** (Westerlo 2015, 18 meses; Aston Villa 2023-24, 13 meses) espera decisión de Guido. **g2**: condicional, sin casos.
 
 **Cómo se trabajó (para no repetirlo).** Diseño con medición gratis, ok de Guido en el chat (a veces "elegí vos" o "si no rompe nada, dale"), un commit por cambio, aviso a la principal. Medir sobre `Admin/lotes/prueba-completa.txt` + las carpetas de Inglaterra con `verificar.mjs --lista` (3.702 documentos, ~3 minutos) y comparar las líneas `## ` antes/después; `periodo.mjs` con una copia vieja en el scratchpad; `perimetro-senales.mjs --decidir-clubes <lista de carpetas> --solo-cache`. Después de cada medición: `git checkout -- Admin/registros Generados` (`verificar` y los ensayos de `lote` reescriben derivados y la cola). Trampas: el hook del commit corre ANTES de la edición del mismo comando (subir ASSET_V, regenerar `fuentes/` y recién ahí commitear, en comandos aparte); la principal mergea y a veces mueve ASSET_V (releer `index.html` antes de subirlo); mientras la principal corre una carga en esta carpeta no se escribe nada acá; los subagentes de lectura no tienen Grep/Bash, los de internet sí WebSearch/WebFetch.
+
+## Pipeline 6 (2026-10-20)
+
+Gasto de API de la sesión (`node tools/gasto.mjs`): US$ 0 (todo fueron mediciones gratis).
+
+- **298 af** (c0ff5e182b, APROBADO): filas belgas de Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022 en `data/club-leagues/be.js`; las listas ya estaban en `be.json`. ASSET_V 1434.
+- **298 w2** (fb2b54156c, APROBADO): primer ejercicio de 12 meses redondeados con período no anual (`cargar.mjs`). `medir-cargar` sobre la completa: 1 documento distinto (Lierse SK 2019).
+- **298 r2** (064f5bbc9a): `verificar.mjs`, el escalón "de los cuales" también bajo un encabezado "Analysed as". `medir-verificar` 720 idénticos; sin los 4 ajustes de West Ham pasan de COLA a OK. Los ajustes de West Ham siguen en el archivo.
+- **298 p2** (8796ebac46): `cargar.mjs`, un rótulo financiero contestado `no_es_rubro` pasa a netInterest si con eso cierra el resultado impreso. `medir-cargar` 0 distintos; Boyacá Chicó 2025 carga.
+- **298 v2** (358cf480d9): `localizar.mjs` aplica el ajuste `estado` a una localización guardada. Solo cambia Fulham 2021-22 (ensayo ~US$ 0,09).
+- **Sin código:** aj (HALLAZGOS, no frena), s2 (la cubre la p1), q2 (cambiaría Silkeborg y Viborg 2025, ya cargados: derivar a Guido).
+- **Destrabados para Onboarding:** Patro Eisden 2013-2015, Lokeren-Temse 2021-2022, Lierse SK 2019, Boyacá Chicó 2025, Fulham 2021-22 (volver a correr el lote).
