@@ -681,7 +681,7 @@ Gasto de API de la sesión (`node tools/gasto.mjs`): US$ 0 (todo fueron medicion
 
 ### Pipeline 6, segunda parte (2026-10-20)
 
-Gasto de API de la sesión (`node tools/gasto.mjs --desde 2026-10-20`): US$ 1,44 (todo Mistral y segunda voz de 10 ejercicios de Viking de la prueba del híbrido, 314).
+Gasto de API propio de la sesión: US$ 1,44 (Mistral US$ 0,91, Gemini 0,41 y Claude 0,12 de los 10 ejercicios de Viking de la prueba del híbrido, 314; contado por las líneas que esa corrida agregó a `Admin/registros/api/`). `node tools/gasto.mjs --desde 2026-10-20` da más (US$ 7,95 en esta rama) porque suma lo que otras sesiones ya mergearon el mismo día.
 
 - **314 (Stirling PDF contra Tesseract y Mistral)**, `Admin/mediciones/stirling-vs-tesseract-vs-mistral.md`: Stirling mejora a Tesseract pelado en escaneos nórdicos (88-94% de las cifras contra 24-59%) pero no cierra sumas; el esquema híbrido (lectura local primero) ahorra US$ 0 en 6 + 10 escaneos. Detector de orientación gratis (`tesseract --psm 0`): arregla las páginas dadas vuelta de Sporting (Stirling 3-4% a 22-45%), sin efecto en el resto. Sin escalón. Los 10 `.md` de Viking (2012, 2014, 2016-2021, 2023, 2024) quedan como transcripción normal. Instalado `openjdk` (brew) y el jar de Stirling en el scratchpad.
 - **260:** `caja-deuda.mjs --medir` y el informe: ningún año se completa sin documento nuevo (Ferroviária 2014, Remo 2019, Volos 2019-2020 y Japón 2025 necesitan documento).
