@@ -1,0 +1,149 @@
+{
+ "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.pdf",
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.md",
+ "generado": "2026-10-20T19:29:56.014Z",
+ "estado": "ok",
+ "clubId": "newcastle-gb",
+ "year": 2019,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 176.448 cierra; además se suman 1 línea(s) fuera de ese total (24.583)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 201.031 en este documento y 201.031 en newcastle-group-accounts-2019-20.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses\" no suma el renglón (96.798 contra 122.944, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer ya contestada para el club (perimetro, \"Operating expenses\"): aceptar, en newcastle-group-accounts-2018-19.pdf",
+  "duda de extraer que no afecta la carga: El cuadro de L987-L990 no distingue plantel de resto del personal; no hay fila 'Salarios del plantel'."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses",
+   "suma": 96.798,
+   "objetivo": 122.944
+  }
+ ],
+ "totales": {
+  "ingresos": 201.031,
+  "gastos": 161.555,
+  "financiero": 1.674,
+  "impuesto": -6.476,
+  "resultadoImpreso": 34.674,
+  "resultadoParaCargar": 34.674,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 24.846,
+   "pagina": 25,
+   "linea": 939,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Media",
+   "lado": "ingreso",
+   "M": 123.936,
+   "pagina": 25,
+   "linea": 940,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 26.186,
+   "pagina": 25,
+   "linea": 941,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 1.48,
+   "pagina": 25,
+   "linea": 942,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of players' and staff registrations",
+   "lado": "ingreso",
+   "M": 24.583,
+   "pagina": 12,
+   "linea": 387,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses",
+   "lado": "gasto",
+   "M": 122.944,
+   "pagina": 12,
+   "linea": 380,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation and impairment of players' registrations",
+   "lado": "gasto",
+   "M": 38.611,
+   "pagina": 12,
+   "linea": 381,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 2.179,
+   "linea": 389
+  },
+  {
+   "etiqueta": "Interest payable and expenses",
+   "M": -0.505,
+   "linea": 390
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on profit",
+   "M": -6.476,
+   "linea": 392
+  }
+ ]
+}

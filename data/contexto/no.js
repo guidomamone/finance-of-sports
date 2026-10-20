@@ -20,6 +20,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'sarpsborg08-no': {
+    2008: {"estadio":"Sarpsborg Stadion","temporada":"2008 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1322218691","fuenteManual":"https://en.wikipedia.org/wiki/Sarpsborg_Stadion","manual":["estadio"]},
     2012: {"estadio":"Sarpsborg Stadion","capacidad":5000,"temporada":"2012 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369041342"},
     2014: {"estadio":"Sarpsborg Stadion","capacidad":4700,"sponsor":"Borregaard","marca":"Select","temporada":"2014 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1322214627"},
     2015: {"estadio":"Sarpsborg Stadion","capacidad":4700,"sponsor":"Borregaard","marca":"Select","temporada":"2015 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372827917"},
@@ -38,6 +39,14 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Intility Arena","capacidad":16556,"sponsor":"OBOS","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'viking-no': {
+    2017: {"estadio":"Viking Stadion","capacidad":16300,"sponsor":"Lyse","marca":"Diadora","temporada":"2017 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1332616218"},
+    2018: {"estadio":"Viking Stadion","capacidad":15900,"temporada":"2018 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356915016"},
+    2019: {"estadio":"Viking Stadion","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2019 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311013521"},
+    2020: {"estadio":"Viking Stadion","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2020 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1311013715"},
+    2021: {"estadio":"Viking Stadion","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2021 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312260742"},
+    2022: {"estadio":"SR-Bank Arena","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2022 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1312230967"},
+    2023: {"estadio":"SR-Bank Arena","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2023 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1364297219"},
+    2024: {"estadio":"Viking Stadion","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2024 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356845648"},
     2025: {"estadio":"Lyse Arena","capacidad":15900,"sponsor":"Lyse","marca":"Diadora","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
 });

@@ -1,0 +1,199 @@
+{
+  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.md",
+  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.pdf",
+  "club": "sarpsborg08-no",
+  "year": 2008,
+  "generatedAt": "2026-10-20T19:54:24.149Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Medlemsinntekter",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.057
+      ],
+      "glosa": "Ingresos por cuotas de socios"
+    },
+    {
+      "label": "Tilskudd",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.22305
+      ],
+      "glosa": "Subvenciones"
+    },
+    {
+      "label": "Kampbillettinntekter",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        1.073252
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Andre arrangementsinnt.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.233742
+      ],
+      "glosa": "Otros ingresos por eventos"
+    },
+    {
+      "label": "Mediainntekter",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        1.56012
+      ],
+      "glosa": "Ingresos por derechos audiovisuales"
+    },
+    {
+      "label": "Reklame-/sponsorinnt.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        8.015981
+      ],
+      "glosa": "Ingresos por publicidad y patrocinio"
+    },
+    {
+      "label": "Salg/utleie spillere (Brutto)",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        2.437
+      ],
+      "glosa": "Traspaso y cesión de jugadores (bruto)"
+    },
+    {
+      "label": "Andre salgsinntekter",
+      "lado": "revenue",
+      "page": 6,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        1.330087
+      ],
+      "glosa": "Otros ingresos por ventas"
+    },
+    {
+      "label": "Diferencia de redondeo",
+      "lado": "revenue",
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        -0.000001
+      ],
+      "glosa": "Diferencia de redondeo"
+    },
+    {
+      "label": "Varekostnad",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.166928
+      ],
+      "glosa": "Aprovisionamientos"
+    },
+    {
+      "label": "Lønnskostnad",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        11.86385
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.100208
+      ],
+      "glosa": "Amortización de inmovilizado material e intangible"
+    },
+    {
+      "label": "Administrasjonskostnader",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.884878
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Egne arrangement",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        1.50342
+      ],
+      "glosa": "Gastos de eventos propios"
+    },
+    {
+      "label": "Reise- og oppholdskostnader bortekamper",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.457708
+      ],
+      "glosa": "Gastos de viaje y estancia para partidos fuera de casa"
+    },
+    {
+      "label": "Kostnader reklame/sponsor",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.571074
+      ],
+      "glosa": "Gastos de publicidad y patrocinio"
+    },
+    {
+      "label": "Kjøp/leie spillere",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.086442
+      ],
+      "glosa": "Adquisición y cesión de jugadores"
+    },
+    {
+      "label": "Salgskostnader",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.556876
+      ],
+      "glosa": "Gastos de comercialización"
+    },
+    {
+      "label": "Andre kostnader",
+      "lado": "expense",
+      "page": 6,
+      "section": "nota que desglosa \"Annen driftskostnad\"",
+      "values": [
+        0.300208
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

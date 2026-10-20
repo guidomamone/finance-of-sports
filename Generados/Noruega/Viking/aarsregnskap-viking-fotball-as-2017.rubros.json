@@ -1,0 +1,170 @@
+{
+  "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2017.md",
+  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2017.pdf",
+  "club": "viking-no",
+  "year": 2017,
+  "generatedAt": "2026-10-20T19:43:32.961Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Inntekter fra samarbeidsavtaler",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        38.647576
+      ],
+      "glosa": "Ingresos por acuerdos de colaboración"
+    },
+    {
+      "label": "Billettinntekter fra kamper",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        7.550567
+      ],
+      "glosa": "Ingresos por taquilla de partidos"
+    },
+    {
+      "label": "Varesalg",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.875702
+      ],
+      "glosa": "Venta de mercaderías"
+    },
+    {
+      "label": "Annen driftsinntekt",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        11.283168
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Gevinst ved salg av spillere",
+      "lado": "revenue",
+      "page": 30,
+      "section": "nota que desglosa \"Netto gevinst ved salg av spillere\"",
+      "values": [
+        13.719178
+      ],
+      "glosa": "Beneficio por venta de jugadores"
+    },
+    {
+      "label": "Tap ved salg av spillere",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Netto gevinst ved salg av spillere\"",
+      "values": [
+        0.540816
+      ],
+      "glosa": "Pérdida por venta de jugadores"
+    },
+    {
+      "label": "Medieinntekter NTF",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        11.013187
+      ],
+      "glosa": "Ingresos por derechos audiovisuales y medios (NTF)"
+    },
+    {
+      "label": "Varekostnad",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        3.837822
+      ],
+      "glosa": "Coste de las mercaderías vendidas"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        6.539124
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        1.035631
+      ],
+      "glosa": "Seguridad social a cargo de la empresa"
+    },
+    {
+      "label": "Personalkostnader fra Viking FK*",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        26.223764
+      ],
+      "glosa": "Gastos de personal procedentes de Viking FK*"
+    },
+    {
+      "label": "Pensjonskostnad (OTP)",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.334007
+      ],
+      "glosa": "Gastos por planes de pensiones (OTP)"
+    },
+    {
+      "label": "Andre personalkostnader",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.689184
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        9.357212
+      ],
+      "glosa": "Amortización de inmovilizado material e intangible"
+    },
+    {
+      "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        1.940673
+      ],
+      "glosa": "Deterioro de valor de inmovilizado material e intangible"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        39.417984
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2018.md",
+  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2018.pdf",
+  "club": "viking-no",
+  "year": 2018,
+  "generatedAt": "2026-10-20T19:43:33.001Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Inntekter fra samarbeidsavtaler",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        37.350345
+      ],
+      "glosa": "Ingresos por acuerdos de colaboración"
+    },
+    {
+      "label": "Billettinntekter fra kamper",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        7.320356
+      ],
+      "glosa": "Ingresos por taquilla de partidos"
+    },
+    {
+      "label": "Netto gevinst ved salag av spillere",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        7.557137
+      ],
+      "glosa": "Beneficio neto por venta de jugadores"
+    },
+    {
+      "label": "Medieinntekter NTF",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        8.962228
+      ],
+      "glosa": "Ingresos por derechos audiovisuales NTF"
+    },
+    {
+      "label": "Annen driftsinntekt",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        11.139168
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        5.781469
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.894568
+      ],
+      "glosa": "Seguridad Social a cargo de la empresa"
+    },
+    {
+      "label": "Personalkostnader fra Viking FK*",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        23.23457
+      ],
+      "glosa": "Gastos de personal de Viking FK*"
+    },
+    {
+      "label": "Pensjonskostnad (OTP)",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.596899
+      ],
+      "glosa": "Gastos por planes de pensiones (OTP)"
+    },
+    {
+      "label": "Andre personalkostnader",
+      "lado": "expense",
+      "page": 20,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        1.307115
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        7.690523
+      ],
+      "glosa": "Amortización de inmovilizado material y activos intangibles"
+    },
+    {
+      "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        3.015783
+      ],
+      "glosa": "Deterioro de inmovilizado material y activos intangibles"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        36.197536
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

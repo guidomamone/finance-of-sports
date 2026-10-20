@@ -1,0 +1,296 @@
+{
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.pdf",
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2024.md",
+ "mdSha1": "f0a5f26ff816d5911d1a20b8d9c706fad9c67aaf",
+ "ubicacionSha1": "55dcff2ff3d16ffea5be55018a2b28d0a8bf867e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T19:48:17.196Z",
+ "ubicacion": {
+  "estado": [
+   "b9"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b15"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "Importes impresos en coronas sin indicación de miles (ej. 'Sum driftsinntekter 221 564 467'), L854-L873"
+  },
+  {
+   "bloque": "b15",
+   "escala": "unidades",
+   "evidencia": "'Sum lønnskostnader 74 213 205' (L1138) coincide con 'Lønn og sosiale kostnader' del estado en unidades"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b9",
+   "linea": 854,
+   "etiqueta": "Inntekt fra samarbeidsavtaler",
+   "actual": "65 605 095",
+   "anterior": "56 580 264",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 855,
+   "etiqueta": "Billettinntekt fra kamper",
+   "actual": "17 832 230",
+   "anterior": "18 453 235",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 856,
+   "etiqueta": "Medieinntekter",
+   "actual": "36 706 251",
+   "anterior": "29 879 937",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 857,
+   "etiqueta": "Gevinst ved salg av spillertettigheter",
+   "actual": "76 769 325",
+   "anterior": "36 584 869",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 858,
+   "etiqueta": "Annen driftsinntekt",
+   "actual": "24 651 566",
+   "anterior": "19 796 338",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 859,
+   "etiqueta": "Sum driftsinntekter",
+   "actual": "221 564 467",
+   "anterior": "161 294 643",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 860,
+   "etiqueta": "Lønn og sosiale kostnader",
+   "actual": "74 213 205",
+   "anterior": "66 020 472",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 861,
+   "etiqueta": "Ordinære avskrivninger",
+   "actual": "21 689 421",
+   "anterior": "19 291 117",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 862,
+   "etiqueta": "Nedskrivninger",
+   "actual": "0",
+   "anterior": "1 587 544",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 863,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "93 346 471",
+   "anterior": "71 372 413",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 864,
+   "etiqueta": "Sum driftskostnader",
+   "actual": "189 249 097",
+   "anterior": "158 271 546",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 865,
+   "etiqueta": "DRIFTSRESULTAT",
+   "actual": "32 315 370",
+   "anterior": "3 023 097",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 867,
+   "etiqueta": "Renteinntekt",
+   "actual": "730 524",
+   "anterior": "566 538",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 868,
+   "etiqueta": "Netto finansinntekt",
+   "actual": "777 159",
+   "anterior": "2 652 264",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 869,
+   "etiqueta": "Rentekostnad",
+   "actual": "3 743 801",
+   "anterior": "3 107 304",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 870,
+   "etiqueta": "RESULTAT AV FINANSPOSTER",
+   "actual": "-2 236 118",
+   "anterior": "111 498",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 871,
+   "etiqueta": "ORDINÆRT RESULTAT FØR SKATTEKOSTNAD",
+   "actual": "30 079 253",
+   "anterior": "3 134 596",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 872,
+   "etiqueta": "Skattekostnad på ordinært resultat",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 873,
+   "etiqueta": "ÅRSRESULTAT",
+   "actual": "30 079 253",
+   "anterior": "3 134 596",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1133,
+   "etiqueta": "Lønninger",
+   "actual": "11 295 951",
+   "anterior": "8 756 425",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1134,
+   "etiqueta": "Arbeidsgiveravgift",
+   "actual": "1 655 147",
+   "anterior": "1 523 795",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1135,
+   "etiqueta": "Personalkostnader fra Viking FK*",
+   "actual": "61 560 858",
+   "anterior": "58 283 380",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1136,
+   "etiqueta": "Pensjonskostnad (OTP)**",
+   "actual": "380 386",
+   "anterior": "377 149",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1137,
+   "etiqueta": "Andre personalkostnader",
+   "actual": "-679 137",
+   "anterior": "-2 920 276",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1138,
+   "etiqueta": "Sum lønnskostnader",
+   "actual": "74 213 205",
+   "anterior": "66 020 472",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Lønn og sosiale kostnader"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 859,
+  "actual": "221 564 467"
+ },
+ "total_gastos": {
+  "linea": 864,
+  "actual": "189 249 097"
+ },
+ "resultado": {
+  "linea": 873,
+  "actual": "30 079 253",
+  "anterior": "3 134 596"
+ },
+ "dudas": [],
+ "observaciones": "Se tomaron las columnas KONSERN 2024 y 2023 (5ª y 6ª) del estado; las columnas MORSELSKAP se ignoraron. La nota 3 (b15) es 'Morselskap og konsern' y su total coincide con el renglón consolidado. Las líneas de DISPONERING (L875-L876) solo tienen importes de la sociedad matriz, no se extrajeron. 'Rentekostnad' figura en positivo pero resta en el resultado financiero."
+}

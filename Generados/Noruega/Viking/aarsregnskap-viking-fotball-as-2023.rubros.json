@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2023.md",
+  "pdf": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2023.pdf",
+  "club": "viking-no",
+  "year": 2023,
+  "generatedAt": "2026-10-20T19:43:33.184Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Inntekt fra samarbeidsavtaler",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        56.580264
+      ],
+      "glosa": "Ingresos por acuerdos de colaboración"
+    },
+    {
+      "label": "Billettinntekt fra kamper",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        18.453235
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Medieinntekter",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        29.879937
+      ],
+      "glosa": "Ingresos por derechos audiovisuales"
+    },
+    {
+      "label": "Gevinst ved salg av spillere",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        36.584869
+      ],
+      "glosa": "Beneficio por traspaso de jugadores"
+    },
+    {
+      "label": "Annen driftsinntekt",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        19.796338
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Lønn og sosiale kostnader",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        67.385846
+      ],
+      "glosa": "Sueldos y cargas sociales"
+    },
+    {
+      "label": "Ordinære avskrivninger",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        17.925743
+      ],
+      "glosa": "Amortizaciones ordinarias"
+    },
+    {
+      "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        1.587544
+      ],
+      "glosa": "Deterioro de valor del inmovilizado material e intangible"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        71.372413
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2023.md",
+ "generatedAt": "2026-10-20T19:49:35.496Z",
+ "rubrosHuella": "d8e336135fc6bb0cc82f57b6f7fdc7fb847d19cc",
+ "rubros": [
+  {
+   "label": "Inntekt fra samarbeidsavtaler",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Billettinntekt fra kamper",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Medieinntekter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gevinst ved salg av spillere",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ordinære avskrivninger",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønn og sosiale kostnader",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1069
+  }
+ ]
+}

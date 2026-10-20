@@ -1,0 +1,103 @@
+{
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2018-19.md",
+ "club": "newcastle-gb",
+ "year": 2019,
+ "generatedAt": "2026-10-20T19:28:53.058Z",
+ "rubrosHuella": "44e0ed9479e6e37b92b2faf297ee76ae49e13a2b",
+ "jevHuella": "01f7a115e3a1fed0735ab3aff8c32cb1f7b2539e",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Día de partido",
+   "page": 25,
+   "pendiente": false,
+   "ya": "matchday_competition",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "matchday_competition",
+   "confianza": 1
+  },
+  {
+   "label": "Media",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Retransmisión",
+   "page": 25,
+   "pendiente": false,
+   "ya": "broadcasting",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "broadcasting",
+   "confianza": 1
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Comercial",
+   "page": 25,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Otros ingresos",
+   "page": 25,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Profit on disposal of players' and staff registrations",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Beneficio por enajenación de derechos federativos de jugadores y cuerpo técnico",
+   "page": 12,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "player_sales",
+   "confianza": 1
+  },
+  {
+   "label": "Operating expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de explotación",
+   "page": 12,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Amortisation and impairment of players' registrations",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización y deterioro de derechos federativos de jugadores",
+   "page": 12,
+   "pendiente": false,
+   "ya": "player_amortisation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "player_amortisation",
+   "confianza": 1
+  }
+ ]
+}

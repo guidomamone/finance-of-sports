@@ -1,0 +1,276 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.md",
+ "generado": "2026-10-20T19:59:42.305Z",
+ "estado": "ok",
+ "clubId": "sarpsborg08-no",
+ "year": 2008,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2008-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 1.7763568394002505e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2007: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Salgsinntekt\" (L73) se abre en las 9 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Annen driftskostnad\" (L79) se abre en las 7 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annen driftskostnad\"): ¿Se dejan afuera de la carga las filas de b4 que repiten 1:1 renglones del estado (L222-L224, L232-L239) y se cargan solo L225-L231 como desglose de 'Annen driftskostnad'?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 14.930231,
+  "gastos": 17.491592,
+  "financiero": 0.156375,
+  "impuesto": 0,
+  "resultadoImpreso": -2.717736,
+  "resultadoParaCargar": -2.717736,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Medlemsinntekter",
+   "lado": "ingreso",
+   "M": 0.057,
+   "pagina": 6,
+   "linea": 212,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Tilskudd",
+   "lado": "ingreso",
+   "M": 0.22305,
+   "pagina": 6,
+   "linea": 213,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Kampbillettinntekter",
+   "lado": "ingreso",
+   "M": 1.073252,
+   "pagina": 6,
+   "linea": 214,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Andre arrangementsinnt.",
+   "lado": "ingreso",
+   "M": 0.233742,
+   "pagina": 6,
+   "linea": 215,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Mediainntekter",
+   "lado": "ingreso",
+   "M": 1.56012,
+   "pagina": 6,
+   "linea": 216,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Reklame-/sponsorinnt.",
+   "lado": "ingreso",
+   "M": 8.015981,
+   "pagina": 6,
+   "linea": 217,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Salg/utleie spillere (Brutto)",
+   "lado": "ingreso",
+   "M": 2.437,
+   "pagina": 6,
+   "linea": 218,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Andre salgsinntekter",
+   "lado": "ingreso",
+   "M": 1.330087,
+   "pagina": 6,
+   "linea": 219,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "ingreso",
+   "M": -0.000001,
+   "linea": 73,
+   "origen": "nota que desglosa \"Salgsinntekt\""
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 1.166928,
+   "pagina": 2,
+   "linea": 76,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Lønnskostnad",
+   "lado": "gasto",
+   "M": 11.86385,
+   "pagina": 2,
+   "linea": 77,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 0.100208,
+   "pagina": 2,
+   "linea": 78,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Administrasjonskostnader",
+   "lado": "gasto",
+   "M": 0.884878,
+   "pagina": 6,
+   "linea": 225,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Egne arrangement",
+   "lado": "gasto",
+   "M": 1.50342,
+   "pagina": 6,
+   "linea": 226,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Reise- og oppholdskostnader bortekamper",
+   "lado": "gasto",
+   "M": 0.457708,
+   "pagina": 6,
+   "linea": 227,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Kostnader reklame/sponsor",
+   "lado": "gasto",
+   "M": 0.571074,
+   "pagina": 6,
+   "linea": 228,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Kjøp/leie spillere",
+   "lado": "gasto",
+   "M": 0.086442,
+   "pagina": 6,
+   "linea": 229,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Salgskostnader",
+   "lado": "gasto",
+   "M": 0.556876,
+   "pagina": 6,
+   "linea": 230,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  },
+  {
+   "etiqueta": "Andre kostnader",
+   "lado": "gasto",
+   "M": 0.300208,
+   "pagina": 6,
+   "linea": 231,
+   "origen": "nota que desglosa \"Annen driftskostnad\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": -0.156375,
+   "linea": 82
+  }
+ ],
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "a7b7876fec55251a47a4fc8b13696259735d83c3",
+  "rango": [
+   70,
+   94
+  ],
+  "lineasCargadas": [
+   212,
+   213,
+   214,
+   215,
+   216,
+   217,
+   218,
+   219,
+   73,
+   76,
+   77,
+   78,
+   225,
+   226,
+   227,
+   228,
+   229,
+   230,
+   231,
+   82
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 70 a 94 del .md):\nL70: |  Beløp i: NOK | Note | 2008 | 2007  |\nL71: | --- | --- | --- | --- |\nL72: |  Inntekter |  |  |   |\nL73: |  Salgsinntekt |  | 14 930 231 | 12 145 273  |\nL74: |  Sum inntekter |  | 14 930 231 | 12 145 273  |\nL75: |  Koostnader |  |  |   |\nL76: |  Varekostnad |  | 1 166 928 | 603 052  |\nL77: |  Lønnskostnad |  | 11 863 850 | 8 127 627  |\nL78: |  Avskrivning på varige driftsmidler og immaterielle eiendeler |  | 100 208 | 0  |\nL79: |  Annen driftskostnad |  | 4 360 606 | 3 346 812  |\nL80: |  Sum kostnader |  | 17 491 592 | 12 077 491  |\nL81: |  Driftsresultat |  | -2 561 361 | 67 782  |\nL82: |  Annen rentekostnad |  | 156 375 | 45 867  |\nL83: |  Sum finanskostnader |  | 156 375 | 45 867  |\nL84: |  Netto finans |  | -156 375 | -45 867  |\nL85: |  Ordinært resultat før skattekostnad |  | -2 717 736 | 21 915  |\nL86: |  Ordinært resultat etter skattekostnad |  | -2 717 736 | 21 915  |\nL87: |  Årsresultat før minoritetsinteresser |  | -2 717 736 | 21 915  |\nL88: |  Årsresultat |  | -2 717 736 | 21 915  |\nL89: |  Overføringer og disponeringer |  |  |   |\nL90: |  Udekket tap |  | 2 717 736 | 21 915  |\nL91: |  Sum overføringer og disponeringer |  | 2 717 736 | 21 915  |\nL93: Utskriftsdato 22.09.2009\n\nLO QUE SE CARGA:\n- ingreso · \"Medlemsinntekter\" · 0.057 · L212 (de una nota)\n- ingreso · \"Tilskudd\" · 0.22305 · L213 (de una nota)\n- ingreso · \"Kampbillettinntekter\" · 1.073252 · L214 (de una nota)\n- ingreso · \"Andre arrangementsinnt.\" · 0.233742 · L215 (de una nota)\n- ingreso · \"Mediainntekter\" · 1.56012 · L216 (de una nota)\n- ingreso · \"Reklame-/sponsorinnt.\" · 8.015981 · L217 (de una nota)\n- ingreso · \"Salg/utleie spillere (Brutto)\" · 2.437 · L218 (de una nota)\n- ingreso · \"Andre salgsinntekter\" · 1.330087 · L219 (de una nota)\n- ingreso · \"Diferencia de redondeo\" · -0.000001 · L73\n- gasto · \"Varekostnad\" · 1.166928 · L76\n- gasto · \"Lønnskostnad\" · 11.86385 · L77\n- gasto · \"Avskrivning på varige driftsmidler og immaterielle eiendeler\" · 0.100208 · L78\n- gasto · \"Administrasjonskostnader\" · 0.884878 · L225 (de una nota)\n- gasto · \"Egne arrangement\" · 1.50342 · L226 (de una nota)\n- gasto · \"Reise- og oppholdskostnader bortekamper\" · 0.457708 · L227 (de una nota)\n- gasto · \"Kostnader reklame/sponsor\" · 0.571074 · L228 (de una nota)\n- gasto · \"Kjøp/leie spillere\" · 0.086442 · L229 (de una nota)\n- gasto · \"Salgskostnader\" · 0.556876 · L230 (de una nota)\n- gasto · \"Andre kostnader\" · 0.300208 · L231 (de una nota)\n- financiero · \"Annen rentekostnad\" · -0.156375 · L82"
+ }
+}

@@ -101,6 +101,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"City of Manchester Stadium","capacidad":52900,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'newcastle-gb': {
+    2019: {"estadio":"St James' Park","capacidad":52354,"sponsor":"Fun88","marca":"Puma","temporada":"2018–19 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376994818"},
+    2020: {"estadio":"St James' Park","capacidad":52388,"sponsor":"Fun88","marca":"Puma","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
+    2021: {"estadio":"St James' Park","capacidad":52305,"sponsor":"FUN88","marca":"Puma","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
     2022: {"estadio":"St James' Park","capacidad":52305,"sponsor":"FUN88","marca":"Castore","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2023: {"estadio":"St James' Park","capacidad":52305,"sponsor":"FUN88","marca":"Castore","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"St James' Park","capacidad":52257,"sponsor":"Sela","marca":"Castore","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},

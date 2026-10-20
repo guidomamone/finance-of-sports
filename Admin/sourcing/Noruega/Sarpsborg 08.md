@@ -62,3 +62,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2008 desde `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.pdf` (sourceId `sarpsborg08-no-aarsregnskap-fotballforening-fli-2008`).

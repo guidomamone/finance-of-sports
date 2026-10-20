@@ -1,14 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
- "generado": "2026-10-20T18:26:18.019Z",
- "frena": [
-  {
-   "etapa": "periodo",
-   "motivo": "el documento cubre un período otro de 11 meses al 2021-06-30: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)"
-  }
- ],
+ "generado": "2026-10-20T19:31:10.631Z",
+ "frena": [],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2022, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
+  "perímetro heredado del año cargado más cercano (2022, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2019 consolidado, 2020 consolidado, 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado",
   "categorías en 0 aun después del reintento (se carga así): Salarios del plantel"
  ],
  "ejercicio": {
@@ -132,18 +127,27 @@
  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md",
  "reemplaza": false,
  "periodo": {
-  "tipo": "otro",
-  "meses": 11,
+  "tipo": "anual",
+  "meses": 12,
   "cierre": "2021-06-30",
-  "evidencia": {
-   "pagina": 1,
-   "texto": "For the 11 month period ended 30 June 2021"
-  },
-  "confianza": "alta"
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-20): 11 meses del 1-08-2020 al 30-06-2021 (cambio de cierre de julio a junio); contiguo con el ejercicio de 13 meses al 31-07-2020 ya cargado"
  },
  "clubId": "newcastle-gb",
  "year": 2021,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
+   "campo": "cierre",
+   "valor": "2021-06-30",
+   "linea": null,
+   "motivo": "11 meses del 1-08-2020 al 30-06-2021 (cambio de cierre de julio a junio); contiguo con el ejercicio de 13 meses al 31-07-2020 ya cargado",
+   "evidencia": "estado de resultados, pág. 13 del visor",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
  "seleccion": {
   "filas": 10,
   "notasUsadas": [],
@@ -333,12 +337,12 @@
  "procedencia": {
   "anio": {
    "valor": 2021,
-   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): 11 meses del 1-08-2020 al 30-06-2021 (cambio de cierre de julio a junio); contiguo con el ejercicio de 13 meses al 31-07-2020 ya cargado",
    "estado": "ok"
   },
   "cierre": {
    "valor": "2021-06-30",
-   "fuente": "año del ejercicio + mes de cierre (contenido del .md (73 de 98 fechas de fin de mes caen en el mes 6))",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): 11 meses del 1-08-2020 al 30-06-2021 (cambio de cierre de julio a junio); contiguo con el ejercicio de 13 meses al 31-07-2020 ya cargado)",
    "estado": "ok"
   },
   "reportType": {
@@ -373,8 +377,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 5,
   "lineasGasto": 2,
   "metaFilas": 3,

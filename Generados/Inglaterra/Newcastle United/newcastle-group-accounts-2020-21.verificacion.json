@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
  "md": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.md",
- "generado": "2026-10-20T18:26:00.601Z",
+ "generado": "2026-10-20T19:31:08.209Z",
  "estado": "ok",
  "clubId": "newcastle-gb",
  "year": 2021,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf",
+   "campo": "cierre",
+   "valor": "2021-06-30",
+   "linea": null,
+   "motivo": "11 meses del 1-08-2020 al 30-06-2021 (cambio de cierre de julio a junio); contiguo con el ejercicio de 13 meses al 31-07-2020 ya cargado",
+   "evidencia": "estado de resultados, pág. 13 del visor",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -31,6 +42,11 @@
    "dif": 1.2434497875801753e-14
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 178.914; el sitio tiene 178.914"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2021: 141.893 en este documento y 141.893 en newcastle-group-accounts-2021-22.pdf (columna del año anterior)"
@@ -39,11 +55,6 @@
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 178.914 en newcastle-group-accounts-2019-20.pdf y 178.914 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [

@@ -683,6 +683,49 @@ Generados/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2012.categorias.
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2008
+
+### Ingresos
+
+```text
+2008: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Medlemsinntekter | pág. 6, Jev 1 |
+| 2 | Tilskudd | pág. 6, Jev 0.99 |
+| 3 | Kampbillettinntekter | pág. 6, Jev 0.99 |
+| 4 | Andre arrangementsinnt. | pág. 6, precedente |
+| 5 | Mediainntekter | pág. 6, Jev 1 |
+| 6 | Reklame-/sponsorinnt. | pág. 6, Jev 1 |
+| 7 | Salg/utleie spillere (Brutto) | pág. 6, precedente |
+| 8 | Andre salgsinntekter | pág. 6, precedente |
+| 9 | Diferencia de redondeo | pág. ?, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Varekostnad | pág. 2, Claude 0.8 |
+| 2 | Lønnskostnad | pág. 2, precedente |
+| 3 | Avskrivning på varige driftsmidler og immaterielle eiendeler | pág. 2, precedente |
+| 4 | Administrasjonskostnader | pág. 6, Jev 1 |
+| 5 | Egne arrangement | pág. 6, precedente |
+| 6 | Reise- og oppholdskostnader bortekamper | pág. 6, Jev 1 |
+| 7 | Kostnader reklame/sponsor | pág. 6, Jev 0.99 |
+| 8 | Kjøp/leie spillere | pág. 6, Jev 1 |
+| 9 | Salgskostnader | pág. 6, precedente |
+| 10 | Andre kostnader | pág. 6, Jev 1 |
+
+### Meta
+
+```text
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-19): perimetro = individual. perimetro-senales.mjs: el ejercicio 2008-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## Fuentes
 
 ### sarpsborg08-no-aarsregnskap-fotballforening-fli-2025
@@ -787,4 +830,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sarpsborg08-no-aarsregnskap-fotballforening-fli-2008
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2008.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
