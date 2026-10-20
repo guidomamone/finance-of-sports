@@ -63,6 +63,12 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   - **A Guido solo le llega lo que cambia un criterio**, junto en un mensaje numerado de la principal por día.
   - **El circuito:** frenado → pipeline (diseño y medición) → auditora → commit → la principal mergea y le devuelve a onboarding (o a una
     sesión nueva) la lista de documentos destrabados, que los carga o los vuelve a frenar.
+  - **Cada sesión corre sus propios lotes y tiene un presupuesto** (Guido, 2026-10-20). La sesión larga sus lotes en su carpeta, en
+    segundo plano (`caffeinate -i node tools/lote.mjs … --ejecutar`), y lee el resultado sola; ni Guido ni la principal largan lotes
+    en la carpeta de otra. Guido fija un presupuesto total en US$ por sesión. Antes de cada corrida paga, el ensayo gratis da el costo:
+    si entra en lo que queda, se corre sin preguntar; si no, se frena y se le avisa a la principal. La cuenta sale de `node tools/gasto.mjs`
+    (lee los registros de la API) y va en la nota de la sesión. La auditora compara, en cada merge, lo gastado contra el presupuesto y
+    los ensayos, y marca la plata tirada: lotes que no escribieron nada, reintentos repetidos, corridas dobles.
   - **El número de lote lo da la principal.** Las listas de corrida (`Admin/registros/.lote-lista-actual.txt` y compañía) son de cada
     carpeta; dos lotes en carpetas distintas pueden correr a la vez, dos en la misma no.
 
