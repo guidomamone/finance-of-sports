@@ -234,6 +234,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    Lote 101: Luzern 2019 y 2022 y Go Ahead Eagles 2021-2024 cargados; Basel espera la 324; Luzern 2018 y 2024 frenan por estadio o
    sponsor, 2020 y 2023 por categorías en cola (y el tie-out de gastos de 2023). Sigue el lote 102 (Lommel, Lierse, Patro Eisden).
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
+   b3) `estadio-sponsor.mjs`: aceptar la marca `sin-fuente` de `tools/contexto-manual.json` como dato resuelto (hoy un sponsor null cuenta
+   como falta y frena), y sumar `be-challengerproleague` a `SOLO_ESTADIO`. REGLA en CONVENCIONES-DATOS ("un dato de contexto sin fuente
+   pública queda en null"). Destraba Patro Eisden 2015.
    a3) cachés viejos que se cargan en silencio: `cargar.mjs` lee el `.verificacion.json` y no avisa si es anterior a un cambio de
    `tools/verificar.mjs` (St. Gallen 2019 y 2022 se cargaron con un caché previo a la 298 ai). Un aviso al cargar, o que
    `medir-cargar --contra-sitio` lo diga.

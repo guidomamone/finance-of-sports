@@ -436,3 +436,12 @@ Una gestión se busca en la web (búsqueda general, la página del club, Wikiped
 estaba a cargo al cierre, el año queda sin gestión (`null`) y no se espera la respuesta del club: la pregunta en `Admin/dudas-por-club.md`
 puede quedar, pero no frena nada. Para Wikipedia no se abre la página entera (es lo que hace caer a los subagentes): se lee solo la ficha o
 la sección que hace falta.
+
+## REGLA: un dato de contexto sin fuente pública queda en null y el año se carga igual (Guido, 2026-10-20)
+
+Estadio, sponsor, liga, gestión y los demás datos de contexto (lo que no es una cifra del balance) se buscan en la web: la página del
+club, Wikipedia (con `tools/wiki-extracto.mjs`, no la página entera), la prensa y la página de la temporada. Si la búsqueda se agota sin
+una fuente, el dato queda en `null` con la marca `sin-fuente` (en `tools/contexto-manual.json`, con dónde se buscó) y el año se carga
+igual: la falta de un dato de contexto nunca frena una carga ni es una pregunta para Guido. Una liga no se infiere del año vecino
+(votación de Patro Eisden 2013): si no hay fuente, queda `null`. Además, en la segunda división belga (`be-challengerproleague`) alcanza
+con el estadio, igual que en la Eerste Divisie y las segundas noruegas (`SOLO_ESTADIO`; votación de Patro Eisden 2015, opción C).
