@@ -417,6 +417,8 @@ Everton 2025 (£49,2 M, venta de Everton FC Women y Goodison Park Stadium a la m
 
 Un bono pagado a personas, sin contrato de pase con otro club, es remuneración, no `player_amortisation` (que es adquisición de pases a otros clubes).
 Caso: Deportivo Pereira 2025, "Trayectoria deportiva" (8,9 % de los gastos).
+CATEGORÍA (prompt): un bono de fichaje o de trayectoria pagado a jugadores y técnicos por nombre, sin contrato de pase con otro club, va a wages_squad, no a player_amortisation.
+EJEMPLO-CATEGORÍA: deportivopereira-co | expense | Trayectoria deportiva | wages_squad
 
 ## REGLA: `officialPAT` de un consolidado alemán con partner silencioso o minoritarios es el resultado ANTES de esas asignaciones (votación 3 a 0, 2026-10-20)
 
