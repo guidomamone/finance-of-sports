@@ -1,0 +1,339 @@
+{
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.md",
+ "mdSha1": "fc81ffdc1a58ed27f7f34392c701ffbd2fd88144",
+ "ubicacionSha1": "3f149052f3452e224e3417595e75f88e9c0dcf62",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-20T18:50:11.442Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b10"
+  ],
+  "notas_gastos": [
+   "b11",
+   "b14"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columna 'Period from 1 Aug 20 to 30 Jun 21 £' (importes en libras, sin miles)"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columna '... £'"
+  },
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columna '... £'"
+  },
+  {
+   "bloque": "b14",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columna '... £'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 569,
+   "etiqueta": "Turnover",
+   "actual": "171,027,740",
+   "anterior": "54,183,980",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 570,
+   "etiqueta": "Cost of sales",
+   "actual": "(14,654,409)",
+   "anterior": "(13,885,858)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 571,
+   "etiqueta": "Gross profit",
+   "actual": "156,373,331",
+   "anterior": "40,298,122",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 572,
+   "etiqueta": "Administrative expenses",
+   "actual": "(151,985,475)",
+   "anterior": "(108,398,516)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 573,
+   "etiqueta": "Other operating income",
+   "actual": "1,137,677",
+   "anterior": "3,528,322",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 574,
+   "etiqueta": "Settlement of transfer dispute",
+   "actual": "(15,555,435)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 575,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "(10,029,902)",
+   "anterior": "(64,572,072)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 576,
+   "etiqueta": "(Loss)/gain on disposal of players' registrations",
+   "actual": "(1,439,614)",
+   "anterior": "10,128,024",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 577,
+   "etiqueta": "Television and broadcasting rebate",
+   "actual": "-",
+   "anterior": "(7,000,000)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 578,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "5,282,136",
+   "anterior": "1,057,510",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 579,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(5,757,466)",
+   "anterior": "(2,035,446)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 580,
+   "etiqueta": "Profit/(loss) before taxation",
+   "actual": "(11,944,846)",
+   "anterior": "(62,421,984)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 581,
+   "etiqueta": "Tax on profit/(loss)",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 582,
+   "etiqueta": "Profit/(loss) for the financial period and total comprehensive income",
+   "actual": "(11,944,846)",
+   "anterior": "(62,421,984)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 1003,
+   "etiqueta": "Gate receipts",
+   "actual": "1,928,102",
+   "anterior": "11,435,623",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1004,
+   "etiqueta": "Television and broadcasting income",
+   "actual": "22,016,653",
+   "anterior": "1,481,500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1005,
+   "etiqueta": "Merchandising income",
+   "actual": "20,369,022",
+   "anterior": "15,364,697",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1006,
+   "etiqueta": "Central distributions",
+   "actual": "110,813,728",
+   "anterior": "7,191,511",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1007,
+   "etiqueta": "Other commercial revenue",
+   "actual": "15,042,549",
+   "anterior": "14,435,706",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1008,
+   "etiqueta": "Catering income",
+   "actual": "380,638",
+   "anterior": "3,999,313",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1009,
+   "etiqueta": "Educational services",
+   "actual": "477,048",
+   "anterior": "275,630",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1010,
+   "etiqueta": "",
+   "actual": "171,027,740",
+   "anterior": "54,183,980",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1075,
+   "etiqueta": "Wages and salaries",
+   "actual": "95,958,897",
+   "anterior": "70,217,594",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1076,
+   "etiqueta": "Social security costs",
+   "actual": "12,126,102",
+   "anterior": "7,906,514",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1077,
+   "etiqueta": "Other pension costs",
+   "actual": "167,680",
+   "anterior": "166,348",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1078,
+   "etiqueta": "",
+   "actual": "108,252,679",
+   "anterior": "78,290,456",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 569,
+  "actual": "171,027,740"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 582,
+  "actual": "(11,944,846)",
+  "anterior": "(62,421,984)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de cargos operativos (L1032-L1040) por ser informativo y no un desglose sumable de un renglón del estado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Operating profit/(loss)",
+   "texto": "El cuadro b11 lista partidas cargadas/acreditadas (amortizaciones, diferencias de cambio, grants) que no suman a ningún renglón del estado.",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se asigna el costo de personal (L1075-L1078) como desglose de 'Administrative expenses' aunque parte podría estar en 'Cost of sales'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota b14 no indica en qué renglón del estado se imputan los salarios; 'Salarios del plantel' se mapea a 'Wages and salaries' (L1075).",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Importes en libras (unidades). No hay total de gastos impreso. 'Salarios del plantel' corresponde a 'Wages and salaries' (L1075) del cuadro de payroll costs, que incluye todo el personal sin separar plantel. Ejercicio actual de 11 meses vs 13 meses del anterior."
+}

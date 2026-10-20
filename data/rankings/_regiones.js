@@ -16,7 +16,7 @@ window.RANKINGS_INDICE = {
   "br-serieD": [2018,2,68],
   "ch-superleague": [2019,3,10],
   "cl-primera": [2025,3,16],
-  "co-primeraA": [2025,11,20],
+  "co-primeraA": [2025,12,20],
   "co-primeraB": [2018,2,16],
   "de-2bundesliga": [2025,2,18],
   "de-bundesliga": [2024,10,18],
@@ -26,9 +26,9 @@ window.RANKINGS_INDICE = {
   "ee-meistriliiga": [2025,9,10],
   "es-laliga": [2025,14,20],
   "es-segunda": [2025,3,22],
-  "gb-championship": [2025,3,24],
+  "gb-championship": [2022,4,24],
   "gb-leagueone": [2022,1,24],
-  "gb-premierleague": [2024,17,20],
+  "gb-premierleague": [2023,18,20],
   "gb-scottishpremiership": [2025,1,12],
   "gr-superleague": [2025,12,14],
   "gr-superleague2": [2023,3,30],
@@ -53,7 +53,7 @@ window.RANKINGS_INDICE = {
   "tr-superlig": [2023,1,19],
 };
 window.RANKINGS_REGION = {
-  mundo: { year:2025, total:258, clubs:[
+  mundo: { year:2025, total:259, clubs:[
     { id:"realmadrid", league:"es-laliga", revenue:1388.522 },
     { id:"fcbarcelona", league:"es-laliga", revenue:1167.798 },
     { id:"bayernmunich-de", league:"de-bundesliga", revenue:1085.912 },
@@ -65,7 +65,7 @@ window.RANKINGS_REGION = {
     { id:"inter-it", league:"it-seriea", revenue:664.571 },
     { id:"dortmund-de", league:"de-bundesliga", revenue:627.63 },
   ] },
-  america: { year:2025, total:61, clubs:[
+  america: { year:2025, total:62, clubs:[
     { id:"flamengo-br", league:"br-serieA", revenue:347.575 },
     { id:"palmeiras-br", league:"br-serieA", revenue:295.959 },
     { id:"botafogo", league:"br-serieA", revenue:247.129 },

@@ -45,6 +45,10 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"96.com","marca":"Castore","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
   'celtic-gb': {
+    2021: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","fuente":"https://en.wikipedia.org/wiki/Celtic_Park","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"}},
+    2022: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","fuente":"https://en.wikipedia.org/wiki/Celtic_Park","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"}},
+    2023: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","fuente":"https://en.wikipedia.org/wiki/Celtic_Park","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"}},
+    2024: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","temporada":"2023–24 Scottish Premiership","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374234371","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sbcnews.co.uk/marketing/2018/08/03/10-row-dafabet-renews-celtic-sponsorship-until-2025/","marca":"https://sportskhabri.com/celtic-fc-sponsors-2020-21/"}},
     2025: {"estadio":"Celtic Park","capacidad":60411,"sponsor":"Dafabet","marca":"Adidas","temporada":"2024–25 Scottish Premiership","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374234380","fuenteManual":"https://en.wikipedia.org/wiki/Celtic_Park","manual":["estadio","capacidad","sponsor","marca"],"fuentesManual":{"sponsor":"https://sponsorship.sportbusiness.com/news/celtic-lands-long-term-extension-with-kit-sponsor-dafabet","marca":"https://www.scotsman.com/sport/football/celtic/celtic-fc-new-kit-unveil-adidas-home-shirt-heres-when-it-is-available-to-buy-and-the-price-4645920"}},
   },
   'chelsea-gb': {
@@ -69,6 +73,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'fulham-gb': {
     2021: {"estadio":"Craven Cottage","capacidad":19359,"sponsor":"BetVictor","marca":"Adidas","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
+    2022: {"estadio":"Craven Cottage","capacidad":19359,"sponsor":"World Mobile","marca":"Adidas","temporada":"2021–22 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358361756"},
     2023: {"estadio":"Craven Cottage","capacidad":22384,"sponsor":"W88","marca":"Adidas","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
@@ -76,6 +81,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'leeds-gb': {
     2019: {"estadio":"Elland Road","capacidad":37890,"sponsor":"32Red","marca":"Kappa","temporada":"2018–19 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372863678"},
     2020: {"estadio":"Elland Road","capacidad":37890,"sponsor":"32Red","marca":"Kappa","temporada":"2019–20 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380740679"},
+    2021: {"estadio":"Elland Road","capacidad":37792,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
     2022: {"estadio":"Elland Road","capacidad":37792,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2023: {"estadio":"Elland Road","capacidad":37608,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Elland Road","capacidad":37608,"sponsor":"BOXT","marca":"Adidas","temporada":"2023–24 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374030992"},
@@ -83,11 +89,13 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'liverpool-gb': {
     2022: {"estadio":"Anfield","capacidad":53394,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Anfield","capacidad":53394,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'mancity-gb': {
     2021: {"estadio":"City of Manchester Stadium","capacidad":55017,"sponsor":"Puma","marca":"Fernandinho|Fernandinho (footballer, born May 1985)}}","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
+    2022: {"estadio":"City of Manchester Stadium","capacidad":53400,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2023: {"estadio":"City of Manchester Stadium","capacidad":53400,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"City of Manchester Stadium","capacidad":53400,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"City of Manchester Stadium","capacidad":52900,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
@@ -115,6 +123,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'tottenham-gb': {
     2022: {"estadio":"Tottenham Hotspur Stadium","capacidad":62850,"sponsor":"AIA","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Tottenham Hotspur Stadium","capacidad":62850,"sponsor":"AIA","marca":"Nike","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Tottenham Hotspur Stadium","capacidad":62850,"sponsor":"AIA","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Tottenham Hotspur Stadium","capacidad":62850,"sponsor":"AIA","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

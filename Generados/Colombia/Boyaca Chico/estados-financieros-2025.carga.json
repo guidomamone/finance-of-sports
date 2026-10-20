@@ -1,18 +1,11 @@
 {
  "pdf": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf",
- "generado": "2026-10-19T18:56:29.196Z",
- "frena": [
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 9305.853883 + gastos -8634.665049 + netInterest 0 + tax -205.56515 = 465.623684 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 381.763851)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -8634.665049 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-20T18:37:08.319Z",
+ "frena": [],
  "avisos": [
-  "materialidad: \"Intereses\" va como other_income con 0.6 (las dudas de ingresos suman 0.00% de su lado)"
+  "materialidad: \"Intereses\" va como other_income con 0.6 (las dudas de ingresos suman 0.00% de su lado)",
+  "resultado financiero: \"Intereses\" 83.859833 (gasto) contestado no_es_rubro en la cola pasa al resultado financiero: con eso cierra el resultado impreso (to-do 298 p2)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-8634.665049); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "boyacachico-co",
@@ -731,13 +724,23 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": 0,
+   "netInterest": -83.859833,
    "tax": -205.56515,
+   "extraRows": [
+    {
+     "label": "Gasto por impuesto a las ganancias",
+     "value": -205.56515
+    },
+    {
+     "label": "Intereses",
+     "value": -83.859833
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 9305.853883,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalExpenses": 8634.665049,
+   "officialPAT": 381.763851
   },
   "source": {
    "id": "boyacachico-co-estados-financieros-2025",
@@ -745,7 +748,7 @@
    "title": "Deportivo Boyacá Chicó Futbol Club S.A. — estados-financieros-2025 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md",
@@ -1777,7 +1780,7 @@
    "enLista": true,
    "ladoRechazado": true,
    "notaGuido": "Claude 2026-10-19 (subagente Sonnet, alta): SKILL.md seccion 2: intereses nunca son linea de gasto, van netos a netInterest de fiscalYearMeta. Nota: el 'Otros gastos' de Nota 20 mezcla intereses; hay que sacarlos de expenseLines y llevarlos a netInterest. [Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md L999-1001 (Intereses 83]",
-   "destino": "excluida"
+   "destino": "netInterest"
   },
   {
    "label": "IVA Bancario",
@@ -1872,16 +1875,24 @@
    "verificacion (nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Multas Sanciones y Litigios\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 9305.853883,
   "expSum": -8634.665049,
   "officialTotalRevenue": 9305.853883,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
+  "officialTotalExpenses": 8634.665049,
+  "officialPAT": 381.763851,
   "verificacion": {
-   "ingresos": "impreso"
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 381.763851,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
@@ -1937,11 +1948,11 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 19,
   "lineasGasto": 51,
-  "metaFilas": 1,
-  "excluidas": 1
+  "metaFilas": 2,
+  "excluidas": 0
  }
 }

@@ -183,6 +183,49 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Leeds United".
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Leeds United/leeds-group-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate receipts | pág. 22, precedente |
+| 2 | Television and broadcasting income | pág. 22, precedente |
+| 3 | Merchandising income | pág. 22, precedente |
+| 4 | Central distributions | pág. 22, precedente |
+| 5 | Other commercial revenue | pág. 22, precedente |
+| 6 | Catering income | pág. 22, precedente |
+| 7 | Educational services | pág. 22, precedente |
+| 8 | Other operating income | pág. 13, precedente |
+| 9 | (Loss)/gain on disposal of players' registrations | pág. 13, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 13, precedente |
+| 2 | Administrative expenses | pág. 13, precedente |
+| 3 | Settlement of transfer dispute | pág. 13, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): cierre = 2021-06-30. Consolidated Statement of Comprehensive Income 'Period from 1 August 2020 to 30 June 2021' (11 meses, pág. 13 del visor); el 2023-03-31 del registro es el sello de presentación
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): estado = b3. El estado de resultados (Consolidated Statement of Comprehensive Income, pág. 13 del visor) es el bloque b3; el lote lo dejaba 'sin estado de resultados'
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Leeds United".
+```
+
 ## 2020
 
 ### Ingresos
@@ -214,7 +257,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión
+tools/dentro-de-otro.mjs (2026-10-20): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2021, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
 ### Liga
@@ -310,6 +353,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Leeds United/leeds-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### leeds-gb-group-accounts-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Gestiones (Finanzas 5, 2026-10-19)

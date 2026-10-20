@@ -3,8 +3,9 @@
  "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2020-21.md",
  "mdSha1": "fc81ffdc1a58ed27f7f34392c701ffbd2fd88144",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T17:15:01.083Z",
+ "generado": "2026-10-20T18:49:50.614Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -311,29 +312,36 @@
    "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b14"
+ ],
  "escala": "unidades",
- "escala_evidencia": "Encabezados de columna en £ sin indicación de miles (ej. 'Period from 1 Aug 20 to 30 Jun 21 £')",
+ "escala_evidencia": "Encabezado de columnas en '£' sin indicación de miles (ej. 'Period from 1 Aug 20 to 30 Jun 21 £')",
  "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
+ "columna_ejercicio": "Period from 1 Aug 20 to 30 Jun 21 £",
+ "columna_anterior": "Period from 1 Jul 19 to 31 Jul 20 £",
+ "perimetro": "consolidado",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se confirma que este documento (cuentas 2020-21, período 1-ago-2020 a 30-jun-2021) no contiene el estado de resultados del ejercicio cerrado el 31-03-2023 y debe buscarse otro PDF?",
+   "pregunta": "¿Se carga el ejercicio de 11 meses (1-ago-2020 a 30-jun-2021) como el ejercicio pedido, comparado con un anterior de 13 meses (1-jul-2019 a 31-jul-2020)?",
    "propuesta": "sí",
-   "tema": "cuadro-de-otro-anio",
+   "tema": "columna",
    "renglon": "",
-   "texto": "El estado de resultados consolidado (b3, pág. 13) cubre el período del 1-ago-2020 al 30-jun-2021 con comparativo 2019-20; no hay ningún cierre al 31-03-2023.",
+   "texto": "Las columnas del estado (b3) cubren períodos de distinta duración por cambio de fecha de cierre.",
    "bloques": [
     "b3"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "El documento son las cuentas consolidadas e individuales de Leeds United Football Club Limited del período del 1-ago-2020 al 30-jun-2021 (estado consolidado en b3 y notas en b10, b11, b14, b16 y b17). No corresponde al ejercicio pedido que cierra el 31-03-2023, por lo que no se elige ningún bloque. La escala es en libras (GBP) en unidades."
+ "observaciones": "Solo se presenta estado de resultados consolidado (b3); la sociedad no publica cuenta de resultados individual (solo balance y cambios en patrimonio de la Company, b5/b7). b14 abre los costes de personal (wages and salaries, social security, pension) del grupo, que incluyen salarios del plantel; no hay desglose específico de jugadores. b11 detalla cargos incluidos en el resultado operativo (amortización, deterioro, subvenciones)."
 }

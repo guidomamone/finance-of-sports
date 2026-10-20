@@ -1,0 +1,221 @@
+{
+ "pdf": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.md",
+ "generado": "2026-10-20T18:47:41.337Z",
+ "estado": "ok",
+ "clubId": "tottenham-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.pdf",
+   "campo": "estado",
+   "valor": "b3",
+   "linea": null,
+   "motivo": "El estado de resultados (Consolidated income statement, pág. 19 del visor, impreso 17) es el bloque b3; el lote lo dejaba 'sin estado de resultados'",
+   "evidencia": "pág. 19 del visor, .md L822",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.pdf",
+   "campo": "cierre",
+   "valor": "2023-06-30",
+   "linea": null,
+   "motivo": "Consolidated income statement 'for the year ended 30 June 2023' (pág. 19 del visor); el 2024-03-30 del registro es el sello de presentación",
+   "evidencia": ".md L822-824",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Revenue\" 549.633 cierra; además se suman 2 línea(s) fuera de ese total (15.51)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "615.054 = 615.054",
+   "suma": 615.054,
+   "impreso": 615.054
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.5631940186722204e-13
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 462.565; el sitio tiene 468.134"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 462.565 en tottenham-group-accounts-2021-22.pdf y 462.565 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de extraer ya contestada para el club (cuadro-de-otro-anio, \"-\"): aceptar, en tottenham-group-accounts-2022-23.pdf",
+  "duda de extraer que no afecta la carga: L1476-L1484 es una conciliación que repite el total ya desglosado en L1465-L1473."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 565.143,
+  "gastos": 615.054,
+  "financiero": -44.763,
+  "impuesto": 7.88,
+  "resultadoImpreso": -86.794,
+  "resultadoParaCargar": -86.794,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Match receipts",
+   "lado": "ingreso",
+   "M": 117.598,
+   "pagina": 29,
+   "linea": 1314,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "UEFA Prize money (before exceptional item)",
+   "lado": "ingreso",
+   "M": 56.207,
+   "pagina": 29,
+   "linea": 1315,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "TV and media",
+   "lado": "ingreso",
+   "M": 148.078,
+   "pagina": 29,
+   "linea": 1316,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 227.75,
+   "pagina": 29,
+   "linea": 1317,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Consideration",
+   "lado": "ingreso",
+   "M": 32.416,
+   "pagina": 31,
+   "linea": 1430,
+   "origen": "nota que desglosa \"Profit on disposal of intangible fixed assets\""
+  },
+  {
+   "etiqueta": "Net book value of disposals",
+   "lado": "gasto",
+   "M": 16.906,
+   "pagina": 31,
+   "linea": 1431,
+   "origen": "nota que desglosa \"Profit on disposal of intangible fixed assets\""
+  },
+  {
+   "etiqueta": "Salaries and bonuses",
+   "lado": "gasto",
+   "M": 218.897,
+   "pagina": 31,
+   "linea": 1415,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\""
+  },
+  {
+   "etiqueta": "Social security costs",
+   "lado": "gasto",
+   "M": 31.332,
+   "pagina": 31,
+   "linea": 1416,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\""
+  },
+  {
+   "etiqueta": "Other pension costs (see note 25)",
+   "lado": "gasto",
+   "M": 0.892,
+   "pagina": 31,
+   "linea": 1417,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 5)\""
+  },
+  {
+   "etiqueta": "Depreciation of property, plant and equipment",
+   "lado": "gasto",
+   "M": 71.868,
+   "pagina": 29,
+   "linea": 1339,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Profit on disposal of property, plant and equipment",
+   "lado": "gasto",
+   "M": -0.025,
+   "pagina": 29,
+   "linea": 1340,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "- Onerous employment contracts",
+   "lado": "gasto",
+   "M": 5.11,
+   "pagina": 29,
+   "linea": 1342,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Other operating costs",
+   "lado": "gasto",
+   "M": 159.874,
+   "pagina": 29,
+   "linea": 1343,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Amortisation, impairments and other net football trading income and expenditure",
+   "lado": "gasto",
+   "M": 127.106,
+   "pagina": 29,
+   "linea": 1345,
+   "origen": "nota que desglosa \"Operating expenses\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finance income",
+   "M": 1.566,
+   "linea": 833
+  },
+  {
+   "etiqueta": "Finance costs",
+   "M": -46.329,
+   "linea": 834
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax",
+   "M": 7.88,
+   "linea": 836
+  }
+ ]
+}

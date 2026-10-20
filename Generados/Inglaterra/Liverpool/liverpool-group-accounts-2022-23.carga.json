@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2022-23.pdf",
- "generado": "2026-10-20T18:24:22.284Z",
+ "generado": "2026-10-20T18:51:26.340Z",
  "frena": [
   {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
-  },
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2024-02-29): confirmar qué ejercicio es antes de cargarlo"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
    "etapa": "filas",
-   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -28,10 +16,10 @@
  "periodo": {
   "tipo": "anual",
   "meses": 12,
-  "cierre": "2024-02-29",
+  "cierre": "2023-05-31",
   "anual": "temporada",
-  "confianza": "media",
-  "nombreNoCoincide": true
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-20): Consolidated Profit and Loss Account 'for the year ended 31 May 2023' (pág. 14 del visor); el 2024-02-29 del registro es el sello de presentación"
  },
  "clubId": "liverpool-gb",
  "year": 2023,

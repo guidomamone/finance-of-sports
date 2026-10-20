@@ -643,10 +643,6 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Manta — sin-buscar: 2022 (ec-serieb)
 - Olmedo — sin-buscar: 2022 (ec-serieb)
 
-## Escocia (1 clubes, 1 club-años)
-
-- Celtic — sin-buscar: 2024 (gb-scottishpremiership)
-
 ## España (16 clubes, 28 club-años)
 
 - Albacete — sin-buscar: 2025 (es-segunda), 2024 (es-segunda), 2020 (es-segunda)
@@ -755,21 +751,22 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Panelefsiniakos — sin-buscar: 2017 (gr-superleague2), 2016 (gr-superleague2)
 - Sparta — sin-buscar: 2017 (gr-superleague2)
 
-## Inglaterra (15 clubes, 39 club-años)
+## Inglaterra (16 clubes, 72 club-años)
 
-- Aberdeen — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
+- Aberdeen — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
 - Cardiff City — sin-buscar: 2025 (gb-championship), 2024 (gb-championship), 2023 (gb-championship), 2022 (gb-championship), 2021 (gb-championship), 2020 (gb-championship), 2019 (gb-premierleague)
-- Dundee — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
-- Dundee United — sin-buscar: 2025 (gb-scottishpremiership)
-- Heart of Midlothian — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
-- Hibernian — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
-- Kilmarnock — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
-- Motherwell — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
-- Rangers — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
-- Ross County — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
-- St Johnstone — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
-- St Mirren — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership)
-- Livingston — sin-buscar: 2024 (gb-scottishpremiership)
+- Dundee — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2022 (gb-scottishpremiership)
+- Dundee United — sin-buscar: 2025 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
+- Heart of Midlothian — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership)
+- Hibernian — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
+- Kilmarnock — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
+- Motherwell — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
+- Rangers — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
+- Ross County — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
+- St Johnstone — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
+- St Mirren — sin-buscar: 2025 (gb-scottishpremiership), 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
+- Livingston — sin-buscar: 2024 (gb-scottishpremiership), 2023 (gb-scottishpremiership), 2022 (gb-scottishpremiership), 2021 (gb-scottishpremiership)
+- Hamilton Academical — sin-buscar: 2021 (gb-scottishpremiership)
 - Swansea City — sin-buscar: 2025 (gb-championship), 2024 (gb-championship), 2023 (gb-championship), 2022 (gb-championship), 2021 (gb-championship), 2020 (gb-championship), 2019 (gb-championship)
 - Barrow — sin-buscar: 2025 (gb-leaguetwo), 2024 (gb-leaguetwo), 2023 (gb-leaguetwo)
 

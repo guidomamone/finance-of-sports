@@ -224,6 +224,53 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Manchester City".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Manchester City/mancity-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Matchday | pág. 26, precedente |
+| 2 | Broadcasting - UEFA | pág. 26, precedente |
+| 3 | Broadcasting - all other | pág. 26, precedente |
+| 4 | Other commercial activities | pág. 26, precedente |
+| 5 | Other operating income | pág. 13, precedente |
+| 6 | Profit on disposal of players' registrations | pág. 13, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Direct cost of sales and consumables | pág. 26, precedente |
+| 2 | Remuneration of Auditors (audit fees) | pág. 26, precedente |
+| 3 | Other external charges | pág. 26, precedente |
+| 4 | Wages and salaries | pág. 27, precedente |
+| 5 | Social security costs | pág. 27, precedente |
+| 6 | Other pension costs | pág. 27, precedente |
+| 7 | Amortisation and impairment of intangible assets | pág. 26, precedente |
+| 8 | Profit on disposal of property, plant and equipment | pág. 26, Jev 0.99 |
+| 9 | Owned | pág. 26, precedente |
+| 10 | Leased | pág. 26, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): estado = b2. El estado de resultados (Statement of Profit or Loss, pág. 13 del visor, con columnas de operaciones y de trading de jugadores) es el bloque b2; el lote lo dejaba 'sin estado de resultados'
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): cierre = 2022-06-30. Statement of Profit or Loss 'for the year ended 30 June 2022' (pág. 13 del visor); el 2023-03-30 del registro es el sello de presentación
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Manchester City".
+```
+
 ## 2021
 
 ### Ingresos
@@ -300,6 +347,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### mancity-gb-full-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

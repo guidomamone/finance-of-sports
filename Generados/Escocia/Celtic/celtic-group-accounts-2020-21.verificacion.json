@@ -1,0 +1,219 @@
+{
+ "pdf": "Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.pdf",
+ "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.md",
+ "generado": "2026-10-20T19:08:00.403Z",
+ "estado": "ok",
+ "clubId": "celtic-gb",
+ "year": 2021,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.pdf",
+   "campo": "fila",
+   "valor": "-1056",
+   "linea": 2989,
+   "etiqueta": "Finance expense",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "El estado quedó transcripto como texto y el bloque corta en Finance income (L2987): falta Finance expense (1,056), impreso en L2989",
+   "evidencia": "pág. 60 del visor, .md L2989",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.pdf",
+   "campo": "resultado-final",
+   "valor": "-12601",
+   "linea": 2999,
+   "motivo": "Resultado del ejercicio impreso (12,601) en L2999, fuera del bloque elegido (texto plano); verificar deduce el impuesto por diferencia (1,109 impreso en L2992)",
+   "evidencia": "pág. 60 del visor, .md L2999",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Revenue\" 60.781 cierra; además se suman 2 línea(s) fuera de ese total (14.435)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"Operating expenses (before intangible asset transactions and exceptional items)\" 74.353 cierra; además se suman 2 línea(s) fuera de ese total (12.154)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": null,
+   "detalle": "extraer.mjs no encontró el resultado impreso"
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-12.601 por ajuste manual (-12601: Resultado del ejercicio impreso (12,601) en L2999, fuera del bloque elegido (texto plano); verificar deduce el impuesto por diferencia (1,109 impreso en L2992)); impuesto deducido 1.109 (antes de impuestos -11.492; el documento imprimía 0)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 75.216 en este documento y 75.216 en celtic-group-accounts-2021-22.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Finance expense\" (financiero) -1056 (2026-10-20, El estado quedó transcripto como texto y el bloque corta en Finance income (L2987): falta Finance expense (1,056), impreso en L2989)",
+  "ajuste manual: resultado final -12601 (2026-10-20, Resultado del ejercicio impreso (12,601) en L2999, fuera del bloque elegido (texto plano); verificar deduce el impuesto por diferencia (1,109 impreso en L2992))",
+  "duda de localizar cerrada por la regla 1 de perímetro (el documento trae un solo estado, consolidado): ¿Se carga el estado de resultados del grupo (b8, pág. 60) aunque el perímetro usado en años anteriores es individual?",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Other income\"): aceptar, en celtic-group-accounts-2020-21.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Operating expenses (before intangible asset transactions and exceptional items)\"): aceptar, en celtic-plc-group-accounts-2024-25.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 75.216,
+  "gastos": 86.507,
+  "financiero": -0.201,
+  "impuesto": 1.109,
+  "resultadoImpreso": null,
+  "resultadoParaCargar": -12.601,
+  "resultadoFinal": {
+   "valor": -12.601,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/registros/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": 1.109
+  },
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticketing",
+   "lado": "ingreso",
+   "M": 21.675,
+   "pagina": 79,
+   "linea": 3938,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Merchandise vouchers for season ticket holders",
+   "lado": "ingreso",
+   "M": -2.775,
+   "pagina": 79,
+   "linea": 3939,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Commercial / sponsorship",
+   "lado": "ingreso",
+   "M": 12.425,
+   "pagina": 79,
+   "linea": 3940,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Retail outlets and E-commerce",
+   "lado": "ingreso",
+   "M": 15.117,
+   "pagina": 79,
+   "linea": 3941,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Media rights",
+   "lado": "ingreso",
+   "M": 11.253,
+   "pagina": 79,
+   "linea": 3942,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Stadium operations",
+   "lado": "ingreso",
+   "M": 1.924,
+   "pagina": 79,
+   "linea": 3943,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 1.162,
+   "pagina": 79,
+   "linea": 3944,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Profit on disposal of intangible assets",
+   "lado": "ingreso",
+   "M": 9.435,
+   "pagina": 60,
+   "linea": 2979,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 5,
+   "pagina": 60,
+   "linea": 2981,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses (before intangible asset transactions and exceptional items)",
+   "lado": "gasto",
+   "M": 74.353,
+   "pagina": 60,
+   "linea": 2971,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Exceptional operating expenses",
+   "lado": "gasto",
+   "M": 0.333,
+   "pagina": 60,
+   "linea": 2975,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation of intangible assets",
+   "lado": "gasto",
+   "M": 11.821,
+   "pagina": 60,
+   "linea": 2977,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finance income",
+   "M": 0.855,
+   "linea": 2987
+  },
+  {
+   "etiqueta": "Finance expense",
+   "M": -1.056,
+   "linea": 2989
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -1.109
+  }
+ ]
+}

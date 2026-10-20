@@ -11,6 +11,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'boyacachico-co': {
     2024: {"estadio":"La Independencia","capacidad":20630,"marca":"Geus","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
+    2025: {"estadio":"La Independencia","capacidad":20630,"sponsor":"Pool","marca":"Geus","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'depcali-co': {
     2025: {"estadio":"Deportivo Cali","capacidad":42000,"sponsor":"Wplay, Pastas La Muñeca, FluoCardent","marca":"Hillside","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},

@@ -121,6 +121,47 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Fulham".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Fulham/fulham-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate Receipts | pág. 24, precedente |
+| 2 | Central Awards | pág. 24, precedente |
+| 3 | Broadcasting | pág. 24, precedente |
+| 4 | Compensation | pág. 24, precedente |
+| 5 | Sponsorship and other Commercial Activities | pág. 24, precedente |
+| 6 | Profit on disposal of players' registrations | pág. 14, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating expenses before depreciation, amortisation & impairment | pág. 14, precedente |
+| 2 | - Owned fixed assets | pág. 24, precedente |
+| 3 | Amortisation of player registrations | pág. 24, precedente |
+| 4 | Impairment | pág. 14, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): cierre = 2022-06-30. El .md dice 'For the year ended 30 June 2022'; el 28/03/2023 es el sello de presentación en Companies House, no el cierre
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): estado = b2. El estado de resultados (Profit and Loss Account and Other Comprehensive Income, pág. 14 del visor) es el bloque b2; el lote lo dejaba 'sin estado de resultados'
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-championship, verificado contra roster cacheado de "2021–22 EFL Championship" (tools/club-league-reference/gb.json), coincidencia exacta "Fulham".
+```
+
 ## 2021
 
 ### Ingresos
@@ -193,4 +234,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fulham-gb-full-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

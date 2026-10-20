@@ -1,0 +1,151 @@
+{
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.md",
+ "generatedAt": "2026-10-20T18:46:40.502Z",
+ "rubrosHuella": "f8562038d839ffe2d748f6dca784547e6be9a509",
+ "rubros": [
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Broadcasting - UEFA",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Broadcasting - all other",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other commercial activities",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Direct cost of sales and consumables",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneration of Auditors (audit fees)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other external charges",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Wages and salaries",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\"",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Other pension costs",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\"",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisation and impairment of intangible assets (Note 11)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "player_amortisation",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of property, plant and equipment",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Owned (Note 12)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Leased (Note 13)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses\"",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "desdeCache": true
+  }
+ ]
+}

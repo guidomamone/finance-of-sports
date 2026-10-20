@@ -3,7 +3,7 @@
  "md": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.md",
  "mdSha1": "513dba5221032939d6b5356bd3643de8d46c4346",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T18:59:58.484Z",
+ "generado": "2026-10-20T18:39:38.808Z",
  "perimetroClub": null,
  "bloques": {
   "b1": {
@@ -535,29 +535,27 @@
    "tipo": "tabla"
   }
  },
- "sin_estado": true,
- "estado": [],
- "notas_ingresos": [],
- "notas_gastos": [],
- "escala": "miles",
- "escala_evidencia": "Encabezados '2023 £'000' (cuentas del ejercicio cerrado el 30 June 2023)",
- "moneda": "GBP",
- "columna_ejercicio": "",
- "columna_anterior": null,
- "perimetro": "no se sabe",
- "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿Se confirma que este documento corresponde al ejercicio cerrado el 30-06-2023 y no contiene el estado de resultados del ejercicio que cierra el 2024-03-30?",
-   "propuesta": "sí",
-   "tema": "cuadro-de-otro-anio",
-   "renglon": "",
-   "texto": "El estado consolidado (b3) es 'for the year ended 30 June 2023'; no aparece ningún ejercicio cerrado en 2024.",
-   "bloques": [
-    "b3"
-   ],
-   "afecta_carga": true
-  }
+ "sin_estado": false,
+ "estado": [
+  "b3"
  ],
- "observaciones": "El documento son las cuentas del grupo Tottenham Hotspur Limited para el ejercicio cerrado el 30 de junio de 2023 (con comparativo 2022). No hay estado de resultados del ejercicio pedido (cierre 2024-03-30). De corresponder al ejercicio 2022-23, se usarían b3 (estado consolidado), b11 y b12 (ingresos), y b13, b17, b18 y b19 (gastos y resultados financieros)."
+ "notas_ingresos": [
+  "b11"
+ ],
+ "notas_gastos": [
+  "b13",
+  "b17",
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: \"Total £'000\"",
+ "moneda": "GBP",
+ "columna_ejercicio": "2023 Total £'000",
+ "columna_anterior": "2022 Total £'000",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento es de Tottenham Hotspur Limited (holding del grupo). Solo trae estado de resultados consolidado (b3); la sociedad matriz no presenta cuenta de resultados individual (solo balance b49 y cambios en patrimonio). En b3 se usan las columnas Total. b11 desglosa Revenue, b13 Operating expenses, b17 staff costs, b18 resultado por venta de intangibles, b19 resultados financieros, b20 impuesto."
 }

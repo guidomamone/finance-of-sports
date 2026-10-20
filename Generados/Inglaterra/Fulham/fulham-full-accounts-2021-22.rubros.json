@@ -1,0 +1,110 @@
+{
+  "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.md",
+  "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf",
+  "club": "fulham-gb",
+  "year": 2022,
+  "generatedAt": "2026-10-20T18:45:35.920Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Gate Receipts",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        6.824
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Central Awards",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        49.215
+      ],
+      "glosa": "Premios y distribuciones de competiciones"
+    },
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        1.59
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Compensation",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        4.497
+      ],
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Sponsorship and other Commercial Activities",
+      "lado": "revenue",
+      "page": 24,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        9.463
+      ],
+      "glosa": "Patrocinio y otras actividades comerciales"
+    },
+    {
+      "label": "Profit on disposal of players' registrations",
+      "lado": "revenue",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        12.479
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Operating expenses before depreciation, amortisation & impairment",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        110.099
+      ],
+      "glosa": "Gastos de explotación antes de depreciaciones, amortizaciones y deterioro"
+    },
+    {
+      "label": "- Owned fixed assets",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Depreciation and amortisation\"",
+      "values": [
+        0.862
+      ],
+      "glosa": "- Inmovilizado material propio"
+    },
+    {
+      "label": "Amortisation of player registrations",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Depreciation and amortisation\"",
+      "values": [
+        31.028
+      ],
+      "glosa": "Amortización de derechos federativos"
+    },
+    {
+      "label": "Impairment",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Pérdidas por deterioro"
+    }
+  ]
+}

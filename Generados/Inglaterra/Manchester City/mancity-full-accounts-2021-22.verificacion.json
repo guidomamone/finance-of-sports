@@ -1,0 +1,239 @@
+{
+ "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.md",
+ "generado": "2026-10-20T18:45:35.770Z",
+ "estado": "ok",
+ "clubId": "mancity-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.pdf",
+   "campo": "estado",
+   "valor": "b2",
+   "linea": null,
+   "motivo": "El estado de resultados (Statement of Profit or Loss, pág. 13 del visor, con columnas de operaciones y de trading de jugadores) es el bloque b2; el lote lo dejaba 'sin estado de resultados'",
+   "evidencia": "pág. 13 del visor, .md L516",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.pdf",
+   "campo": "cierre",
+   "valor": "2022-06-30",
+   "linea": null,
+   "motivo": "Statement of Profit or Loss 'for the year ended 30 June 2022' (pág. 13 del visor); el 2023-03-30 del registro es el sello de presentación",
+   "evidencia": ".md L516-518",
+   "autor": "Claude",
+   "fecha": "2026-10-20"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "640.488 = 640.488",
+   "suma": 640.488,
+   "impreso": 640.488
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.0658141036401503e-13
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "gastos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Other operating income\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de extraer que no afecta la carga: Pese a llamarse 'Profit', el importe suma para llegar a 640,488 en L1053; parece un error de etiqueta (posible pérdida).",
+  "duda de extraer que no afecta la carga: El subtotal 2021 impreso en L1042 (1,224) difiere en 20 del renglón y del estado (1,244); probable error tipográfico.",
+  "duda de extraer que no afecta la carga: L518 dice 'for the year ended 30 June 2022', no coincide con el cierre 2023-03-30 indicado."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 686.781,
+  "gastos": 640.488,
+  "financiero": -4.567,
+  "impuesto": 0,
+  "resultadoImpreso": 41.726,
+  "resultadoParaCargar": 41.726,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 54.482,
+   "pagina": 26,
+   "linea": 1024,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Broadcasting - UEFA",
+   "lado": "ingreso",
+   "M": 90.499,
+   "pagina": 26,
+   "linea": 1025,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Broadcasting - all other",
+   "lado": "ingreso",
+   "M": 158.561,
+   "pagina": 26,
+   "linea": 1026,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Other commercial activities",
+   "lado": "ingreso",
+   "M": 309.472,
+   "pagina": 26,
+   "linea": 1027,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 6.068,
+   "pagina": 13,
+   "linea": 523,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 67.699,
+   "pagina": 13,
+   "linea": 526,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Direct cost of sales and consumables",
+   "lado": "gasto",
+   "M": 8.587,
+   "pagina": 26,
+   "linea": 1044,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Remuneration of Auditors (audit fees)",
+   "lado": "gasto",
+   "M": 0.052,
+   "pagina": 26,
+   "linea": 1045,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Other external charges",
+   "lado": "gasto",
+   "M": 124.69,
+   "pagina": 26,
+   "linea": 1046,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Wages and salaries",
+   "lado": "gasto",
+   "M": 308.675,
+   "pagina": 27,
+   "linea": 1087,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\""
+  },
+  {
+   "etiqueta": "Social security costs",
+   "lado": "gasto",
+   "M": 44.35,
+   "pagina": 27,
+   "linea": 1088,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\""
+  },
+  {
+   "etiqueta": "Other pension costs",
+   "lado": "gasto",
+   "M": 0.856,
+   "pagina": 27,
+   "linea": 1089,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\""
+  },
+  {
+   "etiqueta": "Amortisation and impairment of intangible assets (Note 11)",
+   "lado": "gasto",
+   "M": 140.708,
+   "pagina": 26,
+   "linea": 1048,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Profit on disposal of property, plant and equipment",
+   "lado": "gasto",
+   "M": 1.119,
+   "pagina": 26,
+   "linea": 1049,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Owned (Note 12)",
+   "lado": "gasto",
+   "M": 9.999,
+   "pagina": 26,
+   "linea": 1051,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Leased (Note 13)",
+   "lado": "gasto",
+   "M": 1.452,
+   "pagina": 26,
+   "linea": 1052,
+   "origen": "nota que desglosa \"Operating expenses\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.778,
+   "linea": 528
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -5.345,
+   "linea": 529
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation",
+   "M": null,
+   "linea": 531
+  }
+ ]
+}

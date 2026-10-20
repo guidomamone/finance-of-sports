@@ -157,6 +157,51 @@ _antes de Daniel Levy (data/gestiones/gb.js):_
 Levy: executive chairman desde febrero de 2001 (día aproximado, no verificado en la fuente citada).
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match receipts | pág. 29, precedente |
+| 2 | UEFA Prize money (before exceptional item) | pág. 29, precedente |
+| 3 | TV and media | pág. 29, precedente |
+| 4 | Commercial | pág. 29, precedente |
+| 5 | Consideration | pág. 31, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Net book value of disposals | pág. 31, precedente |
+| 2 | Salaries and bonuses | pág. 31, precedente |
+| 3 | Social security costs | pág. 31, precedente |
+| 4 | Other pension costs (see note 25) | pág. 31, precedente |
+| 5 | Depreciation of property, plant and equipment | pág. 29, precedente |
+| 6 | Profit on disposal of property, plant and equipment | pág. 29, precedente |
+| 7 | - Onerous employment contracts | pág. 29, precedente |
+| 8 | Other operating costs | pág. 29, precedente |
+| 9 | Amortisation, impairments and other net football trading income and expenditure | pág. 29, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): estado = b3. El estado de resultados (Consolidated income statement, pág. 19 del visor, impreso 17) es el bloque b3; el lote lo dejaba 'sin estado de resultados'
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): cierre = 2023-06-30. Consolidated income statement 'for the year ended 30 June 2023' (pág. 19 del visor); el 2024-03-30 del registro es el sello de presentación
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Tottenham Hotspur".
+```
+
 ## 2022
 
 ### Ingresos
@@ -224,6 +269,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### tottenham-gb-group-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros
