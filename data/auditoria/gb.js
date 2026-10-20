@@ -156,6 +156,73 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "celtic-gb": {
+  "2021": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO LLP"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.md",
+    "linea": 2423
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO LLP"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2021-22.md",
+    "linea": 2040
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO LLP"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2022-23.md",
+    "linea": 1976
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO LLP"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2023-24.md",
+    "linea": 1757
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO LLP"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Escocia/Celtic/celtic-plc-group-accounts-2024-25.md",
+    "linea": 2982
+   }
+  }
+ },
  "chelsea-gb": {
   "2025": {
    "auditor": {
