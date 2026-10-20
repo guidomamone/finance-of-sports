@@ -45,13 +45,12 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 282: quién audita, lo que queda (informes del auditor sin canal público: candidatos a mail, cuando lo decidas)
 
 **E2. Distribución (depende de 246)**
+* 255 fase 2: aplicar lo que apruebes del inventario (`Admin/consolidar-reglas-255.md`: 19 propuestas de skill y memoria, 9 contradicciones, 12 chequeos) --> Docs 1
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 252: ejercicios nuevos: lote 103 hecho (19 ejercicios de 2025); Unión Magdalena 2025 listo para una pasada barata de carga (lote 105, --ejecutar --cargar); quedan River cierre 2025-12-31, Vasco da Gama 2024, Amazonas FC 2025 y los 14 clubes que el script marca de más; Alemania en enero de 2027 --> Onboarding 4
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 * 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
 **F. Técnico: herramientas a probar y datos para afuera (cuando haya tiempo; nada urgente)**
-* 316: detector de documentos nuevos (la prueba de brreg está; boceto escrito; mejora el 252)
 * 317: Supabase como espejo de lectura de un país, para auditar en SQL (experimento descartable)
 * 318: Open Notebook sobre las transcripciones de un país, para encontrar patrones
 * 319: la skill I have ADHD en una sesión de lote, con y sin
@@ -182,15 +181,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
    (`Admin/fuentes-externas.md`, "Consecuencias").
-252. EJERCICIOS NUEVOS: LO QUE QUEDA (pedido de Guido; mensual). La revisión está hecha: `tools/ejercicios-nuevos.mjs` y una tarea programada
-   (día 1, 9:00, carpeta principal); todas las notas tienen canal. Falta: onboardear Instituto 2024-25 (Ejercicio N°71, bajado de Drive; anotado en la
-   nota; ya bajados) y onboardearlos; cargar los clubes con el PDF del ejercicio siguiente ya bajado (`node tools/ejercicios-nuevos.mjs` los lista;
-   onboarding); Gladbach y Stuttgart 2025, en el Unternehmensregister desde enero de 2027 (publica a los ~13 meses). Lote 103 hecho (17
-   ejercicios, 2026-10-19). Quedan: Unión Magdalena 2025 (rehacer con la 298 m2, ya en main), Boyacá Chicó 2025 (298 p2), Juventude 2021 y
-   Ponte Preta 2025 (socios y otros deportes, en dudas-por-club),
-   Vasco da Gama 2024 (Associação o SAF: ¿cuál es el club?), Amazonas FC 2025 (buscar el balance del club; el bajado es de la federación), y
-   14 clubes que el script da "ya en su carpeta" sin el PDF del ejercicio siguiente (AGF, Brøndby, Chaves, Estrela da Amadora, København,
-   Mirassol, Nordsjælland, Osasuna, Randers, SønderjyskE, Torreense, União de Leiria, Vejle, Villarreal): ver si los marca de más.
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
    lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
 257. SKILLS QUE FALTAN (mejoras de proyecto, pedido de Guido 2026-10-16). Producto/pantalla (mockup, ok, implementación, chequeo en celular; hoy mezclado en PANTALLA.md); contenido y
@@ -299,12 +289,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
         con Higgsfield (321);
     (d) un calendario: qué liga o club se publica cada semana, para no repetir;
     (e) enlaces a `/club/<id>` con tarjeta al compartir (241) y medir qué publicaciones traen visitas. Depende de 241 y 246.
-316. DETECTOR DE DOCUMENTOS NUEVOS (idea, 2026-10-19; optimiza el 252). Prueba del 315 hecha (2026-10-20): `tools/listar-brreg.mjs` lista
-    los ejercicios de Noruega en brreg sin bajar nada (~0 tokens, 225 s); 63 ejercicios de 6 clubes noruegos no están cargados, pero los
-    PDFs ya están en `Clubes/Noruega`: el hueco es de carga. Boceto en `Admin/mediciones/boceto-vigilar-portal-316.md`. Crawl4AI, para el
-    primer portal que necesite navegador. Hoy `tools/ejercicios-nuevos.mjs` corre una vez por mes. Con Maxun o
-    con 315 más una tarea programada, vigilar los portales que publican cada año y dejar los candidatos en `Admin/sourcing/README.md`,
-    sin que Guido tenga que pasar los links. Después de 315.
 317. SUPABASE COMO ESPEJO DE LECTURA (idea, 2026-10-19; con el 245 y el 258). Un experimento descartable: exportar los ejercicios de un solo
     país a tablas y correr las auditorías en SQL (rubros que no suman, años faltantes, outliers entre clubes) para comparar con
     `verifyTieOuts()`. Sirve de medida para decidir cuándo `data/*.js` deja de alcanzar (skill de escala). No es una migración. Sobre lo de

@@ -2,7 +2,9 @@
 
 Este archivo es la versión condensada del historial de `finance-of-sports`, versión
 por versión, de la última semana (to-do 256: se archiva lo que tiene más de 7 días). **Las Versiones anteriores están en
-`Admin/Archive/`: de la 10 a la 299 en `CHANGELOG-v010-v299.md`, de la 300 a la 672 en `CHANGELOG-v300-v672.md`.** Son bullets terses de qué cambió, no el porqué completo.
+`Admin/Archive/`: de la 10 a la 299 en `CHANGELOG-v010-v299.md`, de la 300 a la 672 en `CHANGELOG-v300-v672.md`.**
+**Desde la Versión 847, el título lleva al final los to-dos y los clubes entre corchetes** (`## Versión N — título (fecha) [292 · besiktas-tr, westerlo-be]`;
+sin to-do o sin club, se omite esa parte): así `grep "besiktas-tr" Admin/CHANGELOG*.md Admin/Archive/CHANGELOG-*.md` devuelve solo títulos. Son bullets terses de qué cambió, no el porqué completo.
 Para el razonamiento narrativo detrás de cualquier entrada (qué se probó, qué se
 descartó, cómo se encontró cada bug) ver `Admin/finance-of-sports-project.md`. Para el
 estado actual del proyecto (qué hay armado, qué es real vs. placeholder por club) ver
@@ -14,6 +16,14 @@ los documentos internos a `Admin/` y no reescribió el historial: una entrada de
 que dice `ESTADO.md` era verdad ese día.
 
 ---
+
+## Versión 847 — Docs 1 y Auditora mergeados; regla turca; salen 252 y 316 (2026-10-20) [255 · 252 · 316 · besiktas-tr, llaneros-co]
+
+- Merge de ligas (Docs 1): inventario del 255 en `Admin/consolidar-reglas-255.md` y 5 reglas dedupeadas en `Admin/*.md`.
+- Merge de proyecto (Auditora): veredictos de los criterios de Beşiktaş y Llaneros; REGLA turca en CONVENCIONES-DATOS (Reeskont, Tecil faiz,
+  kur farkı y vade farkı como líneas operativas, votación 3 a 0).
+- Salen del TODO el 252 (ejercicios nuevos, dado por resuelto por Guido) y el 316 (solo servía al 252).
+- Títulos del CHANGELOG con to-dos y clubes entre corchetes.
 
 ## Versión 846 — CHANGELOG de una semana; no se transcribe más; sesiones que escriben corto (2026-10-20)
 

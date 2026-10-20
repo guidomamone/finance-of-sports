@@ -445,3 +445,8 @@ una fuente, el dato queda en `null` con la marca `sin-fuente` (en `tools/context
 igual: la falta de un dato de contexto nunca frena una carga ni es una pregunta para Guido. Una liga no se infiere del año vecino
 (votación de Patro Eisden 2013): si no hay fuente, queda `null`. Además, en la segunda división belga (`be-challengerproleague`) alcanza
 con el estadio, igual que en la Eerste Divisie y las segundas noruegas (`SOLO_ESTADIO`; votación de Patro Eisden 2015, opción C).
+
+## REGLA: en un balance turco, lo que el propio balance pone en las actividades principales va como línea operativa (votación 3 a 0, 2026-10-20, Beşiktaş)
+
+Las partidas que el balance imprime dentro de las actividades principales (Tecil - faiz, Reeskont, kur farkı, vade farkı) se cargan
+como líneas operativas (`other_income` / `other_expenses`), no como `netInterest`. El resultado financiero es el bloque Finansman.
