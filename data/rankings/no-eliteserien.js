@@ -197,4 +197,13 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.04],["Comercial / Sponsors",3.481],["Estadio",3.622],["Televisión",1.467],["Otros ingresos",0.945]] },
     ],
   },
+  2008: {
+    leagueSize: 14,
+    wiki: {"t":"2008 Eliteserien","lang":"en","at":"2026-10-19","n":14},
+    clubs: [
+      { id:"molde-no", revenue:7.292, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2008",
+        mix:[["Cuotas Sociales",0.03],["Comercial / Sponsors",3.243],["Estadio",2.311],["Televisión",1.085],["Venta de Jugadores",0.001],["Otros ingresos",0.622]] },
+    ],
+  },
 };

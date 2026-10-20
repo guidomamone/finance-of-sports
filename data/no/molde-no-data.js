@@ -165,6 +165,19 @@ const moldenoRevenueLinesByYear = {
     { rawLabel:'Kiosksalg', normalizedCategory:'other_income', amountNative:0.167976, disclosureLevel:'aggregated' },
     { rawLabel:'Andre driftsinntekter', normalizedCategory:'other_income', amountNative:4.46167, disclosureLevel:'aggregated' },
   ],
+  2008: [
+    { rawLabel:'Medlemskontigent', normalizedCategory:'member_dues', amountNative:0.21025, disclosureLevel:'aggregated' },
+    { rawLabel:'Egenandeler/deltakeravgift', normalizedCategory:'other_income', amountNative:1.163362, disclosureLevel:'aggregated' },
+    { rawLabel:'Markedsmidler NFF, NTF og UEFA', normalizedCategory:'broadcasting', amountNative:7.595885, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre tilskudd', normalizedCategory:'other_income', amountNative:0.3394, disclosureLevel:'aggregated' },
+    { rawLabel:'Inntekter Seriekamper', normalizedCategory:'matchday_competition', amountNative:13.884885, disclosureLevel:'aggregated' },
+    { rawLabel:'Inntekter NM Cup', normalizedCategory:'matchday_competition', amountNative:1.00793, disclosureLevel:'aggregated' },
+    { rawLabel:'Oppgjør NM Cup', normalizedCategory:'matchday_competition', amountNative:1.164783, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre inntekter privatkamper etc.', normalizedCategory:'matchday_competition', amountNative:0.1179, disclosureLevel:'aggregated' },
+    { rawLabel:'Avtale MF/sponsor', normalizedCategory:'sponsorship_commercial', amountNative:22.696, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre driftsinntekter', normalizedCategory:'other_income', amountNative:2.848561, disclosureLevel:'aggregated' },
+    { rawLabel:'Salg spillere/Utleie', normalizedCategory:'player_sales', amountNative:0.01, disclosureLevel:'aggregated' },
+  ],
 };
 const moldenoExpenseLinesByYear = {
   2025: [
@@ -492,6 +505,28 @@ const moldenoExpenseLinesByYear = {
     { rawLabel:'Utgifter andre arrangement', normalizedCategory:'match_organisation_expense', amountNative:-0.080928, disclosureLevel:'aggregated' },
     { rawLabel:'Reisekostnader seriekamper', normalizedCategory:'match_organisation_expense', amountNative:-2.790568, disclosureLevel:'aggregated' },
   ],
+  2008: [
+    { rawLabel:'Administrasjon', normalizedCategory:'admin_general_expense', amountNative:-1.272423, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønn spillere, trenere og støtteapparat', normalizedCategory:'wages_squad', amountNative:-25.312648, disclosureLevel:'aggregated' },
+    { rawLabel:'Folketrygdavgift', normalizedCategory:'wages_squad', amountNative:-4.138845, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnad', normalizedCategory:'wages_squad', amountNative:-0.327711, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre ytelser', normalizedCategory:'wages_squad', amountNative:-5.076199, disclosureLevel:'aggregated' },
+    { rawLabel:'Trening/utstyr', normalizedCategory:'other_expenses', amountNative:-4.409368, disclosureLevel:'aggregated' },
+    { rawLabel:'Baneleie seriekamper', normalizedCategory:'match_organisation_expense', amountNative:-1.947035, disclosureLevel:'aggregated' },
+    { rawLabel:'Avgift Norges Fotballforbund', normalizedCategory:'match_organisation_expense', amountNative:-0.66599, disclosureLevel:'aggregated' },
+    { rawLabel:'Annonsering seriekamper', normalizedCategory:'match_organisation_expense', amountNative:-0.529859, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter billettsalg', normalizedCategory:'match_organisation_expense', amountNative:-0.365501, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre arrangementskostnader', normalizedCategory:'match_organisation_expense', amountNative:-1.329744, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter Cup kamper', normalizedCategory:'match_organisation_expense', amountNative:-1.049516, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter andre arrangement', normalizedCategory:'match_organisation_expense', amountNative:-0.136089, disclosureLevel:'aggregated' },
+    { rawLabel:'Reisekostnader seriekamper', normalizedCategory:'match_organisation_expense', amountNative:-1.034979, disclosureLevel:'aggregated' },
+    { rawLabel:'Kjøp spillere', normalizedCategory:'other_expenses', amountNative:-0.028628, disclosureLevel:'aggregated' },
+    { rawLabel:'Leie spillere', normalizedCategory:'other_expenses', amountNative:-1.283326, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre driftskostnader', normalizedCategory:'other_expenses', amountNative:-1.20983, disclosureLevel:'aggregated' },
+    { rawLabel:'Anleggskostnader', normalizedCategory:'admin_general_expense', amountNative:-0.06914, disclosureLevel:'aggregated' },
+    { rawLabel:'Avskrivninger', normalizedCategory:'depreciation', amountNative:-0.24418, disclosureLevel:'aggregated' },
+    { rawLabel:'Tap på fordringer', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+  ],
 };
 const moldenoFiscalYearMeta = {
   2025: {
@@ -614,6 +649,16 @@ const moldenoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:215.10381, officialTotalExpenses:156.946899, officialPAT:74.879,
   },
+  2008: {
+    currency:'NOK', fxRef:'NOK@2008-12-31',
+    sourceId:'molde-no-aarsregnskap-fotballklubb-fli-2008',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.017243, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:51.038956, officialTotalExpenses:50.431011, officialPAT:0.625189,
+  },
 };
 const moldenoPresupuestoOverlayByYear = {};
 
@@ -688,6 +733,11 @@ Object.assign(sources, {
   'molde-no-aarsregnskap-fotballklubb-fli-2020': {
     id:'molde-no-aarsregnskap-fotballklubb-fli-2020', clubId:'molde-no',
     title:'Molde Fotballklubb — aarsregnskap-fotballklubb-fli-2020 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'molde-no-aarsregnskap-fotballklubb-fli-2008': {
+    id:'molde-no-aarsregnskap-fotballklubb-fli-2008', clubId:'molde-no',
+    title:'Molde Fotballklubb — aarsregnskap-fotballklubb-fli-2008 (ejercicio 2008)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
