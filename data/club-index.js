@@ -188,7 +188,7 @@ window.CLUB_INDEX = {
   "midtjylland-dk": {"n":"FC Midtjylland","c":"DK","q":"full","y":2,"last":2020,"yrs":[[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "millonarios-co": {"n":"Millonarios","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "mirassol": {"n":"Mirassol","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
-  "molde-no": {"n":"Molde","c":"NO","q":"full","y":6,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2017,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"],[2013,"official_balance_sheet"],[2009,"official_balance_sheet"]]},
+  "molde-no": {"n":"Molde","c":"NO","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"],[2013,"official_balance_sheet"],[2009,"official_balance_sheet"]]},
   "monchengladbach-de": {"n":"Borussia Mönchengladbach","c":"DE","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "monza-it": {"n":"Monza","c":"IT","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "moreirense-pt": {"n":"Moreirense","c":"PT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},

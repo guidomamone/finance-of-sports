@@ -102,6 +102,9 @@ window.RANKINGS["no-eliteserien"] = {
       { id:"sarpsborg08-no", revenue:19.261, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2018",
         mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",3.419],["Estadio",1.243],["Televisión",2.007],["Premios por competencias",6.16],["Venta de Jugadores",4.927],["Otros ingresos",1.442]] },
+      { id:"molde-no", revenue:11.975, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2018",
+        mix:[["Cuotas Sociales",0.027],["Comercial / Sponsors",4.298],["Estadio",1.553],["Televisión",4.633],["Premios por competencias",0.214],["Venta de Jugadores",0.002],["Otros ingresos",1.248]] },
     ],
   },
   2017: {

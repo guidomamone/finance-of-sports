@@ -113,6 +113,74 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): no-eliteserien, verificado contra roster cacheado de "2025 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Molde".
 ```
 
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Molde/aarsregnskap-fotballklubb-fli-2018.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Medlemskontingent | pág. 27, precedente |
+| 2 | Egenandeler/deltakeravgift | pág. 27, precedente |
+| 3 | Markedsmidler NFF, NTF og UEFA | pág. 27, precedente |
+| 4 | Andre tilskudd | pág. 27, precedente |
+| 5 | Inntekter Seriekamper | pág. 27, precedente |
+| 6 | Inntekter E-Cup | pág. 27, precedente |
+| 7 | Oppgjør NM Cup | pág. 27, precedente |
+| 8 | Andre inntekter privatkamper etc. | pág. 27, precedente |
+| 9 | Avtale MF/sponsor | pág. 24, Jev 1 |
+| 10 | Kiosksalg | pág. 28, Claude 0.85 |
+| 11 | Andre driftsinntekter | pág. 28, Jev 1 |
+| 12 | Salg spillere/Utleie | pág. 24, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Administrasjon | pág. 24, precedente |
+| 2 | Lønn spillere, trenere, støtteapparat og administrasjon | pág. 28, precedente |
+| 3 | Arbeidsgiveravgift | pág. 28, precedente |
+| 4 | Pensjonskostnad | pág. 28, precedente |
+| 5 | Andre ytelser | pág. 28, precedente |
+| 6 | Utgifter treningsleir/privatkamper | pág. 29, precedente |
+| 7 | Leie treningsbaner etc. | pág. 29, precedente |
+| 8 | Sportsrekvisita | pág. 29, precedente |
+| 9 | Medisinske tjenester og rekvisita | pág. 29, precedente |
+| 10 | Andre sportslige kostnader | pág. 29, precedente |
+| 11 | Baneleie serie- og cupkamper | pág. 29, Jev 0.99 |
+| 12 | Avgift Norges Fotballforbund | pág. 29, precedente |
+| 13 | Annonsering seriekamper | pág. 29, precedente |
+| 14 | Utgifter billettsalg | pág. 29, precedente |
+| 15 | Andre arrangementskostnader | pág. 29, precedente |
+| 16 | Utgifter cup kamper | pág. 29, precedente |
+| 17 | Utgifter e-cup | pág. 29, precedente |
+| 18 | Utgifter andre arrangement | pág. 29, precedente |
+| 19 | Reisekostnader seriekamper | pág. 29, precedente |
+| 20 | Kjøp spillere | pág. 28, Jev 0.91 |
+| 21 | Leie spillere | pág. 28, Jev 0.95 |
+| 22 | Utgifter Prosjekt/Tiltak | pág. 29, precedente |
+| 23 | Andre driftskostnader | pág. 29, precedente |
+| 24 | Varekjøp og andre kostnader kiosker | pág. 29, precedente |
+| 25 | Anleggskostnader | pág. 24, precedente |
+| 26 | Avskrivninger | pág. 24, precedente |
+| 27 | Tap på fordringer | pág. 24, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-20): no-eliteserien, verificado contra roster cacheado de "2018 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Molde".
+```
+
 ## 2017
 
 ### Ingresos
@@ -496,4 +564,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### molde-no-aarsregnskap-fotballklubb-fli-2018
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
