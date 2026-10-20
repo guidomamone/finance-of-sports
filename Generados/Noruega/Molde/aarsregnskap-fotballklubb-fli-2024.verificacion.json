@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2024.pdf",
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2024.md",
- "generado": "2026-10-20T20:40:31.605Z",
+ "generado": "2026-10-20T20:49:03.758Z",
  "estado": "ok",
  "clubId": "molde-no",
  "year": 2024,
@@ -35,6 +35,11 @@
    "dif": 0.0000019999999842923444
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 314.940806; el sitio tiene 314.940806"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 226.97564 en este documento y 226.97564 en aarsregnskap-fotballklubb-fli-2025.pdf (columna del año anterior)"
@@ -43,16 +48,6 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 314.940806 en aarsregnskap-fotballklubb-fli-2023.pdf y 314.940806 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
@@ -63,33 +58,11 @@
   "línea 1003: valor corregido por Guido (2558595)",
   "línea 1025: valor corregido por Guido (11831805)",
   "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en aarsregnskap-fotballklubb-fli-2016.pdf",
-  "duda de localizar que no afecta la carga: Repiten los mismos renglones del estado divididos por sección, con presupuestos; no abren renglones nuevos.",
-  "duda de extraer que no afecta la carga: Diferencia de 2 unidades entre nota 11 (L1037) y estado (L743), sin impacto material.",
-  "duda de extraer que no afecta la carga: L980 informa años-persona promedio (78/73), no un importe monetario."
+  "duda de localizar que no afecta la carga: Repiten los renglones del estado divididos por área, sin abrir Televisión, Estadio ni Cuotas, que ya abren las notas 2 y 3.",
+  "duda de extraer que no afecta la carga: Diferencia de ~20 coronas entre la suma de partidas de Note 11, su total (L1037) y el estado (L743), probablemente error de tipeo menor."
  ],
- "reintentar": [
-  {
-   "renglon": "Medlemsinntekter/tilskudd",
-   "suma": 158.877123,
-   "objetivo": 158.867123
-  },
-  {
-   "renglon": "Kamp- og billettinntekter",
-   "suma": 24.364385,
-   "objetivo": 23.364385
-  },
-  {
-   "renglon": "Andre driftsinntekter",
-   "suma": 5.328991,
-   "objetivo": 1.832607
-  },
-  {
-   "renglon": "Andre driftskostnader",
-   "suma": 7.852936,
-   "objetivo": 7.852916
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Medlemsinntekter/tilskudd",

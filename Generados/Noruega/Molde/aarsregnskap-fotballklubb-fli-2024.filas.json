@@ -4,7 +4,7 @@
  "mdSha1": "0939accaa544fe6f2f9fecf9c0cec694481fb7f4",
  "ubicacionSha1": "5cd50c5679d04ae6cd08c78b03a8585208579b1d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T20:35:01.952Z",
+ "generado": "2026-10-20T20:48:23.267Z",
  "ubicacion": {
   "estado": [
    "b8"
@@ -26,47 +26,47 @@
   {
    "bloque": "b8",
    "escala": "unidades",
-   "evidencia": "No se indica escala; importes impresos completos (ej. 226 975 637), se asumen coronas en unidades"
+   "evidencia": "No hay frase de escala; los importes están impresos completos en coronas (ej. 'Sum driftsinntekter 226 975 637', L735)."
   },
   {
    "bloque": "b11",
    "escala": "unidades",
-   "evidencia": "Sin indicación; totales coinciden con el estado"
+   "evidencia": "Sin frase de escala; 'Sum medlemsinntekter og tilskudd 158 867 123' (L934) coincide con el estado en unidades."
   },
   {
    "bloque": "b12",
    "escala": "unidades",
-   "evidencia": "Sin indicación; totales coinciden con el estado"
+   "evidencia": "Sin frase de escala; 'Sum kamp- og billettinntekter 23 364 385' (L945) coincide con el estado."
   },
   {
    "bloque": "b14",
    "escala": "unidades",
-   "evidencia": "Sin indicación; totales coinciden con el estado"
+   "evidencia": "Sin frase de escala; 'Sum andre driftsinntekter 5 328 991' (L965) coincide con el estado."
   },
   {
    "bloque": "b15",
    "escala": "unidades",
-   "evidencia": "Sin indicación; totales coinciden con el estado"
+   "evidencia": "Sin frase de escala; 'Sum lønnskostnader 151 153 265' (L979) coincide con el estado."
   },
   {
    "bloque": "b16",
    "escala": "unidades",
-   "evidencia": "Sin indicación; totales coinciden con el estado"
+   "evidencia": "Sin frase de escala; total 19 750 545 (L1007) coincide con el estado."
   },
   {
    "bloque": "b17",
    "escala": "unidades",
-   "evidencia": "Sin indicación; totales coinciden con el estado"
+   "evidencia": "Sin frase de escala; 'Sum egne arrangement 5 242 572' (L1018) coincide con el estado."
   },
   {
    "bloque": "b18",
    "escala": "unidades",
-   "evidencia": "Sin indicación; totales coinciden con el estado"
+   "evidencia": "Sin frase de escala; 'Sum andres arrangement 21 846 938' (L1028) coincide con el estado."
   },
   {
    "bloque": "b19",
    "escala": "unidades",
-   "evidencia": "Sin indicación; totales coinciden con el estado"
+   "evidencia": "Sin frase de escala; 'Sum andre driftskostnader 7 852 918' (L1037) ≈ estado 7 852 916."
   }
  ],
  "filas": [
@@ -268,6 +268,16 @@
    "anterior": "124 413 097",
    "tipo": "resultado",
    "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 752,
+   "etiqueta": "Overføres til fri egenkapital",
+   "actual": "9 482 100",
+   "anterior": "124 413 097",
+   "tipo": "renglon",
+   "lado": "otro",
    "detalla_a": null
   },
   {
@@ -686,28 +696,17 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se acepta como redondeo la diferencia entre 'Sum andre driftskostnader' 7 852 918 (L1037) y 'Andre driftskostnader' 7 852 916 del estado (L743)?",
+   "pregunta": "¿Se cargan las filas de Note 11 (L1034-L1036) tal como están impresas aunque sumen 7 852 936 y el total impreso sea 7 852 918 (L1037) frente a 7 852 916 en el estado (L743)?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Andre driftskostnader",
-   "texto": "Diferencia de 2 unidades entre nota 11 (L1037) y estado (L743), sin impacto material.",
+   "texto": "Diferencia de ~20 coronas entre la suma de partidas de Note 11, su total (L1037) y el estado (L743), probablemente error de tipeo menor.",
    "bloques": [
     "b19",
     "b8"
    ],
    "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se deja afuera la fila 'Gjennomsnittlig antall årsverk i 2024' (L980) por ser cantidad de empleados y no importe?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Personalkostnader",
-   "texto": "L980 informa años-persona promedio (78/73), no un importe monetario.",
-   "bloques": [
-    "b15"
-   ],
-   "afecta_carga": false
   }
  ],
- "observaciones": "Escala no impresa; se asumen coronas noruegas en unidades. 'Netto finansposter' (L749) es positivo y se suma al resultado operativo para llegar al ÅRSRESULTAT. Notas 4 y 6 (sponsor y venta de jugadores) no fueron provistas. La línea L752 es disposición del resultado, no se extrae. El subtotal de nota 8 (L1007) no tiene etiqueta."
+ "observaciones": "Televisión ≈ 'Markedsmidler NFF, NTF og UEFA' (L932); estadio/taquilla en Note 3 (L940-L944); cuotas sociales = 'Medlemskontingent' (L930). No se recibieron las notas 4 (Avtale MF/sponsor), 6 (Salg spillere/Utleie) ni 12 (finansposter). L980 (número de empleados) no es importe y se excluyó. Netto finansposter es positivo (ingreso financiero neto). Sin impuesto a las ganancias impreso."
 }

@@ -4,7 +4,7 @@
  "mdSha1": "550eacb31599890eecdeb41b58810ab7d0d7b774",
  "ubicacionSha1": "5089f515fbbf9a5fd8e6aa5fdb5f0ff29b299cbd",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T20:07:29.647Z",
+ "generado": "2026-10-20T20:46:09.988Z",
  "ubicacion": {
   "estado": [
    "b19"
@@ -27,52 +27,52 @@
   {
    "bloque": "b19",
    "escala": "unidades",
-   "evidencia": "No se indica escala; importes en coronas completas (ej. 66 297 133)"
+   "evidencia": "Importes impresos en coronas completas (ej. 66 297 133), sin indicación de miles"
   },
   {
    "bloque": "b21",
    "escala": "unidades",
-   "evidencia": "Sin indicación; total 17 775 112 coincide con el estado"
+   "evidencia": "Sum kamp- og billettinntekter 17 775 112 coincide con el estado"
   },
   {
    "bloque": "b22",
    "escala": "unidades",
-   "evidencia": "Sin indicación; total 13 086 011 ≈ estado"
+   "evidencia": "Total 13 086 011 coincide aprox. con el estado"
   },
   {
    "bloque": "b23",
    "escala": "unidades",
-   "evidencia": "Sin indicación; importes en unidades"
+   "evidencia": "Importes en coronas completas"
   },
   {
    "bloque": "b24",
    "escala": "unidades",
-   "evidencia": "Sin indicación; total 6 281 686 coincide con el estado"
+   "evidencia": "Total 6 281 686 coincide con el estado"
   },
   {
    "bloque": "b25",
    "escala": "unidades",
-   "evidencia": "Sin indicación; total 41 594 927 coincide con el estado"
+   "evidencia": "Sum 41 594 927 coincide con el estado"
   },
   {
    "bloque": "b26",
    "escala": "unidades",
-   "evidencia": "Sin indicación; total coincide con el estado"
+   "evidencia": "Total 4 888 931 coincide con el estado"
   },
   {
    "bloque": "b27",
    "escala": "unidades",
-   "evidencia": "Sin indicación; total coincide con el estado"
+   "evidencia": "Total 4 950 361 coincide con el estado"
   },
   {
    "bloque": "b28",
    "escala": "unidades",
-   "evidencia": "Sin indicación; total coincide con el estado"
+   "evidencia": "Total 2 888 081 coincide con el estado"
   },
   {
    "bloque": "b29",
    "escala": "unidades",
-   "evidencia": "Sin indicación; total coincide con el estado"
+   "evidencia": "Total 3 555 060 coincide con el estado"
   }
  ],
  "filas": [
@@ -752,11 +752,11 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga la Note 5 (L831-L835) pese a que su total 2010 (6 732 320) no coincide con 'Andre driftsinntekter' del estado (5 052 538)?",
+   "pregunta": "¿Se carga la Note 5 (L831-L835) aunque su total 6 732 320 no coincide con 'Andre driftsinntekter' del estado (5 052 538, L677)?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Andre driftsinntekter",
-   "texto": "El total de la nota en L835 supera en 1 679 782 al renglón L677, igual a 'Salg spillere/Utleie' L678, posiblemente incluido en la nota.",
+   "texto": "La nota 5 suma 6 732 320 frente a 5 052 538 del estado; la diferencia (1 679 782) es igual a 'Salg spillere/Utleie', que parece incluido en la nota.",
    "bloques": [
     "b23",
     "b19"
@@ -764,17 +764,16 @@
    "afecta_carga": true
   },
   {
-   "pregunta": "¿La primera columna de la Note 11 (encabezada '2009' en L919) corresponde en realidad al ejercicio 2010?",
+   "pregunta": "¿La primera columna de la Note 11 (L919, encabezada '2009') corresponde en realidad a 2010?",
    "propuesta": "sí",
    "tema": "columna",
    "renglon": "Andres arrangement",
-   "texto": "El encabezado L919 dice '2009 | 2009', pero el total 2 888 081 de L925 coincide con 2010 del estado L685.",
+   "texto": "L919 tiene dos columnas '2009', pero el total de la primera (2 888 081) coincide con 2010 del estado.",
    "bloques": [
-    "b28",
-    "b19"
+    "b28"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "Estado en coronas noruegas sin escala explícita. Diferencias de redondeo: Note 3 13 086 011 vs estado 13 086 111 (100, probablemente error tipográfico), Note 7 2009 41 442 vs 41 443. 'Avtale MF/sponsor' (nota 4), 'Salg spillere/Utleie' (nota 6) y 'Administrasjon' (nota 26) no tienen notas en los bloques provistos. Fila L809 (público promedio) no es importe y no se extrajo. Disposición L697 omitida."
+ "observaciones": "No existe un renglón de 'Televisión' en este documento: los ingresos de mercado/TV aparecen como 'Markedsmidler NFF, NTF og UEFA' (L819) dentro de Medlemsinntekter/tilskudd. No hay cuadros por segmento. No hay notas para Avtale MF/sponsor ni Salg spillere/Utleie en los bloques. Diferencias de 100 en Note 3 (13 086 011 vs 13 086 111) y de 1 en 2009 se consideran redondeo/tipeo menor. L809 (público promedio) no es importe y se excluyó."
 }

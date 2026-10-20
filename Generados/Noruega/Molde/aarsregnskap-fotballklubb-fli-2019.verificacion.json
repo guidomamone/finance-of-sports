@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2019.pdf",
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2019.md",
- "generado": "2026-10-20T20:40:31.487Z",
- "estado": "cola",
+ "generado": "2026-10-20T20:46:10.105Z",
+ "estado": "ok",
  "clubId": "molde-no",
  "year": 2019,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "5681a9a",
-  "9b397b8"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,6 +35,11 @@
    "dif": 0.000001000000029505177
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 104.045438; el sitio tiene 104.045438"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": false,
    "detalle": "ingresos de 2019: 121.252098 en este documento y 194.762985 en aarsregnskap-fotballklubb-fli-2020.pdf (columna del año anterior)"
@@ -46,16 +48,6 @@
    "nombre": "documento del año 2018",
    "ok": true,
    "detalle": "ingresos de 2018: 104.045438 en aarsregnskap-fotballklubb-fli-2018.pdf y 104.045438 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.pdf",
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2016.md",
- "generado": "2026-10-20T20:40:31.409Z",
- "estado": "cola",
+ "generado": "2026-10-20T20:46:10.085Z",
+ "estado": "ok",
  "clubId": "molde-no",
  "year": 2016,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "99dbfe5"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -37,6 +35,11 @@
    "dif": null
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2015 de este documento suma ingresos 116.413595; el sitio tiene 116.413595"
+  },
+  {
    "nombre": "documento del año 2017",
    "ok": true,
    "detalle": "ingresos de 2016: 91.511761 en este documento y 91.491762 en aarsregnskap-fotballklubb-fli-2017.pdf (columna del año anterior)"
@@ -45,11 +48,6 @@
    "nombre": "documento del año 2015",
    "ok": true,
    "detalle": "ingresos de 2015: 116.413595 en aarsregnskap-fotballklubb-fli-2015.pdf y 116.413595 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
   }
  ],
  "notas": [

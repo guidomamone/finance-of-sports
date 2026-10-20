@@ -3,18 +3,18 @@
   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2022.pdf",
   "club": "molde-no",
   "year": 2022,
-  "generatedAt": "2026-10-20T20:35:02.682Z",
+  "generatedAt": "2026-10-20T20:48:23.382Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "Medlemsinntekter/tilskudd",
+      "label": "Mediemsinntekter/tilskudd",
       "lado": "revenue",
-      "page": 2,
+      "page": 17,
       "section": "estado",
       "values": [
         100.013938
       ],
-      "glosa": "Cuotas de socios y subvenciones"
+      "glosa": "Ingresos por socios y subvenciones"
     },
     {
       "label": "Inntekter Seriekamper",
@@ -34,7 +34,7 @@
       "values": [
         1.407113
       ],
-      "glosa": "Ingresos por Copa nacional"
+      "glosa": "Ingresos por Copa Nacional"
     },
     {
       "label": "Inntekter E-Cup",
@@ -54,7 +54,7 @@
       "values": [
         1.958921
       ],
-      "glosa": "Liquidación de Copa nacional"
+      "glosa": "Liquidación de Copa Nacional"
     },
     {
       "label": "Andre inntekter privatkamper etc.",
@@ -67,24 +67,14 @@
       "glosa": "Otros ingresos por partidos amistosos, etc."
     },
     {
-      "label": "Reklame/sponsorinntekter",
+      "label": "Avtale MF/sponsor",
       "lado": "revenue",
-      "page": 2,
+      "page": 17,
       "section": "estado",
       "values": [
         21.596576
       ],
-      "glosa": "Ingresos por publicidad y patrocinio"
-    },
-    {
-      "label": "Salg spillere/Utleie spillere",
-      "lado": "revenue",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0.15
-      ],
-      "glosa": "Venta y cesión de jugadores"
+      "glosa": "Acuerdos de patrocinio / MF"
     },
     {
       "label": "Kiosksalg",
@@ -107,30 +97,50 @@
       "glosa": "Otros ingresos de explotación"
     },
     {
+      "label": "Salg spillere/Utleie",
+      "lado": "revenue",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        0.15
+      ],
+      "glosa": "Venta y cesión de jugadores"
+    },
+    {
+      "label": "Administrasjon",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        2.850668
+      ],
+      "glosa": "Administración"
+    },
+    {
       "label": "Lønn spillere, trenere, støtteapparat og administrasjon",
       "lado": "expense",
       "page": 22,
-      "section": "nota que desglosa \"Personalkostnad\"",
+      "section": "nota que desglosa \"Personalkostnader\"",
       "values": [
         90.815224
       ],
-      "glosa": "Sueldos de jugadores, entrenadores, cuerpo técnico y administración"
+      "glosa": "Salarios de jugadores, entrenadores, cuerpo técnico y administración"
     },
     {
       "label": "Arbeidsgiveravgift",
       "lado": "expense",
       "page": 22,
-      "section": "nota que desglosa \"Personalkostnad\"",
+      "section": "nota que desglosa \"Personalkostnader\"",
       "values": [
         13.172341
       ],
-      "glosa": "Seguridad Social a cargo de la empresa"
+      "glosa": "Seguridad social a cargo de la empresa"
     },
     {
       "label": "Pensjonskostnad",
       "lado": "expense",
       "page": 22,
-      "section": "nota que desglosa \"Personalkostnad\"",
+      "section": "nota que desglosa \"Personalkostnader\"",
       "values": [
         1.016635
       ],
@@ -140,31 +150,11 @@
       "label": "Andre ytelser",
       "lado": "expense",
       "page": 22,
-      "section": "nota que desglosa \"Personalkostnad\"",
+      "section": "nota que desglosa \"Personalkostnader\"",
       "values": [
         0.88661
       ],
-      "glosa": "Otras retribuciones y prestaciones"
-    },
-    {
-      "label": "Avskrivinger",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        20.654025
-      ],
-      "glosa": "Amortizaciones"
-    },
-    {
-      "label": "Administrasjon",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        2.850668
-      ],
-      "glosa": "Gastos de administración"
+      "glosa": "Otras retribuciones al personal"
     },
     {
       "label": "Ulgifter treningsløs/privalkamper",
@@ -219,7 +209,7 @@
     {
       "label": "Egne arrangement",
       "lado": "expense",
-      "page": 2,
+      "page": 17,
       "section": "estado",
       "values": [
         3.706062
@@ -227,14 +217,24 @@
       "glosa": "Eventos propios"
     },
     {
+      "label": "Andres arrangement",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        15.323713
+      ],
+      "glosa": "Eventos de terceros"
+    },
+    {
       "label": "Kjøp og leie spillere",
       "lado": "expense",
-      "page": 2,
+      "page": 17,
       "section": "estado",
       "values": [
         1.935892
       ],
-      "glosa": "Compra y cesión de jugadores"
+      "glosa": "Adquisición y cesión de jugadores"
     },
     {
       "label": "Ulgifter Prosjekt/Titak",
@@ -264,37 +264,37 @@
       "values": [
         1.585919
       ],
-      "glosa": "Compras de mercancías y otros gastos de quioscos"
+      "glosa": "Aprovisionamientos y otros gastos de quioscos"
     },
     {
-      "label": "Anleggskontrakter",
+      "label": "Anleggskostnader",
       "lado": "expense",
-      "page": 2,
+      "page": 17,
       "section": "estado",
       "values": [
         0.146979
       ],
-      "glosa": "Contratos de instalaciones"
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Avskrivninger",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        20.654025
+      ],
+      "glosa": "Amortizaciones"
     },
     {
       "label": "Tap på fordringer",
       "lado": "expense",
-      "page": 2,
+      "page": 17,
       "section": "estado",
       "values": [
         0.034785
       ],
-      "glosa": "Pérdidas por insolvencias de créditos"
-    },
-    {
-      "label": "Andres arrangement",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        15.323713
-      ],
-      "glosa": "Eventos de terceros"
+      "glosa": "Pérdidas por créditos incobrables"
     }
   ]
 }

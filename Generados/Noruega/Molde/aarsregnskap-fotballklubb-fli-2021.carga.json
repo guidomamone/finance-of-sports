@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2021.pdf",
- "generado": "2026-10-20T20:41:13.492Z",
- "frena": [],
+ "generado": "2026-10-20T20:45:05.351Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "molde-no ya tiene el ejercicio 2021 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['molde-no-aarsregnskap-fotballklubb-fli-2021'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 17 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)"
  ],
@@ -1033,8 +1042,8 @@
  },
  "liga": {
   "valor": "no-eliteserien",
-  "fuente": "roster cacheado de \"2021 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Molde\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1074,13 +1083,13 @@
   },
   "liga": {
    "valor": "no-eliteserien",
-   "fuente": "roster cacheado de \"2021 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Molde\"",
+   "fuente": "data/club-leagues/no.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 11,
   "lineasGasto": 25,
   "metaFilas": 1,

@@ -3,8 +3,9 @@
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2022.md",
  "mdSha1": "d63ead34f1c8317592d5ce3e3dad5f89783f0b6d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T20:28:41.325Z",
+ "generado": "2026-10-20T20:46:32.890Z",
  "perimetroClub": "individual",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -489,7 +490,7 @@
  },
  "sin_estado": false,
  "estado": [
-  "b1"
+  "b12"
  ],
  "notas_ingresos": [
   "b15",
@@ -505,7 +506,7 @@
   "b24"
  ],
  "escala": "unidades",
- "escala_evidencia": "Beløp i: NOK",
+ "escala_evidencia": "Beløp i: NOK (b1); importes en coronas enteras en b12, p.ej. 151 455 208",
  "moneda": "NOK",
  "columna_ejercicio": "2022",
  "columna_anterior": "2021",
@@ -513,48 +514,17 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se usa b1 (pág. 2) como estado y se deja afuera el 'Samlet resultatregnskap' b12 (pág. 17) por ser la misma cuenta repetida en la memoria?",
+   "pregunta": "¿Se usa el 'Samlet resultatregnskap' de la pág. 17 (b12) en lugar del resultatregnskap de la pág. 2 (b1) como estado a cargar?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "",
-   "texto": "b12 parece repetir el estado de resultados de Molde Fotballklubb con columna 2020 adicional.",
+   "texto": "Ambos son de Molde Fotballklubb 2022; b12 tiene las referencias a notas 2-14 que coinciden con los desgloses, b1 parece la versión resumida oficial.",
    "bloques": [
-    "b1",
-    "b12"
+    "b12",
+    "b1"
    ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se dejan afuera los cuadros por sección Toppfotball/Breddefotball (b45-b50), que mezclan presupuesto y solo reparten los mismos renglones del estado?",
-   "propuesta": "sí",
-   "tema": "usar-cuadro-por-segmento",
-   "renglon": "",
-   "texto": "Las columnas por sección no abren renglones que las notas no abran ya.",
-   "bloques": [
-    "b45",
-    "b46",
-    "b47",
-    "b48",
-    "b49",
-    "b50"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se asignan las notas por contenido y no por el número de nota impreso en b1 (p.ej. Medlemsinntekter dice nota 3 pero el desglose es la nota 2, b15)?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Medlemsinntekter/tilskudd",
-   "texto": "Las referencias de nota de b1 están cruzadas (Kamp nota 2, Andres arrangement nota 11, Kjøp nota 10).",
-   "bloques": [
-    "b1",
-    "b15",
-    "b16",
-    "b22",
-    "b23"
-   ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado individual de Molde Fotballklubb en b1 (NOK, unidades). b12 es repetición en la memoria. b19 desglosa Personalkostnad; b20 Trening og utstyr; b21 Egne arrangement; b22 Andres arrangement; b23 Kjøp og leie spillere; b24 Andre driftskostnader. b44-b50 son presupuestos/secciones, excluidos."
+ "observaciones": "Estado individual de Molde Fotballklubb (b12, con notas). Note 2 (b15) abre Medlemsinntekter/tilskudd en Medlemskontingent (cuotas sociales) y Markedsmidler NFF, NTF og UEFA (derechos de mercado/TV). Note 4 (Avtale MF/sponsor) no tiene cuadro con cifras. Los cuadros por segmento Toppfotball/Bredde (b45-b50) solo repiten los renglones del estado sin abrirlos más y además mezclan presupuesto; no se eligen. b44 es presupuesto."
 }

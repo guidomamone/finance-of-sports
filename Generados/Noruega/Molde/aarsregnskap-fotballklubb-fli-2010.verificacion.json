@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2010.pdf",
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2010.md",
- "generado": "2026-10-20T20:40:31.219Z",
+ "generado": "2026-10-20T20:49:09.655Z",
  "estado": "ok",
  "clubId": "molde-no",
  "year": 2010,
@@ -35,6 +35,11 @@
    "dif": 1.9761969838327786e-14
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2009 de este documento suma ingresos 55.19386; el sitio tiene 55.19386"
+  },
+  {
    "nombre": "documento del año 2011",
    "ok": true,
    "detalle": "ingresos de 2010: 66.297133 en este documento y 66.297133 en aarsregnskap-fotballklubb-fli-2011.pdf (columna del año anterior)"
@@ -43,45 +48,18 @@
    "nombre": "documento del año 2009",
    "ok": true,
    "detalle": "ingresos de 2009: 55.19386 en aarsregnskap-fotballklubb-fli-2009.pdf y 55.19386 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2009: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
   "la nota de \"Medlemsinntekter/tilskudd\" no suma el renglón (13.086011 contra 13.086111, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Andre driftsinntekter\" no suma el renglón (6.73232 contra 5.052538, sumando sus renglones): quedó el renglón del estado",
   "el desglose de \"Andre driftskostnader\" (4 filas) no suma la fila: quedó la fila",
-  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en aarsregnskap-fotballklubb-fli-2016.pdf",
-  "duda de localizar confirmada por las sumas (columna, \"Utgifter Cup kamper\"): ¿La columna '2009' duplicada en la Note 11 (b28) corresponde en realidad a 2010 en la primera columna?",
-  "duda de localizar que no afecta la carga: Son resultados por sección con presupuesto; repiten rubros ya abiertos en las notas.",
-  "duda de extraer confirmada por las sumas (columna, \"Andres arrangement\"): ¿La primera columna de la Note 11 (encabezada '2009' en L919) corresponde en realidad al ejercicio 2010?"
+  "duda de localizar confirmada por las sumas (columna, \"Andres arrangement\"): ¿Se usa la columna del bloque b28 (Note 11, encabezado '2009 | 2009') tomando la primera como 2010?",
+  "duda de localizar que no afecta la carga: Ni b19 ni sus notas b21-b23 muestran una fila de televisión; los ingresos de TV probablemente se cobran a través de NFF/Molde Fotball AS.",
+  "duda de extraer que no afecta la carga: L919 tiene dos columnas '2009', pero el total de la primera (2 888 081) coincide con 2010 del estado."
  ],
- "reintentar": [
-  {
-   "renglon": "Medlemsinntekter/tilskudd",
-   "suma": 13.086011,
-   "objetivo": 13.086111
-  },
-  {
-   "renglon": "Andre driftsinntekter",
-   "suma": 6.73232,
-   "objetivo": 5.052538
-  },
-  {
-   "renglon": "Andre driftskostnader",
-   "suma": 3.55506,
-   "objetivo": 2.189798
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
    "renglon": "Medlemsinntekter/tilskudd",

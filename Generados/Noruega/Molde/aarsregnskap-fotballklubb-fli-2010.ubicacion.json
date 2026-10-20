@@ -3,8 +3,9 @@
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2010.md",
  "mdSha1": "550eacb31599890eecdeb41b58810ab7d0d7b774",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T20:05:48.702Z",
+ "generado": "2026-10-20T20:45:24.150Z",
  "perimetroClub": "individual",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -521,7 +522,7 @@
   "b29"
  ],
  "escala": "unidades",
- "escala_evidencia": "Beløp i: NOK (b2); importes impresos en coronas enteras",
+ "escala_evidencia": "Beløp i: NOK (b2); importes completos en kroner en b19",
  "moneda": "NOK",
  "columna_ejercicio": "2010",
  "columna_anterior": "2009",
@@ -529,44 +530,28 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se usa como estado el resultatregnskap de la memoria (b19, pág. 17) con notas, en vez del formulario de Brønnøysund (b2, pág. 2)?",
-   "propuesta": "sí",
-   "tema": "cuadro-duplicado",
-   "renglon": "",
-   "texto": "b2 es el resultatregnskap en formato de organizaciones sin fines de lucro (Anskaffede/forbrukte midler) de la misma entidad; b19 trae notas que lo desglosan.",
-   "bloques": [
-    "b19",
-    "b2"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿La columna '2009' duplicada en la Note 11 (b28) corresponde en realidad a 2010 en la primera columna?",
+   "pregunta": "¿Se usa la columna del bloque b28 (Note 11, encabezado '2009 | 2009') tomando la primera como 2010?",
    "propuesta": "sí",
    "tema": "columna",
-   "renglon": "Utgifter Cup kamper",
-   "texto": "El encabezado de b28 dice '2009 | 2009', probablemente un error tipográfico.",
+   "renglon": "Andres arrangement",
+   "texto": "El encabezado de b28 repite 2009 dos veces, probablemente por un error de impresión o de transcripción.",
    "bloques": [
     "b28"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se dejan afuera los resultatregnskap por avdeling (Hovedstyret b41-b43, Breddefotball b44-b46)?",
+   "pregunta": "¿Se confirma que el documento no tiene ningún renglón ni nota de ingresos por televisión (los derechos de TV estarían dentro de 'Markedsmidler NFF, NTF og UEFA' en la Note 3 o en el acuerdo con Molde Fotball AS)?",
    "propuesta": "sí",
-   "tema": "usar-cuadro-por-segmento",
-   "renglon": "",
-   "texto": "Son resultados por sección con presupuesto; repiten rubros ya abiertos en las notas.",
+   "tema": "otro",
+   "renglon": "Medlemsinntekter/tilskudd",
+   "texto": "Ni b19 ni sus notas b21-b23 muestran una fila de televisión; los ingresos de TV probablemente se cobran a través de NFF/Molde Fotball AS.",
    "bloques": [
-    "b41",
-    "b42",
-    "b43",
-    "b44",
-    "b45",
-    "b46"
+    "b22",
+    "b23"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Entidad única Molde Fotballklubb (individual). b19 es el resultatregnskap de la memoria con notas 2-12 (b21-b29). b2 es el mismo estado en formulario oficial. b40 es presupuesto/total club, excluido."
+ "observaciones": "Se eligió b19 (resultatregnskap de la memoria, con notas) como estado. b2 es la misma cuenta en formato de organización sin fines de lucro (aktivitetsregnskap), con los mismos totales; se descarta como duplicado. b41-b46 son cuentas por departamento con presupuesto y repiten los rubros sin abrir nada nuevo, y b40 es el presupuesto. No hay renglón de televisión: es probable que esté incluido en Markedsmidler (Note 3, b22) o en el acuerdo con Molde Fotball AS (Note 4)."
 }

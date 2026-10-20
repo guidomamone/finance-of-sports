@@ -2,12 +2,12 @@
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2022.pdf",
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2022.md",
  "mdSha1": "d63ead34f1c8317592d5ce3e3dad5f89783f0b6d",
- "ubicacionSha1": "c527026d9d3f0cb4f7113478a3c4c83287fca918",
+ "ubicacionSha1": "1470ca760d5184229925a6205628ce022b5683b3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T20:30:48.719Z",
+ "generado": "2026-10-20T20:47:27.357Z",
  "ubicacion": {
   "estado": [
-   "b1"
+   "b12"
   ],
   "notas_ingresos": [
    "b15",
@@ -25,61 +25,61 @@
  },
  "escalas": [
   {
-   "bloque": "b1",
+   "bloque": "b12",
    "escala": "unidades",
-   "evidencia": "L106: Beløp i: NOK"
+   "evidencia": "No se indica escala; importes impresos completos en NOK (ej. 151 455 208)"
   },
   {
    "bloque": "b15",
-   "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes coinciden con el estado en NOK"
+   "escala": "unidades",
+   "evidencia": "Sin indicación; importes completos coinciden con el estado"
   },
   {
    "bloque": "b16",
-   "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes coinciden con el estado en NOK"
+   "escala": "unidades",
+   "evidencia": "Sin indicación; total 23 528 154 igual al estado"
   },
   {
    "bloque": "b18",
-   "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes coinciden con el estado en NOK"
+   "escala": "unidades",
+   "evidencia": "Sin indicación; total 6 166 540 igual al estado"
   },
   {
    "bloque": "b19",
-   "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes coinciden con el estado en NOK"
+   "escala": "unidades",
+   "evidencia": "Sin indicación; total 105 890 810 ≈ estado"
   },
   {
    "bloque": "b20",
-   "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes coinciden con el estado en NOK"
+   "escala": "unidades",
+   "evidencia": "Sin indicación; total 13 816 732 igual al estado"
   },
   {
    "bloque": "b21",
-   "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes coinciden con el estado en NOK"
+   "escala": "unidades",
+   "evidencia": "Sin indicación; total igual al estado"
   },
   {
    "bloque": "b22",
-   "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes coinciden con el estado en NOK"
+   "escala": "unidades",
+   "evidencia": "Sin indicación; total igual al estado"
   },
   {
    "bloque": "b23",
-   "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes coinciden con el estado en NOK"
+   "escala": "unidades",
+   "evidencia": "Sin indicación; total igual al estado"
   },
   {
    "bloque": "b24",
-   "escala": "no se sabe",
-   "evidencia": "Sin indicación; importes coinciden con el estado en NOK"
+   "escala": "unidades",
+   "evidencia": "Sin indicación; total igual al estado"
   }
  ],
  "filas": [
   {
-   "bloque": "b1",
-   "linea": 110,
-   "etiqueta": "Medlemsinntekter/tilskudd",
+   "bloque": "b12",
+   "linea": 673,
+   "etiqueta": "Mediemsinntekter/tilskudd",
    "actual": "100 013 938",
    "anterior": "86 331 652",
    "tipo": "renglon",
@@ -87,8 +87,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 111,
+   "bloque": "b12",
+   "linea": 674,
    "etiqueta": "Kamp- og billettinntekter",
    "actual": "23 528 154",
    "anterior": "11 577 623",
@@ -97,9 +97,9 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 112,
-   "etiqueta": "Reklame/sponsorinntekter",
+   "bloque": "b12",
+   "linea": 675,
+   "etiqueta": "Avtale MF/sponsor",
    "actual": "21 596 576",
    "anterior": "22 296 227",
    "tipo": "renglon",
@@ -107,18 +107,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 113,
-   "etiqueta": "Salg spillere/Utleie spillere",
-   "actual": "150 000",
-   "anterior": "110 000",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 114,
+   "bloque": "b12",
+   "linea": 676,
    "etiqueta": "Andre driftsinntekter",
    "actual": "6 166 540",
    "anterior": "4 414 551",
@@ -127,38 +117,28 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 115,
-   "etiqueta": "Sum inntekter",
+   "bloque": "b12",
+   "linea": 677,
+   "etiqueta": "Salg spillere/Utleie",
+   "actual": "150 000",
+   "anterior": "110 000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 678,
+   "etiqueta": "Sum driftsinntekter",
    "actual": "151 455 208",
-   "anterior": "124 730 053",
+   "anterior": "124 730 052",
    "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 117,
-   "etiqueta": "Personalkostnad",
-   "actual": "105 890 808",
-   "anterior": "90 338 628",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 118,
-   "etiqueta": "Avskrivinger",
-   "actual": "20 654 025",
-   "anterior": "18 458 514",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 119,
+   "bloque": "b12",
+   "linea": 680,
    "etiqueta": "Administrasjon",
    "actual": "2 850 668",
    "anterior": "2 014 715",
@@ -167,8 +147,18 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 120,
+   "bloque": "b12",
+   "linea": 681,
+   "etiqueta": "Personalkostnader",
+   "actual": "105 890 808",
+   "anterior": "90 338 628",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 682,
    "etiqueta": "Trening og utstyr",
    "actual": "13 816 732",
    "anterior": "8 676 064",
@@ -177,8 +167,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 121,
+   "bloque": "b12",
+   "linea": 683,
    "etiqueta": "Egne arrangement",
    "actual": "3 706 062",
    "anterior": "2 683 025",
@@ -187,48 +177,8 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 122,
-   "etiqueta": "Kjøp og leie spillere",
-   "actual": "1 935 892",
-   "anterior": "2 137 767",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 123,
-   "etiqueta": "Andre driftskostnader",
-   "actual": "8 479 597",
-   "anterior": "5 775 157",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 124,
-   "etiqueta": "Anleggskontrakter",
-   "actual": "146 979",
-   "anterior": "250 440",
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 125,
-   "etiqueta": "Tap på fordringer",
-   "actual": "34 785",
-   "anterior": null,
-   "tipo": "renglon",
-   "lado": "gasto",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 126,
+   "bloque": "b12",
+   "linea": 684,
    "etiqueta": "Andres arrangement",
    "actual": "15 323 713",
    "anterior": "13 047 973",
@@ -237,9 +187,59 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 127,
-   "etiqueta": "Sum kostnader",
+   "bloque": "b12",
+   "linea": 685,
+   "etiqueta": "Kjøp og leie spillere",
+   "actual": "1 935 892",
+   "anterior": "2 137 767",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 686,
+   "etiqueta": "Andre driftskostnader",
+   "actual": "8 479 597",
+   "anterior": "5 775 157",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 687,
+   "etiqueta": "Anleggskostnader",
+   "actual": "146 979",
+   "anterior": "250 440",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 688,
+   "etiqueta": "Avskrivninger",
+   "actual": "20 654 025",
+   "anterior": "18 458 514",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 689,
+   "etiqueta": "Tap på fordringer",
+   "actual": "34 785",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 690,
+   "etiqueta": "Sum driftskostnader",
    "actual": "172 839 261",
    "anterior": "143 382 283",
    "tipo": "total",
@@ -247,19 +247,19 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 128,
-   "etiqueta": "Driftsresultat",
+   "bloque": "b12",
+   "linea": 691,
+   "etiqueta": "DRIFTSRESULTAT",
    "actual": "-21 384 053",
-   "anterior": "-18 652 230",
+   "anterior": "-18 652 231",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 130,
-   "etiqueta": "Annen finansinntekt",
+   "bloque": "b12",
+   "linea": 692,
+   "etiqueta": "Netto finansposter",
    "actual": "21 263 959",
    "anterior": "18 579 469",
    "tipo": "renglon",
@@ -267,51 +267,11 @@
    "detalla_a": null
   },
   {
-   "bloque": "b1",
-   "linea": 131,
-   "etiqueta": "Sum finansinntekter",
-   "actual": "21 263 959",
-   "anterior": "18 579 469",
-   "tipo": "subtotal",
-   "lado": "financiero",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 132,
-   "etiqueta": "Netto finans",
-   "actual": "21 263 959",
-   "anterior": "18 579 469",
-   "tipo": "subtotal",
-   "lado": "financiero",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 133,
-   "etiqueta": "Ordinært resultat før skattekostnad",
+   "bloque": "b12",
+   "linea": 693,
+   "etiqueta": "ÅRSRESULTAT",
    "actual": "-120 094",
-   "anterior": "-72 761",
-   "tipo": "resultado",
-   "lado": "resultado",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 134,
-   "etiqueta": "Ordinært resultat etter skattekostnad",
-   "actual": "-120 094",
-   "anterior": "-72 761",
-   "tipo": "resultado",
-   "lado": "resultado",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b1",
-   "linea": 135,
-   "etiqueta": "Årsresultat",
-   "actual": "-120 094",
-   "anterior": "-72 761",
+   "anterior": "-72 762",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
@@ -324,7 +284,7 @@
    "anterior": "201 905",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "Medlemsinntekter/tilskudd"
+   "detalla_a": "Mediemsinntekter/tilskudd"
   },
   {
    "bloque": "b15",
@@ -334,7 +294,7 @@
    "anterior": "2 846 714",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "Medlemsinntekter/tilskudd"
+   "detalla_a": "Mediemsinntekter/tilskudd"
   },
   {
    "bloque": "b15",
@@ -344,7 +304,7 @@
    "anterior": "69 306 033",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "Medlemsinntekter/tilskudd"
+   "detalla_a": "Mediemsinntekter/tilskudd"
   },
   {
    "bloque": "b15",
@@ -354,7 +314,7 @@
    "anterior": "13 975 000",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "Medlemsinntekter/tilskudd"
+   "detalla_a": "Mediemsinntekter/tilskudd"
   },
   {
    "bloque": "b15",
@@ -364,7 +324,7 @@
    "anterior": "86 331 652",
    "tipo": "subtotal",
    "lado": "ingreso",
-   "detalla_a": "Medlemsinntekter/tilskudd"
+   "detalla_a": "Mediemsinntekter/tilskudd"
   },
   {
    "bloque": "b16",
@@ -474,7 +434,7 @@
    "anterior": "77 727 336",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Personalkostnad"
+   "detalla_a": "Personalkostnader"
   },
   {
    "bloque": "b19",
@@ -484,7 +444,7 @@
    "anterior": "11 540 677",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Personalkostnad"
+   "detalla_a": "Personalkostnader"
   },
   {
    "bloque": "b19",
@@ -494,7 +454,7 @@
    "anterior": "860 954",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Personalkostnad"
+   "detalla_a": "Personalkostnader"
   },
   {
    "bloque": "b19",
@@ -504,7 +464,7 @@
    "anterior": "209 661",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Personalkostnad"
+   "detalla_a": "Personalkostnader"
   },
   {
    "bloque": "b19",
@@ -514,7 +474,7 @@
    "anterior": "90 338 628",
    "tipo": "subtotal",
    "lado": "gasto",
-   "detalla_a": "Personalkostnad"
+   "detalla_a": "Personalkostnader"
   },
   {
    "bloque": "b20",
@@ -758,54 +718,42 @@
   }
  ],
  "total_ingresos": {
-  "linea": 115,
+  "linea": 678,
   "actual": "151 455 208"
  },
  "total_gastos": {
-  "linea": 127,
+  "linea": 690,
   "actual": "172 839 261"
  },
  "resultado": {
-  "linea": 135,
+  "linea": 693,
   "actual": "-120 094",
-  "anterior": "-72 761"
+  "anterior": "-72 762"
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga el desglose de la Nota 2 (L906-L910) aunque su total 2022 (100 056 938) difiere en 43 000 del renglón 'Medlemsinntekter/tilskudd' del estado (100 013 938, L110)?",
+   "pregunta": "¿Se carga 'Mediemsinntekter/tilskudd' 2022 con el importe del estado (100 013 938, L673) y no con el de la nota 2 (100 056 938, L910)?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Medlemsinntekter/tilskudd",
-   "texto": "La suma de partidas de L906-L909 da 100 056 938, 43 000 más que el estado; además el estado cita nota 3 y la nota es la 2.",
+   "renglon": "Mediemsinntekter/tilskudd",
+   "texto": "La nota 2 suma 100 056 938 (cuadra con sus partidas) y el estado imprime 100 013 938: diferencia de 43 000, posible error de transcripción u OCR.",
    "bloques": [
-    "b15",
-    "b1"
+    "b12",
+    "b15"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se acepta que el total de la Nota 8 en 2021 (8 678 064, L992) difiere en 2 000 del estado (8 676 064, L120)?",
+   "pregunta": "¿Se carga 'Netto finansposter' (L692) como positivo 21 263 959 aunque para cuadrar el ÅRSRESULTAT (-120 094) actúa sumando al resultado operativo negativo?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Trening og utstyr",
-   "texto": "Diferencia de 2 000 en el año anterior entre L992 y L120, posible error tipográfico; no afecta 2022.",
+   "renglon": "Netto finansposter",
+   "texto": "DRIFTSRESULTAT -21 384 053 + 21 263 959 = -120 094, así que es un ingreso financiero neto; se carga tal cual impreso.",
    "bloques": [
-    "b20",
-    "b1"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se carga el renglón 'Reklame/sponsorinntekter' (L112) sin desglose porque la Nota 4 no está en los bloques?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Reklame/sponsorinntekter",
-   "texto": "No se transcribió nota de sponsoreo; solo queda la cifra del estado.",
-   "bloques": [
-    "b1"
+    "b12"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Importes en NOK. La suma de ingresos del estado (L110-L114) da 151 455 208 coincidiendo con L115. Personalkostnad: nota 7 suma 105 890 810 vs 105 890 808 en el estado (redondeo). Las referencias de nota del estado no coinciden con la numeración de las notas (desfase)."
+ "observaciones": "Club noruego, importes en NOK sin escala indicada (unidades). No hay renglones 'Televisión' ni 'Cuotas sociales' con esa denominación: los ingresos de membresía (Mediemskontingent) y fondos NFF/UEFA (Markedsmidler) están en la Nota 2 (b15), ya extraída completa. No hay cuadro por segmento. Diferencias de 2 en Personalkostnader (105 890 808 vs 105 890 810) y en Trening 2021 (8 676 064 vs 8 678 064) se consideran redondeo/transcripción menor. La nota 4 (sponsor) y 6 no están en los bloques. Columna 2020 ignorada."
 }

@@ -1,17 +1,8 @@
 {
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2022.md",
- "generatedAt": "2026-10-20T20:41:03.173Z",
- "rubrosHuella": "2c607b4e526b394120d01c032387512a3e59d25b",
+ "generatedAt": "2026-10-20T20:48:38.017Z",
+ "rubrosHuella": "428036cb5151440e5ad3df6ac5aecf1c9a7cc1d3",
  "rubros": [
-  {
-   "label": "Medlemsinntekter/tilskudd",
-   "lado": "revenue",
-   "page": 2,
-   "section": "estado",
-   "choice": "member_dues",
-   "confidence": 0.84,
-   "desdeCache": true
-  },
   {
    "label": "Inntekter Seriekamper",
    "lado": "revenue",
@@ -58,6 +49,15 @@
    "desdeCache": true
   },
   {
+   "label": "Avtale MF/sponsor",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
    "label": "Kiosksalg",
    "lado": "revenue",
    "page": 22,
@@ -76,10 +76,28 @@
    "desdeCache": true
   },
   {
+   "label": "Salg spillere/Utleie",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Administrasjon",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
    "label": "Lønn spillere, trenere, støtteapparat og administrasjon",
    "lado": "expense",
    "page": 22,
-   "section": "nota que desglosa \"Personalkostnad\"",
+   "section": "nota que desglosa \"Personalkostnader\"",
    "choice": "wages_squad",
    "confidence": 1,
    "desdeCache": true
@@ -88,7 +106,7 @@
    "label": "Arbeidsgiveravgift",
    "lado": "expense",
    "page": 22,
-   "section": "nota que desglosa \"Personalkostnad\"",
+   "section": "nota que desglosa \"Personalkostnader\"",
    "choice": "wages_squad",
    "confidence": 0.6,
    "desdeCache": true
@@ -97,7 +115,7 @@
    "label": "Pensjonskostnad",
    "lado": "expense",
    "page": 22,
-   "section": "nota que desglosa \"Personalkostnad\"",
+   "section": "nota que desglosa \"Personalkostnader\"",
    "choice": "other_expenses",
    "confidence": 0.39,
    "desdeCache": true
@@ -106,18 +124,18 @@
    "label": "Andre ytelser",
    "lado": "expense",
    "page": 22,
-   "section": "nota que desglosa \"Personalkostnad\"",
+   "section": "nota que desglosa \"Personalkostnader\"",
    "choice": "wages_squad",
    "confidence": 0.87,
    "desdeCache": true
   },
   {
-   "label": "Administrasjon",
+   "label": "Ulgifter treningsløs/privalkamper",
    "lado": "expense",
-   "page": 2,
-   "section": "estado",
-   "choice": "admin_general_expense",
-   "confidence": 1,
+   "page": 22,
+   "section": "nota que desglosa \"Trening og utstyr\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
    "desdeCache": true
   },
   {
@@ -159,19 +177,37 @@
   {
    "label": "Egne arrangement",
    "lado": "expense",
-   "page": 2,
+   "page": 17,
    "section": "estado",
    "choice": "match_organisation_expense",
    "confidence": 0.9,
    "desdeCache": true
   },
   {
+   "label": "Andres arrangement",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
    "label": "Kjøp og leie spillere",
    "lado": "expense",
-   "page": 2,
+   "page": 17,
    "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ulgifter Prosjekt/Titak",
+   "lado": "expense",
+   "page": 23,
+   "section": "nota que desglosa \"Andre driftskostnader\"",
+   "choice": "other_expenses",
+   "confidence": 0.85,
    "desdeCache": true
   },
   {
@@ -193,174 +229,54 @@
    "desdeCache": true
   },
   {
+   "label": "Anleggskostnader",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Avskrivninger",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
    "label": "Tap på fordringer",
    "lado": "expense",
-   "page": 2,
+   "page": 17,
    "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.99,
    "desdeCache": true
   },
   {
-   "label": "Reklame/sponsorinntekter",
+   "label": "Mediemsinntekter/tilskudd",
    "lado": "revenue",
-   "page": 2,
+   "page": 17,
    "section": "estado",
-   "choice": "sponsorship_commercial",
-   "confidence": 1,
+   "choice": "member_dues",
+   "confidence": 0.76,
    "top3": [
-    [
-     "sponsorship_commercial",
-     1
-    ],
     [
      "member_dues",
-     0
+     0.78
     ],
     [
-     "season_tickets",
-     0
+     "other_income",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.04
     ]
    ],
-   "tokens": 1067
-  },
-  {
-   "label": "Ulgifter Prosjekt/Titak",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Andre driftskostnader\"",
-   "choice": "other_expenses",
-   "confidence": 0.85,
-   "top3": [
-    [
-     "other_expenses",
-     0.86
-    ],
-    [
-     "admin_general_expense",
-     0.12
-    ],
-    [
-     "exceptional_items",
-     0.01
-    ]
-   ],
-   "tokens": 1014
-  },
-  {
-   "label": "Ulgifter treningsløs/privalkamper",
-   "lado": "expense",
-   "page": 22,
-   "section": "nota que desglosa \"Trening og utstyr\"",
-   "choice": "match_organisation_expense",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.97
-    ],
-    [
-     "other_expenses",
-     0.03
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1054
-  },
-  {
-   "label": "Andres arrangement",
-   "lado": "expense",
-   "page": 2,
-   "section": "estado",
-   "choice": "other_expenses",
-   "confidence": 0.65,
-   "top3": [
-    [
-     "other_expenses",
-     0.68
-    ],
-    [
-     "match_organisation_expense",
-     0.23
-    ],
-    [
-     "youth_other_sports_expense",
-     0.07
-    ]
-   ],
-   "tokens": 996
-  },
-  {
-   "label": "Avskrivinger",
-   "lado": "expense",
-   "page": 2,
-   "section": "estado",
-   "choice": "other_amortisation",
-   "confidence": 0.61,
-   "top3": [
-    [
-     "other_amortisation",
-     0.64
-    ],
-    [
-     "depreciation",
-     0.27
-    ],
-    [
-     "player_amortisation",
-     0.05
-    ]
-   ],
-   "tokens": 1018
-  },
-  {
-   "label": "Salg spillere/Utleie spillere",
-   "lado": "revenue",
-   "page": 2,
-   "section": "estado",
-   "choice": "player_sales",
-   "confidence": 1,
-   "top3": [
-    [
-     "player_sales",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1039
-  },
-  {
-   "label": "Anleggskontrakter",
-   "lado": "expense",
-   "page": 2,
-   "section": "estado",
-   "choice": "admin_general_expense",
-   "confidence": 0.75,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.77
-    ],
-    [
-     "depreciation",
-     0.14
-    ],
-    [
-     "other_expenses",
-     0.06
-    ]
-   ],
-   "tokens": 1014
+   "tokens": 1032
   }
  ]
 }

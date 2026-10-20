@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2024.pdf",
- "generado": "2026-10-20T20:41:13.906Z",
+ "generado": "2026-10-20T20:49:09.430Z",
  "frena": [
   {
    "etapa": "registro",
@@ -11,42 +11,35 @@
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
   },
   {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2024: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+   "etapa": "categorizacion",
+   "motivo": "3 fila(s) impresa(s) que no están en el .categorias.json (la verificación las abrió después de categorizar): \"Kamp- og billettinntekter\" 23.364385 (pág. 16); \"Utgifter treningsleir/pilvalkamper\" 7.478977 (pág. 21); \"Andre driftskostnader\" 7.852916 (pág. 16). Volver a correr la etapa 5 o categorizarlas en la cola (node tools/cola.mjs --corregir-categoria)"
   },
   {
    "etapa": "categorizacion",
-   "motivo": "8 fila(s) impresa(s) que no están en el .categorias.json (la verificación las abrió después de categorizar): \"Medlemsinntekter/tilskudd\" 158.867123 (pág. 16); \"Kamp- og billettinntekter\" 23.364385 (pág. 16); \"Avtale MF/sponsor\" 36.505323 (pág. 16); \"Kiosksalg\" 3.496384 (pág. 20). Volver a correr la etapa 5 o categorizarlas en la cola (node tools/cola.mjs --corregir-categoria)"
+   "motivo": "10.3% del dinero de ingresos queda sin categoría aceptable (tope 5%): \"Kamp- og billettinntekter\" 23.364385 (no está en categorias.json)"
   },
   {
    "etapa": "categorizacion",
-   "motivo": "98.7% del dinero de ingresos queda sin categoría aceptable (tope 5%): \"Medlemsinntekter/tilskudd\" 158.867123 (no está en categorias.json); \"Kamp- og billettinntekter\" 23.364385 (no está en categorias.json); \"Avtale MF/sponsor\" 36.505323 (no está en categorias.json)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "5.5% del dinero de gastos queda sin categoría aceptable (tope 5%): \"Utgifter treningsleir/pilvalkamper\" 7.478977 (no está en categorias.json); \"Banlele serie- og cupkamper\" 0.07943 (no está en categorias.json); \"Andre driftskostnader\" 7.852916 (no está en categorias.json)"
+   "motivo": "5.5% del dinero de gastos queda sin categoría aceptable (tope 5%): \"Utgifter treningsleir/pilvalkamper\" 7.478977 (no está en categorias.json); \"Andre driftskostnader\" 7.852916 (no está en categorias.json)"
   },
   {
    "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 2.909818 + gastos -264.725737 + netInterest 62.643524 + tax 0 = -199.172395 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 9.4821)"
+   "motivo": "resultado: ingresos 203.611255 + gastos -264.805167 + netInterest 62.643524 + tax 0 = 1.449612 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 9.4821)"
   },
   {
    "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 2.909818 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
+   "motivo": "ingresos: las filas suman 203.611255 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   },
   {
    "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -264.725737 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
+   "motivo": "gastos: las filas suman -264.805167 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 17 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)",
-  "ingresos: 5 fila(s) sin categoría aceptable (98.7% del dinero del lado): \"Medlemsinntekter/tilskudd\" (no está en categorias.json); \"Kamp- og billettinntekter\" (no está en categorias.json); \"Avtale MF/sponsor\" (no está en categorias.json); \"Kiosksalg\" (no está en categorias.json); \"Andre driftsinntekter\" (no está en categorias.json)",
-  "gastos: 3 fila(s) sin categoría aceptable (5.5% del dinero del lado): \"Utgifter treningsleir/pilvalkamper\" (no está en categorias.json); \"Banlele serie- og cupkamper\" (no está en categorias.json); \"Andre driftskostnader\" (no está en categorias.json)"
+  "categorías en 0 aun después del reintento (se carga así): Televisión, Estadio, Cuotas sociales",
+  "ingresos: 1 fila(s) sin categoría aceptable (10.3% del dinero del lado): \"Kamp- og billettinntekter\" (no está en categorias.json)",
+  "gastos: 2 fila(s) sin categoría aceptable (5.5% del dinero del lado): \"Utgifter treningsleir/pilvalkamper\" (no está en categorias.json); \"Andre driftskostnader\" (no está en categorias.json)"
  ],
  "ejercicio": {
   "clubId": "molde-no",
@@ -55,6 +48,46 @@
   "perimetro": "individual",
   "revenueLines": [
    {
+    "rawLabel": "Medlemsinntekter/tilskudd",
+    "normalizedCategory": "other_income",
+    "amountNative": 158.867123,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Avtale MF/sponsor",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 36.505323,
+    "disclosureLevel": "aggregated",
+    "_pag": 16,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Kiosksalg",
+    "normalizedCategory": "other_income",
+    "amountNative": 3.496384,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
+    "rawLabel": "Andre driftsinntekter",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.832607,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
+   },
+   {
     "rawLabel": "Salg spillere/Utleie",
     "normalizedCategory": "player_sales",
     "amountNative": 2.909818,
@@ -62,7 +95,7 @@
     "_pag": 16,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
    }
   ],
   "expenseLines": [
@@ -157,6 +190,16 @@
     "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
    },
    {
+    "rawLabel": "Banlele serie- og cupkamper",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.07943,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+   },
+   {
     "rawLabel": "Avgift Norges Fotballforbund",
     "normalizedCategory": "match_organisation_expense",
     "amountNative": -0.657622,
@@ -194,7 +237,7 @@
     "_pag": 21,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
    },
    {
     "rawLabel": "Utgifter cup kamper",
@@ -204,7 +247,7 @@
     "_pag": 21,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)"
    },
    {
     "rawLabel": "Utgifter e-cup",
@@ -331,10 +374,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 158.867123,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-20: Medlemsinntekter/tilskudd es un total mixto, en su mayoría tilskudd (Andre tilskudd 92 de 100 M en 2022): se carga como otros ingresos; el desglose por tipo no cierra con el estado (nota 2, 43.000 de diferencia)",
+   "destino": "revenue",
+   "amountNative": 158.867123
   },
   {
    "label": "Kamp- og billettinntekter",
@@ -355,10 +402,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 36.505323,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 36.505323
   },
   {
    "label": "Kiosksalg",
@@ -367,10 +417,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Andre driftsinntekter\")",
    "signoFijo": 3.496384,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.496384
   },
   {
    "label": "Andre driftsinntekter",
@@ -379,10 +432,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Andre driftsinntekter\")",
    "signoFijo": 1.832607,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.832607
   },
   {
    "label": "Salg spillere/Utleie",
@@ -394,7 +450,7 @@
    "cat": "player_sales",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 2.909818
@@ -558,10 +614,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Egne arrangement\")",
    "signoFijo": 0.07943,
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
-   "destino": "sin-categoria"
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.07943
   },
   {
    "label": "Avgift Norges Fotballforbund",
@@ -620,7 +679,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
    "enLista": true,
    "destino": "expense",
    "amountNative": -3.165737
@@ -635,7 +694,7 @@
    "cat": "match_organisation_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (la fila no estaba en categorias.json)",
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
    "enLista": true,
    "destino": "expense",
    "amountNative": -1.637259
@@ -737,10 +796,10 @@
    "origen": "verificacion (estado)",
    "signoFijo": 59.960192,
    "cat": "depreciation",
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
    "conf": 1,
    "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
    "notaGuido": "Claude 2026-10-20: Avskrivninger = depreciación",
    "destino": "expense",
    "amountNative": -59.960192
@@ -772,16 +831,6 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -795,8 +844,8 @@
   "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
  },
  "totales": {
-  "revSum": 2.909818,
-  "expSum": -264.725737,
+  "revSum": 203.611255,
+  "expSum": -264.805167,
   "officialTotalRevenue": null,
   "officialTotalExpenses": null,
   "officialPAT": null,
@@ -851,9 +900,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 10,
-  "lineasIngreso": 1,
-  "lineasGasto": 21,
+  "motivos": 8,
+  "lineasIngreso": 5,
+  "lineasGasto": 22,
   "metaFilas": 1,
   "excluidas": 0
  }

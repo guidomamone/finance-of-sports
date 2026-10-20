@@ -3,8 +3,9 @@
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2024.md",
  "mdSha1": "0939accaa544fe6f2f9fecf9c0cec694481fb7f4",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-20T20:33:16.712Z",
+ "generado": "2026-10-20T20:47:34.698Z",
  "perimetroClub": "individual",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -456,7 +457,7 @@
   "b19"
  ],
  "escala": "unidades",
- "escala_evidencia": "Importes en coronas enteras (ej. 'Avtale MF/sponsor 36 505 323', coincide con nota 4 'kr 36 505 323'); b1 dice 'Beløp i: NOK'",
+ "escala_evidencia": "Importes en coronas enteras (p.ej. notas con 'kr 36 505 323'); b1 indica 'Beløp i: NOK'",
  "moneda": "NOK",
  "columna_ejercicio": "2024",
  "columna_anterior": "2023",
@@ -464,23 +465,23 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se usa el estado de la memoria anual (b8, pág. 16) y no el formulario resumido de Brønnøysund (b1, pág. 2)?",
+   "pregunta": "¿Se usa el estado de resultados de la memoria (b8, pág. 16) en vez del formulario de Brønnøysund (b1, pág. 2)?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "",
-   "texto": "b1 es el mismo resultado de Molde Fotballklubb en formato oficial resumido; b8 tiene el detalle con notas.",
+   "texto": "b1 y b8 son el mismo estado de resultados de Molde Fotballklubb; b8 tiene renglones más detallados y referencias a notas.",
    "bloques": [
-    "b8",
-    "b1"
+    "b1",
+    "b8"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se dejan afuera los cuadros por sección Hovedstyret/Toppfotball y Breddefotball (b41-b46)?",
+   "pregunta": "¿Se dejan afuera los cuadros por segmento Toppfotball/Breddefotball (b41-b46), que incluyen presupuestos?",
    "propuesta": "sí",
    "tema": "usar-cuadro-por-segmento",
    "renglon": "",
-   "texto": "Repiten los mismos renglones del estado divididos por sección, con presupuestos; no abren renglones nuevos.",
+   "texto": "Repiten los renglones del estado divididos por área, sin abrir Televisión, Estadio ni Cuotas, que ya abren las notas 2 y 3.",
    "bloques": [
     "b41",
     "b42",
@@ -492,5 +493,5 @@
    "afecta_carga": false
   }
  ],
- "observaciones": "Solo hay cuentas de Molde Fotballklubb (individual). b8 es el resultatregnskap con notas 2-11; b1 es la versión resumida del formulario oficial. b15 incluye la nota 7 de personal (lønnskostnader). b40 es presupuesto, b10 flujo, b20-b24 activos fijos: excluidos."
+ "observaciones": "Entidad única Molde Fotballklubb (individual). Cuotas sociales en nota 2 (b11, Medlemskontingent); Estadio/taquilla en nota 3 (b12); Televisión probablemente en b11 (Markedsmidler NFF, NTF y UEFA) o en la nota 4 de acuerdo con Molde Fotball AS (texto). b15 es la nota de personal. Presupuesto b40 excluido."
 }
