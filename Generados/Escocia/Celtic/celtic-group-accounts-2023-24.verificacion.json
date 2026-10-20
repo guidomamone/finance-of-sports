@@ -1,0 +1,195 @@
+{
+ "pdf": "Clubes/Escocia/Celtic/celtic-group-accounts-2023-24.pdf",
+ "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2023-24.md",
+ "generado": "2026-10-20T19:05:16.313Z",
+ "estado": "ok",
+ "clubId": "celtic-gb",
+ "year": 2024,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Revenue\" 124.58 cierra; además se suman 3 línea(s) fuera de ese total (6.84)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"Operating expenses (before intangible asset transactions and exceptional items)\" 105.394 cierra; además se suman 1 línea(s) fuera de ese total (11.483)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.1316282072803006e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 131.42 en este documento y 131.217 en celtic-plc-group-accounts-2024-25.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 147.792 en celtic-group-accounts-2022-23.pdf y 147.792 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses (before intangible asset transactions and exceptional items)\" no suma el renglón (84.914 contra 105.394, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de localizar ya contestada para el club (antes de su alta) (perimetro, \"-\"): aceptar, en celtic-plc-group-accounts-2024-25.pdf",
+  "duda de localizar ya contestada para el club (antes de su alta) (perimetro, \"Wages and salaries\"): aceptar, en celtic-plc-group-accounts-2024-25.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Revenue\"): corregir sí, en celtic-group-accounts-2022-23.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Staff costs (Note 10)\"): aceptar, en celtic-group-accounts-2023-24.pdf",
+  "duda de extraer que no afecta la carga: El documento no separa plantel de resto del personal; TV está dentro de Media rights (L3068)."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses (before intangible asset transactions and exceptional items)",
+   "suma": 84.914,
+   "objetivo": 105.394
+  }
+ ],
+ "totales": {
+  "ingresos": 131.42,
+  "gastos": 116.877,
+  "financiero": 3.282,
+  "impuesto": -4.441,
+  "resultadoImpreso": 13.384,
+  "resultadoParaCargar": 13.384,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticketing",
+   "lado": "ingreso",
+   "M": 40.823,
+   "pagina": 72,
+   "linea": 3065,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Commercial / sponsorship",
+   "lado": "ingreso",
+   "M": 13.831,
+   "pagina": 72,
+   "linea": 3066,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Retail outlets and e-commerce",
+   "lado": "ingreso",
+   "M": 22.65,
+   "pagina": 72,
+   "linea": 3067,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Media rights",
+   "lado": "ingreso",
+   "M": 36.374,
+   "pagina": 72,
+   "linea": 3068,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Stadium operations",
+   "lado": "ingreso",
+   "M": 8.814,
+   "pagina": 72,
+   "linea": 3069,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 2.088,
+   "pagina": 72,
+   "linea": 3070,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Profit on disposal of Intangible assets",
+   "lado": "ingreso",
+   "M": 6.637,
+   "pagina": 54,
+   "linea": 2241,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 54,
+   "linea": 2242,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Exceptional operating Income/(expenses)",
+   "lado": "ingreso",
+   "M": 0.203,
+   "pagina": 54,
+   "linea": 2239,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Operating expenses (before intangible asset transactions and exceptional items)",
+   "lado": "gasto",
+   "M": 105.394,
+   "pagina": 54,
+   "linea": 2237,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Amortisation of intangible assets",
+   "lado": "gasto",
+   "M": 11.483,
+   "pagina": 54,
+   "linea": 2240,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finance income",
+   "M": 4.726,
+   "linea": 2244
+  },
+  {
+   "etiqueta": "Finance expense",
+   "M": -1.444,
+   "linea": 2245
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax expense",
+   "M": -4.441,
+   "linea": 2247
+  }
+ ]
+}

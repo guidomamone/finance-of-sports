@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.pdf",
+ "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2020-21.md",
+ "mdSha1": "c415e291c28600895de0814d271ff2e2ff5d0e80",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-20T19:00:55.965Z",
+ "fuentes": {
+  "60": "guardada",
+  "79": "guardada",
+  "80": "guardada",
+  "81": "guardada"
+ },
+ "confirmados": 40,
+ "noConfirmados": [
+  {
+   "bloque": "b8",
+   "pagina": 60,
+   "linea": 2987,
+   "numero": "12 855",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Finance income 12 855 1,479"
+  },
+  {
+   "bloque": "b24",
+   "pagina": 80,
+   "linea": 4015,
+   "numero": "124 257",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Foreign exchange loss . 124 257"
+  },
+  {
+   "bloque": "b26",
+   "pagina": 81,
+   "linea": 4082,
+   "numero": "844 797",
+   "segundaLeyo": null,
+   "sinSegunda": false,
+   "texto": "Other pension costs 844 797"
+  }
+ ]
+}

@@ -1,0 +1,329 @@
+{
+ "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2021-22.md",
+ "generatedAt": "2026-10-20T18:59:49.282Z",
+ "rubrosHuella": "b118a9dda395cdcbd5ba2cf95648fc45cfcb4f8d",
+ "rubros": [
+  {
+   "label": "Retail outlets and E-commerce",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Other",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Merchandise vouchers for season ticket holders",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.85
+    ],
+    [
+     "season_tickets",
+     0.14
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Ticketing",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Profit on disposal of intangible assets",
+   "lado": "revenue",
+   "page": 53,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "player_sales",
+     0.92
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Stadium operations",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "stadium_other",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "stadium_other",
+     0.89
+    ],
+    [
+     "matchday_competition",
+     0.11
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Commercial / sponsorship",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Media rights",
+   "lado": "revenue",
+   "page": 71,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Operating expenses (before intangible asset transactions and exceptional items)",
+   "lado": "expense",
+   "page": 53,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Settlement agreements on contract termination",
+   "lado": "expense",
+   "page": 72,
+   "section": "nota que desglosa \"Exceptional operating expenses\"",
+   "choice": "exceptional_items",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "exceptional_items",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Impairment of intangible assets and other prepaid costs",
+   "lado": "expense",
+   "page": 72,
+   "section": "nota que desglosa \"Exceptional operating expenses\"",
+   "choice": "player_impairment",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "player_impairment",
+     0.6
+    ],
+    [
+     "exceptional_items",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Amortisation of intangible assets",
+   "lado": "expense",
+   "page": 53,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 53,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Reversal of prior period impairment charges",
+   "lado": "expense",
+   "page": 72,
+   "section": "nota que desglosa \"Exceptional operating expenses\"",
+   "choice": "exceptional_items",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "exceptional_items",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "player_impairment",
+     0.05
+    ]
+   ],
+   "tokens": 1135
+  }
+ ]
+}

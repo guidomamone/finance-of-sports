@@ -1,0 +1,106 @@
+{
+ "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2022-23.md",
+ "generatedAt": "2026-10-20T19:04:37.007Z",
+ "rubrosHuella": "8ac1f9a206aaeba8b7a4de1ef389e8cb666a92de",
+ "rubros": [
+  {
+   "label": "Ticketing",
+   "lado": "revenue",
+   "page": 73,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercial / sponsorship",
+   "lado": "revenue",
+   "page": 73,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Retail outlets and E-commerce",
+   "lado": "revenue",
+   "page": 73,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Media rights",
+   "lado": "revenue",
+   "page": 73,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Stadium operations",
+   "lado": "revenue",
+   "page": 73,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "stadium_other",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Other",
+   "lado": "revenue",
+   "page": 73,
+   "section": "nota que desglosa \"Revenue\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of intangible assets",
+   "lado": "revenue",
+   "page": 55,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 55,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Operating expenses (before intangible asset transactions and exceptional items)",
+   "lado": "expense",
+   "page": 55,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Exceptional operating expenses",
+   "lado": "expense",
+   "page": 55,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisation of intangible assets",
+   "lado": "expense",
+   "page": 55,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  }
+ ]
+}

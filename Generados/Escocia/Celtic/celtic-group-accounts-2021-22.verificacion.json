@@ -1,0 +1,206 @@
+{
+ "pdf": "Clubes/Escocia/Celtic/celtic-group-accounts-2021-22.pdf",
+ "md": "Clubes/Escocia/Celtic/celtic-group-accounts-2021-22.md",
+ "generado": "2026-10-20T19:05:16.208Z",
+ "estado": "ok",
+ "clubId": "celtic-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Revenue\" 88.235 cierra; además se suman 2 línea(s) fuera de ese total (29.029)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"Operating expenses (before intangible asset transactions and exceptional items)\" 91.728 cierra; además se suman 4 línea(s) fuera de ese total (19.307)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.509903313490213e-14
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 117.264 en este documento y 117.264 en celtic-group-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 75.216 en celtic-group-accounts-2020-21.pdf y 75.216 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (antes de su alta) (perimetro, \"-\"): aceptar, en celtic-plc-group-accounts-2024-25.pdf",
+  "duda de localizar ya contestada para el club (perimetro, \"Staff costs (Note 9)\"): aceptar, en celtic-group-accounts-2021-22.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Revenue\"): corregir sí, en celtic-group-accounts-2022-23.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Staff costs (Note 9)\"): aceptar, en celtic-group-accounts-2021-22.pdf",
+  "duda de extraer que no afecta la carga: El documento no separa salarios del plantel; L3516 es el total de sueldos del grupo."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 117.264,
+  "gastos": 111.035,
+  "financiero": -0.093,
+  "impuesto": -0.287,
+  "resultadoImpreso": 5.849,
+  "resultadoParaCargar": 5.849,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticketing",
+   "lado": "ingreso",
+   "M": 36.314,
+   "pagina": 71,
+   "linea": 3423,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Merchandise vouchers for season ticket holders",
+   "lado": "ingreso",
+   "M": 0.347,
+   "pagina": 71,
+   "linea": 3424,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Commercial / sponsorship",
+   "lado": "ingreso",
+   "M": 11.513,
+   "pagina": 71,
+   "linea": 3425,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Retail outlets and E-commerce",
+   "lado": "ingreso",
+   "M": 18.511,
+   "pagina": 71,
+   "linea": 3426,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Media rights",
+   "lado": "ingreso",
+   "M": 13.308,
+   "pagina": 71,
+   "linea": 3427,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Stadium operations",
+   "lado": "ingreso",
+   "M": 6.397,
+   "pagina": 71,
+   "linea": 3428,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 1.845,
+   "pagina": 71,
+   "linea": 3429,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Profit on disposal of intangible assets",
+   "lado": "ingreso",
+   "M": 29.029,
+   "pagina": 53,
+   "linea": 2557,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 53,
+   "linea": 2558,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses (before intangible asset transactions and exceptional items)",
+   "lado": "gasto",
+   "M": 91.728,
+   "pagina": 53,
+   "linea": 2553,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impairment of intangible assets and other prepaid costs",
+   "lado": "gasto",
+   "M": 7.235,
+   "pagina": 72,
+   "linea": 3491,
+   "origen": "nota que desglosa \"Exceptional operating expenses\""
+  },
+  {
+   "etiqueta": "Reversal of prior period impairment charges",
+   "lado": "gasto",
+   "M": -1.094,
+   "pagina": 72,
+   "linea": 3492,
+   "origen": "nota que desglosa \"Exceptional operating expenses\""
+  },
+  {
+   "etiqueta": "Settlement agreements on contract termination",
+   "lado": "gasto",
+   "M": 0.121,
+   "pagina": 72,
+   "linea": 3493,
+   "origen": "nota que desglosa \"Exceptional operating expenses\""
+  },
+  {
+   "etiqueta": "Amortisation of intangible assets",
+   "lado": "gasto",
+   "M": 13.045,
+   "pagina": 53,
+   "linea": 2556,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finance income",
+   "M": 0.876,
+   "linea": 2560
+  },
+  {
+   "etiqueta": "Finance expense",
+   "M": -0.969,
+   "linea": 2561
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax expense",
+   "M": -0.287,
+   "linea": 2563
+  }
+ ]
+}
