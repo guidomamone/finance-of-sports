@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 845 — Turquía en el sitio: Beşiktaş 13 años; Llaneros y Westerlo 2015 (2026-10-20)
+
+- Merge de Onboarding 5: alta de Turquía (`tr-superlig`) con Beşiktaş 2009-2011 y 2014-2023; Westerlo 2015 (18 meses); Llaneros 2025
+  (alta); Luzern 2023, St. Gallen 2021 y 2024, Lierse 2019, Patro Eisden 2014 y Lokeren-Temse 2021-2022.
+- Gestión de Matthias Hüppi (St. Gallen); 34 gestiones de cola en null por la regla sin-fuente.
+- Frenados nuevos: Beşiktaş 2006-2008 (varios tipos de cambio en el documento).
+
 ## Versión 844 — Chequeos de la auditoría y frenados resueltos (2026-10-20)
 
 * 325: `audit.js` suma `json-no-valida`, `json-aviso` y `json-js-desfasado` (avisos) y `archivo-pesado` cubre todo `Admin/*.md`;

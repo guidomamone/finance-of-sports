@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 292: cargar lo transcripto: Suiza, Países Bajos y Bélgica casi completos; quedan St. Gallen 2020, 2021 y 2024 (dudas de localizar en la cola, "¿la TV está dentro de Diverse Erträge?", y volver a correr sg6), Luzern 2023 (recargar: la 298 k2 ya está), Lierse SK 2019, Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022 (destrabados: 298 af y w2 en main), y después Beşiktaş y Colombia --> Onboarding 5
+* 292: cargar lo transcripto: quedan St. Gallen 2019 y 2022 (recargar) y 2020, Patro Eisden 2013 y 2015 (destrabados por la regla sin-fuente y la 298 b3), los años belgas que destraba la b3, Beşiktaş 2006-2008 (frenados por fx: Pipeline 7) y Colombia (Alianza FC, Tolima, Águilas Doradas: otra sesión con presupuesto) --> Onboarding 5
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
