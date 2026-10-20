@@ -31,7 +31,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 298: mejoras de script (x2, el chequeo de fidelidad que no mira cifras; g2, condicional) --> Pipeline
+* 298: mejoras de script: todo hecho salvo la g2 (condicional); lo nuevo entra por Admin/registros/frenados-por-script.jsonl --> Pipeline 6
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
