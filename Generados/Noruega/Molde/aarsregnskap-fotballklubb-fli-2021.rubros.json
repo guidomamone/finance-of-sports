@@ -1,0 +1,370 @@
+{
+  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2021.md",
+  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2021.pdf",
+  "club": "molde-no",
+  "year": 2021,
+  "generatedAt": "2026-10-20T20:35:02.631Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Medlemskontingent",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Medlemsinntekter/tilskudd\"",
+      "values": [
+        0.201905
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Egenandeler/deltakeravgift",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Medlemsinntekter/tilskudd\"",
+      "values": [
+        2.848714
+      ],
+      "glosa": "Copagos y cuotas de participación"
+    },
+    {
+      "label": "Markedsmidler NFF, NTF og UEFA",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Medlemsinntekter/tilskudd\"",
+      "values": [
+        69.306033
+      ],
+      "glosa": "Ingresos comerciales de NFF, NTF y UEFA"
+    },
+    {
+      "label": "Andre tilskudd",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Medlemsinntekter/tilskudd\"",
+      "values": [
+        13.975
+      ],
+      "glosa": "Otras subvenciones"
+    },
+    {
+      "label": "Inntekter Seriekamper",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Kamp- og billettinntekter\"",
+      "values": [
+        9.726591
+      ],
+      "glosa": "Ingresos por partidos de liga"
+    },
+    {
+      "label": "Inntekter E-Cup",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Kamp- og billettinntekter\"",
+      "values": [
+        1.368681
+      ],
+      "glosa": "Ingresos por competiciones europeas"
+    },
+    {
+      "label": "Oppgjør NM Cup",
+      "lado": "revenue",
+      "page": 26,
+      "section": "nota que desglosa \"Kamp- og billettinntekter\"",
+      "values": [
+        0.482351
+      ],
+      "glosa": "Liquidación de Copa de Noruega"
+    },
+    {
+      "label": "Avtale MF/sponsor",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        22.296227
+      ],
+      "glosa": "Convenios de patrocinio / MF"
+    },
+    {
+      "label": "Kiosksalg",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Andre driftsinntekter\"",
+      "values": [
+        1.021331
+      ],
+      "glosa": "Ventas de quiosco"
+    },
+    {
+      "label": "Andre driftsinntekter",
+      "lado": "revenue",
+      "page": 27,
+      "section": "nota que desglosa \"Andre driftsinntekter\"",
+      "values": [
+        3.39322
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Salg spillere/Utleie",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.11
+      ],
+      "glosa": "Venta y cesión de jugadores"
+    },
+    {
+      "label": "Administrasjon",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        2.014715
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Lønn spillere, trenere, støtteapparat og administrasjon",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Personalkostnader\"",
+      "values": [
+        77.727336
+      ],
+      "glosa": "Sueldos de jugadores, entrenadores, cuerpo técnico y administración"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Personalkostnader\"",
+      "values": [
+        11.540677
+      ],
+      "glosa": "Cargas sociales a cargo de la empresa"
+    },
+    {
+      "label": "Pensjonskostnad",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Personalkostnader\"",
+      "values": [
+        0.860954
+      ],
+      "glosa": "Gastos por planes de pensiones"
+    },
+    {
+      "label": "Andre ytelser",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Personalkostnader\"",
+      "values": [
+        0.209661
+      ],
+      "glosa": "Otras retribuciones al personal"
+    },
+    {
+      "label": "Utgifter treningsleir/privatkamper",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        0.710223
+      ],
+      "glosa": "Gastos de concentraciones y partidos amistosos"
+    },
+    {
+      "label": "Leie treningsbaner etc.",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        2.210237
+      ],
+      "glosa": "Alquiler de campos de entrenamiento y otros"
+    },
+    {
+      "label": "Sportsrekvisita",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        2.346866
+      ],
+      "glosa": "Material y suministros deportivos"
+    },
+    {
+      "label": "Medisinske tjenester og rekvisita",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        0.524437
+      ],
+      "glosa": "Servicios y suministros médicos"
+    },
+    {
+      "label": "Andre sportslige kostnader",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Trening og utstyr\"",
+      "values": [
+        2.884301
+      ],
+      "glosa": "Otros gastos deportivos"
+    },
+    {
+      "label": "Baneleie serie- og cupkamper",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        0.075864
+      ],
+      "glosa": "Alquiler de campos para partidos de liga y copa"
+    },
+    {
+      "label": "Avgift Norges Fotballforbund",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        0.518483
+      ],
+      "glosa": "Tasas de la Federación Noruega de Fútbol"
+    },
+    {
+      "label": "Annonsering seriekamper",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        0.320571
+      ],
+      "glosa": "Publicidad de partidos de liga"
+    },
+    {
+      "label": "Utgifter billettsalg",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        0.294937
+      ],
+      "glosa": "Gastos por venta de entradas"
+    },
+    {
+      "label": "Andre arrangementskostnader",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Egne arrangement\"",
+      "values": [
+        1.47317
+      ],
+      "glosa": "Otros gastos de organización de eventos"
+    },
+    {
+      "label": "Utgifter cup kamper",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Andres arrangement\"",
+      "values": [
+        0.290939
+      ],
+      "glosa": "Gastos de partidos de copa"
+    },
+    {
+      "label": "Utgifter e-cup",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Andres arrangement\"",
+      "values": [
+        8.8883
+      ],
+      "glosa": "Gastos de competiciones europeas"
+    },
+    {
+      "label": "Utgifter andre arrangement",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Andres arrangement\"",
+      "values": [
+        0.083435
+      ],
+      "glosa": "Gastos de otros eventos"
+    },
+    {
+      "label": "Reisekostnader seriekamper",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Andres arrangement\"",
+      "values": [
+        3.785299
+      ],
+      "glosa": "Gastos de desplazamiento para partidos de liga"
+    },
+    {
+      "label": "Kjøp og leie spillere",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        2.137767
+      ],
+      "glosa": "Adquisición y cesión de jugadores"
+    },
+    {
+      "label": "Utgifter Prosjekt/Tiltak",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Andre driftskostnader\"",
+      "values": [
+        0.554328
+      ],
+      "glosa": "Gastos de proyectos e iniciativas"
+    },
+    {
+      "label": "Andre driftskostnader",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Andre driftskostnader\"",
+      "values": [
+        4.629079
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Varekjøp og andre kostnader kiosker",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Andre driftskostnader\"",
+      "values": [
+        0.59175
+      ],
+      "glosa": "Aprovisionamientos y otros gastos de quioscos"
+    },
+    {
+      "label": "Anleggskostnader",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.25044
+      ],
+      "glosa": "Costes de instalaciones e infraestructura"
+    },
+    {
+      "label": "Avskrivninger",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        18.458514
+      ],
+      "glosa": "Amortizaciones"
+    }
+  ]
+}

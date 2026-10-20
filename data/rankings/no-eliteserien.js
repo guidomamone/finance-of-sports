@@ -39,6 +39,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2023 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"molde-no", revenue:30.96, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2023",
+        mix:[["Cuotas Sociales",0.025],["Comercial / Sponsors",2.024],["Estadio",1.679],["Televisión",24.837],["Premios por competencias",0.836],["Venta de Jugadores",0.117],["Otros ingresos",1.443]] },
       { id:"viking-no", revenue:15.856, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2023",
         mix:[["Comercial / Sponsors",5.562],["Estadio",1.814],["Televisión",2.937],["Venta de Jugadores",3.596],["Otros ingresos",1.946]] },
@@ -54,6 +57,9 @@ window.RANKINGS["no-eliteserien"] = {
       { id:"viking-no", revenue:16.561, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2022",
         mix:[["Comercial / Sponsors",5.464],["Estadio",1.581],["Televisión",1.427],["Venta de Jugadores",3.793],["Otros ingresos",4.295]] },
+      { id:"molde-no", revenue:15.365, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2022",
+        mix:[["Comercial / Sponsors",2.191],["Estadio",1.571],["Premios por competencias",0.816],["Venta de Jugadores",0.015],["Otros ingresos",10.772]] },
       { id:"sarpsborg08-no", revenue:10.794, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2022",
         mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.658],["Estadio",0.535],["Televisión",0.892],["Venta de Jugadores",4.54],["Otros ingresos",1.107]] },
@@ -63,6 +69,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2021 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"molde-no", revenue:14.143, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2021",
+        mix:[["Cuotas Sociales",0.023],["Comercial / Sponsors",2.528],["Estadio",1.158],["Televisión",7.858],["Premios por competencias",0.155],["Venta de Jugadores",0.012],["Otros ingresos",2.408]] },
       { id:"viking-no", revenue:14.081, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2021",
         mix:[["Comercial / Sponsors",5.516],["Estadio",0.987],["Televisión",2.613],["Venta de Jugadores",2.218],["Otros ingresos",2.747]] },
@@ -75,6 +84,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2020 Eliteserien","lang":"en","at":"2026-09-30","n":16},
     clubs: [
+      { id:"molde-no", revenue:25.21, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2020",
+        mix:[["Cuotas Sociales",0.029],["Estadio",1.079],["Televisión",21.407],["Premios por competencias",0.077],["Venta de Jugadores",0.014],["Otros ingresos",2.605]] },
       { id:"viking-no", revenue:13.101, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2020",
         mix:[["Comercial / Sponsors",4.689],["Estadio",0.575],["Televisión",1.736],["Venta de Jugadores",2.829],["Otros ingresos",3.272]] },
@@ -87,6 +99,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2019 Eliteserien","lang":"en","at":"2026-09-28","n":16},
     clubs: [
+      { id:"molde-no", revenue:13.81, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2019",
+        mix:[["Cuotas Sociales",0.025],["Comercial / Sponsors",5.437],["Estadio",1.49],["Televisión",4.958],["Premios por competencias",0.331],["Otros ingresos",1.568]] },
       { id:"viking-no", revenue:11.761, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2019",
         mix:[["Comercial / Sponsors",5.288],["Estadio",1.453],["Televisión",1.709],["Venta de Jugadores",0.1],["Otros ingresos",3.211]] },
@@ -102,12 +117,18 @@ window.RANKINGS["no-eliteserien"] = {
       { id:"sarpsborg08-no", revenue:19.261, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2018",
         mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",3.419],["Estadio",1.243],["Televisión",2.007],["Premios por competencias",6.16],["Venta de Jugadores",4.927],["Otros ingresos",1.442]] },
+      { id:"molde-no", revenue:11.975, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2018",
+        mix:[["Cuotas Sociales",0.027],["Comercial / Sponsors",4.298],["Estadio",1.553],["Televisión",4.633],["Premios por competencias",0.214],["Venta de Jugadores",0.002],["Otros ingresos",1.248]] },
     ],
   },
   2017: {
     leagueSize: 16,
     wiki: {"t":"2017 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"molde-no", revenue:11.443, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2017",
+        mix:[["Cuotas Sociales",0.031],["Comercial / Sponsors",4.674],["Estadio",2.119],["Televisión",3.161],["Premios por competencias",0.004],["Otros ingresos",1.455]] },
       { id:"viking-no", revenue:10.061, reportType:"official_balance_sheet",
         sourceId:"viking-no-aarsregnskap-viking-fotball-as-2017",
         mix:[["Comercial / Sponsors",4.817],["Estadio",0.92],["Televisión",1.342],["Venta de Jugadores",1.606],["Otros ingresos",1.375]] },
@@ -129,6 +150,9 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2015 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
     clubs: [
+      { id:"molde-no", revenue:13.215, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2015",
+        mix:[["Cuotas Sociales",0.026],["Comercial / Sponsors",1.164],["Estadio",2.108],["Televisión",7.564],["Premios por competencias",0.645],["Otros ingresos",1.709]] },
       { id:"sarpsborg08-no", revenue:5.242, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2015",
         mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",2.087],["Estadio",0.62],["Televisión",0.739],["Premios por competencias",0.144],["Venta de Jugadores",0.743],["Otros ingresos",0.87]] },
@@ -138,9 +162,21 @@ window.RANKINGS["no-eliteserien"] = {
     leagueSize: 16,
     wiki: {"t":"2014 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"molde-no", revenue:13.53, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2014",
+        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",4.974],["Estadio",2.791],["Televisión",3.501],["Premios por competencias",0.099],["Otros ingresos",2.131]] },
       { id:"sarpsborg08-no", revenue:6.076, reportType:"official_balance_sheet",
         sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2014",
         mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",2.063],["Estadio",0.737],["Televisión",0.83],["Venta de Jugadores",1.27],["Otros ingresos",1.142]] },
+    ],
+  },
+  2013: {
+    leagueSize: 16,
+    wiki: {"t":"2013 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
+    clubs: [
+      { id:"molde-no", revenue:15.189, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2013",
+        mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",5.73],["Estadio",3.339],["Televisión",3.672],["Premios por competencias",0.196],["Otros ingresos",2.217]] },
     ],
   },
   2012: {
@@ -150,6 +186,15 @@ window.RANKINGS["no-eliteserien"] = {
       { id:"fredrikstad-no", revenue:4.143, reportType:"official_balance_sheet",
         sourceId:"fredrikstad-no-aarsregnskap-fotballklubb-fli-2012",
         mix:[["Cuotas Sociales",0.016],["Otras secciones deportivas",0.011],["Otros ingresos",4.117]] },
+    ],
+  },
+  2009: {
+    leagueSize: 16,
+    wiki: {"t":"2009 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
+    clubs: [
+      { id:"molde-no", revenue:9.555, reportType:"official_balance_sheet",
+        sourceId:"molde-no-aarsregnskap-fotballklubb-fli-2009",
+        mix:[["Cuotas Sociales",0.04],["Comercial / Sponsors",3.481],["Estadio",3.622],["Televisión",1.467],["Otros ingresos",0.945]] },
     ],
   },
 };
