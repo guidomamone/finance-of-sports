@@ -56,7 +56,7 @@ suyo); si Guido pidió uno explícito (`/auditoria escala`), ese manda.
 
 | Eje | Qué mirar, que el script no puede |
 |---|---|
-| `datos` | **Se corre POR PAÍS, no sobre el proyecto entero.** A qué país le toca: el que tenga la fecha más vieja (o "nunca") en el campo **Última auditoría de datos** de su `Admin/sourcing/_indice/<País>.md` (mismo mecanismo que usa `Admin/sourcing/README.md` para sourcing, ver su REGLA 5). Dentro del país elegido: los ejercicios con catch-all alto o sin verificación, contra su `.md` transcripto (NO contra el PDF). ¿La categorización dice algo, o está todo en "Otros"? ¿El criterio contable es el mismo que en clubes parecidos del mismo país? Al terminar, actualizar esa fecha a la de hoy. **`brandColor` no es parte de este eje**: se verifica una sola vez, al onboardear el club (`club-or-year-onboarding/club-nuevo.md`, chequeo contra el escudo), no en cada auditoría periódica. **Perímetro decidido por Claude:** `node tools/perimetro-senales.mjs --auditar-a2 <carpeta del scratchpad>` lista los documentos cuyo perímetro (individual o consolidado) decidió el paso A2 en una corrida real; los de este país los revisa un subagente con el `instruccion.txt` que deja la tool (grupo o sociedad sola, con cita del `.md`). Un error se corrige con un ajuste `perimetro` del documento y abre un punto en `Admin/TODO.md` para revisar los pesos o el umbral de A2, que se miden otra vez con `Admin/mediciones/perimetro-a2-medicion.txt`. |
+| `datos` | **Se corre POR PAÍS, no sobre el proyecto entero.** A qué país le toca: el que tenga la fecha más vieja (o "nunca") en el campo **Última auditoría de datos** de su `Admin/sourcing/_indice/<País>.md` (mismo mecanismo que usa `Admin/sourcing/README.md` para sourcing, ver su REGLA 5). Dentro del país elegido: los ejercicios con catch-all alto o sin verificación, contra su `.md` transcripto (NO contra el PDF). ¿La categorización dice algo, o está todo en "Otros"? En una carga nueva, ¿el criterio contable es el mismo que en clubes parecidos del mismo país? Si difiere, se marca para decidirlo (un criterio de datos va a Guido). Lo ya cargado no se reabre ni se recategoriza por consistencia entre clubes, salvo un error claro. Al terminar, actualizar esa fecha a la de hoy. **`brandColor` no es parte de este eje**: se verifica una sola vez, al onboardear el club (`club-or-year-onboarding/club-nuevo.md`, chequeo contra el escudo), no en cada auditoría periódica. **Perímetro decidido por Claude:** `node tools/perimetro-senales.mjs --auditar-a2 <carpeta del scratchpad>` lista los documentos cuyo perímetro (individual o consolidado) decidió el paso A2 en una corrida real; los de este país los revisa un subagente con el `instruccion.txt` que deja la tool (grupo o sociedad sola, con cita del `.md`). Un error se corrige con un ajuste `perimetro` del documento y abre un punto en `Admin/TODO.md` para revisar los pesos o el umbral de A2, que se miden otra vez con `Admin/mediciones/perimetro-a2-medicion.txt`. |
 | `escala` | Ver `.claude/skills/escala-finance-of-sports/SKILL.md`: tiene el mapa completo de puntos calientes (con el comando que mide cada uno y el volumen en el que se rompe) y la metodología para actualizarlo. Es una skill aparte porque el mapa es grande y cambia con cada sesión de sourcing y onboarding. |
 | `codigo` | Con el sitio levantado: consola limpia, re-render que no duplica listeners, charts que se destruyen, `loadClubData()` con un club que falla, toggles combinados (moneda × formato × club × año). |
 | `docs` | Qué dice dos veces lo mismo, qué se lee en cada sesión sin usarse, qué está desactualizado respecto de los datos (`node tools/generate-club-index.js --check`). |
@@ -182,12 +182,10 @@ en memoria.** Cualquier verificación que se escriba en el navegador tiene que f
 
 ## Cómo mantener este skill
 
-Esta skill dice cómo se hace hoy, no cómo se llegó: sin versiones, fechas de decisión ni contadores
-(la historia va a `Admin/CHANGELOG.md`; los números se piden con `node tools/audit.js`,
-`node tools/estado.mjs` o `Admin/ESTADO-clubes.md`).
+Sin historia ni contadores: ver `CLAUDE.md`.
 
-Si una auditoría encuentra una clase de problema que no está en ningún eje, agregá el eje o
-extendelo. Si un chequeo terminó siendo automatizable, movelo a `tools/audit.js` y sacalo de acá:
+Si una auditoría encuentra una clase de problema que no está en ningún eje, proponele a Guido agregar el eje o
+extenderlo (texto exacto, y espera su ok). Si un chequeo terminó siendo automatizable, el chequeo va a `tools/audit.js` y se propone sacarlo de acá:
 este archivo es para el juicio, no para lo que una máquina hace mejor. Si un falso positivo costó más
 de una vez entenderlo, va a la sección 6. Si el archivo crece tanto que no se lee en dos minutos, es
 señal de que algo debería vivir en `Admin/CONVENCIONES.md` o `Admin/CONVENCIONES-DATOS.md` (una

@@ -22,7 +22,7 @@ permanentes. Esto es el procedimiento.
 |---|---|---|
 | 1 | `Admin/ESTADO.md`: qué hay armado hoy | **siempre** |
 | 1b | `Admin/ESTADO-clubes.md`: qué hay cargado de cada club (generado, "QUÉ ES REAL POR CLUB") | si necesitás el detalle club por club |
-| 2 | `Admin/CONVENCIONES.md`: reglas de proceso | **siempre** |
+| 2 | `Admin/CONVENCIONES.md`: reglas de proceso | cuando la skill de la tarea lo pide |
 | 2b | `Admin/TODO.md`: qué falta hacer, en orden de prioridad | NO al arrancar: cuando hay que elegir qué sigue, cuando Guido lo pide, o para agregar/borrar un punto |
 | 2c | `Admin/CONVENCIONES-DATOS.md`: reglas de datos | si cargás o corregís datos de un club |
 | 3 | `Admin/ARQUITECTURA.md` | si tocás el motor de Finanzas o los scripts que escriben `data/` |
@@ -39,15 +39,13 @@ permanentes. Esto es el procedimiento.
   consulta buscando una palabra puntual, nunca de corrido.
 - `Admin/CHANGELOG.md` (muy pesado): contesta QUÉ cambió y CUÁNDO. Mismo criterio, consulta puntual.
 
-Con los puntos 1 y 2 ya podés trabajar. Todo lo demás es a demanda.
+Con el punto 1 ya podés trabajar. Todo lo demás es a demanda.
 
 ---
 
 ## 2. Antes de tocar nada: preguntar, no asumir
 
-Las reglas de `Admin/CONVENCIONES.md` que dicen "pedido explícito de Guido" no se negocian sin preguntarle.
-Si una decisión de esta sesión contradice una de esas, preguntá primero y actualizá el archivo
-después, en la misma sesión.
+Las reglas «pedido explícito de Guido» de `Admin/CONVENCIONES.md` no se negocian sin preguntarle (ahí está también qué hacer si una decisión nueva contradice una).
 
 Si al leer un documento fuente queda una pregunta genuina (algo que no se puede inferir con confianza
 de la fuente ni de los criterios ya documentados), va a `Admin/dudas-por-club.md`, no a un comentario
@@ -61,11 +59,7 @@ directo a los clubes.
 El sitio es estático (HTML + CSS + JS, sin build, sin backend). Usá `preview_start` con la config de
 `.claude/launch.json`, nunca un server por Bash.
 
-`window.ASSET_V` (arriba de los `<script src>` en `index.html`) es la versión de los assets propios.
-**Si tocás cualquier archivo de `js/` o `data/` y el navegador te sigue mostrando lo viejo, subí
-ASSET_V** a un valor que nunca se haya pedido antes (ej. `118a`), navegá, confirmá, y dejalo en un
-valor limpio al terminar. El caché de este entorno es agresivo y NO se rinde con reload, Cmd+Shift+R,
-pestaña nueva ni cambio de puerto: cambiar la URL exacta es lo único que funciona.
+Si tocás `js/` o `data/` y el navegador te muestra lo viejo: subí `ASSET_V` (la constante y cada `?v=`) y navegá con `?cb=<algo nuevo>`. La regla y las trampas del navegador de preview: `Admin/PANTALLA.md`, «CACHE DE ASSETS» y «Trampas del navegador de preview».
 
 ---
 
@@ -79,7 +73,7 @@ tipo de cambio caiga en un rango plausible).
 Por qué importa: los clubes se cargan por demanda, así que una carga normal de la página audita SOLO
 Boca. Sin `auditAll()`, un error en un club que nadie está mirando es invisible.
 
-**Correlo siempre antes de pushear algo que toque datos.** El número de clubes y de checks sube con
+**Correlo siempre antes de dar por cerrado algo que toque datos.** El número de clubes y de checks sube con
 cada sesión, así que no se compara contra un total: lo que importa es que los "no cierran" y los
 "warnings" no crezcan sin explicación. Un "no cierra" nuevo que no tenga ya una nota en su
 evidencia (`Admin/carga-clubes/<clubId>.md`, el título de ese ejercicio) es el que amerita parar.
@@ -92,13 +86,12 @@ grande), desgloses que se contradicen con su propia fila, catch-all dominante, r
 Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Lo que importa es que siga en 0 P0 y
 0 P1; el conteo de P2 y P3 sube y baja con cada sesión. **También chequea que los 4 generadores estén
 al día** (`checkGenerados()`, P1): rankings, `fuentes.html` y sus páginas de club, el índice de clubes
-y el índice de `Admin/sourcing/README.md`. Si tocaste `js/` o `data/` y subiste `ASSET_V`, hay que regenerar
-`fuentes.html` y sus páginas de club, porque ese generador LEE `ASSET_V` de `index.html`.
+y el índice de `Admin/sourcing/README.md`.
 
 Para una auditoría DE RUTINA (no la verificación de un cambio puntual: el chequeo periódico de que
 el proyecto entero está sano y va a seguir estándolo) el procedimiento completo está en
 `.claude/skills/auditoria-finance-of-sports/SKILL.md`. Cadencia sugerida: cada ~5 clubes nuevos,
-antes de un push grande, o cuando algo se sienta raro sin un síntoma concreto que perseguir.
+antes de un cambio grande, o cuando algo se sienta raro sin un síntoma concreto que perseguir.
 
 REGLA: cualquier verificación total tiene que pasar por `computeYearGeneric()`, el motor real. NUNCA
 reimplementar la cascada del resultado por afuera — se probó, y una fórmula simplificada tiró 12
@@ -108,22 +101,7 @@ falsos positivos porque no contemplaba `nonCash`, `profitOnPlayerSales`, `assetS
 
 ## 5. Antes de terminar: documentar
 
-Si hubo cualquier cambio real (datos, features, estructura, copy), sin que Guido lo pida:
-
-1. **`Admin/ESTADO.md`**: es un snapshot, no un log. Si algo que decía ya no es cierto, se reemplaza, no
-   se apila una línea nueva al lado de la vieja. El detalle "QUÉ ES REAL POR CLUB" vive en
-   `Admin/ESTADO-clubes.md` y se GENERA (`node tools/generate-club-index.js`), no se escribe.
-2. **`Admin/TODO.md`**: BORRAR lo resuelto (no marcarlo "RESUELTO" y dejarlo, que es como la lista vieja
-   terminó con la mitad de los puntos siendo cosas ya hechas), agregar lo que quedó pendiente,
-   reordenar si cambió la prioridad. Los números son identificadores estables, no prioridad.
-3. **`Admin/CHANGELOG.md`**: SIEMPRE una entrada nueva, aunque el cambio sea chico.
-4. **`Admin/finance-of-sports-project.md`**: SOLO si el cambio amerita contexto narrativo (el porqué, el proceso de
-   investigación, un bug real con su causa raíz). Un ajuste de UI no lo amerita.
-5. **Si se decidió una regla nueva o se contradijo una vieja**: va a `Admin/CONVENCIONES.md` (proceso), `Admin/CONVENCIONES-DATOS.md`
-   (datos) o `Admin/PANTALLA.md` (pantalla y código).
-
-No dupliques la to-do list en `Admin/CHANGELOG.md` ni en `Admin/finance-of-sports-project.md`: la lista oficial vive sólo en
-`Admin/TODO.md`.
+Con cualquier cambio real, sin que Guido lo pida: lo que dice `CLAUDE.md`, «Antes de terminar la sesión» (en un worktree, la nota `Admin/sesiones/<rama>.md` en lugar de tocar TODO, CHANGELOG y ESTADO: ver `worktree.md`). Si se decidió una regla nueva o se contradijo una vieja, va a `Admin/CONVENCIONES.md` (proceso), `Admin/CONVENCIONES-DATOS.md` (datos) o `Admin/PANTALLA.md` (pantalla y código).
 
 **SI TOCASTE DATOS DE UN CLUB, HAY ARCHIVOS GENERADOS QUE REGENERAR** (`node tools/audit.js` lo
 chequea como P1). `cargar.mjs --escribir`, `alta-club.mjs` y `lote.mjs --cargar` ya los corren solos
@@ -146,12 +124,7 @@ página de fuentes.
 ## 6. Git: la regla del proyecto
 
 - **`git commit` local: libre.** Después de cada chunk verificado, sin preguntar.
-- **`git push`: SIEMPRE hay que pedirle permiso explícito a Guido, cada vez.** No importa cuánto
-  trabajo se acumuló ni qué tan verificado esté. Un "dale" general o pasar a la tarea siguiente NO es
-  autorización.
-
-Por qué: el repo está conectado a Netlify con deploy automático al pushear a `main`, y el plan es el
-free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
+- **`git push`: no se hace, no se pide y no se menciona.** El push a `main` es un deploy automático en Netlify y lo decide y lo hace Guido por su cuenta. Un commit sin publicar se dice «commiteado» y nada más.
 
 ---
 
@@ -193,7 +166,7 @@ free tier (~25 deploys/mes). Un commit local no dispara nada; un push sí.
 
 ## Cómo mantener este skill
 
-Si en una sesión aparece un paso de arranque, de verificación o de cierre que no está acá, agregalo.
-Si un paso de acá resultó innecesario, sacalo. Este archivo tiene que poder leerse entero en un
+Si aparece un paso de arranque, de verificación o de cierre que no está acá, proponele a Guido el texto exacto y esperá su ok.
+Si un paso resultó innecesario, proponé sacarlo. Este archivo tiene que poder leerse entero en un
 minuto: si crece mucho, es señal de que algo debería vivir en `Admin/CONVENCIONES.md` (una regla) o en
 `Admin/ARQUITECTURA.md` (cómo funciona algo), no acá (qué hacer y en qué orden).

@@ -269,23 +269,21 @@ Formato simplificado.
 4. Si el eje de una auditoría de rutina (`auditoria-finance-of-sports`) es `escala`, el reporte sigue
    el formato de esa skill; el contenido de su sección "Eje de juicio: escala" es esta sección 2.
 5. Guardá el reporte en `auditorias/<fecha>-escala.md` (con el sufijo `-escala`, porque puede
-   coincidir con otra auditoría del mismo día) y actualizá esta skill con lo que cambió en las reglas
+   coincidir con otra auditoría del mismo día) y proponele a Guido el cambio a esta skill con lo que cambió en las reglas
    (no con los números ni con la historia: eso va al reporte y a `Admin/CHANGELOG.md`).
 
 ---
 
 ## Cómo mantener esta skill
 
-- **Esta skill dice cómo se hace hoy, no cómo se llegó.** Un hallazgo resuelto no queda como fila con
-  su fecha o su versión: se borra, o queda como la regla vigente en una línea (por ejemplo "el
-  buscador tiene tope de resultados") si evita que alguien reintroduzca el problema. Los números se
-  miden con el comando de la fila, no se escriben.
-- **Cuando aparece un cuello nuevo**, agregalo a la categoría que corresponda (A a I) con tres datos
+- Sin historia ni contadores: ver `CLAUDE.md`. Un hallazgo resuelto se borra, o queda como la regla vigente en una línea (por
+  ejemplo "el buscador tiene tope de resultados") si evita que alguien reintroduzca el problema.
+- **Cuando aparece un cuello nuevo**, proponé agregarlo a la categoría que corresponda (A a I) con tres datos
   mínimos: qué es, cómo se mide (el comando) y a qué volumen se rompe o qué hacer. Si no encaja en
   ninguna categoría, es señal de que el criterio de la sección 1 tiene un hueco: ampliá el criterio,
   no solo la lista.
-- **Cuando un hallazgo de acá se vuelve chequeable en código**, movelo a `checkEscala()` en
-  `tools/audit.js` y sacalo de esta lista (o dejalo con una línea "automatizado, ver audit.js"). Un
+- **Cuando un hallazgo de acá se vuelve chequeable en código**, el chequeo va a `checkEscala()` en
+  `tools/audit.js` y se propone sacarlo de esta lista (o dejalo con una línea "automatizado, ver audit.js"). Un
   cuello que un script detecta solo no necesita vivir en juicio humano.
 - Esta skill asume que `auditoria-finance-of-sports` existe y es el procedimiento compartido de los
   cinco ejes. Si ese procedimiento cambia (formato de reporte, severidades), esta skill no necesita

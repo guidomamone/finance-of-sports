@@ -1,6 +1,6 @@
 ---
 name: club-data-mapping
-description: Supuestos y patrones para mapear el balance/presupuesto NATIVO de un club de fútbol (categorías propias del documento, ej. "Generales/Específicos/Diversos" de Racing, o las 5 categorías de River) al esquema compartido del sitio finance-of-sports (normalizedCategory de data/category-map.js, revenueLines/expenseLines, meta fields). Usar SIEMPRE que se cargue un balance o presupuesto nuevo, de un club ya existente (un ejercicio que faltaba) o de un club completamente nuevo, antes de decidir cómo categorizar cada línea o cómo convertir a USD. El objetivo es no reinventar estos criterios cada vez: si una decisión de esta sesión contradice lo que dice este skill, o aparece un caso que el skill no cubre, actualizar el skill al terminar (ver "Cómo mantener este skill" al final). También usar para revisar la cola de categorización del pipeline (etapa 7) o decidir a qué normalizedCategory va un rubro que nadie categorizó. Los casos de tipos de cambio y monedas, formato de pantalla (Formato simplificado, `grossDebt`), PDFs difíciles (escaneos, tablas rotadas, filas que no concilian) y casos por país o formato de documento están en `referencia/`: el índice de este archivo dice cuándo leer cada uno.
+description: Supuestos y patrones para mapear el balance/presupuesto NATIVO de un club de fútbol (categorías propias del documento, ej. "Generales/Específicos/Diversos" de Racing, o las 5 categorías de River) al esquema compartido del sitio finance-of-sports (normalizedCategory de data/category-map.js, revenueLines/expenseLines, meta fields). Usar SIEMPRE que se cargue un balance o presupuesto nuevo, de un club ya existente (un ejercicio que faltaba) o de un club completamente nuevo, antes de decidir cómo categorizar cada línea o cómo convertir a USD. El objetivo es no reinventar estos criterios cada vez: si una decisión de esta sesión contradice lo que dice este skill, o aparece un caso que el skill no cubre, proponerle a Guido el cambio al terminar (ver "Cómo mantener este skill" al final). También usar para revisar la cola de categorización del pipeline (etapa 7) o decidir a qué normalizedCategory va un rubro que nadie categorizó. Los casos de tipos de cambio y monedas, formato de pantalla (Formato simplificado, `grossDebt`), PDFs difíciles (escaneos, tablas rotadas, filas que no concilian) y casos por país o formato de documento están en `referencia/`: el índice de este archivo dice cuándo leer cada uno.
 ---
 
 # Mapeo de formato-club a formato-sitio
@@ -183,10 +183,9 @@ mano. `--relevant` filtra a las tablas con palabra clave (una ayuda de dónde mi
 ## 7. Atribución de gestión: solo si estás seguro
 
 `fiscalYearMeta[year].gestionId` y las entradas de `gestionesByClub` son documentación, no algo que el motor use para filtrar el
-selector "Año a año" (lee directo `Object.keys(fiscalYearMeta)`). Si no podés confirmar con confianza quién presidía el club en ese
-ejercicio (Racing 2009-2011, época de fideicomiso/quiebra sin presidencia electa clara), dejá `gestionId: null` y NO agregues una
-entrada a `gestionesByClub`. El año sigue visible en "Año a año", solo no participa de "Por gestión"/"Comparar Gestiones". Mejor un
-año sin gestión que una gestión inventada.
+selector "Año a año" (lee directo `Object.keys(fiscalYearMeta)`). Cuándo una gestión queda en `null` y cómo se busca:
+`Admin/CONVENCIONES-DATOS.md`, «una gestión (presidente) sin fuente pública queda en null». Con `null`, el año sigue visible en
+"Año a año", solo no participa de "Por gestión"/"Comparar Gestiones". Mejor un año sin gestión que una gestión inventada.
 
 ## 11. Pedir ayuda a Guido para leer algo ilegible: siempre página + fila + columna exactos
 
@@ -224,16 +223,16 @@ exacto contra el `value` de la fila padre. Un desglose mal armado puede pasar `v
 
 ## Cómo mantener este skill
 
-Se lee UNA VEZ al empezar a mapear un balance/presupuesto nuevo, y se ACTUALIZA al terminar la sesión si:
-- Apareció un rubro que no encajaba limpio en la tabla de la sección 1: agregalo con el criterio que usaste.
-- Tomaste una decisión que contradice algo de este skill: actualizá la sección y explicá por qué el caso nuevo justificaba
+Se lee UNA VEZ al empezar a mapear un balance/presupuesto nuevo, y al terminar la sesión se le PROPONE a Guido un cambio (texto exacto, y espera su ok) si:
+- Apareció un rubro que no encajaba limpio en la tabla de la sección 1: proponé agregarlo con el criterio que usaste.
+- Tomaste una decisión que contradice algo de este skill: proponé actualizar la sección y explicá por qué el caso nuevo justificaba
   desviarse (no borres el criterio viejo sin más, salvo que haya quedado obsoleto).
 - Encontraste un club con una estructura genuinamente distinta (otro país, otra moneda, otro régimen contable): evaluá si necesita su
   propia sección o un skill separado.
 - Aprendiste algo nuevo sobre CÓMO leer un PDF fuente (otra trampa de escaneo, otra fila engañosa): va en `referencia/leer-pdf.md` (o en la sección 11 de este archivo), con el
   documento/página exacto donde se encontró.
 
-No hace falta pedirle permiso a Guido para estas actualizaciones menores. Un cambio al texto de este skill se le muestra antes.
+Todo cambio al texto de este skill, también los menores, se le muestra antes a Guido y espera su ok.
 
 **Este es un skill de criterio, no un changelog.** Al agregar o editar una sección:
 
