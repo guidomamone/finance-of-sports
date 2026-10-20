@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 851 — Beşiktaş 2018: nota con subtotal (2026-10-20) [besiktas-tr]
+
+- `tools/verificar.mjs`: un renglón que sus hijas directas no cierran se busca en una nota con subtotal (Beşiktaş 2018, nota 18).
+  Aprobado por la Auditora. Falta recargar solo 2018 con un ajuste `desglose` -98157 (errata del documento).
+
 ## Versión 850 — Beşiktaş 2006-2008 destrabados (2026-10-20) [292 · besiktas-tr]
 
 - `tools/alta-club.mjs` reconoce la fecha de un tipo de cambio con meses en turco, fechas repetidas por columna y bloques con fecha:

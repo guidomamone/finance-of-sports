@@ -26,7 +26,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **A. Cerrar lo abierto (en marcha)**
 * 261: Noruega, Molde FLI 2008-2024 (lote 116, corriendo) --> Onboarding 4
-* Frenados por script (`Admin/registros/frenados-por-script.jsonl`): Beşiktaş 2018 (nota 18, espera a la Auditora) --> Pipeline 7
 * 255 fase 2: aplicar tus respuestas; las propuestas de skill te llegan para el ok de una sola lectura --> Docs 1
 
 **B. Bases que después cuestan caro cambiar (con todo mergeado y sin worktrees abiertos)**
@@ -37,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 238: Latinoamérica, 161 documentos transcriptos y validados (~US$ 50, en lotes de 5 a 8 clubes; espera tu ok y presupuesto)
 * 261: lo que queda: Reino Unido (casos del lote 106 de Sunderland y Wolves, volver a correr el 98, 4 escaneos sin estado de resultados, línea del auditor de Celtic) y Noruega (Fredrikstad, Viking FLI 2008-2016)
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI con los `.md` que ya hay (criterio decidido; falta implementar), después de Noruega
-* 292: lo que queda: Bélgica (Lierse Kempenzonen 2018-2021, alta nueva con 7 casos en cola; La Louvière 2018-2024) y Colombia (Alianza FC, alta; Tolima, La Equidad, Bucaramanga y Águilas Doradas, varios sin estado de resultados en el `.md`); Beşiktaş 2006-2008 (destrabados: 2007 y 2008 por alta-club, 2006 con ajuste fx 1,5357)
+* 292: lo que queda: Bélgica (Lierse Kempenzonen 2018-2021, alta nueva con 7 casos en cola; La Louvière 2018-2024) y Colombia (Alianza FC, alta; Tolima, La Equidad, Bucaramanga y Águilas Doradas, varios sin estado de resultados en el `.md`); Beşiktaş 2006-2008 (destrabados: 2007 y 2008 por alta-club, 2006 con ajuste fx 1,5357) y recargar 2018 (ajuste `desglose` -98157) --> Onboarding 4, después de Molde
 * 165 c: altas de los países nuevos, solo con documentos ya transcriptos
 
 **D. Pantallas y distribución (después del 246)**
