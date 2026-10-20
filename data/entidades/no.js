@@ -271,6 +271,58 @@ Object.assign(window.CLUB_ENTIDADES, {
  "valerenga-no": {
   "cargas": [
    {
+    "anio": 2022,
+    "entidad": "valerenga-fotball-as",
+    "perimetro": "suma",
+    "nota": {
+     "es": "Suma de dos entidades que no consolidan: Vålerenga Fotball AS (ingresos comerciales) y Vålerenga Fotball Elite (sueldos y jugadores). El AS le transfiere al Elite el dinero para pagarlos (64 M NOK); esa transferencia está en las dos cuentas y se cuenta una sola vez. El resultado es la suma de los dos resultados impresos.",
+     "en": "Sum of two entities that do not consolidate: Vålerenga Fotball AS (commercial income) and Vålerenga Fotball Elite (wages and players). The AS transfers the money to the Elite to pay them (NOK 64 M); that transfer appears in both accounts and is counted once. The result is the sum of the two printed results."
+    },
+    "fuente": {
+     "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2022.md",
+     "linea": 70
+    }
+   },
+   {
+    "anio": 2022,
+    "entidad": "valerenga-fotball-elite",
+    "perimetro": "suma",
+    "nota": {
+     "es": "Suma de dos entidades que no consolidan: Vålerenga Fotball AS (ingresos comerciales) y Vålerenga Fotball Elite (sueldos y jugadores). El AS le transfiere al Elite el dinero para pagarlos (64 M NOK); esa transferencia está en las dos cuentas y se cuenta una sola vez. El resultado es la suma de los dos resultados impresos.",
+     "en": "Sum of two entities that do not consolidate: Vålerenga Fotball AS (commercial income) and Vålerenga Fotball Elite (wages and players). The AS transfers the money to the Elite to pay them (NOK 64 M); that transfer appears in both accounts and is counted once. The result is the sum of the two printed results."
+    },
+    "fuente": {
+     "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2022.md",
+     "linea": 63
+    }
+   },
+   {
+    "anio": 2023,
+    "entidad": "valerenga-fotball-as",
+    "perimetro": "suma",
+    "nota": {
+     "es": "Suma de dos entidades que no consolidan: Vålerenga Fotball AS (ingresos comerciales) y Vålerenga Fotball Elite (sueldos y jugadores). El AS le transfiere al Elite el dinero para pagarlos (87,5 M NOK); esa transferencia está en las dos cuentas y se cuenta una sola vez. El resultado es la suma de los dos resultados impresos.",
+     "en": "Sum of two entities that do not consolidate: Vålerenga Fotball AS (commercial income) and Vålerenga Fotball Elite (wages and players). The AS transfers the money to the Elite to pay them (NOK 87,5 M); that transfer appears in both accounts and is counted once. The result is the sum of the two printed results."
+    },
+    "fuente": {
+     "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2023.md",
+     "linea": 70
+    }
+   },
+   {
+    "anio": 2023,
+    "entidad": "valerenga-fotball-elite",
+    "perimetro": "suma",
+    "nota": {
+     "es": "Suma de dos entidades que no consolidan: Vålerenga Fotball AS (ingresos comerciales) y Vålerenga Fotball Elite (sueldos y jugadores). El AS le transfiere al Elite el dinero para pagarlos (87,5 M NOK); esa transferencia está en las dos cuentas y se cuenta una sola vez. El resultado es la suma de los dos resultados impresos.",
+     "en": "Sum of two entities that do not consolidate: Vålerenga Fotball AS (commercial income) and Vålerenga Fotball Elite (wages and players). The AS transfers the money to the Elite to pay them (NOK 87,5 M); that transfer appears in both accounts and is counted once. The result is the sum of the two printed results."
+    },
+    "fuente": {
+     "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-elite-2023.md",
+     "linea": 63
+    }
+   },
+   {
     "anio": 2025,
     "entidad": "valerenga-fotball-as",
     "perimetro": "individual",
