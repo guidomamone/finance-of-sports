@@ -31,7 +31,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 260: caja y deuda: Ferroviária 2014, Remo 2019 y Volos 2019-2020 quedan en null (Guido, 2026-10-20); solo falta Japón 2025 (balance por club): si es un callejón sin salida, se cierra el to-do --> Sourcing 1
 * 298: mejoras de script (z2, el escalón de cargar.mjs para la transición de más de 12 meses (regla ya votada); x2, el chequeo de fidelidad que no mira cifras; g2, condicional) --> Pipeline
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
@@ -39,7 +38,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 238: llevar a 0 los documentos que quedaron a mitad de camino: arranca por Latinoamérica (161 transcriptos y validados, ~US$ 50, en lotes de 5 a 8 clubes; espera tu ok) --> Onboarding 4
 * 261: Reino Unido: cargados 34 años de los lotes 97 a 99 y 106; quedan 25 casos de verificar del lote 106 (Leeds, Liverpool, Sunderland, Wolves) y volver a correr el 98; 4 escaneos sin estado de resultados (fijar con el ajuste `estado`, como Fulham); Newcastle 2020-21 (11 meses: falta validar la transcripción de 2019-20); Fulham 2021-22 (correr el 104 con --reintentar); el alta de Celtic (3 casos, color, liga y gestión) y sus otros años; la cola de transcripción por Mistral. Detalle: `Admin/Archive/sesion-finanzas-5-2026-10-20-cierre.md` --> Onboarding 4
 * 165 c: altas de los países nuevos que faltan --> Onboarding 5
-* 195: gestiones sin fuente: buscar en la web y, si no aparece, null (Guido, 2026-10-20; REGLA en CONVENCIONES-DATOS); falta el script que lea solo la ficha o la sección de Wikipedia --> Pipeline 6 (script) y Onboarding 5 (carga)
+* 195: gestiones sin fuente: buscar en la web y, si no aparece, null (Guido, 2026-10-20; REGLA en CONVENCIONES-DATOS); el script `tools/wiki-extracto.mjs` ya está --> Onboarding 5
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia (criterio ya decidido; falta implementar: transcribir y verificar Vålerenga, registrar la suma en entidades.jsonl, la nota en Finanzas) --> sesión propia, después de Noruega
 
 **E. Pantallas**
@@ -201,15 +200,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    ~4 MB). Partir el índice y cargar el buscador aparte cuando la skill escala-finance-of-sports diga que llegó el momento.
 259. MATERIAL DE DIFUSIÓN (mejoras de proyecto, pedido de Guido 2026-10-16). Un deck para periodistas y sponsors, o un informe por liga ("las finanzas de LaLiga 2025 en 10 slides"), con
    el tipo Slides. Sin código.
-260. CAJA Y DEUDA: MEJORAS DE SCRIPT VISTAS EN PORTUGAL (sin aplicar; corrida del 2026-10-16: 151 de 327 datos, IA ~US$ 6). Cada una es un
-   escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
-   LO QUE FALTA (2026-10-17), todo sin dato por el documento: Bayern 2021-2025 (solo el comunicado condensado: hace falta el
-   Geschäftsbericht); Japón 2025 (10 clubes) y América (la fuente no nombra la transcripción); Volos 2019-2020 (formato Β.5 solo con
-   totales); Ferroviária 2014 (al PDF le falta la página del pasivo no corriente) y Remo 2019 (sin balance), los dos parciales; Alverca 2022-2025 y Estrela 2023 (montos con accionistas sin nota de préstamo:
-   preguntar al club); HSV 2024 y RB Leipzig 2023-2024 (la escala del año: to-do 289). Dortmund 2024-2025 y RB Leipzig 2022 y 2025, escritos el 2026-10-18.
-   Unión 2022-2024, Argentinos Juniors 2019 (caja) y Mirassol 2024 (deuda 0) cargados el 2026-10-19; la AFAC de Ferroviária no es
-   deuda (Guido). Informe: `Admin/mediciones/informe-260-caja-deuda-sin-documento-nuevo.md`.
-
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 1004 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 56 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);

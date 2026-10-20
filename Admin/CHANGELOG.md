@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 839 — Caja y deuda cerrado; extracto de Wikipedia (2026-10-20)
+
+* 260 cerrado: Ferroviária 2014, Remo 2019 y Volos 2019-2020 quedan sin caja ni deuda (decisión de Guido); Japón 2025 es un callejón sin
+  salida (la J.League publica un balance resumido sin caja ni préstamos; ningún club cotiza en EDINET).
+* `tools/wiki-extracto.mjs`: trae la ficha o una sección de una página de Wikipedia en texto corto (para las gestiones del 195), aprobado
+  por la auditora.
+
 ## Versión 838 — Reino Unido: 22 años más y el alta de Celtic (2026-10-20)
 
 * Lote 108: Leeds, Liverpool 2022, Newcastle 2022-2024, Nottingham Forest 2022-23, Sunderland 2019-2023, West Ham 2020-2024 y Wolves
