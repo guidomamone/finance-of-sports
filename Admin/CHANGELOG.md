@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 896 — Qué del pipeline asume fútbol (2026-10-20) [339]
+
+- Inventario de 38 puntos ordenados por impacto (`Admin/mediciones/339-inventario.md`): primero lo que categoriza (Jev y `categorizar-claude.mjs` eligen entre categorías de fútbol), después las compuertas de `cargar.mjs`, `audit.js`, el alta y los prompts. Sin código.
+
 ## Versión 895 — Votación de Bath Rugby (2026-10-20) [248 · bath-gb · rosariocentral-ar]
 
 - Auditora 3: el ingreso de CVC (fila aparte del Strategic Report) va a `other_income`, 3 a 0; el «fair value movement» de 2021 (revaluación de la participación en Premiership Rugby) va a `other_income`, 2 a 1. Reglas en `Admin/CONVENCIONES-DATOS.md`.
