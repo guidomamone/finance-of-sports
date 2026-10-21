@@ -419,3 +419,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: más veredictos del 21 de octubre (resumen), 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Líneas nuevas en `Admin/registros/auditoria-proceso.jsonl`, en orden: código del 343 (compuerta del sponsor), APROBADO; máximo sin presupuestos y corte de 9 meses en `ejercicio-sin-rastro`, APROBADOS; código del 237 al y su mínimo de dos renglones, APROBADOS; arreglo del hook de skills, APROBADO; tres hooks de ask a deny: `comando-que-edita` APROBADO CON UN CAMBIO, `worktree-sin-permission-mode` APROBADO, `memoria-no-es-regla` RECHAZADO (queda ask); diseño del 345 (`tools/xhtml-aarsrapport.mjs`, informes daneses XHTML), APROBADO CON TRES CAMBIOS. Sin codear lo del 345.
+
+### Qué queda (para TODO / 345)
+
+- Antes de codear: (1) los 8 documentos pedidos pasan la compuerta de hechos iXBRL con 0 faltantes (hay 2 en København y 11 en Nordsjælland 2025) o cada faltante queda explicado; (2) menos de 98 % de líneas ubicadas en una página = la tool no escribe, no escribe un `.md` con una sola marca; (3) motor registrado como «xhtml-ixbrl (determinista)» en `transcripciones-estado.jsonl` y en la primera línea del `.md`, con la frase de que el PDF es una impresión de Chrome del XHTML oficial. Seguimiento posible: los hechos iXBRL como total oficial independiente.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
