@@ -868,6 +868,16 @@ Texto movido sin cambios.
   grupo o sponsor) arranca arriba, o en el ancla si la URL trae una; el año, la moneda o un filtro no mueven nada. Atrás, adelante y
   recargar vuelven a la altura en que se dejó esa entrada (`history.scrollRestoration = 'manual'`; cada entrada lleva una clave `k`).
   Ninguna vista llama a `window.scrollTo(0, 0)` por su cuenta al navegar: si hace falta, falta pasar por `escribirURL()`.
+  EL FOCO también sigue a la vista: `focoDeVista()` lo lleva al primer `h1`/`h2` visible de la sección nueva (o a la sección), con `tabindex="-1"` y la
+  clase `.foco-vista` (sin contorno); al abrir la página no se mueve. El selector de club devuelve el foco al elemento que lo abrió (`quienAbrio`), salvo
+  al buscador de Inicio, que al enfocarse lo vuelve a abrir.
+- LIGAS EN EL TELÉFONO, 44 PX (`referencia/ux.md`, punto 4): a 560 px o menos cada fila del ranking mide 44 px y el botón del club la cubre entera con
+  un `::after` (tocar la cifra o la barra abre el club); las pastillas de ejercicio miden 44 hasta 700 px; «← Todas las ligas», «Ver el informe original»,
+  «Abrir todos / Cerrar todos» y cada país de la lista, 44; el buscador de la lista ocupa su caja; el plegable «ligas sin datos» se toca entero
+  (márgenes negativos, sin cambiar cómo se ve). Los links dentro de un párrafo quedan exceptuados.
+- LO ABIERTO EN LA LISTA DE LIGAS: los países que el visitante abre o cierra a mano y el plegable de las ligas sin datos se guardan en memoria
+  (`frio.pais`, `frio.sinDatos` en `js/liga.js`) y vuelven igual con atrás; «Abrir todos / Cerrar todos» los borra, y un cambio de filtro vuelve
+  `abiertos` al de siempre.
 - FINANZAS, LO DE ARRIBA (mockup: artboards "Finanzas" del artifact "Pantallas FoS"). El título es el club, con "Cambiar de
   club" al lado (en Finanzas el título ya dice qué club es). Debajo, una guía de una línea (qué se toca) que se cierra y no vuelve
   (`localStorage` `finGuiaCerrada`). La tarjeta de ejercicios termina con la vista en palabras ("Montos en USD, nominales, formato

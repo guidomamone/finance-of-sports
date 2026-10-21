@@ -1,3 +1,36 @@
+# Sesión pantallas (Pantallas 7): 360, lo que el sitio no cumplía de la guía de UX
+
+## Qué cambió (para CHANGELOG)
+- (a) Foco: al cambiar de vista, `focoDeVista()` (`js/principal.js`, desde `scrollDeVista()`) lleva el foco al primer título visible de la sección nueva
+  (`tabindex="-1"`, `.foco-vista` sin contorno); al abrir la página no se mueve. El selector de club devuelve el foco a quien lo abrió (`quienAbrio` en
+  `js/selector.js`), salvo al buscador de Inicio.
+- (b) 44 px en Ligas, en el teléfono: fila del ranking de 44 px con el botón del club cubriéndola (`::after`), pastillas de ejercicio, «← Todas las ligas»,
+  «Ver el informe original», «Abrir todos / Cerrar todos», cada país, el buscador de la lista y el plegable «ligas sin datos» (este sin cambiar cómo se
+  ve). La lupa del header vuelve a 44 de ancho a menos de 380 px (estaba en 40).
+- (c) La lista de Ligas guarda en memoria los países abiertos o cerrados a mano y el plegable de las ligas sin datos (`frio.pais`, `frio.sinDatos`);
+  `setFiltros()` ya no resetea lo abierto si los filtros no cambiaron (que es lo que pasa con atrás).
+- Regla en `Admin/PANTALLA.md` («EL ESTADO EN LA URL» y dos puntos nuevos). Propuesta `Admin/propuestas/ux-casos-360.md`: los casos «hoy» de `ux.md`
+  que esto resolvió, en pasado (sin aplicar: es una skill). ASSET_V 1703.
+- Verificado servido a 375 px con toques reales: abrir Italia en la lista, tocar Serie B (abre arriba, foco en «Serie B»), atrás (Italia abierta, misma
+  altura 1321); en la Serie A, tocar la cifra de Juventus abre Juventus arriba con el foco en su título; el barrido de 44 px en la página de una liga y en la
+  lista da cero (salvo links dentro de un párrafo y la etiqueta COVID). Escritorio: el selector abierto con el teclado desde la lupa vuelve a la lupa con
+  Escape. Como archivo a 1280: lista → liga → club → atrás → atrás, sin errores. `node tools/audit.js`: 0 P0, 0 P1.
+
+## Recorrido de `referencia/ux.md`
+- 1: el scroll no cambia; ningún `scrollTo` nuevo. 2: sin cambios en la URL ni cargas nuevas. 3: es lo que arregla (a). 4: es lo que arregla (b), en
+  Ligas. 5: no aplica. 6: es lo que arregla (c).
+
+## Qué queda (para TODO)
+- Del barrido de 44 px a 375, fuera de Ligas (no lo toqué: agrandarlos cambia esas pantallas, sobre todo las 40 filas de Inicio): Inicio, los atajos de
+  club (32 px), las filas de los rankings (`.vid-fila`, 37) y «Ver la liga» / «Todas las ligas» (`.vid-link`, 32); Finanzas sin club, «Elegí un club»
+  (38); Mi Cuenta, «Entrar con Google» (34); el input del buscador de Inicio (22, dentro de una caja más grande); y la etiqueta COVID (16) en todas.
+- Aplicar `Admin/propuestas/ux-casos-360.md` con el ok de Guido.
+
+## Qué deja de ser cierto en ESTADO
+- Nada que no esté en `Admin/PANTALLA.md`.
+
+---
+
 # Sesión pantallas (Pantallas 7): marca COVID en Comparar, Ligas y el selector
 
 ## Qué cambió (para CHANGELOG)
