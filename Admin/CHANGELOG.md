@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 903 — Auditora 4 aprueba lo del 339 y el 334; Jev ve los rubros de cada deporte (2026-10-20) [339 · 334 · bath-gb · everton-gb]
+
+- Auditora 4 aprueba, después de mergeados, los 6 commits del 339 y el del 334 (no se revierte nada). Aprueba (a) Jev y Claude ven las categorías con descripción del deporte del club y (b) el bolsón sin desglosar por deporte: los dos, idénticos en fútbol. Aprueba con un cambio el aviso P2 por coma comida del OCR (sin codear). Las dos filas de Everton que marca no afectan ningún año publicado.
+- Bath: los 5 años armados y verificados sin API (lote 129); frena en verificar (nota en £m) y en dos caminos sin API que siguen asumiendo fútbol. Nada cargado.
+
 ## Versión 902 — Jev y la carga leen las categorías del deporte del club (2026-10-20) [339 · bath-gb]
 
 - `tools/deporte-club.mjs` (como `pais-club.mjs`): Jev y `cargar.mjs` (`ladoDeCat`) toman las categorías de `SPORT_TAXONOMIES` según el deporte del club. Para el fútbol, idéntico: 1.000 pedidos a Jev y 80 a Claude byte por byte, `medir-cargar` (334 documentos) y `medir-verificar` (62) sin diferencias. Destraba la carga de Bath.
