@@ -172,6 +172,8 @@ function checkEstructura(api) {
     // o ambiguo). El campo AUSENTE es otra cosa: nadie lo chequeó. Los dos se ven igual en pantalla
     // (`pintarCrest()` hace `if(!c)`), así que sin esta distinción la única forma de saber cuál es
     // cuál sería rebarrer todos los clubes, que es justo lo que el paso de onboarding evita.
+    // (to-do 339) todo club declara su deporte (sport en data/clubs.js): las tools lo leen de ahí y ya no suponen fútbol; el sitio y audit.js todavía caen a fútbol si falta
+    if (!api.clubs[id].sport || !api.SPORT_TAXONOMIES[api.clubs[id].sport]) add('P1', 'club-sin-deporte', `${id}: sport ${api.clubs[id].sport ? `«${api.clubs[id].sport}» no tiene taxonomía en SPORT_TAXONOMIES` : 'falta'} en data/clubs.js`);
     if (!('brandColor' in api.clubs[id])) add('P3', 'club-sin-color-ni-null', `${id}: sin brandColor ni brandColor:null en data/clubs.js — no se distingue "se miró y no lleva color" de "nadie lo chequeó" (ver club-or-year-onboarding/club-nuevo.md)`);
   }
 

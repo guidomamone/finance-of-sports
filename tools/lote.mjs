@@ -39,6 +39,8 @@ import { extraer, estimarExtraerSinBloques } from './extraer.mjs';
 import { pendientes, respuestaPosterior } from './cola.mjs';
 import { derivado } from './rutas.mjs';
 import { etapaDe } from './etapa-doc.mjs';
+import { clubDeRuta } from './carpetas-clubes.mjs';
+import { resolverDeporte } from './deporte-club.mjs'; // (to-do 339) el deporte de cada documento antes de Jev y Claude
 import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
 import { tomarCandado, soltarCandado } from './candado.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
@@ -456,6 +458,10 @@ if (conRubros.length) {
   writeFileSync(resolve(ROOT, 'Admin', 'registros', '.lote-lista-actual.txt'), conRubros.join('\n') + '\n');
   node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // (Versión 640) --solo: solo la lista del lote
   if (!SIN_API) {
+    // (to-do 339) Jev y Claude necesitan el deporte de cada documento: la ficha del club o el registro de altas de su carpeta. Un club nuevo todavía no tiene ficha: se corre alta-club
+    // (gratis, recalcula solo si cambió la huella) sobre sus carpetas ANTES, para que ningún club de fútbol nuevo se detenga solo por no haberlo corrido.
+    const sinDeporte = [...new Set(conRubros.filter((d) => !resolverDeporte({ club: clubDeRuta(d).clubId, pdf: d })).map((d) => d.split('/').slice(1, 3).join('/')))];
+    for (const solo of sinDeporte) { console.log(`  alta-club (gratis) sobre ${solo}: el club no tiene deporte todavía`); node('tools/alta-club.mjs', ['--todos', '--solo', solo], { silencioso: true }); }
     node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
     node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
     node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);

@@ -78,7 +78,7 @@ import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_
 import { archivosData, rutaData } from './data-clubes.js';
 import { modificarClub } from './club-json.mjs'; // (to-do 245, fase 2) el JSON es la fuente de cada club
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
-import { categoriaDeSueldos, deporteODefecto } from './deporte-club.mjs'; // (to-do 339) la categoría de sueldos es la del deporte del club
+import { categoriaDeSueldos, deporteDeClub } from './deporte-club.mjs'; // (to-do 339) la categoría de sueldos es la del deporte del club
 import { formaImposible } from './verify-numbers.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -1317,7 +1317,7 @@ async function partirFilaGlobal(clubId, d, res, { escribir }) {
   const ajustesTxt = readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8');
   const cmds = [];
   // (to-do 339) la categoría de los sueldos es la del deporte del club (wages_squad en fútbol, squad_wages en rugby)
-  const SUELDOS = categoriaDeSueldos(deporteODefecto(clubId));
+  const SUELDOS = categoriaDeSueldos(deporteDeClub(clubId));
   if (!SUELDOS) { console.log(`  partir: el deporte de ${clubId} no tiene categoría de sueldos del primer equipo en su taxonomía; no decide`); return; }
   for (const x of res.filter((y) => y.valor != null && (y.real == null || coincide(y.real, y.valor)))) {
     const ls = (d.expenseLinesByYear || {})[x.anio] || [];
