@@ -20,6 +20,11 @@
 //
 //   comandos-simples        (deny) un Bash con /tmp suelto, `cd … &&`, o `$(…)`/`${…}`/`$VAR` fuera de comillas simples: no se puede chequear antes de
 //                            correr y pide permiso cada vez (to-do 327, C-1). Pasan el scratchpad de la sesión y el heredoc de `git commit`.
+//   no-importar-tools       (deny) `node -e` con import()/require() de un archivo de tools/ (salvo data-clubes.js y rutas.mjs): lo ejecuta (C-5).
+//   merge-en-worktree       (deny) `git merge` / `git pull` dentro de un worktree (menos `merge-tree`, `merge-base` y `--abort`): lo hace la principal (C-4).
+//   plan-en-worktree        (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
+//   subagente-con-regla     (deny) un Agent cuyo prompt no diga que Bash va «sin variables» (C-2).
+//   rsync-sin-no-links      (deny) `rsync -a` sin `--no-links` (C-6). `pdfs-con-ok` ahora también cubre `mv` sobre Clubes/ (ask).
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
 import { execFileSync } from 'node:child_process';
@@ -78,22 +83,33 @@ function pushConOk(cmd) {
   if (GIT_SUB('push').test(cmd)) decidir('ask', 'git push necesita el ok explícito de Guido cada vez (un push a main despliega el sitio en Netlify).');
 }
 
+// Un worktree tiene su propio git-dir; la principal, no. Si git falla (otro repo, sin git) se asume que no.
+function estaEnWorktree() {
+  try { return git(['rev-parse', '--path-format=absolute', '--git-dir']).trim() !== git(['rev-parse', '--path-format=absolute', '--git-common-dir']).trim(); }
+  catch { return false; }
+}
+
 function docsDeLaPrincipal(cmd) {
   const DOCS = /Admin\/(TODO|CHANGELOG|ESTADO)\.md\b/;
   const toca = EDITA.includes(herramienta) ? DOCS.test(rutaEditada()) : bashEscribeEn(cmd, DOCS);
   if (!toca) return;
-  let enWorktree;
-  try { enWorktree = git(['rev-parse', '--path-format=absolute', '--git-dir']).trim() !== git(['rev-parse', '--path-format=absolute', '--git-common-dir']).trim(); }
-  catch { return; }
-  if (!enWorktree) return;
+  if (!estaEnWorktree()) return;
   let rama = '<rama>';
   try { rama = git(['rev-parse', '--abbrev-ref', 'HEAD']).trim(); } catch {}
   decidir('deny', `Esto es un worktree: Admin/TODO.md, CHANGELOG.md y ESTADO.md los escribe solo la principal. Lo que iba ahí va en `
     + `Admin/sesiones/${rama}.md (qué cambió, qué queda, qué deja de ser cierto en ESTADO). Ver la skill de arranque, worktree.md.`);
 }
 
+// `rsync -a` copia los symlinks como symlinks: en un worktree recién creado apuntan a carpetas que no existen. Con `--no-links` se saltean (to-do 327, C-6).
+function rsyncSinNoLinks(cmd) {
+  if (!/\brsync\b/.test(cmd) || /--no-links\b/.test(cmd)) return;
+  if (/\s-[A-Za-z]*a[A-Za-z]*\b|--archive\b/.test(cmd)) {
+    decidir('deny', 'rsync -a copia los symlinks tal cual y en el destino quedan rotos. Agregá --no-links (o --no-links junto con -rt en vez de -a).');
+  }
+}
+
 function pdfsConOk(cmd) {
-  const borraEnClubes = /\bClubes\b/.test(cmd) && /\b(rm|unlink|trash)\s|\s-delete\b/.test(cmd);
+  const borraEnClubes = /\bClubes\b/.test(cmd) && /\b(rm|unlink|trash|mv)\s|\s-delete\b/.test(cmd);
   const gitCleanIgnorados = GIT_SUB('clean').test(cmd) && /\s-\w*[xX]/.test(cmd);
   if (borraEnClubes || gitCleanIgnorados) {
     decidir('ask', 'Esto puede borrar PDFs de Clubes/. No se trackean y no hay copia de dónde recuperarlos: ¿Guido lo pidió y se chequearon '
@@ -122,8 +138,46 @@ function comandosSimples(cmd) {
   }
 }
 
+// `node -e "import('./tools/x.mjs')"` o `require('./tools/x.js')` para chequear una tool la EJECUTA (to-do 327, C-5). Se chequea con `node --check`.
+// `data-clubes.js` y `rutas.mjs` son librerías sin efectos: esas sí se pueden importar.
+function noImportarTools(cmd) {
+  if (!/\bnode\b/.test(cmd)) return;
+  for (const m of cmd.matchAll(/\b(?:import|require)\s*\(\s*\\?['"`][^'"`]*?tools\/([^'"`\\]+)/g)) {
+    if (/(^|\/)(data-clubes\.js|rutas\.mjs)$/.test(m[1])) continue;
+    decidir('deny', `Importar o hacer require de tools/${m[1]} la ejecuta de verdad (muchas escriben datos o llaman a APIs). Para chequear que no tenga errores de sintaxis: node --check tools/${m[1]}. Solo data-clubes.js y rutas.mjs se pueden importar.`);
+  }
+}
+
+// En un worktree no se mergea ni se hace pull: ni la rama a main ni main a la rama; el merge lo hace la sesión principal (to-do 327, C-4).
+// `merge-tree` y `merge-base` no tocan nada y sirven para anticipar conflictos; `merge --abort` deshace.
+function mergeEnWorktree(cmd) {
+  if (!GIT_SUB('(?:merge|pull)(?![-\\w])').test(cmd) || /--abort\b/.test(cmd) || !estaEnWorktree()) return;
+  decidir('deny', 'Esto es un worktree: el merge (y el pull) lo hace la sesión principal, ni la rama a main ni main a la rama. Para anticipar conflictos '
+    + 'usá git merge-tree (no toca nada) y anotalos en Admin/sesiones/<rama>.md; para traer main a la rama, la tool sync_with_base_branch de la app.');
+}
+
+// `EnterPlanMode` en un worktree: aprobar un plan pasa la sesión a acceptEdits y pide permiso para todo (to-do 327, C-3). Solo el Enter: si la
+// sesión ya está en modo plan, el Exit tiene que poder salir. Diseños y preguntas van en el chat.
+function planEnWorktree() {
+  if (herramienta === 'EnterPlanMode' && estaEnWorktree()) {
+    decidir('deny', 'Las sesiones de worktree no usan modo plan ni el panel Plan: aprobar un plan las pasa a acceptEdits y piden permiso para todo. Diseños y preguntas van en el chat.');
+  }
+}
+
+// Todo prompt de subagente lleva la regla de comandos: sin ella cada Bash del subagente le pide permiso a Guido (to-do 327, C-2).
+function subagenteConReglaDeComandos() {
+  if (herramienta !== 'Agent' && herramienta !== 'Task') return;
+  const prompt = String(params.prompt || '');
+  if (/\bBash\b/i.test(prompt) && /sin variables/i.test(prompt)) return;
+  decidir('deny', 'Al prompt del subagente le falta la regla de comandos. Pegá esta instrucción: "Leé con Read y escribí con Write. Bash solo para comandos simples '
+    + 'con la ruta completa entre comillas, sin variables, sin cd, sin ; ni &&." Sin ella, cada comando del subagente le pide permiso a Guido.');
+}
+
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
-if (herramienta === 'Bash') comandosSimples(cmd);
+if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); mergeEnWorktree(cmd); }
+planEnWorktree();
+if (herramienta === 'Bash') rsyncSinNoLinks(cmd);
+subagenteConReglaDeComandos();
 skillsConOk(cmd);
 pushConOk(cmd);
 docsDeLaPrincipal(cmd);
