@@ -142,6 +142,10 @@ tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 1 (compuerta: año anterior): "Likvide beholdninger Cash on hand and demand depos" pág. 21
+```
+
 ### Liga
 
 ```text
