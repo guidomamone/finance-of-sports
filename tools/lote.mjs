@@ -30,7 +30,7 @@
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, copyFileSync, unlinkSync, statSync, readdirSync, appendFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { resolve, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
 import { localizar } from './localizar.mjs';
@@ -145,6 +145,18 @@ let registro = leerRegistro();
 }
 // (Versión 521, to-do 140(c)) DUPLICADOS: el mismo PDF que otro (misma huella, inventario-transcripciones.mjs) no se procesa: se procesa el otro.
 for (let i = docs.length - 1; i >= 0; i--) { const e = registro.find((x) => x.pdf === docs[i]); if (e && e.estado === 'duplicado') { console.log(`  ${docs[i]}: duplicado de ${e.duplicadoDe} (misma huella): se saltea`); docs.splice(i, 1); } }
+// AVISO: UN ALTA ENTRA CON UN SOLO EJERCICIO (skill club-or-year-onboarding, 3a.2; pedido de Onboarding 9). Un club que todavía no está en el sitio
+// (quien.mjs: `clubDeCarpeta`) va con el ejercicio más reciente que traiga el estado de resultados completo; el resto de sus años, en el lote siguiente,
+// con las respuestas del primero como precedente. El lote 133 traía tres años por alta y nadie lo cortó antes del ensayo. Solo avisa: no saca nada de la lista.
+{
+  const { quien } = await import('./quien.mjs'); const porClub = new Map();
+  for (const d of docs) { const q = quien(resolve(ROOT, d)); if (q.clubDeCarpeta) porClub.set(dirname(d), [...(porClub.get(dirname(d)) || []), d]); }
+  const varios = [...porClub].filter(([, ds]) => ds.length > 1);
+  if (varios.length) {
+    console.log(`\nAVISO (alta con más de un año): ${varios.length} club(es) nuevo(s) con más de un ejercicio en la lista. Un alta entra con UNO solo (el más reciente con estado de resultados completo); los demás, en el lote siguiente:`);
+    for (const [c, ds] of varios) console.log(`  ${c}: ${ds.length} ejercicios (${ds.map((d) => d.split('/').pop()).join(', ')})`);
+  }
+}
 // FRENO DE IA SOBRE UN DOCUMENTO DETERMINISTA (Auditora 5, to-do 356; regla de Guido: lo que ya viene estructurado no se paga con IA, Admin/propuestas/estructurado-sin-ia.md). Un .md que escribió
 // tools/xhtml-aarsrapport.mjs (primera línea: «motor: xhtml-ixbrl (determinista)») trae sus cifras etiquetadas; localizar y extraer con IA es plata tirada si el escalón que lee las etiquetas puede
 // cerrarlo. Mientras ese escalón no exista, --ejecutar NO paga IA sobre esos documentos salvo con --pagar-ia-xhtml "<motivo>" (la bandera es el apagado: queda en

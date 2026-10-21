@@ -14,10 +14,10 @@
 // Buenas maneras: un User-Agent que dice quién es, al menos un segundo entre pedidos, y lo bajado queda en Generados/fuentes-liga/ (no se
 // publica ni se trackea) para no pedirlo dos veces.
 //
-// CÓMO LEE LA TABLA (RSSSF). El texto de la página sin etiquetas; desde la primera línea que contiene el título de --tabla («2023/24 Cypriot
-// Second Division»), la primera tabla de posiciones: filas seguidas «N.Equipo   PJ G E P …» (número, punto, nombre, dos espacios o más, cifras).
-// La tabla termina en la primera línea no vacía que no es una fila ni un separador de guiones. COMPUERTA: si no encuentra la tabla o da MENOS equipos que la lista de
-// Wikipedia de esa liga-temporada, no escribe nada y lo dice.
+// CÓMO LEE LA TABLA (RSSSF). La sección de la división se elige por su NOMBRE (--tabla, «Liga Portugal 2»): el enlace del índice de la página con
+// ese texto exacto, o la única línea suelta que lo contiene; si no la identifica, frena (ver tablaRsssf). De esa sección, la primera tabla de
+// posiciones: filas seguidas «N.Equipo   PJ G E P …». La tabla termina en la primera línea no vacía que no es una fila ni un separador de guiones,
+// o en la sección siguiente. COMPUERTA: si no encuentra la tabla o da MENOS equipos que la lista de Wikipedia de esa liga-temporada, no escribe nada y lo dice.
 //
 // USO:
 //   node tools/segunda-fuente-liga.mjs "<url>" <leagueId> <año> --pais <iso2> --tabla "<título de la tabla>"           ensayo: dice qué leyó
@@ -36,34 +36,74 @@ const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-
 // Lo bajado, con caché en disco y un segundo entre pedidos (la marca del último pedido queda al lado de las descargas)
 async function bajar(url) {
   const u = new URL(url); const archivo = resolve(DESCARGAS, u.hostname, `${u.pathname.replace(/^\/+/, '').replace(/[^a-zA-Z0-9._-]+/g, '_') || 'index'}${u.search ? `_${u.search.replace(/[^a-zA-Z0-9]+/g, '_')}` : ''}`);
-  if (existsSync(archivo)) return { texto: readFileSync(archivo, 'latin1'), deCache: true, archivo };
+  if (existsSync(archivo)) return { texto: decodificar(readFileSync(archivo)), deCache: true, archivo };
   const marca = resolve(DESCARGAS, '.ultimo-pedido'); const ultimo = existsSync(marca) ? Number(readFileSync(marca, 'utf8')) || 0 : 0;
   const espera = ultimo + 1000 - Date.now(); if (espera > 0) await new Promise((r) => setTimeout(r, espera));
   mkdirSync(dirname(archivo), { recursive: true }); writeFileSync(marca, String(Date.now()));
   const res = await fetch(url, { headers: { 'User-Agent': UA } });
   if (!res.ok) return { error: `${url} respondió ${res.status}: ${res.status === 403 || res.status === 429 ? 'el sitio no deja leer de forma mecánica; se descarta (no se esquiva)' : 'no se pudo leer'}` };
   const buf = Buffer.from(await res.arrayBuffer());
-  // RSSSF sirve iso-8859-1; si la página declara utf-8, se respeta
-  const utf8 = /charset=["']?utf-8/i.test(buf.subarray(0, 2048).toString('latin1'));
-  const texto = utf8 ? buf.toString('utf8') : buf.toString('latin1');
-  writeFileSync(archivo, Buffer.from(texto, 'latin1'));
-  return { texto, deCache: false, archivo };
+  writeFileSync(archivo, buf); // los bytes como llegaron: decodificar() decide la codificación al leer (antes se guardaba el texto como latin1 y una página utf-8 perdía letras)
+  return { texto: decodificar(buf), deCache: false, archivo };
 }
 
+// LA PÁGINA, DECODIFICADA (frenados-por-script, Onboarding 9): RSSSF sirve iso-8859-1, algunas páginas declaran utf-8 y otras vienen en UTF-16 con BOM
+// (grk2021, rus2022, rus2023: leídas como latin1 dejaban un NUL entre cada letra y el título no aparecía). La caché guarda los bytes tal cual llegaron.
+export function decodificar(buf) {
+  if (buf[0] === 0xff && buf[1] === 0xfe) return buf.subarray(2).toString('utf16le');
+  if (buf[0] === 0xfe && buf[1] === 0xff) { const b = Buffer.from(buf.subarray(2)); b.swap16(); return b.toString('utf16le'); }
+  return /charset=["']?utf-8/i.test(buf.subarray(0, 2048).toString('latin1')) ? buf.toString('utf8') : buf.toString('latin1');
+}
+
+// QUÉ SECCIÓN ES LA DE LA LIGA (frenados-por-script, Onboarding 9). Una página de RSSSF trae varias divisiones y arriba un ÍNDICE de enlaces
+// <a href="#x">División</a> a sus secciones <a name="x">. Antes se tomaba la primera aparición del título, que es la del índice, y la primera tabla
+// que seguía, que es la de la PRIMERA división: frenaban todas las segundas (Challenger Pro League, Liga Portugal 2, Super League 2, Championship,
+// Eerste Divisie) y, con el mismo número de equipos, la compuerta dejaba pasar la tabla equivocada. Ahora se elige por el NOMBRE, nunca por la posición:
+//   1. un enlace del índice (los <a href="#…"> antes de la primera sección) cuyo texto es EXACTAMENTE el título (sin acentos ni puntuación): su sección;
+//      «Liga Portugal» no es «Liga Portugal 2»;
+//   2. si el índice no lo nombra: la ÚNICA línea fuera de un enlace del índice que contiene el título como palabra entera (un encabezado
+//      suelto, Chipre 2023-24; «Liga Portugal» no coincide con «Liga Portugal 2»);
+//   3. si no hay ninguna o hay más de una: frena («no identifico la sección»), no adivina.
+// La tabla es la primera de la sección y tiene que empezar antes de la sección siguiente del índice (las sub-anclas de adentro, «Periode 1»,
+// «Group Stage», no cortan). Solo la primera: en la sección de la Liga Portugal 2 hay un playoff con equipos de la Liga 3.
+const limpiar = (l) => l.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ');
+// Una fila: «N.Equipo   PJ G E P …» con dos espacios o más antes de los partidos; si no, con UNO solo pero seguido de PJ G E P y los goles
+// («7.Grasshopper-Club Zürich 36 10 11 15  45-54», Suiza 2011-12): sin los goles, «Schalke 04 34 …» cortaría el nombre en «Schalke».
+// La posición «-.» es un equipo que se retiró a mitad de temporada y sigue en la tabla («-.Neuchâtel Xamax  18 …  Withdrew», Suiza 2011-12).
+const FILA = /^\s*(\d{1,2}|-)\.\s*(.+?)\s{2,}\d+\s/;
+const FILA_UN_ESPACIO = /^\s*(\d{1,2}|-)\.\s*(.+?)\s\d+\s+\d+\s+\d+\s+\d+\s+\d+\s*-\s*\d+/;
 export function tablaRsssf(html, titulo) {
-  const lineas = html.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').split(/\r?\n/);
-  const i0 = lineas.findIndex((l) => norm(l).includes(norm(titulo)));
-  if (i0 < 0) return { error: `no encuentro «${titulo}» en la página` };
-  const FILA = /^\s*(\d{1,2})\.\s*(.+?)\s{2,}\d+\s/;
+  const crudas = html.split(/\r?\n/); const lineas = crudas.map(limpiar); const t = norm(titulo);
+  const iSecciones = crudas.findIndex((l) => /<a\s+name=/i.test(l)); const finIndice = iSecciones < 0 ? crudas.length : iSecciones;
+  const indice = []; // [{ nombre del ancla, texto }]
+  for (let i = 0; i < finIndice; i++) for (const m of crudas[i].matchAll(/<a\s+href="#([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)) indice.push({ ancla: m[1], texto: norm(limpiar(m[2])) });
+  const anclaDe = (n) => crudas.findIndex((l, i) => i >= finIndice && new RegExp(`<a\\s+name="${n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`, 'i').test(l));
+  let i0 = -1; let como = '';
+  const exactos = indice.filter((x) => x.texto === t);
+  if (exactos.length === 1) { i0 = anclaDe(exactos[0].ancla); como = `índice → sección «${exactos[0].ancla}»`; if (i0 < 0) return { error: `el índice nombra «${titulo}» (#${exactos[0].ancla}) pero la página no tiene esa sección` }; }
+  else if (exactos.length > 1) return { error: `el índice nombra «${titulo}» ${exactos.length} veces: no identifico la sección` };
+  else {
+    // el título ENTERO (Auditora 6): «Liga Portugal» no está en «Liga Portugal 2». Se compara sobre la línea sin acentos pero CON su puntuación
+    // (norm() la vuelve espacios y «Liga Portugal 2» dejaría un espacio después del título): antes, el comienzo o algo que no es letra ni dígito;
+    // después, el fin de la línea o un signo de puntuación (con espacios o sin), nunca otra palabra ni un número.
+    const plano = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
+    const entero = new RegExp(`(^|[^\\p{L}\\p{N}])${plano(titulo).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?=\\s*$|\\s*[^\\p{L}\\p{N}\\s])`, 'u');
+    const sueltas = lineas.map((l, i) => i).filter((i) => !/<a\s+href="#/i.test(crudas[i]) && entero.test(plano(lineas[i])));
+    if (sueltas.length !== 1) return { error: sueltas.length ? `«${titulo}» aparece en ${sueltas.length} líneas (L${sueltas.slice(0, 4).map((i) => i + 1).join(', L')}) y ninguna es del índice: no identifico la sección` : `no encuentro «${titulo}» en la página` };
+    i0 = sueltas[0]; como = 'línea suelta';
+  }
+  const anclasIndice = new Set(indice.map((x) => x.ancla));
+  let fin = crudas.length;
+  for (let i = i0 + 1; i < crudas.length; i++) { const m = crudas[i].match(/<a\s+name="([^"]+)"/i); if (m && anclasIndice.has(m[1])) { fin = i; break; } }
   const equipos = []; let empezo = false;
-  for (let i = i0 + 1; i < lineas.length; i++) {
-    const m = FILA.exec(lineas[i]);
-    if (m) { empezo = true; equipos.push({ pos: Number(m[1]), nombre: m[2].trim(), linea: i + 1 }); continue; }
+  for (let i = i0 + 1; i < fin; i++) {
+    const m = FILA.exec(lineas[i]) || FILA_UN_ESPACIO.exec(lineas[i]);
+    if (m) { empezo = true; equipos.push({ pos: m[1] === '-' ? null : Number(m[1]), nombre: m[2].trim(), linea: i + 1 }); continue; }
     if (/^[\s\-=_.]+$/.test(lineas[i])) continue; // «- - - - -» entre la zona de ascenso y la de descenso (Chipre 2023-24, L677)
     if (empezo && lineas[i].trim()) break;
   }
-  if (!equipos.length) return { error: `después de «${titulo}» no hay una tabla de posiciones (filas «N.Equipo  PJ G E P …»)` };
-  return { equipos, lineaTitulo: i0 + 1 };
+  if (!equipos.length) return { error: `en la sección de «${titulo}» (L${i0 + 1}, ${como}) no hay una tabla de posiciones (filas «N.Equipo  PJ G E P …») antes de la sección siguiente` };
+  return { equipos, lineaTitulo: i0 + 1, como };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -80,8 +120,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const t = tablaRsssf(b.texto, titulo);
   if (t.error) { console.error(`NO SE ESCRIBE: ${t.error}`); process.exit(1); }
   const wiki = entrada.clubs || [];
-  console.log(`${url}${b.deCache ? ' (de la caché local)' : ''}: «${titulo}» en la L${t.lineaTitulo}, ${t.equipos.length} equipos; Wikipedia (${entrada.wikipediaPage}): ${wiki.length}`);
-  for (const e of t.equipos) console.log(`  ${String(e.pos).padStart(2)}. ${e.nombre}  (L${e.linea})${wiki.some((w) => norm(w) === norm(e.nombre)) ? '' : '  · el nombre no está igual en Wikipedia'}`);
+  console.log(`${url}${b.deCache ? ' (de la caché local)' : ''}: «${titulo}» en la L${t.lineaTitulo} (${t.como}), ${t.equipos.length} equipos; Wikipedia (${entrada.wikipediaPage}): ${wiki.length}`);
+  for (const e of t.equipos) console.log(`  ${String(e.pos ?? '-').padStart(2)}. ${e.nombre}  (L${e.linea})${wiki.some((w) => norm(w) === norm(e.nombre)) ? '' : '  · el nombre no está igual en Wikipedia'}`);
   if (t.equipos.length < wiki.length) { console.error(`NO SE ESCRIBE: la tabla da ${t.equipos.length} equipos y Wikipedia ${wiki.length}`); process.exit(1); }
   if (!ESCRIBIR) { console.log('Ensayo: no se escribió nada (--escribir para guardarlo en la caché).'); process.exit(0); }
   const host = new URL(url).hostname.replace(/^www\./, '');
