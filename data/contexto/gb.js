@@ -146,6 +146,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"City Ground","capacidad":30404,"sponsor":"Kaiyun Sports","marca":"Adidas","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"City Ground","capacidad":31042,"sponsor":"Kaiyun Sports","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
+  'shrewsburytown-gb': {
+    2025: {"estadio":"New Meadow","capacidad":9875,"sponsor":"Morris Property","marca":"Oxen","temporada":"2024–25 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378041093","fuenteManual":"https://www.morrisandco.com/news/morris-property/shrewsbury-town-fc-unveils-brand-new-2024-25-home-shirt/ (camiseta 2024-25); marca: https://www.shrewsburytown.com/news/2024/january/oxen-to-become-kit-supplier/; capacidad: https://en.wikipedia.org/wiki/Shrewsbury_Town_F.C.","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'sunderland-gb': {
     2019: {"estadio":"Stadium of Light","capacidad":48707,"sponsor":"BETDAQ","marca":"Adidas","temporada":"2018–19 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380005833"},
     2020: {"estadio":"Stadium of Light","capacidad":49000,"sponsor":"Children with Cancer UK","marca":"Adidas","temporada":"2019–20 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1366642605"},

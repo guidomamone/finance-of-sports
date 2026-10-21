@@ -30,4 +30,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'exetercity-gb': { 2025: 'gb-leagueone' },
   'gillingham-gb': { 2025: 'gb-leaguetwo' },
   'lincolncity-gb': { 2025: 'gb-leagueone' },
+  'shrewsburytown-gb': { 2025: 'gb-leagueone' },
 });

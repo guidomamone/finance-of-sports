@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "shrewsburytown-gb",
+    "name": "Shrewsbury Town Football Club Limited",
+    "display_name": "Shrewsbury Town",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
+  "sources": [
+    {
+      "id": "shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl",
+      "club_id": "shrewsburytown-gb",
+      "title": "Shrewsbury Town Football Club Limited — shrewsbury-full-accounts-2024-25-ixbrl (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Informe oficial en formato XHTML (iXBRL)"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Ticket Sales","category":"matchday","subcategory":"matchday_competition","amount":1.840131,"disclosure":"aggregated"},
+        {"label":"Football League income","category":"media_rights","subcategory":"broadcasting","amount":2.363353,"disclosure":"aggregated"},
+        {"label":"Transfer fees","category":"player_transfers","subcategory":"player_sales","amount":0.250931,"disclosure":"aggregated"},
+        {"label":"Sundry Income","category":"other_revenue","subcategory":"other_income","amount":1.353709,"disclosure":"aggregated"},
+        {"label":"Academy income","category":"other_sporting_sections","subcategory":"youth_football","amount":0.555635,"disclosure":"aggregated"},
+        {"label":"Television and internet portal income","category":"media_rights","subcategory":"broadcasting","amount":0.022903,"disclosure":"aggregated"},
+        {
+          "label": "Contributions from support organisations",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.040037,
+          "disclosure": "aggregated"
+        },
+        {"label":"Food and Beverage sales","category":"venue","subcategory":"stadium_other","amount":0.787364,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-6.948641,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-1.188028,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003898,"tax":0.327092,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":7.214063,"expenses":8.136669,"net_result":-0.599412},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Other interest receivable and similar income","amount":null},
+          {"label":"Interest payable and similar expenses","amount":-0.003898},
+          {"label":"Tax on loss","amount":0.327092}
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true},"member_dues":{"in":"other_income","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

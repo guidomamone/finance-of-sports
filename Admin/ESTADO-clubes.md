@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 329 clubes, 1334 ejercicios, 24 países.
+TOTAL: 330 clubes, 1335 ejercicios, 24 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -210,7 +210,7 @@ ESPAÑA (19)
   Valencia CF         1 ejercicio (2024/2025), balance, EUR
   Villarreal CF       1 ejercicio (2023/2024), balance, EUR
 
-INGLATERRA (29)
+INGLATERRA (30)
   AFC Bournemouth          4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   AFC Wimbledon            1 ejercicio (2024/2025), balance, GBP, sin deuda/caja
   Arsenal                  4 ejercicios (2021/2022 a 2024/2025), balance, GBP
@@ -236,6 +236,7 @@ INGLATERRA (29)
   Manchester City          5 ejercicios (2020/2021 a 2024/2025), balance, GBP
   Newcastle United         7 ejercicios (2018/2019 a 2024/2025), balance, GBP
   Nottingham Forest        4 ejercicios (2021/2022 a 2024/2025), balance, GBP
+  Shrewsbury Town          1 ejercicio (2024/2025), balance, GBP, sin deuda/caja
   Sunderland               7 ejercicios (2018/2019 a 2024/2025), balance, GBP
   Tottenham Hotspur        4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   West Ham United          6 ejercicios (2019/2020 a 2024/2025), balance, GBP

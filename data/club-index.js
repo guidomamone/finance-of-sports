@@ -276,6 +276,7 @@ window.CLUB_INDEX = {
   "sccambuur-nl": {"n":"SC Cambuur","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "scheerenveen-nl": {"n":"SC Heerenveen","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "sevillafc-es": {"n":"Sevilla FC","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "shrewsburytown-gb": {"n":"Shrewsbury Town","c":"GB","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "silkeborg-dk": {"n":"Silkeborg IF","c":"DK","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "sinttruiden-be": {"n":"Sint-Truiden","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "slavenbelupo-hr": {"n":"Slaven Belupo","c":"HR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
