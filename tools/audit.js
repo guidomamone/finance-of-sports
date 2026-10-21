@@ -1814,6 +1814,42 @@ function pruebaDeDeporte(api) {
   for (const f of malos) findings.push({ sev: 'P1', code: 'deporte-muestra', msg: `el club de muestra de ${MUESTRAS.find(id => f.msg.includes(id)).replace(/^muestra|-gb$/g, '')} da ${f.sev} ${f.code}: ${f.msg.slice(0, 220)}` });
 }
 
+// (to-do 317, aprobado por la Auditora 4) EJERCICIO SIN RASTRO. Un club-año entre el primer ejercicio cargado de un club y el más reciente cargado de su país que ni está
+// cargado ni figura en data/faltantes/ con ningún estado (buscado, en-mano, sin-buscar: esos ya tienen su lugar). Cubre el hueco entre dos ejercicios y la cola hasta el último año del país.
+// P3 por club, con la lista de años. Se silencia por club en tools/audit-ignore.json, con motivo, después de mirarlo. Medido al nacer: 84 club-años en 51 clubes (24 de hueco y 60 de cola).
+function checkEjercicioSinRastro() {
+  const dirFal = path.join(ROOT, 'data/faltantes');
+  if (!fs.existsSync(dirFal)) return;
+  const enFaltantes = {}; // clubId -> Set de años, con cualquier estado
+  for (const f of fs.readdirSync(dirFal).filter((x) => x.endsWith('.js'))) {
+    const w = { window: {} };
+    try { vm.runInNewContext(fs.readFileSync(path.join(dirFal, f), 'utf8'), w); } catch (e) { continue; }
+    for (const liga of Object.values(w.window.LEAGUE_GAPS || {})) {
+      for (const [y, o] of Object.entries(liga)) for (const x of (o.faltan || [])) if (x.id) (enFaltantes[x.id] = enFaltantes[x.id] || new Set()).add(Number(y));
+    }
+  }
+  const clubes = []; const maxPais = {};
+  for (const rel of archivosData()) {
+    const rj = path.join(ROOT, rel.replace(/-data\.js$/, '.json'));
+    let j; try { j = JSON.parse(fs.readFileSync(rj, 'utf8')); } catch (e) { continue; }
+    const anios = (j.years || []).map((y) => y.fiscal_year).filter((y) => Number.isFinite(y));
+    if (!anios.length) continue;
+    const iso = path.basename(path.dirname(rj));
+    clubes.push({ id: j.club.id, iso, anios });
+    maxPais[iso] = Math.max(maxPais[iso] || 0, ...anios);
+  }
+  for (const c of clubes.sort((a, b) => a.id.localeCompare(b.id))) {
+    const tiene = new Set(c.anios); const fal = enFaltantes[c.id] || new Set();
+    const ultimo = Math.max(...c.anios); const hueco = []; const cola = [];
+    for (let y = Math.min(...c.anios); y <= maxPais[c.iso]; y++) if (!tiene.has(y) && !fal.has(y)) (y < ultimo ? hueco : cola).push(y);
+    if (!hueco.length && !cola.length) continue;
+    const partes = [];
+    if (hueco.length) partes.push(`hueco ${hueco.join(', ')}`);
+    if (cola.length) partes.push(`sin cargar después de ${ultimo}: ${cola.join(', ')}`);
+    add('P3', 'ejercicio-sin-rastro', `${c.id}: ${partes.join('; ')}. Ni cargado ni en data/faltantes/ (buscado, en-mano o sin-buscar). Si no hay documento publicado, silenciarlo en tools/audit-ignore.json con el motivo`);
+  }
+}
+
 function main() {
   let api;
   try { api = loadEngine(); }
@@ -1852,6 +1888,7 @@ function main() {
   checkReglasCategoria();
   checkDeportes();
   checkComaComida();
+  checkEjercicioSinRastro();
   pruebaDeDeporte(api);
 
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
