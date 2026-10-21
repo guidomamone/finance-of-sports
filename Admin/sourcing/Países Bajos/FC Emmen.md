@@ -17,3 +17,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2019 desde `Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf` (sourceId `fcemmen-nl-f-04-fce-jaarverslag-2018-2019-incl-jaarcijfers-def`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2020 desde `Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.pdf` (sourceId `fcemmen-nl-f-04-fce-jaarverslag-2019-2020-incl-jaarcijfers-def`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2021 desde `Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.pdf` (sourceId `fcemmen-nl-f-04-fce-jaarverslag-2020-2021-incl-jaarcijfers-def`).

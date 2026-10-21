@@ -103,6 +103,14 @@ window.RANKINGS["nl-eredivisie"] = {
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"fcemmen-nl", revenue:9.699, reportType:"official_balance_sheet",
+        sourceId:"fcemmen-nl-f-04-fce-jaarverslag-2020-2021-incl-jaarcijfers-def",
+        mix:[["Comercial / Sponsors",4.346],["Estadio",0.273],["Televisión",2.656],["Premios por competencias",0.434],["Otros ingresos",1.99]] },
+    ],
+  },
   2020: {
     leagueSize: null,
     clubs: [
