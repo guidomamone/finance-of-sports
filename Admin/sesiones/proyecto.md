@@ -33,6 +33,19 @@
   `Generados/Inglaterra/Bath Rugby/`) y verificados: los 5 cierran el resultado. Lote `Admin/lotes/lote-129.txt`. Ajuste `desglose` del Turnover
   en 2021-22 (19.557 £), 2022-23 (44.435), 2023-24 (22.985) y 2024-25 (39.778): la diferencia de redondeo (decisión 11), que hoy no entra (freno 1).
   2020-21 no tiene desglose: no lo necesita. 2024-25 cierra con «financiero e impuesto invertidos» (su formato imprime los gastos sin paréntesis).
+- **2020-21 (el año sin desglose, no depende del freno 1):** `validar-bloques` con API (US$ 0,006: 33 números confirmados), lote 129 corrido
+  `--sin-api` (los 5 frenan en la categorización, como se espera) y Jev `--desde-sesion` con las respuestas de rugby
+  (Turnover, Cost of sales y Administrative expenses al bolsón `lump_rugby_operations(_expense)`; Fair value movements y Other operating income a
+  `other_income`). **Freno 4** (`frenados-por-script.jsonl`): `--desde-sesion` valida con `sideOf()` del fútbol (L282) y rechaza el bolsón de rugby.
+  Para probarlo hizo falta el alta: `alta-club.mjs --escribir` da `bathrugby-gb` (el id que propone la tool, no `bath-gb` como decía el plan),
+  deporte `rugby` deducido de la liga. **El alta se revirtió** (sin un año cargado, el sitio mostraba un club vacío y Rugby con 0 clubes). Para
+  rehacerla, además del alta: en `data/leagues.js`, Rugby `active:true` y la liga
+  `'gb-premiershiprugby': { name:'Premiership Rugby', full:'Premiership Rugby', country:'GB', sport:'rugby', tier:1 }` (después de
+  `gb-scottishpremiership`); en `data/club-leagues/gb.js`, `'bathrugby-gb': { 2021..2025: 'gb-premiershiprugby' }`. Respuestas de Jev en el
+  scratchpad de esta sesión (`bath-cat/jev-2020-21.json`).
+- **Freno 2 marcado resuelto** (339, 121399a592) en lo que se arregló; el freno 4 es la parte que quedó.
+- **Freno 3** (anotado sin correr): `caja-deuda --personal --partir` escribe `wages_squad` (fútbol) y corre solo sobre un club publicado. La
+  compuerta de las dos filas NO frena a Bath (Administrative expenses es menor que el costo de personal).
 - Lo que sigue (necesita main, donde Pipeline 11 ya hizo que Jev y `cargar.mjs` lean el deporte): alta de `bath-gb` (deporte `rugby`), paso 4 de
   `carga-con-tokens.md` (Jev `--desde-sesion`, rubros en `.rubros.json`) y el resto. Faltan en main, según la principal: que Jev vea las
   descripciones de rugby y el bolsón `lump_rugby_operations` en `cargar.mjs`; y el freno 1.
