@@ -37,6 +37,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * 259: material de difusión (después de 241)
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
+* 332: buscar «The State of the Game» y otros informes parecidos sobre las finanzas del fútbol inglés, y ver para qué sirven: contrastar lo cargado, completar lo que falta y dar contexto en Ligas
 * 248: taxonomía genérica y subcategorías por deporte
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
@@ -195,3 +196,8 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    `Admin/Archive/`, HALLAZGOS, mediciones, dudas, registros, chats de sesiones) buscando tokens gastados en decidir o descubrir algo que
    después no llega a ningún lado: una decisión que no quedó como REGLA ni en un registro, un hallazgo que nadie vuelve a leer, una
    medición que no cambió nada. Proponer, para cada tipo, dónde tiene que quedar para que la próxima sesión no lo pague de nuevo.
+332. INFORMES SOBRE EL FÚTBOL INGLÉS (pedido de Guido, 2026-10-20). Buscar «The State of the Game» y los informes parecidos que
+   resumen las finanzas de los clubes ingleses (por ejemplo, la Annual Review of Football Finance de Deloitte, el informe de clubes de la
+   UEFA, los de la Premier League, la EFL o la FA). Para cada uno: quién lo publica, si es público, qué años y clubes cubre, y para qué
+   sirve: contrastar lo ya cargado (totales por club y por liga), completar años o clubes que faltan, o dar contexto en Ligas. Solo
+   sourcing y una nota en `Admin/sourcing/Inglaterra/`; no se transcribe ni se carga nada sin decisión de Guido.
