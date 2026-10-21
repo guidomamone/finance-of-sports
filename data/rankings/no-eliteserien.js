@@ -21,6 +21,7 @@ window.RANKINGS["no-eliteserien"] = {
   },
   2024: {
     leagueSize: 16,
+    sinDato: ["valerenga-no"],
     wiki: {"t":"2024 Eliteserien","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"molde-no", revenue:19.992, reportType:"official_balance_sheet",

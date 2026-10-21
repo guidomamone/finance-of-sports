@@ -13,7 +13,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'villarrealcf-es': { 2024: 'es-laliga' },
 
   'getafe-es': { 2024: 'es-laliga', 2025: 'es-laliga' },
-  'girona-es': { 2020: 'es-segunda', 2025: 'es-laliga' },
+  'girona-es': { 2020: 'es-segunda', 2021: 'es-segunda', 2022: 'es-segunda', 2023: 'es-laliga', 2025: 'es-laliga' },
   'espanyol-es': { 2024: 'es-segunda', 2025: 'es-laliga' },
 
   'osasuna-es': { 2022: 'es-laliga', 2024: 'es-laliga' },
