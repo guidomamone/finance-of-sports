@@ -34,7 +34,7 @@ window.RANKINGS["es-segunda"] = {
     clubs: [
       { id:"girona-es", revenue:17.297, reportType:"official_balance_sheet",
         sourceId:"girona-es-cuentas-anuales-2021-2022",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.593],["Otros ingresos",14.704]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",14.104],["Otros ingresos",3.193]] },
     ],
   },
   2021: {
