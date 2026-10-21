@@ -356,8 +356,11 @@ function checkTaxonomiaDeporte(api, dep, tax) {
 // Si aparece un caso nuevo que matchea el texto pero NO es una deducción fiscal
 // real, la salida es la de siempre: agregarlo a mano a `tools/audit-ignore.json`
 // no alcanza (ya está fuera del P2) — hay que angostar este regex.
-const DEDUCCION_FISCAL_INGRESO_RE = /imposto|tribut[oaã]|dedu[çc][aã]o|deduc(ci[oó]n|tion)|reten[cç][ãa]o|retenci[oó]n|devolu(ç[ãa]o|ci[oó]n)|rebaja/i;
+const DEDUCCION_FISCAL_INGRESO_RE = /imposto|tribut[oaã]|dedu[çc][aã]o|deduc(ci[oó]n|tion)|reten[cç][ãa]o|retenci[oó]n|devolu(ç[ãa]o|ci[oó]n)|rebaja|encargos sobre receitas|ertragsminderung|dedu[çc]/i;
 const esDeduccionFiscalIngresoConocida = label => DEDUCCION_FISCAL_INGRESO_RE.test(label || '');
+// Un gasto positivo cuyo rótulo dice que es neto (reversión de provisiones, reducciones, pérdidas netas de recuperos) no es un signo dado
+// vuelta: el rótulo ya lo explica (Auditora 4, 4ª corrida de P2 y P3). Solo el lado gasto.
+const GASTO_NETO_RE = /revers[õo]es|redu[çc][õo]es|reprises|terugnemingen|perdas\//i;
 
 // --- D6/D7/D8: higiene de las líneas ---------------------------------------
 function checkLineas(api) {
@@ -376,6 +379,8 @@ function checkLineas(api) {
         if (peso > 0.02) {
           if (sec === 'ingreso' && esDeduccionFiscalIngresoConocida(l.rawLabel)) {
             deduccionesFiscalesConocidas++;
+          } else if (sec === 'gasto' && GASTO_NETO_RE.test(l.rawLabel || '')) {
+            // rótulo neto: no se marca (ver GASTO_NETO_RE)
           } else {
             add('P2', 'signo-invertido', `${ref(clubId, year)} ${sec} "${l.rawLabel}": ${l.amountNative} (${(peso * 100).toFixed(1)}% de la sección) — confirmar que es una deducción real y no un signo dado vuelta`);
           }
