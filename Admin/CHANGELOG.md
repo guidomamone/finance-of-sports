@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 905 — El pipeline sabe el deporte de cada club (2026-10-20) [339 · bath-gb]
+
+- Sin default de fútbol en ninguna tool: el deporte sale de la ficha, el registro de altas (`altas-club.jsonl`, regenerado) o se pregunta; `lote.mjs` corre el alta gratis también en `--sin-api`. Jev `--desde-sesion`, `--personal --partir`, los sueldos y las categorías de `audit.js` usan la taxonomía del deporte. `audit.js` prueba un club de muestra de otro deporte (`deporte-muestra`, P1). `worktree.mjs preparar` enlaza `tools/node_modules`. Fútbol idéntico en todo lo medido. Todo aprobado por Auditora 4. `Admin/PIPELINE.md`, «Un deporte nuevo»; skill de onboarding: carga de prueba para un deporte nuevo (ok de Guido). 339 cerrado.
+
 ## Versión 904 — Verificar respeta el total exacto; aviso por coma comida en el OCR (2026-10-20) [339 · bath-gb]
 
 - `verificar.mjs` prueba el ajuste `desglose` antes de `cerrarNota()`: una nota de ingresos redondeada ya no pisa el Turnover exacto. En 346 documentos solo cambian los 4 años de Bath, que recuperan la diferencia (de £19.557 a £44.435). Aprobado por Auditora 4.

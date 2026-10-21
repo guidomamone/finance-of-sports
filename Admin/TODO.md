@@ -31,23 +31,22 @@ el número de la izquierda es el orden de trabajo.
 * Lo que está en marcha va marcado en cada bloque.
 
 **C. Técnico**
-1. 248 (Datos 4, Opus): esquema 2.0 y pantalla listos; falta cargar Bath Rugby
-2. 339 (Pipeline 11): que el pipeline sepa el deporte de cada club; las 4 condiciones aprobadas por Auditora 4 con cambios; codeando, Jev primero
-3. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
-4. 249: API en dominio propio (el último de C; no construirla todavía)
+1. 248 (Datos 4, Opus): esquema 2.0, pantalla y pipeline por deporte listos; cargando Bath Rugby (lote 129)
+2. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+3. 249: API en dominio propio (el último de C; no construirla todavía)
 
 **D. Orden de la casa**
-5. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
-6. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
-7. 257: skills que faltan
-8. 237 al: anexo UEFA para abrir las ventas
-9. 258: índice partido por país o liga (cuando la skill de escala lo diga)
-10. 338: correr todas las auditorías del proyecto
+4. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
+5. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
+6. 257: skills que faltan
+7. 237 al: anexo UEFA para abrir las ventas
+8. 258: índice partido por país o liga (cuando la skill de escala lo diga)
+9. 338: correr todas las auditorías del proyecto
 
 **E. Después de A a D (Guido, 2026-10-20)**
-11. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-12. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-13. 335: mails a clubes
+10. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+11. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+12. 335: mails a clubes
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -138,8 +137,3 @@ el número de la izquierda es el orden de trabajo.
 338. CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
    (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
    `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
-339. EL PIPELINE SABE EL DEPORTE (pedido de Guido, 2026-10-20). Con el 248 cada club tiene `club.sport` y su taxonomía, pero el pipeline
-   asume fútbol: Jev (typesafe.ai) recibe ejemplos y categorías de fútbol, igual los prompts de `categorizar-claude.mjs`, `alta-club.mjs`,
-   `CATS_CERO` y las preguntas de perfil de `cargar.mjs`, los chequeos de `audit.js`. Como ya se hizo con el país (`tools/pais-club.mjs`): Jev
-   recibe el deporte y los ejemplos del mismo deporte primero. Paso 1: inventario de todo lo que asume fútbol, con qué cambiaría y cuánto
-   cuesta. Después de la migración del 248.
