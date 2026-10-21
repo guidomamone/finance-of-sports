@@ -17,6 +17,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 931 — Lo estructurado no se paga con IA, parches contra mejoras generales y el resto del 257 (2026-10-21) [257 · 345 · 350 · 353 · 356 · 357 · brondby-dk]
+- Skills: sección 8 de auditoría (mejora general o parche, con su umbral de 3 documentos de 2 clubes) y su referencia en onboarding 3b; «lo estructurado no se paga con IA» en onboarding y auditoría (sección 4) y en CONVENCIONES; club-sourcing: un archivo bajado se mira con `file` (caso Brøndby 2025, que venía en gzip) y su troubleshooting en PIPELINE.md.
+- 257 partes 7 y cabos sueltos: verificar una pantalla y «Cómo verlo como archivo» pasan a `producto-y-pantalla/referencia/navegador-de-preview.md`; los pasos de worktree (con `data/sponsors.js` entre los generados) a `worktree.md`; cerrar un punto del TODO a la skill principal; HALLAZGOS de los descartes 314 y 298.
+- `xhtml-aarsrapport.mjs`: nunca pisa un PDF o `.md` que no generó; Plymouth 2022-23 (tabla anidada) y 16 portadas recuperadas. `lote.mjs` no paga IA sobre un documento xhtml-ixbrl sin `--pagar-ia-xhtml`; P1 `pago-ia-sobre-determinista`.
+- 356: 198 `.xhtml` británicos bajados (84 MB), los 68 con PDF oficial al lado renombrados a `-ixbrl`; links del registro danés para 20 años; copia descomprimida de Brøndby 2025.
+- 350 en espera de la tabla de ceros del Formato simplificado; ninguna fila se oculta en cero. TODO 357: mostrar las inyecciones de capital.
+
 ## Versión 930 — Lote 130: 12 años más, Lierse, 350 y británicos en iXBRL (2026-10-21) [345 · 350 · 355 · 356 · brondby-dk, fredericia-dk, girona-es, burnley-gb]
 - Onboarding 8: Brøndby 2021, FC København 2025 (individual), Fredericia 2021-25, Emmen 2020-21, Chapecoense 2019, Vålerenga 2024 (1. divisjon), Girona 2022-23, Nordsjælland 2025, Vejle 2025 y Goiás 2020. Burnley 2022 y 2023 tenían la liga al revés (`Corrige:`). Fredrikstad 2019-23 y Sarpsborg 2009-11 descartados: son de sociedades tenedoras de derechos, no del club.
 - Lierse: dos clubes (BCE distintos), sin alias entre ellos. 350: medición de categorías, votación de `grants_donations` (3 a 0) y propuesta de revisión de la taxonomía, sin aplicar.
