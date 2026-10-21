@@ -186,3 +186,18 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: `ced0a94508`, el deporte sin default fútbol, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: `ced0a94508` (`resolverDeporte`, `sport` en `altas-club.jsonl`, `club-sin-deporte` P1), APROBADO CON UN CAMBIO.
+
+### Qué queda (para TODO / 339)
+
+- `lote.mjs` corre `alta-club` solo fuera del modo `--sin-api`; hay que sacarlo del `if (!SIN_API)` (Pipeline 11).
+- Después del merge: `node tools/alta-club.mjs --todos` (gratis, ~20 s) en la principal, para que el registro de altas trackeado tenga `sport`.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
