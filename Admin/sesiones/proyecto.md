@@ -1,3 +1,32 @@
+# Sesión `proyecto` (Datos 4): to-do 248, diseño
+
+## Qué cambió
+
+- Nuevo `Admin/mediciones/248-plan.md`: diseño de la taxonomía genérica con subcategorías por deporte. Solo diseño: no se tocó ningún dato,
+  tool, esquema ni pantalla.
+- Resumen: cada línea pasa a tener `category` (genérica, la misma para cualquier deporte) y `subcategory` (la categoría de hoy, mismo id). La
+  genérica se DERIVA de un mapa fijo en `data/category-map.js`; nadie la elige, así que no se reabre el to-do 101. Esquema `club-v2`. El data
+  file y la pantalla quedan byte por byte iguales; la prueba de que las sumas no cambian son 4 chequeos (sección 4 del plan).
+
+## Qué queda
+
+- Guido decide las 8 decisiones de la sección 5 del plan (cada una con recomendación). Después, la implementación en 4 pasos (sección 4,
+  "Orden de trabajo"), en una sesión sin lotes corriendo.
+
+## Para TODO, CHANGELOG y ESTADO (los escribe la principal)
+
+- TODO 248: el diseño está hecho (`Admin/mediciones/248-plan.md`); falta el ok de Guido a las decisiones de la sección 5 y la implementación.
+- CHANGELOG: "248: diseño de la taxonomía genérica (category genérica + subcategory por deporte, esquema club-v2), en Admin/mediciones/248-plan.md".
+- ESTADO: nada deja de ser cierto todavía.
+
+## Hallazgo de paso (no se tocó)
+
+- Hay 2 líneas de ingreso con categoría de gasto que no son las de Racing: Atlético Mineiro 2024 y 2025, "Custo de mercadorias e produtos
+  (custo do manto vendido)", `admin_general_expense` con importe negativo en `revenue`. El plan las trata igual que las otras cruzadas
+  (decisión 3); si son un costo cargado del lado del ingreso, es tema de la carga de ese club, no de esta tarea.
+
+---
+
 # Sesión Datos 3 (rama proyecto)
 
 ## 246 — ids estables (hecho, un commit)
