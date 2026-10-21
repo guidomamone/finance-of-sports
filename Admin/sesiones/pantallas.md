@@ -1,3 +1,18 @@
+# Sesión pantallas (Pantallas 6): to-do 342, título de la pestaña y <base> doble
+
+## Qué cambió (para CHANGELOG)
+- 342: el `<title>` de la pestaña sigue a la ruta (`tituloDe()` en `js/principal.js`, desde `escribirURL()`): club o liga con el nombre del sitio, y la portada con el título
+  del sitio (en el idioma elegido). En la ruta por la que se entró queda el título de la página generada. Y `tools/generate-club-pages.js` ya no escribe su `<base href="/">`
+  (lo trae la plantilla `index.html`): una sola base por página. `--check` al día. Verificado en el preview: liga directa → club → atrás → Inicio. ASSET_V 1562.
+
+## Qué queda (para TODO)
+- Nada.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 6): to-do 340, rutas relativas en /club/<id> y /liga/<id>
 
 ## Qué cambió (para CHANGELOG)
