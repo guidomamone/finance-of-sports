@@ -731,6 +731,9 @@ archivo) — estas son dudas de CATEGORIZACIÓN o de dato puntual, no de que alg
   que el resto de las líneas de este ejercicio (que reconciliaron exacto, sin ningún residuo). **Vale
   preguntarle al club (o a la Dimayor directamente) qué contrato es este** antes de confiar en la
   categorización si en el futuro se carga otro ejercicio del mismo club y aparece de nuevo.
+- **Dictamen del revisor fiscal 2021, para pedirle a la Supersociedades** (no al club): el archivo del SIIS («1%%7p601!.PDF») devuelve
+  500 «URL blocked» con cualquier codificación, también desde el visor del portal. Lo que se bajó era una página HTML
+  (`dictamen-revisor-fiscal-2021-pagina-html.html`); no hay PDF real. Va con los demás pedidos del 335.
 
 ## Atlético Mineiro (`atleticomineiro-br`), Brasil — onboarding 2023/2024/2025, sesión 2026-09-24
 
