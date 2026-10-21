@@ -639,6 +639,33 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 
 - Nada.
 
+## Auditora 5: evidencia de Lierse (dos ids), para el proceso `mismo-club-dos-ids`, 2026-10-21
+
+No decido ni toco ids. Evidencia por dato, con su cita.
+
+### Qué cambió (para CHANGELOG)
+
+- Solo esta nota.
+
+### La evidencia
+
+- **Son dos entidades legales distintas, con número de empresa distinto, que presentan balance a la vez.**
+  - `liersekempenzonen-be`: «Lierse Kempenzonen», vzw (asociación sin fin de lucro), Ondernemingsnummer BE 0412.539.416, Lispersteenweg 237, 2500 Lier. Citas: `Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2021-06-30-individual.md` líneas 3, 11-12, 18 (cierre 30/06/2021); `…-2022-06-30-individual.md` líneas 9-10, 18; `…-2018-06-30-individual.md` líneas 9-11, 23 (mismo número en 2018 y en 2022).
+  - `liersesk-be`: «Koninklijke Lierse Sportkring», NV (sociedad anónima), BE 0699.764.829, la misma dirección. Citas: `Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.md` líneas 5, 11-13, 18-20 (el acta de constitución se publicó el 09-07-2018, línea 20); `…-2022-06-30-individual.md` líneas 10-11, 19 («K. Lierse S.K.», NV).
+- **Se solapan 2019 a 2021 con balance de las dos.** `Clubes/Bélgica/Lierse Kempenzonen/` tiene 2018 a 2022 y `Clubes/Bélgica/Lierse SK/` tiene 2019 a 2025. En `data/` los ingresos de la NV son 0 en 2019, 2020 y 2021 y 1,673 M EUR en 2022 (`official_totals.revenue`); los de la vzw son 0,417 / 0,866 / 0,799 / 0,558 M EUR en 2018 a 2021. Y `data/club-leagues/be.js` (líneas 18 y 26) pone a los dos ids en la misma liga en 2020 (be-div1amateur) y 2021 (be-challengerproleague).
+- **Fundación:** vzw, «fundada en 1972» según `Admin/sourcing/Bélgica/Lierse Kempenzonen.md` línea 7 y 29, sin cita de la KBO (no lo confirmé); NV, constituida el 9-jul-2018 (`Admin/sourcing/Bélgica/Lierse SK.md` línea 7; el acta, en el `.md` de 2021, línea 20).
+- **Historia (prensa, no documento):** el club se fundó en 1943 como Oosterzonen (Oosterwijk) y se mudó a Lier tras la quiebra del viejo Lierse S.K. (1906) en 2018; el viejo Lierse pidió la quiebra el 9-may-2018 y se formaron dos clubes con el nombre, K. Lyra-Lierse y K. Lierse Kempenzonen; Lierse Kempenzonen pasó a llamarse K. Lierse S.K. en 2024 sin fecha exacta. Fuentes: [Lierse S.K. (2018), Wikipedia](https://en.wikipedia.org/wiki/Lierse_S.K._(2018)), [Sporza 2018-06-01, Oosterzonen y Lierse acuerdan el estadio](https://sporza.be/nl/2018/06/01/oosterzonen-en-lierse-hebben-akkoord-over-stadion--lierse-kempen/). La nota de sourcing dice que la fusión es de 1972 (sin cita) y la prensa que la fusión es de 2018: contradicción sin resolver.
+- **Stamnummer de la federación:** no apareció en los `.md` ni en la búsqueda web; hay que pedírselo a la KBVB o al club. No lo inventé.
+- **Lo que no sé:** si la NV es la actividad profesional del club que la vzw sostenía hasta 2022 (la vzw no tiene depósito posterior a 2022 en la BNB, `Admin/sourcing/Bélgica/Lierse Kempenzonen.md` línea 28), o una entidad aparte; si en 2022 se duplica algún ingreso entre los dos balances (el `.md` de 2022 de la vzw no está cargado); y qué entidad firma hoy la licencia de la Pro League. Esos tres puntos los resuelve la KBO/BNB o el club, no los ids.
+
+### Qué queda
+
+- Nada para Pipeline: esto es evidencia para que Guido decida el proceso. Mientras no se decida, los dos ids quedan como están.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
 ## Auditora 5: correcciones y respuestas a Pipeline 13 (345 y faltantes), 2026-10-21
 
 ### Qué cambió (para CHANGELOG)
