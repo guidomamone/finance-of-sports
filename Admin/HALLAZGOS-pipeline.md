@@ -140,6 +140,7 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   2024, PAOK 2023 y 2025, Sandefjord 2010, Novorizontino 2025, OB 2021: Claude señala como estado una línea que no es un título con tabla)
   y 2 de la cola pasan a "consolidado" en FC Groningen, que es individual (error). No entra; salida en
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
+- **Un renglón con hijos que se deja en una línea (Onboarding 8, 2026-10-21; caso Girona 2021-23):** necesita un `fila` que reemplaza el primer hijo con el total del renglón y otro `fila` en 0 para cada hijo restante; si no, `verificar.mjs` cuenta la cifra dos veces y el resultado no cierra (ingresos 31,38 en vez de 21,61 M). Al tercer documento de dos clubes pasa a mejora general (sección 8 de `auditoria-finance-of-sports`).
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
 - **Brøndby 2025: `ProfitLoss` ambiguo en el XHTML (Pipeline 14, 2026-10-21): es un error de etiquetado del informe, no del perímetro.** Una sola
