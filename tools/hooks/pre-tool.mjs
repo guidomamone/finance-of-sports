@@ -34,6 +34,7 @@
 //   plan-en-worktree        (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
 //   subagente-con-regla     (deny) un Agent cuyo prompt no diga que Bash va «sin variables» (C-2).
 //   rsync-sin-no-links      (deny) `rsync -a` sin `--no-links` (C-6). `pdfs-con-ok` ahora también cubre `mv` sobre Clubes/ (ask).
+// Prueba con entradas simuladas (incluye los falsos positivos conocidos): node tools/hooks/probar-pre-tool.mjs
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
 import { execFileSync } from 'node:child_process';
@@ -96,10 +97,26 @@ function propuestasEnHead() {
 }
 const GIT_REESCRIBE = /\bgit(?:\s+-[cC]\s+\S+)*\s+(?:merge|checkout|restore|rebase|cherry-pick|reset|pull|stash|apply|am)\b/;
 
+// ¿Un Bash escribe EN .claude/skills/? Se mira el destino del comando, no si la ruta aparece en algún texto: un script que escribe otro archivo y
+// nombra `.claude/skills/` en lo que escribe no toca las skills. Sin los cuerpos de heredoc, el destino es el de una redirección, `tee`, `sed -i`/
+// `perl -i`, o el argumento de mv, cp, rm, touch o truncate; un python o node que abre o escribe esa ruta con open() o writeFile también cuenta.
+function bashEscribeEnSkills(cmd) {
+  const S = '[^\\s|;&<>]*\\.claude\\/skills\\/';
+  const sinCuerpos = cmd.replace(/<<-?\s*(['"]?)(\w+)\1[^\n]*\n[\s\S]*?\n\s*\2\b/g, (m) => m.split('\n')[0].replace(/<<-?\s*['"]?\w+['"]?/, ''));
+  const destino = [
+    new RegExp(`(^|[^0-9&])>>?\\s*(?!&|/dev/null)["']?${S}`),
+    new RegExp(`\\btee\\b[^|;&\\n]*${S}`),
+    new RegExp(`\\b(?:sed|perl)\\s+(?:-\\w+\\s+)*-i\\b[^|;&\\n]*${S}`),
+    new RegExp(`\\b(?:mv|cp|rm|touch|truncate)\\s+[^|;&\\n]*${S}`),
+  ];
+  if (destino.some((re) => re.test(sinCuerpos))) return true;
+  return /\b(?:python3?|node)\b/.test(cmd) && /\b(?:open|writeFileSync|writeFile|write_text|appendFileSync)\s*\([^)]*\.claude\/skills\//.test(cmd);
+}
+
 function skillsConOk(cmd) {
   const SKILLS = /\.claude\/skills\//;
   const porBash = herramienta === 'Bash';
-  const toca = EDITA.includes(herramienta) ? SKILLS.test(rutaEditada()) : bashEscribeEn(cmd, SKILLS);
+  const toca = EDITA.includes(herramienta) ? SKILLS.test(rutaEditada()) : bashEscribeEnSkills(cmd);
   if (!toca) return;
   if (porBash) {
     if (GIT_REESCRIBE.test(cmd)) return;
