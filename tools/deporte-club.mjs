@@ -43,6 +43,11 @@ function taxonomias() {
   _tax = vm.runInContext('SPORT_TAXONOMIES', ctx);
   return _tax;
 }
+// Los ids de las categorías GENÉRICAS (capa del 248): se pueden nombrar en una frase de regla sin ser subcategorías de un deporte.
+export function genericasIds() {
+  const ctx = vm.createContext({}); vm.runInContext(readFileSync(resolve(ROOT, 'data', 'category-map.js'), 'utf8'), ctx, { filename: 'data/category-map.js' });
+  return new Set(vm.runInContext('[...GENERIC_REVENUE_CATEGORIES, ...GENERIC_EXPENSE_CATEGORIES].map((g) => g.id)', ctx));
+}
 export function deportesConTaxonomia() { return Object.keys(taxonomias()); }
 // Las subcategorías que admite el deporte: { revenue: Set, expense: Set, todas: Set (ingreso + gasto), version } o null si no tiene taxonomía.
 // `todas` es la unión: hay ejemplos cargados con una categoría del otro lado (exceptional_items en un ingreso de Racing) que siguen siendo válidos.

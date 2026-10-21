@@ -268,7 +268,8 @@ const CRITERIOS = `CRITERIOS DEL SITIO (resumen del skill club-data-mapping; si 
 - Intereses, diferencias de cambio, resultado financiero, impuesto a las ganancias, subtotales y totales NO son líneas del sitio: respondé ${NOT_A_LINE}.`;
 
 // (to-do 329) Las reglas de categoría que salieron de una votación o de una decisión de Guido (líneas «CATEGORÍA (prompt):» de Admin/CONVENCIONES-DATOS.md). Mandan sobre los criterios de arriba.
-const REGLAS_DECIDIDAS = (() => { const r = reglasParaPrompt(); return r.length ? `\n\nREGLAS YA DECIDIDAS (votaciones y decisiones de Guido; mandan sobre los criterios de arriba):\n${r.join('\n')}` : ''; })();
+// (to-do 339) las reglas sin deporte van a todos; las marcadas `CATEGORÍA (prompt, <deporte>)`, solo al prompt de ese deporte
+const reglasDecididas = (deporte) => { const r = reglasParaPrompt(deporte); return r.length ? `\n\nREGLAS YA DECIDIDAS (votaciones y decisiones de Guido; mandan sobre los criterios de arriba):\n${r.join('\n')}` : ''; };
 
 // (to-do 339) Los criterios son del fútbol. Otro deporte recibe solo lo que no depende del deporte (la convención del club y qué no es una línea) hasta que
 // alguien escriba los suyos: sin criterios propios el prompt lo dice, no aplica los del fútbol.
@@ -289,7 +290,7 @@ ${fmt('revenue', 'INGRESO')}
 CATEGORÍAS DE GASTOS:
 ${fmt('expense', 'GASTO')}
 
-${criteriosDe(deporte)}${REGLAS_DECIDIDAS}
+${criteriosDe(deporte)}${reglasDecididas(deporte)}
 
 CÓMO RESPONDER:
 - Una entrada por cada rubro PENDIENTE (los marcados con [#id]), con su id. No categorices las filas sin id: son contexto.

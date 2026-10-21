@@ -4,7 +4,11 @@
 // Admin/CONVENCIONES-DATOS.md) tienen que llegarles a Jev y a Claude, que solo veían ejemplos ya cargados y categorias-aprendidas.jsonl.
 //
 // LA CONVENCIÓN (dos líneas dentro de la sección `## REGLA:` de la regla, al final, una por cada cosa que la regla decide):
-//   CATEGORÍA (prompt): <una frase: qué rubros y a qué categoría>       va al prompt de categorizar-claude.mjs (b)
+//   CATEGORÍA (prompt): <una frase: qué rubros y a qué categoría>       va al prompt de categorizar-claude.mjs (b), de todos los deportes
+//   CATEGORÍA (prompt, rugby): <frase>                                   (to-do 339) solo al prompt de ese deporte (id de SPORTS en data/leagues.js)
+// Todo id de categoría (con guion bajo) que nombra la frase tiene que ser una subcategoría del deporte de la regla, o de TODOS los deportes activos si no lleva deporte
+// (más las genéricas del 248 y las claves financieras del JSON, que no son subcategorías). Un id de un solo deporte en una regla de todos hace que el prompt de otro
+// deporte le pida una categoría que no existe: `node tools/reglas-categoria.mjs` lo marca y sale con código 1.
 //   EJEMPLO-CATEGORÍA: <club-id> | revenue|expense | <etiqueta tal cual> | <categoría>     un caso real; se registra como ejemplo (a)
 // (a) `--escribir` agrega cada EJEMPLO a Admin/registros/categorias-aprendidas.jsonl (confianza 1, modelo `guido`, motivo con el título de la regla), una
 // sola vez. Lo aprendido se usa como precedente de ESE club y como ejemplo para Jev y Claude de los demás; lo cargado en el sitio gana sobre lo aprendido
@@ -16,6 +20,7 @@
 // ============================================================================
 import { readFileSync, appendFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { categoriasDeDeporte, deporteDeClub, deportes, deportesActivos, genericasIds } from './deporte-club.mjs'; // (to-do 339) la regla puede ser de un deporte
 
 const ROOT = resolve(import.meta.dirname, '..');
 const DOC = resolve(ROOT, 'Admin', 'CONVENCIONES-DATOS.md');
@@ -25,11 +30,11 @@ export function leerReglasCategoria() {
   const reglas = []; let actual = null;
   for (const [i, linea] of readFileSync(DOC, 'utf8').split('\n').entries()) {
     const h = linea.match(/^##\s+REGLA:\s*(.+)$/);
-    if (h) { actual = { titulo: h[1].trim(), prompt: [], ejemplos: [] }; reglas.push(actual); continue; }
+    if (h) { actual = { titulo: h[1].trim(), prompt: [], promptItems: [], ejemplos: [] }; reglas.push(actual); continue; }
     if (/^##\s/.test(linea)) { actual = null; continue; }
     if (!actual) continue;
-    const p = linea.match(/^CATEGOR[ÍI]A \(prompt\):\s*(.+)$/);
-    if (p) { actual.prompt.push(p[1].trim()); continue; }
+    const p = linea.match(/^CATEGOR[ÍI]A \(prompt(?:,\s*([^)\s]+))?\):\s*(.+)$/);
+    if (p) { actual.prompt.push(p[2].trim()); actual.promptItems.push({ texto: p[2].trim(), deporte: p[1] || null, linea: i + 1 }); continue; }
     const e = linea.match(/^EJEMPLO-CATEGOR[ÍI]A:\s*(.+)$/);
     if (e) { const [club, lado, etiqueta, categoria] = e[1].split('|').map((x) => x.trim()); actual.ejemplos.push({ club, lado, etiqueta, categoria, linea: i + 1 }); }
   }
@@ -37,17 +42,28 @@ export function leerReglasCategoria() {
 }
 
 // Las frases para el prompt de categorizar-claude.mjs (solo texto: no importa nada del categorizador, que importa esto).
-export function reglasParaPrompt() {
-  return leerReglasCategoria().flatMap((r) => r.prompt.map((t) => `- ${t} (${r.titulo.replace(/\s*\(.*$/, '')})`));
+// `deporte`: solo las reglas de todos los deportes y las de ese deporte (sin argumento: 'futbol', como era cuando todo era fútbol).
+export function reglasParaPrompt(deporte = 'futbol') {
+  return leerReglasCategoria().flatMap((r) => r.promptItems.filter((x) => !x.deporte || x.deporte === deporte).map((x) => `- ${x.texto} (${r.titulo.replace(/\s*\(.*$/, '')})`));
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const reglas = leerReglasCategoria(); const errores = [];
-  // las categorías de data/category-map.js (no se importa categorizar-claude.mjs: él importa este archivo)
-  const src = readFileSync(resolve(ROOT, 'data', 'category-map.js'), 'utf8');
-  const nombres = (arr) => { const a = src.indexOf(`const ${arr} = [`); return new Set([...src.slice(a, src.indexOf('];', a)).matchAll(/^\s*'([a-z_]+)',?/gm)].map((m) => m[1])); };
-  const CATS = { revenue: nombres('REVENUE_CATEGORIES'), expense: nombres('EXPENSE_CATEGORIES') }; const clubs = readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8');
-  const ladoDe = (c) => (CATS.revenue.has(c) ? 'revenue' : CATS.expense.has(c) ? 'expense' : null);
+  // (to-do 339) las categorías válidas son las de la taxonomía del deporte (data/category-map.js, SPORT_TAXONOMIES); no se importa categorizar-claude.mjs: él importa este archivo
+  const clubs = readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8');
+  // claves que una frase puede nombrar sin ser subcategorías de un deporte: las genéricas del 248 y las financieras del JSON
+  const NO_SUBCATEGORIAS = new Set([...genericasIds(), 'profit_on_player_sales', 'asset_sales', 'net_interest', 'gross_debt', 'staff_cost', 'no_es_rubro']);
+  for (const r of reglas) for (const x of r.promptItems) {
+    const q = `L${x.linea} (${r.titulo.slice(0, 50)})`;
+    if (x.deporte && !deportes().some((d) => d.id === x.deporte)) { errores.push(`${q}: el deporte «${x.deporte}» no es un id de SPORTS en data/leagues.js`); continue; }
+    const ids = [...new Set(x.texto.match(/\b[a-z]+(?:_[a-z]+)+\b/g) || [])].filter((i) => !NO_SUBCATEGORIAS.has(i));
+    const deDeporte = x.deporte ? [x.deporte] : deportesActivos();
+    for (const id of ids) for (const d of deDeporte) {
+      const t = categoriasDeDeporte(d);
+      if (!t) errores.push(`${q}: nombra «${id}» y el deporte «${d}» no tiene taxonomía en category-map.js`);
+      else if (!t.todas.has(id)) errores.push(`${q}: «${id}» no es una categoría de ${d}${x.deporte ? '' : ' (la regla es de todos los deportes activos: marcala con CATEGORÍA (prompt, <deporte>) o sacá el id de la frase)'}`);
+    }
+  }
   const ya = existsSync(APRENDIDAS) ? readFileSync(APRENDIDAS, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
   const faltan = [];
   for (const r of reglas) for (const e of r.ejemplos) {
@@ -55,8 +71,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (!e.club || !e.lado || !e.etiqueta || !e.categoria) { errores.push(`${q}: el ejemplo necesita club | lado | etiqueta | categoría`); continue; }
     if (!clubs.includes(`id:'${e.club}'`)) errores.push(`${q}: el club «${e.club}» no está en data/clubs.js`);
     if (!['revenue', 'expense'].includes(e.lado)) errores.push(`${q}: lado «${e.lado}» (revenue | expense)`);
-    if (!ladoDe(e.categoria)) errores.push(`${q}: la categoría «${e.categoria}» no existe en category-map.js`);
-    else if (ladoDe(e.categoria) !== e.lado) errores.push(`${q}: «${e.categoria}» es de ${ladoDe(e.categoria)} y el ejemplo dice ${e.lado}`);
+    const dClub = deporteDeClub(e.club); const tx = dClub ? categoriasDeDeporte(dClub) : null; // el ejemplo se valida contra el deporte del club del ejemplo
+    const ladoDe = (c) => (tx?.revenue.has(c) ? 'revenue' : tx?.expense.has(c) ? 'expense' : null);
+    if (dClub && !tx) errores.push(`${q}: el deporte «${dClub}» de ${e.club} no tiene taxonomía en category-map.js`);
+    else if (tx && !ladoDe(e.categoria)) errores.push(`${q}: la categoría «${e.categoria}» no existe en la taxonomía de ${dClub} (category-map.js)`);
+    else if (tx && ladoDe(e.categoria) !== e.lado) errores.push(`${q}: «${e.categoria}» es de ${ladoDe(e.categoria)} y el ejemplo dice ${e.lado}`);
     if (!ya.some((x) => x.club === e.club && x.lado === e.lado && x.label === e.etiqueta && x.categoria === e.categoria && /^regla de votación/.test(x.motivo || ''))) faltan.push({ r, e });
   }
   console.log(`${reglas.length} reglas en CONVENCIONES-DATOS.md; ${reglas.filter((r) => r.prompt.length).length} con frase para el prompt; ${reglas.reduce((a, r) => a + r.ejemplos.length, 0)} ejemplos; ${faltan.length} sin registrar en categorias-aprendidas.jsonl.`);
