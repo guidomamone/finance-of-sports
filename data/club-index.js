@@ -71,7 +71,7 @@ window.CLUB_INDEX = {
   "celtic-gb": {"n":"Celtic","c":"GB","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "cerclebrugge-be": {"n":"Cercle Brugge","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "cerezoosaka-jp": {"n":"Cerezo Osaka","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "chapecoense-br": {"n":"Chapecoense","c":"BR","q":"full","y":3,"last":2022,"yrs":[[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2017,"official_balance_sheet"]]},
+  "chapecoense-br": {"n":"Chapecoense","c":"BR","q":"full","y":4,"last":2022,"yrs":[[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2019,"official_balance_sheet"],[2017,"official_balance_sheet"]]},
   "charleroi-be": {"n":"Charleroi","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "chaves-pt": {"n":"Chaves","c":"PT","q":"full","y":2,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "chelsea-gb": {"n":"Chelsea","c":"GB","q":"full","y":6,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"]]},

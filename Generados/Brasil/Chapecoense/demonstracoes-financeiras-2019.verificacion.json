@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.pdf",
  "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md",
- "generado": "2026-10-21T12:48:25.996Z",
+ "generado": "2026-10-21T14:00:34.488Z",
  "scriptHuella": "f2a64e48f42b",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "chapecoense-br",
  "year": 2019,
  "escala": {
@@ -13,12 +13,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "9b15998",
-  "932061a",
-  "01d86a1",
-  "76b49ae"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -48,9 +43,10 @@
   }
  ],
  "notas": [
+  "duda de localizar ya contestada para el club (escala, \"Bilheteria\"): aceptar, en demonstracoes-financeiras-2019.pdf",
+  "duda de extraer ya contestada para el club (columna, \"Outras Receitas Operacionais\"): aceptar, en demonstracoes-financeiras-2019.pdf",
   "duda de extraer que no afecta la carga: L2037 consolidado 2018 = 17 y controladora 2018 = 170; con 17 el total 2018 (1.626) no cierra, probable error de transcripción del año anterior.",
-  "duda de extraer que no afecta la carga: b42 (L1878-L1886) no indica perímetro; el total 3.419 coincide en ambos.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: b42 (L1878-L1886) no indica perímetro; el total 3.419 coincide en ambos."
  ],
  "reintentar": null,
  "reintentado": false,

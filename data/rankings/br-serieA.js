@@ -174,6 +174,14 @@ window.RANKINGS["br-serieA"] = {
         mix:[["Cuotas Sociales",0.767],["Comercial / Sponsors",0.91],["Estadio",0.07],["Televisión",7.453],["Premios por competencias",0.345],["Venta de Jugadores",0.776],["Otros ingresos",0.627]] },
     ],
   },
+  2019: {
+    leagueSize: null,
+    clubs: [
+      { id:"chapecoense-br", revenue:18.668, reportType:"official_balance_sheet",
+        sourceId:"chapecoense-br-demonstracoes-financeiras-2019",
+        mix:[["Cuotas Sociales",2.101],["Comercial / Sponsors",3.672],["Estadio",0.848],["Televisión",9.765],["Premios por competencias",1.86],["Venta de Jugadores",1.378],["Otros ingresos",-0.956]] },
+    ],
+  },
   2017: {
     leagueSize: 20,
     wiki: {"t":"2017 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-30","n":20},

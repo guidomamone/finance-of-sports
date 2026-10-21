@@ -49,6 +49,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'chapecoense-br': {
     2017: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora Alimentos","marca":"Umbro","temporada":"2017 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374511888"},
+    2019: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora Coop","marca":"Umbro","fuente":"https://en.wikipedia.org/wiki/2019_Campeonato_Brasileiro_S%C3%A9rie_A","fuenteManual":"https://en.wikipedia.org/wiki/2019_Campeonato_Brasileiro_S%C3%A9rie_A","manual":["estadio","capacidad","sponsor","marca"]},
     2021: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora Coop","marca":"Umbro","temporada":"2021 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375901035"},
     2022: {"estadio":"Arena Condá","capacidad":20089,"sponsor":"Aurora","marca":"Umbro","temporada":"2022 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376405033"},
   },
