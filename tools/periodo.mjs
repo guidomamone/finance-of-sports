@@ -21,6 +21,7 @@
 //
 // CÓMO DECIDE (en este orden; solo mira las 6 primeras páginas y las líneas cortas, donde están los títulos, para no confundirse con la
 // prosa de las notas, que habla de "trimestres" o "seis meses" por cualquier motivo):
+//   0. Si el .md salió de un informe XHTML (iXBRL) y se pasa el XHTML ({ xhtml }, xhtmlHermano()): el período ETIQUETADO (periodoIxbrl), antes del texto.
 //   1. "N meses" explícito cerca de una palabra de cierre/período ("three months ended", "seis meses terminados", "üç aylık", "за 9 месяцев",
 //      "sechs Monate", "9M", "H1", "1T", "Q3"), en ~15 idiomas. Número en cifras o en palabras.
 //   2. Rango de fechas explícito ("del 1 de enero al 30 de junio de 2019", "01.01.2019 - 30.09.2019", "1 July 2018 to 31 December 2018"):
@@ -40,6 +41,7 @@
 
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve, join, basename } from 'node:path';
+import { gunzipSync } from 'node:zlib';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const norm = (t) => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ı/g, 'i').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/ß/g, 'ss').replace(/å/g, 'a');
@@ -105,6 +107,55 @@ function fechasDe(linea) {
   return out.sort((p, q) => p.i - q.i);
 }
 const iso = (f) => `${f.a}-${String(f.m).padStart(2, '0')}-${String(f.d).padStart(2, '0')}`;
+
+// ---------------------------------------------------------------- ESCALÓN 0: el período etiquetado del iXBRL (to-do 356, pedido de Onboarding 9)
+// Un .md que salió de un informe XHTML (tools/xhtml-aarsrapport.mjs) tiene al lado el XHTML, y el XHTML ETIQUETA el período: Companies House
+// `EndDateForPeriodCoveredByReport` / `StartDateForPeriodCoveredByReport`, el registro danés `ReportingPeriodEndDate` / `ReportingPeriodStartDate`
+// (sin el prefijo, que cambia: d, ns10, e). El texto de esos .md no lo dice en un título: 16 de los 68 británicos del lote 133 salían «anual, sin
+// cierre, confianza baja» y frenaban (Burton, Barnsley, Chesterfield, Gillingham, Wigan, Falkirk, Lincoln). El valor de la etiqueta puede venir
+// en un <span> anidado y en varios formatos («30 June 2023» ixt:datelonguk, «30.6.25» ixt2:datedaymonthyear, «2025-12-31»); si está vacío o
+// no se lee, vale la fecha del contexto del hecho (xbrli:endDate o instant de su contextRef). COMPUERTA: un solo cierre (dos valores distintos de
+// la etiqueta de cierre: no decide, sigue el texto). Con el inicio, los meses; sin él, se supone anual como el resto de la escalera.
+export function xhtmlHermano(mdAbs, mdText) {
+  const x = String(mdAbs).replace(/\.md$/, '.xhtml');
+  return /xhtml-aarsrapport\.mjs/.test(String(mdText).slice(0, 400)) && existsSync(x) ? x : null;
+}
+const MESES_EN = { january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 };
+function fechaIxbrl(txt) {
+  const t = String(txt || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+  let m = t.match(/^(\d{4})-(\d{2})-(\d{2})$/); if (m) return { a: +m[1], m: +m[2], d: +m[3] };
+  m = t.match(/^(\d{1,2})[./-](\d{1,2})[./-](\d{2}|\d{4})$/); if (m) return { a: m[3].length === 2 ? 2000 + +m[3] : +m[3], m: +m[2], d: +m[1] };
+  m = t.match(/^(\d{1,2})(?:st|nd|rd|th)? ([a-z]+),? (\d{4})$/i); if (m && MESES_EN[m[2].toLowerCase()]) return { a: +m[3], m: MESES_EN[m[2].toLowerCase()], d: +m[1] };
+  return null;
+}
+export function periodoIxbrl(xhtmlAbs) {
+  let src; try { const b = readFileSync(xhtmlAbs); src = (b[0] === 0x1f && b[1] === 0x8b ? gunzipSync(b) : b).toString('utf8'); } catch { return null; }
+  const contextos = new Map();
+  for (const c of src.matchAll(/<(?:[\w-]+:)?context\b[^>]*\bid="([^"]+)"[\s\S]*?<\/(?:[\w-]+:)?context>/g)) {
+    const fin = (c[0].match(/<(?:[\w-]+:)?(?:endDate|instant)>\s*([\d-]{10})\s*</) || [])[1]; if (fin) contextos.set(c[1], fin);
+  }
+  const leer = (nombres) => {
+    const vals = new Set();
+    // cada etiqueta de apertura por separado, con el texto hasta el cierre más cercano: una ix:nonNumeric puede ir ANIDADA en otra (Barnsley
+    // 2023-24: el inicio dentro de una más grande) y un match de apertura a cierre se tragaba la de adentro
+    for (const h of src.matchAll(/<ix:nonNumeric\b([^>]*)>/g)) {
+      const name = ((h[1].match(/\bname="([^"]+)"/) || [])[1] || '').replace(/^.*:/, ''); if (!nombres.includes(name)) continue;
+      const desde = h.index + h[0].length; const hasta = src.indexOf('</ix:nonNumeric>', desde);
+      const f = fechaIxbrl(src.slice(desde, hasta < 0 ? desde : hasta)); const ctx = contextos.get((h[1].match(/\bcontextRef="([^"]+)"/) || [])[1]);
+      const v = f ? iso(f) : ctx || null; if (v) vals.add(v);
+    }
+    return [...vals];
+  };
+  const fins = leer(['EndDateForPeriodCoveredByReport', 'ReportingPeriodEndDate']);
+  if (fins.length !== 1 || fins[0] > `${new Date().getFullYear() + 2}-12-31`) return null; // el mismo tope que el texto: nunca más de 2 años después de hoy
+  const inis = leer(['StartDateForPeriodCoveredByReport', 'ReportingPeriodStartDate']);
+  const cierre = fins[0]; let meses = 12; let inicio;
+  if (inis.length === 1) {
+    inicio = inis[0]; // los días del período (con el último), en meses: 2022-07-01 a 2023-06-30 son 365 días, 12 meses
+    meses = Math.round(((Date.parse(cierre) - Date.parse(inicio)) / 864e5 + 1) / (365.25 / 12));
+  }
+  return { tipo: meses === 12 ? 'anual' : meses > 12 ? 'otro' : tipoDeMeses(meses), meses, ...(inicio ? { inicio } : {}), cierre, cierreDe: 'iXBRL: período etiquetado (escalón 0)', evidencia: { pagina: null, texto: `iXBRL: ${inicio ? `${inicio} a ` : ''}${cierre}` }, confianza: 'alta' };
+}
 const finDeMes = (f) => f.d >= 28;
 
 function paginasDe(md) {
@@ -113,7 +164,10 @@ function paginasDe(md) {
   return marks.map((m, i) => ({ n: Number(m[1]), body: md.slice(m.index + m[0].length, i + 1 < marks.length ? marks[i + 1].index : md.length) }));
 }
 
-export function periodoDe(mdText, nombreArchivo = '') {
+export function periodoDe(mdText, nombreArchivo = '', { xhtml = null } = {}) {
+  // ESCALÓN 0: el período ETIQUETADO del informe XHTML (iXBRL) del que salió el .md, antes del texto (ver periodoIxbrl)
+  const ix = xhtml ? periodoIxbrl(xhtml) : null;
+  if (ix) return terminar(ix, nombreArchivo);
   const pags = paginasDe(mdText).slice(0, 6);
   // Líneas "título": cortas, fuera de tablas (o encabezados de tabla), sin ser un párrafo de prosa.
   const lineas = [];
@@ -318,6 +372,9 @@ export function periodoDe(mdText, nombreArchivo = '') {
     const [mejor, v] = [...votos].sort((a, b) => b[1].n - a[1].n || (a[0] < b[0] ? 1 : -1))[0] || [];
     if (mejor && mejor !== res.cierre && v.n >= Number(process.env.PERIODO_PAR_MIN || 1)) { res.cierreTitulos = res.cierre; res.cierre = mejor; res.cierreDe = 'par de encabezado (to-do 237 a + ac)'; res.evidencia = { pagina: v.pagina, texto: v.texto }; }
   }
+  return terminar(res, nombreArchivo);
+}
+function terminar(res, nombreArchivo) {
   if (res.tipo === 'anual' && res.cierre) res.anual = res.cierre.slice(5, 7) === '12' ? 'calendario' : 'temporada';
   // ¿El nombre del archivo dice otra cosa? (fecha AAAA-MM-DD / DD-MM-AAAA o el año de cierre)
   const nom = basename(nombreArchivo);
@@ -345,7 +402,7 @@ function todosLosMd() {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const args = process.argv.slice(2);
   if (args.includes('--todos') || args.includes('--grupos')) {
-    const filas = todosLosMd().map((f) => ({ md: f.replace(ROOT + '/', ''), ...periodoDe(readFileSync(f, 'utf8'), f) }));
+    const filas = todosLosMd().map((f) => { const t = readFileSync(f, 'utf8'); return { md: f.replace(ROOT + '/', ''), ...periodoDe(t, f, { xhtml: xhtmlHermano(f, t) }) }; });
     if (args.includes('--grupos')) {
       const g = {};
       for (const r of filas.filter((x) => x.tipo !== 'anual')) { const club = r.md.split('/').slice(1, 3).join('/'); const y = (r.cierre || '????').slice(0, 4); ((g[club] ??= {})[y] ??= []).push(`${r.tipo}${r.cierre ? ' al ' + r.cierre : ''}`); }
@@ -356,6 +413,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       for (const r of filas.filter((x) => !args.includes('--solo-no-anual') || x.tipo !== 'anual')) if (r.tipo !== 'anual' || r.nombreNoCoincide) console.log(`  ${r.tipo.padEnd(12)} ${String(r.meses ?? '?').padStart(2)}m ${r.cierre || '?'}${r.nombreNoCoincide ? ' NOMBRE≠' : ''}  ${r.md}${r.evidencia ? `\n      pág. ${r.evidencia.pagina}: ${r.evidencia.texto.slice(0, 120)}` : ''}`);
     }
   } else if (args[0]) {
-    console.log(JSON.stringify(periodoDe(readFileSync(resolve(args[0]), 'utf8'), args[0]), null, 1));
+    const t = readFileSync(resolve(args[0]), 'utf8');
+    console.log(JSON.stringify(periodoDe(t, args[0], { xhtml: xhtmlHermano(resolve(args[0]), t) }), null, 1));
   } else console.error('Uso: node tools/periodo.mjs <archivo.md> | --todos [--solo-no-anual] | --grupos');
 }
