@@ -1,4 +1,9 @@
 {
+  "permissions": {
+    "allow": [
+      "Read(//Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/**)"
+    ]
+  },
   "hooks": {
     "PreToolUse": [
       {
