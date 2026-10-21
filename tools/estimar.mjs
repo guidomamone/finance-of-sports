@@ -48,6 +48,11 @@ const { cierreDelClub } = createRequire(import.meta.url)('./cierre-ejercicio.js'
 
 const ROOT = resolve(import.meta.dirname, '..');
 
+// PAÍSES SIN ESTIMADOS (Guido, 2026-10-20): el modelo erra demasiado ahí (Estonia 86%). Un país de esta lista no publica ningún estimado en Ligas
+// (ni club nuevo ni año que falta); sus años reales siguen entrando al ajuste del resto. Es el único lugar donde se declara: sacar el país de acá
+// y correr `node tools/estimar.mjs --escribir` lo vuelve a prender. Volver a medir cuando entren más años (`--medir --detalle`).
+const PAISES_SIN_ESTIMAR = new Set(['ee']);
+
 // q: posición final normalizada (0 = campeón, 1 = último) del club en esa liga-año, de las tablas de Wikipedia que une faltantes-liga.mjs.
 // El año de rankings es el del ejercicio; la tabla es de la temporada (un cierre entre septiembre y diciembre en liga partida -> la
 // temporada que termina al año siguiente, la regla de faltantes-liga.mjs).
@@ -205,7 +210,7 @@ function estimaciones() {
   const nuevo = modeloNuevo(rows, ix);
   const out = {}; const r3 = (v) => Math.round(v * 1000) / 1000;
   for (const [liga, ys] of Object.entries(g.window.LEAGUE_GAPS || {})) for (const [S, v] of Object.entries(ys)) {
-    if (v.reciente) continue;
+    if (v.reciente || PAISES_SIN_ESTIMAR.has(liga.slice(0, 2))) continue;
     const partida = /[–-]\d{2,4}\b/.test(paginas[`${liga}|${S}`] || '');
     for (const f of v.faltan) {
       const enSitio = !!(f.id && CLUBS[f.id]);
