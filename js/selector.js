@@ -864,7 +864,8 @@ window.CLUB_SELECTOR = (function(){
         yearsOf(id).forEach(function(p){
           var o = document.createElement('option');
           o.value = p[0];
-          o.textContent = labelAnio(p[0], [id]);
+          // El desplegable nativo no admite una etiqueta: la marca COVID va en el texto de la opción.
+          o.textContent = labelAnio(p[0], [id]) + (window.esCovid(id, p[0]) ? ' · COVID' : '');
           if(p[0] === par[1]) o.selected = true;
           sel.appendChild(o);
         });
@@ -873,6 +874,8 @@ window.CLUB_SELECTOR = (function(){
           renderModal();
         });
         linea.appendChild(sel);
+        var elegido = par[1] != null ? par[1] : (yearsOf(id)[0] || [])[0];
+        if(elegido != null && window.esCovid(id, elegido)) linea.insertAdjacentHTML('beforeend', window.marcaCovidHtml('s', true));
         // La × solo cuando ese club tiene más de un ejercicio: sacar el único sería
         // sacar el club, y para eso está el paso anterior.
         if(b.pares.filter(function(p){ return p[0] === id; }).length > 1){
@@ -1764,13 +1767,16 @@ window.CLUB_SELECTOR = (function(){
         b.title = t('finanzas.card.unpublishedTip', 'El club todavía no publicó este ejercicio, o no lo conseguimos');
       } else {
         b.setAttribute('aria-pressed', on ? 'true' : 'false');
-        b.addEventListener('click', function(){
+        b.addEventListener('click', function(ev){
+          // Tocar la marca COVID abre su globo y no elige el ejercicio (como en Finanzas).
+          if(ev.target && ev.target.closest && ev.target.closest('.covid')) return;
           var nuevos = on ? elegidos.filter(function(y){ return y !== e.y; }) : elegidos.concat(e.y);
           if(!nuevos.length) return;
           alCambiar(nuevos.sort(function(a, c){ return a - c; }));
           render();
         });
       }
+      if(e.covid) b.insertAdjacentHTML('beforeend', window.marcaCovidHtml('s', false));
       fila.appendChild(b);
     });
     caja.appendChild(fila);
@@ -1779,7 +1785,7 @@ window.CLUB_SELECTOR = (function(){
 
   function chipsClub(i, b, id){
     var lista = ejerciciosClub(id).map(function(e){
-      return { y:e.y, tipo:e.tipo, label:etiquetaEj(id, e.y),
+      return { y:e.y, tipo:e.tipo, label:etiquetaEj(id, e.y), covid: e.tipo !== 'X' && window.esCovid(id, e.y),
                sub: e.tipo === 'B' ? t('finanzas.card.balance', 'Balance')
                   : e.tipo === 'P' ? t('finanzas.card.budget', 'Presupuesto')
                   : t('finanzas.card.unpublished', 'Sin publicar') };
@@ -1792,7 +1798,9 @@ window.CLUB_SELECTOR = (function(){
 
   function chipsLiga(i, b){
     var lista = temporadasDe(b.league).slice().sort(function(a, c){ return a - c; }).map(function(y){
-      return { y:y, tipo:'B', label:String(y), sub:nClubes(equiposDe(b.league, y).length) };
+      var ids = equiposDe(b.league, y);
+      return { y:y, tipo:'B', label:String(y), sub:nClubes(ids.length),
+               covid: window.esCovidPares(ids.map(function(id){ return [id, y]; })) };
     });
     var elegidos = b.years.length ? b.years.slice() : [ultimaTemporada(b.league)];
     return filaChips(i, t('sel.card.seasons', 'Temporadas'), lista, elegidos, function(ys){
@@ -2244,7 +2252,8 @@ window.CLUB_SELECTOR = (function(){
     // la liga entera.
     var h = '<thead><tr><th>' + escH(t('th.line', 'Rubro')) + '<small>' + escH(unidadCmp()) + '</small></th>';
     tots.forEach(function(tt, i){
-      h += '<th' + tdCls(i) + '><span class="cd-letra chica' + (i ? ' b' : '') + '">' + LETRAS[i] + '</span>' + escH(tt.nombre);
+      h += '<th' + tdCls(i) + '>' + (window.esCovidPares(paresDe(lado[i])) ? '<span class="cab-covid">' + window.marcaCovidHtml('m', true) + '</span>' : '')
+        + '<span class="cd-letra chica' + (i ? ' b' : '') + '">' + LETRAS[i] + '</span>' + escH(tt.nombre);
       var hayLiga = (lado[i].bloques || []).some(function(b){ return b.kind === 'liga'; });
       if(hayLiga && lado[i].bloques.length === 1){
         h += '<small>' + escH((lado[i].bloques[0].agg === 'promedio' ? t('sel.card.avgOf', 'promedio de') : t('sel.card.sumOf', 'suma de'))

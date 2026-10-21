@@ -137,7 +137,13 @@
     const tip = t('covid.tip', 'Pandemia de COVID-19: entre marzo de 2020 y junio de 2021 hubo partidos suspendidos o a puertas cerradas, según el país. Los importes son los del balance, sin ajuste.');
     return '<span class="covid ' + tam + '" role="img"' + (conFoco ? ' tabindex="0"' : '') + ' aria-label="' + aria.replace(/"/g, '&quot;') + '" data-info-tip="' + tip.replace(/"/g, '&quot;') + '">COVID</span>';
   }
+  // Un conjunto de pares [club, año] (una temporada de liga, un lado de Comparar) lleva la marca solo si TODOS caen en la ventana: hoy ninguna
+  // temporada de liga mezcla clubes de adentro y de afuera.
+  function esCovidPares(pares){
+    return pares.length > 0 && pares.every(p => p[1] != null && esCovid(p[0], p[1]));
+  }
   window.esCovid = esCovid;
+  window.esCovidPares = esCovidPares;
   window.marcaCovidHtml = marcaCovidHtml;
   // Con el teclado la marca se abre con Enter o espacio y se cierra con Escape.
   if(typeof document !== 'undefined' && document.addEventListener){ // este archivo también lo corre tools/ sin navegador
