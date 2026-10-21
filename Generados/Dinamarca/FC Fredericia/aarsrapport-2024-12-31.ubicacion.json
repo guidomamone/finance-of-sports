@@ -1,0 +1,115 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.md",
+ "mdSha1": "674e96f316f957a0d00324f0deff95e55f1eb87c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:39:38.358Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    37
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    191,
+    203
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    207,
+    211
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    223,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    249,
+    263
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    273,
+    278
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    288,
+    307
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    317,
+    324
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    328,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    340,
+    344
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    354,
+    378
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b8"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas '2024 DKK | 2023 DKK' (importes en coronas, sin indicación de miles)",
+ "moneda": "DKK",
+ "columna_ejercicio": "2024 DKK",
+ "columna_anterior": "2023 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de la sociedad (b2), presentado desde 'Bruttofortjeneste' (formato abreviado de la ley danesa), así que los ingresos no están abiertos y no hay nota de ingresos. b8 es la nota 1 de gastos de personal (Personaleomkostninger). b3 (destino del resultado), b4 y b5 (balance), b6 (evolución del patrimonio), b7 (flujo de efectivo), b9 (activo fijo), b10 (impuesto diferido) y b11 (deudas de largo plazo) quedan fuera."
+}

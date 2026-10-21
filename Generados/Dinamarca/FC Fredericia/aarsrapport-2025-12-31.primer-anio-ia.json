@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2025-12-31.md",
+ "clave": "055274dd7d57f3c6f26d6e6ad7bb77269d385fec",
+ "generado": "2026-10-21T12:48:06.267Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado está correcto. Bruttofortjeneste es el primer renglón del estado: la empresa no informa ingresos y costos por separado, así que corresponde cargarlo. Personaleomkostninger (L265) se reemplaza por sus partes de la nota: 18,988901 + 0,66129 + 0,371098 = 20,021289. El impuesto es positivo (46.968, un ingreso fiscal). El resultado da 1,421659, igual al impreso."
+ }
+}

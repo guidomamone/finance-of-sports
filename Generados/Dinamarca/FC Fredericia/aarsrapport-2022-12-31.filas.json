@@ -1,0 +1,190 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.md",
+ "mdSha1": "f72f80cad516f56b2970d0e6d3904cff6d0c523a",
+ "ubicacionSha1": "c01a2e8e6eeb0c18ef4fd9f922e3dd1b3608f1b9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:39:16.137Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b8"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columna '2022 DKK' (L247), importes en coronas sin indicación de miles"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columna '2022 DKK' (L384); el total 11.382.976 coincide con el estado"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 249,
+   "etiqueta": "Bruttofortjeneste",
+   "actual": "11.524.518",
+   "anterior": "10.735.834",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 250,
+   "etiqueta": "Personaleomkostninger",
+   "actual": "-11.382.976",
+   "anterior": "-10.504.589",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 251,
+   "etiqueta": "Resultat før afskrivninger",
+   "actual": "141.542",
+   "anterior": "231.245",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 252,
+   "etiqueta": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "actual": "-52.482",
+   "anterior": "-24.638",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 253,
+   "etiqueta": "Resultat før finansielle poster",
+   "actual": "89.060",
+   "anterior": "206.607",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 254,
+   "etiqueta": "Finansielle indtægter",
+   "actual": "0",
+   "anterior": "-34",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 255,
+   "etiqueta": "Finansielle omkostninger",
+   "actual": "-66.949",
+   "anterior": "-174.075",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 256,
+   "etiqueta": "Resultat før skat",
+   "actual": "22.111",
+   "anterior": "32.498",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 257,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 258,
+   "etiqueta": "Årets resultat",
+   "actual": "22.111",
+   "anterior": "32.498",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 387,
+   "etiqueta": "Lønninger",
+   "actual": "9.655.809",
+   "anterior": "9.101.895",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b8",
+   "linea": 388,
+   "etiqueta": "Pensioner",
+   "actual": "352.602",
+   "anterior": "324.234",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b8",
+   "linea": 389,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "259.717",
+   "anterior": "230.398",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b8",
+   "linea": 390,
+   "etiqueta": "Andre personaleomkostninger",
+   "actual": "1.114.848",
+   "anterior": "848.062",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b8",
+   "linea": 391,
+   "etiqueta": "",
+   "actual": "11.382.976",
+   "anterior": "10.504.589",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 258,
+  "actual": "22.111",
+  "anterior": "32.498"
+ },
+ "dudas": [],
+ "observaciones": "Estado en formato danés abreviado: parte de 'Bruttofortjeneste' (ingresos netos de gastos externos), sin desglose de ingresos ni total de ingresos/gastos impresos. L392 (empleados promedio: 25) no es importe monetario y se omitió."
+}

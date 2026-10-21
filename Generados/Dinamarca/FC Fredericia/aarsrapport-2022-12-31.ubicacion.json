@@ -1,0 +1,155 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.md",
+ "mdSha1": "f72f80cad516f56b2970d0e6d3904cff6d0c523a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:39:05.228Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    26,
+    39
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    247,
+    258
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    264,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    278,
+    290
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    302,
+    319
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    329,
+    334
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    344,
+    364
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    384,
+    392
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    396,
+    404
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    416,
+    421
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    423,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    437,
+    448
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    460,
+    462
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    469,
+    471
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    473,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    481,
+    485
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b8"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la resultatopgørelse: '2022 DKK | 2021 DKK' (importes en coronas sin indicación de miles).",
+ "moneda": "DKK",
+ "columna_ejercicio": "2022 DKK",
+ "columna_anterior": "2021 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de la sociedad (b2, pág. 9), que parte de Bruttofortjeneste: la sociedad no informa los ingresos brutos, porque usa la exención danesa de la årsregnskabsloven §32. La nota 2 Personaleomkostninger (b8) desglosa el gasto de personal. b15 queda afuera: es la nota 6 de ajustes del flujo de efectivo (reguleringer), no un desglose de resultados. Tampoco se eligen b3 (destino del resultado), los cuadros de balance (b4, b5), patrimonio (b6, b10), flujo de efectivo (b7, b16), activo fijo (b9), impuesto diferido (b11) ni deuda (b12)."
+}

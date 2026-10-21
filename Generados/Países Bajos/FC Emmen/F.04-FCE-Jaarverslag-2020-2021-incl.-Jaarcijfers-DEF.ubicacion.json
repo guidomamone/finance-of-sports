@@ -1,0 +1,73 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.pdf",
+ "md": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.md",
+ "mdSha1": "40a02a968d243e4b1c5ad87e3d7ec9d12de6dd46",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:38:17.758Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    242,
+    246
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    248,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    262,
+    290
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    296,
+    311
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    315,
+    320
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    322,
+    324
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "VERLIES EN WINSTREKENING / in EUR * 1.000",
+ "moneda": "EUR",
+ "columna_ejercicio": "2020-2021",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Publicación KNVB F.04 de FC Emmen B.V.: b1/b2 son balance; b3 es la cuenta de resultados 2020-2021 en miles de EUR. El encabezado solo muestra la columna 2020-2021; no se ve columna del año anterior."
+}

@@ -1,0 +1,38 @@
+{
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.pdf",
+ "generado": "2026-10-21T12:52:09.995Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del documento, 2026-10-21: El club en el sitio es Vålerenga Fotball AS (individual, como el 2025 cargado); los otros documentos de 2024 son de Vålerenga Fotball Elite AS y de la asociación (FLI))"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "Årsregnskapets periode: 01.01.2024 - 31.12.2024"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "valerenga-no",
+ "year": 2024,
+ "cortadoEn": "filas"
+}

@@ -1,0 +1,150 @@
+{
+  "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.md",
+  "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.pdf",
+  "club": "valerenga-no",
+  "year": 2024,
+  "generatedAt": "2026-10-21T12:47:57.409Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Sponsorinntekter",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        48.585515
+      ],
+      "glosa": "Ingresos por patrocinio"
+    },
+    {
+      "label": "Markeds- og medieinntekter",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        19.125106
+      ],
+      "glosa": "Ingresos comerciales y de medios"
+    },
+    {
+      "label": "Billettsalg (ordinært)",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        9.875103
+      ],
+      "glosa": "Venta de entradas (ordinaria)"
+    },
+    {
+      "label": "Viderefakturert",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Andre inntekter\"",
+      "values": [
+        0.806512
+      ],
+      "glosa": "Refacturación"
+    },
+    {
+      "label": "Diverse inntekter",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Andre inntekter\"",
+      "values": [
+        0.235271
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Varekostnad",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.479064
+      ],
+      "glosa": "Aprovisionamientos"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        7.281695
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Arbeidsgiveravgift",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        1.436981
+      ],
+      "glosa": "Seguridad Social a cargo de la empresa"
+    },
+    {
+      "label": "Pensjonskostnader",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.194755
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Andre ytelser",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Lønnskostnad\"",
+      "values": [
+        0.101651
+      ],
+      "glosa": "Otras retribuciones al personal"
+    },
+    {
+      "label": "Avskrivning av driftsmidler",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.412094
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Nedskrivning av driftsmidler",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.199718
+      ],
+      "glosa": "Deterioro de valor del inmovilizado material"
+    },
+    {
+      "label": "Tap på fordringer",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.194918
+      ],
+      "glosa": "Pérdidas por créditos incobrables"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        83.502873
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md",
+ "clave": "4f3d7b2caf609fae86066516793f462a18cdc5ee",
+ "generado": "2026-10-21T12:48:14.460Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre todos los renglones del estado. Bruttofortjeneste (L426) es el primer renglón del estado abreviado danés, sin ingresos detallados por encima, así que se carga como ingreso. Personaleomkostninger (L428) se reemplaza correctamente por sus partes de la nota: 138,38 + 1,83 + 1,84 = 142,05. No se cargan subtotales: Driftsresultat y Resultat før skat quedan afuera. El resultado da 209,24, igual al impreso."
+ }
+}

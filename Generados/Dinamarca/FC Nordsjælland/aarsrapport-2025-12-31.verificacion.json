@@ -1,0 +1,166 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md",
+ "generado": "2026-10-21T12:48:26.120Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "cola",
+ "clubId": "nordsjaelland-dk",
+ "year": null,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+   "campo": "cierre",
+   "valor": "2025-12-31",
+   "linea": null,
+   "motivo": "el .md (convertido del XHTML) habla de 31. december 2025 (15 veces)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [
+  "511c695"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: L638 es información de remuneración ya incluida en el total y L639 es número de empleados, no importe.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 460.800148,
+  "gastos": 177.77102,
+  "financiero": -8.778991,
+  "impuesto": -65.011162,
+  "resultadoImpreso": 209.238975,
+  "resultadoParaCargar": 209.238975,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Bruttofortjeneste Gross profit",
+   "lado": "ingreso",
+   "M": 460.800148,
+   "pagina": 19,
+   "linea": 426,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger og gager Salaries and wages",
+   "lado": "gasto",
+   "M": 138.376504,
+   "pagina": 27,
+   "linea": 634,
+   "origen": "nota que desglosa \"Personaleomkostninger Staff costs\""
+  },
+  {
+   "etiqueta": "Pensioner Pension costs",
+   "lado": "gasto",
+   "M": 1.834516,
+   "pagina": 27,
+   "linea": 635,
+   "origen": "nota que desglosa \"Personaleomkostninger Staff costs\""
+  },
+  {
+   "etiqueta": "Andre omkostninger til social sikring Other costs for social security",
+   "lado": "gasto",
+   "M": 1.838843,
+   "pagina": 27,
+   "linea": 636,
+   "origen": "nota que desglosa \"Personaleomkostninger Staff costs\""
+  },
+  {
+   "etiqueta": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisation, and impairment",
+   "lado": "gasto",
+   "M": 35.721157,
+   "pagina": 19,
+   "linea": 429,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Andre finansielle indtægter fra tilknyttede virksomheder Other financial income from group enterprises",
+   "M": 1.137518,
+   "linea": 431
+  },
+  {
+   "etiqueta": "Andre finansielle indtægter Other financial income",
+   "M": 1.590029,
+   "linea": 432
+  },
+  {
+   "etiqueta": "Øvrige finansielle omkostninger Other financial costs",
+   "M": -11.506538,
+   "linea": 433
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skat af årets resultat Tax on net profit or loss for the year",
+   "M": -65.011162,
+   "linea": 435
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "4f3d7b2caf609fae86066516793f462a18cdc5ee",
+  "rango": [
+   423,
+   439
+  ],
+  "lineasCargadas": [
+   426,
+   634,
+   635,
+   636,
+   429,
+   431,
+   432,
+   433,
+   435
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 423 a 439 del .md):\nL423: |  |  | 2025 | 2024 |\nL424: | --- | --- | --- | --- |\nL425: | Note |  | kr. | kr. |\nL426: |  | Bruttofortjeneste Gross profit | 460.800.148 | 366.004.057 |\nL427: | --- | --- | --- | --- |\nL428: | 1 | Personaleomkostninger Staff costs | -142.049.863 | -175.027.070 |\nL429: |  | Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisation, and impairment | -35.721.157 | -45.144.140 |\nL430: |  | Driftsresultat Operating profit | 283.029.128 | 145.832.847 |\nL431: |  | Andre finansielle indtægter fra tilknyttede virksomheder Other financial income from group enterprises | 1.137.518 | 1.168.111 |\nL432: |  | Andre finansielle indtægter Other financial income | 1.590.029 | 1.631.843 |\nL433: | 2 | Øvrige finansielle omkostninger Other financial costs | -11.506.538 | -5.376.361 |\nL434: |  | Resultat før skat Pre-tax net profit or loss | 274.250.137 | 143.256.440 |\nL435: | 3 | Skat af årets resultat Tax on net profit or loss for the year | -65.011.162 | -31.778.343 |\nL436: | 4 | Årets resultat Net profit or loss for the year | 209.238.975 | 111.478.097 |\nL437: |  | FC Nordsjælland A/S · Årsrapport for 2025 | 17 |\nL438: | --- | --- | --- |\nL439: |  | Annual report 2025 |  |\n\nLO QUE SE CARGA:\n- ingreso · \"Bruttofortjeneste Gross profit\" · 460.800148 · L426\n- gasto · \"Lønninger og gager Salaries and wages\" · 138.376504 · L634 (de una nota)\n- gasto · \"Pensioner Pension costs\" · 1.834516 · L635 (de una nota)\n- gasto · \"Andre omkostninger til social sikring Other costs for social security\" · 1.838843 · L636 (de una nota)\n- gasto · \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisati\" · 35.721157 · L429\n- financiero · \"Andre finansielle indtægter fra tilknyttede virksomheder Other financial income from group\" · 1.137518 · L431\n- financiero · \"Andre finansielle indtægter Other financial income\" · 1.590029 · L432\n- financiero · \"Øvrige finansielle omkostninger Other financial costs\" · -11.506538 · L433\n- impuesto · \"Skat af årets resultat Tax on net profit or loss for the year\" · -65.011162 · L435"
+ }
+}

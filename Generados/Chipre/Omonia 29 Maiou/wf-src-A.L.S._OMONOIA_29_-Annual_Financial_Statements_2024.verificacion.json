@@ -1,0 +1,374 @@
+{
+ "pdf": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf",
+ "md": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.md",
+ "generado": "2026-10-21T12:47:57.414Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.686169 = 0.686169",
+   "suma": 0.686169,
+   "impreso": 0.6861689999999999
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "0.728764 = 0.728764",
+   "suma": 0.7287640000000001,
+   "impreso": 0.728764
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.85722573273506e-17
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.686169,
+  "gastos": 0.728764,
+  "financiero": 0,
+  "impuesto": 0,
+  "resultadoImpreso": -0.042595,
+  "resultadoParaCargar": -0.042595,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Συνδρομές μελών",
+   "lado": "ingreso",
+   "M": 0.076072,
+   "pagina": 1,
+   "linea": 20,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Εισιτήρια διαρκείας",
+   "lado": "ingreso",
+   "M": 0.0324,
+   "pagina": 1,
+   "linea": 21,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έσοδα αγώνων",
+   "lado": "ingreso",
+   "M": 0.144905,
+   "pagina": 1,
+   "linea": 22,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Χορηγίες και εισφορές",
+   "lado": "ingreso",
+   "M": 0.275389,
+   "pagina": 1,
+   "linea": 23,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έσοδα μπουτίκ",
+   "lado": "ingreso",
+   "M": 0.0219,
+   "pagina": 1,
+   "linea": 24,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έσοδα από εκδηλώσεις",
+   "lado": "ingreso",
+   "M": 0.018129,
+   "pagina": 1,
+   "linea": 25,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Μέλη Premium",
+   "lado": "ingreso",
+   "M": 0.035064,
+   "pagina": 1,
+   "linea": 26,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έσοδα από τμήμα έρευνας",
+   "lado": "ingreso",
+   "M": 0.059,
+   "pagina": 1,
+   "linea": 27,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έσοδα μεταγραφών",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 1,
+   "linea": 28,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Λαχνοί",
+   "lado": "ingreso",
+   "M": 0.0225,
+   "pagina": 1,
+   "linea": 29,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Kids Club",
+   "lado": "ingreso",
+   "M": 0.00081,
+   "pagina": 1,
+   "linea": 30,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ενοίκια και ζημιές γηπέδων",
+   "lado": "gasto",
+   "M": 0.01712,
+   "pagina": 1,
+   "linea": 33,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Στολές παικτών",
+   "lado": "gasto",
+   "M": 0.018751,
+   "pagina": 1,
+   "linea": 34,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αποθέματα στο τέλος",
+   "lado": "gasto",
+   "M": -0.0055,
+   "pagina": 1,
+   "linea": 35,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Διάφορα έξοδα",
+   "lado": "gasto",
+   "M": 0.054481,
+   "pagina": 1,
+   "linea": 36,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα ποδοσφαιρικού τμήματος",
+   "lado": "gasto",
+   "M": 0.162607,
+   "pagina": 1,
+   "linea": 37,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα ιατρών, φυσιοθεραπευτών",
+   "lado": "gasto",
+   "M": 0.011553,
+   "pagina": 1,
+   "linea": 38,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα αγώνων",
+   "lado": "gasto",
+   "M": 0.00179,
+   "pagina": 1,
+   "linea": 39,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Νερά",
+   "lado": "gasto",
+   "M": 0.00578,
+   "pagina": 1,
+   "linea": 40,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Δικαιώματα τραπεζών",
+   "lado": "gasto",
+   "M": 0.000341,
+   "pagina": 1,
+   "linea": 41,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αποθέματα στην αρχή",
+   "lado": "gasto",
+   "M": 0.01,
+   "pagina": 1,
+   "linea": 42,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Κοινωνικές ασφαλίσεις",
+   "lado": "gasto",
+   "M": 0.068205,
+   "pagina": 1,
+   "linea": 43,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Μισθοί",
+   "lado": "gasto",
+   "M": 0.233441,
+   "pagina": 1,
+   "linea": 44,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αποζημείωσεις",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 45,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Διοικητικά έξοδα",
+   "lado": "gasto",
+   "M": 0.012326,
+   "pagina": 1,
+   "linea": 46,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Γραφική ύλη και εκτυπωτικά",
+   "lado": "gasto",
+   "M": 0.001022,
+   "pagina": 1,
+   "linea": 47,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Προετοιμασία ποδοσφαιριστών",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 48,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αθλητικό υλικό για προπόνηση",
+   "lado": "gasto",
+   "M": 0.008893,
+   "pagina": 1,
+   "linea": 49,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Πρόστιμα",
+   "lado": "gasto",
+   "M": 0.1004,
+   "pagina": 1,
+   "linea": 50,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Μεταφορικά ομάδας και διαμονή στην Πάφο",
+   "lado": "gasto",
+   "M": 0.00604,
+   "pagina": 1,
+   "linea": 51,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα δεξίωσης ποδοσφαιριστών",
+   "lado": "gasto",
+   "M": 0.004465,
+   "pagina": 1,
+   "linea": 52,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα οχημάτων",
+   "lado": "gasto",
+   "M": 0.000136,
+   "pagina": 1,
+   "linea": 53,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Πακέτα μελών",
+   "lado": "gasto",
+   "M": 0.003588,
+   "pagina": 1,
+   "linea": 54,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα οικήματος",
+   "lado": "gasto",
+   "M": 0.004,
+   "pagina": 1,
+   "linea": 55,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Έξοδα προπονητικού κέντρου",
+   "lado": "gasto",
+   "M": 0.0024,
+   "pagina": 1,
+   "linea": 56,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Εγγραφή παικτών",
+   "lado": "gasto",
+   "M": 0.005545,
+   "pagina": 1,
+   "linea": 57,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αποσβέσεις",
+   "lado": "gasto",
+   "M": 0.00138,
+   "pagina": 1,
+   "linea": 58,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": []
+}

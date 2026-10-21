@@ -1,20 +1,70 @@
 {
- "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.md",
- "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.pdf",
- "club": "fredericia-dk",
- "year": 2022,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:59:53.089Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": false,
-  "motivo": "no se pudo ubicar la columna del ejercicio"
- },
- "ladoConocido": 0,
- "rubros": []
+  "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.md",
+  "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.pdf",
+  "club": "fredericia-dk",
+  "year": 2022,
+  "generatedAt": "2026-10-21T12:47:56.814Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bruttofortjeneste",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        11.524518
+      ],
+      "glosa": "Margen bruto"
+    },
+    {
+      "label": "Lønninger",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        9.655809
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.352602
+      ],
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        0.259717
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Andre personaleomkostninger",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Personaleomkostninger\"",
+      "values": [
+        1.114848
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.052482
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado material"
+    }
+  ]
 }

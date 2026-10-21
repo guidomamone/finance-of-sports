@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.md",
+  "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2025-12-31.pdf",
+  "club": "nordsjaelland-dk",
+  "year": null,
+  "generatedAt": "2026-10-21T12:47:57.564Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bruttofortjeneste Gross profit",
+      "lado": "revenue",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        460.800148
+      ],
+      "glosa": "Beneficio bruto"
+    },
+    {
+      "label": "Lønninger og gager Salaries and wages",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+      "values": [
+        138.376504
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner Pension costs",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+      "values": [
+        1.834516
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring Other costs for social security",
+      "lado": "expense",
+      "page": 27,
+      "section": "nota que desglosa \"Personaleomkostninger Staff costs\"",
+      "values": [
+        1.838843
+      ],
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver Depreciation, amortisation, and impairment",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        35.721157
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado material e intangible"
+    }
+  ]
+}

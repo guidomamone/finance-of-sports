@@ -1,0 +1,234 @@
+{
+ "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.pdf",
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md",
+ "mdSha1": "eff57745bba5c5fedc4b5beedd003f428aa9aa0c",
+ "ubicacionSha1": "6ad537c286e6124c43e5e72fbd310b2ddcd25814",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:46:37.848Z",
+ "ubicacion": {
+  "estado": [
+   "b14"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b30"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b14",
+   "escala": "miles",
+   "evidencia": "L208: 't.kr.'"
+  },
+  {
+   "bloque": "b30",
+   "escala": "miles",
+   "evidencia": "L551: 't.kr.' (nota 4 en la misma página; notas 2 y 3 coinciden con el estado en t.kr.)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b14",
+   "linea": 209,
+   "etiqueta": "Bruttofortjeneste",
+   "actual": "53.447",
+   "anterior": "47.801",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 210,
+   "etiqueta": "Personaleomkostninger",
+   "actual": "-54.491",
+   "anterior": "-48.796",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 211,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "actual": "-3.334",
+   "anterior": "-3.354",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 212,
+   "etiqueta": "Andre driftsomkostninger",
+   "actual": "-70",
+   "anterior": "-82",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 213,
+   "etiqueta": "Resultat før finansielle poster",
+   "actual": "-4.448",
+   "anterior": "-4.431",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 214,
+   "etiqueta": "Indtægter af kapitalandele i tilknyttede virksomheder",
+   "actual": "783",
+   "anterior": "715",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 215,
+   "etiqueta": "Finansielle indtægter",
+   "actual": "46",
+   "anterior": "98",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 216,
+   "etiqueta": "Finansielle omkostninger",
+   "actual": "-258",
+   "anterior": "-357",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 217,
+   "etiqueta": "Resultat før skat",
+   "actual": "-3.877",
+   "anterior": "-3.975",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 218,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "340",
+   "anterior": "310",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 219,
+   "etiqueta": "Årets resultat",
+   "actual": "-3.537",
+   "anterior": "-3.665",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b30",
+   "linea": 539,
+   "etiqueta": "Lønninger",
+   "actual": "50.539",
+   "anterior": "45.638",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b30",
+   "linea": 540,
+   "etiqueta": "Pensioner",
+   "actual": "3.219",
+   "anterior": "2.471",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b30",
+   "linea": 541,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "733",
+   "anterior": "687",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b30",
+   "linea": 542,
+   "etiqueta": "",
+   "actual": "54.491",
+   "anterior": "48.796",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b30",
+   "linea": 547,
+   "etiqueta": "Beregnet skat af årets skattepligtige indkomst",
+   "actual": "-340",
+   "anterior": "-310",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  },
+  {
+   "bloque": "b30",
+   "linea": 548,
+   "etiqueta": "",
+   "actual": "-340",
+   "anterior": "-310",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 219,
+  "actual": "-3.537",
+  "anterior": "-3.665"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Bruttofortjeneste' (L209, 53.447) como único renglón de ingresos, sabiendo que es un neto de ingresos menos costos externos sin desglose?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bruttofortjeneste",
+   "texto": "L209: el estado usa formato de beneficio bruto y no imprime ingresos brutos ni hay nota de ingresos.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga el impuesto con el signo del estado (340 positivo, ingreso por impuesto, L218) aunque la nota 3 lo muestre como -340 (L547)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Skat af årets resultat",
+   "texto": "Signo opuesto entre estado L218 y nota L547-L548; el resultado L219 confirma que suma 340.",
+   "bloques": [
+    "b14",
+    "b30"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de VB Alliancen A/S en t.kr. Se excluyen la distribución del resultado (L222-L224), el número de empleados (L543) y el movimiento de activos intangibles de la nota 4 (L553-L561), que no son partidas de resultado. 'Indtægter af kapitalandele i tilknyttede virksomheder' clasificado como otro."
+}

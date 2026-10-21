@@ -1,0 +1,146 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2019.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2019.md",
+ "mdSha1": "d0854ec033f7fff2268b47b56f852957d88ac677",
+ "ubicacionSha1": "1fa96325d2889caf1e40a9c3b0020f5dd70a375c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:40:38.079Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b8"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala; importes con separador de miles por espacio (probablemente unidades, NOK)."
+  },
+  {
+   "bloque": "b8",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 340,
+   "etiqueta": "Annen driftsinntekt",
+   "actual": "231 456",
+   "anterior": "31 631",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 342,
+   "etiqueta": "Avskrivning",
+   "actual": "411 773",
+   "anterior": "333 756",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 343,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "87 395",
+   "anterior": "1 545 935",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 344,
+   "etiqueta": "Sum driftskostnader",
+   "actual": "499 168",
+   "anterior": "1 879 691",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 345,
+   "etiqueta": "Driftsresultat",
+   "actual": "-267 712",
+   "anterior": "-1 848 060",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 347,
+   "etiqueta": "Annen finansinntekt",
+   "actual": "237",
+   "anterior": "279",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 348,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "-267 475",
+   "anterior": "-1 847 781",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 349,
+   "etiqueta": "Årsresultat",
+   "actual": "-267 475",
+   "anterior": "-1 847 781",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 484,
+   "etiqueta": "Årets avskrivninger",
+   "actual": "411 773",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Avskrivning"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": {
+  "linea": 344,
+  "actual": "499 168"
+ },
+ "resultado": {
+  "linea": 349,
+  "actual": "-267 475",
+  "anterior": "-1 847 781"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (b3) como unidades de NOK?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ni b3 ni b8 imprimen la escala; por el formato (L340-L351) parecen unidades.",
+   "bloques": [
+    "b3",
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay un renglón de ingresos (L340), sin total de ingresos impreso. L351 'Udekket tap' es una aplicación del resultado y no se extrajo. La nota 4 (b8) es un cuadro de activos intangibles; solo 'Årets avskrivninger' (L484) se vincula al estado y coincide con Avskrivning; las demás filas son de balance y quedaron afuera. La nota 3 de Annen driftskostnad no viene en los bloques."
+}

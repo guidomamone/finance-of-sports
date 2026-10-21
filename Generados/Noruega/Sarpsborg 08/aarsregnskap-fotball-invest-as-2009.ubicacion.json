@@ -1,0 +1,116 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2009.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2009.md",
+ "mdSha1": "d84ca5c95fe8effbfa4bedb63e60a275ea3873d8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:41:45.051Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    96,
+    119
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    134,
+    172
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    182,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    253,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    282,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    308,
+    325
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    393,
+    408
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    414,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    462,
+    468
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    505,
+    506
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2009",
+ "columna_anterior": "2008",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja sin cargar el documento porque solo trae el resultatregnskap de Sarpsborg Fotball Invest AS (org. 983 618 596, b1/b4) y no el de Sarpsborg 08 Fotballforening?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El documento es de la sociedad de inversión Sarpsborg Fotball Invest AS, accionista o inversora, no de la entidad del club ni un consolidado de ella.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento contiene solo las cuentas individuales de Sarpsborg Fotball Invest AS: resultatregnskap en b1 (versión Brønnøysund) y b4 (duplicado del informe anual), balance en b2/b3/b5/b6, accionistas en b7, patrimonio en b8 e impuesto diferido en b9. No hay estado de resultados de Sarpsborg 08 Fotballforening ni consolidado. Si se decidiera cargar esta entidad, el estado sería b4 (o b1, que es el mismo), en NOK y unidades, con columnas 2009 y 2008."
+}

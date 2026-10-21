@@ -1,0 +1,402 @@
+{
+ "md": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md",
+ "generatedAt": "2026-10-21T12:51:42.842Z",
+ "rubrosHuella": "2a4a81f089bf3c9d025a9980603635a137619fab",
+ "rubros": [
+  {
+   "label": "TV- og præmie-indtægter",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Nettoomsætning\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Andre driftsindtægter",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Merchandiseindtægter",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Nettoomsætning\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Food & Beverage, konferencecenter m.v.",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Nettoomsætning\"",
+   "choice": "stadium_other",
+   "confidence": 1,
+   "top3": [
+    [
+     "stadium_other",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Lønninger og gager",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Samarbejdspartnere",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Nettoomsætning\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Øvrige indtægter",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Nettoomsætning\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Ejendomsudlejning",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Nettoomsætning\"",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "stadium_other",
+     0.19
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Entréindtægter",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Nettoomsætning\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Vareforbrug",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Indtægter af kapitalandele i tilknyttede virksomheder",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1126
+  },
+  {
+   "label": "Andre eksterne omkostninger",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Afskrivning på bygninger",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Amortiseringer af kontraktrettigheder",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_amortisation",
+     0.97
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "Nedskrivninger bygninger",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "depreciation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "depreciation",
+     0.87
+    ],
+    [
+     "player_impairment",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Afskrivning på produktionsanlæg og maskiner",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Afskrivning på indretning af lejede lokaler",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "depreciation",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "depreciation",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1172
+  }
+ ]
+}

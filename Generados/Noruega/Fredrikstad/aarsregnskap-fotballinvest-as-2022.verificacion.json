@@ -1,0 +1,117 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2022.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2022.md",
+ "generado": "2026-10-21T12:47:57.071Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "cola",
+ "clubId": "fredrikstad-no",
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2022.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2022-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2022.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "3a3a653"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "1.339541 = 1.339541",
+   "suma": 1.3395409999999999,
+   "impreso": 1.3395409999999999
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "gastos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b1 y b8 son el mismo resultatregnskap 2022/2021 en dos formatos.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-src-FFK_-_Årsmøte_2025.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.865267,
+  "gastos": 1.339541,
+  "financiero": 0,
+  "impuesto": 0,
+  "resultadoImpreso": 0.525726,
+  "resultadoParaCargar": 0.525726,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Annen driftsinntekt",
+   "lado": "ingreso",
+   "M": 1.865267,
+   "pagina": 10,
+   "linea": 370,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønnskostnad",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 10,
+   "linea": 372,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Avskrivning",
+   "lado": "gasto",
+   "M": 1.222528,
+   "pagina": 10,
+   "linea": 373,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 0.117013,
+   "pagina": 10,
+   "linea": 374,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": []
+}

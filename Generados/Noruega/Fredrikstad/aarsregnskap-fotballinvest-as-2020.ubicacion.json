@@ -1,0 +1,202 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2020.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2020.md",
+ "mdSha1": "9487053f5b8ced5d4d7d105eb98aa040eea4ed81",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:40:44.857Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    114,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    149,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    207,
+    230
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    234,
+    269
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    273,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    285,
+    287
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    309,
+    312
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    349,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    371,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    389,
+    407
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    518,
+    525
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    531,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    547,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    564,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    570,
+    607
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    615,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    677,
+    682
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    728,
+    740
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    750,
+    758
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, misma cuenta que b8)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados de Fredrikstad Fotballinvest AS (b8) como si fuera de Fredrikstad Fotballklubb, aunque es una sociedad inversora distinta del club?",
+   "propuesta": "no",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento solo trae cuentas de Fredrikstad Fotballinvest AS (org. 979 111 576), que posee 30% de derechos económicos de jugadores, no del club Fredrikstad Fotballklubb.",
+   "bloques": [
+    "b1",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se usa b8 y se deja afuera b1 por ser la misma cuenta de resultados duplicada (formulario Altinn vs. versión del informe)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 (pág. 2) y b8 (pág. 9) son ambas el Resultatregnskap 2020/2019 de la misma entidad.",
+   "bloques": [
+    "b1",
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento de Fredrikstad Fotballinvest AS, entidad distinta del club; estado individual. b1 y b8 duplican el resultatregnskap; se elige b8. No hay notas que desglosen ingresos o gastos (Note 4 activos intangibles y Note 5 impuestos no se eligen)."
+}

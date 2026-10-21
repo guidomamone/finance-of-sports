@@ -1,0 +1,128 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2022.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2022.md",
+ "mdSha1": "caa92fae318803a1923625f1b7a9fe4211f446cf",
+ "ubicacionSha1": "ada4f2cc4d93af514b9d3e77d1f60759dc57aa97",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:41:28.602Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala; los importes con espacios de miles (1 865 267) sugieren unidades (NOK)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 370,
+   "etiqueta": "Annen driftsinntekt",
+   "actual": "1 865 267",
+   "anterior": "932 337",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 372,
+   "etiqueta": "Lønnskostnad",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 373,
+   "etiqueta": "Avskrivning",
+   "actual": "1 222 528",
+   "anterior": "351 901",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 374,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "117 013",
+   "anterior": "84 144",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 375,
+   "etiqueta": "Sum driftskostnader",
+   "actual": "1 339 541",
+   "anterior": "436 045",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 376,
+   "etiqueta": "Driftsresultat",
+   "actual": "525 726",
+   "anterior": "496 292",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 377,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "525 726",
+   "anterior": "496 292",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 378,
+   "etiqueta": "Årsresultat",
+   "actual": "525 726",
+   "anterior": "496 292",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": {
+  "linea": 375,
+  "actual": "1 339 541"
+ },
+ "resultado": {
+  "linea": 378,
+  "actual": "525 726",
+  "anterior": "496 292"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b8 como unidades (NOK), aunque el documento no lo diga?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El estado de resultados (L366-L378) no imprime la escala; el formato sugiere unidades.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Entidad Fredrikstad Fotballinvest AS (sociedad de inversión del club, no el club operativo). Hay un único renglón de ingresos (L370) y no se imprime total de ingresos. Las filas de asignación del resultado (L380-L382) no se extrajeron por no ser partidas de resultados."
+}

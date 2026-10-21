@@ -1,0 +1,147 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2021-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2021-12-31.md",
+ "mdSha1": "989e3398c69c7875a517d8b2f1f005dc7c16786b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:38:39.898Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    24,
+    37
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    256,
+    267
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    273,
+    275
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    287,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    311,
+    328
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    338,
+    343
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    353,
+    372
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    392,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    404,
+    411
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    425,
+    430
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    436,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    447,
+    453
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    465,
+    471
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    477,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    487,
+    491
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b8"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la columna: '2021 DKK' (importes en coronas, sin indicación de miles)",
+ "moneda": "DKK",
+ "columna_ejercicio": "2021 DKK",
+ "columna_anterior": "2020 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Årsregnskab individual de la sociedad (régimen de clase B, empieza en 'Bruttofortjeneste', sin desglose de ingresos). b2 es la resultatopgørelse y b8 es la nota 2 de personaleomkostninger. Se descartan el balance, la egenkapitalopgørelse, la pengestrømsopgørelse y las notas de activos, deuda e impuesto diferido."
+}

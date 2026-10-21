@@ -1,0 +1,299 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.pdf",
+ "md": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.md",
+ "mdSha1": "163de5c632877dcaf4712ce00e2e8a2df8ce1328",
+ "ubicacionSha1": "df85f59727e6ff44c8310dd4214f8caba88cbecf",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:38:14.341Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L95: in EUR * 1.000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 99,
+   "etiqueta": "Wedstrijdbaten",
+   "actual": "€ 1.234",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 100,
+   "etiqueta": "Sponsoring",
+   "actual": "€ 3.876",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 101,
+   "etiqueta": "Media gerelateerde baten",
+   "actual": "€ 1.970",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 102,
+   "etiqueta": "Prijzengeld",
+   "actual": "€ 315",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 103,
+   "etiqueta": "Horeca",
+   "actual": "€ 453",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 104,
+   "etiqueta": "Merchandise",
+   "actual": "€ 182",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 105,
+   "etiqueta": "Subsidies & giften",
+   "actual": "€ 119",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 106,
+   "etiqueta": "Overige baten",
+   "actual": "€ 881",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 107,
+   "etiqueta": "Som der baten",
+   "actual": "€ 9.031",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 109,
+   "etiqueta": "Personeelskosten",
+   "actual": "€ 6.171",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 110,
+   "etiqueta": "Horeca",
+   "actual": "€ 360",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 111,
+   "etiqueta": "Verkoopkosten",
+   "actual": "€ 486",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 112,
+   "etiqueta": "Huisvestingskosten",
+   "actual": "€ 506",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 113,
+   "etiqueta": "Wedstrijd- en trainingskosten",
+   "actual": "€ 700",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 114,
+   "etiqueta": "Algemene kosten",
+   "actual": "€ 367",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 115,
+   "etiqueta": "Afschrijvingskosten imm. & mat. vaste activa",
+   "actual": "€ 202",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 116,
+   "etiqueta": "Som der bedrijfslasten",
+   "actual": "€ 8.792",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 117,
+   "etiqueta": "BEDRIJFSRESULTAAT",
+   "actual": "€ 239",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 118,
+   "etiqueta": "Som der rentebaten en rentelasten",
+   "actual": "€ -2",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 119,
+   "etiqueta": "RESULTAAT UIT GEWONE BEDRIJFSUITOEFENING NA RENTEBATEN/LASTEN VOOR VERGOEDINGSOMMEN EN BELASTING",
+   "actual": "€ 237",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 120,
+   "etiqueta": "Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen",
+   "actual": "€ 857",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 121,
+   "etiqueta": "RESULTAAT UIT GEWONE BEDRIJFSUITOEFENING NA RENTEBATEN/LASTEN EN VERGOEDINGSOMMEN EN VOOR BELASTING",
+   "actual": "€ 1.094",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 122,
+   "etiqueta": "Som der belastingen resultaat uit gewone bedrijsvoering",
+   "actual": "€ -265",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 123,
+   "etiqueta": "RESULTAAT UIT GEWONE BEDRIJFSUITOEFENING NA RENTEBATEN/LASTEN, VERGOEDINGSOMMEN EN BELASTING",
+   "actual": "€ 829",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 124,
+   "etiqueta": "Resultaat deelneming",
+   "actual": "€ -",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 125,
+   "etiqueta": "NETTO RESULTAAT",
+   "actual": "€ 829",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 107,
+  "actual": "€ 9.031"
+ },
+ "total_gastos": {
+  "linea": 116,
+  "actual": "€ 8.792"
+ },
+ "resultado": {
+  "linea": 125,
+  "actual": "€ 829",
+  "anterior": null
+ },
+ "dudas": [],
+ "observaciones": "El cuadro solo trae la columna 2019-2020; no hay columna del año anterior. L120 (resultado de transferencias/vergoedingsommen, neto positivo 857) se clasificó como 'otro'."
+}

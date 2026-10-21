@@ -1,0 +1,284 @@
+{
+ "pdf": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.md",
+ "generado": "2026-10-21T12:48:26.066Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "ok",
+ "clubId": "fckobenhavn-dk",
+ "year": null,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.pdf",
+   "campo": "cierre",
+   "valor": "2025-12-31",
+   "linea": null,
+   "motivo": "el .md (convertido del XHTML) habla de 31. december 2025 (7 veces); el nombre del archivo y el resto de los años del club cierran el 31-12",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4921397450962104e-13
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de localizar que no afecta la carga: El renglón no tiene número de nota en b16 y no aparece desglosado en ningún bloque.",
+  "duda de extraer que no afecta la carga: La nota 8 (L404-L408) reparte el resultado en dividendo y resultado transferido; no desglosa ingresos ni gastos.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 893.995,
+  "gastos": 832.982,
+  "financiero": -7.842,
+  "impuesto": 0,
+  "resultadoImpreso": 53.171,
+  "resultadoParaCargar": 53.171,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Entréindtægter",
+   "lado": "ingreso",
+   "M": 118.352,
+   "pagina": 16,
+   "linea": 354,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "TV- og præmie-indtægter",
+   "lado": "ingreso",
+   "M": 275.452,
+   "pagina": 16,
+   "linea": 355,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Samarbejdspartnere",
+   "lado": "ingreso",
+   "M": 158.819,
+   "pagina": 16,
+   "linea": 356,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Merchandiseindtægter",
+   "lado": "ingreso",
+   "M": 81.533,
+   "pagina": 16,
+   "linea": 357,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Food & Beverage, konferencecenter m.v.",
+   "lado": "ingreso",
+   "M": 28.985,
+   "pagina": 16,
+   "linea": 358,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Ejendomsudlejning",
+   "lado": "ingreso",
+   "M": 21.248,
+   "pagina": 16,
+   "linea": 359,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Øvrige indtægter",
+   "lado": "ingreso",
+   "M": 27.171,
+   "pagina": 16,
+   "linea": 360,
+   "origen": "nota que desglosa \"Nettoomsætning\""
+  },
+  {
+   "etiqueta": "Andre driftsindtægter",
+   "lado": "ingreso",
+   "M": 163.035,
+   "pagina": 12,
+   "linea": 241,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Indtægter af kapitalandele i tilknyttede virksomheder",
+   "lado": "ingreso",
+   "M": 19.4,
+   "pagina": 12,
+   "linea": 248,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Vareforbrug",
+   "lado": "gasto",
+   "M": 116.323,
+   "pagina": 12,
+   "linea": 242,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre eksterne omkostninger",
+   "lado": "gasto",
+   "M": 187.366,
+   "pagina": 12,
+   "linea": 243,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger og gager",
+   "lado": "gasto",
+   "M": 330.987,
+   "pagina": 16,
+   "linea": 369,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Pensioner",
+   "lado": "gasto",
+   "M": 16.051,
+   "pagina": 16,
+   "linea": 370,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre omkostninger til social sikring",
+   "lado": "gasto",
+   "M": 2.626,
+   "pagina": 16,
+   "linea": 371,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Amortiseringer af kontraktrettigheder",
+   "lado": "gasto",
+   "M": 155.676,
+   "pagina": 17,
+   "linea": 387,
+   "origen": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\""
+  },
+  {
+   "etiqueta": "Afskrivning på indretning af lejede lokaler",
+   "lado": "gasto",
+   "M": 4.151,
+   "pagina": 17,
+   "linea": 389,
+   "origen": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\""
+  },
+  {
+   "etiqueta": "Afskrivning på bygninger",
+   "lado": "gasto",
+   "M": 5.679,
+   "pagina": 17,
+   "linea": 390,
+   "origen": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\""
+  },
+  {
+   "etiqueta": "Nedskrivninger bygninger",
+   "lado": "gasto",
+   "M": 2.329,
+   "pagina": 17,
+   "linea": 391,
+   "origen": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\""
+  },
+  {
+   "etiqueta": "Afskrivning på produktionsanlæg og maskiner",
+   "lado": "gasto",
+   "M": 11.794,
+   "pagina": 17,
+   "linea": 392,
+   "origen": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Andre finansielle indtægter",
+   "M": 9.337,
+   "linea": 249
+  },
+  {
+   "etiqueta": "Øvrige finansielle omkostninger",
+   "M": -17.179,
+   "linea": 250
+  }
+ ],
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "dc9e454f6d6d3c7315e2d007c0f31e5447230743",
+  "rango": [
+   236,
+   255
+  ],
+  "lineasCargadas": [
+   354,
+   355,
+   356,
+   357,
+   358,
+   359,
+   360,
+   241,
+   248,
+   242,
+   243,
+   369,
+   370,
+   371,
+   387,
+   389,
+   390,
+   391,
+   392,
+   249,
+   250
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 236 a 255 del .md):\nL236: |  |  | 2025 | 2024 |\nL237: | --- | --- | --- | --- |\nL238: | Note |  | t.kr. | t.kr. |\nL239: | 2 | Nettoomsætning | 711.560 | 471.136 |\nL240: | --- | --- | --- | --- |\nL241: |  | Andre driftsindtægter | 163.035 | 287.954 |\nL242: |  | Vareforbrug | -116.323 | -106.193 |\nL243: |  | Andre eksterne omkostninger | -187.366 | -181.906 |\nL244: |  | Bruttoresultat | 570.906 | 470.991 |\nL245: | 4 | Personaleomkostninger | -349.664 | -298.133 |\nL246: | 5 | Af- og nedskrivninger af materielle og immaterielle anlægsaktiver | -179.629 | -137.242 |\nL247: |  | Driftsresultat | 41.613 | 35.616 |\nL248: |  | Indtægter af kapitalandele i tilknyttede virksomheder | 19.400 | 13.500 |\nL249: | 6 | Andre finansielle indtægter | 9.337 | 2.733 |\nL250: | 7 | Øvrige finansielle omkostninger | -17.179 | -5.613 |\nL251: |  | Resultat før skat | 53.171 | 46.236 |\nL252: | 8 | Årets resultat | 53.171 | 46.236 |\nL253: |  | F.C. København P/S · Årsrapport for 2025 | 10 |\nL254: | --- | --- | --- |\n\nLO QUE SE CARGA:\n- ingreso · \"Entréindtægter\" · 118.352 · L354 (de una nota)\n- ingreso · \"TV- og præmie-indtægter\" · 275.452 · L355 (de una nota)\n- ingreso · \"Samarbejdspartnere\" · 158.819 · L356 (de una nota)\n- ingreso · \"Merchandiseindtægter\" · 81.533 · L357 (de una nota)\n- ingreso · \"Food & Beverage, konferencecenter m.v.\" · 28.985 · L358 (de una nota)\n- ingreso · \"Ejendomsudlejning\" · 21.248 · L359 (de una nota)\n- ingreso · \"Øvrige indtægter\" · 27.171 · L360 (de una nota)\n- ingreso · \"Andre driftsindtægter\" · 163.035 · L241\n- ingreso · \"Indtægter af kapitalandele i tilknyttede virksomheder\" · 19.4 · L248\n- gasto · \"Vareforbrug\" · 116.323 · L242\n- gasto · \"Andre eksterne omkostninger\" · 187.366 · L243\n- gasto · \"Lønninger og gager\" · 330.987 · L369 (de una nota)\n- gasto · \"Pensioner\" · 16.051 · L370 (de una nota)\n- gasto · \"Andre omkostninger til social sikring\" · 2.626 · L371 (de una nota)\n- gasto · \"Amortiseringer af kontraktrettigheder\" · 155.676 · L387 (de una nota)\n- gasto · \"Afskrivning på indretning af lejede lokaler\" · 4.151 · L389 (de una nota)\n- gasto · \"Afskrivning på bygninger\" · 5.679 · L390 (de una nota)\n- gasto · \"Nedskrivninger bygninger\" · 2.329 · L391 (de una nota)\n- gasto · \"Afskrivning på produktionsanlæg og maskiner\" · 11.794 · L392 (de una nota)\n- financiero · \"Andre finansielle indtægter\" · 9.337 · L249\n- financiero · \"Øvrige finansielle omkostninger\" · -17.179 · L250"
+ }
+}

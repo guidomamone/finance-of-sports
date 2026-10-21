@@ -1,0 +1,85 @@
+{
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.md",
+ "generatedAt": "2026-10-21T12:51:43.079Z",
+ "rubrosHuella": "ed13f2bce7109e32dd843d5fc391c59d99a7deda",
+ "rubros": [
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Avskrivning på varige driftsm. og immatr. eiendeler",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Salg av spillere",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Bidrag fra aksjonærene",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1075
+  }
+ ]
+}

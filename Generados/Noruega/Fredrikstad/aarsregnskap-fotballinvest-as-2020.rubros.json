@@ -1,0 +1,40 @@
+{
+  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2020.md",
+  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2020.pdf",
+  "club": "fredrikstad-no",
+  "year": 2020,
+  "generatedAt": "2026-10-21T12:47:57.021Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Annen driftsinntekt",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.120684
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Avskrivning",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.358158
+      ],
+      "glosa": "Amortización"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.058786
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.pdf",
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2024.md",
+ "mdSha1": "66f489dfe65c75cfa278ba00b5b8699f84bfc8e3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:42:36.009Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    16
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    28,
+    31
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    35,
+    38
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    64,
+    93
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    108,
+    131
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 3,
+   "lineas": [
+    135,
+    142
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 4,
+   "lineas": [
+    148,
+    164
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 6,
+   "lineas": [
+    214,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 7,
+   "lineas": [
+    247,
+    265
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 8,
+   "lineas": [
+    275,
+    292
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 9,
+   "lineas": [
+    316,
+    320
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    395,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    404,
+    408
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    412,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    422,
+    424
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    426,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 12,
+   "lineas": [
+    431,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 13,
+   "lineas": [
+    448,
+    457
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    459,
+    461
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 13,
+   "lineas": [
+    465,
+    469
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 13,
+   "lineas": [
+    471,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 13,
+   "lineas": [
+    481,
+    492
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 14,
+   "lineas": [
+    500,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 14,
+   "lineas": [
+    512,
+    516
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 14,
+   "lineas": [
+    520,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 14,
+   "lineas": [
+    530,
+    533
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 14,
+   "lineas": [
+    541,
+    550
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 15,
+   "lineas": [
+    558,
+    561
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 15,
+   "lineas": [
+    567,
+    570
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 15,
+   "lineas": [
+    580,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 15,
+   "lineas": [
+    585,
+    588
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 24,
+   "lineas": [
+    817,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 25,
+   "lineas": [
+    844,
+    846
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [
+  "b12",
+  "b13"
+ ],
+ "notas_gastos": [
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (encabezado del resultatregnskap del registro, pág. 2); los importes del estado de pág. 6 son del mismo orden",
+ "moneda": "NOK",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el resultatregnskap de la pág. 2 (b4, versión del formulario del Brønnøysundregistrene) por duplicar el de la pág. 6 (b8)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "El documento trae dos estados de resultados de Vålerenga Fotball AS 2024: b4 (formulario de registro) y b8 (cuentas firmadas, que remiten a las notas).",
+   "bloques": [
+    "b4",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El estado de la pág. 6 (b8) está expresado en NOK unidades como el de la pág. 2?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Solo b4 dice 'Beløp i: NOK'; b8 no muestra la escala en lo visible.",
+   "bloques": [
+    "b8",
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Una sola entidad (Vålerenga Fotball AS), cuentas individuales. Se elige el estado de las cuentas firmadas (b8, pág. 6) con notas 1 (ingresos: b12 salgsinntekt, b13 andre inntekter) y 2 (lønnskostnader: b14). Honorario del auditor (b17), pérdidas sobre créditos (b21) y demás notas son de balance, impuestos o detalle no cargable."
+}

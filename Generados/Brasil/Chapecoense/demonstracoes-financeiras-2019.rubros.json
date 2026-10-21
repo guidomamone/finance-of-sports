@@ -1,0 +1,520 @@
+{
+  "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md",
+  "pdf": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.pdf",
+  "club": "chapecoense-br",
+  "year": 2019,
+  "generatedAt": "2026-10-21T12:47:56.662Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita de Transmissão",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        39.359
+      ],
+      "glosa": "Ingresos por derechos de transmisión"
+    },
+    {
+      "label": "Catarinense",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\"",
+      "values": [
+        0.2
+      ],
+      "glosa": "Catarinense"
+    },
+    {
+      "label": "Brasileirão Série A",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\"",
+      "values": [
+        2.996
+      ],
+      "glosa": "Brasileirão Serie A"
+    },
+    {
+      "label": "Copa do Brasil",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\"",
+      "values": [
+        0.173
+      ],
+      "glosa": "Copa de Brasil"
+    },
+    {
+      "label": "Sulamericana",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\"",
+      "values": [
+        0.05
+      ],
+      "glosa": "Copa Sudamericana"
+    },
+    {
+      "label": "Patrocínio",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        13.874
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Receita de Negociação de Atletas",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        5.553
+      ],
+      "glosa": "Ingresos por traspaso de jugadores"
+    },
+    {
+      "label": "Programa Sócio Torcedor",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        8.47
+      ],
+      "glosa": "Programa de socios aficionados"
+    },
+    {
+      "label": "Timemania",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        0.169
+      ],
+      "glosa": "Timemania"
+    },
+    {
+      "label": "Royalties/Direito de Uso de Marca/Venda de produtos",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        0.926
+      ],
+      "glosa": "Regalías / Derechos de uso de marca / Venta de productos"
+    },
+    {
+      "label": "Receitas Diversas",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        1.176
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Doações/PAF",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        0.001
+      ],
+      "glosa": "Donaciones / PAF"
+    },
+    {
+      "label": "Receita Federações",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        7.496
+      ],
+      "glosa": "Ingresos de federaciones"
+    },
+    {
+      "label": "Deduções Tributárias e Sindicais",
+      "lado": "revenue",
+      "page": 47,
+      "section": "nota que desglosa \"Receita Operacional Líquida\"",
+      "values": [
+        -6.542
+      ],
+      "glosa": "Deducciones tributarias y sindicales"
+    },
+    {
+      "label": "Dividendos Recebidos",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Outras Receitas Operacionais\"",
+      "values": [
+        0.015
+      ],
+      "glosa": "Dividendos recibidos"
+    },
+    {
+      "label": "Outras Receitas Não Operacionais",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Outras Receitas Operacionais\"",
+      "values": [
+        0.055
+      ],
+      "glosa": "Otros ingresos no operativos"
+    },
+    {
+      "label": "Recuperação de Despesas",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Outras Receitas Operacionais\"",
+      "values": [
+        1.234
+      ],
+      "glosa": "Recuperación de gastos"
+    },
+    {
+      "label": "Venda de Imobilizado",
+      "lado": "revenue",
+      "page": 50,
+      "section": "nota que desglosa \"Outras Receitas Operacionais\"",
+      "values": [
+        0.04
+      ],
+      "glosa": "Venta de inmovilizado"
+    },
+    {
+      "label": "Custos",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        0.244
+      ],
+      "glosa": "Costos"
+    },
+    {
+      "label": "Ordenados e Salários",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        35.548
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Premiação",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        6.262
+      ],
+      "glosa": "Primas y premios"
+    },
+    {
+      "label": "INSS/FGTS/PIS",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        4.962
+      ],
+      "glosa": "Cargas sociales (INSS/FGTS/PIS)"
+    },
+    {
+      "label": "Amortização Direitos Fed. Econ.",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        8.796
+      ],
+      "glosa": "Amortización de derechos federativos y económicos"
+    },
+    {
+      "label": "Despesas com Transf. Jogadores",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        0.372
+      ],
+      "glosa": "Gastos por transferencia de jugadores"
+    },
+    {
+      "label": "Indenizações",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        0.516
+      ],
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        0.273
+      ],
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Despesas Médicas",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        1.512
+      ],
+      "glosa": "Gastos médicos"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        0.919
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Outros Gastos c/ Pessoal",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Pessoal\"",
+      "values": [
+        0.594
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        0.671
+      ],
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Manutenção Imobilizado",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Manutenção\"",
+      "values": [
+        0.104
+      ],
+      "glosa": "Mantenimiento del inmovilizado"
+    },
+    {
+      "label": "Manutenção Terceiros",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Manutenção\"",
+      "values": [
+        0.688
+      ],
+      "glosa": "Mantenimiento por terceros"
+    },
+    {
+      "label": "Manutenção Intangível",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Manutenção\"",
+      "values": [
+        0.836
+      ],
+      "glosa": "Mantenimiento de intangibles"
+    },
+    {
+      "label": "Jogos e competições",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        8.535
+      ],
+      "glosa": "Partidos y competiciones"
+    },
+    {
+      "label": "Terceiros",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        9.978
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Bens de pq. Valor e depreciação",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        0.794
+      ],
+      "glosa": "Bienes de bajo valor y depreciación"
+    },
+    {
+      "label": "Direito de imagem",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        15.46
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Multas e Indenizações",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.034
+      ],
+      "glosa": "Multas e indemnizaciones"
+    },
+    {
+      "label": "Propaganda e Publicidade",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.76
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Gastos Logísticos",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.295
+      ],
+      "glosa": "Gastos logísticos"
+    },
+    {
+      "label": "Provisões Contingência",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.534
+      ],
+      "glosa": "Provisiones para contingencias"
+    },
+    {
+      "label": "Doações/Ajudas de Custo",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.029
+      ],
+      "glosa": "Donaciones / Ayudas de costo"
+    },
+    {
+      "label": "Água, Luz e Telefone",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.23
+      ],
+      "glosa": "Agua, electricidad y teléfono"
+    },
+    {
+      "label": "Despesas Bancárias",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.147
+      ],
+      "glosa": "Gastos bancarios"
+    },
+    {
+      "label": "Mensalidades/Periódicos",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.071
+      ],
+      "glosa": "Suscripciones / Publicaciones periódicas"
+    },
+    {
+      "label": "Academia",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.003
+      ],
+      "glosa": "Gimnasio"
+    },
+    {
+      "label": "Demais Gastos",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gerais e Adm.\"",
+      "values": [
+        0.717
+      ],
+      "glosa": "Demás gastos"
+    },
+    {
+      "label": "Tributárias",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        0.808
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Despesas diversas",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Outras Despesas Operacionais\"",
+      "values": [
+        0.002
+      ],
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Custo dos Bens Patrimoniais Vendidos",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Outras Despesas Operacionais\"",
+      "values": [
+        0.058
+      ],
+      "glosa": "Costo de los bienes patrimoniales vendidos"
+    },
+    {
+      "label": "Acidente Aéreo Chapecoense",
+      "lado": "expense",
+      "page": 51,
+      "section": "nota que desglosa \"Outras Despesas Operacionais\"",
+      "values": [
+        21.217
+      ],
+      "glosa": "Accidente aéreo de Chapecoense"
+    }
+  ]
+}

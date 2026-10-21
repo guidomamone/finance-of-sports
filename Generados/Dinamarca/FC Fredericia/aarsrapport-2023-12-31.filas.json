@@ -1,0 +1,202 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2023-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2023-12-31.md",
+ "mdSha1": "8931ba3ca2d2264dbdd8c83c46b3d1fdc1f5f4ad",
+ "ubicacionSha1": "e045a9a2c2339c5a0180e061a6fbb2bfd62b3bfc",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:39:33.136Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b8"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L198: columnas '2023 DKK' / '2022 DKK' con importes completos"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L324: columnas '2023 DKK' / '2022 DKK' con importes completos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 200,
+   "etiqueta": "Bruttofortjeneste",
+   "actual": "10.098.024",
+   "anterior": "10.123.692",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 201,
+   "etiqueta": "Personaleomkostninger",
+   "actual": "-11.224.341",
+   "anterior": "-9.982.150",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 202,
+   "etiqueta": "Resultat før af- og nedskrivninger",
+   "actual": "-1.126.317",
+   "anterior": "141.542",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 203,
+   "etiqueta": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "actual": "-44.433",
+   "anterior": "-52.482",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 204,
+   "etiqueta": "Andre driftsomkostninger",
+   "actual": "-48.894",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 205,
+   "etiqueta": "Resultat før finansielle poster",
+   "actual": "-1.219.644",
+   "anterior": "89.060",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 206,
+   "etiqueta": "Finansielle indtægter",
+   "actual": "1.808",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 207,
+   "etiqueta": "Finansielle omkostninger",
+   "actual": "-143.754",
+   "anterior": "-66.949",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 208,
+   "etiqueta": "Resultat før skat",
+   "actual": "-1.361.590",
+   "anterior": "22.111",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 209,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 210,
+   "etiqueta": "Årets resultat",
+   "actual": "-1.361.590",
+   "anterior": "22.111",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 327,
+   "etiqueta": "Lønninger",
+   "actual": "10.554.109",
+   "anterior": "9.369.831",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b8",
+   "linea": 328,
+   "etiqueta": "Pensioner",
+   "actual": "396.552",
+   "anterior": "352.602",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b8",
+   "linea": 329,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "273.680",
+   "anterior": "259.717",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b8",
+   "linea": 330,
+   "etiqueta": "",
+   "actual": "11.224.341",
+   "anterior": "9.982.150",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 210,
+  "actual": "-1.361.590",
+  "anterior": "22.111"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Bruttofortjeneste' (L200, 10.098.024) como único renglón de ingresos, aunque es un neto de ingresos menos costos externos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bruttofortjeneste",
+   "texto": "El estado (formato reducido danés) no muestra ingresos brutos ni gastos externos por separado, solo la ganancia bruta en L200.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en formato reducido: no hay total de ingresos ni de gastos impresos. L331 (cantidad media de empleados: 29/25) no es importe y se omitió. No hay notas de ingresos."
+}

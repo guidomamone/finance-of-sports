@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2022.md",
+  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2022.pdf",
+  "club": "fredrikstad-no",
+  "year": 2022,
+  "generatedAt": "2026-10-21T12:47:57.071Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Annen driftsinntekt",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        1.865267
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Lønnskostnad",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Avskrivning",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        1.222528
+      ],
+      "glosa": "Amortización"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.117013
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

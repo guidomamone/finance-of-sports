@@ -1,0 +1,49 @@
+{
+ "pdf": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf",
+ "md": "Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.md",
+ "mdSha1": "678b2c268672e0640b3ee7ae7a8e480778a08aac",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:43:34.256Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    17,
+    60
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    74,
+    94
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    116,
+    133
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas '2024 €' / '2023 €' sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024 €",
+ "columna_anterior": "2023 €",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "b1 es la Κατάσταση Εσόδων και Εξόδων (estado de ingresos y gastos) del período 1/6/2023-31/5/2024 de la asociación. b2 es balance y b3 flujo de efectivo, se excluyen. No hay notas de desglose con cifras."
+}

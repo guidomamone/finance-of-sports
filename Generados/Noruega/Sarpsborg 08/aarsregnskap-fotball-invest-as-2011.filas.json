@@ -1,0 +1,201 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.md",
+ "mdSha1": "54686649c9762d31fcfc3d36e03f4e1fb32062ab",
+ "ubicacionSha1": "cb1ef401a879e84d041ae3972e5c8a126544bd68",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:42:22.603Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; los importes (ej. 400 000) sugieren unidades (NOK)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 261,
+   "etiqueta": "Salg av spillere",
+   "actual": "400 000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 262,
+   "etiqueta": "Bidrag fra aksjonærene",
+   "actual": "87 500",
+   "anterior": "100 000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 263,
+   "etiqueta": "Sum driftsinntekter",
+   "actual": "487 500",
+   "anterior": "100 000",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 264,
+   "etiqueta": "Avskrivning på varige driftsm. og immatr. eiendeler",
+   "actual": "(572 104)",
+   "anterior": "(347 513)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 265,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "(173 243)",
+   "anterior": "(40 431)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 266,
+   "etiqueta": "Sum driftskostnader",
+   "actual": "(745 347)",
+   "anterior": "(387 944)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 267,
+   "etiqueta": "Driftsresultat",
+   "actual": "(257 847)",
+   "anterior": "(287 944)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 268,
+   "etiqueta": "Annen renteinntekt",
+   "actual": "324",
+   "anterior": "199",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 269,
+   "etiqueta": "Sum finansinntekter",
+   "actual": "324",
+   "anterior": "199",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 270,
+   "etiqueta": "Annen rentekostnad",
+   "actual": "0",
+   "anterior": "(121)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 271,
+   "etiqueta": "Sum finanskostnader",
+   "actual": "0",
+   "anterior": "(121)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 272,
+   "etiqueta": "Netto finans",
+   "actual": "324",
+   "anterior": "78",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 273,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "(257 523)",
+   "anterior": "(287 866)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 274,
+   "etiqueta": "Ordinært resultat",
+   "actual": "(257 523)",
+   "anterior": "(287 866)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 275,
+   "etiqueta": "Årsresultat",
+   "actual": "(257 523)",
+   "anterior": "(287 866)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 263,
+  "actual": "487 500"
+ },
+ "total_gastos": {
+  "linea": 266,
+  "actual": "(745 347)"
+ },
+ "resultado": {
+  "linea": 275,
+  "actual": "(257 523)",
+  "anterior": "(287 866)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se toman los importes del estado (b4) como unidades (NOK) aunque el bloque no imprime la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado L256-L259 no indica escala; por magnitud parecen unidades.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Se omitieron las filas de distribución del resultado (Overføringer, Udekket tap, Sum; L276-L278) por no ser partidas del estado de resultados. No hay impuesto ni notas de desglose provistas."
+}

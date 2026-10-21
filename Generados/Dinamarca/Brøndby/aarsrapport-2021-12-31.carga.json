@@ -1,0 +1,1045 @@
+{
+ "pdf": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.pdf",
+ "generado": "2026-10-21T12:52:10.917Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Diferencia de redondeo\" -> other_income 0; \"Omkostninger\" -> other_income 0; \"Nedskrivninger på kontraktrettigheder\" -> other_income 0; \"Afskrivninger på kontraktrettigheder\" -> other_income 0; \"Diferencia de redondeo\" -> other_income 0"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2021: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2021: pregunta en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-21: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 8 documento(s) mirados)",
+  "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
+ ],
+ "ejercicio": {
+  "clubId": "brondby-dk",
+  "year": 2021,
+  "cierre": "2021-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Entré-, TV- og præmieindtægter",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 147.52,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Indtægter fra partnere og sponsorer",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 72.628,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "F&B og arrangementer m.v.",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 23.227,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandise m.v.",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 42.614,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Udlejning erhvervsejendom m.v.",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.26,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Anden nettoomsætning",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.754,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diferencia de redondeo",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.001,
+    "disclosureLevel": "aggregated",
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+   },
+   {
+    "rawLabel": "Kompensation fra Staten",
+    "normalizedCategory": "other_income",
+    "amountNative": 17.024,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Donation",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.793,
+    "disclosureLevel": "aggregated",
+    "_pag": 46,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Indtægter",
+    "normalizedCategory": "player_sales",
+    "amountNative": 50.215,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Omkostninger",
+    "normalizedCategory": "other_income",
+    "amountNative": -2.584,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+   },
+   {
+    "rawLabel": "Nedskrivninger på kontraktrettigheder",
+    "normalizedCategory": "other_income",
+    "amountNative": -3.803,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía player_impairment, del otro lado que la fila: se propone la genérica de su lado"
+   },
+   {
+    "rawLabel": "Afskrivninger på kontraktrettigheder",
+    "normalizedCategory": "other_income",
+    "amountNative": -25.288,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía player_amortisation, del otro lado que la fila: se propone la genérica de su lado"
+   },
+   {
+    "rawLabel": "Diferencia de redondeo",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.001,
+    "disclosureLevel": "aggregated",
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Kamp- og spilleromkostninger",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -25.869,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Salgs- og markedsføringsomkostninger",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -7.957,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "F&B og arrangementer m.v.",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -18.138,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, familia (categorias.json decía stadium_other)"
+   },
+   {
+    "rawLabel": "Driftsomkostninger ejendomme",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -11.545,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Vareforbrug m.v. merchandise",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -19.034,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Administrationsomkostninger",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -26.25,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Vederlag til direktion",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4.477,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kontantbaseret incitamentsordning, direktion",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.564,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pension til direktion",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.187,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bestyrelseshonorar",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.525,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gager og lønninger til medarbejdere",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -103.062,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensionsordninger, bidragsbaserede",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -5.211,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre omkostninger til social sikring",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.11,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Øvrige personaleomkostninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -7.983,
+    "disclosureLevel": "aggregated",
+    "_pag": 48,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diferencia de redondeo",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.001,
+    "disclosureLevel": "aggregated",
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bygninger m.v.",
+    "normalizedCategory": "depreciation",
+    "amountNative": -6.903,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Driftsmateriel og inventar",
+    "normalizedCategory": "depreciation",
+    "amountNative": -3.875,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 2,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tab ved salg/afgang af anlægsaktiver",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.108,
+    "disclosureLevel": "aggregated",
+    "_pag": 49,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2021-12-31",
+   "sourceId": "brondby-dk-aarsrapport-2021-12-31",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.145,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Finansielle indtægter",
+     "value": 0.446
+    },
+    {
+     "label": "Finansielle omkostninger",
+     "value": -0.591
+    },
+    {
+     "label": "Skat af årets resultat",
+     "value": 0
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 328.362,
+   "officialTotalExpenses": 244.799,
+   "officialPAT": 83.418
+  },
+  "source": {
+   "id": "brondby-dk-aarsrapport-2021-12-31",
+   "clubId": "brondby-dk",
+   "title": "Brøndbyernes I.F. Fodbold A/S — aarsrapport-2021-12-31 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-12-31",
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-21): el .md habla de 31. december 2021 (36 veces); Resultatopgørelse y Balance «pr. 31. december»"
+ },
+ "clubId": "brondby-dk",
+ "year": 2021,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/Brøndby/aarsrapport-2021-12-31.pdf",
+   "campo": "cierre",
+   "valor": "2021-12-31",
+   "linea": null,
+   "motivo": "el .md habla de 31. december 2021 (36 veces); Resultatopgørelse y Balance «pr. 31. december»",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 35,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Entré-, TV- og præmieindtægter",
+   "page": 46,
+   "native": 147.52,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 147.52,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 147.52
+  },
+  {
+   "label": "Indtægter fra partnere og sponsorer",
+   "page": 46,
+   "native": 72.628,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 72.628,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 72.628
+  },
+  {
+   "label": "F&B og arrangementer m.v.",
+   "page": 46,
+   "native": 23.227,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 23.227,
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 23.227
+  },
+  {
+   "label": "Merchandise m.v.",
+   "page": 46,
+   "native": 42.614,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 42.614,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 42.614
+  },
+  {
+   "label": "Udlejning erhvervsejendom m.v.",
+   "page": 46,
+   "native": 2.26,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 2.26,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.26
+  },
+  {
+   "label": "Anden nettoomsætning",
+   "page": 46,
+   "native": 1.754,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 1.754,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.754
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "native": 0.001,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Nettoomsætning\")",
+   "signoFijo": 0.001,
+   "cat": "other_income",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.001
+  },
+  {
+   "label": "Kompensation fra Staten",
+   "page": 46,
+   "native": 17.024,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre driftsindtægter\")",
+   "signoFijo": 17.024,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 17.024
+  },
+  {
+   "label": "Donation",
+   "page": 46,
+   "native": 2.793,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre driftsindtægter\")",
+   "signoFijo": 2.793,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.793
+  },
+  {
+   "label": "Indtægter",
+   "page": 49,
+   "native": 50.215,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")",
+   "signoFijo": 50.215,
+   "cat": "player_sales",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 50.215
+  },
+  {
+   "label": "Omkostninger",
+   "page": 49,
+   "native": 2.584,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")",
+   "signoFijo": -2.584,
+   "cat": "other_income",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": -2.584
+  },
+  {
+   "label": "Nedskrivninger på kontraktrettigheder",
+   "page": 49,
+   "native": 3.803,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")",
+   "signoFijo": -3.803,
+   "cat": "other_income",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía player_impairment, del otro lado que la fila: se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": -3.803
+  },
+  {
+   "label": "Afskrivninger på kontraktrettigheder",
+   "page": 49,
+   "native": 25.288,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")",
+   "signoFijo": -25.288,
+   "cat": "other_income",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía player_amortisation, del otro lado que la fila: se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": -25.288
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "native": 0.001,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")",
+   "signoFijo": 0.001,
+   "cat": "other_income",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.001
+  },
+  {
+   "label": "Kamp- og spilleromkostninger",
+   "page": 47,
+   "native": 25.869,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Eksterne omkostninger\")",
+   "signoFijo": 25.869,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -25.869
+  },
+  {
+   "label": "Salgs- og markedsføringsomkostninger",
+   "page": 47,
+   "native": 7.957,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Eksterne omkostninger\")",
+   "signoFijo": 7.957,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -7.957
+  },
+  {
+   "label": "F&B og arrangementer m.v.",
+   "page": 47,
+   "native": 18.138,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Eksterne omkostninger\")",
+   "signoFijo": 18.138,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, familia (categorias.json decía stadium_other)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -18.138
+  },
+  {
+   "label": "Driftsomkostninger ejendomme",
+   "page": 47,
+   "native": 11.545,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Eksterne omkostninger\")",
+   "signoFijo": 11.545,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -11.545
+  },
+  {
+   "label": "Vareforbrug m.v. merchandise",
+   "page": 47,
+   "native": 19.034,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Eksterne omkostninger\")",
+   "signoFijo": 19.034,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -19.034
+  },
+  {
+   "label": "Administrationsomkostninger",
+   "page": 47,
+   "native": 26.25,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Eksterne omkostninger\")",
+   "signoFijo": 26.25,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -26.25
+  },
+  {
+   "label": "Vederlag til direktion",
+   "page": 48,
+   "native": 4.477,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 4.477,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.477
+  },
+  {
+   "label": "Kontantbaseret incitamentsordning, direktion",
+   "page": 48,
+   "native": 2.564,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 2.564,
+   "cat": "admin_general_expense",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.564
+  },
+  {
+   "label": "Pension til direktion",
+   "page": 48,
+   "native": 0.187,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.187,
+   "cat": "admin_general_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.187
+  },
+  {
+   "label": "Bestyrelseshonorar",
+   "page": 48,
+   "native": 0.525,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.525,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.525
+  },
+  {
+   "label": "Gager og lønninger til medarbejdere",
+   "page": 48,
+   "native": 103.062,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 103.062,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -103.062
+  },
+  {
+   "label": "Pensionsordninger, bidragsbaserede",
+   "page": 48,
+   "native": 5.211,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 5.211,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.211
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "page": 48,
+   "native": 1.11,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 1.11,
+   "cat": "wages_squad",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.11
+  },
+  {
+   "label": "Øvrige personaleomkostninger",
+   "page": 48,
+   "native": 7.983,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 7.983,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -7.983
+  },
+  {
+   "label": "Diferencia de redondeo",
+   "native": 0.001,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.001,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.001
+  },
+  {
+   "label": "Bygninger m.v.",
+   "page": 49,
+   "native": 6.903,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger\")",
+   "signoFijo": 6.903,
+   "cat": "depreciation",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.903
+  },
+  {
+   "label": "Driftsmateriel og inventar",
+   "page": 49,
+   "native": 3.875,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger\")",
+   "signoFijo": 3.875,
+   "cat": "depreciation",
+   "conf": 0.93,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.875
+  },
+  {
+   "label": "Tab ved salg/afgang af anlægsaktiver",
+   "page": 49,
+   "native": 0.108,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Af- og nedskrivninger\")",
+   "signoFijo": 0.108,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.108
+  },
+  {
+   "label": "Finansielle indtægter",
+   "page": null,
+   "native": 0.446,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Finansielle omkostninger",
+   "page": null,
+   "native": -0.591,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skat af årets resultat",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Nettoomsætning\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Andre driftsindtægter\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Resultat af transferaktiviteter\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Eksterne omkostninger\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Personaleomkostninger\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Af- og nedskrivninger\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 328.362,
+  "expSum": -244.799,
+  "officialTotalRevenue": 328.362,
+  "officialTotalExpenses": 244.799,
+  "officialPAT": 83.418,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 83.418,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 328.362
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 244.799
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "DKK@2021-12-31",
+  "fx": 6.5612,
+  "source": "market_close",
+  "label": "Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2021-12-30, 2021-12-31 no es día hábil)"
+ },
+ "liga": {
+  "valor": "dk-superliga",
+  "fuente": "roster cacheado de \"2021–22 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Brøndby\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): el .md habla de 31. december 2021 (36 veces); Resultatopgørelse y Balance «pr. 31. december»",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): el .md habla de 31. december 2021 (36 veces); Resultatopgørelse y Balance «pr. 31. december»)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-21)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 1 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "DKK@2021-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 6.5612. --escribir agrega 'DKK@2021-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "brondby-dk-aarsrapport-2021-12-31",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "dk-superliga",
+   "fuente": "roster cacheado de \"2021–22 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Brøndby\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 3,
+  "lineasIngreso": 14,
+  "lineasGasto": 18,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

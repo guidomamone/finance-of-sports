@@ -1,0 +1,215 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2025-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2025-12-31.md",
+ "mdSha1": "c3c573d5d87d23405de588819533b768dec930b8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T12:44:31.108Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    9
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    15,
+    33
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    37,
+    60
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    64,
+    103
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    107,
+    132
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    136,
+    185
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 7,
+   "lineas": [
+    189,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    236,
+    253
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    257,
+    282
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    286,
+    329
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    333,
+    364
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    368,
+    378
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    382,
+    425
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    429,
+    482
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    486,
+    545
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    549,
+    564
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    568,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 18,
+   "lineas": [
+    601,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    654,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    711,
+    754
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    758,
+    801
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    805,
+    814
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b9"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(DKK) en el encabezado de la Resultatopgørelse (b9)",
+ "moneda": "DKK",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan de b14 solo la nota 1 (Personaleomkostninger) y la nota 2 (Skat af årets resultat), dejando afuera las notas 3 (Materielle anlægsaktiver) y 4 (Udskudt skatteaktiv)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Personaleomkostninger",
+   "texto": "El bloque b14 mezcla notas de resultados (1 y 2) con notas de balance (3 y 4), y estas últimas no desglosan renglones de la cuenta de resultados.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de Fodbold Club Fredericia 1991 ApS, presentado en DKK unidades. La cuenta de resultados arranca en Bruttofortjeneste (formato abreviado), así que no hay desglose de ingresos. En b14 solo las notas 1 (personal) y 2 (impuesto) desglosan renglones del estado."
+}

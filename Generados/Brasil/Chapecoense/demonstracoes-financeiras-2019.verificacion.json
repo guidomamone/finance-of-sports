@@ -1,0 +1,567 @@
+{
+ "pdf": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.pdf",
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2019.md",
+ "generado": "2026-10-21T12:48:25.996Z",
+ "scriptHuella": "f2a64e48f42b",
+ "estado": "cola",
+ "clubId": "chapecoense-br",
+ "year": 2019,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "9b15998",
+  "932061a",
+  "01d86a1",
+  "76b49ae"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Receita Operacional Líquida\" 73.901 cierra; además se suman 4 línea(s) fuera de ese total (1.344)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": false,
+   "detalle": "las líneas suman 121.969 y el total impreso dice 100.448"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0009999999999976694
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: L2037 consolidado 2018 = 17 y controladora 2018 = 170; con 17 el total 2018 (1.626) no cierra, probable error de transcripción del año anterior.",
+  "duda de extraer que no afecta la carga: b42 (L1878-L1886) no indica perímetro; el total 3.419 coincide en ambos.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 75.245,
+  "gastos": 121.969,
+  "financiero": -4.018,
+  "impuesto": -0.013,
+  "resultadoImpreso": -50.756,
+  "resultadoParaCargar": -50.756,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Receita de Transmissão",
+   "lado": "ingreso",
+   "M": 39.359,
+   "pagina": 47,
+   "linea": 1863,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Catarinense",
+   "lado": "ingreso",
+   "M": 0.2,
+   "pagina": 47,
+   "linea": 1881,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\""
+  },
+  {
+   "etiqueta": "Brasileirão Série A",
+   "lado": "ingreso",
+   "M": 2.996,
+   "pagina": 47,
+   "linea": 1883,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\""
+  },
+  {
+   "etiqueta": "Copa do Brasil",
+   "lado": "ingreso",
+   "M": 0.173,
+   "pagina": 47,
+   "linea": 1884,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\""
+  },
+  {
+   "etiqueta": "Sulamericana",
+   "lado": "ingreso",
+   "M": 0.05,
+   "pagina": 47,
+   "linea": 1885,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\" > desglose de \"Bilheteria\""
+  },
+  {
+   "etiqueta": "Patrocínio",
+   "lado": "ingreso",
+   "M": 13.874,
+   "pagina": 47,
+   "linea": 1865,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Receita de Negociação de Atletas",
+   "lado": "ingreso",
+   "M": 5.553,
+   "pagina": 47,
+   "linea": 1866,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Programa Sócio Torcedor",
+   "lado": "ingreso",
+   "M": 8.47,
+   "pagina": 47,
+   "linea": 1867,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Timemania",
+   "lado": "ingreso",
+   "M": 0.169,
+   "pagina": 47,
+   "linea": 1868,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Royalties/Direito de Uso de Marca/Venda de produtos",
+   "lado": "ingreso",
+   "M": 0.926,
+   "pagina": 47,
+   "linea": 1869,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Receitas Diversas",
+   "lado": "ingreso",
+   "M": 1.176,
+   "pagina": 47,
+   "linea": 1870,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Doações/PAF",
+   "lado": "ingreso",
+   "M": 0.001,
+   "pagina": 47,
+   "linea": 1871,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Receita Federações",
+   "lado": "ingreso",
+   "M": 7.496,
+   "pagina": 47,
+   "linea": 1872,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Deduções Tributárias e Sindicais",
+   "lado": "ingreso",
+   "M": -6.542,
+   "pagina": 47,
+   "linea": 1873,
+   "origen": "nota que desglosa \"Receita Operacional Líquida\""
+  },
+  {
+   "etiqueta": "Dividendos Recebidos",
+   "lado": "ingreso",
+   "M": 0.015,
+   "pagina": 50,
+   "linea": 2034,
+   "origen": "nota que desglosa \"Outras Receitas Operacionais\""
+  },
+  {
+   "etiqueta": "Outras Receitas Não Operacionais",
+   "lado": "ingreso",
+   "M": 0.055,
+   "pagina": 50,
+   "linea": 2036,
+   "origen": "nota que desglosa \"Outras Receitas Operacionais\""
+  },
+  {
+   "etiqueta": "Recuperação de Despesas",
+   "lado": "ingreso",
+   "M": 1.234,
+   "pagina": 50,
+   "linea": 2037,
+   "origen": "nota que desglosa \"Outras Receitas Operacionais\""
+  },
+  {
+   "etiqueta": "Venda de Imobilizado",
+   "lado": "ingreso",
+   "M": 0.04,
+   "pagina": 50,
+   "linea": 2039,
+   "origen": "nota que desglosa \"Outras Receitas Operacionais\""
+  },
+  {
+   "etiqueta": "Custos",
+   "lado": "gasto",
+   "M": 0.244,
+   "pagina": 17,
+   "linea": 552,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ordenados e Salários",
+   "lado": "gasto",
+   "M": 35.548,
+   "pagina": 48,
+   "linea": 1913,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "Premiação",
+   "lado": "gasto",
+   "M": 6.262,
+   "pagina": 48,
+   "linea": 1914,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "INSS/FGTS/PIS",
+   "lado": "gasto",
+   "M": 4.962,
+   "pagina": 48,
+   "linea": 1915,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "Amortização Direitos Fed. Econ.",
+   "lado": "gasto",
+   "M": 8.796,
+   "pagina": 48,
+   "linea": 1916,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "Despesas com Transf. Jogadores",
+   "lado": "gasto",
+   "M": 0.372,
+   "pagina": 48,
+   "linea": 1917,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "Indenizações",
+   "lado": "gasto",
+   "M": 0.516,
+   "pagina": 48,
+   "linea": 1918,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.273,
+   "pagina": 48,
+   "linea": 1919,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "Despesas Médicas",
+   "lado": "gasto",
+   "M": 1.512,
+   "pagina": 48,
+   "linea": 1920,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.919,
+   "pagina": 48,
+   "linea": 1921,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "Outros Gastos c/ Pessoal",
+   "lado": "gasto",
+   "M": 0.594,
+   "pagina": 48,
+   "linea": 1922,
+   "origen": "nota que desglosa \"Pessoal\""
+  },
+  {
+   "etiqueta": "Materiais",
+   "lado": "gasto",
+   "M": 0.671,
+   "pagina": 17,
+   "linea": 556,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Manutenção Imobilizado",
+   "lado": "gasto",
+   "M": 0.104,
+   "pagina": 48,
+   "linea": 1932,
+   "origen": "nota que desglosa \"Manutenção\""
+  },
+  {
+   "etiqueta": "Manutenção Terceiros",
+   "lado": "gasto",
+   "M": 0.688,
+   "pagina": 48,
+   "linea": 1933,
+   "origen": "nota que desglosa \"Manutenção\""
+  },
+  {
+   "etiqueta": "Manutenção Intangível",
+   "lado": "gasto",
+   "M": 0.836,
+   "pagina": 48,
+   "linea": 1934,
+   "origen": "nota que desglosa \"Manutenção\""
+  },
+  {
+   "etiqueta": "Jogos e competições",
+   "lado": "gasto",
+   "M": 8.535,
+   "pagina": 17,
+   "linea": 558,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Terceiros",
+   "lado": "gasto",
+   "M": 9.978,
+   "pagina": 17,
+   "linea": 559,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bens de pq. Valor e depreciação",
+   "lado": "gasto",
+   "M": 0.794,
+   "pagina": 17,
+   "linea": 560,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Direito de imagem",
+   "lado": "gasto",
+   "M": 15.46,
+   "pagina": 17,
+   "linea": 561,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Multas e Indenizações",
+   "lado": "gasto",
+   "M": 0.034,
+   "pagina": 49,
+   "linea": 1969,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Propaganda e Publicidade",
+   "lado": "gasto",
+   "M": 0.76,
+   "pagina": 49,
+   "linea": 1970,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Gastos Logísticos",
+   "lado": "gasto",
+   "M": 0.295,
+   "pagina": 49,
+   "linea": 1971,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Provisões Contingência",
+   "lado": "gasto",
+   "M": 0.534,
+   "pagina": 49,
+   "linea": 1972,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Doações/Ajudas de Custo",
+   "lado": "gasto",
+   "M": 0.029,
+   "pagina": 49,
+   "linea": 1973,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Água, Luz e Telefone",
+   "lado": "gasto",
+   "M": 0.23,
+   "pagina": 49,
+   "linea": 1974,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Despesas Bancárias",
+   "lado": "gasto",
+   "M": 0.147,
+   "pagina": 49,
+   "linea": 1975,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Mensalidades/Periódicos",
+   "lado": "gasto",
+   "M": 0.071,
+   "pagina": 49,
+   "linea": 1976,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Academia",
+   "lado": "gasto",
+   "M": 0.003,
+   "pagina": 49,
+   "linea": 1977,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Demais Gastos",
+   "lado": "gasto",
+   "M": 0.717,
+   "pagina": 49,
+   "linea": 1978,
+   "origen": "nota que desglosa \"Gerais e Adm.\""
+  },
+  {
+   "etiqueta": "Tributárias",
+   "lado": "gasto",
+   "M": 0.808,
+   "pagina": 17,
+   "linea": 563,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas diversas",
+   "lado": "gasto",
+   "M": 0.002,
+   "pagina": 51,
+   "linea": 2056,
+   "origen": "nota que desglosa \"Outras Despesas Operacionais\""
+  },
+  {
+   "etiqueta": "Custo dos Bens Patrimoniais Vendidos",
+   "lado": "gasto",
+   "M": 0.058,
+   "pagina": 51,
+   "linea": 2057,
+   "origen": "nota que desglosa \"Outras Despesas Operacionais\""
+  },
+  {
+   "etiqueta": "Acidente Aéreo Chapecoense",
+   "lado": "gasto",
+   "M": 21.217,
+   "pagina": 51,
+   "linea": 2060,
+   "origen": "nota que desglosa \"Outras Despesas Operacionais\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas Financeiras",
+   "M": 0.392,
+   "linea": 568
+  },
+  {
+   "etiqueta": "Despesas Financeiras",
+   "M": -4.41,
+   "linea": 569
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "IR e CSLL",
+   "M": -0.013,
+   "linea": 571
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "770e79ef5c3755d4fb3443607c721a240c670eba",
+  "rango": [
+   548,
+   575
+  ],
+  "lineasCargadas": [
+   1863,
+   1881,
+   1883,
+   1884,
+   1885,
+   1865,
+   1866,
+   1867,
+   1868,
+   1869,
+   1870,
+   1871,
+   1872,
+   1873,
+   2034,
+   2036,
+   2037,
+   2039,
+   552,
+   1913,
+   1914,
+   1915,
+   1916,
+   1917,
+   1918,
+   1919,
+   1920,
+   1921,
+   1922,
+   556,
+   1932,
+   1933,
+   1934,
+   558,
+   559,
+   560,
+   561,
+   1969,
+   1970,
+   1971,
+   1972,
+   1973,
+   1974,
+   1975,
+   1976,
+   1977,
+   1978,
+   563,
+   2056,
+   2057,
+   2060,
+   568,
+   569,
+   571
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 548 a 575 del .md):\nL548: |  DRE - RESULTADO POR FUNÇÃO | Nota | CONTROLADORA |   | CONSOLIDADO  |   |\nL549: | --- | --- | --- | --- | --- | --- |\nL550: |   |   |  2019 | 2018 | 2019 | 2018  |\nL551: |  Receita Operacional Líquida | 21 | 73.465 | 75.130 | 73.901 | 75.130  |\nL552: |  Custos |  | - | - | (244) | -  |\nL553: |  Resultado Bruto |  | 73.465 | 75.130 | 73.656 | 75.130  |\nL554: |  **Despesas Operacionais** |  | **(100.166)** | **(96.635)** | **(100.448)** | **(97.100)**  |\nL555: |  Pessoal | 22 | (59.650) | (55.960) | (59.754) | (55.960)  |\nL556: |  Materiais |  | (646) | (601) | (671) | (601)  |\nL557: |  Manutenção | 23 | (1.622) | (1.216) | (1.628) | (1.216)  |\nL558: |  Jogos e competições | 24 | (8.535) | (7.912) | (8.535) | (7.912)  |\nL559: |  Terceiros | 25 | (9.959) | (10.557) | (9.978) | (10.557)  |\nL560: |  Bens de pq. Valor e depreciação |  | (738) | (743) | (794) | (743)  |\nL561: |  Direito de imagem | 26 | (15.460) | (15.860) | (15.460) | (15.860)  |\nL562: |  Gerais e Adm. | 27 | (2.792) | (2.878) | (2.820) | (2.878)  |\nL563: |  Tributárias |  | (764) | (907) | (808) | (1.373)  |\nL564: |  **Resultado Antes dos outros resultados operacionais** |  | **(26.701)** | **(21.505)** | **(26.792)** | **(21.970)**  |\nL565: |  Outras Receitas Operacionais | 29 | 1.344 | 1.626 | 1.344 | 1.626  |\nL566: |  Outras Despesas Operacionais | 29 | (21.365) | (19.346) | (21.277) | (19.350)  |\nL567: |  **Resultado Antes das Despesas e Receitas Financeiras** |  | **(46.722)** | **(39.225)** | **(46.726)** | **(39.695)**  |\nL568: |  Receitas Financeiras | 28 | 354 | 920 | 392 | 1.205  |\nL569: |  Despesas Financeiras | 28 | (4.374) | (171) | (4.410) | (172)  |\nL570: |  **Resultado Antes do Imposto de Renda e da Contribuição Social** |  | **(50.742)** | **(38.476)** | **(50.743)** | **(38.662)**  |\nL571: |  IR e CSLL |  | - | - | (13) | -  |\nL572: |  **Déficit do Exercício** |  | **(50.742)** | **(38.476)** | **(50.756)** | **(38.662)**  |\nL574: As notas explicativas são parte das demonstrações financeiras.\n\nLO QUE SE CARGA:\n- ingreso · \"Receita de Transmissão\" · 39.359 · L1863 (de una nota)\n- ingreso · \"Catarinense\" · 0.2 · L1881 (de una nota)\n- ingreso · \"Brasileirão Série A\" · 2.996 · L1883 (de una nota)\n- ingreso · \"Copa do Brasil\" · 0.173 · L1884 (de una nota)\n- ingreso · \"Sulamericana\" · 0.05 · L1885 (de una nota)\n- ingreso · \"Patrocínio\" · 13.874 · L1865 (de una nota)\n- ingreso · \"Receita de Negociação de Atletas\" · 5.553 · L1866 (de una nota)\n- ingreso · \"Programa Sócio Torcedor\" · 8.47 · L1867 (de una nota)\n- ingreso · \"Timemania\" · 0.169 · L1868 (de una nota)\n- ingreso · \"Royalties/Direito de Uso de Marca/Venda de produtos\" · 0.926 · L1869 (de una nota)\n- ingreso · \"Receitas Diversas\" · 1.176 · L1870 (de una nota)\n- ingreso · \"Doações/PAF\" · 0.001 · L1871 (de una nota)\n- ingreso · \"Receita Federações\" · 7.496 · L1872 (de una nota)\n- ingreso · \"Deduções Tributárias e Sindicais\" · -6.542 · L1873 (de una nota)\n- ingreso · \"Dividendos Recebidos\" · 0.015 · L2034 (de una nota)\n- ingreso · \"Outras Receitas Não Operacionais\" · 0.055 · L2036 (de una nota)\n- ingreso · \"Recuperação de Despesas\" · 1.234 · L2037 (de una nota)\n- ingreso · \"Venda de Imobilizado\" · 0.04 · L2039 (de una nota)\n- gasto · \"Custos\" · 0.244 · L552\n- gasto · \"Ordenados e Salários\" · 35.548 · L1913 (de una nota)\n- gasto · \"Premiação\" · 6.262 · L1914 (de una nota)\n- gasto · \"INSS/FGTS/PIS\" · 4.962 · L1915 (de una nota)\n- gasto · \"Amortização Direitos Fed. Econ.\" · 8.796 · L1916 (de una nota)\n- gasto · \"Despesas com Transf. Jogadores\" · 0.372 · L1917 (de una nota)\n- gasto · \"Indenizações\" · 0.516 · L1918 (de una nota)\n- gasto · \"Alimentação\" · 0.273 · L1919 (de una nota)\n- gasto · \"Despesas Médicas\" · 1.512 · L1920 (de una nota)\n- gasto · \"Seguros\" · 0.919 · L1921 (de una nota)\n- gasto · \"Outros Gastos c/ Pessoal\" · 0.594 · L1922 (de una nota)\n- gasto · \"Materiais\" · 0.671 · L556\n- gasto · \"Manutenção Imobilizado\" · 0.104 · L1932 (de una nota)\n- gasto · \"Manutenção Terceiros\" · 0.688 · L1933 (de una nota)\n- gasto · \"Manutenção Intangível\" · 0.836 · L1934 (de una nota)\n- gasto · \"Jogos e competições\" · 8.535 · L558\n- gasto · \"Terceiros\" · 9.978 · L559\n- gasto · \"Bens de pq. Valor e depreciação\" · 0.794 · L560\n- gasto · \"Direito de imagem\" · 15.46 · L561\n- gasto · \"Multas e Indenizações\" · 0.034 · L1969 (de una nota)\n- gasto · \"Propaganda e Publicidade\" · 0.76 · L1970 (de una nota)\n- gasto · \"Gastos Logísticos\" · 0.295 · L1971 (de una nota)\n- gasto · \"Provisões Contingência\" · 0.534 · L1972 (de una nota)\n- gasto · \"Doações/Ajudas de Custo\" · 0.029 · L1973 (de una nota)\n- gasto · \"Água, Luz e Telefone\" · 0.23 · L1974 (de una nota)\n- gasto · \"Despesas Bancárias\" · 0.147 · L1975 (de una nota)\n- gasto · \"Mensalidades/Periódicos\" · 0.071 · L1976 (de una nota)\n- gasto · \"Academia\" · 0.003 · L1977 (de una nota)\n- gasto · \"Demais Gastos\" · 0.717 · L1978 (de una nota)\n- gasto · \"Tributárias\" · 0.808 · L563\n- gasto · \"Despesas diversas\" · 0.002 · L2056 (de una nota)\n- gasto · \"Custo dos Bens Patrimoniais Vendidos\" · 0.058 · L2057 (de una nota)\n- gasto · \"Acidente Aéreo Chapecoense\" · 21.217 · L2060 (de una nota)\n- financiero · \"Receitas Financeiras\" · 0.392 · L568\n- financiero · \"Despesas Financeiras\" · -4.41 · L569\n- impuesto · \"IR e CSLL\" · -0.013 · L571"
+ }
+}
