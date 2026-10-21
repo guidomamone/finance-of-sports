@@ -11,7 +11,19 @@
   `club.taxonomy`), con `tools/json-datos.mjs`, `generar-data.mjs`, `generar-schema-json.mjs` (escribe `data/schema/club-v2.json` y
   `taxonomy-football-1.json`; `club-v1.json` queda congelado), `exportar-paquete.mjs` y la nueva `tools/migrar-v2.mjs`. ASSET_V 1542.
   Va en un commit con las tools porque, separados, uno de los dos no pasa `audit.js` (`json-no-valida`).
-- **3/4**: documentos (`245-esquema.md`, `CONVENCIONES-DATOS.md` con la regla «la genérica se deriva», `ARQUITECTURA.md`, el plan).
+- **3/4**: documentos (`245-esquema.md`, `CONVENCIONES-DATOS.md` con la regla «la genérica se deriva», `ARQUITECTURA.md`, el plan). (Los tres de
+  arriba ya están mergeados en main.)
+- **b2d1658ae8 (4/4), ETAPA DE PANTALLA**: `computeYearGeneric` suma los gastos por el bloque de la genérica y `bucketize` arma las filas por
+  genérica, con el deporte del club; las `cats` de fútbol de cada fila se derivan del mapa (las leen `audit.js` y `dentro-de-otro.mjs`). El bolsón
+  se rotula por deporte (`LUMP_LABEL_BY_SPORT`, con «Rugby profesional (sin desglosar por la fuente)» y su traducción); `js/liga.js` lo
+  reconoce con `esBolson()`. Para el fútbol no cambia nada: la foto de `computeYearGeneric`, `simplifiedReportForClub` y el presupuesto de los
+  1.296 ejercicios es idéntica a la de main; `generate-rankings --check` al día; `dentro-de-otro` 397 → 397; `auditAll()` 3703 checks, 0 no
+  cierran; Ligas probada en el navegador. ASSET_V 1546.
+- **3d8259071d, TAXONOMÍA `rugby-1`**: `RUGBY_REVENUE/EXPENSE_CATEGORIES` (con descripción) y sus rótulos, `SPORT_TAXONOMIES.rugby` y el bolsón de
+  cada deporte (`lump`) en `data/category-map.js`; `categoriasDeDeporte(deporte)` en `tools/json-datos.mjs`; `validar` mira las subcategorías del
+  deporte del club; `data/schema/taxonomy-rugby-1.json`. Rugby sigue apagado en el selector. ASSET_V 1547.
+- **f188d4345b**: el plan al día (CVC es fila aparte del Strategic Report, la votación, las respuestas a Pipeline sobre la taxonomía).
+- Bath 2023-24, pág. 22 rehecha con Mistral (abajo, en hallazgos).
 
 ## Los 4 chequeos de sumas (todos en verde)
 
@@ -35,10 +47,13 @@
 
 ## Para TODO, CHANGELOG y ESTADO (los escribe la principal)
 
-- TODO 248: hechos los pasos 1 a 3 (mapa, migración, documentos). Quedan el paso 4 (la etapa de pantalla: motor y Formato simplificado leyendo
-  el mapa) y el 5 (Bath Rugby, decisiones 9 a 14 del plan, abiertas).
+- TODO 248: hechos los pasos 1 a 4 (mapa, migración, documentos, etapa de pantalla) y la taxonomía `rugby-1`. Queda el paso 5: cargar Bath Rugby.
+- TODO 339 (Pipeline): la taxonomía de rugby ya se lee por código; las respuestas a sus 3 dudas están en `Admin/mediciones/248-plan.md`,
+  sección 5, «Cómo leen las tools la taxonomía de un club».
 - CHANGELOG: "248: esquema 2.0: cada línea con category genérica (derivada de data/category-map.js) y subcategory del deporte; los 319 JSON
   migrados con tools/migrar-v2.mjs sin cambiar un importe (4 chequeos); club-v2.json y taxonomy-football-1.json; 3 chequeos nuevos en audit.js".
+  Y otra: "248: el motor y Formato simplificado leen la capa genérica (para el fútbol, idéntico); taxonomía rugby-1 y categoriasDeDeporte();
+  Bath 2023-24 pág. 22 rehecha con Mistral".
 - ESTADO, lo que deja de ser cierto: la línea de `data/` dice «esquema en `data/schema/club-v1.json`»; ahora es `club-v2.json`, con la tabla
   `data/schema/taxonomy-football-1.json`.
 
@@ -54,10 +69,14 @@
 
 ## Hallazgos de paso (no se tocaron)
 
-- Bath Rugby 2023-24 (`Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.md`, pág. 22, L1026-1050): el estado de resultados
-  quedó sin cifras (rótulos sí, números como "Teo / I> Ion / Im"). Hay que volver a transcribir esa página antes de cargar.
-- Bath Rugby, Strategic Report: el OCR se come la coma ("Central income 74" por 7,4 en 2023-24 L163; "44" por 4,4 en 2024-25 L206).
-  Ningún chequeo mira hoy la tabla del Strategic Report.
+- Bath Rugby 2023-24, pág. 22: la rehice con Mistral (US$ 0,004) y quedó como tabla. Corrección de lo que dije antes: la versión vieja NO había
+  perdido las cifras, las tenía en una columna aparte debajo de los rótulos; son las mismas. El `.md` cambió, así que el pipeline lo va a ver
+  como transcripción distinta de la que verificó (si tenía una validación guardada).
+- **DEFECTO DE SCRIPT, PARA PIPELINE** (no lo arreglé): en el Strategic Report de Bath el OCR se come la coma decimal de una cifra en £m
+  ("Central income 74" por 7,4 en `bath-rugby-full-accounts-2023-24.md` L163; "44" por 4,4 en `bath-rugby-medium-company-accounts-2024-25.md`
+  L206). La tabla tiene su total impreso (Turnover 20,8 y 23,3) y la suma no cierra, pero ningún chequeo de transcripción ni de carga mira
+  las tablas en £m con un decimal del informe de los directores. Escalón posible: que el chequeo de fidelidad (o verificar) sume las tablas
+  con fila de total y marque las que no cierran, que es como se ve.
 - Atlético Mineiro 2024 y 2025: "Custo de mercadorias e produtos (custo do manto vendido)" es `admin_general_expense` con importe negativo en
   `revenue`. Queda en `other_revenue` por la regla cruzada; si es un costo cargado del lado del ingreso, es tema de la carga de ese club.
 - El hook de commit frena un commit que toca un JSON de `data/` sin subir ASSET_V, aunque el JSON no lo cargue ninguna página (el chequeo

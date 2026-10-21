@@ -302,13 +302,13 @@ Lo que se ve distinto está marcado **VISIBLE**: es lo que hay que mostrarle a G
   `Admin/sesiones/proyecto.md` y se le avisa a la principal, que abre Pipeline y la Auditora. Las categorías de Bath se ponen a mano con
   ajustes `categoria` (5 documentos, unas 8 líneas cada uno).
 
-### Lo que ya se vio en los `.md` (para la principal, no se tocó)
+### Lo que ya se vio en los `.md`
 
-- **2023-24: el estado de resultados quedó sin números** (`bath-rugby-full-accounts-2023-24.md`, pág. 22, L1026-1050: los rótulos están
-  y las cifras salieron como "Teo / I> Ion / Im"). Hay que volver a transcribir esa página antes de cargar. Es tema de transcripción, no lo
-  arreglo.
+- **2023-24, pág. 22 (estado de resultados)**: la transcripción vieja tenía las cifras en una columna aparte, debajo de los rótulos (no estaban
+  perdidas: "Teo / I> Ion / Im" es ruido del OCR). Se rehízo esa página con Mistral OCR (1 página, US$ 0,004) y quedó como tabla, con las mismas
+  cifras; cierra en todos los pasos y coincide con la comparativa del informe 2024-25 y con el informe 2022-23.
 - **El OCR come la coma en el Strategic Report**: "Central income 74" por 7,4 (2023-24, L163) y "44" por 4,4 (2024-25, L206). La suma de
-  la tabla lo delata, pero ningún chequeo de hoy lo mira en el Strategic Report.
+  la tabla lo delata, pero ningún chequeo de hoy lo mira en el Strategic Report. Va a Pipeline como defecto de script.
 - **2024-25 reexpresa 2024**: el personal de 2024 da 14,3 M en el informe 2024-25 y 15,38 M en el de 2023-24. Vale la regla de siempre: cada
   ejercicio con su propio documento.
 

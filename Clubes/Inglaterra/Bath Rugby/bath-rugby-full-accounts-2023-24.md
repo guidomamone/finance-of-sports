@@ -1025,51 +1025,22 @@ Bath Rugby Limited
 
 Profit and Loss Account for the Year Ended 30 June 2024
 
-Turnover
-
-Cost of sales
-
-Gross profit
-
-Administrative expenses
-
-Other operating income
-
-Operating loss
-
-Other interest receivable and similar income
-
-Interest payable and similar expenses
-
-Loss before tax
-Tax on loss
-
-Loss for the financial year
+|   | Note | 2024 £ | 2023 £  |
+| --- | --- | --- | --- |
+|  Turnover | 3 | 20,822,985 | 19,744,435  |
+|  Cost of sales |  | (19,500,753) | (18,505,213)  |
+|  Gross profit |  | 1,322,232 | 1,239,222  |
+|  Administrative expenses |  | (6,283,057) | (6,064,013)  |
+|  Other operating income | 4 | 81,503 | 495,900  |
+|  Operating loss | 5 | (4,879,322) | (4,328,891)  |
+|  Other interest receivable and similar income | 6 | 1,089 | 5,889  |
+|  Interest payable and similar expenses | 7 | (112,840) | (106,002)  |
+|   |  | (111,751) | (100,113)  |
+|  Loss before tax |  | (4,991,073) | (4,429,004)  |
+|  Tax on loss | 11 | 1,310,091 | 1,167,663  |
+|  Loss for the financial year |  | (3,680,982) | (3,261,341)  |
 
 The above results were derived from continuing operations.
-
-Note
-
-Teo
-
-I> Ion
-
-Im
-
-2024 2023
-£ £
-20,822,985 19,744,435
-(19,500,753) (18,505,213)
-1,322,232 1,239,222
-(6,283,057) (6,064,013)
-81,503 495,900
-(4,879,322) (4,328,891)
-1,089 5,889
-(112,840) (106,002)
-(111,751) (100,113)
-(4,991,073) (4,429,004)
-1,310,091 1,167,663
-(3,680,982) (3,261,341)
 
 The notes on pages 22 to 37 form an integral part of these financial statements.
 
