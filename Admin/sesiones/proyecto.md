@@ -59,6 +59,18 @@
   (votación: `other_income`); 2023-24 tiene el Strategic Report como texto (b1, L162-166) y la nota 4 sin tabla; 2024-25 imprime los gastos sin
   paréntesis y el impuesto "(250,554)" como crédito; el informe 2024-25 reexpresa 2024 (personal 14,25 M; otros ingresos 88.503).
 
+## Bath Rugby: dónde quedó (después de los frenos 1 y 4)
+
+- Los 5 años verificados al peso, validados (validar-bloques, US$ 0,03) y categorizados desde la sesión con `rugby-1`; la propuesta de carga da
+  5 de 5. Estadio y sponsor de los 5 años en `tools/contexto-manual.json` (The Recreation Ground 14.509, Dyson, Macron 2021-23 / Castore 2024-25).
+  El alta la revisó un subagente contra los 5 documentos (nombre, tipo, cierre: todo coincide).
+- **Freno 5** (`frenados-por-script.jsonl`): `audit.js` `checkCategorias` da P0 `categoria-inexistente` a las subcategorías de rugby (valida con la
+  lista del fútbol) y `cargar.mjs` se revierte. Lo de `@resvg/resvg-js` ya está resuelto (`npm install --prefix tools`).
+- Para retomar cuando esté el arreglo: las ediciones del catálogo (arriba), `alta-club.mjs "<2020-21.pdf>" --escribir`, borrar la línea
+  `'bathrugby-gb': { 2021: 'gb-premiershiprugby' },` que el alta agrega en `data/club-leagues/gb.js` (pisa la de 2021 a 2025; defecto menor del
+  alta, anotarlo para Pipeline), y `cargar.mjs "<pdf>" --desde-verificacion --escribir` por año, un commit por año (el primero con el alta).
+  Después: EJEMPLO-CATEGORÍA de las reglas de CVC y fair value en `CONVENCIONES-DATOS.md` y `node tools/reglas-categoria.mjs --escribir`.
+
 ## Los 4 chequeos de sumas (todos en verde)
 
 1. Los 319 `-data.js` regenerados son idénticos byte por byte (`git status` sin ningún `-data.js`).
