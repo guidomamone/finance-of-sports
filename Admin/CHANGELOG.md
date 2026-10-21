@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 893 — Chequeos nuevos en audit.js; plan de la taxonomía genérica (2026-10-20) [327 · 248 · 338]
+
+- 327: `audit.js` suma historia y contadores en skills (P3), párrafos repetidos en docs (P3), rutas muertas en todas las skills y la raya larga en el texto del sitio (P2); las 13 rayas, arregladas. ASSET_V 1538.
+- 248: plan en `Admin/mediciones/248-plan.md` (cada línea con `category` genérica y `subcategory` de hoy; esquema club-v2; las sumas no cambian). La principal acepta sus 8 recomendaciones. Nuevo 338: correr todas las auditorías.
+
 ## Versión 892 — Registro público de correcciones (2026-10-20) [247]
 
 - `correcciones.html` y el bloque «Correcciones a estos números» en Finanzas, generados del historial de git de cada club por `tools/generar-correcciones.mjs` (dato abierto en `data/correcciones/`, JSON por país y CSV). 236 cambios en 56 clubes, marcados «anterior al registro» salvo los de hoy. Regla nueva: trailer `Corrige:` (`Admin/CONVENCIONES.md`); `audit.js` da P2 si falta. ASSET_V 1537.

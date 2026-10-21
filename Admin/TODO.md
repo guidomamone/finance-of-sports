@@ -31,8 +31,8 @@ el número de la izquierda es el orden de trabajo.
 * Lo que está en marcha va marcado en cada bloque.
 
 **C. Técnico**
-1. 327 (Pipeline 10): 4 chequeos nuevos en audit.js y 6 frenos automáticos en el hook (ok de Guido)
-2. 248 (Datos 4, Opus): taxonomía genérica y subcategorías por deporte; se prueba cargando Bath Rugby (Guido)
+1. 327 (Pipeline 10): los 6 frenos automáticos en el hook (ok de Guido); los 4 chequeos de audit.js ya están
+2. 248 (Datos 4, Opus): plan listo y decidido (`Admin/mediciones/248-plan.md`); ahora la migración a club-v2 y después Bath Rugby como prueba
 3. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 4. 249: API en dominio propio (el último de C; no construirla todavía)
 
@@ -42,11 +42,12 @@ el número de la izquierda es el orden de trabajo.
 7. 257: skills que faltan
 8. 237 al: anexo UEFA para abrir las ventas
 9. 258: índice partido por país o liga (cuando la skill de escala lo diga)
+10. 338: correr todas las auditorías del proyecto
 
 **E. Después de A a D (Guido, 2026-10-20)**
-10. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-11. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-12. 335: mails a clubes
+11. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+12. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+13. 335: mails a clubes
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -136,3 +137,6 @@ el número de la izquierda es el orden de trabajo.
    Brasil 46/100, Bundesliga 24/90, LaLiga 18/60, Argentina 32/138, Ligue 1 0. Propuesta: umbral 90% (Argentina 60%) cargado o cerrado
    con motivo; ~US$160. Abiertas: el umbral y la plata (Guido); Ligue 1 desde el DNCG (criterio a la Auditora); listas de equipos que
    faltan (Pipeline).
+338. CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
+   (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
+   `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
