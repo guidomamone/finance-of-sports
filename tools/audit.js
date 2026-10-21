@@ -1836,7 +1836,9 @@ function checkEjercicioSinRastro() {
     if (!anios.length) continue;
     const iso = path.basename(path.dirname(rj));
     clubes.push({ id: j.club.id, iso, anios });
-    maxPais[iso] = Math.max(maxPais[iso] || 0, ...anios);
+    // El máximo del país no cuenta presupuestos puros (official_budget): un presupuesto no es un balance cargado (Auditora 4: 51 -> 38 clubes).
+    const reales = (j.years || []).filter((y) => y.report_type !== 'official_budget').map((y) => y.fiscal_year).filter((y) => Number.isFinite(y));
+    maxPais[iso] = Math.max(maxPais[iso] || 0, ...reales);
   }
   for (const c of clubes.sort((a, b) => a.id.localeCompare(b.id))) {
     const tiene = new Set(c.anios); const fal = enFaltantes[c.id] || new Set();
