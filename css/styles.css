@@ -1135,6 +1135,7 @@
     /* En el teléfono se toca la fila entera (44 px de alto, la guía de UX): el botón del club la cubre con un ::after. */
     .lg-fila:has(button.lg-club){position:relative;min-height:44px;}
     .lg-fila button.lg-club::after{content:'';position:absolute;inset:0;}
+    .lg-fila button.lg-club{padding:14px 0;margin:-14px 0;}  /* el botón mismo también mide 44, sin mover el nombre */
   }
   /* La composición: una barra apilada al 100% por club. */
   .lg-ley{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:6px 14px;font-size:12.5px;color:#45474d;}
@@ -1288,3 +1289,18 @@
   .corr-ver{font-size:14px;}
   .fin-year.corr{position:relative;}
   .fin-year.corr::after{content:"";position:absolute;top:5px;right:5px;width:7px;height:7px;border-radius:50%;background:var(--oro);}
+
+  /* ÁREAS DE TOQUE EN EL TELÉFONO: 44 x 44 px (.claude/skills/producto-y-pantalla-finance-of-sports/referencia/ux.md, punto 4). Los botones y
+     controles crecen; los links dentro de un texto o de una celda agrandan su área sin mover nada (padding y margen negativo del mismo tamaño).
+     Las etiquetas de estado (.stat-tag, .covid) son una excepción decidida. Ligas tiene las suyas más arriba. */
+  @media (max-width:700px){
+    .ini-atajo,.vid-link,.vid-fila,.fin-sel-btn,#cuenta .btn-primary,.fin-cambiar,.fin-vista-btn,.fin-years-presets button,.fin-gest,
+    .fin-years-more,.segmented button{min-height:44px;}
+    .fin-years-presets button,.fin-guia-x{min-width:44px;}
+    .fin-guia-x{min-height:44px;}
+    .fin-indice a{padding-top:12px;padding-bottom:12px;min-height:44px;}
+    /* Un párrafo con varios links queda afuera: en renglones seguidos el área de uno taparía el texto del otro. */
+    main p:not(.fin-fuentes-link):not(:has(a ~ a)) a,main td a,.aud-ver,.corr-ver{display:inline-block;padding:15px 8px;margin:-15px -8px;}
+    /* Dos links solos en su renglón, uno debajo del otro: con el área invisible se pisarían, así que ocupan los 44 px de verdad. */
+    .fin-fuentes-link a{display:inline-flex;align-items:center;min-height:44px;}
+  }
