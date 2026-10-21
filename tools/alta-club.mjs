@@ -1486,7 +1486,14 @@ function escribir(r) {
     ev = EV.agregarTexto(ev, anio, 'Liga', [`alta-club.mjs (${hoy}): ${liga.valor || 'null'}, ${liga.valor ? `verificado contra ${liga.fuente}` : `SIN VERIFICAR (${liga.fuente})`}.`]);
     if (existsSync(ligaPath)) {
       const txt = readFileSync(ligaPath, 'utf8');
-      writeFileSync(ligaPath, insertarAntes(txt, 'Object.assign(window.CLUB_LEAGUE_BY_YEAR, {', /^\}\);$/m, filaLiga, `data/club-leagues/${iso}.js`));
+      // (to-do 339) Si el club YA tiene su línea (a mano, con otros años), el año se agrega a ESA línea o, si ya está, no se escribe nada: una segunda línea del mismo id pisa la primera
+      // entera (Object.assign) y el club queda con un solo año. Caso: bathrugby-gb, la línea 2021 a 2025 quedó pisada por una de solo 2021.
+      const enLinea = new RegExp(`^(\\s*(?:'${id}'|"${id}"|${id})\\s*:\\s*\\{)([^}]*)(\\},?)\\s*$`, 'm');
+      const ya = txt.match(enLinea);
+      if (ya) {
+        if (new RegExp(`\\b${anio}\\s*:`).test(ya[2])) { /* el año ya está en la línea: no se toca */ }
+        else writeFileSync(ligaPath, txt.replace(enLinea, `$1${ya[2].replace(/\s+$/, '')}, ${anio}: ${liga.valor ? jsStr(liga.valor) : 'null'} $3`));
+      } else writeFileSync(ligaPath, insertarAntes(txt, 'Object.assign(window.CLUB_LEAGUE_BY_YEAR, {', /^\}\);$/m, filaLiga, `data/club-leagues/${iso}.js`));
     } else {
       // sin cabecera de comentario (to-do 209: data/ se publica); las reglas de estos archivos están en data/club-leagues.js
       writeFileSync(ligaPath, `window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
