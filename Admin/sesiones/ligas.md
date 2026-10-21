@@ -404,3 +404,18 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: chequeos de huecos y atraso (Pruebas 1) y tiempo de `audit.js`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Tres líneas más en `Admin/registros/auditoria-proceso.jsonl`: el hueco de años, APROBADO CON CAMBIOS como un solo chequeo P3 `ejercicio-sin-rastro`; el atraso del último ejercicio, RECHAZADO como chequeo separado (duplica `data/faltantes/` y `ESTADO-clubes.md`, su parte útil va en el primero); y una nota informativa sobre el tiempo de `audit.js`.
+
+### Qué queda (para TODO / Pruebas 1)
+
+- `ejercicio-sin-rastro` (P3): por club, los años entre su primer ejercicio y el más reciente de su país que no están cargados ni figuran en `data/faltantes/` con ningún estado, un hallazgo por club; al nacer, 84 club-años en 51 clubes (24 de hueco y 60 de cola). Se silencia por club en `tools/audit-ignore.json` con motivo, después de mirarlo.
+- Texto para Guido (skill de arranque, línea 86): «Corre en menos de un segundo» está desactualizado; propuesta: «Corre en unos 15 segundos con 320 clubes (crece con la cantidad de clubes) y sale con código 1 si hay P0 o P1.» Si el tiempo se acerca a ~50 s con ~1.000 clubes, va al eje `escala`.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
