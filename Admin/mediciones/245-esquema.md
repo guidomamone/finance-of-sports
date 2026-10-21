@@ -1,7 +1,8 @@
 # Esquema JSON de los datos de un club (to-do 245)
 
 Estado: VIGENTE. El JSON `data/<país>/<id>.json` es la fuente de cada club y `<id>-data.js` se genera de ahí (`tools/generar-data.mjs`). El JSON Schema formal
-está en `data/schema/club-v1.json`. Lo de abajo describe el esquema; las secciones de "fase 1" y "fase 2" del final son historia de cómo se llegó.
+está en `data/schema/club-v2.json` (`club-v1.json` queda publicado y congelado). Lo de abajo describe el esquema; las secciones de "fase 1" y "fase 2" del final son
+historia de cómo se llegó. La capa genérica de categorías (`category` + `subcategory`, esquema 2.0) está diseñada en `Admin/mediciones/248-plan.md`.
 
 ## Qué hay hoy (medido)
 
@@ -22,14 +23,14 @@ La unidad es implícita (millones de la moneda del club, `amountNative`); la mon
    Alternativa: dejar los nombres actuales (camelCase y mezcla español/inglés como `sinDesglose.renglon`). Recomiendo traducir una vez, ahora que nadie los consume afuera.
 4. **"Fecha de corte" son dos cosas, las dos explícitas**: `period_end` por ejercicio (el cierre, de `cierreDelClub`) y `exported_at` del archivo (cuándo se generó).
 
-## Esquema (schema_version "1.0")
+## Esquema (schema_version "2.0")
 
 ```
 archivo
-  schema_version      "1.0"
+  schema_version      "2.0"
   exported_at         "2026-10-20"
   unit                { scale: 1000000, label: "millions of currency" }   // vale para todos los importes del archivo
-  club                { id, name, display_name, country, reporting_currency, fiscal_year_start, sport }
+  club                { id, name, display_name, country, reporting_currency, fiscal_year_start, sport, taxonomy }   // sport en inglés ("football"); taxonomy = versión del mapa ("football-1")
   sources[]           { id, title, type, reliability, url }
   management[]        { id, name, first_year, last_year }               // gestionesByClub
   members             número o null                                      // memberCountByClub
@@ -41,7 +42,7 @@ archivo
     source_id         id de sources[]
     report_type       "official_balance_sheet" | ...
     management_id     id de management[] o null
-    revenue[]         { label, category, amount, disclosure, items?: [[label, amount]] }
+    revenue[]         { label, category, subcategory, amount, disclosure, items?: [[label, amount]] }   // category: genérica, derivada (data/schema/taxonomy-<versión>.json); subcategory: la del deporte
     expenses[]        igual (amount negativo, como hoy)
     financial         { net_interest, tax, profit_on_player_sales, asset_sales, gross_debt, cash, staff_cost? }   // null donde hoy es null
     official_totals   { revenue, expenses, net_result }                  // officialTotalRevenue / Expenses / PAT
@@ -60,9 +61,9 @@ el JS regenerado dé los mismos objetos.
 
 ```json
 {
-  "schema_version": "1.0", "exported_at": "2026-10-20",
+  "schema_version": "2.0", "exported_at": "2026-10-20",
   "unit": {"scale": 1000000, "label": "millions of currency"},
-  "club": {"id": "mirassol", "name": "Mirassol Futebol Clube", "display_name": "Mirassol", "country": "BR", "reporting_currency": "BRL", "fiscal_year_start": "01-01", "sport": "futbol"},
+  "club": {"id": "mirassol", "name": "Mirassol Futebol Clube", "display_name": "Mirassol", "country": "BR", "reporting_currency": "BRL", "fiscal_year_start": "01-01", "sport": "football", "taxonomy": "football-1"},
   "sources": [{"id": "mirassol-relatorio-auditoria-2024", "title": "Relatório de Auditoria Contábil, Exercício 2024", "type": "official_balance_sheet", "reliability": "primary", "url": "https://mirassolfc.com.br/"}],
   "management": [{"id": "sinconfirmar", "name": "Gestión actual", "first_year": 2024, "last_year": 2024}],
   "members": null,
@@ -70,10 +71,10 @@ el JS regenerado dé los mismos objetos.
     "fiscal_year": 2024, "period_end": "2024-12-31", "currency": "BRL",
     "fx": {"ref": "BRL@2024-12-31"},
     "source_id": "mirassol-relatorio-auditoria-2024", "report_type": "official_balance_sheet", "management_id": "sinconfirmar",
-    "revenue": [{"label": "Receita do exercício (bruta, operacional — sem desagregação na fonte)", "category": "lump_football_operations", "amount": 59.339448, "disclosure": "aggregated"}],
+    "revenue": [{"label": "Receita do exercício (bruta, operacional — sem desagregação na fonte)", "category": "undisclosed", "subcategory": "lump_football_operations", "amount": 59.339448, "disclosure": "aggregated"}],
     "expenses": [
-      {"label": "Custos", "category": "lump_football_operations_expense", "amount": -36.105741, "disclosure": "aggregated"},
-      {"label": "Despesas operacionais", "category": "admin_general_expense", "amount": -19.090093, "disclosure": "aggregated"}],
+      {"label": "Custos", "category": "undisclosed", "subcategory": "lump_football_operations_expense", "amount": -36.105741, "disclosure": "aggregated"},
+      {"label": "Despesas operacionais", "category": "admin_general", "subcategory": "admin_general_expense", "amount": -19.090093, "disclosure": "aggregated"}],
     "financial": {"net_interest": 0, "tax": 0, "profit_on_player_sales": 0, "asset_sales": 0, "gross_debt": 0, "cash": 11.583747},
     "official_totals": {"revenue": 59.339448, "expenses": 55.195834, "net_result": 4.143614}
   }]
@@ -89,8 +90,8 @@ el JS regenerado dé los mismos objetos.
     "fiscal_year": 2021, "currency": "DKK", "fx": {"ref": "DKK@2021-06-30"},
     "source_id": "agf-aarsrapport-2020-21", "report_type": "official_balance_sheet", "management_id": null,
     "revenue": [
-      {"label": "Entré- og tv-indtægter (entradas y TV combinadas, la fuente no las separa)", "category": "broadcasting", "amount": 34.673, "disclosure": "detailed"},
-      {"label": "Udlejningsvirksomhed + Restaurations- og cateringvirksomhed + Arrangementer/billetsalg (Ceres Park & Arena, segmento Faciliteter)", "category": "stadium_other", "amount": 19.154, "disclosure": "detailed",
+      {"label": "Entré- og tv-indtægter (entradas y TV combinadas, la fuente no las separa)", "category": "media_rights", "subcategory": "broadcasting", "amount": 34.673, "disclosure": "detailed"},
+      {"label": "Udlejningsvirksomhed + Restaurations- og cateringvirksomhed + Arrangementer/billetsalg (Ceres Park & Arena, segmento Faciliteter)", "category": "venue", "subcategory": "stadium_other", "amount": 19.154, "disclosure": "detailed",
        "items": [["Udlejningsvirksomhed", 7.148], ["Restaurations- og cateringvirksomhed", 8.385], ["Arrangementer, billetsalg", 3.621]]}
     ],
     "financial": {"net_interest": 4.865, "tax": 0.5, "profit_on_player_sales": 0, "asset_sales": -0.292, "gross_debt": 4.627, "cash": 29.347},

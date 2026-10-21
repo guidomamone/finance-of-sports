@@ -1,34 +1,67 @@
-# Sesión `proyecto` (Datos 4): to-do 248, diseño
+# Sesión `proyecto` (Datos 4): to-do 248, migración al esquema 2.0
 
-## Qué cambió
+## Qué cambió (commits de esta vuelta, sin push)
 
-- Nuevo `Admin/mediciones/248-plan.md`: diseño de la taxonomía genérica con subcategorías por deporte. Solo diseño: no se tocó ningún dato,
-  tool, esquema ni pantalla.
-- Resumen: cada línea pasa a tener `category` (genérica, la misma para cualquier deporte) y `subcategory` (la categoría de hoy, mismo id). La
-  genérica se DERIVA de un mapa fijo en `data/category-map.js`; nadie la elige, así que no se reabre el to-do 101. Esquema `club-v2`. El data
-  file y la pantalla quedan byte por byte iguales; la prueba de que las sumas no cambian son 4 chequeos (sección 4 del plan).
+- **5510610c9c (1/4)**: `data/category-map.js` con la capa genérica (`GENERIC_REVENUE/EXPENSE_CATEGORIES` con su bloque, `SPORT_TAXONOMIES`
+  de fútbol `football-1`) y 3 chequeos en `audit.js`: `taxonomia-incompleta` (P1), `bloque-motor-distinto` (P1, en la sonda del motor) y
+  `fila-parte-generica` (P2). Todos dan 0. ASSET_V 1540.
+- **608ab8f76c (1b/4)**: `genericCategoryOf()`: una subcategoría del otro lado va a la genérica catch-all de su lado. Es la decisión 3 como regla
+  general, así `validar` no rechaza nada que hoy acepta (no endurece una regla del pipeline). ASSET_V 1541.
+- **ac6f5b227c (2/4), LA MIGRACIÓN**: los 319 JSON pasan a `schema_version` 2.0 (`category` genérica + `subcategory`, `club.sport` en inglés,
+  `club.taxonomy`), con `tools/json-datos.mjs`, `generar-data.mjs`, `generar-schema-json.mjs` (escribe `data/schema/club-v2.json` y
+  `taxonomy-football-1.json`; `club-v1.json` queda congelado), `exportar-paquete.mjs` y la nueva `tools/migrar-v2.mjs`. ASSET_V 1542.
+  Va en un commit con las tools porque, separados, uno de los dos no pasa `audit.js` (`json-no-valida`).
+- **3/4**: documentos (`245-esquema.md`, `CONVENCIONES-DATOS.md` con la regla «la genérica se deriva», `ARQUITECTURA.md`, el plan).
 
-## Qué queda
+## Los 4 chequeos de sumas (todos en verde)
 
-- Guido decide las 14 decisiones de la sección 6 del plan (cada una con recomendación). Después, la implementación en 5 pasos (sección 4,
-  "Orden de trabajo"), en una sesión sin lotes corriendo; el último es Bath Rugby (sección 5), la prueba de punta a punta.
-- Bath: falta transcribir 2020-21 (Mistral, tope US$ 2) y volver a transcribir la pág. 22 de 2023-24. No se cargó nada.
+1. Los 319 `-data.js` regenerados son idénticos byte por byte (`git status` sin ningún `-data.js`).
+2. Huella de importes (`migrar-v2.mjs --huella`, 38.883 renglones: cada línea y cada item con su rótulo, subcategoría e importe), antes y después:
+   `cmp` idéntico.
+3. Por club, ejercicio y lado, las genéricas suman el total; la cascada armada con los bloques da el ebitda, el resultado operativo y el pat de
+   `computeYearGeneric` en los 1.296 ejercicios. Se probó que detecta: con `depreciation` mapeada a una genérica operativa, 896 fallas y no escribe.
+4. `ida-y-vuelta` 319/319 idénticos; `validar-esquema-json` 319 válidos; `generar-data --check`, `generate-rankings --check`,
+   `generate-fuentes-page --check` y `generate-club-index --check` al día; `audit.js` 0 P0 / 0 P1 y los mismos conteos por código que antes;
+   `?audit=1`: 319 clubes, 3703 checks, 0 no cierran, 0 warnings.
+
+## Para el merge
+
+- `data/` y `tools/` de esta rama no chocan con main (`git diff proyecto...main` vacío en `data/`, `tools/`, `js/` al empezar). El choque de
+  siempre es ASSET_V y lo generado (`index.html`, `fuentes/`, `club/`, `liga/`): `tools/worktree.mjs mergear`.
+- **Después de mergear cualquier rama con JSON en v1**: `node tools/migrar-v2.mjs --escribir` (es idempotente; con los chequeos en verde
+  escribe solo los que estaban en v1).
+- Una tool vieja de otra rama que escriba un JSON sin `subcategory` falla en `validar` y no escribe (no rompe datos).
+- Los JSON crecieron un 7 % en bytes: varias líneas pasan los 150 caracteres y `serializar` las abre en varios renglones.
 
 ## Para TODO, CHANGELOG y ESTADO (los escribe la principal)
 
-- TODO 248: el diseño está hecho (`Admin/mediciones/248-plan.md`); falta el ok de Guido a las decisiones de la sección 6 y la implementación, con Bath Rugby como prueba.
-- CHANGELOG: "248: diseño de la taxonomía genérica (category genérica + subcategory por deporte, esquema club-v2), en Admin/mediciones/248-plan.md".
-- ESTADO: nada deja de ser cierto todavía.
+- TODO 248: hechos los pasos 1 a 3 (mapa, migración, documentos). Quedan el paso 4 (la etapa de pantalla: motor y Formato simplificado leyendo
+  el mapa) y el 5 (Bath Rugby, decisiones 9 a 14 del plan, abiertas).
+- CHANGELOG: "248: esquema 2.0: cada línea con category genérica (derivada de data/category-map.js) y subcategory del deporte; los 319 JSON
+  migrados con tools/migrar-v2.mjs sin cambiar un importe (4 chequeos); club-v2.json y taxonomy-football-1.json; 3 chequeos nuevos en audit.js".
+- ESTADO, lo que deja de ser cierto: la línea de `data/` dice «esquema en `data/schema/club-v1.json`»; ahora es `club-v2.json`, con la tabla
+  `data/schema/taxonomy-football-1.json`.
+
+## Skill: cambio propuesto, NO aplicado (necesita el ok de Guido)
+
+`club-data-mapping/SKILL.md`, sección 0, el párrafo que empieza «El motor genérico (`computeYearGeneric`…». Cambiar
+«En el JSON del club los campos se llaman `{ label, category, amount, disclosure, items? }`» por:
+
+> En el JSON del club los campos se llaman `{ label, category, subcategory, amount, disclosure, items? }`: `subcategory` es la
+> `normalizedCategory` (la que se elige con este skill) y `category` es la genérica, igual para cualquier deporte, que no se elige: la escribe
+> `tools/json-datos.mjs` desde `SPORT_TAXONOMIES` de `data/category-map.js`. Una subcategoría nueva lleva su genérica en ese mapa en la misma
+> sesión (`audit.js`, `taxonomia-incompleta`).
 
 ## Hallazgos de paso (no se tocaron)
 
 - Bath Rugby 2023-24 (`Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.md`, pág. 22, L1026-1050): el estado de resultados
-  quedó sin cifras (rótulos sí, números como "Teo / I> Ion / Im"). Hay que volver a transcribir esa página.
+  quedó sin cifras (rótulos sí, números como "Teo / I> Ion / Im"). Hay que volver a transcribir esa página antes de cargar.
 - Bath Rugby, Strategic Report: el OCR se come la coma ("Central income 74" por 7,4 en 2023-24 L163; "44" por 4,4 en 2024-25 L206).
   Ningún chequeo mira hoy la tabla del Strategic Report.
-- Hay 2 líneas de ingreso con categoría de gasto que no son las de Racing: Atlético Mineiro 2024 y 2025, "Custo de mercadorias e produtos
-  (custo do manto vendido)", `admin_general_expense` con importe negativo en `revenue`. El plan las trata igual que las otras cruzadas
-  (decisión 3); si son un costo cargado del lado del ingreso, es tema de la carga de ese club, no de esta tarea.
+- Atlético Mineiro 2024 y 2025: "Custo de mercadorias e produtos (custo do manto vendido)" es `admin_general_expense` con importe negativo en
+  `revenue`. Queda en `other_revenue` por la regla cruzada; si es un costo cargado del lado del ingreso, es tema de la carga de ese club.
+- El hook de commit frena un commit que toca un JSON de `data/` sin subir ASSET_V, aunque el JSON no lo cargue ninguna página (el chequeo
+  `asset-v-sin-subir` de `audit.js` exceptúa solo `data/schema/`). Hubo que subirlo dos veces en esta vuelta. Es tema de Pipeline, no lo toqué.
 
 ---
 

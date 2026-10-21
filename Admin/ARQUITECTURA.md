@@ -20,7 +20,8 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   vive acá: está en css/styles.css, referenciado con un <link> que lleva el
   mismo `?v=` que los <script src> propios.
 - data/<país>/<clubId>.json: LA FUENTE de los datos de un club (to-do 245, fase 2): el esquema, `schema_version`, la unidad (millones de la moneda del
-  club) y los nombres de campo en inglés están en `Admin/mediciones/245-esquema.md` y `data/schema/club-v1.json`. Se publica como dato abierto. Las tools
+  club) y los nombres de campo en inglés están en `Admin/mediciones/245-esquema.md` y `data/schema/club-v2.json` (cada línea con `category` genérica
+  y `subcategory` del deporte; la tabla de cada deporte en `data/schema/taxonomy-<versión>.json`). Se publica como dato abierto. Las tools
   de carga lo leen y escriben con `tools/club-json.mjs` (`modificarClub`), que lo valida y regenera el data file; `tools/generar-data.mjs` lo hace a mano
   (`--check` lo vigila, `audit.js` lo corre).
 - data/<país>/<clubId>-data.js: GENERADO desde ese JSON (no se edita), un archivo por club, en la carpeta de su país (código ISO de `clubs[clubId].country` en
@@ -48,7 +49,10 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   TODOS los clubes (Boca incluida desde la Versión 102) vía `normalizedCategory`
   en cada línea de revenueLines/expenseLines. `categoryMapByClub.boca` (el
   mapeo campo-viejo -> categoría que se usó como referencia al migrar Boca) es
-  documentación histórica, no se lee en vivo.
+  documentación histórica, no se lee en vivo. Desde el to-do 248 tiene además la capa genérica:
+  GENERIC_REVENUE/EXPENSE_CATEGORIES (id, bloque de la cascada del resultado y rótulos), SPORT_TAXONOMIES (deporte -> lado ->
+  subcategoría -> genérica) y genericCategoryOf(); los usan tools/json-datos.mjs (escribe `category` en el JSON), audit.js y
+  tools/generar-schema-json.mjs (club-v2.json y la tabla pública del mapa).
 - data/currency-map.js: CURRENCY_META, la tabla de moneda nativa -> {scale,
   unitSuffix} que generaliza el toggle de moneda a cualquier país (Versión
   103). Leé el comentario de cabecera antes de onboardear un club con una

@@ -1,6 +1,8 @@
 # Taxonomía genérica con subcategorías por deporte (to-do 248): plan
 
-Estado: DISEÑO, sin tocar datos ni código. Falta el ok de Guido a las decisiones de la sección 6. La sección 5 dice cómo entra Bath Rugby, la prueba de punta a punta.
+Estado: los pasos 1 a 3 del "Orden de trabajo" (sección 4) están HECHOS: el mapa en `data/category-map.js`, los chequeos de `audit.js`, el esquema 2.0 y la
+migración de los 319 JSON (`tools/migrar-v2.mjs`, con los 4 chequeos en verde) y los documentos. Las decisiones 1 a 8 (sección 6) quedaron como se
+recomendaron. Falta el paso 4 (la etapa de pantalla) y el 5, Bath Rugby (sección 5), con las decisiones 9 a 14 abiertas.
 
 ## 1. El problema, medido
 
@@ -59,7 +61,7 @@ genérica sola, sin conocer el fútbol: es exactamente la cuenta que ya hace `co
 | `player_transfers` | `player_sales` | Venta de Jugadores |
 | `other_sporting_sections` | `other_sports`, `youth_football`, `womens_football` | Otras secciones deportivas |
 | `non_sporting_activities` | `education` | Educación |
-| `other_revenue` | `other_income`; y las 2 cruzadas: `exceptional_items`, `admin_general_expense` (decisión 3) | Otros ingresos (catch-all) |
+| `other_revenue` | `other_income`; y cualquier subcategoría de gasto usada en una línea de ingreso (decisión 3) | Otros ingresos (catch-all) |
 | `undisclosed` | `lump_football_operations` | Fútbol profesional (sin desglosar por la fuente) |
 
 `season_tickets` queda como genérica propia (y no adentro de `matchday`) para que ninguna genérica quede partida entre dos filas si algún día
@@ -130,7 +132,9 @@ En `data/category-map.js`, que ya es la lista oficial (la leen el sitio, `audit.
 
 - `GENERIC_REVENUE_CATEGORIES` / `GENERIC_EXPENSE_CATEGORIES`: id, bloque y rótulo (ES/EN).
 - `SPORT_TAXONOMIES = { futbol: { version: 'football-1', revenue: { member_dues: 'membership', ... }, expense: { wages_squad: 'first_team_staff', ... } } }`,
-  con las 2 cruzadas escritas a mano en `revenue` y su motivo al lado.
+  y `genericCategoryOf(deporte, lado, subcategoría)`: una subcategoría del otro lado va a la genérica catch-all de su lado (`other_revenue` /
+  `other_operating_expenses`). Es la decisión 3 como regla general y no como lista: `validar` acepta lo mismo que antes (cualquier
+  subcategoría de las dos listas, en cualquier lado) y no rechaza una línea cruzada nueva; la sigue vigilando `categoria-cruzada` de `audit.js`.
 - `generar-schema-json.mjs` genera de ahí `data/schema/club-v2.json` (con el par `category`/`subcategory` validado por un `oneOf` por
   genérica, así un validador externo también lo exige) y `data/schema/taxonomy-football-1.json`, la tabla pública del mapa para quien use el
   dato abierto. `club-v1.json` se deja publicado y congelado (decisión 2).
