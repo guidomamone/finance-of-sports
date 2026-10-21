@@ -150,6 +150,7 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 
 - **Club nuevo:** color de marca, chequeo contra el escudo y liga de cada temporada, a mano: `club-nuevo.md`, en esta misma carpeta.
 - **Liga nueva** (su primer ranking en `data/rankings/`): buscar los informes que resumen sus finanzas, `club-sourcing`, sección 0.4.
+- **Deporte nuevo** (el primer club de un deporte que no está en el sitio): antes del lote, una carga de prueba de ese club, sin API y de punta a punta; cada lugar donde frene va a `frenados-por-script.jsonl` como defecto de script. Lo que ya se aprendió: `Admin/PIPELINE.md`, «Un deporte nuevo».
 - **Presupuestos:** `localizar.mjs` no los elige, así que el pipeline no los carga. A mano: `Admin/ARQUITECTURA.md` (ex §11, presupuesto y
   balance del mismo año) y `Admin/CONVENCIONES.md` (ex §15, presupuesto en año calendario).
 - **Buscar el PDF:** skill `club-sourcing`.
