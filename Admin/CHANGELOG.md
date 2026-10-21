@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 904 — Verificar respeta el total exacto; aviso por coma comida en el OCR (2026-10-20) [339 · bath-gb]
+
+- `verificar.mjs` prueba el ajuste `desglose` antes de `cerrarNota()`: una nota de ingresos redondeada ya no pisa el Turnover exacto. En 346 documentos solo cambian los 4 años de Bath, que recuperan la diferencia (de £19.557 a £44.435). Aprobado por Auditora 4.
+- `audit.js`: aviso P2 `coma-comida` (una fila de un decimal donde la cifra sin coma, dividida por 10, cierra la resta); 4 filas silenciadas, ningún año publicado afectado.
+
 ## Versión 903 — Auditora 4 aprueba lo del 339 y el 334; Jev ve los rubros de cada deporte (2026-10-20) [339 · 334 · bath-gb · everton-gb]
 
 - Auditora 4 aprueba, después de mergeados, los 6 commits del 339 y el del 334 (no se revierte nada). Aprueba (a) Jev y Claude ven las categorías con descripción del deporte del club y (b) el bolsón sin desglosar por deporte: los dos, idénticos en fútbol. Aprueba con un cambio el aviso P2 por coma comida del OCR (sin codear). Las dos filas de Everton que marca no afectan ningún año publicado.
