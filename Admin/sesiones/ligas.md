@@ -341,3 +341,18 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: to-do 343, búsqueda del sponsor con evidencia (propuesta), 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: la condición del 343 (la compuerta de `estadio-sponsor.mjs` pide un registro de búsqueda para un sponsor sin fuente), APROBADA CON TRES CAMBIOS. Sin codear.
+
+### Qué queda (para TODO / 343)
+
+- Antes de codear: (a) los 26 años con `sin-fuente.sponsor` de hoy (8 clubes, 16 % de los años de `contexto-manual.json`) se congelan en una lista y solo esos pueden ser `legacy:true`; (b) `archivo-web` cuenta como `club-oficial`; (c) medir con `estadio-sponsor.mjs --ensayo --detalle` que ningún año ya cargado queda frenado.
+- Para Guido, con el texto de la skill: la sección `club-sourcing` 0.5 (en `Admin/propuestas/343-busqueda-sponsor.md`) y un control en el eje `datos` de `auditoria-finance-of-sports`: por país auditado, re-ejecutar una muestra de los registros de búsqueda nuevos y reportar si el sponsor aparecía.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
