@@ -47,7 +47,9 @@ import { modificarClub, leerJsonClub, rutaJson } from './club-json.mjs'; // (to-
 
 const ROOT = resolve(import.meta.dirname, '..');
 const HOY = new Date().toISOString().slice(0, 10);
-const LUMP = { ingresos: 'lump_football_operations', gastos: 'lump_football_operations_expense' };
+// (to-do 339) el bolsón es el del deporte del club (la taxonomía lo declara: `lump`); para el fútbol, lump_football_operations / _expense
+import { bolsonDeDeporte, deporteODefecto } from './deporte-club.mjs';
+const lumpDe = (clubId, lado) => (bolsonDeDeporte(deporteODefecto(clubId)) || {})[lado === 'ingresos' ? 'revenue' : 'expense'];
 
 // El motor de la página en un sandbox: los mismos scripts, en el mismo orden que index.html (sin el DOM: solo el cálculo).
 export function motor() {
@@ -115,7 +117,7 @@ function medir(M) {
       if (!a.balance || !completo(a.lados[lado])) continue; // solo donde se sabe la verdad, y solo balances (como la regla)
       const otros = anios.filter((o) => o.y !== a.y && o.balance && completo(o.lados[lado])); if (otros.length < 2) continue;
       for (const f of a.lados[lado]) {
-        if (!M.B[lado].some((b) => b.label === f.label) || M.B[lado].find((b) => b.label === f.label).cats.includes(LUMP[lado])) continue;
+        if (!M.B[lado].some((b) => b.label === f.label) || M.B[lado].find((b) => b.label === f.label).cats.includes(lumpDe(id, lado))) continue;
         if (!otros.every((o) => conPlata(o.lados[lado].find((x) => x.label === f.label)))) continue;
         total++; if (f.value === 0) { falsas++; ej.push(`${id} ${a.y} ${lado}: ${f.label}${a.balance ? '' : ` (${a.meta.reportType})`}`); }
       }
@@ -166,7 +168,7 @@ export function marcarClub(id, { M = motor(), log = () => {} } = {}) {
     const pr = propuestasDe(M, anios, a);
     for (const lado of Object.keys(pr)) {
       lineas.push(`${id} ${a.y} ${lado}: ${pr[lado].map((x) => x.fila).join(', ')}  [precedente: ${pr[lado][0].otros.join(', ')}]`);
-      (porAnio[a.y] ||= []).push(...pr[lado].map((x) => ({ ...x, en: LUMP[lado] })));
+      (porAnio[a.y] ||= []).push(...pr[lado].map((x) => ({ ...x, en: lumpDe(id, lado) })));
     }
   }
   const antes = contarMarcas(leerJsonClub(id));

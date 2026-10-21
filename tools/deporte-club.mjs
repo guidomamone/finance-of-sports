@@ -80,6 +80,8 @@ export function leerCategorias(deporte) {
   }
   _leidas.set(deporte, r); return r;
 }
+// El bolsón «sin desglosar por la fuente» del deporte: { revenue, expense } (ids de subcategoría), o null si el deporte no tiene taxonomía o no declara bolsón.
+export function bolsonDeDeporte(deporte) { const l = taxonomias()[deporte]?.lump; return l ? { revenue: l.revenue, expense: l.expense } : null; }
 // ¿Esta categoría existe en la taxonomía del deporte del club? Sin taxonomía del deporte, no (nunca se asume que sí).
 export function categoriaValidaParaClub(clubId, categoria) {
   const c = categoriasDeDeporte(deporteODefecto(clubId)); return Boolean(c && c.todas.has(categoria));
