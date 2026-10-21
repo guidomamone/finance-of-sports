@@ -1,0 +1,186 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.md",
+ "mdSha1": "d4b3e0c31c95f88efe223388b58f9f536e46b9ca",
+ "ubicacionSha1": "929d008309582c166a09e4bd0a137ad77ddc2a7a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T14:33:25.243Z",
+ "ubicacion": {
+  "estado": [
+   "b14"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b14",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; en el modelo abreviado belga BNB los importes suelen estar en euros (unidades), pero no está impreso en L694-L726."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b14",
+   "linea": 700,
+   "etiqueta": "Marge brute d'exploitation",
+   "actual": "567.337",
+   "anterior": "496.957",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 704,
+   "etiqueta": "Rémunérations, charges sociales et pensions",
+   "actual": "429.975",
+   "anterior": "518.027",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 705,
+   "etiqueta": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "actual": "195.992",
+   "anterior": "157.759",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 708,
+   "etiqueta": "Autres charges d'exploitation",
+   "actual": "21.579",
+   "anterior": "4.676",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 711,
+   "etiqueta": "Bénéfice (Perte) d'exploitation",
+   "actual": "-80.209",
+   "anterior": "-183.505",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 712,
+   "etiqueta": "Produits financiers",
+   "actual": "21",
+   "anterior": "5",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 713,
+   "etiqueta": "Produits financiers récurrents",
+   "actual": "21",
+   "anterior": "5",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 716,
+   "etiqueta": "Charges financières",
+   "actual": "23.315",
+   "anterior": "6.674",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 717,
+   "etiqueta": "Charges financières récurrentes",
+   "actual": "23.315",
+   "anterior": "6.674",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 719,
+   "etiqueta": "Bénéfice (Perte) de l'exercice avant impôts",
+   "actual": "-103.503",
+   "anterior": "-190.175",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 722,
+   "etiqueta": "Impôts sur le résultat",
+   "actual": "",
+   "anterior": "-47",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 723,
+   "etiqueta": "Bénéfice (Perte) de l'exercice",
+   "actual": "-103.503",
+   "anterior": "-190.128",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 726,
+   "etiqueta": "Bénéfice (Perte) de l'exercice à affecter",
+   "actual": "-103.503",
+   "anterior": "-190.128",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 723,
+  "actual": "-103.503",
+  "anterior": "-190.128"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b14 en euros (unidades), aunque la escala no está impresa en el bloque?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El estado (L695-L726) no dice la escala; el modelo abreviado BNB suele presentarse en euros.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Marge brute d'exploitation' (L700, 567.337) como única cifra de ingresos, sin desglose de chiffre d'affaires ni compras?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Marge brute d'exploitation",
+   "texto": "El modelo abreviado solo informa el margen bruto neto (ventas menos aprovisionamientos), L700; no hay ingresos brutos ni notas de desglose.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Esquema abreviado belga: no se imprimen total de ingresos ni de gastos. Impôts sur le résultat sin importe en el ejercicio (vacío) y -47 en el anterior; se incluyó la fila por el importe del año anterior. Comprobación: 567.337-429.975-195.992-21.579=-80.209; -80.209+21-23.315=-103.503."
+}

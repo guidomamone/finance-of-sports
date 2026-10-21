@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "raallalouviere-be",
@@ -60,6 +60,13 @@
       "id": "raallalouviere-be-jaarrekening-2024-06-30-individual",
       "club_id": "raallalouviere-be",
       "title": "RAAL La Louvière SC — jaarrekening-2024-06-30-individual (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "raallalouviere-be-jaarrekening-2020-06-30-individual",
+      "club_id": "raallalouviere-be",
+      "title": "RAAL La Louvière SC — jaarrekening-2020-06-30-individual (ejercicio 2020)",
       "type": "official_balance_sheet",
       "reliability": "primary"
     }
@@ -157,6 +164,52 @@
             "line": "Marge brute d'exploitation",
             "side": "revenue",
             "amount": 0.496957,
+            "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
+          }
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "raallalouviere-be-jaarrekening-2020-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [{"label":"Marge brute d'exploitation","category":"undisclosed","subcategory":"lump_football_operations","amount":0.567337,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Rémunérations, charges sociales et pensions",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.429975,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.195992,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Autres charges d'exploitation",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.021579,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.023294,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.567337,"expenses":0.647546,"net_result":-0.103503},
+      "adjustments": {
+        "extra_rows": [{"label":"Produits financiers récurrents","amount":0.000021},{"label":"Charges financières récurrentes","amount":-0.023315}],
+        "no_breakdown": [
+          {
+            "line": "Marge brute d'exploitation",
+            "side": "revenue",
+            "amount": 0.567337,
             "reason": "Claude 2026-10-20 (Onboarding 5): precedente Patro Eisden 2021: Brutomarge -> lump_football_operations"
           }
         ]

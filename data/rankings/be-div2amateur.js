@@ -34,6 +34,15 @@ window.RANKINGS["be-div2amateur"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.57]] },
     ],
   },
+  2020: {
+    leagueSize: 48,
+    wiki: {"t":"2019–20 Belgian Second Amateur Division","lang":"en","at":"2026-10-19","n":48},
+    clubs: [
+      { id:"raallalouviere-be", revenue:0.635, reportType:"official_balance_sheet",
+        sourceId:"raallalouviere-be-jaarrekening-2020-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.635]] },
+    ],
+  },
   2019: {
     leagueSize: 48,
     wiki: {"t":"2018–19 Belgian Second Amateur Division","lang":"en","at":"2026-10-19","n":48},
