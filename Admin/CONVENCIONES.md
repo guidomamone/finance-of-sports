@@ -84,6 +84,9 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
     si entra en lo que queda, se corre sin preguntar; si no, se frena y se le avisa a la principal. La cuenta sale de `node tools/gasto.mjs --sesion <la carpeta del worktree>` (cada llamada nueva lleva su sesión; lo anterior figura «(sin marca)»)
     (lee los registros de la API) y va en la nota de la sesión. La auditora compara, en cada merge, lo gastado contra el presupuesto y
     los ensayos, y marca la plata tirada: lotes que no escribieron nada, reintentos repetidos, corridas dobles.
+  - **Una regla que se tiene que cumplir va a un chequeo, no a la memoria de una sesión** (Guido: «son parches»). Primero `audit.js`
+    (que el hook corre antes de cada commit: P0 y P1 frenan) o el hook de `tools/hooks/pre-tool.mjs`; si no se puede chequear, a
+    estas convenciones, `PANTALLA.md`, `CONVENCIONES-DATOS.md` o la skill que corresponda. La memoria de una sesión no cuenta como arreglo.
   - **Las sesiones de worktree le escriben solo a la principal, corto** (Guido, 2026-10-20: lo que escribe una sesión es lo más
     caro en tokens, y Guido lee solo a la principal). Nada de explicaciones para Guido. El aviso de fin de turno va en 3 a 5 líneas
     (qué quedó, qué pide, cuánto gastó), y el detalle va en la nota de la sesión, no en el chat.
