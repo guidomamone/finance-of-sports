@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 921 — Ligas nueva, Escocia aparte, el anexo que abre las ventas (2026-10-21) [344 · 237 · celtic-gb, mafra-pt, asroma-it]
+- 344: la lista de Ligas como el mockup aprobado (filtros de deporte, región e informes; agrupar por país, deporte o nivel; orden; estado en la URL). Sin conteos de clubes cargados ni plata en el encabezado de liga ni en las tarjetas de Inicio; el ranking y «La liga en total» quedan.
+- Escocia es un país aparte (`COUNTRIES.SCT`, la Premiership escocesa con `country:'SCT'`); `CLUB_NATION` y `nationOf()` en `data/leagues.js` dan el país de un club sin cambiar ids ni carpetas (Celtic). La regla de Gales (el país de una liga es el de su federación; el de un club, donde está) en `CONVENCIONES-DATOS.md`.
+- 237 al: `tools/cuadro-sobrante.mjs` (lo llama `extraer.mjs`, solo en extracciones nuevas) usa el cuadro que abre un renglón cuando suma exacto (Mafra 2023-24, AS Roma 2009); 0 falsos positivos en 15.826 casos. Auditora 4 aprobó el código.
+
 ## Versión 920 — El sponsor sin fuente pide evidencia de búsqueda; chequeo de años sin rastro (2026-10-21) [343 · 317 · 257]
 - 343: club-sourcing 0.5 (cómo buscar el sponsor y dejar el registro); la compuerta de `estadio-sponsor.mjs` solo acepta un sponsor sin fuente con un registro de búsqueda válido (`tools/sponsor-busqueda.js`) o en `tools/sponsor-legacy.json` (26 años de 8 clubes, congelados); `audit.js` P1 `sponsor-sin-busqueda` y `sponsor-legacy-fuera-de-lista`, P3 `sponsor-sin-registro`. Medido: 0 años frenados nuevos. Auditora 4 aprobó el código.
 - 317: `audit.js` P3 `ejercicio-sin-rastro`: años no cargados ni anotados en `data/faltantes/` (51 clubes).
