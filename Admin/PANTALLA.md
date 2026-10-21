@@ -946,6 +946,22 @@ Texto movido sin cambios.
 
 ---
 
+## Registro público de correcciones: cómo es y qué no romper
+
+- **De dónde sale.** `node tools/generar-correcciones.mjs` lo escribe en `data/correcciones/` (`correcciones.json`, uno por país `<iso2>.json` aunque no
+  tenga eventos, y `correcciones.csv`) desde el historial de git de los `-data.js`. Nunca a mano. Qué cuenta, el motivo (trailer `Corrige:` o línea de
+  `Admin/registros/correcciones.jsonl`; sin ninguno, «Motivo no registrado», jamás un asunto de commit) y `registro_desde`: cabecera de la tool y
+  `Admin/mediciones/247-plan.md`. La caché (`Generados/.cache-correcciones.json`, gitignoreada) se reconstruye sola en ~25 s.
+- **Dónde se ve.** `correcciones.html` (página propia, filtros por club, país, tipo y ejercicio, `?club=<id>`, por defecto solo «desde el registro»;
+  la casilla suma lo anterior, marcado «anterior al registro»); el bloque «Correcciones a estos números» en Finanzas, debajo de «Quién auditó» (los 5
+  eventos más nuevos del club; nunca se esconde con un club elegido: sin eventos dice «Sin correcciones desde <fecha>», y solo se esconde si el archivo
+  del país no cargó); y un punto dorado en la tarjeta de un ejercicio con correcciones (con su `title`; la tarjeta es un botón, así que no lleva link).
+- **Un solo código.** `js/correcciones.js` (`FIN_CORRECCIONES`) arma el resumen, el detalle y los textos para la página y para Finanzas; la página
+  solo trae los filtros. Los importes van en millones de la moneda del club; el sha es corto y sin link (el repo es privado). El motivo sale en el
+  idioma de la página (`motivo_en` si existe, si no el español).
+- **Antes de tocar:** una clave nueva de texto va en `data/lang/en.js` (`corr.*`). El generador va en `tools/generadores.mjs` y `audit.js` lo vigila como P2
+  (`correcciones-desfasado`, `correccion-sin-motivo`): P2 y no P1 porque el commit que corrige un dato deja el registro un commit atrás hasta el próximo regenerado.
+
 ## Trampas del navegador de preview (venía de `CLAUDE.md`, "Gotchas de tooling")
 
 Texto movido sin cambios.

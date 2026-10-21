@@ -129,6 +129,11 @@ const FIN_ANIOS = (function(){
       b.innerHTML = '<b></b><span></span>';
       b.querySelector('b').textContent = etiqueta(clubId, e.y);
       b.querySelector('span').textContent = tipoTexto(e.tipo);
+      // Un ejercicio con alguna corrección en el registro público (js/correcciones.js) lleva una marca; el detalle está en la tarjeta de Correcciones.
+      if(window.FIN_CORRECCIONES && FIN_CORRECCIONES.anios(clubId).has(e.y)){
+        b.classList.add('corr');
+        b.title = (b.title ? b.title + ' · ' : '') + t('corr.marca', 'Este ejercicio tiene correcciones: están más abajo, en «Correcciones a estos números»');
+      }
       if(e.tipo === 'X'){
         b.disabled = true;
         b.title = t('finanzas.card.unpublishedTip', 'El club todavía no publicó este ejercicio, o no lo conseguimos');
