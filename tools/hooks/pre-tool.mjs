@@ -20,6 +20,7 @@
 //
 //   comandos-simples        (deny) un Bash con /tmp suelto, `cd … &&`, o `$(…)`/`${…}`/`$VAR` fuera de comillas simples: no se puede chequear antes de
 //                            correr y pide permiso cada vez (to-do 327, C-1). Pasan el scratchpad de la sesión y el heredoc de `git commit`.
+//   no-importar-tools       (deny) `node -e` con import()/require() de un archivo de tools/ (salvo data-clubes.js y rutas.mjs): lo ejecuta (C-5).
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
 import { execFileSync } from 'node:child_process';
@@ -122,8 +123,18 @@ function comandosSimples(cmd) {
   }
 }
 
+// `node -e "import('./tools/x.mjs')"` o `require('./tools/x.js')` para chequear una tool la EJECUTA (to-do 327, C-5). Se chequea con `node --check`.
+// `data-clubes.js` y `rutas.mjs` son librerías sin efectos: esas sí se pueden importar.
+function noImportarTools(cmd) {
+  if (!/\bnode\b/.test(cmd)) return;
+  for (const m of cmd.matchAll(/\b(?:import|require)\s*\(\s*\\?['"`][^'"`]*?tools\/([^'"`\\]+)/g)) {
+    if (/(^|\/)(data-clubes\.js|rutas\.mjs)$/.test(m[1])) continue;
+    decidir('deny', `Importar o hacer require de tools/${m[1]} la ejecuta de verdad (muchas escriben datos o llaman a APIs). Para chequear que no tenga errores de sintaxis: node --check tools/${m[1]}. Solo data-clubes.js y rutas.mjs se pueden importar.`);
+  }
+}
+
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
-if (herramienta === 'Bash') comandosSimples(cmd);
+if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); }
 skillsConOk(cmd);
 pushConOk(cmd);
 docsDeLaPrincipal(cmd);
