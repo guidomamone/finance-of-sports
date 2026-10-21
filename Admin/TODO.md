@@ -72,6 +72,8 @@ el número de la izquierda es el orden de trabajo.
    rompe); deploy/release (qué chequear antes de pushear y cómo verificar producción).
    Además (Guido, 2026-10-20): lo que hoy se maneja con la memoria de la sesión principal (`~/.claude/projects/…/memory/`) pasa a una
    skill, a una convención o a un chequeo; la memoria no es el lugar de una regla de trabajo. Repasar cada memoria y decidir a dónde va.
+   Y algo que cuide que un cambio de skill no se aplique sin que Guido haya visto el texto exacto (pasó tres veces el 2026-10-20: el texto
+   quedaba detrás del cuadro de pregunta). Por ejemplo, que el hook de skills exija el texto propuesto en un archivo de `Admin/` ya commiteado.
 258. ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). clubs.js + club-index.js pesan ~93 KB para ~230 clubes y se bajan siempre (con 10.000 clubes,
    ~4 MB). Partir el índice y cargar el buscador aparte cuando la skill escala-finance-of-sports diga que llegó el momento.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar

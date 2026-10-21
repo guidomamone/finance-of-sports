@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 915 — La auditoría revisa también la memoria (2026-10-21) [257]
+
+- Skill `auditoria-finance-of-sports`, eje `docs`: revisa la memoria de la sesión principal (repetidos, y reglas que tendrían que ser skill, convención o chequeo) (ok de Guido). TODO 257: lo de la memoria pasa a skills, y algo que impida aplicar un cambio de skill sin que Guido vea el texto.
+
 ## Versión 914 — Sin <base> en index.html: fosUrl() arma las rutas (2026-10-21) [340]
 
 - `js/i18n.js` calcula la raíz del sitio desde la URL de su script y expone `fosUrl()`; lo usan las cargas dinámicas y los links que arma el JS. `index.html` sin `<base>` ni script de base. Probado como archivo en Brave (portada con estilos) y servido: portada → J1 League → Kawasaki Frontale carga, `/club/...` directo. ASSET_V 1564.
