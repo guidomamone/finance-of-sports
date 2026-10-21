@@ -21,7 +21,7 @@ window.RANKINGS_INDICE = {
   "co-primeraB": [2018,2,16],
   "de-2bundesliga": [2025,2,18],
   "de-bundesliga": [2024,10,18],
-  "dk-1division": [2022,1,null],
+  "dk-1division": [2023,1,null],
   "dk-superliga": [2025,6,12],
   "ee-esiliiga": [2024,1,10],
   "ee-meistriliiga": [2025,9,10],
