@@ -34,6 +34,7 @@ import { ajusteDe } from './ajustes.mjs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // (to-do 341) «club de fútbol» de los prompts de lectura es el deporte del club
+import { aplicarCuadroSobrante } from './cuadro-sobrante.mjs'; // (to-do 237 al) un cuadro que localizar eligió y extraer no usó abre un renglón del estado
 import { shaMd, huellaUbicacion } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché; (237 ai) y de la ubicación
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
@@ -150,6 +151,8 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   }
   if (r.error) return { error: r.error, costo: r.costo };
   const datos = { pdf, md, mdSha1: shaMd(md), ubicacionSha1: huellaUbicacion(ub), modelo: idModelo, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos }; // ubicacionSha1: to-do 237 ai (cache-al-dia.mjs, ubicacionAlDia)
+  // (to-do 237 al, tools/cuadro-sobrante.mjs) solo en una extracción nueva (no en la medición con otro modelo) y nunca en un ejercicio que ya está en el sitio: ahí solo dice qué habría reemplazado
+  if (!modelo) { const cs = aplicarCuadroSobrante(datos, { ub, L, pdf, cierre: e.periodo?.cierre || null, anio: ajusteDe(pdf, 'anio')?.valor ?? null }); for (const x of cs.aplicados) console.log('  cuadro sobrante (237 al): ' + x); for (const x of cs.saltados) console.log('  cuadro sobrante (237 al) se salta: ' + x); }
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo: r.costo };
 }
