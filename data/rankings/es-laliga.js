@@ -70,7 +70,7 @@ window.RANKINGS["es-laliga"] = {
     clubs: [
       { id:"girona-es", revenue:70.133, reportType:"official_balance_sheet",
         sourceId:"girona-es-cuentas-anuales-2022-2023",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",7.33],["Otros ingresos",62.803]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",65.028],["Otros ingresos",5.105]] },
     ],
   },
   2022: {
