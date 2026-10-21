@@ -34,6 +34,7 @@ import { deporteDeClub } from './deporte-club.mjs';
 const ROOT = resolve(import.meta.dirname, '..');
 const REF = resolve(ROOT, 'tools', 'club-league-reference');
 const { cierreDelClub } = createRequire(import.meta.url)('./cierre-ejercicio.js');
+const SPONSOR = createRequire(import.meta.url)('./sponsor-busqueda.js'); // (to-do 343) el registro de búsqueda del sponsor
 
 // mismo emparejamiento de nombres que tools/listas-lote.mjs
 const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -569,8 +570,14 @@ async function main() {
     // (to-do 298 b3, REGLA de CONVENCIONES-DATOS "un dato de contexto sin fuente pública queda en null", ok de Guido 2026-10-20) `"sin-fuente": { "<campo>": "dónde se buscó" }`
     // en contexto-manual.json: el campo (estadio, capacidad, sponsor o marca) queda en null y cuenta como RESUELTO para la compuerta (no frena). Vale solo con el texto de dónde
     // se buscó; un campo que sí tiene valor no se pisa.
-    const sf = m && m['sin-fuente'] && typeof m['sin-fuente'] === 'object' ? Object.fromEntries(Object.entries(m['sin-fuente']).filter(([k, v]) => ['estadio', 'capacidad', 'sponsor', 'marca'].includes(k) && typeof v === 'string' && v.trim())) : {};
-    if (m && m['sin-fuente'] && !Object.keys(sf).length) console.error(`contexto-manual.json: ${e.id} ${e.y} "sin-fuente" sin campo válido o sin el texto de dónde se buscó: no se usa`);
+    // (to-do 343, skill club-sourcing 0.5) El SPONSOR no se resuelve con un texto: hace falta el registro de búsqueda ({ buscado, por, intentos }, tres clases sin contar Wikipedia) o, para los
+    // años que ya tenían un texto libre, { legacy: true, texto } con el club y el año en tools/sponsor-legacy.json (tools/sponsor-busqueda.js). Estadio, capacidad y marca siguen con el texto.
+    const sf = {}; const sfMotivo = {};
+    if (m && m['sin-fuente'] && typeof m['sin-fuente'] === 'object') for (const [k, v] of Object.entries(m['sin-fuente'])) {
+      if (k === 'sponsor') { const r = SPONSOR.validar(v, e.id, e.y); if (r.ok) sf[k] = r.legacy ? r.texto : v; else sfMotivo[k] = r.motivo; }
+      else if (['estadio', 'capacidad', 'marca'].includes(k) && typeof v === 'string' && v.trim()) sf[k] = v;
+    }
+    if (m && m['sin-fuente'] && !Object.keys(sf).length) console.error(`contexto-manual.json: ${e.id} ${e.y} "sin-fuente" sin campo válido o sin el texto de dónde se buscó${sfMotivo.sponsor ? ` (sponsor: ${sfMotivo.sponsor})` : ''}: no se usa`);
     if (m) {
       if (!m.fuente) { if (Object.keys(m).some((k) => k !== 'sin-fuente')) console.error(`contexto-manual.json: ${e.id} ${e.y} sin "fuente": no se usa`); }
       // la fuente de Wikipedia queda en `fuente` (vale para los campos que no vinieron a mano); lo manual va en `fuenteManual` con la
@@ -586,7 +593,7 @@ async function main() {
     const resuelto = (k) => tiene(k) || !!sf[k]; // con valor, o en null con la marca `sin-fuente`
     for (const k of Object.keys(sf)) if (!tiene(k)) { d ??= {}; (d.sinFuente ??= {})[k] = sf[k]; }
     if (tiene('estadio')) { n.est++; L.est++; } if (tiene('capacidad')) n.cap++; if (tiene('sponsor')) { n.sp++; L.sp++; } if (tiene('marca')) n.kit++;
-    if (!resuelto('estadio') || (!resuelto('sponsor') && !amateur(e.liga))) faltan.push(`${e.id} ${e.y}${e.liga ? ` (${e.liga}${e.s ? ' ' + e.s : ', sin lista'})` : ' (sin liga en club-leagues)'}: falta ${[!resuelto('estadio') && 'estadio', !resuelto('sponsor') && 'sponsor'].filter(Boolean).join(' y ')}`);
+    if (!resuelto('estadio') || (!resuelto('sponsor') && !amateur(e.liga))) faltan.push(`${e.id} ${e.y}${e.liga ? ` (${e.liga}${e.s ? ' ' + e.s : ', sin lista'})` : ' (sin liga en club-leagues)'}: falta ${[!resuelto('estadio') && 'estadio', !resuelto('sponsor') && 'sponsor'].filter(Boolean).join(' y ')}${!resuelto('sponsor') && sfMotivo.sponsor ? ` (${e.id} ${e.y} sin-fuente.sponsor no vale: ${sfMotivo.sponsor})` : ''}`);
     if (d) { const limpio = Object.fromEntries(Object.entries(d).filter(([, v]) => v != null && v !== '')); if (Object.keys(limpio).length > 1) ((salida[e.iso] ??= {})[e.id] ??= {})[e.y] = limpio; }
     if (detalle) console.log(`${e.id} ${e.y} (${e.liga || '-'} ${e.s || '-'}): estadio ${d?.estadio || '-'} | cap ${d?.capacidad || '-'} | sponsor ${d?.sponsor || '-'} | marca ${d?.marca || '-'}`);
   }
