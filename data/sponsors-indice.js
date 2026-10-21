@@ -426,7 +426,6 @@ window.SPONSORS_INDICE = [
   ["bravoplaya","Bravoplaya",["c"]],
   ["brawo-group","BRAWO Group",["c"]],
   ["bread-factory","Bread Factory",["c"]],
-  ["breast-cancer-uk","Breast Cancer UK",["c"]],
   ["brejeiro","Brejeiro",["c"]],
   ["brewboard","Brewboard",["c"]],
   ["bricofer","Bricofer",["c"]],
