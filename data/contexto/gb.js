@@ -3,6 +3,9 @@
 // No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
+  'afcwimbledon-gb': {
+    2025: {"estadio":"Plough Lane","capacidad":9215,"sponsor":"War Child","marca":"Umbro","temporada":"2024–25 EFL League Two","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378041142","fuenteManual":"https://en.wikipedia.org/wiki/AFC_Wimbledon (Sponsorship and kit manufacturer: War Child en el pecho, donado por Sports Interactive/Football Manager); capacidad: https://en.wikipedia.org/wiki/Plough_Lane","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'arsenal-gb': {
     2022: {"estadio":"Emirates Stadium","capacidad":60704,"sponsor":"Emirates","marca":"Adidas","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2023: {"estadio":"Emirates Stadium","capacidad":60704,"sponsor":"Emirates","marca":"Adidas","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
