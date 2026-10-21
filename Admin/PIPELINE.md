@@ -1146,6 +1146,9 @@ mismo documento.
 
 ### Trampas de PDF y de grep
 
+- **Un documento que una tool no lee.** Primero `file <archivo>`. Si no es lo que dice la extensión (gzip, Zip, una página HTML de
+  error), el problema es la descarga y no la tool: se descomprime a un archivo nuevo o se vuelve a bajar (skill `club-sourcing`,
+  «Gotchas de tooling»). Si es lo que dice y la tool falla, va a `Admin/registros/frenados-por-script.jsonl` y lo arregla Pipeline.
 - **`grep -oP '.{20}CARACTER.{20}'` (u otro cuantificador de caracteres
   alrededor de un carácter especial) puede fallar en silencio cerca de
   acentos**: el cuantificador `.{N}` con `-P` (PCRE) en este entorno no

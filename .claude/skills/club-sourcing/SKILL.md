@@ -433,6 +433,7 @@ El sponsor de camiseta (el del frente) de un ejercicio sale primero de Wikipedia
   propia pestaña con `tabs_create` al arrancar y fija ese `tabId` explícito en cada llamada del
   Browser tool, en vez de operar sobre "la pestaña activa" por defecto. Si se lanzan sourcing agents
   en paralelo que usan el browser, decírselo en el prompt.
+- **Un archivo bajado se mira antes de darlo por guardado: que sea lo que dice su extensión.** `file <archivo>` tiene que decir PDF, XHTML o HTML, o XML. Si dice gzip o Zip (un depósito que sirve el archivo comprimido, como `regnskaber.virk.dk`), se descomprime a un archivo nuevo, `<base>-descomprimido.<ext>`, y el original queda. Si un `.pdf` resulta ser HTML, es una página de error o de login, no el documento: se vuelve a bajar. Lo vigila `audit.js` (`archivo-no-es-lo-que-dice`).
 
 ## Países: un archivo por regulador/región en `paises/`
 
