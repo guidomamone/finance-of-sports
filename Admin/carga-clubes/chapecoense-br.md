@@ -354,6 +354,10 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 1 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -460,6 +464,10 @@ Generados/Brasil/Chapecoense/demonstracoes-financeiras-2019.categorias.json (esc
 ```text
 tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 1 (compuerta: balance del documento): "Caixa e equivalentes de caixa" pág. 15
 ```
 
 ## 2017
