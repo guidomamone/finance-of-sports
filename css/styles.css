@@ -988,6 +988,20 @@
   .lg-mat td.vacio{color:var(--muted);}
   .lg-mat .lg-liga{min-height:36px;padding:0 12px;margin:2px 4px 2px 0;}
   .lg-nota{margin:0;font-size:13.5px;color:var(--muted);}
+  /* La marca COVID: un recuadro con borde de estallido (SVG inline, el texto es real). Ver Admin/PANTALLA.md, "Marca COVID". */
+  .covid{display:inline-block;position:relative;line-height:0;vertical-align:middle;transform:rotate(-4deg);cursor:help;outline-offset:3px;}
+  .covid svg{display:block;width:100%;height:100%;overflow:visible;}
+  .covid .burst{fill:var(--azul);stroke:var(--azul);stroke-width:3;stroke-linejoin:round;}
+  .covid text{font:700 17px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;letter-spacing:1px;fill:#fff;text-anchor:middle;}
+  .covid.s{width:66px;height:40px;}
+  .covid.m{width:62px;height:38px;}
+  .covid.l{width:74px;height:45px;}
+  .covid:focus-visible{outline:2px solid var(--oro,#f2b705);}
+  .fin-year{position:relative;}
+  .fin-year .covid{position:absolute;right:-12px;top:-30px;}
+  .fin-years-row.con-covid{padding-top:34px;}
+  .cab-covid{display:block;text-align:right;margin-bottom:2px;}
+  .stat .label .covid{margin-left:6px;}
   @media (max-width:600px){ .lg-dpais{grid-template-columns:1fr;} .lg-acc{margin-left:0;} }
   .lg-sindatos{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 20px;}
   .lg-sindatos summary{cursor:pointer;font-weight:700;font-size:14px;color:#45474d;}

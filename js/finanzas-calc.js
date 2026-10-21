@@ -115,6 +115,42 @@
   window.cierreEjercicio = cierreEjercicio;
   window.esEjercicioCalendario = esEjercicioCalendario;
 
+  // La marca COVID: un ejercicio (balance o presupuesto) cuyo cierre cae entre el 31/03/2020 y el 31/12/2021. Se deriva de la fecha de
+  // cierre, sin campo en los datos. Regla y diseño: Admin/PANTALLA.md, "Marca COVID".
+  function esCovid(clubId, y){
+    const c = cierreEjercicio(clubId, y);
+    return c >= '2020-03-31' && c <= '2021-12-31';
+  }
+  // El estallido: 16 puntas de radio alternado y una irregularidad fija, calculado una sola vez.
+  const COVID_PUNTOS = (function(){
+    const pts = [];
+    for(let i = 0; i < 32; i++){
+      const a = (Math.PI * 2 * i) / 32 - Math.PI / 2;
+      const r = i % 2 === 0 ? 47 + ((i * 7) % 5) : 34 + ((i * 3) % 4);
+      pts.push((50 + Math.cos(a) * r).toFixed(1) + ',' + (30 + Math.sin(a) * r * 0.62).toFixed(1));
+    }
+    return pts.join(' ');
+  })();
+  // `tam`: 's' (card de ejercicio), 'm' (cabecera de tabla) o 'l' (número grande). `conFoco`: false dentro de un botón, donde un segundo
+  // elemento enfocable sobraría. Devuelve el HTML; el globo sale de data-info-tip (js/info-tip.js).
+  function marcaCovidHtml(tam, conFoco){
+    const aria = t('covid.aria', 'Ejercicio dentro de la pandemia de COVID-19: partidos suspendidos o a puertas cerradas');
+    const tip = t('covid.tip', 'Pandemia de COVID-19: entre marzo de 2020 y junio de 2021 hubo partidos suspendidos o a puertas cerradas, según el país. Los importes son los del balance, sin ajuste.');
+    return '<span class="covid ' + tam + '" role="img"' + (conFoco ? ' tabindex="0"' : '') + ' aria-label="' + aria.replace(/"/g, '&quot;') + '" data-info-tip="' + tip.replace(/"/g, '&quot;') + '">' +
+      '<svg viewBox="-4 -4 108 68" aria-hidden="true" focusable="false"><polygon class="burst" points="' + COVID_PUNTOS + '"></polygon><text x="50" y="37">COVID</text></svg></span>';
+  }
+  window.esCovid = esCovid;
+  window.marcaCovidHtml = marcaCovidHtml;
+  // Con el teclado la marca se abre con Enter o espacio y se cierra con Escape.
+  if(typeof document !== 'undefined' && document.addEventListener){ // este archivo también lo corre tools/ sin navegador
+    document.addEventListener('keydown', function(ev){
+      const m = ev.target && ev.target.closest ? ev.target.closest('.covid[tabindex]') : null;
+      if(!m) return;
+      if(ev.key === 'Enter' || ev.key === ' '){ ev.preventDefault(); m.click(); }
+      else if(ev.key === 'Escape' && window.INFO_TIP) window.INFO_TIP.cerrar();
+    });
+  }
+
   // "Presupuesto 2026/2027", "Balance 2024/2025" o "Ejercicio ..." (sin documento oficial). Con `clubId` y un ejercicio que cierra en
   // diciembre, solo el año ("Balance 2024"): el rango sería una fecha falsa. Regla del prefijo: Admin/PANTALLA.md, "Header de Estado
   // de resultados".

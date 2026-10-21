@@ -1,3 +1,21 @@
+# Sesión pantallas (Pantallas 6): marca COVID implementada
+
+## Qué cambió (para CHANGELOG)
+- Marca COVID (aprobada por Guido, versión sobria): un recuadro con borde de estallido, azul del sitio con COVID en blanco, en los ejercicios con cierre entre 2020-03-31 y 2021-12-31 (se deriva de
+  `cierreEjercicio()`, sin campo). Va en el card de cada ejercicio, la cabecera de la tabla multi-año y el número «Ingresos» de arriba. `role="img"` + `aria-label`, globo con `js/info-tip.js`
+  (tocarla en un card no elige el año), Tab/Enter/Escape; claves `covid.aria` y `covid.tip` en `en.js`. `js/finanzas-calc.js` (`esCovid`, `marcaCovidHtml`; el `keydown` se guarda con `typeof document`
+  porque `tools/generate-club-pages.js` carga ese archivo sin navegador), `js/finanzas-anios.js`, `js/finanzas-multi.js`, `css/styles.css`, regla en `Admin/PANTALLA.md`. Verificado servido con Juventus (cards
+  19/20 y 20/21, 2 cabeceras, KPI), a 375 px (sin desborde, la marca no se corta) y en inglés. ASSET_V 1657; regeneradas `fuentes/`, `club/` y `liga/`. `node tools/audit.js`: 0 P0, 0 P1.
+- NO probado: `file://` en un navegador, ni el modo oscuro del sitio real (el sitio no tiene modo oscuro: el del mockup era solo del mockup).
+
+## Qué queda (para TODO)
+- Comparar, Ligas y el selector de ejercicio no llevan la marca todavía.
+
+## Qué deja de ser cierto en ESTADO
+- «Finanzas multi-año»: los ejercicios con cierre en la ventana de la pandemia llevan la marca COVID (card, cabecera de tabla y número de ingresos).
+
+---
+
 # Sesión pantallas (Pantallas 6): mockup de la marca COVID (sin código)
 
 ## Qué cambió (para CHANGELOG)
