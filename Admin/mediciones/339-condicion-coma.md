@@ -1,0 +1,11 @@
+# To-do 339 (c): condición nueva, la coma decimal que el OCR se come (para la Auditora, skill §7)
+
+**Qué agrega:** un aviso (no un frenazo) que lee las transcripciones `Clubes/**/*.md` y marca una fila de tres cifras `A  B  C` de una tabla con un decimal (£m, M…) donde C es la diferencia de A y B **solo si** una de las dos primeras, escrita sin coma, se divide por 10. Se muestra en `audit.js` (P2, `coma-comida`) y en la validación de la etapa 2; no corta ninguna carga. Un entero sin coma que ya cierra tal cual no se marca.
+
+1. **Caso real.** Bath Rugby 2023-24, `bath-rugby-full-accounts-2023-24.md` L162: «Central income 5.3 74 (2.1)» (es 7.4: 5.3 − 7.4 = −2.1; con 74 la columna 2023 no suma el Turnover 19.7). Bath 2024-25, L207: «Central income 44 5.3 (0.9)» (es 4.4). La nota de Proyecto (`Admin/sesiones/proyecto.md`) ya lo había visto leyendo; ningún chequeo lo mira.
+2. **¿Frena una carga buena?** No frena nada (aviso). Medido sobre los 3.677 `.md` de `Clubes/` con `Admin/…/scratchpad/medir-coma.mjs` (la regla): 415 filas de tres cifras con un decimal; en 104 la tercera es la diferencia; **4 marcadas, 0 falsas** a ojo: las 2 de Bath y 2 de Everton (`everton-group-accounts-2023-24.md` L341 «Profit on player trading 48.5 475 1.0» = 47.5; `…2024-25.md` L157 «Other commercial 22.9 170 5.9» = 17.0).
+3. **¿Deja pasar una carga mala?** Sí, lo que no tenga tres cifras con la diferencia (una tabla de una columna, una cifra suelta en prosa). Hoy no hay nada que lo mire: lo atrapa solo el tie-out contra el total impreso (Turnover) cuando la cifra se carga. La condición agrega una red; no reemplaza el tie-out.
+4. **¿Qué cambia para lo ya cargado?** Nada (no escribe). Lo que sí aparece: 2 filas de Everton para revisar; no verifiqué si esas cifras entran en lo cargado (las líneas de Everton salen del estado de resultados, no de esas tablas del informe).
+5. **¿Se puede apagar sin tocar datos?** Sí: `tools/audit-ignore.json` (mecanismo que ya existe) por documento y línea; la transcripción se corrige en el `.md` o se deja con su ajuste.
+
+**Fuera de esta condición, para otro escalón:** sumar las columnas contra la fila de total (en Bath: 5.3+7.0+8.1+0.4 = 20.8, 7.4+5.2+6.9+0.2 = 19.7), que es más general pero necesita detectar cuál fila es el total.
