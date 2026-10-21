@@ -172,3 +172,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: tres alineaciones al deporte (Jev --desde-sesion, caja-deuda --partir, audit.js), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Tres líneas más en `Admin/registros/auditoria-proceso.jsonl`: los tres cambios de Pipeline 11 en el working tree de `onboarding` (freno 4 de Jev, `caja-deuda --personal --partir`, `sin-salarios` y `sueldos-escondidos` de `audit.js`), APROBADOS.
+
+### Qué queda
+
+- `audit.js` trata un club sin `sport` como fútbol: sumar un hallazgo `club-sin-deporte` junto con el null de `deporteODefecto()`.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
