@@ -23,6 +23,7 @@
 //   no-importar-tools       (deny) `node -e` con import()/require() de un archivo de tools/ (salvo data-clubes.js y rutas.mjs): lo ejecuta (C-5).
 //   merge-en-worktree       (deny) `git merge` / `git pull` dentro de un worktree (menos `merge-tree`, `merge-base` y `--abort`): lo hace la principal (C-4).
 //   plan-en-worktree        (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
+//   subagente-con-regla     (deny) un Agent cuyo prompt no diga que Bash va «sin variables» (C-2).
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
 import { execFileSync } from 'node:child_process';
@@ -154,9 +155,19 @@ function planEnWorktree() {
   }
 }
 
+// Todo prompt de subagente lleva la regla de comandos: sin ella cada Bash del subagente le pide permiso a Guido (to-do 327, C-2).
+function subagenteConReglaDeComandos() {
+  if (herramienta !== 'Agent' && herramienta !== 'Task') return;
+  const prompt = String(params.prompt || '');
+  if (/\bBash\b/i.test(prompt) && /sin variables/i.test(prompt)) return;
+  decidir('deny', 'Al prompt del subagente le falta la regla de comandos. Pegá esta instrucción: "Leé con Read y escribí con Write. Bash solo para comandos simples '
+    + 'con la ruta completa entre comillas, sin variables, sin cd, sin ; ni &&." Sin ella, cada comando del subagente le pide permiso a Guido.');
+}
+
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
 if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); mergeEnWorktree(cmd); }
 planEnWorktree();
+subagenteConReglaDeComandos();
 skillsConOk(cmd);
 pushConOk(cmd);
 docsDeLaPrincipal(cmd);
