@@ -36,6 +36,16 @@ export function archivosDeOtra(pdfOtra) {
   return { md, verificacion: resolve(ROOT, derivado(md, '.verificacion.json', { crear: false })), categorias: resolve(ROOT, derivado(md, '.categorias.json', { crear: false })), ubicacion: resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false })) };
 }
 
+// (to-do 334) El nombre corto de cada entidad sale de los nombres de los dos PDFs del ajuste: se sacan el año y los tramos que comparten
+// («aarsregnskap-valerenga-fotball-as-2022» y «...-elite-2022» dan «AS» y «Elite»). Hasta 3 letras va en mayúsculas; el resto, capitalizado.
+export function nombresCortos(pdfPropio, pdfOtra) {
+  const toks = (p) => p.split('/').pop().replace(/\.pdf$/i, '').replace(/-?(19|20)\d\d(-\d+)?$/, '').split('-');
+  const a = toks(pdfPropio); const b = toks(pdfOtra);
+  let i = 0; while (i < a.length - 1 && i < b.length - 1 && a[i] === b[i]) i++;
+  const fmt = (t) => t.slice(i).map((x) => (x.length <= 3 ? x.toUpperCase() : x[0].toUpperCase() + x.slice(1))).join(' ');
+  return { propio: fmt(a), otra: fmt(b) };
+}
+
 export function combinar(pdf, V1, aj) {
   const err = (m) => ({ error: `suma de dos entidades (ajuste suma-con): ${m}` });
   if (!aj.valor || !aj.etiqueta || !aj.etiquetaOtra) return err('el ajuste necesita el PDF de la otra entidad (valor), el renglón de gasto propio (etiqueta) y el ingreso espejo del otro documento (etiqueta-otra)');
@@ -56,12 +66,14 @@ export function combinar(pdf, V1, aj) {
   const T = Math.abs(espejo[0].M);
   if (Math.abs(propio[0].M) + 1e-9 < T) return err(`el renglón propio «${aj.etiqueta}» (${r6(propio[0].M)}) es menor que la transferencia (${r6(T)}): no se resta`);
   const sinEspejo = V2.lineas.filter((l) => l !== espejo[0]);
-  const lineas1 = V1.lineas.map((l) => (l === propio[0] ? { ...l, M: r6(Math.sign(l.M) * (Math.abs(l.M) - T)), origen: `${l.origen}; menos la transferencia al otro documento (${r6(T)}, ajuste suma-con)` } : l)).filter((l) => l.M !== 0);
+  const nom = nombresCortos(pdf, aj.valor);
+  const pref = (l, n) => ({ ...l, etiqueta: `${n} · ${l.etiqueta}` });
+  const lineas1 = V1.lineas.map((l) => (l === propio[0] ? { ...l, M: r6(Math.sign(l.M) * (Math.abs(l.M) - T)), origen: `${l.origen}; menos la transferencia al otro documento (${r6(T)}, ajuste suma-con)` } : l)).filter((l) => l.M !== 0).map((l) => pref(l, nom.propio));
   const marca = (l, doc) => ({ ...l, origen: `${l.origen} [${doc}]` });
   const V = {
     ...V1,
-    lineas: [...lineas1, ...sinEspejo.map((l) => marca(l, 'otra entidad'))],
-    financiero: [...V1.financiero, ...V2.financiero.map((l) => marca({ ...l, origen: l.origen || 'financiero' }, 'otra entidad'))],
+    lineas: [...lineas1, ...sinEspejo.map((l) => pref(marca(l, 'otra entidad'), nom.otra))],
+    financiero: [...V1.financiero.map((l) => pref(l, nom.propio)), ...V2.financiero.map((l) => pref(marca({ ...l, origen: l.origen || 'financiero' }, 'otra entidad'), nom.otra))], // el impuesto no lleva prefijo: así está publicado
     impuesto: [...V1.impuesto, ...V2.impuesto.map((l) => marca({ ...l, origen: l.origen || 'impuesto' }, 'otra entidad'))],
     totales: {
       ...V1.totales,
