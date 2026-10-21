@@ -32,7 +32,7 @@ el número de la izquierda es el orden de trabajo.
 
 **C. Técnico**
 1. 327 (Pipeline 10): los 6 frenos automáticos en el hook (ok de Guido); los 4 chequeos de audit.js ya están
-2. 248 (Datos 4, Opus): plan listo y decidido (`Admin/mediciones/248-plan.md`); ahora la migración a club-v2 y la etapa de pantalla; Bath Rugby espera la votación (CVC y fair value) y tu ok a cómo se ve
+2. 248 (Datos 4, Opus): plan listo y decidido (`Admin/mediciones/248-plan.md`); ahora la migración a club-v2 y la etapa de pantalla; Bath Rugby espera la votación de Auditora 3 (CVC y fair value); Guido aprobó que se vea y se compare
 3. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 4. 249: API en dominio propio (el último de C; no construirla todavía)
 
