@@ -50,6 +50,7 @@ import { DESCARTADOS, PARCIALES } from './etapa-doc.mjs';
 import { filasNBB, leerEstadoNBB } from './nbb.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { loadSite, parseNumber } = await import('./datos-sitio.mjs');
+const { deporteODefecto, cerosDeDeporte } = await import('./deporte-club.mjs'); // (to-do 339) la tabla de ceros del deporte del club
 process.argv = argvAntes;
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -190,7 +191,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // agrega nada y repartía distinto (Atalanta: TV 107,5 -> 101,8 M y dejaba de cerrar).
   const pC = resolve(ROOT, derivado(md, '.carga.json', { crear: false }));
   // Solo del LADO de la categoría en 0 (TV -> ingresos): en Udinese 2021-22 abría también personal y amortizaciones, 1 a 1 con otro nombre.
-  const LADO_CERO = { 'Televisión': 'ingreso', 'Estadio': 'ingreso', 'Salarios del plantel': 'gasto' }; // propuestas anteriores, sin `lado`
+  const LADO_CERO = Object.fromEntries((cerosDeDeporte(deporteODefecto(clubDeRuta(pdf).clubId)) || []).filter((x) => x.lado).map((x) => [x.nombre, x.lado])); // propuestas anteriores, sin `lado` (to-do 339: la tabla del deporte del club)
   const ladosCero = (() => { try { return new Set(existsSync(pC) ? (JSON.parse(readFileSync(pC, 'utf8')).reintentar || []).filter((x) => x.categoria).map((x) => x.lado || LADO_CERO[x.categoria]).filter(Boolean) : []); } catch { return new Set(); } })();
   // La señal se queda prendida: cuando el escalón abrió la nota del subtotal, la propuesta siguiente ya no marca la categoría en 0 y, sin
   // esto, la corrida siguiente lo apagaba y la TV volvía a 0 (oscilaba; medido en Bologna 2019-20). La verificación anterior lo anota.

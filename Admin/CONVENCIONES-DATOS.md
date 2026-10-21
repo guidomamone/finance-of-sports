@@ -390,7 +390,7 @@ byte no hace falta: el inventario los marca `duplicado`.
 Los ingresos de la tienda del club (Rosario Central, Talleres) van a `sponsorship_commercial`, que ya incluye el merchandising. No se crean
 `merchandise_sales` ni `cost_of_goods_sold`. El costo de la mercadería vendida queda donde está cargado.
 
-CATEGORÍA (prompt): los ingresos de la tienda del club (merchandising, «tienda», «ventas tiendas», «store») van a sponsorship_commercial; no existen merchandise_sales ni cost_of_goods_sold, y el costo de la mercadería queda donde está cargado.
+CATEGORÍA (prompt): los ingresos de la tienda del club (merchandising, «tienda», «ventas tiendas», «store») van a sponsorship_commercial; no hay categoría propia de merchandising ni de costo de la mercadería, y ese costo queda donde está cargado.
 EJEMPLO-CATEGORÍA: rosariocentral-ar | revenue | Ingresos por ventas tiendas | sponsorship_commercial
 EJEMPLO-CATEGORÍA: talleres-ar | revenue | Ingresos por tienda netos de costo de venta | sponsorship_commercial
 
@@ -564,7 +564,7 @@ fila aparte que imprime el documento («CVC income», Strategic Report 2021-22 y
 de 2019. Medido: £3,3 M (28 % de los ingresos de 2021, 17 % de 2022) y £2,4 M en 2023; el porcentaje alto se silencia en `tools/audit-ignore.json` con el motivo.
 Bath no lo trata como venta: no sale de la regla de la venta a un fondo (misma dirección, hecho distinto).
 
-CATEGORÍA (prompt): el anticipo de un fondo de inversión (CVC) sobre derechos comerciales de la liga, reconocido en cuotas por el club, va a other_income como fila aparte; no a media_rights ni a central_income.
+CATEGORÍA (prompt): el anticipo de un fondo de inversión (CVC) sobre derechos comerciales de la liga, reconocido en cuotas por el club, va a other_income como fila aparte; no al reparto central de la liga.
 
 ## REGLA: una revaluación no realizada de una inversión impresa fuera de los ingresos va a `other_income`, no a `assetSales` (votación 2 a 1, 2026-10-20, Bath Rugby 2021)
 

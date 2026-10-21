@@ -251,8 +251,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (A.includes('--corregir-categoria')) {
     const i = A.indexOf('--corregir-categoria'); const [pdf, etiqueta, categoria] = A.slice(i + 1, i + 4);
     if (!pdf || !etiqueta || !categoria) { console.error('Uso: node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta tal cual>" <categoría> [--nota "..."]'); process.exit(1); }
-    const mapa = readFileSync(resolve(ROOT, 'data', 'category-map.js'), 'utf8');
-    if (!new RegExp(`^\\s*${categoria}: '`, 'm').test(mapa)) { console.error(`"${categoria}" no es una categoría de data/category-map.js`); process.exit(1); }
+    // (to-do 339) la categoría tiene que ser de la taxonomía del deporte del club del documento (data/category-map.js, SPORT_TAXONOMIES)
+    const { clubDeRuta } = await import('./carpetas-clubes.mjs'); const { categoriasDeDeporte, deporteODefecto } = await import('./deporte-club.mjs');
+    const deporteDoc = deporteODefecto(clubDeRuta(pdf).clubId);
+    if (!categoriasDeDeporte(deporteDoc)?.todas.has(categoria)) { console.error(`"${categoria}" no es una categoría de ${deporteDoc} (SPORT_TAXONOMIES de data/category-map.js)`); process.exit(1); }
     const { normalizar } = await import('./vocabulario.mjs');
     const id = agregarCaso({ pdf, md: pdf.replace(/\.pdf$/i, '.md'), etapa: 'cargar', motivo: 'categoria', detalle: normalizar(etiqueta), categoriaPropuesta: categoria, que: `Corrección de Guido: "${etiqueta}" va como ${categoria}.` });
     // 'corregir' con la categoría, no 'aceptar' (Versión 408): agregarCaso devuelve el caso YA ABIERTO de esa fila si existe, con SU
