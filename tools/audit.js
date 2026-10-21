@@ -494,7 +494,13 @@ function checkMoneda(api) {
     for (const x of list) {
       const ratio = x.usd / mediana;
       if (ratio > 25 || ratio < 1 / 25) {
-        add('P2', 'outlier-liga', `${ref(x.clubId, x.year)}: ${x.usd.toFixed(1)} M USD contra una mediana de ${mediana.toFixed(1)} M USD en ${pais} (${ratio > 1 ? ratio.toFixed(0) + '×' : '1/' + (1 / ratio).toFixed(0)}) — revisar que no sea escala`);
+        // Un error de escala salta contra los otros años del club; un club realmente chico o grande de su liga, no. Mismo criterio que
+        // `escala-implausible` (arriba): otro ejercicio del club a 2 años o menos, dentro de la banda y a menos de 20 veces -> no se marca.
+        // Sin ese año vecino queda como aviso P3, no P2 (Auditora 5): la mediana de una liga con pocos clubes cargados no alcanza para
+        // afirmar un error. Un error de escala de verdad ya lo frena `escala-implausible` (P0) o la compuerta de carga.
+        const hayVecino = (serie[x.clubId] || []).some((o) => o.year !== x.year && Math.abs(Number(o.year) - Number(x.year)) <= 2 && o.usd >= 0.2 && o.usd <= 2000 && Math.max(o.usd, x.usd) / Math.min(o.usd, x.usd) < 20);
+        if (hayVecino) continue;
+        add('P3', 'outlier-liga', `${ref(x.clubId, x.year)}: ${x.usd.toFixed(1)} M USD contra una mediana de ${mediana.toFixed(1)} M USD en ${pais} (${ratio > 1 ? ratio.toFixed(0) + '×' : '1/' + (1 / ratio).toFixed(0)}) — revisar que no sea escala`);
       }
     }
   }
