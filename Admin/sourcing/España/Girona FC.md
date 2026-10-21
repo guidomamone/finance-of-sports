@@ -48,3 +48,5 @@ Se bajaron 5 ejercicios nuevos del CMS de transparencia (`statics-maker.llt-serv
 PDFs guardados en `Clubes/España/Girona FC/` (no se transcribieron ni se cargaron al sitio). Último chequeo: 2026-10-03.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2022 desde `Clubes/España/Girona FC/cuentas-anuales-2021-2022.pdf` (sourceId `girona-es-cuentas-anuales-2021-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2023 desde `Clubes/España/Girona FC/cuentas-anuales-2022-2023.pdf` (sourceId `girona-es-cuentas-anuales-2022-2023`).

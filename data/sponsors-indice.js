@@ -2694,6 +2694,7 @@ window.SPONSORS_INDICE = [
   ["weefe","Weefe",["m"]],
   ["wefox","wefox",["c"]],
   ["westenergy","Westenergy",["c"]],
+  ["whalefin","WhaleFin",["c"]],
   ["wham","Wham",["c"]],
   ["wham-housewares","Wham Housewares",["c"]],
   ["whitby-morrison","Whitby Morrison",["c"]],
