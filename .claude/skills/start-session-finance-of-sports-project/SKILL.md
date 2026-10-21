@@ -105,21 +105,22 @@ Con cualquier cambio real, sin que Guido lo pida: lo que dice `CLAUDE.md`, «Ant
 
 **SI TOCASTE DATOS DE UN CLUB, HAY ARCHIVOS GENERADOS QUE REGENERAR** (`node tools/audit.js` lo
 chequea como P1). `cargar.mjs --escribir`, `alta-club.mjs` y `lote.mjs --cargar` ya los corren solos
-(`generate-club-index`, `generate-fuentes-page`, `generate-rankings`, `generate-como-corre-stats`), y
+(`generate-club-index`, `generate-fuentes-page`, `generate-rankings`, `generate-como-corre-stats`, `generate-club-pages`), y
 `cargar.mjs` sube `ASSET_V`: ahí no los repitas. Si cargaste o corregiste a mano:
 
 ```
 node tools/generate-club-index.js      # la sección "QUÉ ES REAL POR CLUB" de Admin/ESTADO-clubes.md
 node tools/generate-fuentes-page.js    # fuentes.html, las páginas de club y sitemap.xml
 node tools/generate-rankings.js        # data/rankings/<liga>.js, lo que muestran Inicio y Ligas
+node tools/generate-club-pages.js      # club/, liga/, og/ y sitemap.xml
 ```
 
 **La fuente de un club es su JSON** (`data/<país>/<club>.json`): a mano, se edita ese archivo y se corre `node tools/generar-data.mjs`
 (el `-data.js` se genera, no se toca); las tools de carga ya lo hacen solas. `audit.js` lo vigila (`json-js-desfasado`, `json-no-valida`, P1).
 
 Y **si subiste `ASSET_V`** —aunque no hayas tocado un solo dato— hay que correr
-`generate-fuentes-page.js` igual: ese generador LEE `ASSET_V` de `index.html` y lo escribe en todas las
-páginas de club, así que sin eso el visitante recibe el JS nuevo en el sitio y el viejo de su caché en la
+`generate-fuentes-page.js` y `generate-club-pages.js` igual: los dos LEEN `ASSET_V` de `index.html` y lo escriben en las
+páginas de fuentes y en `club/` y `liga/`, así que sin eso el visitante recibe el JS nuevo en el sitio y el viejo de su caché en la
 página de fuentes.
 
 ---
