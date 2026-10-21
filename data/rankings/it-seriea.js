@@ -162,6 +162,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2022: {
     leagueSize: 20,
+    sinDato: ["atalanta-it"],
     wiki: {"t":"2021–22 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"juventus-it", revenue:457.102, reportType:"official_balance_sheet",
@@ -188,9 +189,6 @@ window.RANKINGS["it-seriea"] = {
       { id:"sassuolo-it", revenue:148.243, reportType:"official_balance_sheet",
         sourceId:"sassuolo-it-bilancio-2022",
         mix:[["Comercial / Sponsors",32.885],["Estadio",3.97],["Televisión",42.673],["Venta de Jugadores",57.681],["Otros ingresos",11.035]] },
-      { id:"atalanta-it", revenue:124.971, reportType:"official_balance_sheet",
-        sourceId:"atalanta-it-bilancio-consolidato-2022",
-        mix:[["Comercial / Sponsors",12.602],["Estadio",6.363],["Televisión",39.071],["Venta de Jugadores",52.711],["Otros ingresos",14.224]] },
       { id:"torino-it", revenue:120.253, reportType:"official_balance_sheet",
         sourceId:"torino-it-bilancio-2022",
         mix:[["Comercial / Sponsors",13.439],["Estadio",4.775],["Televisión",56.154],["Venta de Jugadores",41.786],["Otras secciones deportivas",0.002],["Otros ingresos",4.096]] },

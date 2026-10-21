@@ -340,8 +340,8 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 ### Ingresos
 
 ```text
-2022: cargado por tools/cargar.mjs (2026-10-10) desde Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-Generados/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+2022: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
@@ -360,10 +360,6 @@ Generados/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.categorias.json (es
 | 12 | i) ricavi e proventi diversi | pág. 8, precedente |
 
 ### Gastos
-
-```text
-tools/cargar.mjs (2026-10-10)
-```
 
 | Fila | Rubro | Nota |
 |---|---|---|
@@ -424,15 +420,15 @@ tools/cargar.mjs (2026-10-10)
 ### Meta
 
 ```text
-tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-```
-
-```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Disponibilità liquide" pág. 56
 ```
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 1.370.123 + 20.034.344 = 21.404.467. Solo banche (nota 21.404.468 en tabla de variaciones, redondeo; balance 21.404.467).
+```
+
+```text
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ### Liga

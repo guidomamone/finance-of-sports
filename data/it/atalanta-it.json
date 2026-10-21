@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "atalanta-it",
@@ -67,7 +67,8 @@
       "club_id": "atalanta-it",
       "title": "Atalanta Bergamasca Calcio S.p.A. — Atalanta-bilancio-consolidato-2022 (ejercicio 2022)",
       "type": "official_balance_sheet",
-      "reliability": "primary"
+      "reliability": "primary",
+      "public_note": "Ejercicio de transición de 6 meses por cambio de la fecha de cierre: del 01/01/2022 al 30/06/2022. No es comparable con un año de 12 meses."
     }
   ],
   "members": null,
@@ -1183,6 +1184,7 @@
     {
       "fiscal_year": 2022,
       "period_end": "2022-06-30",
+      "period_months": 6,
       "currency": "EUR",
       "source_id": "atalanta-it-bilancio-consolidato-2022",
       "report_type": "official_balance_sheet",
