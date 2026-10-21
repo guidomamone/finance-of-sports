@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 898 — Condiciones del 339 aprobadas; skill de mapeo con el esquema 2.0 (2026-10-20) [339 · 248]
+
+- Auditora 4 aprueba, cada una con un cambio, las 4 condiciones nuevas del 339: filtro de ejemplos de Jev por deporte, reglas de categoría con deporte, una tabla de ceros por deporte y deporte sin declarar resuelto por ficha y liga antes de preguntar. Veredictos en `Admin/registros/auditoria-proceso.jsonl`.
+- Skill `club-data-mapping`: el JSON lleva `category` genérica y `subcategory` (ok de Guido).
+
 ## Versión 897 — Esquema 2.0: categoría genérica y subcategoría del deporte (2026-10-20) [248]
 
 - Cada línea de los 319 JSON lleva `category` genérica (derivada de `data/category-map.js`, igual para cualquier deporte) y `subcategory` (la de hoy), más `club.sport` y `club.taxonomy`. Migrados con `tools/migrar-v2.mjs` sin cambiar un importe: los `-data.js` quedan idénticos, la huella de 38.883 renglones también, la cascada da igual en los 1.296 ejercicios y `auditAll()` sigue en 0 que no cierran. `club-v2.json` y `taxonomy-football-1.json`; `club-v1.json` congelado. 3 chequeos nuevos en `audit.js`. ASSET_V 1542.
