@@ -81,3 +81,9 @@ transcriptos se cargaron a `data/de/stuttgart-de-data.js`.
 - **Qué bajar cuando aparezca:** el Konzernabschluss del ejercicio 01/01/2025-31/12/2025, completo. Se guarda como
   `Clubes/Alemania/VfB Stuttgart/konzernabschluss-2025.pdf` y pasa a onboarding.
 - Último chequeo: 2026-10-18.
+
+## Chequeo 2026-10-21: todavía no está publicado
+
+- North Data (replica las publicaciones del Unternehmensregister) lista los depósitos de la VfB Stuttgart 1893 AG hasta el ejercicio 2024 y **ninguno con cierre 31/12/2025**. `unternehmensregister.de` responde (200) pero su búsqueda es un formulario con sesión y no se abrió; `bundesanzeiger.de` redirige (302).
+- Se espera hacia enero de 2027 (plazo legal 31/12/2026). Reintentar entonces.
+- Último chequeo: 2026-10-21.

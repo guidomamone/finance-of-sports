@@ -49,6 +49,13 @@
   ouvidoria@ferroviariasaf.com.
 - Último chequeo: 2026-09-22.
 
+## Chequeo 2026-10-21: el 2011 no existe en el repositorio de la FPF
+
+- `ListaFinanca.ashx?periodoSelecionado=2011` devuelve 26 clubes y ninguno es Ferroviária (`idClube` 4564). El listado de 2011 está además **desfasado** (el `idClube` de una fila no coincide con el nombre de los archivos que trae: Grêmio Barueri 4635 trae `3426B.pdf`, Sev-Hortolândia 4676 trae `3427A.pdf` y `4635A.JPG`…), así que se miró por NOMBRE DE ARCHIVO y no por la fila: no hay ningún `4564*` en 2011. Las rutas a mano (`/Repositorio/Institucional/2011/4564A.pdf`, `4564B.pdf`, `4564A.jpg`) dan 404.
+- En 2012 sí hay un archivo bajo 4564 (`4564A.pdf`, ya bajado como `balanco-2012.pdf`). El informe del auditor de ese PDF (escaneo, OCR) habla solo del 31/12/2012: no se vio un comparativo 2011; falta mirar las tablas al transcribir.
+- El 2011 de Ferroviária no se presentó a la federación. Quedan el club (`ouvidoria@ferroviariasaf.com`) o la prensa local; no hay otro canal documentado.
+- Último chequeo: 2026-10-21.
+
 Color de marca: #58141E — pt.wikipedia (Associação Ferroviária de Esportes: "suas cores são grená e branco"; plantilla de camiseta corpo1=58141E), escudo AFE grená, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-10): ejercicio 2023 desde `Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.pdf` (sourceId `ferroviaria-br-demonstracoes-financeiras-2023-fpf`).
