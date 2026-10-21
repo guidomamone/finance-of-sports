@@ -40,6 +40,6 @@ window.CLUB_GENERIC_DATA["agf-dk"] = {
   presupuestoOverlayByYear: agfDkPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"agf-aarsrapport-2020-21":{"id":"agf-aarsrapport-2020-21","clubId":"agf-dk","title":"AGF A/S — Årsrapport 2020/21 (1. juli 2020 - 30. juni 2021)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"agf-aarsrapport-2020-21":{"id":"agf-aarsrapport-2020-21","clubId":"agf-dk","title":"AGF A/S — Årsrapport 2020/21 (1. juli 2020 - 30. juni 2021)","type":"official_balance_sheet","reliability":"primary","url":"http://regnskaber.virk.dk/01993838/amNsb3VkczovLzAzL2IzLzA5Lzk4L2MwL2JhOTktNGE0My1iM2E3LWE1OWMyMzg4MmI5Yg.pdf"}});
 
 memberCountByClub["agf-dk"] = null;

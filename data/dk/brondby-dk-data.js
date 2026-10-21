@@ -81,6 +81,6 @@ window.CLUB_GENERIC_DATA["brondby-dk"] = {
   presupuestoOverlayByYear: brondbyDkPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"brondby-aarsrapport-2020":{"id":"brondby-aarsrapport-2020","clubId":"brondby-dk","title":"Brøndbyernes I.F. Fodbold A/S — Årsrapport 2020 (1. januar - 31. december 2020)","type":"official_balance_sheet","reliability":"primary"},"brondby-dk-aarsrapport-2021-12-31":{"id":"brondby-dk-aarsrapport-2021-12-31","clubId":"brondby-dk","title":"Brøndbyernes I.F. Fodbold A/S — aarsrapport-2021-12-31 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary","url":"http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAyLzZjLzlhLzgyL2ZiLzFiMzctNDRjNS04OGZjLTQxMjQwMTM5ZTgzNA.xhtml"}});
+Object.assign(sources, {"brondby-aarsrapport-2020":{"id":"brondby-aarsrapport-2020","clubId":"brondby-dk","title":"Brøndbyernes I.F. Fodbold A/S — Årsrapport 2020 (1. januar - 31. december 2020)","type":"official_balance_sheet","reliability":"primary","url":"http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAzL2RhL2VkLzdmLzQ3LzVhM2MtNGUyMC05M2YxLTRiZTRlMjQzM2FiNA.pdf"},"brondby-dk-aarsrapport-2021-12-31":{"id":"brondby-dk-aarsrapport-2021-12-31","clubId":"brondby-dk","title":"Brøndbyernes I.F. Fodbold A/S — aarsrapport-2021-12-31 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary","url":"http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAyLzZjLzlhLzgyL2ZiLzFiMzctNDRjNS04OGZjLTQxMjQwMTM5ZTgzNA.xhtml"}});
 
 memberCountByClub["brondby-dk"] = null;
