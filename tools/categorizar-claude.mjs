@@ -84,6 +84,7 @@
 
 import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
 import { SESION } from './sesion.mjs'; // gasto por sesión
+import { deporteODefecto, categoriasDeDeporte, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) lista de categorías, criterios y ejemplos del deporte del club
 import { afinidad } from './pais-club.mjs'; // (to-do 331) ejemplos del mismo país primero, a igual parecido
 import { reglasParaPrompt } from './reglas-categoria.mjs'; // (to-do 329) las reglas de categoría de CONVENCIONES-DATOS al prompt
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
@@ -133,6 +134,22 @@ export function loadCategories() {
 const CATS = loadCategories();
 export const sideOf = (cat) => (cat in CATS.revenue ? 'revenue' : cat in CATS.expense ? 'expense' : '?');
 const ALL_CATS = [...Object.keys(CATS.revenue), ...Object.keys(CATS.expense)];
+// (to-do 339) Las categorías de un deporte: las de su taxonomía (data/category-map.js, SPORT_TAXONOMIES), con etiqueta y descripción de CATS cuando la hay, en el
+// orden de CATS (para el fútbol, exactamente CATS). Un id de la taxonomía sin descripción en CATS va solo con su id. Sin taxonomía del deporte: null, nunca la del fútbol.
+const _catsDe = new Map();
+function catsDe(deporte) {
+  if (_catsDe.has(deporte)) return _catsDe.get(deporte);
+  const t = categoriasDeDeporte(deporte); let r = null;
+  if (t) {
+    r = { revenue: {}, expense: {} };
+    for (const side of ['revenue', 'expense']) {
+      for (const k of Object.keys(CATS[side])) if (t[side].has(k)) r[side][k] = CATS[side][k];
+      for (const k of t[side]) if (!(k in r[side])) r[side][k] = { label: k, desc: '' };
+    }
+    r.todas = [...Object.keys(r.revenue), ...Object.keys(r.expense)];
+  }
+  _catsDe.set(deporte, r); return r;
+}
 const NOT_A_LINE = 'no_es_rubro';
 
 // ---------------------------------------------------------------------------------------------------------
@@ -205,14 +222,15 @@ export function makeRetriever(lines) {
   for (const l of lines) { const k = `${l.club}|${l.side}|${norm(l.label)}`; const cur = uniq.get(k); if (!cur) uniq.set(k, { ...l, w: words(l.label) }); else if (cur.cat !== l.cat) cur.conflict = true; }
   const bank = [...uniq.values()].filter((x) => !x.conflict);
   return (q, k = K_EXAMPLES) => {
-    const qw = words(q.label); const scored = [];
+    const qw = words(q.label); const scored = []; const admite = categoriasDeDeporte(deporteODefecto(q.club))?.todas; // (to-do 339) solo ejemplos cuya categoría existe en la taxonomía del deporte del club (ingreso + gasto)
     for (const b of bank) {
+      if (admite && !admite.has(b.cat)) continue;
       if (b.club === q.club) continue; // el mismo club va aparte (contexto del club), con sus propias exclusiones
       if (q.side && b.side !== q.side) continue;
       const s = jaccard(qw, b.w); if (s > 0) scored.push([s, b]);
     }
-    // (to-do 331) a igual parecido de palabras: primero los del mismo país, después los del mismo idioma
-    scored.sort((a, b) => (b[0] - a[0] > 1e-12 || a[0] - b[0] > 1e-12) ? b[0] - a[0] : afinidad(q.club, b[1].club) - afinidad(q.club, a[1].club));
+    // (to-do 331, 339) a igual parecido de palabras: primero los del mismo deporte, después los del mismo país, después los del mismo idioma
+    scored.sort((a, b) => (b[0] - a[0] > 1e-12 || a[0] - b[0] > 1e-12) ? b[0] - a[0] : (afinidadDeporte(q.club, b[1].club) - afinidadDeporte(q.club, a[1].club)) || (afinidad(q.club, b[1].club) - afinidad(q.club, a[1].club)));
     const seen = new Set(); const out = [];
     for (const [, b] of scored) { const kk = `${norm(b.label)}|${b.cat}`; if (seen.has(kk)) continue; seen.add(kk); out.push(b); if (out.length >= k) break; }
     return out;
@@ -252,9 +270,18 @@ const CRITERIOS = `CRITERIOS DEL SITIO (resumen del skill club-data-mapping; si 
 // (to-do 329) Las reglas de categoría que salieron de una votación o de una decisión de Guido (líneas «CATEGORÍA (prompt):» de Admin/CONVENCIONES-DATOS.md). Mandan sobre los criterios de arriba.
 const REGLAS_DECIDIDAS = (() => { const r = reglasParaPrompt(); return r.length ? `\n\nREGLAS YA DECIDIDAS (votaciones y decisiones de Guido; mandan sobre los criterios de arriba):\n${r.join('\n')}` : ''; })();
 
-function systemPrompt() {
-  const fmt = (side, name) => Object.entries(CATS[side]).map(([k, v]) => `- ${k} [${name}] ${v.label}${v.desc ? ` — ${v.desc}` : ''}`).join('\n');
-  return `Categorizás rubros de estados financieros de clubes de fútbol para el sitio financeofsports.com. Cada rubro va a UNA categoría del sitio.
+// (to-do 339) Los criterios son del fútbol. Otro deporte recibe solo lo que no depende del deporte (la convención del club y qué no es una línea) hasta que
+// alguien escriba los suyos: sin criterios propios el prompt lo dice, no aplica los del fútbol.
+function criteriosDe(deporte) {
+  if (deporte === 'futbol') return CRITERIOS;
+  const l = CRITERIOS.split('\n');
+  return [l[0], l[1], l.at(-1), `- Los criterios de categoría de ${nombreDeporte(deporte)} todavía no están escritos: guiate por las categorías de arriba, por las REGLAS YA DECIDIDAS y por las líneas ya cargadas del club.`].join('\n');
+}
+
+function systemPrompt(deporte = 'futbol') {
+  const C = catsDe(deporte); if (!C) return null;
+  const fmt = (side, name) => Object.entries(C[side]).map(([k, v]) => `- ${k} [${name}] ${v.label}${v.desc ? ` — ${v.desc}` : ''}`).join('\n');
+  return `Categorizás rubros de estados financieros de clubes de ${nombreDeporte(deporte)} para el sitio financeofsports.com. Cada rubro va a UNA categoría del sitio.
 
 CATEGORÍAS DE INGRESOS:
 ${fmt('revenue', 'INGRESO')}
@@ -262,7 +289,7 @@ ${fmt('revenue', 'INGRESO')}
 CATEGORÍAS DE GASTOS:
 ${fmt('expense', 'GASTO')}
 
-${CRITERIOS}${REGLAS_DECIDIDAS}
+${criteriosDe(deporte)}${REGLAS_DECIDIDAS}
 
 CÓMO RESPONDER:
 - Una entrada por cada rubro PENDIENTE (los marcados con [#id]), con su id. No categorices las filas sin id: son contexto.
@@ -304,7 +331,7 @@ function userMessage({ club, year, rubros, conventions, examplesFor }) {
   return { text: out.join('\n'), ids };
 }
 
-const SCHEMA = {
+const schemaDe = (todas) => ({
   type: 'object',
   properties: {
     rubros: {
@@ -313,7 +340,7 @@ const SCHEMA = {
         type: 'object',
         properties: {
           id: { type: 'integer' },
-          categoria: { type: 'string', enum: [...ALL_CATS, NOT_A_LINE] },
+          categoria: { type: 'string', enum: [...todas, NOT_A_LINE] },
           confianza: { type: 'number' },
           motivo: { type: 'string' },
         },
@@ -324,7 +351,7 @@ const SCHEMA = {
   },
   required: ['rubros'],
   additionalProperties: false,
-};
+});
 
 export function readKey() {
   if (!existsSync(envPath)) throw new Error(`Falta ${envPath} con una línea ANTHROPIC_API_KEY=...`);
@@ -338,8 +365,8 @@ export function readKey() {
 //   (recomendado por la skill claude-api: si un clasificador de seguridad rechaza el pedido, lo reintenta otro modelo del
 //   lado del servidor; para rubros contables es improbable, pero no cuesta nada tenerlo).
 // - Haiku 4.5: sin effort ni thinking (no los acepta así); solo el formato JSON.
-async function callClaude({ apiKey, model, effort, system, user, maxTokens = 12000 }) {
-  const body = { model, max_tokens: maxTokens, system: [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }], messages: [{ role: 'user', content: user }], output_config: { format: { type: 'json_schema', schema: SCHEMA } } };
+async function callClaude({ apiKey, model, effort, system, user, schema, maxTokens = 12000 }) {
+  const body = { model, max_tokens: maxTokens, system: [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }], messages: [{ role: 'user', content: user }], output_config: { format: { type: 'json_schema', schema } } };
   const headers = { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' };
   if (model !== 'claude-haiku-4-5') { body.output_config.effort = effort; }
   if (model === 'claude-opus-5-5' || model === 'claude-sonnet-5-5') { body.fallbacks = 'default'; headers['anthropic-beta'] = 'server-side-fallback-2026-07-01'; }
@@ -397,11 +424,12 @@ export async function categorizarConClaude({ club, year = null, rubros, modelo =
   const conventions = contextoClub ? clubConventions(lines, club, { excludeYear: excludeYear ?? (year != null ? String(year) : null), excludeLabels: exclude, pendingLabels: pend.map((r) => r.glosa || r.label) }) : null;
   retriever ||= makeRetriever(lines);
   const examplesFor = ejemplos ? (r) => retriever({ label: r.glosa && r.glosa !== r.label ? `${r.label} ${r.glosa}` : r.label, club, side: r.lado }) : null;
-  const system = systemPrompt();
+  const deporte = deporteODefecto(club); const system = systemPrompt(deporte);
+  if (!system) return { resultados: [], error: `el deporte «${deporte}» no tiene taxonomía en data/category-map.js (SPORT_TAXONOMIES): no se categoriza`, costUsd: 0 };
   const { text, ids } = userMessage({ club, year, rubros: rs, conventions, examplesFor });
   if (dryRun) return { resultados: [], costUsd: 0, promptChars: system.length + text.length, userChars: text.length, systemChars: system.length, user: text };
   const t0 = Date.now();
-  const r = await callClaude({ apiKey: apiKey || readKey(), model: modelo, effort: esfuerzo, system, user: text });
+  const r = await callClaude({ apiKey: apiKey || readKey(), model: modelo, effort: esfuerzo, system, user: text, schema: schemaDe(catsDe(deporte).todas) });
   if (r.pendiente) return { resultados: [], pendiente: true, costUsd: 0, model: modelo };
   const costUsd = costOf(modelo, r.usage) * (r.batch ? FACTOR_BATCH : 1);
   if (!r.batch) appendFileSync(costLogPath, JSON.stringify({ ts: new Date().toISOString(), sesion: SESION, tarea: 'categorizar', club, year, model: r.model || modelo, promptTokenCount: (r.usage?.input_tokens || 0) + (r.usage?.cache_creation_input_tokens || 0) + (r.usage?.cache_read_input_tokens || 0), cacheReadTokens: r.usage?.cache_read_input_tokens || 0, candidatesTokenCount: r.usage?.output_tokens || 0, costUsd: Number(costUsd.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: r.stopReason || null, rubros: ids.length, error: r.error || undefined }) + '\n');
@@ -579,7 +607,7 @@ async function listos(opt) {
     const deSesion = (pend) => {
       const porLabel = new Map((sesion.respuestas || []).map((x) => [norm(x.label), x]));
       const faltan = []; const malas = []; const resultados = [];
-      pend.forEach((x, i) => { if (!x.pendiente) return; const s = porLabel.get(norm(x.label)); if (!s) faltan.push(x.label); else if (!(s.categoria in CATS.revenue) && !(s.categoria in CATS.expense) && s.categoria !== NOT_A_LINE) malas.push(`${x.label} -> ${s.categoria}`); else resultados.push({ idx: i, categoria: s.categoria, confianza: s.confianza ?? null, motivo: s.motivo || null }); });
+      pend.forEach((x, i) => { if (!x.pendiente) return; const s = porLabel.get(norm(x.label)); if (!s) faltan.push(x.label); else if (!(catsDe(deporteODefecto(rj.club))?.todas || []).includes(s.categoria) && s.categoria !== NOT_A_LINE) malas.push(`${x.label} -> ${s.categoria}`); else resultados.push({ idx: i, categoria: s.categoria, confianza: s.confianza ?? null, motivo: s.motivo || null }); });
       if (faltan.length || malas.length) return { error: `NO SE ESCRIBE: ${faltan.length ? `faltan ${faltan.length} rubro(s) (${faltan.slice(0, 5).join(' | ')})` : ''}${malas.length ? ` · categoría inexistente: ${malas.slice(0, 5).join(' | ')}` : ''}`, sinEscribir: true };
       return { resultados, costUsd: 0 };
     };

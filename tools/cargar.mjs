@@ -129,6 +129,7 @@ const { padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca } = await im
 // generales" y no "admin_general_expense".
 const NOMBRE_CAT = (() => { try { const t = readFileSync(resolve(import.meta.dirname, '..', 'data', 'category-map.js'), 'utf8'); const o = {}; for (const b of t.match(/_CATEGORY_LABELS = \{[\s\S]*?\n\};/g) || []) for (const m of b.matchAll(/^\s*(\w+): '([^']+)'/gm)) o[m[1]] = m[2]; return o; } catch { return {}; } })();
 const { periodoDe } = await import('./periodo.mjs');
+const { categoriasDeDeporte } = await import('./deporte-club.mjs'); // (to-do 339) las categorías de un deporte
 const { normalizar, claveFamilia, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } = await import('./vocabulario.mjs');
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -173,14 +174,7 @@ export function cargarSitio(root = ROOT) {
   for (const f of files) vm.runInContext(readFileSync(resolve(root, f), 'utf8'), ctx, { filename: f });
   return vm.runInContext('({ clubs, sources, CURRENCY_META, FX_CLOSE, FX_PLAUSIBLE_RANGE, COUNTRIES, LEAGUES, CLUB_LEAGUE_BY_YEAR: window.CLUB_LEAGUE_BY_YEAR, generic: window.CLUB_GENERIC_DATA || {}, gestiones: window.CLUB_GESTIONES || {} })', ctx);
 }
-function categoriasDelSitio() {
-  const src = readFileSync(resolve(ROOT, 'data', 'category-map.js'), 'utf8');
-  const block = (name) => { const a = src.indexOf(`const ${name} = [`); return src.slice(a, src.indexOf('];', a)); };
-  const ids = (b) => [...b.matchAll(/^\s*'([a-z_]+)',?/gm)].map((m) => m[1]);
-  return { revenue: new Set(ids(block('REVENUE_CATEGORIES'))), expense: new Set(ids(block('EXPENSE_CATEGORIES'))) };
-}
-const CATS = categoriasDelSitio();
-const ladoDeCat = (c) => (CATS.revenue.has(c) ? 'revenue' : CATS.expense.has(c) ? 'expense' : null);
+// (to-do 339) el lado de una categoría sale de la taxonomía del deporte del club (ladoDeCat, dentro de proponer), no de una lista global de fútbol
 
 function leerRegistro(root = ROOT) {
   const p = resolve(root, 'Admin', 'registros', 'transcripciones-estado.jsonl');
@@ -400,6 +394,10 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const clubId = cr.clubId || provisional.id; P.clubId = clubId;
   const club = provisional ? provisional.club : sitio.clubs[clubId]; const cd = provisional ? provisional.cd : sitio.generic[clubId];
   if (!club || !cd) { return corta('club', `${clubId} no tiene ${rutaData(clubId)} registrado en CLUB_GENERIC_DATA`); }
+  // (to-do 339) las categorías válidas son las del deporte del club (SPORT_TAXONOMIES de data/category-map.js); sin deporte o sin taxonomía no se categoriza
+  const TX = club.sport ? categoriasDeDeporte(club.sport) : null;
+  if (!TX) { return corta('deporte', club.sport ? `el deporte «${club.sport}» de ${clubId} no tiene taxonomía en data/category-map.js (SPORT_TAXONOMIES)` : `${clubId} no declara deporte (sport en data/clubs.js)`); }
+  const ladoDeCat = (c) => (TX.revenue.has(c) ? 'revenue' : TX.expense.has(c) ? 'expense' : null);
   const alta = analizar(pdf, sitio);
   if (alta.error) { return corta('alta', alta.error); }
   const campo = (n) => alta.ejercicio.campos.find((c) => c.campo === n) || {};
