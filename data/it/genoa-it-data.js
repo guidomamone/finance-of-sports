@@ -31,6 +31,19 @@ const genoaItRevenueLinesByYear = {
     {"rawLabel":"Altri proventi da gestione calciatori","normalizedCategory":"player_sales","amountNative":9.016878,"disclosureLevel":"aggregated"},
     {"rawLabel":"Altri ricavi e proventi","normalizedCategory":"other_income","amountNative":60.269055,"disclosureLevel":"aggregated"},
   ],
+  2024: [
+    {"rawLabel":"Gare campionato","normalizedCategory":"matchday_competition","amountNative":0.717269,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Abbonamenti","normalizedCategory":"season_tickets","amountNative":2.447476,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributi in conto esercizio","normalizedCategory":"other_income","amountNative":3.434014,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Proventi da sponsorizzazioni","normalizedCategory":"sponsorship_commercial","amountNative":0.822569,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Proventi pubblicitari","normalizedCategory":"sponsorship_commercial","amountNative":1.55,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Proventi commerciali e royalties","normalizedCategory":"sponsorship_commercial","amountNative":0.05232,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Proventi da cessione diritti televisivi","normalizedCategory":"broadcasting","amountNative":23.399846,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ricavi da cessione temporanea prestazioni calciatori (prestiti)","normalizedCategory":"player_sales","amountNative":1.7524,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori","normalizedCategory":"player_sales","amountNative":21.927844,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Altri proventi da gestione calciatori","normalizedCategory":"player_sales","amountNative":27.193739,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Altri ricavi e proventi","normalizedCategory":"other_income","amountNative":1.776137,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Gare campionato","normalizedCategory":"matchday_competition","amountNative":1.397559,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gare coppa italia","normalizedCategory":"matchday_competition","amountNative":0.686154,"disclosureLevel":"aggregated"},
@@ -112,6 +125,36 @@ const genoaItExpenseLinesByYear = {
     {"rawLabel":"Oneri tributari indiretti","normalizedCategory":"admin_general_expense","amountNative":-1.968882,"disclosureLevel":"aggregated"},
     {"rawLabel":"Altri (Sopravvenienze Passive)","normalizedCategory":"exceptional_items","amountNative":-6.358874,"disclosureLevel":"aggregated"},
   ],
+  2024: [
+    {"rawLabel":"6) per materie prime, sussidiarie, di consumo e di merci","normalizedCategory":"other_expenses","amountNative":-0.045806,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Costi per tesserati","normalizedCategory":"wages_squad","amountNative":-0.014446,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Costi per attività sportiva","normalizedCategory":"match_organisation_expense","amountNative":-0.480205,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Costi specifici tecnici","normalizedCategory":"match_organisation_expense","amountNative":-2.322496,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Costi vitto, alloggio, locomozione gare","normalizedCategory":"match_organisation_expense","amountNative":-1.313766,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Servizio biglietteria, controllo ingressi","normalizedCategory":"match_organisation_expense","amountNative":-0.047443,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Assicurative e previdenziali","normalizedCategory":"admin_general_expense","amountNative":-1.159835,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Amministrative, pubblicitarie e generali","normalizedCategory":"admin_general_expense","amountNative":-3.082368,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Altri","normalizedCategory":"exceptional_items","amountNative":-0.00012,"disclosureLevel":"aggregated"},
+    {"rawLabel":"8) per godimento di beni di terzi","normalizedCategory":"admin_general_expense","amountNative":-1.108511,"disclosureLevel":"aggregated"},
+    {"rawLabel":"a) salari e stipendi","normalizedCategory":"wages_squad","amountNative":-30.928218,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) oneri sociali","normalizedCategory":"wages_squad","amountNative":-2.577135,"disclosureLevel":"aggregated"},
+    {"rawLabel":"c) trattamento di fine rapporto","normalizedCategory":"wages_squad","amountNative":-0.284937,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Diritti pluriennali calciatori 1° squadra","normalizedCategory":"player_amortisation","amountNative":-32.762914,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Diritti pluriennali calciatori settore giovanile","normalizedCategory":"player_amortisation","amountNative":-0.4661,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Altri","normalizedCategory":"exceptional_items","amountNative":-3.79864,"disclosureLevel":"aggregated"},
+    {"rawLabel":"b) ammortamento delle immobilizzazioni materiali","normalizedCategory":"depreciation","amountNative":-0.100066,"disclosureLevel":"aggregated"},
+    {"rawLabel":"c) altre svalutazioni delle immobilizzazioni","normalizedCategory":"player_impairment","amountNative":-25.377685,"disclosureLevel":"aggregated"},
+    {"rawLabel":"11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci","normalizedCategory":"other_expenses","amountNative":-0.112862,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Spese varie organizzazione gare","normalizedCategory":"match_organisation_expense","amountNative":-0.28482,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Costi per acquisizione temporanea prestazioni calciatori","normalizedCategory":"other_expenses","amountNative":-5.120382,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Costi valorizzazione calciatori","normalizedCategory":"player_amortisation","amountNative":-3.896681,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Contributo di solidarietà","normalizedCategory":"player_amortisation","amountNative":-0.062567,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Premio alla carriera *ex art. 99 bis N.O.I.F.","normalizedCategory":"wages_squad","amountNative":-0.0725,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Spese, ammende e multe gare","normalizedCategory":"other_expenses","amountNative":-0.395922,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Oneri lega","normalizedCategory":"match_organisation_expense","amountNative":-0.74375,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Oneri tributari indiretti","normalizedCategory":"admin_general_expense","amountNative":-0.217154,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Altri (Sopravvenienze Passive)","normalizedCategory":"exceptional_items","amountNative":-0.085138,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Materiale sportivo e indumenti","normalizedCategory":"other_expenses","amountNative":-0.577127,"disclosureLevel":"aggregated"},
     {"rawLabel":"Altro","normalizedCategory":"other_expenses","amountNative":-0.062526,"disclosureLevel":"aggregated"},
@@ -151,6 +194,7 @@ const genoaItExpenseLinesByYear = {
 const genoaItFiscalYearMeta = {
   2022: {"currency":"EUR","sourceId":"genoa-it-bilancio-31-12-2022-individual","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2022-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-5.16277,"tax":9.396313,"grossDebt":95.695407,"cash":1.16452,"officialTotalRevenue":84.663638,"officialTotalExpenses":132.986472,"officialPAT":-61.728621,"extraRows":[{"label":"- altri","value":0.138916},{"label":"b) da titoli iscritti nelle immobilizzazioni che non costituiscono partecipazioni","value":0.019529},{"label":"c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni","value":0.000042},{"label":"17) e) altri oneri finanziari","value":-5.297416},{"label":"17 bis) a) utile su cambi","value":0.000104},{"label":"17 bis) b) perdite su cambi","value":-0.023945},{"label":"20) a) imposte correnti (deducido: antes de impuestos − resultado final, por ajuste manual)","value":9.396313}]},
   2023: {"currency":"EUR","sourceId":"genoa-it-bilancio-31-12-2023-individual","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-9.57946,"tax":2.712602,"grossDebt":117.945105,"cash":1.145913,"officialTotalRevenue":116.983486,"officialTotalExpenses":134.959544,"officialPAT":-32.541764,"extraRows":[{"label":"altri","value":0.011352},{"label":"b) da titoli iscritti nelle immobilizzazioni che non costituiscono partecipazioni","value":0.04725},{"label":"c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni","value":0},{"label":"da imprese controllanti","value":0.186305},{"label":"altri","value":0.502708},{"label":"17-bis) utili e perdite su cambi","value":-0.003316},{"label":"altri oneri finanziari (17, costo)","value":-10.323759},{"label":"imposte correnti","value":-1.559129},{"label":"imposte relative a esercizi precedenti","value":-1.051785},{"label":"imposte differite e anticipate","value":5.310717},{"label":"proventi da adesione consolidato fiscale (resta del impuesto)","value":0.012799}]},
+  2024: {"periodMonths":6,"currency":"EUR","sourceId":"genoa-it-bilancio-30-06-2024-individual","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-4.788914,"tax":-2.253415,"grossDebt":null,"cash":4.778797,"officialTotalRevenue":85.073614,"officialTotalExpenses":112.978569,"officialPAT":-38.831182,"extraRows":[{"label":"b) da titoli iscritti nelle immobilizzazioni che non costituiscono partecipazioni","value":0.023625},{"label":"da imprese controllate","value":0.017609},{"label":"da imprese controllanti","value":0.100537},{"label":"altri","value":0.712272},{"label":"altri","value":-5.642901},{"label":"17-bis) utili e perdite su cambi","value":-0.000056},{"label":"imposte correnti","value":-1.007712},{"label":"imposte relative a esercizi precedenti","value":-1.525834},{"label":"imposte differite e anticipate","value":0},{"label":"proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale","value":0.280131}]},
   2025: {"currency":"EUR","sourceId":"genoa-it-bilancio-30-06-2025-individual","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-5.586783,"tax":-0.299043,"grossDebt":142.883095,"cash":2.280076,"officialTotalRevenue":120.478723,"officialTotalExpenses":146.53278,"officialPAT":-33.301181,"extraRows":[{"label":"b) da titoli iscritti nelle immobilizzazioni che non costituiscono partecipazioni","value":0.04725},{"label":"c) da titoli iscritti nell'attivo circolante che non costituiscono partecipazioni","value":0.013119},{"label":"da imprese controllanti","value":0.060708},{"label":"altri","value":1.55124},{"label":"altri","value":-7.194827},{"label":"17-bis) utili e perdite su cambi","value":-0.064273},{"label":"imposte correnti","value":-0.299043},{"label":"imposte relative a esercizi precedenti","value":0},{"label":"proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale","value":0}]},
 };
 
@@ -168,6 +212,6 @@ window.CLUB_GENERIC_DATA["genoa-it"] = {
   presupuestoOverlayByYear: genoaItPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"genoa-it-bilancio-31-12-2022-individual":{"id":"genoa-it-bilancio-31-12-2022-individual","clubId":"genoa-it","title":"Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2022-individual (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"},"genoa-it-bilancio-30-06-2025-individual":{"id":"genoa-it-bilancio-30-06-2025-individual","clubId":"genoa-it","title":"Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-30.06.2025-individual (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"},"genoa-it-bilancio-31-12-2023-individual":{"id":"genoa-it-bilancio-31-12-2023-individual","clubId":"genoa-it","title":"Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2023-individual (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"genoa-it-bilancio-31-12-2022-individual":{"id":"genoa-it-bilancio-31-12-2022-individual","clubId":"genoa-it","title":"Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2022-individual (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary"},"genoa-it-bilancio-30-06-2025-individual":{"id":"genoa-it-bilancio-30-06-2025-individual","clubId":"genoa-it","title":"Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-30.06.2025-individual (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary"},"genoa-it-bilancio-31-12-2023-individual":{"id":"genoa-it-bilancio-31-12-2023-individual","clubId":"genoa-it","title":"Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2023-individual (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary"},"genoa-it-bilancio-30-06-2024-individual":{"id":"genoa-it-bilancio-30-06-2024-individual","clubId":"genoa-it","title":"Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-30.06.2024-individual (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","publicNote":"Ejercicio de transición de 6 meses por cambio de la fecha de cierre: del 01/01/2024 al 30/06/2024. No es comparable con un año de 12 meses."}});
 
 memberCountByClub["genoa-it"] = null;

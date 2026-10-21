@@ -66,6 +66,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2024: {
     leagueSize: 20,
+    sinDato: ["genoa-it"],
     wiki: {"t":"2023–24 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"inter-it", revenue:506.81, reportType:"official_balance_sheet",
