@@ -810,7 +810,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // (Versión 435, cambio G) con valor 0 y `reemplaza`, el ajuste SOLO saca la fila: no agrega una línea en cero (Juventus 2018-19, la fila
     // de la ganancia por acción "(0,040)", .md L1160, no es un importe del estado)
     if (v === 0 && (a.reemplaza || a.reemplazaLinea != null)) { if (primera) notas.push(`ajuste manual: sale la fila "${a.reemplaza ?? `L${a.reemplazaLinea}`}" (${a.fecha}, ${a.motivo})`); continue; }
-    destino.push({ etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', M: ['ingreso', 'gasto'].includes(a.lado) ? (firmado === 'estado' ? v * signoDelEstado(a.lado) : firmado ? v * signoNormalDe(a.lado) : Math.abs(v)) : v, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
+    destino.push({ etiqueta: a.etiqueta, lado: a.lado, tipo: 'renglon', M: ['ingreso', 'gasto'].includes(a.lado) ? (firmado === 'estado' ? v * signoDelEstado(a.lado) : firmado ? v * signoNormalDe(a.lado) : Math.abs(v)) : v, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual', ...(a.destino ? { destino: a.destino } : {}) });
     if (primera) notas.push(`ajuste manual: fila "${a.etiqueta}" (${a.lado}) ${a.valor}${a.reemplaza ? `, en lugar de "${a.reemplaza}"` : ''}${a.reemplazaLinea != null ? `, en lugar de la fila de L${a.reemplazaLinea}` : ''} (${a.fecha}, ${a.motivo})`);
   } };
   aplicarAjustesFila(ing0, gas0, true);
@@ -869,7 +869,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // (Versión 437, arreglo de G) un ajuste `fila` del lado financiero con `reemplaza` también ENTRA en la lectura 5/6 (antes solo salía la
   // fila vieja). Caso: Juventus 2003-2006, gastos financieros impresos en positivo bajo "17) INTEREST AND OTHER FINANCIAL EXPENSES".
   for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === 'financiero' && (x.reemplaza || x.reemplazaLinea != null) && isFinite(parseNumber(x.valor)) && parseNumber(x.valor) !== 0)) {
-    const m = mult(estado[0]?.bloque); fin5.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
+    const m = mult(estado[0]?.bloque); fin5.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual', ...(a.destino ? { destino: a.destino } : {}) });
   }
   // ESCALÓN "ajustes del financiero sin reemplaza" (to-do 156 B, como troubleshoot): la lectura 5 de arriba solo suma los ajustes del
   // financiero que reemplazan una fila. fin5Todos les suma también los que no reemplazan nada (una fila que la extracción no trajo). No es
@@ -879,7 +879,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // 567.012.038 − 482.024.122 − 35.879.464 + 780.928 − 14.491.102 = 35.398.278 (L986).
   const fin5Todos = [...fin5];
   for (const a of ajustesDe(pdf).filter((x) => x.campo === 'fila' && x.lado === 'financiero' && !(x.reemplaza || x.reemplazaLinea != null) && isFinite(parseNumber(x.valor)) && parseNumber(x.valor) !== 0)) {
-    const m = mult(estado[0]?.bloque); fin5Todos.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual' });
+    const m = mult(estado[0]?.bloque); fin5Todos.push({ etiqueta: a.etiqueta, lado: 'financiero', tipo: 'renglon', M: parseNumber(a.valor) * m, u: unidad(a.valor, m), linea: a.linea ?? null, pagina: a.linea ? paginaDeLinea(md, a.linea) : null, origen: 'ajuste manual', ...(a.destino ? { destino: a.destino } : {}) });
   }
   const evaluar = (nivel, conAjustesFin = false, finForzado = null, bases = null, excluirOtros = null) => {
     const ch = []; let ing = [...(bases ? bases.ing : nivel >= 5 ? ing5 : nivel >= 4 ? ing4 : nivel >= 3 ? ing3 : ing0)]; let gas = [...(bases ? bases.gas : nivel >= 5 ? gas5 : nivel >= 4 ? gas4 : nivel >= 3 ? gas3 : gas0)];
@@ -1774,7 +1774,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     lineas: [...ing.map((f) => [f, 'ingreso']), ...gas.map((f) => [f, 'gasto'])].map(([f0, lista]) => { const opuesto = lista === 'ingreso' ? 'gasto' : 'ingreso'; const f1 = f0.lado === opuesto && f0.M < 0 ? { ...f0, M: -f0.M } : f0; return f1.lado === 'financiero' ? { ...f1, lado: lista } : f1; /* (to-do 237 w) una fila del financiero que suma dentro de los ingresos o de los gastos (una nota de Outros rendimentos que trae 'Juros') se escribe con el lado de esa lista: cargar.mjs manda a gasto todo lo que no es 'ingreso' (Marítimo 2023-24, Paços 2021-22, Santa Clara) */ }).map((f) => ({ etiqueta: f.etiqueta, lado: f.lado, M: r6(f.M), pagina: f.pagina, linea: f.linea ?? null, origen: f.origen || 'estado', ...(f.catAjuste ? { categoria: f.catAjuste } : {}) })),
     // financiero / impuesto: su efecto en el resultado (ver SIGNOS ... PARA LA CARGA arriba); `signosCarga` dice qué se invirtió.
     signosCarga: { financiero: porRotulo ? 'rótulo' : sfCarga, impuesto: siCarga },
-    financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(finCarga(f)), linea: f.linea })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(siCarga * f.M), linea: f.linea })) };
+    // `destino` (ajuste `fila` del lado financiero con --destino profit_on_player_sales, Auditora 5): cargar.mjs la manda a profitOnPlayerSales y no a netInterest
+    financiero: fin.map((f) => ({ etiqueta: f.etiqueta, M: r6(finCarga(f)), linea: f.linea, ...(f.destino ? { destino: f.destino } : {}) })), impuesto: imp.map((f) => ({ etiqueta: f.etiqueta, M: r6(siCarga * f.M), linea: f.linea })) };
   if (primerAnio) out.primerAnio = primerAnio; // (to-do 214, escalón 3) lo lee tools/primer-anio-ia.mjs
   if (notaSubtotalLados.size) out.notaSubtotal = [...notaSubtotalLados]; // (to-do 163) la señal que se queda prendida, ver ladosCero
   if (confirmadosPorSumas.length) out.confirmadosPorSumas = confirmadosPorSumas; // (to-do 176) los lee avisarRegistro()

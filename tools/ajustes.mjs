@@ -69,6 +69,9 @@
 //                     opcional, `reemplaza` = la etiqueta de la fila extraída que sale (TODAS las que se llaman así), o `reemplazaLinea` =
 //                     la línea del .md de la ÚNICA fila que sale (to-do 158: en el formato italiano "altri" es a la vez ingreso, financiero
 //                     + y financiero −; Bologna 2020-21, L833, L871 y L875). Varias por documento (la clave incluye la etiqueta).
+//                     Del lado financiero, `--destino profit_on_player_sales` la manda a financial.profit_on_player_sales en vez de net_interest
+//                     (Auditora 5): «b) Resultados por enajenaciones y otras» del PGC español (Girona 2021-23: +8,50 / −0,297 / −0,76 M), con
+//                     `--reemplaza` para sacar la línea de ingreso o gasto que la extracción hizo con ella.
 //                     Casos: Fortaleza CEIF 2017, nota 23 "Otros gastos" 41.780 perdida en un salto de página, y "Total Otros Ingresos"
 //                     3.581 que en el PDF rotula los costos financieros (etiquetas cruzadas en el propio documento).
 //
@@ -92,6 +95,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl');
 export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda', 'escala', 'suma-con', 'ixbrl-omitir', 'covid-omitir'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
+export const DESTINOS_FILA = ['profit_on_player_sales']; // --destino de una fila del lado financiero (sin él, net_interest)
 
 // (to-do 224) UNA LECTURA POR PROCESO, igual que leer() de cola.mjs: 18 de los 36 s de `verificar.mjs --lista` sobre 237 documentos eran
 // releer este archivo en cada ajusteDe. Se vuelve a leer solo si cambió (tamaño o fecha de modificación). Lo devuelto no se modifica.
@@ -213,11 +217,13 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (['resultado-final', 'fila', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
     if (campo === 'suma-con' && (!flag('--valor') || !flag('--etiqueta') || !flag('--etiqueta-otra') || !flag('--evidencia'))) { console.error('suma-con necesita --valor (el PDF de la otra entidad), --etiqueta (renglón de gasto propio), --etiqueta-otra (ingreso espejo del otro documento) y --evidencia (las dos líneas)'); process.exit(1); }
     if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
+    // (Auditora 5, Girona 2021-23) --destino profit_on_player_sales: una fila del lado financiero que va a financial.profit_on_player_sales y no a net_interest
+    if (flag('--destino') !== null && !(campo === 'fila' && flag('--lado') === 'financiero' && DESTINOS_FILA.includes(flag('--destino')))) { console.error(`--destino solo va con fila --lado financiero (${DESTINOS_FILA.join(', ')})`); process.exit(1); }
     // (to-do 263) --anio AAAA: solo en caja / deuda, para un PDF que alimenta dos años del sitio (ver ajusteDelAnio, arriba).
     if (flag('--anio') !== null && (!CAMPOS_POR_ANIO.includes(campo) || !/^\d{4}$/.test(flag('--anio') || ''))) { console.error(`--anio AAAA solo va con ${CAMPOS_POR_ANIO.join(' / ')}`); process.exit(1); }
     if (flag('--reemplaza-linea') !== null && !/^\d+$/.test(flag('--reemplaza-linea') || '')) { console.error('--reemplaza-linea necesita el número de línea del .md'); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
-    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria'), ...(flag('--etiqueta-diferencia') ? { etiquetaDiferencia: flag('--etiqueta-diferencia') } : {}) } : {}), ...(campo === 'suma-con' ? { etiqueta: flag('--etiqueta'), etiquetaOtra: flag('--etiqueta-otra') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), ...(flag('--anio') ? { anio: Number(flag('--anio')) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
+    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}), ...(flag('--destino') ? { destino: flag('--destino') } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria'), ...(flag('--etiqueta-diferencia') ? { etiquetaDiferencia: flag('--etiqueta-diferencia') } : {}) } : {}), ...(campo === 'suma-con' ? { etiqueta: flag('--etiqueta'), etiquetaOtra: flag('--etiqueta-otra') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), ...(flag('--anio') ? { anio: Number(flag('--anio')) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
     appendFileSync(ARCHIVO, JSON.stringify(a) + '\n');
     console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.anio ? ` (año ${a.anio})` : ''}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
   } else {
