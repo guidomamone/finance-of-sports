@@ -661,10 +661,29 @@ No decido ni toco ids. Evidencia por dato, con su cita.
 ### Qué queda
 
 - Nada para Pipeline: esto es evidencia para que Guido decida el proceso. Mientras no se decida, los dos ids quedan como están.
+- **Veredicto (proceso aprobado, tabla de `contrato-de-datos`):** entidad distinta, dos clubes; `liersesk-be` es sucesor de `liersekempenzonen-be`. Anotado en `auditoria-proceso.jsonl`. Lo aplica una sesión de datos: (1) los dos ids quedan, sin alias entre ellos; (2) campo opcional `club.predecessor_id` en el esquema (aditivo) con valor `liersekempenzonen-be` en `liersesk-be`; (3) `data/club-leagues/be.js`: `liersesk-be` 2019, 2020 y 2021 a `null`; (4) el stamnummer y la fundación a `Admin/dudas-por-club.md`.
 
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 5: to-do 350, relevamiento, votación de subsidios y proceso de revisión de categorías, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Relevamiento de la taxonomía: `Admin/mediciones/350-categorias-en-vano.md` (con `350-uso-categorias.mjs`, `350-uso-categorias.txt` y `350-subsidios-en-otros-ingresos.mjs`). Casi en vano: `womens_football` (6 club-años), `other_sports`, `education` (17 clubes, 13 argentinos con colegio real), `youth_football`, `stadium_other`.
+- Votación 3 a 0 por una categoría genérica nueva `grants_donations` («Subsidios, donaciones y aportes») con fila `hideIfZero` en el Formato simplificado; la subvención de capital imputada queda en `other_income`, los subsidios de la educación en `education`, y los premios y la solidaridad UEFA en `competition_bonus`. En `auditoria-proceso.jsonl`.
+- Propuesta de proceso de revisión de categorías (cuándo, medición, umbrales para abrir y cerrar, cómo se vota) como texto exacto de una sección de `club-data-mapping`: `Admin/propuestas/350-revision-categorias.md`. Espera el ok de Guido.
+
+### Qué queda (para TODO / Pipeline y Guido)
+
+- Guido: el texto de la sección 3 y 4 de la propuesta (skills); la fila «Subsidios, donaciones y aportes» del Formato simplificado; si «Educación» pasa a `hideIfZero`.
+- Pipeline, después del ok: `grants_donations` en la taxonomía, el mapa de categorías, el categorizador, `js/finanzas-calc.js`, rankings y `audit.js`; `tools/uso-categorias.mjs` y el chequeo `revision-taxonomia-vencida`; la descripción de `education`.
+- Onboarding: ninguna recarga (no se recategoriza lo cargado).
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada hasta que Pipeline lo codee.
 
 ## Auditora 5: correcciones y respuestas a Pipeline 13 (345 y faltantes), 2026-10-21
 
