@@ -52,8 +52,9 @@ Un punto que no aplica, o que no se pudo probar, se dice en la nota de la sesió
   *Prueba:* a 375 px, en la consola:
   `[...document.querySelectorAll('main button, main a, header button')].filter(e => e.offsetParent).filter(e => { const r = e.getBoundingClientRect(); return r.height < 44 || r.width < 44; })`
   y revisar cada uno.
-  *Caso:* en la página de una liga, el nombre de cada club medía 17 px de alto; ahora la fila mide 44 y el botón la cubre entera. Hoy todavía quedan chicos
-  en Inicio (atajos, filas de los rankings, «Ver la liga»), Finanzas («Elegí un club») y Mi Cuenta («Entrar con Google»).
+  *Caso:* en la página de una liga, el nombre de cada club medía 17 px de alto; ahora la fila mide 44 y el botón la cubre entera. Los atajos y las filas
+  de los rankings de Inicio, «Elegí un club» y «Entrar con Google» medían entre 32 y 38 y ahora miden 44. Los dos links de la atribución de Wikipedia de
+  una liga («2024–25 Serie A» y «CC BY-SA 4.0», en renglones seguidos) quedan en su tamaño: son texto corrido (excepción de abajo).
   *Excepción, ya decidida (no es un pendiente):* las etiquetas de estado (`.stat-tag`: COVID, PRESUPUESTO y las que sigan el mismo patrón)
   miden unos 16 px de alto. Agrandarlas taparía el toque del elemento de al lado, su texto también está en el `aria-label` y lo que abren es
   información de más. Una auditoría `ux` no las marca.
