@@ -1,0 +1,285 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2019.md",
+ "mdSha1": "bd55d94bbe730cde69951912263c4001b3145d75",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T14:05:28.469Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    127,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    143,
+    164
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    188,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    225,
+    229
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    253,
+    259
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    283,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    501,
+    506
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    512,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    539,
+    544
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    552,
+    557
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    561,
+    574
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    594,
+    616
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    636,
+    655
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    681,
+    701
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    723,
+    759
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    763,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    789,
+    796
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    800,
+    814
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    818,
+    823
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    843,
+    854
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 22,
+   "lineas": [
+    870,
+    875
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    899,
+    904
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 23,
+   "lineas": [
+    912,
+    935
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 23,
+   "lineas": [
+    939,
+    947
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 24,
+   "lineas": [
+    965,
+    972
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 24,
+   "lineas": [
+    976,
+    994
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    998,
+    1007
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 24,
+   "lineas": [
+    1011,
+    1021
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    1041,
+    1083
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 26,
+   "lineas": [
+    1109,
+    1122
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b23",
+  "b28"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25",
+  "b26",
+  "b27"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Resultado por atividade' (b29), por segmento futebol profissional/base/social?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "El cuadro por actividad parece repetir los mismos renglones de ingresos y gastos ya abiertos en las notas 17 a 21.",
+   "bloques": [
+    "b29"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado individual de Goiás Esporte Clube en reais. b24 y b25 son la nota 18 Custos com futebol, partida en dos bloques: el encabezado de b25 es la fila 'Alimentação e estadias' que continúa b24. b28 abre el resultado financiero (ingresos y gastos)."
+}

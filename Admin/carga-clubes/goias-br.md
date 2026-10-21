@@ -464,6 +464,79 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 2021: tools/cargar.mjs 2026-10-02, verificado contra roster cacheado de "2021 Campeonato Brasileiro Série B" (tools/club-league-reference/br.js
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Brasil/Goias/demonstracoes-contabeis-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Goias/demonstracoes-contabeis-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | RECEITA LÍQUIDA | pág. 8, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aluguéis de estádios | pág. 26, precedente |
+| 2 | Arbitragens | pág. 26, precedente |
+| 3 | Exames antidoping | pág. 26, precedente |
+| 4 | Custos e despesas c/ pessoal - Jogos | pág. 26, precedente |
+| 5 | Outros custos e despesas - Jogos | pág. 26, precedente |
+| 6 | Taxas confederações e federações | pág. 26, precedente |
+| 7 | Transportes | pág. 26, precedente |
+| 8 | Alimentação e estadias | pág. 26, precedente |
+| 9 | Despesa com pessoal | pág. 26, precedente |
+| 10 | Amortização de custo de atletas contratados | pág. 26, precedente |
+| 11 | Amortização de custo de atletas formados | pág. 26, precedente |
+| 12 | Cessão de direitos econômicos | pág. 26, precedente |
+| 13 | Cessão de direitos de imagem | pág. 26, precedente |
+| 14 | Despesa com pessoal | pág. 27, precedente |
+| 15 | Combustíveis e lubrificantes | pág. 27, precedente |
+| 16 | Manutenção e conservação | pág. 27, precedente |
+| 17 | Propaganda e publicidade | pág. 27, precedente |
+| 18 | Brindes | pág. 27, precedente |
+| 19 | Aluguéis | pág. 27, Jev 0.95 |
+| 20 | Despesas legais e judiciais | pág. 27, precedente |
+| 21 | Água, telefone, energia e internet | pág. 27, precedente |
+| 22 | Seguros | pág. 27, precedente |
+| 23 | Lanches e refeições | pág. 27, precedente |
+| 24 | Livros, revistas e periódicos | pág. 27, precedente |
+| 25 | Correios | pág. 27, precedente |
+| 26 | Transportes | pág. 27, precedente |
+| 27 | Despesas administrativas | pág. 27, precedente |
+| 28 | Depreciação e amortização | pág. 27, precedente |
+| 29 | Provisão para riscos | pág. 27, Jev 0.96 |
+| 30 | Despesas com materiais | pág. 8, precedente |
+| 31 | Profissões regulamentadas | pág. 27, Jev 1 |
+| 32 | Outros serviços | pág. 27, Jev 0.97 |
+| 33 | Manutenção geral | pág. 27, Jev 1 |
+| 34 | Consultoria e assessoria | pág. 27, Jev 1 |
+| 35 | Serviços gerais | pág. 27, Jev 1 |
+| 36 | Despesas tributárias | pág. 8, precedente |
+| 37 | OUTRAS RECEITAS E (DESPESAS) | pág. 8, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cierre = 2020-12-31. Relatório do auditor: balanço patrimonial em 31 de dezembro de 2020 (.md L38)
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-21): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2021, 2022, 2023, 2024, 2025)
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-21): br-serieA, verificado contra roster cacheado de "2020 Campeonato Brasileiro Série A" (tools/club-league-reference/br.json), coincidencia exacta "Goiás".
+```
+
 ## 2017
 
 ### Ingresos
@@ -1343,4 +1416,12 @@ _note (data/):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### goias-br-demonstracoes-contabeis-2020
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

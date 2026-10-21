@@ -174,6 +174,16 @@ window.RANKINGS["br-serieA"] = {
         mix:[["Cuotas Sociales",0.767],["Comercial / Sponsors",0.91],["Estadio",0.07],["Televisión",7.453],["Premios por competencias",0.345],["Venta de Jugadores",0.776],["Otros ingresos",0.627]] },
     ],
   },
+  2020: {
+    leagueSize: 20,
+    wiki: {"t":"2020 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-30","n":20},
+    clubs: [
+      { id:"goias-br", revenue:16.544, reportType:"official_balance_sheet",
+        sourceId:"goias-br-demonstracoes-contabeis-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",16.544]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
   2019: {
     leagueSize: null,
     clubs: [
