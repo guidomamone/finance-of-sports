@@ -448,3 +448,19 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: segunda corrida de «un código por corrida»: `catchall-dominante`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl` con `codigo_tratado: catchall-dominante`, antes 256 (P2) y después 125 (P3): el chequeo describe cuánto detalla el documento y qué cubre la taxonomía, no un defecto; se reclasifica de P2 a P3 y no cuenta un catch-all de una o dos líneas impresas. De 256 hallazgos, 131 (51 %) son una o dos líneas (un gasto que el documento da en un solo renglón, como «Annen driftskostnad» de Aalesund y Viking) y 125 son tres o más (en su mayoría subsidios, aportes y donaciones que la taxonomía no tiene dónde poner).
+
+### Qué queda (para TODO / una sesión Pipeline)
+
+- `tools/audit.js` (`checkCategorizacion`, cerca de la línea 1470): P2 a P3 con el comentario de por qué, y no contar el catch-all cuando son una o dos las líneas que caen en su fila de `bucketize`. Mide: `catchall-dominante` antes P2 256, después P2 0 y P3 cerca de 125, con el resto de la salida idéntico.
+- Para Guido, como pregunta de criterio y no como condición: la taxonomía no tiene una categoría para subvenciones y donaciones (ligas bajas de Grecia, Rusia y Portugal). Si se quiere abrir, es una votación (`votacion-de-criterios`) y, por la regla vigente, no recategoriza lo cargado.
+- Próxima corrida: `sin-salarios` (P2, 48).
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
