@@ -1,0 +1,42 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.md",
+ "mdSha1": "933d2207974af1af7ef9efa32aab946f6b9c9e32",
+ "modelo": "a mano (Claude Code, sesión 2026-10-21)",
+ "generado": "2026-10-21T02:02:50.592Z",
+ "bloques": {
+  "b2": {
+   "pagina": 22,
+   "lineas": [
+    1028,
+    1041
+   ],
+   "tipo": "tabla"
+  },
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    162,
+    166
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b1"
+ ],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "L1028: |   | Note | 2024 £ | 2023 £  |",
+ "moneda": "GBP",
+ "columna_ejercicio": "2024 £",
+ "columna_anterior": "2023 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Armado a mano con tokens de sesión (to-do 248, Bath Rugby como prueba de la taxonomía rugby-1). Estado de resultados individual en b2 (pág. 22 del visor, impreso 18; página rehecha con Mistral OCR). Los ingresos por tipo solo están en el Strategic Report (b1, texto, pág. 5 del visor, £m con un decimal): detallan Turnover con redondeo. En la columna 2023 del Strategic Report el OCR leyó 'Central income 74' por 7,4 (defecto anotado para Pipeline); el año del documento (5,3) está bien. Este año no hay CVC income. Cost of sales y Administrative expenses son por función; el personal (nota 8, L1643-1648) no se abre por renglón."
+}

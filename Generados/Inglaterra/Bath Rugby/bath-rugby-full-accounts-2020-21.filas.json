@@ -1,0 +1,187 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md",
+ "mdSha1": "0e6e232750398f7f8e01edc25bd6c5daf5206e4a",
+ "ubicacionSha1": "61bc54c543a77c7567648b472388105fbe7577cb",
+ "modelo": "a mano (Claude Code, sesión 2026-10-21)",
+ "generado": "2026-10-21T02:01:53.499Z",
+ "salida": "a mano",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b9",
+   "b10"
+  ],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "L329: 2021 £"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "L724: 2021 £; 153,832 es el de L336 del estado"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L732: 2021 £; 6,664,853 es el de L335 del estado"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 331,
+   "etiqueta": "Turnover",
+   "actual": "11,597,938",
+   "anterior": "16,825,184",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 332,
+   "etiqueta": "Cost of sales",
+   "actual": "(14,103,734)",
+   "anterior": "(15,948,646)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 333,
+   "etiqueta": "Gross (loss)/profit",
+   "actual": "(2,505,796)",
+   "anterior": "876,538",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 334,
+   "etiqueta": "Administrative expenses",
+   "actual": "(4,418,764)",
+   "anterior": "(4,578,670)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 335,
+   "etiqueta": "Fair value movements",
+   "actual": "6,664,853",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 336,
+   "etiqueta": "Other operating income",
+   "actual": "153,832",
+   "anterior": "773,456",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 337,
+   "etiqueta": "Operating loss",
+   "actual": "(105,875)",
+   "anterior": "(2,928,676)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 338,
+   "etiqueta": "Other interest receivable and similar income",
+   "actual": "731",
+   "anterior": "1,993",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 339,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(57,103)",
+   "anterior": "(3,428)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 341,
+   "etiqueta": "Loss before tax",
+   "actual": "(162,247)",
+   "anterior": "(2,930,111)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 342,
+   "etiqueta": "Tax on loss",
+   "actual": "(230,837)",
+   "anterior": "875,144",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 343,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(393,084)",
+   "anterior": "(2,054,967)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 726,
+   "etiqueta": "Government grants",
+   "actual": "153,832",
+   "anterior": "773,456",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b10",
+   "linea": 734,
+   "etiqueta": "Fair value gain on investment revaluation",
+   "actual": "6,664,853",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Fair value movements"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 343,
+  "actual": "(393,084)",
+  "anterior": "(2,054,967)"
+ },
+ "dudas": [],
+ "observaciones": "Armado a mano con tokens de sesión (to-do 248, Bath Rugby como prueba de la taxonomía rugby-1). Estado de resultados individual en b3 (pág. 11 del visor, impreso 8). El documento no abre el Turnover por tipo (el Strategic Report trae solo indicadores, b2): va entero. Fair value movements es la revaluación de la participación en Premiership Rugby (nota 5, b10; votación: other_income). Other operating income son subsidios del gobierno (nota 4, b9). Cost of sales y Administrative expenses son por función; el personal (nota 9, L774-779) no se abre por renglón."
+}

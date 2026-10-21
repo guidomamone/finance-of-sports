@@ -1,0 +1,51 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md",
+ "mdSha1": "0e6e232750398f7f8e01edc25bd6c5daf5206e4a",
+ "modelo": "a mano (Claude Code, sesión 2026-10-21)",
+ "generado": "2026-10-21T02:01:53.499Z",
+ "bloques": {
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    329,
+    343
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    724,
+    726
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    732,
+    734
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b9",
+  "b10"
+ ],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "L329: |   | Note | 2021 £ | 2020 £  |",
+ "moneda": "GBP",
+ "columna_ejercicio": "2021 £",
+ "columna_anterior": "2020 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Armado a mano con tokens de sesión (to-do 248, Bath Rugby como prueba de la taxonomía rugby-1). Estado de resultados individual en b3 (pág. 11 del visor, impreso 8). El documento no abre el Turnover por tipo (el Strategic Report trae solo indicadores, b2): va entero. Fair value movements es la revaluación de la participación en Premiership Rugby (nota 5, b10; votación: other_income). Other operating income son subsidios del gobierno (nota 4, b9). Cost of sales y Administrative expenses son por función; el personal (nota 9, L774-779) no se abre por renglón."
+}

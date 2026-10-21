@@ -1,0 +1,184 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.md",
+ "generado": "2026-10-21T02:02:22.654Z",
+ "scriptHuella": "342e019de972",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "bath-rugby-full-accounts-2021-22.md L116-L587",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.pdf",
+   "campo": "desglose",
+   "valor": "19,557",
+   "linea": null,
+   "etiqueta": "Turnover",
+   "categoria": "other_income",
+   "motivo": "248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 19,8); el Turnover del estado es 19.819.557. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.",
+   "evidencia": "pág. 5 del visor, .md L114-121; pág. 17 del visor (impreso 14), .md L575",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.019556999999997132
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 19.8 en este documento y 19.8 en bath-rugby-full-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 18.416623 en bath-rugby-full-accounts-2020-21.pdf y 18.418685 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 19.8,
+  "gastos": 20.266397,
+  "financiero": -0.104184,
+  "impuesto": 0.387584,
+  "resultadoImpreso": -0.16344,
+  "resultadoParaCargar": -0.16344,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Central income",
+   "lado": "ingreso",
+   "M": 4.8,
+   "pagina": 5,
+   "linea": 116,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 4.8,
+   "pagina": 5,
+   "linea": 117,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial activities",
+   "lado": "ingreso",
+   "M": 6.6,
+   "pagina": 5,
+   "linea": 118,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "CVC income",
+   "lado": "ingreso",
+   "M": 3.3,
+   "pagina": 5,
+   "linea": 119,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 0.3,
+   "pagina": 5,
+   "linea": 120,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Fair value movements",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 17,
+   "linea": 579,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 17,
+   "linea": 580,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 15.605502,
+   "pagina": 17,
+   "linea": 576,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 4.660895,
+   "pagina": 17,
+   "linea": 578,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Other interest receivable and similar income",
+   "M": 0.003698,
+   "linea": 582
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.107882,
+   "linea": 583
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": 0.387584,
+   "linea": 586
+  }
+ ]
+}

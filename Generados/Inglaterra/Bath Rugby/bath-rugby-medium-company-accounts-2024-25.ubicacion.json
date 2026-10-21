@@ -1,0 +1,42 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.md",
+ "mdSha1": "f2bb5fd9b268537a5826904223348d417ce12c09",
+ "modelo": "a mano (Claude Code, sesión 2026-10-21)",
+ "generado": "2026-10-21T02:03:18.024Z",
+ "bloques": {
+  "b3": {
+   "pagina": 20,
+   "lineas": [
+    706,
+    723
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    167,
+    174
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b2"
+ ],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "L708: |   | Notes | 30.6.25 £ | 30.6.24 £  |",
+ "moneda": "GBP",
+ "columna_ejercicio": "30.6.25 £",
+ "columna_anterior": "30.6.24 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Armado a mano con tokens de sesión (to-do 248, Bath Rugby como prueba de la taxonomía rugby-1). Cuentas de 'medium company' (Statement of Comprehensive Income) en b3 (pág. 20 del visor). Este formato imprime los gastos SIN paréntesis (Cost of sales, Administrative expenses, Interest payable) y el impuesto '(250,554)' es un CRÉDITO: 3.028.619 de pérdida antes de impuestos menos 250.554 = 2.778.065 de pérdida del ejercicio. Los ingresos por tipo solo están en el Strategic Report (b2, pág. 6 del visor, £m con un decimal): detallan TURNOVER con redondeo. Este documento reexpresa 2024 (Administrative expenses 6.290.057 y otros ingresos 88.503 contra 6.283.057 y 81.503 del informe 2023-24): vale cada ejercicio con su propio documento."
+}

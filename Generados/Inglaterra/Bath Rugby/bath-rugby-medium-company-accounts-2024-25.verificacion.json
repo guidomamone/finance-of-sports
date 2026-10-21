@@ -1,0 +1,163 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.md",
+ "generado": "2026-10-21T02:03:18.474Z",
+ "scriptHuella": "342e019de972",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "bath-rugby-medium-company-accounts-2024-25.md L170-L721",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf",
+   "campo": "desglose",
+   "valor": "39,778",
+   "linea": null,
+   "etiqueta": "TURNOVER",
+   "categoria": "other_income",
+   "motivo": "248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 23,3); el Turnover del estado es 23.339.778. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.",
+   "evidencia": "pág. 6 del visor, .md L167-174; pág. 20 del visor, .md L709",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0.039777999999998315
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 20.881503 en bath-rugby-full-accounts-2023-24.pdf y 20.888503 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 23.369825,
+  "gastos": 26.310648,
+  "financiero": 0.127574,
+  "impuesto": -0.250554,
+  "resultadoImpreso": -2.778065,
+  "resultadoParaCargar": -2.778065,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Central income",
+   "lado": "ingreso",
+   "M": 4.4,
+   "pagina": 6,
+   "linea": 170,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 8.7,
+   "pagina": 6,
+   "linea": 171,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Commercial activities",
+   "lado": "ingreso",
+   "M": 10,
+   "pagina": 6,
+   "linea": 172,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 0.2,
+   "pagina": 6,
+   "linea": 173,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.069825,
+   "pagina": 20,
+   "linea": 714,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 20.059154,
+   "pagina": 20,
+   "linea": 710,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 6.251494,
+   "pagina": 20,
+   "linea": 712,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": null,
+   "linea": 716
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.127574,
+   "linea": 718
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": 0.250554,
+   "linea": 720
+  }
+ ]
+}
