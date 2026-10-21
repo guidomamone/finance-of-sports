@@ -327,3 +327,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: `index-file-roto` en `audit.js`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: P1 `index-file-roto` (un `<base>` o un `src`/`href` propio que empieza con «/» en un `.html` suelto de la raíz), APROBADO, el mismo P1 para todos los `.html` de la raíz.
+
+### Qué queda
+
+- Menor: el número de línea del aviso se corre cuando hay comentarios HTML de varias líneas arriba; reemplazarlos por espacios que conserven los saltos de línea.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
