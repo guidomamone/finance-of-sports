@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 913 — El sitio vuelve a abrirse como archivo (2026-10-21) [340]
+
+- `index.html` ya no tiene un `<base>` fijo: lo escribe un script solo cuando la página se sirve por http(s). Anda abierto desde el disco (visto en Brave) y en `/liga/<id>` navegando desde la portada. Las páginas de `club/` y `liga/` conservan su `<base>`. ASSET_V 1563. Regla: lo que se tiene que cumplir va a un chequeo (`audit.js` o el hook), no a la memoria de una sesión (`Admin/CONVENCIONES.md`).
+
 ## Versión 912 — El sitio se prueba también abierto como archivo (2026-10-21) [340]
 
 - Regresión del 340: el `<base href="/">` de `index.html` rompía abrir el sitio desde el disco (sin estilos ni scripts). Regla en `Admin/PANTALLA.md`: cada cambio de pantalla se prueba servido y como archivo, y `index.html` no lleva `<base>` ni rutas que empiecen con `/`. En camino: el arreglo (Pantallas 6) y un chequeo P1 en `audit.js` (Pipeline 12).
