@@ -85,3 +85,31 @@
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+### Texto propuesto para la skill `auditoria-finance-of-sports` (esperando el ok de Guido; no se editó la skill)
+
+Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tools del pipeline. Sección nueva, «Condiciones nuevas en las tools»:
+
+> **Cuándo.** Una condición nueva es todo lo que agrega un frenazo, un aviso, un filtro o una pregunta a una tool del pipeline (`cargar.mjs`, `alta-club.mjs`, Jev, `categorizar-claude.mjs`, `verificar.mjs`…), o cambia lo que una tool asume. La Auditora la aprueba o la rechaza antes de que se codee; el veredicto va a `Admin/registros/auditoria-proceso.jsonl`.
+>
+> **Las cinco preguntas, en orden:**
+> 1. ¿Qué problema real la motiva? Un caso con nombre (club, año, documento). Sin caso, se rechaza.
+> 2. ¿Puede frenar o descartar una carga buena? Se mide contra los datos y lotes de hoy, con el comando que lo da, y se escribe el número.
+> 3. ¿Puede dejar pasar una carga mala? Qué otro chequeo (tie-out, `auditAll()`, la cola) la atrapa si esta condición falla o no existe.
+> 4. ¿Qué cambia para lo ya cargado? Debe ser nada: se exige una comparación antes y después (prompt, backtest, `generar-data --check`, `audit.js`) y se dice cuál.
+> 5. ¿Se puede apagar o corregir sin tocar datos? Si una sesión se queda trabada, la condición tiene que poder saltearse con un ajuste o una respuesta en la cola.
+>
+> **Qué se mide.** El número de casos que cambian de resultado (años, clubes, documentos), no una opinión. Si no se puede medir hoy, se dice qué falta y la condición va como aviso, no como frenazo.
+>
+> **Aprobada**: las preguntas 2 y 3 no muestran daño y la 4 da cero cambios. **Aprobada con un cambio**: sirve, pero tiene un borde medido (se escribe el cambio exacto y su criterio de aceptación). **Rechazada**: cuando (a) frena casos buenos medidos y no hay forma de distinguirlos de los malos, (b) no tiene un caso real, (c) cambia lo ya cargado sin que Guido lo haya decidido, (d) duplica un chequeo que ya existe, o (e) resuelve con una regla de datos lo que es un criterio: eso va a `votacion-de-criterios` y no se aprueba acá.
+>
+> **Una condición que relaja** (como una tabla vacía) se evalúa igual, con la pregunta 3 como la importante.
+
+### Las 4 condiciones del 339 con ese criterio (resumen; el detalle está en los veredictos)
+
+| Condición | 1 caso real | 2 frena lo bueno | 3 deja pasar lo malo | 4 cambia lo cargado | 5 se puede saltear | Resultado |
+|---|---|---|---|---|---|---|
+| Filtro de ejemplos | Bath: Jev vería ejemplos que no puede elegir | No: solo recorta ejemplos (0 de 36.045 líneas fuera de la lista de fútbol) | No: sin ejemplos Jev usa el criterio | Solo si se filtra por lado (13 líneas); por unión, nada | No hace falta: no frena | Aprobada con un cambio |
+| `CATEGORÍA (prompt, deporte)` | La regla del CVC ya nombra un id de rugby | No | Un deporte mal escrito pasaría callado: el validador lo corta | El prompt de fútbol cambia como mucho en una línea | Sí: sin deporte vale para todos | Aprobada con un cambio |
+| Ceros por deporte | Bath no tiene medición de ceros | No (relaja) | Un 0 malo en rugby: lo atrapan los tie-outs y la revisión de 5 documentos | Nada si las 5 entradas de fútbol se copian | Sí: `cero-real` | Aprobada con dos cambios |
+| Deporte sin declarar | El default `futbol` de `alta-club.mjs` | Sí si «sin mención» cuenta como sin declarar: 31 de 400 carpetas | Sin la condición, un club de otro deporte entra como fútbol | Nada: los 319 declaran | Sí: respuesta en la cola | Aprobada con un cambio |
