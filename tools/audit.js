@@ -854,6 +854,37 @@ function checkParrafosRepetidos() {
   }
 }
 
+// --- RAYA LARGA EN EL TEXTO VISIBLE (to-do 327, C-12) -------------------------
+// Regla de estilo de Admin/CONVENCIONES.md: ni un em dash (—, U+2014) en el texto que ve el visitante. Mira data/lang/, js/, las páginas
+// .html de la raíz y las generadas (club/, liga/). Sin comentarios (JS y HTML) ni <script>/<style>. Permitido: «—» como símbolo de
+// «sin dato» (solo entre comillas, solo en una celda `>—<` o como leyenda `— = …`). No mira data/<país>/*.js: ahí un «—» es el texto
+// literal de un rubro del documento (rawLabel) y no se reescribe.
+// P2 y no P3: el visitante lo lee.
+function rayasLargasVisibles() {
+  const lista = (d, ext) => { const out = []; (function walk(r) {
+    let es; try { es = fs.readdirSync(path.join(ROOT, r), { withFileTypes: true }); } catch { return; }
+    for (const e of es) { const rel = `${r}/${e.name}`; if (e.isDirectory()) walk(rel); else if (rel.endsWith(ext)) out.push(rel); }
+  })(d); return out; };
+  const archivos = [...lista('data/lang', '.js'), ...lista('js', '.js'), ...lista('club', '.html'), ...lista('liga', '.html'),
+    ...fs.readdirSync(ROOT).filter(f => f.endsWith('.html'))];
+  const SIMBOLO = /(["'`“”‘’])—\1|[“"'`]—[”"'`]|>\s*—\s*<|["'`“>]\s*—\s*=/g;
+  const hallazgos = [];
+  for (const f of archivos) {
+    const vacia = m => m.replace(/[^\n]/g, '');
+    let s = fs.readFileSync(path.join(ROOT, f), 'utf8');
+    if (f.endsWith('.html')) s = s.replace(/<!--[\s\S]*?-->/g, vacia).replace(/<script[\s\S]*?<\/script>/g, vacia).replace(/<style[\s\S]*?<\/style>/g, vacia);
+    else s = s.replace(/\/\*[\s\S]*?\*\//g, vacia).split('\n').map(l => l.replace(/(^|\s)\/\/.*$/, '$1')).join('\n');
+    s.replace(SIMBOLO, '').split('\n').forEach((l, i) => { if (l.includes('—')) hallazgos.push(`${f}:${i + 1}`); });
+  }
+  return hallazgos;
+}
+
+function checkRayaLarga() {
+  const hallazgos = rayasLargasVisibles();
+  if (!hallazgos.length) return;
+  add('P2', 'raya-larga-visible', `${hallazgos.length} línea(s) del texto visible del sitio con raya larga (—): ${hallazgos.slice(0, 8).join(', ')}${hallazgos.length > 8 ? ', …' : ''}. Regla de estilo de Admin/CONVENCIONES.md: punto, coma, dos puntos o paréntesis. Solo se permite «—» entre comillas como símbolo de «sin dato»`);
+}
+
 // --- D19: TODO LO GENERADO, AL DÍA (Versión 183) ---------------------------
 // El proyecto tiene 6 generadores (estos 5 tienen --check; el sexto es generate-como-corre-stats.js) y dependen de que alguien se acuerde de
 // correrlos. "Acordate" ya falló antes acá (ver `checkDeployInterno`), y esta
@@ -1656,6 +1687,7 @@ function main() {
   checkRutasMuertas();
   checkHistoriaEnDocs();
   checkParrafosRepetidos();
+  checkRayaLarga();
   checkHigiene(api);
   checkGestiones(api);
   checkDatosJson();
