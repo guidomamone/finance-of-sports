@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 902 — Jev y la carga leen las categorías del deporte del club (2026-10-20) [339 · bath-gb]
+
+- `tools/deporte-club.mjs` (como `pais-club.mjs`): Jev y `cargar.mjs` (`ladoDeCat`) toman las categorías de `SPORT_TAXONOMIES` según el deporte del club. Para el fútbol, idéntico: 1.000 pedidos a Jev y 80 a Claude byte por byte, `medir-cargar` (334 documentos) y `medir-verificar` (62) sin diferencias. Destraba la carga de Bath.
+
 ## Versión 901 — La pantalla arma las filas desde la categoría genérica (2026-10-20) [248 · bath-gb]
 
 - El motor y Formato simplificado leen `data/category-map.js` en vez de listas de fútbol: para el fútbol, idéntico en los 1.296 ejercicios y `auditAll()` en 0 que no cierran. Taxonomía `rugby-1` (`data/schema/taxonomy-rugby-1.json`). Bath 2023-24, página 22 retranscripta con Mistral (US$ 0,004).
