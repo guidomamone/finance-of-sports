@@ -325,7 +325,7 @@
     // notifyStateChange no hace nada).
     // La liga en la URL: una liga nueva suma una entrada al historial ("atrás" vuelve a la anterior); cambiar el ejercicio, no.
     onEstado: () => {
-      const enURL = new URLSearchParams(location.search).get('liga');
+      const enURL = (rutaDeURL() || {}).tipo === 'liga' ? rutaDeURL().id : new URLSearchParams(location.search).get('liga');
       escribirURL((LIGA_VIEW.current().league || null) !== enURL ? 'push' : 'replace');
     },
     onSimulado: (league, leagueYear, clubes) => {
@@ -686,19 +686,42 @@
     if(tab === 'sponsor' && window.SPONSOR_VIEW && SPONSOR_VIEW.current().sponsor) e.sponsor = SPONSOR_VIEW.current().sponsor;
     return e;
   }
+  // LA RUTA: Finanzas con un club es `/club/<id>` y Ligas con una liga `/liga/<id>` (páginas con su propia tarjeta al compartir); el resto
+  // de las pestañas vive en `/`. Sin servidor http (file://) no se tocan las rutas y todo queda en la query.
+  var CON_RUTA = /^https?:$/.test(location.protocol);
+  function rutaDeURL(){
+    const m = /^\/(club|liga)\/([^\/?#]+?)(?:\.html)?\/?$/.exec(decodeURIComponent(location.pathname));
+    return m ? { tipo: m[1], id: m[2] } : null;
+  }
+  // `window.FOS_RUTA` lo escribe la página generada; solo vale para la primera lectura: después manda la barra de direcciones.
+  var rutaInicial = window.FOS_RUTA || null;
   function escribirURL(modo){
     if(!urlLista || aplicandoURL) return;
     const p = new URLSearchParams(location.search);
     URL_CLAVES.forEach(k => p.delete(k));
-    Object.entries(estadoActual()).forEach(([k, v]) => p.set(k, v));
+    const e = estadoActual();
+    let ruta = null;
+    if(CON_RUTA && e.tab === 'finanzas' && e.club){ ruta = '/club/' + e.club; delete e.tab; delete e.club; }
+    else if(CON_RUTA && e.tab === 'liga' && e.liga){ ruta = '/liga/' + e.liga; delete e.tab; delete e.liga; }
+    Object.entries(e).forEach(([k, v]) => p.set(k, v));
     const q = p.toString().replace(/%2C/g, ',').replace(/%3A/g, ':').replace(/%7E/g, '~');
-    const url = location.pathname + (q ? '?' + q : '') + location.hash;
+    const path = ruta || (CON_RUTA ? '/' : location.pathname);
+    const url = path + (q ? '?' + q : '') + location.hash;
     if(url === location.pathname + location.search + location.hash) return;
-    history[modo === 'push' ? 'pushState' : 'replaceState'](null, '', url);
+    // Cambiar de club (o de liga) con la barra ya en una ruta suma una entrada al historial: "atrás" vuelve al anterior.
+    const antes = rutaDeURL();
+    const otro = ruta && antes && ruta.split('/')[1] === antes.tipo && ruta !== '/' + antes.tipo + '/' + antes.id;
+    history[modo === 'push' || otro ? 'pushState' : 'replaceState'](null, '', url);
   }
   // Lleva la pantalla a lo que dice la URL. Un club o una liga que no existen se ignoran (el link viejo no rompe nada).
   function aplicarURL(){
     const p = new URLSearchParams(location.search);
+    const ruta = rutaDeURL() || rutaInicial;
+    rutaInicial = null;
+    if(ruta){
+      if(ruta.tipo === 'club' || ruta.tab === 'finanzas'){ p.set('tab', 'finanzas'); p.set('club', ruta.id || ruta.club); }
+      else { p.set('tab', 'liga'); p.set('liga', ruta.id || ruta.liga); }
+    }
     const tab = p.get('tab') || 'inicio';
     const club = window.resolverClubId(p.get('club'));
     const anios = (p.get('anios') || '').split(',').map(Number).filter(Number.isFinite).filter(Boolean);
@@ -739,7 +762,7 @@
 
   // Y recién acá entra lo que hay que mostrar: lo que pide la URL (un link compartido) y, si no pide nada, el club de la visita
   // anterior, por el mismo camino que un click en el selector.
-  if(URL_CLAVES.some(k => new URLSearchParams(location.search).has(k))) aplicarURL();
+  if(rutaInicial || rutaDeURL() || URL_CLAVES.some(k => new URLSearchParams(location.search).has(k))) aplicarURL();
   else {
     urlLista = true;
     if(clubGuardado) selectClub(clubGuardado);
