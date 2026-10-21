@@ -138,6 +138,43 @@ el catálogo todavía (un solo club-ejercicio no lo justifica, ver `data/club-le
 para el sentinel `'liga-no-catalogada'` y to-do 64c de `Admin/TODO.md`).
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Dinamarca/FC Fredericia/aarsrapport-2025-12-31.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/FC Fredericia/aarsrapport-2025-12-31.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bruttofortjeneste | pág. 9, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Lønninger | pág. 14, precedente |
+| 2 | Pensioner | pág. 14, precedente |
+| 3 | Andre omkostninger til social sikring | pág. 14, precedente |
+| 4 | Af- og nedskrivninger af materielle anlægsaktiver | pág. 9, precedente |
+| 5 | Andre driftsomkostninger | pág. 9, Claude 0.88 |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): cierre = 2025-12-31. el .md (convertido del XHTML) habla de 31. december 2025 (10 veces); regnskabsår 1. januar - 31. december
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-21): dk-superliga, verificado contra roster cacheado de "2025–26 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia única por palabras "Fredericia" = "FC Fredericia".
+```
+
 ## 2020
 
 ### Ingresos
@@ -219,4 +256,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fredericia-dk-aarsrapport-2025-12-31
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/FC Fredericia/aarsrapport-2025-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

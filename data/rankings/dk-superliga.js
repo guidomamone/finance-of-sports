@@ -11,6 +11,9 @@ window.RANKINGS["dk-superliga"] = {
       { id:"viborg-dk", revenue:16.128, reportType:"official_balance_sheet",
         sourceId:"viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",12.461],["Otros ingresos",3.667]] },
+      { id:"fredericia-dk", revenue:3.765, reportType:"official_balance_sheet",
+        sourceId:"fredericia-dk-aarsrapport-2025-12-31",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.765]] },
     ],
   },
   2024: {
