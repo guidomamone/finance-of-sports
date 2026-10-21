@@ -29,7 +29,7 @@ el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
 1. 345 (Onboarding 8): la cola del lote 130, Girona 2021-23, RAAL, SønderjyskE 2023, los daneses, Hvidovre, København individual, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020; la liga de Burnley, Girona y Fredericia (hasta US$12 en total)
-2. 353 (Pipeline 13): probar el lector iXBRL con las cuentas de Forest, Burnley y Bath; y el veredicto de la Auditora sobre `faltantes` que no frene por la fecha ni por PDFs sin enlazar
+2. 353 (Pipeline 13): el aviso del resultado en cuentas de grupo británicas y que `faltantes` no frene por la fecha ni por PDFs sin enlazar (esperan a la Auditora); ¿cargar los británicos chicos en iXBRL? (decisión tuya)
 3. 355 (Auditora 5): Lierse con dos ids, con el proceso «¿Es el mismo club?» de la skill de contrato de datos
 4. 347 (Auditora 5): corridas de P2 y P3 (ya: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`, `outlier-liga`, `gestion-club-inexistente`, `ejercicio-sin-rastro`, `salto-interanual`, `escala-implausible`)
 5. 352 (Auditora 5, con lo que cargue Onboarding 8): decidir si el chequeo del iXBRL pasa de aviso a frenar
@@ -93,7 +93,9 @@ el número de la izquierda es el orden de trabajo.
    cargados por Onboarding 8 sin falsos avisos, la Auditora decide si pasa de aviso a frenar.
 353. LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21). Medido (`Admin/mediciones/companies-house-ixbrl.md`): los grandes presentan PDF; 9 de 36
    clubes probados vienen en iXBRL (Nottingham Forest, Burnley y Bath Rugby, cargados; Plymouth, Bolton, Lincoln, Oxford, Peterborough e
-   Hibernian, no). Guido aprobó bajar los 3 de Forest, Burnley y Bath y probar una versión de `xhtml-aarsrapport.mjs` (Pipeline 13).
+   Hibernian, no). Probado con Forest, Burnley y Bath: `xhtml-aarsrapport.mjs` ya lee el iXBRL británico sin cambios y el `.md` cierra contra
+   los totales. Queda: el aviso del resultado da falso en cuentas de grupo (el consolidado viene con un eje; condición con la Auditora), y
+   cargar con este camino los clubes chicos y medianos británicos que están en iXBRL (decisión de alcance: Guido).
 355. LIERSE CON DOS IDS (Auditora 5, 2026-10-21). `liersekempenzonen-be` (2018-21) y `liersesk-be` (2022-25), mismas ligas: parece el mismo
    club con otro nombre. Unirlos cambia un id público (contrato de datos): lo decide Guido. Antes, confirmar con los documentos que no sea el
    Lierse SK que quebró en 2018.
