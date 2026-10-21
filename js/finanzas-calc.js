@@ -142,6 +142,16 @@
   function esCovidPares(pares){
     return pares.length > 0 && pares.every(p => p[1] != null && esCovid(p[0], p[1]));
   }
+  // Una fila de chips de ejercicio que en el celular se scrollea de costado (Finanzas y Comparar): arranca en lo más nuevo, salvo que así no
+  // se vea ningún elegido (un link a 2019 y 2020); ahí arranca con el más viejo de los elegidos contra el borde izquierdo.
+  function mostrarElegidosEnFila(fila){
+    const fin = fila.scrollWidth - fila.clientWidth;
+    const on = fila.querySelectorAll('.fin-year.on');
+    if(!on.length || !fila.clientWidth){ fila.scrollLeft = fila.scrollWidth; return; }
+    const x = b => b.getBoundingClientRect().left - fila.getBoundingClientRect().left + fila.scrollLeft;
+    fila.scrollLeft = x(on[on.length - 1]) >= fin - 1 ? fin : Math.max(0, Math.min(fin, x(on[0]) - 8));
+  }
+  window.mostrarElegidosEnFila = mostrarElegidosEnFila;
   window.esCovid = esCovid;
   window.esCovidPares = esCovidPares;
   window.marcaCovidHtml = marcaCovidHtml;

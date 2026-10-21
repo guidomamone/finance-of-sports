@@ -148,8 +148,8 @@ const FIN_ANIOS = (function(){
       if(esCovid(clubId, e.y)) b.insertAdjacentHTML('beforeend', marcaCovidHtml('s', false));
       fila.appendChild(b);
     });
-    // En celular la fila se scrollea de costado: que arranque mostrando lo más nuevo.
-    fila.scrollLeft = fila.scrollWidth;
+    // En celular la fila se scrollea de costado: que arranque mostrando lo elegido (mostrarElegidosEnFila(), js/finanzas-calc.js).
+    mostrarElegidosEnFila(fila);
 
     const vacio = caja.querySelector('.fin-years-empty');
     vacio.hidden = n !== 0;

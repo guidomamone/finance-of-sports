@@ -875,6 +875,8 @@ Texto movido sin cambios.
   un `::after` (tocar la cifra o la barra abre el club); las pastillas de ejercicio miden 44 hasta 700 px; «← Todas las ligas», «Ver el informe original»,
   «Abrir todos / Cerrar todos» y cada país de la lista, 44; el buscador de la lista ocupa su caja; el plegable «ligas sin datos» se toca entero
   (márgenes negativos, sin cambiar cómo se ve). Los links dentro de un párrafo quedan exceptuados.
+- LA FILA DE CHIPS DE EJERCICIO EN EL TELÉFONO (Finanzas y Comparar, `mostrarElegidosEnFila()` en `js/finanzas-calc.js`): arranca en lo más
+  nuevo, salvo que así no se vea ningún ejercicio elegido; ahí arranca con el más viejo de los elegidos contra el borde izquierdo.
 - LO ABIERTO EN LA LISTA DE LIGAS: los países que el visitante abre o cierra a mano y el plegable de las ligas sin datos se guardan en memoria
   (`frio.pais`, `frio.sinDatos` en `js/liga.js`) y vuelven igual con atrás; «Abrir todos / Cerrar todos» los borra, y un cambio de filtro vuelve
   `abiertos` al de siempre.
