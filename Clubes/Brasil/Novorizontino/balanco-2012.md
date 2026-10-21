@@ -1,0 +1,361 @@
+> **⚠️ ESCANEADO, TRANSCRIPTO CON MISTRAL OCR (ver Admin/Archive/test-costo-transcripcion.md).** El único
+> error de calidad real que encontramos en el test de comparación fue justo en un documento así: en
+> celdas dañadas/tapadas/rotadas, Mistral no avisa que no está seguro -- devuelve un número con la
+> misma confianza que uno bien leído. Antes de usar este archivo para cargar datos al sitio,
+> verificá a mano contra el PDF cualquier cifra que use (no alcanza con que el tie-out cierre, un
+> total mal leído puede colar igual si no hay una fuente independiente para comparar). Borrar esta
+> nota una vez verificado.
+
+--- pág. 1 ---
+
+DEMONSTRACAO DO RESULTADO DO EXERCICIO (Valores em Reais)
+
+Folha: 00093
+
+Empresa: GREMIO NOVORIZONTINO (0263)
+
+CNPJ/CPF: 04.728.712/0001-82
+
+End.: RUA PRUDENTE DE MORAES 500--CENTRO - CEP: 14960-000
+
+Município: Novo Horizonte
+
+UF: SP
+
+Emitido em: 31/12/2012
+
+Período: Janeiro a Dezembro de 2012
+
+Data do encerramento: 31/12/2012
+
+NIRE: 000858
+
+Dt.Registro: 16/10/2001
+
+# RECEITA BRUTA OPERACIONAL
+
+1.301.688,36
+
+DOACOES RECEBIDAS
+
+23.534,18
+
+SUBVENCÕES E CONVÊNIOS MUNICIPAL
+
+119.142,62
+
+RECEITA PATROCINIO E PUBLICIDADE
+
+711.565,33
+
+RECEITA DE LOCAÇÃO DE CADEIRAS DE ASSOCIADOS
+
+43.847,05
+
+VENDAS DE INGRESSOS
+
+387.359,18
+
+CONVENIO PREF. MUN. CMDCA
+
+12.000,00
+
+DIREITOS FEDERATIVOS DE ATLETAS
+
+4.240,00
+
+# RECEITA LIQUIDA OPERACIONAL
+
+1.301.688,36
+
+RECEITA LIQUIDA SERVICOS
+
+1.301.688,36
+
+LUCRO BRUTO DE SERVICOS
+
+1.301.688,36
+
+# DESPESAS/RECEITAS OPERACIONAIS
+
+(1.343.485,82)
+
+DESPESAS ADMINISTRATIVAS
+
+(563.752,55)
+
+DESPESAS TRIBUTARIAS
+
+(3.526,86)
+
+DESPESAS FINANCEIRAS
+
+(3.629,05)
+
+DESPESAS OPERACIONAIS
+
+(641.611,65)
+
+RECEITAS FINANCEIRAS
+
+216,41
+
+CONVENIO PREF.N.HORIZ. 08/2012- ESCOLA FUTEBOL
+
+(131.182,12)
+
+OPERACIONAL
+
+(41.797,46)
+
+ANTES DA CONTRIBUICAO SOCIAL
+
+(41.797,46)
+
+ANTES DO IMPOSTO DE RENDA
+
+(41.797,46)
+
+LIQUIDO
+
+(41.797,46)
+
+Novo Horizonte - SP / 31 DE DEZEMBRO DE 2012
+
+FERNANDO BRUNI CARDOSO
+
+CRC: 1SP243969/O-0
+
+CPF: 222.912.748-99
+
+RG: 26.189.831-0
+
+GREMIO NOVORIZONTINO
+
+GEMILSON DA ROCHA SANTOS
+
+PRESIDENTE
+
+CPF: 181.577.438-00 RG: 18.819.133-1
+
+--- pág. 2 ---
+
+Balanço Patrimonial (Valores em Reais)
+
+Folha: 00094
+
+Empresa: GREMIO NOVORIZONTINO (0263)
+
+CNPJ/CPF: 04.728.712/0001-82
+
+End.: RUA PRUDENTE DE MORAES 500--CENTRO - CEP: 14960-000
+
+Município: Novo Horizonte
+
+UF: SP
+
+Emitido em: 31/12/2012
+
+Período: Janeiro a Dezembro de 2012
+
+Data do encerramento: 31/12/2012
+
+NIRE: 000858
+
+Dt.Registro: 16/10/2001
+
+# A T I V O
+
+595.873,82
+
+# ATIVO CIRCULANTE
+
+84.412,59
+
+NUMERARIOS
+
+969,46
+
+CAIXA
+
+969,46
+
+BANCOS C/ MOVIMENTO
+
+9.233,13
+
+BANCO BRADESCO S/A
+
+9.132,87
+
+CAIXA ECON. FEDERAL
+
+100,26
+
+OUTROS CREDITOS
+
+74.210,00
+
+ADIANT A FUNCIONARIOS
+
+7.400,00
+
+BRASIL OIL
+
+60.000,00
+
+LOCAÇÕES A RECEBER
+
+6.810,00
+
+# ATIVO NÃO CIRCULANTE
+
+511.461,23
+
+IMOBILIZADO
+
+9.361,23
+
+IMOBILIZADO
+
+6.777,23
+
+MOV E UTENSILIOS
+
+1.050,00
+
+MARCAS E PATENTES
+
+600,00
+
+EQUIPAMENTOS ELETRONICOS
+
+3.590,83
+
+EXTINTORES
+
+1.536,40
+
+MOVEIS, UTENS.E INSTALACOES
+
+2.584,00
+
+INTANGIVEL
+
+502.100,00
+
+MARCAS DIREITOS E PATENTES
+
+2.100,00
+
+FILIAÇÃO A FED PAULISTA FUTEBO
+
+500.000,00
+
+![img-0.jpeg](img-0.jpeg)
+
+--- pág. 3 ---
+
+Balanço Patrimonial (Valores em Reais)
+
+Folha: 00095
+
+Empresa: GREMIO NOVORIZONTINO (0263)
+
+CNPJ/CPF: 04.728.712/0001-82
+
+End.: RUA PRUDENTE DE MORAES 500--CENTRO - CEP: 14960-000
+
+Município: Novo Horizonte
+
+UF: SP
+
+Período: Janeiro a Dezembro de 2012
+
+Data do encerramento: 31/12/2012
+
+NIRE: 000858
+
+Emitido em: 31/12/2012
+
+Dt.Registro: 16/10/2001
+
+PASSIVO 595.873,82
+
+PASSIVO CIRCULANTE 74.298,40
+
+OBRIG.COMERCIAIS/INDUSTRIAIS 21.519,83
+
+FORNECEDORES DIVERSOS 21.519,83
+
+NEREU ROSA ALIMENTOS 5.785,50
+
+CIA NAC.ENERGIA ELETRICA 2.710,21
+
+FAUSTUR TURISMO LTDA 6.550,00
+
+VIVO TELEFONICA BRASIL S/A 1.144,85
+
+ARTEC REFRIGERAÇÃO LTDA 180,00
+
+ROGERIO RODRIGUES DA SILVA SOR 120,00
+
+LUCAS DOS SANTOS SILVA-ASSESSO 4.100,00
+
+AUTO BEIRA RIO LTDA 929,27
+
+OBRIGACOES SOCIAIS 52.778,57
+
+SALARIOS A PAGAR 39.712,02
+
+INSS A RECOLHER 6.546,57
+
+PIS S/FOLHA PAGTO.A RECOLHER 488,73
+
+FGTS A RECOLHER 4.154,21
+
+IRRF A RECOLHER 1.403,54
+
+CONFEDERATIVA A RECOLHER 473,50
+
+PASSIVO NAO CIRCULANTE 641.203,00
+
+EMPREST/FINANC/ARREND. MERC. 574.393,00
+
+MUTUO PESSOA FISICA 8.993,00
+
+MUTUO PESSOA JURIDICA 565.400,00
+
+RECEITAS EXERCICIOS SEGUINTES 66.810,00
+
+RECEITAS A APROPRIAR 66.810,00
+
+PATRIMONIO LIQUIDO (119.627,58)
+
+LUCROS OU PREJ ACUMULADOS (77.830,12)
+
+PREJUIZOS/DEFICIT ACUMULADOS (77.830,12)
+
+CONTAS DE RESULTADO (41.797,46)
+
+DEFICIT DO EXERCICIO (41.797,46)
+
+Reconhecemos a exatidão do presente Balanço Patrimonial, cujo Ativo e Passivo estão uniformes na mesma importância de R$ 595.873,82.
+
+( QUINHENTOS E NOVENTA E CINCO MIL OITOCENTOS E SETENTA E TRES REAIS E OITENTA E DOIS CENTAVOS )
+
+Ressalvando que a responsabilidade do profissional contabilista, fica restrita apenas ao aspecto meramente técnico desde que reconhecidamente operou com elementos dados e comprovantes fornecidos pela gerência da firma que se responsabiliza pela sua exatidão e veracidade, bem como pelos estoques considerados levantados pela referida gerência e sob sua total e exclusiva responsabilidade
+
+Novo Horizonte - SP / 31 DE DEZEMBRO DE 2012
+
+FERNANDO BRUNI CARDOSO
+
+CRC: 1SP243969/O-0
+
+CPF: 222.912.748-99 RG: 26.189.831-0
+
+GREMIO NOVORIZONTINO
+
+GENILSON DA ROCHA SANTOS
+
+PRESIDENTE CPF: 181.577.438-00 RG: 18.819.133-1
