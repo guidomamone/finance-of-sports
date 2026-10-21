@@ -96,6 +96,8 @@ const FIN_MULTI_PL = (function(){
     });
     const N = cols.length + 3;
     const primero = datos[0], ultimo = datos[datos.length - 1];
+    // un tramo corto (menos de 12 meses, esTramoCorto) en una punta: el Δ en plata no se calcula (seis meses contra doce se lee como una caída)
+    const deltaCorto = esTramoCorto(clubId, primero.y) || esTramoCorto(clubId, ultimo.y);
 
     const repDe = (d, src) => src === 'ov' ? d.ov : d.rep;
     const metaDe = (d, src) => src === 'ov' ? d.ovMeta : d.meta;
@@ -143,7 +145,7 @@ const FIN_MULTI_PL = (function(){
         const dif = v1 - v0;
         return `<span class="${Math.round(dif) === 0 ? '' : (key === 'gastos' ? dif < 0 : dif > 0) ? 'pl-up' : 'pl-down'}">${dif > 0 ? '+' : ''}${dif.toFixed(0)} pp</span>`;
       }
-      if(!v0) return '—';
+      if(!v0 || deltaCorto) return '—';
       const gasto = key === 'gastos';
       const p = gasto ? (Math.abs(v1) - Math.abs(v0)) / Math.abs(v0) * 100 : (v1 - v0) / Math.abs(v0) * 100;
       const bueno = gasto ? p < 0 : p > 0;
@@ -486,7 +488,9 @@ const FIN_MULTI_KPIS = (function(){
       const v0 = i0 >= 0 ? serie[i0] : null;
       const v1 = serie[serie.length - 1];
       let cmp = '';
-      if(v0 != null && v1 != null && i0 < serie.length - 1){
+      // un tramo corto en una punta: sin comparación de flujos (ingresos, gastos, resultado); la deuda neta es un saldo y se compara igual
+      const corto = k !== 'nd' && i0 >= 0 && (esTramoCorto(clubId, datos[i0].y) || esTramoCorto(clubId, ultimo.y));
+      if(v0 != null && v1 != null && i0 < serie.length - 1 && !corto){
         const desde = lab(datos[i0].y);
         if(k === 'ing' || k === 'gas'){
           if(v0){

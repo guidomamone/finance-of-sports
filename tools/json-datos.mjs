@@ -156,8 +156,11 @@ export function aJson(c, { exportadoEn = new Date().toISOString().slice(0, 10), 
   j.years = [...anios].sort((a, b) => a - b).map((y) => {
     const o = { fiscal_year: y }; const m = d.fiscalYearMeta[y];
     o.period_end = cierreEjercicio(m, ficha, y);
+    // period_months (opcional, aditivo): solo en un ejercicio que no es de 12 meses y se cargó como año (tramo corto de transición sin hueco,
+    // Admin/CONVENCIONES-DATOS.md). Sin el campo, el ejercicio es de 12 meses. Uno de menos de 12 queda fuera del ranking por año, la mediana y las variaciones.
+    if (m && has(m, 'periodMonths')) o.period_months = m.periodMonths;
     if (m) {
-      for (const k of Object.keys(m)) if (!has(META_DIRECTA, k) && !has(FINANCIERO, k) && !has(TOTALES, k) && !has(FX, k) && !has(META_ADJ, k)) falla(`${id} ${y}: fiscalYearMeta trae "${k}", que el esquema no conoce`);
+      for (const k of Object.keys(m)) if (k !== 'periodMonths' && !has(META_DIRECTA, k) && !has(FINANCIERO, k) && !has(TOTALES, k) && !has(FX, k) && !has(META_ADJ, k)) falla(`${id} ${y}: fiscalYearMeta trae "${k}", que el esquema no conoce`);
       for (const [k, n] of Object.entries(META_DIRECTA)) if (has(m, k)) o[n] = m[k];
       const fx = {}; for (const [k, n] of Object.entries(FX)) if (has(m, k)) fx[n] = m[k]; if (Object.keys(fx).length) o.fx = fx;
     }
@@ -203,9 +206,10 @@ export function deJson(j) {
   for (const y of j.years) {
     if (has(y, 'revenue')) d.revenueLinesByYear[y.fiscal_year] = y.revenue.map(lin);
     if (has(y, 'expenses')) d.expenseLinesByYear[y.fiscal_year] = y.expenses.map(lin);
-    const hay = ['currency', 'source_id', 'report_type', 'management_id', 'fx', 'financial', 'official_totals', 'adjustments'].some((k) => has(y, k));
+    const hay = ['period_months', 'currency', 'source_id', 'report_type', 'management_id', 'fx', 'financial', 'official_totals', 'adjustments'].some((k) => has(y, k));
     if (!hay) continue;
     const m = {};
+    if (has(y, 'period_months')) m.periodMonths = y.period_months;
     for (const [k, n] of Object.entries(META_DIRECTA)) if (has(y, n)) m[k] = y[n];
     if (y.fx) for (const [k, n] of Object.entries(FX)) if (has(y.fx, n)) m[k] = y.fx[n];
     if (y.financial) for (const [k, n] of Object.entries(FINANCIERO)) if (has(y.financial, n)) m[k] = y.financial[n];
@@ -298,10 +302,11 @@ export function validar(j, { categorias = null, externos = null } = {}) {
   const lineas = (arr, r, lado) => { if (!Array.isArray(arr)) return err(r, 'tiene que ser una lista'); arr.forEach((l, i) => { const rr = `${r}[${i}]`; if (!claves(l, ['category', ...Object.values(LINEA)], rr, ['label', 'category', 'subcategory', 'amount'])) return; if (typeof l.label !== 'string') err(rr, 'label tiene que ser un texto'); if (has(l, 'disclosure') && !DISCLOSURE.includes(l.disclosure)) err(rr, `disclosure "${l.disclosure}" desconocido`); if (!ES_NUM(l.amount)) err(rr, 'amount tiene que ser un número finito'); const tDep = categorias && categorias.deportes && deporte ? categorias.deportes[deporte] : null; if (categorias && !(tDep ? (has(tDep.revenue, l.subcategory) || has(tDep.expense, l.subcategory)) : [...categorias.revenue, ...categorias.expense].includes(l.subcategory))) err(rr, `subcategoría "${l.subcategory}" que no está en la taxonomía de ${deporte || 'futbol'} (data/category-map.js)`); else if (categorias && categorias.genericCategoryOf && deporte) { const g = categorias.genericCategoryOf(deporte, lado, l.subcategory); if (l.category !== g) err(rr, `category "${l.category}" no es la genérica de "${l.subcategory}" (${lado}): es "${g}" (data/category-map.js)`); } /* una categoría del otro lado (exceptional_items en ingresos, regla de CONVENCIONES-DATOS; el costo de las camisetas de Atlético Mineiro) NO es un aviso acá: la vigila audit.js (categoria-cruzada) con su lista revisada en tools/audit-ignore.json */ if (has(l, 'items') && !itemsOk(l.items)) err(rr, 'items tiene que ser una lista de [texto, número] o [texto, número, subitems]'); }); };
   const anios = new Set();
   (Array.isArray(j.years) ? j.years : (err('years', 'tiene que ser una lista'), [])).forEach((y, i) => {
-    const r = `years[${y && y.fiscal_year}]`; if (!claves(y, ['fiscal_year', 'period_end', 'currency', 'fx', 'source_id', 'report_type', 'management_id', 'revenue', 'expenses', 'financial', 'official_totals', 'adjustments'], r, ['fiscal_year', 'period_end'])) return;
+    const r = `years[${y && y.fiscal_year}]`; if (!claves(y, ['fiscal_year', 'period_end', 'period_months', 'currency', 'fx', 'source_id', 'report_type', 'management_id', 'revenue', 'expenses', 'financial', 'official_totals', 'adjustments'], r, ['fiscal_year', 'period_end'])) return;
     if (!Number.isInteger(y.fiscal_year)) err(r, 'fiscal_year entero'); if (anios.has(y.fiscal_year)) err(r, 'año repetido'); anios.add(y.fiscal_year);
     if (i && j.years[i - 1].fiscal_year >= y.fiscal_year) err(r, 'los años tienen que ir ordenados');
     if (!FECHA_RE.test(y.period_end || '')) err(r, 'period_end AAAA-MM-DD');
+    if (has(y, 'period_months') && !(Number.isInteger(y.period_months) && y.period_months >= 1 && y.period_months <= 36 && y.period_months !== 12)) err(r, `period_months "${y.period_months}": entero de 1 a 36 y distinto de 12 (sin el campo, el ejercicio es de 12 meses)`);
     if (has(y, 'currency') && !/^[A-Z]{3}$/.test(y.currency || '')) err(r, `currency "${y.currency}" no es ISO 4217`);
     if (has(y, 'fx')) claves(y.fx, Object.values(FX), `${r}.fx`);
     if (y.source_id != null && !fuentes.has(y.source_id) && !(externos && externos.fuentes.has(y.source_id))) aviso(r, `source_id "${y.source_id}" no está en sources[] ni en el registro de fuentes de data/clubs.js`);

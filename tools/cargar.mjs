@@ -353,11 +353,27 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       const cierres = registro.filter((x) => x.pdf !== pdf && dirname(x.pdf) === dirname(pdf) && x.periodo?.tipo === 'anual' && x.periodo?.cierre).map((x) => ({ pdf: x.pdf, ym: String(x.periodo.cierre).slice(0, 7), cierre: x.periodo.cierre }));
       const ant = cierres.find((c) => c.ym === ym(per.cierre, -per.meses)); const sig = cierres.find((c) => c.ym === ym(per.cierre, 12));
       const diaDespues = (f) => { const d = new Date(`${f}T00:00:00Z`); d.setUTCDate(d.getUTCDate() + 1); return d.toISOString().slice(0, 10); };
-      if (ant && (sig || per.meses > 12)) transicion = { meses: per.meses, inicio: per.inicio || diaDespues(ant.cierre), cierre: per.cierre, anterior: ant.cierre, siguiente: sig?.cierre || null };
+      // TRAMO CORTO DE TRANSICIÓN SIN HUECO (votación 2 a 1 y Guido: C, Admin/CONVENCIONES-DATOS.md). Para uno de menos de 12 meses, además de
+      // (a) el anterior termina donde empieza el tramo y (b) el siguiente cierra 12 meses después, (c) ningún anual conocido lo contiene: un cierre
+      // anual estrictamente entre el del anterior y el del siguiente se superpone con el tramo (un semestral dentro de un ejercicio cuyo anual
+      // existe: Juve Stabia, Estrela da Amadora). Pasa: se carga como el año del cierre con `periodMonths` y su nota. No pasa: es parcial y se
+      // registra solo en documentos-parciales.txt con lo que falta (abajo), sin caso en la cola. Casos: Fiorentina 2020 y Genoa 2024 (pasan), Parma 2020 (falla a).
+      // (otro documento del MISMO cierre, una memoria o el consolidado del mismo ejercicio, no cuenta: es este ejercicio, no uno que lo contenga)
+      const contiene = per.meses < 12 ? cierres.filter((c) => c.ym > ym(per.cierre, -per.meses) && c.ym < ym(per.cierre, 12) && c.ym !== String(per.cierre).slice(0, 7)) : [];
+      if (ant && (sig || per.meses > 12) && !contiene.length) transicion = { meses: per.meses, inicio: per.inicio || diaDespues(ant.cierre), cierre: per.cierre, anterior: ant.cierre, siguiente: sig?.cierre || null };
+      else if (per.meses < 12) P.tramoFalta = [!ant && `el ejercicio anterior, con cierre en ${ym(per.cierre, -per.meses)}`, !sig && `el siguiente, con cierre en ${ym(per.cierre, 12)}`, contiene.length && `que ningún anual lo contenga (lo contiene ${contiene.map((c) => basename(c.pdf)).join(', ')})`].filter(Boolean);
     }
     if (transicion) { P.transicion = transicion; P.avisos.push(`ejercicio de transición por cambio de cierre (${per.meses} meses al ${per.cierre}): encadena con el cierre anterior ${transicion.anterior}${transicion.siguiente ? ` y el siguiente ${transicion.siguiente}` : ''}; se carga como el año, con nota pública (to-do 237 ab)`); }
     else if (primero) { P.primerEjercicio = primero; P.avisos.push(`primer ejercicio de la sociedad (${per.meses} meses${per.inicio ? `, desde ${per.inicio}` : ''}): la columna del año anterior no tiene importes; se carga como el año, con nota pública`); }
-    else if (per.tipo !== 'anual') frena('periodo', `el documento cubre un período ${per.tipo}${per.meses ? ` de ${per.meses} meses` : ''}${per.cierre ? ` al ${per.cierre}` : ''}: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)`);
+    else if (P.tramoFalta) {
+      const linea = `${pdf} # cubre ${per.inicio || '?'} a ${per.cierre} (${per.meses} meses) # falta: ${P.tramoFalta.join('; ')} # cargar.mjs, ${HOY}; tramo corto que no encadena (CONVENCIONES-DATOS, tramo corto)`;
+      const fp = resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt');
+      const ya = existsSync(fp) && readFileSync(fp, 'utf8').split('\n').some((l) => l.replace(/\s+#.*$/, '').trim() === pdf);
+      // también en el ensayo (sin --escribir): cargar-lote.mjs ensaya primero y un documento frenado no llega a --escribir. Es idempotente (una línea por documento).
+      if (!ya) appendFileSync(fp, linea + '\n');
+      frena('periodo', `tramo corto de ${per.meses} meses al ${per.cierre} que no encadena sin hueco: falta ${P.tramoFalta.join('; ')}. Es parcial: ${ya ? 'ya estaba' : 'quedó registrado'} en Admin/registros/documentos-parciales.txt (sin caso en la cola)`);
+    }
+    else if (per.tipo !== 'anual') frena('periodo',`el documento cubre un período ${per.tipo}${per.meses ? ` de ${per.meses} meses` : ''}${per.cierre ? ` al ${per.cierre}` : ''}: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)`);
     if (per.nombreNoCoincide) frena('periodo', `el nombre del archivo dice otro cierre que el contenido (${per.cierre || '?'}): confirmar qué ejercicio es antes de cargarlo`);
   }
   if (!e.md || !existsSync(resolve(ROOT, e.md))) { return corta('registro', 'no hay .md en disco'); }
@@ -1327,6 +1343,8 @@ export function escribir(P) {
       ...(M.incluidoEn ? ['incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.'] : []),
       ...(M.sinDesglose ? ['sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.'] : [])]);
     const metaJ = {
+      // tramo corto de transición (menos de 12 meses, ver «TRAMO CORTO» en proponer): sus meses, para sacarlo del ranking, la mediana y los Δ
+      ...(P.transicion && P.transicion.meses < 12 ? { periodMonths: P.transicion.meses } : {}),
       currency: M.currency, ...(M.fxRef ? { fxRef: M.fxRef } : M.fx != null ? { fx: r6(M.fx), fxSource: M.fxSource } : {}),
       sourceId: M.sourceId, reportType: M.reportType, gestionId: M.gestionId != null ? M.gestionId : null,
       profitOnPlayerSales: 0, assetSales: 0, netInterest: r6(M.netInterest ?? null), tax: r6(M.tax ?? null),
@@ -1343,6 +1361,7 @@ export function escribir(P) {
     if (!(P.reemplaza && cargarSitio().sources?.[S.id])) {
       const dmy = (f) => f.split('-').reverse().join('/');
       const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).`
+        : P.transicion && P.transicion.meses < 12 && P.transicion.inicio ? `Ejercicio de transición de ${P.transicion.meses} meses por cambio de la fecha de cierre: del ${dmy(P.transicion.inicio)} al ${dmy(P.transicion.cierre)}. No es comparable con un año de 12 meses.`
         : P.transicion ? `Ejercicio de transición por cambio de fecha de cierre: ${P.transicion.inicio ? `del ${dmy(P.transicion.inicio)} ` : ''}al ${dmy(P.transicion.cierre)} (${P.transicion.meses} meses).` : null;
       // (to-do 345, Auditora 5) el año salió de un informe XHTML (iXBRL): lo dice el encabezado del .md que escribe xhtml-aarsrapport.mjs. La fuente nace sin url, así que la página de fuentes lo dice con esta frase
       // (el PDF de ancla es la impresión de Chrome, no se publica como si fuera el original; la url del depósito oficial la pone fuente.mjs).
