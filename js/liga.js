@@ -412,7 +412,7 @@ window.LIGA_VIEW = (function(){
       activa.appendChild(linea);
     });
     activa.appendChild(el('p', 'liga-sim-chico', t('liga.sim.caveat',
-      'Solo por ingresos, comparado contra los clubes con ejercicio cargado en el sitio — no es una posición en la tabla real, no hay puntos ni fixture de por medio.')));
+      'Solo por ingresos, comparado contra los clubes con ejercicio cargado en el sitio. No es una posición en la tabla real, no hay puntos ni fixture de por medio.')));
 
     var fila = el('div', 'liga-sim-fila');
     fila.appendChild(selectorDeLigaSimulada());
@@ -463,7 +463,7 @@ window.LIGA_VIEW = (function(){
       candidatosLigas.forEach(function(lid){
         var co = paisDe(lid);
         var b = el('button', 'liga-sim-resultado liga-sim-resultado-liga',
-          (co.flag || '🏆') + ' ' + ligaDe(lid).name + ' — ' + t('liga.sim.ligaCompleta', 'liga completa'));
+          (co.flag || '🏆') + ' ' + ligaDe(lid).name + ' · ' + t('liga.sim.ligaCompleta', 'liga completa'));
         b.type = 'button';
         b.addEventListener('click', function(){ buscadorQ = ''; agregarLigaCompleta(lid, null); });
         resultados.appendChild(b);
@@ -495,7 +495,7 @@ window.LIGA_VIEW = (function(){
           var lg = ligaDe(lid), co = paisDe(lid);
           var o = document.createElement('option');
           o.value = lid;
-          o.textContent = (co.flag || '🏆') + ' ' + lg.name + ' — ' + (co.key ? t(co.key, co.name) : '');
+          o.textContent = (co.flag || '🏆') + ' ' + lg.name + ' · ' + (co.key ? t(co.key, co.name) : '');
           if(lid === st.league) o.selected = true;
           grp.appendChild(o);
         });

@@ -44,7 +44,7 @@ window.I18N.strings.en = {
   "cuenta.login.title": "Sign in with Google",
   "cuenta.logout.button": "Sign out",
   "cuenta.more": "more",
-  "cuenta.searches.empty": "Nothing saved yet — it saves on its own next time you pick a club.",
+  "cuenta.searches.empty": "Nothing saved yet. It saves on its own next time you pick a club.",
   "cuenta.searches.title": "Your searches",
   "cuenta.sub": "Sign in to keep your searches saved.",
   "cuenta.title": "My Account",
