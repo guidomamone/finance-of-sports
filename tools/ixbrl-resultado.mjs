@@ -58,25 +58,25 @@ function numero(txt, formato) {
 }
 
 // hechos nonFraction de nombre local `nombre` con contexto válido que termina en `cierre`
-function hechos(src, nombre, cierre, aceptar) {
+export function hechos(src, nombre, cierre, aceptar) { // nombre null = todos los conceptos
   const ctx = contextos(src); const out = [];
   for (const m of src.matchAll(/<ix:nonFraction\b([^>]*)>([\s\S]*?)<\/ix:nonFraction>/g)) {
-    const a = m[1]; if (local(attr(a, 'name')) !== nombre) continue;
+    const a = m[1]; if (nombre && local(attr(a, 'name')) !== nombre) continue;
     const c = ctx.get(attr(a, 'contextRef')); if (!c || c.fin !== cierre || !aceptar(c.dims)) continue;
     const txt = m[2].replace(/<[^>]+>/g, '');
     const n = numero(txt, attr(a, 'format')); if (n == null) { out.push({ ilegible: txt.trim() }); continue; }
     const escala = Number(attr(a, 'scale') || 0); const dcm = attr(a, 'decimals');
     const valor = (attr(a, 'sign') === '-' ? -1 : 1) * n * 10 ** escala;
     const tol = dcm == null || /^inf$/i.test(dcm) ? 0 : 0.5 * 10 ** (-Number(dcm));
-    out.push({ valor, tolM: tol / 1e6, inicio: c.inicio, txt: txt.trim() });
+    out.push({ valor, tolM: tol / 1e6, inicio: c.inicio, txt: txt.trim(), n: local(attr(a, 'name')) });
   }
   return out;
 }
 const unico = (hs) => { const ok = hs.filter((h) => !h.ilegible); if (hs.some((h) => h.ilegible)) return { estado: 'formato', detalle: hs.find((h) => h.ilegible).ilegible }; if (!ok.length) return { estado: 'sin-hecho' }; const v = ok[0]; if (ok.some((h) => Math.abs(h.valor - v.valor) > Math.max(h.tolM, v.tolM) * 1e6)) return { estado: 'ambiguo', valoresM: ok.map((h) => h.valor / 1e6) }; return { estado: 'ok', valorM: v.valor / 1e6, tolM: Math.max(...ok.map((h) => h.tolM)), inicio: v.inicio }; };
 
 // Sin ejes / solo el eje de grupo consolidado (regla (f))
-const sinEjes = (d) => d.length === 0;
-const grupo = (d) => d.length === 1 && d[0][0] === 'GroupCompanyDataDimension' && d[0][1] === 'Consolidated';
+export const sinEjes = (d) => d.length === 0;
+export const grupo = (d) => d.length === 1 && d[0][0] === 'GroupCompanyDataDimension' && d[0][1] === 'Consolidated';
 function elegir(src, nombres, cierre, perimetro) {
   const per = String(perimetro || '').toLowerCase();
   if (per !== 'consolidado' && per !== 'individual') return { estado: 'perimetro', detalle: perimetro || 'sin dato' };
