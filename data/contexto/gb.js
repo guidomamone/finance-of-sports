@@ -115,6 +115,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Elland Road","capacidad":37608,"sponsor":"BOXT","marca":"Adidas","temporada":"2023–24 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374030992"},
     2025: {"estadio":"Elland Road","capacidad":37608,"sponsor":"Red Bull","marca":"Adidas","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
+  'lincolncity-gb': {
+    2025: {"estadio":"LNER Stadium (Sincil Bank)","capacidad":11400,"sponsor":"Branston","marca":"Oxen","temporada":"2024–25 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378041093","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Lincoln_City_F.C._season; sponsor: https://www.weareimps.com/news/branston-continue-front-shirt-sponsorship","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'liverpool-gb': {
     2022: {"estadio":"Anfield","capacidad":53394,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2023: {"estadio":"Anfield","capacidad":53394,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
