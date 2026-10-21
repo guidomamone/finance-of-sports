@@ -152,6 +152,10 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   OJO CON LA SINTAXIS: un id con guion NO es una clave JS válida sin comillas, así que en
   `data/clubs.js` va `'racing-es': { id:'racing-es', ... }`, con la clave entre comillas. Se
   descubrió rompiendo el archivo al probar el chequeo.
+  EL ID DE UN CLUB NUEVO LO PONE `tools/alta-club.mjs`, nadie a mano: slug del nombre de la carpeta más el país. Si la sesión cree que hace
+  falta otro, la pregunta va a la Auditora antes del alta: después de publicado, cambiarlo exige un alias para siempre. Una referencia a un club
+  (un alias de `tools/club-league-reference/alias.json`, una entrada de `data/club-leagues/`) se agrega en el mismo commit del alta o después,
+  nunca antes; `audit.js` lo vigila (`referencia-a-club-inexistente`).
   EL FORMATO ES `<slug>-<iso2>` PARA TODOS, con el `country` de `clubs.js`. Un id nunca se reutiliza ni
   se borra de la historia: si un club cambia de id, el viejo pasa a `data/club-aliases.js` (alias →
   id vivo, sin cadenas, y un alias nunca es también un id vivo) y queda para siempre, porque hay links
