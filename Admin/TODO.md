@@ -24,35 +24,34 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 313 y el 335 (mails) quedan para más adelante (E).
+Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B, C y D; E queda para después. Dentro de cada bloque,
+el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-* Lo que está en marcha va marcado en B y C.
+1. 241 (Pipeline 9): link propio por club y liga: el generador de páginas, el rewrite de Netlify y la imagen al compartir (la ruta en `js/principal.js` ya está)
+2. 332 (Pantallas 6): sección «Informes» en Ligas, como lista de informes (sección 4 de `Admin/sourcing/Inglaterra/informes-futbol-ingles.md`)
 
 **B. Pantallas y distribución**
-* 337 (en marcha, Onboarding 7): completar las 5 grandes ligas, Brasil y Argentina, transcribiendo con Mistral (ok de Guido); primero medir qué falta y el presupuesto
-* 241 (ok de Guido; la ruta en `js/principal.js` ya está; en marcha: Pipeline 9 el generador, el rewrite y las imágenes): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
+3. 247: registro público de correcciones (ok de Guido a las 4 recomendaciones del plan; después del 241)
 
-**C. Técnico (cuando haya tiempo; nada urgente)**
-* 332 (ok de Guido; después del 241, Pantallas 6): sección «Informes» en Ligas, como lista de informes (sección 4 de `Admin/sourcing/Inglaterra/informes-futbol-ingles.md`)
-* 336: lo mismo que el 332 para cada liga ya cargada, y buscar estos informes cada vez que se abre una liga nueva (paso de skill, con el texto para tu ok)
-* 248: taxonomía genérica y subcategorías por deporte
-* 247 (ok de Guido a las 4 recomendaciones del plan; se implementa después del 241): registro público de correcciones (sobre 245)
-* 249: API en dominio propio (último; no construirla ahora)
-* 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): elegir cuáles van a hook o a audit.js (Pipeline)
-* 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+**C. Técnico**
+4. 336: informes como los del 332 para cada liga ya cargada, y un paso de skill para buscarlos al abrir una liga (texto para tu ok)
+5. 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): cuáles van a hook o a audit.js
+6. 248: taxonomía genérica y subcategorías por deporte
+7. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+8. 249: API en dominio propio (el último de C; no construirla todavía)
 
 **D. Orden de la casa**
-* 330 (después del 246 y el 245, decisión de Guido): revisar todo el proyecto buscando dónde se gastan tokens en decidir o descubrir cosas que después se pierden (decisiones en el chat o en notas de sesión que no llegan a una regla, a un registro ni a una tool; hallazgos que no se leen nunca); proponer dónde tiene que quedar cada cosa
-* 257: skills que faltan
-* 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes corriendo en ningún worktree
-* 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
-* 258: índice partido por país o liga (cuando la skill de escala lo diga)
+9. 330: dónde se gastan tokens en decidir o descubrir cosas que después se pierden, y dónde tiene que quedar cada una
+10. 278 y 287: carpetas duplicadas con `tools/mudar-carpetas.mjs` (la principal, sin lotes corriendo)
+11. 257: skills que faltan
+12. 237 al: anexo UEFA para abrir las ventas
+13. 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
-**E. Más adelante (Guido, 2026-10-20)**
-* 313: contenido y difusión: X, Instagram y el material para periodistas y sponsors (después del 337 y el 241; con el 257)
-* 335: mails a clubes (une el proceso de mails, lo que quedaba de quién audita y el check-in de outreach)
-
+**E. Después de A a D (Guido, 2026-10-20)**
+14. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+15. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+16. 335: mails a clubes
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
     ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, paridad PTE, aa, q (POC y q1/q2), k, w, am, l (vecino sin
@@ -151,3 +150,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
    (clubes y años, con `tools/faltantes-liga.mjs` y `Admin/ESTADO-clubes.md`) y proponerle a Guido el umbral de «bien cargada». Ojo: completar
    se transcribe con Mistral (Guido, 2026-10-20: excepción a la regla de no transcribir, solo para estas ligas).
+   Medido (Onboarding 7, 2026-10-20; detalle en `Admin/sesiones/onboarding.md`): club-años 2021-25 cargados: Premier 74/100, Serie A 72/100,
+   Brasil 46/100, Bundesliga 24/90, LaLiga 18/60, Argentina 32/138, Ligue 1 0. Propuesta: umbral 90% (Argentina 60%) cargado o cerrado
+   con motivo; ~US$160. Abiertas: el umbral y la plata (Guido); Ligue 1 desde el DNCG (criterio a la Auditora); listas de equipos que
+   faltan (Pipeline).

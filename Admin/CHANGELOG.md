@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 886 — Plan numerado en orden de trabajo; el 337 queda para después de A a D (2026-10-20) [337]
+
+- ORDEN de `Admin/TODO.md` numerado del 1 al 16 en el orden en que se trabaja. 337 medido (Onboarding 7) y pasado a E, antes del 313.
+
 ## Versión 885 — La app esconde la página estática del 241 (2026-10-20) [241]
 
 - `js/principal.js` esconde `#pagina-estatica` al arrancar, si existe (el bloque sin JS que va a generar Pipeline en `/club/<id>` y `/liga/<id>`). ASSET_V 1531.
