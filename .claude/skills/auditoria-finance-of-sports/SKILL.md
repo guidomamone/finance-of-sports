@@ -1,6 +1,6 @@
 ---
 name: auditoria-finance-of-sports
-description: Auditoría de rutina del proyecto finance-of-sports. El chequeo transversal y periódico de que el sitio entero está sano y va a seguir estándolo, distinto de la verificación de onboarding (que revisa el club que se acaba de cargar) y de auditAll() (que revisa que los totales cierren). Busca problemas de datos que un total correcto NO delata, cosas que se van a romper cuando el proyecto escale a cientos de clubes o a otros deportes, bugs de runtime, y dónde se puede ahorrar tokens sin resignar exactitud. Usar cuando Guido pida una auditoría, cada ~5 clubes nuevos, antes de un push grande, o cuando algo se sienta raro y no haya un síntoma concreto que perseguir. Acepta un eje: `datos`, `escala`, `codigo`, `docs`, `tokens`.
+description: Auditoría de rutina del proyecto finance-of-sports. El chequeo transversal y periódico de que el sitio entero está sano y va a seguir estándolo, distinto de la verificación de onboarding (que revisa el club que se acaba de cargar) y de auditAll() (que revisa que los totales cierren). Busca problemas de datos que un total correcto NO delata, cosas que se van a romper cuando el proyecto escale a cientos de clubes o a otros deportes, bugs de runtime, y dónde se puede ahorrar tokens sin resignar exactitud. Usar cuando Guido pida una auditoría, cada ~5 clubes nuevos, antes de un push grande, o cuando algo se sienta raro y no haya un síntoma concreto que perseguir. Acepta un eje: `datos`, `escala`, `codigo`, `docs`, `tokens`, `ux`.
 ---
 
 # Auditoría de rutina de finance-of-sports
@@ -51,7 +51,7 @@ nombra**, no el vecino ni el motor entero. Un hallazgo sin archivo detrás no se
 
 ### Capa 3: un eje de juicio, rotando
 
-Un solo eje por auditoría, no los cinco. Cuál toca sale del reporte anterior (cada uno registra el
+Un solo eje por auditoría, no los seis. Cuál toca sale del reporte anterior (cada uno registra el
 suyo); si Guido pidió uno explícito (`/auditoria escala`), ese manda.
 
 | Eje | Qué mirar, que el script no puede |
@@ -61,6 +61,7 @@ suyo); si Guido pidió uno explícito (`/auditoria escala`), ese manda.
 | `codigo` | Con el sitio levantado: consola limpia, re-render que no duplica listeners, charts que se destruyen, `loadClubData()` con un club que falla, toggles combinados (moneda × formato × club × año). |
 | `docs` | Qué dice dos veces lo mismo, qué se lee en cada sesión sin usarse, qué está desactualizado respecto de los datos (`node tools/generate-club-index.js --check`). **También la memoria de la sesión principal** (`~/.claude/projects/<proyecto>/memory/`): memorias repetidas entre sí o con una skill o una convención, y memorias que son una regla de trabajo y tendrían que ser una skill, una convención o un chequeo. Cada una se lista con a dónde va. |
 | `tokens` | Dónde se van los tokens de una sesión típica, y qué de eso es automatizable. **Con el §4 de este skill al lado.** |
+| `ux` | Con el sitio levantado, a escritorio y a 375 px: recorrer entera `producto-y-pantalla-finance-of-sports/referencia/ux.md` sobre las vistas principales (Inicio, un club, Comparar, Ligas, una liga, un sponsor), cada punto con su prueba. Lo que no cumple va a `Admin/TODO.md` como punto de Pantallas, con la prueba que falla y el caso. Una falla que un script puede detectar (un 404 después de navegar, un área de toque chica, scroll horizontal) se propone además como chequeo. |
 
 ---
 
