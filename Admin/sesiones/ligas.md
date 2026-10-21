@@ -390,3 +390,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: diseño del 237 al (anexo que abre las ventas), 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: el paso determinista de `extraer.mjs` con la compuerta de cuatro partes (Mafra 2023-24, AS Roma 2009), APROBADO CON DOS CAMBIOS. Sin codear.
+
+### Qué queda (para TODO / 237)
+
+- Antes de codear: (1) control de falsos positivos (la misma compuerta contra los renglones de otro documento o con el estado barajado; tiene que dar 0 de N); (2) el paso se salta si el ejercicio ya está cargado en el sitio y, si se salta, imprime qué habría reemplazado; probar Mafra 2023-24 y AS Roma 2009 con y sin ese año cargado.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
