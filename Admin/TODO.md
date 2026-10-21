@@ -28,8 +28,8 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 345 (Onboarding 8): la cola del lote 130, Girona 2021-23, RAAL, SønderjyskE 2023, los daneses, Hvidovre, København individual, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020; la liga de Burnley, Girona y Fredericia (hasta US$12 en total)
-2. 353 (Pipeline 13): el aviso del resultado en cuentas de grupo británicas y que `faltantes` no frene por la fecha ni por PDFs sin enlazar (esperan a la Auditora); ¿cargar los británicos chicos en iXBRL? (decisión tuya)
+1. 345 (Onboarding 8): Omonia 2024, líneas del auditor y caja y deuda, la serie de Girona; después Fiorentina 2020 y Genoa 2024 (tramo corto); los XHTML que faltan con el 356
+2. Tramo corto y COVID (Pipeline 14): el tramo corto en `cargar.mjs`, `period_months` y la exclusión de rankings; la marca COVID (Pantallas 6, con guías de marca)
 3. 355: Lierse son dos clubes (BCE distintos, Auditora 5); falta que cada ficha diga de quién es sucesora y los 3 alias de liga (Onboarding 8)
 4. 347 (Auditora 5): corridas de P2 y P3 (ya: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`, `outlier-liga`, `gestion-club-inexistente`, `ejercicio-sin-rastro`, `salto-interanual`, `escala-implausible`)
 5. 352 (Auditora 5, con lo que cargue Onboarding 8): decidir si el chequeo del iXBRL pasa de aviso a frenar
@@ -67,7 +67,14 @@ el número de la izquierda es el orden de trabajo.
 345. DOCUMENTOS EN MANO SIN CARGAR (Pruebas 1, 2026-10-21, revisando `ejercicio-sin-rastro`). Lista con rutas en `Admin/sesiones/pipeline.md`,
    «Revisión de la cola del chequeo»: Chapecoense 2019, FC Emmen 2020-21, FC Fredericia 2021-25, los 2025 daneses en XHTML (ESEF), SønderjyskE
    2023-24, Fredrikstad 2019-23, Sarpsborg 08 2009-11, Vålerenga 2024, Genoa 2024, Girona 2021-23, Lierse Kempenzonen 2022, RAAL 2020, Omonia 29is
-   Maiou 2024. Es un lote de onboarding: necesita presupuesto de Guido. El XHTML danés no lo lee el pipeline hoy.
+   Maiou 2024. Cargados (Onboarding 8, tope US$17, van ~US$12,9): Brøndby 2021, København 2025, Fredericia 2021-25, Emmen 2020-21,
+   Chapecoense 2019, Vålerenga 2024, Girona 2021-23, Nordsjælland 2025, Vejle 2025, Goiás 2018-20, RAAL 2020, Novorizontino 2012; descartados
+   Fredrikstad 2019-23 y Sarpsborg 2009-11 (sociedades de derechos), Lierse Kempenzonen 2022. Falta: (a) Onboarding: Omonia 2024 (reintento y
+   gestión en `data/gestiones/cy.js`), las líneas del auditor y el ensayo de caja y deuda de los años cargados, y la serie de Girona
+   (resultado por venta de jugadores en línea en 2021-23 y en `financial.profit_on_player_sales` en 2020 y 2025); (b) Fiorentina 2020 y Genoa
+   2024, cuando Pipeline codee el tramo corto; (c) los XHTML que faltan (SønderjyskE 2022-23, Hvidovre 2025, Brøndby 2025, el consolidado PSE
+   de København) esperan el escalón de etiquetas del 356; Pipeline: Hvidovre (cifras sin separadores), el PSE de København (12 % de líneas
+   ubicadas) y el `ProfitLoss` ambiguo de Brøndby 2025.
 347. P2 Y P3 SIN PROCESO (Guido, 2026-10-21: «armemos algo para los P2 y P3»). Hoy hay ~370 P2 y ~1.000 P3 que nadie revisa (los más:
    `linea-duplicada` 927, `catchall-dominante` 256, `sin-salarios` 48). Propuesta en `Admin/propuestas/p2-p3-y-roles.md`: cada auditoría baja
    un código (muestra de cinco, decisión por el código entero, registro antes y después). Ya está en la skill de auditoría (ok de Guido);
@@ -98,11 +105,6 @@ el número de la izquierda es el orden de trabajo.
    tope de US$3 para la categorización, con ensayo gratis antes. Relevado (`Admin/sesiones/datos.md`): 54 de 68 sociedades tienen iXBRL en
    los últimos 5 años (22 en los 5). Se bajan las cuentas completas de los últimos 3 cierres (69 archivos, 45,5 MB, dentro del tope de 50 MB);
    el resto (cuentas pequeñas y años anteriores, hasta 84 MB) también se baja: Guido subió el tope (2026-10-21).
-353. LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21). Medido (`Admin/mediciones/companies-house-ixbrl.md`): los grandes presentan PDF; 9 de 36
-   clubes probados vienen en iXBRL (Nottingham Forest, Burnley y Bath Rugby, cargados; Plymouth, Bolton, Lincoln, Oxford, Peterborough e
-   Hibernian, no). Probado con Forest, Burnley y Bath: `xhtml-aarsrapport.mjs` ya lee el iXBRL británico sin cambios y el `.md` cierra contra
-   los totales. Queda: el aviso del resultado da falso en cuentas de grupo (el consolidado viene con un eje; condición con la Auditora), y
-   cargar con este camino los clubes chicos y medianos británicos que están en iXBRL (decisión de alcance: Guido).
 355. LIERSE CON DOS IDS (Auditora 5, 2026-10-21). `liersekempenzonen-be` (2018-21) y `liersesk-be` (2022-25), mismas ligas: parece el mismo
    club con otro nombre. Unirlos cambia un id público (contrato de datos): lo decide Guido. Antes, confirmar con los documentos que no sea el
    Lierse SK que quebró en 2018.
