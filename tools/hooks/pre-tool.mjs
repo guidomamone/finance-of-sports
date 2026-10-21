@@ -21,6 +21,8 @@
 //   comandos-simples        (deny) un Bash con /tmp suelto, `cd … &&`, o `$(…)`/`${…}`/`$VAR` fuera de comillas simples: no se puede chequear antes de
 //                            correr y pide permiso cada vez (to-do 327, C-1). Pasan el scratchpad de la sesión y el heredoc de `git commit`.
 //   no-importar-tools       (deny) `node -e` con import()/require() de un archivo de tools/ (salvo data-clubes.js y rutas.mjs): lo ejecuta (C-5).
+//   merge-en-worktree       (deny) `git merge` / `git pull` dentro de un worktree (menos `merge-tree`, `merge-base` y `--abort`): lo hace la principal (C-4).
+//   plan-en-worktree        (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
 import { execFileSync } from 'node:child_process';
@@ -79,14 +81,17 @@ function pushConOk(cmd) {
   if (GIT_SUB('push').test(cmd)) decidir('ask', 'git push necesita el ok explícito de Guido cada vez (un push a main despliega el sitio en Netlify).');
 }
 
+// Un worktree tiene su propio git-dir; la principal, no. Si git falla (otro repo, sin git) se asume que no.
+function estaEnWorktree() {
+  try { return git(['rev-parse', '--path-format=absolute', '--git-dir']).trim() !== git(['rev-parse', '--path-format=absolute', '--git-common-dir']).trim(); }
+  catch { return false; }
+}
+
 function docsDeLaPrincipal(cmd) {
   const DOCS = /Admin\/(TODO|CHANGELOG|ESTADO)\.md\b/;
   const toca = EDITA.includes(herramienta) ? DOCS.test(rutaEditada()) : bashEscribeEn(cmd, DOCS);
   if (!toca) return;
-  let enWorktree;
-  try { enWorktree = git(['rev-parse', '--path-format=absolute', '--git-dir']).trim() !== git(['rev-parse', '--path-format=absolute', '--git-common-dir']).trim(); }
-  catch { return; }
-  if (!enWorktree) return;
+  if (!estaEnWorktree()) return;
   let rama = '<rama>';
   try { rama = git(['rev-parse', '--abbrev-ref', 'HEAD']).trim(); } catch {}
   decidir('deny', `Esto es un worktree: Admin/TODO.md, CHANGELOG.md y ESTADO.md los escribe solo la principal. Lo que iba ahí va en `
@@ -133,8 +138,25 @@ function noImportarTools(cmd) {
   }
 }
 
+// En un worktree no se mergea ni se hace pull: ni la rama a main ni main a la rama; el merge lo hace la sesión principal (to-do 327, C-4).
+// `merge-tree` y `merge-base` no tocan nada y sirven para anticipar conflictos; `merge --abort` deshace.
+function mergeEnWorktree(cmd) {
+  if (!GIT_SUB('(?:merge|pull)(?![-\\w])').test(cmd) || /--abort\b/.test(cmd) || !estaEnWorktree()) return;
+  decidir('deny', 'Esto es un worktree: el merge (y el pull) lo hace la sesión principal, ni la rama a main ni main a la rama. Para anticipar conflictos '
+    + 'usá git merge-tree (no toca nada) y anotalos en Admin/sesiones/<rama>.md; para traer main a la rama, la tool sync_with_base_branch de la app.');
+}
+
+// `EnterPlanMode` en un worktree: aprobar un plan pasa la sesión a acceptEdits y pide permiso para todo (to-do 327, C-3). Solo el Enter: si la
+// sesión ya está en modo plan, el Exit tiene que poder salir. Diseños y preguntas van en el chat.
+function planEnWorktree() {
+  if (herramienta === 'EnterPlanMode' && estaEnWorktree()) {
+    decidir('deny', 'Las sesiones de worktree no usan modo plan ni el panel Plan: aprobar un plan las pasa a acceptEdits y piden permiso para todo. Diseños y preguntas van en el chat.');
+  }
+}
+
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
-if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); }
+if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); mergeEnWorktree(cmd); }
+planEnWorktree();
 skillsConOk(cmd);
 pushConOk(cmd);
 docsDeLaPrincipal(cmd);
