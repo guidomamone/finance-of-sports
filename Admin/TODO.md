@@ -31,7 +31,7 @@ el número de la izquierda es el orden de trabajo.
 * Lo que está en marcha va marcado en cada bloque.
 
 **C. Técnico**
-1. 341 (Pipeline 11): los 12 arreglos que se hicieron a mano para cargar Bath (`frenados-por-script.jsonl`), para que la próxima carga no los repita
+1. 341 (Pipeline 12): quedan, de lo que Bath se hizo a mano, el estadio y sponsor de rugby, los textos de los prompts que dicen «fútbol», y el diseño de cómo un alta propone una liga y un deporte nuevos (decisión tuya)
 2. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 3. 249: API en dominio propio (el último de C; no construirla todavía)
 

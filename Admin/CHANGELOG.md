@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 910 — Tanda 2 de lo que Bath se hizo a mano (2026-10-21) [341]
+
+- `caja-deuda.mjs`: un escalón más para inferir la escala de la caja, y el total de personal sin rótulo como candidato de `--personal`. `armar-a-mano` acepta un subtotal sin rótulo con etiqueta sintética. `ajustes.mjs --etiqueta-diferencia`. `tools/fuente.mjs` edita título, url y nota pública de una fuente. Aprobado por Auditora 4. El redondeo de una nota queda como criterio de datos, no en una tool.
+
 ## Versión 909 — Tanda 1 de lo que Bath se hizo a mano (2026-10-20) [341]
 
 - `lote.mjs --sin-api` valida si es gratis o frena con el costo y el comando; `validar-bloques` encadena verificar e inventario. `alta-club --deshacer` (y `index.html` vuelve a HEAD solo si su diff es ASSET_V). `mistral-ocr-transcribe --pagina N` rehace una sola página. `tools/publicar.mjs`: sube ASSET_V una vez, regenera, corre `audit.js` y revierte lo suyo si falla. Aprobado por Auditora 4.
