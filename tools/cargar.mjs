@@ -1338,7 +1338,8 @@ export function escribir(P) {
         : P.transicion ? `Ejercicio de transición por cambio de fecha de cierre: ${P.transicion.inicio ? `del ${dmy(P.transicion.inicio)} ` : ''}al ${dmy(P.transicion.cierre)} (${P.transicion.meses} meses).` : null;
       // (to-do 345, Auditora 5) el año salió de un informe XHTML (iXBRL): lo dice el encabezado del .md que escribe xhtml-aarsrapport.mjs. La fuente nace sin url, así que la página de fuentes lo dice con esta frase
       // (el PDF de ancla es la impresión de Chrome, no se publica como si fuera el original; la url del depósito oficial la pone fuente.mjs).
-      const notaXhtml = /xhtml-aarsrapport\.mjs/.test(readFileSync(resolve(ROOT, e.md), 'utf8').slice(0, 400)) ? 'Informe oficial en formato XHTML (iXBRL)' : null;
+      // (`e` no existe en escribir(P): el .md de la propuesta es P.md; sin él, o ilegible, no hay nota)
+      const notaXhtml = (() => { try { return P.md && /xhtml-aarsrapport\.mjs/.test(readFileSync(resolve(ROOT, P.md), 'utf8').slice(0, 400)) ? 'Informe oficial en formato XHTML (iXBRL)' : null; } catch { return null; } })();
       const notaPublica = [notaPrimero, P.suma?.nota, notaXhtml].filter(Boolean).join(' ');
       fuenteNueva = { id: S.id, clubId: S.clubId, title: S.title, type: S.type, reliability: S.reliability, ...(notaPublica ? { publicNote: notaPublica } : {}) };
       if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
