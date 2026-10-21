@@ -299,10 +299,12 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 - Ahora avisan, sin cambiar lo que se pide ni ninguna decisión: `caja-deuda.mjs` (`71bb67cb19`; 162 documentos cortan en las 120 filas a Jev, 0 en los 60.000 caracteres a la IA y en las 150 filas de personal), `perimetro-senales.mjs` (`edaeb90506`; 110 cortan en los 6000 caracteres a Jev, texto idéntico en los 3.763) y `alta-club.mjs` `nombreLegal` (`3f5e21eb2e`; 356 pasan las 4000 líneas).
 - El detalle, con casos: `p15-recortes.md` en la carpeta de notas compartidas de la principal.
 
+### 6. `emisorDe` lee el archivo entero si hace falta (`27f4857971`, Auditora 5)
+
+- Primero los 600 KB y, si ahí no está el `identifier`, el archivo entero. Antes, 17 de 249 XHTML quedaban sin emisor (AGF 2022-25, AaB 2025, Brøndby 2025, el PSE de FCK, Silkeborg 2025 en el byte 2,69 MB); ahora 0, y los 249 tardan 342 ms (el más lento, 48 ms). Aceptación: Silkeborg 2025 encuentra su XHTML, compara y pasa (25,799); ningún otro año cargado cambia.
+
 ### Qué queda (Pipeline 15)
 
 - Cuatro decisiones del barrido, para la auditora (la 5 está archivada; el mensaje no llegó): (1) Jev con todas las filas del balance en `caja-deuda.mjs` (162 documentos; las de deuda son las que quedan afuera); (2) los encabezados de balance de la página entera y no de sus primeros 1500 caracteres (287 páginas; `--medir` probado IDÉNTICO y revertido); (3) `nombreLegal` entero (cambia 63 de 356, mezclado; propuesta: dejar el corte con aviso); (4) intermedio en 20000 caracteres (leyendo entero, 394 anuales pasarían a intermedio; propuesta: aceptarlo como ventana de portada) → TODO nuevo (Pipeline, con la auditora).
 - `cabecera` de `perimetroHeredado` (`cargar.mjs:215-220`) se calcula y no la lee nadie → HALLAZGOS.
-
 - Que la skill `auditoria-finance-of-sports` (eje datos) y la de la cola digan «antes de reportar algo raro de un documento, `node tools/rarezas.mjs --md <ruta>`»: es donde se repite la relectura. Texto para la principal (la Auditora se lo pasa) → regla.
-- `emisorDe`: mandado a la Auditora 5 (sección 7). Medido: 17 de 249 XHTML con el emisor después de los 600 KB; leyendo entero gana la segunda lectura un solo año cargado, Silkeborg 2025, que coincide (25,799). Los demás con la cabecera lejos: AGF 2022-25, AaB 2025, Brøndby 2025 y el PSE de FCK (Silkeborg 2025: byte 2,69 MB) → TODO nuevo (Pipeline, espera el veredicto).

@@ -94,11 +94,15 @@ export function leerResultadoIxbrl(xhtmlAbs, cierre, perimetro) {
   return { resultado: elegir(src, ['ProfitLoss'], cierre, perimetro), ingresos: elegir(src, ['Revenue', 'TurnoverRevenue', 'Turnover'], cierre, perimetro) };
 }
 
-// El emisor del XHTML (el `xbrli:identifier` de sus contextos: CVR, número de Companies House): lee solo el comienzo del archivo, donde está el ix:header.
+// El emisor del XHTML (el `xbrli:identifier` de sus contextos: CVR, número de Companies House). Primero el comienzo del archivo (600 KB, donde suele
+// estar el ix:header) y, si ahí no está el identifier, el archivo ENTERO (Auditora 5, regla de PIPELINE.md «Una tool que decide no lee solo una parte
+// del documento»): en 17 de 249 XHTML el ix:header está más abajo (Silkeborg 2025, en el byte 2,69 MB) y el año cargado de PDF se quedaba sin la segunda lectura.
+const IDENTIFIER_RE = /<(?:[\w-]+:)?identifier\b[^>]*>\s*([^<\s]+)\s*</;
 export function emisorDe(xhtmlAbs) {
   const fd = openSync(xhtmlAbs, 'r'); const b = Buffer.alloc(600000); const n = readSync(fd, b, 0, b.length, 0); closeSync(fd);
-  const cabeza = b[0] === 0x1f && b[1] === 0x8b ? leerXhtmlTexto(xhtmlAbs).slice(0, 600000) : b.toString('utf8', 0, n);
-  return ((cabeza.match(/<(?:[\w-]+:)?identifier\b[^>]*>\s*([^<\s]+)\s*</) || [])[1] || '').replace(/[^0-9A-Za-z]/g, '');
+  const gz = b[0] === 0x1f && b[1] === 0x8b;
+  const m = (gz ? leerXhtmlTexto(xhtmlAbs).slice(0, 600000) : b.toString('utf8', 0, n)).match(IDENTIFIER_RE) || (n === b.length || gz ? leerXhtmlTexto(xhtmlAbs).match(IDENTIFIER_RE) : null);
+  return ((m || [])[1] || '').replace(/[^0-9A-Za-z]/g, '');
 }
 // Un año cargado de PDF puede contrastarse con un XHTML de la carpeta del club SI es del mismo emisor (su identificador figura en el .md del año) y del mismo cierre (lo decide el contexto
 // del hecho). Devuelve la ruta si hay exactamente uno.
