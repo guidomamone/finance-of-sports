@@ -27,7 +27,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 313 y el 335 (mails) quedan para más adelante (E).
 
 **A. En marcha**
-* 333: queda solo Mi Cuenta: una búsqueda guardada con un id viejo se duplica al volver a guardarla; pide una migración SQL en Supabase o que `save_search` busque también por la clave vieja (son pocas filas)
+* Lo que está en marcha va marcado en B y C.
 
 **B. Pantallas y distribución**
 * 334 (en marcha, Pipeline 9): `suma-entidades.mjs` pone el prefijo «AS · » / «Elite · » al sumar dos entidades, para que una recarga no lo pise
@@ -145,9 +145,6 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    UEFA, los de la Premier League, la EFL o la FA). Para cada uno: quién lo publica, si es público, qué años y clubes cubre, y para qué
    sirve: contrastar lo ya cargado (totales por club y por liga), completar años o clubes que faltan, o dar contexto en Ligas. Solo
    sourcing y una nota en `Admin/sourcing/Inglaterra/`; no se transcribe ni se carga nada sin decisión de Guido.
-333. MI CUENTA CON IDS VIEJOS (revisión Opus del 245 y el 246, 2026-10-20). Lo demás del 333 está hecho. Queda: una búsqueda guardada en
-   `saved_searches` con un id viejo genera otro `state_hash` al volver a guardarse y queda duplicada. Arreglo: una migración SQL en Supabase,
-   o que `save_search` busque también por la clave vieja. El parche de `js/cuenta.js` que se rechazó, en la nota de Pipeline 8.
 334. PREFIJO DE ENTIDAD EN LA SUMA (cierre de Pantallas 4, 2026-10-20). Vålerenga 2022 y 2023 llevan «AS · » y «Elite · » en cada etiqueta, puesto a mano
    en el JSON. Si `cargar.mjs` vuelve a escribir esos años, lo pisa: `combinar()` de `tools/suma-entidades.mjs` tiene que ponerlo. Ålesund usa el mismo ajuste.
 335. MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta

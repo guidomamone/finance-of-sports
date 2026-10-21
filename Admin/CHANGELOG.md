@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 881 — 333 cerrado sin cambios (2026-10-20) [333]
+
+- Mi Cuenta: una búsqueda guardada antes del 246 con un id viejo puede quedar duplicada al volver a guardarla. Se acepta así (pocas filas, se borra desde Mi Cuenta); no se migra `saved_searches`.
+
 ## Versión 880 — Diseño del registro público de correcciones (2026-10-20) [247]
 
 - Plan y mockup (`Admin/mediciones/247-plan.md`): correcciones generadas del historial de git de cada JSON de club, página `correcciones.html`, bloque en Finanzas y dato abierto en `data/correcciones/`. Sin código; espera el ok de Guido.
