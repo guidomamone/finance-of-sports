@@ -7,8 +7,8 @@ cambio usar, cómo se escribe su procedencia (`fxSource`/`fxRef`) y en qué sent
 
 - **Todos los clubes tienen toggle [moneda nativa / USD] en vivo**, con CUALQUIER moneda (ARS, BRL, CLP, COP, PEN, EUR, etc.). 
   `Admin/ARQUITECTURA.md`, "Monedas y tipo de cambio", tiene el modelo completo y es lectura obligatoria antes de onboardear un club
-  fuera de Argentina. Se guardan los montos en la moneda NATIVA del documento (`amountNative`, en millones de esa moneda, tal cual
-  el balance/presupuesto), con `fiscalYearMeta[year].currency`/`fx` diciendo en qué moneda está y con qué tipo de cambio convertir.
+  fuera de Argentina. Se guardan los montos en la moneda NATIVA del documento (`amount` en el JSON del club, en millones de esa moneda: `unit.scale = 1000000`, escrito en cada archivo; tal cual
+  el balance/presupuesto), con `years[].currency` y `years[].fx` diciendo en qué moneda está y con qué tipo de cambio convertir.
   La conversión pasa al renderizar (`yearMetaFor(clubId, year)` + `toDisplayValue`, en `js/finanzas-calc.js`). Nunca guardes un
   valor ya convertido, para ningún club.
 - **El toggle SIEMPRE es [moneda nativa del club] <-> USD, nunca entre 2 monedas no-USD** (ej. nunca ARS<->BRL en vivo). USD es el

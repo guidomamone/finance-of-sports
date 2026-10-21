@@ -32,14 +32,16 @@ está resumida en la sección 5 y el detalle en `referencia/fx.md`.
   categoría nueva: probablemente ya está.
   REGLA: `category-map.js` tiene que reflejar EXACTAMENTE los `normalizedCategory` que usan los datos reales. Al agregar o usar una
   `normalizedCategory` nueva, actualizá `category-map.js` EN LA MISMA sesión, sin dejarlo como pendiente (ejemplo de lo que pasa si
-  no: `category-map.js` documentaba `transfer_income_gross`, que ningún dato usaba, mientras `racing-data.js` usaba `player_sales`
+  no: `category-map.js` documentaba `transfer_income_gross`, que ningún dato usaba, mientras un data file usaba `player_sales`
   sin que figurara en `REVENUE_CATEGORIES`; el motor funcionaba igual y por eso nadie lo corrigió). Los buckets del motor genérico
   (`GENERIC_SIMPLIFIED_REVENUE_BUCKETS`/`_EXPENSE_BUCKETS`, en `js/finanzas-calc.js`) no leen `category-map.js` en vivo, tienen su
   propia lista: si tocás uno, sincronizá el otro a mano (dónde vive cada archivo: `Admin/ARQUITECTURA.md`, la lista de archivos del principio, donde figuran `data/category-map.js` y `data/currency-map.js`).
 - `normalizedCategory` es una clave INTERNA: la usan `computeYearGeneric()` y `sumCat()` para los KPIs de Finanzas, los gráficos y
   `wagesToTurnover`. NUNCA se muestra. Lo que ve el usuario es `rawLabel`, tal cual lo escribe el club: no lo traduzcas ni lo prolijes.
 - El motor genérico (`computeYearGeneric`, para todos los clubes) espera `revenueLines`/`expenseLines`: arrays de
-  `{ rawLabel, normalizedCategory, amountNative, disclosureLevel, items? }`. `items` es el desglose recursivo del renglón (sección 4).
+  `{ rawLabel, normalizedCategory, amountNative, disclosureLevel, items? }`. En el JSON del club los campos se llaman
+  `{ label, category, amount, disclosure, items? }` (`amount` en millones de la moneda del club, `unit.scale = 1000000`); el data file
+  generado y el motor usan los nombres de siempre. `items` es el desglose recursivo del renglón (sección 4).
 
 ## 1. Elegir `normalizedCategory`: cuándo darle una propia y cuándo mandarlo a "other"
 
@@ -53,7 +55,7 @@ Busca el texto exacto (o parecido) contra lo YA categorizado en otros años del 
 rubro puede significar cosas distintas según el lado: Boca, "Futbol Femenino" ingreso vs. "Fútbol femenino" gasto). Resultados:
 `EXACTO` (misma categoría entre años: usarla), `PARECIDO` (candidato a revisar, no aceptar sin más), `SIN_PRECEDENTE` (criterio de
 esta sección, de cero), `CONFLICTO` (el mismo texto tuvo 2 categorías en años distintos: revisar a mano cuál es correcta). Es una
-consulta, nunca escribe en `data/<país>/<club>-data.js`. `--list` vuelca todo el precedente cargado de un club.
+consulta, nunca escribe en `data/<país>/<club>.json`. `--list` vuelca todo el precedente cargado de un club.
 
 Mapeos usados en la práctica (no es la lista completa de `category-map.js`):
 
@@ -106,11 +108,11 @@ forzada). Consultale a Guido primero, con la discrepancia concreta y las opcione
 ## 2. Resultados financieros (intereses, diferencias de cambio): NUNCA una línea
 
 Intereses ganados/perdidos y diferencias de cambio NO van como `revenueLine`/`expenseLine`, ni siquiera si el documento los muestra
-como una línea más de "Recursos". Van netos (ingresos menos egresos financieros) al campo `netInterest` de `fiscalYearMeta` del año.
+como una línea más de "Recursos". Van netos (ingresos menos egresos financieros) al campo `financial.net_interest` del año (en el JSON; `netInterest` de `fiscalYearMeta` en el data file generado).
 Motivo: es un resultado financiero, no operativo, y meterlo en `revenueLines` lo cuenta como revenue del club.
 
 Mismo criterio para `profitOnPlayerSales`, `assetSales` y `tax`: si el documento los muestra aparte del cuerpo principal de
-Recursos/Gastos, van a `fiscalYearMeta`, no a las líneas.
+Recursos/Gastos, van a `financial` del año, no a las líneas.
 
 ## 3. Transferencias de jugadores: reflejá cómo LO PRESENTA CADA CLUB, no una regla fija
 
@@ -119,7 +121,7 @@ Varía entre clubes y es intencional:
 - **Racing**: el balance reporta "Transferencia de Jugadores" (ingreso) y "Costo Transferencia de Jugadores" (gasto) como dos
   líneas ordinarias separadas, sin netear. El sitio las carga IGUAL, separadas: no hay una línea "ganancia neta por pases" en el
   documento, así que inventar un neteo sería menos fiel.
-- **Boca 2025** (`bocaRevenueLinesByYear`/`bocaExpenseLinesByYear`): el balance auditado reporta las líneas brutas de
+- **Boca 2025** (`revenue`/`expenses` de `years[2025]` en `boca-ar.json`): el balance auditado reporta las líneas brutas de
   transferencias/rescisión (ingreso, `player_sales`) y sus costos asociados (gasto) como líneas ordinarias, SIN netear (pág. 76 del
   balance). Boca no netea a mano en `meta.profitOnPlayerSales`, igual que ningún otro club migrado.
 
@@ -142,7 +144,7 @@ como la suma de sus `items`: no lo dejes en 0 ni inventes un número.
   en `data/currency-map.js`). Un `fx` sin procedencia sale como pendiente en `node tools/audit.js`.
 - Si el propio documento declara su tipo de cambio de cierre, gana ese (regla #0 de `referencia/fx.md`), antes que cualquier cotización
   externa.
-- Nunca se guarda un valor ya convertido: se guarda `amountNative` y la conversión pasa al renderizar.
+- Nunca se guarda un valor ya convertido: se guarda `amount` (JSON) / `amountNative` (data file generado) y la conversión pasa al renderizar.
 - El orden de reglas, las fuentes (`fxSource`), las monedas nuevas y la cotización que no aparece: `referencia/fx.md`.
 
 ## 6. Verificación antes de cargar (no es opcional)
@@ -182,7 +184,7 @@ mano. `--relevant` filtra a las tablas con palabra clave (una ayuda de dónde mi
 
 ## 7. Atribución de gestión: solo si estás seguro
 
-`fiscalYearMeta[year].gestionId` y las entradas de `gestionesByClub` son documentación, no algo que el motor use para filtrar el
+`years[].management_id` y `management[]` del JSON (`gestionId` y `gestionesByClub` en el data file generado) son documentación, no algo que el motor use para filtrar el
 selector "Año a año" (lee directo `Object.keys(fiscalYearMeta)`). Cuándo una gestión queda en `null` y cómo se busca:
 `Admin/CONVENCIONES-DATOS.md`, «una gestión (presidente) sin fuente pública queda en null». Con `null`, el año sigue visible en
 "Año a año", solo no participa de "Por gestión"/"Comparar Gestiones". Mejor un año sin gestión que una gestión inventada.

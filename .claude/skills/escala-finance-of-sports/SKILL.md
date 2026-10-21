@@ -74,6 +74,7 @@ node tools/audit.js                            # grupo `escala`: proyeccion y ar
 | `Admin/sourcing/README.md` (índice de sourcing) | `wc -c Admin/sourcing/README.md`; `ls Admin/sourcing/_indice \| wc -l` | Es un índice de PAÍSES. El detalle línea por club vive en `Admin/sourcing/_indice/<País>.md`. Es el patrón a copiar para cualquier documento "una sección por club": partir por país y dejar un índice |
 | `fuentes.html` y `fuentes/<clubId>.html` | `wc -c fuentes.html`; `ls fuentes/*.html \| wc -l` | `fuentes.html` es un índice de links (una fila por club) y cada página de club crece solo con los documentos de SU club; `sitemap.xml` las lista. Se partió por CLUB y no por país porque es la unidad que el visitante busca y la que puede rankear sola en un buscador |
 | `Admin/ESTADO.md` y `Admin/ESTADO-clubes.md` | `wc -c Admin/ESTADO.md Admin/ESTADO-clubes.md` | El bloque `CLUB-INDEX`, que crece por club, es generado y vive en su propio archivo; `Admin/ESTADO.md` es el snapshot en prosa y no crece por club. El umbral de `checkEscala()` aplica a cada uno por separado. Mismo mecanismo que sacó el comentario interno de `index.html`: bloque generado a archivo propio, puntero de una línea donde vivía |
+| Un club = dos archivos | `ls data/*/*.json \| wc -l`; `ls data/*/*-data.js \| wc -l` | `<id>.json` es la fuente y `<id>-data.js` el generado; el visitante solo baja el JS |
 | `index.html` | `wc -c index.html`, contra el umbral de `checkEscala()` | Sin crecimiento por club: crece por FEATURES (selector, i18n, mezcla). No hay número de clubes que lo dispare. Vigilar el umbral, pero anotarlo para el eje `codigo`, no para este mapa |
 | `CLAUDE.md`, `Admin/TODO.md` | `wc -c CLAUDE.md Admin/TODO.md` | No crecen por club (prosa de proceso). Sanos |
 | `Admin/CHANGELOG.md`, `Admin/finance-of-sports-project.md` | `wc -c Admin/CHANGELOG.md Admin/finance-of-sports-project.md` | Umbrales generosos a propósito (consulta puntual por grep, no lectura entera). Sanos MIENTRAS se mantenga una entrada por lote y no por club individual. Si alguna vez hay que partirlos, no es por tamaño sino porque un grep devuelve decenas de bloques irrelevantes, y eso se arregla primero con un índice. El CHANGELOG ya está partido por época (lo anterior vive en `Admin/Archive/CHANGELOG-v010-v299.md`); no se parte en rangos, una búsqueda tiene que elegir entre dos archivos como mucho |
@@ -127,7 +128,8 @@ ningún archivo de club, para decidir si un ejercicio se etiqueta "2024" o "2023
 `js/liga.js` llaman a `esEjercicioCalendario()` / `ejercicioLabel()` de `js/finanzas-calc.js`, que
 leen `clubs[id].fiscalYearStart`). Moverlo al `data/<país>/<club>-data.js` obligaría a bajar todos los
 archivos de club para escribir una etiqueta, justo lo que el selector existe para evitar. Si se
-retoma, el destino correcto de ese campo es `club-index.js` (que es generado), no el archivo del club.
+retoma, el destino correcto de ese campo es `club-index.js` (que es generado), no el archivo del club. El JSON lleva una copia en
+`club.fiscal_year_start`; la verdad sigue siendo `data/clubs.js`, que hace falta antes de elegir un club (`generar-data.mjs --identidad` la refresca).
 
 Lo que enseñó resolver `club-leagues.js`, para aplicarlo a los otros dos:
 
@@ -170,7 +172,8 @@ Lo que enseñó resolver `club-leagues.js`, para aplicarlo a los otros dos:
 ### E. Namespacing e IDs
 
 - **`clubId` con país**: todos los ids son `<slug>-<iso2>`; los viejos viven en `data/club-aliases.js` (URL, Comparar, Mi Cuenta) y
-  `fuentes/` redirige con 301 desde `netlify.toml`. `tools/audit.js` vigila el formato y el mapa (P1).
+  `fuentes/` redirige con 301 desde `netlify.toml`. `checkClubIds()` de `tools/audit.js` vigila el formato
+  (`clubid-sin-pais`, P1) y el mapa (`alias-roto`, P1).
   `checkColisionSourcing()` lo adelanta al sourcing: lee los `Admin/sourcing/_indice/<País>.md` y avisa (P3)
   cuando un club que alguien está SOURCEANDO coincide con un id pelado ya cargado, o sea antes de
   transcribir nada.

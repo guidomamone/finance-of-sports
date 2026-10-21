@@ -114,6 +114,9 @@ node tools/generate-fuentes-page.js    # fuentes.html, las páginas de club y si
 node tools/generate-rankings.js        # data/rankings/<liga>.js, lo que muestran Inicio y Ligas
 ```
 
+**La fuente de un club es su JSON** (`data/<país>/<club>.json`): a mano, se edita ese archivo y se corre `node tools/generar-data.mjs`
+(el `-data.js` se genera, no se toca); las tools de carga ya lo hacen solas. `audit.js` lo vigila (`json-js-desfasado`, `json-no-valida`, P1).
+
 Y **si subiste `ASSET_V`** —aunque no hayas tocado un solo dato— hay que correr
 `generate-fuentes-page.js` igual: ese generador LEE `ASSET_V` de `index.html` y lo escribe en todas las
 páginas de club, así que sin eso el visitante recibe el JS nuevo en el sitio y el viejo de su caché en la
@@ -140,9 +143,9 @@ página de fuentes.
   Es la respuesta a "¿de dónde salió este número?" sin abrir un solo archivo de club.
 - `node tools/generate-fuentes-page.js`: regenera `fuentes.html`, el listado completo de documentos
   fuente del sitio (la página pública que linkean la ficha de Finanzas y la pestaña Fuentes), desde
-  `sources{}` y los `fiscalYearMeta`. Corrélo después de cargar un club o de tocar una fuente.
+  las fuentes (`sources[]`) y los ejercicios (`years[]`) del JSON de cada club. Corrélo después de cargar un club o de tocar una fuente.
   `--check` avisa si quedó vieja. NO editar `fuentes.html` a mano: se sobrescribe.
-- `node tools/generate-club-index.js` — regenera, desde los propios `data/<país>/<club>-data.js`, la sección
+- `node tools/generate-club-index.js` — regenera, desde el JSON de cada club (`data/<país>/<club>.json`), la sección
   "QUÉ ES REAL POR CLUB" de `Admin/ESTADO-clubes.md`. Corrélo después de onboardear un club
   en vez de escribir el párrafo a mano. `--check` (sin escribir) avisa si la sección quedó
   desactualizada respecto de los datos.
