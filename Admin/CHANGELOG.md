@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 918 — El alta propone una liga y un deporte nuevos (2026-10-21) [341 · 343 · 317]
+- 341: `tools/catalogo-liga.mjs --liga <id>` propone la entrada de `LEAGUES` desde Wikipedia (nombre, país, deporte, nivel; sin IA) y, para un deporte nuevo, lo que falta para activarlo (taxonomía, `CEROS_POR_DEPORTE`, un club, reglas de categoría inválidas: `validarReglasPrompt`). `--escribir` exige la aprobación registrada: la Auditora para una liga, Guido para un deporte. Medido sobre 63 ligas: deporte igual en 60, nivel en 59. Un deporte se activa con un solo club; el nivel de rugby sigue la RFU.
+- `audit.js` no se cae con un enlace roto de worktree.
+- 343: Guido aprobó el texto de la sección 0.5 de club-sourcing (buscar el sponsor con evidencia).
+- 317 a 319: abierta Pruebas 1 (Supabase, Open Notebook, I have ADHD).
+
 ## Versión 917 — Carpetas duplicadas unidas; propuestas de sponsor, skills y mockup de Ligas (2026-10-21) [278 · 287 · 343 · 344 · 257 · 258 · botafogosp-br, omonia29maiou-cy, rcdeportivo-es]
 - 278/287: `mudar-carpetas.mjs` unió las 12 carpetas del manifiesto y los 3 PDFs guardados en el club equivocado (Botafogo-SP 2023 estaba en Botafogo, Omonia 29is Maiou en Omonia Nicosia, RC Deportivo 2021-22 en Alavés): 4 a unir, 24 duplicados a `Admin/Archive/pdfs-duplicados/`, ningún PDF borrado. `carpeta-doble` da 0. El Omonia 29is Maiou 2023-24 quedó en su carpeta, sin cargar.
 - 343: propuesta de buscar el sponsor con evidencia (`Admin/propuestas/343-busqueda-sponsor.md`); la Auditora 4 la aprobó con tres cambios. Sin codear.

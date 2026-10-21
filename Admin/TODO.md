@@ -28,14 +28,14 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 343 (Pipeline 12): buscar el sponsor con evidencia; propuesta lista, falta tu ok al texto de skill
-2. 344 (Pantallas 6): mockup de Ligas listo, falta tu ok
-3. 257 (Orden 1): skills que faltan y dónde se pierde lo decidido; propuestas listas, falta tu ok a cada texto
-4. 341 (Pipeline 12): codear el alta que propone una liga y un deporte nuevos, con tus respuestas
-5. 237 al (Pipeline 12, después del 341): anexo UEFA para abrir las ventas
+1. 343 (Pipeline 12): buscar el sponsor con evidencia; pegar la sección 0.5 y codear la compuerta
+2. 344 (Pantallas 6): mockup de Ligas sin conteos ni plata (cambio tuyo), y separar Escocia y Gales
+3. 257 (Orden 1): skills que faltan; los chequeos aprobados, qué de CONVENCIONES pasa a skill, y cada texto de skill con tu ok
+4. 237 al (Pipeline 12, después del 343): anexo UEFA para abrir las ventas
+5. 317 a 319 (Pruebas 1): Supabase, Open Notebook e I have ADHD
 
 **C. Técnico**
-6. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
+6. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
 
 **D. Orden de la casa**
 7. 338: correr todas las auditorías del proyecto (al final de A)
@@ -134,16 +134,11 @@ el número de la izquierda es el orden de trabajo.
 338. CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
    (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
    `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
-341. LO QUE BATH SE HIZO A MANO (Datos 4, 2026-10-20). Queda el alta que propone una liga o un deporte nuevos (#5) y el aviso de
-   reglas de fútbol al activar un deporte (#14), con el diseño de `Admin/sesiones/onboarding.md`, «Diseño de #5 y #14». Guido (2026-10-21):
-   una liga nueva para un deporte activo la aprueba la Auditora; activar un deporte, Guido; un deporte puede activarse con un solo club;
-   el `tier` de rugby sigue la pirámide de la RFU (Premiership 1, Championship 2) y se compara dentro de un deporte y un país.
-   Menor: el número de línea del aviso `index-file-roto` se corre con comentarios HTML de varias líneas.
 343. BUSCAR EL SPONSOR CON EVIDENCIA (Guido, 2026-10-21): «lo único que quiero es que se haya intentado buscarlo. Auditoría necesita
    evidencia de que buscaste, y no solo Wikipedia». Hoy la compuerta de `estadio-sponsor.mjs` frena sin sponsor salvo `SOLO_ESTADIO` o
    liga amateur. Propuesta: un registro de búsqueda con las fuentes probadas que deja pasar el año sin sponsor, y la skill que dice dónde
-   buscar. Propuesta en `Admin/propuestas/343-busqueda-sponsor.md` (sección 0.5 de club-sourcing). La Auditora la aprobó con tres cambios (lista
-   legacy congelada en un archivo, `archivo-web` cuenta como fuente del club, medir antes de codear). Falta el ok de Guido al texto.
+   buscar. Propuesta en `Admin/propuestas/343-busqueda-sponsor.md` (sección 0.5 de club-sourcing), aprobada por la Auditora con tres cambios y
+   por Guido (2026-10-21). Falta pegar la sección y codear la compuerta, `tools/sponsor-legacy.json` y los chequeos de `audit.js`.
 344. LIGAS DE DISTINTOS PAÍSES Y DEPORTES EN LA PANTALLA LIGAS (Guido, 2026-10-21: «quiero un mockup»). Cómo se agrupan, filtran y ordenan
    al crecer (país, deporte, nivel; el nivel se compara dentro de un deporte y un país) y cómo convive Informes (332). Mockup listo (Pantallas 6): https://claude.ai/artifact/CzmEuNtdt7i2yHNrDDi2Aa y
    `Prototyping/Ligas/mockup-344.html`; falta el ok de Guido. Hallazgo: el país GB se llama «Inglaterra» y agrupa la Premiership escocesa;
