@@ -231,10 +231,30 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 
 - `Admin/mediciones/escalon0-estado-vs-notas.md`: el estado de resultados es el 25 % del costo de localizar y extraer (69 informes británicos y escoceses ya extraídos, costo real del registro de la API). Por la regla de la Auditora (menos del 40 %), el escalón 0 no se codea.
 
+### 7. `periodo.mjs`, escalón 3c (`f08ef2920e`, Auditora 5, sección 8, con tres condiciones)
+
+- El tramo corto se lee de las columnas de los estados: el cierre al lado del cierre anterior (un solo salto de 1 a 11 meses, 2 votos o más, ningún par a 12). Sobre los 3.763 `.md`: cambian 4, Atalanta 2022, Fiorentina 2020, Genoa 2024 y Slavia Praha 2002 (este, un «Výroční zpráva» de 6 meses, sin cargar), todos a semestral de 6 meses. Condición (a): los primeros ejercicios (Kifisia 2022, Volos 2019, RWDM 2019, Anderlecht 2011, RAAL 2018) salen igual; (c) el diff sigue siendo esos 4; (b) es de datos.
+
+### 8. Girona: ajuste `fila --lado financiero --destino profit_on_player_sales` (`2975e2b8d6`, Auditora 5)
+
+- `ajustes.mjs` acepta `--destino`, `verificar.mjs` lo lleva en la fila financiera y `cargar.mjs` la suma al resultado y la escribe en `profitOnPlayerSales` (antes fijo en 0). Girona 2021-23 recargado en un worktree de mentira (con los tres ajustes: `.md` L703, L579, L770): +8,50 / −0,297 / −0,76 M, sin líneas de enajenaciones, resultado = impreso, P0/P1 0; ningún otro club cambia (sí el ranking de es-segunda y los estimados). La recarga real es de Onboarding.
+
+### 9. XHTML del 345
+
+- (a) Hvidovre 2025: hoy pasa las dos compuertas (563 líneas, 98 hechos, todos ocultos); el «93 hechos» del TODO es de antes del arreglo de Pipeline 13.
+- (c) Brøndby 2025 (`c31fa56e34`, HALLAZGOS): no es perímetro (una entidad); el estado de cambios en el patrimonio tiene los períodos cruzados en el XHTML. El resultado 2024/25 es −130,578 M DKK; `ixbrl-resultado` no decide, correcto.
+- (b) PSE de FCK: 2021, 2022 y 2024 pasan. 2023 fallaba (a) por el EPS «34,20» con la etiqueta en «34,2»: escalón 2 de la compuerta (a) (ceros decimales de más, con el separador del `format`), escrito y SIN commitear, en la Auditora (sección 8). Medido sobre los 249 `.xhtml`: cambia solo FCK PSE 2023 (pasa); 248 idénticos. 2025 sigue en (b) 96 % (piso de 98 %, veredicto pendiente desde Pipeline 13).
+- Visto al medir, otro defecto: 9 XHTML daneses dan (b) «0 % ubicadas» (Horsens 2025, Hobro 2025 y 2026, Lyngby 2026, Næstved 2025, Randers 2025, Skive 2025, Viborg 2025): el PDF que imprime Chrome sale sin fuentes ni texto (Næstved: 18 págs, `pdffonts` vacío). Igual antes y después del cambio; no lo perseguí.
+
+### 10. Chipre (`933748ad75`)
+
+- `tools/club-league-reference/cy.json`: Second Division 2023-24 (16 equipos, de la tabla de posiciones: la de estadios no trae a Enosis Neon Paralimni) y First Division 2024-25 (14). Alias «Omonia 29M» = `omonia29maiou-cy` (el id que propone el alta). Propuestas de catálogo: `cy-firstdivision` (tier 1) y `cy-seconddivision` (tier 2), en la Auditora: `catalogo-liga.mjs --escribir` exige su línea. RSSSF (`rsssf.org/tablesc/cyp2024.html`, L669-699) confirma a Omonia 29M 4.º en la fase regular y 2.º y ascendido en la ronda final.
+- `alias.json`: también «Alianza Petrolera» = `alianzafc-co` (`947874ec33`; mismo NIT, la Auditora lo cerró).
+
 ### Qué queda (Pipeline 14)
 
-- `periodo.mjs`: un escalón que lea el rango del ejercicio en el cuerpo del `.md` (o un ajuste `inicio`), para que Fiorentina 2020, Genoa 2024 y Atalanta 2022 entren a la escalera del tramo corto; condición nueva, va a la Auditora → TODO nuevo.
-- Datos (punto 6 de la propuesta, Onboarding): cargar Fiorentina 2020 y Genoa 2024 (antes, sacarlos de `documentos-parciales.txt`: `lote.mjs` saltea lo que está ahí); Atalanta 2022 con `period_months: 6`, nota y fuera de parciales; OH Leuven 2019 (6 meses) y Benfica 2007-08 (11) ya cargados como transición, sin `period_months`: con la REGLA C también deberían llevarlo → TODO nuevo (datos).
-- La marca visual «COVID» (Pantallas, con mockup) y la REGLA de COVID y de tramo corto en `Admin/CONVENCIONES-DATOS.md` (principal) → regla.
-- Alianza FC 2023 en `co-primeraA` por la lista «Alianza Petrolera»: ¿el mismo club renombrado y mudado, o una liga equivocada? Lo decide la Auditora → TODO nuevo (Auditora).
-- Del 345, pedido de la principal: tres arreglos de lectura de XHTML, cada uno por la Auditora: (a) Hvidovre 2025, la compuerta (a) de `xhtml-aarsrapport.mjs` lo rechaza por cifras sin separadores (93 hechos visibles sin su cifra en el `.md`); (b) el consolidado PSE de København 2021-25, 12 % de líneas ubicadas por el texto en cajas; (c) Brøndby 2025, `ProfitLoss` ambiguo (−130,578 / −104,164 M sin ejes): mirar contextos y entidades del `ix:header` → TODO nuevo.
+- Veredictos de la Auditora 5: el escalón 2 de la compuerta (a) de `xhtml-aarsrapport.mjs` (sin commitear en el árbol de esta rama) y las dos ligas de Chipre; con su ok, commitear y `node tools/catalogo-liga.mjs --liga <id> --escribir --full … --name … --aprobado-ref <línea>` → TODO nuevo (Auditora).
+- Punto 8, «la liga de un año necesita dos fuentes» (`Admin/propuestas/liga-dos-fuentes.md`): diseño en la Auditora (fuentes por liga-temporada en la caché, tool de segunda fuente desde RSSSF, `liga-una-fuente` P3 agregado por liga); worldfootball.net da 403 a una lectura mecánica y queda afuera → TODO nuevo.
+- Datos (Onboarding): Atalanta 2022 con `--reemplazar` (period_months 6, nota) sin cambiar otro año; cargar Fiorentina 2020 y Genoa 2024 (sacarlos antes de `documentos-parciales.txt`); OH Leuven 2019 y Benfica 2007-08 con `period_months`; Girona 2021-23 con los tres ajustes `fila --destino profit_on_player_sales`; el alta de Omonia 29 Maiou cuando estén las ligas → TODO nuevo (datos).
+- Los 9 XHTML daneses con PDF de Chrome sin texto («0 % ubicadas») → TODO nuevo.
+- La marca visual «COVID» (Pantallas, con mockup) y las REGLAS de COVID y de tramo corto en `Admin/CONVENCIONES-DATOS.md` (principal) → regla.

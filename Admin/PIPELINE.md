@@ -645,8 +645,8 @@ solo esos 4 cambian, 0 filas a la cola, 0 categorías distintas.
                   documento del mismo cierre no cuenta): tramo de transición por cambio de cierre → se carga como el año del cierre con
                   publicNote y `periodMonths` (fuera del ranking, la mediana y los Δ; OH Leuven 2019, Benfica 2007-08) ─► si no → frena
                   (parcial) y la línea va sola a Admin/registros/documentos-parciales.txt con «falta: …», también en el ensayo, sin
-                  caso en la cola. Ojo: periodo.mjs lee el rango solo en los títulos; Fiorentina 2020, Genoa 2024 y Atalanta 2022 salen
-                  «anual, 12 meses» (la frase está en el cuerpo) y no entran a esta escalera
+                  caso en la cola. Cuántos meses tiene el tramo lo dice periodo.mjs; cuando el rango no está en un título (Fiorentina
+                  2020, Genoa 2024, Atalanta 2022), su escalón 3c lo lee de las columnas: el cierre al lado del cierre anterior
  ETIQUETA REPETIDA se decide por renglón: ver la escalera de la etapa 7 (to-do 232 h y 234)
  SIN CATEGORÍA    fila impresa (con página) que no está en el .categorias.json y nada categorizó ─► frena con su nombre (to-do 232 x;
                   AEK 2024) ─► las demás sin categoría aceptable: más del 5% del dinero del lado frena, menos es aviso y no se cargan
