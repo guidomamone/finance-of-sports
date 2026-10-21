@@ -158,3 +158,17 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: `e500bdab8c`, `c514bddfff` y `deporteODefecto()` desde el registro de altas, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Tres líneas más en `Admin/registros/auditoria-proceso.jsonl`: `e500bdab8c` y `c514bddfff` APROBADOS; la propuesta de que `deporteODefecto()` lea el deporte de `altas-club.jsonl` (y devuelva null si no hay fuente), APROBADA CON DOS CAMBIOS.
+
+### Qué queda (para TODO / 339)
+
+- `deporteODefecto()`: orden ficha, registro de altas (solo con `sport` no nulo y su fuente), null. Medir antes de dar por buena la condición cuántos documentos de las listas de prueba tienen un club sin ficha y sin línea de registro; si el lote corre Jev antes del alta, que el lote corra `alta-club` sobre sus carpetas antes de la etapa 5.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
