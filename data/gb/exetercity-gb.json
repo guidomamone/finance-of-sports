@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "exetercity-gb",
+    "name": "Exeter City A.F.C. Limited",
+    "display_name": "Exeter City",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
+  "sources": [
+    {
+      "id": "exetercity-gb-exeter-group-accounts-2024-25-ixbrl",
+      "club_id": "exetercity-gb",
+      "title": "Exeter City A.F.C. Limited — exeter-group-accounts-2024-25-ixbrl (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Informe oficial en formato XHTML (iXBRL)"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "exetercity-gb-exeter-group-accounts-2024-25-ixbrl",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Gates","category":"matchday","subcategory":"matchday_competition","amount":1.361318,"disclosure":"aggregated"},
+        {"label":"Season ticket sales","category":"season_tickets","subcategory":"season_tickets","amount":0.808738,"disclosure":"aggregated"},
+        {"label":"Commercial activities","category":"commercial","subcategory":"sponsorship_commercial","amount":2.436251,"disclosure":"aggregated"},
+        {"label":"Football League","category":"media_rights","subcategory":"broadcasting","amount":2.710542,"disclosure":"aggregated"},
+        {"label":"Television income","category":"media_rights","subcategory":"broadcasting","amount":0.01,"disclosure":"aggregated"},
+        {"label":"Food and drink sales","category":"venue","subcategory":"stadium_other","amount":0.886029,"disclosure":"aggregated"},
+        {"label":"Grants and donations","category":"other_revenue","subcategory":"other_income","amount":0.615898,"disclosure":"aggregated"},
+        {"label":"Insurance claims receivable","category":"other_revenue","subcategory":"other_income","amount":0.006475,"disclosure":"aggregated"},
+        {"label":"Transfer revenue","category":"player_transfers","subcategory":"player_sales","amount":4.929505,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-9.082874,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-4.137513,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.017732,"tax":-0.178423,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":13.764756,"expenses":13.220387,"net_result":0.348214},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.01119},
+          {"label":"Interest payable and similar expenses","amount":-0.028922},
+          {"label":"Tax on profit","amount":-0.178423}
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

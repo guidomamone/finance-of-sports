@@ -324,6 +324,16 @@ const clubs = {
   'rapidwien-at': { id:'rapidwien-at', name:'SK Rapid GmbH', displayName:'Rapid Wien', country:'AT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#009150' },
   'bathrugby-gb': { id:'bathrugby-gb', name:'Bath Rugby Limited', displayName:'Bath Rugby', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'rugby' },
   'omonia29maiou-cy': { id:'omonia29maiou-cy', name:'Omonia 29 Maiou', displayName:'Omonia 29 Maiou', country:'CY', reportingCurrency:'EUR', fiscalYearStart:'06-01', sport:'futbol', brandColor:null },
+  'afcwimbledon-gb': { id:'afcwimbledon-gb', name:'AFC Wimbledon Limited', displayName:'AFC Wimbledon', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#2B4690' },
+  'barnsley-gb': { id:'barnsley-gb', name:'Barnsley Football Club Limited', displayName:'Barnsley', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D71921' },
+  'burtonalbion-gb': { id:'burtonalbion-gb', name:'The Albion Football Club (Burton on Trent) Limited', displayName:'Burton Albion', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FDE92B' },
+  'carlisleunited-gb': { id:'carlisleunited-gb', name:'Carlisle United Association Football Club (1921) Limited', displayName:'Carlisle United', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#007ABC' },
+  'chesterfield-gb': { id:'chesterfield-gb', name:'Chesterfield', displayName:'Chesterfield', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#0042FF' },
+  'exetercity-gb': { id:'exetercity-gb', name:'Exeter City A.F.C. Limited', displayName:'Exeter City', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#EA1A45' },
+  'gillingham-gb': { id:'gillingham-gb', name:'Gillingham Football Club Ltd', displayName:'Gillingham', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#1A5DAD' },
+  'lincolncity-gb': { id:'lincolncity-gb', name:'Lincoln City Football Club Company Limited', displayName:'Lincoln City', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#CE131A' },
+  'shrewsburytown-gb': { id:'shrewsburytown-gb', name:'Shrewsbury Town Football Club Limited', displayName:'Shrewsbury Town', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#144E9D' },
+  'wiganathletic-gb': { id:'wiganathletic-gb', name:'Wigan Athletic A.F.C. Limited', displayName:'Wigan Athletic', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#1D59AF' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.

@@ -1,0 +1,86 @@
+{
+  "schema_version": "2.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "afcwimbledon-gb",
+    "name": "AFC Wimbledon Limited",
+    "display_name": "AFC Wimbledon",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
+  "sources": [
+    {
+      "id": "afcwimbledon-gb-full-accounts-2024-25-ixbrl",
+      "club_id": "afcwimbledon-gb",
+      "title": "AFC Wimbledon Limited — afcwimbledon-full-accounts-2024-25-ixbrl (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Informe oficial en formato XHTML (iXBRL)"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "afcwimbledon-gb-full-accounts-2024-25-ixbrl",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {
+          "label": "Match receipts, player loans and prize money",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 5.858414,
+          "disclosure": "aggregated"
+        },
+        {"label":"Merchandise and programmes","category":"commercial","subcategory":"sponsorship_commercial","amount":1.081991,"disclosure":"aggregated"},
+        {"label":"Sponsorships and advertising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.990532,"disclosure":"aggregated"},
+        {"label":"Bar and catering","category":"other_revenue","subcategory":"other_income","amount":0.861032,"disclosure":"aggregated"},
+        {"label":"Donations and sundry","category":"other_revenue","subcategory":"other_income","amount":0.446091,"disclosure":"aggregated"},
+        {"label":"Youth development income","category":"other_sporting_sections","subcategory":"youth_football","amount":0.546023,"disclosure":"aggregated"},
+        {
+          "label": "Gain on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.972266,
+          "disclosure": "aggregated"
+        },
+        {"label":"Grants receivable","category":"other_revenue","subcategory":"other_income","amount":0.025,"disclosure":"aggregated"},
+        {"label":"Insurance claim","category":"other_revenue","subcategory":"other_income","amount":0.960556,"disclosure":"aggregated"},
+        {"label":"Flood Donations","category":"other_revenue","subcategory":"other_income","amount":0.146424,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-8.223069,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-4.183724,"disclosure":"aggregated"},
+        {
+          "label": "Exceptional administrative expenses",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.881019,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.09507,"tax":0.083392,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":11.888329,"expenses":12.406793,"net_result":-1.221022},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Interest receivable and similar income","amount":0.100329},
+          {"label":"Interest payable and similar expenses","amount":-0.005259},
+          {"label":"Tax on (loss)/profit","amount":0.083392}
+        ],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true},"broadcasting":{"in":"matchday_competition","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

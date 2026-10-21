@@ -1,0 +1,219 @@
+{
+ "pdf": "Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "414515db1fb81f843fb10a587ae5c77ca696756f",
+ "ubicacionSha1": "d43572006ea9e5e446c24c8807999780e6ebf3ed",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:15:47.240Z",
+ "ubicacion": {
+  "estado": [
+   "b32"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b68",
+   "b70"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b32",
+   "escala": "unidades",
+   "evidencia": "L254: columnas en '£'"
+  },
+  {
+   "bloque": "b68",
+   "escala": "unidades",
+   "evidencia": "L545/L556/L563: columnas en '£'"
+  },
+  {
+   "bloque": "b70",
+   "escala": "unidades",
+   "evidencia": "L590/L615: columnas en '£'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b32",
+   "linea": 255,
+   "etiqueta": "Turnover",
+   "actual": "5,907,595",
+   "anterior": "5,597,056",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 257,
+   "etiqueta": "Cost of sales",
+   "actual": "(7,076,541)",
+   "anterior": "(7,065,223)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 258,
+   "etiqueta": "Gross loss",
+   "actual": "(1,168,946)",
+   "anterior": "(1,468,167)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 259,
+   "etiqueta": "Administrative expenses",
+   "actual": "(427,039)",
+   "anterior": "(476,626)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 260,
+   "etiqueta": "Related undertaking loan forgiven",
+   "actual": "1,168,263",
+   "anterior": "1,423,756",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 261,
+   "etiqueta": "Operating loss",
+   "actual": "(427,722)",
+   "anterior": "(521,037)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 262,
+   "etiqueta": "Tax on loss",
+   "actual": "427,722",
+   "anterior": "521,037",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 263,
+   "etiqueta": "Profit for the financial year",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b68",
+   "linea": 564,
+   "etiqueta": "Wages and salaries",
+   "actual": "3,918,319",
+   "anterior": "3,972,407",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of sales"
+  },
+  {
+   "bloque": "b68",
+   "linea": 566,
+   "etiqueta": "Social security costs",
+   "actual": "447,598",
+   "anterior": "445,453",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of sales"
+  },
+  {
+   "bloque": "b68",
+   "linea": 567,
+   "etiqueta": "Cost of defined contribution scheme",
+   "actual": "48,392",
+   "anterior": "43,704",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Cost of sales"
+  },
+  {
+   "bloque": "b68",
+   "linea": 568,
+   "etiqueta": "",
+   "actual": "4,414,309",
+   "anterior": "4,461,564",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Cost of sales"
+  },
+  {
+   "bloque": "b70",
+   "linea": 593,
+   "etiqueta": "Group taxation relief",
+   "actual": "(427,722)",
+   "anterior": "(521,037)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  },
+  {
+   "bloque": "b70",
+   "linea": 594,
+   "etiqueta": "Taxation on loss on ordinary activities",
+   "actual": "(427,722)",
+   "anterior": "(521,037)",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  },
+  {
+   "bloque": "b70",
+   "linea": 616,
+   "etiqueta": "Related company loans forgiven (note 20)",
+   "actual": "(1,168,263)",
+   "anterior": "(1,423,756)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Related undertaking loan forgiven"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 263,
+  "actual": "-",
+  "anterior": "-"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los costos de personal de la nota 7 (L564-L568) como desglose de 'Cost of sales'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Cost of sales",
+   "texto": "L561: la nota 7 no indica en qué renglón del estado se imputan los costos de personal; podrían repartirse entre Cost of sales y Administrative expenses.",
+   "bloques": [
+    "b68"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga las partidas de la nota 5 (L546-L549: amortizaciones, resultado por venta de bienes de uso y subvenciones)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating loss",
+   "texto": "L543: son cargos informativos incluidos en el resultado operativo, sin renglón propio en el estado.",
+   "bloques": [
+    "b68"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El estado de resultados está en libras (unidades). El impuesto es positivo porque es un crédito por group relief que deja el resultado del ejercicio en cero. No se cargó la conciliación fiscal (L601-L611). Los honorarios de auditoría (L557) quedaron afuera por ser un dato informativo. En la nota 9 (L616) el signo es opuesto al del estado (L260). La nota de Turnover (nota 4) no está entre los bloques."
+}

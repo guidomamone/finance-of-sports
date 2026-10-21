@@ -1,0 +1,52 @@
+{
+ "pdf": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Salford City/project92-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "579a5297ef2e5b3617eab20c0188d65f3e10d9e4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:22:12.622Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    113,
+    123
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    151,
+    163
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF contiene un estado de resultados (profit and loss account) del ejercicio al 30-06-2025 que no aparece en la transcripción?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo muestra la tabla de KPIs (b1, pág. 6) y la lista de directores (b2); puede que la transcripción esté incompleta.",
+   "bloques": [
+    "b1",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo se transcribieron los KPIs del informe estratégico (b1: turnover, operating loss, profit on disposal...) y la lista de directores; no hay estado de resultados ni notas. Las cuentas son de grupo (Project 92), mientras que el club carga perímetro individual. Hay que revisar si faltan páginas en la transcripción."
+}

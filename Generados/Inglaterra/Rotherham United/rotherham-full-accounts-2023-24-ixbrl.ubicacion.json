@@ -1,0 +1,52 @@
+{
+ "pdf": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Rotherham United/rotherham-full-accounts-2023-24-ixbrl.md",
+ "mdSha1": "1f40dda3523a1359ae5e3062ac0bbdfe72712360",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:22:07.525Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    107,
+    124
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    138,
+    141
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF completo contiene una profit and loss account del ejercicio cerrado el 30-06-2024 que no aparece en el índice (solo hay cuadros de KPI en págs. 6-7)?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo tiene el cuadro de Key Performance Indicators (b1) y uno de asistencia (b2); no hay estado de resultados transcripto.",
+   "bloques": [
+    "b1",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo se transcribieron dos bloques: b1 es un cuadro de KPI comparado contra presupuesto (ingresos por área y beneficio después de impuestos) y b2 son datos no financieros (asistencia, abonos). Ninguno es el estado de resultados; los indicadores están excluidos. Se marca sin_estado salvo que el PDF tenga la cuenta de resultados en páginas no transcritas."
+}

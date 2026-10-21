@@ -1,0 +1,52 @@
+{
+ "pdf": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Blackpool/blackpool-holdings-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "14131e2fb3de912ce07ede01630bdc36df646a99",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:32:23.234Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    71,
+    73
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    101,
+    108
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF contiene en otras páginas la cuenta de resultados consolidada (consolidated statement of comprehensive income) del ejercicio al 30-06-2025 que no fue transcripta?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo tiene el informe estratégico (b1, pág. 4) y un cuadro de KPI de ingresos (b2, pág. 5); no aparece ningún estado de resultados.",
+   "bloques": [
+    "b1",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay dos bloques con cifras: b1 es texto del strategic report con el turnover por sociedad del grupo (£10.90m en 2025 contra £12.05m en 2024), y b2 es un cuadro de indicadores clave (KPI) de ingresos por fuente: Matchday, Football, Commercial, Rental y Total, en £ para 2025 y 2024. Ninguno es un estado de resultados, y los cuadros de indicadores no se eligen. Por eso marco sin_estado = true. Puede que la transcripción esté incompleta: hay que revisar el PDF."
+}

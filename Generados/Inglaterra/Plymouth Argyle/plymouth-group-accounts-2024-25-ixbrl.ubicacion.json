@@ -1,0 +1,76 @@
+{
+ "pdf": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Plymouth Argyle/plymouth-group-accounts-2024-25-ixbrl.md",
+ "mdSha1": "6d398a0bb2569c441d82931828209425eae4c3c0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:22:01.805Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    157,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    177,
+    183
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    257,
+    271
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 36,
+   "lineas": [
+    1707,
+    1712
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 41,
+   "lineas": [
+    2076,
+    2077
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "2024/25",
+ "columna_anterior": "2023/24",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF contiene en alguna página la cuenta de resultados consolidada (Consolidated Statement of Comprehensive Income) al 30-06-2025 que no fue transcripta como tabla?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo muestra KPIs (pág. 7-8), informe de energía (pág. 11) y una nota de inversiones en subsidiarias (pág. 36); el estado de resultados probablemente quedó sin transcribir.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Ninguno de los bloques es el estado de resultados: b1 y b2 son KPIs, b3 es el informe de emisiones, b4 es la nota de acciones en subsidiarias. b1 incluye Revenue y resultado pero es un cuadro de indicadores, no se elige. Probablemente faltan páginas transcriptas (cuentas de grupo iXBRL); revisar el PDF."
+}

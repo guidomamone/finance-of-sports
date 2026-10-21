@@ -1,0 +1,166 @@
+{
+ "md": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.md",
+ "generatedAt": "2026-10-21T18:33:53.361Z",
+ "rubrosHuella": "2c903de17c460a3301ea0d7479b9803f633bc9b6",
+ "rubros": [
+  {
+   "label": "Football League distributions",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Match day",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "TV and broadcasting",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Merchandise",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorship & advertising",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Catering",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "stadium_other",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Other receipts",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Donation income",
+   "lado": "revenue",
+   "page": 47,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Player registrations amortisation",
+   "lado": "expense",
+   "page": 53,
+   "section": "ajuste manual",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Add on fees, sell on fees and unrecoverable transfer levies",
+   "lado": "expense",
+   "page": 53,
+   "section": "ajuste manual",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Profit on player sales and compensation",
+   "lado": "revenue",
+   "page": 53,
+   "section": "ajuste manual",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1041
+  }
+ ]
+}

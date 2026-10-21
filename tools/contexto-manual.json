@@ -1,5 +1,35 @@
 {
   "_comentario": "To-do 273. Estadio, capacidad, sponsor de camiseta (frente) y marca técnica cargados a mano, por club y ejercicio, para lo que tools/estadio-sponsor.mjs no lee de Wikipedia o lee mal. Gana sobre Wikipedia campo por campo. Sin \"fuente\" (la memoria del club, su web, una nota de prensa) no se usa. Un club sin sponsor ese año: \"sponsor\": \"sin sponsor\" con su fuente. Un dato que se buscó y no tiene fuente pública (REGLA de CONVENCIONES-DATOS, 2026-10-20): \"sin-fuente\": { \"<campo>\": \"dónde se buscó\" } (campo: estadio, capacidad, sponsor o marca); el campo queda en null y la compuerta lo da por resuelto; sin el texto de dónde se buscó no vale. Forma: { \"<clubId>\": { \"<año>\": { \"estadio\": \"...\", \"capacidad\": 0, \"sponsor\": \"...\", \"marca\": \"...\", \"fuente\": \"<url>\" } } }",
+  "afcwimbledon-gb": {
+    "2025": { "estadio": "Plough Lane", "capacidad": 9215, "sponsor": "War Child", "marca": "Umbro", "fuente": "https://en.wikipedia.org/wiki/AFC_Wimbledon (Sponsorship and kit manufacturer: War Child en el pecho, donado por Sports Interactive/Football Manager); capacidad: https://en.wikipedia.org/wiki/Plough_Lane" }
+  },
+  "barnsley-gb": {
+    "2025": { "estadio": "Oakwell", "capacidad": 23287, "sponsor": "Gleeson Homes", "marca": "Puma", "fuente": "https://en.wikipedia.org/wiki/Barnsley_F.C. (Kit manufacturers and shirt sponsors); capacidad: https://en.wikipedia.org/wiki/Oakwell" }
+  },
+  "burtonalbion-gb": {
+    "2025": { "estadio": "Pirelli Stadium", "capacidad": 6912, "sponsor": "Burton Kia", "marca": "TAG Sportswear", "fuente": "https://www.footballkitarchive.com/burton-albion-2024-25-home-kit/ (marca TAG) y la referencia de https://en.wikipedia.org/wiki/Burton_Albion_F.C. «Burton Kia are 24/25 front of shirt sponsor»; capacidad: misma página de Wikipedia" }
+  },
+  "chesterfield-gb": {
+    "2025": { "estadio": "SMH Group Stadium", "capacidad": 10600, "sponsor": "Leengate Valves", "marca": "Puma", "fuente": "https://www.footballkitarchive.com/chesterfield-fc-2024-25-home-kit-241907/ (camiseta 2024-25); estadio: https://en.wikipedia.org/wiki/2024%E2%80%9325_Chesterfield_F.C._season; capacidad: https://en.wikipedia.org/wiki/Chesterfield_F.C." }
+  },
+  "carlisleunited-gb": {
+    "2025": { "estadio": "Brunton Park", "capacidad": 17949, "sponsor": "Aqua Pura", "marca": "Umbro", "fuente": "https://www.carlisleunited.co.uk/news/202425-kits (kits 2024-25, Umbro, Aqua Pura en el pecho; capacidad del infobox de https://en.wikipedia.org/wiki/Carlisle_United_F.C.)" }
+  },
+  "exetercity-gb": {
+    "2025": { "estadio": "St James Park", "capacidad": 8720, "sponsor": "HEL Performance", "marca": "adidas", "fuente": "https://exetercityfc.co.uk/helextends (HEL Performance en el pecho desde 2023-24); marca: https://www.footballkitarchive.com/ms/exeter-city-kit-2024-25-t222/; capacidad del infobox de https://en.wikipedia.org/wiki/Exeter_City_F.C." }
+  },
+  "gillingham-gb": {
+    "2025": { "estadio": "Priestfield Stadium", "capacidad": 11582, "sponsor": "Bauvill", "marca": "Macron", "fuente": "https://www.gillinghamfootballclub.com/news/2023/june/bauvill-become-new-front-of-shirt-sponsor (dos temporadas en el pecho, 2023-24 y 2024-25); marca: https://www.gillinghamfootballclub.com/news/2024/may/20242025-home-kit-launched" }
+  },
+  "lincolncity-gb": {
+    "2025": { "estadio": "LNER Stadium (Sincil Bank)", "capacidad": 11400, "sponsor": "Branston", "marca": "Oxen", "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Lincoln_City_F.C._season; sponsor: https://www.weareimps.com/news/branston-continue-front-shirt-sponsorship" }
+  },
+  "shrewsburytown-gb": {
+    "2025": { "estadio": "New Meadow", "capacidad": 9875, "sponsor": "Morris Property", "marca": "Oxen", "fuente": "https://www.morrisandco.com/news/morris-property/shrewsbury-town-fc-unveils-brand-new-2024-25-home-shirt/ (camiseta 2024-25); marca: https://www.shrewsburytown.com/news/2024/january/oxen-to-become-kit-supplier/; capacidad: https://en.wikipedia.org/wiki/Shrewsbury_Town_F.C." }
+  },
+  "wiganathletic-gb": {
+    "2024": { "estadio": "DW Stadium", "capacidad": 25138, "sponsor": "Smurfit Kappa", "marca": "Puma", "fuente": "https://www.wigantoday.net/sport/football/first-look-wigan-athletic-launch-new-kit-for-2023-24-campaign-4227219 (camiseta 2023-24); estadio: https://en.wikipedia.org/wiki/2023%E2%80%9324_Wigan_Athletic_F.C._season" }
+  },
   "kryliasovetovsamara-ru": {
     "2021": {
       "estadio": "Solidarnost Samara Arena",

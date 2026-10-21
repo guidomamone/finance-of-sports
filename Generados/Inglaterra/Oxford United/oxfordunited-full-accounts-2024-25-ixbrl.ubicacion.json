@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Oxford United/oxfordunited-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "f96c8dd412d92aaeaf9fe43aa6984fca08ef1b5d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:21:48.494Z",
+ "perimetroClub": null,
+ "bloques": {},
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF 'oxfordunited-full-accounts-2024-25-ixbrl.pdf' contiene una cuenta de resultados (profit and loss account) del ejercicio cerrado el 30-06-2025 que la transcripción no capturó?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice llegó con 0 bloques con cifras, posiblemente por un fallo de transcripción del iXBRL o porque se presentaron cuentas abreviadas sin P&L.",
+   "bloques": [],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El índice no contiene ningún bloque con cifras; no se puede identificar estado de resultados. Puede ser un problema de extracción del PDF iXBRL o cuentas filleted sin cuenta de resultados. Revisar el PDF manualmente."
+}

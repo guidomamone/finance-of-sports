@@ -1,0 +1,219 @@
+{
+ "pdf": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:40:21.050Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0.0000019999999989472883
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: El total 6,043,560 (L1110) no coincide con ningún renglón del estado; es un gasto por naturaleza transversal.",
+  "duda de extraer que no afecta la carga: La nota 6 lista cargos incluidos ('stated after charging'), no un desglose completo.",
+  "duda de extraer que no afecta la carga: L1164 sólo tiene importe en 2024 (203,462) y no aparece separado en el estado."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 7.885437,
+  "gastos": 10.103974,
+  "financiero": 0.164358,
+  "impuesto": 0,
+  "resultadoImpreso": -2.382893,
+  "resultadoParaCargar": -2.382893,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gates and season tickets",
+   "lado": "ingreso",
+   "M": 4.12574,
+   "pagina": 51,
+   "linea": 1060,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "TV and football awards",
+   "lado": "ingreso",
+   "M": 0.074626,
+   "pagina": 51,
+   "linea": 1062,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Transfer fees",
+   "lado": "ingreso",
+   "M": 0.343466,
+   "pagina": 51,
+   "linea": 1064,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Commercial income",
+   "lado": "ingreso",
+   "M": 2.54526,
+   "pagina": 51,
+   "linea": 1066,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 0.714996,
+   "pagina": 51,
+   "linea": 1068,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Amortisation of government grants receivable",
+   "lado": "ingreso",
+   "M": 0.073349,
+   "pagina": 51,
+   "linea": 1090,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Lease premium income",
+   "lado": "ingreso",
+   "M": 0.0056,
+   "pagina": 51,
+   "linea": 1092,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Other grants receivable",
+   "lado": "ingreso",
+   "M": 0.0024,
+   "pagina": 51,
+   "linea": 1094,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 0.941478,
+   "pagina": 31,
+   "linea": 544,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 9.162496,
+   "pagina": 31,
+   "linea": 548,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": -0.000001,
+   "linea": 556
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.164357,
+   "linea": 560
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 564
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "alarma",
+  "clave": "d94de29de392fd79f03ed031b32fac538be3f21f",
+  "rango": [
+   539,
+   569
+  ],
+  "lineasCargadas": [
+   1060,
+   1062,
+   1064,
+   1066,
+   1068,
+   1090,
+   1092,
+   1094,
+   544,
+   548,
+   556,
+   560,
+   564
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 539 a 569 del .md):\nL539: | --- | --- |\nL540: | Notes | £ | £ |\nL541: | --- | --- | --- |\nL542: | TURNOVER | 3 | 7,804,088 | 5,598,556 |\nL543: | --- | --- | --- | --- |\nL544: | Cost of sales | 941,478 | 816,888 |\nL545: | --- | --- | --- |\nL546: | GROSS PROFIT | 6,862,610 | 4,781,668 |\nL547: | --- | --- | --- |\nL548: | Administrative expenses | 9,162,496 | 8,036,188 |\nL549: | --- | --- | --- |\nL550: | (2,299,886 | ) | (3,254,520 | ) |\nL551: | --- | --- | --- | --- |\nL552: | Other operating income | 4 | 81,349 | 60,831 |\nL553: | --- | --- | --- | --- |\nL554: | OPERATING LOSS | 6 | (2,218,537 | ) | (3,193,689 | ) |\nL555: | --- | --- | --- | --- | --- | --- |\nL556: | Interest receivable and similar income | 1 | 2,039 |\nL557: | --- | --- | --- |\nL558: | (2,218,536 | ) | (3,191,650 | ) |\nL559: | --- | --- | --- | --- |\nL560: | Interest payable and similar expenses | 8 | 164,357 | 120,777 |\nL561: | --- | --- | --- | --- |\nL562: | LOSS BEFORE TAXATION | (2,382,893 | ) | (3,312,427 | ) |\nL563: | --- | --- | --- | --- | --- |\nL564: | Tax on loss | 9 | - | - |\nL565: | --- | --- | --- | --- |\nL566: | LOSS FOR THE FINANCIAL YEAR | (2,382,893 | ) | (3,312,427 | ) |\nL567: | --- | --- | --- | --- | --- |\nL569: --- pág. 32 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Gates and season tickets\" · 4.12574 · L1060 (de una nota)\n- ingreso · \"TV and football awards\" · 0.074626 · L1062 (de una nota)\n- ingreso · \"Transfer fees\" · 0.343466 · L1064 (de una nota)\n- ingreso · \"Commercial income\" · 2.54526 · L1066 (de una nota)\n- ingreso · \"Other income\" · 0.714996 · L1068 (de una nota)\n- ingreso · \"Amortisation of government grants receivable\" · 0.073349 · L1090 (de una nota)\n- ingreso · \"Lease premium income\" · 0.0056 · L1092 (de una nota)\n- ingreso · \"Other grants receivable\" · 0.0024 · L1094 (de una nota)\n- gasto · \"Cost of sales\" · 0.941478 · L544\n- gasto · \"Administrative expenses\" · 9.162496 · L548\n- financiero · \"Interest receivable and similar income\" · -0.000001 · L556\n- financiero · \"Interest payable and similar expenses\" · -0.164357 · L560\n- impuesto · \"Tax on loss\" · 0 · L564",
+  "problemas": [
+   {
+    "tipo": "lado_equivocado",
+    "linea": 556,
+    "motivo": "Interest receivable (£1) is income, but it is loaded as negative (-0.000001), the same sign as interest payable. It should be +0.000001: -2,218,537 + 1 - 164,357 = -2,382,893.",
+    "citaValida": true
+   }
+  ]
+ }
+}

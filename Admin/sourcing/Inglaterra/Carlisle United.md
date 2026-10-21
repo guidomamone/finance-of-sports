@@ -18,3 +18,5 @@ Todos en `Clubes/Inglaterra/Carlisle United/` (los PDF no se trackean; son escan
 - `carlisle-full-accounts-2023-24.pdf`
 - `carlisle-full-accounts-2022-23.pdf`
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2025 desde `Clubes/Inglaterra/Carlisle United/carlisle-full-accounts-2024-25-ixbrl.pdf` (sourceId `carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl`).

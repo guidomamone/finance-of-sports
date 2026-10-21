@@ -1,0 +1,487 @@
+{
+ "pdf": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-21T18:40:27.838Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (chesterfield-gb)"
+  }
+ ],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "chesterfield-gb",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Gates and season tickets",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 4.12574,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "TV and football awards",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.074626,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transfer fees",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.343466,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial income",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.54526,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.714996,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisation of government grants receivable",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.073349,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lease premium income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.0056,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other grants receivable",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.0024,
+    "disclosureLevel": "aggregated",
+    "_pag": 51,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.941478,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -9.162496,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2025-06-30",
+   "sourceId": "chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.164358,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": -0.000001
+    },
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -0.164357
+    },
+    {
+     "label": "Tax on loss",
+     "value": null
+    }
+   ],
+   "incluidoEn": {
+    "wages_squad": {
+     "en": "other_expenses",
+     "posible": true
+    }
+   },
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 7.885437,
+   "officialTotalExpenses": 10.103974,
+   "officialPAT": -2.382893
+  },
+  "source": {
+   "id": "chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl",
+   "clubId": "chesterfield-gb",
+   "title": "Chesterfield — cfc2001-medium-accounts-2024-25-ixbrl (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025"
+ },
+ "clubId": "chesterfield-gb",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 13,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Gates and season tickets",
+   "page": 51,
+   "native": 4.12574,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 4.12574,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): «Gates and season tickets» 4.125.740: entradas y abonos, matchday_competition",
+   "destino": "revenue",
+   "amountNative": 4.12574
+  },
+  {
+   "label": "TV and football awards",
+   "page": 51,
+   "native": 0.074626,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.074626,
+   "cat": "broadcasting",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.074626
+  },
+  {
+   "label": "Transfer fees",
+   "page": 51,
+   "native": 0.343466,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.343466,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.343466
+  },
+  {
+   "label": "Commercial income",
+   "page": 51,
+   "native": 2.54526,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 2.54526,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.54526
+  },
+  {
+   "label": "Other income",
+   "page": 51,
+   "native": 0.714996,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.714996,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.714996
+  },
+  {
+   "label": "Amortisation of government grants receivable",
+   "page": 51,
+   "native": 0.073349,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Other operating income\")",
+   "signoFijo": 0.073349,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.073349
+  },
+  {
+   "label": "Lease premium income",
+   "page": 51,
+   "native": 0.0056,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Other operating income\")",
+   "signoFijo": 0.0056,
+   "cat": "other_income",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.0056
+  },
+  {
+   "label": "Other grants receivable",
+   "page": 51,
+   "native": 0.0024,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Other operating income\")",
+   "signoFijo": 0.0024,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.0024
+  },
+  {
+   "label": "Cost of sales",
+   "page": 31,
+   "native": 0.941478,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.941478,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Barnsley), titulo:notes · Claude 2026-10-21 (subagente Sonnet): Cost of sales sin desglose por naturaleza (.md L494) va a other_expenses, como los clubes ingleses cargados (Leeds, Sunderland, Brighton)",
+   "destino": "expense",
+   "amountNative": -0.941478
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 31,
+   "native": 9.162496,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 9.162496,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.162496
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": -0.000001,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -0.164357,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"TURNOVER\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Other operating income\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 7.885437,
+  "expSum": -10.103974,
+  "officialTotalRevenue": 7.885437,
+  "officialTotalExpenses": 10.103974,
+  "officialPAT": -2.382893,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -2.382893,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 7.885437
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 10.103974
+  }
+ },
+ "liga": {
+  "valor": "gb-leaguetwo",
+  "fuente": "roster cacheado de \"2024–25 EFL League Two\" (tools/club-league-reference/gb.json), coincidencia exacta \"Chesterfield\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2025-06-30 = 0.7299 (Cierre BCE al 30/6/2025, cruzando GBP/EUR (0,85550) × EUR/USD (1,1720) (1 GBP ≈ 1,3700 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "chesterfield-gb-cfc2001-medium-accounts-2024-25-ixbrl",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-leaguetwo",
+   "fuente": "roster cacheado de \"2024–25 EFL League Two\" (tools/club-league-reference/gb.json), coincidencia exacta \"Chesterfield\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 8,
+  "lineasGasto": 2,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

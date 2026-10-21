@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "lincolncity-gb",
+    "name": "Lincoln City Football Club Company Limited",
+    "display_name": "Lincoln City",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
+  "sources": [
+    {
+      "id": "lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl",
+      "club_id": "lincolncity-gb",
+      "title": "Lincoln City Football Club Company Limited — lincoln-medium-accounts-2024-25-ixbrl (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Informe oficial en formato XHTML (iXBRL)"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday","subcategory":"matchday_competition","amount":2.8518,"disclosure":"aggregated"},
+        {"label":"Central distribution and grants","category":"media_rights","subcategory":"broadcasting","amount":2.275433,"disclosure":"aggregated"},
+        {
+          "label": "Commercial, hospitality and retail",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1.909729,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Academy grants and fundraising",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 0.775767,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Football fortune and miscellaneous income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.665579,
+          "disclosure": "aggregated"
+        },
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0.69424,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.604423,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-11.436136,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.012991,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":9.172548,"expenses":12.040559,"net_result":-2.881002},
+      "adjustments": {
+        "extra_rows": [{"label":"Interest payable and similar expenses","amount":-0.012991},{"label":"Tax on loss","amount":null}],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true},"member_dues":{"in":"matchday_competition","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

@@ -1,0 +1,320 @@
+{
+ "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.md",
+ "mdSha1": "4be40dc11a8168bc444a642b643e754dbecdae7a",
+ "ubicacionSha1": "261e2872f566cc1035041ebf65492fdc415e2c77",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:17:12.893Z",
+ "ubicacion": {
+  "estado": [
+   "b14"
+  ],
+  "notas_ingresos": [
+   "b36"
+  ],
+  "notas_gastos": [
+   "b42"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b14",
+   "escala": "unidades",
+   "evidencia": "L490: columnas en '£'"
+  },
+  {
+   "bloque": "b36",
+   "escala": "unidades",
+   "evidencia": "L1040: '£ | £'"
+  },
+  {
+   "bloque": "b42",
+   "escala": "unidades",
+   "evidencia": "L1240 y L1260: '£'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b14",
+   "linea": 492,
+   "etiqueta": "TURNOVER",
+   "actual": "10,276,916",
+   "anterior": "8,969,422",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 494,
+   "etiqueta": "Cost of sales",
+   "actual": "13,968,000",
+   "anterior": "14,562,786",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 496,
+   "etiqueta": "GROSS LOSS",
+   "actual": "(3,691,084)",
+   "anterior": "(5,593,364)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 498,
+   "etiqueta": "Administrative expenses",
+   "actual": "2,591,165",
+   "anterior": "4,066,141",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 500,
+   "etiqueta": "OPERATING LOSS",
+   "actual": "(6,282,249)",
+   "anterior": "(9,659,505)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 502,
+   "etiqueta": "Trading of intangible assets",
+   "actual": "(171,164)",
+   "anterior": "6,780,861",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 504,
+   "etiqueta": "",
+   "actual": "(6,453,413)",
+   "anterior": "(2,878,644)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 506,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "28,266",
+   "anterior": "81,326",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 508,
+   "etiqueta": "",
+   "actual": "(6,425,147)",
+   "anterior": "(2,797,318)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 510,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "157,193",
+   "anterior": "47,576",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 512,
+   "etiqueta": "LOSS BEFORE TAXATION",
+   "actual": "(6,582,340)",
+   "anterior": "(2,844,894)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 514,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 516,
+   "etiqueta": "LOSS FOR THE FINANCIAL YEAR",
+   "actual": "(6,582,340)",
+   "anterior": "(2,844,894)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b36",
+   "linea": 1042,
+   "etiqueta": "Football League distributions",
+   "actual": "3,103,726",
+   "anterior": "2,590,104",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1044,
+   "etiqueta": "Match day",
+   "actual": "3,864,210",
+   "anterior": "3,101,227",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1046,
+   "etiqueta": "TV and broadcasting",
+   "actual": "168,616",
+   "anterior": "267,603",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1048,
+   "etiqueta": "Merchandise",
+   "actual": "238,544",
+   "anterior": "253,155",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1050,
+   "etiqueta": "Sponsorship & advertising",
+   "actual": "1,039,282",
+   "anterior": "788,015",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1052,
+   "etiqueta": "Catering",
+   "actual": "818,572",
+   "anterior": "801,641",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1054,
+   "etiqueta": "Other receipts",
+   "actual": "1,007,830",
+   "anterior": "1,129,524",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1056,
+   "etiqueta": "Donation income",
+   "actual": "36,136",
+   "anterior": "38,153",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1058,
+   "etiqueta": "",
+   "actual": "10,276,916",
+   "anterior": "8,969,422",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1242,
+   "etiqueta": "Profit on player sales and compensation",
+   "actual": "910,655",
+   "anterior": "7,708,870",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Trading of intangible assets"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1244,
+   "etiqueta": "Player registrations amortisation",
+   "actual": "(1,021,082)",
+   "anterior": "(870,115)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Trading of intangible assets"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1246,
+   "etiqueta": "Add on fees, sell on fees and unrecoverable transfer levies",
+   "actual": "(60,737)",
+   "anterior": "(57,894)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Trading of intangible assets"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1248,
+   "etiqueta": "",
+   "actual": "(171,164)",
+   "anterior": "6,780,861",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Trading of intangible assets"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1262,
+   "etiqueta": "Loan interest",
+   "actual": "157,193",
+   "anterior": "47,576",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 492,
+  "actual": "10,276,916"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 516,
+  "actual": "(6,582,340)",
+  "anterior": "(2,844,894)"
+ },
+ "dudas": [],
+ "observaciones": "Estado en £ sin escala. Los paréntesis partidos en celdas se unieron (ej. '(3,691,084 | )'). No hay total de gastos impreso. El año anterior es un período de 13 meses (1.6.23 a 30.6.24). Las notas 9 y 10 no tienen cuadro de importes del resultado."
+}

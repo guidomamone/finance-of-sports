@@ -1,0 +1,118 @@
+{
+ "pdf": "Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:40:20.833Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": null,
+   "detalle": "extraer.mjs no encontró el resultado impreso"
+  },
+  {
+   "nombre": "número impreso para cerrar",
+   "ok": false,
+   "detalle": "el documento no imprime totales ni resultado en los bloques elegidos: no hay cómo confirmar las sumas"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Cost of sales\" no suma el renglón (4.414309 contra 7.076541, sumando sus renglones): quedó el renglón del estado"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Cost of sales",
+   "suma": 4.414309,
+   "objetivo": 7.076541
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Cost of sales",
+   "suma": 4.414309,
+   "objetivo": 7.076541
+  }
+ ],
+ "totales": {
+  "ingresos": 7.075858,
+  "gastos": 7.50358,
+  "financiero": 0,
+  "impuesto": 0.427722,
+  "resultadoImpreso": null,
+  "resultadoParaCargar": null,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Turnover",
+   "lado": "ingreso",
+   "M": 5.907595,
+   "pagina": 11,
+   "linea": 255,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Related undertaking loan forgiven",
+   "lado": "ingreso",
+   "M": 1.168263,
+   "pagina": 11,
+   "linea": 260,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 7.076541,
+   "pagina": 11,
+   "linea": 257,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 0.427039,
+   "pagina": 11,
+   "linea": 259,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": 0.427722,
+   "linea": 262
+  }
+ ]
+}

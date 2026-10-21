@@ -1,0 +1,539 @@
+{
+ "pdf": "Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-21T18:40:28.099Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (gillingham-gb)"
+  }
+ ],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "gillingham-gb",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Football",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 3.495463,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.334535,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "School",
+    "normalizedCategory": "education",
+    "amountNative": 0.068491,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Shop",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.518864,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Youth Academy",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.652507,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Programmes",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.053741,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Kiosks",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.359451,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sundry income and donation",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.012463,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transfer fees",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.035,
+    "disclosureLevel": "aggregated",
+    "_pag": 39,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -10.057281,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.194908,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2025-06-30",
+   "sourceId": "gillingham-gb-medium-accounts-2024-25-ixbrl",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.015884,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -0.015884
+    },
+    {
+     "label": "Tax on loss",
+     "value": null
+    }
+   ],
+   "incluidoEn": {
+    "wages_squad": {
+     "en": "other_expenses",
+     "posible": true
+    },
+    "broadcasting": {
+     "en": "matchday_competition",
+     "posible": true
+    }
+   },
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 7.530515,
+   "officialTotalExpenses": 13.252189,
+   "officialPAT": -5.737558
+  },
+  "source": {
+   "id": "gillingham-gb-medium-accounts-2024-25-ixbrl",
+   "clubId": "gillingham-gb",
+   "title": "Gillingham Football Club Ltd — gillingham-medium-accounts-2024-25-ixbrl (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: Year Ended 30 June 2025"
+ },
+ "clubId": "gillingham-gb",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: Year Ended 30 June 2025",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "matchday_competition",
+   "posible": true,
+   "motivo": "La línea «Football» (.md L932) incluye, según la política contable (L806-808), entradas, abonos, el pool de la Football League y TV/radio, sin desglose",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 14,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Football",
+   "page": 39,
+   "native": 3.495463,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"REVENUE\")",
+   "signoFijo": 3.495463,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): fila mixta «Football» (.md L932; política L806-808: entradas, abonos, pool de la EFL y TV): la parte de entradas es la mayor; broadcasting va como incluido posible",
+   "destino": "revenue",
+   "amountNative": 3.495463
+  },
+  {
+   "label": "Commercial",
+   "page": 39,
+   "native": 2.334535,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"REVENUE\")",
+   "signoFijo": 2.334535,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.334535
+  },
+  {
+   "label": "School",
+   "page": 39,
+   "native": 0.068491,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"REVENUE\")",
+   "signoFijo": 0.068491,
+   "cat": "education",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): «School» 68.491 (.md L936; L816: aranceles que paga la autoridad local por alumno): education, no la academia (Youth Academy, L940)",
+   "destino": "revenue",
+   "amountNative": 0.068491
+  },
+  {
+   "label": "Shop",
+   "page": 39,
+   "native": 0.518864,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"REVENUE\")",
+   "signoFijo": 0.518864,
+   "cat": "sponsorship_commercial",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.518864
+  },
+  {
+   "label": "Youth Academy",
+   "page": 39,
+   "native": 0.652507,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"REVENUE\")",
+   "signoFijo": 0.652507,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.652507
+  },
+  {
+   "label": "Programmes",
+   "page": 39,
+   "native": 0.053741,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"REVENUE\")",
+   "signoFijo": 0.053741,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): venta de programas (.md L942) es merchandising, como «Merchandise and programmes» de Wimbledon",
+   "destino": "revenue",
+   "amountNative": 0.053741
+  },
+  {
+   "label": "Kiosks",
+   "page": 39,
+   "native": 0.359451,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"REVENUE\")",
+   "signoFijo": 0.359451,
+   "cat": "stadium_other",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.359451
+  },
+  {
+   "label": "Sundry income and donation",
+   "page": 39,
+   "native": 0.012463,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"REVENUE\")",
+   "signoFijo": 0.012463,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.012463
+  },
+  {
+   "label": "Transfer fees",
+   "page": 39,
+   "native": 0.035,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"REVENUE\")",
+   "signoFijo": 0.035,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.035
+  },
+  {
+   "label": "Other operating income",
+   "page": 23,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Cost of sales",
+   "page": 23,
+   "native": 10.057281,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 10.057281,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Barnsley), titulo:notes · Claude 2026-10-21 (subagente Sonnet): Cost of sales sin desglose por naturaleza (.md L494) va a other_expenses, como los clubes ingleses cargados (Leeds, Sunderland, Brighton)",
+   "destino": "expense",
+   "amountNative": -10.057281
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 23,
+   "native": 3.194908,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.194908,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.194908
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -0.015884,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"REVENUE\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 7.530515,
+  "expSum": -13.252189,
+  "officialTotalRevenue": 7.530515,
+  "officialTotalExpenses": 13.252189,
+  "officialPAT": -5.737558,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -5.737558,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 7.530515
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 13.252189
+  }
+ },
+ "liga": {
+  "valor": "gb-leaguetwo",
+  "fuente": "roster cacheado de \"2024–25 EFL League Two\" (tools/club-league-reference/gb.json), coincidencia exacta \"Gillingham\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: Year Ended 30 June 2025",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: Year Ended 30 June 2025)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (1 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2025-06-30 = 0.7299 (Cierre BCE al 30/6/2025, cruzando GBP/EUR (0,85550) × EUR/USD (1,1720) (1 GBP ≈ 1,3700 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "gillingham-gb-medium-accounts-2024-25-ixbrl",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-leaguetwo",
+   "fuente": "roster cacheado de \"2024–25 EFL League Two\" (tools/club-league-reference/gb.json), coincidencia exacta \"Gillingham\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 10,
+  "lineasGasto": 2,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,432 @@
+{
+ "pdf": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.md",
+ "mdSha1": "e66ce5741262f274bd98824d50e6d693f47f6863",
+ "ubicacionSha1": "6900165cee3f7e32c86c8b8d53a457d9241b4bcb",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:19:22.560Z",
+ "ubicacion": {
+  "estado": [
+   "b20"
+  ],
+  "notas_ingresos": [
+   "b40"
+  ],
+  "notas_gastos": [
+   "b40",
+   "b42"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "L540: columnas en '£'"
+  },
+  {
+   "bloque": "b40",
+   "escala": "unidades",
+   "evidencia": "L1058: '£'"
+  },
+  {
+   "bloque": "b42",
+   "escala": "unidades",
+   "evidencia": "L1148: '£'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b20",
+   "linea": 542,
+   "etiqueta": "TURNOVER",
+   "actual": "7,804,088",
+   "anterior": "5,598,556",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 544,
+   "etiqueta": "Cost of sales",
+   "actual": "941,478",
+   "anterior": "816,888",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 546,
+   "etiqueta": "GROSS PROFIT",
+   "actual": "6,862,610",
+   "anterior": "4,781,668",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 548,
+   "etiqueta": "Administrative expenses",
+   "actual": "9,162,496",
+   "anterior": "8,036,188",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 550,
+   "etiqueta": "",
+   "actual": "(2,299,886)",
+   "anterior": "(3,254,520)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 552,
+   "etiqueta": "Other operating income",
+   "actual": "81,349",
+   "anterior": "60,831",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 554,
+   "etiqueta": "OPERATING LOSS",
+   "actual": "(2,218,537)",
+   "anterior": "(3,193,689)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 556,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "1",
+   "anterior": "2,039",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 558,
+   "etiqueta": "",
+   "actual": "(2,218,536)",
+   "anterior": "(3,191,650)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 560,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "164,357",
+   "anterior": "120,777",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 562,
+   "etiqueta": "LOSS BEFORE TAXATION",
+   "actual": "(2,382,893)",
+   "anterior": "(3,312,427)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 564,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 566,
+   "etiqueta": "LOSS FOR THE FINANCIAL YEAR",
+   "actual": "(2,382,893)",
+   "anterior": "(3,312,427)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1060,
+   "etiqueta": "Gates and season tickets",
+   "actual": "4,125,740",
+   "anterior": "2,614,693",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1062,
+   "etiqueta": "TV and football awards",
+   "actual": "74,626",
+   "anterior": "219,583",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1064,
+   "etiqueta": "Transfer fees",
+   "actual": "343,466",
+   "anterior": "15,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1066,
+   "etiqueta": "Commercial income",
+   "actual": "2,545,260",
+   "anterior": "2,494,997",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1068,
+   "etiqueta": "Other income",
+   "actual": "714,996",
+   "anterior": "254,283",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1070,
+   "etiqueta": "",
+   "actual": "7,804,088",
+   "anterior": "5,598,556",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1090,
+   "etiqueta": "Amortisation of government grants receivable",
+   "actual": "73,349",
+   "anterior": "51,069",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1092,
+   "etiqueta": "Lease premium income",
+   "actual": "5,600",
+   "anterior": "5,600",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1094,
+   "etiqueta": "Other grants receivable",
+   "actual": "2,400",
+   "anterior": "4,162",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1096,
+   "etiqueta": "",
+   "actual": "81,349",
+   "anterior": "60,831",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1104,
+   "etiqueta": "Wages and salaries",
+   "actual": "5,411,628",
+   "anterior": "4,532,745",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1106,
+   "etiqueta": "Social security costs",
+   "actual": "570,451",
+   "anterior": "456,765",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1108,
+   "etiqueta": "Other pension costs",
+   "actual": "61,481",
+   "anterior": "71,892",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 1110,
+   "etiqueta": "",
+   "actual": "6,043,560",
+   "anterior": "5,061,402",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b42",
+   "linea": 1150,
+   "etiqueta": "Depreciation - owned assets",
+   "actual": "203,252",
+   "anterior": "128,834",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "OPERATING LOSS"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1152,
+   "etiqueta": "Loss on disposal of fixed assets",
+   "actual": "2,021",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "OPERATING LOSS"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1154,
+   "etiqueta": "Players registrations amortisation",
+   "actual": "53,262",
+   "anterior": "34,367",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "OPERATING LOSS"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1156,
+   "etiqueta": "Auditors' remuneration",
+   "actual": "10,000",
+   "anterior": "10,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "OPERATING LOSS"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1164,
+   "etiqueta": "Exceptional items",
+   "actual": "-",
+   "anterior": "(203,462)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b42",
+   "linea": 1172,
+   "etiqueta": "Bank loan interest",
+   "actual": "497",
+   "anterior": "720",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1174,
+   "etiqueta": "Other loan interest",
+   "actual": "163,860",
+   "anterior": "120,057",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1176,
+   "etiqueta": "",
+   "actual": "164,357",
+   "anterior": "120,777",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 566,
+  "actual": "(2,382,893)",
+  "anterior": "(3,312,427)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los costos de personal de la nota 5 (L1104-L1110) como detalle sin asignarlos a un renglón del estado, ya que se reparten entre Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El total 6,043,560 (L1110) no coincide con ningún renglón del estado; es un gasto por naturaleza transversal.",
+   "bloques": [
+    "b40"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan las partidas de la nota 6 (L1150-L1156) como informativas, sabiendo que no suman el Operating loss sino que están incluidas en los gastos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "OPERATING LOSS",
+   "texto": "La nota 6 lista cargos incluidos ('stated after charging'), no un desglose completo.",
+   "bloques": [
+    "b42"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera la nota 7 Exceptional items (L1164) por no tener renglón propio en el estado y ser 0 en 2025?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "L1164 sólo tiene importe en 2024 (203,462) y no aparece separado en el estado.",
+   "bloques": [
+    "b42"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en libras (£), cierre 30/06/2025. No hay total de ingresos ni de gastos impresos. Se omiten el cuadro geográfico (duplica Turnover, L1078-L1080), empleados promedio y la conciliación impositiva."
+}

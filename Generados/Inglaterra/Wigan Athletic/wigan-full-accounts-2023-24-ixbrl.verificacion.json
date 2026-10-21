@@ -1,0 +1,249 @@
+{
+ "pdf": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.md",
+ "generado": "2026-10-21T18:40:21.202Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2024-06-30",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 30.6.24 en el XHTML; .md: YEAR ENDED 30 JUNE 2024",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"TURNOVER\" 9.246111 cierra; además se suman 1 línea(s) fuera de ese total (0.748978)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (11.720275 contra 17.346415, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en wigan-full-accounts-2023-24-ixbrl.pdf",
+  "duda de extraer que no afecta la carga: Es información incluida dentro de los costos de personal, con 2024 en '-'."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 11.720275,
+   "objetivo": 17.346415
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 11.720275,
+   "objetivo": 17.346415
+  }
+ ],
+ "totales": {
+  "ingresos": 9.995089,
+  "gastos": 18.22794,
+  "financiero": 0.007538,
+  "impuesto": 0,
+  "resultadoImpreso": -8.225313,
+  "resultadoParaCargar": -8.225313,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Premier League distributions",
+   "lado": "ingreso",
+   "M": 0.7785,
+   "pagina": 45,
+   "linea": 1042,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "EFL central distributions",
+   "lado": "ingreso",
+   "M": 1.371627,
+   "pagina": 45,
+   "linea": 1044,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Sponsorship, commercial",
+   "lado": "ingreso",
+   "M": 1.594484,
+   "pagina": 45,
+   "linea": 1046,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Match/Season/Cup Tickets",
+   "lado": "ingreso",
+   "M": 2.378645,
+   "pagina": 45,
+   "linea": 1048,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Stadium hire/rental charges",
+   "lado": "ingreso",
+   "M": 0.821697,
+   "pagina": 45,
+   "linea": 1050,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Academy grants",
+   "lado": "ingreso",
+   "M": 0.831025,
+   "pagina": 45,
+   "linea": 1052,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Retail income",
+   "lado": "ingreso",
+   "M": 0.704355,
+   "pagina": 45,
+   "linea": 1054,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 0.367778,
+   "pagina": 45,
+   "linea": 1056,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Cup broadcasting",
+   "lado": "ingreso",
+   "M": 0.22,
+   "pagina": 45,
+   "linea": 1058,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Cup prize money",
+   "lado": "ingreso",
+   "M": 0.178,
+   "pagina": 45,
+   "linea": 1060,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Profit on sale of intangible fixed assets",
+   "lado": "ingreso",
+   "M": 0.748978,
+   "pagina": 31,
+   "linea": 614,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 0.881525,
+   "pagina": 31,
+   "linea": 606,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 17.346415,
+   "pagina": 31,
+   "linea": 610,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.007538,
+   "linea": 618
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 622
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "99b22e3f33b0097a1d2b78f2db9b49788a4f60a4",
+  "rango": [
+   601,
+   631
+  ],
+  "lineasCargadas": [
+   1042,
+   1044,
+   1046,
+   1048,
+   1050,
+   1052,
+   1054,
+   1056,
+   1058,
+   1060,
+   614,
+   606,
+   610,
+   618,
+   622
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 601 a 631 del .md):\nL601: | --- | --- |\nL602: | Notes | £ | £ |\nL603: | --- | --- | --- |\nL604: | TURNOVER | 3 | 9,246,111 | 15,865,467 |\nL605: | --- | --- | --- | --- |\nL606: | Cost of sales | 881,525 | 929,979 |\nL607: | --- | --- | --- |\nL608: | GROSS PROFIT | 8,364,586 | 14,935,488 |\nL609: | --- | --- | --- |\nL610: | Administrative expenses | 17,346,415 | 28,685,359 |\nL611: | --- | --- | --- |\nL612: | (8,981,829 | ) | (13,749,871 | ) |\nL613: | --- | --- | --- | --- |\nL614: | Profit on sale of intangible fixed assets | 5 | 748,978 | 380,069 |\nL615: | --- | --- | --- | --- |\nL616: | (8,232,851 | ) | (13,369,802 | ) |\nL617: | --- | --- | --- | --- |\nL618: | Interest receivable and similar income | 7,538 | - |\nL619: | --- | --- | --- |\nL620: | LOSS BEFORE TAXATION | 6 | (8,225,313 | ) | (13,369,802 | ) |\nL621: | --- | --- | --- | --- | --- | --- |\nL622: | Tax on loss | 7 | - | - |\nL623: | --- | --- | --- | --- |\nL624: | LOSS FOR THE FINANCIAL YEAR | (8,225,313 | ) | (13,369,802 | ) |\nL625: | --- | --- | --- | --- | --- |\nL626: | OTHER COMPREHENSIVE INCOME | - | - |\nL627: | --- | --- | --- |\nL628: | TOTAL COMPREHENSIVE LOSS FOR THE YEAR | (8,225,313 | ) | (13,369,802 | ) |\nL629: | --- | --- | --- | --- | --- |\nL631: --- pág. 32 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Premier League distributions\" · 0.7785 · L1042 (de una nota)\n- ingreso · \"EFL central distributions\" · 1.371627 · L1044 (de una nota)\n- ingreso · \"Sponsorship, commercial\" · 1.594484 · L1046 (de una nota)\n- ingreso · \"Match/Season/Cup Tickets\" · 2.378645 · L1048 (de una nota)\n- ingreso · \"Stadium hire/rental charges\" · 0.821697 · L1050 (de una nota)\n- ingreso · \"Academy grants\" · 0.831025 · L1052 (de una nota)\n- ingreso · \"Retail income\" · 0.704355 · L1054 (de una nota)\n- ingreso · \"Other income\" · 0.367778 · L1056 (de una nota)\n- ingreso · \"Cup broadcasting\" · 0.22 · L1058 (de una nota)\n- ingreso · \"Cup prize money\" · 0.178 · L1060 (de una nota)\n- ingreso · \"Profit on sale of intangible fixed assets\" · 0.748978 · L614\n- gasto · \"Cost of sales\" · 0.881525 · L606\n- gasto · \"Administrative expenses\" · 17.346415 · L610\n- financiero · \"Interest receivable and similar income\" · 0.007538 · L618\n- impuesto · \"Tax on loss\" · 0 · L622"
+ }
+}

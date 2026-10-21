@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.md",
+ "clave": "cde838c0e90115c55b7fa7b7883f9d8571003e3e",
+ "generado": "2026-10-21T18:23:46.310Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "El renglón Turnover (L566, 8.478.308) se reemplaza por sus cinco partes de la nota, que suman 8,478308. El resto de los renglones del estado están cargados una sola vez y del lado correcto. Los subtotales y totales no se cargan, y el impuesto está en cero. El resultado da -2,881002, igual al impreso."
+ }
+}

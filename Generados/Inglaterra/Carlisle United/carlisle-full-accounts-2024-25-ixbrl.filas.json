@@ -1,0 +1,443 @@
+{
+ "pdf": "Clubes/Inglaterra/Carlisle United/carlisle-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Carlisle United/carlisle-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "a2d3551552b5c5e04d142ade278be396e3ed8089",
+ "ubicacionSha1": "aa1ec68d8defe481c17bbb9fadaf20322cef6580",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:18:42.416Z",
+ "ubicacion": {
+  "estado": [
+   "b26"
+  ],
+  "notas_ingresos": [
+   "b52"
+  ],
+  "notas_gastos": [
+   "b53"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "L325: columnas en £"
+  },
+  {
+   "bloque": "b52",
+   "escala": "unidades",
+   "evidencia": "L584: £"
+  },
+  {
+   "bloque": "b53",
+   "escala": "unidades",
+   "evidencia": "L616/L628: £"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b26",
+   "linea": 326,
+   "etiqueta": "Turnover",
+   "actual": "6,899,969",
+   "anterior": "8,313,429",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 328,
+   "etiqueta": "Cost of sales",
+   "actual": "(8,420,236)",
+   "anterior": "(5,533,249)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 329,
+   "etiqueta": "Gross (loss)/profit",
+   "actual": "(1,520,267)",
+   "anterior": "2,780,180",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 330,
+   "etiqueta": "Administrative expenses",
+   "actual": "(3,825,147)",
+   "anterior": "(2,623,848)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 331,
+   "etiqueta": "Exceptional item",
+   "actual": "-",
+   "anterior": "2,558,811",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 332,
+   "etiqueta": "Other operating income",
+   "actual": "199,741",
+   "anterior": "49,935",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 333,
+   "etiqueta": "Operating (loss)/profit",
+   "actual": "(5,145,673)",
+   "anterior": "2,765,078",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 334,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "24,064",
+   "anterior": "53,489",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 335,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(859)",
+   "anterior": "(417)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 336,
+   "etiqueta": "(Loss)/profit before tax",
+   "actual": "(5,122,468)",
+   "anterior": "2,818,150",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 337,
+   "etiqueta": "(Loss)/profit for the financial year",
+   "actual": "(5,122,468)",
+   "anterior": "2,818,150",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 340,
+   "etiqueta": "Tax relating to other comprehensive income",
+   "actual": "42,502",
+   "anterior": "37,000",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 341,
+   "etiqueta": "Other comprehensive income for the year",
+   "actual": "42,502",
+   "anterior": "37,000",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 342,
+   "etiqueta": "Total comprehensive income for the year",
+   "actual": "(5,079,966)",
+   "anterior": "2,855,150",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b52",
+   "linea": 585,
+   "etiqueta": "Matchday",
+   "actual": "2,135,057",
+   "anterior": "2,099,261",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b52",
+   "linea": 587,
+   "etiqueta": "Commercial",
+   "actual": "1,028,918",
+   "anterior": "866,324",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b52",
+   "linea": 588,
+   "etiqueta": "Retail",
+   "actual": "738,755",
+   "anterior": "1,003,537",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b52",
+   "linea": 589,
+   "etiqueta": "Football fortune",
+   "actual": "606,311",
+   "anterior": "1,919,140",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b52",
+   "linea": 590,
+   "etiqueta": "Football league",
+   "actual": "2,241,860",
+   "anterior": "2,251,894",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b52",
+   "linea": 591,
+   "etiqueta": "Website and streaming income",
+   "actual": "103,397",
+   "anterior": "131,902",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b52",
+   "linea": 592,
+   "etiqueta": "Donations",
+   "actual": "45,671",
+   "anterior": "41,371",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b52",
+   "linea": 593,
+   "etiqueta": "",
+   "actual": "6,899,969",
+   "anterior": "8,313,429",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b52",
+   "linea": 598,
+   "etiqueta": "Other operating income",
+   "actual": "131,570",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b52",
+   "linea": 600,
+   "etiqueta": "Net rents receivable",
+   "actual": "29,103",
+   "anterior": "21,557",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b52",
+   "linea": 601,
+   "etiqueta": "Government grants receivable",
+   "actual": "28,378",
+   "anterior": "28,378",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b52",
+   "linea": 602,
+   "etiqueta": "Insurance claims receivable",
+   "actual": "10,690",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b52",
+   "linea": 603,
+   "etiqueta": "",
+   "actual": "199,741",
+   "anterior": "49,935",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b53",
+   "linea": 617,
+   "etiqueta": "Government grants",
+   "actual": "(28,378)",
+   "anterior": "(28,378)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Operating (loss)/profit"
+  },
+  {
+   "bloque": "b53",
+   "linea": 619,
+   "etiqueta": "Fees payable to the company's auditor for the audit of the company's financial statements",
+   "actual": "26,750",
+   "anterior": "18,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating (loss)/profit"
+  },
+  {
+   "bloque": "b53",
+   "linea": 620,
+   "etiqueta": "Depreciation of owned tangible fixed assets",
+   "actual": "736,512",
+   "anterior": "432,834",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating (loss)/profit"
+  },
+  {
+   "bloque": "b53",
+   "linea": 621,
+   "etiqueta": "Profit on disposal of tangible fixed assets",
+   "actual": "-",
+   "anterior": "(1,000)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Operating (loss)/profit"
+  },
+  {
+   "bloque": "b53",
+   "linea": 622,
+   "etiqueta": "Amortisation of intangible assets",
+   "actual": "234,997",
+   "anterior": "130,744",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating (loss)/profit"
+  },
+  {
+   "bloque": "b53",
+   "linea": 623,
+   "etiqueta": "Operating lease charges",
+   "actual": "5,660",
+   "anterior": "5,407",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating (loss)/profit"
+  },
+  {
+   "bloque": "b53",
+   "linea": 629,
+   "etiqueta": "Wages and salaries",
+   "actual": "6,278,153",
+   "anterior": "3,933,462",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b53",
+   "linea": 631,
+   "etiqueta": "Social security costs",
+   "actual": "668,395",
+   "anterior": "374,565",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b53",
+   "linea": 632,
+   "etiqueta": "Cost of defined contribution scheme",
+   "actual": "62,732",
+   "anterior": "43,433",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b53",
+   "linea": 633,
+   "etiqueta": "",
+   "actual": "7,009,280",
+   "anterior": "4,351,460",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 326,
+  "actual": "6,899,969"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 337,
+  "actual": "(5,122,468)",
+  "anterior": "2,818,150"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los costos de personal de la nota 7 (L629-L633) sin asignarlos a un renglón del estado, ya que se reparten entre Cost of sales y Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "L629-L633: la nota no indica en qué renglón del estado se incluyen los 7,009,280.",
+   "bloques": [
+    "b53"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan las partidas de la nota 6 (L617-L623) como informativas, sabiendo que no suman al Operating (loss)/profit?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating (loss)/profit",
+   "texto": "L612-L623: son cargos incluidos en el resultado operativo, no un desglose completo.",
+   "bloques": [
+    "b53"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "No hay total de gastos impreso. Impuesto a las ganancias no figura: el resultado antes y después de impuestos coincide. El Exceptional item 2024 (2,558,811) tiene signo positivo."
+}

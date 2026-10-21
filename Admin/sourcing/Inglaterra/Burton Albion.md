@@ -18,3 +18,5 @@ Todos en `Clubes/Inglaterra/Burton Albion/` (los PDF no se trackean; son escaneo
 - `burton-full-accounts-2021-22.pdf`
 - `burton-full-accounts-2020-21.pdf`
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2025 desde `Clubes/Inglaterra/Burton Albion/burton-full-accounts-2024-25-ixbrl.pdf` (sourceId `burtonalbion-gb-burton-full-accounts-2024-25-ixbrl`).

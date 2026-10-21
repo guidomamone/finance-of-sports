@@ -1,0 +1,43 @@
+{
+ "pdf": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Cambridge United/cambridgeunited-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "8ec52a44fd7daf7ade8f60ece9f91fca599bab9b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:18:04.064Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    125,
+    131
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que el PDF no contiene la cuenta de pérdidas y ganancias del ejercicio cerrado el 2025-06-30 (solo aparece la lista de directores en la pág. 6)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo tiene un bloque con fechas de nombramientos y renuncias de directores; puede que la transcripción del iXBRL no haya captado las tablas.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El único bloque con cifras (b1) es la lista de directores con fechas de nombramiento y renuncia; no hay estado de resultados ni notas en el índice. Puede tratarse de cuentas abreviadas o de una transcripción incompleta del iXBRL."
+}

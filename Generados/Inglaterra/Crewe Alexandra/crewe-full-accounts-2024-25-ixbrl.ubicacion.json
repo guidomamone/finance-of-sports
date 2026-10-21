@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Crewe Alexandra/crewe-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "6bb27b41b075a801985ffda6d61c39aa7030bcbb",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:19:27.338Z",
+ "perimetroClub": null,
+ "bloques": {},
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF 'crewe-full-accounts-2024-25-ixbrl.pdf' contiene en realidad un estado de resultados (profit and loss account) del ejercicio cerrado el 30-06-2025 que la transcripción no capturó?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice no tiene ningún bloque con cifras; puede ser un fallo de transcripción del iXBRL o cuentas abreviadas sin P&L.",
+   "bloques": [],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El índice llegó vacío (0 bloques con cifras), por lo que no se puede identificar estado de resultados. Posible problema de extracción del documento iXBRL, o cuentas de pequeña empresa presentadas sin cuenta de pérdidas y ganancias (filleted accounts). Revisar el PDF original."
+}

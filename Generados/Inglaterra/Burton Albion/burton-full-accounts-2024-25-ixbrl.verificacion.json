@@ -1,0 +1,206 @@
+{
+ "pdf": "Clubes/Inglaterra/Burton Albion/burton-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Burton Albion/burton-full-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:40:20.984Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Burton Albion/burton-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": ".md: Year Ended 30 June 2025 (la etiqueta del XHTML viene vacía, anidada)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Burton Albion/burton-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.7763568394002505e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: El estado (b37) y la nota 6 (b79) difieren en 3,000 para 2025 y en 2024 (471,250 vs 221,250 + release 250,000).",
+  "duda de extraer que no afecta la carga: L773-L784 concilia el cargo teórico con el real (cero), no desglosa importes del estado."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 6.773144,
+  "gastos": 15.120829,
+  "financiero": 0.003704,
+  "impuesto": 0,
+  "resultadoImpreso": -8.343981,
+  "resultadoParaCargar": -8.343981,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Football league distrubutions",
+   "lado": "ingreso",
+   "M": 2.85948,
+   "pagina": 25,
+   "linea": 671,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial income",
+   "lado": "ingreso",
+   "M": 2.652423,
+   "pagina": 25,
+   "linea": 673,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 0.902567,
+   "pagina": 25,
+   "linea": 674,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Net rents receivable",
+   "lado": "ingreso",
+   "M": 0.03125,
+   "pagina": 25,
+   "linea": 682,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Release of grant income",
+   "lado": "ingreso",
+   "M": 0.080623,
+   "pagina": 25,
+   "linea": 684,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Fees receivable",
+   "lado": "ingreso",
+   "M": 0.012075,
+   "pagina": 25,
+   "linea": 685,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Profit on disposal of player registrations",
+   "lado": "ingreso",
+   "M": 0.234726,
+   "pagina": 13,
+   "linea": 326,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 8.044102,
+   "pagina": 13,
+   "linea": 321,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 7.076727,
+   "pagina": 13,
+   "linea": 323,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.005605,
+   "linea": 328
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.001901,
+   "linea": 329
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 331
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "c89c610b92bd1d41ed686059dc42348f32b3a35d",
+  "rango": [
+   316,
+   335
+  ],
+  "lineasCargadas": [
+   671,
+   673,
+   674,
+   682,
+   684,
+   685,
+   326,
+   321,
+   323,
+   328,
+   329,
+   331
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 316 a 335 del .md):\nL316: |  | 2025 | 2024 |\nL317: | --- | --- | --- |\nL318: | Note | £ | £ |\nL319: | Turnover | 4 | 6,414,470 | 6,384,146 |\nL320: | --- | --- | --- | --- |\nL321: | Cost of sales |  | (8,044,102) | (6,084,142) |\nL322: | Gross (loss)/profit |  | (1,629,632) | 300,004 |\nL323: | Administrative expenses |  | (7,076,727) | (2,195,353) |\nL324: | Other operating income | 5 | 123,948 | 128,848 |\nL325: | Operating loss | 6 | (8,582,411) | (1,766,501) |\nL326: | Profit on disposal of player registrations |  | 234,726 | 471,250 |\nL327: | Loss on ordinary activities before interest |  | (8,347,685) | (1,295,251) |\nL328: | Interest receivable and similar income | 9 | 5,605 | 9,920 |\nL329: | Interest payable and similar expenses | 10 | (1,901) | (8,410) |\nL330: | Loss before tax |  | (8,343,981) | (1,293,741) |\nL331: | Tax on loss | 11 | - | - |\nL332: | Loss for the financial year |  | (8,343,981) | (1,293,741) |\nL333: | There were no recognised gains and losses for 2025 or 2024 other than those included in the statement of comprehensive income. |\nL334: | --- |\nL335: | There was no other comprehensive income for 2025 (2024:£NIL). |\n\nLO QUE SE CARGA:\n- ingreso · \"Football league distrubutions\" · 2.85948 · L671 (de una nota)\n- ingreso · \"Commercial income\" · 2.652423 · L673 (de una nota)\n- ingreso · \"Gate receipts\" · 0.902567 · L674 (de una nota)\n- ingreso · \"Net rents receivable\" · 0.03125 · L682 (de una nota)\n- ingreso · \"Release of grant income\" · 0.080623 · L684 (de una nota)\n- ingreso · \"Fees receivable\" · 0.012075 · L685 (de una nota)\n- ingreso · \"Profit on disposal of player registrations\" · 0.234726 · L326\n- gasto · \"Cost of sales\" · 8.044102 · L321\n- gasto · \"Administrative expenses\" · 7.076727 · L323\n- financiero · \"Interest receivable and similar income\" · 0.005605 · L328\n- financiero · \"Interest payable and similar expenses\" · -0.001901 · L329\n- impuesto · \"Tax on loss\" · 0 · L331"
+ }
+}

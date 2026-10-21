@@ -1,0 +1,245 @@
+{
+ "pdf": "Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:40:20.872Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "matchday_competition",
+   "posible": true,
+   "motivo": "El turnover (nota 4, .md L618-630) no tiene línea de la distribución de la EFL; la única fila donde puede estar es «Match receipts, player loans and prize money»",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 9.999999999177334e-7
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Exceptional administrative expenses\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en afcwimbledon-full-accounts-2024-25-ixbrl.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Operating (loss)/profit\"): aceptar, en afcwimbledon-full-accounts-2024-25-ixbrl.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 11.888329,
+  "gastos": 13.287812,
+  "financiero": 0.09507,
+  "impuesto": 0.083392,
+  "resultadoImpreso": -1.221022,
+  "resultadoParaCargar": -1.221022,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Match receipts, player loans and prize money",
+   "lado": "ingreso",
+   "M": 5.858414,
+   "pagina": 27,
+   "linea": 623,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Merchandise and programmes",
+   "lado": "ingreso",
+   "M": 1.081991,
+   "pagina": 27,
+   "linea": 625,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorships and advertising",
+   "lado": "ingreso",
+   "M": 0.990532,
+   "pagina": 27,
+   "linea": 626,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Bar and catering",
+   "lado": "ingreso",
+   "M": 0.861032,
+   "pagina": 27,
+   "linea": 627,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Donations and sundry",
+   "lado": "ingreso",
+   "M": 0.446091,
+   "pagina": 27,
+   "linea": 628,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Youth development income",
+   "lado": "ingreso",
+   "M": 0.546023,
+   "pagina": 27,
+   "linea": 629,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Gain on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 0.972266,
+   "pagina": 17,
+   "linea": 366,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Grants receivable",
+   "lado": "ingreso",
+   "M": 0.025,
+   "pagina": 27,
+   "linea": 643,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Insurance claim",
+   "lado": "ingreso",
+   "M": 0.960556,
+   "pagina": 27,
+   "linea": 645,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Flood Donations",
+   "lado": "ingreso",
+   "M": 0.146424,
+   "pagina": 27,
+   "linea": 646,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 8.223069,
+   "pagina": 17,
+   "linea": 362,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 4.183724,
+   "pagina": 17,
+   "linea": 364,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Exceptional administrative expenses",
+   "lado": "gasto",
+   "M": 0.881019,
+   "pagina": 17,
+   "linea": 365,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.100329,
+   "linea": 369
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.005259,
+   "linea": 370
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on (loss)/profit",
+   "M": 0.083392,
+   "linea": 372
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "e8e8eb07a30e3e09740613586c789e18902eefe5",
+  "rango": [
+   357,
+   376
+  ],
+  "lineasCargadas": [
+   623,
+   625,
+   626,
+   627,
+   628,
+   629,
+   366,
+   643,
+   645,
+   646,
+   362,
+   364,
+   365,
+   369,
+   370,
+   372
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 357 a 376 del .md):\nL357: |  | 2025 | 2024 |\nL358: | --- | --- | --- |\nL359: | Note | £ | £ |\nL360: | Turnover | 4 | 9,784,083 | 8,685,903 |\nL361: | --- | --- | --- | --- |\nL362: | Cost of sales |  | (8,223,069) | (7,269,153) |\nL363: | Gross profit |  | 1,561,014 | 1,416,750 |\nL364: | Administrative expenses |  | (4,183,724) | (4,091,194) |\nL365: | Exceptional administrative expenses |  | (881,019) | (409,175) |\nL366: | Gain on disposal of players' registrations |  | 972,266 | 3,279,741 |\nL367: | Other operating income |  | 1,131,979 | 140,099 |\nL368: | Operating (loss)/profit | 6 | (1,399,484) | 336,221 |\nL369: | Interest receivable and similar income | 9 | 100,329 | 64,958 |\nL370: | Interest payable and similar expenses | 10 | (5,259) | (19,654) |\nL371: | (Loss)/profit before tax |  | (1,304,414) | 381,525 |\nL372: | Tax on (loss)/profit | 11 | 83,392 | 173,805 |\nL373: | (Loss)/profit for the financial year |  | (1,221,022) | 555,330 |\nL374: | There were no recognised gains and losses for 2025 or 2024 other than those included in the statement of comprehensive income. |\nL375: | --- |\nL376: | There was no other comprehensive income for 2025 (2024:£NIL). |\n\nLO QUE SE CARGA:\n- ingreso · \"Match receipts, player loans and prize money\" · 5.858414 · L623 (de una nota)\n- ingreso · \"Merchandise and programmes\" · 1.081991 · L625 (de una nota)\n- ingreso · \"Sponsorships and advertising\" · 0.990532 · L626 (de una nota)\n- ingreso · \"Bar and catering\" · 0.861032 · L627 (de una nota)\n- ingreso · \"Donations and sundry\" · 0.446091 · L628 (de una nota)\n- ingreso · \"Youth development income\" · 0.546023 · L629 (de una nota)\n- ingreso · \"Gain on disposal of players' registrations\" · 0.972266 · L366\n- ingreso · \"Grants receivable\" · 0.025 · L643 (de una nota)\n- ingreso · \"Insurance claim\" · 0.960556 · L645 (de una nota)\n- ingreso · \"Flood Donations\" · 0.146424 · L646 (de una nota)\n- gasto · \"Cost of sales\" · 8.223069 · L362\n- gasto · \"Administrative expenses\" · 4.183724 · L364\n- gasto · \"Exceptional administrative expenses\" · 0.881019 · L365\n- financiero · \"Interest receivable and similar income\" · 0.100329 · L369\n- financiero · \"Interest payable and similar expenses\" · -0.005259 · L370\n- impuesto · \"Tax on (loss)/profit\" · 0.083392 · L372"
+ }
+}

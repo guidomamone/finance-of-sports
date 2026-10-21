@@ -1,0 +1,440 @@
+{
+ "pdf": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-21T18:40:28.200Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (lincolncity-gb)"
+  }
+ ],
+ "avisos": [
+  "\"Cuotas sociales\" da 0 porque está incluida en otra línea (ajuste manual `incluye`)",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "lincolncity-gb",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Matchday",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 2.8518,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Central distribution and grants",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 2.275433,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Commercial, hospitality and retail",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.909729,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Academy grants and fundraising",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.775767,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Football fortune and miscellaneous income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.665579,
+    "disclosureLevel": "aggregated",
+    "_pag": 37,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.69424,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.604423,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -11.436136,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2025-06-30",
+   "sourceId": "lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.012991,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -0.012991
+    },
+    {
+     "label": "Tax on loss",
+     "value": null
+    }
+   ],
+   "incluidoEn": {
+    "wages_squad": {
+     "en": "other_expenses",
+     "posible": true
+    },
+    "member_dues": {
+     "en": "matchday_competition",
+     "posible": true
+    }
+   },
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 9.172548,
+   "officialTotalExpenses": 12.040559,
+   "officialPAT": -2.881002
+  },
+  "source": {
+   "id": "lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl",
+   "clubId": "lincolncity-gb",
+   "title": "Lincoln City Football Club Company Limited — lincoln-medium-accounts-2024-25-ixbrl (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: Year Ended 30 June 2025"
+ },
+ "clubId": "lincolncity-gb",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: Year Ended 30 June 2025",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "matchday_competition",
+   "posible": true,
+   "motivo": "El club vende membresías (weareimps.com: Bronze, Silver, John O'Gaunts Club), bundles de entradas; el turnover (.md L1006-1014) no tiene línea propia",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 10,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Matchday",
+   "page": 37,
+   "native": 2.8518,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 2.8518,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.8518
+  },
+  {
+   "label": "Central distribution and grants",
+   "page": 37,
+   "native": 2.275433,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 2.275433,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): Central distribution and grants (.md L1008; L192: contrato de TV de la EFL y solidaridad de la Premier): broadcasting",
+   "destino": "revenue",
+   "amountNative": 2.275433
+  },
+  {
+   "label": "Commercial, hospitality and retail",
+   "page": 37,
+   "native": 1.909729,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 1.909729,
+   "cat": "sponsorship_commercial",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.909729
+  },
+  {
+   "label": "Academy grants and fundraising",
+   "page": 37,
+   "native": 0.775767,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.775767,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): Academy grants and fundraising (.md L1012): youth_football",
+   "destino": "revenue",
+   "amountNative": 0.775767
+  },
+  {
+   "label": "Football fortune and miscellaneous income",
+   "page": 37,
+   "native": 0.665579,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.665579,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): mezcla de premios, préstamos de jugadores y varios sin importes (.md L1014, L196): other_income",
+   "destino": "revenue",
+   "amountNative": 0.665579
+  },
+  {
+   "label": "Other operating income",
+   "page": 23,
+   "native": 0.69424,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.69424,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.69424
+  },
+  {
+   "label": "Cost of sales",
+   "page": 23,
+   "native": 0.604423,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.604423,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Barnsley), titulo:notes · Claude 2026-10-21 (subagente Sonnet): Cost of sales sin desglose por naturaleza (.md L494) va a other_expenses, como los clubes ingleses cargados (Leeds, Sunderland, Brighton)",
+   "destino": "expense",
+   "amountNative": -0.604423
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 23,
+   "native": 11.436136,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 11.436136,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -11.436136
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -0.012991,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"TURNOVER\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 9.172548,
+  "expSum": -12.040559,
+  "officialTotalRevenue": 9.172548,
+  "officialTotalExpenses": 12.040559,
+  "officialPAT": -2.881002,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -2.881002,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 9.172548
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 12.040559
+  }
+ },
+ "liga": {
+  "valor": "gb-leagueone",
+  "fuente": "roster cacheado de \"2024–25 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Lincoln City\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: Year Ended 30 June 2025",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: Year Ended 30 June 2025)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (1 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2025-06-30 = 0.7299 (Cierre BCE al 30/6/2025, cruzando GBP/EUR (0,85550) × EUR/USD (1,1720) (1 GBP ≈ 1,3700 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "lincolncity-gb-lincoln-medium-accounts-2024-25-ixbrl",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-leagueone",
+   "fuente": "roster cacheado de \"2024–25 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Lincoln City\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 6,
+  "lineasGasto": 2,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

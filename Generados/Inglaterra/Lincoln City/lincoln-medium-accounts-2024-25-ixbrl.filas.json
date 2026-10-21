@@ -1,0 +1,344 @@
+{
+ "pdf": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.md",
+ "mdSha1": "e8c89d9ccabe33c7ef44fe7190d47218bc5ba68d",
+ "ubicacionSha1": "97aeaef4bbf33f7b82f6b7efc6a8ab23eef37942",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:21:07.625Z",
+ "ubicacion": {
+  "estado": [
+   "b12"
+  ],
+  "notas_ingresos": [
+   "b26"
+  ],
+  "notas_gastos": [
+   "b26",
+   "b28"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b12",
+   "escala": "unidades",
+   "evidencia": "L564: columnas '£' sin indicación de miles"
+  },
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "L1004/L1024: columnas '£'"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "L1080/L1092: columnas '£'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b12",
+   "linea": 566,
+   "etiqueta": "TURNOVER",
+   "actual": "8,478,308",
+   "anterior": "6,976,968",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 568,
+   "etiqueta": "Cost of sales",
+   "actual": "604,423",
+   "anterior": "344,899",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 570,
+   "etiqueta": "GROSS PROFIT",
+   "actual": "7,873,885",
+   "anterior": "6,632,069",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 572,
+   "etiqueta": "Administrative expenses",
+   "actual": "11,436,136",
+   "anterior": "10,076,649",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 574,
+   "etiqueta": "",
+   "actual": "(3,562,251)",
+   "anterior": "(3,444,580)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 576,
+   "etiqueta": "Other operating income",
+   "actual": "694,240",
+   "anterior": "478,011",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 578,
+   "etiqueta": "OPERATING LOSS",
+   "actual": "(2,868,011)",
+   "anterior": "(2,966,569)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 580,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "12,991",
+   "anterior": "14,510",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 582,
+   "etiqueta": "LOSS BEFORE TAXATION",
+   "actual": "(2,881,002)",
+   "anterior": "(2,981,079)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 584,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 586,
+   "etiqueta": "LOSS FOR THE FINANCIAL YEAR",
+   "actual": "(2,881,002)",
+   "anterior": "(2,981,079)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 588,
+   "etiqueta": "OTHER COMPREHENSIVE INCOME",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 590,
+   "etiqueta": "TOTAL COMPREHENSIVE INCOME FOR THE YEAR",
+   "actual": "(2,881,002)",
+   "anterior": "(2,981,079)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b26",
+   "linea": 1006,
+   "etiqueta": "Matchday",
+   "actual": "2,851,800",
+   "anterior": "2,353,012",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1008,
+   "etiqueta": "Central distribution and grants",
+   "actual": "2,275,433",
+   "anterior": "1,768,428",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1010,
+   "etiqueta": "Commercial, hospitality and retail",
+   "actual": "1,909,729",
+   "anterior": "1,749,839",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1012,
+   "etiqueta": "Academy grants and fundraising",
+   "actual": "775,767",
+   "anterior": "679,493",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1014,
+   "etiqueta": "Football fortune and miscellaneous income",
+   "actual": "665,579",
+   "anterior": "426,196",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1016,
+   "etiqueta": "",
+   "actual": "8,478,308",
+   "anterior": "6,976,968",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1026,
+   "etiqueta": "Wages and salaries",
+   "actual": "6,662,181",
+   "anterior": "6,179,878",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1028,
+   "etiqueta": "Social security costs",
+   "actual": "778,620",
+   "anterior": "649,313",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1030,
+   "etiqueta": "Other pension costs",
+   "actual": "85,486",
+   "anterior": "108,579",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b26",
+   "linea": 1032,
+   "etiqueta": "",
+   "actual": "7,526,287",
+   "anterior": "6,937,770",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1082,
+   "etiqueta": "Depreciation - owned assets",
+   "actual": "124,019",
+   "anterior": "103,516",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "OPERATING LOSS"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1084,
+   "etiqueta": "Profit on disposal of fixed assets",
+   "actual": "(526,978)",
+   "anterior": "(370,757)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "OPERATING LOSS"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1086,
+   "etiqueta": "Player and management registrations amortisation",
+   "actual": "371,223",
+   "anterior": "297,397",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "OPERATING LOSS"
+  },
+  {
+   "bloque": "b28",
+   "linea": 1094,
+   "etiqueta": "Bond interest",
+   "actual": "12,991",
+   "anterior": "14,510",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 566,
+  "actual": "8,478,308"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 586,
+  "actual": "(2,881,002)",
+  "anterior": "(2,981,079)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se asignan los costos de personal de la nota 4 (L1026-L1032) a 'Administrative expenses'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "L1026-L1032: la nota no indica en qué renglón del estado se imputan (podría repartirse con Cost of sales).",
+   "bloques": [
+    "b26"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Profit on disposal of fixed assets' (L1084, 526,978) como ingreso dentro de la pérdida operativa?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "OPERATING LOSS",
+   "texto": "L1084: la nota 5 no dice en qué renglón está incluido (¿Other operating income o neteado en gastos?).",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Ejercicio cerrado el 30-06-2025. No se imprime total de gastos. La conciliación impositiva (L1110-L1122) no se extrajo por no ser partidas de resultados. Cantidades de empleados (L1056-L1068) no son importes."
+}

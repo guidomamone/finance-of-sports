@@ -1,0 +1,37 @@
+{
+ "pdf": "Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-21T18:26:27.567Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (morecambe-gb)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-05-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "morecambe-gb",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

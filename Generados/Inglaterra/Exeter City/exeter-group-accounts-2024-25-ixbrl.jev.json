@@ -1,0 +1,260 @@
+{
+ "md": "Clubes/Inglaterra/Exeter City/exeter-group-accounts-2024-25-ixbrl.md",
+ "generatedAt": "2026-10-21T18:33:53.724Z",
+ "rubrosHuella": "732f7fff9e28aba9ee7eb37731079c3c8db6c293",
+ "rubros": [
+  {
+   "label": "Football League",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "broadcasting",
+     0.78
+    ],
+    [
+     "competition_bonus",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Gates",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Commercial activities",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Season ticket sales",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "top3": [
+    [
+     "season_tickets",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Television income",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Insurance claims receivable",
+   "lado": "revenue",
+   "page": 32,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Grants and donations",
+   "lado": "revenue",
+   "page": 32,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Transfer revenue",
+   "lado": "revenue",
+   "page": 15,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 15,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "wages_squad",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Food and drink sales",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "stadium_other",
+     0.99
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1030
+  }
+ ]
+}

@@ -1,0 +1,287 @@
+{
+ "pdf": "Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Gillingham/gillingham-medium-accounts-2024-25-ixbrl.md",
+ "mdSha1": "4c7a4f9796ef388ca5d1222568dfbe187dc4f77e",
+ "ubicacionSha1": "e08f58fdee8d32579eb74181b2cbabdd99a783a3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:20:33.496Z",
+ "ubicacion": {
+  "estado": [
+   "b12"
+  ],
+  "notas_ingresos": [
+   "b28"
+  ],
+  "notas_gastos": [
+   "b28"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b12",
+   "escala": "unidades",
+   "evidencia": "L448: columnas en '£'"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "L930: columnas en '£'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b12",
+   "linea": 450,
+   "etiqueta": "REVENUE",
+   "actual": "7,530,515",
+   "anterior": "8,219,388",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 452,
+   "etiqueta": "Cost of sales",
+   "actual": "(10,057,281)",
+   "anterior": "(9,988,351)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 454,
+   "etiqueta": "GROSS LOSS",
+   "actual": "(2,526,766)",
+   "anterior": "(1,768,963)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 456,
+   "etiqueta": "Administrative expenses",
+   "actual": "(3,194,908)",
+   "anterior": "(2,549,783)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 458,
+   "etiqueta": "",
+   "actual": "(5,721,674)",
+   "anterior": "(4,318,746)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 460,
+   "etiqueta": "Other operating income",
+   "actual": "-",
+   "anterior": "686",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 462,
+   "etiqueta": "",
+   "actual": "(5,721,674)",
+   "anterior": "(4,318,060)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 464,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(15,884)",
+   "anterior": "(29,485)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 466,
+   "etiqueta": "LOSS BEFORE TAXATION",
+   "actual": "(5,737,558)",
+   "anterior": "(4,347,545)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 468,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 470,
+   "etiqueta": "LOSS FOR THE FINANCIAL YEAR",
+   "actual": "(5,737,558)",
+   "anterior": "(4,347,545)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 472,
+   "etiqueta": "OTHER COMPREHENSIVE INCOME",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 474,
+   "etiqueta": "TOTAL COMPREHENSIVE LOSS FOR THE YEAR",
+   "actual": "(5,737,558)",
+   "anterior": "(4,347,545)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b28",
+   "linea": 932,
+   "etiqueta": "Football",
+   "actual": "3,495,463",
+   "anterior": "3,760,556",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  },
+  {
+   "bloque": "b28",
+   "linea": 934,
+   "etiqueta": "Commercial",
+   "actual": "2,334,535",
+   "anterior": "1,849,179",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  },
+  {
+   "bloque": "b28",
+   "linea": 936,
+   "etiqueta": "School",
+   "actual": "68,491",
+   "anterior": "833,087",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  },
+  {
+   "bloque": "b28",
+   "linea": 938,
+   "etiqueta": "Shop",
+   "actual": "518,864",
+   "anterior": "579,293",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  },
+  {
+   "bloque": "b28",
+   "linea": 940,
+   "etiqueta": "Youth Academy",
+   "actual": "652,507",
+   "anterior": "725,084",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  },
+  {
+   "bloque": "b28",
+   "linea": 942,
+   "etiqueta": "Programmes",
+   "actual": "53,741",
+   "anterior": "65,042",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  },
+  {
+   "bloque": "b28",
+   "linea": 944,
+   "etiqueta": "Kiosks",
+   "actual": "359,451",
+   "anterior": "404,769",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  },
+  {
+   "bloque": "b28",
+   "linea": 946,
+   "etiqueta": "Sundry income and donation",
+   "actual": "12,463",
+   "anterior": "2,378",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  },
+  {
+   "bloque": "b28",
+   "linea": 948,
+   "etiqueta": "Transfer fees",
+   "actual": "35,000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  },
+  {
+   "bloque": "b28",
+   "linea": 950,
+   "etiqueta": "",
+   "actual": "7,530,515",
+   "anterior": "8,219,388",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "REVENUE"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 450,
+  "actual": "7,530,515"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 470,
+  "actual": "(5,737,558)",
+  "anterior": "(4,347,545)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de costos de personal de la nota 4 (L964-L970, total 6,765,924) por no desglosar directamente un renglón del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Los costos de personal (L964-L970) están repartidos entre Cost of sales y Administrative expenses sin indicar asignación.",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Escala en libras (£) unidades. El año anterior es un período de 13 meses (1.6.23 a 30.6.24). No hay total de gastos impreso. Nota 4 (personal) no extraída como desglose; empleados y remuneración de directores (sin importe) omitidos."
+}

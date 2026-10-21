@@ -1,0 +1,283 @@
+{
+ "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:40:20.954Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "910,655",
+   "linea": 1242,
+   "etiqueta": "Profit on player sales and compensation",
+   "lado": "ingreso",
+   "reemplaza": "Trading of intangible assets",
+   "motivo": "La fila «Trading of intangible assets» (−171.164, .md L502) es el neto de la nota 7 (L1242-1248): se abre en sus tres partidas, como los clubes ingleses cargados (Profit on disposal = player_sales; amortización = player_amortisation)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "1,021,082",
+   "linea": 1244,
+   "etiqueta": "Player registrations amortisation",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Nota 7 (.md L1244), parte del neto «Trading of intangible assets» (L502)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "60,737",
+   "linea": 1246,
+   "etiqueta": "Add on fees, sell on fees and unrecoverable transfer levies",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Nota 7 (.md L1246), parte del neto «Trading of intangible assets» (L502); 910.655 − 1.021.082 − 60.737 = −171.164",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"TURNOVER\" 10.276916 cierra; además se suman 1 línea(s) fuera de ese total (0.910655)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 0
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Profit on player sales and compensation\" (ingreso) 910,655, en lugar de \"Trading of intangible assets\" (2026-10-21, La fila «Trading of intangible assets» (−171.164, .md L502) es el neto de la nota 7 (L1242-1248): se abre en sus tres partidas, como los clubes ingleses cargados (Profit on disposal = player_sales; amortización = player_amortisation))",
+  "ajuste manual: fila \"Player registrations amortisation\" (gasto) 1,021,082 (2026-10-21, Nota 7 (.md L1244), parte del neto «Trading of intangible assets» (L502))",
+  "ajuste manual: fila \"Add on fees, sell on fees and unrecoverable transfer levies\" (gasto) 60,737 (2026-10-21, Nota 7 (.md L1246), parte del neto «Trading of intangible assets» (L502); 910.655 − 1.021.082 − 60.737 = −171.164)",
+  "duda de localizar que no afecta la carga: b38 (nota 3 continúa, empleados y directores) y b40 (nota 4-5, operating loss) podrían desglosar costes de personal y amortizaciones, pero no abren directamente los renglones Cost of sales ni Administrative expenses."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 11.187571,
+  "gastos": 17.640984,
+  "financiero": 0.185459,
+  "impuesto": 0,
+  "resultadoImpreso": -6.58234,
+  "resultadoParaCargar": -6.58234,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Football League distributions",
+   "lado": "ingreso",
+   "M": 3.103726,
+   "pagina": 47,
+   "linea": 1042,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Match day",
+   "lado": "ingreso",
+   "M": 3.86421,
+   "pagina": 47,
+   "linea": 1044,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "TV and broadcasting",
+   "lado": "ingreso",
+   "M": 0.168616,
+   "pagina": 47,
+   "linea": 1046,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Merchandise",
+   "lado": "ingreso",
+   "M": 0.238544,
+   "pagina": 47,
+   "linea": 1048,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Sponsorship & advertising",
+   "lado": "ingreso",
+   "M": 1.039282,
+   "pagina": 47,
+   "linea": 1050,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Catering",
+   "lado": "ingreso",
+   "M": 0.818572,
+   "pagina": 47,
+   "linea": 1052,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other receipts",
+   "lado": "ingreso",
+   "M": 1.00783,
+   "pagina": 47,
+   "linea": 1054,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Donation income",
+   "lado": "ingreso",
+   "M": 0.036136,
+   "pagina": 47,
+   "linea": 1056,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Profit on player sales and compensation",
+   "lado": "ingreso",
+   "M": 0.910655,
+   "pagina": 53,
+   "linea": 1242,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 13.968,
+   "pagina": 25,
+   "linea": 494,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 2.591165,
+   "pagina": 25,
+   "linea": 498,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Player registrations amortisation",
+   "lado": "gasto",
+   "M": 1.021082,
+   "pagina": 53,
+   "linea": 1244,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Add on fees, sell on fees and unrecoverable transfer levies",
+   "lado": "gasto",
+   "M": 0.060737,
+   "pagina": 53,
+   "linea": 1246,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.028266,
+   "linea": 506
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.157193,
+   "linea": 510
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 514
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "8f350509a1ff7058c9e3632f5a8f029ac2f8bd60",
+  "rango": [
+   489,
+   519
+  ],
+  "lineasCargadas": [
+   1042,
+   1044,
+   1046,
+   1048,
+   1050,
+   1052,
+   1054,
+   1056,
+   1242,
+   494,
+   498,
+   1244,
+   1246,
+   506,
+   510,
+   514
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 489 a 519 del .md):\nL489: | --- | --- |\nL490: | Notes | £ | £ |\nL491: | --- | --- | --- |\nL492: | TURNOVER | 3 | 10,276,916 | 8,969,422 |\nL493: | --- | --- | --- | --- |\nL494: | Cost of sales | 13,968,000 | 14,562,786 |\nL495: | --- | --- | --- |\nL496: | GROSS LOSS | (3,691,084 | ) | (5,593,364 | ) |\nL497: | --- | --- | --- | --- | --- |\nL498: | Administrative expenses | 2,591,165 | 4,066,141 |\nL499: | --- | --- | --- |\nL500: | OPERATING LOSS | 5 | (6,282,249 | ) | (9,659,505 | ) |\nL501: | --- | --- | --- | --- | --- | --- |\nL502: | Trading of intangible assets | 7 | (171,164 | ) | 6,780,861 |\nL503: | --- | --- | --- | --- | --- |\nL504: | (6,453,413 | ) | (2,878,644 | ) |\nL505: | --- | --- | --- | --- |\nL506: | Interest receivable and similar income | 28,266 | 81,326 |\nL507: | --- | --- | --- |\nL508: | (6,425,147 | ) | (2,797,318 | ) |\nL509: | --- | --- | --- | --- |\nL510: | Interest payable and similar expenses | 8 | 157,193 | 47,576 |\nL511: | --- | --- | --- | --- |\nL512: | LOSS BEFORE TAXATION | (6,582,340 | ) | (2,844,894 | ) |\nL513: | --- | --- | --- | --- | --- |\nL514: | Tax on loss | 9 | - | - |\nL515: | --- | --- | --- | --- |\nL516: | LOSS FOR THE FINANCIAL YEAR | (6,582,340 | ) | (2,844,894 | ) |\nL517: | --- | --- | --- | --- | --- |\nL519: --- pág. 26 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Football League distributions\" · 3.103726 · L1042 (de una nota)\n- ingreso · \"Match day\" · 3.86421 · L1044 (de una nota)\n- ingreso · \"TV and broadcasting\" · 0.168616 · L1046 (de una nota)\n- ingreso · \"Merchandise\" · 0.238544 · L1048 (de una nota)\n- ingreso · \"Sponsorship & advertising\" · 1.039282 · L1050 (de una nota)\n- ingreso · \"Catering\" · 0.818572 · L1052 (de una nota)\n- ingreso · \"Other receipts\" · 1.00783 · L1054 (de una nota)\n- ingreso · \"Donation income\" · 0.036136 · L1056 (de una nota)\n- ingreso · \"Profit on player sales and compensation\" · 0.910655 · L1242 (de una nota)\n- gasto · \"Cost of sales\" · 13.968 · L494\n- gasto · \"Administrative expenses\" · 2.591165 · L498\n- gasto · \"Player registrations amortisation\" · 1.021082 · L1244 (de una nota)\n- gasto · \"Add on fees, sell on fees and unrecoverable transfer levies\" · 0.060737 · L1246 (de una nota)\n- financiero · \"Interest receivable and similar income\" · 0.028266 · L506\n- financiero · \"Interest payable and similar expenses\" · -0.157193 · L510\n- impuesto · \"Tax on loss\" · 0 · L514"
+ }
+}

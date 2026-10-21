@@ -1,0 +1,519 @@
+{
+ "pdf": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-21T18:40:28.295Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (shrewsburytown-gb)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-21: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 3 documento(s) mirados)",
+  "\"Cuotas sociales\" da 0 porque está incluida en otra línea (ajuste manual `incluye`)",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "shrewsburytown-gb",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ticket Sales",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 1.840131,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Football League income",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 2.363353,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Transfer fees",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.250931,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sundry Income",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.353709,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Academy income",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.555635,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Television and internet portal income",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.022903,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Contributions from support organisations",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.040037,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Food and Beverage sales",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.787364,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -6.948641,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.188028,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2025-06-30",
+   "sourceId": "shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.003898,
+   "tax": 0.327092,
+   "extraRows": [
+    {
+     "label": "Other interest receivable and similar income",
+     "value": null
+    },
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -0.003898
+    },
+    {
+     "label": "Tax on loss",
+     "value": 0.327092
+    }
+   ],
+   "incluidoEn": {
+    "wages_squad": {
+     "en": "other_expenses",
+     "posible": true
+    },
+    "member_dues": {
+     "en": "other_income",
+     "posible": true
+    }
+   },
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 7.214063,
+   "officialTotalExpenses": 8.136669,
+   "officialPAT": -0.599412
+  },
+  "source": {
+   "id": "shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl",
+   "clubId": "shrewsburytown-gb",
+   "title": "Shrewsbury Town Football Club Limited — shrewsbury-full-accounts-2024-25-ixbrl (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "shrewsburytown-gb",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "El club vende membresías (shrewsburytown.com, junio 2025: adulto £25), pero el turnover (.md L467-474) no tiene línea propia: la cuota va dentro de «Sundry Income» u otra línea de otros ingresos",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 14,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ticket Sales",
+   "page": 19,
+   "native": 1.840131,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 1.840131,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.840131
+  },
+  {
+   "label": "Football League income",
+   "page": 19,
+   "native": 2.363353,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 2.363353,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): «Football League income» 2.363.353 (.md L468): distribución de la EFL, broadcasting",
+   "destino": "revenue",
+   "amountNative": 2.363353
+  },
+  {
+   "label": "Transfer fees",
+   "page": 19,
+   "native": 0.250931,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.250931,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.250931
+  },
+  {
+   "label": "Sundry Income",
+   "page": 19,
+   "native": 1.353709,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 1.353709,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.353709
+  },
+  {
+   "label": "Academy income",
+   "page": 19,
+   "native": 0.555635,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.555635,
+   "cat": "youth_football",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.555635
+  },
+  {
+   "label": "Television and internet portal income",
+   "page": 19,
+   "native": 0.022903,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.022903,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.022903
+  },
+  {
+   "label": "Contributions from support organisations",
+   "page": 19,
+   "native": 0.040037,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.040037,
+   "cat": "other_income",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.040037
+  },
+  {
+   "label": "Food and Beverage sales",
+   "page": 19,
+   "native": 0.787364,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.787364,
+   "cat": "stadium_other",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.787364
+  },
+  {
+   "label": "Other operating income",
+   "page": 11,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Cost of sales",
+   "page": 11,
+   "native": 6.948641,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.948641,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): Cost of sales sin desglose por naturaleza (.md L211) a other_expenses",
+   "destino": "expense",
+   "amountNative": -6.948641
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 11,
+   "native": 1.188028,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.188028,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.188028
+  },
+  {
+   "label": "Other interest receivable and similar income",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -0.003898,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": 0.327092,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 7.214063,
+  "expSum": -8.136669,
+  "officialTotalRevenue": 7.214063,
+  "officialTotalExpenses": 8.136669,
+  "officialPAT": -0.599412,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.599412,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 7.214063
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 8.136669
+  }
+ },
+ "liga": {
+  "valor": "gb-leagueone",
+  "fuente": "roster cacheado de \"2024–25 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Shrewsbury Town\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (40 de 40 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-21)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2025-06-30 = 0.7299 (Cierre BCE al 30/6/2025, cruzando GBP/EUR (0,85550) × EUR/USD (1,1720) (1 GBP ≈ 1,3700 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "shrewsburytown-gb-shrewsbury-full-accounts-2024-25-ixbrl",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-leagueone",
+   "fuente": "roster cacheado de \"2024–25 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Shrewsbury Town\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 9,
+  "lineasGasto": 2,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

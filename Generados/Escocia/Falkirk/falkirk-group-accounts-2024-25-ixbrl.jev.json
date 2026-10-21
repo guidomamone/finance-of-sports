@@ -1,0 +1,122 @@
+{
+ "md": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.md",
+ "generatedAt": "2026-10-21T18:40:23.284Z",
+ "rubrosHuella": "bfd5db1304ac08bc14517533457e4d613d6b8523",
+ "rubros": [
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "wages_squad",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "TURNOVER",
+   "lado": "revenue",
+   "page": 19,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 19,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Release of negative goodwill",
+   "lado": "revenue",
+   "page": 19,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1007
+  }
+ ]
+}

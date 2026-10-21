@@ -1,0 +1,411 @@
+{
+ "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-21T18:40:26.813Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (falkirk-gb)"
+  },
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Cost of sales\" -> lump_football_operations_expense 0.45"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-21: Regla de perímetro 1: la madre (el club) no presenta su propio estado de resultados (s408, .md 2024-25 L892): el único es el del grupo; corrige el «individual» de perimetro-senales.mjs)",
+  "ingresos: ningún total impreso igual a la suma de las líneas (4.61815); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-05-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "falkirk-gb",
+  "year": 2025,
+  "cierre": "2025-05-31",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "TURNOVER",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 4.432819,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.185331,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Release of negative goodwill",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0.940244,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Auditora 6 (votación 2 a 1, 2026-10-21; regla en CONVENCIONES-DATOS debajo de la de Bath)"
+   },
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -3.114932,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.915289,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2025-05-31",
+   "sourceId": "falkirk-gb-group-accounts-2024-25-ixbrl",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.017951,
+   "tax": -0.001149,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.024171
+    },
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -0.00622
+    },
+    {
+     "label": "Tax on profit/(loss)",
+     "value": -0.001149
+    },
+    {
+     "label": "Income tax relating to other comprehensive income",
+     "value": null
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "TURNOVER",
+     "lado": "revenue",
+     "importe": 4.432819,
+     "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "Cost of sales",
+     "lado": "expense",
+     "importe": 3.114932,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 4.61815,
+   "officialTotalExpenses": 4.030221,
+   "officialPAT": 1.544975
+  },
+  "source": {
+   "id": "falkirk-gb-group-accounts-2024-25-ixbrl",
+   "clubId": "falkirk-gb",
+   "title": "Falkirk — falkirk-group-accounts-2024-25-ixbrl (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-05-31",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-21): EndDateForPeriodCoveredByReport 31.5.25 en el XHTML; .md: Year Ended 31 May 2025"
+ },
+ "clubId": "falkirk-gb",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-05-31",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 31.5.25 en el XHTML; .md: Year Ended 31 May 2025",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "940,244",
+   "linea": 390,
+   "etiqueta": "Release of negative goodwill",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Auditora 6 (votación 2 a 1, 2026-10-21): la liberación de goodwill negativo va como ingreso exceptional_items en línea propia, aunque el estado la imprima en el bloque de gastos (.md L390: suma, 612.100 → 1.552.344)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "-6,220",
+   "linea": 396,
+   "etiqueta": "Interest payable and similar expenses",
+   "lado": "financiero",
+   "reemplaza": "Interest payable and similar expenses",
+   "motivo": "El interés pagado (.md L396, 6.220, impreso sin paréntesis) resta: financiero neto 24.171 − 6.220 = 17.951; 1.552.344 − 6.220 = 1.546.124 antes de impuestos (L398)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Release of negative goodwill",
+   "motivo": "Auditora 6 (votación 2 a 1, 2026-10-21; regla en CONVENCIONES-DATOS debajo de la de Bath)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "TURNOVER",
+   "page": 19,
+   "native": 4.432819,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.432819,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.432819
+  },
+  {
+   "label": "Other operating income",
+   "page": 19,
+   "native": 0.185331,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.185331,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.185331
+  },
+  {
+   "label": "Release of negative goodwill",
+   "page": 19,
+   "native": 0.940244,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": -0.940244,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-21): Auditora 6 (votación 2 a 1, 2026-10-21; regla en CONVENCIONES-DATOS debajo de la de Bath)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": 0.940244
+  },
+  {
+   "label": "Cost of sales",
+   "page": 19,
+   "native": 3.114932,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.114932,
+   "cat": "lump_football_operations_expense",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -3.114932
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 19,
+   "native": 0.915289,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.915289,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.915289
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.024171,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -0.00622,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on profit/(loss)",
+   "page": null,
+   "native": -0.001149,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "Income tax relating to other comprehensive income",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 4.61815,
+  "expSum": -4.030221,
+  "officialTotalRevenue": 4.61815,
+  "officialTotalExpenses": 4.030221,
+  "officialPAT": 1.544975,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "por-resultado",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1.544975,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 4.030221
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no aparece en los rosters cacheados de 2025 (gb-premierleague, gb-championship, gb-leagueone, gb-leaguetwo, gb-scottishpremiership): puede haber jugado otra división",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 31.5.25 en el XHTML; .md: Year Ended 31 May 2025",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-05-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 31.5.25 en el XHTML; .md: Year Ended 31 May 2025)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-21)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Escocia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2025-05-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2025-05-31 = 0.7419 (Cierre BCE del viernes 30/5/2025 (el 31 es sábado, sin cotización), cruzando GBP/EUR (0,84120) × EUR/USD (1,1339) (1 GBP ≈ 1,3480 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "falkirk-gb-group-accounts-2024-25-ixbrl",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no aparece en los rosters cacheados de 2025 (gb-premierleague, gb-championship, gb-leagueone, gb-leaguetwo, gb-scottishpremiership): puede haber jugado otra división",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 2,
+  "lineasGasto": 3,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

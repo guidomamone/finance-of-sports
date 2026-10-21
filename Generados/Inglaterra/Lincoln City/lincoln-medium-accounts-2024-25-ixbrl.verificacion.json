@@ -1,0 +1,214 @@
+{
+ "pdf": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:40:21.141Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: Year Ended 30 June 2025",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Lincoln City/lincoln-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "matchday_competition",
+   "posible": true,
+   "motivo": "El club vende membresías (weareimps.com: Bronze, Silver, John O'Gaunts Club), bundles de entradas; el turnover (.md L1006-1014) no tiene línea propia",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"TURNOVER\" 8.478308 cierra; además se suman 1 línea(s) fuera de ese total (0.69424)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (7.526287 contra 11.436136, sumando sus renglones): quedó el renglón del estado"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 7.526287,
+   "objetivo": 11.436136
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 7.526287,
+   "objetivo": 11.436136
+  }
+ ],
+ "totales": {
+  "ingresos": 9.172548,
+  "gastos": 12.040559,
+  "financiero": 0.012991,
+  "impuesto": 0,
+  "resultadoImpreso": -2.881002,
+  "resultadoParaCargar": -2.881002,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 2.8518,
+   "pagina": 37,
+   "linea": 1006,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Central distribution and grants",
+   "lado": "ingreso",
+   "M": 2.275433,
+   "pagina": 37,
+   "linea": 1008,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Commercial, hospitality and retail",
+   "lado": "ingreso",
+   "M": 1.909729,
+   "pagina": 37,
+   "linea": 1010,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Academy grants and fundraising",
+   "lado": "ingreso",
+   "M": 0.775767,
+   "pagina": 37,
+   "linea": 1012,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Football fortune and miscellaneous income",
+   "lado": "ingreso",
+   "M": 0.665579,
+   "pagina": 37,
+   "linea": 1014,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.69424,
+   "pagina": 23,
+   "linea": 576,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 0.604423,
+   "pagina": 23,
+   "linea": 568,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 11.436136,
+   "pagina": 23,
+   "linea": 572,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.012991,
+   "linea": 580
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": null,
+   "linea": 584
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "cde838c0e90115c55b7fa7b7883f9d8571003e3e",
+  "rango": [
+   563,
+   593
+  ],
+  "lineasCargadas": [
+   1006,
+   1008,
+   1010,
+   1012,
+   1014,
+   576,
+   568,
+   572,
+   580,
+   584
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 563 a 593 del .md):\nL563: | --- | --- |\nL564: | Notes | £ | £ |\nL565: | --- | --- | --- |\nL566: | TURNOVER | 3 | 8,478,308 | 6,976,968 |\nL567: | --- | --- | --- | --- |\nL568: | Cost of sales | 604,423 | 344,899 |\nL569: | --- | --- | --- |\nL570: | GROSS PROFIT | 7,873,885 | 6,632,069 |\nL571: | --- | --- | --- |\nL572: | Administrative expenses | 11,436,136 | 10,076,649 |\nL573: | --- | --- | --- |\nL574: | (3,562,251 | ) | (3,444,580 | ) |\nL575: | --- | --- | --- | --- |\nL576: | Other operating income | 694,240 | 478,011 |\nL577: | --- | --- | --- |\nL578: | OPERATING LOSS | 5 | (2,868,011 | ) | (2,966,569 | ) |\nL579: | --- | --- | --- | --- | --- | --- |\nL580: | Interest payable and similar expenses | 6 | 12,991 | 14,510 |\nL581: | --- | --- | --- | --- |\nL582: | LOSS BEFORE TAXATION | (2,881,002 | ) | (2,981,079 | ) |\nL583: | --- | --- | --- | --- | --- |\nL584: | Tax on loss | 7 | - | - |\nL585: | --- | --- | --- | --- |\nL586: | LOSS FOR THE FINANCIAL YEAR | (2,881,002 | ) | (2,981,079 | ) |\nL587: | --- | --- | --- | --- | --- |\nL588: | OTHER COMPREHENSIVE INCOME | - | - |\nL589: | --- | --- | --- |\nL590: | TOTAL COMPREHENSIVE INCOME FOR THE YEAR | (2,881,002 | ) | (2,981,079 | ) |\nL591: | --- | --- | --- | --- | --- |\nL593: --- pág. 24 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Matchday\" · 2.8518 · L1006 (de una nota)\n- ingreso · \"Central distribution and grants\" · 2.275433 · L1008 (de una nota)\n- ingreso · \"Commercial, hospitality and retail\" · 1.909729 · L1010 (de una nota)\n- ingreso · \"Academy grants and fundraising\" · 0.775767 · L1012 (de una nota)\n- ingreso · \"Football fortune and miscellaneous income\" · 0.665579 · L1014 (de una nota)\n- ingreso · \"Other operating income\" · 0.69424 · L576\n- gasto · \"Cost of sales\" · 0.604423 · L568\n- gasto · \"Administrative expenses\" · 11.436136 · L572\n- financiero · \"Interest payable and similar expenses\" · -0.012991 · L580\n- impuesto · \"Tax on loss\" · 0 · L584"
+ }
+}

@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.md",
+  "pdf": "Clubes/Escocia/Falkirk/falkirk-group-accounts-2024-25-ixbrl.pdf",
+  "club": "falkirk",
+  "year": 2025,
+  "generatedAt": "2026-10-21T18:38:11.952Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "TURNOVER",
+      "lado": "revenue",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        4.432819
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.185331
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Release of negative goodwill",
+      "lado": "revenue",
+      "page": 19,
+      "section": "ajuste manual",
+      "values": [
+        0.940244
+      ],
+      "glosa": "Imputación de fondo de comercio negativo"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        3.114932
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.915289
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

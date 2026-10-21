@@ -18,3 +18,5 @@ Todos en `Clubes/Inglaterra/AFC Wimbledon/` (los PDF no se trackean; son escaneo
 - `afcwimbledon-full-accounts-2021-22.pdf`
 - `afcwimbledon-full-accounts-2020-21.pdf`
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2025 desde `Clubes/Inglaterra/AFC Wimbledon/afcwimbledon-full-accounts-2024-25-ixbrl.pdf` (sourceId `afcwimbledon-gb-full-accounts-2024-25-ixbrl`).

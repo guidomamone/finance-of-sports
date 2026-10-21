@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Chesterfield/cfc2001-medium-accounts-2024-25-ixbrl.md",
+ "clave": "d94de29de392fd79f03ed031b32fac538be3f21f",
+ "generado": "2026-10-21T18:23:39.551Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [
+   {
+    "linea": 556,
+    "motivo": "Interest receivable (£1) is income, but it is loaded as negative (-0.000001), the same sign as interest payable. It should be +0.000001: -2,218,537 + 1 - 164,357 = -2,382,893."
+   }
+  ],
+  "observacion": "Turnover is replaced by its note parts, which add up to 7.804088, and other operating income by its parts, which add up to 0.081349. Both are correct. The only problem is the sign of the immaterial £1 interest income."
+ }
+}

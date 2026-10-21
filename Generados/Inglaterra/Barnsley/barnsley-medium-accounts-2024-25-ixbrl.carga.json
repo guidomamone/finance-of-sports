@@ -1,0 +1,603 @@
+{
+ "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-21T18:40:27.482Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (barnsley-gb)"
+  }
+ ],
+ "avisos": [
+  "materialidad: \"Add on fees, sell on fees and unrecoverable transfer levies\" va como other_expenses con 0.6 (las dudas de gastos suman 0.34% de su lado)",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "barnsley-gb",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Football League distributions",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 3.103726,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Match day",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 3.86421,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "TV and broadcasting",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.168616,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandise",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.238544,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsorship & advertising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.039282,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Catering",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.818572,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Other receipts",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.00783,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Donation income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.036136,
+    "disclosureLevel": "aggregated",
+    "_pag": 47,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on player sales and compensation",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.910655,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -13.968,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.591165,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Player registrations amortisation",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.021082,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Add on fees, sell on fees and unrecoverable transfer levies",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.060737,
+    "disclosureLevel": "aggregated",
+    "_pag": 53,
+    "_escalon": "materialidad",
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.34% (≤ 1%) y esta tiene 0.6"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2025-06-30",
+   "sourceId": "barnsley-gb-medium-accounts-2024-25-ixbrl",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.128927,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.028266
+    },
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -0.157193
+    },
+    {
+     "label": "Tax on loss",
+     "value": null
+    }
+   ],
+   "incluidoEn": {
+    "wages_squad": {
+     "en": "other_expenses",
+     "posible": true
+    }
+   },
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 11.187571,
+   "officialTotalExpenses": 17.640984,
+   "officialPAT": -6.58234
+  },
+  "source": {
+   "id": "barnsley-gb-medium-accounts-2024-25-ixbrl",
+   "clubId": "barnsley-gb",
+   "title": "Barnsley Football Club Limited — barnsley-medium-accounts-2024-25-ixbrl (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025"
+ },
+ "clubId": "barnsley-gb",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "910,655",
+   "linea": 1242,
+   "etiqueta": "Profit on player sales and compensation",
+   "lado": "ingreso",
+   "reemplaza": "Trading of intangible assets",
+   "motivo": "La fila «Trading of intangible assets» (−171.164, .md L502) es el neto de la nota 7 (L1242-1248): se abre en sus tres partidas, como los clubes ingleses cargados (Profit on disposal = player_sales; amortización = player_amortisation)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "1,021,082",
+   "linea": 1244,
+   "etiqueta": "Player registrations amortisation",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Nota 7 (.md L1244), parte del neto «Trading of intangible assets» (L502)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "fila",
+   "valor": "60,737",
+   "linea": 1246,
+   "etiqueta": "Add on fees, sell on fees and unrecoverable transfer levies",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Nota 7 (.md L1246), parte del neto «Trading of intangible assets» (L502); 910.655 − 1.021.082 − 60.737 = −171.164",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Barnsley/barnsley-medium-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 16,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Football League distributions",
+   "page": 47,
+   "native": 3.103726,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 3.103726,
+   "cat": "broadcasting",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.103726
+  },
+  {
+   "label": "Match day",
+   "page": 47,
+   "native": 3.86421,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 3.86421,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.86421
+  },
+  {
+   "label": "TV and broadcasting",
+   "page": 47,
+   "native": 0.168616,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.168616,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.168616
+  },
+  {
+   "label": "Merchandise",
+   "page": 47,
+   "native": 0.238544,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.238544,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.238544
+  },
+  {
+   "label": "Sponsorship & advertising",
+   "page": 47,
+   "native": 1.039282,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 1.039282,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.039282
+  },
+  {
+   "label": "Catering",
+   "page": 47,
+   "native": 0.818572,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.818572,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Nottingham Forest), nota:turnover · Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (renglón total de gastos operativos o costo de ventas en other_expenses; consideration en player_sales; derechos y deducciones de UEFA y TV en la categoría de su ingreso)",
+   "destino": "revenue",
+   "amountNative": 0.818572
+  },
+  {
+   "label": "Other receipts",
+   "page": 47,
+   "native": 1.00783,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 1.00783,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.00783
+  },
+  {
+   "label": "Donation income",
+   "page": 47,
+   "native": 0.036136,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 0.036136,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.036136
+  },
+  {
+   "label": "Profit on player sales and compensation",
+   "page": 53,
+   "native": 0.910655,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.910655,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.910655
+  },
+  {
+   "label": "Cost of sales",
+   "page": 25,
+   "native": 13.968,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 13.968,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-21 (subagente Sonnet): Cost of sales sin desglose por naturaleza (.md L494) va a other_expenses, como los clubes ingleses cargados (Leeds, Sunderland, Brighton)",
+   "destino": "expense",
+   "amountNative": -13.968
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 25,
+   "native": 2.591165,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.591165,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.591165
+  },
+  {
+   "label": "Player registrations amortisation",
+   "page": 53,
+   "native": 1.021082,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 1.021082,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.021082
+  },
+  {
+   "label": "Add on fees, sell on fees and unrecoverable transfer levies",
+   "page": 53,
+   "native": 0.060737,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.060737,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.34% (≤ 1%) y esta tiene 0.6",
+   "enLista": true,
+   "enCola": false,
+   "destino": "expense",
+   "amountNative": -0.060737
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.028266,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -0.157193,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"TURNOVER\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 11.187571,
+  "expSum": -17.640984,
+  "officialTotalRevenue": 11.187571,
+  "officialTotalExpenses": 17.640984,
+  "officialPAT": -6.58234,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -6.58234,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 11.187571
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 17.640984
+  }
+ },
+ "liga": {
+  "valor": "gb-leagueone",
+  "fuente": "roster cacheado de \"2024–25 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Barnsley\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): EndDateForPeriodCoveredByReport 30.6.25 en el XHTML; .md: YEAR ENDED 30 JUNE 2025)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2025-06-30 = 0.7299 (Cierre BCE al 30/6/2025, cruzando GBP/EUR (0,85550) × EUR/USD (1,1720) (1 GBP ≈ 1,3700 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "barnsley-gb-medium-accounts-2024-25-ixbrl",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-leagueone",
+   "fuente": "roster cacheado de \"2024–25 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Barnsley\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 9,
+  "lineasGasto": 4,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,203 @@
+{
+ "pdf": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:40:21.172Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Shrewsbury Town/shrewsbury-full-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "El club vende membresías (shrewsburytown.com, junio 2025: adulto £25), pero el turnover (.md L467-474) no tiene línea propia: la cuota va dentro de «Sundry Income» u otra línea de otros ingresos",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "7.214063 = 7.214063",
+   "suma": 7.2140629999999994,
+   "impreso": 7.2140629999999994
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: El bloque b38 mezcla el número medio de empleados con el inicio de la nota 9 de honorarios de auditoría, que es un detalle menor de gastos.",
+  "duda de extraer que no afecta la carga: La nota 8 (L512) no indica a qué renglón del estado corresponde; el personal está distribuido entre costo de ventas y administración.",
+  "duda de extraer que no afecta la carga: La nota 5 lista cargos incluidos dentro del resultado operativo, no un desglose completo de un renglón (L486)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 7.214063,
+  "gastos": 8.136669,
+  "financiero": -0.003898,
+  "impuesto": 0.327092,
+  "resultadoImpreso": -0.599412,
+  "resultadoParaCargar": -0.599412,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticket Sales",
+   "lado": "ingreso",
+   "M": 1.840131,
+   "pagina": 19,
+   "linea": 467,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Football League income",
+   "lado": "ingreso",
+   "M": 2.363353,
+   "pagina": 19,
+   "linea": 468,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Transfer fees",
+   "lado": "ingreso",
+   "M": 0.250931,
+   "pagina": 19,
+   "linea": 469,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sundry Income",
+   "lado": "ingreso",
+   "M": 1.353709,
+   "pagina": 19,
+   "linea": 470,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Academy income",
+   "lado": "ingreso",
+   "M": 0.555635,
+   "pagina": 19,
+   "linea": 471,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Television and internet portal income",
+   "lado": "ingreso",
+   "M": 0.022903,
+   "pagina": 19,
+   "linea": 472,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Contributions from support organisations",
+   "lado": "ingreso",
+   "M": 0.040037,
+   "pagina": 19,
+   "linea": 473,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Food and Beverage sales",
+   "lado": "ingreso",
+   "M": 0.787364,
+   "pagina": 19,
+   "linea": 474,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 11,
+   "linea": 214,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 6.948641,
+   "pagina": 11,
+   "linea": 211,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 1.188028,
+   "pagina": 11,
+   "linea": 213,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Other interest receivable and similar income",
+   "M": null,
+   "linea": 216
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.003898,
+   "linea": 217
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": 0.327092,
+   "linea": 220
+  }
+ ]
+}

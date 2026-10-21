@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Peterborough United/peterborough-full-accounts-2024-25-ixbrl.md",
+ "mdSha1": "34d18c6913db1ec18e9be114d4bd851af47f0de0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:21:55.987Z",
+ "perimetroClub": null,
+ "bloques": {},
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF 'peterborough-full-accounts-2024-25-ixbrl.pdf' trae la cuenta de pérdidas y ganancias del ejercicio cerrado el 30-06-2025 (por ejemplo como imagen escaneada o sin texto extraíble)?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice de la transcripción tiene 0 bloques con cifras, así que no se pudo identificar ningún estado ni nota.",
+   "bloques": [],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "La transcripción no tiene ningún bloque con cifras. Puede ser que el documento no se haya transcripto bien (iXBRL o imagen) o que sea una versión abreviada sin cuenta de resultados. Hay que revisar el PDF original. La moneda GBP se supone por el país del club."
+}

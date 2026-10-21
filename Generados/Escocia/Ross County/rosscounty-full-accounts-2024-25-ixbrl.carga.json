@@ -1,0 +1,245 @@
+{
+ "pdf": "Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-21T18:40:27.143Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 cerró y la etapa 4 no deja números sin confirmar, pero el registro no se actualizó: correr el lote (la marca solo la pone el lote, ver to-do 160)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (rosscounty-gb)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio, Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "4 fila(s) impresa(s) que no están en el .categorias.json (la verificación las abrió después de categorizar): \"Turnover\" 5.907595 (pág. 11); \"Related undertaking loan forgiven\" 1.168263 (pág. 11); \"Cost of sales\" 7.076541 (pág. 11); \"Administrative expenses\" 0.427039 (pág. 11). Volver a correr la etapa 5 o categorizarlas en la cola (node tools/cola.mjs --corregir-categoria)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "100.0% del dinero de ingresos queda sin categoría aceptable (tope 5%): \"Turnover\" 5.907595 (no está en categorias.json); \"Related undertaking loan forgiven\" 1.168263 (no está en categorias.json)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "100.0% del dinero de gastos queda sin categoría aceptable (tope 5%): \"Cost of sales\" 7.076541 (no está en categorias.json); \"Administrative expenses\" 0.427039 (no está en categorias.json)"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "ninguna fila de ingresos con categoría aceptable"
+  }
+ ],
+ "avisos": [
+  "ingresos: 2 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Turnover\" (no está en categorias.json); \"Related undertaking loan forgiven\" (no está en categorias.json)",
+  "gastos: 2 fila(s) sin categoría aceptable (100.0% del dinero del lado): \"Cost of sales\" (no está en categorias.json); \"Administrative expenses\" (no está en categorias.json)",
+  "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)",
+  "ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra \"sin dato\")",
+  "iXBRL: ProfitLoss del informe XHTML: formato de número que no se lee («-»); no se compara",
+  "iXBRL: ingresos cargados 0 M son menores que la etiqueta Revenue del informe XHTML (5.907595 M): ¿se perdió una línea?",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-05-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "rosscounty-gb",
+  "year": 2025,
+  "cierre": "2025-05-31",
+  "perimetro": "individual",
+  "revenueLines": [],
+  "expenseLines": [],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2025-05-31",
+   "sourceId": "rosscounty-gb-full-accounts-2024-25-ixbrl",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0,
+   "tax": 0.427722,
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": null,
+   "officialTotalExpenses": null,
+   "officialPAT": null
+  },
+  "source": {
+   "id": "rosscounty-gb-full-accounts-2024-25-ixbrl",
+   "clubId": "rosscounty-gb",
+   "title": "Ross County Football Club (1998) Limited — rosscounty-full-accounts-2024-25-ixbrl (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Escocia/Ross County/rosscounty-full-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-05-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "rosscounty-gb",
+ "year": 2025,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 5,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Turnover",
+   "page": 11,
+   "native": 5.907595,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.907595,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Related undertaking loan forgiven",
+   "page": 11,
+   "native": 1.168263,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.168263,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Cost of sales",
+   "page": 11,
+   "native": 7.076541,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.076541,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 11,
+   "native": 0.427039,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.427039,
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "sin-categoria"
+  },
+  {
+   "label": "Tax on loss",
+   "page": null,
+   "native": 0.427722,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel",
+   "lado": "gasto"
+  },
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Cuotas sociales"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+ },
+ "totales": {
+  "revSum": 0,
+  "expSum": 0,
+  "officialTotalRevenue": null,
+  "officialTotalExpenses": null,
+  "officialPAT": null,
+  "verificacion": {}
+ },
+ "liga": {
+  "valor": "gb-scottishpremiership",
+  "fuente": "roster cacheado de \"2024–25 Scottish Premiership\" (tools/club-league-reference/gb.json), coincidencia exacta \"Ross County\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-05-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (28 de 29 fechas de fin de mes caen en el mes 5))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Escocia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2025-05-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2025-05-31 = 0.7419 (Cierre BCE del viernes 30/5/2025 (el 31 es sábado, sin cotización), cruzando GBP/EUR (0,84120) × EUR/USD (1,1339) (1 GBP ≈ 1,3480 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "rosscounty-gb-full-accounts-2024-25-ixbrl",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-scottishpremiership",
+   "fuente": "roster cacheado de \"2024–25 Scottish Premiership\" (tools/club-league-reference/gb.json), coincidencia exacta \"Ross County\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 8,
+  "lineasIngreso": 0,
+  "lineasGasto": 0,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

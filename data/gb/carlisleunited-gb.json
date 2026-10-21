@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "exported_at": "2026-10-21",
+  "unit": {"scale":1000000,"label":"millions of currency"},
+  "club": {
+    "id": "carlisleunited-gb",
+    "name": "Carlisle United Association Football Club (1921) Limited",
+    "display_name": "Carlisle United",
+    "country": "GB",
+    "reporting_currency": "GBP",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
+  "sources": [
+    {
+      "id": "carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl",
+      "club_id": "carlisleunited-gb",
+      "title": "Carlisle United Association Football Club (1921) Limited — carlisle-full-accounts-2024-25-ixbrl (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Informe oficial en formato XHTML (iXBRL)"
+    }
+  ],
+  "members": null,
+  "years": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-30",
+      "currency": "GBP",
+      "source_id": "carlisleunited-gb-carlisle-full-accounts-2024-25-ixbrl",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"GBP@2025-06-30"},
+      "revenue": [
+        {"label":"Matchday","category":"matchday","subcategory":"matchday_competition","amount":2.135057,"disclosure":"aggregated"},
+        {"label":"Commercial","category":"commercial","subcategory":"sponsorship_commercial","amount":1.028918,"disclosure":"aggregated"},
+        {"label":"Retail","category":"commercial","subcategory":"sponsorship_commercial","amount":0.738755,"disclosure":"aggregated"},
+        {"label":"Football fortune","category":"prize_money","subcategory":"competition_bonus","amount":0.606311,"disclosure":"aggregated"},
+        {"label":"Football league","category":"media_rights","subcategory":"broadcasting","amount":2.24186,"disclosure":"aggregated"},
+        {"label":"Website and streaming income","category":"media_rights","subcategory":"broadcasting","amount":0.103397,"disclosure":"aggregated"},
+        {"label":"Donations","category":"other_revenue","subcategory":"other_income","amount":0.045671,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0.13157,"disclosure":"aggregated"},
+        {"label":"Net rents receivable","category":"other_revenue","subcategory":"other_income","amount":0.029103,"disclosure":"aggregated"},
+        {"label":"Government grants receivable","category":"other_revenue","subcategory":"other_income","amount":0.028378,"disclosure":"aggregated"},
+        {"label":"Insurance claims receivable","category":"other_revenue","subcategory":"other_income","amount":0.01069,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Cost of sales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-8.420236,"disclosure":"aggregated"},
+        {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-3.825147,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.023205,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":7.09971,"expenses":12.245383,"net_result":-5.122468},
+      "adjustments": {
+        "extra_rows": [{"label":"Interest receivable and similar income","amount":0.024064},{"label":"Interest payable and similar expenses","amount":-0.000859}],
+        "included_in": {"wages_squad":{"in":"other_expenses","possible":true}}
+      }
+    }
+  ],
+  "budget_overlay": {},
+  "squad_transfers": [],
+  "results": {},
+  "titles": []
+}

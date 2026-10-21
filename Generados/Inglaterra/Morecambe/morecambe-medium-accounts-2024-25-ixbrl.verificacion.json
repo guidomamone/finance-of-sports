@@ -1,0 +1,159 @@
+{
+ "pdf": "Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.md",
+ "generado": "2026-10-21T18:23:18.466Z",
+ "scriptHuella": "ffd3f13bb18c",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "0b6cb97",
+  "143026b",
+  "4b7e80d"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "5.0763 = 5.0763",
+   "suma": 5.0763,
+   "impreso": 5.0763
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 5.0763 - gastos 0.000914 ± financiero 0.00078 ± impuesto 0.062666 no da el impreso -0.000001",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b18 repite el total de turnover en una sola fila geográfica y no abre ninguna categoría."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5.0763,
+  "gastos": 0.000914,
+  "financiero": 0.00078,
+  "impuesto": 0.062666,
+  "resultadoImpreso": -0.000001,
+  "resultadoParaCargar": -0.000001,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Football",
+   "lado": "ingreso",
+   "M": 3.412403,
+   "pagina": 20,
+   "linea": 542,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Hospitality",
+   "lado": "ingreso",
+   "M": 0.921299,
+   "pagina": 20,
+   "linea": 543,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 0.097717,
+   "pagina": 20,
+   "linea": 544,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Other Corporate",
+   "lado": "ingreso",
+   "M": 0.398305,
+   "pagina": 20,
+   "linea": 545,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Player sales",
+   "lado": "ingreso",
+   "M": 0.106,
+   "pagina": 20,
+   "linea": 546,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Shop",
+   "lado": "ingreso",
+   "M": 0.140576,
+   "pagina": 20,
+   "linea": 547,
+   "origen": "nota que desglosa \"TURNOVER\""
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 0.000005,
+   "pagina": 11,
+   "linea": 249,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 0.000909,
+   "pagina": 11,
+   "linea": 251,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Exceptional items",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 11,
+   "linea": 253,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Other interest receivable and similar income",
+   "M": 0.001143,
+   "linea": 254
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -0.000363,
+   "linea": 255
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on Loss",
+   "M": 0.062666,
+   "linea": 257
+  }
+ ]
+}

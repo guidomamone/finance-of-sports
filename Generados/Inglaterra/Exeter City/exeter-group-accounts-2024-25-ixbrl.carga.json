@@ -1,0 +1,514 @@
+{
+ "pdf": "Clubes/Inglaterra/Exeter City/exeter-group-accounts-2024-25-ixbrl.pdf",
+ "generado": "2026-10-21T18:40:27.938Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (exetercity-gb)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-21: Regla de perímetro 1 y 3: en 2024-25 la madre (el club) usa la exención s408 (.md L574) y solo publica el estado del grupo; 2023-24 son full accounts individuales; corrige el «individual» de perimetro-senales.mjs para este año)",
+  "iXBRL: ProfitLoss del informe XHTML: lo cargado es consolidado y el informe solo trae el hecho sin eje de grupo (la sociedad matriz); no se puede saber de qué perímetro es: no se compara",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "exetercity-gb",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Gates",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 1.361318,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Season ticket sales",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 0.808738,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial activities",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2.436251,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Football League",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 2.710542,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Television income",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 0.01,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Food and drink sales",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.886029,
+    "disclosureLevel": "aggregated",
+    "_pag": 31,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Grants and donations",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.615898,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Insurance claims receivable",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.006475,
+    "disclosureLevel": "aggregated",
+    "_pag": 32,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Transfer revenue",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4.929505,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Cost of sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -9.082874,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Administrative expenses",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4.137513,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2025-06-30",
+   "sourceId": "exetercity-gb-exeter-group-accounts-2024-25-ixbrl",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.017732,
+   "tax": -0.178423,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.01119
+    },
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -0.028922
+    },
+    {
+     "label": "Tax on profit",
+     "value": -0.178423
+    }
+   ],
+   "incluidoEn": {
+    "wages_squad": {
+     "en": "other_expenses",
+     "posible": true
+    }
+   },
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 13.764756,
+   "officialTotalExpenses": 13.220387,
+   "officialPAT": 0.348214
+  },
+  "source": {
+   "id": "exetercity-gb-exeter-group-accounts-2024-25-ixbrl",
+   "clubId": "exetercity-gb",
+   "title": "Exeter City A.F.C. Limited — exeter-group-accounts-2024-25-ixbrl (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Inglaterra/Exeter City/exeter-group-accounts-2024-25-ixbrl.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Inglaterra/Exeter City/exeter-group-accounts-2024-25-ixbrl.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "exetercity-gb",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Exeter City/exeter-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "Regla de perímetro 1 y 3: en 2024-25 la madre (el club) usa la exención s408 (.md L574) y solo publica el estado del grupo; 2023-24 son full accounts individuales; corrige el «individual» de perimetro-senales.mjs para este año",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Exeter City/exeter-group-accounts-2024-25-ixbrl.pdf",
+   "campo": "incluye",
+   "valor": "wages_squad",
+   "linea": null,
+   "categoria": "other_expenses",
+   "posible": true,
+   "motivo": "Estado de resultados por función (Cost of sales y Administrative expenses): los sueldos están adentro, la nota de staff costs no dice en qué renglón; se parten después con caja-deuda --personal (to-do 351). Mismo tratamiento que Remo y Ferroviária (incluye posible)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "seleccion": {
+  "filas": 14,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Gates",
+   "page": 31,
+   "native": 1.361318,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 1.361318,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.361318
+  },
+  {
+   "label": "Season ticket sales",
+   "page": 31,
+   "native": 0.808738,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.808738,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.808738
+  },
+  {
+   "label": "Commercial activities",
+   "page": 31,
+   "native": 2.436251,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 2.436251,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.436251
+  },
+  {
+   "label": "Football League",
+   "page": 31,
+   "native": 2.710542,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 2.710542,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Carlisle United), nota:turnover · Claude 2026-10-21 (subagente Sonnet): «Football league» 2.241.860 (.md L590) es la distribución de la EFL: broadcasting, como Bournemouth y Sunderland",
+   "destino": "revenue",
+   "amountNative": 2.710542
+  },
+  {
+   "label": "Television income",
+   "page": 31,
+   "native": 0.01,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.01,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.01
+  },
+  {
+   "label": "Food and drink sales",
+   "page": 31,
+   "native": 0.886029,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 0.886029,
+   "cat": "stadium_other",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.886029
+  },
+  {
+   "label": "Grants and donations",
+   "page": 32,
+   "native": 0.615898,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Other operating income\")",
+   "signoFijo": 0.615898,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.615898
+  },
+  {
+   "label": "Insurance claims receivable",
+   "page": 32,
+   "native": 0.006475,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Other operating income\")",
+   "signoFijo": 0.006475,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.006475
+  },
+  {
+   "label": "Transfer revenue",
+   "page": 15,
+   "native": 4.929505,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.929505,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.929505
+  },
+  {
+   "label": "Cost of sales",
+   "page": 15,
+   "native": 9.082874,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 9.082874,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Carlisle United), titulo:note · Claude 2026-10-21 (subagente Sonnet): Cost of sales sin desglose por naturaleza (.md L328) a other_expenses, como los clubes ingleses cargados",
+   "destino": "expense",
+   "amountNative": -9.082874
+  },
+  {
+   "label": "Administrative expenses",
+   "page": 15,
+   "native": 4.137513,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.137513,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.137513
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.01119,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -0.028922,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on profit",
+   "page": null,
+   "native": -0.178423,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Other operating income\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 13.764756,
+  "expSum": -13.220387,
+  "officialTotalRevenue": 13.764756,
+  "officialTotalExpenses": 13.220387,
+  "officialPAT": 0.348214,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.348214,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 13.764756
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 13.220387
+  }
+ },
+ "liga": {
+  "valor": "gb-leagueone",
+  "fuente": "roster cacheado de \"2024–25 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Exeter City\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (71 de 71 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-21)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2025-06-30 = 0.7299 (Cierre BCE al 30/6/2025, cruzando GBP/EUR (0,85550) × EUR/USD (1,1720) (1 GBP ≈ 1,3700 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "exetercity-gb-exeter-group-accounts-2024-25-ixbrl",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-leagueone",
+   "fuente": "roster cacheado de \"2024–25 EFL League One\" (tools/club-league-reference/gb.json), coincidencia exacta \"Exeter City\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 9,
+  "lineasGasto": 2,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

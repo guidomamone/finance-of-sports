@@ -1,0 +1,397 @@
+{
+ "pdf": "Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.pdf",
+ "md": "Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.md",
+ "mdSha1": "9aa48d9b3ba33c7ce5a6da85fa91da2cfdcc7edc",
+ "ubicacionSha1": "e742c91fc75bdee7896471603e1d75e65799ea66",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T18:21:39.061Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [
+   "b17"
+  ],
+  "notas_gastos": [
+   "b19",
+   "b21",
+   "b25",
+   "b26",
+   "b27"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L247: columnas en £"
+  },
+  {
+   "bloque": "b17",
+   "escala": "unidades",
+   "evidencia": "L541: £"
+  },
+  {
+   "bloque": "b19",
+   "escala": "unidades",
+   "evidencia": "L561: £"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "L578: £"
+  },
+  {
+   "bloque": "b25",
+   "escala": "unidades",
+   "evidencia": "L621: £"
+  },
+  {
+   "bloque": "b26",
+   "escala": "unidades",
+   "evidencia": "L632: £"
+  },
+  {
+   "bloque": "b27",
+   "escala": "no se sabe",
+   "evidencia": "Continuación de la nota 11 (b26, en £); no repite la moneda"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 248,
+   "etiqueta": "TURNOVER",
+   "actual": "5,076,300",
+   "anterior": "4,942,241",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 249,
+   "etiqueta": "Cost of sales",
+   "actual": "(4,892,287 )",
+   "anterior": "(4,885,919 )",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 250,
+   "etiqueta": "GROSS PROFIT",
+   "actual": "184,013",
+   "anterior": "56,322",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 251,
+   "etiqueta": "Administrative expenses",
+   "actual": "(908,674 )",
+   "anterior": "(874,903 )",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 252,
+   "etiqueta": "OPERATING LOSS",
+   "actual": "(724,661 )",
+   "anterior": "(818,581 )",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 253,
+   "etiqueta": "Exceptional items",
+   "actual": "-",
+   "anterior": "(99,663)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 254,
+   "etiqueta": "Other interest receivable and similar income",
+   "actual": "1,143",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 255,
+   "etiqueta": "Interest payable and similar charges",
+   "actual": "(362,598 )",
+   "anterior": "(275,814 )",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 256,
+   "etiqueta": "LOSS BEFORE TAXATION",
+   "actual": "(1,086,116 )",
+   "anterior": "(1,194,058 )",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 257,
+   "etiqueta": "Tax on Loss",
+   "actual": "62,666",
+   "anterior": "8,605",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 258,
+   "etiqueta": "LOSS AFTER TAXATION BEING LOSS FOR THE FINANCIAL YEAR",
+   "actual": "(1,023,450 )",
+   "anterior": "(1,185,453 )",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 259,
+   "etiqueta": "OTHER COMPREHENSIVE INCOME FOR THE YEAR",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 260,
+   "etiqueta": "TOTAL COMPREHENSIVE INCOME FOR THE YEAR",
+   "actual": "(1,023,450 )",
+   "anterior": "(1,185,453 )",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 542,
+   "etiqueta": "Football",
+   "actual": "3,412,403",
+   "anterior": "2,986,831",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b17",
+   "linea": 543,
+   "etiqueta": "Hospitality",
+   "actual": "921,299",
+   "anterior": "901,587",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b17",
+   "linea": 544,
+   "etiqueta": "Other",
+   "actual": "97,717",
+   "anterior": "111,026",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b17",
+   "linea": 545,
+   "etiqueta": "Other Corporate",
+   "actual": "398,305",
+   "anterior": "422,299",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b17",
+   "linea": 546,
+   "etiqueta": "Player sales",
+   "actual": "106,000",
+   "anterior": "332,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b17",
+   "linea": 547,
+   "etiqueta": "Shop",
+   "actual": "140,576",
+   "anterior": "188,498",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b17",
+   "linea": 548,
+   "etiqueta": "",
+   "actual": "5,076,300",
+   "anterior": "4,942,241",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b25",
+   "linea": 616,
+   "etiqueta": "Bank interest receivable",
+   "actual": "1,143",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Other interest receivable and similar income"
+  },
+  {
+   "bloque": "b25",
+   "linea": 622,
+   "etiqueta": "Bank loans and overdrafts",
+   "actual": "-",
+   "anterior": "6,054",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b25",
+   "linea": 623,
+   "etiqueta": "Interest payable on other loans",
+   "actual": "346,472",
+   "anterior": "268,774",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b25",
+   "linea": 624,
+   "etiqueta": "Finance charges payable under finance leases and hire purchase contracts",
+   "actual": "170",
+   "anterior": "986",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b25",
+   "linea": 625,
+   "etiqueta": "Other finance charges",
+   "actual": "15,956",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b25",
+   "linea": 626,
+   "etiqueta": "",
+   "actual": "362,598",
+   "anterior": "275,814",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b26",
+   "linea": 634,
+   "etiqueta": "UK Corporation Tax",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on Loss"
+  },
+  {
+   "bloque": "b26",
+   "linea": 635,
+   "etiqueta": "Prior period adjustment",
+   "actual": "(60,666 )",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on Loss"
+  },
+  {
+   "bloque": "b26",
+   "linea": 636,
+   "etiqueta": "",
+   "actual": "(60,666 )",
+   "anterior": "-",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Tax on Loss"
+  },
+  {
+   "bloque": "b27",
+   "linea": 649,
+   "etiqueta": "Deferred taxation",
+   "actual": "(2,000 )",
+   "anterior": "(8,605 )",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on Loss"
+  },
+  {
+   "bloque": "b27",
+   "linea": 650,
+   "etiqueta": "Total tax charge for the period",
+   "actual": "(62,666 )",
+   "anterior": "(8,605 )",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Tax on Loss"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 248,
+  "actual": "5,076,300"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 258,
+  "actual": "(1,023,450 )",
+  "anterior": "(1,185,453 )"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros de Operating Loss (L562-L564) y Staff Costs (L579-L582) por no desglosar un renglón concreto del estado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Son importes cargados dentro de Cost of sales/Administrative expenses sin asignación a un renglón (L562-L582).",
+   "bloques": [
+    "b19",
+    "b21"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Tax on Loss es un crédito (62,666) en el estado y figura con paréntesis en la nota 11 (convención de signo de crédito). No hay total de gastos impreso. b27 se asume en £ como continuación de la nota 11."
+}
