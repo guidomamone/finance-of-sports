@@ -83,7 +83,7 @@ ejercicio CIERRE contra su propio documento; `audit.js` busca lo que cierra igua
 ningún total contra qué compararse, categorías con typo o prestadas de la otra taxonomía, errores de
 escala (un `fx` mal transcripto deja todos los tie-outs en verde y publica un número 1000 veces más
 grande), desgloses que se contradicen con su propia fila, catch-all dominante, ramas por club.
-Corre en menos de un segundo y sale con código 1 si hay P0 o P1. Lo que importa es que siga en 0 P0 y
+Tarda unos segundos y sale con código 1 si hay P0 o P1. Lo que importa es que siga en 0 P0 y
 0 P1; el conteo de P2 y P3 sube y baja con cada sesión. **También chequea que los 4 generadores estén
 al día** (`checkGenerados()`, P1): rankings, `fuentes.html` y sus páginas de club, el índice de clubes
 y el índice de `Admin/sourcing/README.md`.
