@@ -27,7 +27,8 @@ const principal = () => resolve(git(['rev-parse', '--path-format=absolute', '--g
 
 // Lo que regenera cada carga: en un conflicto, gana main y después se regenera.
 const GENERADO = (f) => f === 'index.html' || f === 'fuentes.html' || f === 'sitemap.xml' || f.startsWith('fuentes/') || f === 'Admin/ESTADO-clubes.md'
-  || f === 'data/club-index.js' || f.startsWith('data/rankings/') || f.startsWith('data/faltantes/') || f === 'Admin/sourcing/pendientes.md' || f.startsWith('data/estimados/');
+  || f === 'data/club-index.js' || f.startsWith('data/rankings/') || f.startsWith('data/faltantes/') || f === 'Admin/sourcing/pendientes.md' || f.startsWith('data/estimados/')
+  || /^data\/[a-z]{2}\/[a-z0-9-]+-data\.js$/.test(f); // el -data.js se genera de su JSON (to-do 245): un conflicto ahí se resuelve con el JSON mergeado y generar-data
 const DOCS_PRINCIPAL = ['Admin/TODO.md', 'Admin/CHANGELOG.md', 'Admin/ESTADO.md'];
 // Lo que escribe cada corrida de lote.mjs o pipeline.mjs para sus propias etapas: cada carpeta tiene el suyo. Enlazado a la principal, dos
 // lotes que corrían a la vez en worktrees distintos se pisaban la lista de la etapa 7 (2026-10-19: el lote 103 categorizó dos años de Basel y
@@ -77,6 +78,9 @@ async function mergear(rama) {
     writeFileSync(resolve(ROOT, f), limpio);
   }
   if (conflictos.length) git(['add', '--', ...conflictos]);
+  // Los -data.js en conflicto (o que la rama tocó) se regeneran del JSON ya mergeado: el JSON es la fuente; si el JSON conflictuó, ya abortó arriba como conflicto real.
+  const dataJs = [...new Set([...conflictos, ...tocados])].filter((f) => /^data\/[a-z]{2}\/[a-z0-9-]+-data\.js$/.test(f));
+  if (dataJs.length) { execFileSync('node', ['tools/generar-data.mjs'], { cwd: ROOT, encoding: 'utf8' }); git(['add', '--', ...dataJs.filter((f) => existsSync(resolve(ROOT, f)))]); }
   // ASSET_V una vez + generadores + auditoría: lo mismo que el final de cargar.mjs (si audit.js da P0/P1, se aborta el merge).
   const { publicarCambios, snapshot } = await import('./cargar.mjs');
   const r = publicarCambios(snapshot([]), [], []);
