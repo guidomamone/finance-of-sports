@@ -30,7 +30,8 @@ el número de la izquierda es el orden de trabajo.
 **A. En marcha**
 1. 345 (Onboarding 8): la cola del lote 130, Girona 2021-23, RAAL, SønderjyskE 2023, los daneses, Hvidovre, København individual, Goiás 2018-20, Novorizontino 2012 y Fiorentina 2020; la liga de Burnley, Girona y Fredericia (hasta US$12 en total)
 2. 353 (Pipeline 13): el aviso del resultado en cuentas de grupo británicas y que `faltantes` no frene por la fecha ni por PDFs sin enlazar (esperan a la Auditora); ¿cargar los británicos chicos en iXBRL? (decisión tuya)
-3. 355 (Auditora 5): Lierse con dos ids, con el proceso «¿Es el mismo club?» de la skill de contrato de datos
+3. 355: Lierse son dos clubes (BCE distintos, Auditora 5); falta que cada ficha diga de quién es sucesora y los 3 alias de liga (Onboarding 8)
+3b. 350: propuesta de proceso para revisar categorías en `Admin/propuestas/350-revision-categorias.md` (falta mostrarte el texto)
 4. 347 (Auditora 5): corridas de P2 y P3 (ya: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`, `outlier-liga`, `gestion-club-inexistente`, `ejercicio-sin-rastro`, `salto-interanual`, `escala-implausible`)
 5. 352 (Auditora 5, con lo que cargue Onboarding 8): decidir si el chequeo del iXBRL pasa de aviso a frenar
 6. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
