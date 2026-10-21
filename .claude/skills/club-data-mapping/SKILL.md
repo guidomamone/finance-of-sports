@@ -40,7 +40,10 @@ está resumida en la sección 5 y el detalle en `referencia/fx.md`.
   `wagesToTurnover`. NUNCA se muestra. Lo que ve el usuario es `rawLabel`, tal cual lo escribe el club: no lo traduzcas ni lo prolijes.
 - El motor genérico (`computeYearGeneric`, para todos los clubes) espera `revenueLines`/`expenseLines`: arrays de
   `{ rawLabel, normalizedCategory, amountNative, disclosureLevel, items? }`. En el JSON del club los campos se llaman
-  `{ label, category, amount, disclosure, items? }` (`amount` en millones de la moneda del club, `unit.scale = 1000000`); el data file
+  `{ label, category, subcategory, amount, disclosure, items? }`: `subcategory` es la `normalizedCategory` (la que se elige con este
+  skill) y `category` es la genérica, igual para cualquier deporte, que no se elige: la escribe `tools/json-datos.mjs` desde
+  `SPORT_TAXONOMIES` de `data/category-map.js`. Una subcategoría nueva lleva su genérica en ese mapa en la misma sesión (`audit.js`,
+  `taxonomia-incompleta`). (`amount` en millones de la moneda del club, `unit.scale = 1000000`); el data file
   generado y el motor usan los nombres de siempre. `items` es el desglose recursivo del renglón (sección 4).
 
 ## 1. Elegir `normalizedCategory`: cuándo darle una propia y cuándo mandarlo a "other"
