@@ -22,7 +22,7 @@
 //   filas-a-mano      (Versión 614) sin valor: el .ubicacion.json y el .filas.json de ese documento se armaron o se corrigieron a mano. Escalón 0 de tools/localizar.mjs y de
 //                     tools/extraer.mjs: con --rehacer (y con lote.mjs --rehacer) NO se vuelven a pedir a la IA ni se pisan; quedan como están. Para rehacerlos de verdad hay
 //                     que quitar este ajuste a conciencia (se agrega otro con --valor no). Casos: Torino 2020 y 2025, Inter 2017-18, Lazio 2021, Salernitana 2022.
-//   ixbrl-omitir      (to-do 345, Auditora 5) sin valor, con --motivo: apaga para ese documento el aviso de cargar.mjs que compara el resultado cargado con el
+//   ixbrl-omitir      (to-do 345, Auditora 5) sin valor, con --motivo: apaga para ese documento el freno (perímetro individual, to-do 352) o el aviso (consolidado) de cargar.mjs que compara el resultado cargado con el
 //                     `ProfitLoss` etiquetado en su XHTML (tools/ixbrl-resultado.mjs). Para un hecho que no es el resultado del ejercicio (perímetro distinto, minoritarios).
 //   covid-omitir      sin valor, con --motivo: el documento cierra dentro de la ventana COVID (2020-03-31 a 2021-12-31) pero su taquilla o entradas en 0
 //                     NO son por la pandemia (un club que jugó con público): cargar.mjs vuelve a pedir el reintento como en cualquier otro año.

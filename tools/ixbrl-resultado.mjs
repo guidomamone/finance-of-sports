@@ -2,8 +2,8 @@
 // tools/ixbrl-resultado.mjs — EL RESULTADO DEL EJERCICIO TAL COMO LO ETIQUETA EL INFORME XHTML (iXBRL), para contrastarlo con lo cargado (to-do 345, condición de la Auditora 5).
 //
 // POR QUÉ. El tie-out de cargar.mjs compara contra el resultado que sale del MISMO .md: un signo o una escala mal leídos del texto se repiten en los dos lados. El hecho
-// iXBRL (`ProfitLoss`) es una segunda lectura independiente y estructurada: valor, escala, signo y decimales vienen en atributos, no en el texto impreso. Lo usa `cargar.mjs`
-// como AVISO (a frenazo cuando 10 años de varios clubes, ÅRL e IFRS, den cero falsos frenos; decide la Auditora).
+// iXBRL (`ProfitLoss`) es una segunda lectura independiente y estructurada: valor, escala, signo y decimales vienen en atributos, no en el texto impreso. Lo usa `cargar.mjs`:
+// FRENA si lo cargado es individual y no coincide; en el consolidado, AVISO (to-do 352, Auditora 5; ver chequearIxbrl).
 //
 // LA CONDICIÓN (veredicto de la Auditora 5, Admin/registros/auditoria-proceso.jsonl):
 //   (a) solo contra el XHTML del MISMO cierre: lo decide quien llama (el .xhtml hermano del .md del año, que lo generó); además el contexto del hecho tiene que terminar en `cierre`.
@@ -108,8 +108,11 @@ export function xhtmlDelMismoEmisor(dir, mdTexto) {
   return ok.length === 1 ? ok[0] : null;
 }
 
-// Compara con lo cargado (en millones). -> { avisos: [texto], caso: texto|null }
-export function chequearIxbrl(ix, { resultadoM, ingresosM }) {
+// Compara con lo cargado (en millones). -> { avisos: [texto], caso: texto|null, frena: bool }
+// FRENAZO (to-do 352, Auditora 5): `frena` solo si el hecho es único («ok»), la diferencia pasa la tolerancia y lo cargado es INDIVIDUAL (medido: 9 clubes, 0 falsos). En el
+// consolidado sigue siendo aviso y caso en la cola hasta medir dos años consolidados de clubes distintos, uno con minoritarios (el ProfitLoss de un grupo IFRS incluye la
+// parte no controladora y lo cargado puede ser la atribuible). «ambiguo», «solo-matriz», «sin-hecho», «formato» y «perímetro» nunca frenan.
+export function chequearIxbrl(ix, { resultadoM, ingresosM, perimetro }) {
   const avisos = []; let caso = null; const r = ix.resultado;
   if (r.estado === 'ok' && resultadoM != null) {
     if (Math.abs(r.valorM - resultadoM) > r.tolM + 1e-6) { caso = `resultado iXBRL ${r.valorM} M contra ${resultadoM} M cargado (diferencia ${+(r.valorM - resultadoM).toFixed(6)} M; tolerancia ${r.tolM} M)`; avisos.push(`ProfitLoss del informe XHTML (iXBRL) no coincide: ${caso}`); }
@@ -119,5 +122,5 @@ export function chequearIxbrl(ix, { resultadoM, ingresosM }) {
   else if (r.estado === 'formato') avisos.push(`ProfitLoss del informe XHTML: formato de número que no se lee («${r.detalle}»); no se compara`);
   const i = ix.ingresos;
   if (i.estado === 'ok' && ingresosM != null && ingresosM < i.valorM - i.tolM - 1e-6) avisos.push(`ingresos cargados ${ingresosM} M son menores que la etiqueta Revenue del informe XHTML (${i.valorM} M): ¿se perdió una línea?`);
-  return { avisos, caso, resultado: r.estado };
+  return { avisos, caso, frena: !!caso && String(perimetro || '').toLowerCase() === 'individual', resultado: r.estado };
 }

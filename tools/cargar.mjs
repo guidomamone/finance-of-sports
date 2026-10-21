@@ -1083,7 +1083,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   P.totales = T;
 
   // 6c. (to-do 345, Auditora 5) SEGUNDA LECTURA del resultado, independiente del texto: el `ProfitLoss` etiquetado en el XHTML del que salió este .md (solo el hermano del mismo cierre).
-  // Es un AVISO (y una fila en la cola si no coincide); pasa a frenar cuando 10 años de varios clubes den cero falsos frenos (lo decide la Auditora). Se apaga con el ajuste `ixbrl-omitir`.
+  // (to-do 352, Auditora 5) Perímetro INDIVIDUAL: si no coincide, FRENA (medido: 9 clubes, 0 falsos frenos). CONSOLIDADO: sigue siendo AVISO y una fila en la cola, hasta medir dos
+  // años consolidados de clubes distintos, uno con minoritarios. Un hecho ambiguo, de la matriz o que no está nunca frena. Se apaga con el ajuste `ixbrl-omitir`, con su motivo.
   try {
     // el XHTML de donde salió este .md (su hermano, con el encabezado de xhtml-aarsrapport.mjs) o, si el año salió de un PDF, un XHTML de la carpeta del club del MISMO emisor (su identificador está en el .md)
     // y del mismo cierre (lo exige el contexto del hecho): una segunda lectura independiente del PDF (Auditora 5). El perímetro es el de esta carga: sin él, no compara.
@@ -1091,9 +1092,10 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     const hermano = resolve(ROOT, e.md.replace(/\.md$/, '.xhtml'));
     const xh = existsSync(hermano) && /xhtml-aarsrapport\.mjs/.test(mdTxt.slice(0, 400)) ? hermano : (cierreIx ? xhtmlDelMismoEmisor(dirname(mdAbs), mdTxt) : null);
     if (cierreIx && xh && !ajusteDe(pdf, 'ixbrl-omitir')) {
-      const ch = chequearIxbrl(leerResultadoIxbrl(xh, cierreIx, perimetro), { resultadoM: T.officialPAT, ingresosM: T.revSum });
+      const ch = chequearIxbrl(leerResultadoIxbrl(xh, cierreIx, perimetro), { resultadoM: T.officialPAT, ingresosM: T.revSum, perimetro });
       for (const a of ch.avisos) P.avisos.push(`iXBRL: ${a}`);
-      if (ch.caso) agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'ixbrl-resultado', detalle: String(year), que: `El resultado etiquetado en el XHTML (iXBRL) no coincide con el cargado: ${ch.caso}. Mirá la fila del estado de resultados en el .md; si el hecho no es el resultado del ejercicio (perímetro, minoritarios), ajuste \`ixbrl-omitir\` con su motivo.`, propuesta: 'revisar el signo y la escala del resultado en el .md; si el hecho es de otro perímetro, ixbrl-omitir' });
+      if (ch.frena) frena('ixbrl-resultado', `el resultado etiquetado en el XHTML (iXBRL, perímetro individual) no coincide con el cargado: ${ch.caso}. Revisá el signo y la escala del resultado en el .md (${e.md}); si el hecho no es el resultado del ejercicio, ajuste \`ixbrl-omitir\` (\`node tools/ajustes.mjs\`) con su motivo.`);
+      else if (ch.caso) agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'ixbrl-resultado', detalle: String(year), que: `El resultado etiquetado en el XHTML (iXBRL) no coincide con el cargado: ${ch.caso}. Mirá la fila del estado de resultados en el .md; si el hecho no es el resultado del ejercicio (perímetro, minoritarios), ajuste \`ixbrl-omitir\` con su motivo.`, propuesta: 'revisar el signo y la escala del resultado en el .md; si el hecho es de otro perímetro, ixbrl-omitir' });
     }
   } catch (err) { P.avisos.push(`iXBRL: no se pudo comparar con el informe XHTML (${err.message})`); }
 
