@@ -6,7 +6,7 @@
 
 **Qué queda:** que la principal mergee. Se podrían buscar de nuevo Austria, Bélgica, Países Bajos y Rusia dentro de unos meses. Sin tocar skills.
 
-**Qué deja de ser cierto:** en TODO, el 336 pasa a «hecho el barrido de informes, falta el ok de Guido al paso de skill (abajo)». ESTADO: Ligas muestra informes en 7 ligas más (de 23 países con ranking, 9 con informe de liga más Inglaterra).
+**Qué deja de ser cierto:** en TODO, el 336 pasa a «hecho el barrido de informes, falta el ok de Guido al paso de skill (abajo)». ESTADO: Ligas muestra informes de liga en 7 países nuevos (Alemania, España, Italia, Brasil, Noruega, Colombia, Japón) además de Inglaterra, de los 23 países con ranking.
 
 ## Paso de skill propuesto (para el ok de Guido)
 
