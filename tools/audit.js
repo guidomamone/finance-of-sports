@@ -1727,6 +1727,30 @@ function checkDeportes() {
   if (fallo) add('P2', 'deporte-sin-tabla', lineas.filter((l) => l.startsWith('ERROR')).slice(0, 3).join(' | ') || lineas.slice(-1)[0] || 'tools/deporte-club.mjs falló');
 }
 
+// (to-do 339 c) LA COMA DECIMAL QUE EL OCR SE COME. Una tabla en £m / M con un decimal sale de la transcripción con «Central income 5.3 74 (2.1)» por 7.4 (Bath 2023-24 L162).
+// Regla: una fila de tres cifras A B C con al menos una con decimal, donde C NO es la diferencia de A y B, pero SÍ lo es si un entero sin coma (A o B) se divide por 10.
+// Aviso P2, no frena nada: Admin/mediciones/339-condicion-coma.md (medida: 4 marcadas en 3.677 .md, 0 falsas). Se silencia con tools/audit-ignore.json (code coma-comida) tras mirar la fuente.
+function checkComaComida() {
+  const R = path.join(ROOT, 'Clubes');
+  const num = (t) => { const neg = /^\(.*\)$/.test(t) || t.startsWith('-'); const v = parseFloat(t.replace(/[()\-,]/g, '')); return neg ? -v : v; };
+  const TOK = '(\\(?-?\\d+\\.\\d\\)?|\\(?-?\\d+\\)?)';
+  const re = new RegExp('^[|\\s]*([A-Za-z][^|\\d]{2,60}?)[|\\s]+' + TOK + '[|\\s]+' + TOK + '[|\\s]+' + TOK + '[|\\s]*$');
+  const cierra = (a, b, c) => Math.abs(a - b - c) <= 0.051 || Math.abs(b - a - c) <= 0.051;
+  const walk = (d) => { for (const e of fs.readdirSync(d)) { const f = path.join(d, e); const st = fs.statSync(f); if (st.isDirectory()) walk(f); else if (f.endsWith('.md')) leer(f); } };
+  const leer = (f) => {
+    fs.readFileSync(f, 'utf8').split('\n').forEach((l, i) => {
+      const m = l.match(re); if (!m) return;
+      const t = [m[2], m[3], m[4]]; if (!t.some((x) => x.includes('.'))) return;
+      const [a, b, c] = t.map(num); if (cierra(a, b, c)) return;
+      for (const k of [0, 1]) {
+        const v = [a, b]; v[k] = v[k] / 10;
+        if (!t[k].includes('.') && cierra(v[0], v[1], c)) { add('P2', 'coma-comida', `${path.relative(ROOT, f)} L${i + 1}: «${l.trim().slice(0, 80)}» — la cifra ${k + 1} (${t[k]}) parece haber perdido la coma decimal (con ÷10 la fila cierra); corregir el .md o silenciar tras mirar el documento`); break; }
+      }
+    });
+  };
+  if (fs.existsSync(R)) walk(R);
+}
+
 function main() {
   let api;
   try { api = loadEngine(); }
@@ -1763,6 +1787,7 @@ function main() {
   checkDatosJson();
   checkReglasCategoria();
   checkDeportes();
+  checkComaComida();
 
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
   // (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.

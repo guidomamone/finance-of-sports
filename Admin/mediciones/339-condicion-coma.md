@@ -9,3 +9,5 @@
 5. **¿Se puede apagar sin tocar datos?** Sí: `tools/audit-ignore.json` (mecanismo que ya existe) por documento y línea; la transcripción se corrige en el `.md` o se deja con su ajuste.
 
 **Fuera de esta condición, para otro escalón:** sumar las columnas contra la fila de total (en Bath: 5.3+7.0+8.1+0.4 = 20.8, 7.4+5.2+6.9+0.2 = 19.7), que es más general pero necesita detectar cuál fila es el total.
+
+**Estado (Auditora 4: aprobada con un cambio).** Codeada en `audit.js` (`checkComaComida`, P2 `coma-comida`); las 4 filas marcadas se miraron contra el documento y se silenciaron en `tools/audit-ignore.json` con su motivo, así que `audit.js` nace en 0 de este código. Everton no tiene dato publicado afectado: la cifra dañada es la del año anterior y los años cargados salen del estado de resultados. **Fila que la regla NO atrapa:** `everton-group-accounts-2024-25.md` L155-156, «Sponsorship, advertising / and merchandising 24.3 216 2?» (la cifra del año anterior es 21.6 sin coma y la diferencia, ilegible con `?`; el rótulo ocupa dos líneas y no hay tres cifras limpias). La Auditora la ubicó en 2023-24: está en 2024-25.

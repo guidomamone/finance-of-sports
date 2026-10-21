@@ -809,5 +809,25 @@
   "code": "carpeta-doble",
   "match": "Clubes/Suecia/: \"Ljungskile\" y \"United Nordic\"",
   "motivo": "Revisado el 2026-10-19: es el informe de la federación sueca sobre la economía de todos los clubes de la Ettan (primera página: Ettanklubbarnas ekonomier 2025); se guarda en la carpeta de cada club que lo usa."
+ },
+ {
+  "code": "coma-comida",
+  "match": "bath-rugby-full-accounts-2023-24.md L162",
+  "motivo": "VERIFICADO contra el documento (to-do 339 c, Pipeline 11): Strategic Report, tabla Turnover en £m: Central income 5.3 | 7.4 | (2.1); el OCR se comió la coma de 7.4. Las columnas suman el Turnover impreso (5.3+7.0+8.1+0.4=20.8; 7.4+5.2+6.9+0.2=19.7). El año se carga del estado de resultados y del ajuste desglose, no de esta cifra."
+ },
+ {
+  "code": "coma-comida",
+  "match": "bath-rugby-medium-company-accounts-2024-25.md L207",
+  "motivo": "VERIFICADO contra el documento (to-do 339 c): Central income 4.4 | 5.3 | (0.9); el OCR se comió la coma de 4.4. El año se carga del estado de resultados y del ajuste desglose, no de esta cifra."
+ },
+ {
+  "code": "coma-comida",
+  "match": "everton-group-accounts-2023-24.md L341",
+  "motivo": "VERIFICADO (to-do 339 c, Auditora 4): Profit on player trading 48.5 | 47.5 | 1.0; la cifra dañada es la del año anterior. Los años cargados de Everton salen del estado de resultados y coinciden con la cifra buena."
+ },
+ {
+  "code": "coma-comida",
+  "match": "everton-group-accounts-2024-25.md L157",
+  "motivo": "VERIFICADO (to-do 339 c, Auditora 4): Other commercial 22.9 | 17.0 | 5.9; la cifra dañada es la del año anterior. Los años cargados de Everton salen del estado de resultados y coinciden con la cifra buena."
  }
 ]

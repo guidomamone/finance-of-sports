@@ -256,7 +256,8 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // DESGLOSES ANIDADOS (Versión 335, diseño aprobado por Guido): una hoja de una nota puede, a su vez, estar desglosada por otro cuadro (filas
   // con detalla_a = la etiqueta de esa hoja). Se reemplaza con la MISMA regla (cerrarNota: tiene que sumar), hasta 3 niveles. Caso real, UC
   // 2021-2025: "Ingresos Comerciales" de la nota 19 se abre con la columna "Comerciales" de la nota de segmentos. Si no suma, queda la hoja.
-  // AJUSTE MANUAL `desglose` (Versión 382; tools/ajustes.mjs): escalón 0 del cierre de una nota. Si el desglose de un renglón no suma por un
+  // AJUSTE MANUAL `desglose` (Versión 382; tools/ajustes.mjs): escalón 0 del cierre de una nota (se prueba ANTES de cerrarNota(): una nota que cierra solo por
+  // redondeo dentro de la tolerancia reemplazaba el renglón y la diferencia que Guido había dicho se perdía; Bath 2022-23, 44.435 £). Si el desglose de un renglón no suma por un
   // error del PROPIO documento, Guido dice cuánto es la diferencia impresa; la nota se abre igual, con una fila más ("Diferencia en el
   // documento") por esa diferencia. COMPUERTA: la diferencia entre el renglón y la suma de sus filas es la que dijo Guido (media unidad
   // impresa de tolerancia); si no, queda el renglón como siempre. Solo la columna del año. Caso: Fortaleza 2022, "Patrocinios (1)" 2.334.630
@@ -291,7 +292,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const usadas = new Set(hojas);
     return hojas.flatMap((h) => {
       const sub = filas.filter((x) => x.detalla_a && x !== h && !usadas.has(x) && x.detalla_a.trim() === String(h.etiqueta).trim());
-      const c = sub.length >= 2 ? (cerrarNota(Math.abs(h[campo] || 0), sub, campo, h.u || 0) || cerrarConAjuste(h, sub, campo)) : null;
+      const c = sub.length >= 2 ? (cerrarConAjuste(h, sub, campo) || cerrarNota(Math.abs(h[campo] || 0), sub, campo, h.u || 0)) : null;
       if (!c) { if (conNotas && sub.length >= 2 && campo === 'M' && !desgloseTrivial(h, sub)) { if (!reintentos.some((x) => x.renglon === h.etiqueta)) notas.push(`el desglose de "${h.etiqueta}" (${sub.length} filas) no suma la fila: quedó la fila`); if (!reintentos.some((x) => x.renglon === h.etiqueta)) reintentos.push({ renglon: h.etiqueta, suma: r6(sub.filter((x) => x.tipo === 'renglon').reduce((a, x) => a + Math.abs(x.M || 0), 0)), objetivo: r6(Math.abs(h.M || 0)) }); } return [h]; }
       return abrirAnidadas(c.hojas.map((x) => ({ ...x, [campo]: x.valorNota * Math.sign(h[campo] || 1), origen: `${h.origen} > desglose de "${h.etiqueta}"` })), campo, nivel + 1);
     });
@@ -515,7 +516,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // saber qué suma qué; ver cerrarNota()).
       const hijas = filas.filter((h) => h.detalla_a && h.detalla_a.trim() === f.etiqueta.trim());
       const obj = Math.abs(f[campo] || 0);
-      let c = hijas.length >= 2 ? (cerrarNota(obj, hijas, campo, f.u || 0) || cerrarConAjuste(f, hijas, campo)) : null;
+      let c = hijas.length >= 2 ? (cerrarConAjuste(f, hijas, campo) || cerrarNota(obj, hijas, campo, f.u || 0)) : null;
       // (frenado de Beşiktaş 2018) NOTA CON UN SUBTOTAL QUE TIENE FILAS PROPIAS: si las filas que dicen abrir este renglón no lo cierran y alguna
       // es un subtotal que a su vez tiene filas propias (detalla_a = ese subtotal), se prueba otra vez con esas filas también, en el orden del documento
       // (hasta 3 niveles). Misma compuerta (cerrarNota). Caso: Beşiktaş 2018, nota 18: "Satışların maliyeti" = mercaderías 68,3 + "Satılan hizmet maliyeti"
@@ -526,7 +527,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           const nuevas = filas.filter((h) => !conjunto.has(h) && h.detalla_a && frontera.some((s) => s.etiqueta.trim() === h.detalla_a.trim()));
           nuevas.forEach((h) => conjunto.add(h)); frontera = nuevas.filter((h) => h.tipo !== 'renglon');
         }
-        if (conjunto.size > hijas.length) { const ampliadas = filas.filter((h) => conjunto.has(h)); c = cerrarNota(obj, ampliadas, campo, f.u || 0) || cerrarConAjuste(f, ampliadas, campo); }
+        if (conjunto.size > hijas.length) { const ampliadas = filas.filter((h) => conjunto.has(h)); c = cerrarConAjuste(f, ampliadas, campo) || cerrarNota(obj, ampliadas, campo, f.u || 0); }
       }
       // ESCALÓN DEL LADO (to-do 163, problema 1; ok de Guido): si las filas que dicen abrir este renglón no lo cierran, se prueba SOLO con las
       // del mismo lado que el renglón. Nombres repetidos: en el formato italiano "altri" es el renglón de ingresos 5), el 16) y el 17), y las
@@ -536,7 +537,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       if (!c && hijas.length >= 2) {
         const ladoOk = (h) => !h.lado || !f.lado || h.lado === f.lado || h.lado === 'otro' || f.lado === 'otro';
         const mismas = hijas.filter(ladoOk);
-        if (mismas.length >= 2 && mismas.length < hijas.length) { c = cerrarNota(obj, mismas, campo, f.u || 0) || cerrarConAjuste(f, mismas, campo); if (c) { const n = `la nota de "${f.etiqueta}" cierra solo con sus filas del lado ${f.lado} (${hijas.length - mismas.length} filas de otro lado dicen abrir un renglón con el mismo nombre)`; if (!notas.includes(n)) notas.push(n); } }
+        if (mismas.length >= 2 && mismas.length < hijas.length) { c = cerrarConAjuste(f, mismas, campo) || cerrarNota(obj, mismas, campo, f.u || 0); if (c) { const n = `la nota de "${f.etiqueta}" cierra solo con sus filas del lado ${f.lado} (${hijas.length - mismas.length} filas de otro lado dicen abrir un renglón con el mismo nombre)`; if (!notas.includes(n)) notas.push(n); } }
       }
       // (to-do 298 y3, escalón a, ok de Guido 2026-10-18) en la lectura 4 (signos impresos) un renglón que RESTA en su lado le pasa ese signo
       // a las filas de su nota: cerrarNota() las devuelve relativas al renglón en valor absoluto, y sin esto la nota de una deducción sumaba.
