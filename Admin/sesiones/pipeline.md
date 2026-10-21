@@ -111,4 +111,8 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 - Suiza/Basel 2022: la nota dice «no hay PDF para 2022 en adelante», pero en la carpeta hay `geschaeftsbericht_2022-23.pdf`; la fuente alternativa es SFL Finanzzahlen. Revisar la nota y el rótulo del año.
 - Italia/Fiorentina 2020: ya está `Fiorentina-bilancio-2020-21-issuu.pdf`; falta confirmar si el 2020 es ese mismo ejercicio con otro rótulo o un 2019/20 aparte.
 
-- 320, 321 y 322: no se tocaron (esperan portal, 313 y 335).
+- 320, 321 y 322 (pedido de Guido, 2026-10-21; una medición por herramienta en `Admin/mediciones/`, sin instalar ni conectar nada, sin gasto de API):
+  - 320 Browser Use: cerrado sin probar (`320-browser-use.md`). Ningún portal de las notas de sourcing encaja: los de secuencia fija tienen captcha (Hungría, Eslovenia, Francia, Perú), bloqueo geográfico (Polonia) o ya se recorren con `curl` (Colombia, Chequia, Bélgica...). Se reabre si aparece uno sin captcha y no scripteable.
+  - 321 Higgsfield MCP: no conectar (`321-higgsfield-mcp.md`). Pide suscripción paga (Starter 15 US$ por mes), todo gasta créditos y no hay tope nativo. Los precios salen del blog del sitio (la página de precios no se pudo leer): Guido los confirma en vivo. Una tarjeta de un dato sale mejor de los propios datos.
+  - 322 Zapier MCP y OmniRoute: no instalar (`322-zapier-omniroute.md`). Zapier gasta 2 tareas por llamada (gratis: 100 tareas por mes) y el 335 no lo necesita. OmniRoute concentra claves y prompts, trae interceptación de tráfico y empuja a modelos que el proyecto no usa; el ahorro ya lo dan la API de lotes y Opus a Sonnet. Faltan los links de OpenSEO, Book to Skill y Open Generative AI: pedírselos a Guido.
+  - Para la principal: las tres líneas del 320, 321 y 322 del TODO pasan a «medido, no se hace» (o se borran), con el motivo de arriba.
