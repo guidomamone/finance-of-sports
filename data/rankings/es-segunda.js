@@ -37,6 +37,15 @@ window.RANKINGS["es-segunda"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.593],["Otros ingresos",14.704]] },
     ],
   },
+  2021: {
+    leagueSize: 22,
+    wiki: {"t":"2020–21 Segunda División","lang":"en","at":"2026-10-21","n":22},
+    clubs: [
+      { id:"girona-es", revenue:25.68, reportType:"official_balance_sheet",
+        sourceId:"girona-es-cuentas-anuales-2020-2021",
+        mix:[["Venta de Jugadores",10.096],["Fútbol profesional (sin desglosar por la fuente)",0.522],["Otros ingresos",15.062]] },
+    ],
+  },
   2020: {
     leagueSize: 22,
     wiki: {"t":"2019–20 Segunda División","lang":"en","at":"2026-10-17","n":22},

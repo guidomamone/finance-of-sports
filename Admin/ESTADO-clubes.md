@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 320 clubes, 1318 ejercicios, 23 países.
+TOTAL: 320 clubes, 1319 ejercicios, 23 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -195,7 +195,7 @@ ESPAÑA (19)
   Elche CF            2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   FC Barcelona        1 ejercicio (2024/2025), balance, EUR
   Getafe CF           2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  Girona FC           4 ejercicios (2019/2020, 2021/2022, 2022/2023, 2024/2025), balance, EUR
+  Girona FC           5 ejercicios (2019/2020, 2020/2021, 2021/2022, 2022/2023, 2024/2025), balance, EUR
   Levante UD          1 ejercicio (2024/2025), balance, EUR
   Rayo Vallecano      1 ejercicio (2024/2025), balance, EUR
   RCD Espanyol        2 ejercicios (2023/2024 a 2024/2025), balance, EUR
