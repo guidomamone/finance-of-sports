@@ -175,3 +175,19 @@ lo resuelve y regenera (hay que regenerar también `data/rankings/ar-primera.js`
 - **Chequeo que conviene siempre tras tocar ids:** cargar todos los data files y datos compartidos en un `vm` y buscar cualquier id viejo como clave o valor (se hizo con un script suelto; resultado: ninguno).
 - **Estado de la rama `proyecto`:** además del 246 (`b802dc4d52` y el arreglo `1ad395ff4e`), la sesión ya hizo y commiteó el 245 fase 2 antes de que cambiara el brief (`ccaac6af55` Boca, `f22c829d39` JSON fuente, ya
   verificado; ver la sección de arriba). El Boca (`ccaac6af55`) quedó ANTES del arreglo del 246 en la historia. No reescribí historia.
+
+## Orden 1: to-dos 330 y 257 (propuestas, sin aplicar; 2026-10-21)
+
+### Qué cambió
+- `Admin/propuestas/330-donde-se-pierde.md`: seis tipos de pérdida (decisión en la memoria, pregunta resuelta en dudas, descarte medido que no llegó a HALLAZGOS, medición sin destino, pendiente de una nota de sesión archivada, registro sin lector) con archivo y línea, dónde tiene que quedar cada uno y el chequeo que lo vigila.
+- `Admin/propuestas/257-skills.md`: destino de cada una de las 27 memorias, texto exacto de cuatro skills nuevas (producto y pantalla, contenido y difusión, contrato de datos, deploy y release) y de una quinta que las memorias piden (la sesión principal), cambios a skills y documentos existentes, chequeos y el candado de skills (el hook exige que el texto ya esté commiteado en `Admin/propuestas/`).
+- No se tocó `.claude/skills/`, la memoria, tools ni hooks.
+
+### Qué queda (para TODO)
+- Guido: decidir qué skills nuevas y qué cambios de 257-skills.md (partes 2 y 3) aprueba. Sin su ok no se pega nada.
+- Auditora 4 (sección 7): los chequeos de 330 y de la parte 4 del 257 (`memoria-no-es-regla`, `doc-de-criterio-con-historia`, `duda-resuelta-en-dudas`, `medicion-sin-destino`, `registro-sin-lector`, `archivar-con-ok`, `modelo-opus-con-ok`, `worktree-sin-permission-mode`, el candado de skills, ampliación de `comandos-simples`, cambios de `worktree.mjs`).
+- Falta línea en `Admin/HALLAZGOS-pipeline.md` para los descartes 314 (Stirling) y 298 x2 (voz local); falta en `Admin/TODO.md` el punto de que `perfil-en-cola` de `cargar.mjs` nunca frene; la pregunta de Deportes Tolima (`dudas-por-club.md:201`) frena una carga y no está en el TODO.
+- Sin mirar: los chats de las sesiones y las 118 notas de `Admin/Archive/sesion-*` (muestreé dos). Ver el final de 330.
+
+### Qué deja de ser cierto en ESTADO
+- Nada todavía: son propuestas. Si se aprueban, el bloque de hooks cambia (candado, archivar, Opus) y aparecen las skills nuevas.
