@@ -547,3 +547,23 @@ EJEMPLO-CATEGORÍA: besiktas-tr | revenue | Reeskont gelirleri | other_income
 ## REGLA: si el documento declara varios tipos de cambio a USD del mismo día de cierre, vale el de caja y bancos (votación 3 a 0, 2026-10-20, Beşiktaş 2006)
 
 El `fx` es el de caja y bancos (`document_close`). Caso: Beşiktaş 2006, 1,5357 contra el 1,5442 de pasivos.
+
+## REGLA: el anticipo de un fondo (CVC) que el club reconoce en cuotas va a `other_income`, aparte del reparto central de la liga (votación 3 a 0, 2026-10-20, Bath Rugby 2021 a 2023)
+
+`central_income` (genérica `media_rights`) es el reparto corriente de TV y comercial central de la liga y de la federación (Premiership Rugby y RFU). El
+anticipo que cobró la liga de CVC por vender una participación (£12,8 M en 2019, reconocidos en 48 meses dentro de Turnover) va a `other_income`, con la
+fila aparte que imprime el documento («CVC income», Strategic Report 2021-22 y 2022-23) y una `publicNote` que dice que es la cuota diferida del anticipo
+de 2019. Medido: £3,3 M (28 % de los ingresos de 2021, 17 % de 2022) y £2,4 M en 2023; el porcentaje alto se silencia en `tools/audit-ignore.json` con el motivo.
+Bath no lo trata como venta: no sale de la regla de la venta a un fondo (misma dirección, hecho distinto).
+
+CATEGORÍA (prompt): el anticipo de un fondo de inversión (CVC) sobre derechos comerciales de la liga, reconocido en cuotas por el club, va a other_income como fila aparte; no a media_rights ni a central_income.
+
+## REGLA: una revaluación no realizada de una inversión impresa fuera de los ingresos va a `other_income`, no a `assetSales` (votación 2 a 1, 2026-10-20, Bath Rugby 2021)
+
+`assetSales` es para ventas realizadas ("Profit on disposal"). «Fair value movements» (+£6,66 M en 2021, la participación en Premiership Rugby, no monetaria en
+el flujo de caja) va a `other_income` como el resto de las revaluaciones sin cobro, con `publicNote` que dice que es una revaluación no realizada fuera de
+Turnover. Votos: `other_income` ×2, `exceptional_items` ×1 (misma lectura de realizado/no realizado, difiere solo en el rubro). Medido: 57 % del Turnover y
+sin ella el resultado operativo pasa de −£0,11 M a −£6,77 M: se silencia en `tools/audit-ignore.json`. Los ingresos del motor (11,6 + 0,15 + 6,66) ya no igualan el
+Turnover impreso (11,6): el cierre contra el resultado operativo impreso (−£105.875) sí cierra; el chequeo contra Turnover lo tiene que contemplar Datos 4.
+
+CATEGORÍA (prompt): una revaluación no realizada de una inversión a valor razonable (Fair value movements), sin cobro, va a other_income con nota que lo aclare; nunca a asset_sales ni a una venta.
