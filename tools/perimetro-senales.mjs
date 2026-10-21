@@ -53,6 +53,7 @@
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname, relative, isAbsolute, sep } from 'node:path';
 import { createHash } from 'node:crypto';
+import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // (to-do 341) «club de fútbol» de los prompts de lectura es el deporte del club
 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -223,7 +224,7 @@ const PREGUNTA = {
   si: 'Al menos una sociedad controlada que entra en el consolidado hace negocio del fútbol del club: sponsors, derechos de TV o medios, merchandising, marketing o explotación de la marca, venta de entradas, explotación del estadio o del centro deportivo.',
   no: 'Ninguna controlada consolidada hace negocio del fútbol del club (son inmobiliarias sin estadio, financieras, de otra actividad, inactivas o irrelevantes), o el texto no menciona controladas.',
 };
-async function preguntarJev(texto) {
+async function preguntarJev(texto, deporte) {
   const clave = createHash('sha1').update(JSON.stringify([PREGUNTA, texto])).digest('hex');
   const cache = cargarCache();
   if (cache.has(clave)) return { ...cache.get(clave), cache: true };
@@ -234,7 +235,7 @@ async function preguntarJev(texto) {
     jevKey = line.slice(12).trim();
   }
   const body = {
-    state: `Fragmentos del balance de un club de fútbol que hablan de sus sociedades controladas y del área de consolidación:\n${texto}`,
+    state: `Fragmentos del balance de un club de ${deporteEnFrase(deporte)} que hablan de sus sociedades controladas y del área de consolidación:\n${texto}`,
     model: 'jev-latest',
     questions: { negocio: { type: 'choice', instructions: '¿Alguna controlada consolidada hace negocio del fútbol del club?', criteria: PREGUNTA } },
   };
@@ -320,7 +321,7 @@ const ESQUEMA_A2 = {
     criterios: { type: 'object', additionalProperties: false, required: Object.keys(PESOS_A2), properties: Object.fromEntries(Object.keys(PESOS_A2).map((k) => [k, CRITERIO])) },
   },
 };
-const SISTEMA_A2 = `Recibís la portada (primeras líneas) y los títulos de un documento contable de un club de fútbol (transcripción a Markdown), en orden, con su número de línea. Debajo de cada título va su primer texto; a los títulos que tienen una tabla con números debajo se les agregan los primeros renglones de esa tabla (y el texto es el que hay entre el título y la tabla).
+const sistemaA2 = (deporte) => `Recibís la portada (primeras líneas) y los títulos de un documento contable de un club de ${deporteEnFrase(deporte)} (transcripción a Markdown), en orden, con su número de línea. Debajo de cada título va su primer texto; a los títulos que tienen una tabla con números debajo se les agregan los primeros renglones de esa tabla (y el texto es el que hay entre el título y la tabla).
 1. linea_estado: la línea del título del ESTADO DE RESULTADOS (cuenta de pérdidas y ganancias, income statement) del ejercicio; tiene que ser un título con tabla. null si no hay ninguno. No cuentes notas, resúmenes ni tablas de la memoria.
 2. linea_otro_estado: si el documento trae además OTRO estado de resultados de distinto perímetro (uno del grupo y otro de la sociedad sola), la línea de su título; si no, null.
 3. columnas_de_los_dos: true si la tabla del estado de linea_estado trae columnas de los dos perímetros a la vez (por ejemplo "grupo" y "sociedad", "Koncern" y "Moderselskab", "consolidado" e "individual"); si no, false.
@@ -335,7 +336,7 @@ async function pasoA2(mdRel, lineas, { soloCache = false } = {}) {
   const tit = titulosDelDocumento(lineas);
   if (!tit.some((t) => t.tabla)) return { motivo: 'ningún título con tabla' };
   const portada = portadaDelDocumento(lineas);
-  const user = textoA2(tit, portada);
+  const user = textoA2(tit, portada); const SISTEMA_A2 = sistemaA2(deporteDePdf(mdRel.replace(/\.md$/, '.pdf')));
   const clave = createHash('sha1').update(JSON.stringify(MODELO_A2 && MODELO_A2 !== 'opus' ? [SISTEMA_A2, user, MODELOS_A2[MODELO_A2]] : [SISTEMA_A2, user])).digest('hex');
   if (!cacheA2) { cacheA2 = new Map(); if (existsSync(CACHE_A2)) for (const l of readFileSync(CACHE_A2, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA2.set(j.clave, j); } catch { /* línea rota */ } } }
   let datos = cacheA2.get(clave)?.datos;
@@ -392,13 +393,13 @@ const ESQUEMA_A3 = {
   type: 'object', additionalProperties: false, required: ['perimetro', 'linea', 'controlada', 'motivo'],
   properties: { perimetro: { type: 'string', enum: ['consolidado', 'individual', 'no_se'] }, linea: { type: ['integer', 'null'] }, controlada: { type: ['string', 'null'] }, motivo: { type: 'string' } },
 };
-export const SISTEMA_A3 = `Recibís líneas numeradas ("L123: ...") de la memoria de un club de fútbol que publica DOS estados de resultados: el de la sociedad sola y el del grupo (la sociedad y sus controladas). Son las líneas que hablan de controladas, participaciones o consolidación, en cualquier idioma.
+export const sistemaA3 = (deporte) => `Recibís líneas numeradas ("L123: ...") de la memoria de un club de ${deporteEnFrase(deporte)} que publica DOS estados de resultados: el de la sociedad sola y el del grupo (la sociedad y sus controladas). Son las líneas que hablan de controladas, participaciones o consolidación, en cualquier idioma.
 La regla para elegir qué estado se carga: si al menos una controlada que entra en el consolidado hace el negocio del fútbol del club (el club profesional, el primer equipo, la academia o el fútbol base del club, el estadio o el centro deportivo del club, sponsors, derechos de TV, merchandising, entradas, hospitality o catering del estadio), "consolidado". Si ninguna lo hace (inmobiliarias sin el estadio, financieras, negocios de otra actividad, sociedades inactivas o en liquidación), "individual". Si la sociedad que presenta es una holding sin operación propia y el fútbol está en una controlada, "consolidado".
 Devolvé: perimetro; linea: la línea que nombra a la controlada que decide (si es "consolidado", una que hace el negocio del fútbol; si es "individual", la que muestra qué hace la controlada principal); controlada: su nombre tal como aparece en esa línea; motivo: una oración. Si las líneas no alcanzan para saber qué hacen las controladas, "no_se" con linea y controlada en null.`;
 const CACHE_A3 = resolve(ROOT, 'Generados', '_cache', 'claude-perimetro-a3.jsonl');
 let cacheA3 = null;
 const leerCacheA3 = () => { if (!cacheA3) { cacheA3 = new Map(); if (existsSync(CACHE_A3)) for (const l of readFileSync(CACHE_A3, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA3.set(j.clave, j); } catch { /* línea rota */ } } } return cacheA3; };
-const pedidoA3 = (lineas) => { const { texto, lineas: mandadas } = textoA3(lineas); return texto ? { user: texto, mandadas, clave: createHash('sha1').update(JSON.stringify([SISTEMA_A3, texto])).digest('hex') } : null; };
+const pedidoA3 = (lineas, deporte) => { const { texto, lineas: mandadas } = textoA3(lineas); return texto ? { user: texto, mandadas, clave: createHash('sha1').update(JSON.stringify([sistemaA3(deporte), texto])).digest('hex') } : null; };
 const sinAcentos = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
 export function compuertaA3(datos, mandadas, lineas) {
   if (!datos || datos.perimetro === 'no_se') return { motivo: 'Claude no sabe qué hacen las controladas' };
@@ -412,13 +413,13 @@ export function compuertaA3(datos, mandadas, lineas) {
   return { perimetro: datos.perimetro, linea: datos.linea, controlada: datos.controlada, motivo: datos.motivo };
 }
 async function pasoA3(mdRel, lineas, { soloCache = false } = {}) {
-  const p = pedidoA3(lineas);
+  const pdfA3 = mdRel.replace(/\.md$/, '.pdf'); const p = pedidoA3(lineas, deporteDePdf(pdfA3));
   if (!p) return { motivo: 'el documento no habla de controladas' };
   let datos = leerCacheA3().get(p.clave)?.datos;
   if (!datos && (SOLO_CACHE || soloCache)) return { pendiente: true };
   if (!datos) {
     const { llamarClaude } = await import('./claude-llamada.mjs');
-    const r = await llamarClaude({ system: SISTEMA_A3, user: p.user, schema: ESQUEMA_A3, tarea: 'perimetro-a3', pdf: mdRel.replace(/\.md$/, '.pdf'), maxTokens: 1000, modelo: MODELOS_A2.sonnet });
+    const r = await llamarClaude({ system: sistemaA3(deporteDePdf(pdfA3)), user: p.user, schema: ESQUEMA_A3, tarea: 'perimetro-a3', pdf: pdfA3, maxTokens: 1000, modelo: MODELOS_A2.sonnet });
     if (r.pendiente) return { pendiente: true };
     if (r.error) return { error: r.error };
     datos = r.datos;
@@ -491,7 +492,7 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
     const texto = textoControladas(md);
     // Sin texto sobre controladas no hay a quién preguntarle: el voto queda sin respuesta (cola), no cuenta como "no".
     if (!texto) r.c3 = { voto: null, motivo: 'el documento no habla de controladas' };
-    else { const a = await preguntarJev(texto); r.c3 = a.error ? { voto: null, error: a.error } : { voto: a.choice === 'si', choice: a.choice, confianza: a.confidence, cache: !!a.cache }; }
+    else { const a = await preguntarJev(texto, deporteDePdf(mdRel.replace(/\.md$/, '.pdf'))); r.c3 = a.error ? { voto: null, error: a.error } : { voto: a.choice === 'si', choice: a.choice, confianza: a.confidence, cache: !!a.cache }; }
   } else r.c3 = { voto: null, motivo: 'sin --jev' };
   const votos = [r.c1.voto, r.c2.voto, r.c3.voto];
   const si = votos.filter((v) => v === true).length; const nulos = votos.filter((v) => v === null).length;
@@ -642,7 +643,7 @@ async function main() {
     const cuenta = { bien: 0, mal: 0, noDecide: 0, sinVerdad: 0 };
     for (const l of readFileSync(resolve(dir, 'pedidos.jsonl'), 'utf8').split('\n')) {
       if (!l.trim()) continue; const p = JSON.parse(l);
-      const lineas = readFileSync(resolve(ROOT, p.md), 'utf8').split('\n'); const ped = pedidoA3(lineas);
+      const lineas = readFileSync(resolve(ROOT, p.md), 'utf8').split('\n'); const ped = pedidoA3(lineas, deporteDePdf(p.md.replace(/\.md$/, '.pdf')));
       const f = resolve(dir, `${p.n}.json`); const datos = existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : null;
       const c = compuertaA3(datos, ped.mandadas, lineas); const verdad = ajustePerimetroDe(p.md.replace(/\.md$/, '.pdf'))?.valor || null;
       const marca = !c.perimetro ? 'no decide' : !verdad ? 'sin verdad' : c.perimetro === verdad ? 'ok' : 'MAL';
@@ -666,7 +667,8 @@ async function main() {
   if (exportarF) {
     const dir = carpetaDeTrabajo('--exportar-a2', exportarF); mkdirSync(dir, { recursive: true });
     const { writeFileSync } = await import('node:fs');
-    writeFileSync(resolve(dir, 'sistema.txt'), SISTEMA_A2);
+    // los pedidos de un club de otro deporte llevan su propia instrucción: sistema-<deporte>.txt (sistema.txt es la de fútbol, como siempre)
+    writeFileSync(resolve(dir, 'sistema.txt'), sistemaA2('futbol'));
     if (!cacheA2) { cacheA2 = new Map(); if (existsSync(CACHE_A2)) for (const l of readFileSync(CACHE_A2, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA2.set(j.clave, j); } catch { /* línea rota */ } } }
     const pedidos = []; let n = 0;
     for (const it of items) {
@@ -675,8 +677,9 @@ async function main() {
       if (tablasDeIngresos(md).tablas.length) continue; // el paso A decide: no pasa por A2
       const L = md.split('\n'); const tit = titulosDelDocumento(L);
       if (!tit.some((t) => t.tabla)) continue;
-      const user = textoA2(tit, portadaDelDocumento(L)); const clave = createHash('sha1').update(JSON.stringify([SISTEMA_A2, user])).digest('hex');
+      const user = textoA2(tit, portadaDelDocumento(L)); const dep = deporteDePdf(it.md.replace(/\.md$/, '.pdf')); const clave = createHash('sha1').update(JSON.stringify([sistemaA2(dep), user])).digest('hex');
       if (cacheA2.has(clave)) continue;
+      if (dep !== 'futbol') writeFileSync(resolve(dir, `sistema-${dep || 'sin-deporte'}.txt`), sistemaA2(dep));
       n++; writeFileSync(resolve(dir, `${n}.txt`), user); pedidos.push({ n, md: it.md, clave });
     }
     writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((x) => JSON.stringify(x)).join('\n') + '\n');
@@ -690,13 +693,14 @@ async function main() {
   if (exportarA3) {
     const dir = carpetaDeTrabajo('--exportar-a3', exportarA3); mkdirSync(dir, { recursive: true });
     const { writeFileSync } = await import('node:fs');
-    writeFileSync(resolve(dir, 'sistema.txt'), SISTEMA_A3); writeFileSync(resolve(dir, 'esquema.json'), JSON.stringify(ESQUEMA_A3, null, 1));
+    writeFileSync(resolve(dir, 'sistema.txt'), sistemaA3('futbol')); writeFileSync(resolve(dir, 'esquema.json'), JSON.stringify(ESQUEMA_A3, null, 1));
     const pedidos = [];
     for (const it of items) {
       if (!existsSync(resolve(ROOT, it.md))) continue;
       const r = await proponer(it.md, { soloCache: true });
       if (r.pasoA !== 'a2-los-dos') continue;
-      const p = pedidoA3(readFileSync(resolve(ROOT, it.md), 'utf8').split('\n')); if (!p) continue;
+      const depA3 = deporteDePdf(it.md.replace(/\.md$/, '.pdf')); const p = pedidoA3(readFileSync(resolve(ROOT, it.md), 'utf8').split('\n'), depA3); if (!p) continue;
+      if (depA3 !== 'futbol') writeFileSync(resolve(dir, `sistema-${depA3 || 'sin-deporte'}.txt`), sistemaA3(depA3));
       const n = pedidos.length + 1; writeFileSync(resolve(dir, `${n}.txt`), p.user); pedidos.push({ n, md: it.md, clave: p.clave });
     }
     writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((x) => JSON.stringify(x)).join('\n') + '\n');

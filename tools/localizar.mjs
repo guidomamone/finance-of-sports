@@ -39,6 +39,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
 import { clubDeRuta } from './carpetas-clubes.mjs';
+import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // (to-do 341) «club de fútbol» de los prompts de lectura es el deporte del club
 import { indiceBloques, ficha, textoDeBloque, VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { derivado } from './rutas.mjs';
 import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
@@ -69,7 +70,7 @@ const SCHEMA = {
     observaciones: { type: 'string' },
   },
 };
-export const SYSTEM = `Sos analista de estados financieros de clubes de fútbol. Te paso el ÍNDICE de los bloques (tablas y bloques de texto con cifras) de la transcripción de un documento (balance, cuentas anuales, memoria), en cualquier idioma. Cada bloque tiene: página, las líneas de texto que tiene arriba (títulos, "en miles de..."), su encabezado, sus primeras y últimas filas, y si continúa a otro bloque.
+export const sistemaDe = (deporte) => `Sos analista de estados financieros de clubes de ${deporteEnFrase(deporte)}. Te paso el ÍNDICE de los bloques (tablas y bloques de texto con cifras) de la transcripción de un documento (balance, cuentas anuales, memoria), en cualquier idioma. Cada bloque tiene: página, las líneas de texto que tiene arriba (títulos, "en miles de..."), su encabezado, sus primeras y últimas filas, y si continúa a otro bloque.
 
 Elegí:
 - estado: los bloques del ESTADO DE RESULTADOS del ejercicio pedido (cuenta de pérdidas y ganancias, estado de recursos y gastos, DRE, GuV, resultatregnskap, winst- en verliesrekening, conto economico...). Incluí los bloques que lo continúan.
@@ -101,7 +102,7 @@ function pedido(pdf, registro, sitio) {
   const e = registro.find((x) => x.pdf === pdf) || {};
   const cierre = ajusteDe(pdf, 'cierre')?.valor || e.periodo?.cierre || null; // (Versión 413) el ajuste manual `cierre` es el escalón 0
   const entidad = nombreLegalDe(pdf);
-  return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}${entidad ? ` Entidad con la que el club está en el sitio: ${entidad}. Si el documento trae estados de resultados separados de VARIAS entidades (por ejemplo la sociedad que juega el fútbol, la asociación o club deportivo, el holding o la sociedad del estadio), elegí los de esa entidad y no los de las otras; la regla del consolidado y el individual de la misma entidad no cambia.` : ''}` };
+  return { md: e.md || pdf.replace(/\.pdf$/, '.md'), texto: `Documento: ${pdf.split('/').slice(1).join(' / ')}. Ejercicio pedido: el que cierra el ${cierre || '?'}.${sitio ? ` Perímetro que el club usa en sus años ya cargados: ${sitio}.` : ''}${entidad ? ` Entidad con la que el club está en el sitio: ${entidad}. Si el documento trae estados de resultados separados de VARIAS entidades (por ejemplo la sociedad que juega el ${deporteEnFrase(deporteDePdf(pdf))}, la asociación o club deportivo, el holding o la sociedad del estadio), elegí los de esa entidad y no los de las otras; la regla del consolidado y el individual de la misma entidad no cambia.` : ''}` };
 }
 
 // LAS NOTAS HACEN DE ESTADO (Versión 360, etapa 3, escalón 2, camino de error; diseño aprobado por Guido el 2026-10-02). Hay documentos que
@@ -132,7 +133,7 @@ export function aplicarAjusteEstado(datos, pdf, ajuste = ajusteDe(pdf, 'estado')
 // (to-do 288) `modelo` (opus | sonnet), solo desde la medición del CLI: otro archivo (.ubicacion.<modelo>.json) y ese modelo en las dos llamadas.
 const MODELOS = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
 export async function localizar(pdf, { registro, perimetroClub, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false, pistaResultado = null, modelo = null } = {}) {
-  const { md, texto } = pedido(pdf, registro, perimetroClub ?? null);
+  const { md, texto } = pedido(pdf, registro, perimetroClub ?? null); const SYSTEM = sistemaDe(deporteDePdf(pdf));
   const idModelo = modelo ? MODELOS[modelo] : MODELO;
   const out = resolve(ROOT, derivado(md, modelo ? `.ubicacion.${modelo}.json` : '.ubicacion.json'));
   // AJUSTE MANUAL `filas-a-mano` (Versión 614): la ubicación de este documento se armó o corrigió a mano; ni --rehacer la pisa.

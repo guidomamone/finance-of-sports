@@ -33,6 +33,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { ajusteDe } from './ajustes.mjs';
 import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
+import { deporteDePdf, deporteEnFrase } from './deporte-club.mjs'; // (to-do 341) «club de fútbol» de los prompts de lectura es el deporte del club
 import { shaMd, huellaUbicacion } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché; (237 ai) y de la ubicación
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
@@ -66,7 +67,7 @@ const SCHEMA = {
     observaciones: { type: 'string' },
   },
 };
-export const SYSTEM = `Sos analista de estados financieros de clubes de fútbol. Te paso bloques de la transcripción de un documento: el estado de resultados de un ejercicio y las notas que desglosan sus ingresos y gastos. Cada línea viene con su número ("L412: ..."). Extraé TODAS las filas con importe, en orden.
+export const sistemaDe = (deporte) => `Sos analista de estados financieros de clubes de ${deporteEnFrase(deporte)}. Te paso bloques de la transcripción de un documento: el estado de resultados de un ejercicio y las notas que desglosan sus ingresos y gastos. Cada línea viene con su número ("L412: ..."). Extraé TODAS las filas con importe, en orden.
 
 Por fila:
 - bloque y linea: de dónde sale.
@@ -109,7 +110,7 @@ export const esAMano = (pdf) => { const a = ajusteDe(pdf, 'filas-a-mano'); retur
 // (to-do 288) `modelo` (opus | sonnet), solo desde la medición del CLI: otro archivo y ese modelo en las llamadas.
 const MODELOS = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
 export async function extraer(pdf, { registro, ejecutar = false, rehacer = false, reintento = null, modelo = null } = {}) {
-  const idModelo = modelo ? MODELOS[modelo] : MODELO;
+  const idModelo = modelo ? MODELOS[modelo] : MODELO; const SYSTEM = sistemaDe(deporteDePdf(pdf));
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
   const pUb = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
   if (!existsSync(pUb)) return { error: 'falta el .ubicacion.json (correr localizar.mjs antes)' };
