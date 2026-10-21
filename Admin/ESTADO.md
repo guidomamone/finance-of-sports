@@ -252,6 +252,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 ### Dónde vive cada cosa
 
 - Raíz: las páginas del sitio (`index.html`, `fuentes.html`, `metodologia.html`, `privacidad.html`, `terminos.html`, `sitemap.xml`), `netlify.toml` y `CLAUDE.md`.
+- `club/<id>.html` y `liga/<id>.html` (generadas por `tools/generate-club-pages.js`, con la imagen de `og/`): el link propio de cada club y liga,
+  con título, descripción y tarjeta al compartir; Netlify las sirve en `/club/<id>` y `/liga/<id>` y la app arranca en esa pestaña (`window.FOS_RUTA`).
+  La dependencia de imágenes (`@resvg/resvg-js`) vive en `tools/package.json`: `cd tools && npm install` en una carpeta nueva.
 - `data/`: la fuente de cada club es `data/<país>/<clubId>.json` (dato abierto, esquema en `data/schema/club-v1.json`); el sitio carga el
   `data/<país>/<clubId>-data.js`, que se GENERA desde el JSON (`tools/generar-data.mjs`; `--check` lo controla). Los
   compartidos (`clubs.js`, `leagues.js`, …) sueltos; `club-leagues/`, `gestiones/`, `rankings/` y `lang/`. Las tools arman la ruta de un

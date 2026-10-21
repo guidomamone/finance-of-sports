@@ -28,7 +28,7 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 241 (Pipeline 9): link propio por club y liga: el generador de páginas, el rewrite de Netlify y la imagen al compartir (la ruta en `js/principal.js` ya está)
+1. 241: cuando se publique, probar el link en el depurador de Facebook y en Google (lo demás ya está)
 
 **B. Pantallas y distribución**
 2. 247: registro público de correcciones (ok de Guido a las 4 recomendaciones del plan; después del 241)
@@ -67,9 +67,9 @@ el número de la izquierda es el orden de trabajo.
        Más casos (lote 84): Sporting 2002 a 2007, cuadro de gestión de los proveitos (columna de resultados reales, mismo total que
        el estado): cargado con 45 ajustes `fila` (TV, taquilla, abonos, cuotas, sponsors, royalties, UEFA y un resto).
 
-241. LINK DEDICADO, NIVEL 2: RUTAS REALES, TARJETA AL COMPARTIR Y SEO (mejoras de proyecto, pedido de Guido 2026-10-16). `/club/<id>` y `/liga/<id>` pre-generadas (redirect de Netlify +
-   un generador de HTML por club, como `fuentes/<club>.html`), con título, descripción y OG image ("Boca Juniors · Ingresos 2025: US$ 120 M").
-   WhatsApp y Google no ejecutan JS: sin esto la preview es la portada y nadie que busque "deuda de Boca" llega. Mockups con Design antes de codear.
+241. LINK DEDICADO: LO QUE QUEDA (2026-10-20). `/club/<id>` y `/liga/<id>` ya están (páginas en `club/` y `liga/`, imagen en `og/`,
+   rewrite en `netlify.toml`). Falta, con el sitio publicado: el depurador de Facebook (sirve para WhatsApp) y la prueba de resultados
+   enriquecidos de Google con la URL pública (paso 4 de `Admin/mediciones/241-plan.md`).
 247. REGISTRO PÚBLICO DE CORRECCIONES (mejoras de proyecto, pedido de Guido 2026-10-16). Las correcciones se registran adentro (ajustes, evidencia por club); afuera nadie sabe qué cambió
    ni cuándo, dato por dato. Un registro público versionado.
 248. TAXONOMÍA GENÉRICA + SUBCATEGORÍAS POR DEPORTE (mejoras de proyecto, pedido de Guido 2026-10-16). Una capa genérica (ingresos y gastos operativos, deuda) y las subcategorías de cada

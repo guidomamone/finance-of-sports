@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 888 — Link propio por club y por liga (2026-10-20) [241]
+
+- `tools/generate-club-pages.js` arma `club/<id>.html` (319) y `liga/<id>.html` (52) con título, descripción, datos estructurados, un bloque sin JS y la imagen al compartir (`og/`, PNG con resvg, solo se regenera la que cambió); corre en cada carga y `audit.js` lo chequea. Rewrite 200 en `netlify.toml`. Probado en el preview; falta el depurador de Facebook con la URL pública. ASSET_V 1534.
+
 ## Versión 887 — Sección «Informes» en Ligas (2026-10-20) [332]
 
 - Bloque «Informes de esta liga» en Ligas desde `data/informes.js`: UEFA ECFIL 2025, Deloitte ARFF 2026 y el borrador del IFR, con una cifra de contexto con fuente (los de Europa arriba). No sale en ligas sin ranking. ASSET_V 1533.
