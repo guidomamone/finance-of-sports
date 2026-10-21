@@ -113,3 +113,34 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 | `CATEGORÍA (prompt, deporte)` | La regla del CVC ya nombra un id de rugby | No | Un deporte mal escrito pasaría callado: el validador lo corta | El prompt de fútbol cambia como mucho en una línea | Sí: sin deporte vale para todos | Aprobada con un cambio |
 | Ceros por deporte | Bath no tiene medición de ceros | No (relaja) | Un 0 malo en rugby: lo atrapan los tie-outs y la revisión de 5 documentos | Nada si las 5 entradas de fútbol se copian | Sí: `cero-real` | Aprobada con dos cambios |
 | Deporte sin declarar | El default `futbol` de `alta-club.mjs` | Sí si «sin mención» cuenta como sin declarar: 31 de 400 carpetas | Sin la condición, un club de otro deporte entra como fútbol | Nada: los 319 declaran | Sí: respuesta en la cola | Aprobada con un cambio |
+
+## Auditora 4: veredicto de los 6 commits del 339 mergeados a main, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Seis líneas en `Admin/registros/auditoria-proceso.jsonl`: `121399a592`, `78200045c5`, `fb65c62b59`, `0b82bf3e64`, `5c5e959e72` y `98272cbcf8`, todos APROBADOS. Ninguno se revierte.
+
+### Qué queda (para TODO / 339)
+
+- `deporteODefecto()` devuelve `futbol` para un club que no está en `data/clubs.js` (Jev, `categorizar-claude`, `cola.mjs`): es el «asumir fútbol» que se quería sacar. No deja pasar datos malos (`cargar.mjs` rechaza por la taxonomía del club), pero conviene que devuelva null y pida el deporte. Para Pipeline 11, no bloquea.
+- 5 altas de fútbol (All Boys, Toros de Córdoba, Athens Kallithea, RKC Waalwijk, Baník Ostrava) van a pedir el deporte en la cola. La respuesta es `futbol`; la principal las contesta sin ir a Guido.
+- El prompt de fútbol cambió en dos frases (reglas de la tienda y del CVC): una invalidación del caché, sin cambio de sentido.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: 334 y 339 (a), (b), (c), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Cuatro líneas más en `Admin/registros/auditoria-proceso.jsonl`: `dd0d4a1d6b` (334, prefijo de entidad en `suma-entidades.mjs`), `05ebe22888` (339 a) y `54e18dc4b6` (339 b), APROBADOS; la condición del 339 (c), coma comida por el OCR, APROBADA CON UN CAMBIO.
+
+### Qué queda (para TODO / 339)
+
+- (c): el commit que la codee tiene que dejar resueltos los 4 hallazgos (Bath 2023-24 L162 y 2024-25 L207, Everton 2023-24 L341 y 2024-25 L157): corregir el `.md` o silenciar con motivo en `tools/audit-ignore.json`. Everton no tiene datos publicados afectados (la cifra dañada es la del año anterior; los años cargados salen del estado de resultados y coinciden con la cifra buena). En Everton 2023-24 hay otra fila dañada que la regla no atrapa («Sponsorship… 24.3 216 2?»).
+- 334: cuando se cargue Ålesund con `suma-con`, los prefijos saldrían «Aalesund Fotball AS» y «Fotballklubb FLI»; mirarlos entonces.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
