@@ -541,3 +541,18 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 5: sexta corrida: los 14 de `signo-invertido` sin mirar, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl` con `codigo_tratado: signo-invertido`, antes 17 y después 0: los 14 restantes, mirados contra su `.md`, son netos reales del documento (aportes de la Holding de Basel, costos de transacciones de atletas que Benfica imprime restando, pérdidas entre paréntesis de Besiktas, vouchers de Celtic, reasignaciones de amortización de Utrecht y NEC, negativos impresos en Groningen, Go Ahead, Nõmme Kalju y Paide, y el ingreso de Nacional cargado como excepcional). Con los 6 de Auditora 4 son 20 de 20 sin un error. Nada se silenció.
+
+### Qué queda (para TODO / una sesión Pipeline)
+
+- `tools/audit.js` (`checkLineas`, cerca de la línea 377): no emitir `signo-invertido` si el ejercicio tiene `officialTotals` del lado y la suma de las líneas con su signo cierra con él (un signo dado vuelta rompería ese tie-out); sin total oficial, P3 y no P2. Mide: `signo-invertido` antes P2 17, después 0, con el resto de la salida idéntico. No toca datos.
+- Próxima corrida: `gestion-club-inexistente` (P3, 26).
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
