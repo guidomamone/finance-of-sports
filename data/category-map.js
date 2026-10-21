@@ -114,9 +114,6 @@ const SPORT_TAXONOMIES = {
       broadcasting: 'media_rights', competition_bonus: 'prize_money', sponsorship_commercial: 'commercial', player_sales: 'player_transfers',
       other_sports: 'other_sporting_sections', youth_football: 'other_sporting_sections', womens_football: 'other_sporting_sections',
       education: 'non_sporting_activities', other_income: 'other_revenue', lump_football_operations: 'undisclosed',
-      // Subcategorías de gasto usadas en una línea de ingreso (audit.js, categoria-cruzada): la genérica es la fila donde ya se ven y se
-      // suman, "Otros ingresos". Racing 2009-2014 (decisión de Guido, CONVENCIONES-DATOS.md), Athletico Paranaense, Atlético Mineiro.
-      exceptional_items: 'other_revenue', admin_general_expense: 'other_revenue',
     },
     expense: {
       wages_squad: 'first_team_staff', match_organisation_expense: 'match_operations', youth_other_sports_expense: 'other_sporting_sections',
@@ -127,6 +124,17 @@ const SPORT_TAXONOMIES = {
     },
   },
 };
+
+// La genérica de una línea. Una subcategoría del OTRO lado (audit.js, categoria-cruzada: `exceptional_items` en ingresos de Racing
+// 2009-2014, decisión de Guido en CONVENCIONES-DATOS.md; Athletico Paranaense; el costo de las camisetas de Atlético Mineiro) va a la genérica
+// catch-all de su lado, que es la fila donde ya se ve y se suma. null = la subcategoría no existe en el deporte.
+const GENERIC_CATCH_ALL = { revenue: 'other_revenue', expense: 'other_operating_expenses' };
+function genericCategoryOf(sport, side, sub) {
+  const t = SPORT_TAXONOMIES[sport || 'futbol'];
+  if (!t || !t[side]) return null;
+  if (t[side][sub]) return t[side][sub];
+  return t[side === 'revenue' ? 'expense' : 'revenue'][sub] ? GENERIC_CATCH_ALL[side] : null;
+}
 
 // Mapa de rubros reales -> categorías normalizadas de algunos clubes cargados a mano (referencia; las líneas de cada club ya traen su
 // normalizedCategory en su data file).

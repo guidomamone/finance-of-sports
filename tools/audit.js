@@ -111,7 +111,7 @@ function loadEngine() {
   return vm.runInContext(`({
     computeYearGeneric, toDisplayValue, bucketize, yearMetaFor, toleranciaTieOut, montosTieOut,
     REVENUE_CATEGORIES, EXPENSE_CATEGORIES,
-    GENERIC_REVENUE_CATEGORIES, GENERIC_EXPENSE_CATEGORIES, SPORT_TAXONOMIES,
+    GENERIC_REVENUE_CATEGORIES, GENERIC_EXPENSE_CATEGORIES, SPORT_TAXONOMIES, genericCategoryOf,
     REVENUE_BUCKETS: GENERIC_SIMPLIFIED_REVENUE_BUCKETS,
     EXPENSE_BUCKETS: GENERIC_SIMPLIFIED_EXPENSE_BUCKETS,
     clubs, sources, gestionesByClub, CURRENCY_META,
@@ -316,9 +316,14 @@ function checkTaxonomiaGenerica(api) {
     for (const [sub, gen] of Object.entries(mapa)) { if (!filas.has(gen)) filas.set(gen, new Set()); filas.get(gen).add(filaDe(sub)); }
     for (const [gen, f] of filas) if (f.size > 1) add('P2', 'fila-parte-generica', `la genérica de ${lado} '${gen}' cae en ${f.size} filas de Formato simplificado: ${[...f].join(' / ')}`);
   }
+  // Una línea con una subcategoría del otro lado tiene genérica (la catch-all de su lado, genericCategoryOf); una que no existe ya es P0
+  // (categoria-inexistente). Acá queda solo el caso de una subcategoría declarada en category-map.js que el mapa no resuelve.
   for (const { clubId, year, rev, exp } of clubYears(api)) {
-    for (const [lado, lines, mapa] of [['ingreso', rev, tax.revenue], ['gasto', exp, tax.expense]]) {
-      for (const l of lines) if (!mapa[l.normalizedCategory]) add('P1', 'taxonomia-incompleta', `${ref(clubId, year)} ${lado} "${l.rawLabel}": la subcategoría '${l.normalizedCategory}' no tiene genérica de ${lado}`);
+    for (const [lado, side, lines] of [['ingreso', 'revenue', rev], ['gasto', 'expense', exp]]) {
+      for (const l of lines) {
+        const declarada = api.REVENUE_CATEGORIES.includes(l.normalizedCategory) || api.EXPENSE_CATEGORIES.includes(l.normalizedCategory);
+        if (declarada && !api.genericCategoryOf('futbol', side, l.normalizedCategory)) add('P1', 'taxonomia-incompleta', `${ref(clubId, year)} ${lado} "${l.rawLabel}": la subcategoría '${l.normalizedCategory}' no tiene genérica`);
+      }
     }
   }
 }
@@ -951,7 +956,7 @@ const GENERADORES = [
   ['estimar.mjs',               'data/estimados/ (y ningún estimado al lado de un año real)', 'estimados-desfasado'], // to-do 270; sin la carpeta, no chequea
   ['generate-sponsors.js',      'data/sponsors.js (sponsors y marcas de cada liga)', 'sponsors-desfasado'], // to-do 273; une equipos a clubes del sitio
   ['generar-data.mjs',          'los data/<país>/<id>-data.js (se generan de su JSON: nunca a mano)', 'json-js-desfasado'], // to-do 245: el JSON es la fuente
-  ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v1.json)', 'json-no-valida'],
+  ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v2.json)', 'json-no-valida'],
   ['generar-correcciones.mjs',  'data/correcciones/ (el registro público de correcciones, to-do 247)', 'correcciones-desfasado'],
 ];
 function checkGenerados() {
