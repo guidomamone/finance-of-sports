@@ -448,6 +448,11 @@ for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).start
 
 console.log('\n=== 3/5 · Categorizar las filas (etapa 7) ===');
 let conRubros = docs.filter((d) => String(estado[d]).startsWith('verificado'));
+// (to-do 339) Jev y Claude necesitan el deporte de cada documento: la ficha del club o el registro de altas de su carpeta. Un club nuevo todavía no tiene ficha: se corre alta-club
+// (gratis, recalcula solo si cambió la huella) sobre sus carpetas ANTES, para que ningún club de fútbol nuevo se detenga solo por no haberlo corrido. Va ANTES del filtro de --sin-api: el alta es gratis y no usa API, y
+// la sesión que corre Jev y Claude con --desde-sesion necesita el deporte ya en el registro.
+const sinDeporte = [...new Set(conRubros.filter((d) => !resolverDeporte({ club: clubDeRuta(d).clubId, pdf: d })).map((d) => d.split('/').slice(1, 3).join('/')))];
+for (const solo of sinDeporte) { console.log(`  alta-club (gratis) sobre ${solo}: el club no tiene deporte todavía`); node('tools/alta-club.mjs', ['--todos', '--solo', solo], { silencioso: true }); }
 if (SIN_API) {
   // Sin API: solo siguen los documentos con Jev y las categorías al día (los dejó la sesión con --desde-sesion o ya estaban); el resto frena.
   const alDia = (d) => { const e = registro.find((x) => x.pdf === d); try { return !!e?.md && jevAlDia(resolve(ROOT, e.md)) && categoriasAlDia(resolve(ROOT, e.md)); } catch { return false; } };
@@ -458,10 +463,6 @@ if (conRubros.length) {
   writeFileSync(resolve(ROOT, 'Admin', 'registros', '.lote-lista-actual.txt'), conRubros.join('\n') + '\n');
   node('tools/inventario-transcripciones.mjs', ['--solo', LISTA], { silencioso: true }); registro = leerRegistro(); // (Versión 640) --solo: solo la lista del lote
   if (!SIN_API) {
-    // (to-do 339) Jev y Claude necesitan el deporte de cada documento: la ficha del club o el registro de altas de su carpeta. Un club nuevo todavía no tiene ficha: se corre alta-club
-    // (gratis, recalcula solo si cambió la huella) sobre sus carpetas ANTES, para que ningún club de fútbol nuevo se detenga solo por no haberlo corrido.
-    const sinDeporte = [...new Set(conRubros.filter((d) => !resolverDeporte({ club: clubDeRuta(d).clubId, pdf: d })).map((d) => d.split('/').slice(1, 3).join('/')))];
-    for (const solo of sinDeporte) { console.log(`  alta-club (gratis) sobre ${solo}: el club no tiene deporte todavía`); node('tools/alta-club.mjs', ['--todos', '--solo', solo], { silencioso: true }); }
     node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
     node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
     node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
