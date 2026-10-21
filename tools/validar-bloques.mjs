@@ -127,13 +127,21 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const docs = flag('--lista') ? readFileSync(resolve(ROOT, flag('--lista')), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')) : ARGS.filter((a) => !a.startsWith('--'));
   if (!docs.length) { console.error('Uso: node tools/validar-bloques.mjs "<pdf>" [--ejecutar] [--rehacer]  |  --lista <archivo>'); process.exit(1); }
   const registro = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
-  let usd = 0;
+  let usd = 0; const validados = [];
   for (const pdf of docs) {
     const r = await validar(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer') });
+    if (r.datos) validados.push(pdf); // también los ya validados: el registro puede haber quedado sin la marca
     if (r.ensayo) { usd += r.usd; console.log(`  ensayo ${pdf}: ${r.modo}${r.motivoModo ? ` (${r.motivoModo})` : ''}, páginas ${r.paginas.join(',')}${r.hibridas?.length ? ` (en imagen dentro del PDF digital, van a Gemini: ${r.hibridas.join(',')})` : ''}, ~US$ ${r.usd.toFixed(3)}`); }
     else if (r.sinEstado) console.log(`  ${pdf}: sin estado de resultados`);
     else if (r.error) console.log(`  ${pdf}: ${r.error}`);
     else { usd += r.costo; console.log(`  ${pdf}: ${r.datos.modo}, ${r.datos.confirmados} números confirmados, ${r.datos.noConfirmados.length} sin confirmar`); }
   }
   console.log(`\n${ARGS.includes('--ejecutar') ? 'Gastado' : 'Costo estimado'}: US$ ${usd.toFixed(2)}`);
+  // (to-do 339, frenado de Bath) Validar a mano dejaba el registro sin la marca listo-para-jev: la pone verificar.mjs --rubros (avisarRegistro) y la línea del registro la refresca
+  // inventario-transcripciones.mjs; sin eso jev-categorizar --listos decía «0 documentos». Se encadenan acá (gratis, lo mismo que hace el lote). `--sin-seguir` los apaga.
+  if (ARGS.includes('--ejecutar') && validados.length && !ARGS.includes('--sin-seguir')) {
+    console.log(`\nRegistro al día para ${validados.length} documento(s): verificar --rubros e inventario (gratis)...`);
+    spawnSync('node', [resolve(ROOT, 'tools/verificar.mjs'), ...validados, '--rubros'], { cwd: ROOT, stdio: 'inherit' });
+    for (const carpeta of new Set(validados.map((p) => p.split('/').slice(0, 3).join('/')))) spawnSync('node', [resolve(ROOT, 'tools/inventario-transcripciones.mjs'), '--solo', carpeta], { cwd: ROOT, stdio: 'pipe' });
+  }
 }

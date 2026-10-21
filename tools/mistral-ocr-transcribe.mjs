@@ -12,6 +12,11 @@
 //   node tools/mistral-ocr-transcribe.mjs --all [--dir Clubes/Colombia] [--limit 1000] [--concurrency 2]
 // Recuperación (SOLO los que Gemini rechazó por RECITATION, leyendo Admin/registros/api/gemini-fallidos.jsonl):
 //   node tools/mistral-ocr-transcribe.mjs --retry-gemini-failures
+// REHACER UNA PÁGINA (to-do 339, frenado de Bath: una página del estado de resultados salió con las cifras en una columna aparte y se rehízo a mano con qpdf y pegando):
+//   node tools/mistral-ocr-transcribe.mjs "Clubes/<País>/<Club>/doc.pdf" --pagina 22[,23] [--ejecutar]
+//   Ensayo sin --ejecutar (dice el costo, ~US$ 0,004 por página). Con --ejecutar: corta esas páginas del PDF (qpdf), las transcribe con Mistral y reemplaza SOLO ese cuerpo en el .md
+//   entre las marcas «--- pág. N ---»; el .md anterior queda en Generados/ (.antes-pagina.md). Cambia la huella de esas páginas (tools/huella-paginas.mjs): validar-bloques y el
+//   resolver rehacen solo esas.
 //
 // Corre entero desde tu propia terminal, sin sesión de Claude Code: 0 tokens de Claude.
 // Necesita Admin/api-keys/mistral.env con MISTRAL_API_KEY=... (gitignoreado, mismo criterio que Gemini/Resend).
@@ -324,6 +329,46 @@ async function main() {
     pending = pending.slice(0, limit);
     console.log(`${total} PDFs sin transcribir bajo ${dir.replace(projectRoot + '/', '')}, procesando ${pending.length} (concurrencia=${concurrency}, timeout=${timeoutMs / 1000}s)`);
     await runBatch(pending, apiKey, concurrency, timeoutMs);
+    return;
+  }
+
+  // (to-do 339) REHACER UNA PÁGINA: ver la cabecera.
+  const iPag = args.indexOf('--pagina');
+  if (iPag >= 0) {
+    const pdfP = args.find((a) => !a.startsWith('--') && /\.pdf$/i.test(a));
+    const pags = String(args[iPag + 1] || '').split(',').map((x) => Number(x.trim())).filter((n) => Number.isInteger(n) && n > 0);
+    if (!pdfP || !pags.length) { console.error('Uso: node tools/mistral-ocr-transcribe.mjs "<pdf>" --pagina N[,M] [--ejecutar]'); process.exit(1); }
+    const pdfAbs = resolve(projectRoot, pdfP); const mdAbs = pdfAbs.replace(/\.pdf$/i, '.md');
+    if (!existsSync(mdAbs)) { console.error(`${pdfP}: no tiene .md; --pagina rehace páginas de una transcripción que ya existe`); process.exit(1); }
+    const md0 = readFileSync(mdAbs, 'utf8'); const marcas0 = [...md0.matchAll(/^---\s*pág\.\s*(\d+)\s*---/gim)].map((m) => Number(m[1]));
+    const faltan = pags.filter((n) => !marcas0.includes(n));
+    if (faltan.length) { console.error(`el .md no tiene la marca «--- pág. ${faltan.join(', ')} ---»`); process.exit(1); }
+    console.log(`${pdfP}: rehacer pág(s). ${pags.join(', ')} con Mistral OCR (~US$ ${(pags.length / 1000 * PRICE_PER_1000_PAGES).toFixed(3)})${args.includes('--ejecutar') ? '' : ' — ENSAYO: agregá --ejecutar'}`);
+    if (!args.includes('--ejecutar')) return;
+    const { mkdtempSync, copyFileSync, rmSync } = await import('node:fs'); const { tmpdir } = await import('node:os');
+    const tmp = mkdtempSync(join(tmpdir(), 'rehacer-pagina-')); const nuevas = new Map();
+    try {
+      for (const n of pags) {
+        const uno = join(tmp, `pag-${n}.pdf`);
+        execFileSync('qpdf', [pdfAbs, '--pages', '.', String(n), '--', uno], { stdio: 'pipe' });
+        const r = await transcribeOne(uno, apiKey, timeoutMs, '-pag');
+        if (!r.ok) { console.error(`pág. ${n}: ${r.error || 'falló'} (no se toca el .md)`); process.exit(1); }
+        const t = readFileSync(join(tmp, `pag-${n}-pag.md`), 'utf8').replace(/^---\s*pág\.\s*\d+\s*---\s*\n/m, '').trim();
+        if (!t) { console.error(`pág. ${n}: Mistral devolvió la página vacía (no se toca el .md)`); process.exit(1); }
+        nuevas.set(n, t);
+      }
+    } finally { rmSync(tmp, { recursive: true, force: true }); }
+    // reemplazo: el cuerpo entre la marca de la página y la marca siguiente (o el final), de atrás para adelante
+    const respaldo = resolve(projectRoot, derivado(mdAbs.replace(projectRoot + '/', ''), '.antes-pagina.md'));
+    mkdirSync(dirname(respaldo), { recursive: true }); if (!existsSync(respaldo)) writeFileSync(respaldo, md0, 'utf8');
+    let out = md0;
+    for (const [n, t] of [...nuevas].sort((a, b) => b[0] - a[0])) {
+      const L = out.split('\n'); const marcas = []; L.forEach((l, i) => { const m = l.match(/^---\s*pág\.\s*(\d+)\s*---/i); if (m) marcas.push({ i, pag: Number(m[1]) }); });
+      const k = marcas.findIndex((m) => m.pag === n); const hasta = k + 1 < marcas.length ? marcas[k + 1].i : L.length;
+      out = [...L.slice(0, marcas[k].i + 1), '', ...t.split('\n'), '', ...L.slice(hasta)].join('\n');
+    }
+    writeFileSync(mdAbs, out, 'utf8');
+    console.log(`Escrito ${mdAbs.replace(projectRoot + '/', '')}: pág(s). ${[...nuevas.keys()].join(', ')} rehechas. El .md anterior quedó en ${respaldo.replace(projectRoot + '/', '')}. Siguiente: node tools/validar-bloques.mjs "${pdfP}" --ejecutar --rehacer`);
     return;
   }
 

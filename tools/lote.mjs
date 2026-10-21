@@ -397,7 +397,15 @@ for (const pdf of docs) {
   const valVieja = !cargado && !REHACER && !reintento && !cacheViejo && !validacionAlDia(e.md);
   if (ubVieja) console.log(`  ${pdf}: las filas son de otra localización: se rehacen validar y extraer`);
   else if (valVieja) console.log(`  ${pdf}: la validación es de otra versión del .md: se rehace validar (no localizar ni extraer)`);
-  const V = await validar(pdf, { registro, ejecutar: API, rehacer: REHACER || !!reintento || cacheViejo || ubVieja || valVieja }); usd += (API ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
+  const rehacerVal = REHACER || !!reintento || cacheViejo || ubVieja || valVieja;
+  let V = await validar(pdf, { registro, ejecutar: API, rehacer: rehacerVal });
+  // (to-do 339, frenado de Bath) --sin-api no validaba nunca, ni siquiera un PDF digital (gratis), y el documento frenaba más adelante con «faltan las categorías». Ahora: la validación
+  // gratis corre igual (no usa API) y la que llamaría a Gemini frena AHÍ, diciendo que falta validar-bloques y cuánto cuesta.
+  if (SIN_API && EJECUTAR && V.ensayo) {
+    if (!V.usd) V = await validar(pdf, { registro, ejecutar: true, rehacer: rehacerVal });
+    else { estado[pdf] = `frena (--sin-api): falta validar-bloques (llamaría a la API, ~US$ ${Number(V.usd).toFixed(3)}): node tools/validar-bloques.mjs "${pdf}" --ejecutar`; console.log(`  ${pdf}: ${estado[pdf]}`); usd += V.usd; continue; }
+  }
+  usd += (API ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
   const X = await extraer(pdf, { registro, ejecutar: API, rehacer: REHACER || !!reintento || cacheViejo || ubVieja, reintento });
   if (X.ensayo) { frenaSinApi(pdf, 'extraer', X.usd); cotizados.add(pdf); usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
   if (X.pendiente) { estado[pdf] = 'esperando la Batch API (extraer)'; console.log(`  ${pdf}: extraer pendiente de la Batch API`); continue; }
