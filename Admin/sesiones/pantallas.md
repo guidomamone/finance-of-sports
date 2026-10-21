@@ -1,3 +1,27 @@
+# Sesión pantallas (Pantallas 7): 361, áreas de toque de 44 px fuera de Ligas
+
+## Qué cambió (para CHANGELOG)
+- Bloque «ÁREAS DE TOQUE EN EL TELÉFONO» en `css/styles.css` (hasta 700 px): los controles de Inicio, Finanzas (con club y sin club) y Mi Cuenta crecen a
+  44 px; los links en un texto o en una celda agrandan su área sin mover nada; los dos links de «Fuentes» de Finanzas (`.fin-fuentes-link`, nueva clase en
+  `js/finanzas-render.js`) ocupan los 44 de verdad porque estaban a 22 px y se pisaban. En la página de una liga, el botón de cada club también mide 44.
+  Regla en `Admin/PANTALLA.md`. ASSET_V 1713.
+- Verificado a 375 px con la prueba de `ux.md` sección 4, tal cual: vacía en Inicio, Finanzas con Juventus, Finanzas sin club, Comparar y Mi Cuenta. Además,
+  ningún link agrandado tapa a otro (el centro de cada uno toca ese link). Sin scroll horizontal. Como archivo a 1280, sin errores; en escritorio no cambia
+  nada (todo está dentro del `@media`). `node tools/audit.js`: 0 P0, 0 P1.
+- Recorrido de `referencia/ux.md`: es el punto 4; 1, 2, 3, 5 y 6 no cambian (sin navegación, URL, foco ni carga nueva; los controles siguen siendo los
+  mismos botones y links).
+
+## Qué queda (para TODO)
+- La prueba todavía marca en Ligas los dos links del párrafo de atribución de Wikipedia («2024–25 Serie A» y «CC BY-SA 4.0»): están en renglones seguidos y
+  con 44 px cada uno el segundo taparía el texto del primero. Propuesta de excepción (texto corrido, como WCAG 2.5.8) o de interlineado:
+  `Admin/propuestas/ux-excepcion-texto-corrido.md`; la decide Guido.
+- A 375 px los controles de Finanzas (presets, gestiones, segmentados) quedan un poco más altos: es el costo visible del 361.
+
+## Qué deja de ser cierto en ESTADO
+- Nada que no esté en `Admin/PANTALLA.md`.
+
+---
+
 # Sesión pantallas (Pantallas 7): 360, el ejercicio elegido a la vista en la fila de chips
 
 ## Qué cambió (para CHANGELOG)

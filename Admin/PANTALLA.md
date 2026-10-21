@@ -875,6 +875,12 @@ Texto movido sin cambios.
   un `::after` (tocar la cifra o la barra abre el club); las pastillas de ejercicio miden 44 hasta 700 px; «← Todas las ligas», «Ver el informe original»,
   «Abrir todos / Cerrar todos» y cada país de la lista, 44; el buscador de la lista ocupa su caja; el plegable «ligas sin datos» se toca entero
   (márgenes negativos, sin cambiar cómo se ve). Los links dentro de un párrafo quedan exceptuados.
+- 44 PX EN EL TELÉFONO, FUERA DE LIGAS (`css/styles.css`, bloque «ÁREAS DE TOQUE EN EL TELÉFONO», hasta 700 px): los botones y controles crecen
+  a 44 (atajos y filas de los rankings de Inicio, «Ver la liga», «Elegí un club», «Cambiar de club», «Más opciones», presets y gestiones, «+N más», los
+  segmentados, el índice de Finanzas, «Entrar con Google»; «Todos» y la × también a 44 de ancho). Los links dentro de un texto o de una celda agrandan su
+  área sin mover nada (padding y margen negativo de 15 px); dos links solos en su renglón, uno debajo del otro (`.fin-fuentes-link`), ocupan los 44 de
+  verdad, y un párrafo con más de un link queda afuera porque las áreas se pisarían (propuesta de excepción: `Admin/propuestas/ux-excepcion-texto-corrido.md`).
+  En la página de una liga el botón de cada club también mide 44 (padding y margen negativo), además del `::after` que cubre la fila.
 - LA FILA DE CHIPS DE EJERCICIO EN EL TELÉFONO (Finanzas y Comparar, `mostrarElegidosEnFila()` en `js/finanzas-calc.js`): arranca en lo más
   nuevo, salvo que así no se vea ningún ejercicio elegido; ahí arranca con el más viejo de los elegidos contra el borde izquierdo.
 - LO ABIERTO EN LA LISTA DE LIGAS: los países que el visitante abre o cierra a mano y el plegable de las ligas sin datos se guardan en memoria

@@ -21,7 +21,7 @@ En «4. Toques en el celular», el caso del área mínima. Reemplaza `*Caso:* ho
 
 ```markdown
   *Caso:* en la página de una liga, el nombre de cada club medía 17 px de alto; ahora la fila mide 44 y el botón la cubre entera. Hoy todavía quedan chicos
-  en Inicio (atajos, filas de los rankings, «Ver la liga»), Finanzas («Elegí un club») y Mi Cuenta («Entrar con Google»), y la etiqueta COVID (unos 16 px).
+  en Inicio (atajos, filas de los rankings, «Ver la liga»), Finanzas («Elegí un club») y Mi Cuenta («Entrar con Google»).
 ```
 
 En «6. Lo elegido se mantiene al volver», el caso. Reemplaza desde `*Caso:* los filtros de la lista de Ligas` hasta `cae más arriba de donde estaba.`:

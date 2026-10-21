@@ -688,10 +688,10 @@
   function linkTodasLasFuentes(){
     const tiene = Object.keys(sources).some(id => sources[id].clubId === currentClub);
     const otros = `<a href="fuentes.html">${t('fuentes.card.others', 'Ver fuentes de otros equipos')} →</a>`;
-    if(!tiene) return `<p style="margin:14px 0 0;font-size:14px;">${otros}</p>`;
-    return `<p style="margin:14px 0 0;font-size:14px;"><a href="fuentes/${currentClub}.html">${
+    if(!tiene) return `<p class="fin-fuentes-link" style="margin:14px 0 0;font-size:14px;">${otros}</p>`;
+    return `<p class="fin-fuentes-link" style="margin:14px 0 0;font-size:14px;"><a href="fuentes/${currentClub}.html">${
       t('fuentes.card.club', 'Ver todos los documentos de este club')} →</a></p>` +
-      `<p style="margin:6px 0 0;font-size:14px;">${otros}</p>`;
+      `<p class="fin-fuentes-link" style="margin:6px 0 0;font-size:14px;">${otros}</p>`;
   }
 
   function renderFuentesCard(){
