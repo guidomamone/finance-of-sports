@@ -824,7 +824,7 @@ completo está en `Admin/CONVENCIONES.md`.
   VIVOS que ya no existen, entre backticks o como link Markdown. Los históricos
   (`Admin/CHANGELOG.md`, `Admin/finance-of-sports-project.md`, `Admin/Archive/`, `auditorias/`)
   quedan afuera a propósito: una ruta vieja ahí era verdad el día que se escribió.
-- `.claude/skills/club-outreach/SKILL.md` + `Admin/outreach/` (Versión 216, to-do 51): el proceso
+- `.claude/skills/club-outreach/SKILL.md` + `Admin/outreach/` (Versión 216): el proceso
   para escribirle un mail de verdad a un club sin que cada envío pase por aprobación en el chat —
   Resend + subdominio propio en vez de Gmail. Etapa 1 en construcción, bloqueada en que Guido cree
   la cuenta de Resend y verifique el subdominio (ver el skill, sección 2). Check-in programado para

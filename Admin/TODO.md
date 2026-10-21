@@ -24,29 +24,28 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 313 y el 51 quedan para más adelante (E).
+Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 313 y el 335 (mails) quedan para más adelante (E).
 
 **A. En marcha**
 * 333: queda solo Mi Cuenta: una búsqueda guardada con un id viejo se duplica al volver a guardarla; pide una migración SQL en Supabase o que `save_search` busque también por la clave vieja (son pocas filas)
 
 **B. Pantallas y distribución**
-* 334 (para Pipeline; sesión por abrir): `suma-entidades.mjs` pone el prefijo «AS · » / «Elite · » al sumar dos entidades, para que una recarga no lo pise
-* 282: quién audita, lo que queda: 56 informes del auditor sin canal público, solo por mail al club (espera que decidas si se escribe)
-* 241 (mockup listo, espera tu ok a las 3 decisiones de `Admin/mediciones/241-plan.md`): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
+* 334 (en marcha, Pipeline 9): `suma-entidades.mjs` pone el prefijo «AS · » / «Elite · » al sumar dos entidades, para que una recarga no lo pise
+* 241 (ok de Guido; en marcha: Pipeline 9 el generador y las imágenes, después del 334 y el 270; Pantallas 6 la ruta en `js/principal.js`): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
 * 259: material de difusión (después de 241)
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
-* 332: nota lista (`Admin/sourcing/Inglaterra/informes-futbol-ingles.md`); espera tu decisión de transcribir las tablas por club del Deloitte ARFF 2026 para contrastar lo cargado
+* 332 (en marcha, Sourcing 3): transcribir con Mistral los informes del fútbol inglés y resumir de qué trata cada uno y qué otros parecidos hay, para pensar una sección de noticias o informes en Ligas (sin tocar texto del sitio)
+* 336: lo mismo que el 332 para cada liga ya cargada, y buscar estos informes cada vez que se abre una liga nueva (paso de skill, con el texto para tu ok)
 * 248: taxonomía genérica y subcategorías por deporte
-* 247 (diseño listo, espera tu ok a las 4 decisiones de `Admin/mediciones/247-plan.md`; se implementa después del 241): registro público de correcciones (sobre 245)
+* 247 (ok de Guido a las 4 recomendaciones del plan; se implementa después del 241): registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
-* 270: estimado de club nuevo: medido otra vez con 1.270 club-años; espera tu decisión sobre Estonia
+* 270 (en marcha, Pipeline 9): sacar Estonia de los estimados de Ligas hasta tener más datos (decisión de Guido); el resto queda como está
 * 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): elegir cuáles van a hook o a audit.js (Pipeline)
 * 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
 **D. Orden de la casa**
 * 330 (después del 246 y el 245, decisión de Guido): revisar todo el proyecto buscando dónde se gastan tokens en decidir o descubrir cosas que después se pierden (decisiones en el chat o en notas de sesión que no llegan a una regla, a un registro ni a una tool; hallazgos que no se leen nunca); proponer dónde tiene que quedar cada cosa
-* 326: check-in de outreach, el 2026-10-24
 * 257: skills que faltan
 * 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`); la principal la corre cuando no haya lotes corriendo en ningún worktree
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
@@ -54,7 +53,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 
 **E. Más adelante (Guido, 2026-10-20)**
 * 313: contenido para X e Instagram (después de 241; con el 259 y el 257)
-* 51: proceso de mails a clubes
+* 335: mails a clubes (une el proceso de mails, lo que quedaba de quién audita y el check-in de outreach)
 
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
@@ -90,12 +89,6 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    ~4 MB). Partir el índice y cargar el buscador aparte cuando la skill escala-finance-of-sports diga que llegó el momento.
 259. MATERIAL DE DIFUSIÓN (mejoras de proyecto, pedido de Guido 2026-10-16). Un deck para periodistas y sponsors, o un informe por liga ("las finanzas de LaLiga 2025 en 10 slides"), con
    el tipo Slides. Sin código.
-282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 1004 balances tienen línea, la tarjeta de Finanzas está (con el
-   "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 56 informes del auditor
-   que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);
-   queda Go Ahead Eagles 2025 (sin canal público: candidato a mail, sin outreach) (Lazio 2006 ya salió de Wayback; Roma 2022 queda pendiente por decisión de Guido: no hay informe del consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
-   cambian de informe (los dos están bajados). En Ligas ya está la
-   tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
    contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
    compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil), sin silenciar ni mover nada; va con el 278.
@@ -112,39 +105,6 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    entren más años de Noruega, Suiza y Países Bajos.
 278. CARPETAS DUPLICADAS EN Clubes/. Cardiff y Swansea en `Inglaterra/` y `Gales/`; `Suiza/FC St. Gallen` y `Suiza/St. Gallen`.
    `faltantes-liga` las lee juntas. Unificar sin borrar ningún PDF y chequeando antes las referencias del pipeline.
-
-51. PROCESO DE EMAIL A CLUBES — EN CONSTRUCCIÓN, ETAPA 1. El envío queda afuera de cualquier sesión
-    de chat: Resend + subdominio propio + una cola de archivos que Guido revisa, con el envío
-    disparado por Guido desde su propia terminal. Proceso completo en
-    `.claude/skills/club-outreach/SKILL.md`. Sin regla de disparo automática todavía: Guido decide
-    cuándo escribir.
-
-    **Infraestructura, estado real:** (a) ✅ cuenta en Resend creada 2026-09-24 (conectada con
-    GitHub, sigue en free por ahora); (b) ✅ subdominio `outreach.financeofsports.com` verificado
-    2026-09-24 (DNS en Netlify DNS — DKIM, SPF vía 2 CNAME, DMARC `p=none` en `_dmarc.outreach`, no
-    en la raíz); (c) `Receiving` activado (MX agregado, propagación confirmada por `dig` desde 3
-    resolvers distintos) — el dashboard de Resend tardó en reflejarlo como verificado pero la
-    infraestructura ya estaba bien; (d) ✅ API key generada y en `Admin/api-keys/outreach.env`
-    (gitignoreado), `from` = `info@outreach.financeofsports.com`.
-
-    **✅ PIPELINE PROBADO DE PUNTA A PUNTA, 2026-09-25**: mail de prueba escrito directo en
-    `Admin/outreach/aprobados/`, Guido corrió `tools/outreach-send.js` desde su terminal, llegó a su
-    Gmail, y el archivo se archivó solo en `Admin/outreach/enviados/`. La Etapa 1 está lista para
-    usarse con clubes de verdad — ver `club-outreach/SKILL.md` sección 1 para el flujo completo
-    (candidatos → redactar en `cola/` → Guido aprueba moviendo a `aprobados/` → Guido corre el
-    script).
-
-    **Check-in programado para 2026-10-24** (30 días desde que arrancó la Etapa 1): evaluar si
-    conviene prender la Etapa 2 (regla de disparo automática — 3 preguntas acumuladas O 90 días — y
-    cadencia de follow-up/cooldown, documentadas pero no activas todavía en el skill). Ver
-    `Admin/outreach/checkin-2026-10-24.md` para qué mirar exactamente. Hay una tarea programada
-    (`club-outreach-checkin`) que va a preguntarlo esa fecha, más el archivo como respaldo.
-
-    **El criterio de CUÁNDO un club amerita un mail sigue siendo el mismo, sin cambios** (to-do 52,
-    `club-sourcing/SKILL.md` sección 0.3): documento CONFIRMADO que existe pero no descargable
-    (prensa con cifras, video en vez de PDF, compartir revocado — ver Independiente/Banfield/Atlanta)
-    sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
-    regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
 313. CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
     Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -170,12 +130,10 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
     pane. Esperar a que aparezca uno en un lote; hoy no es urgente.
 321. HIGGSFIELD MCP (idea, 2026-10-19). Conector (`https://mcp.higgsfield.ai/mcp`) para generar imágenes y video corto con créditos de
     Higgsfield. Sirve para los visuales del 313 (c); verificar precio y condiciones en su sitio, las fuentes encontradas son blogs.
-322. ZAPIER MCP Y OMNIROUTE (ideas, 2026-10-19; a demanda). Zapier: solo si el flujo de mails (51) o el de publicación (313) necesitan
+322. ZAPIER MCP Y OMNIROUTE (ideas, 2026-10-19; a demanda). Zapier: solo si el flujo de mails (335) o el de publicación (313) necesitan
     automatizar "respuesta → fila" o programar posts; exponer solo las acciones necesarias. OmniRoute: gateway local de modelos con
     fallback, para abaratar la API (no Haiku, ver la regla de modelos); concentra credenciales y prompts, así que se revisa el repo
     antes. Quedan sin ubicar OpenSEO (para el SEO del 241), Book to Skill y Open Generative AI: pedir los links a Guido.
-326. CHECK-IN DE OUTREACH A LOS 30 DÍAS (2026-10-24, sacado de la skill `club-outreach`): evaluar lo que dice
-    `Admin/outreach/checkin-2026-10-24.md`; hay una tarea programada que lo pregunta, el archivo es el respaldo.
 327. CHEQUEOS QUE DEJÓ EL 255 (2026-10-20). Los 12 de la sección 4 de `Admin/Archive/consolidar-reglas-255.md`: elegir cuáles se automatizan
    (hook o audit.js) y hacerlos con el circuito de Pipeline. Nada urgente.
 330. DÓNDE SE PIERDE LO QUE SE DECIDE O SE DESCUBRE (pedido de Guido, 2026-10-20). Revisar el proyecto entero (notas de sesión,
@@ -192,3 +150,16 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    o que `save_search` busque también por la clave vieja. El parche de `js/cuenta.js` que se rechazó, en la nota de Pipeline 8.
 334. PREFIJO DE ENTIDAD EN LA SUMA (cierre de Pantallas 4, 2026-10-20). Vålerenga 2022 y 2023 llevan «AS · » y «Elite · » en cada etiqueta, puesto a mano
    en el JSON. Si `cargar.mjs` vuelve a escribir esos años, lo pisa: `combinar()` de `tools/suma-entidades.mjs` tiene que ponerlo. Ålesund usa el mismo ajuste.
+335. MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
+   un mail sin que Guido lo pida en sus palabras.
+   (a) Proceso: Etapa 1 lista y probada de punta a punta (Resend, `outreach.financeofsports.com`, cola en `Admin/outreach/`, envío desde
+   la terminal de Guido con `tools/outreach-send.js`); el flujo, en la skill `club-outreach`. Etapa 2 (disparo automático: 3 preguntas
+   acumuladas o 90 días; follow-up y cooldown) documentada, no prendida. Cuándo amerita un mail: `club-sourcing`, sección 0.3.
+   (b) Check-in a los 30 días, el 2026-10-24: `Admin/outreach/checkin-2026-10-24.md` (hay una tarea programada que lo pregunta).
+   (c) Informes del auditor que faltan: 56 que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL
+   PDF"), casi todos sin canal público; entre ellos Go Ahead Eagles 2025. Roma 2022 queda así por decisión de Guido (no hay informe del
+   consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025 cambian de informe (los dos están bajados).
+   (d) Las preguntas a cada club: `Admin/dudas-por-club.md`.
+336. INFORMES AGREGADOS POR LIGA (pedido de Guido, 2026-10-20). Como el 332 para cada liga ya cargada: buscar los informes que resumen las
+   finanzas de sus clubes (de la liga, la federación, el regulador, la UEFA, consultoras), de qué tratan y para qué sirven. Y sumar a la
+   skill que corresponda un paso para buscarlos cada vez que se abre una liga nueva (texto para el ok de Guido).
