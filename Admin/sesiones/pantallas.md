@@ -1,3 +1,13 @@
+# Sesión pantallas (Pantallas 6): marca COVID, a la espera del ok a las guías y a la etiqueta
+
+## Qué queda (para TODO)
+- La rama trae el estallido (`9eeca96600`) y NO se mergea: se reemplaza por la etiqueta de estado (artifact versión 3, `Prototyping/Covid/mockup-covid.html`) cuando Guido apruebe las guías
+  (`Admin/propuestas/marca-del-sitio.md`) y la etiqueta; después, un solo merge.
+- → regla (para `referencia/navegador-de-preview.md`, con el ok de Guido): el Chrome sin ventana (`--headless=new --window-size=375,…`) no baja de unos 500 px de layout, así que la captura a 375 px
+  sale recortada a la derecha y no sirve para juzgar el teléfono; el 375 se mira en el Browser pane con `resize_window` (preset `mobile`) sobre el sitio servido, y el `file://` se mira a 1280.
+
+---
+
 # Sesión pantallas (Pantallas 6): marca COVID implementada
 
 ## Qué cambió (para CHANGELOG)
