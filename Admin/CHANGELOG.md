@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 923 — Inicio sin conteos; archivar solo si Guido lo pide (2026-10-21) [344 · 257]
+- 344: Inicio ya no dice cuántos clubes, países y ejercicios hay ni «N clubes con balance»; el ranking con US$ queda. Ligas e Inicio probados abiertos como archivo (Chrome sin ventana: cómo, en PANTALLA.md).
+- Skill principal: una sesión que terminó queda abierta; se archiva solo si Guido lo pide (ok de Guido; la memoria se borró). El matcher de los hooks suma archivar, abrir una sesión y cambiar de modelo.
+- El candado de skills mira a qué archivo escribe un comando, no si la ruta aparece en el texto.
+
 ## Versión 922 — Chequeos de dónde se pierde lo decidido y candado de skills (2026-10-21) [257]
 - `audit.js` P3 `duda-resuelta-en-dudas`, `registro-sin-lector` y `medicion-sin-destino` (con `Admin/mediciones/README.md` como índice); `historia-en-doc-de-criterio` mira también ESTADO.md. `gasto.mjs` imprime el gasto A2 contra el techo del 15 %.
 - `tools/hooks/pre-tool.mjs`: el candado de skills (un cambio a una skill necesita su texto commiteado en `Admin/propuestas/`), y piden ok archivar una sesión, abrir una en Opus, abrir un worktree sin modo de permisos, escribir una regla en la memoria y un comando que edita. Aprobados por la Auditora 4.

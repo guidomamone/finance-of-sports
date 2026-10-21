@@ -28,22 +28,21 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 344 (Pantallas 6): sacar los conteos que quedan en Inicio y probar Ligas abierta como archivo
-2. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar; sumar 3 tools al matcher de los hooks (tu ok)
-3. 317 (Pruebas 1): revisar los 43 años sin cargar que marca `ejercicio-sin-rastro`
+1. 257 (Orden 1): los cambios a skills existentes y lo que pasa de CONVENCIONES a skills, cada texto con tu ok; llevar cada memoria a su lugar
+2. 317 (Pruebas 1): revisar los 43 años sin cargar que marca `ejercicio-sin-rastro`
 
 **C. Técnico**
-4. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
+3. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
 
 **D. Orden de la casa**
-5. 338: correr todas las auditorías del proyecto (al final de A)
-6. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
+4. 338: correr todas las auditorías del proyecto (al final de A)
+5. 258: índice partido, cuando lo que se baja siempre pase 150 KB comprimidos (hoy 46,5 KB)
 
 **E. Después de A a D (Guido, 2026-10-20)**
-7. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
-8. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
-9. 335: mails a clubes
-10. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+6. 337: las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+7. 313: contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+8. 335: mails a clubes
+9. 249: API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
@@ -107,9 +106,3 @@ el número de la izquierda es el orden de trabajo.
 338. CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
    (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
    `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
-344. LIGAS DE DISTINTOS PAÍSES Y DEPORTES EN LA PANTALLA LIGAS (Guido, 2026-10-21: «quiero un mockup»). Cómo se agrupan, filtran y ordenan
-   al crecer (país, deporte, nivel; el nivel se compara dentro de un deporte y un país) y cómo convive Informes (332). Mockup aprobado por Guido (2026-10-21): https://claude.ai/artifact/CzmEuNtdt7i2yHNrDDi2Aa y
-   `Prototyping/Ligas/mockup-344.html`. Guido: se sacan el «N de M con ejercicio» del encabezado de liga y las tarjetas de Inicio con
-   conteos y US$; quedan el ranking y «La liga en total»; los estaduales de Brasil quedan sin nivel. Hallazgo: el país GB se llama «Inglaterra» y agrupa la Premiership escocesa;
-   Guido: Escocia se separa; Gales es difícil (clubes en la pirámide inglesa y una liga propia): propuesta, el país de una liga es el de su
-   federación y el de un club, donde está, sin cambiar ids.

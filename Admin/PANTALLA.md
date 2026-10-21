@@ -217,6 +217,10 @@ en el navegador, que es como Guido lo mira a veces). Por eso `index.html` no lle
 página sale sin estilos ni scripts. Las cargas dinámicas y los links que arma el JS pasan por `fosUrl()` de `js/i18n.js`, que calcula la raíz desde la URL del
 propio script (`FOS_RAIZ`): anda servido y como archivo. Solo las páginas generadas de `club/` y `liga/` llevan `<base>`. Pasó de verdad: un `<base href="/">` arregló `/liga/<id>` y rompió
 abrir el archivo. `audit.js` lo chequea (`index-file-roto`).
+Cómo verlo como archivo: el Browser pane abre un `file://` como captura sin estilos y el navegador de Guido no se maneja, así que se usa Chrome
+sin ventana, con la ruta del worktree y una salida en el scratchpad:
+`"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --allow-file-access-from-files --window-size=1280,1600 --virtual-time-budget=8000 --screenshot=<scratchpad>/x.png "file:///…/index.html?tab=liga"`
+y se mira la imagen con Read.
 
 La cuenta a mano (verificar que `revenueLines`/`expenseLines` suman el total impreso del documento)
 es necesaria pero NO alcanza, el bug de la sección 4 no se habría encontrado sin abrir el sitio y
