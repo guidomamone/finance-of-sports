@@ -435,3 +435,33 @@ Pedido de Guido: las cargas las hace Onboarding. El lote 130 (to-do 345, documen
 
 ### Qué deja de ser cierto en ESTADO
 - Los XHTML daneses ya tienen camino de entrada (`xhtml-aarsrapport.mjs`); antes ninguna tool los leía.
+
+
+## Lote 130, 131 y 132 (2026-10-21, Onboarding 8)
+
+### Qué cambió (para CHANGELOG)
+- **Cargados (un commit cada uno):** Brøndby 2021, FC København 2025, FC Fredericia 2021-25, FC Emmen 2020-21, Chapecoense 2019, Vålerenga 2024, Girona 2022 y 2023, FC Nordsjælland 2025, Vejle 2025 y Goiás 2020.
+- **Transcripciones del lote 131** (US$ 5,93): Girona 2020-23, Goiás 2018-20, Novorizontino 2012, Fiorentina 2020 (período de 6 meses).
+- **Ligas** (`data/club-leagues/`): Girona 2021-23, Fredericia 2021-24, Emmen 2020-21, Chapecoense 2019, Vålerenga 2024 (jugó la 1. divisjon, no la Eliteserien). **Burnley 2022 y 2023 estaban al revés** (2022 Premier League, 2023 Championship): commit `b31c982c59` con trailer `Corrige:`.
+- Estadio y sponsor de esos años a mano en `tools/contexto-manual.json`, con la página de la temporada de Wikipedia como fuente.
+- **Descartados** (`documentos-descartados.txt`, decisión de la Auditora 5, perímetro excepción 3): Fredrikstad Fotballinvest AS 2019-23 y Sarpsborg Fotball Invest AS 2009-11, tenedoras de derechos de jugadores, no el club.
+- Nordsjælland 2025 y Vejle 2025: la línea de amortizaciones se partió por las notas con ajustes `fila` (Nordsjælland: 19.889.197 derechos, 2.320.184 materiales, 13.511.776 de baja de derechos en `other_amortisation`, como el residuo de su 2024).
+- Girona 2022-23: «Resultados por enajenaciones y otras» entra como línea (`player_sales` si es positivo, gasto si es negativo), no en `financial.profit_on_player_sales` como Girona 2020 y 2025 (`cargar.mjs` deja ese campo en 0).
+
+### Gasto
+Unos US$ 12,3 en total contando los US$ 3,29 de Pipeline 12: pasé el tope de US$ 12 por unos centavos en el lote 132. No gasté más.
+
+### Qué queda (para TODO)
+- **Girona 2021** (`cuentas-anuales-2020-2021.pdf`): lista para cargar salvo el sponsor de camiseta de 2020-21 (la compuerta lo frena). Wikipedia no lo trae y el kit archive da 403: hace falta el registro de búsqueda (club-sourcing 0.5) o un dato con fuente. Hay una inconsistencia de serie para revisar: Girona 2020 y 2025 llevan el resultado por enajenaciones en `financial.profit_on_player_sales`; 2021-23 lo llevan como línea.
+- **Goiás 2018 y 2019** (cola: «INSS direitos de transmissões» y «Amortização de custo de cessão de direitos») y reintento de 2018 (Otras secciones deportivas en 0); **Fiorentina 2020** (1 caso de suma); **Novorizontino 2012** y **RAAL 2020** (sin estado de resultados en la transcripción; RAAL pide re-transcribir 2 páginas). Lista: `Admin/lotes/lote-132.txt`.
+- **Omonia 2024**: es un alta (`alta-club.mjs`); falta su reintento («Televisión» en 0) y la gestión en `data/gestiones/cy.js` (quién presidió el ALS Omonoia 29 Maiou entre 2023-06-01 y 2024-05-31; el documento no lo dice). Cola de categorías ya contestada.
+- **SønderjyskE 2022-23** (transición) y **Hvidovre 2025** no se cargaron; FC København 2025 (individual) ya está. Los demás XHTML daneses no se tocaron.
+- **Fuente de los años XHTML** (`node tools/fuente.mjs --url`, pedido de la Auditora): Fredericia, København, Nordsjælland, Vejle 2025 y Brøndby 2021. No encontré la url del depósito en el repo (el `dokumentUrl` de `regnskaber.virk.dk` no está guardado); hace falta decidir qué url va.
+- **Líneas del auditor** de los años cargados: `node tools/auditoria.mjs --pendientes` (un subagente por año).
+- **caja y deuda** de los años cargados (`caja-deuda.mjs --club <id>`): no corrí el ensayo.
+- **Sarpsborg 08 2011 y Fredrikstad**: sus casos de la cola quedaron contestados como documentos descartados.
+- To-do 351 (sueldos de los clubes británicos e Instituto 2025): no empezado.
+
+### Qué deja de ser cierto en ESTADO
+- `Admin/registros/documentos-descartados.txt` tiene ocho documentos de tenedoras (Fredrikstad, Sarpsborg 08).
+- Los clubes del lote 130 tienen años nuevos (ver arriba); `Admin/ESTADO-clubes.md` se regenera con `node tools/generate-club-index.js`.

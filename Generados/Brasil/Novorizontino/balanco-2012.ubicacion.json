@@ -1,0 +1,85 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2012.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2012.md",
+ "mdSha1": "bac23525e52de6b1d73d9ef42bcea538b5e3b306",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-21T14:08:17.017Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    13,
+    19
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    33
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    145,
+    151
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    157,
+    165
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    261,
+    267
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 3,
+   "lineas": [
+    273,
+    341
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "DEMONSTRACAO DO RESULTADO DO EXERCICIO (Valores em Reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "Janeiro a Dezembro de 2012",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que la transcripción no contiene las cifras de la DRE de la pág. 1 (solo encabezados b1/b2) y que hay que cargarla mirando el PDF?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La pág. 1 se titula 'DEMONSTRACAO DO RESULTADO DO EXERCICIO' pero los bloques b1 y b2 solo traen datos de la empresa; el único dato de resultado es 'DEFICIT DO EXERCICIO (41.797,46)' en el balance (b6).",
+   "bloques": [
+    "b1",
+    "b2",
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento es de Grêmio Novorizontino, ejercicio 2012, en reales. La DRE de la pág. 1 aparece solo como título y la transcripción no trae sus renglones. Los bloques con cifras (b6) corresponden al balance patrimonial (pasivo y patrimonio líquido), que informa un déficit del ejercicio de 41.797,46. No hay columna del año anterior ni consolidado."
+}
