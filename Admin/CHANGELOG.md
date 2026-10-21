@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 899 — Cómo se aprueba una condición nueva en las tools (2026-10-20) [339]
+
+- Skill `auditoria-finance-of-sports`, sección 7: cinco preguntas (caso real, si frena lo bueno, si deja pasar lo malo, si cambia lo cargado, si se puede saltear), qué se mide y cuándo se aprueba, se aprueba con un cambio o se rechaza (ok de Guido).
+
 ## Versión 898 — Condiciones del 339 aprobadas; skill de mapeo con el esquema 2.0 (2026-10-20) [339 · 248]
 
 - Auditora 4 aprueba, cada una con un cambio, las 4 condiciones nuevas del 339: filtro de ejemplos de Jev por deporte, reglas de categoría con deporte, una tabla de ceros por deporte y deporte sin declarar resuelto por ficha y liga antes de preguntar. Veredictos en `Admin/registros/auditoria-proceso.jsonl`.
