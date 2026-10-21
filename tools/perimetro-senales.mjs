@@ -202,14 +202,16 @@ function textoControladas(md) {
   const lineas = md.split('\n');
   const idx = [];
   lineas.forEach((l, i) => { if (CONTROL_RX.test(l) && !l.trim().startsWith('|')) idx.push(i); });
-  const partes = []; let largo = 0;
+  const partes = [];
   for (const i of idx) {
     const p = lineas.slice(i, i + 4).join(' ').replace(/\s+/g, ' ').trim();
     if (!p || partes.includes(p)) continue;
-    partes.push(p); largo += p.length;
-    if (largo > 6000) break;
+    partes.push(p);
   }
-  return partes.join('\n').slice(0, 6000);
+  // A Jev van 6000 caracteres; si el documento habla más de sus controladas, se dice cuánto quedó afuera (regla de Admin/PIPELINE.md
+  // «Una tool que decide no lee solo una parte del documento»). Lo que se manda no cambia.
+  const todo = partes.join('\n');
+  return { texto: todo.slice(0, 6000), total: todo.length };
 }
 
 let jevKey = null; let jevCache = null;
@@ -489,7 +491,8 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
   const gc = crec(tc.actual, tc.anterior); const gi = crec(ti.actual, ti.anterior);
   r.c2 = { voto: gc != null && gi != null && Math.abs(gi - gc) >= UMBRAL_C2, crecConsolidado: gc, crecIndividual: gi };
   if (jev) {
-    const texto = textoControladas(md);
+    const { texto, total } = textoControladas(md);
+    if (total > texto.length) r.recorte = `Jev (c3) recibió ${texto.length} de ${total} caracteres sobre controladas; el resto no se miró`;
     // Sin texto sobre controladas no hay a quién preguntarle: el voto queda sin respuesta (cola), no cuenta como "no".
     if (!texto) r.c3 = { voto: null, motivo: 'el documento no habla de controladas' };
     else { const a = await preguntarJev(texto, deporteDePdf(mdRel.replace(/\.md$/, '.pdf'))); r.c3 = a.error ? { voto: null, error: a.error } : { voto: a.choice === 'si', choice: a.choice, confianza: a.confidence, cache: !!a.cache }; }
@@ -501,6 +504,7 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
   else if (nulos) { r.motivo = `${si} de 3 criterios y ${nulos} sin respuesta: no alcanza para decidir`; }
   else if (si === 0) { r.propuesta = 'individual'; r.motivo = '0 de 3 criterios'; }
   else { r.motivo = '1 de 3 criterios: a la cola'; }
+  if (r.recorte) r.motivo += `; AVISO (recorte): ${r.recorte}`;
   return r;
 }
 
