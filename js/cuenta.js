@@ -175,7 +175,7 @@
   function renderList(rows) {
     var listEl = document.getElementById('savedSearchesList');
     if (!rows.length) {
-      listEl.innerHTML = '<p class="subtitle" data-i18n="cuenta.searches.empty">Todavía no hay ninguna guardada — se guardan solas la próxima vez que elijas un club.</p>';
+      listEl.innerHTML = '<p class="subtitle" data-i18n="cuenta.searches.empty">Todavía no hay ninguna guardada. Se guardan solas la próxima vez que elijas un club.</p>';
       if (window.I18N) window.I18N.apply(listEl);
       return;
     }

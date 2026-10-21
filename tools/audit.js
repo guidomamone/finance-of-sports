@@ -672,6 +672,20 @@ function checkParrafoNetlifyDuplicado() {
 // decisión va a mano, con el motivo escrito, como el resto de audit-ignore.json.
 const RUTA_EN_TEXTO = /^[A-Za-z0-9_][A-Za-z0-9_./-]*\.(md|js|html|json|toml|xml)$/;
 
+// Los .md de .claude/skills/, a cualquier profundidad, con su ruta relativa a la raíz.
+function mdsDeSkills() {
+  const out = [];
+  (function walk(d) {
+    let entradas;
+    try { entradas = fs.readdirSync(path.join(ROOT, d), { withFileTypes: true }); } catch { return; }
+    for (const e of entradas) {
+      const rel = `${d}/${e.name}`;
+      if (e.isDirectory()) walk(rel); else if (e.name.endsWith('.md')) out.push(rel);
+    }
+  })('.claude/skills');
+  return out.sort();
+}
+
 function archivosVivos() {
   const hay = rel => fs.existsSync(path.join(ROOT, rel));
   const dir = (d, filtro) => {
@@ -685,7 +699,8 @@ function archivosVivos() {
     ...dir('js', js), ...dir('tools', n => js(n) || n.endsWith('.json')),
     ...dir('data', js), ...dir('data/lang', js),
     ...dir('data/club-leagues', js), ...dir('data/rankings', js),
-    ...dir('.claude/skills', () => true).map(d => `${d}/SKILL.md`),
+    // Todos los .md de las skills (to-do 327, C-10): paises/, referencia/, worktree.md… no solo cada SKILL.md.
+    ...mdsDeSkills(),
     // Admin/ menos los dos históricos. Archive/ no entra: es una subcarpeta.
     ...dir('Admin', n => n.endsWith('.md') || n.endsWith('.html'))
       .filter(f => !/CHANGELOG\.md$|finance-of-sports-project\.md$/.test(f)),
@@ -772,6 +787,102 @@ function checkRutasMuertas() {
     add('P2', 'ruta-muerta',
       `\`${ruta}\`: no existe, y lo nombran ${lista.length} archivo(s) vivo(s) (${muestra}). Si se renombró, actualizá la referencia; si se nombra para decir que NO existe, dejá una entrada en tools/audit-ignore.json con el motivo`);
   }
+}
+
+// --- HISTORIA EN LOS DOCUMENTOS DE CRITERIO (to-do 327, C-9) -----------------
+// Las skills, CLAUDE.md y los documentos de criterio dicen cómo se trabaja y qué hay HOY: sin «Versión N», sin fechas de decisión y
+// sin «to-do N» (eso va a Admin/CHANGELOG.md y Admin/TODO.md; ver CLAUDE.md, «Al empezar»). P3: es la lista de limpieza, no una alarma.
+// No mira contadores fijos («58 clubes»): el patrón da falsos positivos y no se midió su precisión.
+const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md'];
+const HISTORIA_EN_DOCS = [
+  ['version', /\bVersi[óo]n \d+/g, '«Versión N»'],
+  ['fecha', /\b20\d\d-\d\d-\d\d\b/g, 'fechas AAAA-MM-DD'],
+  ['todo', /\bto-?dos? (?:n[°º] ?)?\d{2,3}\b/gi, '«to-do N»'],
+];
+
+function checkHistoriaEnDocs() {
+  const archivos = [...DOCS_DE_CRITERIO, ...mdsDeSkills()].filter(f => fs.existsSync(path.join(ROOT, f)));
+  for (const [clave, re, nombre] of HISTORIA_EN_DOCS) {
+    const porArchivo = new Map();
+    for (const f of archivos) {
+      const n = (fs.readFileSync(path.join(ROOT, f), 'utf8').match(re) || []).length;
+      if (n) porArchivo.set(f, n);
+    }
+    if (!porArchivo.size) continue;
+    const total = [...porArchivo.values()].reduce((a, b) => a + b, 0);
+    const top = [...porArchivo].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([f, n]) => `${f} (${n})`).join(', ');
+    add('P3', 'historia-en-doc-de-criterio', `${nombre}: ${total} en ${porArchivo.size} documentos de criterio (skills, CLAUDE.md, PIPELINE, CONVENCIONES*, PANTALLA); los que más: ${top}. Esos documentos dicen qué hay HOY: la historia va a Admin/CHANGELOG.md y los pendientes a Admin/TODO.md`);
+  }
+}
+
+// --- PÁRRAFOS REPETIDOS ENTRE DOCUMENTOS VIVOS (to-do 327, C-11) -------------
+// Una regla escrita en dos lugares se desincroniza: es lo que ensució las skills antes de la consolidación del 255. Compara párrafos de
+// 200 caracteres o más (normalizados) entre CLAUDE.md, las skills y los Admin/*.md de primer nivel. Las subcarpetas de Admin/ (plantillas
+// por país o por club, instrucciones de tandas, archivo) repiten texto a propósito y quedan afuera. P3.
+const PARRAFO_MIN = 200;
+const PARRAFO_SIMILITUD = 0.8;   // de las ventanas de 6 palabras del párrafo más corto, la fracción que está en el otro
+
+function checkParrafosRepetidos() {
+  const archivos = ['CLAUDE.md', ...mdsDeSkills(),
+    ...fs.readdirSync(path.join(ROOT, 'Admin')).filter(f => f.endsWith('.md') && !/^(CHANGELOG|TODO|ESTADO-clubes)\.md$/.test(f)).sort().map(f => `Admin/${f}`)]
+    .filter(f => fs.existsSync(path.join(ROOT, f)));
+  const norm = s => s.toLowerCase().replace(/[`*_>#|-]/g, ' ').replace(/\s+/g, ' ').trim();
+  const parrafos = [];
+  for (const f of archivos) {
+    for (const p of fs.readFileSync(path.join(ROOT, f), 'utf8').split(/\n\s*\n/)) {
+      const n = norm(p);
+      if (n.length < PARRAFO_MIN) continue;
+      const w = n.split(' ');
+      const ventanas = new Set();
+      for (let i = 0; i + 6 <= w.length; i++) ventanas.add(w.slice(i, i + 6).join(' '));
+      parrafos.push({ f, n, ventanas });
+    }
+  }
+  const pares = [];
+  for (let i = 0; i < parrafos.length; i++) {
+    for (let j = i + 1; j < parrafos.length; j++) {
+      const a = parrafos[i], b = parrafos[j];
+      if (a.f === b.f) continue;
+      const [chico, grande] = a.ventanas.size <= b.ventanas.size ? [a, b] : [b, a];
+      let comunes = 0;
+      for (const v of chico.ventanas) if (grande.ventanas.has(v)) comunes++;
+      if (chico.ventanas.size && comunes / chico.ventanas.size >= PARRAFO_SIMILITUD) pares.push(`${a.f} ~ ${b.f}: «${a.n.slice(0, 60)}…»`);
+    }
+  }
+  for (const par of pares) {
+    add('P3', 'parrafo-repetido', `${par}. El mismo texto (≥${PARRAFO_MIN} caracteres) en dos documentos vivos: dejalo en uno y en el otro poné un puntero`);
+  }
+}
+
+// --- RAYA LARGA EN EL TEXTO VISIBLE (to-do 327, C-12) -------------------------
+// Regla de estilo de Admin/CONVENCIONES.md: ni un em dash (—, U+2014) en el texto que ve el visitante. Mira data/lang/, js/, las páginas
+// .html de la raíz y las generadas (club/, liga/). Sin comentarios (JS y HTML) ni <script>/<style>. Permitido: «—» como símbolo de
+// «sin dato» (solo entre comillas, solo en una celda `>—<` o como leyenda `— = …`). No mira data/<país>/*.js: ahí un «—» es el texto
+// literal de un rubro del documento (rawLabel) y no se reescribe.
+// P2 y no P3: el visitante lo lee.
+function rayasLargasVisibles() {
+  const lista = (d, ext) => { const out = []; (function walk(r) {
+    let es; try { es = fs.readdirSync(path.join(ROOT, r), { withFileTypes: true }); } catch { return; }
+    for (const e of es) { const rel = `${r}/${e.name}`; if (e.isDirectory()) walk(rel); else if (rel.endsWith(ext)) out.push(rel); }
+  })(d); return out; };
+  const archivos = [...lista('data/lang', '.js'), ...lista('js', '.js'), ...lista('club', '.html'), ...lista('liga', '.html'),
+    ...fs.readdirSync(ROOT).filter(f => f.endsWith('.html'))];
+  const SIMBOLO = /(["'`“”‘’])—\1|[“"'`]—[”"'`]|>\s*—\s*<|["'`“>]\s*—\s*=/g;
+  const hallazgos = [];
+  for (const f of archivos) {
+    const vacia = m => m.replace(/[^\n]/g, '');
+    let s = fs.readFileSync(path.join(ROOT, f), 'utf8');
+    if (f.endsWith('.html')) s = s.replace(/<!--[\s\S]*?-->/g, vacia).replace(/<script[\s\S]*?<\/script>/g, vacia).replace(/<style[\s\S]*?<\/style>/g, vacia);
+    else s = s.replace(/\/\*[\s\S]*?\*\//g, vacia).split('\n').map(l => l.replace(/(^|\s)\/\/.*$/, '$1')).join('\n');
+    s.replace(SIMBOLO, '').split('\n').forEach((l, i) => { if (l.includes('—')) hallazgos.push(`${f}:${i + 1}`); });
+  }
+  return hallazgos;
+}
+
+function checkRayaLarga() {
+  const hallazgos = rayasLargasVisibles();
+  if (!hallazgos.length) return;
+  add('P2', 'raya-larga-visible', `${hallazgos.length} línea(s) del texto visible del sitio con raya larga (—): ${hallazgos.slice(0, 8).join(', ')}${hallazgos.length > 8 ? ', …' : ''}. Regla de estilo de Admin/CONVENCIONES.md: punto, coma, dos puntos o paréntesis. Solo se permite «—» entre comillas como símbolo de «sin dato»`);
 }
 
 // --- D19: TODO LO GENERADO, AL DÍA (Versión 183) ---------------------------
@@ -1586,6 +1697,9 @@ function main() {
   checkComentariosPublicados();
   checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
+  checkHistoriaEnDocs();
+  checkParrafosRepetidos();
+  checkRayaLarga();
   checkHigiene(api);
   checkGestiones(api);
   checkDatosJson();

@@ -44,3 +44,19 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - Cambió de lo que dice el plan: la descripción y la tabla hablan de ingresos y resultado neto (no de gastos: `expenses` del motor es solo el gasto operativo y no cierra con el resultado). El título de liga dice «N clubes» (no sugiere la liga entera). Peso: cada ASSET_V que sube reescribe las 371 páginas (~22 MB), como ya pasa con fuentes/.
 - Texto propuesto para la skill de arranque (sección 5, necesita el ok de Guido): sumar `generate-club-pages` a la lista de generadores de `cargar`/`alta-club`/`lote --cargar` y decir que subir ASSET_V obliga a regenerar `club/` y `liga/` (hoy ya lo hace `publicarCambios`).
 - Pantallas 6 (paso 2): `js/principal.js` lee `FOS_RUTA` y escribe `/club/<id>`; ver `Admin/mediciones/241-plan.md`. Después de que entre, el TODO 241 pide el paso 4 (depurador de Facebook, resultados enriquecidos) con la URL pública.
+
+## 327 (Pipeline 10): chequeos que dejó el 255
+
+Tabla de los 12 con lo medido: `pipeline-327-paso1.md` en la carpeta de notas compartidas. Ya existían C-7 (`push-con-ok`) y C-8 (`skills-con-ok`, es un hook).
+
+Hecho (audit.js, un commit por chequeo; funciones nuevas junto a `checkRutasMuertas`, llamadas en `main()` justo después de `checkRutasMuertas()`):
+- C-10: `ruta-muerta` mira todos los `.md` de `.claude/skills/` (`mdsDeSkills()`), no solo cada `SKILL.md`. Hallazgos nuevos: 0.
+- C-9: P3 `historia-en-doc-de-criterio`: «Versión N», fechas AAAA-MM-DD y «to-do N» en skills, `CLAUDE.md` y PIPELINE/CONVENCIONES*/PANTALLA. Hoy 3 hallazgos (191 Versión, 99 fechas, 177 to-do). Sin contadores fijos (no medidos).
+- C-11: P3 `parrafo-repetido` entre `CLAUDE.md`, skills y `Admin/*.md` de primer nivel (≥200 caracteres, 80% de ventanas de 6 palabras). Hoy: 1 par (ARQUITECTURA ~ PANTALLA, los colores de marca). Cuesta ~0,6 s.
+- C-12: P2 `raya-larga-visible` en `data/lang`, `js/`, html de la raíz, `club/` y `liga/`; permite «—» entre comillas, en `>—<` y como leyenda `— =`. No mira `data/<país>/*.js` (rawLabel literal de los documentos). Daba 13 líneas; arregladas (terminos, privacidad, metodologia, `js/liga.js`, `js/cuenta.js`, `data/lang/en.js`). ASSET_V 1534 -> 1535, fuentes, `club/` y `liga/` regeneradas.
+
+Al mergear: si Pantallas 7 también subió ASSET_V, queda un conflicto trivial en `index.html` y en las páginas generadas: tomar el mayor +1 y correr `generate-fuentes-page.js` y `generate-club-pages.js`.
+
+Pendiente (espera el ok de Guido, tocan permisos): hook C-1 a C-6 en `tools/hooks/pre-tool.mjs` y `Agent|EnterPlanMode` en el matcher de `.claude/settings.json`. Si Guido no los aprueba, el 327 se puede borrar de TODO con C-1 a C-6 como punto nuevo.
+
+Deja de ser cierto: nada en ESTADO. Cambia el conteo de P3 de `audit.js` (+4).

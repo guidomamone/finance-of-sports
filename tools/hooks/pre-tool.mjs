@@ -18,6 +18,8 @@
 //   pdfs-con-ok              borrar en Clubes/ (rm, unlink, trash, find -delete) o un `git clean` con -x/-X le pide permiso a Guido: los PDF
 //                            no se trackean y no hay copia de dónde recuperarlos; antes hay que chequear las referencias del pipeline.
 //
+//   comandos-simples        (deny) un Bash con /tmp suelto, `cd … &&`, o `$(…)`/`${…}`/`$VAR` fuera de comillas simples: no se puede chequear antes de
+//                            correr y pide permiso cada vez (to-do 327, C-1). Pasan el scratchpad de la sesión y el heredoc de `git commit`.
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
 import { execFileSync } from 'node:child_process';
@@ -99,7 +101,29 @@ function pdfsConOk(cmd) {
   }
 }
 
+// Comandos que no se pueden chequear antes de correr y le piden permiso a Guido cada vez (to-do 327, C-1). Se mira el comando sin los
+// textos que el shell no expande: los heredoc con delimitador entre comillas y lo que va entre comillas simples. El heredoc de
+// `git commit -m "$(cat <<'EOF' … EOF\n)"` es la forma estándar de mensaje largo y pasa.
+function comandosSimples(cmd) {
+  const sinHeredocDeCommit = cmd.replace(/\$\(\s*cat\s+<<-?\s*['"]?(\w+)['"]?[\s\S]*?\n\s*\1\s*\n?\s*\)/g, '');
+  // El mensaje de un commit es texto, no una ruta: puede nombrar /tmp o $(…) sin que el comando los use.
+  const sinMensaje = GIT_SUB('commit').test(cmd) ? sinHeredocDeCommit.replace(/(?:-m|--message)\s+"(?:[^"\\]|\\.)*"/g, '-m ""') : sinHeredocDeCommit;
+  const sinTextos = sinMensaje
+    .replace(/<<-?\s*(['"])(\w+)\1[\s\S]*?\n\s*\2\b/g, '')
+    .replace(/'[^']*'/g, "''");
+  // El scratchpad de la sesión vive en /private/tmp/claude-501/: es la carpeta que el sistema indica, no un /tmp suelto.
+  const tmpSuelto = sinTextos.replace(/\/private\/tmp\/claude-501\//g, '').match(/(^|[\s"'=:(<>])\/(?:private\/)?tmp(?:\/|\b)/);
+  if (tmpSuelto) decidir('deny', 'Nada de /tmp: usá la carpeta de scratchpad de la sesión (la que da el sistema) o una ruta del proyecto. /tmp pide permiso cada vez.');
+  if (/(^|\n|&&|;|\|)\s*cd\s+\S+\s*(&&|;)/.test(sinTextos)) {
+    decidir('deny', 'Nada de `cd … &&` ni `cd …;`: el comando con cd no se puede chequear y pide permiso. Escribí la ruta completa en el comando; git y node se corren directo desde la carpeta de la sesión.');
+  }
+  if (/\$\(|\$\{|\$[A-Za-z_]/.test(sinTextos)) {
+    decidir('deny', 'Nada de `$(…)`, `${…}` ni `$VARIABLE` en un comando: una ruta que se resuelve al correr pide permiso cada vez. Escribí la ruta o el valor entero; para encadenar dos pasos, un pipe o dos llamadas. (Pasa el heredoc de `git commit -m "$(cat <<\'EOF\' … EOF)"`.)');
+  }
+}
+
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
+if (herramienta === 'Bash') comandosSimples(cmd);
 skillsConOk(cmd);
 pushConOk(cmd);
 docsDeLaPrincipal(cmd);
