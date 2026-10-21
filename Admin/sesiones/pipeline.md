@@ -116,3 +116,9 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
   - 321 Higgsfield MCP: no conectar (`321-higgsfield-mcp.md`). Pide suscripción paga (Starter 15 US$ por mes), todo gasta créditos y no hay tope nativo. Los precios salen del blog del sitio (la página de precios no se pudo leer): Guido los confirma en vivo. Una tarjeta de un dato sale mejor de los propios datos.
   - 322 Zapier MCP y OmniRoute: no instalar (`322-zapier-omniroute.md`). Zapier gasta 2 tareas por llamada (gratis: 100 tareas por mes) y el 335 no lo necesita. OmniRoute concentra claves y prompts, trae interceptación de tráfico y empuja a modelos que el proyecto no usa; el ahorro ya lo dan la API de lotes y Opus a Sonnet. Faltan los links de OpenSEO, Book to Skill y Open Generative AI: pedírselos a Guido.
   - Para la principal: las tres líneas del 320, 321 y 322 del TODO pasan a «medido, no se hace» (o se borran), con el motivo de arriba.
+
+## Pipeline 13: `linea-duplicada` (aprobado por la Auditora 4, `auditoria-proceso.jsonl`)
+
+- `tools/audit.js` (`checkLineas`): `linea-duplicada` queda solo con el MISMO monto (P1, probable copia pegada); se sacó la rama P3 «con montos distintos», un falso positivo (el mismo rótulo en dos notas o tramos).
+- Medido con `audit.js --json` antes y después: `linea-duplicada` 927 (todos P3) → 0; el resto de `findings` y `silenciados` idéntico.
+- Pendiente de esperar: el consolidado PSE de FC København 2025 (lector danés ya hecho por Pipeline 12), cuando la principal avise el merge de onboarding.
