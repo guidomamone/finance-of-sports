@@ -356,3 +356,21 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: chequeos propuestos del 330 y del 257 (Orden 1), 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Trece líneas más en `Admin/registros/auditoria-proceso.jsonl`, una por chequeo de `Admin/propuestas/330-donde-se-pierde.md` y `257-skills.md` (partes 4 y 5). APROBADOS: `duda-resuelta-en-dudas`, `registro-sin-lector`, `doc-de-criterio-con-historia`, `gasto.mjs` con el 15 % de A2, `archivar-con-ok`, `modelo-opus-con-ok`. APROBADOS CON UN CAMBIO: `memoria-no-es-regla` (ask, no deny), `medicion-sin-destino` (cuenta lo que una tool nombra), `worktree-sin-permission-mode` (ask), `comandos-simples` ampliado (solo ask). APROBADO CON TRES CAMBIOS: el candado `skills-con-ok`. RECHAZADOS: `mergear` que frena sin flecha (queda como aviso) y `adelantar` (la tool no tiene ese paso). Sin codear.
+
+### Qué queda (para TODO / 330 y 257)
+
+- `skills-con-ok`: coincidencia contigua, git exento de la regla de Bash y una medición con los últimos cambios a `.claude/skills` antes de instalarlo.
+- `medicion-sin-destino`: hoy 35 de 51 archivos de `Admin/mediciones/` sin citar; el commit que lo agregue tiene que resolverlos o dejarlos listados.
+- `worktree.mjs mergear`: primero el texto de `worktree.md` con el ok de Guido, después un aviso (no freno) por los puntos de «Qué queda» sin flecha.
+- `adelantar`: Pipeline dice qué paso hace hoy el avance de la rama y se vuelve a proponer sobre ese archivo.
+- Los matchers de `.claude/settings.json` (`archivar-con-ok`, `modelo-opus-con-ok`, `worktree-sin-permission-mode`, `comandos-simples`) los agrega la principal; la sesión que los codee no edita ese archivo por su cuenta.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
