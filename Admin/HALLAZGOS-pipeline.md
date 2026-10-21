@@ -142,6 +142,13 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **Brøndby 2025: `ProfitLoss` ambiguo en el XHTML (Pipeline 14, 2026-10-21): es un error de etiquetado del informe, no del perímetro.** Una sola
+  entidad (LEI 213800DAZ89VABJPBD93). El estado de resultados está bien: «Årets resultat −130.578 | −104.164», con −130.578 en el contexto
+  2024-07-01..2025-06-30 y −104.164 en 2023-01-01..2024-06-30 (18 meses). El estado de cambios en el patrimonio etiqueta las dos filas «Årets
+  resultat» con los períodos cruzados: la que sigue a «Egenkapital 1. januar 2023» (−104.164) lleva el período 2024/25 y la que sigue a
+  «Egenkapital 1. juli 2024» (−130.578), el 2023/24. El resultado 2024/25 es −130,578 M DKK. `ixbrl-resultado.mjs` ve dos valores sin ejes
+  para el mismo período y no compara (lo dice): correcto. Un desempate (preferir el hecho del estado de resultados, o descartar el que coincide
+  con un hecho del eje `ComponentsOfEquityAxis`) no se codea por un caso. Retomar si otro XHTML da dos `ProfitLoss` sin ejes para un período.
 - **Deuda belga por códigos NBB (to-do 310 parte 2, 2026-10-19): medido, no se hace (Guido).** Union SG 2025: 170/4 = 3,154 M y 42 = 0, pero
   lo cargado es 31,66 M porque incluye los "otros débitos" (178/9 y 47/48), que son catch-alls con préstamos de socios y partidas que no son
   deuda financiera. Una regla por códigos daría 7,62 M, por debajo de lo cargado. La deuda belga sigue por la lectura del documento (IA o ajuste

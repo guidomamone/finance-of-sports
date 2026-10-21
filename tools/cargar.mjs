@@ -505,7 +505,9 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       ...VV.lineas.map((l) => ({ label: l.etiqueta, page: l.pagina, section: l.origen, native: Math.abs(l.M), signoFijo: l.M, tside: l.lado === 'ingreso' ? 'revenue' : 'expense', origen: `verificacion (${l.origen})`, ...(l.categoria ? { catAjuste: l.categoria } : {}) })),
       // (to-do 298 ah, Guido 2026-10-19) la cobertura de pérdidas del holding no es interés neto: va como una ganancia dentro de los gastos, categoría exceptional_items (fuera del total de gastos
       // que se compara con el impreso, dentro del resultado), igual que la venta del 20% de Goiás 2023. signoFijo negativo = reduce el gasto.
-      ...VV.financiero.filter((l) => !COBERTURA_PERDIDAS_RE.test(String(l.etiqueta || ''))).map((l) => ({ label: l.etiqueta, page: null, section: 'financiero', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'netInterest' })),
+      // (Auditora 5, Girona 2021-23) un ajuste `fila` del lado financiero con destino profit_on_player_sales («Resultados por enajenaciones», rubro 13 del PGC
+      // español) va a profitOnPlayerSales: cuenta en el resultado como el financiero, pero no es interés neto ni una línea de ingreso o de gasto.
+      ...VV.financiero.filter((l) => !COBERTURA_PERDIDAS_RE.test(String(l.etiqueta || ''))).map((l) => ({ label: l.etiqueta, page: null, section: 'financiero', native: l.M, tside: null, origen: 'verificacion', destinoForzado: l.destino === 'profit_on_player_sales' ? 'profitOnPlayerSales' : 'netInterest' })),
       ...VV.financiero.filter((l) => COBERTURA_PERDIDAS_RE.test(String(l.etiqueta || ''))).map((l) => ({ label: l.etiqueta, page: null, section: 'financiero', native: Math.abs(l.M), signoFijo: -l.M, tside: 'expense', origen: 'verificacion (cobertura de pérdidas)', catAjuste: 'exceptional_items' })),
       ...VV.impuesto.map((l) => ({ label: l.etiqueta, page: null, section: 'impuesto', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'tax' })),
     ];
@@ -945,6 +947,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const gastosConSigno = expDoc;
   P.signos = { porTabla: Object.fromEntries([...conSigno].map(([k, v]) => [k, v ? 'gastos con signo' : 'gastos sin signo (se invierten)'])) };
   const metaFilas = filas.filter((f) => f.destino === 'netInterest' || f.destino === 'tax');
+  const ventaJugadoresFilas = filas.filter((f) => f.destino === 'profitOnPlayerSales'); // ajuste `fila` con destino profit_on_player_sales (Auditora 5)
   // DOS LECTURAS DE SIGNO PARA LOS GASTOS, y la que haga cerrar el resultado impreso gana (si ninguna cierra, se queda la primera y frena):
   //   'por tabla'          la mayoría de las filas de gasto de cada tabla decide si esa tabla imprime los gastos con signo;
   //   'todos negativos'    -|x| para todo gasto. Existe por los estados que MEZCLAN presentaciones en la misma tabla (PSV 2020: "Kostprijs
@@ -991,11 +994,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       const expTodoG = exp.filter((f) => f.origen !== 'redondeo').reduce((a, f) => a + G.v(f), 0);
       const ni = metaFilas.filter((f) => f.destino === 'netInterest').reduce((a, f) => a + L.v(f), 0);
       const tx = metaFilas.filter((f) => f.destino === 'tax').reduce((a, f) => a + L.v(f), 0);
-      const pat = revSum + expTodoG + ni + tx + extra;
-      if (!meta) meta = { netInterest: r6(ni), tax: r6(tx), pat: r6(pat) };
+      const ps = ventaJugadoresFilas.reduce((a, f) => a + f.native, 0); // tal cual impreso, con su signo (+8,50 / −0,297)
+      const pat = revSum + expTodoG + ni + tx + ps + extra;
+      if (!meta) meta = { netInterest: r6(ni), tax: r6(tx), profitOnPlayerSales: r6(ps), pat: r6(pat) };
       for (const x of patImpresos) {
         const impreso = Math.abs(x.M - pat) < TOL ? x.M : (PERDIDA_RE.test(norm(x.label)) && x.M > 0 && Math.abs(-x.M - pat) < TOL) ? -x.M : null;
-        if (impreso !== null) { meta = { netInterest: r6(ni), tax: r6(tx), pat: r6(pat) }; cierraPat = { lectura: `${G.nombre}; ${L.nombre}`, impreso: x, valor: impreso, L }; lecturaGasto = G; break busqueda; }
+        if (impreso !== null) { meta = { netInterest: r6(ni), tax: r6(tx), profitOnPlayerSales: r6(ps), pat: r6(pat) }; cierraPat = { lectura: `${G.nombre}; ${L.nombre}`, impreso: x, valor: impreso, L }; lecturaGasto = G; break busqueda; }
       }
     }
     return { meta, cierraPat, lecturaGasto };
@@ -1020,9 +1024,9 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   const expSinExc = exp.filter((f) => f.cat !== 'exceptional_items').reduce((a, f) => a + f.amountNative, 0);
   const expTodo = exp.reduce((a, f) => a + f.amountNative, 0);
   const T = { revSum: r6(revSum), expSum: r6(expSinExc), officialTotalRevenue: null, officialTotalExpenses: null, officialPAT: null, verificacion: {} };
-  if (!meta) meta = { netInterest: 0, tax: 0 };
+  if (!meta) meta = { netInterest: 0, tax: 0, profitOnPlayerSales: 0 };
   if (cierraPat) { T.officialPAT = r6(cierraPat.valor); T.patImpreso = { label: cierraPat.impreso.label, pag: cierraPat.impreso.page, M: cierraPat.impreso.M, signos: cierraPat.lectura }; T.verificacion.pat = 'impreso'; }
-  else if (patImpresos.length && rev.length) frena('tie-out-resultado', `resultado: ingresos ${r6(revSum)} + gastos ${r6(expTodo)} + netInterest ${meta.netInterest} + tax ${meta.tax} = ${r6(revSum + expTodo + meta.netInterest + meta.tax)} no coincide con ningún resultado impreso (${patImpresos.slice(0, 4).map((x) => `"${String(x.label).slice(0, 40)}" ${x.M}`).join('; ')})`);
+  else if (patImpresos.length && rev.length) frena('tie-out-resultado', `resultado: ingresos ${r6(revSum)} + gastos ${r6(expTodo)} + netInterest ${meta.netInterest} + tax ${meta.tax}${meta.profitOnPlayerSales ? ` + profitOnPlayerSales ${meta.profitOnPlayerSales}` : ''} = ${r6(revSum + expTodo + meta.netInterest + meta.tax + (meta.profitOnPlayerSales || 0))} no coincide con ningún resultado impreso (${patImpresos.slice(0, 4).map((x) => `"${String(x.label).slice(0, 40)}" ${x.M}`).join('; ')})`);
   else P.avisos.push('no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)');
   // 6b. total de ingresos y de gastos: un total IMPRESO igual a la suma de las líneas; si el documento no lo imprime pero el resultado cerró,
   // se usa la suma de las líneas y se marca `por-resultado` (verificado por el resultado, no por un total propio).
@@ -1137,7 +1141,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     clubId, year, cierre: alta.ejercicio.cierre, perimetro,
     revenueLines: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf, _fuenteCat: f.fuenteCat || null })),
     expenseLines: exp.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative, disclosureLevel: disclosure(f), _pag: f.page, _escalon: f.escalon, _conf: f.conf, _fuenteCat: f.fuenteCat || null })),
-    fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(Object.keys(incluidoEn).length ? { incluidoEn } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
+    fiscalYearMeta: { ...m, sourceId, reportType: campo('reportType').valor || 'official_balance_sheet', gestionId: null, profitOnPlayerSales: meta.profitOnPlayerSales || 0, assetSales: 0, netInterest: meta.netInterest, tax: meta.tax, ...(extraRows ? { extraRows } : {}), ...(Object.keys(incluidoEn).length ? { incluidoEn } : {}), ...(sinDesglose.length ? { sinDesglose } : {}), grossDebt: null, cash: null, officialTotalRevenue: T.officialTotalRevenue, officialTotalExpenses: T.officialTotalExpenses, officialPAT: T.officialPAT },
     source: sourceId ? { id: sourceId, clubId, title: `${club.name || club.displayName} — ${basename(pdf, '.pdf')} (ejercicio ${year})`, type: campo('reportType').valor || 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/cargar.mjs (${HOY}) desde la transcripción ${e.md}; categorías del pipeline (${cj.modelo || 'Jev/Claude'}). Perímetro: ${perimetro || '?'}.` } : null,
   };
   // PRESIDENTES (Versión 552, to-do 149, decisión de Guido el 2026-10-05: "cuando se hace el alta se pregunta si hay socios, consolidado,
@@ -1347,7 +1351,7 @@ export function escribir(P) {
       ...(P.transicion && P.transicion.meses < 12 ? { periodMonths: P.transicion.meses } : {}),
       currency: M.currency, ...(M.fxRef ? { fxRef: M.fxRef } : M.fx != null ? { fx: r6(M.fx), fxSource: M.fxSource } : {}),
       sourceId: M.sourceId, reportType: M.reportType, gestionId: M.gestionId != null ? M.gestionId : null,
-      profitOnPlayerSales: 0, assetSales: 0, netInterest: r6(M.netInterest ?? null), tax: r6(M.tax ?? null),
+      profitOnPlayerSales: r6(M.profitOnPlayerSales || 0), assetSales: 0, netInterest: r6(M.netInterest ?? null), tax: r6(M.tax ?? null),
       ...(M.extraRows ? { extraRows: M.extraRows.map((x) => ({ label: x.label, value: r6(x.value ?? null) })) } : {}),
       ...(M.incluidoEn ? { incluidoEn: M.incluidoEn } : {}),
       ...(M.sinDesglose ? { sinDesglose: M.sinDesglose.map((x) => ({ renglon: x.renglon, lado: x.lado, importe: r6(x.importe), motivo: x.motivo })) } : {}),
