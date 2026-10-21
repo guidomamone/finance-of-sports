@@ -32,3 +32,5 @@ CVR 31 58 81 11 confirmado tanto en el PDF 2017/18 (`pdffonts` expone el texto e
 Ninguna.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2024 desde `Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.pdf` (sourceId `sonderjyske-dk-aarsrapport-2024-09-30`).

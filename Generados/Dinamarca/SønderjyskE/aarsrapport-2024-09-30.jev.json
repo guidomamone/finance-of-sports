@@ -1,0 +1,191 @@
+{
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.md",
+ "generatedAt": "2026-10-21T12:51:42.965Z",
+ "rubrosHuella": "4a9786d588d9c7040fbc536e4b2e557d0ae1b27e",
+ "rubros": [
+  {
+   "label": "Bruttofortjeneste/Bruttotab",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "Kontraktsrettigheder",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "player_amortisation",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "player_amortisation",
+     0.63
+    ],
+    [
+     "other_amortisation",
+     0.18000000000000002
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Løn og gager",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "wages_squad",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Indretning lejede lokaler",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "depreciation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "depreciation",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1231
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1128
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Andre anlæg, driftsmateriel og inventar",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Af- og nedskrivninger af materielle og immaterielle anlægsaktiver\"",
+   "choice": "depreciation",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "depreciation",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1164
+  },
+  {
+   "label": "Pensionsbidrag",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "choice": "wages_squad",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 999
+  }
+ ]
+}

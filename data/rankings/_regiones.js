@@ -22,7 +22,7 @@ window.RANKINGS_INDICE = {
   "de-2bundesliga": [2025,2,18],
   "de-bundesliga": [2024,10,18],
   "dk-1division": [2020,1,12],
-  "dk-superliga": [2024,5,12],
+  "dk-superliga": [2024,6,12],
   "ee-esiliiga": [2024,1,10],
   "ee-meistriliiga": [2025,9,10],
   "es-laliga": [2025,14,20],
