@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 932 — 345 cerrado, reglas para no trabarse, UX y COVID en pantalla (2026-10-21) [345 · 352 · 356 · 358 · 359 · 360 · girona-es, genoa-it, fiorentina-it, omonia29maiou-cy]
+- Datos: Girona 2021-23 recargado (resultado por venta de jugadores en su campo), Fiorentina 2020 y Genoa 2024 cargados y Atalanta 2022 recargado como tramos de transición, alta de Omonia 29 Maiou (Chipre, ligas nuevas), líneas del auditor y urls danesas del 359, 26 temporadas con segunda fuente RSSSF (358); Fleetwood (Jaymel) descartado.
+- Reglas: COVID y tramo corto (CONVENCIONES-DATOS), dos fuentes por liga, id de club nuevo por alta-club.mjs, registro de rarezas del documento, una tool que decide no lee solo una parte, lote de un solo tipo, «Terminado cuando:» en el TODO, lo que entra sin esperar a la Auditora, worktree trae main con --ff-only, eje ux en la auditoría.
+- Tools: tramo corto y `period_months`, ventana COVID, freno del iXBRL en el individual (352), chequeos `archivo-no-es-lo-que-dice`, `liga-una-fuente`, `referencia-a-club-inexistente`, `segunda-fuente-liga.mjs`, `rarezas.mjs`, mergear regenera sponsors.js; hook `pdfs-con-ok` corrige a la sesión en vez de preguntarle a Guido.
+- Pantalla: marca COVID (etiqueta) en Finanzas, Comparar, Ligas y el selector; scroll y foco al cambiar de vista, 404 de club-leagues, toques de 44 px en Ligas, países abiertos al volver; guías de marca y de UX en la skill de pantallas.
+
 ## Versión 931 — Lo estructurado no se paga con IA, parches contra mejoras generales y el resto del 257 (2026-10-21) [257 · 345 · 350 · 353 · 356 · 357 · brondby-dk]
 - Skills: sección 8 de auditoría (mejora general o parche, con su umbral de 3 documentos de 2 clubes) y su referencia en onboarding 3b; «lo estructurado no se paga con IA» en onboarding y auditoría (sección 4) y en CONVENCIONES; club-sourcing: un archivo bajado se mira con `file` (caso Brøndby 2025, que venía en gzip) y su troubleshooting en PIPELINE.md.
 - 257 partes 7 y cabos sueltos: verificar una pantalla y «Cómo verlo como archivo» pasan a `producto-y-pantalla/referencia/navegador-de-preview.md`; los pasos de worktree (con `data/sponsors.js` entre los generados) a `worktree.md`; cerrar un punto del TODO a la skill principal; HALLAZGOS de los descartes 314 y 298.
