@@ -525,3 +525,19 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 5: quinta corrida de «un código por corrida»: `outlier-liga`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl` con `codigo_tratado: outlier-liga`, antes 21 (P2) y después 6 (P3): el chequeo compara la mediana del país, que mezcla primera con tercera división, y no detecta escalas. Nueve casos mirados contra los JSON (Benfica, Flamengo, Brugge, Gent, Almagro, Felgueiras, Novorizontino, Académica, Alverca): la suma de ingresos es igual al total oficial y el monto es el de la división; ninguno es un error de escala. De los 21, 15 tienen un año vecino del mismo club dentro de 20 veces.
+
+### Qué queda (para TODO / una sesión Pipeline)
+
+- `tools/audit.js` (cerca de la línea 487, el bloque «Comparación entre pares de la misma liga»): no marcar si el club tiene otro ejercicio a dos años o menos dentro de 20 veces (el mismo criterio de `escala-implausible`) y pasar el aviso de P2 a P3 con el comentario de por qué. Mide: `outlier-liga` antes P2 21, después P2 0 y P3 6 (anderlecht, antwerp, clubbrugge, genk, gent 2025 y novorizontino 2010, todos reales), con el resto de la salida idéntico. No toca datos.
+- Mejora opcional: comparar con la mediana de la liga y no del país.
+- Próxima corrida: los 14 de `signo-invertido` sin mirar, y después `gestion-club-inexistente` (P3, 26).
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
