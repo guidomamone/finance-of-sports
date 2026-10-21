@@ -30,15 +30,15 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * Lo que está en marcha va marcado en B y C.
 
 **B. Pantallas y distribución**
-* 241 (ok de Guido; la ruta en `js/principal.js` ya está; en marcha: Pipeline 9 el generador, el rewrite y las imágenes, después del 270): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
+* 337 (en marcha, Onboarding 7): completar las 5 grandes ligas, Brasil y Argentina, transcribiendo con Mistral (ok de Guido); primero medir qué falta y el presupuesto
+* 241 (ok de Guido; la ruta en `js/principal.js` ya está; en marcha: Pipeline 9 el generador, el rewrite y las imágenes): link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
-* 332: resumen listo (`Admin/sourcing/Inglaterra/informes-futbol-ingles.md`, sección 4 con la idea de una sección «Informes» en Ligas); espera que decidas si se hace y si es lista de informes o noticias
+* 332 (ok de Guido; después del 241, Pantallas 6): sección «Informes» en Ligas, como lista de informes (sección 4 de `Admin/sourcing/Inglaterra/informes-futbol-ingles.md`)
 * 336: lo mismo que el 332 para cada liga ya cargada, y buscar estos informes cada vez que se abre una liga nueva (paso de skill, con el texto para tu ok)
 * 248: taxonomía genérica y subcategorías por deporte
 * 247 (ok de Guido a las 4 recomendaciones del plan; se implementa después del 241): registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
-* 270 (en marcha, Pipeline 9): sacar Estonia de los estimados de Ligas hasta tener más datos (decisión de Guido); el resto queda como está
 * 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): elegir cuáles van a hook o a audit.js (Pipeline)
 * 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 
@@ -50,7 +50,6 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 **E. Más adelante (Guido, 2026-10-20)**
-* 337: antes de difundir, las 5 grandes ligas, Brasil y Argentina bien cargadas (medir qué falta y definir el umbral)
 * 313: contenido y difusión: X, Instagram y el material para periodistas y sponsors (después del 337 y el 241; con el 257)
 * 335: mails a clubes (une el proceso de mails, lo que quedaba de quién audita y el check-in de outreach)
 
@@ -91,15 +90,6 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
    compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil), sin silenciar ni mover nada; va con el 278.
    Un `.md` sin PDF no es error (Ajax, PSV, Feyenoord y AZ 2023-25 son la fuente publicada de lo cargado).
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
-270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
-   Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
-   posición en la tabla). Medido otra vez el 2026-10-19 con 1.011 club-años (`node tools/estimar.mjs --medir --detalle`): sigue en 50%,
-   pero va de 33% (Italia, Chile, Bélgica) a 95-97% (Estonia, Países Bajos). La causa es una sola recta global que sobreestima las ligas
-   chicas y subestima las grandes. "Partidos contra clubes con finanzas" no mejora nada (51% contra 50%). A decidir con Guido (detalle en
-   `Admin/Archive/sesion-finanzas-4-2026-10-19-e.md`; Guido, 2026-10-19: el modelo queda como está). Las opciones medidas: (1) efecto de país o liga en la regresión, medido dejando afuera el país entero;
-   (2) atajo: la mediana de la liga donde le gana al modelo (50% a 46%, optimista); (3) sacar Estonia y Países Bajos de los estimados de
-   Ligas hasta tener más datos; (4) el texto del 50% en pantalla: "entre un tercio y el doble, según la liga". Volver a medir cuando
-   entren más años de Noruega, Suiza y Países Bajos.
 278. CARPETAS DUPLICADAS EN Clubes/. Cardiff y Swansea en `Inglaterra/` y `Gales/`; `Suiza/FC St. Gallen` y `Suiza/St. Gallen`.
    `faltantes-liga` las lee juntas. Unificar sin borrar ningún PDF y chequeando antes las referencias del pipeline.
 
@@ -160,4 +150,4 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 337. ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
    Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
    (clubes y años, con `tools/faltantes-liga.mjs` y `Admin/ESTADO-clubes.md`) y proponerle a Guido el umbral de «bien cargada». Ojo: completar
-   pide transcribir PDFs nuevos, que hoy están frenados; la excepción la decide Guido.
+   se transcribe con Mistral (Guido, 2026-10-20: excepción a la regla de no transcribir, solo para estas ligas).

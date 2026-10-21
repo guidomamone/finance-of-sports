@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 884 — Estonia sin estimados; grandes ligas con Mistral (2026-10-20) [270 · 337 · 332]
+
+- 270: `PAISES_SIN_ESTIMAR` en `tools/estimar.mjs` (hoy `ee`): Estonia deja de tener estimados en Ligas; las otras 49 ligas no cambian. ASSET_V 1530.
+- Regla: las 5 grandes ligas, Brasil y Argentina se completan transcribiendo con Mistral (excepción a «no se transcriben PDFs nuevos»). 332: Guido aprueba la sección «Informes» en Ligas.
+
 ## Versión 883 — Prefijo de entidad automático y la ruta del 241 (2026-10-20) [334 · 241 · valerenga-no]
 
 - 334: `combinar()` de `tools/suma-entidades.mjs` pone «AS · » / «Elite · » solo (nombre corto desde los PDFs del ajuste); recargar Vålerenga 2022 y 2023 deja el JSON igual.

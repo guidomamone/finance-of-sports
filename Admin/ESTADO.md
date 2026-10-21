@@ -90,8 +90,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `perimetro` de un club nuevo cuando sus documentos coinciden (tablas de cada perímetro y voto con Jev); si la serie cambia de perímetro,
   no frena: un ejercicio con un solo perímetro se carga con ese (regla en `Admin/CONVENCIONES-DATOS.md`). Reconoce títulos en italiano e
   inglés; en otros idiomas decide el paso A2 (Claude, cinco criterios con peso). Frena solo si los votos de dos ejercicios chocan.
-- No se transcriben PDFs nuevos (Guido, 2026-10-20): se cargan los documentos que ya tienen `.md`; las tools de transcripción quedan para
-  arreglar o validar un `.md` existente. Cargar sin API (con tokens de sesión): `club-or-year-onboarding/carga-con-tokens.md`.
+- No se transcriben PDFs nuevos salvo los de las 5 grandes ligas, Brasil y Argentina (Mistral); el resto se carga solo si ya tiene `.md`
+  (regla en `Admin/CONVENCIONES.md`). Cargar sin API (con tokens de sesión): `club-or-year-onboarding/carga-con-tokens.md`.
 - Un club nuevo entra al lote con un solo ejercicio; el resto de sus años, después del alta y de contestar su cola (skill
   `club-or-year-onboarding`), para que las respuestas del primero sirvan de precedente. Las respuestas grandes de la cola que todavía
   no se aplicaron quedan en `Admin/registros/cola-borradores/`. Antes de correr un lote cuyos documentos ya arrastran casos, conviene
@@ -156,7 +156,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Por liga y año se sabe qué clubes faltan y en qué estado (`tools/faltantes-liga.mjs`, generado en cada carga); la lista de pendientes de
   sourcing es `Admin/sourcing/pendientes.md` (generada, no se edita): una sesión de sourcing puede arrancar de ahí.
 - Estimaciones (`data/estimados/`, `tools/estimar.mjs`): los años que le faltan a un club que tenemos, por interpolación entre sus años
-  reales, y todo club de la lista de una liga sin balance ese año (club nuevo: regresión sin historia, error alto, ver el to-do 270). Se
+  reales, y todo club de la lista de una liga sin balance ese año (club nuevo: regresión sin historia, error alto; los países de `PAISES_SIN_ESTIMAR`, hoy Estonia, no se estiman). Se
   muestran en Ligas dentro de la tabla de ingresos con "(estimado)*", rango y error; el total de la liga los suma solo cuando más de la
   mitad tiene balance real, y la composición y el simulador usan solo lo real. Arriba de la tabla, "La liga en total, por categoría".
 - Las listas de Wikipedia (`tools/club-league-reference/`) cubren 376 liga-años y guardan la posición final donde la tabla está completa.
