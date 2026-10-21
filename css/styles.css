@@ -1090,6 +1090,19 @@
   .lg-mix-barra{display:flex;height:14px;border-radius:4px;overflow:hidden;background:#eef0f3;}
   .lg-mix-barra > span{display:block;height:100%;}
   .lg-mix-nota{grid-column:2;font-size:11.5px;color:var(--muted);}
+  .lg-informes{margin-top:20px;display:flex;flex-direction:column;gap:6px;}
+  .lg-inf-grilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:8px;}
+  .lg-inf{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:6px;}
+  .lg-inf p{margin:0;font-size:13.5px;line-height:1.5;color:var(--muted);}
+  .lg-inf-top{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+  .lg-inf-borrador{padding:1px 8px;border-radius:999px;background:#fff8ea;border:1px solid #e3c07a;color:#5c4300;letter-spacing:0;text-transform:none;font-weight:600;}
+  .lg-inf-t{margin:0;font-size:16px;line-height:1.3;color:var(--azul);}
+  .lg-inf-ed{font-weight:600;color:var(--text);}
+  p.lg-inf-frase{color:var(--text);}
+  .lg-inf p.lg-inf-cifra{margin-top:4px;padding:10px 12px;border-radius:10px;background:#f4f6fa;display:flex;flex-direction:column;gap:2px;color:var(--text);}
+  .lg-inf-cifra strong{font-size:14px;line-height:1.4;}
+  .lg-inf-fuente{font-size:12px;color:var(--muted);}
+  .lg-inf-link{margin-top:auto;padding-top:8px;font-weight:600;font-size:14px;color:var(--azul);}
   .lg-avisos{margin-top:16px;}
   .lg-avisos p{margin:0;font-size:13px;color:var(--muted);line-height:1.6;}
   .lg-avisos p.lg-cita-lista{margin-top:6px;}
