@@ -28,6 +28,11 @@ Votos: C, C y B. El 2 a 1 tiene en minoría un precedente de la misma liga y del
 - **Criterio que lo distingue de un semestral con balance anual existente (Juve Stabia, Estrela da Amadora), verificable por una tool sin preguntar** (los tres votos lo coinciden en lo sustancial): se carga solo si (a) el ejercicio anterior, cargado o con documento, termina el día anterior al inicio del tramo, (b) el siguiente, cargado o con documento, empieza el día después de su cierre y (c) ningún balance anual cargado o conocido contiene esas fechas. Si alguna falla, es parcial y la tool lo registra sola en `documentos-parciales.txt` con «falta: …» (sin cola). Parma 2020 falla (a) hoy: sigue parcial hasta que aparezca el ejercicio anterior. Juve Stabia y Estrela fallan (c): el anual los contiene.
 - **Qué pasa con cada uno:** Fiorentina 2020 y Genoa 2024 se cargan (años nuevos, no cambia ninguno de los cargados); Atalanta 2022 ya está cargada y recibe la nota y la marca, y sale de la lista de parciales; Parma 2020, Juve Stabia y Estrela siguen parciales; RWDM 2019 tiene su regla propia.
 
+## Respuestas de Guido (2026-10-21)
+
+1. Tramo corto sin hueco: **C** («ok a la primera»).
+2. COVID: **no una nota**, sino una marca visual: una palabra «COVID» dentro de un recuadro tipo onomatopeya de historieta (como «¡BANG!»), en los ejercicios de la ventana. Va a Pantallas con mockup. El punto 2 de «Qué codea Pipeline» (la `publicNote` estándar) y el punto 7 (el script de los 190) quedan descartados; la marca se deriva de `period_end`, sin campo nuevo.
+
 ## Las dos preguntas para Guido (sí o no, y no vuelven)
 
 1. **Tramo corto sin hueco: ¿C (se carga, fuera de rankings y de la mediana) o B (parcial, como hoy)?** Recomendación: C.
