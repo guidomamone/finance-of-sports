@@ -2,7 +2,7 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "Bash|Edit|Write|MultiEdit|NotebookEdit|Agent|Task|EnterPlanMode",
+        "matcher": "Bash|Edit|Write|MultiEdit|NotebookEdit|Agent|Task|EnterPlanMode|mcp__ccd_session_mgmt__archive_session|mcp__ccd_session__start_session|mcp__ccd_session_mgmt__set_session_model",
         "hooks": [
           {
             "type": "command",

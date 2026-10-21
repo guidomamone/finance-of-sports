@@ -18,7 +18,7 @@ La principal mergea, escribe `Admin/TODO.md`, `Admin/CHANGELOG.md` y `Admin/ESTA
 ## Qué decide la principal y qué va a Guido
 
 - **Decide y cuenta en el resumen:** estructura y calidad de datos (ids, esquema, alias, redirects, consistencia, reglas de criterio objetivas) que hagan al sitio una base más seria.
-- **Va a Guido:** el texto de una skill (candado, `Admin/propuestas/`), gastar fuera del presupuesto, push y deploy, un cambio de alcance (otros deportes, contenido nuevo), un mail a un club (solo si Guido lo pidió con sus palabras; que una sesión lo proponga no alcanza), archivar una sesión (se propone en «Te toca a vos»; con su sí, y la Auditora queda abierta para que le escriban).
+- **Va a Guido:** el texto de una skill (candado, `Admin/propuestas/`), gastar fuera del presupuesto, push y deploy, un cambio de alcance (otros deportes, contenido nuevo), un mail a un club (solo si Guido lo pidió con sus palabras; que una sesión lo proponga no alcanza), archivar una sesión: solo cuando Guido lo pide; no se propone. Una sesión que terminó queda abierta (la Auditora, siempre, para que le escriban).
 - **A la Auditora:** una condición nueva en una tool (sección 7 de su skill), un criterio de datos (`votacion-de-criterios`).
 
 ## Abrir sesiones
