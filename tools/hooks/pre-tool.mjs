@@ -238,7 +238,9 @@ function soloRenombres(cmd) {
 }
 
 function pdfsConOk(cmd) {
-  const borraEnClubes = /\bClubes\b/.test(cmd) && /\b(rm|unlink|trash|mv)\s|\s-delete\b/.test(cmd) && !soloRenombres(cmd);
+  // Un `Clubes/` dentro del scratchpad de una sesión es una copia de prueba (los worktrees de mentira), no los PDFs reales.
+  const sinScratchpad = cmd.replace(/(?:\/private)?\/tmp\/claude-\d+\/[^\s"']*/g, '');
+  const borraEnClubes = /\bClubes\b/.test(sinScratchpad) && /\b(rm|unlink|trash|mv)\s|\s-delete\b/.test(cmd) && !soloRenombres(cmd);
   const gitCleanIgnorados = GIT_SUB('clean').test(cmd) && /\s-\w*[xX]/.test(cmd);
   if (borraEnClubes || gitCleanIgnorados) {
     decidir('ask', 'Esto puede borrar PDFs de Clubes/. No se trackean y no hay copia de dónde recuperarlos: ¿Guido lo pidió y se chequearon '

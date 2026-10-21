@@ -25,6 +25,7 @@ const casos = [
   ['FP: heredoc a otro archivo con "> .claude/skills/" en el texto', bash("cat > Admin/x.md <<'EOF'\ntexto > .claude/skills/a/SKILL.md\nEOF"), 'pasa'],
   ['Clubes: mv a un destino que no existe pasa', bash('mv "Clubes/X/a.pdf" "Clubes/X/a-pagina-html-no-existe.html" && file Clubes/X/a*'), 'pasa'],
   ['Clubes: mv que pisa un archivo existente pregunta', bash(`mv "Clubes/X/a.pdf" "${raiz}/tools/audit.js"`), 'ask', 'borrar PDFs'],
+  ['Clubes: rm en un Clubes/ del scratchpad pasa', bash('mkdir -p "/private/tmp/claude-501/x/scratchpad/wt/Clubes/Z" && rm -f "/private/tmp/claude-501/x/scratchpad/wt/Clubes/Z/a.pdf"'), 'pasa'],
   ['Clubes: rm sigue preguntando', bash('rm "Clubes/X/a.pdf"'), 'ask', 'borrar PDFs'],
   ['archivar una sesión', { tool_name: 'mcp__ccd_session_mgmt__archive_session', tool_input: { session_id: 'local_x' } }, 'ask', 'Archivar'],
   ['Opus en una sesión nueva', { tool_name: 'mcp__ccd_session__start_session', tool_input: { model: 'claude-opus-5-5' } }, 'ask', 'Opus'],
