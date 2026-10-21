@@ -211,6 +211,12 @@ que pide el periodista. No se extiende a otros cards.
 
 ## Verificar en el browser de verdad, no solo revisar los números a mano (ex §8)
 
+**El sitio tiene que andar de dos maneras, y se prueban las dos antes de pedir el merge:** servido (el preview de `launch.json`, y
+`/club/<id>` y `/liga/<id>` directos y navegando desde la portada) y **abierto como archivo** (`file:///…/finance-of-sports/index.html`
+en el navegador, que es como Guido lo mira a veces). Por eso `index.html` no lleva `<base>` ni rutas que empiecen con `/`: con `file://`
+la raíz es la del disco y la página sale sin estilos ni scripts. Pasó de verdad: un `<base href="/">` arregló `/liga/<id>` y rompió
+abrir el archivo. `audit.js` lo chequea (`index-file-roto`).
+
 La cuenta a mano (verificar que `revenueLines`/`expenseLines` suman el total impreso del documento)
 es necesaria pero NO alcanza, el bug de la sección 4 no se habría encontrado sin abrir el sitio y
 tocar el toggle. Después de tocar cualquier función de display/conversión: `preview_start`, cambiar
