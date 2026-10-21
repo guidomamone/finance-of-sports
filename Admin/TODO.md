@@ -28,8 +28,9 @@ Se trabaja de arriba hacia abajo, en el orden numerado (Guido, 2026-10-20): A, B
 el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
-1. 345 (Onboarding 8): Omonia 2024, líneas del auditor y caja y deuda, la serie de Girona; después Fiorentina 2020 y Genoa 2024 (tramo corto); los XHTML que faltan con el 356
-2. Tramo corto y COVID (Pipeline 14): el tramo corto en `cargar.mjs`, `period_months` y la exclusión de rankings; la marca COVID (Pantallas 6, con guías de marca)
+1. 359 (Onboarding 8): líneas del auditor, Chapecoense y Goiás, Emmen, urls danesas
+2. 358 (Onboarding 8): segunda fuente de las 17 ligas
+2b. Pantallas 7: el 404 de `data/club-leagues.js` y, con tu ok, la guía de UX
 3. 355: Lierse son dos clubes (BCE distintos, Auditora 5); falta que cada ficha diga de quién es sucesora y los 3 alias de liga (Onboarding 8)
 4. 347 (Auditora 5): corridas de P2 y P3 (ya: `linea-duplicada`, `catchall-dominante`, `sin-salarios`, `signo-invertido`, `outlier-liga`, `gestion-club-inexistente`, `ejercicio-sin-rastro`, `salto-interanual`, `escala-implausible`)
 5. 352 (Auditora 5, con lo que cargue Onboarding 8): decidir si el chequeo del iXBRL pasa de aviso a frenar
@@ -69,17 +70,11 @@ el número de la izquierda es el orden de trabajo.
    nunca frene (Pipeline); (b) la duda de Deportes Tolima, `dudas-por-club.md:201`, que frena su carga; (c) las líneas de
    `Admin/HALLAZGOS-pipeline.md` de los descartes 314 (Stirling) y 298 x2; (d) el párrafo «Cómo verlo como archivo» (Chrome headless) de
    `Admin/PANTALLA.md` podría ir a `producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md`, con texto para el ok de Guido.
-345. DOCUMENTOS EN MANO SIN CARGAR (Pruebas 1, 2026-10-21, revisando `ejercicio-sin-rastro`). Lista con rutas en `Admin/sesiones/pipeline.md`,
-   «Revisión de la cola del chequeo»: Chapecoense 2019, FC Emmen 2020-21, FC Fredericia 2021-25, los 2025 daneses en XHTML (ESEF), SønderjyskE
-   2023-24, Fredrikstad 2019-23, Sarpsborg 08 2009-11, Vålerenga 2024, Genoa 2024, Girona 2021-23, Lierse Kempenzonen 2022, RAAL 2020, Omonia 29is
-   Maiou 2024. Cargados (Onboarding 8, tope US$17, van ~US$12,9): Brøndby 2021, København 2025, Fredericia 2021-25, Emmen 2020-21,
-   Chapecoense 2019, Vålerenga 2024, Girona 2021-23, Nordsjælland 2025, Vejle 2025, Goiás 2018-20, RAAL 2020, Novorizontino 2012; descartados
-   Fredrikstad 2019-23 y Sarpsborg 2009-11 (sociedades de derechos), Lierse Kempenzonen 2022. Falta: (a) Onboarding: Omonia 2024 (reintento y
-   gestión en `data/gestiones/cy.js`), las líneas del auditor y el ensayo de caja y deuda de los años cargados, y la serie de Girona
-   (resultado por venta de jugadores en línea en 2021-23 y en `financial.profit_on_player_sales` en 2020 y 2025); (b) Fiorentina 2020 y Genoa
-   2024, cuando Pipeline codee el tramo corto; (c) los XHTML que faltan (SønderjyskE 2022-23, Hvidovre 2025, Brøndby 2025, el consolidado PSE
-   de København) esperan el escalón de etiquetas del 356; Pipeline: Hvidovre (cifras sin separadores), el PSE de København (12 % de líneas
-   ubicadas) y el `ProfitLoss` ambiguo de Brøndby 2025.
+359. CIERRE DE LOS AÑOS DEL 345 (sale del 345, cerrado: Onboarding 8, US$13,9). Terminado cuando: (a) las líneas del auditor de Omonia
+   2024, Fiorentina 2020, Atalanta 2022, Genoa 2024 y Girona 2021-23 están cargadas (`node tools/auditoria.mjs --pendientes` da 0 de esos);
+   (b) Chapecoense 2019 (salvedades sin leer) y Goiás 2018 (informe fechado «24 de abril de 2018») tienen sus líneas revisadas; (c) Emmen
+   2020-21 tiene transcripto su informe del auditor; (d) los 20 años daneses cargados del XHTML llevan la url del depósito (`fuente.mjs --url`,
+   las urls están en `Admin/sesiones/datos.md` de Sourcing 4, archivo por archivo). Lo hace Onboarding.
 347. P2 Y P3 SIN PROCESO (Guido, 2026-10-21: «armemos algo para los P2 y P3»). Hoy hay ~370 P2 y ~1.000 P3 que nadie revisa (los más:
    `linea-duplicada` 927, `catchall-dominante` 256, `sin-salarios` 48). Propuesta en `Admin/propuestas/p2-p3-y-roles.md`: cada auditoría baja
    un código (muestra de cinco, decisión por el código entero, registro antes y después). Ya está en la skill de auditoría (ok de Guido);
@@ -109,7 +104,11 @@ el número de la izquierda es el orden de trabajo.
    últimos 5 años; Onboarding los carga con `tools/xhtml-aarsrapport.mjs` (sin transcribir). Presupuesto: Guido dijo que sí (2026-10-21);
    tope de US$3 para la categorización, con ensayo gratis antes. Relevado (`Admin/sesiones/datos.md`): 54 de 68 sociedades tienen iXBRL en
    los últimos 5 años (22 en los 5). Se bajan las cuentas completas de los últimos 3 cierres (69 archivos, 45,5 MB, dentro del tope de 50 MB);
-   el resto (cuentas pequeñas y años anteriores, hasta 84 MB) también se baja: Guido subió el tope (2026-10-21).
+   el resto (cuentas pequeñas y años anteriores, hasta 84 MB) también se baja: Guido subió el tope (2026-10-21). Bajados los 198. Medido: el
+   escalón de etiquetas ahorraría solo el 25 % (no se codea); `lote.mjs` frena la IA sobre estos documentos salvo `--pagar-ia-xhtml`. Para
+   cargar hace falta el presupuesto de Guido: el lote 133 (68 documentos) da ~US$17,8. También esperan acá los XHTML daneses que faltan
+   (SønderjyskE 2022-23, Hvidovre 2025, Brøndby 2025 con −130,578 M, el PSE de København 2021-25) y los 9 daneses 2025-26 cuyo PDF de Chrome
+   sale sin texto (Horsens, Hobro, Lyngby, Næstved, Randers, Skive, Viborg; nota de Pipeline 14).
 355. LIERSE CON DOS IDS (Auditora 5, 2026-10-21). `liersekempenzonen-be` (2018-21) y `liersesk-be` (2022-25), mismas ligas: parece el mismo
    club con otro nombre. Unirlos cambia un id público (contrato de datos): lo decide Guido. Antes, confirmar con los documentos que no sea el
    Lierse SK que quebró en 2018.
