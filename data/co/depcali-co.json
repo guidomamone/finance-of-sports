@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "CO",
     "reporting_currency": "COP",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -32,40 +33,44 @@
       "management_id": "actual",
       "fx": {"ref":"COP@2025-12-31"},
       "revenue": [
-        {"label":"Taquilla-venta De Boletería","category":"matchday_competition","amount":11076.301,"disclosure":"detailed"},
-        {"label":"Dimayor","category":"broadcasting","amount":6157.191,"disclosure":"detailed"},
-        {"label":"Patrocinio","category":"sponsorship_commercial","amount":5655.623,"disclosure":"detailed"},
+        {"label":"Taquilla-venta De Boletería","category":"matchday","subcategory":"matchday_competition","amount":11076.301,"disclosure":"detailed"},
+        {"label":"Dimayor","category":"media_rights","subcategory":"broadcasting","amount":6157.191,"disclosure":"detailed"},
+        {"label":"Patrocinio","category":"commercial","subcategory":"sponsorship_commercial","amount":5655.623,"disclosure":"detailed"},
         {
           "label": "Participación Eventos Internacionales (equipo femenino en Copa Libertadores)",
-          "category": "competition_bonus",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
           "amount": 2676.792,
           "disclosure": "detailed"
         },
-        {"label":"Auxilios","category":"broadcasting","amount":1899.627,"disclosure":"detailed"},
-        {"label":"Publicidad Y Propaganda","category":"sponsorship_commercial","amount":666.689,"disclosure":"detailed"},
-        {"label":"Participación Eventos Nacionales","category":"competition_bonus","amount":351.03,"disclosure":"detailed"},
-        {"label":"Venta Artículos Deportivos","category":"sponsorship_commercial","amount":0,"disclosure":"detailed"},
-        {"label":"Venta de Revistas","category":"sponsorship_commercial","amount":0,"disclosure":"detailed"},
-        {"label":"Venta de Implementos Deportivos","category":"sponsorship_commercial","amount":0,"disclosure":"detailed"},
-        {"label":"Devolución En Servicios","category":"other_income","amount":-250,"disclosure":"detailed"},
+        {"label":"Auxilios","category":"media_rights","subcategory":"broadcasting","amount":1899.627,"disclosure":"detailed"},
+        {"label":"Publicidad Y Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":666.689,"disclosure":"detailed"},
+        {"label":"Participación Eventos Nacionales","category":"prize_money","subcategory":"competition_bonus","amount":351.03,"disclosure":"detailed"},
+        {"label":"Venta Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"detailed"},
+        {"label":"Venta de Revistas","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"detailed"},
+        {"label":"Venta de Implementos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":0,"disclosure":"detailed"},
+        {"label":"Devolución En Servicios","category":"other_revenue","subcategory":"other_income","amount":-250,"disclosure":"detailed"},
         {
           "label": "Venta y préstamo de derechos deportivos, mecanismo de solidaridad",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 3087.347,
           "disclosure": "detailed",
           "items": [["Venta De Derechos Deportivos",1664.506],["Mecanismo De Solidaridad",1422.841],["Variable-venta de derechos",0],["Préstamo Derechos Deportivos",0]]
         },
-        {"label":"Escuela de Fútbol","category":"youth_football","amount":1295.883,"disclosure":"detailed"},
+        {"label":"Escuela de Fútbol","category":"other_sporting_sections","subcategory":"youth_football","amount":1295.883,"disclosure":"detailed"},
         {
           "label": "Cuotas de sostenimiento (asociados y beneficiarios)",
-          "category": "member_dues",
+          "category": "membership",
+          "subcategory": "member_dues",
           "amount": 98.456,
           "disclosure": "detailed",
           "items": [["Cuotas De Sostenimiento",80.691],["Cuota Extraordinaria Asociados",12.332],["Cuotas De Sostenimiento-Beneficiarios",5.433]]
         },
         {
           "label": "Otros Ingresos (recuperaciones, diversos, indemnizaciones, servicios, arrendamientos, donaciones, participaciones en concesiones)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 24672.316,
           "disclosure": "detailed",
           "items": [
@@ -82,7 +87,8 @@
       "expenses": [
         {
           "label": "Gastos de Administración (honorarios, personal, servicios, legales, diversos, seguros, arrendamientos, viajes, mantenimiento, adecuación)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -8060.453,
           "disclosure": "detailed",
           "items": [
@@ -98,18 +104,26 @@
             ["Adecuación E Instalación",-2.005]
           ]
         },
-        {"label":"Gastos de Administración: Depreciaciones","category":"depreciation","amount":-6.27,"disclosure":"detailed"},
-        {"label":"Gastos de Ventas: Gastos de personal (plantel)","category":"wages_squad","amount":-28602.139,"disclosure":"detailed"},
+        {"label":"Gastos de Administración: Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-6.27,"disclosure":"detailed"},
+        {
+          "label": "Gastos de Ventas: Gastos de personal (plantel)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -28602.139,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gastos de Ventas: Derechos deportivos (participaciones de terceros en transferencias, mecanismo de solidaridad) y Amortizaciones",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -2488.607,
           "disclosure": "detailed",
           "items": [["Derechos Deportivos",-1728.02],["Amortizaciones",-760.587]]
         },
         {
           "label": "Gastos de Ventas: organización y logística (diversos, impuestos, servicios, viajes, arrendamientos, mantenimiento, deterioro de cartera, adecuación e instalación)",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -11843.193,
           "disclosure": "detailed",
           "items": [
@@ -125,15 +139,17 @@
         },
         {
           "label": "Gastos de Ventas: Honorarios, Contribuciones y Afiliaciones, Seguros, Gastos Legales",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -1548.845,
           "disclosure": "detailed",
           "items": [["Honorarios",-845.477],["Contribuciones y Afiliaciones",-575.792],["Seguros",-84.553],["Gastos Legales",-43.023]]
         },
-        {"label":"Gastos de Ventas: Depreciaciones","category":"depreciation","amount":-1261.797,"disclosure":"detailed"},
+        {"label":"Gastos de Ventas: Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-1261.797,"disclosure":"detailed"},
         {
           "label": "Otros Gastos (gastos diversos por demandas y multas, gastos extraordinarios, pérdida en venta y retiro de bienes)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -1413.724,
           "disclosure": "detailed",
           "items": [["Gastos Diversos (demandas, multas)",-1273.705],["Gastos Extraordinarios",-111.584],["Perdida En Venta y Retiro de Bienes",-28.435]]

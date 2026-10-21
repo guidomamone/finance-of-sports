@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DK",
     "reporting_currency": "DKK",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -38,12 +39,30 @@
       "report_type": "official_balance_sheet",
       "management_id": "actual",
       "fx": {"ref":"DKK@2019-12-31"},
-      "revenue": [{"label":"Nettoomsætning","category":"lump_football_operations","amount":13.783959,"disclosure":"aggregated"}],
+      "revenue": [{"label":"Nettoomsætning","category":"undisclosed","subcategory":"lump_football_operations","amount":13.783959,"disclosure":"aggregated"}],
       "expenses": [
-        {"label":"Omkostninger til råvarer og hjælpematerialer","category":"other_expenses","amount":-0.427011,"disclosure":"aggregated"},
-        {"label":"Andre eksterne omkostninger","category":"other_expenses","amount":-4.68689,"disclosure":"aggregated"},
-        {"label":"Personaleomkostninger","category":"wages_squad","amount":-9.875023,"disclosure":"aggregated"},
-        {"label":"Af- og nedskrivninger af materielle anlægsaktiver","category":"depreciation","amount":-0.039377,"disclosure":"aggregated"}
+        {
+          "label": "Omkostninger til råvarer og hjælpematerialer",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.427011,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Andre eksterne omkostninger",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -4.68689,
+          "disclosure": "aggregated"
+        },
+        {"label":"Personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-9.875023,"disclosure":"aggregated"},
+        {
+          "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.039377,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.149297,"tax":0,"gross_debt":4.905334,"cash":1.182138},
       "official_totals": {"revenue":13.783959,"expenses":15.028301,"net_result":-1.393639}
@@ -56,13 +75,25 @@
       "report_type": "official_balance_sheet",
       "management_id": null,
       "fx": {"ref":"DKK@2020-12-31"},
-      "revenue": [{"label":"Bruttofortjeneste","category":"lump_football_operations","amount":10.952864,"disclosure":"aggregated"}],
+      "revenue": [{"label":"Bruttofortjeneste","category":"undisclosed","subcategory":"lump_football_operations","amount":10.952864,"disclosure":"aggregated"}],
       "expenses": [
-        {"label":"Lønninger","category":"wages_squad","amount":-8.798576,"disclosure":"aggregated"},
-        {"label":"Pensioner","category":"wages_squad","amount":-0.357736,"disclosure":"aggregated"},
-        {"label":"Andre omkostninger til social sikring","category":"wages_squad","amount":-0.18591,"disclosure":"aggregated"},
-        {"label":"Andre personaleomkostninger","category":"wages_squad","amount":-0.697424,"disclosure":"aggregated"},
-        {"label":"Af- og nedskrivninger af materielle anlægsaktiver","category":"depreciation","amount":-0.048686,"disclosure":"aggregated"}
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-8.798576,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-0.357736,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.18591,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andre personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-0.697424,"disclosure":"aggregated"},
+        {
+          "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.048686,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.169382,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":10.952864,"expenses":10.088332,"net_result":0.69515},

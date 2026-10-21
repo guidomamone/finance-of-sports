@@ -67,6 +67,75 @@ const EXPENSE_CATEGORY_LABELS = {
   lump_football_operations_expense: 'Fútbol profesional (sin desglosar por la fuente)',
 };
 
+// CAPA GENÉRICA (to-do 248, Admin/mediciones/248-plan.md). Las listas de arriba son las SUBCATEGORÍAS del fútbol: las que eligen el pipeline
+// y la cola, y las que usa el motor. Cada una tiene además una categoría GENÉRICA, la misma para cualquier deporte, que NO se elige: se deriva
+// de SPORT_TAXONOMIES. El JSON de cada club la guarda (`category`, con `subcategory` al lado) y tools/json-datos.mjs exige que el par coincida.
+// `block` es la parte de la cascada del resultado (la misma de computeYearGeneric): revenue; operating (gasto en efectivo), non_cash
+// (amortizaciones y depreciación), exceptional. Una subcategoría nueva necesita su genérica acá en la misma sesión (audit.js:
+// taxonomia-incompleta).
+const GENERIC_REVENUE_CATEGORIES = [
+  { id: 'membership',              block: 'revenue', label: 'Cuotas sociales',                en: 'Membership' },
+  { id: 'matchday',                block: 'revenue', label: 'Entradas',                       en: 'Matchday' },
+  { id: 'season_tickets',          block: 'revenue', label: 'Abonos',                         en: 'Season tickets' },
+  { id: 'venue',                   block: 'revenue', label: 'Estadio: uso fuera del partido', en: 'Venue (non-matchday)' },
+  { id: 'media_rights',            block: 'revenue', label: 'Derechos de TV y medios',        en: 'Media rights' },
+  { id: 'prize_money',             block: 'revenue', label: 'Premios por competencias',       en: 'Prize money' },
+  { id: 'commercial',              block: 'revenue', label: 'Comercial / sponsors',           en: 'Commercial' },
+  { id: 'player_transfers',        block: 'revenue', label: 'Venta de jugadores',             en: 'Player transfers' },
+  { id: 'other_sporting_sections', block: 'revenue', label: 'Otras secciones deportivas',     en: 'Other sporting sections' },
+  { id: 'non_sporting_activities', block: 'revenue', label: 'Actividades no deportivas',      en: 'Non-sporting activities' },
+  { id: 'other_revenue',           block: 'revenue', label: 'Otros ingresos',                 en: 'Other revenue' },
+  { id: 'undisclosed',             block: 'revenue', label: 'Sin desglosar por la fuente',    en: 'Not broken down by the source' },
+];
+
+const GENERIC_EXPENSE_CATEGORIES = [
+  { id: 'first_team_staff',                  block: 'operating',   label: 'Salarios del plantel y cuerpo técnico', en: 'First-team staff' },
+  { id: 'match_operations',                  block: 'operating',   label: 'Organización de partidos',              en: 'Match operations' },
+  { id: 'other_sporting_sections',           block: 'operating',   label: 'Otras secciones deportivas',            en: 'Other sporting sections' },
+  { id: 'non_sporting_activities',           block: 'operating',   label: 'Actividades no deportivas',             en: 'Non-sporting activities' },
+  { id: 'admin_general',                     block: 'operating',   label: 'Administración y gastos generales',     en: 'Administration and overheads' },
+  { id: 'other_operating_expenses',          block: 'operating',   label: 'Otros gastos',                          en: 'Other operating expenses' },
+  { id: 'undisclosed',                       block: 'operating',   label: 'Sin desglosar por la fuente',           en: 'Not broken down by the source' },
+  // Lleva también la compra de jugadores en efectivo de un club que no capitaliza (club-data-mapping, sección 1).
+  { id: 'player_registrations_amortisation', block: 'non_cash',    label: 'Amortización de pases',                 en: 'Player registrations amortisation' },
+  { id: 'player_registrations_impairment',   block: 'non_cash',    label: 'Deterioro de pases',                    en: 'Player registrations impairment' },
+  { id: 'depreciation',                      block: 'non_cash',    label: 'Depreciación',                          en: 'Depreciation' },
+  { id: 'other_amortisation',                block: 'non_cash',    label: 'Otras amortizaciones',                  en: 'Other amortisation' },
+  { id: 'exceptional',                       block: 'exceptional', label: 'Ítems excepcionales',                   en: 'Exceptional items' },
+];
+
+// (deporte del sitio, lado, subcategoría) -> genérica. La clave es el id interno del deporte (data/leagues.js, SPORTS); `version` va a
+// club.taxonomy del JSON y sube si cambia una genérica de una subcategoría ya cargada.
+const SPORT_TAXONOMIES = {
+  futbol: {
+    version: 'football-1',
+    revenue: {
+      member_dues: 'membership', matchday_competition: 'matchday', season_tickets: 'season_tickets', stadium_other: 'venue',
+      broadcasting: 'media_rights', competition_bonus: 'prize_money', sponsorship_commercial: 'commercial', player_sales: 'player_transfers',
+      other_sports: 'other_sporting_sections', youth_football: 'other_sporting_sections', womens_football: 'other_sporting_sections',
+      education: 'non_sporting_activities', other_income: 'other_revenue', lump_football_operations: 'undisclosed',
+    },
+    expense: {
+      wages_squad: 'first_team_staff', match_organisation_expense: 'match_operations', youth_other_sports_expense: 'other_sporting_sections',
+      education_expense: 'non_sporting_activities', admin_general_expense: 'admin_general', other_expenses: 'other_operating_expenses',
+      lump_football_operations_expense: 'undisclosed', player_amortisation: 'player_registrations_amortisation',
+      player_impairment: 'player_registrations_impairment', depreciation: 'depreciation', other_amortisation: 'other_amortisation',
+      exceptional_items: 'exceptional',
+    },
+  },
+};
+
+// La genérica de una línea. Una subcategoría del OTRO lado (audit.js, categoria-cruzada: `exceptional_items` en ingresos de Racing
+// 2009-2014, decisión de Guido en CONVENCIONES-DATOS.md; Athletico Paranaense; el costo de las camisetas de Atlético Mineiro) va a la genérica
+// catch-all de su lado, que es la fila donde ya se ve y se suma. null = la subcategoría no existe en el deporte.
+const GENERIC_CATCH_ALL = { revenue: 'other_revenue', expense: 'other_operating_expenses' };
+function genericCategoryOf(sport, side, sub) {
+  const t = SPORT_TAXONOMIES[sport || 'futbol'];
+  if (!t || !t[side]) return null;
+  if (t[side][sub]) return t[side][sub];
+  return t[side === 'revenue' ? 'expense' : 'revenue'][sub] ? GENERIC_CATCH_ALL[side] : null;
+}
+
 // Mapa de rubros reales -> categorías normalizadas de algunos clubes cargados a mano (referencia; las líneas de cada club ya traen su
 // normalizedCategory en su data file).
 const categoryMapByClub = {

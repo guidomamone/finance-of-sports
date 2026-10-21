@@ -1,8 +1,17 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
-  "club": {"id":"ajax-nl","name":"AFC Ajax N.V.","display_name":"Ajax","country":"NL","reporting_currency":"EUR","fiscal_year_start":"07-01","sport":"futbol"},
+  "club": {
+    "id": "ajax-nl",
+    "name": "AFC Ajax N.V.",
+    "display_name": "Ajax",
+    "country": "NL",
+    "reporting_currency": "EUR",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
   "sources": [
     {
       "id": "ajax-nl-jaarverslag-2024",
@@ -33,26 +42,34 @@
       "revenue": [
         {
           "label": "Recettes competitie, nationale beker en vriendschappelijke wedstrijden",
-          "category": "matchday_competition",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
           "amount": 8.179,
           "disclosure": "detailed"
         },
-        {"label":"Recettes Europese competities","category":"matchday_competition","amount":10.491,"disclosure":"detailed"},
-        {"label":"Premies Europese competities","category":"competition_bonus","amount":10.602,"disclosure":"detailed"},
-        {"label":"Seizoenkaarten","category":"season_tickets","amount":13.741,"disclosure":"detailed"},
-        {"label":"Business-seats en skybox-plaatsen","category":"season_tickets","amount":20.911,"disclosure":"detailed"},
-        {"label":"Indirecte wedstrijdbaten","category":"stadium_other","amount":2.439,"disclosure":"detailed"},
-        {"label":"Partnerships","category":"sponsorship_commercial","amount":40.1,"disclosure":"detailed"},
-        {"label":"Televisie","category":"broadcasting","amount":12.425,"disclosure":"detailed"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":28.717,"disclosure":"detailed"},
-        {"label":"Overige baten","category":"other_income","amount":4.356,"disclosure":"detailed"}
+        {"label":"Recettes Europese competities","category":"matchday","subcategory":"matchday_competition","amount":10.491,"disclosure":"detailed"},
+        {"label":"Premies Europese competities","category":"prize_money","subcategory":"competition_bonus","amount":10.602,"disclosure":"detailed"},
+        {"label":"Seizoenkaarten","category":"season_tickets","subcategory":"season_tickets","amount":13.741,"disclosure":"detailed"},
+        {"label":"Business-seats en skybox-plaatsen","category":"season_tickets","subcategory":"season_tickets","amount":20.911,"disclosure":"detailed"},
+        {"label":"Indirecte wedstrijdbaten","category":"venue","subcategory":"stadium_other","amount":2.439,"disclosure":"detailed"},
+        {"label":"Partnerships","category":"commercial","subcategory":"sponsorship_commercial","amount":40.1,"disclosure":"detailed"},
+        {"label":"Televisie","category":"media_rights","subcategory":"broadcasting","amount":12.425,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":28.717,"disclosure":"detailed"},
+        {"label":"Overige baten","category":"other_revenue","subcategory":"other_income","amount":4.356,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Inkoopwaarde omzet","category":"other_expenses","amount":-15.595,"disclosure":"detailed"},
-        {"label":"Lonen, salarissen en sociale lasten — Voetbal","category":"wages_squad","amount":-78.583,"disclosure":"detailed"},
+        {"label":"Inkoopwaarde omzet","category":"other_operating_expenses","subcategory":"other_expenses","amount":-15.595,"disclosure":"detailed"},
+        {
+          "label": "Lonen, salarissen en sociale lasten — Voetbal",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -78.583,
+          "disclosure": "detailed"
+        },
         {
           "label": "Lonen, salarissen en sociale lasten — Overige + Overige personeelskosten + Huisvestingskosten + Beheer- en administratiekosten",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -62.934,
           "disclosure": "detailed",
           "items": [
@@ -62,9 +79,15 @@
             ["Beheer- en administratiekosten",22.707]
           ]
         },
-        {"label":"Wedstrijdkosten","category":"match_organisation_expense","amount":-23.093,"disclosure":"detailed"},
-        {"label":"Afschrijvingen op vaste activa","category":"depreciation","amount":-11.099,"disclosure":"detailed"},
-        {"label":"Afschrijvingen vergoedingssommen","category":"player_amortisation","amount":-50.191,"disclosure":"detailed"}
+        {"label":"Wedstrijdkosten","category":"match_operations","subcategory":"match_organisation_expense","amount":-23.093,"disclosure":"detailed"},
+        {"label":"Afschrijvingen op vaste activa","category":"depreciation","subcategory":"depreciation","amount":-11.099,"disclosure":"detailed"},
+        {
+          "label": "Afschrijvingen vergoedingssommen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -50.191,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":81.522,"asset_sales":0,"net_interest":-4.85,"tax":3.111,"gross_debt":296.182,"cash":34.636},
       "official_totals": {"revenue":151.961,"expenses":241.495,"net_result":-9.751}
@@ -80,26 +103,34 @@
       "revenue": [
         {
           "label": "Recettes competitie, nationale beker en vriendschappelijke wedstrijden",
-          "category": "matchday_competition",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
           "amount": 9.455,
           "disclosure": "detailed"
         },
-        {"label":"Recettes Europese competities","category":"matchday_competition","amount":12.533,"disclosure":"detailed"},
-        {"label":"Premies Europese competities","category":"competition_bonus","amount":20.752,"disclosure":"detailed"},
-        {"label":"Seizoenkaarten","category":"season_tickets","amount":14.799,"disclosure":"detailed"},
-        {"label":"Business-seats en skybox-plaatsen","category":"season_tickets","amount":23.038,"disclosure":"detailed"},
-        {"label":"Indirecte wedstrijdbaten","category":"stadium_other","amount":4.44,"disclosure":"detailed"},
-        {"label":"Partnerships","category":"sponsorship_commercial","amount":42.46,"disclosure":"detailed"},
-        {"label":"Televisie","category":"broadcasting","amount":11.724,"disclosure":"detailed"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":33.408,"disclosure":"detailed"},
-        {"label":"Overige baten","category":"other_income","amount":5.52,"disclosure":"detailed"}
+        {"label":"Recettes Europese competities","category":"matchday","subcategory":"matchday_competition","amount":12.533,"disclosure":"detailed"},
+        {"label":"Premies Europese competities","category":"prize_money","subcategory":"competition_bonus","amount":20.752,"disclosure":"detailed"},
+        {"label":"Seizoenkaarten","category":"season_tickets","subcategory":"season_tickets","amount":14.799,"disclosure":"detailed"},
+        {"label":"Business-seats en skybox-plaatsen","category":"season_tickets","subcategory":"season_tickets","amount":23.038,"disclosure":"detailed"},
+        {"label":"Indirecte wedstrijdbaten","category":"venue","subcategory":"stadium_other","amount":4.44,"disclosure":"detailed"},
+        {"label":"Partnerships","category":"commercial","subcategory":"sponsorship_commercial","amount":42.46,"disclosure":"detailed"},
+        {"label":"Televisie","category":"media_rights","subcategory":"broadcasting","amount":11.724,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":33.408,"disclosure":"detailed"},
+        {"label":"Overige baten","category":"other_revenue","subcategory":"other_income","amount":5.52,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Inkoopwaarde omzet","category":"other_expenses","amount":-18.465,"disclosure":"detailed"},
-        {"label":"Lonen, salarissen en sociale lasten — Voetbal","category":"wages_squad","amount":-84.153,"disclosure":"detailed"},
+        {"label":"Inkoopwaarde omzet","category":"other_operating_expenses","subcategory":"other_expenses","amount":-18.465,"disclosure":"detailed"},
+        {
+          "label": "Lonen, salarissen en sociale lasten — Voetbal",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -84.153,
+          "disclosure": "detailed"
+        },
         {
           "label": "Lonen, salarissen en sociale lasten — Overige + Overige personeelskosten + Huisvestingskosten + Beheer- en administratiekosten",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -58.26,
           "disclosure": "detailed",
           "items": [
@@ -109,9 +140,15 @@
             ["Beheer- en administratiekosten",20.669]
           ]
         },
-        {"label":"Wedstrijdkosten","category":"match_organisation_expense","amount":-25.413,"disclosure":"detailed"},
-        {"label":"Afschrijvingen op vaste activa","category":"depreciation","amount":-11.243,"disclosure":"detailed"},
-        {"label":"Afschrijvingen vergoedingssommen","category":"player_amortisation","amount":-41.344,"disclosure":"detailed"}
+        {"label":"Wedstrijdkosten","category":"match_operations","subcategory":"match_organisation_expense","amount":-25.413,"disclosure":"detailed"},
+        {"label":"Afschrijvingen op vaste activa","category":"depreciation","subcategory":"depreciation","amount":-11.243,"disclosure":"detailed"},
+        {
+          "label": "Afschrijvingen vergoedingssommen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -41.344,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":10.333,"asset_sales":0,"net_interest":-1.088,"tax":14.165,"gross_debt":219.259,"cash":40.295},
       "official_totals": {"revenue":178.129,"expenses":238.878,"net_result":-37.339}

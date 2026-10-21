@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "CO",
     "reporting_currency": "COP",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -32,25 +33,39 @@
       "management_id": "actual",
       "fx": {"ref":"COP@2025-12-31"},
       "revenue": [
-        {"label":"Patrocinio","category":"sponsorship_commercial","amount":16993.152,"disclosure":"detailed"},
-        {"label":"Venta de boletería","category":"matchday_competition","amount":12894.66,"disclosure":"detailed"},
-        {"label":"Derechos de televisión (Dimayor)","category":"broadcasting","amount":6192.158,"disclosure":"detailed"},
-        {"label":"Vallas publicitarias","category":"sponsorship_commercial","amount":5229.969,"disclosure":"detailed"},
-        {"label":"Venta de abonos o palcos","category":"season_tickets","amount":4433.978,"disclosure":"detailed"},
-        {"label":"Dimayor","category":"broadcasting","amount":1508.183,"disclosure":"detailed"},
-        {"label":"Venta de artículos deportivos y misceláneos","category":"sponsorship_commercial","amount":1133.172,"disclosure":"detailed"},
+        {"label":"Patrocinio","category":"commercial","subcategory":"sponsorship_commercial","amount":16993.152,"disclosure":"detailed"},
+        {"label":"Venta de boletería","category":"matchday","subcategory":"matchday_competition","amount":12894.66,"disclosure":"detailed"},
+        {"label":"Derechos de televisión (Dimayor)","category":"media_rights","subcategory":"broadcasting","amount":6192.158,"disclosure":"detailed"},
+        {"label":"Vallas publicitarias","category":"commercial","subcategory":"sponsorship_commercial","amount":5229.969,"disclosure":"detailed"},
+        {"label":"Venta de abonos o palcos","category":"season_tickets","subcategory":"season_tickets","amount":4433.978,"disclosure":"detailed"},
+        {"label":"Dimayor","category":"media_rights","subcategory":"broadcasting","amount":1508.183,"disclosure":"detailed"},
+        {
+          "label": "Venta de artículos deportivos y misceláneos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1133.172,
+          "disclosure": "detailed"
+        },
         {
           "label": "Participación en eventos nacionales e internacionales (Copa Conmebol Sudamericana)",
-          "category": "competition_bonus",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
           "amount": 942.237,
           "disclosure": "detailed"
         },
-        {"label":"Federación Colombiana de Fútbol","category":"competition_bonus","amount":644.862,"disclosure":"detailed"},
-        {"label":"Mecanismo de solidaridad","category":"player_sales","amount":457.714,"disclosure":"detailed"},
-        {"label":"Utilidad en venta de derechos deportivos, neto","category":"player_sales","amount":36749.925,"disclosure":"detailed"},
+        {"label":"Federación Colombiana de Fútbol","category":"prize_money","subcategory":"competition_bonus","amount":644.862,"disclosure":"detailed"},
+        {"label":"Mecanismo de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":457.714,"disclosure":"detailed"},
+        {
+          "label": "Utilidad en venta de derechos deportivos, neto",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 36749.925,
+          "disclosure": "detailed"
+        },
         {
           "label": "Otros ingresos no operacionales (premios, aprovechamientos, reintegro de costos, uso de marca, bonificaciones, recuperación de deterioro y provisión, sobrante en caja)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 7084.069,
           "disclosure": "detailed",
           "items": [
@@ -68,14 +83,16 @@
       "expenses": [
         {
           "label": "Costo de Venta (mercadeo y publicidad, artículos deportivos y misceláneos, abonados, boletería)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -2623.441,
           "disclosure": "detailed",
           "items": [["Mercadeo y publicidad",-1316.357],["Venta de artículos deportivos y misceláneos",-1199.525],["Abonados",-95.464],["Boletería",-12.095]]
         },
         {
           "label": "Gastos Operacionales de Administración (personal, impuestos, honorarios, servicios, mantenimiento, viajes, legales, contribuciones, seguros)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -2618.652,
           "disclosure": "detailed",
           "items": [
@@ -90,12 +107,31 @@
             ["Seguros",-0.453]
           ]
         },
-        {"label":"Gastos Operacionales de Administración: Diversos","category":"other_expenses","amount":-101.592,"disclosure":"detailed"},
-        {"label":"Gastos Operacionales de Administración: Depreciaciones","category":"depreciation","amount":-14.894,"disclosure":"detailed"},
-        {"label":"Gastos Operacionales de Ventas: Gastos de personal (plantel)","category":"wages_squad","amount":-43702.197,"disclosure":"detailed"},
+        {
+          "label": "Gastos Operacionales de Administración: Diversos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -101.592,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Operacionales de Administración: Depreciaciones",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -14.894,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos Operacionales de Ventas: Gastos de personal (plantel)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -43702.197,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gastos Operacionales de Ventas: transferencias de jugadores (amortizaciones, intermediación de agentes, derechos deportivos, amortización de transferencias temporales)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -27516.47,
           "disclosure": "detailed",
           "items": [
@@ -107,7 +143,8 @@
         },
         {
           "label": "Gastos Operacionales de Ventas: organización y logística (arrendamientos restantes, viajes, impuestos, mantenimiento, servicios, contribuciones)",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -8424.647,
           "disclosure": "detailed",
           "items": [
@@ -119,18 +156,32 @@
             ["Contribuciones y afiliaciones",-318.636]
           ]
         },
-        {"label":"Gastos Operacionales de Ventas: Deterioro de cartera","category":"other_expenses","amount":-597.972,"disclosure":"detailed"},
+        {
+          "label": "Gastos Operacionales de Ventas: Deterioro de cartera",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -597.972,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gastos Operacionales de Ventas: Honorarios, Gastos legales y Seguros",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -394.628,
           "disclosure": "detailed",
           "items": [["Honorarios",-308.232],["Gastos legales",-52.441],["Seguros",-33.955]]
         },
-        {"label":"Gastos Operacionales de Ventas: Depreciaciones","category":"depreciation","amount":-242.426,"disclosure":"detailed"},
+        {
+          "label": "Gastos Operacionales de Ventas: Depreciaciones",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -242.426,
+          "disclosure": "detailed"
+        },
         {
           "label": "Otros gastos no operacionales (GMF, impuestos asumidos, multas, descuentos comerciales, diversos, gastos bancarios, ejercicios anteriores, comisiones)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -633.987,
           "disclosure": "detailed",
           "items": [

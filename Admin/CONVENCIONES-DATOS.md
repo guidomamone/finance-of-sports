@@ -7,10 +7,18 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
 
 - **LA FUENTE DE LOS DATOS DE UN CLUB ES SU JSON: `data/<país>/<club>.json`.** El `data/<país>/<club>-data.js` que carga el sitio es GENERADO
   (`node tools/generar-data.mjs`; las tools de carga lo regeneran solas al escribir) y no se edita a mano: `audit.js` avisa si no coincide con
-  su JSON (`json-js-desfasado`) o si el JSON no valida contra `data/schema/club-v1.json` (`json-no-valida`). Los dos se publican (el JSON es el
+  su JSON (`json-js-desfasado`) o si el JSON no valida contra `data/schema/club-v2.json` (`json-no-valida`). Los dos se publican (el JSON es el
   dato abierto). **Los importes del JSON están en millones de la moneda del club** (`unit.scale = 1000000`, escrito en cada archivo): no se
   pre-convierten, y el gasto va en negativo. Nombres de campo en inglés y snake_case (`label`, `category`, `amount`, `financial.cash`,
   `adjustments.included_in`…); los textos libres, en español. Esquema y diccionario: `Admin/mediciones/245-esquema.md`.
+- **CADA LÍNEA TIENE DOS CATEGORÍAS: `subcategory` (la del deporte) y `category` (la genérica). LA GENÉRICA NO SE ELIGE: SE DERIVA.**
+  Lo que se decide al cargar es la subcategoría (`normalizedCategory` en el data file: `wages_squad`, `broadcasting`…), con el criterio de
+  `club-data-mapping`. La genérica (`first_team_staff`, `media_rights`…, la misma para cualquier deporte) sale del mapa `SPORT_TAXONOMIES` de
+  `data/category-map.js` (`genericCategoryOf`); `tools/json-datos.mjs` la escribe sola y no deja escribir un par que no coincida. Una
+  subcategoría del otro lado (`exceptional_items` en una línea de ingreso) va a la genérica catch-all de su lado (`other_revenue`,
+  `other_operating_expenses`), que es donde ya se ve en pantalla. Una subcategoría nueva necesita su genérica en el mapa en la misma
+  sesión (`audit.js`, `taxonomia-incompleta`). Cambiar la genérica de una subcategoría ya cargada sube la versión (`club.taxonomy`) y se
+  migra con `tools/migrar-v2.mjs`, sin tocar importes ni subcategorías. El mapa y sus bloques: `Admin/mediciones/248-plan.md`.
 - **EL JSON Y EL `-data.js` NO LLEVAN COMENTARIOS.** Se publican enteros: cada comentario lo baja cada visitante, y se lee con
   "ver código fuente" (el JSON ni siquiera los admite; el JS generado trae una sola cabecera fija: "GENERADO desde … no editar"). La evidencia de una carga (de qué documento sale, perímetro, unidades, por qué cada rubro va a su categoría,
   ajustes, contra qué total cierra, de dónde salió la caja y la deuda) va en `Admin/carga-clubes/<clubId>.md`, que no se publica. Un

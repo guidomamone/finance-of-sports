@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -55,33 +56,66 @@
       "revenue": [
         {
           "label": "Umsatzerlöse aus Spielbetrieb (incluye sponsoring, matchday y TV sin desglosar más, ver Anhang 4.1)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 255.395,
           "disclosure": "aggregated_residual"
         },
-        {"label":"Umsatzerlöse aus Handel","category":"sponsorship_commercial","amount":2.259,"disclosure":"detailed"},
+        {"label":"Umsatzerlöse aus Handel","category":"commercial","subcategory":"sponsorship_commercial","amount":2.259,"disclosure":"detailed"},
         {
           "label": "Umsatzerlöse aus Sonstigem (incluye Transfer- u. Leihgeschäft, sin línea propia este ejercicio, ver comentario de cabecera)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 86.413,
           "disclosure": "aggregated_residual"
         },
-        {"label":"Erhöhung des Bestands an unfertigen Leistungen","category":"other_income","amount":0.044473,"disclosure":"detailed"},
-        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":2.398825,"disclosure":"aggregated_residual"}
+        {
+          "label": "Erhöhung des Bestands an unfertigen Leistungen",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.044473,
+          "disclosure": "detailed"
+        },
+        {"label":"Sonstige betriebliche Erträge","category":"other_revenue","subcategory":"other_income","amount":2.398825,"disclosure":"aggregated_residual"}
       ],
       "expenses": [
-        {"label":"Materialaufwand (Aufwendungen für bezogene Waren)","category":"other_expenses","amount":-1.457145,"disclosure":"detailed"},
+        {
+          "label": "Materialaufwand (Aufwendungen für bezogene Waren)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.457145,
+          "disclosure": "detailed"
+        },
         {
           "label": "Personalaufwand",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -163.933354,
           "disclosure": "aggregated_residual",
           "items": [["Löhne und Gehälter",-158.546117],["Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",-5.387237]]
         },
-        {"label":"Abschreibungen auf Spielerwerte","category":"player_amortisation","amount":-84.244145,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf sonstige immaterielle Vermögensgegenstände","category":"other_amortisation","amount":-0.893053,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-4.81653,"disclosure":"detailed"},
-        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-82.9226,"disclosure":"aggregated_residual"}
+        {
+          "label": "Abschreibungen auf Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -84.244145,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen auf sonstige immaterielle Vermögensgegenstände",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -0.893053,
+          "disclosure": "detailed"
+        },
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-4.81653,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -82.9226,
+          "disclosure": "aggregated_residual"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.450822,"tax":-2.021001,"gross_debt":99.905,"cash":4.104803},
       "official_totals": {"revenue":346.510706,"expenses":338.266827,"net_result":4.772057}
@@ -97,33 +131,72 @@
       "revenue": [
         {
           "label": "Umsatzerlöse aus Spielbetrieb (incluye sponsoring, matchday y TV sin desglosar más, ver Anhang 4.1)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 313.227,
           "disclosure": "aggregated_residual"
         },
-        {"label":"Umsatzerlöse aus Handel","category":"sponsorship_commercial","amount":8.403,"disclosure":"detailed"},
+        {"label":"Umsatzerlöse aus Handel","category":"commercial","subcategory":"sponsorship_commercial","amount":8.403,"disclosure":"detailed"},
         {
           "label": "Umsatzerlöse aus Sonstigem (incluye Transfer- u. Leihgeschäft, sin línea propia este ejercicio, ver comentario de cabecera)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 54.861,
           "disclosure": "aggregated_residual"
         },
-        {"label":"Erhöhung des Bestands an unfertigen Leistungen","category":"other_income","amount":0.304598,"disclosure":"detailed"},
-        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":17.966216,"disclosure":"aggregated_residual"}
+        {
+          "label": "Erhöhung des Bestands an unfertigen Leistungen",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.304598,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sonstige betriebliche Erträge",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 17.966216,
+          "disclosure": "aggregated_residual"
+        }
       ],
       "expenses": [
-        {"label":"Materialaufwand (Aufwendungen für bezogene Waren)","category":"other_expenses","amount":-2.494307,"disclosure":"detailed"},
+        {
+          "label": "Materialaufwand (Aufwendungen für bezogene Waren)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.494307,
+          "disclosure": "detailed"
+        },
         {
           "label": "Personalaufwand",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -190.81678,
           "disclosure": "aggregated_residual",
           "items": [["Löhne und Gehälter",-183.105578],["Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",-7.711202]]
         },
-        {"label":"Abschreibungen auf Spielerwerte","category":"player_amortisation","amount":-88.03401,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf sonstige immaterielle Vermögensgegenstände","category":"other_amortisation","amount":-1.151991,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-5.200372,"disclosure":"detailed"},
-        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-97.669468,"disclosure":"aggregated_residual"}
+        {
+          "label": "Abschreibungen auf Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -88.03401,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen auf sonstige immaterielle Vermögensgegenstände",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -1.151991,
+          "disclosure": "detailed"
+        },
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-5.200372,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -97.669468,
+          "disclosure": "aggregated_residual"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.031322,"tax":-1.021199,"gross_debt":111.731,"cash":0.765425},
       "official_totals": {"revenue":394.761484,"expenses":385.366929,"net_result":5.342034}
@@ -139,29 +212,67 @@
       "revenue": [
         {
           "label": "Umsatzerlöse aus Spielbetrieb (incluye sponsoring, matchday y TV sin desglosar más, ver Anhang 4.1)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 249.693,
           "disclosure": "aggregated_residual"
         },
-        {"label":"Umsatzerlöse aus Handel","category":"sponsorship_commercial","amount":10.597,"disclosure":"detailed"},
-        {"label":"Umsatzerlöse aus Transfer- u. Leihgeschäft","category":"player_sales","amount":193.146,"disclosure":"detailed"},
-        {"label":"Umsatzerlöse aus Sonstigem","category":"other_income","amount":9.971,"disclosure":"detailed"},
-        {"label":"Erhöhung (+) oder Verminderung (-) des Bestands an unfertigen Leistungen","category":"other_income","amount":-0.106,"disclosure":"detailed"},
-        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":3.367,"disclosure":"aggregated_residual"}
+        {"label":"Umsatzerlöse aus Handel","category":"commercial","subcategory":"sponsorship_commercial","amount":10.597,"disclosure":"detailed"},
+        {
+          "label": "Umsatzerlöse aus Transfer- u. Leihgeschäft",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 193.146,
+          "disclosure": "detailed"
+        },
+        {"label":"Umsatzerlöse aus Sonstigem","category":"other_revenue","subcategory":"other_income","amount":9.971,"disclosure":"detailed"},
+        {
+          "label": "Erhöhung (+) oder Verminderung (-) des Bestands an unfertigen Leistungen",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -0.106,
+          "disclosure": "detailed"
+        },
+        {"label":"Sonstige betriebliche Erträge","category":"other_revenue","subcategory":"other_income","amount":3.367,"disclosure":"aggregated_residual"}
       ],
       "expenses": [
-        {"label":"Materialaufwand (Aufwendungen für bezogene Waren)","category":"other_expenses","amount":-2.436,"disclosure":"detailed"},
+        {
+          "label": "Materialaufwand (Aufwendungen für bezogene Waren)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.436,
+          "disclosure": "detailed"
+        },
         {
           "label": "Personalaufwand",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -200.693,
           "disclosure": "aggregated_residual",
           "items": [["Löhne und Gehälter",-192.558],["Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",-8.135]]
         },
-        {"label":"Abschreibungen auf Spielerwerte","category":"player_amortisation","amount":-95.541,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf sonstige immaterielle Vermögensgegenstände","category":"other_amortisation","amount":-2.183,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-5.194,"disclosure":"detailed"},
-        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-148.096,"disclosure":"aggregated_residual"}
+        {
+          "label": "Abschreibungen auf Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -95.541,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen auf sonstige immaterielle Vermögensgegenstände",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -2.183,
+          "disclosure": "detailed"
+        },
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-5.194,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -148.096,
+          "disclosure": "aggregated_residual"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.109,"tax":-3.726,"gross_debt":153.717,"cash":0.783},
       "official_totals": {"revenue":466.668,"expenses":454.143,"net_result":4.69}
@@ -177,34 +288,67 @@
       "revenue": [
         {
           "label": "Umsatzerlöse aus Spielbetrieb (incluye sponsoring, matchday y TV sin desglosar más, ver Anhang 4.1)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 356.602,
           "disclosure": "aggregated_residual"
         },
-        {"label":"Umsatzerlöse aus Handel","category":"sponsorship_commercial","amount":16.95,"disclosure":"detailed"},
-        {"label":"Umsatzerlöse aus Transfer- u. Leihgeschäft","category":"player_sales","amount":74.108,"disclosure":"detailed"},
-        {"label":"Umsatzerlöse aus Sonstigem","category":"other_income","amount":7.292,"disclosure":"detailed"},
+        {"label":"Umsatzerlöse aus Handel","category":"commercial","subcategory":"sponsorship_commercial","amount":16.95,"disclosure":"detailed"},
+        {
+          "label": "Umsatzerlöse aus Transfer- u. Leihgeschäft",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 74.108,
+          "disclosure": "detailed"
+        },
+        {"label":"Umsatzerlöse aus Sonstigem","category":"other_revenue","subcategory":"other_income","amount":7.292,"disclosure":"detailed"},
         {
           "label": "Erhöhung (+) oder Verminderung (-) des Bestands an unfertigen Leistungen",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 0.10952,
           "disclosure": "detailed"
         },
-        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":5.643216,"disclosure":"aggregated_residual"}
+        {"label":"Sonstige betriebliche Erträge","category":"other_revenue","subcategory":"other_income","amount":5.643216,"disclosure":"aggregated_residual"}
       ],
       "expenses": [
-        {"label":"Materialaufwand (Aufwendungen für bezogene Waren)","category":"other_expenses","amount":-2.730835,"disclosure":"detailed"},
+        {
+          "label": "Materialaufwand (Aufwendungen für bezogene Waren)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.730835,
+          "disclosure": "detailed"
+        },
         {
           "label": "Personalaufwand",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -207.141181,
           "disclosure": "aggregated_residual",
           "items": [["Löhne und Gehälter",-198.188897],["Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",-8.952283]]
         },
-        {"label":"Abschreibungen auf Spielerwerte","category":"player_amortisation","amount":-112.873948,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf sonstige immaterielle Vermögensgegenstände","category":"other_amortisation","amount":-1.018344,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-4.914196,"disclosure":"detailed"},
-        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-122.475276,"disclosure":"aggregated_residual"}
+        {
+          "label": "Abschreibungen auf Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -112.873948,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen auf sonstige immaterielle Vermögensgegenstände",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -1.018344,
+          "disclosure": "detailed"
+        },
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-4.914196,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -122.475276,
+          "disclosure": "aggregated_residual"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.929727,"tax":-5.019911,"gross_debt":162.104,"cash":0.714562},
       "official_totals": {"revenue":460.704357,"expenses":451.15378,"net_result":1.600939}

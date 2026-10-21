@@ -111,6 +111,7 @@ function loadEngine() {
   return vm.runInContext(`({
     computeYearGeneric, toDisplayValue, bucketize, yearMetaFor, toleranciaTieOut, montosTieOut,
     REVENUE_CATEGORIES, EXPENSE_CATEGORIES,
+    GENERIC_REVENUE_CATEGORIES, GENERIC_EXPENSE_CATEGORIES, SPORT_TAXONOMIES, genericCategoryOf,
     REVENUE_BUCKETS: GENERIC_SIMPLIFIED_REVENUE_BUCKETS,
     EXPENSE_BUCKETS: GENERIC_SIMPLIFIED_EXPENSE_BUCKETS,
     clubs, sources, gestionesByClub, CURRENCY_META,
@@ -275,13 +276,55 @@ function checkCategorias(api) {
     if (Math.abs(visto - (-100)) > 0.01) {
       add('P0', 'categoria-huerfana', `EXPENSE_CATEGORIES incluye '${cat}' pero computeYearGeneric() no la suma en ninguna rama: la plata de esa categoría desaparece de todo cálculo del sitio`);
     }
+    // to-do 248: la rama del motor donde cayó tiene que ser el bloque de su genérica (data/category-map.js), que es lo que publica el JSON.
+    const rama = c.expenses === -100 ? 'operating' : c.nonCash === -100 ? 'non_cash' : c.exceptionalItems === -100 ? 'exceptional' : null;
+    const gen = api.SPORT_TAXONOMIES.futbol.expense[cat];
+    const bloque = (api.GENERIC_EXPENSE_CATEGORIES.find(g => g.id === gen) || {}).block;
+    if (rama && bloque && rama !== bloque) {
+      add('P1', 'bloque-motor-distinto', `'${cat}' -> genérica '${gen}' (bloque ${bloque}), pero computeYearGeneric() la suma en ${rama}: el resultado que publica la capa genérica no coincide con el del sitio`);
+    }
   }
   delete api.generic[PROBE];
+
+  checkTaxonomiaGenerica(api);
 
   const enBucket = new Set([...api.REVENUE_BUCKETS, ...api.EXPENSE_BUCKETS].flatMap(b => b.cats));
   const fuera = [...api.REVENUE_CATEGORIES, ...api.EXPENSE_CATEGORIES].filter(c => !enBucket.has(c));
   if (fuera.length) {
     add('P3', 'categoria-sin-bucket', `Categorías sin fila propia en Formato simplificado (caen al catch-all, puede ser a propósito): ${fuera.join(', ')}`);
+  }
+}
+
+// --- to-do 248: la capa genérica (data/category-map.js, SPORT_TAXONOMIES) -----------------------------------------------------
+// taxonomia-incompleta (P1): una subcategoría sin genérica, una genérica que no existe o sin bloque, o una línea cargada cuyo par
+// (lado, subcategoría) no está en el mapa: su JSON no se podría escribir (tools/json-datos.mjs exige el par).
+// fila-parte-generica (P2): una genérica cuyas subcategorías caen en dos filas de Formato simplificado; la pantalla y la capa genérica
+// dejarían de agrupar igual.
+function checkTaxonomiaGenerica(api) {
+  const tax = api.SPORT_TAXONOMIES.futbol;
+  const lados = [
+    ['ingreso', api.REVENUE_CATEGORIES, tax.revenue, api.GENERIC_REVENUE_CATEGORIES, api.REVENUE_BUCKETS],
+    ['gasto', api.EXPENSE_CATEGORIES, tax.expense, api.GENERIC_EXPENSE_CATEGORIES, api.EXPENSE_BUCKETS],
+  ];
+  for (const [lado, subs, mapa, genericas, buckets] of lados) {
+    const ids = new Set(genericas.map(g => g.id));
+    for (const g of genericas) if (!['revenue', 'operating', 'non_cash', 'exceptional'].includes(g.block)) add('P1', 'taxonomia-incompleta', `genérica de ${lado} '${g.id}' con bloque '${g.block}'`);
+    for (const sub of subs) if (!mapa[sub]) add('P1', 'taxonomia-incompleta', `la subcategoría de ${lado} '${sub}' no tiene genérica en SPORT_TAXONOMIES.futbol`);
+    for (const [sub, gen] of Object.entries(mapa)) if (!ids.has(gen)) add('P1', 'taxonomia-incompleta', `'${sub}' (${lado}) apunta a la genérica '${gen}', que no existe`);
+    const filaDe = (sub) => (buckets.find(b => b.cats.includes(sub)) || {}).label || '(catch-all)';
+    const filas = new Map();
+    for (const [sub, gen] of Object.entries(mapa)) { if (!filas.has(gen)) filas.set(gen, new Set()); filas.get(gen).add(filaDe(sub)); }
+    for (const [gen, f] of filas) if (f.size > 1) add('P2', 'fila-parte-generica', `la genérica de ${lado} '${gen}' cae en ${f.size} filas de Formato simplificado: ${[...f].join(' / ')}`);
+  }
+  // Una línea con una subcategoría del otro lado tiene genérica (la catch-all de su lado, genericCategoryOf); una que no existe ya es P0
+  // (categoria-inexistente). Acá queda solo el caso de una subcategoría declarada en category-map.js que el mapa no resuelve.
+  for (const { clubId, year, rev, exp } of clubYears(api)) {
+    for (const [lado, side, lines] of [['ingreso', 'revenue', rev], ['gasto', 'expense', exp]]) {
+      for (const l of lines) {
+        const declarada = api.REVENUE_CATEGORIES.includes(l.normalizedCategory) || api.EXPENSE_CATEGORIES.includes(l.normalizedCategory);
+        if (declarada && !api.genericCategoryOf('futbol', side, l.normalizedCategory)) add('P1', 'taxonomia-incompleta', `${ref(clubId, year)} ${lado} "${l.rawLabel}": la subcategoría '${l.normalizedCategory}' no tiene genérica`);
+      }
+    }
   }
 }
 
@@ -913,7 +956,7 @@ const GENERADORES = [
   ['estimar.mjs',               'data/estimados/ (y ningún estimado al lado de un año real)', 'estimados-desfasado'], // to-do 270; sin la carpeta, no chequea
   ['generate-sponsors.js',      'data/sponsors.js (sponsors y marcas de cada liga)', 'sponsors-desfasado'], // to-do 273; une equipos a clubes del sitio
   ['generar-data.mjs',          'los data/<país>/<id>-data.js (se generan de su JSON: nunca a mano)', 'json-js-desfasado'], // to-do 245: el JSON es la fuente
-  ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v1.json)', 'json-no-valida'],
+  ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v2.json)', 'json-no-valida'],
   ['generar-correcciones.mjs',  'data/correcciones/ (el registro público de correcciones, to-do 247)', 'correcciones-desfasado'],
 ];
 function checkGenerados() {

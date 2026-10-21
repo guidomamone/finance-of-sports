@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "GB",
     "reporting_currency": "GBP",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -57,23 +58,35 @@
       "management_id": null,
       "fx": {"ref":"GBP@2022-06-30"},
       "revenue": [
-        {"label":"Match and season ticket income","category":"matchday_competition","amount":5.136,"disclosure":"aggregated"},
-        {"label":"English football league and FA Cup income","category":"broadcasting","amount":4.948,"disclosure":"aggregated"},
-        {"label":"Premier League income","category":"broadcasting","amount":37.886,"disclosure":"aggregated"},
-        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":2.276,"disclosure":"aggregated"},
-        {"label":"Hospitality and events","category":"other_income","amount":1.597,"disclosure":"aggregated"},
-        {"label":"Shop merchandise","category":"sponsorship_commercial","amount":1.102,"disclosure":"aggregated"},
-        {"label":"Other income","category":"other_income","amount":0.281,"disclosure":"aggregated"},
-        {"label":"Other operating income","category":"other_income","amount":0.712,"disclosure":"aggregated"},
-        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":6.853,"disclosure":"aggregated"}
+        {"label":"Match and season ticket income","category":"matchday","subcategory":"matchday_competition","amount":5.136,"disclosure":"aggregated"},
+        {"label":"English football league and FA Cup income","category":"media_rights","subcategory":"broadcasting","amount":4.948,"disclosure":"aggregated"},
+        {"label":"Premier League income","category":"media_rights","subcategory":"broadcasting","amount":37.886,"disclosure":"aggregated"},
+        {"label":"Sponsorship and advertising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.276,"disclosure":"aggregated"},
+        {"label":"Hospitality and events","category":"other_revenue","subcategory":"other_income","amount":1.597,"disclosure":"aggregated"},
+        {"label":"Shop merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":1.102,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_revenue","subcategory":"other_income","amount":0.281,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":0.712,"disclosure":"aggregated"},
+        {
+          "label": "Profit on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 6.853,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Wages and salaries","category":"wages_squad","amount":-54.019,"disclosure":"aggregated"},
-        {"label":"Social security costs","category":"wages_squad","amount":-6.97,"disclosure":"aggregated"},
-        {"label":"Other pension costs","category":"wages_squad","amount":-0.392,"disclosure":"aggregated"},
-        {"label":"Depreciation of tangible assets","category":"depreciation","amount":-1.242,"disclosure":"aggregated"},
-        {"label":"Amortisation of intangibles","category":"player_amortisation","amount":-29.786,"disclosure":"aggregated"},
-        {"label":"Other operating expenses","category":"other_expenses","amount":-17.131,"disclosure":"aggregated"}
+        {"label":"Wages and salaries","category":"first_team_staff","subcategory":"wages_squad","amount":-54.019,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"first_team_staff","subcategory":"wages_squad","amount":-6.97,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"first_team_staff","subcategory":"wages_squad","amount":-0.392,"disclosure":"aggregated"},
+        {"label":"Depreciation of tangible assets","category":"depreciation","subcategory":"depreciation","amount":-1.242,"disclosure":"aggregated"},
+        {
+          "label": "Amortisation of intangibles",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -29.786,
+          "disclosure": "aggregated"
+        },
+        {"label":"Other operating expenses","category":"other_operating_expenses","subcategory":"other_expenses","amount":-17.131,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.761,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":60.791,"expenses":109.54,"net_result":-55.51},
@@ -94,24 +107,36 @@
       "management_id": null,
       "fx": {"ref":"GBP@2023-06-30"},
       "revenue": [
-        {"label":"Match and season ticket income","category":"matchday_competition","amount":5.414,"disclosure":"aggregated"},
-        {"label":"English football league and FA Cup income","category":"broadcasting","amount":0.773,"disclosure":"aggregated"},
-        {"label":"Premier League income","category":"broadcasting","amount":122.203,"disclosure":"aggregated"},
-        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":8.652,"disclosure":"aggregated"},
-        {"label":"Hospitality and events","category":"other_income","amount":2.267,"disclosure":"aggregated"},
-        {"label":"Shop merchandise","category":"sponsorship_commercial","amount":1.354,"disclosure":"aggregated"},
-        {"label":"Other income","category":"other_income","amount":0.32,"disclosure":"aggregated"},
-        {"label":"Other operating income","category":"other_income","amount":2.035,"disclosure":"aggregated"},
-        {"label":"Exceptional other operating income","category":"other_income","amount":71.444,"disclosure":"aggregated"},
-        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":1.898,"disclosure":"aggregated"}
+        {"label":"Match and season ticket income","category":"matchday","subcategory":"matchday_competition","amount":5.414,"disclosure":"aggregated"},
+        {"label":"English football league and FA Cup income","category":"media_rights","subcategory":"broadcasting","amount":0.773,"disclosure":"aggregated"},
+        {"label":"Premier League income","category":"media_rights","subcategory":"broadcasting","amount":122.203,"disclosure":"aggregated"},
+        {"label":"Sponsorship and advertising","category":"commercial","subcategory":"sponsorship_commercial","amount":8.652,"disclosure":"aggregated"},
+        {"label":"Hospitality and events","category":"other_revenue","subcategory":"other_income","amount":2.267,"disclosure":"aggregated"},
+        {"label":"Shop merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":1.354,"disclosure":"aggregated"},
+        {"label":"Other income","category":"other_revenue","subcategory":"other_income","amount":0.32,"disclosure":"aggregated"},
+        {"label":"Other operating income","category":"other_revenue","subcategory":"other_income","amount":2.035,"disclosure":"aggregated"},
+        {"label":"Exceptional other operating income","category":"other_revenue","subcategory":"other_income","amount":71.444,"disclosure":"aggregated"},
+        {
+          "label": "Profit on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1.898,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Wages and salaries","category":"wages_squad","amount":-87.832,"disclosure":"aggregated"},
-        {"label":"Social security costs","category":"wages_squad","amount":-12.181,"disclosure":"aggregated"},
-        {"label":"Other pension costs","category":"wages_squad","amount":-0.096,"disclosure":"aggregated"},
-        {"label":"Depreciation of tangible assets","category":"depreciation","amount":-1.484,"disclosure":"aggregated"},
-        {"label":"Amortisation of intangibles","category":"player_amortisation","amount":-41.226,"disclosure":"aggregated"},
-        {"label":"Other operating expenses","category":"other_expenses","amount":-21.471,"disclosure":"aggregated"}
+        {"label":"Wages and salaries","category":"first_team_staff","subcategory":"wages_squad","amount":-87.832,"disclosure":"aggregated"},
+        {"label":"Social security costs","category":"first_team_staff","subcategory":"wages_squad","amount":-12.181,"disclosure":"aggregated"},
+        {"label":"Other pension costs","category":"first_team_staff","subcategory":"wages_squad","amount":-0.096,"disclosure":"aggregated"},
+        {"label":"Depreciation of tangible assets","category":"depreciation","subcategory":"depreciation","amount":-1.484,"disclosure":"aggregated"},
+        {
+          "label": "Amortisation of intangibles",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -41.226,
+          "disclosure": "aggregated"
+        },
+        {"label":"Other operating expenses","category":"other_operating_expenses","subcategory":"other_expenses","amount":-21.471,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.575,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":216.36,"expenses":164.29,"net_result":44.495},
@@ -132,28 +157,48 @@
       "management_id": "foley",
       "fx": {"ref":"GBP@2024-06-30"},
       "revenue": [
-        {"label":"Match and season ticket income","category":"matchday_competition","amount":6.531,"disclosure":"detailed"},
-        {"label":"Premier League income","category":"broadcasting","amount":135.631,"disclosure":"detailed"},
-        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":12.12,"disclosure":"detailed"},
-        {"label":"Hospitality and events","category":"other_income","amount":3.226,"disclosure":"detailed"},
-        {"label":"Shop merchandise","category":"sponsorship_commercial","amount":1.542,"disclosure":"detailed"},
-        {"label":"Other income","category":"other_income","amount":1.742,"disclosure":"not_disclosed"},
+        {"label":"Match and season ticket income","category":"matchday","subcategory":"matchday_competition","amount":6.531,"disclosure":"detailed"},
+        {"label":"Premier League income","category":"media_rights","subcategory":"broadcasting","amount":135.631,"disclosure":"detailed"},
+        {"label":"Sponsorship and advertising","category":"commercial","subcategory":"sponsorship_commercial","amount":12.12,"disclosure":"detailed"},
+        {"label":"Hospitality and events","category":"other_revenue","subcategory":"other_income","amount":3.226,"disclosure":"detailed"},
+        {"label":"Shop merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":1.542,"disclosure":"detailed"},
+        {"label":"Other income","category":"other_revenue","subcategory":"other_income","amount":1.742,"disclosure":"not_disclosed"},
         {
           "label": "Other operating income (amounts received for players on loan at other clubs)",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 8.257,
           "disclosure": "detailed"
         },
-        {"label":"Other operating income (resto, sin especificar)","category":"other_income","amount":0.568,"disclosure":"not_disclosed"},
-        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":0.251,"disclosure":"detailed"}
+        {
+          "label": "Other operating income (resto, sin especificar)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.568,
+          "disclosure": "not_disclosed"
+        },
+        {
+          "label": "Profit on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.251,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Staff costs","category":"wages_squad","amount":-136.17,"disclosure":"detailed"},
-        {"label":"Other operating expenses","category":"other_expenses","amount":-26.026,"disclosure":"not_disclosed"},
-        {"label":"Depreciation of tangible assets","category":"depreciation","amount":-1.896,"disclosure":"detailed"},
+        {"label":"Staff costs","category":"first_team_staff","subcategory":"wages_squad","amount":-136.17,"disclosure":"detailed"},
+        {
+          "label": "Other operating expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -26.026,
+          "disclosure": "not_disclosed"
+        },
+        {"label":"Depreciation of tangible assets","category":"depreciation","subcategory":"depreciation","amount":-1.896,"disclosure":"detailed"},
         {
           "label": "Amortisation of intangibles (jugadores + website/software, ~99,9% jugadores)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -61.616,
           "disclosure": "detailed"
         }
@@ -170,26 +215,57 @@
       "management_id": "foley",
       "fx": {"ref":"GBP@2025-06-30"},
       "revenue": [
-        {"label":"Match and season ticket income","category":"matchday_competition","amount":6.738,"disclosure":"detailed"},
-        {"label":"Premier League income","category":"broadcasting","amount":147.999,"disclosure":"detailed"},
-        {"label":"Sponsorship and advertising","category":"sponsorship_commercial","amount":18.107,"disclosure":"detailed"},
-        {"label":"Hospitality and events","category":"other_income","amount":4.672,"disclosure":"detailed"},
-        {"label":"Shop merchandise","category":"sponsorship_commercial","amount":1.868,"disclosure":"detailed"},
-        {"label":"Other income","category":"other_income","amount":2.332,"disclosure":"not_disclosed"},
+        {"label":"Match and season ticket income","category":"matchday","subcategory":"matchday_competition","amount":6.738,"disclosure":"detailed"},
+        {"label":"Premier League income","category":"media_rights","subcategory":"broadcasting","amount":147.999,"disclosure":"detailed"},
+        {"label":"Sponsorship and advertising","category":"commercial","subcategory":"sponsorship_commercial","amount":18.107,"disclosure":"detailed"},
+        {"label":"Hospitality and events","category":"other_revenue","subcategory":"other_income","amount":4.672,"disclosure":"detailed"},
+        {"label":"Shop merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":1.868,"disclosure":"detailed"},
+        {"label":"Other income","category":"other_revenue","subcategory":"other_income","amount":2.332,"disclosure":"not_disclosed"},
         {
           "label": "Other operating income (amounts received for players on loan at other clubs)",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 15.199,
           "disclosure": "detailed"
         },
-        {"label":"Other operating income (resto, sin especificar)","category":"other_income","amount":2.199,"disclosure":"not_disclosed"},
-        {"label":"Profit on disposal of players' registrations","category":"player_sales","amount":91.017,"disclosure":"detailed"}
+        {
+          "label": "Other operating income (resto, sin especificar)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 2.199,
+          "disclosure": "not_disclosed"
+        },
+        {
+          "label": "Profit on disposal of players' registrations",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 91.017,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Staff costs","category":"wages_squad","amount":-158.422,"disclosure":"detailed"},
-        {"label":"Other operating expenses","category":"other_expenses","amount":-31.281,"disclosure":"not_disclosed"},
-        {"label":"Depreciation of tangible assets and right-of-use assets","category":"depreciation","amount":-2.989,"disclosure":"detailed"},
-        {"label":"Amortisation of intangibles (jugadores + website/software)","category":"player_amortisation","amount":-69.165,"disclosure":"detailed"}
+        {"label":"Staff costs","category":"first_team_staff","subcategory":"wages_squad","amount":-158.422,"disclosure":"detailed"},
+        {
+          "label": "Other operating expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -31.281,
+          "disclosure": "not_disclosed"
+        },
+        {
+          "label": "Depreciation of tangible assets and right-of-use assets",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -2.989,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortisation of intangibles (jugadores + website/software)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -69.165,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-13.387,"tax":0,"gross_debt":48.905,"cash":47.236},
       "official_totals": {"revenue":290.131,"expenses":261.857,"net_result":14.887}

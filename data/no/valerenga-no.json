@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "NO",
     "reporting_currency": "NOK",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -47,44 +48,116 @@
       "management_id": null,
       "fx": {"ref":"NOK@2022-12-31"},
       "revenue": [
-        {"label":"AS · Sponsorinntekter","category":"sponsorship_commercial","amount":45.190549,"disclosure":"aggregated"},
-        {"label":"AS · Markeds- og medieinntekter","category":"broadcasting","amount":17.770123,"disclosure":"aggregated"},
-        {"label":"AS · Billettsalg (ordinært)","category":"matchday_competition","amount":13.764508,"disclosure":"aggregated"},
-        {"label":"AS · Økonomitjenester","category":"other_income","amount":0.15,"disclosure":"aggregated"},
-        {"label":"AS · Viderefakturert","category":"other_income","amount":4.007054,"disclosure":"aggregated"},
-        {"label":"AS · Diverse inntekter","category":"other_income","amount":3.320415,"disclosure":"aggregated"},
-        {"label":"Elite · Salgsprovisjoner og diverse salg","category":"other_income","amount":0.021814,"disclosure":"aggregated"},
-        {"label":"Elite · Cupkasse","category":"competition_bonus","amount":0.172,"disclosure":"aggregated"},
-        {"label":"Elite · Billettandel hospitalitykunder","category":"matchday_competition","amount":0.017821,"disclosure":"aggregated"},
-        {"label":"Elite · Spillersalg","category":"player_sales","amount":12.809036,"disclosure":"aggregated"},
-        {"label":"Elite · Solidaritetsinntekter","category":"player_sales","amount":0.501113,"disclosure":"aggregated"},
-        {"label":"Elite · Viderefakturering","category":"other_income","amount":0.028372,"disclosure":"aggregated"},
-        {"label":"Elite · Andre avtaler","category":"other_income","amount":1.387,"disclosure":"aggregated"},
-        {"label":"Elite · Tilskudd","category":"other_income","amount":2.994421,"disclosure":"aggregated"},
-        {"label":"Elite · Medlemskontigenter","category":"member_dues","amount":0.279,"disclosure":"aggregated"},
-        {"label":"Elite · Andre inntekter","category":"other_income","amount":0.167179,"disclosure":"aggregated"}
+        {"label":"AS · Sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":45.190549,"disclosure":"aggregated"},
+        {"label":"AS · Markeds- og medieinntekter","category":"media_rights","subcategory":"broadcasting","amount":17.770123,"disclosure":"aggregated"},
+        {"label":"AS · Billettsalg (ordinært)","category":"matchday","subcategory":"matchday_competition","amount":13.764508,"disclosure":"aggregated"},
+        {"label":"AS · Økonomitjenester","category":"other_revenue","subcategory":"other_income","amount":0.15,"disclosure":"aggregated"},
+        {"label":"AS · Viderefakturert","category":"other_revenue","subcategory":"other_income","amount":4.007054,"disclosure":"aggregated"},
+        {"label":"AS · Diverse inntekter","category":"other_revenue","subcategory":"other_income","amount":3.320415,"disclosure":"aggregated"},
+        {
+          "label": "Elite · Salgsprovisjoner og diverse salg",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.021814,
+          "disclosure": "aggregated"
+        },
+        {"label":"Elite · Cupkasse","category":"prize_money","subcategory":"competition_bonus","amount":0.172,"disclosure":"aggregated"},
+        {
+          "label": "Elite · Billettandel hospitalitykunder",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 0.017821,
+          "disclosure": "aggregated"
+        },
+        {"label":"Elite · Spillersalg","category":"player_transfers","subcategory":"player_sales","amount":12.809036,"disclosure":"aggregated"},
+        {"label":"Elite · Solidaritetsinntekter","category":"player_transfers","subcategory":"player_sales","amount":0.501113,"disclosure":"aggregated"},
+        {"label":"Elite · Viderefakturering","category":"other_revenue","subcategory":"other_income","amount":0.028372,"disclosure":"aggregated"},
+        {"label":"Elite · Andre avtaler","category":"other_revenue","subcategory":"other_income","amount":1.387,"disclosure":"aggregated"},
+        {"label":"Elite · Tilskudd","category":"other_revenue","subcategory":"other_income","amount":2.994421,"disclosure":"aggregated"},
+        {"label":"Elite · Medlemskontigenter","category":"membership","subcategory":"member_dues","amount":0.279,"disclosure":"aggregated"},
+        {"label":"Elite · Andre inntekter","category":"other_revenue","subcategory":"other_income","amount":0.167179,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"AS · Varekostnad","category":"other_expenses","amount":-0.175871,"disclosure":"aggregated"},
-        {"label":"AS · Lønninger","category":"wages_squad","amount":-9.410081,"disclosure":"aggregated"},
-        {"label":"AS · Arbeidsgiveravgift","category":"wages_squad","amount":-1.612415,"disclosure":"aggregated"},
-        {"label":"AS · Pensjonskostnader","category":"wages_squad","amount":-0.396783,"disclosure":"aggregated"},
-        {"label":"AS · Andre ytelser","category":"wages_squad","amount":-0.198462,"disclosure":"aggregated"},
-        {"label":"AS · Avskrivning av driftsmidler","category":"depreciation","amount":-1.075775,"disclosure":"aggregated"},
-        {"label":"AS · Annen driftskostnad","category":"other_expenses","amount":-31.291505,"disclosure":"aggregated"},
-        {"label":"Elite · Lønninger","category":"wages_squad","amount":-51.102721,"disclosure":"aggregated"},
-        {"label":"Elite · Folketrygdavgift","category":"wages_squad","amount":-7.892534,"disclosure":"aggregated"},
-        {"label":"Elite · Pensjonskostnader","category":"wages_squad","amount":-0.598856,"disclosure":"aggregated"},
-        {"label":"Elite · Andre lønns- og personalkostnader","category":"wages_squad","amount":-0.1785,"disclosure":"aggregated"},
-        {"label":"Elite · Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":-0.243818,"disclosure":"aggregated"},
-        {"label":"Elite · Kontorhold, hus og lokaler","category":"admin_general_expense","amount":-1.665801,"disclosure":"aggregated"},
-        {"label":"Elite · Bilgodtgjørelse, diett og transport","category":"match_organisation_expense","amount":-0.325448,"disclosure":"aggregated"},
-        {"label":"Elite · Trening, kurs og utdanning","category":"other_expenses","amount":-2.283968,"disclosure":"aggregated"},
-        {"label":"Elite · Utstyr, varekost","category":"other_expenses","amount":-0.524734,"disclosure":"aggregated"},
-        {"label":"Elite · Kjøp og leie av spillere","category":"other_expenses","amount":-23.24717,"disclosure":"aggregated"},
-        {"label":"Elite · Arrangementskostnader","category":"match_organisation_expense","amount":-1.521252,"disclosure":"aggregated"},
-        {"label":"Elite · Bane, anlegg og maskiner","category":"admin_general_expense","amount":-0.150133,"disclosure":"aggregated"},
-        {"label":"Elite · Annen driftskostnad","category":"other_expenses","amount":-3.143455,"disclosure":"aggregated"}
+        {"label":"AS · Varekostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.175871,"disclosure":"aggregated"},
+        {"label":"AS · Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-9.410081,"disclosure":"aggregated"},
+        {"label":"AS · Arbeidsgiveravgift","category":"first_team_staff","subcategory":"wages_squad","amount":-1.612415,"disclosure":"aggregated"},
+        {"label":"AS · Pensjonskostnader","category":"first_team_staff","subcategory":"wages_squad","amount":-0.396783,"disclosure":"aggregated"},
+        {"label":"AS · Andre ytelser","category":"first_team_staff","subcategory":"wages_squad","amount":-0.198462,"disclosure":"aggregated"},
+        {"label":"AS · Avskrivning av driftsmidler","category":"depreciation","subcategory":"depreciation","amount":-1.075775,"disclosure":"aggregated"},
+        {
+          "label": "AS · Annen driftskostnad",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -31.291505,
+          "disclosure": "aggregated"
+        },
+        {"label":"Elite · Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-51.102721,"disclosure":"aggregated"},
+        {"label":"Elite · Folketrygdavgift","category":"first_team_staff","subcategory":"wages_squad","amount":-7.892534,"disclosure":"aggregated"},
+        {"label":"Elite · Pensjonskostnader","category":"first_team_staff","subcategory":"wages_squad","amount":-0.598856,"disclosure":"aggregated"},
+        {
+          "label": "Elite · Andre lønns- og personalkostnader",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.1785,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.243818,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Kontorhold, hus og lokaler",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.665801,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Bilgodtgjørelse, diett og transport",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.325448,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Trening, kurs og utdanning",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.283968,
+          "disclosure": "aggregated"
+        },
+        {"label":"Elite · Utstyr, varekost","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.524734,"disclosure":"aggregated"},
+        {
+          "label": "Elite · Kjøp og leie av spillere",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -23.24717,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Arrangementskostnader",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.521252,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Bane, anlegg og maskiner",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.150133,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Annen driftskostnad",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -3.143455,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-8.22635,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":102.580405,"expenses":137.039282,"net_result":-42.685226},
@@ -109,44 +182,110 @@
       "management_id": null,
       "fx": {"ref":"NOK@2023-12-31"},
       "revenue": [
-        {"label":"AS · Sponsorinntekter","category":"sponsorship_commercial","amount":50.500894,"disclosure":"aggregated"},
-        {"label":"AS · Markeds- og medieinntekter","category":"broadcasting","amount":29.023425,"disclosure":"aggregated"},
-        {"label":"AS · Billettsalg (ordinært)","category":"matchday_competition","amount":18.839129,"disclosure":"aggregated"},
-        {"label":"AS · Viderefakturert","category":"other_income","amount":1.480699,"disclosure":"aggregated"},
-        {"label":"AS · Diverse inntekter","category":"other_income","amount":0.710914,"disclosure":"aggregated"},
-        {"label":"Elite · Cupkasse","category":"competition_bonus","amount":0.929674,"disclosure":"aggregated"},
-        {"label":"Elite · Billettandel hospitalitykunder","category":"matchday_competition","amount":0.06,"disclosure":"aggregated"},
-        {"label":"Elite · Spillersalg","category":"player_sales","amount":94.331926,"disclosure":"aggregated"},
-        {"label":"Elite · Utleie spillere","category":"player_sales","amount":0.417557,"disclosure":"aggregated"},
-        {"label":"Elite · Solidaritetsinntekter","category":"player_sales","amount":-0.054211,"disclosure":"aggregated"},
-        {"label":"Elite · Viderefakturering (kostnad)","category":"other_income","amount":-0.221531,"disclosure":"aggregated"},
-        {"label":"Elite · Andre avtaler","category":"other_income","amount":0.876639,"disclosure":"aggregated"},
-        {"label":"Elite · Tilskudd","category":"other_income","amount":4.10653,"disclosure":"aggregated"},
-        {"label":"Elite · Medlemskontigenter","category":"member_dues","amount":0.3996,"disclosure":"aggregated"},
-        {"label":"Elite · Andre inntekter (kostnad)","category":"other_income","amount":-0.348595,"disclosure":"aggregated"}
+        {"label":"AS · Sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":50.500894,"disclosure":"aggregated"},
+        {"label":"AS · Markeds- og medieinntekter","category":"media_rights","subcategory":"broadcasting","amount":29.023425,"disclosure":"aggregated"},
+        {"label":"AS · Billettsalg (ordinært)","category":"matchday","subcategory":"matchday_competition","amount":18.839129,"disclosure":"aggregated"},
+        {"label":"AS · Viderefakturert","category":"other_revenue","subcategory":"other_income","amount":1.480699,"disclosure":"aggregated"},
+        {"label":"AS · Diverse inntekter","category":"other_revenue","subcategory":"other_income","amount":0.710914,"disclosure":"aggregated"},
+        {"label":"Elite · Cupkasse","category":"prize_money","subcategory":"competition_bonus","amount":0.929674,"disclosure":"aggregated"},
+        {"label":"Elite · Billettandel hospitalitykunder","category":"matchday","subcategory":"matchday_competition","amount":0.06,"disclosure":"aggregated"},
+        {"label":"Elite · Spillersalg","category":"player_transfers","subcategory":"player_sales","amount":94.331926,"disclosure":"aggregated"},
+        {"label":"Elite · Utleie spillere","category":"player_transfers","subcategory":"player_sales","amount":0.417557,"disclosure":"aggregated"},
+        {"label":"Elite · Solidaritetsinntekter","category":"player_transfers","subcategory":"player_sales","amount":-0.054211,"disclosure":"aggregated"},
+        {"label":"Elite · Viderefakturering (kostnad)","category":"other_revenue","subcategory":"other_income","amount":-0.221531,"disclosure":"aggregated"},
+        {"label":"Elite · Andre avtaler","category":"other_revenue","subcategory":"other_income","amount":0.876639,"disclosure":"aggregated"},
+        {"label":"Elite · Tilskudd","category":"other_revenue","subcategory":"other_income","amount":4.10653,"disclosure":"aggregated"},
+        {"label":"Elite · Medlemskontigenter","category":"membership","subcategory":"member_dues","amount":0.3996,"disclosure":"aggregated"},
+        {"label":"Elite · Andre inntekter (kostnad)","category":"other_revenue","subcategory":"other_income","amount":-0.348595,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"AS · Varekostnad","category":"other_expenses","amount":-0.407396,"disclosure":"aggregated"},
-        {"label":"AS · Lønninger","category":"wages_squad","amount":-13.554362,"disclosure":"aggregated"},
-        {"label":"AS · Arbeidsgiveravgift","category":"wages_squad","amount":-1.899512,"disclosure":"aggregated"},
-        {"label":"AS · Pensjonskostnader","category":"wages_squad","amount":-0.209256,"disclosure":"aggregated"},
-        {"label":"AS · Andre ytelser","category":"wages_squad","amount":-0.166167,"disclosure":"aggregated"},
-        {"label":"AS · Avskrivning av driftsmidler","category":"depreciation","amount":-0.551516,"disclosure":"aggregated"},
-        {"label":"AS · Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":-2.268921,"disclosure":"aggregated"},
-        {"label":"AS · Annen driftskostnad","category":"other_expenses","amount":-28.680151,"disclosure":"aggregated"},
-        {"label":"Elite · Lønninger","category":"wages_squad","amount":-73.571116,"disclosure":"aggregated"},
-        {"label":"Elite · Folketrygdavgift","category":"wages_squad","amount":-10.732668,"disclosure":"aggregated"},
-        {"label":"Elite · Pensjonskostnader","category":"wages_squad","amount":-0.746634,"disclosure":"aggregated"},
-        {"label":"Elite · Andre lønns- og personalkostnader","category":"wages_squad","amount":-0.373668,"disclosure":"aggregated"},
-        {"label":"Elite · Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":-0.251414,"disclosure":"aggregated"},
-        {"label":"Elite · Kontorhold, hus og lokaler","category":"admin_general_expense","amount":-1.116196,"disclosure":"aggregated"},
-        {"label":"Elite · Bilgodtgjørelse, diett og transport","category":"match_organisation_expense","amount":-0.1196,"disclosure":"aggregated"},
-        {"label":"Elite · Trening, kurs og utdanning","category":"other_expenses","amount":-0.929208,"disclosure":"aggregated"},
-        {"label":"Elite · Utstyr, varekost","category":"other_expenses","amount":-0.597684,"disclosure":"aggregated"},
-        {"label":"Elite · Kjøp og leie av spillere","category":"other_expenses","amount":-56.604891,"disclosure":"aggregated"},
-        {"label":"Elite · Arrangementskostnader","category":"match_organisation_expense","amount":-1.807255,"disclosure":"aggregated"},
-        {"label":"Elite · Bane, anlegg og maskiner","category":"admin_general_expense","amount":-0.220263,"disclosure":"aggregated"},
-        {"label":"Elite · Annen driftskostnad","category":"other_expenses","amount":-5.252899,"disclosure":"aggregated"}
+        {"label":"AS · Varekostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.407396,"disclosure":"aggregated"},
+        {"label":"AS · Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-13.554362,"disclosure":"aggregated"},
+        {"label":"AS · Arbeidsgiveravgift","category":"first_team_staff","subcategory":"wages_squad","amount":-1.899512,"disclosure":"aggregated"},
+        {"label":"AS · Pensjonskostnader","category":"first_team_staff","subcategory":"wages_squad","amount":-0.209256,"disclosure":"aggregated"},
+        {"label":"AS · Andre ytelser","category":"first_team_staff","subcategory":"wages_squad","amount":-0.166167,"disclosure":"aggregated"},
+        {"label":"AS · Avskrivning av driftsmidler","category":"depreciation","subcategory":"depreciation","amount":-0.551516,"disclosure":"aggregated"},
+        {
+          "label": "AS · Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.268921,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "AS · Annen driftskostnad",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -28.680151,
+          "disclosure": "aggregated"
+        },
+        {"label":"Elite · Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-73.571116,"disclosure":"aggregated"},
+        {"label":"Elite · Folketrygdavgift","category":"first_team_staff","subcategory":"wages_squad","amount":-10.732668,"disclosure":"aggregated"},
+        {"label":"Elite · Pensjonskostnader","category":"first_team_staff","subcategory":"wages_squad","amount":-0.746634,"disclosure":"aggregated"},
+        {
+          "label": "Elite · Andre lønns- og personalkostnader",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.373668,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.251414,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Kontorhold, hus og lokaler",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.116196,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Bilgodtgjørelse, diett og transport",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.1196,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Trening, kurs og utdanning",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.929208,
+          "disclosure": "aggregated"
+        },
+        {"label":"Elite · Utstyr, varekost","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.597684,"disclosure":"aggregated"},
+        {
+          "label": "Elite · Kjøp og leie av spillere",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -56.604891,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Arrangementskostnader",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.807255,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Bane, anlegg og maskiner",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.220263,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Elite · Annen driftskostnad",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -5.252899,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":5.143771,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":201.05265,"expenses":200.060777,"net_result":6.135645},
@@ -170,21 +309,27 @@
       "management_id": null,
       "fx": {"ref":"NOK@2025-12-31"},
       "revenue": [
-        {"label":"Sponsorinntekter","category":"sponsorship_commercial","amount":44.538148,"disclosure":"aggregated"},
-        {"label":"Markeds- og medieinntekter","category":"broadcasting","amount":28.53763,"disclosure":"aggregated"},
-        {"label":"Billettsalg","category":"matchday_competition","amount":25.505735,"disclosure":"aggregated"},
-        {"label":"Viderefakturert","category":"other_income","amount":0.19539,"disclosure":"aggregated"},
-        {"label":"Diverse inntekter","category":"other_income","amount":1.047723,"disclosure":"aggregated"}
+        {"label":"Sponsorinntekter","category":"commercial","subcategory":"sponsorship_commercial","amount":44.538148,"disclosure":"aggregated"},
+        {"label":"Markeds- og medieinntekter","category":"media_rights","subcategory":"broadcasting","amount":28.53763,"disclosure":"aggregated"},
+        {"label":"Billettsalg","category":"matchday","subcategory":"matchday_competition","amount":25.505735,"disclosure":"aggregated"},
+        {"label":"Viderefakturert","category":"other_revenue","subcategory":"other_income","amount":0.19539,"disclosure":"aggregated"},
+        {"label":"Diverse inntekter","category":"other_revenue","subcategory":"other_income","amount":1.047723,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Varekostnad","category":"other_expenses","amount":-12.565199,"disclosure":"aggregated"},
-        {"label":"Lønninger","category":"wages_squad","amount":-11.905657,"disclosure":"aggregated"},
-        {"label":"Arbeidsgiveravgift","category":"wages_squad","amount":-1.802767,"disclosure":"aggregated"},
-        {"label":"Pensjonskostnader","category":"wages_squad","amount":-0.247852,"disclosure":"aggregated"},
-        {"label":"Andre ytelser","category":"wages_squad","amount":-2.302202,"disclosure":"aggregated"},
-        {"label":"Avskrivning av driftsmidler","category":"depreciation","amount":-0.185432,"disclosure":"aggregated"},
-        {"label":"Nedskrivning av varige driftsmidler og immaterielle eiendeler","category":"other_expenses","amount":-1.045077,"disclosure":"aggregated"},
-        {"label":"Annen driftskostnad","category":"other_expenses","amount":-98.900054,"disclosure":"aggregated"}
+        {"label":"Varekostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-12.565199,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-11.905657,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"first_team_staff","subcategory":"wages_squad","amount":-1.802767,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"first_team_staff","subcategory":"wages_squad","amount":-0.247852,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"first_team_staff","subcategory":"wages_squad","amount":-2.302202,"disclosure":"aggregated"},
+        {"label":"Avskrivning av driftsmidler","category":"depreciation","subcategory":"depreciation","amount":-0.185432,"disclosure":"aggregated"},
+        {
+          "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.045077,
+          "disclosure": "aggregated"
+        },
+        {"label":"Annen driftskostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-98.900054,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":31.72628,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":99.824626,"expenses":128.95424,"net_result":2.596666},

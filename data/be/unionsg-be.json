@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,28 +32,49 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Chiffre d'affaires","category":"lump_football_operations","amount":15.029834,"disclosure":"aggregated"},
+        {"label":"Chiffre d'affaires","category":"undisclosed","subcategory":"lump_football_operations","amount":15.029834,"disclosure":"aggregated"},
         {
           "label": "Autres produits d'exploitation",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 22.925706,
           "disclosure": "aggregated",
           "items": [["Subsides d’exploitation et montants compensatoires obtenus des pouvoirs publics (Nota 6.10)",10.074391],["Reste sans détail disponible",12.851315]]
         },
         {
           "label": "Produits d'exploitation non récurrents — Plus-values sur réalisation d'immobilisations incorporelles (droits sur joueurs)",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 20.715719,
           "disclosure": "detailed"
         },
-        {"label":"Produits d'exploitation non récurrents — Autres","category":"other_income","amount":0.096854,"disclosure":"detailed"}
+        {
+          "label": "Produits d'exploitation non récurrents — Autres",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.096854,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Approvisionnements et marchandises","category":"other_expenses","amount":-0.963428,"disclosure":"aggregated"},
-        {"label":"Services et biens divers","category":"other_expenses","amount":-18.078026,"disclosure":"aggregated"},
+        {
+          "label": "Approvisionnements et marchandises",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.963428,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Services et biens divers",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -18.078026,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Rémunérations, charges sociales et pensions",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -22.150441,
           "disclosure": "detailed",
           "items": [
@@ -63,15 +85,29 @@
         },
         {
           "label": "Amortissements — droits sur joueurs (immobilisations incorporelles)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -10.115265,
           "disclosure": "detailed"
         },
-        {"label":"Amortissements — immobilisations corporelles","category":"depreciation","amount":-0.449653,"disclosure":"detailed"},
-        {"label":"Réductions de valeur sur créances commerciales (dotations nettes)","category":"other_expenses","amount":-4.106085,"disclosure":"aggregated"},
+        {
+          "label": "Amortissements — immobilisations corporelles",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.449653,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Réductions de valeur sur créances commerciales (dotations nettes)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -4.106085,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Autres charges d'exploitation (impôts et taxes + autres, sin desglose confiable en la transcripción)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.266065,
           "disclosure": "aggregated"
         }

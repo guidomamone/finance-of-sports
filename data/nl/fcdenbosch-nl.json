@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "NL",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,13 +32,19 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Netto-omzet","category":"lump_football_operations","amount":5.133797,"disclosure":"aggregated"},
-        {"label":"Afschrijving en resultaat vergoedingssommen","category":"player_sales","amount":0.405859,"disclosure":"aggregated"}
+        {"label":"Netto-omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":5.133797,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijving en resultaat vergoedingssommen",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.405859,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Personeelskosten","category":"wages_squad","amount":-3.864955,"disclosure":"aggregated"},
-        {"label":"Afschrijvingen","category":"depreciation","amount":-0.165585,"disclosure":"aggregated"},
-        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-2.845217,"disclosure":"aggregated"}
+        {"label":"Personeelskosten","category":"first_team_staff","subcategory":"wages_squad","amount":-3.864955,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen","category":"depreciation","subcategory":"depreciation","amount":-0.165585,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.845217,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.057953,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":5.539656,"expenses":6.875757,"net_result":-1.394054},

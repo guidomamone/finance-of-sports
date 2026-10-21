@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "PT",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -45,33 +46,81 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
-        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.004999,"disclosure":"aggregated"},
-        {"label":"Prestação de serviços","category":"lump_football_operations","amount":0.571986,"disclosure":"aggregated"},
-        {"label":"Federação P. Futebol / LPFP","category":"other_income","amount":0.035053,"disclosure":"aggregated"},
-        {"label":"Fundo Infraestruturas - Liga Portuguesa F[ilegible]","category":"other_income","amount":0.014488,"disclosure":"aggregated"},
-        {"label":"IEFP","category":"other_income","amount":0.002019,"disclosure":"aggregated"},
-        {"label":"Rendimentos suplementares","category":"other_income","amount":0.330229,"disclosure":"aggregated"},
-        {"label":"Descontos de pronto pagamento obtidos","category":"other_income","amount":0.000011,"disclosure":"aggregated"},
-        {"label":"Rendimentos em investimentos não financeiros","category":"player_sales","amount":0.184,"disclosure":"aggregated"},
-        {"label":"Outras","category":"other_income","amount":0.002909,"disclosure":"aggregated"}
+        {"label":"Venda de mercadorias","category":"commercial","subcategory":"sponsorship_commercial","amount":0.004999,"disclosure":"aggregated"},
+        {"label":"Prestação de serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":0.571986,"disclosure":"aggregated"},
+        {"label":"Federação P. Futebol / LPFP","category":"other_revenue","subcategory":"other_income","amount":0.035053,"disclosure":"aggregated"},
+        {
+          "label": "Fundo Infraestruturas - Liga Portuguesa F[ilegible]",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.014488,
+          "disclosure": "aggregated"
+        },
+        {"label":"IEFP","category":"other_revenue","subcategory":"other_income","amount":0.002019,"disclosure":"aggregated"},
+        {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.330229,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento obtidos","category":"other_revenue","subcategory":"other_income","amount":0.000011,"disclosure":"aggregated"},
+        {
+          "label": "Rendimentos em investimentos não financeiros",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.184,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outras","category":"other_revenue","subcategory":"other_income","amount":0.002909,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.0015,"disclosure":"aggregated"},
-        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.082752,"disclosure":"aggregated"},
-        {"label":"Serviços especializados","category":"admin_general_expense","amount":-0.231986,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.036311,"disclosure":"aggregated"},
-        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.043194,"disclosure":"aggregated"},
-        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.123326,"disclosure":"aggregated"},
-        {"label":"Serviços diversos","category":"other_expenses","amount":-0.172768,"disclosure":"aggregated"},
-        {"label":"Salários e ordenados","category":"wages_squad","amount":-1.052248,"disclosure":"aggregated"},
-        {"label":"Gastos com rescisão de contratos","category":"wages_squad","amount":-0.0014,"disclosure":"aggregated"},
-        {"label":"Contribuições para a segurança social","category":"wages_squad","amount":-0.114754,"disclosure":"aggregated"},
-        {"label":"Outros gastos com o pessoal","category":"wages_squad","amount":-0.168701,"disclosure":"aggregated"},
-        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.000118,"disclosure":"aggregated"},
-        {"label":"Impostos","category":"admin_general_expense","amount":-0.005363,"disclosure":"aggregated"},
-        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.000005,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.079586,"disclosure":"aggregated"},
-        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.009282,"disclosure":"aggregated"}
+        {
+          "label": "Custo das mercadorias vendidas e das matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.0015,
+          "disclosure": "aggregated"
+        },
+        {"label":"Subcontratos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.082752,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-0.231986,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.036311,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.043194,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações, estadas e transportes",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.123326,
+          "disclosure": "aggregated"
+        },
+        {"label":"Serviços diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.172768,"disclosure":"aggregated"},
+        {"label":"Salários e ordenados","category":"first_team_staff","subcategory":"wages_squad","amount":-1.052248,"disclosure":"aggregated"},
+        {"label":"Gastos com rescisão de contratos","category":"first_team_staff","subcategory":"wages_squad","amount":-0.0014,"disclosure":"aggregated"},
+        {
+          "label": "Contribuições para a segurança social",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.114754,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros gastos com o pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-0.168701,"disclosure":"aggregated"},
+        {
+          "label": "Imparidade de dívidas a receber (perdas/reversões)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.000118,
+          "disclosure": "aggregated"
+        },
+        {"label":"Impostos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.005363,"disclosure":"aggregated"},
+        {
+          "label": "Descontos de pronto pagamento concedidos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.000005,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.079586,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/reversões de depreciação e de amortização",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.009282,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.070397,"tax":-0.024468,"gross_debt":3.674536,"cash":0.136569},
       "official_totals": {"revenue":1.145694,"expenses":2.123294,"net_result":-0.931672},
@@ -100,63 +149,105 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.031094,"disclosure":"aggregated"},
-        {"label":"Prestação de serviços","category":"lump_football_operations","amount":1.325492,"disclosure":"aggregated"},
-        {"label":"Não reembolsáveis: Subsídios relacionados com resultados - IEFP","category":"other_income","amount":0.005388,"disclosure":"aggregated"},
+        {"label":"Venda de mercadorias","category":"commercial","subcategory":"sponsorship_commercial","amount":0.031094,"disclosure":"aggregated"},
+        {"label":"Prestação de serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":1.325492,"disclosure":"aggregated"},
+        {
+          "label": "Não reembolsáveis: Subsídios relacionados com resultados - IEFP",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.005388,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Não reembolsáveis: Subsídios relacionados com resultados - Federação Portuguesa de Futebol",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 0.007317,
           "disclosure": "aggregated"
         },
         {
           "label": "Não reembolsáveis: Subsídios relacionados com resultados - Liga Portuguesa de Futebol Profissional",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 0.00625,
           "disclosure": "aggregated"
         },
         {
           "label": "Não reembolsáveis: Subsídios relacionados com resultados - Fundo Infraestruturas - LPF",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 0.030654,
           "disclosure": "aggregated"
         },
         {
           "label": "Não reembolsáveis: Subsídios relacionados com resultados - Prémio Allianz Cup - LPF",
-          "category": "competition_bonus",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
           "amount": 0.030536,
           "disclosure": "aggregated"
         },
         {
           "label": "Não reembolsáveis: Subsídios relacionados com resultados - Sub. Deslocação - FPF",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 0.008381,
           "disclosure": "aggregated"
         },
         {
           "label": "Não reembolsáveis: Subsídios relacionados com resultados - UD Oliveirense - fundos formação FIFA",
-          "category": "youth_football",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
           "amount": 0.021903,
           "disclosure": "aggregated"
         },
-        {"label":"Rendimentos suplementares","category":"other_income","amount":0.354967,"disclosure":"aggregated"},
-        {"label":"Descontos de pronto pagamento obtidos","category":"other_income","amount":0.000012,"disclosure":"aggregated"},
-        {"label":"Outras","category":"other_income","amount":0.01156,"disclosure":"aggregated"}
+        {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.354967,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento obtidos","category":"other_revenue","subcategory":"other_income","amount":0.000012,"disclosure":"aggregated"},
+        {"label":"Outras","category":"other_revenue","subcategory":"other_income","amount":0.01156,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.004185,"disclosure":"aggregated"},
-        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.0353,"disclosure":"aggregated"},
-        {"label":"Serviços especializados","category":"admin_general_expense","amount":-0.442202,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.040489,"disclosure":"aggregated"},
-        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.062784,"disclosure":"aggregated"},
-        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.186789,"disclosure":"aggregated"},
-        {"label":"Serviços diversos","category":"other_expenses","amount":-0.295107,"disclosure":"aggregated"},
-        {"label":"Salários e ordenados","category":"wages_squad","amount":-1.338885,"disclosure":"aggregated"},
-        {"label":"Contribuições para a segurança social","category":"wages_squad","amount":-0.139226,"disclosure":"aggregated"},
-        {"label":"Outros gastos com o pessoal","category":"wages_squad","amount":-0.172513,"disclosure":"aggregated"},
-        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":0,"disclosure":"aggregated"},
-        {"label":"Outros gastos","category":"other_expenses","amount":-0.37047,"disclosure":"aggregated"},
-        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.012037,"disclosure":"aggregated"}
+        {
+          "label": "Custo das mercadorias vendidas e das matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.004185,
+          "disclosure": "aggregated"
+        },
+        {"label":"Subcontratos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.0353,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-0.442202,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.040489,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.062784,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações, estadas e transportes",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.186789,
+          "disclosure": "aggregated"
+        },
+        {"label":"Serviços diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.295107,"disclosure":"aggregated"},
+        {"label":"Salários e ordenados","category":"first_team_staff","subcategory":"wages_squad","amount":-1.338885,"disclosure":"aggregated"},
+        {
+          "label": "Contribuições para a segurança social",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.139226,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros gastos com o pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-0.172513,"disclosure":"aggregated"},
+        {
+          "label": "Imparidade de dívidas a receber (perdas/reversões)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": 0,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.37047,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/reversões de depreciação e de amortização",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.012037,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.15916,"tax":-0.05477,"gross_debt":4.841621,"cash":0.414566},
       "official_totals": {"revenue":1.833554,"expenses":3.099986,"net_result":-1.162041},
@@ -185,35 +276,77 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Venda de mercadorias","category":"sponsorship_commercial","amount":0.008868,"disclosure":"aggregated"},
-        {"label":"Prestação de serviços","category":"lump_football_operations","amount":1.141257,"disclosure":"aggregated"},
-        {"label":"Federação Portuguesa de Futebol","category":"other_income","amount":0.004065,"disclosure":"aggregated"},
-        {"label":"Liga Portuguesa de Futebol Profissional","category":"other_income","amount":0.023905,"disclosure":"aggregated"},
-        {"label":"Fundo Infraestruturas - LPF","category":"other_income","amount":0.037254,"disclosure":"aggregated"},
-        {"label":"Prémio Allianz Cup -LPF","category":"competition_bonus","amount":0.008654,"disclosure":"aggregated"},
-        {"label":"Subs. Deslocação - FPF","category":"other_income","amount":0.001224,"disclosure":"aggregated"},
-        {"label":"UDO - Fundos Formação FIFA","category":"youth_football","amount":0.060763,"disclosure":"aggregated"},
-        {"label":"Rendimentos suplementares","category":"other_income","amount":0.574802,"disclosure":"aggregated"},
-        {"label":"Descontos de pronto pagamento obtidos","category":"other_income","amount":0.000001,"disclosure":"aggregated"},
-        {"label":"Outras","category":"other_income","amount":0.003995,"disclosure":"aggregated"}
+        {"label":"Venda de mercadorias","category":"commercial","subcategory":"sponsorship_commercial","amount":0.008868,"disclosure":"aggregated"},
+        {"label":"Prestação de serviços","category":"undisclosed","subcategory":"lump_football_operations","amount":1.141257,"disclosure":"aggregated"},
+        {"label":"Federação Portuguesa de Futebol","category":"other_revenue","subcategory":"other_income","amount":0.004065,"disclosure":"aggregated"},
+        {
+          "label": "Liga Portuguesa de Futebol Profissional",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.023905,
+          "disclosure": "aggregated"
+        },
+        {"label":"Fundo Infraestruturas - LPF","category":"other_revenue","subcategory":"other_income","amount":0.037254,"disclosure":"aggregated"},
+        {"label":"Prémio Allianz Cup -LPF","category":"prize_money","subcategory":"competition_bonus","amount":0.008654,"disclosure":"aggregated"},
+        {"label":"Subs. Deslocação - FPF","category":"other_revenue","subcategory":"other_income","amount":0.001224,"disclosure":"aggregated"},
+        {"label":"UDO - Fundos Formação FIFA","category":"other_sporting_sections","subcategory":"youth_football","amount":0.060763,"disclosure":"aggregated"},
+        {"label":"Rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.574802,"disclosure":"aggregated"},
+        {"label":"Descontos de pronto pagamento obtidos","category":"other_revenue","subcategory":"other_income","amount":0.000001,"disclosure":"aggregated"},
+        {"label":"Outras","category":"other_revenue","subcategory":"other_income","amount":0.003995,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.004274,"disclosure":"aggregated"},
-        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.026325,"disclosure":"aggregated"},
-        {"label":"Serviços especializados","category":"admin_general_expense","amount":-0.684726,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.038138,"disclosure":"aggregated"},
-        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.050141,"disclosure":"aggregated"},
-        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.229731,"disclosure":"aggregated"},
-        {"label":"Serviços diversos","category":"other_expenses","amount":-0.218521,"disclosure":"aggregated"},
-        {"label":"Salários e ordenados","category":"wages_squad","amount":-1.622765,"disclosure":"aggregated"},
-        {"label":"Gastos com rescisão de contratos","category":"wages_squad","amount":-0.122923,"disclosure":"aggregated"},
-        {"label":"Contribuições para a segurança social","category":"wages_squad","amount":-0.141045,"disclosure":"aggregated"},
-        {"label":"Outros gastos com o pessoal","category":"wages_squad","amount":-0.257717,"disclosure":"aggregated"},
-        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.03,"disclosure":"aggregated"},
-        {"label":"Impostos","category":"admin_general_expense","amount":-0.019071,"disclosure":"aggregated"},
-        {"label":"Descontos de pronto pagamento concedidos","category":"other_expenses","amount":-0.000001,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.07259,"disclosure":"aggregated"},
-        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-0.049917,"disclosure":"aggregated"}
+        {
+          "label": "Custo das mercadorias vendidas e das matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.004274,
+          "disclosure": "aggregated"
+        },
+        {"label":"Subcontratos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.026325,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-0.684726,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.038138,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.050141,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações, estadas e transportes",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.229731,
+          "disclosure": "aggregated"
+        },
+        {"label":"Serviços diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.218521,"disclosure":"aggregated"},
+        {"label":"Salários e ordenados","category":"first_team_staff","subcategory":"wages_squad","amount":-1.622765,"disclosure":"aggregated"},
+        {"label":"Gastos com rescisão de contratos","category":"first_team_staff","subcategory":"wages_squad","amount":-0.122923,"disclosure":"aggregated"},
+        {
+          "label": "Contribuições para a segurança social",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.141045,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros gastos com o pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-0.257717,"disclosure":"aggregated"},
+        {
+          "label": "Imparidade de dívidas a receber (perdas/reversões)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.03,
+          "disclosure": "aggregated"
+        },
+        {"label":"Impostos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.019071,"disclosure":"aggregated"},
+        {
+          "label": "Descontos de pronto pagamento concedidos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.000001,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.07259,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/reversões de depreciação e de amortização",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.049917,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.004548,"tax":-0.03774,"gross_debt":6.679944,"cash":0.744551},
       "official_totals": {"revenue":1.864788,"expenses":3.567885,"net_result":-1.736289},

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DK",
     "reporting_currency": "DKK",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -33,7 +34,8 @@
       "revenue": [
         {
           "label": "Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 61.744974,
           "disclosure": "aggregated"
         }
@@ -41,20 +43,23 @@
       "expenses": [
         {
           "label": "Løn- og personaleomkostninger (Løn og gager + Pensioner + Andre omkostninger til social sikring)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -54.229295,
           "disclosure": "detailed",
           "items": [["Løn og gager",-47.872434],["Pensioner",-4.269825],["Andre omkostninger til social sikring",-2.087037]]
         },
         {
           "label": "Kontraktrettigheder mv. — årets af- og nedskrivninger (amortisation for the year, player registrations)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -6.877926,
           "disclosure": "detailed"
         },
         {
           "label": "Indretning af lejede lokaler + Andre anlæg, driftsmateriel og inventar — årets af- og nedskrivninger",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -1.066125,
           "disclosure": "detailed",
           "items": [["Indretning af lejede lokaler",-0.479431],["Andre anlæg, driftsmateriel og inventar",-0.586694]]

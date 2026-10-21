@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "ES",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -32,31 +33,34 @@
       "management_id": "martinpresa",
       "fx": {"ref":"EUR@2025-06-30","source":"market_close"},
       "revenue": [
-        {"label":"Ingresos por competiciones","category":"competition_bonus","amount":1.990519,"disclosure":"summary"},
-        {"label":"Ingresos por abonados y socios","category":"season_tickets","amount":3.155612,"disclosure":"detailed"},
-        {"label":"Ingresos por retransmisión","category":"broadcasting","amount":43.206514,"disclosure":"summary"},
-        {"label":"Ingresos por comercialización","category":"sponsorship_commercial","amount":0.557798,"disclosure":"detailed"},
-        {"label":"Ingresos por publicidad","category":"sponsorship_commercial","amount":7.10728,"disclosure":"detailed"},
+        {"label":"Ingresos por competiciones","category":"prize_money","subcategory":"competition_bonus","amount":1.990519,"disclosure":"summary"},
+        {"label":"Ingresos por abonados y socios","category":"season_tickets","subcategory":"season_tickets","amount":3.155612,"disclosure":"detailed"},
+        {"label":"Ingresos por retransmisión","category":"media_rights","subcategory":"broadcasting","amount":43.206514,"disclosure":"summary"},
+        {"label":"Ingresos por comercialización","category":"commercial","subcategory":"sponsorship_commercial","amount":0.557798,"disclosure":"detailed"},
+        {"label":"Ingresos por publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":7.10728,"disclosure":"detailed"},
         {
           "label": "Otros ingresos de explotación (accesorios, gestión corriente y subvenciones)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 1.974943,
           "disclosure": "detailed",
           "items": [["Ingresos accesorios y otros de gestión corriente",0.472629],["Subvenciones de explotación incorporadas al resultado del ejercicio",1.502314]]
         },
-        {"label":"Excesos de provisiones","category":"other_income","amount":0.47025,"disclosure":"detailed"}
+        {"label":"Excesos de provisiones","category":"other_revenue","subcategory":"other_income","amount":0.47025,"disclosure":"detailed"}
       ],
       "expenses": [
         {
           "label": "Aprovisionamientos",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -1.291365,
           "disclosure": "detailed",
           "items": [["Compras de material deportivo",-1.042489],["Otros consumos",-0.248876]]
         },
         {
           "label": "Gastos de personal no deportivo",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -0.503022,
           "disclosure": "detailed",
           "items": [
@@ -68,7 +72,8 @@
         },
         {
           "label": "Gastos plantilla deportiva (inscribible y no inscribible en la LFP)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -34.816465,
           "disclosure": "detailed",
           "items": [
@@ -84,31 +89,40 @@
             ]
           ]
         },
-        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-6.783907,"disclosure":"detailed"},
-        {"label":"Tributos","category":"admin_general_expense","amount":-0.015975,"disclosure":"detailed"},
-        {"label":"Desplazamientos","category":"match_organisation_expense","amount":-0.51398,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-6.783907,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.015975,"disclosure":"detailed"},
+        {"label":"Desplazamientos","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.51398,"disclosure":"detailed"},
         {
           "label": "Gastos de adquisición de jugadores (plantilla inscribible y no inscribible en la LFP)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -4.643,
           "disclosure": "detailed",
           "items": [["Inscribible en la LFP",-4.625],["No inscribible en la LFP",-0.018]]
         },
         {
           "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -1.338815,
           "disclosure": "detailed"
         },
-        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-1.280966,"disclosure":"detailed"},
+        {
+          "label": "Otros gastos de gestión corriente",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.280966,
+          "disclosure": "detailed"
+        },
         {
           "label": "Amortización derechos adquisición de jugadores (inscribible y no inscribible en la LFP)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -7.038446,
           "disclosure": "detailed"
         },
-        {"label":"Otras amortizaciones","category":"other_amortisation","amount":-0.00333,"disclosure":"detailed"},
-        {"label":"Otros resultados","category":"other_expenses","amount":-0.230713,"disclosure":"detailed"}
+        {"label":"Otras amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-0.00333,"disclosure":"detailed"},
+        {"label":"Otros resultados","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.230713,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":1.5,"asset_sales":0,"net_interest":-0.04341,"tax":0.053444,"gross_debt":1.202364,"cash":39.714987},
       "official_totals": {"revenue":58.462916,"expenses":58.459984,"net_result":1.512965}

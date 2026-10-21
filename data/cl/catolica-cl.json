@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "CL",
     "reporting_currency": "CLP",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -137,31 +138,85 @@
       "management_id": null,
       "fx": {"ref":"CLP@2010-12-31"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":829.131,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":247.703,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":833.101,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":154.792,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":45.878,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":53.07,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":69.677,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":121.057,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":1001.531,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":22.892,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":57.097,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":36.418,"disclosure":"aggregated"},
-        {"label":"Otros Ingresos por función","category":"other_income","amount":5.219,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":829.131,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":247.703,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 833.101,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":154.792,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":45.878,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":53.07,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":69.677,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 121.057,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1001.531,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 22.892,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 57.097,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":36.418,"disclosure":"aggregated"},
+        {"label":"Otros Ingresos por función","category":"other_revenue","subcategory":"other_income","amount":5.219,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-2620.074,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-969.226,"disclosure":"aggregated"},
-        {"label":"Amortización pases jugadores profesionales","category":"player_amortisation","amount":-1690.571,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Costos de torneos y otros","category":"match_organisation_expense","amount":-500.196,"disclosure":"aggregated"},
-        {"label":"Costos de pases de jugadores","category":"player_amortisation","amount":-199.322,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-10.593,"disclosure":"aggregated"},
-        {"label":"Costo de ventas productos","category":"other_expenses","amount":-11.888,"disclosure":"aggregated"},
-        {"label":"Gasto de administración","category":"admin_general_expense","amount":-785.054,"disclosure":"aggregated"},
-        {"label":"Otras ganancias (pérdidas)","category":"other_expenses","amount":-175.722,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-2620.074,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-969.226,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases jugadores profesionales",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1690.571,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Costos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -500.196,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costos de pases de jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -199.322,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-10.593,"disclosure":"aggregated"},
+        {"label":"Costo de ventas productos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-11.888,"disclosure":"aggregated"},
+        {"label":"Gasto de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-785.054,"disclosure":"aggregated"},
+        {
+          "label": "Otras ganancias (pérdidas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -175.722,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.719,"tax":747.846,"gross_debt":0,"cash":121.331},
       "official_totals": {"revenue":3477.566,"expenses":7113.714,"net_result":-2891.019},
@@ -183,32 +238,86 @@
       "management_id": null,
       "fx": {"ref":"CLP@2011-12-31"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":1336.455,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":536.888,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1913.536,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":560.15,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":3421.923,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":60.537,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":0.294,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":145.999,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":158.221,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":1272.945,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":25.603,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":91.18,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":61.693,"disclosure":"aggregated"},
-        {"label":"Otros Ingresos por función","category":"other_income","amount":222.815,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":1336.455,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":536.888,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1913.536,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":560.15,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":3421.923,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":60.537,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":0.294,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":145.999,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 158.221,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1272.945,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 25.603,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 91.18,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":61.693,"disclosure":"aggregated"},
+        {"label":"Otros Ingresos por función","category":"other_revenue","subcategory":"other_income","amount":222.815,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-3199.724,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-951.174,"disclosure":"aggregated"},
-        {"label":"Amortización Pases de Jugadores","category":"player_amortisation","amount":-3074.261,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Gastos de Torneos y otros","category":"match_organisation_expense","amount":-898.667,"disclosure":"aggregated"},
-        {"label":"Gastos de Pases de Jugadores","category":"player_amortisation","amount":-965.793,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-18.014,"disclosure":"aggregated"},
-        {"label":"Costos de Ventas Productos","category":"other_expenses","amount":-14.702,"disclosure":"aggregated"},
-        {"label":"Gasto de administración","category":"admin_general_expense","amount":-993.215,"disclosure":"aggregated"},
-        {"label":"Otras ganancias (pérdidas)","category":"other_expenses","amount":-241.708,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-3199.724,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-951.174,"disclosure":"aggregated"},
+        {
+          "label": "Amortización Pases de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3074.261,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de Torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -898.667,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Pases de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -965.793,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-18.014,"disclosure":"aggregated"},
+        {"label":"Costos de Ventas Productos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-14.702,"disclosure":"aggregated"},
+        {"label":"Gasto de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-993.215,"disclosure":"aggregated"},
+        {
+          "label": "Otras ganancias (pérdidas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -241.708,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":161.172,"tax":195.273,"gross_debt":0,"cash":216.698},
       "official_totals": {"revenue":9808.239,"expenses":10508.326,"net_result":-343.642},
@@ -230,32 +339,86 @@
       "management_id": null,
       "fx": {"ref":"CLP@2012-12-31"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":1520.402,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":576.748,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1061.647,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":97.191,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":2123.258,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":22.065,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":30.475,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":110.907,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":146.225,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":1395.694,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":89.288,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":129.74,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":147.169,"disclosure":"aggregated"},
-        {"label":"Otros Ingresos por función","category":"other_income","amount":30.426,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":1520.402,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":576.748,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1061.647,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":97.191,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":2123.258,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":22.065,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":30.475,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":110.907,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 146.225,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1395.694,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 89.288,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 129.74,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":147.169,"disclosure":"aggregated"},
+        {"label":"Otros Ingresos por función","category":"other_revenue","subcategory":"other_income","amount":30.426,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-2939.509,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1039.113,"disclosure":"aggregated"},
-        {"label":"Amortización pases jugadores profesionales","category":"player_amortisation","amount":-1277.861,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.069,"disclosure":"aggregated"},
-        {"label":"Costos de torneos y otros","category":"match_organisation_expense","amount":-883.737,"disclosure":"aggregated"},
-        {"label":"Costos de pases de jugadores","category":"player_amortisation","amount":-557.048,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-38.647,"disclosure":"aggregated"},
-        {"label":"Costo de ventas productos","category":"other_expenses","amount":-29.157,"disclosure":"aggregated"},
-        {"label":"Gasto de administración","category":"admin_general_expense","amount":-1372.46,"disclosure":"aggregated"},
-        {"label":"Otras ganancias (pérdidas)","category":"other_expenses","amount":-328.412,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-2939.509,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1039.113,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases jugadores profesionales",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1277.861,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.069,"disclosure":"aggregated"},
+        {
+          "label": "Costos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -883.737,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costos de pases de jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -557.048,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-38.647,"disclosure":"aggregated"},
+        {"label":"Costo de ventas productos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-29.157,"disclosure":"aggregated"},
+        {"label":"Gasto de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1372.46,"disclosure":"aggregated"},
+        {
+          "label": "Otras ganancias (pérdidas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -328.412,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-65.97,"tax":459.734,"gross_debt":0,"cash":45.926},
       "official_totals": {"revenue":7481.235,"expenses":8617.013,"net_result":-742.014},
@@ -277,33 +440,93 @@
       "management_id": null,
       "fx": {"ref":"CLP@2013-12-31"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":2028.417,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":260.9,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1319.428,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":156.666,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":2561.546,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":409.279,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":7.086,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":109.812,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":158.13,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":1810.225,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":66.66,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":197.795,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":11.527,"disclosure":"aggregated"},
-        {"label":"Otros Ingresos por función","category":"other_income","amount":51.839,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":2028.417,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":260.9,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1319.428,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":156.666,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":2561.546,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":409.279,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":7.086,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":109.812,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 158.13,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1810.225,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 66.66,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 197.795,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":11.527,"disclosure":"aggregated"},
+        {"label":"Otros Ingresos por función","category":"other_revenue","subcategory":"other_income","amount":51.839,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-2785.676,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1046.028,"disclosure":"aggregated"},
-        {"label":"Amortización pases jugadores profesionales (*)","category":"player_amortisation","amount":-1791.989,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Costos de torneos y otros","category":"match_organisation_expense","amount":-798.55,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo a Jugadores","category":"player_amortisation","amount":-296.323,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-723.227,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-46.362,"disclosure":"aggregated"},
-        {"label":"Costo de ventas productos","category":"other_expenses","amount":-31.231,"disclosure":"aggregated"},
-        {"label":"Gasto de administración","category":"admin_general_expense","amount":-1188.72,"disclosure":"aggregated"},
-        {"label":"Otras ganancias (pérdidas)","category":"other_expenses","amount":-346.648,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-2785.676,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1046.028,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1791.989,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Costos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -798.55,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo a Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -296.323,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -723.227,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-46.362,"disclosure":"aggregated"},
+        {"label":"Costo de ventas productos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-31.231,"disclosure":"aggregated"},
+        {"label":"Gasto de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1188.72,"disclosure":"aggregated"},
+        {
+          "label": "Otras ganancias (pérdidas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -346.648,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":114.033,"tax":163.095,"gross_debt":0,"cash":55.191},
       "official_totals": {"revenue":9149.31,"expenses":9205.822,"net_result":220.616},
@@ -325,33 +548,93 @@
       "management_id": null,
       "fx": {"ref":"CLP@2014-12-31"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":2270.857,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":89.279,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1051.081,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":703.228,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":2528.219,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":96.484,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":19.4,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":81.94,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":214.666,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":1995.577,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":118.906,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":190.636,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":53.637,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":2270.857,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":89.279,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1051.081,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":703.228,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":2528.219,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":96.484,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":19.4,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":81.94,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 214.666,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 1995.577,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 118.906,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 190.636,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":53.637,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-3115.204,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1203.528,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-1151.696,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-614.033,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-843.759,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-446.25,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-62.022,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-53.698,"disclosure":"aggregated"},
-        {"label":"Gasto de administración","category":"admin_general_expense","amount":-1385.292,"disclosure":"aggregated"},
-        {"label":"Otros gastos","category":"other_expenses","amount":0,"disclosure":"aggregated"},
-        {"label":"Otras ganancias (pérdidas)","category":"other_expenses","amount":-288.444,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-3115.204,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1203.528,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1151.696,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -614.033,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -843.759,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -446.25,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-62.022,"disclosure":"aggregated"},
+        {"label":"Costos de ventas productos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-53.698,"disclosure":"aggregated"},
+        {"label":"Gasto de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1385.292,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "Otras ganancias (pérdidas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -288.444,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":151.728,"tax":-178.892,"gross_debt":0,"cash":116.142},
       "official_totals": {"revenue":9413.91,"expenses":9314.994,"net_result":71.752},
@@ -373,33 +656,93 @@
       "management_id": null,
       "fx": {"rate":710.16,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":2448.845,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":199.03,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1254.487,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":1170.949,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":866.256,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":453.894,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":1.538,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":89.059,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":294.396,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":2525.424,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":78.427,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":284.331,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":603.272,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":2448.845,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":199.03,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1254.487,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":1170.949,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":866.256,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":453.894,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":1.538,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":89.059,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 294.396,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 2525.424,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 78.427,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 284.331,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":603.272,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-4028.472,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1366.827,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-1897.256,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Amortización Licencias","category":"other_amortisation","amount":-1.559,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-797.955,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-556.489,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-657.498,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-61.057,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-74.865,"disclosure":"aggregated"},
-        {"label":"Gasto de administración","category":"admin_general_expense","amount":-1387.944,"disclosure":"aggregated"},
-        {"label":"Otras ganancias (pérdidas)","category":"other_expenses","amount":-436.812,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-4028.472,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1366.827,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1897.256,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {"label":"Amortización Licencias","category":"other_amortisation","subcategory":"other_amortisation","amount":-1.559,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -797.955,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -556.489,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -657.498,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-61.057,"disclosure":"aggregated"},
+        {"label":"Costos de ventas productos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-74.865,"disclosure":"aggregated"},
+        {"label":"Gasto de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1387.944,"disclosure":"aggregated"},
+        {
+          "label": "Otras ganancias (pérdidas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -436.812,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":43.955,"tax":622.014,"gross_debt":0,"cash":202.578},
       "official_totals": {"revenue":10269.908,"expenses":11417.802,"net_result":-481.925},
@@ -421,43 +764,115 @@
       "management_id": null,
       "fx": {"rate":669.47,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":2849.9,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":172.305,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1543.203,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":67.849,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":3088.411,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":50.111,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":1.347,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":116.518,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":337.496,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":2827.469,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":163.961,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":231.588,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":69.261,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":2849.9,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":172.305,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1543.203,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":67.849,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":3088.411,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":50.111,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":1.347,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":116.518,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 337.496,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 2827.469,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 163.961,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 231.588,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":69.261,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-5167.622,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1262.809,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-1636.872,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Amortización Licencias","category":"other_amortisation","amount":-3.119,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-678.997,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-166.644,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-571.849,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-96.902,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-104.354,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-247.724,"disclosure":"aggregated"},
-        {"label":"Provisiones No Operacionales","category":"admin_general_expense","amount":179.068,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-69.2,"disclosure":"aggregated"},
-        {"label":"Servicios de Mantención, Impresión y Reparación","category":"admin_general_expense","amount":-92.657,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-79.649,"disclosure":"aggregated"},
-        {"label":"Arriendo de Bienes","category":"admin_general_expense","amount":-186.016,"disclosure":"aggregated"},
-        {"label":"Servicios de Aseo y Seguridad","category":"admin_general_expense","amount":-73.871,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-320.375,"disclosure":"aggregated"},
-        {"label":"Remuneraciones (gastos de administración)","category":"admin_general_expense","amount":-447.549,"disclosure":"aggregated"},
-        {"label":"Gas, Agua y Electricidad","category":"admin_general_expense","amount":-62.114,"disclosure":"aggregated"},
-        {"label":"TV Cable, Internet y Telefonía","category":"admin_general_expense","amount":-16.684,"disclosure":"aggregated"},
-        {"label":"Otros Gastos","category":"other_expenses","amount":-108.234,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-5167.622,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1262.809,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1636.872,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {"label":"Amortización Licencias","category":"other_amortisation","subcategory":"other_amortisation","amount":-3.119,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -678.997,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -166.644,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -571.849,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-96.902,"disclosure":"aggregated"},
+        {
+          "label": "Costos de ventas productos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -104.354,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-247.724,"disclosure":"aggregated"},
+        {"label":"Provisiones No Operacionales","category":"admin_general","subcategory":"admin_general_expense","amount":179.068,"disclosure":"aggregated"},
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-69.2,"disclosure":"aggregated"},
+        {
+          "label": "Servicios de Mantención, Impresión y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -92.657,
+          "disclosure": "aggregated"
+        },
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-79.649,"disclosure":"aggregated"},
+        {"label":"Arriendo de Bienes","category":"admin_general","subcategory":"admin_general_expense","amount":-186.016,"disclosure":"aggregated"},
+        {"label":"Servicios de Aseo y Seguridad","category":"admin_general","subcategory":"admin_general_expense","amount":-73.871,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-320.375,"disclosure":"aggregated"},
+        {
+          "label": "Remuneraciones (gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -447.549,
+          "disclosure": "aggregated"
+        },
+        {"label":"Gas, Agua y Electricidad","category":"admin_general","subcategory":"admin_general_expense","amount":-62.114,"disclosure":"aggregated"},
+        {"label":"TV Cable, Internet y Telefonía","category":"admin_general","subcategory":"admin_general_expense","amount":-16.684,"disclosure":"aggregated"},
+        {"label":"Otros Gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-108.234,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":35.995,"tax":-1.605,"gross_debt":0,"cash":3256.284},
       "official_totals": {"revenue":11519.419,"expenses":11365.241,"net_result":188.568},
@@ -479,46 +894,118 @@
       "management_id": null,
       "fx": {"rate":614.75,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":2570.508,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":1184.886,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1191.002,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":125.364,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":1895.85,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":228.992,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":12.585,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":103.574,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":333.897,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":3073.615,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":195.913,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":220.372,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":54.531,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":2570.508,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":1184.886,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1191.002,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":125.364,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":1895.85,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":228.992,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":12.585,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":103.574,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 333.897,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 3073.615,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 195.913,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 220.372,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":54.531,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-5060.066,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1275.397,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-1934.785,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Amortización Licencias","category":"other_amortisation","amount":-3.119,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-776.258,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-212.739,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-565.5,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-90.166,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-115.965,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-380.961,"disclosure":"aggregated"},
-        {"label":"Remuneración","category":"admin_general_expense","amount":-545.392,"disclosure":"aggregated"},
-        {"label":"Gastos Generales","category":"admin_general_expense","amount":-136.754,"disclosure":"aggregated"},
-        {"label":"Combustible y Lubricantes","category":"admin_general_expense","amount":-13.014,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-332.209,"disclosure":"aggregated"},
-        {"label":"Servicios de Seguridad","category":"match_organisation_expense","amount":-51.362,"disclosure":"aggregated"},
-        {"label":"Serviciosa de Aseo","category":"admin_general_expense","amount":-36.938,"disclosure":"aggregated"},
-        {"label":"Arriendo de Bienes","category":"admin_general_expense","amount":-190.667,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-69.711,"disclosure":"aggregated"},
-        {"label":"Materiales de Mantención y Reparación","category":"admin_general_expense","amount":-16.682,"disclosure":"aggregated"},
-        {"label":"Servicios de Mantención y Reparación","category":"admin_general_expense","amount":-41.896,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-74.792,"disclosure":"aggregated"},
-        {"label":"Provisión No Operacionales","category":"admin_general_expense","amount":-1.971,"disclosure":"aggregated"},
-        {"label":"Materiales de Oficina y Otros","category":"admin_general_expense","amount":-18.399,"disclosure":"aggregated"},
-        {"label":"Feriado Legal","category":"admin_general_expense","amount":-11.814,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-5060.066,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1275.397,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1934.785,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {"label":"Amortización Licencias","category":"other_amortisation","subcategory":"other_amortisation","amount":-3.119,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -776.258,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -212.739,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -565.5,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-90.166,"disclosure":"aggregated"},
+        {
+          "label": "Costos de ventas productos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -115.965,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-380.961,"disclosure":"aggregated"},
+        {"label":"Remuneración","category":"admin_general","subcategory":"admin_general_expense","amount":-545.392,"disclosure":"aggregated"},
+        {"label":"Gastos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-136.754,"disclosure":"aggregated"},
+        {"label":"Combustible y Lubricantes","category":"admin_general","subcategory":"admin_general_expense","amount":-13.014,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-332.209,"disclosure":"aggregated"},
+        {"label":"Servicios de Seguridad","category":"match_operations","subcategory":"match_organisation_expense","amount":-51.362,"disclosure":"aggregated"},
+        {"label":"Serviciosa de Aseo","category":"admin_general","subcategory":"admin_general_expense","amount":-36.938,"disclosure":"aggregated"},
+        {"label":"Arriendo de Bienes","category":"admin_general","subcategory":"admin_general_expense","amount":-190.667,"disclosure":"aggregated"},
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-69.711,"disclosure":"aggregated"},
+        {
+          "label": "Materiales de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -16.682,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -41.896,
+          "disclosure": "aggregated"
+        },
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-74.792,"disclosure":"aggregated"},
+        {"label":"Provisión No Operacionales","category":"admin_general","subcategory":"admin_general_expense","amount":-1.971,"disclosure":"aggregated"},
+        {"label":"Materiales de Oficina y Otros","category":"admin_general","subcategory":"admin_general_expense","amount":-18.399,"disclosure":"aggregated"},
+        {"label":"Feriado Legal","category":"admin_general","subcategory":"admin_general_expense","amount":-11.814,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":106.263,"tax":0,"gross_debt":0,"cash":2604.406},
       "official_totals": {"revenue":11191.089,"expenses":12107.625,"net_result":-810.273},
@@ -540,47 +1027,113 @@
       "management_id": null,
       "fx": {"rate":694.77,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":2400.385,"disclosure":"aggregated"},
-        {"label":"Ingresos por Retiros del CDF","category":"broadcasting","amount":2655.571,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1516.41,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":31.626,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":371.495,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":330.369,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":5.332,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":98.296,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":280.135,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":3186.587,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":127.851,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":256.544,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":29.612,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":2400.385,"disclosure":"aggregated"},
+        {"label":"Ingresos por Retiros del CDF","category":"media_rights","subcategory":"broadcasting","amount":2655.571,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1516.41,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":31.626,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":371.495,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":330.369,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":5.332,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":98.296,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 280.135,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 3186.587,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 127.851,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 256.544,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":29.612,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-4756.395,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1274.384,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-1859.041,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Amortización Licencias","category":"other_amortisation","amount":-1.559,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-523.549,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-163.921,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-167.322,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-109.985,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-73.647,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-259.086,"disclosure":"aggregated"},
-        {"label":"Remuneración","category":"admin_general_expense","amount":-584.404,"disclosure":"aggregated"},
-        {"label":"Indemnizaciones","category":"admin_general_expense","amount":-0.796,"disclosure":"aggregated"},
-        {"label":"Gastos Generales","category":"admin_general_expense","amount":-73.916,"disclosure":"aggregated"},
-        {"label":"Combustible y Lubricantes","category":"admin_general_expense","amount":-7.766,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-422.153,"disclosure":"aggregated"},
-        {"label":"Servicios de Seguridad","category":"match_organisation_expense","amount":-64.768,"disclosure":"aggregated"},
-        {"label":"Serviciosa de Aseo","category":"admin_general_expense","amount":-27.389,"disclosure":"aggregated"},
-        {"label":"Arriendo de Bienes","category":"admin_general_expense","amount":-188.398,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-106.779,"disclosure":"aggregated"},
-        {"label":"Materiales de Mantención y Reparación","category":"admin_general_expense","amount":-20.751,"disclosure":"aggregated"},
-        {"label":"Servicios de Mantención y Reparación","category":"admin_general_expense","amount":-51.241,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-74.576,"disclosure":"aggregated"},
-        {"label":"Provisión No Operacionales","category":"admin_general_expense","amount":-1.6,"disclosure":"aggregated"},
-        {"label":"Materiales de Oficina y Otros","category":"admin_general_expense","amount":-98.239,"disclosure":"aggregated"},
-        {"label":"Feriado Legal","category":"admin_general_expense","amount":-15.31,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-4756.395,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1274.384,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1859.041,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {"label":"Amortización Licencias","category":"other_amortisation","subcategory":"other_amortisation","amount":-1.559,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -523.549,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -163.921,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -167.322,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-109.985,"disclosure":"aggregated"},
+        {"label":"Costos de ventas productos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-73.647,"disclosure":"aggregated"},
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-259.086,"disclosure":"aggregated"},
+        {"label":"Remuneración","category":"admin_general","subcategory":"admin_general_expense","amount":-584.404,"disclosure":"aggregated"},
+        {"label":"Indemnizaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-0.796,"disclosure":"aggregated"},
+        {"label":"Gastos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-73.916,"disclosure":"aggregated"},
+        {"label":"Combustible y Lubricantes","category":"admin_general","subcategory":"admin_general_expense","amount":-7.766,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-422.153,"disclosure":"aggregated"},
+        {"label":"Servicios de Seguridad","category":"match_operations","subcategory":"match_organisation_expense","amount":-64.768,"disclosure":"aggregated"},
+        {"label":"Serviciosa de Aseo","category":"admin_general","subcategory":"admin_general_expense","amount":-27.389,"disclosure":"aggregated"},
+        {"label":"Arriendo de Bienes","category":"admin_general","subcategory":"admin_general_expense","amount":-188.398,"disclosure":"aggregated"},
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-106.779,"disclosure":"aggregated"},
+        {
+          "label": "Materiales de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -20.751,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -51.241,
+          "disclosure": "aggregated"
+        },
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-74.576,"disclosure":"aggregated"},
+        {"label":"Provisión No Operacionales","category":"admin_general","subcategory":"admin_general_expense","amount":-1.6,"disclosure":"aggregated"},
+        {"label":"Materiales de Oficina y Otros","category":"admin_general","subcategory":"admin_general_expense","amount":-98.239,"disclosure":"aggregated"},
+        {"label":"Feriado Legal","category":"admin_general","subcategory":"admin_general_expense","amount":-15.31,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-12.824,"tax":0,"gross_debt":0,"cash":5912.489},
       "official_totals": {"revenue":11290.213,"expenses":11078.043,"net_result":199.346},
@@ -602,43 +1155,121 @@
       "management_id": null,
       "fx": {"rate":748.74,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":3430.17,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":2288.001,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":2022.035,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":1875.949,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":1095.936,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":18.209,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":202.753,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":250.15,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":4068.574,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":133.956,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":191.856,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":1720.886,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":3430.17,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":2288.001,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 2022.035,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":1875.949,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Derechos de Solidaridad",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1095.936,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":18.209,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":202.753,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 250.15,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 4068.574,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 133.956,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 191.856,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":1720.886,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-7075.881,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1317.409,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-2418.173,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-718.834,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-120.502,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-374.562,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-273.994,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-140.317,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-296.777,"disclosure":"aggregated"},
-        {"label":"Remuneración","category":"admin_general_expense","amount":-644.834,"disclosure":"aggregated"},
-        {"label":"Indemnización","category":"admin_general_expense","amount":-5.469,"disclosure":"aggregated"},
-        {"label":"Gastos Generales","category":"admin_general_expense","amount":-73.514,"disclosure":"aggregated"},
-        {"label":"Combustible y Lubricantes","category":"admin_general_expense","amount":-5.319,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-473.728,"disclosure":"aggregated"},
-        {"label":"Servicios de Seguridad","category":"match_organisation_expense","amount":-58.986,"disclosure":"aggregated"},
-        {"label":"Servicios de Aseo","category":"admin_general_expense","amount":-47.322,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-165.184,"disclosure":"aggregated"},
-        {"label":"Materiales de Mantención y Reparación","category":"admin_general_expense","amount":-15.569,"disclosure":"aggregated"},
-        {"label":"Servicios de Mantención y Reparación","category":"admin_general_expense","amount":-74.589,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-76.221,"disclosure":"aggregated"},
-        {"label":"Materiales de Oficina y Otros","category":"admin_general_expense","amount":-110.084,"disclosure":"aggregated"},
-        {"label":"Feriado Legal","category":"admin_general_expense","amount":-15.818,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-7075.881,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1317.409,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2418.173,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -718.834,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -120.502,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -374.562,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-273.994,"disclosure":"aggregated"},
+        {
+          "label": "Costos de ventas productos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -140.317,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-296.777,"disclosure":"aggregated"},
+        {"label":"Remuneración","category":"admin_general","subcategory":"admin_general_expense","amount":-644.834,"disclosure":"aggregated"},
+        {"label":"Indemnización","category":"admin_general","subcategory":"admin_general_expense","amount":-5.469,"disclosure":"aggregated"},
+        {"label":"Gastos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-73.514,"disclosure":"aggregated"},
+        {"label":"Combustible y Lubricantes","category":"admin_general","subcategory":"admin_general_expense","amount":-5.319,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-473.728,"disclosure":"aggregated"},
+        {"label":"Servicios de Seguridad","category":"match_operations","subcategory":"match_organisation_expense","amount":-58.986,"disclosure":"aggregated"},
+        {"label":"Servicios de Aseo","category":"admin_general","subcategory":"admin_general_expense","amount":-47.322,"disclosure":"aggregated"},
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-165.184,"disclosure":"aggregated"},
+        {
+          "label": "Materiales de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -15.569,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -74.589,
+          "disclosure": "aggregated"
+        },
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-76.221,"disclosure":"aggregated"},
+        {"label":"Materiales de Oficina y Otros","category":"admin_general","subcategory":"admin_general_expense","amount":-110.084,"disclosure":"aggregated"},
+        {"label":"Feriado Legal","category":"admin_general","subcategory":"admin_general_expense","amount":-15.818,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-62.575,"tax":0,"gross_debt":0,"cash":6488.673},
       "official_totals": {"revenue":17298.475,"expenses":14654.154,"net_result":2581.746},
@@ -660,45 +1291,117 @@
       "management_id": null,
       "fx": {"rate":710.95,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":3330.077,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":3759.837,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":732.679,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":3.896,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":2583.288,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":155.862,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":12.314,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":99.645,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":77.151,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":3825.953,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":316.398,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":324.089,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":200.796,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":3330.077,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":3759.837,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 732.679,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":3.896,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":2583.288,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":155.862,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":12.314,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":99.645,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 77.151,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 3825.953,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 316.398,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 324.089,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":200.796,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-6871.603,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1428.06,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-3023.327,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-711.755,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-231.602,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-803.988,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-315.109,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-181.692,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-278.71,"disclosure":"aggregated"},
-        {"label":"Remuneración","category":"admin_general_expense","amount":-641.356,"disclosure":"aggregated"},
-        {"label":"Gastos Generales","category":"admin_general_expense","amount":-58.164,"disclosure":"aggregated"},
-        {"label":"Combustible y Lubricantes","category":"admin_general_expense","amount":-4.575,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-469.121,"disclosure":"aggregated"},
-        {"label":"Servicios de Seguridad","category":"match_organisation_expense","amount":-56.808,"disclosure":"aggregated"},
-        {"label":"Servicios de Aseo","category":"admin_general_expense","amount":-30.566,"disclosure":"aggregated"},
-        {"label":"Arriendo de Bienes","category":"admin_general_expense","amount":-8.499,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-141.474,"disclosure":"aggregated"},
-        {"label":"Materiales de Mantención y Reparación","category":"admin_general_expense","amount":-9.754,"disclosure":"aggregated"},
-        {"label":"Servicios de Mantención y Reparación","category":"admin_general_expense","amount":-35.526,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-85.843,"disclosure":"aggregated"},
-        {"label":"Provisión No Operacionales","category":"admin_general_expense","amount":-0.412,"disclosure":"aggregated"},
-        {"label":"Materiales de Oficina y Otros","category":"admin_general_expense","amount":-110.564,"disclosure":"aggregated"},
-        {"label":"Feriado Legal","category":"admin_general_expense","amount":15.597,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-6871.603,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1428.06,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3023.327,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -711.755,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -231.602,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -803.988,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-315.109,"disclosure":"aggregated"},
+        {
+          "label": "Costos de ventas productos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -181.692,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-278.71,"disclosure":"aggregated"},
+        {"label":"Remuneración","category":"admin_general","subcategory":"admin_general_expense","amount":-641.356,"disclosure":"aggregated"},
+        {"label":"Gastos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-58.164,"disclosure":"aggregated"},
+        {"label":"Combustible y Lubricantes","category":"admin_general","subcategory":"admin_general_expense","amount":-4.575,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-469.121,"disclosure":"aggregated"},
+        {"label":"Servicios de Seguridad","category":"match_operations","subcategory":"match_organisation_expense","amount":-56.808,"disclosure":"aggregated"},
+        {"label":"Servicios de Aseo","category":"admin_general","subcategory":"admin_general_expense","amount":-30.566,"disclosure":"aggregated"},
+        {"label":"Arriendo de Bienes","category":"admin_general","subcategory":"admin_general_expense","amount":-8.499,"disclosure":"aggregated"},
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-141.474,"disclosure":"aggregated"},
+        {
+          "label": "Materiales de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -9.754,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -35.526,
+          "disclosure": "aggregated"
+        },
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-85.843,"disclosure":"aggregated"},
+        {"label":"Provisión No Operacionales","category":"admin_general","subcategory":"admin_general_expense","amount":-0.412,"disclosure":"aggregated"},
+        {"label":"Materiales de Oficina y Otros","category":"admin_general","subcategory":"admin_general_expense","amount":-110.564,"disclosure":"aggregated"},
+        {"label":"Feriado Legal","category":"admin_general","subcategory":"admin_general_expense","amount":15.597,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-321.469,"tax":0,"gross_debt":1016.921,"cash":6214.278},
       "official_totals": {"revenue":15421.985,"expenses":15633.979,"net_result":-533.463},
@@ -720,45 +1423,117 @@
       "management_id": null,
       "fx": {"rate":844.69,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":3521.475,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":2953.727,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":623.084,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":315.641,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":82.622,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":31.329,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":11.334,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":233.028,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":238.414,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":5241.433,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":575.407,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":253.864,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":76.593,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":3521.475,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":2953.727,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 623.084,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":315.641,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":82.622,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":31.329,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":11.334,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":233.028,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 238.414,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 5241.433,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 575.407,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 253.864,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":76.593,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-8036.278,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-1913.147,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-3820.607,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-708.836,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-52.88,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-162.048,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-302.961,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-403.074,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-150.434,"disclosure":"aggregated"},
-        {"label":"Remuneración","category":"admin_general_expense","amount":-722.353,"disclosure":"aggregated"},
-        {"label":"Indemnización","category":"admin_general_expense","amount":-0.305,"disclosure":"aggregated"},
-        {"label":"Gastos Generales","category":"admin_general_expense","amount":-89.854,"disclosure":"aggregated"},
-        {"label":"Combustible y Lubricantes","category":"admin_general_expense","amount":-7.651,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-504.725,"disclosure":"aggregated"},
-        {"label":"Servicios de Seguridad","category":"match_organisation_expense","amount":-60.689,"disclosure":"aggregated"},
-        {"label":"Servicios de Aseo","category":"admin_general_expense","amount":-39.642,"disclosure":"aggregated"},
-        {"label":"Arriendo de Bienes","category":"admin_general_expense","amount":-3.164,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-27.846,"disclosure":"aggregated"},
-        {"label":"Materiales de Mantención y Reparación","category":"admin_general_expense","amount":-14.458,"disclosure":"aggregated"},
-        {"label":"Servicios de Mantención y Reparación","category":"admin_general_expense","amount":-33.932,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-94.129,"disclosure":"aggregated"},
-        {"label":"Materiales de Oficina y Otros","category":"admin_general_expense","amount":-71.952,"disclosure":"aggregated"},
-        {"label":"Feriado Legal","category":"admin_general_expense","amount":-41.602,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-8036.278,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1913.147,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3820.607,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -708.836,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -52.88,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -162.048,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-302.961,"disclosure":"aggregated"},
+        {
+          "label": "Costos de ventas productos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -403.074,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-150.434,"disclosure":"aggregated"},
+        {"label":"Remuneración","category":"admin_general","subcategory":"admin_general_expense","amount":-722.353,"disclosure":"aggregated"},
+        {"label":"Indemnización","category":"admin_general","subcategory":"admin_general_expense","amount":-0.305,"disclosure":"aggregated"},
+        {"label":"Gastos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-89.854,"disclosure":"aggregated"},
+        {"label":"Combustible y Lubricantes","category":"admin_general","subcategory":"admin_general_expense","amount":-7.651,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-504.725,"disclosure":"aggregated"},
+        {"label":"Servicios de Seguridad","category":"match_operations","subcategory":"match_organisation_expense","amount":-60.689,"disclosure":"aggregated"},
+        {"label":"Servicios de Aseo","category":"admin_general","subcategory":"admin_general_expense","amount":-39.642,"disclosure":"aggregated"},
+        {"label":"Arriendo de Bienes","category":"admin_general","subcategory":"admin_general_expense","amount":-3.164,"disclosure":"aggregated"},
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-27.846,"disclosure":"aggregated"},
+        {
+          "label": "Materiales de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -14.458,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -33.932,
+          "disclosure": "aggregated"
+        },
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-94.129,"disclosure":"aggregated"},
+        {"label":"Materiales de Oficina y Otros","category":"admin_general","subcategory":"admin_general_expense","amount":-71.952,"disclosure":"aggregated"},
+        {"label":"Feriado Legal","category":"admin_general","subcategory":"admin_general_expense","amount":-41.602,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-282.617,"tax":0,"gross_debt":763.151,"cash":5905.99},
       "official_totals": {"revenue":14157.951,"expenses":17413.635,"net_result":-3538.301},
@@ -780,13 +1555,20 @@
       "management_id": "actual",
       "fx": {"rate":855.86,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":3951.082,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":3030.675,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1985.955,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":200.512,"disclosure":"aggregated"},
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":3951.082,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":3030.675,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1985.955,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":200.512,"disclosure":"aggregated"},
         {
           "label": "Ingresos por venta de Jugadores",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 6464.187,
           "disclosure": "aggregated",
           "items": [
@@ -797,41 +1579,107 @@
             ["Bruno Barticciotto (venta 40%, Deportivo Palestino)",283.593]
           ]
         },
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":4.085,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":792.648,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":254.263,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":488.314,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":5652.315,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":317.602,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":379.427,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":289.863,"disclosure":"aggregated"}
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":4.085,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":792.648,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":254.263,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 488.314,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 5652.315,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 317.602,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 379.427,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":289.863,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-9819.826,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-2287.671,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-1837.734,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-1251.191,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-578.028,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-2010.506,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-304.106,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-220.274,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-558.476,"disclosure":"aggregated"},
-        {"label":"Remuneración","category":"admin_general_expense","amount":-855.659,"disclosure":"aggregated"},
-        {"label":"Indemnización","category":"admin_general_expense","amount":-4.598,"disclosure":"aggregated"},
-        {"label":"Gastos Generales","category":"admin_general_expense","amount":-119.777,"disclosure":"aggregated"},
-        {"label":"Combustible y Lubricantes","category":"admin_general_expense","amount":-5.895,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-604.402,"disclosure":"aggregated"},
-        {"label":"Servicios de Seguridad","category":"match_organisation_expense","amount":-65.574,"disclosure":"aggregated"},
-        {"label":"Servicios de Aseo","category":"admin_general_expense","amount":-54.797,"disclosure":"aggregated"},
-        {"label":"Arriendo de Bienes","category":"admin_general_expense","amount":-180.508,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-189.404,"disclosure":"aggregated"},
-        {"label":"Materiales de Mantención y Reparación","category":"admin_general_expense","amount":-16.26,"disclosure":"aggregated"},
-        {"label":"Servicios de Mantención y Reparación","category":"admin_general_expense","amount":-93.96,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-96.316,"disclosure":"aggregated"},
-        {"label":"Provisión No Operacionales","category":"admin_general_expense","amount":-2.202,"disclosure":"aggregated"},
-        {"label":"Materiales de Oficina y Otros","category":"admin_general_expense","amount":-82.394,"disclosure":"aggregated"},
-        {"label":"Feriado Legal","category":"admin_general_expense","amount":-20.338,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-9819.826,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2287.671,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1837.734,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1251.191,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -578.028,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2010.506,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-304.106,"disclosure":"aggregated"},
+        {
+          "label": "Costos de ventas productos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -220.274,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-558.476,"disclosure":"aggregated"},
+        {"label":"Remuneración","category":"admin_general","subcategory":"admin_general_expense","amount":-855.659,"disclosure":"aggregated"},
+        {"label":"Indemnización","category":"admin_general","subcategory":"admin_general_expense","amount":-4.598,"disclosure":"aggregated"},
+        {"label":"Gastos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-119.777,"disclosure":"aggregated"},
+        {"label":"Combustible y Lubricantes","category":"admin_general","subcategory":"admin_general_expense","amount":-5.895,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-604.402,"disclosure":"aggregated"},
+        {"label":"Servicios de Seguridad","category":"match_operations","subcategory":"match_organisation_expense","amount":-65.574,"disclosure":"aggregated"},
+        {"label":"Servicios de Aseo","category":"admin_general","subcategory":"admin_general_expense","amount":-54.797,"disclosure":"aggregated"},
+        {"label":"Arriendo de Bienes","category":"admin_general","subcategory":"admin_general_expense","amount":-180.508,"disclosure":"aggregated"},
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-189.404,"disclosure":"aggregated"},
+        {
+          "label": "Materiales de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -16.26,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -93.96,
+          "disclosure": "aggregated"
+        },
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-96.316,"disclosure":"aggregated"},
+        {"label":"Provisión No Operacionales","category":"admin_general","subcategory":"admin_general_expense","amount":-2.202,"disclosure":"aggregated"},
+        {"label":"Materiales de Oficina y Otros","category":"admin_general","subcategory":"admin_general_expense","amount":-82.394,"disclosure":"aggregated"},
+        {"label":"Feriado Legal","category":"admin_general","subcategory":"admin_general_expense","amount":-20.338,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1148.524,"tax":0,"gross_debt":22192.427,"cash":33606.832},
       "official_totals": {"revenue":23810.928,"expenses":21410.964,"net_result":1251.44},
@@ -853,13 +1701,20 @@
       "management_id": "actual",
       "fx": {"rate":877.12,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":4174.877,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":199.545,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1502.571,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":70.688,"disclosure":"aggregated"},
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":4174.877,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":199.545,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1502.571,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":70.688,"disclosure":"aggregated"},
         {
           "label": "Ingresos por venta de Jugadores",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 473.912,
           "disclosure": "aggregated",
           "items": [
@@ -868,41 +1723,107 @@
             ["Vicente Fernandez (venta 50%, Deportivo Palestino)",136.15]
           ]
         },
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":1.933,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":16.98,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":94.381,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":698.897,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":6385.695,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":375.27,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":299.589,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":1914.027,"disclosure":"aggregated"}
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":1.933,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":16.98,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":94.381,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 698.897,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 6385.695,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 375.27,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 299.589,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":1914.027,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-9389.159,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-2423.27,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-1906.168,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-1528.051,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-156.627,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-22.761,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-309.174,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-203.986,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-337.696,"disclosure":"aggregated"},
-        {"label":"Remuneración","category":"admin_general_expense","amount":-1083.07,"disclosure":"aggregated"},
-        {"label":"Indemnización","category":"admin_general_expense","amount":-98.743,"disclosure":"aggregated"},
-        {"label":"Gastos Generales","category":"admin_general_expense","amount":-159.987,"disclosure":"aggregated"},
-        {"label":"Combustible y Lubricantes","category":"admin_general_expense","amount":-0.549,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-445.307,"disclosure":"aggregated"},
-        {"label":"Servicios de Seguridad","category":"match_organisation_expense","amount":-72.244,"disclosure":"aggregated"},
-        {"label":"Servicios de Aseo","category":"admin_general_expense","amount":-59.023,"disclosure":"aggregated"},
-        {"label":"Arriendo de Bienes","category":"admin_general_expense","amount":-234.485,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-11.723,"disclosure":"aggregated"},
-        {"label":"Materiales de Mantención y Reparación","category":"admin_general_expense","amount":-7.775,"disclosure":"aggregated"},
-        {"label":"Servicios de Mantención y Reparación","category":"admin_general_expense","amount":-32.268,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-126.485,"disclosure":"aggregated"},
-        {"label":"Provisión No Operacionales","category":"admin_general_expense","amount":-7.775,"disclosure":"aggregated"},
-        {"label":"Materiales de Oficina y Otros","category":"admin_general_expense","amount":-111.957,"disclosure":"aggregated"},
-        {"label":"Feriado Legal","category":"admin_general_expense","amount":-18.843,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-9389.159,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2423.27,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1906.168,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1528.051,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -156.627,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -22.761,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-309.174,"disclosure":"aggregated"},
+        {
+          "label": "Costos de ventas productos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -203.986,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-337.696,"disclosure":"aggregated"},
+        {"label":"Remuneración","category":"admin_general","subcategory":"admin_general_expense","amount":-1083.07,"disclosure":"aggregated"},
+        {"label":"Indemnización","category":"admin_general","subcategory":"admin_general_expense","amount":-98.743,"disclosure":"aggregated"},
+        {"label":"Gastos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-159.987,"disclosure":"aggregated"},
+        {"label":"Combustible y Lubricantes","category":"admin_general","subcategory":"admin_general_expense","amount":-0.549,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-445.307,"disclosure":"aggregated"},
+        {"label":"Servicios de Seguridad","category":"match_operations","subcategory":"match_organisation_expense","amount":-72.244,"disclosure":"aggregated"},
+        {"label":"Servicios de Aseo","category":"admin_general","subcategory":"admin_general_expense","amount":-59.023,"disclosure":"aggregated"},
+        {"label":"Arriendo de Bienes","category":"admin_general","subcategory":"admin_general_expense","amount":-234.485,"disclosure":"aggregated"},
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-11.723,"disclosure":"aggregated"},
+        {
+          "label": "Materiales de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -7.775,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -32.268,
+          "disclosure": "aggregated"
+        },
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-126.485,"disclosure":"aggregated"},
+        {"label":"Provisión No Operacionales","category":"admin_general","subcategory":"admin_general_expense","amount":-7.775,"disclosure":"aggregated"},
+        {"label":"Materiales de Oficina y Otros","category":"admin_general","subcategory":"admin_general_expense","amount":-111.957,"disclosure":"aggregated"},
+        {"label":"Feriado Legal","category":"admin_general","subcategory":"admin_general_expense","amount":-18.843,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":619.822,"tax":0,"gross_debt":22821.792,"cash":11867.771},
       "official_totals": {"revenue":16208.365,"expenses":18898.194,"net_result":-2070.007},
@@ -923,13 +1844,20 @@
       "management_id": "actual",
       "fx": {"rate":996.48,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":4372.963,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de TV","category":"broadcasting","amount":217.415,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":1737.521,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":19.701,"disclosure":"aggregated"},
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":4372.963,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de TV","category":"media_rights","subcategory":"broadcasting","amount":217.415,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 1737.521,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":19.701,"disclosure":"aggregated"},
         {
           "label": "Ingresos por venta de Jugadores",
-          "category": "player_sales",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 4278.205,
           "disclosure": "aggregated",
           "items": [
@@ -939,41 +1867,107 @@
             ["Gonzalo Tapia (venta, River Plate)",1091.332]
           ]
         },
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":56.026,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":16.387,"disclosure":"aggregated"},
-        {"label":"Ingresos Cuotas Socios Fútbol","category":"member_dues","amount":65.123,"disclosure":"aggregated"},
-        {"label":"Ingresos Matrículas de Escuelas de Fútbol","category":"youth_football","amount":439.141,"disclosure":"aggregated"},
-        {"label":"Ingresos por Publicidad y Auspicios","category":"sponsorship_commercial","amount":8851.397,"disclosure":"aggregated"},
-        {"label":"Ingresos por Ventas de Productos Tienda UC","category":"sponsorship_commercial","amount":362.786,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Merchandising","category":"sponsorship_commercial","amount":292.418,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":514.684,"disclosure":"aggregated"}
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":56.026,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":16.387,"disclosure":"aggregated"},
+        {"label":"Ingresos Cuotas Socios Fútbol","category":"membership","subcategory":"member_dues","amount":65.123,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Matrículas de Escuelas de Fútbol",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 439.141,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Publicidad y Auspicios",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 8851.397,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Ventas de Productos Tienda UC",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 362.786,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 292.418,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":514.684,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-9140.947,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-4554.467,"disclosure":"aggregated"},
-        {"label":"Amortización pases de jugadores profesionales (*)","category":"player_amortisation","amount":-1223.927,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Gastos de torneos y otros","category":"match_organisation_expense","amount":-1013.896,"disclosure":"aggregated"},
-        {"label":"Gasto por Préstamo de Jugadores","category":"player_amortisation","amount":-27.125,"disclosure":"aggregated"},
-        {"label":"Gasto por Transferencia de Jugadores","category":"player_amortisation","amount":-1377.032,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-304.661,"disclosure":"aggregated"},
-        {"label":"Costos de ventas productos","category":"other_expenses","amount":-282.554,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-377.468,"disclosure":"aggregated"},
-        {"label":"Remuneración","category":"admin_general_expense","amount":-1130.254,"disclosure":"aggregated"},
-        {"label":"Indemnización","category":"admin_general_expense","amount":-8.407,"disclosure":"aggregated"},
-        {"label":"Gastos Generales","category":"admin_general_expense","amount":-77.273,"disclosure":"aggregated"},
-        {"label":"Combustible y Lubricantes","category":"admin_general_expense","amount":-0.889,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-362.572,"disclosure":"aggregated"},
-        {"label":"Servicios de Seguridad","category":"match_organisation_expense","amount":-77.365,"disclosure":"aggregated"},
-        {"label":"Servicios de Aseo","category":"admin_general_expense","amount":-65.115,"disclosure":"aggregated"},
-        {"label":"Arriendo de Bienes","category":"admin_general_expense","amount":-282.97,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-108.836,"disclosure":"aggregated"},
-        {"label":"Materiales de Mantención y Reparación","category":"admin_general_expense","amount":-6.227,"disclosure":"aggregated"},
-        {"label":"Servicios de Mantención y Reparación","category":"admin_general_expense","amount":-26.031,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-146.134,"disclosure":"aggregated"},
-        {"label":"Provisión No Operacionales","category":"admin_general_expense","amount":-3.456,"disclosure":"aggregated"},
-        {"label":"Materiales de Oficina y Otros","category":"admin_general_expense","amount":-312.86,"disclosure":"aggregated"},
-        {"label":"Feriado Legal","category":"admin_general_expense","amount":-11.173,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-9140.947,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4554.467,"disclosure":"aggregated"},
+        {
+          "label": "Amortización pases de jugadores profesionales (*)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1223.927,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1013.896,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Préstamo de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -27.125,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto por Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1377.032,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-304.661,"disclosure":"aggregated"},
+        {
+          "label": "Costos de ventas productos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -282.554,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-377.468,"disclosure":"aggregated"},
+        {"label":"Remuneración","category":"admin_general","subcategory":"admin_general_expense","amount":-1130.254,"disclosure":"aggregated"},
+        {"label":"Indemnización","category":"admin_general","subcategory":"admin_general_expense","amount":-8.407,"disclosure":"aggregated"},
+        {"label":"Gastos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-77.273,"disclosure":"aggregated"},
+        {"label":"Combustible y Lubricantes","category":"admin_general","subcategory":"admin_general_expense","amount":-0.889,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-362.572,"disclosure":"aggregated"},
+        {"label":"Servicios de Seguridad","category":"match_operations","subcategory":"match_organisation_expense","amount":-77.365,"disclosure":"aggregated"},
+        {"label":"Servicios de Aseo","category":"admin_general","subcategory":"admin_general_expense","amount":-65.115,"disclosure":"aggregated"},
+        {"label":"Arriendo de Bienes","category":"admin_general","subcategory":"admin_general_expense","amount":-282.97,"disclosure":"aggregated"},
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-108.836,"disclosure":"aggregated"},
+        {
+          "label": "Materiales de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.227,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios de Mantención y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -26.031,
+          "disclosure": "aggregated"
+        },
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-146.134,"disclosure":"aggregated"},
+        {"label":"Provisión No Operacionales","category":"admin_general","subcategory":"admin_general_expense","amount":-3.456,"disclosure":"aggregated"},
+        {"label":"Materiales de Oficina y Otros","category":"admin_general","subcategory":"admin_general_expense","amount":-312.86,"disclosure":"aggregated"},
+        {"label":"Feriado Legal","category":"admin_general","subcategory":"admin_general_expense","amount":-11.173,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1504.82,"tax":0,"gross_debt":29666.971,"cash":807.202},
       "official_totals": {"revenue":21223.767,"expenses":21072.707,"net_result":-1353.76},
@@ -995,50 +1989,110 @@
       "management_id": null,
       "fx": {"rate":907.13,"source":"document_close"},
       "revenue": [
-        {"label":"Ingresos por A.N.F.P.","category":"broadcasting","amount":4522.883,"disclosure":"aggregated"},
-        {"label":"Ingresos Derechos de TV Internacional","category":"broadcasting","amount":577.538,"disclosure":"aggregated"},
-        {"label":"Ingresos por Borderó (Recaudación Entradas)","category":"matchday_competition","amount":4445.898,"disclosure":"aggregated"},
-        {"label":"Ingresos Publicidad y Auspicios","category":"sponsorship_commercial","amount":6048.207,"disclosure":"aggregated"},
-        {"label":"Ingresos por Préstamo de Jugadores","category":"player_sales","amount":29.807,"disclosure":"aggregated"},
-        {"label":"Ingresos por venta de Jugadores","category":"player_sales","amount":1267.909,"disclosure":"aggregated"},
-        {"label":"Ingresos por Derechos de Solidaridad","category":"player_sales","amount":572.401,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":25.879,"disclosure":"aggregated"},
-        {"label":"Ingresos Arriendos y Concesiones","category":"stadium_other","amount":2229.013,"disclosure":"aggregated"},
-        {"label":"Ingresos E-Commerce","category":"sponsorship_commercial","amount":531.143,"disclosure":"aggregated"},
-        {"label":"Ingresos Escuelas de Fútbol","category":"youth_football","amount":515.953,"disclosure":"aggregated"},
-        {"label":"Ingresos Publicidad y Auspicios","category":"sponsorship_commercial","amount":3704.588,"disclosure":"aggregated"},
-        {"label":"Ingresos Membresía de Socios","category":"member_dues","amount":278.185,"disclosure":"aggregated"},
-        {"label":"Ingresos Derechos de Merchandising","category":"sponsorship_commercial","amount":285.221,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_income","amount":396.389,"disclosure":"aggregated"},
-        {"label":"Otros ingresos por función","category":"other_income","amount":419.42,"disclosure":"aggregated"}
+        {"label":"Ingresos por A.N.F.P.","category":"media_rights","subcategory":"broadcasting","amount":4522.883,"disclosure":"aggregated"},
+        {"label":"Ingresos Derechos de TV Internacional","category":"media_rights","subcategory":"broadcasting","amount":577.538,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos por Borderó (Recaudación Entradas)",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 4445.898,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos Publicidad y Auspicios","category":"commercial","subcategory":"sponsorship_commercial","amount":6048.207,"disclosure":"aggregated"},
+        {"label":"Ingresos por Préstamo de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":29.807,"disclosure":"aggregated"},
+        {"label":"Ingresos por venta de Jugadores","category":"player_transfers","subcategory":"player_sales","amount":1267.909,"disclosure":"aggregated"},
+        {"label":"Ingresos por Derechos de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":572.401,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":25.879,"disclosure":"aggregated"},
+        {"label":"Ingresos Arriendos y Concesiones","category":"venue","subcategory":"stadium_other","amount":2229.013,"disclosure":"aggregated"},
+        {"label":"Ingresos E-Commerce","category":"commercial","subcategory":"sponsorship_commercial","amount":531.143,"disclosure":"aggregated"},
+        {"label":"Ingresos Escuelas de Fútbol","category":"other_sporting_sections","subcategory":"youth_football","amount":515.953,"disclosure":"aggregated"},
+        {"label":"Ingresos Publicidad y Auspicios","category":"commercial","subcategory":"sponsorship_commercial","amount":3704.588,"disclosure":"aggregated"},
+        {"label":"Ingresos Membresía de Socios","category":"membership","subcategory":"member_dues","amount":278.185,"disclosure":"aggregated"},
+        {
+          "label": "Ingresos Derechos de Merchandising",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 285.221,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros","category":"other_revenue","subcategory":"other_income","amount":396.389,"disclosure":"aggregated"},
+        {"label":"Otros ingresos por función","category":"other_revenue","subcategory":"other_income","amount":419.42,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Remuneraciones","category":"wages_squad","amount":-10762.861,"disclosure":"aggregated"},
-        {"label":"Gastos de Operación","category":"other_expenses","amount":-3689.043,"disclosure":"aggregated"},
-        {"label":"Amortización Pases de Jugadores Profesionales","category":"player_amortisation","amount":-2687.327,"disclosure":"aggregated"},
-        {"label":"Amortización Concesión","category":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
-        {"label":"Gastos de Torneos y otros","category":"match_organisation_expense","amount":-1620.26,"disclosure":"aggregated"},
-        {"label":"Gasto Arriendo de Pases","category":"player_amortisation","amount":-342.329,"disclosure":"aggregated"},
-        {"label":"Gasto Transferencia de Jugadores","category":"player_amortisation","amount":-23.115,"disclosure":"aggregated"},
-        {"label":"Depreciación","category":"depreciation","amount":-886.206,"disclosure":"aggregated"},
-        {"label":"Costos de Ventas por Eventos","category":"other_expenses","amount":-465.788,"disclosure":"aggregated"},
-        {"label":"Costos de Ventas Productos","category":"other_expenses","amount":-357.896,"disclosure":"aggregated"},
-        {"label":"Otros Gastos por función","category":"other_expenses","amount":-485.62,"disclosure":"aggregated"},
-        {"label":"Remuneración","category":"admin_general_expense","amount":-1790.062,"disclosure":"aggregated"},
-        {"label":"Indemnización","category":"admin_general_expense","amount":-10.843,"disclosure":"aggregated"},
-        {"label":"Gastos Generales","category":"admin_general_expense","amount":-92.187,"disclosure":"aggregated"},
-        {"label":"Transporte","category":"admin_general_expense","amount":-54.199,"disclosure":"aggregated"},
-        {"label":"Servicios Contratados","category":"admin_general_expense","amount":-1002.789,"disclosure":"aggregated"},
-        {"label":"Arriendo de Bienes","category":"admin_general_expense","amount":-263.339,"disclosure":"aggregated"},
-        {"label":"Gastos Notariales y Judiciales","category":"admin_general_expense","amount":-166.655,"disclosure":"aggregated"},
-        {"label":"Servicios de Terceros","category":"admin_general_expense","amount":-63.01,"disclosure":"aggregated"},
-        {"label":"Materiales de Mantencion y Reparación","category":"admin_general_expense","amount":-0.211,"disclosure":"aggregated"},
-        {"label":"Seguros","category":"admin_general_expense","amount":-166.375,"disclosure":"aggregated"},
-        {"label":"Asesorias y Capacitación","category":"admin_general_expense","amount":-37.874,"disclosure":"aggregated"},
-        {"label":"Consumo Básico","category":"admin_general_expense","amount":-266.218,"disclosure":"aggregated"},
-        {"label":"Patentes y Contribuciones","category":"admin_general_expense","amount":-142.811,"disclosure":"aggregated"},
-        {"label":"Provisión No Operacionales","category":"admin_general_expense","amount":-4.57,"disclosure":"aggregated"},
-        {"label":"Materiales de Oficina y Otros","category":"admin_general_expense","amount":-133.338,"disclosure":"aggregated"}
+        {"label":"Remuneraciones","category":"first_team_staff","subcategory":"wages_squad","amount":-10762.861,"disclosure":"aggregated"},
+        {"label":"Gastos de Operación","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3689.043,"disclosure":"aggregated"},
+        {
+          "label": "Amortización Pases de Jugadores Profesionales",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2687.327,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortización Concesión","category":"other_amortisation","subcategory":"other_amortisation","amount":-151.068,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de Torneos y otros",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1620.26,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto Arriendo de Pases",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -342.329,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gasto Transferencia de Jugadores",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -23.115,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciación","category":"depreciation","subcategory":"depreciation","amount":-886.206,"disclosure":"aggregated"},
+        {
+          "label": "Costos de Ventas por Eventos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -465.788,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costos de Ventas Productos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -357.896,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Gastos por función","category":"other_operating_expenses","subcategory":"other_expenses","amount":-485.62,"disclosure":"aggregated"},
+        {"label":"Remuneración","category":"admin_general","subcategory":"admin_general_expense","amount":-1790.062,"disclosure":"aggregated"},
+        {"label":"Indemnización","category":"admin_general","subcategory":"admin_general_expense","amount":-10.843,"disclosure":"aggregated"},
+        {"label":"Gastos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-92.187,"disclosure":"aggregated"},
+        {"label":"Transporte","category":"admin_general","subcategory":"admin_general_expense","amount":-54.199,"disclosure":"aggregated"},
+        {"label":"Servicios Contratados","category":"admin_general","subcategory":"admin_general_expense","amount":-1002.789,"disclosure":"aggregated"},
+        {"label":"Arriendo de Bienes","category":"admin_general","subcategory":"admin_general_expense","amount":-263.339,"disclosure":"aggregated"},
+        {
+          "label": "Gastos Notariales y Judiciales",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -166.655,
+          "disclosure": "aggregated"
+        },
+        {"label":"Servicios de Terceros","category":"admin_general","subcategory":"admin_general_expense","amount":-63.01,"disclosure":"aggregated"},
+        {
+          "label": "Materiales de Mantencion y Reparación",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.211,
+          "disclosure": "aggregated"
+        },
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-166.375,"disclosure":"aggregated"},
+        {"label":"Asesorias y Capacitación","category":"admin_general","subcategory":"admin_general_expense","amount":-37.874,"disclosure":"aggregated"},
+        {"label":"Consumo Básico","category":"admin_general","subcategory":"admin_general_expense","amount":-266.218,"disclosure":"aggregated"},
+        {"label":"Patentes y Contribuciones","category":"admin_general","subcategory":"admin_general_expense","amount":-142.811,"disclosure":"aggregated"},
+        {"label":"Provisión No Operacionales","category":"admin_general","subcategory":"admin_general_expense","amount":-4.57,"disclosure":"aggregated"},
+        {"label":"Materiales de Oficina y Otros","category":"admin_general","subcategory":"admin_general_expense","amount":-133.338,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-914.284,"tax":0,"gross_debt":30952.393,"cash":1712.282},
       "official_totals": {"revenue":25850.434,"expenses":25665.994,"net_result":-729.845},

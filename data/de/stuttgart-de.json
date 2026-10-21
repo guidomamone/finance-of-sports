@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -39,36 +40,57 @@
       "management_id": "wehrle",
       "fx": {"ref":"EUR@2023-12-31"},
       "revenue": [
-        {"label":"Spielbetrieb","category":"matchday_competition","amount":35.845,"disclosure":"detailed"},
-        {"label":"Werbung/Sponsoring","category":"sponsorship_commercial","amount":30.414,"disclosure":"detailed"},
-        {"label":"Medienvermarktung","category":"broadcasting","amount":56.756,"disclosure":"detailed"},
-        {"label":"Handel und Sonstiges","category":"lump_football_operations","amount":81.077,"disclosure":"aggregated_residual"},
-        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":13.53036,"disclosure":"not_disclosed"}
+        {"label":"Spielbetrieb","category":"matchday","subcategory":"matchday_competition","amount":35.845,"disclosure":"detailed"},
+        {"label":"Werbung/Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":30.414,"disclosure":"detailed"},
+        {"label":"Medienvermarktung","category":"media_rights","subcategory":"broadcasting","amount":56.756,"disclosure":"detailed"},
+        {"label":"Handel und Sonstiges","category":"undisclosed","subcategory":"lump_football_operations","amount":81.077,"disclosure":"aggregated_residual"},
+        {"label":"Sonstige betriebliche Erträge","category":"other_revenue","subcategory":"other_income","amount":13.53036,"disclosure":"not_disclosed"}
       ],
       "expenses": [
         {
           "label": "Materialaufwand",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -9.779388,
           "disclosure": "not_disclosed",
           "items": [["Aufwendungen für bezogene Waren",-5.347668],["Aufwendungen für bezogene Leistungen",-4.43172]]
         },
-        {"label":"Personalaufwand: Lizenzspielerbereich (laut Lagebericht)","category":"wages_squad","amount":-71.1,"disclosure":"aggregated_residual"},
+        {
+          "label": "Personalaufwand: Lizenzspielerbereich (laut Lagebericht)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -71.1,
+          "disclosure": "aggregated_residual"
+        },
         {
           "label": "Personalaufwand: übrige Bereiche (Amateur-/Jugendbereich, Verwaltung/Geschäftsstelle, Aushilfen — Restwert)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -34.716695,
           "disclosure": "aggregated_residual"
         },
-        {"label":"Abschreibungen auf Spielerwerte","category":"player_amortisation","amount":-20.268011,"disclosure":"detailed"},
+        {
+          "label": "Abschreibungen auf Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -20.268011,
+          "disclosure": "detailed"
+        },
         {
           "label": "Abschreibungen auf entgeltlich erworbene Konzessionen, Schutzrechte und ähnliche Rechte",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.04471,
           "disclosure": "detailed"
         },
-        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-2.858487,"disclosure":"detailed"},
-        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-71.30755,"disclosure":"not_disclosed"}
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-2.858487,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -71.30755,
+          "disclosure": "not_disclosed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6.290382,"tax":-0.480418,"gross_debt":125.909849,"cash":9.153243},
       "official_totals": {"revenue":217.622653,"expenses":210.074841,"net_result":0.777012}
@@ -82,36 +104,57 @@
       "management_id": "wehrle",
       "fx": {"ref":"EUR@2024-12-31"},
       "revenue": [
-        {"label":"Spielbetrieb","category":"matchday_competition","amount":53.493,"disclosure":"detailed"},
-        {"label":"Werbung/Sponsoring","category":"sponsorship_commercial","amount":39.778,"disclosure":"detailed"},
-        {"label":"Medienvermarktung","category":"broadcasting","amount":89.89,"disclosure":"detailed"},
-        {"label":"Handel und Sonstiges","category":"lump_football_operations","amount":109.498,"disclosure":"aggregated_residual"},
-        {"label":"Sonstige betriebliche Erträge","category":"other_income","amount":7.156091,"disclosure":"not_disclosed"}
+        {"label":"Spielbetrieb","category":"matchday","subcategory":"matchday_competition","amount":53.493,"disclosure":"detailed"},
+        {"label":"Werbung/Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":39.778,"disclosure":"detailed"},
+        {"label":"Medienvermarktung","category":"media_rights","subcategory":"broadcasting","amount":89.89,"disclosure":"detailed"},
+        {"label":"Handel und Sonstiges","category":"undisclosed","subcategory":"lump_football_operations","amount":109.498,"disclosure":"aggregated_residual"},
+        {"label":"Sonstige betriebliche Erträge","category":"other_revenue","subcategory":"other_income","amount":7.156091,"disclosure":"not_disclosed"}
       ],
       "expenses": [
         {
           "label": "Materialaufwand",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -23.153317,
           "disclosure": "not_disclosed",
           "items": [["Aufwendungen für bezogene Waren",-8.012439],["Aufwendungen für bezogene Leistungen",-15.140878]]
         },
-        {"label":"Personalaufwand: Lizenzspielerbereich (laut Lagebericht)","category":"wages_squad","amount":-88.7,"disclosure":"aggregated_residual"},
+        {
+          "label": "Personalaufwand: Lizenzspielerbereich (laut Lagebericht)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -88.7,
+          "disclosure": "aggregated_residual"
+        },
         {
           "label": "Personalaufwand: übrige Bereiche (Amateur-/Jugendbereich, Verwaltung/Geschäftsstelle, Aushilfen — Restwert)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -45.42799,
           "disclosure": "aggregated_residual"
         },
-        {"label":"Abschreibungen auf Spielerwerte","category":"player_amortisation","amount":-27.498827,"disclosure":"detailed"},
+        {
+          "label": "Abschreibungen auf Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -27.498827,
+          "disclosure": "detailed"
+        },
         {
           "label": "Abschreibungen auf entgeltlich erworbene Konzessionen, Schutzrechte und ähnliche Rechte",
           "category": "other_amortisation",
+          "subcategory": "other_amortisation",
           "amount": -0.042293,
           "disclosure": "detailed"
         },
-        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","amount":-3.071713,"disclosure":"detailed"},
-        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-89.987209,"disclosure":"not_disclosed"}
+        {"label":"Abschreibungen auf Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-3.071713,"disclosure":"detailed"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -89.987209,
+          "disclosure": "not_disclosed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.910318,"tax":-2.490705,"gross_debt":140.706446,"cash":10.438385},
       "official_totals": {"revenue":299.815224,"expenses":277.88135,"net_result":15.532851}

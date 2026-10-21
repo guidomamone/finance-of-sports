@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "PT",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -52,51 +53,129 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":0.027214,"disclosure":"aggregated"},
-        {"label":"Patrocínios, publicidade e corporate","category":"sponsorship_commercial","amount":0.063857,"disclosure":"aggregated"},
-        {"label":"Receitas de televisão","category":"broadcasting","amount":0.45,"disclosure":"aggregated"},
-        {"label":"Competições Nacionais","category":"competition_bonus","amount":0.021067,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_income","amount":0.16251,"disclosure":"aggregated"},
-        {"label":"Associações/Federações/Liga","category":"other_income","amount":0.038951,"disclosure":"aggregated"},
-        {"label":"Jogos e apostas (distribuição lucros)","category":"other_income","amount":0.290127,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_income","amount":0.036372,"disclosure":"aggregated"}
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.027214,"disclosure":"aggregated"},
+        {
+          "label": "Patrocínios, publicidade e corporate",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.063857,
+          "disclosure": "aggregated"
+        },
+        {"label":"Receitas de televisão","category":"media_rights","subcategory":"broadcasting","amount":0.45,"disclosure":"aggregated"},
+        {"label":"Competições Nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.021067,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0.16251,"disclosure":"aggregated"},
+        {"label":"Associações/Federações/Liga","category":"other_revenue","subcategory":"other_income","amount":0.038951,"disclosure":"aggregated"},
+        {"label":"Jogos e apostas (distribuição lucros)","category":"other_revenue","subcategory":"other_income","amount":0.290127,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.036372,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.008631,"disclosure":"aggregated"},
-        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.00045,"disclosure":"aggregated"},
-        {"label":"Trabalhos Especializados","category":"admin_general_expense","amount":-0.154938,"disclosure":"aggregated"},
-        {"label":"Publicidade e Propaganda","category":"admin_general_expense","amount":-0.00177,"disclosure":"aggregated"},
-        {"label":"Vigilância e Segurança","category":"match_organisation_expense","amount":-0.02007,"disclosure":"aggregated"},
-        {"label":"Honorários","category":"admin_general_expense","amount":-0.052284,"disclosure":"aggregated"},
-        {"label":"Conservação e Reparação","category":"admin_general_expense","amount":-0.008491,"disclosure":"aggregated"},
-        {"label":"Serviços bancários e financeiros","category":"admin_general_expense","amount":-0.001194,"disclosure":"aggregated"},
-        {"label":"Outros serviços especializados","category":"other_expenses","amount":-0.0068,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.006989,"disclosure":"aggregated"},
-        {"label":"Energia e Fluidos","category":"admin_general_expense","amount":-0.018911,"disclosure":"aggregated"},
-        {"label":"Deslocações e Estadas","category":"match_organisation_expense","amount":-0.123403,"disclosure":"aggregated"},
-        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.200143,"disclosure":"aggregated"},
-        {"label":"Comunicação","category":"admin_general_expense","amount":-0.004844,"disclosure":"aggregated"},
-        {"label":"Seguros","category":"admin_general_expense","amount":-0.001514,"disclosure":"aggregated"},
-        {"label":"Despesas de Representação","category":"admin_general_expense","amount":-0.001251,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.028715,"disclosure":"aggregated"},
-        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-2.171663,"disclosure":"aggregated"},
-        {"label":"Encargos sobre as remunerações","category":"wages_squad","amount":-0.191051,"disclosure":"aggregated"},
-        {"label":"Seguros de acidentes no trabalho","category":"admin_general_expense","amount":-0.165789,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.121142,"disclosure":"aggregated"},
-        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.04059,"disclosure":"aggregated"},
-        {"label":"Provisões","category":"admin_general_expense","amount":0,"disclosure":"aggregated"},
-        {"label":"Impostos","category":"admin_general_expense","amount":-0.000043,"disclosure":"aggregated"},
-        {"label":"Descontos de p.p. concedidos","category":"other_expenses","amount":-0.000003,"disclosure":"aggregated"},
-        {"label":"Correções relativas a períodos anteriores","category":"exceptional_items","amount":-0.05619,"disclosure":"aggregated"},
-        {"label":"Donativos e Quotizações","category":"other_expenses","amount":-0.002996,"disclosure":"aggregated"},
-        {"label":"Insuficiência da estimativa para impostos","category":"admin_general_expense","amount":-0.002415,"disclosure":"aggregated"},
-        {"label":"Multas","category":"other_expenses","amount":-0.041828,"disclosure":"aggregated"},
-        {"label":"Gastos não devidamente documentados","category":"other_expenses","amount":-0.028726,"disclosure":"aggregated"},
-        {"label":"Inscrições","category":"match_organisation_expense","amount":-0.009963,"disclosure":"aggregated"},
-        {"label":"Transferências","category":"other_expenses","amount":-0.040587,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.000068,"disclosure":"aggregated"},
-        {"label":"Cedência de Atletas","category":"other_expenses","amount":-0.006995,"disclosure":"aggregated"},
-        {"label":"Gastos/ reversões de depreciação e de amortização","category":"depreciation","amount":-0.137329,"disclosure":"aggregated"}
+        {
+          "label": "Custo das mercadorias vendidas e das matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.008631,
+          "disclosure": "aggregated"
+        },
+        {"label":"Subcontratos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.00045,"disclosure":"aggregated"},
+        {"label":"Trabalhos Especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-0.154938,"disclosure":"aggregated"},
+        {"label":"Publicidade e Propaganda","category":"admin_general","subcategory":"admin_general_expense","amount":-0.00177,"disclosure":"aggregated"},
+        {
+          "label": "Vigilância e Segurança",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.02007,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorários","category":"admin_general","subcategory":"admin_general_expense","amount":-0.052284,"disclosure":"aggregated"},
+        {"label":"Conservação e Reparação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.008491,"disclosure":"aggregated"},
+        {
+          "label": "Serviços bancários e financeiros",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.001194,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Outros serviços especializados",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.0068,
+          "disclosure": "aggregated"
+        },
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.006989,"disclosure":"aggregated"},
+        {"label":"Energia e Fluidos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.018911,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações e Estadas",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.123403,
+          "disclosure": "aggregated"
+        },
+        {"label":"Rendas e alugueres","category":"admin_general","subcategory":"admin_general_expense","amount":-0.200143,"disclosure":"aggregated"},
+        {"label":"Comunicação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.004844,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.001514,"disclosure":"aggregated"},
+        {"label":"Despesas de Representação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.001251,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.028715,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-2.171663,"disclosure":"aggregated"},
+        {"label":"Encargos sobre as remunerações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.191051,"disclosure":"aggregated"},
+        {
+          "label": "Seguros de acidentes no trabalho",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.165789,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.121142,"disclosure":"aggregated"},
+        {
+          "label": "Imparidade de dívidas a receber (perdas/reversões)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.04059,
+          "disclosure": "aggregated"
+        },
+        {"label":"Provisões","category":"admin_general","subcategory":"admin_general_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.000043,"disclosure":"aggregated"},
+        {
+          "label": "Descontos de p.p. concedidos",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.000003,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Correções relativas a períodos anteriores",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.05619,
+          "disclosure": "aggregated"
+        },
+        {"label":"Donativos e Quotizações","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.002996,"disclosure":"aggregated"},
+        {
+          "label": "Insuficiência da estimativa para impostos",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.002415,
+          "disclosure": "aggregated"
+        },
+        {"label":"Multas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.041828,"disclosure":"aggregated"},
+        {
+          "label": "Gastos não devidamente documentados",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.028726,
+          "disclosure": "aggregated"
+        },
+        {"label":"Inscrições","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.009963,"disclosure":"aggregated"},
+        {"label":"Transferências","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.040587,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.000068,"disclosure":"aggregated"},
+        {"label":"Cedência de Atletas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.006995,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/ reversões de depreciação e de amortização",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.137329,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.206727,"tax":-0.006221,"gross_debt":5.805568,"cash":1.055152},
       "official_totals": {"revenue":1.090098,"expenses":3.601586,"net_result":-2.780627},
@@ -113,41 +192,95 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
-        {"label":"Bilheteira e Corporate","category":"matchday_competition","amount":0.184827,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":0.082418,"disclosure":"aggregated"},
-        {"label":"Patrocínios, publicidade e corporate","category":"sponsorship_commercial","amount":0.143009,"disclosure":"aggregated"},
-        {"label":"Receitas de televisão","category":"broadcasting","amount":0.45,"disclosure":"aggregated"},
-        {"label":"Competições Nacionais","category":"competition_bonus","amount":0.209232,"disclosure":"aggregated"},
-        {"label":"Subsídios à Exploração","category":"other_income","amount":0.26912,"disclosure":"aggregated"},
-        {"label":"Associações/Federações/Liga","category":"other_income","amount":0.023057,"disclosure":"aggregated"},
-        {"label":"Jogos e apostas (distribuição lucros)","category":"other_income","amount":0.299624,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_income","amount":0.057494,"disclosure":"aggregated"}
+        {"label":"Bilheteira e Corporate","category":"matchday","subcategory":"matchday_competition","amount":0.184827,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.082418,"disclosure":"aggregated"},
+        {
+          "label": "Patrocínios, publicidade e corporate",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.143009,
+          "disclosure": "aggregated"
+        },
+        {"label":"Receitas de televisão","category":"media_rights","subcategory":"broadcasting","amount":0.45,"disclosure":"aggregated"},
+        {"label":"Competições Nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.209232,"disclosure":"aggregated"},
+        {"label":"Subsídios à Exploração","category":"other_revenue","subcategory":"other_income","amount":0.26912,"disclosure":"aggregated"},
+        {"label":"Associações/Federações/Liga","category":"other_revenue","subcategory":"other_income","amount":0.023057,"disclosure":"aggregated"},
+        {"label":"Jogos e apostas (distribuição lucros)","category":"other_revenue","subcategory":"other_income","amount":0.299624,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.057494,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.088996,"disclosure":"aggregated"},
-        {"label":"Trabalhos Especializados","category":"admin_general_expense","amount":-1.809079,"disclosure":"aggregated"},
-        {"label":"Publicidade e Propaganda","category":"admin_general_expense","amount":-0.026404,"disclosure":"aggregated"},
-        {"label":"Vigilância e Segurança","category":"match_organisation_expense","amount":-0.079066,"disclosure":"aggregated"},
-        {"label":"Honorários","category":"admin_general_expense","amount":-0.043794,"disclosure":"aggregated"},
-        {"label":"Conservação e Reparação","category":"admin_general_expense","amount":-0.093336,"disclosure":"aggregated"},
-        {"label":"Serviços bancários e financeiro:","category":"admin_general_expense","amount":-0.00212,"disclosure":"aggregated"},
-        {"label":"Outros serviços especializados","category":"other_expenses","amount":-0.003276,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.034964,"disclosure":"aggregated"},
-        {"label":"Energia e Fluidos","category":"admin_general_expense","amount":-0.029291,"disclosure":"aggregated"},
-        {"label":"Deslocações e Estadas","category":"match_organisation_expense","amount":-0.292711,"disclosure":"aggregated"},
-        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.388443,"disclosure":"aggregated"},
-        {"label":"Comunicação","category":"admin_general_expense","amount":-0.00794,"disclosure":"aggregated"},
-        {"label":"Seguros","category":"admin_general_expense","amount":-0.003135,"disclosure":"aggregated"},
-        {"label":"Despesas de Representação","category":"admin_general_expense","amount":-0.04296,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.055881,"disclosure":"aggregated"},
-        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-4.716376,"disclosure":"aggregated"},
-        {"label":"Encargos sobre as remunerações","category":"wages_squad","amount":-0.438872,"disclosure":"aggregated"},
-        {"label":"Seguros de acidentes no trabalho","category":"admin_general_expense","amount":-0.413655,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.391934,"disclosure":"aggregated"},
-        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.011438,"disclosure":"aggregated"},
-        {"label":"Provisões","category":"admin_general_expense","amount":0,"disclosure":"aggregated"},
-        {"label":"Outros gastos","category":"other_expenses","amount":-0.706109,"disclosure":"aggregated"},
-        {"label":"Gastos/ reversões de depreciação e de amortização","category":"depreciation","amount":-1.228471,"disclosure":"aggregated"}
+        {
+          "label": "Custo das mercadorias vendidas e das matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.088996,
+          "disclosure": "aggregated"
+        },
+        {"label":"Trabalhos Especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-1.809079,"disclosure":"aggregated"},
+        {"label":"Publicidade e Propaganda","category":"admin_general","subcategory":"admin_general_expense","amount":-0.026404,"disclosure":"aggregated"},
+        {
+          "label": "Vigilância e Segurança",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.079066,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorários","category":"admin_general","subcategory":"admin_general_expense","amount":-0.043794,"disclosure":"aggregated"},
+        {"label":"Conservação e Reparação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.093336,"disclosure":"aggregated"},
+        {
+          "label": "Serviços bancários e financeiro:",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.00212,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Outros serviços especializados",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.003276,
+          "disclosure": "aggregated"
+        },
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.034964,"disclosure":"aggregated"},
+        {"label":"Energia e Fluidos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.029291,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações e Estadas",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.292711,
+          "disclosure": "aggregated"
+        },
+        {"label":"Rendas e alugueres","category":"admin_general","subcategory":"admin_general_expense","amount":-0.388443,"disclosure":"aggregated"},
+        {"label":"Comunicação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.00794,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.003135,"disclosure":"aggregated"},
+        {"label":"Despesas de Representação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.04296,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.055881,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-4.716376,"disclosure":"aggregated"},
+        {"label":"Encargos sobre as remunerações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.438872,"disclosure":"aggregated"},
+        {
+          "label": "Seguros de acidentes no trabalho",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.413655,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.391934,"disclosure":"aggregated"},
+        {
+          "label": "Imparidade de dívidas a receber (perdas/reversões)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.011438,
+          "disclosure": "aggregated"
+        },
+        {"label":"Provisões","category":"admin_general","subcategory":"admin_general_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Outros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.706109,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/ reversões de depreciação e de amortização",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -1.228471,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.713088,"tax":-0.018534,"gross_debt":16.291914,"cash":1.50592},
       "official_totals": {"revenue":1.71878,"expenses":10.908252,"net_result":-9.921095},
@@ -164,69 +297,167 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Receitas de bilheteira","category":"matchday_competition","amount":0.067289,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":0.148475,"disclosure":"aggregated"},
-        {"label":"Patrocínios, publicidade e corporate","category":"sponsorship_commercial","amount":0.252182,"disclosure":"aggregated"},
-        {"label":"Receitas de televisão","category":"broadcasting","amount":0.45,"disclosure":"aggregated"},
-        {"label":"Competições da UEFA e nacionais","category":"competition_bonus","amount":0.007317,"disclosure":"aggregated"},
-        {"label":"Subsídios Associações/FPF/Liga/UEFA","category":"other_income","amount":0.162111,"disclosure":"aggregated"},
-        {"label":"Subsídios do Estado e outros entes públicos","category":"other_income","amount":0.012239,"disclosure":"aggregated"},
-        {"label":"Rendimentos de apostas","category":"other_income","amount":0.342372,"disclosure":"aggregated"},
-        {"label":"Fundo de infraestruturas Liga Portugal","category":"other_income","amount":0.031368,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_income","amount":0.094739,"disclosure":"aggregated"}
+        {"label":"Receitas de bilheteira","category":"matchday","subcategory":"matchday_competition","amount":0.067289,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.148475,"disclosure":"aggregated"},
+        {
+          "label": "Patrocínios, publicidade e corporate",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.252182,
+          "disclosure": "aggregated"
+        },
+        {"label":"Receitas de televisão","category":"media_rights","subcategory":"broadcasting","amount":0.45,"disclosure":"aggregated"},
+        {"label":"Competições da UEFA e nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.007317,"disclosure":"aggregated"},
+        {"label":"Subsídios Associações/FPF/Liga/UEFA","category":"other_revenue","subcategory":"other_income","amount":0.162111,"disclosure":"aggregated"},
+        {
+          "label": "Subsídios do Estado e outros entes públicos",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.012239,
+          "disclosure": "aggregated"
+        },
+        {"label":"Rendimentos de apostas","category":"other_revenue","subcategory":"other_income","amount":0.342372,"disclosure":"aggregated"},
+        {"label":"Fundo de infraestruturas Liga Portugal","category":"other_revenue","subcategory":"other_income","amount":0.031368,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.094739,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e matérias consumidas","category":"other_expenses","amount":-0.10462,"disclosure":"aggregated"},
-        {"label":"Trabalhos especializados","category":"admin_general_expense","amount":-1.763485,"disclosure":"aggregated"},
-        {"label":"Publicidade e propaganda","category":"admin_general_expense","amount":-0.011416,"disclosure":"aggregated"},
-        {"label":"Vigilância e segurança","category":"match_organisation_expense","amount":-0.081712,"disclosure":"aggregated"},
-        {"label":"Honorários","category":"admin_general_expense","amount":-0.046168,"disclosure":"aggregated"},
-        {"label":"Conservação e reparação","category":"admin_general_expense","amount":-0.09467,"disclosure":"aggregated"},
-        {"label":"Outros serviços especializados","category":"other_expenses","amount":-0.004639,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.027434,"disclosure":"aggregated"},
-        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.054433,"disclosure":"aggregated"},
-        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.407769,"disclosure":"aggregated"},
-        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.454959,"disclosure":"aggregated"},
-        {"label":"Comunicação","category":"admin_general_expense","amount":-0.024649,"disclosure":"aggregated"},
-        {"label":"Seguros","category":"admin_general_expense","amount":-0.00548,"disclosure":"aggregated"},
-        {"label":"Contencioso e notariado","category":"admin_general_expense","amount":-0.000055,"disclosure":"aggregated"},
-        {"label":"Despesas de representação","category":"admin_general_expense","amount":-0.021131,"disclosure":"aggregated"},
-        {"label":"Limpeza, higiene e conforto","category":"admin_general_expense","amount":-0.009478,"disclosure":"aggregated"},
-        {"label":"Outros serviços","category":"other_expenses","amount":-0.011814,"disclosure":"aggregated"},
-        {"label":"Atletas - remunerações","category":"wages_squad","amount":-3.641269,"disclosure":"aggregated"},
-        {"label":"Atletas - encargos sobre remunerações","category":"wages_squad","amount":-0.18955,"disclosure":"aggregated"},
-        {"label":"Atletas - encargos com seguros","category":"wages_squad","amount":-0.422635,"disclosure":"aggregated"},
-        {"label":"Atletas - outros gastos","category":"wages_squad","amount":-0.486409,"disclosure":"aggregated"},
-        {"label":"Treinadores - remunerações","category":"wages_squad","amount":-0.600226,"disclosure":"aggregated"},
-        {"label":"Treinadores - encargos sobre remunerações","category":"wages_squad","amount":-0.152892,"disclosure":"aggregated"},
-        {"label":"Treinadores - encargos com seguros","category":"wages_squad","amount":-0.069667,"disclosure":"aggregated"},
-        {"label":"Outro pessoal - remunerações","category":"admin_general_expense","amount":-1.079376,"disclosure":"aggregated"},
-        {"label":"Outro pessoal - encargos sobre remunerações","category":"admin_general_expense","amount":-0.250602,"disclosure":"aggregated"},
-        {"label":"Outro pessoal - outros gastos","category":"admin_general_expense","amount":-0.035742,"disclosure":"aggregated"},
-        {"label":"Outros gastos com pessoal","category":"wages_squad","amount":-0.062057,"disclosure":"aggregated"},
-        {"label":"Imparidades de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":0,"disclosure":"aggregated"},
-        {"label":"Provisões (aumentos/reduções)","category":"admin_general_expense","amount":0,"disclosure":"aggregated"},
-        {"label":"Impostos","category":"admin_general_expense","amount":-0.002516,"disclosure":"aggregated"},
-        {"label":"Correções relativas a exercícios anteriores","category":"exceptional_items","amount":-0.019369,"disclosure":"aggregated"},
-        {"label":"Donativos e Quotizações","category":"other_expenses","amount":-0.013051,"disclosure":"aggregated"},
-        {"label":"Multas e penalidades","category":"other_expenses","amount":-0.0263,"disclosure":"aggregated"},
-        {"label":"Despesas indevidamente documentadas","category":"other_expenses","amount":-0.001999,"disclosure":"aggregated"},
-        {"label":"Bolsas de formação desportiva","category":"youth_other_sports_expense","amount":-0.098345,"disclosure":"aggregated"},
+        {
+          "label": "Custo das mercadorias vendidas e matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.10462,
+          "disclosure": "aggregated"
+        },
+        {"label":"Trabalhos especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-1.763485,"disclosure":"aggregated"},
+        {"label":"Publicidade e propaganda","category":"admin_general","subcategory":"admin_general_expense","amount":-0.011416,"disclosure":"aggregated"},
+        {
+          "label": "Vigilância e segurança",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.081712,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorários","category":"admin_general","subcategory":"admin_general_expense","amount":-0.046168,"disclosure":"aggregated"},
+        {"label":"Conservação e reparação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.09467,"disclosure":"aggregated"},
+        {
+          "label": "Outros serviços especializados",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.004639,
+          "disclosure": "aggregated"
+        },
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.027434,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.054433,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações, estadas e transportes",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.407769,
+          "disclosure": "aggregated"
+        },
+        {"label":"Rendas e alugueres","category":"admin_general","subcategory":"admin_general_expense","amount":-0.454959,"disclosure":"aggregated"},
+        {"label":"Comunicação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.024649,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.00548,"disclosure":"aggregated"},
+        {"label":"Contencioso e notariado","category":"admin_general","subcategory":"admin_general_expense","amount":-0.000055,"disclosure":"aggregated"},
+        {"label":"Despesas de representação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.021131,"disclosure":"aggregated"},
+        {"label":"Limpeza, higiene e conforto","category":"admin_general","subcategory":"admin_general_expense","amount":-0.009478,"disclosure":"aggregated"},
+        {"label":"Outros serviços","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.011814,"disclosure":"aggregated"},
+        {"label":"Atletas - remunerações","category":"first_team_staff","subcategory":"wages_squad","amount":-3.641269,"disclosure":"aggregated"},
+        {
+          "label": "Atletas - encargos sobre remunerações",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.18955,
+          "disclosure": "aggregated"
+        },
+        {"label":"Atletas - encargos com seguros","category":"first_team_staff","subcategory":"wages_squad","amount":-0.422635,"disclosure":"aggregated"},
+        {"label":"Atletas - outros gastos","category":"first_team_staff","subcategory":"wages_squad","amount":-0.486409,"disclosure":"aggregated"},
+        {"label":"Treinadores - remunerações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.600226,"disclosure":"aggregated"},
+        {
+          "label": "Treinadores - encargos sobre remunerações",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.152892,
+          "disclosure": "aggregated"
+        },
+        {"label":"Treinadores - encargos com seguros","category":"first_team_staff","subcategory":"wages_squad","amount":-0.069667,"disclosure":"aggregated"},
+        {"label":"Outro pessoal - remunerações","category":"admin_general","subcategory":"admin_general_expense","amount":-1.079376,"disclosure":"aggregated"},
+        {
+          "label": "Outro pessoal - encargos sobre remunerações",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.250602,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Outro pessoal - outros gastos",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.035742,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros gastos com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-0.062057,"disclosure":"aggregated"},
+        {
+          "label": "Imparidades de dívidas a receber (perdas/reversões)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": 0,
+          "disclosure": "aggregated"
+        },
+        {"label":"Provisões (aumentos/reduções)","category":"admin_general","subcategory":"admin_general_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.002516,"disclosure":"aggregated"},
+        {
+          "label": "Correções relativas a exercícios anteriores",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -0.019369,
+          "disclosure": "aggregated"
+        },
+        {"label":"Donativos e Quotizações","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.013051,"disclosure":"aggregated"},
+        {"label":"Multas e penalidades","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.0263,"disclosure":"aggregated"},
+        {
+          "label": "Despesas indevidamente documentadas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.001999,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Bolsas de formação desportiva",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.098345,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Contratos de formação desportiva - Despesas médicas e equipamentos",
-          "category": "youth_other_sports_expense",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
           "amount": -0.042795,
           "disclosure": "aggregated"
         },
         {
           "label": "Contratos de formação desportiva - Gastos com alimentação",
-          "category": "youth_other_sports_expense",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
           "amount": -0.205752,
           "disclosure": "aggregated"
         },
-        {"label":"Contratos de formação desportiva - Outros gastos","category":"youth_other_sports_expense","amount":-0.08798,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.000619,"disclosure":"aggregated"},
-        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-2.196108,"disclosure":"aggregated"}
+        {
+          "label": "Contratos de formação desportiva - Outros gastos",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.08798,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.000619,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/reversões de depreciação e de amortização",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -2.196108,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.423949,"tax":-0.017023,"gross_debt":25.141914,"cash":1.540896},
       "official_totals": {"revenue":1.568093,"expenses":12.789802,"net_result":-12.682053},
@@ -241,71 +472,164 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Receitas de bilheteira","category":"matchday_competition","amount":0.086275,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":0.147336,"disclosure":"aggregated"},
-        {"label":"Patrocínios, publicidade e corporate","category":"sponsorship_commercial","amount":0.357225,"disclosure":"aggregated"},
-        {"label":"Receitas de televisão","category":"broadcasting","amount":0.45,"disclosure":"aggregated"},
-        {"label":"Competições da UEFA e nacionais","category":"competition_bonus","amount":0.004066,"disclosure":"aggregated"},
-        {"label":"Subsídios Associações/FPF/Liga/UEFA","category":"other_income","amount":0.359044,"disclosure":"aggregated"},
-        {"label":"Subsídios do Estado e outros entes públicos","category":"other_income","amount":0.016016,"disclosure":"aggregated"},
-        {"label":"Rendimentos de apostas","category":"other_income","amount":0.374347,"disclosure":"aggregated"},
-        {"label":"Fundo de infraestruturas Liga Portugal","category":"other_income","amount":0.046632,"disclosure":"aggregated"},
-        {"label":"Compensação de formação (FIFA Clearing House)","category":"player_sales","amount":0.063392,"disclosure":"aggregated"},
-        {"label":"Ganhos em investimentos não financeiros","category":"player_sales","amount":3.932136,"disclosure":"aggregated"},
-        {"label":"Indemnizações de seguros de acidentes de trabalho","category":"other_income","amount":0.082653,"disclosure":"aggregated"},
-        {"label":"Outros não especificados","category":"other_income","amount":0.069994,"disclosure":"aggregated"}
+        {"label":"Receitas de bilheteira","category":"matchday","subcategory":"matchday_competition","amount":0.086275,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.147336,"disclosure":"aggregated"},
+        {
+          "label": "Patrocínios, publicidade e corporate",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.357225,
+          "disclosure": "aggregated"
+        },
+        {"label":"Receitas de televisão","category":"media_rights","subcategory":"broadcasting","amount":0.45,"disclosure":"aggregated"},
+        {"label":"Competições da UEFA e nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.004066,"disclosure":"aggregated"},
+        {"label":"Subsídios Associações/FPF/Liga/UEFA","category":"other_revenue","subcategory":"other_income","amount":0.359044,"disclosure":"aggregated"},
+        {
+          "label": "Subsídios do Estado e outros entes públicos",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.016016,
+          "disclosure": "aggregated"
+        },
+        {"label":"Rendimentos de apostas","category":"other_revenue","subcategory":"other_income","amount":0.374347,"disclosure":"aggregated"},
+        {"label":"Fundo de infraestruturas Liga Portugal","category":"other_revenue","subcategory":"other_income","amount":0.046632,"disclosure":"aggregated"},
+        {
+          "label": "Compensação de formação (FIFA Clearing House)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.063392,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ganhos em investimentos não financeiros",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 3.932136,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Indemnizações de seguros de acidentes de trabalho",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.082653,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros não especificados","category":"other_revenue","subcategory":"other_income","amount":0.069994,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.038169,"disclosure":"aggregated"},
-        {"label":"Trabalhos especializados","category":"admin_general_expense","amount":-1.22954,"disclosure":"aggregated"},
-        {"label":"Publicidade e propaganda","category":"admin_general_expense","amount":-0.016965,"disclosure":"aggregated"},
-        {"label":"Vigilância e segurança","category":"match_organisation_expense","amount":-0.078274,"disclosure":"aggregated"},
-        {"label":"Honorários","category":"admin_general_expense","amount":-0.076281,"disclosure":"aggregated"},
-        {"label":"Comissões","category":"other_expenses","amount":-0.207375,"disclosure":"aggregated"},
-        {"label":"Conservação e reparação","category":"admin_general_expense","amount":-0.090704,"disclosure":"aggregated"},
-        {"label":"Outros serviços especializados","category":"other_expenses","amount":-0.004546,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.027791,"disclosure":"aggregated"},
-        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.071493,"disclosure":"aggregated"},
-        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.328689,"disclosure":"aggregated"},
-        {"label":"Rendas e alugueres","category":"admin_general_expense","amount":-0.483205,"disclosure":"aggregated"},
-        {"label":"Comunicação","category":"admin_general_expense","amount":-0.031497,"disclosure":"aggregated"},
-        {"label":"Seguros","category":"admin_general_expense","amount":-0.009263,"disclosure":"aggregated"},
-        {"label":"Despesas de representação","category":"admin_general_expense","amount":-0.017553,"disclosure":"aggregated"},
-        {"label":"Limpeza, higiene e conforto","category":"admin_general_expense","amount":-0.009765,"disclosure":"aggregated"},
-        {"label":"Outros serviços","category":"other_expenses","amount":-0.009454,"disclosure":"aggregated"},
-        {"label":"Remunerações do pessoal","category":"wages_squad","amount":-5.869037,"disclosure":"aggregated"},
-        {"label":"Indemnizações","category":"wages_squad","amount":-0.055114,"disclosure":"aggregated"},
-        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.636691,"disclosure":"aggregated"},
-        {"label":"Seguro de acidentes no trabalho doenças profissionais","category":"admin_general_expense","amount":-0.62972,"disclosure":"aggregated"},
-        {"label":"Outros gastos com o pessoal","category":"wages_squad","amount":-0.428072,"disclosure":"aggregated"},
-        {"label":"Provisões (aumentos/reduções)","category":"admin_general_expense","amount":-0.08,"disclosure":"aggregated"},
-        {"label":"Impostos","category":"admin_general_expense","amount":-0.001973,"disclosure":"aggregated"},
-        {"label":"Perdas em investimentos não financeiros","category":"other_expenses","amount":-0.112305,"disclosure":"aggregated"},
-        {"label":"Donativos e Quotizações","category":"other_expenses","amount":-0.013571,"disclosure":"aggregated"},
-        {"label":"Multas e penalidades","category":"other_expenses","amount":-0.025464,"disclosure":"aggregated"},
-        {"label":"Despesas indevidamente documentadas","category":"other_expenses","amount":-0.001391,"disclosure":"aggregated"},
-        {"label":"Bolsas de formação desportiva","category":"youth_other_sports_expense","amount":-0.112725,"disclosure":"aggregated"},
+        {
+          "label": "Custo das mercadorias vendidas e das matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.038169,
+          "disclosure": "aggregated"
+        },
+        {"label":"Trabalhos especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-1.22954,"disclosure":"aggregated"},
+        {"label":"Publicidade e propaganda","category":"admin_general","subcategory":"admin_general_expense","amount":-0.016965,"disclosure":"aggregated"},
+        {
+          "label": "Vigilância e segurança",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.078274,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorários","category":"admin_general","subcategory":"admin_general_expense","amount":-0.076281,"disclosure":"aggregated"},
+        {"label":"Comissões","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.207375,"disclosure":"aggregated"},
+        {"label":"Conservação e reparação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.090704,"disclosure":"aggregated"},
+        {
+          "label": "Outros serviços especializados",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.004546,
+          "disclosure": "aggregated"
+        },
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.027791,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.071493,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações, estadas e transportes",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.328689,
+          "disclosure": "aggregated"
+        },
+        {"label":"Rendas e alugueres","category":"admin_general","subcategory":"admin_general_expense","amount":-0.483205,"disclosure":"aggregated"},
+        {"label":"Comunicação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.031497,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.009263,"disclosure":"aggregated"},
+        {"label":"Despesas de representação","category":"admin_general","subcategory":"admin_general_expense","amount":-0.017553,"disclosure":"aggregated"},
+        {"label":"Limpeza, higiene e conforto","category":"admin_general","subcategory":"admin_general_expense","amount":-0.009765,"disclosure":"aggregated"},
+        {"label":"Outros serviços","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.009454,"disclosure":"aggregated"},
+        {"label":"Remunerações do pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-5.869037,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.055114,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.636691,"disclosure":"aggregated"},
+        {
+          "label": "Seguro de acidentes no trabalho doenças profissionais",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.62972,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros gastos com o pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-0.428072,"disclosure":"aggregated"},
+        {"label":"Provisões (aumentos/reduções)","category":"admin_general","subcategory":"admin_general_expense","amount":-0.08,"disclosure":"aggregated"},
+        {"label":"Impostos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.001973,"disclosure":"aggregated"},
+        {
+          "label": "Perdas em investimentos não financeiros",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.112305,
+          "disclosure": "aggregated"
+        },
+        {"label":"Donativos e Quotizações","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.013571,"disclosure":"aggregated"},
+        {"label":"Multas e penalidades","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.025464,"disclosure":"aggregated"},
+        {
+          "label": "Despesas indevidamente documentadas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.001391,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Bolsas de formação desportiva",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.112725,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Contratos de formação desportiva - Despesas médicas e equipamentos",
-          "category": "youth_other_sports_expense",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
           "amount": -0.035917,
           "disclosure": "aggregated"
         },
         {
           "label": "Contratos de formação desportiva - Gastos com alimentação",
-          "category": "youth_other_sports_expense",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
           "amount": -0.233549,
           "disclosure": "aggregated"
         },
         {
           "label": "Contratos de formação desportiva - Taxas de inscrição e transferências",
-          "category": "youth_other_sports_expense",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
           "amount": -0.018674,
           "disclosure": "aggregated"
         },
-        {"label":"Contratos de formação desportiva - Outros gastos","category":"youth_other_sports_expense","amount":-0.001404,"disclosure":"aggregated"},
-        {"label":"Outros não especificados","category":"other_expenses","amount":-0.114752,"disclosure":"aggregated"},
-        {"label":"Gastos/reversões de depreciação e de amortização","category":"depreciation","amount":-1.773055,"disclosure":"aggregated"}
+        {
+          "label": "Contratos de formação desportiva - Outros gastos",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.001404,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros não especificados","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.114752,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/reversões de depreciação e de amortização",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -1.773055,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.784786,"tax":-0.015107,"gross_debt":28.741914,"cash":1.606025},
       "official_totals": {"revenue":5.989118,"expenses":12.87398,"net_result":-8.684755},

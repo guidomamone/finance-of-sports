@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "RU",
     "reporting_currency": "RUB",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -59,24 +60,55 @@
       "management_id": null,
       "fx": {"ref":"RUB@2021-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":291.117,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":7.176,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_income","amount":574.553,"disclosure":"aggregated"},
-        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":100,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":291.117,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":7.176,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":574.553,"disclosure":"aggregated"},
+        {
+          "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 100,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-117.293,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-22.797,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-6.163,"disclosure":"aggregated"},
-        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-648.61,"disclosure":"aggregated"},
-        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-64.685,"disclosure":"aggregated"},
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -117.293,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-22.797,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-6.163,"disclosure":"aggregated"},
+        {
+          "label": "Расходы на целевые мероприятия (6310, форма 6)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -648.61,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Расходы на содержание аппарата управления (6320, форма 6)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -64.685,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -5.515,
           "disclosure": "aggregated"
         },
-        {"label":"Прочие расходы (6350, форма 6)","category":"other_expenses","amount":-0.414,"disclosure":"aggregated"}
+        {
+          "label": "Прочие расходы (6350, форма 6)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.414,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-33.12,"gross_debt":0,"cash":146.508},
       "official_totals": {"revenue":null,"expenses":null,"net_result":74.248},
@@ -110,20 +142,45 @@
       "management_id": null,
       "fx": {"ref":"RUB@2022-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":647.871,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":195.082,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_income","amount":876,"disclosure":"aggregated"},
-        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":100,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":647.871,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":195.082,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":876,"disclosure":"aggregated"},
+        {
+          "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 100,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-237.925,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-140.194,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-179.869,"disclosure":"aggregated"},
-        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-754.41,"disclosure":"aggregated"},
-        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-105.656,"disclosure":"aggregated"},
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -237.925,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-140.194,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-179.869,"disclosure":"aggregated"},
+        {
+          "label": "Расходы на целевые мероприятия (6310, форма 6)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -754.41,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Расходы на содержание аппарата управления (6320, форма 6)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -105.656,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -2.192,
           "disclosure": "aggregated"
         }
@@ -160,20 +217,45 @@
       "management_id": null,
       "fx": {"ref":"RUB@2023-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":656.634,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":310.394,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_income","amount":811.954,"disclosure":"aggregated"},
-        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":100,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":656.634,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":310.394,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":811.954,"disclosure":"aggregated"},
+        {
+          "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 100,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-369.708,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-226.598,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-367.14,"disclosure":"aggregated"},
-        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-1055.294,"disclosure":"aggregated"},
-        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-191.491,"disclosure":"aggregated"},
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -369.708,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-226.598,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-367.14,"disclosure":"aggregated"},
+        {
+          "label": "Расходы на целевые мероприятия (6310, форма 6)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -1055.294,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Расходы на содержание аппарата управления (6320, форма 6)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -191.491,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -3.905,
           "disclosure": "aggregated"
         }
@@ -210,24 +292,55 @@
       "management_id": null,
       "fx": {"ref":"RUB@2024-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":771.264,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":297.629,"disclosure":"aggregated"},
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_income","amount":1487.999,"disclosure":"aggregated"},
-        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":100,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":771.264,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":297.629,"disclosure":"aggregated"},
+        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":1487.999,"disclosure":"aggregated"},
+        {
+          "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 100,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-722.498,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-216.704,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-136.558,"disclosure":"aggregated"},
-        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-740.572,"disclosure":"aggregated"},
-        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-735.042,"disclosure":"aggregated"},
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -722.498,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-216.704,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-136.558,"disclosure":"aggregated"},
+        {
+          "label": "Расходы на целевые мероприятия (6310, форма 6)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -740.572,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Расходы на содержание аппарата управления (6320, форма 6)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -735.042,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -30.736,
           "disclosure": "aggregated"
         },
-        {"label":"Прочие расходы (6350, форма 6)","category":"other_expenses","amount":-0.223,"disclosure":"aggregated"}
+        {
+          "label": "Прочие расходы (6350, форма 6)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.223,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":15.408,"tax":-8.353,"gross_debt":0,"cash":9.938},
       "official_totals": {"revenue":null,"expenses":null,"net_result":81.613},
@@ -261,31 +374,63 @@
       "management_id": null,
       "fx": {"ref":"RUB@2025-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":657.779,"disclosure":"aggregated"},
-        {"label":"поступления по трансферам","category":"player_sales","amount":6.214,"disclosure":"detailed"},
-        {"label":"призовые от РФС","category":"competition_bonus","amount":39.958,"disclosure":"detailed"},
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":657.779,"disclosure":"aggregated"},
+        {"label":"поступления по трансферам","category":"player_transfers","subcategory":"player_sales","amount":6.214,"disclosure":"detailed"},
+        {"label":"призовые от РФС","category":"prize_money","subcategory":"competition_bonus","amount":39.958,"disclosure":"detailed"},
         {
           "label": "прочие поступления (бартер, списание просроченной задолженности, услуги за сдачу в аренду и предоставление прочих услуг)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 85.293,
           "disclosure": "detailed"
         },
-        {"label":"Целевые взносы (6220, форма 6)","category":"other_income","amount":1646.878,"disclosure":"aggregated"},
-        {"label":"Добровольные имущественные взносы и пожертвования (6230, форма 6)","category":"other_income","amount":150,"disclosure":"aggregated"}
+        {"label":"Целевые взносы (6220, форма 6)","category":"other_revenue","subcategory":"other_income","amount":1646.878,"disclosure":"aggregated"},
+        {
+          "label": "Добровольные имущественные взносы и пожертвования (6230, форма 6)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 150,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-234.785,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-254.441,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-308.952,"disclosure":"aggregated"},
-        {"label":"Расходы на целевые мероприятия (6310, форма 6)","category":"lump_football_operations_expense","amount":-1478.802,"disclosure":"aggregated"},
-        {"label":"Расходы на содержание аппарата управления (6320, форма 6)","category":"admin_general_expense","amount":-351.481,"disclosure":"aggregated"},
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -234.785,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-254.441,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-308.952,"disclosure":"aggregated"},
+        {
+          "label": "Расходы на целевые мероприятия (6310, форма 6)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -1478.802,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Расходы на содержание аппарата управления (6320, форма 6)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -351.481,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Приобретение основных средств, инвентаря и иного имущества (6330, форма 6)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.168,
           "disclosure": "aggregated"
         },
-        {"label":"Прочие расходы (6350, форма 6)","category":"other_expenses","amount":-7.379,"disclosure":"aggregated"}
+        {
+          "label": "Прочие расходы (6350, форма 6)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7.379,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":4.073,"tax":-2.518,"gross_debt":0,"cash":0.785},
       "official_totals": {"revenue":null,"expenses":null,"net_result":-48.332},

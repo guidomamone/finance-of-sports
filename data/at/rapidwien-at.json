@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "AT",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -115,31 +116,85 @@
       "management_id": null,
       "fx": {"ref":"EUR@2013-06-30"},
       "revenue": [
-        {"label":"Ticketing","category":"matchday_competition","amount":6.671377,"disclosure":"aggregated"},
-        {"label":"+ Sponsoring","category":"sponsorship_commercial","amount":7.582439,"disclosure":"aggregated"},
-        {"label":"+ Hospitality (VIP)","category":"matchday_competition","amount":0.924482,"disclosure":"aggregated"},
-        {"label":"+ Merchandising","category":"sponsorship_commercial","amount":2.057954,"disclosure":"aggregated"},
-        {"label":"+ Rechteverwertung","category":"broadcasting","amount":3.992629,"disclosure":"aggregated"},
-        {"label":"+ Sonstige Erlöse","category":"other_income","amount":2.401842,"disclosure":"aggregated"},
-        {"label":"Transfererlöse","category":"player_sales","amount":1.291147,"disclosure":"aggregated"},
-        {"label":"a.o. Ergebnis","category":"other_income","amount":0.500094,"disclosure":"aggregated"}
+        {"label":"Ticketing","category":"matchday","subcategory":"matchday_competition","amount":6.671377,"disclosure":"aggregated"},
+        {"label":"+ Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":7.582439,"disclosure":"aggregated"},
+        {"label":"+ Hospitality (VIP)","category":"matchday","subcategory":"matchday_competition","amount":0.924482,"disclosure":"aggregated"},
+        {"label":"+ Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.057954,"disclosure":"aggregated"},
+        {"label":"+ Rechteverwertung","category":"media_rights","subcategory":"broadcasting","amount":3.992629,"disclosure":"aggregated"},
+        {"label":"+ Sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":2.401842,"disclosure":"aggregated"},
+        {"label":"Transfererlöse","category":"player_transfers","subcategory":"player_sales","amount":1.291147,"disclosure":"aggregated"},
+        {"label":"a.o. Ergebnis","category":"other_revenue","subcategory":"other_income","amount":0.500094,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Personalaufwand Sport","category":"wages_squad","amount":-10.232786,"disclosure":"aggregated"},
-        {"label":"+ Sonstiger Personalaufwand","category":"wages_squad","amount":-2.267346,"disclosure":"aggregated"},
-        {"label":"Umsetzung Sponsorleistungen","category":"admin_general_expense","amount":-0.585346,"disclosure":"aggregated"},
-        {"label":"+ Aufwand Heimspiele","category":"match_organisation_expense","amount":-2.00637,"disclosure":"aggregated"},
-        {"label":"+ Aufwand Hospitality VIP","category":"other_expenses","amount":-0.569035,"disclosure":"aggregated"},
-        {"label":"+ Wareneinsatz Merchandising","category":"other_expenses","amount":-1.202881,"disclosure":"aggregated"},
-        {"label":"+ Eigene Medien und Produktionskosten","category":"other_expenses","amount":-0.323565,"disclosure":"aggregated"},
-        {"label":"Abgaben, Gebühren & Strafen","category":"admin_general_expense","amount":-0.146398,"disclosure":"aggregated"},
-        {"label":"+ Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-1.921012,"disclosure":"aggregated"},
-        {"label":"+ Management-Gebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-0.50205,"disclosure":"aggregated"},
-        {"label":"+ Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-2.022204,"disclosure":"aggregated"},
-        {"label":"+ Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.867967,"disclosure":"aggregated"},
-        {"label":"+ Verwaltung-, Versicherungs- und sonst. Aufwand","category":"admin_general_expense","amount":-1.304881,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-0.494352,"disclosure":"aggregated"},
-        {"label":"Transferaufwendungen","category":"player_amortisation","amount":-0.636162,"disclosure":"aggregated"}
+        {"label":"Personalaufwand Sport","category":"first_team_staff","subcategory":"wages_squad","amount":-10.232786,"disclosure":"aggregated"},
+        {"label":"+ Sonstiger Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-2.267346,"disclosure":"aggregated"},
+        {"label":"Umsetzung Sponsorleistungen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.585346,"disclosure":"aggregated"},
+        {"label":"+ Aufwand Heimspiele","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.00637,"disclosure":"aggregated"},
+        {
+          "label": "+ Aufwand Hospitality VIP",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.569035,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Wareneinsatz Merchandising",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.202881,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Eigene Medien und Produktionskosten",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.323565,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abgaben, Gebühren & Strafen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.146398,"disclosure":"aggregated"},
+        {
+          "label": "+ Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.921012,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Management-Gebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.50205,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.022204,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.867967,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Verwaltung-, Versicherungs- und sonst. Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.304881,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-0.494352,"disclosure":"aggregated"},
+        {
+          "label": "Transferaufwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.636162,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.001471,"tax":-0.003,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":25.421964,"expenses":25.082355,"net_result":0.33808},
@@ -154,31 +209,103 @@
       "management_id": null,
       "fx": {"ref":"EUR@2014-06-30"},
       "revenue": [
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":7.275321,"disclosure":"aggregated"},
-        {"label":"+ Ticketing & Fanreisen","category":"matchday_competition","amount":6.412027,"disclosure":"aggregated"},
-        {"label":"+ Rechteverwertung","category":"broadcasting","amount":4.29228,"disclosure":"aggregated"},
-        {"label":"+ Merchandising","category":"sponsorship_commercial","amount":1.852899,"disclosure":"aggregated"},
-        {"label":"+ Hospitality (VIP)","category":"matchday_competition","amount":0.852774,"disclosure":"aggregated"},
-        {"label":"+ Sonstige Erlöse","category":"other_income","amount":1.512206,"disclosure":"aggregated"},
-        {"label":"a.o. Erträge","category":"other_income","amount":0.223636,"disclosure":"aggregated"},
-        {"label":"Transfererlöse","category":"player_sales","amount":5.224711,"disclosure":"aggregated"}
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":7.275321,"disclosure":"aggregated"},
+        {"label":"+ Ticketing & Fanreisen","category":"matchday","subcategory":"matchday_competition","amount":6.412027,"disclosure":"aggregated"},
+        {"label":"+ Rechteverwertung","category":"media_rights","subcategory":"broadcasting","amount":4.29228,"disclosure":"aggregated"},
+        {"label":"+ Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":1.852899,"disclosure":"aggregated"},
+        {"label":"+ Hospitality (VIP)","category":"matchday","subcategory":"matchday_competition","amount":0.852774,"disclosure":"aggregated"},
+        {"label":"+ Sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":1.512206,"disclosure":"aggregated"},
+        {"label":"a.o. Erträge","category":"other_revenue","subcategory":"other_income","amount":0.223636,"disclosure":"aggregated"},
+        {"label":"Transfererlöse","category":"player_transfers","subcategory":"player_sales","amount":5.224711,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Aufwand Heimspiele und Fanreisen","category":"match_organisation_expense","amount":-2.558052,"disclosure":"aggregated"},
-        {"label":"+ Wareneinsatz Merchandising","category":"other_expenses","amount":-1.118089,"disclosure":"aggregated"},
-        {"label":"+ Aufwand Hospitality VIP","category":"other_expenses","amount":-0.589055,"disclosure":"aggregated"},
-        {"label":"+ Umsetzung Sponsorleistungen","category":"other_expenses","amount":-0.508334,"disclosure":"aggregated"},
-        {"label":"+ Eigene Medien und Produktionskosten","category":"other_expenses","amount":-0.306488,"disclosure":"aggregated"},
-        {"label":"Personalaufwand Sport","category":"wages_squad","amount":-11.090202,"disclosure":"aggregated"},
-        {"label":"+ Sonstiger Personalaufwand","category":"wages_squad","amount":-2.311579,"disclosure":"aggregated"},
-        {"label":"Verwaltungs-, Versicherungs- und sonst. Aufwand","category":"admin_general_expense","amount":-2.079574,"disclosure":"aggregated"},
-        {"label":"+ Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-1.747621,"disclosure":"aggregated"},
-        {"label":"+ Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-1.295773,"disclosure":"aggregated"},
-        {"label":"+ Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.731993,"disclosure":"aggregated"},
-        {"label":"+ Management-Gebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-0.39047,"disclosure":"aggregated"},
-        {"label":"+ Abgaben, Gebühren & Strafen","category":"admin_general_expense","amount":-0.097872,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-0.351386,"disclosure":"aggregated"},
-        {"label":"Transferaufwendungen","category":"player_amortisation","amount":-2.255285,"disclosure":"aggregated"}
+        {
+          "label": "Aufwand Heimspiele und Fanreisen",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.558052,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Wareneinsatz Merchandising",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.118089,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Aufwand Hospitality VIP",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.589055,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Umsetzung Sponsorleistungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.508334,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Eigene Medien und Produktionskosten",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.306488,
+          "disclosure": "aggregated"
+        },
+        {"label":"Personalaufwand Sport","category":"first_team_staff","subcategory":"wages_squad","amount":-11.090202,"disclosure":"aggregated"},
+        {"label":"+ Sonstiger Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-2.311579,"disclosure":"aggregated"},
+        {
+          "label": "Verwaltungs-, Versicherungs- und sonst. Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.079574,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.747621,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.295773,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.731993,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Management-Gebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.39047,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Abgaben, Gebühren & Strafen",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.097872,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-0.351386,"disclosure":"aggregated"},
+        {
+          "label": "Transferaufwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.255285,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.011112,"tax":-0.02225,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":27.645854,"expenses":27.431773,"net_result":0.180719},
@@ -193,31 +320,103 @@
       "management_id": null,
       "fx": {"ref":"EUR@2015-06-30"},
       "revenue": [
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":7.646646,"disclosure":"aggregated"},
-        {"label":"+ Ticketing, Fanreisen & Events","category":"matchday_competition","amount":4.535992,"disclosure":"aggregated"},
-        {"label":"+ Rechteverwertung & Zentralvermarktung","category":"broadcasting","amount":3.987385,"disclosure":"aggregated"},
-        {"label":"+ Merchandising","category":"sponsorship_commercial","amount":2.135783,"disclosure":"aggregated"},
-        {"label":"+ Hospitality (VIP)","category":"matchday_competition","amount":0.972266,"disclosure":"aggregated"},
-        {"label":"+ Sonstige Erlöse","category":"other_income","amount":3.57031,"disclosure":"aggregated"},
-        {"label":"a.o. Erträge","category":"other_income","amount":0.242968,"disclosure":"aggregated"},
-        {"label":"Transfererlöse","category":"player_sales","amount":1.79522,"disclosure":"aggregated"}
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":7.646646,"disclosure":"aggregated"},
+        {"label":"+ Ticketing, Fanreisen & Events","category":"matchday","subcategory":"matchday_competition","amount":4.535992,"disclosure":"aggregated"},
+        {"label":"+ Rechteverwertung & Zentralvermarktung","category":"media_rights","subcategory":"broadcasting","amount":3.987385,"disclosure":"aggregated"},
+        {"label":"+ Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.135783,"disclosure":"aggregated"},
+        {"label":"+ Hospitality (VIP)","category":"matchday","subcategory":"matchday_competition","amount":0.972266,"disclosure":"aggregated"},
+        {"label":"+ Sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":3.57031,"disclosure":"aggregated"},
+        {"label":"a.o. Erträge","category":"other_revenue","subcategory":"other_income","amount":0.242968,"disclosure":"aggregated"},
+        {"label":"Transfererlöse","category":"player_transfers","subcategory":"player_sales","amount":1.79522,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Aufwand Heimspiele, Fanreisen & Events","category":"match_organisation_expense","amount":-2.418437,"disclosure":"aggregated"},
-        {"label":"+ Wareneinsatz Merchandising","category":"other_expenses","amount":-1.173401,"disclosure":"aggregated"},
-        {"label":"+ Aufwand Hospitality VIP","category":"other_expenses","amount":-0.713933,"disclosure":"aggregated"},
-        {"label":"+ Umsetzung Sponsorleistungen","category":"other_expenses","amount":-0.407397,"disclosure":"aggregated"},
-        {"label":"+ Eigene Medien und Produktionskosten","category":"other_expenses","amount":-0.287983,"disclosure":"aggregated"},
-        {"label":"Personalaufwand Sport","category":"wages_squad","amount":-9.851651,"disclosure":"aggregated"},
-        {"label":"+ Sonstiger Personalaufwand","category":"wages_squad","amount":-2.30121,"disclosure":"aggregated"},
-        {"label":"Verwaltungs-, Versicherungs- und sonst. Aufwand","category":"admin_general_expense","amount":-2.34117,"disclosure":"aggregated"},
-        {"label":"+ Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-2.079073,"disclosure":"aggregated"},
-        {"label":"+ Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-1.122651,"disclosure":"aggregated"},
-        {"label":"+ Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.359174,"disclosure":"aggregated"},
-        {"label":"+ Management-Gebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-0.32721,"disclosure":"aggregated"},
-        {"label":"+ Abgaben, Gebühren & Strafen","category":"admin_general_expense","amount":-0.243823,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-0.304502,"disclosure":"aggregated"},
-        {"label":"Transferaufwendungen","category":"player_amortisation","amount":-0.599146,"disclosure":"aggregated"}
+        {
+          "label": "Aufwand Heimspiele, Fanreisen & Events",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.418437,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Wareneinsatz Merchandising",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.173401,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Aufwand Hospitality VIP",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.713933,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Umsetzung Sponsorleistungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.407397,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Eigene Medien und Produktionskosten",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.287983,
+          "disclosure": "aggregated"
+        },
+        {"label":"Personalaufwand Sport","category":"first_team_staff","subcategory":"wages_squad","amount":-9.851651,"disclosure":"aggregated"},
+        {"label":"+ Sonstiger Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-2.30121,"disclosure":"aggregated"},
+        {
+          "label": "Verwaltungs-, Versicherungs- und sonst. Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.34117,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.079073,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.122651,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.359174,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Management-Gebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.32721,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "+ Abgaben, Gebühren & Strafen",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.243823,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-0.304502,"disclosure":"aggregated"},
+        {
+          "label": "Transferaufwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.599146,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.289536,"tax":-0.01593,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":24.88657,"expenses":24.530761,"net_result":0.050344},
@@ -232,31 +431,79 @@
       "management_id": null,
       "fx": {"ref":"EUR@2016-06-30"},
       "revenue": [
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":8.168525,"disclosure":"aggregated"},
-        {"label":"Ticketing, Fannessen & Events","category":"matchday_competition","amount":10.439914,"disclosure":"aggregated"},
-        {"label":"Rechteverwertung & Zentralvermarktung","category":"broadcasting","amount":12.292694,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":3.169172,"disclosure":"aggregated"},
-        {"label":"Hospitality (VIP)","category":"matchday_competition","amount":1.752738,"disclosure":"aggregated"},
-        {"label":"sonstige Erlöse","category":"other_income","amount":3.536518,"disclosure":"aggregated"},
-        {"label":"Transferlöse","category":"player_sales","amount":9.332639,"disclosure":"aggregated"},
-        {"label":"a.o. Ergebnis","category":"other_income","amount":0.091264,"disclosure":"aggregated"}
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":8.168525,"disclosure":"aggregated"},
+        {"label":"Ticketing, Fannessen & Events","category":"matchday","subcategory":"matchday_competition","amount":10.439914,"disclosure":"aggregated"},
+        {"label":"Rechteverwertung & Zentralvermarktung","category":"media_rights","subcategory":"broadcasting","amount":12.292694,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":3.169172,"disclosure":"aggregated"},
+        {"label":"Hospitality (VIP)","category":"matchday","subcategory":"matchday_competition","amount":1.752738,"disclosure":"aggregated"},
+        {"label":"sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":3.536518,"disclosure":"aggregated"},
+        {"label":"Transferlöse","category":"player_transfers","subcategory":"player_sales","amount":9.332639,"disclosure":"aggregated"},
+        {"label":"a.o. Ergebnis","category":"other_revenue","subcategory":"other_income","amount":0.091264,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Aufwand Heimspiele, Fannessen & Events","category":"match_organisation_expense","amount":-5.172893,"disclosure":"aggregated"},
-        {"label":"Wareneinsatz Merchandising","category":"admin_general_expense","amount":-1.648258,"disclosure":"aggregated"},
-        {"label":"Aufwand Hospitality VIP","category":"other_expenses","amount":-0.997766,"disclosure":"aggregated"},
-        {"label":"Umsetzung Sponsorleistungen","category":"admin_general_expense","amount":-0.246865,"disclosure":"aggregated"},
-        {"label":"eigene Medien und Produktionskosten","category":"other_expenses","amount":-0.218941,"disclosure":"aggregated"},
-        {"label":"Personalaufwand Sport","category":"wages_squad","amount":-15.045553,"disclosure":"aggregated"},
-        {"label":"Sonstiger Personalaufwand","category":"wages_squad","amount":-3.670874,"disclosure":"aggregated"},
-        {"label":"Verwaltung-, Versicherungs- und sonst. Aufwand","category":"admin_general_expense","amount":-2.982983,"disclosure":"aggregated"},
-        {"label":"Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-2.051224,"disclosure":"aggregated"},
-        {"label":"Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-1.384384,"disclosure":"aggregated"},
-        {"label":"Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.463256,"disclosure":"aggregated"},
-        {"label":"Management-Gebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-0.618755,"disclosure":"aggregated"},
-        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general_expense","amount":-0.138529,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-0.226573,"disclosure":"aggregated"},
-        {"label":"Transferaufwendungen","category":"player_amortisation","amount":-1.458078,"disclosure":"aggregated"}
+        {
+          "label": "Aufwand Heimspiele, Fannessen & Events",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -5.172893,
+          "disclosure": "aggregated"
+        },
+        {"label":"Wareneinsatz Merchandising","category":"admin_general","subcategory":"admin_general_expense","amount":-1.648258,"disclosure":"aggregated"},
+        {"label":"Aufwand Hospitality VIP","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.997766,"disclosure":"aggregated"},
+        {"label":"Umsetzung Sponsorleistungen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.246865,"disclosure":"aggregated"},
+        {
+          "label": "eigene Medien und Produktionskosten",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.218941,
+          "disclosure": "aggregated"
+        },
+        {"label":"Personalaufwand Sport","category":"first_team_staff","subcategory":"wages_squad","amount":-15.045553,"disclosure":"aggregated"},
+        {"label":"Sonstiger Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-3.670874,"disclosure":"aggregated"},
+        {
+          "label": "Verwaltung-, Versicherungs- und sonst. Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.982983,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.051224,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.384384,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.463256,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Management-Gebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.618755,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.138529,"disclosure":"aggregated"},
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-0.226573,"disclosure":"aggregated"},
+        {
+          "label": "Transferaufwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1.458078,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.865778,"tax":-0.003338,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":48.783464,"expenses":36.324932,"net_result":11.589417},
@@ -271,30 +518,78 @@
       "management_id": null,
       "fx": {"ref":"EUR@2017-06-30"},
       "revenue": [
-        {"label":"Ticketing","category":"matchday_competition","amount":7.731656,"disclosure":"aggregated"},
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":9.748078,"disclosure":"aggregated"},
-        {"label":"Hospitality (VIP)","category":"matchday_competition","amount":8.227783,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":3.328045,"disclosure":"aggregated"},
-        {"label":"Rechteverwertung","category":"broadcasting","amount":9.34142,"disclosure":"aggregated"},
-        {"label":"sonstige Erlöse","category":"other_income","amount":3.271608,"disclosure":"aggregated"},
-        {"label":"Transferlöse","category":"player_sales","amount":2.302164,"disclosure":"aggregated"}
+        {"label":"Ticketing","category":"matchday","subcategory":"matchday_competition","amount":7.731656,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":9.748078,"disclosure":"aggregated"},
+        {"label":"Hospitality (VIP)","category":"matchday","subcategory":"matchday_competition","amount":8.227783,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":3.328045,"disclosure":"aggregated"},
+        {"label":"Rechteverwertung","category":"media_rights","subcategory":"broadcasting","amount":9.34142,"disclosure":"aggregated"},
+        {"label":"sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":3.271608,"disclosure":"aggregated"},
+        {"label":"Transferlöse","category":"player_transfers","subcategory":"player_sales","amount":2.302164,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Umsetzung Sponsorleistungen","category":"admin_general_expense","amount":-0.465749,"disclosure":"aggregated"},
-        {"label":"Aufwand Heimspiele","category":"match_organisation_expense","amount":-3.920548,"disclosure":"aggregated"},
-        {"label":"Aufwand Hospitality (VIP)","category":"other_expenses","amount":-3.039836,"disclosure":"aggregated"},
-        {"label":"Wareneinsatz Merchandising","category":"admin_general_expense","amount":-2.255637,"disclosure":"aggregated"},
-        {"label":"eigene Medien und Produktionskosten","category":"admin_general_expense","amount":-0.254347,"disclosure":"aggregated"},
-        {"label":"Personalaufwand Sport","category":"wages_squad","amount":-16.748905,"disclosure":"aggregated"},
-        {"label":"Sonstiger Personalaufwand","category":"wages_squad","amount":-4.641309,"disclosure":"aggregated"},
-        {"label":"Abgaben, Gebühren und Strafen","category":"admin_general_expense","amount":-0.38219,"disclosure":"aggregated"},
-        {"label":"Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-1.613404,"disclosure":"aggregated"},
-        {"label":"Management-Gebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-0.827573,"disclosure":"aggregated"},
-        {"label":"Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-2.327155,"disclosure":"aggregated"},
-        {"label":"Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.767029,"disclosure":"aggregated"},
-        {"label":"Verwaltung-, Versicherunungs- und sonst. Aufwand","category":"admin_general_expense","amount":-3.205679,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-1.68813,"disclosure":"aggregated"},
-        {"label":"Transferaufwendungen","category":"player_amortisation","amount":-2.8429,"disclosure":"aggregated"}
+        {"label":"Umsetzung Sponsorleistungen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.465749,"disclosure":"aggregated"},
+        {"label":"Aufwand Heimspiele","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.920548,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand Hospitality (VIP)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -3.039836,
+          "disclosure": "aggregated"
+        },
+        {"label":"Wareneinsatz Merchandising","category":"admin_general","subcategory":"admin_general_expense","amount":-2.255637,"disclosure":"aggregated"},
+        {
+          "label": "eigene Medien und Produktionskosten",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.254347,
+          "disclosure": "aggregated"
+        },
+        {"label":"Personalaufwand Sport","category":"first_team_staff","subcategory":"wages_squad","amount":-16.748905,"disclosure":"aggregated"},
+        {"label":"Sonstiger Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-4.641309,"disclosure":"aggregated"},
+        {"label":"Abgaben, Gebühren und Strafen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.38219,"disclosure":"aggregated"},
+        {
+          "label": "Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.613404,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Management-Gebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.827573,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.327155,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.767029,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Verwaltung-, Versicherunungs- und sonst. Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.205679,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-1.68813,"disclosure":"aggregated"},
+        {
+          "label": "Transferaufwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.8429,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.399962,"tax":4.717918,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":43.950754,"expenses":44.980391,"net_result":2.288319},
@@ -314,30 +609,84 @@
       "management_id": null,
       "fx": {"ref":"EUR@2018-06-30"},
       "revenue": [
-        {"label":"Ticketing","category":"matchday_competition","amount":4.813434,"disclosure":"aggregated"},
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":9.007512,"disclosure":"aggregated"},
-        {"label":"Hospitality (VIP)","category":"matchday_competition","amount":7.920459,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":2.549312,"disclosure":"aggregated"},
-        {"label":"Rechteverwertung","category":"broadcasting","amount":3.665876,"disclosure":"aggregated"},
-        {"label":"sonstige Erlöse","category":"other_income","amount":2.77112,"disclosure":"aggregated"},
-        {"label":"Transfererlöse","category":"player_sales","amount":10.983577,"disclosure":"aggregated"}
+        {"label":"Ticketing","category":"matchday","subcategory":"matchday_competition","amount":4.813434,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":9.007512,"disclosure":"aggregated"},
+        {"label":"Hospitality (VIP)","category":"matchday","subcategory":"matchday_competition","amount":7.920459,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.549312,"disclosure":"aggregated"},
+        {"label":"Rechteverwertung","category":"media_rights","subcategory":"broadcasting","amount":3.665876,"disclosure":"aggregated"},
+        {"label":"sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":2.77112,"disclosure":"aggregated"},
+        {"label":"Transfererlöse","category":"player_transfers","subcategory":"player_sales","amount":10.983577,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Umsetzung Sponsorleistungen","category":"admin_general_expense","amount":-0.33486,"disclosure":"aggregated"},
-        {"label":"Aufwand Heimspiele","category":"match_organisation_expense","amount":-2.585466,"disclosure":"aggregated"},
-        {"label":"Aufwand Hospitality (VIP)","category":"other_expenses","amount":-2.312515,"disclosure":"aggregated"},
-        {"label":"Wareneinsatz Merchandising","category":"admin_general_expense","amount":-1.390387,"disclosure":"aggregated"},
-        {"label":"eigene Medien und Produktionskosten","category":"admin_general_expense","amount":-0.161688,"disclosure":"aggregated"},
-        {"label":"Personalaufwand Sport","category":"wages_squad","amount":-14.079703,"disclosure":"aggregated"},
-        {"label":"sonstiger Personalaufwand","category":"wages_squad","amount":-4.536919,"disclosure":"aggregated"},
-        {"label":"Abgaben, Gebühren und Strafen","category":"admin_general_expense","amount":-0.401825,"disclosure":"aggregated"},
-        {"label":"Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-1.363179,"disclosure":"aggregated"},
-        {"label":"Management-Gebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-0.830444,"disclosure":"aggregated"},
-        {"label":"Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-2.189542,"disclosure":"aggregated"},
-        {"label":"Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.639513,"disclosure":"aggregated"},
-        {"label":"Verwaltungs-, Versicherungs- und sonst. Aufwand","category":"admin_general_expense","amount":-2.010223,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-1.779882,"disclosure":"aggregated"},
-        {"label":"Transferaufwendungen","category":"player_amortisation","amount":-3.435317,"disclosure":"aggregated"}
+        {"label":"Umsetzung Sponsorleistungen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.33486,"disclosure":"aggregated"},
+        {"label":"Aufwand Heimspiele","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.585466,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand Hospitality (VIP)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.312515,
+          "disclosure": "aggregated"
+        },
+        {"label":"Wareneinsatz Merchandising","category":"admin_general","subcategory":"admin_general_expense","amount":-1.390387,"disclosure":"aggregated"},
+        {
+          "label": "eigene Medien und Produktionskosten",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.161688,
+          "disclosure": "aggregated"
+        },
+        {"label":"Personalaufwand Sport","category":"first_team_staff","subcategory":"wages_squad","amount":-14.079703,"disclosure":"aggregated"},
+        {"label":"sonstiger Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-4.536919,"disclosure":"aggregated"},
+        {
+          "label": "Abgaben, Gebühren und Strafen",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.401825,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.363179,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Management-Gebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.830444,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.189542,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.639513,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Verwaltungs-, Versicherungs- und sonst. Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.010223,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-1.779882,"disclosure":"aggregated"},
+        {
+          "label": "Transferaufwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3.435317,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.285727,"tax":-0.001889,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":41.71129,"expenses":38.051463,"net_result":2.37221},
@@ -352,32 +701,74 @@
       "management_id": null,
       "fx": {"ref":"EUR@2019-06-30"},
       "revenue": [
-        {"label":"Ticketing","category":"matchday_competition","amount":6.855942,"disclosure":"aggregated"},
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":10.331924,"disclosure":"aggregated"},
-        {"label":"Hospitality (VIP)","category":"matchday_competition","amount":8.137466,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":2.605285,"disclosure":"aggregated"},
-        {"label":"Rechteverwertung","category":"broadcasting","amount":14.275566,"disclosure":"aggregated"},
-        {"label":"Fanreisen","category":"other_income","amount":1.196134,"disclosure":"aggregated"},
-        {"label":"sonstige Erlöse","category":"other_income","amount":2.814958,"disclosure":"aggregated"},
-        {"label":"Transfererlöse","category":"player_sales","amount":4.528031,"disclosure":"aggregated"}
+        {"label":"Ticketing","category":"matchday","subcategory":"matchday_competition","amount":6.855942,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":10.331924,"disclosure":"aggregated"},
+        {"label":"Hospitality (VIP)","category":"matchday","subcategory":"matchday_competition","amount":8.137466,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.605285,"disclosure":"aggregated"},
+        {"label":"Rechteverwertung","category":"media_rights","subcategory":"broadcasting","amount":14.275566,"disclosure":"aggregated"},
+        {"label":"Fanreisen","category":"other_revenue","subcategory":"other_income","amount":1.196134,"disclosure":"aggregated"},
+        {"label":"sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":2.814958,"disclosure":"aggregated"},
+        {"label":"Transfererlöse","category":"player_transfers","subcategory":"player_sales","amount":4.528031,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Umsetzung Sponsorleistungen","category":"admin_general_expense","amount":-0.486255,"disclosure":"aggregated"},
-        {"label":"Aufwand Heimspiele","category":"match_organisation_expense","amount":-3.78037,"disclosure":"aggregated"},
-        {"label":"Aufwand Hospitality VIP","category":"other_expenses","amount":-3.155297,"disclosure":"aggregated"},
-        {"label":"Wareneinsatz Merchandising","category":"admin_general_expense","amount":-1.341667,"disclosure":"aggregated"},
-        {"label":"eigene Medien und Produktionskosten","category":"admin_general_expense","amount":-0.327705,"disclosure":"aggregated"},
-        {"label":"Fanreisen","category":"other_expenses","amount":-1.125508,"disclosure":"aggregated"},
-        {"label":"Personalaufwand Sport","category":"wages_squad","amount":-17.367045,"disclosure":"aggregated"},
-        {"label":"sonstiger Personalaufwand","category":"wages_squad","amount":-4.91066,"disclosure":"aggregated"},
-        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general_expense","amount":-0.426003,"disclosure":"aggregated"},
-        {"label":"Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-1.823862,"disclosure":"aggregated"},
-        {"label":"Management-Gebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-1.390801,"disclosure":"aggregated"},
-        {"label":"Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-2.726157,"disclosure":"aggregated"},
-        {"label":"Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.882927,"disclosure":"aggregated"},
-        {"label":"Verwaltung-, Versicherunungs- und sonst. Aufwand","category":"admin_general_expense","amount":-2.7458,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-1.913813,"disclosure":"aggregated"},
-        {"label":"Transferauwendungen","category":"player_amortisation","amount":-4.874182,"disclosure":"aggregated"}
+        {"label":"Umsetzung Sponsorleistungen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.486255,"disclosure":"aggregated"},
+        {"label":"Aufwand Heimspiele","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.78037,"disclosure":"aggregated"},
+        {"label":"Aufwand Hospitality VIP","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.155297,"disclosure":"aggregated"},
+        {"label":"Wareneinsatz Merchandising","category":"admin_general","subcategory":"admin_general_expense","amount":-1.341667,"disclosure":"aggregated"},
+        {
+          "label": "eigene Medien und Produktionskosten",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.327705,
+          "disclosure": "aggregated"
+        },
+        {"label":"Fanreisen","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.125508,"disclosure":"aggregated"},
+        {"label":"Personalaufwand Sport","category":"first_team_staff","subcategory":"wages_squad","amount":-17.367045,"disclosure":"aggregated"},
+        {"label":"sonstiger Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-4.91066,"disclosure":"aggregated"},
+        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.426003,"disclosure":"aggregated"},
+        {
+          "label": "Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.823862,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Management-Gebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.390801,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.726157,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.882927,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Verwaltung-, Versicherunungs- und sonst. Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.7458,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-1.913813,"disclosure":"aggregated"},
+        {
+          "label": "Transferauwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -4.874182,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.285003,"tax":-0.002265,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":50.745306,"expenses":49.278052,"net_result":0.179989},
@@ -392,32 +783,74 @@
       "management_id": null,
       "fx": {"ref":"EUR@2020-06-30"},
       "revenue": [
-        {"label":"Ticketing","category":"matchday_competition","amount":3.798377,"disclosure":"aggregated"},
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":9.035109,"disclosure":"aggregated"},
-        {"label":"Hospitality (VIP)","category":"matchday_competition","amount":7.187286,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":2.777708,"disclosure":"aggregated"},
-        {"label":"Rechteverwertung","category":"broadcasting","amount":4.518253,"disclosure":"aggregated"},
-        {"label":"Fanreisen","category":"other_income","amount":0.009522,"disclosure":"aggregated"},
-        {"label":"sonstige Erlöse","category":"other_income","amount":4.025332,"disclosure":"aggregated"},
-        {"label":"Transfererlöse","category":"player_sales","amount":10.716155,"disclosure":"aggregated"}
+        {"label":"Ticketing","category":"matchday","subcategory":"matchday_competition","amount":3.798377,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":9.035109,"disclosure":"aggregated"},
+        {"label":"Hospitality (VIP)","category":"matchday","subcategory":"matchday_competition","amount":7.187286,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.777708,"disclosure":"aggregated"},
+        {"label":"Rechteverwertung","category":"media_rights","subcategory":"broadcasting","amount":4.518253,"disclosure":"aggregated"},
+        {"label":"Fanreisen","category":"other_revenue","subcategory":"other_income","amount":0.009522,"disclosure":"aggregated"},
+        {"label":"sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":4.025332,"disclosure":"aggregated"},
+        {"label":"Transfererlöse","category":"player_transfers","subcategory":"player_sales","amount":10.716155,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Umsetzung Sponsorleistungen","category":"admin_general_expense","amount":-0.294417,"disclosure":"aggregated"},
-        {"label":"Aufwand Heimspiele","category":"match_organisation_expense","amount":-1.950712,"disclosure":"aggregated"},
-        {"label":"Aufwand Hospitality VIP","category":"other_expenses","amount":-1.576214,"disclosure":"aggregated"},
-        {"label":"Wareneinsatz Merchandising","category":"admin_general_expense","amount":-1.365283,"disclosure":"aggregated"},
-        {"label":"eigene Medien und Produktionskosten","category":"admin_general_expense","amount":-0.271417,"disclosure":"aggregated"},
-        {"label":"Fanreisen","category":"other_expenses","amount":-0.006726,"disclosure":"aggregated"},
-        {"label":"Personalaufwand Sport","category":"wages_squad","amount":-14.509853,"disclosure":"aggregated"},
-        {"label":"sonstiger Personalaufwand","category":"wages_squad","amount":-3.803089,"disclosure":"aggregated"},
-        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general_expense","amount":-0.299623,"disclosure":"aggregated"},
-        {"label":"Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-1.192212,"disclosure":"aggregated"},
-        {"label":"Management-Gebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-1.11066,"disclosure":"aggregated"},
-        {"label":"Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-2.260106,"disclosure":"aggregated"},
-        {"label":"Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.550278,"disclosure":"aggregated"},
-        {"label":"Verwaltung-, Versicherungs- und sonst. Aufwand","category":"admin_general_expense","amount":-4.393678,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-2.129832,"disclosure":"aggregated"},
-        {"label":"Transferauwendungen","category":"player_amortisation","amount":-4.919562,"disclosure":"aggregated"}
+        {"label":"Umsetzung Sponsorleistungen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.294417,"disclosure":"aggregated"},
+        {"label":"Aufwand Heimspiele","category":"match_operations","subcategory":"match_organisation_expense","amount":-1.950712,"disclosure":"aggregated"},
+        {"label":"Aufwand Hospitality VIP","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.576214,"disclosure":"aggregated"},
+        {"label":"Wareneinsatz Merchandising","category":"admin_general","subcategory":"admin_general_expense","amount":-1.365283,"disclosure":"aggregated"},
+        {
+          "label": "eigene Medien und Produktionskosten",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.271417,
+          "disclosure": "aggregated"
+        },
+        {"label":"Fanreisen","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.006726,"disclosure":"aggregated"},
+        {"label":"Personalaufwand Sport","category":"first_team_staff","subcategory":"wages_squad","amount":-14.509853,"disclosure":"aggregated"},
+        {"label":"sonstiger Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-3.803089,"disclosure":"aggregated"},
+        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.299623,"disclosure":"aggregated"},
+        {
+          "label": "Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.192212,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Management-Gebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.11066,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.260106,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.550278,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Verwaltung-, Versicherungs- und sonst. Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.393678,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-2.129832,"disclosure":"aggregated"},
+        {
+          "label": "Transferauwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -4.919562,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.195822,"tax":-0.437364,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":42.067742,"expenses":40.633662,"net_result":-0.199107},
@@ -432,31 +865,79 @@
       "management_id": null,
       "fx": {"ref":"EUR@2021-06-30"},
       "revenue": [
-        {"label":"Ticketing","category":"matchday_competition","amount":1.198953,"disclosure":"aggregated"},
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":8.676083,"disclosure":"aggregated"},
-        {"label":"Hospitality - VIP","category":"matchday_competition","amount":2.639493,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":2.487302,"disclosure":"aggregated"},
-        {"label":"Rechteverwertung","category":"broadcasting","amount":11.306474,"disclosure":"aggregated"},
-        {"label":"Transfererlöse","category":"player_sales","amount":3.289014,"disclosure":"aggregated"},
-        {"label":"Fanreisen","category":"other_income","amount":0,"disclosure":"aggregated"},
-        {"label":"sonstige Erlöse","category":"other_income","amount":10.87771,"disclosure":"aggregated"}
+        {"label":"Ticketing","category":"matchday","subcategory":"matchday_competition","amount":1.198953,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":8.676083,"disclosure":"aggregated"},
+        {"label":"Hospitality - VIP","category":"matchday","subcategory":"matchday_competition","amount":2.639493,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.487302,"disclosure":"aggregated"},
+        {"label":"Rechteverwertung","category":"media_rights","subcategory":"broadcasting","amount":11.306474,"disclosure":"aggregated"},
+        {"label":"Transfererlöse","category":"player_transfers","subcategory":"player_sales","amount":3.289014,"disclosure":"aggregated"},
+        {"label":"Fanreisen","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {"label":"sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":10.87771,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Umsetzung Sponsorleistungen","category":"admin_general_expense","amount":-0.276707,"disclosure":"aggregated"},
-        {"label":"Aufwand Heimspiele","category":"match_organisation_expense","amount":-0.772285,"disclosure":"aggregated"},
-        {"label":"Aufwand Hospitality - VIP","category":"other_expenses","amount":-0.463176,"disclosure":"aggregated"},
-        {"label":"Wareneinsatz Merchandising","category":"admin_general_expense","amount":-1.152097,"disclosure":"aggregated"},
-        {"label":"eigene Medien und Produktionskosten","category":"admin_general_expense","amount":-0.252324,"disclosure":"aggregated"},
-        {"label":"Fanreisen","category":"other_expenses","amount":0,"disclosure":"aggregated"},
-        {"label":"Personalaufwand","category":"wages_squad","amount":-21.227213,"disclosure":"aggregated"},
-        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general_expense","amount":-0.148524,"disclosure":"aggregated"},
-        {"label":"Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-1.412781,"disclosure":"aggregated"},
-        {"label":"Managementgebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-0.971683,"disclosure":"aggregated"},
-        {"label":"Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-2.391454,"disclosure":"aggregated"},
-        {"label":"Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.610954,"disclosure":"aggregated"},
-        {"label":"Verwaltungs-, Versicherungs- und sonst. Aufwand","category":"admin_general_expense","amount":-4.081457,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-1.901944,"disclosure":"aggregated"},
-        {"label":"Transferaufwendungen","category":"player_amortisation","amount":-3.000604,"disclosure":"aggregated"}
+        {"label":"Umsetzung Sponsorleistungen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.276707,"disclosure":"aggregated"},
+        {"label":"Aufwand Heimspiele","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.772285,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand Hospitality - VIP",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.463176,
+          "disclosure": "aggregated"
+        },
+        {"label":"Wareneinsatz Merchandising","category":"admin_general","subcategory":"admin_general_expense","amount":-1.152097,"disclosure":"aggregated"},
+        {
+          "label": "eigene Medien und Produktionskosten",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.252324,
+          "disclosure": "aggregated"
+        },
+        {"label":"Fanreisen","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-21.227213,"disclosure":"aggregated"},
+        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.148524,"disclosure":"aggregated"},
+        {
+          "label": "Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.412781,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Managementgebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.971683,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.391454,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.610954,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Verwaltungs-, Versicherungs- und sonst. Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.081457,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-1.901944,"disclosure":"aggregated"},
+        {
+          "label": "Transferaufwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3.000604,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.112662,"tax":-0.00175,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":40.475029,"expenses":38.663203,"net_result":0.697416},
@@ -471,31 +952,79 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
-        {"label":"Ticketing","category":"matchday_competition","amount":5.350824,"disclosure":"aggregated"},
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":8.197448,"disclosure":"aggregated"},
-        {"label":"Hospitality – VIP","category":"matchday_competition","amount":6.389253,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":2.538767,"disclosure":"aggregated"},
-        {"label":"Rechteverwertung","category":"broadcasting","amount":13.466553,"disclosure":"aggregated"},
-        {"label":"Transfererlöse","category":"player_sales","amount":5.04581,"disclosure":"aggregated"},
-        {"label":"Fanreisen","category":"other_income","amount":0.287059,"disclosure":"aggregated"},
-        {"label":"sonstige Erlöse","category":"other_income","amount":8.355478,"disclosure":"aggregated"}
+        {"label":"Ticketing","category":"matchday","subcategory":"matchday_competition","amount":5.350824,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":8.197448,"disclosure":"aggregated"},
+        {"label":"Hospitality – VIP","category":"matchday","subcategory":"matchday_competition","amount":6.389253,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.538767,"disclosure":"aggregated"},
+        {"label":"Rechteverwertung","category":"media_rights","subcategory":"broadcasting","amount":13.466553,"disclosure":"aggregated"},
+        {"label":"Transfererlöse","category":"player_transfers","subcategory":"player_sales","amount":5.04581,"disclosure":"aggregated"},
+        {"label":"Fanreisen","category":"other_revenue","subcategory":"other_income","amount":0.287059,"disclosure":"aggregated"},
+        {"label":"sonstige Erlöse","category":"other_revenue","subcategory":"other_income","amount":8.355478,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Umsetzung Sponsofeistungen","category":"admin_general_expense","amount":-0.412699,"disclosure":"aggregated"},
-        {"label":"Aufwand Heimspiele","category":"match_organisation_expense","amount":-3.072573,"disclosure":"aggregated"},
-        {"label":"Aufwand Hospitality – VIP","category":"other_expenses","amount":-2.490741,"disclosure":"aggregated"},
-        {"label":"Wareneinsatz Merchandising","category":"admin_general_expense","amount":-1.351287,"disclosure":"aggregated"},
-        {"label":"eigene Medien und Produktionskosten","category":"admin_general_expense","amount":-0.216866,"disclosure":"aggregated"},
-        {"label":"Fanreisen","category":"other_expenses","amount":-0.249641,"disclosure":"aggregated"},
-        {"label":"Personalaufwand","category":"wages_squad","amount":-20.262314,"disclosure":"aggregated"},
-        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general_expense","amount":-0.434659,"disclosure":"aggregated"},
-        {"label":"Spiel- und Trainingsbetrieb","category":"match_organisation_expense","amount":-2.03924,"disclosure":"aggregated"},
-        {"label":"Managementgebühren und Vermittlungsprovisionen","category":"other_expenses","amount":-0.759288,"disclosure":"aggregated"},
-        {"label":"Stadion-, Miet- und Instandhaltungsaufwand","category":"admin_general_expense","amount":-3.376563,"disclosure":"aggregated"},
-        {"label":"Klubservice, Events, PR und Marketing","category":"admin_general_expense","amount":-0.649741,"disclosure":"aggregated"},
-        {"label":"Verwaltungs-, Versicherungs- und sonstiger Aufwand","category":"admin_general_expense","amount":-3.278345,"disclosure":"aggregated"},
-        {"label":"Abschreibungen für Abnutzung","category":"depreciation","amount":-1.660871,"disclosure":"aggregated"},
-        {"label":"Transferaufwendungen","category":"player_amortisation","amount":-2.272612,"disclosure":"aggregated"}
+        {"label":"Umsetzung Sponsofeistungen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.412699,"disclosure":"aggregated"},
+        {"label":"Aufwand Heimspiele","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.072573,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand Hospitality – VIP",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2.490741,
+          "disclosure": "aggregated"
+        },
+        {"label":"Wareneinsatz Merchandising","category":"admin_general","subcategory":"admin_general_expense","amount":-1.351287,"disclosure":"aggregated"},
+        {
+          "label": "eigene Medien und Produktionskosten",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.216866,
+          "disclosure": "aggregated"
+        },
+        {"label":"Fanreisen","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.249641,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-20.262314,"disclosure":"aggregated"},
+        {"label":"Abgaben, Gebühren, Strafen","category":"admin_general","subcategory":"admin_general_expense","amount":-0.434659,"disclosure":"aggregated"},
+        {
+          "label": "Spiel- und Trainingsbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.03924,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Managementgebühren und Vermittlungsprovisionen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.759288,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Stadion-, Miet- und Instandhaltungsaufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.376563,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Klubservice, Events, PR und Marketing",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.649741,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Verwaltungs-, Versicherungs- und sonstiger Aufwand",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.278345,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen für Abnutzung","category":"depreciation","subcategory":"depreciation","amount":-1.660871,"disclosure":"aggregated"},
+        {
+          "label": "Transferaufwendungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.272612,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.986708,"tax":-0.361191,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":49.631192,"expenses":42.52744,"net_result":5.755853},
@@ -510,17 +1039,41 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
-        {"label":"Umsatzerlöse","category":"lump_football_operations","amount":42.627915,"disclosure":"aggregated"},
-        {"label":"Erträge aus der Auflösung von Rückstellungen","category":"other_income","amount":0.54837,"disclosure":"aggregated"},
-        {"label":"Übrige","category":"other_income","amount":2.168731,"disclosure":"aggregated"}
+        {"label":"Umsatzerlöse","category":"undisclosed","subcategory":"lump_football_operations","amount":42.627915,"disclosure":"aggregated"},
+        {
+          "label": "Erträge aus der Auflösung von Rückstellungen",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.54837,
+          "disclosure": "aggregated"
+        },
+        {"label":"Übrige","category":"other_revenue","subcategory":"other_income","amount":2.168731,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Aufwendungen Spielbetrieb, Transfers etc.","category":"match_organisation_expense","amount":-4.959545,"disclosure":"aggregated"},
-        {"label":"Aufwendungen für bezogene Leistungen","category":"other_expenses","amount":-7.98637,"disclosure":"aggregated"},
-        {"label":"Löhne & Gehälter","category":"wages_squad","amount":-14.74041,"disclosure":"aggregated"},
-        {"label":"Soziale Aufwendungen","category":"wages_squad","amount":-3.636215,"disclosure":"aggregated"},
-        {"label":"Abschreibungen","category":"depreciation","amount":-4.200133,"disclosure":"aggregated"},
-        {"label":"Sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-7.88835,"disclosure":"aggregated"}
+        {
+          "label": "Aufwendungen Spielbetrieb, Transfers etc.",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -4.959545,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Aufwendungen für bezogene Leistungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7.98637,
+          "disclosure": "aggregated"
+        },
+        {"label":"Löhne & Gehälter","category":"first_team_staff","subcategory":"wages_squad","amount":-14.74041,"disclosure":"aggregated"},
+        {"label":"Soziale Aufwendungen","category":"first_team_staff","subcategory":"wages_squad","amount":-3.636215,"disclosure":"aggregated"},
+        {"label":"Abschreibungen","category":"depreciation","subcategory":"depreciation","amount":-4.200133,"disclosure":"aggregated"},
+        {
+          "label": "Sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7.88835,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.355653,"tax":-0.529837,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":45.345016,"expenses":43.411023,"net_result":0.048502},
@@ -551,19 +1104,43 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Umsatzerlöse","category":"lump_football_operations","amount":41.436186,"disclosure":"aggregated"},
-        {"label":"Erträge aus dem Abgang von Anlagevermögen","category":"other_income","amount":0,"disclosure":"aggregated"},
-        {"label":"Erträge aus der Auflösung von Rückstellungen","category":"other_income","amount":0.934896,"disclosure":"aggregated"},
-        {"label":"Übrige","category":"other_income","amount":2.004412,"disclosure":"aggregated"}
+        {"label":"Umsatzerlöse","category":"undisclosed","subcategory":"lump_football_operations","amount":41.436186,"disclosure":"aggregated"},
+        {"label":"Erträge aus dem Abgang von Anlagevermögen","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"},
+        {
+          "label": "Erträge aus der Auflösung von Rückstellungen",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.934896,
+          "disclosure": "aggregated"
+        },
+        {"label":"Übrige","category":"other_revenue","subcategory":"other_income","amount":2.004412,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Aufwendungen Spielbetrieb, Transfers etc.","category":"match_organisation_expense","amount":-3.921936,"disclosure":"aggregated"},
-        {"label":"Aufwendungen für bezogene Leistungen","category":"other_expenses","amount":-7.940708,"disclosure":"aggregated"},
-        {"label":"Löhne & Gehälter","category":"wages_squad","amount":-16.405524,"disclosure":"aggregated"},
-        {"label":"Soziale Aufwendungen","category":"wages_squad","amount":-3.983233,"disclosure":"aggregated"},
-        {"label":"Abschreibungen","category":"depreciation","amount":-3.786141,"disclosure":"aggregated"},
-        {"label":"Steuern, soweit sie nicht unter Steuern vom Einkommen fallen","category":"admin_general_expense","amount":0,"disclosure":"aggregated"},
-        {"label":"Übrige","category":"other_expenses","amount":-6.950469,"disclosure":"aggregated"}
+        {
+          "label": "Aufwendungen Spielbetrieb, Transfers etc.",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -3.921936,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Aufwendungen für bezogene Leistungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7.940708,
+          "disclosure": "aggregated"
+        },
+        {"label":"Löhne & Gehälter","category":"first_team_staff","subcategory":"wages_squad","amount":-16.405524,"disclosure":"aggregated"},
+        {"label":"Soziale Aufwendungen","category":"first_team_staff","subcategory":"wages_squad","amount":-3.983233,"disclosure":"aggregated"},
+        {"label":"Abschreibungen","category":"depreciation","subcategory":"depreciation","amount":-3.786141,"disclosure":"aggregated"},
+        {
+          "label": "Steuern, soweit sie nicht unter Steuern vom Einkommen fallen",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": 0,
+          "disclosure": "aggregated"
+        },
+        {"label":"Übrige","category":"other_operating_expenses","subcategory":"other_expenses","amount":-6.950469,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.385647,"tax":0.192648,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":44.375494,"expenses":42.988011,"net_result":0.194484},
@@ -594,19 +1171,49 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Umsatzerlöse","category":"lump_football_operations","amount":58.395122,"disclosure":"aggregated"},
-        {"label":"Erträge aus dem Abgang von Anlagevermögen","category":"other_income","amount":0.015325,"disclosure":"aggregated"},
-        {"label":"Erträge aus der Auflösung von Rückstellungen","category":"other_income","amount":0.169107,"disclosure":"aggregated"},
-        {"label":"Übrige","category":"other_income","amount":2.841364,"disclosure":"aggregated"}
+        {"label":"Umsatzerlöse","category":"undisclosed","subcategory":"lump_football_operations","amount":58.395122,"disclosure":"aggregated"},
+        {
+          "label": "Erträge aus dem Abgang von Anlagevermögen",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.015325,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Erträge aus der Auflösung von Rückstellungen",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.169107,
+          "disclosure": "aggregated"
+        },
+        {"label":"Übrige","category":"other_revenue","subcategory":"other_income","amount":2.841364,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Aufwendungen Spielbetrieb, Transfers etc.","category":"match_organisation_expense","amount":-6.191201,"disclosure":"aggregated"},
-        {"label":"Aufwendungen für bezogene Leistungen","category":"other_expenses","amount":-10.947091,"disclosure":"aggregated"},
-        {"label":"Löhne & Gehälter","category":"wages_squad","amount":-23.898805,"disclosure":"aggregated"},
-        {"label":"Soziale Aufwendungen","category":"wages_squad","amount":-4.616527,"disclosure":"aggregated"},
-        {"label":"Abschreibungen","category":"depreciation","amount":-4.98819,"disclosure":"aggregated"},
-        {"label":"Steuern, soweit sie nicht unter Steuern vom Einkommen fallen","category":"admin_general_expense","amount":0,"disclosure":"aggregated"},
-        {"label":"Übrige","category":"other_expenses","amount":-9.317458,"disclosure":"aggregated"}
+        {
+          "label": "Aufwendungen Spielbetrieb, Transfers etc.",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -6.191201,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Aufwendungen für bezogene Leistungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -10.947091,
+          "disclosure": "aggregated"
+        },
+        {"label":"Löhne & Gehälter","category":"first_team_staff","subcategory":"wages_squad","amount":-23.898805,"disclosure":"aggregated"},
+        {"label":"Soziale Aufwendungen","category":"first_team_staff","subcategory":"wages_squad","amount":-4.616527,"disclosure":"aggregated"},
+        {"label":"Abschreibungen","category":"depreciation","subcategory":"depreciation","amount":-4.98819,"disclosure":"aggregated"},
+        {
+          "label": "Steuern, soweit sie nicht unter Steuern vom Einkommen fallen",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": 0,
+          "disclosure": "aggregated"
+        },
+        {"label":"Übrige","category":"other_operating_expenses","subcategory":"other_expenses","amount":-9.317458,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.399777,"tax":-0.038465,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":61.420918,"expenses":59.959272,"net_result":0.023404},

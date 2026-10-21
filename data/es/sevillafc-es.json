@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "ES",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -33,43 +34,88 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Ingresos por competiciones","category":"competition_bonus","amount":7.193,"disclosure":"detailed"},
-        {"label":"Ingresos por abonados y socios","category":"season_tickets","amount":14.365,"disclosure":"detailed"},
-        {"label":"Ingresos por retransmisión","category":"broadcasting","amount":64.758,"disclosure":"detailed"},
-        {"label":"Ingresos por comercialización y publicidad","category":"sponsorship_commercial","amount":28.869,"disclosure":"detailed"},
-        {"label":"Otros ingresos de explotación","category":"other_income","amount":2.657,"disclosure":"detailed"},
-        {"label":"Imputación de subvenciones de inmovilizado no financiero y otras","category":"other_income","amount":0.106,"disclosure":"detailed"},
-        {"label":"Exceso de provisiones","category":"other_income","amount":0.349,"disclosure":"detailed"},
-        {"label":"Otros Resultados","category":"other_income","amount":4.277,"disclosure":"detailed"}
+        {"label":"Ingresos por competiciones","category":"prize_money","subcategory":"competition_bonus","amount":7.193,"disclosure":"detailed"},
+        {"label":"Ingresos por abonados y socios","category":"season_tickets","subcategory":"season_tickets","amount":14.365,"disclosure":"detailed"},
+        {"label":"Ingresos por retransmisión","category":"media_rights","subcategory":"broadcasting","amount":64.758,"disclosure":"detailed"},
+        {
+          "label": "Ingresos por comercialización y publicidad",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 28.869,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros ingresos de explotación","category":"other_revenue","subcategory":"other_income","amount":2.657,"disclosure":"detailed"},
+        {
+          "label": "Imputación de subvenciones de inmovilizado no financiero y otras",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.106,
+          "disclosure": "detailed"
+        },
+        {"label":"Exceso de provisiones","category":"other_revenue","subcategory":"other_income","amount":0.349,"disclosure":"detailed"},
+        {"label":"Otros Resultados","category":"other_revenue","subcategory":"other_income","amount":4.277,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Aprovisionamientos","category":"other_expenses","amount":-10.424,"disclosure":"detailed"},
-        {"label":"Gastos de personal no deportivo","category":"admin_general_expense","amount":-20.889,"disclosure":"detailed"},
-        {"label":"Gastos plantilla deportiva inscribible en la LFP","category":"wages_squad","amount":-84.988,"disclosure":"detailed"},
-        {"label":"Gastos plantilla deportiva no inscribible en la LFP","category":"wages_squad","amount":-8.08,"disclosure":"detailed"},
-        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-20.85,"disclosure":"detailed"},
-        {"label":"Tributos","category":"admin_general_expense","amount":-0.418,"disclosure":"detailed"},
+        {"label":"Aprovisionamientos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-10.424,"disclosure":"detailed"},
+        {"label":"Gastos de personal no deportivo","category":"admin_general","subcategory":"admin_general_expense","amount":-20.889,"disclosure":"detailed"},
+        {
+          "label": "Gastos plantilla deportiva inscribible en la LFP",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -84.988,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos plantilla deportiva no inscribible en la LFP",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -8.08,
+          "disclosure": "detailed"
+        },
+        {"label":"Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-20.85,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.418,"disclosure":"detailed"},
         {
           "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": 2.548,
           "disclosure": "detailed"
         },
-        {"label":"Desplazamientos","category":"match_organisation_expense","amount":-2.07,"disclosure":"detailed"},
-        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-1.368,"disclosure":"detailed"},
-        {"label":"Gastos de adquisición de jugadores inscribibles en la LFP","category":"other_expenses","amount":-3.343,"disclosure":"detailed"},
-        {"label":"Gastos de adquisición de jugadores no inscribibles en la LFP","category":"other_expenses","amount":-0.196,"disclosure":"detailed"},
-        {"label":"Amortización del inmovilizado material","category":"depreciation","amount":-2.862,"disclosure":"detailed"},
-        {"label":"Amortización del inmovilizado inmaterial (excluido jugadores)","category":"depreciation","amount":-0.161,"disclosure":"detailed"},
+        {"label":"Desplazamientos","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.07,"disclosure":"detailed"},
+        {"label":"Otros gastos de gestión corriente","category":"admin_general","subcategory":"admin_general_expense","amount":-1.368,"disclosure":"detailed"},
+        {
+          "label": "Gastos de adquisición de jugadores inscribibles en la LFP",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -3.343,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de adquisición de jugadores no inscribibles en la LFP",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.196,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortización del inmovilizado material","category":"depreciation","subcategory":"depreciation","amount":-2.862,"disclosure":"detailed"},
+        {
+          "label": "Amortización del inmovilizado inmaterial (excluido jugadores)",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.161,
+          "disclosure": "detailed"
+        },
         {
           "label": "Amortización de derechos de adquisición de jugadores inscribibles en la LFP",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -24.122,
           "disclosure": "detailed"
         },
         {
           "label": "Amortización de derechos de adquisición de jugadores no inscribibles en la LFP",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -0.31,
           "disclosure": "detailed"
         }

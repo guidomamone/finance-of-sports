@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -52,27 +53,27 @@
       "management_id": null,
       "fx": {"ref":"BRL@2022-12-31"},
       "revenue": [
-        {"label":"PATROCÍNIOS","category":"sponsorship_commercial","amount":17.147045,"disclosure":"aggregated"},
-        {"label":"PLACAS DE PUBLICIDADE","category":"sponsorship_commercial","amount":5.5001,"disclosure":"aggregated"},
-        {"label":"DIREITOS ECONÔMICOS DE ATLETAS","category":"player_sales","amount":1.276842,"disclosure":"aggregated"},
-        {"label":"SOCIO TORCEDOR","category":"member_dues","amount":3.017469,"disclosure":"aggregated"},
-        {"label":"COTAS/TV","category":"broadcasting","amount":87.560832,"disclosure":"aggregated"},
-        {"label":"BILHETERIA","category":"matchday_competition","amount":16.116301,"disclosure":"aggregated"},
-        {"label":"OUTRAS RECEITAS C/ FUTEBOL","category":"other_income","amount":0.03446,"disclosure":"aggregated"},
-        {"label":"LICENCIAMENTOS","category":"sponsorship_commercial","amount":0.287757,"disclosure":"aggregated"},
-        {"label":"ESCOLINHA","category":"youth_football","amount":0.874757,"disclosure":"aggregated"},
-        {"label":"LOTERIAS","category":"other_income","amount":0.981819,"disclosure":"aggregated"},
-        {"label":"OUTRAS RECEITAS","category":"other_income","amount":0.545413,"disclosure":"aggregated"}
+        {"label":"PATROCÍNIOS","category":"commercial","subcategory":"sponsorship_commercial","amount":17.147045,"disclosure":"aggregated"},
+        {"label":"PLACAS DE PUBLICIDADE","category":"commercial","subcategory":"sponsorship_commercial","amount":5.5001,"disclosure":"aggregated"},
+        {"label":"DIREITOS ECONÔMICOS DE ATLETAS","category":"player_transfers","subcategory":"player_sales","amount":1.276842,"disclosure":"aggregated"},
+        {"label":"SOCIO TORCEDOR","category":"membership","subcategory":"member_dues","amount":3.017469,"disclosure":"aggregated"},
+        {"label":"COTAS/TV","category":"media_rights","subcategory":"broadcasting","amount":87.560832,"disclosure":"aggregated"},
+        {"label":"BILHETERIA","category":"matchday","subcategory":"matchday_competition","amount":16.116301,"disclosure":"aggregated"},
+        {"label":"OUTRAS RECEITAS C/ FUTEBOL","category":"other_revenue","subcategory":"other_income","amount":0.03446,"disclosure":"aggregated"},
+        {"label":"LICENCIAMENTOS","category":"commercial","subcategory":"sponsorship_commercial","amount":0.287757,"disclosure":"aggregated"},
+        {"label":"ESCOLINHA","category":"other_sporting_sections","subcategory":"youth_football","amount":0.874757,"disclosure":"aggregated"},
+        {"label":"LOTERIAS","category":"other_revenue","subcategory":"other_income","amount":0.981819,"disclosure":"aggregated"},
+        {"label":"OUTRAS RECEITAS","category":"other_revenue","subcategory":"other_income","amount":0.545413,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general_expense","amount":-9.604853,"disclosure":"aggregated"},
-        {"label":"CUSTOS COM PESSOAL","category":"wages_squad","amount":-68.268443,"disclosure":"aggregated"},
-        {"label":"CUSTOS COM JOGOS","category":"match_organisation_expense","amount":-8.318707,"disclosure":"aggregated"},
-        {"label":"OUTROS CUSTOS COM FUTEBOL","category":"wages_squad","amount":-6.863131,"disclosure":"aggregated"},
-        {"label":"DESPESAS COM PESSOAL","category":"admin_general_expense","amount":-2.238022,"disclosure":"aggregated"},
-        {"label":"DESPESAS ADMINISTRATIVAS","category":"admin_general_expense","amount":-12.36934,"disclosure":"aggregated"},
-        {"label":"DESPESAS COM VENDAS","category":"admin_general_expense","amount":-0.015268,"disclosure":"aggregated"},
-        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general_expense","amount":-0.153237,"disclosure":"aggregated"}
+        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general","subcategory":"admin_general_expense","amount":-9.604853,"disclosure":"aggregated"},
+        {"label":"CUSTOS COM PESSOAL","category":"first_team_staff","subcategory":"wages_squad","amount":-68.268443,"disclosure":"aggregated"},
+        {"label":"CUSTOS COM JOGOS","category":"match_operations","subcategory":"match_organisation_expense","amount":-8.318707,"disclosure":"aggregated"},
+        {"label":"OUTROS CUSTOS COM FUTEBOL","category":"first_team_staff","subcategory":"wages_squad","amount":-6.863131,"disclosure":"aggregated"},
+        {"label":"DESPESAS COM PESSOAL","category":"admin_general","subcategory":"admin_general_expense","amount":-2.238022,"disclosure":"aggregated"},
+        {"label":"DESPESAS ADMINISTRATIVAS","category":"admin_general","subcategory":"admin_general_expense","amount":-12.36934,"disclosure":"aggregated"},
+        {"label":"DESPESAS COM VENDAS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.015268,"disclosure":"aggregated"},
+        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.153237,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.278683,"tax":0,"gross_debt":0.876854,"cash":3.429558},
       "official_totals": {"revenue":133.342795,"expenses":107.831001,"net_result":25.790477},
@@ -93,19 +94,31 @@
       "management_id": null,
       "fx": {"ref":"BRL@2023-12-31"},
       "revenue": [
-        {"label":"Outras Receitas","category":"other_income","amount":42.021965,"disclosure":"aggregated"},
-        {"label":"Receita com Bilheteria","category":"matchday_competition","amount":16.609467,"disclosure":"aggregated"},
-        {"label":"Receita com Publicidade/Propaganda","category":"sponsorship_commercial","amount":6.336,"disclosure":"aggregated"},
-        {"label":"Receitas Cotas de TV","category":"broadcasting","amount":74.83541,"disclosure":"aggregated"},
-        {"label":"Cessão de Direitos Liga Forte União do Futebol Brasileiro (LFF) – a)","category":"other_income","amount":28.73,"disclosure":"aggregated"},
-        {"label":"(-) Deduções Receitas – b)","category":"other_income","amount":-10.599429,"disclosure":"aggregated"}
+        {"label":"Outras Receitas","category":"other_revenue","subcategory":"other_income","amount":42.021965,"disclosure":"aggregated"},
+        {"label":"Receita com Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":16.609467,"disclosure":"aggregated"},
+        {"label":"Receita com Publicidade/Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":6.336,"disclosure":"aggregated"},
+        {"label":"Receitas Cotas de TV","category":"media_rights","subcategory":"broadcasting","amount":74.83541,"disclosure":"aggregated"},
+        {
+          "label": "Cessão de Direitos Liga Forte União do Futebol Brasileiro (LFF) – a)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 28.73,
+          "disclosure": "aggregated"
+        },
+        {"label":"(-) Deduções Receitas – b)","category":"other_revenue","subcategory":"other_income","amount":-10.599429,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Custo com Futebol Profissional","category":"lump_football_operations_expense","amount":-98.846512,"disclosure":"aggregated"},
-        {"label":"Vendas","category":"admin_general_expense","amount":-0.107449,"disclosure":"aggregated"},
-        {"label":"Despesas Trabalhistas","category":"admin_general_expense","amount":-9.945787,"disclosure":"aggregated"},
-        {"label":"Despesas Gerais","category":"admin_general_expense","amount":-10.945183,"disclosure":"aggregated"},
-        {"label":"Despesas Tributárias","category":"admin_general_expense","amount":-0.126468,"disclosure":"aggregated"}
+        {
+          "label": "Custo com Futebol Profissional",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -98.846512,
+          "disclosure": "aggregated"
+        },
+        {"label":"Vendas","category":"admin_general","subcategory":"admin_general_expense","amount":-0.107449,"disclosure":"aggregated"},
+        {"label":"Despesas Trabalhistas","category":"admin_general","subcategory":"admin_general_expense","amount":-9.945787,"disclosure":"aggregated"},
+        {"label":"Despesas Gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-10.945183,"disclosure":"aggregated"},
+        {"label":"Despesas Tributárias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.126468,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.697486,"tax":0.091488,"gross_debt":0.841269,"cash":12.840574},
       "official_totals": {"revenue":157.933413,"expenses":119.971399,"net_result":37.356016},
@@ -131,33 +144,63 @@
       "management_id": null,
       "fx": {"ref":"BRL@2024-12-31"},
       "revenue": [
-        {"label":"PATROCÍNIOS","category":"sponsorship_commercial","amount":20.363084,"disclosure":"aggregated"},
-        {"label":"PLACAS DE PUBLICIDADE","category":"sponsorship_commercial","amount":10.5,"disclosure":"aggregated"},
-        {"label":"DIREITOS ECONÔMICOS DE ATLETAS","category":"player_sales","amount":114.423113,"disclosure":"aggregated"},
-        {"label":"SÓCIO TORCEDOR","category":"member_dues","amount":1.626578,"disclosure":"aggregated"},
-        {"label":"COTAS/TV","category":"broadcasting","amount":56.035752,"disclosure":"aggregated"},
-        {"label":"BILHETERIA/JOGOS","category":"matchday_competition","amount":13.075506,"disclosure":"aggregated"},
-        {"label":"OUTRAS RECEITAS C/ FUTEBOL","category":"other_income","amount":2.860312,"disclosure":"aggregated"},
-        {"label":"LICENCIAMENTOS","category":"sponsorship_commercial","amount":0.294877,"disclosure":"aggregated"},
-        {"label":"ESCOLINHA","category":"youth_football","amount":1.395352,"disclosure":"aggregated"},
-        {"label":"LOTERIAS","category":"other_income","amount":0.757616,"disclosure":"aggregated"},
-        {"label":"OUTRAS RECEITAS","category":"other_income","amount":2.83456,"disclosure":"aggregated"}
+        {"label":"PATROCÍNIOS","category":"commercial","subcategory":"sponsorship_commercial","amount":20.363084,"disclosure":"aggregated"},
+        {"label":"PLACAS DE PUBLICIDADE","category":"commercial","subcategory":"sponsorship_commercial","amount":10.5,"disclosure":"aggregated"},
+        {"label":"DIREITOS ECONÔMICOS DE ATLETAS","category":"player_transfers","subcategory":"player_sales","amount":114.423113,"disclosure":"aggregated"},
+        {"label":"SÓCIO TORCEDOR","category":"membership","subcategory":"member_dues","amount":1.626578,"disclosure":"aggregated"},
+        {"label":"COTAS/TV","category":"media_rights","subcategory":"broadcasting","amount":56.035752,"disclosure":"aggregated"},
+        {"label":"BILHETERIA/JOGOS","category":"matchday","subcategory":"matchday_competition","amount":13.075506,"disclosure":"aggregated"},
+        {"label":"OUTRAS RECEITAS C/ FUTEBOL","category":"other_revenue","subcategory":"other_income","amount":2.860312,"disclosure":"aggregated"},
+        {"label":"LICENCIAMENTOS","category":"commercial","subcategory":"sponsorship_commercial","amount":0.294877,"disclosure":"aggregated"},
+        {"label":"ESCOLINHA","category":"other_sporting_sections","subcategory":"youth_football","amount":1.395352,"disclosure":"aggregated"},
+        {"label":"LOTERIAS","category":"other_revenue","subcategory":"other_income","amount":0.757616,"disclosure":"aggregated"},
+        {"label":"OUTRAS RECEITAS","category":"other_revenue","subcategory":"other_income","amount":2.83456,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"(-) DIREITOS ECONÔMICOS/ CUSTO INTANGÍVEL","category":"player_amortisation","amount":-11.845753,"disclosure":"aggregated"},
-        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general_expense","amount":-7.268369,"disclosure":"aggregated"},
-        {"label":"CUSTOS COM PESSOAL","category":"wages_squad","amount":-92.403479,"disclosure":"aggregated"},
-        {"label":"CUSTOS COM JOGOS","category":"match_organisation_expense","amount":-15.683748,"disclosure":"aggregated"},
-        {"label":"CUSTOS COM AMORTIZAÇÃO DE CONTRATOS","category":"player_amortisation","amount":-10.29473,"disclosure":"aggregated"},
-        {"label":"OUTROS CUSTOS COM FUTEBOL","category":"wages_squad","amount":-10.975688,"disclosure":"aggregated"},
-        {"label":"DESPESAS COM PESSOAL","category":"admin_general_expense","amount":-3.355965,"disclosure":"aggregated"},
-        {"label":"DESPESAS ADMINISTRATIVAS","category":"admin_general_expense","amount":-4.577698,"disclosure":"aggregated"},
-        {"label":"DESPESAS DEPRECIAÇÃO","category":"depreciation","amount":-0.80115,"disclosure":"aggregated"},
-        {"label":"DESPESAS GERAIS CATEGORIA DE BASE","category":"youth_other_sports_expense","amount":-3.182101,"disclosure":"aggregated"},
-        {"label":"DESPESAS GERAIS ESCOLINHA","category":"youth_other_sports_expense","amount":-0.819815,"disclosure":"aggregated"},
-        {"label":"DESPESAS GERAIS FUTEBOL FEMININO","category":"youth_other_sports_expense","amount":-0.222635,"disclosure":"aggregated"},
-        {"label":"DESPESAS COM VENDAS","category":"admin_general_expense","amount":-0.096191,"disclosure":"aggregated"},
-        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general_expense","amount":-0.624905,"disclosure":"aggregated"}
+        {
+          "label": "(-) DIREITOS ECONÔMICOS/ CUSTO INTANGÍVEL",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -11.845753,
+          "disclosure": "aggregated"
+        },
+        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general","subcategory":"admin_general_expense","amount":-7.268369,"disclosure":"aggregated"},
+        {"label":"CUSTOS COM PESSOAL","category":"first_team_staff","subcategory":"wages_squad","amount":-92.403479,"disclosure":"aggregated"},
+        {"label":"CUSTOS COM JOGOS","category":"match_operations","subcategory":"match_organisation_expense","amount":-15.683748,"disclosure":"aggregated"},
+        {
+          "label": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -10.29473,
+          "disclosure": "aggregated"
+        },
+        {"label":"OUTROS CUSTOS COM FUTEBOL","category":"first_team_staff","subcategory":"wages_squad","amount":-10.975688,"disclosure":"aggregated"},
+        {"label":"DESPESAS COM PESSOAL","category":"admin_general","subcategory":"admin_general_expense","amount":-3.355965,"disclosure":"aggregated"},
+        {"label":"DESPESAS ADMINISTRATIVAS","category":"admin_general","subcategory":"admin_general_expense","amount":-4.577698,"disclosure":"aggregated"},
+        {"label":"DESPESAS DEPRECIAÇÃO","category":"depreciation","subcategory":"depreciation","amount":-0.80115,"disclosure":"aggregated"},
+        {
+          "label": "DESPESAS GERAIS CATEGORIA DE BASE",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -3.182101,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "DESPESAS GERAIS ESCOLINHA",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.819815,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "DESPESAS GERAIS FUTEBOL FEMININO",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.222635,
+          "disclosure": "aggregated"
+        },
+        {"label":"DESPESAS COM VENDAS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.096191,"disclosure":"aggregated"},
+        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.624905,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.738057,"tax":0,"gross_debt":15.82396,"cash":2.932455},
       "official_totals": {"revenue":224.16675,"expenses":162.152227,"net_result":64.752582},
@@ -178,33 +221,63 @@
       "management_id": null,
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"PATROCÍNIOS","category":"sponsorship_commercial","amount":12,"disclosure":"aggregated"},
-        {"label":"PLACAS DE PUBLICIDADE","category":"sponsorship_commercial","amount":2.600926,"disclosure":"aggregated"},
-        {"label":"SÓCIO TORCEDOR","category":"member_dues","amount":0.303897,"disclosure":"aggregated"},
-        {"label":"COTAS/TV","category":"broadcasting","amount":12.769767,"disclosure":"aggregated"},
-        {"label":"BILHETERIA/JOGOS","category":"matchday_competition","amount":1.472385,"disclosure":"aggregated"},
-        {"label":"OUTRAS RECEITAS C/ FUTEBOL","category":"other_income","amount":0.310765,"disclosure":"aggregated"},
-        {"label":"LICENCIAMENTOS","category":"sponsorship_commercial","amount":0.22614,"disclosure":"aggregated"},
-        {"label":"ESCOLINHA","category":"youth_football","amount":1.230119,"disclosure":"aggregated"},
-        {"label":"LOTERIAS","category":"other_income","amount":0.919328,"disclosure":"aggregated"},
-        {"label":"OUTRAS RECEITAS","category":"other_income","amount":3.73993,"disclosure":"aggregated"},
-        {"label":"VENDAS DE MERCADORIAS","category":"sponsorship_commercial","amount":1.051917,"disclosure":"aggregated"},
-        {"label":"OUTRAS RECEITAS/(DESPESAS)","category":"player_sales","amount":20.805324,"disclosure":"aggregated"}
+        {"label":"PATROCÍNIOS","category":"commercial","subcategory":"sponsorship_commercial","amount":12,"disclosure":"aggregated"},
+        {"label":"PLACAS DE PUBLICIDADE","category":"commercial","subcategory":"sponsorship_commercial","amount":2.600926,"disclosure":"aggregated"},
+        {"label":"SÓCIO TORCEDOR","category":"membership","subcategory":"member_dues","amount":0.303897,"disclosure":"aggregated"},
+        {"label":"COTAS/TV","category":"media_rights","subcategory":"broadcasting","amount":12.769767,"disclosure":"aggregated"},
+        {"label":"BILHETERIA/JOGOS","category":"matchday","subcategory":"matchday_competition","amount":1.472385,"disclosure":"aggregated"},
+        {"label":"OUTRAS RECEITAS C/ FUTEBOL","category":"other_revenue","subcategory":"other_income","amount":0.310765,"disclosure":"aggregated"},
+        {"label":"LICENCIAMENTOS","category":"commercial","subcategory":"sponsorship_commercial","amount":0.22614,"disclosure":"aggregated"},
+        {"label":"ESCOLINHA","category":"other_sporting_sections","subcategory":"youth_football","amount":1.230119,"disclosure":"aggregated"},
+        {"label":"LOTERIAS","category":"other_revenue","subcategory":"other_income","amount":0.919328,"disclosure":"aggregated"},
+        {"label":"OUTRAS RECEITAS","category":"other_revenue","subcategory":"other_income","amount":3.73993,"disclosure":"aggregated"},
+        {"label":"VENDAS DE MERCADORIAS","category":"commercial","subcategory":"sponsorship_commercial","amount":1.051917,"disclosure":"aggregated"},
+        {"label":"OUTRAS RECEITAS/(DESPESAS)","category":"player_transfers","subcategory":"player_sales","amount":20.805324,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"CUSTOS COM PESSOAL","category":"wages_squad","amount":-31.917744,"disclosure":"aggregated"},
-        {"label":"CUSTOS COM JOGOS","category":"match_organisation_expense","amount":-3.388905,"disclosure":"aggregated"},
-        {"label":"CUSTOS COM AMORTIZAÇÃO DE CONTRATOS","category":"player_amortisation","amount":-19.456556,"disclosure":"aggregated"},
-        {"label":"OUTROS CUSTOS COM FUTEBOL","category":"wages_squad","amount":-21.975926,"disclosure":"aggregated"},
-        {"label":"DESPESAS COM PESSOAL","category":"admin_general_expense","amount":-5.561472,"disclosure":"aggregated"},
-        {"label":"DESPESAS ADMINISTRATIVAS","category":"admin_general_expense","amount":-4.228214,"disclosure":"aggregated"},
-        {"label":"DESPESAS DEPRECIAÇÃO","category":"depreciation","amount":-1.213151,"disclosure":"aggregated"},
-        {"label":"DESPESAS GERAIS CATEGORIA DE BASE","category":"youth_other_sports_expense","amount":-1.978408,"disclosure":"aggregated"},
-        {"label":"DESPESAS GERAIS ESCOLINHA","category":"youth_other_sports_expense","amount":-0.480996,"disclosure":"aggregated"},
-        {"label":"DESPESAS GERAIS FUTEBOL FEMININO","category":"youth_other_sports_expense","amount":-0.000021,"disclosure":"aggregated"},
-        {"label":"DESPESAS COM VENDAS","category":"admin_general_expense","amount":-0.231575,"disclosure":"aggregated"},
-        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general_expense","amount":-4.984986,"disclosure":"aggregated"},
-        {"label":"DESPESAS TRIBUTÁRIAS (deduções da receita)","category":"admin_general_expense","amount":-2.144216,"disclosure":"aggregated"}
+        {"label":"CUSTOS COM PESSOAL","category":"first_team_staff","subcategory":"wages_squad","amount":-31.917744,"disclosure":"aggregated"},
+        {"label":"CUSTOS COM JOGOS","category":"match_operations","subcategory":"match_organisation_expense","amount":-3.388905,"disclosure":"aggregated"},
+        {
+          "label": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -19.456556,
+          "disclosure": "aggregated"
+        },
+        {"label":"OUTROS CUSTOS COM FUTEBOL","category":"first_team_staff","subcategory":"wages_squad","amount":-21.975926,"disclosure":"aggregated"},
+        {"label":"DESPESAS COM PESSOAL","category":"admin_general","subcategory":"admin_general_expense","amount":-5.561472,"disclosure":"aggregated"},
+        {"label":"DESPESAS ADMINISTRATIVAS","category":"admin_general","subcategory":"admin_general_expense","amount":-4.228214,"disclosure":"aggregated"},
+        {"label":"DESPESAS DEPRECIAÇÃO","category":"depreciation","subcategory":"depreciation","amount":-1.213151,"disclosure":"aggregated"},
+        {
+          "label": "DESPESAS GERAIS CATEGORIA DE BASE",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -1.978408,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "DESPESAS GERAIS ESCOLINHA",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.480996,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "DESPESAS GERAIS FUTEBOL FEMININO",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.000021,
+          "disclosure": "aggregated"
+        },
+        {"label":"DESPESAS COM VENDAS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.231575,"disclosure":"aggregated"},
+        {"label":"DESPESAS TRIBUTÁRIAS","category":"admin_general","subcategory":"admin_general_expense","amount":-4.984986,"disclosure":"aggregated"},
+        {
+          "label": "DESPESAS TRIBUTÁRIAS (deduções da receita)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.144216,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.017,"tax":0,"gross_debt":20.72526,"cash":3.484627},
       "official_totals": {"revenue":57.430498,"expenses":97.56217,"net_result":-42.148674},

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "ES",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -41,20 +42,40 @@
       "revenue": [
         {
           "label": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 14.998072,
           "disclosure": "summary",
           "items": [["Ventas",1.912708],["Prestación de servicios",13.085364]]
         },
-        {"label":"Ingresos accesorios y otros de gestión corriente","category":"other_income","amount":11.542128,"disclosure":"summary"},
-        {"label":"Subvenciones de explotación incorporadas al resultado del ejercicio","category":"other_income","amount":0.140148,"disclosure":"detailed"},
-        {"label":"Imputación de subvenciones de inmovilizado no financiero y otras","category":"other_income","amount":0.20503,"disclosure":"detailed"},
-        {"label":"Otros resultados","category":"other_income","amount":0.021034,"disclosure":"detailed"}
+        {
+          "label": "Ingresos accesorios y otros de gestión corriente",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 11.542128,
+          "disclosure": "summary"
+        },
+        {
+          "label": "Subvenciones de explotación incorporadas al resultado del ejercicio",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.140148,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Imputación de subvenciones de inmovilizado no financiero y otras",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.20503,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros resultados","category":"other_revenue","subcategory":"other_income","amount":0.021034,"disclosure":"detailed"}
       ],
       "expenses": [
         {
           "label": "Aprovisionamientos",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.646276,
           "disclosure": "detailed",
           "items": [
@@ -65,21 +86,35 @@
         },
         {
           "label": "Gastos de personal (sin separar plantel deportivo/no deportivo)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -24.012792,
           "disclosure": "summary",
           "items": [["Sueldos, salarios y asimilados",-22.924071],["Cargas sociales",-1.088722]]
         },
-        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-7.70409,"disclosure":"detailed"},
-        {"label":"Tributos","category":"admin_general_expense","amount":-0.185053,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-7.70409,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.185053,"disclosure":"detailed"},
         {
           "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales (residuo contra el subtotal impreso, ver comentario de cabecera)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -5.957272,
           "disclosure": "summary"
         },
-        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-0.3535,"disclosure":"detailed"},
-        {"label":"Amortización del inmovilizado (sin separar jugadores del resto)","category":"player_amortisation","amount":-5.016471,"disclosure":"summary"}
+        {
+          "label": "Otros gastos de gestión corriente",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.3535,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortización del inmovilizado (sin separar jugadores del resto)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -5.016471,
+          "disclosure": "summary"
+        }
       ],
       "financial": {"profit_on_player_sales":17.002692,"asset_sales":0,"net_interest":-0.041956,"tax":-0.025772,"gross_debt":3.167,"cash":3.856412},
       "official_totals": {"revenue":26.906411,"expenses":43.875455,"net_result":-0.03408}
@@ -95,19 +130,39 @@
       "revenue": [
         {
           "label": "Importe neto de la cifra de negocios (ventas + prestación de servicios, sin desglosar por concepto)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 110.914404,
           "disclosure": "summary",
           "items": [["Ventas",12.231604],["Prestación de servicios",98.682799]]
         },
-        {"label":"Ingresos accesorios y otros de gestión corriente","category":"other_income","amount":32.23921,"disclosure":"summary"},
-        {"label":"Subvenciones de explotación incorporadas al resultado del ejercicio","category":"other_income","amount":0.586357,"disclosure":"detailed"},
-        {"label":"Imputación de subvenciones de inmovilizado no financiero y otras","category":"other_income","amount":0.20503,"disclosure":"detailed"}
+        {
+          "label": "Ingresos accesorios y otros de gestión corriente",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 32.23921,
+          "disclosure": "summary"
+        },
+        {
+          "label": "Subvenciones de explotación incorporadas al resultado del ejercicio",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.586357,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Imputación de subvenciones de inmovilizado no financiero y otras",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.20503,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
         {
           "label": "Aprovisionamientos",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -1.904535,
           "disclosure": "detailed",
           "items": [
@@ -118,21 +173,35 @@
         },
         {
           "label": "Gastos de personal (sin separar plantel deportivo/no deportivo)",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -76.622458,
           "disclosure": "summary",
           "items": [["Sueldos, salarios y asimilados",-73.53851],["Cargas sociales",-3.083948]]
         },
-        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-20.849309,"disclosure":"detailed"},
-        {"label":"Tributos","category":"admin_general_expense","amount":-0.646909,"disclosure":"detailed"},
-        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-24.883181,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-20.849309,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.646909,"disclosure":"detailed"},
+        {
+          "label": "Otros gastos de gestión corriente",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -24.883181,
+          "disclosure": "detailed"
+        },
         {
           "label": "Amortización del inmovilizado (sin separar jugadores del resto; CORREGIDO por OCR, ver comentario de cabecera)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -18.423581,
           "disclosure": "summary"
         },
-        {"label":"Otros resultados (negativo este ejercicio)","category":"other_expenses","amount":-0.174023,"disclosure":"detailed"}
+        {
+          "label": "Otros resultados (negativo este ejercicio)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.174023,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":22.560578,"asset_sales":0,"net_interest":-1.004234,"tax":-5.502496,"gross_debt":47.221,"cash":11.121773},
       "official_totals": {"revenue":143.945001,"expenses":143.503997,"net_result":16.494852}

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "AR",
     "reporting_currency": "ARS",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -48,43 +49,82 @@
       "management_id": "pandolfi",
       "fx": {"ref":"ARS@2022-06-30"},
       "revenue": [
-        {"label":"Cuotas Sociales Gral","category":"member_dues","amount":363.510683,"disclosure":"detailed"},
-        {"label":"Servicios a Socios (Natación, Fitness, Tenis, Racquetball, Otros)","category":"other_sports","amount":34.46786,"disclosure":"detailed"},
-        {"label":"Actividades Federadas: Fútbol Infantil","category":"youth_football","amount":9.802125,"disclosure":"detailed"},
+        {"label":"Cuotas Sociales Gral","category":"membership","subcategory":"member_dues","amount":363.510683,"disclosure":"detailed"},
+        {
+          "label": "Servicios a Socios (Natación, Fitness, Tenis, Racquetball, Otros)",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 34.46786,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Actividades Federadas: Fútbol Infantil",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 9.802125,
+          "disclosure": "detailed"
+        },
         {
           "label": "Actividades Federadas: resto de deportes (Futsal, Hockey, Handball, Voley, Básquet, Gimnasia, Tenis, Natación, Otros)",
-          "category": "other_sports",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
           "amount": 108.922346,
           "disclosure": "detailed"
         },
-        {"label":"Colonia de Vacaciones","category":"other_sports","amount":76.716424,"disclosure":"detailed"},
-        {"label":"Colegio Instituto Educativo","category":"education","amount":110.771247,"disclosure":"detailed"},
-        {"label":"Instituto del Deporte","category":"other_sports","amount":0.462031,"disclosure":"detailed"},
+        {"label":"Colonia de Vacaciones","category":"other_sporting_sections","subcategory":"other_sports","amount":76.716424,"disclosure":"detailed"},
+        {"label":"Colegio Instituto Educativo","category":"non_sporting_activities","subcategory":"education","amount":110.771247,"disclosure":"detailed"},
+        {"label":"Instituto del Deporte","category":"other_sporting_sections","subcategory":"other_sports","amount":0.462031,"disclosure":"detailed"},
         {
           "label": "Escuelas Deportivas (Natación, Tenis, Futsal, Gimnasia, Hockey, Básquet, Patín, Handball, Voley, Fitness, Efi, Running, Beisbol, Taekwondo, Boxeo, Racquetball, Judo/Karate/Lucha, Ajedrez, Tenis de Mesa)",
-          "category": "other_sports",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
           "amount": 98.200141,
           "disclosure": "detailed"
         },
-        {"label":"Ingresos Ponteveedra","category":"other_sports","amount":17.605376,"disclosure":"detailed"},
-        {"label":"Recaudaciones Eventos Deportivos","category":"matchday_competition","amount":4.209047,"disclosure":"detailed"},
-        {"label":"Ingresos por Torneos","category":"competition_bonus","amount":2.525245,"disclosure":"detailed"},
-        {"label":"Derechos de Television","category":"broadcasting","amount":68.124557,"disclosure":"detailed"},
-        {"label":"Venta de Abonos y Plateas","category":"season_tickets","amount":15.403914,"disclosure":"detailed"},
-        {"label":"Publicidad y Sponsors","category":"sponsorship_commercial","amount":41.731842,"disclosure":"detailed"},
-        {"label":"Ingresos por Alquileres","category":"other_income","amount":19.739383,"disclosure":"detailed"},
-        {"label":"Ingresos por Buffet","category":"other_income","amount":2.995336,"disclosure":"detailed"},
-        {"label":"Otros Ingresos","category":"other_income","amount":4.013933,"disclosure":"detailed"},
-        {"label":"Derechos de Formación y afines","category":"youth_football","amount":12.13965,"disclosure":"detailed"},
-        {"label":"Programa de Asistencia de Emergencia al Trabajo y la Producción (ATP)","category":"other_income","amount":58.388019,"disclosure":"detailed"},
-        {"label":"Otros ingresos Fútbol Profesional","category":"other_income","amount":0.84638,"disclosure":"detailed"},
-        {"label":"Recupero Decreto 1212/03 (ver nota de cabecera — duda genuina)","category":"other_income","amount":82.579039,"disclosure":"detailed"}
+        {"label":"Ingresos Ponteveedra","category":"other_sporting_sections","subcategory":"other_sports","amount":17.605376,"disclosure":"detailed"},
+        {"label":"Recaudaciones Eventos Deportivos","category":"matchday","subcategory":"matchday_competition","amount":4.209047,"disclosure":"detailed"},
+        {"label":"Ingresos por Torneos","category":"prize_money","subcategory":"competition_bonus","amount":2.525245,"disclosure":"detailed"},
+        {"label":"Derechos de Television","category":"media_rights","subcategory":"broadcasting","amount":68.124557,"disclosure":"detailed"},
+        {"label":"Venta de Abonos y Plateas","category":"season_tickets","subcategory":"season_tickets","amount":15.403914,"disclosure":"detailed"},
+        {"label":"Publicidad y Sponsors","category":"commercial","subcategory":"sponsorship_commercial","amount":41.731842,"disclosure":"detailed"},
+        {"label":"Ingresos por Alquileres","category":"other_revenue","subcategory":"other_income","amount":19.739383,"disclosure":"detailed"},
+        {"label":"Ingresos por Buffet","category":"other_revenue","subcategory":"other_income","amount":2.995336,"disclosure":"detailed"},
+        {"label":"Otros Ingresos","category":"other_revenue","subcategory":"other_income","amount":4.013933,"disclosure":"detailed"},
+        {
+          "label": "Derechos de Formación y afines",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 12.13965,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Programa de Asistencia de Emergencia al Trabajo y la Producción (ATP)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 58.388019,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros ingresos Fútbol Profesional","category":"other_revenue","subcategory":"other_income","amount":0.84638,"disclosure":"detailed"},
+        {
+          "label": "Recupero Decreto 1212/03 (ver nota de cabecera — duda genuina)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 82.579039,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Departamento de Educación Física","category":"youth_other_sports_expense","amount":-26.987439,"disclosure":"detailed"},
+        {
+          "label": "Departamento de Educación Física",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -26.987439,
+          "disclosure": "detailed"
+        },
         {
           "label": "Departamento de Deportes Federados",
-          "category": "youth_other_sports_expense",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
           "amount": -279.401006,
           "disclosure": "detailed",
           "items": [
@@ -109,22 +149,65 @@
             ["Otros",-13.036777]
           ]
         },
-        {"label":"Departamento de Fútbol Profesional","category":"wages_squad","amount":-272.645575,"disclosure":"detailed"},
-        {"label":"Departamento de Fútbol Femenino","category":"youth_other_sports_expense","amount":-12.025531,"disclosure":"detailed"},
-        {"label":"Departamento de Fútbol Infantil","category":"youth_other_sports_expense","amount":-6.843857,"disclosure":"detailed"},
-        {"label":"Departamento de Fútbol Amateur","category":"youth_other_sports_expense","amount":-19.932965,"disclosure":"detailed"},
-        {"label":"Departamento Médico","category":"admin_general_expense","amount":-6.518555,"disclosure":"detailed"},
-        {"label":"Egresos por Instituto Educativo","category":"education_expense","amount":-121.57768,"disclosure":"detailed"},
-        {"label":"Egresos por Colonia de Vacaciones","category":"youth_other_sports_expense","amount":-19.821991,"disclosure":"detailed"},
-        {"label":"Egresos por Instituto del Deporte","category":"youth_other_sports_expense","amount":-0.946247,"disclosure":"detailed"},
-        {"label":"Egresos Ponteveedra","category":"youth_other_sports_expense","amount":-31.8441,"disclosure":"detailed"},
-        {"label":"Egresos Sede Social","category":"admin_general_expense","amount":-21.670908,"disclosure":"detailed"},
-        {"label":"Egresos Campo Deportivo","category":"match_organisation_expense","amount":-45.2297,"disclosure":"detailed"},
-        {"label":"Egresos Anexos","category":"admin_general_expense","amount":-2.079218,"disclosure":"detailed"},
-        {"label":"Egresos Generales","category":"admin_general_expense","amount":-91.819464,"disclosure":"detailed"},
+        {"label":"Departamento de Fútbol Profesional","category":"first_team_staff","subcategory":"wages_squad","amount":-272.645575,"disclosure":"detailed"},
+        {
+          "label": "Departamento de Fútbol Femenino",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -12.025531,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Departamento de Fútbol Infantil",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -6.843857,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Departamento de Fútbol Amateur",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -19.932965,
+          "disclosure": "detailed"
+        },
+        {"label":"Departamento Médico","category":"admin_general","subcategory":"admin_general_expense","amount":-6.518555,"disclosure":"detailed"},
+        {
+          "label": "Egresos por Instituto Educativo",
+          "category": "non_sporting_activities",
+          "subcategory": "education_expense",
+          "amount": -121.57768,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Egresos por Colonia de Vacaciones",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -19.821991,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Egresos por Instituto del Deporte",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.946247,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Egresos Ponteveedra",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -31.8441,
+          "disclosure": "detailed"
+        },
+        {"label":"Egresos Sede Social","category":"admin_general","subcategory":"admin_general_expense","amount":-21.670908,"disclosure":"detailed"},
+        {"label":"Egresos Campo Deportivo","category":"match_operations","subcategory":"match_organisation_expense","amount":-45.2297,"disclosure":"detailed"},
+        {"label":"Egresos Anexos","category":"admin_general","subcategory":"admin_general_expense","amount":-2.079218,"disclosure":"detailed"},
+        {"label":"Egresos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-91.819464,"disclosure":"detailed"},
         {
           "label": "Gastos Generales de Administración (Anexo E)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -156.346545,
           "disclosure": "detailed",
           "items": [
@@ -145,7 +228,7 @@
             ["Impuestos / Tasas / Contribuciones",-30.328956]
           ]
         },
-        {"label":"Amortizaciones de bienes (Anexo A)","category":"depreciation","amount":-11.21809,"disclosure":"detailed"}
+        {"label":"Amortizaciones de bienes (Anexo A)","category":"depreciation","subcategory":"depreciation","amount":-11.21809,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":250.656214,"tax":0,"gross_debt":304.101699,"cash":3.903445},
       "official_totals": {"revenue":1133.154575,"expenses":1126.908874,"net_result":256.901916}
@@ -159,43 +242,82 @@
       "management_id": "pandolfi",
       "fx": {"ref":"ARS@2023-06-30"},
       "revenue": [
-        {"label":"Cuotas Sociales Gral","category":"member_dues","amount":879.624083,"disclosure":"detailed"},
-        {"label":"Servicios a Socios (Natación, Fitness, Tenis, Racquetball, Otros)","category":"other_sports","amount":99.496064,"disclosure":"detailed"},
-        {"label":"Actividades Federadas: Fútbol Infantil","category":"youth_football","amount":27.899285,"disclosure":"detailed"},
+        {"label":"Cuotas Sociales Gral","category":"membership","subcategory":"member_dues","amount":879.624083,"disclosure":"detailed"},
+        {
+          "label": "Servicios a Socios (Natación, Fitness, Tenis, Racquetball, Otros)",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 99.496064,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Actividades Federadas: Fútbol Infantil",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 27.899285,
+          "disclosure": "detailed"
+        },
         {
           "label": "Actividades Federadas: resto de deportes (Futsal, Hockey, Handball, Voley, Básquet, Gimnasia, Tenis, Natación, Otros)",
-          "category": "other_sports",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
           "amount": 208.465412,
           "disclosure": "detailed"
         },
-        {"label":"Colonia de Vacaciones","category":"other_sports","amount":191.371407,"disclosure":"detailed"},
-        {"label":"Colegio Instituto Educativo","category":"education","amount":264.63764,"disclosure":"detailed"},
-        {"label":"Instituto del Deporte","category":"other_sports","amount":0.811689,"disclosure":"detailed"},
+        {"label":"Colonia de Vacaciones","category":"other_sporting_sections","subcategory":"other_sports","amount":191.371407,"disclosure":"detailed"},
+        {"label":"Colegio Instituto Educativo","category":"non_sporting_activities","subcategory":"education","amount":264.63764,"disclosure":"detailed"},
+        {"label":"Instituto del Deporte","category":"other_sporting_sections","subcategory":"other_sports","amount":0.811689,"disclosure":"detailed"},
         {
           "label": "Escuelas Deportivas (Natación, Tenis, Futsal, Gimnasia, Hockey, Básquet, Patín, Handball, Voley, Fitness, Efi, Running, Beisbol, Taekwondo, Boxeo, Racquetball, Judo/Karate/Lucha, Ajedrez, Tenis de Mesa)",
-          "category": "other_sports",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
           "amount": 247.443036,
           "disclosure": "detailed"
         },
-        {"label":"Ingresos Ponteveedra","category":"other_sports","amount":36.082915,"disclosure":"detailed"},
-        {"label":"Recaudaciones Eventos Deportivos","category":"matchday_competition","amount":32.507327,"disclosure":"detailed"},
-        {"label":"Ingresos por Torneos","category":"competition_bonus","amount":8.256661,"disclosure":"detailed"},
-        {"label":"Derechos de Television","category":"broadcasting","amount":115.60992,"disclosure":"detailed"},
-        {"label":"Venta de Abonos y Plateas","category":"season_tickets","amount":15.491412,"disclosure":"detailed"},
-        {"label":"Publicidad y Sponsors","category":"sponsorship_commercial","amount":48.888312,"disclosure":"detailed"},
-        {"label":"Ingresos por Alquileres","category":"other_income","amount":122.049192,"disclosure":"detailed"},
-        {"label":"Ingresos por Buffet","category":"other_income","amount":7.150961,"disclosure":"detailed"},
-        {"label":"Fútbol Profesional: Ventas y Préstamos","category":"player_sales","amount":459.755138,"disclosure":"detailed"},
-        {"label":"Otros Ingresos","category":"other_income","amount":1.140521,"disclosure":"detailed"},
-        {"label":"Derechos de Formación y afines","category":"youth_football","amount":70.979941,"disclosure":"detailed"},
-        {"label":"Subsidios Recibidos","category":"other_income","amount":1.069756,"disclosure":"detailed"},
-        {"label":"Recupero Decreto 1212/03 (ver nota de cabecera — duda genuina)","category":"other_income","amount":183.954137,"disclosure":"detailed"}
+        {"label":"Ingresos Ponteveedra","category":"other_sporting_sections","subcategory":"other_sports","amount":36.082915,"disclosure":"detailed"},
+        {"label":"Recaudaciones Eventos Deportivos","category":"matchday","subcategory":"matchday_competition","amount":32.507327,"disclosure":"detailed"},
+        {"label":"Ingresos por Torneos","category":"prize_money","subcategory":"competition_bonus","amount":8.256661,"disclosure":"detailed"},
+        {"label":"Derechos de Television","category":"media_rights","subcategory":"broadcasting","amount":115.60992,"disclosure":"detailed"},
+        {"label":"Venta de Abonos y Plateas","category":"season_tickets","subcategory":"season_tickets","amount":15.491412,"disclosure":"detailed"},
+        {"label":"Publicidad y Sponsors","category":"commercial","subcategory":"sponsorship_commercial","amount":48.888312,"disclosure":"detailed"},
+        {"label":"Ingresos por Alquileres","category":"other_revenue","subcategory":"other_income","amount":122.049192,"disclosure":"detailed"},
+        {"label":"Ingresos por Buffet","category":"other_revenue","subcategory":"other_income","amount":7.150961,"disclosure":"detailed"},
+        {
+          "label": "Fútbol Profesional: Ventas y Préstamos",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 459.755138,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros Ingresos","category":"other_revenue","subcategory":"other_income","amount":1.140521,"disclosure":"detailed"},
+        {
+          "label": "Derechos de Formación y afines",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 70.979941,
+          "disclosure": "detailed"
+        },
+        {"label":"Subsidios Recibidos","category":"other_revenue","subcategory":"other_income","amount":1.069756,"disclosure":"detailed"},
+        {
+          "label": "Recupero Decreto 1212/03 (ver nota de cabecera — duda genuina)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 183.954137,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Departamento de Educación Física","category":"youth_other_sports_expense","amount":-96.308067,"disclosure":"detailed"},
+        {
+          "label": "Departamento de Educación Física",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -96.308067,
+          "disclosure": "detailed"
+        },
         {
           "label": "Departamento de Deportes Federados",
-          "category": "youth_other_sports_expense",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
           "amount": -647.414872,
           "disclosure": "detailed",
           "items": [
@@ -220,23 +342,78 @@
             ["Otros",-30.496669]
           ]
         },
-        {"label":"Departamento de Fútbol Profesional","category":"wages_squad","amount":-766.030131,"disclosure":"detailed"},
-        {"label":"Departamento de Fútbol Femenino","category":"youth_other_sports_expense","amount":-35.14881,"disclosure":"detailed"},
-        {"label":"Departamento de Fútbol Infantil","category":"youth_other_sports_expense","amount":-10.741247,"disclosure":"detailed"},
-        {"label":"Departamento de Fútbol Amateur","category":"youth_other_sports_expense","amount":-56.548922,"disclosure":"detailed"},
-        {"label":"Departamento Médico","category":"admin_general_expense","amount":-28.051389,"disclosure":"detailed"},
-        {"label":"Egresos por Instituto Educativo","category":"education_expense","amount":-255.84256,"disclosure":"detailed"},
-        {"label":"Egresos por Colonia de Vacaciones","category":"youth_other_sports_expense","amount":-32.675088,"disclosure":"detailed"},
-        {"label":"Egresos por Instituto del Deporte","category":"youth_other_sports_expense","amount":-0.890963,"disclosure":"detailed"},
-        {"label":"Egresos Ponteveedra","category":"youth_other_sports_expense","amount":-72.358611,"disclosure":"detailed"},
-        {"label":"Egresos Sede Social","category":"admin_general_expense","amount":-91.372933,"disclosure":"detailed"},
-        {"label":"Egresos Campo Deportivo","category":"match_organisation_expense","amount":-198.667728,"disclosure":"detailed"},
-        {"label":"Egresos Anexos","category":"admin_general_expense","amount":-9.04156,"disclosure":"detailed"},
-        {"label":"Egresos Generales","category":"admin_general_expense","amount":-253.639079,"disclosure":"detailed"},
-        {"label":"Egresos Departamento Cultural","category":"other_expenses","amount":-0.01053,"disclosure":"detailed"},
+        {"label":"Departamento de Fútbol Profesional","category":"first_team_staff","subcategory":"wages_squad","amount":-766.030131,"disclosure":"detailed"},
+        {
+          "label": "Departamento de Fútbol Femenino",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -35.14881,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Departamento de Fútbol Infantil",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -10.741247,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Departamento de Fútbol Amateur",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -56.548922,
+          "disclosure": "detailed"
+        },
+        {"label":"Departamento Médico","category":"admin_general","subcategory":"admin_general_expense","amount":-28.051389,"disclosure":"detailed"},
+        {
+          "label": "Egresos por Instituto Educativo",
+          "category": "non_sporting_activities",
+          "subcategory": "education_expense",
+          "amount": -255.84256,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Egresos por Colonia de Vacaciones",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -32.675088,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Egresos por Instituto del Deporte",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.890963,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Egresos Ponteveedra",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -72.358611,
+          "disclosure": "detailed"
+        },
+        {"label":"Egresos Sede Social","category":"admin_general","subcategory":"admin_general_expense","amount":-91.372933,"disclosure":"detailed"},
+        {
+          "label": "Egresos Campo Deportivo",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -198.667728,
+          "disclosure": "detailed"
+        },
+        {"label":"Egresos Anexos","category":"admin_general","subcategory":"admin_general_expense","amount":-9.04156,"disclosure":"detailed"},
+        {"label":"Egresos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-253.639079,"disclosure":"detailed"},
+        {
+          "label": "Egresos Departamento Cultural",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.01053,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gastos Generales de Administración (Anexo E)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -358.156826,
           "disclosure": "detailed",
           "items": [
@@ -257,7 +434,7 @@
             ["Impuestos / Tasas / Contribuciones",-58.317434]
           ]
         },
-        {"label":"Amortizaciones de bienes (Anexo A)","category":"depreciation","amount":-26.148515,"disclosure":"detailed"}
+        {"label":"Amortizaciones de bienes (Anexo A)","category":"depreciation","subcategory":"depreciation","amount":-26.148515,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":629.290795,"tax":0,"gross_debt":415.023331,"cash":59.450677},
       "official_totals": {"revenue":3022.684808,"expenses":2939.047832,"net_result":712.927772}
@@ -271,77 +448,245 @@
       "management_id": null,
       "fx": {"rate":1165,"source":"manual"},
       "revenue": [
-        {"label":"Para fines generales ( Anexo B )","category":"other_income","amount":4615.086829,"disclosure":"aggregated"},
-        {"label":"Servicios a Socios (Anexo C)","category":"other_sports","amount":562.062512,"disclosure":"aggregated"},
-        {"label":"Ingresos por Actividades Federadas (Anexo C)","category":"other_sports","amount":1314.433627,"disclosure":"aggregated"},
-        {"label":"Ingreso por Colonia de Vacaciones","category":"other_sports","amount":640.953668,"disclosure":"aggregated"},
-        {"label":"Ingreso por Colegio Instituto Educativo","category":"education","amount":2151.577664,"disclosure":"aggregated"},
-        {"label":"Ingreso por Escuelas Deportivas (Anexo C)","category":"other_sports","amount":1302.906101,"disclosure":"aggregated"},
-        {"label":"Ingresos Ponteveedra","category":"other_sports","amount":117.751564,"disclosure":"aggregated"},
-        {"label":"Recaudaciones Eventos Deportivos","category":"matchday_competition","amount":36.043482,"disclosure":"aggregated"},
-        {"label":"Ingresos por Torneos","category":"competition_bonus","amount":21.790195,"disclosure":"aggregated"},
-        {"label":"Derechos de Television","category":"broadcasting","amount":526.881497,"disclosure":"aggregated"},
-        {"label":"Venta de Abonos y Plateas","category":"season_tickets","amount":251.887469,"disclosure":"aggregated"},
-        {"label":"Ingreso por Publicidad y Sponsors","category":"sponsorship_commercial","amount":348.887982,"disclosure":"aggregated"},
-        {"label":"Ingresos por Alquileres","category":"other_income","amount":1341.9114,"disclosure":"aggregated"},
-        {"label":"Ingresos por Buffet","category":"other_income","amount":25.879934,"disclosure":"aggregated"},
-        {"label":"Futbol Profesional Ventas y Prestamos","category":"player_sales","amount":1210.638787,"disclosure":"aggregated"},
-        {"label":"Otros Ingresos","category":"other_income","amount":28.538147,"disclosure":"aggregated"},
-        {"label":"Derechos de Formacion y afines","category":"youth_football","amount":138.616988,"disclosure":"aggregated"},
-        {"label":"Subsidios Recibidos","category":"other_income","amount":5.1795,"disclosure":"aggregated"},
-        {"label":"Recupero Decreto 510/23","category":"other_income","amount":1446.974563,"disclosure":"aggregated"}
+        {"label":"Para fines generales ( Anexo B )","category":"other_revenue","subcategory":"other_income","amount":4615.086829,"disclosure":"aggregated"},
+        {
+          "label": "Servicios a Socios (Anexo C)",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 562.062512,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingresos por Actividades Federadas (Anexo C)",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 1314.433627,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingreso por Colonia de Vacaciones",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 640.953668,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingreso por Colegio Instituto Educativo",
+          "category": "non_sporting_activities",
+          "subcategory": "education",
+          "amount": 2151.577664,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ingreso por Escuelas Deportivas (Anexo C)",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
+          "amount": 1302.906101,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos Ponteveedra","category":"other_sporting_sections","subcategory":"other_sports","amount":117.751564,"disclosure":"aggregated"},
+        {"label":"Recaudaciones Eventos Deportivos","category":"matchday","subcategory":"matchday_competition","amount":36.043482,"disclosure":"aggregated"},
+        {"label":"Ingresos por Torneos","category":"prize_money","subcategory":"competition_bonus","amount":21.790195,"disclosure":"aggregated"},
+        {"label":"Derechos de Television","category":"media_rights","subcategory":"broadcasting","amount":526.881497,"disclosure":"aggregated"},
+        {"label":"Venta de Abonos y Plateas","category":"season_tickets","subcategory":"season_tickets","amount":251.887469,"disclosure":"aggregated"},
+        {
+          "label": "Ingreso por Publicidad y Sponsors",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 348.887982,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ingresos por Alquileres","category":"other_revenue","subcategory":"other_income","amount":1341.9114,"disclosure":"aggregated"},
+        {"label":"Ingresos por Buffet","category":"other_revenue","subcategory":"other_income","amount":25.879934,"disclosure":"aggregated"},
+        {
+          "label": "Futbol Profesional Ventas y Prestamos",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1210.638787,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros Ingresos","category":"other_revenue","subcategory":"other_income","amount":28.538147,"disclosure":"aggregated"},
+        {
+          "label": "Derechos de Formacion y afines",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 138.616988,
+          "disclosure": "aggregated"
+        },
+        {"label":"Subsidios Recibidos","category":"other_revenue","subcategory":"other_income","amount":5.1795,"disclosure":"aggregated"},
+        {"label":"Recupero Decreto 510/23","category":"other_revenue","subcategory":"other_income","amount":1446.974563,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"1- Departamento de Educacion Fisica","category":"youth_other_sports_expense","amount":-497.873922,"disclosure":"aggregated"},
-        {"label":"Basquetball Profesional","category":"youth_other_sports_expense","amount":-933.749638,"disclosure":"aggregated"},
-        {"label":"Basquetball","category":"youth_other_sports_expense","amount":-250.730189,"disclosure":"aggregated"},
-        {"label":"Beisball","category":"youth_other_sports_expense","amount":-17.247432,"disclosure":"aggregated"},
-        {"label":"Boxeo","category":"youth_other_sports_expense","amount":-21.676037,"disclosure":"aggregated"},
-        {"label":"Efi","category":"youth_other_sports_expense","amount":-25.91743,"disclosure":"aggregated"},
-        {"label":"Fitnes","category":"youth_other_sports_expense","amount":-107.08597,"disclosure":"aggregated"},
-        {"label":"Futsal","category":"youth_other_sports_expense","amount":-569.302825,"disclosure":"aggregated"},
-        {"label":"Gimnasia Artistica y Ritmica","category":"youth_other_sports_expense","amount":-189.018374,"disclosure":"aggregated"},
-        {"label":"Handball","category":"youth_other_sports_expense","amount":-248.661156,"disclosure":"aggregated"},
-        {"label":"Hockey","category":"youth_other_sports_expense","amount":-179.232651,"disclosure":"aggregated"},
-        {"label":"Judo","category":"youth_other_sports_expense","amount":-12.320021,"disclosure":"aggregated"},
-        {"label":"Natacion","category":"youth_other_sports_expense","amount":-573.953285,"disclosure":"aggregated"},
-        {"label":"Patin","category":"youth_other_sports_expense","amount":-18.688497,"disclosure":"aggregated"},
-        {"label":"Racquetball","category":"youth_other_sports_expense","amount":-1.538671,"disclosure":"aggregated"},
-        {"label":"Taekwondo","category":"youth_other_sports_expense","amount":-25.023415,"disclosure":"aggregated"},
-        {"label":"Tenis","category":"youth_other_sports_expense","amount":-377.632998,"disclosure":"aggregated"},
-        {"label":"Tenis de Mesa","category":"youth_other_sports_expense","amount":-17.851837,"disclosure":"aggregated"},
-        {"label":"Voley","category":"youth_other_sports_expense","amount":-295.855078,"disclosure":"aggregated"},
-        {"label":"Otros","category":"other_expenses","amount":-152.472642,"disclosure":"aggregated"},
-        {"label":"Departamento de Futbol Profesional","category":"wages_squad","amount":-3719.085522,"disclosure":"aggregated"},
-        {"label":"Departamento de Futbol Femenino","category":"youth_other_sports_expense","amount":-393.466979,"disclosure":"aggregated"},
-        {"label":"Departamento de Futbol Infantil","category":"youth_other_sports_expense","amount":-95.357147,"disclosure":"aggregated"},
-        {"label":"Departamento de Futbol Amateur","category":"youth_other_sports_expense","amount":-267.37636,"disclosure":"aggregated"},
-        {"label":"4- Departamento Medico","category":"admin_general_expense","amount":-163.377765,"disclosure":"aggregated"},
-        {"label":"Egresos por Instituto Educativo","category":"education_expense","amount":-2102.175189,"disclosure":"aggregated"},
-        {"label":"Egresos por Colonia de Vacaciones","category":"youth_other_sports_expense","amount":-328.551251,"disclosure":"aggregated"},
-        {"label":"Egresos Ponteveedra","category":"youth_other_sports_expense","amount":-318.710273,"disclosure":"aggregated"},
-        {"label":"Egresos Sede Social","category":"admin_general_expense","amount":-302.053794,"disclosure":"aggregated"},
-        {"label":"Egresos Campo Deportivo","category":"match_organisation_expense","amount":-869.90748,"disclosure":"aggregated"},
-        {"label":"Egresos Anexos","category":"admin_general_expense","amount":-22.15655,"disclosure":"aggregated"},
-        {"label":"Egresos Generales","category":"admin_general_expense","amount":-904.136413,"disclosure":"aggregated"},
-        {"label":"Egresos Departamento Cultural","category":"other_expenses","amount":-0.483572,"disclosure":"aggregated"},
-        {"label":"Diferencia de redondeo","category":"other_expenses","amount":0,"disclosure":"aggregated"},
-        {"label":"Sueldos al Personal","category":"admin_general_expense","amount":-503.781513,"disclosure":"aggregated"},
-        {"label":"Honorarios y Otras Retribuciones","category":"admin_general_expense","amount":-185.041197,"disclosure":"aggregated"},
-        {"label":"Servicios de Telefonia e Internet","category":"admin_general_expense","amount":-20.045398,"disclosure":"aggregated"},
-        {"label":"Provisiones, Previsiones por Juicios e Incobrables","category":"other_amortisation","amount":-379.306063,"disclosure":"aggregated"},
-        {"label":"Cargas Sociales","category":"admin_general_expense","amount":-85.062156,"disclosure":"aggregated"},
-        {"label":"Gastos Bancarios","category":"admin_general_expense","amount":-30.441852,"disclosure":"aggregated"},
-        {"label":"Gastos por Acreditacion de Tarjetas de Credito","category":"admin_general_expense","amount":-105.37378,"disclosure":"aggregated"},
-        {"label":"Movilidad y Viaticos","category":"admin_general_expense","amount":-6.055561,"disclosure":"aggregated"},
-        {"label":"Publicidad Institucional","category":"admin_general_expense","amount":-52.092171,"disclosure":"aggregated"},
-        {"label":"Gastos Varios","category":"admin_general_expense","amount":-4.597514,"disclosure":"aggregated"},
-        {"label":"Papeleria y Utiles","category":"admin_general_expense","amount":-7.879977,"disclosure":"aggregated"},
-        {"label":"Insumos Informaticos","category":"admin_general_expense","amount":-15.197506,"disclosure":"aggregated"},
-        {"label":"Franqueos, Telegramas y Correos","category":"admin_general_expense","amount":-0.169561,"disclosure":"aggregated"},
-        {"label":"Mantenimiento Infraestructura","category":"admin_general_expense","amount":-5.644784,"disclosure":"aggregated"},
-        {"label":"Impuestos / Tasas / Contribuciones","category":"admin_general_expense","amount":-336.974494,"disclosure":"aggregated"},
-        {"label":"Amortizaciones de bienes ( Anexo A )","category":"depreciation","amount":-169.580738,"disclosure":"aggregated"}
+        {
+          "label": "1- Departamento de Educacion Fisica",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -497.873922,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Basquetball Profesional",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -933.749638,
+          "disclosure": "aggregated"
+        },
+        {"label":"Basquetball","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-250.730189,"disclosure":"aggregated"},
+        {"label":"Beisball","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-17.247432,"disclosure":"aggregated"},
+        {"label":"Boxeo","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-21.676037,"disclosure":"aggregated"},
+        {"label":"Efi","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-25.91743,"disclosure":"aggregated"},
+        {"label":"Fitnes","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-107.08597,"disclosure":"aggregated"},
+        {"label":"Futsal","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-569.302825,"disclosure":"aggregated"},
+        {
+          "label": "Gimnasia Artistica y Ritmica",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -189.018374,
+          "disclosure": "aggregated"
+        },
+        {"label":"Handball","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-248.661156,"disclosure":"aggregated"},
+        {"label":"Hockey","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-179.232651,"disclosure":"aggregated"},
+        {"label":"Judo","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-12.320021,"disclosure":"aggregated"},
+        {"label":"Natacion","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-573.953285,"disclosure":"aggregated"},
+        {"label":"Patin","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-18.688497,"disclosure":"aggregated"},
+        {"label":"Racquetball","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-1.538671,"disclosure":"aggregated"},
+        {"label":"Taekwondo","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-25.023415,"disclosure":"aggregated"},
+        {"label":"Tenis","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-377.632998,"disclosure":"aggregated"},
+        {
+          "label": "Tenis de Mesa",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -17.851837,
+          "disclosure": "aggregated"
+        },
+        {"label":"Voley","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-295.855078,"disclosure":"aggregated"},
+        {"label":"Otros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-152.472642,"disclosure":"aggregated"},
+        {
+          "label": "Departamento de Futbol Profesional",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -3719.085522,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Departamento de Futbol Femenino",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -393.466979,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Departamento de Futbol Infantil",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -95.357147,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Departamento de Futbol Amateur",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -267.37636,
+          "disclosure": "aggregated"
+        },
+        {"label":"4- Departamento Medico","category":"admin_general","subcategory":"admin_general_expense","amount":-163.377765,"disclosure":"aggregated"},
+        {
+          "label": "Egresos por Instituto Educativo",
+          "category": "non_sporting_activities",
+          "subcategory": "education_expense",
+          "amount": -2102.175189,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Egresos por Colonia de Vacaciones",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -328.551251,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Egresos Ponteveedra",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -318.710273,
+          "disclosure": "aggregated"
+        },
+        {"label":"Egresos Sede Social","category":"admin_general","subcategory":"admin_general_expense","amount":-302.053794,"disclosure":"aggregated"},
+        {
+          "label": "Egresos Campo Deportivo",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -869.90748,
+          "disclosure": "aggregated"
+        },
+        {"label":"Egresos Anexos","category":"admin_general","subcategory":"admin_general_expense","amount":-22.15655,"disclosure":"aggregated"},
+        {"label":"Egresos Generales","category":"admin_general","subcategory":"admin_general_expense","amount":-904.136413,"disclosure":"aggregated"},
+        {
+          "label": "Egresos Departamento Cultural",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.483572,
+          "disclosure": "aggregated"
+        },
+        {"label":"Diferencia de redondeo","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Sueldos al Personal","category":"admin_general","subcategory":"admin_general_expense","amount":-503.781513,"disclosure":"aggregated"},
+        {
+          "label": "Honorarios y Otras Retribuciones",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -185.041197,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios de Telefonia e Internet",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -20.045398,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Provisiones, Previsiones por Juicios e Incobrables",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -379.306063,
+          "disclosure": "aggregated"
+        },
+        {"label":"Cargas Sociales","category":"admin_general","subcategory":"admin_general_expense","amount":-85.062156,"disclosure":"aggregated"},
+        {"label":"Gastos Bancarios","category":"admin_general","subcategory":"admin_general_expense","amount":-30.441852,"disclosure":"aggregated"},
+        {
+          "label": "Gastos por Acreditacion de Tarjetas de Credito",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -105.37378,
+          "disclosure": "aggregated"
+        },
+        {"label":"Movilidad y Viaticos","category":"admin_general","subcategory":"admin_general_expense","amount":-6.055561,"disclosure":"aggregated"},
+        {"label":"Publicidad Institucional","category":"admin_general","subcategory":"admin_general_expense","amount":-52.092171,"disclosure":"aggregated"},
+        {"label":"Gastos Varios","category":"admin_general","subcategory":"admin_general_expense","amount":-4.597514,"disclosure":"aggregated"},
+        {"label":"Papeleria y Utiles","category":"admin_general","subcategory":"admin_general_expense","amount":-7.879977,"disclosure":"aggregated"},
+        {"label":"Insumos Informaticos","category":"admin_general","subcategory":"admin_general_expense","amount":-15.197506,"disclosure":"aggregated"},
+        {
+          "label": "Franqueos, Telegramas y Correos",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.169561,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento Infraestructura",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.644784,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Impuestos / Tasas / Contribuciones",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -336.974494,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortizaciones de bienes ( Anexo A )","category":"depreciation","subcategory":"depreciation","amount":-169.580738,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":497.688217,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":16088.001906,"expenses":15909.914626,"net_result":675.775497}

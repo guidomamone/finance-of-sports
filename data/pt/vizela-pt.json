@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "PT",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -52,16 +53,28 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
-        {"label":"Vendas e Serviços Prestados","category":"lump_football_operations","amount":5.112926,"disclosure":"aggregated"},
-        {"label":"Subsídios à exploração","category":"other_income","amount":0.343644,"disclosure":"aggregated"},
-        {"label":"Outros Rendimentos","category":"other_income","amount":0.345797,"disclosure":"aggregated"}
+        {"label":"Vendas e Serviços Prestados","category":"undisclosed","subcategory":"lump_football_operations","amount":5.112926,"disclosure":"aggregated"},
+        {"label":"Subsídios à exploração","category":"other_revenue","subcategory":"other_income","amount":0.343644,"disclosure":"aggregated"},
+        {"label":"Outros Rendimentos","category":"other_revenue","subcategory":"other_income","amount":0.345797,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Custo Merc Vend e Matérias Consumidas","category":"other_expenses","amount":-0.037522,"disclosure":"aggregated"},
-        {"label":"Fornecimentos e Serviços Externos","category":"admin_general_expense","amount":-1.87259,"disclosure":"aggregated"},
-        {"label":"Gastos com Pessoal","category":"wages_squad","amount":-6.180784,"disclosure":"aggregated"},
-        {"label":"Gastos de Depreciação e Amortização","category":"depreciation","amount":-0.088132,"disclosure":"aggregated"},
-        {"label":"Outros Gastos e Perdas","category":"other_expenses","amount":-0.044629,"disclosure":"aggregated"}
+        {
+          "label": "Custo Merc Vend e Matérias Consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.037522,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Fornecimentos e Serviços Externos",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.87259,
+          "disclosure": "aggregated"
+        },
+        {"label":"Gastos com Pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-6.180784,"disclosure":"aggregated"},
+        {"label":"Gastos de Depreciação e Amortização","category":"depreciation","subcategory":"depreciation","amount":-0.088132,"disclosure":"aggregated"},
+        {"label":"Outros Gastos e Perdas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.044629,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000004,"tax":-0.008623,"gross_debt":0,"cash":0.479759},
       "official_totals": {"revenue":5.802367,"expenses":8.223657,"net_result":-2.429918},
@@ -89,46 +102,84 @@
       "management_id": null,
       "fx": {"ref":"EUR@2023-06-30"},
       "revenue": [
-        {"label":"Quotizações","category":"member_dues","amount":0.047829,"disclosure":"aggregated"},
-        {"label":"Receitas de bilheteira","category":"matchday_competition","amount":0.191193,"disclosure":"aggregated"},
-        {"label":"Patrocínios, publicidade e corporate","category":"sponsorship_commercial","amount":0.574068,"disclosure":"aggregated"},
-        {"label":"Receitas de televisão","category":"broadcasting","amount":3.75,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":0.069298,"disclosure":"aggregated"},
-        {"label":"Competições da UEFA e nacionais","category":"competition_bonus","amount":0.250431,"disclosure":"aggregated"},
-        {"label":"Cedência de jogadores","category":"player_sales","amount":0.0715,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_income","amount":0.211456,"disclosure":"aggregated"},
-        {"label":"Município de Vizela","category":"other_income","amount":0.15,"disclosure":"aggregated"},
-        {"label":"I.E.F.P","category":"other_income","amount":0.003885,"disclosure":"aggregated"},
-        {"label":"Outras entidades","category":"other_income","amount":0.034489,"disclosure":"aggregated"},
-        {"label":"Outros rendimentos e ganhos","category":"other_income","amount":0.459945,"disclosure":"aggregated"},
-        {"label":"Gastos/rendimentos com transações de passes de atletas","category":"player_sales","amount":0.945568,"disclosure":"aggregated"}
+        {"label":"Quotizações","category":"membership","subcategory":"member_dues","amount":0.047829,"disclosure":"aggregated"},
+        {"label":"Receitas de bilheteira","category":"matchday","subcategory":"matchday_competition","amount":0.191193,"disclosure":"aggregated"},
+        {
+          "label": "Patrocínios, publicidade e corporate",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.574068,
+          "disclosure": "aggregated"
+        },
+        {"label":"Receitas de televisão","category":"media_rights","subcategory":"broadcasting","amount":3.75,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.069298,"disclosure":"aggregated"},
+        {"label":"Competições da UEFA e nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.250431,"disclosure":"aggregated"},
+        {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":0.0715,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.211456,"disclosure":"aggregated"},
+        {"label":"Município de Vizela","category":"other_revenue","subcategory":"other_income","amount":0.15,"disclosure":"aggregated"},
+        {"label":"I.E.F.P","category":"other_revenue","subcategory":"other_income","amount":0.003885,"disclosure":"aggregated"},
+        {"label":"Outras entidades","category":"other_revenue","subcategory":"other_income","amount":0.034489,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos e ganhos","category":"other_revenue","subcategory":"other_income","amount":0.459945,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/rendimentos com transações de passes de atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 0.945568,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.014299,"disclosure":"aggregated"},
-        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.097067,"disclosure":"aggregated"},
-        {"label":"Serviços especializados","category":"admin_general_expense","amount":-1.008132,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.137588,"disclosure":"aggregated"},
-        {"label":"Energia e fluídos","category":"admin_general_expense","amount":-0.061741,"disclosure":"aggregated"},
-        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.546127,"disclosure":"aggregated"},
-        {"label":"Serviços diversos","category":"other_expenses","amount":-0.688209,"disclosure":"aggregated"},
-        {"label":"Remunerações órgãos sociais","category":"admin_general_expense","amount":-0.387131,"disclosure":"aggregated"},
-        {"label":"Remunerações pessoal","category":"wages_squad","amount":-7.643369,"disclosure":"aggregated"},
-        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.885047,"disclosure":"aggregated"},
-        {"label":"Seguros","category":"admin_general_expense","amount":-0.826688,"disclosure":"aggregated"},
-        {"label":"Outros gastos com pessoal","category":"wages_squad","amount":-0.057409,"disclosure":"aggregated"},
-        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":-0.130307,"disclosure":"aggregated"},
-        {"label":"Impostos","category":"admin_general_expense","amount":-0.004703,"disclosure":"aggregated"},
-        {"label":"Multas e outras penalidades","category":"other_expenses","amount":-0.067257,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.00887,"disclosure":"aggregated"},
+        {
+          "label": "Custo das mercadorias vendidas e das matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.014299,
+          "disclosure": "aggregated"
+        },
+        {"label":"Subcontratos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.097067,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-1.008132,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.137588,"disclosure":"aggregated"},
+        {"label":"Energia e fluídos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.061741,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações, estadas e transportes",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.546127,
+          "disclosure": "aggregated"
+        },
+        {"label":"Serviços diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.688209,"disclosure":"aggregated"},
+        {"label":"Remunerações órgãos sociais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.387131,"disclosure":"aggregated"},
+        {"label":"Remunerações pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-7.643369,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.885047,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.826688,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-0.057409,"disclosure":"aggregated"},
+        {
+          "label": "Imparidade de dívidas a receber (perdas/reversões)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.130307,
+          "disclosure": "aggregated"
+        },
+        {"label":"Impostos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.004703,"disclosure":"aggregated"},
+        {
+          "label": "Multas e outras penalidades",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.067257,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.00887,"disclosure":"aggregated"},
         {
           "label": "Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.111159,
           "disclosure": "aggregated"
         },
         {
           "label": "Gastos/reversões de depreciação e de amortização com passes de jogadores",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -0.093776,
           "disclosure": "aggregated"
         }
@@ -146,50 +197,94 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Quotizações","category":"member_dues","amount":0.080496,"disclosure":"aggregated"},
-        {"label":"Receitas de bilheteira","category":"matchday_competition","amount":0.215379,"disclosure":"aggregated"},
-        {"label":"Patrocínios, publicidade e corporate","category":"sponsorship_commercial","amount":0.869453,"disclosure":"aggregated"},
-        {"label":"Receitas de televisão","category":"broadcasting","amount":4.2,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":0.064268,"disclosure":"aggregated"},
-        {"label":"Competições da UEFA e nacionais","category":"competition_bonus","amount":0.076202,"disclosure":"aggregated"},
-        {"label":"Cedência de jogadores","category":"player_sales","amount":1.526281,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_income","amount":0.211303,"disclosure":"aggregated"},
-        {"label":"Município de Vizela","category":"other_income","amount":0.08,"disclosure":"aggregated"},
-        {"label":"I.E.F.P","category":"other_income","amount":0.01877,"disclosure":"aggregated"},
-        {"label":"Outras entidades (UEFA)","category":"other_income","amount":0.376007,"disclosure":"aggregated"},
-        {"label":"Outros rendimentos suplementares","category":"other_income","amount":0.03614,"disclosure":"aggregated"},
-        {"label":"Subsídio deslocação","category":"other_income","amount":0.004061,"disclosure":"aggregated"},
-        {"label":"Distribuição de lucros Placard","category":"other_income","amount":0.405422,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_income","amount":0.03309,"disclosure":"aggregated"},
-        {"label":"Gastos/rendimentos com transações de passes de atletas","category":"player_sales","amount":1.1725,"disclosure":"aggregated"}
+        {"label":"Quotizações","category":"membership","subcategory":"member_dues","amount":0.080496,"disclosure":"aggregated"},
+        {"label":"Receitas de bilheteira","category":"matchday","subcategory":"matchday_competition","amount":0.215379,"disclosure":"aggregated"},
+        {
+          "label": "Patrocínios, publicidade e corporate",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.869453,
+          "disclosure": "aggregated"
+        },
+        {"label":"Receitas de televisão","category":"media_rights","subcategory":"broadcasting","amount":4.2,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.064268,"disclosure":"aggregated"},
+        {"label":"Competições da UEFA e nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.076202,"disclosure":"aggregated"},
+        {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":1.526281,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.211303,"disclosure":"aggregated"},
+        {"label":"Município de Vizela","category":"other_revenue","subcategory":"other_income","amount":0.08,"disclosure":"aggregated"},
+        {"label":"I.E.F.P","category":"other_revenue","subcategory":"other_income","amount":0.01877,"disclosure":"aggregated"},
+        {"label":"Outras entidades (UEFA)","category":"other_revenue","subcategory":"other_income","amount":0.376007,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.03614,"disclosure":"aggregated"},
+        {"label":"Subsídio deslocação","category":"other_revenue","subcategory":"other_income","amount":0.004061,"disclosure":"aggregated"},
+        {"label":"Distribuição de lucros Placard","category":"other_revenue","subcategory":"other_income","amount":0.405422,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.03309,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/rendimentos com transações de passes de atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1.1725,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.015509,"disclosure":"aggregated"},
-        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.051032,"disclosure":"aggregated"},
-        {"label":"Serviços especializados","category":"admin_general_expense","amount":-0.899998,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.174692,"disclosure":"aggregated"},
-        {"label":"Energia e fluídos","category":"admin_general_expense","amount":-0.093673,"disclosure":"aggregated"},
-        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.379207,"disclosure":"aggregated"},
-        {"label":"Serviços diversos","category":"other_expenses","amount":-1.226358,"disclosure":"aggregated"},
-        {"label":"Remunerações orgãos sociais","category":"admin_general_expense","amount":-0.346173,"disclosure":"aggregated"},
-        {"label":"Remunerações pessoal","category":"wages_squad","amount":-5.511883,"disclosure":"aggregated"},
-        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.559072,"disclosure":"aggregated"},
-        {"label":"Seguros","category":"admin_general_expense","amount":-0.646125,"disclosure":"aggregated"},
-        {"label":"Outros gastos com pessoal","category":"wages_squad","amount":-0.098918,"disclosure":"aggregated"},
-        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":0,"disclosure":"aggregated"},
-        {"label":"Provisões (aumentos / reduções)","category":"admin_general_expense","amount":-0.01875,"disclosure":"aggregated"},
-        {"label":"Impostos","category":"admin_general_expense","amount":-0.006664,"disclosure":"aggregated"},
-        {"label":"Multas e outras penalidades","category":"other_expenses","amount":-0.111976,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.004635,"disclosure":"aggregated"},
+        {
+          "label": "Custo das mercadorias vendidas e das matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.015509,
+          "disclosure": "aggregated"
+        },
+        {"label":"Subcontratos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.051032,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-0.899998,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.174692,"disclosure":"aggregated"},
+        {"label":"Energia e fluídos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.093673,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações, estadas e transportes",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.379207,
+          "disclosure": "aggregated"
+        },
+        {"label":"Serviços diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.226358,"disclosure":"aggregated"},
+        {"label":"Remunerações orgãos sociais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.346173,"disclosure":"aggregated"},
+        {"label":"Remunerações pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-5.511883,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.559072,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.646125,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-0.098918,"disclosure":"aggregated"},
+        {
+          "label": "Imparidade de dívidas a receber (perdas/reversões)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": 0,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Provisões (aumentos / reduções)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.01875,
+          "disclosure": "aggregated"
+        },
+        {"label":"Impostos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.006664,"disclosure":"aggregated"},
+        {
+          "label": "Multas e outras penalidades",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.111976,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.004635,"disclosure":"aggregated"},
         {
           "label": "Gastos/reversões de depreciação e de amortização (excluindo passes de jogadores)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.122524,
           "disclosure": "aggregated"
         },
         {
           "label": "Gastos/reversões de depreciação e de amortização com passes de jogadores",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -0.125833,
           "disclosure": "aggregated"
         }
@@ -209,51 +304,101 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Quotizações","category":"member_dues","amount":0.03312,"disclosure":"aggregated"},
-        {"label":"Receitas de bilheteira","category":"matchday_competition","amount":0.023271,"disclosure":"aggregated"},
-        {"label":"Patrocínios, publicidade e corporate","category":"sponsorship_commercial","amount":0.245837,"disclosure":"aggregated"},
-        {"label":"Receitas de televisão","category":"broadcasting","amount":0.45,"disclosure":"aggregated"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":0.031545,"disclosure":"aggregated"},
-        {"label":"Competições da UEFA e nacionais","category":"competition_bonus","amount":0.019065,"disclosure":"aggregated"},
-        {"label":"Cedência de jogadores","category":"player_sales","amount":0.524,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_income","amount":0.17218,"disclosure":"aggregated"},
-        {"label":"Município de Vizela","category":"other_income","amount":0.15,"disclosure":"aggregated"},
-        {"label":"I.E.F.P","category":"other_income","amount":0.00511,"disclosure":"aggregated"},
-        {"label":"Outras entidades (UEFA/FPF)","category":"other_income","amount":0.359408,"disclosure":"aggregated"},
-        {"label":"Outros rendimentos suplementares","category":"other_income","amount":0.0055,"disclosure":"aggregated"},
-        {"label":"Subsídio deslocação","category":"other_income","amount":0.005794,"disclosure":"aggregated"},
-        {"label":"Distribuição de lucros Placard eapostas on-line","category":"other_income","amount":0.358893,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_income","amount":0.019863,"disclosure":"aggregated"},
-        {"label":"Gastos/rendimentos com transações de passes de atletas","category":"player_sales","amount":4.05125,"disclosure":"aggregated"}
+        {"label":"Quotizações","category":"membership","subcategory":"member_dues","amount":0.03312,"disclosure":"aggregated"},
+        {"label":"Receitas de bilheteira","category":"matchday","subcategory":"matchday_competition","amount":0.023271,"disclosure":"aggregated"},
+        {
+          "label": "Patrocínios, publicidade e corporate",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 0.245837,
+          "disclosure": "aggregated"
+        },
+        {"label":"Receitas de televisão","category":"media_rights","subcategory":"broadcasting","amount":0.45,"disclosure":"aggregated"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":0.031545,"disclosure":"aggregated"},
+        {"label":"Competições da UEFA e nacionais","category":"prize_money","subcategory":"competition_bonus","amount":0.019065,"disclosure":"aggregated"},
+        {"label":"Cedência de jogadores","category":"player_transfers","subcategory":"player_sales","amount":0.524,"disclosure":"aggregated"},
+        {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.17218,"disclosure":"aggregated"},
+        {"label":"Município de Vizela","category":"other_revenue","subcategory":"other_income","amount":0.15,"disclosure":"aggregated"},
+        {"label":"I.E.F.P","category":"other_revenue","subcategory":"other_income","amount":0.00511,"disclosure":"aggregated"},
+        {"label":"Outras entidades (UEFA/FPF)","category":"other_revenue","subcategory":"other_income","amount":0.359408,"disclosure":"aggregated"},
+        {"label":"Outros rendimentos suplementares","category":"other_revenue","subcategory":"other_income","amount":0.0055,"disclosure":"aggregated"},
+        {"label":"Subsídio deslocação","category":"other_revenue","subcategory":"other_income","amount":0.005794,"disclosure":"aggregated"},
+        {
+          "label": "Distribuição de lucros Placard eapostas on-line",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.358893,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros","category":"other_revenue","subcategory":"other_income","amount":0.019863,"disclosure":"aggregated"},
+        {
+          "label": "Gastos/rendimentos com transações de passes de atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 4.05125,
+          "disclosure": "aggregated"
+        }
       ],
       "expenses": [
-        {"label":"Custo das mercadorias vendidas e das matérias consumidas","category":"other_expenses","amount":-0.010615,"disclosure":"aggregated"},
-        {"label":"Subcontratos","category":"admin_general_expense","amount":-0.063588,"disclosure":"aggregated"},
-        {"label":"Serviços especializados","category":"admin_general_expense","amount":-0.597711,"disclosure":"aggregated"},
-        {"label":"Materiais","category":"admin_general_expense","amount":-0.088427,"disclosure":"aggregated"},
-        {"label":"Energia e fluidos","category":"admin_general_expense","amount":-0.067073,"disclosure":"aggregated"},
-        {"label":"Deslocações, estadas e transportes","category":"match_organisation_expense","amount":-0.296539,"disclosure":"aggregated"},
-        {"label":"Serviços diversos","category":"other_expenses","amount":-0.86529,"disclosure":"aggregated"},
-        {"label":"Remunerações órgãos sociais","category":"admin_general_expense","amount":-0.307992,"disclosure":"aggregated"},
-        {"label":"Remunerações pessoal","category":"wages_squad","amount":-3.784123,"disclosure":"aggregated"},
-        {"label":"Indemnizações","category":"wages_squad","amount":-0.001963,"disclosure":"aggregated"},
-        {"label":"Encargos sobre remunerações","category":"wages_squad","amount":-0.401456,"disclosure":"aggregated"},
-        {"label":"Seguros","category":"admin_general_expense","amount":-0.35309,"disclosure":"aggregated"},
-        {"label":"Outros gastos com pessoal","category":"wages_squad","amount":-0.059831,"disclosure":"aggregated"},
-        {"label":"Imparidade de dívidas a receber (perdas/reversões)","category":"other_expenses","amount":0,"disclosure":"aggregated"},
-        {"label":"Provisões (aumentos / reduções)","category":"admin_general_expense","amount":-0.01385,"disclosure":"aggregated"},
-        {"label":"Impostos","category":"admin_general_expense","amount":-0.001956,"disclosure":"aggregated"},
-        {"label":"Multas e outras penalidades","category":"other_expenses","amount":-0.174831,"disclosure":"aggregated"},
-        {"label":"Outros","category":"other_expenses","amount":-0.009381,"disclosure":"aggregated"},
+        {
+          "label": "Custo das mercadorias vendidas e das matérias consumidas",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.010615,
+          "disclosure": "aggregated"
+        },
+        {"label":"Subcontratos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.063588,"disclosure":"aggregated"},
+        {"label":"Serviços especializados","category":"admin_general","subcategory":"admin_general_expense","amount":-0.597711,"disclosure":"aggregated"},
+        {"label":"Materiais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.088427,"disclosure":"aggregated"},
+        {"label":"Energia e fluidos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.067073,"disclosure":"aggregated"},
+        {
+          "label": "Deslocações, estadas e transportes",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.296539,
+          "disclosure": "aggregated"
+        },
+        {"label":"Serviços diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.86529,"disclosure":"aggregated"},
+        {"label":"Remunerações órgãos sociais","category":"admin_general","subcategory":"admin_general_expense","amount":-0.307992,"disclosure":"aggregated"},
+        {"label":"Remunerações pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-3.784123,"disclosure":"aggregated"},
+        {"label":"Indemnizações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.001963,"disclosure":"aggregated"},
+        {"label":"Encargos sobre remunerações","category":"first_team_staff","subcategory":"wages_squad","amount":-0.401456,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-0.35309,"disclosure":"aggregated"},
+        {"label":"Outros gastos com pessoal","category":"first_team_staff","subcategory":"wages_squad","amount":-0.059831,"disclosure":"aggregated"},
+        {
+          "label": "Imparidade de dívidas a receber (perdas/reversões)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": 0,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Provisões (aumentos / reduções)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.01385,
+          "disclosure": "aggregated"
+        },
+        {"label":"Impostos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.001956,"disclosure":"aggregated"},
+        {
+          "label": "Multas e outras penalidades",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.174831,
+          "disclosure": "aggregated"
+        },
+        {"label":"Outros","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.009381,"disclosure":"aggregated"},
         {
           "label": "Gastos/reversões de depreciação e de amortização(excluindo passes de jogadores)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -0.12877,
           "disclosure": "aggregated"
         },
         {
           "label": "Gastos/reversões de depreciação e de amortização com passes de jogadores",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -0.014,
           "disclosure": "aggregated"
         }

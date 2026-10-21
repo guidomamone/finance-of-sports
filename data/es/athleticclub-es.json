@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "ES",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -35,49 +36,90 @@
       "revenue": [
         {
           "label": "Ingresos por competición",
-          "category": "competition_bonus",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
           "amount": 38.981106,
           "disclosure": "detailed",
           "items": [["Liga",3.725443],["Copa",3.044278],["UEFA",31.99281],["Otros",0.218576]]
         },
-        {"label":"Ingresos por retransmisión","category":"broadcasting","amount":72.713424,"disclosure":"detailed"},
-        {"label":"Ingresos de comercialización y publicidad","category":"sponsorship_commercial","amount":14.675772,"disclosure":"detailed"},
-        {"label":"Ingresos San Mamés VIP Area","category":"stadium_other","amount":8.847445,"disclosure":"detailed"},
+        {"label":"Ingresos por retransmisión","category":"media_rights","subcategory":"broadcasting","amount":72.713424,"disclosure":"detailed"},
+        {
+          "label": "Ingresos de comercialización y publicidad",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 14.675772,
+          "disclosure": "detailed"
+        },
+        {"label":"Ingresos San Mamés VIP Area","category":"venue","subcategory":"stadium_other","amount":8.847445,"disclosure":"detailed"},
         {
           "label": "Eventos y otros (incluye la final de la UEFA Europa League en San Mamés)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 4.244512,
           "disclosure": "detailed"
         },
-        {"label":"Ingresos por abonados y socios","category":"season_tickets","amount":26.937099,"disclosure":"detailed"},
-        {"label":"Otros ingresos de explotación","category":"other_income","amount":3.922252,"disclosure":"detailed"},
-        {"label":"Imputación de subvenciones de inmovilizado no financiero y otras","category":"other_income","amount":0.157316,"disclosure":"detailed"},
-        {"label":"Otros Resultados","category":"other_income","amount":1.030427,"disclosure":"detailed"}
+        {"label":"Ingresos por abonados y socios","category":"season_tickets","subcategory":"season_tickets","amount":26.937099,"disclosure":"detailed"},
+        {"label":"Otros ingresos de explotación","category":"other_revenue","subcategory":"other_income","amount":3.922252,"disclosure":"detailed"},
+        {
+          "label": "Imputación de subvenciones de inmovilizado no financiero y otras",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.157316,
+          "disclosure": "detailed"
+        },
+        {"label":"Otros Resultados","category":"other_revenue","subcategory":"other_income","amount":1.030427,"disclosure":"detailed"}
       ],
       "expenses": [
         {
           "label": "Variación de existencias de productos terminados y en curso de fabricación",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -0.007075,
           "disclosure": "detailed"
         },
-        {"label":"Aprovisionamientos (otros consumos y gastos externos)","category":"admin_general_expense","amount":-1.479335,"disclosure":"detailed"},
-        {"label":"Sueldos y salarios plantilla deportiva","category":"wages_squad","amount":-100.826491,"disclosure":"detailed"},
-        {"label":"Otros Sueldos, salarios y asimilados","category":"admin_general_expense","amount":-16.37518,"disclosure":"detailed"},
-        {"label":"Cargas sociales","category":"wages_squad","amount":-4.870866,"disclosure":"detailed"},
-        {"label":"Servicios exteriores","category":"admin_general_expense","amount":-15.926377,"disclosure":"detailed"},
-        {"label":"Tributos","category":"admin_general_expense","amount":-0.431788,"disclosure":"detailed"},
-        {"label":"Desplazamientos","category":"match_organisation_expense","amount":-4.222025,"disclosure":"detailed"},
+        {
+          "label": "Aprovisionamientos (otros consumos y gastos externos)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.479335,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Sueldos y salarios plantilla deportiva",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -100.826491,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Otros Sueldos, salarios y asimilados",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -16.37518,
+          "disclosure": "detailed"
+        },
+        {"label":"Cargas sociales","category":"first_team_staff","subcategory":"wages_squad","amount":-4.870866,"disclosure":"detailed"},
+        {"label":"Servicios exteriores","category":"admin_general","subcategory":"admin_general_expense","amount":-15.926377,"disclosure":"detailed"},
+        {"label":"Tributos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.431788,"disclosure":"detailed"},
+        {"label":"Desplazamientos","category":"match_operations","subcategory":"match_organisation_expense","amount":-4.222025,"disclosure":"detailed"},
         {
           "label": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": 0.260109,
           "disclosure": "detailed"
         },
-        {"label":"Otros gastos de gestión corriente","category":"admin_general_expense","amount":-10.763129,"disclosure":"detailed"},
+        {
+          "label": "Otros gastos de gestión corriente",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -10.763129,
+          "disclosure": "detailed"
+        },
         {
           "label": "Amortización del inmovilizado (activos fijos, sin fichajes por política de cantera)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -11.089739,
           "disclosure": "detailed"
         }

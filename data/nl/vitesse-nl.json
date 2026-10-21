@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "NL",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,28 +32,34 @@
       "management_id": null,
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":3.159999,"disclosure":"aggregated"},
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":6.61576,"disclosure":"aggregated"},
-        {"label":"Media gerelateerde baten","category":"broadcasting","amount":6.149612,"disclosure":"aggregated"},
-        {"label":"Prijzengeld","category":"competition_bonus","amount":1.067324,"disclosure":"aggregated"},
-        {"label":"Horeca","category":"other_income","amount":0.655389,"disclosure":"aggregated"},
-        {"label":"Merchandise","category":"sponsorship_commercial","amount":0.749809,"disclosure":"aggregated"},
-        {"label":"Subsidies en giften","category":"other_income","amount":0.245589,"disclosure":"aggregated"},
-        {"label":"Overige baten","category":"other_income","amount":1.469442,"disclosure":"aggregated"},
-        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":1.988774,"disclosure":"aggregated"}
+        {"label":"Wedstrijdbaten","category":"matchday","subcategory":"matchday_competition","amount":3.159999,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":6.61576,"disclosure":"aggregated"},
+        {"label":"Media gerelateerde baten","category":"media_rights","subcategory":"broadcasting","amount":6.149612,"disclosure":"aggregated"},
+        {"label":"Prijzengeld","category":"prize_money","subcategory":"competition_bonus","amount":1.067324,"disclosure":"aggregated"},
+        {"label":"Horeca","category":"other_revenue","subcategory":"other_income","amount":0.655389,"disclosure":"aggregated"},
+        {"label":"Merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":0.749809,"disclosure":"aggregated"},
+        {"label":"Subsidies en giften","category":"other_revenue","subcategory":"other_income","amount":0.245589,"disclosure":"aggregated"},
+        {"label":"Overige baten","category":"other_revenue","subcategory":"other_income","amount":1.469442,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_transfers","subcategory":"player_sales","amount":1.988774,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Lonen","category":"wages_squad","amount":-13.283424,"disclosure":"aggregated"},
-        {"label":"Sociale lasten","category":"wages_squad","amount":-1.161577,"disclosure":"aggregated"},
-        {"label":"Pensioenlasten","category":"wages_squad","amount":-0.147177,"disclosure":"aggregated"},
-        {"label":"Bedrijfsgebouwen en -terreinen","category":"depreciation","amount":-0.484191,"disclosure":"aggregated"},
-        {"label":"Inventarissen","category":"depreciation","amount":-0.181829,"disclosure":"aggregated"},
-        {"label":"Overige personeelskosten","category":"admin_general_expense","amount":-1.098869,"disclosure":"aggregated"},
-        {"label":"Huisvestingskosten","category":"admin_general_expense","amount":-4.830901,"disclosure":"aggregated"},
-        {"label":"Wedstrijd- en trainingskosten","category":"match_organisation_expense","amount":-2.460514,"disclosure":"aggregated"},
-        {"label":"Verkoopkosten","category":"admin_general_expense","amount":-1.897837,"disclosure":"aggregated"},
-        {"label":"Horeca","category":"other_expenses","amount":-0.408692,"disclosure":"aggregated"},
-        {"label":"Algemene kosten","category":"admin_general_expense","amount":-3.177009,"disclosure":"aggregated"}
+        {"label":"Lonen","category":"first_team_staff","subcategory":"wages_squad","amount":-13.283424,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"first_team_staff","subcategory":"wages_squad","amount":-1.161577,"disclosure":"aggregated"},
+        {"label":"Pensioenlasten","category":"first_team_staff","subcategory":"wages_squad","amount":-0.147177,"disclosure":"aggregated"},
+        {"label":"Bedrijfsgebouwen en -terreinen","category":"depreciation","subcategory":"depreciation","amount":-0.484191,"disclosure":"aggregated"},
+        {"label":"Inventarissen","category":"depreciation","subcategory":"depreciation","amount":-0.181829,"disclosure":"aggregated"},
+        {"label":"Overige personeelskosten","category":"admin_general","subcategory":"admin_general_expense","amount":-1.098869,"disclosure":"aggregated"},
+        {"label":"Huisvestingskosten","category":"admin_general","subcategory":"admin_general_expense","amount":-4.830901,"disclosure":"aggregated"},
+        {
+          "label": "Wedstrijd- en trainingskosten",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.460514,
+          "disclosure": "aggregated"
+        },
+        {"label":"Verkoopkosten","category":"admin_general","subcategory":"admin_general_expense","amount":-1.897837,"disclosure":"aggregated"},
+        {"label":"Horeca","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.408692,"disclosure":"aggregated"},
+        {"label":"Algemene kosten","category":"admin_general","subcategory":"admin_general_expense","amount":-3.177009,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.770651,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":22.101698,"expenses":29.13202,"net_result":-11.800973},

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "AR",
     "reporting_currency": "ARS",
     "fiscal_year_start": "09-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -44,57 +45,92 @@
       "management_id": "donofrio",
       "fx": {"rate":97.54,"source":"document_close"},
       "revenue": [
-        {"label":"Venta, préstamos de jugadores, derechos de formación y otros","category":"player_sales","amount":3101.042241,"disclosure":"detailed"},
-        {"label":"Televisión","category":"broadcasting","amount":2280.386274,"disclosure":"detailed"},
-        {"label":"Publicidad","category":"sponsorship_commercial","amount":1472.349199,"disclosure":"detailed"},
-        {"label":"Ingresos torneos nacionales e internacionales","category":"matchday_competition","amount":2.334164,"disclosure":"detailed"},
+        {
+          "label": "Venta, préstamos de jugadores, derechos de formación y otros",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 3101.042241,
+          "disclosure": "detailed"
+        },
+        {"label":"Televisión","category":"media_rights","subcategory":"broadcasting","amount":2280.386274,"disclosure":"detailed"},
+        {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":1472.349199,"disclosure":"detailed"},
+        {
+          "label": "Ingresos torneos nacionales e internacionales",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 2.334164,
+          "disclosure": "detailed"
+        },
         {
           "label": "Estadio",
-          "category": "matchday_competition",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
           "amount": 82.626908,
           "disclosure": "detailed",
           "items": [["Concesiones",57.925856],["Ingresos Museo",22.139078],["Alquileres",0],["Estacionamiento",2.561974]]
         },
         {
           "label": "Educación",
-          "category": "education",
+          "category": "non_sporting_activities",
+          "subcategory": "education",
           "amount": 323.865949,
           "disclosure": "detailed",
           "items": [["Instituto de enseñanza",237.622507],["Subsidios estatales",86.243442]]
         },
         {
           "label": "Deportes y otras actividades",
-          "category": "other_sports",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
           "amount": 78.289932,
           "disclosure": "detailed",
           "items": [["Abonos y aranceles varios",55.143608],["Ingresos varios",23.146324]]
         },
         {
           "label": "Socios",
-          "category": "member_dues",
+          "category": "membership",
+          "subcategory": "member_dues",
           "amount": 1724.654794,
           "disclosure": "detailed",
           "items": [["Cuotas sociales",1518.759652],["Somos River",205.895142]]
         }
       ],
       "expenses": [
-        {"label":"Fútbol profesional — Sueldos y cargas sociales","category":"wages_squad","amount":-524.70171,"disclosure":"detailed"},
+        {
+          "label": "Fútbol profesional — Sueldos y cargas sociales",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -524.70171,
+          "disclosure": "detailed"
+        },
         {
           "label": "Fútbol profesional — resto (sin desglosar por la fuente)",
-          "category": "lump_football_operations_expense",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
           "amount": -3955.164136,
           "disclosure": "not_disclosed"
         },
-        {"label":"Educación","category":"education_expense","amount":-279.214824,"disclosure":"detailed"},
-        {"label":"Deportes","category":"youth_other_sports_expense","amount":-327.396855,"disclosure":"detailed"},
-        {"label":"Administración","category":"admin_general_expense","amount":-592.866913,"disclosure":"detailed"},
-        {"label":"Mantenimiento e intendencia","category":"admin_general_expense","amount":-453.493513,"disclosure":"detailed"},
-        {"label":"Servicio médico y asistencial","category":"admin_general_expense","amount":-122.610607,"disclosure":"detailed"},
-        {"label":"Socios","category":"admin_general_expense","amount":-813.241513,"disclosure":"detailed"},
-        {"label":"Museo","category":"admin_general_expense","amount":-34.700833,"disclosure":"detailed"},
-        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-163.395311,"disclosure":"detailed"},
-        {"label":"Amortización de plantel de jugadores de fútbol","category":"player_amortisation","amount":-1638.724022,"disclosure":"detailed"},
-        {"label":"Amortización de software","category":"other_amortisation","amount":-12.326234,"disclosure":"detailed"}
+        {"label":"Educación","category":"non_sporting_activities","subcategory":"education_expense","amount":-279.214824,"disclosure":"detailed"},
+        {"label":"Deportes","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-327.396855,"disclosure":"detailed"},
+        {"label":"Administración","category":"admin_general","subcategory":"admin_general_expense","amount":-592.866913,"disclosure":"detailed"},
+        {"label":"Mantenimiento e intendencia","category":"admin_general","subcategory":"admin_general_expense","amount":-453.493513,"disclosure":"detailed"},
+        {
+          "label": "Servicio médico y asistencial",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -122.610607,
+          "disclosure": "detailed"
+        },
+        {"label":"Socios","category":"admin_general","subcategory":"admin_general_expense","amount":-813.241513,"disclosure":"detailed"},
+        {"label":"Museo","category":"admin_general","subcategory":"admin_general_expense","amount":-34.700833,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-163.395311,"disclosure":"detailed"},
+        {
+          "label": "Amortización de plantel de jugadores de fútbol",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1638.724022,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortización de software","category":"other_amortisation","subcategory":"other_amortisation","amount":-12.326234,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":109.215392,"tax":0,"gross_debt":1540.592415,"cash":135.932512},
       "official_totals": {"revenue":9065.549461,"expenses":8917.836473,"net_result":256.92838},
@@ -111,57 +147,92 @@
       "management_id": "brito",
       "fx": {"rate":950.5,"source":"document_close"},
       "revenue": [
-        {"label":"Venta, préstamos de jugadores, derechos de formación y otros","category":"player_sales","amount":34976.634475,"disclosure":"detailed"},
-        {"label":"Televisión","category":"broadcasting","amount":12013.955106,"disclosure":"detailed"},
-        {"label":"Publicidad","category":"sponsorship_commercial","amount":38954.967989,"disclosure":"detailed"},
-        {"label":"Ingresos torneos nacionales e internacionales","category":"matchday_competition","amount":52154.929596,"disclosure":"detailed"},
+        {
+          "label": "Venta, préstamos de jugadores, derechos de formación y otros",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 34976.634475,
+          "disclosure": "detailed"
+        },
+        {"label":"Televisión","category":"media_rights","subcategory":"broadcasting","amount":12013.955106,"disclosure":"detailed"},
+        {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":38954.967989,"disclosure":"detailed"},
+        {
+          "label": "Ingresos torneos nacionales e internacionales",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
+          "amount": 52154.929596,
+          "disclosure": "detailed"
+        },
         {
           "label": "Estadio",
-          "category": "matchday_competition",
+          "category": "matchday",
+          "subcategory": "matchday_competition",
           "amount": 13365.876231,
           "disclosure": "detailed",
           "items": [["Concesiones",2710.815855],["Ingresos Museo",4624.600585],["Alquileres",5758.259768],["Estacionamiento",272.200023]]
         },
         {
           "label": "Educación",
-          "category": "education",
+          "category": "non_sporting_activities",
+          "subcategory": "education",
           "amount": 4132.081787,
           "disclosure": "detailed",
           "items": [["Instituto de enseñanza",2926.467892],["Subsidios estatales",1205.613895]]
         },
         {
           "label": "Deportes y otras actividades",
-          "category": "other_sports",
+          "category": "other_sporting_sections",
+          "subcategory": "other_sports",
           "amount": 1519.239655,
           "disclosure": "detailed",
           "items": [["Abonos y aranceles varios",1313.513553],["Escuela de fútbol",108.42522],["Publicidad",97.300882]]
         },
         {
           "label": "Socios",
-          "category": "member_dues",
+          "category": "membership",
+          "subcategory": "member_dues",
           "amount": 49959.532899,
           "disclosure": "detailed",
           "items": [["Cuotas sociales",42123.020825],["Somos River",7803.142331],["Otras membresías",33.369743]]
         }
       ],
       "expenses": [
-        {"label":"Fútbol profesional — Sueldos y cargas sociales","category":"wages_squad","amount":-12889.436305,"disclosure":"detailed"},
+        {
+          "label": "Fútbol profesional — Sueldos y cargas sociales",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -12889.436305,
+          "disclosure": "detailed"
+        },
         {
           "label": "Fútbol profesional — resto (sin desglosar por la fuente)",
-          "category": "lump_football_operations_expense",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
           "amount": -65946.176101,
           "disclosure": "not_disclosed"
         },
-        {"label":"Educación","category":"education_expense","amount":-4112.960939,"disclosure":"detailed"},
-        {"label":"Deportes","category":"youth_other_sports_expense","amount":-5640.127149,"disclosure":"detailed"},
-        {"label":"Administración","category":"admin_general_expense","amount":-10887.796621,"disclosure":"detailed"},
-        {"label":"Mantenimiento e intendencia","category":"admin_general_expense","amount":-7235.840776,"disclosure":"detailed"},
-        {"label":"Servicio médico y asistencial","category":"admin_general_expense","amount":-875.180363,"disclosure":"detailed"},
-        {"label":"Socios","category":"admin_general_expense","amount":-10595.940947,"disclosure":"detailed"},
-        {"label":"Museo","category":"admin_general_expense","amount":-1156.148838,"disclosure":"detailed"},
-        {"label":"Depreciación de bienes de uso","category":"depreciation","amount":-5984.158778,"disclosure":"detailed"},
-        {"label":"Amortización de plantel de jugadores de fútbol","category":"player_amortisation","amount":-23916.286868,"disclosure":"detailed"},
-        {"label":"Amortización de software","category":"other_amortisation","amount":-434.744044,"disclosure":"detailed"}
+        {"label":"Educación","category":"non_sporting_activities","subcategory":"education_expense","amount":-4112.960939,"disclosure":"detailed"},
+        {"label":"Deportes","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-5640.127149,"disclosure":"detailed"},
+        {"label":"Administración","category":"admin_general","subcategory":"admin_general_expense","amount":-10887.796621,"disclosure":"detailed"},
+        {"label":"Mantenimiento e intendencia","category":"admin_general","subcategory":"admin_general_expense","amount":-7235.840776,"disclosure":"detailed"},
+        {
+          "label": "Servicio médico y asistencial",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -875.180363,
+          "disclosure": "detailed"
+        },
+        {"label":"Socios","category":"admin_general","subcategory":"admin_general_expense","amount":-10595.940947,"disclosure":"detailed"},
+        {"label":"Museo","category":"admin_general","subcategory":"admin_general_expense","amount":-1156.148838,"disclosure":"detailed"},
+        {"label":"Depreciación de bienes de uso","category":"depreciation","subcategory":"depreciation","amount":-5984.158778,"disclosure":"detailed"},
+        {
+          "label": "Amortización de plantel de jugadores de fútbol",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -23916.286868,
+          "disclosure": "detailed"
+        },
+        {"label":"Amortización de software","category":"other_amortisation","subcategory":"other_amortisation","amount":-434.744044,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1543.098828,"tax":0,"gross_debt":27487.059205,"cash":70.900528},
       "official_totals": {"revenue":207077.217738,"expenses":149674.797729,"net_result":58945.518837},

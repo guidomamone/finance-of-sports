@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -39,33 +40,36 @@
       "management_id": "actual",
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Spielbetrieb","category":"matchday_competition","amount":25.56,"disclosure":"detailed"},
-        {"label":"Werbung","category":"sponsorship_commercial","amount":42.637,"disclosure":"detailed"},
-        {"label":"Fernseh- u. Hörfunkverwertung","category":"broadcasting","amount":56.83,"disclosure":"detailed"},
-        {"label":"Transfer","category":"player_sales","amount":3.232,"disclosure":"detailed"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":15.098,"disclosure":"detailed"},
-        {"label":"Catering","category":"stadium_other","amount":3.667,"disclosure":"detailed"},
-        {"label":"Sonstige","category":"other_income","amount":8.291,"disclosure":"detailed"},
-        {"label":"sonstige betriebliche Erträge","category":"other_income","amount":3.656789,"disclosure":"detailed"}
+        {"label":"Spielbetrieb","category":"matchday","subcategory":"matchday_competition","amount":25.56,"disclosure":"detailed"},
+        {"label":"Werbung","category":"commercial","subcategory":"sponsorship_commercial","amount":42.637,"disclosure":"detailed"},
+        {"label":"Fernseh- u. Hörfunkverwertung","category":"media_rights","subcategory":"broadcasting","amount":56.83,"disclosure":"detailed"},
+        {"label":"Transfer","category":"player_transfers","subcategory":"player_sales","amount":3.232,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":15.098,"disclosure":"detailed"},
+        {"label":"Catering","category":"venue","subcategory":"stadium_other","amount":3.667,"disclosure":"detailed"},
+        {"label":"Sonstige","category":"other_revenue","subcategory":"other_income","amount":8.291,"disclosure":"detailed"},
+        {"label":"sonstige betriebliche Erträge","category":"other_revenue","subcategory":"other_income","amount":3.656789,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Materialaufwand","category":"other_expenses","amount":-10.945362,"disclosure":"detailed"},
+        {"label":"Materialaufwand","category":"other_operating_expenses","subcategory":"other_expenses","amount":-10.945362,"disclosure":"detailed"},
         {
           "label": "Personalaufwand",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -62.750772,
           "disclosure": "detailed",
           "items": [["Löhne und Gehälter",56.248597],["soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",6.502175]]
         },
         {
           "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — I. Immaterielle Vermögensgegenstände (entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten; überwiegend Spielervermögen), laut Anlagenspiegel",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -6.67651,
           "disclosure": "detailed"
         },
         {
           "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — II. Sachanlagen, laut Anlagenspiegel",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -2.17839,
           "disclosure": "detailed",
           "items": [
@@ -75,7 +79,13 @@
             ["geleistete Anzahlungen und Anlagen im Bau",0.224352]
           ]
         },
-        {"label":"sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-60.936524,"disclosure":"detailed"}
+        {
+          "label": "sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -60.936524,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.899231,"tax":-1.804034,"gross_debt":37.862442,"cash":11.88274},
       "official_totals": {"revenue":158.971709,"expenses":143.487558,"net_result":11.780886}
@@ -89,33 +99,36 @@
       "management_id": "actual",
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Spielbetrieb","category":"matchday_competition","amount":23.713,"disclosure":"detailed"},
-        {"label":"Werbung","category":"sponsorship_commercial","amount":40.519,"disclosure":"detailed"},
-        {"label":"Fernseh- u. Hörfunkverwertung","category":"broadcasting","amount":32.481,"disclosure":"detailed"},
-        {"label":"Transfer","category":"player_sales","amount":12.181,"disclosure":"detailed"},
-        {"label":"Merchandising","category":"sponsorship_commercial","amount":17.023,"disclosure":"detailed"},
-        {"label":"Catering","category":"stadium_other","amount":9.83,"disclosure":"detailed"},
-        {"label":"Sonstige","category":"other_income","amount":9.854,"disclosure":"detailed"},
-        {"label":"sonstige betriebliche Erträge","category":"other_income","amount":5.250221,"disclosure":"detailed"}
+        {"label":"Spielbetrieb","category":"matchday","subcategory":"matchday_competition","amount":23.713,"disclosure":"detailed"},
+        {"label":"Werbung","category":"commercial","subcategory":"sponsorship_commercial","amount":40.519,"disclosure":"detailed"},
+        {"label":"Fernseh- u. Hörfunkverwertung","category":"media_rights","subcategory":"broadcasting","amount":32.481,"disclosure":"detailed"},
+        {"label":"Transfer","category":"player_transfers","subcategory":"player_sales","amount":12.181,"disclosure":"detailed"},
+        {"label":"Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":17.023,"disclosure":"detailed"},
+        {"label":"Catering","category":"venue","subcategory":"stadium_other","amount":9.83,"disclosure":"detailed"},
+        {"label":"Sonstige","category":"other_revenue","subcategory":"other_income","amount":9.854,"disclosure":"detailed"},
+        {"label":"sonstige betriebliche Erträge","category":"other_revenue","subcategory":"other_income","amount":5.250221,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Materialaufwand","category":"other_expenses","amount":-14.802485,"disclosure":"detailed"},
+        {"label":"Materialaufwand","category":"other_operating_expenses","subcategory":"other_expenses","amount":-14.802485,"disclosure":"detailed"},
         {
           "label": "Personalaufwand",
-          "category": "wages_squad",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
           "amount": -55.939221,
           "disclosure": "detailed",
           "items": [["Löhne und Gehälter",48.30265],["soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",7.636572]]
         },
         {
           "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — I. Immaterielle Vermögensgegenstände (entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten; überwiegend Spielervermögen), laut Anlagenspiegel",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -7.906983,
           "disclosure": "detailed"
         },
         {
           "label": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen — II. Sachanlagen, laut Anlagenspiegel",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -2.552206,
           "disclosure": "detailed",
           "items": [
@@ -125,7 +138,13 @@
             ["geleistete Anzahlungen und Anlagen im Bau",0.132328]
           ]
         },
-        {"label":"sonstige betriebliche Aufwendungen","category":"other_expenses","amount":-58.890161,"disclosure":"detailed"}
+        {
+          "label": "sonstige betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -58.890161,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.20963,"tax":-1.191767,"gross_debt":31.996691,"cash":6.197026},
       "official_totals": {"revenue":150.851886,"expenses":140.091057,"net_result":5.359433}

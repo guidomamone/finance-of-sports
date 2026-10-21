@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "NL",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,26 +32,44 @@
       "management_id": null,
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":4.867279,"disclosure":"aggregated"},
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":9.101753,"disclosure":"aggregated"},
-        {"label":"Mediagelden","category":"broadcasting","amount":6.469374,"disclosure":"aggregated"},
-        {"label":"Food & Beverage","category":"stadium_other","amount":0.531163,"disclosure":"aggregated"},
-        {"label":"Merchandise","category":"sponsorship_commercial","amount":0.776585,"disclosure":"aggregated"},
-        {"label":"Overige opbrengsten","category":"other_income","amount":2.513826,"disclosure":"aggregated"},
-        {"label":"Netto-opbrengst vergoedingssommen","category":"player_sales","amount":7.555866,"disclosure":"aggregated"},
-        {"label":"Resultaat deelnemingen","category":"other_income","amount":0.203041,"disclosure":"aggregated"}
+        {"label":"Wedstrijdbaten","category":"matchday","subcategory":"matchday_competition","amount":4.867279,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":9.101753,"disclosure":"aggregated"},
+        {"label":"Mediagelden","category":"media_rights","subcategory":"broadcasting","amount":6.469374,"disclosure":"aggregated"},
+        {"label":"Food & Beverage","category":"venue","subcategory":"stadium_other","amount":0.531163,"disclosure":"aggregated"},
+        {"label":"Merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":0.776585,"disclosure":"aggregated"},
+        {"label":"Overige opbrengsten","category":"other_revenue","subcategory":"other_income","amount":2.513826,"disclosure":"aggregated"},
+        {"label":"Netto-opbrengst vergoedingssommen","category":"player_transfers","subcategory":"player_sales","amount":7.555866,"disclosure":"aggregated"},
+        {"label":"Resultaat deelnemingen","category":"other_revenue","subcategory":"other_income","amount":0.203041,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Kostprijs","category":"other_expenses","amount":-1.406246,"disclosure":"aggregated"},
-        {"label":"Salariskosten","category":"wages_squad","amount":-10.939527,"disclosure":"aggregated"},
-        {"label":"Pensioenlasten","category":"wages_squad","amount":-0.245383,"disclosure":"aggregated"},
-        {"label":"Sociale lasten","category":"wages_squad","amount":-1.534143,"disclosure":"aggregated"},
-        {"label":"Overige kosten","category":"admin_general_expense","amount":-1.676125,"disclosure":"aggregated"},
-        {"label":"Doorberekende personeelskosten","category":"wages_squad","amount":-0.19887,"disclosure":"aggregated"},
-        {"label":"Afschrijvingskosten vergoedingssommen","category":"player_amortisation","amount":-3.268827,"disclosure":"aggregated"},
-        {"label":"Afwaardering boekwaarde vertrokken spelers","category":"player_impairment","amount":-0.37125,"disclosure":"aggregated"},
-        {"label":"Afschrijvingen op materiële vaste activa","category":"depreciation","amount":-0.685457,"disclosure":"aggregated"},
-        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-10.279559,"disclosure":"aggregated"}
+        {"label":"Kostprijs","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.406246,"disclosure":"aggregated"},
+        {"label":"Salariskosten","category":"first_team_staff","subcategory":"wages_squad","amount":-10.939527,"disclosure":"aggregated"},
+        {"label":"Pensioenlasten","category":"first_team_staff","subcategory":"wages_squad","amount":-0.245383,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"first_team_staff","subcategory":"wages_squad","amount":-1.534143,"disclosure":"aggregated"},
+        {"label":"Overige kosten","category":"admin_general","subcategory":"admin_general_expense","amount":-1.676125,"disclosure":"aggregated"},
+        {"label":"Doorberekende personeelskosten","category":"first_team_staff","subcategory":"wages_squad","amount":-0.19887,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingskosten vergoedingssommen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3.268827,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Afwaardering boekwaarde vertrokken spelers",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -0.37125,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Afschrijvingen op materiële vaste activa",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.685457,
+          "disclosure": "aggregated"
+        },
+        {"label":"Overige bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-10.279559,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.035254,"tax":-0.332253,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":32.018887,"expenses":30.605387,"net_result":1.045993},

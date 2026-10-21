@@ -27,14 +27,16 @@ const ROOT = resolve(import.meta.dirname, '..');
 const require = createRequire(import.meta.url);
 const { cierreEjercicio } = require('./cierre-ejercicio.js');
 
-export const SCHEMA_VERSION = '1.0';
+export const SCHEMA_VERSION = '2.0';
 // (el diccionario completo vive acá abajo; el generador del JSON Schema, tools/generar-schema-json.mjs, lee estas listas para no duplicarlas)
 export const UNIT = { scale: 1000000, label: 'millions of currency' };
 // Valores de `disclosure` que usan hoy las líneas de los 313 clubes (lista cerrada, igual que las categorías: un valor nuevo se agrega acá y en el schema a propósito).
 export const DISCLOSURE = ['aggregate', 'aggregated', 'aggregated_residual', 'detailed', 'estimated', 'lump', 'not_disclosed', 'partial', 'summary'];
 
 // ---------------------------------------------------------------- diccionario (campo de hoy <-> campo del JSON)
-const LINEA = { rawLabel: 'label', normalizedCategory: 'category', amountNative: 'amount', disclosureLevel: 'disclosure', items: 'items' };
+// to-do 248 (esquema 2.0): la categoría de cada línea es la SUBCATEGORÍA del deporte (`subcategory`, la que eligen el pipeline y la cola); `category`
+// es la genérica, que no viene del data file: la deriva aJson de data/category-map.js (genericCategoryOf) y validar exige que el par coincida.
+const LINEA = { rawLabel: 'label', normalizedCategory: 'subcategory', amountNative: 'amount', disclosureLevel: 'disclosure', items: 'items' };
 const FUENTE = { id: 'id', clubId: 'club_id', title: 'title', type: 'type', reliability: 'reliability', url: 'url', publicNote: 'public_note' };
 const GESTION = { nombre: 'name', firstYear: 'first_year', lastYear: 'last_year' };
 const SIN_DESGLOSE = { renglon: 'line', lado: 'side', importe: 'amount', motivo: 'reason' };
@@ -51,6 +53,8 @@ const EXTRAS = { presupuestoSupuestosByYear: 'budget_assumptions', presupuestoFi
 // (los apellidos de las gestiones de `results` son datos, no claves del esquema).
 const CLAVES_LIBRES = { titulosLocales: 'local_titles', titulosInternacionales: 'international_titles', mejorResultadoLibertadores: 'best_libertadores_result', anio: 'year', competencia: 'competition', resultado: 'result', gestion: 'management', docLabel: 'doc_label', isResult: 'is_result', formato: 'format' };
 const CLUB = { id: 'id', name: 'name', displayName: 'display_name', country: 'country', reportingCurrency: 'reporting_currency', fiscalYearStart: 'fiscal_year_start', sport: 'sport' };
+// El deporte: id interno del sitio (data/leagues.js, SPORTS) -> valor del JSON, en inglés. `club.taxonomy` es la versión del mapa de ese deporte.
+const DEPORTE = { futbol: 'football', basquet: 'basketball', rugby: 'rugby_union', nfl: 'american_football', f1: 'formula_1', tenis: 'tennis', cricket: 'cricket', otro: 'other' };
 
 const inv = (d) => Object.fromEntries(Object.entries(d).map(([a, b]) => [b, a]));
 const has = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
@@ -63,7 +67,14 @@ function mapear(o, dic, donde) {
   for (const [k, v] of Object.entries(o)) { if (!has(dic, k)) falla(`${donde}: clave desconocida "${k}"`); out[dic[k]] = v; }
   return out;
 }
-const linea = (l, donde) => mapear(l, LINEA, donde);
+// una línea al JSON: la genérica va antes de la subcategoría. Sin genérica (subcategoría que el deporte no tiene) es un error.
+const linea = (l, donde, lado, deporte) => {
+  const m = mapear(l, LINEA, donde); const tax = taxonomia(); const out = {};
+  const gen = has(m, 'subcategory') ? tax.genericCategoryOf(deporte, lado, m.subcategory) : null;
+  if (has(m, 'subcategory') && !gen) falla(`${donde}: la subcategoría "${m.subcategory}" no tiene genérica en data/category-map.js (deporte ${deporte})`);
+  for (const [k, v] of Object.entries(m)) { if (k === 'subcategory') out.category = gen; out[k] = v; }
+  return out;
+};
 const sinTraducir = (v) => JSON.parse(JSON.stringify(v));
 // traduce las CLAVES de un valor libre (recursivo) con un diccionario; los valores no se tocan
 const traducirClaves = (v, dic) => Array.isArray(v) ? v.map((x) => traducirClaves(x, dic)) : v && typeof v === 'object' ? Object.fromEntries(Object.entries(v).map(([k, x]) => [has(dic, k) ? dic[k] : k, traducirClaves(x, dic)])) : v;
@@ -79,6 +90,15 @@ function sitio() {
 }
 export function clubes() { return sitio().clubs; }
 
+// data/category-map.js: subcategorías, genéricas y el mapa por deporte (to-do 248). Una sola lectura por proceso.
+let _tax = null;
+export function taxonomia() {
+  if (_tax) return _tax;
+  const ctx = vm.createContext({ window: {} }); vm.runInContext(readFileSync(resolve(ROOT, 'data/category-map.js'), 'utf8'), ctx, { filename: 'data/category-map.js' });
+  _tax = vm.runInContext('({ revenue: REVENUE_CATEGORIES, expense: EXPENSE_CATEGORIES, genericas: { revenue: GENERIC_REVENUE_CATEGORIES, expense: GENERIC_EXPENSE_CATEGORIES }, deportes: SPORT_TAXONOMIES, genericCategoryOf })', ctx);
+  return _tax;
+}
+
 // Corre UN data file en un entorno limpio (sources, gestionesByClub y memberCountByClub vacíos) y devuelve lo que ese archivo define.
 export function leerClub(rel) {
   const sb = { console, window: {}, sources: {}, gestionesByClub: {}, memberCountByClub: {} }; sb.window.window = sb.window; const ctx = vm.createContext(sb);
@@ -90,12 +110,25 @@ export function leerClub(rel) {
 }
 export const todosLosArchivos = () => archivosData();
 
+// El bloque `club` del JSON desde la ficha de data/clubs.js: los nombres en inglés, el deporte con su nombre del JSON y `taxonomy`, la versión del mapa
+// de ese deporte (to-do 248). Lo usan aJson y tools/generar-data.mjs (--identidad y --check), para que no haya dos copias de esta traducción.
+export function clubDeFicha(id, ficha) {
+  const club = ficha ? Object.fromEntries(Object.entries(CLUB).filter(([k]) => has(ficha, k)).map(([k, n]) => [n, ficha[k]])) : { id };
+  const deporte = (ficha && ficha.sport) || 'futbol';
+  if (!has(DEPORTE, deporte)) falla(`${id}: deporte "${deporte}" sin nombre en el JSON (DEPORTE de tools/json-datos.mjs)`);
+  if (!taxonomia().deportes[deporte]) falla(`${id}: el deporte "${deporte}" no tiene taxonomía en data/category-map.js (SPORT_TAXONOMIES)`);
+  if (has(club, 'sport')) club.sport = DEPORTE[deporte];
+  club.taxonomy = taxonomia().deportes[deporte].version;
+  return club;
+}
+
 // ---------------------------------------------------------------- JS actual -> JSON
 export function aJson(c, { exportadoEn = new Date().toISOString().slice(0, 10), ficha: fichaDada = null } = {}) {
   const { id, datos: d } = c; const ficha = fichaDada || clubes()[id] || null;
   for (const k of Object.keys(d)) if (!['revenueLinesByYear', 'expenseLinesByYear', 'fiscalYearMeta', 'presupuestoOverlayByYear', 'pasesData', 'resultadosData', 'titulosData', ...Object.keys(EXTRAS)].includes(k)) falla(`${id}: CLUB_GENERIC_DATA trae "${k}", que el esquema no conoce`);
   const j = { schema_version: SCHEMA_VERSION, exported_at: exportadoEn, unit: { ...UNIT } };
-  j.club = ficha ? Object.fromEntries(Object.entries(CLUB).filter(([k]) => has(ficha, k)).map(([k, n]) => [n, ficha[k]])) : { id };
+  j.club = clubDeFicha(id, ficha);
+  const deporte = (ficha && ficha.sport) || 'futbol';
   j.sources = Object.entries(c.sources).map(([sid, s]) => { if (s.id !== sid) falla(`${id}: la fuente "${sid}" tiene id "${s.id}"`); return mapear(s, FUENTE, `${id} fuente ${sid}`); });
   if (has(c.gestiones, id)) j.management = Object.entries(c.gestiones[id]).map(([gid, g]) => ({ id: gid, ...mapear(g, GESTION, `${id} gestión ${gid}`) }));
   if (has(c.miembros, id)) j.members = c.miembros[id];
@@ -108,8 +141,8 @@ export function aJson(c, { exportadoEn = new Date().toISOString().slice(0, 10), 
       for (const [k, n] of Object.entries(META_DIRECTA)) if (has(m, k)) o[n] = m[k];
       const fx = {}; for (const [k, n] of Object.entries(FX)) if (has(m, k)) fx[n] = m[k]; if (Object.keys(fx).length) o.fx = fx;
     }
-    if (has(d.revenueLinesByYear, y)) o.revenue = d.revenueLinesByYear[y].map((l, i) => linea(l, `${id} ${y} ingresos[${i}]`));
-    if (has(d.expenseLinesByYear, y)) o.expenses = d.expenseLinesByYear[y].map((l, i) => linea(l, `${id} ${y} gastos[${i}]`));
+    if (has(d.revenueLinesByYear, y)) o.revenue = d.revenueLinesByYear[y].map((l, i) => linea(l, `${id} ${y} ingresos[${i}]`, 'revenue', deporte));
+    if (has(d.expenseLinesByYear, y)) o.expenses = d.expenseLinesByYear[y].map((l, i) => linea(l, `${id} ${y} gastos[${i}]`, 'expense', deporte));
     if (m) {
       const fin = {}; for (const [k, n] of Object.entries(FINANCIERO)) if (has(m, k)) fin[n] = m[k]; if (Object.keys(fin).length) o.financial = fin;
       const tot = {}; for (const [k, n] of Object.entries(TOTALES)) if (has(m, k)) tot[n] = m[k]; if (Object.keys(tot).length) o.official_totals = tot;
@@ -123,7 +156,7 @@ export function aJson(c, { exportadoEn = new Date().toISOString().slice(0, 10), 
   });
   if (has(d, 'presupuestoOverlayByYear')) j.budget_overlay = Object.fromEntries(Object.entries(d.presupuestoOverlayByYear).map(([y, ov]) => {
     const o = {}; for (const [k, v] of Object.entries(ov)) {
-      if (has(OVERLAY, k)) o[OVERLAY[k]] = k === 'revenueLines' || k === 'expenseLines' ? v.map((l, i) => linea(l, `${id} presupuesto ${y} ${k}[${i}]`)) : v;
+      if (has(OVERLAY, k)) o[OVERLAY[k]] = k === 'revenueLines' || k === 'expenseLines' ? v.map((l, i) => linea(l, `${id} presupuesto ${y} ${k}[${i}]`, k === 'revenueLines' ? 'revenue' : 'expense', deporte)) : v;
       else if (has(FX, k)) (o.fx ||= {})[FX[k]] = v; else falla(`${id} presupuesto ${y}: clave desconocida "${k}"`);
     } return [y, o];
   }));
@@ -146,7 +179,7 @@ export function deJson(j) {
   const id = j.club.id; const d = {}; const s = {};
   d.revenueLinesByYear = {}; d.expenseLinesByYear = {}; d.fiscalYearMeta = {};
   const rev = inv(LINEA);
-  const lin = (l) => Object.fromEntries(Object.entries(l).map(([k, v]) => [rev[k], v]));
+  const lin = (l) => Object.fromEntries(Object.entries(l).filter(([k]) => k !== 'category').map(([k, v]) => [rev[k], v]));   // la genérica no va al data file
   for (const y of j.years) {
     if (has(y, 'revenue')) d.revenueLinesByYear[y.fiscal_year] = y.revenue.map(lin);
     if (has(y, 'expenses')) d.expenseLinesByYear[y.fiscal_year] = y.expenses.map(lin);
@@ -234,11 +267,15 @@ export function validar(j, { categorias = null, externos = null } = {}) {
   if (j.schema_version !== SCHEMA_VERSION) err('schema_version', `vale ${j.schema_version}, se esperaba ${SCHEMA_VERSION}`);
   if (!FECHA_RE.test(j.exported_at || '')) err('exported_at', 'tiene que ser AAAA-MM-DD');
   if (claves(j.unit, ['scale', 'label'], 'unit', ['scale', 'label']) && j.unit.scale !== UNIT.scale) err('unit.scale', `vale ${j.unit.scale}, se esperaba ${UNIT.scale}`);
-  if (claves(j.club, Object.values(CLUB), 'club', ['id'])) { if (!/^[a-z0-9][a-z0-9-]*$/.test(j.club.id || '')) err('club.id', 'id con formato raro'); if (has(j.club, 'country') && !/^[A-Z]{2}$/.test(j.club.country)) err('club.country', 'tiene que ser un código de 2 letras en mayúsculas'); if (has(j.club, 'reporting_currency') && !/^[A-Z]{3}$/.test(j.club.reporting_currency)) err('club.reporting_currency', 'ISO 4217'); }
+  if (claves(j.club, [...Object.values(CLUB), 'taxonomy'], 'club', ['id', 'taxonomy'])) { if (!/^[a-z0-9][a-z0-9-]*$/.test(j.club.id || '')) err('club.id', 'id con formato raro'); if (has(j.club, 'country') && !/^[A-Z]{2}$/.test(j.club.country)) err('club.country', 'tiene que ser un código de 2 letras en mayúsculas'); if (has(j.club, 'reporting_currency') && !/^[A-Z]{3}$/.test(j.club.reporting_currency)) err('club.reporting_currency', 'ISO 4217'); }
   const fuentes = new Set(); (Array.isArray(j.sources) ? j.sources : (err('sources', 'tiene que ser una lista'), [])).forEach((s, i) => { const r = `sources[${i}]`; if (!claves(s, Object.values(FUENTE), r, ['id', 'club_id', 'title', 'type', 'reliability'])) return; if (fuentes.has(s.id)) err(r, `id repetido ${s.id}`); fuentes.add(s.id); for (const k of ['id', 'title', 'type', 'reliability']) if (typeof s[k] !== 'string' || !s[k]) err(r, `"${k}" tiene que ser un texto`); });
   const gest = new Set(); if (has(j, 'management')) (Array.isArray(j.management) ? j.management : []).forEach((g, i) => { const r = `management[${i}]`; claves(g, ['id', ...Object.values(GESTION)], r, ['id', 'name', 'first_year', 'last_year']); gest.add(g.id); });
   if (has(j, 'members') && j.members !== null && !ES_NUM(j.members)) err('members', 'número o null');
-  const lineas = (arr, r, lado) => { if (!Array.isArray(arr)) return err(r, 'tiene que ser una lista'); arr.forEach((l, i) => { const rr = `${r}[${i}]`; if (!claves(l, Object.values(LINEA), rr, ['label', 'category', 'amount'])) return; if (typeof l.label !== 'string') err(rr, 'label tiene que ser un texto'); if (has(l, 'disclosure') && !DISCLOSURE.includes(l.disclosure)) err(rr, `disclosure "${l.disclosure}" desconocido`); if (!ES_NUM(l.amount)) err(rr, 'amount tiene que ser un número finito'); if (categorias && ![...categorias.revenue, ...categorias.expense].includes(l.category)) err(rr, `categoría "${l.category}" que no está en data/category-map.js`); /* una categoría del otro lado (exceptional_items en ingresos, regla de CONVENCIONES-DATOS; el costo de las camisetas de Atlético Mineiro) NO es un aviso acá: la vigila audit.js (categoria-cruzada) con su lista revisada en tools/audit-ignore.json */ if (has(l, 'items') && !itemsOk(l.items)) err(rr, 'items tiene que ser una lista de [texto, número] o [texto, número, subitems]'); }); };
+  // el deporte del club (valor del JSON -> id interno) y su taxonomía: club.taxonomy tiene que ser la versión vigente del mapa
+  const deporte = (j.club && has(j.club, 'sport')) ? inv(DEPORTE)[j.club.sport] : 'futbol';
+  if (j.club && has(j.club, 'sport') && !deporte) err('club.sport', `deporte "${j.club.sport}" desconocido (${Object.values(DEPORTE).join(', ')})`);
+  if (categorias && categorias.deportes && deporte) { const t = categorias.deportes[deporte]; if (!t) err('club.sport', `el deporte "${j.club.sport}" no tiene taxonomía en data/category-map.js`); else if (j.club && j.club.taxonomy !== t.version) err('club.taxonomy', `vale "${j.club.taxonomy}", la vigente es "${t.version}" (se corre tools/migrar-v2.mjs)`); }
+  const lineas = (arr, r, lado) => { if (!Array.isArray(arr)) return err(r, 'tiene que ser una lista'); arr.forEach((l, i) => { const rr = `${r}[${i}]`; if (!claves(l, ['category', ...Object.values(LINEA)], rr, ['label', 'category', 'subcategory', 'amount'])) return; if (typeof l.label !== 'string') err(rr, 'label tiene que ser un texto'); if (has(l, 'disclosure') && !DISCLOSURE.includes(l.disclosure)) err(rr, `disclosure "${l.disclosure}" desconocido`); if (!ES_NUM(l.amount)) err(rr, 'amount tiene que ser un número finito'); if (categorias && ![...categorias.revenue, ...categorias.expense].includes(l.subcategory)) err(rr, `subcategoría "${l.subcategory}" que no está en data/category-map.js`); else if (categorias && categorias.genericCategoryOf && deporte) { const g = categorias.genericCategoryOf(deporte, lado, l.subcategory); if (l.category !== g) err(rr, `category "${l.category}" no es la genérica de "${l.subcategory}" (${lado}): es "${g}" (data/category-map.js)`); } /* una categoría del otro lado (exceptional_items en ingresos, regla de CONVENCIONES-DATOS; el costo de las camisetas de Atlético Mineiro) NO es un aviso acá: la vigila audit.js (categoria-cruzada) con su lista revisada en tools/audit-ignore.json */ if (has(l, 'items') && !itemsOk(l.items)) err(rr, 'items tiene que ser una lista de [texto, número] o [texto, número, subitems]'); }); };
   const anios = new Set();
   (Array.isArray(j.years) ? j.years : (err('years', 'tiene que ser una lista'), [])).forEach((y, i) => {
     const r = `years[${y && y.fiscal_year}]`; if (!claves(y, ['fiscal_year', 'period_end', 'currency', 'fx', 'source_id', 'report_type', 'management_id', 'revenue', 'expenses', 'financial', 'official_totals', 'adjustments'], r, ['fiscal_year', 'period_end'])) return;
@@ -275,12 +312,9 @@ export function referenciasExternas() {
   const gestiones = new Map(Object.entries(g.window.CLUB_GESTIONES || {}).map(([club, lista]) => [club, new Set(lista.map((x) => norm(x.corto || x.nombre)))]));
   return { fuentes, gestiones };
 }
-export function categoriasDelSitio() {
-  const ctx = vm.createContext({ window: {} }); vm.runInContext(readFileSync(resolve(ROOT, 'data/category-map.js'), 'utf8'), ctx);
-  return { revenue: vm.runInContext('REVENUE_CATEGORIES', ctx), expense: vm.runInContext('EXPENSE_CATEGORIES', ctx) };
-}
+export function categoriasDelSitio() { return taxonomia(); }
 export { ErrorDeEsquema };
-export const CAMPOS = { LINEA, FUENTE, GESTION, SIN_DESGLOSE, INCLUIDO, FINANCIERO, TOTALES, FX, META_DIRECTA, META_ADJ, OVERLAY, EXTRAS, CLUB, CLAVES_LIBRES };
+export const CAMPOS = { LINEA, FUENTE, GESTION, SIN_DESGLOSE, INCLUIDO, FINANCIERO, TOTALES, FX, META_DIRECTA, META_ADJ, OVERLAY, EXTRAS, CLUB, CLAVES_LIBRES, DEPORTE };
 
 // El paquete que se publica (Frictionless, tools/exportar-paquete.mjs) lleva SOLO lo financiero (decisión de Guido, 2026-10-20): sin el contenido editorial de
 // pocos clubes (resultados, títulos, pases) ni los `extras`. Es una copia; el JSON completo de cada club no pierde nada.

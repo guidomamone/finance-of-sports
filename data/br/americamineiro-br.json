@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -49,38 +50,89 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2023-12-31","source":"market_close"},
       "revenue": [
-        {"label":"Receitas de transmissão e de imagem e desempenho","category":"broadcasting","amount":72.900023,"disclosure":"detailed"},
-        {"label":"Receitas de patrocínios, publicidade, luva e marketing","category":"sponsorship_commercial","amount":32.875108,"disclosure":"detailed"},
-        {"label":"Receitas com transferência de atletas","category":"player_sales","amount":62.435387,"disclosure":"detailed"},
-        {"label":"Receitas de bilheteria","category":"matchday_competition","amount":3.145194,"disclosure":"detailed"},
-        {"label":"Receitas com atividades sociais da entidade","category":"other_income","amount":0.844664,"disclosure":"detailed"},
-        {"label":"Outras Receitas (Comerciais e Aluguéis)","category":"other_income","amount":23.957772,"disclosure":"detailed"},
-        {"label":"(-) Deduções da receita bruta (impostos, INSS e Sindicato Atletas)","category":"other_income","amount":-8.281388,"disclosure":"detailed"}
+        {
+          "label": "Receitas de transmissão e de imagem e desempenho",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 72.900023,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Receitas de patrocínios, publicidade, luva e marketing",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 32.875108,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Receitas com transferência de atletas",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 62.435387,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas de bilheteria","category":"matchday","subcategory":"matchday_competition","amount":3.145194,"disclosure":"detailed"},
+        {
+          "label": "Receitas com atividades sociais da entidade",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.844664,
+          "disclosure": "detailed"
+        },
+        {"label":"Outras Receitas (Comerciais e Aluguéis)","category":"other_revenue","subcategory":"other_income","amount":23.957772,"disclosure":"detailed"},
+        {
+          "label": "(-) Deduções da receita bruta (impostos, INSS e Sindicato Atletas)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -8.281388,
+          "disclosure": "detailed"
+        }
       ],
       "expenses": [
-        {"label":"Despesas com futebol (Salários, imagem e encargos)","category":"wages_squad","amount":-92.070307,"disclosure":"detailed"},
-        {"label":"Despesas Desportivas","category":"match_organisation_expense","amount":-57.978218,"disclosure":"detailed"},
-        {"label":"Salários, encargos e benefícios (demais funcionários)","category":"admin_general_expense","amount":-19.0823,"disclosure":"detailed"},
-        {"label":"Impostos, taxas e contribuições","category":"admin_general_expense","amount":-4.12837,"disclosure":"detailed"},
-        {"label":"Serviços prestados p/terceiros","category":"admin_general_expense","amount":-6.943851,"disclosure":"detailed"},
+        {
+          "label": "Despesas com futebol (Salários, imagem e encargos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -92.070307,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas Desportivas","category":"match_operations","subcategory":"match_organisation_expense","amount":-57.978218,"disclosure":"detailed"},
+        {
+          "label": "Salários, encargos e benefícios (demais funcionários)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -19.0823,
+          "disclosure": "detailed"
+        },
+        {"label":"Impostos, taxas e contribuições","category":"admin_general","subcategory":"admin_general_expense","amount":-4.12837,"disclosure":"detailed"},
+        {"label":"Serviços prestados p/terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-6.943851,"disclosure":"detailed"},
         {
           "label": "Amortização de atletas profissionais (desagregada da Nota 20 via Demonstração do Fluxo de Caixa)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -7.204257,
           "disclosure": "detailed"
         },
         {
           "label": "Depreciação imobilizado + Amortização de propriedades para investimento (desagregada da Nota 20 via Demonstração do Fluxo de Caixa)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -8.637321,
           "disclosure": "detailed",
           "items": [["Depreciação imobilizado",-1.442105],["Amortização de propriedades para investimento",-7.195216]]
         },
-        {"label":"Transporte/viagens","category":"match_organisation_expense","amount":-0.050438,"disclosure":"detailed"},
-        {"label":"Demais despesas gerais e administrativas","category":"admin_general_expense","amount":-12.165052,"disclosure":"detailed"},
+        {"label":"Transporte/viagens","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.050438,"disclosure":"detailed"},
+        {
+          "label": "Demais despesas gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -12.165052,
+          "disclosure": "detailed"
+        },
         {
           "label": "Apropriação despesas intangível (crédito de reclassificação, capitalização de formação de juvenis — ver comentário de cabecera)",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": 11.493091,
           "disclosure": "detailed"
         }
@@ -98,35 +150,97 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2024-12-31","source":"market_close"},
       "revenue": [
-        {"label":"Receitas de transmissão e de imagem e desempenho","category":"broadcasting","amount":11.710451,"disclosure":"detailed"},
-        {"label":"Receitas de patrocínios, publicidade, luva e marketing","category":"sponsorship_commercial","amount":15.091452,"disclosure":"detailed"},
-        {"label":"Receitas com negociações de atletas","category":"player_sales","amount":0.64519,"disclosure":"detailed"},
-        {"label":"Receitas de bilheteria","category":"matchday_competition","amount":1.811925,"disclosure":"detailed"},
-        {"label":"Receitas com atividades sociais da entidade","category":"other_income","amount":1.122302,"disclosure":"detailed"},
-        {"label":"Receitas (Comerciais e aluguéis)","category":"other_income","amount":20.168259,"disclosure":"detailed"},
-        {"label":"(-) Deduções da receita bruta (impostos, INSS e Sindicato Atletas)","category":"other_income","amount":-1.516346,"disclosure":"detailed"},
+        {
+          "label": "Receitas de transmissão e de imagem e desempenho",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 11.710451,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Receitas de patrocínios, publicidade, luva e marketing",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 15.091452,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas com negociações de atletas","category":"player_transfers","subcategory":"player_sales","amount":0.64519,"disclosure":"detailed"},
+        {"label":"Receitas de bilheteria","category":"matchday","subcategory":"matchday_competition","amount":1.811925,"disclosure":"detailed"},
+        {
+          "label": "Receitas com atividades sociais da entidade",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 1.122302,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas (Comerciais e aluguéis)","category":"other_revenue","subcategory":"other_income","amount":20.168259,"disclosure":"detailed"},
+        {
+          "label": "(-) Deduções da receita bruta (impostos, INSS e Sindicato Atletas)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -1.516346,
+          "disclosure": "detailed"
+        },
         {
           "label": "Outras receitas operacionais (não desagregada pelo balanço 2024; valor bruto conforme comparativo do balanço 2025, Nota 19)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 55.214774,
           "disclosure": "aggregate"
         }
       ],
       "expenses": [
-        {"label":"Despesas com futebol (Salários, imagem e encargos)","category":"wages_squad","amount":-71.562443,"disclosure":"detailed"},
-        {"label":"Despesas Desportivas","category":"match_organisation_expense","amount":-31.42117,"disclosure":"detailed"},
-        {"label":"Salários, encargos e benefícios (demais funcionários)","category":"admin_general_expense","amount":-12.625817,"disclosure":"detailed"},
-        {"label":"Impostos, taxas e contribuições","category":"admin_general_expense","amount":-7.056553,"disclosure":"detailed"},
-        {"label":"Serviços prestados para terceiros","category":"admin_general_expense","amount":-4.111751,"disclosure":"detailed"},
+        {
+          "label": "Despesas com futebol (Salários, imagem e encargos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -71.562443,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas Desportivas","category":"match_operations","subcategory":"match_organisation_expense","amount":-31.42117,"disclosure":"detailed"},
+        {
+          "label": "Salários, encargos e benefícios (demais funcionários)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -12.625817,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Impostos, taxas e contribuições",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -7.056553,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços prestados para terceiros",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.111751,
+          "disclosure": "detailed"
+        },
         {
           "label": "Depreciações e amortizações (não desagregável em 2024, ver comentário de cabecera)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -5.431895,
           "disclosure": "detailed"
         },
-        {"label":"Transporte/viagens","category":"match_organisation_expense","amount":-0.016657,"disclosure":"detailed"},
-        {"label":"Demais despesas gerais e administrativas","category":"admin_general_expense","amount":-12.147441,"disclosure":"detailed"},
-        {"label":"Outras despesas operacionais","category":"other_expenses","amount":-8.43877,"disclosure":"detailed"}
+        {"label":"Transporte/viagens","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.016657,"disclosure":"detailed"},
+        {
+          "label": "Demais despesas gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -12.147441,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras despesas operacionais",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -8.43877,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-9.875294,"tax":0,"gross_debt":29.444135,"cash":0.129673},
       "official_totals": {"revenue":104.248007,"expenses":152.812497,"net_result":-58.439785},
@@ -141,27 +255,76 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2025-12-31","source":"market_close"},
       "revenue": [
-        {"label":"Receitas de transmissão e de imagem e desempenho","category":"broadcasting","amount":12.893737,"disclosure":"detailed"},
-        {"label":"Receitas de patrocínios, publicidade, luva e marketing","category":"sponsorship_commercial","amount":14.871742,"disclosure":"detailed"},
-        {"label":"Receitas com negociações de atletas","category":"player_sales","amount":2.499701,"disclosure":"detailed"},
-        {"label":"Receitas de bilheteria","category":"matchday_competition","amount":4.875958,"disclosure":"detailed"},
-        {"label":"Receitas com atividades sociais da entidade","category":"other_income","amount":1.153338,"disclosure":"detailed"},
-        {"label":"Receitas (Comerciais e aluguéis)","category":"other_income","amount":5.992522,"disclosure":"detailed"},
-        {"label":"(-) Deduções da receita bruta (impostos, INSS e Sindicato Atletas)","category":"other_income","amount":-2.221624,"disclosure":"detailed"},
-        {"label":"Outras receitas operacionais","category":"other_income","amount":31.745464,"disclosure":"detailed"}
+        {
+          "label": "Receitas de transmissão e de imagem e desempenho",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 12.893737,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Receitas de patrocínios, publicidade, luva e marketing",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 14.871742,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas com negociações de atletas","category":"player_transfers","subcategory":"player_sales","amount":2.499701,"disclosure":"detailed"},
+        {"label":"Receitas de bilheteria","category":"matchday","subcategory":"matchday_competition","amount":4.875958,"disclosure":"detailed"},
+        {
+          "label": "Receitas com atividades sociais da entidade",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 1.153338,
+          "disclosure": "detailed"
+        },
+        {"label":"Receitas (Comerciais e aluguéis)","category":"other_revenue","subcategory":"other_income","amount":5.992522,"disclosure":"detailed"},
+        {
+          "label": "(-) Deduções da receita bruta (impostos, INSS e Sindicato Atletas)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": -2.221624,
+          "disclosure": "detailed"
+        },
+        {"label":"Outras receitas operacionais","category":"other_revenue","subcategory":"other_income","amount":31.745464,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Despesas com Futebol (Salários, imagem e encargos)","category":"wages_squad","amount":-55.705562,"disclosure":"detailed"},
-        {"label":"Despesas Desportivas","category":"match_organisation_expense","amount":-29.725816,"disclosure":"detailed"},
-        {"label":"Salários, encargos e benefícios (demais funcionários)","category":"admin_general_expense","amount":-16.407884,"disclosure":"detailed"},
+        {
+          "label": "Despesas com Futebol (Salários, imagem e encargos)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -55.705562,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas Desportivas","category":"match_operations","subcategory":"match_organisation_expense","amount":-29.725816,"disclosure":"detailed"},
+        {
+          "label": "Salários, encargos e benefícios (demais funcionários)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -16.407884,
+          "disclosure": "detailed"
+        },
         {
           "label": "Despesas administrativas (linha única, não desagregada em serviços/depreciação/diversos como 2023-24)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -19.079489,
           "disclosure": "aggregate"
         },
-        {"label":"Impostos, taxas e contribuições","category":"admin_general_expense","amount":-3.104593,"disclosure":"detailed"},
-        {"label":"Outras despesas operacionais","category":"other_expenses","amount":-1.630411,"disclosure":"detailed"}
+        {
+          "label": "Impostos, taxas e contribuições",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.104593,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Outras despesas operacionais",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.630411,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"net_interest":-6.511643,"tax":0,"gross_debt":36.494416,"cash":0.394718},
       "official_totals": {"revenue":71.810838,"expenses":125.653755,"net_result":-60.354558},

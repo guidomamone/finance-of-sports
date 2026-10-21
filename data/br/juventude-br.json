@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -39,30 +40,38 @@
       "management_id": null,
       "fx": {"ref":"BRL@2020-12-31"},
       "revenue": [
-        {"label":"Venda/Empréstimo de Atletas","category":"player_sales","amount":9.5302679,"disclosure":"detailed"},
-        {"label":"Receitas Patrimoniais","category":"other_income","amount":1.53487736,"disclosure":"detailed"},
-        {"label":"Receita de Transmissão","category":"broadcasting","amount":15.42508914,"disclosure":"detailed"},
-        {"label":"Receita jogos de Futebol","category":"matchday_competition","amount":0.52843655,"disclosure":"detailed"},
-        {"label":"Receitas Publicitária","category":"sponsorship_commercial","amount":3.26438183,"disclosure":"detailed"},
-        {"label":"Receita Loteria Esportiva","category":"other_income","amount":0.70944628,"disclosure":"detailed"},
-        {"label":"Outras Receitas (Nota 18)","category":"other_income","amount":0.8390216,"disclosure":"detailed"},
-        {"label":"Receita de Royalties","category":"sponsorship_commercial","amount":0.0177714,"disclosure":"detailed"},
-        {"label":"Receitas Diversas","category":"other_income","amount":0.53415641,"disclosure":"detailed"}
+        {"label":"Venda/Empréstimo de Atletas","category":"player_transfers","subcategory":"player_sales","amount":9.5302679,"disclosure":"detailed"},
+        {"label":"Receitas Patrimoniais","category":"other_revenue","subcategory":"other_income","amount":1.53487736,"disclosure":"detailed"},
+        {"label":"Receita de Transmissão","category":"media_rights","subcategory":"broadcasting","amount":15.42508914,"disclosure":"detailed"},
+        {"label":"Receita jogos de Futebol","category":"matchday","subcategory":"matchday_competition","amount":0.52843655,"disclosure":"detailed"},
+        {"label":"Receitas Publicitária","category":"commercial","subcategory":"sponsorship_commercial","amount":3.26438183,"disclosure":"detailed"},
+        {"label":"Receita Loteria Esportiva","category":"other_revenue","subcategory":"other_income","amount":0.70944628,"disclosure":"detailed"},
+        {"label":"Outras Receitas (Nota 18)","category":"other_revenue","subcategory":"other_income","amount":0.8390216,"disclosure":"detailed"},
+        {"label":"Receita de Royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.0177714,"disclosure":"detailed"},
+        {"label":"Receitas Diversas","category":"other_revenue","subcategory":"other_income","amount":0.53415641,"disclosure":"detailed"}
       ],
       "expenses": [
         {
           "label": "Remuneração, Benefícios, Encargos e amortização de direitos e de custos de formação",
-          "category": "lump_football_operations_expense",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
           "amount": -22.55193562,
           "disclosure": "lump"
         },
         {
           "label": "Federação, viagem, imagem, serviços, material esportivo e outras",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -4.84499961,
           "disclosure": "detailed"
         },
-        {"label":"Despesas Gerais e administrativas","category":"admin_general_expense","amount":-6.00835769,"disclosure":"detailed"}
+        {
+          "label": "Despesas Gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.00835769,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.70489589,"tax":0,"gross_debt":0.73381295,"cash":0.02633058},
       "official_totals": {"revenue":32.38344847,"expenses":33.40529292,"net_result":-2.72674034}
@@ -76,31 +85,45 @@
       "management_id": null,
       "fx": {"ref":"BRL@2021-12-31"},
       "revenue": [
-        {"label":"Venda/Empréstimo de Atletas","category":"player_sales","amount":2.863945,"disclosure":"aggregated"},
-        {"label":"Receitas Patrimoniais","category":"other_income","amount":2.522335,"disclosure":"aggregated"},
-        {"label":"Receita de transmissão","category":"broadcasting","amount":55.760074,"disclosure":"aggregated"},
-        {"label":"Receita jogos de Futebol","category":"matchday_competition","amount":0.458635,"disclosure":"aggregated"},
-        {"label":"Receitas Publicitária","category":"sponsorship_commercial","amount":5.144984,"disclosure":"aggregated"},
-        {"label":"Receita Loteria Esportiva","category":"other_income","amount":0.693485,"disclosure":"aggregated"},
-        {"label":"Outras Receitas","category":"other_income","amount":0.729818,"disclosure":"aggregated"},
-        {"label":"Receita de Royalties","category":"sponsorship_commercial","amount":0.014645,"disclosure":"aggregated"},
-        {"label":"Receitas Diversas","category":"other_income","amount":0.074639,"disclosure":"aggregated"}
+        {"label":"Venda/Empréstimo de Atletas","category":"player_transfers","subcategory":"player_sales","amount":2.863945,"disclosure":"aggregated"},
+        {"label":"Receitas Patrimoniais","category":"other_revenue","subcategory":"other_income","amount":2.522335,"disclosure":"aggregated"},
+        {"label":"Receita de transmissão","category":"media_rights","subcategory":"broadcasting","amount":55.760074,"disclosure":"aggregated"},
+        {"label":"Receita jogos de Futebol","category":"matchday","subcategory":"matchday_competition","amount":0.458635,"disclosure":"aggregated"},
+        {"label":"Receitas Publicitária","category":"commercial","subcategory":"sponsorship_commercial","amount":5.144984,"disclosure":"aggregated"},
+        {"label":"Receita Loteria Esportiva","category":"other_revenue","subcategory":"other_income","amount":0.693485,"disclosure":"aggregated"},
+        {"label":"Outras Receitas","category":"other_revenue","subcategory":"other_income","amount":0.729818,"disclosure":"aggregated"},
+        {"label":"Receita de Royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.014645,"disclosure":"aggregated"},
+        {"label":"Receitas Diversas","category":"other_revenue","subcategory":"other_income","amount":0.074639,"disclosure":"aggregated"}
       ],
       "expenses": [
         {
           "label": "Remuneração, Benefícios, Encargos, Intermediação, Contratação, Empréstimos e Outros",
-          "category": "lump_football_operations_expense",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
           "amount": -33.655777,
           "disclosure": "aggregated"
         },
-        {"label":"Amortização de direitos e de formação de atletas","category":"player_amortisation","amount":-6.880703,"disclosure":"aggregated"},
+        {
+          "label": "Amortização de direitos e de formação de atletas",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -6.880703,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Jogos, Federação, viagem, serviços, material esportivo e outros",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -8.93362,
           "disclosure": "aggregated"
         },
-        {"label":"Despesas Gerais e administrativas","category":"admin_general_expense","amount":-8.891961,"disclosure":"aggregated"}
+        {
+          "label": "Despesas Gerais e administrativas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -8.891961,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":7.880879,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":68.262559,"expenses":58.362061,"net_result":17.781376},

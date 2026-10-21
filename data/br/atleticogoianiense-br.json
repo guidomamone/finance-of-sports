@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -33,34 +34,70 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"Direitos de Transmissão","category":"broadcasting","amount":4.465,"disclosure":"detailed"},
-        {"label":"Bilheteria","category":"matchday_competition","amount":1.004,"disclosure":"detailed"},
-        {"label":"Patrocínio e publicidade","category":"sponsorship_commercial","amount":8.828,"disclosure":"detailed"},
-        {"label":"Mensalidades Associativas","category":"member_dues","amount":0.312,"disclosure":"detailed"},
-        {"label":"Negociação de atletas","category":"player_sales","amount":37.657,"disclosure":"detailed"},
-        {"label":"Outras receitas","category":"other_income","amount":10.399,"disclosure":"detailed"},
-        {"label":"Programa Sócio Torcedor","category":"member_dues","amount":0.705,"disclosure":"detailed"},
-        {"label":"Receitas Condomínio LFU","category":"broadcasting","amount":10.819,"disclosure":"detailed"},
-        {"label":"Premiações","category":"competition_bonus","amount":2.922,"disclosure":"detailed"},
-        {"label":"Outras receitas e despesas operacionais","category":"other_income","amount":1.589,"disclosure":"detailed"}
+        {"label":"Direitos de Transmissão","category":"media_rights","subcategory":"broadcasting","amount":4.465,"disclosure":"detailed"},
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":1.004,"disclosure":"detailed"},
+        {"label":"Patrocínio e publicidade","category":"commercial","subcategory":"sponsorship_commercial","amount":8.828,"disclosure":"detailed"},
+        {"label":"Mensalidades Associativas","category":"membership","subcategory":"member_dues","amount":0.312,"disclosure":"detailed"},
+        {"label":"Negociação de atletas","category":"player_transfers","subcategory":"player_sales","amount":37.657,"disclosure":"detailed"},
+        {"label":"Outras receitas","category":"other_revenue","subcategory":"other_income","amount":10.399,"disclosure":"detailed"},
+        {"label":"Programa Sócio Torcedor","category":"membership","subcategory":"member_dues","amount":0.705,"disclosure":"detailed"},
+        {"label":"Receitas Condomínio LFU","category":"media_rights","subcategory":"broadcasting","amount":10.819,"disclosure":"detailed"},
+        {"label":"Premiações","category":"prize_money","subcategory":"competition_bonus","amount":2.922,"disclosure":"detailed"},
+        {"label":"Outras receitas e despesas operacionais","category":"other_revenue","subcategory":"other_income","amount":1.589,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Custos com Salários de Atletas/Com. Técnica","category":"wages_squad","amount":-40.6,"disclosure":"detailed"},
-        {"label":"Direito de Imagem","category":"wages_squad","amount":-13.428,"disclosure":"detailed"},
-        {"label":"Despesas com Patrocínio/Premiações (bonos de rendimiento)","category":"match_organisation_expense","amount":-3.16,"disclosure":"detailed"},
-        {"label":"Despesas CBF","category":"match_organisation_expense","amount":-0.238,"disclosure":"detailed"},
-        {"label":"INSS sobre Receita","category":"admin_general_expense","amount":-0.085,"disclosure":"detailed"},
-        {"label":"Fenapaf / Direito de Arena","category":"match_organisation_expense","amount":-0.006,"disclosure":"detailed"},
-        {"label":"Quadro Móvel (logística de partidos)","category":"match_organisation_expense","amount":-0.183,"disclosure":"detailed"},
-        {"label":"Custos com Parcerias com outros clubes","category":"other_expenses","amount":-1.131,"disclosure":"detailed"},
-        {"label":"Comissão/intermediação","category":"other_expenses","amount":-1.209,"disclosure":"detailed"},
-        {"label":"Salários e encargos (administrativo)","category":"wages_squad","amount":-1.506,"disclosure":"detailed"},
-        {"label":"Serviços de Terceiros","category":"admin_general_expense","amount":-2.699,"disclosure":"detailed"},
-        {"label":"Marketing","category":"admin_general_expense","amount":-1.095,"disclosure":"detailed"},
-        {"label":"Amortização do custo de atletas","category":"player_amortisation","amount":-6.074,"disclosure":"detailed"},
-        {"label":"Depreciações","category":"depreciation","amount":-2.156,"disclosure":"detailed"},
-        {"label":"Contingências","category":"other_expenses","amount":-0.003,"disclosure":"detailed"},
-        {"label":"Despesas gerais","category":"admin_general_expense","amount":-3.53,"disclosure":"detailed"}
+        {
+          "label": "Custos com Salários de Atletas/Com. Técnica",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -40.6,
+          "disclosure": "detailed"
+        },
+        {"label":"Direito de Imagem","category":"first_team_staff","subcategory":"wages_squad","amount":-13.428,"disclosure":"detailed"},
+        {
+          "label": "Despesas com Patrocínio/Premiações (bonos de rendimiento)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -3.16,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas CBF","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.238,"disclosure":"detailed"},
+        {"label":"INSS sobre Receita","category":"admin_general","subcategory":"admin_general_expense","amount":-0.085,"disclosure":"detailed"},
+        {
+          "label": "Fenapaf / Direito de Arena",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.006,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Quadro Móvel (logística de partidos)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.183,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Custos com Parcerias com outros clubes",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -1.131,
+          "disclosure": "detailed"
+        },
+        {"label":"Comissão/intermediação","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.209,"disclosure":"detailed"},
+        {"label":"Salários e encargos (administrativo)","category":"first_team_staff","subcategory":"wages_squad","amount":-1.506,"disclosure":"detailed"},
+        {"label":"Serviços de Terceiros","category":"admin_general","subcategory":"admin_general_expense","amount":-2.699,"disclosure":"detailed"},
+        {"label":"Marketing","category":"admin_general","subcategory":"admin_general_expense","amount":-1.095,"disclosure":"detailed"},
+        {
+          "label": "Amortização do custo de atletas",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -6.074,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciações","category":"depreciation","subcategory":"depreciation","amount":-2.156,"disclosure":"detailed"},
+        {"label":"Contingências","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.003,"disclosure":"detailed"},
+        {"label":"Despesas gerais","category":"admin_general","subcategory":"admin_general_expense","amount":-3.53,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.899,"tax":-0.009,"gross_debt":9.666,"cash":0.767},
       "official_totals": {"revenue":78.7,"expenses":77.103,"net_result":0.687}

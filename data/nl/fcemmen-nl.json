@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "NL",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,26 +32,39 @@
       "management_id": null,
       "fx": {"ref":"EUR@2019-06-30"},
       "revenue": [
-        {"label":"Wedstrijdbaten","category":"matchday_competition","amount":1.193,"disclosure":"aggregated"},
-        {"label":"Sponsoring","category":"sponsorship_commercial","amount":3.475,"disclosure":"aggregated"},
-        {"label":"Media gerelateerde baten","category":"broadcasting","amount":1.768,"disclosure":"aggregated"},
-        {"label":"Prijzengeld","category":"competition_bonus","amount":0.325,"disclosure":"aggregated"},
-        {"label":"Horeca","category":"stadium_other","amount":0.579,"disclosure":"aggregated"},
-        {"label":"Merchandise","category":"sponsorship_commercial","amount":0.114,"disclosure":"aggregated"},
-        {"label":"Subsidies & giften","category":"other_income","amount":0.056,"disclosure":"aggregated"},
-        {"label":"Overige baten","category":"other_income","amount":0.133,"disclosure":"aggregated"}
+        {"label":"Wedstrijdbaten","category":"matchday","subcategory":"matchday_competition","amount":1.193,"disclosure":"aggregated"},
+        {"label":"Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":3.475,"disclosure":"aggregated"},
+        {"label":"Media gerelateerde baten","category":"media_rights","subcategory":"broadcasting","amount":1.768,"disclosure":"aggregated"},
+        {"label":"Prijzengeld","category":"prize_money","subcategory":"competition_bonus","amount":0.325,"disclosure":"aggregated"},
+        {"label":"Horeca","category":"venue","subcategory":"stadium_other","amount":0.579,"disclosure":"aggregated"},
+        {"label":"Merchandise","category":"commercial","subcategory":"sponsorship_commercial","amount":0.114,"disclosure":"aggregated"},
+        {"label":"Subsidies & giften","category":"other_revenue","subcategory":"other_income","amount":0.056,"disclosure":"aggregated"},
+        {"label":"Overige baten","category":"other_revenue","subcategory":"other_income","amount":0.133,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Personeelskosten","category":"wages_squad","amount":-3.915,"disclosure":"aggregated"},
-        {"label":"Horeca","category":"other_expenses","amount":-0.43,"disclosure":"aggregated"},
-        {"label":"Verkoopkosten","category":"admin_general_expense","amount":-0.481,"disclosure":"aggregated"},
-        {"label":"Huisvestingskosten","category":"admin_general_expense","amount":-0.527,"disclosure":"aggregated"},
-        {"label":"Wedstrijd- en trainingskosten","category":"match_organisation_expense","amount":-0.67,"disclosure":"aggregated"},
-        {"label":"Algemene kosten","category":"admin_general_expense","amount":-0.304,"disclosure":"aggregated"},
-        {"label":"Afschrijvingskosten imm. & mat. vaste activa","category":"depreciation","amount":-0.203,"disclosure":"aggregated"},
+        {"label":"Personeelskosten","category":"first_team_staff","subcategory":"wages_squad","amount":-3.915,"disclosure":"aggregated"},
+        {"label":"Horeca","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.43,"disclosure":"aggregated"},
+        {"label":"Verkoopkosten","category":"admin_general","subcategory":"admin_general_expense","amount":-0.481,"disclosure":"aggregated"},
+        {"label":"Huisvestingskosten","category":"admin_general","subcategory":"admin_general_expense","amount":-0.527,"disclosure":"aggregated"},
+        {
+          "label": "Wedstrijd- en trainingskosten",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.67,
+          "disclosure": "aggregated"
+        },
+        {"label":"Algemene kosten","category":"admin_general","subcategory":"admin_general_expense","amount":-0.304,"disclosure":"aggregated"},
+        {
+          "label": "Afschrijvingskosten imm. & mat. vaste activa",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.203,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Som der afschr. bijz. waardevermindering en resultaat vergoedingsommen",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -0.062,
           "disclosure": "aggregated"
         }

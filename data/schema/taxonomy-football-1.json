@@ -1,0 +1,213 @@
+{
+  "taxonomy": "football-1",
+  "sport": "football",
+  "description": "Mapa de las subcategorías de este deporte a las categorías genéricas de Finance of Sports. La genérica no se elige: se deriva de esta tabla. Una subcategoría del otro lado (un gasto usado en una línea de ingreso, o al revés) va a la genérica catch-all de su lado. block: la parte del resultado (revenue; operating = gasto operativo en efectivo; non_cash = amortizaciones y depreciación; exceptional). Resultado operativo = ingresos + operating + non_cash + exceptional.",
+  "generic": {
+    "revenue": [
+      {
+        "id": "membership",
+        "block": "revenue",
+        "label_en": "Membership",
+        "label_es": "Cuotas sociales"
+      },
+      {
+        "id": "matchday",
+        "block": "revenue",
+        "label_en": "Matchday",
+        "label_es": "Entradas"
+      },
+      {
+        "id": "season_tickets",
+        "block": "revenue",
+        "label_en": "Season tickets",
+        "label_es": "Abonos"
+      },
+      {
+        "id": "venue",
+        "block": "revenue",
+        "label_en": "Venue (non-matchday)",
+        "label_es": "Estadio: uso fuera del partido"
+      },
+      {
+        "id": "media_rights",
+        "block": "revenue",
+        "label_en": "Media rights",
+        "label_es": "Derechos de TV y medios"
+      },
+      {
+        "id": "prize_money",
+        "block": "revenue",
+        "label_en": "Prize money",
+        "label_es": "Premios por competencias"
+      },
+      {
+        "id": "commercial",
+        "block": "revenue",
+        "label_en": "Commercial",
+        "label_es": "Comercial / sponsors"
+      },
+      {
+        "id": "player_transfers",
+        "block": "revenue",
+        "label_en": "Player transfers",
+        "label_es": "Venta de jugadores"
+      },
+      {
+        "id": "other_sporting_sections",
+        "block": "revenue",
+        "label_en": "Other sporting sections",
+        "label_es": "Otras secciones deportivas"
+      },
+      {
+        "id": "non_sporting_activities",
+        "block": "revenue",
+        "label_en": "Non-sporting activities",
+        "label_es": "Actividades no deportivas"
+      },
+      {
+        "id": "other_revenue",
+        "block": "revenue",
+        "label_en": "Other revenue",
+        "label_es": "Otros ingresos"
+      },
+      {
+        "id": "undisclosed",
+        "block": "revenue",
+        "label_en": "Not broken down by the source",
+        "label_es": "Sin desglosar por la fuente"
+      }
+    ],
+    "expense": [
+      {
+        "id": "first_team_staff",
+        "block": "operating",
+        "label_en": "First-team staff",
+        "label_es": "Salarios del plantel y cuerpo técnico"
+      },
+      {
+        "id": "match_operations",
+        "block": "operating",
+        "label_en": "Match operations",
+        "label_es": "Organización de partidos"
+      },
+      {
+        "id": "other_sporting_sections",
+        "block": "operating",
+        "label_en": "Other sporting sections",
+        "label_es": "Otras secciones deportivas"
+      },
+      {
+        "id": "non_sporting_activities",
+        "block": "operating",
+        "label_en": "Non-sporting activities",
+        "label_es": "Actividades no deportivas"
+      },
+      {
+        "id": "admin_general",
+        "block": "operating",
+        "label_en": "Administration and overheads",
+        "label_es": "Administración y gastos generales"
+      },
+      {
+        "id": "other_operating_expenses",
+        "block": "operating",
+        "label_en": "Other operating expenses",
+        "label_es": "Otros gastos"
+      },
+      {
+        "id": "undisclosed",
+        "block": "operating",
+        "label_en": "Not broken down by the source",
+        "label_es": "Sin desglosar por la fuente"
+      },
+      {
+        "id": "player_registrations_amortisation",
+        "block": "non_cash",
+        "label_en": "Player registrations amortisation",
+        "label_es": "Amortización de pases"
+      },
+      {
+        "id": "player_registrations_impairment",
+        "block": "non_cash",
+        "label_en": "Player registrations impairment",
+        "label_es": "Deterioro de pases"
+      },
+      {
+        "id": "depreciation",
+        "block": "non_cash",
+        "label_en": "Depreciation",
+        "label_es": "Depreciación"
+      },
+      {
+        "id": "other_amortisation",
+        "block": "non_cash",
+        "label_en": "Other amortisation",
+        "label_es": "Otras amortizaciones"
+      },
+      {
+        "id": "exceptional",
+        "block": "exceptional",
+        "label_en": "Exceptional items",
+        "label_es": "Ítems excepcionales"
+      }
+    ]
+  },
+  "subcategories": {
+    "revenue": {
+      "member_dues": "membership",
+      "season_tickets": "season_tickets",
+      "matchday_competition": "matchday",
+      "stadium_other": "venue",
+      "broadcasting": "media_rights",
+      "competition_bonus": "prize_money",
+      "sponsorship_commercial": "commercial",
+      "player_sales": "player_transfers",
+      "other_sports": "other_sporting_sections",
+      "youth_football": "other_sporting_sections",
+      "womens_football": "other_sporting_sections",
+      "education": "non_sporting_activities",
+      "other_income": "other_revenue",
+      "lump_football_operations": "undisclosed",
+      "wages_squad": "other_revenue",
+      "player_amortisation": "other_revenue",
+      "player_impairment": "other_revenue",
+      "depreciation": "other_revenue",
+      "other_amortisation": "other_revenue",
+      "exceptional_items": "other_revenue",
+      "match_organisation_expense": "other_revenue",
+      "education_expense": "other_revenue",
+      "youth_other_sports_expense": "other_revenue",
+      "admin_general_expense": "other_revenue",
+      "other_expenses": "other_revenue",
+      "lump_football_operations_expense": "other_revenue"
+    },
+    "expense": {
+      "member_dues": "other_operating_expenses",
+      "season_tickets": "other_operating_expenses",
+      "matchday_competition": "other_operating_expenses",
+      "stadium_other": "other_operating_expenses",
+      "broadcasting": "other_operating_expenses",
+      "competition_bonus": "other_operating_expenses",
+      "sponsorship_commercial": "other_operating_expenses",
+      "player_sales": "other_operating_expenses",
+      "other_sports": "other_operating_expenses",
+      "youth_football": "other_operating_expenses",
+      "womens_football": "other_operating_expenses",
+      "education": "other_operating_expenses",
+      "other_income": "other_operating_expenses",
+      "lump_football_operations": "other_operating_expenses",
+      "wages_squad": "first_team_staff",
+      "player_amortisation": "player_registrations_amortisation",
+      "player_impairment": "player_registrations_impairment",
+      "depreciation": "depreciation",
+      "other_amortisation": "other_amortisation",
+      "exceptional_items": "exceptional",
+      "match_organisation_expense": "match_operations",
+      "education_expense": "non_sporting_activities",
+      "youth_other_sports_expense": "other_sporting_sections",
+      "admin_general_expense": "admin_general",
+      "other_expenses": "other_operating_expenses",
+      "lump_football_operations_expense": "undisclosed"
+    }
+  }
+}

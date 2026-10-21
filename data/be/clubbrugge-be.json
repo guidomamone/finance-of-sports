@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -32,37 +33,53 @@
       "management_id": "actual",
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Wedstrijdopbrengsten","category":"matchday_competition","amount":27.588,"disclosure":"detailed"},
+        {"label":"Wedstrijdopbrengsten","category":"matchday","subcategory":"matchday_competition","amount":27.588,"disclosure":"detailed"},
         {
           "label": "Opbrengsten uit mediarechten",
-          "category": "broadcasting",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
           "amount": 74.117,
           "disclosure": "detailed",
           "items": [["Binnenlands",12.968],["Europees",61.149]]
         },
-        {"label":"Commerciële opbrengsten","category":"sponsorship_commercial","amount":18.784,"disclosure":"detailed"},
-        {"label":"Overige opbrengsten","category":"other_income","amount":1.778,"disclosure":"aggregated"},
-        {"label":"Meerwaarde bij de overdracht van spelersregistratierechten","category":"player_sales","amount":31.658,"disclosure":"detailed"},
+        {"label":"Commerciële opbrengsten","category":"commercial","subcategory":"sponsorship_commercial","amount":18.784,"disclosure":"detailed"},
+        {"label":"Overige opbrengsten","category":"other_revenue","subcategory":"other_income","amount":1.778,"disclosure":"aggregated"},
+        {
+          "label": "Meerwaarde bij de overdracht van spelersregistratierechten",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 31.658,
+          "disclosure": "detailed"
+        },
         {
           "label": "Overige bedrijfsopbrengsten",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 0.272,
           "disclosure": "detailed",
           "items": [["Lidgeld",0.044],["Giften",0.03],["Overige",0.198]]
         }
       ],
       "expenses": [
-        {"label":"Aankoop van materialen, benodigdheden en overige verbruiksgoederen","category":"other_expenses","amount":-4.985,"disclosure":"detailed"},
+        {
+          "label": "Aankoop van materialen, benodigdheden en overige verbruiksgoederen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -4.985,
+          "disclosure": "detailed"
+        },
         {
           "label": "Overige bedrijfskosten — organisatie, apparatuur, beveiliging, reizen, hotels",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -13.693,
           "disclosure": "detailed",
           "items": [["Organisatie, apparatuur en beveiliging",8.636],["Reiskosten",2.174],["Hotels, restaurants en recepties",2.883]]
         },
         {
           "label": "Overige bedrijfskosten — administratie, huur, nutsvoorzieningen, consulting, interim, belastingen",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -15.625,
           "disclosure": "detailed",
           "items": [
@@ -74,10 +91,17 @@
             ["Overige belastingen",1.208]
           ]
         },
-        {"label":"Lonen van spelers en kosten van technische staf","category":"wages_squad","amount":-48.075,"disclosure":"aggregated"},
+        {
+          "label": "Lonen van spelers en kosten van technische staf",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -48.075,
+          "disclosure": "aggregated"
+        },
         {
           "label": "Overige personeelskosten",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -10.06,
           "disclosure": "detailed",
           "items": [
@@ -88,21 +112,35 @@
             ["Overige kosten",-0.019]
           ]
         },
-        {"label":"Minderwaarde bij de overdracht van spelersregistratierechten","category":"player_impairment","amount":-9.024,"disclosure":"detailed"},
+        {
+          "label": "Minderwaarde bij de overdracht van spelersregistratierechten",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -9.024,
+          "disclosure": "detailed"
+        },
         {
           "label": "Afschrijvingen en waardeverminderingen van spelersregistratierechten",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -26.844,
           "disclosure": "detailed"
         },
         {
           "label": "Afschrijvingen en waardeverminderingen van overige immateriële activa en materiële vaste activa",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -3.293,
           "disclosure": "detailed"
         },
-        {"label":"Afschrijvingen en waardevermindering van een recht-op-gebruik activa","category":"depreciation","amount":-1.731,"disclosure":"detailed"},
-        {"label":"Overige niet-kaskosten","category":"exceptional_items","amount":0.335,"disclosure":"aggregated"}
+        {
+          "label": "Afschrijvingen en waardevermindering van een recht-op-gebruik activa",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -1.731,
+          "disclosure": "detailed"
+        },
+        {"label":"Overige niet-kaskosten","category":"exceptional","subcategory":"exceptional_items","amount":0.335,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.755,"tax":-6.891,"gross_debt":98.745,"cash":21.401},
       "official_totals": {"revenue":154.196,"expenses":133.331,"net_result":16.064}

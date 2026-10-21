@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "RU",
     "reporting_currency": "RUB",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -59,14 +60,20 @@
       "management_id": null,
       "fx": {"ref":"RUB@2021-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":5506.957,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":1405.56,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":5506.957,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":1405.56,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-8309.653,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-29.195,"disclosure":"aggregated"},
-        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-445.974,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-807.17,"disclosure":"aggregated"}
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -8309.653,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-29.195,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general","subcategory":"admin_general_expense","amount":-445.974,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-807.17,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-99.027,"tax":199.48,"gross_debt":3609.622,"cash":2161.343},
       "official_totals": {"revenue":null,"expenses":null,"net_result":-2579.022},
@@ -103,14 +110,20 @@
       "management_id": null,
       "fx": {"ref":"RUB@2022-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":6785.05,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":4514.359,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":6785.05,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":4514.359,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-6168.544,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-25.832,"disclosure":"aggregated"},
-        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-536.424,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-4208.064,"disclosure":"aggregated"}
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -6168.544,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-25.832,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general","subcategory":"admin_general_expense","amount":-536.424,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4208.064,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-316.376,"tax":-41.179,"gross_debt":0,"cash":683.148},
       "official_totals": {"revenue":null,"expenses":null,"net_result":2.99},
@@ -147,14 +160,20 @@
       "management_id": null,
       "fx": {"ref":"RUB@2023-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":7383.651,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":1148.417,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":7383.651,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":1148.417,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-6664.846,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-8.915,"disclosure":"aggregated"},
-        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-645.024,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-1728.129,"disclosure":"aggregated"}
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -6664.846,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-8.915,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general","subcategory":"admin_general_expense","amount":-645.024,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1728.129,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":75.727,"tax":68.597,"gross_debt":0,"cash":107.937},
       "official_totals": {"revenue":null,"expenses":null,"net_result":-370.522},
@@ -191,14 +210,20 @@
       "management_id": null,
       "fx": {"ref":"RUB@2024-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":6718.143,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":1727.029,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":6718.143,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":1727.029,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-6983.275,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-27.221,"disclosure":"aggregated"},
-        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-704.497,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-1904.767,"disclosure":"aggregated"}
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -6983.275,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-27.221,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general","subcategory":"admin_general_expense","amount":-704.497,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1904.767,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":98.692,"tax":277.368,"gross_debt":0,"cash":69.309},
       "official_totals": {"revenue":null,"expenses":null,"net_result":-798.528},
@@ -235,14 +260,20 @@
       "management_id": null,
       "fx": {"ref":"RUB@2025-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":7425.193,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":1325.186,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":7425.193,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":1325.186,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-8377.362,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-35.314,"disclosure":"aggregated"},
-        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-600.601,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-938.988,"disclosure":"aggregated"}
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -8377.362,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-35.314,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general","subcategory":"admin_general_expense","amount":-600.601,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-938.988,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":107.701,"tax":234.746,"gross_debt":0,"cash":295.776},
       "official_totals": {"revenue":null,"expenses":null,"net_result":-859.439},

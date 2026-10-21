@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "CO",
     "reporting_currency": "COP",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -32,27 +33,34 @@
       "management_id": "actual",
       "fx": {"ref":"COP@2025-12-31"},
       "revenue": [
-        {"label":"Matrículas","category":"youth_football","amount":110.99385,"disclosure":"detailed"},
-        {"label":"Mensualidades","category":"youth_football","amount":1182.347006,"disclosure":"detailed"},
-        {"label":"Participación y becas Escuela Iniciación","category":"youth_football","amount":0,"disclosure":"detailed"},
-        {"label":"Taquilla","category":"matchday_competition","amount":1745.3,"disclosure":"detailed"},
-        {"label":"Abonados","category":"season_tickets","amount":101.99,"disclosure":"detailed"},
-        {"label":"Venta de derechos deportivos","category":"player_sales","amount":23394.556566,"disclosure":"detailed"},
-        {"label":"Préstamo de derechos deportivos","category":"player_sales","amount":250,"disclosure":"detailed"},
-        {"label":"Contribución de solidaridad","category":"player_sales","amount":3219.383811,"disclosure":"detailed"},
-        {"label":"Reconocimiento deportivo","category":"other_income","amount":827.807696,"disclosure":"detailed"},
-        {"label":"Publicidad y propaganda","category":"sponsorship_commercial","amount":22.841257,"disclosure":"detailed"},
-        {"label":"Dimayor","category":"broadcasting","amount":6396.711939,"disclosure":"detailed"},
-        {"label":"Federación colombiana de fútbol","category":"competition_bonus","amount":681.01,"disclosure":"detailed"},
-        {"label":"Patrocinio","category":"sponsorship_commercial","amount":2244.247305,"disclosure":"detailed"},
-        {"label":"Cuotas de sostenimiento","category":"member_dues","amount":1207.957773,"disclosure":"detailed"},
-        {"label":"Arrendamientos","category":"other_income","amount":225,"disclosure":"detailed"},
-        {"label":"Venta de mercancías","category":"sponsorship_commercial","amount":1004.718947,"disclosure":"detailed"},
-        {"label":"Otras actividades de servicios","category":"other_income","amount":1230.473765,"disclosure":"detailed"},
-        {"label":"Devoluciones, rebajas y descuentos","category":"other_income","amount":-6956.359533,"disclosure":"detailed"},
+        {"label":"Matrículas","category":"other_sporting_sections","subcategory":"youth_football","amount":110.99385,"disclosure":"detailed"},
+        {"label":"Mensualidades","category":"other_sporting_sections","subcategory":"youth_football","amount":1182.347006,"disclosure":"detailed"},
+        {
+          "label": "Participación y becas Escuela Iniciación",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 0,
+          "disclosure": "detailed"
+        },
+        {"label":"Taquilla","category":"matchday","subcategory":"matchday_competition","amount":1745.3,"disclosure":"detailed"},
+        {"label":"Abonados","category":"season_tickets","subcategory":"season_tickets","amount":101.99,"disclosure":"detailed"},
+        {"label":"Venta de derechos deportivos","category":"player_transfers","subcategory":"player_sales","amount":23394.556566,"disclosure":"detailed"},
+        {"label":"Préstamo de derechos deportivos","category":"player_transfers","subcategory":"player_sales","amount":250,"disclosure":"detailed"},
+        {"label":"Contribución de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":3219.383811,"disclosure":"detailed"},
+        {"label":"Reconocimiento deportivo","category":"other_revenue","subcategory":"other_income","amount":827.807696,"disclosure":"detailed"},
+        {"label":"Publicidad y propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":22.841257,"disclosure":"detailed"},
+        {"label":"Dimayor","category":"media_rights","subcategory":"broadcasting","amount":6396.711939,"disclosure":"detailed"},
+        {"label":"Federación colombiana de fútbol","category":"prize_money","subcategory":"competition_bonus","amount":681.01,"disclosure":"detailed"},
+        {"label":"Patrocinio","category":"commercial","subcategory":"sponsorship_commercial","amount":2244.247305,"disclosure":"detailed"},
+        {"label":"Cuotas de sostenimiento","category":"membership","subcategory":"member_dues","amount":1207.957773,"disclosure":"detailed"},
+        {"label":"Arrendamientos","category":"other_revenue","subcategory":"other_income","amount":225,"disclosure":"detailed"},
+        {"label":"Venta de mercancías","category":"commercial","subcategory":"sponsorship_commercial","amount":1004.718947,"disclosure":"detailed"},
+        {"label":"Otras actividades de servicios","category":"other_revenue","subcategory":"other_income","amount":1230.473765,"disclosure":"detailed"},
+        {"label":"Devoluciones, rebajas y descuentos","category":"other_revenue","subcategory":"other_income","amount":-6956.359533,"disclosure":"detailed"},
         {
           "label": "Otros ingresos (arrendamientos, comisiones, venta de PP&E, reintegro de provisiones, reintegro de costos, indemnizaciones, diversos)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 791.255801,
           "disclosure": "detailed",
           "items": [
@@ -67,11 +75,18 @@
         }
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_expenses","amount":-703.506292,"disclosure":"detailed"},
-        {"label":"Gasto equipo de fútbol: Gastos de personal (plantel)","category":"wages_squad","amount":-8559.779486,"disclosure":"detailed"},
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-703.506292,"disclosure":"detailed"},
+        {
+          "label": "Gasto equipo de fútbol: Gastos de personal (plantel)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -8559.779486,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gasto equipo de fútbol: Organización y logística (arrendamientos, servicios, mantenimiento, adecuación, viajes)",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -2717.328944,
           "disclosure": "detailed",
           "items": [
@@ -84,22 +99,31 @@
         },
         {
           "label": "Gasto equipo de fútbol: Administración del plantel (honorarios, impuestos, contribuciones, seguros, legales)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -700.696033,
           "disclosure": "detailed",
           "items": [["Honorarios",394.120079],["Impuestos",146.435676],["Contribuciones y afiliaciones",153.439745],["Seguros",0],["Gastos legales",6.700533]]
         },
-        {"label":"Gasto equipo de fútbol: Amortizaciones","category":"other_amortisation","amount":-428.902586,"disclosure":"detailed"},
+        {
+          "label": "Gasto equipo de fútbol: Amortizaciones",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -428.902586,
+          "disclosure": "detailed"
+        },
         {
           "label": "Gasto equipo de fútbol: Diversos y provisiones (comisiones de agentes, divisiones menores, derechos deportivos, solidaridad, formación)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -6964.877932,
           "disclosure": "detailed",
           "items": [["Diversos",6936.836861],["Provisión cartera",28.041071]]
         },
         {
           "label": "Gastos de administración (personal, honorarios, impuestos, arrendamientos, contribuciones, servicios, legales, mantenimiento, adecuación, viajes, diversos)",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -2665.570925,
           "disclosure": "detailed",
           "items": [
@@ -116,11 +140,24 @@
             ["Diversos",77.436047]
           ]
         },
-        {"label":"Gastos de administración: Depreciaciones","category":"depreciation","amount":-167.807989,"disclosure":"detailed"},
-        {"label":"Gastos de administración: Amortizaciones","category":"other_amortisation","amount":-67.210962,"disclosure":"detailed"},
+        {
+          "label": "Gastos de administración: Depreciaciones",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -167.807989,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Gastos de administración: Amortizaciones",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -67.210962,
+          "disclosure": "detailed"
+        },
         {
           "label": "Otros gastos (pérdida en venta de bienes, impuestos asumidos, multas y sanciones, donaciones, gastos diversos)",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -229.130853,
           "disclosure": "detailed",
           "items": [

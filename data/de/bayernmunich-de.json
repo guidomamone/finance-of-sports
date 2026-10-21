@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "DE",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -59,7 +60,8 @@
       "revenue": [
         {
           "label": "Umsatz (Konzern, ohne Aufteilung nach Erlösquelle — das Dokument bringt nur den Gesamtwert)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 643.9,
           "disclosure": "aggregated"
         }
@@ -67,13 +69,15 @@
       "expenses": [
         {
           "label": "Aufwendungen vor Abschreibungen (Konzern; aus Umsatz 643,9 - EBITDA 98,4 errechnet)",
-          "category": "lump_football_operations_expense",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
           "amount": -545.5,
           "disclosure": "aggregated"
         },
         {
           "label": "Abschreibungen und Zinsergebnis kombiniert (Konzern; aus EBITDA 98,4 - Gewinn vor Steuern 5,0 errechnet — das Dokument trennt Abschreibungen nicht vom Zinsergebnis, siehe Kommentar)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -93.4,
           "disclosure": "aggregated"
         }
@@ -105,7 +109,8 @@
       "revenue": [
         {
           "label": "Umsatz (Einzelabschluss AG, ohne Aufteilung nach Erlösquelle — das Dokument bringt nur den Gesamtwert)",
-          "category": "lump_football_operations",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
           "amount": 817.3,
           "disclosure": "aggregated"
         }
@@ -113,13 +118,15 @@
       "expenses": [
         {
           "label": "Aufwendungen vor Abschreibungen (Einzelabschluss AG; aus Umsatz 817,3 - EBITDA 153,4 errechnet)",
-          "category": "lump_football_operations_expense",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
           "amount": -663.9,
           "disclosure": "aggregated"
         },
         {
           "label": "Abschreibungen und Zinsergebnis kombiniert (Einzelabschluss AG; aus EBITDA 153,4 - Gewinn vor Steuern 35,5 errechnet — das Dokument trennt Abschreibungen nicht vom Zinsergebnis, siehe Kommentar)",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -117.9,
           "disclosure": "aggregated"
         }
@@ -149,24 +156,49 @@
       "management_id": "actual",
       "fx": {"ref":"EUR@2024-06-30"},
       "revenue": [
-        {"label":"Einnahmen aus dem Spielbetrieb","category":"matchday_competition","amount":226.9,"disclosure":"detailed"},
-        {"label":"Einnahmen aus Sponsoring und Vermarktung","category":"sponsorship_commercial","amount":225.7,"disclosure":"detailed"},
-        {"label":"Einnahmen aus medialer Vermarktung","category":"broadcasting","amount":91.7,"disclosure":"detailed"},
-        {"label":"Einnahmen aus Transfers","category":"player_sales","amount":186.1,"disclosure":"detailed"},
-        {"label":"Einnahmen aus Merchandising","category":"sponsorship_commercial","amount":135.1,"disclosure":"detailed"},
+        {"label":"Einnahmen aus dem Spielbetrieb","category":"matchday","subcategory":"matchday_competition","amount":226.9,"disclosure":"detailed"},
+        {
+          "label": "Einnahmen aus Sponsoring und Vermarktung",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 225.7,
+          "disclosure": "detailed"
+        },
+        {"label":"Einnahmen aus medialer Vermarktung","category":"media_rights","subcategory":"broadcasting","amount":91.7,"disclosure":"detailed"},
+        {"label":"Einnahmen aus Transfers","category":"player_transfers","subcategory":"player_sales","amount":186.1,"disclosure":"detailed"},
+        {"label":"Einnahmen aus Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":135.1,"disclosure":"detailed"},
         {
           "label": "Sonstiges (Mieten und Pachten, New Media, Museum, Abstellungen DFB-Nationalspieler, FC Bayern II, Jugend- und Frauenfußball)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 42.7,
           "disclosure": "detailed"
         }
       ],
       "expenses": [
-        {"label":"Gesamtpersonalaufwand","category":"wages_squad","amount":-396.5,"disclosure":"aggregated_residual"},
-        {"label":"Betriebliche Aufwendungen","category":"other_expenses","amount":-325,"disclosure":"aggregated_residual"},
-        {"label":"Materialaufwand und -einsatz","category":"other_expenses","amount":-53.9,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf Transferentschädigungen","category":"player_amortisation","amount":-89.2,"disclosure":"detailed"},
-        {"label":"Abschreibungen (resto, Anlageabschreibungen)","category":"depreciation","amount":-5.9,"disclosure":"aggregated_residual"}
+        {"label":"Gesamtpersonalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-396.5,"disclosure":"aggregated_residual"},
+        {
+          "label": "Betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -325,
+          "disclosure": "aggregated_residual"
+        },
+        {"label":"Materialaufwand und -einsatz","category":"other_operating_expenses","subcategory":"other_expenses","amount":-53.9,"disclosure":"detailed"},
+        {
+          "label": "Abschreibungen auf Transferentschädigungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -89.2,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen (resto, Anlageabschreibungen)",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -5.9,
+          "disclosure": "aggregated_residual"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":4.4,"tax":-12.6},
       "official_totals": {"revenue":908.1,"expenses":870.5,"net_result":29.5}
@@ -180,24 +212,49 @@
       "management_id": "actual",
       "fx": {"ref":"EUR@2025-06-30"},
       "revenue": [
-        {"label":"Einnahmen aus dem Spielbetrieb","category":"matchday_competition","amount":260.7,"disclosure":"detailed"},
-        {"label":"Einnahmen aus Sponsoring und Vermarktung","category":"sponsorship_commercial","amount":240.4,"disclosure":"detailed"},
-        {"label":"Einnahmen aus medialer Vermarktung","category":"broadcasting","amount":105.3,"disclosure":"detailed"},
-        {"label":"Einnahmen aus Transfers","category":"player_sales","amount":117.7,"disclosure":"detailed"},
-        {"label":"Einnahmen aus Merchandising","category":"sponsorship_commercial","amount":150.5,"disclosure":"detailed"},
+        {"label":"Einnahmen aus dem Spielbetrieb","category":"matchday","subcategory":"matchday_competition","amount":260.7,"disclosure":"detailed"},
+        {
+          "label": "Einnahmen aus Sponsoring und Vermarktung",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 240.4,
+          "disclosure": "detailed"
+        },
+        {"label":"Einnahmen aus medialer Vermarktung","category":"media_rights","subcategory":"broadcasting","amount":105.3,"disclosure":"detailed"},
+        {"label":"Einnahmen aus Transfers","category":"player_transfers","subcategory":"player_sales","amount":117.7,"disclosure":"detailed"},
+        {"label":"Einnahmen aus Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":150.5,"disclosure":"detailed"},
         {
           "label": "Sonstiges (Mieten und Pachten, New Media, Museum, Abstellungen DFB-Nationalspieler, FC Bayern II, Jugend- und Frauenfußball)",
-          "category": "other_income",
+          "category": "other_revenue",
+          "subcategory": "other_income",
           "amount": 51.9,
           "disclosure": "detailed"
         }
       ],
       "expenses": [
-        {"label":"Gesamtpersonalaufwand","category":"wages_squad","amount":-408.3,"disclosure":"aggregated_residual"},
-        {"label":"Betriebliche Aufwendungen","category":"other_expenses","amount":-310,"disclosure":"aggregated_residual"},
-        {"label":"Materialaufwand und -einsatz","category":"other_expenses","amount":-59.9,"disclosure":"detailed"},
-        {"label":"Abschreibungen auf Transferentschädigungen","category":"player_amortisation","amount":-126.4,"disclosure":"detailed"},
-        {"label":"Abschreibungen (resto, Anlageabschreibungen)","category":"depreciation","amount":-5.9,"disclosure":"aggregated_residual"}
+        {"label":"Gesamtpersonalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-408.3,"disclosure":"aggregated_residual"},
+        {
+          "label": "Betriebliche Aufwendungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -310,
+          "disclosure": "aggregated_residual"
+        },
+        {"label":"Materialaufwand und -einsatz","category":"other_operating_expenses","subcategory":"other_expenses","amount":-59.9,"disclosure":"detailed"},
+        {
+          "label": "Abschreibungen auf Transferentschädigungen",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -126.4,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Abschreibungen (resto, Anlageabschreibungen)",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -5.9,
+          "disclosure": "aggregated_residual"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.9,"tax":-6.7},
       "official_totals": {"revenue":926.6,"expenses":910.5,"net_result":11.3}

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "CH",
     "reporting_currency": "CHF",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -73,19 +74,25 @@
       "management_id": null,
       "fx": {"ref":"CHF@2019-06-30"},
       "revenue": [
-        {"label":"Erträge brutto","category":"lump_football_operations","amount":28.001,"disclosure":"aggregated"},
-        {"label":"Ertragsminderungen","category":"other_income","amount":-0.304,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.713,"disclosure":"aggregated"},
-        {"label":"Auflösung Rückstellungen","category":"other_income","amount":0,"disclosure":"aggregated"}
+        {"label":"Erträge brutto","category":"undisclosed","subcategory":"lump_football_operations","amount":28.001,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_revenue","subcategory":"other_income","amount":-0.304,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_revenue","subcategory":"other_income","amount":0.713,"disclosure":"aggregated"},
+        {"label":"Auflösung Rückstellungen","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Direkte Kosten","category":"lump_football_operations_expense","amount":-8.165,"disclosure":"aggregated"},
-        {"label":"Personalaufwand","category":"wages_squad","amount":-14.747,"disclosure":"aggregated"},
-        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-4.145,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-0.846,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.339,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-0.16,"disclosure":"aggregated"},
-        {"label":"Ausserordentliche Abschreibungen","category":"exceptional_items","amount":-3.999,"disclosure":"aggregated"}
+        {"label":"Direkte Kosten","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-8.165,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-14.747,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general","subcategory":"admin_general_expense","amount":-4.145,"disclosure":"aggregated"},
+        {
+          "label": "Abschreibungen Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.846,
+          "disclosure": "aggregated"
+        },
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-1.339,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional","subcategory":"exceptional_items","amount":-0.16,"disclosure":"aggregated"},
+        {"label":"Ausserordentliche Abschreibungen","category":"exceptional","subcategory":"exceptional_items","amount":-3.999,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.067,"tax":-0.004,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":28.41,"expenses":29.242,"net_result":-5.063},
@@ -128,18 +135,24 @@
       "management_id": null,
       "fx": {"ref":"CHF@2020-06-30"},
       "revenue": [
-        {"label":"Erträge brutto","category":"lump_football_operations","amount":29.863,"disclosure":"aggregated"},
-        {"label":"Ertragsminderungen","category":"other_income","amount":-0.666,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.405,"disclosure":"aggregated"}
+        {"label":"Erträge brutto","category":"undisclosed","subcategory":"lump_football_operations","amount":29.863,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_revenue","subcategory":"other_income","amount":-0.666,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_revenue","subcategory":"other_income","amount":0.405,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Direkte Kosten","category":"lump_football_operations_expense","amount":-8.201,"disclosure":"aggregated"},
-        {"label":"Personalaufwand","category":"wages_squad","amount":-13.645,"disclosure":"aggregated"},
-        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-3.77,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.385,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-0.69,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-0.013,"disclosure":"aggregated"},
-        {"label":"Ausserordentliche Abschreibungen","category":"exceptional_items","amount":0,"disclosure":"aggregated"}
+        {"label":"Direkte Kosten","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-8.201,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-13.645,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general","subcategory":"admin_general_expense","amount":-3.77,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-1.385,"disclosure":"aggregated"},
+        {
+          "label": "Abschreibungen Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.69,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional","subcategory":"exceptional_items","amount":-0.013,"disclosure":"aggregated"},
+        {"label":"Ausserordentliche Abschreibungen","category":"exceptional","subcategory":"exceptional_items","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.135,"tax":-0.009,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":29.602,"expenses":27.691,"net_result":1.754},
@@ -183,32 +196,80 @@
       "management_id": null,
       "fx": {"ref":"CHF@2021-06-30"},
       "revenue": [
-        {"label":"Erträge aus Transfers und Leihgebühren","category":"player_sales","amount":4.717,"disclosure":"aggregated"},
-        {"label":"Diverse Erträge inklusive Swiss Football League","category":"other_income","amount":6.116,"disclosure":"aggregated"},
-        {"label":"Erträge aus Future Champs Ostschweiz","category":"youth_football","amount":1.42,"disclosure":"aggregated"},
-        {"label":"Erträge von Gönnern und Mitgliedern","category":"member_dues","amount":0.995,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Fussballspielen","category":"matchday_competition","amount":5.358,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Werbung und Sponsoring","category":"sponsorship_commercial","amount":6.07,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Merchandising","category":"sponsorship_commercial","amount":1.107,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Conference Arena / Diverse Erträge","category":"other_income","amount":0.118,"disclosure":"aggregated"},
-        {"label":"Veränderung Wertberichtigungen","category":"other_income","amount":0.241,"disclosure":"aggregated"},
-        {"label":"Debitorenverluste","category":"other_income","amount":-0.029,"disclosure":"aggregated"},
-        {"label":"Veränderung Wertberichtigungen","category":"other_income","amount":-0.053,"disclosure":"aggregated"},
-        {"label":"Diverse Ertragsminderungen","category":"other_income","amount":-0.09,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":3.822,"disclosure":"aggregated"}
+        {"label":"Erträge aus Transfers und Leihgebühren","category":"player_transfers","subcategory":"player_sales","amount":4.717,"disclosure":"aggregated"},
+        {
+          "label": "Diverse Erträge inklusive Swiss Football League",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 6.116,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Erträge aus Future Champs Ostschweiz",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 1.42,
+          "disclosure": "aggregated"
+        },
+        {"label":"Erträge von Gönnern und Mitgliedern","category":"membership","subcategory":"member_dues","amount":0.995,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Fussballspielen","category":"matchday","subcategory":"matchday_competition","amount":5.358,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Werbung und Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":6.07,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":1.107,"disclosure":"aggregated"},
+        {
+          "label": "Ertrag aus Conference Arena / Diverse Erträge",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 0.118,
+          "disclosure": "aggregated"
+        },
+        {"label":"Veränderung Wertberichtigungen","category":"other_revenue","subcategory":"other_income","amount":0.241,"disclosure":"aggregated"},
+        {"label":"Debitorenverluste","category":"other_revenue","subcategory":"other_income","amount":-0.029,"disclosure":"aggregated"},
+        {"label":"Veränderung Wertberichtigungen","category":"other_revenue","subcategory":"other_income","amount":-0.053,"disclosure":"aggregated"},
+        {"label":"Diverse Ertragsminderungen","category":"other_revenue","subcategory":"other_income","amount":-0.09,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_revenue","subcategory":"other_income","amount":3.822,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Aufwand für Spielbetrieb","category":"match_organisation_expense","amount":-2.289,"disclosure":"aggregated"},
-        {"label":"Aufwand für Transfers","category":"other_expenses","amount":-1.51,"disclosure":"aggregated"},
-        {"label":"Aufwand für Spielorganisation Fussball","category":"match_organisation_expense","amount":-2.961,"disclosure":"aggregated"},
-        {"label":"Aufwand für Werbung und Sponsoring","category":"admin_general_expense","amount":-0.666,"disclosure":"aggregated"},
-        {"label":"Aufwand für Merchandising","category":"other_expenses","amount":-1.043,"disclosure":"aggregated"},
-        {"label":"Aufwand für Conference Arena / Diverses","category":"other_expenses","amount":-0.184,"disclosure":"aggregated"},
-        {"label":"Personalaufwand","category":"wages_squad","amount":-14.058,"disclosure":"aggregated"},
-        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-3.87,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.562,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-0.853,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-0.001,"disclosure":"aggregated"}
+        {
+          "label": "Aufwand für Spielbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.289,
+          "disclosure": "aggregated"
+        },
+        {"label":"Aufwand für Transfers","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.51,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand für Spielorganisation Fussball",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.961,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Aufwand für Werbung und Sponsoring",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.666,
+          "disclosure": "aggregated"
+        },
+        {"label":"Aufwand für Merchandising","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.043,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand für Conference Arena / Diverses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.184,
+          "disclosure": "aggregated"
+        },
+        {"label":"Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-14.058,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general","subcategory":"admin_general_expense","amount":-3.87,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-1.562,"disclosure":"aggregated"},
+        {
+          "label": "Abschreibungen Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.853,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional","subcategory":"exceptional_items","amount":-0.001,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.087,"tax":-0.003,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":29.792,"expenses":28.997,"net_result":0.879},
@@ -223,17 +284,23 @@
       "management_id": null,
       "fx": {"ref":"CHF@2022-06-30"},
       "revenue": [
-        {"label":"Erträge brutto","category":"lump_football_operations","amount":31.998,"disclosure":"aggregated"},
-        {"label":"Ertragsminderungen","category":"other_income","amount":-0.315,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.986,"disclosure":"aggregated"}
+        {"label":"Erträge brutto","category":"undisclosed","subcategory":"lump_football_operations","amount":31.998,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_revenue","subcategory":"other_income","amount":-0.315,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_revenue","subcategory":"other_income","amount":0.986,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Direkte Kosten","category":"lump_football_operations_expense","amount":-8.912,"disclosure":"aggregated"},
-        {"label":"Personalaufwand","category":"wages_squad","amount":-15.459,"disclosure":"aggregated"},
-        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-4.124,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.21,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-1.071,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-0.03,"disclosure":"aggregated"}
+        {"label":"Direkte Kosten","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-8.912,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-15.459,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general","subcategory":"admin_general_expense","amount":-4.124,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-1.21,"disclosure":"aggregated"},
+        {
+          "label": "Abschreibungen Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1.071,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional","subcategory":"exceptional_items","amount":-0.03,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.223,"tax":-0.01,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":32.669,"expenses":30.776,"net_result":1.63},
@@ -276,17 +343,23 @@
       "management_id": null,
       "fx": {"ref":"CHF@2023-06-30"},
       "revenue": [
-        {"label":"Erträge brutto","category":"lump_football_operations","amount":37.47,"disclosure":"aggregated"},
-        {"label":"Ertragsminderungen","category":"other_income","amount":-0.456,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.154,"disclosure":"aggregated"}
+        {"label":"Erträge brutto","category":"undisclosed","subcategory":"lump_football_operations","amount":37.47,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_revenue","subcategory":"other_income","amount":-0.456,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_revenue","subcategory":"other_income","amount":0.154,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Direkte Kosten","category":"lump_football_operations_expense","amount":-11.154,"disclosure":"aggregated"},
-        {"label":"Personalaufwand","category":"wages_squad","amount":-17.004,"disclosure":"aggregated"},
-        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-4.434,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.156,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-1.412,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Aufwand","category":"exceptional_items","amount":-1.127,"disclosure":"aggregated"}
+        {"label":"Direkte Kosten","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-11.154,"disclosure":"aggregated"},
+        {"label":"Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-17.004,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general","subcategory":"admin_general_expense","amount":-4.434,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-1.156,"disclosure":"aggregated"},
+        {
+          "label": "Abschreibungen Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1.412,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ausserordentlicher Aufwand","category":"exceptional","subcategory":"exceptional_items","amount":-1.127,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.264,"tax":-0.014,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":37.168,"expenses":35.16,"net_result":0.603},
@@ -329,33 +402,87 @@
       "management_id": null,
       "fx": {"ref":"CHF@2024-06-30"},
       "revenue": [
-        {"label":"Erträge aus Transfers und Leihgebühren","category":"player_sales","amount":4.886,"disclosure":"aggregated"},
-        {"label":"Diverse Erträge inklusive Swiss Football League","category":"other_income","amount":5.565,"disclosure":"aggregated"},
-        {"label":"Erträge aus Future Champs Ostschweiz","category":"youth_football","amount":1.389,"disclosure":"aggregated"},
-        {"label":"Erträge von Gönnern und Mitgliedern","category":"member_dues","amount":1.219,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Fussballspielen","category":"matchday_competition","amount":9.168,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Werbung und Sponsoring","category":"sponsorship_commercial","amount":8.544,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Hospitality und Logen","category":"stadium_other","amount":4.916,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Merchandising","category":"sponsorship_commercial","amount":2.094,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Drittveranstaltungen","category":"other_income","amount":0.076,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Conference Arena / Diverse Erträge","category":"other_income","amount":1.335,"disclosure":"aggregated"},
-        {"label":"Veränderung Wertberichtigungen","category":"other_income","amount":0.006,"disclosure":"aggregated"},
-        {"label":"Ertragsminderungen","category":"other_income","amount":-0.369,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":1.482,"disclosure":"aggregated"}
+        {"label":"Erträge aus Transfers und Leihgebühren","category":"player_transfers","subcategory":"player_sales","amount":4.886,"disclosure":"aggregated"},
+        {
+          "label": "Diverse Erträge inklusive Swiss Football League",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 5.565,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Erträge aus Future Champs Ostschweiz",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 1.389,
+          "disclosure": "aggregated"
+        },
+        {"label":"Erträge von Gönnern und Mitgliedern","category":"membership","subcategory":"member_dues","amount":1.219,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Fussballspielen","category":"matchday","subcategory":"matchday_competition","amount":9.168,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Werbung und Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":8.544,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Hospitality und Logen","category":"venue","subcategory":"stadium_other","amount":4.916,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.094,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Drittveranstaltungen","category":"other_revenue","subcategory":"other_income","amount":0.076,"disclosure":"aggregated"},
+        {
+          "label": "Ertrag aus Conference Arena / Diverse Erträge",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 1.335,
+          "disclosure": "aggregated"
+        },
+        {"label":"Veränderung Wertberichtigungen","category":"other_revenue","subcategory":"other_income","amount":0.006,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_revenue","subcategory":"other_income","amount":-0.369,"disclosure":"aggregated"},
+        {"label":"Ausserordentlicher Ertrag","category":"other_revenue","subcategory":"other_income","amount":1.482,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Aufwand für Spielbetrieb","category":"match_organisation_expense","amount":-4.051,"disclosure":"aggregated"},
-        {"label":"Aufwand für Transfers","category":"other_expenses","amount":-0.791,"disclosure":"aggregated"},
-        {"label":"Aufwand für Spielorganisation Fussball","category":"match_organisation_expense","amount":-3.295,"disclosure":"aggregated"},
-        {"label":"Aufwand für Catering","category":"other_expenses","amount":-2.013,"disclosure":"aggregated"},
-        {"label":"Aufwand für Werbung und Sponsoring","category":"admin_general_expense","amount":-0.945,"disclosure":"aggregated"},
-        {"label":"Aufwand für Merchandising","category":"other_expenses","amount":-1.394,"disclosure":"aggregated"},
-        {"label":"Aufwand für Drittveranstaltungen","category":"other_expenses","amount":-0.015,"disclosure":"aggregated"},
-        {"label":"Aufwand für Conference Arena / Diverses","category":"other_expenses","amount":-0.101,"disclosure":"aggregated"},
-        {"label":"Personalaufwand","category":"wages_squad","amount":-19.95,"disclosure":"aggregated"},
-        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-5,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.373,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-1.279,"disclosure":"aggregated"}
+        {
+          "label": "Aufwand für Spielbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -4.051,
+          "disclosure": "aggregated"
+        },
+        {"label":"Aufwand für Transfers","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.791,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand für Spielorganisation Fussball",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -3.295,
+          "disclosure": "aggregated"
+        },
+        {"label":"Aufwand für Catering","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.013,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand für Werbung und Sponsoring",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.945,
+          "disclosure": "aggregated"
+        },
+        {"label":"Aufwand für Merchandising","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.394,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand für Drittveranstaltungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.015,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Aufwand für Conference Arena / Diverses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.101,
+          "disclosure": "aggregated"
+        },
+        {"label":"Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-19.95,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general","subcategory":"admin_general_expense","amount":-5,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-1.373,"disclosure":"aggregated"},
+        {
+          "label": "Abschreibungen Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1.279,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.079,"tax":-0.012,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":40.311,"expenses":40.207,"net_result":0.013},
@@ -370,33 +497,87 @@
       "management_id": null,
       "fx": {"ref":"CHF@2025-06-30"},
       "revenue": [
-        {"label":"Erträge aus Transfers und Leihgebühren","category":"player_sales","amount":3.353,"disclosure":"aggregated"},
-        {"label":"Diverse Erträge inklusive Swiss Football League","category":"other_income","amount":9.512,"disclosure":"aggregated"},
-        {"label":"Erträge aus FutureChampsOstschweiz","category":"youth_football","amount":1.416,"disclosure":"aggregated"},
-        {"label":"Erträge von Gönnern und Mitgliedern","category":"member_dues","amount":1.246,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Fussballspielen","category":"matchday_competition","amount":11.607,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Werbung und Sponsoring","category":"sponsorship_commercial","amount":9.547,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Hospitality und Logen","category":"stadium_other","amount":5.167,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Merchandising","category":"sponsorship_commercial","amount":2.32,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Drittveranstaltungen","category":"other_income","amount":0.107,"disclosure":"aggregated"},
-        {"label":"Ertrag aus Conference Arena / Diverse Erträge","category":"other_income","amount":1.245,"disclosure":"aggregated"},
-        {"label":"Ausserordentlicher Ertrag","category":"other_income","amount":0.044,"disclosure":"aggregated"},
-        {"label":"Veränderung Wertberichtigungen","category":"other_income","amount":0.021,"disclosure":"aggregated"},
-        {"label":"Ertragsminderungen","category":"other_income","amount":-0.484,"disclosure":"aggregated"}
+        {"label":"Erträge aus Transfers und Leihgebühren","category":"player_transfers","subcategory":"player_sales","amount":3.353,"disclosure":"aggregated"},
+        {
+          "label": "Diverse Erträge inklusive Swiss Football League",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 9.512,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Erträge aus FutureChampsOstschweiz",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 1.416,
+          "disclosure": "aggregated"
+        },
+        {"label":"Erträge von Gönnern und Mitgliedern","category":"membership","subcategory":"member_dues","amount":1.246,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Fussballspielen","category":"matchday","subcategory":"matchday_competition","amount":11.607,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Werbung und Sponsoring","category":"commercial","subcategory":"sponsorship_commercial","amount":9.547,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Hospitality und Logen","category":"venue","subcategory":"stadium_other","amount":5.167,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Merchandising","category":"commercial","subcategory":"sponsorship_commercial","amount":2.32,"disclosure":"aggregated"},
+        {"label":"Ertrag aus Drittveranstaltungen","category":"other_revenue","subcategory":"other_income","amount":0.107,"disclosure":"aggregated"},
+        {
+          "label": "Ertrag aus Conference Arena / Diverse Erträge",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 1.245,
+          "disclosure": "aggregated"
+        },
+        {"label":"Ausserordentlicher Ertrag","category":"other_revenue","subcategory":"other_income","amount":0.044,"disclosure":"aggregated"},
+        {"label":"Veränderung Wertberichtigungen","category":"other_revenue","subcategory":"other_income","amount":0.021,"disclosure":"aggregated"},
+        {"label":"Ertragsminderungen","category":"other_revenue","subcategory":"other_income","amount":-0.484,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Aufwand für Spielbetrieb","category":"match_organisation_expense","amount":-4.845,"disclosure":"aggregated"},
-        {"label":"Aufwand für Transfers","category":"other_expenses","amount":-1.378,"disclosure":"aggregated"},
-        {"label":"Aufwand für Spielorganisation Fussball","category":"match_organisation_expense","amount":-3.701,"disclosure":"aggregated"},
-        {"label":"Aufwand für Catering","category":"other_expenses","amount":-2.164,"disclosure":"aggregated"},
-        {"label":"Aufwand für Werbung und Sponsoring","category":"admin_general_expense","amount":-1.005,"disclosure":"aggregated"},
-        {"label":"Aufwand für Mechandising","category":"other_expenses","amount":-1.876,"disclosure":"aggregated"},
-        {"label":"Aufwand für Drittveranstaltungen","category":"other_expenses","amount":-0.012,"disclosure":"aggregated"},
-        {"label":"Aufwand für Conference Arena / Diverses","category":"other_expenses","amount":-0.074,"disclosure":"aggregated"},
-        {"label":"Personalaufwand","category":"wages_squad","amount":-20.833,"disclosure":"aggregated"},
-        {"label":"Sonstiger Betriebsaufwand","category":"admin_general_expense","amount":-5.372,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Sachanlagen","category":"depreciation","amount":-1.362,"disclosure":"aggregated"},
-        {"label":"Abschreibungen Spielerwerte","category":"player_amortisation","amount":-2.059,"disclosure":"aggregated"}
+        {
+          "label": "Aufwand für Spielbetrieb",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -4.845,
+          "disclosure": "aggregated"
+        },
+        {"label":"Aufwand für Transfers","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.378,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand für Spielorganisation Fussball",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -3.701,
+          "disclosure": "aggregated"
+        },
+        {"label":"Aufwand für Catering","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.164,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand für Werbung und Sponsoring",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.005,
+          "disclosure": "aggregated"
+        },
+        {"label":"Aufwand für Mechandising","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.876,"disclosure":"aggregated"},
+        {
+          "label": "Aufwand für Drittveranstaltungen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.012,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Aufwand für Conference Arena / Diverses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.074,
+          "disclosure": "aggregated"
+        },
+        {"label":"Personalaufwand","category":"first_team_staff","subcategory":"wages_squad","amount":-20.833,"disclosure":"aggregated"},
+        {"label":"Sonstiger Betriebsaufwand","category":"admin_general","subcategory":"admin_general_expense","amount":-5.372,"disclosure":"aggregated"},
+        {"label":"Abschreibungen Sachanlagen","category":"depreciation","subcategory":"depreciation","amount":-1.362,"disclosure":"aggregated"},
+        {
+          "label": "Abschreibungen Spielerwerte",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -2.059,
+          "disclosure": "aggregated"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.292,"tax":-0.011,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":45.101,"expenses":44.681,"net_result":0.117},

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "BR",
     "reporting_currency": "BRL",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -41,35 +42,101 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2024-12-31"},
       "revenue": [
-        {"label":"Direitos de transmissão","category":"broadcasting","amount":13.48,"disclosure":"detailed"},
-        {"label":"Bilheteria","category":"matchday_competition","amount":3.254,"disclosure":"detailed"},
-        {"label":"Patrocínio","category":"sponsorship_commercial","amount":7.784,"disclosure":"detailed"},
-        {"label":"Programa de sócio torcedor","category":"member_dues","amount":3.26,"disclosure":"detailed"},
-        {"label":"Timemania","category":"other_income","amount":0.5,"disclosure":"detailed"},
-        {"label":"Outras receitas (futebol)","category":"other_income","amount":0.631,"disclosure":"detailed"},
-        {"label":"Clube social - contribuições e taxas","category":"member_dues","amount":0.741,"disclosure":"detailed"},
-        {"label":"Escolinhas de futebol","category":"youth_football","amount":0.413,"disclosure":"detailed"},
-        {"label":"Outras receitas (social)","category":"other_income","amount":0.245,"disclosure":"detailed"}
+        {"label":"Direitos de transmissão","category":"media_rights","subcategory":"broadcasting","amount":13.48,"disclosure":"detailed"},
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":3.254,"disclosure":"detailed"},
+        {"label":"Patrocínio","category":"commercial","subcategory":"sponsorship_commercial","amount":7.784,"disclosure":"detailed"},
+        {"label":"Programa de sócio torcedor","category":"membership","subcategory":"member_dues","amount":3.26,"disclosure":"detailed"},
+        {"label":"Timemania","category":"other_revenue","subcategory":"other_income","amount":0.5,"disclosure":"detailed"},
+        {"label":"Outras receitas (futebol)","category":"other_revenue","subcategory":"other_income","amount":0.631,"disclosure":"detailed"},
+        {"label":"Clube social - contribuições e taxas","category":"membership","subcategory":"member_dues","amount":0.741,"disclosure":"detailed"},
+        {"label":"Escolinhas de futebol","category":"other_sporting_sections","subcategory":"youth_football","amount":0.413,"disclosure":"detailed"},
+        {"label":"Outras receitas (social)","category":"other_revenue","subcategory":"other_income","amount":0.245,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Salários e encargos (futebol profissional)","category":"wages_squad","amount":-10.327,"disclosure":"detailed"},
-        {"label":"Direitos de imagem","category":"wages_squad","amount":-7.436,"disclosure":"detailed"},
-        {"label":"Comissão Técnica","category":"wages_squad","amount":-2.443,"disclosure":"detailed"},
-        {"label":"Taxas de Federações e Confederações","category":"match_organisation_expense","amount":-0.775,"disclosure":"detailed"},
-        {"label":"Amortização do custo de atletas","category":"player_amortisation","amount":-0.1,"disclosure":"detailed"},
-        {"label":"Depreciações (futebol profissional)","category":"depreciation","amount":-0.094,"disclosure":"detailed"},
-        {"label":"Bilheteria (Custo)","category":"match_organisation_expense","amount":-0.55,"disclosure":"detailed"},
-        {"label":"Viagens e Hospedagens","category":"match_organisation_expense","amount":-1.05,"disclosure":"detailed"},
-        {"label":"Serviços de terceiros (futebol profissional)","category":"admin_general_expense","amount":-2.006,"disclosure":"detailed"},
-        {"label":"Despesas administrativas (futebol profissional)","category":"admin_general_expense","amount":-1.405,"disclosure":"detailed"},
-        {"label":"Despesas da base","category":"youth_other_sports_expense","amount":-0.617,"disclosure":"detailed"},
-        {"label":"Despesas gerais (futebol profissional)","category":"admin_general_expense","amount":-2.25,"disclosure":"detailed"},
-        {"label":"Salários e encargos (esportes amadores e clube social)","category":"youth_other_sports_expense","amount":-0.368,"disclosure":"detailed"},
-        {"label":"Serviços de terceiros (esportes amadores e clube social)","category":"youth_other_sports_expense","amount":-0.183,"disclosure":"detailed"},
-        {"label":"Despesas gerais (esportes amadores e clube social)","category":"youth_other_sports_expense","amount":-0.03,"disclosure":"detailed"},
-        {"label":"Depreciações (esportes amadores e clube social)","category":"depreciation","amount":-0.001,"disclosure":"detailed"},
-        {"label":"Obras e Manutenções","category":"admin_general_expense","amount":-0.587,"disclosure":"detailed"},
-        {"label":"Despesas administrativas (esportes amadores e clube social)","category":"admin_general_expense","amount":-0.334,"disclosure":"detailed"}
+        {
+          "label": "Salários e encargos (futebol profissional)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -10.327,
+          "disclosure": "detailed"
+        },
+        {"label":"Direitos de imagem","category":"first_team_staff","subcategory":"wages_squad","amount":-7.436,"disclosure":"detailed"},
+        {"label":"Comissão Técnica","category":"first_team_staff","subcategory":"wages_squad","amount":-2.443,"disclosure":"detailed"},
+        {
+          "label": "Taxas de Federações e Confederações",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.775,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortização do custo de atletas",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.1,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciações (futebol profissional)","category":"depreciation","subcategory":"depreciation","amount":-0.094,"disclosure":"detailed"},
+        {"label":"Bilheteria (Custo)","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.55,"disclosure":"detailed"},
+        {"label":"Viagens e Hospedagens","category":"match_operations","subcategory":"match_organisation_expense","amount":-1.05,"disclosure":"detailed"},
+        {
+          "label": "Serviços de terceiros (futebol profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.006,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas administrativas (futebol profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.405,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas da base","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-0.617,"disclosure":"detailed"},
+        {
+          "label": "Despesas gerais (futebol profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.25,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Salários e encargos (esportes amadores e clube social)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.368,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de terceiros (esportes amadores e clube social)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.183,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas gerais (esportes amadores e clube social)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.03,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Depreciações (esportes amadores e clube social)",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.001,
+          "disclosure": "detailed"
+        },
+        {"label":"Obras e Manutenções","category":"admin_general","subcategory":"admin_general_expense","amount":-0.587,"disclosure":"detailed"},
+        {
+          "label": "Despesas administrativas (esportes amadores e clube social)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.334,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.001,"tax":0,"gross_debt":0.425,"cash":1.343},
       "official_totals": {"revenue":30.308,"expenses":30.554,"net_result":-0.246}
@@ -83,40 +150,118 @@
       "management_id": "sinconfirmar",
       "fx": {"ref":"BRL@2025-12-31"},
       "revenue": [
-        {"label":"Direitos de transmissão","category":"broadcasting","amount":14.033,"disclosure":"detailed"},
-        {"label":"Bilheteria","category":"matchday_competition","amount":2.271,"disclosure":"detailed"},
-        {"label":"Patrocínio","category":"sponsorship_commercial","amount":7.266,"disclosure":"detailed"},
-        {"label":"Premiações (receita)","category":"competition_bonus","amount":5.281,"disclosure":"detailed"},
-        {"label":"Programa de sócio torcedor","category":"member_dues","amount":4.005,"disclosure":"detailed"},
-        {"label":"Timemania","category":"other_income","amount":0.467,"disclosure":"detailed"},
-        {"label":"Negociação de Atletas","category":"player_sales","amount":3.617,"disclosure":"detailed"},
-        {"label":"Outras receitas (futebol)","category":"other_income","amount":0.831,"disclosure":"detailed"},
-        {"label":"Clube social - contribuições e taxas","category":"member_dues","amount":0.924,"disclosure":"detailed"},
-        {"label":"Escolinhas de futebol","category":"youth_football","amount":0.504,"disclosure":"detailed"},
-        {"label":"Shows e Eventos","category":"other_income","amount":0.096,"disclosure":"detailed"},
-        {"label":"Outras receitas (social)","category":"other_income","amount":0.219,"disclosure":"detailed"}
+        {"label":"Direitos de transmissão","category":"media_rights","subcategory":"broadcasting","amount":14.033,"disclosure":"detailed"},
+        {"label":"Bilheteria","category":"matchday","subcategory":"matchday_competition","amount":2.271,"disclosure":"detailed"},
+        {"label":"Patrocínio","category":"commercial","subcategory":"sponsorship_commercial","amount":7.266,"disclosure":"detailed"},
+        {"label":"Premiações (receita)","category":"prize_money","subcategory":"competition_bonus","amount":5.281,"disclosure":"detailed"},
+        {"label":"Programa de sócio torcedor","category":"membership","subcategory":"member_dues","amount":4.005,"disclosure":"detailed"},
+        {"label":"Timemania","category":"other_revenue","subcategory":"other_income","amount":0.467,"disclosure":"detailed"},
+        {"label":"Negociação de Atletas","category":"player_transfers","subcategory":"player_sales","amount":3.617,"disclosure":"detailed"},
+        {"label":"Outras receitas (futebol)","category":"other_revenue","subcategory":"other_income","amount":0.831,"disclosure":"detailed"},
+        {"label":"Clube social - contribuições e taxas","category":"membership","subcategory":"member_dues","amount":0.924,"disclosure":"detailed"},
+        {"label":"Escolinhas de futebol","category":"other_sporting_sections","subcategory":"youth_football","amount":0.504,"disclosure":"detailed"},
+        {"label":"Shows e Eventos","category":"other_revenue","subcategory":"other_income","amount":0.096,"disclosure":"detailed"},
+        {"label":"Outras receitas (social)","category":"other_revenue","subcategory":"other_income","amount":0.219,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Salários e encargos (futebol profissional)","category":"wages_squad","amount":-14.438,"disclosure":"detailed"},
-        {"label":"Direitos de imagem","category":"wages_squad","amount":-10.349,"disclosure":"detailed"},
-        {"label":"Premiações (gasto, bônus por resultados)","category":"wages_squad","amount":-0.323,"disclosure":"detailed"},
-        {"label":"Comissão Técnica","category":"wages_squad","amount":-1.69,"disclosure":"detailed"},
-        {"label":"Taxas de Federações e Confederações","category":"match_organisation_expense","amount":-1.026,"disclosure":"detailed"},
-        {"label":"Amortização do custo de atletas","category":"player_amortisation","amount":-0.122,"disclosure":"detailed"},
-        {"label":"Depreciações (futebol profissional)","category":"depreciation","amount":-0.092,"disclosure":"detailed"},
-        {"label":"Bilheteria (Custo, futebol profissional)","category":"match_organisation_expense","amount":-0.82,"disclosure":"detailed"},
-        {"label":"Viagens e Hospedagens","category":"match_organisation_expense","amount":-0.592,"disclosure":"detailed"},
-        {"label":"Serviços de terceiros (futebol profissional)","category":"admin_general_expense","amount":-3.087,"disclosure":"detailed"},
-        {"label":"Despesas administrativas (futebol profissional)","category":"admin_general_expense","amount":-1.331,"disclosure":"detailed"},
-        {"label":"Despesas da base","category":"youth_other_sports_expense","amount":-0.21,"disclosure":"detailed"},
-        {"label":"Despesas gerais (futebol profissional)","category":"admin_general_expense","amount":-3.819,"disclosure":"detailed"},
-        {"label":"Salários e encargos (esportes amadores e clube social)","category":"youth_other_sports_expense","amount":-0.566,"disclosure":"detailed"},
-        {"label":"Serviços de terceiros (esportes amadores e clube social)","category":"youth_other_sports_expense","amount":-0.104,"disclosure":"detailed"},
-        {"label":"Despesas gerais (esportes amadores e clube social)","category":"youth_other_sports_expense","amount":-0.038,"disclosure":"detailed"},
-        {"label":"Depreciações (esportes amadores e clube social)","category":"depreciation","amount":-0.001,"disclosure":"detailed"},
-        {"label":"Bilheteria (Custo, esportes amadores)","category":"youth_other_sports_expense","amount":-0.003,"disclosure":"detailed"},
-        {"label":"Obras e Manutenções","category":"admin_general_expense","amount":-0.476,"disclosure":"detailed"},
-        {"label":"Despesas administrativas (esportes amadores e clube social)","category":"admin_general_expense","amount":-0.436,"disclosure":"detailed"}
+        {
+          "label": "Salários e encargos (futebol profissional)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -14.438,
+          "disclosure": "detailed"
+        },
+        {"label":"Direitos de imagem","category":"first_team_staff","subcategory":"wages_squad","amount":-10.349,"disclosure":"detailed"},
+        {"label":"Premiações (gasto, bônus por resultados)","category":"first_team_staff","subcategory":"wages_squad","amount":-0.323,"disclosure":"detailed"},
+        {"label":"Comissão Técnica","category":"first_team_staff","subcategory":"wages_squad","amount":-1.69,"disclosure":"detailed"},
+        {
+          "label": "Taxas de Federações e Confederações",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.026,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Amortização do custo de atletas",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.122,
+          "disclosure": "detailed"
+        },
+        {"label":"Depreciações (futebol profissional)","category":"depreciation","subcategory":"depreciation","amount":-0.092,"disclosure":"detailed"},
+        {
+          "label": "Bilheteria (Custo, futebol profissional)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.82,
+          "disclosure": "detailed"
+        },
+        {"label":"Viagens e Hospedagens","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.592,"disclosure":"detailed"},
+        {
+          "label": "Serviços de terceiros (futebol profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.087,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas administrativas (futebol profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.331,
+          "disclosure": "detailed"
+        },
+        {"label":"Despesas da base","category":"other_sporting_sections","subcategory":"youth_other_sports_expense","amount":-0.21,"disclosure":"detailed"},
+        {
+          "label": "Despesas gerais (futebol profissional)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.819,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Salários e encargos (esportes amadores e clube social)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.566,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Serviços de terceiros (esportes amadores e clube social)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.104,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Despesas gerais (esportes amadores e clube social)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.038,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Depreciações (esportes amadores e clube social)",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.001,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Bilheteria (Custo, esportes amadores)",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -0.003,
+          "disclosure": "detailed"
+        },
+        {"label":"Obras e Manutenções","category":"admin_general","subcategory":"admin_general_expense","amount":-0.476,"disclosure":"detailed"},
+        {
+          "label": "Despesas administrativas (esportes amadores e clube social)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.436,
+          "disclosure": "detailed"
+        }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.061,"tax":0,"gross_debt":0,"cash":1.363},
       "official_totals": {"revenue":39.514,"expenses":39.523,"net_result":0.052}

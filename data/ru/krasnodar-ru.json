@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "RU",
     "reporting_currency": "RUB",
     "fiscal_year_start": "01-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -59,14 +60,20 @@
       "management_id": null,
       "fx": {"ref":"RUB@2021-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":3368.643,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":1384.005,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":3368.643,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":1384.005,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-4497.071,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-150.006,"disclosure":"aggregated"},
-        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-108.919,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-3055.249,"disclosure":"aggregated"}
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -4497.071,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-150.006,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general","subcategory":"admin_general_expense","amount":-108.919,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3055.249,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":73.322,"tax":594.387,"gross_debt":0,"cash":217.873},
       "official_totals": {"revenue":null,"expenses":null,"net_result":-2390.888},
@@ -106,14 +113,20 @@
       "management_id": null,
       "fx": {"ref":"RUB@2022-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":3180.351,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":4500.664,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":3180.351,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":4500.664,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-3238.92,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-172.376,"disclosure":"aggregated"},
-        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-125.734,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-9089.867,"disclosure":"aggregated"}
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -3238.92,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-172.376,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general","subcategory":"admin_general_expense","amount":-125.734,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-9089.867,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":52.206,"tax":84.424,"gross_debt":0,"cash":3431.495},
       "official_totals": {"revenue":null,"expenses":null,"net_result":-4809.252},
@@ -149,14 +162,20 @@
       "management_id": null,
       "fx": {"ref":"RUB@2023-12-31"},
       "revenue": [
-        {"label":"Выручка (2110)","category":"lump_football_operations","amount":4030.342,"disclosure":"aggregated"},
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":6625.309,"disclosure":"aggregated"}
+        {"label":"Выручка (2110)","category":"undisclosed","subcategory":"lump_football_operations","amount":4030.342,"disclosure":"aggregated"},
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":6625.309,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Себестоимость продаж (2120)","category":"lump_football_operations_expense","amount":-3987.725,"disclosure":"aggregated"},
-        {"label":"Коммерческие расходы (2210)","category":"admin_general_expense","amount":-240.986,"disclosure":"aggregated"},
-        {"label":"Управленческие расходы (2220)","category":"admin_general_expense","amount":-121.486,"disclosure":"aggregated"},
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-3085.193,"disclosure":"aggregated"}
+        {
+          "label": "Себестоимость продаж (2120)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -3987.725,
+          "disclosure": "aggregated"
+        },
+        {"label":"Коммерческие расходы (2210)","category":"admin_general","subcategory":"admin_general_expense","amount":-240.986,"disclosure":"aggregated"},
+        {"label":"Управленческие расходы (2220)","category":"admin_general","subcategory":"admin_general_expense","amount":-121.486,"disclosure":"aggregated"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3085.193,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":881.4,"tax":212.724,"gross_debt":0,"cash":402.022},
       "official_totals": {"revenue":null,"expenses":null,"net_result":4314.385},
@@ -197,27 +216,28 @@
       "management_id": null,
       "fx": {"ref":"RUB@2024-12-31"},
       "revenue": [
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":7186.301,"disclosure":"aggregated"},
-        {"label":"Размещение спонсорской рекламы","category":"sponsorship_commercial","amount":1905.084,"disclosure":"detailed"},
-        {"label":"Реализация коммерческих прав на трансляцию","category":"broadcasting","amount":920.893,"disclosure":"detailed"},
-        {"label":"Размещение рекламной продукции","category":"sponsorship_commercial","amount":692.181,"disclosure":"detailed"},
-        {"label":"Атрибутика","category":"sponsorship_commercial","amount":340.684,"disclosure":"detailed"},
-        {"label":"Продажа билетов","category":"matchday_competition","amount":311.228,"disclosure":"detailed"},
-        {"label":"Продажа абонементов","category":"season_tickets","amount":254.062,"disclosure":"detailed"},
-        {"label":"Прочие","category":"other_income","amount":75.777,"disclosure":"detailed"}
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":7186.301,"disclosure":"aggregated"},
+        {"label":"Размещение спонсорской рекламы","category":"commercial","subcategory":"sponsorship_commercial","amount":1905.084,"disclosure":"detailed"},
+        {"label":"Реализация коммерческих прав на трансляцию","category":"media_rights","subcategory":"broadcasting","amount":920.893,"disclosure":"detailed"},
+        {"label":"Размещение рекламной продукции","category":"commercial","subcategory":"sponsorship_commercial","amount":692.181,"disclosure":"detailed"},
+        {"label":"Атрибутика","category":"commercial","subcategory":"sponsorship_commercial","amount":340.684,"disclosure":"detailed"},
+        {"label":"Продажа билетов","category":"matchday","subcategory":"matchday_competition","amount":311.228,"disclosure":"detailed"},
+        {"label":"Продажа абонементов","category":"season_tickets","subcategory":"season_tickets","amount":254.062,"disclosure":"detailed"},
+        {"label":"Прочие","category":"other_revenue","subcategory":"other_income","amount":75.777,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-7330.711,"disclosure":"aggregated"},
-        {"label":"Материальные затраты","category":"admin_general_expense","amount":-341.694,"disclosure":"detailed"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-7330.711,"disclosure":"aggregated"},
+        {"label":"Материальные затраты","category":"admin_general","subcategory":"admin_general_expense","amount":-341.694,"disclosure":"detailed"},
         {
           "label": "Расходы, связанные с основным видом деятельности (в том числе расходы по организации тренировочного процесса, подготовке к соревнованиям)",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -972.149,
           "disclosure": "detailed"
         },
-        {"label":"Расходы на оплату труда","category":"wages_squad","amount":-3961.42,"disclosure":"detailed"},
-        {"label":"Отчисления на социальные нужды","category":"wages_squad","amount":-362.808,"disclosure":"detailed"},
-        {"label":"Амортизация","category":"depreciation","amount":-91.4,"disclosure":"detailed"}
+        {"label":"Расходы на оплату труда","category":"first_team_staff","subcategory":"wages_squad","amount":-3961.42,"disclosure":"detailed"},
+        {"label":"Отчисления на социальные нужды","category":"first_team_staff","subcategory":"wages_squad","amount":-362.808,"disclosure":"detailed"},
+        {"label":"Амортизация","category":"depreciation","subcategory":"depreciation","amount":-91.4,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1279.59,"tax":504.643,"gross_debt":0,"cash":427.635},
       "official_totals": {"revenue":null,"expenses":null,"net_result":410.261},
@@ -241,27 +261,34 @@
       "management_id": null,
       "fx": {"ref":"RUB@2025-12-31"},
       "revenue": [
-        {"label":"Прочие доходы (2340)","category":"other_income","amount":5781.574,"disclosure":"aggregated"},
-        {"label":"Размещение спонсорской рекламы","category":"sponsorship_commercial","amount":1815.143,"disclosure":"detailed"},
-        {"label":"Реализация коммерческих прав на трансляцию","category":"broadcasting","amount":1199.719,"disclosure":"detailed"},
-        {"label":"Размещение рекламной продукции","category":"sponsorship_commercial","amount":914.103,"disclosure":"detailed"},
-        {"label":"Атрибутика","category":"sponsorship_commercial","amount":525.112,"disclosure":"detailed"},
-        {"label":"Продажа билетов","category":"matchday_competition","amount":519.266,"disclosure":"detailed"},
-        {"label":"Продажа абонементов","category":"season_tickets","amount":419.637,"disclosure":"detailed"},
-        {"label":"Прочие","category":"other_income","amount":59.877,"disclosure":"detailed"}
+        {"label":"Прочие доходы (2340)","category":"other_revenue","subcategory":"other_income","amount":5781.574,"disclosure":"aggregated"},
+        {"label":"Размещение спонсорской рекламы","category":"commercial","subcategory":"sponsorship_commercial","amount":1815.143,"disclosure":"detailed"},
+        {
+          "label": "Реализация коммерческих прав на трансляцию",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 1199.719,
+          "disclosure": "detailed"
+        },
+        {"label":"Размещение рекламной продукции","category":"commercial","subcategory":"sponsorship_commercial","amount":914.103,"disclosure":"detailed"},
+        {"label":"Атрибутика","category":"commercial","subcategory":"sponsorship_commercial","amount":525.112,"disclosure":"detailed"},
+        {"label":"Продажа билетов","category":"matchday","subcategory":"matchday_competition","amount":519.266,"disclosure":"detailed"},
+        {"label":"Продажа абонементов","category":"season_tickets","subcategory":"season_tickets","amount":419.637,"disclosure":"detailed"},
+        {"label":"Прочие","category":"other_revenue","subcategory":"other_income","amount":59.877,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Прочие расходы (2350)","category":"other_expenses","amount":-5187.116,"disclosure":"aggregated"},
-        {"label":"Материальные затраты","category":"admin_general_expense","amount":-487.343,"disclosure":"detailed"},
+        {"label":"Прочие расходы (2350)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5187.116,"disclosure":"aggregated"},
+        {"label":"Материальные затраты","category":"admin_general","subcategory":"admin_general_expense","amount":-487.343,"disclosure":"detailed"},
         {
           "label": "Расходы, связанные с основным видом деятельности (в том числе расходы по организации тренировочного процесса, подготовке к соревнованиям)",
-          "category": "match_organisation_expense",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
           "amount": -1245.217,
           "disclosure": "detailed"
         },
-        {"label":"Расходы на оплату труда","category":"wages_squad","amount":-4599.209,"disclosure":"detailed"},
-        {"label":"Отчисления на социальные нужды","category":"wages_squad","amount":-413.407,"disclosure":"detailed"},
-        {"label":"Амортизация","category":"depreciation","amount":-89.29,"disclosure":"detailed"}
+        {"label":"Расходы на оплату труда","category":"first_team_staff","subcategory":"wages_squad","amount":-4599.209,"disclosure":"detailed"},
+        {"label":"Отчисления на социальные нужды","category":"first_team_staff","subcategory":"wages_squad","amount":-413.407,"disclosure":"detailed"},
+        {"label":"Амортизация","category":"depreciation","subcategory":"depreciation","amount":-89.29,"disclosure":"detailed"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1248.868,"tax":432.001,"gross_debt":0,"cash":1264.188},
       "official_totals": {"revenue":null,"expenses":null,"net_result":893.718},

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
@@ -9,7 +9,8 @@
     "country": "NL",
     "reporting_currency": "EUR",
     "fiscal_year_start": "07-01",
-    "sport": "futbol"
+    "sport": "football",
+    "taxonomy": "football-1"
   },
   "sources": [
     {
@@ -31,15 +32,15 @@
       "management_id": null,
       "fx": {"ref":"EUR@2022-06-30"},
       "revenue": [
-        {"label":"Netto-omzet","category":"lump_football_operations","amount":8.272005,"disclosure":"aggregated"},
-        {"label":"Resultaat vergoedingssommen","category":"player_sales","amount":0.05146,"disclosure":"aggregated"}
+        {"label":"Netto-omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":8.272005,"disclosure":"aggregated"},
+        {"label":"Resultaat vergoedingssommen","category":"player_transfers","subcategory":"player_sales","amount":0.05146,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Lonen en salarissen","category":"wages_squad","amount":-3.492133,"disclosure":"aggregated"},
-        {"label":"Sociale lasten","category":"wages_squad","amount":-0.610169,"disclosure":"aggregated"},
-        {"label":"Pensioenlasten","category":"wages_squad","amount":-0.084659,"disclosure":"aggregated"},
-        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","amount":-0.261379,"disclosure":"aggregated"},
-        {"label":"Overige bedrijfskosten","category":"other_expenses","amount":-4.324265,"disclosure":"aggregated"}
+        {"label":"Lonen en salarissen","category":"first_team_staff","subcategory":"wages_squad","amount":-3.492133,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"first_team_staff","subcategory":"wages_squad","amount":-0.610169,"disclosure":"aggregated"},
+        {"label":"Pensioenlasten","category":"first_team_staff","subcategory":"wages_squad","amount":-0.084659,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","subcategory":"depreciation","amount":-0.261379,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4.324265,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.035869,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":8.323465,"expenses":8.772605,"net_result":-0.485009},

@@ -1,8 +1,17 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "exported_at": "2026-10-20",
   "unit": {"scale":1000000,"label":"millions of currency"},
-  "club": {"id":"agf-dk","name":"AGF A/S","display_name":"AGF","country":"DK","reporting_currency":"DKK","fiscal_year_start":"07-01","sport":"futbol"},
+  "club": {
+    "id": "agf-dk",
+    "name": "AGF A/S",
+    "display_name": "AGF",
+    "country": "DK",
+    "reporting_currency": "DKK",
+    "fiscal_year_start": "07-01",
+    "sport": "football",
+    "taxonomy": "football-1"
+  },
   "sources": [
     {
       "id": "agf-aarsrapport-2020-21",
@@ -25,50 +34,80 @@
       "revenue": [
         {
           "label": "Entré- og tv-indtægter (entradas y TV combinadas, la fuente no las separa)",
-          "category": "broadcasting",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
           "amount": 34.673,
           "disclosure": "detailed"
         },
-        {"label":"Indtægter fra samarbejdspartnere og sponsorer","category":"sponsorship_commercial","amount":66.973,"disclosure":"detailed"},
-        {"label":"Anden omsætning, varesalg (merchandising)","category":"sponsorship_commercial","amount":9.45,"disclosure":"detailed"},
+        {
+          "label": "Indtægter fra samarbejdspartnere og sponsorer",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 66.973,
+          "disclosure": "detailed"
+        },
+        {
+          "label": "Anden omsætning, varesalg (merchandising)",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 9.45,
+          "disclosure": "detailed"
+        },
         {
           "label": "Udlejningsvirksomhed + Restaurations- og cateringvirksomhed + Arrangementer/billetsalg (Ceres Park & Arena, segmento Faciliteter)",
-          "category": "stadium_other",
+          "category": "venue",
+          "subcategory": "stadium_other",
           "amount": 19.154,
           "disclosure": "detailed",
           "items": [["Udlejningsvirksomhed",7.148],["Restaurations- og cateringvirksomhed",8.385],["Arrangementer, billetsalg",3.621]]
         },
-        {"label":"Anden omsætning, tjenesteydelser","category":"other_income","amount":13.524,"disclosure":"detailed"},
-        {"label":"Offentlige tilskud (subvenciones estatales COVID-19)","category":"other_income","amount":15.91,"disclosure":"detailed"},
-        {"label":"Nettotransferindtægter","category":"player_sales","amount":28.637,"disclosure":"detailed"}
+        {"label":"Anden omsætning, tjenesteydelser","category":"other_revenue","subcategory":"other_income","amount":13.524,"disclosure":"detailed"},
+        {
+          "label": "Offentlige tilskud (subvenciones estatales COVID-19)",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 15.91,
+          "disclosure": "detailed"
+        },
+        {"label":"Nettotransferindtægter","category":"player_transfers","subcategory":"player_sales","amount":28.637,"disclosure":"detailed"}
       ],
       "expenses": [
-        {"label":"Kamp- og spilleromkostninger","category":"match_organisation_expense","amount":-20.73,"disclosure":"detailed"},
+        {
+          "label": "Kamp- og spilleromkostninger",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -20.73,
+          "disclosure": "detailed"
+        },
         {
           "label": "Driftsomkostninger + Salgs- og markedsføringsomkostninger + Administrationsomkostninger",
-          "category": "admin_general_expense",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
           "amount": -35.944,
           "disclosure": "detailed",
           "items": [["Driftsomkostninger",-6.296],["Salgs- og markedsføringsomkostninger",-16.783],["Administrationsomkostninger",-12.865]]
         },
         {
           "label": "Vareforbrug i restaurations- og cateringvirksomhed + Andre omkostninger",
-          "category": "other_expenses",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -5.795,
           "disclosure": "detailed",
           "items": [["Vareforbrug i restaurations- og cateringvirksomhed",-5.161],["Andre omkostninger",-0.634]]
         },
-        {"label":"Personaleomkostninger","category":"wages_squad","amount":-86.507,"disclosure":"detailed"},
+        {"label":"Personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-86.507,"disclosure":"detailed"},
         {
           "label": "Af- og nedskrivninger — Ombygning af lejede lokaler + Driftsmateriel og inventar + Leasingaktiver",
           "category": "depreciation",
+          "subcategory": "depreciation",
           "amount": -7.903,
           "disclosure": "detailed",
           "items": [["Ombygning af lejede lokaler",-3.096],["Driftsmateriel og inventar",-2.586],["Leasingaktiver",-2.221]]
         },
         {
           "label": "Af- og nedskrivninger — Kontraktrettigheder + Nettotransferomkostninger",
-          "category": "player_amortisation",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
           "amount": -11.197,
           "disclosure": "detailed",
           "items": [["Amortisering af kontraktrettigheder",-10.841],["Nettotransferomkostninger",-0.356]]
