@@ -1,0 +1,176 @@
+{
+ "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md",
+ "generado": "2026-10-21T01:59:58.409Z",
+ "scriptHuella": "0b3b0490e72c",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-21 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "bath-rugby-full-accounts-2022-23.md L153-L999",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  },
+  {
+   "pdf": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.pdf",
+   "campo": "desglose",
+   "valor": "44,435",
+   "linea": null,
+   "etiqueta": "Turnover",
+   "categoria": "other_income",
+   "motivo": "248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 19,7); el Turnover del estado es 19.744.435. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.",
+   "evidencia": "pág. 6 del visor (impreso 3), .md L151-158; pág. 19 del visor (impreso 15), .md L663",
+   "autor": "Claude",
+   "fecha": "2026-10-21"
+  }
+ ],
+ "cola": [
+  "d5e244e"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.044434999999999114
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 20.1959,
+  "gastos": 24.569226,
+  "financiero": -0.100113,
+  "impuesto": 1.167663,
+  "resultadoImpreso": -3.261341,
+  "resultadoParaCargar": -3.261341,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Central income",
+   "lado": "ingreso",
+   "M": 4.8,
+   "pagina": 6,
+   "linea": 153,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 5.2,
+   "pagina": 6,
+   "linea": 154,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial activities",
+   "lado": "ingreso",
+   "M": 7,
+   "pagina": 6,
+   "linea": 155,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "CVC income",
+   "lado": "ingreso",
+   "M": 2.4,
+   "pagina": 6,
+   "linea": 156,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other income",
+   "lado": "ingreso",
+   "M": 0.3,
+   "pagina": 6,
+   "linea": 157,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Miscellaneous other operating income",
+   "lado": "ingreso",
+   "M": 0.45,
+   "pagina": 28,
+   "linea": 998,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Other revenue",
+   "lado": "ingreso",
+   "M": 0.0459,
+   "pagina": 28,
+   "linea": 999,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 18.505213,
+   "pagina": 19,
+   "linea": 664,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 6.064013,
+   "pagina": 19,
+   "linea": 666,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Other interest receivable and similar income",
+   "M": 0.005889,
+   "linea": 669
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.106002,
+   "linea": 670
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": 1.167663,
+   "linea": 673
+  }
+ ]
+}
