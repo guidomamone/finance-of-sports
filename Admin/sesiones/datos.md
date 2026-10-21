@@ -121,4 +121,42 @@ Los `.xhtml` están ignorados por git (`*.xhtml`, como los tres de Forest, Burnl
 
 ## Qué falta
 
-Carga: Onboarding, con `tools/xhtml-aarsrapport.mjs` (el eje de consolidación del grupo y la ausencia de `Revenue` que dejó la prueba anterior siguen siendo condiciones de la Auditora). Las cuentas «pequeñas» y los 5 años enteros de cada club (hasta 84 MB en disco) no se bajaron: piden el ok de Guido.
+Carga: Onboarding, con `tools/xhtml-aarsrapport.mjs` (el eje de consolidación del grupo y la ausencia de `Revenue` que dejó la prueba anterior siguen siendo condiciones de la Auditora). Las cuentas «pequeñas» y los 5 años enteros de cada club (hasta 84 MB en disco): ver «Descarga del resto» más abajo.
+
+## Descarga del resto (to-do 356, punto 1): NO hecha
+
+El auto-modo del cliente rechazó la segunda descarga (los 129 archivos restantes, que llevan el total por encima de 50 MB): el tope que subió Guido me llegó por mensaje de la principal, no por él, y el clasificador de permisos no lo tomó como autorización. **No intenté rodearlo.** Está todo listo para correrla en cuanto se autorice: `dl2.mjs` (en el scratchpad de esta sesión) baja los 129 por rango, cada uno a una carpeta nueva y vacía, y el nombre final será `<base del PDF>-ixbrl.xhtml` (con `-<sociedad>` si coincide). Hace falta que Guido lo diga en el chat de esta sesión o que agregue la regla de permiso. Los 69 ya bajados se llaman como el PDF (`<base>.xhtml`), sin `-ixbrl`: si Onboarding los va a convertir, conviene renombrarlos también (no lo hice para no romper lo que ya use).
+
+## Fuente pública de los depósitos daneses (to-do 356, punto 2)
+
+Cada archivo se identificó **comparando el hash** del documento de `Clubes/Dinamarca/` (carpeta de main) con el que sirve `regnskaber.virk.dk` para ese CVR y ese ejercicio (índice `distribution.virk.dk/offentliggoerelser`, por `cvrNummer`). El link es el `dokumentUrl` de la Erhvervsstyrelsen, tal cual lo da la API: **`http://`** (con `https://` el servidor da error de SSL), descarga directa sin cuenta. La ficha del CVR en `datacvr.virk.dk` da 403 (Cloudflare) desde la terminal: sirve el `dokumentUrl`, no esa página. «Sag» es el número de la presentación. CVR: Fredericia 27263496, Vejle 31085179, Brøndby 83933410, Nordsjælland 24257703, SønderjyskE 31588111, FC København P/S 43952161 y PARKEN Sport & Entertainment 15107707.
+
+| Club (carpeta) | Archivo | Sag | Presentado | dokumentUrl |
+| --- | --- | --- | --- | --- |
+| FC Fredericia | `aarsrapport-2021-12-31.pdf` | X22-BX-21-DY | 2022-04-08 | http://regnskaber.virk.dk/69436272/amNsb3VkczovLzAzLzdkL2QzL2IwLzM2LzYzZTctNDNkOC05YzQ0LWJkOWI2MmQ4NDRiOQ.pdf |
+| FC Fredericia | `aarsrapport-2022-12-31.pdf` | X23-DU-70-NE | 2023-04-26 | http://regnskaber.virk.dk/69436272/amNsb3VkczovLzAzL2E0LzcxL2RkLzg3L2UzZTEtNGMwMS04OTA4LTlmMDNkMjg1NzMwOQ.pdf |
+| FC Fredericia | `aarsrapport-2023-12-31.pdf` | X24-HC-05-HK y X24-HC-05-HV (dos presentaciones idénticas el mismo día) | 2024-04-09 | http://regnskaber.virk.dk/69436272/amNsb3VkczovLzAzLzYwLzlmLzBhLzIzLzU1ODItNDQ5NS1hNDYxLTgxMWIzNWJiNzRjZA.pdf (HK) <br> http://regnskaber.virk.dk/69436272/amNsb3VkczovLzAzLzVjLzc3LzU2L2NiLzc0NWYtNGQxYS1iNDI4LTNkNWIyYzFmY2IxNw.pdf (HV) |
+| FC Fredericia | `aarsrapport-2024-12-31.pdf` | X25-BQ-11-RT | 2025-04-08 | http://regnskaber.virk.dk/69436272/amNsb3VkczovLzAzL2RiLzYwLzJhL2IzLzcyMzgtNDU2Mi1iZmE0LTJlOGJlZjgxMjFjYw.pdf |
+| FC Fredericia | `aarsrapport-2025-12-31.xhtml` | X26-BT-55-KB | 2026-04-22 | http://regnskaber.virk.dk/69436272/amNsb3VkczovLzAzLzM2L2FlL2M0Lzk4LzI3OTItNGNkZi1iYmM2LTM0MTg4OTlkNWE3Zg.xhtml |
+| FC København | `aarsrapport-2025-12-31.xhtml` (F.C. København P/S) | X26-CA-54-CK | 2026-05-06 | http://regnskaber.virk.dk/16125934/amNsb3VkczovLzAzL2JjL2JmLzdmLzk2L2E0NDItNGQ1Yy1hZDFlLTJhNWM0Njg0Nzk3Yg.xhtml |
+| FC København | `aarsrapport-2021-12-31-PSE-consolidado.xhtml` | X22-CL-60-FP | 2022-05-05 | http://regnskaber.virk.dk/70770151/amNsb3VkczovLzAzL2U0LzFiLzQyLzAzLzRlZTktNGZmNS1iNTMzLTQ0NTU3M2JlYzZiNw.xhtml |
+| FC København | `aarsrapport-2022-12-31-PSE-consolidado.xhtml` | X23-DV-57-DQ | 2023-05-02 | http://regnskaber.virk.dk/70770151/amNsb3VkczovLzAzLzIzL2YxLzFhLzNhLzM1ZjAtNDg5Yi04NDVlLTg5NTY5MWM2MmRkNw.xhtml |
+| FC København | `aarsrapport-2023-12-31-PSE-consolidado.xhtml` | X24-HH-38-SC | 2024-04-23 | http://regnskaber.virk.dk/70770151/amNsb3VkczovLzAzLzEzL2VkL2EwLzY1LzlmMWUtNGU2NS1hMmQxLWQ2NGE3OTJhMjczZQ.xhtml |
+| FC København | `aarsrapport-2024-12-31-PSE-consolidado.xhtml` | X25-BU-66-BF | 2025-04-23 | http://regnskaber.virk.dk/70770151/amNsb3VkczovLzAzL2ZkL2E0L2RmL2ExLzA1MDUtNDA3YS04OTQ3LWM4ZTk1YjQzNTU3ZQ.xhtml |
+| FC København | `aarsrapport-2025-12-31-PSE-consolidado.xhtml` | X26-BZ-40-WF | 2026-05-04 | http://regnskaber.virk.dk/70770151/amNsb3VkczovLzAzLzliLzM2Lzc0L2FjLzEwMjUtNGU3NS04ZGUwLTAwZjI1ZWI4NjhjYg.xhtml |
+| FC Nordsjælland | `aarsrapport-2025-12-31.xhtml` | X26-CH-91-PB | 2026-05-21 | http://regnskaber.virk.dk/30775242/amNsb3VkczovLzAzL2ZhLzhjLzdjLzNjLzkwMjMtNDhhYS05YTc1LTJiMzUwZTVmMzAzZQ.xhtml |
+| Vejle | `aarsrapport-2025-12-31.xhtml` | X26-BM-48-YE | 2026-03-26 | http://regnskaber.virk.dk/97158013/amNsb3VkczovLzAzL2YzLzUzL2VhLzRiL2NjNzQtNDlkNC04YmM5LTEzYWU3OTU4MzQwYw.xhtml |
+| Brøndby | `aarsrapport-2021-12-31.xhtml` | X22-BW-43-BX | 2022-04-04 | http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAyLzZjLzlhLzgyL2ZiLzFiMzctNDRjNS04OGZjLTQxMjQwMTM5ZTgzNA.xhtml (idéntico: http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAzLzgwLzE4LzQ4LzZkL2IyNmYtNGI1NC05OWY4LTFlZWY0ZjdmNThiNQ.xhtml) |
+| Brøndby | `aarsrapport-2022-12-31.xhtml` | X23-CM-00-BF | 2023-04-09 | http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAzLzdlL2JlL2E1LzNiL2E1ZmItNDkwYS1iM2ZjLThjY2UyMjRlYWI1OQ.xhtml (idéntico: http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAyLzYwLzg1LzY1L2NjLzQ3Y2MtNDY0MS1hZDAxLThlOGM5ZWZjMTE2Yw.xhtml) |
+| Brøndby | `aarsrapport-2023-2024-06-30-transicion.xhtml` (01/01/2023-30/06/2024) | X24-KH-26-ZJ | 2024-10-04 | http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAyL2UzL2NkL2JkLzJlLzc3NDAtNGMxNC05N2U2LTc2OWU4MDYyMjNhZQ.xhtml (idéntico: http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAzLzhlLzM3LzNhLzQ3L2IzZGQtNGQ0NS1hODk5LTgwOTM5MDkwNjFjMw.xhtml) |
+| Brøndby | `aarsrapport-2025-06-30.xhtml` | X25-MX-25-YU (republicación del 27/10/2025, con `REDEGOERELSE_FOR_OMGOERELSE`; la primera fue X25-MW-88-HQ del 23/10/2025, casi idéntica, 1 byte menos) | 2025-10-27 | http://regnskaber.virk.dk/01433938/amNsb3VkczovLzAzL2VmLzI1L2EwL2Y2LzdhMTAtNDQyYi1iMDc4LTdjM2ViOTBjYzFiNA.xhtml |
+| SønderjyskE | `aarsrapport-2022-2023-09-30-transicion.xhtml` (01/07/2022-30/09/2023) | X23-GH-21-DT | 2024-04-10 | http://regnskaber.virk.dk/11188513/amNsb3VkczovLzAzL2U0L2M4L2I1L2UxL2VmMzgtNDNkNC1hOGMyLTAwMTA0Zjc2NzkwMQ.xhtml |
+| SønderjyskE | `aarsrapport-2024-09-30.xhtml` | X24-KS-96-MZ | 2025-04-02 | http://regnskaber.virk.dk/11188513/amNsb3VkczovLzAzL2YxLzBjLzMxLzFmLzJjZWMtNDI3YS05OWUwLWM1Njc4ZjUyNjg4NQ.xhtml |
+| SønderjyskE | `aarsrapport-2025-09-30.xhtml` | X26-BN-34-MY | 2026-03-30 | http://regnskaber.virk.dk/11188513/amNsb3VkczovLzAzL2Y0L2UwLzY1L2NmL2NlMmEtNGI3Ny1iYjdiLTRiYjQyNmQyNmUwMw.xhtml |
+
+Notas:
+- **Fredericia 2021-24 no tienen XHTML en el depósito**: la API solo ofrece PDF y XML para esos años (el XHTML recién aparece en 2025). Los archivos de `Clubes/` son esos PDF; el XML iXBRL de la misma presentación está en el mismo registro si se lo quiere para el tie-out (ver `dokumenter` de cada presentación en la API).
+- **Defecto en `Clubes/Dinamarca/Brøndby/aarsrapport-2025-06-30.xhtml` (en main): está comprimido con gzip** (412.218 bytes; descomprimido son 953.987, exactamente el del depósito). Cualquier lector que lo abra como texto ve basura. Revisé todos los `.xhtml` de `Clubes/Dinamarca/` de main: es el único comprimido. Hay que `gunzip`earlo antes de convertirlo.
+- **Brøndby 2021-2024 trae dos `.xhtml` idénticos por presentación** (los dos `AARSRAPPORT`): se listó ambos; es el mismo documento.
+- SønderjyskE: los depósitos corresponden a las fechas de la carpeta (el ejercicio largo del 01/07/2022 al 30/09/2023 es la «transición»).
+
