@@ -34,6 +34,7 @@ import { resolve, join, dirname, basename } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';
+import { leerXhtmlTexto } from './ixbrl-resultado.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
@@ -163,12 +164,15 @@ export function armarMd(xhtmlNombre, lineas, pagina) {
 }
 
 export function convertir(xhtmlAbs, { pdfDestino }) {
-  const src = readFileSync(xhtmlAbs, 'utf8'); const nombre = basename(xhtmlAbs);
+  const src = leerXhtmlTexto(xhtmlAbs); const nombre = basename(xhtmlAbs);
+  // Chrome imprime desde un archivo: si el .xhtml viene comprimido con gzip, se imprime una copia descomprimida en la carpeta temporal (el original no se toca)
+  const comprimido = (() => { const b = readFileSync(xhtmlAbs).subarray(0, 2); return b[0] === 0x1f && b[1] === 0x8b; })();
+  const paraChrome = comprimido ? (() => { const d = join(tmpdir(), 'xhtml-aarsrapport', 'gunzip'); mkdirSync(d, { recursive: true }); const p = join(d, nombre); writeFileSync(p, src); return p; })() : xhtmlAbs;
   const { lineas, hechos } = xhtmlALineas(src); const { faltan, ocultos } = hechosFaltantes(lineas, hechos);
   const r = { nombre, lineas: lineas.length, hechos: hechos.length, ocultos, faltan, errores: [] };
   if (faltan.length) r.errores.push(`(a) ${faltan.length} hecho(s) visible(s) sin su número en el .md: ${faltan.slice(0, 5).map((h) => `«${h.txt}» ${h.nombre}`).join(', ')}${faltan.length > 5 ? ', …' : ''}`);
   if (r.errores.length) return r;
-  let paginas; try { paginas = imprimirPdf(xhtmlAbs, pdfDestino); } catch (e) { r.errores.push(e.message); return r; }
+  let paginas; try { paginas = imprimirPdf(paraChrome, pdfDestino); } catch (e) { r.errores.push(e.message); return r; }
   let al = alinear(lineas, paginas); r.paginasPdf = paginas.length; r.con = al.con; r.ubicadas = al.ubicadas;
   if (al.con && al.ubicadas / al.con < MIN_UBICADAS) { // escalón 2: la misma compuerta con la mejor asignación de páginas (solo si el codicioso no llega)
     const op = alinearOptimo(lineas, paginasRaw(pdfDestino, paginas.length)); r.escalon = 'óptimo'; r.ubicadasCodicioso = al.ubicadas;
