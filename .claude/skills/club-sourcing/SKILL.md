@@ -29,6 +29,7 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   simple (`curl`, o una API como la de Bélgica o brreg en Noruega), se arma un script en `tools/` que liste los ejercicios por club y
   año, sin bajar nada, y los compare con lo cargado. Ejemplo: `tools/listar-brreg.mjs`, ~0 tokens. Solo si la página arma la lista en
   el navegador se usa el Browser pane o, si hace falta, Crawl4AI (to-do 316).
+- **Un club extinto o refundado vale** si sus balances siguen publicados: se bajan y se documentan como los de cualquier otro.
 - **Fuente oficial primero, siempre.** El dominio propio del club (o un link que el dominio oficial
   comparta directo, ej. un PDF de Google Drive/Dropbox embebido en una noticia oficial) es la única
   fuente aceptable como "primary". Prensa, foros, mirrors de comunidades de hinchas, etc. son un
