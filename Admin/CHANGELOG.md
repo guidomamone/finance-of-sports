@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 880 — Diseño del registro público de correcciones (2026-10-20) [247]
+
+- Plan y mockup (`Admin/mediciones/247-plan.md`): correcciones generadas del historial de git de cada JSON de club, página `correcciones.html`, bloque en Finanzas y dato abierto en `data/correcciones/`. Sin código; espera el ok de Guido.
+
 ## Versión 879 — Informes sobre el fútbol inglés (2026-10-20) [332]
 
 - Nota `Admin/sourcing/Inglaterra/informes-futbol-ingles.md`: Deloitte ARFF 2026 trae por club ingresos, sueldos y resultado operativo de Premier y Championship (sirve para contrastar); State of the Game (IFR) y la UEFA dan solo agregados (contexto para Ligas). Ninguno completa clubes. Nada transcripto.

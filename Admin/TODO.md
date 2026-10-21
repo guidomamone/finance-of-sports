@@ -38,7 +38,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 **C. Técnico (cuando haya tiempo; nada urgente)**
 * 332: nota lista (`Admin/sourcing/Inglaterra/informes-futbol-ingles.md`); espera tu decisión de transcribir las tablas por club del Deloitte ARFF 2026 para contrastar lo cargado
 * 248: taxonomía genérica y subcategorías por deporte
-* 247 (en marcha, Pantallas 5: primero el diseño y el mockup, para tu ok): registro público de correcciones (sobre 245)
+* 247 (diseño listo, espera tu ok a las 4 decisiones de `Admin/mediciones/247-plan.md`; se implementa después del 241): registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
 * 270: estimado de club nuevo: medido otra vez con 1.270 club-años; espera tu decisión sobre Estonia
 * 327: los 12 chequeos automatizables que dejó el 255 (sección 4 de `Admin/Archive/consolidar-reglas-255.md`): elegir cuáles van a hook o a audit.js (Pipeline)
