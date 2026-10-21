@@ -43,7 +43,15 @@ if (check) {
     const mapa = { name: c.name, display_name: c.displayName, country: c.country, reporting_currency: c.reportingCurrency, fiscal_year_start: c.fiscalYearStart, sport: c.sport };
     for (const [k, v] of Object.entries(mapa)) if (v !== undefined && j.club[k] !== v) { console.log(`  data/${d.name}/${f}: club.${k} = ${JSON.stringify(j.club[k])} y data/clubs.js dice ${JSON.stringify(v)} (regenerá el JSON con tools/generar-data.mjs --identidad)`); desfasados++; break; }
   }
-  const mal = sinJs.length + viejos.length + desfasados;
+  // El camino inverso: un -data.js sin su JSON (quedó huérfano, o alguien lo escribió a mano) y un id de clubs.js sin JSON.
+  let huerfanos = 0; const conJson = new Set();
+  for (const d of readdirSync(resolve(ROOT, 'data'), { withFileTypes: true })) if (d.isDirectory() && /^[a-z]{2}$/.test(d.name)) {
+    const fs = readdirSync(resolve(ROOT, 'data', d.name));
+    for (const f of fs) if (f.endsWith('.json')) conJson.add(f.replace(/\.json$/, ''));
+    for (const f of fs) if (f.endsWith('-data.js') && !fs.includes(f.replace(/-data\.js$/, '.json'))) { console.log(`  data/${d.name}/${f}: no tiene su JSON (la fuente es data/${d.name}/${f.replace(/-data\.js$/, '.json')})`); huerfanos++; }
+  }
+  for (const id of Object.keys(cl)) if (!conJson.has(id)) { console.log(`  data/clubs.js: el club ${id} no tiene data/<país>/${id}.json`); huerfanos++; }
+  const mal = sinJs.length + viejos.length + desfasados + huerfanos;
   console.log(mal ? `${mal} desfase(s) entre el JSON, el JS generado y data/clubs.js.` : `${n} clubes: cada JS es lo que sale de su JSON.`);
   process.exit(mal ? 1 : 0);
 }

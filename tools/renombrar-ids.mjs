@@ -185,7 +185,9 @@ if (VERIFICAR) {
   for (const [v, n] of Object.entries(al)) { if (!vivos.has(n) || vivos.has(v) || al[n]) { console.log(`alias roto: ${v} -> ${n}`); malos++; } }
   const RA = reglas(al);
   for (const f of archivosEnAlcance()) {
-    const t = readFileSync(resolve(ROOT, f), 'utf8');
+    let t = readFileSync(resolve(ROOT, f), 'utf8');
+    // CLAUDE.md nombra un id viejo (`boca`) a propósito, como ejemplo de lo que resuelven los alias: esa línea no cuenta.
+    if (f === 'CLAUDE.md') t = t.split('\n').filter((l) => !l.includes('uno viejo (`boca`) sigue andando por')).join('\n');
     const { cambios } = reescribir(f, t, RA, al);
     const n = Object.values(cambios).reduce((a, b) => a + b, 0);
     if (n) { console.log(`id viejo en contexto reconocido: ${f} (${JSON.stringify(cambios)})`); malos++; }
