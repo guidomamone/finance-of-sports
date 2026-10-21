@@ -213,7 +213,7 @@ for (const nombre of carpetas) {
   if (!aCargar.length) continue;
   let altaHecha = false;
   const sinTrackAntes = new Set(String(git('ls-files', '--others', '--exclude-standard', '--', 'data', 'fuentes', 'Admin/sourcing', 'Admin/carga-clubes').stdout || '').split('\n').filter(Boolean));
-  const revertirAlta = () => { git('checkout', '-q', '--', 'data', 'index.html', 'fuentes.html', 'sitemap.xml', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/ESTADO-clubes.md'); git('checkout', '-q', '--', 'fuentes', 'Admin/sourcing'); for (const f of String(git('ls-files', '--others', '--exclude-standard', '--', 'data', 'fuentes', 'Admin/sourcing', 'Admin/carga-clubes').stdout || '').split('\n').filter(Boolean)) if (!sinTrackAntes.has(f)) { try { unlinkSync(resolve(ROOT, f)); } catch { /* */ } } };
+  const revertirAlta = () => { git('checkout', '-q', '--', 'data', 'index.html', 'fuentes.html', 'sitemap.xml', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/ESTADO-clubes.md'); git('checkout', '-q', '--', 'fuentes', 'club', 'liga', 'Admin/sourcing'); for (const f of String(git('ls-files', '--others', '--exclude-standard', '--', 'data', 'fuentes', 'Admin/sourcing', 'Admin/carga-clubes').stdout || '').split('\n').filter(Boolean)) if (!sinTrackAntes.has(f)) { try { unlinkSync(resolve(ROOT, f)); } catch { /* */ } } };
   if (esNuevo) {
     const r = run('node', [resolve(ROOT, 'tools/alta-club.mjs'), `${carpeta}/bfo-${aCargar[0].y}-datos.md`, '--escribir']);
     if (!existsSync(resolve(ROOT, rutaData(clubId)))) { console.log(`      alta NO escrita: ${String(r.stdout + r.stderr).trim().split('\n').pop().slice(0, 200)}`); continue; }
@@ -240,7 +240,7 @@ for (const nombre of carpetas) {
     if (!P.reemplaza && !compuertaContexto(P)) { console.log(`      ${y}: NO escrito: falta estadio o sponsor (tools/contexto-manual.json)`); continue; }
     const res = escribir(P);
     if (!res.ok) { console.log(`      ${y}: NO escrito: ${res.motivo.slice(0, 200)}`); continue; }
-    git('add', '-A', '--', 'data', 'index.html', 'fuentes', 'Admin/sourcing', 'fuentes.html', 'sitemap.xml', 'Admin/carga-clubes', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/registros/altas-club.jsonl', `${carpeta}/bfo-${y}-datos.md`);
+    git('add', '-A', '--', 'data', 'index.html', 'fuentes', 'club', 'liga', 'Admin/sourcing', 'fuentes.html', 'sitemap.xml', 'Admin/carga-clubes', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/registros/altas-club.jsonl', `${carpeta}/bfo-${y}-datos.md`);
     const c = git('commit', '-q', '-m', `${nombre} ${y} desde el GIR BO (tools/bfo-rusia.mjs)${P.escalon2.length ? ` + escalón 2 (${P.escalon2.join(', ')})` : ''}${P.reemplaza ? ', reescrito' : ''}${altaHecha && !escritos ? ` — alta de ${clubId}, color ${color === null ? 'null' : color}` : ''}`);
     if (c.status === 0) { escritos++; commits++; sitio = cargarSitio(); console.log(`      ${y}: escrito y commiteado (${String(git('log', '--oneline', '-1').stdout).slice(0, 9)}) — ${res.audit}`); }
     else console.log(`      ${y}: escrito pero el commit falló: ${String(c.stderr).slice(0, 160)}`);

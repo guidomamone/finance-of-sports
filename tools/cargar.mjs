@@ -1182,6 +1182,7 @@ function snapshot(extra = []) {
   const add = (p) => { if (existsSync(p) && statSync(p).isFile()) archivos.set(p, readFileSync(p)); };
   (function walk(d) { for (const e of readdirSync(d)) { const f = join(d, e); statSync(f).isDirectory() ? walk(f) : add(f); } })(resolve(ROOT, 'data'));
   for (const e of readdirSync(resolve(ROOT, 'fuentes'))) if (e.endsWith('.html')) add(resolve(ROOT, 'fuentes', e));
+  for (const d of ['club', 'liga', 'og']) if (existsSync(resolve(ROOT, d))) (function walk(x) { for (const e of readdirSync(x)) { const f = join(x, e); statSync(f).isDirectory() ? walk(f) : add(f); } })(resolve(ROOT, d)); // to-do 241: las páginas de club y de liga y sus imágenes
   for (const f of ['index.html', 'fuentes.html', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', ...extra]) add(resolve(ROOT, f));
   return archivos;
 }
