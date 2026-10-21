@@ -6,7 +6,7 @@ description: Cómo se diseña y se construye una pantalla o un cambio visible de
 # Una pantalla, de punta a punta
 
 1. **Leer** `Admin/ESTADO.md` y, de `Admin/PANTALLA.md`, solo la sección de la pantalla que se toca («Cómo funciona cada pantalla») y «Convenciones de pantalla y código».
-2. **Mockup antes de código.** Un cambio que se ve (un card, una tabla, un flujo) se dibuja primero en `Prototyping/<Tema>/mockup-N.html` con números reales del motor, o en el artifact de Design «Pantallas FoS». Guido lo ve y dice sí o no. Sin su ok no se construye. Si dice no, se rehace el mockup, no el código.
+2. **Mockup antes de código.** Antes de dibujar, leé `referencia/marca.md` (tono, paleta, cómo se marca un estado, lo que no se hace y la prueba del diario): un mockup que no la pasa no se muestra. Un cambio que se ve (un card, una tabla, un flujo) se dibuja primero en `Prototyping/<Tema>/mockup-N.html` con números reales del motor, o en el artifact de Design «Pantallas FoS». Guido lo ve y dice sí o no. Sin su ok no se construye. Si dice no, se rehace el mockup, no el código.
 3. **Construir** lo aprobado y nada más. Cada texto visible pasa por `t()` (español e inglés). Un archivo de `js/` que llame a `t()` va en la lista de `tools/audit.js`. Lo que se escribe en `index.html` o `js/` viaja al visitante: sin comentarios internos.
 4. **Verificar, siempre, sin pedirle a Guido que mire:**
    - `preview_start` y recarga con `?cb=<nuevo>` (subí `ASSET_V` si tocaste `js/` o `data/`).
