@@ -190,4 +190,3 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 333. MI CUENTA CON IDS VIEJOS (revisión Opus del 245 y el 246, 2026-10-20). Lo demás del 333 está hecho. Queda: una búsqueda guardada en
    `saved_searches` con un id viejo genera otro `state_hash` al volver a guardarse y queda duplicada. Arreglo: una migración SQL en Supabase,
    o que `save_search` busque también por la clave vieja. El parche de `js/cuenta.js` que se rechazó, en la nota de Pipeline 8.
-   guardada de nuevo genera una fila duplicada.
