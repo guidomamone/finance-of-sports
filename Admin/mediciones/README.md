@@ -27,3 +27,4 @@ Los archivos que una tool, una skill o un documento de criterio ya nombran no fi
 | `test-mistral-gemini-escaneos.md` | Mistral contra Gemini en escaneos | a confirmar (`Admin/PIPELINE.md`, «Documentos fuente») |
 | `test-motores-lista.txt`, `test-motores-resultados.jsonl` | lista y salida cruda del test de tres motores de transcripción | resumen en `test-motores-resultados.md` |
 | `test-proponer-carga.jsonl` | salida cruda de `test-proponer-carga.md` | acompaña a esa medición |
+| `companies-house-ixbrl.md` | cuántos clubes británicos presentan sus cuentas en iXBRL en Companies House (9 de 36; los grandes, PDF) | falta una descarga de 3 archivos para saber si `xhtml-aarsrapport.mjs` los lee (ok de Guido) |
