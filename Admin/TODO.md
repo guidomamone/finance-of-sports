@@ -32,10 +32,11 @@ el número de la izquierda es el orden de trabajo.
 2. 345 (Onboarding 8): lote 130 de documentos en mano y Girona 2021-23 (~US$5,50); los daneses en XHTML, cuando esté el lector
 3. 345 (Pipeline 13): lector del XHTML danés, con el diseño aprobado por la Auditora
 4. 346 (Sourcing 4): sourcing con vía concreta (Brasil, Alemania, Italia, Bélgica, Suiza)
-5. 347: proceso para bajar los P2 y P3 de a un código por corrida (texto de skill para tu ok, en `Admin/propuestas/p2-p3-y-roles.md`)
+5. 347 (Auditora 4): primera corrida del proceso de P2 y P3, con `linea-duplicada` (927)
+6. 320 a 322 (Pruebas 1): Browser Use, Higgsfield, Zapier y OmniRoute
 
 **C. Técnico**
-6. 320 a 322: Browser Use (cuando aparezca un portal que lo pida), Higgsfield (con el 313), Zapier y OmniRoute (con el 335)
+(nada fuera de lo que está en marcha)
 
 **D. Orden de la casa**
 7. 338: correr todas las auditorías del proyecto (al final de A)
@@ -72,7 +73,8 @@ el número de la izquierda es el orden de trabajo.
    dice que no hay PDF pero está `geschaeftsbericht_2022-23.pdf`), Fiorentina 2020. Detalle y notas en `Admin/sesiones/pipeline.md`.
 347. P2 Y P3 SIN PROCESO (Guido, 2026-10-21: «armemos algo para los P2 y P3»). Hoy hay ~370 P2 y ~1.000 P3 que nadie revisa (los más:
    `linea-duplicada` 927, `catchall-dominante` 256, `sin-salarios` 48). Propuesta en `Admin/propuestas/p2-p3-y-roles.md`: cada auditoría baja
-   un código (muestra de cinco, decisión por el código entero, registro antes y después). Falta el ok de Guido al texto de la skill.
+   un código (muestra de cinco, decisión por el código entero, registro antes y después). Ya está en la skill de auditoría (ok de Guido);
+   falta la primera corrida.
 258. ÍNDICE PARTIDO POR PAÍS O LIGA (mejoras de proyecto, pedido de Guido 2026-10-16). Medido por Pantallas 6 (2026-10-21): con 320 clubes,
    clubs.js + club-index.js = 17,7 KB comprimidos (~55 B por club) y lo que se baja siempre, 46,5 KB comprimidos; a 1.000 clubes ~84 KB, a
    3.000 ~200 KB. Todavía no. Se reabre cuando lo que se baja siempre pase 150 KB comprimidos (~2.200 clubes) o esos dos archivos pasen 1 MB

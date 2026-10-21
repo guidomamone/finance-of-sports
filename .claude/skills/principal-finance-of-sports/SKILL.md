@@ -23,6 +23,7 @@ La principal mergea, escribe `Admin/TODO.md`, `Admin/CHANGELOG.md` y `Admin/ESTA
 
 ## Abrir sesiones
 
+- **Cada tarea va a la sesión de su rol, aunque otra esté libre:** cargar clubes o años, Onboarding; arreglar o sumar tools, Pipeline; buscar documentos, Sourcing; pantallas y textos del sitio, Pantallas; aprobar condiciones y votar criterios, la Auditora.
 - Antes de abrir una sesión, mirar si una abierta ya tiene el contexto: se le manda la tarea a esa.
 - Sesión nueva en Sonnet, sin consultar. **Opus solo con el ok de Guido**; se lo recomienda cuando el cambio es difícil de diseñar, toca mucho del repo y no tiene reglas escritas (un cambio de esquema), o cuando una sesión Sonnet se traba con bugs propios en algo así. Onboarding, pipeline, auditoría y votaciones van en Sonnet.
 - Worktree: sin `permission_mode` (hereda el auto); verificar con `get_session` que sea `auto`; si cayó a `acceptEdits`, `set_session_permission_mode`. Una sesión de worktree no usa el panel Plan (aprobar un plan la baja a `acceptEdits`). El brief lleva la regla de comandos sin `$(…)`, sin variables, sin `cd … &&` y sin `/tmp`.
