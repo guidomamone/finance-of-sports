@@ -129,3 +129,18 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: 334 y 339 (a), (b), (c), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Cuatro líneas más en `Admin/registros/auditoria-proceso.jsonl`: `dd0d4a1d6b` (334, prefijo de entidad en `suma-entidades.mjs`), `05ebe22888` (339 a) y `54e18dc4b6` (339 b), APROBADOS; la condición del 339 (c), coma comida por el OCR, APROBADA CON UN CAMBIO.
+
+### Qué queda (para TODO / 339)
+
+- (c): el commit que la codee tiene que dejar resueltos los 4 hallazgos (Bath 2023-24 L162 y 2024-25 L207, Everton 2023-24 L341 y 2024-25 L157): corregir el `.md` o silenciar con motivo en `tools/audit-ignore.json`. Everton no tiene datos publicados afectados (la cifra dañada es la del año anterior; los años cargados salen del estado de resultados y coinciden con la cifra buena). En Everton 2023-24 hay otra fila dañada que la regla no atrapa («Sponsorship… 24.3 216 2?»).
+- 334: cuando se cargue Ålesund con `suma-con`, los prefijos saldrían «Aalesund Fotball AS» y «Fotballklubb FLI»; mirarlos entonces.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
