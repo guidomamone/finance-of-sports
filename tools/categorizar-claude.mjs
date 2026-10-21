@@ -84,7 +84,7 @@
 
 import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
 import { SESION } from './sesion.mjs'; // gasto por sesión
-import { deporteODefecto, categoriasDeDeporte, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) lista de categorías, criterios y ejemplos del deporte del club
+import { deporteODefecto, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) lista de categorías, criterios y ejemplos del deporte del club
 import { afinidad } from './pais-club.mjs'; // (to-do 331) ejemplos del mismo país primero, a igual parecido
 import { reglasParaPrompt } from './reglas-categoria.mjs'; // (to-do 329) las reglas de categoría de CONVENCIONES-DATOS al prompt
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
@@ -132,22 +132,16 @@ export function loadCategories() {
   return { revenue: build('REVENUE_CATEGORIES', 'REVENUE_CATEGORY_LABELS'), expense: build('EXPENSE_CATEGORIES', 'EXPENSE_CATEGORY_LABELS') };
 }
 const CATS = loadCategories();
-export const sideOf = (cat) => (cat in CATS.revenue ? 'revenue' : cat in CATS.expense ? 'expense' : '?');
+// (to-do 339) el lado de una categoría: las del fútbol primero y después las de los otros deportes (un id compartido tiene el mismo lado en todos)
+export const sideOf = (cat) => { for (const d of new Set(['futbol', ...deportesConTaxonomia()])) { const c = catsDe(d); if (c && cat in c.revenue) return 'revenue'; if (c && cat in c.expense) return 'expense'; } return '?'; };
 const ALL_CATS = [...Object.keys(CATS.revenue), ...Object.keys(CATS.expense)];
-// (to-do 339) Las categorías de un deporte: las de su taxonomía (data/category-map.js, SPORT_TAXONOMIES), con etiqueta y descripción de CATS cuando la hay, en el
-// orden de CATS (para el fútbol, exactamente CATS). Un id de la taxonomía sin descripción en CATS va solo con su id. Sin taxonomía del deporte: null, nunca la del fútbol.
+// (to-do 339) Las categorías de un deporte: las de SU taxonomía, con etiqueta y comentario completo de su propia lista en data/category-map.js (tools/deporte-club.mjs,
+// leerCategorias; el fútbol lee REVENUE_CATEGORIES, el rugby RUGBY_REVENUE_CATEGORIES...). Sin taxonomía del deporte: null, nunca la del fútbol.
 const _catsDe = new Map();
 function catsDe(deporte) {
   if (_catsDe.has(deporte)) return _catsDe.get(deporte);
-  const t = categoriasDeDeporte(deporte); let r = null;
-  if (t) {
-    r = { revenue: {}, expense: {} };
-    for (const side of ['revenue', 'expense']) {
-      for (const k of Object.keys(CATS[side])) if (t[side].has(k)) r[side][k] = CATS[side][k];
-      for (const k of t[side]) if (!(k in r[side])) r[side][k] = { label: k, desc: '' };
-    }
-    r.todas = [...Object.keys(r.revenue), ...Object.keys(r.expense)];
-  }
+  const C = leerCategorias(deporte); let r = null;
+  if (C) r = { revenue: C.revenue, expense: C.expense, todas: [...Object.keys(C.revenue), ...Object.keys(C.expense)] };
   _catsDe.set(deporte, r); return r;
 }
 const NOT_A_LINE = 'no_es_rubro';
