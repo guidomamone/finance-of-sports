@@ -237,8 +237,11 @@ function checkTieOuts(api) {
 
 // --- D4/D5: taxonomía y categorías que el motor no suma --------------------
 function checkCategorias(api) {
-  const revOk = new Set(api.REVENUE_CATEGORIES), expOk = new Set(api.EXPENSE_CATEGORIES);
+  // (to-do 339) las categorías válidas de un club son las de la taxonomía de SU deporte (SPORT_TAXONOMIES): una línea de rugby con lump_rugby_operations no es un typo.
+  // Para el fútbol es la misma lista de siempre (REVENUE_CATEGORIES / EXPENSE_CATEGORIES). Un club sin deporte (o sin taxonomía) cae al fútbol acá y lo marca club-sin-deporte.
+  const listasDe = (clubId) => { const t = api.SPORT_TAXONOMIES[(api.clubs[clubId] || {}).sport] || api.SPORT_TAXONOMIES.futbol; return { revOk: new Set(Object.keys(t.revenue)), expOk: new Set(Object.keys(t.expense)) }; };
   for (const { clubId, year, rev, exp } of clubYears(api)) {
+    const { revOk, expOk } = listasDe(clubId);
     // Dos casos bien distintos, y conviene no confundirlos:
     //   - la categoría no existe en NINGUNA de las dos taxonomías: es un typo, y la
     //     línea cae al catch-all de Formato simplificado sin romper ningún total. P0.
@@ -267,8 +270,10 @@ function checkCategorias(api) {
   // TODO el sitio en silencio (KPI Gastos, EBITDA, PAT, deuda, comparar gestiones).
   // Es exactamente el bug de la Versión 53 con las 3 categorías nuevas de Racing,
   // que se encontró de casualidad; esto lo encuentra siempre.
+  // (to-do 339) por cada deporte con taxonomía: el club sintético lleva su `sport` (el motor lee la genérica y el bloque de SPORT_TAXONOMIES[sport]).
   const PROBE = '__sonda_de_auditoria__', YEAR = 9999;
-  for (const cat of api.EXPENSE_CATEGORIES) {
+  for (const [dep, cat] of Object.entries(api.SPORT_TAXONOMIES).flatMap(([d, t]) => Object.keys(t.expense).map(c => [d, c]))) {
+    api.clubs[PROBE] = { id: PROBE, sport: dep };
     api.generic[PROBE] = {
       revenueLinesByYear: { [YEAR]: [] },
       expenseLinesByYear: { [YEAR]: [{ rawLabel: 'sonda', normalizedCategory: cat, amountNative: -100 }] },
@@ -277,17 +282,17 @@ function checkCategorias(api) {
     const c = api.computeYearGeneric(PROBE, YEAR);
     const visto = c.expenses + c.nonCash + c.exceptionalItems;
     if (Math.abs(visto - (-100)) > 0.01) {
-      add('P0', 'categoria-huerfana', `EXPENSE_CATEGORIES incluye '${cat}' pero computeYearGeneric() no la suma en ninguna rama: la plata de esa categoría desaparece de todo cálculo del sitio`);
+      add('P0', 'categoria-huerfana', `la taxonomía de ${dep} incluye '${cat}' (gasto) pero computeYearGeneric() no la suma en ninguna rama: la plata de esa categoría desaparece de todo cálculo del sitio`);
     }
     // to-do 248: la rama del motor donde cayó tiene que ser el bloque de su genérica (data/category-map.js), que es lo que publica el JSON.
     const rama = c.expenses === -100 ? 'operating' : c.nonCash === -100 ? 'non_cash' : c.exceptionalItems === -100 ? 'exceptional' : null;
-    const gen = api.SPORT_TAXONOMIES.futbol.expense[cat];
+    const gen = api.SPORT_TAXONOMIES[dep].expense[cat];
     const bloque = (api.GENERIC_EXPENSE_CATEGORIES.find(g => g.id === gen) || {}).block;
     if (rama && bloque && rama !== bloque) {
-      add('P1', 'bloque-motor-distinto', `'${cat}' -> genérica '${gen}' (bloque ${bloque}), pero computeYearGeneric() la suma en ${rama}: el resultado que publica la capa genérica no coincide con el del sitio`);
+      add('P1', 'bloque-motor-distinto', `(${dep}) '${cat}' -> genérica '${gen}' (bloque ${bloque}), pero computeYearGeneric() la suma en ${rama}: el resultado que publica la capa genérica no coincide con el del sitio`);
     }
   }
-  delete api.generic[PROBE];
+  delete api.generic[PROBE]; delete api.clubs[PROBE];
 
   checkTaxonomiaGenerica(api);
 
@@ -323,14 +328,14 @@ function checkTaxonomiaDeporte(api, dep, tax) {
     for (const [sub, gen] of Object.entries(mapa)) { if (!filas.has(gen)) filas.set(gen, new Set()); filas.get(gen).add(filaDe(sub)); }
     for (const [gen, f] of filas) if (f.size > 1) add('P2', 'fila-parte-generica', `la genérica de ${lado} '${gen}' cae en ${f.size} filas de Formato simplificado: ${[...f].join(' / ')}`);
   }
-  if (dep !== 'futbol') return;
   // Una línea con una subcategoría del otro lado tiene genérica (la catch-all de su lado, genericCategoryOf); una que no existe ya es P0
   // (categoria-inexistente). Acá queda solo el caso de una subcategoría declarada en category-map.js que el mapa no resuelve.
   for (const { clubId, year, rev, exp } of clubYears(api)) {
+    if (((api.clubs[clubId] || {}).sport || 'futbol') !== dep) continue; // (to-do 339) cada club con la taxonomía de su deporte
     for (const [lado, side, lines] of [['ingreso', 'revenue', rev], ['gasto', 'expense', exp]]) {
       for (const l of lines) {
-        const declarada = api.REVENUE_CATEGORIES.includes(l.normalizedCategory) || api.EXPENSE_CATEGORIES.includes(l.normalizedCategory);
-        if (declarada && !api.genericCategoryOf('futbol', side, l.normalizedCategory)) add('P1', 'taxonomia-incompleta', `${ref(clubId, year)} ${lado} "${l.rawLabel}": la subcategoría '${l.normalizedCategory}' no tiene genérica`);
+        const declarada = listas.revenue.includes(l.normalizedCategory) || listas.expense.includes(l.normalizedCategory);
+        if (declarada && !api.genericCategoryOf(dep, side, l.normalizedCategory)) add('P1', 'taxonomia-incompleta', `${ref(clubId, year)} ${lado} "${l.rawLabel}": la subcategoría '${l.normalizedCategory}' no tiene genérica`);
       }
     }
   }
@@ -1756,6 +1761,43 @@ function checkComaComida() {
   if (fs.existsSync(R)) walk(R);
 }
 
+// (to-do 339) PRUEBA DE DEPORTE: por cada deporte con taxonomía distinto del fútbol se arma EN MEMORIA un club de muestra (una línea por subcategoría de ingreso y de gasto) y se
+// corren con él TODOS los chequeos. Nada de lo que la muestra provoque como P0 o P1 puede ser por el deporte: si pasa, es un chequeo con una lista o un id del fútbol fijo y sale como
+// P1 `deporte-muestra`. Los P2 y P3 de la muestra (sin fuente, sin total oficial...) son ruido de ser sintético y no se publican. Cuando se cargue un club real de ese deporte
+// (Bath Rugby), el mismo `node tools/audit.js` lo audita con la misma exigencia.
+const MUESTRAS = [];
+function montarMuestras(api) {
+  for (const [dep, t] of Object.entries(api.SPORT_TAXONOMIES)) {
+    if (dep === 'futbol') continue;
+    const id = `muestra${dep}-gb`; const lineas = (lado, signo) => Object.keys(t[lado]).map((c, i) => ({ rawLabel: `muestra ${c}`, normalizedCategory: c, amountNative: signo * (i + 1) }));
+    api.clubs[id] = { id, name: `Muestra ${dep}`, displayName: `Muestra ${dep}`, country: 'GB', reportingCurrency: 'GBP', fiscalYearStart: '07-01', sport: dep, brandColor: null };
+    api.generic[id] = { revenueLinesByYear: { 2024: lineas('revenue', 1) }, expenseLinesByYear: { 2024: lineas('expense', -1) }, fiscalYearMeta: { 2024: { currency: 'GBP', fx: 1.25, reportType: 'official_balance_sheet' } } };
+    MUESTRAS.push(id);
+  }
+}
+// Segunda pasada, DESPUÉS de todos los chequeos reales y sin mezclarse con ellos (la muestra no cuenta como club en ningún total): se arma la muestra, se corren los chequeos que miran
+// datos de clubes, y de lo que da solo se conserva lo P0/P1 que nombra a la muestra. `club-sin-archivo` es de ser sintética (no tiene data file) y no cuenta.
+function pruebaDeDeporte(api) {
+  const n0 = findings.length, s0 = silenciados.length;
+  montarMuestras(api);
+  if (!MUESTRAS.length) return;
+  // Un chequeo que tira una excepción con un deporte nuevo no puede tirar abajo el informe de los datos reales: sale como P1 deporte-muestra con el nombre del chequeo.
+  const excepciones = [];
+  try {
+    for (const chequeo of [checkEstructura, checkTieOuts, checkCategorias, checkLineas, checkMoneda, checkCajaDeudaProporcion, checkFxProcedencia, checkFuentesPublicas, checkClubIds, checkLigasPorEjercicio, checkRankings, checkCategorizacion, checkEscala, checkHigiene, checkGestiones]) {
+      try { chequeo(api); } catch (e) { excepciones.push({ chequeo: chequeo.name, mensaje: String((e && e.message) || e).slice(0, 200) }); }
+    }
+  } finally {
+    // limpieza pase lo que pase: la muestra y la sonda nunca quedan en los datos que usa el resto de la corrida
+    for (const id of MUESTRAS) { delete api.clubs[id]; delete api.generic[id]; }
+    delete api.clubs['__sonda_de_auditoria__']; delete api.generic['__sonda_de_auditoria__'];
+  }
+  const malos = findings.slice(n0).filter(f => MUESTRAS.some(id => f.msg.includes(id)) && (f.sev === 'P0' || f.sev === 'P1') && f.code !== 'club-sin-archivo');
+  findings.length = n0; silenciados.length = s0;
+  for (const x of excepciones) findings.push({ sev: 'P1', code: 'deporte-muestra', msg: `el chequeo ${x.chequeo}() tiró una excepción con el club de muestra (${MUESTRAS.join(', ')}): ${x.mensaje}` });
+  for (const f of malos) findings.push({ sev: 'P1', code: 'deporte-muestra', msg: `el club de muestra de ${MUESTRAS.find(id => f.msg.includes(id)).replace(/^muestra|-gb$/g, '')} da ${f.sev} ${f.code}: ${f.msg.slice(0, 220)}` });
+}
+
 function main() {
   let api;
   try { api = loadEngine(); }
@@ -1793,6 +1835,7 @@ function main() {
   checkReglasCategoria();
   checkDeportes();
   checkComaComida();
+  pruebaDeDeporte(api);
 
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
   // (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.
