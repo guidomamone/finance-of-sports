@@ -1,0 +1,377 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Ligas, muchos países y deportes</title>
+<style>
+/* Layout: una página de mockup con cuatro secciones (hoy, propuesta interactiva, cómo crece, una liga con Informes). Los datos son los reales del sitio. */
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#18202c; --muted:#5f6b7a; --line:#dde2ea;
+  --azul:#0a2b5c; --azul-soft:#e7eef9; --oro:#f2b705; --oro-soft:#fff6d9;
+  --nota:#a3321f; --nota-bg:#fdeeea; --ok:#1b7a43;
+  --bar:#3a63a8; --bar-bg:#e9edf3;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f141c; --card:#171d28; --ink:#e8ecf2; --muted:#9aa5b5; --line:#2a3342;
+  --azul:#9db9ee; --azul-soft:#1a2740; --oro:#f2b705; --oro-soft:#3a3010;
+  --nota:#f0a898; --nota-bg:#2e1a16; --ok:#7fd6a0;
+  --bar:#6f95d6; --bar-bg:#252d3b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141c; --card:#171d28; --ink:#e8ecf2; --muted:#9aa5b5; --line:#2a3342;
+  --azul:#9db9ee; --azul-soft:#1a2740; --oro:#f2b705; --oro-soft:#3a3010;
+  --nota:#f0a898; --nota-bg:#2e1a16; --ok:#7fd6a0;
+  --bar:#6f95d6; --bar-bg:#252d3b; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 64px}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1{font-size:25px;line-height:1.2;margin:0;text-wrap:balance}
+h2{font-size:18px;margin:0;text-wrap:balance}
+h3{font-size:15px;margin:0}
+p{margin:0}
+.lede{color:var(--muted);max-width:70ch}
+button{font:inherit;cursor:pointer;color:inherit}
+a{color:var(--azul)}
+.sec{display:flex;flex-direction:column;gap:14px}
+.sec > .kick{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.nota{background:var(--nota-bg);color:var(--nota);border-radius:8px;padding:10px 14px;font-size:13.5px;line-height:1.5}
+.nota b{font-weight:700}
+.dec{display:flex;flex-direction:column;gap:6px;margin:6px 0 0;padding-left:20px}
+.dec li{padding-left:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}
+/* Barra de controles */
+.ctl{display:flex;flex-direction:column;gap:10px}
+.fila{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.fila .lbl{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);min-width:76px}
+.chip{border:1px solid var(--line);background:var(--card);padding:6px 13px;border-radius:999px;font-size:14px;line-height:1.3}
+.chip[aria-pressed="true"]{background:var(--azul);color:#fff;border-color:var(--azul)}
+:root[data-theme="dark"] .chip[aria-pressed="true"]{color:#0f141c}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .chip[aria-pressed="true"]{color:#0f141c}}
+.chip:focus-visible,summary:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid var(--oro);outline-offset:2px}
+.chip .n{opacity:.7;margin-left:4px;font-size:12.5px}
+.buscar{flex:1 1 260px;display:flex;align-items:center;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:0 12px;height:42px}
+.buscar input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;color:var(--ink);font-size:16px}
+.cuenta{font-size:13.5px;color:var(--muted)}
+.acc{display:flex;gap:8px;margin-left:auto}
+.acc button{background:none;border:0;color:var(--azul);font-size:13.5px;text-decoration:underline;padding:4px}
+/* Un país */
+.pais{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden}
+.pais + .pais{margin-top:8px}
+.pais summary{list-style:none;display:flex;align-items:center;gap:10px;padding:12px 16px;cursor:pointer;flex-wrap:wrap}
+.pais summary::-webkit-details-marker{display:none}
+.pais summary::before{content:"▸";color:var(--muted);transition:transform .15s}
+.pais[open] summary::before{transform:rotate(90deg)}
+.pais .flag{font-size:1.25em;line-height:1}
+.pais .nom{font-weight:700;font-size:15.5px}
+.pais .res{color:var(--muted);font-size:13.5px;margin-left:auto;text-align:right}
+.pais .cuerpo{border-top:1px solid var(--line)}
+.dep{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:10px 16px 2px;background:var(--bg)}
+.liga{display:grid;grid-template-columns:34px minmax(0,1.3fr) minmax(0,1fr) 104px;gap:6px 12px;align-items:center;padding:10px 16px;border-top:1px solid var(--line)}
+.liga:first-child{border-top:0}
+.liga .niv{font-size:12px;font-weight:700;color:var(--azul);background:var(--azul-soft);border-radius:6px;text-align:center;padding:2px 0}
+.liga .ln{font-weight:600;min-width:0}
+.liga .ln small{display:block;font-weight:400;color:var(--muted);font-size:12.5px}
+.liga .cov{display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:var(--muted)}
+.barra{height:6px;border-radius:3px;background:var(--bar-bg);overflow:hidden}
+.barra i{display:block;height:100%;background:var(--bar)}
+.liga .tot{white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums;font-weight:600;font-size:14px}
+.liga .tot small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.insig{display:inline-block;margin-left:6px;font-size:11.5px;font-weight:600;color:var(--azul);background:var(--azul-soft);border-radius:999px;padding:1px 8px;vertical-align:1px}
+.sin{opacity:.6}
+.sin summary{cursor:default}
+/* Por deporte */
+.deporte{display:flex;flex-direction:column;gap:10px}
+.dhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.dhead .res{color:var(--muted);font-size:13.5px}
+.dpais{display:grid;grid-template-columns:minmax(120px,190px) minmax(0,1fr);gap:8px 14px;padding:9px 0;border-top:1px solid var(--line);align-items:start}
+.dpais .nom{font-weight:600}
+.dligas{display:flex;flex-wrap:wrap;gap:6px}
+.lchip{font-size:13px;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:var(--bg)}
+.lchip b{color:var(--azul);margin-right:5px}
+/* Matriz por nivel */
+.mat{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:13.5px}
+th,td{padding:9px 12px;text-align:left;border-top:1px solid var(--line);vertical-align:top}
+thead th{border-top:0;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+tbody th{font-weight:700;white-space:nowrap}
+td small{display:block;color:var(--muted);font-size:12px}
+td.vacio{color:var(--muted)}
+/* Cómo crece */
+.escala td,.escala th{font-size:13.5px}
+.escala{min-width:560px}
+/* Una liga */
+.tabs{display:flex;flex-wrap:wrap;gap:6px}
+.pg{display:flex;flex-direction:column;gap:14px}
+.pg .tit{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pg .tit .flag{font-size:1.5em}
+.pg .sub{color:var(--muted);font-size:14px}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:3px 11px;color:var(--muted)}
+.pill.on{background:var(--azul);border-color:var(--azul);color:#fff}
+:root[data-theme="dark"] .pill.on{color:#0f141c}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .pill.on{color:#0f141c}}
+.dos{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:12px}
+.esq{border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--muted);font-size:13px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.esq .r{height:10px;border-radius:5px;background:var(--bar-bg)}
+.informes{display:flex;flex-direction:column;gap:6px;outline:2px solid var(--oro);outline-offset:6px;border-radius:12px}
+.igrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:6px}
+.inf{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:5px;min-width:0}
+.inf p{font-size:13px;color:var(--muted);line-height:1.45}
+.inf .top{display:flex;gap:8px;align-items:center;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.inf .bor{background:var(--oro-soft);border:1px solid var(--oro);border-radius:999px;padding:0 8px;letter-spacing:0;text-transform:none;font-weight:600;color:var(--ink)}
+.inf h4{margin:0;font-size:15px;line-height:1.3;color:var(--azul)}
+.inf .ed{font-weight:600;color:var(--ink)}
+.inf .cifra{background:var(--bg);border-radius:8px;padding:8px 10px;color:var(--ink)}
+.inf .cifra b{font-size:13.5px;display:block}
+.inf .cifra span{font-size:12px;color:var(--muted)}
+.inf .lk{font-weight:600;font-size:13.5px;margin-top:auto;padding-top:6px}
+.vacia{border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--muted);font-size:13.5px}
+@media (max-width:700px){
+  .liga{grid-template-columns:34px minmax(0,1fr) 100px}
+  .liga .cov{grid-column:2 / 4;grid-row:2}
+  .dpais{grid-template-columns:1fr}
+  .dos{grid-template-columns:1fr}
+  .pais .res{margin-left:0;text-align:left;width:100%}
+  .acc{margin-left:0}
+}
+@media (prefers-reduced-motion: reduce){.pais summary::before{transition:none}}
+</style>
+
+<div class="wrap">
+  <header class="sec">
+    <div class="kick">Mockup · to-do 344 · solo para aprobar, no hay nada implementado</div>
+    <h1>Ligas con muchos países y varios deportes</h1>
+    <p class="lede">Hoy hay <span id="nL"></span> ligas de <span id="nP"></span> países, <span id="nD"></span> con datos cargados, y desde el 248 también Premiership Rugby. Esto muestra cómo se agrupan, se filtran y se ordenan cuando sean muchas más, y dónde vive la sección Informes (332). Los números de cada fila son los reales del sitio al 2026-10-21.</p>
+    <div class="nota"><b>Lo que hay que decidir.</b>
+      <ol class="dec">
+        <li>Agrupar por país por default, con deporte y nivel como filtros o vistas.</li>
+        <li>Los niveles se comparan solo dentro de un país y un deporte: no hay un ranking de «segundas divisiones» entre países.</li>
+        <li>Países plegados cuando son muchos, con el resumen siempre a la vista.</li>
+        <li>«Inglaterra» agrupa hoy también la Premiership escocesa (el país del sitio es GB, con nombre Inglaterra). Con más ligas conviene separar Escocia, Gales e Irlanda del Norte o llamar al grupo «Reino Unido».</li>
+        <li>Informes: el bloque dentro de cada liga (ya hecho) más un filtro «Con informes» en esta lista, que cuenta solo los informes propios de la liga (el de la UEFA cubre toda Europa y no distingue). Una página aparte con todos queda afuera por ahora.</li>
+      </ol>
+    </div>
+  </header>
+
+  <section class="sec" id="hoy">
+    <div class="kick">1 · Cómo es hoy</div>
+    <h2>Una fila por país, ligas por división, sin filtro de deporte</h2>
+    <p class="lede">Es el estado frío de la pestaña Ligas: buscador, regiones como filtro y los países alfabéticos. Con un solo deporte alcanza. Con rugby al lado, Inglaterra mezcla dos deportes en la misma lista y la «división» de uno no se lee contra la del otro.</p>
+    <div id="hoyBox"></div>
+    <div class="nota"><b>El problema concreto.</b> Dos cosas: la Premiership escocesa de fútbol aparece bajo «Inglaterra» (mirá la fila de abajo), y Premiership Rugby figura como «nivel 1» de Inglaterra, igual que la Premier League. Y no hay forma de ver «solo rugby» ni «solo ligas con datos».</div>
+  </section>
+
+  <section class="sec" id="propuesta">
+    <div class="kick">2 · La propuesta</div>
+    <h2>Filtros arriba, una forma de agrupar y un orden</h2>
+    <p class="lede">Probá los controles: todo es interactivo y usa los datos reales. El default es agrupar por país, de la A a la Z, con los países plegados.</p>
+    <div class="card ctl">
+      <div class="fila"><span class="lbl">Deporte</span><span id="cSport" class="fila"></span></div>
+      <div class="fila"><span class="lbl">Región</span><span id="cReg" class="fila"></span></div>
+      <div class="fila"><span class="lbl">Agrupar por</span><span id="cGrp" class="fila"></span></div>
+      <div class="fila"><span class="lbl">Ordenar</span><span id="cOrd" class="fila"></span></div>
+      <div class="fila"><span class="lbl">Mostrar</span><span id="cExtra" class="fila"></span></div>
+      <div class="fila"><label class="buscar"><input id="q" type="search" placeholder="Buscar una liga o un país" autocomplete="off"></label></div>
+    </div>
+    <div class="fila"><span class="cuenta" id="cuenta"></span><span class="acc" id="acc"></span></div>
+    <div id="lista"></div>
+    <div class="nota" id="notaGrp"></div>
+  </section>
+
+  <section class="sec" id="crece">
+    <div class="kick">3 · Cuando crezca</div>
+    <h2>Qué hace la pantalla con 66, con 150 y con 400 ligas</h2>
+    <div class="mat"><table class="escala">
+      <thead><tr><th></th><th>Hoy</th><th>~150 ligas</th><th>~400 ligas</th></tr></thead>
+      <tbody>
+        <tr><th>Qué se ve al entrar</th><td><span id="hoyRes"></span></td><td>Los países, plegados, con su resumen</td><td>Un buscador y las regiones; los países aparecen al elegir una región o escribir</td></tr>
+        <tr><th>Países abiertos</th><td>Los primeros, o los que coinciden con la búsqueda</td><td>Solo los que coinciden con la búsqueda</td><td>Ninguno; «Abrir todos» pide confirmar el costo</td></tr>
+        <tr><th>Filtro de deporte</th><td>Aparece cuando hay más de un deporte con datos</td><td>Igual</td><td>Igual, con el conteo de ligas por deporte</td></tr>
+        <tr><th>Vista por nivel</th><td>Una matriz país × nivel de un deporte</td><td>Igual; filas por región</td><td>Igual; solo con una región elegida</td></tr>
+        <tr><th>Qué se baja</th><td colspan="3">Solo el índice de ligas (<code>RANKINGS_INDICE</code>, un renglón por liga). Un ranking se baja al entrar a esa liga, como hoy; el costo de la lista no crece con los clubes.</td></tr>
+        <tr><th>La URL</th><td colspan="3">Deporte, región, agrupación y orden van en la URL (<code>?tab=liga&amp;deporte=rugby&amp;agrupar=nivel</code>): un filtro se puede compartir, y «atrás» lo respeta.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="sec" id="liga">
+    <div class="kick">4 · Informes (332)</div>
+    <h2>El bloque vive dentro de cada liga, y aparece solo si hay algo que mostrar</h2>
+    <p class="lede">Los informes de Europa van arriba, los de la liga después. Una liga sin informes verificados no muestra el bloque, ni uno vacío. El recuadro amarillo marca lo que ya está hecho.</p>
+    <div class="tabs" id="tabsL" role="group" aria-label="Liga de ejemplo"></div>
+    <div class="card pg" id="pg"></div>
+  </section>
+</div>
+
+<script>
+const D = {"sports":[{"id":"futbol","key":"sport.futbol","name":"Fútbol","icon":"⚽","active":true},{"id":"rugby","key":"sport.rugby","name":"Rugby","icon":"🏉","active":true}],"regions":[{"id":"sudamerica","key":"region.sudamerica","name":"Sudamérica"},{"id":"europa","key":"region.europa","name":"Europa"},{"id":"asia","key":"region.asia","name":"Asia"},{"id":"norteamerica","key":"region.norteamerica","name":"Norteamérica"},{"id":"africa","key":"region.africa","name":"África"},{"id":"oceania","key":"region.oceania","name":"Oceanía"}],"countries":{"AR":{"n":"Argentina","f":"🇦🇷","r":"sudamerica"},"BE":{"n":"Bélgica","f":"🇧🇪","r":"europa"},"BR":{"n":"Brasil","f":"🇧🇷","r":"sudamerica"},"CL":{"n":"Chile","f":"🇨🇱","r":"sudamerica"},"CO":{"n":"Colombia","f":"🇨🇴","r":"sudamerica"},"DE":{"n":"Alemania","f":"🇩🇪","r":"europa"},"DK":{"n":"Dinamarca","f":"🇩🇰","r":"europa"},"ES":{"n":"España","f":"🇪🇸","r":"europa"},"GB":{"n":"Inglaterra","f":"🏴","r":"europa"},"GR":{"n":"Grecia","f":"🇬🇷","r":"europa"},"HR":{"n":"Croacia","f":"🇭🇷","r":"europa"},"JP":{"n":"Japón","f":"🇯🇵","r":"asia"},"MX":{"n":"México","f":"🇲🇽","r":"norteamerica"},"NL":{"n":"Países Bajos","f":"🇳🇱","r":"europa"},"PE":{"n":"Perú","f":"🇵🇪","r":"sudamerica"},"AT":{"n":"Austria","f":"🇦🇹","r":"europa"},"CH":{"n":"Suiza","f":"🇨🇭","r":"europa"},"CN":{"n":"China","f":"🇨🇳","r":"asia"},"CZ":{"n":"República Checa","f":"🇨🇿","r":"europa"},"EC":{"n":"Ecuador","f":"🇪🇨","r":"sudamerica"},"IT":{"n":"Italia","f":"🇮🇹","r":"europa"},"KR":{"n":"Corea del Sur","f":"🇰🇷","r":"asia"},"NO":{"n":"Noruega","f":"🇳🇴","r":"europa"},"PT":{"n":"Portugal","f":"🇵🇹","r":"europa"},"RU":{"n":"Rusia","f":"🇷🇺","r":"europa"},"TR":{"n":"Turquía","f":"🇹🇷","r":"europa"},"EE":{"n":"Estonia","f":"🇪🇪","r":"europa"}},"leagues":{"ar-primera":{"n":"Primera División","c":"AR","s":"futbol","t":1},"ar-primeranacional":{"n":"Primera Nacional","c":"AR","s":"futbol","t":2},"ar-primerab":{"n":"Primera B Metropolitana","c":"AR","s":"futbol","t":3},"be-proleague":{"n":"Pro League","c":"BE","s":"futbol","t":1},"ee-esiliiga":{"n":"Esiliiga","c":"EE","s":"futbol","t":2},"be-challengerproleague":{"n":"Challenger Pro League","c":"BE","s":"futbol","t":2},"be-div1amateur":{"n":"1. Amateur Division","c":"BE","s":"futbol","t":3},"be-div2amateur":{"n":"2. Amateur Division","c":"BE","s":"futbol","t":4},"be-div3amateur":{"n":"3. Amateur Division","c":"BE","s":"futbol","t":5},"br-serieA":{"n":"Brasileirão Série A","c":"BR","s":"futbol","t":1},"br-serieB":{"n":"Brasileirão Série B","c":"BR","s":"futbol","t":2},"br-serieC":{"n":"Brasileirão Série C","c":"BR","s":"futbol","t":3},"br-serieD":{"n":"Brasileirão Série D","c":"BR","s":"futbol","t":4},"br-paulistaA1":{"n":"Paulista Série A1","c":"BR","s":"futbol","t":null},"br-paulistaA2":{"n":"Paulista Série A2","c":"BR","s":"futbol","t":null},"br-paulistaA3":{"n":"Paulista Série A3","c":"BR","s":"futbol","t":null},"cl-primera":{"n":"Primera División","c":"CL","s":"futbol","t":1},"co-primeraA":{"n":"Primera A","c":"CO","s":"futbol","t":1},"co-primeraB":{"n":"Primera B","c":"CO","s":"futbol","t":2},"de-bundesliga":{"n":"Bundesliga","c":"DE","s":"futbol","t":1},"de-2bundesliga":{"n":"2. Bundesliga","c":"DE","s":"futbol","t":2},"dk-superliga":{"n":"Superliga","c":"DK","s":"futbol","t":1},"es-laliga":{"n":"LaLiga","c":"ES","s":"futbol","t":1},"es-segunda":{"n":"Segunda División","c":"ES","s":"futbol","t":2},"gb-premierleague":{"n":"Premier League","c":"GB","s":"futbol","t":1},"gb-championship":{"n":"Championship","c":"GB","s":"futbol","t":2},"gb-scottishpremiership":{"n":"Premiership","c":"GB","s":"futbol","t":1},"gb-premiershiprugby":{"n":"Premiership Rugby","c":"GB","s":"rugby","t":1},"ee-meistriliiga":{"n":"Meistriliiga","c":"EE","s":"futbol","t":1},"gr-superleague":{"n":"Super League","c":"GR","s":"futbol","t":1},"tr-superlig":{"n":"Süper Lig","c":"TR","s":"futbol","t":1},"hr-hnl":{"n":"HNL","c":"HR","s":"futbol","t":1},"jp-j1":{"n":"J1 League","c":"JP","s":"futbol","t":1},"mx-ligamx":{"n":"Liga MX","c":"MX","s":"futbol","t":1},"nl-eredivisie":{"n":"Eredivisie","c":"NL","s":"futbol","t":1},"pe-liga1":{"n":"Liga 1","c":"PE","s":"futbol","t":1},"at-bundesliga":{"n":"Bundesliga","c":"AT","s":"futbol","t":1},"at-2liga":{"n":"2. Liga","c":"AT","s":"futbol","t":2},"ch-superleague":{"n":"Super League","c":"CH","s":"futbol","t":1},"ch-challengeleague":{"n":"Challenge League","c":"CH","s":"futbol","t":2},"cn-csl":{"n":"Super League","c":"CN","s":"futbol","t":1},"cn-league1":{"n":"League One","c":"CN","s":"futbol","t":2},"cz-firstleague":{"n":"Primera Liga","c":"CZ","s":"futbol","t":1},"cz-fnl":{"n":"FNL","c":"CZ","s":"futbol","t":2},"dk-1division":{"n":"1. Division","c":"DK","s":"futbol","t":2},"ec-seriea":{"n":"Serie A","c":"EC","s":"futbol","t":1},"ec-serieb":{"n":"Serie B","c":"EC","s":"futbol","t":2},"gb-leagueone":{"n":"League One","c":"GB","s":"futbol","t":3},"gb-leaguetwo":{"n":"League Two","c":"GB","s":"futbol","t":4},"gr-superleague2":{"n":"Super League 2","c":"GR","s":"futbol","t":2},"it-seriea":{"n":"Serie A","c":"IT","s":"futbol","t":1},"it-serieb":{"n":"Serie B","c":"IT","s":"futbol","t":2},"it-seriec":{"n":"Serie C","c":"IT","s":"futbol","t":3},"it-seried":{"n":"Serie D","c":"IT","s":"futbol","t":4},"kr-kleague1":{"n":"K League 1","c":"KR","s":"futbol","t":1},"kr-kleague2":{"n":"K League 2","c":"KR","s":"futbol","t":2},"nl-eerstedivisie":{"n":"Eerste Divisie","c":"NL","s":"futbol","t":2},"no-eliteserien":{"n":"Eliteserien","c":"NO","s":"futbol","t":1},"no-1divisjon":{"n":"1. divisjon","c":"NO","s":"futbol","t":2},"no-2divisjon":{"n":"2. divisjon","c":"NO","s":"futbol","t":3},"pt-primeiraliga":{"n":"Primeira Liga","c":"PT","s":"futbol","t":1},"pt-ligaportugal2":{"n":"Liga Portugal 2","c":"PT","s":"futbol","t":2},"pt-liga3":{"n":"Liga 3","c":"PT","s":"futbol","t":3},"ru-premierliga":{"n":"Premier Liga","c":"RU","s":"futbol","t":1},"ru-pervayaliga":{"n":"Primera Liga","c":"RU","s":"futbol","t":2},"tr-1lig":{"n":"1. Lig","c":"TR","s":"futbol","t":2}},"indice":{"ar-primera":[2024,10,28],"ar-primerab":[2021,1,17],"ar-primeranacional":[2023,2,34],"at-bundesliga":[2025,1,12],"be-challengerproleague":[2025,6,16],"be-div1amateur":[2024,2,18],"be-div2amateur":[2022,2,48],"be-proleague":[2025,15,16],"br-paulistaA1":[2017,2,16],"br-paulistaA2":[2015,2,20],"br-paulistaA3":[2014,1,20],"br-serieA":[2025,17,20],"br-serieB":[2025,17,20],"br-serieC":[2024,3,20],"br-serieD":[2018,2,68],"ch-superleague":[2020,3,10],"cl-primera":[2025,3,16],"co-primeraA":[2025,13,20],"co-primeraB":[2018,2,16],"de-2bundesliga":[2025,2,18],"de-bundesliga":[2024,10,18],"dk-1division":[2020,1,12],"dk-superliga":[2024,5,12],"ee-esiliiga":[2024,1,10],"ee-meistriliiga":[2025,9,10],"es-laliga":[2025,14,20],"es-segunda":[2025,3,22],"gb-championship":[2022,4,24],"gb-leagueone":[2022,1,24],"gb-premierleague":[2023,18,20],"gb-premiershiprugby":[2025,1,null],"gb-scottishpremiership":[2025,1,12],"gr-superleague":[2025,12,14],"gr-superleague2":[2023,3,30],"hr-hnl":[2025,8,10],"it-seriea":[2025,16,20],"it-serieb":[2024,3,20],"it-seriec":[2024,1,60],"it-seried":[2016,1,170],"jp-j1":[2025,10,20],"mx-ligamx":[2025,1,null],"nl-eerstedivisie":[2025,10,20],"nl-eredivisie":[2025,14,18],"no-1divisjon":[2025,1,16],"no-2divisjon":[2018,1,14],"no-eliteserien":[2025,4,16],"pe-liga1":[2024,1,18],"pt-liga3":[2023,4,24],"pt-ligaportugal2":[2024,12,18],"pt-primeiraliga":[2023,16,18],"ru-pervayaliga":[2022,4,20],"ru-premierliga":[2025,16,16],"tr-superlig":[2023,1,19]},"tot":{"ar-primera":592,"ar-primerab":1,"ar-primeranacional":13,"at-bundesliga":72,"be-challengerproleague":43,"be-div1amateur":2,"be-div2amateur":2,"be-proleague":1038,"br-paulistaA1":5,"br-paulistaA2":1,"br-paulistaA3":0,"br-serieA":2439,"br-serieB":255,"br-serieC":13,"br-serieD":5,"ch-superleague":130,"cl-primera":119,"co-primeraA":213,"co-primeraB":4,"de-2bundesliga":328,"de-bundesliga":3613,"dk-1division":2,"dk-superliga":203,"ee-esiliiga":0,"ee-meistriliiga":23,"es-laliga":4453,"es-segunda":73,"gb-championship":435,"gb-leagueone":33,"gb-premierleague":7528,"gb-premiershiprugby":32,"gb-scottishpremiership":240,"gr-superleague":421,"gr-superleague2":3,"hr-hnl":221,"it-seriea":4441,"it-serieb":178,"it-seriec":4,"it-seried":3,"jp-j1":550,"mx-ligamx":156,"nl-eerstedivisie":92,"nl-eredivisie":1132,"no-1divisjon":7,"no-2divisjon":3,"no-eliteserien":71,"pe-liga1":32,"pt-liga3":3,"pt-ligaportugal2":44,"pt-primeiraliga":998,"ru-pervayaliga":92,"ru-premierliga":1523,"tr-superlig":78},"informes":[{"id":"uefa-ecfil-2025","titulo":"The European Club Finance and Investment Landscape 2025","editor":"UEFA","anio":2025,"ambito":"europa","ligas":[],"cubre":"Las primeras divisiones de Europa, agregado por liga y rubro (sin balance por club).","frase":"¿Cuánto ingresan, gastan, ganan y deben los clubes europeos, y quién invierte en ellos?","cifra":"Los ingresos de las primeras divisiones europeas pasan los €30.000 M en 2025.","fuente":"UEFA, ECFIL 2025","borrador":false},{"id":"deloitte-arff-2026","titulo":"Annual Review of Football Finance 2026","editor":"Deloitte","anio":2026,"ambito":"liga","ligas":["gb-premierleague","gb-championship","gb-leagueone","gb-leaguetwo"],"cubre":"Fútbol inglés por club (Premier y Championship) y total de League One y League Two; un capítulo sobre las cinco grandes de Europa.","frase":"¿Cuánto ganaron y perdieron los clubes ingleses, qué pesan los sueldos y cuánta deuda hay?","cifra":"Premier League 2024/25: pérdida antes de impuestos de £948 M.","fuente":"Deloitte, ARFF 2026","borrador":false},{"id":"ifr-state-of-the-game-2026","titulo":"State of the Game 2026","editor":"Independent Football Regulator","anio":2026,"ambito":"liga","ligas":["gb-premierleague","gb-championship","gb-leagueone","gb-leaguetwo"],"cubre":"Las cinco divisiones de hombres de Inglaterra, agregado por división (sin balance por club). Borrador en consulta.","frase":"¿Qué tan sana es la economía del fútbol inglés y dónde están los riesgos de todo el sistema?","cifra":"94% de los clubes de las cinco primeras divisiones inglesas, con pérdida antes de impuestos en 2025/26 (datos reales y proyectados).","fuente":"IFR, State of the Game 2026","borrador":true},{"id":"dfl-wirtschaftsreport-2425","titulo":"DFL-Wirtschaftsreport 24/25","editor":"DFL","anio":2025,"ambito":"liga","ligas":["de-bundesliga","de-2bundesliga"],"cubre":"Bundesliga y 2. Bundesliga, agregado por liga y por grupos de clubes (sin balance por club).","frase":"¿Cuánto ingresan, gastan y ganan los clubes del fútbol profesional alemán, y qué patrimonio tienen?","cifra":"Bundesliga 2024/25: ganancia operativa récord de €242,1 M; 13 de 18 clubes con ganancia.","fuente":"DFL, Wirtschaftsreport 24/25","borrador":false},{"id":"laliga-informe-economico-2425","titulo":"Informe Económico Financiero 2024/25","editor":"LaLiga","anio":2026,"ambito":"liga","ligas":["es-laliga","es-segunda"],"cubre":"LaLiga EA Sports y LaLiga Hypermotion (42 clubes), agregado, con estados financieros agregados en anexo (sin balance por club).","frase":"¿Cuánto ingresan los clubes de las dos categorías profesionales de España y qué resultado tienen?","cifra":"LaLiga y Hypermotion 2024/25: ingresos totales normalizados de €5.464 M, +8,1%.","fuente":"LaLiga, Informe Económico Financiero 2024/25","borrador":false},{"id":"reportcalcio-2025","titulo":"ReportCalcio 2025","editor":"FIGC · AREL · PwC","anio":2025,"ambito":"liga","ligas":["it-seriea","it-serieb","it-seriec"],"cubre":"Fútbol italiano profesional (Serie A, B y C) agregado; el link es el resumen público de la 15.ª edición.","frase":"¿Cuánto pierde y cuánto debe el fútbol profesional italiano, y qué peso económico tiene en el país?","cifra":"Serie A, B y C: la pérdida agregada bajó de €1.400 M (2021/22) a €731 M (2023/24).","fuente":"FIGC, ReportCalcio 2025","borrador":false},{"id":"ey-clubes-brasileiros-2025","titulo":"Levantamento Financeiro Clubes Brasileiros 2025","editor":"EY","anio":2026,"ambito":"liga","ligas":["br-serieA"],"cubre":"Los clubes de la Série A de 2025, a partir de sus estados financieros publicados: ingresos, costos y endeudamiento.","frase":"¿Cuánto ingresan, gastan y deben los clubes del Brasileirão?","cifra":"Série A 2025: ingresos totales de R$ 14.900 M, +33% contra 2024.","fuente":"EY, Levantamento Financeiro 2025","borrador":false},{"id":"toppfotballbarometeret-2026","titulo":"Toppfotballbarometeret 2026","editor":"Norsk Toppfotball · Deloitte","anio":2026,"ambito":"liga","ligas":["no-eliteserien","no-1divisjon"],"cubre":"Eliteserien, OBOS-ligaen (1. divisjon) y Toppserien según el reporte de licencia de cada club, con página por club en los capítulos de cada liga.","frase":"¿Cuánto ingresan y gastan los clubes noruegos y en qué se les va la plata?","cifra":"Eliteserien 2025: ingresos de NOK 2.711 M (+25%) contra costos de NOK 3.036 M.","fuente":"Norsk Toppfotball y Deloitte, Toppfotballbarometeret 2026","borrador":false},{"id":"supersociedades-futbol-2025","titulo":"Comportamiento financiero del fútbol profesional colombiano 2025","editor":"Superintendencia de Sociedades","anio":2026,"ambito":"liga","ligas":["co-primeraA","co-primeraB"],"cubre":"Clubes del fútbol profesional colombiano constituidos como sociedades anónimas, con corte al 31-dic-2025; tablero interactivo.","frase":"¿Cómo les fue a los clubes colombianos: ingresos, activos y de dónde sale la plata?","cifra":"Fútbol masculino 2025: ingresos operacionales +16,6% y activos de $925 mil millones (+7,7%).","fuente":"Supersociedades, informe 2025","borrador":false},{"id":"jleague-season-review-2025","titulo":"Season Review 2025: Club Licensing and Revenue","editor":"J.League","anio":2025,"ambito":"liga","ligas":["jp-j1"],"cubre":"Los 60 clubes de J1, J2 y J3: ingresos operativos del año fiscal 2024 y proyección 2025, agregado.","frase":"¿Cuánto facturan los clubes de la J.League y cómo evolucionan sus ingresos?","cifra":"J.League, año fiscal 2024: ingresos operativos de ¥172.500 M (60 clubes), +14%.","fuente":"J.League, Season Review 2025","borrador":false}]};
+const $ = (id) => document.getElementById(id);
+const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const SP = Object.fromEntries(D.sports.map((s) => [s.id, s]));
+const REG = Object.fromEntries(D.regions.map((r) => [r.id, r]));
+const nClubes = (n) => n + (n === 1 ? ' club' : ' clubes');
+const ordinal = (t) => t + '.ª';
+const fmtM = (v) => 'US$ ' + v.toLocaleString('es', { useGrouping: 'always' }) + ' M';
+
+const LIGAS = Object.entries(D.leagues).map(([id, l]) => {
+  const ix = D.indice[id] || null;
+  const c = D.countries[l.c] || { n: l.c, f: '', r: '' };
+  const europa = c.r === 'europa' && l.s === 'futbol';
+  const informes = D.informes.filter((i) => (i.ambito === 'europa' ? europa : i.ligas.includes(id)));
+  return { id, n: l.n, c: l.c, pais: c.n, flag: c.f, reg: c.r, s: l.s, t: l.t, ix, anio: ix ? ix[0] : null, nc: ix ? ix[1] : 0, tam: ix ? ix[2] : null, tot: D.tot[id] || 0, informes, propios: informes.filter((i) => i.ambito !== 'europa') };
+});
+$('nL').textContent = LIGAS.length;
+$('nP').textContent = new Set(LIGAS.map((l) => l.c)).size;
+$('nD').textContent = LIGAS.filter((l) => l.ix).length;
+
+function filaLiga(l, conDeporte) {
+  const cov = l.ix ? (l.tam ? l.nc + ' de ' + l.tam + ' clubes · ' + l.anio : l.nc + ' clubes · ' + l.anio) : 'Sin datos todavía';
+  const pct = l.ix && l.tam ? Math.round((l.nc / l.tam) * 100) : (l.ix ? 40 : 0);
+  const ins = l.propios.length ? '<span class="insig">' + l.propios.length + ' informe' + (l.propios.length > 1 ? 's' : '') + '</span>' : '';
+  return '<div class="liga"><span class="niv" title="Nivel dentro de ' + esc(l.pais) + ' y ' + esc(SP[l.s].name) + '">' + ordinal(l.t) + '</span>' +
+    '<span class="ln">' + esc(l.n) + ins + (conDeporte ? '<small>' + SP[l.s].icon + ' ' + esc(SP[l.s].name) + '</small>' : '') + '</span>' +
+    '<span class="cov"><span>' + cov + '</span><span class="barra"><i style="width:' + pct + '%"></i></span></span>' +
+    '<span class="tot">' + (l.tot ? fmtM(l.tot) : '—') + '<small>' + (l.tot ? 'de los cargados' : '') + '</small></span></div>';
+}
+
+/* Sección 1: como hoy */
+function pintarHoy() {
+  const porPais = {};
+  LIGAS.forEach((l) => { (porPais[l.c] = porPais[l.c] || []).push(l); });
+  const paises = Object.keys(porPais).sort((a, b) => D.countries[a].n.localeCompare(D.countries[b].n, 'es')).filter((c) => ['GB', 'AR', 'BE'].includes(c));
+  $('hoyBox').innerHTML = '<div class="card" style="padding:0;overflow:hidden">' + paises.map((c) => {
+    const ls = porPais[c].sort((a, b) => a.t - b.t);
+    return '<div class="dpais" style="padding:10px 16px;grid-template-columns:minmax(120px,190px) minmax(0,1fr)"><span class="nom">' + D.countries[c].f + ' ' + esc(D.countries[c].n) + '</span><span class="dligas">' +
+      ls.map((l) => '<span class="lchip"><b>' + l.t + '</b>' + esc(l.n) + (l.ix ? '' : ' (sin datos)') + '</span>').join('') + '</span></div>';
+  }).join('') + '</div><p class="cuenta" style="margin-top:6px">Se muestran tres de los ' + Object.keys(porPais).length + ' países, para el ejemplo.</p>';
+}
+
+/* Sección 2: interactivo */
+const st = { sport: 'todos', reg: 'todas', grp: 'pais', ord: 'az', inf: false, sinDatos: true, q: '', abiertos: null };
+function chips(el, items, key, fmt) {
+  el.innerHTML = items.map((it) => '<button type="button" class="chip" data-k="' + key + '" data-v="' + esc(it.id) + '" aria-pressed="' + (st[key] === it.id) + '">' + esc(it.label) + (it.n != null ? '<span class="n">' + it.n + '</span>' : '') + '</button>').join('');
+}
+function visibles() {
+  const q = norm(st.q);
+  return LIGAS.filter((l) => (st.sport === 'todos' || l.s === st.sport) && (st.reg === 'todas' || l.reg === st.reg) &&
+    (!st.inf || l.propios.length) && (!q || norm(l.n + ' ' + l.pais).includes(q)));
+}
+function controles() {
+  const base = LIGAS.filter((l) => l.ix);
+  chips($('cSport'), [{ id: 'todos', label: 'Todos', n: base.length }].concat(D.sports.map((s) => ({ id: s.id, label: s.icon + ' ' + s.name, n: base.filter((l) => l.s === s.id).length }))), 'sport');
+  chips($('cReg'), [{ id: 'todas', label: 'Todas' }].concat(D.regions.filter((r) => base.some((l) => l.reg === r.id)).map((r) => ({ id: r.id, label: r.name, n: base.filter((l) => l.reg === r.id).length }))), 'reg');
+  chips($('cGrp'), [{ id: 'pais', label: 'País' }, { id: 'deporte', label: 'Deporte' }, { id: 'nivel', label: 'Nivel' }], 'grp');
+  chips($('cOrd'), [{ id: 'az', label: 'A–Z' }, { id: 'cargados', label: 'Más clubes cargados' }, { id: 'ingreso', label: 'Mayor ingreso' }], 'ord');
+  $('cExtra').innerHTML = '<button type="button" class="chip" data-k="inf" data-v="1" aria-pressed="' + st.inf + '">Con informes<span class="n">' + LIGAS.filter((l) => l.ix && l.propios.length).length + '</span></button>' +
+    '<button type="button" class="chip" data-k="sinDatos" data-v="1" aria-pressed="' + st.sinDatos + '">Ligas sin datos, al final</button>';
+}
+function ordenar(arr, clave) { // arr de {nombre, nc, tot}
+  const f = { az: (a, b) => a.nombre.localeCompare(b.nombre, 'es'), cargados: (a, b) => b.nc - a.nc || a.nombre.localeCompare(b.nombre, 'es'), ingreso: (a, b) => b.tot - a.tot || a.nombre.localeCompare(b.nombre, 'es') }[clave];
+  return arr.sort(f);
+}
+function porPais(ls) {
+  const m = {};
+  ls.forEach((l) => { (m[l.c] = m[l.c] || { c: l.c, nombre: l.pais, flag: l.flag, ls: [], nc: 0, tot: 0 }); const g = m[l.c]; g.ls.push(l); g.nc += l.nc; g.tot += l.tot; });
+  return ordenar(Object.values(m), st.ord);
+}
+function vistaPais(ls) {
+  const grupos = porPais(ls);
+  const q = norm(st.q);
+  return grupos.map((g, i) => {
+    const conDatos = g.ls.some((l) => l.ix);
+    const deportes = [...new Set(g.ls.map((l) => l.s))];
+    const abierto = st.abiertos === 'todos' ? true : st.abiertos === 'ninguno' ? false : (q ? true : i < 2 && conDatos);
+    const ligas = g.ls.slice().sort((a, b) => a.s.localeCompare(b.s) || a.t - b.t);
+    let cuerpo = '';
+    deportes.forEach((s) => {
+      const sub = ligas.filter((l) => l.s === s && (l.ix || st.sinDatos));
+      if (!sub.length) return;
+      if (deportes.length > 1) cuerpo += '<div class="dep">' + SP[s].icon + ' ' + esc(SP[s].name) + '</div>';
+      cuerpo += sub.map((l) => filaLiga(l, false)).join('');
+    });
+    const nDatos = g.ls.filter((l) => l.ix).length;
+    return '<details class="pais' + (conDatos ? '' : ' sin') + '"' + (abierto ? ' open' : '') + '><summary><span class="flag">' + g.flag + '</span><span class="nom">' + esc(g.nombre) + '</span>' +
+      '<span class="res">' + g.ls.length + (g.ls.length === 1 ? ' liga' : ' ligas') + (nDatos ? ' · ' + nClubes(g.nc) + ' cargados' + (g.tot ? ' · ' + fmtM(g.tot) : '') : ' · sin datos') + '</span></summary><div class="cuerpo">' + cuerpo + '</div></details>';
+  }).join('');
+}
+function vistaDeporte(ls) {
+  const sports = D.sports.filter((s) => ls.some((l) => l.s === s.id));
+  return sports.map((s) => {
+    const sl = ls.filter((l) => l.s === s.id);
+    const paises = porPais(sl);
+    return '<div class="card deporte"><div class="dhead"><h3>' + s.icon + ' ' + esc(s.name) + '</h3><span class="res">' + sl.length + ' ligas · ' + paises.length + (paises.length === 1 ? ' país' : ' países') + '</span></div>' +
+      paises.map((g) => '<div class="dpais"><span class="nom">' + g.flag + ' ' + esc(g.nombre) + '</span><span class="dligas">' +
+        g.ls.sort((a, b) => a.t - b.t).filter((l) => l.ix || st.sinDatos).map((l) => '<span class="lchip' + (l.ix ? '' : ' sin') + '"><b>' + l.t + '</b>' + esc(l.n) + (l.propios.length ? '<span class="insig">' + l.propios.length + '</span>' : '') + '</span>').join('') + '</span></div>').join('') + '</div>';
+  }).join('') || '<p class="vacia">Ninguna liga con esos filtros.</p>';
+}
+function vistaNivel(ls) {
+  const s = st.sport === 'todos' ? 'futbol' : st.sport;
+  const sl = ls.filter((l) => l.s === s);
+  const maxT = Math.max(1, ...sl.map((l) => l.t));
+  const grupos = porPais(sl);
+  const aviso = st.sport === 'todos' ? '<p class="cuenta" style="margin-bottom:8px">Los niveles solo se comparan dentro de un deporte: se muestra ' + SP[s].icon + ' ' + esc(SP[s].name) + '. Elegí otro arriba.</p>' : '';
+  let th = '<th>País</th>'; for (let t = 1; t <= maxT; t++) th += '<th>Nivel ' + t + '</th>';
+  const filas = grupos.map((g) => {
+    let tds = '';
+    for (let t = 1; t <= maxT; t++) {
+      const ls2 = g.ls.filter((l) => l.t === t);
+      tds += ls2.length ? '<td>' + ls2.map((l) => esc(l.n) + '<small>' + (l.ix ? (l.tam ? l.nc + ' de ' + l.tam : nClubes(l.nc)) + ' · ' + l.anio : 'sin datos') + '</small>').join('') + '</td>' : '<td class="vacio">—</td>';
+    }
+    return '<tr><th>' + g.flag + ' ' + esc(g.nombre) + '</th>' + tds + '</tr>';
+  }).join('');
+  return aviso + '<div class="mat"><table><thead><tr>' + th + '</tr></thead><tbody>' + filas + '</tbody></table></div>';
+}
+function pintar() {
+  controles();
+  let ls = visibles();
+  const conDatos = ls.filter((l) => l.ix);
+  const paises = new Set(conDatos.map((l) => l.c)).size;
+  $('cuenta').textContent = conDatos.length + ' ligas con datos de ' + paises + (paises === 1 ? ' país' : ' países') + (ls.length > conDatos.length ? ' · ' + (ls.length - conDatos.length) + ' sin datos todavía' : '');
+  $('acc').innerHTML = st.grp === 'pais' ? '<button type="button" data-a="todos">Abrir todos</button><button type="button" data-a="ninguno">Cerrar todos</button>' : '';
+  if (!st.sinDatos) ls = ls.filter((l) => l.ix);
+  $('lista').innerHTML = !ls.length ? '<p class="vacia">Ninguna liga con esos filtros. Probá con «Todas» en región o sacá el filtro de informes.</p>' :
+    st.grp === 'pais' ? vistaPais(ls) : st.grp === 'deporte' ? vistaDeporte(ls) : vistaNivel(ls);
+  $('notaGrp').innerHTML = st.grp === 'pais' ? '<b>Por país.</b> Es el default porque casi todos entran buscando «mi liga» o «mi país». Un país con dos deportes (Inglaterra) los separa con un subtítulo, y el nivel se numera dentro de cada uno.' :
+    st.grp === 'deporte' ? '<b>Por deporte.</b> Útil cuando haya más de dos deportes con datos. Cada bloque dice cuántas ligas y países tiene; el número a la izquierda de cada liga es su nivel en su país.' :
+    '<b>Por nivel.</b> Una matriz de un solo deporte: filas, países; columnas, niveles. Sirve para ver de un vistazo qué países tienen datos de segunda o tercera. No compara ligas de niveles distintos entre países: un «Nivel 2» de Bélgica y uno de Brasil no son equivalentes.';
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('button[data-k]');
+  if (b) {
+    const k = b.dataset.k, v = b.dataset.v;
+    if (k === 'inf' || k === 'sinDatos') st[k] = !st[k]; else st[k] = v;
+    if (k === 'grp' || k === 'sport' || k === 'ord' || k === 'reg') st.abiertos = null;
+    pintar(); return;
+  }
+  const a = e.target.closest('button[data-a]');
+  if (a) { st.abiertos = a.dataset.a; pintar(); }
+});
+$('q').addEventListener('input', (e) => { st.q = e.target.value; pintar(); });
+
+/* Sección 4: una liga con informes */
+const EJ = ['gb-premierleague', 'de-bundesliga', 'gb-premiershiprugby', 'ar-primera'];
+let ej = EJ[0];
+function tarjeta(i, eur) {
+  return '<article class="inf"><div class="top"><span>' + (i.ambito === 'europa' ? 'Europa' : 'Esta liga') + '</span>' + (i.borrador ? '<span class="bor">borrador</span>' : '') + '</div><h4>' + esc(i.titulo) + '</h4><p class="ed">' + esc(i.editor) + ' · ' + i.anio + '</p><p>' + esc(i.cubre) + '</p><p style="color:var(--ink)">' + esc(i.frase) + '</p><div class="cifra"><b>' + esc(i.cifra) + '</b><span>' + esc(i.fuente) + '</span></div><span class="lk"><a href="#liga" onclick="return false">Leer el original →</a></span></article>';
+}
+function pintarLiga() {
+  $('tabsL').innerHTML = EJ.map((id) => '<button type="button" class="chip" data-l="' + id + '" aria-pressed="' + (id === ej) + '">' + esc(D.leagues[id].n) + '</button>').join('');
+  const l = LIGAS.find((x) => x.id === ej);
+  const inf = l.informes.slice().sort((a, b) => (a.ambito === 'europa' ? 0 : 1) - (b.ambito === 'europa' ? 0 : 1));
+  const sinInf = inf.length ? '<section class="informes"><h3>Informes de esta liga</h3><p class="cuenta">Lecturas de terceros que cubren esta liga. Los números son de cada informe, no de los clubes cargados en el sitio.</p><div class="igrid">' + inf.map((i) => tarjeta(i)).join('') + '</div></section>' :
+    '<div class="vacia">Sin informes verificados para ' + esc(l.n) + ': el bloque «Informes de esta liga» no aparece. Cuando Sourcing verifique uno, se suma una línea a <code>data/informes.js</code> y aparece solo.</div>';
+  $('pg').innerHTML = '<div class="tit"><span class="flag">' + l.flag + '</span><h3 style="font-size:20px">' + esc(l.n) + '</h3></div>' +
+    '<p class="sub">' + esc(l.pais) + ' · ' + ordinal(l.t) + ' nivel · ' + SP[l.s].icon + ' ' + esc(SP[l.s].name) + ' · ' + (l.ix ? (l.tam ? l.nc + ' de ' + l.tam + ' clubes cargados' : nClubes(l.nc) + ' cargados') + ' · ' + l.anio : 'sin datos') + '</p>' +
+    '<div class="pills"><span class="pill on">' + (l.anio || '—') + '</span><span class="pill">otros ejercicios</span></div>' +
+    '<div class="dos"><div class="esq"><b>Ranking de ingresos</b><span class="r" style="width:92%"></span><span class="r" style="width:74%"></span><span class="r" style="width:58%"></span><span class="r" style="width:41%"></span><span>Sin cambios</span></div>' +
+    '<div class="esq"><b>De dónde sale la plata y simulador</b><span class="r" style="width:100%"></span><span class="r" style="width:100%"></span><span>Sin cambios</span></div></div>' + sinInf +
+    '<p class="cuenta">Debajo van las salvedades y la cita de la lista de clubes, como hoy.</p>';
+}
+$('tabsL').addEventListener('click', (e) => { const b = e.target.closest('button[data-l]'); if (b) { ej = b.dataset.l; pintarLiga(); } });
+
+function resumenHoy() {
+  const conDatos = LIGAS.filter((l) => l.ix).length;
+  $('hoyRes').textContent = 'Los ' + new Set(LIGAS.map((l) => l.c)).size + ' países plegados; ' + conDatos + ' ligas con datos';
+}
+pintarHoy(); pintar(); pintarLiga(); resumenHoy();
+</script>

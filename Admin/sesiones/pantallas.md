@@ -1,3 +1,23 @@
+# Sesión pantallas (Pantallas 6): to-do 344, mockup de Ligas con muchos países y deportes
+
+## Qué cambió (para CHANGELOG)
+- 344: mockup de la pestaña Ligas con ligas de distintos países y deportes: `Prototyping/Ligas/mockup-344.html` y artifact https://claude.ai/artifact/CzmEuNtdt7i2yHNrDDi2Aa.
+  Con los datos reales de las ligas (`LEAGUES`, `RANKINGS_INDICE`, ingresos de cada ranking, informes de `data/informes.js`). Muestra el estado de hoy, una versión interactiva
+  (filtros de deporte y región; agrupar por país, deporte o nivel; ordenar A–Z, por clubes cargados o por ingreso; «Con informes»; buscador), una tabla de cómo se comporta con
+  66, 150 y 400 ligas, y la página de una liga con el bloque Informes (Premier, Bundesliga, Premiership Rugby sin informes y Primera de Argentina). No se implementó nada.
+  Verificado a escritorio y a 375 px (sin desborde de la página; la matriz por nivel scrollea dentro de su caja).
+
+## Qué queda (para TODO)
+- Esperar el ok de Guido a las decisiones del mockup: agrupar por país por default; niveles solo dentro de país y deporte; países plegados; filtro «Con informes» con los informes propios
+  de la liga (el de la UEFA cubre toda Europa y no distingue).
+- Hallazgo de datos: el país `GB` se llama «Inglaterra» y hoy agrupa también la Premiership escocesa de fútbol. Con más ligas conviene separar Escocia, Gales e Irlanda del Norte o llamar
+  al grupo «Reino Unido» (`COUNTRIES` en `data/leagues.js`). Es de datos, lo decide la principal o Guido.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 6): to-do 340 reabierto, index.html sin base ni rutas con «/»
 
 ## Qué cambió (para CHANGELOG)
