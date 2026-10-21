@@ -953,6 +953,21 @@ Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` .
 
 ---
 
+## Un deporte nuevo
+
+Cada tool lee el deporte de un club de `tools/deporte-club.mjs`, que lo saca de `sport` en `data/clubs.js` (id interno: `futbol`, `rugby`) y, para un club sin ficha, del registro de altas (`resolverDeporte`). Las categorías que admite son las de `SPORT_TAXONOMIES` en `data/category-map.js` (`categoriasDeDeporte`, `leerCategorias` con su descripción, `bolsonDeDeporte`, `categoriaDeSueldos`) y lo que no puede dar 0 está en `CEROS_POR_DEPORTE` (`[]` si no se midió). Sin deporte o sin taxonomía una tool se detiene; nunca categoriza como fútbol.
+
+Dónde frenó el primer club de otro deporte (Bath Rugby) y cómo quedó cada lugar:
+- **`verificar.mjs`:** una nota en £m con un decimal cerraba el Turnover por la tolerancia y pisaba la diferencia que el ajuste `desglose` había dicho. El ajuste se prueba antes de `cerrarNota()`.
+- **Jev, Claude y `cargar.mjs` (categorías):** aceptaban solo las del fútbol. Leen la taxonomía del deporte del club (`criteriosDe`, `catsDe`, `ladoDeCat`).
+- **`jev-categorizar.mjs --desde-sesion`:** validaba con `sideOf()` del fútbol. Valida con la taxonomía del deporte del documento.
+- **`caja-deuda.mjs --personal --partir`:** escribía `wages_squad`. Usa la categoría que la taxonomía mapea a `first_team_staff` (`squad_wages` en rugby).
+- **`audit.js` `checkCategorias`:** daba P0 `categoria-inexistente` a `lump_rugby_operations`. Valida con las listas del deporte del club.
+
+Antes del primer lote de un deporte nuevo va una carga de prueba de UN club, sin API y de punta a punta (`tools/armar-a-mano.mjs`, `verificar.mjs`, `cargar.mjs` con `--escribir`, `audit.js`), con la taxonomía, el bolsón y la tabla de ceros del deporte ya escritos. Cada freno que aparezca se anota como defecto de script en `Admin/registros/frenados-por-script.jsonl` y lo arregla la sesión de pipeline con su medición; el fútbol tiene que dar idéntico (`medir-cargar.mjs`, `medir-verificar.mjs`, `audit.js`). Un worktree necesita `node tools/worktree.mjs preparar <carpeta>`, que enlaza también `tools/node_modules`.
+
+Que un chequeo no dependa de un id del fútbol lo cuida `node tools/audit.js`: por cada deporte con taxonomía distinto del fútbol arma en memoria un club de muestra (una línea por subcategoría) y le corre los chequeos de datos de clubes; un P0 o P1 de esa muestra sale como P1 `deporte-muestra`. Un chequeo nuevo que mire categorías lee `api.SPORT_TAXONOMIES` del deporte del club o se saltea; nunca una lista fija del fútbol.
+
 ## Links propios de club y liga (`tools/generate-club-pages.js`)
 
 Cada club y cada liga con ranking tiene su página: `club/<id>.html` y `liga/<id>.html` (la dirección pública es `/club/<id>` y `/liga/<id>`, con un rewrite 200 en `netlify.toml`). El generador toma `index.html` como plantilla y le pone `<head>` propio (título, descripción, canonical, Open Graph, JSON-LD, `<base href="/">`), `window.FOS_RUTA` y un bloque de texto visible sin JS (`#pagina-estatica`, se oculta cuando la app arranca). Los números salen del motor del sitio (`computeYearGeneric` + `toDisplayValue`) y de `data/rankings/`. Escribe también `sitemap.xml` (el único escritor) y la imagen de la tarjeta de cada página, `og/club/<id>.png` y `og/liga/<id>.png` (1200×630, tope 300 KB): un SVG armado por el generador y convertido con `@resvg/resvg-js` (dependencia de desarrollo en `tools/package.json`: `cd tools && npm install`; fuente Inter en `tools/fonts/`). `og/_hashes.json` guarda el hash del SVG de cada imagen: solo se renderiza la que cambió, y el hash va en el `og:image` (`?v=`). Sin `tools/node_modules` el generador solo falla si hay que renderizar alguna imagen. Corre en `GENERADORES` (`tools/generadores.mjs`) después de `generate-rankings`, así que cada carga lo regenera; `audit.js` corre `--check` (`club-pages-desfasado`, P1: página vieja, que falta o que sobra, título de más de 60 o descripción de más de 155 caracteres, sin canonical). `--muestra` genera solo el 10% de los clubes, para revisar a ojo. Un id de club renombrado suma el 301 `/club/<viejo>` en el bloque `ids-alias` (`renombrar-ids.mjs`).
