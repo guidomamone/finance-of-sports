@@ -19,7 +19,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Versión 900 — Toda condición nueva pasa por la Auditora (2026-10-20) [339]
 
-- `Admin/CONVENCIONES.md`: una condición nueva en una tool la decide la Auditora con la sección 7 de su skill (antes iba a Guido); cualquier sesión de worktree le escribe directo a la Auditora abierta por esto, no solo los frenados del onboarding.
+- `Admin/CONVENCIONES.md`: una condición nueva en una tool la decide la Auditora con la sección 7 de su skill (antes iba a Guido); cualquier sesión de worktree le escribe directo a la Auditora abierta por esto, no solo los frenados del onboarding. Lo mismo en `club-or-year-onboarding` y en `worktree.md` de la skill de arranque (ok de Guido).
 
 ## Versión 899 — Cómo se aprueba una condición nueva en las tools (2026-10-20) [339]
 

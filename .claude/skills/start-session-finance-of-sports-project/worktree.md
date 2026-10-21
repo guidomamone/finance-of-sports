@@ -8,6 +8,9 @@ cachés quedan compartidas).
 **Mientras trabajás:** commits en tu rama, sin push. No edites `Admin/TODO.md`, `Admin/CHANGELOG.md` ni `Admin/ESTADO.md`: los escribe solo
 la principal. Evitá tocar una tool o un club que tenga otra sesión.
 
+**Si proponés una condición nueva en una tool o un criterio de datos** (no solo en el onboarding): mandáselo a la Auditora, directo si hay
+una abierta y si no a la principal, que la abre. No codees ni commitees antes del veredicto (`Admin/CONVENCIONES.md`).
+
 **Al cerrar:** en vez de esos tres, escribí `Admin/sesiones/<rama>.md`: qué cambió (lo de CHANGELOG), qué quedó pendiente (lo de TODO) y qué
 deja de ser cierto en ESTADO. Commit.
 
