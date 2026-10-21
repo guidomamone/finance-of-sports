@@ -243,3 +243,101 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: frenado #10 de Bath (validar en `--sin-api` y encadenar `verificar`), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: `lote.mjs --sin-api` corre `validar()` si es gratis o frena con el costo, y `validar-bloques.mjs --ejecutar` encadena `verificar --rubros` e inventario; APROBADO.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: frenado #15 de Bath (`alta-club.mjs --deshacer`), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: `alta-club.mjs --deshacer <clubId>`, APROBADO CON UN CAMBIO.
+
+### Qué queda
+
+- `--deshacer` solo restaura `index.html` a HEAD si su diff trae únicamente el `ASSET_V` (la constante y los `?v=`); si trae otra cosa, va a «revisar a mano». Hoy lo restauraría entero y borraría ediciones a mano sin commit.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: frenados #7 y #13 de Bath (`--pagina` de Mistral y `publicar.mjs`), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`: `mistral-ocr-transcribe.mjs --pagina` y `tools/publicar.mjs`, APROBADOS.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: frenados #17 y #16 de Bath (`caja-deuda.mjs`), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`: `escalaDe()` con el escalón 1b (la escala del estado contradice la escala 1 inferida) y `--personal` con el total sin rótulo y la escala por `escalaDe`, APROBADOS.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: frenados #8, #9a y #12 de Bath, 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Tres líneas más en `Admin/registros/auditoria-proceso.jsonl`: `armar-a-mano.mjs` con etiqueta sintética para un subtotal o total sin rótulo, `ajustes.mjs --etiqueta-diferencia` y `tools/fuente.mjs`, APROBADOS. El #9b (proponer la fila de redondeo) queda sin hacer a propósito: es un criterio de datos.
+
+### Qué queda
+
+- Nada nuevo.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: to-do 341 (estadio-sponsor de rugby y prompts con el deporte), 2026-10-20
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`: `estadio-sponsor.mjs` con la ficha de rugby, APROBADO (y recomendación de NO sumar `gb-premiershiprugby` a `SOLO_ESTADIO`); los prompts de lectura con el deporte del club, APROBADO CON UN CAMBIO.
+
+### Qué queda (para TODO / 341)
+
+- `lote.mjs`: el tramo que corre `alta-club` para llenar el registro de altas tiene que ir antes de `localizar` (hoy está después de `extraer`); si no, un club nuevo de fútbol lee con «clubes de deporte».
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
+
+## Auditora 4: `index-file-roto` en `audit.js`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl`: P1 `index-file-roto` (un `<base>` o un `src`/`href` propio que empieza con «/» en un `.html` suelto de la raíz), APROBADO, el mismo P1 para todos los `.html` de la raíz.
+
+### Qué queda
+
+- Menor: el número de línea del aviso se corre cuando hay comentarios HTML de varias líneas arriba; reemplazarlos por espacios que conserven los saltos de línea.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
