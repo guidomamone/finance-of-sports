@@ -62,7 +62,7 @@ import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { verifyNumbers } from './verify-numbers.mjs';
 import { derivado } from './rutas.mjs';
-import { periodoDe } from './periodo.mjs';
+import { periodoDe, xhtmlHermano } from './periodo.mjs';
 import { ajusteDe } from './ajustes.mjs';
 import { ultimaConPaginas, huellasDelTexto, compararPaginas } from './huella-paginas.mjs';
 import { etapaDe, ETAPAS_DOC, claveDeEstado, DESCARTADOS } from './etapa-doc.mjs';
@@ -242,7 +242,7 @@ let entries = pdfsAll.map((pdfAbs) => {
     // dice cierre anual 31/05/2019 y el contenido es el primer trimestre al 31/08/2019).
     // (Versión 413) el ajuste manual `cierre` (tools/ajustes.mjs) es el escalón 0 del período: de acá lo toman localizar, verificar (año y
     // año vecino) y cargar. Caso: Novorizontino 2022, el contenido daba la fecha de la firma (28/04/2023).
-    periodo: tieneMd ? (() => { const aj = ajusteDe(pdf, 'cierre'); if (aj) return { tipo: 'anual', meses: 12, cierre: aj.valor, anual: aj.valor.slice(5) === '12-31' ? 'calendario' : 'temporada', confianza: 'alta', evidencia: `ajuste manual (${aj.fecha}): ${aj.motivo}` }; try { const r = periodoDe(readFileSync(mdAbs, 'utf8'), pdf); return { tipo: r.tipo, meses: r.meses, cierre: r.cierre, anual: r.anual, confianza: r.confianza, nombreNoCoincide: r.nombreNoCoincide || undefined, evidencia: r.evidencia || undefined }; } catch { return null; } })() : null,
+    periodo: tieneMd ? (() => { const aj = ajusteDe(pdf, 'cierre'); if (aj) return { tipo: 'anual', meses: 12, cierre: aj.valor, anual: aj.valor.slice(5) === '12-31' ? 'calendario' : 'temporada', confianza: 'alta', evidencia: `ajuste manual (${aj.fecha}): ${aj.motivo}` }; try { const mdT = readFileSync(mdAbs, 'utf8'); const r = periodoDe(mdT, pdf, { xhtml: xhtmlHermano(mdAbs, mdT) }); return { tipo: r.tipo, meses: r.meses, cierre: r.cierre, anual: r.anual, confianza: r.confianza, nombreNoCoincide: r.nombreNoCoincide || undefined, evidencia: r.evidencia || undefined }; } catch { return null; } })() : null,
   };
 });
 

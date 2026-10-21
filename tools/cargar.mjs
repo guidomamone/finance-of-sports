@@ -129,7 +129,7 @@ const { padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca } = await im
 // Nombres en castellano de las categorías (los de data/category-map.js), para que la pregunta de la cola diga "Administración y gastos
 // generales" y no "admin_general_expense".
 const NOMBRE_CAT = (() => { try { const t = readFileSync(resolve(import.meta.dirname, '..', 'data', 'category-map.js'), 'utf8'); const o = {}; for (const b of t.match(/_CATEGORY_LABELS = \{[\s\S]*?\n\};/g) || []) for (const m of b.matchAll(/^\s*(\w+): '([^']+)'/gm)) o[m[1]] = m[2]; return o; } catch { return {}; } })();
-const { periodoDe } = await import('./periodo.mjs');
+const { periodoDe, xhtmlHermano } = await import('./periodo.mjs');
 const { categoriasDeDeporte, cerosDeDeporte, bolsonDeDeporte } = await import('./deporte-club.mjs'); // (to-do 339) las categorías de un deporte
 const { normalizar, claveFamilia, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, IMPUESTOS_RE, GASTOS_RE, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE } = await import('./vocabulario.mjs');
 
@@ -312,7 +312,7 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // (el arreglo de las temporadas "2009-10" del 2026-09-30 cambió 165 marcas `nombreNoCoincide`). Si difiere del registro, se avisa.
   let per = e.periodo || null;
   // (Versión 413) con ajuste manual `cierre`, el período del registro ya es el del ajuste (inventario-transcripciones.mjs): no se recalcula.
-  if (!ajusteDe(pdf, 'cierre')) try { const vivo = periodoDe(readFileSync(resolve(ROOT, e.md), 'utf8'), basename(pdf)); if (per && (vivo.tipo !== per.tipo || !!vivo.nombreNoCoincide !== !!per.nombreNoCoincide)) P.avisos.push(`el período del registro (${per.tipo}${per.nombreNoCoincide ? ', nombre no coincide' : ''}) está desactualizado: tools/periodo.mjs hoy dice ${vivo.tipo}${vivo.nombreNoCoincide ? ', nombre no coincide' : ''} (regenerar el registro)`); per = vivo; } catch { /* sin .md: frena abajo */ }
+  if (!ajusteDe(pdf, 'cierre')) try { const mdT = readFileSync(resolve(ROOT, e.md), 'utf8'); const vivo = periodoDe(mdT, basename(pdf), { xhtml: xhtmlHermano(resolve(ROOT, e.md), mdT) }); if (per && (vivo.tipo !== per.tipo || !!vivo.nombreNoCoincide !== !!per.nombreNoCoincide)) P.avisos.push(`el período del registro (${per.tipo}${per.nombreNoCoincide ? ', nombre no coincide' : ''}) está desactualizado: tools/periodo.mjs hoy dice ${vivo.tipo}${vivo.nombreNoCoincide ? ', nombre no coincide' : ''} (regenerar el registro)`); per = vivo; } catch { /* sin .md: frena abajo */ }
   // Sin fecha de cierre: se deduce de los documentos vecinos del club (tools/cierre-vecinos.mjs, Versión 342), con aviso. Si no se puede, sigue
   // como antes (frena más abajo por período o por año).
   if (per && !per.cierre) { const cv = cierrePorVecinos(pdf, registro); if (cv) { per = { ...per, cierre: cv.cierre, cierreDeducido: true }; P.avisos.push(`fecha de cierre ${cv.cierre} ${cv.evidencia}`); } }
