@@ -44,10 +44,11 @@ const dec = (t) => t.replace(/&#x([0-9a-f]+);/gi, (m, h) => String.fromCodePoint
 const limpiar = (t) => t.replace(/­/g, '');
 
 // XHTML -> { lineas: [texto], hechos: [{ txt, nombre, oculto }] }. Una línea del .md por elemento de bloque o fila de tabla. Los div.page del XHTML se ignoran (las páginas son las del PDF).
-// ESCALÓN: primero como siempre; solo si tira una excepción (una tabla dentro de otra, que dejaba `tabla` en null: Plymouth), se vuelve a leer tratando las tablas de maquetación como texto.
-// Los demás informes salen byte a byte igual que antes (medido sobre 116 XHTML: los 115 que no tiraban excepción, idénticos). Ver `capas` abajo.
+// Una tabla dentro de otra deja `tabla` en null en la lectura simple (Plymouth: «reading 'push'»). Los informes SIN tablas anidadas salen byte a byte igual que antes. Ver `capas` abajo.
 export function xhtmlALineas(src) {
-  try { return leerXhtml(src, false); } catch (e) { return leerXhtml(src, true); }
+  // con una tabla DENTRO de otra se leen las tablas de maquetación como texto desde el principio: la lectura vieja perdía las primeras líneas de la portada («Registered number: …») y a veces tiraba una excepción (Plymouth)
+  const anidada = (() => { let d = 0; for (const t of src.match(/<\/?table[\s>\/][^>]*>|<\/table>/gi) || []) { if (/^<\/table/i.test(t)) d--; else { d++; if (d > 1) return true; } } return false; })();
+  try { return leerXhtml(src, anidada); } catch (e) { return leerXhtml(src, true); }
 }
 function leerXhtml(src, capas) {
   const i0 = src.search(/<body[\s>]/i); const body = (i0 >= 0 ? src.slice(i0) : src).replace(/<!--[\s\S]*?-->/g, '');
