@@ -14,7 +14,7 @@
 //                                                             las cachés quedan compartidas: lo que paga una sesión le sirve a la otra.
 //                                                             Antes saca de Clubes/ los enlaces rotos (destino movido en la principal); un archivo real, nunca.
 //   node tools/worktree.mjs mergear <rama>                    en la principal, sobre main: mergea la rama; los conflictos en lo generado se
-//                                                             resuelven con lo de main y se regenera (ASSET_V una vez + los 4 generadores
+//                                                             resuelven con lo de main y se regenera (ASSET_V una vez + los generadores
 //                                                             + audit.js, como al final de cargar.mjs). Frena si la rama tocó TODO /
 //                                                             CHANGELOG / ESTADO o si hay un conflicto real (data/ de un club, una tool).
 // ============================================================================
@@ -27,8 +27,10 @@ const git = (args, cwd = ROOT) => execFileSync('git', args, { cwd, encoding: 'ut
 const principal = () => resolve(git(['rev-parse', '--path-format=absolute', '--git-common-dir']).trim(), '..');
 
 // Lo que regenera cada carga: en un conflicto, gana main y después se regenera.
+const SPONSORS = ['data/sponsors.js', 'data/sponsors-indice.js'];
 const GENERADO = (f) => f === 'index.html' || f === 'fuentes.html' || f === 'sitemap.xml' || f.startsWith('fuentes/') || f.startsWith('club/') || f.startsWith('liga/') || f.startsWith('og/') || f === 'Admin/ESTADO-clubes.md'
   || f === 'data/club-index.js' || f.startsWith('data/rankings/') || f.startsWith('data/faltantes/') || f === 'Admin/sourcing/pendientes.md' || f.startsWith('data/estimados/')
+  || SPONSORS.includes(f) // de tools/generate-sponsors.js: un merge chocó ahí, abortó como conflicto real y hubo que regenerarlo a mano
   || /^data\/[a-z]{2}\/[a-z0-9-]+-data\.js$/.test(f); // el -data.js se genera de su JSON (to-do 245): un conflicto ahí se resuelve con el JSON mergeado y generar-data
 const DOCS_PRINCIPAL = ['Admin/TODO.md', 'Admin/CHANGELOG.md', 'Admin/ESTADO.md'];
 // Lo que escribe cada corrida de lote.mjs o pipeline.mjs para sus propias etapas: cada carpeta tiene el suyo. Enlazado a la principal, dos
@@ -109,7 +111,7 @@ async function mergear(rama) {
   const { publicarCambios, snapshot } = await import('./cargar.mjs');
   const r = publicarCambios(snapshot([]), [], []);
   if (!r.ok) { git(['merge', '--abort']); throw new Error(`audit.js dio P0/P1 después del merge; no se mergeó nada. ${r.motivo}`); }
-  git(['add', '-A', '--', 'index.html', 'fuentes.html', 'fuentes', 'club', 'liga', ...(existsSync(resolve(ROOT, 'og')) ? ['og'] : []), 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'data/club-index.js', 'data/rankings', 'data/faltantes', 'Admin/sourcing/pendientes.md', ...(existsSync(resolve(ROOT, 'data', 'estimados')) ? ['data/estimados'] : [])]);
+  git(['add', '-A', '--', 'index.html', 'fuentes.html', 'fuentes', 'club', 'liga', ...(existsSync(resolve(ROOT, 'og')) ? ['og'] : []), 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'data/club-index.js', 'data/rankings', 'data/faltantes', 'Admin/sourcing/pendientes.md', ...(existsSync(resolve(ROOT, 'data', 'estimados')) ? ['data/estimados'] : []), ...SPONSORS.filter((f) => existsSync(resolve(ROOT, f)))]);
   const cierres = tocados.filter((f) => f.startsWith('Admin/sesiones/'));
   git(['commit', '-q', '-m', `Merge de ${rama}${conflictos.length ? ` (${conflictos.length} generados resueltos con main y regenerados)` : ''}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`]);
   console.log(`mergeado ${rama}: ${tocados.length} archivos de la rama, ${conflictos.length} conflictos en lo generado (resueltos), auditoría ${r.audit}.`);
