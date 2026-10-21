@@ -1,3 +1,20 @@
+# Sesión pantallas (Pantallas 7): guía de UX aplicada
+
+## Qué cambió (para CHANGELOG)
+- Con el ok de Guido («ok a la guia de ux»): `referencia/ux.md` nuevo en la skill `producto-y-pantalla-finance-of-sports`, idéntico al bloque de
+  `Admin/propuestas/ux-del-sitio.md`, y sus dos líneas en el `SKILL.md`: leerla antes del mockup (paso 2) y recorrerla antes de pedir el merge (paso 4).
+  Para que el candado de skills lo aceptara, la propuesta suma cómo quedan los pasos 2 y 4 enteros (el mismo texto).
+
+## Qué queda (para TODO)
+- Los tres pendientes de la sección 3 de la propuesta: el foco al cambiar de vista y al cerrar el selector, las áreas de toque chicas en la página de una
+  liga y los países de Ligas que se pliegan al volver.
+- Archivar `Admin/propuestas/ux-del-sitio.md` en `Admin/Archive/` (ya está aplicada).
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 7): las tablas de ligas por club con fosUrl()
 
 ## Qué cambió (para CHANGELOG)
