@@ -58,6 +58,9 @@ Un punto que no aplica, o que no se pudo probar, se dice en la nota de la sesió
   *Excepción, ya decidida (no es un pendiente):* las etiquetas de estado (`.stat-tag`: COVID, PRESUPUESTO y las que sigan el mismo patrón)
   miden unos 16 px de alto. Agrandarlas taparía el toque del elemento de al lado, su texto también está en el `aria-label` y lo que abren es
   información de más. Una auditoría `ux` no las marca.
+  *Excepción, ya decidida (no es un pendiente):* un link dentro de un párrafo con más de un link (texto corrido: una atribución, una cita con su
+  licencia). Sus áreas de 44 px se pisarían de un renglón al otro y el toque abriría el link equivocado; agrandar el interlineado cambia la lectura.
+  Un link solo en su párrafo sí llega a 44, sin mover el texto. Una auditoría `ux` no los marca.
 - [ ] **Sin scroll horizontal de la página.** Una tabla ancha scrollea adentro de su caja.
   *Prueba:* `document.documentElement.scrollWidth <= innerWidth`.
   *Caso:* la matriz por nivel de la lista de Ligas scrollea en su caja.
