@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md",
+ "generado": "2026-10-21T03:11:16.436Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "| | Note | 2023 £ | 2022 £ |",
+ "caja": {
+  "lineas": [
+   696
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance solo muestra 'Creditors' agregados (L698, L701), sin desglose de préstamos; el detalle de deuda (préstamo DCMS £5.3m, préstamo del propietario £24.2m) está en la nota 17, que no se incluye, por lo que no se puede elegir ninguna línea del balance como deuda financiera. Importes en libras (£) en unidades."
+}

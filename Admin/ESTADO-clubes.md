@@ -211,7 +211,7 @@ INGLATERRA (21)
   AFC Bournemouth          4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   Arsenal                  4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   Aston Villa              7 ejercicios (2018/2019 a 2024/2025), balance, GBP
-  Bath Rugby               5 ejercicios (2020/2021 a 2024/2025), balance, GBP, sin deuda/caja
+  Bath Rugby               5 ejercicios (2020/2021 a 2024/2025), balance, GBP
   Brentford                4 ejercicios (2021/2022 a 2024/2025), balance, GBP
   Brighton                 6 ejercicios (2019/2020 a 2024/2025), balance, GBP
   Burnley                  4 ejercicios (2021/2022 a 2024/2025), balance, GBP

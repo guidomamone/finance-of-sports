@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md",
+ "generado": "2026-10-21T03:11:13.655Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "| Note | 2021 £ | 2020 £ |",
+ "caja": {
+  "lineas": [
+   383
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance solo muestra los acreedores a corto (L385) y largo plazo (L388) como totales agregados, sin desglosar préstamos bancarios. La deuda financiera no se puede identificar en estas páginas (estaría en la nota 18), por eso se deja vacía. No hay indicación explícita de escala; los importes están en libras (£) en unidades."
+}

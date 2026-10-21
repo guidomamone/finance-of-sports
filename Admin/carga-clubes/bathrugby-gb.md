@@ -75,6 +75,10 @@ tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 1 (compuerta: documento anterior): "Cash at bank and in hand" pág. 21
+```
+
 ## 2024
 
 ### Ingresos
@@ -107,6 +111,10 @@ Generados/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.categorias.json
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): desglose = 22,985. 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 20,8); el Turnover del estado es 20.822.985. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.
 tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 1b (compuerta: documento anterior): "Creditors: Amounts falling due after more than one" pág. 23; cash escalón 1 (compuerta: documento siguiente): "Cash at bank and in hand" pág. 23
 ```
 
 ## 2023
@@ -179,6 +187,10 @@ Generados/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2021-22.categorias.json
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): desglose = 19,557. 248, decisión 11 del plan (ok de Guido): los ingresos por tipo están solo en el Strategic Report, en £m con un decimal (suman 19,8); el Turnover del estado es 19.819.557. La diferencia de redondeo va como fila aparte para que el ingreso cierre al peso.
 tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-21): grossDebt escalón 1b (compuerta: documento siguiente): "Creditors: Amounts falling due after more than one" pág. 18; cash escalón 1 (compuerta: documento siguiente): "Cash at bank and in hand" pág. 18
 ```
 
 ## 2021
