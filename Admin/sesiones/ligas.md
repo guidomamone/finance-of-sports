@@ -480,3 +480,19 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 4: cuarta corrida de «un código por corrida»: `signo-invertido`, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Una línea más en `Admin/registros/auditoria-proceso.jsonl` con `codigo_tratado: signo-invertido`, antes 30 y después 17: arreglar el chequeo con un vocabulario de líneas netas por construcción. Seis casos mirados contra el `.md` (Moreirense 2023, RB Bragantino 2025, St. Gallen 2020, Sarpsborg 2015, Académica 2023, Basel 2017): en todos el signo es el del documento o el de la convención (la skill de mapeo manda las condonaciones a `exceptional_items` también como ingreso); ninguno es un signo dado vuelta.
+
+### Qué queda (para TODO / una sesión Pipeline)
+
+- `tools/audit.js` (`checkLineas`, cerca de la línea 377): (a) sumar «Encargos sobre receitas», «Ertragsminderung» y «Deduç» a `DEDUCCION_FISCAL_INGRESO_RE`; (b) no marcar una línea de gasto positiva cuyo rótulo dice ser neta («reversões», «reduções», «reprises», «terugnemingen», «perdas/»). Quedan fuera a propósito «Korrektur» y «Allocatie amortisatie» (no se miraron en el documento). Mide: `signo-invertido` antes 30 y después 17, con el resto de la salida idéntico.
+- Los 14 hallazgos que quedan sin mirar (Basel 2009 y 2019, Benfica ×2, Besiktas, Celtic, Groningen, Go Ahead Eagles, Nacional 2024, Nõmme Kalju, Paide, más los de «Korrektur» y «Allocatie» de Basel 2016, FC Utrecht y NEC) se miran en la próxima corrida de este código; los que resulten reales y aceptados se silencian con su motivo, después de mirar el documento.
+- Próxima corrida: `outlier-liga` (P2, 21). Además queda la tarea 350 (taxonomía: categorías en vano, educación, votar una de subsidios), que la principal avisa cuando toque.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
