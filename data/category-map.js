@@ -104,11 +104,61 @@ const GENERIC_EXPENSE_CATEGORIES = [
   { id: 'exceptional',                       block: 'exceptional', label: 'Ítems excepcionales',                   en: 'Exceptional items' },
 ];
 
+// Las SUBCATEGORÍAS del rugby (union), mismo formato que las del fútbol de arriba: la lista con la descripción en el comentario de cada una
+// (la leen Jev y Claude para categorizar) y los rótulos. Un rubro del club que no encaja va a other_income / other_expenses.
+const RUGBY_REVENUE_CATEGORIES = [
+  'central_income',           // lo que reparten la liga (Premiership Rugby: TV y comercial central) y la federación (RFU: desarrollo de jugadores y selección). El ingreso de un fondo que compró parte de la liga (CVC) no: va a other_income.
+  'gate_receipts',            // recaudación de entradas de los partidos, con los abonos cuando el documento no los separa.
+  'season_tickets',           // abonos de temporada, solo si el documento da su importe aparte de las entradas.
+  'commercial_activities',    // sponsors, publicidad, hospitalidad, comida y bebida del estadio, merchandising y eventos en el estadio o el centro de entrenamiento.
+  'player_transfers',         // cobros por el traspaso o la rescisión del contrato de un jugador (ingreso bruto).
+  'academy_community',        // academia, rugby juvenil y femenino, programas comunitarios y escuelas.
+  'other_income',             // todo lo demás: subsidios, ingresos varios, el ingreso por el acuerdo de CVC, la revaluación (fair value) de una participación.
+  'lump_rugby_operations',    // bolsón: un monto real de ingresos que la fuente no separa por tipo (nunca se inventa cómo dividirlo).
+];
+const RUGBY_REVENUE_CATEGORY_LABELS = {
+  central_income: 'Reparto central (liga y federación)',
+  gate_receipts: 'Entradas',
+  season_tickets: 'Abonos',
+  commercial_activities: 'Comercial',
+  player_transfers: 'Transferencias de jugadores',
+  academy_community: 'Academia y comunidad',
+  other_income: 'Otros ingresos',
+  lump_rugby_operations: 'Rugby profesional (sin desglosar por la fuente)',
+};
+const RUGBY_EXPENSE_CATEGORIES = [
+  'squad_wages',                       // sueldos, cargas sociales y pensiones de jugadores y cuerpo técnico; si la nota de personal no los separa del resto del personal, el total.
+  'matchday_costs',                    // costo de jugar los partidos: seguridad, viajes, alojamiento, arbitraje y operación del día de partido.
+  'academy_community_expense',         // academia, juveniles, rugby femenino y programas comunitarios (espejo de academy_community).
+  'admin_general_expense',             // administración, comercial, mantenimiento del estadio, impuestos y seguros (costos no deportivos).
+  'other_expenses',                    // partidas sueltas sin otra categoría.
+  'lump_rugby_operations_expense',     // bolsón: un monto real de gastos que la fuente no separa por tipo (Cost of sales + Administrative expenses menos lo que sí se abre).
+  'player_registrations_amortisation', // amortización del registro de jugadores adquiridos, o su costo si el club no lo capitaliza.
+  'depreciation',                      // depreciación de bienes de uso tangibles.
+  'other_amortisation',                // amortización de intangibles que no son jugadores.
+  'exceptional_items',                 // cargos extraordinarios o no recurrentes que el documento muestra aparte.
+];
+const RUGBY_EXPENSE_CATEGORY_LABELS = {
+  squad_wages: 'Salarios del plantel y cuerpo técnico',
+  matchday_costs: 'Organización de partidos',
+  academy_community_expense: 'Academia y comunidad',
+  admin_general_expense: 'Administración y gastos generales',
+  other_expenses: 'Otros gastos',
+  lump_rugby_operations_expense: 'Rugby profesional (sin desglosar por la fuente)',
+  player_registrations_amortisation: 'Amortización de registros de jugadores',
+  depreciation: 'Depreciación',
+  other_amortisation: 'Otras amortizaciones',
+  exceptional_items: 'Ítems excepcionales',
+};
+
 // (deporte del sitio, lado, subcategoría) -> genérica. La clave es el id interno del deporte (data/leagues.js, SPORTS); `version` va a
-// club.taxonomy del JSON y sube si cambia una genérica de una subcategoría ya cargada.
+// club.taxonomy del JSON y sube si cambia una genérica de una subcategoría ya cargada. `lists` nombra las listas de subcategorías del deporte
+// (con su descripción en el comentario) y sus rótulos; `lump`, el bolsón sin desglosar de cada lado.
 const SPORT_TAXONOMIES = {
   futbol: {
     version: 'football-1',
+    lists: { revenue: ['REVENUE_CATEGORIES', 'REVENUE_CATEGORY_LABELS'], expense: ['EXPENSE_CATEGORIES', 'EXPENSE_CATEGORY_LABELS'] },
+    lump: { revenue: 'lump_football_operations', expense: 'lump_football_operations_expense' },
     revenue: {
       member_dues: 'membership', matchday_competition: 'matchday', season_tickets: 'season_tickets', stadium_other: 'venue',
       broadcasting: 'media_rights', competition_bonus: 'prize_money', sponsorship_commercial: 'commercial', player_sales: 'player_transfers',
@@ -120,6 +170,21 @@ const SPORT_TAXONOMIES = {
       education_expense: 'non_sporting_activities', admin_general_expense: 'admin_general', other_expenses: 'other_operating_expenses',
       lump_football_operations_expense: 'undisclosed', player_amortisation: 'player_registrations_amortisation',
       player_impairment: 'player_registrations_impairment', depreciation: 'depreciation', other_amortisation: 'other_amortisation',
+      exceptional_items: 'exceptional',
+    },
+  },
+  rugby: {
+    version: 'rugby-1',
+    lists: { revenue: ['RUGBY_REVENUE_CATEGORIES', 'RUGBY_REVENUE_CATEGORY_LABELS'], expense: ['RUGBY_EXPENSE_CATEGORIES', 'RUGBY_EXPENSE_CATEGORY_LABELS'] },
+    lump: { revenue: 'lump_rugby_operations', expense: 'lump_rugby_operations_expense' },
+    revenue: {
+      central_income: 'media_rights', gate_receipts: 'matchday', season_tickets: 'season_tickets', commercial_activities: 'commercial',
+      player_transfers: 'player_transfers', academy_community: 'other_sporting_sections', other_income: 'other_revenue', lump_rugby_operations: 'undisclosed',
+    },
+    expense: {
+      squad_wages: 'first_team_staff', matchday_costs: 'match_operations', academy_community_expense: 'other_sporting_sections',
+      admin_general_expense: 'admin_general', other_expenses: 'other_operating_expenses', lump_rugby_operations_expense: 'undisclosed',
+      player_registrations_amortisation: 'player_registrations_amortisation', depreciation: 'depreciation', other_amortisation: 'other_amortisation',
       exceptional_items: 'exceptional',
     },
   },

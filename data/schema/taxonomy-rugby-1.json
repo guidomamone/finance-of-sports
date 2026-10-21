@@ -1,0 +1,285 @@
+{
+  "taxonomy": "rugby-1",
+  "sport": "rugby_union",
+  "description": "Mapa de las subcategorías de este deporte a las categorías genéricas de Finance of Sports. La genérica no se elige: se deriva de esta tabla. Una subcategoría del otro lado (un gasto usado en una línea de ingreso, o al revés) va a la genérica catch-all de su lado. block: la parte del resultado (revenue; operating = gasto operativo en efectivo; non_cash = amortizaciones y depreciación; exceptional). Resultado operativo = ingresos + operating + non_cash + exceptional.",
+  "generic": {
+    "revenue": [
+      {
+        "id": "membership",
+        "block": "revenue",
+        "label_en": "Membership",
+        "label_es": "Cuotas sociales"
+      },
+      {
+        "id": "matchday",
+        "block": "revenue",
+        "label_en": "Matchday",
+        "label_es": "Entradas"
+      },
+      {
+        "id": "season_tickets",
+        "block": "revenue",
+        "label_en": "Season tickets",
+        "label_es": "Abonos"
+      },
+      {
+        "id": "venue",
+        "block": "revenue",
+        "label_en": "Venue (non-matchday)",
+        "label_es": "Estadio: uso fuera del partido"
+      },
+      {
+        "id": "media_rights",
+        "block": "revenue",
+        "label_en": "Media rights",
+        "label_es": "Derechos de TV y medios"
+      },
+      {
+        "id": "prize_money",
+        "block": "revenue",
+        "label_en": "Prize money",
+        "label_es": "Premios por competencias"
+      },
+      {
+        "id": "commercial",
+        "block": "revenue",
+        "label_en": "Commercial",
+        "label_es": "Comercial / sponsors"
+      },
+      {
+        "id": "player_transfers",
+        "block": "revenue",
+        "label_en": "Player transfers",
+        "label_es": "Venta de jugadores"
+      },
+      {
+        "id": "other_sporting_sections",
+        "block": "revenue",
+        "label_en": "Other sporting sections",
+        "label_es": "Otras secciones deportivas"
+      },
+      {
+        "id": "non_sporting_activities",
+        "block": "revenue",
+        "label_en": "Non-sporting activities",
+        "label_es": "Actividades no deportivas"
+      },
+      {
+        "id": "other_revenue",
+        "block": "revenue",
+        "label_en": "Other revenue",
+        "label_es": "Otros ingresos"
+      },
+      {
+        "id": "undisclosed",
+        "block": "revenue",
+        "label_en": "Not broken down by the source",
+        "label_es": "Sin desglosar por la fuente"
+      }
+    ],
+    "expense": [
+      {
+        "id": "first_team_staff",
+        "block": "operating",
+        "label_en": "First-team staff",
+        "label_es": "Salarios del plantel y cuerpo técnico"
+      },
+      {
+        "id": "match_operations",
+        "block": "operating",
+        "label_en": "Match operations",
+        "label_es": "Organización de partidos"
+      },
+      {
+        "id": "other_sporting_sections",
+        "block": "operating",
+        "label_en": "Other sporting sections",
+        "label_es": "Otras secciones deportivas"
+      },
+      {
+        "id": "non_sporting_activities",
+        "block": "operating",
+        "label_en": "Non-sporting activities",
+        "label_es": "Actividades no deportivas"
+      },
+      {
+        "id": "admin_general",
+        "block": "operating",
+        "label_en": "Administration and overheads",
+        "label_es": "Administración y gastos generales"
+      },
+      {
+        "id": "other_operating_expenses",
+        "block": "operating",
+        "label_en": "Other operating expenses",
+        "label_es": "Otros gastos"
+      },
+      {
+        "id": "undisclosed",
+        "block": "operating",
+        "label_en": "Not broken down by the source",
+        "label_es": "Sin desglosar por la fuente"
+      },
+      {
+        "id": "player_registrations_amortisation",
+        "block": "non_cash",
+        "label_en": "Player registrations amortisation",
+        "label_es": "Amortización de pases"
+      },
+      {
+        "id": "player_registrations_impairment",
+        "block": "non_cash",
+        "label_en": "Player registrations impairment",
+        "label_es": "Deterioro de pases"
+      },
+      {
+        "id": "depreciation",
+        "block": "non_cash",
+        "label_en": "Depreciation",
+        "label_es": "Depreciación"
+      },
+      {
+        "id": "other_amortisation",
+        "block": "non_cash",
+        "label_en": "Other amortisation",
+        "label_es": "Otras amortizaciones"
+      },
+      {
+        "id": "exceptional",
+        "block": "exceptional",
+        "label_en": "Exceptional items",
+        "label_es": "Ítems excepcionales"
+      }
+    ]
+  },
+  "undisclosed": {
+    "revenue": "lump_rugby_operations",
+    "expense": "lump_rugby_operations_expense"
+  },
+  "subcategories": {
+    "revenue": {
+      "central_income": {
+        "generic": "media_rights",
+        "label_es": "Reparto central (liga y federación)",
+        "description_es": "lo que reparten la liga (Premiership Rugby: TV y comercial central) y la federación (RFU: desarrollo de jugadores y selección)."
+      },
+      "gate_receipts": {
+        "generic": "matchday",
+        "label_es": "Entradas",
+        "description_es": "recaudación de entradas de los partidos, con los abonos cuando el documento no los separa."
+      },
+      "season_tickets": {
+        "generic": "season_tickets",
+        "label_es": "Abonos",
+        "description_es": "abonos de temporada, solo si el documento da su importe aparte de las entradas."
+      },
+      "commercial_activities": {
+        "generic": "commercial",
+        "label_es": "Comercial",
+        "description_es": "sponsors, publicidad, hospitalidad, comida y bebida del estadio, merchandising y eventos en el estadio o el centro de entrenamiento."
+      },
+      "player_transfers": {
+        "generic": "player_transfers",
+        "label_es": "Transferencias de jugadores",
+        "description_es": "cobros por el traspaso o la rescisión del contrato de un jugador (ingreso bruto)."
+      },
+      "academy_community": {
+        "generic": "other_sporting_sections",
+        "label_es": "Academia y comunidad",
+        "description_es": "academia, rugby juvenil y femenino, programas comunitarios y escuelas."
+      },
+      "other_income": {
+        "generic": "other_revenue",
+        "label_es": "Otros ingresos",
+        "description_es": "todo lo demás: subsidios, ingresos varios, el ingreso por el acuerdo de CVC, la revaluación (fair value) de una participación."
+      },
+      "lump_rugby_operations": {
+        "generic": "undisclosed",
+        "label_es": "Rugby profesional (sin desglosar por la fuente)",
+        "description_es": "bolsón: un monto real de ingresos que la fuente no separa por tipo (nunca se inventa cómo dividirlo)."
+      }
+    },
+    "expense": {
+      "squad_wages": {
+        "generic": "first_team_staff",
+        "label_es": "Salarios del plantel y cuerpo técnico",
+        "description_es": "sueldos, cargas sociales y pensiones de jugadores y cuerpo técnico; si la nota de personal no los separa del resto del personal, el total."
+      },
+      "matchday_costs": {
+        "generic": "match_operations",
+        "label_es": "Organización de partidos",
+        "description_es": "costo de jugar los partidos: seguridad, viajes, alojamiento, arbitraje y operación del día de partido."
+      },
+      "academy_community_expense": {
+        "generic": "other_sporting_sections",
+        "label_es": "Academia y comunidad",
+        "description_es": "academia, juveniles, rugby femenino y programas comunitarios (espejo de academy_community)."
+      },
+      "admin_general_expense": {
+        "generic": "admin_general",
+        "label_es": "Administración y gastos generales",
+        "description_es": "administración, comercial, mantenimiento del estadio, impuestos y seguros (costos no deportivos)."
+      },
+      "other_expenses": {
+        "generic": "other_operating_expenses",
+        "label_es": "Otros gastos",
+        "description_es": "partidas sueltas sin otra categoría."
+      },
+      "lump_rugby_operations_expense": {
+        "generic": "undisclosed",
+        "label_es": "Rugby profesional (sin desglosar por la fuente)",
+        "description_es": "bolsón: un monto real de gastos que la fuente no separa por tipo (Cost of sales + Administrative expenses menos lo que sí se abre)."
+      },
+      "player_registrations_amortisation": {
+        "generic": "player_registrations_amortisation",
+        "label_es": "Amortización de registros de jugadores",
+        "description_es": "amortización del registro de jugadores adquiridos, o su costo si el club no lo capitaliza."
+      },
+      "depreciation": {
+        "generic": "depreciation",
+        "label_es": "Depreciación",
+        "description_es": "depreciación de bienes de uso tangibles."
+      },
+      "other_amortisation": {
+        "generic": "other_amortisation",
+        "label_es": "Otras amortizaciones",
+        "description_es": "amortización de intangibles que no son jugadores."
+      },
+      "exceptional_items": {
+        "generic": "exceptional",
+        "label_es": "Ítems excepcionales",
+        "description_es": "cargos extraordinarios o no recurrentes que el documento muestra aparte."
+      }
+    }
+  },
+  "cross_side": {
+    "revenue": {
+      "generic": "other_revenue",
+      "subcategories": [
+        "academy_community_expense",
+        "admin_general_expense",
+        "depreciation",
+        "exceptional_items",
+        "lump_rugby_operations_expense",
+        "matchday_costs",
+        "other_amortisation",
+        "other_expenses",
+        "player_registrations_amortisation",
+        "squad_wages"
+      ]
+    },
+    "expense": {
+      "generic": "other_operating_expenses",
+      "subcategories": [
+        "academy_community",
+        "central_income",
+        "commercial_activities",
+        "gate_receipts",
+        "lump_rugby_operations",
+        "other_income",
+        "player_transfers",
+        "season_tickets"
+      ]
+    }
+  }
+}

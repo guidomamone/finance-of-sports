@@ -99,6 +99,26 @@ export function taxonomia() {
   return _tax;
 }
 
+// Las subcategorías de UN deporte, para las tools que categorizan (Jev, Claude, la cola): { version, lump: { revenue, expense }, revenue: { <sub>: { label,
+// description, generic } }, expense: { ... } }. `description` es el comentario de la subcategoría en data/category-map.js (la primera oración, como la
+// leía jev-categorizar.mjs); `deporte` es el id interno ('futbol', 'rugby'), el de data/clubs.js. null si el deporte no tiene taxonomía.
+export function categoriasDeDeporte(deporte) {
+  const t = taxonomia().deportes[deporte || 'futbol']; if (!t) return null;
+  const src = readFileSync(resolve(ROOT, 'data/category-map.js'), 'utf8');
+  const bloque = (nombre, abre, cierra) => { const a = src.indexOf(`const ${nombre} = ${abre}`); if (a < 0) falla(`data/category-map.js: falta ${nombre}`); return src.slice(a, src.indexOf(cierra, a)); };
+  const lado = (l) => {
+    const [lista, rotulos] = t.lists[l];
+    const lab = Object.fromEntries([...bloque(rotulos, '{', '};').matchAll(/^\s*([a-z_]+):\s*'([^']*)'/gm)].map((m) => [m[1], m[2]]));
+    const out = {};
+    for (const m of bloque(lista, '[', '];').matchAll(/^\s*'([a-z_]+)',?\s*(?:\/\/\s*(.*))?$/gm)) {
+      const c = (m[2] || '').replace(/\s+/g, ' ').trim();
+      out[m[1]] = { label: lab[m[1]] || m[1], description: c.split(/(?<=[.!?])\s/)[0].slice(0, 220), generic: t[l][m[1]] || null };
+    }
+    return out;
+  };
+  return { version: t.version, lump: { ...t.lump }, revenue: lado('revenue'), expense: lado('expense') };
+}
+
 // Corre UN data file en un entorno limpio (sources, gestionesByClub y memberCountByClub vacíos) y devuelve lo que ese archivo define.
 export function leerClub(rel) {
   const sb = { console, window: {}, sources: {}, gestionesByClub: {}, memberCountByClub: {} }; sb.window.window = sb.window; const ctx = vm.createContext(sb);
@@ -275,7 +295,7 @@ export function validar(j, { categorias = null, externos = null } = {}) {
   const deporte = (j.club && has(j.club, 'sport')) ? inv(DEPORTE)[j.club.sport] : 'futbol';
   if (j.club && has(j.club, 'sport') && !deporte) err('club.sport', `deporte "${j.club.sport}" desconocido (${Object.values(DEPORTE).join(', ')})`);
   if (categorias && categorias.deportes && deporte) { const t = categorias.deportes[deporte]; if (!t) err('club.sport', `el deporte "${j.club.sport}" no tiene taxonomía en data/category-map.js`); else if (j.club && j.club.taxonomy !== t.version) err('club.taxonomy', `vale "${j.club.taxonomy}", la vigente es "${t.version}" (se corre tools/migrar-v2.mjs)`); }
-  const lineas = (arr, r, lado) => { if (!Array.isArray(arr)) return err(r, 'tiene que ser una lista'); arr.forEach((l, i) => { const rr = `${r}[${i}]`; if (!claves(l, ['category', ...Object.values(LINEA)], rr, ['label', 'category', 'subcategory', 'amount'])) return; if (typeof l.label !== 'string') err(rr, 'label tiene que ser un texto'); if (has(l, 'disclosure') && !DISCLOSURE.includes(l.disclosure)) err(rr, `disclosure "${l.disclosure}" desconocido`); if (!ES_NUM(l.amount)) err(rr, 'amount tiene que ser un número finito'); if (categorias && ![...categorias.revenue, ...categorias.expense].includes(l.subcategory)) err(rr, `subcategoría "${l.subcategory}" que no está en data/category-map.js`); else if (categorias && categorias.genericCategoryOf && deporte) { const g = categorias.genericCategoryOf(deporte, lado, l.subcategory); if (l.category !== g) err(rr, `category "${l.category}" no es la genérica de "${l.subcategory}" (${lado}): es "${g}" (data/category-map.js)`); } /* una categoría del otro lado (exceptional_items en ingresos, regla de CONVENCIONES-DATOS; el costo de las camisetas de Atlético Mineiro) NO es un aviso acá: la vigila audit.js (categoria-cruzada) con su lista revisada en tools/audit-ignore.json */ if (has(l, 'items') && !itemsOk(l.items)) err(rr, 'items tiene que ser una lista de [texto, número] o [texto, número, subitems]'); }); };
+  const lineas = (arr, r, lado) => { if (!Array.isArray(arr)) return err(r, 'tiene que ser una lista'); arr.forEach((l, i) => { const rr = `${r}[${i}]`; if (!claves(l, ['category', ...Object.values(LINEA)], rr, ['label', 'category', 'subcategory', 'amount'])) return; if (typeof l.label !== 'string') err(rr, 'label tiene que ser un texto'); if (has(l, 'disclosure') && !DISCLOSURE.includes(l.disclosure)) err(rr, `disclosure "${l.disclosure}" desconocido`); if (!ES_NUM(l.amount)) err(rr, 'amount tiene que ser un número finito'); const tDep = categorias && categorias.deportes && deporte ? categorias.deportes[deporte] : null; if (categorias && !(tDep ? (has(tDep.revenue, l.subcategory) || has(tDep.expense, l.subcategory)) : [...categorias.revenue, ...categorias.expense].includes(l.subcategory))) err(rr, `subcategoría "${l.subcategory}" que no está en la taxonomía de ${deporte || 'futbol'} (data/category-map.js)`); else if (categorias && categorias.genericCategoryOf && deporte) { const g = categorias.genericCategoryOf(deporte, lado, l.subcategory); if (l.category !== g) err(rr, `category "${l.category}" no es la genérica de "${l.subcategory}" (${lado}): es "${g}" (data/category-map.js)`); } /* una categoría del otro lado (exceptional_items en ingresos, regla de CONVENCIONES-DATOS; el costo de las camisetas de Atlético Mineiro) NO es un aviso acá: la vigila audit.js (categoria-cruzada) con su lista revisada en tools/audit-ignore.json */ if (has(l, 'items') && !itemsOk(l.items)) err(rr, 'items tiene que ser una lista de [texto, número] o [texto, número, subitems]'); }); };
   const anios = new Set();
   (Array.isArray(j.years) ? j.years : (err('years', 'tiene que ser una lista'), [])).forEach((y, i) => {
     const r = `years[${y && y.fiscal_year}]`; if (!claves(y, ['fiscal_year', 'period_end', 'currency', 'fx', 'source_id', 'report_type', 'management_id', 'revenue', 'expenses', 'financial', 'official_totals', 'adjustments'], r, ['fiscal_year', 'period_end'])) return;
