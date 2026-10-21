@@ -1,5 +1,27 @@
 # Rama `pantallas`
 
+## Pantallas 4 (2026-10-20)
+
+### Qué cambió (para CHANGELOG)
+
+- Vålerenga 2022 y 2023 (suma del AS y el Elite): cada renglón de gastos, ingresos y financieros lleva el prefijo «AS · » o «Elite · » en su etiqueta, en
+  `data/no/valerenga-no.json` (regenerado el `-data.js`). Los números no cambian. Ya no se pegan en una sola fila las dos «Lønninger» en la tabla de varios
+  años. Verificado en el preview a escritorio y a 375 px (sin desborde de la página). ASSET_V 1522, `fuentes` regenerado.
+- 241 (link dedicado por club y liga): solo plan y mockup, sin código. Plan técnico en `Admin/mediciones/241-plan.md`; mockup en
+  `Prototyping/Links/mockup-241.html` y artifact https://claude.ai/artifact/KEHmydzDpqzhmQNLy3Pg9d.
+
+### Qué queda (para TODO)
+
+- Vålerenga: el prefijo está en el JSON, no en `tools/suma-entidades.mjs`: si `cargar.mjs` vuelve a escribir 2022 o 2023, lo pisa. Pipeline 8 tiene que
+  prefijar en `combinar()` (`origen` ya dice «otra entidad»; hace falta la etiqueta). Alcanza con anteponer «AS · » a las filas del documento propio y
+  «Elite · » a las de la otra entidad. Ålesund usa el mismo ajuste y no se tocó.
+- 241: esperar el ok de Guido a la estructura (`/club/<id>`, `/liga/<id>`). Si da el ok: Pipeline escribe `generate-club-pages.js`, los redirects y la imagen OG;
+  Pantallas, el estado de la ruta en `js/principal.js` (pasos en el plan).
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada todavía: el 241 no está implementado.
+
 ## Pantallas 3 (2026-10-19)
 
 ### Qué cambió (para CHANGELOG)
