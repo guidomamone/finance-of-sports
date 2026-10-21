@@ -48,8 +48,8 @@ import { modificarClub, leerJsonClub, rutaJson } from './club-json.mjs'; // (to-
 const ROOT = resolve(import.meta.dirname, '..');
 const HOY = new Date().toISOString().slice(0, 10);
 // (to-do 339) el bolsón es el del deporte del club (la taxonomía lo declara: `lump`); para el fútbol, lump_football_operations / _expense
-import { bolsonDeDeporte, deporteODefecto } from './deporte-club.mjs';
-const lumpDe = (clubId, lado) => (bolsonDeDeporte(deporteODefecto(clubId)) || {})[lado === 'ingresos' ? 'revenue' : 'expense'];
+import { bolsonDeDeporte, deporteDeClub } from './deporte-club.mjs';
+const lumpDe = (clubId, lado) => (bolsonDeDeporte(deporteDeClub(clubId)) || {})[lado === 'ingresos' ? 'revenue' : 'expense'];
 
 // El motor de la página en un sandbox: los mismos scripts, en el mismo orden que index.html (sin el DOM: solo el cálculo).
 export function motor() {

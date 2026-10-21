@@ -4,10 +4,10 @@
 // del JSON ('football', 'rugby_union'). No decide nada: filtra la lista de categorías y desempata ejemplos.
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { existsSync } from 'node:fs';
 import vm from 'node:vm';
 
 const ROOT = resolve(import.meta.dirname, '..');
-export const DEPORTE_POR_DEFECTO = 'futbol'; // solo para un club que NO está en data/clubs.js (todavía no tiene ficha); un club con ficha usa la suya
 
 let _clubs = null; let _tax = null; let _deportes = null;
 function clubs() {
@@ -32,8 +32,24 @@ export const nombreDeporte = (id) => (deportes().find((d) => d.id === id)?.name 
 
 // El deporte declarado en la ficha del club (data/clubs.js), o null si el club no está.
 export function deporteDeClub(clubId) { return clubs().get(clubId) || null; }
-// Para quien necesita un deporte sí o sí y el club todavía no tiene ficha (un alta en curso).
-export const deporteODefecto = (clubId) => deporteDeClub(clubId) || DEPORTE_POR_DEFECTO;
+// El deporte que el REGISTRO DE ALTAS (Admin/registros/altas-club.jsonl, lo escribe alta-club.mjs) calculó para la carpeta de un documento: ficha, liga o menciones del .md.
+// null si la carpeta no está en el registro, no trae `sport` (nadie lo calculó) o lo dejó en pregunta (`origen: 'pregunta'`, valor null). Nunca se supone fútbol.
+let _altas = null;
+function altas() {
+  if (_altas) return _altas;
+  _altas = new Map(); const f = resolve(ROOT, 'Admin', 'registros', 'altas-club.jsonl');
+  if (existsSync(f)) for (const l of readFileSync(f, 'utf8').split('\n')) { if (!l.trim()) continue; try { const e = JSON.parse(l); _altas.set(e.carpeta, e); } catch { /* línea rota */ } }
+  return _altas;
+}
+export function deporteDeCarpeta(ruta) {
+  if (!ruta) return null;
+  const carpeta = String(ruta).split('/').slice(0, 3).join('/') + '/';
+  return altas().get(carpeta)?.sport?.valor || null;
+}
+// El deporte de un documento, SIN default: la ficha del club (data/clubs.js) -> el registro de altas de su carpeta -> null. Quien recibe null se detiene y pide el deporte
+// (correr `node tools/alta-club.mjs --todos --solo "<país>/<club>"`, gratis), no categoriza como fútbol.
+export function resolverDeporte({ club = null, pdf = null } = {}) { return deporteDeClub(club) || deporteDeCarpeta(pdf) || null; }
+export const MENSAJE_SIN_DEPORTE = (quien) => `${quien} no tiene deporte: ni ficha en data/clubs.js ni deporte en el registro de altas. Correr node tools/alta-club.mjs --todos --solo "<país>/<club>" (gratis)`;
 
 // SPORT_TAXONOMIES de data/category-map.js: { futbol: { version, revenue: {sub: genérica}, expense: {...} }, ... }
 function taxonomias() {
@@ -82,10 +98,8 @@ export function leerCategorias(deporte) {
 }
 // El bolsón «sin desglosar por la fuente» del deporte: { revenue, expense } (ids de subcategoría), o null si el deporte no tiene taxonomía o no declara bolsón.
 export function bolsonDeDeporte(deporte) { const l = taxonomias()[deporte]?.lump; return l ? { revenue: l.revenue, expense: l.expense } : null; }
-// ¿Esta categoría existe en la taxonomía del deporte del club? Sin taxonomía del deporte, no (nunca se asume que sí).
-export function categoriaValidaParaClub(clubId, categoria) {
-  const c = categoriasDeDeporte(deporteODefecto(clubId)); return Boolean(c && c.todas.has(categoria));
-}
+// La subcategoría de gasto de los sueldos del primer equipo (la que la taxonomía mapea a la genérica `first_team_staff`): wages_squad en fútbol, squad_wages en rugby. null si no hay.
+export function categoriaDeSueldos(deporte) { const e = taxonomias()[deporte]?.expense; return e ? (Object.keys(e).find((k) => e[k] === 'first_team_staff') || null) : null; }
 // 1 = mismo deporte, 0 = otro (o no se sabe). Desempata ejemplos como afinidad() de pais-club.mjs, pero va ANTES que el país.
 export function afinidadDeporte(clubA, clubB) {
   const a = deporteDeClub(clubA); const b = deporteDeClub(clubB);

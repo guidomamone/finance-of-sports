@@ -40,7 +40,7 @@ import { huellaRubros, jevAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
 import { abrirCache } from './respuestas-cache.mjs';
 import { derivado, ubicar } from './rutas.mjs';
-import { deporteODefecto, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) el deporte del club: su lista de categorías y los ejemplos del mismo deporte primero
+import { deporteDeClub, resolverDeporte, MENSAJE_SIN_DEPORTE, categoriasDeDeporte, leerCategorias, deportesConTaxonomia, afinidadDeporte, nombreDeporte } from './deporte-club.mjs'; // (to-do 339) el deporte del club: su lista de categorías y los ejemplos del mismo deporte primero
 import { paisDeClub, afinidad } from './pais-club.mjs'; // (to-do 331) el país del club en el texto y los ejemplos del mismo país primero
 import { lineasAprendidas } from './memoria-categorias.mjs';
 import vm from 'node:vm';
@@ -95,8 +95,9 @@ const sideOf = (cat) => LADOS[cat] || '?';
 
 // ---------------------------------------------------------------- llamada a Jev
 let stopAll = null;
-async function askJev(key, { label, section, club, side, examples, useSide }) {
-  const deporte = deporteODefecto(club); const cd = criteriosDe(deporte);
+async function askJev(key, { label, section, club, side, examples, useSide, deporte = deporteDeClub(club) }) {
+  if (!deporte) return { error: MENSAJE_SIN_DEPORTE(club || 'el club') };
+  const cd = criteriosDe(deporte);
   if (!cd) return { error: `el deporte «${deporte}» no tiene taxonomía en data/category-map.js (SPORT_TAXONOMIES): no se le pregunta a Jev` };
   const criteria = (SIDE_KNOWN || useSide) && side ? Object.fromEntries(Object.entries(cd.todas).filter(([k]) => cd.lado[k] === side)) : cd.todas;
   const exText = examples && examples.length ? `Ejemplos de rubros parecidos que ya están categorizados en el sitio (los clubes tienen convenciones propias; guiate por ellos):\n${examples.map((x) => `- "${x.label}" (${x.club}) -> ${x.truth}`).join('\n')}\n` : '';
@@ -143,7 +144,7 @@ function makeRetriever(bank) {
   const prepared = bank.map((b) => ({ ...b, w: words(b.label), key: `${b.club}|${b.label.toLowerCase().replace(/\s+/g, ' ').trim()}` }));
   return (q) => {
     const qw = words(q.label); const qkey = `${q.club}|${q.label.toLowerCase().replace(/\s+/g, ' ').trim()}`;
-    const scored = []; const admite = categoriasDeDeporte(deporteODefecto(q.club))?.todas; // (to-do 339) solo ejemplos cuya categoría existe en la taxonomía del deporte del club (ingreso + gasto)
+    const scored = []; const admite = categoriasDeDeporte(q.deporte || deporteDeClub(q.club))?.todas; // (to-do 339) solo ejemplos cuya categoría existe en la taxonomía del deporte del club (ingreso + gasto)
     for (const b of prepared) {
       if (admite && !admite.has(b.truth)) continue;
       if (NO_SAME_CLUB && b.club === q.club) continue;
@@ -261,16 +262,20 @@ async function listos() {
   const cache = abrirCache('jev'); const SIN_CACHE = args.includes('--sin-cache'); let desdeCache = 0;
   for (const e of docs) {
     const rj = JSON.parse(readFileSync(resolve(root, derivado(e.md, '.rubros.json')), 'utf8'));
+    // (to-do 339) el deporte del documento: la ficha del club, o el registro de altas de su carpeta; sin ninguno no se categoriza (no se supone fútbol)
+    const depDoc = resolverDeporte({ club: rj.club, pdf: e.pdf });
+    if (!depDoc) { console.log(`  ${e.pdf}: NO SE CATEGORIZA: ${MENSAJE_SIN_DEPORTE(rj.club)}`); continue; }
     const uniqLabels = [...new Map(rj.rubros.map((r) => [r.label.toLowerCase(), r])).values()];
     const results = []; const faltan = []; const malas = [];
     await pool(uniqLabels, async (r) => {
       const base = { label: r.label, lado: r.lado || null, page: r.page, section: r.section };
-      if (deSesion) { const s = deSesion.get(nl(r.label)); if (!s) faltan.push(r.label); else if (sideOf(s.choice) === '?') malas.push(`${r.label} -> ${s.choice}`); else results.push({ ...base, choice: s.choice, confidence: s.confidence ?? null, origen: 'sesión' }); return; }
+      // (to-do 339) la respuesta de la sesión vale si existe en la taxonomía del deporte del club (no la del fútbol)
+      if (deSesion) { const s = deSesion.get(nl(r.label)); if (!s) faltan.push(r.label); else if (!criteriosDe(depDoc)?.lado[s.choice]) malas.push(`${r.label} -> ${s.choice}`); else results.push({ ...base, choice: s.choice, confidence: s.confidence ?? null, origen: 'sesión' }); return; }
       const guardada = SIN_CACHE ? null : cache.get(rj.club, r.lado, r.label);
       if (guardada) { desdeCache++; results.push({ ...base, ...guardada, desdeCache: true }); return; }
       const useSide = Boolean(r.lado);
       // Con glosa en español (tools/glosar-rubros.mjs) Jev lee el rubro original + su traducción, y la búsqueda de ejemplos parecidos tiene palabras en común con el sitio.
-      const q = { label: r.glosa && r.glosa !== r.label ? `${r.label} (= ${r.glosa})` : r.label, club: rj.club, side: r.lado || null, useSide };
+      const q = { label: r.glosa && r.glosa !== r.label ? `${r.label} (= ${r.glosa})` : r.label, club: rj.club, deporte: depDoc, side: r.lado || null, useSide };
       const resp = await askJev(key, { ...q, section: r.section, examples: retrieve ? retrieve(q) : null });
       if (!resp.error && resp.choice) cache.set(rj.club, r.lado, r.label, { choice: resp.choice, confidence: resp.confidence ?? null });
       results.push({ ...base, ...resp });

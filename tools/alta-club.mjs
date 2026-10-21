@@ -250,7 +250,7 @@ import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { clubDeCarpeta } from './carpetas-clubes.mjs';
-import { deportesActivos } from './deporte-club.mjs'; // (to-do 339) deportes activos del catálogo
+import { deportesActivos, deporteDeClub } from './deporte-club.mjs'; // (to-do 339) deportes activos del catálogo
 import * as EV from './evidencia-club.mjs';
 import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
 import { agregarCaso, casoYRespuesta } from './cola.mjs';
@@ -1486,7 +1486,14 @@ function escribir(r) {
     ev = EV.agregarTexto(ev, anio, 'Liga', [`alta-club.mjs (${hoy}): ${liga.valor || 'null'}, ${liga.valor ? `verificado contra ${liga.fuente}` : `SIN VERIFICAR (${liga.fuente})`}.`]);
     if (existsSync(ligaPath)) {
       const txt = readFileSync(ligaPath, 'utf8');
-      writeFileSync(ligaPath, insertarAntes(txt, 'Object.assign(window.CLUB_LEAGUE_BY_YEAR, {', /^\}\);$/m, filaLiga, `data/club-leagues/${iso}.js`));
+      // (to-do 339) Si el club YA tiene su línea (a mano, con otros años), el año se agrega a ESA línea o, si ya está, no se escribe nada: una segunda línea del mismo id pisa la primera
+      // entera (Object.assign) y el club queda con un solo año. Caso: bathrugby-gb, la línea 2021 a 2025 quedó pisada por una de solo 2021.
+      const enLinea = new RegExp(`^(\\s*(?:'${id}'|"${id}"|${id})\\s*:\\s*\\{)([^}]*)(\\},?)\\s*$`, 'm');
+      const ya = txt.match(enLinea);
+      if (ya) {
+        if (new RegExp(`\\b${anio}\\s*:`).test(ya[2])) { /* el año ya está en la línea: no se toca */ }
+        else writeFileSync(ligaPath, txt.replace(enLinea, `$1${ya[2].replace(/\s+$/, '')}, ${anio}: ${liga.valor ? jsStr(liga.valor) : 'null'} $3`));
+      } else writeFileSync(ligaPath, insertarAntes(txt, 'Object.assign(window.CLUB_LEAGUE_BY_YEAR, {', /^\}\);$/m, filaLiga, `data/club-leagues/${iso}.js`));
     } else {
       // sin cabecera de comentario (to-do 209: data/ se publica); las reglas de estos archivos están en data/club-leagues.js
       writeFileSync(ligaPath, `window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
@@ -1716,13 +1723,20 @@ function armarEntrada({ paisCarpeta, clubCarpeta, r, huella, detalle, claude, pr
     const x = respPorTipo.get(TIPO_DE_CAMPO[c.campo]) || {};
     return { campo: c.campo, valor: c.valor, fuente: 'claude-api', modelo: claude && claude.modelo, confianza: x.confianza, respuesta: x.respuesta, citas: (x.citas || []).map(({ pagina, texto }) => ({ pagina, texto })) };
   });
+  // (to-do 339) El deporte que el alta calculó, para el registro: lo leen Jev, Claude y la cola de un club que todavía no tiene ficha (tools/deporte-club.mjs, deporteDeCarpeta).
+  // `origen` dice de dónde salió (ficha, liga, menciones del .md o claude); `pregunta` = se preguntó y nadie contestó (valor null). Una entrada sin `sport` = nadie lo calculó.
+  const spC = r.campos.find((c) => c.campo === 'sport');
+  const sport = r.club.existe ? { valor: deporteDeClub(clubId), origen: 'ficha' }
+    : !spC ? undefined
+    : spC.estado === 'pregunta' ? { valor: null, origen: 'pregunta' }
+    : { valor: spC.valor ?? null, origen: /^la ficha/.test(spC.fuente) ? 'ficha' : /^la liga/.test(spC.fuente) ? 'liga' : /^claude-api/.test(spC.fuente) ? 'claude' : 'menciones' };
   let estado;
   if (r.club.existe) estado = 'existe';
   else if (preguntas.length) estado = 'con-preguntas';
   else if (faltaFx) estado = 'faltan-datos';
   else estado = 'listo-para-alta';
   return {
-    ...base, clubId, estado, documento: r.documento, anio: r.ejercicio.anio, cierre: r.ejercicio.cierre,
+    ...base, clubId, estado, ...(sport ? { sport } : {}), documento: r.documento, anio: r.ejercicio.anio, cierre: r.ejercicio.cierre,
     detalle: estado === 'faltan-datos' ? 'sin tipo de cambio para el cierre: ni declarado por el documento, ni en FX_CLOSE, ni en tools/fx-reference/ (correr fetch-fx-reference.mjs)' : undefined,
     documentosProbados: probados && probados.length > 1 ? probados : undefined,
     resumen: { ok: r.resumen.ok, pregunta: r.resumen.pregunta, pendiente: r.resumen.pendiente },

@@ -291,3 +291,18 @@ Premier ~25 · LaLiga ~30 · Serie A ~5 · Bundesliga ~10 · Brasil ~60 · Argen
 
 ### Qué deja de ser cierto en ESTADO
 - Nada.
+
+## Pipeline 11: 339, cierre (2026-10-21)
+
+### Qué cambió (para CHANGELOG)
+- El pipeline sabe el deporte: `tools/deporte-club.mjs` (ficha, registro de altas, taxonomía, bolsón, sueldos, tabla de ceros). Sin deporte una tool se detiene; nunca categoriza como fútbol. `alta-club.mjs` guarda `sport` en `altas-club.jsonl`; `lote.mjs` corre alta-club (gratis) antes de Jev y Claude, también en `--sin-api`.
+- Frenos de Bath: `verificar.mjs` prueba el ajuste `desglose` antes de `cerrarNota`; Jev `--desde-sesion` y `cargar.mjs` leen la taxonomía del deporte; `--personal --partir` usa la categoría de sueldos del deporte; `audit.js` por deporte (categorías, sonda de gastos, taxonomía, sueldos) y `pruebaDeDeporte` (club de muestra por deporte → P1 `deporte-muestra`).
+- `audit.js` avisa `coma-comida` (P2) por la coma que el OCR se come en tablas en M; `alta-club` no duplica la línea de `club-leagues`; `worktree.mjs preparar` enlaza `tools/node_modules` (y `.gitignore` sin la barra final).
+- `Admin/PIPELINE.md`: sección «Un deporte nuevo».
+
+### Qué queda
+- Después del merge: correr `node tools/alta-club.mjs --todos` en main y commitear `Admin/registros/altas-club.jsonl` (se regenera con `sport`).
+- Textos de los prompts de lectura que dicen «clubes de fútbol» (`localizar`, `extraer`, `perimetro-senales`, `caja-deuda`, `glosar-rubros`), JSON-LD `Soccer` de `generate-club-pages.js`, `estadio-sponsor.mjs` para rugby, la frase de la skill `club-data-mapping` (el texto va a Guido antes).
+
+### Qué deja de ser cierto en ESTADO
+- Nada del sitio.
