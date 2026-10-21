@@ -104,6 +104,7 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   rutas y sus números son los de ese día. Ver `Admin/Archive/README.md`.
 
 - Cerrar un punto del TODO con una premisa vencida: skill `principal-finance-of-sports`.
+- UN PUNTO NUEVO DEL TODO ARRANCA CON «Terminado cuando:»: la lista cerrada de lo que entra (clubes, años, archivos, tools) y la prueba de que está hecho. Lo que aparece en el camino y no está en esa lista va a un punto nuevo; el punto se cierra cuando se cumple su lista, aunque haya salido trabajo nuevo.
 - REGLA DE ESTILO (Versión 42, pedida por Guido: "los odio a los em dashes"): la regla vale SOLO para el
   texto visible del sitio (copy de la página, traducciones, notas públicas): no usar el carácter
   em dash (—, U+2014). Usar punto y arrancar oración nueva, coma, dos puntos o paréntesis según

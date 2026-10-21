@@ -1,6 +1,6 @@
 # Sesión en un worktree
 
-Una sesión en paralelo trabaja en su copia (git worktree) y su rama; la principal mergea.
+Una sesión en paralelo trabaja en su copia (git worktree) y su rama; la principal mergea. Para tener lo último de main, la sesión corre `git merge --ff-only main`, solo, en un comando aparte: no mezcla nada. Si git lo rechaza porque la rama tiene commits propios, le pide el merge a la principal.
 
 **Al arrancar en la copia:** `node tools/worktree.mjs preparar <esta carpeta>` (enlaza PDFs, claves y cachés de la carpeta principal; las
 cachés quedan compartidas).

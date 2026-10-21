@@ -69,7 +69,7 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 ### b) Mejorar un script
 
 1. Mirar 2-3 casos reales antes de afirmar la causa.
-2. Mostrar el diseño en pocas líneas, con la escalera completa y el escalón nuevo, y un ejemplo real que recorra cada escalón. No commitear antes del veredicto de la Auditora, que decide con la sección 8 de `auditoria-finance-of-sports` si es una mejora general o un parche. Una condición nueva (un frenazo, aviso, filtro o pregunta en una tool, o un cambio en lo
+2. Mostrar el diseño en pocas líneas, con la escalera completa y el escalón nuevo, y un ejemplo real que recorra cada escalón. No commitear antes del veredicto de la Auditora, que decide con la sección 8 de `auditoria-finance-of-sports` si es una mejora general o un parche, salvo lo que la sección 7 de esa skill deja entrar sin esperarla. Una condición nueva (un frenazo, aviso, filtro o pregunta en una tool, o un cambio en lo
    que asume) también va a la Auditora, que la decide con la sección 7 de `auditoria-finance-of-sports`; a Guido va solo lo que la
    Auditora manda a votación o lo que cambia ese criterio (`Admin/CONVENCIONES.md`).
 3. Medir antes y después con los lotes de prueba (sección 5).
@@ -82,6 +82,8 @@ especificación de las filas y las respuestas de categoría, y las tools arman l
 `Admin/registros/frenados-por-script.jsonl`.
 
 ## 4. Reglas de Guido
+
+- **Un lote es de un solo tipo: un país o un formato de documento.** Una lista mezclada (los «documentos en mano» de varios países) se separa primero en grupos. Se carga enseguida lo que pasa con las reglas y tools de hoy; cada documento que pide una regla, una tool o una liga que no existe sale como un punto propio del TODO, y el lote se cierra sin esperarlo.
 
 - **Un criterio de datos no se le pregunta a Guido.** Si una carga trae una pregunta que no resuelven el documento, `Admin/CONVENCIONES-DATOS.md` ni `club-data-mapping` (un período raro, una temporada de la pandemia, un perímetro), va a la Auditora, que la resuelve con un precedente o con `votacion-de-criterios`. Mientras tanto el año queda donde lo manda la regla vigente (`documentos-parciales.txt`, la cola), sin pedirle ok a nadie. A Guido llega solo lo que la votación no resuelve.
 

@@ -211,6 +211,8 @@ en memoria.** Cualquier verificación que se escriba en el navegador tiene que f
 
 **Una condición que relaja** (como una tabla vacía) se evalúa igual, con la pregunta 3 como la importante.
 
+**Lo que entra sin esperar el veredicto** (la Auditora lo revisa en su corrida siguiente con el mismo criterio, y si no pasa se revierte): un aviso P3 nuevo de `audit.js`, que no frena nada; una mejora que cumple la sección 8 y da 0 años cargados cambiados, medido sobre todo lo cargado. Siguen esperando su veredicto: todo freno (P0, P1, un error o una pregunta nueva en una tool), todo cambio a lo que una tool asume y todo criterio de datos.
+
 ## 8. Mejoras de script: ¿general o parche?
 
 Toda mejora a una tool del pipeline pasa por la Auditora antes del commit, además de las cinco preguntas de la sección 7 si agrega una condición. La pregunta es si arregla un patrón o un caso.
