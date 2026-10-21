@@ -29,7 +29,7 @@ el número de la izquierda es el orden de trabajo.
 
 **A. En marcha**
 1. 343 (Pipeline 12): buscar el sponsor con evidencia; pegar la sección 0.5 y codear la compuerta
-2. 344 (Pantallas 6): mockup de Ligas sin conteos ni plata (cambio tuyo), y separar Escocia y Gales
+2. 344 (Pantallas 6): implementar Ligas como el mockup aprobado, sacar los conteos del encabezado de liga y de Inicio, separar Escocia y diseñar Gales
 3. 257 (Orden 1): skills que faltan; los chequeos aprobados, qué de CONVENCIONES pasa a skill, y cada texto de skill con tu ok
 4. 237 al (Pipeline 12, después del 343): anexo UEFA para abrir las ventas
 5. 317 a 319 (Pruebas 1): Supabase, Open Notebook e I have ADHD
@@ -140,6 +140,8 @@ el número de la izquierda es el orden de trabajo.
    buscar. Propuesta en `Admin/propuestas/343-busqueda-sponsor.md` (sección 0.5 de club-sourcing), aprobada por la Auditora con tres cambios y
    por Guido (2026-10-21). Falta pegar la sección y codear la compuerta, `tools/sponsor-legacy.json` y los chequeos de `audit.js`.
 344. LIGAS DE DISTINTOS PAÍSES Y DEPORTES EN LA PANTALLA LIGAS (Guido, 2026-10-21: «quiero un mockup»). Cómo se agrupan, filtran y ordenan
-   al crecer (país, deporte, nivel; el nivel se compara dentro de un deporte y un país) y cómo convive Informes (332). Mockup listo (Pantallas 6): https://claude.ai/artifact/CzmEuNtdt7i2yHNrDDi2Aa y
-   `Prototyping/Ligas/mockup-344.html`; falta el ok de Guido. Hallazgo: el país GB se llama «Inglaterra» y agrupa la Premiership escocesa;
-   con más ligas conviene separar Escocia y Gales o llamarlo «Reino Unido».
+   al crecer (país, deporte, nivel; el nivel se compara dentro de un deporte y un país) y cómo convive Informes (332). Mockup aprobado por Guido (2026-10-21): https://claude.ai/artifact/CzmEuNtdt7i2yHNrDDi2Aa y
+   `Prototyping/Ligas/mockup-344.html`. Guido: se sacan el «N de M con ejercicio» del encabezado de liga y las tarjetas de Inicio con
+   conteos y US$; quedan el ranking y «La liga en total»; los estaduales de Brasil quedan sin nivel. Hallazgo: el país GB se llama «Inglaterra» y agrupa la Premiership escocesa;
+   Guido: Escocia se separa; Gales es difícil (clubes en la pirámide inglesa y una liga propia): propuesta, el país de una liga es el de su
+   federación y el de un club, donde está, sin cambiar ids.

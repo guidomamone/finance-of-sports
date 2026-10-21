@@ -24,7 +24,7 @@ sirve y llevalo a donde se lee: una regla a `Admin/CONVENCIONES.md` (proceso), `
   existía (pasó de verdad). Empezá por `start-session-finance-of-sports-project`, salvo que la tarea sea onboardear clubes o tocar
   las tools del pipeline: ahí `club-or-year-onboarding`, que trae su propio arranque. Las demás: `club-sourcing` (buscar documentos),
   `club-data-mapping` (categorizar, revisar la cola de categorías o cargar a mano; el criterio está en su SKILL.md y los casos de tipo de cambio, formato simplificado, PDFs difíciles y casos por país en `referencia/`, que su índice dice cuándo abrir), `club-outreach` (mails a clubes),
-  `auditoria-finance-of-sports` y `escala-finance-of-sports`.
+  `auditoria-finance-of-sports`, `escala-finance-of-sports` y `deploy-y-release-finance-of-sports` (antes y después de que Guido pushee).
 - Mirá si hay algo nuevo en `Admin/sourcing/README.md`: Guido deja ahí links a documentos antes de que se carguen. Si algo de ahí no figura
   como cargado en `Admin/ESTADO-clubes.md`, es trabajo pendiente.
 - Una pregunta genuina sobre un documento, que no se puede responder con la fuente ni con los criterios de las skills, va a

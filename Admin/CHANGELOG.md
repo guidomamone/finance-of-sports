@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 919 — Skill de deploy; Ligas aprobada (2026-10-21) [257 · 344 · 237 · 317 · 319]
+- Skill nueva `deploy-y-release-finance-of-sports` (qué chequear antes del push y cómo verificar producción), con el ok de Guido; CLAUDE.md la nombra.
+- 344: Guido aprobó el mockup de Ligas sin conteos ni plata; se sacan los conteos del encabezado de liga y de Inicio; Escocia se separa.
+- 237 al: la Auditora 4 aprobó el diseño con dos cambios (sin codear).
+- 317: Postgres local con los 320 clubes no sirve para decidir cuándo `data/*.js` deja de alcanzar; no se migra (`Admin/mediciones/317-supabase.md`). 319: repo verificado, sin instalar. 318: sin probar (pide Docker).
+
 ## Versión 918 — El alta propone una liga y un deporte nuevos (2026-10-21) [341 · 343 · 317]
 - 341: `tools/catalogo-liga.mjs --liga <id>` propone la entrada de `LEAGUES` desde Wikipedia (nombre, país, deporte, nivel; sin IA) y, para un deporte nuevo, lo que falta para activarlo (taxonomía, `CEROS_POR_DEPORTE`, un club, reglas de categoría inválidas: `validarReglasPrompt`). `--escribir` exige la aprobación registrada: la Auditora para una liga, Guido para un deporte. Medido sobre 63 ligas: deporte igual en 60, nivel en 59. Un deporte se activa con un solo club; el nivel de rugby sigue la RFU.
 - `audit.js` no se cae con un enlace roto de worktree.
