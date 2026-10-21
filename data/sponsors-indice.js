@@ -2237,7 +2237,7 @@ window.SPONSORS_INDICE = [
   ["smartlog-group","Smartlog Group",["c"]],
   ["smc-group","SMC Group",["c"]],
   ["smile-up","Smile.Up",["c"]],
-  ["smurfit-kappa-group","Smurfit Kappa Group",["c"]],
+  ["smurfit-kappa","Smurfit Kappa",["c"]],
   ["smurfit-westrock","Smurfit Westrock",["c"]],
   ["smyb-business-logistics","Smyb Business Logistics",["c"]],
   ["so-saude-resgate","Só Saúde Resgate",["c"]],

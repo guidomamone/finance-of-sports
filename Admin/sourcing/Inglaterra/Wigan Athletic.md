@@ -20,3 +20,5 @@ Todos en `Clubes/Inglaterra/Wigan Athletic/` (los PDF no se trackean; son escane
 
 Entidad nueva desde la administración de 2021 (constituida el 27/1/2021): la serie tiene exactamente 5 ejercicios y no hay nada más atrás. Los anteriores pertenecen a la entidad liquidada.
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2024 desde `Clubes/Inglaterra/Wigan Athletic/wigan-full-accounts-2023-24-ixbrl.pdf` (sourceId `wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl`).

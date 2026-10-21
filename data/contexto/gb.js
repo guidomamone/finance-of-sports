@@ -172,6 +172,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"London Stadium","capacidad":62500,"sponsor":"Betway","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"London Stadium","capacidad":62500,"sponsor":"Betway","marca":"Umbro","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
+  'wiganathletic-gb': {
+    2024: {"estadio":"DW Stadium","capacidad":25138,"sponsor":"Smurfit Kappa","marca":"Puma","temporada":"2023–24 EFL League One","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374139849","fuenteManual":"https://www.wigantoday.net/sport/football/first-look-wigan-athletic-launch-new-kit-for-2023-24-campaign-4227219 (camiseta 2023-24); estadio: https://en.wikipedia.org/wiki/2023%E2%80%9324_Wigan_Athletic_F.C._season","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'wolves-gb': {
     2020: {"estadio":"Molineux Stadium","capacidad":32050,"sponsor":"ManBetX","marca":"Adidas","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
     2021: {"estadio":"Molineux Stadium","capacidad":32050,"sponsor":"ManBetX","marca":"Adidas","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},

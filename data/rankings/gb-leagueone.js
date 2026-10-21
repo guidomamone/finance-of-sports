@@ -24,6 +24,15 @@ window.RANKINGS["gb-leagueone"] = {
         mix:[["Comercial / Sponsors",3.634],["Estadio",1.237],["Televisión",3.918],["Venta de Jugadores",0.322],["Otros ingresos",0.17]] },
     ],
   },
+  2024: {
+    leagueSize: 24,
+    wiki: {"t":"2023–24 EFL League One","lang":"en","at":"2026-09-30","n":24},
+    clubs: [
+      { id:"wiganathletic-gb", revenue:12.642, reportType:"official_balance_sheet",
+        sourceId:"wiganathletic-gb-wigan-full-accounts-2023-24-ixbrl",
+        mix:[["Comercial / Sponsors",2.908],["Estadio",4.048],["Televisión",2.998],["Premios por competencias",0.225],["Venta de Jugadores",0.947],["Otras secciones deportivas",1.051],["Otros ingresos",0.465]] },
+    ],
+  },
   2022: {
     leagueSize: 24,
     wiki: {"t":"2021–22 EFL League One","lang":"en","at":"2026-10-19","n":24},
