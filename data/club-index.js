@@ -115,7 +115,7 @@ window.CLUB_INDEX = {
   "fcemmen-nl": {"n":"FC Emmen","c":"NL","q":"full","y":1,"last":2019,"yrs":[[2019,"official_balance_sheet"]]},
   "fcgroningen-nl": {"n":"FC Groningen","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "fcilevadia-ee": {"n":"FCI Levadia","c":"EE","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
-  "fckobenhavn-dk": {"n":"FC København","c":"DK","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
+  "fckobenhavn-dk": {"n":"FC København","c":"DK","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "fctokyo-jp": {"n":"FC Tokyo","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "fctwente-nl": {"n":"FC Twente","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "fcutrecht-nl": {"n":"FC Utrecht","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},

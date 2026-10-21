@@ -5,6 +5,9 @@ window.RANKINGS["dk-superliga"] = {
     leagueSize: 12,
     wiki: {"t":"2024–25 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
+      { id:"fckobenhavn-dk", revenue:140.727, reportType:"official_balance_sheet",
+        sourceId:"fckobenhavn-dk-aarsrapport-2025-12-31",
+        mix:[["Comercial / Sponsors",37.835],["Estadio",23.193],["Televisión",43.36],["Venta de Jugadores",25.664],["Otros ingresos",10.676]] },
       { id:"silkeborg-dk", revenue:20.737, reportType:"official_balance_sheet",
         sourceId:"silkeborg-dk-annual-report-2025-silkeborg-if-a-s-fact",
         mix:[["Comercial / Sponsors",4.661],["Estadio",1.741],["Televisión",2.923],["Premios por competencias",1.812],["Venta de Jugadores",7.933],["Otros ingresos",1.667]] },

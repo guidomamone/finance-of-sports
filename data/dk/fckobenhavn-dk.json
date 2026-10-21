@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fckobenhavn-dk",
@@ -17,6 +17,13 @@
       "id": "fckobenhavn-aarsrapport-2024",
       "club_id": "fckobenhavn-dk",
       "title": "F.C. København P/S — Årsrapport for 2024 (1. januar - 31. december 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
+    },
+    {
+      "id": "fckobenhavn-dk-aarsrapport-2025-12-31",
+      "club_id": "fckobenhavn-dk",
+      "title": "F.C. København P/S — aarsrapport-2025-12-31 (ejercicio 2025)",
       "type": "official_balance_sheet",
       "reliability": "primary"
     }
@@ -88,6 +95,65 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":10.62,"tax":0,"gross_debt":0,"cash":76.684},
       "official_totals": {"revenue":754.513,"expenses":718.897,"net_result":46.236}
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "DKK",
+      "source_id": "fckobenhavn-dk-aarsrapport-2025-12-31",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2025-12-31"},
+      "revenue": [
+        {"label":"Entréindtægter","category":"matchday","subcategory":"matchday_competition","amount":118.352,"disclosure":"aggregated"},
+        {"label":"TV- og præmie-indtægter","category":"media_rights","subcategory":"broadcasting","amount":275.452,"disclosure":"aggregated"},
+        {"label":"Samarbejdspartnere","category":"commercial","subcategory":"sponsorship_commercial","amount":158.819,"disclosure":"aggregated"},
+        {"label":"Merchandiseindtægter","category":"commercial","subcategory":"sponsorship_commercial","amount":81.533,"disclosure":"aggregated"},
+        {"label":"Food & Beverage, konferencecenter m.v.","category":"venue","subcategory":"stadium_other","amount":28.985,"disclosure":"aggregated"},
+        {"label":"Ejendomsudlejning","category":"other_revenue","subcategory":"other_income","amount":21.248,"disclosure":"aggregated"},
+        {"label":"Øvrige indtægter","category":"other_revenue","subcategory":"other_income","amount":27.171,"disclosure":"aggregated"},
+        {"label":"Andre driftsindtægter","category":"player_transfers","subcategory":"player_sales","amount":163.035,"disclosure":"aggregated"},
+        {
+          "label": "Indtægter af kapitalandele i tilknyttede virksomheder",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 19.4,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {"label":"Vareforbrug","category":"other_operating_expenses","subcategory":"other_expenses","amount":-116.323,"disclosure":"aggregated"},
+        {"label":"Andre eksterne omkostninger","category":"admin_general","subcategory":"admin_general_expense","amount":-187.366,"disclosure":"aggregated"},
+        {"label":"Lønninger og gager","category":"first_team_staff","subcategory":"wages_squad","amount":-330.987,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-16.051,"disclosure":"aggregated"},
+        {"label":"Andre omkostninger til social sikring","category":"first_team_staff","subcategory":"wages_squad","amount":-2.626,"disclosure":"aggregated"},
+        {
+          "label": "Amortiseringer af kontraktrettigheder",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -155.676,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Afskrivning på indretning af lejede lokaler",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -4.151,
+          "disclosure": "aggregated"
+        },
+        {"label":"Afskrivning på bygninger","category":"depreciation","subcategory":"depreciation","amount":-5.679,"disclosure":"aggregated"},
+        {"label":"Nedskrivninger bygninger","category":"depreciation","subcategory":"depreciation","amount":-2.329,"disclosure":"aggregated"},
+        {
+          "label": "Afskrivning på produktionsanlæg og maskiner",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -11.794,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.842,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":893.995,"expenses":832.982,"net_result":53.171},
+      "adjustments": {"extra_rows":[{"label":"Andre finansielle indtægter","amount":9.337},{"label":"Øvrige finansielle omkostninger","amount":-17.179}]}
     }
   ],
   "budget_overlay": {},

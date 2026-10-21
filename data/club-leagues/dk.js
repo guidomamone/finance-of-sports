@@ -1,7 +1,7 @@
 window.CLUB_LEAGUE_BY_YEAR = window.CLUB_LEAGUE_BY_YEAR || {};
 
 Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
-  'fckobenhavn-dk': { 2024: 'dk-superliga' },
+  'fckobenhavn-dk': { 2024: 'dk-superliga', 2025: 'dk-superliga' },
   'brondby-dk':     { 2020: 'dk-superliga' },
   'midtjylland-dk': { 2019: 'dk-superliga', 2020: 'dk-superliga' },
   'agf-dk':         { 2021: 'dk-superliga' },

@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Dinamarca/FC København/aarsrapport-2025-12-31.pdf",
- "generado": "2026-10-21T12:52:10.566Z",
- "frena": [
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2025: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2025: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-21T13:45:35.143Z",
+ "frena": [],
  "avisos": [
   "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado. Años cargados: 2024 consolidado",
   "materialidad: \"Nedskrivninger bygninger\" va como depreciation con 0.75 (las dudas de gastos suman 0.28% de su lado)"
@@ -675,8 +666,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 9,
   "lineasGasto": 10,
   "metaFilas": 2,
