@@ -10,8 +10,17 @@
 //   audit-antes-del-commit   un `git commit` con cambios publicables corre `audit.js --quiet` y se frena si da P0 o P1. Si los cambios son
 //                            solo internos (Admin/, .claude/, CLAUDE.md, auditorias/, Prototyping/), no audita. `[sin-audit]` en el mensaje
 //                            del commit lo saltea: solo con el ok de Guido, para un hallazgo que ya venía de main.
-//   skills-con-ok            escribir en .claude/skills/ (Edit, Write o un Bash que escribe) le pide permiso a Guido, aun en modo automático:
-//                            las skills no se editan sin mostrarle el texto y esperar su ok.
+//   skills-con-ok            escribir en .claude/skills/ solo pasa si el texto exacto ya está en un archivo de Admin/propuestas/ commiteado en HEAD (Edit: el
+//                            new_string entero; Write: cada párrafo de 40+ caracteres); si no, deny. Con el texto, ask: el permiso dice dónde está. Un Bash que
+//                            escribe en skills es deny ("usá Edit"); los comandos de git que reescriben el árbol pasan.
+//   archivar-con-ok          (ask) archive_session: una sesión se archiva solo con el sí de Guido (la Auditora queda abierta).
+//   modelo-opus-con-ok       (ask) start_session o set_session_model con un modelo Opus.
+//   worktree-sin-permission-mode  (ask) start_session con permission_mode distinto de auto.
+//   memoria-no-es-regla      (ask) escribir en la memoria de una sesión un archivo type feedback o project: una regla de trabajo va a una convención,
+//                            una skill o un chequeo; user y reference pasan.
+//   comando-que-edita        (ask) sed -i, perl -i o python por Bash que escriben: usá Edit o Write. Cada disparo se anota en
+//                            Admin/registros/.hooks-disparos.jsonl (gitignoreado) para medir cuántas veces pasa antes de pensar en deny.
+//                            Las herramientas de sesiones (archivar, iniciar, cambiar modelo) necesitan su matcher en .claude/settings.json.
 //   push-con-ok              `git push` le pide permiso a Guido cada vez: un push a main despliega en Netlify (free tier, ~25 deploys/mes).
 //   docs-de-la-principal     en un worktree, escribir Admin/TODO.md, CHANGELOG.md o ESTADO.md se rechaza: los escribe solo la principal; el
 //                            cierre de la rama va en Admin/sesiones/<rama>.md (skill de arranque, worktree.md). En la principal no hace nada.
@@ -28,7 +37,7 @@
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
 import { execFileSync } from 'node:child_process';
-import { existsSync, readFileSync } from 'node:fs';
+import { appendFileSync, existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const entrada = JSON.parse(readFileSync(0, 'utf8') || '{}');
@@ -73,10 +82,92 @@ const EDITA = ['Edit', 'Write', 'MultiEdit', 'NotebookEdit'];
 const rutaEditada = () => params.file_path || params.notebook_path || '';
 const bashEscribeEn = (cmd, ruta) => ruta.test(cmd) && ESCRIBE.test(cmd);
 
+// El candado de las skills: lo que se escribe en .claude/skills/ tiene que estar ya, palabra por palabra, en un archivo de Admin/propuestas/ commiteado
+// en HEAD (no cuenta el árbol de trabajo). Sin eso se rechaza; con eso se pide el ok de Guido y el permiso dice dónde está el texto que aprueba.
+// Edit: el `new_string` entero, en un solo archivo de propuesta. Write: cada párrafo de 40 caracteres o más, en algún archivo. Un Bash que escribe
+// en skills se rechaza ("usá Edit"); los comandos de git que reescriben el árbol (merge, checkout, restore, rebase, cherry-pick, reset, pull, stash)
+// pasan: traen texto que ya pasó por una propuesta en otra rama. Lo que garantiza: que no hay cambio de skill sin texto exacto commiteado. Lo que no:
+// que Guido lo haya leído.
+const normalizarTexto = (s) => String(s || '').replace(/^\s*>\s?/gm, '').replace(/\s+/g, ' ').trim();
+function propuestasEnHead() {
+  let lista;
+  try { lista = git(['ls-tree', '-r', 'HEAD', '--name-only', '--', 'Admin/propuestas']).split('\n').filter((f) => f.endsWith('.md')); } catch { return []; }
+  return lista.map((f) => { try { return { f, t: normalizarTexto(git(['show', `HEAD:${f}`])) }; } catch { return null; } }).filter(Boolean);
+}
+const GIT_REESCRIBE = /\bgit(?:\s+-[cC]\s+\S+)*\s+(?:merge|checkout|restore|rebase|cherry-pick|reset|pull|stash|apply|am)\b/;
+
 function skillsConOk(cmd) {
   const SKILLS = /\.claude\/skills\//;
+  const porBash = herramienta === 'Bash';
   const toca = EDITA.includes(herramienta) ? SKILLS.test(rutaEditada()) : bashEscribeEn(cmd, SKILLS);
-  if (toca) decidir('ask', 'Esto escribe en .claude/skills/. Las skills no se editan sin el ok de Guido: ¿ya vio el texto del cambio en el chat?');
+  if (!toca) return;
+  if (porBash) {
+    if (GIT_REESCRIBE.test(cmd)) return;
+    decidir('deny', 'Un comando de Bash no escribe en .claude/skills/: usá Edit o Write, con un texto que ya esté en un archivo de Admin/propuestas/ commiteado.');
+  }
+  const textos = herramienta === 'Write' ? String(params.content || '').split(/\n\s*\n/).map(normalizarTexto).filter((p) => p.length >= 40)
+    : herramienta === 'MultiEdit' ? (params.edits || []).map((e) => normalizarTexto(e.new_string)).filter(Boolean)
+    : [normalizarTexto(params.new_string)].filter(Boolean);
+  if (!textos.length) decidir('ask', 'Esto borra texto de .claude/skills/ o no agrega nada. Las skills no se editan sin el ok de Guido: ¿ya vio qué se saca?');
+  const props = propuestasEnHead();
+  const donde = new Set();
+  const faltantes = [];
+  for (const t of textos) {
+    const p = props.find((x) => x.t.includes(t));
+    if (p) donde.add(p.f); else faltantes.push(t);
+  }
+  if (faltantes.length) {
+    decidir('deny', `Este texto no está en ningún archivo de Admin/propuestas/ commiteado: «${faltantes[0].slice(0, 140)}${faltantes[0].length > 140 ? '…' : ''}». `
+      + 'Escribí el texto exacto en Admin/propuestas/<tema>.md, commitealo, mostráselo a Guido en el texto final del turno y volvé con su ok (las skills no se editan sin que él haya visto el texto).');
+  }
+  let corto = '';
+  try { corto = git(['log', '-1', '--format=%h', 'HEAD']).trim(); } catch { /* sin git */ }
+  decidir('ask', `Esto escribe en .claude/skills/. El texto está en ${[...donde].join(', ')} (HEAD ${corto}). ¿Guido lo vio y dijo que sí a este texto?`);
+}
+
+// Las herramientas de sesiones de la app no pasan por el matcher de Bash: se agregan a `matcher` de .claude/settings.json.
+const HERRAMIENTA_ARCHIVAR = 'mcp__ccd_session_mgmt__archive_session';
+const HERRAMIENTA_INICIAR = 'mcp__ccd_session__start_session';
+const HERRAMIENTA_MODELO = 'mcp__ccd_session_mgmt__set_session_model';
+
+// archivar-con-ok: una sesión terminada se archiva solo con el sí de Guido; la Auditora tiene que quedar abierta para que le escriban.
+function archivarConOk() {
+  if (herramienta !== HERRAMIENTA_ARCHIVAR) return;
+  decidir('ask', `Archivar la sesión ${params.session_id || ''}: ¿Guido dijo que sí a archivar esta sesión en este turno? (La Auditora queda abierta.)`);
+}
+
+// modelo-opus-con-ok: las sesiones nuevas van en Sonnet sin consultar; una en Opus solo con el ok de Guido.
+function modeloOpusConOk() {
+  if (herramienta !== HERRAMIENTA_INICIAR && herramienta !== HERRAMIENTA_MODELO) return;
+  if (/opus/i.test(String(params.model || ''))) decidir('ask', 'Una sesión en Opus pide el ok de Guido: ¿lo dijo? Onboarding, pipeline, auditoría y votaciones van en Sonnet.');
+}
+
+// worktree-sin-permission-mode: una sesión de worktree hereda el modo auto; con otro modo (acceptEdits) pide permiso para todo.
+function worktreeSinPermissionMode() {
+  if (herramienta !== HERRAMIENTA_INICIAR) return;
+  if (params.permission_mode && params.permission_mode !== 'auto') {
+    decidir('ask', `start_session con permission_mode «${params.permission_mode}»: una sesión de worktree hereda el modo auto y con acceptEdits pide permiso para todo. Omití permission_mode; ¿Guido pidió ese modo?`);
+  }
+}
+
+// memoria-no-es-regla: una regla de trabajo no vive en la memoria de una sesión. Una preferencia de trato (type user o reference) sí.
+function memoriaNoEsRegla() {
+  if (!EDITA.includes(herramienta)) return;
+  const ruta = rutaEditada();
+  if (!/\/\.claude\/projects\/[^/]+\/memory\/[^/]+\.md$/.test(ruta) || /\/MEMORY\.md$/.test(ruta)) return;
+  let texto = String(params.content || params.new_string || '');
+  if (!/^\s*type:\s*/m.test(texto)) { try { texto = readFileSync(ruta, 'utf8'); } catch { /* archivo nuevo */ } }
+  if (/^\s*type:\s*(feedback|project)\b/m.test(texto)) {
+    decidir('ask', 'Una regla de trabajo no vive en la memoria: va a Admin/CONVENCIONES.md, a una skill (texto en Admin/propuestas/) o a un chequeo (audit.js o este hook). '
+      + '¿Esto es una preferencia de trato con Guido y no una regla de trabajo?');
+  }
+}
+
+// comando-que-edita (ask, no deny): sed -i, perl -i y python que escriben se reemplazan por Edit o Write. Cada disparo se anota para medir cuántas veces pasa.
+function comandoQueEdita(cmd) {
+  if (!/\b(?:sed|perl)\s+(?:-\w+\s+)*-i\b|\bpython3?\s+(?:-[ce]\b|-\s*<<)/.test(cmd)) return;
+  try { appendFileSync(join(cwd, 'Admin', 'registros', '.hooks-disparos.jsonl'), JSON.stringify({ ts: new Date().toISOString(), chequeo: 'comando-que-edita', cmd: cmd.slice(0, 120) }) + '\n'); } catch { /* sin carpeta */ }
+  decidir('ask', 'Editar con `sed -i`, `perl -i` o un script de python por Bash salta el seguimiento de cambios: usá Edit o Write. ¿Hace falta este comando?');
 }
 
 function pushConOk(cmd) {
@@ -178,7 +269,12 @@ if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); mergeE
 planEnWorktree();
 if (herramienta === 'Bash') rsyncSinNoLinks(cmd);
 subagenteConReglaDeComandos();
+archivarConOk();
+modeloOpusConOk();
+worktreeSinPermissionMode();
+memoriaNoEsRegla();
 skillsConOk(cmd);
+if (herramienta === 'Bash') comandoQueEdita(cmd);
 pushConOk(cmd);
 docsDeLaPrincipal(cmd);
 pdfsConOk(cmd);

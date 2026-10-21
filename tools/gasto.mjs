@@ -61,6 +61,12 @@ for (const [motor, rel] of Object.entries(motores)) {
   }
 }
 
+// ---------------------------------------------------------------- disparador de HALLAZGOS: el paso A2 del perímetro
+// Admin/HALLAZGOS-pipeline.md, «Achicar el texto del paso A2»: se retoma si A2 pasa del 15% del gasto de API. Esa condición la mira esta tool
+// (el denominador es todo lo registrado en el rango pedido, los tres motores; la tarea es `perimetro-a2`, sin las corridas de medición).
+const TECHO_A2 = 0.15;
+const usdA2 = readJsonl(motores['claude-api']).filter(enRango).filter((r) => r.tarea === 'perimetro-a2').reduce((a, r) => a + (Number(r.costUsd) || 0), 0);
+
 // ---------------------------------------------------------------- por documento
 // Transcripción inicial (Mistral con ruta real) + validación (costoUsd del resolver, último registro por .md y todos los intentos sumados).
 const porDoc = {};
@@ -109,10 +115,12 @@ if (listaPath) {
 }
 const total = Object.values(porMotor).reduce((a, m) => a + m.usd, 0);
 // (to-do 301) process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: se sale cuando la escritura terminó.
-if (JSON_OUT) { await new Promise((fin) => process.stdout.write(JSON.stringify({ desde, sesion: sesionSel, porMotor, porSesion, porDia, porDoc: Object.fromEntries(docsSel), pagadoSinMd }, null, 1) + '\n', fin)); process.exit(0); }
+const a2 = { usd: usdA2, parteDelGasto: total > 0 ? usdA2 / total : 0, techo: TECHO_A2, retomar: total > 0 && usdA2 / total > TECHO_A2 };
+if (JSON_OUT) { await new Promise((fin) => process.stdout.write(JSON.stringify({ desde, sesion: sesionSel, a2, porMotor, porSesion, porDia, porDoc: Object.fromEntries(docsSel), pagadoSinMd }, null, 1) + '\n', fin)); process.exit(0); }
 
 console.log(`Gasto registrado${desde ? ` desde ${desde}` : ''}${sesionSel ? ` de la sesión ${sesionSel}` : ''}: ${usd(total)} (Jev: sin registro de costo)`);
 for (const [m, v] of Object.entries(porMotor)) console.log(`  ${m.padEnd(11)} ${usd(v.usd).padStart(9)}  ${v.llamadas} llamadas${v.paginas ? `, ${v.paginas} páginas` : ''}`);
+console.log(`  Paso A2 del perímetro: ${usd(a2.usd)}, ${(a2.parteDelGasto * 100).toFixed(1)}% del gasto de API (techo ${TECHO_A2 * 100}%)${a2.retomar ? ' -> PASÓ EL TECHO: retomar «Achicar el texto del paso A2» en Admin/HALLAZGOS-pipeline.md' : ''}`);
 console.log('\nPor sesión:');
 for (const [s, v] of Object.entries(porSesion).sort((x, y) => y[1].usd - x[1].usd)) console.log(`  ${s.padEnd(22)} ${usd(v.usd).padStart(9)}  ${v.llamadas} llamadas`);
 console.log('\nPor día:');

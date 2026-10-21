@@ -887,7 +887,7 @@ function checkRutasMuertas() {
 // Las skills, CLAUDE.md y los documentos de criterio dicen cómo se trabaja y qué hay HOY: sin «Versión N», sin fechas de decisión y
 // sin «to-do N» (eso va a Admin/CHANGELOG.md y Admin/TODO.md; ver CLAUDE.md, «Al empezar»). P3: es la lista de limpieza, no una alarma.
 // No mira contadores fijos («58 clubes»): el patrón da falsos positivos y no se midió su precisión.
-const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md'];
+const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md'];
 const HISTORIA_EN_DOCS = [
   ['version', /\bVersi[óo]n \d+/g, '«Versión N»'],
   ['fecha', /\b20\d\d-\d\d-\d\d\b/g, 'fechas AAAA-MM-DD'],
@@ -898,14 +898,18 @@ function checkHistoriaEnDocs() {
   const archivos = [...DOCS_DE_CRITERIO, ...mdsDeSkills()].filter(f => fs.existsSync(path.join(ROOT, f)));
   for (const [clave, re, nombre] of HISTORIA_EN_DOCS) {
     const porArchivo = new Map();
+    const primera = new Map();   // la primera línea con el patrón: dónde empezar a limpiar
     for (const f of archivos) {
-      const n = (fs.readFileSync(path.join(ROOT, f), 'utf8').match(re) || []).length;
-      if (n) porArchivo.set(f, n);
+      const texto = fs.readFileSync(path.join(ROOT, f), 'utf8');
+      const n = (texto.match(re) || []).length;
+      if (!n) continue;
+      porArchivo.set(f, n);
+      primera.set(f, texto.slice(0, texto.search(re)).split('\n').length);
     }
     if (!porArchivo.size) continue;
     const total = [...porArchivo.values()].reduce((a, b) => a + b, 0);
-    const top = [...porArchivo].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([f, n]) => `${f} (${n})`).join(', ');
-    add('P3', 'historia-en-doc-de-criterio', `${nombre}: ${total} en ${porArchivo.size} documentos de criterio (skills, CLAUDE.md, PIPELINE, CONVENCIONES*, PANTALLA); los que más: ${top}. Esos documentos dicen qué hay HOY: la historia va a Admin/CHANGELOG.md y los pendientes a Admin/TODO.md`);
+    const top = [...porArchivo].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([f, n]) => `${f}:${primera.get(f)} (${n})`).join(', ');
+    add('P3', 'historia-en-doc-de-criterio', `${nombre}: ${total} en ${porArchivo.size} documentos de criterio (skills, CLAUDE.md, ESTADO, PIPELINE, CONVENCIONES*, PANTALLA); los que más (archivo:primera línea): ${top}. Esos documentos dicen qué hay HOY: la historia va a Admin/CHANGELOG.md y los pendientes a Admin/TODO.md`);
   }
 }
 
@@ -1874,6 +1878,59 @@ function checkEjercicioSinRastro() {
   }
 }
 
+// --- DÓNDE QUEDA LO QUE SE DECIDE O SE DESCUBRE (Admin/propuestas/330-donde-se-pierde.md; los tres, P3) ----------------------------------
+// duda-resuelta-en-dudas: una pregunta resuelta se mueve a la evidencia del club (Admin/carga-clubes/<id>.md) y se borra de dudas-por-club.md;
+// la lista es lo que Guido usa para escribirle a los clubes, y una respuesta escrita adentro de la pregunta la esconde entre las abiertas.
+function checkDudasResueltas() {
+  const f = path.join(ROOT, 'Admin', 'dudas-por-club.md');
+  if (!fs.existsSync(f)) return;
+  const lineas = fs.readFileSync(f, 'utf8').split('\n');
+  const hits = [];
+  lineas.forEach((l, i) => { if (/\bRESUELT[OA]\b|Sin preguntas pendientes/.test(l)) hits.push(i + 1); });
+  if (hits.length) add('P3', 'duda-resuelta-en-dudas', `Admin/dudas-por-club.md: ${hits.length} línea(s) con una pregunta ya resuelta (${hits.slice(0, 8).join(', ')}${hits.length > 8 ? ', …' : ''}). Pasá la respuesta a Admin/carga-clubes/<clubId>.md (y el criterio, si sirve a otros clubes, a CONVENCIONES-DATOS.md) y borrá la pregunta de la lista`);
+}
+
+// Quién "lee" un archivo: una tool (tools/, js/), una skill o un documento de criterio. ESTADO, TODO y CHANGELOG no cuentan: nombrar no es leer.
+const LECTORES_DOCS = ['PIPELINE', 'CONVENCIONES', 'CONVENCIONES-DATOS', 'ARQUITECTURA', 'PANTALLA', 'HALLAZGOS-pipeline'];
+function textoDeLectores() {
+  const partes = [];
+  const leerCarpeta = (rel, ext) => {
+    let es; try { es = fs.readdirSync(path.join(ROOT, rel), { withFileTypes: true }); } catch { return; }
+    for (const e of es) {
+      const r = `${rel}/${e.name}`;
+      if (e.isDirectory()) { if (e.name !== 'node_modules' && e.name !== 'archivo') leerCarpeta(r, ext); }
+      else if (ext.test(e.name)) { try { partes.push(fs.readFileSync(path.join(ROOT, r), 'utf8')); } catch { /* enlace roto */ } }
+    }
+  };
+  leerCarpeta('tools', /\.(mjs|js|json)$/);
+  leerCarpeta('js', /\.js$/);
+  for (const f of mdsDeSkills()) partes.push(fs.readFileSync(path.join(ROOT, f), 'utf8'));
+  for (const d of LECTORES_DOCS) { try { partes.push(fs.readFileSync(path.join(ROOT, 'Admin', `${d}.md`), 'utf8')); } catch { /* falta */ } }
+  return partes.join('\n');
+}
+
+// registro-sin-lector: cada archivo de Admin/registros/ lo escribe y lo lee alguien. Uno que ninguna tool, skill ni documento de criterio nombra es un
+// registro que se llena sin que nadie lo vea. Los que empiezan con punto son listas de corrida de lote.mjs y quedan afuera.
+function checkRegistrosSinLector() {
+  const dir = path.join(ROOT, 'Admin', 'registros');
+  if (!fs.existsSync(dir)) return;
+  const texto = textoDeLectores();
+  const sin = fs.readdirSync(dir).filter(n => !n.startsWith('.') && !texto.includes(n)).sort();
+  for (const n of sin) add('P3', 'registro-sin-lector', `Admin/registros/${n}: ninguna tool, skill ni documento de criterio lo nombra. Si alguien lo lee, que lo diga (una línea en PIPELINE.md); si no, archivalo`);
+}
+
+// medicion-sin-destino: cada archivo de Admin/mediciones/ lo cita una tool, una skill o un documento de criterio (HALLAZGOS, PIPELINE,
+// CONVENCIONES*, ARQUITECTURA, PANTALLA), o está listado con su destino en Admin/mediciones/README.md. Una medición que no cambió nada y no
+// dejó una línea en HALLAZGOS se paga otra vez en la próxima sesión.
+function checkMedicionesSinDestino() {
+  const dir = path.join(ROOT, 'Admin', 'mediciones');
+  if (!fs.existsSync(dir)) return;
+  const texto = textoDeLectores();
+  let indice = ''; try { indice = fs.readFileSync(path.join(dir, 'README.md'), 'utf8'); } catch { /* sin índice */ }
+  const sin = fs.readdirSync(dir).filter(n => n !== 'README.md' && !n.startsWith('.') && !texto.includes(n) && !indice.includes(n)).sort();
+  if (sin.length) add('P3', 'medicion-sin-destino', `Admin/mediciones/: ${sin.length} archivo(s) sin destino: ${sin.slice(0, 6).join(', ')}${sin.length > 6 ? ', …' : ''}. Cada medición queda citada por HALLAZGOS-pipeline.md, PIPELINE.md o una regla, o listada con su destino en Admin/mediciones/README.md`);
+}
+
 function main() {
   let api;
   try { api = loadEngine(); }
@@ -1905,6 +1962,9 @@ function main() {
   checkParrafoNetlifyDuplicado();
   checkRutasMuertas();
   checkHistoriaEnDocs();
+  checkDudasResueltas();
+  checkRegistrosSinLector();
+  checkMedicionesSinDestino();
   checkParrafosRepetidos();
   checkRayaLarga();
   checkHigiene(api);

@@ -139,13 +139,13 @@ description: Qué es público de los datos de finance-of-sports (el JSON de cada
 
 **Qué rompe (hay que decidirlo con Guido y subir `schema_version`):**
 - renombrar, mover o quitar un campo;
-- cambiar la unidad (hoy, millones de la moneda del club, escrita en `unit`);
+- cambiar la unidad (millones de la moneda del club, escrita en `unit`);
 - cambiar el significado de un valor (sin dato es `null`, nunca 0);
 - cambiar la categoría genérica de una línea ya publicada o la tabla de la taxonomía;
 - cambiar o quitar un `id` sin dejar el alias;
-- cambiar la licencia o lo que el paquete incluye (hoy solo lo financiero).
+- cambiar la licencia o lo que el paquete incluye (solo lo financiero).
 
-**Cómo se cambia lo que rompe:** el esquema nuevo es un archivo nuevo (`club-v3.json`); el anterior queda congelado y publicado, como `club-v1.json`. Una migración es una tool (`tools/migrar-v2.mjs` es el ejemplo) que corre con `--ensayo`, y va con los chequeos de `audit.js` (`json-no-valida`, `json-js-desfasado`, `taxonomia-incompleta`) en verde. El motor y el data file generado conservan sus nombres; lo que cambia es el JSON.
+**Cómo se cambia lo que rompe:** el esquema nuevo es un archivo nuevo (`club-v3.json`); el anterior queda congelado y publicado. Una migración es una tool que corre con `--ensayo`, y va con los chequeos de `audit.js` (`json-no-valida`, `json-js-desfasado`, `taxonomia-incompleta`) en verde. El motor y el data file generado conservan sus nombres; lo que cambia es el JSON.
 
 **Siempre:** la fuente es el JSON y el `-data.js` se genera (`node tools/generar-data.mjs`); después de editar a mano, `node tools/publicar.mjs`. El esquema vigente y sus decisiones: `Admin/mediciones/245-esquema.md`; reglas de datos: `Admin/CONVENCIONES-DATOS.md`.
 
@@ -334,3 +334,77 @@ Todos van a la Auditora 4 (sección 7: qué dato lo motiva, cuánto cuesta, si y
 - **Candado de skills, con tres cambios:** coincidencia contigua (Edit: el `new_string` entero en un solo archivo de propuesta; Write: cada párrafo, con los de menos de 40 caracteres exentos); git exento de la regla de Bash (merge, checkout, restore, rebase, cherry-pick); medirlo antes con `git log -p` sobre los últimos cambios a `.claude/skills`.
 - **Rechazados:** que `mergear` frene sin flecha (ninguna nota existente la lleva: frenaría todos los merges; va como aviso, y primero el texto de `worktree.md` con el ok de Guido) y el paso de adelantar en `worktree.mjs` (no existe: el ff lo hace la principal a mano con git; la verificación `rev-list` queda en la skill principal).
 - Los matchers de `.claude/settings.json` los agrega la principal; Pipeline codea lo aprobado después.
+
+---
+
+## 7. ¿Qué de las convenciones debería ser una skill?
+
+Criterio: una **skill** es un procedimiento para una tarea (pasos, en orden, que se siguen mientras se hace algo). Una **convención** es una regla que se consulta (si la tarea toca X, X se hace así). Revisé `Admin/CONVENCIONES.md` entero y los títulos de `CONVENCIONES-DATOS.md`, `PANTALLA.md` y `PIPELINE.md`. Resultado: casi todo es regla y se queda; hay cuatro procedimientos que están escondidos adentro de convenciones, y un texto vencido que hay que borrar.
+
+### Se queda (reglas que se consultan)
+
+- `Admin/CONVENCIONES-DATOS.md` entero: cada sección es «si pasa X, se carga así» (una regla por caso: perímetro, deuda, categorías, fx). Se consulta con la tarea ya empezada; las skills `club-data-mapping` y `club-or-year-onboarding` ya la apuntan.
+- `Admin/PANTALLA.md`, «Convenciones de pantalla y código» y «Cómo funciona cada pantalla»: referencia de qué no romper. El orden de trabajo ya va a la skill 2.1.
+- `Admin/PIPELINE.md`, las etapas 1 a 9: es el manual de cada tool (opciones, qué escribe, qué chequea). La skill `club-or-year-onboarding` es el procedimiento y lo apunta. «Un deporte nuevo» se queda: la skill ya trae el procedimiento (carga de prueba, frenos a `frenados-por-script.jsonl`) y apunta ahí por lo que cada tool hace.
+- `Admin/CONVENCIONES.md`: «ONBOARDING CARGA, PIPELINE ARREGLA, AUDITORA APRUEBA» (quién puede qué), el presupuesto de la sesión, el trailer `Corrige:`, el estilo de texto visible, «Una fuente externa nueva se anota antes de publicar», «DÓNDE VA UN DOCUMENTO NUEVO» y «LO QUE ESTÁ CERRADO SE ARCHIVA»: son reglas de qué se puede hacer, y `audit.js` o el hook vigilan varias.
+
+### Se mueve a una skill (cuatro procedimientos)
+
+**7.1 `PANTALLA.md`, «Verificar en el browser de verdad, no solo revisar los números a mano» y «Trampas del navegador de preview» → archivo nuevo `producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md`.** Es el «cómo verifico» de la skill 2.1 (su punto 4): pasos que se siguen al probar una pantalla. En `PANTALLA.md` cada sección queda reemplazada por una línea: «Cómo se verifica una pantalla y las trampas del navegador de preview: skill `producto-y-pantalla-finance-of-sports`, `referencia/navegador-de-preview.md`.» El texto de hoy de las dos secciones tiene historia pegada («Versión 101», «Texto movido sin cambios», «NUEVO (auditoría de código…)»); al mudarlo se limpia. Texto exacto del archivo nuevo:
+
+```markdown
+# Verificar una pantalla en el navegador
+
+## Qué se prueba, siempre
+
+**El sitio anda de dos maneras y se prueban las dos antes de pedir el merge:** servido (el preview de `launch.json`, y `/club/<id>` y `/liga/<id>` directos y navegando desde la portada) y abierto como archivo (`file:///…/index.html`). Por eso `index.html` no lleva `<base>` fijo ni rutas que empiecen con `/`: con `file://` la raíz es la del disco y la página sale sin estilos ni scripts. Las cargas dinámicas y los links que arma el JS pasan por `fosUrl()` de `js/i18n.js`. Solo las páginas generadas de `club/` y `liga/` llevan `<base>`. `audit.js` lo chequea (`index-file-roto`).
+
+**La cuenta a mano no alcanza.** Verificar que `revenueLines` y `expenseLines` suman el total impreso es necesario, pero un bug de display no aparece sin abrir el sitio. Después de tocar una función de display o de conversión: `preview_start`, cambiar de club, tocar los dos toggles (moneda y Formato del club o simplificado) y leer los números en pantalla. `verifyTieOuts()` corre en moneda nativa, nunca pasa por el toggle y no detecta una doble conversión.
+
+**Un ejercicio recién categorizado se mira línea por línea.** Que `verifyTieOuts()` pase y que «Formato del club» se vea bien no alcanza: abrir «Formato simplificado» y confirmar que ningún bucket que debería tener plata (según el documento) está en $0. Un bucket en $0 sin explicación es la señal de que algo quedó enterrado en `items` en vez de promovido a su categoría (por ejemplo una línea real de televisión bajo `lump_football_operations`: el total cierra igual).
+
+## Trampas del navegador de preview
+
+- **Caché de `data/*.js`, `js/*.js` o del propio `index.html`.** Si después de editar los números o estilos siguen viejos aunque `curl` ya muestre el archivo nuevo, es caché antes que un bug. No alcanzan: `location.reload()`, `Cmd+Shift+R`, relanzar `preview_start`, abrir una pestaña nueva, cambiar el puerto de `.claude/launch.json` (la caché HTTP se comparte por origen entre pestañas). Lo que funciona: cambiar la URL. Para los scripts, subir `ASSET_V` (la constante y cada `?v=`, regla en `Admin/PANTALLA.md`, «CACHE DE ASSETS») a un valor que nunca se pidió, navegar, confirmar y dejarlo limpio. Para el `index.html` mismo, navegar con `?cb=<algo nuevo>` en la URL de nivel superior; confirmar con `window.ASSET_V` antes y después.
+- **Confirmar antes de concluir.** Con `javascript_tool` (`Object.keys(algunaConstDeEseArchivo)`, `document.querySelector('style').textContent.includes('tu regla')`) tanto antes de concluir que algo no funciona como antes de concluir que sí: `read_console_messages` de una pestaña reusada puede mostrar un error ya arreglado. Si el error es sospechosamente el mismo, volver a chequear el estado real.
+- **Un diálogo nativo abierto (`alert`, `confirm`) congela también las herramientas.** Si `javascript_tool` da timeout, un `setTimeout` corto no resuelve o un `loadClubData()` queda pendiente con su request en 200, es un `alert()` abierto: bloquea el hilo entero. Se destraba navegando con `force:true`. Ningún camino de error del sitio usa `alert()`.
+- **El screenshot sale en blanco si la página está scrolleada** (`window.scrollY > 0`, sin importar cómo se llegó). Con `scrollY === 0` sale bien. Para capturar algo largo: `resize_window` con un `height` grande (2500-3000), capturar, y volver con `resize_window({preset:'desktop'})`. `zoom` con `region` devuelve la imagen completa. Es una limitación de la herramienta, no del sitio.
+```
+
+La skill 2.1 gana una línea al final de su punto 4: «El detalle de qué se prueba y las trampas del navegador: `referencia/navegador-de-preview.md`.»
+
+**7.2 `CONVENCIONES.md`, «DOS SESIONES EN PARALELO» (`:22-52`) → `start-session-finance-of-sports-project/worktree.md`.** Cinco de sus bullets son pasos de trabajo de una sesión en un worktree o de la principal al mergear, y `worktree.md` es donde se leen. Se mudan (la convención queda con la primera frase: «Dos sesiones sobre el mismo working tree se pisan en silencio: cada sesión paralela va en su worktree; el procedimiento está en la skill de arranque, `worktree.md`»). Texto exacto para agregar a `worktree.md`, al final:
+
+```markdown
+**Después de `preparar`:** si `audit.js` da `faltantes-desfasado` (P1; `data/faltantes/` depende de PDFs que git ignora y que la principal bajó después), se arregla volviendo a correr `node tools/worktree.mjs preparar <carpeta>`.
+
+**Un archivo generado no se mergea a mano: se regenera.** Si hay conflicto en `Admin/sourcing/README.md`, `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js` o `Admin/ESTADO-clubes.md` (el bloque CLUB-INDEX), tomá cualquiera de los dos lados, mergeá y corré el generador que corresponde. Resolverlos línea por línea es cómo se mete un dato que ningún documento respalda.
+
+**El hook de los documentos de la principal lee el texto del comando:** un Bash que solo nombra `TODO.md`, `CHANGELOG.md` o `ESTADO.md` junto a una escritura también se frena. Escribir la nota de la sesión con Edit o Write.
+
+**El número de Versión de `Admin/CHANGELOG.md` se decide al mergear, no al escribir:** dos ramas van a querer el mismo; el que mergea segundo renumera su entrada.
+
+**Un país por sesión de sourcing:** `Admin/sourcing/_indice/<País>.md` y `Admin/sourcing/<País>/` son de un solo país, así dos sesiones en países distintos no comparten un archivo.
+```
+
+Y se borra de `CONVENCIONES.md`, por vencido, el bullet «El ONBOARDING va en `main`, el SOURCING en el worktree» (`:27-31`): contradice el resto del mismo archivo («Tres sesiones de worktree con un rol cada una», `:54`) y `Admin/ESTADO.md` («Sesiones en paralelo: cada una en su worktree»). También los dos que dicen cómo pasar un PDF bajado en el worktree (`:32-35`): ya están en `worktree.md` (rsync con `--no-links`) y su regla («no borres el worktree antes») se agrega en una frase a esa línea de `worktree.md`: «Un PDF bajado en la copia no viaja al mergear (`*.pdf` está en `.gitignore`): pasalo a la principal antes de borrar el worktree.» Queda por revisar el bullet de `migrar-v2.mjs --escribir` después de mergear una rama con JSON en esquema 1.0 (`:43-44`): mientras haya ramas viejas sirve; si no, se borra. Lo decide quien mergea.
+
+**7.3 `CONVENCIONES.md`, «UNA PREMISA VENCIDA EN LA TO-DO SE ESCRIBE AL CERRAR EL PUNTO» (`:130-142`) → skill `principal-finance-of-sports` (2.5), sección nueva.** Es un paso al cerrar un punto del TODO, y lo hace la principal; el texto de hoy son 13 líneas de casos de septiembre. Texto exacto, a agregar a la skill 2.5 antes de «Cómo mantener esta skill»:
+
+```markdown
+## Cerrar un punto del TODO
+
+Se borra lo resuelto. Si el motivo por el que estaba trabado resultó falso (la transcripción que «nunca se hizo» ya estaba en disco, la función que había que revisar ya no existe), además queda escrito en la entrada de `Admin/CHANGELOG.md` que la premisa estaba vencida y, si el punto sigue vivo en parte, en el propio `Admin/TODO.md`. Una premisa vencida hace parecer la tarea más cara de lo que es y la deja al fondo de la lista: escribirlo avisa que otros puntos pueden estar igual.
+```
+
+En `CONVENCIONES.md` el bullet se reemplaza por una línea: «Cerrar un punto del TODO con una premisa vencida: skill `principal-finance-of-sports`.»
+
+**7.4 `CONVENCIONES.md`, el circuito «Onboarding solo carga / Antes de frenar un año, la Auditora» (`:56-80`).** No se mueve: es un reparto de permisos (quién puede tocar `tools/`, quién aprueba), o sea una regla que se consulta cuando una sesión duda de si puede hacer algo. El procedimiento de Onboarding (cómo anotar un frenado) ya está en `club-or-year-onboarding` (`:54`, `:83`, `:99`).
+
+### Qué NO es una skill ni vale mudar
+
+`CONVENCIONES.md`, «Índice de las reglas que viven en otro archivo» (`:156-201`): son 40 líneas de punteros con «Versión N»; no es ni regla ni procedimiento. Va a lo que dice 3.7 (dejar solo título y destino) o se borra entero: ninguna sesión llega a una regla por su número de versión.
+
+## 8. Regla de redacción de todo texto que va a una skill
+
+Los bloques «Texto exacto» de las partes 2, 3 y 7 describen cómo se trabaja hoy: sin fechas, sin versiones, sin números de to-do, sin «antes era», sin «ya no», sin «(decisión de Guido, …)». Un caso real que ilustra una regla se queda, sin la fecha ni la versión (por ejemplo «una línea real de televisión bajo `lump_football_operations`»). El chequeo `doc-de-criterio-con-historia` (aprobado, P3) lo vigila en `.claude/skills/*/SKILL.md` y `Admin/ESTADO.md`; se amplía a los bloques de `Admin/propuestas/` solo si la Auditora lo pide.
