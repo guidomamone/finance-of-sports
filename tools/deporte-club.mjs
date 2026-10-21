@@ -82,6 +82,8 @@ export function leerCategorias(deporte) {
 }
 // El bolsón «sin desglosar por la fuente» del deporte: { revenue, expense } (ids de subcategoría), o null si el deporte no tiene taxonomía o no declara bolsón.
 export function bolsonDeDeporte(deporte) { const l = taxonomias()[deporte]?.lump; return l ? { revenue: l.revenue, expense: l.expense } : null; }
+// La subcategoría de gasto de los sueldos del primer equipo (la que la taxonomía mapea a la genérica `first_team_staff`): wages_squad en fútbol, squad_wages en rugby. null si no hay.
+export function categoriaDeSueldos(deporte) { const e = taxonomias()[deporte]?.expense; return e ? (Object.keys(e).find((k) => e[k] === 'first_team_staff') || null) : null; }
 // ¿Esta categoría existe en la taxonomía del deporte del club? Sin taxonomía del deporte, no (nunca se asume que sí).
 export function categoriaValidaParaClub(clubId, categoria) {
   const c = categoriasDeDeporte(deporteODefecto(clubId)); return Boolean(c && c.todas.has(categoria));

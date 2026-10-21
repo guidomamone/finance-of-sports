@@ -78,6 +78,7 @@ import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_
 import { archivosData, rutaData } from './data-clubes.js';
 import { modificarClub } from './club-json.mjs'; // (to-do 245, fase 2) el JSON es la fuente de cada club
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
+import { categoriaDeSueldos, deporteODefecto } from './deporte-club.mjs'; // (to-do 339) la categoría de sueldos es la del deporte del club
 import { formaImposible } from './verify-numbers.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -1315,9 +1316,12 @@ async function partirFilaGlobal(clubId, d, res, { escribir }) {
   const fmt = (x) => { const [e, c] = Math.abs(x).toFixed(2).split('.'); return `${e.replace(/\B(?=(\d{3})+(?!\d))/g, '.')},${c}`; };
   const ajustesTxt = readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8');
   const cmds = [];
+  // (to-do 339) la categoría de los sueldos es la del deporte del club (wages_squad en fútbol, squad_wages en rugby)
+  const SUELDOS = categoriaDeSueldos(deporteODefecto(clubId));
+  if (!SUELDOS) { console.log(`  partir: el deporte de ${clubId} no tiene categoría de sueldos del primer equipo en su taxonomía; no decide`); return; }
   for (const x of res.filter((y) => y.valor != null && (y.real == null || coincide(y.real, y.valor)))) {
     const ls = (d.expenseLinesByYear || {})[x.anio] || [];
-    if (ls.some((l) => l.normalizedCategory === 'wages_squad')) { console.log(`  ${x.anio} partir: ya tiene wages_squad; no se parte`); continue; }
+    if (ls.some((l) => l.normalizedCategory === SUELDOS)) { console.log(`  ${x.anio} partir: ya tiene ${SUELDOS}; no se parte`); continue; }
     const glob = ls.filter((l) => (/^lump_.*_expense$/.test(l.normalizedCategory) || l.normalizedCategory === 'admin_general_expense') && Math.abs(l.amountNative) >= x.valor);
     if (glob.length !== 1) { console.log(`  ${x.anio} partir: ${glob.length} filas globales de gasto >= staffCost (${x.valor}); no decide`); continue; }
     const g = glob[0]; const pdf = x.md.replace(/\.md$/i, '.pdf');
@@ -1327,11 +1331,11 @@ async function partirFilaGlobal(clubId, d, res, { escribir }) {
     const etiq = /\s/.test(String(x.fila.etiqueta).trim()) || !x.fila.tabla ? String(x.fila.etiqueta).trim() : `${String(x.fila.etiqueta).trim()} — ${x.fila.tabla}`;
     const cita = `${x.fila.md.split('/').pop()} L${x.fila.linea}`;
     if (ajustesTxt.includes(`"pdf":${JSON.stringify(pdf)}`) && ajustesTxt.includes(`"etiqueta":${JSON.stringify(etiq)}`)) { console.log(`  ${x.anio} partir: ya tiene los ajustes`); continue; }
-    console.log(`  ${x.anio} partir: "${g.rawLabel}" ${fmt(Math.abs(g.amountNative) / x.factor)} -> ${fmt(resto)} + "${etiq}" ${fmt(x.fila.cifras[0])} (wages_squad, ${cita})`);
-    const mot = `caja-deuda.mjs --personal --partir (to-do 229): el año no tiene wages_squad y el costo de personal confirmado (staffCost, ${cita}) está dentro de "${g.rawLabel}"`;
+    console.log(`  ${x.anio} partir: "${g.rawLabel}" ${fmt(Math.abs(g.amountNative) / x.factor)} -> ${fmt(resto)} + "${etiq}" ${fmt(x.fila.cifras[0])} (${SUELDOS}, ${cita})`);
+    const mot = `caja-deuda.mjs --personal --partir (to-do 229): el año no tiene ${SUELDOS} y el costo de personal confirmado (staffCost, ${cita}) está dentro de "${g.rawLabel}"`;
     cmds.push([pdf, 'fila', '--valor', fmt(resto), '--etiqueta', `${g.rawLabel} (sin el costo de personal)`, '--lado', 'gasto', '--reemplaza', g.rawLabel, ...(lin ? ['--linea', String(lin)] : []), '--motivo', `${mot}: queda ${fmt(Math.abs(g.amountNative) / x.factor)} - ${fmt(x.fila.cifras[0])}`, '--evidencia', cita]);
     cmds.push([pdf, 'fila', '--valor', fmt(x.fila.cifras[0]), '--etiqueta', etiq, '--lado', 'gasto', ...(lin ? ['--linea', String(lin)] : []), '--motivo', `${mot}: el costo de personal va aparte`, '--evidencia', cita]);
-    cmds.push([pdf, 'categoria', '--valor', 'wages_squad', '--etiqueta', etiq, '--motivo', `${mot}: costo de personal -> wages_squad`, '--evidencia', cita]);
+    cmds.push([pdf, 'categoria', '--valor', SUELDOS, '--etiqueta', etiq, '--motivo', `${mot}: costo de personal -> ${SUELDOS}`, '--evidencia', cita]);
   }
   if (!escribir || !cmds.length) { if (cmds.length) console.log(`\n${cmds.length / 3} año(s) para partir. Agregá --escribir (escribe los ajustes; después: node tools/cargar.mjs "<pdf>" --desde-verificacion --reemplazar --escribir por año).`); return; }
   const { execFileSync } = await import('node:child_process');

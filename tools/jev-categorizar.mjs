@@ -265,7 +265,8 @@ async function listos() {
     const results = []; const faltan = []; const malas = [];
     await pool(uniqLabels, async (r) => {
       const base = { label: r.label, lado: r.lado || null, page: r.page, section: r.section };
-      if (deSesion) { const s = deSesion.get(nl(r.label)); if (!s) faltan.push(r.label); else if (sideOf(s.choice) === '?') malas.push(`${r.label} -> ${s.choice}`); else results.push({ ...base, choice: s.choice, confidence: s.confidence ?? null, origen: 'sesión' }); return; }
+      // (to-do 339) la respuesta de la sesión vale si existe en la taxonomía del deporte del club (no la del fútbol)
+      if (deSesion) { const s = deSesion.get(nl(r.label)); if (!s) faltan.push(r.label); else if (!criteriosDe(deporteODefecto(rj.club))?.lado[s.choice]) malas.push(`${r.label} -> ${s.choice}`); else results.push({ ...base, choice: s.choice, confidence: s.confidence ?? null, origen: 'sesión' }); return; }
       const guardada = SIN_CACHE ? null : cache.get(rj.club, r.lado, r.label);
       if (guardada) { desdeCache++; results.push({ ...base, ...guardada, desdeCache: true }); return; }
       const useSide = Boolean(r.lado);

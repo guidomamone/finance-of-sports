@@ -1399,16 +1399,19 @@ function checkCategorizacion(api) {
   for (const { clubId, year, ym, rev, exp } of clubYears(api)) {
     if (!exp.length && !rev.length) continue;
     const cat = c => exp.filter(l => l.normalizedCategory === c).reduce((s, l) => s + l.amountNative, 0);
+    // (to-do 339) los sueldos del primer equipo y el bolsón sin desglosar son los de la taxonomía del deporte del club (wages_squad / lump_football_operations_expense en fútbol)
+    const tx = api.SPORT_TAXONOMIES[(api.clubs[clubId] || {}).sport || 'futbol'] || api.SPORT_TAXONOMIES.futbol;
+    const SUELDOS = Object.keys(tx.expense).find(k => tx.expense[k] === 'first_team_staff'); const BOLSON = (tx.lump || {}).expense;
     // Un ejercicio placeholder tiene sus líneas en cero: no es que falten los sueldos,
     // es que no hay datos todavía. Solo se mira donde hay plata cargada.
-    if (sum(exp) !== 0 && cat('wages_squad') === 0 && cat('lump_football_operations_expense') === 0) {
-      add('P2', 'sin-salarios', `${ref(clubId, year)}: no hay ni una línea en 'wages_squad' ni un bolsón sin desglosar — todo club paga sueldos, probablemente quedaron enterrados en otra categoría`);
+    if (SUELDOS && sum(exp) !== 0 && cat(SUELDOS) === 0 && (!BOLSON || cat(BOLSON) === 0)) {
+      add('P2', 'sin-salarios', `${ref(clubId, year)}: no hay ni una línea en '${SUELDOS}' ni un bolsón sin desglosar — todo club paga sueldos, probablemente quedaron enterrados en otra categoría`);
     }
     // SUELDOS POSIBLEMENTE ESCONDIDOS (to-do 232 s): con el costo de personal del ejercicio ya leído de su nota (fiscalYearMeta.staffCost,
     // caja-deuda.mjs --personal), las líneas wages_squad suman menos de la mitad. Caso que lo motivó: PAOK, 42 M en "Αμοιβές τρίτων" del
     // cuadro de fútbol contra 9,2 M de costo de personal en la nota 17; un subagente lo notó leyendo, esto lo hace aparecer solo.
-    if (ym.staffCost > 0 && Math.abs(cat('wages_squad')) < ym.staffCost / 2) {
-      add('P2', 'sueldos-escondidos', `${ref(clubId, year)}: el costo de personal de la nota es ${ym.staffCost} y 'wages_squad' suma ${Math.abs(cat('wages_squad'))}: los sueldos pueden estar dentro de otra línea (caja-deuda.mjs --personal --partir, o la cola por renglón)`);
+    if (SUELDOS && ym.staffCost > 0 && Math.abs(cat(SUELDOS)) < ym.staffCost / 2) {
+      add('P2', 'sueldos-escondidos', `${ref(clubId, year)}: el costo de personal de la nota es ${ym.staffCost} y '${SUELDOS}' suma ${Math.abs(cat(SUELDOS))}: los sueldos pueden estar dentro de otra línea (caja-deuda.mjs --personal --partir, o la cola por renglón)`);
     }
     for (const [sec, lines, buckets, catchAll] of [
       ['Ingresos', rev, api.REVENUE_BUCKETS, 'Otros ingresos'],
