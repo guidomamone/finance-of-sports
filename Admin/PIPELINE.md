@@ -800,6 +800,10 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
   ingreso, financiero + y financiero −), siempre por línea.
 - Va acá lo que Guido decide forzar. NO va escrita en un documento (ningún script lo lee) ni en una respuesta de la cola (esa se ata al texto de la pregunta).
 
+### Rarezas del documento ya revisadas
+
+- `Admin/registros/rarezas.jsonl`, se agrega y se lista con `node tools/rarezas.mjs`: una errata del documento (fecha, nombre o cifra mal impresa) que alguien ya miró, con su línea del `.md`, el texto impreso, el veredicto y la cita (que nombra una línea, `L<n>`, o una página, `pág. <n>`). Cubre un hallazgo solo si es del mismo `.md`, a ±3 líneas, con el texto todavía ahí y si lo que cita el propio hallazgo (la cifra o el texto que marca) es lo registrado: otra cifra de la misma tabla, otra línea u otro texto se marca como siempre (Auditora 5). No decide qué valor se carga (eso es un ajuste o la cola). La leen `audit.js` (`coma-comida` no marca una línea cubierta; `rareza-sin-su-texto` P3 si una re-transcripción la movió), `auditoria.mjs --extractos` (el subagente la ve al final del extracto) y `cola.mjs` (al lado del caso cuyas líneas la cubren).
+
 ### Cola humana
 
 - Archivo: `Admin/registros/cola-revision.jsonl`. Se lee con `node tools/cola.mjs`.

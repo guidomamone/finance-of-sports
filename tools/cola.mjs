@@ -42,6 +42,7 @@ import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
+import { rarezasEnRango, describir } from './rarezas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 // COLA_ARCHIVO (variable de entorno) apunta a otro archivo: para probar las tools sin ensuciar la cola real.
@@ -358,6 +359,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       if (/^¿\s*Se\s+dejan?\s+afuera\b/i.test(String(c.que || ''))) console.log('      (en esta pregunta «sí» = queda AFUERA de la carga; «no» = se carga)');
       if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);
+      // una errata de esas líneas que alguien ya revisó (tools/rarezas.mjs): se dice al lado del caso, que igual pide su decisión (el valor a cargar)
+      if (c.lineas && c.md) for (const r of rarezasEnRango(c.md, c.lineas[0], c.lineas[1])) console.log(`      Rareza ya revisada: ${describir(r)}`);
       if (c.propuesta) console.log(`      Propuesta del sistema: ${c.propuesta}`);
     }
     console.log('');

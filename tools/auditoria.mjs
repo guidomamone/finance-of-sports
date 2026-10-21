@@ -45,7 +45,7 @@
 //   node tools/auditoria.mjs --extractos [--solo id:anio,id:anio] [--max N]
 //                                                    escribe en Generados/auditoria/<clubId>-<anio>.txt las partes de sus .md que
 //                                                    importan (informe del auditor, opinión, firma), con número de línea, para el
-//                                                    subagente; y Generados/auditoria/_lista.txt
+//                                                    subagente, y al final sus rarezas ya revisadas (tools/rarezas.mjs); y Generados/auditoria/_lista.txt
 //
 // QUÉ GENERA: data/auditoria/<país>.js (window.CLUB_AUDITORIA[clubId][anio] = { auditor, dictamen, continuidad, alcance?, fuente:{md,linea} })
 // y data/auditoria/_paises.js (window.AUDITORIA_PAISES, los países con archivo).
@@ -55,6 +55,7 @@ import { resolve, join } from 'node:path';
 import { execSync } from 'node:child_process';
 import { loadSite } from './datos-sitio.mjs';
 import { quien } from './quien.mjs';
+import { rarezasDe, describir } from './rarezas.mjs';
 import vm from 'node:vm';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -179,6 +180,9 @@ function extracto(mds) {
     let ant = -2;
     for (const j of [...marcas].sort((a, b) => a - b)) { if (j !== ant + 1) partes.push('…'); partes.push(`${j + 1}: ${ls[j]}`); ant = j; }
   }
+  // Las erratas de estos documentos que alguien ya revisó (tools/rarezas.mjs): el subagente no las vuelve a reportar (Goiás 2018, la fecha del pie).
+  const rs = mds.flatMap((md) => rarezasDe(md));
+  if (rs.length) partes.push('', '=== Rarezas ya revisadas de estos documentos (no volver a reportarlas) ===', ...rs.map(describir));
   return partes.join('\n');
 }
 
