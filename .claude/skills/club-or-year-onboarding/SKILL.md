@@ -83,6 +83,8 @@ especificación de las filas y las respuestas de categoría, y las tools arman l
 
 ## 4. Reglas de Guido
 
+- **Un criterio de datos no se le pregunta a Guido.** Si una carga trae una pregunta que no resuelven el documento, `Admin/CONVENCIONES-DATOS.md` ni `club-data-mapping` (un período raro, una temporada de la pandemia, un perímetro), va a la Auditora, que la resuelve con un precedente o con `votacion-de-criterios`. Mientras tanto el año queda donde lo manda la regla vigente (`documentos-parciales.txt`, la cola), sin pedirle ok a nadie. A Guido llega solo lo que la votación no resuelve.
+
 - **Un cambio por vez.** No mezclar varios arreglos en una tanda.
 - **Siempre escalera, nada de manta corta.** Cada arreglo es un escalón con UNA compuerta, la misma para todos; los escalones solo
   proponen. Nada de condiciones especiales por caso apiladas una arriba de otra. Un arreglo que rompe un caso que antes salía bien no
