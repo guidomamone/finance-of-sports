@@ -326,3 +326,11 @@ Todos van a la Auditora 4 (sección 7: qué dato lo motiva, cuánto cuesta, si y
 3. Lo aprobado se pega con Edit en `.claude/skills/` y los documentos; el hook de hoy pide el ok de Guido en cada escritura, y con el candado de la parte 5 ya instalado, lo exige commiteado.
 4. Con cada memoria ya cubierta se borra el archivo; `MEMORY.md` queda sin líneas.
 5. Primero el candado (parte 5, el chequeo más chico y el que protege el resto), después las skills.
+
+## Veredicto de la Auditora 4 (2026-10-21, detalle en `Admin/registros/auditoria-proceso.jsonl`)
+
+- **Aprobados:** `duda-resuelta-en-dudas` (P3; son 5 líneas, no 6), `registro-sin-lector` (P3), `doc-de-criterio-con-historia` (P3; 6 en ESTADO y 1 en club-sourcing), que `gasto.mjs` imprima el 15% de A2, `archivar-con-ok` (ask), `modelo-opus-con-ok` (ask).
+- **Con cambio:** `memoria-no-es-regla` es ask, no deny (una preferencia de trato con Guido es una memoria legítima); `medicion-sin-destino` cuenta como citado lo que una tool o `js/` nombra, y son 35 de 51 archivos de `Admin/mediciones/` sin citar: el commit que lo agregue los resuelve o los lista; `worktree-sin-permission-mode` es ask; `comandos-simples` ampliado es solo ask, midiendo cuántas veces dispara antes de pensar en deny.
+- **Candado de skills, con tres cambios:** coincidencia contigua (Edit: el `new_string` entero en un solo archivo de propuesta; Write: cada párrafo, con los de menos de 40 caracteres exentos); git exento de la regla de Bash (merge, checkout, restore, rebase, cherry-pick); medirlo antes con `git log -p` sobre los últimos cambios a `.claude/skills`.
+- **Rechazados:** que `mergear` frene sin flecha (ninguna nota existente la lleva: frenaría todos los merges; va como aviso, y primero el texto de `worktree.md` con el ok de Guido) y el paso de adelantar en `worktree.mjs` (no existe: el ff lo hace la principal a mano con git; la verificación `rev-list` queda en la skill principal).
+- Los matchers de `.claude/settings.json` los agrega la principal; Pipeline codea lo aprobado después.
