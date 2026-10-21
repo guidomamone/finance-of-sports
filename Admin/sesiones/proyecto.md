@@ -10,17 +10,22 @@
 
 ## Qué queda
 
-- Guido decide las 8 decisiones de la sección 5 del plan (cada una con recomendación). Después, la implementación en 4 pasos (sección 4,
-  "Orden de trabajo"), en una sesión sin lotes corriendo.
+- Guido decide las 14 decisiones de la sección 6 del plan (cada una con recomendación). Después, la implementación en 5 pasos (sección 4,
+  "Orden de trabajo"), en una sesión sin lotes corriendo; el último es Bath Rugby (sección 5), la prueba de punta a punta.
+- Bath: falta transcribir 2020-21 (Mistral, tope US$ 2) y volver a transcribir la pág. 22 de 2023-24. No se cargó nada.
 
 ## Para TODO, CHANGELOG y ESTADO (los escribe la principal)
 
-- TODO 248: el diseño está hecho (`Admin/mediciones/248-plan.md`); falta el ok de Guido a las decisiones de la sección 5 y la implementación.
+- TODO 248: el diseño está hecho (`Admin/mediciones/248-plan.md`); falta el ok de Guido a las decisiones de la sección 6 y la implementación, con Bath Rugby como prueba.
 - CHANGELOG: "248: diseño de la taxonomía genérica (category genérica + subcategory por deporte, esquema club-v2), en Admin/mediciones/248-plan.md".
 - ESTADO: nada deja de ser cierto todavía.
 
-## Hallazgo de paso (no se tocó)
+## Hallazgos de paso (no se tocaron)
 
+- Bath Rugby 2023-24 (`Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2023-24.md`, pág. 22, L1026-1050): el estado de resultados
+  quedó sin cifras (rótulos sí, números como "Teo / I> Ion / Im"). Hay que volver a transcribir esa página.
+- Bath Rugby, Strategic Report: el OCR se come la coma ("Central income 74" por 7,4 en 2023-24 L163; "44" por 4,4 en 2024-25 L206).
+  Ningún chequeo mira hoy la tabla del Strategic Report.
 - Hay 2 líneas de ingreso con categoría de gasto que no son las de Racing: Atlético Mineiro 2024 y 2025, "Custo de mercadorias e produtos
   (custo do manto vendido)", `admin_general_expense` con importe negativo en `revenue`. El plan las trata igual que las otras cruzadas
   (decisión 3); si son un costo cargado del lado del ingreso, es tema de la carga de ese club, no de esta tarea.
