@@ -260,3 +260,21 @@ Premier ~25 · LaLiga ~30 · Serie A ~5 · Bundesliga ~10 · Brasil ~60 · Argen
 
 ### Qué deja de ser cierto
 - Nada en ESTADO. En el TODO, el 339 queda con el paso 1 hecho.
+
+## Pipeline 11: to-do 339, las 4 condiciones codeadas (2026-10-20)
+
+### Qué cambió (para CHANGELOG)
+- `tools/deporte-club.mjs` (nuevo): deporte del club, categorías de su taxonomía, tabla de ceros por deporte (`CEROS_POR_DEPORTE`, rugby `[]`); `node tools/deporte-club.mjs` la chequea.
+- Jev y `categorizar-claude.mjs`: lista de categorías, texto del prompt y esquema por deporte; filtro de ejemplos contra la unión ingreso+gasto del deporte; ejemplos del mismo deporte antes que el país. `cargar.mjs`: `ladoDeCat` y la validación salen de la taxonomía del club; `cola.mjs --corregir-categoria` también.
+- `CATEGORÍA (prompt, <deporte>)` en CONVENCIONES-DATOS (validador de deporte e ids en `reglas-categoria.mjs`); las reglas de la tienda y del CVC se reescribieron sin ids de otro deporte (el prompt de fútbol cambia en esas dos frases).
+- Tabla de ceros única (`cargar.mjs`: aviso y reintento, preguntas de perfil, `cero-real`; `verificar.mjs`: `LADO_CERO`); `audit.js` `deporte-sin-tabla` (P2). Alta: deporte por ficha, liga, menciones; sin respuesta pregunta; `cargar.mjs` y `alta-club.mjs` ya no suponen fútbol.
+- Medido en fútbol: pedidos a Jev (1.000 en dos configuraciones) y a Claude (80) byte por byte iguales; `medir-cargar` (334 docs) y `medir-verificar` (62) sin diferencias; `audit.js` P0 0 · P1 0; altas de 45 carpetas: 44 idénticas.
+
+### Qué queda
+- Las 31 carpetas sin mención de fútbol: no todas salen por la liga. De las que darían alta, 5 (All Boys, Toros de Córdoba, Athens Kallithea, RKC Waalwijk, Baník Ostrava) quedan en `pregunta` de deporte; las demás salen por la liga o por la ficha (Corea, Estonia, Chequia). Decide la principal/Auditora 4.
+- Texto de los prompts de `localizar`, `extraer`, `perimetro-senales`, `caja-deuda`, `glosar-rubros` («clubes de fútbol»); `caja-deuda --personal --partir` crea `wages_squad`; `dentro-de-otro.mjs` (bolsón `lump_football`); `generate-club-pages.js` (JSON-LD `Soccer`); lista de deportes de `alta-claude.mjs`; `estadio-sponsor.mjs` para rugby; ligas de referencia de rugby. Skills: una frase en `club-data-mapping` (criterios del fútbol) con el texto a Guido antes.
+- Criterios de rugby en `categorizar-claude.mjs` (CRITERIOS) y descripciones de las subcategorías de rugby: contenido de Datos 4 / Bath.
+- Con Bath: `EJEMPLO-CATEGORÍA` de las dos reglas de Bath cuando `bath-gb` esté en `data/clubs.js`; el taxonomy `rugby-1` en `SPORT_TAXONOMIES` hace que `deporte-club.mjs` lo vea solo.
+
+### Qué deja de ser cierto en ESTADO
+- Nada del sitio. Las tools categorizan por el deporte del club (ver PIPELINE.md, «El pipeline sabe el deporte»).
