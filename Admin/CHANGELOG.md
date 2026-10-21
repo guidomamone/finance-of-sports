@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 879 — Informes sobre el fútbol inglés (2026-10-20) [332]
+
+- Nota `Admin/sourcing/Inglaterra/informes-futbol-ingles.md`: Deloitte ARFF 2026 trae por club ingresos, sueldos y resultado operativo de Premier y Championship (sirve para contrastar); State of the Game (IFR) y la UEFA dan solo agregados (contexto para Ligas). Ninguno completa clubes. Nada transcripto.
+
 ## Versión 878 — Etiquetas de Vålerenga por entidad y plan del 241 (2026-10-20) [241 · 334 · valerenga-no]
 
 - Vålerenga 2022 y 2023: cada renglón dice si es del AS o del Elite («AS · », «Elite · »); los números no cambian. ASSET_V 1524.

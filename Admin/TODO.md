@@ -36,7 +36,7 @@ Orden después de A (Guido, 2026-10-20): B entero, después C, después D. El 31
 * 259: material de difusión (después de 241)
 
 **C. Técnico (cuando haya tiempo; nada urgente)**
-* 332 (en marcha, Sourcing 2): buscar «The State of the Game» y otros informes parecidos sobre las finanzas del fútbol inglés, y ver para qué sirven: contrastar lo cargado, completar lo que falta y dar contexto en Ligas
+* 332: nota lista (`Admin/sourcing/Inglaterra/informes-futbol-ingles.md`); espera tu decisión de transcribir las tablas por club del Deloitte ARFF 2026 para contrastar lo cargado
 * 248: taxonomía genérica y subcategorías por deporte
 * 247 (en marcha, Pantallas 5: primero el diseño y el mockup, para tu ok): registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
