@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marca COVID: Comparar, Ligas y selector</title>
+<style>
+/* Mockup para aprobar DÓNDE va la marca COVID (la etiqueta ya aprobada, igual a .covid de css/styles.css) en Comparar, la página de una liga y el paso
+   de ejercicio del selector. Números tomados del sitio servido el 2026-10-21: Juventus (Comparar, US$ M, formato simplificado), Serie A 2021 (ranking de
+   ingresos, US$ M) y Flamengo (ejercicio calendario). Son los de ese día. */
+:root{
+  --azul:#0a2b5c; --azul-dark:#071d3f; --oro:#f2b705;
+  --bg:#f7f7f5; --card:#ffffff; --text:#1c1c1c; --muted:#6b6b6b; --border:#e3e3e0;
+  --green:#1b7a3d; --red:#b5372b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.45;padding:24px 16px 64px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1{font-size:22px;margin:0;color:var(--azul)}
+h2{font-size:17px;margin:0 0 4px;color:var(--azul)}
+h3{font-size:13px;margin:0 0 10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+p{margin:0}
+.nota{font-size:14px;color:var(--muted);max-width:820px}
+.decision{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;font-size:14px}
+.decision ol{margin:6px 0 0;padding-left:20px}
+.decision li{margin:4px 0}
+.seccion{display:flex;flex-direction:column;gap:12px}
+.lado{display:grid;grid-template-columns:minmax(0,1fr) 375px;gap:20px;align-items:start}
+.marco{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+.tel{width:100%;max-width:375px;min-width:0;border:1px solid var(--border);border-radius:16px;background:var(--bg);padding:12px}
+.tel .marco{padding:12px}
+.rot{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+
+/* La etiqueta, igual a la del sitio */
+.covid{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;line-height:1.5;padding:0 6px;border:1px solid var(--azul);
+  border-radius:4px;background:#eaf0fa;color:var(--azul);cursor:help;white-space:nowrap;vertical-align:1px}
+
+/* Comparar: los ejercicios de cada lado */
+.lados{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.lado-card{border:1px solid var(--border);border-radius:10px;padding:12px}
+.lado-cab{display:flex;align-items:center;gap:8px;font-weight:700}
+.lado-cab small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.crest{width:26px;height:26px;border-radius:50%;background:#111;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none}
+.anios{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.anio{border:1px solid var(--border);border-radius:6px;padding:4px 8px;font-size:13px;font-weight:600;background:var(--card);min-width:64px;text-align:left}
+.anio small{display:block;font-weight:400;font-size:10.5px;color:var(--muted)}
+.anio.on{border-color:var(--azul);background:#eaf0fa}
+.anio .covid{display:block;width:fit-content;margin-top:4px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{padding:7px 8px;border-bottom:1px solid var(--border);text-align:right}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12px;color:var(--muted);font-weight:600;vertical-align:bottom}
+th .cab-covid{display:block;margin-bottom:3px}
+.tot td{font-weight:700}
+.neg{color:var(--red)}
+
+/* Ligas: los ejercicios de la liga y el total */
+.pills{display:flex;flex-wrap:wrap;gap:6px;align-items:flex-start}
+.pill{border:1px solid var(--border);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;background:var(--card);text-align:center;min-height:36px}
+.pill.on{background:var(--azul);color:#fff;border-color:var(--azul)}
+.pill-c{display:flex;flex-direction:column;align-items:center;gap:3px}
+.sub{font-size:13px;color:var(--muted);margin-top:12px}
+.total{font-size:26px;font-weight:700;color:var(--azul);font-variant-numeric:tabular-nums}
+.rank{margin-top:12px;display:flex;flex-direction:column;gap:6px}
+.rk{display:grid;grid-template-columns:110px 1fr 70px;gap:8px;align-items:center;font-size:13.5px;font-variant-numeric:tabular-nums}
+.rk .barra{height:10px;background:var(--azul);border-radius:2px}
+.rk span:last-child{text-align:right}
+
+/* Selector: el paso de ejercicio */
+.arm-fila{border:1px solid var(--border);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:8px}
+.arm-anio{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+select{font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:var(--card);min-height:44px}
+.opciones{border:1px solid var(--border);border-radius:8px;background:var(--card);font-size:14px;width:240px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.opciones div{padding:6px 10px}
+.opciones div.sel{background:#eaf0fa}
+@media (max-width:760px){.lado{grid-template-columns:minmax(0,1fr)}.lados{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="seccion">
+  <h1>La marca COVID en Comparar, Ligas y el selector</h1>
+  <p class="nota">La etiqueta es la que ya está en Finanzas, sin cambios: «COVID» en azul del sitio, con el globo y el texto para lectores de pantalla. Este mockup decide solo
+  <strong>dónde</strong> va en las tres pantallas que quedaron para después. Regla de siempre: va donde se lee el ejercicio, una sola vez, y nunca cambia el ancho de lo que marca.</p>
+</header>
+
+<section class="decision">
+  <strong>Decisiones para Guido (recomiendo las tres como están dibujadas):</strong>
+  <ol>
+    <li><strong>Comparar:</strong> la etiqueta debajo del ejercicio elegido de cada lado (como en el card de Finanzas) y arriba del nombre en la cabecera de la tabla. No va en el gráfico ni en cada cifra.</li>
+    <li><strong>Ligas:</strong> la etiqueta debajo de la pastilla de cada temporada de la pandemia y al lado de la línea que dice qué ejercicio se está mirando. Hoy, en las 65 temporadas de liga afectadas, todos los clubes del ranking caen dentro de la pandemia, así que no va en cada fila. Si algún día una temporada mezcla clubes con y sin pandemia, la etiqueta pasa a las filas de esos clubes y sale de la pastilla.</li>
+    <li><strong>Selector:</strong> el desplegable del ejercicio es el nativo del teléfono y no admite una etiqueta: la opción dice «2021 · COVID» (o «2019/2020 · COVID» en un club que cierra a mitad de año) en texto, y después de elegirla la etiqueta aparece al lado del desplegable.</li>
+  </ol>
+</section>
+
+<!-- A · COMPARAR -->
+<section class="seccion">
+  <h2>A · Comparar</h2>
+  <p class="nota">Juventus 19/20 contra Juventus 23/24, en US$ M y formato simplificado.</p>
+  <div class="lado">
+    <div class="marco">
+      <div class="rot">Escritorio</div>
+      <div class="lados">
+        <div class="lado-card">
+          <div class="lado-cab"><span class="crest">J</span><div>Juventus<small>Italia · balance 19/20</small></div></div>
+          <div class="anios">
+            <div class="anio on">19/20<small>Balance</small><span class="covid" title="Ejercicio dentro de la pandemia de COVID-19">COVID</span></div>
+            <div class="anio">20/21<small>Balance</small><span class="covid" title="Ejercicio dentro de la pandemia de COVID-19">COVID</span></div>
+            <div class="anio">21/22<small>Balance</small></div>
+            <div class="anio">22/23<small>Balance</small></div>
+          </div>
+        </div>
+        <div class="lado-card">
+          <div class="lado-cab"><span class="crest">J</span><div>Juventus<small>Italia · balance 23/24</small></div></div>
+          <div class="anios">
+            <div class="anio">21/22<small>Balance</small></div>
+            <div class="anio">22/23<small>Balance</small></div>
+            <div class="anio on">23/24<small>Balance</small></div>
+            <div class="anio">24/25<small>Balance</small></div>
+          </div>
+        </div>
+      </div>
+      <table style="margin-top:16px">
+        <thead><tr><th>US$ M</th><th><span class="cab-covid"><span class="covid">COVID</span></span>Juventus 19/20</th><th>Juventus 23/24</th></tr></thead>
+        <tbody>
+          <tr><td>Comercial / Sponsors</td><td>180,6</td><td>171,9</td></tr>
+          <tr><td>Estadio</td><td>55,1</td><td>61,8</td></tr>
+          <tr><td>Derechos de TV</td><td>186,3</td><td>106,8</td></tr>
+          <tr><td>Venta de jugadores</td><td>192,6</td><td>36,6</td></tr>
+          <tr class="tot"><td>Ingresos totales</td><td>642,1</td><td>418,3</td></tr>
+          <tr class="tot"><td>Resultado del ejercicio</td><td class="neg">(100,4)</td><td class="neg">(213,3)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tel">
+      <div class="rot">375 px</div>
+      <div class="marco">
+        <div class="lado-cab"><span class="crest">J</span><div>Juventus<small>Italia · balance 19/20</small></div></div>
+        <div class="anios">
+          <div class="anio on">19/20<small>Balance</small><span class="covid">COVID</span></div>
+          <div class="anio">20/21<small>Balance</small><span class="covid">COVID</span></div>
+          <div class="anio">21/22<small>Balance</small></div>
+        </div>
+        <table style="margin-top:12px">
+          <thead><tr><th>US$ M</th><th><span class="cab-covid"><span class="covid">COVID</span></span>19/20</th><th>23/24</th></tr></thead>
+          <tbody>
+            <tr class="tot"><td>Ingresos</td><td>642,1</td><td>418,3</td></tr>
+            <tr class="tot"><td>Resultado</td><td class="neg">(100,4)</td><td class="neg">(213,3)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- B · LIGAS -->
+<section class="seccion">
+  <h2>B · La página de una liga</h2>
+  <p class="nota">Serie A, ejercicio 2021 elegido. Las pastillas 2020 y 2021 son las de la pandemia (los clubes italianos cierran el 30 de junio).</p>
+  <div class="lado">
+    <div class="marco">
+      <div class="rot">Escritorio</div>
+      <div class="rot" style="margin-bottom:6px">Ejercicio</div>
+      <div class="pills">
+        <span class="pill">2024</span><span class="pill">2023</span><span class="pill">2022</span>
+        <span class="pill-c"><span class="pill on">2021</span><span class="covid">COVID</span></span>
+        <span class="pill-c"><span class="pill">2020</span><span class="covid">COVID</span></span>
+        <span class="pill">2019</span><span class="pill">2018</span>
+      </div>
+      <p class="sub">La suma de los 13 de 20 clubes con balance 2021, más 6 estimados · en US$ <span class="covid">COVID</span></p>
+      <div class="total">≈ US$ 3.614 M*</div>
+      <div class="rank">
+        <div class="rk"><span>Juventus</span><span class="barra" style="width:100%"></span><span>569,2</span></div>
+        <div class="rk"><span>Inter</span><span class="barra" style="width:76%"></span><span>433,4</span></div>
+        <div class="rk"><span>AC Milan</span><span class="barra" style="width:55%"></span><span>310,3</span></div>
+        <div class="rk"><span>Atalanta</span><span class="barra" style="width:48%"></span><span>274,8</span></div>
+        <div class="rk"><span>Napoli</span><span class="barra" style="width:48%"></span><span>271,1</span></div>
+        <div class="rk"><span>AS Roma</span><span class="barra" style="width:47%"></span><span>269,2</span></div>
+      </div>
+    </div>
+    <div class="tel">
+      <div class="rot">375 px</div>
+      <div class="marco">
+        <div class="pills">
+          <span class="pill">2023</span><span class="pill">2022</span>
+          <span class="pill-c"><span class="pill on">2021</span><span class="covid">COVID</span></span>
+          <span class="pill-c"><span class="pill">2020</span><span class="covid">COVID</span></span>
+          <span class="pill">2019</span>
+        </div>
+        <p class="sub">13 de 20 clubes con balance 2021, más 6 estimados <span class="covid">COVID</span></p>
+        <div class="total">≈ US$ 3.614 M*</div>
+        <div class="rank">
+          <div class="rk"><span>Juventus</span><span class="barra" style="width:100%"></span><span>569,2</span></div>
+          <div class="rk"><span>Inter</span><span class="barra" style="width:76%"></span><span>433,4</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- C · SELECTOR -->
+<section class="seccion">
+  <h2>C · El paso «Elegí el ejercicio» del selector</h2>
+  <p class="nota">Flamengo cierra en diciembre: 2020 y 2021 son los de la pandemia. A la izquierda, el desplegable abierto (el texto de la opción es todo lo que el teléfono deja poner); a la derecha, ya elegido.</p>
+  <div class="lado">
+    <div class="marco">
+      <div class="rot">El desplegable abierto</div>
+      <div class="arm-fila">
+        <div class="lado-cab"><span class="crest" style="background:#c8102e">FL</span><div>Flamengo</div></div>
+        <div class="opciones">
+          <div>El más reciente</div>
+          <div>2023</div>
+          <div>2022</div>
+          <div class="sel">2021 · COVID</div>
+          <div>2020 · COVID</div>
+          <div>2019</div>
+        </div>
+      </div>
+    </div>
+    <div class="tel">
+      <div class="rot">375 px, ya elegido</div>
+      <div class="marco">
+        <div class="arm-fila">
+          <div class="lado-cab"><span class="crest" style="background:#c8102e">FL</span><div>Flamengo</div></div>
+          <div class="arm-anio"><select aria-label="Ejercicio de Flamengo"><option>2021 · COVID</option></select><span class="covid">COVID</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="decision">
+  <strong>Cómo cumple la guía de UX:</strong> la etiqueta de Comparar y de Ligas abre su globo con un toque o con Enter, y cierra con Escape. Dentro de un botón (la pastilla,
+  el ejercicio de Comparar) no se suma un segundo elemento enfocable: el globo se abre desde la etiqueta de la línea del ejercicio o de la cabecera. Ninguna etiqueta cambia el ancho de
+  lo que marca (va debajo o al lado). Cambiar de ejercicio no mueve la página. El texto «COVID» y el de lectores de pantalla pasan por <code>t()</code>.
+</section>
+
+</div>
+</body>
+</html>

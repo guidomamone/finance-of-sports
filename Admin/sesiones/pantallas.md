@@ -1,3 +1,21 @@
+# Sesión pantallas (Pantallas 7): mockup de la marca COVID en Comparar, Ligas y el selector (sin código)
+
+## Qué cambió (para CHANGELOG)
+- `Prototyping/Covid/mockup-2.html`: dónde va la etiqueta COVID ya aprobada en Comparar (debajo del ejercicio elegido de cada lado y arriba del nombre
+  en la cabecera de la tabla), en la página de una liga (debajo de la pastilla de cada temporada de la pandemia y al lado de la línea del ejercicio) y en
+  el paso de ejercicio del selector (la opción dice «2021 · COVID» en texto, y la etiqueta aparece al lado del desplegable después de elegir). Usa números
+  reales del 2026-10-21: Juventus 19/20 contra 23/24, la Serie A 2021 y Flamengo. Lo miré a escritorio y a 375 px, sin desborde. No se tocó `index.html`,
+  `js/` ni `css/`.
+- Hallazgo para la regla de Ligas: en las 65 temporadas de liga afectadas, todos los clubes del ranking caen dentro de la pandemia; no hay ninguna mixta.
+
+## Qué queda (para TODO)
+- El ok de Guido a las tres ubicaciones; después, el código, recorriendo `referencia/ux.md` antes de pedir el merge.
+
+## Qué deja de ser cierto en ESTADO
+- Nada.
+
+---
+
 # Sesión pantallas (Pantallas 7): guía de UX aplicada
 
 ## Qué cambió (para CHANGELOG)
