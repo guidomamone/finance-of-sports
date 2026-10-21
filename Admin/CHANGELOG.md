@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 906 — Bath Rugby, el primer club de otro deporte (2026-10-20) [248 · bath-gb · 340]
+
+- Bath Rugby (`bathrugby-gb`, Premiership Rugby) con sus 5 ejercicios, 2020-21 a 2024-25, cada uno con el resultado impreso; Rugby elegible en el selector y su liga en Ligas. `auditAll()`: 320 clubes, 3.718 checks, 0 no cierran. API ~US$ 0,51. Cinco reglas de categoría pasan a `CATEGORÍA (prompt, futbol)`. El personal de Bath queda sin separar (la nota no tiene rótulo). 248 cerrado.
+- Nuevo 340: la ruta relativa de `loadClubData` falla en `/liga/<id>` navegando desde la portada.
+
 ## Versión 905 — El pipeline sabe el deporte de cada club (2026-10-20) [339 · bath-gb]
 
 - Sin default de fútbol en ninguna tool: el deporte sale de la ficha, el registro de altas (`altas-club.jsonl`, regenerado) o se pregunta; `lote.mjs` corre el alta gratis también en `--sin-api`. Jev `--desde-sesion`, `--personal --partir`, los sueldos y las categorías de `audit.js` usan la taxonomía del deporte. `audit.js` prueba un club de muestra de otro deporte (`deporte-muestra`, P1). `worktree.mjs preparar` enlaza `tools/node_modules`. Fútbol idéntico en todo lo medido. Todo aprobado por Auditora 4. `Admin/PIPELINE.md`, «Un deporte nuevo»; skill de onboarding: carga de prueba para un deporte nuevo (ok de Guido). 339 cerrado.

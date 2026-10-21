@@ -31,7 +31,7 @@ el número de la izquierda es el orden de trabajo.
 * Lo que está en marcha va marcado en cada bloque.
 
 **C. Técnico**
-1. 248 (Datos 4, Opus): esquema 2.0, pantalla y pipeline por deporte listos; cargando Bath Rugby (lote 129)
+1. 340: tocar un club en /liga/<id> falla («No se pudieron cargar los datos») si se llegó navegando desde la portada: `loadClubData` pide `/liga/data/...` (index.html no tiene `<base href="/">`). Probablemente también en producción
 2. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 3. 249: API en dominio propio (el último de C; no construirla todavía)
 
@@ -63,8 +63,6 @@ el número de la izquierda es el orden de trabajo.
        Más casos (lote 84): Sporting 2002 a 2007, cuadro de gestión de los proveitos (columna de resultados reales, mismo total que
        el estado): cargado con 45 ajustes `fila` (TV, taquilla, abonos, cuotas, sponsors, royalties, UEFA y un resto).
 
-248. TAXONOMÍA GENÉRICA + SUBCATEGORÍAS POR DEPORTE (mejoras de proyecto, pedido de Guido 2026-10-16). Una capa genérica (ingresos y gastos operativos, deuda) y las subcategorías de cada
-   deporte debajo, para que wages_squad no quede como campo de primer nivel de una API. Sin otros deportes por ahora (Guido, 2026-10-20: no se transcribe más).
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
@@ -137,3 +135,6 @@ el número de la izquierda es el orden de trabajo.
 338. CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
    (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
    `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
+340. RUTA RELATIVA EN /liga/ (Datos 4, 2026-10-20). Con la ruta propia del 241, entrar a una liga desde la app y tocar un club cuyos datos
+   no estaban cargados falla: `loadClubData` arma una ruta relativa y, con la URL en `/liga/<id>`, pide `/liga/data/...` (404). Probado con Burnley.
+   Las páginas generadas tienen `<base href="/">`; `index.html` no. Arreglo de Pantallas; verificar también en producción.
