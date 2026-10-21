@@ -90,8 +90,9 @@ el número de la izquierda es el orden de trabajo.
 352. FUENTE Y CHEQUEO DE LO QUE VIENE EN XHTML (Guido, 2026-10-21). Un año convertido por `tools/xhtml-aarsrapport.mjs` tiene como original el
    XHTML y el PDF de ancla lo armamos nosotros: la página de fuentes y el `source` tienen que apuntar al XHTML publicado. Y como iXBRL trae
    los totales etiquetados, un chequeo que compare lo cargado con esos totales. Lo diseña la Auditora; lo codea Pipeline.
-353. ¿LOS BRITÁNICOS EN iXBRL? (Guido, 2026-10-21). Medir en Companies House cuántos clubes de `data/gb/` presentan cuentas en iXBRL y no en
-   PDF; si los grandes vienen así, se cargan sin transcribir. Medición gratis, sin código: `Admin/mediciones/companies-house-ixbrl.md`.
+353. LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21). Medido (`Admin/mediciones/companies-house-ixbrl.md`): los grandes presentan PDF; 9 de 36
+   clubes probados vienen en iXBRL (Nottingham Forest, Burnley y Bath Rugby, cargados; Plymouth, Bolton, Lincoln, Oxford, Peterborough e
+   Hibernian, no). Guido aprobó bajar los 3 de Forest, Burnley y Bath y probar una versión de `xhtml-aarsrapport.mjs` (Pipeline 13).
 354. DOS ARREGLOS DE TOOL QUE DEJÓ EL 257 (Orden 1, 2026-10-21; para Pipeline). (a) El paso `perfil-en-cola` de `cargar.mjs` no frena
    nunca una carga: un caso de perfil (socios, otros deportes) se contesta googleando el club (regla de club-or-year-onboarding, «La cola»).
    (b) `worktree.mjs mergear` avisa si un punto de «Qué queda» de la nota de sesión no termina con su flecha (`→ TODO n`, `→ regla`,
