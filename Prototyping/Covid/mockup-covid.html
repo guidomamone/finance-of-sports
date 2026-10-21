@@ -43,13 +43,11 @@ button{font:inherit;color:inherit;cursor:pointer}
 .dos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
 @media (max-width:760px){.dos{grid-template-columns:1fr}}
 /* LA MARCA: un estallido de historieta con COVID adentro. SVG inline, el texto es real (se puede seleccionar y lo lee el lector de pantalla). */
-.covid{display:inline-block;position:relative;line-height:0;outline-offset:3px;cursor:help;transform:rotate(-4deg)}
-.covid svg{display:block;width:100%;height:100%;overflow:visible}
-.covid .burst{fill:var(--boom);stroke:var(--boom-line);stroke-width:3;stroke-linejoin:round}
-.covid text{font:700 17px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;letter-spacing:1px;fill:var(--boom-txt);text-anchor:middle}
-.covid.s{width:66px;height:40px}
-.covid.m{width:62px;height:38px}
-.covid.l{width:74px;height:45px}
+/* La etiqueta de estado del sitio (patrón de .stat-tag): una palabra en mayúsculas chicas con espaciado, recuadro de 4 px, azul del sitio
+   por ser una condición del ejercicio. Sin inclinación, sin ícono, sin sombra. */
+.covid{display:inline-block;position:relative;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;line-height:1.5;
+  padding:0 6px;border:1px solid var(--azul);border-radius:4px;background:var(--azul-soft);color:var(--azul);cursor:help;outline-offset:2px;white-space:nowrap}
+.covid.l{font-size:11px;vertical-align:1px}
 .covid:focus-visible{outline:2px solid var(--oro)}
 .tip{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%) rotate(7deg);width:max-content;max-width:260px;background:var(--ink);color:var(--bg);
   border-radius:8px;padding:8px 10px;font:400 12.5px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;text-align:left;z-index:5;
@@ -59,12 +57,12 @@ button{font:inherit;color:inherit;cursor:pointer}
 .tamanos{display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap;padding:8px 4px 16px}
 .tamanos figure{margin:0;display:flex;flex-direction:column;align-items:flex-start;gap:6px;font-size:12.5px;color:var(--muted)}
 /* A: los cards de ejercicio de Finanzas */
-.cards{display:flex;gap:10px;overflow-x:auto;padding:32px 14px 10px 2px}
+.cards{display:flex;gap:10px;overflow-x:auto;padding:6px 14px 10px 2px}
 .fin-year{position:relative;flex:0 0 auto;min-width:88px;text-align:left;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:8px 12px;display:flex;flex-direction:column}
 .fin-year b{font-size:15px}
 .fin-year span.t{font-size:12px;color:var(--muted)}
 .fin-year.on{border-color:var(--azul);box-shadow:inset 0 0 0 1px var(--azul)}
-.fin-year .covid{position:absolute;right:-12px;top:-30px}
+.fin-year .covid{margin-top:5px;align-self:flex-start}
 /* B: la cabecera de la tabla de varios ejercicios */
 .tabla{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
 table{border-collapse:collapse;width:100%;min-width:520px;font-size:13.5px}
@@ -94,7 +92,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;ba
   <header class="sec">
     <div class="kick">Mockup · marca COVID · solo para aprobar, no hay nada implementado</div>
     <h1>La pandemia, marcada en el ejercicio</h1>
-    <p class="lede">La palabra «COVID» dentro de un recuadro con borde de estallido, pegada al ejercicio y no escrita en una nota. Aparece en todo ejercicio cuyo cierre cae entre el 31 de marzo de 2020 y el 31 de diciembre de 2021. Se deriva de la fecha de cierre que el sitio ya calcula para cada ejercicio (<code>cierreEjercicio()</code>): no hay campo nuevo. Los números son los reales de Juventus y de Atalanta.</p>
+    <p class="lede">La palabra «COVID» como una etiqueta de estado, igual a la de «PRESUPUESTO» que el sitio ya usa, pegada al ejercicio y no escrita en una nota. Rehecha con las guías de marca propuestas en <code>Admin/propuestas/marca-del-sitio.md</code>: sin estallido, sin inclinación, sin color nuevo. Aparece en todo ejercicio cuyo cierre cae entre el 31 de marzo de 2020 y el 31 de diciembre de 2021. Se deriva de la fecha de cierre que el sitio ya calcula para cada ejercicio (<code>cierreEjercicio()</code>): no hay campo nuevo. Los números son los reales de Juventus y de Atalanta.</p>
     <button class="tema" id="tema" type="button" aria-pressed="false">Ver en modo oscuro</button>
     <div class="nota"><b>Lo que hay que decidir.</b>
       <ol>
@@ -107,10 +105,10 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;ba
 
   <section class="sec">
     <div class="kick">1 · La marca</div>
-    <h2>Un estallido azul con COVID en blanco, en tres tamaños</h2>
+    <h2>Una etiqueta azul de 10,5 px, el mismo patrón que «PRESUPUESTO»</h2>
     <div class="card">
       <div class="tamanos" id="tamanos"></div>
-      <p class="lede">Conserva el recuadro con borde de estallido, pero sobrio: azul del sitio con la palabra en blanco y tipografía de sistema en negrita, sin cursiva ni contorno. Va apenas ladeada (4 grados). En modo oscuro se invierte: azul claro con la palabra en oscuro. Con el puntero, con el teclado (Tab) o al tocarlo, abre el globo con una línea que explica qué pasó.</p>
+      <p class="lede">Mayúsculas con espaciado, recuadro de 4 px, azul del sitio sobre azul muy claro (el azul marca una condición del ejercicio; el ámbar queda para un presupuesto o un estimado). Tipografía de sistema, derecha, sin sombra ni ícono. Con el puntero, con el teclado (Tab) o al tocarlo, abre el globo con una línea que explica qué pasó.</p>
     </div>
   </section>
 
@@ -122,7 +120,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;ba
     <div class="card">
       <h3>A · El card de cada ejercicio (el selector de años de Finanzas)</h3>
       <div class="cards" id="cardsJuve" role="group" aria-label="Ejercicios de Juventus"></div>
-      <p class="lede">La marca se pega a la esquina del card y sobresale un poco. No cambia el ancho del card ni empuja a los demás.</p>
+      <p class="lede">La etiqueta va como una línea más dentro del card, debajo de «Balance»: no tapa el año ni cambia el ancho. La fila entera suma esa línea de alto cuando hay un ejercicio COVID, igual que ya pasa con el borde punteado de un presupuesto.</p>
     </div>
 
     <div class="card">
@@ -195,7 +193,7 @@ function marca(tam) {
   s.tabIndex = 0;
   s.setAttribute('role', 'img');
   s.setAttribute('aria-label', ARIA);
-  s.innerHTML = '<svg viewBox="-4 -4 108 68" aria-hidden="true" focusable="false"><polygon class="burst" points="' + PUNTOS + '"></polygon><text x="50" y="39">COVID</text></svg><span class="tip" role="tooltip">' + TIP + '</span>';
+  s.innerHTML = 'COVID<span class="tip" role="tooltip">' + TIP + '</span>';
   s.addEventListener('click', (e) => { e.stopPropagation(); const ab = s.classList.contains('abierto'); document.querySelectorAll('.covid.abierto').forEach((x) => x.classList.remove('abierto')); if (!ab) s.classList.add('abierto'); });
   s.addEventListener('keydown', (e) => { if (e.key === 'Escape') { s.classList.remove('abierto'); s.blur(); } });
   return s;
@@ -214,7 +212,7 @@ function cards(el, datos, sel) {
     const b = document.createElement('button');
     b.type = 'button'; b.className = 'fin-year' + (sel.includes(y) ? ' on' : '');
     b.innerHTML = '<b>' + lab(y, end) + '</b><span class="t">Balance</span>';
-    if (enCovid(end)) b.appendChild(marca('s'));
+    if (enCovid(end)) { b.classList.add('con'); b.appendChild(marca('s')); }
     el.appendChild(b);
   });
 }

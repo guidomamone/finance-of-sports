@@ -51,8 +51,8 @@ El mismo sistema para todos (COVID, parcial, presupuesto, estimado, borrador, si
    para una marca informativa de un período o una condición del ejercicio (COVID, transición, parcial); gris (`--muted`) para «no hay» (sin publicar, sin dato).
    Rojo solo para un error. Una marca nueva reutiliza uno de estos; no inventa un color.
 3. **Ícono.** Solo si ayuda y es uno geométrico simple, de línea, del mismo trazo que los del sitio (la «i» del aviso, el «?» del globo). Sin emojis.
-4. **Dónde.** Pegada al dato que califica (al lado del año, de la cifra o de la columna), nunca en una franja aparte ni flotando sobre otra cosa. No cambia el ancho
-   ni la altura de lo que marca.
+4. **Dónde.** Pegada al dato que califica (al lado del año, de la cifra o de la columna), nunca en una franja aparte ni flotando sobre otra cosa. No tapa ni mueve el dato que
+   califica ni cambia el ancho de su contenedor (una línea más de alto en una fila de cards es aceptable).
 5. **Qué dice.** La etiqueta nombra el hecho; el detalle va en un globo (`js/info-tip.js`, `data-info-tip`) con una línea. El globo se abre con el puntero, el toque o el
    teclado.
 6. **Lectores de pantalla.** Toda marca tiene el mismo texto en un `aria-label` o `title` (en español y en inglés, por `t()`); nunca depende solo del color o de la forma.
