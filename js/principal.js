@@ -30,7 +30,7 @@
     // `?v=`: mismo ASSET_V que los <script src> estáticos. Sin esto, un visitante con un data file viejo cacheado seguiría viendo
     // números viejos después de un deploy que los corrigió.
     const base = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubs[clubId].country.toLowerCase() + '/' + clubId + '-data.js');
-    const src = base + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+    const src = fosUrl(base) + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
     clubDataPending[clubId] = new Promise((resolve, reject) => {
       const script = document.createElement('script');
       script.src = src;
@@ -687,6 +687,17 @@
     if(tab === 'sponsor' && window.SPONSOR_VIEW && SPONSOR_VIEW.current().sponsor) e.sponsor = SPONSOR_VIEW.current().sponsor;
     return e;
   }
+  // LOS LINKS RELATIVOS (fuentes.html, fuentes/<id>.html, correcciones.html…) se resuelven contra la URL de la barra, que en /club/<id> y /liga/<id>
+  // ya no es la raíz: se reescriben a absolutos al cargar y, para los que arma el JS después, justo antes de usarlos.
+  function absolutizarLink(a){
+    const h = a.getAttribute('href');
+    if(h && !/^([a-z][a-z0-9+.-]*:|\/|#|\?)/i.test(h)) a.setAttribute('href', fosUrl(h));
+  }
+  document.querySelectorAll('a[href]').forEach(absolutizarLink);
+  ['pointerdown', 'click', 'contextmenu', 'focusin'].forEach(ev => document.addEventListener(ev, e => {
+    const a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if(a) absolutizarLink(a);
+  }, true));
   // LA RUTA: Finanzas con un club es `/club/<id>` y Ligas con una liga `/liga/<id>` (páginas con su propia tarjeta al compartir); el resto
   // de las pestañas vive en `/`. Sin servidor http (file://) no se tocan las rutas y todo queda en la query.
   var CON_RUTA = /^https?:$/.test(location.protocol);

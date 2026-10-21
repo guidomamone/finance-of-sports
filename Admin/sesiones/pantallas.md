@@ -1,15 +1,17 @@
-# Sesión pantallas (Pantallas 6): to-do 340 reabierto, index.html por file://
+# Sesión pantallas (Pantallas 6): to-do 340 reabierto, index.html sin base ni rutas con «/»
 
 ## Qué cambió (para CHANGELOG)
-- El `<base href="/">` fijo de `index.html` rompía abrir el archivo directo desde el disco (`file:///css/styles.css`). Ahora lo escribe un script al principio del `<head>`
-  solo si el protocolo es http(s) y la página no trae ya su base: servido, `/liga/<id>` sigue cargando `data/` desde la raíz (to-do 340); por `file://` no hay base y las rutas
-  relativas siguen contra la carpeta de `index.html`. Las páginas generadas siguen con su `<base>` estático (el script queda después del `<head>` generado y no suma otro);
-  `tools/generate-club-pages.js` vuelve a escribirlo (revierte lo del 342). Verificado en el preview servido: portada → liga → Burnley, atrás y adelante, y `/club/boca-ar.html`
-  directo (una sola base). El caso `file://` NO se pudo probar en un navegador: el panel abre los archivos locales como una captura sin estilos y Claude in Chrome no estaba
-  conectado; solo se comprobó que la condición da falso para `file:` y que el archivo ya no tiene `<base>` fijo. Conviene que Guido abra el archivo una vez. ASSET_V 1563.
+- `index.html` va sin `<base>` y sin script que lo escriba. `js/i18n.js` calcula `FOS_RAIZ` desde la URL de su propio script (`<raíz>/js/i18n.js`) y expone `fosUrl(ruta)`;
+  lo usan todas las cargas dinámicas (club, ranking, estimados, idioma, contexto, auditoría, entidades, gestiones, grupo, sponsors, correcciones). Los links relativos
+  (`fuentes.html`, `fuentes/<id>.html`, `correcciones.html`) se reescriben a absolutos al cargar (`absolutizarLink()` en `js/principal.js`) y, los que arma el JS después,
+  justo antes de usarlos (pointerdown, click, contextmenu, focusin). Las páginas generadas siguen con su `<base>` estático (lo escribe el generador). Anda servido (también en
+  `/club/<id>` y `/liga/<id>`) y abierto como archivo, porque la raíz sale de la URL del script y no de la barra. Verificado servido: portada → liga → Burnley, atrás y adelante,
+  `/liga/gb-premierleague.html` directo a escritorio y 375 px (Brighton), y un link `fuentes/<id>.html` armado por JS da 200 tras el pointerdown. `node tools/audit.js`: 0 P0, 0 P1. ASSET_V 1564.
+- Sin probar: abrir `index.html` por `file://` en un navegador (el panel lo abre como captura sin estilos y Claude in Chrome no conectaba). Por construcción no hay ruta con `/` ni base:
+  `FOS_RAIZ` sale de `file:///…/js/i18n.js`. Conviene que Guido lo abra una vez.
 
 ## Qué queda (para TODO)
-- Que Guido confirme `file://` abriendo `index.html` desde el disco.
+- Que Guido confirme `file://`.
 
 ## Qué deja de ser cierto en ESTADO
 - Nada.

@@ -1,3 +1,7 @@
+// La raíz del sitio, calculada desde la URL de ESTE script (<raíz>/js/i18n.js): sirve servido (también en /club/<id> y /liga/<id>) y abierto
+// como archivo, sin <base> ni rutas con "/". `fosUrl('data/x.js')` es la ruta de cualquier archivo del sitio para una carga o un link armados en JS.
+window.FOS_RAIZ = window.FOS_RAIZ || (document.currentScript ? new URL('../', document.currentScript.src).href : '');
+window.fosUrl = window.fosUrl || function (ruta) { return window.FOS_RAIZ ? new URL(ruta, window.FOS_RAIZ).href : ruta; };
 // ============================================================================
 // js/i18n.js - Motor de traducción del sitio, que escala a N idiomas sin reescribir el sitio.
 //
@@ -107,7 +111,7 @@
     if (I18N.strings[code]) return Promise.resolve();
     if (I18N._loading[code]) return I18N._loading[code];
 
-    var base = window.I18N_BASE || '';
+    var base = window.I18N_BASE != null ? window.I18N_BASE : window.FOS_RAIZ;
     I18N._loading[code] = new Promise(function (resolve) {
       var s = document.createElement('script');
       s.src = base + 'data/lang/' + code + '.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
