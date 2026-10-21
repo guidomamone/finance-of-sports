@@ -35,7 +35,7 @@ el número de la izquierda es el orden de trabajo.
 5. 352 (Auditora 5, con lo que cargue Onboarding 8): decidir si el chequeo del iXBRL pasa de aviso a frenar
 6. 351 (Onboarding 8, después del 345): sueldos de 12 clubes británicos y de Instituto 2025, hoy adentro de una sola línea
 7. 350 (Auditora 5, al final de A): la tabla de cuántas veces queda en 0 cada fila del Formato simplificado; recién con eso Guido decide subsidios y donaciones y el proceso de revisión
-8. 257 (Orden 1): la parte 7, qué pasa de CONVENCIONES a skills (falta mostrarte el texto)
+8. 257 (Orden 1): los cuatro cabos sueltos (perfil-en-cola, Tolima, HALLAZGOS 314 y 298, el párrafo de Chrome headless)
 9. 356 (Onboarding 8 carga 67 británicos en iXBRL, tope US$3; Sourcing 4 baja el resto y los links daneses; Pipeline 13 arregla Plymouth y el freno de no pisar PDFs)
 
 **D. Orden de la casa**
@@ -59,18 +59,11 @@ el número de la izquierda es el orden de trabajo.
    api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
    (`Admin/fuentes-externas.md`, "Consecuencias").
-257. SKILLS QUE FALTAN Y DÓNDE SE PIERDE LO QUE SE DECIDE (une el 330; pedido de Guido 2026-10-16 y 2026-10-20). Propuestas de Orden 1, sin
-   aplicar: `Admin/propuestas/257-skills.md` (destino de cada memoria, texto de cinco skills nuevas, cambios a las existentes, candado de
-   skills) y `Admin/propuestas/330-donde-se-pierde.md` (seis tipos de pérdida con archivo y línea). Aplicadas con el ok de Guido las cinco skills nuevas
-   (deploy, producto y pantalla, contenido, contrato de datos, principal). Falta: los cambios a skills existentes (parte 3) con su ok;
-   llevar cada memoria a su lugar (parte 1); qué de CONVENCIONES pasa a skill (parte 7); la Auditora, para los chequeos; y lo que encontró sin dueño (que `perfil-en-cola` de `cargar.mjs` nunca frene; la duda de Deportes
-   Tolima, `dudas-por-club.md:201`, que frena su carga; HALLAZGOS de los descartes 314 y 298). Lo pedido originalmente: Producto/pantalla (mockup, ok, implementación, chequeo en celular; hoy mezclado en PANTALLA.md); contenido y
-   difusión (un año cargado → hilo o post con el dato verificado y el link a la fuente); contrato de datos/API (esquema público y qué lo
-   rompe); deploy/release (qué chequear antes de pushear y cómo verificar producción).
-   Además (Guido, 2026-10-20): lo que hoy se maneja con la memoria de la sesión principal (`~/.claude/projects/…/memory/`) pasa a una
-   skill, a una convención o a un chequeo; la memoria no es el lugar de una regla de trabajo. Repasar cada memoria y decidir a dónde va.
-   Y algo que cuide que un cambio de skill no se aplique sin que Guido haya visto el texto exacto (pasó tres veces el 2026-10-20: el texto
-   quedaba detrás del cuadro de pregunta). Por ejemplo, que el hook de skills exija el texto propuesto en un archivo de `Admin/` ya commiteado.
+257. LO QUE QUEDÓ SIN DUEÑO DEL RELEVAMIENTO DE SKILLS (une el 330). Aplicado: las cinco skills nuevas, las partes 1, 3 y 7 de
+   `Admin/propuestas/257-skills.md`, la memoria vaciada y el candado de skills del hook. Falta: (a) que `perfil-en-cola` de `cargar.mjs`
+   nunca frene (Pipeline); (b) la duda de Deportes Tolima, `dudas-por-club.md:201`, que frena su carga; (c) las líneas de
+   `Admin/HALLAZGOS-pipeline.md` de los descartes 314 (Stirling) y 298 x2; (d) el párrafo «Cómo verlo como archivo» (Chrome headless) de
+   `Admin/PANTALLA.md` podría ir a `producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md`, con texto para el ok de Guido.
 345. DOCUMENTOS EN MANO SIN CARGAR (Pruebas 1, 2026-10-21, revisando `ejercicio-sin-rastro`). Lista con rutas en `Admin/sesiones/pipeline.md`,
    «Revisión de la cola del chequeo»: Chapecoense 2019, FC Emmen 2020-21, FC Fredericia 2021-25, los 2025 daneses en XHTML (ESEF), SønderjyskE
    2023-24, Fredrikstad 2019-23, Sarpsborg 08 2009-11, Vålerenga 2024, Genoa 2024, Girona 2021-23, Lierse Kempenzonen 2022, RAAL 2020, Omonia 29is
