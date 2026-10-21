@@ -1,5 +1,5 @@
-# Sesión datos-sourcing (Sourcing 2) — to-do 332
+# Sesión datos-sourcing (Sourcing 3) — to-do 332, segunda vuelta
 
-**Qué cambió:** nota nueva `Admin/sourcing/Inglaterra/informes-futbol-ingles.md` (tabla de informes + recomendación). Dos PDFs bajados a esa carpeta para evaluar (no trackeados, sin transcribir): Deloitte ARFF 2026 y UEFA ECFIL 2025.
-**Qué queda:** decisión de Guido sobre transcribir las tablas 1 y 2 del ARFF (Premier y Championship por club) y bajar ediciones anteriores; bajar el PDF del IFR si se quiere. El 332 sigue abierto hasta esa decisión.
-**Qué deja de ser cierto:** nada en ESTADO. En TODO, el 332 pasa de «buscar» a «decidir qué transcribir».
+**Qué cambió:** `Admin/sourcing/Inglaterra/informes-futbol-ingles.md` reescrita: resumen de los tres informes ingleses (Deloitte ARFF 2026, UEFA ECFIL 2025, IFR State of the Game 2026), tabla de informes parecidos de otras ligas y una propuesta de sección de informes para Ligas. Los tres PDFs están bajados y transcriptos con Mistral (US$ 1,65) en esa carpeta; los `.md` no están ignorados por `.gitignore` y NO se commitearon (decidir si se ignoran: la regla vigente dice que no se trackean). Se commitearon la nota, esta nota y el log de Mistral.
+**Qué queda:** que Guido decida si abre una sección de informes o de noticias en Ligas. El 336 verifica, liga por liga, los informes de la tabla (Football Benchmark, LaLiga, EY, DFL sin abrir el PDF). Ediciones viejas de Deloitte sin bajar.
+**Qué deja de ser cierto:** en TODO, el 332 ya no espera «buscar» ni «transcribir»: espera la decisión de Guido sobre la sección. Nada en ESTADO.
