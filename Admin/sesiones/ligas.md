@@ -638,3 +638,20 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 5: correcciones y respuestas a Pipeline 13 (345 y faltantes), 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Corrección: de los tres años que dije que venían de un XHTML, solo SønderjyskE 2024 viene de un XHTML; Viborg 2025 y Silkeborg 2025 se cargaron de PDF. `fuente-xhtml-sin-url` da 1 P3 y 0 P1. La comparación del resultado iXBRL dio igual en los tres y se extiende como aviso a un año de PDF con un XHTML del mismo cierre en `Clubes/`.
+- `ejercicio-sin-rastro`: `audit.js` traduce el `fiscal_year` a la clave de temporada con la misma función que `faltantes-liga.mjs`; el desfase por calendario y por PDFs sin enlazar de `faltantes-desfasado` pasa de P1 a P3 (aprobado con tres casos de aceptación).
+
+### Qué queda (para TODO / datos y Guido)
+
+- Datos: completar `data/club-leagues/` de Girona 2021 a 2023 y Fredericia 2021 a 2025; corregir Burnley si es el único con la clave de liga corrida.
+- Guido: Lierse tiene dos ids vivos (`liersekempenzonen-be` y `liersesk-be`) para el mismo club; cambio de ids públicos.
+- Siguiente: el 350.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
