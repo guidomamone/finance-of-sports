@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 916 — Rugby en estadio y sponsor, prompts por deporte, chequeo de abrir como archivo (2026-10-21) [341 · bathrugby-gb]
+- `estadio-sponsor.mjs` acepta la ficha de rugby (`Infobox rugby team`); el sponsor de rugby sigue a mano. `gb-premiershiprugby` no entra a `SOLO_ESTADIO` (Auditora 4).
+- Los prompts de `localizar`, `extraer`, `perimetro-senales`, `caja-deuda` y `glosar-rubros` nombran el deporte del club (fútbol igual byte por byte); `lote.mjs` corre el alta antes de la primera lectura.
+- `audit.js` P1 `index-file-roto`: ningún `.html` de la raíz lleva `<base>` ni `src`/`href` propio con «/» (Auditora 4 aprobó; 0 hoy).
+- Diseño de cómo un alta propone una liga y un deporte nuevos, en `Admin/sesiones/onboarding.md` (sin codear, decide Guido).
+
 ## Versión 915 — La auditoría revisa también la memoria (2026-10-21) [257]
 
 - Skill `auditoria-finance-of-sports`, eje `docs`: revisa la memoria de la sesión principal (repetidos, y reglas que tendrían que ser skill, convención o chequeo) (ok de Guido). TODO 257: lo de la memoria pasa a skills, y algo que impida aplicar un cambio de skill sin que Guido vea el texto.

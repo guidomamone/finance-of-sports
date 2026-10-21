@@ -260,7 +260,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   con título, descripción y tarjeta al compartir; Netlify las sirve en `/club/<id>` y `/liga/<id>` y la app arranca en esa pestaña (`window.FOS_RUTA`).
   La dependencia de imágenes (`@resvg/resvg-js`) vive en `tools/package.json`: `cd tools && npm install` en una carpeta nueva.
 - Deporte de cada club: el pipeline lo lee de la ficha o del registro de altas (`tools/deporte-club.mjs`) y usa la taxonomía de ese deporte
-  (Jev, Claude, la carga, la verificación y `audit.js`); un club sin deporte se pregunta. Cómo sumar un deporte: `Admin/PIPELINE.md`, «Un deporte nuevo».
+  (Jev, Claude, la carga, la verificación y `audit.js`); un club sin deporte se pregunta. Cómo sumar un deporte: `Admin/PIPELINE.md`, «Un deporte nuevo». Los prompts de lectura nombran el deporte del club; `estadio-sponsor.mjs` lee la ficha de rugby (el sponsor de rugby va a mano).
 - `data/`: la fuente de cada club es `data/<país>/<clubId>.json` (dato abierto, esquema en `data/schema/club-v2.json`: cada línea con `category` genérica, derivada de `data/category-map.js`, y
   `subcategory` del deporte, tabla en `data/schema/taxonomy-football-1.json`; `club-v1.json` queda congelado); el sitio carga el
   `data/<país>/<clubId>-data.js`, que se GENERA desde el JSON (`tools/generar-data.mjs`; `--check` lo controla). Los

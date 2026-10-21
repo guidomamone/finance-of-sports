@@ -31,7 +31,7 @@ el número de la izquierda es el orden de trabajo.
 * Lo que está en marcha va marcado en cada bloque.
 
 **C. Técnico**
-1. 341 (Pipeline 12): quedan, de lo que Bath se hizo a mano, el estadio y sponsor de rugby, los textos de los prompts que dicen «fútbol», y el diseño de cómo un alta propone una liga y un deporte nuevos (decisión tuya)
+1. 341: queda tu decisión sobre el diseño de cómo un alta propone una liga y un deporte nuevos (en `Admin/sesiones/onboarding.md`, «Diseño de #5 y #14»), y un detalle menor del aviso `index-file-roto`
 2. 317 a 322: herramientas a probar (Supabase, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute)
 3. 249: API en dominio propio (el último de C; no construirla todavía)
 
@@ -139,7 +139,8 @@ el número de la izquierda es el orden de trabajo.
 338. CORRER TODAS LAS AUDITORÍAS (pedido de Guido, 2026-10-20). Después del 258, al cerrar D: correr cada auditoría del proyecto
    (`node tools/audit.js` completo, `?audit=1` con `auditAll()` y `verifyTieOuts()` en el sitio, `generar-data --check`, `estimar --check`,
    `generate-club-pages --check`, la skill `auditoria-finance-of-sports`) y mirar qué queda en P2 y P3 para decidir qué se arregla.
-341. LO QUE BATH SE HIZO A MANO (Datos 4, 2026-10-20). 12 defectos abiertos en `Admin/registros/frenados-por-script.jsonl` (alta sin liga ni
-   deporte nuevos, rehacer una página, subtotal sin rótulo, redondeo de nota a mano, registro de validar-bloques, estadio y sponsor de rugby,
-   fuente sin url, subir ASSET_V, reglas de fútbol al activar un deporte, alta que queda escrita, personal sin rótulo, caja por escala).
-   Pipeline los toma por impacto, con la Auditora.
+341. LO QUE BATH SE HIZO A MANO (Datos 4, 2026-10-20). Arreglados por script todos menos el alta que propone una liga o un deporte
+   nuevos (#5) y el aviso de reglas de fútbol al activar un deporte (#14): el diseño está en `Admin/sesiones/onboarding.md`, «Diseño de #5 y
+   #14». Propuesta: agregar una liga a un deporte activo lo aprueba la Auditora; activar un deporte, Guido. Abiertas para Guido: si un deporte
+   puede activarse con la liga de un solo club, y si el `tier` de rugby sigue la pirámide inglesa. No se suma `gb-premiershiprugby` a
+   `SOLO_ESTADIO` (Auditora 4). Menor: el número de línea del aviso `index-file-roto` se corre con comentarios HTML de varias líneas.
