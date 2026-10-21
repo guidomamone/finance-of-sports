@@ -199,6 +199,10 @@ Generados/Italia/Genoa/Genoa-bilancio-30.06.2024-individual.categorias.json (esc
 tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 0 (compuerta: año anterior): "3) danaro e valori in cassa" pág. 10 + "1) depositi bancari e postali" pág. 10
+```
+
 ### Liga
 
 ```text
