@@ -952,6 +952,10 @@ Los pendientes están en `auditorias/2026-10-04-clubes-pipeline.md` .
 
 ---
 
+## Links propios de club y liga (`tools/generate-club-pages.js`)
+
+Cada club y cada liga con ranking tiene su página: `club/<id>.html` y `liga/<id>.html` (la dirección pública es `/club/<id>` y `/liga/<id>`, con un rewrite 200 en `netlify.toml`). El generador toma `index.html` como plantilla y le pone `<head>` propio (título, descripción, canonical, Open Graph, JSON-LD, `<base href="/">`), `window.FOS_RUTA` y un bloque de texto visible sin JS (`#pagina-estatica`, se oculta cuando la app arranca). Los números salen del motor del sitio (`computeYearGeneric` + `toDisplayValue`) y de `data/rankings/`. Escribe también `sitemap.xml` (el único escritor) y la imagen de la tarjeta de cada página, `og/club/<id>.png` y `og/liga/<id>.png` (1200×630, tope 300 KB): un SVG armado por el generador y convertido con `@resvg/resvg-js` (dependencia de desarrollo en `tools/package.json`: `cd tools && npm install`; fuente Inter en `tools/fonts/`). `og/_hashes.json` guarda el hash del SVG de cada imagen: solo se renderiza la que cambió, y el hash va en el `og:image` (`?v=`). Sin `tools/node_modules` el generador solo falla si hay que renderizar alguna imagen. Corre en `GENERADORES` (`tools/generadores.mjs`) después de `generate-rankings`, así que cada carga lo regenera; `audit.js` corre `--check` (`club-pages-desfasado`, P1: página vieja, que falta o que sobra, título de más de 60 o descripción de más de 155 caracteres, sin canonical). `--muestra` genera solo el 10% de los clubes, para revisar a ojo. Un id de club renombrado suma el 301 `/club/<viejo>` en el bloque `ids-alias` (`renombrar-ids.mjs`).
+
 ## Decisiones tomadas por Guido
 
 1. Una fila categorizada con confianza menor a 0,80 no se carga sola: va a la cola.

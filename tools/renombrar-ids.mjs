@@ -154,8 +154,10 @@ const MARCA_I = '# ids-alias:inicio (lo escribe tools/renombrar-ids.mjs; no edit
 function bloqueRedirects(mapa) {
   const r = [];
   for (const [v, n] of Object.entries(mapa).sort(([a], [b]) => (a < b ? -1 : 1)))
-    for (const ext of ['.html', ''])
+    for (const ext of ['.html', '']) {
       r.push(`[[redirects]]\n  from = "/fuentes/${v}${ext}"\n  to = "/fuentes/${n}.html"\n  status = 301\n  force = true\n`);
+      r.push(`[[redirects]]\n  from = "/club/${v}${ext}"\n  to = "/club/${n}"\n  status = 301\n  force = true\n`); // to-do 241: el link propio del club (/club/<id>)
+    }
   return `${MARCA_I}\n${r.join('\n')}${MARCA_F}\n`;
 }
 

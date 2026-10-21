@@ -46,7 +46,6 @@ const SALIDA_INDICE = path.join(ROOT, 'fuentes.html');
 // Las páginas por club viven en `fuentes/<clubId>.html`. Las notas internas de sourcing no están ahí
 // (viven en `Admin/sourcing/<País>/`), así que en `fuentes/` no hay nada con qué colisionar.
 const DIR_CLUBES = path.join(ROOT, 'fuentes');
-const SALIDA_SITEMAP = path.join(ROOT, 'sitemap.xml');
 const BASE_URL = 'https://financeofsports.com';
 const CHECK = process.argv.includes('--check');
 
@@ -109,8 +108,7 @@ function notaPlegable(texto) {
 //   - `fuentes/<clubId>.html`, una por club, con SOLO sus documentos.
 //   - `fuentes.html`, que pasa a ser el ÍNDICE: nombre de cada club, cuántos
 //     documentos tiene y el link a su página. Sin contenido de fuentes adentro.
-//   - `sitemap.xml`, para que un buscador llegue a las páginas nuevas sin depender
-//     de que rastree el índice.
+//   - (el `sitemap.xml` lo escribe tools/generate-club-pages.js desde el to-do 241.)
 // La ganancia principal es la misma razón por la que `fuentes.html` existe (ver la
 // cabecera de este archivo): una URL propia es rankeable. Hasta acá los 41 clubes
 // compartían una sola, así que ninguno podía rankear por su nombre.
@@ -373,20 +371,8 @@ ${idx.join('\n')}
   </div>`,
   });
 
-  // --- sitemap ---
-  // SIN `<lastmod>` a propósito: una fecha que cambia todos los días haría que `--check`
-  // reporte "desactualizado" cada día aunque no cambie ningún dato, que es exactamente el
-  // bug que ya tuvo el footer de esta página (commit 411beaf). Un sitemap sin lastmod es
-  // válido: le dice al buscador qué URLs existen, que es lo que hace falta acá.
-  const urls = ['index.html', 'fuentes.html', 'metodologia.html', ...Object.keys(porClub).sort().map(id => `fuentes/${id}.html`)];
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<!-- GENERADO por tools/generate-fuentes-page.js. No editar a mano. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url><loc>${BASE_URL}/${u}</loc></url>`).join('\n')}
-</urlset>
-`;
-
-  return { indice, porClub, sitemap };
+  // El sitemap lo escribe tools/generate-club-pages.js (to-do 241): dos escritores se pisan.
+  return { indice, porClub };
 }
 
 // La fecha del footer cambia todos los días: comparar sin ella, si no `--check` daría
@@ -397,7 +383,7 @@ const sinFecha = s => String(s).replace(/Generado desde los datos del sitio el<\
 
 function main() {
   const api = cargar();
-  const { indice, porClub, sitemap } = construir(api);
+  const { indice, porClub } = construir(api);
 
   if (!fs.existsSync(DIR_CLUBES)) fs.mkdirSync(DIR_CLUBES, { recursive: true });
 
@@ -413,7 +399,6 @@ function main() {
 
   const objetivos = [
     { abs: SALIDA_INDICE, rel: 'fuentes.html', nuevo: indice },
-    { abs: SALIDA_SITEMAP, rel: 'sitemap.xml', nuevo: sitemap },
     ...Object.keys(porClub).sort().map(id => ({
       abs: path.join(DIR_CLUBES, `${id}.html`), rel: `fuentes/${id}.html`, nuevo: porClub[id],
     })),
@@ -425,7 +410,7 @@ function main() {
   });
 
   if (!desactualizados.length && !huerfanas.length) {
-    console.log(`fuentes.html, sus ${Object.keys(porClub).length} páginas de club y sitemap.xml ya están al día.`);
+    console.log(`fuentes.html, sus ${Object.keys(porClub).length} páginas de club ya están al día.`);
     return;
   }
 
@@ -440,7 +425,7 @@ function main() {
 
   for (const o of desactualizados) fs.writeFileSync(o.abs, o.nuevo, 'utf8');
   for (const n of huerfanas) fs.unlinkSync(path.join(DIR_CLUBES, n));
-  console.log(`Generado: fuentes.html (índice), ${Object.keys(porClub).length} páginas de club, sitemap.xml. ${Object.keys(api.sources).length} documentos en total.${huerfanas.length ? ` Borradas ${huerfanas.length} páginas huérfanas.` : ''}`);
+  console.log(`Generado: fuentes.html (índice), ${Object.keys(porClub).length} páginas de club. ${Object.keys(api.sources).length} documentos en total.${huerfanas.length ? ` Borradas ${huerfanas.length} páginas huérfanas.` : ''}`);
 }
 
 main();

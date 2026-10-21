@@ -793,6 +793,7 @@ function checkRutasMuertas() {
 const GENERADORES = [
   ['generate-rankings.js',      'data/rankings/',                      'rankings-desfasado'],
   ['generate-fuentes-page.js',  'fuentes.html y sus páginas de club', 'fuentes-desfasada'],
+  ['generate-club-pages.js',    'club/, liga/ y sitemap.xml (links propios con tarjeta, to-do 241)', 'club-pages-desfasado'],
   ['generate-club-index.js',    'Admin/ESTADO-clubes.md (generado)',         'club-index-desfasado'],
   ['generate-fuentes-index.js', 'el índice de Admin/sourcing/README.md',    'fuentes-indice-desfasado'],
   ['faltantes-liga.mjs',        'data/faltantes/ y Admin/sourcing/pendientes.md', 'faltantes-desfasado'], // to-do 266: cambia con cada carga y cada sourcing
