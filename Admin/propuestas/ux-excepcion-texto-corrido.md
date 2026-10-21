@@ -15,5 +15,14 @@ excepción decidida, justo debajo de la de las etiquetas de estado, en «4. Toqu
   Un link solo en su párrafo sí llega a 44, sin mover el texto. Una auditoría `ux` no los marca.
 ```
 
+Con el ok (Guido: «si, excepcion»), el caso del área mínima cambia su segunda frase («Hoy todavía quedan chicos en Inicio…», que el 361 resolvió) por
+el caso de los links en texto corrido. Reemplaza las dos líneas que empiezan en `*Caso:* en la página de una liga, el nombre de cada club medía 17 px`:
+
+```markdown
+  *Caso:* en la página de una liga, el nombre de cada club medía 17 px de alto; ahora la fila mide 44 y el botón la cubre entera. Los atajos y las filas
+  de los rankings de Inicio, «Elegí un club» y «Entrar con Google» medían entre 32 y 38 y ahora miden 44. Los dos links de la atribución de Wikipedia de
+  una liga («2024–25 Serie A» y «CC BY-SA 4.0», en renglones seguidos) quedan en su tamaño: son texto corrido (excepción de abajo).
+```
+
 Si Guido prefiere lo contrario (que también lleguen a 44), la alternativa es subir el interlineado de esos párrafos en el teléfono a unos 44 px por
 renglón, solo cuando tienen más de un link.
