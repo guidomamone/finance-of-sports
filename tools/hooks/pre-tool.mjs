@@ -224,8 +224,21 @@ function rsyncSinNoLinks(cmd) {
   }
 }
 
+// Un `mv <origen> <destino>` cuyo destino todavía no existe es un renombre: no pisa nada, así que no borra un PDF. Solo pasa si TODOS los
+// mv del comando son así y no hay rm, unlink, trash ni -delete; con flags, más de dos argumentos o un destino existente, sigue preguntando.
+function soloRenombres(cmd) {
+  if (/\b(rm|unlink|trash)\s|\s-delete\b/.test(cmd)) return false;
+  const ARG = String.raw`("[^"]*"|'[^']*'|[^\s;&|"']+)`;
+  const mvs = [...cmd.matchAll(new RegExp(String.raw`(?:^|[;&|]\s*)mv\s+([^;&|]*)`, 'g'))];
+  if (!mvs.length) return false;
+  return mvs.every((m) => {
+    const args = [...m[1].trim().matchAll(new RegExp(ARG, 'g'))].map((a) => a[1].replace(/^["']|["']$/g, ''));
+    return args.length === 2 && !args[0].startsWith('-') && !existsSync(args[1]);
+  });
+}
+
 function pdfsConOk(cmd) {
-  const borraEnClubes = /\bClubes\b/.test(cmd) && /\b(rm|unlink|trash|mv)\s|\s-delete\b/.test(cmd);
+  const borraEnClubes = /\bClubes\b/.test(cmd) && /\b(rm|unlink|trash|mv)\s|\s-delete\b/.test(cmd) && !soloRenombres(cmd);
   const gitCleanIgnorados = GIT_SUB('clean').test(cmd) && /\s-\w*[xX]/.test(cmd);
   if (borraEnClubes || gitCleanIgnorados) {
     decidir('ask', 'Esto puede borrar PDFs de Clubes/. No se trackean y no hay copia de dónde recuperarlos: ¿Guido lo pidió y se chequearon '
