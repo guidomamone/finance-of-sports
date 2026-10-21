@@ -573,3 +573,19 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 5: séptima corrida, `gestion-club-inexistente`, y la consulta de Pipeline 13 sobre el PSE, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Dos líneas más en `Admin/registros/auditoria-proceso.jsonl`. (1) `codigo_tratado: gestion-club-inexistente`, antes 26 y después 5: real y aceptado. Son clubes de Colombia (3), República Checa (5), Dinamarca (1), Noruega (10) y Turquía (7) con las gestiones cargadas antes que el balance; ninguno es un id mal escrito (344 clubes cargados mirados). (2) Consulta de Pipeline 13 sobre el consolidado PSE de FC København 2025 en `xhtml-aarsrapport.mjs`: aprobados el alineador óptimo como escalón y el span absoluto como línea (0 cambios en los otros 46 XHTML); el piso del 98 % no se baja, se aplica a las líneas con cifras no cubiertas por la compuerta (a), y las sin ubicar llevan «pág. ?». Falta que Pipeline 13 mida que las 14 líneas sin ubicar estén cubiertas.
+
+### Qué queda (para TODO / una sesión Pipeline)
+
+- `tools/audit.js` (`checkGestiones`, línea 1583): una línea P3 por país («N clubes con gestión y sin balance: …») y un P1 `gestion-id-sospechoso` si un id sin balance comparte país y los primeros cinco caracteres del slug con un club cargado. Mide: `gestion-club-inexistente` antes 26 y después 5, 0 P1, con el resto de la salida idéntico. No toca datos ni silencia nada.
+- Pipeline 13 trae el número de las 14 líneas antes de codear el piso del PSE.
+- Próxima corrida: por tamaño, `ejercicio-sin-rastro` (P3, ~23; esperar su cambio), `escala-implausible` (P3, 5), `salto-interanual` (P2, 5); re-medir con `node tools/audit.js --json` antes de elegir.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
