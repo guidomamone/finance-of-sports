@@ -1,0 +1,97 @@
+{
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.md",
+ "generatedAt": "2026-10-21T02:17:11.075Z",
+ "rubrosHuella": "f1afeea150228b0c912e5175656c2dd504b7e349",
+ "rubros": [
+  {
+   "label": "Central income",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "central_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "gate_receipts",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Commercial activities",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "commercial_activities",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "CVC income",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 6,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Diferencia en el documento",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Miscellaneous other operating income",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Other revenue",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "lump_rugby_operations_expense",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 19,
+   "section": "estado",
+   "choice": "lump_rugby_operations_expense",
+   "confidence": 0.5,
+   "origen": "sesión"
+  }
+ ]
+}

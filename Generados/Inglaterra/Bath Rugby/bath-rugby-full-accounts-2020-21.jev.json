@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md",
+ "generatedAt": "2026-10-21T02:17:10.088Z",
+ "rubrosHuella": "b343602eb87fdfd744d76bfb64dc7fc4ea759f4d",
+ "rubros": [
+  {
+   "label": "Turnover",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "lump_rugby_operations",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Fair value movements",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "lump_rugby_operations_expense",
+   "confidence": 0.5,
+   "origen": "sesión"
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 11,
+   "section": "estado",
+   "choice": "lump_rugby_operations_expense",
+   "confidence": 0.5,
+   "origen": "sesión"
+  }
+ ]
+}
