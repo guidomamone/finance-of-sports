@@ -556,3 +556,20 @@ Hoy la skill no dice cómo se aprueba o rechaza una condición nueva en las tool
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+## Auditora 5: informes daneses en XHTML (to-do 345): la fuente y el chequeo iXBRL, 2026-10-21
+
+### Qué cambió (para CHANGELOG)
+
+- Dos veredictos en `Admin/registros/auditoria-proceso.jsonl`, sin codear. (1) **Fuente:** aprobado un chequeo `fuente-xhtml-sin-url` en `audit.js` (P3, y P1 si la url termina en `.pdf` o empieza con `Clubes/`). Hoy ninguna de las 16 fuentes danesas tiene url y ninguna página de `fuentes/` ni JSON apunta a nuestro PDF de ancla, así que no se publica la impresión como si fuera el original; lo que falta es poner la url del depósito oficial (Virk o el club) en los años que vinieron de XHTML. Mide: 3 P3 (SønderjyskE 2024, Silkeborg 2025, Viborg 2025). (2) **Chequeo iXBRL:** aprobado como aviso, a frenazo con 10 años medidos. Compara el `ProfitLoss` del ejercicio con `official_totals.net_result`: 3 de 3 iguales. Los ingresos no se comparan por igualdad (`Revenue` es la cifra de negocios; lo cargado suma otros ingresos).
+
+### Qué queda (para TODO / una sesión Pipeline 13 y Onboarding 8)
+
+- Pipeline 13: codear las dos condiciones con el texto exacto del registro. La del resultado: contexto por fechas y sin dimensiones (no «el primero»), nombre local sin prefijo, escala, signo y formato, tolerancia de medio `decimals`, solo contra el XHTML del mismo cierre (el «PSE-consolidado» de FC København es otro perímetro), ingresos solo si lo cargado es menor que `Revenue`. La de la fuente: `fuente.mjs --url` ya existe; falta el chequeo y que `fuentes/` diga «Informe oficial en formato XHTML (iXBRL)» cuando no hay url.
+- Onboarding 8: al cargar los daneses con XHTML, poner la url del depósito en cada fuente y reportar a Pipeline 13 cuántos años dan el aviso del resultado; con 10 años de varios clubes (ÅRL e IFRS, con consolidados y minoritarios que hoy no se midieron) en cero falsos frenos, vuelve a la Auditora para pasar a frenazo.
+- Cobertura medida en los 47 XHTML de `Clubes/Dinamarca`: `ProfitLoss` en 46, `Revenue` en 22, `GrossProfitLoss` en 25; Brøndby 2025 no trae ningún hecho.
+- Próxima corrida: `gestion-club-inexistente` (P3, 26).
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
