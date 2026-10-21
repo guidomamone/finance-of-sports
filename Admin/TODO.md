@@ -96,7 +96,9 @@ el número de la izquierda es el orden de trabajo.
 356. CARGAR LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21: «carguemos iXBRL»). Sourcing busca en Companies House los clubes que no tenemos y
    presentan en iXBRL (Plymouth, Bolton, Lincoln, Oxford, Peterborough, Hibernian y el resto de League One, League Two y Escocia) y baja los
    últimos 5 años; Onboarding los carga con `tools/xhtml-aarsrapport.mjs` (sin transcribir). Presupuesto: Guido dijo que sí (2026-10-21);
-   tope de US$3 para la categorización, con ensayo gratis antes.
+   tope de US$3 para la categorización, con ensayo gratis antes. Relevado (`Admin/sesiones/datos.md`): 54 de 68 sociedades tienen iXBRL en
+   los últimos 5 años (22 en los 5). Se bajan las cuentas completas de los últimos 3 cierres (69 archivos, 45,5 MB, dentro del tope de 50 MB);
+   el resto (cuentas pequeñas y años anteriores, hasta 84 MB) espera el ok de Guido.
 353. LOS BRITÁNICOS EN iXBRL (Guido, 2026-10-21). Medido (`Admin/mediciones/companies-house-ixbrl.md`): los grandes presentan PDF; 9 de 36
    clubes probados vienen en iXBRL (Nottingham Forest, Burnley y Bath Rugby, cargados; Plymouth, Bolton, Lincoln, Oxford, Peterborough e
    Hibernian, no). Probado con Forest, Burnley y Bath: `xhtml-aarsrapport.mjs` ya lee el iXBRL británico sin cambios y el `.md` cierra contra
