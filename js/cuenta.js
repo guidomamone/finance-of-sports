@@ -167,7 +167,7 @@
           if (!res.status || res.status >= 500) showUnavailable();
           return;
         }
-        // Una búsqueda guardada con un id de club viejo (to-do 246) se lee con el id de hoy.
+        // Una búsqueda guardada con un id de club viejo se lee con el id de hoy.
         renderList((res.data || []).map(function (row) { if (window.resolverClubIds) row.state = window.resolverClubIds(row.state); return row; }));
       });
   }

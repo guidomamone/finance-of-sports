@@ -870,7 +870,7 @@ function checkRutasMuertas() {
   // UNA RUTA GITIGNOREADA NO CUENTA (Versión 200). Su presencia no es una propiedad
   // del repo sino de ESTE checkout: `Clubes/Argentina/River/estados-contables-leads/`
   // (la fuente no oficial, que se guarda y no se trackea) está en el árbol principal y
-  // NO en un worktree recién creado, así que `data/ar/river-data.js` citándola daba
+  // NO en un worktree recién creado, así que el data file de River citándola daba
   // hallazgo en un lado y no en el otro. Peor que ruidoso: empujaba a "arreglar" el
   // comentario de un archivo de club que estaba bien. Lo destapó el worktree de
   // sourcing, que nace sin ninguno de los 2881 PDFs ni de los archivos ignorados.
