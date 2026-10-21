@@ -57,6 +57,21 @@ Hecho (audit.js, un commit por chequeo; funciones nuevas junto a `checkRutasMuer
 
 Al mergear: si Pantallas 7 también subió ASSET_V, queda un conflicto trivial en `index.html` y en las páginas generadas: tomar el mayor +1 y correr `generate-fuentes-page.js` y `generate-club-pages.js`.
 
-Pendiente (espera el ok de Guido, tocan permisos): hook C-1 a C-6 en `tools/hooks/pre-tool.mjs` y `Agent|EnterPlanMode` en el matcher de `.claude/settings.json`. Si Guido no los aprueba, el 327 se puede borrar de TODO con C-1 a C-6 como punto nuevo.
+(Los hooks C-1 a C-6 quedaron hechos: ver abajo.)
 
 Deja de ser cierto: nada en ESTADO. Cambia el conteo de P3 de `audit.js` (+4).
+
+### 327: hooks (ok de Guido: «327 do it»)
+
+En `tools/hooks/pre-tool.mjs`, un commit por freno (C-3 y C-4 juntos: comparten `estaEnWorktree()`), cada uno probado con un caso que frena y otro que pasa:
+- C-1 `comandos-simples` (deny): `/tmp` suelto, `cd … &&`/`;`, `$(…)`, `${…}`, `$VAR` fuera de comillas simples. Pasan el scratchpad (`/private/tmp/claude-501/`), el mensaje de `git commit -m "…"` y el heredoc `$(cat <<'EOF' … EOF)`.
+- C-2 `subagente-con-regla` (deny): `Agent`/`Task` cuyo prompt no diga «Bash» y «sin variables»; el mensaje trae la frase para pegar.
+- C-3 `plan-en-worktree` (deny): solo `EnterPlanMode` en un worktree; el Exit pasa.
+- C-4 `merge-en-worktree` (deny): `git merge`/`pull` en un worktree; pasan `merge-tree`, `merge-base` y `--abort`.
+- C-5 `no-importar-tools` (deny): import()/require() de `tools/` en `node`, salvo `data-clubes.js` y `rutas.mjs`.
+- C-6: `rsync -a` sin `--no-links` (deny); `mv` sobre `Clubes/` entra en `pdfs-con-ok` (ask, como `rm`, no deny: mover PDFs es parte del onboarding).
+- `.claude/settings.json`: el matcher suma `Agent|Task|EnterPlanMode`.
+
+Medido, reproduciendo el hook sobre una muestra de 1.477 de los 32.489 comandos Bash y 358 de los 1.432 Agent de las sesiones del proyecto (histórico, incluye sesiones anteriores a las reglas): Bash frenados ~37% (`$`/`${` 253, `cd &&` 223, `/tmp` 20, merge/pull 21 si fuera worktree, import de tools 12, rsync 2); Agent frenados 357 de 358 (casi ningún prompt viejo traía la frase). No se silenció ninguno. Revisadas a ojo 13 denegaciones de `$`/`cd`: todas legítimas.
+
+Deja de ser cierto: nada en ESTADO. Borrar el 327 de TODO. `Admin/PIPELINE.md` no describe el hook (su cabecera sí): sin cambios.
