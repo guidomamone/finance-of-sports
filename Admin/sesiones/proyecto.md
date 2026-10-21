@@ -191,3 +191,18 @@ lo resuelve y regenera (hay que regenerar también `data/rankings/ar-primera.js`
 
 ### Qué deja de ser cierto en ESTADO
 - Nada todavía: son propuestas. Si se aprueban, el bloque de hooks cambia (candado, archivar, Opus) y aparecen las skills nuevas.
+
+### Vuelta 2 de Orden 1 (2026-10-21): chequeos aprobados codeados
+
+- `b0d07505dd` audit.js: `historia-en-doc-de-criterio` (ya existía, P3) ahora mira también `Admin/ESTADO.md` y dice la primera línea de cada documento.
+- `b8991ad051` audit.js: `duda-resuelta-en-dudas` (5), `registro-sin-lector` (5) y `medicion-sin-destino` (P3). `Admin/mediciones/README.md` lista con su destino los archivos que ninguna tool, skill ni documento de criterio nombra (hay filas «a confirmar»). Con ese índice `medicion-sin-destino` da 0; sin él, contando solo lo que citan tools, skills y documentos de criterio, eran 22 de 54, no los 35 de 51 que midió la Auditora (cuenta distinta: no sé cuál usó).
+- `c582fccf38` gasto.mjs: imprime el paso A2 como parte del gasto de API contra el techo del 15% (hoy 4,8%).
+- `c7679d083c` tools/hooks/pre-tool.mjs: el candado de skills (Edit: el `new_string` entero en un solo archivo de `Admin/propuestas/` commiteado en HEAD, si no deny; con el texto, ask con la ruta; Write: cada párrafo de 40+ caracteres; Bash que escribe en skills, deny; los comandos de git que reescriben el árbol pasan), `archivar-con-ok`, `modelo-opus-con-ok`, `worktree-sin-permission-mode`, `memoria-no-es-regla` (los cuatro, ask) y `comando-que-edita` (ask; anota cada disparo en `Admin/registros/.hooks-disparos.jsonl`, gitignoreado). Probados con entradas simuladas: todos dan lo esperado.
+- Parte 7 de `Admin/propuestas/257-skills.md` (qué de las convenciones es skill) y textos de las partes 2 y 3 sin historia.
+
+### Qué queda (vuelta 2)
+
+- La principal: agregar al `matcher` de `.claude/settings.json` `mcp__ccd_session_mgmt__archive_session`, `mcp__ccd_session__start_session` y `mcp__ccd_session_mgmt__set_session_model`; sin eso los tres hooks de sesiones no corren. Los demás ya corren.
+- Rechazados por la Auditora (no codeados): que `mergear` frene sin flecha (va como aviso, primero el texto de `worktree.md` con el ok de Guido) y un paso de adelantar en `worktree.mjs` (no existe).
+- Sigue pendiente el ok de Guido a cada skill de las partes 2, 3 y 7 de 257-skills.md.
+- Medición del candado: 162 commits tocaron `.claude/skills` en total y 32 desde el 2026-10-14; cada uno habría necesitado su propuesta commiteada antes.
