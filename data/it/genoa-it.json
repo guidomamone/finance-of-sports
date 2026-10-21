@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-21",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "genoa-it",
@@ -33,6 +33,14 @@
       "title": "Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-31.12.2023-individual (ejercicio 2023)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "genoa-it-bilancio-30-06-2024-individual",
+      "club_id": "genoa-it",
+      "title": "Genoa Cricket and Football Club S.p.A. — Genoa-bilancio-30.06.2024-individual (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "public_note": "Ejercicio de transición de 6 meses por cambio de la fecha de cierre: del 01/01/2024 al 30/06/2024. No es comparable con un año de 12 meses."
     }
   ],
   "members": null,
@@ -476,6 +484,207 @@
           {"label":"imposte relative a esercizi precedenti","amount":-1.051785},
           {"label":"imposte differite e anticipate","amount":5.310717},
           {"label":"proventi da adesione consolidato fiscale (resta del impuesto)","amount":0.012799}
+        ]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "period_months": 6,
+      "currency": "EUR",
+      "source_id": "genoa-it-bilancio-30-06-2024-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [
+        {"label":"Gare campionato","category":"matchday","subcategory":"matchday_competition","amount":0.717269,"disclosure":"aggregated"},
+        {"label":"Abbonamenti","category":"season_tickets","subcategory":"season_tickets","amount":2.447476,"disclosure":"aggregated"},
+        {"label":"Contributi in conto esercizio","category":"other_revenue","subcategory":"other_income","amount":3.434014,"disclosure":"aggregated"},
+        {"label":"Proventi da sponsorizzazioni","category":"commercial","subcategory":"sponsorship_commercial","amount":0.822569,"disclosure":"aggregated"},
+        {"label":"Proventi pubblicitari","category":"commercial","subcategory":"sponsorship_commercial","amount":1.55,"disclosure":"aggregated"},
+        {"label":"Proventi commerciali e royalties","category":"commercial","subcategory":"sponsorship_commercial","amount":0.05232,"disclosure":"aggregated"},
+        {
+          "label": "Proventi da cessione diritti televisivi",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 23.399846,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ricavi da cessione temporanea prestazioni calciatori (prestiti)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1.7524,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 21.927844,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Altri proventi da gestione calciatori",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 27.193739,
+          "disclosure": "aggregated"
+        },
+        {"label":"Altri ricavi e proventi","category":"other_revenue","subcategory":"other_income","amount":1.776137,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.045806,
+          "disclosure": "aggregated"
+        },
+        {"label":"Costi per tesserati","category":"first_team_staff","subcategory":"wages_squad","amount":-0.014446,"disclosure":"aggregated"},
+        {
+          "label": "Costi per attività sportiva",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.480205,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi specifici tecnici",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -2.322496,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi vitto, alloggio, locomozione gare",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1.313766,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servizio biglietteria, controllo ingressi",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.047443,
+          "disclosure": "aggregated"
+        },
+        {"label":"Assicurative e previdenziali","category":"admin_general","subcategory":"admin_general_expense","amount":-1.159835,"disclosure":"aggregated"},
+        {
+          "label": "Amministrative, pubblicitarie e generali",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3.082368,
+          "disclosure": "aggregated"
+        },
+        {"label":"Altri","category":"exceptional","subcategory":"exceptional_items","amount":-0.00012,"disclosure":"aggregated"},
+        {
+          "label": "8) per godimento di beni di terzi",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.108511,
+          "disclosure": "aggregated"
+        },
+        {"label":"a) salari e stipendi","category":"first_team_staff","subcategory":"wages_squad","amount":-30.928218,"disclosure":"aggregated"},
+        {"label":"b) oneri sociali","category":"first_team_staff","subcategory":"wages_squad","amount":-2.577135,"disclosure":"aggregated"},
+        {"label":"c) trattamento di fine rapporto","category":"first_team_staff","subcategory":"wages_squad","amount":-0.284937,"disclosure":"aggregated"},
+        {
+          "label": "Diritti pluriennali calciatori 1° squadra",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -32.762914,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Diritti pluriennali calciatori settore giovanile",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.4661,
+          "disclosure": "aggregated"
+        },
+        {"label":"Altri","category":"exceptional","subcategory":"exceptional_items","amount":-3.79864,"disclosure":"aggregated"},
+        {
+          "label": "b) ammortamento delle immobilizzazioni materiali",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.100066,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "c) altre svalutazioni delle immobilizzazioni",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -25.377685,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.112862,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Spese varie organizzazione gare",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -0.28482,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi per acquisizione temporanea prestazioni calciatori",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -5.120382,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costi valorizzazione calciatori",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3.896681,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Contributo di solidarietà",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -0.062567,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Premio alla carriera *ex art. 99 bis N.O.I.F.",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.0725,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Spese, ammende e multe gare",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.395922,
+          "disclosure": "aggregated"
+        },
+        {"label":"Oneri lega","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.74375,"disclosure":"aggregated"},
+        {"label":"Oneri tributari indiretti","category":"admin_general","subcategory":"admin_general_expense","amount":-0.217154,"disclosure":"aggregated"},
+        {"label":"Altri (Sopravvenienze Passive)","category":"exceptional","subcategory":"exceptional_items","amount":-0.085138,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.788914,"tax":-2.253415,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":85.073614,"expenses":112.978569,"net_result":-38.831182},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"b) da titoli iscritti nelle immobilizzazioni che non costituiscono partecipazioni","amount":0.023625},
+          {"label":"da imprese controllate","amount":0.017609},
+          {"label":"da imprese controllanti","amount":0.100537},
+          {"label":"altri","amount":0.712272},
+          {"label":"altri","amount":-5.642901},
+          {"label":"17-bis) utili e perdite su cambi","amount":-0.000056},
+          {"label":"imposte correnti","amount":-1.007712},
+          {"label":"imposte relative a esercizi precedenti","amount":-1.525834},
+          {"label":"imposte differite e anticipate","amount":0},
+          {"label":"proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale","amount":0.280131}
         ]
       }
     },

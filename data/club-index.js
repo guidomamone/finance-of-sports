@@ -136,7 +136,7 @@ window.CLUB_INDEX = {
   "fulham-gb": {"n":"Fulham","c":"GB","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "gambaosaka-jp": {"n":"Gamba Osaka","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "genk-be": {"n":"Genk","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "genoa-it": {"n":"Genoa","c":"IT","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]],"ci":{"2022":"12-31","2023":"12-31"}},
+  "genoa-it": {"n":"Genoa","c":"IT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]],"ci":{"2022":"12-31","2023":"12-31"}},
   "gent-be": {"n":"Gent","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "getafe-es": {"n":"Getafe CF","c":"ES","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "gilvicente-pt": {"n":"Gil Vicente","c":"PT","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},

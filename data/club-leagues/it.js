@@ -19,7 +19,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'torino-it': { 2024: 'it-seriea', 2018: 'it-seriea', 2021: 'it-seriea', 2022: 'it-seriea', 2019: 'it-seriea', 2023: 'it-seriea', 2020: 'it-seriea', 2025: 'it-seriea' },
   'udinese-it': { 2025: 'it-seriea', 2022: 'it-seriea' },
   'fiorentina-it': { 2025: 'it-seriea', 2024: 'it-seriea', 2022: 'it-seriea', 2021: 'it-seriea', 2019: 'it-seriea', 2020: 'it-seriea' },
-  'genoa-it': { 2022: 'it-serieb', 2025: 'it-seriea', 2023: 'it-seriea' },
+  'genoa-it': { 2022: 'it-serieb', 2025: 'it-seriea', 2023: 'it-seriea', 2024: 'it-seriea' },
   'chievoverona-it': { 2014: 'it-seriea', 2016: 'it-seriea', 2015: 'it-seriea' },
   'salernitana-it': { 2022: 'it-seriea', 2023: 'it-seriea' },
   'juvestabia-it': { 2024: 'it-seriec' },

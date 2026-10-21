@@ -88,6 +88,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'genoa-it': {
     2022: {"estadio":"Stadio Luigi Ferraris","capacidad":36599,"sponsor":"Radio 105","marca":"Castore","temporada":"2022–23 Serie B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376906886"},
     2023: {"estadio":"Stadio Luigi Ferraris","capacidad":33205,"sponsor":"Pulsee Luce e Gas","marca":"Kappa","temporada":"2023–24 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377576935"},
+    2024: {"estadio":"Stadio Luigi Ferraris","capacidad":33205,"sponsor":"Pulsee Luce e Gas","marca":"Kappa","temporada":"2023–24 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377576935"},
     2025: {"estadio":"Stadio Luigi Ferraris","capacidad":33205,"sponsor":"Pulsee Luce e Gas","marca":"Kappa","temporada":"2024–25 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378147047"},
   },
   'hellasverona-it': {

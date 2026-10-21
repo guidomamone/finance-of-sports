@@ -136,6 +136,75 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 2025: tools/cargar.mjs 2026-10-08, verificado contra roster cacheado de "2024–25 Serie A" (tools/club-league-reference/it.json), coincidencia e
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-21) desde Clubes/Italia/Genoa/Genoa-bilancio-30.06.2024-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Italia/Genoa/Genoa-bilancio-30.06.2024-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gare campionato | pág. 89, precedente |
+| 2 | Abbonamenti | pág. 89, precedente |
+| 3 | Contributi in conto esercizio | pág. 90, precedente |
+| 4 | Proventi da sponsorizzazioni | pág. 90, precedente |
+| 5 | Proventi pubblicitari | pág. 90, precedente |
+| 6 | Proventi commerciali e royalties | pág. 90, precedente |
+| 7 | Proventi da cessione diritti televisivi | pág. 90, precedente |
+| 8 | Ricavi da cessione temporanea prestazioni calciatori (prestiti) | pág. 90, precedente |
+| 9 | Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori | pág. 90, precedente |
+| 10 | Altri proventi da gestione calciatori | pág. 90, precedente |
+| 11 | Altri ricavi e proventi | pág. 90, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | 6) per materie prime, sussidiarie, di consumo e di merci | pág. 12, precedente |
+| 2 | Costi per tesserati | pág. 92, precedente |
+| 3 | Costi per attività sportiva | pág. 92, precedente |
+| 4 | Costi specifici tecnici | pág. 92, precedente |
+| 5 | Costi vitto, alloggio, locomozione gare | pág. 92, precedente |
+| 6 | Servizio biglietteria, controllo ingressi | pág. 92, precedente |
+| 7 | Assicurative e previdenziali | pág. 92, precedente |
+| 8 | Amministrative, pubblicitarie e generali | pág. 92, precedente |
+| 9 | Altri | pág. 92, precedente |
+| 10 | 8) per godimento di beni di terzi | pág. 12, precedente |
+| 11 | a) salari e stipendi | pág. 12, precedente |
+| 12 | b) oneri sociali | pág. 12, precedente |
+| 13 | c) trattamento di fine rapporto | pág. 12, precedente |
+| 14 | Diritti pluriennali calciatori 1° squadra | pág. 95, precedente |
+| 15 | Diritti pluriennali calciatori settore giovanile | pág. 95, precedente |
+| 16 | Altri | pág. 95, precedente |
+| 17 | b) ammortamento delle immobilizzazioni materiali | pág. 12, precedente |
+| 18 | c) altre svalutazioni delle immobilizzazioni | pág. 12, precedente |
+| 19 | 11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci | pág. 12, precedente |
+| 20 | Spese varie organizzazione gare | pág. 96, precedente |
+| 21 | Costi per acquisizione temporanea prestazioni calciatori | pág. 96, precedente |
+| 22 | Costi valorizzazione calciatori | pág. 96, precedente |
+| 23 | Contributo di solidarietà | pág. 96, precedente |
+| 24 | Premio alla carriera *ex art. 99 bis N.O.I.F. | pág. 96, precedente |
+| 25 | Spese, ammende e multe gare | pág. 96, precedente |
+| 26 | Oneri lega | pág. 96, precedente |
+| 27 | Oneri tributari indiretti | pág. 96, precedente |
+| 28 | Altri (Sopravvenienze Passive) | pág. 96, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-21): fila = -280.131. El provento de consolidato fiscale (280.131, L419) resta de las imposte (total 2.253.415, L420 = 1.007.712 + 1.525.834 - 280.131); mismo criterio que Genoa 2023 (+12.799 que resta del impuesto); se sumaba como costo (Onboarding 8)
+tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-21): it-seriea, verificado contra roster cacheado de "2023–24 Serie A" (tools/club-league-reference/it.json), coincidencia exacta "Genoa".
+```
+
 ## 2023
 
 ### Ingresos
@@ -412,4 +481,12 @@ _note (data/):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-08) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### genoa-it-bilancio-30-06-2024-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Italia/Genoa/Genoa-bilancio-30.06.2024-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
