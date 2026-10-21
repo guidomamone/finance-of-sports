@@ -1361,9 +1361,10 @@ export function escribir(P) {
 
     const S = E.source;
     // la nota INTERNA de la fuente va a la evidencia del club (to-do 209: data/ se publica), no a un campo `note` de sources{}
-    let fuenteNueva = null;
-    if (!(P.reemplaza && cargarSitio().sources?.[S.id])) {
-      const dmy = (f) => f.split('-').reverse().join('/');
+    let fuenteNueva = null; let notaASumar = null;
+    const dmy = (f) => f.split('-').reverse().join('/');
+    const fuenteExistente = P.reemplaza ? cargarSitio().sources?.[S.id] : null;
+    {
       const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).`
         : P.transicion && P.transicion.meses < 12 && P.transicion.inicio ? `Ejercicio de transición de ${P.transicion.meses} meses por cambio de la fecha de cierre: del ${dmy(P.transicion.inicio)} al ${dmy(P.transicion.cierre)}. No es comparable con un año de 12 meses.`
         : P.transicion ? `Ejercicio de transición por cambio de fecha de cierre: ${P.transicion.inicio ? `del ${dmy(P.transicion.inicio)} ` : ''}al ${dmy(P.transicion.cierre)} (${P.transicion.meses} meses).` : null;
@@ -1372,8 +1373,13 @@ export function escribir(P) {
       // (`e` no existe en escribir(P): el .md de la propuesta es P.md; sin él, o ilegible, no hay nota)
       const notaXhtml = (() => { try { return P.md && /xhtml-aarsrapport\.mjs/.test(readFileSync(resolve(ROOT, P.md), 'utf8').slice(0, 400)) ? 'Informe oficial en formato XHTML (iXBRL)' : null; } catch { return null; } })();
       const notaPublica = [notaPrimero, P.suma?.nota, notaXhtml].filter(Boolean).join(' ');
-      fuenteNueva = { id: S.id, clubId: S.clubId, title: S.title, type: S.type, reliability: S.reliability, ...(notaPublica ? { publicNote: notaPublica } : {}) };
-      if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
+      if (!fuenteExistente) {
+        fuenteNueva = { id: S.id, clubId: S.clubId, title: S.title, type: S.type, reliability: S.reliability, ...(notaPublica ? { publicNote: notaPublica } : {}) };
+        if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
+      // Al recargar con --reemplazar un año cuya fuente ya existe, la fuente se conserva; pero si el año es un primer ejercicio o un tramo de
+      // transición y su nota no está, se agrega al final de la nota pública que tenga (sin pisarla). Caso: Atalanta 2022, recargada como tramo
+      // de 6 meses, quedaba sin la nota de transición y Onboarding la puso a mano con fuente.mjs --nota.
+      } else if (notaPrimero && !String(fuenteExistente.publicNote || '').includes(notaPrimero)) notaASumar = notaPrimero;
     }
     // (to-do 245, fase 2) el club se escribe en su JSON (la fuente) y de ahí se regenera el data file: se convierte a los nombres de siempre, se
     // cambia el año y se valida contra el esquema antes de escribir nada.
@@ -1382,6 +1388,7 @@ export function escribir(P) {
       c.datos.expenseLinesByYear[y] = E.expenseLines.map(lineaJ);
       c.datos.fiscalYearMeta[y] = metaJ;
       if (fuenteNueva) c.sources[S.id] = fuenteNueva;
+      if (notaASumar && c.sources[S.id]) c.sources[S.id].publicNote = [c.sources[S.id].publicNote, notaASumar].filter(Boolean).join(' ');
     });
     escritos.push(rj, rd);
 
