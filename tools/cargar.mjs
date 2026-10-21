@@ -1331,7 +1331,10 @@ export function escribir(P) {
       const dmy = (f) => f.split('-').reverse().join('/');
       const notaPrimero = P.primerEjercicio ? `Primer ejercicio de la sociedad: ${P.primerEjercicio.inicio && P.primerEjercicio.cierre ? `del ${dmy(P.primerEjercicio.inicio)} al ${dmy(P.primerEjercicio.cierre)} ` : ''}(${P.primerEjercicio.meses} meses).`
         : P.transicion ? `Ejercicio de transición por cambio de fecha de cierre: ${P.transicion.inicio ? `del ${dmy(P.transicion.inicio)} ` : ''}al ${dmy(P.transicion.cierre)} (${P.transicion.meses} meses).` : null;
-      const notaPublica = [notaPrimero, P.suma?.nota].filter(Boolean).join(' ');
+      // (to-do 345, Auditora 5) el año salió de un informe XHTML (iXBRL): lo dice el encabezado del .md que escribe xhtml-aarsrapport.mjs. La fuente nace sin url, así que la página de fuentes lo dice con esta frase
+      // (el PDF de ancla es la impresión de Chrome, no se publica como si fuera el original; la url del depósito oficial la pone fuente.mjs).
+      const notaXhtml = /xhtml-aarsrapport\.mjs/.test(readFileSync(resolve(ROOT, e.md), 'utf8').slice(0, 400)) ? 'Informe oficial en formato XHTML (iXBRL)' : null;
+      const notaPublica = [notaPrimero, P.suma?.nota, notaXhtml].filter(Boolean).join(' ');
       fuenteNueva = { id: S.id, clubId: S.clubId, title: S.title, type: S.type, reliability: S.reliability, ...(notaPublica ? { publicNote: notaPublica } : {}) };
       if (S.note) ev = EV.agregarFuente(ev, S.id, [S.note], 'note (cargar.mjs)');
     }
