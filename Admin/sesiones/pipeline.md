@@ -270,3 +270,18 @@ Silenciados en `tools/audit-ignore.json`, cada uno con su motivo y la nota de so
 - Datos (Onboarding): Atalanta 2022 con `--reemplazar` (period_months 6, nota) sin cambiar otro año; cargar Fiorentina 2020 y Genoa 2024 (sacarlos antes de `documentos-parciales.txt`); OH Leuven 2019 y Benfica 2007-08 con `period_months`; Girona 2021-23 con los tres ajustes `fila --destino profit_on_player_sales`; el alta de Omonia 29 Maiou (ligas ya en el catálogo; los alias «Omonia 29M» y «ALS Omonia 29th May» van con el alta) → TODO nuevo (datos).
 - Los 9 XHTML daneses con PDF de Chrome sin texto («0 % ubicadas») → TODO nuevo.
 - La marca visual «COVID» (Pantallas, con mockup) y las REGLAS de COVID y de tramo corto en `Admin/CONVENCIONES-DATOS.md` (principal) → regla.
+
+## Pipeline 15
+
+### 1. `worktree.mjs mergear` trata como generados a sponsors, entidades y correcciones (`f5a624f39c`, `3c4ab6dd8c`)
+
+- Un merge chocó en `data/sponsors.js` (de `generate-sponsors.js`) y abortó como «conflicto real». `mergear` ahora resuelve con main y regenera también `data/sponsors.js`, `data/sponsors-indice.js`, `data/entidades/` y `data/correcciones/` (los escriben enteros generadores de `tools/generadores.mjs`, que ya corría `publicarCambios`), y los suma al commit del merge. `Admin/COMO-CORRE-EL-PROYECTO.html` queda afuera a propósito: es un doc a mano con un bloque de cifras, y quedarse con main perdería lo de la rama.
+- Probado en un repo de mentira del scratchpad (generador simulado, conflicto en `sponsors.js` y en `entidades/` a la vez, con la entrada mergeada limpio): antes abortaba («conflicto real: data/sponsors.js»), ahora commitea el merge con lo regenerado a partir de la entrada mergeada y el árbol queda limpio.
+
+### 2. «Qué queda» de Pipeline 14
+
+- Ningún punto tiene flecha a Pipeline (dos van a datos, los 9 XHTML daneses a TODO, donde esperan dentro del 356 el presupuesto de Guido, y uno a regla): no hubo nada para hacer.
+
+### Qué queda (Pipeline 15)
+
+Nada nuevo.
