@@ -176,3 +176,4 @@ tools/node_modules
 
 # tools/generar-correcciones.mjs: caché de lo ya comparado (to-do 247); se reconstruye solo
 Generados/.cache-correcciones.json
+Admin/registros/.hooks-disparos.jsonl
