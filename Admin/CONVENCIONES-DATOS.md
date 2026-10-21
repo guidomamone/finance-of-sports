@@ -383,7 +383,7 @@ Los ingresos de la tienda del club (Rosario Central, Talleres) van a `sponsorshi
 `merchandise_sales` ni `cost_of_goods_sold`. El costo de la mercadería vendida queda donde está cargado.
 
 CATEGORÍA (prompt): los ingresos de la tienda del club (merchandising, «tienda», «ventas tiendas», «store») van a sponsorship_commercial; no existen merchandise_sales ni cost_of_goods_sold, y el costo de la mercadería queda donde está cargado.
-EJEMPLO-CATEGORÍA: rosariocentral | revenue | Ingresos por ventas tiendas | sponsorship_commercial
+EJEMPLO-CATEGORÍA: rosariocentral-ar | revenue | Ingresos por ventas tiendas | sponsorship_commercial
 EJEMPLO-CATEGORÍA: talleres-ar | revenue | Ingresos por tienda netos de costo de venta | sponsorship_commercial
 
 ## REGLA: `grossDebt` con leasing IFRS 16 o deuda con partes relacionadas (votación 3 a 0, 2026-10-20)

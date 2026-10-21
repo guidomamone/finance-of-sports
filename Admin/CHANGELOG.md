@@ -17,6 +17,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 895 — Votación de Bath Rugby (2026-10-20) [248 · bath-gb · rosariocentral-ar]
+
+- Auditora 3: el ingreso de CVC (fila aparte del Strategic Report) va a `other_income`, 3 a 0; el «fair value movement» de 2021 (revaluación de la participación en Premiership Rugby) va a `other_income`, 2 a 1. Reglas en `Admin/CONVENCIONES-DATOS.md`.
+- El ejemplo de la regla de la tienda usaba el id viejo `rosariocentral` y frenaba `reglas-categoria.mjs`: corregido a `rosariocentral-ar`.
+
 ## Versión 894 — Frenos automáticos en el hook (2026-10-20) [327]
 
 - `tools/hooks/pre-tool.mjs` rechaza, con el motivo y cómo reescribirlo: `/tmp`, `$(...)`, variables y `cd ... &&` fuera de comillas; `node -e` que importa una tool; subagentes sin la regla de Read/Grep/Write; modo plan y `git merge`/`pull` en un worktree; `rsync` sin `--no-links`. `mv` en `Clubes/` pide permiso. `.claude/settings.json` suma `Agent|Task|EnterPlanMode` al matcher (ok de Guido). 327 cerrado.
