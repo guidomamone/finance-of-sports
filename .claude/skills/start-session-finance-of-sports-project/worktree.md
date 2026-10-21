@@ -16,8 +16,18 @@ deja de ser cierto en ESTADO. Commit. La nota es de esta tanda: una sesión que 
 
 Un PDF bajado en la copia se pasa a la carpeta principal con `rsync -a --no-links` (los symlinks de `preparar` apuntan a la
 principal y un `rsync -a` los copia encima del archivo real, que queda como un link a sí mismo). Después,
-`find <principal>/Clubes -type l` tiene que dar vacío.
+`find <principal>/Clubes -type l` tiene que dar vacío. Un PDF bajado en la copia no viaja al mergear (`*.pdf` está en `.gitignore`): pasalo a la principal antes de borrar el worktree.
 
 **En la principal, para mergear:** `node tools/worktree.mjs mergear <rama>`. Resuelve lo generado (ASSET_V, `fuentes/`, índices, rankings)
 con main, regenera y audita. Frena si la rama tocó los tres documentos o si hay un conflicto real. Después pasá `Admin/sesiones/<rama>.md` a
 TODO, CHANGELOG y ESTADO, y archivalo en `Admin/Archive/`. Para anticipar conflictos, `git merge-tree` (no toca nada). Cada punto de «Qué queda» de la nota termina con una flecha (`→ TODO n`, `→ regla`, `→ HALLAZGOS`, `→ descartado: motivo`) antes de archivarla.
+
+**Después de `preparar`:** si `audit.js` da `faltantes-desfasado` (P1; `data/faltantes/` depende de PDFs que git ignora y que la principal bajó después), se arregla volviendo a correr `node tools/worktree.mjs preparar <carpeta>`.
+
+**Un archivo generado no se mergea a mano: se regenera.** Si hay conflicto en `Admin/sourcing/README.md`, `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js`, `data/sponsors.js` o `Admin/ESTADO-clubes.md` (el bloque CLUB-INDEX), tomá cualquiera de los dos lados, mergeá y corré el generador que corresponde. Resolverlos línea por línea es cómo se mete un dato que ningún documento respalda.
+
+**El hook de los documentos de la principal lee el texto del comando:** un Bash que solo nombra `TODO.md`, `CHANGELOG.md` o `ESTADO.md` junto a una escritura también se frena. Escribir la nota de la sesión con Edit o Write.
+
+**El número de Versión de `Admin/CHANGELOG.md` se decide al mergear, no al escribir:** dos ramas van a querer el mismo; el que mergea segundo renumera su entrada.
+
+**Un país por sesión de sourcing:** `Admin/sourcing/_indice/<País>.md` y `Admin/sourcing/<País>/` son de un solo país, así dos sesiones en países distintos no comparten un archivo.

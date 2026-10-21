@@ -15,6 +15,7 @@ description: Cómo se diseña y se construye una pantalla o un cambio visible de
    - Escritorio y 375 px (`resize_window` preset `mobile`), en español y en inglés, sin scroll horizontal ni texto cortado a la mitad de una palabra.
    - `read_console_messages`: sin errores nuevos.
    - `node tools/audit.js`: 0 P0 y 0 P1.
+   - El detalle de qué se prueba y las trampas del navegador: `referencia/navegador-de-preview.md`.
 5. **Dejar escrito:** lo que la pantalla hace hoy, en `Admin/PANTALLA.md` («Cómo funciona cada pantalla»); si se decidió una regla, en «Convenciones de pantalla y código». El mockup aprobado se conserva en `Prototyping/` con una nota arriba que diga qué decisiones explica y que sus números son del día en que se hizo.
 6. Commit local. Nada de push.
 

@@ -41,6 +41,10 @@ La principal mergea, escribe `Admin/TODO.md`, `Admin/CHANGELOG.md` y `Admin/ESTA
 - Para anticipar conflictos, `git merge-tree` (no toca nada).
 - Dos lotes en worktrees distintos: sus listas de corrida (`Admin/registros/.lote-lista-actual.txt` y las otras) tienen que ser archivos propios, no enlaces a la principal (`ls -la`).
 
+## Cerrar un punto del TODO
+
+Se borra lo resuelto. Si el motivo por el que estaba trabado resultó falso (la transcripción que «nunca se hizo» ya estaba en disco, la función que había que revisar ya no existe), además queda escrito en la entrada de `Admin/CHANGELOG.md` que la premisa estaba vencida y, si el punto sigue vivo en parte, en el propio `Admin/TODO.md`. Una premisa vencida hace parecer la tarea más cara de lo que es y la deja al fondo de la lista: escribirlo avisa que otros puntos pueden estar igual.
+
 ## Cómo mantener esta skill
 
 Si aparece una regla de la principal que no está acá, proponele a Guido el texto exacto y esperá su ok.

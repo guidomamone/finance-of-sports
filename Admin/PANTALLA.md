@@ -211,41 +211,12 @@ que pide el periodista. No se extiende a otros cards.
 
 ## Verificar en el browser de verdad, no solo revisar los números a mano (ex §8)
 
-**El sitio tiene que andar de dos maneras, y se prueban las dos antes de pedir el merge:** servido (el preview de `launch.json`, y
-`/club/<id>` y `/liga/<id>` directos y navegando desde la portada) y **abierto como archivo** (`file:///…/finance-of-sports/index.html`
-en el navegador, que es como Guido lo mira a veces). Por eso `index.html` no lleva un `<base>` fijo ni rutas que empiecen con `/`: con `file://` la raíz es la del disco y la
-página sale sin estilos ni scripts. Las cargas dinámicas y los links que arma el JS pasan por `fosUrl()` de `js/i18n.js`, que calcula la raíz desde la URL del
-propio script (`FOS_RAIZ`): anda servido y como archivo. Solo las páginas generadas de `club/` y `liga/` llevan `<base>`. Pasó de verdad: un `<base href="/">` arregló `/liga/<id>` y rompió
-abrir el archivo. `audit.js` lo chequea (`index-file-roto`).
+Cómo se verifica una pantalla y las trampas del navegador de preview: skill `producto-y-pantalla-finance-of-sports`, `referencia/navegador-de-preview.md`.
+
 Cómo verlo como archivo: el Browser pane abre un `file://` como captura sin estilos y el navegador de Guido no se maneja, así que se usa Chrome
 sin ventana, con la ruta del worktree y una salida en el scratchpad:
 `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --allow-file-access-from-files --window-size=1280,1600 --virtual-time-budget=8000 --screenshot=<scratchpad>/x.png "file:///…/index.html?tab=liga"`
 y se mira la imagen con Read.
-
-La cuenta a mano (verificar que `revenueLines`/`expenseLines` suman el total impreso del documento)
-es necesaria pero NO alcanza, el bug de la sección 4 no se habría encontrado sin abrir el sitio y
-tocar el toggle. Después de tocar cualquier función de display/conversión: `preview_start`, cambiar
-de club, tocar los dos toggles (USD/ARS y Formato del club/simplificado), y leer los números en
-pantalla, no solo confiar en que `verifyTieOuts()` (consola) pasa, porque esa función corre en
-moneda NATIVA (nunca pasa por el toggle) y no habría detectado este bug de doble conversión.
-
-**Extendido:** que `verifyTieOuts()` pase, y que "Formato del club" se vea bien, TAMPOCO alcanza
-para dar por buena la categorización de un ejercicio nuevo, hay que mirar **cada línea de "Formato
-simplificado"** individualmente, no solo el total. El bug del `lump_football_operations` mal usado
-(ver `club-data-mapping` sección 1, la regla sobre cuándo NO usar esa categoría) pasó los 16 checks
-de `verifyTieOuts()` sin problema (el total de Ingresos/Gastos cerraba perfecto, porque
-`lump_football_operations` sí suma al total igual que cualquier otra categoría) y "Formato del club"
-se veía perfecto (el desglegable de `items` mostraba las líneas reales), el ÚNICO lugar donde el bug
-era visible era abriendo "Formato simplificado" y mirando que "Televisión / Derechos de TV" decía $0
-con una línea real de TV a la vista en el PDF. **Regla**: después de categorizar un ejercicio nuevo,
-abrí "Formato simplificado" y confirmá que NINGÚN bucket que debería tener plata (según lo que viste
-en el documento) esté en $0, un bucket en $0 sin explicación es la señal de que algo quedó enterrado
-en `items` en vez de promovido a categoría propia.
-
-Los gotchas de tooling que vivían acá (caché del `<script src>` en el navegador de preview,
-screenshot en blanco con la página scrolleada, `grep -oP` fallando cerca de acentos) se mudaron a
-`CLAUDE.md` (sección "Gotchas de tooling"): no son específicos de onboarding, aplican a cualquier
-sesión que toque este sitio, y `CLAUDE.md` se lee siempre, a diferencia de este skill.
 
 ## El sufijo entre paréntesis del dropdown "Año": SOLO 4 palabras posibles, nunca una 5ta (ex §10)
 
@@ -978,67 +949,6 @@ Texto movido sin cambios.
 - **Antes de tocar:** una clave nueva de texto va en `data/lang/en.js` (`corr.*`). El generador va en `tools/generadores.mjs` y `audit.js` lo vigila como P2
   (`correcciones-desfasado`, `correccion-sin-motivo`): P2 y no P1 porque el commit que corrige un dato deja el registro un commit atrás hasta el próximo regenerado.
 
-## Trampas del navegador de preview (venía de `CLAUDE.md`, "Gotchas de tooling")
+## Trampas del navegador de preview
 
-Texto movido sin cambios.
-
-- **Caché de `<script src="data/....js">` o del propio `index.html` en el
-  navegador de preview**: si después de editar un archivo (`data/*.js` o
-  `index.html`) los números/estilos en pantalla siguen mostrando el valor
-  VIEJO, aunque `curl`/`fetch` al mismo archivo ya muestre el nuevo,
-  sospechá de caché del navegador ANTES de asumir que hay un bug real en el
-  código. `location.reload()`, `Cmd+Shift+R`, parar/re-lanzar `preview_start`
-  en el mismo puerto, abrir una pestaña nueva (`tabs_create`), Y cambiar el
-  puerto en `.claude/launch.json` — ESTOS 5 CONFIRMADOS QUE NO ALCANZAN en
-  este entorno (probado dos veces en la Versión 101: el puerto externo que
-  ve el navegador queda igual aunque cambies el puerto interno del server,
-  y la caché persiste incluso en una pestaña recién creada — el caché HTTP
-  de este entorno parece compartirse por origen entre pestañas, no por
-  pestaña). Lo único que funcionó de forma confiable: cambiar la URL exacta
-  del `<script src="...">` con un query string.
-  **Esto es una convención del proyecto, no un truco temporal:** todos los `<script src>`
-  propios llevan un `?v=` y `window.ASSET_V` está declarado en un `<script>` inline justo
-  antes de ellos. Se sube la constante Y los tags (regla y por qué, en "CACHE DE ASSETS", más
-  arriba). Para forzar recarga durante una
-  sesión de desarrollo: subí ASSET_V (y los tags) a un valor que nunca se pidió
-  antes (ej. `115a`), navegá, confirmá, y dejalo en un valor limpio al terminar. Sirve
-  igual en producción: sin esto, un visitante que ya entró antes se puede
-  quedar con un `js/*.js` viejo cacheado mientras el HTML es nuevo. Confirmalo ejecutando `Object.keys(algunaConstDeEseArchivo)` o
-  `document.querySelector('style').textContent.includes('tu regla nueva')`
-  con `javascript_tool` ANTES de concluir que el cambio "no funciona" — y
-  ANTES de concluir que SÍ funciona, ya que un error viejo puede seguir
-  apareciendo en `read_console_messages` de una pestaña reusada aunque el
-  problema ya esté arreglado (el historial de consola no se limpia solo
-  entre navegaciones); si el error es sospechosamente el mismo que uno ya
-  arreglado, volvé a chequear el estado real en vez de confiar en la lectura
-  de consola.
-  **NUEVO (auditoría de código, Versión 231→232, 2026-09-26): el propio `index.html` se puede quedar
-  cacheado ENTERO, no solo sus `<script src>`.** Encontrado auditando en vivo justo cuando otra
-  sesión pisó `ASSET_V` de 228 a 231: una pestaña nueva (`tabs_create`) seguía leyendo
-  `window.ASSET_V === '228'` — o sea, ni siquiera pedía el HTML de nuevo, cache de la respuesta a
-  `/` misma. La única forma que funcionó de forzar un fetch real del documento: navegar con un query
-  string en la URL de nivel superior, no en un `<script src>` (`http://localhost:8971/?cb=<lo que
-  sea>`). Confirmalo con `window.ASSET_V` (o cualquier otro global reciente) antes y después de
-  agregar el query string si sospechás que estás mirando un `index.html` viejo pese a haber abierto
-  pestaña nueva.
-- **Un diálogo nativo abierto (`alert`/`confirm`) congela TAMBIÉN las herramientas
-  de debug** (sesión 2026-09-13, Versión 137, costó una hora). Si `javascript_tool`
-  empieza a dar timeout, si un `setTimeout` de 300 ms no resuelve, o si un
-  `loadClubData()` queda "pendiente para siempre" aunque su request haya devuelto
-  200, sospechá de un `alert()` abierto ANTES de buscar un bug de concurrencia: un
-  diálogo nativo bloquea el hilo entero, así que ni los timers ni el `onload` de un
-  `<script>` inyectado ni tu propia sonda desde la consola llegan a correr. Se
-  destraba navegando con `force:true`. Y la moraleja para el sitio quedó como regla
-  en `Admin/CONVENCIONES.md`: ningún camino de error usa `alert()`.
-- **`computer` screenshot da BLANCO si la página está scrolleada**: en este
-  entorno, `computer{action:"screenshot"}` devuelve una imagen en blanco
-  cada vez que `window.scrollY > 0` en el momento de la captura, no importa
-  cómo se llegó ahí (`window.scrollTo`, `scrollIntoView`, el `scroll_to` del
-  tool `computer`, que sí mueve el scroll de verdad). Con `scrollY === 0`
-  sale bien siempre. La vuelta que funcionó: `resize_window` con un
-  `height` custom bien grande (2500-3000px) para que todo el contenido
-  relevante entre sin scrollear, capturar ahí, y después
-  `resize_window({preset:'desktop'})` para volver al tamaño normal. `zoom`
-  con `region` (crop) tampoco está soportado en este entorno, devuelve la
-  imagen completa igual. Esto es una limitación del TOOLING de esta sesión,
-  no algo que haya que "arreglar" en el sitio.
+Cómo se verifica una pantalla y las trampas del navegador de preview: skill `producto-y-pantalla-finance-of-sports`, `referencia/navegador-de-preview.md`.
