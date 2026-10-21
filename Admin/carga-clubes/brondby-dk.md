@@ -186,6 +186,10 @@ Generados/Dinamarca/Brøndby/aarsrapport-2021-12-31.categorias.json (escalón de
 tools/cargar.mjs (2026-10-21). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-21): cash escalón 0 (compuerta: año anterior): "Likvide beholdninger" pág. 35
+```
+
 ### Liga
 
 ```text
