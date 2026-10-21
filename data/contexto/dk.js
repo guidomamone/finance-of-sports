@@ -20,6 +20,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2021: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","fuente":"https://en.wikipedia.org/wiki/2021%E2%80%9322_Danish_1st_Division","fuenteManual":"https://en.wikipedia.org/wiki/2021%E2%80%9322_Danish_1st_Division","manual":["estadio","capacidad","sponsor","marca"]},
     2022: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","fuente":"https://en.wikipedia.org/wiki/2022%E2%80%9323_Danish_1st_Division","fuenteManual":"https://en.wikipedia.org/wiki/2022%E2%80%9323_Danish_1st_Division","manual":["estadio","capacidad","sponsor","marca"]},
     2023: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","fuente":"https://en.wikipedia.org/wiki/2023%E2%80%9324_Danish_1st_Division","fuenteManual":"https://en.wikipedia.org/wiki/2023%E2%80%9324_Danish_1st_Division","manual":["estadio","capacidad","sponsor","marca"]},
+    2024: {"estadio":"Monjasa Park","capacidad":6000,"sponsor":"Monjasa","marca":"Hummel","fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Danish_1st_Division","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Danish_1st_Division","manual":["estadio","capacidad","sponsor","marca"]},
     2025: {"estadio":"Monjasa Park","capacidad":6000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'midtjylland-dk': {

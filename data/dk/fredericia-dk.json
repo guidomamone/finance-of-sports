@@ -54,6 +54,13 @@
       "title": "Fodbold Club Fredericia 1991 — aarsrapport-2023-12-31 (ejercicio 2023)",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "fredericia-dk-aarsrapport-2024-12-31",
+      "club_id": "fredericia-dk",
+      "title": "Fodbold Club Fredericia 1991 — aarsrapport-2024-12-31 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary"
     }
   ],
   "management": [{"id":"actual","name":"Morten Rahbek Hansen (formand)","first_year":2019,"last_year":2019}],
@@ -241,6 +248,45 @@
           {"label":"Skat af årets resultat","amount":0}
         ],
         "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":10.098024,"reason":"el documento no desglosa este renglón"}]
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "DKK",
+      "source_id": "fredericia-dk-aarsrapport-2024-12-31",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2024-12-31"},
+      "revenue": [{"label":"Bruttofortjeneste","category":"undisclosed","subcategory":"lump_football_operations","amount":15.2326,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-11.492021,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-0.37516,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.276731,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.1162,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andre driftsomkostninger","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.18633,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.051677,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":15.2326,"expenses":13.446442,"net_result":1.734481},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Finansielle indtægter","amount":0.012886},
+          {"label":"Finansielle omkostninger","amount":-0.064563},
+          {"label":"Skat af årets resultat","amount":0}
+        ],
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":15.2326,"reason":"el documento no desglosa este renglón"}]
       }
     },
     {

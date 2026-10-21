@@ -40,3 +40,5 @@ ApS), solo de ser una sociedad de responsabilidad limitada.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2022 desde `Clubes/Dinamarca/FC Fredericia/aarsrapport-2022-12-31.pdf` (sourceId `fredericia-dk-aarsrapport-2022-12-31`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2023 desde `Clubes/Dinamarca/FC Fredericia/aarsrapport-2023-12-31.pdf` (sourceId `fredericia-dk-aarsrapport-2023-12-31`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-21): ejercicio 2024 desde `Clubes/Dinamarca/FC Fredericia/aarsrapport-2024-12-31.pdf` (sourceId `fredericia-dk-aarsrapport-2024-12-31`).
