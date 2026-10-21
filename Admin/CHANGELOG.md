@@ -17,6 +17,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 930 — Lote 130: 12 años más, Lierse, 350 y británicos en iXBRL (2026-10-21) [345 · 350 · 355 · 356 · brondby-dk, fredericia-dk, girona-es, burnley-gb]
+- Onboarding 8: Brøndby 2021, FC København 2025 (individual), Fredericia 2021-25, Emmen 2020-21, Chapecoense 2019, Vålerenga 2024 (1. divisjon), Girona 2022-23, Nordsjælland 2025, Vejle 2025 y Goiás 2020. Burnley 2022 y 2023 tenían la liga al revés (`Corrige:`). Fredrikstad 2019-23 y Sarpsborg 2009-11 descartados: son de sociedades tenedoras de derechos, no del club.
+- Lierse: dos clubes (BCE distintos), sin alias entre ellos. 350: medición de categorías, votación de `grants_donations` (3 a 0) y propuesta de revisión de la taxonomía, sin aplicar.
+- 356: 54 de 68 sociedades de League One, League Two y Premiership escocesa tienen iXBRL; bajados 69 `.xhtml` (cuentas completas, últimos 3 cierres).
+- `Admin/difusion/calendario.md` creado. Propuesta del criterio de mejora general o parche.
+
 ## Versión 929 — Chequeos del iXBRL, skills existentes y corridas de P2 y P3 (2026-10-21) [257 · 345 · 347 · 352 · 353 · 354]
 - 257 parte 3 (Orden 1, ok de Guido): club-sourcing, start-session, club-outreach, worktree.md, club-or-year-onboarding, CONVENCIONES-DATOS y CONVENCIONES con las reglas que vivían en la memoria de la principal; la memoria se borró (queda un índice que apunta a las skills).
 - 352: `tools/ixbrl-resultado.mjs` avisa si el resultado cargado no coincide con el `ProfitLoss` etiquetado (aviso, no frena; ajuste `ixbrl-omitir`).
