@@ -17,6 +17,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 909 — Tanda 1 de lo que Bath se hizo a mano (2026-10-20) [341]
+
+- `lote.mjs --sin-api` valida si es gratis o frena con el costo y el comando; `validar-bloques` encadena verificar e inventario. `alta-club --deshacer` (y `index.html` vuelve a HEAD solo si su diff es ASSET_V). `mistral-ocr-transcribe --pagina N` rehace una sola página. `tools/publicar.mjs`: sube ASSET_V una vez, regenera, corre `audit.js` y revierte lo suyo si falla. Aprobado por Auditora 4.
+
 ## Versión 908 — El título sigue a la ruta; un solo <base> (2026-10-20) [342]
 
 - `document.title` cambia al navegar dentro de la app (club, liga, Inicio según idioma). `generate-club-pages.js` ya no escribe su `<base>`: una sola base por página. ASSET_V 1562.
